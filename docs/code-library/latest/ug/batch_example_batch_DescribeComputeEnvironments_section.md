@@ -105,3 +105,37 @@ Output:
 +  For API details, see [DescribeComputeEnvironments](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/DescribeComputeEnvironments) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def describe_compute_environments(
+        self, compute_environment_names: Optional[list] = None
+    ) -> list:
+        """
+        Describes one or more compute environments.
+
+        :param compute_environment_names: Optional list of compute environment names
+            or ARNs to describe. If None, describes all compute environments.
+        :return: A list of compute environment detail dictionaries.
+        """
+        try:
+            params = {}
+            if compute_environment_names is not None:
+                params["computeEnvironments"] = compute_environment_names
+            response = self.batch_client.describe_compute_environments(**params)
+            environments = response.get("computeEnvironments", [])
+            logger.info("Described %d compute environment(s).", len(environments))
+            return environments
+        except ClientError as err:
+            logger.error(
+                "Error describing compute environments: %s",
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [DescribeComputeEnvironments](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/DescribeComputeEnvironments) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

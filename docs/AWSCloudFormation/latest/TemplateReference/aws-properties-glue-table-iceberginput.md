@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[IcebergTableInput](#cfn-glue-table-iceberginput-icebergtableinput)" : {{IcebergTableInput}},
-  "[MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation)" : {{Json}},
+  "[MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation)" : {{String}},
   "[Version](#cfn-glue-table-iceberginput-version)" : {{String}}
 }
 ```
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [IcebergTableInput](#cfn-glue-table-iceberginput-icebergtableinput): {{
     IcebergTableInput}}
-  [MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation): {{Json}}
+  [MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation): {{String}}
   [Version](#cfn-glue-table-iceberginput-version): {{String}}
 ```
 
@@ -47,7 +47,7 @@ Property description not available.
 `MetadataOperation`  <a name="cfn-glue-table-iceberginput-metadataoperation"></a>
 A required metadata operation. Can only be set to CREATE.
 *Required*: No
-*Type*: Json
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Version`  <a name="cfn-glue-table-iceberginput-version"></a>

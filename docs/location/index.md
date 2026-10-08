@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/location/index.html
 title: 'Amazon Location Service Documentation'
 canonical_url: https://docs.aws.amazon.com/location/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Amazon Location Service Documentation

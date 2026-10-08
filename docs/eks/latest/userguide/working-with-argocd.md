@@ -45,7 +45,7 @@ Access the Argo CD UI through the EKS console:
 
 1. Select your cluster
 
-1. Choose the **Capabilities** tab
+1. In the left navigation pane, choose **Capabilities**
 
 1. Choose **Argo CD**
 

@@ -11,5 +11,6 @@ Customization techniques define *how* your model learns from data. Each techniqu
 + **[RFT](customizing-models-rft.md)** (Reinforcement Fine-Tuning) — Optimize via reward signals: code-based verification (**RLVR**) or an LLM judge (**RLAIF**). Best for improving factual accuracy or subjective quality.
 + **[Multi-turn reinforcement learning](model-customize-mtrl.md)** (Multi-Turn Reinforcement Learning) — Train agents for multi-step agentic tasks with growing context.
 + **[Continuous customization](customizing-models-continuous.md)** (Continuous Customization) — Chain multiple techniques sequentially (for example, SFT → DPO → RLVR). Requires [LoRA](customizing-models-lora.md) training type.
++ **[Distillation](customizing-models-distillation.md)** — Transfer knowledge from a *teacher* model to a *student* model. Best when you have a specific high-volume task that the student can be trained on. When the student is smaller than the teacher, you also get lower inference latency of the student model.
 
 Each technique can be combined with either [LoRA](customizing-models-lora.md) or [FFT](customizing-models-fft.md) training type. See [Training types](customizing-models-training-types.md) for details on choosing between them.

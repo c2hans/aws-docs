@@ -10,6 +10,11 @@ Configuration updates for a capability. The structure varies depending on the ca
 ## Contents
 <a name="API_UpdateCapabilityConfiguration_Contents"></a>
 
+ ** ack **   <a name="AmazonEKS-Type-UpdateCapabilityConfiguration-ack"></a>
+Configuration updates specific to ACK (AWS Controllers for Kubernetes) capabilities.
+Type: [UpdateAckConfig](API_UpdateAckConfig.md) object
+Required: No
+
  ** argoCd **   <a name="AmazonEKS-Type-UpdateCapabilityConfiguration-argoCd"></a>
 Configuration updates specific to Argo CD capabilities.
 Type: [UpdateArgoCdConfig](API_UpdateArgoCdConfig.md) object

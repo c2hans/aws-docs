@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/create-sip-rule.html
 # Creating a SIP rule
 <a name="create-sip-rule"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
+
 Before you can create a SIP rule, you need at least one DID or toll-free phone number with a **Product Type** set to **SIP Media Application Dial-In** in your Amazon Chime SDK inventory, or a Request URI hostname associated with an Amazon Chime SDK Voice Connector, and a SIP media application. For more about SIP applications, see [Creating a SIP media application](create-sip-app.md). Also, you can use rules created by other administrators.
 
 **To create a SIP rule**

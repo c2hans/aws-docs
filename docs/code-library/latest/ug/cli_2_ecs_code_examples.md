@@ -2647,6 +2647,43 @@ Output:
 For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-tasks.html) in *AWS CLI Command Reference*.
 
+### `monitor-express-gateway-service`
+<a name="ecs_MonitorExpressGatewayService_cli_2_topic"></a>
+
+The following code example shows how to use `monitor-express-gateway-service`.
+
+**AWS CLI**
+**To monitor an Express Gateway Service deployment**
+The following `monitor-express-gateway-service` example monitors an Express Gateway Service deployment, showing all resources associated with the service.
+
+```
+aws ecs monitor-express-gateway-service --service-arn {{arn:aws:ecs:us-east-1:123456789012:service/my-cluster/my-express-gateway-service}}
+```
+This command displays an interactive monitoring interface rather than producing standard output.
+For more information, see [Express Gateway Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html) in the *Amazon Elastic Container Service Developer Guide*.
+**To monitor only resources that changed in the latest deployment**
+The following `monitor-express-gateway-service` example monitors an Express Gateway Service but only shows resources that have changed in the most recent deployment.
+
+```
+aws ecs monitor-express-gateway-service \
+    --service-arn {{arn:aws:ecs:us-east-1:123456789012:service/my-cluster/my-express-gateway-service}} \
+    --resource-view {{DEPLOYMENT}}
+```
+For more information, see [Express Gateway Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html) in the *Amazon Elastic Container Service Developer Guide*.
+**To monitor with a custom timeout**
+The following `monitor-express-gateway-service` example monitors an Express Gateway Service with a timeout of 60 minutes instead of the default 30 minutes.
+
+```
+aws ecs monitor-express-gateway-service \
+    --service-arn {{my-express-gateway-service}} \
+    --timeout {{60}}
+```
+The command provides an interactive display with the following controls:
+Press `up` / `down` keys to scroll up or down through the resource listPress `q` to quit the monitoring sessionStatus bar shows a spinner indicating active monitoring
+The command requires a terminal (TTY) and will continue monitoring until manually stopped by the user or the timeout is reached.
+For more information, see [Express Gateway Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html) in the *Amazon Elastic Container Service Developer Guide*.
++  For API details, see [MonitorExpressGatewayService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/monitor-express-gateway-service.html) in *AWS CLI Command Reference*.
+
 ### `put-account-setting-default`
 <a name="ecs_PutAccountSettingDefault_cli_2_topic"></a>
 

@@ -138,7 +138,7 @@ The specific steps in this procedure are written for using the driver as an Amaz
 
    1. In the **Trusted entity type** section, choose **Web identity**.
 
-   1. For **Identity provider**, choose the **OpenID Connect provider URL** for your cluster (as shown under **Overview** in Amazon EKS).
+   1. For **Identity provider**, choose the **OpenID Connect provider URL** for your cluster (as shown in the **Cluster info** panel in Amazon EKS).
 
    1. For **Audience**, choose `sts.amazonaws.com`.
 

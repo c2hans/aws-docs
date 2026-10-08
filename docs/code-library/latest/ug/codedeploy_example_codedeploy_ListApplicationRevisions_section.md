@@ -19,7 +19,7 @@ The following `list-application-revisions` example displays information about al
 ```
 aws deploy list-application-revisions \
     --application-name {{WordPress_App}} \
-    --s-3-bucket {{amzn-s3-demo-bucket}} \
+    --s-3-bucket {{CodeDeployDemoBucket}} \
     --deployed {{exclude}} \
     --s-3-key-prefix {{WordPress_}} \
     --sort-by {{lastUsedTime}} \
@@ -34,7 +34,7 @@ Output:
             "revisionType": "S3",
             "s3Location": {
                 "version": "uTecLusvCB_JqHFXtfUcyfV8bEXAMPLE",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "WordPress_App.zip",
                 "bundleType": "zip"
             }
@@ -43,7 +43,7 @@ Output:
             "revisionType": "S3",
             "s3Location": {
                 "version": "tMk.UxgDpMEVb7V187ZM6wVAWEXAMPLE",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "WordPress_App_2-0.zip",
                 "bundleType": "zip"
             }

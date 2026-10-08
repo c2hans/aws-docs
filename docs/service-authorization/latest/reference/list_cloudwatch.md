@@ -1741,6 +1741,12 @@ The following actions are defined by Amazon CloudWatch but are not directly invo
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [SubmitAlarmFeedback](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Anomaly_Detection_Alarm.html#Improve_Anomaly_Detection_Alarm)  **
+  - **Description:** Grants permission to submit feedback on an anomaly detection alarm to improve its anomaly detection model
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [UpdateOTelEnrichment](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  **
   - **Description:** Grants permission to update the metric filters of OTel Enrichment of vended metrics for PromQL querying
   - **Resource types (\*required):**

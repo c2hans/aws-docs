@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automating-ethereum-node-valid
 title: 'Guidance for Automating Ethereum Node Validator using AWS Graviton'
 canonical_url: https://docs.aws.amazon.com/solutions/automating-ethereum-node-validator-using-aws-graviton/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Automating Ethereum Node Validator using AWS Graviton

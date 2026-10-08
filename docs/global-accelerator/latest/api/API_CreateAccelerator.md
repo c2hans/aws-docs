@@ -97,6 +97,12 @@ Required: No
       "IpAddressType": "string",
       "IpSets": [
          {
+            "IpAddressDetails": [
+               {
+                  "IpAddress": "string",
+                  "NetworkZone": "string"
+               }
+            ],
             "IpAddresses": [ "string" ],
             "IpAddressFamily": "string",
             "IpFamily": "string"

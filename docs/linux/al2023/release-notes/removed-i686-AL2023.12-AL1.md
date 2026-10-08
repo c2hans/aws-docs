@@ -71,7 +71,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-i686-
 | boost141-test | src, i686 |
 | boost141-thread | src, i686 |
 | boost141-wave | src, i686 |
-| btrfs-progs | src, i686 |
+| btrfs-progs | i686 |
 | bzip2-libs | i686 |
 | cairo | i686 |
 | cairo-gobject | i686 |

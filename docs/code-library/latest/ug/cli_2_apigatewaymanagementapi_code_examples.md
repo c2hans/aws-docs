@@ -77,7 +77,7 @@ The following `post-to-connection` example sends a message to a client that's co
 ```
 aws apigatewaymanagementapi post-to-connection \
     --connection-id {{L0SM9cOFvHcCIhw=}} \
-    --data {{"Hello from API Gateway!"}} \
+    --data '{{SGVsbG8gZnJvbSBBUEkgR2F0ZXdheSE=}}' \
     --endpoint-url {{https://aabbccddee.execute-api.us-west-2.amazonaws.com/prod}}
 ```
 This command produces no output.

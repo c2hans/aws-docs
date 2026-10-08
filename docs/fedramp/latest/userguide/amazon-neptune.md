@@ -12,8 +12,8 @@ This guide provides security configuration requirements and implementation examp
 
 |  |  |
 | --- |--- |
-| Version | 1.0.2 |
-| Last Updated | 2026-03-26 |
+| Version | 1.0.3 |
+| Last Updated | 2026-10-07 |
 | Documentation URL | https://docs.aws.amazon.com/neptune/latest/userguide/get-started.html |
 
 ## Overview
@@ -105,9 +105,9 @@ Amazon Neptune administrative access is managed through the master user account 
          {
            "Effect": "Allow",
            "Action": [
-             "neptune:CreateDBCluster",
-             "neptune:ModifyDBCluster",
-             "neptune:DescribeDBClusters"
+             "rds:CreateDBCluster",
+             "rds:ModifyDBCluster",
+             "rds:DescribeDBClusters"
            ],
            "Resource": "*",
            "Condition": {
@@ -146,14 +146,14 @@ Amazon Neptune uses a dual-layer security model: AWS IAM for cluster management 
 <a name="amazon_neptune_1_cluster_management_operations_iam_controlled"></a>
 
  **Operations:**
-+  `neptune:CreateDBCluster` - Create new Neptune clusters
-+  `neptune:DeleteDBCluster` - Delete Neptune clusters
-+  `neptune:ModifyDBCluster` - Modify cluster configuration
-+  `neptune:CreateDBInstance` - Add instances to cluster
-+  `neptune:DeleteDBInstance` - Remove instances from cluster
-+  `neptune:ModifyDBInstance` - Modify instance configuration
-+  `neptune:CreateDBClusterSnapshot` - Create manual snapshots
-+  `neptune:RestoreDBClusterFromSnapshot` - Restore from snapshots
++  `rds:CreateDBCluster` - Create new Neptune clusters
++  `rds:DeleteDBCluster` - Delete Neptune clusters
++  `rds:ModifyDBCluster` - Modify cluster configuration
++  `rds:CreateDBInstance` - Add instances to cluster
++  `rds:DeleteDBInstance` - Remove instances from cluster
++  `rds:ModifyDBInstance` - Modify instance configuration
++  `rds:CreateDBClusterSnapshot` - Create manual snapshots
++  `rds:RestoreDBClusterFromSnapshot` - Restore from snapshots
 
  **Security Implications:**
 + Cluster creation/deletion affects data availability and costs
@@ -397,9 +397,9 @@ aws neptune delete-db-cluster --db-cluster-identifier my-cluster
     {
       "Effect": "Allow",
       "Action": [
-        "neptune:Describe*",
-        "neptune:List*",
-        "neptune:Get*"
+        "rds:Describe*",
+        "rds:List*",
+        "rds:Get*"
       ],
       "Resource": "*"
     }
@@ -441,11 +441,11 @@ aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster
     {
       "Effect": "Allow",
       "Action": [
-        "neptune:Describe*",
-        "neptune:List*",
-        "neptune:Get*",
-        "neptune:Update*",
-        "neptune:Put*"
+        "rds:Describe*",
+        "rds:List*",
+        "rds:Get*",
+        "rds:Update*",
+        "rds:Put*"
       ],
       "Resource": "*",
       "Condition": {
@@ -488,7 +488,18 @@ aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster --skip-
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": "neptune:*",
+      "Action": [
+        "rds:Describe*",
+        "rds:List*",
+        "rds:CreateDBCluster",
+        "rds:DeleteDBCluster",
+        "rds:ModifyDBCluster",
+        "rds:CreateDBInstance",
+        "rds:ModifyDBInstance",
+        "rds:RebootDBInstance",
+        "rds:CreateDBClusterSnapshot",
+        "rds:DeleteDBClusterSnapshot"
+      ],
       "Resource": "*",
       "Condition": {
         "Bool": {
@@ -674,14 +685,14 @@ Amazon Neptune requires implementation of privileged account security controls i
        {
          "Effect": "Allow",
          "Action": [
-           "neptune:CreateDBCluster",
-           "neptune:ModifyDBCluster",
-           "neptune:DescribeDBClusters",
-           "neptune:CreateDBInstance",
-           "neptune:ModifyDBInstance",
-           "neptune:DescribeDBInstances",
-           "neptune:CreateDBClusterSnapshot",
-           "neptune:DescribeDBClusterSnapshots"
+           "rds:CreateDBCluster",
+           "rds:ModifyDBCluster",
+           "rds:DescribeDBClusters",
+           "rds:CreateDBInstance",
+           "rds:ModifyDBInstance",
+           "rds:DescribeDBInstances",
+           "rds:CreateDBClusterSnapshot",
+           "rds:DescribeDBClusterSnapshots"
          ],
          "Resource": "*",
          "Condition": {
@@ -716,7 +727,7 @@ Amazon Neptune requires implementation of privileged account security controls i
    # Verify MFA enforcement for privileged operations
    aws iam simulate-principal-policy \
      --policy-source-arn arn:aws:iam::account:role/NeptuneAdminRole \
-     --action-names neptune:CreateDBCluster \
+     --action-names rds:CreateDBCluster \
      --context-entries ContextKeyName=aws:MultiFactorAuthPresent,ContextKeyValues=false,ContextKeyType=boolean
    ```
 
@@ -903,6 +914,15 @@ aws neptune modify-db-cluster \
 + Implement just-in-time access for administrative operations
 + Monitor policy usage with CloudTrail and Access Analyzer
 + Document business justification for each permission
+
+## Machine-Readable Guidance (OSCAL)
+<a name="amazon_neptune_machine_readable_guidance_oscal"></a>
+
+This guidance is also available in the Open Security Controls Assessment Language (OSCAL), the NIST standard machine-readable format. You can ingest OSCAL into your compliance tooling and compare it against your current settings. The component definition describes how the service implements security controls, and the system security plan (SSP) documents the overall security posture.
++  [Download the Amazon Neptune OSCAL Component Definition (JSON)](samples/amazon-neptune_oscal_component-definition.json)
++  [Download the Amazon Neptune OSCAL System Security Plan (JSON)](samples/amazon-neptune_oscal_ssp.json)
+
+The complete bundle of all service and administrative guidance is available on the [guidance overview](introduction.html) and [administrative guidance](admin-guidance-introduction.html) pages.
 
 ## Additional Resources
 <a name="amazon_neptune_additional_resources"></a>

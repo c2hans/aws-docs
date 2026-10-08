@@ -36,6 +36,11 @@ Recommendations are generated to either downsize or terminate instances, along w
       "Or": [
          "Expression"
       ],
+      "ProductAttributes": {
+         "Key": "{{string}}",
+         "MatchOptions": [ "{{string}}" ],
+         "Values": [ "{{string}}" ]
+      },
       "Tags": {
          "Key": "{{string}}",
          "MatchOptions": [ "{{string}}" ],
@@ -65,10 +70,11 @@ Use `Expression` to filter in various Cost Explorer APIs.
 Not all `Expression` types are supported in each API. Refer to the documentation for each specific API to see what is supported.
 There are two patterns:
 + Simple dimension values.
-  + There are three types of simple dimension values: `CostCategories`, `Tags`, and `Dimensions`.
+  + There are four types of simple dimension values: `CostCategories`, `Tags`, `Dimensions`, and `ProductAttributes`.
     + Specify the `CostCategories` field to define a filter that acts on Cost Categories.
     + Specify the `Tags` field to define a filter that acts on Cost Allocation Tags.
     + Specify the `Dimensions` field to define a filter that acts on the [`DimensionValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html).
+    + Specify the `ProductAttributes` field to define a filter that acts on the product attributes of supported services, such as Amazon Bedrock. Only `GetCostAndUsage`, `GetCostAndUsageWithResources`, `GetDimensionValues` (in the `COST_AND_USAGE` context), `GetTags`, and `GetCostCategories` support `ProductAttributes`. For the supported services, keys and `SERVICE` filter rules, see [`ProductAttributeValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ProductAttributeValues.html).
   + For each filter type, you can set the dimension name and values for the filters that you plan to use.
     + For example, you can filter for `REGION==us-east-1 OR REGION==us-west-1`. For `GetRightsizingRecommendation`, the Region is a full name (for example, `REGION==US East (N. Virginia)`.
     + The corresponding `Expression` for this example is as follows: `{ "Dimensions": { "Key": "REGION", "Values": [ "us-east-1", "us-west-1" ] } }`

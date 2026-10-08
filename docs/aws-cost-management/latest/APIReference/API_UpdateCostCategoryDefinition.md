@@ -39,6 +39,11 @@ Updates an existing cost category. Changes made to the cost category rules will 
             "Or": [
                "Expression"
             ],
+            "ProductAttributes": {
+               "Key": "{{string}}",
+               "MatchOptions": [ "{{string}}" ],
+               "Values": [ "{{string}}" ]
+            },
             "Tags": {
                "Key": "{{string}}",
                "MatchOptions": [ "{{string}}" ],

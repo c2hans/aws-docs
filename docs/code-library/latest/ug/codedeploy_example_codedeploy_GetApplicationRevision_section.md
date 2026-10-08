@@ -19,7 +19,7 @@ The following `get-application-revision` example displays information about an a
 ```
 aws deploy get-application-revision \
     --application-name {{WordPress_App}} \
-    --s3-location {{bucket=amzn-s3-demo-bucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
+    --s3-location {{bucket=CodeDeployDemoBucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
 ```
 Output:
 
@@ -38,7 +38,7 @@ Output:
         "s3Location": {
             "bundleType": "zip",
             "eTag": "dd56cfdEXAMPLE8e768f9d77fEXAMPLE",
-            "bucket": "amzn-s3-demo-bucket",
+            "bucket": "CodeDeployDemoBucket",
             "key": "WordPressApp.zip"
         }
     }

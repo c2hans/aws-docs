@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/voice-namespace-migr
 # Migrating to the Amazon Chime SDK voice namespace
 <a name="voice-namespace-migration"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).
+
 The [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html) namespace is a dedicated place for the APIs that create and manage Amazon Chime SDK voice resources. You use the namespace to address Amazon Chime SDK voice API endpoints in any AWS Region that makes them available. If you're just starting to use the Amazon Chime SDK, use this namespace. For more information about Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md) in this guide.
 
 Existing applications that use the [Amazon Chime](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime.html) namespace should plan to migrate to the dedicated namespace in order to use updated APIs and new features.

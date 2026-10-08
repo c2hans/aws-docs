@@ -21,7 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[Location](#cfn-glue-table-icebergtableinput-location)" : {{String}},
   "[PartitionSpec](#cfn-glue-table-icebergtableinput-partitionspec)" : {{IcebergPartitionSpec}},
-  "[Properties](#cfn-glue-table-icebergtableinput-properties)" : {{Json}},
+  "[Properties](#cfn-glue-table-icebergtableinput-properties)" : {{{{{Key}}: {{Value}}, ...}}},
   "[Schema](#cfn-glue-table-icebergtableinput-schema)" : {{IcebergSchema}},
   "[WriteOrder](#cfn-glue-table-icebergtableinput-writeorder)" : {{IcebergSortOrder}}
 }
@@ -34,7 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Location](#cfn-glue-table-icebergtableinput-location): {{String}}
   [PartitionSpec](#cfn-glue-table-icebergtableinput-partitionspec): {{
     IcebergPartitionSpec}}
-  [Properties](#cfn-glue-table-icebergtableinput-properties): {{Json}}
+  [Properties](#cfn-glue-table-icebergtableinput-properties): {{
+    {{Key}}: {{Value}}}}
   [Schema](#cfn-glue-table-icebergtableinput-schema): {{
     IcebergSchema}}
   [WriteOrder](#cfn-glue-table-icebergtableinput-writeorder): {{
@@ -59,7 +60,8 @@ Property description not available.
 `Properties`  <a name="cfn-glue-table-icebergtableinput-properties"></a>
 Property description not available.
 *Required*: No
-*Type*: Json
+*Type*: Object of String
+*Pattern*: `^.+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Schema`  <a name="cfn-glue-table-icebergtableinput-schema"></a>

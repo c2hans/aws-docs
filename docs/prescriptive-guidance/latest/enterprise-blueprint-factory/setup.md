@@ -66,9 +66,9 @@ This section helps you set up the [configuration repository](architecture-compon
 
 1. Repeat these steps to fork the [Product repo](https://github.com/aws-samples/aws-enterprise-blueprint-factory-blueprint-repo) GitHub repository. Enter the name `ServiceCatalog-BlueprintProductRepo` for this repository.
 
-**To create the CodeConnections connection**
+**To create the AWS CodeConnections connection**
 
-1. In the AWS CLI, enter the following command to create a CodeConnections connection to GitHub:
+1. In the AWS CLI, enter the following command to create a AWS CodeConnections connection to GitHub:
 
    ```
    aws codeconnections create-connection --provider-type GitHub --connection-name <MyConnection>
@@ -228,7 +228,7 @@ The CodeBuild jobs in the config pipeline use this role.
    + `IamRoleName` is the name of the IAM role that the CodeBuild jobs use. The default value is `codebuild-servicecatalog-admin-role`.
    + `EnvironmentType` is the environment where you are deploying the Enterprise Blueprint Factory. The default value is `DEV`.
    + `ArtifactBucket` is the Systems Manager parameter that stores the Amazon S3 bucket where CodePipeline stores artifacts. The default value is `/blueprints/resources/artifacts-bucket-name`.
-   + `CodeConnectionArn` is the Amazon Resource Name (ARN) of the CodeConnections connection to GitHub.
+   + `CodeConnectionArn` is the Amazon Resource Name (ARN) of the AWS CodeConnections connection to GitHub.
 
 1. Save and close the **ServiceCatalog-Pipeline.yml** file.
 

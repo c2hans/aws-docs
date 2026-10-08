@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 #### [ CLI ]
 
 **AWS CLI**
-**To create an empty General Purpose SSD (gp2) volume**
+**Example 1: To create an empty General Purpose SSD (gp2) volume**
 The following `create-volume` example creates an 80 GiB General Purpose SSD (gp2) volume in the specified Availability Zone. Note that the current Region must be `us-east-1`, or you can add the `--region` parameter to specify the Region for the command.
 
 ```
@@ -30,6 +30,7 @@ Output:
 
 ```
 {
+    "AvailabilityZoneId": "use1-az1",
     "AvailabilityZone": "us-east-1a",
     "Tags": [],
     "Encrypted": false,
@@ -63,6 +64,7 @@ Output:
 
 ```
 {
+    "AvailabilityZoneId": "use1-az1",
     "AvailabilityZone": "us-east-1a",
     "Tags": [],
     "Encrypted": false,
@@ -88,6 +90,7 @@ Output:
 
 ```
 {
+    "AvailabilityZoneId": "use1-az1",
     "AvailabilityZone": "us-east-1a",
     "Tags": [],
     "Encrypted": true,

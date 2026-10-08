@@ -20,7 +20,7 @@ The following `register-application-revision` example registers information abou
 aws deploy register-application-revision \
     --application-name {{WordPress_App}} \
     --description {{"Revised WordPress application"}} \
-    --s3-location {{bucket=amzn-s3-demo-bucket,key=RevisedWordPressApp.zip,bundleType=zip,eTag=cecc9b8a08eac650a6e71fdb88EXAMPLE}}
+    --s3-location {{bucket=CodeDeployDemoBucket,key=RevisedWordPressApp.zip,bundleType=zip,eTag=cecc9b8a08eac650a6e71fdb88EXAMPLE}}
 ```
 This command produces no output.
 +  For API details, see [RegisterApplicationRevision](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register-application-revision.html) in *AWS CLI Command Reference*.

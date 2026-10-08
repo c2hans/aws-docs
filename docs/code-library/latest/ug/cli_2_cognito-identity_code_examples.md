@@ -56,8 +56,8 @@ Output:
 The following code example shows how to use `delete-identities`.
 
 **AWS CLI**
-**To delete an identity**
-This example deletes an identity from an identity pool.
+**To delete identity pool**
+This example deletes an identity pool.
 Command:
 
 ```

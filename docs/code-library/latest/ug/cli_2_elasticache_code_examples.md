@@ -31,7 +31,7 @@ The following `add-tags-to-resource` example adds up to 10 tags, key-value pairs
 ```
 aws elasticache add-tags-to-resource \
     --resource-name {{"arn:aws:elasticache:us-east-1:1234567890:cluster:my-mem-cluster"}} \
-    --tags '{{{"20150202":15, "ElastiCache":"Service"}}}'
+    --tags Key="APIVersion",Value="20150202" Key="Service",Value="ElastiCache"
 ```
 Output:
 

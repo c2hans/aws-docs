@@ -1125,7 +1125,7 @@ This example demonstrates how to view comments for a pull request in a repositor
 ```
 aws codecommit get-comments-for-pull-request \
     --repository-name {{MyDemoRepo}} \
-    --pull-request-id {{42}}
+    --pull-request-id {{42}} \
     --before-commit-ID {{317f8570EXAMPLE}} \
     --after-commit-id {{5d036259EXAMPLE}}
 ```
@@ -2305,7 +2305,7 @@ The following `put-file` example adds a file named 'ExampleSolution.py' to a rep
 aws codecommit put-file \
     --repository-name {{MyDemoRepo}} \
     --branch-name {{feature-randomizationfeature}} \
-    --file-content {{file://MyDirectory/ExampleSolution.py}} \
+    --file-content {{fileb://MyDirectory/ExampleSolution.py}} \
     --file-path {{/solutions/ExampleSolution.py}} \
     --parent-commit-id {{4c925148EXAMPLE}} \
     --name {{"Maria Garcia"}} \
@@ -2334,7 +2334,7 @@ This example demonstrates how to update triggers named 'MyFirstTrigger' and 'MyS
 
 ```
 aws codecommit put-repository-triggers \
-    --repository-name {{MyDemoRepo}}
+    --repository-name {{MyDemoRepo}} \
     --triggers {{file://MyTriggers.json}}
 ```
 Contents of `MyTriggers.json`:

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html
 ---
 
-# The token issuer endpoint
+# The token endpoint
 <a name="token-endpoint"></a>
 
 The OAuth 2.0 [token endpoint](https://www.rfc-editor.org/rfc/rfc6749#section-3.2) at `/oauth2/token` issues JSON web tokens (JWTs) to applications that want to complete authorization-code and client-credentials grant flows. These tokens are the end result of authentication with a user pool. They contain information about the user (ID token), the user's level of access (access token), and the user's entitlement to persist their signed-in session (refresh token). OpenID Connect (OIDC) relying-party libraries handle requests to and response payloads from this endpoint. Tokens provide verifiable proof of authentication, profile information, and a mechanism for access to back-end systems.

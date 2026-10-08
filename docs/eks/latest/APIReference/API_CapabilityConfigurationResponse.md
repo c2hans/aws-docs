@@ -10,6 +10,11 @@ The response object containing capability configuration details.
 ## Contents
 <a name="API_CapabilityConfigurationResponse_Contents"></a>
 
+ ** ack **   <a name="AmazonEKS-Type-CapabilityConfigurationResponse-ack"></a>
+Configuration settings for an ACK (AWS Controllers for Kubernetes) capability, including the cross-namespace reference setting and the list of disabled services.
+Type: [AckConfigResponse](API_AckConfigResponse.md) object
+Required: No
+
  ** argoCd **   <a name="AmazonEKS-Type-CapabilityConfigurationResponse-argoCd"></a>
 Configuration settings for an Argo CD capability, including the server URL and other Argo CD-specific settings.
 Type: [ArgoCdConfigResponse](API_ArgoCdConfigResponse.md) object

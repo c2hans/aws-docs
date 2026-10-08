@@ -20,7 +20,7 @@ Required: No
  ** Type **   <a name="awscostmanagement-Type-GroupDefinition-Type"></a>
 The string that represents the type of group.
 Type: String
-Valid Values: `DIMENSION | TAG | COST_CATEGORY`
+Valid Values: `DIMENSION | TAG | COST_CATEGORY | PRODUCT_ATTRIBUTE`
 Required: No
 
 ## See Also

@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CreateExp
 
 Creates an export job for a data source and destination.
 
+Export jobs run asynchronously. This operation returns a `JobId`. Call `GetExportJob` with that ID until `JobStatus` is `COMPLETED`, `FAILED`, or `CANCELLED`. When the status is `COMPLETED`, download the export file from the pre-signed URL in `ExportDestination.S3Url`. When the status is `FAILED`, see `FailureInfo`. To store a copy in your own bucket, upload the downloaded file to your bucket. Do not include `S3Url` in the request.
+
 You can execute this operation no more than once per second.
 
 ## Request Syntax
@@ -79,7 +81,7 @@ Type: [ExportDataSource](API_ExportDataSource.md) object
 Required: Yes
 
  ** [ExportDestination](#API_CreateExportJob_RequestSyntax) **   <a name="SES-CreateExportJob-request-ExportDestination"></a>
-The destination for the export job.
+The destination for the export job. Specify only `DataFormat`. Do not include `S3Url` in this request. SES writes the export file to a location that it manages and returns the download URL in `GetExportJob`.
 Type: [ExportDestination](API_ExportDestination.md) object
 Required: Yes
 

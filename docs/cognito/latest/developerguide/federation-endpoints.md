@@ -72,7 +72,7 @@ Amazon Cognito tokens follow the same additive, forward-compatible approach. For
 **Topics**
 + [Amazon Cognito user pools as an OIDC issuer](#user-pool-oidc-issuer)
 + [The redirect and authorization endpoint](authorization-endpoint.md)
-+ [The token issuer endpoint](token-endpoint.md)
++ [The token endpoint](token-endpoint.md)
 + [The user attributes endpoint](userinfo-endpoint.md)
 + [The token revocation endpoint](revocation-endpoint.md)
 + [The IdP SAML assertion endpoint](saml2-idpresponse-endpoint.md)

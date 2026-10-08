@@ -9,8 +9,9 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 
 The following code examples show how to use `CreateLogGroup`.
 
-Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
 +  [Configure container service connectivity](cloudwatch-logs_example_ecs_ServiceConnect_085_section.md)
++  [Learn syslog ingestion basics](cloudwatch-logs_example_cloudwatch-logs_Scenario_SyslogIngestion_section.md)
 
 ------
 #### [ .NET ]

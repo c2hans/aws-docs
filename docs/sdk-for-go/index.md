@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/index.html
 title: 'AWS SDK for Go Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-go/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # AWS SDK for Go Documentation

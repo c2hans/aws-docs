@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/advanced-resource-confi
 
 With the **omicsResourceFallbackOrder** directive you can declare an ordered list of resource (for example, accelerator and CPU) profiles for a task within your workflow. You specify this directive at the task level. HealthOmics searches for each profile in the order you specify for availability to reserve. If capacity isn't available within the wait timeout, HealthOmics moves to the next resource profile in the list.
 
-This is useful when your preferred accelerator capacity (for example, G6e with `nvidia-l40s`) isn't available and you'd rather fall back to a different accelerator type or to a CPU instead of failing the run.
+This is useful when your preferred accelerator capacity (for example, G6e with `nvidia-l40s`) isn't available and you'd rather fall back to a different accelerator type or to a CPU instead of failing the run. Resource fallback is one of several strategies for improving GPU acquisition success. For more information about these best practices, see [Mitigating INSTANCE\_RESERVATION\_FAILED errors](workflows-run-errors.md#workflows-mitigate-instance-reservation-failed).
 
 ## How it works
 <a name="advanced-resource-configuration-how-it-works"></a>

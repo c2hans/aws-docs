@@ -20,7 +20,7 @@ Nova Micro is Amazon's fastest text-only model, optimized for speed and low cost
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 128K tokens
-+ **Max output tokens:** 5K
++ **Max output tokens:** 10K
 + **Knowledge cutoff:** Oct 2024
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |

@@ -23,7 +23,7 @@ Create an Argo CD capability on your Amazon EKS cluster using the AWS Management
 
 1. Select your cluster name to open the cluster detail page.
 
-1. Choose the **Capabilities** tab.
+1. In the left navigation pane, choose **Capabilities**.
 
 1. In the left navigation, choose **Argo CD**.
 
@@ -32,6 +32,8 @@ Create an Argo CD capability on your Amazon EKS cluster using the AWS Management
 1. For **IAM Capability Role**:
    + If you already have an IAM Capability Role, select it from the dropdown
    + If you need to create a role, choose **Create Argo CD role**
+**Note**
+If role manager is enabled in your account, Amazon EKS attaches the role for you, and the role selections described here (for example **IAM Capability Role**) and the **Create recommended role** buttons are replaced by a **Customize** option. To use a different role, choose **Customize**. For more information, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *IAM User Guide*.
 
      This opens the IAM console in a new tab with pre-populated trust policy and full read access to Secrets Manager. No other permissions are added by default, but you can add them if needed. If you plan to use CodeCommit repositories or other AWS services, add the appropriate permissions before creating the role.
 
@@ -69,7 +71,7 @@ The capability creation process begins.
 ## Verify the capability is active
 <a name="_verify_the_capability_is_active"></a>
 
-1. On the **Capabilities** tab, view the Argo CD capability status.
+1. On the **Capabilities** page, view the Argo CD capability status.
 
 1. Wait for the status to change from `CREATING` to `ACTIVE`.
 

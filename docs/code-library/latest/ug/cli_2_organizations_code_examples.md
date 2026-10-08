@@ -273,8 +273,7 @@ The output includes an organizationalUnit object with details about the new OU:
         "OrganizationalUnit": {
                 "Id": "ou-examplerootid111-exampleouid111",
                 "Arn": "arn:aws:organizations::111111111111:ou/o-exampleorgid/ou-examplerootid111-exampleouid111",
-                "Name": "AccountingOU",
-                "Path": "o-exampleorgid/r-examplerootid111/ou-examplerootid111-exampleouid111/"
+                "Name": "AccountingOU"
         }
 }
 ```
@@ -594,8 +593,7 @@ Output:
     "OrganizationalUnit": {
         "Name": "Accounting Group",
         "Arn": "arn:aws:organizations::123456789012:ou/o-exampleorgid/ou-examplerootid111-exampleouid111",
-        "Id": "ou-examplerootid111-exampleouid111",
-        "Path": "o-exampleorgid/r-examplerootid111/ou-examplerootid111-exampleouid111/"
+        "Id": "ou-examplerootid111-exampleouid111"
     }
 }
 ```
@@ -1212,15 +1210,11 @@ The output shows that the specified root contains two OUs and shows details of e
         "OrganizationalUnits": [
                 {
                         "Name": "AccountingDepartment",
-                        "Arn": "arn:aws:organizations::o-exampleorgid:ou/r-examplerootid111/ou-examplerootid111-exampleouid111",
-                        "Id": "ou-examplerootid111-exampleouid111",
-                        "Path": "o-exampleorgid/r-examplerootid111/ou-examplerootid111-exampleouid111/"
+                        "Arn": "arn:aws:organizations::o-exampleorgid:ou/r-examplerootid111/ou-examplerootid111-exampleouid111"
                 },
                 {
                         "Name": "ProductionDepartment",
-                        "Arn": "arn:aws:organizations::o-exampleorgid:ou/r-examplerootid111/ou-examplerootid111-exampleouid222",
-                        "Id": "ou-examplerootid111-exampleouid222",
-                        "Path": "o-exampleorgid/r-examplerootid111/ou-examplerootid111-exampleouid222/"
+                        "Arn": "arn:aws:organizations::o-exampleorgid:ou/r-examplerootid111/ou-examplerootid111-exampleouid222"
                 }
         ]
 }
@@ -1447,10 +1441,9 @@ The output shows the new name:
 ```
 {
         "OrganizationalUnit": {
-                "Id": "ou-examplerootid111-exampleouid111",
+                "Id": "ou-examplerootid111-exampleouid111"
                 "Name": "AccountingOU",
-                "Arn": "arn:aws:organizations::111111111111:ou/o-exampleorgid/ou-examplerootid111-exampleouid111",
-                "Path": "o-exampleorgid/r-examplerootid111/ou-examplerootid111-exampleouid111/"
+                "Arn": "arn:aws:organizations::111111111111:ou/o-exampleorgid/ou-examplerootid111-exampleouid111""
         }
 }
 ```

@@ -22,7 +22,7 @@ aws deploy create-deployment \
     --deployment-config-name {{CodeDeployDefault.OneAtATime}} \
     --deployment-group-name {{WordPress_DG}} \
     --description {{"My demo deployment"}} \
-    --s3-location {{bucket=amzn-s3-demo-bucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
+    --s3-location {{bucket=CodeDeployDemoBucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
 ```
 Output:
 

@@ -129,6 +129,12 @@ The Amazon Resource Name (ARN) of the evaluator.
 `EvaluatorId`  <a name="EvaluatorId-fn::getatt"></a>
 The unique identifier of the evaluator.
 
+`EvaluatorType`  <a name="EvaluatorType-fn::getatt"></a>
+ The type of evaluator, indicating whether it is a built-in evaluator provided by the service or a custom evaluator created by the user.
+
+`Provider`  <a name="Provider-fn::getatt"></a>
+ The source of the evaluator's logic: AWS, a third-party library, or you.
+
 `Status`  <a name="Status-fn::getatt"></a>
 The current status of the evaluator.
 

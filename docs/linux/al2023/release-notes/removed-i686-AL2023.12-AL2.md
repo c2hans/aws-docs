@@ -87,7 +87,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-i686-
 | boost-wave | i686 |
 | brasero-libs | src, i686 |
 | brlapi | src, i686 |
-| btrfs-progs | src, i686 |
+| btrfs-progs | i686 |
 | bzip2-libs | i686 |
 | cairo | i686 |
 | cairo-gobject | i686 |
@@ -657,8 +657,8 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-i686-
 | libverto-glib | i686 |
 | libverto-libevent | i686 |
 | libverto-tevent | i686 |
-| libvirt-libs | src, i686 |
-| libvirt-nss | src, i686 |
+| libvirt-libs | i686 |
+| libvirt-nss | i686 |
 | libvirt-cim | src, i686 |
 | libvirt-gconfig | src, i686 |
 | libvirt-glib | src, i686 |

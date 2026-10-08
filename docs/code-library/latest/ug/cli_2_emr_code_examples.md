@@ -1053,7 +1053,7 @@ Output:
 
 ```
 {
-"CreationDateTime": 1474070889.129,
+"CreationDateTime": "2016-09-16T20:08:09.129000-0400",
 "Name": "MySecurityConfig"
 }
 ```
@@ -1091,7 +1091,7 @@ Output:
 
 ```
 {
-"CreationDateTime": 1474070889.129,
+"CreationDateTime": "2016-09-16T20:08:09.129000-0400",
 "Name": "MySecurityConfig"
 }
 ```
@@ -1120,7 +1120,7 @@ Output:
 
 ```
 {
-"CreationDateTime": 1490225558.982,
+"CreationDateTime": "2017-03-22T19:32:38.982000-0400",
 "Name": "MySecurityConfig"
 }
 ```
@@ -1153,7 +1153,7 @@ Output:
 
 ```
 {
-"CreationDateTime": 1490225558.982,
+"CreationDateTime": "2017-03-22T19:32:38.982000-0400",
 "Name": "MySecurityConfig"
 }
 ```
@@ -1198,8 +1198,8 @@ For release-label based uniform instance groups cluster:
             "Cluster": {
                 "Status": {
                     "Timeline": {
-                        "ReadyDateTime": 1436475075.199,
-                        "CreationDateTime": 1436474656.563,
+                        "ReadyDateTime": "2015-07-09T16:51:15.199000-0400",
+                        "CreationDateTime": "2015-07-09T16:44:16.563000-0400"
                     },
                     "State": "WAITING",
                     "StateChangeReason": {
@@ -1226,9 +1226,9 @@ For release-label based uniform instance groups cluster:
                         "RequestedInstanceCount": 2,
                         "Status": {
                             "Timeline": {
-                                "ReadyDateTime": 1436475074.245,
-                                "CreationDateTime": 1436474656.564,
-                                "EndDateTime": 1436638158.387
+                                "ReadyDateTime": "2015-07-09T16:51:14.245000-0400",
+                                "CreationDateTime": "2015-07-09T16:44:16.564000-0400",
+                                "EndDateTime": "2015-07-11T14:09:18.387000-0400"
                             },
                             "State": "RUNNING",
                             "StateChangeReason": {
@@ -1247,9 +1247,9 @@ For release-label based uniform instance groups cluster:
                         "RequestedInstanceCount": 1,
                         "Status": {
                             "Timeline": {
-                                "ReadyDateTime": 1436475074.245,
-                                "CreationDateTime": 1436474656.564,
-                                "EndDateTime": 1436638158.387
+                                "ReadyDateTime": "2015-07-09T16:51:14.245000-0400",
+                                "CreationDateTime": "2015-07-09T16:44:16.564000-0400",
+                                "EndDateTime": "2015-07-11T14:09:18.387000-0400"
                             },
                             "State": "RUNNING",
                             "StateChangeReason": {
@@ -1294,8 +1294,8 @@ For release-label based instance fleet cluster:
     "Cluster": {
         "Status": {
             "Timeline": {
-                "ReadyDateTime": 1487897289.705,
-                "CreationDateTime": 1487896933.942
+                "ReadyDateTime": "2017-02-23T19:48:09.705000-0500",
+                "CreationDateTime": "2017-02-23T19:42:13.942000-0500"
             },
             "State": "WAITING",
             "StateChangeReason": {
@@ -1322,8 +1322,8 @@ For release-label based instance fleet cluster:
             {
                 "Status": {
                     "Timeline": {
-                        "ReadyDateTime": 1487897212.74,
-                        "CreationDateTime": 1487896933.948
+                        "ReadyDateTime": "2017-02-23T19:46:52.740000-0500",
+                        "CreationDateTime": "2017-02-23T19:42:13.948000-0500"
                     },
                     "State": "RUNNING",
                     "StateChangeReason": {
@@ -1374,8 +1374,8 @@ For ami based uniform instance group cluster:
         "Cluster": {
             "Status": {
                 "Timeline": {
-                    "ReadyDateTime": 1399400564.432,
-                    "CreationDateTime": 1399400268.62
+                    "ReadyDateTime": "2014-05-06T14:22:44.432000-0400",
+                    "CreationDateTime": "2014-05-06T14:17:48.62000-0400"
                 },
                 "State": "WAITING",
                 "StateChangeReason": {
@@ -1396,8 +1396,8 @@ For ami based uniform instance group cluster:
                     "RequestedInstanceCount": 1,
                     "Status": {
                         "Timeline": {
-                            "ReadyDateTime": 1399400558.848,
-                            "CreationDateTime": 1399400268.621
+                            "ReadyDateTime": "2014-05-06T14:22:38.848000-0400",
+                            "CreationDateTime": "2014-05-06T14:17:48.621000-0400"
                         },
                         "State": "RUNNING",
                         "StateChangeReason": {
@@ -1415,8 +1415,8 @@ For ami based uniform instance group cluster:
                     "RequestedInstanceCount": 2,
                     "Status": {
                         "Timeline": {
-                            "ReadyDateTime": 1399400564.439,
-                            "CreationDateTime": 1399400268.621
+                            "ReadyDateTime": "2014-05-06T14:22:44.439000-0400",
+                            "CreationDateTime": "2014-05-06T14:17:48.621000-0400"
                         },
                         "State": "RUNNING",
                         "StateChangeReason": {
@@ -1466,9 +1466,9 @@ Output:
     "Step": {
         "Status": {
             "Timeline": {
-                "EndDateTime": 1433200470.481,
-                "CreationDateTime": 1433199926.597,
-                "StartDateTime": 1433200404.959
+                "EndDateTime": "2015-06-01T19:14:30.481000-0400",
+                "CreationDateTime": "2015-06-01T19:05:26.597000-0400",
+                "StartDateTime": "2015-06-01T19:13:24.959000-0400"
             },
             "State": "COMPLETED",
             "StateChangeReason": {}
@@ -1525,8 +1525,8 @@ Output:
         {
             "Status": {
                 "Timeline": {
-                    "ReadyDateTime": 1433200405.353,
-                    "CreationDateTime": 1433199926.596
+                    "ReadyDateTime": "2025-10-28T11:11:52.228000-04:00",
+                    "CreationDateTime": "2025-10-28T11:02:22.179000-04:00"
                 },
                 "State": "WAITING",
                 "StateChangeReason": {
@@ -1563,8 +1563,8 @@ Output:
       {
           "Status": {
               "Timeline": {
-                  "ReadyDateTime": 1488759094.637,
-                  "CreationDateTime": 1488758719.817
+                  "ReadyDateTime": "2017-03-05T19:11:34.637000-0500",
+                  "CreationDateTime": "2017-03-05T19:05:19.817000-0500"
               },
               "State": "RUNNING",
               "StateChangeReason": {
@@ -1593,8 +1593,8 @@ Output:
       {
           "Status": {
               "Timeline": {
-                  "ReadyDateTime": 1488759058.598,
-                  "CreationDateTime": 1488758719.811
+                  "ReadyDateTime": "2017-03-05T19:10:58.598000-0500",
+                  "CreationDateTime": "2017-03-05T19:05:19.811000-0500"
               },
               "State": "RUNNING",
               "StateChangeReason": {
@@ -1639,8 +1639,8 @@ For a uniform instance group based cluster
          {
             "Status": {
                 "Timeline": {
-                    "ReadyDateTime": 1433200400.03,
-                    "CreationDateTime": 1433199960.152
+                    "ReadyDateTime": "2015-06-01T19:13:20.431000-0400",
+                    "CreationDateTime": "2015-06-01T19:05:49.263000-0400"
                 },
                 "State": "RUNNING",
                 "StateChangeReason": {}
@@ -1655,8 +1655,8 @@ For a uniform instance group based cluster
         {
             "Status": {
                 "Timeline": {
-                    "ReadyDateTime": 1433200400.031,
-                    "CreationDateTime": 1433199949.102
+                    "ReadyDateTime": "2015-06-01T19:13:20.431000-0400",
+                    "CreationDateTime": "2015-06-01T19:05:49.263000-0400"
                 },
                 "State": "RUNNING",
                 "StateChangeReason": {}
@@ -1671,8 +1671,8 @@ For a uniform instance group based cluster
         {
             "Status": {
                 "Timeline": {
-                    "ReadyDateTime": 1433200400.031,
-                    "CreationDateTime": 1433199949.102
+                    "ReadyDateTime": "2015-06-01T19:13:20.431000-0400",
+                    "CreationDateTime": "2015-06-01T19:05:49.263000-0400"
                 },
                 "State": "RUNNING",
                 "StateChangeReason": {}
@@ -1693,9 +1693,9 @@ For a fleet based cluster:
           {
               "Status": {
                   "Timeline": {
-                      "ReadyDateTime": 1487810810.878,
-                      "CreationDateTime": 1487810588.367,
-                      "EndDateTime": 1488022990.924
+                      "ReadyDateTime": "2017-02-22T19:46:50.878000-0500",
+                      "CreationDateTime": "2017-02-22T19:43:08.878000-0500",
+                      "EndDateTime": "2017-02-25T06:43:10.924000-0500"
                   },
                   "State": "TERMINATED",
                   "StateChangeReason": {
@@ -1736,11 +1736,11 @@ Output:
 {
     "SecurityConfigurations": [
         {
-            "CreationDateTime": 1473889697.417,
+            "CreationDateTime": "2025-10-28T10:15:36.207000-04:00",
             "Name": "MySecurityConfig-1"
         },
         {
-            "CreationDateTime": 1473889697.417,
+            "CreationDateTime": "2025-10-28T10:15:36.207000-04:00",
             "Name": "MySecurityConfig-2"
         }
     ]
@@ -1783,7 +1783,7 @@ Output:
             "Name": "My_EMR_Studio",
             "Url": "https://es-XXXXXXX132E0X7R0W7GAS1MVB.emrstudio-prod.us-east-1.amazonaws.com",
             "AuthMode": "IAM",
-            "CreationTime": 1761664173.624
+            "CreationTime": "2025-10-28T11:09:33.624000-04:00"
         }
     ]
 }

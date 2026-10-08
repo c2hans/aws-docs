@@ -57,3 +57,29 @@ aws batch deregister-job-definition --job-definition {{sleep10}}
 +  For API details, see [DeregisterJobDefinition](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/DeregisterJobDefinition) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def deregister_job_definition(self, job_definition: str) -> None:
+        """
+        Deregisters a job definition.
+
+        :param job_definition: The job definition name:revision or ARN.
+        """
+        try:
+            self.batch_client.deregister_job_definition(jobDefinition=job_definition)
+            logger.info("Deregistered job definition %s.", job_definition)
+        except ClientError as err:
+            logger.error(
+                "Error deregistering job definition %s: %s",
+                job_definition,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [DeregisterJobDefinition](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/DeregisterJobDefinition) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deterministic-upgrades-u
 
  For information on restricting updates to those from a particular advisory, see [Applying security updates in-place](security-inplace-update.md)
 
- For patching in-place, you can use the `dnf` package manager. When you run the `dnf upgrade` command, the system checks for upgrades in the repository that the `releasever` variable specifies. A valid `releasever` is either {{latest}} or a date-stamped version such as {{2023.12.20260817}}.
+ For patching in-place, you can use the `dnf` package manager. When you run the `dnf upgrade` command, the system checks for upgrades in the repository that the `releasever` variable specifies. A valid `releasever` is either {{latest}} or a date-stamped version such as {{2023.12.20260930}}.
 
 You can change the value of `releasever` using one of the following methods. These methods are listed in descending system priority. This means that method 1 overrides methods 2 and 3, and method 2 overrides method 3.
 

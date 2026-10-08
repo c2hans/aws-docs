@@ -22,4 +22,4 @@ You can also use the AWS Management Console instead of the Support App API to ma
 You must have a Business or Enterprise Support plan to use the Support App API.
 For more information about the Support App endpoints, see the [Support App in Slack endpoints](https://docs.aws.amazon.com/general/latest/gr/awssupport.html#awssupport_app_region) in the * AWS General Reference*.
 
-This document was last published on October 7, 2026.
+This document was last published on October 8, 2026.

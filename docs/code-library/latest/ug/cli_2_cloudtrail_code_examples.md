@@ -33,51 +33,6 @@ aws cloudtrail add-tags --resource-id {{arn:aws:cloudtrail:us-east-1:12345678901
 ```
 +  For API details, see [AddTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/add-tags.html) in *AWS CLI Command Reference*.
 
-### `create-subscription`
-<a name="cloudtrail_CreateSubscription_cli_2_topic"></a>
-
-The following code example shows how to use `create-subscription`.
-
-**AWS CLI**
-**To create and configure AWS resources for a trail**
-The following `create-subscription` command creates a new S3 bucket and SNS topic for `Trail1`.
-
-```
-aws cloudtrail create-subscription \
-    --name {{Trail1}} \
-    --s3-new-bucket {{amzn-s3-demo-bucket}} \
-    --sns-new-topic {{my-topic}}
-```
-Output:
-
-```
-Setting up new S3 bucket amzn-s3-demo-bucket...
-Setting up new SNS topic my-topic...
-Creating/updating CloudTrail configuration...
-CloudTrail configuration:
-    {
-        "trailList": [
-            {
-                "IncludeGlobalServiceEvents": true,
-                "Name": "Trail1",
-                "TrailARN": "arn:aws:cloudtrail:us-east-1:123456789012:trail/Trail1",
-                "LogFileValidationEnabled": false,
-                "IsMultiRegionTrail": false,
-                "S3BucketName": "amzn-s3-demo-bucket",
-                "SnsTopicName": "my-topic",
-                "HomeRegion": "us-east-1"
-            }
-        ],
-        "ResponseMetadata": {
-        "HTTPStatusCode": 200,
-        "RequestId": "f39e51f6-c615-11e5-85bd-d35ca21ee3e2"
-        }
-    }
-Starting CloudTrail service...
-Logs will be delivered to my-bucket
-```
-+  For API details, see [CreateSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-subscription.html) in *AWS CLI Command Reference*.
-
 ### `create-trail`
 <a name="cloudtrail_CreateTrail_cli_2_topic"></a>
 
@@ -564,49 +519,6 @@ The following `stop-logging` command turns off logging for `Trail1`:
 aws cloudtrail stop-logging --name {{Trail1}}
 ```
 +  For API details, see [StopLogging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/stop-logging.html) in *AWS CLI Command Reference*.
-
-### `update-subscription`
-<a name="cloudtrail_UpdateSubscription_cli_2_topic"></a>
-
-The following code example shows how to use `update-subscription`.
-
-**AWS CLI**
-**To update the configuration settings for a trail**
-The following `update-subscription` example updates the trail to specify a new S3 bucket and SNS topic.
-
-```
-aws cloudtrail update-subscription \
-    --name {{Trail1}} \
-    --s3-new-bucket {{amzn-s3-demo-bucket}} \
-    --sns-new-topic {{my-topic-new}}
-```
-Output:
-
-```
-Setting up new S3 bucket amzn-s3-demo-bucket...
-Setting up new SNS topic my-topic-new...
-Creating/updating CloudTrail configuration...
-CloudTrail configuration:
-{
-    "trailList": [
-        {
-            "IncludeGlobalServiceEvents": true,
-            "Name": "Trail1",
-            "TrailARN": "arn:aws:cloudtrail:us-east-1:123456789012:trail/Trail1",
-            "LogFileValidationEnabled": false,
-            "IsMultiRegionTrail": false,
-            "S3BucketName": "amzn-s3-demo-bucket",
-            "SnsTopicName": "my-topic-new",
-            "HomeRegion": "us-east-1"
-        }
-    ],
-    "ResponseMetadata": {
-        "HTTPStatusCode": 200,
-        "RequestId": "31126f8a-c616-11e5-9cc6-2fd637936879"
-    }
-}
-```
-+  For API details, see [UpdateSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/update-subscription.html) in *AWS CLI Command Reference*.
 
 ### `update-trail`
 <a name="cloudtrail_UpdateTrail_cli_2_topic"></a>

@@ -93,6 +93,14 @@ For more information, see [Computer use](computer-use.html).
 | --- | --- |
 | computer\_20251124 | computer-use-2025-11-24 |
 
+**Compaction using `bedrock-runtime` endpoint**
+
+For more information, see [Compaction](claude-messages-compaction.html).
+
+| **Compaction supported** | **Beta value** |
+| --- | --- |
+| Yes | compact-2026-09-04 |
+
 ## Pricing
 <a name="model-card-anthropic-claude-opus-5-pricing"></a>
 
@@ -105,7 +113,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | anthropic.claude-opus-5 | https://bedrock-runtime.{region}.amazonaws.com | `us.anthropic.claude-opus-5`<br />`eu.anthropic.claude-opus-5`<br />`au.anthropic.claude-opus-5`<br />`in.anthropic.claude-opus-5` | global.anthropic.claude-opus-5 |
+| bedrock-runtime | anthropic.claude-opus-5 | N/A | `us.anthropic.claude-opus-5`<br />`eu.anthropic.claude-opus-5`<br />`au.anthropic.claude-opus-5`<br />`in.anthropic.claude-opus-5` | global.anthropic.claude-opus-5 |
 | bedrock-mantle | anthropic.claude-opus-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A | N/A |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/anthropic/v1/messages".*

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-spot-placement-scor
 title: 'Guidance for Building a Spot Placement Score Tracker Dashboard on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-spot-placement-score-tracker-dashboard-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Building a Spot Placement Score Tracker Dashboard on AWS

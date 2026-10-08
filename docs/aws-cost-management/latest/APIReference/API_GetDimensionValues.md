@@ -15,6 +15,7 @@ Retrieves all available filter values for a specified filter over a period of ti
    "BillingViewArn": "{{string}}",
    "Context": "{{string}}",
    "Dimension": "{{string}}",
+   "DimensionKey": "{{string}}",
    "Filter": {
       "And": [
          "Expression"
@@ -33,6 +34,11 @@ Retrieves all available filter values for a specified filter over a period of ti
       "Or": [
          "Expression"
       ],
+      "ProductAttributes": {
+         "Key": "{{string}}",
+         "MatchOptions": [ "{{string}}" ],
+         "Values": [ "{{string}}" ]
+      },
       "Tags": {
          "Key": "{{string}}",
          "MatchOptions": [ "{{string}}" ],
@@ -91,6 +97,7 @@ If you set the context to `COST_AND_USAGE`, you can use the following dimensions
 + OPERATING\_SYSTEM - The operating system. Examples are Windows or Linux.
 + OPERATION - The action performed. Examples include `RunInstance` and `CreateBucket`.
 + PLATFORM - The Amazon EC2 operating system. Examples are Windows or Linux.
++ PRODUCT\_ATTRIBUTE - The product attributes of supported services, such as the model provider or the model for Amazon Bedrock.
 + PURCHASE\_TYPE - The reservation type of the purchase that this usage is related to. Examples include On-Demand Instances and Standard Reserved Instances.
 + RESERVATION\_ID - The unique identifier for an AWS Reservation Instance.
 + SAVINGS\_PLAN\_ARN - The unique identifier for your Savings Plans.
@@ -126,19 +133,30 @@ Required: No
 
  ** [Dimension](#API_GetDimensionValues_RequestSyntax) **   <a name="awscostmanagement-GetDimensionValues-request-Dimension"></a>
 The name of the dimension. Each `Dimension` is available for a different `Context`. For more information, see `Context`. `LINK_ACCOUNT_NAME` and `SERVICE_CODE` can only be used in [CostCategoryRule](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/AAPI_CostCategoryRule.html).
+ `PRODUCT_ATTRIBUTE` returns the product attribute keys that are available for your costs of supported services, or the values of the key that you specify in `DimensionKey`. `PRODUCT_ATTRIBUTE` is supported only in the `COST_AND_USAGE` context.
 Type: String
-Valid Values: `AZ | INSTANCE_TYPE | LINKED_ACCOUNT | PAYER_ACCOUNT | LINKED_ACCOUNT_NAME | OPERATION | PURCHASE_TYPE | REGION | SERVICE | SERVICE_CODE | USAGE_TYPE | USAGE_TYPE_GROUP | RECORD_TYPE | OPERATING_SYSTEM | TENANCY | SCOPE | PLATFORM | SUBSCRIPTION_ID | LEGAL_ENTITY_NAME | DEPLOYMENT_OPTION | DATABASE_ENGINE | CACHE_ENGINE | INSTANCE_TYPE_FAMILY | BILLING_ENTITY | RESERVATION_ID | RESOURCE_ID | RIGHTSIZING_TYPE | SAVINGS_PLANS_TYPE | SAVINGS_PLAN_ARN | PAYMENT_OPTION | AGREEMENT_END_DATE_TIME_AFTER | AGREEMENT_END_DATE_TIME_BEFORE | INVOICING_ENTITY | ANOMALY_TOTAL_IMPACT_ABSOLUTE | ANOMALY_TOTAL_IMPACT_PERCENTAGE`
+Valid Values: `AZ | INSTANCE_TYPE | LINKED_ACCOUNT | PAYER_ACCOUNT | LINKED_ACCOUNT_NAME | OPERATION | PURCHASE_TYPE | REGION | SERVICE | SERVICE_CODE | USAGE_TYPE | USAGE_TYPE_GROUP | RECORD_TYPE | OPERATING_SYSTEM | TENANCY | SCOPE | PLATFORM | SUBSCRIPTION_ID | LEGAL_ENTITY_NAME | DEPLOYMENT_OPTION | DATABASE_ENGINE | CACHE_ENGINE | INSTANCE_TYPE_FAMILY | BILLING_ENTITY | RESERVATION_ID | RESOURCE_ID | RIGHTSIZING_TYPE | SAVINGS_PLANS_TYPE | SAVINGS_PLAN_ARN | PAYMENT_OPTION | AGREEMENT_END_DATE_TIME_AFTER | AGREEMENT_END_DATE_TIME_BEFORE | INVOICING_ENTITY | ANOMALY_TOTAL_IMPACT_ABSOLUTE | ANOMALY_TOTAL_IMPACT_PERCENTAGE | PRODUCT_ATTRIBUTE`
 Required: Yes
+
+ ** [DimensionKey](#API_GetDimensionValues_RequestSyntax) **   <a name="awscostmanagement-GetDimensionValues-request-DimensionKey"></a>
+The product attribute key to return values for, such as `model`. If you omit `DimensionKey` or set it to an empty string, the response lists the product attribute keys that are available for your costs of supported services instead. For the supported services, see [ProductAttributeValues](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ProductAttributeValues.html).
+If you specify a key, the response lists the values of that key. If some of your costs have no value for the key, the response includes an empty-string value. Keys are case-sensitive, and a key that doesn't exist returns no values other than an empty string.
+You can specify `DimensionKey` only when `Dimension` is `PRODUCT_ATTRIBUTE`. If you also specify `SortBy`, `DimensionKey` is required. As a result, you can't list product attribute keys when you use `SortBy`.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+Pattern: `[\S\s]*`
+Required: No
 
  ** [Filter](#API_GetDimensionValues_RequestSyntax) **   <a name="awscostmanagement-GetDimensionValues-request-Filter"></a>
 Use `Expression` to filter in various Cost Explorer APIs.
 Not all `Expression` types are supported in each API. Refer to the documentation for each specific API to see what is supported.
 There are two patterns:
 + Simple dimension values.
-  + There are three types of simple dimension values: `CostCategories`, `Tags`, and `Dimensions`.
+  + There are four types of simple dimension values: `CostCategories`, `Tags`, `Dimensions`, and `ProductAttributes`.
     + Specify the `CostCategories` field to define a filter that acts on Cost Categories.
     + Specify the `Tags` field to define a filter that acts on Cost Allocation Tags.
     + Specify the `Dimensions` field to define a filter that acts on the [`DimensionValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DimensionValues.html).
+    + Specify the `ProductAttributes` field to define a filter that acts on the product attributes of supported services, such as Amazon Bedrock. Only `GetCostAndUsage`, `GetCostAndUsageWithResources`, `GetDimensionValues` (in the `COST_AND_USAGE` context), `GetTags`, and `GetCostCategories` support `ProductAttributes`. For the supported services, keys and `SERVICE` filter rules, see [`ProductAttributeValues`](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_ProductAttributeValues.html).
   + For each filter type, you can set the dimension name and values for the filters that you plan to use.
     + For example, you can filter for `REGION==us-east-1 OR REGION==us-west-1`. For `GetRightsizingRecommendation`, the Region is a full name (for example, `REGION==US East (N. Virginia)`.
     + The corresponding `Expression` for this example is as follows: `{ "Dimensions": { "Key": "REGION", "Values": [ "us-east-1", "us-west-1" ] } }`

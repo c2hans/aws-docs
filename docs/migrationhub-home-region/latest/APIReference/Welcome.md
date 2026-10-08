@@ -13,4 +13,4 @@ The AWS Migration Hub home region APIs are available specifically for working wi
 
 For specific API usage, see the sections that follow in this AWS Migration Hub Home Region API reference.
 
-This document was last published on October 7, 2026.
+This document was last published on October 8, 2026.

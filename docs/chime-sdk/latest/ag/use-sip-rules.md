@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/use-sip-rules.html
 # Managing SIP rules
 <a name="use-sip-rules"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
+
 A SIP rule associates your SIP media application with a phone number or a Request URI hostname. You can associate a SIP rule with more than one SIP media application. Each application then runs only that rule. For an overview of how SIP rules work with SIP media applications, refer to [Understanding SIP applications and rules](understand-sip-data-models.md) in the previous section.
 
 **Note**

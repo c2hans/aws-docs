@@ -1677,6 +1677,48 @@ Output:
 ```
 +  For API details, see [CreateOptionGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-option-group.html) in *AWS CLI Command Reference*.
 
+### `create-tenant-database`
+<a name="rds_CreateTenantDatabase_cli_2_topic"></a>
+
+The following code example shows how to use `create-tenant-database`.
+
+**AWS CLI**
+**To create a tenant database**
+The following `create-tenant-database` example creates a tenant database in an RDS for Oracle CDB instance. The master user password is read from a file named `master_user_password.txt`, which in this example is located in the current working directory.
+
+```
+aws rds create-tenant-database \
+    --db-instance-identifier {{test-rds-oracle}} \
+    --tenant-db-name {{tenant2}} \
+    --master-username {{tenantadmin}} \
+    --master-user-password {{file://master_user_password.txt}}
+```
+Output:
+
+```
+{
+    "TenantDatabase": {
+        "TenantDatabaseCreateTime": "2026-09-12T16:12:32.429000+00:00",
+        "DBInstanceIdentifier": "test-rds-oracle",
+        "TenantDBName": "TENANT2",
+        "Status": "creating",
+        "MasterUsername": "tenantadmin",
+        "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
+        "TenantDatabaseResourceId": "tdb-ABCD1234EFGH5678IJKL90MNOPQRST1234UVWX5678YZAEXAMPLE",
+        "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
+        "CharacterSetName": "AL32UTF8",
+        "NcharCharacterSetName": "AL16UTF16",
+        "DeletionProtection": true,
+        "PendingModifiedValues": {
+            "MasterUserPassword": "****"
+        },
+        "TagList": []
+    }
+}
+```
+For more information, see [Adding an RDS for Oracle tenant database to your CDB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-configuring.adding.pdb.html) in the *Amazon RDS User Guide*.
++  For API details, see [CreateTenantDatabase](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-tenant-database.html) in *AWS CLI Command Reference*.
+
 ### `delete-blue-green-deployment`
 <a name="rds_DeleteBlueGreenDeployment_cli_2_topic"></a>
 
@@ -1822,6 +1864,56 @@ Output:
 ```
 For more information, see [Deleting a blue/green deployment](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments-deleting.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeleteBlueGreenDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-blue-green-deployment.html) in *AWS CLI Command Reference*.
+
+### `delete-db-cluster-automated-backup`
+<a name="rds_DeleteDbClusterAutomatedBackup_cli_2_topic"></a>
+
+The following code example shows how to use `delete-db-cluster-automated-backup`.
+
+**AWS CLI**
+**To delete an automated backup of a DB cluster**
+The following `delete-db-cluster-automated-backup` example deletes the automated backup for the specified DB cluster resource ID. To find the resource ID, use the `describe-db-cluster-automated-backups` command.
+
+```
+aws rds delete-db-cluster-automated-backup \
+    --db-cluster-resource-id {{cluster-ABCD1234EFGH5678IJKL90MNOP}}
+```
+Output:
+
+```
+{
+    "DBClusterAutomatedBackup": {
+        "Engine": "aurora-postgresql",
+        "DBClusterAutomatedBackupsArn": "arn:aws:rds:us-east-1:123456789012:cluster-auto-backup:cab-abcd1234efgh5678ijkl90mnopqrst5678uvwx1234yzab56cdef7890abcd1234",
+        "DBClusterIdentifier": "test-aurora-cluster",
+        "RestoreWindow": {},
+        "MasterUsername": "postgres",
+        "DbClusterResourceId": "cluster-ABCD1234EFGH5678IJKL90MNOP",
+        "Region": "us-east-1",
+        "Status": "deleted",
+        "IAMDatabaseAuthenticationEnabled": false,
+        "ClusterCreateTime": "2026-09-12T11:38:04+00:00",
+        "StorageEncrypted": true,
+        "StorageEncryptionType": "sse-kms",
+        "AllocatedStorage": 1,
+        "EngineVersion": "17.7",
+        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-cluster",
+        "BackupRetentionPeriod": 7,
+        "PreferredBackupWindow": "04:30-05:00",
+        "EngineMode": "provisioned",
+        "AvailabilityZones": [
+            "us-east-1b",
+            "us-east-1d",
+            "us-east-1c"
+        ],
+        "Port": 5432,
+        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+        "TagList": []
+    }
+}
+```
+For more information, see [Deleting retained automated backups for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.Retaining.Deleting.html) in the *Amazon Aurora User Guide*.
++  For API details, see [DeleteDbClusterAutomatedBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-cluster-automated-backup.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-cluster-endpoint`
 <a name="rds_DeleteDbClusterEndpoint_cli_2_topic"></a>
@@ -2380,6 +2472,45 @@ This command produces no output.
 For more information, see [Deleting an Option Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html#USER_WorkingWithOptionGroups.Delete) in the *Amazon RDS User Guide*.
 +  For API details, see [DeleteOptionGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-option-group.html) in *AWS CLI Command Reference*.
 
+### `delete-tenant-database`
+<a name="rds_DeleteTenantDatabase_cli_2_topic"></a>
+
+The following code example shows how to use `delete-tenant-database`.
+
+**AWS CLI**
+**To delete a tenant database**
+The following `delete-tenant-database` example deletes a tenant database from an RDS for Oracle CDB instance and takes a final snapshot of it.
+
+```
+aws rds delete-tenant-database \
+    --db-instance-identifier {{test-rds-oracle}} \
+    --tenant-db-name {{tenant2}} \
+    --final-db-snapshot-identifier {{final-snap-test}}
+```
+Output:
+
+```
+{
+    "TenantDatabase": {
+        "TenantDatabaseCreateTime": "2026-09-12T16:12:32.429000+00:00",
+        "DBInstanceIdentifier": "test-rds-oracle",
+        "TenantDBName": "TENANT2",
+        "Status": "deleting",
+        "MasterUsername": "tenantadmin",
+        "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
+        "TenantDatabaseResourceId": "tdb-ABCD1234EFGH5678IJKL90MNOPQRST1234UVWX5678YZAEXAMPLE",
+        "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
+        "CharacterSetName": "AL32UTF8",
+        "NcharCharacterSetName": "AL16UTF16",
+        "DeletionProtection": false,
+        "PendingModifiedValues": {},
+        "TagList": []
+    }
+}
+```
+For more information, see [Deleting an RDS for Oracle tenant database from your CDB](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-configuring.deleting.pdb.html) in the *Amazon RDS User Guide*.
++  For API details, see [DeleteTenantDatabase](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-tenant-database.html) in *AWS CLI Command Reference*.
+
 ### `deregister-db-proxy-targets`
 <a name="rds_DeregisterDbProxyTargets_cli_2_topic"></a>
 
@@ -2896,6 +3027,61 @@ Output:
 ```
 For more information, see [Using SSL/TLS to encrypt a connection to a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.SSL.html) in the *Amazon RDS User Guide* and [Using SSL/TLS to encrypt a connection to a DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.SSL.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DescribeCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-certificates.html) in *AWS CLI Command Reference*.
+
+### `describe-db-cluster-automated-backups`
+<a name="rds_DescribeDbClusterAutomatedBackups_cli_2_topic"></a>
+
+The following code example shows how to use `describe-db-cluster-automated-backups`.
+
+**AWS CLI**
+**To describe the automated backups of a DB cluster**
+The following `describe-db-cluster-automated-backups` example retrieves the automated backup for the specified DB cluster, including the window of time that you can restore to.
+
+```
+aws rds describe-db-cluster-automated-backups \
+    --db-cluster-identifier {{test-aurora-cluster}}
+```
+Output:
+
+```
+{
+    "DBClusterAutomatedBackups": [
+        {
+            "Engine": "aurora-postgresql",
+            "DBClusterAutomatedBackupsArn": "arn:aws:rds:us-east-1:123456789012:cluster-auto-backup:cab-abcd1234efgh5678ijkl90mnopqrst5678uvwx1234yzab56cdef7890abcd1234",
+            "DBClusterIdentifier": "test-aurora-cluster",
+            "RestoreWindow": {
+                "EarliestTime": "2026-09-12T11:38:22.795000+00:00",
+                "LatestTime": "2026-09-12T11:47:16.053000+00:00"
+            },
+            "MasterUsername": "postgres",
+            "DbClusterResourceId": "cluster-ABCD1234EFGH5678IJKL90MNOP",
+            "Region": "us-east-1",
+            "Status": "active",
+            "IAMDatabaseAuthenticationEnabled": false,
+            "ClusterCreateTime": "2026-09-12T11:38:04+00:00",
+            "StorageEncrypted": true,
+            "StorageEncryptionType": "sse-kms",
+            "AllocatedStorage": 1,
+            "EngineVersion": "17.7",
+            "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-cluster",
+            "BackupRetentionPeriod": 7,
+            "PreferredBackupWindow": "04:30-05:00",
+            "EngineMode": "provisioned",
+            "AvailabilityZones": [
+                "us-east-1b",
+                "us-east-1d",
+                "us-east-1c"
+            ],
+            "Port": 5432,
+            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+            "TagList": []
+        }
+    ]
+}
+```
+For more information, see [Viewing retained automated backups for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.Retaining.Viewing.html) in the *Amazon Aurora User Guide*.
++  For API details, see [DescribeDbClusterAutomatedBackups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-cluster-automated-backups.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-cluster-backtracks`
 <a name="rds_DescribeDbClusterBacktracks_cli_2_topic"></a>
@@ -3660,6 +3846,47 @@ Output:
 ```
 +  For API details, see [DescribeDbLogFiles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-log-files.html) in *AWS CLI Command Reference*.
 
+### `describe-db-major-engine-versions`
+<a name="rds_DescribeDbMajorEngineVersions_cli_2_topic"></a>
+
+The following code example shows how to use `describe-db-major-engine-versions`.
+
+**AWS CLI**
+**To describe the lifecycle support dates for a major engine version**
+The following `describe-db-major-engine-versions` example retrieves the standard and extended support dates for major engine version 17 of RDS for PostgreSQL.
+
+```
+aws rds describe-db-major-engine-versions \
+    --engine {{postgres}} \
+    --major-engine-version {{17}}
+```
+Output:
+
+```
+{
+    "DBMajorEngineVersions": [
+        {
+            "Engine": "postgres",
+            "MajorEngineVersion": "17",
+            "SupportedEngineLifecycles": [
+                {
+                    "LifecycleSupportName": "open-source-rds-standard-support",
+                    "LifecycleSupportStartDate": "2024-11-14T00:00:00+00:00",
+                    "LifecycleSupportEndDate": "2030-02-28T23:59:59.999000+00:00"
+                },
+                {
+                    "LifecycleSupportName": "open-source-rds-extended-support",
+                    "LifecycleSupportStartDate": "2030-03-01T00:00:00+00:00",
+                    "LifecycleSupportEndDate": "2033-02-28T23:59:59.999000+00:00"
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Viewing support dates for engine versions in Amazon RDS Extended Support](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support-viewing-support-dates.html) in the *Amazon RDS User Guide*.
++  For API details, see [DescribeDbMajorEngineVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-major-engine-versions.html) in *AWS CLI Command Reference*.
+
 ### `describe-db-parameter-groups`
 <a name="rds_DescribeDBParameterGroups_cli_2_topic"></a>
 
@@ -4396,6 +4623,56 @@ Output:
 For more information, see [Sharing a DB Snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeDbSnapshotAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-snapshot-attributes.html) in *AWS CLI Command Reference*.
 
+### `describe-db-snapshot-tenant-databases`
+<a name="rds_DescribeDbSnapshotTenantDatabases_cli_2_topic"></a>
+
+The following code example shows how to use `describe-db-snapshot-tenant-databases`.
+
+**AWS CLI**
+**To describe the tenant databases in a DB snapshot**
+The following `describe-db-snapshot-tenant-databases` example retrieves the details of the tenant databases contained in a snapshot of an RDS for Oracle CDB instance.
+
+```
+aws rds describe-db-snapshot-tenant-databases \
+    --db-snapshot-identifier {{final-snap-test}}
+```
+Output:
+
+```
+{
+    "DBSnapshotTenantDatabases": [
+        {
+            "DBSnapshotIdentifier": "final-snap-test",
+            "DBInstanceIdentifier": "test-rds-oracle",
+            "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
+            "EngineName": "oracle-se2-cdb",
+            "SnapshotType": "manual",
+            "TenantDBName": "ORCL",
+            "MasterUsername": "admin",
+            "TenantDatabaseResourceId": "tdb-QRST5678UVWX1234YZAB90CDEFGHIJ5678KLMN1234OPQEXAMPLE",
+            "CharacterSetName": "AL16UTF16",
+            "DBSnapshotTenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:snapshot-tenant-database:final-snap-test:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
+            "TagList": []
+        },
+        {
+            "DBSnapshotIdentifier": "final-snap-test",
+            "DBInstanceIdentifier": "test-rds-oracle",
+            "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
+            "EngineName": "oracle-se2-cdb",
+            "SnapshotType": "manual",
+            "TenantDBName": "TENANT2",
+            "MasterUsername": "tenantadmin",
+            "TenantDatabaseResourceId": "tdb-ABCD1234EFGH5678IJKL90MNOPQRST1234UVWX5678YZAEXAMPLE",
+            "CharacterSetName": "AL16UTF16",
+            "DBSnapshotTenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:snapshot-tenant-database:final-snap-test:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
+            "TagList": []
+        }
+    ]
+}
+```
+For more information, see [Restoring to a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RestoreFromSnapshot.html) in the *Amazon RDS User Guide*.
++  For API details, see [DescribeDbSnapshotTenantDatabases](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-snapshot-tenant-databases.html) in *AWS CLI Command Reference*.
+
 ### `describe-db-snapshots`
 <a name="rds_DescribeDBSnapshots_cli_2_topic"></a>
 
@@ -5112,6 +5389,42 @@ Output:
 For more information, see [Reserved DB Instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeReservedDbInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-reserved-db-instances.html) in *AWS CLI Command Reference*.
 
+### `describe-serverless-v2-platform-versions`
+<a name="rds_DescribeServerlessV2PlatformVersions_cli_2_topic"></a>
+
+The following code example shows how to use `describe-serverless-v2-platform-versions`.
+
+**AWS CLI**
+**To describe an Aurora Serverless v2 platform version**
+The following `describe-serverless-v2-platform-versions` example retrieves the details of platform version 3 for Aurora PostgreSQL.
+
+```
+aws rds describe-serverless-v2-platform-versions \
+    --engine {{aurora-postgresql}} \
+    --serverless-v2-platform-version {{3}}
+```
+Output:
+
+```
+{
+    "ServerlessV2PlatformVersions": [
+        {
+            "ServerlessV2PlatformVersion": "3",
+            "ServerlessV2PlatformVersionDescription": "Version 3 offering scaling up to 256 ACUs, and performance improvement up to 30% compared to version 2",
+            "Engine": "aurora-postgresql",
+            "ServerlessV2FeaturesSupport": {
+                "MinCapacity": 0.0,
+                "MaxCapacity": 256.0
+            },
+            "Status": "enabled",
+            "IsDefault": false
+        }
+    ]
+}
+```
+For more information, see [Checking the default platform version](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2-administration.html#aurora-serverless-v2-checking-default-platform-version) in the *Amazon Aurora User Guide*.
++  For API details, see [DescribeServerlessV2PlatformVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-serverless-v2-platform-versions.html) in *AWS CLI Command Reference*.
+
 ### `describe-source-regions`
 <a name="rds_DescribeSourceRegions_cli_2_topic"></a>
 
@@ -5262,6 +5575,45 @@ Output:
 For more information, see [Finding information about replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.Replicating.Describe) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeSourceRegions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-source-regions.html) in *AWS CLI Command Reference*.
 
+### `describe-tenant-databases`
+<a name="rds_DescribeTenantDatabases_cli_2_topic"></a>
+
+The following code example shows how to use `describe-tenant-databases`.
+
+**AWS CLI**
+**To describe the tenant databases in a DB instance**
+The following `describe-tenant-databases` example retrieves the details of the tenant databases in an RDS for Oracle CDB instance.
+
+```
+aws rds describe-tenant-databases \
+    --db-instance-identifier {{test-rds-oracle}}
+```
+Output:
+
+```
+{
+    "TenantDatabases": [
+        {
+            "TenantDatabaseCreateTime": "2026-09-12T16:02:18.011000+00:00",
+            "DBInstanceIdentifier": "test-rds-oracle",
+            "TenantDBName": "ORCL",
+            "Status": "available",
+            "MasterUsername": "admin",
+            "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
+            "TenantDatabaseResourceId": "tdb-QRST5678UVWX1234YZAB90CDEFGHIJ5678KLMN1234OPQEXAMPLE",
+            "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
+            "CharacterSetName": "AL32UTF8",
+            "NcharCharacterSetName": "AL16UTF16",
+            "DeletionProtection": false,
+            "PendingModifiedValues": {},
+            "TagList": []
+        }
+    ]
+}
+```
+For more information, see [Viewing tenant database details](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-configuring.describing.pdb.html) in the *Amazon RDS User Guide*.
++  For API details, see [DescribeTenantDatabases](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-tenant-databases.html) in *AWS CLI Command Reference*.
+
 ### `describe-valid-db-instance-modifications`
 <a name="rds_DescribeValidDbInstanceModifications_cli_2_topic"></a>
 
@@ -5367,6 +5719,30 @@ Output:
 ```
 +  For API details, see [DescribeValidDbInstanceModifications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-valid-db-instance-modifications.html) in *AWS CLI Command Reference*.
 
+### `disable-http-endpoint`
+<a name="rds_DisableHttpEndpoint_cli_2_topic"></a>
+
+The following code example shows how to use `disable-http-endpoint`.
+
+**AWS CLI**
+**To disable the RDS Data API for a DB cluster**
+The following `disable-http-endpoint` example disables the RDS Data API for the specified Aurora DB cluster.
+
+```
+aws rds disable-http-endpoint \
+    --resource-arn {{arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster}}
+```
+Output:
+
+```
+{
+    "ResourceArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster",
+    "HttpEndpointEnabled": false
+}
+```
+For more information, see [Enabling or disabling RDS Data API on an existing database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.enabling.html#data-api.enabling.modifying) in the *Amazon Aurora User Guide*.
++  For API details, see [DisableHttpEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/disable-http-endpoint.html) in *AWS CLI Command Reference*.
+
 ### `download-db-log-file-portion`
 <a name="rds_DownloadDbLogFilePortion_cli_2_topic"></a>
 
@@ -5395,6 +5771,136 @@ aws rds download-db-log-file-portion \
 ```
 The saved file might contain blank lines. They appear at the end of each part of the log file while being downloaded.
 +  For API details, see [DownloadDbLogFilePortion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/download-db-log-file-portion.html) in *AWS CLI Command Reference*.
+
+### `enable-http-endpoint`
+<a name="rds_EnableHttpEndpoint_cli_2_topic"></a>
+
+The following code example shows how to use `enable-http-endpoint`.
+
+**AWS CLI**
+**To enable the RDS Data API for a DB cluster**
+The following `enable-http-endpoint` example enables the RDS Data API for the specified Aurora DB cluster.
+
+```
+aws rds enable-http-endpoint \
+    --resource-arn {{arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster}}
+```
+Output:
+
+```
+{
+    "ResourceArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster",
+    "HttpEndpointEnabled": true
+}
+```
+For more information, see [Enabling the Amazon RDS Data API](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.enabling.html) in the *Amazon Aurora User Guide*.
++  For API details, see [EnableHttpEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/enable-http-endpoint.html) in *AWS CLI Command Reference*.
+
+### `failover-db-cluster`
+<a name="rds_FailoverDbCluster_cli_2_topic"></a>
+
+The following code example shows how to use `failover-db-cluster`.
+
+**AWS CLI**
+**To force a failover for a DB cluster**
+The following `failover-db-cluster` example promotes the specified Aurora Replica to be the primary DB instance, or writer, of the DB cluster.
+
+```
+aws rds failover-db-cluster \
+    --db-cluster-identifier {{test-aurora-cluster-failover}} \
+    --target-db-instance-identifier {{test-aurora-cluster-failover-instance-1-reader}}
+```
+Output:
+
+```
+{
+    "DBCluster": {
+        "AllocatedStorage": 1,
+        "AvailabilityZones": [
+            "us-east-1d",
+            "us-east-1c",
+            "us-east-1a"
+        ],
+        "BackupRetentionPeriod": 7,
+        "DBClusterIdentifier": "test-aurora-cluster-failover",
+        "DBClusterParameterGroup": "default.aurora-postgresql17",
+        "DBSubnetGroup": "default",
+        "Status": "available",
+        "Endpoint": "test-aurora-cluster-failover.cluster-cnpexample.us-east-1.rds.amazonaws.com",
+        "ReaderEndpoint": "test-aurora-cluster-failover.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "MultiAZ": true,
+        "Engine": "aurora-postgresql",
+        "EngineVersion": "17.7",
+        "Port": 5432,
+        "MasterUsername": "postgres",
+        ...some output truncated...
+    }
+}
+```
+For more information, see [Failing over an Amazon Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-failover.html) in the *Amazon Aurora User Guide*.
++  For API details, see [FailoverDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/failover-db-cluster.html) in *AWS CLI Command Reference*.
+
+### `failover-global-cluster`
+<a name="rds_FailoverGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `failover-global-cluster`.
+
+**AWS CLI**
+**To fail over a global database**
+The following `failover-global-cluster` example promotes the specified secondary cluster to be the primary cluster of the global database. Run this command in the Region that hosts the secondary cluster that you're promoting.
+
+```
+aws rds failover-global-cluster \
+    --region {{us-east-2}} \
+    --global-cluster-identifier {{global-database}} \
+    --target-db-cluster-identifier {{arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster}} \
+    --allow-data-loss
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "global-database",
+        "GlobalClusterResourceId": "cluster-f0e523bfe07aabb",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:global-database",
+        "Status": "failing-over",
+        "Engine": "aurora-postgresql",
+        "EngineVersion": "17.7",
+        "EngineLifecycleSupport": "open-source-rds-extended-support-disabled",
+        "StorageEncrypted": true,
+        "StorageEncryptionType": "sse-kms",
+        "DeletionProtection": false,
+        "GlobalClusterMembers": [
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:primary-cluster",
+                "Readers": [
+                    "arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster"
+                ],
+                "IsWriter": true,
+                "SynchronizationStatus": "connected"
+            },
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster",
+                "Readers": [],
+                "IsWriter": false,
+                "GlobalWriteForwardingStatus": "disabled",
+                "SynchronizationStatus": "connected"
+            }
+        ],
+        "Endpoint": "global-database.global-cnpexample.global.rds.amazonaws.com",
+        "FailoverState": {
+            "Status": "pending",
+            "FromDbClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:primary-cluster",
+            "ToDbClusterArn": "arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster",
+            "IsDataLossAllowed": true
+        },
+        "TagList": []
+    }
+}
+```
+For more information, see [Using switchover or failover in Amazon Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html) in the *Amazon Aurora User Guide*.
++  For API details, see [FailoverGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/failover-global-cluster.html) in *AWS CLI Command Reference*.
 
 ### `generate-auth-token`
 <a name="rds_GenerateAuthToken_cli_2_topic"></a>
@@ -6382,6 +6888,47 @@ Output:
 For more information, see [Managing an Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-managing.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [ModifyGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-global-cluster.html) in *AWS CLI Command Reference*.
 
+### `modify-tenant-database`
+<a name="rds_ModifyTenantDatabase_cli_2_topic"></a>
+
+The following code example shows how to use `modify-tenant-database`.
+
+**AWS CLI**
+**To rename a tenant database**
+The following `modify-tenant-database` example renames a tenant database in an RDS for Oracle CDB instance.
+
+```
+aws rds modify-tenant-database \
+    --db-instance-identifier {{test-rds-oracle}} \
+    --tenant-db-name {{orcl}} \
+    --new-tenant-db-name {{tenant2}}
+```
+Output:
+
+```
+{
+    "TenantDatabase": {
+        "TenantDatabaseCreateTime": "2026-09-12T16:02:18.011000+00:00",
+        "DBInstanceIdentifier": "test-rds-oracle",
+        "TenantDBName": "ORCL",
+        "Status": "available",
+        "MasterUsername": "admin",
+        "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
+        "TenantDatabaseResourceId": "tdb-QRST5678UVWX1234YZAB90CDEFGHIJ5678KLMN1234OPQEXAMPLE",
+        "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
+        "CharacterSetName": "AL32UTF8",
+        "NcharCharacterSetName": "AL16UTF16",
+        "DeletionProtection": false,
+        "PendingModifiedValues": {
+            "TenantDBName": "TENANT2"
+        },
+        "TagList": []
+    }
+}
+```
+For more information, see [Modifying an RDS for Oracle tenant database](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-configuring.modifying.pdb.html) in the *Amazon RDS User Guide*.
++  For API details, see [ModifyTenantDatabase](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-tenant-database.html) in *AWS CLI Command Reference*.
+
 ### `promote-read-replica-db-cluster`
 <a name="rds_PromoteReadReplicaDbCluster_cli_2_topic"></a>
 
@@ -6530,6 +7077,47 @@ Output:
 ```
 For more information, see [Reserved DB Instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*.
 +  For API details, see [PurchaseReservedDbInstancesOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/purchase-reserved-db-instances-offerings.html) in *AWS CLI Command Reference*.
+
+### `reboot-db-cluster`
+<a name="rds_RebootDbCluster_cli_2_topic"></a>
+
+The following code example shows how to use `reboot-db-cluster`.
+
+**AWS CLI**
+**To reboot a Multi-AZ DB cluster**
+The following `reboot-db-cluster` example reboots all the DB instances in the specified Multi-AZ DB cluster. Use this operation only for a non-Aurora Multi-AZ DB cluster.
+
+```
+aws rds reboot-db-cluster \
+    --db-cluster-identifier {{test-pg-multiaz-cluster}}
+```
+Output:
+
+```
+{
+    "DBCluster": {
+        "AllocatedStorage": 20,
+        "AvailabilityZones": [
+            "us-east-1b",
+            "us-east-1c",
+            "us-east-1f"
+        ],
+        "BackupRetentionPeriod": 7,
+        "DBClusterIdentifier": "test-pg-multiaz-cluster",
+        "DBClusterParameterGroup": "default.postgres17",
+        "DBSubnetGroup": "default",
+        "Status": "available",
+        "Endpoint": "test-pg-multiaz-cluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
+        "ReaderEndpoint": "test-pg-multiaz-cluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "MultiAZ": true,
+        "Engine": "postgres",
+        "EngineVersion": "17.5",
+        ...some output truncated...
+    }
+}
+```
+For more information, see [Rebooting a Multi-AZ DB cluster and reader DB instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multi-az-db-clusters-concepts-rebooting.html) in the *Amazon RDS User Guide*.
++  For API details, see [RebootDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/reboot-db-cluster.html) in *AWS CLI Command Reference*.
 
 ### `reboot-db-instance`
 <a name="rds_RebootDBInstance_cli_2_topic"></a>
@@ -7733,3 +8321,102 @@ Output:
 ```
 For more information, see [Switching a blue/green deployment](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments-switching.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [SwitchoverBlueGreenDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/switchover-blue-green-deployment.html) in *AWS CLI Command Reference*.
+
+### `switchover-global-cluster`
+<a name="rds_SwitchoverGlobalCluster_cli_2_topic"></a>
+
+The following code example shows how to use `switchover-global-cluster`.
+
+**AWS CLI**
+**To switch over a global database**
+The following `switchover-global-cluster` example promotes the specified secondary cluster to be the primary cluster of the global database. Run this command in the Region that hosts the current primary cluster.
+
+```
+aws rds switchover-global-cluster \
+    --region {{us-east-1}} \
+    --global-cluster-identifier {{global-database}} \
+    --target-db-cluster-identifier {{arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster}}
+```
+Output:
+
+```
+{
+    "GlobalCluster": {
+        "GlobalClusterIdentifier": "global-database",
+        "GlobalClusterResourceId": "cluster-f0e523bfe07aabb",
+        "GlobalClusterArn": "arn:aws:rds::123456789012:global-cluster:global-database",
+        "Status": "switching-over",
+        "Engine": "aurora-postgresql",
+        "EngineVersion": "17.7",
+        "EngineLifecycleSupport": "open-source-rds-extended-support-disabled",
+        "StorageEncrypted": true,
+        "StorageEncryptionType": "sse-kms",
+        "DeletionProtection": false,
+        "GlobalClusterMembers": [
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:primary-cluster",
+                "Readers": [
+                    "arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster"
+                ],
+                "IsWriter": true,
+                "SynchronizationStatus": "connected"
+            },
+            {
+                "DBClusterArn": "arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster",
+                "Readers": [],
+                "IsWriter": false,
+                "GlobalWriteForwardingStatus": "disabled",
+                "SynchronizationStatus": "connected"
+            }
+        ],
+        "Endpoint": "global-database.global-cnpexample.global.rds.amazonaws.com",
+        "FailoverState": {
+            "Status": "pending",
+            "FromDbClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:primary-cluster",
+            "ToDbClusterArn": "arn:aws:rds:us-east-2:123456789012:cluster:secondary-cluster",
+            "IsDataLossAllowed": false
+        },
+        "TagList": []
+    }
+}
+```
+For more information, see [Using switchover or failover in Amazon Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html) in the *Amazon Aurora User Guide*.
++  For API details, see [SwitchoverGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/switchover-global-cluster.html) in *AWS CLI Command Reference*.
+
+### `switchover-read-replica`
+<a name="rds_SwitchoverReadReplica_cli_2_topic"></a>
+
+The following code example shows how to use `switchover-read-replica`.
+
+**AWS CLI**
+**To switch over a read replica**
+The following `switchover-read-replica` example promotes the specified Oracle read replica to be the new primary database. Specify the identifier of the read replica that you're promoting.
+
+```
+aws rds switchover-read-replica \
+    --db-instance-identifier {{rds-oracle-reader}}
+```
+Output:
+
+```
+{
+    "DBInstance": {
+        "DBInstanceIdentifier": "rds-oracle-reader",
+        "DBInstanceStatus": "available",
+        "Engine": "oracle-ee",
+        "ReadReplicaSourceDBInstanceIdentifier": "rds-oracle-testdb",
+        "ReplicaMode": "open-read-only",
+        "StatusInfos": [
+            {
+                "StatusType": "read replication",
+                "Normal": true,
+                "Status": "replicating"
+            }
+        ],
+        "DBInstanceArn": "arn:aws:rds:us-east-1:123456789012:db:rds-oracle-reader",
+        ...some output truncated...
+    }
+}
+```
+For more information, see [Initiating the Oracle Data Guard switchover](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-switchover.initiating.html) in the *Amazon RDS User Guide*.
++  For API details, see [SwitchoverReadReplica](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/switchover-read-replica.html) in *AWS CLI Command Reference*.

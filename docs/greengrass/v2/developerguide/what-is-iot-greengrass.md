@@ -28,4 +28,4 @@ Next, follow the [getting started tutorial](getting-started.md) to try out the b
 ## For existing users of AWS IoT Greengrass V1
 <a name="existing-users"></a>
 
-End of support notice: On October 7, 2026, AWS will end support for AWS IoT Greengrass Version 1. After October 7, 2026, you will no longer be able to access the AWS IoT Greengrass V1 console or AWS IoT Greengrass V1 resources. For more information about how to move from version 1 to version 2, see [Migrate from AWS IoT Greengrass Version 1](migrate-from-v1.md).
+End of support notice: On October 7, 2026, AWS ended support for AWS IoT Greengrass Version 1. The AWS IoT Greengrass V1 API operations and resources are no longer available. For more information about how to move from version 1 to version 2, see [Migrate from AWS IoT Greengrass Version 1](migrate-from-v1.md).

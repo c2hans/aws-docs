@@ -11,4 +11,4 @@ Amazon SWF gives you full control over implementing tasks and coordinating them 
 
 This documentation serves as reference only. For a broader overview of the Amazon SWF programming model, see the * [Amazon SWF Developer Guide](https://docs.aws.amazon.com/amazonswf/latest/developerguide/) *.
 
-This document was last published on October 7, 2026.
+This document was last published on October 8, 2026.

@@ -11,25 +11,45 @@ Returns a list of all of the email identities that are associated with your AWS 
 <a name="API_ListEmailIdentities_RequestSyntax"></a>
 
 ```
-GET /v2/email/identities?NextToken={{NextToken}}&PageSize={{PageSize}} HTTP/1.1
+POST /v2/email/list-identities HTTP/1.1
+Content-type: application/json
+
+{
+   "Filter": {
+      "{{string}}" : "{{string}}"
+   },
+   "NextToken": "{{string}}",
+   "PageSize": {{number}}
+}
 ```
 
 ## URI Request Parameters
 <a name="API_ListEmailIdentities_RequestParameters"></a>
 
-The request uses the following URI parameters.
-
- ** [NextToken](#API_ListEmailIdentities_RequestSyntax) **   <a name="SES-ListEmailIdentities-request-uri-NextToken"></a>
-A token returned from a previous call to `ListEmailIdentities` to indicate the position in the list of identities.
-
- ** [PageSize](#API_ListEmailIdentities_RequestSyntax) **   <a name="SES-ListEmailIdentities-request-uri-PageSize"></a>
-The number of results to show in a single call to `ListEmailIdentities`. If the number of results is larger than the number you specified in this parameter, then the response includes a `NextToken` element, which you can use to obtain additional results.
-The value you specify has to be at least 0, and can be no more than 1000.
+The request does not use any URI parameters.
 
 ## Request Body
 <a name="API_ListEmailIdentities_RequestBody"></a>
 
-The request does not have a request body.
+The request accepts the following data in JSON format.
+
+ ** [Filter](#API_ListEmailIdentities_RequestSyntax) **   <a name="SES-ListEmailIdentities-request-Filter"></a>
+An object that contains filters to apply when listing email identities. You can filter by a substring of the identity name, by identity type, or by verification status.
+Type: String to string map
+Valid Keys: `IDENTITY_NAME_CONTAINS | IDENTITY_TYPE | VERIFICATION_STATUS`
+Value Length Constraints: Minimum length of 1.
+Required: No
+
+ ** [NextToken](#API_ListEmailIdentities_RequestSyntax) **   <a name="SES-ListEmailIdentities-request-NextToken"></a>
+A token returned from a previous call to `ListEmailIdentities` to indicate the position in the list of identities.
+Type: String
+Required: No
+
+ ** [PageSize](#API_ListEmailIdentities_RequestSyntax) **   <a name="SES-ListEmailIdentities-request-PageSize"></a>
+The number of results to show in a single call to `ListEmailIdentities`. If the number of results is larger than the number you specified in this parameter, then the response includes a `NextToken` element, which you can use to obtain additional results.
+The value you specify has to be at least 0, and can be no more than 1000.
+Type: Integer
+Required: No
 
 ## Response Syntax
 <a name="API_ListEmailIdentities_ResponseSyntax"></a>

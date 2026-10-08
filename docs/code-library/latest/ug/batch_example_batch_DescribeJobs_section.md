@@ -86,3 +86,31 @@ Output:
 +  For API details, see [DescribeJobs](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/DescribeJobs) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def describe_jobs(self, job_ids: list) -> list:
+        """
+        Describes one or more jobs.
+
+        :param job_ids: A list of job IDs to describe.
+        :return: A list of job detail dictionaries.
+        """
+        try:
+            response = self.batch_client.describe_jobs(jobs=job_ids)
+            jobs = response.get("jobs", [])
+            logger.info("Described %d job(s).", len(jobs))
+            return jobs
+        except ClientError as err:
+            logger.error(
+                "Error describing jobs: %s",
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [DescribeJobs](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/DescribeJobs) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generating-rule-recommendation
 title: 'Guidance for Generating Rule Recommendations for Entity Resolution on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generating-rule-recommendations-for-entity-resolution-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Generating Rule Recommendations for Entity Resolution on AWS

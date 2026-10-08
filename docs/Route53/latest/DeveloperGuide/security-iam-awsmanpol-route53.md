@@ -102,6 +102,18 @@ This policy includes the following permissions.
 			"Effect": "Allow",
 			"Action": "apigateway:GET",
 			"Resource": "arn:aws:apigateway:*::/domainnames"
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+			"iam:CreateServiceLinkedRole"
+			],
+			"Resource": "*",
+			"Condition": {
+				"StringEquals": {
+					"iam:AWSServiceName": "route53healthchecks.amazonaws.com"
+				}
+			}
 		}
 	]
 }

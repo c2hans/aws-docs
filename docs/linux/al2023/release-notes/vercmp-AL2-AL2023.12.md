@@ -5,15 +5,15 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/vercmp-AL2-AL
 # AL2023.12 upgrades from AL2
 <a name="vercmp-AL2-AL2023.12"></a>
 
- Comparing AL2 version 2026-08-28 to AL2023.12 version [2023.12.20260817](relnotes-2023.12.20260817.md).
+ Comparing AL2 version 2026-10-02 to AL2023.12 version [2023.12.20260930](relnotes-2023.12.20260930.md).
 
 | Package Type | Count |
 | --- | --- |
-| Source | 1607 |
-| Total Binary | 7580 |
-|  noarch binary RPMs | 1708 |
-|  x86\_64 binary RPMs | 2967 |
-|  aarch64 binary RPMs | 2905 |
+| Source | 1610 |
+| Total Binary | 6482 |
+|  noarch binary RPMs | 1321 |
+|  x86\_64 binary RPMs | 2607 |
+|  aarch64 binary RPMs | 2554 |
 
 The full comparison of RPM package versions is below.
 
@@ -24,7 +24,6 @@ The full comparison of RPM package versions is below.
 + [selinux-ng AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-selinux-ng)
 + [ruby2.4 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-ruby2.4)
 + [rust1 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-rust1)
-+ [dnsmasq AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-dnsmasq)
 + [dnsmasq2.85 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-dnsmasq2.85)
 + [golang1.11 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-golang1.11)
 + [golang1.19 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-golang1.19)
@@ -32,15 +31,12 @@ The full comparison of RPM package versions is below.
 + [kernel-5.15 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-kernel-5.15)
 + [kernel-5.4 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-kernel-5.4)
 + [kernel-ng AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-kernel-ng)
-+ [mate-desktop1.x AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-mate-desktop1.x)
 + [php7.2 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-php7.2)
 + [lamp-mariadb10.2-php7.2 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-lamp-mariadb10.2-php7.2)
-+ [mariadb10.5 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-mariadb10.5)
 + [php7.3 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-php7.3)
 + [php7.4 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-php7.4)
 + [php8.0 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-php8.0)
 + [php8.1 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-php8.1)
-+ [php8.2 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-php8.2)
 + [postgresql10 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-postgresql10)
 + [postgresql11 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-postgresql11)
 + [postgresql12 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-postgresql12)
@@ -52,39 +48,24 @@ The full comparison of RPM package versions is below.
 + [ruby3.0 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-ruby3.0)
 + [squid4 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-squid4)
 + [tomcat8.5 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-tomcat8.5)
-+ [tomcat9 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-tomcat9)
 + [unbound1.13 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-unbound1.13)
 + [unbound1.17 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-unbound1.17)
 + [vim AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-vim)
 + [ansible2 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-ansible2)
 + [httpd\_modules AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-httpd_modules)
 + [redis4.0 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-redis4.0)
-+ [redis6 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-redis6)
 + [R3.4 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-R3.4)
 + [R4 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-R4)
-+ [docker AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-docker)
-+ [ecs AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-ecs)
 + [GraphicsMagick1.3 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-GraphicsMagick1.3)
 + [testing AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-testing)
-+ [corretto8 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-corretto8)
 + [lustre AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-lustre)
 + [lustre2.10 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-lustre2.10)
 + [lynis AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-lynis)
-+ [nginx1 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-nginx1)
 + [python3.8 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-python3.8)
 + [collectd AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-collectd)
-+ [collectd-python3 AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-collectd-python3)
-+ [aws-nitro-enclaves-cli AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-aws-nitro-enclaves-cli)
-+ [firefox AL2 Extra packages updated in Amazon Linux 2023](#vercmp-AL2023.12-AL2-ex2-firefox)
 
 ## AL2 Core packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-al2-core"></a>
-
-- ** `a2ps` **
-  - **RPM:**  a2ps
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4.14-23.amzn2.0.2
-  - **AL2023.12 version:** 4.14-48.amzn2023.0.2
 
 - ** `abattis-cantarell-fonts` **
   - **RPM:**  abattis-cantarell-fonts
@@ -131,12 +112,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 20171205-3.amzn2
   - **AL2023.12 version:** 20190730-1.amzn2023.0.2
 
-- ** `adobe-mappings-pdf` **
-  - **RPM:**  adobe-mappings-pdf  / **Architectures:** noarch
-  - **RPM:**  adobe-mappings-pdf-devel  / **Architectures:** noarch
-  - **AL2 version:** 20180407-1.amzn2
-  - **AL2023.12 version:** 20180407-8.amzn2023.0.2
-
 - ** `adwaita-icon-theme` **
   - **RPM:**  adwaita-cursor-theme  / **Architectures:** noarch
   - **RPM:**  adwaita-icon-theme  / **Architectures:** noarch
@@ -153,8 +128,8 @@ The full comparison of RPM package versions is below.
 - ** `alsa-lib` **
   - **RPM:**  alsa-lib  / **Architectures:** aarch64, x86\_64
   - **RPM:**  alsa-lib-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.1.4.1-2.amzn2
-  - **AL2023.12 version:** 1.2.7.2-1.amzn2023.0.3
+  - **AL2 version:** 1.1.4.1-2.amzn2.0.1
+  - **AL2023.12 version:** 1.2.7.2-1.amzn2023.0.4
 
 - ** `alsa-plugins` **
   - **RPM:**  alsa-plugins-arcamav  / **Architectures:** aarch64, x86\_64
@@ -172,29 +147,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.1.3-2.amzn2.0.1
   - **AL2023.12 version:** 1.2.7-1.amzn2023.0.3
 
-- ** `amazon-cloudwatch-agent` **
-  - **RPM:**  amazon-cloudwatch-agent
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.300069.1-1.amzn2
-  - **AL2023.12 version:** 1.300069.1-1.amzn2023
-
-- ** [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
-  - **RPM:**  [`amazon-efs-utils`](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
-  - **Architectures:** aarch64, noarch, x86\_64
-  - **AL2 version:** 3.2.0-2.amzn2
-  - **AL2023.12 version:** 3.2.0-2.amzn2023
-
 - ** [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html) **
   - **RPM:**  [`amazon-linux-onprem`](https://docs.aws.amazon.com/linux/al2023/ug/outside-ec2.html)
   - **Architectures:** noarch
   - **AL2 version:** 1.0-0.amzn2
   - **AL2023.12 version:** 1.2-0.amzn2023
-
-- ** `amazon-ssm-agent` **
-  - **RPM:**  amazon-ssm-agent
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.3.4624.0-1.amzn2
-  - **AL2023.12 version:** 3.3.4624.0-1.amzn2023
 
 - ** `ant` **
   - **RPM:**  ant  / **Architectures:** noarch
@@ -218,20 +175,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  ant-testutil  / **Architectures:** noarch
   - **AL2 version:** 1.9.16-1.amzn2.0.1
   - **AL2023.12 version:** 1.10.12-5.amzn2023.0.4
-
-- ** `antlr` **
-  - **RPM:**  antlr-C\+\+  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  antlr-javadoc  / **Architectures:** noarch
-  - **RPM:**  antlr-manual  / **Architectures:** noarch
-  - **RPM:**  antlr-tool  / **Architectures:** noarch
-  - **AL2 version:** 2.7.7-30.amzn2.0.2
-  - **AL2023.12 version:** 2.7.7-69.amzn2023.0.3
-
-- ** `aopalliance` **
-  - **RPM:**  aopalliance  / **Architectures:** noarch
-  - **RPM:**  aopalliance-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.0-8.1.amzn2
-  - **AL2023.12 version:** 1.0-28.amzn2023.0.3
 
 - ** `apache-commons-beanutils` **
   - **RPM:**  apache-commons-beanutils  / **Architectures:** noarch
@@ -275,12 +218,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  apache-commons-io-javadoc  / **Architectures:** noarch
   - **AL2 version:** 2.4-12.amzn2.0.2
   - **AL2023.12 version:** 2.8.0-7.amzn2023.0.5
-
-- ** `apache-commons-jxpath` **
-  - **RPM:**  apache-commons-jxpath  / **Architectures:** noarch
-  - **RPM:**  apache-commons-jxpath-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.3-20.amzn2
-  - **AL2023.12 version:** 1.3-43.amzn2023.0.3
 
 - ** `apache-commons-lang3` **
   - **RPM:**  apache-commons-lang3  / **Architectures:** noarch
@@ -335,18 +272,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  apr-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.7.2-1.amzn2.0.1
   - **AL2023.12 version:** 1.7.5-1.amzn2023.0.4
-
-- ** `apr-util` **
-  - **RPM:**  apr-util  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-ldap  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-mysql  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-odbc  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-openssl  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-pgsql  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  apr-util-sqlite  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.6.3-1.amzn2.0.1
-  - **AL2023.12 version:** 1.6.3-1.amzn2023.0.2
 
 - ** `aqute-bnd` **
   - **RPM:**  aqute-bnd  / **Architectures:** noarch
@@ -427,12 +352,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.4.0-9.amzn2
   - **AL2023.12 version:** 1.13.0-1.amzn2023.0.2
 
-- ** `autoconf` **
-  - **RPM:**  autoconf
-  - **Architectures:** noarch
-  - **AL2 version:** 2.69-11.amzn2
-  - **AL2023.12 version:** 2.69-36.amzn2023.0.3
-
 - ** `autoconf-archive` **
   - **RPM:**  autoconf-archive
   - **Architectures:** noarch
@@ -477,38 +396,17 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.6.31-20.amzn2.0.7
   - **AL2023.12 version:** 0.8-14.amzn2023.0.14
 
-- ** `aws-cfn-bootstrap` **
-  - **RPM:**  aws-cfn-bootstrap
-  - **Architectures:** noarch
-  - **AL2 version:** 2.0-40.amzn2
-  - **AL2023.12 version:** 2.0-40.amzn2023
-
 - ** `awscli-2` (`awscli` in AL2) **
   - **RPM:**  awscli-2 (awscli in AL2)
   - **Architectures:** noarch
   - **AL2 version:** 1.18.147-1.amzn2.0.2
-  - **AL2023.12 version:** 2.33.15-1.amzn2023.0.1
-
-- ** `aws-kinesis-agent` **
-  - **RPM:**  aws-kinesis-agent
-  - **Architectures:** noarch
-  - **AL2 version:** 2.0.13-1.amzn2
-  - **AL2023.12 version:** 2.0.13-1.amzn2023
+  - **AL2023.12 version:** 2.36.47-4.amzn2023.0.1
 
 - ** `babel` **
   - **RPM:**  babel
   - **Architectures:** noarch
   - **AL2 version:** 0.9.6-8.amzn2.0.2
   - **AL2023.12 version:** 2.9.1-1.amzn2023.0.2
-
-- ** `baekmuk-ttf-fonts` **
-  - **RPM:**  baekmuk-ttf-batang-fonts  / **Architectures:** noarch
-  - **RPM:**  baekmuk-ttf-dotum-fonts  / **Architectures:** noarch
-  - **RPM:**  baekmuk-ttf-fonts-common  / **Architectures:** noarch
-  - **RPM:**  baekmuk-ttf-gulim-fonts  / **Architectures:** noarch
-  - **RPM:**  baekmuk-ttf-hline-fonts  / **Architectures:** noarch
-  - **AL2 version:** 2.2-36.amzn2
-  - **AL2023.12 version:** 2.2-54.amzn2023.0.2
 
 - ** `basesystem` **
   - **RPM:**  basesystem
@@ -568,7 +466,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  bind-pkcs11-utils  / **Architectures:** aarch64, x86\_64
   - **RPM:**  bind-utils  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 9.11.4-26.P2.amzn2.13.17
-  - **AL2023.12 version:** 9.18.50-1.amzn2023.0.2
+  - **AL2023.12 version:** 9.18.50-1.amzn2023.0.3
 
 - ** [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) **
   - **RPM:**  [`binutils`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  / **Architectures:** aarch64, x86\_64
@@ -602,7 +500,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  bluez-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  bluez-libs-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 5.44-7.amzn2.0.4
-  - **AL2023.12 version:** 5.62-2.amzn2023.0.5
+  - **AL2023.12 version:** 5.62-2.amzn2023.0.7
 
 - ** `boost` **
   - **RPM:**  boost  / **Architectures:** aarch64, x86\_64
@@ -612,6 +510,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  boost-context  / **Architectures:** x86\_64
   - **RPM:**  boost-date-time  / **Architectures:** aarch64, x86\_64
   - **RPM:**  boost-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  boost-doc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  boost-examples  / **Architectures:** aarch64, x86\_64
   - **RPM:**  boost-filesystem  / **Architectures:** aarch64, x86\_64
   - **RPM:**  boost-graph  / **Architectures:** aarch64, x86\_64
   - **RPM:**  boost-iostreams  / **Architectures:** aarch64, x86\_64
@@ -636,12 +536,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.12.1-2.amzn2.0.2
   - **AL2023.12 version:** 0.17.0-1.amzn2023.0.2
 
-- ** `bsf` **
-  - **RPM:**  bsf
-  - **Architectures:** noarch
-  - **AL2 version:** 2.4.0-19.amzn2
-  - **AL2023.12 version:** 2.4.0-44.amzn2023.0.2
-
 - ** `bsh` **
   - **RPM:**  bsh  / **Architectures:** noarch
   - **RPM:**  bsh-javadoc  / **Architectures:** noarch
@@ -649,17 +543,17 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.3.0-29.1.amzn2
   - **AL2023.12 version:** 2.1.0-5.amzn2023.0.2
 
+- ** `btrfs-progs` **
+  - **RPM:**  btrfs-progs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  btrfs-progs-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 4.15.1-1.amzn2.0.1
+  - **AL2023.12 version:** 7.1-1.amzn2023
+
 - ** `byacc` **
   - **RPM:**  byacc
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.9.20130304-3.amzn2.0.2
   - **AL2023.12 version:** 2.0.20210109-2.amzn2023.0.3
-
-- ** `byaccj` **
-  - **RPM:**  byaccj
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.15-8.amzn2.0.2
-  - **AL2023.12 version:** 1.15-25.amzn2023.0.2
 
 - ** `byteman` **
   - **RPM:**  byteman  / **Architectures:** noarch
@@ -673,12 +567,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  bzip2-libs  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.0.6-13.amzn2.0.3
   - **AL2023.12 version:** 1.0.8-6.amzn2023.0.2
-
-- ** `ca-certificates` **
-  - **RPM:**  ca-certificates
-  - **Architectures:** noarch
-  - **AL2 version:** 2025.2.76-1.amzn2.0.2
-  - **AL2023.12 version:** 2025.2.76-1.0.amzn2023.0.3
 
 - ** `cairo` **
   - **RPM:**  cairo  / **Architectures:** aarch64, x86\_64
@@ -696,24 +584,12 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.12.0-1.amzn2.0.2
   - **AL2023.12 version:** 1.14.5-141.amzn2023
 
-- ** `can-utils` **
-  - **RPM:**  can-utils
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2023.03-3.amzn2
-  - **AL2023.12 version:** 2023.03-3.amzn2023
-
 - ** `capstone` **
   - **RPM:**  capstone  / **Architectures:** aarch64, x86\_64
   - **RPM:**  capstone-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  capstone-java  / **Architectures:** noarch
   - **AL2 version:** 3.0.5-1.amzn2.0.2
   - **AL2023.12 version:** 4.0.2-9.amzn2023.0.5
-
-- ** `c-ares` **
-  - **RPM:**  c-ares  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  c-ares-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.19.1-1.amzn2.0.1
-  - **AL2023.12 version:** 1.19.1-1.amzn2023.0.1
 
 - ** `cdi-api` **
   - **RPM:**  cdi-api  / **Architectures:** noarch
@@ -746,12 +622,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.5-6.amzn2
   - **AL2023.12 version:** 3.4-3.amzn2023.0.2
 
-- ** `checksec` **
-  - **RPM:**  checksec
-  - **Architectures:** noarch
-  - **AL2 version:** 2.4.0-2.amzn2.0.1
-  - **AL2023.12 version:** 2.4.0-2.amzn2023.0.2
-
 - ** `chkconfig` **
   - **RPM:**  chkconfig  / **Architectures:** aarch64, x86\_64
   - **RPM:**  ntsysv  / **Architectures:** aarch64, x86\_64
@@ -764,49 +634,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 4.2-5.amzn2.0.2
   - **AL2023.12 version:** 4.3-1.amzn2023.0.6
 
-- ** `chrpath` **
-  - **RPM:**  chrpath
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.16-0.amzn2.0.2
-  - **AL2023.12 version:** 0.16-15.amzn2023.0.2
-
 - ** `cifs-utils` **
   - **RPM:**  cifs-utils  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cifs-utils-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 6.2-10.amzn2.0.4
   - **AL2023.12 version:** 7.7-144.amzn2023
-
-- ** `cjkuni-uming-fonts` **
-  - **RPM:**  cjkuni-uming-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 0.2.20080216.1-53.amzn2
-  - **AL2023.12 version:** 0.2.20080216.1-66.amzn2023.0.2
-
-- ** `clamav` **
-  - **RPM:**  clamav  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav-data  / **Architectures:** noarch
-  - **RPM:**  clamav-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav-doc  / **Architectures:** noarch
-  - **RPM:**  clamav-filesystem  / **Architectures:** noarch
-  - **RPM:**  clamav-lib  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav-milter  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav-update  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamd  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.103.12-1.amzn2.0.1
-  - **AL2023.12 version:** 0.103.12-1.amzn2023.0.1
-
-- ** `clamav1.4` **
-  - **RPM:**  clamav1.4  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav1.4-data  / **Architectures:** noarch
-  - **RPM:**  clamav1.4-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav1.4-doc  / **Architectures:** noarch
-  - **RPM:**  clamav1.4-filesystem  / **Architectures:** noarch
-  - **RPM:**  clamav1.4-freshclam  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav1.4-lib  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamav1.4-milter  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clamd1.4  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.4.5-1.amzn2.0.1
-  - **AL2023.12 version:** 1.4.5-1.amzn2023.0.1
 
 - ** `clang` **
   - **RPM:**  clang  / **Architectures:** aarch64, x86\_64
@@ -846,18 +678,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.1.1-8.amzn2
   - **AL2023.12 version:** 1.1.5-8.amzn2023.0.2
 
-- ** `cni-plugins` **
-  - **RPM:**  cni-plugins
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.7.1-1.amzn2.0.7
-  - **AL2023.12 version:** 1.7.1-1.amzn2023.0.7
-
-- ** `codehaus-parent` **
-  - **RPM:**  codehaus-parent
-  - **Architectures:** noarch
-  - **AL2 version:** 4-5.amzn2
-  - **AL2023.12 version:** 4-23.amzn2023.0.2
-
 - ** `colord` **
   - **RPM:**  colord  / **Architectures:** aarch64, x86\_64
   - **RPM:**  colord-devel  / **Architectures:** aarch64, x86\_64
@@ -872,12 +692,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  colord-gtk-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.1.25-4.amzn2.0.3
   - **AL2023.12 version:** 0.3.1-2.amzn2023
-
-- ** `color-filesystem` **
-  - **RPM:**  color-filesystem
-  - **Architectures:** noarch
-  - **AL2 version:** 1-13.amzn2
-  - **AL2023.12 version:** 1-26.amzn2023.0.2
 
 - ** `compiler-rt` **
   - **RPM:**  compiler-rt
@@ -913,14 +727,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  corosync  / **Architectures:** aarch64, x86\_64
   - **RPM:**  corosynclib  / **Architectures:** aarch64, x86\_64
   - **RPM:**  corosynclib-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.4.3-6.amzn2.1.1
-  - **AL2023.12 version:** 3.1.9-3.amzn2023.0.2
-
-- ** `cowsay` **
-  - **RPM:**  cowsay
-  - **Architectures:** noarch
-  - **AL2 version:** 3.04-6.amzn2
-  - **AL2023.12 version:** 3.04-17.amzn2023.0.2
+  - **AL2 version:** 2.4.3-6.amzn2.1.3
+  - **AL2023.12 version:** 3.1.9-3.amzn2023.0.3
 
 - ** `cpio` **
   - **RPM:**  cpio
@@ -951,8 +759,8 @@ The full comparison of RPM package versions is below.
 - ** `crash` **
   - **RPM:**  crash  / **Architectures:** aarch64, x86\_64
   - **RPM:**  crash-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 8.0.4-4.amzn2.0.1
-  - **AL2023.12 version:** 8.0.5-5.amzn2023.0.1
+  - **AL2 version:** 8.0.4-4.amzn2.0.2
+  - **AL2023.12 version:** 8.0.5-5.amzn2023.0.2
 
 - ** `createrepo_c` **
   - **RPM:**  createrepo\_c  / **Architectures:** aarch64, x86\_64
@@ -965,7 +773,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  crit  / **Architectures:** aarch64, x86\_64
   - **RPM:**  criu  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.5-4.amzn2
-  - **AL2023.12 version:** 3.17.1-1.amzn2023.0.3
+  - **AL2023.12 version:** 3.17.1-1.amzn2023.0.4
 
 - ** [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron) **
   - **RPM:**  [`cronie`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-cron)  / **Architectures:** aarch64, x86\_64
@@ -973,12 +781,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  cronie-noanacron  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.4.11-23.amzn2
   - **AL2023.12 version:** 1.5.7-1.amzn2023.0.2
-
-- ** `crontabs` **
-  - **RPM:**  crontabs
-  - **Architectures:** noarch
-  - **AL2 version:** 1.11-6.20121102git.amzn2
-  - **AL2023.12 version:** 1.11-24.20190603git.amzn2023.0.2
 
 - ** `cryptsetup` **
   - **RPM:**  cryptsetup  / **Architectures:** aarch64, x86\_64
@@ -1000,12 +802,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 5.8-23.amzn2
   - **AL2023.12 version:** 5.9-1.20210725.0.amzn2023.0.2
 
-- ** `CUnit` **
-  - **RPM:**  CUnit  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  CUnit-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.1.3-11.amzn2.0.2
-  - **AL2023.12 version:** 2.1.3-23.amzn2023.0.2
-
 - ** `cups` **
   - **RPM:**  cups  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cups-client  / **Architectures:** aarch64, x86\_64
@@ -1021,8 +817,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  cups-filters  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cups-filters-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cups-filters-libs  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.35-26.amzn2.0.2
-  - **AL2023.12 version:** 1.28.16-3.amzn2023.0.5
+  - **AL2 version:** 1.0.35-26.amzn2.0.3
+  - **AL2023.12 version:** 1.28.16-3.amzn2023.0.6
 
 - ** `cups-pk-helper` **
   - **RPM:**  cups-pk-helper
@@ -1034,20 +830,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  [`curl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  [`libcurl`](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libcurl-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 8.3.0-1.amzn2.0.12
-  - **AL2023.12 version:** 8.17.0-1.amzn2023.0.3
-
-- ** `cvs` **
-  - **RPM:**  cvs  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  cvs-doc  / **Architectures:** noarch
-  - **AL2 version:** 1.11.23-35.amzn2.0.2
-  - **AL2023.12 version:** 1.11.23-56.amzn2023.0.3
-
-- ** `cvsps` **
-  - **RPM:**  cvsps
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.2-0.14.b1.amzn2.0.2
-  - **AL2023.12 version:** 2.2-0.28.b1.amzn2023.0.2
+  - **AL2 version:** 8.3.0-1.amzn2.0.13
+  - **AL2023.12 version:** 8.21.0-5.amzn2023.0.2
 
 - ** `cyrus-sasl` **
   - **RPM:**  cyrus-sasl  / **Architectures:** aarch64, x86\_64
@@ -1166,22 +950,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.3-5.amzn2
   - **AL2023.12 version:** 3.8-1.amzn2023.0.2
 
-- ** `ding-libs` **
-  - **RPM:**  libbasicobjects  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libbasicobjects-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libcollection  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libcollection-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdhash  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdhash-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libini\_config  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libini\_config-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libpath\_utils  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libpath\_utils-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libref\_array  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libref\_array-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.1.1-29.amzn2
-  - **AL2023.12 version:** 0.1.1-47.amzn2023.0.2
-
 - ** `dkms` **
   - **RPM:**  dkms
   - **Architectures:** noarch
@@ -1194,18 +962,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.2-5.amzn2.1.1
   - **AL2023.12 version:** 3.6-1.amzn2023.0.1
 
-- ** `dmraid` **
-  - **RPM:**  dmraid  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  dmraid-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  dmraid-events  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.0.rc16-28.amzn2.0.2
-  - **AL2023.12 version:** 1.0.0.rc16-50.amzn2023.0.2
-
 - ** `dnf` (`yum` in AL2) **
   - **RPM:**  dnf (yum in AL2)
   - **Architectures:** noarch
   - **AL2 version:** 3.4.3-158.amzn2.0.7
-  - **AL2023.12 version:** 4.14.0-1.amzn2023.0.7
+  - **AL2023.12 version:** 4.14.0-1.amzn2023.0.8
 
 - ** `dnsmasq` **
   - **RPM:**  dnsmasq  / **Architectures:** aarch64, x86\_64
@@ -1225,29 +986,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.78.1-4.amzn2
   - **AL2023.12 version:** 1.79.2-11.amzn2023.0.2
 
-- ** `docbook-dtds` **
-  - **RPM:**  docbook-dtds
-  - **Architectures:** noarch
-  - **AL2 version:** 1.0-60.amzn2
-  - **AL2023.12 version:** 1.0-77.amzn2023.0.2
-
-- ** `docbook-style-dsssl` **
-  - **RPM:**  docbook-style-dsssl
-  - **Architectures:** noarch
-  - **AL2 version:** 1.79-18.amzn2
-  - **AL2023.12 version:** 1.79-31.amzn2023.0.2
-
 - ** `docbook-style-xsl` **
   - **RPM:**  docbook-style-xsl
   - **Architectures:** noarch
   - **AL2 version:** 1.78.1-3.amzn2
   - **AL2023.12 version:** 1.79.2-14.amzn2023.0.2
-
-- ** `docbook-utils` **
-  - **RPM:**  docbook-utils  / **Architectures:** noarch
-  - **RPM:**  docbook-utils-pdf  / **Architectures:** noarch
-  - **AL2 version:** 0.6.14-36.amzn2
-  - **AL2023.12 version:** 0.6.14-52.amzn2023.0.2
 
 - ** `dom4j` **
   - **RPM:**  dom4j  / **Architectures:** noarch
@@ -1267,20 +1010,14 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.0.20-10.amzn2
   - **AL2023.12 version:** 4.2-1.amzn2023.0.2
 
-- ** `dotconf` **
-  - **RPM:**  dotconf  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  dotconf-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.3-8.amzn2.0.2
-  - **AL2023.12 version:** 1.3-26.amzn2023.0.2
-
 - ** `dovecot` **
   - **RPM:**  dovecot  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dovecot-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dovecot-mysql  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dovecot-pgsql  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dovecot-pigeonhole  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.2.36-6.amzn2.1.3
-  - **AL2023.12 version:** 2.3.20-1.amzn2023.0.3
+  - **AL2 version:** 2.2.36-6.amzn2.1.4
+  - **AL2023.12 version:** 2.3.20-1.amzn2023.0.4
 
 - ** `doxygen` **
   - **RPM:**  doxygen  / **Architectures:** aarch64, x86\_64
@@ -1294,8 +1031,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  dracut-config-generic  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dracut-config-rescue  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dracut-tools  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 033-535.amzn2.1.7
-  - **AL2023.12 version:** 102-3.amzn2023.0.3
+  - **AL2 version:** 033-535.amzn2.1.8
+  - **AL2023.12 version:** 102-3.amzn2023.0.4
 
 - ** `dracut-config-ec2` **
   - **RPM:**  dracut-config-ec2
@@ -1356,24 +1093,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.2-22.amzn2
   - **AL2023.12 version:** 4.2-7.amzn2023.0.3
 
-- ** `ec2-hibinit-agent` **
-  - **RPM:**  ec2-hibinit-agent
-  - **Architectures:** noarch
-  - **AL2 version:** 1.0.11-1.amzn2
-  - **AL2023.12 version:** 1.0.11-0.amzn2023
-
-- ** [`ec2-instance-connect`](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html) **
-  - **RPM:**  [`ec2-instance-connect`](https://docs.aws.amazon.com/linux/al2023/ug/connecting-to-instances.html)
-  - **Architectures:** noarch
-  - **AL2 version:** 1.1-19.amzn2
-  - **AL2023.12 version:** 1.1-19.amzn2023
-
-- ** `ec2-instance-connect-selinux` **
-  - **RPM:**  ec2-instance-connect-selinux
-  - **Architectures:** noarch
-  - **AL2 version:** 1.1-19.amzn2
-  - **AL2023.12 version:** 1.1-19.amzn2023
-
 - ** `ec2rl` **
   - **RPM:**  ec2rl
   - **Architectures:** noarch
@@ -1384,7 +1103,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  ec2-utils
   - **Architectures:** noarch
   - **AL2 version:** 1.2-48.amzn2
-  - **AL2023.12 version:** 2.2.0-1.amzn2023.0.2
+  - **AL2023.12 version:** 2.3.0-1.amzn2023.0.1
 
 - ** `ed` **
   - **RPM:**  ed
@@ -1392,17 +1111,17 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.9-4.amzn2.0.2
   - **AL2023.12 version:** 1.14.2-10.amzn2023.0.2
 
+- ** `edk2` **
+  - **RPM:**  edk2-aarch64  / **Architectures:** noarch
+  - **RPM:**  edk2-ovmf  / **Architectures:** noarch
+  - **AL2 version:** 20240813-313.amzn2
+  - **AL2023.12 version:** 20260508-1.amzn2023
+
 - ** `efibootmgr` **
   - **RPM:**  efibootmgr
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 15-2.amzn2.0.2
   - **AL2023.12 version:** 18-6.amzn2023
-
-- ** `efitools` **
-  - **RPM:**  efitools
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.9.2-7.amzn2.0.1
-  - **AL2023.12 version:** 1.9.2-7.amzn2023.0.3
 
 - ** `efivar` **
   - **RPM:**  efivar  / **Architectures:** aarch64, x86\_64
@@ -1421,12 +1140,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.176-2.amzn2.0.2
   - **AL2023.12 version:** 0.188-3.amzn2023.0.3
 
-- ** `elinks` **
-  - **RPM:**  elinks
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.12-0.57.pre6.amzn2.0.2
-  - **AL2023.12 version:** 0.12-0.65.pre6.amzn2023.0.2
-
 - ** `emacs` **
   - **RPM:**  emacs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  emacs-common  / **Architectures:** aarch64, x86\_64
@@ -1435,8 +1148,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  emacs-lucid  / **Architectures:** aarch64, x86\_64
   - **RPM:**  emacs-nox  / **Architectures:** aarch64, x86\_64
   - **RPM:**  emacs-terminal  / **Architectures:** noarch
-  - **AL2 version:** 27.2-4.amzn2.0.7
-  - **AL2023.12 version:** 28.2-3.amzn2023.0.10
+  - **AL2 version:** 27.2-4.amzn2.0.8
+  - **AL2023.12 version:** 28.2-3.amzn2023.0.11
 
 - ** `emacs-auctex` **
   - **RPM:**  emacs-auctex  / **Architectures:** noarch
@@ -1445,19 +1158,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 11.87-4.amzn2
   - **AL2023.12 version:** 12.3-1.amzn2023.0.2
 
-- ** `enchant` **
-  - **RPM:**  enchant  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  enchant-aspell  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  enchant-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  enchant-voikko  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.6.0-8.amzn2.0.2
-  - **AL2023.12 version:** 1.6.0-27.amzn2023.0.2
-
 - ** `environment-modules` **
   - **RPM:**  environment-modules
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.2.10-10.amzn2.0.2
-  - **AL2023.12 version:** 4.8.0-1.amzn2023.0.2
+  - **AL2 version:** 3.2.10-11.amzn2
+  - **AL2023.12 version:** 4.8.0-1.amzn2023.0.3
 
 - ** `espeak` **
   - **RPM:**  espeak  / **Architectures:** aarch64, x86\_64
@@ -1487,12 +1192,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.2.1-13.amzn2
   - **AL2023.12 version:** 3.0.0-4.amzn2023.0.1
 
-- ** `execstack` **
-  - **RPM:**  execstack
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.5.0-22.amzn2
-  - **AL2023.12 version:** 0.5.0-20.amzn2023.0.2
-
 - ** `exempi` **
   - **RPM:**  exempi  / **Architectures:** aarch64, x86\_64
   - **RPM:**  exempi-devel  / **Architectures:** aarch64, x86\_64
@@ -1504,7 +1203,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  exiv2-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  exiv2-doc  / **Architectures:** noarch
   - **RPM:**  exiv2-libs  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.27.0-4.amzn2.0.7
+  - **AL2 version:** 0.27.0-4.amzn2.0.8
   - **AL2023.12 version:** 0.28.5-132.amzn2023
 
 - ** `expat` **
@@ -1512,7 +1211,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  expat-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  expat-static  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.1.0-15.amzn2.0.8
-  - **AL2023.12 version:** 2.6.3-1.amzn2023.0.6
+  - **AL2023.12 version:** 2.8.3-1.amzn2023.0.1
 
 - ** `expect` **
   - **RPM:**  expect  / **Architectures:** aarch64, x86\_64
@@ -1594,8 +1293,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  flatpak  / **Architectures:** aarch64, x86\_64
   - **RPM:**  flatpak-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  flatpak-libs  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.9-10.amzn2.0.7
-  - **AL2023.12 version:** 1.16.6-1.amzn2023
+  - **AL2 version:** 1.0.9-10.amzn2.0.8
+  - **AL2023.12 version:** 1.18.1-1.amzn2023
 
 - ** `flex` **
   - **RPM:**  flex  / **Architectures:** aarch64, x86\_64
@@ -1642,8 +1341,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  freeipmi-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  freeipmi-ipmidetectd  / **Architectures:** aarch64, x86\_64
   - **RPM:**  freeipmi-ipmiseld  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.5.7-3.amzn2
-  - **AL2023.12 version:** 1.6.15-159.amzn2023
+  - **AL2 version:** 1.5.7-3.amzn2.0.1
+  - **AL2023.12 version:** 1.6.19-1.amzn2023
 
 - ** `freeradius` **
   - **RPM:**  freeradius  / **Architectures:** aarch64, x86\_64
@@ -1666,8 +1365,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  freerdp-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libwinpr  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libwinpr-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.11.7-1.amzn2.0.13
-  - **AL2023.12 version:** 3.6.3-1.amzn2023.0.14
+  - **AL2 version:** 2.11.7-1.amzn2.0.16
+  - **AL2023.12 version:** 3.31.0-1.amzn2023
 
 - ** `freetype` **
   - **RPM:**  freetype  / **Architectures:** aarch64, x86\_64
@@ -1742,15 +1441,15 @@ The full comparison of RPM package versions is below.
   - **RPM:**  gd  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gd-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gd-progs  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.0.35-27.amzn2.0.1
-  - **AL2023.12 version:** 2.3.3-5.amzn2023.0.3
+  - **AL2 version:** 2.0.35-27.amzn2.0.2
+  - **AL2023.12 version:** 2.3.3-5.amzn2023.0.5
 
 - ** `gdb` **
   - **RPM:**  gdb  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gdb-doc  / **Architectures:** noarch
   - **RPM:**  gdb-gdbserver  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 8.0.1-36.amzn2.0.2
-  - **AL2023.12 version:** 16.3-1.amzn2023.0.1
+  - **AL2 version:** 8.0.1-36.amzn2.0.3
+  - **AL2023.12 version:** 16.3-1.amzn2023.0.2
 
 - ** `gdbm` **
   - **RPM:**  gdbm  / **Architectures:** aarch64, x86\_64
@@ -1777,12 +1476,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  gdm-pam-extensions-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.28.2-16.amzn2.0.2
   - **AL2023.12 version:** 47.0-970.amzn2023
-
-- ** `generic-logos` **
-  - **RPM:**  generic-logos  / **Architectures:** noarch
-  - **RPM:**  generic-logos-httpd  / **Architectures:** noarch
-  - **AL2 version:** 18.0.0-4.amzn2
-  - **AL2023.12 version:** 18.0.0-12.amzn2023.0.3
 
 - ** `geoclue2` **
   - **RPM:**  geoclue2  / **Architectures:** aarch64, x86\_64
@@ -2079,12 +1772,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.56.1-1.amzn2
   - **AL2023.12 version:** 2.80.0-186.amzn2023.0.1
 
-- ** `gl-manpages` **
-  - **RPM:**  gl-manpages
-  - **Architectures:** noarch
-  - **AL2 version:** 1.1-7.20130122.amzn2
-  - **AL2023.12 version:** 1.1-22.20190306.amzn2023.0.2
-
 - ** `gmp` **
   - **RPM:**  gmp  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gmp-devel  / **Architectures:** aarch64, x86\_64
@@ -2103,12 +1790,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.28.2-1.amzn2
   - **AL2023.12 version:** 47.2-1.amzn2023.0.1
-
-- ** `gnome-common` **
-  - **RPM:**  gnome-common
-  - **Architectures:** noarch
-  - **AL2 version:** 3.18.0-1.amzn2
-  - **AL2023.12 version:** 3.18.0-20.amzn2023
 
 - ** `gnome-desktop3` **
   - **RPM:**  gnome-desktop3  / **Architectures:** aarch64, x86\_64
@@ -2219,22 +1900,16 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 1.82.0-1.amzn2023
 
 - ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  golang-docs  / **Architectures:** noarch
-  - **RPM:**  golang-misc  / **Architectures:** noarch
-  - **RPM:**  golang-race  / **Architectures:** x86\_64
-  - **RPM:**  golang-shared  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  golang-src  / **Architectures:** noarch
-  - **RPM:**  golang-tests  / **Architectures:** noarch
-  - **AL2 version:** 1.25.12-1.amzn2.0.1
-  - **AL2023.12 version:** 1.25.12-1.amzn2023.0.1
+  - **RPM:**  golang-race
+  - **Architectures:** x86\_64
+  - **AL2 version:** 1.18.9-1.amzn2.0.6
+  - **AL2023.12 version:** 1.19.9-1.amzn2023.0.1
 
 - ** `golist` **
   - **RPM:**  golist
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.10.1-10.amzn2.0.15
-  - **AL2023.12 version:** 0.10.4-12.amzn2023.0.11
+  - **AL2 version:** 0.10.1-10.amzn2.0.17
+  - **AL2023.12 version:** 0.10.4-12.amzn2023.0.15
 
 - ** `google-guice` **
   - **RPM:**  google-guice  / **Architectures:** noarch
@@ -2362,6 +2037,7 @@ The full comparison of RPM package versions is below.
 - ** `go-rpm-macros` **
   - **RPM:**  go-filesystem  / **Architectures:** aarch64, x86\_64
   - **RPM:**  go-rpm-macros  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  go-rpm-templates  / **Architectures:** aarch64, x86\_64
   - **RPM:**  go-srpm-macros  / **Architectures:** noarch
   - **AL2 version:** 3.0.15-23.amzn2.0.2
   - **AL2023.12 version:** 3.8.0-1.amzn2023.0.1
@@ -2385,21 +2061,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  gpgme-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.3.2-5.amzn2.0.2
   - **AL2023.12 version:** 1.23.2-182.amzn2023.0.1
-
-- ** `gpm` **
-  - **RPM:**  gpm  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  gpm-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  gpm-libs  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  gpm-static  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.20.7-15.amzn2.0.2
-  - **AL2023.12 version:** 1.20.7-26.amzn2023.amzn2023.0.3
-
-- ** `graphene` **
-  - **RPM:**  graphene  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  graphene-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  graphene-tests  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.10.6-2.amzn2.0.2
-  - **AL2023.12 version:** 1.10.6-9.amzn2023.0.1
 
 - ** `graphite2` **
   - **RPM:**  graphite2  / **Architectures:** aarch64, x86\_64
@@ -2435,27 +2096,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  groff-x11  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.22.2-8.amzn2.0.2
   - **AL2023.12 version:** 1.22.4-7.amzn2023.0.2
-
-- ** `grub2` **
-  - **RPM:**  grub2-common  / **Architectures:** noarch
-  - **RPM:**  grub2-efi-aa64  / **Architectures:** aarch64
-  - **RPM:**  grub2-efi-aa64-cdboot  / **Architectures:** aarch64
-  - **RPM:**  grub2-efi-aa64-ec2  / **Architectures:** aarch64
-  - **RPM:**  grub2-efi-aa64-modules  / **Architectures:** noarch
-  - **RPM:**  grub2-efi-x64  / **Architectures:** x86\_64
-  - **RPM:**  grub2-efi-x64-cdboot  / **Architectures:** x86\_64
-  - **RPM:**  grub2-efi-x64-ec2  / **Architectures:** x86\_64
-  - **RPM:**  grub2-efi-x64-modules  / **Architectures:** noarch
-  - **RPM:**  grub2-emu  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  grub2-emu-modules  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  grub2-pc  / **Architectures:** x86\_64
-  - **RPM:**  grub2-pc-modules  / **Architectures:** noarch
-  - **RPM:**  grub2-tools  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  grub2-tools-efi  / **Architectures:** x86\_64
-  - **RPM:**  grub2-tools-extra  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  grub2-tools-minimal  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.06-14.amzn2.0.7
-  - **AL2023.12 version:** 2.06-61.amzn2023.0.22
 
 - ** `grubby` **
   - **RPM:**  grubby
@@ -2511,21 +2151,21 @@ The full comparison of RPM package versions is below.
 - ** `gstreamer1-plugins-bad-free` **
   - **RPM:**  gstreamer1-plugins-bad-free  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gstreamer1-plugins-bad-free-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.18.4-5.amzn2.0.8
-  - **AL2023.12 version:** 1.24.10-1.amzn2023.0.8
+  - **AL2 version:** 1.18.4-5.amzn2.0.9
+  - **AL2023.12 version:** 1.24.10-1.amzn2023.0.9
 
 - ** `gstreamer1-plugins-base` **
   - **RPM:**  gstreamer1-plugins-base  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gstreamer1-plugins-base-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gstreamer1-plugins-base-tools  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.18.4-5.amzn2.0.10
-  - **AL2023.12 version:** 1.24.10-1.amzn2023.0.3
+  - **AL2 version:** 1.18.4-5.amzn2.0.12
+  - **AL2023.12 version:** 1.24.10-1.amzn2023.0.5
 
 - ** `gstreamer1-plugins-good` **
   - **RPM:**  gstreamer1-plugins-good  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gstreamer1-plugins-good-gtk  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.18.4-6.amzn2.0.12
-  - **AL2023.12 version:** 1.24.10-1.amzn2023.0.7
+  - **AL2 version:** 1.18.4-6.amzn2.0.14
+  - **AL2023.12 version:** 1.24.10-1.amzn2023.0.9
 
 - ** `gtest` **
   - **RPM:**  gtest  / **Architectures:** aarch64, x86\_64
@@ -2563,8 +2203,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  gvfs-fuse  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gvfs-goa  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gvfs-smb  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.36.2-3.amzn2.0.2
-  - **AL2023.12 version:** 1.56.1-1.amzn2023.0.2
+  - **AL2 version:** 1.36.2-3.amzn2.0.3
+  - **AL2023.12 version:** 1.56.1-1.amzn2023.0.3
 
 - ** `gzip` **
   - **RPM:**  gzip
@@ -2628,12 +2268,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.13-3.amzn2.0.2
   - **AL2023.12 version:** 3.23-4.amzn2023.0.3
 
-- ** `html2ps` **
-  - **RPM:**  html2ps  / **Architectures:** noarch
-  - **RPM:**  xhtml2ps  / **Architectures:** noarch
-  - **AL2 version:** 1.0-0.14.b7.amzn2
-  - **AL2023.12 version:** 1.0-0.39.b7.amzn2023.0.3
-
 - ** `htop` **
   - **RPM:**  htop
   - **Architectures:** aarch64, x86\_64
@@ -2658,19 +2292,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 6-4.amzn2
   - **AL2023.12 version:** 12-6.amzn2023.0.3
 
-- ** `httpd` **
-  - **RPM:**  httpd  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  httpd-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  httpd-filesystem  / **Architectures:** noarch
-  - **RPM:**  httpd-manual  / **Architectures:** noarch
-  - **RPM:**  httpd-tools  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mod\_ldap  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mod\_proxy\_html  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mod\_session  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mod\_ssl  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.4.68-1.amzn2.0.1
-  - **AL2023.12 version:** 2.4.68-1.amzn2023.0.1
-
 - ** `hunspell` **
   - **RPM:**  hunspell  / **Architectures:** aarch64, x86\_64
   - **RPM:**  hunspell-devel  / **Architectures:** aarch64, x86\_64
@@ -2692,16 +2313,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  hwloc-plugins  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.11.8-4.amzn2.0.2
   - **AL2023.12 version:** 2.4.1-3.amzn2023.0.6
-
-- ** [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html) **
-  - **RPM:**  [`hyperv-daemons`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
-  - **RPM:**  [`hyperv-daemons-license`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
-  - **RPM:**  [`hypervfcopyd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
-  - **RPM:**  [`hypervkvpd`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** x86\_64
-  - **RPM:**  [`hyperv-tools`](https://docs.aws.amazon.com/linux/al2023/ug/hyperv-supported-configurations.html)  / **Architectures:** noarch
-  - **RPM:**  hypervvssd  / **Architectures:** x86\_64
-  - **AL2 version:** 0-0.32.20161211git.amzn2
-  - **AL2023.12 version:** 0-0.42.20220731git.amzn2023.0.1
 
 - ** `ibus` **
   - **RPM:**  ibus  / **Architectures:** aarch64, x86\_64
@@ -2754,12 +2365,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.4.6-3.amzn2
   - **AL2023.12 version:** 1.8.12-6.amzn2023.0.1
 
-- ** `icc-profiles-openicc` **
-  - **RPM:**  icc-profiles-openicc
-  - **Architectures:** noarch
-  - **AL2 version:** 1.3.1-5.amzn2
-  - **AL2023.12 version:** 1.3.1-20.amzn2023.0.3
-
 - ** `icu` **
   - **RPM:**  icu  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libicu  / **Architectures:** aarch64, x86\_64
@@ -2775,20 +2380,14 @@ The full comparison of RPM package versions is below.
   - **RPM:**  ImageMagick-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  ImageMagick-doc  / **Architectures:** aarch64, x86\_64
   - **RPM:**  ImageMagick-perl  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 6.9.10.97-1.amzn2.0.31
-  - **AL2023.12 version:** 6.9.13.50-1.amzn2023.0.2
+  - **AL2 version:** 6.9.10.97-1.amzn2.0.32
+  - **AL2023.12 version:** 6.9.13.54-1.amzn2023
 
 - ** `indent` **
   - **RPM:**  indent
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.2.11-13.amzn2.0.4
   - **AL2023.12 version:** 2.2.12-7.amzn2023.0.6
-
-- ** `infinipath-psm` **
-  - **RPM:**  infinipath-psm  / **Architectures:** x86\_64
-  - **RPM:**  infinipath-psm-devel  / **Architectures:** x86\_64
-  - **AL2 version:** 3.3-26\_g604758e\_open.2.amzn2
-  - **AL2023.12 version:** 3.3-26\_g604758e\_open.6.amzn2023.3.0.3
 
 - ** `initscripts` **
   - **RPM:**  initscripts
@@ -2802,35 +2401,17 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.50.2-7.amzn2
   - **AL2023.12 version:** 0.51.0-18.amzn2023.0.3
 
-- ** `ipa-gothic-fonts` **
-  - **RPM:**  ipa-gothic-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 003.03-5.amzn2
-  - **AL2023.12 version:** 003.03-27.amzn2023
-
-- ** `ipa-mincho-fonts` **
-  - **RPM:**  ipa-mincho-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 003.03-5.amzn2
-  - **AL2023.12 version:** 003.03-26.amzn2023
-
-- ** `ipa-pgothic-fonts` **
-  - **RPM:**  ipa-pgothic-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 003.03-5.amzn2
-  - **AL2023.12 version:** 003.03-24.amzn2023
-
-- ** `ipa-pmincho-fonts` **
-  - **RPM:**  ipa-pmincho-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 003.03-5.amzn2
-  - **AL2023.12 version:** 003.03-25.amzn2023
+- ** `iotop` **
+  - **RPM:**  iotop
+  - **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 0.6-4.amzn2
+  - **AL2023.12 version:** 0.6-29.amzn2023.0.3
 
 - ** `iperf3` **
   - **RPM:**  iperf3  / **Architectures:** aarch64, x86\_64
   - **RPM:**  iperf3-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.1.7-2.amzn2.0.5
-  - **AL2023.12 version:** 3.19.1-1.amzn2023
+  - **AL2 version:** 3.1.7-2.amzn2.0.6
+  - **AL2023.12 version:** 3.19.1-1.amzn2023.0.1
 
 - ** `ipmitool` **
   - **RPM:**  bmc-snmp-proxy  / **Architectures:** noarch
@@ -2877,14 +2458,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  iscsi-initiator-utils  / **Architectures:** aarch64, x86\_64
   - **RPM:**  iscsi-initiator-utils-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  iscsi-initiator-utils-iscsiuio  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 6.2.0.874-7.amzn2.0.1
-  - **AL2023.12 version:** 6.2.1.4-10.git2a8f9d8.amzn2023.0.3
-
-- ** `isl` **
-  - **RPM:**  isl  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  isl-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.16.1-6.amzn2
-  - **AL2023.12 version:** 0.16.1-13.amzn2023.0.3
+  - **AL2 version:** 6.2.0.874-7.amzn2.0.2
+  - **AL2023.12 version:** 6.2.1.4-10.git2a8f9d8.amzn2023.0.4
 
 - ** `isns-utils` **
   - **RPM:**  isns-utils
@@ -2892,23 +2467,17 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.93-7.amzn2.0.3
   - **AL2023.12 version:** 0.101-6.amzn2023.0.1
 
-- ** `iso-codes` **
-  - **RPM:**  iso-codes  / **Architectures:** noarch
-  - **RPM:**  iso-codes-devel  / **Architectures:** noarch
-  - **AL2 version:** 4.6.0-3.amzn2
-  - **AL2023.12 version:** 4.6.0-1.amzn2023.0.3
-
 - ** `itstool` **
   - **RPM:**  itstool
   - **Architectures:** noarch
   - **AL2 version:** 2.0.2-1.amzn2
   - **AL2023.12 version:** 2.0.6-5.amzn2023.0.3
 
-- ** `jakarta-oro` **
-  - **RPM:**  jakarta-oro  / **Architectures:** noarch
-  - **RPM:**  jakarta-oro-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 2.0.8-16.1.amzn2
-  - **AL2023.12 version:** 2.0.8-36.amzn2023.0.1
+- ** `jansi` **
+  - **RPM:**  jansi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  jansi-javadoc  / **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 1.9-7.amzn2
+  - **AL2023.12 version:** 2.4.0-3.amzn2023.0.3
 
 - ** `jansi-native` **
   - **RPM:**  jansi-native
@@ -2938,24 +2507,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.11a-16.1.amzn2
   - **AL2023.12 version:** 0.11b-21.amzn2023.0.3
 
-- ** [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [`java-11-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  java-11-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-11-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-11-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 11.0.32\+9-1.amzn2
-  - **AL2023.12 version:** 11.0.32\+9-1.amzn2023
-
-- ** [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [`java-17-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  java-17-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-17-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-17-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-17-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-17-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 17.0.20\+8-1.amzn2.1
-  - **AL2023.12 version:** 17.0.20\+8-1.amzn2023.1
-
 - ** `javacc` **
   - **RPM:**  javacc  / **Architectures:** noarch
   - **RPM:**  javacc-demo  / **Architectures:** noarch
@@ -2963,12 +2514,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  javacc-manual  / **Architectures:** noarch
   - **AL2 version:** 5.0-10.1.amzn2
   - **AL2023.12 version:** 7.0.4-11.amzn2023.0.1
-
-- ** `javacc-maven-plugin` **
-  - **RPM:**  javacc-maven-plugin  / **Architectures:** noarch
-  - **RPM:**  javacc-maven-plugin-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 2.6-17.amzn2
-  - **AL2023.12 version:** 2.6-35.amzn2023.0.1
 
 - ** `javapackages-tools` **
   - **RPM:**  javapackages-tools  / **Architectures:** noarch
@@ -3008,25 +2553,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0.1-9.amzn2
   - **AL2023.12 version:** 1.0.2-16.amzn2023.0.1
 
-- ** `jdepend` **
-  - **RPM:**  jdepend  / **Architectures:** noarch
-  - **RPM:**  jdepend-demo  / **Architectures:** noarch
-  - **RPM:**  jdepend-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 2.9.1-10.amzn2
-  - **AL2023.12 version:** 2.9.1-29.amzn2023.0.2
-
 - ** `jdependency` **
   - **RPM:**  jdependency  / **Architectures:** noarch
   - **RPM:**  jdependency-javadoc  / **Architectures:** noarch
   - **AL2 version:** 0.7-10.amzn2
   - **AL2023.12 version:** 2.8.0-1.amzn2023.0.2
-
-- ** `jdom` **
-  - **RPM:**  jdom  / **Architectures:** noarch
-  - **RPM:**  jdom-demo  / **Architectures:** noarch
-  - **RPM:**  jdom-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.1.3-6.1.amzn2.0.1
-  - **AL2023.12 version:** 1.1.3-30.amzn2023.0.3
 
 - ** `jflex` **
   - **RPM:**  jflex  / **Architectures:** noarch
@@ -3040,12 +2571,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  jna-javadoc  / **Architectures:** noarch
   - **AL2 version:** 3.5.2-8.amzn2.0.2
   - **AL2023.12 version:** 5.9.0-1.amzn2023.0.3
-
-- ** `jomolhari-fonts` **
-  - **RPM:**  jomolhari-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 0.003-17.amzn2
-  - **AL2023.12 version:** 0.003-32.amzn2023.0.1
 
 - ** `jq` **
   - **RPM:**  jq  / **Architectures:** aarch64, x86\_64
@@ -3081,22 +2606,16 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 1.10.0-1.amzn2023.0.2
 
 - ** `jsoup` **
-  - **RPM:**  jsoup  / **Architectures:** noarch
-  - **RPM:**  jsoup-javadoc  / **Architectures:** noarch
+  - **RPM:**  jsoup
+  - **Architectures:** noarch
   - **AL2 version:** 1.16.1-4.amzn2.0.1
-  - **AL2023.12 version:** 1.16.1-4.amzn2023.0.2
+  - **AL2023.12 version:** 1.23.2-1.amzn2023.0.1
 
 - ** `jsr-305` **
   - **RPM:**  jsr-305  / **Architectures:** noarch
   - **RPM:**  jsr-305-javadoc  / **Architectures:** noarch
   - **AL2 version:** 0-0.18.20090319svn.amzn2
   - **AL2023.12 version:** 3.0.2-5.amzn2023.0.4
-
-- ** `jtidy` **
-  - **RPM:**  jtidy  / **Architectures:** noarch
-  - **RPM:**  jtidy-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.0-0.16.20100930svn1125.amzn2.0.1
-  - **AL2023.12 version:** 1.0-0.38.20100930svn1125.amzn2023.0.2
 
 - ** `junit` **
   - **RPM:**  junit  / **Architectures:** noarch
@@ -3116,14 +2635,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kbd  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kbd-legacy  / **Architectures:** noarch
   - **RPM:**  kbd-misc  / **Architectures:** noarch
-  - **AL2 version:** 1.15.5-15.amzn2
-  - **AL2023.12 version:** 2.4.0-2.amzn2023.0.3
-
-- ** `kde-filesystem` **
-  - **RPM:**  kde-filesystem
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4-47.amzn2.0.2
-  - **AL2023.12 version:** 4-65.amzn2023.0.3
+  - **AL2 version:** 1.15.5-15.amzn2.0.1
+  - **AL2023.12 version:** 2.4.0-2.amzn2023.0.4
 
 - ** `keepalived` **
   - **RPM:**  keepalived
@@ -3138,8 +2651,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kernel-tools  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-tools-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perf  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4.14.355-284.741.amzn2
-  - **AL2023.12 version:** 6.1.180-225.360.amzn2023
+  - **AL2 version:** 4.14.355-287.753.amzn2
+  - **AL2023.12 version:** 6.1.188-233.386.amzn2023
 
 - ** `kexec-tools` **
   - **RPM:**  kexec-tools
@@ -3159,7 +2672,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kmod-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kmod-libs  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 25-3.amzn2.0.2
-  - **AL2023.12 version:** 29-2.amzn2023.0.5
+  - **AL2023.12 version:** 29-2.amzn2023.0.6
 
 - ** `krb5` **
   - **RPM:**  krb5-devel  / **Architectures:** aarch64, x86\_64
@@ -3170,13 +2683,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  krb5-workstation  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libkadm5  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.15.1-55.amzn2.2.10
-  - **AL2023.12 version:** 1.21.3-8.amzn2023.0.1
-
-- ** `ksh` **
-  - **RPM:**  ksh
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 20120801-247.amzn2.0.2
-  - **AL2023.12 version:** 20120801-255.amzn2023.0.2
+  - **AL2023.12 version:** 1.21.3-8.amzn2023.0.2
 
 - ** `ladspa` **
   - **RPM:**  ladspa  / **Architectures:** aarch64, x86\_64
@@ -3201,13 +2708,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  lapack-static  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.4.2-8.amzn2.0.2
   - **AL2023.12 version:** 3.10.0-4.amzn2023.0.3
-
-- ** `lasso` **
-  - **RPM:**  lasso  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  lasso-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  python3-lasso  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.9.0-1.amzn2.0.1
-  - **AL2023.12 version:** 2.9.0-1.amzn2023.0.1
 
 - ** `latex2html` **
   - **RPM:**  latex2html
@@ -3241,13 +2741,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 4.4.8-12.amzn2.1
   - **AL2023.12 version:** 4.9.2-2.amzn2023
 
-- ** `libabigail` **
-  - **RPM:**  libabigail  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libabigail-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libabigail-doc  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.3-1.amzn2.0.1
-  - **AL2023.12 version:** 2.3-1.amzn2023.0.2
-
 - ** `libaio` **
   - **RPM:**  libaio  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libaio-devel  / **Architectures:** aarch64, x86\_64
@@ -3280,18 +2773,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libassuan-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.1.0-3.amzn2.0.2
   - **AL2023.12 version:** 2.5.5-1.amzn2023.0.2
-
-- ** `libasyncns` **
-  - **RPM:**  libasyncns  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libasyncns-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.8-7.amzn2.0.2
-  - **AL2023.12 version:** 0.8-20.amzn2023.0.2
-
-- ** `libatasmart` **
-  - **RPM:**  libatasmart  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libatasmart-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.19-6.amzn2.0.2
-  - **AL2023.12 version:** 0.19-20.amzn2023.0.2
 
 - ** `libatomic_ops` **
   - **RPM:**  libatomic\_ops  / **Architectures:** aarch64, x86\_64
@@ -3351,13 +2832,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.2-1.amzn2
   - **AL2023.12 version:** 2.6-1.amzn2023.0.2
 
-- ** `libcanberra` **
-  - **RPM:**  libcanberra  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libcanberra-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libcanberra-gtk3  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.30-5.amzn2.0.3
-  - **AL2023.12 version:** 0.30-35.amzn2023
-
 - ** `libcap` **
   - **RPM:**  libcap  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libcap-devel  / **Architectures:** aarch64, x86\_64
@@ -3394,12 +2868,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.4.9-5.amzn2.0.2
   - **AL2023.12 version:** 1.7.2-7.amzn2023.0.2
 
-- ** `libdaemon` **
-  - **RPM:**  libdaemon  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdaemon-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.14-7.amzn2.0.2
-  - **AL2023.12 version:** 0.14-21.amzn2023.0.2
-
 - ** [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb) **
   - **RPM:**  [`libdb`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2023.html#deprecated-bdb)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libdb-cxx  / **Architectures:** aarch64, x86\_64
@@ -3420,18 +2888,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libdbi-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.8.4-6.amzn2.0.2
   - **AL2023.12 version:** 0.9.0-20.amzn2023.0.1
-
-- ** `libdbusmenu` **
-  - **RPM:**  libdbusmenu  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdbusmenu-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdbusmenu-doc  / **Architectures:** noarch
-  - **RPM:**  libdbusmenu-gtk3  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdbusmenu-gtk3-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdbusmenu-jsonloader  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdbusmenu-jsonloader-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libdbusmenu-tools  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 16.04.0-4.amzn2.0.2
-  - **AL2023.12 version:** 16.04.0-27.amzn2023.0.1
 
 - ** `libdmx` **
   - **RPM:**  libdmx  / **Architectures:** aarch64, x86\_64
@@ -3481,12 +2937,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.07.2-16.amzn2
   - **AL2023.12 version:** 2.1.5-1.amzn2023.0.2
 
-- ** `libesmtp` **
-  - **RPM:**  libesmtp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libesmtp-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.6-7.amzn2.0.2
-  - **AL2023.12 version:** 1.0.6-25.amzn2023.0.2
-
 - ** `libestr` **
   - **RPM:**  libestr  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libestr-devel  / **Architectures:** aarch64, x86\_64
@@ -3512,15 +2962,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libevent  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libevent-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libevent-doc  / **Architectures:** noarch
-  - **AL2 version:** 2.0.21-4.amzn2.0.3
-  - **AL2023.12 version:** 2.1.12-3.amzn2023.0.3
-
-- ** `libexif` **
-  - **RPM:**  libexif  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libexif-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libexif-doc  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.6.22-2.amzn2
-  - **AL2023.12 version:** 0.6.22-4.amzn2023.0.2
+  - **AL2 version:** 2.0.21-4.amzn2.0.4
+  - **AL2023.12 version:** 2.1.12-3.amzn2023.0.4
 
 - ** `libfabric` **
   - **RPM:**  libfabric  / **Architectures:** aarch64, x86\_64
@@ -3599,12 +3042,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.28.2-2.amzn2
   - **AL2023.12 version:** 4.4.4-1.amzn2023.0.1
 
-- ** `libhangul` **
-  - **RPM:**  libhangul  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libhangul-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.1.0-8.amzn2.0.2
-  - **AL2023.12 version:** 0.1.0-23.amzn2023.0.3
-
 - ** `libical` **
   - **RPM:**  libical  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libical-devel  / **Architectures:** aarch64, x86\_64
@@ -3619,13 +3056,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libICE-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.0.9-9.amzn2.0.2
   - **AL2023.12 version:** 1.1.1-3.amzn2023.0.1
-
-- ** `libicns` **
-  - **RPM:**  libicns  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libicns-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libicns-utils  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.8.1-10.amzn2.0.2
-  - **AL2023.12 version:** 0.8.1-21.amzn2023.0.2
 
 - ** `libid3tag` **
   - **RPM:**  libid3tag  / **Architectures:** aarch64, x86\_64
@@ -3708,12 +3138,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.14.2-1.amzn2
   - **AL2023.12 version:** 1.26.0-1.amzn2023.0.2
 
-- ** `libmetalink` **
-  - **RPM:**  libmetalink  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libmetalink-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.1.3-13.amzn2
-  - **AL2023.12 version:** 0.1.3-14.amzn2023.0.2
-
 - ** `libmicrohttpd` **
   - **RPM:**  libmicrohttpd  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libmicrohttpd-devel  / **Architectures:** aarch64, x86\_64
@@ -3752,29 +3176,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0.6-1.amzn2.0.2
   - **AL2023.12 version:** 1.0.8-2.amzn2023.0.2
 
-- ** `libnetfilter_cthelper` **
-  - **RPM:**  libnetfilter\_cthelper  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libnetfilter\_cthelper-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.0-10.amzn2.1
-  - **AL2023.12 version:** 1.0.0-21.amzn2023.0.2
-
-- ** `libnetfilter_cttimeout` **
-  - **RPM:**  libnetfilter\_cttimeout  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libnetfilter\_cttimeout-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.0-6.amzn2.1
-  - **AL2023.12 version:** 1.0.0-19.amzn2023.0.2
-
 - ** `libnetfilter_queue` **
   - **RPM:**  libnetfilter\_queue  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libnetfilter\_queue-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.0.2-2.amzn2.0.2
   - **AL2023.12 version:** 1.0.5-2.amzn2023.0.2
-
-- ** `libnfnetlink` **
-  - **RPM:**  libnfnetlink  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libnfnetlink-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.1-4.amzn2.0.2
-  - **AL2023.12 version:** 1.0.1-19.amzn2023.0.2
 
 - ** `libnfs` **
   - **RPM:**  libnfs  / **Architectures:** aarch64, x86\_64
@@ -3822,12 +3228,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.1.0-5.amzn2
   - **AL2023.12 version:** 1.12.0-1.amzn2023.0.1
 
-- ** `libotf` **
-  - **RPM:**  libotf  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libotf-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.9.13-4.amzn2.0.2
-  - **AL2023.12 version:** 0.9.13-18.amzn2023.0.2
-
 - ** `libpaper` **
   - **RPM:**  libpaper  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libpaper-devel  / **Architectures:** aarch64, x86\_64
@@ -3837,8 +3237,8 @@ The full comparison of RPM package versions is below.
 - ** `libpcap` **
   - **RPM:**  libpcap  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libpcap-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.5.3-11.amzn2
-  - **AL2023.12 version:** 1.10.1-1.amzn2023.0.2
+  - **AL2 version:** 1.5.3-11.amzn2.0.1
+  - **AL2023.12 version:** 1.10.7-1.amzn2023.0.1
 
 - ** `libpciaccess` **
   - **RPM:**  libpciaccess  / **Architectures:** aarch64, x86\_64
@@ -3893,14 +3293,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libproxy-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.4.11-10.amzn2.0.3
   - **AL2023.12 version:** 0.5.7-3.amzn2023.0.1
-
-- ** `libpsl` **
-  - **RPM:**  libpsl  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libpsl-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  psl  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  psl-make-dafsa  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.21.5-1.amzn2
-  - **AL2023.12 version:** 0.21.5-1.amzn2023.0.1
 
 - ** `libpsm2` **
   - **RPM:**  libpsm2  / **Architectures:** x86\_64
@@ -4001,12 +3393,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.2.2-2.amzn2.0.2
   - **AL2023.12 version:** 1.2.4-3.amzn2023.0.1
 
-- ** `libsmi` **
-  - **RPM:**  libsmi  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libsmi-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.4.8-13.amzn2.0.2
-  - **AL2023.12 version:** 0.4.8-28.amzn2023.0.2
-
 - ** `libsndfile` **
   - **RPM:**  libsndfile  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libsndfile-devel  / **Architectures:** aarch64, x86\_64
@@ -4032,8 +3418,8 @@ The full comparison of RPM package versions is below.
 - ** `libsoup` **
   - **RPM:**  libsoup  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libsoup-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.56.0-6.amzn2.0.7
-  - **AL2023.12 version:** 2.72.0-6.amzn2023.0.12
+  - **AL2 version:** 2.56.0-6.amzn2.0.8
+  - **AL2023.12 version:** 2.72.0-6.amzn2023.0.14
 
 - ** `libspiro` **
   - **RPM:**  libspiro  / **Architectures:** aarch64, x86\_64
@@ -4061,6 +3447,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libstoragemgmt-hpsa-plugin  / **Architectures:** noarch
   - **RPM:**  libstoragemgmt-local-plugin  / **Architectures:** noarch
   - **RPM:**  libstoragemgmt-megaraid-plugin  / **Architectures:** noarch
+  - **RPM:**  libstoragemgmt-nfs-plugin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libstoragemgmt-smis-plugin  / **Architectures:** noarch
   - **RPM:**  libstoragemgmt-targetd-plugin  / **Architectures:** noarch
   - **RPM:**  libstoragemgmt-udev  / **Architectures:** aarch64, x86\_64
@@ -4099,21 +3486,13 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.1.14-9.amzn2.0.2
   - **AL2023.12 version:** 0.1.28-6.amzn2023.0.2
 
-- ** `libtheora` **
-  - **RPM:**  libtheora  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libtheora-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libtheora-devel-docs  / **Architectures:** noarch
-  - **RPM:**  theora-tools  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.1.1-8.amzn2.0.2
-  - **AL2023.12 version:** 1.1.1-29.amzn2023.0.3
-
 - ** `libtiff` **
   - **RPM:**  libtiff  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libtiff-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libtiff-static  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libtiff-tools  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4.0.3-35.amzn2.0.31
-  - **AL2023.12 version:** 4.4.0-4.amzn2023.0.27
+  - **AL2 version:** 4.0.3-35.amzn2.0.32
+  - **AL2023.12 version:** 4.4.0-4.amzn2023.0.28
 
 - ** `libtirpc` **
   - **RPM:**  libtirpc  / **Architectures:** aarch64, x86\_64
@@ -4194,6 +3573,30 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libverto-libevent-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.2.5-4.amzn2.0.2
   - **AL2023.12 version:** 0.3.2-1.amzn2023.0.2
+
+- ** `libvirt` **
+  - **RPM:**  libvirt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-client  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-config-network  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-config-nwfilter  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-interface  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-network  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-nodedev  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-nwfilter  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-qemu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-secret  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage-disk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage-logical  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-kvm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-docs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-nss  / **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 4.5.0-36.amzn2.3.5
+  - **AL2023.12 version:** 12.0.0-3.amzn2023.0.3
 
 - ** `libvoikko` **
   - **RPM:**  libvoikko  / **Architectures:** aarch64, x86\_64
@@ -4304,8 +3707,8 @@ The full comparison of RPM package versions is below.
 - ** `libXfont2` **
   - **RPM:**  libXfont2  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libXfont2-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.0.3-1.amzn2.0.1
-  - **AL2023.12 version:** 2.0.7-1.amzn2023.0.2
+  - **AL2 version:** 2.0.3-1.amzn2.0.2
+  - **AL2023.12 version:** 2.0.7-1.amzn2023.0.3
 
 - ** `libXft` **
   - **RPM:**  libXft  / **Architectures:** aarch64, x86\_64
@@ -4343,8 +3746,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libxml2  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libxml2-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libxml2-static  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.9.1-6.amzn2.5.26
-  - **AL2023.12 version:** 2.10.4-1.amzn2023.0.20
+  - **AL2 version:** 2.9.1-6.amzn2.5.27
+  - **AL2023.12 version:** 2.10.4-1.amzn2023.0.21
 
 - ** `libXmu` **
   - **RPM:**  libXmu  / **Architectures:** aarch64, x86\_64
@@ -4445,31 +3848,9 @@ The full comparison of RPM package versions is below.
 
 - ** `linux-firmware` **
   - **RPM:**  amd-ucode-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl1000-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl100-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl105-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl135-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl2000-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl2030-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl3160-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl3945-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl4965-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl5000-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl5150-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl6000-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl6000g2a-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl6000g2b-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl6050-firmware  / **Architectures:** noarch
-  - **RPM:**  iwl7260-firmware  / **Architectures:** noarch
   - **RPM:**  linux-firmware  / **Architectures:** noarch
   - **AL2 version:** 20200421-85.git78c0348.amzn2
   - **AL2023.12 version:** 20210208-117.amzn2023.0.7
-
-- ** `lklug-fonts` **
-  - **RPM:**  lklug-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 0.6-10.20090803cvs.amzn2
-  - **AL2023.12 version:** 0.6-24.20090803cvs.amzn2023.0.3
 
 - ** `lksctp-tools` **
   - **RPM:**  lksctp-tools  / **Architectures:** aarch64, x86\_64
@@ -4512,17 +3893,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.4.0-8.20160601gitf9185e5.amzn2
   - **AL2023.12 version:** 3.6.0-8.amzn2023.0.3
 
-- ** `lockdev` **
-  - **RPM:**  lockdev  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  lockdev-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.4-0.13.20111007git.amzn2.0.2
-  - **AL2023.12 version:** 1.0.4-0.35.20111007git.amzn2023.0.3
-
 - ** `log4j` **
   - **RPM:**  log4j
   - **Architectures:** noarch
   - **AL2 version:** 1.2.17-18.amzn2
-  - **AL2023.12 version:** 2.17.2-1.amzn2023.0.5
+  - **AL2023.12 version:** 2.17.2-1.amzn2023.0.6
 
 - ** `logrotate` **
   - **RPM:**  logrotate
@@ -4596,12 +3971,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.27-6.amzn2.0.2
   - **AL2023.12 version:** 0.32-2.amzn2023.0.1
 
-- ** `ltrace` **
-  - **RPM:**  ltrace
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.7.91-14.amzn2.0.1
-  - **AL2023.12 version:** 0.7.91-44.amzn2023.0.2
-
 - ** `lua` **
   - **RPM:**  lua  / **Architectures:** aarch64, x86\_64
   - **RPM:**  lua-devel  / **Architectures:** aarch64, x86\_64
@@ -4630,12 +3999,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  lvm2-lockd  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.02.170-6.amzn2.5
   - **AL2023.12 version:** 1.02.185-1.amzn2023.0.5
-
-- ** `lynx` **
-  - **RPM:**  lynx
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.8.9-4.amzn2
-  - **AL2023.12 version:** 2.8.9-13.amzn2023.0.3
 
 - ** `lz4` **
   - **RPM:**  lz4  / **Architectures:** aarch64, x86\_64
@@ -4683,12 +4046,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.1.41-2.amzn2
   - **AL2023.12 version:** 2.1.49-3.amzn2023.0.3
 
-- ** `mailx` **
-  - **RPM:**  mailx
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 12.5-19.amzn2
-  - **AL2023.12 version:** 12.5-43.amzn2023.0.1
-
 - ** `make` **
   - **RPM:**  make
   - **Architectures:** aarch64, x86\_64
@@ -4726,21 +4083,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  maven-javadoc  / **Architectures:** noarch
   - **AL2 version:** 3.0.5-17.amzn2
   - **AL2023.12 version:** 3.8.4-3.amzn2023.0.5
-
-- ** `maven2` **
-  - **RPM:**  maven2-javadoc  / **Architectures:** noarch
-  - **RPM:**  maven-artifact  / **Architectures:** noarch
-  - **RPM:**  maven-artifact-manager  / **Architectures:** noarch
-  - **RPM:**  maven-model  / **Architectures:** noarch
-  - **RPM:**  maven-monitor  / **Architectures:** noarch
-  - **RPM:**  maven-plugin-descriptor  / **Architectures:** noarch
-  - **RPM:**  maven-plugin-registry  / **Architectures:** noarch
-  - **RPM:**  maven-profile  / **Architectures:** noarch
-  - **RPM:**  maven-project  / **Architectures:** noarch
-  - **RPM:**  maven-settings  / **Architectures:** noarch
-  - **RPM:**  maven-toolchain  / **Architectures:** noarch
-  - **AL2 version:** 2.2.1-47.amzn2
-  - **AL2023.12 version:** 2.2.1-70.amzn2023.0.1
 
 - ** `maven-antrun-plugin` **
   - **RPM:**  maven-antrun-plugin  / **Architectures:** noarch
@@ -4935,12 +4277,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.0-6.amzn2
   - **AL2023.12 version:** 3.2.4-7.amzn2023.0.1
 
-- ** `maven-shared-incremental` **
-  - **RPM:**  maven-shared-incremental  / **Architectures:** noarch
-  - **RPM:**  maven-shared-incremental-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.1-6.amzn2
-  - **AL2023.12 version:** 1.1-25.amzn2023.0.3
-
 - ** `maven-shared-io` **
   - **RPM:**  maven-shared-io  / **Architectures:** noarch
   - **RPM:**  maven-shared-io-javadoc  / **Architectures:** noarch
@@ -4974,12 +4310,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  maven-verifier-javadoc  / **Architectures:** noarch
   - **AL2 version:** 1.4-7.amzn2
   - **AL2023.12 version:** 1.7.2-8.amzn2023.0.3
-
-- ** `maven-verifier-plugin` **
-  - **RPM:**  maven-verifier-plugin  / **Architectures:** noarch
-  - **RPM:**  maven-verifier-plugin-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.0-10.amzn2
-  - **AL2023.12 version:** 1.0-30.amzn2023.0.2
 
 - ** `maven-wagon` **
   - **RPM:**  maven-wagon  / **Architectures:** noarch
@@ -5060,18 +4390,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.34.13-7.amzn2.0.1
   - **AL2023.12 version:** 3.54.0-334.amzn2023
 
-- ** `microcode_ctl` **
-  - **RPM:**  microcode\_ctl
-  - **Architectures:** x86\_64
-  - **AL2 version:** 2.1-47.amzn2.4.27
-  - **AL2023.12 version:** 2.1-53.amzn2023.0.15
-
-- ** `mlocate` **
-  - **RPM:**  mlocate
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.26-8.amzn2
-  - **AL2023.12 version:** 0.26-351.amzn2023
-
 - ** `mod_auth_mellon` **
   - **RPM:**  mod\_auth\_mellon  / **Architectures:** aarch64, x86\_64
   - **RPM:**  mod\_auth\_mellon-diagnostics  / **Architectures:** aarch64, x86\_64
@@ -5081,26 +4399,8 @@ The full comparison of RPM package versions is below.
 - ** `mod_auth_openidc` **
   - **RPM:**  mod\_auth\_openidc
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.8.8-7.amzn2
-  - **AL2023.12 version:** 2.4.16.11-1.amzn2023.0.1
-
-- ** `mod_fcgid` **
-  - **RPM:**  mod\_fcgid
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.3.9-6.amzn2
-  - **AL2023.12 version:** 2.3.9-24.amzn2023.0.3
-
-- ** `mod_http2` **
-  - **RPM:**  mod\_http2
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.0.42-1.amzn2.0.1
-  - **AL2023.12 version:** 2.0.42-1.amzn2023.0.1
-
-- ** `mod_security` **
-  - **RPM:**  mod\_security  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mod\_security-mlogc  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.9.12-1.amzn2.0.1
-  - **AL2023.12 version:** 2.9.12-1.amzn2023.0.1
+  - **AL2 version:** 1.8.8-7.amzn2.0.1
+  - **AL2023.12 version:** 2.4.16.11-1.amzn2023.0.2
 
 - ** `mod_security_crs` **
   - **RPM:**  mod\_security\_crs
@@ -5126,12 +4426,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.3.0-10.amzn2.0.1
   - **AL2023.12 version:** 0.6.0-6.amzn2023
 
-- ** `mozilla-filesystem` **
-  - **RPM:**  mozilla-filesystem
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.9-11.amzn2.0.2
-  - **AL2023.12 version:** 1.9-25.amzn2023.0.3
-
 - ** `mpfr` **
   - **RPM:**  mpfr  / **Architectures:** aarch64, x86\_64
   - **RPM:**  mpfr-devel  / **Architectures:** aarch64, x86\_64
@@ -5146,12 +4440,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.32.9-1.amzn2
   - **AL2023.12 version:** 1.32.10-54.amzn2023
 
-- ** `mtdev` **
-  - **RPM:**  mtdev  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mtdev-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.1.5-5.amzn2.0.2
-  - **AL2023.12 version:** 1.1.5-20.amzn2023.0.3
-
 - ** `mtools` **
   - **RPM:**  mtools
   - **Architectures:** aarch64, x86\_64
@@ -5163,18 +4451,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  mtr-gtk  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.92-2.amzn2.0.2
   - **AL2023.12 version:** 0.95-3.amzn2023.0.2
-
-- ** `multilib-rpm-config` **
-  - **RPM:**  multilib-rpm-config
-  - **Architectures:** noarch
-  - **AL2 version:** 1-6.amzn2
-  - **AL2023.12 version:** 1-17.amzn2023.0.3
-
-- ** `munge-maven-plugin` **
-  - **RPM:**  munge-maven-plugin  / **Architectures:** noarch
-  - **RPM:**  munge-maven-plugin-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.0-2.amzn2
-  - **AL2023.12 version:** 1.0-24.amzn2023.0.3
 
 - ** `mutt` **
   - **RPM:**  mutt
@@ -5208,12 +4484,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.26.3.1-6.amzn2.0.1
   - **AL2023.12 version:** 47.1-719.amzn2023
 
-- ** `ncompress` **
-  - **RPM:**  ncompress
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4.2.4.4-3.amzn2.0.2
-  - **AL2023.12 version:** 4.2.4.4-19.amzn2023.0.3
-
 - ** `ncurses` **
   - **RPM:**  ncurses  / **Architectures:** aarch64, x86\_64
   - **RPM:**  ncurses-base  / **Architectures:** noarch
@@ -5235,12 +4505,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  ndctl-libs  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 64.1-2.amzn2
   - **AL2023.12 version:** 71.1-2.amzn2023.0.3
-
-- ** `nerdctl` **
-  - **RPM:**  nerdctl
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.2.2-1.amzn2.0.4
-  - **AL2023.12 version:** 2.2.2-1.amzn2023.0.4
 
 - ** `netlabel_tools` **
   - **RPM:**  netlabel\_tools
@@ -5272,12 +4536,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  nettle-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.7.1-9.amzn2
   - **AL2023.12 version:** 3.10.1-1.amzn2023.0.1
-
-- ** `net-tools` **
-  - **RPM:**  net-tools
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.0-0.22.20131004git.amzn2.0.3
-  - **AL2023.12 version:** 2.0-0.59.20160912git.amzn2023.0.3
 
 - ** `newt` **
   - **RPM:**  newt  / **Architectures:** aarch64, x86\_64
@@ -5362,12 +4620,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.0.9-7.amzn2
   - **AL2023.12 version:** 2.0.14-3.amzn2023.0.3
 
-- ** `numad` **
-  - **RPM:**  numad
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.5-18.20150602git.amzn2
-  - **AL2023.12 version:** 0.5-34.20150602git.amzn2023.0.3
-
 - ** `nvme-cli` **
   - **RPM:**  nvme-cli
   - **Architectures:** aarch64, x86\_64
@@ -5444,12 +4696,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 5.9.6-1.amzn2.0.7
   - **AL2023.12 version:** 6.9.7.1-1.amzn2023.0.2
 
-- ** `openjade` **
-  - **RPM:**  openjade
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.3.2-45.amzn2.0.3
-  - **AL2023.12 version:** 1.3.2-66.amzn2023.0.3
-
 - ** `openjpeg2` **
   - **RPM:**  openjpeg2  / **Architectures:** aarch64, x86\_64
   - **RPM:**  openjpeg2-devel  / **Architectures:** aarch64, x86\_64
@@ -5500,12 +4746,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.3.20-2.amzn2
   - **AL2023.12 version:** 3.3.23-6.amzn2023.0.3
 
-- ** `opensp` **
-  - **RPM:**  opensp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  opensp-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.5.2-19.amzn2.0.2
-  - **AL2023.12 version:** 1.5.2-36.amzn2023.0.3
-
 - ** `openssh` **
   - **RPM:**  openssh  / **Architectures:** aarch64, x86\_64
   - **RPM:**  openssh-clients  / **Architectures:** aarch64, x86\_64
@@ -5520,15 +4760,15 @@ The full comparison of RPM package versions is below.
   - **RPM:**  openssl-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  openssl-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  openssl-perl  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.2k-24.amzn2.0.21
-  - **AL2023.12 version:** 3.5.7-2.amzn2023.0.1
+  - **AL2 version:** 1.0.2k-24.amzn2.0.22
+  - **AL2023.12 version:** 3.5.8-1.amzn2023.0.1
 
 - ** `openssl` (`openssl11` in AL2) **
   - **RPM:**  openssl (openssl11 in AL2)  / **Architectures:**
   - **RPM:**  openssl-devel (openssl11-devel in AL2)  / **Architectures:**
   - **RPM:**  openssl-libs (openssl11-libs in AL2)  / **Architectures:**
-  - **AL2 version:** 1.1.1zh-1.amzn2.0.1
-  - **AL2023.12 version:** 3.5.7-2.amzn2023.0.1
+  - **AL2 version:** 1.1.1zi-1.amzn2.0.1
+  - **AL2023.12 version:** 3.5.8-1.amzn2023.0.1
 
 - ** `openssl-pkcs11` **
   - **RPM:**  libp11-devel  / **Architectures:** aarch64, x86\_64
@@ -5541,22 +4781,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:**
   - **AL2 version:** 0.4.10-6.amzn2.0.1
   - **AL2023.12 version:** 0.4.12-3.amzn2023.0.1
-
-- ** `open-vmdk` **
-  - **RPM:**  open-vmdk
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.3.6-1.amzn2
-  - **AL2023.12 version:** 0.3.6-1.amzn2023
-
-- ** `open-vm-tools` **
-  - **RPM:**  open-vm-tools  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  open-vm-tools-desktop  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  open-vm-tools-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  open-vm-tools-salt-minion  / **Architectures:** x86\_64
-  - **RPM:**  open-vm-tools-sdmp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  open-vm-tools-test  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 12.3.0-1.amzn2.0.4
-  - **AL2023.12 version:** 12.3.0-1.amzn2023.0.5
 
 - ** `opus` **
   - **RPM:**  opus  / **Architectures:** aarch64, x86\_64
@@ -5681,12 +4905,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.7.1-12.amzn2.0.2
   - **AL2023.12 version:** 2.7.6-14.amzn2023.0.2
 
-- ** `patchelf` **
-  - **RPM:**  patchelf
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.17.0-1.amzn2.0.1
-  - **AL2023.12 version:** 0.17.0-1.amzn2023.0.2
-
 - ** `patchutils` **
   - **RPM:**  patchutils
   - **Architectures:** aarch64, x86\_64
@@ -5717,7 +4935,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  pcre2-utf16  / **Architectures:** aarch64, x86\_64
   - **RPM:**  pcre2-utf32  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 10.23-11.amzn2.0.2
-  - **AL2023.12 version:** 10.40-1.amzn2023.0.3
+  - **AL2023.12 version:** 10.40-1.amzn2023.0.4
 
 - ** `pcs` **
   - **RPM:**  pcs
@@ -5744,8 +4962,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  perl-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perl-ExtUtils-Embed  / **Architectures:** noarch
   - **RPM:**  perl-libs  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  perl-Locale-Maketext-Simple  / **Architectures:** noarch
-  - **RPM:**  perl-Module-Loaded  / **Architectures:** noarch
   - **RPM:**  perl-tests  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perl-Time-Piece  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 5.16.3-299.amzn2.0.4
@@ -5784,8 +5000,8 @@ The full comparison of RPM package versions is below.
 - ** `perl-Authen-SASL` **
   - **RPM:**  perl-Authen-SASL
   - **Architectures:** noarch
-  - **AL2 version:** 2.15-10.amzn2.0.1
-  - **AL2023.12 version:** 2.16-23.amzn2023.0.3
+  - **AL2 version:** 2.15-10.amzn2.0.2
+  - **AL2023.12 version:** 2.16-23.amzn2023.0.4
 
 - ** `perl-autodie` **
   - **RPM:**  perl-autodie
@@ -5804,12 +5020,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 1.13-2.amzn2
   - **AL2023.12 version:** 1.22-1.amzn2023.0.2
-
-- ** `perl-Browser-Open` **
-  - **RPM:**  perl-Browser-Open
-  - **Architectures:** noarch
-  - **AL2 version:** 0.04-6.amzn2
-  - **AL2023.12 version:** 0.04-27.amzn2023.0.2
 
 - ** `perl-Business-ISBN` **
   - **RPM:**  perl-Business-ISBN
@@ -5859,12 +5069,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.28-2.amzn2
   - **AL2023.12 version:** 1.36-5.amzn2023.0.2
 
-- ** `perl-Class-ISA` **
-  - **RPM:**  perl-Class-ISA
-  - **Architectures:** noarch
-  - **AL2 version:** 0.36-1010.amzn2
-  - **AL2023.12 version:** 0.36-1032.amzn2023.0.2
-
 - ** `perl-Class-Load` **
   - **RPM:**  perl-Class-Load
   - **Architectures:** noarch
@@ -5889,6 +5093,12 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.34-5.amzn2.0.2
   - **AL2023.12 version:** 0.47-4.amzn2023.0.2
 
+- ** `perl-common-sense` **
+  - **RPM:**  perl-common-sense
+  - **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 3.6-4.amzn2
+  - **AL2023.12 version:** 3.7.5-5.amzn2023.0.2
+
 - ** `perl-Compress-Raw-Bzip2` **
   - **RPM:**  perl-Compress-Raw-Bzip2
   - **Architectures:** aarch64, x86\_64
@@ -5900,12 +5110,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.061-4.amzn2.0.2
   - **AL2023.12 version:** 2.221-1.amzn2023.0.2
-
-- ** `perl-Config-Simple` **
-  - **RPM:**  perl-Config-Simple
-  - **Architectures:** noarch
-  - **AL2 version:** 4.59-15.amzn2
-  - **AL2023.12 version:** 4.59-36.amzn2023.0.2
 
 - ** `perl-Config-Tiny` **
   - **RPM:**  perl-Config-Tiny
@@ -5997,6 +5201,12 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.64-5.amzn2.0.2
   - **AL2023.12 version:** 0.72-45.amzn2023.0.2
 
+- ** `perl-Crypt-URandom` **
+  - **RPM:**  perl-Crypt-URandom
+  - **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 0.36-18.amzn2.0.1
+  - **AL2023.12 version:** 0.55-1.amzn2023.0.1
+
 - ** `perl-CSS-Tiny` **
   - **RPM:**  perl-CSS-Tiny
   - **Architectures:** noarch
@@ -6032,12 +5242,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.04-6.amzn2.1.0
   - **AL2023.12 version:** 1.54-2.amzn2023.0.3
-
-- ** `perl-DateTime-Format-DateParse` **
-  - **RPM:**  perl-DateTime-Format-DateParse
-  - **Architectures:** noarch
-  - **AL2 version:** 0.05-5.amzn2
-  - **AL2023.12 version:** 0.05-25.amzn2023.0.2
 
 - ** `perl-DateTime-Locale` **
   - **RPM:**  perl-DateTime-Locale
@@ -6078,8 +5282,8 @@ The full comparison of RPM package versions is below.
 - ** `perl-DBI` **
   - **RPM:**  perl-DBI
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.627-4.amzn2.0.6
-  - **AL2023.12 version:** 1.651-1.amzn2023.0.1
+  - **AL2 version:** 1.627-4.amzn2.0.7
+  - **AL2023.12 version:** 1.652-1.amzn2023.0.1
 
 - ** `perl-Devel-CheckLib` **
   - **RPM:**  perl-Devel-CheckLib
@@ -6104,12 +5308,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 0.50-8.amzn2
   - **AL2023.12 version:** 0.51-21.amzn2023.0.2
-
-- ** `perl-Devel-Leak` **
-  - **RPM:**  perl-Devel-Leak
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.03-22.amzn2.0.2
-  - **AL2023.12 version:** 0.03-45.amzn2023.0.3
 
 - ** `perl-Devel-StackTrace` **
   - **RPM:**  perl-Devel-StackTrace
@@ -6147,12 +5345,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 5.85-4.amzn2.0.2
   - **AL2023.12 version:** 6.04-522.amzn2023.0.2
 
-- ** `perl-Digest-SHA1` **
-  - **RPM:**  perl-Digest-SHA1
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.13-9.amzn2.0.2
-  - **AL2023.12 version:** 2.13-32.amzn2023.0.3
-
 - ** `perl-Dist-CheckConflicts` **
   - **RPM:**  perl-Dist-CheckConflicts
   - **Architectures:** noarch
@@ -6171,23 +5363,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.51-7.amzn2.0.2
   - **AL2023.12 version:** 3.21-520.amzn2023.0.2
 
-- ** `perl-Encode-Detect` **
-  - **RPM:**  perl-Encode-Detect
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.01-13.amzn2.0.2
-  - **AL2023.12 version:** 1.01-44.amzn2023.0.1
-
 - ** `perl-Encode-Locale` **
   - **RPM:**  perl-Encode-Locale
   - **Architectures:** noarch
   - **AL2 version:** 1.03-5.amzn2
   - **AL2023.12 version:** 1.05-19.amzn2023.0.2
-
-- ** `perl-Env` **
-  - **RPM:**  perl-Env
-  - **Architectures:** noarch
-  - **AL2 version:** 1.04-2.amzn2
-  - **AL2023.12 version:** 1.04-458.amzn2023.0.2
 
 - ** `perl-Error` **
   - **RPM:**  perl-Error
@@ -6255,12 +5435,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.00-4.amzn2
   - **AL2023.12 version:** 1.006-2.amzn2023.0.2
 
-- ** `perl-File-Inplace` **
-  - **RPM:**  perl-File-Inplace
-  - **Architectures:** noarch
-  - **AL2 version:** 0.20-8.amzn2
-  - **AL2023.12 version:** 0.20-28.amzn2023.0.2
-
 - ** `perl-File-Listing` **
   - **RPM:**  perl-File-Listing
   - **Architectures:** noarch
@@ -6315,23 +5489,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.49-3.amzn2.0.2
   - **AL2023.12 version:** 1.65-2.amzn2023.0.2
 
-- ** `perl-Font-AFM` **
-  - **RPM:**  perl-Font-AFM
-  - **Architectures:** noarch
-  - **AL2 version:** 1.20-13.amzn2
-  - **AL2023.12 version:** 1.20-35.amzn2023.0.2
-
 - ** `perl-Font-TTF` **
   - **RPM:**  perl-Font-TTF
   - **Architectures:** noarch
   - **AL2 version:** 1.02-3.amzn2
   - **AL2023.12 version:** 1.06-15.amzn2023.0.2
-
-- ** `perl-FreezeThaw` **
-  - **RPM:**  perl-FreezeThaw
-  - **Architectures:** noarch
-  - **AL2 version:** 0.5001-10.amzn2
-  - **AL2023.12 version:** 0.5001-35.amzn2023.0.2
 
 - ** `perl-GD` **
   - **RPM:**  perl-GD
@@ -6339,23 +5501,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.49-3.amzn2.0.3
   - **AL2023.12 version:** 2.80-1.amzn2023.0.3
 
-- ** `perl-GD-Barcode` **
-  - **RPM:**  perl-GD-Barcode
-  - **Architectures:** noarch
-  - **AL2 version:** 1.15-15.amzn2
-  - **AL2023.12 version:** 1.15-37.amzn2023.0.2
-
 - ** `perl-Getopt-Long` **
   - **RPM:**  perl-Getopt-Long
   - **Architectures:** noarch
   - **AL2 version:** 2.40-3.amzn2
   - **AL2023.12 version:** 2.58-521.amzn2023.0.1
-
-- ** `perl-GSSAPI` **
-  - **RPM:**  perl-GSSAPI
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.28-9.amzn2.0.2
-  - **AL2023.12 version:** 0.28-35.amzn2023.0.3
 
 - ** `perl-Hook-LexWrap` **
   - **RPM:**  perl-Hook-LexWrap
@@ -6417,12 +5567,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 6.06-6.amzn2
   - **AL2023.12 version:** 6.34-1.amzn2023.0.2
 
-- ** `perl-HTTP-Negotiate` **
-  - **RPM:**  perl-HTTP-Negotiate
-  - **Architectures:** noarch
-  - **AL2 version:** 6.01-5.amzn2
-  - **AL2023.12 version:** 6.01-28.amzn2023.0.2
-
 - ** `perl-HTTP-Tiny` **
   - **RPM:**  perl-HTTP-Tiny
   - **Architectures:** noarch
@@ -6471,12 +5615,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.00-2.amzn2
   - **AL2023.12 version:** 1.004-2.amzn2023.0.2
 
-- ** `perl-IO-SessionData` **
-  - **RPM:**  perl-IO-SessionData
-  - **Architectures:** noarch
-  - **AL2 version:** 1.03-1.amzn2
-  - **AL2023.12 version:** 1.03-31.amzn2023.0.1
-
 - ** `perl-IO-Socket-INET6` **
   - **RPM:**  perl-IO-Socket-INET6
   - **Architectures:** noarch
@@ -6494,12 +5632,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 1.94-7.amzn2.0.1
   - **AL2023.12 version:** 2.075-1.amzn2023.0.3
-
-- ** `perl-IO-String` **
-  - **RPM:**  perl-IO-String
-  - **Architectures:** noarch
-  - **AL2 version:** 1.08-19.amzn2
-  - **AL2023.12 version:** 1.08-41.amzn2023.0.2
 
 - ** `perl-IO-stringy` **
   - **RPM:**  perl-IO-stringy
@@ -6561,12 +5693,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 6.05-2.amzn2.0.1
   - **AL2023.12 version:** 6.58-1.amzn2023.0.3
 
-- ** `perl-libxml-perl` **
-  - **RPM:**  perl-libxml-perl
-  - **Architectures:** noarch
-  - **AL2 version:** 0.08-19.amzn2
-  - **AL2023.12 version:** 0.08-42.amzn2023.0.2
-
 - ** `perl-Locale-Codes` **
   - **RPM:**  perl-Locale-Codes
   - **Architectures:** noarch
@@ -6584,18 +5710,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  perl-local-lib  / **Architectures:** noarch
   - **AL2 version:** 1.008010-4.amzn2
   - **AL2023.12 version:** 2.000024-11.amzn2023.0.2
-
-- ** `perl-Log-Message` **
-  - **RPM:**  perl-Log-Message
-  - **Architectures:** noarch
-  - **AL2 version:** 0.08-3.amzn2
-  - **AL2023.12 version:** 0.08-24.amzn2023.0.2
-
-- ** `perl-Log-Message-Simple` **
-  - **RPM:**  perl-Log-Message-Simple
-  - **Architectures:** noarch
-  - **AL2 version:** 0.10-2.amzn2
-  - **AL2023.12 version:** 0.10-311.amzn2023.0.2
 
 - ** `perl-LWP-MediaTypes` **
   - **RPM:**  perl-LWP-MediaTypes
@@ -6741,12 +5855,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 6.06-2.amzn2
   - **AL2023.12 version:** 6.21-1.amzn2023.0.2
 
-- ** `perl-Net-LibIDN` **
-  - **RPM:**  perl-Net-LibIDN
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.12-15.amzn2.0.2
-  - **AL2023.12 version:** 0.12-39.amzn2023.0.4
-
 - ** `perl-Net-SMTP-SSL` **
   - **RPM:**  perl-Net-SMTP-SSL
   - **Architectures:** noarch
@@ -6757,19 +5865,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  perl-Net-SSLeay
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.55-6.amzn2.0.1
-  - **AL2023.12 version:** 1.94-3.amzn2023.0.4
-
-- ** `perl-Number-Compare` **
-  - **RPM:**  perl-Number-Compare
-  - **Architectures:** noarch
-  - **AL2 version:** 0.03-6.amzn2
-  - **AL2023.12 version:** 0.03-28.amzn2023.0.2
-
-- ** `perl-Object-Deadly` **
-  - **RPM:**  perl-Object-Deadly
-  - **Architectures:** noarch
-  - **AL2 version:** 0.09-15.amzn2
-  - **AL2023.12 version:** 0.09-37.amzn2023.0.2
+  - **AL2023.12 version:** 1.94-3.amzn2023.0.5
 
 - ** `perl-Package-DeprecationManager` **
   - **RPM:**  perl-Package-DeprecationManager
@@ -6800,18 +5896,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.96-3.amzn2.0.2
   - **AL2023.12 version:** 2.5-2.amzn2023.0.3
-
-- ** `perl-Parallel-Iterator` **
-  - **RPM:**  perl-Parallel-Iterator
-  - **Architectures:** noarch
-  - **AL2 version:** 1.00-8.amzn2
-  - **AL2023.12 version:** 1.00-28.amzn2023.0.2
-
-- ** `perl-Params-Check` **
-  - **RPM:**  perl-Params-Check
-  - **Architectures:** noarch
-  - **AL2 version:** 0.38-2.amzn2
-  - **AL2023.12 version:** 0.38-459.amzn2023.0.2
 
 - ** `perl-Params-Util` **
   - **RPM:**  perl-Params-Util
@@ -6885,12 +5969,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.60-2.amzn2
   - **AL2023.12 version:** 1.74-2.amzn2023.0.2
 
-- ** `perl-Pod-Coverage` **
-  - **RPM:**  perl-Pod-Coverage
-  - **Architectures:** noarch
-  - **AL2 version:** 0.23-3.amzn2
-  - **AL2023.12 version:** 0.23-23.amzn2023.0.2
-
 - ** `perl-Pod-Coverage-TrustPod` **
   - **RPM:**  perl-Pod-Coverage-TrustPod
   - **Architectures:** noarch
@@ -6951,23 +6029,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.215-12.amzn2
   - **AL2023.12 version:** 1.270-6.amzn2023.0.2
 
-- ** `perl-PPI-HTML` **
-  - **RPM:**  perl-PPI-HTML
-  - **Architectures:** noarch
-  - **AL2 version:** 1.08-4.amzn2
-  - **AL2023.12 version:** 1.08-25.amzn2023.0.2
-
 - ** `perl-PPIx-Regexp` **
   - **RPM:**  perl-PPIx-Regexp
   - **Architectures:** noarch
   - **AL2 version:** 0.034-3.amzn2
   - **AL2023.12 version:** 0.079-1.amzn2023.0.2
-
-- ** `perl-PPIx-Utilities` **
-  - **RPM:**  perl-PPIx-Utilities
-  - **Architectures:** noarch
-  - **AL2 version:** 1.001000-8.amzn2
-  - **AL2023.12 version:** 1.001000-40.amzn2023.0.2
 
 - ** `perl-prefork` **
   - **RPM:**  perl-prefork
@@ -6987,23 +6053,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.03-22.amzn2
   - **AL2023.12 version:** 2.05-14.amzn2023.0.2
 
-- ** `perl-Readonly-XS` **
-  - **RPM:**  perl-Readonly-XS
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.05-15.amzn2.0.2
-  - **AL2023.12 version:** 1.05-39.amzn2023.0.3
-
 - ** `perl-Scalar-List-Utils` **
   - **RPM:**  perl-Scalar-List-Utils
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.27-248.amzn2.0.2
   - **AL2023.12 version:** 1.56-459.amzn2023.0.3
-
-- ** `perl-SGMLSpm` **
-  - **RPM:**  perl-SGMLSpm
-  - **Architectures:** noarch
-  - **AL2 version:** 1.03ii-31.amzn2
-  - **AL2023.12 version:** 1.03ii-52.amzn2023.0.2
 
 - ** `perl-SOAP-Lite` **
   - **RPM:**  perl-SOAP-Lite
@@ -7015,7 +6069,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  perl-Socket
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.010-4.amzn2.0.2
-  - **AL2023.12 version:** 2.032-1.amzn2023.0.3
+  - **AL2023.12 version:** 2.032-1.amzn2023.0.4
 
 - ** `perl-Socket6` **
   - **RPM:**  perl-Socket6
@@ -7028,12 +6082,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 1.5-22.amzn2
   - **AL2023.12 version:** 1.62-17.amzn2023.0.2
-
-- ** `perl-srpm-macros` **
-  - **RPM:**  perl-srpm-macros
-  - **Architectures:** noarch
-  - **AL2 version:** 1-8.amzn2.0.1
-  - **AL2023.12 version:** 1-39.amzn2023.0.2
 
 - ** `perl-Storable` **
   - **RPM:**  perl-Storable
@@ -7052,18 +6100,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 1.16-11.amzn2
   - **AL2023.12 version:** 1.18-10.amzn2023.0.2
-
-- ** `perl-String-ShellQuote` **
-  - **RPM:**  perl-String-ShellQuote
-  - **Architectures:** noarch
-  - **AL2 version:** 1.04-10.amzn2
-  - **AL2023.12 version:** 1.04-44.amzn2023.0.1
-
-- ** `perl-String-Similarity` **
-  - **RPM:**  perl-String-Similarity
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.04-10.amzn2.0.2
-  - **AL2023.12 version:** 1.04-31.amzn2023.0.3
 
 - ** `perl-Sub-Exporter` **
   - **RPM:**  perl-Sub-Exporter
@@ -7094,12 +6130,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.33-3.amzn2.0.2
   - **AL2023.12 version:** 0.36-459.amzn2023.0.3
-
-- ** `perl-Taint-Runtime` **
-  - **RPM:**  perl-Taint-Runtime
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.03-19.amzn2.0.2
-  - **AL2023.12 version:** 0.03-41.amzn2023.0.3
 
 - ** `perl-Task-Weaken` **
   - **RPM:**  perl-Task-Weaken
@@ -7317,12 +6347,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.17-12.amzn2
   - **AL2023.12 version:** 0.20-14.amzn2023.0.2
 
-- ** `perl-Text-CharWidth` **
-  - **RPM:**  perl-Text-CharWidth
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.04-18.amzn2.0.2
-  - **AL2023.12 version:** 0.04-42.amzn2023.0.3
-
 - ** `perl-Text-CSV_XS` **
   - **RPM:**  perl-Text-CSV\_XS
   - **Architectures:** aarch64, x86\_64
@@ -7341,12 +6365,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.09-7.amzn2
   - **AL2023.12 version:** 0.11-13.amzn2023.0.2
 
-- ** `perl-Text-Iconv` **
-  - **RPM:**  perl-Text-Iconv
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.7-18.amzn2.0.2
-  - **AL2023.12 version:** 1.7-41.amzn2023.0.3
-
 - ** `perl-Text-ParseWords` **
   - **RPM:**  perl-Text-ParseWords
   - **Architectures:** noarch
@@ -7364,12 +6382,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 0.04-20.amzn2
   - **AL2023.12 version:** 1.30-14.amzn2023.0.2
-
-- ** `perl-Text-WrapI18N` **
-  - **RPM:**  perl-Text-WrapI18N
-  - **Architectures:** noarch
-  - **AL2 version:** 0.06-17.amzn2
-  - **AL2023.12 version:** 0.06-39.amzn2023.0.2
 
 - ** `perl-Thread-Queue` **
   - **RPM:**  perl-Thread-Queue
@@ -7437,12 +6449,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0-1.amzn2
   - **AL2023.12 version:** 1.01-2.amzn2023.0.2
 
-- ** `perl-Unicode-Map8` **
-  - **RPM:**  perl-Unicode-Map8
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.13-13.amzn2.0.2
-  - **AL2023.12 version:** 0.13-37.amzn2023.0.3
-
 - ** `perl-Unicode-String` **
   - **RPM:**  perl-Unicode-String
   - **Architectures:** aarch64, x86\_64
@@ -7473,12 +6479,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.99.07-3.amzn2
   - **AL2023.12 version:** 0.99.29-1.amzn2023.0.3
 
-- ** `perl-WWW-RobotRules` **
-  - **RPM:**  perl-WWW-RobotRules
-  - **Architectures:** noarch
-  - **AL2 version:** 6.02-5.amzn2
-  - **AL2023.12 version:** 6.02-28.amzn2023.0.2
-
 - ** `perl-XML-Catalog` **
   - **RPM:**  perl-XML-Catalog
   - **Architectures:** noarch
@@ -7490,24 +6490,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 1.44-19.amzn2
   - **AL2023.12 version:** 1.46-14.amzn2023.0.2
-
-- ** `perl-XML-Dumper` **
-  - **RPM:**  perl-XML-Dumper
-  - **Architectures:** noarch
-  - **AL2 version:** 0.81-17.amzn2
-  - **AL2023.12 version:** 0.81-39.amzn2023.0.2
-
-- ** `perl-XML-Filter-BufferText` **
-  - **RPM:**  perl-XML-Filter-BufferText
-  - **Architectures:** noarch
-  - **AL2 version:** 1.01-17.amzn2
-  - **AL2023.12 version:** 1.01-38.amzn2023.0.2
-
-- ** `perl-XML-Handler-YAWriter` **
-  - **RPM:**  perl-XML-Handler-YAWriter
-  - **Architectures:** noarch
-  - **AL2 version:** 0.23-18.amzn2
-  - **AL2023.12 version:** 0.23-39.amzn2023.0.2
 
 - ** `perl-XML-LibXML` **
   - **RPM:**  perl-XML-LibXML
@@ -7533,12 +6515,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.41-10.amzn2.0.3
   - **AL2023.12 version:** 2.51-1.amzn2023.0.2
 
-- ** `perl-XML-RegExp` **
-  - **RPM:**  perl-XML-RegExp
-  - **Architectures:** noarch
-  - **AL2 version:** 0.04-2.amzn2
-  - **AL2023.12 version:** 0.04-23.amzn2023.0.2
-
 - ** `perl-XML-SAX` **
   - **RPM:**  perl-XML-SAX
   - **Architectures:** noarch
@@ -7562,12 +6538,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 2.20-5.amzn2
   - **AL2023.12 version:** 2.25-10.amzn2023.0.2
-
-- ** `perl-XML-TokeParser` **
-  - **RPM:**  perl-XML-TokeParser
-  - **Architectures:** noarch
-  - **AL2 version:** 0.05-12.amzn2
-  - **AL2023.12 version:** 0.05-34.amzn2023.0.2
 
 - ** `perl-XML-TreeBuilder` **
   - **RPM:**  perl-XML-TreeBuilder
@@ -7593,17 +6563,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.13-22.amzn2
   - **AL2023.12 version:** 1.44-9.amzn2023.0.2
 
-- ** `perl-XML-XPathEngine` **
-  - **RPM:**  perl-XML-XPathEngine
-  - **Architectures:** noarch
-  - **AL2 version:** 0.14-3.amzn2
-  - **AL2023.12 version:** 0.14-21.amzn2023.0.2
-
 - ** `perl-YAML` **
   - **RPM:**  perl-YAML
   - **Architectures:** noarch
-  - **AL2 version:** 0.84-5.amzn2
-  - **AL2023.12 version:** 1.31-7.amzn2023.0.1
+  - **AL2 version:** 0.84-5.amzn2.0.1
+  - **AL2023.12 version:** 1.31-7.amzn2023.0.2
 
 - ** `perl-YAML-Syck` **
   - **RPM:**  perl-YAML-Syck
@@ -7673,12 +6637,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.4.2-5.amzn2
   - **AL2023.12 version:** 4.2.7-4.amzn2023.0.1
 
-- ** `plexus-build-api` **
-  - **RPM:**  plexus-build-api  / **Architectures:** noarch
-  - **RPM:**  plexus-build-api-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 0.0.7-11.amzn2
-  - **AL2023.12 version:** 0.0.7-36.amzn2023.0.3
-
 - ** `plexus-cipher` **
   - **RPM:**  plexus-cipher  / **Architectures:** noarch
   - **RPM:**  plexus-cipher-javadoc  / **Architectures:** noarch
@@ -7699,12 +6657,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.2-7.amzn2
   - **AL2023.12 version:** 2.8.8-5.amzn2023.0.3
 
-- ** `plexus-component-api` **
-  - **RPM:**  plexus-component-api  / **Architectures:** noarch
-  - **RPM:**  plexus-component-api-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.0-0.16.alpha15.amzn2
-  - **AL2023.12 version:** 1.0-0.34.alpha15.amzn2023.0.3
-
 - ** `plexus-components-pom` **
   - **RPM:**  plexus-components-pom
   - **Architectures:** noarch
@@ -7719,12 +6671,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  plexus-containers-javadoc  / **Architectures:** noarch
   - **AL2 version:** 1.5.5-14.amzn2
   - **AL2023.12 version:** 2.1.0-9.amzn2023.0.4
-
-- ** `plexus-i18n` **
-  - **RPM:**  plexus-i18n  / **Architectures:** noarch
-  - **RPM:**  plexus-i18n-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.0-0.6.b10.4.amzn2
-  - **AL2023.12 version:** 1.0-0.19.b10.4.amzn2023.0.3
 
 - ** `plexus-interpolation` **
   - **RPM:**  plexus-interpolation  / **Architectures:** noarch
@@ -7799,7 +6745,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  policycoreutils-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  policycoreutils-newrole  / **Architectures:** aarch64, x86\_64
   - **RPM:**  policycoreutils-restorecond  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.5-22.amzn2
+  - **AL2 version:** 2.5-22.amzn2.0.1
   - **AL2023.12 version:** 3.4-6.amzn2023.0.3
 
 - ** `polkit` **
@@ -7808,12 +6754,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  polkit-docs  / **Architectures:** noarch
   - **AL2 version:** 0.112-26.amzn2.2.1
   - **AL2023.12 version:** 125-1.amzn2023.0.3
-
-- ** `polkit-pkla-compat` **
-  - **RPM:**  polkit-pkla-compat
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.1-4.amzn2.0.2
-  - **AL2023.12 version:** 0.1-19.amzn2023.0.2
 
 - ** `poppler` **
   - **RPM:**  poppler  / **Architectures:** aarch64, x86\_64
@@ -7855,8 +6795,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-static (postgresql-static in AL2)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  postgresql15-test (postgresql-test in AL2)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 9.2.24-8.amzn2.0.10
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2 version:** 9.2.24-8.amzn2.0.11
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 - ** `pps-tools` **
   - **RPM:**  pps-tools  / **Architectures:** aarch64, x86\_64
@@ -7951,12 +6891,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.21.33-1.amzn2.0.1
   - **AL2023.12 version:** 1.40.31-1.amzn2023.0.1
 
-- ** `python-bottle` **
-  - **RPM:**  python3-bottle
-  - **Architectures:** noarch
-  - **AL2 version:** 0.12.21-2.amzn2
-  - **AL2023.12 version:** 0.12.21-2.amzn2023.0.1
-
 - ** `python-cffi` **
   - **RPM:**  python-cffi-doc
   - **Architectures:** noarch
@@ -7969,23 +6903,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.0.4-1.amzn2.0.2
   - **AL2023.12 version:** 4.0.0-1.amzn2023.0.2
 
-- ** `python-chevron` **
-  - **RPM:**  python-chevron
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.13.1-1.amzn2.0.2
-  - **AL2023.12 version:** 0.13.1-1.amzn2023.0.3
-
 - ** `python-colorama` **
   - **RPM:**  python3-colorama
   - **Architectures:** noarch
   - **AL2 version:** 0.3.9-3.amzn2.0.1
   - **AL2023.12 version:** 0.4.4-2.amzn2023.0.2
-
-- ** `python-coverage` **
-  - **RPM:**  python3-coverage
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 5.5-1.amzn2.0.1
-  - **AL2023.12 version:** 5.5-1.amzn2023.0.3
 
 - ** `python-cups` **
   - **RPM:**  python-cups-doc
@@ -8010,18 +6932,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 0.14-1.amzn2.0.2
   - **AL2023.12 version:** 0.16-4.amzn2023.0.2
-
-- ** `python-extras` **
-  - **RPM:**  python3-extras
-  - **Architectures:** noarch
-  - **AL2 version:** 1.0.0-11.amzn2.0.3
-  - **AL2023.12 version:** 1.0.0-15.amzn2023.0.2
-
-- ** `python-fixtures` **
-  - **RPM:**  python3-fixtures
-  - **Architectures:** noarch
-  - **AL2 version:** 3.0.0-17.amzn2
-  - **AL2023.12 version:** 3.0.0-22.amzn2023.0.2
 
 - ** `python-idna` (`python3-idna` in AL2) **
   - **RPM:**  python3-idna
@@ -8071,18 +6981,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.11-10.amzn2.0.2
   - **AL2023.12 version:** 1.1.1-10.amzn2023.0.2
 
-- ** `python-mimeparse` **
-  - **RPM:**  python3-mimeparse
-  - **Architectures:** noarch
-  - **AL2 version:** 1.6.0-12.amzn2.0.3
-  - **AL2023.12 version:** 1.6.0-16.amzn2023.0.2
-
-- ** `python-mock` (`python3-mock` in AL2) **
-  - **RPM:**  python3-mock
-  - **Architectures:** noarch
-  - **AL2 version:** 3.0.5-8.amzn2.0.3
-  - **AL2023.12 version:** 3.0.5-14.amzn2023.0.2
-
 - ** `python-netaddr` (`python3-netaddr` in AL2) **
   - **RPM:**  python3-netaddr
   - **Architectures:** noarch
@@ -8099,7 +6997,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  python3-pip
   - **Architectures:** noarch
   - **AL2 version:** 20.2.2-1.amzn2.0.18
-  - **AL2023.12 version:** 21.3.1-2.amzn2023.0.20
+  - **AL2023.12 version:** 21.3.1-2.amzn2023.0.21
 
 - ** `python-psutil` **
   - **RPM:**  python3-psutil
@@ -8136,12 +7034,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 2.2.0-3.amzn2.0.4
   - **AL2023.12 version:** 2.7.4-1.amzn2023.0.3
-
-- ** `python-pysocks` **
-  - **RPM:**  python3-pysocks
-  - **Architectures:** noarch
-  - **AL2 version:** 1.7.1-7.amzn2.0.2
-  - **AL2023.12 version:** 1.7.1-8.amzn2023.0.2
 
 - ** `python-requests` (`python3-requests` in AL2) **
   - **RPM:**  python3-requests
@@ -8204,12 +7096,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.1.3-3.amzn2.0.2
   - **AL2023.12 version:** 1.3.24-1.amzn2023.0.2
 
-- ** `python-testscenarios` **
-  - **RPM:**  python3-testscenarios
-  - **Architectures:** noarch
-  - **AL2 version:** 0.5.0-18.amzn2.0.2
-  - **AL2023.12 version:** 0.5.0-21.amzn2023.0.2
-
 - ** `python-testtools` **
   - **RPM:**  python3-testtools  / **Architectures:** noarch
   - **RPM:**  python-testtools-doc  / **Architectures:** noarch
@@ -8219,14 +7105,14 @@ The full comparison of RPM package versions is below.
 - ** `python-tornado` **
   - **RPM:**  python-tornado-doc
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4.2.1-3.amzn2.0.6
-  - **AL2023.12 version:** 6.1.0-2.amzn2023.0.9
+  - **AL2 version:** 4.2.1-3.amzn2.0.7
+  - **AL2023.12 version:** 6.1.0-2.amzn2023.0.10
 
 - ** `python-tornado` (`python3-tornado` in AL2) **
   - **RPM:**  python3-tornado  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python-tornado-doc (python3-tornado-doc in AL2)  / **Architectures:**
-  - **AL2 version:** 5.0.2-4.amzn2.0.9
-  - **AL2023.12 version:** 6.1.0-2.amzn2023.0.9
+  - **AL2 version:** 5.0.2-4.amzn2.0.10
+  - **AL2023.12 version:** 6.1.0-2.amzn2023.0.10
 
 - ** `python-urllib3` (`python3-urllib3` in AL2) **
   - **RPM:**  python3-urllib3
@@ -8247,10 +7133,27 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 2.0.0-9.amzn2023.0.3
 
 - ** `qemu` **
-  - **RPM:**  qemu-img
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.1.0-8.amzn2.0.26
-  - **AL2023.12 version:** 9.2.3-1082.amzn2023
+  - **RPM:**  qemu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu (qemu-kvm in AL2)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-guest-agent  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-img  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-kvm-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-aarch64  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-aarch64-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-x86  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-x86-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user-binfmt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user-static  / **Architectures:** aarch64, x86\_64
+  - **AL2 version:** 3.1.0-8.amzn2.0.27
+  - **AL2023.12 version:** 11.0.0-3.amzn2023
+
+- ** `qemu` (`qemu-kvm` in AL2) **
+  - **RPM:**  qemu-common (qemu-kvm-common in AL2)  / **Architectures:**
+  - **RPM:**  qemu-tools (qemu-kvm-tools in AL2)  / **Architectures:** x86\_64
+  - **AL2 version:** 1.5.3-156.amzn2.5.4
+  - **AL2023.12 version:** 11.0.0-3.amzn2023
 
 - ** `qpdf` **
   - **RPM:**  qpdf  / **Architectures:** aarch64, x86\_64
@@ -8286,29 +7189,8 @@ The full comparison of RPM package versions is below.
 - ** `rclone` **
   - **RPM:**  rclone
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.55.1-1.amzn2.0.10
-  - **AL2023.12 version:** 1.74.3-83.amzn2023
-
-- ** `rdma-core` **
-  - **RPM:**  ibacm  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  infiniband-diags  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  iwpmd  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libibumad  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libibverbs  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libibverbs-utils  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  librdmacm  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  librdmacm-utils  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rdma-core  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rdma-core-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  srp\_daemon  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 48.0-1.amzn2.0.3
-  - **AL2023.12 version:** 48.0-1.amzn2023.0.1
-
-- ** `re2c` **
-  - **RPM:**  re2c
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.1-2.amzn2.0.1
-  - **AL2023.12 version:** 3.1-1.amzn2023.0.1
+  - **AL2 version:** 1.55.1-1.amzn2.0.11
+  - **AL2023.12 version:** 1.75.1-1.amzn2023
 
 - ** `readline` **
   - **RPM:**  readline  / **Architectures:** aarch64, x86\_64
@@ -8328,12 +7210,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  recode-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.6-38.amzn2.0.1
   - **AL2023.12 version:** 3.7.8-2.amzn2023.0.2
-
-- ** `regexp` **
-  - **RPM:**  regexp  / **Architectures:** noarch
-  - **RPM:**  regexp-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.5-13.amzn2
-  - **AL2023.12 version:** 1.5-38.amzn2023.0.1
 
 - ** `resource-agents` **
   - **RPM:**  resource-agents
@@ -8365,12 +7241,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 6.8-3.amzn2.0.5
   - **AL2023.12 version:** 6.17-1.amzn2023.0.1
 
-- ** `rootfiles` **
-  - **RPM:**  rootfiles
-  - **Architectures:** noarch
-  - **AL2 version:** 8.1-11.amzn2
-  - **AL2023.12 version:** 8.1-29.amzn2023.0.2
-
 - ** `rpcbind` **
   - **RPM:**  rpcbind
   - **Architectures:** aarch64, x86\_64
@@ -8389,7 +7259,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  rpm-plugin-systemd-inhibit  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rpm-sign  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 4.11.3-48.amzn2.0.5
-  - **AL2023.12 version:** 4.16.1.3-29.amzn2023.0.7
+  - **AL2023.12 version:** 4.16.1.3-29.amzn2023.0.8
 
 - ** `rpmdevtools` **
   - **RPM:**  rpmdevtools
@@ -8416,8 +7286,8 @@ The full comparison of RPM package versions is below.
 - ** `rsync` **
   - **RPM:**  rsync
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.1.2-11.amzn2.0.7
-  - **AL2023.12 version:** 3.4.0-1.amzn2023.0.4
+  - **AL2 version:** 3.1.2-11.amzn2.0.8
+  - **AL2023.12 version:** 3.5.1-1.amzn2023.0.1
 
 - ** `rsyslog` **
   - **RPM:**  rsyslog  / **Architectures:** aarch64, x86\_64
@@ -8428,14 +7298,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  rsyslog-mmjsonparse  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rsyslog-mmkubernetes  / **Architectures:** aarch64, x86\_64
   - **RPM:**  rsyslog-mmnormalize  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 8.24.0-57.amzn2.2.0.2
-  - **AL2023.12 version:** 8.2204.0-3.amzn2023.0.4
-
-- ** `rtkit` **
-  - **RPM:**  rtkit
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.11-10.amzn2.0.1
-  - **AL2023.12 version:** 0.11-26.amzn2023.0.2
+  - **AL2 version:** 8.24.0-57.amzn2.2.0.3
+  - **AL2023.12 version:** 8.2204.0-3.amzn2023.0.7
 
 - ** `ruby3.2` (`ruby` in AL2) **
   - **RPM:**  ruby3.2 (ruby in AL2)  / **Architectures:** aarch64, x86\_64
@@ -8444,23 +7308,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  ruby3.2-libs (ruby-libs in AL2)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.0.0.648-36.amzn2.0.20
   - **AL2023.12 version:** 3.2.8-184.amzn2023.0.6
-
-- ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
-  - **RPM:**  cargo  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  clippy  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rust-analysis  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rust-analyzer  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rust-debugger-common  / **Architectures:** noarch
-  - **RPM:**  rust-doc  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rustfmt  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rust-gdb  / **Architectures:** noarch
-  - **RPM:**  rust-src  / **Architectures:** noarch
-  - **RPM:**  rust-std-static  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  rust-toolset  / **Architectures:** noarch
-  - **RPM:**  rust-toolset-srpm-macros  / **Architectures:** noarch
-  - **AL2 version:** 1.97.0-2.amzn2
-  - **AL2023.12 version:** 1.97.0-2.amzn2023
 
 - ** `samba` **
   - **RPM:**  libsmbclient  / **Architectures:** aarch64, x86\_64
@@ -8484,8 +7331,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  samba-winbind-clients  / **Architectures:** aarch64, x86\_64
   - **RPM:**  samba-winbind-krb5-locator  / **Architectures:** aarch64, x86\_64
   - **RPM:**  samba-winbind-modules  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 4.10.16-24.amzn2.0.7
-  - **AL2023.12 version:** 4.17.12-1.amzn2023.0.5
+  - **AL2 version:** 4.10.16-24.amzn2.0.9
+  - **AL2023.12 version:** 4.17.12-1.amzn2023.0.7
 
 - ** `sanlock` **
   - **RPM:**  sanlock  / **Architectures:** aarch64, x86\_64
@@ -8506,12 +7353,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.0-5.amzn2.0.1
   - **AL2023.12 version:** 1.4-7.amzn2023.0.2
 
-- ** `sbsigntools` **
-  - **RPM:**  sbsigntools
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.9.4-8.amzn2
-  - **AL2023.12 version:** 0.9.4-8.amzn2023.0.2
-
 - ** `scap-security-guide` **
   - **RPM:**  scap-security-guide  / **Architectures:** noarch
   - **RPM:**  scap-security-guide-doc  / **Architectures:** noarch
@@ -8529,6 +7370,13 @@ The full comparison of RPM package versions is below.
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.5.2-7.amzn2.0.1
   - **AL2023.12 version:** 2.6.1-2.amzn2023.0.2
+
+- ** `seabios` **
+  - **RPM:**  seabios  / **Architectures:** x86\_64
+  - **RPM:**  seabios-bin  / **Architectures:** noarch
+  - **RPM:**  seavgabios-bin  / **Architectures:** noarch
+  - **AL2 version:** 1.11.0-2.amzn2
+  - **AL2023.12 version:** 1.17.0-1.amzn2023
 
 - ** `seahorse` **
   - **RPM:**  seahorse
@@ -8551,7 +7399,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  selinux-policy-sandbox  / **Architectures:** noarch
   - **RPM:**  selinux-policy-targeted  / **Architectures:** noarch
   - **AL2 version:** 3.13.1-192.amzn2.6.8
-  - **AL2023.12 version:** 38.1.76-1.amzn2023.0.2
+  - **AL2023.12 version:** 38.1.76-1.amzn2023.0.3
 
 - ** `sendmail` **
   - **RPM:**  sendmail  / **Architectures:** aarch64, x86\_64
@@ -8572,18 +7420,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 2.8.71-10.amzn2.0.1
   - **AL2023.12 version:** 2.13.7-3.amzn2023.0.2
-
-- ** `sgml-common` **
-  - **RPM:**  sgml-common  / **Architectures:** noarch
-  - **RPM:**  xml-common  / **Architectures:** noarch
-  - **AL2 version:** 0.6.3-39.amzn2
-  - **AL2023.12 version:** 0.6.3-56.amzn2023.0.2
-
-- ** `sgpio` **
-  - **RPM:**  sgpio
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.2.0.10-13.amzn2.0.1
-  - **AL2023.12 version:** 1.2.0.10-28.amzn2023.0.2
 
 - ** `shadow-utils` **
   - **RPM:**  shadow-utils
@@ -8671,12 +7507,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.1.0-2.amzn2.0.2
   - **AL2023.12 version:** 2.6.1-5.amzn2023.4.0.2
 
-- ** `sound-theme-freedesktop` **
-  - **RPM:**  sound-theme-freedesktop
-  - **Architectures:** noarch
-  - **AL2 version:** 0.8-3.amzn2
-  - **AL2023.12 version:** 0.8-22.amzn2023
-
 - ** `source-highlight` **
   - **RPM:**  source-highlight  / **Architectures:** aarch64, x86\_64
   - **RPM:**  source-highlight-devel  / **Architectures:** aarch64, x86\_64
@@ -8732,8 +7562,8 @@ The full comparison of RPM package versions is below.
 - ** `squid` **
   - **RPM:**  squid
   - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.5.20-17.amzn2.7.27
-  - **AL2023.12 version:** 6.13-1.amzn2023.0.5
+  - **AL2 version:** 3.5.20-17.amzn2.7.28
+  - **AL2023.12 version:** 6.13-1.amzn2023.0.6
 
 - ** `sscg` **
   - **RPM:**  sscg
@@ -8779,12 +7609,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.5.2-13.amzn2.0.1
   - **AL2023.12 version:** 1.6-4.amzn2023.0.2
 
-- ** `startup-notification` **
-  - **RPM:**  startup-notification  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  startup-notification-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.12-8.amzn2.0.1
-  - **AL2023.12 version:** 0.12-21.amzn2023.0.2
-
 - ** `strace` **
   - **RPM:**  strace
   - **Architectures:** aarch64, x86\_64
@@ -8795,12 +7619,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  stunnel
   - **Architectures:** aarch64, x86\_64
   - **AL2 version:** 4.56-6.amzn2.0.3
-  - **AL2023.12 version:** 5.58-1.amzn2023.0.2
-
-- ** `stunnel` (`stunnel5` in AL2) **
-  - **RPM:**  stunnel (stunnel5 in AL2)
-  - **Architectures:**
-  - **AL2 version:** 5.58-1.amzn2.0.1
   - **AL2023.12 version:** 5.58-1.amzn2023.0.2
 
 - ** `subversion` **
@@ -8840,12 +7658,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.4-9.amzn2.0.2
   - **AL2023.12 version:** 1.7-4.amzn2023.0.2
 
-- ** `sysctl-defaults` **
-  - **RPM:**  sysctl-defaults
-  - **Architectures:** noarch
-  - **AL2 version:** 1.0-3.amzn2
-  - **AL2023.12 version:** 1.0-3.amzn2023
-
 - ** `sysfsutils` **
   - **RPM:**  libsysfs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libsysfs-devel  / **Architectures:** aarch64, x86\_64
@@ -8874,7 +7686,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  systemd-networkd  / **Architectures:** aarch64, x86\_64
   - **RPM:**  systemd-resolved  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 219-78.amzn2.0.24
-  - **AL2023.12 version:** 252.23-12.amzn2023
+  - **AL2023.12 version:** 252.23-14.amzn2023
 
 - ** `systemtap` **
   - **RPM:**  systemtap  / **Architectures:** aarch64, x86\_64
@@ -8889,14 +7701,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  systemtap-testsuite  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 4.5-1.amzn2.0.3
   - **AL2023.12 version:** 5.4-1.amzn2023.0.2
-
-- ** `t1lib` **
-  - **RPM:**  t1lib  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  t1lib-apps  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  t1lib-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  t1lib-static  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 5.1.2-14.amzn2.0.2
-  - **AL2023.12 version:** 5.1.2-29.amzn2023.0.2
 
 - ** `t1utils` **
   - **RPM:**  t1utils
@@ -8935,12 +7739,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 8.5.13-8.amzn2.0.2
   - **AL2023.12 version:** 8.6.10-5.amzn2023.0.2
 
-- ** `tclx` **
-  - **RPM:**  tclx  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tclx-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 8.4.0-22.amzn2.0.1
-  - **AL2023.12 version:** 8.4.0-37.amzn2023.0.2
-
 - ** `tcpdump` **
   - **RPM:**  tcpdump
   - **Architectures:** aarch64, x86\_64
@@ -8958,12 +7756,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  teckit-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.5.1-11.amzn2.0.2
   - **AL2023.12 version:** 2.5.9-6.amzn2023.0.2
-
-- ** `telnet` **
-  - **RPM:**  telnet  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  telnet-server  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.17-65.amzn2
-  - **AL2023.12 version:** 0.17-83.amzn2023.0.2
 
 - ** `testng` **
   - **RPM:**  testng  / **Architectures:** noarch
@@ -8987,24 +7779,16 @@ The full comparison of RPM package versions is below.
 - ** `texlive` **
   - **RPM:**  texlive-adjustbox  / **Architectures:** noarch
   - **RPM:**  texlive-adjustbox-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-ae  / **Architectures:** noarch
-  - **RPM:**  texlive-ae-doc  / **Architectures:** noarch
   - **RPM:**  texlive-algorithms  / **Architectures:** noarch
   - **RPM:**  texlive-algorithms-doc  / **Architectures:** noarch
   - **RPM:**  texlive-amscls  / **Architectures:** noarch
   - **RPM:**  texlive-amscls-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-amsfonts  / **Architectures:** noarch
-  - **RPM:**  texlive-amsfonts-doc  / **Architectures:** noarch
   - **RPM:**  texlive-amsmath  / **Architectures:** noarch
   - **RPM:**  texlive-amsmath-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-anysize  / **Architectures:** noarch
-  - **RPM:**  texlive-anysize-doc  / **Architectures:** noarch
   - **RPM:**  texlive-appendix  / **Architectures:** noarch
   - **RPM:**  texlive-appendix-doc  / **Architectures:** noarch
   - **RPM:**  texlive-arabxetex  / **Architectures:** noarch
   - **RPM:**  texlive-arabxetex-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-arphic  / **Architectures:** noarch
-  - **RPM:**  texlive-arphic-doc  / **Architectures:** noarch
   - **RPM:**  texlive-attachfile  / **Architectures:** noarch
   - **RPM:**  texlive-attachfile-doc  / **Architectures:** noarch
   - **RPM:**  texlive-avantgar  / **Architectures:** noarch
@@ -9014,12 +7798,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-babel-doc  / **Architectures:** noarch
   - **RPM:**  texlive-beamer  / **Architectures:** noarch
   - **RPM:**  texlive-beamer-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-bera  / **Architectures:** noarch
-  - **RPM:**  texlive-bera-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-beton  / **Architectures:** noarch
-  - **RPM:**  texlive-beton-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-bibtopic  / **Architectures:** noarch
-  - **RPM:**  texlive-bibtopic-doc  / **Architectures:** noarch
   - **RPM:**  texlive-bidi  / **Architectures:** noarch
   - **RPM:**  texlive-bidi-doc  / **Architectures:** noarch
   - **RPM:**  texlive-bigfoot  / **Architectures:** noarch
@@ -9035,10 +7813,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-carlisle-doc  / **Architectures:** noarch
   - **RPM:**  texlive-changebar  / **Architectures:** noarch
   - **RPM:**  texlive-changebar-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-changepage  / **Architectures:** noarch
-  - **RPM:**  texlive-changepage-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-charter  / **Architectures:** noarch
-  - **RPM:**  texlive-charter-doc  / **Architectures:** noarch
   - **RPM:**  texlive-chngcntr  / **Architectures:** noarch
   - **RPM:**  texlive-chngcntr-doc  / **Architectures:** noarch
   - **RPM:**  texlive-cite  / **Architectures:** noarch
@@ -9050,10 +7824,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-cmap-doc  / **Architectures:** noarch
   - **RPM:**  texlive-cm-doc  / **Architectures:** noarch
   - **RPM:**  texlive-cmextra  / **Architectures:** noarch
-  - **RPM:**  texlive-cm-lgc  / **Architectures:** noarch
-  - **RPM:**  texlive-cm-lgc-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-cm-super  / **Architectures:** noarch
-  - **RPM:**  texlive-cm-super-doc  / **Architectures:** noarch
   - **RPM:**  texlive-cns  / **Architectures:** noarch
   - **RPM:**  texlive-cns-doc  / **Architectures:** noarch
   - **RPM:**  texlive-collectbox  / **Architectures:** noarch
@@ -9076,16 +7846,10 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-currfile-doc  / **Architectures:** noarch
   - **RPM:**  texlive-datetime  / **Architectures:** noarch
   - **RPM:**  texlive-datetime-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-ec  / **Architectures:** noarch
-  - **RPM:**  texlive-ec-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-eepic  / **Architectures:** noarch
-  - **RPM:**  texlive-eepic-doc  / **Architectures:** noarch
   - **RPM:**  texlive-enctex  / **Architectures:** noarch
   - **RPM:**  texlive-enctex-doc  / **Architectures:** noarch
   - **RPM:**  texlive-enumitem  / **Architectures:** noarch
   - **RPM:**  texlive-enumitem-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-epsf  / **Architectures:** noarch
-  - **RPM:**  texlive-epsf-doc  / **Architectures:** noarch
   - **RPM:**  texlive-eso-pic  / **Architectures:** noarch
   - **RPM:**  texlive-eso-pic-doc  / **Architectures:** noarch
   - **RPM:**  texlive-etex  / **Architectures:** noarch
@@ -9094,22 +7858,10 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-etex-pkg-doc  / **Architectures:** noarch
   - **RPM:**  texlive-etoolbox  / **Architectures:** noarch
   - **RPM:**  texlive-etoolbox-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-euenc  / **Architectures:** noarch
-  - **RPM:**  texlive-euenc-doc  / **Architectures:** noarch
   - **RPM:**  texlive-euler  / **Architectures:** noarch
   - **RPM:**  texlive-euler-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-euro  / **Architectures:** noarch
-  - **RPM:**  texlive-euro-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-eurosym  / **Architectures:** noarch
-  - **RPM:**  texlive-eurosym-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-extsizes  / **Architectures:** noarch
-  - **RPM:**  texlive-extsizes-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-fancybox  / **Architectures:** noarch
-  - **RPM:**  texlive-fancybox-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fancyhdr  / **Architectures:** noarch
   - **RPM:**  texlive-fancyhdr-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-fancyref  / **Architectures:** noarch
-  - **RPM:**  texlive-fancyref-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fancyvrb  / **Architectures:** noarch
   - **RPM:**  texlive-fancyvrb-doc  / **Architectures:** noarch
   - **RPM:**  texlive-filecontents  / **Architectures:** noarch
@@ -9118,28 +7870,14 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-filehook-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fix2col  / **Architectures:** noarch
   - **RPM:**  texlive-fix2col-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-fixlatvian  / **Architectures:** noarch
-  - **RPM:**  texlive-fixlatvian-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-float  / **Architectures:** noarch
-  - **RPM:**  texlive-float-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fmtcount  / **Architectures:** noarch
   - **RPM:**  texlive-fmtcount-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-fncychap  / **Architectures:** noarch
-  - **RPM:**  texlive-fncychap-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-fontbook  / **Architectures:** noarch
-  - **RPM:**  texlive-fontbook-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fontspec  / **Architectures:** noarch
   - **RPM:**  texlive-fontspec-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-fontwrap  / **Architectures:** noarch
-  - **RPM:**  texlive-fontwrap-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-footmisc  / **Architectures:** noarch
-  - **RPM:**  texlive-footmisc-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fp  / **Architectures:** noarch
   - **RPM:**  texlive-fp-doc  / **Architectures:** noarch
   - **RPM:**  texlive-fpl  / **Architectures:** noarch
   - **RPM:**  texlive-fpl-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-framed  / **Architectures:** noarch
-  - **RPM:**  texlive-framed-doc  / **Architectures:** noarch
   - **RPM:**  texlive-garuda-c90  / **Architectures:** noarch
   - **RPM:**  texlive-geometry  / **Architectures:** noarch
   - **RPM:**  texlive-geometry-doc  / **Architectures:** noarch
@@ -9148,8 +7886,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-helvetic  / **Architectures:** noarch
   - **RPM:**  texlive-hyperref  / **Architectures:** noarch
   - **RPM:**  texlive-hyperref-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-hyphenat  / **Architectures:** noarch
-  - **RPM:**  texlive-hyphenat-doc  / **Architectures:** noarch
   - **RPM:**  texlive-hyphen-base  / **Architectures:** noarch
   - **RPM:**  texlive-hyph-utf8  / **Architectures:** noarch
   - **RPM:**  texlive-hyph-utf8-doc  / **Architectures:** noarch
@@ -9159,12 +7895,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-ifoddpage-doc  / **Architectures:** noarch
   - **RPM:**  texlive-iftex  / **Architectures:** noarch
   - **RPM:**  texlive-iftex-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-index  / **Architectures:** noarch
-  - **RPM:**  texlive-index-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-jknapltx  / **Architectures:** noarch
-  - **RPM:**  texlive-jknapltx-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-kastrup  / **Architectures:** noarch
-  - **RPM:**  texlive-kastrup-doc  / **Architectures:** noarch
   - **RPM:**  texlive-kerkis  / **Architectures:** noarch
   - **RPM:**  texlive-kerkis-doc  / **Architectures:** noarch
   - **RPM:**  texlive-koma-script  / **Architectures:** noarch
@@ -9177,8 +7907,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-lastpage  / **Architectures:** noarch
   - **RPM:**  texlive-lastpage-doc  / **Architectures:** noarch
   - **RPM:**  texlive-latexconfig  / **Architectures:** noarch
-  - **RPM:**  texlive-latex-fonts  / **Architectures:** noarch
-  - **RPM:**  texlive-latex-fonts-doc  / **Architectures:** noarch
   - **RPM:**  texlive-lettrine  / **Architectures:** noarch
   - **RPM:**  texlive-lettrine-doc  / **Architectures:** noarch
   - **RPM:**  texlive-listings  / **Architectures:** noarch
@@ -9187,48 +7915,32 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-lm-doc  / **Architectures:** noarch
   - **RPM:**  texlive-lm-math  / **Architectures:** noarch
   - **RPM:**  texlive-lm-math-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-ltxmisc  / **Architectures:** noarch
   - **RPM:**  texlive-lua-alt-getopt  / **Architectures:** noarch
   - **RPM:**  texlive-lua-alt-getopt-doc  / **Architectures:** noarch
   - **RPM:**  texlive-lualatex-math  / **Architectures:** noarch
   - **RPM:**  texlive-lualatex-math-doc  / **Architectures:** noarch
   - **RPM:**  texlive-luatexbase  / **Architectures:** noarch
   - **RPM:**  texlive-luatexbase-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-makecmds  / **Architectures:** noarch
-  - **RPM:**  texlive-makecmds-doc  / **Architectures:** noarch
   - **RPM:**  texlive-marginnote  / **Architectures:** noarch
   - **RPM:**  texlive-marginnote-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-marvosym  / **Architectures:** noarch
-  - **RPM:**  texlive-marvosym-doc  / **Architectures:** noarch
   - **RPM:**  texlive-mathpazo  / **Architectures:** noarch
   - **RPM:**  texlive-mathpazo-doc  / **Architectures:** noarch
   - **RPM:**  texlive-mathspec  / **Architectures:** noarch
   - **RPM:**  texlive-mathspec-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-mdwtools  / **Architectures:** noarch
-  - **RPM:**  texlive-mdwtools-doc  / **Architectures:** noarch
   - **RPM:**  texlive-memoir  / **Architectures:** noarch
   - **RPM:**  texlive-memoir-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-metalogo  / **Architectures:** noarch
-  - **RPM:**  texlive-metalogo-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-metapost-examples-doc  / **Architectures:** noarch
   - **RPM:**  texlive-mflogo  / **Architectures:** noarch
   - **RPM:**  texlive-mflogo-doc  / **Architectures:** noarch
   - **RPM:**  texlive-mfnfss  / **Architectures:** noarch
   - **RPM:**  texlive-mfnfss-doc  / **Architectures:** noarch
   - **RPM:**  texlive-microtype  / **Architectures:** noarch
   - **RPM:**  texlive-microtype-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-mnsymbol  / **Architectures:** noarch
-  - **RPM:**  texlive-mnsymbol-doc  / **Architectures:** noarch
   - **RPM:**  texlive-mparhack  / **Architectures:** noarch
   - **RPM:**  texlive-mparhack-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ms  / **Architectures:** noarch
   - **RPM:**  texlive-ms-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-multido  / **Architectures:** noarch
-  - **RPM:**  texlive-multido-doc  / **Architectures:** noarch
   - **RPM:**  texlive-multirow  / **Architectures:** noarch
   - **RPM:**  texlive-multirow-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-natbib  / **Architectures:** noarch
-  - **RPM:**  texlive-natbib-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ncctools  / **Architectures:** noarch
   - **RPM:**  texlive-ncctools-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ncntrsbk  / **Architectures:** noarch
@@ -9240,19 +7952,14 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-palatino  / **Architectures:** noarch
   - **RPM:**  texlive-paralist  / **Architectures:** noarch
   - **RPM:**  texlive-paralist-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-parallel  / **Architectures:** noarch
-  - **RPM:**  texlive-parallel-doc  / **Architectures:** noarch
   - **RPM:**  texlive-parskip  / **Architectures:** noarch
   - **RPM:**  texlive-parskip-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-passivetex  / **Architectures:** noarch
   - **RPM:**  texlive-pdfpages  / **Architectures:** noarch
   - **RPM:**  texlive-pdfpages-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pgf  / **Architectures:** noarch
   - **RPM:**  texlive-pgf-doc  / **Architectures:** noarch
   - **RPM:**  texlive-philokalia  / **Architectures:** noarch
   - **RPM:**  texlive-philokalia-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-placeins  / **Architectures:** noarch
-  - **RPM:**  texlive-placeins-doc  / **Architectures:** noarch
   - **RPM:**  texlive-plain  / **Architectures:** noarch
   - **RPM:**  texlive-polyglossia  / **Architectures:** noarch
   - **RPM:**  texlive-polyglossia-doc  / **Architectures:** noarch
@@ -9260,25 +7967,11 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-powerdot-doc  / **Architectures:** noarch
   - **RPM:**  texlive-preprint  / **Architectures:** noarch
   - **RPM:**  texlive-preprint-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-psfrag  / **Architectures:** noarch
-  - **RPM:**  texlive-psfrag-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pslatex  / **Architectures:** noarch
   - **RPM:**  texlive-psnfss  / **Architectures:** noarch
   - **RPM:**  texlive-psnfss-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pspicture  / **Architectures:** noarch
-  - **RPM:**  texlive-pspicture-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-3d  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-3d-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-blur  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-blur-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pst-coil  / **Architectures:** noarch
   - **RPM:**  texlive-pst-coil-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-eps  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-eps-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-fill  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-fill-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-grad  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-grad-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pst-math  / **Architectures:** noarch
   - **RPM:**  texlive-pst-math-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pst-node  / **Architectures:** noarch
@@ -9289,49 +7982,21 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-pstricks-add  / **Architectures:** noarch
   - **RPM:**  texlive-pstricks-add-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pstricks-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-slpe  / **Architectures:** noarch
-  - **RPM:**  texlive-pst-slpe-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pst-text  / **Architectures:** noarch
   - **RPM:**  texlive-pst-text-doc  / **Architectures:** noarch
   - **RPM:**  texlive-pst-tree  / **Architectures:** noarch
   - **RPM:**  texlive-pst-tree-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ptext  / **Architectures:** noarch
   - **RPM:**  texlive-ptext-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-pxfonts  / **Architectures:** noarch
-  - **RPM:**  texlive-pxfonts-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-qstest  / **Architectures:** noarch
-  - **RPM:**  texlive-qstest-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-rcs  / **Architectures:** noarch
-  - **RPM:**  texlive-rcs-doc  / **Architectures:** noarch
   - **RPM:**  texlive-realscripts  / **Architectures:** noarch
   - **RPM:**  texlive-realscripts-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-rsfs  / **Architectures:** noarch
-  - **RPM:**  texlive-rsfs-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-sansmath  / **Architectures:** noarch
-  - **RPM:**  texlive-sansmath-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-sauerj  / **Architectures:** noarch
-  - **RPM:**  texlive-sauerj-doc  / **Architectures:** noarch
   - **RPM:**  texlive-scheme-basic  / **Architectures:** noarch
-  - **RPM:**  texlive-section  / **Architectures:** noarch
-  - **RPM:**  texlive-section-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-sectsty  / **Architectures:** noarch
-  - **RPM:**  texlive-sectsty-doc  / **Architectures:** noarch
   - **RPM:**  texlive-seminar  / **Architectures:** noarch
   - **RPM:**  texlive-seminar-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-sepnum  / **Architectures:** noarch
-  - **RPM:**  texlive-sepnum-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-setspace  / **Architectures:** noarch
-  - **RPM:**  texlive-setspace-doc  / **Architectures:** noarch
   - **RPM:**  texlive-showexpl  / **Architectures:** noarch
   - **RPM:**  texlive-showexpl-doc  / **Architectures:** noarch
   - **RPM:**  texlive-soul  / **Architectures:** noarch
   - **RPM:**  texlive-soul-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-stmaryrd  / **Architectures:** noarch
-  - **RPM:**  texlive-stmaryrd-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-subfig  / **Architectures:** noarch
-  - **RPM:**  texlive-subfig-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-subfigure  / **Architectures:** noarch
-  - **RPM:**  texlive-subfigure-doc  / **Architectures:** noarch
   - **RPM:**  texlive-svn-prov  / **Architectures:** noarch
   - **RPM:**  texlive-svn-prov-doc  / **Architectures:** noarch
   - **RPM:**  texlive-symbol  / **Architectures:** noarch
@@ -9345,61 +8010,33 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-textcase-doc  / **Architectures:** noarch
   - **RPM:**  texlive-textpos  / **Architectures:** noarch
   - **RPM:**  texlive-textpos-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-threeparttable  / **Architectures:** noarch
-  - **RPM:**  texlive-threeparttable-doc  / **Architectures:** noarch
   - **RPM:**  texlive-times  / **Architectures:** noarch
-  - **RPM:**  texlive-tipa  / **Architectures:** noarch
-  - **RPM:**  texlive-tipa-doc  / **Architectures:** noarch
   - **RPM:**  texlive-titlesec  / **Architectures:** noarch
   - **RPM:**  texlive-titlesec-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-titling  / **Architectures:** noarch
-  - **RPM:**  texlive-titling-doc  / **Architectures:** noarch
   - **RPM:**  texlive-tocloft  / **Architectures:** noarch
   - **RPM:**  texlive-tocloft-doc  / **Architectures:** noarch
   - **RPM:**  texlive-tools  / **Architectures:** noarch
   - **RPM:**  texlive-tools-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-txfonts  / **Architectures:** noarch
-  - **RPM:**  texlive-txfonts-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-type1cm  / **Architectures:** noarch
-  - **RPM:**  texlive-type1cm-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-typehtml  / **Architectures:** noarch
-  - **RPM:**  texlive-typehtml-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ucharclasses  / **Architectures:** noarch
   - **RPM:**  texlive-ucharclasses-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ucs  / **Architectures:** noarch
   - **RPM:**  texlive-ucs-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-uhc  / **Architectures:** noarch
-  - **RPM:**  texlive-uhc-doc  / **Architectures:** noarch
   - **RPM:**  texlive-ulem  / **Architectures:** noarch
   - **RPM:**  texlive-ulem-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-underscore  / **Architectures:** noarch
-  - **RPM:**  texlive-underscore-doc  / **Architectures:** noarch
   - **RPM:**  texlive-unicode-math  / **Architectures:** noarch
   - **RPM:**  texlive-unicode-math-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-unisugar  / **Architectures:** noarch
-  - **RPM:**  texlive-unisugar-doc  / **Architectures:** noarch
   - **RPM:**  texlive-url  / **Architectures:** noarch
   - **RPM:**  texlive-url-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-utopia  / **Architectures:** noarch
-  - **RPM:**  texlive-utopia-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-varwidth  / **Architectures:** noarch
-  - **RPM:**  texlive-varwidth-doc  / **Architectures:** noarch
   - **RPM:**  texlive-wadalab  / **Architectures:** noarch
   - **RPM:**  texlive-wadalab-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-was  / **Architectures:** noarch
-  - **RPM:**  texlive-was-doc  / **Architectures:** noarch
   - **RPM:**  texlive-wasy  / **Architectures:** noarch
   - **RPM:**  texlive-wasy-doc  / **Architectures:** noarch
   - **RPM:**  texlive-wasysym  / **Architectures:** noarch
   - **RPM:**  texlive-wasysym-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-wrapfig  / **Architectures:** noarch
-  - **RPM:**  texlive-wrapfig-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xcolor  / **Architectures:** noarch
   - **RPM:**  texlive-xcolor-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xecjk  / **Architectures:** noarch
   - **RPM:**  texlive-xecjk-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-xecolor  / **Architectures:** noarch
-  - **RPM:**  texlive-xecolor-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xecyr  / **Architectures:** noarch
   - **RPM:**  texlive-xecyr-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xeindex  / **Architectures:** noarch
@@ -9409,14 +8046,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-xesearch  / **Architectures:** noarch
   - **RPM:**  texlive-xesearch-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xetexconfig  / **Architectures:** noarch
-  - **RPM:**  texlive-xetexfontinfo  / **Architectures:** noarch
-  - **RPM:**  texlive-xetexfontinfo-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xetex-itrans  / **Architectures:** noarch
   - **RPM:**  texlive-xetex-itrans-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-xetex-pstricks  / **Architectures:** noarch
-  - **RPM:**  texlive-xetex-pstricks-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-xetex-tibetan  / **Architectures:** noarch
-  - **RPM:**  texlive-xetex-tibetan-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xifthen  / **Architectures:** noarch
   - **RPM:**  texlive-xifthen-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xkeyval  / **Architectures:** noarch
@@ -9425,20 +8056,12 @@ The full comparison of RPM package versions is below.
   - **RPM:**  texlive-xltxtra-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xstring  / **Architectures:** noarch
   - **RPM:**  texlive-xstring-doc  / **Architectures:** noarch
-  - **RPM:**  texlive-xtab  / **Architectures:** noarch
-  - **RPM:**  texlive-xtab-doc  / **Architectures:** noarch
   - **RPM:**  texlive-xunicode  / **Architectures:** noarch
   - **RPM:**  texlive-xunicode-doc  / **Architectures:** noarch
   - **RPM:**  texlive-zapfchan  / **Architectures:** noarch
   - **RPM:**  texlive-zapfding  / **Architectures:** noarch
   - **AL2 version:** svn26555.0-38.amzn2.0.5
   - **AL2023.12 version:** svn56291-59.amzn2023.0.2
-
-- ** `tftp` **
-  - **RPM:**  tftp  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tftp-server  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 5.2-22.amzn2
-  - **AL2023.12 version:** 5.2-42.amzn2023.0.1
 
 - ** `thai-scalable-fonts` **
   - **RPM:**  thai-scalable-fonts-common  / **Architectures:** noarch
@@ -9473,13 +8096,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.7-45.amzn2.0.2
   - **AL2023.12 version:** 1.9-16.amzn2023.0.2
 
-- ** `tix` **
-  - **RPM:**  tix  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tix-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tix-doc  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 8.4.3-12.amzn2.0.2
-  - **AL2023.12 version:** 8.4.3-31.amzn2023.0.2
-
 - ** `tk` **
   - **RPM:**  tk  / **Architectures:** aarch64, x86\_64
   - **RPM:**  tk-devel  / **Architectures:** aarch64, x86\_64
@@ -9492,13 +8108,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.8-4.amzn2.0.1
   - **AL2023.12 version:** 3.6a-1.amzn2023.0.1
 
-- ** `tokyocabinet` **
-  - **RPM:**  tokyocabinet  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tokyocabinet-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tokyocabinet-devel-doc  / **Architectures:** noarch
-  - **AL2 version:** 1.4.48-3.amzn2.0.2
-  - **AL2023.12 version:** 1.4.48-17.amzn2023.0.2
-
 - ** `tomcat9` (`tomcat` in AL2) **
   - **RPM:**  tomcat9 (tomcat in AL2)  / **Architectures:** noarch
   - **RPM:**  tomcat9-admin-webapps (tomcat-admin-webapps in AL2)  / **Architectures:** noarch
@@ -9506,7 +8115,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  tomcat9-lib (tomcat-lib in AL2)  / **Architectures:** noarch
   - **RPM:**  tomcat9-webapps (tomcat-webapps in AL2)  / **Architectures:** noarch
   - **AL2 version:** 7.0.76-10.amzn2.0.17
-  - **AL2023.12 version:** 9.0.120-1.amzn2023.0.1
+  - **AL2023.12 version:** 9.0.121-1.amzn2023.0.1
 
 - ** `tpm2-abrmd` **
   - **RPM:**  tpm2-abrmd  / **Architectures:** x86\_64
@@ -9544,12 +8153,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.10.5-6.amzn2.0.1
   - **AL2023.12 version:** 3.7.3-3.amzn2023.0.1
 
-- ** `transfig` **
-  - **RPM:**  transfig
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.2.8b-7.amzn2
-  - **AL2023.12 version:** 3.2.8b-4.amzn2023.0.2
-
 - ** `tree` **
   - **RPM:**  tree
   - **Architectures:** aarch64, x86\_64
@@ -9562,18 +8165,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  trousers-static  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.3.14-2.amzn2.0.2
   - **AL2023.12 version:** 0.3.15-2.amzn2023.0.2
-
-- ** `ttembed` **
-  - **RPM:**  ttembed
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.1-8.amzn2.0.1
-  - **AL2023.12 version:** 1.1-15.amzn2023.0.2
-
-- ** `ttmkfdir` **
-  - **RPM:**  ttmkfdir
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.0.9-42.amzn2.0.2
-  - **AL2023.12 version:** 3.0.9-63.amzn2023.0.2
 
 - ** `tuna` **
   - **RPM:**  tuna
@@ -9598,18 +8189,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.8.0-5.amzn2.0.1
   - **AL2023.12 version:** 2.25.1-2.amzn2023.0.2
 
-- ** `tzdata` **
-  - **RPM:**  tzdata  / **Architectures:** noarch
-  - **RPM:**  tzdata-java  / **Architectures:** noarch
-  - **AL2 version:** 2026c-1.amzn2.0.1
-  - **AL2023.12 version:** 2026c-1.amzn2023.0.1
-
-- ** `ucs-miscfixed-fonts` **
-  - **RPM:**  ucs-miscfixed-fonts
-  - **Architectures:** noarch
-  - **AL2 version:** 0.3-11.amzn2
-  - **AL2023.12 version:** 0.3-26.amzn2023.0.2
-
 - ** `udisks2` **
   - **RPM:**  libudisks2  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libudisks2-devel  / **Architectures:** aarch64, x86\_64
@@ -9617,15 +8196,15 @@ The full comparison of RPM package versions is below.
   - **RPM:**  udisks2-lsm  / **Architectures:** aarch64, x86\_64
   - **RPM:**  udisks2-lvm2  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.7.3-9.amzn2.0.4
-  - **AL2023.12 version:** 2.10.1-6.amzn2023.0.3
+  - **AL2023.12 version:** 2.10.1-6.amzn2023.0.4
 
 - ** `unbound` **
   - **RPM:**  python3-unbound  / **Architectures:** aarch64, x86\_64
   - **RPM:**  unbound  / **Architectures:** aarch64, x86\_64
   - **RPM:**  unbound-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  unbound-libs  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.7.3-15.amzn2.0.15
-  - **AL2023.12 version:** 1.17.1-1.amzn2023.0.13
+  - **AL2 version:** 1.7.3-15.amzn2.0.17
+  - **AL2023.12 version:** 1.17.1-1.amzn2023.0.15
 
 - ** `unicode-ucd` **
   - **RPM:**  unicode-ucd
@@ -9639,17 +8218,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.3.1-15.amzn2
   - **AL2023.12 version:** 2.3.9-3.amzn2023.0.3
 
-- ** `unzip` **
-  - **RPM:**  unzip
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 6.0-57.amzn2.0.2
-  - **AL2023.12 version:** 6.0-68.amzn2023.0.2
-
 - ** `update-motd` **
   - **RPM:**  update-motd
   - **Architectures:** noarch
   - **AL2 version:** 1.1.2-2.amzn2.0.2
-  - **AL2023.12 version:** 2.3-1.amzn2023
+  - **AL2023.12 version:** 2.3-1.amzn2023.0.1
 
 - ** `upower` **
   - **RPM:**  upower  / **Architectures:** aarch64, x86\_64
@@ -9657,12 +8230,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  upower-devel-docs  / **Architectures:** noarch
   - **AL2 version:** 0.99.7-1.amzn2
   - **AL2023.12 version:** 1.90.6-139.amzn2023
-
-- ** `urlview` **
-  - **RPM:**  urlview
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.9-15.20121210git6cfcad.amzn2.0.2
-  - **AL2023.12 version:** 0.9-32.20131022git08767a.amzn2023
 
 - ** `urw-base35-fonts` **
   - **RPM:**  urw-base35-bookman-fonts  / **Architectures:** noarch
@@ -9712,17 +8279,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 2.30.2-2.amzn2.0.14
   - **AL2023.12 version:** 2.37.4-1.amzn2023.0.6
 
-- ** `uuid` **
-  - **RPM:**  uuid  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  uuid-c\+\+  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  uuid-c\+\+-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  uuid-dce  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  uuid-dce-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  uuid-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  uuid-perl  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.6.2-26.amzn2.0.1
-  - **AL2023.12 version:** 1.6.2-50.amzn2023.0.2
-
 - ** `v4l-utils` **
   - **RPM:**  libv4l  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libv4l-devel  / **Architectures:** aarch64, x86\_64
@@ -9739,18 +8295,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.40.8-1.amzn2
   - **AL2023.12 version:** 0.56.17-1.amzn2023.0.1
 
-- ** `valgrind` **
-  - **RPM:**  valgrind  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  valgrind-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.19.0-1.amzn2.0.1
-  - **AL2023.12 version:** 3.19.0-1.amzn2023.0.2
-
-- ** `velocity` **
-  - **RPM:**  velocity  / **Architectures:** noarch
-  - **RPM:**  velocity-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.7-10.2.amzn2
-  - **AL2023.12 version:** 1.7-38.amzn2023.0.3
-
 - ** `vim` **
   - **RPM:**  vim-common  / **Architectures:** aarch64, x86\_64
   - **RPM:**  vim-data  / **Architectures:** noarch
@@ -9758,8 +8302,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  vim-filesystem  / **Architectures:** noarch
   - **RPM:**  vim-minimal  / **Architectures:** aarch64, x86\_64
   - **RPM:**  xxd  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 9.0.2153-1.amzn2.0.9
-  - **AL2023.12 version:** 9.2.780-1.amzn2023.0.1
+  - **AL2 version:** 9.0.2153-1.amzn2.0.11
+  - **AL2023.12 version:** 9.2.920-1.amzn2023.0.1
 
 - ** `virt-what` **
   - **RPM:**  virt-what
@@ -9848,20 +8392,8 @@ The full comparison of RPM package versions is below.
 - ** `wireshark` **
   - **RPM:**  wireshark-cli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  wireshark-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.6.2-15.amzn2.0.10
-  - **AL2023.12 version:** 4.6.6-1.amzn2023.0.1
-
-- ** `words` **
-  - **RPM:**  words
-  - **Architectures:** noarch
-  - **AL2 version:** 3.0-22.amzn2
-  - **AL2023.12 version:** 3.0-37.amzn2023.0.2
-
-- ** `wsdl4j` **
-  - **RPM:**  wsdl4j  / **Architectures:** noarch
-  - **RPM:**  wsdl4j-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.6.3-3.1.amzn2
-  - **AL2023.12 version:** 1.6.3-24.amzn2023.0.1
+  - **AL2 version:** 2.6.2-15.amzn2.0.11
+  - **AL2023.12 version:** 4.6.8-1.amzn2023.0.1
 
 - ** `xalan-j2` **
   - **RPM:**  xalan-j2  / **Architectures:** noarch
@@ -9967,36 +8499,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 5.0.0-10.amzn2.0.1
   - **AL2023.12 version:** 6.12.0-3.amzn2023.0.1
 
-- ** `xhtml1-dtds` **
-  - **RPM:**  xhtml1-dtds
-  - **Architectures:** noarch
-  - **AL2 version:** 1.0-20020801.11.amzn2
-  - **AL2023.12 version:** 1.0-20020801.15.amzn2023.0.2
-
-- ** `xhtml2fo-style-xsl` **
-  - **RPM:**  xhtml2fo-style-xsl
-  - **Architectures:** noarch
-  - **AL2 version:** 20051222-9.amzn2
-  - **AL2023.12 version:** 20051222-24.amzn2023.0.2
-
 - ** `xkeyboard-config` **
   - **RPM:**  xkeyboard-config  / **Architectures:** noarch
   - **RPM:**  xkeyboard-config-devel  / **Architectures:** noarch
   - **AL2 version:** 2.20-1.amzn2
   - **AL2023.12 version:** 2.41-1.amzn2023.0.1
-
-- ** `xml-commons-apis` **
-  - **RPM:**  xml-commons-apis  / **Architectures:** noarch
-  - **RPM:**  xml-commons-apis-javadoc  / **Architectures:** noarch
-  - **RPM:**  xml-commons-apis-manual  / **Architectures:** noarch
-  - **AL2 version:** 1.4.01-16.amzn2
-  - **AL2023.12 version:** 1.4.01-38.amzn2023.0.1
-
-- ** `xml-commons-resolver` **
-  - **RPM:**  xml-commons-resolver  / **Architectures:** noarch
-  - **RPM:**  xml-commons-resolver-javadoc  / **Architectures:** noarch
-  - **AL2 version:** 1.2-15.amzn2
-  - **AL2023.12 version:** 1.2-37.amzn2023.0.1
 
 - ** `xmlgraphics-commons` **
   - **RPM:**  xmlgraphics-commons  / **Architectures:** noarch
@@ -10029,12 +8536,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.0.25-7.amzn2.0.2
   - **AL2023.12 version:** 0.0.28-15.amzn2023.0.2
 
-- ** `xmltoman` **
-  - **RPM:**  xmltoman
-  - **Architectures:** noarch
-  - **AL2 version:** 0.4-9.amzn2
-  - **AL2023.12 version:** 0.4-23.amzn2023.0.2
-
 - ** `xmlunit` **
   - **RPM:**  xmlunit  / **Architectures:** noarch
   - **RPM:**  xmlunit-javadoc  / **Architectures:** noarch
@@ -10059,32 +8560,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.27.1-2.amzn2.0.1
   - **AL2023.12 version:** 1.4.0-2.amzn2023.0.1
 
-- ** `xorg-x11-fonts` **
-  - **RPM:**  xorg-x11-fonts-100dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-75dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-cyrillic  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ethiopic  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-1-100dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-14-100dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-14-75dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-15-100dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-15-75dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-1-75dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-2-100dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-2-75dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-9-100dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-ISO8859-9-75dpi  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-misc  / **Architectures:** noarch
-  - **RPM:**  xorg-x11-fonts-Type1  / **Architectures:** noarch
-  - **AL2 version:** 7.5-9.amzn2
-  - **AL2023.12 version:** 7.5-38.amzn2023.0.1
-
-- ** `xorg-x11-font-utils` **
-  - **RPM:**  xorg-x11-font-utils
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 7.5-21.amzn2
-  - **AL2023.12 version:** 7.5-59.amzn2023.0.1
-
 - ** `xorg-x11-proto-devel` **
   - **RPM:**  xorg-x11-proto-devel
   - **Architectures:** noarch
@@ -10103,23 +8578,11 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 1.20.4-22.amzn2.0.13
   - **AL2023.12 version:** 21.1.13-5.amzn2023.0.11
 
-- ** `xorg-x11-server-utils` **
-  - **RPM:**  xorg-x11-server-utils
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 7.7-20.amzn2.0.2
-  - **AL2023.12 version:** 7.7-39.amzn2023.0.2
-
 - ** `xorg-x11-util-macros` **
   - **RPM:**  xorg-x11-util-macros
   - **Architectures:** noarch
   - **AL2 version:** 1.19.0-3.amzn2
   - **AL2023.12 version:** 1.20.0-4.amzn2023.0.1
-
-- ** `xorg-x11-utils` **
-  - **RPM:**  xorg-x11-utils
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 7.5-23.amzn2
-  - **AL2023.12 version:** 7.5-38.amzn2023.0.2
 
 - ** `xorg-x11-xauth` **
   - **RPM:**  xorg-x11-xauth
@@ -10189,12 +8652,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 3.28.1-1.amzn2
   - **AL2023.12 version:** 4.0.5-1.amzn2023
 
-- ** `zip` **
-  - **RPM:**  zip
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 3.0-11.amzn2.0.2
-  - **AL2023.12 version:** 3.0-28.amzn2023.0.3
-
 - ** `zlib` **
   - **RPM:**  zlib  / **Architectures:** aarch64, x86\_64
   - **RPM:**  zlib-devel  / **Architectures:** aarch64, x86\_64
@@ -10207,14 +8664,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  zsh-html  / **Architectures:** noarch
   - **AL2 version:** 5.8.1-1.amzn2.0.1
   - **AL2023.12 version:** 5.9-12.amzn2023
-
-- ** `zstd` **
-  - **RPM:**  libzstd  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libzstd-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libzstd-static  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  zstd  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.5.5-1.amzn2.0.1
-  - **AL2023.12 version:** 1.5.5-1.amzn2023.0.1
 
 - ** `zziplib` **
   - **RPM:**  zziplib  / **Architectures:** aarch64, x86\_64
@@ -10230,7 +8679,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  awscli-2 (awscli in AL2)
   - **Architectures:**
   - **AL2 version:** 1.27.51-1.amzn2.0.1
-  - **AL2023.12 version:** 2.33.15-1.amzn2023.0.1
+  - **AL2023.12 version:** 2.36.47-4.amzn2023.0.1
 
 - ** `pyproject-rpm-macros` **
   - **RPM:**  pyproject-rpm-macros
@@ -10260,12 +8709,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  bcc-tools  / **Architectures:**
   - **AL2 version:** 0.10.0-1.amzn2.0.1
   - **AL2023.12 version:** 0.35.0-4.amzn2023.0.2
-
-- ** `luajit` **
-  - **RPM:**  luajit  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  luajit-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.1.0-0.9beta3.amzn2
-  - **AL2023.12 version:** 2.1.0-0.19beta3.amzn2023.0.2
 
 ## selinux-ng AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-selinux-ng"></a>
@@ -10314,7 +8757,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  selinux-policy-sandbox  / **Architectures:**
   - **RPM:**  selinux-policy-targeted  / **Architectures:**
   - **AL2 version:** 3.13.1-268.amzn2.2.2
-  - **AL2023.12 version:** 38.1.76-1.amzn2023.0.2
+  - **AL2023.12 version:** 38.1.76-1.amzn2023.0.3
 
 - ** `setools` **
   - **RPM:**  setools  / **Architectures:**
@@ -10327,7 +8770,7 @@ The full comparison of RPM package versions is below.
 
 - ** `checksec` **
   - **RPM:**  checksec
-  - **Architectures:**
+  - **Architectures:** noarch
   - **AL2 version:** 1.7.4-4.amzn2.0.1
   - **AL2023.12 version:** 2.4.0-2.amzn2023.0.2
 
@@ -10360,7 +8803,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  libgit2  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libgit2-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 0.28.4-1.amzn2.0.1
-  - **AL2023.12 version:** 1.6.4-115.amzn2023.0.2
+  - **AL2023.12 version:** 1.6.4-116.amzn2023
 
 - ** [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (`llvm3.9` in AL2) **
   - **RPM:**  [`llvm`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html) (llvm3.9 in AL2)  / **Architectures:**
@@ -10380,27 +8823,18 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 15.0.7-3.amzn2023.0.1
 
 - ** [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
-  - **RPM:**  cargo  / **Architectures:**
-  - **RPM:**  clippy  / **Architectures:**
-  - **RPM:**  [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:**
-  - **RPM:**  rust-analysis  / **Architectures:**
-  - **RPM:**  rust-debugger-common  / **Architectures:**
-  - **RPM:**  rust-doc  / **Architectures:**
-  - **RPM:**  rustfmt  / **Architectures:**
-  - **RPM:**  rust-gdb  / **Architectures:**
-  - **RPM:**  rust-src  / **Architectures:**
-  - **RPM:**  rust-std-static  / **Architectures:**
+  - **RPM:**  cargo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  clippy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [`rust`](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-analysis  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-debugger-common  / **Architectures:** noarch
+  - **RPM:**  rust-doc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rustfmt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-gdb  / **Architectures:** noarch
+  - **RPM:**  rust-src  / **Architectures:** noarch
+  - **RPM:**  rust-std-static  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 1.47.0-1.amzn2.0.1
-  - **AL2023.12 version:** 1.97.0-2.amzn2023
-
-## dnsmasq AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-dnsmasq"></a>
-
-- ** `dnsmasq` **
-  - **RPM:**  dnsmasq  / **Architectures:**
-  - **RPM:**  dnsmasq-utils  / **Architectures:**
-  - **AL2 version:** 2.90-1.amzn2.0.3
-  - **AL2023.12 version:** 2.90-1.amzn2023.0.3
+  - **AL2023.12 version:** 1.98.0-1.amzn2023
 
 ## dnsmasq2.85 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-dnsmasq2.85"></a>
@@ -10415,16 +8849,16 @@ The full comparison of RPM package versions is below.
 <a name="vercmp-AL2023.12-AL2-ex2-golang1.11"></a>
 
 - ** [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
-  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:**
-  - **RPM:**  golang-bin  / **Architectures:**
-  - **RPM:**  golang-docs  / **Architectures:**
-  - **RPM:**  golang-misc  / **Architectures:**
+  - **RPM:**  [`golang`](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  golang-docs  / **Architectures:** noarch
+  - **RPM:**  golang-misc  / **Architectures:** noarch
   - **RPM:**  golang-race  / **Architectures:**
-  - **RPM:**  golang-shared  / **Architectures:**
-  - **RPM:**  golang-src  / **Architectures:**
-  - **RPM:**  golang-tests  / **Architectures:**
+  - **RPM:**  golang-shared  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  golang-src  / **Architectures:** noarch
+  - **RPM:**  golang-tests  / **Architectures:** noarch
   - **AL2 version:** 1.11.13-2.amzn2.0.1
-  - **AL2023.12 version:** 1.25.12-1.amzn2023.0.1
+  - **AL2023.12 version:** 1.26.8-1.amzn2023.0.1
 
 ## golang1.19 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-golang1.19"></a>
@@ -10439,7 +8873,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  golang-src  / **Architectures:**
   - **RPM:**  golang-tests  / **Architectures:**
   - **AL2 version:** 1.19.10-1.amzn2.0.2
-  - **AL2023.12 version:** 1.25.12-1.amzn2023.0.1
+  - **AL2023.12 version:** 1.26.8-1.amzn2023.0.1
 
 ## kernel-5.10 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-kernel-5.10"></a>
@@ -10459,8 +8893,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kernel-tools  / **Architectures:**
   - **RPM:**  kernel-tools-devel  / **Architectures:**
   - **RPM:**  perf  / **Architectures:**
-  - **AL2 version:** 5.10.262-262.1063.amzn2
-  - **AL2023.12 version:** 6.1.180-225.360.amzn2023
+  - **AL2 version:** 5.10.269-270.1108.amzn2
+  - **AL2023.12 version:** 6.1.188-233.386.amzn2023
 
 ## kernel-5.15 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-kernel-5.15"></a>
@@ -10473,8 +8907,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kernel-tools  / **Architectures:**
   - **RPM:**  kernel-tools-devel  / **Architectures:**
   - **RPM:**  perf  / **Architectures:**
-  - **AL2 version:** 5.15.213-150.251.amzn2
-  - **AL2023.12 version:** 6.1.180-225.360.amzn2023
+  - **AL2 version:** 5.15.220-156.256.amzn2
+  - **AL2023.12 version:** 6.1.188-233.386.amzn2023
 
 ## kernel-5.4 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-kernel-5.4"></a>
@@ -10487,8 +8921,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kernel-tools  / **Architectures:**
   - **RPM:**  kernel-tools-devel  / **Architectures:**
   - **RPM:**  perf  / **Architectures:**
-  - **AL2 version:** 5.4.302-226.485.amzn2
-  - **AL2023.12 version:** 6.1.180-225.360.amzn2023
+  - **AL2 version:** 5.4.302-229.498.amzn2
+  - **AL2023.12 version:** 6.1.188-233.386.amzn2023
 
 ## kernel-ng AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-kernel-ng"></a>
@@ -10502,34 +8936,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  kernel-tools-devel  / **Architectures:**
   - **RPM:**  perf  / **Architectures:**
   - **AL2 version:** 5.10.130-118.517.amzn2
-  - **AL2023.12 version:** 6.1.180-225.360.amzn2023
-
-## mate-desktop1.x AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-mate-desktop1.x"></a>
-
-- ** `fdupes` **
-  - **RPM:**  fdupes
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.3.0-1.amzn2
-  - **AL2023.12 version:** 2.3.0-1.amzn2023
-
-- ** `libdbusmenu` **
-  - **RPM:**  libdbusmenu  / **Architectures:**
-  - **RPM:**  libdbusmenu-devel  / **Architectures:**
-  - **RPM:**  libdbusmenu-doc  / **Architectures:**
-  - **RPM:**  libdbusmenu-gtk3  / **Architectures:**
-  - **RPM:**  libdbusmenu-gtk3-devel  / **Architectures:**
-  - **RPM:**  libdbusmenu-jsonloader  / **Architectures:**
-  - **RPM:**  libdbusmenu-jsonloader-devel  / **Architectures:**
-  - **RPM:**  libdbusmenu-tools  / **Architectures:**
-  - **AL2 version:** 16.04.0-16.amzn2
-  - **AL2023.12 version:** 16.04.0-27.amzn2023.0.1
-
-- ** `libXpresent` **
-  - **RPM:**  libXpresent  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libXpresent-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.0-12.amzn2
-  - **AL2023.12 version:** 1.0.0-27.amzn2023
+  - **AL2023.12 version:** 6.1.188-233.386.amzn2023
 
 ## php7.2 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php7.2"></a>
@@ -10572,14 +8979,14 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 8.2.33-1.amzn2023.0.1
 
 - ** `php8.2-pecl-apcu` (`php-pecl-apcu` in AL2) **
-  - **RPM:**  php8.2-pecl-apcu (php-pecl-apcu in AL2)
-  - **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pecl-apcu (php-pecl-apcu in AL2)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pecl-apcu-devel (php-pecl-apcu-devel in AL2)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 5.1.12-3.amzn2.0.1
   - **AL2023.12 version:** 5.1.24-3.amzn2023.0.1
 
 - ** `php8.2-pecl-igbinary` (`php-pecl-igbinary` in AL2) **
-  - **RPM:**  php8.2-pecl-igbinary (php-pecl-igbinary in AL2)
-  - **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pecl-igbinary (php-pecl-igbinary in AL2)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pecl-igbinary-devel (php-pecl-igbinary-devel in AL2)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.0.7-3.amzn2.0.1
   - **AL2023.12 version:** 3.2.16-4.amzn2023.0.1
 
@@ -10590,8 +8997,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 3.4.0-1.amzn2023.0.1
 
 - ** `php8.2-pecl-msgpack` (`php-pecl-msgpack` in AL2) **
-  - **RPM:**  php8.2-pecl-msgpack (php-pecl-msgpack in AL2)
-  - **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pecl-msgpack (php-pecl-msgpack in AL2)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pecl-msgpack-devel (php-pecl-msgpack-devel in AL2)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 2.0.2-3.amzn2.0.1
   - **AL2023.12 version:** 3.0.0-3.amzn2023.0.1
 
@@ -10609,12 +9016,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  jemalloc-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.6.0-1.amzn2.0.1
   - **AL2023.12 version:** 5.2.1-7.amzn2023
-
-- ** `Judy` **
-  - **RPM:**  Judy  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  Judy-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.0.5-8.amzn2.0.1
-  - **AL2023.12 version:** 1.0.5-25.amzn2023.0.3
 
 - ** `mariadb105` (`mariadb` in AL2) **
   - **RPM:**  mariadb105 (mariadb in AL2)  / **Architectures:**
@@ -10669,37 +9070,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 7.2.24-1.amzn2.0.1
   - **AL2023.12 version:** 8.2.33-1.amzn2023.0.1
 
-- ** `sphinx` **
-  - **RPM:**  libsphinxclient  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libsphinxclient-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  sphinx  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  sphinx-java  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  sphinx-php  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.2.11-5.amzn2.0.1
-  - **AL2023.12 version:** 2.2.11-24.amzn2023.0.4
-
-## mariadb10.5 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-mariadb10.5"></a>
-
-- ** `mariadb105` (`mariadb` in AL2) **
-  - **RPM:**  mariadb105 (mariadb in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-backup (mariadb-backup in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-common (mariadb-common in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-connect-engine (mariadb-connect-engine in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-cracklib-password-check (mariadb-cracklib-password-check in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-devel (mariadb-devel in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-errmsg (mariadb-errmsg in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-gssapi-server (mariadb-gssapi-server in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-oqgraph-engine (mariadb-oqgraph-engine in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-pam (mariadb-pam in AL2)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  mariadb105-rocksdb-engine (mariadb-rocksdb-engine in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-server (mariadb-server in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-server-utils (mariadb-server-utils in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-sphinx-engine (mariadb-sphinx-engine in AL2)  / **Architectures:**
-  - **RPM:**  mariadb105-test (mariadb-test in AL2)  / **Architectures:**
-  - **AL2 version:** 10.5.29-1.amzn2.0.1
-  - **AL2023.12 version:** 10.5.29-1.amzn2023.0.1
-
 ## php7.3 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-php7.3"></a>
 
@@ -10734,14 +9104,14 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 8.2.33-1.amzn2023.0.1
 
 - ** `php8.2-pecl-apcu` (`php-pecl-apcu` in AL2) **
-  - **RPM:**  php8.2-pecl-apcu (php-pecl-apcu in AL2)
-  - **Architectures:**
+  - **RPM:**  php8.2-pecl-apcu (php-pecl-apcu in AL2)  / **Architectures:**
+  - **RPM:**  php8.2-pecl-apcu-devel (php-pecl-apcu-devel in AL2)  / **Architectures:**
   - **AL2 version:** 5.1.12-3.amzn2.0.2
   - **AL2023.12 version:** 5.1.24-3.amzn2023.0.1
 
 - ** `php8.2-pecl-igbinary` (`php-pecl-igbinary` in AL2) **
-  - **RPM:**  php8.2-pecl-igbinary (php-pecl-igbinary in AL2)
-  - **Architectures:**
+  - **RPM:**  php8.2-pecl-igbinary (php-pecl-igbinary in AL2)  / **Architectures:**
+  - **RPM:**  php8.2-pecl-igbinary-devel (php-pecl-igbinary-devel in AL2)  / **Architectures:**
   - **AL2 version:** 2.0.7-3.amzn2.0.2
   - **AL2023.12 version:** 3.2.16-4.amzn2023.0.1
 
@@ -10752,8 +9122,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 3.4.0-1.amzn2023.0.1
 
 - ** `php8.2-pecl-msgpack` (`php-pecl-msgpack` in AL2) **
-  - **RPM:**  php8.2-pecl-msgpack (php-pecl-msgpack in AL2)
-  - **Architectures:**
+  - **RPM:**  php8.2-pecl-msgpack (php-pecl-msgpack in AL2)  / **Architectures:**
+  - **RPM:**  php8.2-pecl-msgpack-devel (php-pecl-msgpack-devel in AL2)  / **Architectures:**
   - **AL2 version:** 2.0.3-1.amzn2
   - **AL2023.12 version:** 3.0.0-3.amzn2023.0.1
 
@@ -10797,14 +9167,14 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 8.2.33-1.amzn2023.0.1
 
 - ** `php8.2-pecl-apcu` (`php-pecl-apcu` in AL2) **
-  - **RPM:**  php8.2-pecl-apcu (php-pecl-apcu in AL2)
-  - **Architectures:**
+  - **RPM:**  php8.2-pecl-apcu (php-pecl-apcu in AL2)  / **Architectures:**
+  - **RPM:**  php8.2-pecl-apcu-devel (php-pecl-apcu-devel in AL2)  / **Architectures:**
   - **AL2 version:** 5.1.18-1.amzn2
   - **AL2023.12 version:** 5.1.24-3.amzn2023.0.1
 
 - ** `php8.2-pecl-igbinary` (`php-pecl-igbinary` in AL2) **
-  - **RPM:**  php8.2-pecl-igbinary (php-pecl-igbinary in AL2)
-  - **Architectures:**
+  - **RPM:**  php8.2-pecl-igbinary (php-pecl-igbinary in AL2)  / **Architectures:**
+  - **RPM:**  php8.2-pecl-igbinary-devel (php-pecl-igbinary-devel in AL2)  / **Architectures:**
   - **AL2 version:** 3.1.2-1.amzn2
   - **AL2023.12 version:** 3.2.16-4.amzn2023.0.1
 
@@ -10815,8 +9185,8 @@ The full comparison of RPM package versions is below.
   - **AL2023.12 version:** 3.4.0-1.amzn2023.0.1
 
 - ** `php8.2-pecl-msgpack` (`php-pecl-msgpack` in AL2) **
-  - **RPM:**  php8.2-pecl-msgpack (php-pecl-msgpack in AL2)
-  - **Architectures:**
+  - **RPM:**  php8.2-pecl-msgpack (php-pecl-msgpack in AL2)  / **Architectures:**
+  - **RPM:**  php8.2-pecl-msgpack-devel (php-pecl-msgpack-devel in AL2)  / **Architectures:**
   - **AL2 version:** 2.1.0-1.amzn2
   - **AL2023.12 version:** 3.0.0-3.amzn2023.0.1
 
@@ -10892,39 +9262,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 8.1.34-1.amzn2
   - **AL2023.12 version:** 8.2.33-1.amzn2023.0.1
 
-## php8.2 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-php8.2"></a>
-
-- ** [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (`php` in AL2) **
-  - **RPM:**  [`php8.2`](https://docs.aws.amazon.com/linux/al2023/ug/php.html) (php in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-bcmath (php-bcmath in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-cli (php-cli in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-common (php-common in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-dba (php-dba in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-dbg (php-dbg in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-devel (php-devel in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-embedded (php-embedded in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-enchant (php-enchant in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-fpm (php-fpm in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-gd (php-gd in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-gmp (php-gmp in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-intl (php-intl in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-ldap (php-ldap in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-mbstring (php-mbstring in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-mysqlnd (php-mysqlnd in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-odbc (php-odbc in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-opcache (php-opcache in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-pdo (php-pdo in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-pgsql (php-pgsql in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-process (php-process in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-pspell (php-pspell in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-snmp (php-snmp in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-soap (php-soap in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-sodium (php-sodium in AL2)  / **Architectures:**
-  - **RPM:**  php8.2-xml (php-xml in AL2)  / **Architectures:**
-  - **AL2 version:** 8.2.33-1.amzn2.0.1
-  - **AL2023.12 version:** 8.2.33-1.amzn2023.0.1
-
 ## postgresql10 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-postgresql10"></a>
 
@@ -10941,7 +9278,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade-devel (postgresql-upgrade-devel in AL2)  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 10.21-1.amzn2.0.1
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 ## postgresql11 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-postgresql11"></a>
@@ -10974,7 +9311,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade-devel (postgresql-upgrade-devel in AL2)  / **Architectures:**
   - **AL2 version:** 11.20-1.amzn2.0.2
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 ## postgresql12 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-postgresql12"></a>
@@ -11001,7 +9338,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade-devel (postgresql-upgrade-devel in AL2)  / **Architectures:**
   - **AL2 version:** 12.20-1.amzn2.0.1
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 ## postgresql13 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-postgresql13"></a>
@@ -11030,7 +9367,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade-devel (postgresql-upgrade-devel in AL2)  / **Architectures:**
   - **AL2 version:** 13.22-1.amzn2.0.1
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 ## postgresql14 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-postgresql14"></a>
@@ -11038,7 +9375,7 @@ The full comparison of RPM package versions is below.
 - ** `libpq` **
   - **RPM:**  libpq  / **Architectures:**
   - **RPM:**  libpq-devel  / **Architectures:**
-  - **AL2 version:** 14.23-1.amzn2.0.1
+  - **AL2 version:** 14.24-1.amzn2.0.1
   - **AL2023.12 version:** 18.4-1.amzn2023.0.1
 
 - ** `postgresql15` (`postgresql` in AL2) **
@@ -11056,8 +9393,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-test-rpm-macros (postgresql-test-rpm-macros in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade-devel (postgresql-upgrade-devel in AL2)  / **Architectures:**
-  - **AL2 version:** 14.23-1.amzn2.0.1
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2 version:** 14.24-1.amzn2.0.1
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 ## postgresql9.6 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-postgresql9.6"></a>
@@ -11075,7 +9412,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  postgresql15-upgrade (postgresql-upgrade in AL2)  / **Architectures:**
   - **RPM:**  postgresql15-upgrade-devel (postgresql-upgrade-devel in AL2)  / **Architectures:**
   - **AL2 version:** 9.6.22-1.amzn2.0.1
-  - **AL2023.12 version:** 15.18-1.amzn2023.0.1
+  - **AL2023.12 version:** 15.19-1.amzn2023.0.1
 
 ## mock2 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-mock2"></a>
@@ -11084,20 +9421,20 @@ The full comparison of RPM package versions is below.
   - **RPM:**  distribution-gpg-keys  / **Architectures:** noarch
   - **RPM:**  distribution-gpg-keys-copr  / **Architectures:** noarch
   - **AL2 version:** 1.100-1.amzn2
-  - **AL2023.12 version:** 1.104-1.amzn2023.0.1
+  - **AL2023.12 version:** 1.104-1.amzn2023.0.2
 
 - ** `dnf` **
   - **RPM:**  dnf  / **Architectures:**
   - **RPM:**  dnf-automatic  / **Architectures:** noarch
   - **RPM:**  dnf-data  / **Architectures:** noarch
   - **AL2 version:** 4.0.9.2-1.amzn2.0.1
-  - **AL2023.12 version:** 4.14.0-1.amzn2023.0.7
+  - **AL2023.12 version:** 4.14.0-1.amzn2023.0.8
 
 - ** `dnf-plugins-core` **
   - **RPM:**  dnf-plugins-core
   - **Architectures:** noarch
   - **AL2 version:** 4.0.2.2-3.amzn2
-  - **AL2023.12 version:** 4.3.0-13.amzn2023.0.6
+  - **AL2023.12 version:** 4.3.0-13.amzn2023.0.7
 
 - ** `libdnf` **
   - **RPM:**  libdnf  / **Architectures:** aarch64, x86\_64
@@ -11125,19 +9462,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  mock-core-configs
   - **Architectures:** noarch
   - **AL2 version:** 38.3-1.amzn2.0.1
-  - **AL2023.12 version:** 39.2-1.amzn2023.0.1
-
-- ** `python-cov-core` **
-  - **RPM:**  python3-cov-core
-  - **Architectures:** noarch
-  - **AL2 version:** 1.15.0-9.amzn2
-  - **AL2023.12 version:** 1.15.0-21.amzn2023.0.2
-
-- ** `python-distro` **
-  - **RPM:**  python3-distro
-  - **Architectures:** noarch
-  - **AL2 version:** 1.5.0-5.amzn2.0.1
-  - **AL2023.12 version:** 1.5.0-5.amzn2023.0.2
+  - **AL2023.12 version:** 39.2-1.amzn2023.0.2
 
 - ** `python-pyroute2` **
   - **RPM:**  python3-pyroute2
@@ -11173,7 +9498,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  rpm-plugin-systemd-inhibit  / **Architectures:**
   - **RPM:**  rpm-sign  / **Architectures:**
   - **AL2 version:** 4.14.3-4.amzn2.0.2
-  - **AL2023.12 version:** 4.16.1.3-29.amzn2023.0.7
+  - **AL2023.12 version:** 4.16.1.3-29.amzn2023.0.8
 
 ## ruby2.6 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-ruby2.6"></a>
@@ -11205,7 +9530,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  squid
   - **Architectures:**
   - **AL2 version:** 4.15-1.amzn2.0.5
-  - **AL2023.12 version:** 6.13-1.amzn2023.0.5
+  - **AL2023.12 version:** 6.13-1.amzn2023.0.6
 
 ## tomcat8.5 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-tomcat8.5"></a>
@@ -11219,22 +9544,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  tomcat9-lib (tomcat-lib in AL2)  / **Architectures:**
   - **RPM:**  tomcat9-webapps (tomcat-webapps in AL2)  / **Architectures:**
   - **AL2 version:** 8.5.100-1.amzn2.0.2
-  - **AL2023.12 version:** 9.0.120-1.amzn2023.0.1
-
-## tomcat9 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-tomcat9"></a>
-
-- ** `tomcat9` (`tomcat` in AL2) **
-  - **RPM:**  tomcat9 (tomcat in AL2)  / **Architectures:**
-  - **RPM:**  tomcat9-admin-webapps (tomcat-admin-webapps in AL2)  / **Architectures:**
-  - **RPM:**  tomcat9-docs-webapp (tomcat-docs-webapp in AL2)  / **Architectures:**
-  - **RPM:**  tomcat9-el-3.0-api (tomcat-el-3.0-api in AL2)  / **Architectures:**
-  - **RPM:**  tomcat9-jsp-2.3-api (tomcat-jsp-2.3-api in AL2)  / **Architectures:**
-  - **RPM:**  tomcat9-lib (tomcat-lib in AL2)  / **Architectures:**
-  - **RPM:**  tomcat9-servlet-4.0-api (tomcat-servlet-4.0-api in AL2)  / **Architectures:** noarch
-  - **RPM:**  tomcat9-webapps (tomcat-webapps in AL2)  / **Architectures:**
-  - **AL2 version:** 9.0.120-1.amzn2.0.1
-  - **AL2023.12 version:** 9.0.120-1.amzn2023.0.1
+  - **AL2023.12 version:** 9.0.121-1.amzn2023.0.1
 
 ## unbound1.13 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-unbound1.13"></a>
@@ -11252,7 +9562,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  unbound-devel  / **Architectures:**
   - **RPM:**  unbound-libs  / **Architectures:**
   - **AL2 version:** 1.13.1-3.amzn2.0.5
-  - **AL2023.12 version:** 1.17.1-1.amzn2023.0.13
+  - **AL2023.12 version:** 1.17.1-1.amzn2023.0.15
 
 ## unbound1.17 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-unbound1.17"></a>
@@ -11264,8 +9574,8 @@ The full comparison of RPM package versions is below.
   - **RPM:**  unbound-devel  / **Architectures:**
   - **RPM:**  unbound-libs  / **Architectures:**
   - **RPM:**  unbound-utils  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.17.0-2.amzn2.0.12
-  - **AL2023.12 version:** 1.17.1-1.amzn2023.0.13
+  - **AL2 version:** 1.17.0-2.amzn2.0.14
+  - **AL2023.12 version:** 1.17.1-1.amzn2023.0.15
 
 ## vim AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-vim"></a>
@@ -11275,7 +9585,7 @@ The full comparison of RPM package versions is below.
   - **RPM:**  vim-enhanced  / **Architectures:**
   - **RPM:**  vim-minimal  / **Architectures:**
   - **AL2 version:** 8.0.1257-2.amzn2
-  - **AL2023.12 version:** 9.2.780-1.amzn2023.0.1
+  - **AL2023.12 version:** 9.2.920-1.amzn2023.0.1
 
 ## ansible2 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-ansible2"></a>
@@ -11285,13 +9595,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 2.9.23-1.amzn2
   - **AL2023.12 version:** 8.3.0-1.amzn2023.0.3
-
-- ** `libtomcrypt` **
-  - **RPM:**  libtomcrypt  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libtomcrypt-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libtomcrypt-doc  / **Architectures:** noarch
-  - **AL2 version:** 1.18.2-1.amzn2.0.1
-  - **AL2023.12 version:** 1.18.2-12.amzn2023.0.2
 
 - ** `libtommath` **
   - **RPM:**  libtommath  / **Architectures:** aarch64, x86\_64
@@ -11325,16 +9628,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 4.0.10-2.amzn2.0.2
   - **AL2023.12 version:** 6.2.20-2.amzn2023.0.1
 
-## redis6 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-redis6"></a>
-
-- ** `redis6` (`redis` in AL2) **
-  - **RPM:**  redis6 (redis in AL2)  / **Architectures:**
-  - **RPM:**  redis6-devel (redis-devel in AL2)  / **Architectures:**
-  - **RPM:**  redis6-doc (redis-doc in AL2)  / **Architectures:**
-  - **AL2 version:** 6.2.20-2.amzn2.0.1
-  - **AL2023.12 version:** 6.2.20-2.amzn2023.0.1
-
 ## R3.4 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-R3.4"></a>
 
@@ -11365,14 +9658,6 @@ The full comparison of RPM package versions is below.
   - **RPM:**  R-java-devel  / **Architectures:** aarch64, x86\_64
   - **AL2 version:** 3.4.3-1.amzn2.0.2
   - **AL2023.12 version:** 4.5.3-1.amzn2023.0.1
-
-- ** `tre` **
-  - **RPM:**  agrep  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tre  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tre-common  / **Architectures:** noarch
-  - **RPM:**  tre-devel  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.8.0-21.20140228gitc2f5d13.amzn2.0.1
-  - **AL2023.12 version:** 0.8.0-32.20140228gitc2f5d13.amzn2023.0.3
 
 ## R4 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-R4"></a>
@@ -11406,106 +9691,8 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 4.0.2-5.amzn2.0.3
   - **AL2023.12 version:** 4.5.3-1.amzn2023.0.1
 
-- ** `tre` **
-  - **RPM:**  agrep  / **Architectures:**
-  - **RPM:**  python3-tre  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  tre  / **Architectures:**
-  - **RPM:**  tre-common  / **Architectures:**
-  - **RPM:**  tre-devel  / **Architectures:**
-  - **AL2 version:** 0.8.0-27.20140228gitc2f5d13.amzn2
-  - **AL2023.12 version:** 0.8.0-32.20140228gitc2f5d13.amzn2023.0.3
-
-## docker AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-docker"></a>
-
-- ** `amazon-ecr-credential-helper` **
-  - **RPM:**  amazon-ecr-credential-helper
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.12.0-3.amzn2
-  - **AL2023.12 version:** 0.12.0-3.amzn2023
-
-- ** `containerd` **
-  - **RPM:**  containerd  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  containerd-stress  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 2.1.9-1.amzn2.0.2
-  - **AL2023.12 version:** 2.2.5-1.amzn2023.0.2
-
-- ** `docker` **
-  - **RPM:**  docker
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 25.0.16-1.amzn2.0.4
-  - **AL2023.12 version:** 25.0.16-1.amzn2023.0.4
-
-- ** `oci-add-hooks` **
-  - **RPM:**  oci-add-hooks
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0-0.10.20200504git325a340.amzn2
-  - **AL2023.12 version:** 0-0.1.20200504git268e3bb.amzn2023.0.11
-
-- ** `runc` **
-  - **RPM:**  runc
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.3.5-1.amzn2
-  - **AL2023.12 version:** 1.3.5-1.amzn2023.0.2
-
-- ** `runfinch-finch` **
-  - **RPM:**  runfinch-finch
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.17.2-1.amzn2.0.3
-  - **AL2023.12 version:** 1.17.2-1.amzn2023.0.3
-
-- ** `soci-snapshotter` **
-  - **RPM:**  soci-snapshotter
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 0.14.1-1.amzn2.0.1
-  - **AL2023.12 version:** 0.14.1-1.amzn2023.0.1
-
-## ecs AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-ecs"></a>
-
-- ** `containerd` **
-  - **RPM:**  containerd  / **Architectures:**
-  - **RPM:**  containerd-stress  / **Architectures:**
-  - **AL2 version:** 2.1.9-1.amzn2.0.1
-  - **AL2023.12 version:** 2.2.5-1.amzn2023.0.2
-
-- ** `docker` **
-  - **RPM:**  docker
-  - **Architectures:**
-  - **AL2 version:** 25.0.16-1.amzn2.0.3
-  - **AL2023.12 version:** 25.0.16-1.amzn2023.0.4
-
-- ** [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
-  - **RPM:**  [`ecs-init`](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.106.0-1.amzn2
-  - **AL2023.12 version:** 1.106.0-1.amzn2023
-
-- ** `ecs-service-connect-agent` **
-  - **RPM:**  ecs-service-connect-agent
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** v1.34.13.3-1.amzn2
-  - **AL2023.12 version:** v1.34.13.3-1.amzn2023
-
 ## GraphicsMagick1.3 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-GraphicsMagick1.3"></a>
-
-- ** `GraphicsMagick` **
-  - **RPM:**  GraphicsMagick  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  GraphicsMagick-c\+\+  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  GraphicsMagick-c\+\+-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  GraphicsMagick-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  GraphicsMagick-doc  / **Architectures:** noarch
-  - **RPM:**  GraphicsMagick-perl  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.3.45-1.amzn2.0.3
-  - **AL2023.12 version:** 1.3.45-1.amzn2023.0.3
-
-- ** `p7zip` **
-  - **RPM:**  p7zip  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  p7zip-doc  / **Architectures:** noarch
-  - **RPM:**  p7zip-plugins  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 16.02-20.amzn2.0.2
-  - **AL2023.12 version:** 16.02-30.amzn2023.0.2
 
 - ** `yasm` **
   - **RPM:**  yasm  / **Architectures:** aarch64, x86\_64
@@ -11535,16 +9722,6 @@ The full comparison of RPM package versions is below.
   - **AL2 version:** 0.07.29-7.amzn2
   - **AL2023.12 version:** 0.15.05-1.amzn2023
 
-## corretto8 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-corretto8"></a>
-
-- ** [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
-  - **RPM:**  [`java-1.8.0-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  java-1.8.0-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  [`java-1.8.0-amazon-corretto-devel`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.8.0\_502.b07-1.amzn2
-  - **AL2023.12 version:** 1.8.0\_502.b07-1.amzn2023
-
 ## lustre AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-lustre"></a>
 
@@ -11571,23 +9748,6 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 3.1.1-1.amzn2.0.2
   - **AL2023.12 version:** 3.0.8-3.amzn2023.0.1
-
-## nginx1 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-nginx1"></a>
-
-- ** `nginx` **
-  - **RPM:**  nginx  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-all-modules  / **Architectures:** noarch
-  - **RPM:**  nginx-core  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-filesystem  / **Architectures:** noarch
-  - **RPM:**  nginx-mod-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-mod-http-image-filter  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-mod-http-perl  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-mod-http-xslt-filter  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-mod-mail  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  nginx-mod-stream  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.30.4-1.amzn2.0.1
-  - **AL2023.12 version:** 1.30.4-1.amzn2023.0.1
 
 ## python3.8 AL2 Extra packages updated in Amazon Linux 2023
 <a name="vercmp-AL2023.12-AL2-ex2-python3.8"></a>
@@ -11652,79 +9812,3 @@ The full comparison of RPM package versions is below.
   - **Architectures:** noarch
   - **AL2 version:** 2013031301-1.amzn2
   - **AL2023.12 version:** 2017060201-14.amzn2023.0.2
-
-## collectd-python3 AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-collectd-python3"></a>
-
-- ** `collectd` **
-  - **RPM:**  collectd  / **Architectures:**
-  - **RPM:**  collectd-apache  / **Architectures:**
-  - **RPM:**  collectd-bind  / **Architectures:**
-  - **RPM:**  collectd-ceph  / **Architectures:**
-  - **RPM:**  collectd-chrony  / **Architectures:**
-  - **RPM:**  collectd-curl  / **Architectures:**
-  - **RPM:**  collectd-curl\_json  / **Architectures:**
-  - **RPM:**  collectd-curl\_xml  / **Architectures:**
-  - **RPM:**  collectd-dbi  / **Architectures:**
-  - **RPM:**  collectd-disk  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  collectd-dns  / **Architectures:**
-  - **RPM:**  collectd-drbd  / **Architectures:**
-  - **RPM:**  collectd-email  / **Architectures:**
-  - **RPM:**  collectd-generic-jmx  / **Architectures:**
-  - **RPM:**  collectd-hugepages  / **Architectures:**
-  - **RPM:**  collectd-iptables  / **Architectures:**
-  - **RPM:**  collectd-java  / **Architectures:**
-  - **RPM:**  collectd-log\_logstash  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  collectd-lua  / **Architectures:**
-  - **RPM:**  collectd-mcelog  / **Architectures:**
-  - **RPM:**  collectd-mdevents  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  collectd-mysql  / **Architectures:**
-  - **RPM:**  collectd-netlink  / **Architectures:**
-  - **RPM:**  collectd-nginx  / **Architectures:**
-  - **RPM:**  collectd-notify\_desktop  / **Architectures:**
-  - **RPM:**  collectd-notify\_email  / **Architectures:**
-  - **RPM:**  collectd-openldap  / **Architectures:**
-  - **RPM:**  collectd-postgresql  / **Architectures:**
-  - **RPM:**  collectd-python  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  collectd-rrdcached  / **Architectures:**
-  - **RPM:**  collectd-rrdtool  / **Architectures:**
-  - **RPM:**  collectd-sensors  / **Architectures:**
-  - **RPM:**  collectd-smart  / **Architectures:**
-  - **RPM:**  collectd-synproxy  / **Architectures:**
-  - **RPM:**  collectd-utils  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  collectd-web  / **Architectures:**
-  - **RPM:**  collectd-write\_prometheus  / **Architectures:**
-  - **RPM:**  collectd-write\_sensu  / **Architectures:**
-  - **RPM:**  collectd-write\_syslog  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  collectd-write\_tsdb  / **Architectures:**
-  - **RPM:**  collectd-zookeeper  / **Architectures:**
-  - **RPM:**  libcollectdclient  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  libcollectdclient-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  perl-Collectd  / **Architectures:**
-  - **AL2 version:** 5.12.0-2.amzn2.0.1
-  - **AL2023.12 version:** 5.12.0-16.amzn2023.0.4
-
-## aws-nitro-enclaves-cli AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-aws-nitro-enclaves-cli"></a>
-
-- ** `aws-nitro-enclaves-acm` **
-  - **RPM:**  aws-nitro-enclaves-acm
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.4.0-2.amzn2
-  - **AL2023.12 version:** 1.4.0-2.amzn2023
-
-- ** `aws-nitro-enclaves-cli` **
-  - **RPM:**  aws-nitro-enclaves-cli  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  aws-nitro-enclaves-cli-devel  / **Architectures:** aarch64, x86\_64
-  - **RPM:**  aws-nitro-enclaves-cli-integration-tests  / **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 1.4.5-0.amzn2
-  - **AL2023.12 version:** 1.4.5-0.amzn2023
-
-## firefox AL2 Extra packages updated in Amazon Linux 2023
-<a name="vercmp-AL2023.12-AL2-ex2-firefox"></a>
-
-- ** `firefox` **
-  - **RPM:**  firefox
-  - **Architectures:** aarch64, x86\_64
-  - **AL2 version:** 140.13.0-1.amzn2.0.1
-  - **AL2023.12 version:** 140.13.0-1.amzn2023.0.1

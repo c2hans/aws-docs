@@ -38,6 +38,11 @@ Creates a new cost anomaly detection monitor with the requested type and monitor
          "Or": [
             "Expression"
          ],
+         "ProductAttributes": {
+            "Key": "{{string}}",
+            "MatchOptions": [ "{{string}}" ],
+            "Values": [ "{{string}}" ]
+         },
          "Tags": {
             "Key": "{{string}}",
             "MatchOptions": [ "{{string}}" ],

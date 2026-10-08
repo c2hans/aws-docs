@@ -44,6 +44,11 @@ Adds an alert subscription to a cost anomaly detection monitor. You can use each
          "Or": [
             "Expression"
          ],
+         "ProductAttributes": {
+            "Key": "{{string}}",
+            "MatchOptions": [ "{{string}}" ],
+            "Values": [ "{{string}}" ]
+         },
          "Tags": {
             "Key": "{{string}}",
             "MatchOptions": [ "{{string}}" ],

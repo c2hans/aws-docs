@@ -93,6 +93,14 @@ For more information, see [Computer use](computer-use.html).
 | --- | --- |
 | computer\_20251124 | computer-use-2025-11-24 |
 
+**Compaction using `bedrock-runtime` endpoint**
+
+For more information, see [Compaction](claude-messages-compaction.html).
+
+| **Compaction supported** | **Beta value** |
+| --- | --- |
+| Yes | compact-2026-09-04 |
+
 ## Pricing
 <a name="model-card-anthropic-claude-opus-4-8-pricing"></a>
 

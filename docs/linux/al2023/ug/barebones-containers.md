@@ -45,7 +45,7 @@ The standard AL2023 container images are suitable for most use cases. Using the 
 
          By setting the `--releasever` argument of `dnf` to the version of `system-release` in the `build` container, this `Dockerfile` can be used to rebuild the barebones container whenever an updated container base image of Amazon Linux is released.
 
-         It is possible to set the `--releasever` to any Amazon Linux 2023 version, such as 2023.12.20260817. Doing this would mean that the `build` container would run as the latest AL2023 version, but build the barebones container from 2023.12.20260817 regardless of what was the current AL2023 release.
+         It is possible to set the `--releasever` to any Amazon Linux 2023 version, such as 2023.12.20260930. Doing this would mean that the `build` container would run as the latest AL2023 version, but build the barebones container from 2023.12.20260930 regardless of what was the current AL2023 release.
 
          The `--setopt=install_weak_deps=False` configuration option tells `dnf` to only install dependencies that are *required* rather than recommended or suggested.
 

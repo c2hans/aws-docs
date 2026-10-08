@@ -59,7 +59,7 @@ The following `put-scaling-policy` example applies a target tracking scaling pol
 aws application-autoscaling put-scaling-policy --service-namespace {{ecs}} \
 --scalable-dimension {{ecs:service:DesiredCount}} \
 --resource-id {{service/default/web-app}} \
---policy-name {{cms75-target-tracking-scaling-policy}}
+--policy-name {{cms75-target-tracking-scaling-policy}} \
 --policy-type {{TargetTrackingScaling}} \
 --target-tracking-scaling-policy-configuration {{file://config.json}}
 ```

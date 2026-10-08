@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/spatial-data-management-on-aw
 title: 'Spatial Data Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/spatial-data-management-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Spatial Data Management on AWS
 
 Make it easy to store, enrich, and connect your spatial and geospatial data
 
-- **Version**: 1.6.2
+- **Version**: 1.6.4
 - **Released**: 09/2026
 - **Author**: AWS
 - **Est. deployment time**: 40 mins

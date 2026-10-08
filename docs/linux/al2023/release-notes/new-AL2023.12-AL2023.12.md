@@ -5,15 +5,15 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2023.12
 # New packages in AL2023.12 since AL2023.12
 <a name="new-AL2023.12-AL2023.12"></a>
 
- Comparing AL2023.12 version 2023.12.20260608 to AL2023.12 version [2023.12.20260817](relnotes-2023.12.20260817.md).
+ Comparing AL2023.12 version 2023.12.20260608 to AL2023.12 version [2023.12.20260930](relnotes-2023.12.20260930.md).
 
 | Package Type | Number of new packages in AL2023.12 compared to AL2023.12 |
 | --- | --- |
-| Source RPMs | 18 |
-| Total Binary RPMs | 403 |
-|  noarch binary RPMs | 20 |
-|  x86\_64 binary RPMs | 192 |
-|  aarch64 binary RPMs | 191 |
+| Source RPMs | 26 |
+| Total Binary RPMs | 542 |
+|  noarch binary RPMs | 30 |
+|  x86\_64 binary RPMs | 257 |
+|  aarch64 binary RPMs | 255 |
 
 New packages in AL2023.12:
 
@@ -27,6 +27,14 @@ New packages in AL2023.12:
   - **Architectures:** aarch64, x86\_64
   - **Version:** 3.1.1-1.amzn2023
 
+- ** `btrfs-progs` **
+  - **RPM:**  btrfs-progs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  btrfs-progs-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libbtrfs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libbtrfsutil  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-btrfsutil  / **Architectures:** aarch64, x86\_64
+  - **Version:** 7.1-1.amzn2023
+
 - ** `buildah` **
   - **RPM:**  buildah
   - **Architectures:** aarch64, x86\_64
@@ -37,14 +45,31 @@ New packages in AL2023.12:
   - **RPM:**  containers-common-extra  / **Architectures:** aarch64, x86\_64
   - **Version:** 0.67.0-1.amzn2023.0.2
 
+- ** `edk2` **
+  - **RPM:**  edk2-aarch64  / **Architectures:** noarch
+  - **RPM:**  edk2-ovmf  / **Architectures:** noarch
+  - **RPM:**  edk2-shell-aa64  / **Architectures:** noarch
+  - **RPM:**  edk2-shell-x64  / **Architectures:** noarch
+  - **Version:** 20260508-1.amzn2023
+
 - ** `gdrcopy` **
   - **RPM:**  gdrcopy  / **Architectures:** aarch64, x86\_64
   - **RPM:**  gdrcopy-devel  / **Architectures:** noarch
   - **RPM:**  gdrcopy-kmod  / **Architectures:** noarch
   - **Version:** 2.5.2-2.amzn2023
 
+- ** `isa-l` **
+  - **RPM:**  isa-l  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  isa-l-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  isa-l-tools  / **Architectures:** aarch64, x86\_64
+  - **Version:** 2.32.1-2.amzn2023.0.1
+
 - ** `kernel6.12` **
   - **RPM:**  kernel-livepatch-6.12.100-125.179  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.103-127.188  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.103-129.197  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.110-135.201  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.110-135.202  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.92-122.166  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.92-122.168  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.94-123.174  / **Architectures:** aarch64, x86\_64
@@ -65,6 +90,11 @@ New packages in AL2023.12:
   - **RPM:**  kernel-livepatch-6.18.38-76.139  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.39-79.141  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.41-94.142  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.44-99.149  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.48-107.148  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.48-109.150  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.51-120.162  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.51-120.163  / **Architectures:** aarch64, x86\_64
   - **RPM:**  microvm-kernel6.18  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.0-0.amzn2023
 
@@ -92,6 +122,42 @@ New packages in AL2023.12:
   - **RPM:**  libtevent-latest-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-tevent-latest  / **Architectures:** aarch64, x86\_64
   - **Version:** 0.17.1-1.amzn2023.0.1
+
+- ** `libvirt` **
+  - **RPM:**  libvirt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-client  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-client-qemu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-config-network  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-config-nwfilter  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-interface  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-network  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-nodedev  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-nwfilter  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-qemu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-secret  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage-disk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-driver-storage-logical  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-kvm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-lock  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-log  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-plugin-lockd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-proxy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-daemon-qemu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-docs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-nss  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libvirt-ssh-proxy  / **Architectures:** aarch64, x86\_64
+  - **Version:** 12.0.0-3.amzn2023.0.3
+
+- ** `libvirt-python` **
+  - **RPM:**  python3-libvirt
+  - **Architectures:** aarch64, x86\_64
+  - **Version:** 12.0.0-1.amzn2023.0.2
 
 - ** `llvm21` **
   - **RPM:**  clang21  / **Architectures:** aarch64, x86\_64
@@ -234,17 +300,48 @@ New packages in AL2023.12:
 - ** `nginx-mod-njs` **
   - **RPM:**  nginx-mod-njs
   - **Architectures:** aarch64, x86\_64
-  - **Version:** 0.9.9-1.amzn2023.0.3
+  - **Version:** 1.0.1-1.amzn2023.0.2
 
 - ** `openssh` **
   - **RPM:**  openssh-sk-dummy
   - **Architectures:** aarch64, x86\_64
   - **Version:** 9.9p1-10.amzn2023.0.2
 
+- ** `passt` **
+  - **RPM:**  passt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  passt-selinux  / **Architectures:** noarch
+  - **Version:** 0^20260716.g090d739-2.amzn2023
+
+- ** `python-qemu-qmp` **
+  - **RPM:**  python3-qemu-qmp  / **Architectures:** noarch
+  - **RPM:**  python-qemu-qmp-doc  / **Architectures:** noarch
+  - **Version:** 0.0.5-2.amzn2023
+
 - ** `python-supportinfo` **
   - **RPM:**  python3-supportinfo
   - **Architectures:** noarch
   - **Version:** 1.0.0-1.amzn2023
+
+- ** `qemu` **
+  - **RPM:**  qemu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-docs  / **Architectures:** noarch
+  - **RPM:**  qemu-guest-agent  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-kvm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-kvm-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-pr-helper  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-aarch64  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-aarch64-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-x86  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-system-x86-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-tests  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user-binfmt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user-static-aarch64  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  qemu-user-static-x86  / **Architectures:** aarch64, x86\_64
+  - **Version:** 11.0.0-3.amzn2023
 
 - ** `samba-latest` **
   - **RPM:**  ctdb-latest  / **Architectures:** aarch64, x86\_64
@@ -286,6 +383,12 @@ New packages in AL2023.12:
   - **RPM:**  samba-latest-winbind-krb5-locator  / **Architectures:** aarch64, x86\_64
   - **RPM:**  samba-latest-winbind-modules  / **Architectures:** aarch64, x86\_64
   - **Version:** 4.24.5-1.amzn2023.0.1
+
+- ** `seabios` **
+  - **RPM:**  seabios  / **Architectures:** x86\_64
+  - **RPM:**  seabios-bin  / **Architectures:** noarch
+  - **RPM:**  seavgabios-bin  / **Architectures:** noarch
+  - **Version:** 1.17.0-1.amzn2023
 
 - ** `skopeo` **
   - **RPM:**  skopeo  / **Architectures:** aarch64, x86\_64

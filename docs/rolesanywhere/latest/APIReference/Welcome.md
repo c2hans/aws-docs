@@ -11,4 +11,4 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/Welcom
 
 This guide describes the IAM Roles Anywhere operations that you can call programmatically. For more information about IAM Roles Anywhere, see the [IAM Roles Anywhere User Guide](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html).
 
-This document was last published on October 7, 2026.
+This document was last published on October 8, 2026.

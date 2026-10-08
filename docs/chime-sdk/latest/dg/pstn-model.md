@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pstn-model.html
 # Understanding the Amazon Chime SDK PSTN audio service programming model
 <a name="pstn-model"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).
+
 The PSTN audio service uses a request/response programming model that in turn uses AWS Lambda functions. Your AWS Lambda function is invoked automatically for incoming and outgoing calls. For example, when a new incoming call arrives, the PSTN audio service invokes your AWS Lambda function with a `NEW_INCOMING_CALL` event and waits for commands called *Actions*. For example, your application can choose actions such as playing an audio prompt, collecting digits, recording audio, or routing the call onward. These JSON formatted actions are sent back to the PSTN audio service using a callback from your AWS Lambda function.
 
 This example shows a `PlayAudio` action.

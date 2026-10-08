@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/route-calls-events-c
 # Routing calls to AWS Lambda functions for Amazon Chime SDK PSTN audio (AWS CLI)
 <a name="route-calls-events-cli"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).
+
 This tutorial guides you through the process of setting up call routing to Lambda functions using Amazon Chime SDK PSTN audio service. You'll learn how to create Lambda functions, set up SIP media applications, and configure SIP rules to handle incoming calls.
 
 ## Prerequisites

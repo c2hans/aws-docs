@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 # Packages in Amazon Linux 1 not in Amazon Linux 2023
 <a name="removed-AL2023.12-AL1"></a>
 
- There are 996 source packages and 2622 non-i686 binary packages in Amazon Linux 1 no longer in Amazon Linux 2023.
+ There are 994 source packages and 2591 non-i686 binary packages in Amazon Linux 1 no longer in Amazon Linux 2023.
 
  These packages in Amazon Linux 1 are not present in Amazon Linux 2023.
 
@@ -180,14 +180,11 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  docbook-slides  | src, noarch |
 |  docker-storage-setup  | src, noarch |
 |  dojo  | src, noarch |
-|  dracut  | noarch |
-|  dracut-caps  | noarch |
 |  dracut-fips  | noarch |
 |  dracut-fips-aesni  | noarch |
 |  dracut-generic  | noarch |
 |  dracut-kernel  | noarch |
 |  dracut-network  | noarch |
-|  dracut-tools  | noarch |
 |  dstat  | src, noarch |
 |  dump  | src, x86\_64 |
 |  rmt  | src, x86\_64 |
@@ -286,10 +283,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  freeradius-python  | x86\_64 |
 |  ftp  | src, x86\_64 |
 |  fwsnort  | src, noarch |
-|  cpp  | noarch |
-|  [`gcc`](https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html)  | noarch |
-|  gcc-c\+\+  | noarch |
-|  gcc-gfortran  | noarch |
 |  gcc-gnat  | noarch |
 |  libgnat  | noarch |
 |  libgcc72  | src, x86\_64 |
@@ -314,7 +307,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  emacs-gnuplot-el  | x86\_64 |
 |  gnuplot  | x86\_64 |
 |  gnuplot-doc  | x86\_64 |
-|  go-rpm-templates  | noarch |
 |  gprolog  | src, x86\_64 |
 |  gprolog-docs  | src, x86\_64 |
 |  gprolog-examples  | src, x86\_64 |
@@ -324,7 +316,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  graphviz-php  | src, x86\_64 |
 |  grub  | src, x86\_64 |
 |  grubby  | x86\_64 |
-|  gtk-doc  | noarch |
 |  gyp  | src, noarch |
 |  hamcrest-demo  | noarch |
 |  hardlink  | src, x86\_64 |
@@ -450,7 +441,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  imake  | src, x86\_64 |
 |  debugmode  | x86\_64 |
 |  innotop  | src, noarch |
-|  iotop  | noarch |
 |  ipsec-tools  | src, x86\_64 |
 |  iptraf  | src, x86\_64 |
 |  iptstate  | src, x86\_64 |
@@ -744,7 +734,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  perl-Class-Std-Fast  | src, noarch |
 |  perl-Class-Std-Storable  | src, noarch |
 |  perl-Class-Trigger  | src, noarch |
-|  perl-common-sense  | noarch |
 |  perl-Config-Any-tests  | noarch |
 |  perl-Config-Augeas  | src, x86\_64 |
 |  perl-Context-Preserve  | src, noarch |
@@ -1564,7 +1553,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  rdate  | src, x86\_64 |
 |  rdist  | src, x86\_64 |
 |  readahead  | src, x86\_64 |
-|  realmd-devel-docs  | noarch |
 |  reptyr  | src, x86\_64 |
 |  ldirectord  | x86\_64 |
 |  rhino-demo  | noarch |
@@ -1712,8 +1700,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  rubygem-ruby-debug-doc  | src, noarch |
 |  rubygem-ruby-debug-base  | src, x86\_64 |
 |  rubygem-ruby-debug-base-doc  | src, x86\_64 |
-|  rubygems18  | src, noarch |
-|  rubygems18-devel  | src, noarch |
 |  rubygem-shoulda  | src, noarch |
 |  rubygem-shoulda-doc  | src, noarch |
 |  rubygem18-uuidtools  | src, noarch |
@@ -1733,9 +1719,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  saxon-manual  | src, noarch |
 |  saxon-scripts  | src, noarch |
 |  scons  | src, noarch |
-|  seabios  | src, x86\_64 |
-|  seabios-bin  | src, noarch |
-|  seavgabios-bin  | src, noarch |
 |  setserial  | src, x86\_64 |
 |  sgabios  | src, x86\_64 |
 |  sgabios-bin  | src, noarch |

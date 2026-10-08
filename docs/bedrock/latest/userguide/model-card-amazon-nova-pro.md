@@ -20,7 +20,7 @@ Nova Pro is Amazon's balanced multimodal model offering strong accuracy, speed, 
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 300K tokens
-+ **Max output tokens:** 5K
++ **Max output tokens:** 10K
 + **Knowledge cutoff:** Oct 2024
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |

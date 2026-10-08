@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ai-enhanced-amazon-connect-cus
 title: 'Guidance for AI enhanced Amazon Connect Customer customer experience'
 canonical_url: https://docs.aws.amazon.com/solutions/ai-enhanced-amazon-connect-customer-experience/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for AI enhanced Amazon Connect Customer customer experience

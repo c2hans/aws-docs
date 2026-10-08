@@ -9,7 +9,7 @@ It's important to keep up to date with AL2023 releases so that you can benefit f
 
 **Warning**
  Running `dnf --releasever=latest update` is not best practice, and is likely to result in an OS update being first tested in production.
- Instead of using `latest`, use a specific AL2023 release version. This ensures you are deploying the same changes across production instances as you previously tested. For example, `dnf --releasever=2023.12.20260817 update` will always update to the 2023.12.20260817 release.
+ Instead of using `latest`, use a specific AL2023 release version. This ensures you are deploying the same changes across production instances as you previously tested. For example, `dnf --releasever=2023.12.20260930 update` will always update to the 2023.12.20260930 release.
  For more information, see the [Updating AL2023](https://docs.aws.amazon.com/linux/al2023/ug/updating.html) section in the [AL2023 User Guide](https://docs.aws.amazon.com/linux/al2023/ug/).
 
 **Topics**

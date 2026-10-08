@@ -31,6 +31,11 @@ Retrieves a forecast for how much Amazon Web Services predicts that you will use
       "Or": [
          "Expression"
       ],
+      "ProductAttributes": {
+         "Key": "{{string}}",
+         "MatchOptions": [ "{{string}}" ],
+         "Values": [ "{{string}}" ]
+      },
       "Tags": {
          "Key": "{{string}}",
          "MatchOptions": [ "{{string}}" ],

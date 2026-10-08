@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/buy-it-now-on-third-party-webs
 title: 'Guidance for Buy-It-Now on Third Party Websites on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/buy-it-now-on-third-party-websites-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Buy-It-Now on Third Party Websites on AWS

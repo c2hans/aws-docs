@@ -59,6 +59,7 @@ The following data types are supported by AWS Cost Explorer:
 +  [MetricValue](API_MetricValue.md)
 +  [ModifyRecommendationDetail](API_ModifyRecommendationDetail.md)
 +  [NetworkResourceUtilization](API_NetworkResourceUtilization.md)
++  [ProductAttributeValues](API_ProductAttributeValues.md)
 +  [RDSInstanceDetails](API_RDSInstanceDetails.md)
 +  [RecommendationDetailData](API_RecommendationDetailData.md)
 +  [RecommendationDetailHourlyMetrics](API_RecommendationDetailHourlyMetrics.md)

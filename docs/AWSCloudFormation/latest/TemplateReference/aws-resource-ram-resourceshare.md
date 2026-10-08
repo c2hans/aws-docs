@@ -12,6 +12,10 @@ Creates a resource share. You can provide a list of the Amazon Resource Names (A
 **Note**
 Sharing a resource makes it available for use by principals outside of the AWS account that created the resource. Sharing doesn't change any permissions or quotas that apply to the resource in the account that created it.
 
+**Note**
+We recommend that you model your resource share associations with separate association resources. Use `AWS::RAM::ResourceAssociation`, `AWS::RAM::PrincipalAssociation`, `AWS::RAM::PermissionAssociation`, and `AWS::RAM::SourceAssociation` instead of this resource's `ResourceArns`, `Principals`, `PermissionArns`, and `Sources` properties. Separate association resources give you more granular control, drift detection, and visibility into association failures.
+For an example, see [Creating a resource share with association resources](#aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources).
+
 ## Syntax
 <a name="aws-resource-ram-resourceshare-syntax"></a>
 
@@ -144,8 +148,8 @@ The date and time when the resource share was created.
 `FeatureSet`  <a name="FeatureSet-fn::getatt"></a>
 Indicates what features are available for this resource share. This parameter can have one of the following values:
 + **STANDARD** – A resource share that supports all functionality. These resource shares are visible to all principals you share the resource share with. You can modify these resource shares in AWS RAM using the console or APIs. This resource share might have been created by AWS RAM, or it might have been **CREATED\_FROM\_POLICY** and then promoted.
-+ **CREATED\_FROM\_POLICY** – The customer manually shared a resource by attaching a resource-based policy. That policy did not match any existing managed permissions, so AWS RAM created this customer managed permission automatically on the customer's behalf based on the attached policy document. This type of resource share is visible only to the AWS account that created it. You can't modify it in AWS RAM unless you promote it. For more information, see PromoteResourceShareCreatedFromPolicy.
-+ **PROMOTING\_TO\_STANDARD** – This resource share was originally `CREATED_FROM_POLICY`, but the customer ran the PromoteResourceShareCreatedFromPolicy and that operation is still in progress. This value changes to `STANDARD` when complete.
++ **CREATED\_FROM\_POLICY** – The customer manually shared a resource by attaching a resource-based policy. That policy did not match any existing managed permissions, so AWS RAM created this customer managed permission automatically on the customer's behalf based on the attached policy document. This type of resource share is visible only to the AWS account that created it. You can't modify it in AWS RAM unless you promote it. For more information, see [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html).
++ **PROMOTING\_TO\_STANDARD** – This resource share was originally `CREATED_FROM_POLICY`, but the customer ran the [PromoteResourceShareCreatedFromPolicy](https://docs.aws.amazon.com/ram/latest/APIReference/API_PromoteResourceShareCreatedFromPolicy.html) and that operation is still in progress. This value changes to `STANDARD` when complete.
 
 `LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 The date and time when the resource share was last updated.
@@ -158,6 +162,102 @@ The current status of the resource share.
 
 ## Examples
 <a name="aws-resource-ram-resourceshare--examples"></a>
+
+**Topics**
++ [Creating a resource share with association resources](#aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources)
++ [Creating a resource share](#aws-resource-ram-resourceshare--examples--Creating_a_resource_share)
+
+### Creating a resource share with association resources
+<a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources"></a>
+
+The following example creates a resource share. It uses separate association resources to associate a resource, a principal, and a permission with that resource share. With separate association resources, you can manage each association independently in your stack:
+
+#### YAML
+<a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources--yaml"></a>
+
+```
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Resource share with separate association resources
+Resources:
+  MyResourceShare:
+    Type: AWS::RAM::ResourceShare
+    Properties:
+      Name: "My Resource Share"
+      AllowExternalPrincipals: true
+      Tags:
+        - Key: "Environment"
+          Value: "Production"
+
+  MyResourceAssociation:
+    Type: AWS::RAM::ResourceAssociation
+    Properties:
+      ResourceShareArn: !GetAtt MyResourceShare.Arn
+      ResourceArn: "arn:aws:glue:us-east-1:111122223333:database/example_db"
+
+  MyPrincipalAssociation:
+    Type: AWS::RAM::PrincipalAssociation
+    Properties:
+      ResourceShareArn: !GetAtt MyResourceShare.Arn
+      Principal: "444455556666"
+
+  MyPermissionAssociation:
+    Type: AWS::RAM::PermissionAssociation
+    Properties:
+      ResourceShareArn: !GetAtt MyResourceShare.Arn
+      PermissionArn: "arn:aws:ram::aws:permission/AWSRAMPermissionGlueDatabaseReadWrite"
+```
+
+#### JSON
+<a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share_with_association_resources--json"></a>
+
+```
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Resource share with separate association resources",
+  "Resources": {
+    "MyResourceShare": {
+      "Type": "AWS::RAM::ResourceShare",
+      "Properties": {
+        "Name": "My Resource Share",
+        "AllowExternalPrincipals": true,
+        "Tags": [
+          {
+            "Key": "Environment",
+            "Value": "Production"
+          }
+        ]
+      }
+    },
+    "MyResourceAssociation": {
+      "Type": "AWS::RAM::ResourceAssociation",
+      "Properties": {
+        "ResourceShareArn": {
+          "Fn::GetAtt": ["MyResourceShare", "Arn"]
+        },
+        "ResourceArn": "arn:aws:glue:us-east-1:111122223333:database/example_db"
+      }
+    },
+    "MyPrincipalAssociation": {
+      "Type": "AWS::RAM::PrincipalAssociation",
+      "Properties": {
+        "ResourceShareArn": {
+          "Fn::GetAtt": ["MyResourceShare", "Arn"]
+        },
+        "Principal": "444455556666"
+      }
+    },
+    "MyPermissionAssociation": {
+      "Type": "AWS::RAM::PermissionAssociation",
+      "Properties": {
+        "ResourceShareArn": {
+          "Fn::GetAtt": ["MyResourceShare", "Arn"]
+        },
+        "PermissionArn": "arn:aws:ram::aws:permission/AWSRAMPermissionGlueDatabaseReadWrite"
+      }
+    }
+  }
+}
+```
 
 ### Creating a resource share
 <a name="aws-resource-ram-resourceshare--examples--Creating_a_resource_share"></a>

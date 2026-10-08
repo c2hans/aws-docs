@@ -114,7 +114,7 @@ You can enable EKS Hybrid Nodes in an existing cluster by using:
 
 1. Choose the name of the cluster to display your cluster information.
 
-1. Choose the **Networking** tab and choose **Manage**.
+1. Choose the **Configuration** tab, then in the **Networking** section choose **Manage**.
 
 1. In the dropdown, choose **Remote networks**.
 
@@ -172,7 +172,7 @@ When updating `remoteNodeNetworks` or `remotePodNetworks` CIDR lists, include al
 
 1. Choose the name of the cluster to display your cluster information.
 
-1. Choose the **Networking** tab and choose **Manage**.
+1. Choose the **Configuration** tab, then in the **Networking** section choose **Manage**.
 
 1. In the dropdown, choose **Remote networks**.
 
@@ -231,7 +231,7 @@ You can disable EKS Hybrid Nodes in an existing cluster by using:
 
 1. Choose the name of the cluster to display your cluster information.
 
-1. Choose the **Networking** tab and choose **Manage**.
+1. Choose the **Configuration** tab, then in the **Networking** section choose **Manage**.
 
 1. In the dropdown, choose **Remote networks**.
 

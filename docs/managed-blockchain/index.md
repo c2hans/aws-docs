@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/index.html
 title: 'Amazon Managed Blockchain Documentation'
 canonical_url: https://docs.aws.amazon.com/managed-blockchain/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Amazon Managed Blockchain Documentation

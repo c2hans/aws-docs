@@ -97,8 +97,9 @@ The following `update-thing-shadow` example modifies the current state of the de
 
 ```
 aws iot-data update-thing-shadow \
+    --cli-binary-format {{raw-in-base64-out}} \
     --thing-name {{MyRPi}} \
-    --payload "{"state":{"reported":{"moisture":"okay"}}}" \
+    --payload '{{{"state":{"reported":{"moisture":"okay"}}}}}' \
     {{"output.txt"}}
 ```
 The command produces no output on the display, but the following shows the contents of `output.txt`:

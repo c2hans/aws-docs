@@ -25,6 +25,6 @@ Both users are over-privileged (AdministratorAccess), so every privilege-depende
 **AgentCore facts observed:**
 - Control-plane tenant isolation is clean: cross-account `Get*/Update*` on another account's resource id returns `ResourceNotFoundException` (identical to a bogus id in your own account) — no existence leak, no cross-account mutation.
 - Cheapest resources to stand up (no container/role): `CreatePolicyEngine` (name regex `^[A-Za-z][A-Za-z0-9_]*$`), `CreateApiKeyCredentialProvider`, `CreateMemory`.
-- `CreateHarness`/`CreateAgentRuntime` require an ECR container image (heavy standup).
+- `CreateAgentRuntime` requires an ECR container image (heavy standup). **CreateHarness does NOT** — a bare `create_harness(harnessName, executionRoleArn)` with a service-trusting role reaches READY in ~105s with a default Bedrock model + managed memory (cheapest AgentCore compute; see [[agentcore-harness]]).
 - Gateway (`CreateGateway`, authorizerType AWS_IAM) + `CreateGatewayTarget` (openApiSchema needs HTTPS `servers` URL) is a cheaper invoke-path substrate; gateway MCP endpoint is SigV4-signable with service name `bedrock-agentcore`.
 - api-key / oauth credential providers store secret in service-managed Secrets Manager (`bedrock-agentcore-identity!default/apikey/...`) — do NOT read that secret material (service plane). Provide synthetic canary values on create instead.

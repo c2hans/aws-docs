@@ -58,3 +58,29 @@ aws batch delete-job-queue --job-queue {{GPGPU}}
 +  For API details, see [DeleteJobQueue](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/DeleteJobQueue) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def delete_job_queue(self, job_queue: str) -> None:
+        """
+        Deletes a job queue. The queue must be disabled first.
+
+        :param job_queue: The job queue name or ARN to delete.
+        """
+        try:
+            self.batch_client.delete_job_queue(jobQueue=job_queue)
+            logger.info("Deleted job queue %s.", job_queue)
+        except ClientError as err:
+            logger.error(
+                "Error deleting job queue %s: %s",
+                job_queue,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [DeleteJobQueue](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/DeleteJobQueue) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

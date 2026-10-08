@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-post-d
 
 After the AFT infrastructure deployment is complete, follow these additional steps to complete the setup process and get ready to provision accounts.
 
-**Step 1: Complete CodeConnections with your desired VCS provider**
+**Step 1: Complete AWS CodeConnections with your desired VCS provider**
 
-If you choose a third-party VCS provider, AFT establishes CodeConnections, and you confirm them. Refer to [Alternatives for version control of source code in AFT](aft-alternative-vcs.md) to learn how to set up AFT with your preferred VCS.
+If you choose a third-party VCS provider, AFT establishes AWS CodeConnections, and you confirm them. Refer to [Alternatives for version control of source code in AFT](aft-alternative-vcs.md) to learn how to set up AFT with your preferred VCS.
 
 The initial step of establishing the AWS CodeStar connection is accomplished by AFT. You must confirm the connection.
 

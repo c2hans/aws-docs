@@ -336,6 +336,7 @@ Default: `INFO`
 `diskSpaceLimit`  <a name="log-manager-component-configuration-component-disk-space-limit"></a>
 (Optional) The maximum total size of all log files for this component, in the unit you specify in `diskSpaceLimitUnit`. After the total size of this component's log files exceeds this maximum total size, the AWS IoT Greengrass Core software deletes this component's oldest log files.
 This parameter is related to the [log size limit](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-system-logs-limit) parameter (`totalLogsSizeKB`) of the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software uses the minimum of the two values as the maximum total log size for this component.
+The log manager component applies this limit only after it uploads a component's log files to CloudWatch Logs. For a component that writes its own log files, files that aren't uploaded (for example, while the device is offline or uploads fail) aren't deleted, so the total size can exceed this limit.
 `diskSpaceLimitUnit`  <a name="log-manager-component-configuration-disk-space-limit-unit"></a>
 (Optional) The unit for the `diskSpaceLimit`. Choose from the following options:
 + `KB` – kilobytes
@@ -471,6 +472,7 @@ Default: `INFO`
 `diskSpaceLimit`  <a name="log-manager-component-configuration-component-disk-space-limit"></a>
 (Optional) The maximum total size of all log files for this component, in the unit you specify in `diskSpaceLimitUnit`. After the total size of this component's log files exceeds this maximum total size, the AWS IoT Greengrass Core software deletes this component's oldest log files.
 This parameter is related to the [log size limit](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-system-logs-limit) parameter (`totalLogsSizeKB`) of the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software uses the minimum of the two values as the maximum total log size for this component.
+The log manager component applies this limit only after it uploads a component's log files to CloudWatch Logs. For a component that writes its own log files, files that aren't uploaded (for example, while the device is offline or uploads fail) aren't deleted, so the total size can exceed this limit.
 `diskSpaceLimitUnit`  <a name="log-manager-component-configuration-disk-space-limit-unit"></a>
 (Optional) The unit for the `diskSpaceLimit`. Choose from the following options:
 + `KB` – kilobytes
@@ -601,6 +603,7 @@ Default: `INFO`
 `diskSpaceLimit`  <a name="log-manager-component-configuration-component-disk-space-limit"></a>
 (Optional) The maximum total size of all log files for this component, in the unit you specify in `diskSpaceLimitUnit`. After the total size of this component's log files exceeds this maximum total size, the AWS IoT Greengrass Core software deletes this component's oldest log files.
 This parameter is related to the [log size limit](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-system-logs-limit) parameter (`totalLogsSizeKB`) of the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software uses the minimum of the two values as the maximum total log size for this component.
+The log manager component applies this limit only after it uploads a component's log files to CloudWatch Logs. For a component that writes its own log files, files that aren't uploaded (for example, while the device is offline or uploads fail) aren't deleted, so the total size can exceed this limit.
 `diskSpaceLimitUnit`  <a name="log-manager-component-configuration-disk-space-limit-unit"></a>
 (Optional) The unit for the `diskSpaceLimit`. Choose from the following options:
 + `KB` – kilobytes
@@ -724,6 +727,7 @@ Default: `INFO`
 `diskSpaceLimit`  <a name="log-manager-component-configuration-component-disk-space-limit"></a>
 (Optional) The maximum total size of all log files for this component, in the unit you specify in `diskSpaceLimitUnit`. After the total size of this component's log files exceeds this maximum total size, the AWS IoT Greengrass Core software deletes this component's oldest log files.
 This parameter is related to the [log size limit](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-system-logs-limit) parameter (`totalLogsSizeKB`) of the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software uses the minimum of the two values as the maximum total log size for this component.
+The log manager component applies this limit only after it uploads a component's log files to CloudWatch Logs. For a component that writes its own log files, files that aren't uploaded (for example, while the device is offline or uploads fail) aren't deleted, so the total size can exceed this limit.
 `diskSpaceLimitUnit`  <a name="log-manager-component-configuration-disk-space-limit-unit"></a>
 (Optional) The unit for the `diskSpaceLimit`. Choose from the following options:
 + `KB` – kilobytes
@@ -825,6 +829,7 @@ Default: `INFO`
 `diskSpaceLimit`  <a name="log-manager-component-configuration-component-disk-space-limit"></a>
 (Optional) The maximum total size of all log files for this component, in the unit you specify in `diskSpaceLimitUnit`. After the total size of this component's log files exceeds this maximum total size, the AWS IoT Greengrass Core software deletes this component's oldest log files.
 This parameter is related to the [log size limit](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-system-logs-limit) parameter (`totalLogsSizeKB`) of the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software uses the minimum of the two values as the maximum total log size for this component.
+The log manager component applies this limit only after it uploads a component's log files to CloudWatch Logs. For a component that writes its own log files, files that aren't uploaded (for example, while the device is offline or uploads fail) aren't deleted, so the total size can exceed this limit.
 `diskSpaceLimitUnit`  <a name="log-manager-component-configuration-disk-space-limit-unit"></a>
 (Optional) The unit for the `diskSpaceLimit`. Choose from the following options:
 + `KB` – kilobytes
@@ -927,6 +932,7 @@ Default: `INFO`
 `diskSpaceLimit`  <a name="log-manager-component-configuration-component-disk-space-limit"></a>
 (Optional) The maximum total size of all log files for this component, in the unit you specify in `diskSpaceLimitUnit`. After the total size of this component's log files exceeds this maximum total size, the AWS IoT Greengrass Core software deletes this component's oldest log files.
 This parameter is related to the [log size limit](greengrass-nucleus-component.md#greengrass-nucleus-component-configuration-system-logs-limit) parameter (`totalLogsSizeKB`) of the [Greengrass nucleus component](greengrass-nucleus-component.md). The AWS IoT Greengrass Core software uses the minimum of the two values as the maximum total log size for this component.
+The log manager component applies this limit only after it uploads a component's log files to CloudWatch Logs. For a component that writes its own log files, files that aren't uploaded (for example, while the device is offline or uploads fail) aren't deleted, so the total size can exceed this limit.
 `diskSpaceLimitUnit`  <a name="log-manager-component-configuration-disk-space-limit-unit"></a>
 (Optional) The unit for the `diskSpaceLimit`. Choose from the following options:
 + `KB` – kilobytes

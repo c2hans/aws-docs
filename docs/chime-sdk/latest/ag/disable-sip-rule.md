@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/disable-sip-rule.htm
 # Disabling a SIP rule
 <a name="disable-sip-rule"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
+
 Disable SIP rules when you don't need the connection that the rule provides. Also, you must disable a SIP rule before you delete that rule or an associated SIP media application. You can disable any rule created by any administrator. As a best practice, view the rule's details before you disable it, and check to ensure that disabling the rule won't disrupt a call flow. For more information, see [Viewing a SIP rule](view-a-rule.md)
 
 **To disable a SIP rule**

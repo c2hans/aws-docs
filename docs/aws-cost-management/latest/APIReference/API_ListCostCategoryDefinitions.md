@@ -47,7 +47,7 @@ Pattern: `[\S\s]*`
 Required: No
 
  ** [SupportedResourceTypes](#API_ListCostCategoryDefinitions_RequestSyntax) **   <a name="awscostmanagement-ListCostCategoryDefinitions-request-SupportedResourceTypes"></a>
- Filter cost category definitions that are supported by given resource types based on the latest version. If the filter is present, the result only includes Cost Categories that supports input resource type. If the filter isn't provided, no filtering is applied. The valid values are `billing:rispgroupsharing` and `billing:billingview`.
+ Filter cost category definitions that are supported by given resource types based on the latest version. If the filter is present, the result only includes Cost Categories that supports input resource type. If the filter isn't provided, no filtering is applied. The valid values are `billing:rispgroupsharing`, `billing:billingview`, and `billing:creditsharing`.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Pattern: `^[-a-zA-Z0-9/_]+:[-a-zA-Z0-9/_]+`

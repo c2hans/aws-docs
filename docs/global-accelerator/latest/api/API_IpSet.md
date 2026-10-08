@@ -10,6 +10,12 @@ A complex type for the set of IP addresses for an accelerator.
 ## Contents
 <a name="API_IpSet_Contents"></a>
 
+ ** IpAddressDetails **   <a name="globalaccelerator-Type-IpSet-IpAddressDetails"></a>
+The array of IP addresses in the IP address set, with detailed information about the IP addresses. An IP address set can have a maximum of two IP addresses.
+Type: Array of [IpAddressDetail](API_IpAddressDetail.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Required: No
+
  ** IpAddresses **   <a name="globalaccelerator-Type-IpSet-IpAddresses"></a>
 The array of IP addresses in the IP address set. An IP address set can have a maximum of two IP addresses.
 Type: Array of strings

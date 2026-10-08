@@ -790,6 +790,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [CancelExportJobV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CancelExportJobV2.html)  **
+  - **Description:** Grants permission to cancel an export job
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [ConnectorRegistrationsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ConnectorRegistrationsV2.html)  **
   - **Description:** Grants permission to complete the OAuth 2.0 authorization code flow based on input parameters
   - **Resource types (\*required):**
@@ -1108,6 +1114,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [GetExportJobV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetExportJobV2.html)  **
+  - **Description:** Grants permission to retrieve an export job
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetFindingAggregator](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetFindingAggregator.html)  **
   - **Description:** Grants permission to retrieve details for a finding aggregator, which configures finding aggregation across Regions
   - **Resource types (\*required):** [finding-aggregator\*](#list_securityhub-resource-finding-aggregator)
@@ -1252,6 +1264,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListExportJobsV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListExportJobsV2.html)  **
+  - **Description:** Grants permission to list export jobs
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListExposuresByRemediationV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListExposuresByRemediationV2.html)  **
   - **Description:** Grants permission to retrieve a list of exposure findings associated with a remediation target
   - **Resource types (\*required):** [hubv2\*](#list_securityhub-resource-hubv2)
@@ -1316,6 +1334,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [StartConfigurationPolicyDisassociation](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartConfigurationPolicyDisassociation.html)  **
   - **Description:** Grants permission to remove a configuration policy association from a member account or organizational unit in the calling account's organization
   - **Resource types (\*required):** [hub](#list_securityhub-resource-hub)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [StartExportJobV2](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartExportJobV2.html)  **
+  - **Description:** Grants permission to start an export job
+  - **Resource types (\*required):** [hubv2](#list_securityhub-resource-hubv2)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityhub-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 

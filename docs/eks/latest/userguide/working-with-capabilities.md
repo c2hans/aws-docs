@@ -35,9 +35,9 @@ Capability resources have a status that indicates their current state. You can v
 
 1. Select your cluster name.
 
-1. Choose the **Capabilities** tab to view status for all capabilities.
+1. In the left navigation pane, choose **Capabilities** to view status for all capabilities.
 
-1. For detailed health information, choose the **Observability** tab, then **Monitor cluster**, then the **Capabilities** tab.
+1. For detailed health information, choose **Cluster monitoring** in the left navigation pane, then the **Capabilities** tab.
 
  ** AWS CLI**:
 
@@ -96,7 +96,7 @@ You can list all capability resources on a cluster.
 
 1. Select your cluster name to open the cluster detail page.
 
-1. Choose the **Capabilities** tab.
+1. In the left navigation pane, choose **Capabilities**.
 
 1. View capability resources under **Managed capabilities**.
 
@@ -156,7 +156,7 @@ Get detailed information about a specific capability, including its configuratio
 
 1. Select your cluster name to open the cluster detail page.
 
-1. Choose the **Capabilities** tab.
+1. In the left navigation pane, choose **Capabilities**.
 
 1. Choose the capability you want to view from **Managed capabilities**.
 
@@ -243,7 +243,7 @@ You may optionally choose to retain AWS resources associated with ACK Kubernetes
 
 1. Select your cluster name to open the cluster detail page.
 
-1. Choose the **Capabilities** tab.
+1. In the left navigation pane, choose **Capabilities**.
 
 1. Select the capability you want to delete from the list of **Managed capabilities**.
 

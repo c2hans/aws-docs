@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/distributed-load-testing-on-a
 title: 'Distributed Load Testing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/distributed-load-testing-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Distributed Load Testing on AWS
 
 Automate performance testing at scale for better reliability and efficiency
 
-- **Version**: 4.3.0
-- **Released**: 09/2026
+- **Version**: 4.3.1
+- **Released**: 10/2026
 - **Est. deployment time**: 15 mins
 - **Estimated cost**: [See details](/solutions/latest/distributed-load-testing-on-aws/cost.html)
 - **Implementation guide**: [View guide](/solutions/latest/distributed-load-testing-on-aws/solution-overview.html)

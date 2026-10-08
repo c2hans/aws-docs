@@ -21,6 +21,6 @@ For more information, see [An example authentication session](authentication.md#
 ![Authentication overview.](https://docs.aws.amazon.com/cognito/latest/developerguide/images/scenario-authentication-cup.png)
 
 **Topics**
-+ [Authorizing access to client or server resources with Amazon Verified Permissions](scenario-backend.md)
++ [Authorizing access to client or server resources with Amazon Verified Permissions](scenario-avp-authorize-resources.md)
 + [Accessing resources with API Gateway after sign-in](user-pool-accessing-resources-api-gateway-and-lambda.md)
 + [Accessing AWS services using an identity pool after sign-in](amazon-cognito-integrating-user-pools-with-identity-pools.md)

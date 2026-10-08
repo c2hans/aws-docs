@@ -167,3 +167,54 @@ Output:
 +  For API details, see [CreateComputeEnvironment](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/CreateComputeEnvironment) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def create_compute_environment(
+        self,
+        compute_environment_name: str,
+        subnet_ids: list,
+        security_group_ids: list,
+        max_vcpus: int = 4,
+    ) -> dict:
+        """
+        Creates a managed Fargate compute environment.
+
+        :param compute_environment_name: The name for the compute environment.
+        :param subnet_ids: A list of subnet IDs for the compute resources.
+        :param security_group_ids: A list of security group IDs.
+        :param max_vcpus: Maximum number of vCPUs (default 4).
+        :return: A dictionary with the compute environment name and ARN.
+        """
+        try:
+            response = self.batch_client.create_compute_environment(
+                computeEnvironmentName=compute_environment_name,
+                type="MANAGED",
+                state="ENABLED",
+                computeResources={
+                    "type": "FARGATE",
+                    "maxvCpus": max_vcpus,
+                    "subnets": subnet_ids,
+                    "securityGroupIds": security_group_ids,
+                },
+            )
+            logger.info(
+                "Created compute environment %s: %s",
+                response["computeEnvironmentName"],
+                response["computeEnvironmentArn"],
+            )
+            return response
+        except ClientError as err:
+            logger.error(
+                "Error creating compute environment %s: %s",
+                compute_environment_name,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [CreateComputeEnvironment](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/CreateComputeEnvironment) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

@@ -7,7 +7,7 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 # Hello AWS Batch
 <a name="batch_example_batch_Hello_section"></a>
 
-The following code example shows how to get started using AWS Batch.
+The following code examples show how to get started using AWS Batch.
 
 ------
 #### [ Java ]
@@ -90,5 +90,43 @@ public class HelloBatch {
 }
 ```
 +  For API details, see [listJobsPaginator](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/listJobsPaginator) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+def hello_batch() -> None:
+    """
+    Lists compute environments using the AWS Batch service.
+    """
+    batch_client = boto3.client("batch")
+    print("Hello, AWS Batch! Let's list your compute environments:\n")
+    try:
+        response = batch_client.describe_compute_environments()
+        environments = response.get("computeEnvironments", [])
+        if environments:
+            print(f"Found {len(environments)} compute environment(s):")
+            for env in environments:
+                print(
+                    f"  - Name: {env['computeEnvironmentName']} | "
+                    f"Type: {env.get('type', 'N/A')} | "
+                    f"State: {env.get('state', 'N/A')} | "
+                    f"Status: {env.get('status', 'N/A')}"
+                )
+        else:
+            print("No compute environments found in your account.")
+    except ClientError as err:
+        logger.error(
+            "Error listing compute environments: %s",
+            err.response["Error"]["Message"],
+        )
+        raise
+
+    print("\nHello example complete.")
+```
++  For API details, see [listJobsPaginator](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/listJobsPaginator) in *AWS SDK for Python (Boto3) API Reference*.
 
 ------

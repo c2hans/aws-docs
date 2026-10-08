@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/chatbot/index.html
 title: 'Amazon Q Developer in chat applications Documentation'
 canonical_url: https://docs.aws.amazon.com/chatbot/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Amazon Q Developer in chat applications Documentation

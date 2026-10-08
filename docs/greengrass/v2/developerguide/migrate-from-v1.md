@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-fro
 AWS IoT Greengrass Version 2 is a major version release of the AWS IoT Greengrass Core software, APIs, and console. AWS IoT Greengrass V2 introduces several improvements to AWS IoT Greengrass V1, such as modular applications, deployments to large fleets of devices, and support for additional platforms.
 
 **Note**
-End of support notice: On October 7, 2026, AWS will end support for AWS IoT Greengrass Version 1. After October 7, 2026, you will no longer be able to access the AWS IoT Greengrass V1 console or AWS IoT Greengrass V1 resources.
+End of support notice: On October 7, 2026, AWS ended support for AWS IoT Greengrass Version 1. The AWS IoT Greengrass V1 API operations and resources are no longer available.
 
 Follow instructions in this guide to migrate from AWS IoT Greengrass V1 to AWS IoT Greengrass V2.
 

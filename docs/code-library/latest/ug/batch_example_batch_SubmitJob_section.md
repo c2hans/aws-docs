@@ -69,3 +69,42 @@ Output:
 +  For API details, see [SubmitJob](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/SubmitJob) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def submit_job(self, job_name: str, job_queue: str, job_definition: str) -> dict:
+        """
+        Submits a job to a job queue.
+
+        :param job_name: A descriptive name for the job.
+        :param job_queue: The job queue name or ARN.
+        :param job_definition: The job definition name:revision or ARN.
+        :return: A dictionary with the job name, ID, and ARN.
+        """
+        try:
+            response = self.batch_client.submit_job(
+                jobName=job_name,
+                jobQueue=job_queue,
+                jobDefinition=job_definition,
+            )
+            logger.info(
+                "Submitted job %s (ID: %s): %s",
+                response["jobName"],
+                response["jobId"],
+                response.get("jobArn", ""),
+            )
+            return response
+        except ClientError as err:
+            logger.error(
+                "Error submitting job %s: %s",
+                job_name,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [SubmitJob](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/SubmitJob) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

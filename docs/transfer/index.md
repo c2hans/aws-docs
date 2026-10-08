@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/transfer/index.html
 title: 'AWS Transfer Family Documentation'
 canonical_url: https://docs.aws.amazon.com/transfer/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # AWS Transfer Family Documentation

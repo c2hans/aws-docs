@@ -54,3 +54,31 @@ aws batch delete-compute-environment --compute-environment {{P2OnDemand}}
 +  For API details, see [DeleteComputeEnvironment](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/DeleteComputeEnvironment) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def delete_compute_environment(self, compute_environment: str) -> None:
+        """
+        Deletes a compute environment.
+
+        :param compute_environment: The compute environment name or ARN to delete.
+        """
+        try:
+            self.batch_client.delete_compute_environment(
+                computeEnvironment=compute_environment
+            )
+            logger.info("Deleted compute environment %s.", compute_environment)
+        except ClientError as err:
+            logger.error(
+                "Error deleting compute environment %s: %s",
+                compute_environment,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [DeleteComputeEnvironment](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/DeleteComputeEnvironment) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

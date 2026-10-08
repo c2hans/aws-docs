@@ -66,3 +66,43 @@ Output:
 +  For API details, see [UpdateComputeEnvironment](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/UpdateComputeEnvironment) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def update_compute_environment(self, compute_environment: str, state: str) -> dict:
+        """
+        Updates a compute environment, such as disabling it before deletion.
+
+        A compute environment must be DISABLED before it can be deleted;
+        calling ``delete_compute_environment`` on an ENABLED environment raises
+        "Cannot delete an enabled compute environment, set the state to
+        DISABLED first."
+
+        :param compute_environment: The compute environment name or ARN.
+        :param state: The new state (ENABLED or DISABLED).
+        :return: The response dictionary.
+        """
+        try:
+            response = self.batch_client.update_compute_environment(
+                computeEnvironment=compute_environment, state=state
+            )
+            logger.info(
+                "Updated compute environment %s to state %s.",
+                compute_environment,
+                state,
+            )
+            return response
+        except ClientError as err:
+            logger.error(
+                "Error updating compute environment %s: %s",
+                compute_environment,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [UpdateComputeEnvironment](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/UpdateComputeEnvironment) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

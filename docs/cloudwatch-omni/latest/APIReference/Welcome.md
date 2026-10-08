@@ -29,4 +29,4 @@ Omni is an interface and set of workflows built on Amazon CloudWatch. It is not 
 
 You continue to configure how telemetry is collected and stored — log groups, retention, and ingestion endpoints — in the CloudWatch console.
 
-This document was last published on October 7, 2026.
+This document was last published on October 8, 2026.

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/automated-security-response-o
 title: 'Automated Security Response on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-security-response-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Automated Security Response on AWS

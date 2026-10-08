@@ -697,7 +697,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [BatchGetCalculatedAttributeForProfile](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_BatchGetCalculatedAttributeForProfile.html)  **
   - **Description:** Grants permission to retrieve a calculated attribute for the specific profiles in the domain
   - **Resource types (\*required):** [calculated-attributes\*](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [BatchGetProfile](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_BatchGetProfile.html)  **
@@ -709,7 +709,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateCalculatedAttributeDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateCalculatedAttributeDefinition.html)  **
   - **Description:** Grants permission to create a calculated attribute definition in the domain
   - **Resource types (\*required):** [calculated-attributes\*](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateDomain.html)  **
@@ -720,19 +720,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateDomainLayout](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateDomainLayout.html)  **
   - **Description:** Grants permission to create a layout in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [layouts\*](#list_customer-profiles-resource-layouts) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateEventStream](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateEventStream.html)  **
   - **Description:** Grants permission to put an event stream in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-streams\*](#list_customer-profiles-resource-event-streams) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateEventTrigger](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateEventTrigger.html)  **
   - **Description:** Grants permission to create an event trigger in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-triggers\*](#list_customer-profiles-resource-event-triggers) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
@@ -750,25 +750,25 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateRecommender](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateRecommender.html)  **
   - **Description:** Grants permission to create a Recommender in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateRecommenderFilter](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateRecommenderFilter.html)  **
   - **Description:** Grants permission to create a recommender filter in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Resource types (\*required):** [recommender-filters\*](#list_customer-profiles-resource-recommender-filters) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateRecommenderSchema](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateRecommenderSchema.html)  **
   - **Description:** Grants permission to create a recommender schema in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Resource types (\*required):** [recommender-schemas\*](#list_customer-profiles-resource-recommender-schemas) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateSegmentDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateSegmentDefinition.html)  **
   - **Description:** Grants permission to create a segment definition in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
@@ -780,7 +780,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateSegmentSnapshot](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_CreateSegmentSnapshot.html)  **
   - **Description:** Grants permission to create a segment snapshot in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -793,7 +793,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteCalculatedAttributeDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteCalculatedAttributeDefinition.html)  **
   - **Description:** Grants permission to delete a calculated attribute definition in the domain
   - **Resource types (\*required):** [calculated-attributes\*](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteDomain.html)  **
@@ -804,31 +804,31 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeleteDomainLayout](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteDomainLayout.html)  **
   - **Description:** Grants permission to delete a layout in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [layouts\*](#list_customer-profiles-resource-layouts) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteDomainObjectType](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteDomainObjectType.html)  **
   - **Description:** Grants permission to delete a specific domain object type in the domain
   - **Resource types (\*required):** [domain-object-types\*](#list_customer-profiles-resource-domain-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteEventStream](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteEventStream.html)  **
   - **Description:** Grants permission to delete an event stream in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-streams\*](#list_customer-profiles-resource-event-streams) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteEventTrigger](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteEventTrigger.html)  **
   - **Description:** Grants permission to delete an event trigger in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-triggers\*](#list_customer-profiles-resource-event-triggers) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteIntegration](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteIntegration.html)  **
   - **Description:** Grants permission to delete a integration in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integrations\*](#list_customer-profiles-resource-integrations) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -846,37 +846,37 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DeleteProfileObject](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfileObject.html)  **
   - **Description:** Grants permission to delete a profile object
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteProfileObjectType](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteProfileObjectType.html)  **
   - **Description:** Grants permission to delete a specific profile object type in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteRecommender](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteRecommender.html)  **
   - **Description:** Grants permission to delete a recommender in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteRecommenderFilter](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteRecommenderFilter.html)  **
   - **Description:** Grants permission to delete a recommender filter in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommender-filters\*](#list_customer-profiles-resource-recommender-filters) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteRecommenderSchema](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteRecommenderSchema.html)  **
   - **Description:** Grants permission to delete a recommender schema in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommender-schemas\*](#list_customer-profiles-resource-recommender-schemas) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteSegmentDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_DeleteSegmentDefinition.html)  **
   - **Description:** Grants permission to delete a segment definition in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -913,13 +913,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetCalculatedAttributeDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetCalculatedAttributeDefinition.html)  **
   - **Description:** Grants permission to get a calculated attribute definition in the domain
   - **Resource types (\*required):** [calculated-attributes\*](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetCalculatedAttributeForProfile](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetCalculatedAttributeForProfile.html)  **
   - **Description:** Grants permission to retrieve a calculated attribute for a specific profile in the domain
   - **Resource types (\*required):** [calculated-attributes\*](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetDomain.html)  **
@@ -930,25 +930,25 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetDomainLayout](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetDomainLayout.html)  **
   - **Description:** Grants permission to get a layout in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [layouts\*](#list_customer-profiles-resource-layouts) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetDomainObjectType](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetDomainObjectType.html)  **
   - **Description:** Grants permission to get a specific domain object type in the domain
   - **Resource types (\*required):** [domain-object-types\*](#list_customer-profiles-resource-domain-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetEventStream](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetEventStream.html)  **
   - **Description:** Grants permission to get a specific event stream in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-streams\*](#list_customer-profiles-resource-event-streams) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetEventTrigger](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetEventTrigger.html)  **
   - **Description:** Grants permission to get an event trigger in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-triggers\*](#list_customer-profiles-resource-event-triggers) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -960,7 +960,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetIntegration](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetIntegration.html)  **
   - **Description:** Grants permission to get a specific integrations in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integrations\*](#list_customer-profiles-resource-integrations) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -972,7 +972,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetObjectTypeAttributeStatistics](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetObjectTypeAttributeStatistics.html)  **
   - **Description:** Grants permission to get statistics of a specific attribute for object type in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -990,7 +990,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetProfileObjectType](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetProfileObjectType.html)  **
   - **Description:** Grants permission to get a specific profile object type in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -1002,31 +1002,31 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetProfileRecommendations](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetProfileRecommendations.html)  **
   - **Description:** Grants permission to list recommendations for a profile
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetRecommender](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetRecommender.html)  **
   - **Description:** Grants permission to get Recommender details in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetRecommenderFilter](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetRecommenderFilter.html)  **
   - **Description:** Grants permission to get recommender filter details in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommender-filters\*](#list_customer-profiles-resource-recommender-filters) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetRecommenderSchema](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetRecommenderSchema.html)  **
   - **Description:** Grants permission to get recommender schema details in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommender-schemas\*](#list_customer-profiles-resource-recommender-schemas) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
 - **   [GetSegmentDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentDefinition.html)  **
   - **Description:** Grants permission to get a segment definition in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -1044,7 +1044,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetSegmentSnapshot](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_GetSegmentSnapshot.html)  **
   - **Description:** Grants permission to get a segment snapshot in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [segment-definitions\*](#list_customer-profiles-resource-segment-definitions) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -1123,7 +1123,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ListDomainObjects](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListDomainObjects.html)  **
   - **Description:** Grants permission to list domain objects in a domain
   - **Resource types (\*required):** [domain-object-types\*](#list_customer-profiles-resource-domain-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListDomains](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListDomains.html)  **
@@ -1158,13 +1158,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListObjectTypeAttributeValues](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListObjectTypeAttributeValues.html)  **
   - **Description:** Grants permission to list values of a specific attribute for object type in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListObjectTypeAttributes](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListObjectTypeAttributes.html)  **
   - **Description:** Grants permission to list all the attributes of a specific object type in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
@@ -1194,7 +1194,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListProfileObjects](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileObjects.html)  **
   - **Description:** Grants permission to list all the profile objects for a profile
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
@@ -1277,24 +1277,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [PutDomainObjectType](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutDomainObjectType.html)  **
   - **Description:** Grants permission to put a specific domain object type in the domain
   - **Resource types (\*required):** [domain-object-types\*](#list_customer-profiles-resource-domain-object-types) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [PutIntegration](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutIntegration.html)  **
   - **Description:** Grants permission to put a integration in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [integrations\*](#list_customer-profiles-resource-integrations) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
 - **   [PutProfileObject](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutProfileObject.html)  **
   - **Description:** Grants permission to put an object for a profile
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [PutProfileObjectType](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_PutProfileObjectType.html)  **
   - **Description:** Grants permission to put a specific profile object type in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [object-types\*](#list_customer-profiles-resource-object-types) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_customer-profiles-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_customer-profiles-aws_TagKeys)
   - **Access level:** Write
 
@@ -1312,7 +1312,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [StartRecommender](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_StartRecommender.html)  **
   - **Description:** Grants permission to start a recommender in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -1324,7 +1324,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [StopRecommender](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_StopRecommender.html)  **
   - **Description:** Grants permission to stop a recommender in a domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -1369,7 +1369,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateCalculatedAttributeDefinition](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateCalculatedAttributeDefinition.html)  **
   - **Description:** Grants permission to update a calculated attribute definition in the domain
   - **Resource types (\*required):** [calculated-attributes\*](#list_customer-profiles-resource-calculated-attributes) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateDomain](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomain.html)  **
@@ -1380,13 +1380,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateDomainLayout](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateDomainLayout.html)  **
   - **Description:** Grants permission to update a layout in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [layouts\*](#list_customer-profiles-resource-layouts) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateEventTrigger](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateEventTrigger.html)  **
   - **Description:** Grants permission to update an event trigger in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [event-triggers\*](#list_customer-profiles-resource-event-triggers) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -1398,7 +1398,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateRecommender](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_UpdateRecommender.html)  **
   - **Description:** Grants permission to update a Recommender in the domain
-  - **Resource types (\*required):** [domains\*](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [domains](#list_customer-profiles-resource-domains) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [recommenders\*](#list_customer-profiles-resource-recommenders) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_customer-profiles-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 

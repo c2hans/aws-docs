@@ -15,6 +15,15 @@ The date and time when the tenant was created.
 Type: Timestamp
 Required: No
 
+ ** SendingStatus **   <a name="SES-Type-TenantInfo-SendingStatus"></a>
+The status of sending capability for the tenant:
++  `ENABLED` – Sending is allowed for the tenant.
++  `DISABLED` – Sending is prevented for the tenant.
++  `REINSTATED` – Sending is allowed even if there are active reputation findings.
+Type: String
+Valid Values: `ENABLED | REINSTATED | DISABLED`
+Required: No
+
  ** TenantArn **   <a name="SES-Type-TenantInfo-TenantArn"></a>
 The Amazon Resource Name (ARN) of the tenant.
 Type: String

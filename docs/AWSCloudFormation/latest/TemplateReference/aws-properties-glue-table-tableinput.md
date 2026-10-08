@@ -75,7 +75,7 @@ The table name. For Hive compatibility, this is folded to lowercase when it is s
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 *Minimum*: `1`
 *Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Owner`  <a name="cfn-glue-table-tableinput-owner"></a>
 The table owner. Included for Apache Hive compatibility. Not used in the normal course of AWS Glue operations.

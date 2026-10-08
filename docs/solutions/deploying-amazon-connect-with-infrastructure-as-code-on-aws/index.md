@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-amazon-connect-with-
 title: 'Guidance for Deploying Amazon Connect Customer Customer with Infrastructure as Code on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-amazon-connect-with-infrastructure-as-code-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Deploying Amazon Connect Customer Customer with Infrastructure as Code on AWS

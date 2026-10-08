@@ -17,19 +17,19 @@ Checks if your CloudFormation stacks send event notifications to an Amazon SNS t
 
 **Parameters:**
 
-snsTopic2 (Optional)Type: String
-SNS topic ARN.
-
 snsTopic1 (Optional)Type: String
 SNS topic ARN.
 
-snsTopic5 (Optional)Type: String
+snsTopic2 (Optional)Type: String
+SNS topic ARN.
+
+snsTopic3 (Optional)Type: String
 SNS topic ARN.
 
 snsTopic4 (Optional)Type: String
 SNS topic ARN.
 
-snsTopic3 (Optional)Type: String
+snsTopic5 (Optional)Type: String
 SNS topic ARN.
 
 ## AWS CloudFormation template

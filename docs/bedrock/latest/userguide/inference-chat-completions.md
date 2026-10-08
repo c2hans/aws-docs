@@ -91,6 +91,16 @@ curl -X POST "https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1/chat/com
 
 Use `bedrock-mantle` as a compatibility option when a model or feature that you require isn't available on `bedrock-runtime`. The endpoint supports Amazon Bedrock API key authentication, AWS credentials, and the OpenAI SDK.
 
+The examples in this section read the `OPENAI_BASE_URL` and `OPENAI_API_KEY` environment variables. Set them to the `bedrock-mantle` base URL and your Amazon Bedrock API key:
+
+```
+OPENAI_BASE_URL="https://bedrock-mantle.<your-region>.api.aws/v1"
+OPENAI_API_KEY="<provide your Bedrock API key>"
+```
+
+**Important**
+Point `OPENAI_BASE_URL` at `bedrock-mantle` for these examples. Model cards set it to the `bedrock-runtime` base URL (`https://bedrock-runtime.{region}.amazonaws.com/openai/v1`), and `bedrock-runtime` doesn't implement the Models API, so listing models against that base URL returns `404 UnknownOperationException`.
+
 ### List available models
 <a name="inference-chat-completions-mantle-list-models"></a>
 

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/predicting-loan-defaults-for-f
 title: 'Guidance for Predicting Loan Defaults for Financial Institutions on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/predicting-loan-defaults-for-financial-institutions-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Predicting Loan Defaults for Financial Institutions on AWS

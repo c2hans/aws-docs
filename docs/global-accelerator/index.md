@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/global-accelerator/index.html
 title: 'AWS Global Accelerator Documentation'
 canonical_url: https://docs.aws.amazon.com/global-accelerator/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # AWS Global Accelerator Documentation

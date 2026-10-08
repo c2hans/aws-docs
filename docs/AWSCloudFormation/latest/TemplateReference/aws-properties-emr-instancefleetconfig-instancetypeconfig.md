@@ -24,7 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[BidPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidprice)" : {{String}},
   "[BidPriceAsPercentageOfOnDemandPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice)" : {{Number}},
-  "[Configurations](#cfn-emr-instancefleetconfig-instancetypeconfig-configurations)" : {{[ Configuration, ... ]}},
+  "[Configurations](#cfn-emr-instancefleetconfig-instancetypeconfig-configurations)" : {{[ ApplicationConfiguration, ... ]}},
   "[CustomAmiId](#cfn-emr-instancefleetconfig-instancetypeconfig-customamiid)" : {{String}},
   "[EbsConfiguration](#cfn-emr-instancefleetconfig-instancetypeconfig-ebsconfiguration)" : {{EbsConfiguration}},
   "[InstanceType](#cfn-emr-instancefleetconfig-instancetypeconfig-instancetype)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [BidPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidprice): {{String}}
   [BidPriceAsPercentageOfOnDemandPrice](#cfn-emr-instancefleetconfig-instancetypeconfig-bidpriceaspercentageofondemandprice): {{Number}}
   [Configurations](#cfn-emr-instancefleetconfig-instancetypeconfig-configurations): {{
-    - Configuration}}
+    - ApplicationConfiguration}}
   [CustomAmiId](#cfn-emr-instancefleetconfig-instancetypeconfig-customamiid): {{String}}
   [EbsConfiguration](#cfn-emr-instancefleetconfig-instancetypeconfig-ebsconfiguration): {{
     EbsConfiguration}}
@@ -71,7 +71,7 @@ The bid price, as a percentage of On-Demand price, for each Amazon EC2 Spot Inst
 Amazon EMR releases 4.x or later.
 An optional configuration specification to be used when provisioning cluster instances, which can include configurations for applications and software bundled with Amazon EMR. A configuration consists of a classification, properties, and optional nested configurations. A classification refers to an application-specific configuration file. Properties are the settings you want to change in that file. For more information, see [Configuring Applications](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-apps.html).
 *Required*: No
-*Type*: Array of [Configuration](aws-properties-emr-instancefleetconfig-configuration.md)
+*Type*: Array of [ApplicationConfiguration](aws-properties-emr-instancefleetconfig-applicationconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CustomAmiId`  <a name="cfn-emr-instancefleetconfig-instancetypeconfig-customamiid"></a>

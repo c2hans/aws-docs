@@ -73,7 +73,7 @@ Choose one of the following links to go to the page for that service. To view th
 + [CodeArtifact](codeartifact.md)
 + [CodeBuild](codebuild.md)
 + [CodeCommit](codecommit.md)
-+ [CodeConnections](codeconnections.md)
++ [AWS CodeConnections](codeconnections.md)
 + [CodeDeploy](codedeploy.md)
 + [CodeGuru Profiler](codeguru-profiler.md)
 + [CodeGuru Reviewer](codeguru-reviewer.md)

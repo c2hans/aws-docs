@@ -36,6 +36,11 @@ This is an opt-in only feature. You can enable this feature from the Cost Explor
       "Or": [
          "Expression"
       ],
+      "ProductAttributes": {
+         "Key": "{{string}}",
+         "MatchOptions": [ "{{string}}" ],
+         "Values": [ "{{string}}" ]
+      },
       "Tags": {
          "Key": "{{string}}",
          "MatchOptions": [ "{{string}}" ],
@@ -76,7 +81,8 @@ Required: No
 Filters Amazon Web Services costs by different dimensions. For example, you can specify `SERVICE` and `LINKED_ACCOUNT` and get the costs that are associated with that account's usage of that service. You can nest `Expression` objects to define any combination of dimension filters. For more information, see [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html).
 The `GetCostAndUsageWithResources` operation requires that you either group by or filter by a `ResourceId`. It requires the [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) `"SERVICE = Amazon Elastic Compute Cloud - Compute"` in the filter.
 Valid values for `MatchOptions` for `Dimensions` are `EQUALS` and `CASE_SENSITIVE`.
-Valid values for `MatchOptions` for `CostCategories` and `Tags` are `EQUALS`, `ABSENT`, and `CASE_SENSITIVE`. Default values are `EQUALS` and `CASE_SENSITIVE`.
+Valid values for `MatchOptions` for `CostCategories`, `Tags`, and `ProductAttributes` are `EQUALS`, `ABSENT`, and `CASE_SENSITIVE`. Default values are `EQUALS` and `CASE_SENSITIVE`.
+If you filter or group by product attributes, the `SERVICE` filter rules are the same as for [GetCostAndUsage](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCostAndUsage.html).
 Type: [Expression](API_Expression.md) object
 Required: Yes
 
@@ -87,7 +93,8 @@ Valid Values: `DAILY | MONTHLY | HOURLY`
 Required: Yes
 
  ** [GroupBy](#API_GetCostAndUsageWithResources_RequestSyntax) **   <a name="awscostmanagement-GetCostAndUsageWithResources-request-GroupBy"></a>
-You can group Amazon Web Services costs using up to two different groups: `DIMENSION`, `TAG`, `COST_CATEGORY`.
+You can group Amazon Web Services costs using up to two different groups: `DIMENSION`, `TAG`, `COST_CATEGORY`, and `PRODUCT_ATTRIBUTE`.
+ `PRODUCT_ATTRIBUTE` groups work the same way as in [GetCostAndUsage](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetCostAndUsage.html). A `PRODUCT_ATTRIBUTE` group or a `ProductAttributes` filter doesn't meet the requirement to group by or filter by a `ResourceId`.
 Type: Array of [GroupDefinition](API_GroupDefinition.md) objects
 Required: No
 

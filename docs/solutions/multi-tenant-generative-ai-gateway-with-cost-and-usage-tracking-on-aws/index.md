@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-tenant-generative-ai-gat
 title: 'Guidance for a Multi-Tenant, Generative AI Gateway with Cost and Usage Tracking on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-tenant-generative-ai-gateway-with-cost-and-usage-tracking-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for a Multi-Tenant, Generative AI Gateway with Cost and Usage Tracking on AWS

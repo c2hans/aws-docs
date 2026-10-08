@@ -6,6 +6,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sdk-use-pstn-service
 <a name="sdk-use-pstn-service"></a>
 
 **Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).
+
+**Note**
 This section describes the Chime SDK PSTN audio service, which was previously referred to as “SIP Media Applications (SMA)” in prior versions of the documentation and some blog posts. Going forward, when we refer to “SIP Media Applications,” we are referring to the configuration items in the Amazon Chime SDK console and the AWS SDK that are associated with the PSTN audio service.
 
 This section explains how to use the Amazon Chime SDK Public Switched Telephone Network (PSTN) Audio service. With the PSTN audio service, developers can build custom telephony applications using the agility and operational simplicity of a serverless AWS Lambda function.

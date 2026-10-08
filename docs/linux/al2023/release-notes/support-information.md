@@ -56,7 +56,7 @@ Repository sources from which packages are distributed.
 ### Core package support status
 <a name="support-information-al2023-packages"></a>
 
-For the support status of an individual core package, see [Amazon Linux 2023 RPM packages as of the 2023.12.20260817 release](all-packages-AL2023.12.md).
+For the support status of an individual core package, see [Amazon Linux 2023 RPM packages as of the 2023.12.20260930 release](all-packages-AL2023.12.md).
 
 ## Supplementary Packages for Amazon Linux (SPAL)
 <a name="support-information-spal"></a>

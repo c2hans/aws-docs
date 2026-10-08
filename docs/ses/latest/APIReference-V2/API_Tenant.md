@@ -16,7 +16,10 @@ Type: Timestamp
 Required: No
 
  ** SendingStatus **   <a name="SES-Type-Tenant-SendingStatus"></a>
-The status of sending capability for the tenant.
+The status of sending capability for the tenant:
++  `ENABLED` – Sending is allowed for the tenant.
++  `DISABLED` – Sending is prevented for the tenant.
++  `REINSTATED` – Sending is allowed even if there are active reputation findings.
 Type: String
 Valid Values: `ENABLED | REINSTATED | DISABLED`
 Required: No

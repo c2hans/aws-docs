@@ -11,9 +11,9 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-goog
 ## Model Details
 <a name="model-card-google-gemma-4-e2b-details"></a>
 
-Gemma 4 E2B is Google's compact model with 5.1 billion total parameters and 2.3 billion effective parameters using Per-Layer Embeddings (PLE), designed for low-latency workloads with built-in reasoning, native function calling, and multimodal input across text and image, supporting a 128K token context window. For more information about model development and performance, see the [model/service card](https://huggingface.co/google/gemma-4-E2B-it).
-+ **Model launch date:** Mar 31, 2026
-+ **EOL no sooner than:** Mar 31, 2027
+Gemma 4 E2B is Google's compact model with 5.1 billion total parameters and 2.3 billion effective parameters using Per-Layer Embeddings (PLE), designed for low-latency workloads with instruction tuning, built-in reasoning, native function calling, and multimodal input across text and image, supporting a 128K token context window. For more information about model development and performance, see the [model/service card](https://huggingface.co/google/gemma-4-E2B-it).
++ **Model launch date:** March 31, 2026
++ **EOL no sooner than:** March 31, 2027
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
 + **Model EOL date:** N/A
@@ -42,7 +42,7 @@ On `bedrock-mantle`, Gemma 4 models are served under the `/openai/v1` path prefi
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](tool-use.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Reasoning](reasoning.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Projects](projects.html)  | — |
+|  + ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](tool-use.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Reasoning](reasoning.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Projects](projects.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)  | — |
 
 ## Pricing
 <a name="model-card-google-gemma-4-e2b-pricing"></a>

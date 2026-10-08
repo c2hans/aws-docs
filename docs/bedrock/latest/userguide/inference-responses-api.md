@@ -45,24 +45,7 @@ Each endpoint is governed by its own set of quotas. For Responses traffic on `be
 
 On the `bedrock-runtime` endpoint, the Responses API is available in every AWS Region where that endpoint is available, including the AWS GovCloud (US) Regions. For the list, see [Regional availability by endpoints](endpoints-region-availability.md). Which models support the API on each endpoint is listed in [Endpoint availability](models-endpoint-availability.md).
 
-The `bedrock-mantle` endpoint is available in the following AWS Regions:
-
-| Region Name | Region | Endpoint |
-| --- | --- | --- |
-| US East (Ohio) | us-east-2 | bedrock-mantle.us-east-2.api.aws |
-| US East (N. Virginia) | us-east-1 | bedrock-mantle.us-east-1.api.aws |
-| US West (Oregon) | us-west-2 | bedrock-mantle.us-west-2.api.aws |
-| Asia Pacific (Jakarta) | ap-southeast-3 | bedrock-mantle.ap-southeast-3.api.aws |
-| Asia Pacific (Mumbai) | ap-south-1 | bedrock-mantle.ap-south-1.api.aws |
-| Asia Pacific (Sydney) | ap-southeast-2 | bedrock-mantle.ap-southeast-2.api.aws |
-| Asia Pacific (Tokyo) | ap-northeast-1 | bedrock-mantle.ap-northeast-1.api.aws |
-| Europe (Frankfurt) | eu-central-1 | bedrock-mantle.eu-central-1.api.aws |
-| Europe (Ireland) | eu-west-1 | bedrock-mantle.eu-west-1.api.aws |
-| Europe (London) | eu-west-2 | bedrock-mantle.eu-west-2.api.aws |
-| Europe (Milan) | eu-south-1 | bedrock-mantle.eu-south-1.api.aws |
-| Europe (Stockholm) | eu-north-1 | bedrock-mantle.eu-north-1.api.aws |
-| South America (São Paulo) | sa-east-1 | bedrock-mantle.sa-east-1.api.aws |
-| AWS GovCloud (US-West) | us-gov-west-1 | bedrock-mantle.us-gov-west-1.api.aws |
+The `bedrock-mantle` endpoint is available in a subset of those AWS Regions. For the Regions that support each endpoint, see [Regional availability by endpoints](endpoints-region-availability.md). For the base URL to use with a Region, see [Endpoints supported by Amazon Bedrock](endpoints.md).
 
 ## Prerequisites
 <a name="bedrock-mantle-prereq"></a>

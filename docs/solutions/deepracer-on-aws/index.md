@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/deepracer-on-aws//index.html
 title: 'DeepRacer on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deepracer-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # DeepRacer on AWS
 
 Developers of all skill levels can get hands on with machine learning through a 3D racing simulator and fully autonomous 1/18th scale race cars driven by reinforcement learning.
 
-- **Version**: 1.3.1
+- **Version**: 1.3.2
 - **Release**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
@@ -43,44 +43,43 @@ You can automatically deploy this architecture using the implementation guide an
 
 ![DeepRacer on AWS](/images/solutions/deepracer-on-aws/images/deepracer-architecture.png)
 
-1. **Step 1**: A user accesses the DeepRacer on AWS user interface through an Amazon CloudFront distribution, which delivers static web assets from the UI assets bucket and video streams from simulations.
+1. **Step 1**: A user accesses the DeepRacer on AWS user interface through an Amazon CloudFront distribution, which delivers the static web assets from the UI assets bucket.
 1. **Step 2**: The user interface assets are hosted in an Amazon S3 bucket that stores the static web assets comprising the user interface.
 1. **Step 3**: An Amazon Cognito user pool manages users and user group membership.
-1. **Step 4**: An Amazon Cognito identity pool manages federation and rule-based role mapping for users.
-1. **Step 5**: AWS Identity and Access Management roles define permissions and level-of-access for each user group in the system, used for access control and authorization.
-1. **Step 6**: AWS Lambda registration hooks execute pre- and post-registration actions including assigning new users as racers, handling initial admin profile creation, and more.
+1. **Step 4**: An Amazon Cognito identity pool manages federation and authorization.
+1. **Step 5**: AWS Identity and Access Management user group roles define permissions and levels of access for each type of user in the system, used for access control and authorization.
+1. **Step 6**: AWS Lambda Cognito trigger functions run at points in the user lifecycle, such as sign-up, confirmation, and outgoing email. The pre-signup trigger applies new-user limits and creates the profile, and the post-confirmation trigger assigns the default racer group.
 1. **Step 7**: AWS WAF provides intelligent protection for the API against common attack vectors and allows customers to define custom rules based on individual use cases and usage patterns.
 1. **Step 8**: Amazon API Gateway routes API requests to their appropriate handler using a defined Smithy model.
-1. **Step 9**: A single Amazon DynamoDB table is responsible for storing and managing profiles, training jobs, models, evaluation jobs, submissions, and leaderboards.
-1. **Step 10**: AWS Lambda functions are triggered in response to requests routed from the API and are responsible for CRUD operations, dispatching training/evaluation jobs, and more.
-1. **Step 11**: A global settings handler (AWS Lambda function) reads and writes application-level settings to the configuration.
-1. **Step 12**: An AWS AppConfig hosted configuration stores application-level settings, such as usage quotas.
-1. **Step 13**: Model export handlers (AWS Lambda functions) retrieve the asset URL and package assets for use in exporting models from the system.
-1. **Step 14**: An Amazon Simple Queue Service dead-letter queue catches failed export jobs from the asset packaging function.
-1. **Step 15**: A virtual model bucket stores exported models and provides access to them via pre-signed URL.
-1. **Step 16**: A model import handler (AWS Lambda function) receives requests to import a model onto the system and creates a new import job.
-1. **Step 17**: A model import queue (Amazon Simple Queue Service) receives jobs from the model import function and holds them until they are accepted by the dispatcher; a DLQ handles failed jobs.
-1. **Step 18**: A failed request handler (AWS Lambda function) manages failed requests and updates their status to reflect their current state.
-1. **Step 19**: An import dispatching function takes a job from the queue and dispatches it to the workflow.
-1. **Step 20**: A reward function validator (AWS Lambda function) checks the reward function and validates/sanitizes the customer-provided code before it is saved to the system.
-1. **Step 21**: An imported model validator function checks and validates the imported model before it is saved to the system.
-1. **Step 22**: An imported model assets handler (AWS Lambda function) brings in model assets from the upload bucket.
-1. **Step 23**: An import completion handler (AWS Lambda function) handles status updates when a job is completed successfully.
-1. **Step 24**: An upload bucket (Amazon S3) stores uploaded (but not yet imported) assets from the user.
-1. **Step 25**: An Amazon Simple Queue Service FIFO queue receives requests for training and evaluation jobs and stores them in FIFO order.
-1. **Step 26**: A job dispatcher function picks a job off the top of the FIFO queue and dispatches it to the workflow.
-1. **Step 27**: Workflow functions handle setting up the job, setting status, and other workflow tasks.
-1. **Step 28**: Amazon SageMaker AI training jobs perform the actual training and evaluation of the model using the reward function and hyperparameters provided.
-1. **Step 29**: Amazon Kinesis Video Streams handles presenting the simulation video to the user from the training job.
-1. **Step 30**: A user data bucket stores all user data including trained models, evaluation results, and other assets generated during the DeepRacer workflow.
-1. **Step 31**: An Amazon DynamoDB stream captures table changes to trigger the live race orchestration and real-time broadcasting pipelines.
-1. **Step 32**: A broadcast handler (AWS Lambda function) processes stream records, detects relevant state changes, builds typed events, and publishes them to the real-time messaging channel.
-1. **Step 33**: AWS IoT Core provides a managed MQTT message broker that delivers real-time race state updates to spectator and participant browsers via authenticated WebSocket connections.
-1. **Step 34**: An Amazon EventBridge rule triggers the SafetyNet function whenever a live race workflow execution reaches a terminal state, ensuring the execution lock is cleared and pending evaluations are retriggered without manual intervention.
-1. **Step 35**: Queue API handlers (AWS Lambda functions) handle race facilitator operations including reorder, remove, reset, clear leaderboard, launch race, and declare winner.
-1. **Step 36**: An attach IoT policy function (AWS Lambda) resolves the caller's identity and attaches the messaging policy, authorizing real-time subscriptions for live race viewing.
-1. **Step 37**: A stream handler (AWS Lambda function) monitors the stream for new or pending queue items, verifies race preconditions, acquires the execution lock, and starts the evaluation workflow.
-1. **Step 38**: A SafetyNet function (AWS Lambda) serves as an execution recovery handler that clears the execution lock, applies backoff logic for repeated failures, and retriggers the stream handler if items remain in the queue.
+1. **Step 9**: An Amazon DynamoDB table serves as a single table for storing and managing profiles, training jobs, models, evaluation jobs, submissions, leaderboards, events, tracks, runs, laps, rankings, fleets, devices, and deployments.
+1. **Step 10**: AWS Lambda API functions back the API, with one function per operation. One function backs each API operation, covering profiles, models, races, events, devices, model import and export, and global settings.
+1. **Step 11**: AWS AppConfig hosted configuration stores application-level settings, such as usage quotas.
+1. **Step 12**: A user data bucket (Amazon S3) stores all user data including trained models, evaluation results, and other assets generated during the DeepRacer workflow.
+1. **Step 13**: An asset packaging AWS Lambda function packages a model's assets from the user data bucket into the virtual model bucket for export. Packaging jobs that fail go to an Amazon Simple Queue Service dead-letter queue.
+1. **Step 14**: A virtual model bucket (Amazon S3) stores exported models. The user's browser downloads an exported model directly from this bucket using the pre-signed URL the API returns.
+1. **Step 15**: An Amazon Simple Queue Service FIFO queue receives requests for training and evaluation jobs and stores them in FIFO order. A job that repeatedly fails to dispatch moves to a dead-letter queue rather than blocking the jobs behind it.
+1. **Step 16**: An AWS Step Functions training workflow runs each training or evaluation job from start to finish. If no training capacity is available it cleans up and leaves the job waiting for capacity. Otherwise it polls the job every minute while it runs, and finalizes the job whether it succeeds or fails.
+1. **Step 17**: AWS Lambda workflow functions perform the steps of each job. They dispatch each job, set it up, start and monitor the SageMaker job, and record the result.
+1. **Step 18**: Amazon SageMaker AI performs the actual training and evaluation of the model using the reward function and hyperparameters provided. Each job runs the DeepRacer training container image from Amazon ECR.
+1. **Step 19**: Amazon Kinesis Video Streams carries the simulation video from the SageMaker job to the user's browser.
+1. **Step 20**: An Amazon DynamoDB Stream captures item-level changes from the main table and delivers them to the race functions, enabling event-driven orchestration of live race evaluations and real-time broadcast of race state to spectators.
+1. **Step 21**: AWS Lambda race functions respond to live and physical race activity. They start each race evaluation, broadcast race state, recover stalled executions, and rebuild race statistics.
+1. **Step 22**: An AWS Step Functions live race workflow runs the queued submissions for a live race one at a time. The stream handler or a facilitator launching the race starts it. For each submission it runs the evaluation on SageMaker through the workflow functions, using four functions of its own:
+1. **Step 23**: Amazon EventBridge routes race events.
+1. **Step 24**: AWS IoT Core provides a managed WebSocket pub/sub channel for delivering live race state updates to spectator and participant browsers. Each live race uses a dedicated MQTT topic scoped by leaderboard ID, physical race events use a per-event topic tree, and device status and command results go to the device management screens. Browsers subscribe via WebSocket, and the broadcast handler publishes via IAM-authorized HTTPS, so no connections table or custom connect and disconnect handlers are needed. Facilitator and administrator browsers also publish directly to IoT Core, sending race countdown, pause, and resume state and race topic updates without passing through Lambda, which keeps timing jitter low.
+1. **Step 25**: An Amazon Simple Queue Service event delete queue receives a cascade-delete request when an event is deleted, so dependent records are removed asynchronously rather than inside the API request. Requests that keep failing go to a dead-letter queue for manual re-drive.
+1. **Step 26**: An event delete worker AWS Lambda function consumes the delete queue and removes the laps, runs, rankings, submissions, and tracks belonging to a deleted event, then the event record itself. It takes one message per invocation and is capped at two concurrent executions, so at most two events are torn down at a time.
+1. **Step 27**: AWS Systems Manager provides the hybrid activation that enrolls physical cars and timers as managed instances, and RunCommand for running commands on them. Each device is addressed by the managed instance id that hybrid activation assigned to it.
+1. **Step 28**: Physical devices (cars and timers) enroll themselves as managed instances using a hybrid activation code, and receive model deployments and control commands through Systems Manager. When a model is deployed, the car downloads it directly from the user data bucket using a pre-signed URL included in the command.
+1. **Step 29**: Amazon EventBridge device rules keep device status current.
+1. **Step 30**: AWS Lambda device functions track the state of each device. They track device registration, poll device status, and deregister devices whose records have expired.
+1. **Step 31**: Amazon GuardDuty malware protection scans physical models uploaded to the upload bucket and tags each object with the result. The model optimizer polls for that tag for up to a minute and proceeds only when the scan found no threats. A detected threat, an unscannable file, and a scan that failed or never reported all stop the import with a message instead. Malware scanning is on by default, and setting the ENABLE_GUARDDUTY_MALWARE_SCAN=false CDK context value at synthesis time leaves it out, after which the optimizer no longer waits for a tag.
+1. **Step 32**: AWS Lambda model transfer functions prepare a model for a physical car and deliver it. The optimizer converts a model into the format a physical car requires, and the push functions send the transfer command and track its status.
+1. **Step 33**: An AWS Step Functions push workflow orchestrates transferring a model to a physical car. It marks the deployment in progress, sends the download and installation command to the car through Systems Manager RunCommand along with a pre-signed URL for the model in the user data bucket, polls until the command finishes, and records the deployment as completed or failed.
+1. **Step 34**: An upload bucket (Amazon S3) stores uploaded (but not yet imported) assets from the user.
+1. **Step 35**: An Amazon Simple Queue Service import queue receives import jobs from the API functions and holds them until they are accepted by the import dispatcher. Jobs that fail twice move to a dead-letter queue, where a handler marks the import as failed.
+1. **Step 36**: An AWS Step Functions import workflow validates an imported virtual model and brings it into the system. It validates the reward function, validates the model, imports the model assets, and records the import as complete, stopping at the first validation that fails.
+1. **Step 37**: AWS Lambda import functions perform the steps of each import. They dispatch each import, validate the reward function and the model, copy the assets, and record the outcome.
 ## Deploy with confidence
 
 Everything you need to launch this AWS Solution in your account is right here.

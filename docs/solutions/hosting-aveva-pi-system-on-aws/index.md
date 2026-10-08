@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/hosting-aveva-pi-system-on-aws
 title: 'Guidance for Hosting AVEVA PI System on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/hosting-aveva-pi-system-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Hosting AVEVA PI System on AWS

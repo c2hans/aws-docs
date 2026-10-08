@@ -96,6 +96,14 @@ For more information, see [Computer use](computer-use.html).
 | --- | --- |
 | computer\_20250124 | computer-use-2025-01-24 |
 
+**Compaction using `bedrock-runtime` endpoint**
+
+For more information, see [Compaction](claude-messages-compaction.html).
+
+| **Compaction supported** | **Beta value** |
+| --- | --- |
+| Yes | compact-2026-09-04 |
+
 ## Pricing
 <a name="model-card-anthropic-claude-haiku-4-5-pricing"></a>
 

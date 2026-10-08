@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/route-calls-events.h
 # Routing calls and events to AWS Lambda functions for Amazon Chime SDK PSTN audio
 <a name="route-calls-events"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).
+
 The PSTN audio service provides the following ways to route incoming phone calls to your AWS Lambda function for treatment.
 + You can route calls based on the called number. To do this, an Amazon Chime SDK administrator creates a SIP rule with the **Trigger Type** set to **To phone number**. This phone number must exist in the Amazon Chime SDK phone number inventory, in the same AWS account as the SIP rule.
 + You can route calls to the AWS Lambda function based on the request URI of an incoming Voice Connector SIP call. To do this, an Amazon Chime SDK administrator creates a SIP rule with the **Trigger Type** set to **Request URI hostname**. This field must contain a fully-qualified domain name specified in the “outbound host name” field of a Voice Connector that is provisioned in the same AWS account as the SIP rule.

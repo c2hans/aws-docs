@@ -93,6 +93,14 @@ For more information, see [Computer use](computer-use.html).
 | --- | --- |
 | computer\_20251124 | computer-use-2025-11-24 |
 
+**Compaction using `bedrock-runtime` endpoint**
+
+For more information, see [Compaction](claude-messages-compaction.html).
+
+| **Compaction supported** | **Beta value** |
+| --- | --- |
+| Yes | compact-2026-09-04 |
+
 ## Pricing
 <a name="model-card-anthropic-claude-sonnet-5-pricing"></a>
 
@@ -105,7 +113,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | anthropic.claude-sonnet-5 | https://bedrock-runtime.{region}.amazonaws.com | `us.anthropic.claude-sonnet-5`<br />`eu.anthropic.claude-sonnet-5`<br />`au.anthropic.claude-sonnet-5`<br />`in.anthropic.claude-sonnet-5` | global.anthropic.claude-sonnet-5 |
+| bedrock-runtime | anthropic.claude-sonnet-5 | N/A | `us.anthropic.claude-sonnet-5`<br />`eu.anthropic.claude-sonnet-5`<br />`au.anthropic.claude-sonnet-5`<br />`in.anthropic.claude-sonnet-5` | global.anthropic.claude-sonnet-5 |
 | bedrock-mantle | anthropic.claude-sonnet-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A | N/A |
 
 *For example, to use Global cross-Region inference from us-east-1 (N. Virginia), use the endpoint URL "https://bedrock-runtime.us-east-1.amazonaws.com" with the inference profile ID "global.anthropic.claude-sonnet-5".*

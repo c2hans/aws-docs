@@ -87,6 +87,14 @@ For more information, see [Computer use](computer-use.html).
 | --- | --- |
 | computer\_20251124 | computer-use-2025-11-24 |
 
+**Compaction using `bedrock-runtime` endpoint**
+
+For more information, see [Compaction](claude-messages-compaction.html).
+
+| **Compaction supported** | **Beta value** |
+| --- | --- |
+| Yes | compact-2026-01-12 |
+
 ## Pricing
 <a name="model-card-anthropic-claude-sonnet-4-6-pricing"></a>
 
@@ -99,7 +107,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | anthropic.claude-sonnet-4-6 | https://bedrock-runtime.{region}.amazonaws.com | `us.anthropic.claude-sonnet-4-6`<br />`eu.anthropic.claude-sonnet-4-6`<br />`au.anthropic.claude-sonnet-4-6`<br />`jp.anthropic.claude-sonnet-4-6` | global.anthropic.claude-sonnet-4-6 |
+| bedrock-runtime | anthropic.claude-sonnet-4-6 | N/A | `us.anthropic.claude-sonnet-4-6`<br />`eu.anthropic.claude-sonnet-4-6`<br />`au.anthropic.claude-sonnet-4-6`<br />`jp.anthropic.claude-sonnet-4-6` | global.anthropic.claude-sonnet-4-6 |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com".*
 

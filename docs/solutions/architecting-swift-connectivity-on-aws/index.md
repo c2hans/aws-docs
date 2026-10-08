@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/architecting-swift-connectivit
 title: 'Guidance for Architecting SWIFT Connectivity on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/architecting-swift-connectivity-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Architecting SWIFT Connectivity on AWS

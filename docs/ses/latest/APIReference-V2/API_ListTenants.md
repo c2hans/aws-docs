@@ -17,6 +17,9 @@ POST /v2/email/tenants/list HTTP/1.1
 Content-type: application/json
 
 {
+   "Filter": {
+      "{{string}}" : "{{string}}"
+   },
    "NextToken": "{{string}}",
    "PageSize": {{number}}
 }
@@ -31,6 +34,13 @@ The request does not use any URI parameters.
 <a name="API_ListTenants_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [Filter](#API_ListTenants_RequestSyntax) **   <a name="SES-ListTenants-request-Filter"></a>
+An object that contains filters to apply when listing tenants. You can filter by a substring of the tenant name or by sending status.
+Type: String to string map
+Valid Keys: `TENANT_NAME_CONTAINS | SENDING_STATUS`
+Value Length Constraints: Minimum length of 1.
+Required: No
 
  ** [NextToken](#API_ListTenants_RequestSyntax) **   <a name="SES-ListTenants-request-NextToken"></a>
 A token returned from a previous call to `ListTenants` to indicate the position in the list of tenants.
@@ -54,6 +64,7 @@ Content-type: application/json
    "Tenants": [
       {
          "CreatedTimestamp": number,
+         "SendingStatus": "string",
          "TenantArn": "string",
          "TenantId": "string",
          "TenantName": "string"

@@ -315,7 +315,7 @@ Output:
                 "s3Location": {
                 "bundleType": "zip",
                 "version": "uTecLusEXAMPLEFXtfUcyfV8bEXAMPLE",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "WordPressApp.zip"
                 }
             },
@@ -345,7 +345,7 @@ Output:
                 "s3Location": {
                 "bundleType": "zip",
                 "eTag": "\"dd56cfdEXAMPLE8e768f9d77fEXAMPLE\"",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "MyOtherApp.zip"
                 }
             },
@@ -508,7 +508,7 @@ aws deploy create-deployment \
     --deployment-config-name {{CodeDeployDefault.OneAtATime}} \
     --deployment-group-name {{WordPress_DG}} \
     --description {{"My demo deployment"}} \
-    --s3-location {{bucket=amzn-s3-demo-bucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
+    --s3-location {{bucket=CodeDeployDemoBucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
 ```
 Output:
 
@@ -696,7 +696,7 @@ The following `get-application-revision` example displays information about an a
 ```
 aws deploy get-application-revision \
     --application-name {{WordPress_App}} \
-    --s3-location {{bucket=amzn-s3-demo-bucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
+    --s3-location {{bucket=CodeDeployDemoBucket,bundleType=zip,eTag=dd56cfdEXAMPLE8e768f9d77fEXAMPLE,key=WordPressApp.zip}}
 ```
 Output:
 
@@ -715,7 +715,7 @@ Output:
         "s3Location": {
             "bundleType": "zip",
             "eTag": "dd56cfdEXAMPLE8e768f9d77fEXAMPLE",
-            "bucket": "amzn-s3-demo-bucket",
+            "bucket": "CodeDeployDemoBucket",
             "key": "WordPressApp.zip"
         }
     }
@@ -1038,7 +1038,7 @@ Output:
             "s3Location":  {
             "bundleType": "zip",
             "eTag": "\"dd56cfdEXAMPLE8e768f9d77fEXAMPLE\"",
-            "bucket": "amzn-s3-demo-bucket",
+            "bucket": "CodeDeployDemoBucket",
             "key": "WordPressApp.zip"
             }
         },
@@ -1120,7 +1120,7 @@ The following `list-application-revisions` example displays information about al
 ```
 aws deploy list-application-revisions \
     --application-name {{WordPress_App}} \
-    --s-3-bucket {{amzn-s3-demo-bucket}} \
+    --s-3-bucket {{CodeDeployDemoBucket}} \
     --deployed {{exclude}} \
     --s-3-key-prefix {{WordPress_}} \
     --sort-by {{lastUsedTime}} \
@@ -1135,7 +1135,7 @@ Output:
             "revisionType": "S3",
             "s3Location": {
                 "version": "uTecLusvCB_JqHFXtfUcyfV8bEXAMPLE",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "WordPress_App.zip",
                 "bundleType": "zip"
             }
@@ -1144,7 +1144,7 @@ Output:
             "revisionType": "S3",
             "s3Location": {
                 "version": "tMk.UxgDpMEVb7V187ZM6wVAWEXAMPLE",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "WordPress_App_2-0.zip",
                 "bundleType": "zip"
             }
@@ -1407,14 +1407,14 @@ aws deploy push \
     --application-name {{WordPress_App}} \
     --description {{"This is my deployment"}} \
     --ignore-hidden-files \
-    --s3-location {{s3://amzn-s3-demo-bucket/WordPressApp.zip}} \
+    --s3-location {{s3://CodeDeployDemoBucket/WordPressApp.zip}} \
     --source {{/tmp/MyLocalDeploymentFolder/}}
 ```
 The output describes how to use the `create-deployment` command to create a deployment that uses the uploaded application revision.
 
 ```
 To deploy with this revision, run:
-aws deploy create-deployment --application-name WordPress_App --deployment-config-name <deployment-config-name> --deployment-group-name <deployment-group-name> --s3-location bucket=amzn-s3-demo-bucket,key=WordPressApp.zip,bundleType=zip,eTag="cecc9b8EXAMPLE50a6e71fdb88EXAMPLE",version=LFsJAUdEXAMPLEfvKtvi79L8EXAMPLE
+aws deploy create-deployment --application-name WordPress_App --deployment-config-name <deployment-config-name> --deployment-group-name <deployment-group-name> --s3-location bucket=CodeDeployDemoBucket,key=WordPressApp.zip,bundleType=zip,eTag="cecc9b8EXAMPLE50a6e71fdb88EXAMPLE",version=LFsJAUdEXAMPLEfvKtvi79L8EXAMPLE
 ```
 +  For API details, see [Push](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/push.html) in *AWS CLI Command Reference*.
 
@@ -1431,7 +1431,7 @@ The following `register-application-revision` example registers information abou
 aws deploy register-application-revision \
     --application-name {{WordPress_App}} \
     --description {{"Revised WordPress application"}} \
-    --s3-location {{bucket=amzn-s3-demo-bucket,key=RevisedWordPressApp.zip,bundleType=zip,eTag=cecc9b8a08eac650a6e71fdb88EXAMPLE}}
+    --s3-location {{bucket=CodeDeployDemoBucket,key=RevisedWordPressApp.zip,bundleType=zip,eTag=cecc9b8a08eac650a6e71fdb88EXAMPLE}}
 ```
 This command produces no output.
 +  For API details, see [RegisterApplicationRevision](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register-application-revision.html) in *AWS CLI Command Reference*.

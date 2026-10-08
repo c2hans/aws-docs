@@ -21,6 +21,7 @@ The following code examples show how to use the basics of AWS Batch with AWS SDK
   + [`DescribeComputeEnvironments`](batch_example_batch_DescribeComputeEnvironments_section.md)
   + [`DescribeJobQueues`](batch_example_batch_DescribeJobQueues_section.md)
   + [`DescribeJobs`](batch_example_batch_DescribeJobs_section.md)
+  + [`ListJobs`](batch_example_batch_ListJobs_section.md)
   + [`ListJobsPaginator`](batch_example_batch_ListJobsPaginator_section.md)
   + [`RegisterJobDefinition`](batch_example_batch_RegisterJobDefinition_section.md)
   + [`SubmitJob`](batch_example_batch_SubmitJob_section.md)

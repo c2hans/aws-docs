@@ -64,7 +64,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Used to specify the configuration options for an FSx for ONTAP volume's storage aggregate or aggregates.
 *Required*: No
 *Type*: [AggregateConfiguration](aws-properties-fsx-volume-aggregateconfiguration.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CopyTagsToBackups`  <a name="cfn-fsx-volume-ontapconfiguration-copytagstobackups"></a>
 A boolean flag indicating whether tags for the volume should be copied to backups. This value defaults to false. If it's set to true, all tags for the volume are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is true, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the volume, regardless of this value.

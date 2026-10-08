@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/index.html
 title: 'Amazon Aurora DSQL'
 canonical_url: https://docs.aws.amazon.com/aurora-dsql/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Amazon Aurora DSQL

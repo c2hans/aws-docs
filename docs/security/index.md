@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/security/index.html
 title: 'AWS Security Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # AWS Security Documentation
@@ -127,7 +127,6 @@ Cloud security at AWS is the highest priority. AWS customers benefit from data c
 - [AmazonLex](/lex/latest/dg/security.html)
 - [AWSMCP Server](/aws-mcp/latest/userguide/security.html)
 - [AmazonMonitron](/Monitron/latest/admin-guide/security.html)
-- [AWSPanorama](/panorama/latest/dev/panorama-security.html)
 - [AmazonPersonalize](/personalize/latest/dg/security.html)
 - [AmazonPolly](/polly/latest/dg/security.html)
 - [AmazonRekognition](/rekognition/latest/dg/security.html)

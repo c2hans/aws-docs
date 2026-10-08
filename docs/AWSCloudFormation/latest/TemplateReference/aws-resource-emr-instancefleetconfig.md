@@ -130,3 +130,9 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ### Fn::GetAtt
 <a name="aws-resource-emr-instancefleetconfig-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-emr-instancefleetconfig-return-values-fn--getatt-fn--getatt"></a>
+
+`InstanceFleetId`  <a name="InstanceFleetId-fn::getatt"></a>
+The unique identifier of the instance fleet.

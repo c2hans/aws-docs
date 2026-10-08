@@ -128,3 +128,52 @@ Output:
 +  For API details, see [CreateJobQueue](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/CreateJobQueue) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def create_job_queue(
+        self,
+        job_queue_name: str,
+        compute_environment_name: str,
+        priority: int = 1,
+    ) -> dict:
+        """
+        Creates a job queue associated with a compute environment.
+
+        :param job_queue_name: The name for the job queue.
+        :param compute_environment_name: The compute environment to associate.
+        :param priority: The priority of the job queue (default 1).
+        :return: A dictionary with the job queue name and ARN.
+        """
+        try:
+            response = self.batch_client.create_job_queue(
+                jobQueueName=job_queue_name,
+                state="ENABLED",
+                priority=priority,
+                computeEnvironmentOrder=[
+                    {
+                        "order": 1,
+                        "computeEnvironment": compute_environment_name,
+                    }
+                ],
+            )
+            logger.info(
+                "Created job queue %s: %s",
+                response["jobQueueName"],
+                response["jobQueueArn"],
+            )
+            return response
+        except ClientError as err:
+            logger.error(
+                "Error creating job queue %s: %s",
+                job_queue_name,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [CreateJobQueue](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/CreateJobQueue) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

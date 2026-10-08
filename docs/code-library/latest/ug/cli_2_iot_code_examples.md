@@ -3737,7 +3737,7 @@ Output:
     }
 }
 ```
-For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-view-rules) in the *AWS IoT Developers Guide*.
+For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-view-rules.htmlget-topic-rule) in the *AWS IoT Developers Guide*.
 +  For API details, see [GetTopicRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-topic-rule.html) in *AWS CLI Command Reference*.
 
 ### `get-v2-logging-options`
@@ -5547,7 +5547,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-view-rules) in the *AWS IoT Developers Guide*.
+For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-view-rules.htmlget-topic-rule) in the *AWS IoT Developers Guide*.
 +  For API details, see [ListTopicRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-topic-rules.html) in *AWS CLI Command Reference*.
 
 ### `list-v2-logging-levels`

@@ -32,6 +32,7 @@ The following data types are supported:
 +  [EndpointDescription](API_EndpointDescription.md)
 +  [EndpointGroup](API_EndpointGroup.md)
 +  [EndpointIdentifier](API_EndpointIdentifier.md)
++  [IpAddressDetail](API_IpAddressDetail.md)
 +  [IpSet](API_IpSet.md)
 +  [Listener](API_Listener.md)
 +  [PortMapping](API_PortMapping.md)

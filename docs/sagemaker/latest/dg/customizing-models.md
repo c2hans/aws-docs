@@ -16,6 +16,7 @@ Amazon SageMaker AI model customization lets you adapt foundation models to your
 + **RFT** (Reinforcement Fine-Tuning) — Optimize via reward signals (RLVR or RLAIF). See [RFT](customizing-models-rft.md).
 + **MTRL** (Multi-Turn Reinforcement Learning) — Train agents for multi-step agentic tasks. See [Multi-turn reinforcement learning](model-customize-mtrl.md).
 + **Continuous Customization** — Chain techniques sequentially. See [Continuous customization](customizing-models-continuous.md).
++ **Distillation** — Transfer knowledge from a teacher model to a student model. See [Distillation](customizing-models-distillation.md).
 
 **Training types** determine *how much* of the model to update:
 + **LoRA** (Low-Rank Adaptation) — Trains a small set of adapter weights. Lower cost, faster training. See [LoRA](customizing-models-lora.md).
@@ -29,7 +30,7 @@ Amazon SageMaker AI model customization lets you adapt foundation models to your
 ## Choosing your approach
 <a name="customizing-models-choosing"></a>
 
-Before fine-tuning, consider whether a simpler approach meets your needs:
+Before customizing, consider whether a simpler approach meets your needs:
 
 Prompt Engineering
 Your model gives acceptable answers but needs better tone, format, or style. No training required — fast iteration. See [Prompt engineering for foundation models](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-customize-prompt-engineering.html).

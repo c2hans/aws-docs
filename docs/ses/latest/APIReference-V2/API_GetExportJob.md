@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExport
 
 Provides information about an export job.
 
+When the job status is `COMPLETED`, the response includes a pre-signed URL in `ExportDestination.S3Url` that you use to download the export file.
+
 ## Request Syntax
 <a name="API_GetExportJob_RequestSyntax"></a>
 
@@ -116,7 +118,7 @@ The data source of the export job.
 Type: [ExportDataSource](API_ExportDataSource.md) object
 
  ** [ExportDestination](#API_GetExportJob_ResponseSyntax) **   <a name="SES-GetExportJob-response-ExportDestination"></a>
-The destination of the export job.
+The destination of the export job. When `JobStatus` is `COMPLETED`, this object includes `S3Url`, a pre-signed URL that you use to download the export file.
 Type: [ExportDestination](API_ExportDestination.md) object
 
  ** [ExportSourceType](#API_GetExportJob_ResponseSyntax) **   <a name="SES-GetExportJob-response-ExportSourceType"></a>

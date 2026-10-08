@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/migrating-tabular-data-from-am
 title: 'Guidance for Migrating Tabular Data from Amazon S3 to S3 Tables'
 canonical_url: https://docs.aws.amazon.com/solutions/migrating-tabular-data-from-amazon-s3-to-s3-tables/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Migrating Tabular Data from Amazon S3 to S3 Tables

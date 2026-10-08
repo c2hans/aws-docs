@@ -44,6 +44,11 @@ To determine valid values for a dimension, use the `GetDimensionValues` operatio
       "Or": [
          "Expression"
       ],
+      "ProductAttributes": {
+         "Key": "{{string}}",
+         "MatchOptions": [ "{{string}}" ],
+         "Values": [ "{{string}}" ]
+      },
       "Tags": {
          "Key": "{{string}}",
          "MatchOptions": [ "{{string}}" ],

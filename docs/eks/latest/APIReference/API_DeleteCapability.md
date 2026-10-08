@@ -47,6 +47,10 @@ Content-type: application/json
       "capabilityName": "string",
       "clusterName": "string",
       "configuration": {
+         "ack": {
+            "disabledServices": [ "string" ],
+            "enableCrossNamespace": boolean
+         },
          "argoCd": {
             "awsIdc": {
                "idcInstanceArn": "string",

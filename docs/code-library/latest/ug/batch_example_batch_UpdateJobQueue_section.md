@@ -65,3 +65,34 @@ Output:
 +  For API details, see [UpdateJobQueue](https://docs.aws.amazon.com/goto/SdkForJavaV2/batch-2016-08-10/UpdateJobQueue) in *AWS SDK for Java 2.x API Reference*.
 
 ------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/batch#code-examples).
+
+```
+    def update_job_queue(self, job_queue: str, state: str) -> dict:
+        """
+        Updates a job queue, such as disabling it before deletion.
+
+        :param job_queue: The job queue name or ARN.
+        :param state: The new state (ENABLED or DISABLED).
+        :return: The response dictionary.
+        """
+        try:
+            response = self.batch_client.update_job_queue(
+                jobQueue=job_queue, state=state
+            )
+            logger.info("Updated job queue %s to state %s.", job_queue, state)
+            return response
+        except ClientError as err:
+            logger.error(
+                "Error updating job queue %s: %s",
+                job_queue,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [UpdateJobQueue](https://docs.aws.amazon.com/goto/boto3/batch-2016-08-10/UpdateJobQueue) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

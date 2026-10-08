@@ -12,3 +12,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::LicenseManager::License](aws-resource-licensemanager-license.md)
 + [AWS::LicenseManager::LicenseAssetGroup](aws-resource-licensemanager-licenseassetgroup.md)
 + [AWS::LicenseManager::LicenseAssetRuleSet](aws-resource-licensemanager-licenseassetruleset.md)
++ [AWS::LicenseManager::ReportGenerator](aws-resource-licensemanager-reportgenerator.md)

@@ -25,7 +25,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "Type" : "AWS::CloudWatch::OTelEnrichment"
+  "Type" : "AWS::CloudWatch::OTelEnrichment",
+  "Properties" : {
+      "[ExcludeFilters](#cfn-cloudwatch-otelenrichment-excludefilters)" : {{[ OTelEnrichmentMetricSelector, ... ]}},
+      "[IncludeFilters](#cfn-cloudwatch-otelenrichment-includefilters)" : {{[ OTelEnrichmentMetricSelector, ... ]}}
+    }
 }
 ```
 
@@ -34,7 +38,32 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 Type: AWS::CloudWatch::OTelEnrichment
+Properties:
+  [ExcludeFilters](#cfn-cloudwatch-otelenrichment-excludefilters): {{
+    - OTelEnrichmentMetricSelector}}
+  [IncludeFilters](#cfn-cloudwatch-otelenrichment-includefilters): {{
+    - OTelEnrichmentMetricSelector}}
 ```
+
+## Properties
+<a name="aws-resource-cloudwatch-otelenrichment-properties"></a>
+
+`ExcludeFilters`  <a name="cfn-cloudwatch-otelenrichment-excludefilters"></a>
+The metric namespaces, and the metric names, to leave unenriched. If this parameter is omitted, nothing is excluded.
+Amazon CloudWatch applies `ExcludeFilters` after `IncludeFilters`, so a metric that both parameters match is not enriched.
+A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
+*Required*: No
+*Type*: Array of [OTelEnrichmentMetricSelector](aws-properties-cloudwatch-otelenrichment-otelenrichmentmetricselector.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`IncludeFilters`  <a name="cfn-cloudwatch-otelenrichment-includefilters"></a>
+The metric namespaces, and the metric names, to enrich. If this parameter is omitted, every namespace that Amazon CloudWatch supports for enrichment is in scope.
+A maximum of 100 filters is allowed across `IncludeFilters` and `ExcludeFilters` combined.
+*Required*: No
+*Type*: Array of [OTelEnrichmentMetricSelector](aws-properties-cloudwatch-otelenrichment-otelenrichmentmetricselector.md)
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
 <a name="aws-resource-cloudwatch-otelenrichment-return-values"></a>

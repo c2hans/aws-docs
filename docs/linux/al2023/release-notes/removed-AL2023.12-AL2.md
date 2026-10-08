@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 # Packages in Amazon Linux 2 not in Amazon Linux 2023
 <a name="removed-AL2023.12-AL2"></a>
 
- There are 1378 source packages and 6948 non-i686 binary packages in Amazon Linux 2 no longer in Amazon Linux 2023.
+ There are 1373 source packages and 6855 non-i686 binary packages in Amazon Linux 2 no longer in Amazon Linux 2023.
 
 **Topics**
 + [AL2 Core packages not in Amazon Linux 2023](#removed-AL2023.12-AL2-al2-core)
@@ -212,8 +212,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  bogofilter  | src, aarch64, x86\_64 |
 |  bogofilter-bogoupgrade  | src, aarch64, x86\_64 |
 |  bolt  | src, aarch64, x86\_64 |
-|  boost-doc  | noarch |
-|  boost-examples  | noarch |
 |  boost-jam  | aarch64, x86\_64 |
 |  boost-python  | aarch64, x86\_64 |
 |  boost-signals  | aarch64, x86\_64 |
@@ -272,8 +270,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  bsf-javadoc  | noarch |
 |  bsh-demo  | noarch |
 |  bsh-utils  | noarch |
-|  btrfs-progs  | src, aarch64, x86\_64 |
-|  btrfs-progs-devel  | src, aarch64, x86\_64 |
 |  buildnumber-maven-plugin  | src, noarch |
 |  buildnumber-maven-plugin-javadoc  | src, noarch |
 |  bwidget  | src, noarch |
@@ -497,11 +493,9 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  ecj  | aarch64, x86\_64 |
 |  edac-utils  | src, aarch64, x86\_64 |
 |  edac-utils-devel  | src, aarch64, x86\_64 |
-|  edk2-aarch64  | src, noarch |
-|  edk2-ovmf  | src, noarch |
-|  edk2-tools  | src, aarch64, x86\_64 |
-|  edk2-tools-doc  | src, noarch |
-|  edk2-tools-python  | src, noarch |
+|  edk2-tools  | aarch64, x86\_64 |
+|  edk2-tools-doc  | noarch |
+|  edk2-tools-python  | noarch |
 |  efax  | src, aarch64, x86\_64 |
 |  ElectricFence  | src, aarch64, x86\_64 |
 |  elfutils-devel-static  | aarch64, x86\_64 |
@@ -876,7 +870,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  google-noto-sans-syriac-estrangela-fonts  | noarch |
 |  google-noto-sans-traditional-chinese-fonts  | noarch |
 |  google-noto-sans-ui-fonts  | noarch |
-|  go-rpm-templates  | noarch |
 |  graphviz-guile  | aarch64, x86\_64 |
 |  graphviz-php  | aarch64, x86\_64 |
 |  graphviz-python  | aarch64, x86\_64 |
@@ -1218,7 +1211,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  intel-ipsec-mb  | src, x86\_64 |
 |  intel-ipsec-mb-devel  | src, x86\_64 |
 |  iok  | src, aarch64, x86\_64 |
-|  iotop  | noarch |
 |  iowatcher  | src, aarch64, x86\_64 |
 |  ipa-client  | src, aarch64, x86\_64 |
 |  ipa-client-common  | src, noarch |
@@ -1280,8 +1272,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  jakarta-taglibs-standard-javadoc  | src, noarch |
 |  jandex  | src, noarch |
 |  jandex-javadoc  | src, noarch |
-|  jansi  | noarch |
-|  jansi-javadoc  | noarch |
 |  jansi-native-javadoc  | aarch64, x86\_64 |
 |  jarjar  | src, noarch |
 |  jarjar-javadoc  | src, noarch |
@@ -1869,7 +1859,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  libspectre  | src, aarch64, x86\_64 |
 |  libspectre-devel  | src, aarch64, x86\_64 |
 |  libstoragemgmt-netapp-plugin  | noarch |
-|  libstoragemgmt-nfs-plugin  | noarch |
 |  libstoragemgmt-nfs-plugin-clibs  | aarch64, x86\_64 |
 |  libstoragemgmt-nstor-plugin  | noarch |
 |  libstoragemgmt-python  | noarch |
@@ -1901,37 +1890,17 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  libuser-python  | aarch64, x86\_64 |
 |  libverto-tevent  | aarch64, x86\_64 |
 |  libverto-tevent-devel  | aarch64, x86\_64 |
-|  libvirt  | src, aarch64, x86\_64 |
-|  libvirt-admin  | src, aarch64, x86\_64 |
-|  libvirt-bash-completion  | src, aarch64, x86\_64 |
-|  libvirt-client  | src, aarch64, x86\_64 |
-|  libvirt-daemon  | src, aarch64, x86\_64 |
-|  libvirt-daemon-config-network  | src, aarch64, x86\_64 |
-|  libvirt-daemon-config-nwfilter  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-interface  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-lxc  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-network  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-nodedev  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-nwfilter  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-qemu  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-secret  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage-core  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage-disk  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage-gluster  | src, x86\_64 |
-|  libvirt-daemon-driver-storage-iscsi  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage-logical  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage-mpath  | src, aarch64, x86\_64 |
-|  libvirt-daemon-driver-storage-rbd  | src, x86\_64 |
-|  libvirt-daemon-driver-storage-scsi  | src, aarch64, x86\_64 |
-|  libvirt-daemon-kvm  | src, aarch64, x86\_64 |
-|  libvirt-daemon-lxc  | src, aarch64, x86\_64 |
-|  libvirt-devel  | src, aarch64, x86\_64 |
-|  libvirt-docs  | src, aarch64, x86\_64 |
-|  libvirt-libs  | src, aarch64, x86\_64 |
-|  libvirt-lock-sanlock  | src, aarch64, x86\_64 |
-|  libvirt-login-shell  | src, aarch64, x86\_64 |
-|  libvirt-nss  | src, aarch64, x86\_64 |
+|  libvirt-admin  | aarch64, x86\_64 |
+|  libvirt-bash-completion  | aarch64, x86\_64 |
+|  libvirt-daemon-driver-lxc  | aarch64, x86\_64 |
+|  libvirt-daemon-driver-storage-gluster  | x86\_64 |
+|  libvirt-daemon-driver-storage-iscsi  | aarch64, x86\_64 |
+|  libvirt-daemon-driver-storage-mpath  | aarch64, x86\_64 |
+|  libvirt-daemon-driver-storage-rbd  | x86\_64 |
+|  libvirt-daemon-driver-storage-scsi  | aarch64, x86\_64 |
+|  libvirt-daemon-lxc  | aarch64, x86\_64 |
+|  libvirt-lock-sanlock  | aarch64, x86\_64 |
+|  libvirt-login-shell  | aarch64, x86\_64 |
 |  libvirt-cim  | src, aarch64, x86\_64 |
 |  libvirt-gconfig  | src, aarch64, x86\_64 |
 |  libvirt-gconfig-devel  | src, aarch64, x86\_64 |
@@ -1942,7 +1911,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  libvirt-java  | src, noarch |
 |  libvirt-java-devel  | src, noarch |
 |  libvirt-java-javadoc  | src, noarch |
-|  libvirt-python  | src, aarch64, x86\_64 |
+|  libvirt-python  | aarch64, x86\_64 |
 |  libvirt-snmp  | src, aarch64, x86\_64 |
 |  libvisio  | src, aarch64, x86\_64 |
 |  libvisio-devel  | src, aarch64, x86\_64 |
@@ -2560,10 +2529,8 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  perl-App-cpanminus  | src, noarch |
 |  perl-B-Lint  | src, noarch |
 |  perl-CGI-Session  | src, noarch |
-|  perl-common-sense  | noarch |
 |  perl-CPANPLUS  | src, noarch |
 |  perl-CPANPLUS-Dist-Build  | src, noarch |
-|  perl-Crypt-URandom  | noarch |
 |  perl-Data-Peek  | src, aarch64, x86\_64 |
 |  perl-DBIx-Simple  | src, noarch |
 |  perl-Email-Address  | src, noarch |
@@ -2901,7 +2868,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  qca2-devel  | src, aarch64, x86\_64 |
 |  qca-ossl  | src, aarch64, x86\_64 |
 |  ivshmem-tools  | aarch64, x86\_64 |
-|  qemu  | aarch64, x86\_64 |
 |  qemu-audio-alsa  | aarch64, x86\_64 |
 |  qemu-audio-oss  | aarch64, x86\_64 |
 |  qemu-audio-pa  | aarch64, x86\_64 |
@@ -2912,22 +2878,9 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  qemu-block-nfs  | aarch64, x86\_64 |
 |  qemu-block-rbd  | aarch64, x86\_64 |
 |  qemu-block-ssh  | aarch64, x86\_64 |
-|  qemu-common  | aarch64, x86\_64 |
-|  qemu-guest-agent  | aarch64, x86\_64 |
-|  qemu-kvm  | aarch64, x86\_64 |
-|  qemu-kvm-core  | aarch64, x86\_64 |
-|  qemu-system-aarch64  | aarch64, x86\_64 |
-|  qemu-system-aarch64-core  | aarch64, x86\_64 |
-|  qemu-system-x86  | aarch64, x86\_64 |
-|  qemu-system-x86-core  | aarch64, x86\_64 |
 |  qemu-ui-curses  | aarch64, x86\_64 |
 |  qemu-ui-gtk  | aarch64, x86\_64 |
 |  qemu-ui-sdl  | aarch64, x86\_64 |
-|  qemu-user  | aarch64, x86\_64 |
-|  qemu-user-binfmt  | aarch64, x86\_64 |
-|  qemu-user-static  | aarch64, x86\_64 |
-|  qemu-kvm-common  | src, x86\_64 |
-|  qemu-kvm-tools  | src, x86\_64 |
 |  qimageblitz  | src, aarch64, x86\_64 |
 |  qimageblitz-devel  | src, aarch64, x86\_64 |
 |  qimageblitz-examples  | src, aarch64, x86\_64 |
@@ -3228,9 +3181,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  SDL2-devel  | src, aarch64, x86\_64 |
 |  SDL2-static  | src, aarch64, x86\_64 |
 |  sdparm  | src, aarch64, x86\_64 |
-|  seabios  | src, x86\_64 |
-|  seabios-bin  | src, noarch |
-|  seavgabios-bin  | src, noarch |
 |  seahorse-nautilus  | src, aarch64, x86\_64 |
 |  seahorse-sharing  | src, aarch64, x86\_64 |
 |  sendmail-devel  | aarch64, x86\_64 |
@@ -3998,15 +3948,12 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  php-recode  | src, aarch64, x86\_64 |
 |  php-xmlrpc  | src, aarch64, x86\_64 |
 |  apcu-panel  | src, noarch |
-|  php-pecl-apcu-devel  | src, noarch |
-|  php-pecl-igbinary-devel  | src, noarch |
 |  php-pecl-imagick  | src, aarch64, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-imagick-devel  | src, noarch, noarch, noarch, noarch |
 |  php-pecl-libsodium  | src, aarch64, aarch64, x86\_64, x86\_64 |
 |  php-pecl-mailparse  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  [`php-pecl-mcrypt`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-mcrypt)  | src, aarch64, aarch64, x86\_64, x86\_64 |
 |  php-pecl-memcache  | src, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
-|  php-pecl-msgpack-devel  | src, noarch |
 |  php-pecl-oauth  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-ssh2  | src, aarch64, aarch64, x86\_64, x86\_64 |
 |  php-pecl-uuid  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
@@ -4023,14 +3970,11 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  php-recode  | src, aarch64, x86\_64 |
 |  php-xmlrpc  | src, aarch64, x86\_64 |
 |  apcu-panel  | src, noarch |
-|  php-pecl-apcu-devel  | src, noarch |
-|  php-pecl-igbinary-devel  | src, noarch |
 |  php-pecl-imagick  | src, aarch64, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-imagick-devel  | src, noarch, noarch, noarch, noarch |
 |  php-pecl-libsodium  | src, aarch64, aarch64, x86\_64, x86\_64 |
 |  php-pecl-mailparse  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  [`php-pecl-mcrypt`](https://docs.aws.amazon.com/linux/al2023/ug/deprecated-al2.html#deprecated-mcrypt)  | src, aarch64, aarch64, x86\_64, x86\_64 |
-|  php-pecl-msgpack-devel  | src, noarch |
 |  php-pecl-oauth  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-uuid  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-zip  | src, aarch64, aarch64, x86\_64, x86\_64 |
@@ -4045,13 +3989,10 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  php-json  | src, aarch64, x86\_64 |
 |  php-xmlrpc  | src, aarch64, x86\_64 |
 |  apcu-panel  | src, noarch |
-|  php-pecl-apcu-devel  | src, noarch |
-|  php-pecl-igbinary-devel  | src, noarch |
 |  php-pecl-imagick  | src, aarch64, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-imagick-devel  | src, noarch, noarch, noarch, noarch |
 |  php-pecl-mailparse  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-memcache  | src, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
-|  php-pecl-msgpack-devel  | src, noarch |
 |  php-pecl-oauth  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |
 |  php-pecl-ssh2  | src, aarch64, aarch64, x86\_64, x86\_64 |
 |  php-pecl-uuid  | src, aarch64, aarch64, aarch64, x86\_64, x86\_64, x86\_64 |

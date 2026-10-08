@@ -47,7 +47,7 @@ Before you can enable multi-Region replication, ensure your user pool meets the 
 
 1. Choose **User pools**.
 
-1. Choose an existing user pool from the list, or [create a new user pool](getting-started-user-pools.md).
+1. Choose an existing user pool from the list, or [create a new user pool](getting-started-user-pools-application.md).
 
 1. Choose the **Settings** tab.
 

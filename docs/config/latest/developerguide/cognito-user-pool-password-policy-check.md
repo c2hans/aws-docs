@@ -17,23 +17,23 @@ Checks if the password policy for Amazon cognito user pool meets the specified r
 
 **Parameters:**
 
-requireSymbols (Optional)Type: booleanDefault: True
-Whether to require at least one symbol in password.
-
-temporaryPasswordValidity (Optional)Type: intDefault: 7
-Number of days a temporary password remains valid. Valid values are 1 to 365.
-
 minLength (Optional)Type: intDefault: 8
 Minimum length required for user pool password. Valid values are 6 to 99.
+
+requireLowercase (Optional)Type: booleanDefault: True
+Whether to require at least one lowercase letter in password.
 
 requireNumbers (Optional)Type: booleanDefault: True
 Whether to require at least one number in password.
 
+requireSymbols (Optional)Type: booleanDefault: True
+Whether to require at least one symbol in password.
+
 requireUppercase (Optional)Type: booleanDefault: True
 Whether to require at least one uppercase letter in password.
 
-requireLowercase (Optional)Type: booleanDefault: True
-Whether to require at least one lowercase letter in password.
+temporaryPasswordValidity (Optional)Type: intDefault: 7
+Number of days a temporary password remains valid. Valid values are 1 to 365.
 
 ## AWS CloudFormation template
 <a name="w2aac20c16c17b7d425c19"></a>

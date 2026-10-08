@@ -1771,7 +1771,7 @@ The following `update-dashboard` example changes the title of a dashboard's line
 
 ```
 aws iotsitewise update-dashboard \
-    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE}} \
+    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-dddddEXAMPLE}} \
     --dashboard-name {{"Wind Farm"}} \
     --dashboard-definition {{file://update-wind-farm-dashboard.json}}
 ```

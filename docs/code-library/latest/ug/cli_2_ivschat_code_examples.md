@@ -30,9 +30,9 @@ The following `create-chat-token` example creates an encrypted chat token that i
 
 ```
 aws ivschat create-chat-token \
-    --room-identifier "arn:aws:ivschat:us-west-2:12345689012:room/g1H2I3j4k5L6", \
+    --room-identifier {{"arn:aws:ivschat:us-west-2:12345689012:room/g1H2I3j4k5L6"}} \
     --user-id {{"11231234"}} \
-    --capabilities "SEND_MESSAGE", \
+    --capabilities {{"SEND_MESSAGE"}} \
     --session-duration-in-minutes {{30}}
 ```
 Output:

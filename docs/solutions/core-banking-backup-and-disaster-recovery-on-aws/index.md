@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/core-banking-backup-and-disast
 title: 'Guidance for Core Banking Backup and Disaster Recovery on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/core-banking-backup-and-disaster-recovery-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Core Banking Backup and Disaster Recovery on AWS

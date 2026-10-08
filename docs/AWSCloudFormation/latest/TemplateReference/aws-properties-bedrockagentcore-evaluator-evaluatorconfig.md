@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[CodeBased](#cfn-bedrockagentcore-evaluator-evaluatorconfig-codebased)" : {{CodeBasedEvaluatorConfig}},
+  "[Derived](#cfn-bedrockagentcore-evaluator-evaluatorconfig-derived)" : {{DerivedEvaluatorConfig}},
   "[LlmAsAJudge](#cfn-bedrockagentcore-evaluator-evaluatorconfig-llmasajudge)" : {{LlmAsAJudgeEvaluatorConfig}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [CodeBased](#cfn-bedrockagentcore-evaluator-evaluatorconfig-codebased): {{
     CodeBasedEvaluatorConfig}}
+  [Derived](#cfn-bedrockagentcore-evaluator-evaluatorconfig-derived): {{
+    DerivedEvaluatorConfig}}
   [LlmAsAJudge](#cfn-bedrockagentcore-evaluator-evaluatorconfig-llmasajudge): {{
     LlmAsAJudgeEvaluatorConfig}}
 ```
@@ -41,6 +44,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: [CodeBasedEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-codebasedevaluatorconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Derived`  <a name="cfn-bedrockagentcore-evaluator-evaluatorconfig-derived"></a>
+Property description not available.
+*Required*: No
+*Type*: [DerivedEvaluatorConfig](aws-properties-bedrockagentcore-evaluator-derivedevaluatorconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LlmAsAJudge`  <a name="cfn-bedrockagentcore-evaluator-evaluatorconfig-llmasajudge"></a>

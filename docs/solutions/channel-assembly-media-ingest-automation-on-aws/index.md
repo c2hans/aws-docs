@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/channel-assembly-media-ingest-
 title: 'Guidance for Channel Assembly Media Ingest Automation on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/channel-assembly-media-ingest-automation-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Channel Assembly Media Ingest Automation on AWS

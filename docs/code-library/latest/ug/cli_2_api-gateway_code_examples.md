@@ -1733,7 +1733,7 @@ The following code example shows how to use `import-rest-api`.
 Command:
 
 ```
-aws apigateway import-rest-api --body '{{file:///path/to/API_Swagger_template.json}}'
+aws apigateway import-rest-api --body '{{fileb:///path/to/API_Swagger_template.json}}'
 ```
 +  For API details, see [ImportRestApi](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/import-rest-api.html) in *AWS CLI Command Reference*.
 

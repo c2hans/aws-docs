@@ -4420,7 +4420,7 @@ The data feed is stored in the Amazon S3 bucket that you specified. The file nam
 ```
 amzn-s3-demo-bucket.s3.amazonaws.com/spot-data-feed/123456789012.YYYY-MM-DD-HH.n.abcd1234.gz
 ```
-For more information, see [Spot Instance data feed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.html) in the *Amazon EC2 User Guide*.
+For more information, see [Spot Instance data feed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
 +  For API details, see [CreateSpotDatafeedSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-spot-datafeed-subscription.html) in *AWS CLI Command Reference*.
 
 ### `create-store-image-task`
@@ -5440,7 +5440,7 @@ For more information, see [Trust providers for Verified Access](https://docs.aws
 The following code example shows how to use `create-volume`.
 
 **AWS CLI**
-**To create an empty General Purpose SSD (gp2) volume**
+**Example 1: To create an empty General Purpose SSD (gp2) volume**
 The following `create-volume` example creates an 80 GiB General Purpose SSD (gp2) volume in the specified Availability Zone. Note that the current Region must be `us-east-1`, or you can add the `--region` parameter to specify the Region for the command.
 
 ```
@@ -5453,6 +5453,7 @@ Output:
 
 ```
 {
+    "AvailabilityZoneId": "use1-az1",
     "AvailabilityZone": "us-east-1a",
     "Tags": [],
     "Encrypted": false,
@@ -5486,6 +5487,7 @@ Output:
 
 ```
 {
+    "AvailabilityZoneId": "use1-az1",
     "AvailabilityZone": "us-east-1a",
     "Tags": [],
     "Encrypted": false,
@@ -5511,6 +5513,7 @@ Output:
 
 ```
 {
+    "AvailabilityZoneId": "use1-az1",
     "AvailabilityZone": "us-east-1a",
     "Tags": [],
     "Encrypted": true,
@@ -21837,7 +21840,7 @@ Now you can reference that file in the CLI command that follows:
 ```
 aws ec2 modify-instance-attribute \
     --instance-id=i-09b5a14dbca622e76 \
-    --attribute {{userData}} --value {{file://UserData.base64.txt}}
+    --attribute {{userData}} --value {{fileb://UserData.base64.txt}}
 ```
 This command produces no output.
 For more information, see [User Data and the AWS CLI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html#user-data-api-cli) in the *EC2 User Guide*.

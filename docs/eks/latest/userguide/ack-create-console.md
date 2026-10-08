@@ -18,7 +18,7 @@ Create an ACK capability on your Amazon EKS cluster using the AWS Management Con
 
 1. Select your cluster name to open the cluster detail page.
 
-1. Choose the **Capabilities** tab.
+1. In the left navigation pane, choose **Capabilities**.
 
 1. In the left navigation, choose ** AWS Controllers for Kubernetes (ACK)**.
 
@@ -41,7 +41,7 @@ The capability creation process begins.
 ## Verify the capability is active
 <a name="_verify_the_capability_is_active"></a>
 
-1. On the **Capabilities** tab, view the ACK capability status.
+1. On the **Capabilities** page, view the ACK capability status.
 
 1. Wait for the status to change from `CREATING` to `ACTIVE`.
 
@@ -58,7 +58,7 @@ After the capability is active, verify that ACK custom resources are available i
 
 1. Navigate to your cluster in the Amazon EKS console
 
-1. Choose the **Resources** tab
+1. In the left navigation pane, choose **Resources**
 
 1. Choose **Extensions**
 

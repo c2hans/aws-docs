@@ -141,7 +141,7 @@ eksctl create iamserviceaccount \
 
    1. In the **Trusted entity type** section, choose **Web identity**.
 
-   1. For **Identity provider**, choose the **OpenID Connect provider URL** for your cluster (as shown under **Overview** in Amazon EKS).
+   1. For **Identity provider**, choose the **OpenID Connect provider URL** for your cluster (as shown in the **Cluster info** panel in Amazon EKS).
 
       If no URLs are shown, review the [Prerequisites](#s3-csi-prereqs).
 
@@ -319,7 +319,7 @@ addons:
 
 1. Choose the name of the cluster that you want to configure the Mountpoint for Amazon S3 CSI add-on for.
 
-1. Choose the **Add-ons** tab.
+1. In the left navigation pane, choose **Add-ons**.
 
 1. Choose **Get more add-ons**.
 

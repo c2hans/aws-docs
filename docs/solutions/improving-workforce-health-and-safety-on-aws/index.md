@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/improving-workforce-health-and
 title: 'Guidance for Improving Workforce Health & Safety on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/improving-workforce-health-and-safety-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Improving Workforce Health & Safety on AWS

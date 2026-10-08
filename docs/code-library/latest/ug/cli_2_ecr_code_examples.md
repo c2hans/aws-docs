@@ -619,39 +619,6 @@ aws ecr get-login-password \
 For more information, see [Registry Authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries#registry_auth) in the *Amazon ECR User Guide*.
 +  For API details, see [GetLoginPassword](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-login-password.html) in *AWS CLI Command Reference*.
 
-### `get-login`
-<a name="ecr_GetLogin_cli_2_topic"></a>
-
-The following code example shows how to use `get-login`.
-
-**AWS CLI**
-**To retrieve a Docker login command to your default registry**
-This example prints a command that you can use to log in to your default Amazon ECR registry.
-Command:
-
-```
-aws ecr get-login
-```
-Output:
-
-```
-docker login -u AWS -p <password> -e none https://<aws_account_id>.dkr.ecr.<region>.amazonaws.com
-```
-**To log in to another account's registry**
-This example prints one or more commands that you can use to log in to Amazon ECR registries associated with other accounts.
-Command:
-
-```
-aws ecr get-login --registry-ids {{012345678910}} {{023456789012}}
-```
-Output:
-
-```
-docker login -u <username> -p <token-1> -e none <endpoint-1>
-docker login -u <username> -p <token-2> -e none <endpoint-2>
-```
-+  For API details, see [GetLogin](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-login.html) in *AWS CLI Command Reference*.
-
 ### `get-repository-policy`
 <a name="ecr_GetRepositoryPolicy_cli_2_topic"></a>
 
@@ -1135,7 +1102,7 @@ aws ecr upload-layer-part \
     --upload-id {{6cb64b8a-9378-0e33-2ab1-b780fab8a9e9}} \
     --part-first-byte {{0}} \
     --part-last-byte {{8323314}} \
-    --layer-part-blob {{file:///var/lib/docker/image/overlay2/layerdb/sha256/ff986b10a018b48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e/layer.b64}}
+    --layer-part-blob {{fileb:///var/lib/docker/image/overlay2/layerdb/sha256/ff986b10a018b48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e/layer.b64}}
 ```
 Output:
 

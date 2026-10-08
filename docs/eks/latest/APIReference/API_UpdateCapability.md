@@ -19,6 +19,10 @@ Content-type: application/json
 {
    "clientRequestToken": "{{string}}",
    "configuration": {
+      "ack": {
+         "disabledServices": [ "{{string}}" ],
+         "enableCrossNamespace": {{boolean}}
+      },
       "argoCd": {
          "networkAccess": {
             "vpceIds": [ "{{string}}" ]

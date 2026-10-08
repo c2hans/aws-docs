@@ -13,24 +13,44 @@ List all of the configuration sets associated with your account in the current r
 <a name="API_ListConfigurationSets_RequestSyntax"></a>
 
 ```
-GET /v2/email/configuration-sets?NextToken={{NextToken}}&PageSize={{PageSize}} HTTP/1.1
+POST /v2/email/list-configuration-sets HTTP/1.1
+Content-type: application/json
+
+{
+   "Filter": {
+      "{{string}}" : "{{string}}"
+   },
+   "NextToken": "{{string}}",
+   "PageSize": {{number}}
+}
 ```
 
 ## URI Request Parameters
 <a name="API_ListConfigurationSets_RequestParameters"></a>
 
-The request uses the following URI parameters.
-
- ** [NextToken](#API_ListConfigurationSets_RequestSyntax) **   <a name="SES-ListConfigurationSets-request-uri-NextToken"></a>
-A token returned from a previous call to `ListConfigurationSets` to indicate the position in the list of configuration sets.
-
- ** [PageSize](#API_ListConfigurationSets_RequestSyntax) **   <a name="SES-ListConfigurationSets-request-uri-PageSize"></a>
-The number of results to show in a single call to `ListConfigurationSets`. If the number of results is larger than the number you specified in this parameter, then the response includes a `NextToken` element, which you can use to obtain additional results.
+The request does not use any URI parameters.
 
 ## Request Body
 <a name="API_ListConfigurationSets_RequestBody"></a>
 
-The request does not have a request body.
+The request accepts the following data in JSON format.
+
+ ** [Filter](#API_ListConfigurationSets_RequestSyntax) **   <a name="SES-ListConfigurationSets-request-Filter"></a>
+An object that contains filters to apply when listing configuration sets. You can filter by a substring of the configuration set name.
+Type: String to string map
+Valid Keys: `CONFIGURATION_SET_NAME_CONTAINS`
+Value Length Constraints: Minimum length of 1.
+Required: No
+
+ ** [NextToken](#API_ListConfigurationSets_RequestSyntax) **   <a name="SES-ListConfigurationSets-request-NextToken"></a>
+A token returned from a previous call to `ListConfigurationSets` to indicate the position in the list of configuration sets.
+Type: String
+Required: No
+
+ ** [PageSize](#API_ListConfigurationSets_RequestSyntax) **   <a name="SES-ListConfigurationSets-request-PageSize"></a>
+The number of results to show in a single call to `ListConfigurationSets`. If the number of results is larger than the number you specified in this parameter, then the response includes a `NextToken` element, which you can use to obtain additional results.
+Type: Integer
+Required: No
 
 ## Response Syntax
 <a name="API_ListConfigurationSets_ResponseSyntax"></a>

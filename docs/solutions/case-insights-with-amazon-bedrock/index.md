@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/case-insights-with-amazon-bedr
 title: 'Guidance for Case Insights with Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/case-insights-with-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for Case Insights with Amazon Bedrock
 
 ## Overview
 
-This Guidance demonstrates how to transform manual AWS cost analysis into an AI-assisted conversational experience using a GenAI-powered Model Context Protocol (MCP) server. Built on Amazon Bedrock and serverless AWS services, it delivers 50+ specialized tools across 10 cost optimization playbooks covering EC2, RDS, S3, Lambda, CloudWatch, and more. By integrating with Kiro CLI and MCP-compatible clients, it enables technical and business users to identify cost-saving opportunities through natural language queries, reducing the complexity of cost optimization while accelerating time-to-insight across AWS environments.
+This Guidance demonstrates how to transform AWS Support cases into actionable insights using generative AI. Built on Amazon Bedrock and serverless services, it automatically analyzes cases across an AWS Organization, categorizing root causes and resilience lifecycle best practice. By aggregating data, teams detect recurring patterns and systemic issues invisible in individual reviews. Analyzed data is stored in Amazon S3 for querying with Athena and dashboard visualization. An included MCP server enables natural language exploration through tools like Kiro, bringing lessons from past issues into development workflows—helping organizations shift from reactive troubleshooting to proactive resilience improvement.
 
 ## Benefits
 
@@ -45,4 +45,12 @@ This architecture diagram illustrates how to effectively support Case Insights w
 1. **Step 8**: Customers can call the MCP from their agent of choice via Amazon API Gateway which calls a Lambda.
 1. **Step 9**: Lambda retrieves the case details from Amazon Athena.
 1. **Step 10**: AWS Glue runs every 24 hrs to refresh the table within Amazon Athena with any new cases processed.
+## Deploy with confidence
+
+Everything you need to launch this Guidance in your account is right here.
+
+- **Let's make it happen**: Ready to deploy? Review the sample code on GitHub for detailed deployment instructions to deploy as-is or customize to fit your needs.
+
+[Go to sample code](https://github.com/aws-solutions-library-samples/sample-support-case-insights-with-amazon-bedrock)
+
 [Read usage guidelines](/solutions/guidance-disclaimers/)

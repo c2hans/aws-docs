@@ -259,7 +259,7 @@ For more information, see [Creating a subnet group](https://docs.aws.amazon.com/
 The following code example shows how to use `create-user`.
 
 **AWS CLI**
-**To create a user**
+**To creat a user**
 The following `create-user` example creates a new user.
 
 ```

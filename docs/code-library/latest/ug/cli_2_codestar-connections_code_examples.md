@@ -4,10 +4,10 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cli_2_codestar-co
 
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
-# CodeConnections examples using AWS CLI
+# AWS CodeConnections examples using AWS CLI
 <a name="cli_2_codestar-connections_code_examples"></a>
 
-The following code examples show you how to perform actions and implement common scenarios by using the AWS Command Line Interface with CodeConnections.
+The following code examples show you how to perform actions and implement common scenarios by using the AWS Command Line Interface with AWS CodeConnections.
 
 *Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
 

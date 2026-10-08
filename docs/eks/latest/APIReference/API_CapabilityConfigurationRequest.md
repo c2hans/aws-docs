@@ -10,6 +10,11 @@ Configuration settings for a capability. The structure of this object varies dep
 ## Contents
 <a name="API_CapabilityConfigurationRequest_Contents"></a>
 
+ ** ack **   <a name="AmazonEKS-Type-CapabilityConfigurationRequest-ack"></a>
+Configuration settings specific to ACK (AWS Controllers for Kubernetes) capabilities. This field is only used when creating or updating an ACK capability.
+Type: [AckConfigRequest](API_AckConfigRequest.md) object
+Required: No
+
  ** argoCd **   <a name="AmazonEKS-Type-CapabilityConfigurationRequest-argoCd"></a>
 Configuration settings specific to Argo CD capabilities. This field is only used when creating or updating an Argo CD capability.
 Type: [ArgoCdConfigRequest](API_ArgoCdConfigRequest.md) object

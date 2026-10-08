@@ -20,7 +20,7 @@ Nova Lite is Amazon's low-cost multimodal model that processes text, images, and
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 300K tokens
-+ **Max output tokens:** 5K
++ **Max output tokens:** 10K
 + **Knowledge cutoff:** Oct 2024
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |
@@ -67,7 +67,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | amazon.nova-lite-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | `us.amazon.nova-lite-v1:0`<br />`eu.amazon.nova-lite-v1:0` | Not supported |
+| bedrock-runtime | amazon.nova-lite-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | `us.amazon.nova-lite-v1:0`<br />`eu.amazon.nova-lite-v1:0`<br />`apac.amazon.nova-lite-v1:0` | Not supported |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/v1".*
 
@@ -137,6 +137,23 @@ Geo Inference ID: `eu.amazon.nova-lite-v1:0`
 | eu-west-1 (Ireland) | eu-central-1 (Frankfurt), eu-north-1 (Stockholm), eu-west-1 (Ireland), eu-west-3 (Paris) |
 | eu-west-3 (Paris) | eu-central-1 (Frankfurt), eu-north-1 (Stockholm), eu-west-1 (Ireland), eu-west-3 (Paris) |
 | il-central-1 (Tel Aviv) | eu-central-1 (Frankfurt), eu-north-1 (Stockholm), eu-south-1 (Milan), eu-west-1 (Ireland), eu-west-3 (Paris), il-central-1 (Tel Aviv) |
+
+**Geo: APAC**
+
+Geo Inference ID: `apac.amazon.nova-lite-v1:0`
+
+| **Source Region** | **Destination Regions** |
+| --- | --- |
+| ap-east-2 (Taipei) | ap-east-2 (Taipei), ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-south-2 (Hyderabad), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney), ap-southeast-3 (Jakarta), ap-southeast-4 (Melbourne) |
+| ap-northeast-1 (Tokyo) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney) |
+| ap-northeast-2 (Seoul) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney) |
+| ap-south-1 (Mumbai) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney) |
+| ap-southeast-1 (Singapore) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney) |
+| ap-southeast-2 (Sydney) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney) |
+| ap-southeast-3 (Jakarta) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-south-2 (Hyderabad), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney), ap-southeast-3 (Jakarta), ap-southeast-4 (Melbourne) |
+| ap-southeast-4 (Melbourne) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-south-2 (Hyderabad), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney), ap-southeast-4 (Melbourne) |
+| ap-southeast-5 (Malaysia) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-south-2 (Hyderabad), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney), ap-southeast-3 (Jakarta), ap-southeast-4 (Melbourne), ap-southeast-5 (Malaysia) |
+| ap-southeast-7 (Thailand) | ap-northeast-1 (Tokyo), ap-northeast-2 (Seoul), ap-northeast-3 (Osaka), ap-south-1 (Mumbai), ap-south-2 (Hyderabad), ap-southeast-1 (Singapore), ap-southeast-2 (Sydney), ap-southeast-3 (Jakarta), ap-southeast-4 (Melbourne), ap-southeast-7 (Thailand) |
 
 ## Quotas and Limits
 <a name="model-card-amazon-nova-lite-quotas"></a>

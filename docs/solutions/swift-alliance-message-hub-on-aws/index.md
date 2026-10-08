@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/swift-alliance-message-hub-on-
 title: 'Guidance for SWIFT Alliance Message Hub on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/swift-alliance-message-hub-on-aws/
 source: aws-documentation
-generated_on: 2026-10-07
+generated_on: 2026-10-08
 ---
 
 # Guidance for SWIFT Alliance Message Hub on AWS

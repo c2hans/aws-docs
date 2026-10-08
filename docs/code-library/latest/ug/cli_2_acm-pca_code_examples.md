@@ -162,7 +162,7 @@ The following code example shows how to use `import-certificate-authority-certif
 The following `import-certificate-authority-certificate` command imports the signed private CA certificate for the CA specified by the ARN into ACM PCA.
 
 ```
-aws acm-pca import-certificate-authority-certificate --certificate-authority-arn {{arn:aws:acm-pca:us-west-2:123456789012:certificate-authority/12345678-1234-1234-1234-123456789012}} --certificate file://C:\ca_cert.pem --certificate-chain file://C:\ca_cert_chain.pem
+aws acm-pca import-certificate-authority-certificate --certificate-authority-arn {{arn:aws:acm-pca:us-west-2:123456789012:certificate-authority/12345678-1234-1234-1234-123456789012}} --certificate fileb://C:\ca_cert.pem --certificate-chain fileb://C:\ca_cert_chain.pem
 ```
 +  For API details, see [ImportCertificateAuthorityCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm-pca/import-certificate-authority-certificate.html) in *AWS CLI Command Reference*.
 
@@ -176,7 +176,7 @@ The following code example shows how to use `issue-certificate`.
 The following `issue-certificate` command uses the private CA specified by the ARN to issue a private certificate.
 
 ```
-aws acm-pca issue-certificate --certificate-authority-arn {{arn:aws:acm-pca:us-west-2:123456789012:certificate-authority/12345678-1234-1234-1234-123456789012}} --csr file://C:\cert_1.csr --signing-algorithm {{"SHA256WITHRSA"}} --validity Value=365,Type="DAYS" --idempotency-token {{1234}}
+aws acm-pca issue-certificate --certificate-authority-arn {{arn:aws:acm-pca:us-west-2:123456789012:certificate-authority/12345678-1234-1234-1234-123456789012}} --csr fileb://C:\cert_1.csr --signing-algorithm {{"SHA256WITHRSA"}} --validity Value=365,Type="DAYS" --idempotency-token {{1234}}
 ```
 +  For API details, see [IssueCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm-pca/issue-certificate.html) in *AWS CLI Command Reference*.
 

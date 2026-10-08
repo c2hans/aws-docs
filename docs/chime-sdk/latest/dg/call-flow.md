@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-flow.html
 # Understanding call flow for Amazon Chime SDK PSTN audio
 <a name="call-flow"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](https://docs.aws.amazon.com/chime-sdk/latest/ag/sip-applications-maintenance-mode.html).
+
 This diagram shows the flow of a call through the Amazon Chime SDK PSTN audio service and a customer’s AWS Lambda function. In this example, the application plays a prompt to the caller, gathers dual-tone multi frequency (DTMF) digits, and then connects them to an Amazon Chime SDK meeting.
 
 Numbers in the diagram correspond to the numbered explanations below the diagram.

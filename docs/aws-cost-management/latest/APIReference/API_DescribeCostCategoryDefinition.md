@@ -81,6 +81,11 @@ Required: No
                "Or": [
                   "Expression"
                ],
+               "ProductAttributes": {
+                  "Key": "string",
+                  "MatchOptions": [ "string" ],
+                  "Values": [ "string" ]
+               },
                "Tags": {
                   "Key": "string",
                   "MatchOptions": [ "string" ],

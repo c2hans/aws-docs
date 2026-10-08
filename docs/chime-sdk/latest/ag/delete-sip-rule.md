@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/delete-sip-rule.html
 # Deleting a SIP rule
 <a name="delete-sip-rule"></a>
 
+**Note**
+Amazon Chime SDK SIP media applications will no longer be open to new customers starting October 29, 2026. If you would like to use SIP media applications, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Chime SDK SIP media applications availability change](sip-applications-maintenance-mode.md).
+
 Typically, you delete a SIP rule when you don't need the associated Request URI hostname or phone number. Also, you can delete a SIP rule when you make a mistake creating it.
 
 **Note**

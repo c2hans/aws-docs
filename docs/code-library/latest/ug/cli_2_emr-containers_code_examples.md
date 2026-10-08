@@ -19,6 +19,119 @@ Each example includes a link to the complete source code, where you can find ins
 ## Actions
 <a name="actions"></a>
 
+### `create-role-associations`
+<a name="emr-containers_CreateRoleAssociations_cli_2_topic"></a>
+
+The following code example shows how to use `create-role-associations`.
+
+**AWS CLI**
+**To create role associations of an IAM Role with EMR service accounts to be used with Amazon EMR on EKS**
+The following `create-role-associations` example command creates EKS pod identity associations of a role named **example\_iam\_role** with EMR service accounts such that it can be used with Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.:
+
+```
+aws emr-containers create-role-associations \
+    --cluster-name {{example_cluster}} \
+    --namespace {{example_namespace}} \
+    --role-name {{example_iam_role}}
+```
+Output:
+
+```
+[
+    {
+        "clusterName": "example_cluster",
+        "namespace": "example_namespace",
+        "serviceAccount": "emr-spark-client-service-account-example",
+        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/a-bgyr1umgdmrk1kdtq",
+        "associationId": "a-bgyr1umgdmrk1kdtq",
+        "tags": {},
+        "createdAt": "2022-11-15T10:49:00+00:00",
+        "modifiedAt": "2022-11-15T10:49:00+00:00"
+    },
+    {
+        "clusterName": "example_cluster",
+        "namespace": "example_namespace",
+        "serviceAccount": "emr-spark-driver-service-account-example",
+        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/b-bgyr1umgdmrk1kdtq",
+        "associationId": "b-bgyr1umgdmrk1kdtq",
+        "tags": {},
+        "createdAt": "2022-11-15T10:49:00+00:00",
+        "modifiedAt": "2022-11-15T10:49:00+00:00"
+    },
+    {
+        "clusterName": "example_cluster",
+        "namespace": "example_namespace",
+        "serviceAccount": "emr-spark-executor-service-account-example",
+        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/c-bgyr1umgdmrk1kdtq",
+        "associationId": "c-bgyr1umgdmrk1kdtq",
+        "tags": {},
+        "createdAt": "2022-11-15T10:49:00+00:00",
+        "modifiedAt": "2022-11-15T10:49:00+00:00"
+    }
+]
+```
++  For API details, see [CreateRoleAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr-containers/create-role-associations.html) in *AWS CLI Command Reference*.
+
+### `delete-role-associations`
+<a name="emr-containers_DeleteRoleAssociations_cli_2_topic"></a>
+
+The following code example shows how to use `delete-role-associations`.
+
+**AWS CLI**
+**To delete role associations of an IAM Role with EMR service accounts**
+EKS allows associations with non existing resources (namespace, service account), so EMR on EKS suggest to delete the associations if the namespace is deleted or the role is not in use to release the space for other associations.
+The following `delete-role-associations` example command deletes EKS pod identity associations of a role named **example\_iam\_role** with EMR service accounts such that it can be removed from Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.:
+
+```
+aws emr-containers delete-role-associations \
+    --cluster-name {{example_cluster}} \
+    --namespace {{example_namespace}} \
+    --role-name {{example_iam_role}}
+```
+Output:
+
+```
+[
+    {
+        "clusterName": "example_cluster",
+        "namespace": "example_namespace",
+        "serviceAccount": "emr-spark-client-service-account-example",
+        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/a-bgyr1umgdmrk1kdtq",
+        "associationId": "a-bgyr1umgdmrk1kdtq",
+        "tags": {},
+        "createdAt": "2022-11-15T10:49:00+00:00",
+        "modifiedAt": "2022-11-15T10:49:00+00:00"
+    },
+    {
+        "clusterName": "example_cluster",
+        "namespace": "example_namespace",
+        "serviceAccount": "emr-spark-driver-service-account-example",
+        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/b-bgyr1umgdmrk1kdtq",
+        "associationId": "b-bgyr1umgdmrk1kdtq",
+        "tags": {},
+        "createdAt": "2022-11-15T10:49:00+00:00",
+        "modifiedAt": "2022-11-15T10:49:00+00:00"
+    },
+    {
+        "clusterName": "example_cluster",
+        "namespace": "example_namespace",
+        "serviceAccount": "emr-spark-executor-service-account-example",
+        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/c-bgyr1umgdmrk1kdtq",
+        "associationId": "c-bgyr1umgdmrk1kdtq",
+        "tags": {},
+        "createdAt": "2022-11-15T10:49:00+00:00",
+        "modifiedAt": "2022-11-15T10:49:00+00:00"
+    }
+]
+```
++  For API details, see [DeleteRoleAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr-containers/delete-role-associations.html) in *AWS CLI Command Reference*.
+
 ### `update-role-trust-policy`
 <a name="emr-containers_UpdateRoleTrustPolicy_cli_2_topic"></a>
 

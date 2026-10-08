@@ -92,8 +92,8 @@ The following `create-core-network` example creates a core network using an opti
 
 ```
 aws networkmanager create-core-network \
-    --global-network-id {{global-network-cdef-EXAMPLE22222}} \
-    --description {{"Main headquarters location"}} \
+    --global-network-id {{global-network-0d59060f16a73bc41}}\
+    --description {{"Main headquarters location"}}\
     --tags Key=Name,Value="New York City office"
 ```
 Output:
@@ -101,9 +101,9 @@ Output:
 ```
 {
     "CoreNetwork": {
-        "GlobalNetworkId": "global-network-cdef-EXAMPLE22222",
-        "CoreNetworkId": "core-network-cdef-EXAMPLE33333",
-        "CoreNetworkArn": "arn:aws:networkmanager::987654321012:core-network/core-network-cdef-EXAMPLE33333",
+        "GlobalNetworkId": "global-network-0d59060f16a73bc41",
+        "CoreNetworkId": "core-network-0fab62fe438d94db6",
+        "CoreNetworkArn": "arn:aws:networkmanager::987654321012:core-network/core-network-0fab62fe438d94db6",
         "Description": "Main headquarters location",
         "CreatedAt": "2022-01-10T19:53:59+00:00",
         "State": "AVAILABLE",
@@ -116,7 +116,7 @@ Output:
     }
 }
 ```
-For more information, see [Global and core networks](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-core-network-policy.html) in the *AWS Cloud WAN User Guide*.
+For more information, see [Core networks](https://docs.aws.amazon.com/AWSEC2vpc/latest/cloudwan/cloudwan-networks-working-with.html#cloudwan-core-networks) in the *AWS Cloud WAN User Guide*.
 +  For API details, see [CreateCoreNetwork](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-core-network.html) in *AWS CLI Command Reference*.
 
 ### `create-device`

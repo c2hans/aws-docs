@@ -23,6 +23,7 @@ The following topics can help you troubleshoot issues that you encounter when us
 + [Where do I find the engine logs?](#troubleshooting-engine-logs)
 + [How can I reduce the input parameter size for a workflow?](#troubleshooting-input-file-size)
 + [Why is my run not completing?](#troubleshooting-unresponsive-runs)
++ [Why did my run fail with INSTANCE\_RESERVATION\_FAILED?](#troubleshooting-instance-reservation-failed)
 
 ### How do I troubleshoot a failed run?
 <a name="troubleshooting-run-fail"></a>
@@ -48,6 +49,11 @@ You can specify up to 256 KB of input parameters for a workflow. You can use dir
 <a name="troubleshooting-unresponsive-runs"></a>
 
 If there are issues with your code and the processes have not exited properly, your run could become unresponsive or “stuck”. For more information on how to prevent and catch unresponsive runs, see [Guidance for unresponsive runs](workflows-run-errors.md#workflows-guidance-unresponsive-runs).
+
+### Why did my run fail with INSTANCE\_RESERVATION\_FAILED?
+<a name="troubleshooting-instance-reservation-failed"></a>
+
+GPU instances are resources that might not always be immediately available in your preferred AWS Region. For more information about improving GPU acquisition success, see [Mitigating INSTANCE\_RESERVATION\_FAILED errors](workflows-run-errors.md#workflows-mitigate-instance-reservation-failed).
 
 ## Troubleshooting run metrics
 <a name="troubleshooting-run-metrics"></a>

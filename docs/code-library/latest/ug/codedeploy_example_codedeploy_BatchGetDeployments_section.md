@@ -42,7 +42,7 @@ Output:
                 "s3Location": {
                 "bundleType": "zip",
                 "version": "uTecLusEXAMPLEFXtfUcyfV8bEXAMPLE",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "WordPressApp.zip"
                 }
             },
@@ -72,7 +72,7 @@ Output:
                 "s3Location": {
                 "bundleType": "zip",
                 "eTag": "\"dd56cfdEXAMPLE8e768f9d77fEXAMPLE\"",
-                "bucket": "amzn-s3-demo-bucket",
+                "bucket": "CodeDeployDemoBucket",
                 "key": "MyOtherApp.zip"
                 }
             },
