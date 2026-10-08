@@ -23,7 +23,7 @@ For complete instructions — including creating the gateway target with the AWS
 ## Invoke with Strands Agents
 <a name="kb-gateway-target-invoke-strands"></a>
 
-If you have an existing agent built with the [Strands Agents SDK](https://strandsagents.com/latest/) and the [AgentCore starter toolkit](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html), you can connect it to your knowledge base gateway target by switching the MCP client to use SigV4 authentication against the gateway endpoint.
+If you have an existing agent built with the [Strands Agents SDK](https://strandsagents.com/docs/) and the [AgentCore starter toolkit](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-toolkit.html), you can connect it to your knowledge base gateway target by switching the MCP client to use SigV4 authentication against the gateway endpoint.
 
 Install the `mcp-proxy-for-aws` package:
 

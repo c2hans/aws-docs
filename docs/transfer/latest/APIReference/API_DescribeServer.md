@@ -70,6 +70,12 @@ Required: Yes
             "SftpMode": "string"
          },
          "SetStatOption": "string",
+         "SftpPorts": [
+            {
+               "CommunicationMode": "string",
+               "SftpPort": number
+            }
+         ],
          "TlsSessionResumptionMode": "string"
       },
       "Protocols": [ "string" ],

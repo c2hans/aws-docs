@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-luma
 # Ray2
 <a name="model-card-luma-ai-ray2"></a>
 
-## ![Luma logo with a geometric mark and the word Luma.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/luma.png) Luma AI — Ray2
+## ![Luma AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/luma.png) Luma AI — Ray2
 <a name="model-card-luma-ai-ray2-header"></a>
 
 ## Model Details

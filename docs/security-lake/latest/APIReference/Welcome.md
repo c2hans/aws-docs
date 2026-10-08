@@ -15,4 +15,4 @@ Security Lake automates the collection of security-related log and event data fr
 
 Other AWS services and third-party services can subscribe to the data that's stored in Security Lake for incident response and security data analytics.
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

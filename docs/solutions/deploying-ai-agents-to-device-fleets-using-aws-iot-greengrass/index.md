@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-ai-agents-to-device-
 title: 'Guidance for Deploying AI Agents to Device Fleets by Using AWS IoT Greengrass'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-ai-agents-to-device-fleets-using-aws-iot-greengrass/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Deploying AI Agents to Device Fleets by Using AWS IoT Greengrass

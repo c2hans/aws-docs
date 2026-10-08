@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/physical-climate-risk-assessme
 title: 'Guidance for Physical Climate Risk Assessment on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/physical-climate-risk-assessment-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Physical Climate Risk Assessment on AWS

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 # Claude Opus 4.1
 <a name="model-card-anthropic-claude-opus-4-1"></a>
 
-## ![Orange rounded square icon with white radial loading spinner design.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Opus 4.1
+## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Opus 4.1
 <a name="model-card-anthropic-claude-opus-4-1-header"></a>
 
 ## Model Details

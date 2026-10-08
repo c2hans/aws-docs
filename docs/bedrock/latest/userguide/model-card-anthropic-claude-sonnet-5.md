@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 # Claude Sonnet 5
 <a name="model-card-anthropic-claude-sonnet-5"></a>
 
-## ![Orange rounded square icon with white radial loading or progress indicator symbol.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Sonnet 5
+## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Sonnet 5
 <a name="model-card-anthropic-claude-sonnet-5-header"></a>
 
 ## Model Details

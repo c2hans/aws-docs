@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/data-federation-between-sap-an
 title: 'Guidance for Data Federation between SAP and AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/data-federation-between-sap-and-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Data Federation between SAP and AWS

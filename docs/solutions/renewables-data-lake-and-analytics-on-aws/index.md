@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/renewables-data-lake-and-analy
 title: 'Guidance for Renewables Data Lake and Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/renewables-data-lake-and-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Renewables Data Lake and Analytics on AWS

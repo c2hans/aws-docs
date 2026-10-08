@@ -9,6 +9,10 @@ To use a custom role for a knowledge base instead of the one Amazon Bedrock auto
 
 **Note**
 A policy cannot be shared between multiple roles when the service role is used.
+
+**Scope the role's data access to what your data sources need**
+[CreateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html), [UpdateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateDataSource.html), and [StartIngestionJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_StartIngestionJob.html) don't pass a role, so the `iam:PassRole` check doesn't apply. Ingestion runs with the role already bound to the knowledge base. A principal that manages data sources can therefore ingest any location that role can read, then query it with [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html), without holding Amazon S3 permissions.
+Grant the role access to only the buckets and prefixes your data sources need, and treat data source actions as privileged.
 + Trust relationship
 + Access to the Amazon Bedrock base models
 + Access to the data source for where you store your data

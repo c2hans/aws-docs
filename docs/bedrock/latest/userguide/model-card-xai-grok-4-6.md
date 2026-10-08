@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-
 # Grok 4.6
 <a name="model-card-xai-grok-4-6"></a>
 
-## ![Icon showing the xAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/xai.png) xAI — Grok 4.6
+## ![xAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/xai.png) xAI — Grok 4.6
 <a name="model-card-xai-grok-4-6-header"></a>
 
 ## Model Details
@@ -296,6 +296,8 @@ print(response["output"]["message"]["content"][0]["text"])
 
 ## Usage Considerations and Limitations
 <a name="model-card-xai-grok-4-6-considerations"></a>
+
+Keep the following considerations and limitations in mind when you use Grok 4.6:
 + **Reasoning effort** — Reasoning is always active by default. You can configure effort through the `reasoning` parameter: `"low"` (default), `"medium"`, `"high"`, or `"xhigh"`. Reasoning content is encrypted and can be returned by passing `include: ["reasoning.encrypted_content"]` in the Responses API request. You can send the encrypted content back in subsequent turns to provide reasoning context for multi-turn conversations. The Chat Completions API does not return reasoning tokens.
 
   ```

@@ -135,22 +135,9 @@ User pool custom attributes are always prefixed with `custom:`.
 ### How to parse this token safely
 <a name="user-pool-id-token-parse-safely"></a>
 
-The claim set in a Amazon Cognito ID token is not fixed. The claims that a token carries vary with the authentication flow, the user's group membership, the identity provider, and the features that are enabled on your user pool. Amazon Cognito also adds new claims additively over time: it introduces new keys, but it does not rename, change the type of, or remove the existing claims that this page documents. The OpenID Connect specification requires only `iss`, `sub`, `aud`, `exp`, and `iat`, and these are present in every Amazon Cognito ID token. Amazon Cognito also always adds `token_use` with the value `id`, which you should verify to confirm that you received an ID token rather than an access token. Treat every other claim as optional and conditional on how the user authenticated. Write your parser so that it keeps working as the token grows. The two rules that prevent almost every real-world break are the first two below: tolerate claims you don't recognize, and read each claim in its documented type.
+The claim set in a Amazon Cognito ID token is not fixed. The claims that a token carries vary with the authentication flow, the user's group membership, and the identity provider. They also depend on the features that are enabled on your user pool. The OpenID Connect specification requires only `iss`, `sub`, `aud`, `exp`, and `iat`, and these are present in every Amazon Cognito ID token. Amazon Cognito also always adds `token_use` with the value `id`, which you should verify to confirm that you received an ID token rather than an access token. Treat every other claim as optional and conditional on how the user authenticated.
 
-Ignore claims that you don't recognize
-Read the claims your application needs and leave the rest alone. Don't reject, fail, or throw an error when a token carries a claim that isn't listed on this page. New claims are added additively, and a token that contains an unlisted claim is still valid.
-
-Read each claim in its documented type
-Parse every claim as the type and cardinality this page documents for it. A claim that is documented as an array is always an array, even when it currently holds a single value, so don't collapse it to a string. For example, `cognito:groups`, `cognito:roles`, and `identities` are always arrays. The same principle applies to claims defined by other specifications: a claim such as `amr`, when present, is an array of strings as defined in [RFC 8176](https://tools.ietf.org/html/rfc8176), so read it in that type.
-
-Don't over-validate claim formats
-Validate what the specification for a claim requires, and no more. For example, `sub` is a unique string but is not guaranteed to be in any particular UUID format, and some values inside custom claims such as `identities` are serialized as strings rather than as JSON booleans or numbers. Imposing a stricter format than the documentation states causes valid tokens to fail.
-
-Don't assume the number of claims or their order
-The claims in a token can appear in any order, and the count can change between tokens and over time. Address each claim by name rather than by position, and parse the token as a general JSON object rather than a fixed structure.
-
-Budget for growth in token size
-Because the claim set grows, the overall size of the token grows too. Don't assume a fixed or maximum token size in buffers, column widths, headers, or cookies.
+The ID token is one of several Amazon Cognito token types, and the same parsing rules apply to all of them. For more information about parsing tokens safely, see [Parse user pool tokens safely](user-pool-parse-tokens-safely.md).
 
 ### Example ID tokens by scenario
 <a name="user-pool-id-token-examples"></a>
@@ -239,7 +226,7 @@ Inside each `identities` object, `primary` and `dateCreated` are serialized as s
 #### Authentication strength (ACR and AMR)
 <a name="user-pool-id-token-example-step-up"></a>
 
-When your user pool reports the authentication level that the user reached, Amazon Cognito adds the `acr` and `amr` claims. The following token is from a user who authenticated with a password and a TOTP from an authenticator app, which is the highest level. A single token reports exactly one achieved `acr` level, and the four levels are mutually exclusive within a token. Representing every level therefore takes four separate tokens. For the fixed set of levels, the factor combinations that satisfy each one, and the complete list of `amr` values, see [Authentication levels with ACR and AMR claims](cognito-user-pools-step-up-authentication.md).
+When your user pool reports the authentication level that the user reached, Amazon Cognito adds the `acr` and `amr` claims. The following token is from a user who authenticated with a password and a TOTP from an authenticator app, which is the highest level. Each token contains exactly one of the possible `acr` levels. For the fixed set of levels, the factor combinations that satisfy each one, and the complete list of `amr` values, see [Authentication levels with ACR and AMR claims](cognito-user-pools-step-up-authentication.md).
 
 ```
 {
@@ -258,7 +245,7 @@ When your user pool reports the authentication level that the user reached, Amaz
 }
 ```
 
-Requesting an authentication level requires the Essentials or Plus feature plan. The `acr` and `amr` claims are computed and locked by Amazon Cognito and can't be modified by a pre token generation Lambda trigger. Translating the Amazon Cognito levels to another standard, such as NIST or eIDAS, is the responsibility of your application.
+Requesting an authentication level requires the Essentials or Plus feature plan. The `acr` and `amr` claims are computed by Amazon Cognito and can't be modified by a pre token generation Lambda trigger. Translating the Amazon Cognito levels to another standard, such as NIST or eIDAS, is the responsibility of your application.
 
 ## ID Token Signature
 <a name="user-pool-id-token-signature"></a>

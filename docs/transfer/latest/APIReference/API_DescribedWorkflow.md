@@ -36,6 +36,17 @@ Type: Array of [WorkflowStep](API_WorkflowStep.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 8 items.
 Required: No
 
+ ** StructuredLogDestinations **   <a name="TransferFamily-Type-DescribedWorkflow-StructuredLogDestinations"></a>
+Specifies the log groups to which your workflow logs are sent.
+To specify a log group, you must provide the ARN for an existing log group. In this case, the format of the log group is as follows:
+ `arn:partition:logs:region-name:amazon-account-id:log-group:log-group-name:*`
+For example, `arn:aws:logs:us-east-1:111122223333:log-group:mytestgroup:*`
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Length Constraints: Minimum length of 20. Maximum length of 1600.
+Pattern: `arn:\S+`
+Required: No
+
  ** Tags **   <a name="TransferFamily-Type-DescribedWorkflow-Tags"></a>
 Key-value pairs that can be used to group and search for workflows. Tags are metadata attached to workflows for any purpose.
 Type: Array of [Tag](API_Tag.md) objects

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-goog
 # Gemma 3 27B PT
 <a name="model-card-google-gemma-3-27b-pt"></a>
 
-## ![Google logo with multicolored G letter icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/google.png) Google — Gemma 3 27B PT
+## ![Google logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/google.png) Google — Gemma 3 27B PT
 <a name="model-card-google-gemma-3-27b-pt-header"></a>
 
 ## Model Details

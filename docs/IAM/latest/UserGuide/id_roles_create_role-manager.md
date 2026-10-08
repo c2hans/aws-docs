@@ -78,6 +78,7 @@ Role manager supports role creation for the following AWS service consoles:
 + AWS Backup
 + AWS CloudFormation
 + Amazon CloudWatch
++ Amazon EKS
 + AWS Elastic Beanstalk
 + Amazon EventBridge
 + AWS Lambda

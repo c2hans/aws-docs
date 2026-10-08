@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/generating-infrastructure-as-c
 title: 'Guidance for Generating Infrastructure-as-Code Templates from Architecture Diagrams on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generating-infrastructure-as-code-templates-from-architecture-diagrams-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Generating Infrastructure-as-Code Templates from Architecture Diagrams on AWS

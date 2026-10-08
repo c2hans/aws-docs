@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/factory-visibility-and-decisio
 title: 'Guidance for Factory Visibility and Decision Prediction on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/factory-visibility-and-decision-prediction-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Factory Visibility and Decision Prediction on AWS

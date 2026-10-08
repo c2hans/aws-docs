@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 # Nova Lite
 <a name="model-card-amazon-nova-lite"></a>
 
-## ![Amazon logo with curved arrow from A to Z forming a smile.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Nova Lite
+## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Nova Lite
 <a name="model-card-amazon-nova-lite-header"></a>
 
 ## Model Details

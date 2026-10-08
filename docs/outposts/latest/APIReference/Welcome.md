@@ -9,4 +9,4 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/Welcome.htm
 
 You can use certain Amazon EC2 API actions for AWS Outposts. For more information on these API actions, see [AWS Outposts actions](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/operation-list-outposts.html) in the *Amazon EC2 API Reference*.
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

@@ -73,6 +73,7 @@ The following data types are supported:
 +  [ServiceMetadata](API_ServiceMetadata.md)
 +  [SftpConnectorConfig](API_SftpConnectorConfig.md)
 +  [SftpConnectorConnectionDetails](API_SftpConnectorConnectionDetails.md)
++  [SftpPortWithOptions](API_SftpPortWithOptions.md)
 +  [SshPublicKey](API_SshPublicKey.md)
 +  [Tag](API_Tag.md)
 +  [TagStepDetails](API_TagStepDetails.md)

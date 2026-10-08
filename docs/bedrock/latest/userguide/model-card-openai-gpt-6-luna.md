@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 # GPT-6 Luna
 <a name="model-card-openai-gpt-6-luna"></a>
 
-## ![OpenAI logo](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT-6 Luna
+## ![OpenAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT-6 Luna
 <a name="model-card-openai-gpt-6-luna-header"></a>
 
 ## Model details

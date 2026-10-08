@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/credit-card-fraud-detection-us
 title: 'Guidance for Credit Card Fraud Detection Using Mainframe Data Replication on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/credit-card-fraud-detection-using-mainframe-data-replication-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Credit Card Fraud Detection Using Mainframe Data Replication on AWS

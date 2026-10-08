@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21
 # Jamba 1.5 Large
 <a name="model-card-ai21-labs-jamba-1-5-large"></a>
 
-## ![AI21 Labs logo with pink and black text.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/ai21.png) AI21 Labs — Jamba 1.5 Large
+## ![AI21 Labs logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/ai21.png) AI21 Labs — Jamba 1.5 Large
 <a name="model-card-ai21-labs-jamba-1-5-large-header"></a>
 
 ## Model Details

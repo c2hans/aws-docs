@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-
 # GLM 4.7 Flash
 <a name="model-card-zai-glm-4-7-flash"></a>
 
-## ![Icon showing a diagonal stripe pattern in black and white.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/zai.png) Z.AI — GLM 4.7 Flash
+## ![Z.AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/zai.png) Z.AI — GLM 4.7 Flash
 <a name="model-card-zai-glm-4-7-flash-header"></a>
 
 ## Model Details

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/amazon-vpc-lattice-automated-d
 title: 'Guidance for Amazon VPC Lattice Automated DNS Configuration on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/amazon-vpc-lattice-automated-dns-configuration-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Amazon VPC Lattice Automated DNS Configuration on AWS

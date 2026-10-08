@@ -68,7 +68,7 @@ The specific steps in this procedure are written for using the driver as an Amaz
            --cluster my-cluster \
            --role-name AmazonEKS_EBS_CSI_DriverRole \
            --role-only \
-           --attach-policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicyV2 \
+           --attach-policy-arn arn:aws:iam::aws:policy/AmazonEBSCSIDriverPolicyV2 \
            --approve
    ```
 
@@ -293,7 +293,7 @@ The specific steps in this procedure are written for using the driver as an Amaz
 
    ```
    aws iam attach-role-policy \
-         --policy-arn arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicyV2 \
+         --policy-arn arn:aws:iam::aws:policy/AmazonEBSCSIDriverPolicyV2 \
          --role-name AmazonEKS_EBS_CSI_DriverRole
    ```
 

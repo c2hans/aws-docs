@@ -55,6 +55,12 @@ Contains statistics for the data ingestion job.
 Type: [IngestionJobStatistics](API_agent_IngestionJobStatistics.md) object
 Required: No
 
+ ** textReadyAt **   <a name="bedrock-Type-agent_IngestionJobSummary-textReadyAt"></a>
+The time at which all text content in the data ingestion job finished extraction and became available to query.
+This time isn't returned until text extraction is complete for all the documents in the job.
+Type: Timestamp
+Required: No
+
 ## See Also
 <a name="API_agent_IngestionJobSummary_SeeAlso"></a>
 

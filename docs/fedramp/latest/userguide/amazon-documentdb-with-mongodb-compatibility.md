@@ -403,11 +403,11 @@ Choose the appropriate policy based on your role:
  **Testing this policy:**
 
 ```
-# Verify access works
-aws documentdb-with-mongodb-compatibility describe-* / list-*
+# Verify read access works
+aws docdb describe-db-clusters
 
-# Verify restricted access is denied (should fail)
-aws documentdb-with-mongodb-compatibility create-* / delete-*
+# Verify write access is denied (should fail)
+aws docdb delete-db-cluster --db-cluster-identifier my-docdb-cluster
 ```
 
  **Policy JSON:**
@@ -435,22 +435,22 @@ aws documentdb-with-mongodb-compatibility create-* / delete-*
 
  **Grants access to:**
 + All read-only permissions
-+ Create and modify resources
-+ Perform operational tasks
++ Modify DB clusters and instances; reboot instances
++ Create and delete manual cluster snapshots
 
  **Does NOT grant:**
-+ Delete critical resources
++ Create or delete DB clusters/instances
 + Change security configurations
 + Manage access policies
 
  **Testing this policy:**
 
 ```
-# Verify access works
-aws documentdb-with-mongodb-compatibility create-* / update-*
+# Verify operator access works (requires MFA)
+aws docdb modify-db-cluster --db-cluster-identifier my-docdb-cluster --apply-immediately
 
-# Verify restricted access is denied (should fail)
-aws documentdb-with-mongodb-compatibility delete-* / put-*-policy
+# Verify admin access is denied (should fail)
+aws docdb delete-db-cluster --db-cluster-identifier my-docdb-cluster
 ```
 
  **Policy JSON:**
@@ -498,8 +498,9 @@ aws documentdb-with-mongodb-compatibility delete-* / put-*-policy
  **Testing this policy:**
 
 ```
-# Verify access works
-aws documentdb-with-mongodb-compatibility * (all operations)
+# Verify full admin access works (requires MFA)
+aws docdb create-db-cluster --db-cluster-identifier my-docdb-cluster --engine docdb
+aws docdb delete-db-cluster --db-cluster-identifier my-docdb-cluster --skip-final-snapshot
 ```
 
  **Policy JSON:**

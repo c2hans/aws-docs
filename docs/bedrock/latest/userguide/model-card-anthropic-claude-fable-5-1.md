@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 # Claude Fable 5.1
 <a name="model-card-anthropic-claude-fable-5-1"></a>
 
-## ![](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Fable 5.1
+## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Fable 5.1
 <a name="model-card-anthropic-claude-fable-5-1-header"></a>
 
 ## Model Details

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 # Claude Opus 4.7
 <a name="model-card-anthropic-claude-opus-4-7"></a>
 
-## ![Orange rounded square icon with white radial loading or progress indicator symbol.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Opus 4.7
+## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Opus 4.7
 <a name="model-card-anthropic-claude-opus-4-7-header"></a>
 
 ## Model Details

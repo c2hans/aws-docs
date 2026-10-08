@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/security-automations-for-aws-
 title: 'Security Automations for AWS WAF'
 canonical_url: https://docs.aws.amazon.com/solutions/security-automations-for-aws-waf/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Security Automations for AWS WAF

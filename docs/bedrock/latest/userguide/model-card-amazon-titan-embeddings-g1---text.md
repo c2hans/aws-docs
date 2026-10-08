@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 # Titan Embeddings G1 - Text
 <a name="model-card-amazon-titan-embeddings-g1---text"></a>
 
-## ![Amazon logo with curved arrow from A to Z forming a smile.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Titan Embeddings G1 - Text
+## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Titan Embeddings G1 - Text
 <a name="model-card-amazon-titan-embeddings-g1---text-header"></a>
 
 ## Model Details

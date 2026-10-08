@@ -381,11 +381,11 @@ Choose the appropriate policy based on your role:
  **Testing this policy:**
 
 ```
-# Verify access works
-aws neptune describe-* / list-*
+# Verify read access works
+aws neptune describe-db-clusters
 
-# Verify restricted access is denied (should fail)
-aws neptune create-* / delete-*
+# Verify write access is denied (should fail)
+aws neptune delete-db-cluster --db-cluster-identifier my-cluster
 ```
 
  **Policy JSON:**
@@ -414,22 +414,22 @@ aws neptune create-* / delete-*
 
  **Grants access to:**
 + All read-only permissions
-+ Create and modify resources
-+ Perform operational tasks
++ Modify existing resources (for example, modify DB cluster/instance settings)
++ Perform routine operational tasks
 
  **Does NOT grant:**
-+ Delete critical resources
++ Create or delete clusters and instances
 + Change security configurations
 + Manage access policies
 
  **Testing this policy:**
 
 ```
-# Verify access works
-aws neptune create-* / update-*
+# Verify operator access works (requires MFA)
+aws neptune modify-db-cluster --db-cluster-identifier my-neptune-cluster --apply-immediately
 
-# Verify restricted access is denied (should fail)
-aws neptune delete-* / put-*-policy
+# Verify admin access is denied (should fail)
+aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster
 ```
 
  **Policy JSON:**
@@ -475,8 +475,9 @@ aws neptune delete-* / put-*-policy
  **Testing this policy:**
 
 ```
-# Verify access works
-aws neptune * (all operations)
+# Verify full admin access works (requires MFA)
+aws neptune create-db-cluster --db-cluster-identifier my-neptune-cluster --engine neptune
+aws neptune delete-db-cluster --db-cluster-identifier my-neptune-cluster --skip-final-snapshot
 ```
 
  **Policy JSON:**

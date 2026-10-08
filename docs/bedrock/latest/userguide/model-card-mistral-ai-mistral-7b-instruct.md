@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 # Mistral 7B Instruct
 <a name="model-card-mistral-ai-mistral-7b-instruct"></a>
 
-## ![Pixelated icon showing a stylized person or avatar with orange and yellow coloring.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Mistral 7B Instruct
+## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Mistral 7B Instruct
 <a name="model-card-mistral-ai-mistral-7b-instruct-header"></a>
 
 ## Model Details

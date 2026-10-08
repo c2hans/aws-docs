@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/cell-based-architecture-on-aws
 title: 'Guidance for Cell-Based Architecture on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/cell-based-architecture-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Cell-Based Architecture on AWS

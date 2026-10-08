@@ -7,11 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-multiemb-
 
 Amazon Titan Foundation Models are pre-trained on large datasets, making them powerful, general-purpose models. Use them as-is, or customize them by fine tuning the models with your own data for a particular task without annotating large volumes of data.
 
-There are three types of Titan models: embeddings, text generation, and image generation.
-
 The Amazon Titan Multimodal Embeddings G1 model translates text, images, or a combination of text and images into numerical representations (known as embeddings) in a shared semantic space. You can use these embeddings for multimodal search and recommendation use cases, such as searching for images by text or by image similarity.
-
-Titan Text models are generative LLMs for tasks such as summarization, text generation, classification, open-ended QnA, and information extraction. They are also trained on many different programming languages, as well as rich text format like tables, JSON, and .csv files, among other formats.
 
 **Amazon Titan Multimodal Embeddings model G1**
 + **Model ID** – `amazon.titan-embed-image-v1`
@@ -23,12 +19,10 @@ Titan Text models are generative LLMs for tasks such as summarization, text gene
 + **Inference types** – On-Demand, Provisioned Throughput
 + **Supported use cases** – Search, recommendation, and personalization.
 
-Titan Text Embeddings V1 takes as input a non-empty string with up to 8,192 tokens and returns a 1,024 dimensional embedding. The characters to token ratio in English is 4.7 char/token, on average. Note on RAG uses cases: While Titan Text Embeddings V2 is able to accommodate up to 8,192 tokens, we recommend to segment documents into logical segments (such as paragraphs or sections).
-
 ## Embedding length
 <a name="titanmm-embedding"></a>
 
-Setting a custom embedding length is optional. The embedding default length is 1024 characters which will work for most use cases. The embedding length can be set to 256, 384, or 1024 characters. Larger embedding sizes create more detailed responses, but will also increase the computational time. Shorter embedding lengths are less detailed but will improve the response time.
+Setting a custom embedding length is optional. The default output vector size is 1,024 dimensions, which will work for most use cases. The output vector size can be set to 256, 384, or 1,024 dimensions. Larger embedding sizes create more detailed responses, but will also increase the computational time. Shorter embedding lengths are less detailed but will improve the response time.
 
 ```
     # EmbeddingConfig Shape

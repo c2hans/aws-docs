@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-physical-ai-enabled-s
 title: 'Guidance for Building Physical AI Enabled Smart Machines on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-physical-ai-enabled-smart-machines-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Building Physical AI Enabled Smart Machines on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/nova-act/index.html
 title: 'Amazon Nova Act Documentation'
 canonical_url: https://docs.aws.amazon.com/nova-act/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Amazon Nova Act Documentation

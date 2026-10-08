@@ -9,4 +9,4 @@ You use the AWS Payment Cryptography Data Plane to manage how encryption keys ar
 
 To manage your encryption keys, you use the [AWS Payment Cryptography Control Plane](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/Welcome.html). You can create, import, export, share, manage, and delete keys. You can also manage AWS Identity and Access Management (IAM) policies for keys.
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

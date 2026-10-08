@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/programmatic-deployment-of-ndi
 title: 'Guidance for Programmatic Deployment of NDI Discovery Servers for Broadcast Workflows on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/programmatic-deployment-of-ndi-discovery-servers-for-broadcast-workflows-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Programmatic Deployment of NDI Discovery Servers for Broadcast Workflows on AWS

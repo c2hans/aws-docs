@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/enabling-secure-collaboration-
 title: 'Guidance for Enabling Secure Collaboration on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/enabling-secure-collaboration-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Enabling Secure Collaboration on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mwaa/index.html
 title: 'Amazon Managed Workflows for Apache Airflow Documentation'
 canonical_url: https://docs.aws.amazon.com/mwaa/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Amazon Managed Workflows for Apache Airflow Documentation

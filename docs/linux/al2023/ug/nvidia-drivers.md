@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/nvidia-drivers.html
 ## About the NVIDIA repository
 <a name="nvidia-drivers-about"></a>
 
- The AL2023 NVIDIA repository mirrors packages from [the official NVIDIA CUDA repository for AL2023](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#amazon-installation). AWS qualifies NVIDIA software with AL2023 release candidates before redistributing, and provides security advisories for the packages in this repository.
+ The AL2023 NVIDIA repository mirrors packages from [the official NVIDIA CUDA repository for AL2023](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/#amazon-installation). AWS qualifies this NVIDIA software with AL2023 release candidates before redistributing, and provides security advisories for the packages in this repository.
 
  AWS mirrors NVIDIA Production Branch and Long Term Support Branch drivers to this repository. New Feature Branch (NFB) drivers are not mirrored, because they do not receive long-term security support. For more information about NVIDIA driver branches, see [NVIDIA driver lifecycle](https://docs.nvidia.com/datacenter/tesla/drivers/driver-lifecycle.html).
 

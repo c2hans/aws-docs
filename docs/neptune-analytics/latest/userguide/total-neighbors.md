@@ -62,7 +62,7 @@ MATCH (usairports:airport {country: 'US'})
 MATCH (ukairports:airport {country: 'UK'})
 CALL neptune.algo.neighbors.total(usairports, ukairports, {edgeLabels: ['route']})
 YIELD total
-RETURN usairports, ukairports, total"
+RETURN usairports, ukairports, total
 ```
 
 **Warning**

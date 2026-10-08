@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mini
 # MiniMax M2.5
 <a name="model-card-minimax-minimax-m2-5"></a>
 
-## ![Red waveform icon representing audio or voice activity.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/minimax2.1.png) MiniMax — MiniMax M2.5
+## ![MiniMax logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/minimax2.1.png) MiniMax — MiniMax M2.5
 <a name="model-card-minimax-minimax-m2-5-header"></a>
 
 ## Model Details

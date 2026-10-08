@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writ
 # Palmyra Vision 7B
 <a name="model-card-writer-palmyra-vision-7b"></a>
 
-## ![WordPress logo icon with white W on black circular background.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/writer.png) Writer — Palmyra Vision 7B
+## ![Writer logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/writer.png) Writer — Palmyra Vision 7B
 <a name="model-card-writer-palmyra-vision-7b-header"></a>
 
 ## Model Details

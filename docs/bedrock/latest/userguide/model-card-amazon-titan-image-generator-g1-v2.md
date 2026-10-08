@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amaz
 # Titan Image Generator G1 v2
 <a name="model-card-amazon-titan-image-generator-g1-v2"></a>
 
-## ![Amazon logo with curved arrow from A to Z forming a smile.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Titan Image Generator G1 v2
+## ![Amazon logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nova2pro.png) Amazon — Titan Image Generator G1 v2
 <a name="model-card-amazon-titan-image-generator-g1-v2-header"></a>
 
 ## Model Details

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/content-moderation-on-aws/inde
 title: 'Guidance for Content Moderation on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/content-moderation-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Content Moderation on AWS

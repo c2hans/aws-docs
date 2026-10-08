@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appflow/index.html
 title: 'Amazon AppFlow Documentation'
 canonical_url: https://docs.aws.amazon.com/appflow/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Amazon AppFlow Documentation

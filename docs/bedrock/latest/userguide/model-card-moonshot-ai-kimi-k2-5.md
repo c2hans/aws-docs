@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moon
 # Kimi K2.5
 <a name="model-card-moonshot-ai-kimi-k2-5"></a>
 
-## ![Spherical icon with horizontal stripes or segments across its surface.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/kimik2.5.png) Moonshot AI — Kimi K2.5
+## ![Moonshot AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/kimik2.5.png) Moonshot AI — Kimi K2.5
 <a name="model-card-moonshot-ai-kimi-k2-5-header"></a>
 
 ## Model Details

@@ -19,6 +19,7 @@ Required: Yes
 
  ** AttributeFilters **   <a name="networkfirewall-Type-ContainerMonitoringConfiguration-AttributeFilters"></a>
 Key-value pairs that filter which containers are tracked. For Amazon EKS, you can filter by namespace and Kubernetes labels. For Amazon ECS, you can filter by container instance attributes (EC2 launch type only).
+Attribute values can contain wildcard patterns, for example `payments-*`. Attribute keys must match exactly.
 Type: Array of [ContainerAttribute](API_ContainerAttribute.md) objects
 Required: No
 

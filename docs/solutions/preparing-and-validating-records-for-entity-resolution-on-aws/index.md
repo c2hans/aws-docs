@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/preparing-and-validating-recor
 title: 'Guidance for Preparing and Validating Records for Entity Resolution on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/preparing-and-validating-records-for-entity-resolution-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Preparing and Validating Records for Entity Resolution on AWS

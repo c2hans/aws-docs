@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohe
 # Embed English
 <a name="model-card-cohere-embed-english"></a>
 
-## ![Three overlapping circles in dark green, coral, and purple colors forming a logo or icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/cohere.png) Cohere — Embed English
+## ![Cohere logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/cohere.png) Cohere — Embed English
 <a name="model-card-cohere-embed-english-header"></a>
 
 ## Model Details

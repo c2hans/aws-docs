@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/monitoring-and-optimizing-ener
 title: 'Guidance for Monitoring and Optimizing Energy Usage on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/monitoring-and-optimizing-energy-usage-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Monitoring and Optimizing Energy Usage on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/aveva-system-platform-on-aws/i
 title: 'Guidance for AVEVA System Platform on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/aveva-system-platform-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for AVEVA System Platform on AWS

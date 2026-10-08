@@ -50,6 +50,7 @@ We recommend enabling both settings after you confirm that your automation is re
 
 **Important**
 Repository metadata verification is not enabled by default. Before you enable it, confirm that every unattended DNF command in your automation passes the `-y` option. For more information, see [Use repository metadata verification in automation](#repo-metadata-signing-automation).
+The NVIDIA repositories do not yet support repository metadata signing. Do not enable `repo_gpgcheck` for them. For more information, see [NVIDIA drivers](nvidia-drivers.md).
 
 ### Enable for a specific repository
 <a name="repo-metadata-signing-enable-per-repo"></a>

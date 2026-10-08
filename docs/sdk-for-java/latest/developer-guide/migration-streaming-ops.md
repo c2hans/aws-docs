@@ -41,3 +41,42 @@ s3client.getObject(GetObjectRequest.builder().bucket(bucket).key(key).build(),
 ```
 
 In the SDK for Java 2.x, streaming response operations have an `AsBytes` method to load the response into memory and simplify common type conversions in-memory.
+
+## Migrate concatenated GZIP response handling
+<a name="migration-streaming-gzip"></a>
+
+When migrating from SDK for Java 1.x, manually update code that wraps an S3 response stream in `GZIPInputStream`. Make this change if the response can contain multiple concatenated GZIP members. Select `ResponseTransformer.toGzipCompatibleInputStream()` or, for an asynchronous client, `AsyncResponseTransformer.toGzipCompatibleBlockingInputStream()`.
+
+Consider the following when you migrate this code:
++ The migration tool does not select these transformers automatically.
++ On some JDK versions, your `GZIPInputStream` can stop after one member of a concatenated GZIP response. This can happen if the next network chunk has not arrived. The result can be truncated decompressed data without an exception.
++ These transformers do not decompress the response content. Use them only when you wrap the returned stream in `GZIPInputStream`. Otherwise, use `ResponseTransformer.toInputStream()` or `AsyncResponseTransformer.toBlockingInputStream()`.
+
+For a synchronous client:
+
+```
+ResponseInputStream<GetObjectResponse> response =
+    s3Client.getObject(
+        request,
+        ResponseTransformer.toGzipCompatibleInputStream());
+
+try (GZIPInputStream gzipInputStream = new GZIPInputStream(response)) {
+    // Read the decompressed response.
+}
+```
+
+You can use `ResponseTransformer.toGzipCompatibleInputStream(Duration)` to configure the timeout for the first read operation.
+
+For an asynchronous client:
+
+```
+CompletableFuture<ResponseInputStream<GetObjectResponse>> responseFuture =
+    s3AsyncClient.getObject(
+        request,
+        AsyncResponseTransformer.toGzipCompatibleBlockingInputStream());
+
+try (ResponseInputStream<GetObjectResponse> response = responseFuture.join();
+     GZIPInputStream gzipInputStream = new GZIPInputStream(response)) {
+    // Read the decompressed response. Reads block the calling thread.
+}
+```

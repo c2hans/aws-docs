@@ -65,6 +65,7 @@ Content-type: application/json
          "numberOfNewDocumentsIndexed": number
       },
       "status": "string",
+      "textReadyAt": "string",
       "updatedAt": "string"
    }
 }

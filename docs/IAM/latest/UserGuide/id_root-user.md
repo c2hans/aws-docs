@@ -64,9 +64,6 @@ AWS Organizations, with all features enabled, can be used to manage member accou
 **AWS KMS Task**
 + In the event that an AWS Key Management Service key becomes unmanageable, an administrator can recover it by contacting Support; however, Support responds to your root user's primary phone number for authorization by confirming the ticket OTP.
 
-**Amazon Mechanical Turk Task**
-+  [Link Your AWS account to your MTurk Requester account](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkGettingStartedGuide/SetUp.html#accountlinking).
-
 **Amazon Simple Storage Service Tasks**
 + [Configure an Amazon S3 bucket to enable MFA (multi-factor authentication)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiFactorAuthenticationDelete.html).
 + [Edit or delete an Amazon S3 bucket policy that denies all principals](https://aws.amazon.com/premiumsupport/knowledge-center/change-vpc-endpoint-s3-bucket-policy/).

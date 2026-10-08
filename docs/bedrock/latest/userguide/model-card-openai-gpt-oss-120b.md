@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 # gpt-oss-120b
 <a name="model-card-openai-gpt-oss-120b"></a>
 
-## ![Icon showing a circular pattern with interwoven curved segments forming a pinwheel design.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — gpt-oss-120b
+## ![OpenAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — gpt-oss-120b
 <a name="model-card-openai-gpt-oss-120b-header"></a>
 
 ## Model Details

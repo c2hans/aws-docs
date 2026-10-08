@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/chatbot-user-feedback-and-anal
 title: 'Guidance for Chatbot User Feedback and Analytics on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/chatbot-user-feedback-and-analytics-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Chatbot User Feedback and Analytics on AWS

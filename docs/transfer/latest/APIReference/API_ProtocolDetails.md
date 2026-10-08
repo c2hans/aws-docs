@@ -43,6 +43,18 @@ Type: String
 Valid Values: `DEFAULT | ENABLE_NO_OP`
 Required: No
 
+ ** SftpPorts **   <a name="TransferFamily-Type-ProtocolDetails-SftpPorts"></a>
+A property used with Transfer Family servers that use the SFTP protocol and have `PUBLIC` endpoints. This property accepts a list of up to three port configurations that the service opens on the server endpoint.
+Each entry in the list consists of two parameters, the `SftpPort` and the `CommunicationMode`. The `SftpPort` takes any integer from 2000 to 65535, or 22. `CommunicationMode` can be one of the following options:
++  `SERVER_TALK_FIRST`: The server responds to initial TCP connections first. Many older clients expect that an SFTP server responds with its server string before starting SSH negotiations.
++  `CLIENT_TALK_FIRST`: The server responds to the initial TCP connection only after receiving a data packet. Most modern clients support this behavior and send their client string along with the initial data packets for SSH negotiation. Additionally, this mode is more resilient to TCP retransmissions that can occur during the initial TCP connection.
+The following is an `SftpPorts` example for port 2222 with `CLIENT_TALK_FIRST`.
+ `[ { "SftpPort": 2222, "CommunicationMode": "CLIENT_TALK_FIRST" } ]`
+If you don't specify any configurations during `CreateServer`, the service uses port 22 with `SERVER_TALK_FIRST` by default.
+Type: Array of [SftpPortWithOptions](API_SftpPortWithOptions.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
+Required: No
+
  ** TlsSessionResumptionMode **   <a name="TransferFamily-Type-ProtocolDetails-TlsSessionResumptionMode"></a>
 A property used with Transfer Family servers that use the FTPS protocol. TLS Session Resumption provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. `TlsSessionResumptionMode` determines whether or not the server resumes recent, negotiated sessions through a unique session ID. This property is available during `CreateServer` and `UpdateServer` calls. If a `TlsSessionResumptionMode` value is not specified during `CreateServer`, it is set to `ENFORCED` by default.
 +  `DISABLED`: the server does not process TLS session resumption client requests and creates a new TLS session for each request.

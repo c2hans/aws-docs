@@ -639,6 +639,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 17.7. For more i
 + Fixed an issue where ANALYZE operations did not work correctly on tables containing large LOB data
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 17.7.1, January 16, 2026
 <a name="aurorapostgresql-versions-version1771x-1771"></a>
@@ -756,6 +757,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 17.6. For more i
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 17.6.1, November 25, 2025
 <a name="aurorapostgresql-versions-version1761x-1761"></a>
@@ -888,6 +890,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 17.5. For more i
 + Fixed improper handling of empty response during connection loss with storage nodes.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 17.5.4, January 15, 2026
 <a name="aurorapostgresql-versions-version1754x-1754"></a>
@@ -1070,6 +1073,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 17.4. For more i
 + Fixed an issue to reduce CPU overhead while establishing Encryption in Transit between the database engine and the storage layer.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 17.4.5, February 02, 2026
 <a name="aurorapostgresql-versions-version1745x-1745"></a>
@@ -1595,6 +1599,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.11. For more 
 + Fixed an issue where ANALYZE operations did not work correctly on tables containing large LOB data
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 16.11.1, January 16, 2026
 <a name="aurorapostgresql-versions-version16111x-16111"></a>
@@ -1712,6 +1717,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.10. For more 
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 16.10.1, November 25, 2025
 <a name="aurorapostgresql-versions-version16101x-16101"></a>
@@ -1844,6 +1850,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.9. For more i
 + Fixed improper handling of empty response during connection loss with storage nodes.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 16.9.4, January 15, 2026
 <a name="aurorapostgresql-versions-version1694x-1694"></a>
@@ -2025,6 +2032,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 16.8. For more i
 + Fixed an issue to reduce CPU overhead while establishing Encryption in Transit between the database engine and the storage layer.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 16.8.5, February 03, 2026
 <a name="aurorapostgresql-versions-version1685x-1685"></a>
@@ -3178,6 +3186,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.15. For more 
 + Fixed an issue where ANALYZE operations did not work correctly on tables containing large LOB data
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 15.15.1, January 16, 2026
 <a name="aurorapostgresql-versions-version15151x-15151"></a>
@@ -3291,6 +3300,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.14. For more 
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 15.14.1, November 25, 2025
 <a name="aurorapostgresql-versions-version15141x-15141"></a>
@@ -3412,6 +3422,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.13. For more 
 + Fixed improper handling of empty response during connection loss with storage nodes.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 15.13.4, January 15, 2026
 <a name="aurorapostgresql-versions-version15134x-15134"></a>
@@ -3589,6 +3600,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 15.12. For more 
 + Fixed an issue to reduce CPU overhead while establishing Encryption in Transit between the database engine and the storage layer.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 15.12.5, February 19, 2026
 <a name="aurorapostgresql-versions-version15125x-15125"></a>
@@ -5319,6 +5331,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.20. For more 
 + Fixed an issue where ANALYZE operations did not work correctly on tables containing large LOB data
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 14.20.1, January 16, 2026
 <a name="aurorapostgresql-versions-version14201x-14201"></a>
@@ -5432,6 +5445,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.19. For more 
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 14.19.1, November 25, 2025
 <a name="aurorapostgresql-versions-version14191x-14191"></a>
@@ -5553,6 +5567,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.18. For more 
 + Fixed improper handling of empty response during connection loss with storage nodes.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 14.18.4, January 15, 2026
 <a name="aurorapostgresql-versions-version14184x-14184"></a>
@@ -5728,6 +5743,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 14.17. For more 
 + Fixed an issue to reduce CPU overhead while establishing Encryption in Transit between the database engine and the storage layer.
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where ALTER FUNCTION could fail with "routine name is not unique".
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 14.17.5, February 10, 2026
 <a name="aurorapostgresql-versions-version1417x-1417"></a>
@@ -7804,6 +7820,7 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 13.23. For more 
 + Fixed an issue where ANALYZE operations did not work correctly on tables containing large LOB data
 + Fixed an issue where correlated any transform could return an error message 'failed to build any 3-way joins' during transformation.
 + Fixed an issue where optimization was not triggered due to incorrect tracking of transaction metadata.
++ Fixed an issue that could cause database cluster clone operations to take an extended time to complete.
 
 #### Aurora PostgreSQL 13.23.1, January 16, 2026
 <a name="aurorapostgresql-versions-version13231x-13231"></a>

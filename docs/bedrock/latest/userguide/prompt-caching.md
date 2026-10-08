@@ -75,6 +75,7 @@ To see which prompt caching types a model supports, refer to [Models at a glance
 
 | Model name | Model ID | Release Type | Minimum number of tokens per cache checkpoint | Maximum number of cache checkpoints or writes per request | Supported TTL | Fields that accept prompt cache checkpoints |
 | --- | --- | --- | --- | --- | --- | --- |
+| Claude Haiku 5.5 | anthropic.claude-haiku-5-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Sonnet 5.5 | anthropic.claude-sonnet-5-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Opus 5.5 | anthropic.claude-opus-5-5 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |
 | Claude Fable 5.1 | anthropic.claude-fable-5-1 | Generally Available | 512 | 4 | 5 minutes, 1 hour | `system`, `messages`, and `tools` |

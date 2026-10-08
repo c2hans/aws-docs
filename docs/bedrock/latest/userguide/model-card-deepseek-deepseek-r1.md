@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deep
 # DeepSeek-R1
 <a name="model-card-deepseek-deepseek-r1"></a>
 
-## ![Blue icon showing a stylized whale with containers, representing Docker or container services.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/deepseek.png) DeepSeek — DeepSeek-R1
+## ![DeepSeek logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/deepseek.png) DeepSeek — DeepSeek-R1
 <a name="model-card-deepseek-deepseek-r1-header"></a>
 
 ## Model Details
@@ -131,7 +131,7 @@ import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')
 response = client.invoke_model(
-    modelId='deepseek.r1-v1:0',
+    modelId='us.deepseek.r1-v1:0',
     body=json.dumps({
             'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
             'max_tokens': 1024
@@ -148,7 +148,7 @@ import boto3
 
 client = boto3.client('bedrock-runtime', region_name='us-east-1')
 response = client.converse(
-    modelId='deepseek.r1-v1:0',
+    modelId='us.deepseek.r1-v1:0',
     messages=[
         {
             'role': 'user',

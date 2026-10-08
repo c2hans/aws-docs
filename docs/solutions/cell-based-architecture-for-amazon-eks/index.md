@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/cell-based-architecture-for-am
 title: 'Guidance for a Cell-Based Architecture for Amazon EKS'
 canonical_url: https://docs.aws.amazon.com/solutions/cell-based-architecture-for-amazon-eks/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for a Cell-Based Architecture for Amazon EKS

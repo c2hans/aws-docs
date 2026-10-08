@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/ground-station/index.html
 title: 'AWS Ground Station Documentation'
 canonical_url: https://docs.aws.amazon.com/ground-station/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # AWS Ground Station Documentation

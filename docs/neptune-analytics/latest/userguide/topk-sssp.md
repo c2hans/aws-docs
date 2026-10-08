@@ -108,7 +108,7 @@ CALL neptune.algo.topksssp(
   }
 )
 YIELD distance
-RETURN n, collect(distance) AS distances'
+RETURN n, collect(distance) AS distances
 ```
 
 **Warning**

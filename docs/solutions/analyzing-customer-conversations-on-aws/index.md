@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/analyzing-customer-conversatio
 title: 'Guidance for Analyzing Customer Conversations on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/analyzing-customer-conversations-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Analyzing Customer Conversations on AWS

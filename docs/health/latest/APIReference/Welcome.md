@@ -25,4 +25,4 @@ When you use the AWS Health API operations to return AWS Health events, see the 
 Use the [eventScopeCode](https://docs.aws.amazon.com/health/latest/APIReference/API_Event.html#AWSHealth-Type-Event-eventScopeCode) parameter to specify whether to return AWS Health events that are public or account-specific.
 Use pagination to view all events from the response. For example, if you call the `DescribeEventsForOrganization` operation to get all events in your organization, you might receive several page results. Specify the `nextToken` in the next request to return more results.
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

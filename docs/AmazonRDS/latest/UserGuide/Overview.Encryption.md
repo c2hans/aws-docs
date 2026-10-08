@@ -37,6 +37,8 @@ Using AWS KMS, you can create customer managed keys and define the policies that
 + Once you have created an encrypted DB instance, you can't change the KMS key used by that DB instance. Therefore, be sure to determine your KMS key requirements before you create your encrypted DB instance.
 
   If you must change the encryption key for your DB instance, create a manual snapshot of your instance and enable encryption while copying the snapshot. For more information, see [ re:Post Knowledge article](https://repost.aws/knowledge-center/update-encryption-key-rds).
+
+  You can also use a blue/green deployment to create a green environment that's encrypted with a different KMS key than the blue environment. Use this deployment to encrypt an unencrypted DB instance or to change the KMS key of an encrypted DB instance. For more information about blue/green deployments, see [Limitations and considerations for Amazon RDS blue/green deployments](blue-green-deployments-considerations.md).
 + If you copy an encrypted snapshot, you can use a different KMS key to encrypt the target snapshot than the one that was used to encrypt the source snapshot.
 + A read replica of an Amazon RDS encrypted instance must be encrypted using the same KMS key as the primary DB instance when both are in the same AWS Region.
 + If the primary DB instance and read replica are in different AWS Regions, you encrypt the read replica using the KMS key for that AWS Region.

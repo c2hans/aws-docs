@@ -255,6 +255,8 @@ The following data types are supported by Agents for Amazon Bedrock:
 +  [VideoConfiguration](API_agent_VideoConfiguration.md)
 +  [VideoExtractionConfiguration](API_agent_VideoExtractionConfiguration.md)
 +  [VideoSegmentationConfiguration](API_agent_VideoSegmentationConfiguration.md)
++  [VpcConfiguration](API_agent_VpcConfiguration.md)
++  [VpcConfigurationSummary](API_agent_VpcConfigurationSummary.md)
 +  [WebCrawlerConfiguration](API_agent_WebCrawlerConfiguration.md)
 +  [WebCrawlerLimits](API_agent_WebCrawlerLimits.md)
 +  [WebDataSourceConfiguration](API_agent_WebDataSourceConfiguration.md)

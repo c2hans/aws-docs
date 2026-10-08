@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 # GPT-6 Sol
 <a name="model-card-openai-gpt-6-sol"></a>
 
-## ![OpenAI logo](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT-6 Sol
+## ![OpenAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT-6 Sol
 <a name="model-card-openai-gpt-6-sol-header"></a>
 
 ## Model details

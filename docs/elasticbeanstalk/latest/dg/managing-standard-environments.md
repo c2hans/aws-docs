@@ -10,6 +10,7 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/managing-stan
 + [Updating your Elastic Beanstalk environment's platform version](using-features.platform.upgrade.md)
 + [Canceling environment configuration updates and application deployments](using-features.rollingupdates.cancel.md)
 + [Rebuilding Elastic Beanstalk environments](environment-management-rebuild.md)
++ [Pausing and resuming Elastic Beanstalk environments](environment-management-pause.md)
 + [Environment types](using-features-managing-env-types.md)
 + [Elastic Beanstalk worker environments](using-features-managing-env-tiers.md)
 + [Creating links between Elastic Beanstalk environments](environment-cfg-links.md)

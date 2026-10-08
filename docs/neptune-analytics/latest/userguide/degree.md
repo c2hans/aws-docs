@@ -47,7 +47,7 @@ RETURN node, degree
     To filter on one more vertex labels, provide a list of the ones to filter on. If no `vertexLabels` field is provided then all vertex labels are processed during traversal.
   + **vertexLabel** *(optional)*   –   *type:* `string`;   *default: none*.
 
-    [deprecated]
+    [deprecated] A node label for node filtering. Note that it is deprecated. If vertexLabels is provided, vertexLabel is ignored.
   + **traversalDirection** *(optional)*   –   *type:* `string`;   *default:*` "outbound"`.
 
     The direction of edge to follow. Must be one of: `"inbound"`, `"outbound"`, or `"both"`.
@@ -82,7 +82,7 @@ aws neptune-graph execute-query \
         ["101", "102", "103"],
         {
           edgeLabels: ["route"],
-          vertexLabel: ["airport"],
+          vertexLabels: ["airport"],
           traversalDirection: "inbound",
           concurrency: 0
         }
@@ -99,7 +99,7 @@ This is a query integration example with frontier injection, where `.degree` fol
 MATCH(n:airport)
 CALL neptune.algo.degree(n, {edgeLabels: ["route"]})
 YIELD degree
-RETURN n, degree'
+RETURN n, degree
 ```
 
 This is an example of multiple `.degree` invocations chained together, where the output of one invocation serves as the input of another:
@@ -109,7 +109,7 @@ CALL neptune.algo.degree(
   ["108"],
   {
     edgeLabels: ["route"],
-    vertexLabel: ["airport"]
+    vertexLabels: ["airport"]
   }
 )
 YIELD node
@@ -117,7 +117,7 @@ CALL neptune.algo.degree(
   node,
   {
     edgeLabels: ["route"],
-    vertexLabel: ["airport"]
+    vertexLabels: ["airport"]
   }
 )
 YIELD node AS node2 WITH id(node2) AS id

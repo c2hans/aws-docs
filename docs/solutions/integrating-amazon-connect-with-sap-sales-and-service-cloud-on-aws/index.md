@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/integrating-amazon-connect-wit
 title: 'Guidance for Integrating Amazon Connect Customer Customer with SAP Sales and Service Cloud on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/integrating-amazon-connect-with-sap-sales-and-service-cloud-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Integrating Amazon Connect Customer Customer with SAP Sales and Service Cloud on AWS

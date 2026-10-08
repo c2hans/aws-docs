@@ -11,4 +11,4 @@ To view the Amazon EC2 Instance Connect content in the * Amazon EC2 User Guide*,
 
 For Amazon EC2 APIs, see the [Amazon EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html).
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

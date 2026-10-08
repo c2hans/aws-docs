@@ -11,4 +11,4 @@ With ElastiCache, customers get all of the benefits of a high-performance, in-me
 
 In addition, through integration with Amazon CloudWatch, customers get enhanced visibility into the key performance statistics associated with their cache and can receive alarms if a part of their cache runs hot.
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

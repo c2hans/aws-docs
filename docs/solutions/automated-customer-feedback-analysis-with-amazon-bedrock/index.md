@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-customer-feedback-an
 title: 'Guidance for Automated Customer Feedback Analysis with Amazon Bedrock'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-customer-feedback-analysis-with-amazon-bedrock/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Automated Customer Feedback Analysis with Amazon Bedrock

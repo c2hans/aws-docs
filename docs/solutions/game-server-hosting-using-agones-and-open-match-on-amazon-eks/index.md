@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/game-server-hosting-using-agon
 title: 'Guidance for Game Server Hosting Using Agones and Open Match on Amazon EKS'
 canonical_url: https://docs.aws.amazon.com/solutions/game-server-hosting-using-agones-and-open-match-on-amazon-eks/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Game Server Hosting Using Agones and Open Match on Amazon EKS

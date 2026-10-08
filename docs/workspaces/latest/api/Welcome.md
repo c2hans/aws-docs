@@ -11,4 +11,4 @@ This API Reference provides detailed information about the actions, data types, 
 
 You can also manage your WorkSpaces resources using the WorkSpaces console, AWS Command Line Interface (AWS CLI), and SDKs. For more information about administering WorkSpaces, see the [Amazon WorkSpaces Administration Guide](https://docs.aws.amazon.com/workspaces/latest/adminguide/). For more information about using the Amazon WorkSpaces client application or web browser to access provisioned WorkSpaces, see the [Amazon WorkSpaces User Guide](https://docs.aws.amazon.com/workspaces/latest/userguide/). For more information about using the AWS CLI to manage your WorkSpaces resources, see the [WorkSpaces section of the AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/workspaces/index.html).
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

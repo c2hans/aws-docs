@@ -67,6 +67,8 @@ Parse the document as a general JSON object rather than a fixed structure. The m
 Test strict clients against the current document
 If your client validates the discovery document strictly, fetch the current document from your user pool's `/.well-known/openid-configuration` endpoint and confirm that your client accepts it before you depend on a specific set of members.
 
+Amazon Cognito tokens follow the same additive, forward-compatible approach. For more information about parsing the claims in an ID or access token, see [Parse user pool tokens safely](user-pool-parse-tokens-safely.md).
+
 **Topics**
 + [Amazon Cognito user pools as an OIDC issuer](#user-pool-oidc-issuer)
 + [The redirect and authorization endpoint](authorization-endpoint.md)

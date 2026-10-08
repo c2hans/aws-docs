@@ -8,6 +8,9 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/nvidia-drivers.html
 **AL2027 Preview**
 AL2027 is currently available for preview. It is intended for evaluation and testing only and is not recommended for production workloads.
 
+**Important**
+ The AL2027 NVIDIA repositories do not yet support repository metadata signing. Do not set `repo_gpgcheck=1` for the NVIDIA repositories. If you do, DNF can't load them and reports `repomd.xml GPG signature verification error: Bad PGP signature`. Packages in these repositories are still signed and verified by `gpgcheck`. Signing support is planned for an upcoming release. For more information, see [Repository metadata signing in AL2027](repo-metadata-signing.md).
+
  Amazon Linux 2027 provides NVIDIA GPU drivers and CUDA Toolkit packages through dedicated repositories. AWS maintains these repositories and provides security advisories through the [Amazon Linux Security Center (ALAS)](https://alas.aws.amazon.com/alas2027.html).
 
 **Topics**
@@ -25,7 +28,7 @@ AL2027 is currently available for preview. It is intended for evaluation and tes
 +  One repository per NVIDIA GPU driver major version (`amazonlinux-nvidia-driver-{{major}}`). For example `amazonlinux-nvidia-driver-580` (Long Term Support Branch) and `amazonlinux-nvidia-driver-595` (Production Branch). Each repository follows the support timeline of the respective NVIDIA driver branch. You can enable repositories for different driver major versions at the same time.
 +  A *products* repository (`amazonlinux-nvidia-products`) that provides everything *except* the GPU driver, such as CUDA Toolkit and related packages.
 
- AWS qualifies NVIDIA software with AL2027 release candidates before redistributing, and provides security advisories for the packages in these repositories.
+ AWS qualifies this NVIDIA software with AL2027 release candidates before redistributing, and provides security advisories for the packages in these repositories.
 
  New Feature Branch (NFB) drivers are skipped, because they do not receive long-term security support. For more information about NVIDIA driver branches, see [NVIDIA driver lifecycle](https://docs.nvidia.com/datacenter/tesla/drivers/driver-lifecycle.html).
 

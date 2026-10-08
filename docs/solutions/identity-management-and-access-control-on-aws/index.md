@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/identity-management-and-access
 title: 'Guidance for Identity Management & Access Control on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/identity-management-and-access-control-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Identity Management & Access Control on AWS

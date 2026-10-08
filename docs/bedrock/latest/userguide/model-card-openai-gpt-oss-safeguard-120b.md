@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-open
 # GPT OSS Safeguard 120B
 <a name="model-card-openai-gpt-oss-safeguard-120b"></a>
 
-## ![Icon showing a circular pattern with interwoven curved segments forming a pinwheel design.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT OSS Safeguard 120B
+## ![OpenAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/openai.png) OpenAI — GPT OSS Safeguard 120B
 <a name="model-card-openai-gpt-oss-safeguard-120b-header"></a>
 
 ## Model Details

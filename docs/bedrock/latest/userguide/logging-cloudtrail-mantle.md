@@ -99,13 +99,8 @@ You can additionally filter by `eventName` and `resources.ARN`. For details on a
 
 Use `AWS::BedrockMantle::Project` as the `resources.type` field selector when you configure CloudTrail data event capture for `bedrock-mantle`.
 
-The `resources` array in a delivered event can reference the following resource types. Of these, only `AWS::BedrockMantle::Project` is supported as a value for the `resources.type` field selector.
+The `resources` array in a delivered event references the following resource type, which is also the only value that the `resources.type` field selector supports for `bedrock-mantle`:
 + `AWS::BedrockMantle::Project`
-+ `AWS::BedrockMantle::Reservation`
-+ `AWS::BedrockMantle::CustomizedModel`
-+ `AWS::BedrockMantle::Environment`
-+ `AWS::BedrockMantle::Runtime`
-+ `AWS::BedrockMantle::Skill`
 
 ## Example log entry
 <a name="mantle-cloudtrail-example"></a>

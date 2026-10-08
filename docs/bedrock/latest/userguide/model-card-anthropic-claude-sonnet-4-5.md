@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 # Claude Sonnet 4.5
 <a name="model-card-anthropic-claude-sonnet-4-5"></a>
 
-## ![Orange rounded square icon with white radial loading or progress indicator symbol.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Sonnet 4.5
+## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Sonnet 4.5
 <a name="model-card-anthropic-claude-sonnet-4-5-header"></a>
 
 ## Model Details
@@ -16,7 +16,7 @@ Claude Sonnet 4.5 is Anthropic's model optimized for agents, coding, and compute
 + **EOL no sooner than:** Sep 30, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** No sooner than 9/29/2026
++ **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
 + **Context window:** 200K tokens

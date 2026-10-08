@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/Welcome.html
 
 AWS Elastic Disaster Recovery Service.
 
-This document was last published on October 6, 2026.
+This document was last published on October 7, 2026.

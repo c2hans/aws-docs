@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ai-assistants-with-amazon-q-bu
 title: 'Guidance for AI Assistants with Amazon Q Business'
 canonical_url: https://docs.aws.amazon.com/solutions/ai-assistants-with-amazon-q-business/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for AI Assistants with Amazon Q Business

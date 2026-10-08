@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/application-security-on-aws/in
 title: 'Guidance for Application Security on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/application-security-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Application Security on AWS

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/accelerated-intelligent-docume
 title: 'Guidance for Accelerated Intelligent Document Processing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/accelerated-intelligent-document-processing-on-aws/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Accelerated Intelligent Document Processing on AWS

@@ -47,7 +47,12 @@ We recommend that you use finer-grained policies. For policy setup, refer to [Ho
       ],
       "Resource": [
         "*"
-      ]
+      ],
+      "Condition": {
+        "StringEquals": {
+          "iam:AWSServiceName": "airflow-serverless.amazonaws.com"
+        }
+      }
     },
     {
       "Sid": "MWAAServerlessServicePassroleAccess",
@@ -57,14 +62,19 @@ We recommend that you use finer-grained policies. For policy setup, refer to [Ho
       ],
       "Resource": [
         "*"
-      ]
+      ],
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": "airflow-serverless.amazonaws.com"
+        }
+      }
     },
     {
       "Sid": "MWAAServerlessServiceS3ReadAccess",
       "Effect": "Allow",
       "Action": [
         "s3:GetObject",
-        's3:GetObjectVersion'
+        "s3:GetObjectVersion"
       ],
       "Resource": [
         "*"

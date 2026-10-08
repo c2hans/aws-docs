@@ -437,11 +437,11 @@ Choose the appropriate policy based on your role:
  **Testing this policy:**
 
 ```
-# Verify access works
-aws elastic-cloud-compute-ec2 describe-* / list-*
+# Verify read access works
+aws ec2 describe-instances
 
-# Verify restricted access is denied (should fail)
-aws elastic-cloud-compute-ec2 create-* / delete-*
+# Verify write access is denied (should fail)
+aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
 ```
 
  **Policy JSON:**
@@ -470,22 +470,22 @@ aws elastic-cloud-compute-ec2 create-* / delete-*
 
  **Grants access to:**
 + All read-only permissions
-+ Create and modify resources
-+ Perform operational tasks
++ Start, stop, and reboot instances
++ Perform routine operational tasks
 
  **Does NOT grant:**
-+ Delete critical resources
++ Terminate instances or create/delete resources
 + Change security configurations
 + Manage access policies
 
  **Testing this policy:**
 
 ```
-# Verify access works
-aws elastic-cloud-compute-ec2 create-* / update-*
+# Verify operator access works (requires MFA)
+aws ec2 stop-instances --instance-ids i-0123456789abcdef0
 
-# Verify restricted access is denied (should fail)
-aws elastic-cloud-compute-ec2 delete-* / put-*-policy
+# Verify admin access is denied (should fail)
+aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
 ```
 
  **Policy JSON:**
@@ -532,8 +532,9 @@ aws elastic-cloud-compute-ec2 delete-* / put-*-policy
  **Testing this policy:**
 
 ```
-# Verify access works
-aws elastic-cloud-compute-ec2 * (all operations)
+# Verify full admin access works (requires MFA)
+aws ec2 run-instances --image-id ami-0123456789abcdef0 --instance-type t3.micro
+aws ec2 terminate-instances --instance-ids i-0123456789abcdef0
 ```
 
  **Policy JSON:**

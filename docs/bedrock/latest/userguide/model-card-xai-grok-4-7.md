@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-
 # Grok 4.7
 <a name="model-card-xai-grok-4-7"></a>
 
-## ![Icon showing the xAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/xai.png) xAI — Grok 4.7
+## ![xAI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/xai.png) xAI — Grok 4.7
 <a name="model-card-xai-grok-4-7-header"></a>
 
 ## Model Details

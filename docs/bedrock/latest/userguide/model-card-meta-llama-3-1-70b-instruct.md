@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta
 # Llama 3.1 70B Instruct
 <a name="model-card-meta-llama-3-1-70b-instruct"></a>
 
-## ![Blue infinity symbol or figure-eight icon on white background.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/meta.png) Meta — Llama 3.1 70B Instruct
+## ![Meta logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/meta.png) Meta — Llama 3.1 70B Instruct
 <a name="model-card-meta-llama-3-1-70b-instruct-header"></a>
 
 ## Model Details

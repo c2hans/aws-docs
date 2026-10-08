@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/codebuild/index.html
 title: 'AWS CodeBuild Documentation'
 canonical_url: https://docs.aws.amazon.com/codebuild/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # AWS CodeBuild Documentation

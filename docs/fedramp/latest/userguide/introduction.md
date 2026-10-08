@@ -58,3 +58,10 @@ FedRAMP Revision 5 introduces Secure Configuration Guide requirements that cloud
 <a name="_review_implement_guidance"></a>
 
 Explore security configuration guidance for administrative accounts and all avaialble AWS services. Use the examples provided to help implement security configurations of your AWS accounts and AWS services.
+
+### Export & Automate
+<a name="_export_automate"></a>
+
+Download OSCAL files to integrate with your compliance automation tools for continued usage
+
+ [Download the OSCAL files bundle (ZIP)](samples/FRR-RSC.zip)

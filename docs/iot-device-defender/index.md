@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/index.html
 title: 'AWS IoT Device Defender'
 canonical_url: https://docs.aws.amazon.com/iot-device-defender/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # AWS IoT Device Defender

@@ -20,7 +20,7 @@ When you invoke a third-party model for the first time in your account, Amazon B
 **Valid payment method**: Your AWS account must have a valid payment method configured for AWS Marketplace purchases.
 
 **Note**
-Anthropic requires first-time customers to submit use case details before invoking a model once per account or once at the organization's management account. This requirement does not apply to Anthropic models accessed through the `bedrock-mantle` endpoint. You can submit use case details by selecting an Anthropic model from the model catalog in the Amazon Bedrock console or calling the `PutUseCaseForModelAccess` API command. Access to the model is granted immediately after use case details are successfully submitted. The form submission at the root account will be inherited by other accounts in the same AWS Organization.
+Anthropic requires first-time customers to submit use case details before invoking a model once per account or once at the organization's management account. This requirement does not apply to Anthropic models accessed through the `bedrock-mantle` endpoint. You can submit use case details by selecting an Anthropic model from the model catalog in the Amazon Bedrock console or calling the `PutUseCaseForModelAccess` API command. In most cases, access to the model is granted as soon as use case details are successfully submitted. Submission doesn't always complete immediately, however. The model agreement can enter a pending state, during which invoking the model continues to return `AccessDeniedException` even though your submission succeeded. AWS sends you an email when the agreement finishes being set up. To check the state of your submission rather than waiting, call `GetFoundationModelAvailability` and read the `agreementAvailability` status, as described in [Step 4: Get foundation model availability](#model-access-sdk-step4). The form submission at the root account will be inherited by other accounts in the same AWS Organization.
 The use case form requires a description of your intended use and a website URL. If you are an individual developer or student without a company website, you can provide a personal portfolio, GitHub profile, or project URL that describes your use case.
 
 **Note**
@@ -350,7 +350,7 @@ model_availability_response = bedrock_client.get_foundation_model_availability(m
 ------
 
 **Expected response**
-`agreementAvailability` - `AVAILABLE` if access exists, `NOT_AVAILABLE` is access does not exist.
+`agreementAvailability` returns a `status` of `AVAILABLE` if access exists, `PENDING` if the agreement is still being set up, `NOT_AVAILABLE` if access doesn't exist, or `ERROR` if the agreement couldn't be completed. When the status is `ERROR`, the `errorMessage` field describes the problem. A status of `PENDING` can occur after you submit Anthropic use case details; invoking the model returns `AccessDeniedException` until the status becomes `AVAILABLE`.
 
 ```
 {

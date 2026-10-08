@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/automated-deployment-of-layer-
 title: 'Guidance for Automated Deployment of Layer 2 Stretch Network Extensions with Cisco 8000v on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-deployment-of-layer-2-stretch-network-extensions-with-cisco-8000v/
 source: aws-documentation
-generated_on: 2026-10-06
+generated_on: 2026-10-07
 ---
 
 # Guidance for Automated Deployment of Layer 2 Stretch Network Extensions with Cisco 8000v on AWS

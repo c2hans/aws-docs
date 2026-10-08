@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mist
 # Mistral Large
 <a name="model-card-mistral-ai-mistral-large"></a>
 
-## ![Pixelated icon showing a stylized person or avatar with orange and yellow coloring.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Mistral Large
+## ![Mistral AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/mistralai.png) Mistral AI — Mistral Large
 <a name="model-card-mistral-ai-mistral-large-header"></a>
 
 ## Model Details

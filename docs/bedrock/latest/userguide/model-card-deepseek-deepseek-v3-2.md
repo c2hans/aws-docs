@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deep
 # DeepSeek V3.2
 <a name="model-card-deepseek-deepseek-v3-2"></a>
 
-## ![Blue icon showing a stylized whale with containers, representing Docker or container services.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/deepseek.png) DeepSeek — DeepSeek V3.2
+## ![DeepSeek logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/deepseek.png) DeepSeek — DeepSeek V3.2
 <a name="model-card-deepseek-deepseek-v3-2-header"></a>
 
 ## Model Details

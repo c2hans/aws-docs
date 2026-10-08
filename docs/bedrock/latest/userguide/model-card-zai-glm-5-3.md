@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-
 # GLM 5.3
 <a name="model-card-zai-glm-5-3"></a>
 
-## ![Z.AI logo: a white stylized letter Z on a black rounded square.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/zai.png) Z.AI — GLM 5.3
+## ![Z.AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/zai.png) Z.AI — GLM 5.3
 <a name="model-card-zai-glm-5-3-header"></a>
 
 ## Model Details

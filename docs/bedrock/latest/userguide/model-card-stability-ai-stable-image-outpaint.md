@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stab
 # Stable Image Outpaint
 <a name="model-card-stability-ai-stable-image-outpaint"></a>
 
-## ![Icon showing a purple letter S with a red dot in the lower right corner.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/stability.png) Stability AI — Stable Image Outpaint
+## ![Stability AI logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/stability.png) Stability AI — Stable Image Outpaint
 <a name="model-card-stability-ai-stable-image-outpaint-header"></a>
 
 ## Model Details

@@ -150,6 +150,7 @@ Required: Yes
             "Type": "string"
          }
       ],
+      "StructuredLogDestinations": [ "string" ],
       "Tags": [
          {
             "Key": "string",

@@ -67,6 +67,9 @@ ResponseInputStream<GetObjectResponse> response = s3Client.getObject(req -> req
     .key("my-key"));
 ```
 
+**Note**
+When migrating from SDK for Java 1.x, manually update code that uses `GZIPInputStream` to decode a concatenated GZIP response. The migration tool does not update this code automatically. For details and examples, see [Migrate concatenated GZIP response handling](migration-streaming-ops.md#migration-streaming-gzip).
+
 ### `getObject` to a file
 <a name="V1-V2-getobject-to-file"></a>
 
