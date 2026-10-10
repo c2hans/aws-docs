@@ -1212,10 +1212,6 @@ Exception prefix: `Organizations`
 Task state resource: `arn:aws:states:::aws-sdk:outposts:{{[apiAction]}}`
 Exception prefix: `Outposts`
 
-**AWS Panorama**
-Task state resource: `arn:aws:states:::aws-sdk:panorama:{{[apiAction]}}`
-Exception prefix: `Panorama`
-
 **AWS Parallel Computing Service**
 Task state resource: `arn:aws:states:::aws-sdk:pcs:{{[apiAction]}}`
 Exception prefix: `Pcs`

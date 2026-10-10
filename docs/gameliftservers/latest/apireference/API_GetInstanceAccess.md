@@ -56,7 +56,8 @@ Required: Yes
  ** [InstanceId](#API_GetInstanceAccess_RequestSyntax) **   <a name="gameliftservers-GetInstanceAccess-request-InstanceId"></a>
 A unique identifier for the instance you want to access. You can access an instance in any status.
 Type: String
-Pattern: `[a-zA-Z0-9\.-]+`
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^[a-zA-Z0-9\.-]+$`
 Required: Yes
 
 ## Response Syntax

@@ -39,7 +39,8 @@ In the following list, the required parameters are described first.
  ** [BuildId](#API_RequestUploadCredentials_RequestSyntax) **   <a name="gameliftservers-RequestUploadCredentials-request-BuildId"></a>
 A unique identifier for the build to get credentials for. You can use either the build ID or ARN value.
 Type: String
-Pattern: `^build-\S+|^arn:.*:build\/build-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(build-\S+|arn:.*:build\/build-\S+)$`
 Required: Yes
 
 ## Response Syntax
@@ -103,7 +104,7 @@ HTTP Status Code: 400
 ### Refresh access credentials for uploading a build
 <a name="API_RequestUploadCredentials_Example_1"></a>
 
-This example obtains new, valid access credentials for uploading a build file to a Amazon GameLift Servers Amazon S3 location. Credentials have a limited lift span. The build ID required for this operation is returned in response to the original `CreateBuild` request.
+This example obtains new, valid access credentials for uploading a build file to a Amazon GameLift Servers Amazon S3 location. Credentials have a limited life span. The build ID required for this operation is returned in response to the original `CreateBuild` request.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 

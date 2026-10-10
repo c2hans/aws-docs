@@ -19,17 +19,17 @@ The SDK attempts retries only on retryable errors. Examples of retryable errors 
 ## Configuring retry
 <a name="retries-configure"></a>
 
-You can customize the standard retry strategy by setting the maximum number of attempts and the rate limiting strategy to use. To change the retry configuration, create a structure of type `S3ClientConfiguration` with the properties you wish to customize. For details on how to configure a service client, see [Configuring AWS SDK for Swift service clients in code](config-code.md).
+You can customize the standard retry strategy by setting the maximum number of attempts and the rate limiting strategy to use. To change the retry configuration, create a structure of type `S3ClientConfig` with the properties you wish to customize. For details on how to configure a service client, see [Configuring AWS SDK for Swift service clients in code](config-code.md).
 
 ### Maximum number of attempts
 <a name="retries-max-attempts"></a>
 
-You can customize the maximum number of attempts by specifying a value for the `S3ClientConfiguration` structure's `maxAttempts` property. The default value is 3.
+You can customize the maximum number of attempts by specifying a value for the `S3ClientConfig` structure's `maxAttempts` property. The default value is 3.
 
 ### Retry mode
 <a name="retries-rate-limiting-mode"></a>
 
-The retry mode can be set by changing the `S3ClientConfiguration` structure's `retryMode`. The available values are provided by the `enum` `AWSRetryMode`.
+To set the retry mode, change the `S3ClientConfig` structure's `awsRetryMode` property. The `enum` `AWSRetryMode` provides the available values.
 
 #### Legacy
 <a name="retries-rate-limiting-mode-legacy"></a>
@@ -57,7 +57,7 @@ import SmithyRetries
 import SmithyRetriesAPI
 ```
 
-Then create the custom configuration. This example's `S3ClientConfiguration` asks for the client to make up to three attempts for each action, using the `adaptive` retry mode.
+Then create the custom configuration. This example's `S3ClientConfig` asks for the client to make up to three attempts for each action, using the `adaptive` retry mode.
 
 ```
         let config: S3Client.S3ClientConfiguration

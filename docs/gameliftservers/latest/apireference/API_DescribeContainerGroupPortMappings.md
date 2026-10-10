@@ -68,7 +68,7 @@ When `ContainerGroupType` is `GAME_SERVER`, this parameter is required.
 When `ContainerGroupType` is `PER_INSTANCE`, do not provide this parameter. If you provide a compute name with `PER_INSTANCE`, the request fails with an `InvalidRequestException`.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 Required: No
 
  ** [ContainerName](#API_DescribeContainerGroupPortMappings_RequestSyntax) **   <a name="gameliftservers-DescribeContainerGroupPortMappings-request-ContainerName"></a>
@@ -76,7 +76,7 @@ A container name to filter the results. When provided, the operation returns por
 If not provided, the operation returns port mappings for all containers in the container group.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-zA-Z0-9\-]+$`
+Pattern: `^[a-zA-Z0-9\-_]+$`
 Required: No
 
  ** [InstanceId](#API_DescribeContainerGroupPortMappings_RequestSyntax) **   <a name="gameliftservers-DescribeContainerGroupPortMappings-request-InstanceId"></a>
@@ -84,7 +84,8 @@ A unique identifier for the fleet instance to retrieve port mappings for.
 When `ContainerGroupType` is `PER_INSTANCE`, this parameter is required.
 When `ContainerGroupType` is `GAME_SERVER`, this parameter is optional. If you provide an instance ID, it must match the instance that's running the specified compute. If the instance ID doesn't match, the request fails with an `InvalidRequestException`.
 Type: String
-Pattern: `[a-zA-Z0-9\.-]+`
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^[a-zA-Z0-9\.-]+$`
 Required: No
 
 ## Response Syntax
@@ -126,7 +127,7 @@ The following data is returned in JSON format by the service.
 A unique identifier for the compute resource running the game server container group. Returned when `ContainerGroupType` is `GAME_SERVER`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$`
 
  ** [ContainerGroupDefinitionArn](#API_DescribeContainerGroupPortMappings_ResponseSyntax) **   <a name="gameliftservers-DescribeContainerGroupPortMappings-response-ContainerGroupDefinitionArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to the container group definition. The ARN value also identifies the specific container group definition version in use.
@@ -153,18 +154,19 @@ Pattern: `^arn:.*:[a-z]*fleet\/[a-z]*fleet-[a-zA-Z0-9\-]+$`
 A unique identifier for the container fleet.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 
  ** [InstanceId](#API_DescribeContainerGroupPortMappings_ResponseSyntax) **   <a name="gameliftservers-DescribeContainerGroupPortMappings-response-InstanceId"></a>
 A unique identifier for the fleet instance. For `GAME_SERVER` requests, this is the instance running the specified compute. For `PER_INSTANCE` requests, this is the instance specified in the request.
 Type: String
-Pattern: `[a-zA-Z0-9\.-]+`
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^[a-zA-Z0-9\.-]+$`
 
  ** [Location](#API_DescribeContainerGroupPortMappings_ResponseSyntax) **   <a name="gameliftservers-DescribeContainerGroupPortMappings-response-Location"></a>
 The location of the fleet instance, expressed as an AWS Region code, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 
 ## Errors
 <a name="API_DescribeContainerGroupPortMappings_Errors"></a>

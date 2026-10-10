@@ -38,11 +38,11 @@ In the following list, the required parameters are described first.
 A descriptive name for the custom location.
 Type: String
 Length Constraints: Minimum length of 8. Maximum length of 64.
-Pattern: `^custom-[A-Za-z0-9\-]+`
+Pattern: `^custom-[A-Za-z0-9\-]+$`
 Required: Yes
 
  ** [Tags](#API_CreateLocation_RequestSyntax) **   <a name="gameliftservers-CreateLocation-request-Tags"></a>
-A list of labels to assign to the new resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management, and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Rareference*.
+A list of labels to assign to the new resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management, and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
@@ -104,6 +104,10 @@ HTTP Status Code: 400
 
  ** UnauthorizedException **
 The client failed authentication. Clients should not retry such requests.
+HTTP Status Code: 400
+
+ ** UnsupportedRegionException **
+The requested operation is not supported in the Region specified.
 HTTP Status Code: 400
 
 ## See Also

@@ -33,7 +33,7 @@ Pattern: `^[a-zA-Z0-9-_\.@\/:]+$`
 Required: Yes
 
  ** PortConfiguration **   <a name="gameliftservers-Type-GameServerContainerDefinitionInput-PortConfiguration"></a>
-A set of ports that Amazon GameLift Servers can assign to processes in a container. The container port configuration must have enough ports for each container process that accepts inbound traffic connections. For example, a game server process requires a container port to allow game clients to connect to it. A container port configuration can have can have one or more container port ranges. Each range specifies starting and ending values as well as the supported network protocol.
+A set of ports that Amazon GameLift Servers can assign to processes in a container. The container port configuration must have enough ports for each container process that accepts inbound traffic connections. For example, a game server process requires a container port to allow game clients to connect to it. A container port configuration can have one or more container port ranges. Each range specifies starting and ending values as well as the supported network protocol.
 Container ports aren't directly accessed by inbound traffic. Amazon GameLift Servers maps each container port to an externally accessible connection port (see the container fleet property `ConnectionPortRange`).
 Type: [ContainerPortConfiguration](API_ContainerPortConfiguration.md) object
 Required: Yes
@@ -67,6 +67,14 @@ Required: No
 A mount point that binds a path inside the container to a file or directory on the host system and lets it access the file or directory.
 Type: Array of [ContainerMountPoint](API_ContainerMountPoint.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
+ ** Vcpu **   <a name="gameliftservers-Type-GameServerContainerDefinitionInput-Vcpu"></a>
+The number of vCPU units reserved for the game server container. The container can use more vCPU when it's available, up to the container group's total vCPU limit if one is set. If the container group has a total vCPU limit and the request doesn't set this value, Amazon GameLift Servers calculates the game server container's vCPU as the total vCPU limit minus the sum of the vCPU units reserved for the group's support containers.
+A game server container group needs either a total vCPU limit or this value. If the container group doesn't have a total vCPU limit, the group's containers can use up to the instance's available vCPU, and Amazon GameLift Servers uses the sum of the group's container `Vcpu` values to calculate how many game server container groups fit on an instance.
+ **Related data type: ** [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html) `TotalVcpuLimit`
+Type: Double
+Valid Range: Minimum value of 0.125. Maximum value of 10.
 Required: No
 
 ## See Also

@@ -49,7 +49,7 @@ Required: No
 A unique identifier for the matchmaking configuration(s) to retrieve. You can use either the configuration name or ARN value. To request all existing configurations, leave this parameter empty.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*)$`
 Required: No
 
  ** [NextToken](#API_DescribeMatchmakingConfigurations_RequestSyntax) **   <a name="gameliftservers-DescribeMatchmakingConfigurations-request-NextToken"></a>
@@ -62,7 +62,7 @@ Required: No
 A unique identifier for the matchmaking rule set. You can use either the rule set name or ARN value. Use this parameter to retrieve all matchmaking configurations that use this rule set.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*)$`
 Required: No
 
 ## Response Syntax

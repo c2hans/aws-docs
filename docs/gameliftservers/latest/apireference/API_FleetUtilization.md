@@ -42,14 +42,14 @@ Required: No
 A unique identifier for the fleet associated with the location.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** Location **   <a name="gameliftservers-Type-FleetUtilization-Location"></a>
 The fleet location for the fleet utilization information, expressed as an AWS Region code, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** MaximumPlayerSessionCount **   <a name="gameliftservers-Type-FleetUtilization-MaximumPlayerSessionCount"></a>

@@ -43,7 +43,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group. Use either the name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [InstanceIds](#API_DescribeGameServerInstances_RequestSyntax) **   <a name="gameliftservers-DescribeGameServerInstances-request-InstanceIds"></a>
@@ -156,13 +156,13 @@ aws gamelift describe-game-server-instances \
          "GameServerGroupArn": "arn:aws:gamelift:us-west-2::GameServerGroup/MegaFrogServers_NA",
          "GameServerGroupName": " MegaFrogServers_NA",
          "InstanceId": "i-1234567890abcdef0",
-         "InstanceStatus: "ACTIVE"
+         "InstanceStatus": "ACTIVE"
       },
       {
          "GameServerGroupArn": "arn:aws:gamelift:us-west-2::GameServerGroup/MegaFrogServers_NA",
          "GameServerGroupName": " MegaFrogServers_NA",
          "InstanceId": "i-9876543210abcdef1",
-         "InstanceStatus: "DRAINING"
+         "InstanceStatus": "DRAINING"
       }
    ],
    "NextToken": "eyJhd3NBY2NvdW50SWQiOnsicyI6IjMwMjc3NjAxNjM5OCJ9LCJidWlsZElkIjp7InMiOiJidWlsZC01NWYxZTZmMS1jY2FlLTQ3YTctOWI5ZS1iYjFkYTQwMjEXAMPLE2"

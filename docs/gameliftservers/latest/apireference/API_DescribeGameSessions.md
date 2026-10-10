@@ -56,7 +56,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_DescribeGameSessions_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessions-request-AliasId"></a>
 A unique identifier for the alias associated with the fleet to retrieve game sessions for. You can use either the alias ID or ARN value.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: No
 
  ** [FleetId](#API_DescribeGameSessions_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessions-request-FleetId"></a>
@@ -70,7 +71,7 @@ Required: No
 An identifier for the game session that is unique across all regions to retrieve. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** [Limit](#API_DescribeGameSessions_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessions-request-Limit"></a>
@@ -83,7 +84,7 @@ Required: No
 A fleet location to get game sessions for. You can specify a fleet's home Region or a remote location. Use the AWS Region code format, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_DescribeGameSessions_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessions-request-NextToken"></a>

@@ -207,7 +207,6 @@ Choose one of the following links to go to the page for that service. To view th
 + [Oracle Database@AWS](odb-service.md)
 + [Organizations](ao.md)
 + [AWS Outposts](outposts_region.md)
-+ [AWS Panorama](panorama.md)
 + [AWS Payment Cryptography](payment-cryptography.md)
 + [AWS PCS](pcs.md)
 + [Amazon Personalize](personalize.md)

@@ -41,7 +41,7 @@ In the following list, the required parameters are described first.
 A unique identifier for a matchmaking ticket.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: Yes
 
 ## Response Elements

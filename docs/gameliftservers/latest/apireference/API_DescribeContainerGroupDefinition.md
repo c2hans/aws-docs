@@ -97,7 +97,8 @@ Required: No
             ]
          },
          "ResolvedImageDigest": "string",
-         "ServerSdkVersion": "string"
+         "ServerSdkVersion": "string",
+         "Vcpu": number
       },
       "Name": "string",
       "OperatingSystem": "string",
@@ -241,7 +242,8 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
           "Include": ["NET_BIND_SERVICE", "SYS_PTRACE"]
         },
         "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-        "ServerSdkVersion": "5.2.0"
+        "ServerSdkVersion": "5.2.0",
+        "Vcpu": 1
       }
     ],
     "Name": "MyAdventureGameContainerGroup",

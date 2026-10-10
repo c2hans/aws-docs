@@ -17,12 +17,13 @@ The only property you can't update is the container group type.
 + Change a game server container definition. Provide a complete set of container definitions, including the updated definition.
 + Add or change a support container definition. Provide a complete set of container definitions, including the updated definition.
 + Remove a support container definition. Provide a complete set of container definitions, excluding the definition to remove. If the container group has only one support container definition, provide an empty set.
++ Remove the total vCPU limit from a game server container group so that its containers can use up to the instance's available vCPU. Set `RemoveAttributes` to `TOTAL_VCPU_LIMIT`. The game server container must have a `Vcpu` value, because a game server container group needs either a total vCPU limit or a game server `Vcpu` value.
 
  **Results:**
 
 If successful, this operation returns the complete properties of the new container group definition version.
 
-If the container group definition version is used in an active fleets, the update automatically initiates a new fleet deployment of the new version. You can track a fleet's deployments using [ListFleetDeployments](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListFleetDeployments.html).
+If the container group definition version is used in an active fleet, the update automatically initiates a new fleet deployment of the new version. You can track a fleet's deployments using [ListFleetDeployments](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListFleetDeployments.html).
 
 ## Request Syntax
 <a name="API_UpdateContainerGroupDefinition_RequestSyntax"></a>
@@ -63,10 +64,12 @@ If the container group definition version is used in an active fleets, the updat
             }
          ]
       },
-      "ServerSdkVersion": "{{string}}"
+      "ServerSdkVersion": "{{string}}",
+      "Vcpu": {{number}}
    },
    "Name": "{{string}}",
    "OperatingSystem": "{{string}}",
+   "RemoveAttributes": [ "{{string}}" ],
    "SourceVersionNumber": {{number}},
    "SupportContainerDefinitions": [
       {
@@ -150,6 +153,13 @@ Type: String
 Valid Values: `AMAZON_LINUX_2023`
 Required: No
 
+ ** [RemoveAttributes](#API_UpdateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-UpdateContainerGroupDefinition-request-RemoveAttributes"></a>
+If set, this update removes the container group's total vCPU limit, and the group's containers can use up to the instance's available vCPU. You can't remove the total vCPU limit from a per-instance container group. A game server container group needs either a total vCPU limit or a `Vcpu` value for the game server container. You can't set `TotalVcpuLimit` in the same request.
+Type: Array of strings
+Array Members: Fixed number of 1 item.
+Valid Values: `TOTAL_VCPU_LIMIT`
+Required: No
+
  ** [SourceVersionNumber](#API_UpdateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-UpdateContainerGroupDefinition-request-SourceVersionNumber"></a>
 The container group definition version to update. The new version starts with values from the source version, and then updates values included in this request.
 Type: Integer
@@ -169,7 +179,8 @@ Valid Range: Minimum value of 4. Maximum value of 1024000.
 Required: No
 
  ** [TotalVcpuLimit](#API_UpdateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-UpdateContainerGroupDefinition-request-TotalVcpuLimit"></a>
-The maximum amount of vCPU units to allocate to the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share this memory. If you specify vCPU limits for individual containers, the total value must be equal to or greater than the sum of the CPU limits for all containers in the group.
+The maximum amount of vCPU units to allocate to the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. If you set vCPU reservations for individual containers, the total value must be equal to or greater than the sum of the `Vcpu` values for all containers in the group.
+For a game server container group, Amazon GameLift Servers requires either a total vCPU limit or a `Vcpu` value for the game server container. If the container group has a total vCPU limit, Amazon GameLift Servers uses this value to calculate how many game server container groups fit on an instance. If the container group doesn't have a total vCPU limit, its containers can use up to the instance's available vCPU, and Amazon GameLift Servers uses the sum of the containers' `Vcpu` values to calculate how many game server container groups fit on an instance. To remove the total vCPU limit, omit this parameter and set `RemoveAttributes` to `TOTAL_VCPU_LIMIT`.
 Type: Double
 Valid Range: Minimum value of 0.125. Maximum value of 10.
 Required: No
@@ -224,7 +235,8 @@ Required: No
             ]
          },
          "ResolvedImageDigest": "string",
-         "ServerSdkVersion": "string"
+         "ServerSdkVersion": "string",
+         "Vcpu": number
       },
       "Name": "string",
       "OperatingSystem": "string",
@@ -384,7 +396,8 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
           "Include": ["NET_BIND_SERVICE", "SYS_PTRACE"]
         },
         "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-        "ServerSdkVersion": "5.2.0"
+        "ServerSdkVersion": "5.2.0",
+        "Vcpu": 1
       }
     ],
     "Name": "MyAdventureGameContainerGroup",
@@ -393,8 +406,8 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
     "SupportContainerDefinitions": [
       {
       "ContainerName": "MyAdventureGameDependencies",
-      "ImageUri": "111122223333.dkr.ecr.us-west-2.amazonaws.com/MyAdventureGameDependenciesContainerImage"
-      "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789fedcba",
+      "ImageUri": "111122223333.dkr.ecr.us-west-2.amazonaws.com/MyAdventureGameDependenciesContainerImage",
+      "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789fedcba"
       }
     ],
     "TotalMemoryLimitMebibytes": 2048,

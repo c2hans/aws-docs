@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # FilterConfiguration
 <a name="API_FilterConfiguration"></a>
 
-A list of fleet locations where a game session queue can place new game sessions. You can use a filter to temporarily exclude specific locations from receiving placements. For queues that have multi-location fleets, you can use a filter configuration allow placement with some, but not all, of a fleet's locations.
+A list of fleet locations where a game session queue can place new game sessions. You can use a filter to temporarily exclude specific locations from receiving placements. For queues that have multi-location fleets, you can use a filter configuration to allow placement with some, but not all, of a fleet's locations.
 
 ## Contents
 <a name="API_FilterConfiguration_Contents"></a>
@@ -18,7 +18,7 @@ In the following list, the required parameters are described first.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
 ## See Also

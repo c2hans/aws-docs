@@ -97,7 +97,7 @@ The following is an example for specifying all EC2 instances in a subnet endpoin
 ```
 aws --region us-west-2 globalaccelerator allow-custom-routing-traffic --endpoint-group-arn
 					arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/ab88888example
-					--endpoint-id subnet-abcd123example --allow-all
+					--endpoint-id subnet-abcd123example --allow-all-traffic-to-endpoint
 ```
 
 ## See Also

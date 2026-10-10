@@ -34,9 +34,19 @@ Create an ACK capability on your Amazon EKS cluster using the AWS Management Con
 **Important**
 The suggested `AdministratorAccess` policy grants broad permissions and is intended to streamline getting started. For production use, replace this with a custom policy that grants only the permissions needed for the specific AWS services you plan to manage with ACK. For guidance on creating least-privilege policies, see [Configure ACK permissions](ack-permissions.md) and [Security considerations for EKS Capabilities](capabilities-security.md).
 
+1.  **(Optional) Configure ACK settings**:
+
+   The ** AWS Controllers for Kubernetes (ACK) configuration** section includes two optional settings. For a description of each setting and its constraints, see [ACK capability configuration options](create-ack-capability.md#ack-configuration-options).
+
+   1. Select **Enable cross-namespace references** if you want ACK resources to resolve references to resources in other Kubernetes namespaces. This checkbox is cleared by default, and the capability is created with cross-namespace references turned off unless you select it. For more information, see [Cross-namespace resource references](ack-concepts.md#ack-cross-namespace-references).
+
+   1. For **Disabled services**, enter an ACK service name, for example `s3`, and then choose **Add service**. Repeat this for each service whose controller you want to turn off, and choose the remove icon on a service to take it back off the list. Leave the list empty to run the controllers for all supported ACK services.
+
 1. Choose **Create**.
 
 The capability creation process begins.
+
+You can review both settings on the capability detail page after the capability is created, and change them at any time. For the steps to change them, see [Update ACK capability configuration](working-with-capabilities.md#ack-update-configuration).
 
 ## Verify the capability is active
 <a name="_verify_the_capability_is_active"></a>

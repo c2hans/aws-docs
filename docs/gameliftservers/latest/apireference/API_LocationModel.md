@@ -17,14 +17,14 @@ In the following list, the required parameters are described first.
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a custom location resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::location/location-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^arn:.*:location\/custom-\S+`
+Pattern: `^arn:.*:location\/custom-\S+$`
 Required: No
 
  ** LocationName **   <a name="gameliftservers-Type-LocationModel-LocationName"></a>
 The location's name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** PingBeacon **   <a name="gameliftservers-Type-LocationModel-PingBeacon"></a>

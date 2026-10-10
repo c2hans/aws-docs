@@ -1170,7 +1170,7 @@ Required: No
 ### Dashboard Widget Object: Table Properties
 <a name="CloudWatch-Dashboard-Properties-Table"></a>
 
-If you specify `table` for a metric widget, you can include visualisations related to the visibility of summary columns, datapoint columns, and the table layout. These properties take affect only when the widget view type is `table` and don't alter other view types if included. The `table` property is not required to use a table widget.
+If you specify `table` for a metric widget, you can include visualisations related to the visibility of summary columns, datapoint columns, and the table layout. These properties take effect only when the widget view type is `table` and don't alter other view types if included. The `table` property is not required to use a table widget.
 
 **layout**
 Use this field to transform the table such that the data points extend vertically or horizontally. The default is `horizontal`.
@@ -1454,7 +1454,7 @@ Required: No
 
 **states**
 Use this field to filter the list of alarms displayed in the widget to only those alarms currently in the specified states. You can specify one or more alarm states in the value for this field. The alarm states that you can specify are `ALARM`, `INSUFFICIENT_DATA`, and `OK`.
-If you omit this field or specify an empty array, all the alarms specifed in `alarms` are displayed.
+If you omit this field or specify an empty array, all the alarms specified in `alarms` are displayed.
 Type: Array of strings
 Required: No
 

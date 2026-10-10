@@ -37,7 +37,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_ResolveAlias_RequestSyntax) **   <a name="gameliftservers-ResolveAlias-request-AliasId"></a>
 The unique identifier of the alias that you want to retrieve a fleet ID for. You can use either the alias ID or ARN value.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: Yes
 
 ## Response Syntax
@@ -67,7 +68,7 @@ Pattern: `^arn:.*:[a-z]*fleet\/[a-z]*fleet-[a-zA-Z0-9\-]+$`
 The fleet identifier that the alias is pointing to.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 
 ## Errors
 <a name="API_ResolveAlias_Errors"></a>

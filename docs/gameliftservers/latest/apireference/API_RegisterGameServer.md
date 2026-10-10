@@ -44,14 +44,14 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group where the game server is running.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [GameServerId](#API_RegisterGameServer_RequestSyntax) **   <a name="gameliftservers-RegisterGameServer-request-GameServerId"></a>
 A custom string that uniquely identifies the game server to register. Game server IDs are developer-defined and must be unique across all game server groups in your AWS account.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: Yes
 
  ** [InstanceId](#API_RegisterGameServer_RequestSyntax) **   <a name="gameliftservers-RegisterGameServer-request-InstanceId"></a>
@@ -65,14 +65,14 @@ Required: Yes
 Information that is needed to make inbound client connections to the game server. This might include the IP address and port, DNS name, and other information.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** [GameServerData](#API_RegisterGameServer_RequestSyntax) **   <a name="gameliftservers-RegisterGameServer-request-GameServerData"></a>
 A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
 ## Response Syntax
@@ -139,7 +139,7 @@ HTTP Status Code: 400
 ### Register a game server
 <a name="API_RegisterGameServer_Example_1"></a>
 
-This example illustrates how an game server process notifies GameLift that it is ready to host a game.
+This example illustrates how a game server process notifies GameLift that it is ready to host a game.
 
 #### Sample Request
 <a name="API_RegisterGameServer_Example_1_Request"></a>
@@ -174,7 +174,7 @@ aws gamelift register-game-server \
       "GameServerGroupName": "MegaFrogServers_NA",
       "GameServerId": "mega-frog-game-12345678",
       "InstanceId": "i-1234567890abcdef0",
-      "LastClaimTime": ,
+      "LastClaimTime": 1580218197.293,
       "LastHealthCheckTime": 1580218197.293,
       "RegistrationTime": 1580218197.293,
       "UtilizationStatus": "AVAILABLE"

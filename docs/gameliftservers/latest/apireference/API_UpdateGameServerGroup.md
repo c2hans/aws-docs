@@ -50,7 +50,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group. Use either the name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [BalancingStrategy](#API_UpdateGameServerGroup_RequestSyntax) **   <a name="gameliftservers-UpdateGameServerGroup-request-BalancingStrategy"></a>
@@ -63,7 +63,7 @@ Valid Values: `SPOT_ONLY | SPOT_PREFERRED | ON_DEMAND_ONLY`
 Required: No
 
  ** [GameServerProtectionPolicy](#API_UpdateGameServerGroup_RequestSyntax) **   <a name="gameliftservers-UpdateGameServerGroup-request-GameServerProtectionPolicy"></a>
-A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status. This property is set to `NO_PROTECTION` by default.
+A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion. An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status. This property is set to `NO_PROTECTION` by default.
 Type: String
 Valid Values: `NO_PROTECTION | FULL_PROTECTION`
 Required: No

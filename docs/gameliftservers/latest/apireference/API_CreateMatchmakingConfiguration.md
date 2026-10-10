@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 
-Defines a new matchmaking configuration for use with FlexMatch. Whether your are using FlexMatch with Amazon GameLift Servers hosting or as a standalone matchmaking service, the matchmaking configuration sets out rules for matching players and forming teams. If you're also using Amazon GameLift Servers hosting, it defines how to start game sessions for each match. Your matchmaking system can use multiple configurations to handle different game scenarios. All matchmaking requests identify the matchmaking configuration to use and provide player attributes consistent with that configuration.
+Defines a new matchmaking configuration for use with FlexMatch. Whether you are using FlexMatch with Amazon GameLift Servers hosting or as a standalone matchmaking service, the matchmaking configuration sets out rules for matching players and forming teams. If you're also using Amazon GameLift Servers hosting, it defines how to start game sessions for each match. Your matchmaking system can use multiple configurations to handle different game scenarios. All matchmaking requests identify the matchmaking configuration to use and provide player attributes consistent with that configuration.
 
 To create a matchmaking configuration, you must provide the following: configuration name and FlexMatch mode (with or without Amazon GameLift Servers hosting); a rule set that specifies how to evaluate players and find acceptable matches; whether player acceptance is required; and the maximum time allowed for a matchmaking attempt. When using FlexMatch with Amazon GameLift Servers hosting, you also need to identify the game session queue to use when starting a game session for the match.
 
@@ -71,7 +71,7 @@ Required: Yes
 A unique identifier for the matchmaking configuration. This name is used to identify the configuration associated with a matchmaking request or ticket.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: Yes
 
  ** [RequestTimeoutSeconds](#API_CreateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingConfiguration-request-RequestTimeoutSeconds"></a>
@@ -84,7 +84,7 @@ Required: Yes
 A unique identifier for the matchmaking rule set to use with this configuration. You can use either the rule set name or ARN value. A matchmaking configuration can only use rule sets that are defined in the same Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*)$`
 Required: Yes
 
  ** [AcceptanceTimeoutSeconds](#API_CreateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingConfiguration-request-AcceptanceTimeoutSeconds"></a>
@@ -140,21 +140,21 @@ Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
 
  ** [GameSessionQueueArns](#API_CreateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingConfiguration-request-GameSessionQueueArns"></a>
-The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::gamesessionqueue/<queue name>`. Queues can be located in any Region. Queues are used to start new Amazon GameLift Servers-hosted game sessions for matches that are created with this matchmaking configuration. If `FlexMatchMode` is set to `STANDALONE`, do not set this parameter.
+The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::gamesessionqueue/<queue name>`. Queues can be located in any Region. Queues are used to start new Amazon GameLift Servers-hosted game sessions for matches that are created with this matchmaking configuration. A matchmaking configuration supports only one queue; if you specify more than one ARN, the request fails with an `InvalidRequestException`. If `FlexMatchMode` is set to `STANDALONE`, do not set this parameter.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** [NotificationTarget](#API_CreateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingConfiguration-request-NotificationTarget"></a>
 An SNS topic ARN that is set up to receive matchmaking notifications. See [ Setting up notifications for matchmaking](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-notification.html) for more information.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 300.
-Pattern: `[a-zA-Z0-9:_/-]*(.fifo)?`
+Pattern: `^[a-zA-Z0-9:_/-]*(\.fifo)?$`
 Required: No
 
  ** [Tags](#API_CreateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingConfiguration-request-Tags"></a>
-A list of labels to assign to the new matchmaking configuration resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
+A list of labels to assign to the new matchmaking configuration resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No

@@ -69,7 +69,7 @@ Required: No
 The name of a remote location to update fleet capacity settings for, in the form of an AWS Region code such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [ManagedCapacityConfiguration](#API_UpdateFleetCapacity_RequestSyntax) **   <a name="gameliftservers-UpdateFleetCapacity-request-ManagedCapacityConfiguration"></a>
@@ -121,13 +121,13 @@ Pattern: `^arn:.*:[a-z]*fleet\/[a-z]*fleet-[a-zA-Z0-9\-]+$`
 A unique identifier for the fleet that was updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 
  ** [Location](#API_UpdateFleetCapacity_ResponseSyntax) **   <a name="gameliftservers-UpdateFleetCapacity-response-Location"></a>
 The remote location being updated, expressed as an AWS Region code, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 
  ** [ManagedCapacityConfiguration](#API_UpdateFleetCapacity_ResponseSyntax) **   <a name="gameliftservers-UpdateFleetCapacity-response-ManagedCapacityConfiguration"></a>
 Configuration for Amazon GameLift Servers-managed capacity scaling options.

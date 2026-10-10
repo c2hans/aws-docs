@@ -72,7 +72,7 @@ The following is an example for removing tags from an accelerator. When successf
 ```
 aws globalaccelerator untag-resource
        --resource-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh
-       --tag-keys Key="Name" Key="Project"
+       --tag-keys Name Project
 ```
 
 ## See Also

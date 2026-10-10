@@ -9,6 +9,7 @@ Updates about significant changes or changes of interest to the AWS SDK for Swif
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Client configuration rename](#doc-history) | Replaced references to the deprecated client configuration classes, such as `S3Client.S3ClientConfiguration`, with the `Config` structures that supersede them, such as `S3Client.S3ClientConfig`. | October 9, 2026 |
 | [Updated tool version requirements](#doc-history) | Updated the minimum version requirements to Swift 6.0 and Xcode 16. | September 25, 2026 |
 | [Table of contents reorganization](#doc-history) | Reorganized the table of contents to more closely follow the standard used by other AWS SDK guides. | July 30, 2025 |
 | [HTTP client configuration](#doc-history) | Added documentation about configuring HTTP clients. | May 22, 2025 |

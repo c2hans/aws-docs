@@ -48,7 +48,7 @@ In the following list, the required parameters are described first.
 An identifier for the game session that is unique across all regions to update. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: Yes
 
  ** [GameProperties](#API_UpdateGameSession_RequestSyntax) **   <a name="gameliftservers-UpdateGameSession-request-GameProperties"></a>

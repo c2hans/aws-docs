@@ -10,7 +10,7 @@ Set of rule statements, used with FlexMatch, that determine how to build your pl
 A rule set may define the following elements for a match. For detailed information and examples showing how to construct a rule set, see [Build a FlexMatch rule set](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-rulesets.html).
 + Teams -- Required. A rule set must define one or multiple teams for the match and set minimum and maximum team sizes. For example, a rule set might describe a 4x4 match that requires all eight slots to be filled.
 + Player attributes -- Optional. These attributes specify a set of player characteristics to evaluate when looking for a match. Matchmaking requests that use a rule set with player attributes must provide the corresponding attribute values. For example, an attribute might specify a player's skill or level.
-+ Rules -- Optional. Rules define how to evaluate potential players for a match based on player attributes. A rule might specify minimum requirements for individual players, teams, or entire matches. For example, a rule might require each player to meet a certain skill level, each team to have at least one player in a certain role, or the match to have a minimum average skill level. or may describe an entire group--such as all teams must be evenly matched or have at least one player in a certain role.
++ Rules -- Optional. Rules define how to evaluate potential players for a match based on player attributes. A rule might specify minimum requirements for individual players, teams, or entire matches. For example, a rule might require each player to meet a certain skill level, each team to have at least one player in a certain role, or the match to have a minimum average skill level, or may describe an entire group--such as all teams must be evenly matched or have at least one player in a certain role.
 + Expansions -- Optional. Expansions allow you to relax the rules after a period of time when no acceptable matches are found. This feature lets you balance getting players into games in a reasonable amount of time instead of making them wait indefinitely for the best possible match. For example, you might use an expansion to increase the maximum skill variance between players after 30 seconds.
 
 ## Contents
@@ -33,14 +33,14 @@ Required: No
  ** RuleSetArn **   <a name="gameliftservers-Type-MatchmakingRuleSet-RuleSetArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers matchmaking rule set resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::matchmakingruleset/<ruleset name>`. In a GameLift rule set ARN, the resource ID matches the *RuleSetName* value.
 Type: String
-Pattern: `^arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*`
+Pattern: `^arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*$`
 Required: No
 
  ** RuleSetName **   <a name="gameliftservers-Type-MatchmakingRuleSet-RuleSetName"></a>
 A unique identifier for the matchmaking rule set
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: No
 
 ## See Also

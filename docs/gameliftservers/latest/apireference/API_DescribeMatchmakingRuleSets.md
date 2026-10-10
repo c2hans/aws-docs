@@ -44,7 +44,7 @@ A list of one or more matchmaking rule set names to retrieve details for. (Note:
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*)$`
 Required: No
 
  ** [NextToken](#API_DescribeMatchmakingRuleSets_RequestSyntax) **   <a name="gameliftservers-DescribeMatchmakingRuleSets-request-NextToken"></a>

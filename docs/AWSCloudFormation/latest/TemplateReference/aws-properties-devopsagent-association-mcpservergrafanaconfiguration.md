@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[EnabledElevatedTools](#cfn-devopsagent-association-mcpservergrafanaconfiguration-enabledelevatedtools)" : {{[ String, ... ]}},
   "[EnableWebhookUpdates](#cfn-devopsagent-association-mcpservergrafanaconfiguration-enablewebhookupdates)" : {{Boolean}},
   "[Endpoint](#cfn-devopsagent-association-mcpservergrafanaconfiguration-endpoint)" : {{String}},
   "[Tools](#cfn-devopsagent-association-mcpservergrafanaconfiguration-tools)" : {{[ String, ... ]}}
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-mcpservergrafanaconfiguration-syntax.yaml"></a>
 
 ```
+  [EnabledElevatedTools](#cfn-devopsagent-association-mcpservergrafanaconfiguration-enabledelevatedtools): {{
+    - String}}
   [EnableWebhookUpdates](#cfn-devopsagent-association-mcpservergrafanaconfiguration-enablewebhookupdates): {{Boolean}}
   [Endpoint](#cfn-devopsagent-association-mcpservergrafanaconfiguration-endpoint): {{String}}
   [Tools](#cfn-devopsagent-association-mcpservergrafanaconfiguration-tools): {{
@@ -37,6 +40,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-devopsagent-association-mcpservergrafanaconfiguration-properties"></a>
+
+`EnabledElevatedTools`  <a name="cfn-devopsagent-association-mcpservergrafanaconfiguration-enabledelevatedtools"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EnableWebhookUpdates`  <a name="cfn-devopsagent-association-mcpservergrafanaconfiguration-enablewebhookupdates"></a>
 Specifies whether the Agent Space creates and updates webhooks for receiving notifications and events from the service.

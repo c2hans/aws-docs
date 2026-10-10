@@ -35,6 +35,11 @@ A list of expressions to combine with OR logic.
 Type: Array of [Expression](#API_bcmDashboards_Expression) objects
 Required: No
 
+ ** productAttributes **   <a name="awscostmanagement-Type-bcmDashboards_Expression-productAttributes"></a>
+The product attribute values to include in the filter expression.
+Type: [ProductAttributeValues](API_bcmDashboards_ProductAttributeValues.md) object
+Required: No
+
  ** tags **   <a name="awscostmanagement-Type-bcmDashboards_Expression-tags"></a>
 The tag values to include in the filter expression.
 Type: [TagValues](API_bcmDashboards_TagValues.md) object

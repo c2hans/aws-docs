@@ -103,7 +103,7 @@ The clustering configuration for periodic batch evaluation.
 *Required*: No
 *Type*: Array of [EvaluatorReference](aws-properties-bedrockagentcore-onlineevaluationconfig-evaluatorreference.md)
 *Minimum*: `0`
-*Maximum*: `10`
+*Maximum*: `25`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ExecutionStatus`  <a name="cfn-bedrockagentcore-onlineevaluationconfig-executionstatus"></a>

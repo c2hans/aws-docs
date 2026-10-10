@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[MemoryMiB](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-memorymib)" : {{MemoryMiBRange}},
   "[OsFamily](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-osfamily)" : {{String}},
   "[RootEbsVolume](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-rootebsvolume)" : {{Ec2EbsVolume}},
+  "[SoftwareAddOns](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-softwareaddons)" : {{[ FleetSoftwareAddOn, ... ]}},
   "[VCpuCount](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-vcpucount)" : {{VCpuCountRange}}
 }
 ```
@@ -52,6 +53,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [OsFamily](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-osfamily): {{String}}
   [RootEbsVolume](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-rootebsvolume): {{
     Ec2EbsVolume}}
+  [SoftwareAddOns](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-softwareaddons): {{
+    - FleetSoftwareAddOn}}
   [VCpuCount](#cfn-deadline-fleet-servicemanagedec2instancecapabilities-vcpucount): {{
     VCpuCountRange}}
 ```
@@ -121,6 +124,14 @@ The operating system (OS) family.
 The root EBS volume.
 *Required*: No
 *Type*: [Ec2EbsVolume](aws-properties-deadline-fleet-ec2ebsvolume.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SoftwareAddOns`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-softwareaddons"></a>
+The software add-ons that the service installs on worker hosts when they launch.
+*Required*: No
+*Type*: Array of [FleetSoftwareAddOn](aws-properties-deadline-fleet-fleetsoftwareaddon.md)
+*Minimum*: `0`
+*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VCpuCount`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-vcpucount"></a>

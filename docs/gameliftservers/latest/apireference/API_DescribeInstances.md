@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DescribeInstances
 <a name="API_DescribeInstances"></a>
 
- **This API works with the following fleet types:**EC2, Container
+ **This API works with the following fleet types:** EC2, Container
 
 Retrieves information about the EC2 instances in an Amazon GameLift Servers managed fleet, including instance ID, connection data, and status. You can use this operation with a multi-location fleet to get location-specific instance information. As an alternative, use the operations [https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListCompute](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListCompute) and [https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeCompute](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeCompute) to retrieve information for compute resources, including EC2 and Anywhere fleets.
 
@@ -61,7 +61,8 @@ Required: Yes
  ** [InstanceId](#API_DescribeInstances_RequestSyntax) **   <a name="gameliftservers-DescribeInstances-request-InstanceId"></a>
 A unique identifier for an instance to retrieve. Specify an instance ID or leave blank to retrieve all instances in the fleet.
 Type: String
-Pattern: `[a-zA-Z0-9\.-]+`
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^[a-zA-Z0-9\.-]+$`
 Required: No
 
  ** [Limit](#API_DescribeInstances_RequestSyntax) **   <a name="gameliftservers-DescribeInstances-request-Limit"></a>
@@ -74,7 +75,7 @@ Required: No
 The name of a location to retrieve instance information for, in the form of an AWS Region code such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_DescribeInstances_RequestSyntax) **   <a name="gameliftservers-DescribeInstances-request-NextToken"></a>
@@ -174,14 +175,14 @@ This example requests information on instances in a fleet's home Region. If the 
         {
             "FleetId": "fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
             "FleetArn": "arn:aws:gamelift:us-west-2::fleet/fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
-            "InstanceId": "i-11111111a222b333c,
+            "InstanceId": "i-11111111a222b333c",
             "IpAddress": "192.0.2.0",
             "DnsName": "ec2-192-0-2-0.us-west-2.compute.amazonaws.com",
             "OperatingSystem": "WIN_2012",
             "Type": "c4.large",
             "Status": "Active",
             "CreationTime": 1515032347.867,
-            "Location": "us-west-2
+            "Location": "us-west-2"
         }
     ]
 }
@@ -212,7 +213,7 @@ This example requests information on fleet instances deployed to a remote locati
         {
             "FleetId": "fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
             "FleetArn": "arn:aws:gamelift:us-west-2::fleet/fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
-            "InstanceId": "i-11111111a222b333c,
+            "InstanceId": "i-11111111a222b333c",
             "IpAddress": "192.0.2.0",
             "DnsName": "ec2-192-0-2-0.us-west-2.compute.amazonaws.com",
             "OperatingSystem": "WIN_2012",
@@ -224,7 +225,7 @@ This example requests information on fleet instances deployed to a remote locati
         {
             "FleetId": "fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
             "FleetArn": "arn:aws:gamelift:us-east-2::fleet/fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
-            "InstanceId": "i-12312311a222b444d,
+            "InstanceId": "i-12312311a222b444d",
             "IpAddress": "192.0.2.0",
             "DnsName": "ec2-192-0-2-0.us-west-2.compute.amazonaws.com",
             "OperatingSystem": "WIN_2012",

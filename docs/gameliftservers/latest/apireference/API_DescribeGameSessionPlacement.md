@@ -36,7 +36,7 @@ In the following list, the required parameters are described first.
 A unique identifier for a game session placement to retrieve.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: Yes
 
 ## Response Syntax

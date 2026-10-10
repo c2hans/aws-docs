@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Description](#cfn-devopsagent-association-mcpserverdatadogconfiguration-description)" : {{String}},
+  "[EnabledElevatedTools](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enabledelevatedtools)" : {{[ String, ... ]}},
   "[EnableWebhookUpdates](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enablewebhookupdates)" : {{Boolean}},
   "[Endpoint](#cfn-devopsagent-association-mcpserverdatadogconfiguration-endpoint)" : {{String}},
   "[Name](#cfn-devopsagent-association-mcpserverdatadogconfiguration-name)" : {{String}}
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Description](#cfn-devopsagent-association-mcpserverdatadogconfiguration-description): {{String}}
+  [EnabledElevatedTools](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enabledelevatedtools): {{
+    - String}}
   [EnableWebhookUpdates](#cfn-devopsagent-association-mcpserverdatadogconfiguration-enablewebhookupdates): {{Boolean}}
   [Endpoint](#cfn-devopsagent-association-mcpserverdatadogconfiguration-endpoint): {{String}}
   [Name](#cfn-devopsagent-association-mcpserverdatadogconfiguration-name): {{String}}
@@ -43,6 +46,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 The description of the MCP server.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EnabledElevatedTools`  <a name="cfn-devopsagent-association-mcpserverdatadogconfiguration-enabledelevatedtools"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EnableWebhookUpdates`  <a name="cfn-devopsagent-association-mcpserverdatadogconfiguration-enablewebhookupdates"></a>

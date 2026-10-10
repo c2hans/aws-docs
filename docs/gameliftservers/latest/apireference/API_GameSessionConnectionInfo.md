@@ -25,14 +25,14 @@ Required: No
 An identifier for the game session that is unique across all regions. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** IpAddress **   <a name="gameliftservers-Type-GameSessionConnectionInfo-IpAddress"></a>
 The IP address of the game session. To connect to a Amazon GameLift Servers game server, an app needs both the IP address and port number.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** MatchedPlayerSessions **   <a name="gameliftservers-Type-GameSessionConnectionInfo-MatchedPlayerSessions"></a>

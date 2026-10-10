@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # PlayerSession
 <a name="API_PlayerSession"></a>
 
-Represents a player session. Player sessions are created either for a specific game session, or as part of a game session placement or matchmaking request. A player session can represents a reserved player slot in a game session (when status is `RESERVED`) or actual player activity in a game session (when status is `ACTIVE`). A player session object, including player data, is automatically passed to a game session when the player connects to the game session and is validated. After the game session ends, player sessions information is retained for 30 days and then removed.
+Represents a player session. Player sessions are created either for a specific game session, or as part of a game session placement or matchmaking request. A player session can represent a reserved player slot in a game session (when status is `RESERVED`) or actual player activity in a game session (when status is `ACTIVE`). A player session object, including player data, is automatically passed to a game session when the player connects to the game session and is validated. After the game session ends, player session information is retained for 30 days and then removed.
 
  **Related actions**
 
@@ -41,7 +41,7 @@ Required: No
 A unique identifier for the fleet that the player's game session is running on.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** GameSessionId **   <a name="gameliftservers-Type-PlayerSession-GameSessionId"></a>
@@ -54,7 +54,7 @@ Required: No
 The IP address of the game session. To connect to a Amazon GameLift Servers game server, an app needs both the IP address and port number.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** PlayerData **   <a name="gameliftservers-Type-PlayerSession-PlayerData"></a>
@@ -72,7 +72,8 @@ Required: No
  ** PlayerSessionId **   <a name="gameliftservers-Type-PlayerSession-PlayerSessionId"></a>
 A unique identifier for a player session.
 Type: String
-Pattern: `^psess-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `^psess-\S+$`
 Required: No
 
  ** Port **   <a name="gameliftservers-Type-PlayerSession-Port"></a>

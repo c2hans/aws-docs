@@ -110,20 +110,20 @@ HTTP Status Code: 400
 The following is an example for updating an accelerator to enable flow logs.
 
 ```
-aws globalaccelerator update-accelerator-attributes
-       --accelerator-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh
-       --flow-logs-enabled
-       --flow-logs-s3-bucket flowlogs-abc
-       --flow-logs-s3-prefix bucketprefix-abc
+aws globalaccelerator update-accelerator-attributes \
+       --accelerator-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh \
+       --flow-logs-enabled \
+       --flow-logs-s3-bucket flowlogs-abc \
+       --flow-logs-s3-prefix bucketprefix-abc \
        --region us-west-2
 ```
 
 ```
 {
     "AcceleratorAttributes": {
-        "FlowLogsEnabled": true
-        "FlowLogsS3Bucket": flowlogs-abc
-        "FlowLogsS3Prefix": bucketprefix-abc
+        "FlowLogsEnabled": true,
+        "FlowLogsS3Bucket": "flowlogs-abc",
+        "FlowLogsS3Prefix": "bucketprefix-abc"
     }
 }
 ```

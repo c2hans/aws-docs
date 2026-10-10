@@ -74,6 +74,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   GetFindingMetrics  **
+  - **IAM action:**  [security-ir:GetFindingMetrics](#list_security-ir-action-GetFindingMetrics)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetMembership  **
   - **IAM action:**  [security-ir:GetMembership](#list_security-ir-action-GetMembership)
   - **Condition key:**

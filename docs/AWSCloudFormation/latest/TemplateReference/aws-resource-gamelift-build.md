@@ -82,7 +82,7 @@ If a `StorageLocation` is specified, the size of your file can be found in your 
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-gamelift-build-tags"></a>
-A list of labels to assign to the new build resource. Tags are developer defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*. Once the resource is created, you can use [TagResource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_TagResource.html), [UntagResource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UntagResource.html), and [ListTagsForResource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListTagsForResource.html) to add, remove, and view tags. The maximum tag limit may be lower than stated. See the AWS General Reference for actual tagging limits.
+A list of labels to assign to the new build resource. Tags are developer defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*. Once the resource is created, you can use [TagResource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_TagResource.html), [UntagResource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UntagResource.html), and [ListTagsForResource](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListTagsForResource.html) to add, remove, and view tags. The maximum tag limit may be lower than stated. See the AWS General Reference for actual tagging limits.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-gamelift-build-tag.md)
 *Maximum*: `200`
@@ -166,7 +166,6 @@ The following example creates a GameLift build named `MyGameServerBuild`. The bu
                                     "Action": [
                                         "s3:GetObject",
                                         "s3:GetObjectVersion",
-                                        "s3:GetObjectMetadata",
                                         "s3:*Object*"
                                     ],
                                     "Resource": [
@@ -185,7 +184,7 @@ The following example creates a GameLift build named `MyGameServerBuild`. The bu
                 "Name": "MyGameServerBuild",
                 "Version": "v1.0",
                 "OperatingSystem": "WINDOWS_2012",
-                "ServerSdkVersion: "5.0.0",
+                "ServerSdkVersion": "5.0.0",
                 "StorageLocation": {
                     "Bucket": "amzn-s3-demo-bucket",
                     "Key": "MyGameBuildFiles.zip",
@@ -227,7 +226,6 @@ Resources:
                 Action:
                   - "s3:GetObject"
                   - "s3:GetObjectVersion"
-                  - "s3:GetObjectMetadata"
                   - "s3:*Object*"
                 Resource:
                   - "arn:aws:s3:::amzn-s3-demo-bucket/*"

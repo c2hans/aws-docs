@@ -61,7 +61,7 @@ Properties:
 The Region code to use when calling Security Token Service (STS) to assume the PeerRoleArn, if provided.
 *Required*: Conditional
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PeerOwnerId`  <a name="cfn-ec2-vpcpeeringconnection-peerownerid"></a>
 The AWS account ID of the owner of the accepter VPC.
@@ -82,7 +82,7 @@ The Amazon Resource Name (ARN) of the VPC peer role for the peering connection i
 This is required when you are peering a VPC in a different AWS account.
 *Required*: Conditional
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PeerVpcId`  <a name="cfn-ec2-vpcpeeringconnection-peervpcid"></a>
 The ID of the VPC with which you are creating the VPC peering connection. You must specify this parameter in the request.

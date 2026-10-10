@@ -129,10 +129,10 @@ HTTP Status Code: 400
 The following is an example of creating a listener, and the response.
 
 ```
-aws globalaccelerator create-listener
-       --accelerator-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh
-       --port-ranges FromPort=80,ToPort=80 FromPort=81,ToPort=81
-       --protocol TCP
+aws globalaccelerator create-listener \
+       --accelerator-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh \
+       --port-ranges FromPort=80,ToPort=80 FromPort=81,ToPort=81 \
+       --protocol TCP \
        --region us-west-2
 ```
 

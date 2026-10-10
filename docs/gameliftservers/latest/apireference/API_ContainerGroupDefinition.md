@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # ContainerGroupDefinition
 <a name="API_ContainerGroupDefinition"></a>
 
-The properties that describe a container group resource. You can update all properties of a container group definition properties. Updates to a container group definition are saved as new versions.
+The properties that describe a container group resource. You can update all properties of a container group definition. Updates to a container group definition are saved as new versions.
 
  **Used with:** [CreateContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html)
 
@@ -65,8 +65,8 @@ Required: No
 
  ** StatusReason **   <a name="gameliftservers-Type-ContainerGroupDefinition-StatusReason"></a>
 Additional information about a container group definition that's in `FAILED` status. Possible reasons include:
-+ An internal issue prevented Amazon GameLift Servers from creating the container group definition resource. Delete the failed resource and call [CreateContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html)again.
-+ An access-denied message means that you don't have permissions to access the container image on ECR. See [ IAM permission examples](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html.html) for help setting up required IAM permissions for Amazon GameLift Servers.
++ An internal issue prevented Amazon GameLift Servers from creating the container group definition resource. Delete the failed resource and call [CreateContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html) again.
++ An access-denied message means that you don't have permissions to access the container image on ECR. See [ IAM permission examples](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html) for help setting up required IAM permissions for Amazon GameLift Servers.
 + The `ImageUri` value for at least one of the containers in the container group definition was invalid or not found in the current AWS account.
 + At least one of the container images referenced in the container group definition exceeds the allowed size. For size limits, see [ Amazon GameLift Servers endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/gamelift.html).
 + At least one of the container images referenced in the container group definition uses a different operating system than the one defined for the container group.
@@ -75,7 +75,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** SupportContainerDefinitions **   <a name="gameliftservers-Type-ContainerGroupDefinition-SupportContainerDefinitions"></a>
-The set of definitions for support containers in this group. A container group definition might have zero support container definitions. Support container can be used in any type of container group.
+The set of definitions for support containers in this group. A container group definition might have zero support container definitions. Support containers can be used in any type of container group.
 Type: Array of [SupportContainerDefinition](API_SupportContainerDefinition.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
@@ -88,7 +88,8 @@ Valid Range: Minimum value of 4. Maximum value of 1024000.
 Required: No
 
  ** TotalVcpuLimit **   <a name="gameliftservers-Type-ContainerGroupDefinition-TotalVcpuLimit"></a>
-The amount of vCPU units on a fleet instance to allocate for the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. You can set a limit for each container definition in the group. If individual containers have limits, this total value must be equal to or greater than the sum of the limits for each container in the group.
+The amount of vCPU units on a fleet instance to allocate for the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. You can set a vCPU reservation for each container definition in the group. If individual containers have reservations, this total value must be equal to or greater than the sum of the reservations for each container in the group.
+For a game server container group, if this property is set, Amazon GameLift Servers uses this value to calculate how many game server container groups fit on an instance. If this property isn't set, the group's containers can use up to the instance's available vCPU, and Amazon GameLift Servers uses the sum of the containers' `Vcpu` values to calculate how many game server container groups fit on an instance.
 Type: Double
 Valid Range: Minimum value of 0.125. Maximum value of 10.
 Required: No

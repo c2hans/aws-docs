@@ -74,7 +74,7 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** PortConfiguration **   <a name="gameliftservers-Type-SupportContainerDefinition-PortConfiguration"></a>
-A set of ports that allow access to the container from external users. Processes running in the container can bind to a one of these ports. Container ports aren't directly accessed by inbound traffic. Amazon GameLift Servers maps these container ports to externally accessible connection ports, which are assigned as needed from the container fleet's `ConnectionPortRange`.
+A set of ports that allow access to the container from external users. Processes running in the container can bind to one of these ports. Container ports aren't directly accessed by inbound traffic. Amazon GameLift Servers maps these container ports to externally accessible connection ports, which are assigned as needed from the container fleet's `ConnectionPortRange`.
 Type: [ContainerPortConfiguration](API_ContainerPortConfiguration.md) object
 Required: No
 

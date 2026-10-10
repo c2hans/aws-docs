@@ -50,7 +50,7 @@ In the following list, the required parameters are described first.
 An identifier for the game session that is unique across all regions to retrieve player sessions for. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** [Limit](#API_DescribePlayerSessions_RequestSyntax) **   <a name="gameliftservers-DescribePlayerSessions-request-Limit"></a>
@@ -74,7 +74,8 @@ Required: No
  ** [PlayerSessionId](#API_DescribePlayerSessions_RequestSyntax) **   <a name="gameliftservers-DescribePlayerSessions-request-PlayerSessionId"></a>
 A unique identifier for a player session to retrieve.
 Type: String
-Pattern: `^psess-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `^psess-\S+$`
 Required: No
 
  ** [PlayerSessionStatusFilter](#API_DescribePlayerSessions_RequestSyntax) **   <a name="gameliftservers-DescribePlayerSessions-request-PlayerSessionStatusFilter"></a>

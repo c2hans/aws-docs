@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-gamelift-script-s3location-properties"></a>
 
 `Bucket`  <a name="cfn-gamelift-script-s3location-bucket"></a>
-An Amazon S3 bucket identifier. Thename of the S3 bucket.
+An Amazon S3 bucket identifier. The name of the S3 bucket.
 Amazon GameLift Servers doesn't support uploading from Amazon S3 buckets with names that contain a dot (.).
 *Required*: Yes
 *Type*: String

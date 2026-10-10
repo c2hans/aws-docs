@@ -53,7 +53,7 @@ Required: No
  The fleet location. If you don't specify this value, the response contains the scaling policies of every location in the fleet.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_DescribeScalingPolicies_RequestSyntax) **   <a name="gameliftservers-DescribeScalingPolicies-request-NextToken"></a>
@@ -200,7 +200,7 @@ Date: Thu, 06 Apr 2017 00:48:07 GMT
             "FleetId": "fleet-2222bbbb-33cc-44dd-55ee-6666ffff77aa",
             "PolicyType": "TargetBased",
             "MetricName": "PercentAvailableGameSessions",
-            "TargetConfiguration": {"TargetValue": 15"}
+            "TargetConfiguration": {"TargetValue": 15}
         },
         {
             "Status": "ACTIVE",

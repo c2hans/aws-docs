@@ -24,7 +24,7 @@ In the following list, the required parameters are described first.
 The fleet location, expressed as an AWS Region code such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** PlayerGatewayStatus **   <a name="gameliftservers-Type-LocationState-PlayerGatewayStatus"></a>
@@ -39,7 +39,7 @@ Required: No
  ** Status **   <a name="gameliftservers-Type-LocationState-Status"></a>
 The life-cycle status of a fleet location.
 Type: String
-Valid Values: `NEW | DOWNLOADING | VALIDATING | BUILDING | ACTIVATING | ACTIVE | DELETING | ERROR | TERMINATED | NOT_FOUND`
+Valid Values: `NEW | DOWNLOADING | VALIDATING | BUILDING | ACTIVATING | ACTIVE | DELETING | ERROR | TERMINATED | NOT_FOUND | EXPIRED`
 Required: No
 
 ## See Also

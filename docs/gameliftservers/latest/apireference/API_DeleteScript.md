@@ -41,7 +41,8 @@ In the following list, the required parameters are described first.
  ** [ScriptId](#API_DeleteScript_RequestSyntax) **   <a name="gameliftservers-DeleteScript-request-ScriptId"></a>
 A unique identifier for the Realtime script to delete. You can use either the script ID or ARN value.
 Type: String
-Pattern: `^script-\S+|^arn:.*:script\/script-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(script-\S+|arn:.*:script\/script-\S+)$`
 Required: Yes
 
 ## Response Elements

@@ -146,7 +146,7 @@ aws globalaccelerator list-byoip-cidrs
                     "Timestamp": 1584977239.0
                 }
             ]
-        }
+        },
         {
             "Cidr": "203.0.113.25/24",
             "State": "READY",

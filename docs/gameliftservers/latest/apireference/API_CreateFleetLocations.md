@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 
-Adds remote locations to an EC2 and begins populating the new locations with instances. The new instances conform to the fleet's instance type, auto-scaling, and other configuration settings.
+Adds remote locations to an EC2 fleet and begins populating the new locations with instances. The new instances conform to the fleet's instance type, auto-scaling, and other configuration settings.
 
 **Note**
 You can't add remote locations to a fleet that resides in an AWS Region that doesn't support multiple locations. Fleets created prior to March 2021 can't support multiple locations.
@@ -149,7 +149,7 @@ HTTP Status Code: 400
 ### Add remote locations to an existing fleet
 <a name="API_CreateFleetLocations_Example_1"></a>
 
-This example adds three five remote locations to a fleet that resides in the AWS Region `eu-central-1`. As shown, the status of each new location is initially set to `NEW`.
+This example adds five remote locations to a fleet that resides in the AWS Region `eu-central-1`. As shown, the status of each new location is initially set to `NEW`.
 
 #### Sample Request
 <a name="API_CreateFleetLocations_Example_1_Request"></a>

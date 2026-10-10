@@ -39,7 +39,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group. Use either the name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [ResumeActions](#API_ResumeGameServerGroup_RequestSyntax) **   <a name="gameliftservers-ResumeGameServerGroup-request-ResumeActions"></a>

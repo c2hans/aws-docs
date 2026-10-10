@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # PlayerLatencyPolicy
 <a name="API_PlayerLatencyPolicy"></a>
 
-Sets a latency cap for individual players when placing a game session. With a latency policy in force, a game session cannot be placed in a fleet location where a player reports latency higher than the cap. Latency policies are used only with placement request that provide player latency information. Player latency policies can be stacked to gradually relax latency requirements over time.
+Sets a latency cap for individual players when placing a game session. With a latency policy in force, a game session cannot be placed in a fleet location where a player reports latency higher than the cap. Latency policies are used only with placement requests that provide player latency information. Player latency policies can be stacked to gradually relax latency requirements over time.
 
 ## Contents
 <a name="API_PlayerLatencyPolicy_Contents"></a>

@@ -50,7 +50,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group where the game server is running. If you are not specifying a game server to claim, this value identifies where you want Amazon GameLift Servers FleetIQ to look for an available game server to claim.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [FilterOption](#API_ClaimGameServer_RequestSyntax) **   <a name="gameliftservers-ClaimGameServer-request-FilterOption"></a>
@@ -62,14 +62,14 @@ Required: No
 A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** [GameServerId](#API_ClaimGameServer_RequestSyntax) **   <a name="gameliftservers-ClaimGameServer-request-GameServerId"></a>
 A custom string that uniquely identifies the game server to claim. If this parameter is left empty, Amazon GameLift Servers FleetIQ searches for an available game server in the specified game server group.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: No
 
 ## Response Syntax

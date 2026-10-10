@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** Anywhere
 
-Removes a compute resource from an Anywhere fleet. Deregistered computes can no longer host game sessions through Amazon GameLift Servers. Use this operation with an Anywhere fleet that doesn't use the Amazon GameLift Servers Agent For Anywhere fleets with the Agent, the Agent handles all compute registry tasks for you.
+Removes a compute resource from an Anywhere fleet. Deregistered computes can no longer host game sessions through Amazon GameLift Servers. Use this operation with an Anywhere fleet that doesn't use the Amazon GameLift Servers Agent. For Anywhere fleets with the Agent, the Agent handles all compute registry tasks for you.
 
 To deregister a compute, call this operation from the compute that's being deregistered and specify the compute name and the fleet ID.
 
@@ -35,7 +35,7 @@ In the following list, the required parameters are described first.
 The unique identifier of the compute resource to deregister. For an Anywhere fleet compute, use the registered compute name.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 Required: Yes
 
  ** [FleetId](#API_DeregisterCompute_RequestSyntax) **   <a name="gameliftservers-DeregisterCompute-request-FleetId"></a>
@@ -69,6 +69,10 @@ HTTP Status Code: 400
 
  ** UnauthorizedException **
 The client failed authentication. Clients should not retry such requests.
+HTTP Status Code: 400
+
+ ** UnsupportedRegionException **
+The requested operation is not supported in the Region specified.
 HTTP Status Code: 400
 
 ## See Also

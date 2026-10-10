@@ -28,7 +28,7 @@ Required: No
 A unique identifier for the fleet. This ID determines the ID of the Amazon GameLift Servers VPC for your fleet.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** GameLiftVpcId **   <a name="gameliftservers-Type-VpcPeeringConnection-GameLiftVpcId"></a>

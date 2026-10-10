@@ -12,7 +12,11 @@ To post metering records for customers, SaaS applications call `BatchMeterUsage`
 
 Usage records should be submitted in quick succession following a recorded event. Usage records aren't accepted 24 hours or more after an event. At the end of each billing cycle, a 6-hour grace period applies. We accept usage records for the previous billing month until 06:00 UTC on the first day of the next month. For example, you must submit March usage records before 06:00 UTC on April 1. On April 1 at 05:00 UTC, you can still submit records for March 31 (within the 6-hour grace period). After 06:00 UTC on April 1, March records are rejected regardless of the normal 24-hour submission window. After this grace period, we return a `TimestampOutOfBoundsException` error.
 
- `BatchMeterUsage` can process up to 25 `UsageRecords` at a time, and each request must be less than 1 MB in size. Optionally, you can have multiple usage allocations for usage data that's split into buckets according to predefined tags.
+ `BatchMeterUsage` can process up to 25 `UsageRecords` at a time, and each request must be less than 1 MB in size.
+
+ **Vendor-metered tagging**
+
+ `BatchMeterUsage` supports vendor-metered tagging. Optionally, you can split the usage in a `UsageRecord` into buckets by including `UsageAllocations`, where each `UsageAllocation` has a set of `Tags` that you define. Vendor-metered tagging doesn't change the price, dimensions, or the total usage that you report. It gives buyers a more granular view of their usage of your product so they can perform cost allocation in the AWS Billing and Cost Management console. For more information, see [Vendor-metered tagging](https://docs.aws.amazon.com/marketplace/latest/userguide/metering-for-usage.html#saas-vendor-metered-tagging) and [BatchMeterUsage with usage allocation tagging code example](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-code-examples.html#saas-batchmeterusage-tagging) in the * AWS Marketplace Seller Guide*.
 
  `BatchMeterUsage` returns a list of `UsageRecordResult` objects, which have each `UsageRecord`. It also returns a list of `UnprocessedRecords`, which indicate errors on the service side that should be retried.
 

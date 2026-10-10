@@ -13,7 +13,7 @@ Results
 
 If successful, this operation removes the placement request from the queue and moves the `GameSessionPlacement` to `CANCELLED` status.
 
-This operation results in an `InvalidRequestExecption` (400) error if a game session has already been created for this placement. You can clean up an unneeded game session by calling [TerminateGameSession](https://docs.aws.amazon.com/gamelift/latest/apireference/API_TerminateGameSession).
+This operation results in an `InvalidRequestException` (400) error if a game session has already been created for this placement. You can clean up an unneeded game session by calling [TerminateGameSession](https://docs.aws.amazon.com/gamelift/latest/apireference/API_TerminateGameSession).
 
 ## Request Syntax
 <a name="API_StopGameSessionPlacement_RequestSyntax"></a>
@@ -38,7 +38,7 @@ In the following list, the required parameters are described first.
 A unique identifier for a game session placement to stop.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: Yes
 
 ## Response Syntax

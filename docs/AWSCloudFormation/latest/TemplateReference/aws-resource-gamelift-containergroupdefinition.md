@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::GameLift::ContainerGroupDefinition
 <a name="aws-resource-gamelift-containergroupdefinition"></a>
 
-The properties that describe a container group resource. You can update all properties of a container group definition properties. Updates to a container group definition are saved as new versions.
+The properties that describe a container group resource. You can update all properties of a container group definition. Updates to a container group definition are saved as new versions.
 
  **Used with:** [CreateContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html)
 
@@ -101,7 +101,7 @@ The container group definition version to update. The new version starts with va
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SupportContainerDefinitions`  <a name="cfn-gamelift-containergroupdefinition-supportcontainerdefinitions"></a>
-The set of definitions for support containers in this group. A container group definition might have zero support container definitions. Support container can be used in any type of container group.
+The set of definitions for support containers in this group. A container group definition might have zero support container definitions. Support containers can be used in any type of container group.
 *Required*: No
 *Type*: Array of [SupportContainerDefinition](aws-properties-gamelift-containergroupdefinition-supportcontainerdefinition.md)
 *Minimum*: `1`
@@ -109,7 +109,7 @@ The set of definitions for support containers in this group. A container group d
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-gamelift-containergroupdefinition-tags"></a>
-A list of labels to assign to the container group definition resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+A list of labels to assign to the container group definition resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-gamelift-containergroupdefinition-tag.md)
 *Minimum*: `0`
@@ -126,7 +126,8 @@ You can set a limit for each container definition in the group. If individual co
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TotalVcpuLimit`  <a name="cfn-gamelift-containergroupdefinition-totalvcpulimit"></a>
-The amount of vCPU units on a fleet instance to allocate for the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. You can set a limit for each container definition in the group. If individual containers have limits, this total value must be equal to or greater than the sum of the limits for each container in the group.
+The amount of vCPU units on a fleet instance to allocate for the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. You can set a reservation for each container definition in the group. If individual containers have reservations, this total value must be equal to or greater than the sum of the reservations for each container in the group.
+For a `GAME_SERVER` container group, you can omit this property if you set the game server container's `Vcpu` property. A `PER_INSTANCE` container group always requires this property.
 *Required*: No
 *Type*: Number
 *Minimum*: `0`
@@ -167,8 +168,8 @@ Current status of the container group definition resource. Values include:
 
 `StatusReason`  <a name="StatusReason-fn::getatt"></a>
 Additional information about a container group definition that's in `FAILED` status. Possible reasons include:
-+ An internal issue prevented Amazon GameLift Servers from creating the container group definition resource. Delete the failed resource and call [CreateContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html)again.
-+ An access-denied message means that you don't have permissions to access the container image on ECR. See [ IAM permission examples](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html.html) for help setting up required IAM permissions for Amazon GameLift Servers.
++ An internal issue prevented Amazon GameLift Servers from creating the container group definition resource. Delete the failed resource and call [CreateContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateContainerGroupDefinition.html) again.
++ An access-denied message means that you don't have permissions to access the container image on ECR. See [ IAM permission examples](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html) for help setting up required IAM permissions for Amazon GameLift Servers.
 + The `ImageUri` value for at least one of the containers in the container group definition was invalid or not found in the current AWS account.
 + At least one of the container images referenced in the container group definition exceeds the allowed size. For size limits, see [ Amazon GameLift Servers endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/gamelift.html).
 + At least one of the container images referenced in the container group definition uses a different operating system than the one defined for the container group.

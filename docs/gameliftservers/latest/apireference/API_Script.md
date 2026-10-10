@@ -39,13 +39,13 @@ Required: No
  ** ScriptArn **   <a name="gameliftservers-Type-Script-ScriptArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers script resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift script ARN, the resource ID matches the *ScriptId* value.
 Type: String
-Pattern: `^arn:.*:script\/script-\S+`
+Pattern: `^arn:.*:script\/script-\S+$`
 Required: No
 
  ** ScriptId **   <a name="gameliftservers-Type-Script-ScriptId"></a>
 A unique identifier for the Realtime script
 Type: String
-Pattern: `^script-\S+`
+Pattern: `^script-\S+$`
 Required: No
 
  ** SizeOnDisk **   <a name="gameliftservers-Type-Script-SizeOnDisk"></a>

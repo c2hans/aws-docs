@@ -19,7 +19,7 @@ Note that if you call this API using a location that doesn't have a service endp
 
 Consult the table of supported locations in [Amazon GameLift Servers service locations](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-regions.html) to identify home Regions that support single and multi-location fleets.
 
-Avoid calling `ListLocations` before each latency measurement, as it's not designed for high-volume requests. The beacon endpoint information returned by this API are static and won't change as long as Amazon GameLift Servers supports game hosting in that location.
+Avoid calling `ListLocations` before each latency measurement, as it's not designed for high-volume requests. The beacon endpoint information returned by this API is static and won't change as long as Amazon GameLift Servers supports game hosting in that location.
 
  **Learn more**
 

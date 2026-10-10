@@ -154,7 +154,7 @@ aws --region us-west-2 globalaccelerator update-custom-routing-accelerator
                 ],
                 "IpFamily": "IPv4"
             }
-        ]
+        ],
         "DnsName": "a1234567890abcdef.awsglobalaccelerator.com",
         "Status": "IN_PROGRESS",
         "CreatedTime": 1605833295.0,

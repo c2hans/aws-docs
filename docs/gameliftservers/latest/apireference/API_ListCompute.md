@@ -77,7 +77,7 @@ Required: No
 The name of a location to retrieve compute resources for. For an Amazon GameLift Servers Anywhere fleet, use a custom location. For a managed fleet, provide a AWS Region or Local Zone code (for example: `us-west-2` or `us-west-2-lax-1`).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_ListCompute_RequestSyntax) **   <a name="gameliftservers-ListCompute-request-NextToken"></a>

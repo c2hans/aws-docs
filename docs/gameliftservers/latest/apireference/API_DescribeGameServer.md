@@ -39,14 +39,14 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group where the game server is running.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [GameServerId](#API_DescribeGameServer_RequestSyntax) **   <a name="gameliftservers-DescribeGameServer-request-GameServerId"></a>
 A custom string that uniquely identifies the game server information to be retrieved.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: Yes
 
 ## Response Syntax

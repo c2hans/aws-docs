@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # GameServerInstance
 <a name="API_GameServerInstance"></a>
 
- Additional properties, including status, that describe an EC2 instance in a game server group. Instance configurations are set with game server group properties (see `DescribeGameServerGroup` and with the EC2 launch template that was used when creating the game server group.
+ Additional properties, including status, that describe an EC2 instance in a game server group. Instance configurations are set with game server group properties (see `DescribeGameServerGroup`) and with the EC2 launch template that was used when creating the game server group.
 
 Retrieve game server instances for a game server group by calling `DescribeGameServerInstances`.
 
@@ -19,14 +19,14 @@ In the following list, the required parameters are described first.
 A generated unique identifier for the game server group that includes the game server instance.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]*`
+Pattern: `^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]*$`
 Required: No
 
  ** GameServerGroupName **   <a name="gameliftservers-Type-GameServerInstance-GameServerGroupName"></a>
 A developer-defined identifier for the game server group that includes the game server instance. The name is unique for each Region in each AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: No
 
  ** InstanceId **   <a name="gameliftservers-Type-GameServerInstance-InstanceId"></a>

@@ -45,7 +45,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the compute resource that you want to connect to. For an EC2 fleet, use an instance ID. For a managed container fleet, use a compute name. You can retrieve a fleet's compute names by calling [ListCompute](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListCompute.html).
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 Required: Yes
 
  ** [FleetId](#API_GetComputeAccess_RequestSyntax) **   <a name="gameliftservers-GetComputeAccess-request-FleetId"></a>
@@ -90,13 +90,13 @@ The following data is returned in JSON format by the service.
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to an Amazon GameLift Servers compute resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::compute/compute-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$`
 
  ** [ComputeName](#API_GetComputeAccess_ResponseSyntax) **   <a name="gameliftservers-GetComputeAccess-response-ComputeName"></a>
 The identifier of the compute resource to be accessed. This value might be either a compute name or an instance ID.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 
  ** [ContainerIdentifiers](#API_GetComputeAccess_ResponseSyntax) **   <a name="gameliftservers-GetComputeAccess-response-ContainerIdentifiers"></a>
 For a managed container fleet, a list of containers on the compute. Use the container runtime ID with Docker commands to connect to a specific container.

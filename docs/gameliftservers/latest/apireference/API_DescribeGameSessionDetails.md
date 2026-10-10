@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 
-Retrieves additional game session properties, including the game session protection policy in force, a set of one or more game sessions in a specific fleet location. You can optionally filter the results by current game session status.
+Retrieves additional game session properties, including the game session protection policy in force, for a set of one or more game sessions in a specific fleet location. You can optionally filter the results by current game session status.
 
 This operation can be used in the following ways:
 + To retrieve details for all game sessions that are currently running on all locations in a fleet, provide a fleet or alias ID, with an optional status filter. This approach returns details from the fleet's home Region and all remote locations.
@@ -52,7 +52,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_DescribeGameSessionDetails_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessionDetails-request-AliasId"></a>
 A unique identifier for the alias associated with the fleet to retrieve all game sessions for. You can use either the alias ID or ARN value.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: No
 
  ** [FleetId](#API_DescribeGameSessionDetails_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessionDetails-request-FleetId"></a>
@@ -66,7 +67,7 @@ Required: No
 An identifier for the game session that is unique across all regions to retrieve. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** [Limit](#API_DescribeGameSessionDetails_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessionDetails-request-Limit"></a>
@@ -79,7 +80,7 @@ Required: No
 A fleet location to get game session details for. You can specify a fleet's home Region or a remote location. Use the AWS Region code format, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_DescribeGameSessionDetails_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessionDetails-request-NextToken"></a>

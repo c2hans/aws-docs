@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[CapacityProviderArns](#cfn-ecs-daemon-capacityproviderarns)" : {{[ String, ... ]}},
       "[ClusterArn](#cfn-ecs-daemon-clusterarn)" : {{String}},
+      "[Critical](#cfn-ecs-daemon-critical)" : {{Boolean}},
       "[DaemonName](#cfn-ecs-daemon-daemonname)" : {{String}},
       "[DaemonTaskDefinitionArn](#cfn-ecs-daemon-daemontaskdefinitionarn)" : {{String}},
       "[DeploymentConfiguration](#cfn-ecs-daemon-deploymentconfiguration)" : {{DaemonDeploymentConfiguration}},
@@ -43,6 +44,7 @@ Properties:
   [CapacityProviderArns](#cfn-ecs-daemon-capacityproviderarns): {{
     - String}}
   [ClusterArn](#cfn-ecs-daemon-clusterarn): {{String}}
+  [Critical](#cfn-ecs-daemon-critical): {{Boolean}}
   [DaemonName](#cfn-ecs-daemon-daemonname): {{String}}
   [DaemonTaskDefinitionArn](#cfn-ecs-daemon-daemontaskdefinitionarn): {{String}}
   [DeploymentConfiguration](#cfn-ecs-daemon-deploymentconfiguration): {{
@@ -69,6 +71,12 @@ The Amazon Resource Name (ARN) of the cluster that the daemon is running in.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Critical`  <a name="cfn-ecs-daemon-critical"></a>
+If the `critical` parameter of this daemon revision is `true`, and the daemon task fails, stops, or becomes unhealthy, Amazon ECS drains the container instance and stops the other tasks running on it. If the parameter is `false`, the daemon task failure doesn't affect the other tasks on the instance, and doesn't block instance registration. The default value is `true`.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DaemonName`  <a name="cfn-ecs-daemon-daemonname"></a>
 Property description not available.

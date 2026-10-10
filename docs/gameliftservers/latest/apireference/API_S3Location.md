@@ -14,7 +14,7 @@ The location in Amazon S3 where build or script files are stored for access by A
 In the following list, the required parameters are described first.
 
  ** Bucket **   <a name="gameliftservers-Type-S3Location-Bucket"></a>
-An Amazon S3 bucket identifier. Thename of the S3 bucket.
+An Amazon S3 bucket identifier. The name of the S3 bucket.
 Amazon GameLift Servers doesn't support uploading from Amazon S3 buckets with names that contain a dot (.).
 Type: String
 Length Constraints: Minimum length of 1.

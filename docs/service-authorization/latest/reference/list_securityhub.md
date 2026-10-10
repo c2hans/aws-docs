@@ -103,6 +103,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [securityhub:BatchUpdateStandardsControlAssociations](#list_securityhub-action-BatchUpdateStandardsControlAssociations)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [securityhub:UpdateStandardsControl](#list_securityhub-action-UpdateStandardsControl)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
+- **   CancelExportJobV2  **
+  - **IAM action:**  [securityhub:CancelExportJobV2](#list_securityhub-action-CancelExportJobV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateActionTarget  **
   - **IAM action:**  [securityhub:CreateActionTarget](#list_securityhub-action-CreateActionTarget)
   - **Condition key:**
@@ -399,6 +405,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   GetExportJobV2  **
+  - **IAM action:**  [securityhub:GetExportJobV2](#list_securityhub-action-GetExportJobV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetFindingAggregator  **
   - **IAM action:**  [securityhub:GetFindingAggregator](#list_securityhub-action-GetFindingAggregator)
   - **Condition key:**
@@ -555,6 +567,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListExportJobsV2  **
+  - **IAM action:**  [securityhub:ListExportJobsV2](#list_securityhub-action-ListExportJobsV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListExposuresByRemediationV2  **
   - **IAM action:**  [securityhub:ListExposuresByRemediationV2](#list_securityhub-action-ListExposuresByRemediationV2)
   - **Condition key:**
@@ -618,6 +636,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   StartExportJobV2  **
+  - **IAM action:**  [securityhub:GetFindings](#list_securityhub-action-GetFindings)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [securityhub:StartExportJobV2](#list_securityhub-action-StartExportJobV2)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   TagResource  **
   - **IAM action:**  [securityhub:TagResource](#list_securityhub-action-TagResource)

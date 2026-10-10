@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
 A policy that puts limits on the number of game sessions that a player can create within a specified span of time. With this policy, you can control players' ability to consume available resources.
 
-The policy is evaluated when a player tries to create a new game session. On receiving a `CreateGameSession` request, Amazon GameLift Servers checks that the player (identified by `CreatorId`) has created fewer than game session limit in the specified time period.
+The policy is evaluated when a player tries to create a new game session. On receiving a `CreateGameSession` request, Amazon GameLift Servers checks that the player (identified by `CreatorId`) has created fewer than the game session limit in the specified time period.
 
 ## Contents
 <a name="API_GameSessionCreationLimitPolicy_Contents"></a>
@@ -17,7 +17,7 @@ In the following list, the required parameters are described first.
 
  ** NewGameSessionsPerCreator **   <a name="gameliftservers-Type-GameSessionCreationLimitPolicy-NewGameSessionsPerCreator"></a>
 A policy that puts limits on the number of game sessions that a player can create within a specified span of time. With this policy, you can control players' ability to consume available resources.
-The policy evaluates when a player tries to create a new game session. On receiving a `CreateGameSession` request, Amazon GameLift Servers checks that the player (identified by `CreatorId`) has created fewer than game session limit in the specified time period.
+The policy evaluates when a player tries to create a new game session. On receiving a `CreateGameSession` request, Amazon GameLift Servers checks that the player (identified by `CreatorId`) has created fewer than the game session limit in the specified time period.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: No

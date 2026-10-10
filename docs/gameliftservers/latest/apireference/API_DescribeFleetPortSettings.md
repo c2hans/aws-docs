@@ -50,7 +50,7 @@ Required: Yes
 A remote location to check for status of port setting updates. Use the AWS Region code format, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
 ## Response Syntax
@@ -90,7 +90,7 @@ Pattern: `^arn:.*:[a-z]*fleet\/[a-z]*fleet-[a-zA-Z0-9\-]+$`
 A unique identifier for the fleet that was requested.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 
  ** [InboundPermissions](#API_DescribeFleetPortSettings_ResponseSyntax) **   <a name="gameliftservers-DescribeFleetPortSettings-response-InboundPermissions"></a>
 The port settings for the requested fleet ID.
@@ -101,7 +101,7 @@ Array Members: Maximum number of 50 items.
 The requested fleet location, expressed as an AWS Region code, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 
  ** [UpdateStatus](#API_DescribeFleetPortSettings_ResponseSyntax) **   <a name="gameliftservers-DescribeFleetPortSettings-response-UpdateStatus"></a>
 The current status of updates to the fleet's port settings in the requested fleet location. A status of `PENDING_UPDATE` indicates that an update was requested for the fleet but has not yet been completed for the location.

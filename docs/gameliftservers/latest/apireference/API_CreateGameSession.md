@@ -18,7 +18,7 @@ You can use this operation in the following ways:
 
 If successful, Amazon GameLift Servers initiates a workflow to start a new game session and returns a `GameSession` object containing the game session configuration and status. When the game session status is `ACTIVE`, it is updated with connection information and you can create player sessions for the game session. By default, newly created game sessions are open to new players. You can restrict new player access by using [UpdateGameSession](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameSession.html) to change the game session's player session creation policy.
 
-Amazon GameLift Servers retains logs for active for 14 days. To access the logs, call [GetGameSessionLogUrl](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetGameSessionLogUrl.html) to download the log files.
+Amazon GameLift Servers retains logs for active game sessions for 14 days. To access the logs, call [GetGameSessionLogUrl](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetGameSessionLogUrl.html) to download the log files.
 
  *Available in Amazon GameLift Servers Local.*
 
@@ -70,13 +70,14 @@ Required: Yes
  ** [AliasId](#API_CreateGameSession_RequestSyntax) **   <a name="gameliftservers-CreateGameSession-request-AliasId"></a>
 A unique identifier for the alias associated with the fleet to create a game session in. You can use either the alias ID or ARN value. Each request must reference either a fleet ID or alias ID, but not both.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: No
 
  ** [CreatorId](#API_CreateGameSession_RequestSyntax) **   <a name="gameliftservers-CreateGameSession-request-CreatorId"></a>
 A unique identifier for a player or entity creating the game session.
 If you add a resource creation limit policy to a fleet, the `CreateGameSession` operation requires a `CreatorId`. Amazon GameLift Servers limits the number of game session creation requests with the same `CreatorId` in a specified time period.
-If you your fleet doesn't have a resource creation limit policy and you provide a `CreatorId` in your `CreateGameSession` requests, Amazon GameLift Servers limits requests to one request per `CreatorId` per second.
+If your fleet doesn't have a resource creation limit policy and you provide a `CreatorId` in your `CreateGameSession` requests, Amazon GameLift Servers limits requests to one request per `CreatorId` per second.
 To not limit `CreateGameSession` requests with the same `CreatorId`, don't provide a `CreatorId` in your `CreateGameSession` request.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
@@ -108,21 +109,21 @@ Required: No
 Custom string that uniquely identifies a request for a new game session. Maximum token length is 48 characters. If provided, this string is included in the new game session's ID.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** [IdempotencyToken](#API_CreateGameSession_RequestSyntax) **   <a name="gameliftservers-CreateGameSession-request-IdempotencyToken"></a>
 Custom string that uniquely identifies the new game session request. This is useful for ensuring that game session requests with the same idempotency token are processed only once. Subsequent requests with the same string return the original `GameSession` object, with an updated status. Maximum token length is 48 characters. If provided, this string is included in the new game session's ID. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`. Idempotency tokens remain in use for 30 days after a game session has ended; game session objects are retained for this time period and then deleted.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** [Location](#API_CreateGameSession_RequestSyntax) **   <a name="gameliftservers-CreateGameSession-request-Location"></a>
 A fleet's remote location to place the new game session in. If this parameter is not set, the new game session is placed in the fleet's home Region. Specify a remote location with an AWS Region code such as `us-west-2`. When using an Anywhere fleet, this parameter is required and must be set to the Anywhere fleet's custom location.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [Name](#API_CreateGameSession_RequestSyntax) **   <a name="gameliftservers-CreateGameSession-request-Name"></a>

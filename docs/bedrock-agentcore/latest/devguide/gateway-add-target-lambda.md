@@ -56,7 +56,7 @@ When you add a Lambda function as a gateway target, you provide a [ToolDefinitio
     "description": "string",
     "inputSchema": {
         "type": "object",
-        "description" "string",
+        "description": "string",
         "properties": {
             "string": SchemaDefinition
         },
@@ -64,7 +64,7 @@ When you add a Lambda function as a gateway target, you provide a [ToolDefinitio
     },
     "outputSchema": {
         "type": "object",
-        "description" "string",
+        "description": "string",
         "properties": {
             "string": SchemaDefinition
         },

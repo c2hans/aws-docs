@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[Bidirectional](#cfn-devopsagent-association-slackconfiguration-bidirectional)" : {{SlackBidirectionalConfiguration}},
   "[TransmissionTarget](#cfn-devopsagent-association-slackconfiguration-transmissiontarget)" : {{SlackTransmissionTarget}},
   "[WorkspaceId](#cfn-devopsagent-association-slackconfiguration-workspaceid)" : {{String}},
   "[WorkspaceName](#cfn-devopsagent-association-slackconfiguration-workspacename)" : {{String}}
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-devopsagent-association-slackconfiguration-syntax.yaml"></a>
 
 ```
+  [Bidirectional](#cfn-devopsagent-association-slackconfiguration-bidirectional): {{
+    SlackBidirectionalConfiguration}}
   [TransmissionTarget](#cfn-devopsagent-association-slackconfiguration-transmissiontarget): {{
     SlackTransmissionTarget}}
   [WorkspaceId](#cfn-devopsagent-association-slackconfiguration-workspaceid): {{String}}
@@ -37,6 +40,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-devopsagent-association-slackconfiguration-properties"></a>
+
+`Bidirectional`  <a name="cfn-devopsagent-association-slackconfiguration-bidirectional"></a>
+Property description not available.
+*Required*: No
+*Type*: [SlackBidirectionalConfiguration](aws-properties-devopsagent-association-slackbidirectionalconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransmissionTarget`  <a name="cfn-devopsagent-association-slackconfiguration-transmissiontarget"></a>
 Transmission targets for agent notifications.

@@ -39,7 +39,8 @@ In the following list, the required parameters are described first.
  ** [BuildId](#API_UpdateBuild_RequestSyntax) **   <a name="gameliftservers-UpdateBuild-request-BuildId"></a>
 A unique identifier for the build to update. You can use either the build ID or ARN value.
 Type: String
-Pattern: `^build-\S+|^arn:.*:build\/build-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(build-\S+|arn:.*:build\/build-\S+)$`
 Required: Yes
 
  ** [Name](#API_UpdateBuild_RequestSyntax) **   <a name="gameliftservers-UpdateBuild-request-Name"></a>

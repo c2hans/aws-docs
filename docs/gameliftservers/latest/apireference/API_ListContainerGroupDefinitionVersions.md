@@ -107,7 +107,8 @@ Required: No
                ]
             },
             "ResolvedImageDigest": "string",
-            "ServerSdkVersion": "string"
+            "ServerSdkVersion": "string",
+            "Vcpu": number
          },
          "Name": "string",
          "OperatingSystem": "string",
@@ -258,8 +259,9 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
           "Include": ["NET_BIND_SERVICE", "SYS_PTRACE"]
         },
         "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-        "ServerSdkVersion": "5.2.0"
-      }
+        "ServerSdkVersion": "5.2.0",
+        "Vcpu": 1
+      },
       "Name": "MyAdventureGameContainerGroup",
       "OperatingSystem": "AMAZON_LINUX_2023",
       "Status": "READY",
@@ -287,15 +289,16 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
           "Include": ["NET_BIND_SERVICE"]
         },
         "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-        "ServerSdkVersion": "5.2.0"
-      }
+        "ServerSdkVersion": "5.2.0",
+        "Vcpu": 1
+      },
       "Name": "MyAdventureGameContainerGroup",
       "OperatingSystem": "AMAZON_LINUX_2023",
       "Status": "COPYING",
       "TotalMemoryLimitMebibytes": 1024,
       "TotalVcpuLimit": 1,
       "VersionNumber": "2"
-    },
+    }
   ],
   "NextToken": "eyJhd3NBY2NvdW50SWQiOnsicyI6IjMwMjc3NjAxNjM5OCJ9LCJidWlsZElkIjp7InMiOiJidWlsZC01NWYxZTZmMS1jY2FlLTQ3YTctOWI5ZS1iYjFkYTQwMjEXAMPLE1"
 }

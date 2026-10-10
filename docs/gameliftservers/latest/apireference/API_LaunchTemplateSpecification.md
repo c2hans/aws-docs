@@ -17,21 +17,21 @@ In the following list, the required parameters are described first.
 A unique identifier for an existing Amazon EC2 launch template.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+`
+Pattern: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+$`
 Required: No
 
  ** LaunchTemplateName **   <a name="gameliftservers-Type-LaunchTemplateSpecification-LaunchTemplateName"></a>
 A readable identifier for an existing Amazon EC2 launch template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `[a-zA-Z0-9\(\)\.\-/_]+`
+Pattern: `^[a-zA-Z0-9\(\)\.\-/_]+$`
 Required: No
 
  ** Version **   <a name="gameliftservers-Type-LaunchTemplateSpecification-Version"></a>
 The version of the Amazon EC2 launch template to use. If no version is specified, the default version will be used. With Amazon EC2, you can specify a default version for a launch template. If none is set, the default is the first version created.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+`
+Pattern: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+$`
 Required: No
 
 ## See Also

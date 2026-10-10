@@ -37,7 +37,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_DescribeAlias_RequestSyntax) **   <a name="gameliftservers-DescribeAlias-request-AliasId"></a>
 The unique identifier for the fleet alias that you want to retrieve. You can use either the alias ID or ARN value.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: Yes
 
 ## Response Syntax

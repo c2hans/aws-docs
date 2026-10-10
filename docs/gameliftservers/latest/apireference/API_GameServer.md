@@ -25,35 +25,35 @@ Required: No
 The port and IP address that must be used to establish a client connection to the game server.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** GameServerData **   <a name="gameliftservers-Type-GameServer-GameServerData"></a>
 A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** GameServerGroupArn **   <a name="gameliftservers-Type-GameServer-GameServerGroupArn"></a>
 The ARN identifier for the game server group where the game server is located.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]*`
+Pattern: `^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]*$`
 Required: No
 
  ** GameServerGroupName **   <a name="gameliftservers-Type-GameServer-GameServerGroupName"></a>
 A unique identifier for the game server group where the game server is running.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: No
 
  ** GameServerId **   <a name="gameliftservers-Type-GameServer-GameServerId"></a>
 A custom string that uniquely identifies the game server. Game server IDs are developer-defined and are unique across all game server groups in an AWS account.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: No
 
  ** InstanceId **   <a name="gameliftservers-Type-GameServer-InstanceId"></a>

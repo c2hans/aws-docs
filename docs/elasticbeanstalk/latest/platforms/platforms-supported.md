@@ -111,7 +111,7 @@ To learn how to get started deploying a .NET application using the AWS Toolkit f
 
 For information about the latest Microsoft security updates, see [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/).
 
- For information about .NET on Windows Server platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [.NET on Windows Server](platforms-retiring.md#platforms-retiring.net) on the *Retiring Platform Versions* page. For information about previous .NET on Windows Server platform versions for Elastic Beanstalk, see [.NET on Windows Server platform history](platform-history-dotnet.md).
+ For information about previous .NET on Windows Server platform versions for Elastic Beanstalk, see [.NET on Windows Server platform history](platform-history-dotnet.md).
 
 Elastic Beanstalk supports the following .NET on Windows Server platform versions.
 
@@ -126,8 +126,6 @@ Elastic Beanstalk supports the following .NET on Windows Server platform version
 |  ** Windows Server Core 2022 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server Core 2022 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8.1, supports 4.x, 2.0 | IIS 10.0 |
 |  ** Windows Server 2019 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server 2019 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
 |  ** Windows Server Core 2019 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server Core 2019 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server 2016 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server 2016 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
-|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server Core 2016 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 |
 
 ### More details
 <a name="platforms-supported.net.details"></a>
@@ -140,8 +138,6 @@ Elastic Beanstalk supports the following .NET on Windows Server platform version
 |  ** Windows Server Core 2022 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
 |  ** Windows Server 2019 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
 |  ** Windows Server Core 2019 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
-|  ** Windows Server 2016 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
-|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
 
 ## Node.js
 <a name="platforms-supported.nodejs"></a>

@@ -47,7 +47,7 @@ In the following list, the required parameters are described first.
 The unique identifier of the compute resource to retrieve properties for. For a managed container fleet or Anywhere fleet, use a compute name. For an EC2 fleet, use an instance ID. To retrieve a fleet's compute identifiers, call [ListCompute](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ListCompute.html).
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 Required: Yes
 
  ** [FleetId](#API_DescribeCompute_RequestSyntax) **   <a name="gameliftservers-DescribeCompute-request-FleetId"></a>

@@ -35,6 +35,11 @@ Return results that match either Dimension object.
 Type: Array of [Expression](#API_budgets_Expression) objects
 Required: No
 
+ ** ProductAttributes **   <a name="awscostmanagement-Type-budgets_Expression-ProductAttributes"></a>
+The filter that limits results based on the values of specific product attributes.
+Type: [ProductAttributeValues](API_budgets_ProductAttributeValues.md) object
+Required: No
+
  ** Tags **   <a name="awscostmanagement-Type-budgets_Expression-Tags"></a>
 The specific Tag to use for Expression.
 Type: [TagValues](API_budgets_TagValues.md) object

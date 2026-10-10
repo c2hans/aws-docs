@@ -150,7 +150,7 @@ The metadata properties for the model package.
 *Type*: Object of String
 *Pattern*: `^([\p{L}\p{Z}\p{N}_.:\/=+\-@]*)${1,128}`
 *Minimum*: `1`
-*Maximum*: `128`
+*Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Domain`  <a name="cfn-sagemaker-modelpackage-domain"></a>

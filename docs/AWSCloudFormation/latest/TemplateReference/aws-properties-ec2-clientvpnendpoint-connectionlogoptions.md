@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[CloudwatchLogGroup](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchloggroup)" : {{String}},
   "[CloudwatchLogStream](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchlogstream)" : {{String}},
-  "[Enabled](#cfn-ec2-clientvpnendpoint-connectionlogoptions-enabled)" : {{Boolean}}
+  "[Enabled](#cfn-ec2-clientvpnendpoint-connectionlogoptions-enabled)" : {{Boolean}},
+  "[IncludeAuthorizationPolicyContext](#cfn-ec2-clientvpnendpoint-connectionlogoptions-includeauthorizationpolicycontext)" : {{Boolean}}
 }
 ```
 
@@ -32,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [CloudwatchLogGroup](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchloggroup): {{String}}
   [CloudwatchLogStream](#cfn-ec2-clientvpnendpoint-connectionlogoptions-cloudwatchlogstream): {{String}}
   [Enabled](#cfn-ec2-clientvpnendpoint-connectionlogoptions-enabled): {{Boolean}}
+  [IncludeAuthorizationPolicyContext](#cfn-ec2-clientvpnendpoint-connectionlogoptions-includeauthorizationpolicycontext): {{Boolean}}
 ```
 
 ## Properties
@@ -52,5 +54,11 @@ The name of the CloudWatch Logs log stream to which the connection data is publi
 `Enabled`  <a name="cfn-ec2-clientvpnendpoint-connectionlogoptions-enabled"></a>
 Indicates whether connection logging is enabled.
 *Required*: Yes
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`IncludeAuthorizationPolicyContext`  <a name="cfn-ec2-clientvpnendpoint-connectionlogoptions-includeauthorizationpolicycontext"></a>
+Specifies whether to include the authorization policy evaluation context in the connection logs for the Client VPN endpoint.
+*Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

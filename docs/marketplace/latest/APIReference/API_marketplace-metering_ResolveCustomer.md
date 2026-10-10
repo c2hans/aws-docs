@@ -51,6 +51,9 @@ Required: Yes
    "CustomerAWSAccountId": "string",
    "CustomerIdentifier": "string",
    "LicenseArn": "string",
+   "Metadata": {
+      "AgreementId": "string"
+   },
    "ProductCode": "string"
 }
 ```
@@ -80,6 +83,10 @@ The `LicenseArn` is a unique identifier for a specific granted license. These ar
 Once you receive the `CustomerAWSAccountId` and `LicenseArn` in the response, store that for future purposes/API calls/integrations.
 Type: String
 Pattern: `^arn:aws[a-zA-Z-]*:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}$`
+
+ ** [Metadata](#API_marketplace-metering_ResolveCustomer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-metering_ResolveCustomer-response-Metadata"></a>
+The metadata associated with the resolved customer, including the `AgreementId` of the AWS Marketplace agreement the customer accepted.
+Type: [Metadata](API_marketplace-metering_Metadata.md) object
 
  ** [ProductCode](#API_marketplace-metering_ResolveCustomer_ResponseSyntax) **   <a name="AWSMarketplaceService-marketplace-metering_ResolveCustomer-response-ProductCode"></a>
 The product code is returned to confirm that the buyer is registering for your product. Subsequent `BatchMeterUsage` calls should be made using this product code.

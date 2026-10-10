@@ -36,7 +36,6 @@ Required: Yes
 
  ** DependsOn **   <a name="gameliftservers-Type-SupportContainerDefinitionInput-DependsOn"></a>
 Establishes dependencies between this container and the status of other containers in the same container group. A container can have dependencies on multiple different containers.
-.
 You can use dependencies to establish a startup/shutdown sequence across the container group. For example, you might specify that *ContainerB* has a `START` dependency on *ContainerA*. This dependency means that *ContainerB* can't start until after *ContainerA* has started. This dependency is reversed on shutdown, which means that *ContainerB* must shut down before *ContainerA* can shut down.
 Type: Array of [ContainerDependency](API_ContainerDependency.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
@@ -65,7 +64,7 @@ Required: No
 
  ** MemoryHardLimitMebibytes **   <a name="gameliftservers-Type-SupportContainerDefinitionInput-MemoryHardLimitMebibytes"></a>
 A specified amount of memory (in MiB) to reserve for this container. If you don't specify a container-specific memory limit, the container shares the container group's total memory allocation.
- **Related data type: ** [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html)TotalMemoryLimitMebibytes``
+ **Related data type: ** [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html) `TotalMemoryLimitMebibytes`
 Type: Integer
 Valid Range: Minimum value of 4. Maximum value of 1024000.
 Required: No
@@ -77,14 +76,14 @@ Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Required: No
 
  ** PortConfiguration **   <a name="gameliftservers-Type-SupportContainerDefinitionInput-PortConfiguration"></a>
-A set of ports that Amazon GameLift Servers can assign to processes in a container. The container port configuration must have enough ports for each container process that accepts inbound traffic connections. A container port configuration can have can have one or more container port ranges. Each range specifies starting and ending values as well as the supported network protocol.
+A set of ports that Amazon GameLift Servers can assign to processes in a container. The container port configuration must have enough ports for each container process that accepts inbound traffic connections. A container port configuration can have one or more container port ranges. Each range specifies starting and ending values as well as the supported network protocol.
 Container ports aren't directly accessed by inbound traffic. Amazon GameLift Servers maps each container port to an externally accessible connection port (see the container fleet property `ConnectionPortRange`).
 Type: [ContainerPortConfiguration](API_ContainerPortConfiguration.md) object
 Required: No
 
  ** Vcpu **   <a name="gameliftservers-Type-SupportContainerDefinitionInput-Vcpu"></a>
-The number of vCPU units to reserve for this container. The container can use more resources when needed, if available. If you don't reserve CPU units for this container, it shares the container group's total vCPU limit.
- **Related data type: ** [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html) TotalCpuLimit
+The number of vCPU units to reserve for this container. The container can use more resources when needed, if available. If you don't reserve vCPU units for this container, it shares the container group's total vCPU limit.
+ **Related data type: ** [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html) TotalVcpuLimit
 Type: Double
 Valid Range: Minimum value of 0.125. Maximum value of 10.
 Required: No

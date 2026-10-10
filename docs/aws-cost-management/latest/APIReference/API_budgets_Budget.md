@@ -16,6 +16,7 @@ This is the Amazon Resource Name (ARN) pattern for a budget:
 
  ** BudgetName **   <a name="awscostmanagement-Type-budgets_Budget-BudgetName"></a>
 The name of a budget. The name must be unique within an account. The `:` and `\` characters, and the "/action/" substring, aren't allowed in `BudgetName`.
+Budget names are validated for content. Names that contain phone numbers, URLs, or email addresses combined with certain terms may be rejected.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `^(?![^:\\]*/action/|(?i).*<script>.*</script>.*)[^:\\]+$`

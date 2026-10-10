@@ -35,7 +35,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_DeleteAlias_RequestSyntax) **   <a name="gameliftservers-DeleteAlias-request-AliasId"></a>
 A unique identifier of the alias that you want to delete. You can use either the alias ID or ARN value.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: Yes
 
 ## Response Elements

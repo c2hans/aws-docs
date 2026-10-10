@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observ
 # AgentCore generated identity observability data
 <a name="observability-identity-metrics"></a>
 
-This document described observability data emitted by the Bedrock AgentCore Identity Service. This data provides visibility into the performance, usage, and operational health of the service, allowing your to monitor authorization activities for your AI agents and workloads.
+This document described observability data emitted by the Bedrock AgentCore Identity Service. This data provides visibility into the performance, usage, and operational health of the service, allowing you to monitor authorization activities for your AI agents and workloads.
 
 You can use the identity observability data described in this section in the following ways:
 + Monitor usage: track API call volume and throttling events across workload identities and credential providers

@@ -49,7 +49,14 @@ For a list of AWS Regions, see [ Aurora PostgreSQL Region availability](https://
 This release of Aurora PostgreSQL is compatible with PostgreSQL 18.6. For more information about the improvements in PostgreSQL 18.6, see [PostgreSQL release 18.6](https://www.postgresql.org/docs/18/release-18-6.html).
 
 **Topics**
++ [Aurora PostgreSQL 18.6.1, October 9, 2026](#aurorapostgresql-versions-version186x-1861)
 + [Aurora PostgreSQL 18.6, September 29, 2026](#aurorapostgresql-versions-version186x-186)
+
+#### Aurora PostgreSQL 18.6.1, October 9, 2026
+<a name="aurorapostgresql-versions-version186x-1861"></a>
+
+**Critical stability enhancements**
++ Fixed an issue where an Aurora PostgreSQL read replica of an RDS PostgreSQL instance could stop replicating and fail to restart after an UPDATE on a table page that VACUUM had marked all-visible.
 
 #### Aurora PostgreSQL 18.6, September 29, 2026
 <a name="aurorapostgresql-versions-version186x-186"></a>
@@ -322,7 +329,14 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 18.3. For more i
 This release of Aurora PostgreSQL is compatible with PostgreSQL 17.11. For more information about the improvements in PostgreSQL 17.11, see [PostgreSQL release 17.11](https://www.postgresql.org/docs/17/release-17-11.html).
 
 **Topics**
++ [Aurora PostgreSQL 17.11.1, October 9, 2026](#aurorapostgresql-versions-version1711x-17111)
 + [Aurora PostgreSQL 17.11, September 29, 2026](#aurorapostgresql-versions-version1711x-1711)
+
+#### Aurora PostgreSQL 17.11.1, October 9, 2026
+<a name="aurorapostgresql-versions-version1711x-17111"></a>
+
+**Critical stability enhancements**
++ Fixed an issue where an Aurora PostgreSQL read replica of an RDS PostgreSQL instance could stop replicating and fail to restart after an UPDATE on a table page that VACUUM had marked all-visible.
 
 #### Aurora PostgreSQL 17.11, September 29, 2026
 <a name="aurorapostgresql-versions-version1711x-1711"></a>

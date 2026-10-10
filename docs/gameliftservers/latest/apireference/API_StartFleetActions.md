@@ -58,7 +58,7 @@ Required: Yes
 The fleet location to restart fleet actions for. Specify a location in the form of an AWS Region code, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
 ## Response Syntax
@@ -88,7 +88,7 @@ Pattern: `^arn:.*:[a-z]*fleet\/[a-z]*fleet-[a-zA-Z0-9\-]+$`
 A unique identifier for the fleet to restart actions on.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 
 ## Errors
 <a name="API_StartFleetActions_Errors"></a>
@@ -121,7 +121,7 @@ HTTP Status Code: 400
 ### Restart automatic scaling activity for a fleet
 <a name="API_StartFleetActions_Example_1"></a>
 
-In this example, we want to resume the use a fleet's scaling policies that had be previously suspended. Once started, the scaling policies immediately begin tracking their respective metrics.
+In this example, we want to resume the use of a fleet's scaling policies that had been previously suspended. Once started, the scaling policies immediately begin tracking their respective metrics.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 

@@ -65,7 +65,7 @@ Required: No
 A descriptive label that is associated with game session queue. Queue names must be unique within each Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** GameSessionRegion **   <a name="gameliftservers-Type-GameSessionPlacement-GameSessionRegion"></a>
@@ -78,7 +78,7 @@ Required: No
 The IP address of the game session. To connect to a Amazon GameLift Servers game server, an app needs both the IP address and port number. This value isn't final until placement status is `FULFILLED`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** MatchmakerData **   <a name="gameliftservers-Type-GameSessionPlacement-MatchmakerData"></a>
@@ -102,7 +102,7 @@ Required: No
 A unique identifier for a game session placement.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** PlayerGatewayStatus **   <a name="gameliftservers-Type-GameSessionPlacement-PlayerGatewayStatus"></a>

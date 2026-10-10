@@ -93,14 +93,14 @@ In the following list, the required parameters are described first.
 A descriptive label that is associated with game session queue. Queue names must be unique within each Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: Yes
 
  ** [CustomEventData](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-CustomEventData"></a>
 Information to be added to all events that are related to this game session queue.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `[\s\S]*`
+Pattern: `^[\s\S]*$`
 Required: No
 
  ** [Destinations](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-Destinations"></a>
@@ -117,7 +117,7 @@ Required: No
 An SNS topic ARN that is set up to receive game session placement notifications. See [ Setting up notifications for game session placement](https://docs.aws.amazon.com/gamelift/latest/developerguide/queue-notification.html).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 300.
-Pattern: `[a-zA-Z0-9:_-]*(\.fifo)?`
+Pattern: `^[a-zA-Z0-9:_-]*(\.fifo)?$`
 Required: No
 
  ** [PlayerLatencyPolicies](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-PlayerLatencyPolicies"></a>
@@ -131,7 +131,7 @@ Type: [PriorityConfiguration](API_PriorityConfiguration.md) object
 Required: No
 
  ** [Tags](#API_CreateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-CreateGameSessionQueue-request-Tags"></a>
-A list of labels to assign to the new game session queue resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
+A list of labels to assign to the new game session queue resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No
@@ -222,7 +222,7 @@ HTTP Status Code: 400
 ### Create and configure a game session queue
 <a name="API_CreateGameSessionQueue_Example_1"></a>
 
-In this example, we want to create a game session queue with two single-location destinations, each residing in different Regions. We configure the queue so that requests for new game sessions expire after 10 minutes. The queue will process game session requests with player latency data, so we provide a set of latency cap polices that initially start at 100mm and then relax to 200ms after one minute. We opt to use the default sort approach for FleetIQ.
+In this example, we want to create a game session queue with two single-location destinations, each residing in different Regions. We configure the queue so that requests for new game sessions expire after 10 minutes. The queue will process game session requests with player latency data, so we provide a set of latency cap policies that initially start at 100ms and then relax to 200ms after one minute. We opt to use the default sort approach for FleetIQ.
 
 #### Sample Request
 <a name="API_CreateGameSessionQueue_Example_1_Request"></a>

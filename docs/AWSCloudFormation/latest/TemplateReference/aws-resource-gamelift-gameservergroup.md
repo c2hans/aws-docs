@@ -115,7 +115,7 @@ A developer-defined identifier for the game server group. The name is unique for
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GameServerProtectionPolicy`  <a name="cfn-gamelift-gameservergroup-gameserverprotectionpolicy"></a>
-A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status.
+A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion. An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status.
 *Required*: No
 *Type*: String
 *Allowed values*: `NO_PROTECTION | FULL_PROTECTION`

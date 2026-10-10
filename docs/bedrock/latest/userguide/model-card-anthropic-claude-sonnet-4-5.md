@@ -16,9 +16,9 @@ Claude Sonnet 4.5 is Anthropic's model optimized for agents, coding, and compute
 + **EOL no sooner than:** Sep 30, 2026
 + **Legacy period:** at least 6 months
 + **Model lifecycle policy:** [Model lifecycle (For Models Launched Prior to Sept 7 2026)](model-lifecycle-legacy.md)
-+ **Model EOL date:** N/A
++ **Model EOL date:** April 8, 2027
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
-+ **Model lifecycle:** Active
++ **Model lifecycle:** Legacy
 + **Context window:** 200K tokens
 + **Max output tokens:** 64K
 + **Reasoning:** Supported

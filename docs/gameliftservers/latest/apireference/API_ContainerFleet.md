@@ -47,7 +47,7 @@ Required: No
 A unique identifier for the container fleet to retrieve.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** FleetRoleArn **   <a name="gameliftservers-Type-ContainerFleet-FleetRoleArn"></a>
@@ -95,7 +95,7 @@ Array Members: Maximum number of 50 items.
 Required: No
 
  ** InstanceType **   <a name="gameliftservers-Type-ContainerFleet-InstanceType"></a>
-The Amazon EC2 instance type to use for all instances in the fleet. Instance type determines the computing resources and processing power that's available to host your game servers. This includes including CPU, memory, storage, and networking capacity. You can't update this fleet property.
+The Amazon EC2 instance type to use for all instances in the fleet. Instance type determines the computing resources and processing power that's available to host your game servers. This includes CPU, memory, storage, and networking capacity. You can't update this fleet property.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
@@ -114,7 +114,7 @@ Type: [LogConfiguration](API_LogConfiguration.md) object
 Required: No
 
  ** MaximumGameServerContainerGroupsPerInstance **   <a name="gameliftservers-Type-ContainerFleet-MaximumGameServerContainerGroupsPerInstance"></a>
-The calculated maximum number of game server container group that can be deployed on each fleet instance. The calculation depends on the resource needs of the container group and the CPU and memory resources of the fleet's instance type.
+The calculated maximum number of game server container groups that can be deployed on each fleet instance. The calculation depends on the resource needs of the container group and the CPU and memory resources of the fleet's instance type.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 5000.
 Required: No
@@ -162,10 +162,10 @@ The current status of the container fleet.
 +  `CREATED` -- A new container fleet resource has been created. No fleet instances have been deployed.
 +  `ACTIVATING` -- New container fleet instances are being deployed.
 +  `ACTIVE` -- The container fleet has been deployed and is ready to host game sessions.
-+  `UPDATING` -- Updates to the container fleet is being updated. A deployment is in progress.
++  `UPDATING` -- The container fleet is being updated. A deployment is in progress.
 +  `EXPIRED` -- The container fleet has been expired. The fleet is scaled down to zero instances and cannot host new game sessions.
 Type: String
-Valid Values: `PENDING | CREATING | CREATED | ACTIVATING | ACTIVE | UPDATING | DELETING`
+Valid Values: `PENDING | CREATING | CREATED | ACTIVATING | ACTIVE | UPDATING | DELETING | EXPIRED`
 Required: No
 
 ## See Also

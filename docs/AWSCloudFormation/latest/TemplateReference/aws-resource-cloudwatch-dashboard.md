@@ -53,7 +53,7 @@ For more information about the syntax, see [Dashboard Body Structure and Syntax]
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DashboardName`  <a name="cfn-cloudwatch-dashboard-dashboardname"></a>
-The name of the dashboard. The name must be between 1 and 255 characters. If you do not specify a name, one will be generated automatically.
+The name of the dashboard. The name must be between 1 and 255 characters and can only contain alphanumeric characters, dashes (-), and underscores (\_). If you do not specify a name, one will be generated automatically.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

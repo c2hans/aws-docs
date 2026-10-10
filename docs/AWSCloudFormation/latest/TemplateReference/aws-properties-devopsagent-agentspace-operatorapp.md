@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Iam](#cfn-devopsagent-agentspace-operatorapp-iam)" : {{IamAuthConfiguration}},
-  "[Idc](#cfn-devopsagent-agentspace-operatorapp-idc)" : {{IdcAuthConfiguration}}
+  "[Idc](#cfn-devopsagent-agentspace-operatorapp-idc)" : {{IdcAuthConfiguration}},
+  "[Idp](#cfn-devopsagent-agentspace-operatorapp-idp)" : {{IdpAuthConfiguration}}
 }
 ```
 
@@ -32,6 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     IamAuthConfiguration}}
   [Idc](#cfn-devopsagent-agentspace-operatorapp-idc): {{
     IdcAuthConfiguration}}
+  [Idp](#cfn-devopsagent-agentspace-operatorapp-idp): {{
+    IdpAuthConfiguration}}
 ```
 
 ## Properties
@@ -47,4 +50,10 @@ IAM-based authentication configuration for the DevOps Agent web app.
 IAM Identity Center authentication configuration for the DevOps Agent web app.
 *Required*: No
 *Type*: [IdcAuthConfiguration](aws-properties-devopsagent-agentspace-idcauthconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Idp`  <a name="cfn-devopsagent-agentspace-operatorapp-idp"></a>
+Property description not available.
+*Required*: No
+*Type*: [IdpAuthConfiguration](aws-properties-devopsagent-agentspace-idpauthconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::Transfer::Server",
   "Properties" : {
       "[Certificate](#cfn-transfer-server-certificate)" : {{String}},
+      "[CreateWithHostKey](#cfn-transfer-server-createwithhostkey)" : {{Boolean}},
       "[Domain](#cfn-transfer-server-domain)" : {{String}},
       "[EndpointDetails](#cfn-transfer-server-endpointdetails)" : {{EndpointDetails}},
       "[EndpointType](#cfn-transfer-server-endpointtype)" : {{String}},
@@ -49,6 +50,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::Transfer::Server
 Properties:
   [Certificate](#cfn-transfer-server-certificate): {{String}}
+  [CreateWithHostKey](#cfn-transfer-server-createwithhostkey): {{Boolean}}
   [Domain](#cfn-transfer-server-domain): {{String}}
   [EndpointDetails](#cfn-transfer-server-endpointdetails): {{
     EndpointDetails}}
@@ -94,6 +96,13 @@ The certificate must be a valid SSL/TLS X.509 version 3 certificate with FQDN or
 *Type*: String
 *Minimum*: `0`
 *Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CreateWithHostKey`  <a name="cfn-transfer-server-createwithhostkey"></a>
+When this property is `true`, AWS Transfer Family generates an initial host key for your server, making it immediately available to SFTP clients. When set to `false`, clients can't establish an SFTP session until you import one or more host keys by using the `AWS::Transfer::HostKey` resource. The default value is `true`.
+You can set this property only when you create the server. If you change its value in a later stack update, the update fails and the server is left unchanged.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Domain`  <a name="cfn-transfer-server-domain"></a>

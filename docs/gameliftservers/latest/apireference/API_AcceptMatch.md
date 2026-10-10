@@ -14,7 +14,7 @@ When FlexMatch builds a match, all the matchmaking tickets involved in the propo
 To register acceptance, specify the ticket ID, one or more players, and an acceptance response. When all players have accepted, Amazon GameLift Servers advances the matchmaking tickets to status `PLACING`, and attempts to create a new game session for the match.
 
 If any player rejects the match, or if acceptances are not received before a specified timeout, the proposed match is dropped. Each matchmaking ticket in the failed match is handled as follows:
-+ If the ticket has one or more players who rejected the match or failed to respond, the ticket status is set `CANCELLED` and processing is terminated.
++ If the ticket has one or more players who rejected the match or failed to respond, the ticket status is set to `CANCELLED` and processing is terminated.
 + If all players in the ticket accepted the match, the ticket status is returned to `SEARCHING` to find a new match.
 
  **Learn more**
@@ -60,7 +60,7 @@ Required: Yes
 A unique identifier for a matchmaking ticket. The ticket must be in status `REQUIRES_ACCEPTANCE`; otherwise this request will fail.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: Yes
 
 ## Response Elements

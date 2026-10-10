@@ -10,16 +10,20 @@ When configuration is handled directly in code, the configuration scope is limit
 ## Configuration data types
 <a name="configurations-vary-by-service"></a>
 
-Each AWS service has its own configuration class that you use to specify adjust options for that client type. All of these classes are based on a number of protocols that together describe all the configuration options available for that client. This includes options such as the Region and credentials, which are always needed in order to access an AWS service.
+The AWS SDK for Swift provides a configuration structure for each AWS service. Use it to control how a client connects to and interacts with that service. Customize a client's configuration to control the reliability, security, and performance of your application's connection. You can set the Region it reaches, the credentials it presents, and how it retries failed calls. For example, you might raise the maximum number of retry attempts for an application that runs on an unreliable network.
 
-For Amazon S3, the configuration class is called `[S3Client.S3ClientConfiguration](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/s3clientconfiguration)` which is defined like this:
+Each AWS service has its own configuration structure that you use to adjust options for that client type.
+
+All of these structures are based on a number of protocols that together describe all the configuration options available for that client. This includes options such as the Region and credentials, which you always need to access an AWS service.
+
+Amazon Simple Storage Service (Amazon S3) uses the [S3Client.S3ClientConfig](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/s3clientconfig) structure, described in the *AWS SDK for Swift API Reference*. The AWS SDK for Swift defines it like this:
 
 ```
 extension S3Client {
-    public class S3ClientConfiguration: AWSClientRuntime.AWSDefaultClientConfiguration &
+    public struct S3ClientConfig: AWSClientRuntime.AWSDefaultClientConfiguration &
             AWSClientRuntime.AWSRegionClientConfiguration &
             ClientRuntime.DefaultClientConfiguration &
-            ClientRuntime.DefaultHttpClientConfiguration {
+            ClientRuntime.DefaultHttpClientConfiguration, Swift.Sendable {
 
         // Service-specific properties are defined here, including:
 
@@ -30,7 +34,12 @@ extension S3Client {
 }
 ```
 
-As a result, `S3ClientConfiguration` includes its own properties and also all the properties defined in those protocols, making it a complete description of an Amazon S3 client's configuration. Corresponding configuration classes are defined by every AWS service.
+As a result, `S3ClientConfig` includes its own properties and also all the properties defined in those protocols, making it a complete description of an Amazon S3 client's configuration. Every AWS service defines a corresponding configuration structure.
+
+Because the configuration is a `struct`, it's a value type. Declare it using `var` if you need to change its properties after creating it. Remember that assigning it to another variable makes a copy rather than sharing a reference.
+
+**Note**
+Earlier versions of the AWS SDK for Swift used a configuration class named `S3Client.S3ClientConfiguration`, with similarly named classes for the other AWS services. We deprecated those classes and plan to remove them in a future release. Use the `S3ClientConfig` structure, or the equivalent structure for your service, instead.
 
 By creating a custom configuration object and using it when creating a service client object, you can customize the client by specifying a configuration source from which credentials and other options are taken. Otherwise, you can directly specify the credentials instead of letting the SDK obtain them automatically.
 
@@ -62,7 +71,7 @@ This lets you handle a common client configuration scenario (specifying a Region
 
 To customize the configuration of an AWS service, create a configuration object of the appropriate type for the service. Then pass that configuration object into the service client's constructor as the value of its `config` parameter.
 
-For example, to configure an Amazon S3 client, create an object of type `[S3Client.S3ClientConfiguration](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/s3clientconfiguration)`. Set the properties that you want to change, then pass the configuration object into `[S3Client(config:)](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/init(config:)-8emrd)`.
+For example, to configure an Amazon S3 client, create a value of type [S3Client.S3ClientConfig](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/s3clientconfig). Set the properties to change, and then pass the configuration into [S3Client(config:)](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client/init(config:)-8emrd). The *AWS SDK for Swift API Reference* describes both.
 
 The following example creates a new Amazon S3 client configured with the following options:
 + The AWS Region is set to `us-east-1`.

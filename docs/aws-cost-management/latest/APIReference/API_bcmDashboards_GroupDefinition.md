@@ -20,7 +20,7 @@ Required: Yes
  ** type **   <a name="awscostmanagement-Type-bcmDashboards_GroupDefinition-type"></a>
 The type of grouping to apply.
 Type: String
-Valid Values: `DIMENSION | TAG | COST_CATEGORY`
+Valid Values: `DIMENSION | TAG | COST_CATEGORY | PRODUCT_ATTRIBUTE`
 Required: No
 
 ## See Also

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cognito/index.html
 title: 'Amazon Cognito Documentation'
 canonical_url: https://docs.aws.amazon.com/cognito/
 source: aws-documentation
-generated_on: 2026-10-08
+generated_on: 2026-10-09
 ---
 
 # Amazon Cognito Documentation
@@ -15,7 +15,7 @@ Amazon Cognito handles user authentication and authorization for your web and mo
 
 ## Amazon Cognito User Pools
 
-- [Developer Guide](/cognito/latest/developerguide/cognito-user-identity-pools.html): Provides a conceptual overview of Amazon Cognito user pools and includes instructions that show you how to use its features.
+- [Developer Guide](/cognito/latest/developerguide/what-is-amazon-cognito.html): Provides a conceptual overview of Amazon Cognito user pools and includes instructions that show you how to use its features.
 - [API Reference](/cognito-user-identity-pools/latest/APIReference/): Describes the REST API for user pools.
 - [AWS CLI Reference](/cli/latest/reference/cognito-idp/index.html): Describes the AWS CLI commands for user pools.
 

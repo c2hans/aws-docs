@@ -64,7 +64,7 @@ In the following list, the required parameters are described first.
 Name of the matchmaking configuration to use for this request. Matchmaking configurations must exist in the same Region as this request. You can use either the configuration name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*)$`
 Required: Yes
 
  ** [Players](#API_StartMatchmaking_RequestSyntax) **   <a name="gameliftservers-StartMatchmaking-request-Players"></a>
@@ -78,7 +78,7 @@ Required: Yes
 A unique identifier for a matchmaking ticket. If no ticket ID is specified here, Amazon GameLift Servers will generate one in the form of a UUID. Use this identifier to track the matchmaking ticket status and retrieve match results.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: No
 
 ## Response Syntax
@@ -140,7 +140,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [MatchmakingTicket](#API_StartMatchmaking_ResponseSyntax) **   <a name="gameliftservers-StartMatchmaking-response-MatchmakingTicket"></a>
-Ticket representing the matchmaking request. This object include the information included in the request, ticket status, and match results as generated during the matchmaking process.
+Ticket representing the matchmaking request. This object includes the information included in the request, ticket status, and match results as generated during the matchmaking process.
 Type: [MatchmakingTicket](API_MatchmakingTicket.md) object
 
 ## Errors

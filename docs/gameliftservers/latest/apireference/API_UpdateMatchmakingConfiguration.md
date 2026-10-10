@@ -54,7 +54,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the matchmaking configuration to update. You can use either the configuration name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*)$`
 Required: Yes
 
  ** [AcceptanceRequired](#API_UpdateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-UpdateMatchmakingConfiguration-request-AcceptanceRequired"></a>
@@ -115,17 +115,17 @@ Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: No
 
  ** [GameSessionQueueArns](#API_UpdateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-UpdateMatchmakingConfiguration-request-GameSessionQueueArns"></a>
-The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::gamesessionqueue/<queue name>`. Queues can be located in any Region. Queues are used to start new Amazon GameLift Servers-hosted game sessions for matches that are created with this matchmaking configuration. If `FlexMatchMode` is set to `STANDALONE`, do not set this parameter.
+The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::gamesessionqueue/<queue name>`. Queues can be located in any Region. Queues are used to start new Amazon GameLift Servers-hosted game sessions for matches that are created with this matchmaking configuration. A matchmaking configuration supports only one queue; if you specify more than one ARN, the request fails with an `InvalidRequestException`. If `FlexMatchMode` is set to `STANDALONE`, do not set this parameter.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** [NotificationTarget](#API_UpdateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-UpdateMatchmakingConfiguration-request-NotificationTarget"></a>
 An SNS topic ARN that is set up to receive matchmaking notifications. See [ Setting up notifications for matchmaking](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-notification.html) for more information.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 300.
-Pattern: `[a-zA-Z0-9:_/-]*(.fifo)?`
+Pattern: `^[a-zA-Z0-9:_/-]*(\.fifo)?$`
 Required: No
 
  ** [RequestTimeoutSeconds](#API_UpdateMatchmakingConfiguration_RequestSyntax) **   <a name="gameliftservers-UpdateMatchmakingConfiguration-request-RequestTimeoutSeconds"></a>
@@ -138,7 +138,7 @@ Required: No
 A unique identifier for the matchmaking rule set to use with this configuration. You can use either the rule set name or ARN value. A matchmaking configuration can only use rule sets that are defined in the same Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]*|^arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*`
+Pattern: `^([a-zA-Z0-9-\.]*|arn:.*:matchmakingruleset\/[a-zA-Z0-9-\.]*)$`
 Required: No
 
 ## Response Syntax

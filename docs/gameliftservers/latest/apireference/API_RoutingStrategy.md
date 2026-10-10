@@ -21,7 +21,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the fleet that the alias points to. This value is the fleet ID, not the fleet ARN.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** Message **   <a name="gameliftservers-Type-RoutingStrategy-Message"></a>

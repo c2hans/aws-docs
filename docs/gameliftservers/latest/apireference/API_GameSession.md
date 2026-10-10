@@ -23,7 +23,7 @@ In the following list, the required parameters are described first.
 A descriptive label for the compute resource. The compute resource that is hosting the game session. For EC2 fleets, this is the EC2 instance ID. For Container fleets, each game server container group on a fleet instance is assigned a compute name. For Anywhere fleets, this is the custom compute name.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$`
 Required: No
 
  ** CreationTime **   <a name="gameliftservers-Type-GameSession-CreationTime"></a>
@@ -62,7 +62,7 @@ Required: No
 A unique identifier for the fleet that the game session is running on.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** GameProperties **   <a name="gameliftservers-Type-GameSession-GameProperties"></a>
@@ -89,14 +89,14 @@ Required: No
 The IP address of the game session. To connect to a Amazon GameLift Servers game server, an app needs both the IP address and port number.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** Location **   <a name="gameliftservers-Type-GameSession-Location"></a>
 The fleet location where the game session is running. This value might specify the fleet's home Region or a remote location. Location is expressed as an AWS Region code such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** MatchmakerData **   <a name="gameliftservers-Type-GameSession-MatchmakerData"></a>
@@ -149,7 +149,6 @@ Provides additional information about game session status.
 +  `INTERRUPTED` -- The game session was hosted on an EC2 Spot instance that was reclaimed, causing the active game session to be stopped.
 +  `TRIGGERED_ON_PROCESS_TERMINATE` – The game session was stopped by calling `TerminateGameSession` with the termination mode `TRIGGER_ON_PROCESS_TERMINATE`.
 +  `FORCE_TERMINATED` – The game session was stopped by calling `TerminateGameSession` with the termination mode `FORCE_TERMINATE`.
-
 Type: String
 Valid Values: `INTERRUPTED | TRIGGERED_ON_PROCESS_TERMINATE | FORCE_TERMINATED`
 Required: No

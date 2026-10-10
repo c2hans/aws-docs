@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[EgressNetworkConnectorArn](#cfn-lambda-webfunctionrevision-serviceconfig-egressnetworkconnectorarn)" : {{String}},
   "[EnvironmentVariables](#cfn-lambda-webfunctionrevision-serviceconfig-environmentvariables)" : {{{{{Key}}: {{Value}}, ...}}},
   "[ExecutionRoleArn](#cfn-lambda-webfunctionrevision-serviceconfig-executionrolearn)" : {{String}},
   "[MaxConcurrencyPerEnvironment](#cfn-lambda-webfunctionrevision-serviceconfig-maxconcurrencyperenvironment)" : {{Integer}},
@@ -31,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig-syntax.yaml"></a>
 
 ```
+  [EgressNetworkConnectorArn](#cfn-lambda-webfunctionrevision-serviceconfig-egressnetworkconnectorarn): {{String}}
   [EnvironmentVariables](#cfn-lambda-webfunctionrevision-serviceconfig-environmentvariables): {{
     {{Key}}: {{Value}}}}
   [ExecutionRoleArn](#cfn-lambda-webfunctionrevision-serviceconfig-executionrolearn): {{String}}
@@ -42,6 +44,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig-properties"></a>
+
+`EgressNetworkConnectorArn`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-egressnetworkconnectorarn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:(aws[a-z-]*):lambda:[a-z0-9-]+:[0-9]{12}:network-connector:[a-zA-Z0-9_-]+:[0-9]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EnvironmentVariables`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-environmentvariables"></a>
 Property description not available.

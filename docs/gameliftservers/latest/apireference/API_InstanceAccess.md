@@ -22,20 +22,21 @@ Required: No
 A unique identifier for the fleet containing the instance to be accessed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** InstanceId **   <a name="gameliftservers-Type-InstanceAccess-InstanceId"></a>
 A unique identifier for the instance to be accessed.
 Type: String
-Pattern: `[a-zA-Z0-9\.-]+`
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^[a-zA-Z0-9\.-]+$`
 Required: No
 
  ** IpAddress **   <a name="gameliftservers-Type-InstanceAccess-IpAddress"></a>
 IP address assigned to the instance.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** OperatingSystem **   <a name="gameliftservers-Type-InstanceAccess-OperatingSystem"></a>

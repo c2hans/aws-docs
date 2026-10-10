@@ -111,7 +111,7 @@ Type: Array of [Tag](API_Tag.md) objects
 Required: No
 
  ** TargetTagAssociationSet.N **
-The [tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) associated with the application status check. Instances with these tags are automatically monitored by this check.
+The tag associations for the application status check. The service does not populate this field. To view tag associations for an application status check, use `DescribeApplicationStatusCheckAssociations`.
 Type: Array of [CustomTagKeyValueResponsePair](API_CustomTagKeyValueResponsePair.md) objects
 Required: No
 

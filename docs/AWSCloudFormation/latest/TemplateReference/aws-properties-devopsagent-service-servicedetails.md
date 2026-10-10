@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AzureIdentity](#cfn-devopsagent-service-servicedetails-azureidentity)" : {{AzureIdentityServiceDetails}},
   "[Dynatrace](#cfn-devopsagent-service-servicedetails-dynatrace)" : {{DynatraceServiceDetails}},
+  "[GitHub](#cfn-devopsagent-service-servicedetails-github)" : {{GitHubDetails}},
   "[GitLab](#cfn-devopsagent-service-servicedetails-gitlab)" : {{GitLabDetails}},
   "[MCPServer](#cfn-devopsagent-service-servicedetails-mcpserver)" : {{MCPServerDetails}},
   "[MCPServerGrafana](#cfn-devopsagent-service-servicedetails-mcpservergrafana)" : {{MCPServerGrafanaDetails}},
@@ -40,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     AzureIdentityServiceDetails}}
   [Dynatrace](#cfn-devopsagent-service-servicedetails-dynatrace): {{
     DynatraceServiceDetails}}
+  [GitHub](#cfn-devopsagent-service-servicedetails-github): {{
+    GitHubDetails}}
   [GitLab](#cfn-devopsagent-service-servicedetails-gitlab): {{
     GitLabDetails}}
   [MCPServer](#cfn-devopsagent-service-servicedetails-mcpserver): {{
@@ -71,6 +74,12 @@ Azure identity service configuration.
 Dynatrace service configuration.
 *Required*: No
 *Type*: [DynatraceServiceDetails](aws-properties-devopsagent-service-dynatraceservicedetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`GitHub`  <a name="cfn-devopsagent-service-servicedetails-github"></a>
+Property description not available.
+*Required*: No
+*Type*: [GitHubDetails](aws-properties-devopsagent-service-githubdetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GitLab`  <a name="cfn-devopsagent-service-servicedetails-gitlab"></a>

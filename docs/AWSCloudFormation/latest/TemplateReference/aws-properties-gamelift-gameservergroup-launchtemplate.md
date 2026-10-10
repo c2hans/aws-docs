@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 A unique identifier for an existing Amazon EC2 launch template.
 *Required*: No
 *Type*: String
-*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+`
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+$`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -52,7 +52,7 @@ A unique identifier for an existing Amazon EC2 launch template.
 A readable identifier for an existing Amazon EC2 launch template.
 *Required*: No
 *Type*: String
-*Pattern*: `[a-zA-Z0-9\(\)\.\-/_]+`
+*Pattern*: `^[a-zA-Z0-9\(\)\.\-/_]+$`
 *Minimum*: `3`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -61,7 +61,7 @@ A readable identifier for an existing Amazon EC2 launch template.
 The version of the Amazon EC2 launch template to use. If no version is specified, the default version will be used. With Amazon EC2, you can specify a default version for a launch template. If none is set, the default is the first version created.
 *Required*: No
 *Type*: String
-*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+`
+*Pattern*: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]+$`
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

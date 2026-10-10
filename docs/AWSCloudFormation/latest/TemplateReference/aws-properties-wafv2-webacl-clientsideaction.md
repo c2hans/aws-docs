@@ -39,12 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-wafv2-webacl-clientsideaction-properties"></a>
 
 `ExemptUriRegularExpressions`  <a name="cfn-wafv2-webacl-clientsideaction-exempturiregularexpressions"></a>
-The regular expression to match against the web request URI, used to identify requests that can't handle a silent browser challenge. When the `ClientSideAction` setting `UsageOfAction` is enabled, the managed rule group uses this setting to determine which requests to label with `awswaf:managed:aws:anti-ddos:challengeable-request`. If `UsageOfAction` is disabled, this setting has no effect and the managed rule group doesn't add the label to any requests.
-The anti-DDoS managed rule group doesn't evaluate the rules `ChallengeDDoSRequests` or `ChallengeAllDuringEvent` for web requests whose URIs match this regex. This is true regardless of whether you override the rule action for either of the rules in your web ACL configuration.
+The regular expression to match against the request's host followed by its normalized URI path, used to identify requests that can't handle a silent browser challenge. When the `ClientSideAction` setting `UsageOfAction` is enabled, the managed rule group uses this setting to determine which requests to label with `awswaf:managed:aws:anti-ddos:challengeable-request`. If `UsageOfAction` is disabled, this setting has no effect and the managed rule group doesn't add the label to any requests.
+AWS WAF matches against the host immediately followed by the normalized URI path and doesn't include the scheme, the query string, or the fragment. For example, `www.example.com/api/orders`. Because the match begins with the host, a pattern anchored to the start of the path, such as `^/api/`, never matches. AWS WAF normalizes the path first, removing empty segments (including a trailing slash) and single-dot (`.`) segments and resolving double-dot (`..`) segments, so `/api/` is evaluated as `/api`. Only `GET` requests are challengeable.
+The anti-DDoS managed rule group doesn't evaluate the rules `ChallengeDDoSRequests` or `ChallengeAllDuringEvent` for web requests that match this regex. This is true regardless of whether you override the rule action for either of the rules in your web ACL configuration.
 AWS recommends using a regular expression.
 This setting is required if `UsageOfAction` is set to `ENABLED`. If required, you can provide between 1 and 5 regex objects in the array of settings.
 AWS recommends starting with the following setting. Review and update it for your application's needs:
- `\/api\/|\.(acc|avi|css|gif|jpe?g|js|mp[34]|ogg|otf|pdf|png|tiff?|ttf|webm|webp|woff2?)$`
+ `\/api(\/|$)|\.(acc|avi|css|gif|jpe?g|js|mp[34]|ogg|otf|pdf|png|tiff?|ttf|webm|webp|woff2?)$`
 *Required*: No
 *Type*: Array of [Regex](aws-properties-wafv2-webacl-regex.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -64,7 +65,7 @@ Default: `HIGH`
 `UsageOfAction`  <a name="cfn-wafv2-webacl-clientsideaction-usageofaction"></a>
 Determines whether to use the `AWSManagedRulesAntiDDoSRuleSet` rules `ChallengeAllDuringEvent` and `ChallengeDDoSRequests` in the rule group evaluation and the related label `awswaf:managed:aws:anti-ddos:challengeable-request`.
 + If usage is enabled:
-  + The managed rule group adds the label `awswaf:managed:aws:anti-ddos:challengeable-request` to any web request whose URL does *NOT* match the regular expressions provided in the `ClientSideAction` setting `ExemptUriRegularExpressions`.
+  + The managed rule group adds the label `awswaf:managed:aws:anti-ddos:challengeable-request` to any web request that does not match the regular expressions provided in the `ClientSideAction` setting `ExemptUriRegularExpressions`.
   + The two rules are evaluated against web requests for protected resources that are experiencing a DDoS attack. The two rules only apply their action to matching requests that have the label `awswaf:managed:aws:anti-ddos:challengeable-request`.
 + If usage is disabled:
   + The managed rule group doesn't add the label `awswaf:managed:aws:anti-ddos:challengeable-request` to any web requests.

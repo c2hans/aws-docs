@@ -22,7 +22,8 @@ Required: No
  ** PlayerSessionId **   <a name="gameliftservers-Type-PlacedPlayerSession-PlayerSessionId"></a>
 A unique identifier for a player session.
 Type: String
-Pattern: `^psess-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `^psess-\S+$`
 Required: No
 
 ## See Also

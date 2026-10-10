@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # ContainerDependency
 <a name="API_ContainerDependency"></a>
 
-A container's dependency on another container in the same container group. The dependency impacts how the dependent container is able to start or shut down based the status of the other container.
+A container's dependency on another container in the same container group. The dependency impacts how the dependent container is able to start or shut down based on the status of the other container.
 
 For example, *ContainerA* is configured with the following dependency: a `START` dependency on *ContainerB*. This means that *ContainerA* can't start until *ContainerB* has started. It also means that *ContainerA* must shut down before *ContainerB*.
 

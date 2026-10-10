@@ -16,14 +16,14 @@ In the following list, the required parameters are described first.
  ** ConfigurationArn **   <a name="gameliftservers-Type-MatchmakingTicket-ConfigurationArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) associated with the GameLift matchmaking configuration resource that is used with this ticket.
 Type: String
-Pattern: `^arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*`
+Pattern: `^arn:.*:matchmakingconfiguration\/[a-zA-Z0-9-\.]*$`
 Required: No
 
  ** ConfigurationName **   <a name="gameliftservers-Type-MatchmakingTicket-ConfigurationName"></a>
 Name of the matchmaking configuration that is used with this ticket. Matchmaking configurations determine how players are grouped into a match and how a new game session is created for the match.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: No
 
  ** EndTime **   <a name="gameliftservers-Type-MatchmakingTicket-EndTime"></a>
@@ -38,7 +38,7 @@ Valid Range: Minimum value of 0.
 Required: No
 
  ** GameSessionConnectionInfo **   <a name="gameliftservers-Type-MatchmakingTicket-GameSessionConnectionInfo"></a>
-Connection information for a new game session. Once a match is made, the FlexMatch engine creates a new game session for it. This information is added to the matchmaking ticket, which you can be retrieve by calling [DescribeMatchmaking](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeMatchmaking.html) .
+Connection information for a new game session. Once a match is made, the FlexMatch engine creates a new game session for it. This information is added to the matchmaking ticket, which you can retrieve by calling [DescribeMatchmaking](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeMatchmaking.html) .
 Type: [GameSessionConnectionInfo](API_GameSessionConnectionInfo.md) object
 Required: No
 
@@ -81,7 +81,7 @@ Required: No
 A unique identifier for a matchmaking ticket.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: No
 
 ## See Also

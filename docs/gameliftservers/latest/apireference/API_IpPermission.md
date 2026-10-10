@@ -26,7 +26,7 @@ Required: Yes
  ** IpRange **   <a name="gameliftservers-Type-IpPermission-IpRange"></a>
 A range of allowed IP addresses. This value must be expressed in CIDR notation. Example: "`000.000.000.000/[subnet mask]`" or optionally the shortened version "`0.0.0.0/[subnet mask]`".
 Type: String
-Pattern: `[^\s]+`
+Pattern: `^[^\s]+$`
 Required: Yes
 
  ** Protocol **   <a name="gameliftservers-Type-IpPermission-Protocol"></a>

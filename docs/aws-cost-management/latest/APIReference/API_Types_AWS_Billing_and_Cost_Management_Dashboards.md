@@ -20,6 +20,7 @@ The following data types are supported by AWS Billing and Cost Management Dashbo
 +  [GraphDisplayConfig](API_bcmDashboards_GraphDisplayConfig.md)
 +  [GroupDefinition](API_bcmDashboards_GroupDefinition.md)
 +  [HealthStatus](API_bcmDashboards_HealthStatus.md)
++  [ProductAttributeValues](API_bcmDashboards_ProductAttributeValues.md)
 +  [QueryParameters](API_bcmDashboards_QueryParameters.md)
 +  [ReservationCoverageQuery](API_bcmDashboards_ReservationCoverageQuery.md)
 +  [ReservationUtilizationQuery](API_bcmDashboards_ReservationUtilizationQuery.md)

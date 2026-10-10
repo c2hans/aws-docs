@@ -54,7 +54,8 @@ In the following list, the required parameters are described first.
  ** [ScriptId](#API_UpdateScript_RequestSyntax) **   <a name="gameliftservers-UpdateScript-request-ScriptId"></a>
 A unique identifier for the Realtime script to update. You can use either the script ID or ARN value.
 Type: String
-Pattern: `^script-\S+|^arn:.*:script\/script-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(script-\S+|arn:.*:script\/script-\S+)$`
 Required: Yes
 
  ** [Name](#API_UpdateScript_RequestSyntax) **   <a name="gameliftservers-UpdateScript-request-Name"></a>
@@ -112,7 +113,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [Script](#API_UpdateScript_ResponseSyntax) **   <a name="gameliftservers-UpdateScript-response-Script"></a>
-The newly created script record with a unique script ID. The new script's storage location reflects an Amazon S3 location: (1) If the script was uploaded from an S3 bucket under your account, the storage location reflects the information that was provided in the *CreateScript* request; (2) If the script file was uploaded from a local zip file, the storage location reflects an S3 location controls by the Amazon GameLift Servers service.
+The newly created script record with a unique script ID. The new script's storage location reflects an Amazon S3 location: (1) If the script was uploaded from an S3 bucket under your account, the storage location reflects the information that was provided in the *CreateScript* request; (2) If the script file was uploaded from a local zip file, the storage location reflects an S3 location controlled by the Amazon GameLift Servers service.
 Type: [Script](API_Script.md) object
 
 ## Errors

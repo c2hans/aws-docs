@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Type
 <a name="API_Types_AWSMarketplace_Metering"></a>
 
 The following data types are supported by AWS Marketplace Metering Service:
++  [Metadata](API_marketplace-metering_Metadata.md)
 +  [Tag](API_marketplace-metering_Tag.md)
 +  [UsageAllocation](API_marketplace-metering_UsageAllocation.md)
 +  [UsageRecord](API_marketplace-metering_UsageRecord.md)

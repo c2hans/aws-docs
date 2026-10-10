@@ -91,7 +91,7 @@ You can't use both of those options.
 HTTP Status Code: 400
 
  ** EndpointAlreadyExistsException **
-The endpoint that you specified doesn't exist.
+The endpoint that you specified already exists.
 HTTP Status Code: 400
 
  ** EndpointGroupNotFoundException **

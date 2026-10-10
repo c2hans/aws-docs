@@ -34,7 +34,7 @@ In the following list, the required parameters are described first.
 The location name of the custom location to be deleted.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^custom-[A-Za-z0-9\-]+|^arn:.*:location\/custom-\S+`
+Pattern: `^(custom-[A-Za-z0-9\-]+|arn:.*:location\/custom-\S+)$`
 Required: Yes
 
 ## Response Elements
@@ -61,6 +61,10 @@ HTTP Status Code: 400
 
  ** UnauthorizedException **
 The client failed authentication. Clients should not retry such requests.
+HTTP Status Code: 400
+
+ ** UnsupportedRegionException **
+The requested operation is not supported in the Region specified.
 HTTP Status Code: 400
 
 ## See Also

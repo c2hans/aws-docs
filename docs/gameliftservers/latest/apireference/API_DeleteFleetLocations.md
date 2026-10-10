@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** EC2, Anywhere, Container
 
-Removes locations from a multi-location fleet. When deleting a location, all game server process and all instances that are still active in the location are shut down.
+Removes locations from a multi-location fleet. When deleting a location, all game server processes and all instances that are still active in the location are shut down.
 
 To delete fleet locations, identify the fleet ID and provide a list of the locations to be deleted.
 
@@ -49,7 +49,7 @@ The list of fleet locations to delete. Specify locations in the form of an AWS R
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: Yes
 
 ## Response Syntax

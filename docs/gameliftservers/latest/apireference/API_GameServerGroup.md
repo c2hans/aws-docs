@@ -19,7 +19,7 @@ In the following list, the required parameters are described first.
 A generated unique ID for the Amazon EC2 Auto Scaling group that is associated with this game server group.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Pattern: `^[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*$`
 Required: No
 
  ** BalancingStrategy **   <a name="gameliftservers-Type-GameServerGroup-BalancingStrategy"></a>
@@ -40,18 +40,18 @@ Required: No
 A generated unique ID for the game server group.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]*`
+Pattern: `^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]*$`
 Required: No
 
  ** GameServerGroupName **   <a name="gameliftservers-Type-GameServerGroup-GameServerGroupName"></a>
 A developer-defined identifier for the game server group. The name is unique for each Region in each AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: No
 
  ** GameServerProtectionPolicy **   <a name="gameliftservers-Type-GameServerGroup-GameServerProtectionPolicy"></a>
-A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status.
+A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion. An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status.
 Type: String
 Valid Values: `NO_PROTECTION | FULL_PROTECTION`
 Required: No

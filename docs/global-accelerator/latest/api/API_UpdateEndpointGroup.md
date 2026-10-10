@@ -179,12 +179,12 @@ HTTP Status Code: 400
 The following is an example of adding endpoints to an endpoint group, and the response.
 
 ```
-aws globalaccelerator update-endpoint-group
-    --endpoint-group-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz/endpoint-group/ab88888example
-    --port-overrides ListenerPort=443,EndpointPort=1443
-    --endpoint-configurations
-      EndpointId=i-1234567890abcdef0,Weight=128
-      EndpointId=arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/app/ALBTesting/alb01234567890xyz,Weight=128
+aws globalaccelerator update-endpoint-group \
+    --endpoint-group-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz/endpoint-group/ab88888example \
+    --port-overrides ListenerPort=443,EndpointPort=1443 \
+    --endpoint-configurations \
+      EndpointId=i-1234567890abcdef0,Weight=128 \
+      EndpointId=arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/app/ALBTesting/alb01234567890xyz,Weight=128 \
       EndpointId=arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/net/NLBTesting/alb01234567890qrs,Weight=128
 ```
 

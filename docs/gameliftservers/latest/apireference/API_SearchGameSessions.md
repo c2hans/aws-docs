@@ -24,7 +24,7 @@ If successful, a `GameSession` object is returned for each game session that mat
 To set search and sort criteria, create a filter expression using the following game session attributes. For game session search examples, see the Examples section of this topic.
 +  **gameSessionId** -- An identifier for the game session that is unique across all regions. You must use the full ARN value.
 +  **gameSessionName** -- Name assigned to a game session. Game session names do not need to be unique to a game session.
-+  **gameSessionProperties** -- A set of key-value pairs that can store custom data in a game session. For example: `{"Key": "difficulty", "Value": "novice"}`. The filter expression must specify the [https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameProperty](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameProperty) -- a `Key` and a string `Value` to search for the game sessions.
++  **gameSessionProperties** -- A set of key-value pairs that can store custom data in a game session. For example: `{"Key": "difficulty", "Value": "novice"}`. The filter expression must specify the [GameProperty](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GameProperty.html) -- a `Key` and a string `Value` to search for the game sessions.
 
   For example, to search for the above key-value pair, specify the following search filter: `gameSessionProperties.difficulty = "novice"`. All game property values are searched as strings.
 
@@ -70,7 +70,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_SearchGameSessions_RequestSyntax) **   <a name="gameliftservers-SearchGameSessions-request-AliasId"></a>
 A unique identifier for the alias associated with the fleet to search for active game sessions. You can use either the alias ID or ARN value. Each request must reference either a fleet ID or alias ID, but not both.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: No
 
  ** [FilterExpression](#API_SearchGameSessions_RequestSyntax) **   <a name="gameliftservers-SearchGameSessions-request-FilterExpression"></a>
@@ -113,7 +114,7 @@ Required: No
 A fleet location to search for game sessions. You can specify a fleet's home Region or a remote location. Use the AWS Region code format, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_SearchGameSessions_RequestSyntax) **   <a name="gameliftservers-SearchGameSessions-request-NextToken"></a>
@@ -299,7 +300,7 @@ This example illustrates a search of a single fleet location. The requested flee
     "FleetId": "fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
     "Location": "ap-southeast-2",
     "FilterExpression": "maximumSessions>=20 AND hasAvailablePlayerSessions=true",
-    "SortExpression": "creationTimeMillis DESC"
+    "SortExpression": "creationTimeMillis DESC",
     "Limit": 2
 }
 
@@ -333,7 +334,7 @@ CLI syntax:
     },
     {
         "CreationTime": 1469498468.057,
-        "CurrentPlayerSessionCount": ,
+        "CurrentPlayerSessionCount": 5,
         "FleetId": "fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
         "GameProperties": [
             {"Key": "difficulty","Value": "easy"},
@@ -356,7 +357,7 @@ CLI syntax:
 ### Search game sessions by custom game properties
 <a name="API_SearchGameSessions_Example_3"></a>
 
-This example searches for game sessions based on game map and game mode information, which is stored as key-value pairs in the `GameProperties` of a `GameSession`. In this example, we want to find all game sessions where `gameMode` is `Ffa` (free-for-all), and `gameMap` is either `"Suzuka"` or `"Silverstone"`. We are sorting our results by `gameSessionProperties.difficulty` (with possible values of "novice", "easy", "normal", "hard", or "insane"). Note: `"Value` is evaluated as a string, so the sorted results will be listed by the alphabetic order of the difficulty values.
+This example searches for game sessions based on game map and game mode information, which is stored as key-value pairs in the `GameProperties` of a `GameSession`. In this example, we want to find all game sessions where `gameMode` is `Ffa` (free-for-all), and `gameMap` is either `"Suzuka"` or `"Silverstone"`. We are sorting our results by `gameSessionProperties.difficulty` (with possible values of "novice", "easy", "normal", "hard", or "insane"). Note: `Value` is evaluated as a string, so the sorted results will be listed by the alphabetic order of the difficulty values.
 
 #### Sample Request
 <a name="API_SearchGameSessions_Example_3_Request"></a>
@@ -366,7 +367,7 @@ This example searches for game sessions based on game map and game mode informat
     "FleetId": "fleet-9999ffff-88ee-77dd-66cc-5555bbbb44aa",
     "Location": "us-west-2",
     "FilterExpression": "gameSessionProperties.gameMode = 'Ffa' AND gameSessionProperties.gameMap = 'Suzuka' OR gameSessionProperties.gameMap = 'Silverstone'",
-    "SortExpression": "gameSessionProperties.difficulty ASC"
+    "SortExpression": "gameSessionProperties.difficulty ASC",
     "Limit": 2
 }
 

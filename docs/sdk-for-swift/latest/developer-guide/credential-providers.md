@@ -159,7 +159,7 @@ To use this resolver to provide credentials to an AWS service, set the service c
 
 ```
 // Get an S3Client with which to access Amazon S3.
-let configuration = try await S3Client.S3ClientConfiguration(
+let configuration = try await S3Client.S3ClientConfig(
     awsCredentialIdentityResolver: identityResolver
 )
 let client = S3Client(config: configuration)

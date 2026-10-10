@@ -9,7 +9,7 @@ Retrieves the firewall rules that you have defined for the specified firewall ru
 
 A single call might return only a partial list of the rules. For information, see `MaxResults`.
 
-For rules that require asynchronous provisioning, the response includes `Status` (see ) and, on failure, `StatusMessage` with the reason.
+For rules that require asynchronous provisioning, the response includes `Status` (see [FirewallRule](API_route53resolver_FirewallRule.md)) and, on failure, `StatusMessage` with the reason.
 
 ## Request Syntax
 <a name="API_route53resolver_ListFirewallRules_RequestSyntax"></a>

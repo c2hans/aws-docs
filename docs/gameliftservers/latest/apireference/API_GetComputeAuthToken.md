@@ -43,7 +43,7 @@ In the following list, the required parameters are described first.
 The name of the compute resource you are requesting the authentication token for. For an Anywhere fleet compute, use the registered compute name. For an EC2 fleet instance, use the instance ID.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 Required: Yes
 
  ** [FleetId](#API_GetComputeAuthToken_RequestSyntax) **   <a name="gameliftservers-GetComputeAuthToken-request-FleetId"></a>
@@ -78,19 +78,19 @@ The following data is returned in JSON format by the service.
 A valid temporary authentication token.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-zA-Z0-9\-]+`
+Pattern: `^[a-zA-Z0-9\-]+$`
 
  ** [ComputeArn](#API_GetComputeAuthToken_ResponseSyntax) **   <a name="gameliftservers-GetComputeAuthToken-response-ComputeArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to an Amazon GameLift Servers compute resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::compute/compute-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$`
 
  ** [ComputeName](#API_GetComputeAuthToken_ResponseSyntax) **   <a name="gameliftservers-GetComputeAuthToken-response-ComputeName"></a>
 The name of the compute resource that the authentication token is issued to.
 Type: String
 Length Constraints: Maximum length of 1024.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$|^arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^([a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?|arn:.*:compute\/[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?)$`
 
  ** [ExpirationTimestamp](#API_GetComputeAuthToken_ResponseSyntax) **   <a name="gameliftservers-GetComputeAuthToken-response-ExpirationTimestamp"></a>
 The amount of time until the authentication token is no longer valid.

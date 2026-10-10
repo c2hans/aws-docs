@@ -18,7 +18,7 @@ When requesting attributes for multiple fleets, use the pagination parameters to
 If successful, a `FleetAttributes` object is returned for each fleet requested, unless the fleet identifier is not found.
 
 **Note**
-Some API operations limit the number of fleet IDs that allowed in one request. If a request exceeds this limit, the request fails and the error message contains the maximum allowed number.
+Some API operations limit the number of fleet IDs that are allowed in one request. If a request exceeds this limit, the request fails and the error message contains the maximum allowed number.
 
  **Learn more**
 

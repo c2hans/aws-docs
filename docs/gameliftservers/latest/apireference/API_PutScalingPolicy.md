@@ -79,7 +79,7 @@ Name of the Amazon GameLift Servers-defined metric that is used to trigger a sca
 +  **ActivatingGameSessions** -- Game sessions in the process of being created.
 +  **ActiveGameSessions** -- Game sessions that are currently running.
 +  **ActiveInstances** -- Fleet instances that are currently running at least one game session.
-+  **AvailableGameSessions** -- Additional game sessions that fleet could host simultaneously, given current capacity.
++  **AvailableGameSessions** -- Additional game sessions that a fleet could host simultaneously, given current capacity.
 +  **AvailablePlayerSessions** -- Empty player slots in currently active game sessions. This includes game sessions that are not currently accepting players. Reserved player slots are not included.
 +  **CurrentPlayerSessions** -- Player slots in active game sessions that are being used by a player or are reserved for a player.
 +  **IdleInstances** -- Active instances that are currently hosting zero game sessions.
@@ -245,7 +245,7 @@ Date: Thu, 06 Apr 2017 00:48:07 GMT
 ### Create a rule-based scaling policy
 <a name="API_PutScalingPolicy_Example_2"></a>
 
-This example illustrates using a rule-based policy to supplement a target-based policy. While the target policy does most of the work of ensuring that capacity tracks with player demand, a well-formed rule-based policy can handle special circumstances and edge cases. For example, the target-based approach becomes less efficient when fleets have just few instances. We can mitigate this issue by creating a rule that maintains at least one idle instance ready to host new game sessions. At low capacity, the two policies do not conflict; at higher capacity, the rule-based policy loses relevance.
+This example illustrates using a rule-based policy to supplement a target-based policy. While the target policy does most of the work of ensuring that capacity tracks with player demand, a well-formed rule-based policy can handle special circumstances and edge cases. For example, the target-based approach becomes less efficient when fleets have just a few instances. We can mitigate this issue by creating a rule that maintains at least one idle instance ready to host new game sessions. At low capacity, the two policies do not conflict; at higher capacity, the rule-based policy loses relevance.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 

@@ -35,6 +35,7 @@ Required: Yes
 
  ** [BudgetName](#API_budgets_DescribeBudgetActionsForBudget_RequestSyntax) **   <a name="awscostmanagement-budgets_DescribeBudgetActionsForBudget-request-BudgetName"></a>
  A string that represents the budget name. The ":" and "\\" characters, and the "/action/" substring, aren't allowed.
+Budget names are validated for content. Names that contain phone numbers, URLs, or email addresses combined with certain terms may be rejected.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `^(?![^:\\]*/action/|(?i).*<script>.*</script>.*)[^:\\]+$`

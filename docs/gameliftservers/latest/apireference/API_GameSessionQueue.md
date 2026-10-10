@@ -17,7 +17,7 @@ In the following list, the required parameters are described first.
  Information that is added to all events that are related to this game session queue.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `[\s\S]*`
+Pattern: `^[\s\S]*$`
 Required: No
 
  ** Destinations **   <a name="gameliftservers-Type-GameSessionQueue-Destinations"></a>
@@ -34,21 +34,21 @@ Required: No
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::gamesessionqueue/<queue name>`. In a Amazon GameLift Servers game session queue ARN, the resource ID matches the *Name* value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+`
+Pattern: `^arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+$`
 Required: No
 
  ** Name **   <a name="gameliftservers-Type-GameSessionQueue-Name"></a>
 A descriptive label that is associated with game session queue. Queue names must be unique within each Region.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
  ** NotificationTarget **   <a name="gameliftservers-Type-GameSessionQueue-NotificationTarget"></a>
 An SNS topic ARN that is set up to receive game session placement notifications. See [ Setting up notifications for game session placement](https://docs.aws.amazon.com/gamelift/latest/developerguide/queue-notification.html).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 300.
-Pattern: `[a-zA-Z0-9:_-]*(\.fifo)?`
+Pattern: `^[a-zA-Z0-9:_-]*(\.fifo)?$`
 Required: No
 
  ** PlayerLatencyPolicies **   <a name="gameliftservers-Type-GameSessionQueue-PlayerLatencyPolicies"></a>

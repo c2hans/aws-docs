@@ -44,7 +44,8 @@ In the following list, the required parameters are described first.
  ** [AliasId](#API_UpdateAlias_RequestSyntax) **   <a name="gameliftservers-UpdateAlias-request-AliasId"></a>
 A unique identifier for the alias that you want to update. You can use either the alias ID or ARN value.
 Type: String
-Pattern: `^alias-\S+|^arn:.*:alias\/alias-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(alias-\S+|arn:.*:alias\/alias-\S+)$`
 Required: Yes
 
  ** [Description](#API_UpdateAlias_RequestSyntax) **   <a name="gameliftservers-UpdateAlias-request-Description"></a>
@@ -57,7 +58,7 @@ Required: No
 A descriptive label that is associated with an alias. Alias names do not need to be unique.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** [RoutingStrategy](#API_UpdateAlias_RequestSyntax) **   <a name="gameliftservers-UpdateAlias-request-RoutingStrategy"></a>

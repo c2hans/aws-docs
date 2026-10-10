@@ -49,6 +49,10 @@ If the action is successful, the service sends back an HTTP 200 response with an
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+You do not have sufficient permissions to perform this action. Verify your IAM permissions and any resource policies.
+HTTP Status Code: 400
+
  ** InternalServerException **
 An internal error occurred while processing the request. Retry your request. If the problem persists, contact AWS Support.
 HTTP Status Code: 500

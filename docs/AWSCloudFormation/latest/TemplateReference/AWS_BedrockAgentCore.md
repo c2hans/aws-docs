@@ -14,6 +14,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::BedrockAgentCore::CapacityProvider](aws-resource-bedrockagentcore-capacityprovider.md)
 + [AWS::BedrockAgentCore::CodeInterpreterCustom](aws-resource-bedrockagentcore-codeinterpretercustom.md)
 + [AWS::BedrockAgentCore::ConfigurationBundle](aws-resource-bedrockagentcore-configurationbundle.md)
++ [AWS::BedrockAgentCore::ConsentPortal](aws-resource-bedrockagentcore-consentportal.md)
 + [AWS::BedrockAgentCore::Dataset](aws-resource-bedrockagentcore-dataset.md)
 + [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md)
 + [AWS::BedrockAgentCore::Gateway](aws-resource-bedrockagentcore-gateway.md)

@@ -41,7 +41,7 @@ In the following list, the required parameters are described first.
 An identifier for the game session that is unique across all regions for which to retrieve player connection details. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: Yes
 
  ** [PlayerIds](#API_GetPlayerConnectionDetails_RequestSyntax) **   <a name="gameliftservers-GetPlayerConnectionDetails-request-PlayerIds"></a>
@@ -84,7 +84,7 @@ The following data is returned in JSON format by the service.
 An identifier for the game session that is unique across all regions for which the player connection details were retrieved. The value is always a full ARN in the following format: For Home Region game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<ID string>`. For Remote Location game session - `arn:aws:gamelift:<home_region>::gamesession/<fleet ID>/<location>/<ID string>`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 
  ** [PlayerConnectionDetails](#API_GetPlayerConnectionDetails_ResponseSyntax) **   <a name="gameliftservers-GetPlayerConnectionDetails-response-PlayerConnectionDetails"></a>
 A collection of player connection detail objects, one for each requested player.

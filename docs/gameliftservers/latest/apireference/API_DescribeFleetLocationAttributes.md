@@ -63,7 +63,7 @@ A list of fleet locations to retrieve information for. Specify locations in the 
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** [NextToken](#API_DescribeFleetLocationAttributes_RequestSyntax) **   <a name="gameliftservers-DescribeFleetLocationAttributes-request-NextToken"></a>

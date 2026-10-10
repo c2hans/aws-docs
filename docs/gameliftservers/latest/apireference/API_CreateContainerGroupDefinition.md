@@ -32,7 +32,7 @@ Use this operation to make the following types of requests. You can specify valu
   +  `ContainerGroupType` (`GAME_SERVER`)
   +  `OperatingSystem`
   +  `TotalMemoryLimitMebibytes`
-  +  `TotalVcpuLimit`
+  + Either `TotalVcpuLimit` or a `Vcpu` value for the game server container
   + At least one `GameServerContainerDefinition`
     +  `ContainerName`
     +  `ImageUrl`
@@ -92,7 +92,8 @@ If successful, this request creates a `ContainerGroupDefinition` resource and as
             }
          ]
       },
-      "ServerSdkVersion": "{{string}}"
+      "ServerSdkVersion": "{{string}}",
+      "Vcpu": {{number}}
    },
    "Name": "{{string}}",
    "OperatingSystem": "{{string}}",
@@ -187,13 +188,6 @@ Type: Integer
 Valid Range: Minimum value of 4. Maximum value of 1024000.
 Required: Yes
 
- ** [TotalVcpuLimit](#API_CreateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-CreateContainerGroupDefinition-request-TotalVcpuLimit"></a>
-The maximum amount of vCPU units to allocate to the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share this memory. If you specify vCPU limits for individual containers, the total value must be equal to or greater than the sum of the CPU limits for all containers in the group.
-Default value: 1
-Type: Double
-Valid Range: Minimum value of 0.125. Maximum value of 10.
-Required: Yes
-
  ** [ContainerGroupType](#API_CreateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-CreateContainerGroupDefinition-request-ContainerGroupType"></a>
 The type of container group being defined. Container group type determines how Amazon GameLift Servers deploys the container group on each fleet instance.
 Default value: `GAME_SERVER`
@@ -213,9 +207,17 @@ Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** [Tags](#API_CreateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-CreateContainerGroupDefinition-request-Tags"></a>
-A list of labels to assign to the container group definition resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
+A list of labels to assign to the container group definition resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
+Required: No
+
+ ** [TotalVcpuLimit](#API_CreateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-CreateContainerGroupDefinition-request-TotalVcpuLimit"></a>
+The maximum amount of vCPU units to allocate to the container group (1 vCPU is equal to 1024 CPU units). All containers in the group share these resources. If you set vCPU reservations for individual containers, the total value must be equal to or greater than the sum of the `Vcpu` values for all containers in the group.
+This property is required for a per-instance container group.
+For a game server container group, Amazon GameLift Servers requires either a total vCPU limit or a `Vcpu` value for the game server container. If you set a total vCPU limit for a game server container group, Amazon GameLift Servers uses this value to calculate how many game server container groups fit on an instance. If you don't set a total vCPU limit, the group's containers can use up to the instance's available vCPU, and Amazon GameLift Servers uses the sum of the containers' `Vcpu` values to calculate how many game server container groups fit on an instance.
+Type: Double
+Valid Range: Minimum value of 0.125. Maximum value of 10.
 Required: No
 
  ** [VersionDescription](#API_CreateContainerGroupDefinition_RequestSyntax) **   <a name="gameliftservers-CreateContainerGroupDefinition-request-VersionDescription"></a>
@@ -268,7 +270,8 @@ Required: No
             ]
          },
          "ResolvedImageDigest": "string",
-         "ServerSdkVersion": "string"
+         "ServerSdkVersion": "string",
+         "Vcpu": number
       },
       "Name": "string",
       "OperatingSystem": "string",
@@ -385,6 +388,7 @@ This example creates a game server container group definition with a game server
 + It defines a container port range, which is required for containers that run game server processes.
 + The image URI points to an ECR private repo.
 + It doesn't need a health check configuration. Amazon GameLift Servers handles the health checks for a game server container.
++ It doesn't set a total vCPU limit for the container group. To let the group's containers use up to the instance's available vCPU, it sets a vCPU reservation for the game server container instead.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 
@@ -400,6 +404,7 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
       "ContainerName": "MyAdventureGameServer",
       "ImageUri": "111122223333.dkr.ecr.us-west-2.amazonaws.com/MyAdventureGameContainerImage",
       "ServerSdkVersion": 5.2.0,
+      "Vcpu": 1,
       "PortConfiguration": {
         "ContainerPortRanges": [
           {
@@ -437,14 +442,14 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
           ]
         },
         "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-        "ServerSdkVersion": "5.2.0"
+        "ServerSdkVersion": "5.2.0",
+        "Vcpu": 1
       }
     ],
     "Name": "MyAdventureGameContainerGroup",
     "OperatingSystem": "AMAZON_LINUX_2023",
     "Status": "COPYING",
     "TotalMemoryLimitMebibytes": 1024,
-    "TotalVcpuLimit": 1,
     "VersionNumber": "1"
   }
 }
@@ -453,7 +458,7 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
 ### Create a game server container with support containers
 <a name="API_CreateContainerGroupDefinition_Example_2"></a>
 
-This example creates a game server container group definition with a game server container definition and one support container The request includes the minimal parameter settings and uses the default values for all other parameters.
+This example creates a game server container group definition with a game server container definition and one support container. The request includes the minimal parameter settings and uses the default values for all other parameters.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 
@@ -485,7 +490,8 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
       "ContainerName": "MyAdventureGameDependencies",
       "ImageUri": "111122223333.dkr.ecr.us-west-2.amazonaws.com/MyAdventureGameContainerImage"
     }
-  ]
+  ],
+  "TotalVcpuLimit": 1
 }
 ```
 
@@ -512,7 +518,8 @@ HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.
           ]
         },
         "ResolvedImageDigest": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-        "ServerSdkVersion": "5.2.0"
+        "ServerSdkVersion": "5.2.0",
+        "Vcpu": 1
       }
     ],
     "Name": "MyAdventureGameContainerGroup",

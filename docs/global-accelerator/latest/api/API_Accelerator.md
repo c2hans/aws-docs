@@ -23,7 +23,7 @@ Required: No
 
  ** DnsName **   <a name="globalaccelerator-Type-Accelerator-DnsName"></a>
 The Domain Name System (DNS) name that Global Accelerator creates that points to an accelerator's static IPv4 addresses.
-The naming convention for the DNS name for an accelerator is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com.
+The naming convention for the DNS name for an accelerator is the following: A lowercase letter a, followed by a 16-character random hexadecimal string, followed by .awsglobalaccelerator.com. For example: a1234567890abcdef.awsglobalaccelerator.com.
 If you have a dual-stack accelerator, you also have a second DNS name, `DualStackDnsName`, that points to both the A record and the AAAA record for all four static addresses for the accelerator: two IPv4 addresses and two IPv6 addresses.
 For more information about the default DNS name, see [ Support for DNS addressing in Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/dns-addressing-custom-domains.dns-addressing.html) in the * AWS Global Accelerator Developer Guide*.
 Type: String
@@ -32,7 +32,7 @@ Required: No
 
  ** DualStackDnsName **   <a name="globalaccelerator-Type-Accelerator-DualStackDnsName"></a>
 The Domain Name System (DNS) name that Global Accelerator creates that points to a dual-stack accelerator's four static IP addresses: two IPv4 addresses and two IPv6 addresses.
-The naming convention for the dual-stack DNS name is the following: A lowercase letter a, followed by a 16-bit random hex string, followed by .dualstack.awsglobalaccelerator.com. For example: a1234567890abcdef.dualstack.awsglobalaccelerator.com.
+The naming convention for the dual-stack DNS name is the following: A lowercase letter a, followed by a 16-character random hexadecimal string, followed by .dualstack.awsglobalaccelerator.com. For example: a1234567890abcdef.dualstack.awsglobalaccelerator.com.
 Note: Global Accelerator also assigns a default DNS name, `DnsName`, to your accelerator that points just to the static IPv4 addresses.
 For more information, see [ Support for DNS addressing in Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/about-accelerators.html#about-accelerators.dns-addressing) in the * AWS Global Accelerator Developer Guide*.
 Type: String

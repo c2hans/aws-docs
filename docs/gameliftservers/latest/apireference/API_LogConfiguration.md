@@ -26,7 +26,7 @@ Required: No
 If log destination is `CLOUDWATCH`, logs are sent to the specified log group in Amazon CloudWatch.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
-Pattern: `[a-zA-Z0-9:/\-\*]+`
+Pattern: `^[a-zA-Z0-9:/\-\*]+$`
 Required: No
 
  ** S3BucketName **   <a name="gameliftservers-Type-LogConfiguration-S3BucketName"></a>

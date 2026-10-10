@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 Updates information about a registered game server to help Amazon GameLift Servers FleetIQ track game server availability. This operation is called by a game server process that is running on an instance in a game server group.
 
 Use this operation to update the following types of game server information. You can make all three types of updates in the same request:
-+ To update the game server's utilization status from `AVAILABLE` (when the game server is available to be claimed) to `UTILIZED` (when the game server is currently hosting games). Identify the game server and game server group and specify the new utilization status. You can't change the status from to `UTILIZED` to `AVAILABLE` .
++ To update the game server's utilization status from `AVAILABLE` (when the game server is available to be claimed) to `UTILIZED` (when the game server is currently hosting games). Identify the game server and game server group and specify the new utilization status. You can't change the status from `UTILIZED` to `AVAILABLE` .
 + To report health status, identify the game server and game server group and set health check to `HEALTHY`. If a game server does not report health status for a certain length of time, the game server is no longer considered healthy. As a result, it will be eventually deregistered from the game server group to avoid affecting utilization metrics. The best practice is to report health every 60 seconds.
 + To change game server metadata, provide updated game server data.
 
@@ -47,21 +47,21 @@ In the following list, the required parameters are described first.
 A unique identifier for the game server group where the game server is running.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [GameServerId](#API_UpdateGameServer_RequestSyntax) **   <a name="gameliftservers-UpdateGameServer-request-GameServerId"></a>
 A custom string that uniquely identifies the game server to update.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: Yes
 
  ** [GameServerData](#API_UpdateGameServer_RequestSyntax) **   <a name="gameliftservers-UpdateGameServer-request-GameServerData"></a>
 A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** [HealthCheck](#API_UpdateGameServer_RequestSyntax) **   <a name="gameliftservers-UpdateGameServer-request-HealthCheck"></a>
@@ -71,7 +71,7 @@ Valid Values: `HEALTHY`
 Required: No
 
  ** [UtilizationStatus](#API_UpdateGameServer_RequestSyntax) **   <a name="gameliftservers-UpdateGameServer-request-UtilizationStatus"></a>
-Indicates if the game server is available or is currently hosting gameplay. You can update a game server status from `AVAILABLE` to `UTILIZED`, but you can't change a the status from `UTILIZED` to `AVAILABLE`.
+Indicates if the game server is available or is currently hosting gameplay. You can update a game server status from `AVAILABLE` to `UTILIZED`, but you can't change the status from `UTILIZED` to `AVAILABLE`.
 Type: String
 Valid Values: `AVAILABLE | UTILIZED`
 Required: No

@@ -150,7 +150,7 @@ The IP address ranges and port settings that allow inbound traffic to access gam
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceType`  <a name="cfn-gamelift-containerfleet-instancetype"></a>
-The Amazon EC2 instance type to use for all instances in the fleet. Instance type determines the computing resources and processing power that's available to host your game servers. This includes including CPU, memory, storage, and networking capacity. You can't update this fleet property.
+The Amazon EC2 instance type to use for all instances in the fleet. Instance type determines the computing resources and processing power that's available to host your game servers. This includes CPU, memory, storage, and networking capacity. You can't update this fleet property.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -199,7 +199,7 @@ The name of the fleet's per-instance container group definition.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PlayerGatewayMode`  <a name="cfn-gamelift-containerfleet-playergatewaymode"></a>
-Configures player gateway for your fleet. Player gateway provides benefits such as DDoS protection by rate limiting and validating traﬃc before it reaches game servers, hiding game server IP addresses from players, and providing updated endpoints when relay endpoints become unhealthy.
+Configures player gateway for your fleet. Player gateway provides benefits such as DDoS protection by rate limiting and validating traffic before it reaches game servers, hiding game server IP addresses from players, and providing updated endpoints when relay endpoints become unhealthy.
 **How it works:** When enabled, game clients connect to relay endpoints instead of to your game servers. Player gateway validates player gateway tokens and routes traffic to the appropriate game server. Your game backend calls [GetPlayerConnectionDetails](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetPlayerConnectionDetails.html) to retrieve relay endpoints and player gateway tokens for your game clients. To learn more about this topic, see [DDoS protection with Amazon GameLift Servers player gateway](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ddos-protection-intro.html).
 Possible values include:
 + `DISABLED` (default) -- Game clients connect to the game server endpoint. Use this when you do not intend to integrate your game with player gateway.
@@ -218,7 +218,7 @@ Rule that controls how a fleet is scaled. Scaling policies are uniquely identifi
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-gamelift-containerfleet-tags"></a>
-A list of labels to assign to the new fleet resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+A list of labels to assign to the new fleet resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-gamelift-containerfleet-tag.md)
 *Maximum*: `200`
@@ -249,7 +249,7 @@ A unique identifier for the container fleet to retrieve.
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to the fleet's game server container group. The ARN value also identifies the specific container group definition version in use.
 
 `MaximumGameServerContainerGroupsPerInstance`  <a name="MaximumGameServerContainerGroupsPerInstance-fn::getatt"></a>
-The calculated maximum number of game server container group that can be deployed on each fleet instance. The calculation depends on the resource needs of the container group and the CPU and memory resources of the fleet's instance type.
+The calculated maximum number of game server container groups that can be deployed on each fleet instance. The calculation depends on the resource needs of the container group and the CPU and memory resources of the fleet's instance type.
 
 `PerInstanceContainerGroupDefinitionArn`  <a name="PerInstanceContainerGroupDefinitionArn-fn::getatt"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to the fleet's per-instance container group. The ARN value also identifies the specific container group definition version in use.
@@ -261,5 +261,5 @@ The current status of the container fleet.
 + `CREATED` -- A new container fleet resource has been created. No fleet instances have been deployed.
 + `ACTIVATING` -- New container fleet instances are being deployed.
 + `ACTIVE` -- The container fleet has been deployed and is ready to host game sessions.
-+ `UPDATING` -- Updates to the container fleet is being updated. A deployment is in progress.
++ `UPDATING` -- The container fleet is being updated. A deployment is in progress.
 + `EXPIRED` -- The container fleet has been expired. The fleet is scaled down to zero instances and cannot host new game sessions.

@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AzureIdentity](#cfn-devopsagent-service-additionalservicedetails-azureidentity)" : {{RegisteredAzureIdentityDetails}},
   "[Dynatrace](#cfn-devopsagent-service-additionalservicedetails-dynatrace)" : {{RegisteredDynatraceDetails}},
+  "[GitHub](#cfn-devopsagent-service-additionalservicedetails-github)" : {{RegisteredGitHubServiceDetails}},
   "[GitLab](#cfn-devopsagent-service-additionalservicedetails-gitlab)" : {{RegisteredGitLabServiceDetails}},
   "[MCPServer](#cfn-devopsagent-service-additionalservicedetails-mcpserver)" : {{RegisteredMCPServerDetails}},
   "[MCPServerGrafana](#cfn-devopsagent-service-additionalservicedetails-mcpservergrafana)" : {{RegisteredMCPServerGrafanaDetails}},
@@ -40,6 +41,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     RegisteredAzureIdentityDetails}}
   [Dynatrace](#cfn-devopsagent-service-additionalservicedetails-dynatrace): {{
     RegisteredDynatraceDetails}}
+  [GitHub](#cfn-devopsagent-service-additionalservicedetails-github): {{
+    RegisteredGitHubServiceDetails}}
   [GitLab](#cfn-devopsagent-service-additionalservicedetails-gitlab): {{
     RegisteredGitLabServiceDetails}}
   [MCPServer](#cfn-devopsagent-service-additionalservicedetails-mcpserver): {{
@@ -71,6 +74,12 @@ Azure identity service details returned after registration.
 Dynatrace service details returned after registration.
 *Required*: No
 *Type*: [RegisteredDynatraceDetails](aws-properties-devopsagent-service-registereddynatracedetails.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`GitHub`  <a name="cfn-devopsagent-service-additionalservicedetails-github"></a>
+Property description not available.
+*Required*: No
+*Type*: [RegisteredGitHubServiceDetails](aws-properties-devopsagent-service-registeredgithubservicedetails.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GitLab`  <a name="cfn-devopsagent-service-additionalservicedetails-gitlab"></a>

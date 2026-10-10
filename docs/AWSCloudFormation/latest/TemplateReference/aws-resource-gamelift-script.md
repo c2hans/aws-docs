@@ -161,7 +161,6 @@ The following example creates a GameLift script named `MyRealtimeScript`. The zi
                                     "Action": [
                                         "s3:GetObject",
                                         "s3:GetObjectVersion",
-                                        "s3:GetObjectMetadata",
                                         "s3:*Object*"
                                     ],
                                     "Resource": [
@@ -221,7 +220,6 @@ Resources:
                 Action:
                   - "s3:GetObject"
                   - "s3:GetObjectVersion"
-                  - "s3:GetObjectMetadata"
                   - "s3:*Object*"
                 Resource:
                   - "*"

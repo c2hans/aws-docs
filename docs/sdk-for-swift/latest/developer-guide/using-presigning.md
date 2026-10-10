@@ -84,7 +84,7 @@ In this example, the `[AsyncHTTPClient](https://github.com/swift-server/async-ht
         _ = try await HTTPClient.shared.execute(request, timeout: .seconds(5*60))
 ```
 
-This creates a new `S3ClientConfiguration` struct with the value of `maxAttempts` set to 6, then creates a `[PutObjectInput](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/putobjectinput)` struct which is used to generate an URL that's presigned using the custom configuration. The presigned URL is a standard Foundation `URL` object.
+This creates a new `S3ClientConfig` struct with the value of `maxAttempts` set to 6, then creates a `[PutObjectInput](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/putobjectinput)` struct which is used to generate an URL that's presigned using the custom configuration. The presigned URL is a standard Foundation `URL` object.
 
 To use the `AsyncHTTPClient` package to send the data to Amazon S3, an `HTTPClientRequest` is created using the presigned URL as the destination URL. The request's method is set to `.PUT`, indicating that it's an upload request. Then the request body is set to the contents of `fileData`, which contains the `Data` to be sent to Amazon S3.
 

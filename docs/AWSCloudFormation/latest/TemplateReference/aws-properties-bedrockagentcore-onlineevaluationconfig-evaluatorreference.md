@@ -37,5 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
  The unique identifier of the evaluator. Can reference builtin evaluators (e.g., `Builtin.Helpfulness`) or custom evaluators.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(Builtin\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})$`
+*Pattern*: `^(Builtin\.[a-zA-Z0-9._-]+|ThirdParty\.[a-zA-Z0-9_-]+\.[a-zA-Z0-9_-]+|[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9]{10})$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

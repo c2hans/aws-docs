@@ -18,10 +18,10 @@ Use this operation to make the following types of requests.
   +  `PlacementID`
 + Request a placement and prioritize based on latency. Include these parameters:
   + Required parameters `GameSessionQueueName`, `MaximumPlayerSessionCount`, `PlacementID`.
-  +  `PlayerLatencies`. Include a set of latency values for destinations in the queue. When a request includes latency data, Amazon GameLift Servers automatically reorder the queue's locations priority list based on lowest available latency values. If a request includes latency data for multiple players, Amazon GameLift Servers calculates each location's average latency for all players and reorders to find the lowest latency across all players. To obtain accurate latency measurements, use Amazon GameLift Servers's UDP ping beacons. These endpoints allow you to measure actual UDP network latency between player devices and potential hosting locations, resulting in more accurate placement decisions than using ICMP pings. For more information on using UDP ping beacons to measure latency, refer to [UDP ping beacons](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-udp-ping-beacons.html) in the Amazon GameLift Servers Developer Guide.
+  +  `PlayerLatencies`. Include a set of latency values for destinations in the queue. When a request includes latency data, Amazon GameLift Servers automatically reorders the queue's locations priority list based on lowest available latency values. If a request includes latency data for multiple players, Amazon GameLift Servers calculates each location's average latency for all players and reorders to find the lowest latency across all players. To obtain accurate latency measurements, use Amazon GameLift Servers's UDP ping beacons. These endpoints allow you to measure actual UDP network latency between player devices and potential hosting locations, resulting in more accurate placement decisions than using ICMP pings. For more information on using UDP ping beacons to measure latency, refer to [UDP ping beacons](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-udp-ping-beacons.html) in the Amazon GameLift Servers Developer Guide.
   + Don't include `PriorityConfigurationOverride`.
   + Prioritize based on a custom list of locations. If you're using a queue that's configured to prioritize location first (see [PriorityConfiguration](https://docs.aws.amazon.com/gamelift/latest/apireference/API_PriorityConfiguration.html) for game session queues), you can optionally use the *PriorityConfigurationOverride* parameter to substitute a different location priority list for this placement request. Amazon GameLift Servers searches each location on the priority override list to find an available hosting resource for the new game session. Specify a fallback strategy to use in the event that Amazon GameLift Servers fails to place the game session in any of the locations on the override list.
-+ Request a placement and prioritized based on a custom list of locations.
++ Request a placement and prioritize based on a custom list of locations.
 + You can request new player sessions for a group of players. Include the *DesiredPlayerSessions* parameter and include at minimum a unique player ID for each. You can also include player-specific data to pass to the new game session.
 
  **Result**
@@ -84,7 +84,7 @@ In the following list, the required parameters are described first.
 Name of the queue to use to place the new game session. You can use either the queue name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-]+|^arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+`
+Pattern: `^([a-zA-Z0-9-]+|arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+)$`
 Required: Yes
 
  ** [MaximumPlayerSessionCount](#API_StartGameSessionPlacement_RequestSyntax) **   <a name="gameliftservers-StartGameSessionPlacement-request-MaximumPlayerSessionCount"></a>
@@ -97,7 +97,7 @@ Required: Yes
 A unique identifier to assign to the new game session placement. This value is developer-defined. The value must be unique across all Regions and cannot be reused.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 48.
-Pattern: `[a-zA-Z0-9-]+`
+Pattern: `^[a-zA-Z0-9-]+$`
 Required: Yes
 
  ** [DesiredPlayerSessions](#API_StartGameSessionPlacement_RequestSyntax) **   <a name="gameliftservers-StartGameSessionPlacement-request-DesiredPlayerSessions"></a>
@@ -276,7 +276,7 @@ Amazon GameLift Servers uses the priority configuration override to change how i
 
 1. Amazon GameLift Servers looks for the first location on the override list (`us-west-2`) in each destination in the queue, using the queue's destination priority order. In each fleet location, it searches for an available hosting resource. When one is found, the game session is placed and the request fulfilled.
 
-1. If no available resources are found in the first location, Amazon GameLift Servers looks at destinations for the next location on the override list. and so on. As soon as an available resource is found, the game session is placed and the search stops.
+1. If no available resources are found in the first location, Amazon GameLift Servers looks at destinations for the next location on the override list, and so on. As soon as an available resource is found, the game session is placed and the search stops.
 
 1. If Amazon GameLift Servers searches all locations on the override list and finds no available resources, the first placement pass has failed. Because this placement request specified no fallback strategy, Amazon GameLift Servers doesn't look at any additional queue locations. The placement request remains in the queue and is processed again in turn until a placement succeeds or until the queue's timeout limit is reached.
 

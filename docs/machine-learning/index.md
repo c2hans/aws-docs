@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/machine-learning/index.html
 title: 'Amazon Machine Learning Documentation'
 canonical_url: https://docs.aws.amazon.com/machine-learning/
 source: aws-documentation
-generated_on: 2026-10-08
+generated_on: 2026-10-09
 ---
 
 # Amazon Machine Learning Documentation
@@ -54,7 +54,6 @@ Regardless of your experience, Amazon provides services that you can use to crea
 
 - [Amazon Lookout for Equipment](/lookout-for-equipment/): Amazon Lookout for Equipment uses industrial data from your equipment to detect potential failures so you can take action, such as performing maintenance before a breakdown, to avoid unplanned downtime.
 - [Amazon Monitron](/monitron/): Amazon Monitron is an end-to-end system that detects abnormal behavior in industrial machinery enabling you to implement predictive maintenance and reduce unplanned downtime.
-- [AWS Panorama](/panorama/): Improve your operations with computer vision at the edge
 
 ## Infrastructure and frameworks
 

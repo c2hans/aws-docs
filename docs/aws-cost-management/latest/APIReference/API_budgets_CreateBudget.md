@@ -77,6 +77,11 @@ Similarly, only one set of filter and metric selections can be present in the sy
          "Or": [
             "Expression"
          ],
+         "ProductAttributes": {
+            "Key": "{{string}}",
+            "MatchOptions": [ "{{string}}" ],
+            "Values": [ "{{string}}" ]
+         },
          "Tags": {
             "Key": "{{string}}",
             "MatchOptions": [ "{{string}}" ],

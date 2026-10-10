@@ -162,7 +162,7 @@ aws globalaccelerator list-accelerators --region us-west-2
             "Status": "DEPLOYED",
             "CreatedTime": 1575585564.0,
             "LastModifiedTime": 1579809243.0
-        },
+        }
     ]
 }
 ```

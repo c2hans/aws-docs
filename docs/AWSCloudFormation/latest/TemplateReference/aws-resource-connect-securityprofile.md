@@ -74,7 +74,7 @@ Properties:
 The identifier of the hierarchy group that a security profile uses to restrict access to resources in Connect Customer.
 *Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9-]+$`
+*Pattern*: `^[a-zA-Z0-9-]*$`
 *Minimum*: `0`
 *Maximum*: `127`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

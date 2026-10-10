@@ -24,7 +24,7 @@ Required: No
  ** name **   <a name="guardduty-Type-OrganizationAdditionalConfigurationResult-name"></a>
 The name of the additional configuration that is configured for the member accounts within the organization. These values are applicable to only Runtime Monitoring protection plan.
 Type: String
-Valid Values: `EKS_ADDON_MANAGEMENT | ECS_FARGATE_AGENT_MANAGEMENT | EC2_AGENT_MANAGEMENT`
+Valid Values: `EKS_ADDON_MANAGEMENT | ECS_FARGATE_AGENT_MANAGEMENT | EC2_AGENT_MANAGEMENT | RDS_DATA_RISK`
 Required: No
 
 ## See Also

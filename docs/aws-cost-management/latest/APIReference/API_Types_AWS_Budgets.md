@@ -26,6 +26,7 @@ The following data types are supported by AWS Budgets:
 +  [IamActionDefinition](API_budgets_IamActionDefinition.md)
 +  [Notification](API_budgets_Notification.md)
 +  [NotificationWithSubscribers](API_budgets_NotificationWithSubscribers.md)
++  [ProductAttributeValues](API_budgets_ProductAttributeValues.md)
 +  [ResourceTag](API_budgets_ResourceTag.md)
 +  [ScpActionDefinition](API_budgets_ScpActionDefinition.md)
 +  [Spend](API_budgets_Spend.md)

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 An alternate list of prioritized locations for use with a game session queue. When this property is included in a [StartGameSessionPlacement](https://docs.aws.amazon.com/gamelift/latest/apireference/API_StartGameSessionPlacement.html) request, the alternate list overrides the queue's default location priorities, as defined in the queue's [PriorityConfiguration](gamelift/latest/apireference/API_PriorityConfiguration.html) setting (*LocationOrder*). The override is valid for an individual placement request only. Use this property only with queues that have a `PriorityConfiguration` setting that prioritizes `LOCATION` first.
 
 **Note**
-A priority configuration override list does not override a queue's FilterConfiguration setting, if the queue has one. Filter configurations are used to limit placements to a subset of the locations in a queue's destinations. If the override list includes a location that's not on in the `FilterConfiguration` allowed list, Amazon GameLift Servers won't attempt to place a game session there.
+A priority configuration override list does not override a queue's FilterConfiguration setting, if the queue has one. Filter configurations are used to limit placements to a subset of the locations in a queue's destinations. If the override list includes a location that's not in the `FilterConfiguration` allowed list, Amazon GameLift Servers won't attempt to place a game session there.
 
 ## Contents
 <a name="API_PriorityConfigurationOverride_Contents"></a>
@@ -21,7 +21,7 @@ A prioritized list of hosting locations. The list can include AWS Regions (such 
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: Yes
 
  ** PlacementFallbackStrategy **   <a name="gameliftservers-Type-PriorityConfigurationOverride-PlacementFallbackStrategy"></a>

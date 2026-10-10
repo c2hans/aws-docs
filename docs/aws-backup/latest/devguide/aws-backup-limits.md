@@ -163,7 +163,7 @@ Note quotas do not apply to on-demand restore jobs, but to restore jobs created 
 ## Logically air-gapped vault quotas
 <a name="lag-vault-quotas-table"></a>
 
-The following quotas for logically air-gapped vaults are currently not adjustable.
+The following quotas apply per source account and per copy destination Region. They are currently not adjustable.
 
 | Resource type | Maximum number of concurrent copies | Adjustable |
 | --- | --- | --- |
@@ -172,7 +172,7 @@ The following quotas for logically air-gapped vaults are currently not adjustabl
 | Aurora | 20 | No |
 | DocumentDB | 20 | No |
 | Neptune | 20 | No |
-| Storage Gateway | 5 | No |
+| Storage Gateway | 20 | No |
 | FSx | 5 | No |
 
 ## Related quotas

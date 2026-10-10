@@ -23,6 +23,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::RDS::DBShardGroup](aws-resource-rds-dbshardgroup.md)
 + [AWS::RDS::DBSnapshot](aws-resource-rds-dbsnapshot.md)
 + [AWS::RDS::DBSubnetGroup](aws-resource-rds-dbsubnetgroup.md)
++ [AWS::RDS::Deployment](aws-resource-rds-deployment.md)
 + [AWS::RDS::EventSubscription](aws-resource-rds-eventsubscription.md)
 + [AWS::RDS::GlobalCluster](aws-resource-rds-globalcluster.md)
 + [AWS::RDS::Integration](aws-resource-rds-integration.md)

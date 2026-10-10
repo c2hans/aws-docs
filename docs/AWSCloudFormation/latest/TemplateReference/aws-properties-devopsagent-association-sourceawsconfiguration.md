@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[AccountId](#cfn-devopsagent-association-sourceawsconfiguration-accountid)" : {{String}},
   "[AccountType](#cfn-devopsagent-association-sourceawsconfiguration-accounttype)" : {{String}},
+  "[AgentElevatedRoleArn](#cfn-devopsagent-association-sourceawsconfiguration-agentelevatedrolearn)" : {{String}},
   "[AssumableRoleArn](#cfn-devopsagent-association-sourceawsconfiguration-assumablerolearn)" : {{String}},
   "[Resources](#cfn-devopsagent-association-sourceawsconfiguration-resources)" : {{[ AWSResource, ... ]}},
   "[Tags](#cfn-devopsagent-association-sourceawsconfiguration-tags)" : {{[ KeyValuePair, ... ]}}
@@ -33,6 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AccountId](#cfn-devopsagent-association-sourceawsconfiguration-accountid): {{String}}
   [AccountType](#cfn-devopsagent-association-sourceawsconfiguration-accounttype): {{String}}
+  [AgentElevatedRoleArn](#cfn-devopsagent-association-sourceawsconfiguration-agentelevatedrolearn): {{String}}
   [AssumableRoleArn](#cfn-devopsagent-association-sourceawsconfiguration-assumablerolearn): {{String}}
   [Resources](#cfn-devopsagent-association-sourceawsconfiguration-resources): {{
     - AWSResource}}
@@ -56,6 +58,12 @@ The account type for AWS DevOps Agent monitoring.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `source`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AgentElevatedRoleArn`  <a name="cfn-devopsagent-association-sourceawsconfiguration-agentelevatedrolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AssumableRoleArn`  <a name="cfn-devopsagent-association-sourceawsconfiguration-assumablerolearn"></a>

@@ -17,7 +17,7 @@ In the following list, the required parameters are described first.
 IP address for connecting to the game session. When player gateway is enabled, this is a player gateway IP address. When player gateway is disabled, this is the game server IP address.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** Port **   <a name="gameliftservers-Type-PlayerConnectionEndpoint-Port"></a>

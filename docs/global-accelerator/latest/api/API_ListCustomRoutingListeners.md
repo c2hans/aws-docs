@@ -124,8 +124,7 @@ aws globalaccelerator list-custom-routing-listeners
                     "FromPort": 5000,
                     "ToPort": 10000
                 }
-            ],
-            "Protocol": "TCP",
+            ]
         }
     ]
 }

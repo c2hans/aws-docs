@@ -38,7 +38,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the fleet. You can use either the fleet ID or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
 ## Response Syntax

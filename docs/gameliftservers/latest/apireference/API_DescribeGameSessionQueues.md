@@ -44,7 +44,7 @@ Required: No
 A list of queue names to retrieve information for. You can use either the queue ID or ARN value. To request settings for all queues, leave this parameter empty.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-]+|^arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+`
+Pattern: `^([a-zA-Z0-9-]+|arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+)$`
 Required: No
 
  ** [NextToken](#API_DescribeGameSessionQueues_RequestSyntax) **   <a name="gameliftservers-DescribeGameSessionQueues-request-NextToken"></a>

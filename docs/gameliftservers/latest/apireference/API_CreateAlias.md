@@ -52,7 +52,7 @@ In the following list, the required parameters are described first.
 A descriptive label that is associated with an alias. Alias names do not need to be unique.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: Yes
 
  ** [RoutingStrategy](#API_CreateAlias_RequestSyntax) **   <a name="gameliftservers-CreateAlias-request-RoutingStrategy"></a>
@@ -67,7 +67,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** [Tags](#API_CreateAlias_RequestSyntax) **   <a name="gameliftservers-CreateAlias-request-Tags"></a>
-A list of labels to assign to the new alias resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
+A list of labels to assign to the new alias resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No

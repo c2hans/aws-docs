@@ -73,7 +73,7 @@ In the following list, the required parameters are described first.
 An identifier for the new game server group. This value is used to generate unique ARN identifiers for the Amazon EC2 Auto Scaling group and the Amazon GameLift Servers FleetIQ game server group. The name must be unique per Region per AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]+`
+Pattern: `^[a-zA-Z0-9-\.]+$`
 Required: Yes
 
  ** [InstanceDefinitions](#API_CreateGameServerGroup_RequestSyntax) **   <a name="gameliftservers-CreateGameServerGroup-request-InstanceDefinitions"></a>
@@ -122,7 +122,7 @@ Valid Values: `SPOT_ONLY | SPOT_PREFERRED | ON_DEMAND_ONLY`
 Required: No
 
  ** [GameServerProtectionPolicy](#API_CreateGameServerGroup_RequestSyntax) **   <a name="gameliftservers-CreateGameServerGroup-request-GameServerProtectionPolicy"></a>
-A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion (see ). An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status. This property is set to `NO_PROTECTION` by default.
+A flag that indicates whether instances in the game server group are protected from early termination. Unprotected instances that have active game servers running might be terminated during a scale-down event, causing players to be dropped from the game. Protected instances cannot be terminated while there are active game servers running except in the event of a forced game server group deletion. An exception to this is with Spot Instances, which can be terminated by AWS regardless of protection status. This property is set to `NO_PROTECTION` by default.
 Type: String
 Valid Values: `NO_PROTECTION | FULL_PROTECTION`
 Required: No
@@ -327,7 +327,7 @@ aws gamelift create-game-server-group \
     --min-size 1 \
     --max-size 200 \
     --launch-template {"LaunchTemplateName": MegaFrogServers} \
-    --instance-definitions '[{"IntanceType":"m5.2xlarge","WeightedCapacity":"1"},{"InstanceType":"m5.4xlarge","WeightedCapacity":"2"},{"InstanceType":"m5.24xlarge","WeightedCapacity":"12"}]'
+    --instance-definitions '[{"InstanceType":"m5.2xlarge","WeightedCapacity":"1"},{"InstanceType":"m5.4xlarge","WeightedCapacity":"2"},{"InstanceType":"m5.24xlarge","WeightedCapacity":"12"}]'
 ```
 
 #### Sample Response

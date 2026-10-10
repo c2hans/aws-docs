@@ -24,7 +24,8 @@ Required: No
  ** PlayerSessionId **   <a name="gameliftservers-Type-MatchedPlayerSession-PlayerSessionId"></a>
 A unique identifier for a player session. PlayerSessionId will only be populated for player sessions that are in ACTIVE or RESERVED status when the ticket is completed.
 Type: String
-Pattern: `^psess-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `^psess-\S+$`
 Required: No
 
 ## See Also

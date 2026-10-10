@@ -19,7 +19,6 @@ The following sections provide information about all retiring platform versions.
 
 **Topics**
 + [.NET Core on Linux](#platforms-retiring.dotnetlinux)
-+ [.NET on Windows Server](#platforms-retiring.net)
 + [Node.js](#platforms-retiring.nodejs)
 + [PHP](#platforms-retiring.PHP)
 + [Ruby](#platforms-retiring.ruby)
@@ -35,36 +34,6 @@ Elastic Beanstalk has scheduled the following .NET Core on Linux platform versio
 |  ** .NET 8 on AL2023 version 3.11.10** <br /> * 64bit Amazon Linux 2023 v3.11.10 running .NET 8 *  | .NET 8.0.31, supports 8.0.31 | nginx 1.30.5 | 2023.12.20260930 | 3.7.0 | 2027-03-31 |
 
 For information about current platform versions, see [.NET Core on Linux](platforms-supported.md#platforms-supported.dotnetlinux).
-
-## .NET on Windows Server
-<a name="platforms-retiring.net"></a>
-
-**Note**
-
-Elastic Beanstalk platform branches based on *Windows Server 2016* and *Windows Server Core 2016* will retire on **September 30, 2026**. Additionally, all Amazon Machine Images (AMIs) for these platform branches will become inaccessible on **January 15, 2027**. This is to ensure that customer Elastic Beanstalk environments are aligned with the most current support offered by AWS.
-Starting on September 30, 2026, retired platform branches will no longer be available for new environments on Elastic Beanstalk. While you can continue to operate existing environments running on retired platform branches, these branches will no longer receive security updates, platform updates, or bug fixes from Elastic Beanstalk, creating significant security and operational risks. After January 15, 2027, the default AMIs associated with these platform branches will be inaccessible, and any activity that attempts to launch new EC2 instances based on these AMIs will fail, including auto-scaling, instance replacement, and application or configuration deployments that launch new instances.
-We strongly recommend that you start planning your migration to a current and fully supported Windows Server platform, such as *Windows Server 2025 with IIS 10.0*, *Windows Server 2022 with IIS 10.0*, or *Windows Server 2019 with IIS 10.0*. For a list of currently supported platforms see [Elastic Beanstalk supported platforms](platforms-supported.md).
-If you cannot migrate to a fully supported platform, you can use a custom AMI with Windows Server 2016 as the base image. For detailed instructions, see [Preserving access to an AMI for a retired platform](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.customenv-env-copy.html) in the *AWS Elastic Beanstalk Developer Guide*. If you need temporary access to an AMI while you perform a migration, contact AWS Support.
-
-Elastic Beanstalk has scheduled the following .NET on Windows Server platform versions for retirement.
-
-### Configuration basics
-<a name="platforms-retiring.net.basics"></a>
-
-|  Platform Version  |  Solution Stack Name  |  Framework  |  Proxy Server  |  End Date  |
-| --- | --- | --- | --- | --- |
-|  ** Windows Server 2016 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server 2016 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 | 2026-09-30 |
-|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.6**  |  * 64bit Windows Server Core 2016 v2.23.6 running IIS 10.0 *  | .NET 10.0.12, supports 10.0.12, 9.0.20, 8.0.31<br />.NET Framework 4.8, supports 4.x, 2.0 | IIS 10.0 | 2026-09-30 |
-
-### More details
-<a name="platforms-retiring.net.details"></a>
-
-|  Platform Version  |  AMI version  |  AWS SDK for .NET  |  EC2Launch  |  SSM Agent  |  Web Deploy  |  AWS X-Ray  |
-| --- | --- | --- | --- | --- | --- | --- |
-|  ** Windows Server 2016 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
-|  ** Windows Server Core 2016 with IIS 10.0 version 2.23.6**  | 2026.09.17 | 3.7.1252.1 | 2.5.2 | 3.3.5226.0 | 4.0 | 3.7.0 |
-
-For information about current platform versions, see [.NET on Windows Server](platforms-supported.md#platforms-supported.net).
 
 ## Node.js
 <a name="platforms-retiring.nodejs"></a>

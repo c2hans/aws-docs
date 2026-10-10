@@ -115,6 +115,7 @@ The following data types are supported:
 +  [TargetDomainSummary](API_TargetDomainSummary.md)
 +  [Task](API_Task.md)
 +  [TaskSummary](API_TaskSummary.md)
++  [TestScope](API_TestScope.md)
 +  [Threat](API_Threat.md)
 +  [ThreatAnchorShape](API_ThreatAnchorShape.md)
 +  [ThreatEvidenceShape](API_ThreatEvidenceShape.md)

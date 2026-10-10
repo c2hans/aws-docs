@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
 Retrieves a collection of fleet resources in an AWS Region. You can filter the result set to find only those fleets that are deployed with a specific build or script. For fleets that have multiple locations, this operation retrieves fleets based on their home Region only.
 
-You can use operation in the following ways:
+You can use this operation in the following ways:
 + To get a list of all fleets in a Region, don't provide a build or script identifier.
 + To get a list of all fleets where a specific game build is deployed, provide the build ID.
 + To get a list of all Amazon GameLift Servers Realtime fleets with a specific configuration script, provide the script ID.
@@ -46,7 +46,8 @@ In the following list, the required parameters are described first.
  ** [BuildId](#API_ListFleets_RequestSyntax) **   <a name="gameliftservers-ListFleets-request-BuildId"></a>
 A unique identifier for the build to request fleets for. Use this parameter to return only fleets using a specified build. Use either the build ID or ARN value.
 Type: String
-Pattern: `^build-\S+|^arn:.*:build\/build-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(build-\S+|arn:.*:build\/build-\S+)$`
 Required: No
 
  ** [Limit](#API_ListFleets_RequestSyntax) **   <a name="gameliftservers-ListFleets-request-Limit"></a>
@@ -64,7 +65,8 @@ Required: No
  ** [ScriptId](#API_ListFleets_RequestSyntax) **   <a name="gameliftservers-ListFleets-request-ScriptId"></a>
 A unique identifier for the Realtime script to request fleets for. Use this parameter to return only fleets using a specified script. Use either the script ID or ARN value.
 Type: String
-Pattern: `^script-\S+|^arn:.*:script\/script-\S+`
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `^(script-\S+|arn:.*:script\/script-\S+)$`
 Required: No
 
 ## Response Syntax
@@ -89,7 +91,7 @@ A set of fleet IDs that match the list request.
 Type: Array of strings
 Array Members: Minimum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 
  ** [NextToken](#API_ListFleets_ResponseSyntax) **   <a name="gameliftservers-ListFleets-response-NextToken"></a>
 A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.

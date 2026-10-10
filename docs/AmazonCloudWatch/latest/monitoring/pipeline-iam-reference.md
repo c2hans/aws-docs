@@ -19,7 +19,7 @@ The following table helps you identify which IAM sections apply to your use case
 | [CloudWatch Metrics (OTel)](data-sources.md#data-sources-metrics-otel) | AWS services emit metrics through OTLP | cloudwatch\_metrics | [Pipeline rule permissions for CloudWatch Metrics sources](#pipeline-rule-permissions-metrics) |
 
 **Note**
-S3-based sources (`s3`) require a resource policy after pipeline creation. CloudWatch Logs sources (`cloudwatch_logs`) do not.
+S3-based and third-party API sources require a resource policy for their direct CloudWatch Logs destination. For CloudWatch Logs sources, the `@original` destination does not require a resource policy. Named conditional and templatized destinations use the pipeline source role. For more information, see [Permissions for routed destinations](#routed-destination-permissions).
 
 ## API caller permissions
 <a name="api-caller-permissions"></a>
@@ -64,6 +64,7 @@ Replace {{service-principal}} with the value from the following table based on y
 
 **Note**
 The `Condition` block is recommended but optional. Without it, the role can be passed to any service.
+For third-party pipelines that use a lookup processor or conditional routing, also allow `logs.amazonaws.com` in `iam:PassedToService`.
 
 ### Pipeline rule permissions (CloudWatch Logs sources only)
 <a name="pipeline-rule-permissions"></a>
@@ -586,41 +587,80 @@ Because this uses the `cloudwatch_logs` source type, the caller also needs `logs
 ## Resource policies
 <a name="resource-policies"></a>
 
-CloudWatch Logs resource policies are required for S3-based sources and Secrets Manager-based sources (third-party integrations). Resource policies are **not** required for CloudWatch Logs sources (custom data or vended logs).
+CloudWatch Logs resource policies are required for the direct CloudWatch Logs destination of an S3-based or third-party API pipeline. The direct destination is the single sink, or the named default route when conditional routing is configured.
 
-After calling `CreateTelemetryPipeline`, you receive a pipeline ARN. You must then call `[logs:PutResourcePolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutResourcePolicy.html)` to allow the CloudWatch pipelines service principal to write to the configured log group.
+For a CloudWatch Logs source, the `@original` destination does not require a resource policy. Named conditional and templatized destinations use the pipeline source role instead of the CloudWatch pipelines service principal. For more information, see [Permissions for routed destinations](#routed-destination-permissions).
+
+After calling `CreateTelemetryPipeline`, you receive a pipeline ARN. You must then call `[logs:PutResourcePolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutResourcePolicy.html)` to allow the CloudWatch pipelines service principal to write to the direct destination log group. The principal that creates the policy needs `logs:PutResourcePolicy`. To inspect or update an existing policy, the principal also needs `logs:DescribeResourcePolicies`.
+
+Use a resource-scoped policy for the destination log group. Resource-scoped policies do not count toward the quota of 10 account-level resource policies per account per Region. The destination log group must exist before you create its resource-scoped policy.
 
 **Timing constraint**
 You have less than 5 minutes after receiving the pipeline ARN to create this resource policy. If the pipeline becomes active before the policy is in place, data will be dropped.
 
-**Example logs:PutResourcePolicy request**
+**Example Resource policy for a direct destination**
 
 ```
 {
-    "policyName": "resourceArn=arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*",
-    "policyDocument": {
-        "Version": "2012-10-17",
-        "Statement": [
-            {
-                "Effect": "Allow",
-                "Principal": {
-                    "Service": "telemetry-pipelines.observabilityadmin.amazonaws.com"
-                },
-                "Action": [
-                    "logs:CreateLogStream",
-                    "logs:PutLogEvents"
-                ],
-                "Resource": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*",
-                "Condition": {
-                    "StringEquals": {
-                        "aws:SourceArn": "arn:aws:observabilityadmin:{{us-east-1}}:{{111122223333}}:telemetry-pipeline/{{your-pipeline-id}}"
-                    }
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "telemetry-pipelines.observabilityadmin.amazonaws.com"
+            },
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceArn": "arn:aws:observabilityadmin:{{us-east-1}}:{{111122223333}}:telemetry-pipeline/{{your-pipeline-id}}"
                 }
             }
-        ]
-    }
+        }
+    ]
 }
 ```
+
+## Permissions for routed destinations
+<a name="routed-destination-permissions"></a>
+
+Additional conditional and templatized destinations are authorized by identity-based permissions on the IAM role in the pipeline source configuration, not by an additional CloudWatch Logs resource policy.
+
+The pipeline source role must allow `logs:CreateLogGroup` for log groups that the pipeline creates automatically. It must also allow `logs:CreateLogStream` and `logs:PutLogEvents` for every named routed destination. A resource policy does not grant `logs:CreateLogGroup`.
+
+**Example Permission policy for routed destinations**
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "CreateRoutedLogGroups",
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "*"
+        },
+        {
+            "Sid": "WriteRoutedLogEvents",
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "arn:aws:logs:{{your-region}}:{{your-account-id}}:log-group:{{your-routed-log-group-prefix}}*:*"
+        }
+    ]
+}
+```
+
+Scope the write statement to the exact destination log groups or the narrowest prefix that contains them. Include `logs:CreateLogGroup` only when the pipeline must create conditional or templatized destination log groups.
+
+The role trust policy must allow each service that assumes the role:
++ For S3 and third-party API sources, allow `telemetry-pipelines.observabilityadmin.amazonaws.com`. When the pipeline uses conditional routing, also allow `logs.amazonaws.com`.
++ For CloudWatch Logs sources, use `logs.amazonaws.com`.
 
 ## Managing resource policies
 <a name="managing-resource-policies"></a>
@@ -631,7 +671,8 @@ Use the AWS CLI to create or update CloudWatch Logs resource policies for CloudW
 
 ```
 aws logs describe-resource-policies \
-    --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*
+    --policy-scope RESOURCE \
+    --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}
 ```
 
 **To create a new policy**
@@ -639,19 +680,20 @@ aws logs describe-resource-policies \
 ```
 aws logs put-resource-policy \
     --region {{us-east-1}} \
-    --policy-name "resourceArn=arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*" \
+    --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}} \
     --policy-document file://policy.json
 ```
 
 **To merge with an existing policy**
 
-If a resource policy already exists, add the new statement to the existing `Statement` array in the policy document, then call `put-resource-policy` again with the merged file.
+Each log group can have one resource-scoped policy. If a policy already exists, add the new statement to the existing `Statement` array, then call `put-resource-policy` with the merged file and the current revision ID.
 
 1. Retrieve the existing policy:
 
    ```
    aws logs describe-resource-policies \
-       --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*
+       --policy-scope RESOURCE \
+       --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}
    ```
 
 1. Add the new statement to the existing `Statement` array:
@@ -695,7 +737,8 @@ If a resource policy already exists, add the new statement to the existing `Stat
    ```
    aws logs put-resource-policy \
        --region {{us-east-1}} \
-       --policy-name "resourceArn=arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*" \
+       --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}} \
+       --expected-revision-id {{your-revision-id}} \
        --policy-document file://existing-policy.json
    ```
 
@@ -703,7 +746,8 @@ Confirm the policy was created or updated successfully:
 
 ```
 aws logs describe-resource-policies \
-    --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}:*
+    --policy-scope RESOURCE \
+    --resource-arn arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:{{your-log-group-name}}
 ```
 
 Replace the following values in the policy:
@@ -711,6 +755,7 @@ Replace the following values in the policy:
 + The 12-digit AWS account ID (shown as `111122223333`) – Replace with your own account ID
 + {{your-log-group-name}} – Your CloudWatch Logs log group name
 + {{your-pipeline-id}} – Your telemetry pipeline ID (returned by `CreateTelemetryPipeline`)
++ {{your-revision-id}} – The revision ID returned by `describe-resource-policies` for an existing resource-scoped policy
 
 ## Pipeline condition keys
 <a name="pipeline-condition-keys"></a>

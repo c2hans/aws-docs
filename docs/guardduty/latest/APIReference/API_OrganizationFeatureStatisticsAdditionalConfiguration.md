@@ -18,7 +18,7 @@ Required: No
  ** name **   <a name="guardduty-Type-OrganizationFeatureStatisticsAdditionalConfiguration-name"></a>
 Name of the additional configuration within a feature.
 Type: String
-Valid Values: `EKS_ADDON_MANAGEMENT | ECS_FARGATE_AGENT_MANAGEMENT | EC2_AGENT_MANAGEMENT`
+Valid Values: `EKS_ADDON_MANAGEMENT | ECS_FARGATE_AGENT_MANAGEMENT | EC2_AGENT_MANAGEMENT | RDS_DATA_RISK`
 Required: No
 
 ## See Also

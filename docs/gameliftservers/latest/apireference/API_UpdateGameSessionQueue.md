@@ -57,14 +57,14 @@ In the following list, the required parameters are described first.
 A descriptive label that is associated with game session queue. Queue names must be unique within each Region. You can use either the queue ID or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-]+|^arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+`
+Pattern: `^([a-zA-Z0-9-]+|arn:.*:gamesessionqueue\/[a-zA-Z0-9-]+)$`
 Required: Yes
 
  ** [CustomEventData](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-CustomEventData"></a>
 Information to be added to all events that are related to this game session queue.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
-Pattern: `[\s\S]*`
+Pattern: `^[\s\S]*$`
 Required: No
 
  ** [Destinations](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-Destinations"></a>
@@ -81,7 +81,7 @@ Required: No
 An SNS topic ARN that is set up to receive game session placement notifications. See [ Setting up notifications for game session placement](https://docs.aws.amazon.com/gamelift/latest/developerguide/queue-notification.html).
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 300.
-Pattern: `[a-zA-Z0-9:_-]*(\.fifo)?`
+Pattern: `^[a-zA-Z0-9:_-]*(\.fifo)?$`
 Required: No
 
  ** [PlayerLatencyPolicies](#API_UpdateGameSessionQueue_RequestSyntax) **   <a name="gameliftservers-UpdateGameSessionQueue-request-PlayerLatencyPolicies"></a>

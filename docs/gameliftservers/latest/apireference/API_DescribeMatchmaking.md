@@ -42,7 +42,7 @@ In the following list, the required parameters are described first.
 A unique identifier for a matchmaking ticket. You can include up to 10 ID values.
 Type: Array of strings
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: Yes
 
 ## Response Syntax

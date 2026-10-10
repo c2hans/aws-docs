@@ -18,13 +18,13 @@ In the following list, the required parameters are described first.
  ** BuildArn **   <a name="gameliftservers-Type-Build-BuildArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers build resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::build/build-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`. In a GameLift build ARN, the resource ID matches the *BuildId* value.
 Type: String
-Pattern: `^arn:.*:build\/build-\S+`
+Pattern: `^arn:.*:build\/build-\S+$`
 Required: No
 
  ** BuildId **   <a name="gameliftservers-Type-Build-BuildId"></a>
 A unique identifier for the build.
 Type: String
-Pattern: `^build-\S+`
+Pattern: `^build-\S+$`
 Required: No
 
  ** CreationTime **   <a name="gameliftservers-Type-Build-CreationTime"></a>

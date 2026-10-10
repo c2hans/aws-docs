@@ -9,7 +9,7 @@ Custom prioritization settings to use with a game session queue. Prioritization 
 
 By default, a queue makes game session placements based on the following criteria:
 + When a game session request does not include player latency data, Amazon GameLift Servers places game sessions based on the following priorities: (1) the queue's default destination order, and (2) for multi-location fleets, an alphabetic list of locations.
-+ When a game session request includes player latency data, Amazon GameLift Servers re-orders the queue's destinations to make placements where the average player latency is lowest. It reorders based the following priorities: (1) the lowest average latency across all players, (2) the lowest hosting cost, (3) the queue's default destination order, and (4) for multi-location fleets, an alphabetic list of locations.
++ When a game session request includes player latency data, Amazon GameLift Servers re-orders the queue's destinations to make placements where the average player latency is lowest. It reorders based on the following priorities: (1) the lowest average latency across all players, (2) the lowest hosting cost, (3) the queue's default destination order, and (4) for multi-location fleets, an alphabetic list of locations.
 
 ## Contents
 <a name="API_PriorityConfiguration_Contents"></a>
@@ -22,7 +22,7 @@ The prioritization order to use for fleet locations, when the `PriorityOrder` pr
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** PriorityOrder **   <a name="gameliftservers-Type-PriorityConfiguration-PriorityOrder"></a>

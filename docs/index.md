@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-10-08
+generated_on: 2026-10-09
 ---
 
 # Welcome to AWS Documentation
@@ -331,7 +331,6 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Amazon Monitron](/Monitron/?icmpid=docs_homepage_ml): Reduce unplanned equipment downtime with predictive maintenance and ML
 - [Amazon Nova](/nova/?icmpid=docs_homepage_ml): A family of foundation models for Amazon Bedrock
 - [Amazon Nova Act](/nova-act/?icmpid=docs_homepage_ml): Build and manage fleets of reliable AI agents to automate UI workflows
-- [AWS Panorama](/panorama/?icmpid=docs_homepage_ml): Improve your operations with computer vision at the edge
 - [Amazon Personalize](/personalize/?icmpid=docs_homepage_ml): Build real-time recommendations into your applications
 - [Amazon Polly](/polly/?icmpid=docs_homepage_ml): Turn text into life-like speech
 - [Amazon Rekognition](/rekognition/?icmpid=docs_homepage_ml): Analyze image and video
@@ -391,7 +390,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 
 - [AWS Cloud Digital Interface SDK](/CDI-SDK/?icmpid=docs_homepage_mediasvcs): Migrate timing-critical uncompressed video workflows to the cloud
 - [AWS Deadline Cloud](/deadline-cloud/?icmpid=docs_homepage_mediasvcs): Simplified render management and scalable infrastructure for rendering projects
-- [AWS Elemental Inference](/medialive/?icmpid=docs_homepage_mediasvcs): Apply machine learning models to video
+- [AWS Elemental Inference](/elemental-inference/?icmpid=docs_homepage_mediasvcs): Apply machine learning models to video
 - [AWS Elemental MediaConnect](/mediaconnect/?icmpid=docs_homepage_mediasvcs): Reliable and secure live video transport
 - [AWS Elemental MediaConvert](/mediaconvert/?icmpid=docs_homepage_mediasvcs): Convert file-based video content
 - [AWS Elemental MediaLive](/medialive/?icmpid=docs_homepage_mediasvcs): Convert live video content

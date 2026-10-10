@@ -46,35 +46,35 @@ Required: No
 A unique identifier for the container fleet.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: No
 
  ** GameServerBinaryArn **   <a name="gameliftservers-Type-FleetDeployment-GameServerBinaryArn"></a>
 The unique identifier for the version of the game server container group definition that is being deployed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** PerInstanceBinaryArn **   <a name="gameliftservers-Type-FleetDeployment-PerInstanceBinaryArn"></a>
 The unique identifier for the version of the per-instance container group definition that is being deployed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** RollbackGameServerBinaryArn **   <a name="gameliftservers-Type-FleetDeployment-RollbackGameServerBinaryArn"></a>
 The unique identifier for the version of the game server container group definition to roll back to if deployment fails. Amazon GameLift Servers sets this property to the container group definition version that the fleet used when it was last active.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
  ** RollbackPerInstanceBinaryArn **   <a name="gameliftservers-Type-FleetDeployment-RollbackPerInstanceBinaryArn"></a>
 The unique identifier for the version of the per-instance container group definition to roll back to if deployment fails. Amazon GameLift Servers sets this property to the container group definition version that the fleet used when it was last active.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9:/-]+`
+Pattern: `^[a-zA-Z0-9:/-]+$`
 Required: No
 
 ## See Also

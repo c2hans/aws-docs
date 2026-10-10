@@ -30,6 +30,8 @@ To add one or more connection profiles, use a configuration file provided by you
 ### Connect to a profile
 <a name="client-vpn-6x-connect"></a>
 
+**To connect to a profile**
+
 1. Open the **AWS VPN Client** app.
 
 1. Choose a profile from the **Select profile** dropdown, and then choose **Connect**.
@@ -76,6 +78,8 @@ To add one or more connection profiles, use a configuration file provided by you
 
 ### Connect to a profile
 <a name="client-vpn-earlier-connect"></a>
+
+**To connect to a profile**
 
 1. Open the **AWS VPN Client** app.
 

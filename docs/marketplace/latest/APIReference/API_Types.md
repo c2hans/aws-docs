@@ -287,6 +287,7 @@ The following data types are supported by AWS Marketplace Discovery:
 The following data types are supported by AWS Marketplace Reporting Service:
 
 The following data types are supported by AWS Marketplace Metering Service:
++  [Metadata](API_marketplace-metering_Metadata.md)
 +  [Tag](API_marketplace-metering_Tag.md)
 +  [UsageAllocation](API_marketplace-metering_UsageAllocation.md)
 +  [UsageRecord](API_marketplace-metering_UsageRecord.md)

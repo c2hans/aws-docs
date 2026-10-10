@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
  **This API works with the following fleet types:** EC2
 
-Removes a VPC peering connection. To delete the connection, you must have a valid authorization for the VPC peering connection that you want to delete..
+Removes a VPC peering connection. To delete the connection, you must have a valid authorization for the VPC peering connection that you want to delete.
 
 Once a valid authorization exists, call this operation from the AWS account that is used to manage the Amazon GameLift Servers fleets. Identify the connection to delete by the connection ID and fleet ID. If successful, the connection is removed.
 
@@ -39,7 +39,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the fleet. This fleet specified must match the fleet referenced in the VPC peering connection record. You can use either the fleet ID or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+`
+Pattern: `^[a-z]*fleet-[a-zA-Z0-9\-]+$`
 Required: Yes
 
  ** [VpcPeeringConnectionId](#API_DeleteVpcPeeringConnection_RequestSyntax) **   <a name="gameliftservers-DeleteVpcPeeringConnection-request-VpcPeeringConnectionId"></a>

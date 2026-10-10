@@ -5,18 +5,18 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CustomTag
 # CustomTagKeyValueResponsePair
 <a name="API_CustomTagKeyValueResponsePair"></a>
 
-Describes a tag key-value pair for an application status check association.
+Contains tag information for an application status check, including the tag key and value. This type is deprecated; use `DescribeApplicationStatusCheckAssociations` to view tag associations instead.
 
 ## Contents
 <a name="API_CustomTagKeyValueResponsePair_Contents"></a>
 
  ** key **
-The key of the tag.
+The key of the tag. This field is deprecated and the service does not populate it.
 Type: String
 Required: No
 
  ** value **
-The value of the tag.
+The value of the tag. This field is deprecated and the service does not populate it.
 Type: String
 Required: No
 

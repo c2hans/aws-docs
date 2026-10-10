@@ -96,6 +96,9 @@ The following table describes the rate limits for AgentCore Runtime after which 
 | Control plane Get API rate | 150 TPS | No | Transactions per second per account. This quota is shared across all control plane Get APIs and is not enforced for each API individually. It applies to `GetAgentRuntime` and `GetAgentRuntimeEndpoint`. |
 | Control plane List API rate | 25 TPS | No | Transactions per second per account. This quota is shared across all control plane List APIs and is not enforced for each API individually. It applies to `ListAgentRuntimes`, `ListAgentRuntimeEndpoints`, and `ListAgentRuntimeVersions`. |
 
+**Note**
+For a cross-account invocation, requests count against the resource owner’s per-account rate quotas. The resource owner is the account that owns the agent runtime.
+
 For more information about service quotas and how to request increases, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 
 ### Lifetime session lifecycle parameters

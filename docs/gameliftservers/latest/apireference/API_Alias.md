@@ -20,13 +20,13 @@ In the following list, the required parameters are described first.
  ** AliasArn **   <a name="gameliftservers-Type-Alias-AliasArn"></a>
 The Amazon Resource Name ([ARN](https://docs.aws.amazon.com/AmazonS3/latest/dev/s3-arn-format.html)) that is assigned to a Amazon GameLift Servers alias resource and uniquely identifies it. ARNs are unique across all Regions. Format is `arn:aws:gamelift:<region>::alias/alias-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912`. In a GameLift alias ARN, the resource ID matches the alias ID value.
 Type: String
-Pattern: `^arn:.*:alias\/alias-\S+`
+Pattern: `^arn:.*:alias\/alias-\S+$`
 Required: No
 
  ** AliasId **   <a name="gameliftservers-Type-Alias-AliasId"></a>
 A unique identifier for the alias. Alias IDs are unique within a Region.
 Type: String
-Pattern: `^alias-\S+`
+Pattern: `^alias-\S+$`
 Required: No
 
  ** CreationTime **   <a name="gameliftservers-Type-Alias-CreationTime"></a>
@@ -48,7 +48,7 @@ Required: No
 A descriptive label that is associated with an alias. Alias names do not need to be unique.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `.*\S.*`
+Pattern: `^.*\S.*$`
 Required: No
 
  ** RoutingStrategy **   <a name="gameliftservers-Type-Alias-RoutingStrategy"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/pinpoint/index.html
 title: 'Amazon Pinpoint Documentation'
 canonical_url: https://docs.aws.amazon.com/pinpoint/
 source: aws-documentation
-generated_on: 2026-10-08
+generated_on: 2026-10-10
 ---
 
 # Amazon Pinpoint Documentation

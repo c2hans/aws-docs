@@ -54,7 +54,7 @@ Required: Yes
 The fleet location to retrieve capacity information for. Specify a location in the form of an AWS Region code, such as `us-west-2`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: Yes
 
 ## Response Syntax

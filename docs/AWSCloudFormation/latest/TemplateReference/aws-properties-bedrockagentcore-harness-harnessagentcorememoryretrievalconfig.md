@@ -19,9 +19,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[RelevanceScore](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore)" : {{String}},
+  "[RelevanceScore](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore)" : {{Number}},
   "[StrategyId](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-strategyid)" : {{String}},
-  "[TopK](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-topk)" : {{String}}
+  "[TopK](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-topk)" : {{Integer}}
 }
 ```
 
@@ -29,9 +29,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-syntax.yaml"></a>
 
 ```
-  [RelevanceScore](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore): {{String}}
+  [RelevanceScore](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore): {{Number}}
   [StrategyId](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-strategyid): {{String}}
-  [TopK](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-topk): {{String}}
+  [TopK](#cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-topk): {{Integer}}
 ```
 
 ## Properties
@@ -40,8 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `RelevanceScore`  <a name="cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-relevancescore"></a>
 The minimum relevance score for retrieved memories.
 *Required*: No
-*Type*: String
-*Pattern*: `^[0-9]+(\.[0-9]+)?$`
+*Type*: Number
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StrategyId`  <a name="cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-strategyid"></a>
@@ -53,6 +52,5 @@ The ID of the retrieval strategy to use.
 `TopK`  <a name="cfn-bedrockagentcore-harness-harnessagentcorememoryretrievalconfig-topk"></a>
 The maximum number of memory entries to retrieve.
 *Required*: No
-*Type*: String
-*Pattern*: `^[0-9]+$`
+*Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

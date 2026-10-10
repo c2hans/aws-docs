@@ -33,7 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[MountPoints](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-mountpoints)" : {{[ ContainerMountPoint, ... ]}},
   "[PortConfiguration](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-portconfiguration)" : {{PortConfiguration}},
   "[ResolvedImageDigest](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-resolvedimagedigest)" : {{String}},
-  "[ServerSdkVersion](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-serversdkversion)" : {{String}}
+  "[ServerSdkVersion](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-serversdkversion)" : {{String}},
+  "[Vcpu](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-vcpu)" : {{Number}}
 }
 ```
 
@@ -55,6 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     PortConfiguration}}
   [ResolvedImageDigest](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-resolvedimagedigest): {{String}}
   [ServerSdkVersion](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-serversdkversion): {{String}}
+  [Vcpu](#cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-vcpu): {{Number}}
 ```
 
 ## Properties
@@ -127,4 +129,14 @@ The Amazon GameLift Servers server SDK version that the game server is integrate
 *Type*: String
 *Pattern*: `^\d+\.\d+\.\d+$`
 *Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Vcpu`  <a name="cfn-gamelift-containergroupdefinition-gameservercontainerdefinition-vcpu"></a>
+The number of vCPU units that are reserved for the game server container. The container can use more vCPU when it's available, up to the container group's `TotalVcpuLimit` if one is set.
+This property is required when the container group definition doesn't set `TotalVcpuLimit`. If the container group has a `TotalVcpuLimit` and you omit this property, Amazon GameLift Servers calculates the value as the total vCPU limit minus the vCPU reserved for the group's support containers.
+ **Related data type: ** [ContainerGroupDefinition TotalVcpuLimit](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html)
+*Required*: No
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

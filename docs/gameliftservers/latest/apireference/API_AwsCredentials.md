@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 
 You need AWS credentials for the following tasks:
 + To upload a game server build directly to Amazon GameLift Servers S3 storage using `CreateBuild`. To get access for this task, call [https://docs.aws.amazon.com/gamelift/latest/apireference/API_RequestUploadCredentials.html](https://docs.aws.amazon.com/gamelift/latest/apireference/API_RequestUploadCredentials.html).
-+ To remotely connect to an active Amazon GameLift Servers fleet instances. To get remote access, call [https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetComputeAccess.html](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetComputeAccess.html).
++ To remotely connect to an active Amazon GameLift Servers fleet instance. To get remote access, call [https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetComputeAccess.html](https://docs.aws.amazon.com/gamelift/latest/apireference/API_GetComputeAccess.html).
 
 ## Contents
 <a name="API_AwsCredentials_Contents"></a>

@@ -48,7 +48,7 @@ In the following list, the required parameters are described first.
 A unique identifier for the matchmaking rule set. A matchmaking configuration identifies the rule set it uses by this name value. Note that the rule set name is different from the optional `name` field in the rule set body.
 Type: String
 Length Constraints: Maximum length of 128.
-Pattern: `[a-zA-Z0-9-\.]*`
+Pattern: `^[a-zA-Z0-9-\.]*$`
 Required: Yes
 
  ** [RuleSetBody](#API_CreateMatchmakingRuleSet_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingRuleSet-request-RuleSetBody"></a>
@@ -58,7 +58,7 @@ Length Constraints: Minimum length of 1. Maximum length of 65535.
 Required: Yes
 
  ** [Tags](#API_CreateMatchmakingRuleSet_RequestSyntax) **   <a name="gameliftservers-CreateMatchmakingRuleSet-request-Tags"></a>
-A list of labels to assign to the new matchmaking rule set resource. Tags are developer-defined key-value pairs. Tagging AWS resources are useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
+A list of labels to assign to the new matchmaking rule set resource. Tags are developer-defined key-value pairs. Tagging AWS resources is useful for resource management, access management and cost allocation. For more information, see [ Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the * AWS General Reference*.
 Type: Array of [Tag](API_Tag.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Required: No

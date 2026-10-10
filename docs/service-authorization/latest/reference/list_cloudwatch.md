@@ -1209,7 +1209,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Read
 
 - **   [GetRecords](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetRecords.html)  **
-  - **Description:** Grants permission to fetch logs, metrics, and traces
+  - **Description:** Grants permission to fetch logs and traces
   - **Resource types (\*required):**
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Read
@@ -1494,6 +1494,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a CloudWatch metric stream, or update an existing metric stream if it already exists
   - **Resource types (\*required):** [metric-stream\*](#list_cloudwatch-resource-metric-stream)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [PutRecords](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_PutRecords.html)  **
+  - **Description:** Grants permission to put logs and traces
+  - **Resource types (\*required):**
+  - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Write
 
 - **   [QueryTraces](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_QueryTraces.html)  **

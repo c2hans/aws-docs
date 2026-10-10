@@ -140,16 +140,29 @@ The following is an example of creating an endpoint group for a custom routing a
 aws globalaccelerator create-custom-routing-endpoint-group
            --listener-arn arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz
            --endpoint-group-region us-east-1
-           --endpoint-configurations EndpointId=i-1234567890abcdef0,Weight=128
+           --destination-configurations FromPort=5000,ToPort=10000,Protocols=UDP
            --region us-west-2
 ```
 
 ```
 {
     "EndpointGroup": {
-        "EndpointId": "i-1234567890abcdef0"
         "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu",
-        "EndpointGroupRegion": "us-east-1"
+        "EndpointGroupRegion": "us-east-1",
+        "DestinationDescriptions": [
+            {
+                "FromPort": 5000,
+                "ToPort": 10000,
+                "Protocols": [
+                    "UDP"
+                ]
+            }
+        ],
+        "EndpointDescriptions": [
+            {
+                "EndpointId": "subnet-1234567890abcdef0"
+            }
+        ]
     }
 }
 ```

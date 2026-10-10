@@ -22,12 +22,14 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::EC2::ClientVpnEndpoint",
   "Properties" : {
       "[AuthenticationOptions](#cfn-ec2-clientvpnendpoint-authenticationoptions)" : {{[ ClientAuthenticationRequest, ... ]}},
+      "[AuthorizationPolicy](#cfn-ec2-clientvpnendpoint-authorizationpolicy)" : {{AuthorizationPolicy}},
       "[ClientCidrBlock](#cfn-ec2-clientvpnendpoint-clientcidrblock)" : {{String}},
       "[ClientConnectOptions](#cfn-ec2-clientvpnendpoint-clientconnectoptions)" : {{ClientConnectOptions}},
       "[ClientLoginBannerOptions](#cfn-ec2-clientvpnendpoint-clientloginbanneroptions)" : {{ClientLoginBannerOptions}},
       "[ClientRouteEnforcementOptions](#cfn-ec2-clientvpnendpoint-clientrouteenforcementoptions)" : {{ClientRouteEnforcementOptions}},
       "[ConnectionLogOptions](#cfn-ec2-clientvpnendpoint-connectionlogoptions)" : {{ConnectionLogOptions}},
       "[Description](#cfn-ec2-clientvpnendpoint-description)" : {{String}},
+      "[DevicePostureOptions](#cfn-ec2-clientvpnendpoint-devicepostureoptions)" : {{DevicePostureOptions}},
       "[DisconnectOnSessionTimeout](#cfn-ec2-clientvpnendpoint-disconnectonsessiontimeout)" : {{Boolean}},
       "[DnsServers](#cfn-ec2-clientvpnendpoint-dnsservers)" : {{[ String, ... ]}},
       "[EndpointIpAddressType](#cfn-ec2-clientvpnendpoint-endpointipaddresstype)" : {{String}},
@@ -54,6 +56,8 @@ Type: AWS::EC2::ClientVpnEndpoint
 Properties:
   [AuthenticationOptions](#cfn-ec2-clientvpnendpoint-authenticationoptions): {{
     - ClientAuthenticationRequest}}
+  [AuthorizationPolicy](#cfn-ec2-clientvpnendpoint-authorizationpolicy): {{
+    AuthorizationPolicy}}
   [ClientCidrBlock](#cfn-ec2-clientvpnendpoint-clientcidrblock): {{String}}
   [ClientConnectOptions](#cfn-ec2-clientvpnendpoint-clientconnectoptions): {{
     ClientConnectOptions}}
@@ -64,6 +68,8 @@ Properties:
   [ConnectionLogOptions](#cfn-ec2-clientvpnendpoint-connectionlogoptions): {{
     ConnectionLogOptions}}
   [Description](#cfn-ec2-clientvpnendpoint-description): {{String}}
+  [DevicePostureOptions](#cfn-ec2-clientvpnendpoint-devicepostureoptions): {{
+    DevicePostureOptions}}
   [DisconnectOnSessionTimeout](#cfn-ec2-clientvpnendpoint-disconnectonsessiontimeout): {{Boolean}}
   [DnsServers](#cfn-ec2-clientvpnendpoint-dnsservers): {{
     - String}}
@@ -92,6 +98,12 @@ Information about the authentication method to be used to authenticate clients.
 *Required*: Yes
 *Type*: Array of [ClientAuthenticationRequest](aws-properties-ec2-clientvpnendpoint-clientauthenticationrequest.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`AuthorizationPolicy`  <a name="cfn-ec2-clientvpnendpoint-authorizationpolicy"></a>
+Property description not available.
+*Required*: No
+*Type*: [AuthorizationPolicy](aws-properties-ec2-clientvpnendpoint-authorizationpolicy.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClientCidrBlock`  <a name="cfn-ec2-clientvpnendpoint-clientcidrblock"></a>
 The IPv4 address range, in CIDR notation, from which to assign client IP addresses. The address range cannot overlap with the local CIDR of the VPC in which the associated subnet is located, or the routes that you add manually. The address range cannot be changed after the Client VPN endpoint has been created. Client CIDR range must have a size of at least /22 and must not be greater than /12.
@@ -133,6 +145,12 @@ If you enable client connection logging, data about client connections is sent t
 A brief description of the Client VPN endpoint.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DevicePostureOptions`  <a name="cfn-ec2-clientvpnendpoint-devicepostureoptions"></a>
+The device trust providers configured for the Client VPN endpoint, if applicable.
+*Required*: No
+*Type*: [DevicePostureOptions](aws-properties-ec2-clientvpnendpoint-devicepostureoptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DisconnectOnSessionTimeout`  <a name="cfn-ec2-clientvpnendpoint-disconnectonsessiontimeout"></a>

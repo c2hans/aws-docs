@@ -19,7 +19,7 @@ Required: No
  ** name **   <a name="guardduty-Type-MemberAdditionalConfigurationResult-name"></a>
 Indicates the name of the additional configuration that is set for the member account.
 Type: String
-Valid Values: `EKS_ADDON_MANAGEMENT | ECS_FARGATE_AGENT_MANAGEMENT | EC2_AGENT_MANAGEMENT`
+Valid Values: `EKS_ADDON_MANAGEMENT | ECS_FARGATE_AGENT_MANAGEMENT | EC2_AGENT_MANAGEMENT | RDS_DATA_RISK`
 Required: No
 
  ** status **   <a name="guardduty-Type-MemberAdditionalConfigurationResult-status"></a>

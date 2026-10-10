@@ -39,7 +39,7 @@ In the following list, the required parameters are described first.
 An identifier for the game server group to retrieve a list of game servers from. Use either the name or ARN value.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9-\.]+|^arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+`
+Pattern: `^([a-zA-Z0-9-\.]+|arn:.*:gameservergroup\/[a-zA-Z0-9-\.]+)$`
 Required: Yes
 
  ** [Limit](#API_ListGameServers_RequestSyntax) **   <a name="gameliftservers-ListGameServers-request-Limit"></a>

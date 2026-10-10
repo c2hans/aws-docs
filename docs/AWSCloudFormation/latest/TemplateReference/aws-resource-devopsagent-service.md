@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[ExchangeUrlPrivateConnectionName](#cfn-devopsagent-service-exchangeurlprivateconnectionname)" : {{String}},
       "[KmsKeyArn](#cfn-devopsagent-service-kmskeyarn)" : {{String}},
+      "[Name](#cfn-devopsagent-service-name)" : {{String}},
       "[PrivateConnectionName](#cfn-devopsagent-service-privateconnectionname)" : {{String}},
       "[ServiceDetails](#cfn-devopsagent-service-servicedetails)" : {{ServiceDetails}},
       "[ServiceType](#cfn-devopsagent-service-servicetype)" : {{String}},
@@ -45,6 +46,7 @@ Type: AWS::DevOpsAgent::Service
 Properties:
   [ExchangeUrlPrivateConnectionName](#cfn-devopsagent-service-exchangeurlprivateconnectionname): {{String}}
   [KmsKeyArn](#cfn-devopsagent-service-kmskeyarn): {{String}}
+  [Name](#cfn-devopsagent-service-name): {{String}}
   [PrivateConnectionName](#cfn-devopsagent-service-privateconnectionname): {{String}}
   [ServiceDetails](#cfn-devopsagent-service-servicedetails): {{
     ServiceDetails}}
@@ -74,6 +76,15 @@ The ARN of the customer managed key used to encrypt the data of the registered s
 *Maximum*: `2048`
 *Update requires*: Updates are not supported.
 
+`Name`  <a name="cfn-devopsagent-service-name"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[\p{L}\p{N} _-]+$`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `PrivateConnectionName`  <a name="cfn-devopsagent-service-privateconnectionname"></a>
 The name of the private connection used to reach the service over a private network path, which applies to both the service endpoint and the OAuth token exchange endpoint.
 *Required*: No
@@ -93,7 +104,7 @@ Service-specific configuration details provided during registration. The structu
 The type of external service to register.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `dynatrace | mcpserver | mcpserversplunk | mcpservernewrelic | gitlab | servicenow | pagerduty | azureidentity | mcpserversigv4 | mcpservergrafana`
+*Allowed values*: `dynatrace | mcpserver | mcpserversplunk | mcpservernewrelic | gitlab | github | servicenow | pagerduty | azureidentity | mcpserversigv4 | mcpservergrafana`
 *Update requires*: Updates are not supported.
 
 `Tags`  <a name="cfn-devopsagent-service-tags"></a>

@@ -17,7 +17,7 @@ In the following list, the required parameters are described first.
 A location identifier.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
  ** PlayerGatewayStatus **   <a name="gameliftservers-Type-ContainerFleetLocationAttributes-PlayerGatewayStatus"></a>
@@ -36,10 +36,10 @@ The status of fleet activity in the location.
 +  `CREATED` -- A new container fleet resource has been created. No fleet instances have been deployed.
 +  `ACTIVATING` -- New container fleet instances are being deployed.
 +  `ACTIVE` -- The container fleet has been deployed and is ready to host game sessions.
-+  `UPDATING` -- Updates to the container fleet is being updated. A deployment is in progress.
++  `UPDATING` -- The container fleet is being updated. A deployment is in progress.
 +  `EXPIRED` -- The container fleet has been expired. The fleet is scaled down to zero instances and cannot host new game sessions.
 Type: String
-Valid Values: `PENDING | CREATING | CREATED | ACTIVATING | ACTIVE | UPDATING | DELETING`
+Valid Values: `PENDING | CREATING | CREATED | ACTIVATING | ACTIVE | UPDATING | DELETING | EXPIRED`
 Required: No
 
 ## See Also

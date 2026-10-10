@@ -133,7 +133,7 @@ HTTP Status Code: 400
 ### List deployments for a container fleet
 <a name="API_ListFleetDeployments_Example_1"></a>
 
-This example retrieves the properties of all deployments for a specified container fleets The request uses the pagination parameters to retrieve one fleet at a time. The example response includes a `NextToken`, which indicates that there are still more results to retrieve.
+This example retrieves the properties of all deployments for a specified container fleet. The request uses the pagination parameters to retrieve one fleet at a time. The example response includes a `NextToken`, which indicates that there are still more results to retrieve.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 

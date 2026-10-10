@@ -26,7 +26,7 @@ The location of a game build executable or Realtime script. Game builds and Real
 Amazon GameLift Servers doesn't support the use of setup scripts that launch the game executable. For custom game builds, this parameter must indicate the executable that calls the server SDK operations `initSDK()` and `ProcessReady()`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `[A-Za-z0-9_:.+\/\\\- ]+`
+Pattern: `^[A-Za-z0-9_:.+\/\\\- ]+$`
 Required: Yes
 
  ** Parameters **   <a name="gameliftservers-Type-ServerProcess-Parameters"></a>

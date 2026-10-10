@@ -74,6 +74,14 @@ Length Constraints: Maximum length of 128.
 Pattern: `^\d+\.\d+\.\d+$`
 Required: No
 
+ ** Vcpu **   <a name="gameliftservers-Type-GameServerContainerDefinition-Vcpu"></a>
+The number of vCPU units reserved for the game server container. The container can use more vCPU when it's available, up to the container group's total vCPU limit if one is set. If the container group has a total vCPU limit and the request doesn't set this value, Amazon GameLift Servers calculates the game server container's vCPU as the total vCPU limit minus the sum of the vCPU units reserved for the group's support containers.
+A game server container group needs either a total vCPU limit or this value. If the container group doesn't have a total vCPU limit, the group's containers can use up to the instance's available vCPU, and Amazon GameLift Servers uses the sum of the group's container `Vcpu` values to calculate how many game server container groups fit on an instance.
+ **Related data type: ** [ContainerGroupDefinition](https://docs.aws.amazon.com/gamelift/latest/apireference/API_ContainerGroupDefinition.html) `TotalVcpuLimit`
+Type: Double
+Valid Range: Minimum value of 0.125. Maximum value of 10.
+Required: No
+
 ## See Also
 <a name="API_GameServerContainerDefinition_SeeAlso"></a>
 

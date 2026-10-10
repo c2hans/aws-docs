@@ -17,7 +17,7 @@ Retrieves the properties for a container fleet. When requesting attributes for m
 If successful, a `ContainerFleet` object is returned. This object includes the fleet properties, including information about the most recent deployment.
 
 **Note**
-Some API operations limit the number of fleet IDs that allowed in one request. If a request exceeds this limit, the request fails and the error message contains the maximum allowed number.
+Some API operations limit the number of fleet IDs that are allowed in one request. If a request exceeds this limit, the request fails and the error message contains the maximum allowed number.
 
 ## Request Syntax
 <a name="API_DescribeContainerFleet_RequestSyntax"></a>
@@ -145,7 +145,7 @@ HTTP Status Code: 400
 ### Request attributes for a container fleet
 <a name="API_DescribeContainerFleet_Example_1"></a>
 
-This example retrieves attributes for an managed container fleet.
+This example retrieves attributes for a managed container fleet.
 
 HTTP requests are authenticated using an [AWS Signature Version 4](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) signature in the `Authorization` header field.
 

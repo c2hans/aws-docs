@@ -50,7 +50,7 @@ In the following list, the required parameters are described first.
 A descriptive label for the compute resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?`
+Pattern: `^[a-zA-Z0-9\-]+(\/[a-zA-Z0-9\-]+)?$`
 Required: Yes
 
  ** [FleetId](#API_RegisterCompute_RequestSyntax) **   <a name="gameliftservers-RegisterCompute-request-FleetId"></a>
@@ -70,21 +70,21 @@ Required: No
 The DNS name of the compute resource. Amazon GameLift Servers requires either a DNS name or IP address.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^[0-9a-zA-Z_\-\.]+`
+Pattern: `^[0-9a-zA-Z_\-\.]+$`
 Required: No
 
  ** [IpAddress](#API_RegisterCompute_RequestSyntax) **   <a name="gameliftservers-RegisterCompute-request-IpAddress"></a>
 The IP address of the compute resource. Amazon GameLift Servers requires either a DNS name or IP address. When registering an Anywhere fleet, an IP address is required.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[0-9A-Fa-f\:\.]+`
+Pattern: `^[0-9A-Fa-f\:\.]+$`
 Required: No
 
  ** [Location](#API_RegisterCompute_RequestSyntax) **   <a name="gameliftservers-RegisterCompute-request-Location"></a>
 The name of a custom location to associate with the compute resource being registered. This parameter is required when registering a compute for an Anywhere fleet.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[A-Za-z0-9\-]+`
+Pattern: `^[A-Za-z0-9\-]+$`
 Required: No
 
 ## Response Syntax
@@ -157,6 +157,10 @@ HTTP Status Code: 400
 
  ** UnauthorizedException **
 The client failed authentication. Clients should not retry such requests.
+HTTP Status Code: 400
+
+ ** UnsupportedRegionException **
+The requested operation is not supported in the Region specified.
 HTTP Status Code: 400
 
 ## Examples

@@ -27,6 +27,6 @@ imageId (Optional)Type: CSV
 The rule evaluates instances launched only from AMIs with the specified IDs. Separate multiple AMI IDs with commas
 
 ## AWS CloudFormation template
-<a name="w2aac20c16c17b7d457c19"></a>
+<a name="w2aac20c16c17b7d465c19"></a>
 
 To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

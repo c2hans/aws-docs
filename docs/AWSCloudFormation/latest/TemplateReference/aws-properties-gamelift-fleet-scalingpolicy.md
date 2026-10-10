@@ -84,7 +84,7 @@ Name of the Amazon GameLift Servers-defined metric that is used to trigger a sca
 + **ActivatingGameSessions** -- Game sessions in the process of being created.
 + **ActiveGameSessions** -- Game sessions that are currently running.
 + **ActiveInstances** -- Fleet instances that are currently running at least one game session.
-+ **AvailableGameSessions** -- Additional game sessions that fleet could host simultaneously, given current capacity.
++ **AvailableGameSessions** -- Additional game sessions that a fleet could host simultaneously, given current capacity.
 + **AvailablePlayerSessions** -- Empty player slots in currently active game sessions. This includes game sessions that are not currently accepting players. Reserved player slots are not included.
 + **CurrentPlayerSessions** -- Player slots in active game sessions that are being used by a player or are reserved for a player.
 + **IdleInstances** -- Active instances that are currently hosting zero game sessions.

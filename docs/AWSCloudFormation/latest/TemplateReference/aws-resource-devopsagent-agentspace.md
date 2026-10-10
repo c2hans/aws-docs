@@ -148,5 +148,14 @@ The ARN of the IAM Identity Center application created for the DevOps Agent web 
 `OperatorApp.Idc.UpdatedAt`  <a name="OperatorApp.Idc.UpdatedAt-fn::getatt"></a>
 The timestamp when the IAM Identity Center authentication configuration was last updated.
 
+`OperatorApp.Idp.CreatedAt`  <a name="OperatorApp.Idp.CreatedAt-fn::getatt"></a>
+Property description not available.
+
+`OperatorApp.Idp.UpdatedAt`  <a name="OperatorApp.Idp.UpdatedAt-fn::getatt"></a>
+Property description not available.
+
+`OperatorApp.Idp.UserIdClaim`  <a name="OperatorApp.Idp.UserIdClaim-fn::getatt"></a>
+Property description not available.
+
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the resource was last updated.
