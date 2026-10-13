@@ -37,7 +37,7 @@ Kernel Live Patching is supported on Amazon EC2 instances and on-premises virtua
 
 To use Kernel Live Patching on AL2023, you must use the following:
 + A 64-bit `x86_64` or `ARM64` architecture
-+ Kernel version `6.1` or `6.12`
++ Kernel version `6.1`, `6.12`, or `6.18`
 
 ### Policy requirements
 <a name="policy-requirements"></a>

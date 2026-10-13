@@ -612,10 +612,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreatePaymentConnector  **
   - **SDK client:** bedrock-agentcore-control
-  - **IAM action:**  [bedrock-agentcore:CreatePaymentConnector](#list_bedrock-agentcore-action-CreatePaymentConnector)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:CreatePaymentConnector](#list_bedrock-agentcore-action-CreatePaymentConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:GetPaymentCredentialProvider](#list_bedrock-agentcore-action-GetPaymentCredentialProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   CreatePaymentCredentialProvider  **
   - **SDK client:** bedrock-agentcore-control
@@ -1560,10 +1558,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdatePaymentConnector  **
   - **SDK client:** bedrock-agentcore-control
-  - **IAM action:**  [bedrock-agentcore:UpdatePaymentConnector](#list_bedrock-agentcore-action-UpdatePaymentConnector)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:GetPaymentCredentialProvider](#list_bedrock-agentcore-action-GetPaymentCredentialProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [bedrock-agentcore:UpdatePaymentConnector](#list_bedrock-agentcore-action-UpdatePaymentConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UpdatePaymentCredentialProvider  **
   - **SDK client:** bedrock-agentcore-control
@@ -1620,7 +1616,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 ## Actions defined by Amazon Bedrock Agentcore
 <a name="list_bedrock-agentcore-actions-as-permissions"></a>
 
-You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
 - **   [AddDatasetExamples](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_AddDatasetExamples.html)  **
   - **Description:** Grants permission to add examples to a dataset

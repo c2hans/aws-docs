@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionConfigu
 # GetFunctionConfiguration
 <a name="API_GetFunctionConfiguration"></a>
 
-Returns the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use [UpdateFunctionConfiguration](API_UpdateFunctionConfiguration.md).
+Returns the version-specific settings of a Lambda Event Function or version. The output includes only options that can vary between versions of a function. To modify these settings, use [UpdateFunctionConfiguration](API_UpdateFunctionConfiguration.md).
 
 To get all of a function's details, including function-level settings, use [GetFunction](API_GetFunction.md).
 

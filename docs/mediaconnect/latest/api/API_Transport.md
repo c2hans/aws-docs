@@ -42,6 +42,12 @@ Required: No
 Type: Integer
 Required: No
 
+ ** ndiAudioReferenceLevel **   <a name="mediaconnect-Type-Transport-ndiAudioReferenceLevel"></a>
+The audio reference level of the NDI receiver, in decibels relative to full scale (dBFS). Common values are `-20` (NDI and SMPTE) and `-18` (EBU). For NDI outputs, this field is always present and defaults to `-20`.
+Type: Integer
+Valid Range: Minimum value of -40. Maximum value of 0.
+Required: No
+
  ** ndiOutputTimecodeSource **   <a name="mediaconnect-Type-Transport-ndiOutputTimecodeSource"></a>
 The timecode source for NDI output frames. For NDI outputs, this field is always present and defaults to `EMBEDDED_TIMECODE`.
 +  `EMBEDDED_TIMECODE` - Preserves timecodes from the input transport stream. The timecodes must be embedded in the video stream as SEI timing messages. If no embedded timecode is detected, MediaConnect uses the UTC system time instead.

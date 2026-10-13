@@ -281,6 +281,7 @@ Required: Yes
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
+   "LastModifiedTime": number,
    "ManagedStorageType": "string",
    "MetadataProperties": {
       "CommitId": "string",
@@ -499,6 +500,10 @@ Type: [InferenceSpecification](API_InferenceSpecification.md) object
  ** [LastModifiedBy](#API_DescribeModelPackage_ResponseSyntax) **   <a name="sagemaker-DescribeModelPackage-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
+
+ ** [LastModifiedTime](#API_DescribeModelPackage_ResponseSyntax) **   <a name="sagemaker-DescribeModelPackage-response-LastModifiedTime"></a>
+The last time that the model package was modified.
+Type: Timestamp
 
  ** [ManagedStorageType](#API_DescribeModelPackage_ResponseSyntax) **   <a name="sagemaker-DescribeModelPackage-response-ManagedStorageType"></a>
 The storage type of the model package.

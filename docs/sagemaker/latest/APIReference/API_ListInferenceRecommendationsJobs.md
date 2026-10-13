@@ -113,6 +113,7 @@ Required: No
 {
    "InferenceRecommendationsJobs": [
       {
+         "CompletionTime": number,
          "CreationTime": number,
          "FailureReason": "string",
          "JobArn": "string",

@@ -12,6 +12,8 @@ Returns information about the human task user interfaces in your account.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortOrder": "{{string}}"
@@ -24,6 +26,16 @@ Returns information about the human task user interfaces in your account.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListHumanTaskUis_RequestSyntax) **   <a name="sagemaker-ListHumanTaskUis-request-CreationTimeAfter"></a>
+A filter that returns only human task user interfaces with a creation time greater than or equal to the specified timestamp.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListHumanTaskUis_RequestSyntax) **   <a name="sagemaker-ListHumanTaskUis-request-CreationTimeBefore"></a>
+A filter that returns only human task user interfaces that were created before the specified timestamp.
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListHumanTaskUis_RequestSyntax) **   <a name="sagemaker-ListHumanTaskUis-request-MaxResults"></a>
 The total number of items to return. If the total number of available items is more than the value specified in `MaxResults`, then a `NextToken` will be provided in the output that you can use to resume pagination.
@@ -51,6 +63,7 @@ Required: No
 {
    "HumanTaskUiSummaries": [
       {
+         "CreationTime": number,
          "HumanTaskUiArn": "string",
          "HumanTaskUiName": "string"
       }

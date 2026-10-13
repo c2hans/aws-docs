@@ -264,9 +264,11 @@ Content-type: application/json
                "maxLatency": number,
                "maxSyncBuffer": number,
                "minLatency": number,
+               "ndiAudioReferenceLevel": number,
                "ndiOutputTimecodeSource": "string",
                "ndiProgramName": "string",
                "ndiSourceSettings": {
+                  "audioReferenceLevel": number,
                   "sourceName": "string"
                },
                "ndiSpeedHqQuality": number,
@@ -339,9 +341,11 @@ Content-type: application/json
             "maxLatency": number,
             "maxSyncBuffer": number,
             "minLatency": number,
+            "ndiAudioReferenceLevel": number,
             "ndiOutputTimecodeSource": "string",
             "ndiProgramName": "string",
             "ndiSourceSettings": {
+               "audioReferenceLevel": number,
                "sourceName": "string"
             },
             "ndiSpeedHqQuality": number,
@@ -445,9 +449,11 @@ Content-type: application/json
                "maxLatency": number,
                "maxSyncBuffer": number,
                "minLatency": number,
+               "ndiAudioReferenceLevel": number,
                "ndiOutputTimecodeSource": "string",
                "ndiProgramName": "string",
                "ndiSourceSettings": {
+                  "audioReferenceLevel": number,
                   "sourceName": "string"
                },
                "ndiSpeedHqQuality": number,

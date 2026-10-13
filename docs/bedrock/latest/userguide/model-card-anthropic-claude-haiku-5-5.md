@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 # Claude Haiku 5.5
 <a name="model-card-anthropic-claude-haiku-5-5"></a>
 
-## ![Orange rounded square icon with white radial loading or progress indicator symbol.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Haiku 5.5
+## ![Anthropic logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/claude.png) Anthropic — Claude Haiku 5.5
 <a name="model-card-anthropic-claude-haiku-5-5-header"></a>
 
 ## Model Details
@@ -36,7 +36,7 @@ Claude Haiku 5.5 is the fastest, most efficient model in the Claude 5.5 family, 
 ## Endpoints and APIs supported
 <a name="model-card-anthropic-claude-haiku-5-5-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs are supported for Claude Haiku 5.5. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs are supported for Claude Haiku 5.5. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -58,7 +58,7 @@ The following tables show which endpoints and APIs are supported for Claude Haik
 | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 **Tip**
-Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
+Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Inference endpoints supported by Amazon Bedrock](endpoints.md) for details.
 
 ## Capabilities and Features
 <a name="model-card-anthropic-claude-haiku-5-5-capabilities"></a>
@@ -105,6 +105,9 @@ For more information, see [Compaction](claude-messages-compaction.html).
 <a name="model-card-anthropic-claude-haiku-5-5-pricing"></a>
 
 This model is a third-party model offered and billed through AWS Marketplace. Charges appear on your AWS bill and in AWS Cost Explorer under the model provider (not under Amazon Bedrock). For pricing, see the [Amazon Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/) page.
+
+**Note**
+Claude Haiku 5.5 uses tiered long-context pricing. Prompts of 100,000 tokens or fewer are billed at the standard per-token rates. Prompts that exceed 100,000 tokens are billed at higher rates for input, output, and cache read and write operations. The rates for prompts over 100,000 tokens appear in a separate row, labeled **Claude Haiku 5.5 - Long Context**.
 
 ## Programmatic Access
 <a name="model-card-anthropic-claude-haiku-5-5-programmatic-access"></a>

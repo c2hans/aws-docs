@@ -11,7 +11,7 @@ Descriptive information about a context graph node or edge, as opposed to its id
 <a name="API_Metadata_Contents"></a>
 
  ** logs **   <a name="cloudwatchomni-Type-Metadata-logs"></a>
-Per-signal LOGS query selectors: a LIST of blocks the console ORs, each an AND of exact store column -> raw values. Node-level (edges carry only traces). Populated when the request sets includeMetadata; derived labels (logSourceType) are added by the service projection, not stored here.
+LOGS query selectors: a list of blocks to OR together, each block an AND of exact store column to raw value. Present on node metadata only — edges carry trace selectors. Returned when the request sets includeMetadata.
 Type: Array of [LogMetadata](API_LogMetadata.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
@@ -28,7 +28,7 @@ Type: [NodeSemantics](API_NodeSemantics.md) object
 Required: No
 
  ** traces **   <a name="cloudwatchomni-Type-Metadata-traces"></a>
-Per-signal TRACES query selectors (same block shape as logs). Present on both node and edge metadata. serviceName is derived at the service projection, not stored here.
+TRACES query selectors, same block shape as the logs selectors. Present on both node and edge metadata. Returned when the request sets includeMetadata.
 Type: Array of [TraceMetadata](API_TraceMetadata.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No

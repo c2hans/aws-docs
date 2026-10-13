@@ -12,6 +12,8 @@ List hub content versions.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "HubContentName": "{{string}}",
    "HubContentType": "{{string}}",
    "HubName": "{{string}}",
@@ -30,6 +32,16 @@ List hub content versions.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListHubContentVersions_RequestSyntax) **   <a name="sagemaker-ListHubContentVersions-request-CreationTimeAfter"></a>
+Only list hub content versions that were created after the time specified.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListHubContentVersions_RequestSyntax) **   <a name="sagemaker-ListHubContentVersions-request-CreationTimeBefore"></a>
+Only list hub content versions that were created before the time specified.
+Type: Timestamp
+Required: No
 
  ** [HubContentName](#API_ListHubContentVersions_RequestSyntax) **   <a name="sagemaker-ListHubContentVersions-request-HubContentName"></a>
 The name of the hub content.
@@ -96,6 +108,7 @@ Required: No
 {
    "HubContentSummaries": [
       {
+         "CreationTime": number,
          "DocumentSchemaVersion": "string",
          "HubContentArn": "string",
          "HubContentDescription": "string",
@@ -105,6 +118,7 @@ Required: No
          "HubContentStatus": "string",
          "HubContentType": "string",
          "HubContentVersion": "string",
+         "OriginalCreationTime": number,
          "SageMakerPublicHubContentArn": "string",
          "SupportStatus": "string"
       }

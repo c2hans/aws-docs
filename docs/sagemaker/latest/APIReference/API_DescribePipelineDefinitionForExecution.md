@@ -35,6 +35,7 @@ Required: Yes
 
 ```
 {
+   "CreationTime": number,
    "PipelineDefinition": "string"
 }
 ```
@@ -45,6 +46,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CreationTime](#API_DescribePipelineDefinitionForExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineDefinitionForExecution-response-CreationTime"></a>
+The time when the pipeline was created.
+Type: Timestamp
 
  ** [PipelineDefinition](#API_DescribePipelineDefinitionForExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineDefinitionForExecution-response-PipelineDefinition"></a>
 The JSON pipeline definition.

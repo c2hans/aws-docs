@@ -60,7 +60,7 @@ Required: No
  ** [provider](#API_CreateIntegration_RequestSyntax) **   <a name="securityagent-CreateIntegration-request-provider"></a>
 The integration provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS | JIRA`
 Required: Yes
 
  ** [tags](#API_CreateIntegration_RequestSyntax) **   <a name="securityagent-CreateIntegration-request-tags"></a>

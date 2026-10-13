@@ -50,7 +50,7 @@ Properties:
 The AWS AppSync GraphQL API identifier to which you want to apply this schema.
 *Required*: Yes
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Definition`  <a name="cfn-appsync-graphqlschema-definition"></a>
 The text representation of a GraphQL schema in SDL format.

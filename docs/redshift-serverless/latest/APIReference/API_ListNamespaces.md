@@ -56,6 +56,15 @@ Required: No
          "namespaceArn": "string",
          "namespaceId": "string",
          "namespaceName": "string",
+         "s3TablePublishStatus": {
+            "enabledAll": boolean,
+            "lastIngestionTimes": {
+               "string" : "string"
+            },
+            "s3TableGranularity": "string",
+            "s3TableNamespace": "string",
+            "s3Tables": [ "string" ]
+         },
          "status": "string"
       }
    ],

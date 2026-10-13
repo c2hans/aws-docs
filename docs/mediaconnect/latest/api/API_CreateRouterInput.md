@@ -103,9 +103,15 @@ Type: String to string map
 Required: No
 
  ** [tier](#API_CreateRouterInput_RequestSyntax) **   <a name="mediaconnect-CreateRouterInput-request-tier"></a>
-The tier level for the router input.
+The tier level for the router input. The tier sets the maximum bitrate, in Mbps, for the router input. Valid values include the following:
++  `INPUT_20` – 20 Mbps
++  `INPUT_50` – 50 Mbps
++  `INPUT_100` – 100 Mbps
++  `INPUT_250` – 250 Mbps
++  `INPUT_500` – 500 Mbps
+The 250 Mbps and 500 Mbps tiers are high-bitrate tiers that support TR-07 (JPEG XS) workflows.
 Type: String
-Valid Values: `INPUT_100 | INPUT_50 | INPUT_20`
+Valid Values: `INPUT_100 | INPUT_50 | INPUT_20 | INPUT_500 | INPUT_250`
 Required: Yes
 
  ** [transitEncryption](#API_CreateRouterInput_RequestSyntax) **   <a name="mediaconnect-CreateRouterInput-request-transitEncryption"></a>

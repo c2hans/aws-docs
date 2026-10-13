@@ -37,7 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-sagemaker-cluster-clusterorchestratorslurmconfig-properties"></a>
 
 `AccountingDatabase`  <a name="cfn-sagemaker-cluster-clusterorchestratorslurmconfig-accountingdatabase"></a>
-Property description not available.
+The external database that stores the Slurm accounting data for the cluster, such as job history, associations, and usage. When you omit this field, Slurm accounting uses a database on the cluster's controller node.
+This field is only supported for clusters using `Continuous` as the `NodeProvisioningMode`.
 *Required*: No
 *Type*: [ClusterAccountingDatabase](aws-properties-sagemaker-cluster-clusteraccountingdatabase.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

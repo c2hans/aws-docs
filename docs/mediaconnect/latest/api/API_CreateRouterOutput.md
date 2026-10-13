@@ -100,9 +100,15 @@ Type: String to string map
 Required: No
 
  ** [tier](#API_CreateRouterOutput_RequestSyntax) **   <a name="mediaconnect-CreateRouterOutput-request-tier"></a>
-The tier level for the router output.
+The tier level for the router output. The tier sets the maximum bitrate, in Mbps, for the router output. Valid values include the following:
++  `OUTPUT_20` – 20 Mbps
++  `OUTPUT_50` – 50 Mbps
++  `OUTPUT_100` – 100 Mbps
++  `OUTPUT_250` – 250 Mbps
++  `OUTPUT_500` – 500 Mbps
+The 250 Mbps and 500 Mbps tiers are high-bitrate tiers that support TR-07 (JPEG XS) workflows.
 Type: String
-Valid Values: `OUTPUT_100 | OUTPUT_50 | OUTPUT_20`
+Valid Values: `OUTPUT_100 | OUTPUT_50 | OUTPUT_20 | OUTPUT_500 | OUTPUT_250`
 Required: Yes
 
 ## Response Syntax

@@ -12,6 +12,8 @@ Lists the data quality job definitions in your account.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "EndpointName": "{{string}}",
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
@@ -27,6 +29,16 @@ Lists the data quality job definitions in your account.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListDataQualityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListDataQualityJobDefinitions-request-CreationTimeAfter"></a>
+A filter that returns only data quality monitoring job definitions created after the specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListDataQualityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListDataQualityJobDefinitions-request-CreationTimeBefore"></a>
+A filter that returns only data quality monitoring job definitions created before the specified time.
+Type: Timestamp
+Required: No
 
  ** [EndpointName](#API_ListDataQualityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListDataQualityJobDefinitions-request-EndpointName"></a>
 A filter that lists the data quality job definitions associated with the specified endpoint.
@@ -74,6 +86,7 @@ Required: No
 {
    "JobDefinitionSummaries": [
       {
+         "CreationTime": number,
          "EndpointName": "string",
          "MonitoringJobDefinitionArn": "string",
          "MonitoringJobDefinitionName": "string"

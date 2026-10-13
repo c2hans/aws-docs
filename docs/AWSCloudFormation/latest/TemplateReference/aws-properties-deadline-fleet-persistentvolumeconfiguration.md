@@ -50,7 +50,7 @@ The IOPS per persistent volume. The default is 3000.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LastUsedTtlHours`  <a name="cfn-deadline-fleet-persistentvolumeconfiguration-lastusedttlhours"></a>
-The number of hours a persistent volume can remain unused before it is deleted. The default is 168 (7 days).
+The number of hours a persistent volume can remain unused before it is deleted. The default is 12.
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`

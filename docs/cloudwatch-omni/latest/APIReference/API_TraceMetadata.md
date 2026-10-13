@@ -11,7 +11,7 @@ One TRACES query selector block on a node/edge (see LogMetadata).
 <a name="API_TraceMetadata_Contents"></a>
 
  ** attributes **   <a name="cloudwatchomni-Type-TraceMetadata-attributes"></a>
-TRACES counterpart of LogMetadataAttributeMap — a dedicated per-signal map so the two evolve independently (same scalar shape and cap today).
+One TRACES query-selector block: an exact span-store column mapped to the raw value it carries. Keys are store column names, not bare attribute names — the service identity and cloud dimensions arrive as "resource.attributes['service.name']", "resource.attributes['service.namespace']", "resource.attributes['cloud.provider']", "resource.attributes['cloud.account.id']", "resource.attributes['cloud.region']" and "resource.attributes['deployment.environment']", and span-level identity as "attributes['aws.local.service']" and "attributes['aws.local.environment']". Not every column is present on every block; which ones appear depends on what the span carried.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 10 items.
 Required: No

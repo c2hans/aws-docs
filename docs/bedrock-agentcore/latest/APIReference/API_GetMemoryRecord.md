@@ -54,12 +54,14 @@ Content-type: application/json
    "memoryRecord": {
       "content": { ... },
       "createdAt": number,
+      "expiresAt": number,
       "memoryRecordId": "string",
       "memoryStrategyId": "string",
       "metadata": {
          "string" : { ... }
       },
-      "namespaces": [ "string" ]
+      "namespaces": [ "string" ],
+      "timestamp": number
    }
 }
 ```

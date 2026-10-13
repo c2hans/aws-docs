@@ -12,6 +12,8 @@ Lists model bias jobs definitions that satisfy various filters.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "EndpointName": "{{string}}",
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
@@ -27,6 +29,16 @@ Lists model bias jobs definitions that satisfy various filters.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListModelBiasJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelBiasJobDefinitions-request-CreationTimeAfter"></a>
+A filter that returns only model bias jobs created after a specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListModelBiasJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelBiasJobDefinitions-request-CreationTimeBefore"></a>
+A filter that returns only model bias jobs created before a specified time.
+Type: Timestamp
+Required: No
 
  ** [EndpointName](#API_ListModelBiasJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelBiasJobDefinitions-request-EndpointName"></a>
 Name of the endpoint to monitor for model bias.
@@ -74,6 +86,7 @@ Required: No
 {
    "JobDefinitionSummaries": [
       {
+         "CreationTime": number,
          "EndpointName": "string",
          "MonitoringJobDefinitionArn": "string",
          "MonitoringJobDefinitionName": "string"

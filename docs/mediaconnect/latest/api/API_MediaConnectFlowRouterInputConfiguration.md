@@ -7,6 +7,11 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaConnect
 
 Configuration settings for connecting a router input to a flow output.
 
+To connect the router input to the flow output, provide both `flowArn` and `flowOutputArn`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+
+**Note**
+You can't change `sourceTransitDecryption` while the router input is connected to a flow output. To change it, first disconnect the router input, then update the decryption.
+
 ## Contents
 <a name="API_MediaConnectFlowRouterInputConfiguration_Contents"></a>
 

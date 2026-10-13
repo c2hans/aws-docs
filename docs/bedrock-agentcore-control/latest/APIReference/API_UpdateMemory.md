@@ -64,7 +64,8 @@ Content-type: application/json
             },
             "memoryStrategyId": "{{string}}",
             "namespaces": [ "{{string}}" ],
-            "namespaceTemplates": [ "{{string}}" ]
+            "namespaceTemplates": [ "{{string}}" ],
+            "recordExpirySpecification": { ... }
          }
       ]
    },
@@ -139,7 +140,7 @@ Required: No
  ** [namespaceKeys](#API_UpdateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateMemory-request-namespaceKeys"></a>
 The namespace variable key definitions with validation rules for this memory. This value fully replaces the existing set — any key you omit is removed. Any referenced `namespaceKey` omission will throw ValidationException.
 Type: Array of [NamespaceKeyEntry](API_NamespaceKeyEntry.md) objects
-Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
  ** [streamDeliveryResources](#API_UpdateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateMemory-request-streamDeliveryResources"></a>
@@ -215,6 +216,7 @@ Content-type: application/json
             "name": "string",
             "namespaces": [ "string" ],
             "namespaceTemplates": [ "string" ],
+            "recordExpiryDurationDays": number,
             "status": "string",
             "strategyId": "string",
             "type": "string",

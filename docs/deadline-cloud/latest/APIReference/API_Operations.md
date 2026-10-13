@@ -88,6 +88,7 @@ The following actions are supported:
 +  [ListJobs](API_ListJobs.md)
 +  [ListLicenseEndpoints](API_ListLicenseEndpoints.md)
 +  [ListLimits](API_ListLimits.md)
++  [ListMemberships](API_ListMemberships.md)
 +  [ListMeteredProducts](API_ListMeteredProducts.md)
 +  [ListMonitors](API_ListMonitors.md)
 +  [ListQueueEnvironments](API_ListQueueEnvironments.md)

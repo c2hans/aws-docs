@@ -10,6 +10,11 @@ An array element of `SecondaryStatusTransitions` for [DescribeTrainingJob](https
 ## Contents
 <a name="API_SecondaryStatusTransition_Contents"></a>
 
+ ** StartTime **   <a name="sagemaker-Type-SecondaryStatusTransition-StartTime"></a>
+A timestamp that shows when the training job transitioned to the current secondary status state.
+Type: Timestamp
+Required: Yes
+
  ** Status **   <a name="sagemaker-Type-SecondaryStatusTransition-Status"></a>
 Contains a secondary status information from a training job.
 Status might be one of the following secondary statuses:
@@ -34,6 +39,11 @@ We no longer support the following secondary statuses:
 Type: String
 Valid Values: `Starting | LaunchingMLInstances | PreparingTrainingStack | Downloading | DownloadingTrainingImage | Training | Uploading | Stopping | Stopped | MaxRuntimeExceeded | Completed | Failed | Interrupted | MaxWaitTimeExceeded | Updating | Restarting | Pending`
 Required: Yes
+
+ ** EndTime **   <a name="sagemaker-Type-SecondaryStatusTransition-EndTime"></a>
+A timestamp that shows when the training job transitioned out of this secondary status state into another secondary status state or when the training job has ended.
+Type: Timestamp
+Required: No
 
  ** StatusMessage **   <a name="sagemaker-Type-SecondaryStatusTransition-StatusMessage"></a>
 A detailed description of the progress within a secondary status.

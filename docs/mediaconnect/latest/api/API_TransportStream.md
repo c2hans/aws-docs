@@ -30,6 +30,11 @@ Required: No
 Type: String
 Required: No
 
+ ** color **   <a name="mediaconnect-Type-TransportStream-color"></a>
+The color signaling of the video stream.
+Type: [ColorInformation](API_ColorInformation.md) object
+Required: No
+
  ** frameRate **   <a name="mediaconnect-Type-TransportStream-frameRate"></a>
  The frame rate used by the video stream.
 Type: String

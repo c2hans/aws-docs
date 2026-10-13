@@ -25,6 +25,20 @@ For information about the errors that are common to all actions, see [Common Err
 The caller is not authorized to perform this action.
 HTTP Status Code: 403
 
+ ** ConflictException **
+The operation could not be completed because of a conflict with the current state of the resource.
+ ** conflictType **
+The type of conflict that caused the request to fail. Not always present.
+ ** errorCode **
+The error code associated with the conflict. Not always present.
+ ** message **
+A human-readable description of the conflict.
+ ** resourceId **
+The identifier of the resource that is in conflict. Not always present.
+ ** resourceType **
+The type of the resource that is in conflict. Not always present.
+HTTP Status Code: 409
+
  ** InternalServerException **
 An unexpected error occurred while processing the request.
  ** errorCode **

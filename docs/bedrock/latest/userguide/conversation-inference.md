@@ -110,7 +110,7 @@ The following shows an example [Message](https://docs.aws.amazon.com/bedrock/lat
 }
 ```
 
-You can also specify an Amazon S3 URI instead of passing the bytes directly in the request body. The following shows a sample `Message` object with a content array containing the source passed through an Amazon S3 URI.
+If you are using an Amazon Nova model, you can also specify an Amazon S3 URI instead of passing the bytes directly in the request body. Other models accept only the `bytes` field and reject an Amazon S3 URI with a validation error. The following shows a sample `Message` object with a content array containing the source passed through an Amazon S3 URI.
 
 ```
 {
@@ -170,7 +170,7 @@ The following shows a sample [Message](https://docs.aws.amazon.com/bedrock/lates
 }
 ```
 
-You can also specify an Amazon S3 URI instead of passing the bytes directly in the request body. The following shows a sample `Message` object with a content array containing the source passed through an Amazon S3 URI.
+If you are using an Amazon Nova model, you can also specify an Amazon S3 URI instead of passing the bytes directly in the request body. Other models accept only the `bytes` field and reject an Amazon S3 URI with a validation error. The following shows a sample `Message` object with a content array containing the source passed through an Amazon S3 URI.
 
 ```
 {
@@ -220,7 +220,7 @@ The following shows a sample [Message](https://docs.aws.amazon.com/bedrock/lates
 }
 ```
 
-You can also specify an Amazon S3 URI instead of passing the bytes directly in the request body. The following shows a sample `Message` object with a content array containing the source passed through an Amazon S3 URI.
+If you are using an Amazon Nova model, you can also specify an Amazon S3 URI instead of passing the bytes directly in the request body. Other models accept only the `bytes` field and reject an Amazon S3 URI with a validation error. The following shows a sample `Message` object with a content array containing the source passed through an Amazon S3 URI.
 
 ```
 {

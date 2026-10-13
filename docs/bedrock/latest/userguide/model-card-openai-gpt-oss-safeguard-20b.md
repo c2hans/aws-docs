@@ -33,7 +33,7 @@ GPT OSS Safeguard 20B is OpenAI's compact 20-billion parameter open-source safet
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-oss-safeguard-20b-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs are supported for GPT OSS Safeguard 20B. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs are supported for GPT OSS Safeguard 20B. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -60,7 +60,7 @@ For Responses, use `/v1/responses`.
 For Chat Completions, use `/v1/chat/completions`.
 
 **Tip**
-Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
+Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Inference endpoints supported by Amazon Bedrock](endpoints.md) for details.
 
 ## Capabilities and Features
 <a name="model-card-openai-gpt-oss-safeguard-20b-capabilities"></a>

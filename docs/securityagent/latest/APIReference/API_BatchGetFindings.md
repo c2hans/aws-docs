@@ -80,6 +80,15 @@ Content-type: application/json
          "description": "string",
          "findingId": "string",
          "lastUpdatedBy": "string",
+         "linkedIssue": {
+            "integrationId": "string",
+            "issueId": "string",
+            "issueKey": "string",
+            "issueUrl": "string",
+            "projectKey": "string",
+            "provider": "string",
+            "siteUrl": "string"
+         },
          "name": "string",
          "originalFindingId": "string",
          "pentestId": "string",

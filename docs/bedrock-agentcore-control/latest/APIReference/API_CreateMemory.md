@@ -110,7 +110,7 @@ Required: Yes
  ** [namespaceKeys](#API_CreateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateMemory-request-namespaceKeys"></a>
 The namespace variable key definitions with optional validation rules. Use these `namespaceKeys` in `namespaceTemplates` to control namespace hierarchy.
 Type: Array of [NamespaceKeyEntry](API_NamespaceKeyEntry.md) objects
-Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
  ** [streamDeliveryResources](#API_CreateMemory_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateMemory-request-streamDeliveryResources"></a>
@@ -196,6 +196,7 @@ Content-type: application/json
             "name": "string",
             "namespaces": [ "string" ],
             "namespaceTemplates": [ "string" ],
+            "recordExpiryDurationDays": number,
             "status": "string",
             "strategyId": "string",
             "type": "string",

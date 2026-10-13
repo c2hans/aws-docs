@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListAliases.html
 # ListAliases
 <a name="API_ListAliases"></a>
 
-Returns a list of [aliases](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html) for a Lambda function.
+Returns a list of [aliases](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html) for a Lambda Event Function.
 
 ## Request Syntax
 <a name="API_ListAliases_RequestSyntax"></a>

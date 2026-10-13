@@ -56,6 +56,9 @@ Content-type: application/json
    "targets": [
       {
          "authorizationData": { ... },
+         "certificateConfigurations": [
+            { ... }
+         ],
          "createdAt": "string",
          "credentialProviderConfigurations": [
             {

@@ -101,6 +101,8 @@ Required: Yes
             "CandidateStepType": "string"
          }
       ],
+      "CreationTime": number,
+      "EndTime": number,
       "FailureReason": "string",
       "FinalAutoMLJobObjectiveMetric": {
          "MetricName": "string",
@@ -128,8 +130,11 @@ Required: Yes
             "ModelDataUrl": "string"
          }
       ],
+      "LastModifiedTime": number,
       "ObjectiveStatus": "string"
    },
+   "CreationTime": number,
+   "EndTime": number,
    "FailureReason": "string",
    "GenerateCandidateDefinitionsOnly": boolean,
    "InputDataConfig": [
@@ -147,6 +152,7 @@ Required: Yes
          "TargetAttributeName": "string"
       }
    ],
+   "LastModifiedTime": number,
    "ModelDeployConfig": {
       "AutoGenerateEndpointName": boolean,
       "EndpointName": "string"
@@ -224,6 +230,14 @@ Valid Values: `Completed | InProgress | Failed | Stopped | Stopping`
 The best model candidate selected by SageMaker AI Autopilot using both the best objective metric and lowest [InferenceLatency](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-metrics-validation.html) for an experiment.
 Type: [AutoMLCandidate](API_AutoMLCandidate.md) object
 
+ ** [CreationTime](#API_DescribeAutoMLJob_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJob-response-CreationTime"></a>
+Returns the creation time of the AutoML job.
+Type: Timestamp
+
+ ** [EndTime](#API_DescribeAutoMLJob_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJob-response-EndTime"></a>
+Returns the end time of the AutoML job.
+Type: Timestamp
+
  ** [FailureReason](#API_DescribeAutoMLJob_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJob-response-FailureReason"></a>
 Returns the failure reason for an AutoML job, when applicable.
 Type: String
@@ -237,6 +251,10 @@ Type: Boolean
 Returns the input data configuration for the AutoML job.
 Type: Array of [AutoMLChannel](API_AutoMLChannel.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 2 items.
+
+ ** [LastModifiedTime](#API_DescribeAutoMLJob_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJob-response-LastModifiedTime"></a>
+Returns the job's last modified time.
+Type: Timestamp
 
  ** [ModelDeployConfig](#API_DescribeAutoMLJob_ResponseSyntax) **   <a name="sagemaker-DescribeAutoMLJob-response-ModelDeployConfig"></a>
 Indicates whether the model was deployed automatically to an endpoint and the name of that endpoint if deployed automatically.

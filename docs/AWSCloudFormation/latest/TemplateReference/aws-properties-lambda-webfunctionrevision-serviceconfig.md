@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionRevision ServiceConfig
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig"></a>
 
-<a name="aws-properties-lambda-webfunctionrevision-serviceconfig-description"></a>The `ServiceConfig` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionRevision](aws-resource-lambda-webfunctionrevision.md).
+The service configuration for a web function revision, including execution role, timeout, VPC network access, concurrency, and telemetry settings.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig-syntax"></a>
@@ -46,7 +46,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionrevision-serviceconfig-properties"></a>
 
 `EgressNetworkConnectorArn`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-egressnetworkconnectorarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the Lambda network connector that gives the web function access to resources in your VPC. You must specify the fully qualified ARN, including the connector version, which pins the revision to that version. If the network connector is deleted, invocations of revisions that reference it fail. Revisions that specify a network connector support only `HomeRegion` endpoints, not `MultiRegion` or `PerRegion`.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:(aws[a-z-]*):lambda:[a-z0-9-]+:[0-9]{12}:network-connector:[a-zA-Z0-9_-]+:[0-9]+$`
@@ -55,7 +55,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EnvironmentVariables`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-environmentvariables"></a>
-Property description not available.
+A map of environment variable key-value pairs available to the web function at runtime. Environment variable values are sensitive.
 *Required*: No
 *Type*: Object of String
 *Pattern*: `^[a-zA-Z]([a-zA-Z0-9_])*$`
@@ -64,7 +64,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ExecutionRoleArn`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-executionrolearn"></a>
-Property description not available.
+The ARN of the IAM role that the web function assumes when it runs. This role provides permissions to access AWS services and resources.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:(aws[a-z-]*){1}:iam::[0-9]{12}:role/.*$`
@@ -73,7 +73,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MaxConcurrencyPerEnvironment`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-maxconcurrencyperenvironment"></a>
-Property description not available.
+The maximum number of concurrent requests handled for each execution environment. The minimum value is 1 and the maximum value is 128. If you don't specify a value, the default is 64.
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
@@ -81,13 +81,13 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TelemetryConfig`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-telemetryconfig"></a>
-Property description not available.
+The telemetry configuration for the web function, including logging settings.
 *Required*: No
 *Type*: [TelemetryConfig](aws-properties-lambda-webfunctionrevision-telemetryconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TimeoutSeconds`  <a name="cfn-lambda-webfunctionrevision-serviceconfig-timeoutseconds"></a>
-Property description not available.
+The amount of time (in seconds) that Lambda allows the web function to run before stopping it. The minimum value is 3 and the maximum value is 900. If you don't specify a value, the default is 30.
 *Required*: No
 *Type*: Integer
 *Minimum*: `3`

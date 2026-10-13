@@ -52,6 +52,7 @@ No authentication.
 
 `Oauth`  <a name="cfn-bedrockagentcore-harness-harnessgatewayoutboundauth-oauth"></a>
 Use OAuth credentials for outbound authentication to the gateway.
+The `AUTHORIZATION_CODE` grant type is not supported for outbound authentication from a harness to an AgentCore Gateway, even when `defaultReturnUrl` is specified.
 *Required*: No
 *Type*: [OAuthCredentialProvider](aws-properties-bedrockagentcore-harness-oauthcredentialprovider.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

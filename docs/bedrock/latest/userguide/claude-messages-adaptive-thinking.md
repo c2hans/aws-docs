@@ -20,13 +20,14 @@ The supported models are as follows:
 | Claude Sonnet 5 | `anthropic.claude-sonnet-5` |
 | Claude Mythos 5 | `anthropic.claude-mythos-5` |
 | Claude Fable 5 | `anthropic.claude-fable-5` |
+| Claude Opus 4.8 | `anthropic.claude-opus-4-8` |
 | Claude Opus 4.7 | `anthropic.claude-opus-4-7` |
 | Claude Opus 4.6 | `anthropic.claude-opus-4-6-v1` |
 | Claude Sonnet 4.6 | `anthropic.claude-sonnet-4-6` |
 
 **Note**
 Claude Fable 5.1, Claude Mythos 5.1, Claude Mythos 5, and Claude Fable 5 *only* support adaptive thinking. Manual extended thinking (`thinking.type: "enabled"` with `budget_tokens`) and disabled thinking (`thinking.type: "disabled"`) are not supported on these models and will return a 400 error. Use `thinking.type: "adaptive"` with `output_config.effort` to control thinking behavior.
-Claude Opus 4.7 supports adaptive and disabled thinking. To turn thinking off, use `thinking.type: "disabled"`. Manual extended thinking (`thinking.type: "enabled"` with `budget_tokens`) is not supported and will return a 400 error.
+Claude Opus 4.8 and Claude Opus 4.7 support adaptive and disabled thinking. To turn thinking off, use `thinking.type: "disabled"`. Manual extended thinking (`thinking.type: "enabled"` with `budget_tokens`) is not supported on these models and will return a 400 error.
 `thinking.type: "enabled"` and `budget_tokens` are deprecated on Claude Opus 4.6 and Claude Sonnet 4.6 and will be removed in a future model release. Use `thinking.type: "adaptive"` with the effort parameter instead.
 Older models (Claude Sonnet 4.5, Claude Opus 4.5, etc.) do not support adaptive thinking and require `thinking.type: "enabled"` with `budget_tokens`.
 

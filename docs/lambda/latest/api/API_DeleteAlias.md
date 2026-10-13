@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteAlias.html
 # DeleteAlias
 <a name="API_DeleteAlias"></a>
 
-Deletes a Lambda function [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html).
+Deletes a Lambda Event Function [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html).
 
 ## Request Syntax
 <a name="API_DeleteAlias_RequestSyntax"></a>

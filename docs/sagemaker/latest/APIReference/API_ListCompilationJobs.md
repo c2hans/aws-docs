@@ -99,9 +99,11 @@ Required: No
 {
    "CompilationJobSummaries": [
       {
+         "CompilationEndTime": number,
          "CompilationJobArn": "string",
          "CompilationJobName": "string",
          "CompilationJobStatus": "string",
+         "CompilationStartTime": number,
          "CompilationTargetDevice": "string",
          "CompilationTargetPlatformAccelerator": "string",
          "CompilationTargetPlatformArch": "string",

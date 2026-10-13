@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AdditionalParams](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-additionalparams)" : {{Json}},
+  "[ApiBase](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apibase)" : {{String}},
   "[ApiFormat](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apiformat)" : {{String}},
   "[ApiKeyArn](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apikeyarn)" : {{String}},
   "[MaxTokens](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-maxtokens)" : {{Integer}},
@@ -34,6 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AdditionalParams](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-additionalparams): {{Json}}
+  [ApiBase](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apibase): {{String}}
   [ApiFormat](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apiformat): {{String}}
   [ApiKeyArn](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apikeyarn): {{String}}
   [MaxTokens](#cfn-bedrockagentcore-harness-harnessopenaimodelconfig-maxtokens): {{Integer}}
@@ -49,6 +51,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 Provider-specific parameters passed through to the model provider unchanged.
 *Required*: No
 *Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ApiBase`  <a name="cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apibase"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `16383`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ApiFormat`  <a name="cfn-bedrockagentcore-harness-harnessopenaimodelconfig-apiformat"></a>

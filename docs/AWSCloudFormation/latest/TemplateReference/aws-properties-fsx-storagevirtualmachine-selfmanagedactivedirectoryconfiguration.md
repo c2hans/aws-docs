@@ -63,8 +63,6 @@ For more information, see [ Using Amazon FSx for Windows with your self-managed 
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:[^:]{1,63}:secretsmanager:[a-z0-9-]+:[0-9]{12}:secret:[a-zA-Z0-9/_+=.@-]+-[a-zA-Z0-9]{6}$`
-*Minimum*: `64`
-*Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DomainName`  <a name="cfn-fsx-storagevirtualmachine-selfmanagedactivedirectoryconfiguration-domainname"></a>

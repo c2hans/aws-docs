@@ -12,12 +12,18 @@ Returns list of all monitoring job executions.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "EndpointName": "{{string}}",
+   "LastModifiedTimeAfter": {{number}},
+   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "MonitoringJobDefinitionName": "{{string}}",
    "MonitoringScheduleName": "{{string}}",
    "MonitoringTypeEquals": "{{string}}",
    "NextToken": "{{string}}",
+   "ScheduledTimeAfter": {{number}},
+   "ScheduledTimeBefore": {{number}},
    "SortBy": "{{string}}",
    "SortOrder": "{{string}}",
    "StatusEquals": "{{string}}"
@@ -31,11 +37,31 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
+ ** [CreationTimeAfter](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-CreationTimeAfter"></a>
+A filter that returns only jobs created after a specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-CreationTimeBefore"></a>
+A filter that returns only jobs created before a specified time.
+Type: Timestamp
+Required: No
+
  ** [EndpointName](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-EndpointName"></a>
 Name of a specific endpoint to fetch jobs for.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
+Required: No
+
+ ** [LastModifiedTimeAfter](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-LastModifiedTimeAfter"></a>
+A filter that returns only jobs modified before a specified time.
+Type: Timestamp
+Required: No
+
+ ** [LastModifiedTimeBefore](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-LastModifiedTimeBefore"></a>
+A filter that returns only jobs modified after a specified time.
+Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-MaxResults"></a>
@@ -71,6 +97,16 @@ Length Constraints: Minimum length of 0. Maximum length of 8192.
 Pattern: `.*`
 Required: No
 
+ ** [ScheduledTimeAfter](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-ScheduledTimeAfter"></a>
+Filter for jobs scheduled after a specified time.
+Type: Timestamp
+Required: No
+
+ ** [ScheduledTimeBefore](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-ScheduledTimeBefore"></a>
+Filter for jobs scheduled before a specified time.
+Type: Timestamp
+Required: No
+
  ** [SortBy](#API_ListMonitoringExecutions_RequestSyntax) **   <a name="sagemaker-ListMonitoringExecutions-request-SortBy"></a>
 Whether to sort the results by the `Status`, `CreationTime`, or `ScheduledTime` field. The default is `CreationTime`.
 Type: String
@@ -96,13 +132,16 @@ Required: No
 {
    "MonitoringExecutionSummaries": [
       {
+         "CreationTime": number,
          "EndpointName": "string",
          "FailureReason": "string",
+         "LastModifiedTime": number,
          "MonitoringExecutionStatus": "string",
          "MonitoringJobDefinitionName": "string",
          "MonitoringScheduleName": "string",
          "MonitoringType": "string",
-         "ProcessingJobArn": "string"
+         "ProcessingJobArn": "string",
+         "ScheduledTime": number
       }
    ],
    "NextToken": "string"

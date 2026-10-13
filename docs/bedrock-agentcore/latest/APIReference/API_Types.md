@@ -217,6 +217,7 @@ The following data types are supported:
 +  [RecommendationResult](API_RecommendationResult.md)
 +  [RecommendationResultConfigurationBundle](API_RecommendationResultConfigurationBundle.md)
 +  [RecommendationSummary](API_RecommendationSummary.md)
++  [RecordExpirySpecification](API_RecordExpirySpecification.md)
 +  [RegistryRecordSummary](API_RegistryRecordSummary.md)
 +  [ResourceContent](API_ResourceContent.md)
 +  [ResourceLocation](API_ResourceLocation.md)

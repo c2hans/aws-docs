@@ -21,6 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[KmsKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmskeyarn)" : {{String}},
+  "[KmsKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmskeyid)" : {{String}},
   "[Status](#cfn-paymentcryptography-key-replicationstatustype-status)" : {{String}},
   "[StatusMessage](#cfn-paymentcryptography-key-replicationstatustype-statusmessage)" : {{String}}
 }
@@ -30,12 +32,32 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-paymentcryptography-key-replicationstatustype-syntax.yaml"></a>
 
 ```
+  [KmsKeyArn](#cfn-paymentcryptography-key-replicationstatustype-kmskeyarn): {{String}}
+  [KmsKeyId](#cfn-paymentcryptography-key-replicationstatustype-kmskeyid): {{String}}
   [Status](#cfn-paymentcryptography-key-replicationstatustype-status): {{String}}
   [StatusMessage](#cfn-paymentcryptography-key-replicationstatustype-statusmessage): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-paymentcryptography-key-replicationstatustype-properties"></a>
+
+`KmsKeyArn`  <a name="cfn-paymentcryptography-key-replicationstatustype-kmskeyarn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:aws(-[^:]+)?:kms:[a-z0-9-]{1,20}:[0-9]{12}:key/[a-zA-Z0-9-]+$`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KmsKeyId`  <a name="cfn-paymentcryptography-key-replicationstatustype-kmskeyid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9:/_-]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-paymentcryptography-key-replicationstatustype-status"></a>
 The current status of key replication in this AWS Region.

@@ -426,7 +426,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 ## Actions defined by AWS Transfer Family
 <a name="list_transfer-actions-as-permissions"></a>
 
-You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
 - **   [CreateAccess](https://docs.aws.amazon.com/transfer/latest/userguide/API_CreateAccess.html)  **
   - **Description:** Grants permission to add an access associated with a server

@@ -21,6 +21,7 @@ Currently, the only `Option` that you can modify with `UpdateTaskExecution` is `
       "Gid": "{{string}}",
       "LogLevel": "{{string}}",
       "Mtime": "{{string}}",
+      "ObjectMetadata": "{{string}}",
       "ObjectTags": "{{string}}",
       "OverwriteMode": "{{string}}",
       "PosixPermissions": "{{string}}",

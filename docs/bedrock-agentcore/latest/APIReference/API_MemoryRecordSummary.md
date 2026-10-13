@@ -56,6 +56,11 @@ The relevance score of the memory record when returned as part of a search resul
 Type: Double
 Required: No
 
+ ** timestamp **   <a name="BedrockAgentCore-Type-MemoryRecordSummary-timestamp"></a>
+The timestamp based on which the memory record was ingested. This reflects the time of the source content that the record was derived from, which can differ from `createdAt`, the time the record itself was written.
+Type: Timestamp
+Required: No
+
 ## See Also
 <a name="API_MemoryRecordSummary_SeeAlso"></a>
 

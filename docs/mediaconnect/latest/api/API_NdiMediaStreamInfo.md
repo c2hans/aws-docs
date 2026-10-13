@@ -30,6 +30,11 @@ Required: Yes
 Type: Integer
 Required: No
 
+ ** color **   <a name="mediaconnect-Type-NdiMediaStreamInfo-color"></a>
+ The color signaling of the video stream. Used when the `streamType` is `Video`.
+Type: [ColorInformation](API_ColorInformation.md) object
+Required: No
+
  ** frameRate **   <a name="mediaconnect-Type-NdiMediaStreamInfo-frameRate"></a>
  The number of video frames displayed per second. Used when the `streamType` is `Video`.
 Type: String

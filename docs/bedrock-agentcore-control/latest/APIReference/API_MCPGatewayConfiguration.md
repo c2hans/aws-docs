@@ -10,6 +10,11 @@ The configuration for a Model Context Protocol (MCP) gateway. This structure def
 ## Contents
 <a name="API_MCPGatewayConfiguration_Contents"></a>
 
+ ** disableMcpListToolsPagination **   <a name="bedrockagentcorecontrol-Type-MCPGatewayConfiguration-disableMcpListToolsPagination"></a>
+Specifies whether pagination is disabled for the Model Context Protocol (MCP) `tools/list` operation. When set to `true`, the gateway returns the complete list of tools in a single response without a pagination cursor. When set to `false` or omitted, the gateway returns tools in paginated responses.
+Type: Boolean
+Required: No
+
  ** instructions **   <a name="bedrockagentcorecontrol-Type-MCPGatewayConfiguration-instructions"></a>
 The instructions for using the Model Context Protocol gateway. These instructions provide guidance on how to interact with the gateway.
 Type: String

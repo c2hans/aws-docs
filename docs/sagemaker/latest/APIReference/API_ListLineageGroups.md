@@ -12,6 +12,8 @@ A list of lineage groups shared with your AWS account. For more information, see
 
 ```
 {
+   "CreatedAfter": {{number}},
+   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
@@ -25,6 +27,16 @@ A list of lineage groups shared with your AWS account. For more information, see
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreatedAfter](#API_ListLineageGroups_RequestSyntax) **   <a name="sagemaker-ListLineageGroups-request-CreatedAfter"></a>
+A timestamp to filter against lineage groups created after a certain point in time.
+Type: Timestamp
+Required: No
+
+ ** [CreatedBefore](#API_ListLineageGroups_RequestSyntax) **   <a name="sagemaker-ListLineageGroups-request-CreatedBefore"></a>
+A timestamp to filter against lineage groups created before a certain point in time.
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListLineageGroups_RequestSyntax) **   <a name="sagemaker-ListLineageGroups-request-MaxResults"></a>
 The maximum number of endpoints to return in the response. This value defaults to 10.
@@ -58,7 +70,9 @@ Required: No
 {
    "LineageGroupSummaries": [
       {
+         "CreationTime": number,
          "DisplayName": "string",
+         "LastModifiedTime": number,
          "LineageGroupArn": "string",
          "LineageGroupName": "string"
       }

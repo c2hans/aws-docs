@@ -12,6 +12,8 @@ Lists models created with the `CreateModel` API.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -26,6 +28,16 @@ Lists models created with the `CreateModel` API.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListModels_RequestSyntax) **   <a name="sagemaker-ListModels-request-CreationTimeAfter"></a>
+A filter that returns only models with a creation time greater than or equal to the specified time (timestamp).
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListModels_RequestSyntax) **   <a name="sagemaker-ListModels-request-CreationTimeBefore"></a>
+A filter that returns only models created before the specified time (timestamp).
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListModels_RequestSyntax) **   <a name="sagemaker-ListModels-request-MaxResults"></a>
 The maximum number of models to return in the response.
@@ -66,6 +78,7 @@ Required: No
 {
    "Models": [
       {
+         "CreationTime": number,
          "ModelArn": "string",
          "ModelName": "string"
       }

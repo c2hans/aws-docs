@@ -12,6 +12,8 @@ Lists the trials in your account. Specify an experiment name to limit the list t
 
 ```
 {
+   "CreatedAfter": {{number}},
+   "CreatedBefore": {{number}},
    "ExperimentName": "{{string}}",
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
@@ -27,6 +29,16 @@ Lists the trials in your account. Specify an experiment name to limit the list t
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreatedAfter](#API_ListTrials_RequestSyntax) **   <a name="sagemaker-ListTrials-request-CreatedAfter"></a>
+A filter that returns only trials created after the specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreatedBefore](#API_ListTrials_RequestSyntax) **   <a name="sagemaker-ListTrials-request-CreatedBefore"></a>
+A filter that returns only trials created before the specified time.
+Type: Timestamp
+Required: No
 
  ** [ExperimentName](#API_ListTrials_RequestSyntax) **   <a name="sagemaker-ListTrials-request-ExperimentName"></a>
 A filter that returns only trials that are part of the specified experiment.
@@ -75,7 +87,9 @@ Required: No
    "NextToken": "string",
    "TrialSummaries": [
       {
+         "CreationTime": number,
          "DisplayName": "string",
+         "LastModifiedTime": number,
          "TrialArn": "string",
          "TrialName": "string",
          "TrialSource": {

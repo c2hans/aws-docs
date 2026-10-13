@@ -10,6 +10,11 @@ Provides summary information about a labeling job.
 ## Contents
 <a name="API_LabelingJobSummary_Contents"></a>
 
+ ** CreationTime **   <a name="sagemaker-Type-LabelingJobSummary-CreationTime"></a>
+The date and time that the job was created (timestamp).
+Type: Timestamp
+Required: Yes
+
  ** LabelCounters **   <a name="sagemaker-Type-LabelingJobSummary-LabelCounters"></a>
 Counts showing the progress of the labeling job.
 Type: [LabelCounters](API_LabelCounters.md) object
@@ -33,6 +38,11 @@ Required: Yes
 The current status of the labeling job.
 Type: String
 Valid Values: `Initializing | InProgress | Completed | Failed | Stopping | Stopped`
+Required: Yes
+
+ ** LastModifiedTime **   <a name="sagemaker-Type-LabelingJobSummary-LastModifiedTime"></a>
+The date and time that the job was last modified (timestamp).
+Type: Timestamp
 Required: Yes
 
  ** WorkteamArn **   <a name="sagemaker-Type-LabelingJobSummary-WorkteamArn"></a>

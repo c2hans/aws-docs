@@ -118,7 +118,8 @@ If `Mtime` is set to `NONE`, `Atime` must also be set to `NONE`.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ObjectMetadata`  <a name="cfn-datasync-task-options-objectmetadata"></a>
-Property description not available.
+Specifies whether you want DataSync to `PRESERVE` object metadata (default behavior) when transferring between object storage systems. If you want your DataSync task to ignore object metadata, specify the `NONE` value.
+Even if you specify `NONE`, metadata for the last modified time is still preserved.
 *Required*: No
 *Type*: String
 *Allowed values*: `PRESERVE | NONE`

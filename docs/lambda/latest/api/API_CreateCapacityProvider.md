@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CreateCapacityProv
 # CreateCapacityProvider
 <a name="API_CreateCapacityProvider"></a>
 
-Creates a capacity provider that manages compute resources for Lambda functions
+Creates a capacity provider that manages compute resources for Lambda Event Functions
 
 ## Request Syntax
 <a name="API_CreateCapacityProvider_RequestSyntax"></a>

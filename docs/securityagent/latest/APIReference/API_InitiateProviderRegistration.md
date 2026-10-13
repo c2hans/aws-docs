@@ -51,7 +51,7 @@ Required: No
  ** [provider](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-provider"></a>
 The provider to initiate registration with.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS | JIRA`
 Required: Yes
 
  ** [targetUrl](#API_InitiateProviderRegistration_RequestSyntax) **   <a name="securityagent-InitiateProviderRegistration-request-targetUrl"></a>

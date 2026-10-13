@@ -5,21 +5,21 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 # RecordTypeSchemaOverride
 <a name="API_RecordTypeSchemaOverride"></a>
 
-A schema override for a specific record type within a custom metadata schema configuration.
+The custom metadata fields for one record type, in addition to the common attributes defined in `defaultSchema`.
 
 ## Contents
 <a name="API_RecordTypeSchemaOverride_Contents"></a>
 
  ** recordType **   <a name="agentregistrycontrol-Type-RecordTypeSchemaOverride-recordType"></a>
-The record type that this schema override applies to.
+The record type these fields apply to.
 Type: String
 Valid Values: `MCP | AGENT | CUSTOM | SKILL | GATEWAY`
 Required: Yes
 
  ** schema **   <a name="agentregistrycontrol-Type-RecordTypeSchemaOverride-schema"></a>
-The JSON Schema for the specified record type. Must follow the same structural rules as the default schema.
+A JSON Schema with the fields for this record type.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 10240.
+Length Constraints: Minimum length of 1. Maximum length of 16384.
 Required: Yes
 
 ## See Also

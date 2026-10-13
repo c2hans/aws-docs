@@ -25,6 +25,7 @@ Required: No
 
  ** oauth **   <a name="bedrockagentcorecontrol-Type-HarnessGatewayOutboundAuth-oauth"></a>
 Use OAuth credentials for outbound authentication to the gateway.
+The `AUTHORIZATION_CODE` grant type is not supported for outbound authentication from a harness to an AgentCore Gateway, even when `defaultReturnUrl` is specified.
 Type: [OAuthCredentialProvider](API_OAuthCredentialProvider.md) object
 Required: No
 

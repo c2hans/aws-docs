@@ -43,7 +43,10 @@ Required: Yes
          "AvailabilityZoneId": "string",
          "CurrencyCode": "string",
          "DurationHours": number,
+         "EndDate": number,
+         "ExtendedAt": number,
          "PaymentStatus": "string",
+         "StartDate": number,
          "Status": "string",
          "TrainingPlanExtensionOfferingId": "string",
          "UpfrontFee": "string"

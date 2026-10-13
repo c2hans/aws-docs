@@ -39,7 +39,7 @@ Access to this model is limited to eligible customers. To learn more, see [Accel
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-56-cyber-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs are supported for Daybreak Red: GPT-5.6 Cyber. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs are supported for Daybreak Red: GPT-5.6 Cyber. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -81,6 +81,8 @@ For Chat Completions, use `/openai/v1/chat/completions`.
 
 All prices are in USD per 1 million tokens for the Standard tier.
 
+The **Input — 30-minute cache write** column is the price per 1 million tokens written to the prompt cache. The 30-minute figure is how long a cached prompt prefix is retained, not a quantity of tokens. For more information, see [prompt caching](prompt-caching.md).
+
 Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
 
 *Priority and Flex tiers are not supported for this model.*
@@ -88,7 +90,7 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 ### Commercial Regions — short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-56-cyber-pricing-commercial-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $13.75 | $17.1875 | $1.375 | $82.50 |
 

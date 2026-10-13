@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html
 ---
 
-# Endpoints supported by Amazon Bedrock
+# Inference endpoints supported by Amazon Bedrock
 <a name="endpoints"></a>
 
 An endpoint is the URL that your application uses to send [inference](inference.md) requests to Amazon Bedrock. Amazon Bedrock provides two inference endpoints. The endpoint you choose determines which APIs and features are available.
@@ -15,7 +15,7 @@ For most new applications, use the `bedrock-runtime` endpoint. Use `bedrock-mant
 | bedrock-mantle.{region}.api.aws | [Responses API](inference-responses-api.md) / [Chat Completions API](inference-chat-completions.md) / [Messages API](inference-messages-api.md) | Region-specific endpoints for making inference requests for models hosted in Amazon Bedrock using the OpenAI-compatible endpoints and the Anthropic Messages API. |
 
 **Note**
-Both endpoints use the same underlying Mantle inference engine and benefit from Mantle's [zero operator access (ZOA)](https://aws.amazon.com/blogs/machine-learning/exploring-the-zero-operator-access-design-of-mantle/) design. The `bedrock-mantle` name identifies an endpoint surface, not a different inference engine.
+Both endpoints use the same underlying Mantle inference engine. The `bedrock-mantle` name identifies an endpoint surface, not a different inference engine.
 
 Existing applications that use `bedrock-mantle` continue to be fully supported and do not need to change. Both endpoints let you bring an existing OpenAI SDK codebase to Amazon Bedrock by changing only the base URL and API key, and both support the OpenAI-compatible Responses and Chat Completions APIs and the Anthropic Messages API.
 

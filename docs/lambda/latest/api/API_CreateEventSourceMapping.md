@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceM
 # CreateEventSourceMapping
 <a name="API_CreateEventSourceMapping"></a>
 
-Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and invokes the function.
+Creates a mapping between an event source and an AWS Lambda Event Function. Lambda reads items from the event source and invokes the function.
 
 For details about how to configure different event sources, see the following topics.
 +  [ Amazon DynamoDB Streams](https://docs.aws.amazon.com/lambda/latest/dg/with-ddb.html#services-dynamodb-eventsourcemapping)

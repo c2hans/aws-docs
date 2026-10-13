@@ -24,6 +24,7 @@ The following data types are supported:
 +  [Reservation](API_Reservation.md)
 +  [ReservationOffering](API_ReservationOffering.md)
 +  [ResourcePolicy](API_ResourcePolicy.md)
++  [S3TablePublishStatus](API_S3TablePublishStatus.md)
 +  [Schedule](API_Schedule.md)
 +  [ScheduledActionAssociation](API_ScheduledActionAssociation.md)
 +  [ScheduledActionResponse](API_ScheduledActionResponse.md)

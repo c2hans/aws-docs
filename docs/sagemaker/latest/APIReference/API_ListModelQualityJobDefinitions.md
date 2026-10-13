@@ -12,6 +12,8 @@ Gets a list of model quality monitoring job definitions in your account.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "EndpointName": "{{string}}",
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
@@ -27,6 +29,16 @@ Gets a list of model quality monitoring job definitions in your account.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListModelQualityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelQualityJobDefinitions-request-CreationTimeAfter"></a>
+A filter that returns only model quality monitoring job definitions created after the specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListModelQualityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelQualityJobDefinitions-request-CreationTimeBefore"></a>
+A filter that returns only model quality monitoring job definitions created before the specified time.
+Type: Timestamp
+Required: No
 
  ** [EndpointName](#API_ListModelQualityJobDefinitions_RequestSyntax) **   <a name="sagemaker-ListModelQualityJobDefinitions-request-EndpointName"></a>
 A filter that returns only model quality monitoring job definitions that are associated with the specified endpoint.
@@ -74,6 +86,7 @@ Required: No
 {
    "JobDefinitionSummaries": [
       {
+         "CreationTime": number,
          "EndpointName": "string",
          "MonitoringJobDefinitionArn": "string",
          "MonitoringJobDefinitionName": "string"

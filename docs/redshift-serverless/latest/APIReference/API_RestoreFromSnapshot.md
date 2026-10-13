@@ -13,6 +13,7 @@ Restores a namespace from a snapshot.
 ```
 {
    "adminPasswordSecretKmsKeyId": "{{string}}",
+   "maintainIntegration": {{boolean}},
    "manageAdminPassword": {{boolean}},
    "namespaceName": "{{string}}",
    "ownerAccount": "{{string}}",
@@ -32,6 +33,12 @@ The request accepts the following data in JSON format.
  ** [adminPasswordSecretKmsKeyId](#API_RestoreFromSnapshot_RequestSyntax) **   <a name="redshiftserverless-RestoreFromSnapshot-request-adminPasswordSecretKmsKeyId"></a>
 The ID of the AWS Key Management Service (KMS) key used to encrypt and store the namespace's admin credentials secret.
 Type: String
+Required: No
+
+ ** [maintainIntegration](#API_RestoreFromSnapshot_RequestSyntax) **   <a name="redshiftserverless-RestoreFromSnapshot-request-maintainIntegration"></a>
+If `true`, maintain existing data sharing, zero-ETL and S3 event integrations when restoring. Otherwise, integrations will not be maintained after the restore operation. Integrations are only maintained when restored to the same serverless namespace.
+Default: true
+Type: Boolean
 Required: No
 
  ** [manageAdminPassword](#API_RestoreFromSnapshot_RequestSyntax) **   <a name="redshiftserverless-RestoreFromSnapshot-request-manageAdminPassword"></a>
@@ -89,6 +96,15 @@ Required: Yes
       "namespaceArn": "string",
       "namespaceId": "string",
       "namespaceName": "string",
+      "s3TablePublishStatus": {
+         "enabledAll": boolean,
+         "lastIngestionTimes": {
+            "string" : "string"
+         },
+         "s3TableGranularity": "string",
+         "s3TableNamespace": "string",
+         "s3Tables": [ "string" ]
+      },
       "status": "string"
    },
    "ownerAccount": "string",

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_E
 Runs one or more SQL statements.
 
 **Note**
-This operation isn't supported for Aurora Serverless v2 and provisioned DB clusters. For Aurora Serverless v1 DB clusters, the operation is deprecated. Use the `BatchExecuteStatement` or `ExecuteStatement` operation.
+This operation is deprecated. Please use the `BatchExecuteStatement` or `ExecuteStatement` operation.
 
 ## Request Syntax
 <a name="API_ExecuteSql_RequestSyntax"></a>
@@ -133,7 +133,7 @@ You don't have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** BadRequestException **
-There is an error in the call or in a SQL statement. (This error only appears in calls from Aurora Serverless v1 databases.)
+There is an error in the call or in a SQL statement. This exception is deprecated.
  ** message **
 The error message returned by this `BadRequestException` error.
 HTTP Status Code: 400

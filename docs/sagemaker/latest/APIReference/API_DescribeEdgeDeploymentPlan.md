@@ -50,12 +50,14 @@ Required: No
 
 ```
 {
+   "CreationTime": number,
    "DeviceFleetName": "string",
    "EdgeDeploymentFailed": number,
    "EdgeDeploymentPending": number,
    "EdgeDeploymentPlanArn": "string",
    "EdgeDeploymentPlanName": "string",
    "EdgeDeploymentSuccess": number,
+   "LastModifiedTime": number,
    "ModelConfigs": [
       {
          "EdgePackagingJobName": "string",
@@ -71,6 +73,7 @@ Required: No
          "DeploymentStatus": {
             "EdgeDeploymentFailedInStage": number,
             "EdgeDeploymentPendingInStage": number,
+            "EdgeDeploymentStageStartTime": number,
             "EdgeDeploymentStatusMessage": "string",
             "EdgeDeploymentSuccessInStage": number,
             "StageStatus": "string"
@@ -93,6 +96,10 @@ Required: No
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CreationTime](#API_DescribeEdgeDeploymentPlan_ResponseSyntax) **   <a name="sagemaker-DescribeEdgeDeploymentPlan-response-CreationTime"></a>
+The time when the edge deployment plan was created.
+Type: Timestamp
 
  ** [DeviceFleetName](#API_DescribeEdgeDeploymentPlan_ResponseSyntax) **   <a name="sagemaker-DescribeEdgeDeploymentPlan-response-DeviceFleetName"></a>
 The device fleet used for this edge deployment plan.
@@ -123,6 +130,10 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
  ** [EdgeDeploymentSuccess](#API_DescribeEdgeDeploymentPlan_ResponseSyntax) **   <a name="sagemaker-DescribeEdgeDeploymentPlan-response-EdgeDeploymentSuccess"></a>
 The number of edge devices with the successful deployment.
 Type: Integer
+
+ ** [LastModifiedTime](#API_DescribeEdgeDeploymentPlan_ResponseSyntax) **   <a name="sagemaker-DescribeEdgeDeploymentPlan-response-LastModifiedTime"></a>
+The time when the edge deployment plan was last updated.
+Type: Timestamp
 
  ** [ModelConfigs](#API_DescribeEdgeDeploymentPlan_ResponseSyntax) **   <a name="sagemaker-DescribeEdgeDeploymentPlan-response-ModelConfigs"></a>
 List of models associated with the edge deployment plan.

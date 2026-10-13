@@ -39,6 +39,7 @@ Required: No
 
  ** allowedInstanceTypes **   <a name="deadlinecloud-Type-ServiceManagedEc2InstanceCapabilities-allowedInstanceTypes"></a>
 The allowable Amazon EC2 instance types.
+If you specify `allowedInstanceTypes`, you can't specify `excludedInstanceTypes`.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 100.
@@ -58,6 +59,7 @@ Required: No
 
  ** excludedInstanceTypes **   <a name="deadlinecloud-Type-ServiceManagedEc2InstanceCapabilities-excludedInstanceTypes"></a>
 The instance types to exclude from the fleet.
+If you specify `excludedInstanceTypes`, you can't specify `allowedInstanceTypes`.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 1. Maximum length of 100.

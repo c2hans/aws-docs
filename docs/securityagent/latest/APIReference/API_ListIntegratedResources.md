@@ -56,7 +56,7 @@ Required: No
  ** [resourceType](#API_ListIntegratedResources_RequestSyntax) **   <a name="securityagent-ListIntegratedResources-request-resourceType"></a>
 The type of resource to filter by.
 Type: String
-Valid Values: `CODE_REPOSITORY | DOCUMENT`
+Valid Values: `CODE_REPOSITORY | DOCUMENT | PROJECT`
 Required: No
 
 ## Response Syntax

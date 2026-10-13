@@ -290,7 +290,13 @@ After you've gathered this information, you can proceed to [create your knowledg
 | Field | Corresponding field in knowledge base setup (Console) | Corresponding field in knowledge base setup (API) | Description |
 | --- | --- | --- | --- |
 | Vector bucket ARN | S3 vector bucket ARN | vectorBucketArn | The Amazon Resource Name (ARN) of your S3 vector bucket. |
-| Vector index ARN | S3 vector index ARN | vectorIndexARN | The Amazon Resource Name (ARN) of the vector index for your S3 vector bucket. |
+| Vector index ARN | S3 vector index ARN | indexArn | The Amazon Resource Name (ARN) of the vector index for your S3 vector bucket. |
+
+**Note**
+In the API, `s3VectorsConfiguration` accepts the vector index in one of two ways, and you must use exactly one of them:
+`indexArn` on its own. If you also pass `vectorBucketArn`, the `indexArn` value must begin with it.
+`vectorBucketArn` and `indexName` together, with `indexArn` omitted.
+Passing both `indexArn` and `indexName` returns a `ValidationException` with the message `Vector index name should not be present with namespace arn`. Omitting `indexArn` without providing both `vectorBucketArn` and `indexName` also returns a `ValidationException`.
 
 ------
 #### [ Amazon Aurora (RDS) ]

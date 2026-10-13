@@ -12,6 +12,8 @@ Gets a list of the pipeline executions.
 
 ```
 {
+   "CreatedAfter": {{number}},
+   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "PipelineName": "{{string}}",
@@ -26,6 +28,16 @@ Gets a list of the pipeline executions.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreatedAfter](#API_ListPipelineExecutions_RequestSyntax) **   <a name="sagemaker-ListPipelineExecutions-request-CreatedAfter"></a>
+A filter that returns the pipeline executions that were created after a specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreatedBefore](#API_ListPipelineExecutions_RequestSyntax) **   <a name="sagemaker-ListPipelineExecutions-request-CreatedBefore"></a>
+A filter that returns the pipeline executions that were created before a specified time.
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListPipelineExecutions_RequestSyntax) **   <a name="sagemaker-ListPipelineExecutions-request-MaxResults"></a>
 The maximum number of pipeline executions to return in the response.
@@ -71,7 +83,8 @@ Required: No
          "PipelineExecutionDescription": "string",
          "PipelineExecutionDisplayName": "string",
          "PipelineExecutionFailureReason": "string",
-         "PipelineExecutionStatus": "string"
+         "PipelineExecutionStatus": "string",
+         "StartTime": number
       }
    ]
 }

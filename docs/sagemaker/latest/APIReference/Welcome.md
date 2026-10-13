@@ -50,3 +50,8 @@ Contains all data plane API operations and data types for Amazon SageMaker Metri
 <a name="Welcome_Amazon_SageMaker_Job_Runtime_Service"></a>
 
 Amazon SageMaker Job Runtime provides APIs that enable communication between your agent and the policy model during multi-turn reinforcement learning jobs. These APIs support inference requests to the policy model, rollout lifecycle management, and reward submission.
+
+## Amazon SageMaker Training Session Runtime
+<a name="Welcome_Amazon_SageMaker_Training_Session_Runtime"></a>
+
+Amazon SageMaker Training Session Runtime provides APIs for executing training operations and sampling operations against a running training session. Use these APIs to submit asynchronous training steps (such as forward-backward passes, optimizer steps, and checkpoint saves) and to generate text samples from the model being trained.

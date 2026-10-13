@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::SageMaker::Cluster ClusterAccountingDatabase
 <a name="aws-properties-sagemaker-cluster-clusteraccountingdatabase"></a>
 
-<a name="aws-properties-sagemaker-cluster-clusteraccountingdatabase-description"></a>The `ClusterAccountingDatabase` property type specifies Property description not available. for an [AWS::SageMaker::Cluster](aws-resource-sagemaker-cluster.md).
+The external MySQL-compatible database that the Slurm accounting daemon (`slurmdbd`) connects to for a SageMaker HyperPod cluster. You provide the database credentials in an AWS Secrets Manager secret instead of in the request.
 
 ## Syntax
 <a name="aws-properties-sagemaker-cluster-clusteraccountingdatabase-syntax"></a>
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-sagemaker-cluster-clusteraccountingdatabase-properties"></a>
 
 `Endpoint`  <a name="cfn-sagemaker-cluster-clusteraccountingdatabase-endpoint"></a>
-Property description not available.
+The hostname or endpoint of the accounting database, such as the endpoint of an Amazon RDS for MySQL or Aurora MySQL database. The database must be reachable from the subnets and security groups that you configure for the cluster.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(?=.{1,255}$)([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)(\.[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$`
@@ -49,7 +49,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-sagemaker-cluster-clusteraccountingdatabase-name"></a>
-Property description not available.
+The name of the database schema that stores the Slurm accounting data. The default is `slurm_acct_db_` followed by the cluster ID from the cluster ARN, for example `slurm_acct_db_a1b2c3d4e5f6`.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9$_]+$`
@@ -58,7 +58,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Port`  <a name="cfn-sagemaker-cluster-clusteraccountingdatabase-port"></a>
-Property description not available.
+The port that the accounting database listens on. The default is `3306`.
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
@@ -66,7 +66,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecretArn`  <a name="cfn-sagemaker-cluster-clusteraccountingdatabase-secretarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the user name and password for the accounting database. The database user must be able to create the schema and to read from and write to it.
 *Required*: Yes
 *Type*: String
 *Minimum*: `20`

@@ -20,11 +20,15 @@ Required: No
 
  ** mediaConnectFlow **   <a name="mediaconnect-Type-RouterInputConfiguration-mediaConnectFlow"></a>
 Configuration settings for connecting a router input to a flow output.
+To connect the router input to the flow output, provide both `flowArn` and `flowOutputArn`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+You can't change `sourceTransitDecryption` while the router input is connected to a flow output. To change it, first disconnect the router input, then update the decryption.
 Type: [MediaConnectFlowRouterInputConfiguration](API_MediaConnectFlowRouterInputConfiguration.md) object
 Required: No
 
  ** mediaLiveChannel **   <a name="mediaconnect-Type-RouterInputConfiguration-mediaLiveChannel"></a>
 Configuration settings for connecting a router input to a MediaLive channel output.
+To connect the router input to the MediaLive channel output, provide all three of `mediaLiveChannelArn`, `mediaLivePipelineId`, and `mediaLiveChannelOutputName`. To disconnect it, call the update operation and omit all three fields while keeping this configuration object.
+You can't change `sourceTransitDecryption` while the router input is connected to a MediaLive channel output. To change it, first disconnect the router input, then update the decryption.
 Type: [MediaLiveChannelRouterInputConfiguration](API_MediaLiveChannelRouterInputConfiguration.md) object
 Required: No
 

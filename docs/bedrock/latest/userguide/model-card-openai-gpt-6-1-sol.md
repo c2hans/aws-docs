@@ -32,7 +32,7 @@ OpenAI GPT-6.1 Sol brings advanced capabilities to workloads where both performa
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-6-1-sol-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs GPT-6.1 Sol supports. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs GPT-6.1 Sol supports. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -116,6 +116,8 @@ For JSON Schema output with Converse and ConverseStream, you must set `additiona
 
 All prices are in USD per 1 million tokens. The following tables list Standard and Ultrafast prices. Global CRIS rates match [OpenAI first-party pricing](https://developers.openai.com/api/docs/pricing) for the same service tier.
 
+The **Input — 30-minute cache write** column is the price per 1 million tokens written to the prompt cache. The 30-minute figure is how long a cached prompt prefix is retained, not a quantity of tokens. For more information, see [prompt caching](prompt-caching.md).
+
 In-Region access on `bedrock-mantle` costs 10% more than Global CRIS. US geographic cross-Region inference (US CRIS) on `bedrock-runtime` has the same premium. This applies to both service tiers. The tables include this premium.
 
 GPT-6.1 Sol supports both implicit and explicit prompt caching. Cache-write tokens are billed at 1.25× the uncached input-token rate, and cache-read tokens are billed at 0.05× the uncached input-token rate. For configuration and API support, see [Prompt caching](#model-card-openai-gpt-6-1-sol-prompt-caching).
@@ -147,7 +149,7 @@ Ultrafast costs six times as much as Standard. Global CRIS rates match [OpenAI f
 ### Ultrafast — Commercial Regions, short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-6-1-sol-pricing-ultrafast-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region (bedrock-mantle in us-east-1) | $13.20 | $16.50 | $0.66 | $66.00 |
 | US CRIS (bedrock-runtime) | $13.20 | $16.50 | $0.66 | $66.00 |
@@ -156,7 +158,7 @@ Ultrafast costs six times as much as Standard. Global CRIS rates match [OpenAI f
 ### Ultrafast — Commercial Regions, long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-6-1-sol-pricing-ultrafast-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region (bedrock-mantle in us-east-1) | $26.40 | $33.00 | $1.32 | $99.00 |
 | US CRIS (bedrock-runtime) | $26.40 | $33.00 | $1.32 | $99.00 |
@@ -165,7 +167,7 @@ Ultrafast costs six times as much as Standard. Global CRIS rates match [OpenAI f
 ## Programmatic Access
 <a name="model-card-openai-gpt-6-1-sol-programmatic-access"></a>
 
-To call this model from code, use the following model IDs and endpoint URLs. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+To call this model from code, use the following model IDs and endpoint URLs. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |

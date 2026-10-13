@@ -16,6 +16,7 @@ Content-type: application/json
 
 {
    "clientToken": "{{string}}",
+   "recordExpirySpecification": { ... },
    "records": [
       {
          "content": { ... },
@@ -50,6 +51,12 @@ The request accepts the following data in JSON format.
  ** [clientToken](#API_BatchCreateMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-BatchCreateMemoryRecords-request-clientToken"></a>
 A unique, case-sensitive identifier to ensure idempotent processing of the batch request.
 Type: String
+Required: No
+
+ ** [recordExpirySpecification](#API_BatchCreateMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-BatchCreateMemoryRecords-request-recordExpirySpecification"></a>
+The record expiry (long-term memory time-to-live) applied to every record created by this request. Set `recordExpiryDurationDays` to the number of days after which the records expire. Only the expiry provided here is applied; the records' strategy association has no effect on their expiry. If you do not provide this value, the records do not expire. The `REMOVE` action does not apply when creating records.
+Type: [RecordExpirySpecification](API_RecordExpirySpecification.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** [records](#API_BatchCreateMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-BatchCreateMemoryRecords-request-records"></a>

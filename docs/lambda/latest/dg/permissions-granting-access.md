@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/permissions-granting-access.html
 ---
 
-# Granting other AWS entities access to your Lambda functions
+# Granting other AWS entities access to your Event Functions
 <a name="permissions-granting-access"></a>
 
 To give other AWS accounts, organizations, and services permissions to access your Lambda resources, you have a few options:

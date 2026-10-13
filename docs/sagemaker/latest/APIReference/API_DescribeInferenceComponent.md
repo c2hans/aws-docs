@@ -35,6 +35,7 @@ Required: Yes
 
 ```
 {
+   "CreationTime": number,
    "EndpointArn": "string",
    "EndpointName": "string",
    "FailureReason": "string",
@@ -62,6 +63,7 @@ Required: Yes
          "WaitIntervalInSeconds": number
       }
    },
+   "LastModifiedTime": number,
    "RuntimeConfig": {
       "CurrentCopyCount": number,
       "DesiredCopyCount": number,
@@ -91,6 +93,7 @@ Required: Yes
             ]
          },
          "DeployedImage": {
+            "ResolutionTime": number,
             "ResolvedImage": "string",
             "SpecifiedImage": "string"
          },
@@ -135,6 +138,7 @@ Required: Yes
                ]
             },
             "DeployedImage": {
+               "ResolutionTime": number,
                "ResolvedImage": "string",
                "SpecifiedImage": "string"
             },
@@ -170,6 +174,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CreationTime](#API_DescribeInferenceComponent_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceComponent-response-CreationTime"></a>
+The time when the inference component was created.
+Type: Timestamp
 
  ** [EndpointArn](#API_DescribeInferenceComponent_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceComponent-response-EndpointArn"></a>
 The Amazon Resource Name (ARN) of the endpoint that hosts the inference component.
@@ -207,6 +215,10 @@ Valid Values: `InService | Creating | Updating | Failed | Deleting`
  ** [LastDeploymentConfig](#API_DescribeInferenceComponent_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceComponent-response-LastDeploymentConfig"></a>
 The deployment and rollback settings that you assigned to the inference component.
 Type: [InferenceComponentDeploymentConfig](API_InferenceComponentDeploymentConfig.md) object
+
+ ** [LastModifiedTime](#API_DescribeInferenceComponent_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceComponent-response-LastModifiedTime"></a>
+The time when the inference component was last updated.
+Type: Timestamp
 
  ** [RuntimeConfig](#API_DescribeInferenceComponent_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceComponent-response-RuntimeConfig"></a>
 Details about the runtime settings for the model that is deployed with the inference component.

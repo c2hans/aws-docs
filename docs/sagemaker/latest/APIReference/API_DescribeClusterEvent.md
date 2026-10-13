@@ -51,6 +51,7 @@ Required: Yes
       },
       "EventId": "string",
       "EventLevel": "string",
+      "EventTime": number,
       "InstanceGroupName": "string",
       "InstanceId": "string",
       "ResourceType": "string"

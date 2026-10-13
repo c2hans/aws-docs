@@ -34,7 +34,7 @@ GPT-5.6 Terra is the balanced model for everyday production work. It delivers su
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-56-terra-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs are supported for GPT-5.6 Terra. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs are supported for GPT-5.6 Terra. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -61,7 +61,7 @@ For Responses, use `/openai/v1/responses`.
 For Chat Completions, use `/openai/v1/chat/completions`.
 
 **Tip**
-Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
+Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Inference endpoints supported by Amazon Bedrock](endpoints.md) for details.
 
 ## Capabilities and Features
 <a name="model-card-openai-gpt-56-terra-capabilities"></a>
@@ -108,6 +108,8 @@ For JSON Schema output with the Converse API, you must set `additionalModelReque
 
 All prices are in USD per 1 million tokens for the Standard tier.
 
+The **Input — 30-minute cache write** column is the price per 1 million tokens written to the prompt cache. The 30-minute figure is how long a cached prompt prefix is retained, not a quantity of tokens. For more information, see [prompt caching](prompt-caching.md).
+
 Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
 
 *Priority and Flex tiers are not supported for this model.*
@@ -115,7 +117,7 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 ### Commercial Regions — short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-56-terra-pricing-commercial-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $2.20 | $2.75 | $0.22 | $13.20 |
 | Geo CRIS | $2.20 | $2.75 | $0.22 | $13.20 |
@@ -124,7 +126,7 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 ### Commercial Regions — long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-terra-pricing-commercial-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $4.40 | $5.50 | $0.44 | $19.80 |
 | Geo CRIS | $4.40 | $5.50 | $0.44 | $19.80 |
@@ -136,14 +138,14 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 #### Short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-56-terra-pricing-govcloud-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $2.70 | $3.375 | $0.27 | $16.20 |
 
 #### Long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-terra-pricing-govcloud-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $5.40 | $6.75 | $0.54 | $24.30 |
 

@@ -89,7 +89,7 @@ Required: No
  ** namespaceKeys **   <a name="bedrockagentcorecontrol-Type-Memory-namespaceKeys"></a>
 The namespace variable key definitions for this memory. Namespace keys define custom variables used in `namespaceTemplates` with optional validation rules.
 Type: Array of [NamespaceKeyEntry](API_NamespaceKeyEntry.md) objects
-Array Members: Minimum number of 1 item. Maximum number of 5 items.
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
  ** strategies **   <a name="bedrockagentcorecontrol-Type-Memory-strategies"></a>

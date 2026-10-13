@@ -55,6 +55,11 @@ Type: Long
 Valid Range: Minimum value of 0. Maximum value of 59.
 Required: No
 
+ ** EndTime **   <a name="sagemaker-Type-TrainingPlanSummary-EndTime"></a>
+The end time of the training plan.
+Type: Timestamp
+Required: No
+
  ** InUseInstanceCount **   <a name="sagemaker-Type-TrainingPlanSummary-InUseInstanceCount"></a>
 The number of instances currently in use from this training plan.
 Type: Integer
@@ -65,6 +70,11 @@ Required: No
 A list of reserved capacities associated with this training plan, including details such as instance types, counts, and availability zones.
 Type: Array of [ReservedCapacitySummary](API_ReservedCapacitySummary.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
+Required: No
+
+ ** StartTime **   <a name="sagemaker-Type-TrainingPlanSummary-StartTime"></a>
+The start time of the training plan.
+Type: Timestamp
 Required: No
 
  ** StatusMessage **   <a name="sagemaker-Type-TrainingPlanSummary-StatusMessage"></a>

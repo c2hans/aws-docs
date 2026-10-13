@@ -21,6 +21,11 @@ Type: String
 Valid Values: `Creating | Updating | Deleting | ActivatingTraffic | Baking`
 Required: Yes
 
+ ** StartTime **   <a name="sagemaker-Type-ProductionVariantStatus-StartTime"></a>
+The start time of the current status change.
+Type: Timestamp
+Required: No
+
  ** StatusMessage **   <a name="sagemaker-Type-ProductionVariantStatus-StatusMessage"></a>
 A message that describes the status of the production variant.
 Type: String

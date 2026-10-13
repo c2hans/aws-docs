@@ -513,6 +513,8 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AmazonSageMakerSpacesControllerPolicy](AmazonSageMakerSpacesControllerPolicy.md)
 + [AmazonSageMakerSpacesRouterPolicy](AmazonSageMakerSpacesRouterPolicy.md)
 + [AmazonSageMakerTrainingPlanCreateAccess](AmazonSageMakerTrainingPlanCreateAccess.md)
++ [AmazonSageMakerTrainingSessionAccess](AmazonSageMakerTrainingSessionAccess.md)
++ [AmazonSageMakerTrainingSessionFullAccess](AmazonSageMakerTrainingSessionFullAccess.md)
 + [AmazonSecurityLakeAdministrator](AmazonSecurityLakeAdministrator.md)
 + [AmazonSecurityLakeMetastoreManager](AmazonSecurityLakeMetastoreManager.md)
 + [AmazonSecurityLakePermissionsBoundary](AmazonSecurityLakePermissionsBoundary.md)

@@ -59,6 +59,11 @@ Content-type: application/json
             {
                "channels": number,
                "codec": "string",
+               "color": {
+                  "colorimetry": "string",
+                  "matrixCoefficients": "string",
+                  "transferCharacteristics": "string"
+               },
                "frameRate": "string",
                "frameResolution": {
                   "frameHeight": number,
@@ -91,6 +96,11 @@ Content-type: application/json
                {
                   "channels": number,
                   "codec": "string",
+                  "color": {
+                     "colorimetry": "string",
+                     "matrixCoefficients": "string",
+                     "transferCharacteristics": "string"
+                  },
                   "frameRate": "string",
                   "frameResolution": {
                      "frameHeight": number,
@@ -103,7 +113,8 @@ Content-type: application/json
                }
             ]
          }
-      ]
+      ],
+      "tsId": number
    }
 }
 ```

@@ -122,7 +122,13 @@ For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFo
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tier`  <a name="cfn-mediaconnect-routerinput-tier"></a>
-The tier level of the router input.
+The tier level for the router input. The tier sets the maximum bitrate, in Mbps, for the router input. Valid values include the following:
++ `INPUT_20` – 20 Mbps
++ `INPUT_50` – 50 Mbps
++ `INPUT_100` – 100 Mbps
++ `INPUT_250` – 250 Mbps
++ `INPUT_500` – 500 Mbps
+The 250 Mbps and 500 Mbps tiers are high-bitrate tiers that support TR-07 (JPEG XS) workflows.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `INPUT_100 | INPUT_50 | INPUT_20`

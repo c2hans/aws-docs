@@ -35,7 +35,7 @@ GPT-6 Sol is designed for demanding development work. It can build features, deb
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-6-sol-apis-endpoints"></a>
 
-These tables show the endpoints and APIs that GPT-6 Sol supports. See [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+These tables show the endpoints and APIs that GPT-6 Sol supports. See [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -62,7 +62,7 @@ For Responses, use `/openai/v1/responses`.
 For Chat Completions, use `/openai/v1/chat/completions`.
 
 **Tip**
-For new applications, use the `bedrock-runtime` endpoint when possible. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
+For new applications, use the `bedrock-runtime` endpoint when possible. See [Inference endpoints supported by Amazon Bedrock](endpoints.md) for details.
 
 ## Capabilities and features
 <a name="model-card-openai-gpt-6-sol-capabilities"></a>

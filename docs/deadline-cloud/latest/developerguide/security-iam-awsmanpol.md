@@ -113,6 +113,7 @@ View details about updates to AWS managed policies for Deadline Cloud since this
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSDeadlineCloud-UserAccessFarms](#security-iam-awsmanpol-UserAccessFarms) – Change | Deadline Cloud added new action `deadline:ListMemberships` so you can see the farms, queues, and fleets where you hold an access level. | October 12, 2026 |
 | [AWSDeadlineCloud-UserAccessFarms](#security-iam-awsmanpol-UserAccessFarms) – Change | Deadline Cloud added new action `kms:Decrypt` so you can use an AWS KMS customer-managed key with your IAM Identity Center instance. | December 22, 2025 |
 | [AWSDeadlineCloud-WorkerHost](#security-iam-awsmanpol-WorkerHost) – Change | Deadline Cloud added new actions `deadline:TagResource` and `deadline:ListTagsForResource` to allow you to add and view tags associated with workers in your fleet. | May 30, 2025 |
 | [AWSDeadlineCloud-UserAccessFarms](#security-iam-awsmanpol-UserAccessFarms) – Change<br />[AWSDeadlineCloud-UserAccessJobs](#security-iam-awsmanpol-UserAccessJobs) – Change<br />[AWSDeadlineCloud-UserAccessQueues](#security-iam-awsmanpol-UserAccessQueues) – Change | Deadline Cloud added new actions `deadline:GetJobTemplate` and `deadline:ListJobParameterDefinitions` to allow you to resubmit jobs. | October 7, 2024 |

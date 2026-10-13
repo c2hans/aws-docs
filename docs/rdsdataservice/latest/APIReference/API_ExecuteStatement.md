@@ -198,7 +198,7 @@ You don't have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** BadRequestException **
-There is an error in the call or in a SQL statement. (This error only appears in calls from Aurora Serverless v1 databases.)
+There is an error in the call or in a SQL statement. This exception is deprecated.
  ** message **
 The error message returned by this `BadRequestException` error.
 HTTP Status Code: 400
@@ -212,7 +212,7 @@ The DB cluster doesn't have a DB instance.
 HTTP Status Code: 404
 
  ** DatabaseResumingException **
-A request was cancelled because the Aurora Serverless v2 DB instance was paused. The Data API request automatically resumes the DB instance. Wait a few seconds and try again.
+A request was cancelled because the Aurora Serverless DB instance was paused. The Data API request automatically resumes the DB instance. Wait a few seconds and try again.
 HTTP Status Code: 400
 
  ** DatabaseUnavailableException **

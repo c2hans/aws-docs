@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 
 Updates a namespace with the specified settings. Unless required, you can't update multiple parameters in one request. For example, you must specify both `adminUsername` and `adminUserPassword` to update either field, but you can't update both `kmsKeyId` and `logExports` in a single request.
 
+Similarly, an S3 Tables log-publishing update (a request where `logDestinationType` is `s3table`) cannot be combined with any other namespace configuration change and must be submitted as its own request.
+
 ## Request Syntax
 <a name="API_UpdateNamespace_RequestSyntax"></a>
 
@@ -18,9 +20,14 @@ Updates a namespace with the specified settings. Unless required, you can't upda
    "defaultIamRoleArn": "{{string}}",
    "iamRoles": [ "{{string}}" ],
    "kmsKeyId": "{{string}}",
+   "logDestinationType": "{{string}}",
    "logExports": [ "{{string}}" ],
    "manageAdminPassword": {{boolean}},
-   "namespaceName": "{{string}}"
+   "namespaceName": "{{string}}",
+   "s3TableAction": "{{string}}",
+   "s3TableGranularity": "{{string}}",
+   "s3TableKmsKeyId": "{{string}}",
+   "s3TableNames": [ "{{string}}" ]
 }
 ```
 
@@ -44,6 +51,7 @@ Required: No
  ** [adminUserPassword](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-adminUserPassword"></a>
 The password of the administrator for the first database created in the namespace. This parameter must be updated together with `adminUsername`.
 You can't use `adminUserPassword` if `manageAdminPassword` is true.
+If your admin user account is locked, this operation also unlocks your account and resets the failed-login counter. This option is available only when account lockout security is enabled for the namespace.
 Type: String
 Required: No
 
@@ -60,6 +68,13 @@ Required: No
  ** [kmsKeyId](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-kmsKeyId"></a>
 The ID of the AWS Key Management Service key used to encrypt your data.
 Type: String
+Required: No
+
+ ** [logDestinationType](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-logDestinationType"></a>
+The destination for the log data. Valid values are `s3table` and `cloudwatch`.
+Set this to `s3table` to manage Amazon S3 Tables system-table publishing for the namespace.
+Type: String
+Valid Values: `s3table | cloudwatch`
 Required: No
 
  ** [logExports](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-logExports"></a>
@@ -81,6 +96,36 @@ Length Constraints: Minimum length of 3. Maximum length of 64.
 Pattern: `[a-z0-9-]+`
 Required: Yes
 
+ ** [s3TableAction](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-s3TableAction"></a>
+Whether to enable or disable Amazon S3 Tables publishing. Valid values are `Enable` and `Disable`, matched case-insensitively.
+When omitted, defaults to `Enable`. Valid only when `logDestinationType` is `s3table`.
+Type: String
+Valid Values: `Enable | Disable`
+Required: No
+
+ ** [s3TableGranularity](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-s3TableGranularity"></a>
+The scope of the Amazon S3 Tables destination. Valid values are `namespace` and `account`, matched case-insensitively. `namespace` scopes the published tables to this namespace; `account` scopes them to the AWS account.
+Required when enabling. Omitting this parameter or passing a blank value fails with `ValidationException`. Valid only when `logDestinationType` is `s3table`.
+Type: String
+Valid Values: `namespace | account`
+Required: No
+
+ ** [s3TableKmsKeyId](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-s3TableKmsKeyId"></a>
+The identifier of the AWS Key Management Service key used to encrypt the published Amazon S3 Tables data. When omitted, the data is encrypted with SSE-S3 (Amazon S3 managed keys).
+Valid only when `logDestinationType` is `s3table`.
+Type: String
+Required: No
+
+ ** [s3TableNames](#API_UpdateNamespace_RequestSyntax) **   <a name="redshiftserverless-UpdateNamespace-request-s3TableNames"></a>
+The system tables to publish (on enable) or to stop publishing (on disable). Each value is either a system table view name that begins with `sys_` or the keyword `all`.
+Omitting this parameter, passing an empty list, or including `all` each select every current and future system table. Each name must be 1-128 characters, and the list can contain up to 256 names.
+Valid only when `logDestinationType` is `s3table`.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 256 items.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `(all|sys_[a-z0-9_]+)`
+Required: No
+
 ## Response Syntax
 <a name="API_UpdateNamespace_ResponseSyntax"></a>
 
@@ -101,6 +146,15 @@ Required: Yes
       "namespaceArn": "string",
       "namespaceId": "string",
       "namespaceName": "string",
+      "s3TablePublishStatus": {
+         "enabledAll": boolean,
+         "lastIngestionTimes": {
+            "string" : "string"
+         },
+         "s3TableGranularity": "string",
+         "s3TableNamespace": "string",
+         "s3Tables": [ "string" ]
+      },
       "status": "string"
    }
 }

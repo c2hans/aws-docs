@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionEndpoint RevisionWeight
 <a name="aws-properties-lambda-webfunctionendpoint-revisionweight"></a>
 
-<a name="aws-properties-lambda-webfunctionendpoint-revisionweight-description"></a>The `RevisionWeight` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionEndpoint](aws-resource-lambda-webfunctionendpoint.md).
+Specifies a revision and its traffic weight for an endpoint. You can assign weights to up to two revisions to split traffic for canary or blue-green deployments.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionendpoint-revisionweight-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionendpoint-revisionweight-properties"></a>
 
 `RevisionId`  <a name="cfn-lambda-webfunctionendpoint-revisionweight-revisionid"></a>
-Property description not available.
+The identifier of the revision.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -44,7 +44,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Weight`  <a name="cfn-lambda-webfunctionendpoint-revisionweight-weight"></a>
-Property description not available.
+The percentage of traffic to route to this revision. Minimum value of 1, maximum value of 100.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1`

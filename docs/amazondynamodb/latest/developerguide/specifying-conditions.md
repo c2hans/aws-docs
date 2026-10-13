@@ -169,7 +169,12 @@ To manage user permissions in this app, you could write a permissions policy suc
                ]
             },
             "StringEqualsIfExists":{
-               "dynamodb:Select":"SPECIFIC_ATTRIBUTES"
+               "dynamodb:Select":"SPECIFIC_ATTRIBUTES",
+               "dynamodb:ReturnValues":[
+                  "NONE",
+                  "UPDATED_OLD",
+                  "UPDATED_NEW"
+               ]
             }
          }
       }

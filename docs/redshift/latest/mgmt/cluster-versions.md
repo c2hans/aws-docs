@@ -69,7 +69,6 @@ Cluster versions in this patch:
 <a name="cluster-version-2026-09-16-features"></a>
 + Iceberg MV – Materialized views stored in Iceberg offering incremental refresh and full recompute.
 + System tables now include an `external_user_id` column that records the durable IAM or IAM Identity Center identity associated with each query, enabling per-user filtering across cluster lifecycle events.
-+ Amazon Redshift Spectrum queries on external tables now support reading gzip and bzip2 compressed Text/CSV files.
 + Added support for the IAM\_ROLE 'SESSION' keyword for COPY and UNLOAD, allowing customers to use session-bound FAS credentials for Amazon S3 access instead of specifying an explicit IAM role ARN.
 + Added `ALTER DATABASE ... INTEGRATION REFRESH REMEDIABLE TABLES`, which resynchronizes zero-ETL tables flagged with a duplicate-date warning on demand, optionally scoped to a schema.
 + Added the `IntegrationLatestSourceCommit` Amazon CloudWatch metric for zero-ETL integrations, reporting the latest source commit time observed so you can distinguish an idle source from a stalled pipeline.

@@ -44,6 +44,7 @@ Updates the configuration of a *task*, which defines where and how AWS DataSync 
       "Gid": "{{string}}",
       "LogLevel": "{{string}}",
       "Mtime": "{{string}}",
+      "ObjectMetadata": "{{string}}",
       "ObjectTags": "{{string}}",
       "OverwriteMode": "{{string}}",
       "PosixPermissions": "{{string}}",

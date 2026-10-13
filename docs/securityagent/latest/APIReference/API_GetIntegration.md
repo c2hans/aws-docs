@@ -49,6 +49,7 @@ Content-type: application/json
    "privateConnectionName": "string",
    "provider": "string",
    "providerType": "string",
+   "siteUrl": "string",
    "targetUrl": "string",
    "webhookUrl": "string"
 }
@@ -84,12 +85,16 @@ Type: String
  ** [provider](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-provider"></a>
 The integration provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS | JIRA`
 
  ** [providerType](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-providerType"></a>
 The type of the integration provider.
 Type: String
-Valid Values: `SOURCE_CODE | DOCUMENTATION`
+Valid Values: `SOURCE_CODE | DOCUMENTATION | ISSUE_TRACKING`
+
+ ** [siteUrl](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-siteUrl"></a>
+The Atlassian Cloud site URL for Atlassian integrations.
+Type: String
 
  ** [targetUrl](#API_GetIntegration_ResponseSyntax) **   <a name="securityagent-GetIntegration-response-targetUrl"></a>
 The HTTPS URL of the customer self-hosted instance, such as a GitHub Enterprise Server or self-managed GitLab instance. This value is absent for SaaS integrations.

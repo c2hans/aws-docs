@@ -91,6 +91,7 @@ Required: No
 {
    "FeatureGroupSummaries": [
       {
+         "CreationTime": number,
          "FeatureGroupArn": "string",
          "FeatureGroupName": "string",
          "FeatureGroupStatus": "string",

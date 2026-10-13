@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/tenant-isolation-troubleshooting.html
 ---
 
-# Troubleshooting tenant isolation for Lambda functions
+# Troubleshooting tenant isolation for Lambda Event Functions
 <a name="tenant-isolation-troubleshooting"></a>
 
 This page addresses common issues that occur when using tenant isolation for AWS Lambda.

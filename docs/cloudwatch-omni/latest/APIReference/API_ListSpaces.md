@@ -57,6 +57,16 @@ An unexpected error occurred while processing the request.
 The error code associated with the internal error.
 HTTP Status Code: 500
 
+ ** ResourceNotFoundException **
+The specified resource does not exist.
+ ** errorCode **
+The error code associated with the failure.
+ ** resourceId **
+The identifier of the resource that could not be found. Not always present.
+ ** resourceType **
+The type of the resource that could not be found. Not always present.
+HTTP Status Code: 404
+
  ** ThrottlingException **
 The request was throttled due to exceeding the allowed request rate.
  ** retryAfterSeconds **

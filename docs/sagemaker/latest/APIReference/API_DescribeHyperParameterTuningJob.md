@@ -39,6 +39,7 @@ Required: Yes
       "Mode": "string"
    },
    "BestTrainingJob": {
+      "CreationTime": number,
       "FailureReason": "string",
       "FinalHyperParameterTuningJobObjectiveMetric": {
          "MetricName": "string",
@@ -46,10 +47,12 @@ Required: Yes
          "Value": number
       },
       "ObjectiveStatus": "string",
+      "TrainingEndTime": number,
       "TrainingJobArn": "string",
       "TrainingJobDefinitionName": "string",
       "TrainingJobName": "string",
       "TrainingJobStatus": "string",
+      "TrainingStartTime": number,
       "TunedHyperParameters": {
          "string" : "string"
       },
@@ -58,7 +61,9 @@ Required: Yes
    "ConsumedResources": {
       "RuntimeInSeconds": number
    },
+   "CreationTime": number,
    "FailureReason": "string",
+   "HyperParameterTuningEndTime": number,
    "HyperParameterTuningJobArn": "string",
    "HyperParameterTuningJobConfig": {
       "HyperParameterTuningJobObjective": {
@@ -121,12 +126,14 @@ Required: Yes
    },
    "HyperParameterTuningJobName": "string",
    "HyperParameterTuningJobStatus": "string",
+   "LastModifiedTime": number,
    "ObjectiveStatusCounters": {
       "Failed": number,
       "Pending": number,
       "Succeeded": number
    },
    "OverallBestTrainingJob": {
+      "CreationTime": number,
       "FailureReason": "string",
       "FinalHyperParameterTuningJobObjectiveMetric": {
          "MetricName": "string",
@@ -134,10 +141,12 @@ Required: Yes
          "Value": number
       },
       "ObjectiveStatus": "string",
+      "TrainingEndTime": number,
       "TrainingJobArn": "string",
       "TrainingJobDefinitionName": "string",
       "TrainingJobName": "string",
       "TrainingJobStatus": "string",
+      "TrainingStartTime": number,
       "TunedHyperParameters": {
          "string" : "string"
       },
@@ -477,6 +486,7 @@ Required: Yes
       "Stopped": number
    },
    "TuningJobCompletionDetails": {
+      "ConvergenceDetectedTime": number,
       "NumberOfTrainingJobsObjectiveNotImproving": number
    },
    "WarmStartConfig": {
@@ -509,10 +519,18 @@ Type: [HyperParameterTrainingJobSummary](API_HyperParameterTrainingJobSummary.md
 The total resources consumed by your hyperparameter tuning job.
 Type: [HyperParameterTuningJobConsumedResources](API_HyperParameterTuningJobConsumedResources.md) object
 
+ ** [CreationTime](#API_DescribeHyperParameterTuningJob_ResponseSyntax) **   <a name="sagemaker-DescribeHyperParameterTuningJob-response-CreationTime"></a>
+The date and time that the tuning job started.
+Type: Timestamp
+
  ** [FailureReason](#API_DescribeHyperParameterTuningJob_ResponseSyntax) **   <a name="sagemaker-DescribeHyperParameterTuningJob-response-FailureReason"></a>
 If the tuning job failed, the reason it failed.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
+
+ ** [HyperParameterTuningEndTime](#API_DescribeHyperParameterTuningJob_ResponseSyntax) **   <a name="sagemaker-DescribeHyperParameterTuningJob-response-HyperParameterTuningEndTime"></a>
+The date and time that the tuning job ended.
+Type: Timestamp
 
  ** [HyperParameterTuningJobArn](#API_DescribeHyperParameterTuningJob_ResponseSyntax) **   <a name="sagemaker-DescribeHyperParameterTuningJob-response-HyperParameterTuningJobArn"></a>
 The Amazon Resource Name (ARN) of the tuning job.
@@ -534,6 +552,10 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,31}`
 The status of the tuning job.
 Type: String
 Valid Values: `Completed | InProgress | Failed | Stopped | Stopping | Deleting | DeleteFailed`
+
+ ** [LastModifiedTime](#API_DescribeHyperParameterTuningJob_ResponseSyntax) **   <a name="sagemaker-DescribeHyperParameterTuningJob-response-LastModifiedTime"></a>
+The date and time that the status of the tuning job was modified.
+Type: Timestamp
 
  ** [ObjectiveStatusCounters](#API_DescribeHyperParameterTuningJob_ResponseSyntax) **   <a name="sagemaker-DescribeHyperParameterTuningJob-response-ObjectiveStatusCounters"></a>
 The [ObjectiveStatusCounters](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ObjectiveStatusCounters.html) object that specifies the number of training jobs, categorized by the status of their final objective metric, that this tuning job launched.

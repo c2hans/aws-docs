@@ -27,6 +27,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AdsPersonalizationConcurrency](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency)" : {{AdsPersonalizationConcurrency}},
       "[AdsPersonalizationTimeouts](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts)" : {{AdsPersonalizationTimeouts}},
       "[AvailSuppression](#cfn-mediatailor-playbackconfiguration-availsuppression)" : {{AvailSuppression}},
+      "[BeaconingConfiguration](#cfn-mediatailor-playbackconfiguration-beaconingconfiguration)" : {{BeaconingConfiguration}},
       "[Bumper](#cfn-mediatailor-playbackconfiguration-bumper)" : {{Bumper}},
       "[CdnConfiguration](#cfn-mediatailor-playbackconfiguration-cdnconfiguration)" : {{CdnConfiguration}},
       "[ConfigurationAliases](#cfn-mediatailor-playbackconfiguration-configurationaliases)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -64,6 +65,8 @@ Properties:
     AdsPersonalizationTimeouts}}
   [AvailSuppression](#cfn-mediatailor-playbackconfiguration-availsuppression): {{
     AvailSuppression}}
+  [BeaconingConfiguration](#cfn-mediatailor-playbackconfiguration-beaconingconfiguration): {{
+    BeaconingConfiguration}}
   [Bumper](#cfn-mediatailor-playbackconfiguration-bumper): {{
     Bumper}}
   [CdnConfiguration](#cfn-mediatailor-playbackconfiguration-cdnconfiguration): {{
@@ -129,6 +132,12 @@ The timeout settings for ad decision server interactions. These settings control
 The configuration for avail suppression, also known as ad suppression. For more information about ad suppression, see [Ad Suppression](https://docs.aws.amazon.com/mediatailor/latest/ug/ad-behavior.html).
 *Required*: No
 *Type*: [AvailSuppression](aws-properties-mediatailor-playbackconfiguration-availsuppression.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`BeaconingConfiguration`  <a name="cfn-mediatailor-playbackconfiguration-beaconingconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [BeaconingConfiguration](aws-properties-mediatailor-playbackconfiguration-beaconingconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Bumper`  <a name="cfn-mediatailor-playbackconfiguration-bumper"></a>

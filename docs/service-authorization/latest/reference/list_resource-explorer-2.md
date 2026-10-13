@@ -214,7 +214,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 ## Actions defined by AWS Resource Explorer
 <a name="list_resource-explorer-2-actions-as-permissions"></a>
 
-You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
 - **   [AssociateDefaultView](https://docs.aws.amazon.com/resource-explorer/latest/apireference/API_AssociateDefaultView.html)  **
   - **Description:** Grants permission to set the specified view as the default for this AWS Region in this AWS account

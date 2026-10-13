@@ -43,6 +43,9 @@ Content-type: application/json
 
 {
    "authorizationData": { ... },
+   "certificateConfigurations": [
+      { ... }
+   ],
    "createdAt": "string",
    "credentialProviderConfigurations": [
       {
@@ -87,6 +90,11 @@ The following data is returned in JSON format by the service.
 OAuth2 authorization data for the gateway target. This data is returned when a target is configured with a credential provider with authorization code grant type and requires user federation.
 Type: [AuthorizationData](API_AuthorizationData.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
+ ** [certificateConfigurations](#API_GetGatewayTarget_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetGatewayTarget-response-certificateConfigurations"></a>
+The private certificate authority (CA) configurations for the gateway target.
+Type: Array of [CertificateConfiguration](API_CertificateConfiguration.md) objects
+Array Members: Fixed number of 1 item.
 
  ** [createdAt](#API_GetGatewayTarget_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetGatewayTarget-response-createdAt"></a>
 The timestamp when the gateway target was created.

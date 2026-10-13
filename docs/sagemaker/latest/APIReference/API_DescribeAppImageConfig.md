@@ -51,6 +51,7 @@ Required: Yes
          "MountPath": "string"
       }
    },
+   "CreationTime": number,
    "JupyterLabAppImageConfig": {
       "ContainerConfig": {
          "ContainerArguments": [ "string" ],
@@ -77,7 +78,8 @@ Required: Yes
             "Name": "string"
          }
       ]
-   }
+   },
+   "LastModifiedTime": number
 }
 ```
 
@@ -104,6 +106,10 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 The configuration of the Code Editor app.
 Type: [CodeEditorAppImageConfig](API_CodeEditorAppImageConfig.md) object
 
+ ** [CreationTime](#API_DescribeAppImageConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAppImageConfig-response-CreationTime"></a>
+When the AppImageConfig was created.
+Type: Timestamp
+
  ** [JupyterLabAppImageConfig](#API_DescribeAppImageConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAppImageConfig-response-JupyterLabAppImageConfig"></a>
 The configuration of the JupyterLab app.
 Type: [JupyterLabAppImageConfig](API_JupyterLabAppImageConfig.md) object
@@ -111,6 +117,10 @@ Type: [JupyterLabAppImageConfig](API_JupyterLabAppImageConfig.md) object
  ** [KernelGatewayImageConfig](#API_DescribeAppImageConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAppImageConfig-response-KernelGatewayImageConfig"></a>
 The configuration of a KernelGateway app.
 Type: [KernelGatewayImageConfig](API_KernelGatewayImageConfig.md) object
+
+ ** [LastModifiedTime](#API_DescribeAppImageConfig_ResponseSyntax) **   <a name="sagemaker-DescribeAppImageConfig-response-LastModifiedTime"></a>
+When the AppImageConfig was last modified.
+Type: Timestamp
 
 ## Errors
 <a name="API_DescribeAppImageConfig_Errors"></a>

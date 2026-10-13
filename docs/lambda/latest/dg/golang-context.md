@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/golang-context.html
 ---
 
-# Using the Lambda context object to retrieve Go function information
+# Using the Lambda context object to retrieve Go Event Function information
 <a name="golang-context"></a>
 
 In Lambda, the context object provides methods and properties with information about the invocation, function, and execution environment. When Lambda runs your function, it passes a context object to the [handler](golang-handler.md). To use the context object in your handler, you can optionally declare it as an input parameter to your handler. The context object is necessary if you want to do the following in your handler:

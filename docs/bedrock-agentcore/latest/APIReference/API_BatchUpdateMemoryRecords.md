@@ -15,6 +15,7 @@ POST /memories/{{memoryId}}/memoryRecords/batchUpdate HTTP/1.1
 Content-type: application/json
 
 {
+   "recordExpirySpecification": { ... },
    "records": [
       {
          "content": { ... },
@@ -46,6 +47,16 @@ Required: Yes
 <a name="API_BatchUpdateMemoryRecords_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [recordExpirySpecification](#API_BatchUpdateMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-BatchUpdateMemoryRecords-request-recordExpirySpecification"></a>
+The record expiry (long-term memory time-to-live) applied to every record updated by this request. Set `recordExpiryDurationDays` to configure or overwrite the number of days after which the records expire, or set `action` to `REMOVE` to clear a previously configured expiry so that the records no longer expire.
+When you do not provide this value, the service determines each record's expiry from its current state:
++ If the record already has an expiry configured, the service resets and reapplies the expiry based on the last applied `recordExpiryDurationDays`.
++ If the record does not have an expiry configured, no expiry is applied and the record remains non-expiring. This is the outcome regardless of whether the record's strategy configures an expiry.
+Providing an explicit `recordExpiryDurationDays` always takes precedence: it overwrites an existing expiry, or sets one on a record that previously had none.
+Type: [RecordExpirySpecification](API_RecordExpirySpecification.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
 
  ** [records](#API_BatchUpdateMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-BatchUpdateMemoryRecords-request-records"></a>
 A list of memory record update inputs to be processed in the batch operation.

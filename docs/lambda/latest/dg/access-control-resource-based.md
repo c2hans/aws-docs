@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource
 # Working with resource-based policies in Lambda
 <a name="access-control-resource-based"></a>
 
-With resource-based permissions policies, you can grant other AWS accounts, users, organizations, and AWS services access to your Lambda functions. A resource-based policy is a JSON document that contains one or more *statements*. Each statement defines the following:
+With resource-based permissions policies, you can grant other AWS accounts, users, organizations, and AWS services access to your Lambda Event Functions. A resource-based policy is a JSON document that contains one or more *statements*. Each statement defines the following:
 + `Principal`: The entity you want to grant permissions to (another AWS service, an IAM role or user, or another AWS account)
 + `Action`: A list of the API actions you want to allow or deny for the specified principal
 + `Effect`: Whether you want to allow or deny the principal the ability to use the chosen API actions
@@ -13,7 +13,7 @@ With resource-based permissions policies, you can grant other AWS accounts, user
 
 You can also use optional elements such as `Sid` (a statement identifier) and `Condition` (logical conditions for fine-grained access control). For a full list of supported policy elements, refer to [IAM JSON policy element reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) in the *AWS Identity and Access Management User Guide*.
 
-## Adding resource-based permissions to a Lambda function
+## Adding resource-based permissions to an Event Function
 <a name="access-control-resource-based-add"></a>
 
 You can add resource-based permissions to your Lambda function using two methods:
@@ -41,7 +41,7 @@ To use the `PutResourcePolicy`, `GetResourcePolicy`, and `DeleteResourcePolicy` 
 
 **To create a full JSON resource-based policy**
 
-1. Open the [Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
+1. Open the [Event Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
 
 1. Select the function you want to grant access to and then select the **Configuration** tab.
 
@@ -85,7 +85,7 @@ To add individual permissions to a function's policy, use the [AddPermission](ht
 
 **To view a function's resource-based policy**
 
-1. Open the [Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
+1. Open the [Event Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
 
 1. Choose a function.
 
@@ -127,7 +127,7 @@ You can also use the [GetPolicy](https://docs.aws.amazon.com/lambda/latest/api/A
 
 **To delete a function's resource-based policy**
 
-1. Open the [Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
+1. Open the [Event Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the Lambda console.
 
 1. Select the function you want to delete the permissions policy for.
 

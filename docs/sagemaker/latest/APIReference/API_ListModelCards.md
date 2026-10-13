@@ -12,6 +12,8 @@ List existing model cards.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "ModelCardStatus": "{{string}}",
    "NameContains": "{{string}}",
@@ -27,6 +29,16 @@ List existing model cards.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListModelCards_RequestSyntax) **   <a name="sagemaker-ListModelCards-request-CreationTimeAfter"></a>
+Only list model cards that were created after the time specified.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListModelCards_RequestSyntax) **   <a name="sagemaker-ListModelCards-request-CreationTimeBefore"></a>
+Only list model cards that were created before the time specified.
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListModelCards_RequestSyntax) **   <a name="sagemaker-ListModelCards-request-MaxResults"></a>
 The maximum number of model cards to list.
@@ -73,6 +85,8 @@ Required: No
 {
    "ModelCardSummaries": [
       {
+         "CreationTime": number,
+         "LastModifiedTime": number,
          "ModelCardArn": "string",
          "ModelCardName": "string",
          "ModelCardStatus": "string"

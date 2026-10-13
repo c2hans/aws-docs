@@ -48,6 +48,12 @@ Length Constraints: Minimum length of 1. Maximum length of 512.
 Pattern: `[a-zA-Z0-9\-_\/]*(\{[a-zA-Z][a-zA-Z0-9]*\}[a-zA-Z0-9\-_\/]*)*`
 Required: No
 
+ ** recordExpirySpecification **   <a name="bedrockagentcorecontrol-Type-ModifyMemoryStrategyInput-recordExpirySpecification"></a>
+Updates or removes the record expiry (long-term memory time-to-live) for this strategy. Set `recordExpiryDurationDays` to configure or update the number of days after which records expire, or set `action` to `REMOVE` to remove a previously configured time-to-live so that newer records no longer expire. The change applies only to records created after the update.
+Type: [RecordExpirySpecification](API_RecordExpirySpecification.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
 ## See Also
 <a name="API_ModifyMemoryStrategyInput_SeeAlso"></a>
 

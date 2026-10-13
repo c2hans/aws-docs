@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/lambda/index.html
 title: 'AWS Lambda Documentation'
 canonical_url: https://docs.aws.amazon.com/lambda/
 source: aws-documentation
-generated_on: 2026-10-09
+generated_on: 2026-10-13
 ---
 
 # AWS Lambda Documentation
@@ -16,9 +16,10 @@ With AWS Lambda, you can run code without provisioning or managing servers. You 
 ## Lambda guides and references
 
 - [Developer Guide](/lambda/latest/dg/): Provides a conceptual overview of AWS Lambda, detailed instructions for using the various features, and a complete API reference for developers.
-- [API Reference](/lambda/latest/api/): Describes in detail all the API operations for AWS Lambda.
+- [Lambda Event Function API Reference](/lambda/latest/api/): Describes in detail all the API operations for Lambda Event Functions (previously known as Lambda functions).
 - [Lambda Core API Reference](/lambda/latest/lambda-core/): Describes in detail all the API operations for Lambda Core.
 - [MicroVM API Reference](/lambda/latest/microvm-api/): Describes in detail all the API operations for Lambda MicroVMs.
+- [Lambda Web API Reference](/lambda/latest/lambda-web/): Describes in detail all the API operations for Lambda Web Functions.
 
 ## Get started with serverless
 

@@ -15,6 +15,11 @@ Who created the trial.
 Type: [UserContext](API_UserContext.md) object
 Required: No
 
+ ** CreationTime **   <a name="sagemaker-Type-Trial-CreationTime"></a>
+When the trial was created.
+Type: Timestamp
+Required: No
+
  ** DisplayName **   <a name="sagemaker-Type-Trial-DisplayName"></a>
 The name of the trial as displayed. If `DisplayName` isn't specified, `TrialName` is displayed.
 Type: String
@@ -32,6 +37,11 @@ Required: No
  ** LastModifiedBy **   <a name="sagemaker-Type-Trial-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
+Required: No
+
+ ** LastModifiedTime **   <a name="sagemaker-Type-Trial-LastModifiedTime"></a>
+Who last modified the trial.
+Type: Timestamp
 Required: No
 
  ** MetadataProperties **   <a name="sagemaker-Type-Trial-MetadataProperties"></a>

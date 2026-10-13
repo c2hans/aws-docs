@@ -21,6 +21,11 @@ Type: String
 Valid Values: `InAlert | OK`
 Required: Yes
 
+ ** CreationTime **   <a name="sagemaker-Type-MonitoringAlertSummary-CreationTime"></a>
+A timestamp that indicates when a monitor alert was created.
+Type: Timestamp
+Required: Yes
+
  ** DatapointsToAlert **   <a name="sagemaker-Type-MonitoringAlertSummary-DatapointsToAlert"></a>
 Within `EvaluationPeriod`, how many execution failures will raise an alert.
 Type: Integer
@@ -31,6 +36,11 @@ Required: Yes
 The number of most recent monitoring executions to consider when evaluating alert status.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 100.
+Required: Yes
+
+ ** LastModifiedTime **   <a name="sagemaker-Type-MonitoringAlertSummary-LastModifiedTime"></a>
+A timestamp that indicates when a monitor alert was last updated.
+Type: Timestamp
 Required: Yes
 
  ** MonitoringAlertName **   <a name="sagemaker-Type-MonitoringAlertSummary-MonitoringAlertName"></a>

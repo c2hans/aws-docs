@@ -10,6 +10,15 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026
 <a name="_october_2026"></a>
 
+### Memory: Time-to-live for long-term memory records
+<a name="_memory_time_to_live_for_long_term_memory_records_2"></a>
+
+Amazon Bedrock AgentCore Memory now supports a time-to-live (TTL) for long-term memory records, so you can control how long extracted records are retained before they expire. You configure retention with a `recordExpirySpecification`, setting `recordExpiryDurationDays` to the number of days (minimum 31) after which records expire, or setting `action` to `REMOVE` to clear a previously configured TTL.
+
+You can set retention per strategy on `CreateMemory` and `UpdateMemory` for built-in and custom (built-in with overrides) strategies, or per request on `BatchCreateMemoryRecords` and `BatchUpdateMemoryRecords`. Because setting a record TTL is a deferred, service-executed deletion, a request that configures or removes a `recordExpirySpecification` requires the new `bedrock-agentcore:UpdateMemoryRecordExpirySpecification` IAM permission in addition to the base action. This lets you keep retention control separate from record-deletion permissions.
+
+For more information, see [Configure record retention (time-to-live)](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-term-configuring-built-in-strategies.html#long-term-built-in-strategy-record-ttl).
+
 ### Gateway: Private certificate authority support for targets
 <a name="_gateway_private_certificate_authority_support_for_targets_2"></a>
 

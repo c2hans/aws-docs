@@ -50,6 +50,7 @@ Content-type: application/json
       }
    ],
    "minLatency": {{number}},
+   "ndiAudioReferenceLevel": {{number}},
    "ndiOutputTimecodeSource": "{{string}}",
    "ndiProgramName": "{{string}}",
    "ndiSpeedHqQuality": {{number}},
@@ -125,6 +126,12 @@ Required: No
  ** [minLatency](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-minLatency"></a>
  The minimum latency in milliseconds for SRT-based streams. In streams that use the SRT protocol, this value that you set on your MediaConnect source or output represents the minimal potential latency of that connection. The latency of the stream is set to the highest number between the sender’s minimum latency and the receiver’s minimum latency.
 Type: Integer
+Required: No
+
+ ** [ndiAudioReferenceLevel](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-ndiAudioReferenceLevel"></a>
+The audio reference level of the NDI receiver, in decibels relative to full scale (dBFS). Common values are `-20` (NDI and SMPTE) and `-18` (EBU). If you don't specify this field, MediaConnect leaves the value unchanged.
+Type: Integer
+Valid Range: Minimum value of -40. Maximum value of 0.
 Required: No
 
  ** [ndiOutputTimecodeSource](#API_UpdateFlowOutput_RequestSyntax) **   <a name="mediaconnect-UpdateFlowOutput-request-ndiOutputTimecodeSource"></a>
@@ -270,9 +277,11 @@ Content-type: application/json
          "maxLatency": number,
          "maxSyncBuffer": number,
          "minLatency": number,
+         "ndiAudioReferenceLevel": number,
          "ndiOutputTimecodeSource": "string",
          "ndiProgramName": "string",
          "ndiSourceSettings": {
+            "audioReferenceLevel": number,
             "sourceName": "string"
          },
          "ndiSpeedHqQuality": number,

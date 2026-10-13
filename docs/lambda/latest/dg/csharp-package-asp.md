@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/csharp-package-asp.html
 # Deploy ASP.NET applications
 <a name="csharp-package-asp"></a>
 
-As well as hosting event-driven functions, you can also use .NET with Lambda to host lightweight ASP.NET applications. You can build and deploy ASP.NET applications using the `Amazon.Lambda.AspNetCoreServer` NuGet package. In this section, you learn how to deploy an ASP.NET web API to Lambda using the .NET Lambda CLI tooling.
+As well as hosting event-driven functions, you can also use .NET with Lambda Event Functions to host lightweight ASP.NET applications. You can build and deploy ASP.NET applications using the `Amazon.Lambda.AspNetCoreServer` NuGet package. In this section, you learn how to deploy an ASP.NET web API to Lambda using the .NET Lambda CLI tooling.
 
 **Topics**
 + [Prerequisites](#csharp-package-asp-prerequisites)

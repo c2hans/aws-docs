@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CopySourceArn](#cfn-quicksight-datasource-datasourcecredentials-copysourcearn)" : {{String}},
   "[CredentialPair](#cfn-quicksight-datasource-datasourcecredentials-credentialpair)" : {{CredentialPair}},
   "[KeyPairCredentials](#cfn-quicksight-datasource-datasourcecredentials-keypaircredentials)" : {{KeyPairCredentials}},
+  "[OAuthClientCredentials](#cfn-quicksight-datasource-datasourcecredentials-oauthclientcredentials)" : {{OAuthClientCredentials}},
   "[SecretArn](#cfn-quicksight-datasource-datasourcecredentials-secretarn)" : {{String}}
 }
 ```
@@ -35,6 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     CredentialPair}}
   [KeyPairCredentials](#cfn-quicksight-datasource-datasourcecredentials-keypaircredentials): {{
     KeyPairCredentials}}
+  [OAuthClientCredentials](#cfn-quicksight-datasource-datasourcecredentials-oauthclientcredentials): {{
+    OAuthClientCredentials}}
   [SecretArn](#cfn-quicksight-datasource-datasourcecredentials-secretarn): {{String}}
 ```
 
@@ -58,6 +61,12 @@ Credential pair. For more information, see ` [CredentialPair](https://docs.aws.a
 The credentials for connecting using key-pair.
 *Required*: No
 *Type*: [KeyPairCredentials](aws-properties-quicksight-datasource-keypaircredentials.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OAuthClientCredentials`  <a name="cfn-quicksight-datasource-datasourcecredentials-oauthclientcredentials"></a>
+The OAuth client credentials for connecting to a data source using OAuth 2.0 client credentials (2LO) authentication. For more information, see ` [OAuthClientCredentials](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OAuthClientCredentials.html) `.
+*Required*: No
+*Type*: [OAuthClientCredentials](aws-properties-quicksight-datasource-oauthclientcredentials.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecretArn`  <a name="cfn-quicksight-datasource-datasourcecredentials-secretarn"></a>

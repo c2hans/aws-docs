@@ -56,7 +56,7 @@ Pattern: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}]*`
 Required: No
 
  ** [Name](#API_CreateClusterSchedulerConfig_RequestSyntax) **   <a name="sagemaker-CreateClusterSchedulerConfig-request-Name"></a>
-Name for the cluster policy.
+The name for the cluster policy. The name must be unique within the SageMaker AI HyperPod cluster specified by `ClusterArn`. You can use the same name in other clusters within a Region or across Regions.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`

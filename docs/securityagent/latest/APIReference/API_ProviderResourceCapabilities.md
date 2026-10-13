@@ -38,6 +38,11 @@ Capabilities for an integrated GitLab repository.
 Type: [GitLabResourceCapabilities](API_GitLabResourceCapabilities.md) object
 Required: No
 
+ ** jira **   <a name="securityagent-Type-ProviderResourceCapabilities-jira"></a>
+The Jira-specific resource capabilities.
+Type: [JiraResourceCapabilities](API_JiraResourceCapabilities.md) object
+Required: No
+
 ## See Also
 <a name="API_ProviderResourceCapabilities_SeeAlso"></a>
 

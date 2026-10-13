@@ -46,6 +46,16 @@ The number of edge devices with the successful deployment.
 Type: Integer
 Required: Yes
 
+ ** CreationTime **   <a name="sagemaker-Type-EdgeDeploymentPlanSummary-CreationTime"></a>
+The time when the edge deployment plan was created.
+Type: Timestamp
+Required: No
+
+ ** LastModifiedTime **   <a name="sagemaker-Type-EdgeDeploymentPlanSummary-LastModifiedTime"></a>
+The time when the edge deployment plan was last updated.
+Type: Timestamp
+Required: No
+
 ## See Also
 <a name="API_EdgeDeploymentPlanSummary_SeeAlso"></a>
 

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::ResourcePolicy
 <a name="aws-resource-lambda-resourcepolicy"></a>
 
-Use the `AWS::Lambda::ResourcePolicy` resource to attach a resource-based policy to a Lambda resource. A resource-based policy applies to a single Lambda resource, for example, a function, function version, or function alias. To learn more about using resource-based policies with Lambda, see [Working with resource-based policies in Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) in the *AWS Lambda Developer Guide*.
+Use the `AWS::Lambda::ResourcePolicy` resource to attach a resource-based policy to a Lambda resource. A resource-based policy applies to a single Lambda resource, for example, a function, function version, function alias, or web function. To learn more about using resource-based policies with Lambda, see [Working with resource-based policies in Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) in the *AWS Lambda Developer Guide*.
 
 You can use resource-based policies to grant permissions to other AWS services, AWS accounts and organizations, and IAM users and roles to access your Lambda resource. You can also deny access to specific entities, and use the full range of IAM global condition keys to further restrict who has access to your Lambda resource. For example, you can limit access to calls originating from a specified IP address or Amazon VPC.
 
@@ -21,8 +21,8 @@ To learn more about creating resource-based policies, see [Policies and permissi
 To grant permissions to access your function, we recommend using the `AWS::Lambda::ResourcePolicy` resource to set access permissions. With this resource, you have more flexibility and fine-grained control than `AWS::Lambda::Permission`. This resource grants an AWS service or another account permission to call a particular API action on a function.
 You can also use the `AWS::Lambda::Permission` resource, however using both `AWS::Lambda::Permission` and `AWS::Lambda::ResourcePolicy` to set permissions on a function can result in errors. Permissions defined in `AWS::Lambda::Permission` can be unintentionally overwritten, whether in a single CloudFormation stack or across multiple stacks. Don't use both resource types to set permissions on a function.
 To migrate existing permissions for a function from `AWS::Lambda::Permission` to `AWS::Lambda::ResourcePolicy`, do the following:
-Set a `Retain`[deletion policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) on the `AWS::Lambda::Permission` resources you want to migrate. This is necessary so that Lambda does not delete statements with the same statement ID when you delete these resources.
-Use the [GetResourcePolicy](https://docs.aws.amazon.com/lambda/latest/api/API_GetResourcePolicy.html)Lambda API to retrieve the resource-based policy currently attached to the function.
+Set a [deletion policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) of `Retain` on the `AWS::Lambda::Permission` resources you want to migrate. This is necessary so that Lambda does not delete statements with the same statement ID when you delete these resources.
+Use the [GetResourcePolicy](https://docs.aws.amazon.com/lambda/latest/api/API_GetResourcePolicy.html) API to retrieve the resource-based policy currently attached to the function.
 Use this policy to create a new `AWS::Lambda::ResourcePolicy` resource.
 Delete all the existing `AWS::Lambda::Permission` resources for the function.
 
@@ -58,7 +58,7 @@ Properties:
 <a name="aws-resource-lambda-resourcepolicy-properties"></a>
 
 `FunctionResourceArn`  <a name="cfn-lambda-resourcepolicy-functionresourcearn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the web function.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$`

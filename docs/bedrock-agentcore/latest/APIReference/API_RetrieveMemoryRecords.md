@@ -100,7 +100,8 @@ Content-type: application/json
             "string" : { ... }
          },
          "namespaces": [ "string" ],
-         "score": number
+         "score": number,
+         "timestamp": number
       }
    ],
    "nextToken": "string"

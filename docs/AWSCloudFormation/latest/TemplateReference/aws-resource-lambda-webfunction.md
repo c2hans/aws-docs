@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunction
 <a name="aws-resource-lambda-webfunction"></a>
 
-<a name="aws-resource-lambda-webfunction-description"></a>The `AWS::Lambda::WebFunction` resource Property description not available. for Lambda.
+The `AWS::Lambda::WebFunction` resource creates a Lambda web function. A web function is a container for revisions and endpoints. This resource creates the web function only, with no revisions and no endpoints. The web function serves no traffic until you add revisions and endpoints. To add them, use the `AWS::Lambda::WebFunctionRevision` and `AWS::Lambda::WebFunctionEndpoint` resources. In this resource's template, you can set only `FunctionName` and `Tags`.
 
 ## Syntax
 <a name="aws-resource-lambda-webfunction-syntax"></a>
@@ -42,7 +42,7 @@ Properties:
 <a name="aws-resource-lambda-webfunction-properties"></a>
 
 `FunctionName`  <a name="cfn-lambda-webfunction-functionname"></a>
-Property description not available.
+The name of the web function. The name can contain letters, numbers, hyphens (-), and underscores (\_), and can't begin or end with a hyphen or an underscore. The name is limited to 64 characters in length.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -50,7 +50,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-lambda-webfunction-tags"></a>
-Property description not available.
+A list of tag key-value pairs to apply to the web function. If a tag key already exists, the new value overwrites the existing value.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-lambda-webfunction-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -61,23 +61,70 @@ Property description not available.
 ### Ref
 <a name="aws-resource-lambda-webfunction-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the web function.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-lambda-webfunction-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-lambda-webfunction-return-values-fn--getatt-fn--getatt"></a>
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The date and time the web function was created.
 
 `FunctionArn`  <a name="FunctionArn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the web function.
 
 `State`  <a name="State-fn::getatt"></a>
-Property description not available.
+The current state of the web function.
 
 `StateReason`  <a name="StateReason-fn::getatt"></a>
-Property description not available.
+The reason for the current state of the web function.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-Property description not available.
+The date and time the web function was last updated.
+
+## Examples
+<a name="aws-resource-lambda-webfunction--examples"></a>
+
+### Web function
+<a name="aws-resource-lambda-webfunction--examples--Web_function"></a>
+
+Create a web function named `my-web-function`.
+
+#### JSON
+<a name="aws-resource-lambda-webfunction--examples--Web_function--json"></a>
+
+```
+"MyWebFunction": {
+    "Type": "AWS::Lambda::WebFunction",
+    "Properties": {
+        "FunctionName": "my-web-function",
+        "Tags": [
+            {
+                "Key": "Environment",
+                "Value": "Production"
+            }
+        ]
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-lambda-webfunction--examples--Web_function--yaml"></a>
+
+```
+MyWebFunction:
+  Type: AWS::Lambda::WebFunction
+  Properties:
+    FunctionName: my-web-function
+    Tags:
+      - Key: Environment
+        Value: Production
+```

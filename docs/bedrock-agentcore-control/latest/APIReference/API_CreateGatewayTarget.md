@@ -15,6 +15,9 @@ POST /gateways/{{gatewayIdentifier}}/targets/ HTTP/1.1
 Content-type: application/json
 
 {
+   "certificateConfigurations": [
+      { ... }
+   ],
    "clientToken": "{{string}}",
    "credentialProviderConfigurations": [
       {
@@ -48,6 +51,12 @@ Required: Yes
 <a name="API_CreateGatewayTarget_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [certificateConfigurations](#API_CreateGatewayTarget_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayTarget-request-certificateConfigurations"></a>
+The private certificate authority (CA) configurations for the gateway target. Use this to have the gateway trust a private CA when it establishes TLS connections to the target endpoint. Provide each certificate by reference to an Amazon S3 object or an AWS Secrets Manager secret. You can specify only one certificate authority configuration in this list.
+Type: Array of [CertificateConfiguration](API_CertificateConfiguration.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
 
  ** [clientToken](#API_CreateGatewayTarget_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayTarget-request-clientToken"></a>
 A unique, case-sensitive identifier to ensure that the API request completes no more than one time. If you don't specify this field, a value is randomly generated for you. If this token matches a previous request, the service ignores the request, but doesn't return an error. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Run_Instance_Idempotency.html).
@@ -100,6 +109,9 @@ Content-type: application/json
 
 {
    "authorizationData": { ... },
+   "certificateConfigurations": [
+      { ... }
+   ],
    "createdAt": "string",
    "credentialProviderConfigurations": [
       {
@@ -144,6 +156,11 @@ The following data is returned in JSON format by the service.
 OAuth2 authorization data for the created gateway target. This data is returned when a target is configured with a credential provider with authorization code grant type and requires user federation.
 Type: [AuthorizationData](API_AuthorizationData.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+
+ ** [certificateConfigurations](#API_CreateGatewayTarget_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayTarget-response-certificateConfigurations"></a>
+The private certificate authority (CA) configurations for the gateway target.
+Type: Array of [CertificateConfiguration](API_CertificateConfiguration.md) objects
+Array Members: Fixed number of 1 item.
 
  ** [createdAt](#API_CreateGatewayTarget_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayTarget-response-createdAt"></a>
 The timestamp when the target was created.

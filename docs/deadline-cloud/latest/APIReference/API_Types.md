@@ -101,6 +101,7 @@ The following data types are supported:
 +  [LimitSummary](API_LimitSummary.md)
 +  [LogConfiguration](API_LogConfiguration.md)
 +  [ManifestProperties](API_ManifestProperties.md)
++  [MembershipSummary](API_MembershipSummary.md)
 +  [MemoryMiBRange](API_MemoryMiBRange.md)
 +  [MeteredProductSummary](API_MeteredProductSummary.md)
 +  [MonitorSummary](API_MonitorSummary.md)

@@ -25,6 +25,7 @@ Required: No
 
  ** oauth **   <a name="BedrockAgentCore-Type-HarnessGatewayOutboundAuth-oauth"></a>
 OAuth 2.0 authentication via AgentCore Identity.
+The `AUTHORIZATION_CODE` grant type is not supported for outbound authentication from a harness to an AgentCore Gateway, even when `defaultReturnUrl` is specified.
 Type: [OAuthCredentialProvider](API_OAuthCredentialProvider.md) object
 Required: No
 

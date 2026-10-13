@@ -12,6 +12,7 @@ Restore the data from a recovery point.
 
 ```
 {
+   "maintainIntegration": {{boolean}},
    "namespaceName": "{{string}}",
    "recoveryPointId": "{{string}}",
    "workgroupName": "{{string}}"
@@ -24,6 +25,12 @@ Restore the data from a recovery point.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [maintainIntegration](#API_RestoreFromRecoveryPoint_RequestSyntax) **   <a name="redshiftserverless-RestoreFromRecoveryPoint-request-maintainIntegration"></a>
+If `true`, maintain existing data sharing, zero-ETL and S3 event integrations when restoring. Otherwise, integrations will not be maintained after the restore operation. Integrations are only maintained when restored to the same serverless namespace.
+Default: true
+Type: Boolean
+Required: No
 
  ** [namespaceName](#API_RestoreFromRecoveryPoint_RequestSyntax) **   <a name="redshiftserverless-RestoreFromRecoveryPoint-request-namespaceName"></a>
 The name of the namespace to restore data into.
@@ -64,6 +71,15 @@ Required: Yes
       "namespaceArn": "string",
       "namespaceId": "string",
       "namespaceName": "string",
+      "s3TablePublishStatus": {
+         "enabledAll": boolean,
+         "lastIngestionTimes": {
+            "string" : "string"
+         },
+         "s3TableGranularity": "string",
+         "s3TableNamespace": "string",
+         "s3Tables": [ "string" ]
+      },
       "status": "string"
    },
    "recoveryPointId": "string"

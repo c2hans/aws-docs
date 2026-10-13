@@ -12,6 +12,10 @@ Returns a list of devices in the fleet.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
+   "LastModifiedTimeAfter": {{number}},
+   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -26,6 +30,26 @@ Returns a list of devices in the fleet.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListDeviceFleets_RequestSyntax) **   <a name="sagemaker-ListDeviceFleets-request-CreationTimeAfter"></a>
+Filter fleets where packaging job was created after specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListDeviceFleets_RequestSyntax) **   <a name="sagemaker-ListDeviceFleets-request-CreationTimeBefore"></a>
+Filter fleets where the edge packaging job was created before specified time.
+Type: Timestamp
+Required: No
+
+ ** [LastModifiedTimeAfter](#API_ListDeviceFleets_RequestSyntax) **   <a name="sagemaker-ListDeviceFleets-request-LastModifiedTimeAfter"></a>
+Select fleets where the job was updated after X
+Type: Timestamp
+Required: No
+
+ ** [LastModifiedTimeBefore](#API_ListDeviceFleets_RequestSyntax) **   <a name="sagemaker-ListDeviceFleets-request-LastModifiedTimeBefore"></a>
+Select fleets where the job was updated before X
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListDeviceFleets_RequestSyntax) **   <a name="sagemaker-ListDeviceFleets-request-MaxResults"></a>
 The maximum number of results to select.
@@ -66,8 +90,10 @@ Required: No
 {
    "DeviceFleetSummaries": [
       {
+         "CreationTime": number,
          "DeviceFleetArn": "string",
-         "DeviceFleetName": "string"
+         "DeviceFleetName": "string",
+         "LastModifiedTime": number
       }
    ],
    "NextToken": "string"

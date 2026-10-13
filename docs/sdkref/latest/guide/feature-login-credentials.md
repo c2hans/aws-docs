@@ -49,6 +49,6 @@ The following SDKs support the features and settings described in this topic. An
 | [SDK for PHP 3.x](https://docs.aws.amazon.com/sdk-for-php/latest/developer-guide/) | Yes |  |
 | [SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/) | Yes | Requires CRT |
 | [SDK for Ruby 3.x](https://docs.aws.amazon.com/sdk-for-ruby/latest/developer-guide/) | Yes |  |
-| [SDK for Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/) | Yes |  |
+| [SDK for Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/) | Yes | [release-2025-11-20](https://github.com/awslabs/aws-sdk-rust/releases/tag/release-2025-11-20) |
 | [Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/latest/userguide/) | Yes |  |
 | [Tools for PowerShell V4](https://docs.aws.amazon.com/powershell/v4/userguide/) | No |  |

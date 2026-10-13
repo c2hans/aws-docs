@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 # FunctionScalingConfig
 <a name="sam-property-function-functionscalingconfig"></a>
 
-Configures the scaling behavior for Lambda function versions, controlling the number of execution environments (sandboxes) that can be created. This configuration applies to both $LATEST.PUBLISHED and numeric function versions.
+Configures the scaling behavior for Lambda Event Function versions, controlling the number of execution environments (sandboxes) that can be created. This configuration applies to both $LATEST.PUBLISHED and numeric function versions.
 
 ## Syntax
 <a name="sam-property-function-functionscalingconfig-syntax"></a>

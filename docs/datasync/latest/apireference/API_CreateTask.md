@@ -50,6 +50,7 @@ If you're planning to transfer data to or from an Amazon S3 location, review [ho
       "Gid": "{{string}}",
       "LogLevel": "{{string}}",
       "Mtime": "{{string}}",
+      "ObjectMetadata": "{{string}}",
       "ObjectTags": "{{string}}",
       "OverwriteMode": "{{string}}",
       "PosixPermissions": "{{string}}",

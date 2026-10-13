@@ -14,27 +14,27 @@ Contains an array.
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
  ** arrayValues **   <a name="rdsdtataservice-Type-ArrayValue-arrayValues"></a>
-An array of arrays.
+An array of arrays. Can contain null values.
 Type: Array of [ArrayValue](#API_ArrayValue) objects
 Required: No
 
  ** booleanValues **   <a name="rdsdtataservice-Type-ArrayValue-booleanValues"></a>
-An array of Boolean values.
+An array of Boolean values. Can contain null values.
 Type: Array of booleans
 Required: No
 
  ** doubleValues **   <a name="rdsdtataservice-Type-ArrayValue-doubleValues"></a>
-An array of floating-point numbers.
+An array of floating-point numbers. Can contain null values.
 Type: Array of doubles
 Required: No
 
  ** longValues **   <a name="rdsdtataservice-Type-ArrayValue-longValues"></a>
-An array of integers.
+An array of integers. Can contain null values.
 Type: Array of longs
 Required: No
 
  ** stringValues **   <a name="rdsdtataservice-Type-ArrayValue-stringValues"></a>
-An array of strings.
+An array of strings. Can contain null values.
 Type: Array of strings
 Required: No
 

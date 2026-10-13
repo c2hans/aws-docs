@@ -70,6 +70,7 @@ Describes the GPU accelerator capabilities required for worker host instances in
 
 `AllowedInstanceTypes`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-allowedinstancetypes"></a>
 The allowable Amazon EC2 instance types.
+If you specify `allowedInstanceTypes`, you can't specify `excludedInstanceTypes`.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1 | 1`
@@ -101,6 +102,7 @@ The custom capability attributes to require for instances in this fleet.
 
 `ExcludedInstanceTypes`  <a name="cfn-deadline-fleet-servicemanagedec2instancecapabilities-excludedinstancetypes"></a>
 The instance types to exclude from the fleet.
+If you specify `excludedInstanceTypes`, you can't specify `allowedInstanceTypes`.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1 | 1`

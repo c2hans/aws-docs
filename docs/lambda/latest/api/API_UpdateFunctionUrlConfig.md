@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_UpdateFunctionUrlC
 # UpdateFunctionUrlConfig
 <a name="API_UpdateFunctionUrlConfig"></a>
 
-Updates the configuration for a Lambda function URL.
+Updates the configuration for a function URL of a Lambda Event Function.
 
 ## Request Syntax
 <a name="API_UpdateFunctionUrlConfig_RequestSyntax"></a>

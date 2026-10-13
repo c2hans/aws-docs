@@ -64,6 +64,7 @@ Required: No
          "CacheHitResult": {
             "SourcePipelineExecutionArn": "string"
          },
+         "EndTime": number,
          "FailureReason": "string",
          "Metadata": {
             "AutoMLJob": {
@@ -185,6 +186,7 @@ Required: No
          "SelectiveExecutionResult": {
             "SourcePipelineExecutionArn": "string"
          },
+         "StartTime": number,
          "StepDescription": "string",
          "StepDisplayName": "string",
          "StepName": "string",

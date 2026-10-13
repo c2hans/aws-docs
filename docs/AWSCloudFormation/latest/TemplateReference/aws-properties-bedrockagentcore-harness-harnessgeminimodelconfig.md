@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AdditionalParams](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-additionalparams)" : {{Json}},
   "[ApiKeyArn](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-apikeyarn)" : {{String}},
   "[MaxTokens](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-maxtokens)" : {{Integer}},
   "[ModelId](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-modelid)" : {{String}},
@@ -32,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-harness-harnessgeminimodelconfig-syntax.yaml"></a>
 
 ```
+  [AdditionalParams](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-additionalparams): {{Json}}
   [ApiKeyArn](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-apikeyarn): {{String}}
   [MaxTokens](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-maxtokens): {{Integer}}
   [ModelId](#cfn-bedrockagentcore-harness-harnessgeminimodelconfig-modelid): {{String}}
@@ -42,6 +44,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-bedrockagentcore-harness-harnessgeminimodelconfig-properties"></a>
+
+`AdditionalParams`  <a name="cfn-bedrockagentcore-harness-harnessgeminimodelconfig-additionalparams"></a>
+Property description not available.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ApiKeyArn`  <a name="cfn-bedrockagentcore-harness-harnessgeminimodelconfig-apikeyarn"></a>
 The ARN of your Gemini API key on AgentCore Identity.

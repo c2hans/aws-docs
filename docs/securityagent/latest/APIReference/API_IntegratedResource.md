@@ -38,6 +38,11 @@ A GitLab repository integrated as a resource.
 Type: [GitLabRepositoryResource](API_GitLabRepositoryResource.md) object
 Required: No
 
+ ** jiraProject **   <a name="securityagent-Type-IntegratedResource-jiraProject"></a>
+The Jira project resource information.
+Type: [JiraProjectResource](API_JiraProjectResource.md) object
+Required: No
+
 ## See Also
 <a name="API_IntegratedResource_SeeAlso"></a>
 

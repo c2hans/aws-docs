@@ -62,6 +62,12 @@ Type: [AuthorizationData](API_AuthorizationData.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
+ ** certificateConfigurations **   <a name="bedrockagentcorecontrol-Type-GatewayTarget-certificateConfigurations"></a>
+The private certificate authority (CA) configurations for the gateway target.
+Type: Array of [CertificateConfiguration](API_CertificateConfiguration.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
+
  ** description **   <a name="bedrockagentcorecontrol-Type-GatewayTarget-description"></a>
 The description for the gateway target.
 Type: String

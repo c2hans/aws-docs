@@ -35,6 +35,7 @@ The following data types are supported:
 +  [BridgeNetworkSource](API_BridgeNetworkSource.md)
 +  [BridgeOutput](API_BridgeOutput.md)
 +  [BridgeSource](API_BridgeSource.md)
++  [ColorInformation](API_ColorInformation.md)
 +  [ContentQualityAnalysisFeatureConfiguration](API_ContentQualityAnalysisFeatureConfiguration.md)
 +  [DefaultMaintenanceConfiguration](API_DefaultMaintenanceConfiguration.md)
 +  [DestinationConfiguration](API_DestinationConfiguration.md)

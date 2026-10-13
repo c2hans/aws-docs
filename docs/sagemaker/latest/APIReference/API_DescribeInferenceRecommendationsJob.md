@@ -35,6 +35,7 @@ Required: Yes
 
 ```
 {
+   "CompletionTime": number,
    "CreationTime": number,
    "EndpointPerformances": [
       {
@@ -180,6 +181,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CompletionTime](#API_DescribeInferenceRecommendationsJob_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceRecommendationsJob-response-CompletionTime"></a>
+A timestamp that shows when the job completed.
+Type: Timestamp
 
  ** [CreationTime](#API_DescribeInferenceRecommendationsJob_ResponseSyntax) **   <a name="sagemaker-DescribeInferenceRecommendationsJob-response-CreationTime"></a>
 A timestamp that shows when the job was created.

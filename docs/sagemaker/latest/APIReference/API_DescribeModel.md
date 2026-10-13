@@ -100,6 +100,7 @@ Required: Yes
          }
       }
    ],
+   "CreationTime": number,
    "DeploymentRecommendation": {
       "RealTimeInferenceRecommendations": [
          {
@@ -200,6 +201,10 @@ The following data is returned in JSON format by the service.
 The containers in the inference pipeline.
 Type: Array of [ContainerDefinition](API_ContainerDefinition.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 15 items.
+
+ ** [CreationTime](#API_DescribeModel_ResponseSyntax) **   <a name="sagemaker-DescribeModel-response-CreationTime"></a>
+A timestamp that shows when the model was created.
+Type: Timestamp
 
  ** [DeploymentRecommendation](#API_DescribeModel_ResponseSyntax) **   <a name="sagemaker-DescribeModel-response-DeploymentRecommendation"></a>
 A set of recommended deployment configurations for the model.

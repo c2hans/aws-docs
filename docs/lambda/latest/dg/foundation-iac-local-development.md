@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/foundation-iac-local-development.html
 ---
 
-# Developing Lambda functions locally
+# Developing Event Functions locally
 <a name="foundation-iac-local-development"></a>
 
-You can move your Lambda functions from the Lambda console to your preferred integrated development environment (IDE), which provides a full development environment where you can use other local development options like AWS SAM and AWS CDK. The Lambda console supports opening functions directly in Visual Studio Code, Kiro, or Cursor.
+You can move your Lambda Event Functions from the Lambda console to your preferred integrated development environment (IDE), which provides a full development environment where you can use other local development options like AWS SAM and AWS CDK. The Lambda console supports opening functions directly in Visual Studio Code, Kiro, or Cursor.
 
 ## Key benefits of local development
 <a name="lambda-functions-vscode-benefits"></a>

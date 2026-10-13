@@ -14,7 +14,7 @@ The configuration for a policy engine associated with a gateway. A policy engine
 The ARN of the policy engine. The policy engine contains Cedar or Dogwood policies that define fine-grained authorization rules specifying who can perform what actions on which resources as agents interact through the gateway.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 170.
-Pattern: `arn:aws:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:policy-engine\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9_]{10}`
+Pattern: `arn:aws(-[^:]+)?:bedrock-agentcore:[a-z0-9-]+:[0-9]{12}:policy-engine\/[a-zA-Z][a-zA-Z0-9-_]{0,99}-[a-zA-Z0-9_]{10}`
 Required: Yes
 
  ** mode **   <a name="bedrockagentcorecontrol-Type-GatewayPolicyEngineConfiguration-mode"></a>

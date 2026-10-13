@@ -9,6 +9,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
  The settings for the NDI® source. This includes the exact name of the upstream NDI sender that you want to connect to your source.
 
+**Note**
+When you update the NDI source, include only the members you want to change. MediaConnect leaves the members that you don't specify unchanged.
+
 ## Syntax
 <a name="aws-properties-mediaconnect-flow-ndisourcesettings-syntax"></a>
 

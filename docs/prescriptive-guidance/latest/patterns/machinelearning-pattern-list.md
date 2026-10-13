@@ -22,6 +22,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 + [Develop a fully automated chat-based assistant by using Amazon Bedrock agents and knowledge bases](develop-a-fully-automated-chat-based-assistant-by-using-amazon-bedrock-agents-and-knowledge-bases.md)
 + [Document institutional knowledge from voice inputs by using Amazon Bedrock and Amazon Transcribe](document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.md)
 + [Generate personalized and re-ranked recommendations using Amazon Personalize](generate-personalized-and-re-ranked-recommendations-using-amazon-personalize.md)
++ [Governing AI agent tool quotas with AWS Agent Registry and Amazon Bedrock AgentCore Gateway](govern-tool-access-with-aws-agent-registry-metadata.md)
 + [Streamline machine learning workflows from local development to scalable experiments by using SageMaker AI and Hydra](streamline-machine-learning-workflows-by-using-amazon-sagemaker.md)
 + [Translate natural language into query DSL for OpenSearch and Elasticsearch queries](translate-natural-language-query-dsl-opensearch-elasticsearch.md)
 + [Use Amazon Q Developer as a coding assistant to increase your productivity](use-q-developer-as-coding-assistant-to-increase-productivity.md)

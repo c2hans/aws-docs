@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/java-custom-serialization.html
 ---
 
-# Customize serialization for Lambda Java functions
+# Customize serialization for Lambda Java Event Functions
 <a name="java-custom-serialization"></a>
 
 The Lambda [Java managed runtimes](lambda-java.md#java-runtimes) support custom serialization for JSON events. Custom serialization can simplify your code and potentially improve performance.
@@ -44,7 +44,7 @@ In this scenario, the default serialization in the managed runtime expects the J
 
 Use a [Service Provider Interface](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html) to load a serializer of your choice instead of the managed runtime's default serialization logic. You can serialize your JSON event payloads directly into Java objects, using the standard `RequestHandler` interface.
 
-**To use custom serialization in your Lambda Java function**
+**To use custom serialization in your Java Lambda Event Function**
 
 1. Add the [aws-lambda-java-core](https://mvnrepository.com/artifact/com.amazonaws/aws-lambda-java-core) library as a dependency. This library includes the [CustomPojoSerializer](https://github.com/aws/aws-lambda-java-libs/blob/main/aws-lambda-java-core/src/main/java/com/amazonaws/services/lambda/runtime/CustomPojoSerializer.java) interface, along with other interface definitions for working with Java in Lambda.
 

@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AuthorizerType](#cfn-agentregistry-registry-authorizertype)" : {{String}},
       "[AutoDetectionEnabled](#cfn-agentregistry-registry-autodetectionenabled)" : {{Boolean}},
       "[AutoDetectionScope](#cfn-agentregistry-registry-autodetectionscope)" : {{String}},
+      "[CustomMetadataSchemaConfiguration](#cfn-agentregistry-registry-custommetadataschemaconfiguration)" : {{CustomMetadataSchemaConfiguration}},
       "[Description](#cfn-agentregistry-registry-description)" : {{String}},
       "[DiscoveryConfiguration](#cfn-agentregistry-registry-discoveryconfiguration)" : {{DiscoveryConfiguration}},
       "[EncryptionConfiguration](#cfn-agentregistry-registry-encryptionconfiguration)" : {{EncryptionConfiguration}},
@@ -45,6 +46,8 @@ Properties:
   [AuthorizerType](#cfn-agentregistry-registry-authorizertype): {{String}}
   [AutoDetectionEnabled](#cfn-agentregistry-registry-autodetectionenabled): {{Boolean}}
   [AutoDetectionScope](#cfn-agentregistry-registry-autodetectionscope): {{String}}
+  [CustomMetadataSchemaConfiguration](#cfn-agentregistry-registry-custommetadataschemaconfiguration): {{
+    CustomMetadataSchemaConfiguration}}
   [Description](#cfn-agentregistry-registry-description): {{String}}
   [DiscoveryConfiguration](#cfn-agentregistry-registry-discoveryconfiguration): {{
     DiscoveryConfiguration}}
@@ -82,6 +85,12 @@ Property description not available.
 *Required*: No
 *Type*: String
 *Allowed values*: `ORGANIZATION`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CustomMetadataSchemaConfiguration`  <a name="cfn-agentregistry-registry-custommetadataschemaconfiguration"></a>
+The custom metadata schema configuration for this registry, if one has been defined.
+*Required*: No
+*Type*: [CustomMetadataSchemaConfiguration](aws-properties-agentregistry-registry-custommetadataschemaconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-agentregistry-registry-description"></a>

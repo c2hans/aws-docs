@@ -43,10 +43,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-networkconnector-vpcegressconfiguration-properties"></a>
 
 `AssociatedComputeResourceTypes`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-associatedcomputeresourcetypes"></a>
-The types of Lambda compute resources that can use this connector. Supported value: `MicroVm`.
+The types of Lambda compute resources that can use this connector:
++ `MicroVm` – A Lambda function that runs on a MicroVM-based execution environment.
++ `WebFunction` – A Lambda web function with built-in HTTP endpoints.
 *Required*: Yes
 *Type*: Array of String
-*Allowed values*: `MicroVm`
+*Allowed values*: `MicroVm | WebFunction`
 *Minimum*: `1`
 *Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -54,14 +56,14 @@ The types of Lambda compute resources that can use this connector. Supported val
 `NetworkProtocol`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-networkprotocol"></a>
 The network protocol for the connector. Specify `IPv4` for IPv4-only networking, or `DualStack` for both IPv4 and IPv6.
 *Valid Values*: `IPv4` \| `DualStack`
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Allowed values*: `IPv4 | DualStack`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityGroupIds`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-securitygroupids"></a>
 The IDs of the VPC security groups to attach to the ENIs. Specify 0 to 5 security groups. All security groups must be in the same VPC as the subnets.
-*Required*: No
+*Required*: Yes
 *Type*: Array of String
 *Minimum*: `0 | 0`
 *Maximum*: `1024 | 5`

@@ -40,7 +40,7 @@ Timeout in seconds for idle runtime sessions. When a session remains idle for th
 *Required*: No
 *Type*: Integer
 *Minimum*: `60`
-*Maximum*: `28800`
+*Maximum*: `1209600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxLifetime`  <a name="cfn-bedrockagentcore-harness-lifecycleconfiguration-maxlifetime"></a>
@@ -48,5 +48,5 @@ Maximum lifetime for the instance in seconds. Once reached, instances will be au
 *Required*: No
 *Type*: Integer
 *Minimum*: `60`
-*Maximum*: `28800`
+*Maximum*: `1209600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -34,6 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[SourceVpc](#cfn-ec2-networkinsightsanalysis-pathcomponent-sourcevpc)" : {{AnalysisComponent}},
   "[Subnet](#cfn-ec2-networkinsightsanalysis-pathcomponent-subnet)" : {{AnalysisComponent}},
   "[TransitGateway](#cfn-ec2-networkinsightsanalysis-pathcomponent-transitgateway)" : {{AnalysisComponent}},
+  "[TransitGatewayPolicyTableEntry](#cfn-ec2-networkinsightsanalysis-pathcomponent-transitgatewaypolicytableentry)" : {{AnalysisTransitGatewayPolicyTableEntry}},
   "[TransitGatewayRouteTableRoute](#cfn-ec2-networkinsightsanalysis-pathcomponent-transitgatewayroutetableroute)" : {{TransitGatewayRouteTableRoute}},
   "[Vpc](#cfn-ec2-networkinsightsanalysis-pathcomponent-vpc)" : {{AnalysisComponent}}
 }
@@ -71,6 +72,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     AnalysisComponent}}
   [TransitGateway](#cfn-ec2-networkinsightsanalysis-pathcomponent-transitgateway): {{
     AnalysisComponent}}
+  [TransitGatewayPolicyTableEntry](#cfn-ec2-networkinsightsanalysis-pathcomponent-transitgatewaypolicytableentry): {{
+    AnalysisTransitGatewayPolicyTableEntry}}
   [TransitGatewayRouteTableRoute](#cfn-ec2-networkinsightsanalysis-pathcomponent-transitgatewayroutetableroute): {{
     TransitGatewayRouteTableRoute}}
   [Vpc](#cfn-ec2-networkinsightsanalysis-pathcomponent-vpc): {{
@@ -168,6 +171,12 @@ The subnet.
 The transit gateway.
 *Required*: No
 *Type*: [AnalysisComponent](aws-properties-ec2-networkinsightsanalysis-analysiscomponent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TransitGatewayPolicyTableEntry`  <a name="cfn-ec2-networkinsightsanalysis-pathcomponent-transitgatewaypolicytableentry"></a>
+Property description not available.
+*Required*: No
+*Type*: [AnalysisTransitGatewayPolicyTableEntry](aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransitGatewayRouteTableRoute`  <a name="cfn-ec2-networkinsightsanalysis-pathcomponent-transitgatewayroutetableroute"></a>

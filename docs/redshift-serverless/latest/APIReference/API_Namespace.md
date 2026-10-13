@@ -84,6 +84,11 @@ Length Constraints: Minimum length of 3. Maximum length of 64.
 Pattern: `[a-z0-9-]+`
 Required: No
 
+ ** s3TablePublishStatus **   <a name="redshiftserverless-Type-Namespace-s3TablePublishStatus"></a>
+The current Amazon S3 Tables log-publishing status for the namespace. Not returned when S3 Tables publishing has never been configured for the namespace.
+Type: [S3TablePublishStatus](API_S3TablePublishStatus.md) object
+Required: No
+
  ** status **   <a name="redshiftserverless-Type-Namespace-status"></a>
 The status of the namespace.
 Type: String

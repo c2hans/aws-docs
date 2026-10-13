@@ -15,6 +15,11 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_TransportMed
 Type: Array of [TransportStreamProgram](API_TransportStreamProgram.md) objects
 Required: Yes
 
+ ** tsId **   <a name="mediaconnect-Type-TransportMediaInfo-tsId"></a>
+The transport stream ID (TSID) of the source, from the Program Association Table (PAT).
+Type: Integer
+Required: No
+
 ## See Also
 <a name="API_TransportMediaInfo_SeeAlso"></a>
 

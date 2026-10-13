@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ListVersionsByFunc
 # ListVersionsByFunction
 <a name="API_ListVersionsByFunction"></a>
 
-Returns a list of [versions](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html), with the version-specific configuration of each. Lambda returns up to 50 versions per call.
+Returns a list of [versions](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html) of a Lambda Event Function, with the version-specific configuration of each. Lambda returns up to 50 versions per call.
 
 ## Request Syntax
 <a name="API_ListVersionsByFunction_RequestSyntax"></a>

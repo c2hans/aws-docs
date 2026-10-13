@@ -13,6 +13,8 @@ Lists the actions in your account and their properties.
 ```
 {
    "ActionType": "{{string}}",
+   "CreatedAfter": {{number}},
+   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "SortBy": "{{string}}",
@@ -32,6 +34,16 @@ The request accepts the following data in JSON format.
 A filter that returns only actions of the specified type.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
+
+ ** [CreatedAfter](#API_ListActions_RequestSyntax) **   <a name="sagemaker-ListActions-request-CreatedAfter"></a>
+A filter that returns only actions created on or after the specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreatedBefore](#API_ListActions_RequestSyntax) **   <a name="sagemaker-ListActions-request-CreatedBefore"></a>
+A filter that returns only actions created on or before the specified time.
+Type: Timestamp
 Required: No
 
  ** [MaxResults](#API_ListActions_RequestSyntax) **   <a name="sagemaker-ListActions-request-MaxResults"></a>
@@ -76,6 +88,8 @@ Required: No
          "ActionArn": "string",
          "ActionName": "string",
          "ActionType": "string",
+         "CreationTime": number,
+         "LastModifiedTime": number,
          "Source": {
             "SourceId": "string",
             "SourceType": "string",

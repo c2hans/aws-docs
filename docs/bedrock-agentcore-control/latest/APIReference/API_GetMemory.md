@@ -102,6 +102,7 @@ Content-type: application/json
             "name": "string",
             "namespaces": [ "string" ],
             "namespaceTemplates": [ "string" ],
+            "recordExpiryDurationDays": number,
             "status": "string",
             "strategyId": "string",
             "type": "string",

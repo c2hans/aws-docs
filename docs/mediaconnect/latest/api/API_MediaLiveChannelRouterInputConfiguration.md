@@ -7,6 +7,11 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaLiveCha
 
 Configuration settings for connecting a router input to a MediaLive channel output.
 
+To connect the router input to the MediaLive channel output, provide all three of `mediaLiveChannelArn`, `mediaLivePipelineId`, and `mediaLiveChannelOutputName`. To disconnect it, call the update operation and omit all three fields while keeping this configuration object.
+
+**Note**
+You can't change `sourceTransitDecryption` while the router input is connected to a MediaLive channel output. To change it, first disconnect the router input, then update the decryption.
+
 ## Contents
 <a name="API_MediaLiveChannelRouterInputConfiguration_Contents"></a>
 

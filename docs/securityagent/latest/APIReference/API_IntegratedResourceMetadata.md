@@ -38,6 +38,11 @@ Metadata for an integrated GitLab repository.
 Type: [GitLabRepositoryMetadata](API_GitLabRepositoryMetadata.md) object
 Required: No
 
+ ** jiraProject **   <a name="securityagent-Type-IntegratedResourceMetadata-jiraProject"></a>
+The Jira project metadata.
+Type: [JiraProjectMetadata](API_JiraProjectMetadata.md) object
+Required: No
+
 ## See Also
 <a name="API_IntegratedResourceMetadata_SeeAlso"></a>
 

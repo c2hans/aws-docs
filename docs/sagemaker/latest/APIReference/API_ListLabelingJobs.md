@@ -12,6 +12,10 @@ Gets a list of labeling jobs.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
+   "LastModifiedTimeAfter": {{number}},
+   "LastModifiedTimeBefore": {{number}},
    "MaxResults": {{number}},
    "NameContains": "{{string}}",
    "NextToken": "{{string}}",
@@ -27,6 +31,26 @@ Gets a list of labeling jobs.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListLabelingJobs_RequestSyntax) **   <a name="sagemaker-ListLabelingJobs-request-CreationTimeAfter"></a>
+A filter that returns only labeling jobs created after the specified time (timestamp).
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListLabelingJobs_RequestSyntax) **   <a name="sagemaker-ListLabelingJobs-request-CreationTimeBefore"></a>
+A filter that returns only labeling jobs created before the specified time (timestamp).
+Type: Timestamp
+Required: No
+
+ ** [LastModifiedTimeAfter](#API_ListLabelingJobs_RequestSyntax) **   <a name="sagemaker-ListLabelingJobs-request-LastModifiedTimeAfter"></a>
+A filter that returns only labeling jobs modified after the specified time (timestamp).
+Type: Timestamp
+Required: No
+
+ ** [LastModifiedTimeBefore](#API_ListLabelingJobs_RequestSyntax) **   <a name="sagemaker-ListLabelingJobs-request-LastModifiedTimeBefore"></a>
+A filter that returns only labeling jobs modified before the specified time (timestamp).
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListLabelingJobs_RequestSyntax) **   <a name="sagemaker-ListLabelingJobs-request-MaxResults"></a>
 The maximum number of labeling jobs to return in each page of the response.
@@ -74,6 +98,7 @@ Required: No
    "LabelingJobSummaryList": [
       {
          "AnnotationConsolidationLambdaArn": "string",
+         "CreationTime": number,
          "FailureReason": "string",
          "InputConfig": {
             "DataAttributes": {
@@ -102,6 +127,7 @@ Required: No
             "OutputDatasetS3Uri": "string"
          },
          "LabelingJobStatus": "string",
+         "LastModifiedTime": number,
          "PreHumanTaskLambdaArn": "string",
          "WorkteamArn": "string"
       }

@@ -81,7 +81,7 @@ You don't have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** BadRequestException **
-There is an error in the call or in a SQL statement. (This error only appears in calls from Aurora Serverless v1 databases.)
+There is an error in the call or in a SQL statement. This exception is deprecated.
  ** message **
 The error message returned by this `BadRequestException` error.
 HTTP Status Code: 400

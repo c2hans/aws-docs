@@ -25,7 +25,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::SES::Tenant",
   "Properties" : {
+      "[ReputationEntity](#cfn-ses-tenant-reputationentity)" : {{ReputationEntity}},
       "[ResourceAssociations](#cfn-ses-tenant-resourceassociations)" : {{[ ResourceAssociation, ... ]}},
+      "[SuppressionAttributes](#cfn-ses-tenant-suppressionattributes)" : {{TenantSuppressionAttributes}},
       "[Tags](#cfn-ses-tenant-tags)" : {{[ Tag, ... ]}},
       "[TenantName](#cfn-ses-tenant-tenantname)" : {{String}}
     }
@@ -38,8 +40,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::SES::Tenant
 Properties:
+  [ReputationEntity](#cfn-ses-tenant-reputationentity): {{
+    ReputationEntity}}
   [ResourceAssociations](#cfn-ses-tenant-resourceassociations): {{
     - ResourceAssociation}}
+  [SuppressionAttributes](#cfn-ses-tenant-suppressionattributes): {{
+    TenantSuppressionAttributes}}
   [Tags](#cfn-ses-tenant-tags): {{
     - Tag}}
   [TenantName](#cfn-ses-tenant-tenantname): {{String}}
@@ -48,11 +54,23 @@ Properties:
 ## Properties
 <a name="aws-resource-ses-tenant-properties"></a>
 
+`ReputationEntity`  <a name="cfn-ses-tenant-reputationentity"></a>
+An object that contains information about a reputation entity, including its reference, type, policy, status records, and reputation impact.
+*Required*: No
+*Type*: [ReputationEntity](aws-properties-ses-tenant-reputationentity.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `ResourceAssociations`  <a name="cfn-ses-tenant-resourceassociations"></a>
 The list of resources to associate with the tenant.
 *Required*: No
 *Type*: Array of [ResourceAssociation](aws-properties-ses-tenant-resourceassociation.md)
 *Minimum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SuppressionAttributes`  <a name="cfn-ses-tenant-suppressionattributes"></a>
+An object that contains information about the suppression list preferences for the tenant.
+*Required*: No
+*Type*: [TenantSuppressionAttributes](aws-properties-ses-tenant-tenantsuppressionattributes.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-ses-tenant-tags"></a>

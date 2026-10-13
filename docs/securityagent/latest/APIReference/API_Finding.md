@@ -76,6 +76,11 @@ The identifier of the entity that last updated the finding.
 Type: String
 Required: No
 
+ ** linkedIssue **   <a name="securityagent-Type-Finding-linkedIssue"></a>
+The issue in a third-party issue tracker that this finding has been exported to.
+Type: [LinkedIssue](API_LinkedIssue.md) object
+Required: No
+
  ** name **   <a name="securityagent-Type-Finding-name"></a>
 The name of the finding.
 Type: String

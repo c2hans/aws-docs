@@ -50,6 +50,8 @@ Content-type: application/json
          "Arn": "string",
          "Id": "string",
          "LastModified": "string",
+         "LatestVersion": number,
+         "LatestVersionArn": "string",
          "Name": "string",
          "State": "string",
          "Type": "string"

@@ -58,8 +58,10 @@ Required: No
             }
          },
          "AlertStatus": "string",
+         "CreationTime": number,
          "DatapointsToAlert": number,
          "EvaluationPeriod": number,
+         "LastModifiedTime": number,
          "MonitoringAlertName": "string"
       }
    ],

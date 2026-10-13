@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 # Hooks
 <a name="sam-property-function-hooks"></a>
 
-Validation Lambda functions that are run before and after traffic shifting.
+Validation Lambda Event Functions that are run before and after traffic shifting.
 
 **Note**
 The Lambda functions referenced in this property configure the `CodeDeployLambdaAliasUpdate` object of the resulting [AWS::Lambda::Alias](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-alias.html) resource. For more information, see [CodeDeployLambdaAliasUpdate Policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-updatepolicy.html#cfn-attributes-updatepolicy-codedeploylambdaaliasupdate) in the *AWS CloudFormation User Guide*.

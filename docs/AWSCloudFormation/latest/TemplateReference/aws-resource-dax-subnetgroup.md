@@ -81,9 +81,6 @@ my-dax-subnet-group
 
 For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
 
-### Fn::GetAtt
-<a name="aws-resource-dax-subnetgroup-return-values-fn--getatt"></a>
-
 ## Examples
 <a name="aws-resource-dax-subnetgroup--examples"></a>
 

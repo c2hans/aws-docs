@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[MaxTokens](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-maxtokens)" : {{Integer}},
+  "[StopSequences](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-stopsequences)" : {{[ String, ... ]}},
   "[Temperature](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-temperature)" : {{Number}},
   "[TopP](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-topp)" : {{Number}}
 }
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [MaxTokens](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-maxtokens): {{Integer}}
+  [StopSequences](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-stopsequences): {{
+    - String}}
   [Temperature](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-temperature): {{Number}}
   [TopP](#cfn-bedrockagentcore-evaluator-inferenceconfiguration-topp): {{Number}}
 ```
@@ -42,6 +45,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StopSequences`  <a name="cfn-bedrockagentcore-evaluator-inferenceconfiguration-stopsequences"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `2500`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Temperature`  <a name="cfn-bedrockagentcore-evaluator-inferenceconfiguration-temperature"></a>

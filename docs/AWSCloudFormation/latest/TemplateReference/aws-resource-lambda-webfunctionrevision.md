@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionRevision
 <a name="aws-resource-lambda-webfunctionrevision"></a>
 
-<a name="aws-resource-lambda-webfunctionrevision-description"></a>The `AWS::Lambda::WebFunctionRevision` resource Property description not available. for Lambda.
+The `AWS::Lambda::WebFunctionRevision` resource creates an immutable revision for a Lambda web function. A revision represents a specific version of the function's code and configuration. You can't modify a revision after you create it. You also can't delete a revision that is currently serving traffic on an endpoint. To route traffic to a revision, reference it from the `RevisionWeights` property of an `AWS::Lambda::WebFunctionEndpoint` resource.
 
 ## Syntax
 <a name="aws-resource-lambda-webfunctionrevision-syntax"></a>
@@ -49,13 +49,13 @@ Properties:
 <a name="aws-resource-lambda-webfunctionrevision-properties"></a>
 
 `BuildConfig`  <a name="cfn-lambda-webfunctionrevision-buildconfig"></a>
-Property description not available.
+The build configuration for the revision, including code location and runtime settings.
 *Required*: Yes
 *Type*: [BuildConfig](aws-properties-lambda-webfunctionrevision-buildconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Description`  <a name="cfn-lambda-webfunctionrevision-description"></a>
-Property description not available.
+A description of the revision.
 *Required*: No
 *Type*: String
 *Minimum*: `0`
@@ -63,7 +63,11 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `FunctionName`  <a name="cfn-lambda-webfunctionrevision-functionname"></a>
-Property description not available.
+The web function.
+You can specify either of the following:
++ The function name, for example `my-function`.
++ The function ARN, for example `arn:aws:lambda:us-east-1:111122223333:web-function/my-function`.
+The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -71,7 +75,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `KmsKeyArn`  <a name="cfn-lambda-webfunctionrevision-kmskeyarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) key used to encrypt the revision's code and environment variables.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:(aws[a-z-]*){1}:kms:[a-z0-9-]+:[0-9]{12}:key/.*$`
@@ -80,7 +84,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ServiceConfig`  <a name="cfn-lambda-webfunctionrevision-serviceconfig"></a>
-Property description not available.
+The service configuration for the revision, including execution role, timeout, and concurrency settings.
 *Required*: Yes
 *Type*: [ServiceConfig](aws-properties-lambda-webfunctionrevision-serviceconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -91,26 +95,96 @@ Property description not available.
 ### Ref
 <a name="aws-resource-lambda-webfunctionrevision-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the revision.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-lambda-webfunctionrevision-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-lambda-webfunctionrevision-return-values-fn--getatt-fn--getatt"></a>
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The date and time the revision was created.
 
 `FunctionArn`  <a name="FunctionArn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the web function.
 
 `RevisionArn`  <a name="RevisionArn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the revision.
 
 `RevisionId`  <a name="RevisionId-fn::getatt"></a>
-Property description not available.
+The identifier of the revision.
 
 `State`  <a name="State-fn::getatt"></a>
-Property description not available.
+The current state of the revision.
 
 `StateReason`  <a name="StateReason-fn::getatt"></a>
-Property description not available.
+The reason for the current state of the revision.
+
+## Examples
+<a name="aws-resource-lambda-webfunctionrevision--examples"></a>
+
+### Web function revision
+<a name="aws-resource-lambda-webfunctionrevision--examples--Web_function_revision"></a>
+
+Create a revision for the web function `my-web-function` from a deployment package in Amazon S3.
+
+#### JSON
+<a name="aws-resource-lambda-webfunctionrevision--examples--Web_function_revision--json"></a>
+
+```
+"MyRevision": {
+    "Type": "AWS::Lambda::WebFunctionRevision",
+    "Properties": {
+        "FunctionName": "my-web-function",
+        "Description": "First revision",
+        "BuildConfig": {
+            "CodeConfig": {
+                "S3Object": {
+                    "Bucket": "amzn-s3-demo-bucket",
+                    "Key": "app.zip"
+                }
+            },
+            "RuntimeConfig": {
+                "Runtime": "nodejs24.x"
+            }
+        },
+        "ServiceConfig": {
+            "ExecutionRoleArn": {
+                "Fn::GetAtt": [
+                    "MyExecutionRole",
+                    "Arn"
+                ]
+            },
+            "TimeoutSeconds": 30
+        }
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-lambda-webfunctionrevision--examples--Web_function_revision--yaml"></a>
+
+```
+MyRevision:
+  Type: AWS::Lambda::WebFunctionRevision
+  Properties:
+    FunctionName: my-web-function
+    Description: First revision
+    BuildConfig:
+      CodeConfig:
+        S3Object:
+          Bucket: amzn-s3-demo-bucket
+          Key: app.zip
+      RuntimeConfig:
+        Runtime: nodejs24.x
+    ServiceConfig:
+      ExecutionRoleArn: !GetAtt MyExecutionRole.Arn
+      TimeoutSeconds: 30
+```

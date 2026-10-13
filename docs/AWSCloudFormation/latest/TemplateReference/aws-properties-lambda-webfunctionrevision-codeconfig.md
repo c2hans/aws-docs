@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionRevision CodeConfig
 <a name="aws-properties-lambda-webfunctionrevision-codeconfig"></a>
 
-<a name="aws-properties-lambda-webfunctionrevision-codeconfig-description"></a>The `CodeConfig` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionRevision](aws-resource-lambda-webfunctionrevision.md).
+The code configuration specifying the location of the deployment artifact.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionrevision-codeconfig-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionrevision-codeconfig-properties"></a>
 
 `S3Object`  <a name="cfn-lambda-webfunctionrevision-codeconfig-s3object"></a>
-Property description not available.
+The Amazon S3 location of the deployment artifact.
 *Required*: Yes
 *Type*: [S3Object](aws-properties-lambda-webfunctionrevision-s3object.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

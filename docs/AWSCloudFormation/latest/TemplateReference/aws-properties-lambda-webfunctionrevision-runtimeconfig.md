@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionRevision RuntimeConfig
 <a name="aws-properties-lambda-webfunctionrevision-runtimeconfig"></a>
 
-<a name="aws-properties-lambda-webfunctionrevision-runtimeconfig-description"></a>The `RuntimeConfig` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionRevision](aws-resource-lambda-webfunctionrevision.md).
+The runtime configuration for a web function revision.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionrevision-runtimeconfig-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionrevision-runtimeconfig-properties"></a>
 
 `Runtime`  <a name="cfn-lambda-webfunctionrevision-runtimeconfig-runtime"></a>
-Property description not available.
+The runtime identifier for the web function (for example, a Node.js runtime identifier).
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-z][a-z0-9]*[0-9]+(\.[a-z0-9]+)*$`

@@ -9,7 +9,9 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/Welcome.html
 
  AWS Lambda is a compute service that lets you run code without provisioning or managing servers. Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. With Lambda, you can run code for virtually any type of application or backend service. For more information about the Lambda service, see [What is Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) in the ** AWS Lambda Developer Guide**.
 
-The * AWS Lambda API Reference* provides information about each of the API methods, including details about the parameters in each API request and response.
+Lambda Event Functions, previously known as Lambda functions, run your code in response to events and API calls. In the Lambda API, the AWS SDKs, and the AWS CLI, Event Functions are still called *functions*, for example in `CreateFunction` and `Invoke`. You don't need to change any existing code.
+
+The * AWS Lambda API Reference* provides information about each of the API methods for Lambda Event Functions, including details about the parameters in each API request and response.
 
 You can use Software Development Kits (SDKs), Integrated Development Environment (IDE) Toolkits, and command line tools to access the API. For installation instructions, see [Tools for Amazon Web Services](http://aws.amazon.com/tools/).
 
@@ -32,4 +34,4 @@ When accessing the Lambda management console or Lambda API endpoints, whether th
 
 Root certificates from the first two authorities are available from [Amazon trust services](https://www.amazontrust.com/repository/), but keeping your computer up-to-date is the more straightforward solution. To learn more about ACM-provided certificates, see [AWS Certificate Manager FAQs.](http://aws.amazon.com/certificate-manager/faqs/#certificates)
 
-This document was last published on October 9, 2026.
+This document was last published on October 13, 2026.

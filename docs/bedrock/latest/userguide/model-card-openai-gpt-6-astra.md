@@ -35,7 +35,7 @@ GPT-6 Astra is OpenAI's most capable model. It handles the hardest end-to-end wo
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-6-astra-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs GPT-6 Astra supports. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs GPT-6 Astra supports. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -106,6 +106,8 @@ For JSON Schema output with the Converse API, you must set `additionalModelReque
 
 All prices are in USD per 1 million tokens. The following tables list Standard and Ultrafast prices.
 
+The **Input — 30-minute cache write** column is the price per 1 million tokens written to the prompt cache. The 30-minute figure is how long a cached prompt prefix is retained, not a quantity of tokens. For more information, see [prompt caching](prompt-caching.md).
+
 Commercial In-Region and Geo CRIS prices include a 10% premium over the corresponding OpenAI rates for the same service tier. You do not need to add this premium.
 
 *Priority and Flex tiers are not supported for this model.*
@@ -113,7 +115,7 @@ Commercial In-Region and Geo CRIS prices include a 10% premium over the correspo
 ### Standard — Commercial Regions, short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-6-astra-pricing-commercial-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $11.00 | $13.75 | $1.10 | $55.00 |
 | Geo CRIS | $11.00 | $13.75 | $1.10 | $55.00 |
@@ -122,7 +124,7 @@ Commercial In-Region and Geo CRIS prices include a 10% premium over the correspo
 ### Standard — Commercial Regions, long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-6-astra-pricing-commercial-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $22.00 | $27.50 | $2.20 | $82.50 |
 | Geo CRIS | $22.00 | $27.50 | $2.20 | $82.50 |
@@ -133,7 +135,7 @@ Ultrafast prices are six times the corresponding Standard prices. On `bedrock-ru
 ### Ultrafast — Commercial Regions, short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-6-astra-pricing-ultrafast-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region (us-east-1) | $66.00 | $82.50 | $6.60 | $330.00 |
 | Geo CRIS (US) | $66.00 | $82.50 | $6.60 | $330.00 |
@@ -142,7 +144,7 @@ Ultrafast prices are six times the corresponding Standard prices. On `bedrock-ru
 ### Ultrafast — Commercial Regions, long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-6-astra-pricing-ultrafast-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region (us-east-1) | $132.00 | $165.00 | $13.20 | $495.00 |
 | Geo CRIS (US) | $132.00 | $165.00 | $13.20 | $495.00 |
@@ -151,7 +153,7 @@ Ultrafast prices are six times the corresponding Standard prices. On `bedrock-ru
 ## Programmatic Access
 <a name="model-card-openai-gpt-6-astra-programmatic-access"></a>
 
-To call this model from code, use the following model IDs and endpoint URLs. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+To call this model from code, use the following model IDs and endpoint URLs. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |

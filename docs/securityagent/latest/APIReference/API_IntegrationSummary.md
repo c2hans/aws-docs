@@ -28,13 +28,13 @@ Required: Yes
  ** provider **   <a name="securityagent-Type-IntegrationSummary-provider"></a>
 The integration provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS | JIRA`
 Required: Yes
 
  ** providerType **   <a name="securityagent-Type-IntegrationSummary-providerType"></a>
 The type of the integration provider.
 Type: String
-Valid Values: `SOURCE_CODE | DOCUMENTATION`
+Valid Values: `SOURCE_CODE | DOCUMENTATION | ISSUE_TRACKING`
 Required: Yes
 
  ** privateConnectionName **   <a name="securityagent-Type-IntegrationSummary-privateConnectionName"></a>

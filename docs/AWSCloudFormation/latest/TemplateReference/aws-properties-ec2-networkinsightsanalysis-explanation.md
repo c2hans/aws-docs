@@ -63,6 +63,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[SubnetRouteTable](#cfn-ec2-networkinsightsanalysis-explanation-subnetroutetable)" : {{AnalysisComponent}},
   "[TransitGateway](#cfn-ec2-networkinsightsanalysis-explanation-transitgateway)" : {{AnalysisComponent}},
   "[TransitGatewayAttachment](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewayattachment)" : {{AnalysisComponent}},
+  "[TransitGatewayPolicyTable](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytable)" : {{AnalysisComponent}},
+  "[TransitGatewayPolicyTableEntry](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytableentry)" : {{AnalysisTransitGatewayPolicyTableEntry}},
   "[TransitGatewayRouteTable](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewayroutetable)" : {{AnalysisComponent}},
   "[TransitGatewayRouteTableRoute](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewayroutetableroute)" : {{TransitGatewayRouteTableRoute}},
   "[Vpc](#cfn-ec2-networkinsightsanalysis-explanation-vpc)" : {{AnalysisComponent}},
@@ -153,6 +155,10 @@ To declare this entity in your CloudFormation template, use the following syntax
     AnalysisComponent}}
   [TransitGatewayAttachment](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewayattachment): {{
     AnalysisComponent}}
+  [TransitGatewayPolicyTable](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytable): {{
+    AnalysisComponent}}
+  [TransitGatewayPolicyTableEntry](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytableentry): {{
+    AnalysisTransitGatewayPolicyTableEntry}}
   [TransitGatewayRouteTable](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewayroutetable): {{
     AnalysisComponent}}
   [TransitGatewayRouteTableRoute](#cfn-ec2-networkinsightsanalysis-explanation-transitgatewayroutetableroute): {{
@@ -449,6 +455,18 @@ The transit gateway.
 The transit gateway attachment.
 *Required*: No
 *Type*: [AnalysisComponent](aws-properties-ec2-networkinsightsanalysis-analysiscomponent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TransitGatewayPolicyTable`  <a name="cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytable"></a>
+Property description not available.
+*Required*: No
+*Type*: [AnalysisComponent](aws-properties-ec2-networkinsightsanalysis-analysiscomponent.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TransitGatewayPolicyTableEntry`  <a name="cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytableentry"></a>
+Property description not available.
+*Required*: No
+*Type*: [AnalysisTransitGatewayPolicyTableEntry](aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransitGatewayRouteTable`  <a name="cfn-ec2-networkinsightsanalysis-explanation-transitgatewayroutetable"></a>

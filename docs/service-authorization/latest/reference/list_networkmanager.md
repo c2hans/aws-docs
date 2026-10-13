@@ -576,7 +576,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 ## Actions defined by AWS Network Manager
 <a name="list_networkmanager-actions-as-permissions"></a>
 
-You can specify the following actions in the `Action` element of an IAM policy statement. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
+You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
 - **   [AcceptAttachment](https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_AcceptAttachment.html)  **
   - **Description:** Grants permission to accept creation of an attachment between a source and destination in a core network

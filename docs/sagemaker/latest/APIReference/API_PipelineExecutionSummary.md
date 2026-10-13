@@ -43,6 +43,11 @@ Type: String
 Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded`
 Required: No
 
+ ** StartTime **   <a name="sagemaker-Type-PipelineExecutionSummary-StartTime"></a>
+The start time of the pipeline execution.
+Type: Timestamp
+Required: No
+
 ## See Also
 <a name="API_PipelineExecutionSummary_SeeAlso"></a>
 

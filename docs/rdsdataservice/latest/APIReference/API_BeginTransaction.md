@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_B
 Starts a SQL transaction.
 
 **Note**
-A transaction can run for a maximum of 24 hours. A transaction is terminated and rolled back automatically after 24 hours.
+A transaction can run for a maximum of 1 hour. A transaction is terminated and rolled back automatically after 1 hour.
 A transaction times out if no calls use its transaction ID in three minutes. If a transaction times out before it's committed, it's rolled back automatically.
 For Aurora MySQL, DDL statements inside a transaction cause an implicit commit. We recommend that you run each MySQL DDL statement in a separate `ExecuteStatement` call with `continueAfterTimeout` enabled.
 
@@ -93,7 +93,7 @@ You don't have sufficient access to perform this action.
 HTTP Status Code: 403
 
  ** BadRequestException **
-There is an error in the call or in a SQL statement. (This error only appears in calls from Aurora Serverless v1 databases.)
+There is an error in the call or in a SQL statement. This exception is deprecated.
  ** message **
 The error message returned by this `BadRequestException` error.
 HTTP Status Code: 400
@@ -107,7 +107,7 @@ The DB cluster doesn't have a DB instance.
 HTTP Status Code: 404
 
  ** DatabaseResumingException **
-A request was cancelled because the Aurora Serverless v2 DB instance was paused. The Data API request automatically resumes the DB instance. Wait a few seconds and try again.
+A request was cancelled because the Aurora Serverless DB instance was paused. The Data API request automatically resumes the DB instance. Wait a few seconds and try again.
 HTTP Status Code: 400
 
  ** DatabaseUnavailableException **

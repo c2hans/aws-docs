@@ -12,6 +12,8 @@ Gets a list of all versions of the pipeline.
 
 ```
 {
+   "CreatedAfter": {{number}},
+   "CreatedBefore": {{number}},
    "MaxResults": {{number}},
    "NextToken": "{{string}}",
    "PipelineName": "{{string}}",
@@ -25,6 +27,16 @@ Gets a list of all versions of the pipeline.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreatedAfter](#API_ListPipelineVersions_RequestSyntax) **   <a name="sagemaker-ListPipelineVersions-request-CreatedAfter"></a>
+A filter that returns the pipeline versions that were created after a specified time.
+Type: Timestamp
+Required: No
+
+ ** [CreatedBefore](#API_ListPipelineVersions_RequestSyntax) **   <a name="sagemaker-ListPipelineVersions-request-CreatedBefore"></a>
+A filter that returns the pipeline versions that were created before a specified time.
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListPipelineVersions_RequestSyntax) **   <a name="sagemaker-ListPipelineVersions-request-MaxResults"></a>
 The maximum number of pipeline versions to return in the response.
@@ -60,6 +72,7 @@ Required: No
    "NextToken": "string",
    "PipelineVersionSummaries": [
       {
+         "CreationTime": number,
          "LastExecutionPipelineExecutionArn": "string",
          "PipelineArn": "string",
          "PipelineVersionDescription": "string",

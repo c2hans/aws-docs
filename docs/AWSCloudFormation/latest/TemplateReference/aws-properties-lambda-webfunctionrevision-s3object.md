@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionRevision S3Object
 <a name="aws-properties-lambda-webfunctionrevision-s3object"></a>
 
-<a name="aws-properties-lambda-webfunctionrevision-s3object-description"></a>The `S3Object` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionRevision](aws-resource-lambda-webfunctionrevision.md).
+The Amazon S3 location of a deployment artifact.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionrevision-s3object-syntax"></a>
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionrevision-s3object-properties"></a>
 
 `Bucket`  <a name="cfn-lambda-webfunctionrevision-s3object-bucket"></a>
-Property description not available.
+The name of the Amazon S3 bucket.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^([a-z0-9][a-z0-9\.\-]{1,61}[a-z0-9])$`
@@ -47,7 +47,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Key`  <a name="cfn-lambda-webfunctionrevision-s3object-key"></a>
-Property description not available.
+The Amazon S3 object key.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -55,7 +55,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VersionId`  <a name="cfn-lambda-webfunctionrevision-s3object-versionid"></a>
-Property description not available.
+The version ID of the Amazon S3 object.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

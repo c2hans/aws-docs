@@ -35,6 +35,7 @@ Required: Yes
 
 ```
 {
+   "CreationTime": number,
    "FailureReason": "string",
    "HumanTaskConfig": {
       "AnnotationConsolidationConfig": {
@@ -102,6 +103,7 @@ Required: Yes
       "OutputDatasetS3Uri": "string"
    },
    "LabelingJobStatus": "string",
+   "LastModifiedTime": number,
    "OutputConfig": {
       "KmsKeyId": "string",
       "S3OutputPath": "string",
@@ -127,6 +129,10 @@ Required: Yes
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [CreationTime](#API_DescribeLabelingJob_ResponseSyntax) **   <a name="sagemaker-DescribeLabelingJob-response-CreationTime"></a>
+The date and time that the labeling job was created.
+Type: Timestamp
 
  ** [FailureReason](#API_DescribeLabelingJob_ResponseSyntax) **   <a name="sagemaker-DescribeLabelingJob-response-FailureReason"></a>
 If the job failed, the reason that it failed.
@@ -205,6 +211,10 @@ Type: [LabelingJobOutput](API_LabelingJobOutput.md) object
 The processing status of the labeling job.
 Type: String
 Valid Values: `Initializing | InProgress | Completed | Failed | Stopping | Stopped`
+
+ ** [LastModifiedTime](#API_DescribeLabelingJob_ResponseSyntax) **   <a name="sagemaker-DescribeLabelingJob-response-LastModifiedTime"></a>
+The date and time that the labeling job was last updated.
+Type: Timestamp
 
  ** [OutputConfig](#API_DescribeLabelingJob_ResponseSyntax) **   <a name="sagemaker-DescribeLabelingJob-response-OutputConfig"></a>
 The location of the job's output data and the AWS Key Management Service key ID for the key used to encrypt the output data, if any.

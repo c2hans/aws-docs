@@ -7,6 +7,16 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect
 
 We recommend subscribing to the RSS feed so updates to these notes are delivered to your Inbox. Choose the **RSS** link (under the topic title **Release notes**), and then copy the URL (it ends with `doc-history.xml.rss`) into your RSS reader. For example, you can subscribe to an RSS feed in Outlook.
 
+## October 2026 Updates
+<a name="oct26-release-notes"></a>
+
+### Amazon Connect Customer now prefills step-by-step guides for after contact work
+<a name="oct26-acw-guide-prefill"></a>
+
+Amazon Connect Customer can now fill in the step-by-step guides that agents complete after a contact, using information extracted from customer conversations, such as booking identifiers, claim numbers, and conversation summaries. Managers can set which information populates each form field. Agents can review and submit rather than manually typing in each field, saving time and improving data accuracy during after contact work.
+
+For more information, see [Prefill guides for after contact work using conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/integrate-views-conversational-analytics.html).
+
 ## September 2026 Updates
 <a name="sep26-release-notes"></a>
 
@@ -54,6 +64,19 @@ Connect Customer now supports Malay for generative AI performance evaluations of
 For more information, see [generative AI performance evaluations](https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-performance-evaluations.html).
 
 Available in the AWS Regions where Connect Customer performance evaluations are offered.
+
+### Connect Customer now returns chat connection information from StartChatContact
+<a name="sep26-startchatcontact-inline-connection"></a>
+
+With Connect Customer, you can now get a chat participant's connection information in the same call that starts the chat. Request the connection types you want on `StartChatContact`, and the response returns a websocket URL, a connection token, or both. Requesting a websocket URL saves your back end a round trip. Your client connects to that URL instead of calling `CreateParticipantConnection` to connect the participant. Your customers wait less time before the chat window is ready to use.
+
+The same request can also start real-time message streaming. Supply a streaming configuration, and the response returns a streaming identifier. Your back end does not call `StartContactStreaming`.
+
+Both request members are optional, so existing chat integrations are unaffected.
+
+For more information, see the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API.
+
+Available in all AWS Regions where Connect Customer is offered.
 
 ## August 2026 Updates
 <a name="aug26-release-notes"></a>
@@ -2277,7 +2300,7 @@ conversational analytics enables you to automatically fill and submit evaluation
 #### Connect Customer allows you to create rich, interactive chat experiences for customers using step-by-step guides
 <a name="guides-in-chat-mar24"></a>
 
-Connect Customer allows you to create rich, interactive chat experiences for customers using step-by-step guides, that help resolve issues faster and improve the customer experience. For more information, see [Deploy step-by-step guides in Connect Customer chats](step-by-step-guides-chat.md).
+Connect Customer allows you to create rich, interactive chat experiences for customers using step-by-step guides, that help resolve issues faster and improve the customer experience. For more information, see [Use step-by-step guides in chats](step-by-step-guides-chat.md).
 
 #### Connect Customer agent workspace supports third-party applications in general availability
 <a name="3p-ga-mar24"></a>

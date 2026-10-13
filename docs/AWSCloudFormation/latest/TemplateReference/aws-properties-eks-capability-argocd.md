@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AwsIdc](#cfn-eks-capability-argocd-awsidc)" : {{AwsIdc}},
+  "[EndpointPrefix](#cfn-eks-capability-argocd-endpointprefix)" : {{String}},
   "[Namespace](#cfn-eks-capability-argocd-namespace)" : {{String}},
   "[NetworkAccess](#cfn-eks-capability-argocd-networkaccess)" : {{NetworkAccess}},
   "[RbacRoleMappings](#cfn-eks-capability-argocd-rbacrolemappings)" : {{[ ArgoCdRoleMapping, ... ]}},
@@ -33,6 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AwsIdc](#cfn-eks-capability-argocd-awsidc): {{
     AwsIdc}}
+  [EndpointPrefix](#cfn-eks-capability-argocd-endpointprefix): {{String}}
   [Namespace](#cfn-eks-capability-argocd-namespace): {{String}}
   [NetworkAccess](#cfn-eks-capability-argocd-networkaccess): {{
     NetworkAccess}}
@@ -48,6 +50,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: Yes
 *Type*: [AwsIdc](aws-properties-eks-capability-awsidc.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`EndpointPrefix`  <a name="cfn-eks-capability-argocd-endpointprefix"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9]([a-z0-9-]*[a-z0-9])?$`
+*Minimum*: `1`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Namespace`  <a name="cfn-eks-capability-argocd-namespace"></a>

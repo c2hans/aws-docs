@@ -42,12 +42,16 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `MediaConnectFlow`  <a name="cfn-mediaconnect-routeroutput-routeroutputconfiguration-mediaconnectflow"></a>
 Configuration settings for connecting a router output to a MediaConnect flow source.
+To connect the router output to the flow source, provide both `flowArn` and `flowSourceArn`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+You can't change `destinationTransitEncryption` while the router output is connected to a flow source. To change it, first disconnect the router output, then update the encryption.
 *Required*: No
 *Type*: [MediaConnectFlowRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-mediaconnectflowrouteroutputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MediaLiveInput`  <a name="cfn-mediaconnect-routeroutput-routeroutputconfiguration-medialiveinput"></a>
 Configuration settings for connecting a router output to a MediaLive input.
+To connect the router output to the MediaLive input, provide both `mediaLiveInputArn` and `mediaLivePipelineId`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+You can't change `destinationTransitEncryption` while the router output is connected to a MediaLive input. To change it, first disconnect the router output, then update the encryption.
 *Required*: No
 *Type*: [MediaLiveInputRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

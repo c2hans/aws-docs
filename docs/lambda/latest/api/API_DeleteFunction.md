@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteFunction.htm
 # DeleteFunction
 <a name="API_DeleteFunction"></a>
 
-Deletes a Lambda function. To delete a specific function version, use the `Qualifier` parameter. Otherwise, all versions and aliases are deleted. This doesn't require the user to have explicit permissions for [DeleteAlias](API_DeleteAlias.md).
+Deletes a Lambda Event Function. To delete a specific function version, use the `Qualifier` parameter. Otherwise, all versions and aliases are deleted. This doesn't require the user to have explicit permissions for [DeleteAlias](API_DeleteAlias.md).
 
 **Note**
 A deleted Lambda function cannot be recovered. Ensure that you specify the correct function name and version before deleting.

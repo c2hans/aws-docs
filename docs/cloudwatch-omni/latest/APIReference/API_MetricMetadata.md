@@ -11,7 +11,7 @@ A single metric observed on a context graph node.
 <a name="API_MetricMetadata_Contents"></a>
 
  ** attributes **   <a name="cloudwatchomni-Type-MetricMetadata-attributes"></a>
-Per-metric qualifying attributes the console uses to query this metric's telemetry. These are the RAW, store-matching values keyed by their OTel names ("service.name", "service.namespace", "cloud.provider", "cloud.account.id", "cloud.region", "instrumentation\_scope") — deliberately NOT the node's normalized/merged identity, so the query selectors match the emitted series. A merged node can carry different values per metric, which is why they live here rather than on the node.
+Per-metric qualifying attributes used to query this metric's telemetry. Keys are the metric store's own label names, not bare OTel attribute names: service identity arrives as "@resource.service.name" and "@resource.service.namespace", and the instrumentation scope as "@instrumentation.@name", while span-derived metrics label the service as a bare "service.name". Cloud provider, account and region are not repeated per metric — read those from the node. Values are RAW, deliberately NOT the node's normalized or merged identity, so a selector built from them matches the emitted series. A merged node can carry different values per metric, which is why these live here rather than on the node.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
@@ -23,11 +23,6 @@ Required: No
 
  ** name **   <a name="cloudwatchomni-Type-MetricMetadata-name"></a>
 The metric name as emitted, such as "Duration".
-Type: String
-Required: No
-
- ** namespace **   <a name="cloudwatchomni-Type-MetricMetadata-namespace"></a>
-DEPRECATED: read attributes["service.namespace"] instead. Retained (deprecated) for backward compatibility with existing consumers; will be removed once they migrate. The logical service grouping the metric belongs to.
 Type: String
 Required: No
 

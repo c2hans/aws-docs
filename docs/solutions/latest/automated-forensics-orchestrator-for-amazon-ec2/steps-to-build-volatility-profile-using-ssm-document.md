@@ -13,12 +13,20 @@ The below diagram explains the overall architecture of building volatility profi
 
 The diagram below details the usage of a Volatility profile in the memory investigation flow.
 
-**usage of a volatility profile in the memory investigation flow**
-image::images/volatility-profile-using-ssm-flow.png[scaledwidth=100%]. Launch an [Amazon EC2](https://aws.amazon.com/ec2/) instance (Amazon Linux 2) to build a LiME module volatility profile. Ensure the SSM is appropriately configured on the EC2 instance or EKS cluster. Record the instance ID. . Navigate to the AWS Systems Manager documents and select the previously created SSM document example **Documents** tab. Record the name of the SSM document to build the profile.
+ **usage of a volatility profile in the memory investigation flow**
 
-\+ .SSM document image::images/ssm-document.png[scaledwidth=100%] Run AWS SSM document to build LiME module and Volatility 3 symbol tables for a launched Amazon EC2 instance or EKS cluster that matches the OS and kernel version.
+![volatility profile using ssm flow](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/volatility-profile-using-ssm-flow.png)
 
-\+ NOTE: Currently the profile and tools are loaded into the S3 bucket for Amazon Linux EC2 instance. For other operating systems, modify the SSM document to create Volatility profiles.
+1. Launch an [Amazon EC2](https://aws.amazon.com/ec2/) instance (Amazon Linux 2) to build a LiME module volatility profile. Ensure the SSM is appropriately configured on the EC2 instance or EKS cluster. Record the instance ID.
+
+1. Navigate to the AWS Systems Manager documents and select the previously created SSM document example **Documents** tab. Record the name of the SSM document to build the profile.
+
+    **SSM document**
+![ssm document](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/ssm-document.png)
+
+1. Run AWS SSM document to build LiME module and Volatility 3 symbol tables for a launched Amazon EC2 instance or EKS cluster that matches the OS and kernel version.
+**Note**
+Currently the profile and tools are loaded into the S3 bucket for Amazon Linux EC2 instance. For other operating systems, modify the SSM document to create Volatility profiles.
 
 ## Automate the creation of LiME and Volatility 3 symbol tables
 <a name="automate-creation-of-lime-and-volatility-profiles"></a>

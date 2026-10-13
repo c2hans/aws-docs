@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/java-image.html
 ---
 
-# Deploy Java Lambda functions with container images
+# Deploy Java Lambda Event Functions with container images
 <a name="java-image"></a>
 
-There are three ways to build a container image for a Java Lambda function:
+There are three ways to build a container image for a Java Lambda Event Function:
 + [Using an AWS base image for Java](#java-image-instructions)
 
   The [AWS base images](images-create.md#runtimes-images-lp) are preloaded with a language runtime, a runtime interface client to manage the interaction between Lambda and your function code, and a runtime interface emulator for local testing.

@@ -63,6 +63,13 @@ Type: String
 Valid Values: `NONE | PRESERVE`
 Required: No
 
+ ** ObjectMetadata **   <a name="DataSync-Type-Options-ObjectMetadata"></a>
+Specifies whether you want DataSync to `PRESERVE` object metadata (default behavior) when transferring between object storage systems. If you want your DataSync task to ignore object metadata, specify the `NONE` value.
+Even if you specify `NONE`, metadata for the last modified time is still preserved.
+Type: String
+Valid Values: `PRESERVE | NONE`
+Required: No
+
  ** ObjectTags **   <a name="DataSync-Type-Options-ObjectTags"></a>
 Specifies whether you want DataSync to `PRESERVE` object tags (default behavior) when transferring between object storage systems. If you want your DataSync task to ignore object tags, specify the `NONE` value.
 Type: String

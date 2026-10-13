@@ -7,6 +7,11 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MediaConnect
 
 Configuration settings for connecting a router output to a MediaConnect flow source.
 
+To connect the router output to the flow source, provide both `flowArn` and `flowSourceArn`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+
+**Note**
+You can't change `destinationTransitEncryption` while the router output is connected to a flow source. To change it, first disconnect the router output, then update the encryption.
+
 ## Contents
 <a name="API_MediaConnectFlowRouterOutputConfiguration_Contents"></a>
 

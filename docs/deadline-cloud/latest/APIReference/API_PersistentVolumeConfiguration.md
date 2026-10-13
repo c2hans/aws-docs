@@ -23,7 +23,7 @@ Valid Range: Minimum value of 100. Maximum value of 80000.
 Required: No
 
  ** lastUsedTtlHours **   <a name="deadlinecloud-Type-PersistentVolumeConfiguration-lastUsedTtlHours"></a>
-The number of hours a persistent volume can remain unused before it is deleted. The default is 168 (7 days).
+The number of hours a persistent volume can remain unused before it is deleted. The default is 12.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 8760.
 Required: No

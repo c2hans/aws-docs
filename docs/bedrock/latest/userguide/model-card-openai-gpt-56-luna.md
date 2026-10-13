@@ -34,7 +34,7 @@ GPT-5.6 Luna is the fast and affordable model from OpenAI. Use Luna for high-vol
 ## Endpoints and APIs supported
 <a name="model-card-openai-gpt-56-luna-apis-endpoints"></a>
 
-The following tables show which endpoints and APIs are supported for GPT-5.6 Luna. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Endpoints supported by Amazon Bedrock](endpoints.md).
+The following tables show which endpoints and APIs are supported for GPT-5.6 Luna. For more information, see [APIs supported by Amazon Bedrock](apis.md) and [Inference endpoints supported by Amazon Bedrock](endpoints.md).
 
 **Endpoint support**
 
@@ -61,7 +61,7 @@ For Responses, use `/openai/v1/responses`.
 For Chat Completions, use `/openai/v1/chat/completions`.
 
 **Tip**
-Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Endpoints supported by Amazon Bedrock](endpoints.md) for details.
+Whenever possible, we recommend using the `bedrock-runtime` endpoint for new applications. See [Inference endpoints supported by Amazon Bedrock](endpoints.md) for details.
 
 ## Capabilities and Features
 <a name="model-card-openai-gpt-56-luna-capabilities"></a>
@@ -108,6 +108,8 @@ For JSON Schema output with the Converse API, you must set `additionalModelReque
 
 All prices are in USD per 1 million tokens for the Standard tier.
 
+The **Input — 30-minute cache write** column is the price per 1 million tokens written to the prompt cache. The 30-minute figure is how long a cached prompt prefix is retained, not a quantity of tokens. For more information, see [prompt caching](prompt-caching.md).
+
 Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need to add this fee.
 
 *Priority and Flex tiers are not supported for this model.*
@@ -115,7 +117,7 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 ### Commercial Regions — short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-56-luna-pricing-commercial-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $0.22 | $0.275 | $0.022 | $1.32 |
 | Geo CRIS | $0.22 | $0.275 | $0.022 | $1.32 |
@@ -124,7 +126,7 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 ### Commercial Regions — long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-luna-pricing-commercial-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $0.44 | $0.55 | $0.044 | $1.98 |
 | Geo CRIS | $0.44 | $0.55 | $0.044 | $1.98 |
@@ -136,14 +138,14 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 #### Short context (272K input tokens or fewer)
 <a name="model-card-openai-gpt-56-luna-pricing-govcloud-short"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $0.27 | $0.3375 | $0.027 | $1.62 |
 
 #### Long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-luna-pricing-govcloud-long"></a>
 
-| **Inference option** | **Input** | **Input — 30m cache write** | **Input — cache read** | **Output** |
+| **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
 | In-Region | $0.54 | $0.675 | $0.054 | $2.43 |
 

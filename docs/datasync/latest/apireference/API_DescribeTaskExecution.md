@@ -109,6 +109,7 @@ Required: Yes
       "Gid": "string",
       "LogLevel": "string",
       "Mtime": "string",
+      "ObjectMetadata": "string",
       "ObjectTags": "string",
       "OverwriteMode": "string",
       "PosixPermissions": "string",

@@ -55,6 +55,7 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
+   "CreationTime": number,
    "Description": "string",
    "FailureReason": "string",
    "LastModifiedBy": {
@@ -67,6 +68,7 @@ Required: No
       "UserProfileArn": "string",
       "UserProfileName": "string"
    },
+   "LastModifiedTime": number,
    "Name": "string",
    "SchedulerConfig": {
       "FairShare": "string",
@@ -118,6 +120,10 @@ Type: Integer
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
 
+ ** [CreationTime](#API_DescribeClusterSchedulerConfig_ResponseSyntax) **   <a name="sagemaker-DescribeClusterSchedulerConfig-response-CreationTime"></a>
+Creation time of the cluster policy.
+Type: Timestamp
+
  ** [Description](#API_DescribeClusterSchedulerConfig_ResponseSyntax) **   <a name="sagemaker-DescribeClusterSchedulerConfig-response-Description"></a>
 Description of the cluster policy.
 Type: String
@@ -132,6 +138,10 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
  ** [LastModifiedBy](#API_DescribeClusterSchedulerConfig_ResponseSyntax) **   <a name="sagemaker-DescribeClusterSchedulerConfig-response-LastModifiedBy"></a>
 Information about the user who created or modified a SageMaker resource.
 Type: [UserContext](API_UserContext.md) object
+
+ ** [LastModifiedTime](#API_DescribeClusterSchedulerConfig_ResponseSyntax) **   <a name="sagemaker-DescribeClusterSchedulerConfig-response-LastModifiedTime"></a>
+Last modified time of the cluster policy.
+Type: Timestamp
 
  ** [Name](#API_DescribeClusterSchedulerConfig_ResponseSyntax) **   <a name="sagemaker-DescribeClusterSchedulerConfig-response-Name"></a>
 Name of the cluster policy.

@@ -12,6 +12,8 @@ List the export jobs for the Amazon SageMaker Model Card.
 
 ```
 {
+   "CreationTimeAfter": {{number}},
+   "CreationTimeBefore": {{number}},
    "MaxResults": {{number}},
    "ModelCardExportJobNameContains": "{{string}}",
    "ModelCardName": "{{string}}",
@@ -29,6 +31,16 @@ List the export jobs for the Amazon SageMaker Model Card.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [CreationTimeAfter](#API_ListModelCardExportJobs_RequestSyntax) **   <a name="sagemaker-ListModelCardExportJobs-request-CreationTimeAfter"></a>
+Only list model card export jobs that were created after the time specified.
+Type: Timestamp
+Required: No
+
+ ** [CreationTimeBefore](#API_ListModelCardExportJobs_RequestSyntax) **   <a name="sagemaker-ListModelCardExportJobs-request-CreationTimeBefore"></a>
+Only list model card export jobs that were created before the time specified.
+Type: Timestamp
+Required: No
 
  ** [MaxResults](#API_ListModelCardExportJobs_RequestSyntax) **   <a name="sagemaker-ListModelCardExportJobs-request-MaxResults"></a>
 The maximum number of model card export jobs to list.
@@ -87,6 +99,8 @@ Required: No
 {
    "ModelCardExportJobSummaries": [
       {
+         "CreatedAt": number,
+         "LastModifiedAt": number,
          "ModelCardExportJobArn": "string",
          "ModelCardExportJobName": "string",
          "ModelCardName": "string",

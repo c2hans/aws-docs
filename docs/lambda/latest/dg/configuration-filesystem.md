@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem.html
 ---
 
-# Configuring file system access for Lambda functions
+# Configuring file system access for Lambda Event Functions
 <a name="configuration-filesystem"></a>
 
 You can configure a Lambda function to mount a file system to a local directory. Lambda supports the following file system types:

@@ -19,6 +19,8 @@ Create an Argo CD capability on your Amazon EKS cluster using the AWS Management
 ## Create the Argo CD capability
 <a name="_create_the_argo_cd_capability"></a>
 
+This console procedure uses `argocd` as the primary Argo CD namespace. For information about the primary namespace and additional resource namespaces, see [Configure namespaces for Applications and ApplicationSets](argocd-configure-settings.md#argocd-configure-resource-namespaces).
+
 1. Open the Amazon EKS console at https://console.aws.amazon.com/eks/home\#/clusters.
 
 1. Select your cluster name to open the cluster detail page.
@@ -63,6 +65,16 @@ If you plan to use the optional integrations with AWS Secrets Manager or AWS Cod
    1. Choose the VPC endpoint you created from the dropdown.
 **Note**
 When private endpoint is enabled, the Argo CD UI and API are only accessible through the VPC endpoint. Users must be connected to the VPC (or a peered network) to access the Argo CD interface.
+
+1.  **(Optional) Specify an endpoint prefix**:
+
+   By default, Amazon EKS generates the Argo CD endpoint hostname for you. To choose how the hostname starts, specify an endpoint prefix.
+
+   1. Expand **Additional configuration and defaults**.
+
+   1. For **Argo CD endpoint prefix - *optional* **, enter a prefix. The prefix must be 1 to 50 characters and must start and end with a letter or a number. Valid characters are lowercase letters, numbers, and hyphens (`-`). The prefix must be unique within your AWS account and AWS Region.
+**Note**
+You can’t change the endpoint prefix after you create the capability. For more information, see [Use a custom endpoint prefix](working-with-argocd.md#argocd-endpoint-prefix).
 
 1. Choose **Create**.
 

@@ -42,6 +42,11 @@ You can also retrieve source metadata for a flow by using the AWS CLI. The follo
                    "Streams": [
                        {
                            "Codec": "H264",
+                           "Color": {
+                               "Colorimetry": "BT709",
+                               "MatrixCoefficients": "BT709",
+                               "TransferCharacteristics": "BT709"
+                           },
                            "FrameRate": "59.94",
                            "FrameResolution": {
                                "FrameHeight": 1080,
@@ -65,7 +70,8 @@ You can also retrieve source metadata for a flow by using the AWS CLI. The follo
                        }
                    ]
                }
-           ]
+           ],
+           "TsId": 100
        }
    }
    ```

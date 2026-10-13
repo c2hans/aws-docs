@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionEndpoint ThrottleConfig
 <a name="aws-properties-lambda-webfunctionendpoint-throttleconfig"></a>
 
-<a name="aws-properties-lambda-webfunctionendpoint-throttleconfig-description"></a>The `ThrottleConfig` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionEndpoint](aws-resource-lambda-webfunctionendpoint.md).
+The throttling configuration for a web function endpoint.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionendpoint-throttleconfig-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionendpoint-throttleconfig-properties"></a>
 
 `RateLimit`  <a name="cfn-lambda-webfunctionendpoint-throttleconfig-ratelimit"></a>
-Property description not available.
+The maximum request rate per second for the endpoint. This optional setting further constrains the endpoint's request rate; when omitted, the endpoint's request rate is limited only by your account's rate limit quota. Specify `0` to reject all new requests. Other supported values are `100` through `1000` in increments of 100, and `2000` through `10000` in increments of 1000. Supported values can vary by Region; if you specify an unsupported value, the error lists the values available in that Region. On an update, omit `ThrottleConfig` to keep the current value, or specify an empty object to clear a previously set value.
 *Required*: No
 *Type*: Integer
 *Minimum*: `0`

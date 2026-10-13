@@ -12,6 +12,13 @@ Only the provided fields are changed; omitted fields are left unchanged.
 ## Request Parameters
 <a name="API_UpdateSpace_RequestParameters"></a>
 
+ ** agentCoreEvaluationRoleArn **
+The ARN of the IAM role used by AgentCore online evaluation. Must be in the caller's account. Omit if the space does not use AgentCore online evaluation.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:.+`
+Required: No
+
  ** encryptionConfiguration **
 How to encrypt the space's data at rest. Omit to leave encryption unchanged. Pass `encryptionStrategy` AWS\_OWNED to stop using a customer managed key and revert to service owned encryption.
 Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object

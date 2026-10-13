@@ -67,6 +67,7 @@ Required: Yes
    "DeviceDeploymentSummaries": [
       {
          "DeployedStageName": "string",
+         "DeploymentStartTime": number,
          "Description": "string",
          "DeviceArn": "string",
          "DeviceDeploymentStatus": "string",

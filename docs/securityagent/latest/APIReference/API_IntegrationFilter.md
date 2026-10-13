@@ -16,13 +16,13 @@ This data type is a UNION, so only one of the following members can be specified
  ** provider **   <a name="securityagent-Type-IntegrationFilter-provider"></a>
 Filter integrations by provider.
 Type: String
-Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS`
+Valid Values: `GITHUB | GITLAB | BITBUCKET | CONFLUENCE | AZURE_DEVOPS | JIRA`
 Required: No
 
  ** providerType **   <a name="securityagent-Type-IntegrationFilter-providerType"></a>
 Filter integrations by provider type.
 Type: String
-Valid Values: `SOURCE_CODE | DOCUMENTATION`
+Valid Values: `SOURCE_CODE | DOCUMENTATION | ISSUE_TRACKING`
 Required: No
 
 ## See Also

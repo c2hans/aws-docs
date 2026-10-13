@@ -43,6 +43,11 @@ The configuration for a GitLab integration.
 Type: [GitLabIntegrationInput](API_GitLabIntegrationInput.md) object
 Required: No
 
+ ** jira **   <a name="securityagent-Type-ProviderInput-jira"></a>
+The configuration for a Jira integration.
+Type: [JiraIntegrationInput](API_JiraIntegrationInput.md) object
+Required: No
+
 ## See Also
 <a name="API_ProviderInput_SeeAlso"></a>
 

@@ -15,11 +15,15 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** mediaConnectFlow **   <a name="mediaconnect-Type-RouterOutputConfiguration-mediaConnectFlow"></a>
 Configuration settings for connecting a router output to a MediaConnect flow source.
+To connect the router output to the flow source, provide both `flowArn` and `flowSourceArn`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+You can't change `destinationTransitEncryption` while the router output is connected to a flow source. To change it, first disconnect the router output, then update the encryption.
 Type: [MediaConnectFlowRouterOutputConfiguration](API_MediaConnectFlowRouterOutputConfiguration.md) object
 Required: No
 
  ** mediaLiveInput **   <a name="mediaconnect-Type-RouterOutputConfiguration-mediaLiveInput"></a>
 Configuration settings for connecting a router output to a MediaLive input.
+To connect the router output to the MediaLive input, provide both `mediaLiveInputArn` and `mediaLivePipelineId`. To disconnect it, call the update operation and omit both fields while keeping this configuration object.
+You can't change `destinationTransitEncryption` while the router output is connected to a MediaLive input. To change it, first disconnect the router output, then update the encryption.
 Type: [MediaLiveInputRouterOutputConfiguration](API_MediaLiveInputRouterOutputConfiguration.md) object
 Required: No
 

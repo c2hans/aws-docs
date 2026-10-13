@@ -43,12 +43,22 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`
 Required: Yes
 
+ ** expiresAt **   <a name="BedrockAgentCore-Type-MemoryRecord-expiresAt"></a>
+The timestamp at which the memory record expires and becomes eligible for deletion. This value is set when a record expiry (long-term memory time-to-live) applies to the record, either from the strategy the record belongs to or from a record expiry provided on the batch request that created or updated it. If the record has no expiry configured, this value is not present and the record does not expire.
+Type: Timestamp
+Required: No
+
  ** metadata **   <a name="BedrockAgentCore-Type-MemoryRecord-metadata"></a>
 A map of metadata key-value pairs associated with a memory record.
 Type: String to [MemoryRecordMetadataValue](API_MemoryRecordMetadataValue.md) object map
 Map Entries: Maximum number of 20 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Key Pattern: `[a-zA-Z0-9\s._:/=+@-]*`
+Required: No
+
+ ** timestamp **   <a name="BedrockAgentCore-Type-MemoryRecord-timestamp"></a>
+The timestamp based on which the memory record was ingested. This reflects the time of the source content that the record was derived from, which can differ from `createdAt`, the time the record itself was written.
+Type: Timestamp
 Required: No
 
 ## See Also

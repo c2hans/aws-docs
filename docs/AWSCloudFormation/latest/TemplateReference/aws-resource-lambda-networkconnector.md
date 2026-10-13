@@ -7,7 +7,10 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::NetworkConnector
 <a name="aws-resource-lambda-networkconnector"></a>
 
-The `AWS::Lambda::NetworkConnector` resource creates a network connector that enables Lambda MicroVMs to reach resources in a virtual private cloud (VPC). A network connector provisions elastic network interfaces (ENIs) in the subnets you specify, providing a managed network path to private resources such as databases, caches, and internal APIs.
+The `AWS::Lambda::NetworkConnector` resource creates a network connector that enables Lambda MicroVMs and WebFunction compute resources to reach resources in a virtual private cloud (VPC). A network connector provisions elastic network interfaces (ENIs) in the subnets you specify, providing a managed network path to private resources such as databases, caches, and internal APIs.
+
+**Note**
+Deleting the network connector removes the connector and all of its versions. You can also delete a specific historical version on its own by supplying its version-qualified ARN. You can't delete the latest version individually; to remove it, delete the network connector.
 
 ## Syntax
 <a name="aws-resource-lambda-networkconnector-syntax"></a>
@@ -56,7 +59,7 @@ The network configuration for the connector. Specify a `VpcEgressConfiguration` 
 A unique name for the network connector within your account and Region. Must be 1 to 64 alphanumeric characters, hyphens, or underscores.
 *Required*: No
 *Type*: String
-*Pattern*: `^(arn:aws[a-zA-Z-]*:lambda:(eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:\d{12}:network-connector:[a-zA-Z0-9-_]+(:[1-9]|[1-9][0-9]+)?)|[a-zA-Z0-9_-]{1,64}$`
+*Pattern*: `^(arn:aws[a-zA-Z-]*:lambda:(eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:\d{12}:network-connector:[a-zA-Z0-9-_]+(:[1-9][0-9]*)?)|[a-zA-Z0-9_-]{1,64}$`
 *Minimum*: `1`
 *Maximum*: `140`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -98,6 +101,12 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the network connector.
+
+`LatestVersion`  <a name="LatestVersion-fn::getatt"></a>
+The version number of the network connector's latest version. Updates to the connector's configuration create a new immutable version, and this attribute exposes the most recent one.
+
+`LatestVersionArn`  <a name="LatestVersionArn-fn::getatt"></a>
+The qualified Amazon Resource Name (ARN) of the network connector's latest version. This ARN includes the immutable version suffix and can be used to pin to a specific version.
 
 `State`  <a name="State-fn::getatt"></a>
 Current state of the network connector. Valid values are `PENDING`, `ACTIVE`, `INACTIVE`, `FAILED`, `DELETING`, and `DELETE_FAILED`.

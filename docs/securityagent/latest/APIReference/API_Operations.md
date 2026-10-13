@@ -12,6 +12,8 @@ The following actions are supported:
 +  [BatchDeletePentests](API_BatchDeletePentests.md)
 +  [BatchDeleteSecurityRequirements](API_BatchDeleteSecurityRequirements.md)
 +  [BatchDeleteThreatModels](API_BatchDeleteThreatModels.md)
++  [BatchDisassociateFindingIssue](API_BatchDisassociateFindingIssue.md)
++  [BatchExportFindings](API_BatchExportFindings.md)
 +  [BatchGetAgentSpaces](API_BatchGetAgentSpaces.md)
 +  [BatchGetArtifactMetadata](API_BatchGetArtifactMetadata.md)
 +  [BatchGetCodeReviewJobs](API_BatchGetCodeReviewJobs.md)

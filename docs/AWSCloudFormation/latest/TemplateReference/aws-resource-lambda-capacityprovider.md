@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::CapacityProvider
 <a name="aws-resource-lambda-capacityprovider"></a>
 
-Creates a capacity provider that manages compute resources for Lambda functions
+Creates a capacity provider that manages compute resources for Lambda Event Functions
 
 ## Syntax
 <a name="aws-resource-lambda-capacityprovider-syntax"></a>

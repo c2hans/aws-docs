@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-runtime-hooks.html
 ---
 
-# Implement code before or after Lambda function snapshots
+# Implement code before or after Lambda Event Function snapshots
 <a name="snapstart-runtime-hooks"></a>
 
 You can use runtime hooks to implement code before Lambda creates a snapshot or after Lambda resumes a function from a snapshot. Runtime hooks are useful for a variety of purposes, such as:

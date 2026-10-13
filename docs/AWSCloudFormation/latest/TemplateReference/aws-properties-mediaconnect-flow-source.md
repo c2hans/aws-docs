@@ -172,6 +172,7 @@ The minimum latency in milliseconds for SRT-based streams. In streams that use t
 
 `NdiSourceSettings`  <a name="cfn-mediaconnect-flow-source-ndisourcesettings"></a>
  The settings for the NDI® source. This includes the exact name of the upstream NDI sender that you want to connect to your source.
+When you update the NDI source, include only the members you want to change. MediaConnect leaves the members that you don't specify unchanged.
 *Required*: No
 *Type*: [NdiSourceSettings](aws-properties-mediaconnect-flow-ndisourcesettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -40,14 +40,17 @@ After the Guidance CloudFormation stack has been deployed and launched, you can 
 
 1. After completion of triaging, an acquisition and investigation flow email will be sent to subscribed SNS topic.
 
-**Acquisition and investigation flow notification**
-image::images/investigation-flow-sns.png[scaledwidth=100%]. Check email for details of the forensic results.
+    **Acquisition and investigation flow notification**
+![investigation flow sns](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/investigation-flow-sns.png)
+
+1. Check email for details of the forensic results.
 
    Example Disk Analysis result:
 
-**Example - Disk Analysis result**
-image::images/disk-analysis-result.png[scaledwidth=100%]\+
+    **Example - Disk Analysis result**
+![disk analysis result](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/disk-analysis-result.png)
 
-Example Memory Analysis result:
+   Example Memory Analysis result:
 
-\+ .Example - Memory Analysis result image::images/memory-analysis-result.png[scaledwidth=100%]
+    **Example - Memory Analysis result**
+![memory analysis result](https://docs.aws.amazon.com/solutions/latest/automated-forensics-orchestrator-for-amazon-ec2/images/memory-analysis-result.png)

@@ -7,7 +7,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionEndpoint RegionalEndpoint
 <a name="aws-properties-lambda-webfunctionendpoint-regionalendpoint"></a>
 
-<a name="aws-properties-lambda-webfunctionendpoint-regionalendpoint-description"></a>The `RegionalEndpoint` property type specifies Property description not available. for an [AWS::Lambda::WebFunctionEndpoint](aws-resource-lambda-webfunctionendpoint.md).
+`RegionalEndpoint` describes the configuration and state of a web function endpoint in one Region. It is a read-only type.
+
+You don't declare `RegionalEndpoint` in a template. CloudFormation returns it as the values of the endpoint's `RegionalEndpoints` attribute, which you retrieve with `Fn::GetAtt`.
+
+Each key in that map is a Region code.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionendpoint-regionalendpoint-syntax"></a>
@@ -53,58 +57,58 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionendpoint-regionalendpoint-properties"></a>
 
 `AuthType`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-authtype"></a>
-Property description not available.
+The authorization type for the regional endpoint.
 *Required*: No
 *Type*: String
 *Allowed values*: `ApplicationManaged | IamAuth`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DomainName`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-domainname"></a>
-Property description not available.
+The domain name of the regional endpoint.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RevisionWeights`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-revisionweights"></a>
-Property description not available.
+The revision weights for the regional endpoint.
 *Required*: No
 *Type*: Array of [RevisionWeight](aws-properties-lambda-webfunctionendpoint-revisionweight.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ScalingConfig`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-scalingconfig"></a>
-Property description not available.
+The scaling configuration for the regional endpoint.
 *Required*: No
 *Type*: [ScalingConfig](aws-properties-lambda-webfunctionendpoint-scalingconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `State`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-state"></a>
-Property description not available.
+The current state of the regional endpoint.
 *Required*: No
 *Type*: String
 *Allowed values*: `Pending | Active | Failed | Deleting`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StateReason`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-statereason"></a>
-Property description not available.
+The reason for the current state of the regional endpoint.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ThrottleConfig`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-throttleconfig"></a>
-Property description not available.
+The throttling configuration for the regional endpoint.
 *Required*: No
 *Type*: [ThrottleConfig](aws-properties-lambda-webfunctionendpoint-throttleconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UpdateStatus`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-updatestatus"></a>
-Property description not available.
+The status of the most recent update to the regional endpoint.
 *Required*: No
 *Type*: String
 *Allowed values*: `InProgress | Successful | Failed`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UpdateStatusReason`  <a name="cfn-lambda-webfunctionendpoint-regionalendpoint-updatestatusreason"></a>
-Property description not available.
+The reason for the current update status of the regional endpoint.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

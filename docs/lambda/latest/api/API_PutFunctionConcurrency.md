@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PutFunctionConcurr
 # PutFunctionConcurrency
 <a name="API_PutFunctionConcurrency"></a>
 
-Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level.
+Sets the maximum number of simultaneous executions for a Lambda Event Function, and reserves capacity for that concurrency level.
 
 Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both ensures that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use [GetFunction](API_GetFunction.md) to see the current setting for a function.
 

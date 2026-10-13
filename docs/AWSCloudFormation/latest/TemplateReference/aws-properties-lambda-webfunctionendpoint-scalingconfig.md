@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Lambda::WebFunctionEndpoint ScalingConfig
 <a name="aws-properties-lambda-webfunctionendpoint-scalingconfig"></a>
 
-(Amazon SQS only) The scaling configuration for the event source. To remove the configuration, pass an empty value.
+The scaling configuration for a web function endpoint.
 
 ## Syntax
 <a name="aws-properties-lambda-webfunctionendpoint-scalingconfig-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-webfunctionendpoint-scalingconfig-properties"></a>
 
 `MaxEnvironments`  <a name="cfn-lambda-webfunctionendpoint-scalingconfig-maxenvironments"></a>
-Property description not available.
+The maximum number of concurrent execution environments for the endpoint. The minimum value is 2 and the maximum value is 10000. This optional setting further constrains the endpoint's scaling; when omitted, the endpoint's scaling is limited only by your account's vCPU quota. On an update, omit `ScalingConfig` to keep the current value, or specify an empty object to clear a previously set value.
 *Required*: No
 *Type*: Integer
 *Minimum*: `2`

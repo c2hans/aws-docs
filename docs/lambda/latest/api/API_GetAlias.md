@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_GetAlias.html
 # GetAlias
 <a name="API_GetAlias"></a>
 
-Returns details about a Lambda function [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html).
+Returns details about a Lambda Event Function [alias](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html).
 
 ## Request Syntax
 <a name="API_GetAlias_RequestSyntax"></a>
