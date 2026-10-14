@@ -17,7 +17,8 @@ Amazon Elastic File System (EFS) is available in the following AWS GovCloud (US)
 ## How Amazon Elastic File System (EFS) differs
 <a name="feature-diffs"></a>
 
-There are no differences for this service.
+The following differences apply to Amazon Elastic File System (EFS):
++ ECS integration is not available.
 
 ## Documentation
 <a name="govcloud-efs-docs"></a>

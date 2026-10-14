@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Calcula
 
 For more information, see [Calculate routes](https://docs.aws.amazon.com/location/latest/developerguide/calculate-routes.html) in the *Amazon Location Service Developer Guide*.
 
+Try the CalculateRoutes operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/calculate-routes).
+
 ## Request Syntax
 <a name="API_CalculateRoutes_RequestSyntax"></a>
 

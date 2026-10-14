@@ -35,6 +35,7 @@ Content-type: application/json
       "rtoInMinutes": {{number}}
    },
    "name": "{{string}}",
+   "sharingEnabled": {{boolean}},
    "tags": {
       "{{string}}" : "{{string}}"
    }
@@ -97,6 +98,11 @@ Length Constraints: Minimum length of 2. Maximum length of 60.
 Pattern: `[A-Za-z0-9][A-Za-z0-9_\-]{1,59}`
 Required: Yes
 
+ ** [sharingEnabled](#API_CreatePolicy_RequestSyntax) **   <a name="ngresiliencehub-CreatePolicy-request-sharingEnabled"></a>
+Specifies whether cross-account sharing is enabled for the policy. Only a delegated administrator or the management account can enable sharing.
+Type: Boolean
+Required: No
+
  ** [tags](#API_CreatePolicy_RequestSyntax) **   <a name="ngresiliencehub-CreatePolicy-request-tags"></a>
 Resource tags.
 Type: String to string map
@@ -137,7 +143,9 @@ Content-type: application/json
          "rtoInMinutes": number
       },
       "name": "string",
+      "organizationId": "string",
       "policyArn": "string",
+      "sharingEnabled": boolean,
       "tags": {
          "string" : "string"
       },

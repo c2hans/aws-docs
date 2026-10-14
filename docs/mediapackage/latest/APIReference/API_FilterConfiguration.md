@@ -32,6 +32,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
+ ** Multiview **   <a name="mediapackage-Type-FilterConfiguration-Multiview"></a>
+Optionally pin this manifest to a single multiview combination, so that players request it without an `aws.multiview` query parameter. When you pin a combination, note that you cannot use the `aws.multiview` query parameter for this manifest's endpoint URL, even when that parameter requests the same combination.
+This setting is valid only on an origin endpoint whose channel has an `InputType` of `MULTIVIEW`.
+Type: [MultiviewFilterConfiguration](API_MultiviewFilterConfiguration.md) object
+Required: No
+
  ** Start **   <a name="mediapackage-Type-FilterConfiguration-Start"></a>
 Optionally specify the start time for all of your manifest egress requests. When you include start time, note that you cannot use start time query parameters for this manifest's endpoint URL.
 Type: Timestamp

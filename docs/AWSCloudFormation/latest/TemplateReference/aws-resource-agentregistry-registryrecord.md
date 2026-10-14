@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::AgentRegistry::RegistryRecord",
   "Properties" : {
+      "[CustomMetadata](#cfn-agentregistry-registryrecord-custommetadata)" : {{Json}},
       "[Description](#cfn-agentregistry-registryrecord-description)" : {{String}},
       "[Descriptors](#cfn-agentregistry-registryrecord-descriptors)" : {{Descriptors}},
       "[DisplayName](#cfn-agentregistry-registryrecord-displayname)" : {{String}},
@@ -39,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::AgentRegistry::RegistryRecord
 Properties:
+  [CustomMetadata](#cfn-agentregistry-registryrecord-custommetadata): {{Json}}
   [Description](#cfn-agentregistry-registryrecord-description): {{String}}
   [Descriptors](#cfn-agentregistry-registryrecord-descriptors): {{
     Descriptors}}
@@ -53,6 +55,12 @@ Properties:
 
 ## Properties
 <a name="aws-resource-agentregistry-registryrecord-properties"></a>
+
+`CustomMetadata`  <a name="cfn-agentregistry-registryrecord-custommetadata"></a>
+The custom metadata attached to this registry record. Values are strings (maximum 128 characters) or booleans.
+*Required*: No
+*Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-agentregistry-registryrecord-description"></a>
 The description of the registry record.

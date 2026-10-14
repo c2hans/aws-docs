@@ -37,7 +37,7 @@ Required: No
  ** LastExecutedPipelineExecutionStatus **   <a name="sagemaker-Type-PipelineVersion-LastExecutedPipelineExecutionStatus"></a>
 The status of the most recent pipeline execution created from this pipeline version.
 Type: String
-Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded`
+Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded | CompletedWithFailures`
 Required: No
 
  ** LastModifiedBy **   <a name="sagemaker-Type-PipelineVersion-LastModifiedBy"></a>

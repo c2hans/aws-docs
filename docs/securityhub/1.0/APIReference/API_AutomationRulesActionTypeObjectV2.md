@@ -13,7 +13,7 @@ Allows you to customize security response workflows.
  ** Type **   <a name="securityhub-Type-AutomationRulesActionTypeObjectV2-Type"></a>
 The category of action to be executed by the automation rule.
 Type: String
-Valid Values: `FINDING_FIELDS_UPDATE | EXTERNAL_INTEGRATION`
+Valid Values: `FINDING_FIELDS_UPDATE | EXTERNAL_INTEGRATION | RESOURCE_FIELDS_UPDATE`
 Required: No
 
 ## See Also

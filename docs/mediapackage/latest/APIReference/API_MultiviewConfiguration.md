@@ -20,7 +20,7 @@ Required: Yes
  ** AvailableSources **   <a name="mediapackage-Type-MultiviewConfiguration-AvailableSources"></a>
 The channels that players can use as tiles in this multiview channel's output. Each source channel must be in the same channel group as the multiview channel, and must have an `InputType` of `CMAF`. Only the channels that you list here are available as tiles.
 Type: Array of strings
-Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9_-]+`
 Required: Yes

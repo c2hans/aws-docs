@@ -23,7 +23,7 @@ The secret must be in the **same AWS region** as the SDMA deployment. Cross-regi
        {
          "Effect": "Allow",
          "Action": "secretsmanager:GetSecretValue",
-         "Resource": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret/<SECRET_NAME>"
+         "Resource": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>"
        }
      ]
    }
@@ -80,7 +80,7 @@ Each connector is dispatched independently — if the Slack delivery fails and r
       "channels": [
         {
           "type": "slack",
-          "webhookUrlSecretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret/<SECRET_NAME>"
+          "webhookUrlSecretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SECRET_NAME>"
         }
       ],
       "messages": {
@@ -143,7 +143,7 @@ Create two connectors — one per channel — and associate both to the same tem
   "connectorConfig": {
     "notificationConfig": {
       "recipients": [{"role": "OWNER"}],
-      "channels": [{"type": "slack", "webhookUrlSecretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret/<SLACK_SECRET>"}],
+      "channels": [{"type": "slack", "webhookUrlSecretArn": "arn:aws:secretsmanager:<REGION>:<ACCOUNT_ID>:secret:<SLACK_SECRET>"}],
     },
     "triggers": [{"resources": ["asset"], "events": ["stateChange"], "filter": {"stateFilter": ["FAILED"]}, "steps": [{"stepType": "notification"}]}]
   }

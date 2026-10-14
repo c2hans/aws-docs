@@ -11,13 +11,18 @@ Lists resilience policies.
 <a name="API_ListPolicies_RequestSyntax"></a>
 
 ```
-GET /v2/list-policies?maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+GET /v2/list-policies?accountId={{accountId}}&maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
 ```
 
 ## URI Request Parameters
 <a name="API_ListPolicies_RequestParameters"></a>
 
 The request uses the following URI parameters.
+
+ ** [accountId](#API_ListPolicies_RequestSyntax) **   <a name="ngresiliencehub-ListPolicies-request-uri-accountId"></a>
+The identifier of the account that owns the policies to include in the results.
+Length Constraints: Fixed length of 12.
+Pattern: `[0-9]{12}`
 
  ** [maxResults](#API_ListPolicies_RequestSyntax) **   <a name="ngresiliencehub-ListPolicies-request-uri-maxResults"></a>
 Pagination page size.
@@ -63,7 +68,9 @@ Content-type: application/json
             "rtoInMinutes": number
          },
          "name": "string",
+         "organizationId": "string",
          "policyArn": "string",
+         "sharingEnabled": boolean,
          "updatedAt": number
       }
    ]

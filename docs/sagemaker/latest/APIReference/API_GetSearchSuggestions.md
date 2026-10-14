@@ -31,7 +31,7 @@ The request accepts the following data in JSON format.
  ** [Resource](#API_GetSearchSuggestions_RequestSyntax) **   <a name="sagemaker-GetSearchSuggestions-request-Resource"></a>
 The name of the SageMaker resource to search for.
 Type: String
-Valid Values: `TrainingJob | Experiment | ExperimentTrial | ExperimentTrialComponent | Endpoint | Model | ModelPackage | ModelPackageGroup | Pipeline | PipelineExecution | FeatureGroup | FeatureMetadata | Image | ImageVersion | Project | HyperParameterTuningJob | ModelCard | PipelineVersion | Job`
+Valid Values: `TrainingJob | Experiment | ExperimentTrial | ExperimentTrialComponent | Endpoint | Model | ModelPackage | ModelPackageGroup | Pipeline | PipelineExecution | FeatureGroup | FeatureMetadata | Image | ImageVersion | Project | HyperParameterTuningJob | ModelCard | PipelineVersion | Job | HubContent`
 Required: Yes
 
  ** [SuggestionQuery](#API_GetSearchSuggestions_RequestSyntax) **   <a name="sagemaker-GetSearchSuggestions-request-SuggestionQuery"></a>

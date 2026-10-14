@@ -31,6 +31,11 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
+ ** IterationContext **   <a name="sagemaker-Type-PipelineExecutionStep-IterationContext"></a>
+The context for the iteration of a ForEach step that generated this step execution.
+Type: [IterationContext](API_IterationContext.md) object
+Required: No
+
  ** Metadata **   <a name="sagemaker-Type-PipelineExecutionStep-Metadata"></a>
 Metadata to run the pipeline step.
 Type: [PipelineExecutionStepMetadata](API_PipelineExecutionStepMetadata.md) object

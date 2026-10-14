@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AudioReferenceLevel](#cfn-mediaconnect-flow-ndisourcesettings-audioreferencelevel)" : {{Integer}},
   "[SourceName](#cfn-mediaconnect-flow-ndisourcesettings-sourcename)" : {{String}}
 }
 ```
@@ -30,11 +31,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-flow-ndisourcesettings-syntax.yaml"></a>
 
 ```
+  [AudioReferenceLevel](#cfn-mediaconnect-flow-ndisourcesettings-audioreferencelevel): {{Integer}}
   [SourceName](#cfn-mediaconnect-flow-ndisourcesettings-sourcename): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-mediaconnect-flow-ndisourcesettings-properties"></a>
+
+`AudioReferenceLevel`  <a name="cfn-mediaconnect-flow-ndisourcesettings-audioreferencelevel"></a>
+The audio reference level of the NDI sender, in decibels relative to full scale (dBFS). Common values are `-20` (NDI and SMPTE) and `-18` (EBU). If you don't specify this field, MediaConnect uses `-20`.
+*Required*: No
+*Type*: Integer
+*Minimum*: `-40`
+*Maximum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceName`  <a name="cfn-mediaconnect-flow-ndisourcesettings-sourcename"></a>
  The exact name of an existing NDI sender that's registered with your discovery server. If included, the format of this name must be `MACHINENAME (ProgramName)`.

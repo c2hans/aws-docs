@@ -29,6 +29,7 @@ Updates an existing Region switch plan. You can modify the plan's description, w
          { ... }
       ]
    },
+   "serviceQuotaChecksEnabled": {{boolean}},
    "triggers": [
       {
          "action": "{{string}}",
@@ -101,6 +102,11 @@ The updated report configuration for the plan.
 Type: [ReportConfiguration](API_ReportConfiguration.md) object
 Required: No
 
+ ** [serviceQuotaChecksEnabled](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-serviceQuotaChecksEnabled"></a>
+Specifies whether service quota checks are enabled for the Region switch plan.
+Type: Boolean
+Required: No
+
  ** [triggers](#API_UpdatePlan_RequestSyntax) **   <a name="regionswitch-UpdatePlan-request-triggers"></a>
 The updated conditions that can automatically trigger the execution of the plan.
 Type: Array of [Trigger](API_Trigger.md) objects
@@ -139,6 +145,7 @@ Required: Yes
             { ... }
          ]
       },
+      "serviceQuotaChecksEnabled": boolean,
       "triggers": [
          {
             "action": "string",

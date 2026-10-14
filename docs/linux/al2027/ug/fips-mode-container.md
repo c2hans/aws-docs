@@ -36,7 +36,7 @@ AL2027 no longer provides the `fips-mode-setup` command-line utility. FIPS mode 
    cat /proc/sys/crypto/fips_enabled
    ```
 
-1. Next, enable the FIPS crypto-policies within the container. There are several ways to accomplish this, described in the options below. Use the option that works best for your environment.
+1. Enable the FIPS crypto-policies within the container. There are several ways to accomplish this, described in the options below. Use the option that works best for your environment.
 
    1. Enable the FIPS crypto-policies manually within the container using the `update-crypto-policies` command:
 

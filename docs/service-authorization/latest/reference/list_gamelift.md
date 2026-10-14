@@ -42,23 +42,19 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateBuild  **
   - **IAM action:**  [gamelift:CreateBuild](#list_gamelift-action-CreateBuild)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [gamelift:CreateBuild](#list_gamelift-action-CreateBuild)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** gamelift.amazonaws.com / **Access level:** Write
 
 - **   CreateContainerFleet  **
-  - **IAM action:**  [gamelift:CreateContainerFleet](#list_gamelift-action-CreateContainerFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:CreateContainerFleet](#list_gamelift-action-CreateContainerFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** gamelift.amazonaws.com / **Access level:** Write
 
 - **   CreateContainerGroupDefinition  **
   - **IAM action:**  [gamelift:CreateContainerGroupDefinition](#list_gamelift-action-CreateContainerGroupDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [gamelift:CreateContainerGroupDefinition](#list_gamelift-action-CreateContainerGroupDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateFleet  **
-  - **IAM action:**  [gamelift:CreateFleet](#list_gamelift-action-CreateFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:CreateFleet](#list_gamelift-action-CreateFleet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** gamelift.amazonaws.com / **Access level:** Write
@@ -71,7 +67,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateGameServerGroup  **
   - **IAM action:**  [gamelift:CreateGameServerGroup](#list_gamelift-action-CreateGameServerGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [gamelift:CreateGameServerGroup](#list_gamelift-action-CreateGameServerGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** gamelift.amazonaws.com / **Access level:** Write
 
@@ -83,7 +78,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateGameSessionQueue  **
   - **IAM action:**  [gamelift:CreateGameSessionQueue](#list_gamelift-action-CreateGameSessionQueue)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [gamelift:CreateGameSessionQueue](#list_gamelift-action-CreateGameSessionQueue)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateLocation  **
@@ -92,11 +86,9 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateMatchmakingConfiguration  **
   - **IAM action:**  [gamelift:CreateMatchmakingConfiguration](#list_gamelift-action-CreateMatchmakingConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [gamelift:CreateMatchmakingConfiguration](#list_gamelift-action-CreateMatchmakingConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateMatchmakingRuleSet  **
-  - **IAM action:**  [gamelift:CreateMatchmakingRuleSet](#list_gamelift-action-CreateMatchmakingRuleSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:CreateMatchmakingRuleSet](#list_gamelift-action-CreateMatchmakingRuleSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
@@ -113,7 +105,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   CreateScript  **
-  - **IAM action:**  [gamelift:CreateScript](#list_gamelift-action-CreateScript)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:CreateScript](#list_gamelift-action-CreateScript)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** gamelift.amazonaws.com / **Access level:** Write
@@ -629,8 +620,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   TagResource  **
-  - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [gamelift:TagResource](#list_gamelift-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
 
 - **   TerminateGameSession  **
   - **IAM action:**  [gamelift:TerminateGameSession](#list_gamelift-action-TerminateGameSession)
@@ -639,8 +632,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UntagResource  **
-  - **IAM action:**  [gamelift:UntagResource](#list_gamelift-action-UntagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
-  - **IAM action:**  [gamelift:UntagResource](#list_gamelift-action-UntagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [gamelift:UntagResource](#list_gamelift-action-UntagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
 
 - **   UpdateAlias  **
   - **IAM action:**  [gamelift:UpdateAlias](#list_gamelift-action-UpdateAlias)

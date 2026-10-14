@@ -86,7 +86,7 @@ Required: No
  ** [Resource](#API_Search_RequestSyntax) **   <a name="sagemaker-Search-request-Resource"></a>
 The name of the SageMaker resource to search for.
 Type: String
-Valid Values: `TrainingJob | Experiment | ExperimentTrial | ExperimentTrialComponent | Endpoint | Model | ModelPackage | ModelPackageGroup | Pipeline | PipelineExecution | FeatureGroup | FeatureMetadata | Image | ImageVersion | Project | HyperParameterTuningJob | ModelCard | PipelineVersion | Job`
+Valid Values: `TrainingJob | Experiment | ExperimentTrial | ExperimentTrialComponent | Endpoint | Model | ModelPackage | ModelPackageGroup | Pipeline | PipelineExecution | FeatureGroup | FeatureMetadata | Image | ImageVersion | Project | HyperParameterTuningJob | ModelCard | PipelineVersion | Job | HubContent`
 Required: Yes
 
  ** [SearchExpression](#API_Search_RequestSyntax) **   <a name="sagemaker-Search-request-SearchExpression"></a>
@@ -523,6 +523,39 @@ Required: No
             "FeatureType": "string",
             "LastModifiedTime": number,
             "Parameters": [
+               {
+                  "Key": "string",
+                  "Value": "string"
+               }
+            ]
+         },
+         "HubContent": {
+            "CreationTime": number,
+            "DocumentSchemaVersion": "string",
+            "FailureReason": "string",
+            "HubArn": "string",
+            "HubContentArn": "string",
+            "HubContentDependencies": [
+               {
+                  "DependencyCopyPath": "string",
+                  "DependencyOriginPath": "string"
+               }
+            ],
+            "HubContentDescription": "string",
+            "HubContentDisplayName": "string",
+            "HubContentDocument": "string",
+            "HubContentMarkdown": "string",
+            "HubContentName": "string",
+            "HubContentSearchKeywords": [ "string" ],
+            "HubContentStatus": "string",
+            "HubContentType": "string",
+            "HubContentVersion": "string",
+            "HubName": "string",
+            "LastModifiedTime": number,
+            "ReferenceMinVersion": "string",
+            "SageMakerPublicHubContentArn": "string",
+            "SupportStatus": "string",
+            "Tags": [
                {
                   "Key": "string",
                   "Value": "string"

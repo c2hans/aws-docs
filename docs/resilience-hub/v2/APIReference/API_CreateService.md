@@ -25,6 +25,9 @@ Content-type: application/json
    "clientToken": "{{string}}",
    "dependencyDiscovery": "{{string}}",
    "description": "{{string}}",
+   "devOpsAgentConfiguration": {
+      "agentSpaceArn": "{{string}}"
+   },
    "kmsKeyId": "{{string}}",
    "name": "{{string}}",
    "permissionModel": {
@@ -82,6 +85,11 @@ Required: No
 Resource description for services and policies.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 615.
+Required: No
+
+ ** [devOpsAgentConfiguration](#API_CreateService_RequestSyntax) **   <a name="ngresiliencehub-CreateService-request-devOpsAgentConfiguration"></a>
+The optional DevOps Agent integration configuration to apply to the new service. If you omit this field, the new service has no DevOps Agent integration.
+Type: [DevOpsAgentConfiguration](API_DevOpsAgentConfiguration.md) object
 Required: No
 
  ** [kmsKeyId](#API_CreateService_RequestSyntax) **   <a name="ngresiliencehub-CreateService-request-kmsKeyId"></a>
@@ -164,6 +172,15 @@ Content-type: application/json
          "updatedAt": number
       },
       "description": "string",
+      "devOpsAgentConfiguration": {
+         "agentSpaceArn": "string",
+         "agentSpaceId": "string",
+         "connectedAt": number,
+         "operatorAppUrl": "string",
+         "region": "string",
+         "status": "string",
+         "statusReason": "string"
+      },
       "effectivePolicyValues": {
          "availabilitySlo": {
             "policyName": "string",

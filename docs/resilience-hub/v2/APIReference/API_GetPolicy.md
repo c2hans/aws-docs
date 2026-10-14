@@ -60,7 +60,9 @@ Content-type: application/json
          "rtoInMinutes": number
       },
       "name": "string",
+      "organizationId": "string",
       "policyArn": "string",
+      "sharingEnabled": boolean,
       "tags": {
          "string" : "string"
       },

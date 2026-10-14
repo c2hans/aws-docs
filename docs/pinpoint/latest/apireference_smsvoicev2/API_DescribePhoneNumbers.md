@@ -99,6 +99,7 @@ Required: No
          "PhoneNumberArn": "string",
          "PhoneNumberId": "string",
          "PoolId": "string",
+         "PricingTier": "string",
          "RegistrationId": "string",
          "SelfManagedOptOutsEnabled": boolean,
          "Status": "string",

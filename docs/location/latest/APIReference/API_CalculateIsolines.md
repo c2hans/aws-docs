@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Calcula
 # CalculateIsolines
 <a name="API_CalculateIsolines"></a>
 
-Calculates areas that can be reached within specified time or distance thresholds from a given point. For example, you can use this operation to determine the area within a 30-minute drive of a store location, find neighborhoods within walking distance of a school, or identify delivery zones based on drive time.
+Calculates areas that can be reached within specified time or distance thresholds from a given point. For example, you can use this operation to determine the area within a 30-minute drive of a store location, find neighborhoods within walking distance of a school, or identify delivery zones based on drive time. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 
 Isolines (also known as isochrones for time-based calculations) are useful for various applications including:
 + Service area visualization - Show customers the area you can serve within promised delivery times
@@ -16,6 +16,8 @@ Isolines (also known as isochrones for time-based calculations) are useful for v
 Route preferences such as avoiding toll roads or ferries are treated as preferences rather than absolute restrictions. If a viable route cannot be calculated while honoring all preferences, some may be ignored.
 
 For more information, see [Calculate isolines](https://docs.aws.amazon.com/location/latest/developerguide/calculate-isolines.html) in the *Amazon Location Service Developer Guide*.
+
+Try the CalculateIsolines operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/calculate-isolines).
 
 ## Request Syntax
 <a name="API_CalculateIsolines_RequestSyntax"></a>

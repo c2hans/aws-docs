@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Calcula
 
 For more information, see [Calculate route matrix](https://docs.aws.amazon.com/location/latest/developerguide/calculate-route-matrix.html) in the *Amazon Location Service Developer Guide*.
 
+Try the CalculateRouteMatrix operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/calculate-route-matrix).
+
 ## Request Syntax
 <a name="API_CalculateRouteMatrix_RequestSyntax"></a>
 

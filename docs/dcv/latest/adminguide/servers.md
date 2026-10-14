@@ -36,7 +36,7 @@ Your server must meet the minimum requirements listed in the following table.
 </table>
 
 **Note**
-If you are running an operating system that has reached end of life, such as CentOS 7 or RHEL 7, Amazon DCV still offers support until the [End of Life](eosl.md) of that supported DCV version. Amazon DCV does not support operating systems that have reached end of life. Contact your vendor regarding your operating system.
+Amazon DCV does not support operating systems that have reached end of life. Contact your vendor regarding your operating system.
 
 For more information about the Amazon DCV Client requirements, see [ Amazon DCV Client requirements](https://docs.aws.amazon.com/dcv/latest/userguide/client.html#requirements) in the *Amazon DCV User Guide*.
 

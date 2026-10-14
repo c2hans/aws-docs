@@ -18,6 +18,8 @@ The following templates are installed in the AWS Security Hub admin account to t
 
  **automated-security-response-webui-nested-stack.template** - Creates the resources to support the solution’s Web UI.
 
+ **automated-security-response-mcp-gateway-nested-stack.template** - Creates the optional MCP server (an Amazon Bedrock AgentCore Gateway) for AI clients. The solution installs this template only when you set **EnableMcpServer** to `yes`.
+
  **AFSBPStack.template** - AWS Foundational Security Best Practices v1.0.0 rules.
 
  **CIS120Stack.template** - CIS Amazon Web Services Foundations benchmarks, v1.2.0 rules.

@@ -29,6 +29,11 @@ Length Constraints: Fixed length of 36.
 Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}`
 Required: No
 
+ ** investigationDeepLink **   <a name="ngresiliencehub-Type-FindingSummary-investigationDeepLink"></a>
+A deep link to an interactive DevOps Agent investigation seeded with this finding. This value is null until DevOps Agent creates an investigation.
+Type: String
+Required: No
+
  ** name **   <a name="ngresiliencehub-Type-FindingSummary-name"></a>
 The name of the finding.
 Type: String

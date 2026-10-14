@@ -22,6 +22,25 @@ The name of the disassociated policy.
 Type: String
 Required: No
 
+ ** policyOwnerAccountId **   <a name="ngresiliencehub-Type-ServicePolicyDisassociatedMetadata-policyOwnerAccountId"></a>
+The account that owns the policy.
+Type: String
+Required: No
+
+ ** policySource **   <a name="ngresiliencehub-Type-ServicePolicyDisassociatedMetadata-policySource"></a>
+The source of the policy.
++ SELF — the policy belongs to the account that owns the service.
++ CROSS\_ACCOUNT — the policy belongs to another account and was shared with the organization.
+Type: String
+Valid Values: `SELF | CROSS_ACCOUNT`
+Required: No
+
+ ** reason **   <a name="ngresiliencehub-Type-ServicePolicyDisassociatedMetadata-reason"></a>
+The reason the policy was disassociated from the service.
+Type: String
+Valid Values: `REPLACED_BY_UPDATE | SHARING_REVOKED | POLICY_DELETED`
+Required: No
+
 ## See Also
 <a name="API_ServicePolicyDisassociatedMetadata_SeeAlso"></a>
 

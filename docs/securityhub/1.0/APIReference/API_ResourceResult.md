@@ -51,6 +51,12 @@ Type: String
 Pattern: `.*\S.*`
 Required: No
 
+ ** CriticalitySources **   <a name="securityhub-Type-ResourceResult-CriticalitySources"></a>
+The sources of criticalities determined from a resource.
+Type: Array of [CriticalitySource](API_CriticalitySource.md) objects
+Array Members: Maximum number of 3 items.
+Required: No
+
  ** DiscoveryType **   <a name="securityhub-Type-ResourceResult-DiscoveryType"></a>
 Specifies how the resource was discovered. If the value is `Managed`, the resource is natively provided by a cloud service provider. If the value is `SelfHosted`, the resource is hosted on customer-managed infrastructure, such as a compute instance or container image.
 Type: String
@@ -78,6 +84,12 @@ Required: No
 The time when the resource was created.
 Type: String
 Pattern: `.*\S.*`
+Required: No
+
+ ** ResourceCriticality **   <a name="securityhub-Type-ResourceResult-ResourceCriticality"></a>
+The criticality assigned to a resource.
+Type: String
+Valid Values: `Very High | High | Medium | Low | Unknown`
 Required: No
 
  ** ResourceGuid **   <a name="securityhub-Type-ResourceResult-ResourceGuid"></a>

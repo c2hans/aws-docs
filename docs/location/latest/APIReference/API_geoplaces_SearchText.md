@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [Search Text](https://docs.aws.amazon.com/location/latest/developerguide/search-text.html) in the *Amazon Location Service Developer Guide*.
 
-Try the Search Text API in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/search-text).
+Try the SearchText operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/search-text).
 
 ## Request Syntax
 <a name="API_geoplaces_SearchText_RequestSyntax"></a>

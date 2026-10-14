@@ -106,6 +106,11 @@ The unique identifier of the pool associated with the phone number.
 Type: String
 Required: No
 
+ ** PricingTier **   <a name="pinpoint-Type-PhoneNumberInformation-PricingTier"></a>
+The pricing model.
+Type: String
+Required: No
+
  ** RegistrationId **   <a name="pinpoint-Type-PhoneNumberInformation-RegistrationId"></a>
 The unique identifier for the registration.
 Type: String

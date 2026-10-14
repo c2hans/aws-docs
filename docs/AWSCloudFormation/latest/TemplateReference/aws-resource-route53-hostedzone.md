@@ -42,6 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::Route53::HostedZone",
   "Properties" : {
+      "[DelegationSetId](#cfn-route53-hostedzone-delegationsetid)" : {{String}},
       "[HostedZoneConfig](#cfn-route53-hostedzone-hostedzoneconfig)" : {{HostedZoneConfig}},
       "[HostedZoneFeatures](#cfn-route53-hostedzone-hostedzonefeatures)" : {{HostedZoneFeatures}},
       "[HostedZoneTags](#cfn-route53-hostedzone-hostedzonetags)" : {{[ HostedZoneTag, ... ]}},
@@ -58,6 +59,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::Route53::HostedZone
 Properties:
+  [DelegationSetId](#cfn-route53-hostedzone-delegationsetid): {{String}}
   [HostedZoneConfig](#cfn-route53-hostedzone-hostedzoneconfig): {{
     HostedZoneConfig}}
   [HostedZoneFeatures](#cfn-route53-hostedzone-hostedzonefeatures): {{
@@ -73,6 +75,14 @@ Properties:
 
 ## Properties
 <a name="aws-resource-route53-hostedzone-properties"></a>
+
+`DelegationSetId`  <a name="cfn-route53-hostedzone-delegationsetid"></a>
+If you want to associate a reusable delegation set with this hosted zone, the ID that Amazon Route 53 assigned to the reusable delegation set when you created it. For more information about reusable delegation sets, see [CreateReusableDelegationSet](https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateReusableDelegationSet.html).
+If you are using a reusable delegation set to create a public hosted zone for a subdomain, make sure that the parent hosted zone doesn't use one or more of the same name servers. If you have overlapping nameservers, the operation will cause a `ConflictingDomainsExist` error.
+*Required*: No
+*Type*: String
+*Maximum*: `32`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `HostedZoneConfig`  <a name="cfn-route53-hostedzone-hostedzoneconfig"></a>
 A complex type that contains an optional comment.

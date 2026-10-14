@@ -72,7 +72,7 @@ The data recovery targets defined in the policy.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-resiliencehubv2-policy-description"></a>
-Property description not available.
+A description of the event.
 *Required*: No
 *Type*: String
 *Maximum*: `615`
@@ -107,7 +107,7 @@ The name of the policy.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SharingEnabled`  <a name="cfn-resiliencehubv2-policy-sharingenabled"></a>
-Property description not available.
+Specifies whether cross-account sharing is enabled.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

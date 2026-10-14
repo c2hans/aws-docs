@@ -28,7 +28,7 @@ Required: No
  ** executionBlockType **   <a name="regionswitch-Type-ExecutionEvent-executionBlockType"></a>
 The execution block type for an execution event.
 Type: String
-Valid Values: `CustomActionLambda | ManualApproval | AuroraGlobalDatabase | EC2AutoScaling | ARCRoutingControl | ARCRegionSwitchPlan | Parallel | ECSServiceScaling | EKSResourceScaling | Route53HealthCheck | DocumentDb | RdsPromoteReadReplica | RdsCreateCrossRegionReplica | LambdaEventSourceMapping | AuroraServerlessScaling | AuroraProvisionedScaling | NeptuneGlobalDatabase`
+Valid Values: `CustomActionLambda | ManualApproval | AuroraGlobalDatabase | EC2AutoScaling | ARCRoutingControl | ARCRegionSwitchPlan | Parallel | ECSServiceScaling | EKSResourceScaling | Route53HealthCheck | DocumentDb | RdsPromoteReadReplica | RdsCreateCrossRegionReplica | LambdaEventSourceMapping | AuroraServerlessScaling | AuroraProvisionedScaling | NeptuneGlobalDatabase | RdsSwitchoverReadReplica | SSMSendCommand`
 Required: No
 
  ** previousEventId **   <a name="regionswitch-Type-ExecutionEvent-previousEventId"></a>

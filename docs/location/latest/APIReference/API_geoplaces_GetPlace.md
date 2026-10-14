@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [GetPlace](https://docs.aws.amazon.com/location/latest/developerguide/get-place.html) in the *Amazon Location Service Developer Guide*.
 
+Try the GetPlace operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/get-place).
+
 ## Request Syntax
 <a name="API_geoplaces_GetPlace_RequestSyntax"></a>
 

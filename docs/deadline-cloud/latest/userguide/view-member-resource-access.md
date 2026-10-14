@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/view-mem
 # View and change resource access for a user or group
 <a name="view-member-resource-access"></a>
 
-The procedures in [Assign permissions to users and groups](assign-permissions-procedure.md) start from a farm, queue, or fleet. To answer the opposite question, what one person or group can reach, open that user or group in **User management** and choose the **Resource access** tab. The tab lists every farm, queue, and fleet that the member holds an access level on, in every AWS Region, so you don't open each resource in turn to build the picture.
+In **User management**, open the **Resource access** tab to see every farm, queue, and fleet that a user or group can access, in every AWS Region. You can change or revoke access on the same tab. For information about assigning access starting from a farm, queue, or fleet, see [Assign permissions to users and groups](assign-permissions-procedure.md).
 
 ![The Resource access tab for a user, listing each farm or queue with its Region, access level, and how it was granted.](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/user-resource-access.png)
 

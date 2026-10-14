@@ -457,7 +457,7 @@ Example timeline:
 + 2500-3500 second sleep/delay (500 \* 2, exponential backoff)
 + 3500-4500 third attempt
 + 4500-6500 third sleep/delay (500 \* 2^2)
-+ 6500-7500 fourth attempt (this can trigger inline recovery since 5 seconds have elapsed since the first attempt reached TC)
++ 6500-7500 fourth attempt (this retry can trigger completion of the ongoing `TransactWriteItems` request, because more than 5 seconds have elapsed since the first attempt)
 HTTP Status Code: 400
 
 ## See Also

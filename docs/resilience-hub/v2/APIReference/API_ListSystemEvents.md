@@ -23,7 +23,7 @@ The request uses the following URI parameters.
 The end time for filtering events.
 
  ** [eventTypes](#API_ListSystemEvents_RequestSyntax) **   <a name="ngresiliencehub-ListSystemEvents-request-uri-eventTypes"></a>
-Filter events by type.
+The type of events to include in the results.
 Valid Values: `SYSTEM_CREATED | SYSTEM_DELETED | SYSTEM_USER_JOURNEY_CREATED | SYSTEM_USER_JOURNEY_UPDATED | SYSTEM_USER_JOURNEY_DELETED | SYSTEM_SERVICE_ASSOCIATED | SYSTEM_SERVICE_DISASSOCIATED | SYSTEM_POLICY_ASSOCIATED | SYSTEM_POLICY_DISASSOCIATED`
 
  ** [maxResults](#API_ListSystemEvents_RequestSyntax) **   <a name="ngresiliencehub-ListSystemEvents-request-uri-maxResults"></a>

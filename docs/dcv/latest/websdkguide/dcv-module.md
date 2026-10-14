@@ -18,6 +18,7 @@ A module that implements the client side of the DCV protocol.
 **Topics**
 + [authenticate(authParams) → {[Authentication](authentication-class.md)}](#authenticate)
 + [connect(config) → {Promise.<[Connection](connection-class.md)>\|Promise.<{code: [ConnectionErrorCode](#ConnectionErrorCode), message: string}>}](#connect)
++ [probe(endpoints, timeout, ignoreCORS, httpExtraHeaders) → {Array.<[Endpoint](#Endpoint)>}](#probe)
 + [setLogHandler(handler) → {void}](#setLogHandler)
 + [setLogLevel(level) → {void}](#setLogLevel)
 
@@ -32,7 +33,6 @@ A module that implements the client side of the DCV protocol.
 |  Name  |  Type  |  Description  |
 | --- | --- | --- |
 |  url  |  string  |  The host name and port of the running Amazon DCV server in the following format: https://dcv\_host\_address:port. For example: https://my-dcv-server:8443.  |
-|  authenticationToken  |  string  |  The authentication token to use for authentication.  |
 |  callbacks  |  [authenticationCallbacks](#authenticationCallbacks)  |  The callbacks that are available to be called during the authentication process.  |
 
 #### Returns:
@@ -62,6 +62,29 @@ A module that implements the client side of the DCV protocol.
 
  Type
  Promise.<[Connection](connection-class.md)> \| Promise.<{code: [ConnectionErrorCode](#ConnectionErrorCode), message: string}>
+
+### probe(endpoints, timeout, ignoreCORS, httpExtraHeaders) → {Array.<[Endpoint](#Endpoint)>}
+<a name="probe"></a>
+
+ Tests endpoint availability by performing parallel fetch requests with a timeout, and returns the available endpoints in the same order they were received.
+
+#### Parameters:
+<a name="parameters-probe"></a>
+
+|  Name  |  Type  |  Description  |
+| --- | --- | --- |
+|  endpoints  |  Array.<[Endpoint](#Endpoint)>  |  The list of available endpoints to be probed.  |
+|  timeout  |  number  |  The timeout, in milliseconds, used to limit the probe fetch. If not specified, it defaults to 5000.  |
+|  ignoreCORS  |  boolean  |  Indicates whether to perform the fetch with mode: "no-cors". If not specified, it defaults to false.  |
+|  httpExtraHeaders  |  [httpExtraHeadersCallback](#httpExtraHeadersCallback)  |  The callback function to allow adding custom headers to the probing request. If not specified, it defaults to null.  |
+
+#### Returns:
+<a name="returns-probe"></a>
+
+ - The list of successful endpoints in their original order.
+
+ Type
+ Array.<[Endpoint](#Endpoint)>
 
 ### setLogHandler(handler) → {void}
 <a name="setLogHandler"></a>
@@ -309,6 +332,7 @@ A module that implements the client side of the DCV protocol.
 + [displayAvailabilityCallback(status, displayId)](#displayAvailabilityCallback)
 + [DisplayConfigErrorCode](#DisplayConfigErrorCode)
 + [displayLayoutCallback(serverWidth, serverHeight, heads)](#displayLayoutCallback)
++ [Endpoint](#Endpoint)
 + [feature](#feature)
 + [featuresUpdateCallback(featuresList)](#featuresUpdateCallback)
 + [fileDownloadCallback(fileResource)](#fileDownloadCallback)
@@ -325,6 +349,7 @@ A module that implements the client side of the DCV protocol.
 + [MaxDimensionLimits](#MaxDimensionLimits)
 + [Monitor](#Monitor)
 + [MultiMonitorErrorCode](#MultiMonitorErrorCode)
++ [networkQualityChangeCallback(networkInfo)](#networkQualityChangeCallback)
 + [qualityIndicatorStateCallback(state)](#qualityIndicatorStateCallback)
 + [renameDirectory(src, dest)](#renameDirectory)
 + [renameFile(src, dest)](#renameFile)
@@ -557,6 +582,7 @@ A module that implements the client side of the DCV protocol.
 +  `EVICTED`
 +  `EXTERNAL_PROTOCOL_CONNECTION_EVICTED`
 +  `DISCONNECTION_REQUESTED`
++  `UNSUPPORTED_RENDERER`
 
 #### Type:
 <a name="type-15"></a>
@@ -601,6 +627,7 @@ A module that implements the client side of the DCV protocol.
 |  clipboardEvent  |  [clipboardEventCallback](#clipboardEventCallback)  |  The callback function to be called when a clipboardEvent is generated.  |
 |  deviceChangeEvent  |  [deviceChangeEventCallback](#deviceChangeEventCallback)  |  The callback function to be called when an deviceChange event is triggered.  |
 |  screenshot  |  [screenshotCallback](#screenshotCallback)  |  The callback function to be called when a screenshot is available.  |
+|  networkQualityChange  |  [networkQualityChangeCallback](#networkQualityChangeCallback)  |  The callback function to be called when the network quality changes.  |
 |  httpExtraSearchParamsCallback  |  [httpExtraSearchParamsCallback](#httpExtraSearchParamsCallback)  |  The callback function to be called to customize the URL when establishing a WebSocket connection to the Amazon DCV server. Note that this callback can also be used with the authenticate method to dynamically append query parameters to the authentication URL before the SDK sends the request.  |
 |  httpExtraHeadersCallback  |  [httpExtraHeadersCallback](#httpExtraHeadersCallback)  |  The callback function to be called to add custom headers to the HTTP request during connection establishment.  |
 
@@ -623,6 +650,10 @@ A module that implements the client side of the DCV protocol.
 |  authToken  |  string  |  The authentication token to use when connecting to the server.  |
 |  baseUrl  |  string  |  The absolute or relative URL from which to load SDK files.  |
 |  resourceBaseUrl  |  string  |  The absolute or relative URL from which to access DCV resources.  |
+|  extensionData  |  string  |  Additional data for connection and channel connection requests.  |
+|  connectionMetadata  |  Map  |  Connection metadata forwarded to the endpoint, as a list of key-value pairs. The endpoint logs it.  |
+|  connectionFailureRetryAttempts  |  integer  |  Indicates the maximum number of attempts for automatic retry on connection requests in case of network failures. If not specified, it defaults to 10.  |
+|  connectionBlockRetryAttempts  |  integer  |  Indicates the maximum number of attempts for automatic retry on connection requests in case of a busy Gateway. If not specified, it defaults to 0.  |
 |  enabledChannels  |  Array.<[Channel](#Channel)>  |  Indicates the list of channels that can be enabled. If not specified or an empty array is provided, it defaults to all the available channels.  |
 |  losslessColorspace  |  [Colorspace](#Colorspace)  |  Indicates the colorspace that will be used. If not specified, it defaults to "RGB".  |
 |  divId  |  string  |  The ID of the div object in the HTML DOM where SDK should create the canvas with the remote stream.  |
@@ -631,7 +662,9 @@ A module that implements the client side of the DCV protocol.
 |  dynamicAudioTuning  |  boolean  |  Indicates whether to dynamically tune the audio based on the Amazon DCV server audio settings when a connection is established.  |
 |  clientHiDpiScaling  |  boolean  |  Indicates whether to scale the canvas based on the client's DPI.  |
 |  highColorAccuracy  |  boolean  |  Indicates whether high color accuracy should be used if available. If not specified, it defaults to false.  |
-|  enableWebCodecs  |  Boolean  |  Indicates whether WebCodecs should be used if available. Defaults to false if not specified.  |
+|  enableHighPixelDensity  |  boolean  |  Indicates whether high pixel density should be enabled. If not specified, it defaults to false.  |
+|  enableWebCodecs  |  Boolean  |  Indicates whether WebCodecs should be used if available. Defaults to true if not specified.  |
+|  enableWebAuthN  |  boolean  |  Indicates whether WebAuthN should be used if available. If not specified, it defaults to true.  |
 |  observers  |  [connectionCallbacks](#connectionCallbacks)  |  The callback functions to call for events that are related to the connection.  |
 |  callbacks  |  [connectionCallbacks](#connectionCallbacks)  |  The same as the observers property, but each callback includes the [Connection](connection-class.md) object as the first parameter.  |
 
@@ -802,6 +835,24 @@ A module that implements the client side of the DCV protocol.
 |  serverWidth  |  number  |  The width (in pixels) of the primary display.  |
 |  serverHeight  |  number  |  The height (in pixels) of the primary display.  |
 |  heads  |  Array.<[Monitor](#Monitor)>  |  The display heads supported by the Amazon DCV server.  |
+
+### Endpoint
+<a name="Endpoint"></a>
+
+ The endpoint properties used in the [probe](#probe) function.
+
+#### Type:
+<a name="type-endpoint"></a>
++  Object
+
+#### Properties:
+<a name="properties-endpoint"></a>
+
+|  Name  |  Type  |  Description  |
+| --- | --- | --- |
+|  url  |  string  |  The host name and port of the running Amazon DCV server in the following format: https://dcv\_host\_address:port. For example: https://my-dcv-server:8443.  |
+|  ipVersion  |  string  |  The IP version (IPv4/IPv6) of the endpoint.  |
+|  transport  |  string  |  The transport protocol of the endpoint.  |
 
 ### feature
 <a name="feature"></a>
@@ -1118,6 +1169,18 @@ A module that implements the client side of the DCV protocol.
 <a name="type-26"></a>
 +  number
 
+### networkQualityChangeCallback(networkInfo)
+<a name="networkQualityChangeCallback"></a>
+
+ The callback function to be called when the network quality changes.
+
+#### Parameters:
+<a name="parameters-networkqualitychange"></a>
+
+|  Name  |  Type  |  Description  |
+| --- | --- | --- |
+|  networkInfo  |  Object  |  The object containing the changed network information. Contains a quality property whose value is one of ONLINE, WARNING, or CRITICAL, indicating the current network quality.  |
+
 ### qualityIndicatorStateCallback(state)
 <a name="qualityIndicatorStateCallback"></a>
 
@@ -1287,7 +1350,7 @@ A module that implements the client side of the DCV protocol.
 +  `USER_CANNOT_CHANGE`
 
 #### Type:
-<a name="w2aac14b9c17d103b7"></a>
+<a name="w2aac14b9c17d107b7"></a>
 +  number
 
 ### TimezoneRedirectionSettingCode
@@ -1299,7 +1362,7 @@ A module that implements the client side of the DCV protocol.
 +  `CLIENT_DECIDES`
 
 #### Type:
-<a name="w2aac14b9c17d105b7"></a>
+<a name="w2aac14b9c17d109b7"></a>
 +  number
 
 ### TimezoneRedirectionStatusCode
@@ -1311,7 +1374,7 @@ A module that implements the client side of the DCV protocol.
 +  `GENERIC_ERROR`
 
 #### Type:
-<a name="w2aac14b9c17d107b7"></a>
+<a name="w2aac14b9c17d111b7"></a>
 +  number
 
 ### WebcamErrorCode

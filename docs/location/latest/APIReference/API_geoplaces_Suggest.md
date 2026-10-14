@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [Suggest](https://docs.aws.amazon.com/location/latest/developerguide/suggest.html) in the *Amazon Location Service Developer Guide*.
 
-Try the Suggest API in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/suggest).
+Try the Suggest operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/suggest).
 
 ## Request Syntax
 <a name="API_geoplaces_Suggest_RequestSyntax"></a>

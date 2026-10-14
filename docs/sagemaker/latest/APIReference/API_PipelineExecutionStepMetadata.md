@@ -10,6 +10,11 @@ Metadata for a step execution.
 ## Contents
 <a name="API_PipelineExecutionStepMetadata_Contents"></a>
 
+ ** Athena **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-Athena"></a>
+The metadata for the Athena step execution.
+Type: [AthenaStepMetadata](API_AthenaStepMetadata.md) object
+Required: No
+
  ** AutoMLJob **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-AutoMLJob"></a>
 The Amazon Resource Name (ARN) of the AutoML job that was run by this step.
 Type: [AutoMLJobStepMetadata](API_AutoMLJobStepMetadata.md) object
@@ -53,6 +58,11 @@ Container for the metadata for a Clarify check step. The configurations and outc
 Type: [ClarifyCheckStepMetadata](API_ClarifyCheckStepMetadata.md) object
 Required: No
 
+ ** Cleanup **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-Cleanup"></a>
+The metadata for the cleanup step execution.
+Type: [CleanupStepMetadata](API_CleanupStepMetadata.md) object
+Required: No
+
  ** Condition **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-Condition"></a>
 The outcome of the condition evaluation that was run by this step execution.
 Type: [ConditionStepMetadata](API_ConditionStepMetadata.md) object
@@ -61,6 +71,11 @@ Required: No
  ** EMR **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-EMR"></a>
 The configurations and outcomes of an Amazon EMR step execution.
 Type: [EMRStepMetadata](API_EMRStepMetadata.md) object
+Required: No
+
+ ** EMRServerless **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-EMRServerless"></a>
+The configurations and outcomes of an Amazon EMR Serverless step execution.
+Type: [EMRServerlessStepMetadata](API_EMRServerlessStepMetadata.md) object
 Required: No
 
  ** Endpoint **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-Endpoint"></a>
@@ -76,6 +91,11 @@ Required: No
  ** Fail **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-Fail"></a>
 The configurations and outcomes of a Fail step execution.
 Type: [FailStepMetadata](API_FailStepMetadata.md) object
+Required: No
+
+ ** ForEach **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-ForEach"></a>
+The metadata for the ForEach step execution.
+Type: [ForEachStepMetadata](API_ForEachStepMetadata.md) object
 Required: No
 
  ** InferenceComponent **   <a name="sagemaker-Type-PipelineExecutionStepMetadata-InferenceComponent"></a>

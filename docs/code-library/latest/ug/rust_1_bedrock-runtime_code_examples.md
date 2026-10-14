@@ -296,8 +296,10 @@ use aws_smithy_runtime_api::http::Response;
 use aws_smithy_types::Document;
 use tracing::debug;
 
-// Set the model ID, e.g., Claude 3 Haiku.
-const MODEL_ID: &str = "anthropic.claude-3-haiku-20240307-v1:0";
+// Set the model ID, e.g., Claude Haiku 5.5.
+// Claude Haiku 5.5 is available through an inference profile, so this uses the
+// "us." cross-Region profile ID that matches CLAUDE_REGION below.
+const MODEL_ID: &str = "us.anthropic.claude-haiku-5-5";
 const CLAUDE_REGION: &str = "us-east-1";
 
 const SYSTEM_PROMPT: &str = "You are a weather assistant that provides current weather data for user-specified locations using only
@@ -464,8 +466,10 @@ use aws_sdk_bedrockruntime::{
     Client,
 };
 
-// Set the model ID, e.g., Claude 3 Haiku.
-const MODEL_ID: &str = "anthropic.claude-3-haiku-20240307-v1:0";
+// Set the model ID, e.g., Claude Haiku 5.5.
+// Claude Haiku 5.5 is available through an inference profile, so this uses the
+// "us." cross-Region profile ID that matches CLAUDE_REGION below.
+const MODEL_ID: &str = "us.anthropic.claude-haiku-5-5";
 const CLAUDE_REGION: &str = "us-east-1";
 
 // Start a conversation with the user message.
@@ -584,8 +588,10 @@ use aws_sdk_bedrockruntime::{
     Client,
 };
 
-// Set the model ID, e.g., Claude 3 Haiku.
-const MODEL_ID: &str = "anthropic.claude-3-haiku-20240307-v1:0";
+// Set the model ID, e.g., Claude Haiku 5.5.
+// Claude Haiku 5.5 is available through an inference profile, so this uses the
+// "us." cross-Region profile ID that matches CLAUDE_REGION below.
+const MODEL_ID: &str = "us.anthropic.claude-haiku-5-5";
 const CLAUDE_REGION: &str = "us-east-1";
 
 // Start a conversation with the user message.
@@ -915,8 +921,10 @@ use aws_smithy_runtime_api::http::Response;
 use aws_smithy_types::Document;
 use tracing::debug;
 
-// Set the model ID, e.g., Claude 3 Haiku.
-const MODEL_ID: &str = "anthropic.claude-3-haiku-20240307-v1:0";
+// Set the model ID, e.g., Claude Haiku 5.5.
+// Claude Haiku 5.5 is available through an inference profile, so this uses the
+// "us." cross-Region profile ID that matches CLAUDE_REGION below.
+const MODEL_ID: &str = "us.anthropic.claude-haiku-5-5";
 const CLAUDE_REGION: &str = "us-east-1";
 
 const SYSTEM_PROMPT: &str = "You are a weather assistant that provides current weather data for user-specified locations using only

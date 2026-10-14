@@ -26,13 +26,14 @@ As a solution administrator, you have the following controls over which function
 
  **SSM Parameters for enabling and disabling standards:**
 + The admin stack will only be able to initiate remediations (through custom action or fully automated) for standards that are enabled through the SSM Parameter deployed by the standard admin stack.
-+ To disable a standard, set the value for the SSM Parameter with the path "/Solutions/SO0111/<standard\_name>/<standard\_version>/status" to "No".
++ To disable a standard, set the value for the SSM Parameter with the path "/Solutions/SO0111/<standard\_name>/<standard\_version>/status" to "disabled". The solution treats the standard as enabled only when the value is "enabled".
 
- **Which controls have fully-automated remediation enabled:**
+ **Which controls have fully automated remediation enabled:**
 
-The solution offers two ways to enable or disable fully-automated remediation. Both write to the same Remediation Configuration Amazon DynamoDB table in the admin account, so they stay in sync.
-+  **Web UI (recommended when deployed).** Manage fully-automated remediation from the **Controls** page. Admins and delegated admins can enable or disable automated remediation per control, and apply reusable resource filters to scope which findings are acted on. To turn off automated remediation for all controls at once — for example, during an incident, choose **Disable All Automated Remediations**. This button is unavailable to account operators (read-only) and when automated remediation is already off for all controls. For details, see [Manage automated remediation](manage-automated-remediation.md).
-+  **Legacy configuration (no Web UI).** If you did not deploy the Web UI, enable or disable fully-automated remediation by editing the items in the Remediation Configuration DynamoDB table directly, and scope which findings are remediated with the AWS Systems Manager filter parameters. For the steps, see [Enable fully-automated remediations](enable-fully-automated-remediations.md). To quickly disable automated remediation during an incident without the Web UI, see the disable scenarios in [Troubleshooting](troubleshooting.md).
+The solution offers three ways to enable or disable fully automated remediation. All of them write to the same Remediation Configuration Amazon DynamoDB table in the admin account, so they stay in sync.
++  **Web UI (recommended when deployed).** Manage fully automated remediation from the **Controls** page. Admins and delegated admins can enable or disable automated remediation per control, and apply reusable resource filters to scope which findings are acted on. To turn off automated remediation for all controls at once, choose **Disable All Automated Remediations**, and then choose **Save**. For example, you might do this during an incident. This button is unavailable to account operators (read-only) and when automated remediation is already off for all controls. For details, see [Manage automated remediation](manage-automated-remediation.md).
++  **Model Context Protocol (MCP) server.** If you deployed the MCP server, an AI client can list controls with the `list_controls` tool, enable or disable automated remediation with the `update_controls` tool, and manage resource filters with the filter tools. The MCP server does not require the Web UI. For details, see [MCP server for AI clients](mcp-server.md).
++  **Remediation Configuration table (no Web UI or MCP server).** Edit the `automatedRemediationEnabled` attribute of the control’s item in the Remediation Configuration DynamoDB table. For the steps, see [Enable fully automated remediations](enable-fully-automated-remediations.md). This option does not support resource filters.
 
  **Access to the solution’s Web UI:**
 + When the Admin stack is deployed, you receive an email with temporary credentials to sign in to the Web UI using the email address you provided during deployment.

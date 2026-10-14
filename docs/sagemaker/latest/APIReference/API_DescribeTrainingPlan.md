@@ -26,8 +26,8 @@ The request accepts the following data in JSON format.
  ** [TrainingPlanName](#API_DescribeTrainingPlan_RequestSyntax) **   <a name="sagemaker-DescribeTrainingPlan-request-TrainingPlanName"></a>
 The name of the training plan to describe.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}`
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `(arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:training-plan/)?[a-zA-Z0-9](-*[a-zA-Z0-9]){0,63}`
 Required: Yes
 
 ## Response Syntax

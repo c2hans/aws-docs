@@ -11,7 +11,10 @@ The other mode of operation for the solution is to automatically remediate findi
 Before enabling fully automated remediations, confirm the solution is configured in the accounts and Regions where you want the solution to make automated changes. To narrow the scope of the solution’s automated remediations, see [filtering fully automated remediations](#filter-remediations).
 
 **Note**
-Findings that are suppressed in AWS Security Hub are not automatically remediated, even when fully automated remediation is enabled for the corresponding control. A finding is suppressed when its workflow status is `SUPPRESSED`. The solution skips suppressed findings during automatic initiation, so suppressing a finding in Security Hub is an effective way to exclude specific findings from automated remediation while leaving the control enabled. Suppressed findings can still be remediated on demand from the Web UI or the AWS Security Hub CSPM custom action.
+Starting in v4.1.0, the solution does not automatically remediate a finding that is suppressed in AWS Security Hub CSPM or AWS Security Hub. This is true even when fully automated remediation is enabled for the corresponding control. A finding is suppressed when its workflow status is `SUPPRESSED` in AWS Security Hub CSPM, or its status is **Suppressed** in AWS Security Hub.
+Before it starts an automatic or deadline-enforced remediation, the solution reads the finding’s current status in both services, so a suppression set in either one is honored. Suppressed findings can still be remediated on demand from the Web UI, the solution’s API, the MCP server, or the AWS Security Hub CSPM custom action.
+Suppression applies only to the finding you suppress. To keep specific resources out of fully automated remediation permanently, apply an exclude-mode [resource filter](#filter-remediations). The filter should match the resources by account ID, organizational unit, or ARN pattern. Resource filters require the Web UI or the MCP server. A filter is stored in the solution’s configuration and applies to every future finding for those resources.
+In versions earlier than v4.1.0, a suppression set in AWS Security Hub CSPM was not always honored. For details and a workaround, see [Known issue resolution](known-issue-resolution.md).
 
 **Automatic remediation retry limit**
 When a fully automated remediation fails, AWS Security Hub re-imports the still-failing finding, which would otherwise cause the solution to trigger the remediation again indefinitely. To prevent this, the solution retries a failed finding a maximum of 3 times, waiting at least 15 minutes between attempts. After the third attempt, the solution stops automatically retrying that finding and emits the `RemediationRetryCapReached` Amazon CloudWatch metric. The finding remains visible in the solution and can still be remediated on demand from the Web UI or the AWS Security Hub CSPM custom action. This limit applies per finding and does not affect other findings or controls.
@@ -28,6 +31,14 @@ Confirm that you want all public Lambda Functions within the scope of the soluti
 | --- | --- | --- | --- |
 |  `111111111111`  | Admin | Confirm no desired public Functions | Confirm no desired public Functions |
 |  `222222222222`  | Member | Confirm no desired public Functions | Confirm no desired public Functions |
+
+## Enable the control
+<a name="enable-control-in-web-ui"></a>
+
+Choose one of the following ways to enable automated remediation for Lambda.1:
++  **Web UI.** Enable the control on the **Controls** page. For the steps, see [Manage automated remediation](manage-automated-remediation.md). Then skip to [Configure the resource](#configure-the-resource).
++  **MCP server.** Use the `update_controls` tool from a connected AI client. Then skip to [Configure the resource](#configure-the-resource).
++  **Remediation Configuration DynamoDB table (no Web UI or MCP server).** Edit the table directly, as described in the following steps.
 
 ## Locate the Remediation Configuration DynamoDB Table
 <a name="locate-config-table"></a>
@@ -79,7 +90,7 @@ In the member account, re-configure the Lambda Function to allow public access.
 ## Confirm that the remediation resolved the finding
 <a name="confirm-the-remediation-resolved-finding2"></a>
 
-It might take some time for Config to detect the insecure configuration again. You should receive two SNS notifications. The first will indicate that a remediation has been initiated. The second will indicate that the remediation succeeded. After receiving the second notification, navigate to the [Lambda console](https://console.aws.amazon.com/lambda/) in the member account and confirm that the public access has been revoked.
+It might take some time for AWS Config to detect the insecure configuration again. You should receive two SNS notifications. The first will indicate that a remediation has been initiated. The second will indicate that the remediation succeeded. After receiving the second notification, navigate to the [Lambda console](https://console.aws.amazon.com/lambda/) in the member account and confirm that the public access has been revoked.
 
 | Account | Purpose | Action in us-east-1 | Action in us-west-2 |
 | --- | --- | --- | --- |

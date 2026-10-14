@@ -89,7 +89,7 @@ In addition, you must choose encryption settings before you can complete setup. 
                 "Effect": "Allow",
                 "Action": "kms:DescribeKey",
                 "Resource": [
-                  "<KmsKeyArn>"
+                  "arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{key-id}}"
                 ]
             },
             {
@@ -100,7 +100,7 @@ In addition, you must choose encryption settings before you can complete setup. 
                     "kms:GenerateDataKey"
                 ],
                 "Resource": [
-                  "<KmsKeyArn>"
+                  "arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{key-id}}"
                 ],
                 "Condition": {
                     "ForAnyValue:StringEquals": {
@@ -137,7 +137,9 @@ Amazon SageMaker Unified Studio provides two methods to configure the Execution 
                        "airflow-serverless.amazonaws.com",
                        "athena.amazonaws.com",
                        "redshift.amazonaws.com",
-                       "emr-serverless.amazonaws.com"
+                       "emr-serverless.amazonaws.com",
+                       "access-grants.s3.amazonaws.com",
+                       "elasticmapreduce.amazonaws.com"
                    ]
                },
                "Action": [
@@ -190,7 +192,8 @@ Alternatively, Amazon SageMaker Unified Studio can use an existing IAM role as t
                            "airflow-serverless.amazonaws.com",
                            "athena.amazonaws.com",
                            "redshift.amazonaws.com",
-                           "emr-serverless.amazonaws.com"
+                           "emr-serverless.amazonaws.com",
+                           "access-grants.s3.amazonaws.com"
                        ]
                    }
                }
@@ -218,7 +221,9 @@ Alternatively, Amazon SageMaker Unified Studio can use an existing IAM role as t
                        "airflow-serverless.amazonaws.com",
                        "athena.amazonaws.com",
                        "redshift.amazonaws.com",
-                       "emr-serverless.amazonaws.com"
+                       "emr-serverless.amazonaws.com",
+                       "access-grants.s3.amazonaws.com",
+                       "elasticmapreduce.amazonaws.com"
                    ]
                },
                "Action": [

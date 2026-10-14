@@ -51,6 +51,10 @@ Content-type: application/json
             "DrmSettings": "{{string}}",
             "End": {{number}},
             "ManifestFilter": "{{string}}",
+            "Multiview": {
+               "Layout": "{{string}}",
+               "Sources": [ "{{string}}" ]
+            },
             "Start": {{number}},
             "TimeDelaySeconds": {{number}}
          },
@@ -97,6 +101,10 @@ Content-type: application/json
             "DrmSettings": "{{string}}",
             "End": {{number}},
             "ManifestFilter": "{{string}}",
+            "Multiview": {
+               "Layout": "{{string}}",
+               "Sources": [ "{{string}}" ]
+            },
             "Start": {{number}},
             "TimeDelaySeconds": {{number}}
          },
@@ -123,6 +131,10 @@ Content-type: application/json
             "DrmSettings": "{{string}}",
             "End": {{number}},
             "ManifestFilter": "{{string}}",
+            "Multiview": {
+               "Layout": "{{string}}",
+               "Sources": [ "{{string}}" ]
+            },
             "Start": {{number}},
             "TimeDelaySeconds": {{number}}
          },
@@ -148,6 +160,10 @@ Content-type: application/json
             "DrmSettings": "{{string}}",
             "End": {{number}},
             "ManifestFilter": "{{string}}",
+            "Multiview": {
+               "Layout": "{{string}}",
+               "Sources": [ "{{string}}" ]
+            },
             "Start": {{number}},
             "TimeDelaySeconds": {{number}}
          },
@@ -338,6 +354,10 @@ Content-type: application/json
             "DrmSettings": "string",
             "End": number,
             "ManifestFilter": "string",
+            "Multiview": {
+               "Layout": "string",
+               "Sources": [ "string" ]
+            },
             "Start": number,
             "TimeDelaySeconds": number
          },
@@ -386,6 +406,10 @@ Content-type: application/json
             "DrmSettings": "string",
             "End": number,
             "ManifestFilter": "string",
+            "Multiview": {
+               "Layout": "string",
+               "Sources": [ "string" ]
+            },
             "Start": number,
             "TimeDelaySeconds": number
          },
@@ -413,6 +437,10 @@ Content-type: application/json
             "DrmSettings": "string",
             "End": number,
             "ManifestFilter": "string",
+            "Multiview": {
+               "Layout": "string",
+               "Sources": [ "string" ]
+            },
             "Start": number,
             "TimeDelaySeconds": number
          },
@@ -440,6 +468,10 @@ Content-type: application/json
             "DrmSettings": "string",
             "End": number,
             "ManifestFilter": "string",
+            "Multiview": {
+               "Layout": "string",
+               "Sources": [ "string" ]
+            },
             "Start": number,
             "TimeDelaySeconds": number
          },

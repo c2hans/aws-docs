@@ -62,7 +62,7 @@ Content options control what each notification message includes. The following o
 | Option | Description |
 | --- | --- |
 |  `includeManualRemediationLink`  | Adds a link to the finding’s page in the Web UI, where an operator can run the remediation manually. |
-|  `includeEnableAutomationLink`  | Adds a link to the Web UI page for enabling fully-automated remediation for the control. |
+|  `includeEnableAutomationLink`  | Adds a link to the Web UI page for enabling fully automated remediation for the control. |
 |  `includeIaCSnippet`  | Adds an infrastructure-as-code snippet for the remediation in the formats you select (CloudFormation YAML, CloudFormation JSON, Terraform, or CDK). Applies to remediation-type notifications. |
 |  `includeRemediationDeadline`  | Adds a remediation due-by date to each notification for a matching finding. Applies to finding-type notifications. When enabled, set `remediationDeadlineDays` (1–90). See [Remediation deadlines and deadline enforcement](#remediation-deadlines). |
 

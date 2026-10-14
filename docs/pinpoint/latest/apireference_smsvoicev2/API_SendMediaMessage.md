@@ -48,7 +48,7 @@ Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 5 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 100.
 Key Pattern: `\S+`
-Value Length Constraints: Minimum length of 1. Maximum length of 800.
+Value Length Constraints: Minimum length of 1. Maximum length of 1000.
 Value Pattern: `(?!\s)^[\s\S]+(?<!\s)`
 Required: No
 

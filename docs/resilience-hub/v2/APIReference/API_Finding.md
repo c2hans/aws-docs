@@ -41,6 +41,11 @@ Type: Array of [InfrastructureAndCodeRecommendation](API_InfrastructureAndCodeRe
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
+ ** investigationDeepLink **   <a name="ngresiliencehub-Type-Finding-investigationDeepLink"></a>
+A deep link to an interactive DevOps Agent investigation seeded with this finding. This value is null until DevOps Agent creates an investigation.
+Type: String
+Required: No
+
  ** name **   <a name="ngresiliencehub-Type-Finding-name"></a>
 The name of the finding.
 Type: String

@@ -22,6 +22,19 @@ The name of the associated policy.
 Type: String
 Required: No
 
+ ** policyOwnerAccountId **   <a name="ngresiliencehub-Type-ServicePolicyAssociatedMetadata-policyOwnerAccountId"></a>
+The account that owns the policy.
+Type: String
+Required: No
+
+ ** policySource **   <a name="ngresiliencehub-Type-ServicePolicyAssociatedMetadata-policySource"></a>
+The source of the policy.
++ SELF — the policy belongs to the account that owns the service.
++ CROSS\_ACCOUNT — the policy belongs to another account and was shared with the organization.
+Type: String
+Valid Values: `SELF | CROSS_ACCOUNT`
+Required: No
+
 ## See Also
 <a name="API_ServicePolicyAssociatedMetadata_SeeAlso"></a>
 

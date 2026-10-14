@@ -12,6 +12,7 @@ Returns information about a destination phone number, including whether the numb
 
 ```
 {
+   "EnableCleansing": {{boolean}},
    "PhoneNumber": "{{string}}"
 }
 ```
@@ -22,6 +23,11 @@ Returns information about a destination phone number, including whether the numb
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [EnableCleansing](#API_CarrierLookup_RequestSyntax) **   <a name="pinpoint-CarrierLookup-request-EnableCleansing"></a>
+Specifies whether the service cleanses the phone number that you provide. When set to `true`, the service normalizes the phone number according to the destination country's national numbering plan and dialing rules. The service returns the cleansed number in E.164 format in the `E164PhoneNumber` field and returns the number that you provided in the `OriginalPhoneNumber` field.
+Type: Boolean
+Required: No
 
  ** [PhoneNumber](#API_CarrierLookup_RequestSyntax) **   <a name="pinpoint-CarrierLookup-request-PhoneNumber"></a>
 The phone number that you want to retrieve information about. You can provide the phone number in various formats including special characters such as parentheses, brackets, spaces, hyphens, periods, and commas. The service automatically converts the input to E164 format for processing.
@@ -42,6 +48,7 @@ Required: Yes
    "IsoCountryCode": "string",
    "MCC": "string",
    "MNC": "string",
+   "OriginalPhoneNumber": "string",
    "PhoneNumberType": "string"
 }
 ```
@@ -91,10 +98,16 @@ Type: String
 Length Constraints: Minimum length of 2. Maximum length of 3.
 Pattern: `[\d]+`
 
- ** [PhoneNumberType](#API_CarrierLookup_ResponseSyntax) **   <a name="pinpoint-CarrierLookup-response-PhoneNumberType"></a>
-Describes the type of phone number. Valid values are: MOBILE, LANDLINE, OTHER, and INVALID. Avoid sending SMS or voice messages to INVALID phone numbers, as these numbers are unlikely to belong to actual recipients.
+ ** [OriginalPhoneNumber](#API_CarrierLookup_ResponseSyntax) **   <a name="pinpoint-CarrierLookup-response-OriginalPhoneNumber"></a>
+The phone number exactly as you supplied it in the request. This field is returned only when you set `EnableCleansing` to `true`, the phone number was cleansed, and a normalized E.164 phone number was returned in the `E164PhoneNumber` field.
 Type: String
-Valid Values: `MOBILE | LANDLINE | OTHER | INVALID`
+Length Constraints: Minimum length of 1. Maximum length of 40.
+Pattern: `\+[({\s\[]?[1-9][0-9(){}\s\[\],.-]{1,38}`
+
+ ** [PhoneNumberType](#API_CarrierLookup_ResponseSyntax) **   <a name="pinpoint-CarrierLookup-response-PhoneNumberType"></a>
+Describes the type of phone number. Valid values are: MOBILE, LANDLINE, VOIP, PREPAID, OTHER, and INVALID. Avoid sending SMS or voice messages to INVALID phone numbers, as these numbers are unlikely to belong to actual recipients.
+Type: String
+Valid Values: `MOBILE | LANDLINE | VOIP | PREPAID | OTHER | INVALID`
 
 ## Errors
 <a name="API_CarrierLookup_Errors"></a>

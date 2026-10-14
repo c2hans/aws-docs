@@ -46,6 +46,11 @@ Type: String
 Valid Values: `SINGLE_ACCOUNT | MULTI_ACCOUNT`
 Required: No
 
+ ** devOpsAgentInvestigation **   <a name="ngresiliencehub-Type-TestRun-devOpsAgentInvestigation"></a>
+The DevOps Agent investigation result for the test run, present when the integration is enabled for the service.
+Type: [DevOpsAgentInvestigation](API_DevOpsAgentInvestigation.md) object
+Required: No
+
  ** endedAt **   <a name="ngresiliencehub-Type-TestRun-endedAt"></a>
 The timestamp when the test run ended.
 Type: Timestamp

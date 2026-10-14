@@ -24,6 +24,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_lakeformation-actions-as-permissions).
 
+- **   AttachRLSPolicy  **
+  - **IAM action:**  [lakeformation:AttachRLSPolicy](#list_lakeformation-action-AttachRLSPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
+
 - **   BatchGrantPermissions  **
   - **IAM action:**  [lakeformation:BatchGrantPermissions](#list_lakeformation-action-BatchGrantPermissions)
   - **Condition key:**
@@ -60,6 +66,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateRLSPolicy  **
+  - **IAM action:**  [lakeformation:CreateRLSPolicy](#list_lakeformation-action-CreateRLSPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteDataCellsFilter  **
   - **IAM action:**  [lakeformation:DeleteDataCellsFilter](#list_lakeformation-action-DeleteDataCellsFilter)
   - **Condition key:**
@@ -84,11 +96,23 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteRLSPolicy  **
+  - **IAM action:**  [lakeformation:DeleteRLSPolicy](#list_lakeformation-action-DeleteRLSPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DescribeLakeFormationIdentityCenterConfiguration  **
   - **IAM action:**  [lakeformation:DescribeLakeFormationIdentityCenterConfiguration](#list_lakeformation-action-DescribeLakeFormationIdentityCenterConfiguration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   DetachRLSPolicy  **
+  - **IAM action:**  [lakeformation:DetachRLSPolicy](#list_lakeformation-action-DetachRLSPolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Permissions management, Write
 
 - **   GetDataCellsFilter  **
   - **IAM action:**  [lakeformation:GetDataCellsFilter](#list_lakeformation-action-GetDataCellsFilter)
@@ -128,6 +152,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetQueryStatistics  **
   - **IAM action:**  [lakeformation:GetQueryStatistics](#list_lakeformation-action-GetQueryStatistics)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetRLSPolicy  **
+  - **IAM action:**  [lakeformation:GetRLSPolicy](#list_lakeformation-action-GetRLSPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -174,6 +204,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListRLSPolicies  **
+  - **IAM action:**  [lakeformation:ListRLSPolicies](#list_lakeformation-action-ListRLSPolicies)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListRLSPolicyAttachments  **
+  - **IAM action:**  [lakeformation:ListRLSPolicyAttachments](#list_lakeformation-action-ListRLSPolicyAttachments)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   PutDataLakeSettings  **
   - **IAM action:**  [lakeformation:PutDataLakeSettings](#list_lakeformation-action-PutDataLakeSettings)
   - **Condition key:**
@@ -200,6 +242,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateLakeFormationIdentityCenterConfiguration  **
   - **IAM action:**  [lakeformation:UpdateLakeFormationIdentityCenterConfiguration](#list_lakeformation-action-UpdateLakeFormationIdentityCenterConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateRLSPolicy  **
+  - **IAM action:**  [lakeformation:UpdateRLSPolicy](#list_lakeformation-action-UpdateRLSPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

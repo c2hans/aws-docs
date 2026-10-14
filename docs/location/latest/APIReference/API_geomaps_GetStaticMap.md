@@ -12,6 +12,8 @@ For more information, see the following topics in the *Amazon Location Service D
 +  [Customize static maps](https://docs.aws.amazon.com/location/latest/developerguide/customizing-static-maps.html)
 +  [Overlay on the static map](https://docs.aws.amazon.com/location/latest/developerguide/overlaying-static-map.html)
 
+Try the GetStaticMap operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/static-map).
+
 ## Request Syntax
 <a name="API_geomaps_GetStaticMap_RequestSyntax"></a>
 

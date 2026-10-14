@@ -5,53 +5,131 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-step-co
 # Gremlin step coverage in DFE
 <a name="gremlin-step-coverage-in-DFE"></a>
 
- Gremlin DFE is an experimental feature and can be used by either enabling the instance parameter or using the `Neptune#useDFE` query hint. For more information please refer to [ Using Gremlin with the Neptune DFE query engine](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-with-dfe.html).
+ Gremlin DFE can be used by either enabling the instance parameter or using the `Neptune#useDFE` query hint. For more information please refer to [ Using Gremlin with the Neptune DFE query engine](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-with-dfe.html).
 
- The following steps are available to use in Gremlin DFE.
+ The following sections describe DFE step coverage for Neptune engine release 1.5.0.0 and later, and for Neptune engine releases before 1.5.0.0.
 
-## Path and traversal steps:
+## Neptune engine release 1.5.0.0 and later
+<a name="gremlin-step-coverage-in-DFE-15"></a>
+
+Starting with Amazon Neptune engine release 1.5.0.0, DFE natively supports most Gremlin steps. The following steps are not natively supported on DFE:
++ **Mutation** – `addV()`, `addE()`, `drop()`, `mergeV()`, `mergeE()`, and `property()`.
++ **Filters and predicates** – `all()`, `any()`, `none()`, `TextP.regex`, and `TextP.notRegex`.
++ **Side-effects** – `barrier()`, `subgraph()`, `timeLimit()`, and `tree()`.
++ **Map** – `asBool()`, `asNumber()`, `element()`, `format()`, `math()`, `merge()`, and `propertyMap()`.
+
+If you use one of these steps, Neptune falls back to TinkerPop processing for that part of the query.
+
+See also [Gremlin standards compliance](access-graph-gremlin-differences.md) for Neptune-wide differences from Apache TinkerPop that also apply under DFE.
+
+### Partially supported steps
+<a name="gremlin-step-coverage-in-DFE-15-partial"></a>
+
+DFE supports the following steps for their common forms. If you use one of these steps in a more complex or less common form, that part of the query falls back to TinkerPop processing. To confirm whether a specific query runs natively, check the `explain` output.
+
+#### Branching steps
+<a name="gremlin-dfe-partial-branching"></a>
+
+DFE supports branching steps like `choose()`, `union()`, and `coalesce()` on the condition that they not contain reducing steps in the child traversals that they take as arguments — a reducing step such as `count()`, `fold()`, or `dedup()` in any branch causes the whole step to fall back to TinkerPop.
+
+`choose()` additionally supports its full range of forms: its if-then-else form with two branches, its if-then form with a single branch, and the `option()`-based form that maps specific case values to branches, with `Pick.none` as the default case. Its condition can be a predicate (such as `hasLabel()`) or a value lookup (such as `values()`). Beyond the reducing-step rule, `choose()` also falls back when its condition requires path history (for example `path()` or `select()`).
+
+Examples:
+
+```
+choose(hasLabel('person'), out(), in())
+choose(hasLabel('person'), out())
+union(out(), in())
+union(out('knows'), out('created'))
+coalesce(out('knows'), out('created'))
+```
+
+#### `group()` and `groupCount()`
+<a name="gremlin-dfe-partial-group"></a>
+
+DFE supports `group()` and `groupCount()` best when you key on a single expression like a label or a property value, and both can also translate more complex key traversals. For `group()`, the second (reducing) `by()` must terminate with `count()`, `fold()`, or `group()`; other reducers fall back to TinkerPop, as do keys constructed from branch-merge steps like `union()` or `coalesce()`. `groupCount()` has no such key restriction.
+
+Examples:
+
+```
+group().by(label()).by(count())
+group().by('age').by(fold())
+groupCount()
+```
+
+#### `path()`
+<a name="gremlin-dfe-partial-path"></a>
+
+DFE supports `path()` for collecting the traversal path, with or without `by()` modulators to project each path element — both single and multiple `by()` modulators are supported. `path()` falls back to TinkerPop when `by()` modulation is used with `path()` as an argument to another step (for example inside `local()`, `union()`, or `project()`), or when the path being projected spans a branch created by an earlier `union()`.
+
+Examples:
+
+```
+V().out().path()
+V().out().path().by('name')
+```
+
+#### `repeat()`
+<a name="gremlin-dfe-partial-repeat"></a>
+
+DFE supports `repeat()` for standard loops. You can bound the loop with `times()` or end it with an `until()` condition, and optionally `emit()` results along the way. The repeated traversal can contain common navigation, filtering, and aggregation steps such as `limit()`, `range()`, `skip()`, `dedup()`, `where()`, `order()`, and `aggregate()`; nested loops are also supported. A few specific shapes fall back to TinkerPop: `dedup()` inside an `emit()`/`until()` condition, a bare `path()` collected in the loop body (unless wrapped in a filter such as `where()`), a nested `repeat()` combined with `path()`, or `sack()` used inside the loop without being initialized first.
+
+Examples:
+
+```
+repeat(out()).times(2)
+repeat(out()).until(loops().is(2))
+repeat(out().limit(2))
+```
+
+## Neptune engine releases before 1.5.0.0
+<a name="gremlin-step-coverage-in-DFE-pre15"></a>
+
+The following steps are available to use in Gremlin DFE.
+
+### Path and traversal steps:
 <a name="DFE-path-and-traversal"></a>
 
  [asDate()](https://tinkerpop.apache.org/docs/current/reference/#asDate-step), [barrier()](https://tinkerpop.apache.org/docs/current/reference/#barrier-step), [call()](https://tinkerpop.apache.org/docs/current/reference/#call-step), [cap()](https://tinkerpop.apache.org/docs/current/reference/#cap-step), [dateAdd()](https://tinkerpop.apache.org/docs/current/reference/#dateadd-step), [dateDiff()](https://tinkerpop.apache.org/docs/current/reference/#datediff-step), [disjunct()](https://tinkerpop.apache.org/docs/current/reference/#disjunct-step), [drop()](https://tinkerpop.apache.org/docs/current/reference/#drop-step), [fail()](https://tinkerpop.apache.org/docs/current/reference/#fail-step), [filter()](https://tinkerpop.apache.org/docs/current/reference/#filter-step), [flatMap()](https://tinkerpop.apache.org/docs/current/reference/#flatmap-step), [id()](https://tinkerpop.apache.org/docs/current/reference/#id-step), [identity()](https://tinkerpop.apache.org/docs/current/reference/#identity-step), [index()](https://tinkerpop.apache.org/docs/current/reference/#index-step), [intersect()](https://tinkerpop.apache.org/docs/current/reference/#intersect-step), [inject()](https://tinkerpop.apache.org/docs/current/reference/#inject-step), [label()](https://tinkerpop.apache.org/docs/current/reference/#label-step), [length()](https://tinkerpop.apache.org/docs/current/reference/#length-step), [loops()](https://tinkerpop.apache.org/docs/current/reference/#loops-step), [map()](https://tinkerpop.apache.org/docs/current/reference/#map-step), [order()](https://tinkerpop.apache.org/docs/current/reference/#order-step), [order(local)](https://tinkerpop.apache.org/docs/current/reference/#order-step), [path()](https://tinkerpop.apache.org/docs/current/reference/#path-step), [project()](https://tinkerpop.apache.org/docs/current/reference/#project-step), [range()](https://tinkerpop.apache.org/docs/current/reference/#range-step), [repeat()](https://tinkerpop.apache.org/docs/current/reference/#repeat-step), [reverse()](https://tinkerpop.apache.org/docs/current/reference/#reverse-step), [sack()](https://tinkerpop.apache.org/docs/current/reference/#sack-step), [sample()](https://tinkerpop.apache.org/docs/current/reference/#sample-step), [select()](https://tinkerpop.apache.org/docs/current/reference/#select-step), [sideEffect()](https://tinkerpop.apache.org/docs/current/reference/#sideeffect-step), [split()](https://tinkerpop.apache.org/docs/current/reference/#split-step), [unfold()](https://tinkerpop.apache.org/docs/current/reference/#unfold-step), [union()](https://tinkerpop.apache.org/docs/current/reference/#union-step)
 
-## Aggregate and collection steps:
+### Aggregate and collection steps:
 <a name="DFE-aggregate-and-collection"></a>
 
  [aggregate(global)](https://tinkerpop.apache.org/docs/current/reference/#aggregate-step), [combine()](https://tinkerpop.apache.org/docs/current/reference/#combine-step), [count()](https://tinkerpop.apache.org/docs/current/reference/#count-step), [dedup()](https://tinkerpop.apache.org/docs/current/reference/#dedup-step), [dedup(local)](https://tinkerpop.apache.org/docs/current/reference/#dedup-step), [fold()](https://tinkerpop.apache.org/docs/current/reference/#fold-step), [group()](https://tinkerpop.apache.org/docs/current/reference/#group-step), [groupCount()](https://tinkerpop.apache.org/docs/current/reference/#groupcount-step),
 
-## Mathematical steps:
+### Mathematical steps:
 <a name="DFE-mathematical"></a>
 
  [max()](https://tinkerpop.apache.org/docs/current/reference/#max-step), [mean()](https://tinkerpop.apache.org/docs/current/reference/#mean-step), [min()](https://tinkerpop.apache.org/docs/current/reference/#min-step), [sum()](https://tinkerpop.apache.org/docs/current/reference/#sum-step)
 
-## Element steps:
+### Element steps:
 <a name="DFE-element"></a>
 
  [otherV()](https://tinkerpop.apache.org/docs/current/reference/#otherv-step), [elementMap()](https://tinkerpop.apache.org/docs/current/reference/#elementmap-step), [element()](https://tinkerpop.apache.org/docs/current/reference/#element-step), [v()](https://tinkerpop.apache.org/docs/current/reference/#graph-step), [ out(), in(), both(), outE(), inE(), bothE(), outV(), inV(), bothV(), otherV()](https://tinkerpop.apache.org/docs/current/reference/#vertex-step)
 
-## Property steps:
+### Property steps:
 <a name="DFE-property"></a>
 
  [properties()](https://tinkerpop.apache.org/docs/current/reference/#properties-step), [key()](https://tinkerpop.apache.org/docs/current/reference/#key-step), [valueMap()](https://tinkerpop.apache.org/docs/current/reference/#propertymap-step), [value()](https://tinkerpop.apache.org/docs/current/reference/#value-step)
 
-## Filter steps:
+### Filter steps:
 <a name="DFE-filter"></a>
 
- [and()](https://tinkerpop.apache.org/docs/current/reference/#and-step), [coalesce()](https://tinkerpop.apache.org/docs/current/reference/#coalesce-step), [coin()](https://tinkerpop.apache.org/docs/current/reference/#coin-step), [has()](https://tinkerpop.apache.org/docs/current/reference/#has-step), [is()](https://tinkerpop.apache.org/docs/current/reference/#is-step), [local()](https://tinkerpop.apache.org/docs/current/reference/#local-step), [none()](https://tinkerpop.apache.org/docs/current/reference/#none-step), [not()](https://tinkerpop.apache.org/docs/current/reference/#not-step), [or()](https://tinkerpop.apache.org/docs/current/reference/#or-step), [where()](https://tinkerpop.apache.org/docs/current/reference/#where-step)
+ [and()](https://tinkerpop.apache.org/docs/current/reference/#and-step), [coalesce()](https://tinkerpop.apache.org/docs/current/reference/#coalesce-step), [coin()](https://tinkerpop.apache.org/docs/current/reference/#coin-step), [discard()](https://tinkerpop.apache.org/docs/current/reference/#discard-step), [has()](https://tinkerpop.apache.org/docs/current/reference/#has-step), [is()](https://tinkerpop.apache.org/docs/current/reference/#is-step), [local()](https://tinkerpop.apache.org/docs/current/reference/#local-step), [none(P)](https://tinkerpop.apache.org/docs/current/reference/#none-step), [not()](https://tinkerpop.apache.org/docs/current/reference/#not-step), [or()](https://tinkerpop.apache.org/docs/current/reference/#or-step), [where()](https://tinkerpop.apache.org/docs/current/reference/#where-step)
 
-## String manipulation steps:
+### String manipulation steps:
 <a name="DFE-string-manipulation"></a>
 
  [concat()](https://tinkerpop.apache.org/docs/current/reference/#concat-step), [lTrim()](https://tinkerpop.apache.org/docs/current/reference/#lTrim-step), [rTrim()](https://tinkerpop.apache.org/docs/current/reference/#rtrim-step), [substring()](https://tinkerpop.apache.org/docs/current/reference/#substring-step), [toLower()](https://tinkerpop.apache.org/docs/current/reference/#toLower-step), [toUpper()](https://tinkerpop.apache.org/docs/current/reference/#toUpper-step), [trim()](https://tinkerpop.apache.org/docs/current/reference/#trim-step)
 
-## Predicates:
+### Predicates:
 <a name="DFE-predicates"></a>
 +  [ Compare: eq, neq, lt, lte, gt, gte](https://tinkerpop.apache.org/docs/current/reference/#a-note-on-predicates)
 +  [Contains: within, without](https://tinkerpop.apache.org/docs/current/reference/#a-note-on-predicates)
 +  [ TextP: endingWith, containing, notStartingWith, notEndingWith, notContaining](https://tinkerpop.apache.org/docs/current/reference/#a-note-on-predicates)
 +  [ P: and, or, between, outside, inside](https://tinkerpop.apache.org/docs/current/reference/#a-note-on-predicates)
 
-## Limitations
+### Limitations
 <a name="gremlin-with-dfe-limitations"></a>
 
  Repeat with Limit, Labels inside repeat traversal and dedup are not supported in DFE yet.

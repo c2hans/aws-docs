@@ -46,6 +46,10 @@ Warm pool instances take different lifecycle state paths depending on the scenar
 
 1. `Warmed:Terminating:Retained` - Hook fails, instance retained for manual intervention
 
+ An instance stays in its retained state until you terminate it. For more information, see [Terminate retained instances](#terminate-retained-instances).
+
+ Warm pool instances always re-enter `Warmed:Terminating:Wait`. This happens because `TerminateInstanceInAutoScalingGroup` terminates the instance rather than returning it to the warm pool. An instance in `Warmed:Pending:Retained` therefore doesn't go back to `Warmed:Pending:Wait`. If the lifecycle action is abandoned again, the instance is retained as `Warmed:Terminating:Retained`, not `Warmed:Pending:Retained`.
+
 ## Monitor retained instances
 <a name="monitor-retained-instances"></a>
 
@@ -84,3 +88,6 @@ aws autoscaling terminate-instance-in-auto-scaling-group \
 --instance-id {{i-1234567890abcdef0}} \
 --no-should-decrement-desired-capacity
 ```
+
+**Note**
+This call invokes your termination lifecycle hooks again, so the instance terminates only after you complete the new lifecycle action with the `CONTINUE` result. Calling [ CompleteLifecycleAction](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CompleteLifecycleAction.html) before this call fails with a `ValidationError`, because a retained instance has no lifecycle action in progress. You don't need to change the instance lifecycle policy first.

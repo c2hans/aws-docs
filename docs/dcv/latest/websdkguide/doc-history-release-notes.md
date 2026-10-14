@@ -17,6 +17,7 @@ This page provides the release notes and document history for Amazon DCV Web Cli
 This section provides release notes for the Amazon DCV Web Client SDK by release date.
 
 **Topics**
++ [1.15.5 — October 13, 2026](#1.15.5)
 + [1.13.2 — February 19, 2026](#1.13.2)
 + [1.10.1 — October 22, 2025](#1.10.1)
 + [1.9.100 — July 2, 2025](#1.9.100)
@@ -39,6 +40,13 @@ This section provides release notes for the Amazon DCV Web Client SDK by release
 + [1.0.2 — July 30, 2021](#1.0.2)
 + [1.0.1 — May 31, 2021](#1.0.1)
 + [1.0.0 — March 24, 2021](#1.0.0)
+
+### 1.15.5 — October 13, 2026
+<a name="1.15.5"></a>
+
+| Build numbers | New features | Changes and bug fixes |
+| --- | --- | --- |
+|  +  Semantic version: 1.15.5 <br />+  Build: 1190   | The following features were added: +  Added `probe` API to test endpoint availability. <br />+  Added new Closing Reason `UNSUPPORTED_RENDERER` as WebGL support is now a requirement. <br />+  Added `locale` and `messages` UI configuration options to the `DCVViewer` component to customize and localize the viewer UI strings.   |  +  The `enableWebCodecs` connection config option now defaults to `true` when not specified. <br />+  Improved microphone logic to allow resampling and fixed issues with the microphone encoder. <br />+  Enabled 4K streaming on Safari when using the Broadway decoder.   |
 
 ### 1.13.2 — February 19, 2026
 <a name="1.13.2"></a>

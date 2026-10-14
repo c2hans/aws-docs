@@ -80,7 +80,7 @@ The settings for ungraceful execution.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WaitELBTargetGroupHealthy`  <a name="cfn-arcregionswitch-plan-ecscapacityincreaseconfiguration-waitelbtargetgrouphealthy"></a>
-Property description not available.
+If enabled, the step completes only after each attached ELB target group reports a healthy target count that matches the service's new desired task count calculated in the step.
 *Required*: No
 *Type*: String
 *Allowed values*: `enabled | disabled`

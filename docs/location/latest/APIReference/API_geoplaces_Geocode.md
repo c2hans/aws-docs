@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [Geocode](https://docs.aws.amazon.com/location/latest/developerguide/geocode.html) in the *Amazon Location Service Developer Guide*.
 
-Try the Geocode API in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/geocode).
+Try the Geocode operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/geocode).
 
 ## Request Syntax
 <a name="API_geoplaces_Geocode_RequestSyntax"></a>

@@ -13,7 +13,7 @@ Allows you to configure automated responses.
  ** Type **   <a name="securityhub-Type-AutomationRulesActionV2-Type"></a>
 The category of action to be executed by the automation rule.
 Type: String
-Valid Values: `FINDING_FIELDS_UPDATE | EXTERNAL_INTEGRATION`
+Valid Values: `FINDING_FIELDS_UPDATE | EXTERNAL_INTEGRATION | RESOURCE_FIELDS_UPDATE`
 Required: Yes
 
  ** ExternalIntegrationConfiguration **   <a name="securityhub-Type-AutomationRulesActionV2-ExternalIntegrationConfiguration"></a>
@@ -24,6 +24,11 @@ Required: No
  ** FindingFieldsUpdate **   <a name="securityhub-Type-AutomationRulesActionV2-FindingFieldsUpdate"></a>
 The changes to be applied to fields in a security finding when an automation rule is triggered.
 Type: [AutomationRulesFindingFieldsUpdateV2](API_AutomationRulesFindingFieldsUpdateV2.md) object
+Required: No
+
+ ** ResourceFieldsUpdate **   <a name="securityhub-Type-AutomationRulesActionV2-ResourceFieldsUpdate"></a>
+The changes to be applied to resource fields when an automation rule is triggered.
+Type: [AutomationRulesResourceFieldsUpdateV2](API_AutomationRulesResourceFieldsUpdateV2.md) object
 Required: No
 
 ## See Also

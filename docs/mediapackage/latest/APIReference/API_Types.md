@@ -51,6 +51,7 @@ The following data types are supported:
 +  [ListLowLatencyHlsManifestConfiguration](API_ListLowLatencyHlsManifestConfiguration.md)
 +  [ListMssManifestConfiguration](API_ListMssManifestConfiguration.md)
 +  [MultiviewConfiguration](API_MultiviewConfiguration.md)
++  [MultiviewFilterConfiguration](API_MultiviewFilterConfiguration.md)
 +  [OriginEndpointListConfiguration](API_OriginEndpointListConfiguration.md)
 +  [OutputHeaderConfiguration](API_OutputHeaderConfiguration.md)
 +  [S3DestinationConfig](API_S3DestinationConfig.md)

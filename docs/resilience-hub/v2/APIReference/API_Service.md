@@ -64,6 +64,11 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 615.
 Required: No
 
+ ** devOpsAgentConfiguration **   <a name="ngresiliencehub-Type-Service-devOpsAgentConfiguration"></a>
+The current DevOps Agent integration state for the service.
+Type: [DevOpsAgentConfigurationView](API_DevOpsAgentConfigurationView.md) object
+Required: No
+
  ** effectivePolicyValues **   <a name="ngresiliencehub-Type-Service-effectivePolicyValues"></a>
 The effective policy values for the service.
 Type: [EffectivePolicyValues](API_EffectivePolicyValues.md) object

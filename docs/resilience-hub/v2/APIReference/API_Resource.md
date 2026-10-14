@@ -15,6 +15,16 @@ The identifier of the resource.
 Type: String
 Required: Yes
 
+ ** availabilityZoneId **   <a name="ngresiliencehub-Type-Resource-availabilityZoneId"></a>
+The Availability Zone ID of the Availability Zone that hosts the resource, such as use1-az1. The Availability Zone ID is consistent across Amazon Web Services (AWS) accounts, unlike the Availability Zone name.
+Type: String
+Required: No
+
+ ** availabilityZoneName **   <a name="ngresiliencehub-Type-Resource-availabilityZoneName"></a>
+The name of the Availability Zone that hosts the resource, such as us-west-2a.
+Type: String
+Required: No
+
  ** awsAccountId **   <a name="ngresiliencehub-Type-Resource-awsAccountId"></a>
 The AWS account ID that owns the resource.
 Type: String
@@ -27,6 +37,16 @@ The AWS Region where the resource is located.
 Type: String
 Length Constraints: Minimum length of 6.
 Pattern: `[a-z]{2}-((iso[a-z]{0,1}-)|(gov-)){0,1}[a-z]+-[0-9]`
+Required: No
+
+ ** containmentParentId **   <a name="ngresiliencehub-Type-Resource-containmentParentId"></a>
+The identifier of the single parent resource that contains this resource, used to represent containment relationships in the resource topology. A resource has at most one containment parent.
+Type: String
+Required: No
+
+ ** logicalResourceGroupId **   <a name="ngresiliencehub-Type-Resource-logicalResourceGroupId"></a>
+The identifier of the logical resource group that this resource belongs to. Resources that share this identifier are managed as a single unit.
+Type: String
 Required: No
 
  ** resourceType **   <a name="ngresiliencehub-Type-Resource-resourceType"></a>

@@ -19,7 +19,7 @@ Required: Yes
  ** executionBlockType **   <a name="regionswitch-Type-Step-executionBlockType"></a>
 The type of an execution block in a workflow.
 Type: String
-Valid Values: `CustomActionLambda | ManualApproval | AuroraGlobalDatabase | EC2AutoScaling | ARCRoutingControl | ARCRegionSwitchPlan | Parallel | ECSServiceScaling | EKSResourceScaling | Route53HealthCheck | DocumentDb | RdsPromoteReadReplica | RdsCreateCrossRegionReplica | LambdaEventSourceMapping | AuroraServerlessScaling | AuroraProvisionedScaling | NeptuneGlobalDatabase`
+Valid Values: `CustomActionLambda | ManualApproval | AuroraGlobalDatabase | EC2AutoScaling | ARCRoutingControl | ARCRegionSwitchPlan | Parallel | ECSServiceScaling | EKSResourceScaling | Route53HealthCheck | DocumentDb | RdsPromoteReadReplica | RdsCreateCrossRegionReplica | LambdaEventSourceMapping | AuroraServerlessScaling | AuroraProvisionedScaling | NeptuneGlobalDatabase | RdsSwitchoverReadReplica | SSMSendCommand`
 Required: Yes
 
  ** name **   <a name="regionswitch-Type-Step-name"></a>

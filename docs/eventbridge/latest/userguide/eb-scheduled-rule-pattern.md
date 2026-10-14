@@ -63,7 +63,7 @@ You can use the following sample cron strings when creating a rule with schedule
 | 0/15 | \* | \* | \* | ? | \* | Run every 15 minutes |
 | 0/10 | \* | ? | \* | MON-FRI | \* | Run every 10 minutes Monday through Friday |
 | 0/5 | 8-17 | ? | \* | MON-FRI | \* | Run every 5 minutes Monday through Friday between 8:00 am and 5:55 pm (UTC\+0) |
-| 0/30 | 20-2 | ? | \* | MON-FRI | \* | Run every 30 minutes Monday through Friday between 10:00 pm on the starting day to 2:00 am on the following day (UTC)<br />Run from 12:00 am to 2:00 am on Monday morning (UTC). |
+| 0/30 | 20-2 | ? | \* | MON-FRI | \* | Run every 30 minutes Monday through Friday between 8:00 pm on the starting day to 2:00 am on the following day (UTC)<br />Run from 12:00 am to 2:00 am on Monday morning (UTC). |
 
 The following example creates a rule that runs every day at 12:00pm UTC\+0.
 

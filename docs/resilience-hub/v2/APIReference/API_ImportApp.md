@@ -123,6 +123,15 @@ Content-type: application/json
          "updatedAt": number
       },
       "description": "string",
+      "devOpsAgentConfiguration": {
+         "agentSpaceArn": "string",
+         "agentSpaceId": "string",
+         "connectedAt": number,
+         "operatorAppUrl": "string",
+         "region": "string",
+         "status": "string",
+         "statusReason": "string"
+      },
       "effectivePolicyValues": {
          "availabilitySlo": {
             "policyName": "string",
@@ -242,6 +251,10 @@ The identifier of the resource that was not found.
  ** resourceType **
 The type of the resource that was not found.
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+Service quota exceeded.
+HTTP Status Code: 402
 
  ** ValidationException **
 Validation error — invalid input parameters.

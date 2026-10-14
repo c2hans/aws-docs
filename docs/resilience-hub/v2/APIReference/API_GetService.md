@@ -62,6 +62,15 @@ Content-type: application/json
          "updatedAt": number
       },
       "description": "string",
+      "devOpsAgentConfiguration": {
+         "agentSpaceArn": "string",
+         "agentSpaceId": "string",
+         "connectedAt": number,
+         "operatorAppUrl": "string",
+         "region": "string",
+         "status": "string",
+         "statusReason": "string"
+      },
       "effectivePolicyValues": {
          "availabilitySlo": {
             "policyName": "string",

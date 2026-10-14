@@ -20,6 +20,7 @@ View details about updates to AWS managed policies for AWS Transform since March
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSTransformServerMigrationAgentPolicy](#security-iam-awsmanpol-AWSTransformServerMigrationAgentPolicy) – Updated policy | Added permission for AWS Transform MGN to assume the `AWSTransformRehostSharingRole_{{account-id}}` role in other accounts in your organization on your behalf. This lets MGN run multi-account server migration operations in member accounts. | October 11, 2026 |
 | [AWSTransformApplicationDeploymentPolicy](#security-iam-awsmanpol-AWSTransformApplicationDeploymentPolicy) – Updated policy | Added permissions to add and remove CloudFormation stack tags during stack create and update operations. | September 11, 2026 |
 | [AWSTransformApplicationECSDeploymentPolicy](#security-iam-awsmanpol-AWSTransformApplicationECSDeploymentPolicy) – Updated policy | Added permissions to add and remove CloudFormation stack tags during stack create and update operations. | September 11, 2026 |
 | [AWSTransformLandingZoneAgentPolicy](#security-iam-awsmanpol-AWSTransformLandingZoneAgentPolicy) – New policy | Added a new AWS managed policy that grants the permissions needed to set up AWS landing zones, including account provisioning, organizational governance, and AWS Control Tower configuration. | September 3, 2026 |
@@ -298,9 +299,9 @@ This policy includes the following permissions:
 + **Service Quotas** – Allows reading the VPC quota for security groups per network interface through MGN.
 + **AWS Secrets Manager** – Allows listing secrets to discover the credentials used for source server discovery.
 + **AWS Organizations** – Allows listing accounts to discover the accounts in your organization.
-+ **AWS STS** – Allows assuming the `AWSTransformRehostSharingRole_{{management-or-delegated-admin-account-id}}` role in other accounts in your organization for multi-account migrations.
++ **AWS STS** – Allows assuming the `AWSTransformRehostSharingRole_{{management-or-delegated-admin-account-id}}` role in other accounts in your organization for multi-account migrations. Through MGN, also allows MGN to assume the same role in member accounts of your organization, using an external ID of `{{account-id}}:AWSTransform`.
 
-The policy implements least-privilege access through resource-level permissions, tag-based conditions on `CreatedBy`, `AWSApplicationMigrationServiceManaged`, and the workspace ID, the `aws:ResourceAccount` and `aws:ResourceOrgID` conditions, an `aws:RequestedRegion` condition that restricts operations to your target AWS Region, `aws:CalledVia` conditions that limit most Amazon EC2, Amazon FSx, and Systems Manager actions to calls made by MGN, and an external ID that includes your workspace ID for cross-account role assumption.
+The policy implements least-privilege access through resource-level permissions, tag-based conditions on `CreatedBy`, `AWSApplicationMigrationServiceManaged`, and the workspace ID, the `aws:ResourceAccount` and `aws:ResourceOrgID` conditions, an `aws:RequestedRegion` condition that restricts operations to your target AWS Region, `aws:CalledVia` conditions that limit most Amazon EC2, Amazon FSx, Systems Manager, and AWS STS actions to calls made by MGN, and external IDs that include your account ID or workspace ID for cross-account role assumption.
 
  **Permissions details**
 

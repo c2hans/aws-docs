@@ -64,6 +64,7 @@ Content-type: application/json
          "description": "string",
          "failureCategory": "string",
          "findingId": "string",
+         "investigationDeepLink": "string",
          "name": "string",
          "policyComponent": "string",
          "serviceArn": "string",

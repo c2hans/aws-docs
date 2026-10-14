@@ -30,6 +30,11 @@ The feature metadata used to search through the features.
 Type: [FeatureMetadata](API_FeatureMetadata.md) object
 Required: No
 
+ ** HubContent **   <a name="sagemaker-Type-SearchRecord-HubContent"></a>
+The properties of a hub content resource.
+Type: [HubContent](API_HubContent.md) object
+Required: No
+
  ** HyperParameterTuningJob **   <a name="sagemaker-Type-SearchRecord-HyperParameterTuningJob"></a>
 The properties of a hyperparameter tuning job.
 Type: [HyperParameterTuningJobSearchEntity](API_HyperParameterTuningJobSearchEntity.md) object

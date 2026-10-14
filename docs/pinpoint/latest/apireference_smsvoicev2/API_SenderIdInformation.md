@@ -56,6 +56,11 @@ The messaging limits that apply to the sender ID, including the per-capability s
 Type: [MessagingLimits](API_MessagingLimits.md) object
 Required: No
 
+ ** PricingTier **   <a name="pinpoint-Type-SenderIdInformation-PricingTier"></a>
+The pricing model.
+Type: String
+Required: No
+
  ** RegistrationId **   <a name="pinpoint-Type-SenderIdInformation-RegistrationId"></a>
 The unique identifier for the registration.
 Type: String

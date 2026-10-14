@@ -176,7 +176,7 @@ An Amazon RDS promote read replica execution block.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RdsSwitchoverReadReplicaConfig`  <a name="cfn-arcregionswitch-plan-executionblockconfiguration-rdsswitchoverreadreplicaconfig"></a>
-Property description not available.
+An Amazon RDS switchover read replica execution block.
 *Required*: No
 *Type*: [RdsSwitchoverReadReplicaConfiguration](aws-properties-arcregionswitch-plan-rdsswitchoverreadreplicaconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

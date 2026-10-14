@@ -18,6 +18,13 @@ Prices are subject to change. For full details, refer to the pricing page for ea
 **Note**
 Many AWS Services include a Free Tier - a baseline amount of the service that customers can use at no charge. Actual costs may be more or less than the pricing examples provided.
 
+**Note**
+If you enable rollback with the **EnableRollback** parameter, the solution stores a small JSON snapshot in Amazon S3 for each rollback-eligible remediation. This adds minor S3 storage cost; snapshots are expired automatically by a lifecycle rule.
+
+**Note**
+If you plan to budget for this solution, note that enabling the MCP server adds variable, usage-based cost rather than a fixed charge. The **EnableMcpServer** parameter deploys an Amazon Bedrock AgentCore Gateway. It also deploys the shared core services that the Web UI uses. These are an Amazon Cognito user pool, the API, and Lambda functions.
+With AgentCore Gateway, you pay only for the tool API calls your AI clients make. Examples include listing and invoking tools. There is no fixed hourly charge, so the cost scales with client usage. The example scenarios below do not enable the MCP server. For details, see the [Amazon Bedrock AgentCore pricing](https://aws.amazon.com/bedrock/agentcore/pricing/) page.
+
 We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) through AWS Cost Explorer to help manage costs. Prices are subject to change. For full details, see the pricing webpage for each AWS service used in this solution.
 
 ## Sample cost table
@@ -58,6 +65,7 @@ This solution uses the following AWS components, which incur a cost based on you
 |  [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/pricing/)  | 30-day free trial per secret. | $0.40 per secret per month. $0.05 per 10,000 API calls. Used to store credentials for the Slack, JIRA, and ServiceNow notification and ticketing channels; one secret per configured channel. |
 |  [AWS WAF](https://aws.amazon.com/waf/pricing/)  | No Free Tier | $5.00 per web ACL per month. $1.00 per rule per month. $0.60 per 1 million requests. Deployed to protect the Web UI API when the Web UI is enabled, with 10 rules (7 AWS Managed Rule groups plus 3 rate-based rules for per-user and per-IP rate limiting). The AWS Managed Bot Control rule group adds intelligent threat mitigation pricing of $10.00 per month plus $1.00 per 1 million requests. |
 |  [AWS CloudTrail](https://aws.amazon.com/cloudtrail/pricing/)  | First copy of management events is free. | $2.00 per 100,000 management events. Data events cost $0.10 per 100,000 events. Only incurred when you enable the Action Log with the **EnableCloudTrailForASRActionLog** parameter. |
+|  [Amazon Bedrock AgentCore - Gateway](https://aws.amazon.com/bedrock/agentcore/pricing/)  | No Free Tier | Pricing is consumption-based. You pay for the Gateway API calls your AI clients make, such as listing and invoking tools. You also pay for the tools that the Gateway indexes for search. There is no upfront cost or minimum commitment. This cost applies only when you enable the MCP server with the **EnableMcpServer** parameter. The cost scales with client usage. See the pricing page for current rates. |
 
 ## AWS KMS cost optimization
 <a name="kms-optimization"></a>

@@ -116,7 +116,9 @@ Content-type: application/json
          "rtoInMinutes": number
       },
       "name": "string",
+      "organizationId": "string",
       "policyArn": "string",
+      "sharingEnabled": boolean,
       "tags": {
          "string" : "string"
       },
@@ -160,6 +162,10 @@ The identifier of the resource that was not found.
  ** resourceType **
 The type of the resource that was not found.
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+Service quota exceeded.
+HTTP Status Code: 402
 
  ** ValidationException **
 Validation error — invalid input parameters.

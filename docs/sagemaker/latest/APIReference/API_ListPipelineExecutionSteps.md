@@ -66,7 +66,16 @@ Required: No
          },
          "EndTime": number,
          "FailureReason": "string",
+         "IterationContext": {
+            "Index": number,
+            "Item": "string",
+            "ParentStepName": "string"
+         },
          "Metadata": {
+            "Athena": {
+               "QueryExecutionId": "string",
+               "S3OutputLocation": "string"
+            },
             "AutoMLJob": {
                "Arn": "string"
             },
@@ -102,6 +111,17 @@ Required: No
                "SkipCheck": boolean,
                "ViolationReport": "string"
             },
+            "Cleanup": {
+               "CleanedSteps": [ "string" ],
+               "FailedSteps": [
+                  {
+                     "ErrorCode": "string",
+                     "ErrorMessage": "string",
+                     "StepName": "string"
+                  }
+               ],
+               "SkippedSteps": [ "string" ]
+            },
             "Condition": {
                "Outcome": "string"
             },
@@ -111,6 +131,12 @@ Required: No
                "StepId": "string",
                "StepName": "string"
             },
+            "EMRServerless": {
+               "ApplicationId": "string",
+               "JobRunId": "string",
+               "JobRunName": "string",
+               "LogFilePath": "string"
+            },
             "Endpoint": {
                "Arn": "string"
             },
@@ -119,6 +145,18 @@ Required: No
             },
             "Fail": {
                "ErrorMessage": "string"
+            },
+            "ForEach": {
+               "FailedStepCount": number,
+               "InputItemCount": number,
+               "Selector": {
+                  "Index": number,
+                  "StepName": "string"
+               },
+               "Status": "string",
+               "StoppedStepCount": number,
+               "SucceededStepCount": number,
+               "TotalStepCount": number
             },
             "InferenceComponent": {
                "Arn": "string"

@@ -57,6 +57,7 @@ Required: Yes
             { ... }
          ]
       },
+      "serviceQuotaChecksEnabled": boolean,
       "triggers": [
          {
             "action": "string",

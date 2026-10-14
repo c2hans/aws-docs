@@ -76,6 +76,7 @@ Content-type: application/json
             "suggestedChanges": [ "string" ]
          }
       ],
+      "investigationDeepLink": "string",
       "name": "string",
       "observabilityRecommendations": [
          {

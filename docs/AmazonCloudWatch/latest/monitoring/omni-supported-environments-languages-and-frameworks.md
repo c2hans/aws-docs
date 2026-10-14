@@ -18,6 +18,8 @@ The environments, languages, and frameworks with a documented path for sending t
 | Amazon Bedrock AgentCore | AI agents | The runtime exports traces. | Traces | AgentCore starter toolkit, CDK (TypeScript, Python), Terraform, CloudFormation | [AI agents](./omni-send-ai-agent-telemetry.html#agentcore) |
 | Azure VM | Applications | CloudWatch agent on the VM, credentials federated from the VM's managed identity. | Traces, metrics, logs | Azure setup script | [Applications](./omni-send-application-telemetry.html#azure-vm) |
 | Azure Kubernetes Service | Applications | CloudWatch Observability Helm chart, credentials federated from workload identity. | Traces, metrics, logs | Helm, kubectl | [Applications](./omni-send-application-telemetry.html#azure-aks) |
+| Google Compute Engine | Applications | CloudWatch agent on the instance, credentials federated from the instance's service account. | Traces, metrics, logs | Google Cloud setup script | [Applications](./omni-send-application-telemetry.html#google-compute-engine) |
+| Google Kubernetes Engine | Applications | CloudWatch Observability Helm chart, credentials federated from the cluster's OIDC issuer. | Traces, metrics, logs | Helm, kubectl | [Applications](./omni-send-application-telemetry.html#google-kubernetes-engine) |
 
 **Application languages and frameworks**
 

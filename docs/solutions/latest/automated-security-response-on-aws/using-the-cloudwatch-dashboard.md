@@ -23,6 +23,8 @@ The CloudWatch dashboard contains the following sections:
 
 1.  **Cloud Trail Management Actions by ASR** - Lists management actions by the solution across all member accounts where you enabled Action Logs with the **EnableCloudTrailForASRActionLog** parameter at deployment time. When you observe unexpected resource changes in any of your AWS accounts, this widget can help you understand if resources were modified by the solution.
 
+1.  **Rollback** - If you enabled rollback with the **EnableRollback** parameter at deployment time, this section shows pre-remediation snapshot capture outcomes (captured, failed, or skipped) and rollback execution outcomes (success or failure). Use it to confirm that snapshots are being captured for rollback-eligible remediations and to spot rollbacks that fail. For more information about the feature, see [Remediation rollback](remediation-rollback.md).
+
 The CloudWatch dashboard also comes with predefined alarms that alert to common operational errors.
 
 1. State Machine executions > 1000 in a 24-hour period.
@@ -38,6 +40,14 @@ The CloudWatch dashboard also comes with predefined alarms that alert to common 
 1. Runbook Assume Role Failures > 0
 
    1. Remediations are being attempted on accounts or Regions that do not have the solution properly deployed. This could indicate an event rule has been modified to include more accounts than intended.
+
+1. Snapshot Capture Failure >= 1 (only when rollback is enabled)
+
+   1. A pre-remediation snapshot could not be captured, so the affected remediation is not rollback-capable. The remediation still proceeds (fail-open); this alarm surfaces the loss of rollback coverage.
+
+1. Rollback Execution Failure Rate > 20% over 15 minutes (only when rollback is enabled)
+
+   1. More than a fifth of rollback executions failed in the window. This can indicate a broken rollback path, missing member-account permissions, or resource drift.
 
 All alarm thresholds can be modified to suit the individual deployment needs.
 

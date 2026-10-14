@@ -80,5 +80,5 @@ Delete the stacks created to allow for self-managed StackSets permissions
 
 | Account | Purpose | Action in us-east-1 | Action in us-west-2 |
 | --- | --- | --- | --- |
-|  `111111111111`  | Admin | Delete the StackSet administrator role stack | None |
+|  `111111111111`  | Admin | Delete the StackSet administrator role stack<br />Delete the StackSet execution role stack | None |
 |  `222222222222`  | Member | Delete the StackSet execution role stack | None |

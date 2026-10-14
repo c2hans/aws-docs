@@ -45,6 +45,13 @@ Content-type: application/json
 {
    "testRun": {
       "accountTargeting": "string",
+      "devOpsAgentInvestigation": {
+         "confidence": "string",
+         "deepLink": "string",
+         "status": "string",
+         "summary": "string",
+         "verdict": "string"
+      },
       "endedAt": number,
       "errorMessage": "string",
       "eventCount": number,

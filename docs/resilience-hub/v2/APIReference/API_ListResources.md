@@ -74,9 +74,13 @@ Content-type: application/json
             "type": "string"
          },
          "resource": {
+            "availabilityZoneId": "string",
+            "availabilityZoneName": "string",
             "awsAccountId": "string",
             "awsRegion": "string",
+            "containmentParentId": "string",
             "identifier": "string",
+            "logicalResourceGroupId": "string",
             "resourceType": "string"
          },
          "resourceIdentifier": "string"

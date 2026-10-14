@@ -1035,6 +1035,9 @@ CloudWatch Synthetics supports logging the following actions as events in CloudT
 + [UntagResource](https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API_UntagResource.html)
 + [UpdateCanary](https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API_UpdateCanary.html)
 
+**Note**
+When you add, update, or remove replica locations for a multilocation canary, related activity appears in CloudTrail in each affected replica Region under the event name `ReplicateCanary`.
+
 ### Example: CloudWatch Synthetics log file entries
 <a name="understanding-CloudWatch-Synthetics-entries-in-CloudTrail"></a>
 

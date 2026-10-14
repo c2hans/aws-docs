@@ -5,9 +5,11 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_SnapToR
 # SnapToRoads
 <a name="API_SnapToRoads"></a>
 
- `SnapToRoads` matches GPS trace to roads most likely traveled on.
+ `SnapToRoads` matches GPS trace to roads most likely traveled on. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 
 For more information, see [Snap to Roads](https://docs.aws.amazon.com/location/latest/developerguide/snap-to-roads.html) in the *Amazon Location Service Developer Guide*.
+
+Try the SnapToRoads operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/snap-to-roads).
 
 ## Request Syntax
 <a name="API_SnapToRoads_RequestSyntax"></a>

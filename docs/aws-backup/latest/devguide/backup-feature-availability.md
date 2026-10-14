@@ -188,7 +188,7 @@ AWS Backup cannot be deployed or operated locally on AWS Outposts infrastructure
 | Asia Pacific (Malaysia) |  | ✓ | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Melbourne) | ✓ | Windows; Lustre; ONTAP | ✓ |  | ✓ | ✓ |  |  | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Mumbai) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| Asia Pacific (New Zealand) |  |  |  |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
+| Asia Pacific (New Zealand) |  | ✓ |  |  | ✓ | ✓ |  |  | ✓ |  | ✓ | ✓ |
 | Asia Pacific (Osaka) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Seoul) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Asia Pacific (Singapore) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |

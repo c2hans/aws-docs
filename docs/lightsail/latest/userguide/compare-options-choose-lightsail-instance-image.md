@@ -106,7 +106,7 @@ This blueprint is compatible with both dual-stack and IPv6-only Lightsail instan
 The following content management system (CMS) applications are available in Lightsail:
 
 ** **WordPress** **
- The WordPress blueprint provides a complete production environment with PHP, MariaDB, phpMyAdmin, and WordPress. This blueprint supports Lightsail’s guided workflow for configuring HTTPS with Let’s Encrypt SSL certificates with just a few clicks. Popular plugins like Jetpack, All in One SEO, WP Mail, Google Analytics for WordPress, All-in-One WP Migration and Backup, AMP, and W3 Total Cache are pre-installed in this blueprint.
+ The WordPress blueprint provides a complete production environment with PHP, MariaDB, phpMyAdmin, and WordPress. This blueprint supports Lightsail Setup for configuring HTTPS with Let’s Encrypt SSL certificates with just a few clicks. Popular plugins like Jetpack, All in One SEO, WP Mail, Google Analytics for WordPress, All-in-One WP Migration and Backup, AMP, and W3 Total Cache are pre-installed in this blueprint.
 Lightsail instances launched from WordPress will have Instance Metadata Service Version 2 (IMDSv2) enforced by default. For more information, see [How Instance Metadata Service Version 2 works](amazon-lightsail-configuring-instance-metadata-service.md).
 [Launch and configure a WordPress instance](amazon-lightsail-launch-and-configure-wordpress.md)
 Learn more about the [WordPress stack](https://wordpress.org/) at the *WordPress* website.

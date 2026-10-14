@@ -13,9 +13,42 @@ The instructions that follow leverage resources installed by the solution as a s
 ## AI Toolkit for Custom Remediations
 <a name="ai-toolkit-for-custom-remediations"></a>
 
-To accelerate the workflows described in this section, the solution provides the AI Toolkit for Custom Remediations. The toolkit packages ASR’s remediation best practices, guardrails, and development patterns as an instruction prompt that you provide to an AI assistant in your integrated development environment (IDE). With this context, the assistant can help you author ASR-compatible remediation runbooks, control runbooks, IAM roles, and CDK constructs that follow the naming conventions and integration steps documented in the following sections — producing production-ready custom remediations with fewer iterations and greater confidence.
+To accelerate the workflows described in this section, the solution provides the AI Toolkit for Custom Remediations. The toolkit packages ASR’s remediation best practices, guardrails, and development patterns for an AI coding assistant. The assistant can then help you author remediation runbooks, control runbooks, IAM roles, and CDK constructs. These follow the naming conventions and integration steps in the following sections.
 
 The toolkit is optional and does not change how remediations are built or deployed; it is a development aid that makes the solution’s conventions and constraints visible to your AI assistant. You remain responsible for reviewing and testing any generated code before deploying it.
+
+The toolkit is in the `ai-assets/` directory of the solution’s [GitHub repository](https://github.com/aws-solutions/automated-security-response-on-aws/tree/main). It has two parts:
++ A shared **remediation-authoring skill** (`ai-assets/skills/asr-remediation-authoring/`) that contains the instructions, reference material, and bundled Python scripts the assistant uses.
++  **Host adapters** for Claude Code, Kiro, and the OpenAI Codex CLI, installed alongside the shared skill as described in the directory’s `README.md`.
+
+### Workflows
+<a name="toolkit-workflows"></a>
+
+The skill supports two workflows, the Custom Runbook workflow and the Built-in remediation workflow. Don’t mix their naming or deployment rules. Choose the workflow that matches your goal:
+
+Custom Runbook workflow
+Use this workflow to fill a coverage gap for a control that the solution does not already remediate. You don’t change the solution’s source. The assistant helps you author, validate, test, and deploy the runbook into your member accounts. This workflow deploys the document under the built-in naming convention, so the Orchestrator treats it the same way as a built-in remediation. To have the solution record the runbook and gate its release on a test, register it through the MCP server instead. For both options and how each resolves at run time, see [Custom remediation runbooks](custom-remediation-runbooks.md).
+
+Built-in remediation workflow
+Use this workflow to add a remediation to the solution’s source. The assistant helps you add the remediation to the playbooks in a checkout of the solution repository. It follows the steps in [Overview of CDK workflow](#cdk-remediation-overview).
+
+### Bundled scripts
+<a name="toolkit-scripts"></a>
+
+The skill includes Python scripts for steps that need deterministic, repeatable behavior. The scripts require Python 3.11 or newer with `boto3` and `PyYAML`. They do the following:
++  **Generate** a runbook scaffold (handler, SSM Automation YAML, and control-runbook TypeScript).
++  **Validate** a runbook against the solution’s rules before deployment.
++  **Test** a remediation handler as a live SSM execution, cleaning up the transient test document afterward.
++  **Check drift** between a deployed document and its local definition.
++  **Deploy or manage** a non-production stack.
+
+**Important**
+The toolkit’s scripts write to AWS. Run them only in an account that you have independently confirmed is non-production. The bundled account guard confirms that the active credentials resolve to the account you named. It also scans the caller ARN for a `prod` or `prd` substring. The guard catches a wrong account. It doesn’t prove that an account is safe to change. Never store account IDs, credentials, endpoints, or other environment-specific values in the installed skill or adapters.
+
+### Optional deployed MCP server
+<a name="toolkit-mcp"></a>
+
+The local toolkit workflow does not require a deployed MCP server. It uses the AWS CLI, or any MCP server with AWS support, if your client already has one. If neither is available, install the AWS CLI before you use the toolkit. If you deployed the solution’s optional MCP server (see [MCP server for AI clients](mcp-server.md)), the assistant can also call its managed ASR operations. For example, it can register, test, and deploy a Custom Runbook through the solution’s test gate. The assistant can use only the tools that an administrator granted you.
 
 ## Overview of the manual workflow
 <a name="remediation-overview"></a>
@@ -32,9 +65,9 @@ ASR-{{<standard>}}-{{<version>}}-{{<control>}}
 
 1. Create a runbook in the member account(s).
 
-1. Create an IAM role in the member account(s).
+1. Create an AWS Identity and Access Management (IAM) role in the member account(s).
 
-1. (Optional) Create an automatic remediation rule in the admin account.
+1. (Optional) Enable automatic remediation in the admin account.
 
 ### Step 1. Create a runbook in the member account(s)
 <a name="step-1-create-a-runbook-in-the-member-accounts"></a>
@@ -56,18 +89,18 @@ ASR-{{<standard>}}-{{<version>}}-{{<control>}}
 
 At this point, your remediation is active and available for automated remediation from the ASR Custom Action in AWS Security Hub.
 
-### Step 3: (Optional) Create an automatic remediation rule in the admin account
+### Step 3: (Optional) Enable automatic remediation in the admin account
 <a name="step-3-create-an-automatio-remediation-rule-in-the-admin-account"></a>
 
 Automatic (not "automated") remediation is the immediate execution of the remediation as soon as the finding is received by AWS Security Hub. Carefully consider the risks before using this option.
 
-1. View an example rule for the same security standard in Amazon EventBridge. The naming standard for rules is `standard_control_*AutoTrigger*`.
+The solution checks the Remediation Configuration Amazon DynamoDB table in the admin account to decide whether to remediate a finding automatically. It does not use a per-control Amazon EventBridge rule.
 
-1. Copy the event pattern from the example to be used.
+1. In the admin account, open the Remediation Configuration DynamoDB table. Its name is in the `RemediationConfigurationDynamoDBTable` output of the admin stack.
 
-1. Change the `GeneratorId` value to match the `GeneratorId` in your Finding JSON.
+1. If no item exists for the control, create one with a `controlId` String attribute set to the security control ID of your new remediation. Add an `automatedRemediationEnabled` Boolean attribute set to `true`. If an item already exists, set its `automatedRemediationEnabled` attribute to `true`.
 
-1. Save and activate the rule.
+After the item exists, you can also manage the control and its [resource filters](manage-automated-remediation.md#manage-resource-filters) from the Web UI **Controls** page or the MCP server.
 
 ## Overview of CDK workflow
 <a name="cdk-remediation-overview"></a>

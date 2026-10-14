@@ -13,7 +13,7 @@ Defines the configuration for organizing and categorizing AWS resources based on
  ** GroupByField **   <a name="securityhub-Type-ResourceGroupByRule-GroupByField"></a>
 Specifies the attribute that resources should be grouped by.
 Type: String
-Valid Values: `AccountId | AccountName | Region | ResourceProvider | ResourceOwnerAccountId | ResourceOwnerOrgId | ResourceCloudPartition | ResourceRegion | ResourceCategory | ResourceType | ResourceName | FindingsSummary.FindingType | ResourceSubCategory | DiscoveryType | ResourceInfo.AIDetails.HostResourceType | ResourceInfo.AIDetails.CanonicalId`
+Valid Values: `AccountId | AccountName | Region | ResourceProvider | ResourceOwnerAccountId | ResourceOwnerOrgId | ResourceCloudPartition | ResourceRegion | ResourceCategory | ResourceType | ResourceName | FindingsSummary.FindingType | ResourceSubCategory | DiscoveryType | ResourceInfo.AIDetails.HostResourceType | ResourceInfo.AIDetails.CanonicalId | ResourceCriticality`
 Required: Yes
 
  ** Filters **   <a name="securityhub-Type-ResourceGroupByRule-Filters"></a>

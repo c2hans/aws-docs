@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Criteri
 # Criteria
 <a name="API_Criteria"></a>
 
-Defines the parameters and conditions used to evaluate and filter security findings.
+Defines the parameters and conditions used to evaluate and filter security findings or resources.
 
 ## Contents
 <a name="API_Criteria_Contents"></a>
@@ -16,6 +16,11 @@ This data type is a UNION, so only one of the following members can be specified
  ** OcsfFindingCriteria **   <a name="securityhub-Type-Criteria-OcsfFindingCriteria"></a>
 The filtering conditions that align with OCSF standards.
 Type: [OcsfFindingFilters](API_OcsfFindingFilters.md) object
+Required: No
+
+ ** ResourceCriteria **   <a name="securityhub-Type-Criteria-ResourceCriteria"></a>
+The filtering conditions for resources.
+Type: [ResourcesFilters](API_ResourcesFilters.md) object
 Required: No
 
 ## See Also

@@ -47,6 +47,9 @@ Content-type: application/json
             "SeverityId": number,
             "StatusId": number
          },
+         "ResourceFieldsUpdate": {
+            "Criticality": "string"
+         },
          "Type": "string"
       }
    ],

@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 ```
 
- `actionType` also accepts `RemediateAndGenerateTicket` (remediate and open a ticket in your configured ticketing channel), and `Suppress` / `Unsuppress` to change a finding’s Security Hub workflow status. A `Remediate` or `RemediateAndGenerateTicket` request returns HTTP `202` with a body of `{"status": "IN_PROGRESS"}`; `Suppress` and `Unsuppress` return HTTP `200`.
+ `actionType` also accepts `RemediateAndGenerateTicket`, which remediates the finding and opens a ticket in your configured ticketing channel. It also accepts `Suppress` and `Unsuppress`, which hide or show a finding in the solution’s default findings view. `Suppress` does not change the finding’s workflow status in AWS Security Hub or AWS Security Hub CSPM. It also does not stop fully automated remediation, although the overdue scan for deadline enforcement skips findings suppressed this way. A `Remediate` or `RemediateAndGenerateTicket` request returns HTTP `202` with a body of `{"status": "IN_PROGRESS"}`; `Suppress` and `Unsuppress` return HTTP `200`.
 
 **Important**
 Send at most **50 finding IDs per request**. To remediate a larger backlog, split the finding IDs into batches of 50 or fewer and issue one request per batch. The API is also protected by rate-based rules (see the AWS WAF configuration in [API Gateway Security Policy](security.md#api-gateway-security-policy)), so pace successive batches rather than sending them all at once.

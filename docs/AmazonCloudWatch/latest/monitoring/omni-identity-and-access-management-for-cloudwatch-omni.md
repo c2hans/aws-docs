@@ -86,7 +86,7 @@ Setup uses several IAM roles, and CloudWatch Omni creates most of them for you. 
 
 | Role | Purpose | Created by | Required |
 | --- | --- | --- | --- |
-| CloudWatchOmniOperatorRole | The space operator role, which is the primary setup and data-access role. It carries the CloudWatch Omni actions along with the Amazon Bedrock, AWS KMS, AWS Config, Secrets Manager, CloudWatch Logs, and iam:PassRole permissions that setup and evaluation require. One role per account, shared by every space in it. In the API it is the dataAccessRoleArn parameter. | CloudWatch Omni, or you | Required |
+| CloudWatchOmniSpaceAccessRole, or CloudWatchOmniOperatorRole for an organization domain | The space operator role, which is the primary setup and data-access role. It carries the CloudWatch Omni actions along with the Amazon Bedrock, AWS KMS, AWS Config, Secrets Manager, CloudWatch Logs, and iam:PassRole permissions that setup and evaluation require. In a single account, setup adds a numeric suffix to the role name. For an organization domain, one role per account is shared by every space in it. In the API it is the dataAccessRoleArn parameter. | CloudWatch Omni, or you | Required |
 | CloudWatchOmniDomainAccessRole | Domain access. You pass its ARN when you create a domain for your organization. | You | Required for an organization domain |
 | CloudWatchOmniIntegrationEnablementRole | Enabling telemetry integrations for your account. One role per member account. | CloudWatch Omni | Required for integrations |
 | CloudWatchOmniDatasetIntegrationExecutionRole | Dataset integration. Assumed by logs.amazonaws.com, and restricted to dataset integrations in your own account. | CloudWatch Omni | Required for dataset integration |

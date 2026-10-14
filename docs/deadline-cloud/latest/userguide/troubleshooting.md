@@ -25,7 +25,7 @@ When your users are not seeing your farms, fleets, or queues in the Deadline Clo
 
 Users without access to any farms receive the message "No farms available" in the Deadline Cloud monitor.
 
-To see what one user can reach before you check each resource, open that user in **User management** in the AWS Deadline Cloud console. Then choose the **Resource access** tab. The tab lists every farm, queue, and fleet that the user holds an access level on, in every AWS Region. If the resource you expect is missing, use the following procedures to assign it. For more information, see [View and change resource access for a user or group](view-member-resource-access.md).
+To see what one user can access before you check each resource, open that user in **User management** in the AWS Deadline Cloud console. Then choose the **Resource access** tab. The tab lists every farm, queue, and fleet that the user can access, in every AWS Region. If the resource you expect is missing, use the following procedures to assign it. For more information, see [View and change resource access for a user or group](view-member-resource-access.md).
 
 **To confirm you have the correct user or group assigned to your farm, fleet, or queue**
 

@@ -21,7 +21,7 @@ The table below is an example to illustrate the actions we will take for each st
 |  `111111111111`  | Admin | None | None |
 |  `222222222222`  | Member | None | None |
 
-The admin account is the account that will perform the administration actions of the solution, namely initiating remediations manually or enabling fully automated remediation using the Remediation Configuration DynamoDB table. This account must also be the Security Hub delegated administrator account for all accounts in which you wish to remediate findings, but it does not need to be nor should it be the AWS Organizations administrator account for the AWS Organization to which your accounts belong.
+The admin account performs the solution’s administration actions. These include initiating remediations manually and enabling fully automated remediation, as described in [Enable fully automated remediations](enable-fully-automated-remediations.md). This account must also be the Security Hub delegated administrator account for all accounts in which you wish to remediate findings, but it does not need to be nor should it be the AWS Organizations administrator account for the AWS Organization to which your accounts belong.
 
 ## Enable AWS Config
 <a name="enable-aws-config"></a>

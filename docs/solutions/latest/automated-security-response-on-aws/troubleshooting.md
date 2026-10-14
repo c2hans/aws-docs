@@ -25,6 +25,14 @@ If the principals for all policies on the target bucket are "\*", the solution c
 
 In the event of an incident, you may find that you need to disable the solution without removing any of the infrastructure. These scenarios detail how to disable different components in the solution.
 
+To stop fully automated remediation quickly, use one of the following options:
++  **Web UI.** On the **Controls** page, disable automated remediation for individual controls, or choose **Disable All Automated Remediations**. Then choose **Save**. The change takes effect only after you save.
++  **MCP server.** Use the `update_controls` tool from a connected AI client.
++  **Remediation Configuration table (no Web UI or MCP server).** Use Scenario 1 or Scenario 2 to edit the table directly.
+
+**Note**
+Disabling automated remediation on the **Controls** page does not stop deadline enforcement. Deadline enforcement remediates overdue findings that match an enforcing notification configuration, even if you have not enabled automated remediation for the control. To stop all automatic remediation, also turn off `enforceDeadline` on every finding-type notification configuration where you enabled it. For details, see [Deadline enforcement](configure-notifications.md#deadline-enforcement).
+
  **Scenario 1**: Disable automatic remediation for a single control
 
 1. In the Admin account, navigate to the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/home?).
@@ -59,7 +67,7 @@ In the event of an incident, you may find that you need to disable the solution 
 
 1. Repeat for all controls you wish to disable.
 
- **Scenario 3**: Disable manual remediation for an account
+ **Scenario 3**: Disable the Remediate with ASR custom action
 
 1. Navigate to the [EventBridge console](https://console.aws.amazon.com/events/home?).
 
@@ -68,3 +76,5 @@ In the event of an incident, you may find that you need to disable the solution 
 1. Select the **default** event bus and search for `Remediate_with_ASR_CustomAction`.
 
 1. Select the rule and choose the **Disable** button.
+
+This stops remediations started from the AWS Security Hub CSPM custom action. It does not affect remediations started from the Web UI, the solution API, or the MCP server.

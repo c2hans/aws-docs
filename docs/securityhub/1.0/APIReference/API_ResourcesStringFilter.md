@@ -13,7 +13,7 @@ Enables filtering of AWS resources based on string field values.
  ** FieldName **   <a name="securityhub-Type-ResourcesStringFilter-FieldName"></a>
 The name of the field.
 Type: String
-Valid Values: `ResourceGuid | ResourceId | AccountId | AccountName | Region | ResourceProvider | ResourceOwnerAccountId | ResourceOwnerOrgId | ResourceCloudPartition | ResourceRegion | ResourceCategory | ResourceType | ResourceName | FindingsSummary.FindingType | FindingsSummary.ProductName | ResourceSubCategory | DiscoveryType | ResourceInfo.AIDetails.HostResourceGuid | ResourceInfo.AIDetails.HostResourceType | ResourceInfo.AIDetails.CanonicalId`
+Valid Values: `ResourceGuid | ResourceId | AccountId | AccountName | Region | ResourceProvider | ResourceOwnerAccountId | ResourceOwnerOrgId | ResourceCloudPartition | ResourceRegion | ResourceCategory | ResourceType | ResourceName | FindingsSummary.FindingType | FindingsSummary.ProductName | ResourceSubCategory | DiscoveryType | ResourceInfo.AIDetails.HostResourceGuid | ResourceInfo.AIDetails.HostResourceType | ResourceInfo.AIDetails.CanonicalId | ResourceCriticality`
 Required: No
 
  ** Filter **   <a name="securityhub-Type-ResourcesStringFilter-Filter"></a>

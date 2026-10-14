@@ -38,6 +38,12 @@ The settings for ungraceful execution.
 Type: [Ec2Ungraceful](API_Ec2Ungraceful.md) object
 Required: No
 
+ ** waitELBTargetGroupHealthy **   <a name="regionswitch-Type-Ec2AsgCapacityIncreaseConfiguration-waitELBTargetGroupHealthy"></a>
+If enabled, the step completes only after each attached ELB target group reports a healthy target count that matches the group's new desired capacity calculated in the step.
+Type: String
+Valid Values: `enabled | disabled`
+Required: No
+
 ## See Also
 <a name="API_Ec2AsgCapacityIncreaseConfiguration_SeeAlso"></a>
 

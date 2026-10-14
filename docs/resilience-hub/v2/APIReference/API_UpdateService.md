@@ -24,6 +24,9 @@ Content-type: application/json
    ],
    "dependencyDiscovery": "{{string}}",
    "description": "{{string}}",
+   "devOpsAgentConfiguration": {
+      "agentSpaceArn": "{{string}}"
+   },
    "permissionModel": {
       "crossAccountRoles": [
          {
@@ -70,6 +73,11 @@ Required: No
 Resource description for services and policies.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 615.
+Required: No
+
+ ** [devOpsAgentConfiguration](#API_UpdateService_RequestSyntax) **   <a name="ngresiliencehub-UpdateService-request-devOpsAgentConfiguration"></a>
+The optional DevOps Agent integration configuration to set, replace, or disconnect for the service. If you omit this field, the existing DevOps Agent linkage stays unchanged.
+Type: [DevOpsAgentConfiguration](API_DevOpsAgentConfiguration.md) object
 Required: No
 
  ** [permissionModel](#API_UpdateService_RequestSyntax) **   <a name="ngresiliencehub-UpdateService-request-permissionModel"></a>
@@ -136,6 +144,15 @@ Content-type: application/json
          "updatedAt": number
       },
       "description": "string",
+      "devOpsAgentConfiguration": {
+         "agentSpaceArn": "string",
+         "agentSpaceId": "string",
+         "connectedAt": number,
+         "operatorAppUrl": "string",
+         "region": "string",
+         "status": "string",
+         "statusReason": "string"
+      },
       "effectivePolicyValues": {
          "availabilitySlo": {
             "policyName": "string",

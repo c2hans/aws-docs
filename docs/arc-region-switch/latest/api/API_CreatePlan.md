@@ -34,6 +34,7 @@ You must specify a name for the plan, the primary Region, and at least one addit
          { ... }
       ]
    },
+   "serviceQuotaChecksEnabled": {{boolean}},
    "tags": {
       "{{string}}" : "{{string}}"
    },
@@ -129,6 +130,11 @@ Configuration for automatic report generation for plan executions. When configur
 Type: [ReportConfiguration](API_ReportConfiguration.md) object
 Required: No
 
+ ** [serviceQuotaChecksEnabled](#API_CreatePlan_RequestSyntax) **   <a name="regionswitch-CreatePlan-request-serviceQuotaChecksEnabled"></a>
+Specifies whether to enable service quota checks for the Region switch plan.
+Type: Boolean
+Required: No
+
  ** [tags](#API_CreatePlan_RequestSyntax) **   <a name="regionswitch-CreatePlan-request-tags"></a>
 The tags to apply to the Region switch plan.
 Type: String to string map
@@ -175,6 +181,7 @@ Required: Yes
             { ... }
          ]
       },
+      "serviceQuotaChecksEnabled": boolean,
       "triggers": [
          {
             "action": "string",

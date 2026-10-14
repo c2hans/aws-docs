@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [Search Nearby](https://docs.aws.amazon.com/location/latest/developerguide/search-nearby.html) in the *Amazon Location Service Developer Guide*.
 
+Try the SearchNearby operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/search-nearby).
+
 ## Request Syntax
 <a name="API_geoplaces_SearchNearby_RequestSyntax"></a>
 

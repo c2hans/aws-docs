@@ -30,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[MediaStreamOutputConfigurations](#cfn-mediaconnect-flowoutput-mediastreamoutputconfigurations)" : {{[ MediaStreamOutputConfiguration, ... ]}},
       "[MinLatency](#cfn-mediaconnect-flowoutput-minlatency)" : {{Integer}},
       "[Name](#cfn-mediaconnect-flowoutput-name)" : {{String}},
+      "[NdiAudioReferenceLevel](#cfn-mediaconnect-flowoutput-ndiaudioreferencelevel)" : {{Integer}},
       "[NdiOutputTimecodeSource](#cfn-mediaconnect-flowoutput-ndioutputtimecodesource)" : {{String}},
       "[NdiProgramName](#cfn-mediaconnect-flowoutput-ndiprogramname)" : {{String}},
       "[NdiSpeedHqQuality](#cfn-mediaconnect-flowoutput-ndispeedhqquality)" : {{Integer}},
@@ -65,6 +66,7 @@ Properties:
     - MediaStreamOutputConfiguration}}
   [MinLatency](#cfn-mediaconnect-flowoutput-minlatency): {{Integer}}
   [Name](#cfn-mediaconnect-flowoutput-name): {{String}}
+  [NdiAudioReferenceLevel](#cfn-mediaconnect-flowoutput-ndiaudioreferencelevel): {{Integer}}
   [NdiOutputTimecodeSource](#cfn-mediaconnect-flowoutput-ndioutputtimecodesource): {{String}}
   [NdiProgramName](#cfn-mediaconnect-flowoutput-ndiprogramname): {{String}}
   [NdiSpeedHqQuality](#cfn-mediaconnect-flowoutput-ndispeedhqquality): {{Integer}}
@@ -140,6 +142,14 @@ The maximum latency in milliseconds. This parameter applies only to RIST-based a
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NdiAudioReferenceLevel`  <a name="cfn-mediaconnect-flowoutput-ndiaudioreferencelevel"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Minimum*: `-40`
+*Maximum*: `0`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NdiOutputTimecodeSource`  <a name="cfn-mediaconnect-flowoutput-ndioutputtimecodesource"></a>
  The settings for the source of the flow.

@@ -150,7 +150,7 @@ Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,81}`
  ** [PipelineExecutionStatus](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-PipelineExecutionStatus"></a>
 The status of the pipeline execution.
 Type: String
-Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded`
+Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded | CompletedWithFailures`
 
  ** [PipelineExperimentConfig](#API_DescribePipelineExecution_ResponseSyntax) **   <a name="sagemaker-DescribePipelineExecution-response-PipelineExperimentConfig"></a>
 Specifies the names of the experiment and trial created by a pipeline.

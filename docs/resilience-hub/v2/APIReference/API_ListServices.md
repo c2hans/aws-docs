@@ -95,6 +95,8 @@ Content-type: application/json
             "status": "string",
             "updatedAt": number
          },
+         "devOpsAgentSpaceArn": "string",
+         "devOpsAgentStatus": "string",
          "name": "string",
          "openFindingsCount": number,
          "organizationId": "string",

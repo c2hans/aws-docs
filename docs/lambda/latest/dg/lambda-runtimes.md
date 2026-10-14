@@ -36,7 +36,7 @@ We recommend customers upgrade to an Amazon Linux 2023-based runtime as soon as 
 | --- | --- | --- | --- | --- | --- |
 | Node.js 26 | `nodejs26.x` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
 | Node.js 24 | `nodejs24.x` | Amazon Linux 2023 |  Apr 30, 2028  |  Jun 1, 2028  |  Jul 1, 2028  |
-| Node.js 22 | `nodejs22.x` | Amazon Linux 2023 |  Apr 30, 2027  |  Jun 1, 2027  |  Jul 1, 2027  |
+| Node.js 22 | `nodejs22.x` | Amazon Linux 2023 |  Apr 30, 2027  |  Jul 29, 2027  |  Aug 31, 2027  |
 | Python 3.15 | `python3.15` | Amazon Linux 2023 |  Not scheduled  |  Not scheduled  |  Not scheduled  |
 | Python 3.14 | `python3.14` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.13 | `python3.13` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |

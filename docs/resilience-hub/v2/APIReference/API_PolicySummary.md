@@ -54,6 +54,18 @@ The multi-Region disaster recovery targets defined in the policy.
 Type: [MultiRegionTargets](API_MultiRegionTargets.md) object
 Required: No
 
+ ** organizationId **   <a name="ngresiliencehub-Type-PolicySummary-organizationId"></a>
+The identifier of the organization this policy is shared with.
+Type: String
+Length Constraints: Minimum length of 12. Maximum length of 34.
+Pattern: `o-[a-z0-9]{10,32}`
+Required: No
+
+ ** sharingEnabled **   <a name="ngresiliencehub-Type-PolicySummary-sharingEnabled"></a>
+Specifies whether cross-account sharing is enabled.
+Type: Boolean
+Required: No
+
  ** updatedAt **   <a name="ngresiliencehub-Type-PolicySummary-updatedAt"></a>
 The timestamp when the policy was last updated.
 Type: Timestamp

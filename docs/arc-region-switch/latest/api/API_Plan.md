@@ -80,6 +80,11 @@ The report configuration for a plan.
 Type: [ReportConfiguration](API_ReportConfiguration.md) object
 Required: No
 
+ ** serviceQuotaChecksEnabled **   <a name="regionswitch-Type-Plan-serviceQuotaChecksEnabled"></a>
+Indicates whether service quota checks are enabled for the Region switch plan. When enabled, Region switch compares the applied service quota values across the plan's AWS Regions and creates a warning when a quota in one Region is lower than the value required for the matching resource in another Region. Service quota checks are advisory and don't prevent you from creating, evaluating, or executing a plan.
+Type: Boolean
+Required: No
+
  ** triggers **   <a name="regionswitch-Type-Plan-triggers"></a>
 The triggers for a plan.
 Type: Array of [Trigger](API_Trigger.md) objects

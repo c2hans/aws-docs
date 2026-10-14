@@ -93,6 +93,7 @@ Required: No
             }
          },
          "MonthlyLeasingPrice": "string",
+         "PricingTier": "string",
          "Registered": boolean,
          "RegistrationId": "string",
          "SenderId": "string",

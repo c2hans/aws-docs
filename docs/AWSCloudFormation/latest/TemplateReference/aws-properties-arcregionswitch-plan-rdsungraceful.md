@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ARCRegionSwitch::Plan RdsUngraceful
 <a name="aws-properties-arcregionswitch-plan-rdsungraceful"></a>
 
-<a name="aws-properties-arcregionswitch-plan-rdsungraceful-description"></a>The `RdsUngraceful` property type specifies Property description not available. for an [AWS::ARCRegionSwitch::Plan](aws-resource-arcregionswitch-plan.md).
+The ungraceful execution settings for an Amazon RDS switchover read replica execution block.
 
 ## Syntax
 <a name="aws-properties-arcregionswitch-plan-rdsungraceful-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-arcregionswitch-plan-rdsungraceful-properties"></a>
 
 `Ungraceful`  <a name="cfn-arcregionswitch-plan-rdsungraceful-ungraceful"></a>
-Property description not available.
+The ungraceful behavior to perform if switching to ungraceful execution.
 *Required*: No
 *Type*: String
 *Allowed values*: `promoteReadReplica`

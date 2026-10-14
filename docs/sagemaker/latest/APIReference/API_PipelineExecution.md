@@ -73,7 +73,7 @@ Required: No
  ** PipelineExecutionStatus **   <a name="sagemaker-Type-PipelineExecution-PipelineExecutionStatus"></a>
 The status of the pipeline status.
 Type: String
-Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded`
+Valid Values: `Executing | Stopping | Stopped | Failed | Succeeded | CompletedWithFailures`
 Required: No
 
  ** PipelineExperimentConfig **   <a name="sagemaker-Type-PipelineExecution-PipelineExperimentConfig"></a>

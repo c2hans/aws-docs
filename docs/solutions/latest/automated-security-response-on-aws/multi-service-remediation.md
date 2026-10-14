@@ -12,7 +12,7 @@ This release supports one finding type per service:
 | Service | Control ID | Supported resource types | Remediation | Manual follow-up required |
 | --- | --- | --- | --- | --- |
 | Amazon Inspector |  `Inspector.InstanceVulnerability`  | EC2 instances managed by AWS Systems Manager | Runs the `AWS-RunPatchBaseline` Systems Manager command to install the specific vulnerable packages identified in the finding. The Systems Manager Agent must be version 2.0.834.0 or later. | No |
-| Amazon GuardDuty |  `GuardDuty.IAMUser`  | IAM access keys | Contains the potentially compromised IAM user by disabling its access keys, removing console access, and attaching a deny-all policy, using the AWS-managed `AWSSupport-ContainIAMPrincipal` runbook. The solution backs up the original configuration so you can roll back the containment from the Web UI. | Yes |
+| Amazon GuardDuty |  `GuardDuty.IAMUser`  | IAM access keys | Contains the potentially compromised IAM user by disabling its access keys, removing console access, and attaching a deny-all policy, using the AWS-managed `AWSSupport-ContainIAMPrincipal` runbook. The solution backs up the original configuration, so you can roll back the containment from the Web UI. | Yes |
 | Amazon Macie |  `Macie.SensitiveDataS3Object`  | S3 buckets containing objects with sensitive data | Enables S3 Block Public Access on the bucket to prevent public exposure of the sensitive data. | Yes |
 
 **Manual follow-up required**

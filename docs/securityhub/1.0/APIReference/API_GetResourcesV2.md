@@ -149,6 +149,12 @@ Content-type: application/json
       {
          "AccountId": "string",
          "AccountName": "string",
+         "CriticalitySources": [
+            {
+               "Reason": "string",
+               "Source": "string"
+            }
+         ],
          "DiscoveryType": "string",
          "FindingsSummary": [
             {
@@ -172,6 +178,7 @@ Content-type: application/json
          "ResourceCloudPartition": "string",
          "ResourceConfig": JSON value,
          "ResourceCreationTimeDt": "string",
+         "ResourceCriticality": "string",
          "ResourceDetailCaptureTimeDt": "string",
          "ResourceGuid": "string",
          "ResourceId": "string",

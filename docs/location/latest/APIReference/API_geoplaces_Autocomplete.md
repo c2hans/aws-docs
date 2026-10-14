@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [Autocomplete](https://docs.aws.amazon.com/location/latest/developerguide/autocomplete.html) in the *Amazon Location Service Developer Guide*.
 
-Try the Autocomplete API in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/autocomplete).
+Try the Autocomplete operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/autocomplete).
 
 ## Request Syntax
 <a name="API_geoplaces_Autocomplete_RequestSyntax"></a>

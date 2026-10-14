@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/embedde
 # Create your first embedding application
 <a name="embedded-analytics-first-app"></a>
 
-The quickest and most flexible way to embed a dashboard in your web application is to get an embed URL through the Quick Sight API and load that onto your application using the Quick Sight [Embedding SDK](https://github.com/awslabs/amazon-quicksight-embedding-sdk), in an iFrame. To do so, you will need:
+The quickest and most flexible way to embed a dashboard in your web application is to get an embed URL through the Quick Sight API. Load that URL onto your application using the Quick Sight [Embedding SDK](https://github.com/awslabs/amazon-quicksight-embedding-sdk) in an iFrame. To do so, you need:
 + A backend service to generate the embed URL
 + An endpoint to pass the embed url to your front end application
 + (Optional) A Javascript-based front-end application that leverages the embedding SDK to load the dashboard within an iFrame

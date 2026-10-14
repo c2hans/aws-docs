@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 
 The solution’s Web UI allows users to remediate AWS Security Hub findings in one-click, view and download past remediations, and delegate access to the solution.
 
-The Web UI is not required to use the solution; you can alternatively configure fully-automated remediations to avoid the need for manual execution, or leverage the AWS Security Hub CSPM console to kick-off remediations using the **Remediate with ASR** custom action.
+The Web UI is not required to use the solution. You can configure fully automated remediation instead of running remediations manually, or use the **Remediate with ASR** custom action in the AWS Security Hub CSPM console to start remediations.
 
 **Note**
 You must set the `ShouldDeployWebUI` parameter to "yes" when deploying the Admin stack in order to use the solution’s Web UI.
@@ -30,7 +30,7 @@ On the **Findings** page, Admin or Delegated Admin users can view all AWS Securi
 
 Account Operator users will only be able to view findings which originate in AWS Accounts that they have access to as defined in their invitation. Additionally, they will only be able to run remediations for resources in the accounts they are associated with.
 
-To run remediations, select any number of items in the table and choose **Actions > Remediate**. You can also **suppress** findings by choosing **Actions > Suppress**, which hides the selected findings from the default view. You can view suppressed findings at any time by choosing the **Show suppressed findings** toggle.
+To run remediations, select any number of items in the table and choose **Actions > Remediate**. You can also **suppress** findings by choosing **Actions > Suppress**, which hides the selected findings from the default view. You can view suppressed findings at any time by choosing the **Show suppressed findings** toggle. Suppressing a finding here does not change its workflow status in AWS Security Hub or AWS Security Hub CSPM, and it does not stop fully automated remediation. The overdue scan for deadline enforcement does skip findings suppressed here. To exclude resources from fully automated remediation, use a resource filter.
 
 Once you have begun remediation for a finding, you can choose the **Remediation Status** column while the remediation is either `In Progress` or `Failed` to be taken directly to that remediation on the **Execution History** page.
 

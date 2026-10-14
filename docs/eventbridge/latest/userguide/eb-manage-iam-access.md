@@ -25,8 +25,13 @@ The following table shows the resources in EventBridge.
 | Replay | `arn:aws:events:{{region}}:{{account}}:replay/{{replay-name}}` |
 | Rule | `arn:aws:events:{{region}}:{{account}}:rule{{/[event-bus-name]}}/{{rule-name}}` |
 | Event bus | `arn:aws:events:{{region}}:{{account}}:event-bus/{{event-bus-name}}` |
+| API destination | `arn:aws:events:{{region}}:{{account}}:api-destination/{{api-destination-name}}` |
+| Connection | `arn:aws:events:{{region}}:{{account}}:connection/{{connection-name}}` |
 | All EventBridge resources | `arn:aws:events:*` |
 | All EventBridge resources owned by the specified account in the specified Region | `arn:aws:events:{{region}}:{{account}}:*` |
+
+**Note**
+For API responses that include an API destination or connection ARN, EventBridge returns an ARN with a service-generated identifier after the resource name. When you specify one of these resources in the `Resource` element of an IAM policy, omit the service-generated identifier and use the ARN format shown in the preceding table. For API operations that identify the resource by name, an ARN that includes the identifier does not match the resource ARN that EventBridge uses for authorization.
 
 The following example shows how to indicate a specific rule ({{myRule}}) in your statement using its ARN.
 

@@ -88,6 +88,11 @@ An Amazon RDS promote read replica execution block.
 Type: [RdsPromoteReadReplicaConfiguration](API_RdsPromoteReadReplicaConfiguration.md) object
 Required: No
 
+ ** rdsSwitchoverReadReplicaConfig **   <a name="regionswitch-Type-ExecutionBlockConfiguration-rdsSwitchoverReadReplicaConfig"></a>
+An Amazon RDS switchover read replica execution block.
+Type: [RdsSwitchoverReadReplicaConfiguration](API_RdsSwitchoverReadReplicaConfiguration.md) object
+Required: No
+
  ** regionSwitchPlanConfig **   <a name="regionswitch-Type-ExecutionBlockConfiguration-regionSwitchPlanConfig"></a>
 A Region switch plan execution block.
 Type: [RegionSwitchPlanConfiguration](API_RegionSwitchPlanConfiguration.md) object
@@ -96,6 +101,11 @@ Required: No
  ** route53HealthCheckConfig **   <a name="regionswitch-Type-ExecutionBlockConfiguration-route53HealthCheckConfig"></a>
 The Amazon Route 53 health check configuration.
 Type: [Route53HealthCheckConfiguration](API_Route53HealthCheckConfiguration.md) object
+Required: No
+
+ ** ssmSendCommandConfig **   <a name="regionswitch-Type-ExecutionBlockConfiguration-ssmSendCommandConfig"></a>
+Specifies an AWS Systems Manager `SendCommand` execution block.
+Type: [SsmSendCommandConfiguration](API_SsmSendCommandConfiguration.md) object
 Required: No
 
 ## See Also

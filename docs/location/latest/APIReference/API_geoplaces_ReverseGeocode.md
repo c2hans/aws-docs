@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 
 For more information, see [Reverse Geocode](https://docs.aws.amazon.com/location/latest/developerguide/reverse-geocode.html) in the *Amazon Location Service Developer Guide*.
 
+Try the ReverseGeocode operation in the [API Playground](https://console.aws.amazon.com/location/api-playground/home#/reverse-geocode).
+
 ## Request Syntax
 <a name="API_geoplaces_ReverseGeocode_RequestSyntax"></a>
 

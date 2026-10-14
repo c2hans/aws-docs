@@ -32,7 +32,8 @@ Content-type: application/json
       "rpoInMinutes": {{number}},
       "rtoInMinutes": {{number}}
    },
-   "policyArn": "{{string}}"
+   "policyArn": "{{string}}",
+   "sharingEnabled": {{boolean}}
 }
 ```
 
@@ -79,6 +80,11 @@ Length Constraints: Minimum length of 31.
 Pattern: `arn:(aws|aws-cn|aws-iso|aws-iso-[a-z]{1}|aws-us-gov):[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:([a-z]{2}-((iso[a-z]{0,1}-)|(gov-)){0,1}[a-z]+-[0-9]):[0-9]{12}:[A-Za-z0-9/][A-Za-z0-9:_/+.-]{0,1023}`
 Required: Yes
 
+ ** [sharingEnabled](#API_UpdatePolicy_RequestSyntax) **   <a name="ngresiliencehub-UpdatePolicy-request-sharingEnabled"></a>
+Specifies whether cross-account sharing is enabled for the policy. Disabling sharing stops member services from using the policy.
+Type: Boolean
+Required: No
+
 ## Response Syntax
 <a name="API_UpdatePolicy_ResponseSyntax"></a>
 
@@ -109,7 +115,9 @@ Content-type: application/json
          "rtoInMinutes": number
       },
       "name": "string",
+      "organizationId": "string",
       "policyArn": "string",
+      "sharingEnabled": boolean,
       "tags": {
          "string" : "string"
       },

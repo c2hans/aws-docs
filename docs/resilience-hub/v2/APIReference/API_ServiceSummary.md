@@ -58,6 +58,23 @@ The dependency discovery configuration.
 Type: [DependencyDiscoveryConfig](API_DependencyDiscoveryConfig.md) object
 Required: No
 
+ ** devOpsAgentSpaceArn **   <a name="ngresiliencehub-Type-ServiceSummary-devOpsAgentSpaceArn"></a>
+The ARN of the DevOps Agent Agent Space linked to the service, when the service is linked to one.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws[a-zA-Z-]*:aidevops:[a-z0-9-]+:[0-9]{12}:agentspace/[a-zA-Z0-9-]{1,64}`
+Required: No
+
+ ** devOpsAgentStatus **   <a name="ngresiliencehub-Type-ServiceSummary-devOpsAgentStatus"></a>
+The DevOps Agent connection status for the service. Valid values:
++ CONNECTING - The service is being connected to the Agent Space.
++ CONNECTED - The service is connected to the Agent Space.
++ DISCONNECTED - The service is not connected to an Agent Space.
++ FAILED - The connection attempt failed.
+Type: String
+Valid Values: `CONNECTING | CONNECTED | DISCONNECTED | FAILED`
+Required: No
+
  ** openFindingsCount **   <a name="ngresiliencehub-Type-ServiceSummary-openFindingsCount"></a>
 The number of open findings.
 Type: Integer
