@@ -256,6 +256,12 @@ Content-type: application/json
             }
          },
          "name": "string",
+         "parentInstance": {
+            "autoScalingGroup": {
+               "capacityWaitTimeoutSeconds": number,
+               "name": "string"
+            }
+         },
          "placement": {
             "availabilityZone": "string",
             "hostId": "string",
@@ -271,6 +277,7 @@ Content-type: application/json
          "tags": {
             "string" : "string"
          },
+         "terminateInstanceOnCompletion": boolean,
          "terminateInstanceOnFailure": boolean
       },
       "lifecycleExecutionId": "string",

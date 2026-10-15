@@ -10,11 +10,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 Available for use with Amazon CloudFront distributions and Application Load Balancers. Match against the request's JA4 fingerprint. The JA4 fingerprint is a 36-character hash derived from the TLS Client Hello of an incoming request. This fingerprint serves as a unique identifier for the client's TLS configuration. AWS WAF calculates and logs this fingerprint for each request that has enough TLS Client Hello information for the calculation. Almost all web requests include this information.
 
 **Note**
-You can use this choice only with a string match `ByteMatchStatement` with the `PositionalConstraint` set to `EXACTLY`.
+You can use this choice with a `ByteMatchStatement`, `RegexMatchStatement`, `RegexPatternSetReferenceStatement`, or `SizeConstraintStatement`. You can't use it with `SqliMatchStatement` or `XssMatchStatement`.
 
 You can obtain the JA4 fingerprint for client requests from the web ACL logs. If AWS WAF is able to calculate the fingerprint, it includes it in the logs. For information about the logging fields, see [Log fields](https://docs.aws.amazon.com/waf/latest/developerguide/logging-fields.html) in the *AWS WAF Developer Guide*.
 
-Provide the JA4 fingerprint string from the logs in your string match statement specification, to match with any future requests that have the same TLS configuration.
+Provide the JA4 fingerprint string from the logs in your string match statement specification, to match with any future requests that have the same TLS configuration. To match a group of TLS configurations with a single pattern, use a regex statement.
 
 ## Syntax
 <a name="aws-properties-wafv2-webacl-ja4fingerprint-syntax"></a>

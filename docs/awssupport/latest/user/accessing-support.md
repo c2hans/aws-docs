@@ -78,20 +78,7 @@ The easiest way to grant permissions is to attach the AWS managed policy [AWSSup
 
 **Example : Allow access to all Support actions**
 The AWS managed policy [AWSSupportAccess](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn:aws:iam::aws:policy/AWSSupportAccess) grants an IAM user access to Support. An IAM user with this policy can access all AWS Support operations and resources.
-****
-
-```
-{
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": ["support:*"],
-            "Resource": "*"
-        }
-    ]
-}
-```
+To view the permissions for this policy, see [AWSSupportAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportAccess.html) in the *AWS Managed Policy Reference*.
 For more information about how to attach the `AWSSupportAccess` policy to your entities, see [Adding IAM identity permissions (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html#add-policies-console) in the *IAM User Guide*.
 
 **Example : Allow access to all actions except the ResolveCase action**

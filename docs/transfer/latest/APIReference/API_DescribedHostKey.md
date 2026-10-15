@@ -41,6 +41,18 @@ Length Constraints: Fixed length of 25.
 Pattern: `hostkey-[0-9a-f]{17}`
 Required: No
 
+ ** SecretId **   <a name="TransferFamily-Type-DescribedHostKey-SecretId"></a>
+The ARN of the AWS Secrets Manager secret that stores the host key material, when `StorageType` is `SECRETS_MANAGER`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: No
+
+ ** StorageType **   <a name="TransferFamily-Type-DescribedHostKey-StorageType"></a>
+Specifies whether the host key is stored by AWS Transfer Family (`SERVICE_MANAGED`) or in AWS Secrets Manager (`SECRETS_MANAGER`).
+Type: String
+Valid Values: `SERVICE_MANAGED | SECRETS_MANAGER`
+Required: No
+
  ** Tags **   <a name="TransferFamily-Type-DescribedHostKey-Tags"></a>
 Key-value pairs that can be used to group and search for host keys.
 Type: Array of [Tag](API_Tag.md) objects

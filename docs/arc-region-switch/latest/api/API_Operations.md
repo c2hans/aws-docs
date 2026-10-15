@@ -20,6 +20,7 @@ The following actions are supported:
 +  [ListPlansInRegion](API_ListPlansInRegion.md)
 +  [ListRoute53HealthChecks](API_ListRoute53HealthChecks.md)
 +  [ListRoute53HealthChecksInRegion](API_ListRoute53HealthChecksInRegion.md)
++  [ListServiceQuotaWarnings](API_ListServiceQuotaWarnings.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)
 +  [StartPlanExecution](API_StartPlanExecution.md)
 +  [TagResource](API_TagResource.md)

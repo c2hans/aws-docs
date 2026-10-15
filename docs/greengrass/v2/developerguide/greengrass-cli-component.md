@@ -116,6 +116,24 @@ This component has the following requirements:
 When you deploy a component, AWS IoT Greengrass also deploys compatible versions of its dependencies. This means that you must meet the requirements for the component and all of its dependencies to successfully deploy the component. This section lists the dependencies for the [released versions](#greengrass-cli-component-changelog) of this component and the semantic version constraints that define the component versions for each dependency. You can also view the dependencies for each version of the component in the [AWS IoT Greengrass console](https://console.aws.amazon.com/greengrass). On the component details page, look for the **Dependencies** list.
 
 ------
+#### [ 2.18.0 - 2.18.4 ]
+
+The following table lists the dependencies for versions 2.18.0 through 2.18.4 of this component.
+
+| Dependency | Compatible versions | Dependency type |
+| --- | --- | --- |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | >=2.12.0 <2.19.0 | Soft |
+
+------
+#### [ 2.17.0 ]
+
+The following table lists the dependencies for version 2.17.0 of this component.
+
+| Dependency | Compatible versions | Dependency type |
+| --- | --- | --- |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | >=2.12.0 <2.18.0 | Soft |
+
+------
 #### [ 2.16.0 ]
 
 The following table lists the dependencies for version 2.16.0 of this component.
@@ -375,6 +393,7 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
+| 2.18.4 | Updates the component version for the Greengrass nucleus version 2.18.4 release. |
 | 2.18.3 | Updates the component version for the Greengrass nucleus version 2.18.3 release. |
 | 2.18.2 | Updates the component version for the Greengrass nucleus version 2.18.2 release. |
 | 2.18.1 | Updates the component version for the Greengrass nucleus version 2.18.1 release. |

@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ChildManifestName](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-childmanifestname)" : {{String}},
-  "[FilterConfiguration](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-filterconfiguration)" : {{FilterConfiguration}},
+  "[FilterConfiguration](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-filterconfiguration)" : {{LowLatencyHlsFilterConfiguration}},
   "[ManifestName](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-manifestname)" : {{String}},
   "[ManifestWindowSeconds](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-manifestwindowseconds)" : {{Integer}},
   "[ProgramDateTimeIntervalSeconds](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-programdatetimeintervalseconds)" : {{Integer}},
@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [ChildManifestName](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-childmanifestname): {{String}}
   [FilterConfiguration](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-filterconfiguration): {{
-    FilterConfiguration}}
+    LowLatencyHlsFilterConfiguration}}
   [ManifestName](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-manifestname): {{String}}
   [ManifestWindowSeconds](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-manifestwindowseconds): {{Integer}}
   [ProgramDateTimeIntervalSeconds](#cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-programdatetimeintervalseconds): {{Integer}}
@@ -66,7 +66,7 @@ The name of the child manifest associated with the low-latency HLS (LL-HLS) mani
 `FilterConfiguration`  <a name="cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-filterconfiguration"></a>
 Filter configuration includes settings for manifest filtering, start and end times, and time delay that apply to all of your egress requests for this manifest.
 *Required*: No
-*Type*: [FilterConfiguration](aws-properties-mediapackagev2-originendpoint-filterconfiguration.md)
+*Type*: [LowLatencyHlsFilterConfiguration](aws-properties-mediapackagev2-originendpoint-lowlatencyhlsfilterconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ManifestName`  <a name="cfn-mediapackagev2-originendpoint-lowlatencyhlsmanifestconfiguration-manifestname"></a>

@@ -159,8 +159,9 @@ After you add the SDK for Swift to your project and import the service you want 
 Each AWS service is represented by a specific client class in the AWS SDK for Swift. For example, while the Amazon DynamoDB client class is called `[DynamoDBClient](https://sdk.amazonaws.com/swift/api/awsdynamodb/latest/documentation/awsdynamodb/dynamodbclient)`, the class for Amazon Simple Storage Service is `S3Client`. To use Amazon S3 in this example, first create an `[S3Client](https://sdk.amazonaws.com/swift/api/awss3/latest/documentation/awss3/s3client)` object on which to call the SDK's Amazon S3 functions.
 
 ```
-        let configuration = try await S3Client.S3ClientConfiguration()
-        //   configuration.region = "us-east-2" // Uncomment this to set the region programmatically.
+        // To set the Region programmatically, pass it to the initializer:
+        //   let configuration = try await S3Client.S3ClientConfig(region: "us-east-2")
+        let configuration = try await S3Client.S3ClientConfig()
         let client = S3Client(config: configuration)
 ```
 
@@ -191,8 +192,9 @@ This example's main program calls `getBucketNames()` to get an array containing 
 func getBucketNames() async throws -> [String] {
     do {
         // Get an S3Client with which to access Amazon S3.
-        let configuration = try await S3Client.S3ClientConfiguration()
-        //   configuration.region = "us-east-2" // Uncomment this to set the region programmatically.
+        // To set the Region programmatically, pass it to the initializer:
+        //   let configuration = try await S3Client.S3ClientConfig(region: "us-east-2")
+        let configuration = try await S3Client.S3ClientConfig()
         let client = S3Client(config: configuration)
 
         // Use "Paginated" to get all the buckets.

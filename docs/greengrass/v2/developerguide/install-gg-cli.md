@@ -60,7 +60,7 @@ Complete the following steps to deploy the Greengrass CLI component to your core
      "targetArn":"{{targetArn}}",
      "components": {
        "aws.greengrass.Cli": {
-         "componentVersion": "2.18.0",
+         "componentVersion": "2.18.4",
          "configurationUpdate": {
            "merge": "{\"AuthorizedPosixGroups\":\"{{<group1>,<group2>,...,<groupN>}}\",\"AuthorizedWindowsGroups\":\"{{<group1>,<group2>,...,<groupN>}}\"}"
          }

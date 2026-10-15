@@ -22,65 +22,7 @@ If you use one of these steps, Neptune falls back to TinkerPop processing for th
 
 See also [Gremlin standards compliance](access-graph-gremlin-differences.md) for Neptune-wide differences from Apache TinkerPop that also apply under DFE.
 
-### Partially supported steps
-<a name="gremlin-step-coverage-in-DFE-15-partial"></a>
-
-DFE supports the following steps for their common forms. If you use one of these steps in a more complex or less common form, that part of the query falls back to TinkerPop processing. To confirm whether a specific query runs natively, check the `explain` output.
-
-#### Branching steps
-<a name="gremlin-dfe-partial-branching"></a>
-
-DFE supports branching steps like `choose()`, `union()`, and `coalesce()` on the condition that they not contain reducing steps in the child traversals that they take as arguments — a reducing step such as `count()`, `fold()`, or `dedup()` in any branch causes the whole step to fall back to TinkerPop.
-
-`choose()` additionally supports its full range of forms: its if-then-else form with two branches, its if-then form with a single branch, and the `option()`-based form that maps specific case values to branches, with `Pick.none` as the default case. Its condition can be a predicate (such as `hasLabel()`) or a value lookup (such as `values()`). Beyond the reducing-step rule, `choose()` also falls back when its condition requires path history (for example `path()` or `select()`).
-
-Examples:
-
-```
-choose(hasLabel('person'), out(), in())
-choose(hasLabel('person'), out())
-union(out(), in())
-union(out('knows'), out('created'))
-coalesce(out('knows'), out('created'))
-```
-
-#### `group()` and `groupCount()`
-<a name="gremlin-dfe-partial-group"></a>
-
-DFE supports `group()` and `groupCount()` best when you key on a single expression like a label or a property value, and both can also translate more complex key traversals. For `group()`, the second (reducing) `by()` must terminate with `count()`, `fold()`, or `group()`; other reducers fall back to TinkerPop, as do keys constructed from branch-merge steps like `union()` or `coalesce()`. `groupCount()` has no such key restriction.
-
-Examples:
-
-```
-group().by(label()).by(count())
-group().by('age').by(fold())
-groupCount()
-```
-
-#### `path()`
-<a name="gremlin-dfe-partial-path"></a>
-
-DFE supports `path()` for collecting the traversal path, with or without `by()` modulators to project each path element — both single and multiple `by()` modulators are supported. `path()` falls back to TinkerPop when `by()` modulation is used with `path()` as an argument to another step (for example inside `local()`, `union()`, or `project()`), or when the path being projected spans a branch created by an earlier `union()`.
-
-Examples:
-
-```
-V().out().path()
-V().out().path().by('name')
-```
-
-#### `repeat()`
-<a name="gremlin-dfe-partial-repeat"></a>
-
-DFE supports `repeat()` for standard loops. You can bound the loop with `times()` or end it with an `until()` condition, and optionally `emit()` results along the way. The repeated traversal can contain common navigation, filtering, and aggregation steps such as `limit()`, `range()`, `skip()`, `dedup()`, `where()`, `order()`, and `aggregate()`; nested loops are also supported. A few specific shapes fall back to TinkerPop: `dedup()` inside an `emit()`/`until()` condition, a bare `path()` collected in the loop body (unless wrapped in a filter such as `where()`), a nested `repeat()` combined with `path()`, or `sack()` used inside the loop without being initialized first.
-
-Examples:
-
-```
-repeat(out()).times(2)
-repeat(out()).until(loops().is(2))
-repeat(out().limit(2))
-```
+A Gremlin query can contain a set of entirely supported steps and still include step patterns that do not translate fully to DFE. If you use a step in a more complex or less common form, that part of the query falls back to TinkerPop for processing. To check whether a specific query runs natively in DFE, use the [explain](gremlin-explain.md) or [profile](gremlin-profile-api.md) output.
 
 ## Neptune engine releases before 1.5.0.0
 <a name="gremlin-step-coverage-in-DFE-pre15"></a>

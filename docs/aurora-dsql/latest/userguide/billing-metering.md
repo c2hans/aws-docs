@@ -18,7 +18,7 @@ With Amazon Aurora DSQL, you only pay for what you use with no upfront costs. Th
 ## How metering works
 <a name="billing-how-metering-works"></a>
 
-Unlike traditional databases that charge for provisioned capacity, Aurora DSQL charges only for actual work performed. Aurora DSQL meters two primary components: database activity, measured in Distributed Processing Units (DPUs), and storage, measured in GiB-month.
+Aurora DSQL charges only for work performed, including work done by transactions that are aborted or fail. Aurora DSQL meters two primary components: database activity, measured in Distributed Processing Units (DPUs), and storage, measured in GiB-month.
 
 DPUs measure how much work the system does to run your SQL workload and are comprised of three components for single-Region clusters: Compute DPUs, Read DPUs, and Write DPUs. Multi-Region clusters incur an additional MultiRegion Write DPU component. For more information about Multi-Region billing, see [Multi-Region billing](#billing-multiregion-write-dpu). Clusters with change data capture (CDC) enabled incur an additional Stream DPU component. For more information about CDC billing, see [Stream DPU](#billing-stream-dpu).
 
@@ -399,7 +399,7 @@ For a complete list of Aurora DSQL metrics and monitoring capabilities, see [Mon
 | TotalTransactions | Total transactions executed |
 | ReadOnlyTransactions | Read-only transactions executed |
 | QueryTimeouts | Queries that exceeded time limit |
-| OccConflicts | Transactions aborted due to OCC conflicts |
+| OccConflicts | Transactions aborted due to OCC conflicts. Aurora DSQL bills for the work done by these transactions. |
 | BytesWritten | Raw bytes written to storage |
 | BytesRead | Raw bytes read from storage |
 

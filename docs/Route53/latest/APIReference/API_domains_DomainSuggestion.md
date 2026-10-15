@@ -11,7 +11,7 @@ Information about one suggested domain name.
 <a name="API_domains_DomainSuggestion_Contents"></a>
 
  ** Availability **   <a name="Route53Domains-Type-domains_DomainSuggestion-Availability"></a>
-Whether the domain name is available for registering.
+Specifies whether the domain name is available for registering. This element is populated only if you specified `true` for `OnlyAvailable` in the request.
 You can register only the domains that are designated as `AVAILABLE`.
 Valid values:
 AVAILABLE
@@ -39,6 +39,11 @@ Required: No
 A suggested domain name.
 Type: String
 Length Constraints: Maximum length of 255.
+Required: No
+
+ ** Price **   <a name="Route53Domains-Type-domains_DomainSuggestion-Price"></a>
+The price to register the suggested domain name, in the currency that `Currency` specifies. This element is populated only if you specified `true` for `OnlyAvailable` in the request.
+Type: [PriceWithCurrency](API_domains_PriceWithCurrency.md) object
 Required: No
 
 ## See Also

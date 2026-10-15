@@ -89,6 +89,7 @@ Required: Yes
          ]
       }
    },
+   "schedulerVersion": "string",
    "sharedSecret": "string"
 }
 ```
@@ -123,6 +124,10 @@ Type: String
  ** [nodeLifecycleActions](#API_RegisterComputeNodeGroupInstance_ResponseSyntax) **   <a name="PCS-RegisterComputeNodeGroupInstance-response-nodeLifecycleActions"></a>
 The node lifecycle actions configured for the node group, including scripts to run when a compute node finishes bootstrapping or becomes ready to accept jobs.
 Type: [NodeLifecycleActions](API_NodeLifecycleActions.md) object
+
+ ** [schedulerVersion](#API_RegisterComputeNodeGroupInstance_ResponseSyntax) **   <a name="PCS-RegisterComputeNodeGroupInstance-response-schedulerVersion"></a>
+The scheduler version that the cluster is running. A compute node uses this value to run the matching scheduler version.
+Type: String
 
  ** [sharedSecret](#API_RegisterComputeNodeGroupInstance_ResponseSyntax) **   <a name="PCS-RegisterComputeNodeGroupInstance-response-sharedSecret"></a>
 For the Slurm scheduler, this is the shared Munge key the scheduler uses to authenticate compute node group instances.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 # DeleteTransitGatewayRouteTable
 <a name="API_DeleteTransitGatewayRouteTable"></a>
 
-Deletes the specified transit gateway route table. If there are any route tables associated with the transit gateway route table, you must first run [DisassociateRouteTable](API_DisassociateRouteTable.md) before you can delete the transit gateway route table. This removes any route tables associated with the transit gateway route table.
+Deletes the specified transit gateway route table. Before you can delete a transit gateway route table, you must disassociate all attachments from it by using [DisassociateTransitGatewayRouteTable](API_DisassociateTransitGatewayRouteTable.md) and wait for the disassociations to complete. You can't delete a transit gateway route table that is the default association route table or default propagation route table for the transit gateway. To change the default route tables, use [ModifyTransitGateway](API_ModifyTransitGateway.md).
 
 ## Request Parameters
 <a name="API_DeleteTransitGatewayRouteTable_RequestParameters"></a>

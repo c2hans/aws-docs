@@ -85,6 +85,13 @@ Required: No
 {
    "MetricAlarms": [
       {
+         "ActionConfiguration": {
+            "AlarmTagsPropagation": {
+               "Enabled": boolean,
+               "ExcludedTagKeys": [ "string" ],
+               "IncludedTagKeys": [ "string" ]
+            }
+         },
          "ActionsEnabled": boolean,
          "AlarmActions": [ "string" ],
          "AlarmArn": "string",

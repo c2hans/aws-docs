@@ -10,6 +10,8 @@ These AWS Security Hub CSPM controls evaluate the Amazon Redshift Serverless ser
 ## [RedshiftServerless.1] Amazon Redshift Serverless workgroups should use enhanced VPC routing
 <a name="redshiftserverless-1"></a>
 
+**Related requirements:** CRI Profile v2.2/DE.CM-01.03, CRI Profile v2.2/PR.IR-01.01, CRI Profile v2.2/PR.IR-01.03, CRI Profile v2.2/PR.PS-01.01, CRI Profile v2.2/PR.PS-06.10
+
 **Category:** Protect > Secure network configuration > Resources within VPC
 
 **Severity:** High
@@ -34,6 +36,8 @@ For more information about enhanced VPC routing and how to enable it for a workg
 ## [RedshiftServerless.2] Connections to Redshift Serverless workgroups should be required to use SSL
 <a name="redshiftserverless-2"></a>
 
+**Related requirements:** CRI Profile v2.2/PR.DS-02.01, CRI Profile v2.2/PR.PS-01.06
+
 **Category:** Protect > Data Protection > Encryption of data-in-transit
 
 **Severity:** Medium
@@ -57,6 +61,8 @@ For information about updating the settings for an Amazon Redshift Serverless wo
 
 ## [RedshiftServerless.3] Redshift Serverless workgroups should prohibit public access
 <a name="redshiftserverless-3"></a>
+
+**Related requirements:** CRI Profile v2.2/PR.AA-01.02, CRI Profile v2.2/PR.AA-03.02, CRI Profile v2.2/PR.AA-05.01, CRI Profile v2.2/PR.DS-01.01, CRI Profile v2.2/PR.DS-01.02, CRI Profile v2.2/PR.IR-01.01, CRI Profile v2.2/PR.IR-01.03, CRI Profile v2.2/PR.PS-01.02
 
 **Category:** Protect > Secure network configuration > Resources not publicly accessible
 
@@ -135,6 +141,8 @@ You can change the admin username for an Amazon Redshift Serverless namespace by
 
 ## [RedshiftServerless.6] Redshift Serverless namespaces should export logs to CloudWatch Logs
 <a name="redshiftserverless-6"></a>
+
+**Related requirements:** CRI Profile v2.2/DE.AE-03.01, CRI Profile v2.2/DE.AE-03.02, CRI Profile v2.2/DE.AE-07.02, CRI Profile v2.2/DE.CM-03.01, CRI Profile v2.2/DE.CM-03.02, CRI Profile v2.2/PR.PS-01.01, CRI Profile v2.2/PR.PS-04.02, CRI Profile v2.2/PR.PS-04.03, CRI Profile v2.2/RS.AN-07.01, CRI Profile v2.2/RS.MA-02.01
 
 **Category:** Identify > Logging
 

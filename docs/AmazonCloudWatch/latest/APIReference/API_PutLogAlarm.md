@@ -22,6 +22,13 @@ To create or update a log alarm, you must have the `cloudwatch:PutLogAlarm` perm
 
 ```
 {
+   "ActionConfiguration": {
+      "AlarmTagsPropagation": {
+         "Enabled": {{boolean}},
+         "ExcludedTagKeys": [ "{{string}}" ],
+         "IncludedTagKeys": [ "{{string}}" ]
+      }
+   },
    "ActionLogLineCount": {{number}},
    "ActionLogLineRoleArn": "{{string}}",
    "ActionsEnabled": {{boolean}},
@@ -72,6 +79,11 @@ To create or update a log alarm, you must have the `cloudwatch:PutLogAlarm` perm
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [ActionConfiguration](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ActionConfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
+Type: [ActionConfiguration](API_ActionConfiguration.md) object
+Required: No
 
  ** [ActionLogLineCount](#API_PutLogAlarm_RequestSyntax) **   <a name="ACW-PutLogAlarm-request-ActionLogLineCount"></a>
 The number of log lines from the most recent scheduled query execution to include in alarm action notifications. Valid range is 0 through 50. The default is 0, which means no log lines are included.

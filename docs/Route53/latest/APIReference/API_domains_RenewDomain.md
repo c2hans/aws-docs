@@ -14,6 +14,10 @@ We recommend that you renew your domain several weeks before the expiration date
 
 ```
 {
+   "Consent": {
+      "Currency": "{{string}}",
+      "MaxPrice": {{number}}
+   },
    "CurrentExpiryYear": {{number}},
    "DomainName": "{{string}}",
    "DurationInYears": {{number}}
@@ -26,6 +30,11 @@ We recommend that you renew your domain several weeks before the expiration date
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [Consent](#API_domains_RenewDomain_RequestSyntax) **   <a name="Route53Domains-domains_RenewDomain-request-Consent"></a>
+Specifies the maximum price that you agree to pay to renew the domain name. This element is required if the domain has registry premium pricing, and optional if the domain is priced at the standard rate for its TLD. If you include it and the renewal price is more than `MaxPrice`, the request fails.
+Type: [Consent](API_domains_Consent.md) object
+Required: No
 
  ** [CurrentExpiryYear](#API_domains_RenewDomain_RequestSyntax) **   <a name="Route53Domains-domains_RenewDomain-request-CurrentExpiryYear"></a>
 The year when the registration for the domain is set to expire. This value must match the current expiration date for the domain.

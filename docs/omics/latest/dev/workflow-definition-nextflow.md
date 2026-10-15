@@ -234,9 +234,15 @@ Keep the following in mind when you use the directive in Nextflow:
 + A profile that omits **cpus** or **memory** uses the process's **cpus** or **memory** directive, if set.
 + When a profile inherits **cpus** or **memory** from the process, HealthOmics applies the process's **resourceLimits** directive, which sets the maximum **cpus** and **memory**, before copying the value into the profile.
 + `${task.cpus}` and `${task.memory}` in the script show the process-level values, not the resources of the profile that ran.
-+ If every profile in the list is exhausted, the task fails with failure reason `ALL_PROFILES_INSTANCE_RESERVATION_FAILED`. A retry after an insufficient-capacity failure (including when every profile is exhausted) starts again from the first profile. Other retries, for example after an out-of-memory (OOM) or service error, stay on the profile that the previous attempt reached.
 
 For more information, see [Advanced resource configuration](advanced-resource-configuration.md), and for supported accelerator types see [Task accelerators in a HealthOmics workflow definition](task-accelerators.md).
+
+#### Interaction with retries
+<a name="workflow-nextflow-fallback-retries"></a>
+
+If you configure retries with an error strategy (the `errorStrategy` and `maxRetries` directives), the profile that each retry uses depends on why the previous attempt failed.
++ **Insufficient-capacity failures (ICE).** HealthOmics tries each profile in the list in order. After exhausting all profiles without securing capacity, the next retry starts again from the first profile in your directive.
++ **Out-of-memory (OOM) and service failures.** The retry stays on the same profile that the previous attempt reached, rather than restarting from the first profile.
 
 ### Task duration using the `time` directive
 <a name="time-directive-nextflow"></a>

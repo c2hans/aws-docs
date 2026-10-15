@@ -190,7 +190,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [AssociateService](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_AssociateService.html)  **
   - **Description:** Grants permission to associate service
   - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
+  - **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)<br />[aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [CreateAccessToken](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_CreateAccessToken.html)  **
@@ -321,8 +321,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [DisassociateService](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_DisassociateService.html)  **
   - **Description:** Grants permission to disassociate service
-  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:**
+  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)<br />[aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)
   - **Access level:** Write
 
 - **   [DiscoverTopology](https://docs.aws.amazon.com/devopsagent/latest/APIReference/what-is.html)  **
@@ -381,8 +381,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetAssociation](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetAssociation.html)  **
   - **Description:** Grants permission to get association
-  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:**
+  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)<br />[aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)
   - **Access level:** Read
 
 - **   [GetBacklogTask](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_GetBacklogTask.html)  **
@@ -550,8 +550,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListWebhooks](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_ListWebhooks.html)  **
   - **Description:** Grants permission to list webhooks for association
-  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:**
+  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)<br />[aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)
   - **Access level:** List
 
 - **   [RegisterService](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_RegisterService.html)  **
@@ -624,8 +624,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateAssociation](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_UpdateAssociation.html)  **
   - **Description:** Grants permission to update association
-  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
-  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:**
+  - **Resource types (\*required):** [agentspace\*](#list_devops-agent-resource-agentspace) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)<br />[aws:ResourceTag/${TagKey}](#list_devops-agent-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [associations\*](#list_devops-agent-resource-associations) / **Condition keys:** [aidevops:ServiceType](#list_devops-agent-aidevops_ServiceType)
   - **Access level:** Write
 
 - **   [UpdateBacklogTask](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_UpdateBacklogTask.html)  **
@@ -706,6 +706,7 @@ AWS DevOps Agent Service defines the following condition keys that can be used i
 
 | Condition keys | Description | Type |
 | --- | --- | --- |
+|   [aidevops:ServiceType](https://docs.aws.amazon.com/devopsagent/latest/userguide/)  | Filters access by the type of service in the association, such as github, slack, aws or sourceAws. Set by the service from the association's configuration, not supplied by the caller | String |
 |   [aidevops:SourceAgentSpaceArn](https://docs.aws.amazon.com/devopsagent/latest/userguide/)  | Filters access by the source AgentSpace ARN on the request. Set by the service from the request context, not supplied by the caller | ARN |
 |   [aidevops:TargetAgentSpaceArn](https://docs.aws.amazon.com/devopsagent/latest/userguide/)  | Filters access by the target AgentSpace ARN on the request. Set by the service from the request context, not supplied by the caller | ARN |
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by the tags that are passed in the request | String |

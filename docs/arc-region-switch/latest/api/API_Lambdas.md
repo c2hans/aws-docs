@@ -26,6 +26,14 @@ The external ID (secret key) for the configuration.
 Type: String
 Required: No
 
+ ** payload **   <a name="regionswitch-Type-Lambdas-payload"></a>
+The JSON payload to send to the Lambda function invocation. If you don't specify a payload, Region switch invokes the function with only the execution metadata.
+If you provide a JSON object, Region switch merges execution metadata keys (`InvokedBy`, `PlanArn`, `ExecutionId`, `StepName`) into the top level. If one of your keys has the same name as a metadata key, your key takes precedence.
+If you provide any other JSON type (string, number, boolean, or array), Region switch forwards it to the Lambda function unchanged, without adding metadata.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 786432.
+Required: No
+
 ## See Also
 <a name="API_Lambdas_SeeAlso"></a>
 

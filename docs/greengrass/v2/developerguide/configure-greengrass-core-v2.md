@@ -308,7 +308,7 @@ The following example defines a deployment for a Linux-based device that configu
 {
   "components": {
     "aws.greengrass.Nucleus": {
-      "version": "2.18.0",
+      "version": "2.18.4",
       "configurationUpdate": {
         "merge": "{\"runWithDefault\":{\"posixUser\":\"ggc_user:ggc_group\"}}"
       }
@@ -368,7 +368,7 @@ The following example defines a deployment that configures the CPU time limit to
 {
   "components": {
     "aws.greengrass.Nucleus": {
-      "version": "2.18.0",
+      "version": "2.18.4",
       "configurationUpdate": {
         "merge": "{\"runWithDefault\":{\"systemResourceLimits\":\"cpus\":2,\"memory\":102400}}}"
       }
@@ -432,7 +432,7 @@ The following example defines a deployment that configures MQTT over port 443. T
 {
   "components": {
     "aws.greengrass.Nucleus": {
-      "version": "2.18.0",
+      "version": "2.18.4",
       "configurationUpdate": {
         "merge": "{\"mqtt\":{\"port\":443}}"
       }
@@ -476,7 +476,7 @@ The following example defines a deployment that configures HTTPS over port 443. 
 {
   "components": {
     "aws.greengrass.Nucleus": {
-      "version": "2.18.0",
+      "version": "2.18.4",
       "configurationUpdate": {
         "merge": "{\"greengrassDataPlanePort\":443}"
       }
@@ -534,7 +534,7 @@ The following example defines a deployment that configures a network proxy. The 
 {
   "components": {
     "aws.greengrass.Nucleus": {
-      "version": "2.18.0",
+      "version": "2.18.4",
       "configurationUpdate": {
         "merge": "{\"networkProxy\":{\"noProxyAddresses\":\"http://192.168.0.1,www.example.com\",\"proxy\":{\"url\":\"https://my-proxy-server:1100\",\"username\":\"Mary_Major\",\"password\":\"pass@word1357\"}}}"
       }

@@ -531,7 +531,7 @@ For more information about the arguments that you can specify, see [Installer ar
    ---
    services:
      aws.greengrass.Nucleus:
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
      aws.greengrass.FleetProvisioningByClaim:
        configuration:
          rootPath: "{{/greengrass/v2}}"
@@ -555,7 +555,7 @@ For more information about the arguments that you can specify, see [Installer ar
    ---
    services:
      aws.greengrass.Nucleus:
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
      aws.greengrass.FleetProvisioningByClaim:
        configuration:
          rootPath: "{{C:\\greengrass\\v2}}"
@@ -575,7 +575,7 @@ For more information about the arguments that you can specify, see [Installer ar
 ------
 
    Then, do the following:
-   + Replace {{2.18.0}} with the version of the AWS IoT Greengrass Core software.
+   + Replace {{2.18.4}} with the version of the AWS IoT Greengrass Core software.
    + Replace each instance of `{{/greengrass/v2}}` or {{C:\\greengrass\\v2}} with the Greengrass root folder.
 **Note**
 On Windows devices, you must specify path separators as double backslashes (`\\`), such as `C:\\greengrass\\v2`.
@@ -594,7 +594,7 @@ In this configuration file, you can customize other configuration options such a
    ---
    services:
      aws.greengrass.Nucleus:
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          mqtt:
            port: 443
@@ -629,7 +629,7 @@ In this configuration file, you can customize other configuration options such a
    ---
    services:
      aws.greengrass.Nucleus:
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          mqtt:
            port: 443

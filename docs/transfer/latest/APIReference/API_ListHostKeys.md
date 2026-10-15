@@ -56,6 +56,8 @@ Required: Yes
          "Description": "string",
          "Fingerprint": "string",
          "HostKeyId": "string",
+         "SecretId": "string",
+         "StorageType": "string",
          "Type": "string"
       }
    ],

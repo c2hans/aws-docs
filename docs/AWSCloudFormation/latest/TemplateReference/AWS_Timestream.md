@@ -9,6 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::Timestream::Database](aws-resource-timestream-database.md)
++ [AWS::Timestream::InfluxDBBackup](aws-resource-timestream-influxdbbackup.md)
 + [AWS::Timestream::InfluxDBCluster](aws-resource-timestream-influxdbcluster.md)
 + [AWS::Timestream::InfluxDBInstance](aws-resource-timestream-influxdbinstance.md)
 + [AWS::Timestream::ScheduledQuery](aws-resource-timestream-scheduledquery.md)

@@ -10,9 +10,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-iam.htm
 ## Lifecycle management permissions
 <a name="data-delivery-iam-lifecycle"></a>
 
- To create, update, delete, describe, and list delivery resources, the calling IAM principal must have the following permissions:
-
-**Delivery lifecycle permissions**
+ To create, update, delete, describe, and list delivery resources, the calling IAM principal must have the following permissions.
 
 | Action | Resource | Description |
 | --- | --- | --- |

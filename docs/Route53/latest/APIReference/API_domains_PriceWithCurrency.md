@@ -22,6 +22,12 @@ Type: Double
 Valid Range: Minimum value of 0.0.
 Required: Yes
 
+ ** PriceType **   <a name="Route53Domains-Type-domains_PriceWithCurrency-PriceType"></a>
+Indicates whether the domain has standard or premium pricing. A value of `STANDARD` means the domain is priced at the regular rate for its TLD. A value of `REGISTRY_PREMIUM` means the domain has registry premium pricing, which may be different than the standard rate.
+Type: String
+Valid Values: `STANDARD | REGISTRY_PREMIUM`
+Required: No
+
 ## See Also
 <a name="API_domains_PriceWithCurrency_SeeAlso"></a>
 

@@ -93,6 +93,7 @@ The following actions are supported by Amazon Route 53 domain registration:
 +  [EnableDomainTransferLock](API_domains_EnableDomainTransferLock.md)
 +  [GetContactReachabilityStatus](API_domains_GetContactReachabilityStatus.md)
 +  [GetDomainDetail](API_domains_GetDomainDetail.md)
++  [GetDomainPrices](API_domains_GetDomainPrices.md)
 +  [GetDomainSuggestions](API_domains_GetDomainSuggestions.md)
 +  [GetOperationDetail](API_domains_GetOperationDetail.md)
 +  [ListDomains](API_domains_ListDomains.md)

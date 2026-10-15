@@ -48,7 +48,7 @@ The `*Output` structs returned by functions that receive incoming data contain a
             fileURL = URL(fileURLWithPath: destPath!)
         }
 
-        let config = try await S3Client.S3ClientConfiguration(region: region)
+        let config = try await S3Client.S3ClientConfig(region: region)
         let s3Client = S3Client(config: config)
 
         // Create a `FileHandle` referencing the local destination. Then

@@ -18,7 +18,8 @@ A shard iterator expires 15 minutes after it is returned to the requester.
    "SequenceNumber": "{{string}}",
    "ShardId": "{{string}}",
    "ShardIteratorType": "{{string}}",
-   "StreamArn": "{{string}}"
+   "StreamArn": "{{string}}",
+   "Timestamp": {{number}}
 }
 ```
 
@@ -42,8 +43,9 @@ Determines how the shard iterator is used to start reading stream records from t
 +  `AFTER_SEQUENCE_NUMBER` - Start reading right after the position denoted by a specific sequence number.
 +  `TRIM_HORIZON` - Start reading at the last (untrimmed) stream record, which is the oldest record in the shard. In DynamoDB Streams, there is a 24 hour limit on data retention. Stream records whose age exceeds this limit are subject to removal (trimming) from the stream.
 +  `LATEST` - Start reading just after the most recent stream record in the shard, so that you always read the most recent data in the shard.
++  `AT_TIMESTAMP` - Start reading from the position denoted by a specific timestamp, provided in the parameter `Timestamp`.
 Type: String
-Valid Values: `TRIM_HORIZON | LATEST | AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER`
+Valid Values: `TRIM_HORIZON | LATEST | AT_SEQUENCE_NUMBER | AFTER_SEQUENCE_NUMBER | AT_TIMESTAMP`
 Required: Yes
 
  ** [StreamArn](#API_streams_GetShardIterator_RequestSyntax) **   <a name="DDB-streams_GetShardIterator-request-StreamArn"></a>
@@ -56,6 +58,11 @@ Required: Yes
 The sequence number of a stream record in the shard from which to start reading.
 Type: String
 Length Constraints: Minimum length of 21. Maximum length of 40.
+Required: No
+
+ ** [Timestamp](#API_streams_GetShardIterator_RequestSyntax) **   <a name="DDB-streams_GetShardIterator-request-Timestamp"></a>
+The timestamp of the stream record from which to start reading. Used with shard iterator type `AT_TIMESTAMP`. A timestamp is the Unix epoch date with precision in milliseconds. For example, `1791316726.480`. The iterator points to the first stream record whose `ApproximateCreationDateTime` is at or after the specified timestamp. If no record with that exact timestamp exists, the iterator points to the next (later) record. If the timestamp is older than the current trim horizon, the iterator points to the oldest untrimmed stream record (`TRIM_HORIZON`). If the timestamp is in the future, the request returns a `ValidationException`.
+Type: Timestamp
 Required: No
 
 ## Response Syntax

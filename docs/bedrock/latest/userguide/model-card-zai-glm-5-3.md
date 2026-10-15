@@ -23,7 +23,7 @@ Access to this model is limited to eligible customers. For more information, con
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **End User License Agreements and Terms of Use:** [View](https://github.com/zai-org/GLM-5/blob/main/LICENSE)
++ **End User License Agreements and Terms of Use:** [View](https://huggingface.co/zai-org/GLM-5.3/raw/main/LICENSE)
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |
 | --- | --- | --- | --- |

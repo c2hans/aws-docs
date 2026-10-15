@@ -1445,7 +1445,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [PutCompositeAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutCompositeAlarm.html)  **
   - **Description:** Grants permission to create or update a composite alarm
   - **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)<br />[cloudwatch:AlarmTagsPropagationEnabled](#list_cloudwatch-cloudwatch_AlarmTagsPropagationEnabled)
   - **Access level:** Write
 
 - **   [PutDashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutDashboard.html)  **
@@ -1469,7 +1469,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [PutLogAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutLogAlarm.html)  **
   - **Description:** Grants permission to create or update a log-based alarm and associate it with a CloudWatch Logs Insights scheduled query
   - **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)<br />[cloudwatch:AlarmTagsPropagationEnabled](#list_cloudwatch-cloudwatch_AlarmTagsPropagationEnabled)
   - **Access level:** Write
 
 - **   [PutManagedInsightRules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutManagedInsightRules.html)  **
@@ -1480,8 +1480,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [PutMetricAlarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html)  **
   - **Description:** Grants permission to create or update an alarm and associates it with the specified Amazon CloudWatch metric
-  - **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)
-  - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)
+  - **Resource types (\*required):** [alarm\*](#list_cloudwatch-resource-alarm) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)<br />[cloudwatch:AlarmTagsPropagationEnabled](#list_cloudwatch-cloudwatch_AlarmTagsPropagationEnabled)
+  - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)<br />[cloudwatch:AlarmActions](#list_cloudwatch-cloudwatch_AlarmActions)<br />[cloudwatch:AlarmTagsPropagationEnabled](#list_cloudwatch-cloudwatch_AlarmTagsPropagationEnabled)
   - **Access level:** Write
 
 - **   [PutMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricData.html)  **
@@ -1797,6 +1797,7 @@ Amazon CloudWatch defines the following condition keys that can be used in the `
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by tags associated with the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by the presence of tags in the request | ArrayOfString |
 |   [cloudwatch:AlarmActions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-alarm-actions.html)  | Filters access by defined alarm actions | ArrayOfString |
+|   [cloudwatch:AlarmTagsPropagationEnabled](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-tags-in-notifications.html#alarm-tags-prerequisites)  | Filters access by whether the request enables propagation of the alarm's tags in notification payloads | Bool |
 |   [cloudwatch:HasAccessGrant](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/reference_policies_condition-keys.html)  | Filters access by the presence of access grants associated with the request | String |
 |   [cloudwatch:ResourceArn](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-resource-arn.html)  | Filters access by the ARN of the AWS resource that a resource metrics configuration request targets | ARN |
 |   [cloudwatch:namespace](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-namespace.html)  | Filters access by the presence of optional namespace values | String |

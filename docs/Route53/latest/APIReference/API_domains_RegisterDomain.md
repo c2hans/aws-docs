@@ -64,6 +64,10 @@ While some domains may allow different privacy settings per contact, we recommen
       "State": "{{string}}",
       "ZipCode": "{{string}}"
    },
+   "Consent": {
+      "Currency": "{{string}}",
+      "MaxPrice": {{number}}
+   },
    "DomainName": "{{string}}",
    "DurationInYears": {{number}},
    "IdnLangCode": "{{string}}",
@@ -139,6 +143,11 @@ Provides detailed contact information. For information about the values that you
 Type: [ContactDetail](API_domains_ContactDetail.md) object
 Required: No
 
+ ** [Consent](#API_domains_RegisterDomain_RequestSyntax) **   <a name="Route53Domains-domains_RegisterDomain-request-Consent"></a>
+Specifies the maximum price that you agree to pay to register the domain name. This element is required if the domain has registry premium pricing, and optional if the domain is priced at the standard rate for its TLD. If you include it and the registration price is more than `MaxPrice`, the request fails.
+Type: [Consent](API_domains_Consent.md) object
+Required: No
+
  ** [DomainName](#API_domains_RegisterDomain_RequestSyntax) **   <a name="Route53Domains-domains_RegisterDomain-request-DomainName"></a>
 The domain name that you want to register. The top-level domain (TLD), such as .com, must be a TLD that Route 53 supports. For a list of supported TLDs, see [Domains that You Can Register with Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-tld-list.html) in the *Amazon Route 53 Developer Guide*.
 The domain name can contain only the following characters:
@@ -161,7 +170,7 @@ Required: Yes
  ** [IdnLangCode](#API_domains_RegisterDomain_RequestSyntax) **   <a name="Route53Domains-domains_RegisterDomain-request-IdnLangCode"></a>
 Reserved for future use.
 Type: String
-Pattern: `|[A-Za-z]{2,3}`
+Pattern: `(|[A-Za-z]{2,3})`
 Required: No
 
  ** [PrivacyProtectAdminContact](#API_domains_RegisterDomain_RequestSyntax) **   <a name="Route53Domains-domains_RegisterDomain-request-PrivacyProtectAdminContact"></a>

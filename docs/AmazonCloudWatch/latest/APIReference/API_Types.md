@@ -11,10 +11,12 @@ The Amazon CloudWatch API contains several data types that various actions use. 
 The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
 
 The following data types are supported:
++  [ActionConfiguration](API_ActionConfiguration.md)
 +  [AlarmContributor](API_AlarmContributor.md)
 +  [AlarmHistoryItem](API_AlarmHistoryItem.md)
 +  [AlarmMuteRuleSummary](API_AlarmMuteRuleSummary.md)
 +  [AlarmPromQLCriteria](API_AlarmPromQLCriteria.md)
++  [AlarmTagsPropagation](API_AlarmTagsPropagation.md)
 +  [AnomalyDetector](API_AnomalyDetector.md)
 +  [AnomalyDetectorConfiguration](API_AnomalyDetectorConfiguration.md)
 +  [CompositeAlarm](API_CompositeAlarm.md)

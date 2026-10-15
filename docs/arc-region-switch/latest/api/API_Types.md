@@ -63,6 +63,7 @@ The following data types are supported:
 +  [S3ReportOutput](API_S3ReportOutput.md)
 +  [S3ReportOutputConfiguration](API_S3ReportOutputConfiguration.md)
 +  [Service](API_Service.md)
++  [ServiceQuotaWarningSummary](API_ServiceQuotaWarningSummary.md)
 +  [SsmDocumentConfig](API_SsmDocumentConfig.md)
 +  [SsmSendCommandConfiguration](API_SsmSendCommandConfiguration.md)
 +  [SsmSendCommandUngraceful](API_SsmSendCommandUngraceful.md)

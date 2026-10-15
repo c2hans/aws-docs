@@ -61,6 +61,14 @@ The requested item is not acceptable. For example, for APIs that accept a domain
 The requested item is not acceptable. For example, for an OperationId it might refer to the ID of an operation that is already completed. For a domain name, it might not be a valid domain name or belong to the requester account.
 HTTP Status Code: 400
 
+ ** TLDInMaintenance **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** message **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** tld **
+The top-level domain that is currently undergoing maintenance.
+HTTP Status Code: 400
+
  ** UnsupportedTLD **
 Amazon Route 53 does not support this top-level domain (TLD).
  ** message **

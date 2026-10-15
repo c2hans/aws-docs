@@ -32,7 +32,7 @@ The following cross-reference categorizes action modules by the type of actions 
 + [CopyFolder (Linux, Windows, macOS)](#action-modules-copyfolder)
 + [CreateFile (Linux, Windows, macOS)](#action-modules-createfile)
 + [CreateFolder (Linux, Windows, macOS)](#action-modules-createfolder)
-+ [CreateSymlink (Linux, Windows, macOS)](#action-modules-createsymlink)
++ [CreateSymlink (Linux, macOS)](#action-modules-createsymlink)
 + [DeleteFile (Linux, Windows, macOS)](#action-modules-deletefile)
 + [DeleteFolder (Linux, Windows, macOS)](#action-modules-deletefolder)
 + [ListFiles (Linux, Windows, macOS)](#action-modules-listfiles)
@@ -40,10 +40,10 @@ The following cross-reference categorizes action modules by the type of actions 
 + [MoveFolder (Linux, Windows, macOS)](#action-modules-movefolder)
 + [ReadFile (Linux, Windows, macOS)](#action-modules-readfile)
 + [SetFileEncoding (Linux, Windows, macOS)](#action-modules-setfileencoding)
-+ [SetFileOwner (Linux, Windows, macOS)](#action-modules-setfileowner)
-+ [SetFolderOwner (Linux, Windows, macOS)](#action-modules-setfolderowner)
-+ [SetFilePermissions (Linux, Windows, macOS)](#action-modules-setfilepermissions)
-+ [SetFolderPermissions (Linux, Windows, macOS)](#action-modules-setfolderpermissions)
++ [SetFileOwner (Linux, macOS)](#action-modules-setfileowner)
++ [SetFolderOwner (Linux, macOS)](#action-modules-setfolderowner)
++ [SetFilePermissions (Linux, macOS)](#action-modules-setfilepermissions)
++ [SetFolderPermissions (Linux, macOS)](#action-modules-setfolderpermissions)
 
 **Software installation actions**
 + [InstallMSI (Windows)](#action-modules-install-msi)
@@ -195,7 +195,7 @@ If you start a reboot and return exit code `194` as part of the action module, t
 
 ```
 {
-	“stdout”: “The reboot file does not exist. Creating it and triggering a restart."
+	"stdout": "The reboot file does not exist. Creating it and triggering a restart."
 }
 ```
 
@@ -203,7 +203,7 @@ If you start a reboot and return exit code `194` as part of the action module, t
 
 ```
 {
-	“stdout”: “The reboot file exists. Deleting it and exiting with success."
+	"stdout": "The reboot file exists. Deleting it and exiting with success."
 }
 ```
 
@@ -410,8 +410,8 @@ AWSTOE creates an output file called `detailedoutput.json` every time it runs. T
 
 ```
 {
-	\"executedStepCount\":1,\"executionId\":\"97054e22-06cc-11ec-9b14-acde48001122\",\"failedStepCount\":0,\"failureMessage\":\"\",\"ignoredFailedStepCount\":0,\"logUrl\":\"\",\"status\":\"success\"
-}",
+	"executedStepCount":1,"executionId":"97054e22-06cc-11ec-9b14-acde48001122","failedStepCount":0,"failureMessage":"","ignoredFailedStepCount":0,"logUrl":"","status":"success"
+}
 ```
 
 Each component document's output summary object contains the following details, as shown here, with sample values:
@@ -569,7 +569,7 @@ If you run a reboot and return exit code `3010` as part of the action module, th
 
 ```
 {
-	“stdout”: “The reboot file does not exist. Creating it and triggering a restart."
+	"stdout": "The reboot file does not exist. Creating it and triggering a restart."
 }
 ```
 
@@ -577,7 +577,7 @@ If you run a reboot and return exit code `3010` as part of the action module, th
 
 ```
 {
-	“stdout”: “The reboot file exists. Deleting it and exiting with success."
+	"stdout": "The reboot file exists. Deleting it and exiting with success."
 }
 ```
 
@@ -798,7 +798,7 @@ This action module implicitly handles redirects. All HTTP status codes, except f
 
 ```
 {
-	"destination": "/tmp/create_new_folder/java14_renamed.zip\n/tmp/create_new_folder_and_add_java14_as_zip/java14.zip"
+	"destination": "/tmp/java14_renamed.zip\n/tmp/create_new_folder_and_add_java14_as_zip/java14.zip"
 }
 ```
 
@@ -858,7 +858,7 @@ The following section contains details for action modules that perform file syst
 + [CopyFolder (Linux, Windows, macOS)](#action-modules-copyfolder)
 + [CreateFile (Linux, Windows, macOS)](#action-modules-createfile)
 + [CreateFolder (Linux, Windows, macOS)](#action-modules-createfolder)
-+ [CreateSymlink (Linux, Windows, macOS)](#action-modules-createsymlink)
++ [CreateSymlink (Linux, macOS)](#action-modules-createsymlink)
 + [DeleteFile (Linux, Windows, macOS)](#action-modules-deletefile)
 + [DeleteFolder (Linux, Windows, macOS)](#action-modules-deletefolder)
 + [ListFiles (Linux, Windows, macOS)](#action-modules-listfiles)
@@ -866,10 +866,10 @@ The following section contains details for action modules that perform file syst
 + [MoveFolder (Linux, Windows, macOS)](#action-modules-movefolder)
 + [ReadFile (Linux, Windows, macOS)](#action-modules-readfile)
 + [SetFileEncoding (Linux, Windows, macOS)](#action-modules-setfileencoding)
-+ [SetFileOwner (Linux, Windows, macOS)](#action-modules-setfileowner)
-+ [SetFolderOwner (Linux, Windows, macOS)](#action-modules-setfolderowner)
-+ [SetFilePermissions (Linux, Windows, macOS)](#action-modules-setfilepermissions)
-+ [SetFolderPermissions (Linux, Windows, macOS)](#action-modules-setfolderpermissions)
++ [SetFileOwner (Linux, macOS)](#action-modules-setfileowner)
++ [SetFolderOwner (Linux, macOS)](#action-modules-setfolderowner)
++ [SetFilePermissions (Linux, macOS)](#action-modules-setfilepermissions)
++ [SetFolderPermissions (Linux, macOS)](#action-modules-setfolderpermissions)
 
 ### AppendFile (Linux, Windows, macOS)
 <a name="action-modules-appendfile"></a>
@@ -1237,7 +1237,7 @@ The action module returns an error when the following occurs:
         owner: Ubuntu
         group: UbuntuGroup
         permissions: 0777
-     - path: SampleFolder/SampleFile.txt
+      - path: SampleFolder/SampleFile.txt
         permissions: 755
       - path: SampleFolder/TextFile.txt
         encoding: UTF-16
@@ -1339,7 +1339,7 @@ The action module returns an error when the following occurs:
 **Output**
 None.
 
-### CreateSymlink (Linux, Windows, macOS)
+### CreateSymlink (Linux, macOS)
 <a name="action-modules-createsymlink"></a>
 
 The **CreateSymlink** action module creates symbolic links, or files that contain a reference to another file. This module is not supported on Windows platforms.
@@ -1806,8 +1806,8 @@ The action module returns an error when the following occurs:
     action: MoveFolder
     inputs:
       - source: /Sample/MyFolder/SampleFolder
-    destination: /MyFolder/destinationFolder
-    overwrite: false
+        destination: /MyFolder/destinationFolder
+        overwrite: false
 ```
 
 **Input example: move a folder without overwriting (Windows)**
@@ -1929,7 +1929,7 @@ The action module returns an error when the following occurs:
 **Output**
 None.
 
-### SetFileOwner (Linux, Windows, macOS)
+### SetFileOwner (Linux, macOS)
 <a name="action-modules-setfileowner"></a>
 
 The **SetFileOwner** action module modifies the `owner` and`group` owner properties of an existing file. If the specified file is a symbolic link, the module modifies the `owner` property of the source file. This module is not supported on Windows platforms.
@@ -1974,7 +1974,7 @@ The action module returns an error when the following occurs:
 **Output**
 None.
 
-### SetFolderOwner (Linux, Windows, macOS)
+### SetFolderOwner (Linux, macOS)
 <a name="action-modules-setfolderowner"></a>
 
 The **SetFolderOwner** action module recursively modifies the `owner` and`group` owner properties of an existing folder. By default, the module can modify ownership for all of the contents in a folder. You can set the `recursive` option to `false` to override this behavior. This module is not supported on Windows platforms.
@@ -2031,7 +2031,7 @@ The action module returns an error when the following occurs:
 **Output**
 None.
 
-### SetFilePermissions (Linux, Windows, macOS)
+### SetFilePermissions (Linux, macOS)
 <a name="action-modules-setfilepermissions"></a>
 
 The **SetFilePermissions** action module modifies the `permissions` of an existing file. This module is not supported on Windows platforms.
@@ -2065,7 +2065,7 @@ The action module returns an error when the following occurs:
 **Output**
 None.
 
-### SetFolderPermissions (Linux, Windows, macOS)
+### SetFolderPermissions (Linux, macOS)
 <a name="action-modules-setfolderpermissions"></a>
 
 The **SetFolderPermissions** action module recursively modifies the `permissions` of an existing folder and all of its subfiles and subfolders. By default, this module can modify permissions for all of the contents of the specified folder. You can set the `recursive` option to `false` to override this behavior. This module is not supported on Windows platforms.

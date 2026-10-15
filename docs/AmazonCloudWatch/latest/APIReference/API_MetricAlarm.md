@@ -10,6 +10,11 @@ The details about a metric alarm.
 ## Contents
 <a name="API_MetricAlarm_Contents"></a>
 
+ ** ActionConfiguration **   <a name="ACW-Type-MetricAlarm-ActionConfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
+Type: [ActionConfiguration](API_ActionConfiguration.md) object
+Required: No
+
  ** ActionsEnabled **   <a name="ACW-Type-MetricAlarm-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state.
 Type: Boolean

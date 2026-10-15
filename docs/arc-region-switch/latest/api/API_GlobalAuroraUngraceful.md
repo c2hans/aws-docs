@@ -5,13 +5,13 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GlobalA
 # GlobalAuroraUngraceful
 <a name="API_GlobalAuroraUngraceful"></a>
 
-Configuration for handling failures when performing operations on Aurora global databases.
+Configuration for an Aurora global database execution block in ungraceful mode.
 
 ## Contents
 <a name="API_GlobalAuroraUngraceful_Contents"></a>
 
  ** ungraceful **   <a name="regionswitch-Type-GlobalAuroraUngraceful-ungraceful"></a>
-The settings for ungraceful execution.
+The ungraceful behavior. The only valid value is `failover`, which calls `FailoverGlobalCluster` with `AllowDataLoss` set to `true` and might cause data loss.
 Type: String
 Valid Values: `failover`
 Required: No

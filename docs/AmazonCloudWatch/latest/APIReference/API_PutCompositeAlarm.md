@@ -35,6 +35,13 @@ If you are an IAM user, you must have `iam:CreateServiceLinkedRole` to create a 
 
 ```
 {
+   "ActionConfiguration": {
+      "AlarmTagsPropagation": {
+         "Enabled": {{boolean}},
+         "ExcludedTagKeys": [ "{{string}}" ],
+         "IncludedTagKeys": [ "{{string}}" ]
+      }
+   },
    "ActionsEnabled": {{boolean}},
    "ActionsSuppressor": "{{string}}",
    "ActionsSuppressorExtensionPeriod": {{number}},
@@ -60,6 +67,11 @@ If you are an IAM user, you must have `iam:CreateServiceLinkedRole` to create a 
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [ActionConfiguration](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-ActionConfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
+Type: [ActionConfiguration](API_ActionConfiguration.md) object
+Required: No
 
  ** [ActionsEnabled](#API_PutCompositeAlarm_RequestSyntax) **   <a name="ACW-PutCompositeAlarm-request-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state of the composite alarm. The default is `TRUE`.

@@ -5,21 +5,21 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 # Consent
 <a name="API_domains_Consent"></a>
 
- Customer's consent for the owner change request.
+ The maximum amount that you agree to pay for an operation, and the currency for that amount.
 
 ## Contents
 <a name="API_domains_Consent_Contents"></a>
 
  ** Currency **   <a name="Route53Domains-Type-domains_Consent-Currency"></a>
- Currency for the `MaxPrice`.
+ The currency for the `MaxPrice`.
 Type: String
 Length Constraints: Fixed length of 3.
 Required: Yes
 
  ** MaxPrice **   <a name="Route53Domains-Type-domains_Consent-MaxPrice"></a>
- Maximum amount the customer agreed to accept.
+ The maximum amount that you agree to accept.
 Type: Double
-Valid Range: Minimum value of 0.0.
+Valid Range: Minimum value of 0.0. Maximum value of 2000000000.0.
 Required: Yes
 
 ## See Also

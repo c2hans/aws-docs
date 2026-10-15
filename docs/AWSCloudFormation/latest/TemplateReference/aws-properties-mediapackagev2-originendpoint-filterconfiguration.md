@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[DrmSettings](#cfn-mediapackagev2-originendpoint-filterconfiguration-drmsettings)" : {{String}},
   "[End](#cfn-mediapackagev2-originendpoint-filterconfiguration-end)" : {{String}},
   "[ManifestFilter](#cfn-mediapackagev2-originendpoint-filterconfiguration-manifestfilter)" : {{String}},
+  "[Multiview](#cfn-mediapackagev2-originendpoint-filterconfiguration-multiview)" : {{MultiviewFilterConfiguration}},
   "[Start](#cfn-mediapackagev2-originendpoint-filterconfiguration-start)" : {{String}},
   "[TimeDelaySeconds](#cfn-mediapackagev2-originendpoint-filterconfiguration-timedelayseconds)" : {{Integer}}
 }
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [DrmSettings](#cfn-mediapackagev2-originendpoint-filterconfiguration-drmsettings): {{String}}
   [End](#cfn-mediapackagev2-originendpoint-filterconfiguration-end): {{String}}
   [ManifestFilter](#cfn-mediapackagev2-originendpoint-filterconfiguration-manifestfilter): {{String}}
+  [Multiview](#cfn-mediapackagev2-originendpoint-filterconfiguration-multiview): {{
+    MultiviewFilterConfiguration}}
   [Start](#cfn-mediapackagev2-originendpoint-filterconfiguration-start): {{String}}
   [TimeDelaySeconds](#cfn-mediapackagev2-originendpoint-filterconfiguration-timedelayseconds): {{Integer}}
 ```
@@ -69,6 +72,13 @@ Optionally specify one or more manifest filters for all of your manifest egress 
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `1024`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Multiview`  <a name="cfn-mediapackagev2-originendpoint-filterconfiguration-multiview"></a>
+Optionally pin this manifest to a single multiview combination, so that players request it without an `aws.multiview` query parameter. When you pin a combination, note that you cannot use the `aws.multiview` query parameter for this manifest's endpoint URL, even when that parameter requests the same combination.
+This setting is valid only on an origin endpoint whose channel has an `InputType` of `MULTIVIEW`.
+*Required*: No
+*Type*: [MultiviewFilterConfiguration](aws-properties-mediapackagev2-originendpoint-multiviewfilterconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Start`  <a name="cfn-mediapackagev2-originendpoint-filterconfiguration-start"></a>

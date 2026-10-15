@@ -52,7 +52,7 @@ In this example, the `[AsyncHTTPClient](https://github.com/swift-server/async-ht
         // will upload the file to Amazon S3. If no URL is generated, a
         // `TransferError.signingError` is thrown.
 
-        let putConfig = try await S3Client.S3ClientConfiguration(
+        let putConfig = try await S3Client.S3ClientConfig(
             maxAttempts: 6,
             region: region
         )

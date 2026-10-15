@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-agent-se
 # Agent setup guide
 <a name="eb-agent-setup-guide"></a>
 
-AI coding agents can accelerate serverless development by providing intelligent assistance for application scaffolding, deployment configuration, debugging, and infrastructure-as-code generation. By configuring your agent with the right combination of plugins, skills, and MCP Servers, you equip it with expertise required to build and manage serverless applications.
+AI coding agents can accelerate serverless development by providing intelligent assistance for application scaffolding, deployment configuration, debugging, and infrastructure-as-code generation. By configuring your agent with the right combination of plugins and skills, you equip it with expertise required to build and manage serverless applications.
 
 **Work with your coding agent**
 For a quick-start reference, you can drop this link directly into your agent's context: `https://docs.aws.amazon.com/eventbridge/latest/userguide/samples/aws-eventbridge-agent-setup.md`
@@ -15,7 +15,7 @@ Choose the installation method that matches your development environment.
 ## Prerequisites
 <a name="eb-agent-setup-prerequisites"></a>
 
-Ensure the following prerequisites are in place for installing aws-core plugin and Serverless MCP Server:
+Ensure the following prerequisites are in place for installing the aws-core plugin:
 + [uv](https://docs.astral.sh/uv/) installed on your system.
 + (Optional) An AWS account with IAM credentials set up on your local machine. Credentials are required for tools that execute AWS API calls and run scripts, but not for searching documentation or discovering skills. If you do not have credentials configured, see [Setting up the AWS MCP Server](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html) for detailed instructions.
 
@@ -42,20 +42,6 @@ npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/spe
 
 This installs agent skills including the AWS serverless skill, agent hooks, and the AWS MCP Server configuration in one step.
 
-### Install Serverless MCP Server
-<a name="eb-agent-setup-claude-code-mcp"></a>
-
-Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-claude mcp add awslabs-aws-serverless-mcp \
-  -e AWS_PROFILE=default \
-  -e AWS_REGION=us-east-1 \
-  -e FASTMCP_LOG_LEVEL=ERROR \
-  --scope user \
-  -- uvx awslabs.aws-serverless-mcp-server@latest
-```
-
 ## Codex
 <a name="eb-agent-setup-codex"></a>
 
@@ -70,19 +56,6 @@ Then install the Amazon EventBridge skill:
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
-```
-
-### Install Serverless MCP Server
-<a name="eb-agent-setup-codex-mcp"></a>
-
-Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-codex mcp add awslabs-aws-serverless-mcp \
-  --env AWS_PROFILE=default \
-  --env AWS_REGION=us-east-1 \
-  --env FASTMCP_LOG_LEVEL=ERROR \
-  -- uvx awslabs.aws-serverless-mcp-server@latest
 ```
 
 ## Cursor
@@ -101,23 +74,6 @@ Then install the Amazon EventBridge skill:
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
-### Install Serverless MCP Server
-<a name="eb-agent-setup-cursor-mcp"></a>
-
-Add the following to `.cursor/mcp.json` under `"mcpServers"`. Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-"awslabs.aws-serverless-mcp": {
-  "command": "uvx",
-  "args": ["awslabs.aws-serverless-mcp-server@latest"],
-  "env": {
-    "AWS_PROFILE": "default",
-    "AWS_REGION": "us-east-1",
-    "FASTMCP_LOG_LEVEL": "ERROR"
-  }
-}
-```
-
 ## Kiro
 <a name="eb-agent-setup-kiro"></a>
 
@@ -132,24 +88,6 @@ Then install the Amazon EventBridge skill:
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
-```
-
-### Install Serverless MCP Server
-<a name="eb-agent-setup-kiro-mcp"></a>
-
-Add the following to `~/.kiro/settings/mcp.json` under `"mcpServers"`. Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-"awslabs.aws-serverless-mcp": {
-  "command": "uvx",
-  "args": ["awslabs.aws-serverless-mcp-server@latest"],
-  "env": {
-    "AWS_PROFILE": "default",
-    "AWS_REGION": "us-east-1",
-    "FASTMCP_LOG_LEVEL": "ERROR"
-  },
-  "disabled": false
-}
 ```
 
 ### Install Kiro powers (from Kiro IDE)
@@ -174,23 +112,6 @@ Then install the Amazon EventBridge skill:
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
-### Install Serverless MCP Server
-<a name="eb-agent-setup-github-copilot-mcp"></a>
-
-Add the following to `.vscode/mcp.json` under `"mcpServers"`. Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-"awslabs.aws-serverless-mcp": {
-  "command": "uvx",
-  "args": ["awslabs.aws-serverless-mcp-server@latest"],
-  "env": {
-    "AWS_PROFILE": "default",
-    "AWS_REGION": "us-east-1",
-    "FASTMCP_LOG_LEVEL": "ERROR"
-  }
-}
-```
-
 ## Devin Desktop
 <a name="eb-agent-setup-windsurf"></a>
 
@@ -205,23 +126,6 @@ Then install the Amazon EventBridge skill:
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
-```
-
-### Install Serverless MCP Server
-<a name="eb-agent-setup-windsurf-mcp"></a>
-
-Add the following to `/.codeium/windsurf/mcp_config.json` under `"mcpServers"`. Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-"awslabs.aws-serverless-mcp": {
-  "command": "uvx",
-  "args": ["awslabs.aws-serverless-mcp-server@latest"],
-  "env": {
-    "AWS_PROFILE": "default",
-    "AWS_REGION": "us-east-1",
-    "FASTMCP_LOG_LEVEL": "ERROR"
-  }
-}
 ```
 
 ## OpenCode
@@ -240,27 +144,10 @@ Then install the Amazon EventBridge skill:
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
 ```
 
-### Install Serverless MCP Server
-<a name="eb-agent-setup-opencode-mcp"></a>
-
-Add the following to `/.config/opencode/opencode.jsonc` under `"mcpServers"`. Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-"awslabs.aws-serverless-mcp": {
-  "command": "uvx",
-  "args": ["awslabs.aws-serverless-mcp-server@latest"],
-  "env": {
-    "AWS_PROFILE": "default",
-    "AWS_REGION": "us-east-1",
-    "FASTMCP_LOG_LEVEL": "ERROR"
-  }
-}
-```
-
-## For all other agents compatible with agent skills and MCP Server configuration
+## For all other agents compatible with agent skills
 <a name="eb-agent-setup-other-agents"></a>
 
-For any other agent that supports the open-source [agent skills](https://agentskills.io/specification) format and MCP Server configuration, follow these steps:
+For any other agent that supports the open-source [agent skills](https://agentskills.io/specification) format, follow these steps:
 
 ### Install AWS serverless skill
 <a name="eb-agent-setup-other-agents-skill"></a>
@@ -273,25 +160,4 @@ Then install the Amazon EventBridge skill:
 
 ```
 npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/amazon-eventbridge-event-bus --yes --global
-```
-
-### Install Serverless MCP Server
-<a name="eb-agent-setup-other-agents-mcp"></a>
-
-Add the Serverless MCP Server to your agent's MCP client configuration file under `"mcpServers"`. Replace {{AWS\_PROFILE}} with your local AWS profile name.
-
-```
-{
-  "mcpServers": {
-    "awslabs.aws-serverless-mcp": {
-      "command": "uvx",
-      "args": ["awslabs.aws-serverless-mcp-server@latest"],
-      "env": {
-        "AWS_PROFILE": "default",
-        "AWS_REGION": "us-east-1",
-        "FASTMCP_LOG_LEVEL": "ERROR"
-      }
-    }
-  }
-}
 ```

@@ -124,7 +124,7 @@ Type: [ContactDetail](API_domains_ContactDetail.md) object
 Required: No
 
  ** [Consent](#API_domains_UpdateDomainContact_RequestSyntax) **   <a name="Route53Domains-domains_UpdateDomainContact-request-Consent"></a>
- Customer's consent for the owner change request. Required if the domain is not free (consent price is more than $0.00).
+ The maximum amount that you agree to pay for the owner change. Required if the domain is not free (consent price is more than USD $0.00).
 Type: [Consent](API_domains_Consent.md) object
 Required: No
 

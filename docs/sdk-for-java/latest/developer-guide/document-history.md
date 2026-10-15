@@ -9,6 +9,7 @@ This topic describes important changes to the AWS SDK for Java Developer Guide o
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [Limit the total number of results](pagination.html) | Clarify that the maxResults parameter on a request sets the page size, not the total number of items. Add examples that limit the total number of items across all pages. | October 6, 2026 |
 | [Migrating Amazon S3 pre-signed URL downloads from v1 to v2](migration-s3-presign-download.html) | Add migration guide for pre-signed URL downloads from v1 to v2 | July 15, 2026 |
 | [Pre-signed URL download examples for Amazon S3](examples-s3-presign.html) | Add pre-signed URL download examples using S3AsyncClient pre-signed URL extension and S3 Transfer Manager | July 15, 2026 |
 | [Current key](openpgp.md#pgp-current-keys) | Add new PGP key that expires on 2026-09-27. | October 1, 2025 |

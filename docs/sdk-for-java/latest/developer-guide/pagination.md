@@ -134,6 +134,47 @@ If your use case requires it, manual pagination is still available. Use the next
 
 See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/f807d60010caf3d14fe4cd0801b842fb8e9511ca/javav2/example_code/s3/src/main/java/com/example/s3/S3ObjectOperations.java#L90) on GitHub.
 
+### Limit the total number of results
+<a name="pagination-limit-results-sync"></a>
+
+The `maxResults` parameter on most paginated requests sets the maximum number of items in each page. The paginator keeps requesting pages until none are left. If you set `maxResults` to 1, you still get all matching items.
+
+Some operations use a different parameter name, such as `maxKeys` in an Amazon S3 `ListObjectsV2Request` or `limit` in a DynamoDB `QueryRequest`. The DynamoDB `limit` parameter sets the maximum number of items to evaluate in each page.
+
+The `items().stream()` method returns a standard Java `Stream`, so you can process the items with any `Stream` operation. The following example uses the `limit` method of `Stream` to return only the first 10 items:
+
+#### Imports
+<a name="pagination-limit-results-sync-import"></a>
+
+```
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
+import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
+import software.amazon.awssdk.services.dynamodb.model.QueryRequest;
+```
+
+```
+DynamoDbClient dynamoDbClient = DynamoDbClient.create();
+
+QueryRequest request = QueryRequest.builder()
+        .tableName("Customers")
+        .keyConditionExpression("customerId = :id")
+        .expressionAttributeValues(Collections.singletonMap(":id",
+                AttributeValue.builder().s("123").build()))
+        .limit(25)   // Page size: evaluate up to 25 items per service call.
+        .build();
+
+List<Map<String, AttributeValue>> firstTenItems = dynamoDbClient.queryPaginator(request)
+        .items()
+        .stream()
+        .limit(10)   // Total: stop after 10 items.
+        .collect(Collectors.toList());
+```
+
 ## Asynchronous pagination
 <a name="asynchronous-pagination"></a>
 
@@ -344,3 +385,42 @@ To use the library, add it as a dependency. If using Maven, the example shows th
 ```
 
 See the [complete example](https://github.com/awsdocs/aws-doc-sdk-examples/blob/f807d60010caf3d14fe4cd0801b842fb8e9511ca/javav2/example_code/dynamodbasync/src/main/java/com/example/dynamodbasync/AsyncPagination.java#L198) on GitHub.
+
+### Limit the total number of results
+<a name="pagination-limit-results-async"></a>
+
+The `maxResults` parameter on most paginated requests sets the maximum number of items in each page. The paginator keeps requesting pages until none are left. If you set `maxResults` to 1, you still get all matching items.
+
+Some operations use a different parameter name, such as `maxKeys` in an Amazon S3 `ListObjectsV2Request` or `limit` in a DynamoDB `QueryRequest`. The DynamoDB `limit` parameter sets the maximum number of items to evaluate in each page.
+
+The `items()` method returns an `SdkPublisher`. The following example uses the `limit` method of `SdkPublisher` to return only the first 10 items:
+
+#### Imports
+<a name="pagination-limit-results-async-import"></a>
+
+```
+import java.util.Collections;
+import java.util.concurrent.CompletableFuture;
+
+import software.amazon.awssdk.services.dynamodb.DynamoDbAsyncClient;
+import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
+import software.amazon.awssdk.services.dynamodb.model.QueryRequest;
+```
+
+```
+DynamoDbAsyncClient dynamoDbAsyncClient = DynamoDbAsyncClient.create();
+
+QueryRequest request = QueryRequest.builder()
+        .tableName("Customers")
+        .keyConditionExpression("customerId = :id")
+        .expressionAttributeValues(Collections.singletonMap(":id",
+                AttributeValue.builder().s("123").build()))
+        .limit(25)   // Page size: evaluate up to 25 items per service call.
+        .build();
+
+CompletableFuture<Void> future = dynamoDbAsyncClient.queryPaginator(request)
+        .items()
+        .limit(10)   // Total: stop after 10 items.
+        .subscribe(item -> System.out.println(item));
+future.join();
+```

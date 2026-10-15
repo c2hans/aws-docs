@@ -12,7 +12,7 @@ These controls may not be available in all AWS Regions. For more information, se
 ## [Inspector.1] Amazon Inspector EC2 scanning should be enabled
 <a name="inspector-1"></a>
 
-**Related requirements:** PCI DSS v4.0.1/11.3.1
+**Related requirements:** PCI DSS v4.0.1/11.3.1, CRI Profile v2.2/ID.RA-01.03, CRI Profile v2.2/PR.PS-02.02
 
 **Category:** Detect > Detection services
 
@@ -40,7 +40,7 @@ To enable Amazon Inspector EC2 scanning, see [Activating scans](https://docs.aws
 ## [Inspector.2] Amazon Inspector ECR scanning should be enabled
 <a name="inspector-2"></a>
 
-**Related requirements:** PCI DSS v4.0.1/11.3.1
+**Related requirements:** PCI DSS v4.0.1/11.3.1, CRI Profile v2.2/ID.RA-01.03, CRI Profile v2.2/PR.PS-02.02
 
 **Category:** Detect > Detection services
 
@@ -68,7 +68,7 @@ To enable Amazon Inspector ECR scanning, see [Activating scans](https://docs.aws
 ## [Inspector.3] Amazon Inspector Lambda code scanning should be enabled
 <a name="inspector-3"></a>
 
-**Related requirements:** PCI DSS v4.0.1/6.2.4, PCI DSS v4.0.1/6.3.1
+**Related requirements:** PCI DSS v4.0.1/6.2.4, PCI DSS v4.0.1/6.3.1, CRI Profile v2.2/ID.RA-01.03, CRI Profile v2.2/PR.PS-02.02
 
 **Category:** Detect > Detection services
 
@@ -96,7 +96,7 @@ To enable Amazon Inspector Lambda code scanning, see [Activating scans](https://
 ## [Inspector.4] Amazon Inspector Lambda standard scanning should be enabled
 <a name="inspector-4"></a>
 
-**Related requirements:** PCI DSS v4.0.1/6.2.4, PCI DSS v4.0.1/6.3.1
+**Related requirements:** PCI DSS v4.0.1/6.2.4, PCI DSS v4.0.1/6.3.1, CRI Profile v2.2/ID.RA-01.03, CRI Profile v2.2/PR.PS-02.02
 
 **Category:** Detect > Detection services
 

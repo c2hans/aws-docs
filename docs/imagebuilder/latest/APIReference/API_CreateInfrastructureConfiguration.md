@@ -32,6 +32,12 @@ Content-type: application/json
       }
    },
    "name": "{{string}}",
+   "parentInstance": {
+      "autoScalingGroup": {
+         "capacityWaitTimeoutSeconds": {{number}},
+         "name": "{{string}}"
+      }
+   },
    "placement": {
       "availabilityZone": "{{string}}",
       "hostId": "{{string}}",
@@ -47,6 +53,7 @@ Content-type: application/json
    "tags": {
       "{{string}}" : "{{string}}"
    },
+   "terminateInstanceOnCompletion": {{boolean}},
    "terminateInstanceOnFailure": {{boolean}}
 }
 ```
@@ -114,6 +121,12 @@ Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: Yes
 
+ ** [parentInstance](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-parentInstance"></a>
+The Amazon EC2 Auto Scaling group that Image Builder takes the build instance from, instead of launching a new instance. This applies only to the build phase.
+To use this feature, the execution role for the build must have permissions to describe the Auto Scaling group, tag the instance while it's still in the group, and detach it from the group. For more information, see [Build on an instance from an Auto Scaling group](https://docs.aws.amazon.com/imagebuilder/latest/userguide/infra-config-parent-instance.html) in the *EC2 Image Builder User Guide*.
+Type: [ParentInstanceConfiguration](API_ParentInstanceConfiguration.md) object
+Required: No
+
  ** [placement](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-placement"></a>
 The instance placement settings that define where the build and test instances that Image Builder launches during image creation run. These settings don't affect instances that you launch from the output image.
 Type: [Placement](API_Placement.md) object
@@ -154,6 +167,11 @@ Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Key Pattern: `^(?!aws:)[a-zA-Z0-9\s_.:/=+\-@]*$`
 Value Length Constraints: Maximum length of 256.
+Required: No
+
+ ** [terminateInstanceOnCompletion](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-terminateInstanceOnCompletion"></a>
+Specifies whether Image Builder terminates build and test instances when image creation ends without a failure (success, cancellation, or expiration). Defaults to `true`.
+Type: Boolean
 Required: No
 
  ** [terminateInstanceOnFailure](#API_CreateInfrastructureConfiguration_RequestSyntax) **   <a name="imagebuilder-CreateInfrastructureConfiguration-request-terminateInstanceOnFailure"></a>

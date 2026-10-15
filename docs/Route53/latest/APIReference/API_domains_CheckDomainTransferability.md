@@ -47,6 +47,11 @@ Required: Yes
 ```
 {
    "Message": "string",
+   "Price": {
+      "Currency": "string",
+      "Price": number,
+      "PriceType": "string"
+   },
    "Transferability": {
       "Transferable": "string"
    }
@@ -64,6 +69,11 @@ The following data is returned in JSON format by the service.
 Provides an explanation for when a domain can't be transferred.
 Type: String
 
+ ** [Price](#API_domains_CheckDomainTransferability_ResponseSyntax) **   <a name="Route53Domains-domains_CheckDomainTransferability-response-Price"></a>
+The price to transfer the domain name to Route 53, in the currency that `Currency` specifies. If the domain has registry premium pricing, this price is different from the standard rate for the TLD that `ListPrices` returns. Use `PriceType` to determine which rate applies.
+This element is returned only when Route 53 can determine whether the domain is transferable.
+Type: [PriceWithCurrency](API_domains_PriceWithCurrency.md) object
+
  ** [Transferability](#API_domains_CheckDomainTransferability_ResponseSyntax) **   <a name="Route53Domains-domains_CheckDomainTransferability-response-Transferability"></a>
 A complex type that contains information about whether the specified domain can be transferred to Route 53.
 Type: [DomainTransferability](API_domains_DomainTransferability.md) object
@@ -77,6 +87,14 @@ For information about the errors that are common to all actions, see [Common Err
 The requested item is not acceptable. For example, for APIs that accept a domain name, the request might specify a domain name that doesn't belong to the account that submitted the request. For `AcceptDomainTransferFromAnotherAwsAccount`, the password might be invalid.
  ** message **
 The requested item is not acceptable. For example, for an OperationId it might refer to the ID of an operation that is already completed. For a domain name, it might not be a valid domain name or belong to the requester account.
+HTTP Status Code: 400
+
+ ** TLDInMaintenance **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** message **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** tld **
+The top-level domain that is currently undergoing maintenance.
 HTTP Status Code: 400
 
  ** UnsupportedTLD **

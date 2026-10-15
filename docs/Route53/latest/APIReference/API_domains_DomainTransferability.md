@@ -19,7 +19,9 @@ The domain name can be transferred to Route 53.
 UNTRANSFERRABLE
 The domain name can't be transferred to Route 53.
 DONT\_KNOW
-The TLD registry didn't respond in time or didn't provide a definitive answer about domain transferability, which can occur due to registry maintenance or temporary delays.
+The TLD registry didn't reply with a definitive answer about whether the domain name can be transferred. Route 53 can return this response for a variety of reasons, for example, the registry is performing maintenance. Try again later.
+PENDING
+The TLD registry didn't return a response in the expected amount of time. When the response is delayed, it usually takes just a few extra seconds. You can resubmit the request immediately.
 DOMAIN\_IN\_OWN\_ACCOUNT
 The domain already exists in the current AWS account.
 DOMAIN\_IN\_ANOTHER\_ACCOUNT
@@ -27,7 +29,7 @@ DOMAIN\_IN\_ANOTHER\_ACCOUNT
 PREMIUM\_DOMAIN
 Premium domain transfer is not supported.
 Type: String
-Valid Values: `TRANSFERABLE | UNTRANSFERABLE | DONT_KNOW | DOMAIN_IN_OWN_ACCOUNT | DOMAIN_IN_ANOTHER_ACCOUNT | PREMIUM_DOMAIN`
+Valid Values: `TRANSFERABLE | UNTRANSFERABLE | DONT_KNOW | DOMAIN_IN_OWN_ACCOUNT | DOMAIN_IN_ANOTHER_ACCOUNT | PREMIUM_DOMAIN | PENDING`
 Required: No
 
 ## See Also

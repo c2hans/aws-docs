@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/update-container-pipeline-console.html
 ---
 
-# Update a container image pipeline from the console
+# Update a container image pipeline in the console
 <a name="update-container-pipeline-console"></a>
 
 After you have created an Image Builder container image pipeline for your Docker image, you can make changes to the infrastructure configuration and distribution settings from the Image Builder console.

@@ -1560,6 +1560,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [SageMakerStudioBedrockKnowledgeBaseCustomResourcePolicy](SageMakerStudioBedrockKnowledgeBaseCustomResourcePolicy.md)
 + [SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy](SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy.md)
 + [SageMakerStudioBedrockPromptUserRolePolicy](SageMakerStudioBedrockPromptUserRolePolicy.md)
++ [SageMakerStudioDataAppsAccessRolePolicy](SageMakerStudioDataAppsAccessRolePolicy.md)
 + [SageMakerStudioDomainExecutionRolePolicy](SageMakerStudioDomainExecutionRolePolicy.md)
 + [SageMakerStudioDomainServiceRolePolicy](SageMakerStudioDomainServiceRolePolicy.md)
 + [SageMakerStudioEMRContainersSystemNamespaceRolePolicy](SageMakerStudioEMRContainersSystemNamespaceRolePolicy.md)

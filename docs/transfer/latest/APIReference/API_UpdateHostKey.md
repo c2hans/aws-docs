@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateH
 # UpdateHostKey
 <a name="API_UpdateHostKey"></a>
 
-Updates the description for the host key that's specified by the `ServerId` and `HostKeyId` parameters.
+Updates the host key that's specified by the `ServerId` and `HostKeyId` parameters. You can update the description of the host key, change where the host key is stored by specifying the `StorageType`, and specify the AWS KMS key used to encrypt the host key when it's stored in AWS Secrets Manager.
+
+To change a host key's storage type from `SERVICE_MANAGED` to `SECRETS_MANAGER`, you must have the `transfer:ExportHostKey` permission. `transfer:ExportHostKey` is a permission-only action that has no corresponding API operation.
 
 ## Request Syntax
 <a name="API_UpdateHostKey_RequestSyntax"></a>
@@ -14,7 +16,9 @@ Updates the description for the host key that's specified by the `ServerId` and 
 {
    "Description": "{{string}}",
    "HostKeyId": "{{string}}",
-   "ServerId": "{{string}}"
+   "KmsKey": "{{string}}",
+   "ServerId": "{{string}}",
+   "StorageType": "{{string}}"
 }
 ```
 
@@ -30,7 +34,7 @@ An updated description for the host key.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 200.
 Pattern: `[\p{Print}]*`
-Required: Yes
+Required: No
 
  ** [HostKeyId](#API_UpdateHostKey_RequestSyntax) **   <a name="TransferFamily-UpdateHostKey-request-HostKeyId"></a>
 The identifier of the host key that you are updating.
@@ -39,12 +43,25 @@ Length Constraints: Fixed length of 25.
 Pattern: `hostkey-[0-9a-f]{17}`
 Required: Yes
 
+ ** [KmsKey](#API_UpdateHostKey_RequestSyntax) **   <a name="TransferFamily-UpdateHostKey-request-KmsKey"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt the AWS Secrets Manager secret that stores the host key. If you specify a customer managed key, its key policy must allow the `AWSServiceRoleForTransfer` service-linked role to decrypt the secret. If you don't specify a value, AWS Transfer Family uses the AWS managed key for AWS Secrets Manager.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 1600.
+Pattern: `arn:\S+`
+Required: No
+
  ** [ServerId](#API_UpdateHostKey_RequestSyntax) **   <a name="TransferFamily-UpdateHostKey-request-ServerId"></a>
 The identifier of the server that contains the host key that you are updating.
 Type: String
 Length Constraints: Fixed length of 19.
 Pattern: `s-([0-9a-f]{17})`
 Required: Yes
+
+ ** [StorageType](#API_UpdateHostKey_RequestSyntax) **   <a name="TransferFamily-UpdateHostKey-request-StorageType"></a>
+Specifies whether the host key is stored by AWS Transfer Family (`SERVICE_MANAGED`) or in AWS Secrets Manager (`SECRETS_MANAGER`). When you specify `SECRETS_MANAGER`, AWS Transfer Family stores the private host key material in an AWS Secrets Manager secret.
+Type: String
+Valid Values: `SERVICE_MANAGED | SECRETS_MANAGER`
+Required: No
 
 ## Response Syntax
 <a name="API_UpdateHostKey_ResponseSyntax"></a>

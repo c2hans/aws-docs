@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::CloudWatch::AnomalyDetector",
   "Properties" : {
-      "[Configuration](#cfn-cloudwatch-anomalydetector-configuration)" : {{Configuration}},
+      "[Configuration](#cfn-cloudwatch-anomalydetector-configuration)" : {{MetricConfiguration}},
       "[Dimensions](#cfn-cloudwatch-anomalydetector-dimensions)" : {{[ Dimension, ... ]}},
       "[MetricCharacteristics](#cfn-cloudwatch-anomalydetector-metriccharacteristics)" : {{MetricCharacteristics}},
       "[MetricMathAnomalyDetector](#cfn-cloudwatch-anomalydetector-metricmathanomalydetector)" : {{MetricMathAnomalyDetector}},
@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::CloudWatch::AnomalyDetector
 Properties:
   [Configuration](#cfn-cloudwatch-anomalydetector-configuration): {{
-    Configuration}}
+    MetricConfiguration}}
   [Dimensions](#cfn-cloudwatch-anomalydetector-dimensions): {{
     - Dimension}}
   [MetricCharacteristics](#cfn-cloudwatch-anomalydetector-metriccharacteristics): {{
@@ -62,7 +62,7 @@ Properties:
 `Configuration`  <a name="cfn-cloudwatch-anomalydetector-configuration"></a>
 Specifies details about how the anomaly detection model is to be trained, including time ranges to exclude when training and updating the model. The configuration can also include the time zone to use for the metric.
 *Required*: No
-*Type*: [Configuration](aws-properties-cloudwatch-anomalydetector-configuration.md)
+*Type*: [MetricConfiguration](aws-properties-cloudwatch-anomalydetector-metricconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Dimensions`  <a name="cfn-cloudwatch-anomalydetector-dimensions"></a>
@@ -112,6 +112,13 @@ The statistic of the metric associated with the anomaly detection band.
 
 ### Fn::GetAtt
 <a name="aws-resource-cloudwatch-anomalydetector-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-cloudwatch-anomalydetector-return-values-fn--getatt-fn--getatt"></a>
+
+`AnomalyDetectorId`  <a name="AnomalyDetectorId-fn::getatt"></a>
+The unique identifier of the anomaly detector.
+The identifier does not restrict access to a specific anomaly detector in an IAM policy. Permissions for anomaly detector operations apply to all anomaly detectors in the account.
 
 ## Examples
 <a name="aws-resource-cloudwatch-anomalydetector--examples"></a>

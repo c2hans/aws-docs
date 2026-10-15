@@ -10,6 +10,11 @@ The details about a composite alarm.
 ## Contents
 <a name="API_CompositeAlarm_Contents"></a>
 
+ ** ActionConfiguration **   <a name="ACW-Type-CompositeAlarm-ActionConfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
+Type: [ActionConfiguration](API_ActionConfiguration.md) object
+Required: No
+
  ** ActionsEnabled **   <a name="ACW-Type-CompositeAlarm-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state.
 Type: Boolean

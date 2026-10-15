@@ -12,6 +12,8 @@ These controls may not be available in all AWS Regions. For more information, se
 ## [IVS.1] IVS playback key pairs should be tagged
 <a name="ivs-1"></a>
 
+**Related requirements:** CRI Profile v2.2/ID.AM-02.01, CRI Profile v2.2/ID.AM-05.01
+
 **Category:** Identify > Inventory > Tagging
 
 **Severity:** Low
@@ -42,6 +44,8 @@ To add tags to an IVS playback key pair, see [TagResource](https://docs.aws.amaz
 
 ## [IVS.2] IVS recording configurations should be tagged
 <a name="ivs-2"></a>
+
+**Related requirements:** CRI Profile v2.2/ID.AM-02.01, CRI Profile v2.2/ID.AM-05.01
 
 **Category:** Identify > Inventory > Tagging
 

@@ -66,6 +66,11 @@ Type: String
 Pattern: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 Required: No
 
+ ** parentInstance **   <a name="imagebuilder-Type-InfrastructureConfiguration-parentInstance"></a>
+The Amazon EC2 Auto Scaling group that Image Builder takes the build instance from, instead of launching a new instance. This applies only to the build phase.
+Type: [ParentInstanceConfiguration](API_ParentInstanceConfiguration.md) object
+Required: No
+
  ** placement **   <a name="imagebuilder-Type-InfrastructureConfiguration-placement"></a>
 The instance placement settings that define where the build and test instances that Image Builder launches during image creation run. These settings don't affect instances that you launch from the output image.
 Type: [Placement](API_Placement.md) object
@@ -106,6 +111,11 @@ Map Entries: Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Key Pattern: `^(?!aws:)[a-zA-Z0-9\s_.:/=+\-@]*$`
 Value Length Constraints: Maximum length of 256.
+Required: No
+
+ ** terminateInstanceOnCompletion **   <a name="imagebuilder-Type-InfrastructureConfiguration-terminateInstanceOnCompletion"></a>
+Specifies whether Image Builder terminates build and test instances when image creation ends without a failure.
+Type: Boolean
 Required: No
 
  ** terminateInstanceOnFailure **   <a name="imagebuilder-Type-InfrastructureConfiguration-terminateInstanceOnFailure"></a>

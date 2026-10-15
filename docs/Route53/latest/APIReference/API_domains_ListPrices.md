@@ -9,8 +9,11 @@ Lists the following prices for either all the TLDs supported by Route 53, or th
 + Registration
 + Transfer
 + Owner change
-+ Domain renewal
-+ Domain restoration
++ Renewal
++ Restoration
+
+**Note**
+The prices that `ListPrices` returns are the standard rates for a TLD. `ListPrices` doesn't return registry premium prices, which apply to individual domain names rather than to a TLD. To get accurate pricing for a specific domain name, including premium prices, call `GetDomainPrices`.
 
 ## Request Syntax
 <a name="API_domains_ListPrices_RequestSyntax"></a>
@@ -61,24 +64,29 @@ Required: No
       {
          "ChangeOwnershipPrice": {
             "Currency": "string",
-            "Price": number
+            "Price": number,
+            "PriceType": "string"
          },
          "Name": "string",
          "RegistrationPrice": {
             "Currency": "string",
-            "Price": number
+            "Price": number,
+            "PriceType": "string"
          },
          "RenewalPrice": {
             "Currency": "string",
-            "Price": number
+            "Price": number,
+            "PriceType": "string"
          },
          "RestorationPrice": {
             "Currency": "string",
-            "Price": number
+            "Price": number,
+            "PriceType": "string"
          },
          "TransferPrice": {
             "Currency": "string",
-            "Price": number
+            "Price": number,
+            "PriceType": "string"
          }
       }
    ]

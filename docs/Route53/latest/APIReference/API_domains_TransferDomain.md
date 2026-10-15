@@ -71,6 +71,10 @@ If the transfer is successful, this method returns an operation ID that you can 
       "State": "{{string}}",
       "ZipCode": "{{string}}"
    },
+   "Consent": {
+      "Currency": "{{string}}",
+      "MaxPrice": {{number}}
+   },
    "DomainName": "{{string}}",
    "DurationInYears": {{number}},
    "IdnLangCode": "{{string}}",
@@ -158,6 +162,11 @@ Provides detailed contact information.
 Type: [ContactDetail](API_domains_ContactDetail.md) object
 Required: No
 
+ ** [Consent](#API_domains_TransferDomain_RequestSyntax) **   <a name="Route53Domains-domains_TransferDomain-request-Consent"></a>
+Specifies the maximum price that you agree to pay to transfer the domain name to Route 53. This element is required if the domain has registry premium pricing, and optional if the domain is priced at the standard rate for its TLD. If you include it and the transfer price is more than `MaxPrice`, the request fails.
+Type: [Consent](API_domains_Consent.md) object
+Required: No
+
  ** [DomainName](#API_domains_TransferDomain_RequestSyntax) **   <a name="Route53Domains-domains_TransferDomain-request-DomainName"></a>
 The name of the domain that you want to transfer to Route 53. The top-level domain (TLD), such as .com, must be a TLD that Route 53 supports. For a list of supported TLDs, see [Domains that You Can Register with Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-tld-list.html) in the *Amazon Route 53 Developer Guide*.
 The domain name can contain only the following characters:
@@ -180,7 +189,7 @@ Required: No
  ** [IdnLangCode](#API_domains_TransferDomain_RequestSyntax) **   <a name="Route53Domains-domains_TransferDomain-request-IdnLangCode"></a>
 Reserved for future use.
 Type: String
-Pattern: `|[A-Za-z]{2,3}`
+Pattern: `(|[A-Za-z]{2,3})`
 Required: No
 
  ** [Nameservers](#API_domains_TransferDomain_RequestSyntax) **   <a name="Route53Domains-domains_TransferDomain-request-Nameservers"></a>

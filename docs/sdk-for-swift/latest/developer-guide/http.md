@@ -14,7 +14,7 @@ The AWS SDK for Swift supports two types of timeout on HTTP clients. These are c
 
 ```
         do {
-            let config = try await S3Client.S3ClientConfiguration(
+            let config = try await S3Client.S3ClientConfig(
                 region: region,
                 httpClientConfiguration: HttpClientConfiguration(
                     connectTimeout: 2,
@@ -49,7 +49,7 @@ import AWSS3
 import SmithyHTTPAPI
 import AwsCommonRuntimeKit
 
-        let config = try await S3Client.S3ClientConfiguration(
+        let config = try await S3Client.S3ClientConfig(
             region: region,
             httpClientConfiguration: HttpClientConfiguration(
                 defaultHeaders: Headers(

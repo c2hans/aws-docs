@@ -39,7 +39,7 @@ Required: Yes
  ** [IdnLangCode](#API_domains_CheckDomainAvailability_RequestSyntax) **   <a name="Route53Domains-domains_CheckDomainAvailability-request-IdnLangCode"></a>
 Reserved for future use.
 Type: String
-Pattern: `|[A-Za-z]{2,3}`
+Pattern: `(|[A-Za-z]{2,3})`
 Required: No
 
 ## Response Syntax
@@ -47,7 +47,12 @@ Required: No
 
 ```
 {
-   "Availability": "string"
+   "Availability": "string",
+   "Price": {
+      "Currency": "string",
+      "Price": number,
+      "PriceType": "string"
+   }
 }
 ```
 
@@ -85,6 +90,11 @@ The domain name is forbidden.
 Type: String
 Valid Values: `AVAILABLE | AVAILABLE_RESERVED | AVAILABLE_PREORDER | UNAVAILABLE | UNAVAILABLE_PREMIUM | UNAVAILABLE_RESTRICTED | RESERVED | DONT_KNOW | INVALID_NAME_FOR_TLD | PENDING`
 
+ ** [Price](#API_domains_CheckDomainAvailability_ResponseSyntax) **   <a name="Route53Domains-domains_CheckDomainAvailability-response-Price"></a>
+The price to register the domain name, in the currency that `Currency` specifies. If the domain has registry premium pricing, this price is different from the standard rate for the TLD that `ListPrices` returns. Use `PriceType` to determine which rate applies.
+This element is returned only when `Availability` is `AVAILABLE`.
+Type: [PriceWithCurrency](API_domains_PriceWithCurrency.md) object
+
 ## Errors
 <a name="API_domains_CheckDomainAvailability_Errors"></a>
 
@@ -94,6 +104,14 @@ For information about the errors that are common to all actions, see [Common Err
 The requested item is not acceptable. For example, for APIs that accept a domain name, the request might specify a domain name that doesn't belong to the account that submitted the request. For `AcceptDomainTransferFromAnotherAwsAccount`, the password might be invalid.
  ** message **
 The requested item is not acceptable. For example, for an OperationId it might refer to the ID of an operation that is already completed. For a domain name, it might not be a valid domain name or belong to the requester account.
+HTTP Status Code: 400
+
+ ** TLDInMaintenance **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** message **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** tld **
+The top-level domain that is currently undergoing maintenance.
 HTTP Status Code: 400
 
  ** UnsupportedTLD **

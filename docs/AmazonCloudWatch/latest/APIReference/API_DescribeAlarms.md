@@ -102,6 +102,13 @@ Required: No
 {
    "CompositeAlarms": [
       {
+         "ActionConfiguration": {
+            "AlarmTagsPropagation": {
+               "Enabled": boolean,
+               "ExcludedTagKeys": [ "string" ],
+               "IncludedTagKeys": [ "string" ]
+            }
+         },
          "ActionsEnabled": boolean,
          "ActionsSuppressedBy": "string",
          "ActionsSuppressedReason": "string",
@@ -125,6 +132,13 @@ Required: No
    ],
    "LogAlarms": [
       {
+         "ActionConfiguration": {
+            "AlarmTagsPropagation": {
+               "Enabled": boolean,
+               "ExcludedTagKeys": [ "string" ],
+               "IncludedTagKeys": [ "string" ]
+            }
+         },
          "ActionLogLineCount": number,
          "ActionLogLineRoleArn": "string",
          "ActionsEnabled": boolean,
@@ -172,6 +186,13 @@ Required: No
    ],
    "MetricAlarms": [
       {
+         "ActionConfiguration": {
+            "AlarmTagsPropagation": {
+               "Enabled": boolean,
+               "ExcludedTagKeys": [ "string" ],
+               "IncludedTagKeys": [ "string" ]
+            }
+         },
          "ActionsEnabled": boolean,
          "AlarmActions": [ "string" ],
          "AlarmArn": "string",

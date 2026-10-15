@@ -163,7 +163,7 @@ The Amazon Resource Name (ARN) of the cluster placement group in which to create
 The tags to apply to the Capacity Reservation during launch.
 *Required*: No
 *Type*: Array of [TagSpecification](aws-properties-ec2-capacityreservation-tagspecification.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tenancy`  <a name="cfn-ec2-capacityreservation-tenancy"></a>
 Indicates the tenancy of the Capacity Reservation. A Capacity Reservation can have one of the following tenancy settings:

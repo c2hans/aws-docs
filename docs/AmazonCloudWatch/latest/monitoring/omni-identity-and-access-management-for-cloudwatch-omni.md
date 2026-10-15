@@ -71,7 +71,7 @@ The space operator role carries `CloudWatchOmniSpaceAccessPolicy` as its base po
 
 | Managed policy | What it grants | When it is attached |
 | --- | --- | --- |
-| CloudWatchOmniSpaceAccessPolicy | The space experience — space and access-grant management, telemetry queries, the context graph, alerts, dashboards, access profiles, views, threads, and integrations — together with evaluation management. It also carries the supporting permissions those need in other services, including CloudWatch Logs, AWS KMS, and Secrets Manager. | Always. This is the base policy. |
+| CloudWatchOmniSpaceAccessPolicy | The space experience — space and access-grant management, telemetry queries, the context graph, alerts, dashboards, access profiles, views, threads, and integrations — together with evaluation management. It also carries the supporting permissions those need in other services, including CloudWatch Logs, AWS KMS, Secrets Manager, IAM Identity Center, and Amazon SNS. | Always. This is the base policy. |
 | CloudWatchOmniModelInferencePolicy | Model inference only: invoking foundation models and inference profiles in Amazon Bedrock, including streaming responses, and invoking models served through Amazon Bedrock Mantle. It grants nothing else. | Only for spaces that use the prompt playground or run evaluations with custom evaluators. A view-only space does not receive it. |
 
 Keeping inference in its own policy means that a space can set up and view its evaluation configuration without holding permission to invoke a model. Only running a model requires the second policy.

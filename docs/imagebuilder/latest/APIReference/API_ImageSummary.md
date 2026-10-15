@@ -105,6 +105,7 @@ Required: No
  ** version **   <a name="imagebuilder-Type-ImageSummary-version"></a>
 The version of the image.
 Type: String
+Length Constraints: Minimum length of 5. Maximum length of 64.
 Pattern: `^[0-9]+\.[0-9]+\.[0-9]+(?:/[0-9]+)?$`
 Required: No
 

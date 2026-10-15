@@ -20,6 +20,15 @@ For more information, see [Prefill guides for after contact work using conversat
 ## September 2026 Updates
 <a name="sep26-release-notes"></a>
 
+### Amazon Connect Customer now supports invoking a flow module as a data request in the agentic CX designer
+<a name="sep26-flow-module-data-request"></a>
+
+With Connect Customer, you can now invoke an Connect Customer flow module as a data request in the agentic CX designer. This lets a conversational AI application reuse existing flow module logic during a voice or chat conversation instead of rebuilding that logic. For example, a data request can call a flow module that looks up a customer's account details and returns the result to the conversation.
+
+For more information, see [Data requests](https://docs.aws.amazon.com/connect/latest/adminguide/acxd-data-requests.html).
+
+Available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), and Europe (London).
+
 ### Connect Customer Global Resiliency now routes contacts across two active AWS Regions
 <a name="sep26-global-routing-acgr"></a>
 

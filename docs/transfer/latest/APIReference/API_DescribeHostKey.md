@@ -49,6 +49,8 @@ Required: Yes
       "Description": "string",
       "HostKeyFingerprint": "string",
       "HostKeyId": "string",
+      "SecretId": "string",
+      "StorageType": "string",
       "Tags": [
          {
             "Key": "string",

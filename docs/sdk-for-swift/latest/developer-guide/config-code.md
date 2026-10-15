@@ -86,10 +86,10 @@ The following example creates a new Amazon S3 client configured with the followi
 
         await SDKLoggingSystem().initialize(logLevel: .debug)
 
-        let config: S3Client.S3ClientConfiguration
+        let config: S3Client.S3ClientConfig
 
         do {
-            config = try await S3Client.S3ClientConfiguration(
+            config = try await S3Client.S3ClientConfig(
                 awsRetryMode: .standard,
                 maxAttempts: 3,
                 region: "us-east-1"

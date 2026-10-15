@@ -50,5 +50,5 @@ The channels that players can use as tiles in this multiview channel's output. E
 *Required*: Yes
 *Type*: Array of String
 *Minimum*: `1 | 1`
-*Maximum*: `256 | 10`
+*Maximum*: `256 | 50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -544,6 +544,7 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
+| 2.18.4 |  **Bug fixes and improvements**<br />   Fixes an issue where the nucleus fails a deployment instead of retrying when a Docker image download is interrupted by a network error or fails for an unrecognized reason.     |
 | 2.18.3 |  **New features**<br />   Adds the `bootConfigTlogCompactionThresholdBytes` configuration parameter to enable configuration transaction log compaction at boot, which reclaims disk space on core devices.   <br />**Bug fixes and improvements**<br />   Fixes an issue where a failed first deployment could cause the nucleus to lose device group membership and remove installed components after a restart.     |
 | 2.18.2 |  **Bug fixes and improvements**<br />   Fixes an issue where the nucleus could write unchanged configuration values to the configuration store.     |
 | 2.18.1 |  **Bug fixes and improvements**<br />   Fixes an issue where the nucleus might fail to fetch credentials after a transient connection failure.     |

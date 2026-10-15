@@ -43,6 +43,7 @@ Updates the specified fields for the specified stack.
    "FeedbackURL": "{{string}}",
    "Name": "{{string}}",
    "RedirectURL": "{{string}}",
+   "StorageConnectorAuthentication": "{{string}}",
    "StorageConnectors": [
       {
          "ConnectorType": "{{string}}",
@@ -90,7 +91,7 @@ Required: No
  ** [AttributesToDelete](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-AttributesToDelete"></a>
 The stack attributes to delete.
 Type: Array of strings
-Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | AGENT_ACCESS_CONFIG`
+Valid Values: `STORAGE_CONNECTORS | STORAGE_CONNECTOR_HOMEFOLDERS | STORAGE_CONNECTOR_GOOGLE_DRIVE | STORAGE_CONNECTOR_ONE_DRIVE | REDIRECT_URL | FEEDBACK_URL | THEME_NAME | USER_SETTINGS | EMBED_HOST_DOMAINS | IAM_ROLE_ARN | ACCESS_ENDPOINTS | STREAMING_EXPERIENCE_SETTINGS | AGENT_ACCESS_CONFIG | STORAGE_CONNECTOR_AUTHENTICATION`
 Required: No
 
  ** [DeleteStorageConnectors](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-DeleteStorageConnectors"></a>
@@ -135,6 +136,12 @@ Required: Yes
 The URL that users are redirected to after their streaming session ends.
 Type: String
 Length Constraints: Maximum length of 1000.
+Required: No
+
+ ** [StorageConnectorAuthentication](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-StorageConnectorAuthentication"></a>
+Specifies whether users' cloud storage authentication persists across streaming sessions. When you specify FORCE\_REAUTHENTICATION, WorkSpaces Applications removes the stored authentication for the stack's OneDrive and Google Drive connectors when a user's session ends. The user links their cloud storage again on their next session. The default is REUSE\_CREDENTIALS. To clear this attribute, add STORAGE\_CONNECTOR\_AUTHENTICATION to AttributesToDelete.
+Type: String
+Valid Values: `FORCE_REAUTHENTICATION | REUSE_CREDENTIALS`
 Required: No
 
  ** [StorageConnectors](#API_UpdateStack_RequestSyntax) **   <a name="WorkSpacesApplications-UpdateStack-request-StorageConnectors"></a>
@@ -197,6 +204,7 @@ Required: No
             "ErrorMessage": "string"
          }
       ],
+      "StorageConnectorAuthentication": "string",
       "StorageConnectors": [
          {
             "ConnectorType": "string",

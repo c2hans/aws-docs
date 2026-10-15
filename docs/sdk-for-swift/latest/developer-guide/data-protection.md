@@ -16,3 +16,14 @@ For data protection purposes, we recommend that you protect AWS account credenti
 + If you require FIPS 140-3 validated cryptographic modules when accessing AWS through a command line interface or an API, use a FIPS endpoint. For more information about the available FIPS endpoints, see [Federal Information Processing Standard (FIPS) 140-3](https://aws.amazon.com/compliance/fips/).
 
 We strongly recommend that you never put confidential or sensitive information, such as your customers' email addresses, into tags or free-form text fields such as a **Name** field. This includes when you work with SDK for Swift or other AWS services using the console, API, AWS CLI, or AWS SDKs. Any data that you enter into tags or free-form text fields used for names may be used for billing or diagnostic logs. If you provide a URL to an external server, we strongly recommend that you do not include credentials information in the URL to validate your request to that server.
+
+## Encryption in transit
+<a name="data-protection-encryption-in-transit"></a>
+
+The SDK for Swift uses the TLS implementation of the platform that your code runs on:
++ On Apple platforms, the SDK sends requests using `URLSession`.
++ On Linux, the SDK uses the AWS Common Runtime (AWS CRT).
+
+The TLS versions available to your application depend on that platform's TLS support. To use a specific TLS version, make sure that the platform your application runs on supports it.
+
+TLS 1.3 is a prerequisite for enabling post-quantum cryptography, which might require additional actions or configurations. For information about post-quantum TLS support in the AWS SDKs, see [Enabling hybrid post-quantum TLS](https://docs.aws.amazon.com/sdkref/latest/guide/pqtls-details.html) in the *AWS SDKs and Tools Reference Guide*.

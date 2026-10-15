@@ -80,6 +80,12 @@ The errors for the stack.
 Type: Array of [StackError](API_StackError.md) objects
 Required: No
 
+ ** StorageConnectorAuthentication **   <a name="WorkSpacesApplications-Type-Stack-StorageConnectorAuthentication"></a>
+Specifies whether users' cloud storage authentication persists across streaming sessions. When this attribute is FORCE\_REAUTHENTICATION, WorkSpaces Applications removes the stored authentication for the stack's OneDrive and Google Drive connectors when a user's session ends. The user links their cloud storage again on their next session. The default is REUSE\_CREDENTIALS.
+Type: String
+Valid Values: `FORCE_REAUTHENTICATION | REUSE_CREDENTIALS`
+Required: No
+
  ** StorageConnectors **   <a name="WorkSpacesApplications-Type-Stack-StorageConnectors"></a>
 The storage connectors to enable.
 Type: Array of [StorageConnector](API_StorageConnector.md) objects

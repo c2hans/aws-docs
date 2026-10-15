@@ -40,7 +40,7 @@ func converse(_ textPrompt: String) async throws -> String {
 
     // Create a Bedrock Runtime client in the AWS Region you want to use.
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Set the model ID.
@@ -101,7 +101,7 @@ func printConverseStream(_ textPrompt: String) async throws {
 
     // Create a Bedrock Runtime client in the AWS Region you want to use.
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Set the model ID.
@@ -179,8 +179,8 @@ struct NovaImageOutput: Decodable {
 
 func generateImage(_ textPrompt: String) async throws {
     // Create a Bedrock Runtime client in the AWS Region you want to use.
-    let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+    var config =
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     config.awsCredentialIdentityResolver = try SSOAWSCredentialIdentityResolver()
 
     let client = BedrockRuntimeClient(config: config)
@@ -302,7 +302,7 @@ func queryJobStatus(
 func main() async throws {
     // Create a Bedrock Runtime client
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Specify the S3 location for the output video
@@ -374,7 +374,7 @@ func converse(_ textPrompt: String) async throws -> String {
 
     // Create a Bedrock Runtime client in the AWS Region you want to use.
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Set the model ID.
@@ -435,7 +435,7 @@ func printConverseStream(_ textPrompt: String) async throws {
 
     // Create a Bedrock Runtime client in the AWS Region you want to use.
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Set the model ID.
@@ -510,7 +510,7 @@ func converse(_ textPrompt: String) async throws -> String {
 
     // Create a Bedrock Runtime client in the AWS Region you want to use.
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Set the model ID.
@@ -571,7 +571,7 @@ func printConverseStream(_ textPrompt: String) async throws {
 
     // Create a Bedrock Runtime client in the AWS Region you want to use.
     let config =
-        try await BedrockRuntimeClient.BedrockRuntimeClientConfiguration()
+        try await BedrockRuntimeClient.BedrockRuntimeClientConfig()
     let client = BedrockRuntimeClient(config: config)
 
     // Set the model ID.

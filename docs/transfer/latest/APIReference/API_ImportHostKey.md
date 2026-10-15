@@ -14,7 +14,9 @@ Adds a host key to the server that's specified by the `ServerId` parameter.
 {
    "Description": "{{string}}",
    "HostKeyBody": "{{string}}",
+   "KmsKey": "{{string}}",
    "ServerId": "{{string}}",
+   "StorageType": "{{string}}",
    "Tags": [
       {
          "Key": "{{string}}",
@@ -45,12 +47,25 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 4096.
 Required: Yes
 
+ ** [KmsKey](#API_ImportHostKey_RequestSyntax) **   <a name="TransferFamily-ImportHostKey-request-KmsKey"></a>
+The Amazon Resource Name (ARN) of the AWS KMS key used to encrypt the AWS Secrets Manager secret that stores the host key. If you specify a customer managed key, its key policy must allow the `AWSServiceRoleForTransfer` service-linked role to decrypt the secret. If you don't specify a value, AWS Transfer Family uses the AWS managed key for AWS Secrets Manager.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 1600.
+Pattern: `arn:\S+`
+Required: No
+
  ** [ServerId](#API_ImportHostKey_RequestSyntax) **   <a name="TransferFamily-ImportHostKey-request-ServerId"></a>
 The identifier of the server that contains the host key that you are importing.
 Type: String
 Length Constraints: Fixed length of 19.
 Pattern: `s-([0-9a-f]{17})`
 Required: Yes
+
+ ** [StorageType](#API_ImportHostKey_RequestSyntax) **   <a name="TransferFamily-ImportHostKey-request-StorageType"></a>
+Specifies whether the host key is stored by AWS Transfer Family (`SERVICE_MANAGED`) or in AWS Secrets Manager (`SECRETS_MANAGER`). When you specify `SECRETS_MANAGER`, AWS Transfer Family stores the private host key material in an AWS Secrets Manager secret.
+Type: String
+Valid Values: `SERVICE_MANAGED | SECRETS_MANAGER`
+Required: No
 
  ** [Tags](#API_ImportHostKey_RequestSyntax) **   <a name="TransferFamily-ImportHostKey-request-Tags"></a>
 Key-value pairs that can be used to group and search for host keys.

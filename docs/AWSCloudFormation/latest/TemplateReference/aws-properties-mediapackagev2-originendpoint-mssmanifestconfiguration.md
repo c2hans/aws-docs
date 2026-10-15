@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[FilterConfiguration](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration)" : {{FilterConfiguration}},
+  "[FilterConfiguration](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration)" : {{MssFilterConfiguration}},
   "[ManifestLayout](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestlayout)" : {{String}},
   "[ManifestName](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestname)" : {{String}},
   "[ManifestWindowSeconds](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestwindowseconds)" : {{Integer}}
@@ -31,7 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [FilterConfiguration](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration): {{
-    FilterConfiguration}}
+    MssFilterConfiguration}}
   [ManifestLayout](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestlayout): {{String}}
   [ManifestName](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestname): {{String}}
   [ManifestWindowSeconds](#cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestwindowseconds): {{Integer}}
@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `FilterConfiguration`  <a name="cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-filterconfiguration"></a>
 Property description not available.
 *Required*: No
-*Type*: [FilterConfiguration](aws-properties-mediapackagev2-originendpoint-filterconfiguration.md)
+*Type*: [MssFilterConfiguration](aws-properties-mediapackagev2-originendpoint-mssfilterconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ManifestLayout`  <a name="cfn-mediapackagev2-originendpoint-mssmanifestconfiguration-manifestlayout"></a>

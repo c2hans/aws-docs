@@ -82,11 +82,6 @@ task align {
 }
 ```
 
-In this example, **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** tells the command which resource path was selected (for example, `"nvidia-l40s"` or `"cpu"`).
-
-**Note**
-The Docker image must support both accelerator and CPU code paths if your fallback order contains a CPU profile. Ensure your container includes the required tooling for all resource profiles in the list.
-
 ------
 #### [ Nextflow ]
 
@@ -131,6 +126,11 @@ process {
 ```
 
 ------
+
+In these examples, **AWS\_HEALTHOMICS\_RESOURCE\_TYPE** tells the command which resource path was selected (for example, `"nvidia-l40s"` or `"cpu"`).
+
+**Note**
+The Docker image must support both accelerator and CPU code paths if your fallback order contains a CPU profile. Ensure your container includes the required tooling for all resource profiles in the list.
 
 ## Per-profile field reference
 <a name="advanced-resource-configuration-field-reference"></a>
@@ -223,6 +223,8 @@ In WDL, if all profiles are exhausted on the first engine attempt with no instan
 
 ## Best practices
 <a name="advanced-resource-configuration-best-practices"></a>
+
+Follow these best practices when you configure resource fallback:
 + **Avoid multi-GPU bundle types in fallback order.** Accelerator types that span multiple instance families (for example, `nvidia-t4-a10g-l4`) are not recommended inside **omicsResourceFallbackOrder**. Use single-family types instead. For details on available accelerator types, see [Task accelerators in a HealthOmics workflow definition](task-accelerators.md).
 + **Set appropriate wait timeouts.** For high-priority accelerator profiles, increase **omicsResourceWaitTimeoutInMin** to give HealthOmics more time to find capacity.
 + **Place CPU profiles last.** If you include a CPU-only fallback, it must be the last entry so accelerators are preferred when available.
@@ -230,6 +232,8 @@ In WDL, if all profiles are exhausted on the first engine attempt with no instan
 
 ## Limitations
 <a name="advanced-resource-configuration-limitations"></a>
+
+The following limitations apply:
 + In WDL, **omicsResourceFallbackOrder** is not supported within **scatter** blocks. It is available only at the task level.
 + The directive is supported for WDL and Nextflow. CWL support is planned.
 + Instance-type names (for example, `omics.g6e.4xlarge`) are not accepted as resource values. You must use the per-profile field syntax described on this page.

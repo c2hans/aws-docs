@@ -38,8 +38,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::Lambda::ResourcePolicy",
   "Properties" : {
-      "[FunctionResourceArn](#cfn-lambda-resourcepolicy-functionresourcearn)" : {{String}},
-      "[PolicyDocument](#cfn-lambda-resourcepolicy-policydocument)" : {{Json}}
+      "[PolicyDocument](#cfn-lambda-resourcepolicy-policydocument)" : {{Json}},
+      "[ResourceArn](#cfn-lambda-resourcepolicy-resourcearn)" : {{String}}
     }
 }
 ```
@@ -50,19 +50,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::Lambda::ResourcePolicy
 Properties:
-  [FunctionResourceArn](#cfn-lambda-resourcepolicy-functionresourcearn): {{String}}
   [PolicyDocument](#cfn-lambda-resourcepolicy-policydocument): {{Json}}
+  [ResourceArn](#cfn-lambda-resourcepolicy-resourcearn): {{String}}
 ```
 
 ## Properties
 <a name="aws-resource-lambda-resourcepolicy-properties"></a>
-
-`FunctionResourceArn`  <a name="cfn-lambda-resourcepolicy-functionresourcearn"></a>
-The Amazon Resource Name (ARN) of the web function.
-*Required*: Yes
-*Type*: String
-*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PolicyDocument`  <a name="cfn-lambda-resourcepolicy-policydocument"></a>
 The policy document you want to add to your Lambda resource. This is formatted as a JSON string.
@@ -70,6 +63,22 @@ For more information, see [Working with resource-based policies in Lambda](https
 *Required*: Yes
 *Type*: Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResourceArn`  <a name="cfn-lambda-resourcepolicy-resourcearn"></a>
+The Amazon Resource Name (ARN) of the Lambda resource you want to add the policy to. You can specify one of the following resource types:
++ **Lambda event function** – A qualified or unqualified event function ARN.
+
+  Pattern: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$`
++ **Lambda web function** – A web function ARN. Web function ARNs don't have a qualified form.
+
+  Pattern: `^(?:arn:(?:aws[a-zA-Z-]*)?:lambda:)?(?:[a-z]{2}(?:(?:-gov)|(?:-iso(?:[a-z]?)))?-[a-z]+-\d{1}:)?(?:\d{12}:)?web-function/[a-zA-Z0-9-_]+$`
+The value must be a complete ARN, and the operation does not accept wildcard characters.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$|^(?:arn:(?:aws[a-zA-Z-]*)?:lambda:)?(?:[a-z]{2}(?:(?:-gov)|(?:-iso(?:[a-z]?)))?-[a-z]+-\d{1}:)?(?:\d{12}:)?web-function/[a-zA-Z0-9-_]+$`
+*Minimum*: `12`
+*Maximum*: `1024`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-lambda-resourcepolicy-return-values"></a>

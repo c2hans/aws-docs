@@ -1084,7 +1084,7 @@ For more information about the arguments that you can specify, see [Installer ar
    services:
      aws.greengrass.Nucleus:
        componentType: "NUCLEUS"
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          awsRegion: "{{us-west-2}}"
          iotRoleAlias: "{{GreengrassCoreTokenExchangeRoleAlias}}"
@@ -1095,7 +1095,7 @@ For more information about the arguments that you can specify, see [Installer ar
    Then, do the following:
    + Replace each instance of `{{/greengrass/v2}}` with the Greengrass root folder.
    + Replace {{MyGreengrassCore}} with the name of the AWS IoT thing.
-   + Replace {{2.18.0}} with the version of the AWS IoT Greengrass Core software.
+   + Replace {{2.18.4}} with the version of the AWS IoT Greengrass Core software.
    + Replace {{us-west-2}} with the AWS Region where you created the resources.
    + Replace {{GreengrassCoreTokenExchangeRoleAlias}} with the name of the token exchange role alias.
    + Replace the `iotDataEndpoint` with your AWS IoT data endpoint.
@@ -1114,7 +1114,7 @@ In this configuration file, you can customize other nucleus configuration option
    services:
      aws.greengrass.Nucleus:
        componentType: "NUCLEUS"
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          awsRegion: "{{us-west-2}}"
          iotRoleAlias: "{{GreengrassCoreTokenExchangeRoleAlias}}"
@@ -1250,7 +1250,7 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
    services:
      aws.greengrass.Nucleus:
        componentType: "NUCLEUS"
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          awsRegion: "{{us-west-2}}"
          iotRoleAlias: "{{GreengrassCoreTokenExchangeRoleAlias}}"
@@ -1268,7 +1268,7 @@ This feature is available for v2.5.3 and later of the [Greengrass nucleus compon
    + Replace each instance of {{iotdevicekey}} in the PKCS\#11 URIs with the object label where you created the private key and imported the certificate.
    + Replace each instance of `{{/greengrass/v2}}` with the Greengrass root folder.
    + Replace {{MyGreengrassCore}} with the name of the AWS IoT thing.
-   + Replace {{2.18.0}} with the version of the AWS IoT Greengrass Core software.
+   + Replace {{2.18.4}} with the version of the AWS IoT Greengrass Core software.
    + Replace {{us-west-2}} with the AWS Region where you created the resources.
    + Replace {{GreengrassCoreTokenExchangeRoleAlias}} with the name of the token exchange role alias.
    + Replace the `iotDataEndpoint` with your AWS IoT data endpoint.
@@ -1288,7 +1288,7 @@ In this configuration file, you can customize other nucleus configuration option
    services:
      aws.greengrass.Nucleus:
        componentType: "NUCLEUS"
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          awsRegion: "{{us-west-2}}"
          iotRoleAlias: "{{GreengrassCoreTokenExchangeRoleAlias}}"

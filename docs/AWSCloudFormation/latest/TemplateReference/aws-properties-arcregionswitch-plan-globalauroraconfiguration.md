@@ -49,7 +49,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-arcregionswitch-plan-globalauroraconfiguration-properties"></a>
 
 `Behavior`  <a name="cfn-arcregionswitch-plan-globalauroraconfiguration-behavior"></a>
-The behavior for a global database, that is, only allow switchover or also allow failover.
+The default behavior for the Aurora global database execution block. Valid values:
++ `switchoverOnly` - Calls `SwitchoverGlobalCluster` for a zero-data-loss switchover during graceful execution.
++ `failover` - Calls `FailoverGlobalCluster` with `AllowDataLoss` set to `true`. This operation might cause data loss, including during graceful execution.
 *Required*: Yes
 *Type*:
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -87,7 +89,7 @@ The timeout value specified for the configuration.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Ungraceful`  <a name="cfn-arcregionswitch-plan-globalauroraconfiguration-ungraceful"></a>
-The settings for ungraceful execution.
+The behavior to use when the plan runs in ungraceful mode. If you omit this value, Region switch uses the value of `behavior`.
 *Required*: No
 *Type*: [GlobalAuroraUngraceful](aws-properties-arcregionswitch-plan-globalauroraungraceful.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

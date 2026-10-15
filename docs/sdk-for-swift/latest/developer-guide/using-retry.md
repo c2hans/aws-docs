@@ -60,20 +60,20 @@ import SmithyRetriesAPI
 Then create the custom configuration. This example's `S3ClientConfig` asks for the client to make up to three attempts for each action, using the `adaptive` retry mode.
 
 ```
-        let config: S3Client.S3ClientConfiguration
+        let config: S3Client.S3ClientConfig
 
         // Create an Amazon S3 client configuration object that specifies the
         // adaptive retry mode and sets the maximum number of attempts to 3.
         // If that fails, create a default configuration instead.
 
         do {
-            config = try await S3Client.S3ClientConfiguration(
+            config = try await S3Client.S3ClientConfig(
                 awsRetryMode: .adaptive,
                 maxAttempts: 3
             )
         } catch {
             do {
-                config = try await S3Client.S3ClientConfiguration()
+                config = try await S3Client.S3ClientConfig()
             } catch {
                 print("Error: Unable to configure Amazon S3.")
                 dump(error)

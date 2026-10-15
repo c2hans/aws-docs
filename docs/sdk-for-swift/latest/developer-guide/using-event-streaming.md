@@ -145,7 +145,7 @@ Transcription is handled by the `transcribe()` function:
         // Create the Transcribe Streaming client.
 
         let client = TranscribeStreamingClient(
-            config: try await TranscribeStreamingClient.TranscribeStreamingClientConfiguration(
+            config: try await TranscribeStreamingClient.TranscribeStreamingClientConfig(
                 region: region
             )
         )

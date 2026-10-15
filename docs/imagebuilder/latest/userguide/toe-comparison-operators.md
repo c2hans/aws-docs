@@ -82,11 +82,10 @@ value: 'Testing, testing...   '
 ```
 
 **stringLessThan**
-Tests if the string specified for `stringLessThan` is less than the string specified in the `value` parameter. For example:
+Tests if the string specified in the `value` parameter is less than the string specified for `stringLessThan`. For example:
 
 ```
-# Evaluates to true
-# This comparison operator isn't case sensitive
+# Evaluates to false - since the comparison isn't case sensitive, 'A' is equal to 'a'
 stringLessThan: 'A'
 value: 'a'
 
@@ -105,7 +104,7 @@ value: 'a'
 ```
 
 **stringLessThanEquals**
-Tests if the string specified for `stringLessThanEquals` is less than or equal to the string specified in the `value` parameter. For example:
+Tests if the string specified in the `value` parameter is less than or equal to the string specified for `stringLessThanEquals`. For example:
 
 ```
 # Evaluates to true - 'a' is equal to 'a'
@@ -130,7 +129,7 @@ value: 'a'
 ```
 
 **stringGreaterThan**
-Tests if the string specified for `stringGreaterThan` is greater than the string specified in the `value` parameter. For example:
+Tests if the string specified in the `value` parameter is greater than the string specified for `stringGreaterThan`. For example:
 
 ```
 # Evaluates to false - since the comparison isn't case sensitive, 'A' is equal to 'a'
@@ -151,7 +150,7 @@ value: '0'
 ```
 
 **stringGreaterThanEquals**
-Tests if the string specified for `stringGreaterThanEquals` is greater than or equal to the string specified in the `value` parameter. For example:
+Tests if the string specified in the `value` parameter is greater than or equal to the string specified for `stringGreaterThanEquals`. For example:
 
 ```
 # Evaluates to true - 'a' is equal to 'A'
@@ -172,7 +171,7 @@ value: '0'
 ```
 
 **patternMatches**
-Tests if the string specified in the `value` parameter matches the regex pattern specified for `patternMatches`. The comparison uses to the [Golang regexp package](https://pkg.go.dev/regexp), which conforms to the RE2 syntax. For more information about RE2 rules, see the [google / re2](https://github.com/google/re2/wiki/Syntax) repository in *GitHub*.
+Tests if the string specified in the `value` parameter matches the regex pattern specified for `patternMatches`. The comparison uses the [Golang regexp package](https://pkg.go.dev/regexp), which conforms to the RE2 syntax. For more information about RE2 rules, see the [google / re2](https://github.com/google/re2/wiki/Syntax) repository in *GitHub*.
 The following example shows a pattern match that returns `true`:
 
 ```
@@ -221,7 +220,7 @@ value: -1
 ```
 
 **numberLessThan**
-Tests if the number specified for `numberLessThan` is less than the number specified in the `value` parameter. For example:
+Tests if the number specified in the `value` parameter is less than the number specified for `numberLessThan`. For example:
 
 ```
 # Evaluates to true
@@ -238,7 +237,7 @@ value: '2'
 ```
 
 **numberLessThanEquals**
-Tests if the number specified for `numberLessThanEquals` is less than or equal to the number specified in the `value` parameter. For example:
+Tests if the number specified in the `value` parameter is less than or equal to the number specified for `numberLessThanEquals`. For example:
 
 ```
 # Evaluates to true
@@ -259,7 +258,7 @@ value: 2.1
 ```
 
 **numberGreaterThan**
-Tests if the number specified for `numberGreaterThan` is greater than the number specified in the `value` parameter. For example:
+Tests if the number specified in the `value` parameter is greater than the number specified for `numberGreaterThan`. For example:
 
 ```
 # Evaluates to true
@@ -276,7 +275,7 @@ value: '1'
 ```
 
 **numberGreaterThanEquals**
-Tests if the number specified for `numberGreaterThanEquals` is greater than or equal to the number specified in the `value` parameter. For example:
+Tests if the number specified in the `value` parameter is greater than or equal to the number specified for `numberGreaterThanEquals`. For example:
 
 ```
 # Evaluates to true
@@ -325,7 +324,7 @@ Tests whether a file exists at the specified path. You can provide an absolute o
 ```
 fileExists: '{{/path/to/file}}'
 ```
-On Linux and macOS systems, this works the same as the following bash command: **-d {{/path/to/file}}**, where **$? == 0** indicates a successful comparison.
+On Linux and macOS systems, this works the same as the following bash command: **-f {{/path/to/file}}**, where **$? == 0** indicates a successful comparison.
 On Windows systems, this works the same as the PowerShell command **Test-Path -Path '{{C:\\path\\to\\file}}' -PathType 'Leaf'**.
 
 **folderExists**

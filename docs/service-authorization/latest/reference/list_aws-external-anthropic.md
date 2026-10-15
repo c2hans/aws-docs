@@ -30,6 +30,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [ArchiveDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to archive a managed agent deployment
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [ArchiveEnvironment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to archive a managed agent environment
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
@@ -86,6 +92,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateBatchInference](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to create a batch inference request
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CreateDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to create a managed agent deployment in a workspace
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -228,6 +240,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to retrieve details of a managed agent deployment or its runs
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetEnvironment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to retrieve details of a managed agent environment
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
@@ -306,6 +324,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
+- **   [ListDeployments](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to list managed agent deployments in a workspace
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
 - **   [ListEnvironments](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to list managed agent environments in a workspace
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
@@ -378,6 +402,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [PauseDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to pause a managed agent deployment
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [ProcessEnvironmentWork](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to process work items in a self-hosted managed agent environment
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
@@ -396,11 +426,23 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [RunDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to trigger a managed agent deployment run
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [TagResource](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to tag a resource
   - **Resource types (\*required):** [workspace](#list_aws-external-anthropic-resource-workspace)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_aws-external-anthropic-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_aws-external-anthropic-aws_TagKeys)
   - **Access level:** Tagging, Write
+
+- **   [UnpauseDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to resume a paused managed agent deployment
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
 
 - **   [UntagResource](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to untag a resource
@@ -410,6 +452,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateAgent](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
   - **Description:** Grants permission to update a managed agent
+  - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateDeployment](https://docs.aws.amazon.com/claude-platform/latest/userguide/iam-actions.html#iam-actions)  **
+  - **Description:** Grants permission to update a managed agent deployment
   - **Resource types (\*required):** [workspace\*](#list_aws-external-anthropic-resource-workspace)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_aws-external-anthropic-aws_ResourceTag___TagKey_)
   - **Access level:** Write

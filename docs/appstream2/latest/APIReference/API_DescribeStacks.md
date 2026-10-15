@@ -82,6 +82,7 @@ Required: No
                "ErrorMessage": "string"
             }
          ],
+         "StorageConnectorAuthentication": "string",
          "StorageConnectors": [
             {
                "ConnectorType": "string",

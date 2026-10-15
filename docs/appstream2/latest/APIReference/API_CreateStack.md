@@ -41,6 +41,7 @@ Creates a stack to start streaming applications to users. A stack consists of an
    "FeedbackURL": "{{string}}",
    "Name": "{{string}}",
    "RedirectURL": "{{string}}",
+   "StorageConnectorAuthentication": "{{string}}",
    "StorageConnectors": [
       {
          "ConnectorType": "{{string}}",
@@ -126,6 +127,12 @@ Type: String
 Length Constraints: Maximum length of 1000.
 Required: No
 
+ ** [StorageConnectorAuthentication](#API_CreateStack_RequestSyntax) **   <a name="WorkSpacesApplications-CreateStack-request-StorageConnectorAuthentication"></a>
+Specifies whether users' cloud storage authentication persists across streaming sessions. When you specify FORCE\_REAUTHENTICATION, WorkSpaces Applications removes the stored authentication for the stack's OneDrive and Google Drive connectors when a user's session ends. The user links their cloud storage again on their next session. The default is REUSE\_CREDENTIALS.
+Type: String
+Valid Values: `FORCE_REAUTHENTICATION | REUSE_CREDENTIALS`
+Required: No
+
  ** [StorageConnectors](#API_CreateStack_RequestSyntax) **   <a name="WorkSpacesApplications-CreateStack-request-StorageConnectors"></a>
 The storage connectors to enable.
 Type: Array of [StorageConnector](API_StorageConnector.md) objects
@@ -200,6 +207,7 @@ Required: No
             "ErrorMessage": "string"
          }
       ],
+      "StorageConnectorAuthentication": "string",
       "StorageConnectors": [
          {
             "ConnectorType": "string",

@@ -118,7 +118,7 @@ The component documents *(conditional)*. This parameter contains a comma-separat
 Valid locations include:
 + local file paths ({{./component-doc-example.yaml}}).
 + S3 URIs (`s3://{{bucket/key}}`).
-+ Image Builder component build version ARNs (arn:aws:imagebuilder:us-west-{{2:123456789012}}:component/{{my-example-component}}/2021.12.02/1).
++ Image Builder component build version ARNs (arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:component/{{my-example-component}}/2021.12.02/1).
 
 **--execution-id**
 Short form: -i
@@ -221,7 +221,7 @@ Short form: -d {{`./doc-1.yaml`}},{{`./doc-n`}}
 The component documents *(required)*. This parameter contains a comma-separated list of file locations for the YAML component documents to run, with no spaces between items. Valid locations include:
 + local file paths ({{./component-doc-example.yaml}})
 + S3 URIs (`s3://{{bucket/key}}`)
-+ Image Builder component build version ARNs (arn:aws:imagebuilder:us-west-{{2:123456789012}}:component/{{my-example-component}}/2021.12.02/1)Options
++ Image Builder component build version ARNs (arn:aws:imagebuilder:{{us-west-2}}:{{123456789012}}:component/{{my-example-component}}/2021.12.02/1)Options
 
 **--help**
 Short form: -h

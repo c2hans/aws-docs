@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 # DomainPrice
 <a name="API_domains_DomainPrice"></a>
 
-Information about the domain price associated with a TLD.
+Information about the prices associated with a TLD or a domain name.
 
 ## Contents
 <a name="API_domains_DomainPrice_Contents"></a>
@@ -16,7 +16,7 @@ Type: [PriceWithCurrency](API_domains_PriceWithCurrency.md) object
 Required: No
 
  ** Name **   <a name="Route53Domains-Type-domains_DomainPrice-Name"></a>
-The name of the TLD for which the prices apply.
+The TLD or domain name that the prices apply to.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No

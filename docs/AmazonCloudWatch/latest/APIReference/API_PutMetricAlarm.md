@@ -32,6 +32,13 @@ You can set an alarm on metrics in the current account, or in another account. T
 
 ```
 {
+   "ActionConfiguration": {
+      "AlarmTagsPropagation": {
+         "Enabled": {{boolean}},
+         "ExcludedTagKeys": [ "{{string}}" ],
+         "IncludedTagKeys": [ "{{string}}" ]
+      }
+   },
    "ActionsEnabled": {{boolean}},
    "AlarmActions": [ "{{string}}" ],
    "AlarmDescription": "{{string}}",
@@ -104,6 +111,11 @@ You can set an alarm on metrics in the current account, or in another account. T
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [ActionConfiguration](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-ActionConfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
+Type: [ActionConfiguration](API_ActionConfiguration.md) object
+Required: No
 
  ** [ActionsEnabled](#API_PutMetricAlarm_RequestSyntax) **   <a name="ACW-PutMetricAlarm-request-ActionsEnabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state. The default is `TRUE`.

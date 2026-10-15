@@ -845,6 +845,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateWebFunction  **
   - **SDK client:** lambda-web
   - **IAM action:**  [lambda:CreateWebFunction](#list_lambda-action-CreateWebFunction)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [lambda:PassNetworkConnector](#list_lambda-action-PassNetworkConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [lambda:TagResource](#list_lambda-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
 
@@ -858,6 +859,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateWebFunctionRevision  **
   - **SDK client:** lambda-web
   - **IAM action:**  [lambda:CreateWebFunctionRevision](#list_lambda-action-CreateWebFunctionRevision)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [lambda:PassNetworkConnector](#list_lambda-action-PassNetworkConnector)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** lambda.amazonaws.com / **Access level:** Write
 
 - **   DeleteResourcePolicy  **

@@ -54,7 +54,7 @@ aws greengrassv2 create-deployment \
   --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" \
   --components '{
     "aws.greengrass.Cli": {
-      "componentVersion": "2.18.0"
+      "componentVersion": "2.18.4"
     }
   }'
 ```
@@ -65,7 +65,7 @@ aws greengrassv2 create-deployment \
 ```
 aws greengrassv2 create-deployment ^
   --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" ^
-  --components "{\"aws.greengrass.Cli\":{\"componentVersion\":\"2.18.0\"}}"
+  --components "{\"aws.greengrass.Cli\":{\"componentVersion\":\"2.18.4\"}}"
 ```
 
 ------
@@ -74,7 +74,7 @@ aws greengrassv2 create-deployment ^
 ```
 aws greengrassv2 create-deployment `
   --target-arn "arn:aws:iot:{{region}}:{{account-id}}:thing/{{MyGreengrassCore}}" `
-  --components '{\"aws.greengrass.Cli\":{\"componentVersion\":\"2.18.0\"}}'
+  --components '{\"aws.greengrass.Cli\":{\"componentVersion\":\"2.18.4\"}}'
 ```
 
 ------

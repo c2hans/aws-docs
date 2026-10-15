@@ -14,7 +14,7 @@ Settings that control how the endpoint routes incoming traffic to the instances 
 Sets how the endpoint routes incoming traffic:
 +  `LEAST_OUTSTANDING_REQUESTS`: The endpoint routes requests to the specific instances that have more capacity to process them.
 +  `RANDOM`: The endpoint routes each request to a randomly chosen instance.
-+  `PREFIX_AWARE`: The endpoint routes requests that share the same prompt prefix to the same instance. When the number of in-flight requests on the selected instance reaches the configured threshold, the endpoint routes the request to an instance with more available capacity.
++  `PREFIX_AWARE`: The endpoint routes requests that share the same prompt prefix to the same instance and, when that instance hosts more than one copy of the invoked inference component, to the same copy. When the number of in-flight requests on the selected instance or copy reaches the `ConcurrencyThreshold` value, the endpoint routes the request to another copy on that instance or to another instance. The endpoint applies prefix-aware routing only when two or more instances can serve the request.
 Type: String
 Valid Values: `LEAST_OUTSTANDING_REQUESTS | RANDOM | PREFIX_AWARE`
 Required: Yes

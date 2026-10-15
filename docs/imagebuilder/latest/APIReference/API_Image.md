@@ -168,6 +168,7 @@ The semantic version has four nodes: <major>.<minor>.<patch>/<build>. You can as
  **Patterns:** You can use any numeric pattern that adheres to the assignment requirements for the nodes that you can assign. For example, you might choose a software version pattern, such as 1.0.0, or a date, such as 2021.01.01.
  **Filtering:** You can use wildcards (x) to specify the most recent versions or nodes when selecting the base image or components for your recipe. When you use a wildcard in any node, all nodes to the right of the first wildcard must also be wildcards.
 Type: String
+Length Constraints: Minimum length of 5. Maximum length of 64.
 Pattern: `^[0-9]+\.[0-9]+\.[0-9]+(?:/[0-9]+)?$`
 Required: No
 

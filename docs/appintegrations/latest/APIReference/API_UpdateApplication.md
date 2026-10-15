@@ -28,6 +28,7 @@ Content-type: application/json
    },
    "ApplicationType": "{{string}}",
    "AuthConfig": {
+      "AudienceOverride": "{{string}}",
       "AuthType": "{{string}}",
       "CredentialProviderIdentifier": "{{string}}"
    },

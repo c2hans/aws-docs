@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/update-image-pipeline-console.html
 ---
 
-# Update AMI image pipelines from the console
+# Update AMI image pipelines in the console
 <a name="update-image-pipeline-console"></a>
 
 After you have created an Image Builder image pipeline for your AMI image, you can make changes to the infrastructure configuration and distribution settings from the Image Builder console.

@@ -199,7 +199,7 @@ To use the IAM Identity Center identity resolver to provide credentials to an AW
 
 ```
         // Get an S3Client with which to access Amazon S3.
-        let configuration = try await S3Client.S3ClientConfiguration(
+        let configuration = try await S3Client.S3ClientConfig(
             awsCredentialIdentityResolver: identityResolver
         )
         let client = S3Client(config: configuration)
@@ -241,7 +241,7 @@ import AWSSDKIdentity
 To use the static credential identity resolver to provide credentials to an AWS service, use it as the service configuration's `awsCredentialIdentityResolver`.:
 
 ```
-            let s3Configuration = try await S3Client.S3ClientConfiguration(
+            let s3Configuration = try await S3Client.S3ClientConfig(
                 awsCredentialIdentityResolver: identityResolver,
                 region: region
             )
@@ -275,7 +275,7 @@ To use Amazon Cognito to provide credentials to an AWS service, first create an 
 Once the credential identity resolver has been created, you can instruct service clients to use it to resolve credentials by including the `awsCredentialIdentityResolver` property in the client's configuration with its value set to the `CognitoAWSCredentialIdentityResolver`.
 
 ```
-        let s3Config = try await S3Client.S3ClientConfiguration(
+        let s3Config = try await S3Client.S3ClientConfig(
             awsCredentialIdentityResolver: cognitoCredentialResolver,
             region: region
         )

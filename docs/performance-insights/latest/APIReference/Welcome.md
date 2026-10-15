@@ -13,5 +13,6 @@ DB load is measured as average active sessions. Performance Insights provides th
 + To learn more about Performance Insights and Amazon Aurora DB instances, go to the * [ Amazon Aurora User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.html) *.
 + To learn more about Performance Insights and Amazon RDS DB instances, go to the * [ Amazon RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.html) *.
 + To learn more about Performance Insights and Amazon DocumentDB clusters, go to the * [ Amazon DocumentDB Developer Guide](https://docs.aws.amazon.com/documentdb/latest/developerguide/performance-insights.html) *.
++ To learn more about Database Insights and Amazon Aurora DSQL clusters, see the [Amazon Aurora DSQL User Guide](https://docs.aws.amazon.com/aurora-dsql/latest/userguide/dsql-db-insights.html).
 
-This document was last published on October 14, 2026.
+This document was last published on October 15, 2026.

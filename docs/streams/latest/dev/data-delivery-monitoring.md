@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-monitor
 
  Each delivery publishes metrics to CloudWatch in the `AWS/Kinesis` namespace. Metric names are prefixed by destination type: `DeliveryToS3` for general purpose Amazon S3 deliveries and `DeliveryToIceberg` for streaming table deliveries. Use these metrics to monitor the health and performance of your delivery.
 
-**Amazon S3 delivery metrics (DeliveryToS3)**
+The following table lists the metrics for general purpose Amazon S3 deliveries (`DeliveryToS3`).
 
 | Metric name | Unit | Description |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-monitor
 | DeliveryToS3.DeliverySuccess | Count | The number of successful delivery operations. |
 | DeliveryToS3.DLQDeliverySuccess | Count | The number of records successfully written to the dead-letter queue. |
 
-**Streaming table delivery metrics (DeliveryToIceberg)**
+The following table lists the metrics for streaming table deliveries (`DeliveryToIceberg`).
 
 | Metric name | Unit | Description |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-monitor
 ### Recommended alarms
 <a name="data-delivery-monitoring-alarms"></a>
 
-**Recommended CloudWatch alarms for deliveries**
+The following table lists recommended CloudWatch alarms for deliveries.
 
 | Alarm | Metric | Condition | Description |
 | --- | --- | --- | --- |
@@ -70,6 +70,8 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-monitor
 <a name="data-delivery-monitoring-logs"></a>
 
  Each delivery can publish detailed logs to CloudWatch Logs for debugging and operational visibility.
+
+ By default, a delivery writes to the following log group and log stream:
 + **Default log group** – `/aws/kinesis/{{channelName}}/{{channelId}}`
 + **Log stream** – `DestinationDelivery`
 
@@ -81,17 +83,17 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-monitor
 ```
 aws kinesis create-channel \
     --channel-name "my-channel" \
-    --service-execution-role-arn "arn:aws:iam::123456789012:role/my-channel-role" \
+    --service-execution-role-arn "arn:aws:iam::111122223333:role/my-channel-role" \
     --stream-configuration-list '[
         {
-            "StreamARN": "arn:aws:kinesis:us-east-1:123456789012:stream/my-stream",
+            "StreamARN": "arn:aws:kinesis:us-east-1:111122223333:stream/my-stream",
             "RecordConfiguration": { "RecordFormatType": "JSON" }
         }
     ]' \
     --s3-destination-configuration '{
         "StorageConfiguration": {
-            "BucketARN": "arn:aws:s3:::my-destination-bucket",
-            "ExpectedBucketOwner": "123456789012",
+            "BucketARN": "arn:aws:s3:::amzn-s3-demo-destination-bucket",
+            "ExpectedBucketOwner": "111122223333",
             "CompressionType": "GZIP"
         }
     }' \

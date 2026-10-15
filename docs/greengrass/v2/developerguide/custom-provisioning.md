@@ -345,7 +345,7 @@ For more information about the arguments that you can specify, see [Installer ar
      # thingName: ""
    services:
      aws.greengrass.Nucleus:
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          # The following values are optional. Return them from the provisioning plugin or set them here.
          # awsRegion: ""
@@ -359,7 +359,7 @@ For more information about the arguments that you can specify, see [Installer ar
    ```
 
    Then, do the following:
-   + Replace {{2.18.0}} with the version of the AWS IoT Greengrass Core software.
+   + Replace {{2.18.4}} with the version of the AWS IoT Greengrass Core software.
    + Replace each instance of `{{/greengrass/v2}}` with the Greengrass root folder.
    + (Optional) Specify system and nucleus configuration values. You must set these values if your provisioning plugin doesn't provide them.
    + (Optional) Specify configuration parameters to provide to your provisioning plugin.
@@ -377,7 +377,7 @@ In this configuration file, you can customize other configuration options, such 
      # thingName: ""
    services:
      aws.greengrass.Nucleus:
-       version: "{{2.18.0}}"
+       version: "{{2.18.4}}"
        configuration:
          mqtt:
            port: 443

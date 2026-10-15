@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ARCRegionSwitch::Plan GlobalAuroraUngraceful
 <a name="aws-properties-arcregionswitch-plan-globalauroraungraceful"></a>
 
-Configuration for handling failures when performing operations on Aurora global databases.
+Configuration for an Aurora global database execution block in ungraceful mode.
 
 ## Syntax
 <a name="aws-properties-arcregionswitch-plan-globalauroraungraceful-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-arcregionswitch-plan-globalauroraungraceful-properties"></a>
 
 `Ungraceful`  <a name="cfn-arcregionswitch-plan-globalauroraungraceful-ungraceful"></a>
-The settings for ungraceful execution.
+The ungraceful behavior. The only valid value is `failover`, which calls `FailoverGlobalCluster` with `AllowDataLoss` set to `true` and might cause data loss.
 *Required*: No
 *Type*: String
 *Allowed values*: `failover`

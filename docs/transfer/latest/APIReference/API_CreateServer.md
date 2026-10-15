@@ -23,6 +23,7 @@ Instantiates an auto-scaling virtual server based on the selected file transfer 
    },
    "EndpointType": "{{string}}",
    "HostKey": "{{string}}",
+   "HostKeyStorageType": "{{string}}",
    "IdentityProviderDetails": {
       "DirectoryId": "{{string}}",
       "Function": "{{string}}",
@@ -138,6 +139,12 @@ If you aren't planning to migrate existing users from an existing SFTP-enabled s
 For more information, see [Update host keys for your SFTP-enabled server](https://docs.aws.amazon.com/transfer/latest/userguide/edit-server-config.html#configuring-servers-change-host-key) in the * AWS Transfer Family User Guide*.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 4096.
+Required: No
+
+ ** [HostKeyStorageType](#API_CreateServer_RequestSyntax) **   <a name="TransferFamily-CreateServer-request-HostKeyStorageType"></a>
+Specifies whether the host key is stored by AWS Transfer Family (`SERVICE_MANAGED`) or in AWS Secrets Manager (`SECRETS_MANAGER`). When you specify `SECRETS_MANAGER`, AWS Transfer Family stores the private host key material in an AWS Secrets Manager secret.
+Type: String
+Valid Values: `SERVICE_MANAGED | SECRETS_MANAGER`
 Required: No
 
  ** [IdentityProviderDetails](#API_CreateServer_RequestSyntax) **   <a name="TransferFamily-CreateServer-request-IdentityProviderDetails"></a>

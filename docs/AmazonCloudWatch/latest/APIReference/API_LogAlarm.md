@@ -10,6 +10,11 @@ The details about a log alarm.
 ## Contents
 <a name="API_LogAlarm_Contents"></a>
 
+ ** ActionConfiguration **   <a name="ACW-Type-LogAlarm-ActionConfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
+Type: [ActionConfiguration](API_ActionConfiguration.md) object
+Required: No
+
  ** ActionLogLineCount **   <a name="ACW-Type-LogAlarm-ActionLogLineCount"></a>
 The number of log lines from the most recent scheduled query execution that are included in alarm action notifications. Valid range is 0 through 50. A value of 0 means no log lines are included.
 Type: Integer

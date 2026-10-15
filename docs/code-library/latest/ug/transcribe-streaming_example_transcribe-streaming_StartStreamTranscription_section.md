@@ -331,7 +331,7 @@ public class TranscribeStreamingDemoApp {
 
 ```
         let client = TranscribeStreamingClient(
-            config: try await TranscribeStreamingClient.TranscribeStreamingClientConfiguration(
+            config: try await TranscribeStreamingClient.TranscribeStreamingClientConfig(
                 region: region
             )
         )

@@ -88,7 +88,7 @@ struct ExampleCommand: ParsableCommand {
 
     /// Called by ``main()`` to run the bulk of the example.
     func runAsync() async throws {
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         var queues: [String] = []
@@ -150,7 +150,7 @@ The following code example shows how to use `CreateQueue`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         let output = try await sqsClient.createQueue(
@@ -177,7 +177,7 @@ The following code example shows how to use `DeleteMessageBatch`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         // Create the list of message entries.
@@ -257,7 +257,7 @@ The following code example shows how to use `DeleteQueue`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         do {
@@ -284,7 +284,7 @@ The following code example shows how to use `GetQueueAttributes`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         let output = try await sqsClient.getQueueAttributes(
@@ -326,7 +326,7 @@ The following code example shows how to use `ListQueues`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         var queues: [String] = []
@@ -363,7 +363,7 @@ The following code example shows how to use `ReceiveMessage`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         let output = try await sqsClient.receiveMessage(
@@ -398,7 +398,7 @@ The following code example shows how to use `SetQueueAttributes`.
 ```
 import AWSSQS
 
-        let config = try await SQSClient.SQSClientConfiguration(region: region)
+        let config = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: config)
 
         do {
@@ -782,10 +782,10 @@ struct ExampleCommand: ParsableCommand {
 
         // 0. Create SNS and SQS clients.
 
-        let snsConfig = try await SNSClient.SNSClientConfiguration(region: region)
+        let snsConfig = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: snsConfig)
 
-        let sqsConfig = try await SQSClient.SQSClientConfiguration(region: region)
+        let sqsConfig = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: sqsConfig)
 
         // 1. Ask the user whether to create a FIFO topic. If so, ask whether

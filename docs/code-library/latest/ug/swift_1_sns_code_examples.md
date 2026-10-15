@@ -90,7 +90,7 @@ struct ExampleCommand: ParsableCommand {
 
     /// Called by ``main()`` to run the bulk of the example.
     func runAsync() async throws {
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         var topics: [String] = []
@@ -156,7 +156,7 @@ The following code example shows how to use `CreateTopic`.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         let output = try await snsClient.createTopic(
@@ -181,7 +181,7 @@ The following code example shows how to use `DeleteTopic`.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         _ = try await snsClient.deleteTopic(
@@ -201,7 +201,7 @@ The following code example shows how to use `ListTopics`.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         var topics: [String] = []
@@ -242,7 +242,7 @@ The following code example shows how to use `Publish`.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         let output = try await snsClient.publish(
@@ -273,7 +273,7 @@ Subscribe an email address to a topic.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         let output = try await snsClient.subscribe(
@@ -297,7 +297,7 @@ Subscribe a phone number to a topic to receive notifications by SMS.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         let output = try await snsClient.subscribe(
@@ -329,7 +329,7 @@ The following code example shows how to use `Unsubscribe`.
 ```
 import AWSSNS
 
-        let config = try await SNSClient.SNSClientConfiguration(region: region)
+        let config = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: config)
 
         _ = try await snsClient.unsubscribe(
@@ -708,10 +708,10 @@ struct ExampleCommand: ParsableCommand {
 
         // 0. Create SNS and SQS clients.
 
-        let snsConfig = try await SNSClient.SNSClientConfiguration(region: region)
+        let snsConfig = try await SNSClient.SNSClientConfig(region: region)
         let snsClient = SNSClient(config: snsConfig)
 
-        let sqsConfig = try await SQSClient.SQSClientConfiguration(region: region)
+        let sqsConfig = try await SQSClient.SQSClientConfig(region: region)
         let sqsClient = SQSClient(config: sqsConfig)
 
         // 1. Ask the user whether to create a FIFO topic. If so, ask whether

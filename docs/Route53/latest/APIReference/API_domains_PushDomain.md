@@ -61,6 +61,14 @@ The number of operations or jobs running exceeded the allowed threshold for the 
 The number of operations or jobs running exceeded the allowed threshold for the account.
 HTTP Status Code: 400
 
+ ** TLDInMaintenance **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** message **
+The top-level domain is currently undergoing maintenance and the request cannot be processed. Try again later.
+ ** tld **
+The top-level domain that is currently undergoing maintenance.
+HTTP Status Code: 400
+
  ** UnsupportedTLD **
 Amazon Route 53 does not support this top-level domain (TLD).
  ** message **

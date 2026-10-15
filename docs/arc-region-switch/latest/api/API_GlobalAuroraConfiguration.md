@@ -11,7 +11,9 @@ Configuration for Amazon Aurora global databases used in a Region switch plan.
 <a name="API_GlobalAuroraConfiguration_Contents"></a>
 
  ** behavior **   <a name="regionswitch-Type-GlobalAuroraConfiguration-behavior"></a>
-The behavior for a global database, that is, only allow switchover or also allow failover.
+The default behavior for the Aurora global database execution block. Valid values:
++  `switchoverOnly` - Calls `SwitchoverGlobalCluster` for a zero-data-loss switchover during graceful execution.
++  `failover` - Calls `FailoverGlobalCluster` with `AllowDataLoss` set to `true`. This operation might cause data loss, including during graceful execution.
 Type: String
 Valid Values: `switchoverOnly | failover`
 Required: Yes
@@ -47,7 +49,7 @@ Valid Range: Minimum value of 1.
 Required: No
 
  ** ungraceful **   <a name="regionswitch-Type-GlobalAuroraConfiguration-ungraceful"></a>
-The settings for ungraceful execution.
+The behavior to use when the plan runs in ungraceful mode. If you omit this value, Region switch uses the value of `behavior`.
 Type: [GlobalAuroraUngraceful](API_GlobalAuroraUngraceful.md) object
 Required: No
 

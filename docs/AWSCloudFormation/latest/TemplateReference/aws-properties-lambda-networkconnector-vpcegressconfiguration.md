@@ -62,11 +62,11 @@ The network protocol for the connector. Specify `IPv4` for IPv4-only networking,
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SecurityGroupIds`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-securitygroupids"></a>
-The IDs of the VPC security groups to attach to the ENIs. Specify 0 to 5 security groups. All security groups must be in the same VPC as the subnets.
+The IDs of the VPC security groups to attach to the ENIs. All security groups must be in the same VPC as the subnets.
 *Required*: Yes
 *Type*: Array of String
 *Minimum*: `0 | 0`
-*Maximum*: `1024 | 5`
+*Maximum*: `1024 | 16`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubnetIds`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-subnetids"></a>
