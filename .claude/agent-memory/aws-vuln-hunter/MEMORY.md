@@ -1,0 +1,3 @@
+- [Test Environment](project_test-environment.md) — the two in-scope AWS accounts, pre-staged scenario, and stale prior-run artifacts
+- [bedrock-agentcore authz is well-enforced](project_agentcore-authz.md) — leads that reliably refute against this account's AgentCore surface
+- [Docs-diff cluster results](project_docsdiff-cluster-results.md) — run 2026-10-16-1 verdicts (NSM org-gate, securityhub V2 account-scoping, lakeformation, securityagent, cognito) + 2 confirmed AWS-managed-policy weak defaults
