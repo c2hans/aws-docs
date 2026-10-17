@@ -16,9 +16,10 @@ Type: String
 Required: No
 
  ** Reason **
-Reason why drift was ignored for the attribute, can have 2 possible values:
-+  `WRITE_ONLY_PROPERTY` - Property is not included in read response for the resource’s live state.
-+  `MANAGED_BY_AWS` - Property is managed by an AWS service and is expected to be dynamically modified.
+Reason why drift was ignored for the attribute, can have 3 possible values:
++  `WRITE_ONLY_PROPERTY` – Property is not included in read response for the resource’s live state.
++  `MANAGED_BY_AWS` – Property is managed by an AWS service and is expected to be dynamically modified.
++  `SENSITIVE_PROPERTY` – Property has a sensitive value, such as an AWS Secrets Manager value.
 Type: String
 Valid Values: `MANAGED_BY_AWS | WRITE_ONLY_PROPERTY`
 Required: No

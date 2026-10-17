@@ -57,7 +57,8 @@ Properties:
 <a name="aws-resource-agentregistry-registryrecord-properties"></a>
 
 `CustomMetadata`  <a name="cfn-agentregistry-registryrecord-custommetadata"></a>
-The custom metadata attached to this registry record. Values are strings (maximum 128 characters) or booleans.
+The custom metadata to attach to the registry record, as a free-form JSON object. Each key must match a property that's defined in the registry's custom metadata schema. Each value must be a string of up to 128 characters, or a JSON boolean (`true` or `false`).
+If you remove this property from the template during a stack update, the existing custom metadata isn't cleared. The service keeps the current metadata.
 *Required*: No
 *Type*: Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -72,6 +73,7 @@ The description of the registry record.
 
 `Descriptors`  <a name="cfn-agentregistry-registryrecord-descriptors"></a>
 The typed descriptor content for the registry record. Exactly one descriptor field is populated based on the record type.
+The `McpServer` descriptor is for the `MCP` record type. The `AgentSkillsDefinition` descriptor is for the `SKILL` record type. The `Custom` descriptor is for the `CUSTOM` record type. For the `AGENT` record type, use the `A2aAgentCard`, `Http`, or `Agui` descriptor.
 *Required*: Yes
 *Type*: [Descriptors](aws-properties-agentregistry-registryrecord-descriptors.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -94,7 +96,12 @@ The name of the registry record. Names are unique within a registry.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RecordType`  <a name="cfn-agentregistry-registryrecord-recordtype"></a>
-The type of the registry record, which determines the descriptor format.
+The type of the registry record, which determines the descriptor format. Valid values are:
++ `MCP` – The record describes a Model Context Protocol (MCP) server. Use the `McpServer` descriptor.
++ `AGENT` – The record describes an agent. Use the `A2aAgentCard`, `Http`, or `Agui` descriptor.
++ `SKILL` – The record describes an agent skill. Use the `AgentSkillsDefinition` descriptor.
++ `CUSTOM` – The record describes a custom resource. Use the `Custom` descriptor.
++ `GATEWAY` – The record describes a gateway.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `MCP | AGENT | SKILL | CUSTOM | GATEWAY`
@@ -110,7 +117,7 @@ The version of the registry record.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RegistryId`  <a name="cfn-agentregistry-registryrecord-registryid"></a>
-The identifier of the registry in which to create the record. You can specify either the registry ID or the registry Amazon Resource Name (ARN).
+The identifier of the registry in which to create the record. You can specify either the registry ID or the registry Amazon Resource Name (ARN). To reference a registry that another account shares with you through AWS Resource Access Manager (AWS RAM), use the ARN.
 *Required*: No
 *Type*: String
 *Pattern*: `^(arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/)?[a-zA-Z0-9]{12,16}$`

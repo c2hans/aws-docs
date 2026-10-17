@@ -132,6 +132,12 @@ The instance type for the image builder. The following instance types are availa
 + stream.graphics.g6f.2xlarge
 + stream.graphics.g6f.4xlarge
 + stream.graphics.gr6f.4xlarge
++ stream.graphics.g7.2xlarge
++ stream.graphics.g7.4xlarge
++ stream.graphics.g7.8xlarge
++ stream.graphics.g7.12xlarge
++ stream.graphics.g7.24xlarge
++ stream.graphics.g7.48xlarge
 Type: String
 Length Constraints: Minimum length of 1.
 Required: No

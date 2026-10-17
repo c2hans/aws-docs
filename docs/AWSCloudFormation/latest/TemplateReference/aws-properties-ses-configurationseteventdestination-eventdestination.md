@@ -98,7 +98,7 @@ The name of the event destination. The name must meet the following requirements
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9_-]{0,64}$`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `SnsDestination`  <a name="cfn-ses-configurationseteventdestination-eventdestination-snsdestination"></a>
 An object that contains the topic ARN associated with an Amazon Simple Notification Service (Amazon SNS) event destination.

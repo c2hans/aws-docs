@@ -22,10 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::DMS::MigrationProject",
   "Properties" : {
       "[Description](#cfn-dms-migrationproject-description)" : {{String}},
-      "[InstanceProfileArn](#cfn-dms-migrationproject-instanceprofilearn)" : {{String}},
       "[InstanceProfileIdentifier](#cfn-dms-migrationproject-instanceprofileidentifier)" : {{String}},
-      "[InstanceProfileName](#cfn-dms-migrationproject-instanceprofilename)" : {{String}},
-      "[MigrationProjectIdentifier](#cfn-dms-migrationproject-migrationprojectidentifier)" : {{String}},
       "[MigrationProjectName](#cfn-dms-migrationproject-migrationprojectname)" : {{String}},
       "[SchemaConversionApplicationAttributes](#cfn-dms-migrationproject-schemaconversionapplicationattributes)" : {{SchemaConversionApplicationAttributes}},
       "[SourceDataProviderDescriptors](#cfn-dms-migrationproject-sourcedataproviderdescriptors)" : {{[ DataProviderDescriptor, ... ]}},
@@ -43,10 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::DMS::MigrationProject
 Properties:
   [Description](#cfn-dms-migrationproject-description): {{String}}
-  [InstanceProfileArn](#cfn-dms-migrationproject-instanceprofilearn): {{String}}
   [InstanceProfileIdentifier](#cfn-dms-migrationproject-instanceprofileidentifier): {{String}}
-  [InstanceProfileName](#cfn-dms-migrationproject-instanceprofilename): {{String}}
-  [MigrationProjectIdentifier](#cfn-dms-migrationproject-migrationprojectidentifier): {{String}}
   [MigrationProjectName](#cfn-dms-migrationproject-migrationprojectname): {{String}}
   [SchemaConversionApplicationAttributes](#cfn-dms-migrationproject-schemaconversionapplicationattributes): {{
     SchemaConversionApplicationAttributes}}
@@ -70,31 +64,7 @@ A user-friendly description of the migration project.
 *Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`InstanceProfileArn`  <a name="cfn-dms-migrationproject-instanceprofilearn"></a>
-The Amazon Resource Name (ARN) of the instance profile for your migration project.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `InstanceProfileIdentifier`  <a name="cfn-dms-migrationproject-instanceprofileidentifier"></a>
-Property description not available.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`InstanceProfileName`  <a name="cfn-dms-migrationproject-instanceprofilename"></a>
-The name of the associated instance profile.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`MigrationProjectIdentifier`  <a name="cfn-dms-migrationproject-migrationprojectidentifier"></a>
 Property description not available.
 *Required*: No
 *Type*: String
@@ -160,6 +130,12 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 ####
 <a name="aws-resource-dms-migrationproject-return-values-fn--getatt-fn--getatt"></a>
+
+`InstanceProfileArn`  <a name="InstanceProfileArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the instance profile for your migration project.
+
+`InstanceProfileName`  <a name="InstanceProfileName-fn::getatt"></a>
+The name of the associated instance profile.
 
 `MigrationProjectArn`  <a name="MigrationProjectArn-fn::getatt"></a>
 The ARN string that uniquely identifies the migration project.

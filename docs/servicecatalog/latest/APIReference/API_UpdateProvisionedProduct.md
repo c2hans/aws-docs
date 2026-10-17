@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 
 Requests updates to the configuration of the specified provisioned product.
 
-If there are tags associated with the object, they cannot be updated or added. Depending on the specific updates requested, this operation can update with no interruption, with some interruption, or replace the provisioned product entirely.
+To update the tags on a provisioned product, the product must have a `RESOURCE_UPDATE` constraint with `TagUpdatesOnProvisionedProduct` set to `ALLOWED`. Depending on the specific updates requested, this operation can update with no interruption, with some interruption, or replace the provisioned product entirely.
 
 You can check the status of this request using [DescribeRecord](API_DescribeRecord.md).
 

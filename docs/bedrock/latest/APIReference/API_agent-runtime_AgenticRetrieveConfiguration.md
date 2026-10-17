@@ -24,7 +24,7 @@ Required: No
  ** maxAgentIteration **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveConfiguration-maxAgentIteration"></a>
 The maximum number of agent iterations for retrieval.
 Type: Integer
-Valid Range: Minimum value of 2.
+Valid Range: Minimum value of 0.
 Required: No
 
  ** rerankingConfiguration **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveConfiguration-rerankingConfiguration"></a>

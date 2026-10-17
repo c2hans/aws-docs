@@ -21,7 +21,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::DMS::DataProvider",
   "Properties" : {
-      "[DataProviderIdentifier](#cfn-dms-dataprovider-dataprovideridentifier)" : {{String}},
       "[DataProviderName](#cfn-dms-dataprovider-dataprovidername)" : {{String}},
       "[Description](#cfn-dms-dataprovider-description)" : {{String}},
       "[Engine](#cfn-dms-dataprovider-engine)" : {{String}},
@@ -39,7 +38,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::DMS::DataProvider
 Properties:
-  [DataProviderIdentifier](#cfn-dms-dataprovider-dataprovideridentifier): {{String}}
   [DataProviderName](#cfn-dms-dataprovider-dataprovidername): {{String}}
   [Description](#cfn-dms-dataprovider-description): {{String}}
   [Engine](#cfn-dms-dataprovider-engine): {{String}}
@@ -53,14 +51,6 @@ Properties:
 
 ## Properties
 <a name="aws-resource-dms-dataprovider-properties"></a>
-
-`DataProviderIdentifier`  <a name="cfn-dms-dataprovider-dataprovideridentifier"></a>
-The name or Amazon Resource Name (ARN) of the data provider.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataProviderName`  <a name="cfn-dms-dataprovider-dataprovidername"></a>
 The name of the data provider.

@@ -17,6 +17,9 @@ The registration token resolves to a specific subscribed customer and each gener
 ## Configuring your SaaS product to accept new buyers
 <a name="configuring-your-saas-application-to-accept-new-customers"></a>
 
+**Amazon SNS notifications aren't available to new sellers**
+If you registered your seller account after July 15, 2026, use Amazon EventBridge to receive events. If you registered on or before that date, you can continue to use Amazon SNS. For more information, see [Managing SaaS subscription events with Amazon EventBridge](saas-eventbridge-integration.md).
+
 You're responsible for correctly configuring your SaaS software to accept new customers and meter them appropriately. The following process outlines one recommended way of identifying, implementing, and metering a new customer's access to your software:
 
 1. When a customer visits your product page on the AWS Marketplace website, they choose to subscribe to your product.
@@ -39,11 +42,7 @@ If setting up or linking to an existing customer account in your product require
 
 1.  The customer is now signed in to your website using credentials speciﬁc to that SaaS product. In your accounts database, you can have an entry for each customer. Your accounts database must have a column for the AWS account ID. Verify that no other accounts in your system share the AWS account ID.
 
-1.
-**Important**
-SNS notifications for AWS Marketplace SaaS products are being replaced with Amazon EventBridge notifications. If you have existing SaaS products integrated with SNS, they will continue to function. New listings will eventually transition to using Amazon EventBridge instead of SNS. For more information, see [Managing SaaS subscription events with Amazon EventBridge](saas-eventbridge-integration.md).
-
-   During your seller registration process, you configure Amazon EventBridge rules to receive events that notify you when customers subscribe or unsubscribe to your product. These are Amazon EventBridge events in JSON format that inform you of customer actions:
+1. During your seller registration process, you configure Amazon EventBridge rules to receive events that notify you when customers subscribe or unsubscribe to your product. These are Amazon EventBridge events in JSON format that inform you of customer actions:
    + Entitlement notification – For products with pricing models that include a contract, you are notified when buyers create a new contract, upgrade it, renew it, or it expires. Your accounts database must have an extra column for the subscription state. For more information, see [Managing SaaS subscription events with Amazon EventBridge](saas-eventbridge-integration.md).
    + Subscription notification – For products with any pricing model, including contracts and subscriptions, you are notified when a buyer subscribes or unsubscribes to a product. For more information, see [Managing SaaS subscription events with Amazon EventBridge](saas-eventbridge-integration.md).
 

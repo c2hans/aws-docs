@@ -169,6 +169,8 @@ Your AWS account has default quotas to maintain the performance of the service a
 
 ## Usage Considerations and Limitations
 <a name="model-card-moonshot-ai-kimi-k3-considerations"></a>
+
+Keep the following considerations and limitations in mind when you use Kimi K3:
 + **Prefer the OpenAI-compatible APIs over Converse** — Although Kimi K3 can be called through the Converse and ConverseStream APIs, we recommend using the OpenAI-compatible Responses or Chat Completions APIs where possible. Converse has known limitations with this model, including a failure (`InternalServerException`) when reasoning content from earlier turns is included in a multi-turn request, which affects frameworks such as LangChain and Strands Agents in their default configurations, and rejection of attached document inputs such as PDF and HTML. To use Converse for multi-turn requests, remove reasoning blocks from prior turns.
 + **Video inputs are not supported** — Amazon Bedrock does not support attaching video inputs to Kimi K3 requests.
 + **Place images before text for combined inputs** — For requests that combine text and images, Kimi K3 can produce higher-quality answers when image content blocks are placed before text content blocks. This behavior is prompt-dependent, so test both orderings for your own workload.

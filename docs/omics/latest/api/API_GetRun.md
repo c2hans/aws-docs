@@ -97,7 +97,8 @@ Content-type: application/json
    "vpcConfig": {
       "securityGroupIds": [ "string" ],
       "subnetIds": [ "string" ],
-      "vpcId": "string"
+      "vpcId": "string",
+      "vpcOwnerAccountId": "string"
    },
    "workflowId": "string",
    "workflowOwnerId": "string",
@@ -265,7 +266,7 @@ Length Constraints: Minimum length of 1. Maximum length of 64.
 Valid Values: `LOCAL | SHARED`
 
  ** [sessionPolicy](#API_GetRun_ResponseSyntax) **   <a name="omics-GetRun-response-sessionPolicy"></a>
-The inline IAM policy document that scopes down the permissions granted to the run. The policy restricts the permissions of the IAM role specified in `roleArn`. The effective permissions are the intersection of the role's permissions and the session policy.
+Inline policy json for scoping down permissions via a session policy on the IAM role.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}\t\n\r]+`

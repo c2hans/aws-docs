@@ -60,6 +60,11 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9][-a-zA-Z0-9]*`
 Required: No
 
+ ** DeploymentConfig **
+The deployment configuration for this stack operation, including the deployment mode.
+Type: [DeploymentConfig](API_DeploymentConfig.md) object
+Required: No
+
  ** DisableRollback **
 Set to `true` to disable rollback of the stack if stack creation failed. You can specify either `DisableRollback` or `OnFailure`, but not both.
 Default: `false`

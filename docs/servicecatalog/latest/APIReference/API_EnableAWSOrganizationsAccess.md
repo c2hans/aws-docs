@@ -11,6 +11,13 @@ When you call this API, Service Catalog calls `organizations:EnableAWSServiceAcc
 
 Note that a delegated administrator is not authorized to invoke `EnableAWSOrganizationsAccess`.
 
+After this operation returns, AWS Service Catalog counts the accounts in your organization before it finishes enabling access. Use [GetAWSOrganizationsAccessStatus](API_GetAWSOrganizationsAccessStatus.md) to check the result. The check usually completes within two hours.
++  `UNDER_CHANGE` - The check is in progress. Wait until the status changes from `UNDER_CHANGE` to `ENABLED` before you share portfolios with organization nodes.
++  `ENABLED` - AWS Organizations access is enabled. Your organization shares are kept in sync with your organization structure.
++  `DISABLED` - Your organization has more than 15,000 accounts, so access was not enabled. To enable access, reduce the organization to 15,000 accounts or fewer and call `EnableAWSOrganizationsAccess` again. Calling it again without reducing the organization repeats the check and returns `DISABLED`.
+
+The 15,000-account quota is checked only when you enable access. An organization that grows past 15,000 accounts after access is enabled keeps AWS Organizations access, and its shares continue to sync. If you then disable access, you cannot enable it again until the organization has 15,000 accounts or fewer. For more information, see [AWS Service Catalog default service quotas](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/limits.html#orgs) in the * AWS Service Catalog Administrator Guide*.
+
 **Important**
 If you have previously disabled Organizations access for Service Catalog, and then enable access again, the portfolio access permissions might not sync with the latest changes to the organization structure. Specifically, accounts that you removed from the organization after disabling Service Catalog access, and before you enabled access again, can retain access to the previously shared portfolio. As a result, an account that has been removed from the organization might still be able to create or manage AWS resources when it is no longer authorized to do so. AWS is working to resolve this issue.
 

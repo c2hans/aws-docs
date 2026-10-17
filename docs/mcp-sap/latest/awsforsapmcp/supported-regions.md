@@ -22,6 +22,7 @@ The following table shows the AWS Regions where the AWS for SAP MCP Server is su
 | Europe (London) |  `eu-west-2`  |
 | Europe (Milan) |  `eu-south-1`  |
 | Europe (Paris) |  `eu-west-3`  |
+| Europe (Spain) |  `eu-south-2`  |
 | Europe (Stockholm) |  `eu-north-1`  |
 | Asia Pacific (Mumbai) |  `ap-south-1`  |
 | Asia Pacific (Singapore) |  `ap-southeast-1`  |

@@ -37,6 +37,9 @@ This page describes the console-based setup. To set up AWS WA Agent using the AW
 + You have identified the AWS account IDs that you want AWS WA Agent to analyze (maximum 100 accounts).
 + You have defined your business goals and selected the optimization pillars you want to focus on.
 
+**Important**
+AWS WA Agent requires an active AWS Support plan at Business\+ or higher in every account within the monitoring boundary, not only the account that owns the profile. If a monitored account has only a Basic or Developer plan, AWS WA Agent cannot call AWS Trusted Advisor APIs for that account. As a result, AWS WA Agent limits that account's recommendations to Application-level recommendations (beta). This often affects customers who do not use AWS Organizations, or who subscribe to Business\+ without auto-enrollment, so their other accounts do not receive the plan automatically.
+
 ## Step 1: Create an agent profile
 <a name="agent-create-profile"></a>
 

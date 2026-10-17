@@ -24,6 +24,12 @@ Content-type: application/json
                "modelArn": "{{string}}"
             }
          },
+         "mantleFoundationModelConfiguration": {
+            "modelConfiguration": {
+               "modelArn": "{{string}}",
+               "projectId": "{{string}}"
+            }
+         },
          "type": "{{string}}"
       },
       "foundationModelType": "{{string}}",

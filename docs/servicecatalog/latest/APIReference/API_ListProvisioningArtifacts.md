@@ -66,7 +66,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [NextPageToken](#API_ListProvisioningArtifacts_ResponseSyntax) **   <a name="servicecatalog-ListProvisioningArtifacts-response-NextPageToken"></a>
-The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
+This field is not used. `ListProvisioningArtifacts` returns all of the product's provisioning artifacts in a single response, so this value is always null.
 Type: String
 Length Constraints: Maximum length of 2024.
 Pattern: `[\u0009\u000a\u000d\u0020-\uD7FF\uE000-\uFFFD]*`

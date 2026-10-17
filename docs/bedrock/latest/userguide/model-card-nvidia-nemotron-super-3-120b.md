@@ -21,6 +21,7 @@ NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating ju
 + **Model lifecycle:** Active
 + **Context window:** 256K tokens
 + **Max output tokens:** 32K
++ **Reasoning:** Supported (effort configurable: none, low, medium, high)
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |
 | --- | --- | --- | --- |

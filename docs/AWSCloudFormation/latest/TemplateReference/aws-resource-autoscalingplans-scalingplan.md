@@ -73,6 +73,15 @@ When you pass the logical ID of an `AWS::AutoScalingPlans::ScalingPlan` resource
 
 For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
 
+### Fn::GetAtt
+<a name="aws-resource-autoscalingplans-scalingplan-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-autoscalingplans-scalingplan-return-values-fn--getatt-fn--getatt"></a>
+
+`ScalingPlanArn`  <a name="ScalingPlanArn-fn::getatt"></a>
+Property description not available.
+
 ## Examples
 <a name="aws-resource-autoscalingplans-scalingplan--examples"></a>
 

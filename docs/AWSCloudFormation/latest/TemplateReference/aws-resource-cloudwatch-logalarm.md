@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::CloudWatch::LogAlarm",
   "Properties" : {
+      "[ActionConfiguration](#cfn-cloudwatch-logalarm-actionconfiguration)" : {{ActionConfiguration}},
       "[ActionLogLineCount](#cfn-cloudwatch-logalarm-actionloglinecount)" : {{Integer}},
       "[ActionLogLineRoleArn](#cfn-cloudwatch-logalarm-actionloglinerolearn)" : {{String}},
       "[ActionsEnabled](#cfn-cloudwatch-logalarm-actionsenabled)" : {{Boolean}},
@@ -57,6 +58,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::CloudWatch::LogAlarm
 Properties:
+  [ActionConfiguration](#cfn-cloudwatch-logalarm-actionconfiguration): {{
+    ActionConfiguration}}
   [ActionLogLineCount](#cfn-cloudwatch-logalarm-actionloglinecount): {{Integer}}
   [ActionLogLineRoleArn](#cfn-cloudwatch-logalarm-actionloglinerolearn): {{String}}
   [ActionsEnabled](#cfn-cloudwatch-logalarm-actionsenabled): {{Boolean}}
@@ -83,6 +86,13 @@ Properties:
 
 ## Properties
 <a name="aws-resource-cloudwatch-logalarm-properties"></a>
+
+`ActionConfiguration`  <a name="cfn-cloudwatch-logalarm-actionconfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes.
+These settings apply to the alarm's actions, whichever state triggers them.
+*Required*: No
+*Type*: [ActionConfiguration](aws-properties-cloudwatch-logalarm-actionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ActionLogLineCount`  <a name="cfn-cloudwatch-logalarm-actionloglinecount"></a>
 The number of log lines from the most recent scheduled query execution to include in alarm action notifications. Valid range is 0 through 50. The default is 0, which means no log lines are included.

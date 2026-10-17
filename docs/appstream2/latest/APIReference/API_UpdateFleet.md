@@ -199,6 +199,12 @@ The instance type to use when launching fleet instances. The following instance 
 + stream.graphics.g6f.2xlarge
 + stream.graphics.g6f.4xlarge
 + stream.graphics.gr6f.4xlarge
++ stream.graphics.g7.2xlarge
++ stream.graphics.g7.4xlarge
++ stream.graphics.g7.8xlarge
++ stream.graphics.g7.12xlarge
++ stream.graphics.g7.24xlarge
++ stream.graphics.g7.48xlarge
 The following instance types are available for Elastic fleets:
 + stream.standard.small
 + stream.standard.medium

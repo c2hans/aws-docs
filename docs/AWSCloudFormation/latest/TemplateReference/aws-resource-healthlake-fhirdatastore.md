@@ -24,10 +24,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::HealthLake::FHIRDatastore",
   "Properties" : {
+      "[AnalyticsConfiguration](#cfn-healthlake-fhirdatastore-analyticsconfiguration)" : {{AnalyticsConfiguration}},
       "[DatastoreName](#cfn-healthlake-fhirdatastore-datastorename)" : {{String}},
       "[DatastoreTypeVersion](#cfn-healthlake-fhirdatastore-datastoretypeversion)" : {{String}},
       "[IdentityProviderConfiguration](#cfn-healthlake-fhirdatastore-identityproviderconfiguration)" : {{IdentityProviderConfiguration}},
+      "[NlpConfiguration](#cfn-healthlake-fhirdatastore-nlpconfiguration)" : {{NlpConfiguration}},
       "[PreloadDataConfig](#cfn-healthlake-fhirdatastore-preloaddataconfig)" : {{PreloadDataConfig}},
+      "[ProfileConfiguration](#cfn-healthlake-fhirdatastore-profileconfiguration)" : {{ProfileConfiguration}},
       "[SseConfiguration](#cfn-healthlake-fhirdatastore-sseconfiguration)" : {{SseConfiguration}},
       "[Tags](#cfn-healthlake-fhirdatastore-tags)" : {{[ Tag, ... ]}}
     }
@@ -40,12 +43,18 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::HealthLake::FHIRDatastore
 Properties:
+  [AnalyticsConfiguration](#cfn-healthlake-fhirdatastore-analyticsconfiguration): {{
+    AnalyticsConfiguration}}
   [DatastoreName](#cfn-healthlake-fhirdatastore-datastorename): {{String}}
   [DatastoreTypeVersion](#cfn-healthlake-fhirdatastore-datastoretypeversion): {{String}}
   [IdentityProviderConfiguration](#cfn-healthlake-fhirdatastore-identityproviderconfiguration): {{
     IdentityProviderConfiguration}}
+  [NlpConfiguration](#cfn-healthlake-fhirdatastore-nlpconfiguration): {{
+    NlpConfiguration}}
   [PreloadDataConfig](#cfn-healthlake-fhirdatastore-preloaddataconfig): {{
     PreloadDataConfig}}
+  [ProfileConfiguration](#cfn-healthlake-fhirdatastore-profileconfiguration): {{
+    ProfileConfiguration}}
   [SseConfiguration](#cfn-healthlake-fhirdatastore-sseconfiguration): {{
     SseConfiguration}}
   [Tags](#cfn-healthlake-fhirdatastore-tags): {{
@@ -55,13 +64,19 @@ Properties:
 ## Properties
 <a name="aws-resource-healthlake-fhirdatastore-properties"></a>
 
+`AnalyticsConfiguration`  <a name="cfn-healthlake-fhirdatastore-analyticsconfiguration"></a>
+The analytics configuration for a data store.
+*Required*: No
+*Type*: [AnalyticsConfiguration](aws-properties-healthlake-fhirdatastore-analyticsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `DatastoreName`  <a name="cfn-healthlake-fhirdatastore-datastorename"></a>
 The data store name (user-generated).
 *Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `256`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DatastoreTypeVersion`  <a name="cfn-healthlake-fhirdatastore-datastoretypeversion"></a>
 The FHIR release version supported by the data store. Current support is for version `R4`.
@@ -74,13 +89,25 @@ The FHIR release version supported by the data store. Current support is for ver
 The identity provider configuration selected when the data store was created.
 *Required*: No
 *Type*: [IdentityProviderConfiguration](aws-properties-healthlake-fhirdatastore-identityproviderconfiguration.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`NlpConfiguration`  <a name="cfn-healthlake-fhirdatastore-nlpconfiguration"></a>
+The natural language processing (NLP) configuration for a data store.
+*Required*: No
+*Type*: [NlpConfiguration](aws-properties-healthlake-fhirdatastore-nlpconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PreloadDataConfig`  <a name="cfn-healthlake-fhirdatastore-preloaddataconfig"></a>
 The preloaded Synthea data configuration for the data store.
 *Required*: No
 *Type*: [PreloadDataConfig](aws-properties-healthlake-fhirdatastore-preloaddataconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ProfileConfiguration`  <a name="cfn-healthlake-fhirdatastore-profileconfiguration"></a>
+The profile configuration for a data store.
+*Required*: No
+*Type*: [ProfileConfiguration](aws-properties-healthlake-fhirdatastore-profileconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SseConfiguration`  <a name="cfn-healthlake-fhirdatastore-sseconfiguration"></a>
 The server-side encryption key configuration for a customer-provided encryption key specified for creating a data store.

@@ -30,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Ec2InstanceVpcId](#cfn-inspectorv2-filter-filtercriteria-ec2instancevpcid)" : {{[ StringFilter, ... ]}},
   "[EcrImageArchitecture](#cfn-inspectorv2-filter-filtercriteria-ecrimagearchitecture)" : {{[ StringFilter, ... ]}},
   "[EcrImageHash](#cfn-inspectorv2-filter-filtercriteria-ecrimagehash)" : {{[ StringFilter, ... ]}},
+  "[EcrImageInUseCount](#cfn-inspectorv2-filter-filtercriteria-ecrimageinusecount)" : {{[ NumberFilter, ... ]}},
   "[EcrImagePushedAt](#cfn-inspectorv2-filter-filtercriteria-ecrimagepushedat)" : {{[ DateFilter, ... ]}},
   "[EcrImageRegistry](#cfn-inspectorv2-filter-filtercriteria-ecrimageregistry)" : {{[ StringFilter, ... ]}},
   "[EcrImageRepositoryName](#cfn-inspectorv2-filter-filtercriteria-ecrimagerepositoryname)" : {{[ StringFilter, ... ]}},
@@ -90,6 +91,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - StringFilter}}
   [EcrImageHash](#cfn-inspectorv2-filter-filtercriteria-ecrimagehash): {{
     - StringFilter}}
+  [EcrImageInUseCount](#cfn-inspectorv2-filter-filtercriteria-ecrimageinusecount): {{
+    - NumberFilter}}
   [EcrImagePushedAt](#cfn-inspectorv2-filter-filtercriteria-ecrimagepushedat): {{
     - DateFilter}}
   [EcrImageRegistry](#cfn-inspectorv2-filter-filtercriteria-ecrimageregistry): {{
@@ -241,6 +244,14 @@ Details of the Amazon ECR image architecture types used to filter findings.
 Details of the Amazon ECR image hashes used to filter findings.
 *Required*: No
 *Type*: Array of [StringFilter](aws-properties-inspectorv2-filter-stringfilter.md)
+*Minimum*: `1`
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EcrImageInUseCount`  <a name="cfn-inspectorv2-filter-filtercriteria-ecrimageinusecount"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [NumberFilter](aws-properties-inspectorv2-filter-numberfilter.md)
 *Minimum*: `1`
 *Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

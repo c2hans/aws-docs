@@ -231,6 +231,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   ListRecoveryPlanExecutionSteps  **
+  - **IAM action:**  [drs:ListRecoveryPlanExecutionSteps](#list_drs-action-ListRecoveryPlanExecutionSteps)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   ListRecoveryPlanExecutions  **
   - **IAM action:**  [drs:ListRecoveryPlanExecutions](#list_drs-action-ListRecoveryPlanExecutions)
   - **Condition key:**

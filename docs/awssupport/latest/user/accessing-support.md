@@ -83,22 +83,25 @@ For more information about how to attach the `AWSSupportAccess` policy to your e
 
 **Example : Allow access to all actions except the ResolveCase action**
 You can also create *customer managed policies* in IAM to specify what actions to allow or deny. The following policy statement allows an IAM user to perform all actions in Support except resolve a case.
-****
 
 ```
 {
-   "Version":"2012-10-17",
-   "Statement": [
-   {
-      "Effect": "Allow",
-      "Action": "support:*",
-      "Resource": "*"
-   },
-   {
-       "Effect": "Deny",
-       "Action": "support:ResolveCase",
-       "Resource": "*"
-    }]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "support:*",
+                "support-console:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Deny",
+            "Action": "support:ResolveCase",
+            "Resource": "*"
+        }
+    ]
 }
 ```
 For more information about how to create a customer managed IAM policy, see [Creating IAM policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html) in the *IAM User Guide*.

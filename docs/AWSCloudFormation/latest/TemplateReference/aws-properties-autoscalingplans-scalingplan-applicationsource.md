@@ -50,6 +50,7 @@ Tags are part of the syntax that you use to specify the resources you want retur
 You must specify either a `CloudFormationStackARN` or `TagFilters`.
 *Required*: No
 *Type*: Array of [TagFilter](aws-properties-autoscalingplans-scalingplan-tagfilter.md)
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also

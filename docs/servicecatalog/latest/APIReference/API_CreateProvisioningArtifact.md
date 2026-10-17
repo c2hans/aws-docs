@@ -147,11 +147,11 @@ The following shows an example JSON request.
       "Description": "my-test-2",
       "Info":
       {
-         "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..." ,
+         "LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..."
       },
       "Type": "CLOUD_FORMATION_TEMPLATE"
-      "IdempotencyToken": "my-test-token-2"
-   }
+   },
+   "IdempotencyToken": "my-test-token-2"
 }
 ```
 

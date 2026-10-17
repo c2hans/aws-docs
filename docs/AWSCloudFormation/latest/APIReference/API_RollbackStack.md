@@ -28,6 +28,11 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9][-a-zA-Z0-9]*`
 Required: No
 
+ ** DeploymentConfig **
+The deployment configuration for this stack operation, including the deployment mode.
+Type: [DeploymentConfig](API_DeploymentConfig.md) object
+Required: No
+
  ** RetainExceptOnCreate **
 When set to `true`, newly created resources are deleted when the operation rolls back. This includes newly created resources marked with a deletion policy of `Retain`.
 Default: `false`

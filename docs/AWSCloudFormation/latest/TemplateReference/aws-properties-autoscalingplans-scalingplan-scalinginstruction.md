@@ -137,7 +137,6 @@ The ID of the resource. This string consists of the resource type and unique ide
 + Aurora DB cluster - The resource type is `cluster` and the unique identifier is the cluster name. Example: `cluster:my-db-cluster`.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `1`
 *Maximum*: `1600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -185,6 +184,8 @@ The namespace of the AWS service.
 The target tracking configurations (up to 10). Each of these structures must specify a unique scaling metric and a target value for the metric.
 *Required*: Yes
 *Type*: Array of [TargetTrackingConfiguration](aws-properties-autoscalingplans-scalingplan-targettrackingconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also

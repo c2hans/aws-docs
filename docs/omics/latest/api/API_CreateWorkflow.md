@@ -32,6 +32,7 @@ Content-type: application/json
       ],
       "registryMappings": [
          {
+            "credentialArn": "{{string}}",
             "ecrAccountId": "{{string}}",
             "ecrRepositoryPrefix": "{{string}}",
             "upstreamRegistryUrl": "{{string}}",

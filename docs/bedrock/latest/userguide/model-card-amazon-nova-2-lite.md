@@ -21,6 +21,7 @@ Nova 2 Lite is Amazon's cost-efficient multimodal model for simple automation, d
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 64K
++ **Reasoning:** Supported, off by default (enable with `reasoningConfig`; effort configurable: low, medium, high)
 + **Knowledge cutoff:** Oct 2025
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |

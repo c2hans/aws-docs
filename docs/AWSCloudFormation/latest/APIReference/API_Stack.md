@@ -52,6 +52,11 @@ The time the stack was deleted.
 Type: Timestamp
 Required: No
 
+ ** DeploymentConfig **
+The deployment configuration for the stack, including the deployment mode used for stack operations.
+Type: [DeploymentConfig](API_DeploymentConfig.md) object
+Required: No
+
  ** Description **
 A user-defined description associated with the stack.
 Type: String

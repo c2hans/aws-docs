@@ -75,20 +75,25 @@ The type of authorizer that controls how consumers access the registry's search 
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `AutoDetectionEnabled`  <a name="cfn-agentregistry-registry-autodetectionenabled"></a>
-Property description not available.
+Specifies whether auto-detection is requested for the registry. You must specify this property together with `AutoDetectionScope`.
+Setting this property to `true` is necessary but not sufficient for auto-detection to become active. The preconditions of the configured scope must also be met. To check whether auto-detection is active, use the `AutoDetectionStatus` return value.
+To turn off auto-detection, explicitly set this property to `false`. If you remove `AutoDetectionEnabled` and `AutoDetectionScope` from the template, the existing auto-detection settings don't change.
+You can't delete a registry while auto-detection is enabled. Before you delete the registry, set this property to `false` and update the stack.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AutoDetectionScope`  <a name="cfn-agentregistry-registry-autodetectionscope"></a>
-Property description not available.
+The source from which the registry detects resources. The only supported value is `ORGANIZATION`, which detects resources from all member accounts of an AWS organization. You must specify this property together with `AutoDetectionEnabled`.
 *Required*: No
 *Type*: String
 *Allowed values*: `ORGANIZATION`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CustomMetadataSchemaConfiguration`  <a name="cfn-agentregistry-registry-custommetadataschemaconfiguration"></a>
-The custom metadata schema configuration for this registry, if one has been defined.
+The configuration that defines a typed custom metadata schema for the registry. Registry records use this schema for their custom metadata. You can specify a default schema, schema overrides for specific record types, or both. Both are optional.
+Schema evolution is additive only. You can add fields and enum values. You can't remove fields, change field types, or remove enum values.
+If you remove this property from the template during a stack update, the existing schema isn't cleared. The service keeps the current schema.
 *Required*: No
 *Type*: [CustomMetadataSchemaConfiguration](aws-properties-agentregistry-registry-custommetadataschemaconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -108,7 +113,9 @@ The discovery configuration for the registry. It controls how consumers are auth
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EncryptionConfiguration`  <a name="cfn-agentregistry-registry-encryptionconfiguration"></a>
-The server-side encryption configuration for the registry. Appears only when a customer-managed AWS KMS key encrypts the registry.
+The server-side encryption configuration for the registry. It specifies a customer managed AWS Key Management Service (AWS KMS) key that encrypts the registry's content. If you omit this property, the registry's content is encrypted with an AWS owned key.
+You can't change the encryption configuration after you create the registry. If you specify a different KMS key, add this property to an existing registry, or remove it, CloudFormation replaces the registry. CloudFormation creates a new registry with a new Amazon Resource Name (ARN). Then it deletes the original registry, including the registry records that it contains.
+CloudFormation doesn't re-create registry records that the stack doesn't manage. If any of these records remain in the original registry, CloudFormation can't delete the original registry, and it remains in your account.
 *Required*: No
 *Type*: [EncryptionConfiguration](aws-properties-agentregistry-registry-encryptionconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -152,7 +159,7 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 <a name="aws-resource-agentregistry-registry-return-values-fn--getatt-fn--getatt"></a>
 
 `AutoDetectionStatus`  <a name="AutoDetectionStatus-fn::getatt"></a>
-The current auto-detection status. `ACTIVE` indicates that the registry is actively being populated with detected resources. `INACTIVE` indicates that the preconditions required at the configured scope are not currently met.
+The current auto-detection status of the registry. `ACTIVE` indicates that the registry is actively being populated with detected resources. `INACTIVE` indicates that the preconditions required at the configured scope aren't currently met.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the registry was created.

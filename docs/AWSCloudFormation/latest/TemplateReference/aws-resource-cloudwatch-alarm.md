@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::CloudWatch::Alarm",
   "Properties" : {
+      "[ActionConfiguration](#cfn-cloudwatch-alarm-actionconfiguration)" : {{ActionConfiguration}},
       "[ActionsEnabled](#cfn-cloudwatch-alarm-actionsenabled)" : {{Boolean}},
       "[AlarmActions](#cfn-cloudwatch-alarm-alarmactions)" : {{[ String, ... ]}},
       "[AlarmDescription](#cfn-cloudwatch-alarm-alarmdescription)" : {{String}},
@@ -61,6 +62,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::CloudWatch::Alarm
 Properties:
+  [ActionConfiguration](#cfn-cloudwatch-alarm-actionconfiguration): {{
+    ActionConfiguration}}
   [ActionsEnabled](#cfn-cloudwatch-alarm-actionsenabled): {{Boolean}}
   [AlarmActions](#cfn-cloudwatch-alarm-alarmactions): {{
     - String}}
@@ -100,6 +103,13 @@ Properties:
 
 ## Properties
 <a name="aws-resource-cloudwatch-alarm-properties"></a>
+
+`ActionConfiguration`  <a name="cfn-cloudwatch-alarm-actionconfiguration"></a>
+Settings that change the content of the notifications and events that the alarm sends when its state changes.
+These settings apply to the alarm's actions, whichever state triggers them.
+*Required*: No
+*Type*: [ActionConfiguration](aws-properties-cloudwatch-alarm-actionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ActionsEnabled`  <a name="cfn-cloudwatch-alarm-actionsenabled"></a>
 Indicates whether actions should be executed during any changes to the alarm state. The default is TRUE.

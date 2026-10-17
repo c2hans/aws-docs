@@ -56,7 +56,7 @@ Required: Yes
  ** [supportMode](#API_CreateComplianceInquiry_RequestSyntax) **   <a name="artifact-CreateComplianceInquiry-request-supportMode"></a>
 Support mode for inquiry processing. Only supported for file upload mode. Defaults to AI\_ONLY if not specified.
 Type: String
-Valid Values: `AI_ONLY | FULL_SUPPORT`
+Valid Values: `AI_ONLY`
 Required: No
 
  ** [tags](#API_CreateComplianceInquiry_RequestSyntax) **   <a name="artifact-CreateComplianceInquiry-request-tags"></a>

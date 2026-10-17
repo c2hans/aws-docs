@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::AgentRegistry::RegistryRecord SourceOnlyDescriptorSourceFromUrl
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl"></a>
 
-<a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-description"></a>The `SourceOnlyDescriptorSourceFromUrl` property type specifies Property description not available. for an [AWS::AgentRegistry::RegistryRecord](aws-resource-agentregistry-registryrecord.md).
+The URL-based source configuration for a source-only descriptor.
 
 ## Syntax
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-properties"></a>
 
 `Url`  <a name="cfn-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl-url"></a>
-Property description not available.
+The URL from which the descriptor content is retrieved. The URL must use HTTPS.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^https://.*$`

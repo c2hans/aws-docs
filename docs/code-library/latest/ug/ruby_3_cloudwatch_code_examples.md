@@ -1365,7 +1365,7 @@ The following code example shows how to:
 
 **SDK for Ruby**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/cloudwatch#code-examples).
-Define methods that call the CloudWatch OpenTelemetry operations.
+Define wrapper code that calls the CloudWatch OpenTelemetry operations.
 
 ```
 # Turns on OTel enrichment for the account. Once enrichment is running, CloudWatch vended

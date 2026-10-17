@@ -20,7 +20,7 @@ To set up a different kind of embedded asset, shooce one of the following option
 **Embedding options for registered users**
 + [Embedding Quick Sight visuals for registered users](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-visuals-for-authenticated-users.html)
 + [Embed the full functionality of the Quick Sight console for registered users](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-full-console-for-authenticated-users.html)
-+ [Embed the Generative Q&A experience for registered users](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-gen-bi-authenticated-users.html)
++ [Embed the Amazon Q in Quick Sight Generative Q&A experience for registered users](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-gen-bi-authenticated-users.html)
 
 **Embedding options for anonymous (unregistered) users**
 + [Embed data dashboards for anonymous (unregistered) users](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics-dashboards-for-everyone.html)

@@ -31,10 +31,14 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[FirewallName](#cfn-networkfirewall-firewall-firewallname)" : {{String}},
       "[FirewallPolicyArn](#cfn-networkfirewall-firewall-firewallpolicyarn)" : {{String}},
       "[FirewallPolicyChangeProtection](#cfn-networkfirewall-firewall-firewallpolicychangeprotection)" : {{Boolean}},
+      "[NatGatewayMappings](#cfn-networkfirewall-firewall-natgatewaymappings)" : {{[ NatGatewayMapping, ... ]}},
+      "[NoSourcePreservation](#cfn-networkfirewall-firewall-nosourcepreservation)" : {{Boolean}},
+      "[ProxySettings](#cfn-networkfirewall-firewall-proxysettings)" : {{ProxySettings}},
       "[SubnetChangeProtection](#cfn-networkfirewall-firewall-subnetchangeprotection)" : {{Boolean}},
       "[SubnetMappings](#cfn-networkfirewall-firewall-subnetmappings)" : {{[ SubnetMapping, ... ]}},
       "[Tags](#cfn-networkfirewall-firewall-tags)" : {{[ Tag, ... ]}},
       "[TransitGatewayId](#cfn-networkfirewall-firewall-transitgatewayid)" : {{String}},
+      "[VpcEndpoint](#cfn-networkfirewall-firewall-vpcendpoint)" : {{VpcEndpoint}},
       "[VpcId](#cfn-networkfirewall-firewall-vpcid)" : {{String}}
     }
 }
@@ -56,12 +60,19 @@ Properties:
   [FirewallName](#cfn-networkfirewall-firewall-firewallname): {{String}}
   [FirewallPolicyArn](#cfn-networkfirewall-firewall-firewallpolicyarn): {{String}}
   [FirewallPolicyChangeProtection](#cfn-networkfirewall-firewall-firewallpolicychangeprotection): {{Boolean}}
+  [NatGatewayMappings](#cfn-networkfirewall-firewall-natgatewaymappings): {{
+    - NatGatewayMapping}}
+  [NoSourcePreservation](#cfn-networkfirewall-firewall-nosourcepreservation): {{Boolean}}
+  [ProxySettings](#cfn-networkfirewall-firewall-proxysettings): {{
+    ProxySettings}}
   [SubnetChangeProtection](#cfn-networkfirewall-firewall-subnetchangeprotection): {{Boolean}}
   [SubnetMappings](#cfn-networkfirewall-firewall-subnetmappings): {{
     - SubnetMapping}}
   [Tags](#cfn-networkfirewall-firewall-tags): {{
     - Tag}}
   [TransitGatewayId](#cfn-networkfirewall-firewall-transitgatewayid): {{String}}
+  [VpcEndpoint](#cfn-networkfirewall-firewall-vpcendpoint): {{
+    VpcEndpoint}}
   [VpcId](#cfn-networkfirewall-firewall-vpcid): {{String}}
 ```
 
@@ -125,6 +136,24 @@ A setting indicating whether the firewall is protected against a change to the f
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`NatGatewayMappings`  <a name="cfn-networkfirewall-firewall-natgatewaymappings"></a>
+The NAT gateways that the firewall uses to proxy traffic. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+*Required*: No
+*Type*: Array of [NatGatewayMapping](aws-properties-networkfirewall-firewall-natgatewaymapping.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`NoSourcePreservation`  <a name="cfn-networkfirewall-firewall-nosourcepreservation"></a>
+Indicates whether the firewall operates in proxy mode, in which the source IP address of the traffic is not preserved. When this value is `TRUE`, the firewall proxies traffic through a NAT gateway and uses the NAT gateway's IP address as the source for traffic reaching the destination.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ProxySettings`  <a name="cfn-networkfirewall-firewall-proxysettings"></a>
+The listener configuration for the firewall's proxy. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+*Required*: No
+*Type*: [ProxySettings](aws-properties-networkfirewall-firewall-proxysettings.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `SubnetChangeProtection`  <a name="cfn-networkfirewall-firewall-subnetchangeprotection"></a>
 A setting indicating whether the firewall is protected against changes to the subnet associations. Use this setting to protect against accidentally modifying the subnet associations for a firewall that is in use. When you create a firewall, the operation initializes this setting to `TRUE`.
 *Required*: No
@@ -153,6 +182,12 @@ The unique identifier of the transit gateway associated with this firewall. This
 *Pattern*: `^tgw-[0-9a-z]+$`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VpcEndpoint`  <a name="cfn-networkfirewall-firewall-vpcendpoint"></a>
+The VPC and subnets for the firewall endpoint. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+*Required*: No
+*Type*: [VpcEndpoint](aws-properties-networkfirewall-firewall-vpcendpoint.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `VpcId`  <a name="cfn-networkfirewall-firewall-vpcid"></a>
 The unique identifier of the VPC where the firewall is in use. You can't change the VPC of a firewall after you create the firewall.
@@ -193,6 +228,9 @@ The Amazon Resource Name (ARN) of the firewall.
 
 `FirewallId`  <a name="FirewallId-fn::getatt"></a>
 The name of the firewallresource.
+
+`NumberOfAssociations`  <a name="NumberOfAssociations-fn::getatt"></a>
+The number of `VpcEndpointAssociation` resources that use this firewall.
 
 `TransitGatewayAttachmentId`  <a name="TransitGatewayAttachmentId-fn::getatt"></a>
 The unique identifier of the transit gateway attachment associated with this firewall. This field is only present for transit gateway-attached firewalls.

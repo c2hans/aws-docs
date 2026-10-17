@@ -21,6 +21,7 @@ The following data types are supported:
 +  [ChangeSetHookResourceTargetDetails](API_ChangeSetHookResourceTargetDetails.md)
 +  [ChangeSetHookTargetDetails](API_ChangeSetHookTargetDetails.md)
 +  [ChangeSetSummary](API_ChangeSetSummary.md)
++  [DeploymentConfig](API_DeploymentConfig.md)
 +  [DeploymentTargets](API_DeploymentTargets.md)
 +  [EventFilter](API_EventFilter.md)
 +  [Export](API_Export.md)

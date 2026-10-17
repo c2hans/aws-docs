@@ -41,6 +41,9 @@ To apply a policy to accounts across your organization, the IPAM must be in the 
 **Note**
 A policy applies only to accounts in the delegated administrator's own organization. If your IPAM manages accounts in other organizations through shared resource discoveries, the policy does not apply to those accounts. For more information, see [Integrate IPAM with accounts outside of your organization](enable-integ-ipam-outside-org.md).
 
+**Note**
+Organizational unit (OU) exclusions also apply to IPAM policies. A policy doesn't apply to accounts that an OU exclusion covers, even if the policy specifies those accounts as targets. Before you choose policy targets, review your OU exclusions. For more information, see [Exclude organizational units from IPAM](exclude-ous.md).
+
 ## Terminology
 <a name="ipam-policies-terminology"></a>
 

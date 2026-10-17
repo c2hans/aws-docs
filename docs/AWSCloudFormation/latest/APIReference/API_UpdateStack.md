@@ -62,6 +62,11 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `[a-zA-Z0-9][-a-zA-Z0-9]*`
 Required: No
 
+ ** DeploymentConfig **
+The deployment configuration for this stack operation, including the deployment mode.
+Type: [DeploymentConfig](API_DeploymentConfig.md) object
+Required: No
+
  ** DisableRollback **
 Preserve the state of previously provisioned resources when an operation fails.
 Default: `False`

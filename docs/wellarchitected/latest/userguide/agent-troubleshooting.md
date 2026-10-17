@@ -39,6 +39,12 @@ To identify the specific issue, call `GetAgentProfile` and check the `fieldError
 + **Access role permissions insufficient:** Verify the [`WellArchitectedAgentResourceScanning`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WellArchitectedAgentResourceScanning.html) managed policy is attached to each access role.
 + **Recently created profile:** Scheduled recommendations can take up to 24 hours after profile setup is complete. If less than 24 hours have elapsed, wait for the next generation cycle.
 
+## Monitored accounts return only Application-level recommendations (beta)
+<a name="agent-ts-support-plan"></a>
+
+**Possible causes and solutions:**
++ **Member account below Business\+ support plan:** AWS WA Agent requires an active AWS Support plan at Business\+ or higher in every account within the monitoring boundary. If a monitored account has only a Basic or Developer plan, AWS WA Agent cannot call AWS Trusted Advisor APIs for that account and limits its recommendations to Application-level recommendations (beta). Check the support plan entitlement of each member (monitored) account in the profile, and upgrade any account that is below Business\+.
+
 ## ServiceQuotaExceededException during profile creation
 <a name="agent-ts-quota-exceeded"></a>
 

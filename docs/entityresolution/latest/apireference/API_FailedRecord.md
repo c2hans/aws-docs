@@ -12,6 +12,7 @@ The record that didn't generate a Match ID.
 
  ** errorMessage **   <a name="API-Type-FailedRecord-errorMessage"></a>
  The error message for the record that didn't generate a Match ID.
+An `errorMessage` of `Internal Server Error` indicates that an internal service-side problem occurred while generating the Match ID. You can safely retry these records.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes

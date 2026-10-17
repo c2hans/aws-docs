@@ -29,6 +29,15 @@ For more information, see [Data requests](https://docs.aws.amazon.com/connect/la
 
 Available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), and Europe (London).
 
+### Amazon Connect Customer now lets agents preview attachments in the agent workspace
+<a name="sep26-attachment-preview"></a>
+
+Agents can now preview attachments on an email contact, a chat contact, or a case directly in the Connect Customer agent workspace, without downloading them to their device. Previewing reduces the risk of customer files being retained on agent machines, and it is faster than a download-then-open round trip. PDF, image, and common text file types are rendered inline. Any other file type is shown with its details and a download button, and can still be downloaded as usual.
+
+Preview requires no configuration beyond enabling attachments for your instance. For more information, see [Preview attachments in the agent workspace](https://docs.aws.amazon.com/connect/latest/adminguide/preview-attachments.html) in the Connect Customer Administrator Guide.
+
+Available in the AWS Regions where Connect Customer is offered.
+
 ### Connect Customer Global Resiliency now routes contacts across two active AWS Regions
 <a name="sep26-global-routing-acgr"></a>
 

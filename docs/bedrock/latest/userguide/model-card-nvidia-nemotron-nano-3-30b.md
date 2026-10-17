@@ -21,6 +21,7 @@ Nemotron Nano 3 30B is NVIDIA's 30-billion parameter model with strong reasoning
 + **Model lifecycle:** Active
 + **Context window:** 256K tokens
 + **Max output tokens:** 8K
++ **Reasoning:** Supported (effort configurable: none, low, medium, high)
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |
 | --- | --- | --- | --- |

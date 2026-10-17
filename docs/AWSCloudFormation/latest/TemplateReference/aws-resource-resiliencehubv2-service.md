@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AssociatedSystems](#cfn-resiliencehubv2-service-associatedsystems)" : {{[ AssociatedSystem, ... ]}},
       "[DependencyDiscovery](#cfn-resiliencehubv2-service-dependencydiscovery)" : {{String}},
       "[Description](#cfn-resiliencehubv2-service-description)" : {{String}},
+      "[DevOpsAgentConfiguration](#cfn-resiliencehubv2-service-devopsagentconfiguration)" : {{DevOpsAgentConfiguration}},
       "[InputSources](#cfn-resiliencehubv2-service-inputsources)" : {{[ InputSourceDefinition, ... ]}},
       "[KmsKeyId](#cfn-resiliencehubv2-service-kmskeyid)" : {{String}},
       "[Name](#cfn-resiliencehubv2-service-name)" : {{String}},
@@ -49,6 +50,8 @@ Properties:
     - AssociatedSystem}}
   [DependencyDiscovery](#cfn-resiliencehubv2-service-dependencydiscovery): {{String}}
   [Description](#cfn-resiliencehubv2-service-description): {{String}}
+  [DevOpsAgentConfiguration](#cfn-resiliencehubv2-service-devopsagentconfiguration): {{
+    DevOpsAgentConfiguration}}
   [InputSources](#cfn-resiliencehubv2-service-inputsources): {{
     - InputSourceDefinition}}
   [KmsKeyId](#cfn-resiliencehubv2-service-kmskeyid): {{String}}
@@ -93,6 +96,12 @@ The description of the event.
 *Required*: No
 *Type*: String
 *Maximum*: `615`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DevOpsAgentConfiguration`  <a name="cfn-resiliencehubv2-service-devopsagentconfiguration"></a>
+The current DevOps Agent integration state for the service.
+*Required*: No
+*Type*: [DevOpsAgentConfiguration](aws-properties-resiliencehubv2-service-devopsagentconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InputSources`  <a name="cfn-resiliencehubv2-service-inputsources"></a>

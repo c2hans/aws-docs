@@ -619,10 +619,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateProvisionedProductProperties  **
   - **SDK client:** servicecatalog
-  - **IAM action:**  [servicecatalog:UpdateProvisionedProductProperties](#list_service-catalog-action-UpdateProvisionedProductProperties)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [servicecatalog:UpdateProvisionedProductProperties](#list_service-catalog-action-UpdateProvisionedProductProperties)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** servicecatalog.amazonaws.com / **Access level:** Write
 
 - **   UpdateProvisioningArtifact  **
   - **SDK client:** servicecatalog

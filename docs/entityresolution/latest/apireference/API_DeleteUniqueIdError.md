@@ -12,8 +12,8 @@ The error information provided when the delete unique ID operation doesn't compl
 
  ** errorType **   <a name="API-Type-DeleteUniqueIdError-errorType"></a>
  The error type for the delete unique ID operation.
-The `SERVICE_ERROR` value indicates that an internal service-side problem occurred during the deletion operation.
-The `VALIDATION_ERROR` value indicates that the deletion operation couldn't complete because of invalid input parameters or data.
+The `SERVICE_ERROR` value indicates that an internal service-side problem occurred during the deletion operation. You can safely retry these unique IDs.
+The `VALIDATION_ERROR` value indicates that the deletion operation couldn't complete because of invalid input parameters or data. Retrying won't help. Correct the input before you try again.
 Type: String
 Valid Values: `SERVICE_ERROR | VALIDATION_ERROR`
 Required: Yes

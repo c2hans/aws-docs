@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-agent-se
 # Agent setup guide
 <a name="eb-agent-setup-guide"></a>
 
-AI coding agents can accelerate serverless development by providing intelligent assistance for application scaffolding, deployment configuration, debugging, and infrastructure-as-code generation. By configuring your agent with the right combination of plugins and skills, you equip it with expertise required to build and manage serverless applications.
+AI coding agents can accelerate serverless development by providing intelligent assistance for application scaffolding, deployment configuration, debugging, and infrastructure-as-code generation. Configure your agent with the right combination of plugins and skills. This equips it with the expertise it needs to build and manage serverless applications.
 
 **Work with your coding agent**
 For a quick-start reference, you can drop this link directly into your agent's context: `https://docs.aws.amazon.com/eventbridge/latest/userguide/samples/aws-eventbridge-agent-setup.md`
@@ -45,6 +45,8 @@ This installs agent skills including the AWS serverless skill, agent hooks, and 
 ## Codex
 <a name="eb-agent-setup-codex"></a>
 
+Codex supports the open-source agent skills format. Install the AWS serverless skill and the Amazon EventBridge skill to add serverless expertise to your agent.
+
 ### Install AWS serverless skill
 <a name="eb-agent-setup-codex-skill"></a>
 
@@ -61,6 +63,8 @@ npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/spe
 ## Cursor
 <a name="eb-agent-setup-cursor"></a>
 
+Cursor supports the open-source agent skills format. Install the AWS serverless skill and the Amazon EventBridge skill to add serverless expertise to your agent.
+
 ### Install AWS serverless skill
 <a name="eb-agent-setup-cursor-skill"></a>
 
@@ -76,6 +80,8 @@ npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/spe
 
 ## Kiro
 <a name="eb-agent-setup-kiro"></a>
+
+Kiro supports the open-source agent skills format. Install the AWS serverless skill and the Amazon EventBridge skill, then add Kiro powers for additional serverless tooling.
 
 ### Install AWS serverless skill in Kiro CLI
 <a name="eb-agent-setup-kiro-skill"></a>
@@ -99,6 +105,8 @@ Install the following Kiro powers that provide specialized contexts and tools to
 ## GitHub Copilot
 <a name="eb-agent-setup-github-copilot"></a>
 
+GitHub Copilot supports the open-source agent skills format. Install the AWS serverless skill and the Amazon EventBridge skill to add serverless expertise to your agent.
+
 ### Install AWS serverless skill
 <a name="eb-agent-setup-github-copilot-skill"></a>
 
@@ -115,6 +123,8 @@ npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/spe
 ## Devin Desktop
 <a name="eb-agent-setup-windsurf"></a>
 
+Devin Desktop supports the open-source agent skills format. Install the AWS serverless skill and the Amazon EventBridge skill to add serverless expertise to your agent.
+
 ### Install AWS serverless skill
 <a name="eb-agent-setup-windsurf-skill"></a>
 
@@ -130,6 +140,8 @@ npx skills add https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/spe
 
 ## OpenCode
 <a name="eb-agent-setup-opencode"></a>
+
+OpenCode supports the open-source agent skills format. Install the AWS serverless skill and the Amazon EventBridge skill to add serverless expertise to your agent.
 
 ### Install AWS serverless skill
 <a name="eb-agent-setup-opencode-skill"></a>

@@ -48,13 +48,13 @@ AWS HealthLake provides support for both SMART on FHIR V1 and V2 as described be
 *Required*: Yes
 *Type*: String
 *Allowed values*: `SMART_ON_FHIR_V1 | AWS_AUTH | SMART_ON_FHIR`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FineGrainedAuthorizationEnabled`  <a name="cfn-healthlake-fhirdatastore-identityproviderconfiguration-finegrainedauthorizationenabled"></a>
 The parameter to enable SMART on FHIR fine-grained authorization for the data store.
 *Required*: No
 *Type*: Boolean
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IdpLambdaArn`  <a name="cfn-healthlake-fhirdatastore-identityproviderconfiguration-idplambdaarn"></a>
 The Amazon Resource Name (ARN) of the Lambda function to use to decode the access token created by the authorization server.
@@ -63,7 +63,7 @@ The Amazon Resource Name (ARN) of the Lambda function to use to decode the acces
 *Pattern*: `arn:aws[-a-z]*:lambda:[a-z]{2}-[a-z]+-\d{1}:\d{12}:function:[a-zA-Z0-9\-_\.]+(:(\$LATEST|[a-zA-Z0-9\-_]+))?`
 *Minimum*: `49`
 *Maximum*: `256`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Metadata`  <a name="cfn-healthlake-fhirdatastore-identityproviderconfiguration-metadata"></a>
 The JSON metadata elements to use in your identity provider configuration. Required elements are listed based on the launch specification of the SMART application. For more information on all possible elements, see [Metadata](https://build.fhir.org/ig/HL7/smart-app-launch/conformance.html#metadata) in SMART's App Launch specification.
@@ -74,4 +74,4 @@ The JSON metadata elements to use in your identity provider configuration. Requi
 `code_challenge_methods_supported`: An array of strings of supported PKCE code challenge methods. You must include the `S256` method in the array of PKCE code challenge methods.
 *Required*: No
 *Type*: String
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

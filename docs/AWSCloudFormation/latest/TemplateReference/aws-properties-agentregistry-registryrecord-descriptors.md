@@ -7,7 +7,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::AgentRegistry::RegistryRecord Descriptors
 <a name="aws-properties-agentregistry-registryrecord-descriptors"></a>
 
-The typed set of descriptors for a registry record. Exactly one descriptor field is populated based on the record type.
+This property type contains the typed set of descriptors for a registry record. A descriptor holds the content that describes the discoverable resource, such as a server definition or an agent card.
+
+Exactly one descriptor field is populated, based on the record type. For the `AGENT` record type, use the `A2aAgentCard`, `Http`, or `Agui` descriptor.
 
 ## Syntax
 <a name="aws-properties-agentregistry-registryrecord-descriptors-syntax"></a>
@@ -62,7 +64,7 @@ The agent skills definition descriptor, populated when the record type is `SKILL
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Agui`  <a name="cfn-agentregistry-registryrecord-descriptors-agui"></a>
-The AG-UI descriptor, populated for records detected from an AG-UI protocol source.
+The Agent-User Interaction (AG-UI) descriptor, populated for records detected from an AG-UI protocol source. You can use this descriptor only when the record type is `AGENT`.
 *Required*: No
 *Type*: [AgUiDescriptor](aws-properties-agentregistry-registryrecord-aguidescriptor.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -74,7 +76,7 @@ The custom descriptor, populated when the record type is `CUSTOM`.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Http`  <a name="cfn-agentregistry-registryrecord-descriptors-http"></a>
-The HTTP descriptor, populated for records detected from an HTTP protocol source.
+The HTTP descriptor, populated for records detected from an HTTP protocol source. You can use this descriptor only when the record type is `AGENT`.
 *Required*: No
 *Type*: [HttpDescriptor](aws-properties-agentregistry-registryrecord-httpdescriptor.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

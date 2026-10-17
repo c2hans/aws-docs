@@ -25,6 +25,7 @@ The following data is returned in JSON format by the service.
 
  ** [AccessStatus](#API_GetAWSOrganizationsAccessStatus_ResponseSyntax) **   <a name="servicecatalog-GetAWSOrganizationsAccessStatus-response-AccessStatus"></a>
 The status of the portfolio share feature.
+ `UNDER_CHANGE` indicates that a change to AWS Organizations access is in progress. After `EnableAWSOrganizationsAccess`, this is the period, usually less than two hours, in which AWS Service Catalog counts the accounts in your organization. If the status then changes to `DISABLED`, the organization has more than 15,000 accounts and access was not enabled. For more information, see [EnableAWSOrganizationsAccess](API_EnableAWSOrganizationsAccess.md).
 Type: String
 Valid Values: `ENABLED | UNDER_CHANGE | DISABLED`
 

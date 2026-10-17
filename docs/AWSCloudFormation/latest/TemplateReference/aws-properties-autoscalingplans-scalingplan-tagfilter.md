@@ -40,7 +40,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 The tag key.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -49,6 +48,8 @@ The tag key.
 The tag values (0 to 20).
 *Required*: No
 *Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `256 | 20`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## See also

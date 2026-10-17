@@ -46,7 +46,8 @@ Content-type: application/json
       "vpcConfig": {
          "securityGroupIds": [ "string" ],
          "subnetIds": [ "string" ],
-         "vpcId": "string"
+         "vpcId": "string",
+         "vpcOwnerAccountId": "string"
       }
    },
    "status": "string",

@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Categorical](#cfn-bedrockagentcore-evaluator-ratingscale-categorical)" : {{[ CategoricalScaleDefinition, ... ]}},
+  "[MultiDimensional](#cfn-bedrockagentcore-evaluator-ratingscale-multidimensional)" : {{[ EvaluationDimension, ... ]}},
   "[Numerical](#cfn-bedrockagentcore-evaluator-ratingscale-numerical)" : {{[ NumericalScaleDefinition, ... ]}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Categorical](#cfn-bedrockagentcore-evaluator-ratingscale-categorical): {{
     - CategoricalScaleDefinition}}
+  [MultiDimensional](#cfn-bedrockagentcore-evaluator-ratingscale-multidimensional): {{
+    - EvaluationDimension}}
   [Numerical](#cfn-bedrockagentcore-evaluator-ratingscale-numerical): {{
     - NumericalScaleDefinition}}
 ```
@@ -41,6 +44,14 @@ To declare this entity in your CloudFormation template, use the following syntax
  The categorical rating scale with named categories and definitions for qualitative evaluation.
 *Required*: No
 *Type*: Array of [CategoricalScaleDefinition](aws-properties-bedrockagentcore-evaluator-categoricalscaledefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MultiDimensional`  <a name="cfn-bedrockagentcore-evaluator-ratingscale-multidimensional"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [EvaluationDimension](aws-properties-bedrockagentcore-evaluator-evaluationdimension.md)
+*Minimum*: `1`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Numerical`  <a name="cfn-bedrockagentcore-evaluator-ratingscale-numerical"></a>

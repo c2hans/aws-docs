@@ -36,7 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[RdsPromoteReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdspromotereadreplicaconfig)" : {{RdsPromoteReadReplicaConfiguration}},
   "[RdsSwitchoverReadReplicaConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-rdsswitchoverreadreplicaconfig)" : {{RdsSwitchoverReadReplicaConfiguration}},
   "[RegionSwitchPlanConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-regionswitchplanconfig)" : {{RegionSwitchPlanConfiguration}},
-  "[Route53HealthCheckConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-route53healthcheckconfig)" : {{Route53HealthCheckConfiguration}}
+  "[Route53HealthCheckConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-route53healthcheckconfig)" : {{Route53HealthCheckConfiguration}},
+  "[SsmSendCommandConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-ssmsendcommandconfig)" : {{SsmSendCommandConfiguration}}
 }
 ```
 
@@ -80,6 +81,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     RegionSwitchPlanConfiguration}}
   [Route53HealthCheckConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-route53healthcheckconfig): {{
     Route53HealthCheckConfiguration}}
+  [SsmSendCommandConfig](#cfn-arcregionswitch-plan-executionblockconfiguration-ssmsendcommandconfig): {{
+    SsmSendCommandConfiguration}}
 ```
 
 ## Properties
@@ -191,4 +194,10 @@ A Region switch plan execution block.
 The Amazon Route 53 health check configuration.
 *Required*: No
 *Type*: [Route53HealthCheckConfiguration](aws-properties-arcregionswitch-plan-route53healthcheckconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SsmSendCommandConfig`  <a name="cfn-arcregionswitch-plan-executionblockconfiguration-ssmsendcommandconfig"></a>
+Specifies an AWS Systems Manager `SendCommand` execution block.
+*Required*: No
+*Type*: [SsmSendCommandConfiguration](aws-properties-arcregionswitch-plan-ssmsendcommandconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

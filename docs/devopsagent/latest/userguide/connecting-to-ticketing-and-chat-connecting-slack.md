@@ -89,7 +89,7 @@ To enable bidirectional communication:
 
 1. Under **Bidirectional communication**, turn on **Bidirectional mode**.
 
-**Note** For private channels, you must invite the AWS DevOps Agent app to the channel before the app can receive messages.
+**Note** Invite the AWS DevOps Agent app to the channel so that the app can receive messages. Use a private channel for bidirectional mode. If you use a public channel, the app cannot send or receive bidirectional messages.
 
 1. Under **IAM role configuration**, choose one of the following options:
    + **Auto-create a new DevOps Agent role** — The console creates the role with the AIDevOpsChannelAccessPolicy AWS managed policy attached. You can modify the role later.
@@ -103,9 +103,9 @@ To enable bidirectional communication:
 ### Step 7: Invite DevOps Agent to the channel
 <a name="step-7-invite-devops-agent-to-the-channel"></a>
 
-For private channels with bidirectional mode enabled, you must add the AWS DevOps Agent app to the channel. You can skip this step for public channels used for one-way notifications only.
+Add the AWS DevOps Agent app to the channel. For bidirectional mode, the channel must be private.
 
-1. Go to the private channel in Slack.
+1. Open your Slack channel.
 
 1. Add the AWS DevOps Agent app using one of the following methods:
    + Open the channel details, choose the **Integrations** tab, choose **Add** under Apps, and search for **AWS DevOps Agent**.
@@ -116,8 +116,6 @@ For private channels with bidirectional mode enabled, you must add the AWS DevOp
 For example, for an Agent Space in Europe (Frankfurt):
 
 ``` /invite @AWS DevOps Agent - EU (Frankfurt) ```
-
-![Instructions for inviting the AWS DevOps Agent app to a private Slack channel with the /invite command.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/slack-step7-invite.png)
 
 ### Step 8: Confirm the invite in Slack
 <a name="step-8-confirm-the-invite-in-slack"></a>

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::AgentRegistry::Registry RecordTypeSchemaOverride
 <a name="aws-properties-agentregistry-registry-recordtypeschemaoverride"></a>
 
-The custom metadata fields for one record type, in addition to the common attributes defined in `defaultSchema`.
+A custom metadata schema override for a specific record type.
 
 ## Syntax
 <a name="aws-properties-agentregistry-registry-recordtypeschemaoverride-syntax"></a>
@@ -36,14 +36,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-agentregistry-registry-recordtypeschemaoverride-properties"></a>
 
 `RecordType`  <a name="cfn-agentregistry-registry-recordtypeschemaoverride-recordtype"></a>
-The record type these fields apply to.
+The record type that this schema override applies to.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `MCP | AGENT | SKILL | GATEWAY | CUSTOM`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Schema`  <a name="cfn-agentregistry-registry-recordtypeschemaoverride-schema"></a>
-A JSON Schema with the fields for this record type.
+The JSON Schema for the specified record type. The schema can contain 1 to 10,240 characters. It must follow the same structural rules as the default schema.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

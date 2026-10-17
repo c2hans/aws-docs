@@ -31,6 +31,13 @@ Length Constraints: Minimum length of 5. Maximum length of 128.
 Pattern: `vpc-[0-9a-f]+`
 Required: No
 
+ ** vpcOwnerAccountId **   <a name="omics-Type-VpcConfigResponse-vpcOwnerAccountId"></a>
+The AWS account ID of the cross-account VPC owner for RAM-shared VPC configurations.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `[0-9]+`
+Required: No
+
 ## See Also
 <a name="API_VpcConfigResponse_SeeAlso"></a>
 

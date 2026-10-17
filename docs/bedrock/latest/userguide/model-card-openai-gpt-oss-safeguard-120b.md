@@ -21,6 +21,7 @@ GPT OSS Safeguard 120B is OpenAI's 120-billion parameter open-source safety mode
 + **Model lifecycle:** Active
 + **Context window:** 128K tokens
 + **Max output tokens:** 16K
++ **Reasoning:** Supported, on by default (effort configurable: low, medium, high)
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |

@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CreateCaseActions](#cfn-connect-rule-actions-createcaseactions)" : {{[ CreateCaseAction, ... ]}},
   "[EndAssociatedTasksActions](#cfn-connect-rule-actions-endassociatedtasksactions)" : {{[ Json, ... ]}},
   "[EventBridgeActions](#cfn-connect-rule-actions-eventbridgeactions)" : {{[ EventBridgeAction, ... ]}},
+  "[SendInAppNotificationActions](#cfn-connect-rule-actions-sendinappnotificationactions)" : {{[ SendInAppNotificationAction, ... ]}},
   "[SendNotificationActions](#cfn-connect-rule-actions-sendnotificationactions)" : {{[ SendNotificationAction, ... ]}},
   "[SubmitAutoEvaluationActions](#cfn-connect-rule-actions-submitautoevaluationactions)" : {{[ SubmitAutoEvaluationAction, ... ]}},
   "[TaskActions](#cfn-connect-rule-actions-taskactions)" : {{[ TaskAction, ... ]}},
@@ -45,6 +46,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     - Json}}
   [EventBridgeActions](#cfn-connect-rule-actions-eventbridgeactions): {{
     - EventBridgeAction}}
+  [SendInAppNotificationActions](#cfn-connect-rule-actions-sendinappnotificationactions): {{
+    - SendInAppNotificationAction}}
   [SendNotificationActions](#cfn-connect-rule-actions-sendnotificationactions): {{
     - SendNotificationAction}}
   [SubmitAutoEvaluationActions](#cfn-connect-rule-actions-submitautoevaluationactions): {{
@@ -94,6 +97,14 @@ Property description not available.
 Information about the EventBridge action.
 *Required*: No
 *Type*: Array of [EventBridgeAction](aws-properties-connect-rule-eventbridgeaction.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SendInAppNotificationActions`  <a name="cfn-connect-rule-actions-sendinappnotificationactions"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [SendInAppNotificationAction](aws-properties-connect-rule-sendinappnotificationaction.md)
 *Minimum*: `1`
 *Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

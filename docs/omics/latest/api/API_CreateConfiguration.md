@@ -21,7 +21,8 @@ Content-type: application/json
    "runConfigurations": {
       "vpcConfig": {
          "securityGroupIds": [ "{{string}}" ],
-         "subnetIds": [ "{{string}}" ]
+         "subnetIds": [ "{{string}}" ],
+         "vpcOwnerAccountId": "{{string}}"
       }
    },
    "tags": {
@@ -89,7 +90,8 @@ Content-type: application/json
       "vpcConfig": {
          "securityGroupIds": [ "string" ],
          "subnetIds": [ "string" ],
-         "vpcId": "string"
+         "vpcId": "string",
+         "vpcOwnerAccountId": "string"
       }
    },
    "status": "string",

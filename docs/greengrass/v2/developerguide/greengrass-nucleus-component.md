@@ -238,6 +238,7 @@ Default: `60000` (60 seconds)
 `pingTimeoutMs`
 (Optional) The amount of time in milliseconds that the client waits to receive a `PINGACK` message from the server. If the wait exceeds the timeout, the core device closes and reopens the MQTT connection. This value must be less than `keepAliveTimeoutMs`.
 Default: `30000` (30 seconds)
+The effective maximum of this value depends on the MQTT version that you use. When you use `mqtt3`, the core device limits this value to `32767` (approximately 32.7 seconds) and silently reduces larger values to this limit. When you use `mqtt5`, the core device caps the effective ping timeout at half of the keep-alive interval that the server negotiates. The core device uses the value that you set only if it is less than `keepAliveTimeoutMs` divided by 2.
 `operationTimeoutMs`
 (Optional) The amount of time in milliseconds that the client waits for MQTT operations (such as `CONNECT` or `PUBLISH`) to complete. This option doesn't apply to MQTT `PING` or keep alive messages.
 Default: `30000` (30 seconds)
@@ -297,6 +298,7 @@ Default: `1`
 (Optional) An option for reconnection behavior. The maximum amount of time in seconds for MQTT to reconnect.
 This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).
 Default: `120`
+The core device applies this option only when you set the MQTT version to `mqtt5`. When you use `mqtt3`, the core device ignores this value and uses a fixed maximum reconnect delay of `128` seconds.
 `minimumConnectedTimeBeforeRetryResetSeconds`
 (Optional) An option for reconnection behavior. The amount of time in seconds a connection must be active before the retry delay is reset back to the minimum.
 This feature is available for v2.10.0 and later of the [Greengrass nucleus component](#greengrass-nucleus-component).

@@ -1053,7 +1053,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [CreateNetworkConnector](https://docs.aws.amazon.com/lambda/latest/dg/API_CreateNetworkConnector.html)  **
+- **   [CreateNetworkConnector](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_CreateNetworkConnector.html)  **
   - **Description:** Grants permission to create an AWS Lambda network connector
   - **Resource types (\*required):** [networkConnector\*](#list_lambda-resource-networkConnector)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_lambda-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_lambda-aws_TagKeys)<br />[lambda:SecurityGroupIds](#list_lambda-lambda_SecurityGroupIds)<br />[lambda:SubnetIds](#list_lambda-lambda_SubnetIds)
@@ -1149,7 +1149,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [DeleteNetworkConnector](https://docs.aws.amazon.com/lambda/latest/dg/API_DeleteNetworkConnector.html)  **
+- **   [DeleteNetworkConnector](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_DeleteNetworkConnector.html)  **
   - **Description:** Grants permission to delete an AWS Lambda network connector
   - **Resource types (\*required):** [networkConnector\*](#list_lambda-resource-networkConnector)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
@@ -1317,7 +1317,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [GetNetworkConnector](https://docs.aws.amazon.com/lambda/latest/dg/API_GetNetworkConnector.html)  **
+- **   [GetNetworkConnector](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_GetNetworkConnector.html)  **
   - **Description:** Grants permission to view details about an AWS Lambda network connector
   - **Resource types (\*required):** [networkConnector\*](#list_lambda-resource-networkConnector)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
@@ -1491,13 +1491,13 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
-- **   [ListNetworkConnectorVersions](https://docs.aws.amazon.com/lambda/latest/dg/API_ListNetworkConnectorVersions.html)  **
+- **   [ListNetworkConnectorVersions](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListNetworkConnectorVersions.html)  **
   - **Description:** Grants permission to retrieve a list of versions of an AWS Lambda network connector
   - **Resource types (\*required):** [networkConnector\*](#list_lambda-resource-networkConnector)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
-- **   [ListNetworkConnectors](https://docs.aws.amazon.com/lambda/latest/dg/API_ListNetworkConnectors.html)  **
+- **   [ListNetworkConnectors](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_ListNetworkConnectors.html)  **
   - **Description:** Grants permission to retrieve a list of AWS Lambda network connectors
   - **Resource types (\*required):**
   - **Condition keys:**
@@ -1752,7 +1752,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
-- **   [UpdateNetworkConnector](https://docs.aws.amazon.com/lambda/latest/dg/API_UpdateNetworkConnector.html)  **
+- **   [UpdateNetworkConnector](https://docs.aws.amazon.com/lambda/latest/lambda-core/API_UpdateNetworkConnector.html)  **
   - **Description:** Grants permission to update an AWS Lambda network connector
   - **Resource types (\*required):** [networkConnector\*](#list_lambda-resource-networkConnector)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_lambda-aws_ResourceTag___TagKey_)

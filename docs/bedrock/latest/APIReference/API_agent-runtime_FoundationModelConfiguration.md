@@ -13,12 +13,17 @@ Configuration for the foundation model.
  ** type **   <a name="bedrock-Type-agent-runtime_FoundationModelConfiguration-type"></a>
 The type of foundation model configuration.
 Type: String
-Valid Values: `BEDROCK_FOUNDATION_MODEL`
+Valid Values: `BEDROCK_FOUNDATION_MODEL | MANTLE_FOUNDATION_MODEL`
 Required: Yes
 
  ** bedrockFoundationModelConfiguration **   <a name="bedrock-Type-agent-runtime_FoundationModelConfiguration-bedrockFoundationModelConfiguration"></a>
 The Bedrock foundation model configuration.
 Type: [BedrockFoundationModelConfiguration](API_agent-runtime_BedrockFoundationModelConfiguration.md) object
+Required: No
+
+ ** mantleFoundationModelConfiguration **   <a name="bedrock-Type-agent-runtime_FoundationModelConfiguration-mantleFoundationModelConfiguration"></a>
+The Mantle foundation model configuration.
+Type: [MantleFoundationModelConfiguration](API_agent-runtime_MantleFoundationModelConfiguration.md) object
 Required: No
 
 ## See Also

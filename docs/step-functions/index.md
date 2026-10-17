@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/step-functions/index.html
 title: 'AWS Step Functions Documentation'
 canonical_url: https://docs.aws.amazon.com/step-functions/
 source: aws-documentation
-generated_on: 2026-10-15
+generated_on: 2026-10-16
 ---
 
 # AWS Step Functions Documentation

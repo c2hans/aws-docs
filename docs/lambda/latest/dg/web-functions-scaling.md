@@ -30,6 +30,8 @@ There is no minimum or reserved-environment setting. An endpoint always scales f
 
 The dynamic per-environment concurrency limit is a Lambda-managed limit on the number of requests that a single execution environment handles at the same time. Based on your function's resource usage, Lambda automatically adjusts this limit to optimize efficiency and performance. Lambda scales up new environments when existing environments are close to their limit. When the limit prevents all existing environments from accepting more requests, requests queue, waiting for the next available environment.
 
+For a new Web Function, Lambda sets a conservative starting limit and quickly adjusts it based on the function's resource usage. For more information about how the limit changes while handling load, see [Dynamic concurrency limit of a new Web Function](#web-functions-scaling-examples-dynamic-limit).
+
 You don't configure the dynamic limit directly. Instead, you can apply an upper bound to it by setting `maxConcurrencyPerEnvironment` on the revision. Lambda's dynamic limit can be lower than this value, but never exceeds it. For example, if you set `maxConcurrencyPerEnvironment` to 32, Lambda routes at most 32 concurrent requests to any environment, even if the environment has capacity for more.
 
 Most applications can rely on the dynamic limit without changing `maxConcurrencyPerEnvironment`. For guidance on when to change it, see [Choosing scaling settings](#web-functions-scaling-optimization).
@@ -157,7 +159,7 @@ Each Region creates and manages its own pool of execution environments. Traffic 
 
 Lambda scales your endpoint to maintain headroom above its current load. Headroom is the difference between incoming request load and the total request load that warm execution environments can serve. It absorbs small traffic increases without waiting for new environments to start. Capacity increases in steps, because each new environment adds capacity only after it finishes initializing. When the endpoint reaches a limit, capacity stops growing, and Lambda throttles requests that exceed what the endpoint can accept.
 
-The following examples show how the endpoint handles a traffic burst, and how it behaves when load reaches each type of limit. The charts illustrate general behavior and are not drawn to scale.
+The following examples show how the endpoint handles a traffic burst, how the dynamic per-environment concurrency limit changes during load tests on a new Web Function, and how the endpoint behaves when load reaches each type of limit. The charts illustrate general behavior and are not drawn to scale.
 
 ### Handling a traffic burst
 <a name="web-functions-scaling-examples-burst"></a>
@@ -165,6 +167,23 @@ The following examples show how the endpoint handles a traffic burst, and how it
 When load grows gradually, headroom absorbs the increase while Lambda scales up new environments in the background. When load rises faster than headroom can absorb, the warm environments can't handle all incoming requests. Lambda starts new environments to handle the load above headroom, and those requests wait for the new environments to cold start. After the new environments are ready, Lambda restores headroom above the new load.
 
 ![Chart of incoming load rising gently, then sharply. The RPS supported by warm environments rises in steps. Headroom absorbs the gentle rise. During the sharp rise, requests above warm capacity wait on cold starts.](https://docs.aws.amazon.com/lambda/latest/dg/images/web-functions-scaling-burst.png)
+
+### Dynamic concurrency limit of a new Web Function
+<a name="web-functions-scaling-examples-dynamic-limit"></a>
+
+The dynamic per-environment concurrency limit starts conservatively for a new Web Function. As the function handles traffic, Lambda learns from its resource usage and adjusts the limit. Lambda remembers what it learned when the function scales to zero, so environments that start later benefit from earlier traffic.
+
+The following charts show the first load test on a new Web Function. Incoming load rises quickly to a steady request rate and holds it. The dynamic concurrency limit starts low, increases as Lambda adjusts it based on the function's resource usage, and levels off below `maxConcurrencyPerEnvironment`.
+
+![Charts of a first load test. Load holds steady while the concurrency limit starts low and levels off.](https://docs.aws.amazon.com/lambda/latest/dg/images/web-functions-scaling-load-test-first.png)
+
+Because Lambda remembers what it learned from prior traffic, later load tests on the same Web Function don't start conservatively.
+
+The following charts show a later load test on the same Web Function. Incoming load rises to the same steady request rate, and the dynamic concurrency limit starts at the level Lambda learned in the prior run.
+
+![Charts of a later load test. Load holds steady while the concurrency limit starts at the level learned in the prior run.](https://docs.aws.amazon.com/lambda/latest/dg/images/web-functions-scaling-load-test-later.png)
+
+Because the limit starts conservatively, the first load test on a new Web Function might use more execution environments than later runs. To measure the performance your function can expect under steady traffic, run the load test more than once and use the results from later runs.
 
 ### Reaching the per-endpoint request rate limit
 <a name="web-functions-scaling-examples-rate"></a>

@@ -44,7 +44,7 @@ Image mappings specify path mappings between the ECR private repository and thei
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RegistryMappings`  <a name="cfn-omics-workflow-containerregistrymap-registrymappings"></a>
-Mapping that provides the ECR repository path where upstream container images are pulled and synchronized.
+The mappings between upstream container registries and repository prefixes in your Amazon Elastic Container Registry (Amazon ECR) private registry. The list can include both pull through cache mappings and mappings for registries that AWS HealthOmics copies images from.
 *Required*: No
 *Type*: Array of [RegistryMapping](aws-properties-omics-workflow-registrymapping.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

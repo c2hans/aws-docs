@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ### Start with a minimal working template
 <a name="yield-optimization-best-practices-start-minimal"></a>
 
-Use Example 1 from [Example templates](yield-optimization-examples.md) to validate your APS integration. Add fields incrementally and test each addition by checking `RAW_BID_REQUEST` events in CloudWatch Logs.
+Use Example 1 from [Example templates](yield-optimization-examples.md) to validate your Amazon Publisher Services (APS) integration. Add fields incrementally and test each addition by checking `RAW_BID_REQUEST` events in CloudWatch Logs.
 
 ### Provide all APS-recommended fields
 <a name="yield-optimization-best-practices-recommended-fields"></a>
@@ -46,7 +46,9 @@ Use `[2, 3, 5, 6]` at minimum (VAST 2.0, 3.0, 2.0 Wrapper, 3.0 Wrapper). For max
 ### Don't set fields that EMT manages
 <a name="yield-optimization-best-practices-emt-managed"></a>
 
-Fields like `imp.video.maxduration`, `imp.video.poddur`, `imp.video.minduration`, `imp.video.maxseq`, `app.publisher.id`, and `ext.integrationType` are always set by MediaTailor using your console configuration values. Including them in your template is harmless but misleading.
+Fields like `imp.video.maxduration`, `imp.video.poddur`, `imp.video.maxseq`, `app.publisher.id`, and `ext.integrationType` are always set by MediaTailor using your console configuration values and the current avail. Including them in your template is harmless but misleading.
+
+`imp.video.minduration` is the exception. MediaTailor uses your template value for both `minduration` and the `maxseq` calculation. If your inventory can accept ads shorter than 15 seconds, set `minduration` in your template (for example, `6`). You might then receive more short ads in each pod. See [How `minduration` and `maxseq` are set](yield-optimization-bid-construction.md#yield-optimization-bid-construction-pod-sizing).
 
 ### Prefer `regs.gpp` and `regs.gpp_sid` over `regs.us_privacy` for US privacy signals
 <a name="yield-optimization-best-practices-gpp"></a>

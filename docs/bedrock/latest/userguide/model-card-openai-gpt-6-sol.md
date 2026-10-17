@@ -163,7 +163,7 @@ Use these model IDs and endpoint URLs to call the model. See [APIs supported](ap
 | bedrock-runtime | openai.gpt-6-sol | Not supported | us.openai.gpt-6-sol | global.openai.gpt-6-sol |
 | bedrock-mantle | openai.gpt-6-sol | https://bedrock-mantle.{region}.api.aws/openai/v1 | Not supported | Not supported |
 
-On `bedrock-runtime`:
+Configure your client for the `bedrock-runtime` endpoint as follows:
 + Use this base URL: `https://bedrock-runtime.{region}.amazonaws.com/openai/v1`.
 + Set the model ID to `us.openai.gpt-6-sol` or `global.openai.gpt-6-sol`.
 + Choose a profile that is available in your source Region.

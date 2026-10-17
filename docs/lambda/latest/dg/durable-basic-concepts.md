@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-basic-concepts.
 # Basic concepts
 <a name="durable-basic-concepts"></a>
 
-The AWS Durable Execution SDK is the foundation for building durable functions, providing the primitives you need to checkpoint progress, handle retries, and manage execution flow. The SDK is available for Node.js (JavaScript and TypeScript), Python, Java, and C\# (.NET). For complete SDK documentation including API reference, quickstart tutorials, and language-specific guides, see the [AWS Durable Execution SDK Developer Guide](https://docs.aws.amazon.com/durable-execution/).
+The AWS Durable Execution SDK is the foundation for building durable functions, providing the primitives you need to checkpoint progress, handle retries, and manage execution flow. The SDK is available for Node.js (JavaScript and TypeScript), Python, Java, Go, and C\# (.NET). For complete SDK documentation including API reference, quickstart tutorials, and language-specific guides, see the [AWS Durable Execution SDK Developer Guide](https://docs.aws.amazon.com/durable-execution/).
 
 ## Durable execution
 <a name="durable-execution-concept"></a>

@@ -16,7 +16,7 @@ Type: Array of [ImageMapping](API_ImageMapping.md) objects
 Required: No
 
  ** registryMappings **   <a name="omics-Type-ContainerRegistryMap-registryMappings"></a>
-Mapping that provides the ECR repository path where upstream container images are pulled and synchronized.
+The mappings between upstream container registries and repository prefixes in your Amazon Elastic Container Registry (Amazon ECR) private registry. The list can include both pull through cache mappings and mappings for registries that AWS HealthOmics copies images from.
 Type: Array of [RegistryMapping](API_RegistryMapping.md) objects
 Required: No
 

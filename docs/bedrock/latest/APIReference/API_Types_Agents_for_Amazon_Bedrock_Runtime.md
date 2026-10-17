@@ -188,6 +188,8 @@ The following data types are supported by Agents for Amazon Bedrock Runtime:
 +  [ManagedSearchBedrockRerankingModelConfiguration](API_agent-runtime_ManagedSearchBedrockRerankingModelConfiguration.md)
 +  [ManagedSearchConfiguration](API_agent-runtime_ManagedSearchConfiguration.md)
 +  [ManagedSearchRerankingConfiguration](API_agent-runtime_ManagedSearchRerankingConfiguration.md)
++  [MantleFoundationModelConfiguration](API_agent-runtime_MantleFoundationModelConfiguration.md)
++  [MantleFoundationModelModelConfiguration](API_agent-runtime_MantleFoundationModelModelConfiguration.md)
 +  [Memory](API_agent-runtime_Memory.md)
 +  [MemorySessionSummary](API_agent-runtime_MemorySessionSummary.md)
 +  [Message](API_agent-runtime_Message.md)

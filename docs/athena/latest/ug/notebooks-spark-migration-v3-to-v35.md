@@ -75,14 +75,14 @@ For notebooks, set up SageMaker Unified Studio:
 1. Decide how to group notebooks across projects, for example one project per team or per source workgroup. Be aware of SageMaker Unified Studio [Project limits](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/quotas.html).
 
 **Important**
-Give the new execution role access to your data before you migrate. The migration does not copy IAM permissions, Amazon Simple Storage Service (Amazon S3) bucket policies, AWS Key Management Service (AWS KMS) key policies, or grants.
+Give the new execution role access to your data before you migrate. The migration does not copy IAM permissions, Amazon Simple Storage Service (Amazon S3) bucket policies, AWS Key Management Service (AWS KMS) key policies, or AWS Lake Formation grants.
 
 ### Step 3: Grant the project execution role access to your data
 <a name="notebooks-spark-migration-step-3-grant-access"></a>
 
 Compare the SageMaker Unified Studio project execution role with your existing Athena Spark workgroup execution role, and add any missing data-access permissions before you migrate.
 
-1. Verify that the SageMaker Unified Studio project execution role has the same data-access permissions (Amazon S3, AWS Glue ) as the execution role on your Athena Spark (PySpark engine version 3) workgroups. The migration script does not copy or grant these permissions.
+1. Verify that the SageMaker Unified Studio project execution role has the same data-access permissions (Amazon S3, AWS Glue, and Lake Formation) as the execution role on your Athena Spark (PySpark engine version 3) workgroups. The migration script does not copy or grant these permissions.
 
 1. Find your Athena Spark (PySpark engine version 3) workgroup execution role and its policies:
 
@@ -114,7 +114,7 @@ Compare the SageMaker Unified Studio project execution role with your existing A
 1. Compare the two roles and add any missing data-access permissions to the SageMaker Unified Studio project execution role.
 
 **Warning**
-If the new role is missing access, notebooks still import, but cells fail with access-denied errors when they run, for example from the AWS Glue Data Catalog, Amazon S3, AWS KMS, , or other services your code uses.
+If the new role is missing access, notebooks still import, but cells fail with access-denied errors when they run, for example from the AWS Glue Data Catalog, Amazon S3, AWS KMS, Lake Formation, or other services your code uses.
 
 ### Step 4: Onboard notebooks to SageMaker Unified Studio
 <a name="notebooks-spark-migration-step-4"></a>
@@ -444,6 +444,37 @@ This error occurs because SageMaker Unified Studio builds the Spark properties t
 1. Refresh the web browser SageMaker Unified Studio page (or close and reopen the project) so that SageMaker Unified Studio uses the regenerated, smaller configuration. Restarting the kernel alone isn't enough.
 
 1. Run the script again to confirm `Within 5000 character limit: True` before you run a PySpark cell.
+
+### A session doesn't default to the AWS Glue Data Catalog
+<a name="notebooks-spark-migration-troubleshooting-default-catalog"></a>
+
+When a session starts in SageMaker Unified Studio, a `CREATE DATABASE` statement (for example, `CREATE DATABASE IF NOT EXISTS sparkblogdb`) can create the database in an unexpected catalog, such as an Amazon S3 Tables catalog, instead of the AWS Glue Data Catalog. Running `spark.sql("SELECT current_catalog()").show()` after the statement returns the name of a registered Amazon S3 Tables catalog (for example, `v3-test`) rather than `spark_catalog`.
+
+This happens because the session's `spark_catalog` is an Iceberg `SparkSessionCatalog` whose AWS Glue settings point at an Amazon S3 Tables catalog rather than the root AWS Glue Data Catalog. In the generated Spark configuration, the catalog's `glue.catalog-arn` includes an `/s3tablescatalog/<name>` suffix and its `warehouse` is an `s3tables` ARN, so statements resolve to Amazon S3 Tables:
+
+```
+spark.sql.catalog.spark_catalog.glue.catalog-arn = arn:aws:glue:<region>:<account-id>:catalog/s3tablescatalog/<name>
+spark.sql.catalog.spark_catalog.warehouse       = arn:aws:s3tables:<region>:<account-id>:bucket/*
+```
+
+To create databases in the root AWS Glue Data Catalog instead, override the catalog configuration at session start with `sparkutils.init` so that it targets the root catalog:
++ Remove the `glue.catalog-arn` setting (or set it without the `/s3tablescatalog/<name>` suffix) so the catalog isn't scoped to an Amazon S3 Tables catalog.
++ Set `glue.id` to the plain account ID (for example, `012345678912`) rather than an `<account-id>:s3tablescatalog/<name>` value.
++ Set `warehouse` to a regular Amazon S3 path (for example, `s3://<your-bucket>/<prefix>/`) instead of an `s3tables` ARN.
+
+```
+from sagemaker_studio import sparkutils
+spark = sparkutils.init(spark_conf={
+    "spark.sql.catalog.spark_catalog": "org.apache.iceberg.spark.SparkSessionCatalog",
+    "spark.sql.catalog.spark_catalog.catalog-impl": "org.apache.iceberg.aws.glue.GlueCatalog",
+    "spark.sql.catalog.spark_catalog.io-impl": "org.apache.iceberg.aws.s3.S3FileIO",
+    "spark.sql.catalog.spark_catalog.glue.id": "<account-id>",
+    "spark.sql.catalog.spark_catalog.warehouse": "s3://<your-bucket>/<prefix>/",
+    "spark.sql.extensions": "org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions",
+})
+```
+
+To confirm which catalog and database a session resolves to, run `spark.sql("SELECT current_catalog(), current_database()").show()`.
 
 ## Appendix: Changes and what to do
 <a name="notebooks-spark-migration-appendix"></a>

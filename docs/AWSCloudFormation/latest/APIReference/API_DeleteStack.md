@@ -31,6 +31,11 @@ Type: String
 Valid Values: `STANDARD | FORCE_DELETE_STACK`
 Required: No
 
+ ** DeploymentConfig **
+The deployment configuration for this stack operation, including the deployment mode.
+Type: [DeploymentConfig](API_DeploymentConfig.md) object
+Required: No
+
  **RetainResources.member.N**
 For stacks in the `DELETE_FAILED` state, a list of resource logical IDs that are associated with the resources you want to retain. During deletion, CloudFormation deletes the stack but doesn't delete the retained resources.
 Retaining resources is useful when you can't delete a resource, such as a non-empty S3 bucket, but you want to delete the stack.

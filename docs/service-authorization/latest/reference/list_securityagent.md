@@ -60,6 +60,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   BatchExportFindings  **
+  - **IAM action:**  [securityagent:BatchExportFindings](#list_securityagent-action-BatchExportFindings)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   BatchGetAgentSpaces  **
   - **IAM action:**  [securityagent:BatchGetAgentSpaces](#list_securityagent-action-BatchGetAgentSpaces)
   - **Condition key:**

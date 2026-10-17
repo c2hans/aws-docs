@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_MediaConvert"></a>
 
 **Resource types**
++ [AWS::MediaConvert::CertificateAssociation](aws-resource-mediaconvert-certificateassociation.md)
 + [AWS::MediaConvert::JobTemplate](aws-resource-mediaconvert-jobtemplate.md)
 + [AWS::MediaConvert::Preset](aws-resource-mediaconvert-preset.md)
 + [AWS::MediaConvert::Queue](aws-resource-mediaconvert-queue.md)

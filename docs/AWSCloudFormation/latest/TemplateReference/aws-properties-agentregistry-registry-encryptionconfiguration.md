@@ -7,7 +7,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::AgentRegistry::Registry EncryptionConfiguration
 <a name="aws-properties-agentregistry-registry-encryptionconfiguration"></a>
 
-The server-side encryption configuration for a registry. Specifies a customer-managed AWS KMS key used to encrypt the registry's content.
+The server-side encryption configuration for a registry. It specifies a customer managed AWS Key Management Service (AWS KMS) key that encrypts the registry's content.
+
+You can't change the encryption configuration after you create the registry. Changing it replaces the registry.
 
 ## Syntax
 <a name="aws-properties-agentregistry-registry-encryptionconfiguration-syntax"></a>
@@ -34,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-agentregistry-registry-encryptionconfiguration-properties"></a>
 
 `KmsKeyArn`  <a name="cfn-agentregistry-registry-encryptionconfiguration-kmskeyarn"></a>
-The Amazon Resource Name (ARN) of the customer-managed AWS KMS key used to encrypt the registry's content. The key must be a symmetric encryption key in the same AWS account and Region as the registry.
+Specify the Amazon Resource Name (ARN) of the customer managed KMS key that encrypts the registry's content. You must use a symmetric encryption key in the same AWS account and Region as the registry. You can't use a multi-Region key.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws(-[^:]+)?:kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`

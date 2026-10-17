@@ -21,7 +21,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::DMS::DataMigration",
   "Properties" : {
-      "[DataMigrationIdentifier](#cfn-dms-datamigration-datamigrationidentifier)" : {{String}},
       "[DataMigrationName](#cfn-dms-datamigration-datamigrationname)" : {{String}},
       "[DataMigrationSettings](#cfn-dms-datamigration-datamigrationsettings)" : {{DataMigrationSettings}},
       "[DataMigrationType](#cfn-dms-datamigration-datamigrationtype)" : {{String}},
@@ -39,7 +38,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::DMS::DataMigration
 Properties:
-  [DataMigrationIdentifier](#cfn-dms-datamigration-datamigrationidentifier): {{String}}
   [DataMigrationName](#cfn-dms-datamigration-datamigrationname): {{String}}
   [DataMigrationSettings](#cfn-dms-datamigration-datamigrationsettings): {{
     DataMigrationSettings}}
@@ -54,14 +52,6 @@ Properties:
 
 ## Properties
 <a name="aws-resource-dms-datamigration-properties"></a>
-
-`DataMigrationIdentifier`  <a name="cfn-dms-datamigration-datamigrationidentifier"></a>
-Property description not available.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `300`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataMigrationName`  <a name="cfn-dms-datamigration-datamigrationname"></a>
 The user-friendly name for the data migration.

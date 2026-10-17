@@ -23,8 +23,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::MediaLive::InputSecurityGroup",
   "Properties" : {
-      "[Tags](#cfn-medialive-inputsecuritygroup-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}},
-      "[WhitelistRules](#cfn-medialive-inputsecuritygroup-whitelistrules)" : {{[ InputWhitelistRuleCidr, ... ]}}
+      "[Tags](#cfn-medialive-inputsecuritygroup-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[WhitelistRules](#cfn-medialive-inputsecuritygroup-whitelistrules)" : {{[ InputWhitelistRule, ... ]}}
     }
 }
 ```
@@ -36,9 +36,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::MediaLive::InputSecurityGroup
 Properties:
   [Tags](#cfn-medialive-inputsecuritygroup-tags): {{
-    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
+    {{Key}}: {{Value}}}}
   [WhitelistRules](#cfn-medialive-inputsecuritygroup-whitelistrules): {{
-    - InputWhitelistRuleCidr}}
+    - InputWhitelistRule}}
 ```
 
 ## Properties
@@ -47,13 +47,14 @@ Properties:
 `Tags`  <a name="cfn-medialive-inputsecuritygroup-tags"></a>
 A collection of tags for this input security group. Each tag is a key-value pair.
 *Required*: No
-*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Type*: Object of String
+*Pattern*: `.+`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WhitelistRules`  <a name="cfn-medialive-inputsecuritygroup-whitelistrules"></a>
 The list of IPv4 CIDR addresses to include in the input security group as "allowed" addresses.
 *Required*: No
-*Type*: Array of [InputWhitelistRuleCidr](aws-properties-medialive-inputsecuritygroup-inputwhitelistrulecidr.md)
+*Type*: Array of [InputWhitelistRule](aws-properties-medialive-inputsecuritygroup-inputwhitelistrule.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -83,3 +84,6 @@ The ARN of the MediaLive input security group. For example: arn:aws:medialive:us
 
 `Id`  <a name="Id-fn::getatt"></a>
 The Id of the Input Security Group
+
+`Inputs`  <a name="Inputs-fn::getatt"></a>
+The list of inputs currently using this Input Security Group.

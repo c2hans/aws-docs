@@ -24,6 +24,7 @@ You can create AWS Transform workspaces in the following AWS Regions. These Regi
 + Europe (London)
 + Asia Pacific (Seoul)
 + Canada (Central)
++ Asia Pacific (Singapore) - VMware agents only
 + South America (São Paulo) - Mainframe modernization agents only
 
 The workspace in which you create a job determines the AWS Region of the job. To create a job in a different Region, you must use a different workspace that is in your desired Region.

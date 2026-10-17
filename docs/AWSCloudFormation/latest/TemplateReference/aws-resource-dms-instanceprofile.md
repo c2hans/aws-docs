@@ -23,7 +23,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AvailabilityZone](#cfn-dms-instanceprofile-availabilityzone)" : {{String}},
       "[Description](#cfn-dms-instanceprofile-description)" : {{String}},
-      "[InstanceProfileIdentifier](#cfn-dms-instanceprofile-instanceprofileidentifier)" : {{String}},
       "[InstanceProfileName](#cfn-dms-instanceprofile-instanceprofilename)" : {{String}},
       "[KmsKeyArn](#cfn-dms-instanceprofile-kmskeyarn)" : {{String}},
       "[NetworkType](#cfn-dms-instanceprofile-networktype)" : {{String}},
@@ -43,7 +42,6 @@ Type: AWS::DMS::InstanceProfile
 Properties:
   [AvailabilityZone](#cfn-dms-instanceprofile-availabilityzone): {{String}}
   [Description](#cfn-dms-instanceprofile-description): {{String}}
-  [InstanceProfileIdentifier](#cfn-dms-instanceprofile-instanceprofileidentifier): {{String}}
   [InstanceProfileName](#cfn-dms-instanceprofile-instanceprofilename): {{String}}
   [KmsKeyArn](#cfn-dms-instanceprofile-kmskeyarn): {{String}}
   [NetworkType](#cfn-dms-instanceprofile-networktype): {{String}}
@@ -68,14 +66,6 @@ The Availability Zone where the instance profile runs.
 
 `Description`  <a name="cfn-dms-instanceprofile-description"></a>
 A description of the instance profile. Descriptions can have up to 31 characters. A description can contain only ASCII letters, digits, and hyphens ('-'). Also, it can't end with a hyphen or contain two consecutive hyphens, and can only begin with a letter.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`InstanceProfileIdentifier`  <a name="cfn-dms-instanceprofile-instanceprofileidentifier"></a>
-Property description not available.
 *Required*: No
 *Type*: String
 *Minimum*: `1`

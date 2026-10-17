@@ -783,6 +783,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSConfigThirdPartyServiceRolePolicy](AWSConfigThirdPartyServiceRolePolicy.md)
 + [AWSConfigUserAccess](AWSConfigUserAccess.md)
 + [AWSConnector](AWSConnector.md)
++ [AWSContinuumCollectorServiceRolePolicy](AWSContinuumCollectorServiceRolePolicy.md)
 + [AWSControlTowerAccountServiceRolePolicy](AWSControlTowerAccountServiceRolePolicy.md)
 + [AWSControlTowerCloudTrailRolePolicy](AWSControlTowerCloudTrailRolePolicy.md)
 + [AWSControlTowerIdentityCenterManagementPolicy](AWSControlTowerIdentityCenterManagementPolicy.md)

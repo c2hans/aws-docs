@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 
 Amazon SageMaker Training Session Runtime provides APIs for executing training operations and sampling operations against a running training session. Use these APIs to submit asynchronous training steps (such as forward-backward passes, optimizer steps, and checkpoint saves) and to generate text samples from the model being trained.
 
-This document was last published on October 15, 2026.
+This document was last published on October 16, 2026.

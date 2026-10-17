@@ -2291,7 +2291,7 @@ The following code example shows how to:
 
 **SDK for .NET (v4)**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatch#code-examples).
-Wrapper methods for the CloudWatch OpenTelemetry actions.
+Wrapper code for the CloudWatch OpenTelemetry operations.
 
 ```
 /// <summary>

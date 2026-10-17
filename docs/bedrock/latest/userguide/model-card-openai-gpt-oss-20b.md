@@ -21,6 +21,7 @@ GPT OSS 20B is OpenAI's 20-billion parameter open-source model for efficient tex
 + **Model lifecycle:** Active
 + **Context window:** 128K tokens
 + **Max output tokens:** 16K
++ **Reasoning:** Supported, on by default (effort configurable: low, medium, high)
 
 | **Input Modalities** | **Output Modalities** |
 | --- | --- |

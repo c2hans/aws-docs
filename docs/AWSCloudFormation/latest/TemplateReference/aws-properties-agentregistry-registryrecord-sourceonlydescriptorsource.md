@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::AgentRegistry::RegistryRecord SourceOnlyDescriptorSource
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsource"></a>
 
-<a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsource-description"></a>The `SourceOnlyDescriptorSource` property type specifies Property description not available. for an [AWS::AgentRegistry::RegistryRecord](aws-resource-agentregistry-registryrecord.md).
+The source configuration for a source-only descriptor, such as an HTTP or Agent-User Interaction (AG-UI) descriptor. Unlike other descriptor sources, a source-only descriptor source doesn't support credential providers.
 
 ## Syntax
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsource-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-agentregistry-registryrecord-sourceonlydescriptorsource-properties"></a>
 
 `FromUrl`  <a name="cfn-agentregistry-registryrecord-sourceonlydescriptorsource-fromurl"></a>
-Property description not available.
+The URL-based source for the descriptor content.
 *Required*: No
 *Type*: [SourceOnlyDescriptorSourceFromUrl](aws-properties-agentregistry-registryrecord-sourceonlydescriptorsourcefromurl.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

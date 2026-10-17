@@ -67,6 +67,10 @@ Pattern: `[a-zA-Z][-a-zA-Z0-9]*`
 The start time when the change set was created, in UTC.
 Type: Timestamp
 
+ ** DeploymentConfig **
+The deployment configuration specified when the change set was created.
+Type: [DeploymentConfig](API_DeploymentConfig.md) object
+
  ** DeploymentMode **
 The deployment mode specified when the change set was created. Valid value is `REVERT_DRIFT`. Only present for drift-aware change sets.
 Type: String
@@ -103,9 +107,9 @@ Array Members: Maximum number of 5 items.
 
  ** OnStackFailure **
 Determines what action will be taken if stack creation fails. When this parameter is specified, the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation must not be specified. This must be one of these values:
-+  `DELETE` - Deletes the change set if the stack creation fails. This is only valid when the `ChangeSetType` parameter is set to `CREATE`. If the deletion of the stack fails, the status of the stack is `DELETE_FAILED`.
-+  `DO_NOTHING` - if the stack creation fails, do nothing. This is equivalent to specifying `true` for the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
-+  `ROLLBACK` - if the stack creation fails, roll back the stack. This is equivalent to specifying `false` for the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
++  `DELETE` – Deletes the stack if the stack creation fails. This is only valid when the `ChangeSetType` parameter is set to `CREATE`. If the deletion of the stack fails, the status of the stack is `DELETE_FAILED`.
++  `DO_NOTHING` – If the stack creation fails, do nothing. This is equivalent to specifying `true` for the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
++  `ROLLBACK` – If the stack creation fails, roll back the stack. This is equivalent to specifying `false` for the `DisableRollback` parameter to the [ExecuteChangeSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_ExecuteChangeSet.html) API operation.
 Type: String
 Valid Values: `DO_NOTHING | ROLLBACK | DELETE`
 

@@ -266,7 +266,7 @@ To pause a tenant:
 # Pause a tenant
 aws sesv2 update-reputation-entity-customer-managed-status \
   --reputation-entity-type RESOURCE
-  --reputation-entity-reference "arn:aws:ses:us-east-1:593442965613:tenant/tenantId"
+  --reputation-entity-reference "arn:aws:ses:us-east-1:111122223333:tenant/tenantId"
   --sending-status DISABLED
 ```
 
@@ -276,7 +276,7 @@ To unpause a tenant:
 # Unpause a tenant
 aws sesv2 update-reputation-entity-customer-managed-status \
   --reputation-entity-type RESOURCE
-  --reputation-entity-reference "arn:aws:ses:us-east-1:593442965613:tenant/tenantId"
+  --reputation-entity-reference "arn:aws:ses:us-east-1:111122223333:tenant/tenantId"
   --sending-status ENABLED
 ```
 

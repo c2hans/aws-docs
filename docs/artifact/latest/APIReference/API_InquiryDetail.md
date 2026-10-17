@@ -50,9 +50,9 @@ Valid Values: `Compliance inquiry processing is complete. | Malware was detected
 Required: Yes
 
  ** supportMode **   <a name="artifact-Type-InquiryDetail-supportMode"></a>
-Support mode for this inquiry. AI\_ONLY provides AI-generated responses. FULL\_SUPPORT includes human expert review.
+Support mode for this inquiry. AI\_ONLY provides AI-generated responses.
 Type: String
-Valid Values: `AI_ONLY | FULL_SUPPORT`
+Valid Values: `AI_ONLY`
 Required: No
 
  ** updatedAt **   <a name="artifact-Type-InquiryDetail-updatedAt"></a>

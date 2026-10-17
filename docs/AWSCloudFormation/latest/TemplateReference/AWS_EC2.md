@@ -35,6 +35,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::IPAM](aws-resource-ec2-ipam.md)
 + [AWS::EC2::IPAMAllocation](aws-resource-ec2-ipamallocation.md)
 + [AWS::EC2::IpamExternalResourceVerificationToken](aws-resource-ec2-ipamexternalresourceverificationtoken.md)
++ [AWS::EC2::IpamInternetRegistryAssociation](aws-resource-ec2-ipaminternetregistryassociation.md)
 + [AWS::EC2::IPAMPool](aws-resource-ec2-ipampool.md)
 + [AWS::EC2::IPAMPoolCidr](aws-resource-ec2-ipampoolcidr.md)
 + [AWS::EC2::IPAMPrefixListResolver](aws-resource-ec2-ipamprefixlistresolver.md)
