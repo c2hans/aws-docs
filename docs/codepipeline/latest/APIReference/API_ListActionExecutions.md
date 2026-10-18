@@ -50,7 +50,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** [pipelineName](#API_ListActionExecutions_RequestSyntax) **   <a name="CodePipeline-ListActionExecutions-request-pipelineName"></a>
- The name of the pipeline for which you want to list action execution history.
+The name of the pipeline for which you want to list action execution history.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[A-Za-z0-9.@\-_]+`
@@ -151,18 +151,26 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidNextTokenException **
 The next token was specified in an invalid format. Make sure that the next token you provide is the token returned by a previous call.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** PipelineExecutionNotFoundException **
 The pipeline execution was specified in an invalid format or cannot be found, or an execution ID does not belong to the specified pipeline.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

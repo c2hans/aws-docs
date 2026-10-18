@@ -13,7 +13,7 @@ Authorization discovery configuration for MCP server.
  ** returnToEndpoint **   <a name="devopsagent-Type-MCPServerAuthorizationDiscoveryConfig-returnToEndpoint"></a>
 The endpoint to return to after OAuth flow completes (must be AWS console domain)
 Type: String
-Pattern: `https://[a-zA-Z0-9.-]*\.(console\.(aws|aws-dev)|awsc-(integ|preprod)\.aws)\.amazon\.com(/.*)?`
+Pattern: `https://([a-zA-Z0-9.-]*\.(console\.(aws|aws-dev)|awsc-(integ|preprod)\.aws)\.amazon\.com|[a-zA-Z0-9-]+\.aidevops(-beta|-gamma)?\.global\.app\.aws)(/.*)?`
 Required: Yes
 
 ## See Also

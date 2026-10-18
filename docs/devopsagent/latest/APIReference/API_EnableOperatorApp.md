@@ -31,7 +31,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_EnableOperatorApp_RequestSyntax) **   <a name="devopsagent-EnableOperatorApp-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
 
@@ -72,7 +72,7 @@ Required: No
 The IAM role end users assume to access AIDevOps APIs
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: Yes
 
  ** [provider](#API_EnableOperatorApp_RequestSyntax) **   <a name="devopsagent-EnableOperatorApp-request-provider"></a>

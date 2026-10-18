@@ -20,7 +20,7 @@ GET /v2/agentspaces/{{agentSpaceId}}/operator HTTP/1.1
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_GetOperatorApp_RequestSyntax) **   <a name="devopsagent-GetOperatorApp-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
 

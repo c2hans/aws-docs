@@ -20,7 +20,7 @@ DELETE /v1/agentspaces/{{agentSpaceId}}/associations/{{associationId}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_DisassociateService_RequestSyntax) **   <a name="devopsagent-DisassociateService-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
 

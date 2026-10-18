@@ -26,6 +26,8 @@ Cron expressions have six required fields, which are separated by white space.
 cron(fields)
 ```
 
+**Cron expression fields**
+
 | **Field** | **Values** | **Wildcards** |
 | --- | --- | --- |
 | Minutes | 0-59 | , - \* / |
@@ -53,6 +55,8 @@ If you use a '\#' character, you can define only one expression in the day-of-we
 
 **Examples**
 You can use the following sample cron strings when creating a rule with schedule.
+
+**Cron expression examples**
 
 | Minutes | Hours | Day of month | Month | Day of week | Year | Meaning |
 | --- | --- | --- | --- | --- | --- | --- |

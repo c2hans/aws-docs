@@ -46,7 +46,7 @@ Required: No
 OAuth scopes for 3LO authentication. The service will always request scope offline\_access.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
-Length Constraints: Minimum length of 1. Maximum length of 128.
+Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[!#-\[\]-~]+`
 Required: No
 

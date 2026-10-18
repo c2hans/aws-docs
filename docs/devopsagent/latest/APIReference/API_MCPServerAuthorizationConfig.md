@@ -28,6 +28,11 @@ MCP server configuration with Bearer token (RFC 6750).
 Type: [MCPServerBearerTokenConfig](API_MCPServerBearerTokenConfig.md) object
 Required: No
 
+ ** customHeaders **   <a name="devopsagent-Type-MCPServerAuthorizationConfig-customHeaders"></a>
+MCP server configuration with one or more custom authentication headers.
+Type: [MCPServerCustomHeadersConfig](API_MCPServerCustomHeadersConfig.md) object
+Required: No
+
  ** oAuth3LO **   <a name="devopsagent-Type-MCPServerAuthorizationConfig-oAuth3LO"></a>
 MCP server configuration with OAuth 3LO.
 Type: [MCPServerOAuth3LOConfig](API_MCPServerOAuth3LOConfig.md) object

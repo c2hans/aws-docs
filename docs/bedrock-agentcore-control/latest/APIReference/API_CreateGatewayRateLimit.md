@@ -79,8 +79,8 @@ Required: No
 The ordered list of dimension key names that define the scope of this rate limit. Must be unique per gateway—no two rate limits can share the same dimension keys.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
-Length Constraints: Minimum length of 1. Maximum length of 80.
-Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_])`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_]|\$\.context\.request\.header\.[a-zA-Z0-9!#$%&'+\.\^_`|~\-]+|\$\.context\.request\.body\.[a-zA-Z_][a-zA-Z0-9_\-]*(\.[a-zA-Z_][a-zA-Z0-9_\-]*)*)`
 Required: Yes
 
  ** [entries](#API_CreateGatewayRateLimit_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayRateLimit-request-entries"></a>
@@ -159,8 +159,8 @@ Length Constraints: Minimum length of 0. Maximum length of 512.
 The ordered list of dimension key names that define the scope of this rate limit.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
-Length Constraints: Minimum length of 1. Maximum length of 80.
-Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_])`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_]|\$\.context\.request\.header\.[a-zA-Z0-9!#$%&'+\.\^_`|~\-]+|\$\.context\.request\.body\.[a-zA-Z_][a-zA-Z0-9_\-]*(\.[a-zA-Z_][a-zA-Z0-9_\-]*)*)`
 
  ** [entries](#API_CreateGatewayRateLimit_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayRateLimit-response-entries"></a>
 The list of rule entries that map dimension values to rate configurations.

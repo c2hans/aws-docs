@@ -14,8 +14,8 @@ A rate limit definition within a batch put request. If you provide a `rateLimitI
 The ordered list of dimension key names that define the scope of this rate limit.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
-Length Constraints: Minimum length of 1. Maximum length of 80.
-Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_])`
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_]|\$\.context\.request\.header\.[a-zA-Z0-9!#$%&'+\.\^_`|~\-]+|\$\.context\.request\.body\.[a-zA-Z_][a-zA-Z0-9_\-]*(\.[a-zA-Z_][a-zA-Z0-9_\-]*)*)`
 Required: Yes
 
  ** entries **   <a name="bedrockagentcorecontrol-Type-BatchPutLimitEntry-entries"></a>

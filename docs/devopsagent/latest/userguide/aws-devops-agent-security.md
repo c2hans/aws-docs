@@ -168,6 +168,8 @@ AWS DevOps Agent supports several integration types, each with its own security 
 
 Some external tools are authenticated at the account level and shared among all Agent Spaces in the account. When you register these tools, you authenticate once at the account level, and then each Agent Space can connect to specific resources within that registered connection.
 
+Connecting an Agent Space to a resource within a registered connection is an Agent Space operation. For example, if you have permission to modify an Agent Space, you can associate a Slack or Microsoft Teams channel by entering its channel ID or channel link. You don't need to be a member of that channel. To control who can create associations, manage Agent Space permissions through AWS Identity and Access Management (IAM) policies. For more information about the IAM actions that control associations, see [DevOps Agent IAM permissions](aws-devops-agent-security-devops-agent-iam-permissions.html).
+
 The following tools use account-level registration:
 + **GitHub** – Uses OAuth flow for authentication. After registering GitHub at the account level, each Agent Space can connect to specific repositories within your GitHub organization.
 + **Dynatrace** – Uses OAuth token authentication. After registering Dynatrace at the account level, each Agent Space can connect to specific Dynatrace environments or monitoring configurations.

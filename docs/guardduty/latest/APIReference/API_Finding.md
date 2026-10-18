@@ -71,6 +71,11 @@ The confidence score for the finding.
 Type: Double
 Required: No
 
+ ** customDetectionRuleName **   <a name="guardduty-Type-Finding-customDetectionRuleName"></a>
+The name of the custom detection rule that generated this finding.
+Type: String
+Required: No
+
  ** description **   <a name="guardduty-Type-Finding-description"></a>
 The description of the finding.
 Type: String

@@ -25,7 +25,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [resourceArn](#API_UntagResource_RequestSyntax) **   <a name="CodePipeline-UntagResource-request-resourceArn"></a>
- The Amazon Resource Name (ARN) of the resource to remove tags from.
+The Amazon Resource Name (ARN) of the resource to remove tags from.
 Type: String
 Pattern: `arn:aws(-[\w]+)*:codepipeline:.+:[0-9]{12}:.+`
 Required: Yes
@@ -60,10 +60,14 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 The resource was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

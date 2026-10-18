@@ -36,12 +36,19 @@ GitHub instance identifier (e.g., github.com or github.enterprise.com)
 Type: String
 Required: No
 
+ ** releaseManagementAssociationId **   <a name="devopsagent-Type-GitHubConfiguration-releaseManagementAssociationId"></a>
+The identifier of the release management association that this repository maps to for automatic verification testing.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9-]+`
+Required: No
+
  ** runtimeRoleArn **   <a name="devopsagent-Type-GitHubConfiguration-runtimeRoleArn"></a>
  *This member has been deprecated.*
 Optional role ARN that AIDevOps assumes at runtime for automatic verification testing and VPC connectivity on this association.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: No
 
 ## See Also

@@ -25,12 +25,19 @@ GitLab instance identifier (e.g., gitlab.com or e2e.gamma.dev.us-east-1.gitlab.f
 Type: String
 Required: No
 
+ ** releaseManagementAssociationId **   <a name="devopsagent-Type-GitLabConfiguration-releaseManagementAssociationId"></a>
+The identifier of the release management association that this project maps to for automatic verification testing.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9-]+`
+Required: No
+
  ** runtimeRoleArn **   <a name="devopsagent-Type-GitLabConfiguration-runtimeRoleArn"></a>
  *This member has been deprecated.*
 Optional role ARN that AIDevOps assumes at runtime for automatic verification testing and VPC connectivity on this association.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: No
 
 ## See Also

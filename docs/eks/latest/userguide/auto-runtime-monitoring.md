@@ -42,7 +42,7 @@ You can also collect file-based logs written by the VPC CNI components under `/v
 **Note**
 The preceding example is shortened for clarity. For a complete `ConfigMap` that collects application, runtime, and host logs and ships them to CloudWatch Logs, see the Container Insights Fluent Bit configuration in the Amazon CloudWatch documentation.
 
-For point-in-time log collection from a single node, you can use a `NodeDiagnostic` resource to gather a log bundle instead of streaming logs continuously. For more information, see [Retrieve node logs for a managed node using kubectl and S3](auto-get-logs.md). The Node Monitoring Agent also runs on every EKS Auto Mode node. It reports node health and surfaces issues as node conditions and events. For more information, see [Troubleshoot EKS Auto Mode](auto-troubleshoot.md).
+For point-in-time log collection from a single node, you can use a `NodeDiagnostic` resource to gather a log bundle instead of streaming logs continuously. For more information, see [Retrieve node logs using kubectl and Amazon S3](auto-get-logs.md). The Node Monitoring Agent also runs on every EKS Auto Mode node. It reports node health and surfaces issues as node conditions and events. For more information, see [Troubleshoot EKS Auto Mode](auto-troubleshoot.md).
 
 ## Runtime component metrics
 <a name="_runtime_component_metrics"></a>

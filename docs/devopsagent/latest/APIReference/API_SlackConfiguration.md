@@ -26,6 +26,11 @@ Associated Slack workspace name
 Type: String
 Required: Yes
 
+ ** bidirectional **   <a name="devopsagent-Type-SlackConfiguration-bidirectional"></a>
+Optional bidirectional communication configuration. Supply this configuration and set enabled to true so you can interact with the agent directly from Slack.
+Type: [SlackBidirectionalConfiguration](API_SlackBidirectionalConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_SlackConfiguration_SeeAlso"></a>
 

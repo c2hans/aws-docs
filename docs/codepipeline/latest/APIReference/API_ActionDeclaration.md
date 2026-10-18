@@ -31,7 +31,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1000.
 Required: No
 
  ** configuration **   <a name="CodePipeline-Type-ActionDeclaration-configuration"></a>
-The action's configuration. These are key-value pairs that specify input values for an action. For more information, see [Action Structure Requirements in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html#action-requirements). For the list of configuration properties for the AWS CloudFormation action type in CodePipeline, see [Configuration Properties Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline-action-reference.html) in the * AWS CloudFormation User Guide*. For template snippets with examples, see [Using Parameter Override Functions with CodePipeline Pipelines](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline-parameter-override-functions.html) in the * AWS CloudFormation User Guide*.
+The action's configuration. These are key-value pairs that specify input values for an action. For more information, see [Action Structure Requirements in CodePipeline ](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html#action-requirements). For the list of configuration properties for the AWS CloudFormation action type in CodePipeline, see [Configuration Properties Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline-action-reference.html) in the * AWS CloudFormation User Guide*. For template snippets with examples, see [Using Parameter Override Functions with CodePipeline Pipelines](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline-parameter-override-functions.html) in the * AWS CloudFormation User Guide*.
 The values can be represented in either JSON or YAML format. For example, the JSON configuration item format is as follows:
  *JSON:*
  `"Configuration" : { Key : Value },`
@@ -79,7 +79,7 @@ Required: No
  ** roleArn **   <a name="CodePipeline-Type-ActionDeclaration-roleArn"></a>
 The ARN of the IAM service role that performs the declared action. This is assumed through the roleArn for the pipeline.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
 Required: No
 

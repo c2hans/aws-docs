@@ -48,7 +48,7 @@ Required: Yes
  ** [reason](#API_StopPipelineExecution_RequestSyntax) **   <a name="CodePipeline-StopPipelineExecution-request-reason"></a>
 Use this option to enter comments, such as the reason the pipeline was stopped.
 Type: String
-Length Constraints: Maximum length of 200.
+Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
 
 ## Response Syntax
@@ -79,7 +79,7 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ConflictException **
 Your request cannot be handled because the pipeline is busy handling ongoing activities. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** DuplicatedStopRequestException **
 The pipeline execution is already in a `Stopping` state. If you already chose to stop and wait, you cannot make that request again. You can choose to stop and abandon now, but be aware that this option can lead to failed tasks or out of sequence tasks. If you already chose to stop and abandon, you cannot make that request again.
@@ -91,10 +91,14 @@ HTTP Status Code: 400
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

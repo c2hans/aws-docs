@@ -60,7 +60,7 @@ Required: No
 The display name for the service registration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `[\p{L}\p{N}\p{P}\p{S}\p{Z}]+`
+Pattern: `[\p{L}\p{N} _-]+`
 Required: No
 
  ** [privateConnectionName](#API_RegisterService_RequestSyntax) **   <a name="devopsagent-RegisterService-request-privateConnectionName"></a>

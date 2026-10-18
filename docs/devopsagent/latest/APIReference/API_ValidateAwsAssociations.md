@@ -20,7 +20,7 @@ POST /v1/agentspaces/{{agentSpaceId}}/associations/validate HTTP/1.1
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_ValidateAwsAssociations_RequestSyntax) **   <a name="devopsagent-ValidateAwsAssociations-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
 

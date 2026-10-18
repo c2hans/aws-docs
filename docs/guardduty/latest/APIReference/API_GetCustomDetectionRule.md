@@ -49,6 +49,19 @@ Content-type: application/json
       "language": "string",
       "name": "string",
       "ruleId": "string",
+      "runtimeMonitoringDetails": {
+         "platforms": {
+            "ec2": {
+               "minAgentVersion": "string"
+            },
+            "ecsFargate": {
+               "minAgentVersion": "string"
+            },
+            "eks": {
+               "minAgentVersion": "string"
+            }
+         }
+      },
       "schema": "string",
       "service": "string",
       "severity": "string",

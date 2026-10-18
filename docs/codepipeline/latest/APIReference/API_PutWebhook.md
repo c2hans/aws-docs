@@ -123,18 +123,26 @@ HTTP Status Code: 400
 
  ** InvalidWebhookAuthenticationParametersException **
 The specified authentication type is in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** InvalidWebhookFilterPatternException **
 The specified event filter rule is in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** LimitExceededException **
 The number of pipelines associated with the AWS account has exceeded the limit allowed for the account.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** TooManyTagsException **
@@ -143,6 +151,8 @@ HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

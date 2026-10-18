@@ -28,7 +28,7 @@ Required: Yes
 The role ARN to be assumed by DevOps Agent for requesting Web Identity Token.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: Yes
 
  ** webIdentityTokenAudiences **   <a name="devopsagent-Type-RegisteredAzureIdentityDetails-webIdentityTokenAudiences"></a>

@@ -11,7 +11,7 @@ SigV4 authorization configuration for remote A2A agent.
 <a name="API_RemoteAgentSigV4AuthorizationConfig_Contents"></a>
 
  ** region **   <a name="devopsagent-Type-RemoteAgentSigV4AuthorizationConfig-region"></a>
-AWS region identifier or wildcard (\*) for SigV4a multi-region signing.
+ AWS region identifier or wildcard (\*) for SigV4a multi-region signing.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 50.
 Pattern: `(\*|[a-z]{2,4}(-[a-z]+)+-\d+)`
@@ -24,10 +24,10 @@ Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: Yes
 
  ** roleArn **   <a name="devopsagent-Type-RemoteAgentSigV4AuthorizationConfig-roleArn"></a>
-AWS IAM role ARN.
+ AWS IAM role ARN.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: No
 
 ## See Also

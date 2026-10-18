@@ -25,7 +25,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_UpdateOperatorAppIdpConfig_RequestSyntax) **   <a name="devopsagent-UpdateOperatorAppIdpConfig-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
 
@@ -68,7 +68,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [agentSpaceId](#API_UpdateOperatorAppIdpConfig_ResponseSyntax) **   <a name="devopsagent-UpdateOperatorAppIdpConfig-response-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Type: String
 Pattern: `[a-zA-Z0-9-]{1,64}`
 

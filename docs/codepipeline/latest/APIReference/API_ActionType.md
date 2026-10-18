@@ -28,7 +28,7 @@ Required: Yes
  ** actionConfigurationProperties **   <a name="CodePipeline-Type-ActionType-actionConfigurationProperties"></a>
 The configuration properties for the action type.
 Type: Array of [ActionConfigurationProperty](API_ActionConfigurationProperty.md) objects
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** settings **   <a name="CodePipeline-Type-ActionType-settings"></a>

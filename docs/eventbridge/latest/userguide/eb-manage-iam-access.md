@@ -19,6 +19,8 @@ Most services in AWS treat a colon (`:`) or a forward slash (`/`) as the same ch
 
 The following table shows the resources in EventBridge.
 
+**EventBridge resource types and ARN formats**
+
 | Resource Type | ARN Format |
 | --- | --- |
 | Archive | `arn:aws:events:{{region}}:{{account}}:archive/{{archive-name}}` |

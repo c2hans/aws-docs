@@ -58,7 +58,8 @@ Review the permissions and choose **Accept**.
 
 + You are redirected back to the AWS console. The Step 1 section shows **Complete** with a green checkmark.
 
-**Note** You must sign in with a Microsoft Entra ID account that holds the Global Administrator or Privileged Role Administrator role. Other accounts cannot grant the required tenant-wide consent.
+**Note**
+** Sign in with a Microsoft Entra ID account that has the Global Administrator or Privileged Role Administrator role. If you sign in with another account, you can't grant the required tenant-wide consent.
 
 ### Step 4: Authorize the bot account
 <a name="step-4-authorize-the-bot-account"></a>
@@ -75,7 +76,8 @@ Review the permissions and choose **Accept**.
 
 ![Register Microsoft Teams with DevOps Agent page with both steps marked Complete and the Add button.](https://docs.aws.amazon.com/devopsagent/latest/userguide/images/teams-step4-complete.png)
 
-**Note** The registration is saved when both steps are complete. Choosing **Add** returns you to the console.
+**Note**
+** Completing both steps saves the registration. Choose ** Add ** to return to the console.
 
 Confirm that Microsoft Teams appears as **Registered** in the **Communication** section of the **Capability Providers** page.
 
@@ -182,6 +184,15 @@ To trigger an investigation and verify notifications:
 1. Switch to your Microsoft Teams channel. You should see:
    + An **Investigation started** card with the investigation title and a **View Investigation** button.
    + Follow-up cards with observations, findings, causes, and the investigation summary, each with a **View Investigation** button.
+
+## Managing channel associations
+<a name="managing-channel-associations"></a>
+
+AWS DevOps Agent posts to Microsoft Teams through a shared app identity. It delivers messages as "AWS DevOps Agent" regardless of which Agent Space produced them. If you have access to the Agent Space, you can associate any channel in the registered Microsoft 365 tenant by entering its channel link. The app can post to a channel only after a team member adds the AWS DevOps Agent app to the team. For a private or shared channel, the team member must also add the app to the channel itself.
+
+To control who can create or modify associations, scope Agent Space permissions with AWS Identity and Access Management (IAM) policies. You can review and remove existing associations at any time from the Agent Space console. AWS CloudTrail records all association changes in the Agent Space's account.
+
+To stop delivery to a channel, remove the AWS DevOps Agent app from that channel or from its team. This stops delivery from all Agent Spaces to that channel. For more information about security, see [AWS DevOps Agent Security](aws-devops-agent-security.html).
 
 ## Removing a Microsoft Teams association
 <a name="removing-a-microsoft-teams-association"></a>

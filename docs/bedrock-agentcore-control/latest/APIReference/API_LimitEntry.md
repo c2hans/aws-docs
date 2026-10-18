@@ -14,8 +14,8 @@ A single rule entry within a rate limit that maps dimension values to rate confi
 A map of dimension names to dimension values for this rule entry. Keys must match the parent rate limit's dimension keys. Values may use `*` as a wildcard, but only in trailing positions based on the dimension keys ordering.
 Type: String to string map
 Map Entries: Maximum number of 10 items.
-Key Length Constraints: Minimum length of 1. Maximum length of 80.
-Key Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_])`
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Key Pattern: `(targetName|toolName|qualifiedModelId|\$\.context\.iam\.principal|\$\.context\.iam\.sourceIdentity|\$\.context\.jwt\.[a-zA-Z_][a-zA-Z0-9_\-\.]{0,61}[a-zA-Z0-9_]|\$\.context\.request\.header\.[a-zA-Z0-9!#$%&'+\.\^_`|~\-]+|\$\.context\.request\.body\.[a-zA-Z_][a-zA-Z0-9_\-]*(\.[a-zA-Z_][a-zA-Z0-9_\-]*)*)`
 Value Length Constraints: Minimum length of 1. Maximum length of 256.
 Required: Yes
 

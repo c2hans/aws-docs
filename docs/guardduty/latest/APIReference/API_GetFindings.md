@@ -66,6 +66,7 @@ Content-type: application/json
          "associatedAttackSequenceArn": "string",
          "confidence": number,
          "createdAt": "string",
+         "customDetectionRuleName": "string",
          "description": "string",
          "id": "string",
          "partition": "string",

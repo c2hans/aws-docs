@@ -36,6 +36,10 @@ Content-type: application/json
       "limit": number,
       "usage": number
    },
+   "monthlyAccountGraderHours": {
+      "limit": number,
+      "usage": number
+   },
    "monthlyAccountInvestigationHours": {
       "limit": number,
       "usage": number
@@ -62,6 +66,10 @@ The following data is returned in JSON format by the service.
 
  ** [monthlyAccountEvaluationHours](#API_GetAccountUsage_ResponseSyntax) **   <a name="devopsagent-GetAccountUsage-response-monthlyAccountEvaluationHours"></a>
 Monthly evaluation hours usage and limit for an account
+Type: [UsageMetric](API_UsageMetric.md) object
+
+ ** [monthlyAccountGraderHours](#API_GetAccountUsage_ResponseSyntax) **   <a name="devopsagent-GetAccountUsage-response-monthlyAccountGraderHours"></a>
+Represents a usage metric with its configured limit and current usage value.
 Type: [UsageMetric](API_UsageMetric.md) object
 
  ** [monthlyAccountInvestigationHours](#API_GetAccountUsage_ResponseSyntax) **   <a name="devopsagent-GetAccountUsage-response-monthlyAccountInvestigationHours"></a>

@@ -25,7 +25,7 @@ Pattern: `[a-zA-Z0-9_-]+`
 Required: Yes
 
  ** region **   <a name="devopsagent-Type-RegisteredMCPServerSigV4Details-region"></a>
-AWS region for SigV4 signing. Use '\*' for SigV4a multi-region signing.
+ AWS region for SigV4 signing. Use '\*' for SigV4a multi-region signing.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 50.
 Pattern: `(\*|[a-z]{2,4}(-[a-z]+)+-\d+)`
@@ -39,7 +39,7 @@ Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: Yes
 
  ** service **   <a name="devopsagent-Type-RegisteredMCPServerSigV4Details-service"></a>
-AWS service name for SigV4 signing.
+ AWS service name for SigV4 signing.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: Yes
@@ -62,10 +62,10 @@ Pattern: `[\p{L}\p{N}\p{P}\p{S}\p{Z}]+`
 Required: No
 
  ** mcpRoleArn **   <a name="devopsagent-Type-RegisteredMCPServerSigV4Details-mcpRoleArn"></a>
-AWS IAM role ARN.
+ AWS IAM role ARN.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: No
 
 ## See Also

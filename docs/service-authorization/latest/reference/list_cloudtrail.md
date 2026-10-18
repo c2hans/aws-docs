@@ -54,7 +54,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CreateTrail  **
   - **IAM action:**  [cloudtrail:AddTags](#list_cloudtrail-action-AddTags)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [cloudtrail:CreateTrail](#list_cloudtrail-action-CreateTrail)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com, cloudtrail.preprod.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com / **Access level:** Write
 
 - **   DeleteChannel  **
   - **IAM action:**  [cloudtrail:DeleteChannel](#list_cloudtrail-action-DeleteChannel)
@@ -112,7 +112,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   EnableFederation  **
   - **IAM action:**  [cloudtrail:EnableFederation](#list_cloudtrail-action-EnableFederation)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com, cloudtrail.preprod.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com / **Access level:** Write
 
 - **   GenerateQuery  **
   - **IAM action:**  [cloudtrail:GenerateQuery](#list_cloudtrail-action-GenerateQuery)
@@ -316,7 +316,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   StartImport  **
   - **IAM action:**  [cloudtrail:StartImport](#list_cloudtrail-action-StartImport)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com, cloudtrail.preprod.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com / **Access level:** Write
 
 - **   StartLogging  **
   - **IAM action:**  [cloudtrail:StartLogging](#list_cloudtrail-action-StartLogging)
@@ -367,7 +367,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateTrail  **
   - **IAM action:**  [cloudtrail:UpdateTrail](#list_cloudtrail-action-UpdateTrail)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com, cloudtrail.preprod.amazonaws.com / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** cloudtrail.amazonaws.com / **Access level:** Write
 
 ## Actions defined by AWS CloudTrail
 <a name="list_cloudtrail-actions-as-permissions"></a>

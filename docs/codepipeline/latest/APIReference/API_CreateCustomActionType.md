@@ -66,7 +66,7 @@ Required: Yes
 The configuration properties for the custom action.
 You can refer to a name in the configuration properties of the custom action within the URL templates by following the format of {Config:name}, as long as the configuration property is both required and not secret. For more information, see [Create a Custom Action for a Pipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/how-to-create-custom-action.html).
 Type: Array of [ActionConfigurationProperty](API_ActionConfigurationProperty.md) objects
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** [inputArtifactDetails](#API_CreateCustomActionType_RequestSyntax) **   <a name="CodePipeline-CreateCustomActionType-request-inputArtifactDetails"></a>
@@ -180,6 +180,8 @@ HTTP Status Code: 400
 
  ** LimitExceededException **
 The number of pipelines associated with the AWS account has exceeded the limit allowed for the account.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** TooManyTagsException **
@@ -188,6 +190,8 @@ HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## Examples

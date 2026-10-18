@@ -41,7 +41,7 @@ The request accepts the following data in JSON format.
 The system-generated unique ID used to identify a unique execution request.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[a-zA-Z0-9-]+$`
+Pattern: `[a-zA-Z0-9-]+`
 Required: No
 
  ** [name](#API_StartPipelineExecution_RequestSyntax) **   <a name="CodePipeline-StartPipelineExecution-request-name"></a>
@@ -95,14 +95,18 @@ HTTP Status Code: 400
 
  ** ConflictException **
 Your request cannot be handled because the pipeline is busy handling ongoing activities. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## Examples

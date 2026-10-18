@@ -73,10 +73,12 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ConflictException **
 Your request cannot be handled because the pipeline is busy handling ongoing activities. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** PipelineExecutionNotFoundException **
 The pipeline execution was specified in an invalid format or cannot be found, or an execution ID does not belong to the specified pipeline.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** PipelineExecutionOutdatedException **
@@ -85,10 +87,14 @@ HTTP Status Code: 400
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** StageNotFoundException **
 The stage was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** UnableToRollbackStageException **
@@ -97,6 +103,8 @@ HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

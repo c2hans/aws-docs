@@ -44,7 +44,7 @@ Required: No
  ** properties **   <a name="CodePipeline-Type-ActionTypeDeclaration-properties"></a>
 The properties of the action type to be updated.
 Type: Array of [ActionTypeProperty](API_ActionTypeProperty.md) objects
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** urls **   <a name="CodePipeline-Type-ActionTypeDeclaration-urls"></a>

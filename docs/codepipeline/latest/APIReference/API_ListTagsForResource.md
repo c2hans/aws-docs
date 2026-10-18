@@ -85,14 +85,20 @@ HTTP Status Code: 400
 
  ** InvalidNextTokenException **
 The next token was specified in an invalid format. Make sure that the next token you provide is the token returned by a previous call.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 The resource was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

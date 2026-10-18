@@ -48,7 +48,7 @@ Required: No
  ** roleArn **   <a name="CodePipeline-Type-ActionExecutionInput-roleArn"></a>
 The ARN of the IAM service role that performs the declared action. This is assumed through the roleArn for the pipeline.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
 Required: No
 

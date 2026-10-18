@@ -15,8 +15,8 @@ Supported options are GITHUB\_HMAC, IP, and UNAUTHENTICATED.
 When creating CodePipeline webhooks, do not use your own credentials or reuse the same secret token across multiple webhooks. For optimal security, generate a unique secret token for each webhook you create. The secret token is an arbitrary string that you provide, which GitHub uses to compute and sign the webhook payloads sent to CodePipeline, for protecting the integrity and authenticity of the webhook payloads. Using your own credentials or reusing the same token across multiple webhooks can lead to security vulnerabilities.
 If a secret token was provided, it will be redacted in the response.
 + For information about the authentication scheme implemented by GITHUB\_HMAC, see [Securing your webhooks](https://developer.github.com/webhooks/securing/) on the GitHub Developer website.
-+  IP rejects webhooks trigger requests unless they originate from an IP address in the IP range whitelisted in the authentication configuration.
-+  UNAUTHENTICATED accepts all webhook trigger requests regardless of origin.
++ IP rejects webhooks trigger requests unless they originate from an IP address in the IP range whitelisted in the authentication configuration.
++ UNAUTHENTICATED accepts all webhook trigger requests regardless of origin.
 Type: String
 Valid Values: `GITHUB_HMAC | IP | UNAUTHENTICATED`
 Required: Yes
@@ -29,7 +29,7 @@ Required: Yes
  ** filters **   <a name="CodePipeline-Type-WebhookDefinition-filters"></a>
 A list of rules applied to the body/payload sent in the POST request to a webhook URL. All defined rules must pass for the request to be accepted and the pipeline started.
 Type: Array of [WebhookFilterRule](API_WebhookFilterRule.md) objects
-Array Members: Maximum number of 5 items.
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: Yes
 
  ** name **   <a name="CodePipeline-Type-WebhookDefinition-name"></a>

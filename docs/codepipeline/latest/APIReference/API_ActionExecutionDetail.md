@@ -62,7 +62,7 @@ Type: Timestamp
 Required: No
 
  ** status **   <a name="CodePipeline-Type-ActionExecutionDetail-status"></a>
- The status of the action execution. Status categories are `InProgress`, `Succeeded`, and `Failed`.
+The status of the action execution. Status categories are `InProgress`, `Succeeded`, and `Failed`.
 Type: String
 Valid Values: `InProgress | Abandoned | Succeeded | Failed`
 Required: No

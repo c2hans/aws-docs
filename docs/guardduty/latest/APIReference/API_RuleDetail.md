@@ -25,7 +25,7 @@ Required: Yes
  ** dataSource **   <a name="guardduty-Type-RuleDetail-dataSource"></a>
 The data source that the rule analyzes.
 Type: String
-Valid Values: `CloudTrailManagementEvent`
+Valid Values: `CloudTrailManagementEvent | RuntimeMonitoring`
 Required: Yes
 
  ** definition **   <a name="guardduty-Type-RuleDetail-definition"></a>
@@ -80,6 +80,11 @@ Required: Yes
 The language used for the detection logic expression.
 Type: String
 Valid Values: `SQL`
+Required: No
+
+ ** runtimeMonitoringDetails **   <a name="guardduty-Type-RuleDetail-runtimeMonitoringDetails"></a>
+Runtime Monitoring-specific details for the rule, including the platforms on which the rule can run and the minimum GuardDuty agent version required on each.
+Type: [DetectionRuleRuntimeMonitoringDetails](API_DetectionRuleRuntimeMonitoringDetails.md) object
 Required: No
 
  ** schema **   <a name="guardduty-Type-RuleDetail-schema"></a>

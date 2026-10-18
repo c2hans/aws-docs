@@ -179,7 +179,7 @@ Expected output: `Login Succeeded`
 Store your Karpenter version in an environment variable for later use. For the latest Karpenter versions, see the [Karpenter releases](https://github.com/aws/karpenter-provider-aws/releases) on GitHub.
 
 ```
-export KARPENTER_VERSION=1.14.0
+export KARPENTER_VERSION=1.15.0
 ```
 
 **Example Cluster config YAML**
@@ -469,7 +469,7 @@ IAM policy names are unique per AWS account, not per cluster or Region. If a clu
 
  **Create the Pod Identity association**
 
-The cluster already installs the `eks-pod-identity-agent` add-on when you [create the EKS cluster](#cluster-setup-cli-create-cluster), so EKS Pod Identity is available. Create a Pod Identity association that binds the IAM policy to the controller’s service account:
+The cluster already installs the `eks-pod-identity-agent` add-on when you [create the EKS cluster](#cluster-setup-cli-create), so EKS Pod Identity is available. Create a Pod Identity association that binds the IAM policy to the controller’s service account:
 
 ```
 eksctl create podidentityassociation \

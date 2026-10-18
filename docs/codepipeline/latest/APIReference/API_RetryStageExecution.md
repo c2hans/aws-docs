@@ -84,26 +84,36 @@ HTTP Status Code: 400
 
  ** ConflictException **
 Your request cannot be handled because the pipeline is busy handling ongoing activities. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** NotLatestPipelineExecutionException **
 The stage has failed in a later run of the pipeline and the `pipelineExecutionId` associated with the request is out of date.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** StageNotFoundException **
 The stage was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** StageNotRetryableException **
 Unable to retry. The pipeline structure or stage state might have changed while actions awaited retry, or the stage contains no failed actions.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## Examples

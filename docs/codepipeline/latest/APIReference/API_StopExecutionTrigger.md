@@ -13,7 +13,7 @@ The interaction that stopped a pipeline execution.
  ** reason **   <a name="CodePipeline-Type-StopExecutionTrigger-reason"></a>
 The user-specified reason the pipeline was stopped.
 Type: String
-Length Constraints: Maximum length of 200.
+Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
 
 ## See Also

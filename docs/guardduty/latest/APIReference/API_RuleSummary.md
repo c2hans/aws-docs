@@ -25,7 +25,7 @@ Required: Yes
  ** dataSource **   <a name="guardduty-Type-RuleSummary-dataSource"></a>
 The data source that the rule analyzes.
 Type: String
-Valid Values: `CloudTrailManagementEvent`
+Valid Values: `CloudTrailManagementEvent | RuntimeMonitoring`
 Required: Yes
 
  ** description **   <a name="guardduty-Type-RuleSummary-description"></a>

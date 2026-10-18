@@ -1010,7 +1010,7 @@ The following tables show PostgreSQL extensions for PostgreSQL version 10 that a
 | [uuid-ossp](http://www.postgresql.org/docs/10/static/uuid-ossp.html) | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 | 1.1 |
 | [wal2json](https://github.com/eulerto/wal2json) | 2.5 | 2.3 | 2.3 | 2.3 | 2.3 | 2.3 | 2.3 |
 
-The `tsearch2` extension is deprecated in version 10. The `tsearch2` extension was remove from [PostgreSQL version 11.1 on Amazon RDS (Deprecated)](postgresql-versions.md#postgresql-versions-version111).
+The `tsearch2` extension is deprecated in version 10. The `tsearch2` extension was removed from [PostgreSQL version 11.1 on Amazon RDS (Deprecated)](postgresql-versions.md#postgresql-versions-version111).
 
 ## Extensions supported for RDS for PostgreSQL 9.6
 <a name="postgresql-extensions-96x"></a>

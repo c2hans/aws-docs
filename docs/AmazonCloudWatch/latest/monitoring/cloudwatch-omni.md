@@ -24,18 +24,17 @@ Three concepts determine where your telemetry lives and who can reach it.
 
 **What you can do in CloudWatch Omni**
 
-| To do this | See |
-| --- | --- |
-| Trace, evaluate, and debug AI agents | [Monitor AI agents](omni-monitor-ai-agents.md) |
-| View your services, their dependencies, and their health, discovered automatically from your telemetry | [Monitor applications with the application map](omni-monitor-applications-with-the-application-map.md) |
-| Ask questions about your telemetry in plain language | [Ask the Omni agent](omni-ask-the-omni-agent.md) |
-| Query across logs, metrics, and traces | [Explore and query your telemetry](omni-explore-and-query-your-telemetry.md) |
-| Build shared views of your systems | [Dashboards](omni-dashboards.md) |
-| Investigate with your team and keep a record of what you find | [Threads](omni-threads.md) |
-| Receive a notification when a condition you define is met | [Alerts](omni-alerts.md) |
-| Investigate incidents to find the root cause | [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md) |
-| Connect Omni to Slack | [Connect Slack](omni-connect-slack.md) |
-| Call Omni from code or a coding agent | [Use Omni skills](omni-use-omni-skills.md) |
+The following sections describe what you can do in CloudWatch Omni:
++ Trace, evaluate, and debug AI agents. See [Monitor AI agents](omni-monitor-ai-agents.md).
++ View your services, their dependencies, and their health, discovered automatically from your telemetry. See [Monitor applications with the application map](omni-monitor-applications-with-the-application-map.md).
++ Ask questions about your telemetry in plain language. See [Ask the Omni agent](omni-ask-the-omni-agent.md).
++ Query across logs, metrics, and traces. See [Explore and query your telemetry](omni-explore-and-query-your-telemetry.md).
++ Build shared views of your systems. See [Dashboards](omni-dashboards.md).
++ Investigate with your team and keep a record of what you find. See [Threads](omni-threads.md).
++ Receive a notification when a condition you define is met. See [Alerts](omni-alerts.md).
++ Investigate incidents to find the root cause. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
++ Connect Omni to Slack. See [Connect Slack](omni-connect-slack.md).
++ Call Omni from code or a coding agent. See [Use Omni skills](omni-use-omni-skills.md).
 
 **How Omni relates to CloudWatch**
 
@@ -49,6 +48,10 @@ You continue to configure how telemetry is collected and stored (log groups, ret
 **Get started**
 
 To try Omni before you set anything up, open the playground, a shared environment with sample data that requires no AWS account or setup. Choose **Explore the playground** on the Omni page in the CloudWatch console, or **Try playground** on the sign-in page.
+
+To set up Omni, you need an AWS account and permission to enable Omni and create a domain and space in the CloudWatch console. For the full prerequisites, see [Set up Omni for a single account](omni-set-up-omni-for-a-single-account.md).
+
+To set up Omni, complete the following steps:
 
 1. Set up your domain and space. See [Set up Omni](omni-set-up-omni.md).
 

@@ -118,14 +118,20 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidNextTokenException **
 The next token was specified in an invalid format. Make sure that the next token you provide is the token returned by a previous call.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** PipelineNotFoundException **
 The pipeline was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

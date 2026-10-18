@@ -14,7 +14,7 @@ Union of all supported service configuration types. Each service has its own spe
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
  ** aws **   <a name="devopsagent-Type-ServiceConfiguration-aws"></a>
-AWS monitor account configuration.
+ AWS monitor account configuration.
 Type: [AWSConfiguration](API_AWSConfiguration.md) object
 Required: No
 
@@ -83,6 +83,11 @@ PagerDuty integration configuration
 Type: [PagerDutyConfiguration](API_PagerDutyConfiguration.md) object
 Required: No
 
+ ** releaseManagement **   <a name="devopsagent-Type-ServiceConfiguration-releaseManagement"></a>
+Release management network environment configuration
+Type: [ReleaseManagementConfiguration](API_ReleaseManagementConfiguration.md) object
+Required: No
+
  ** remoteagent **   <a name="devopsagent-Type-ServiceConfiguration-remoteagent"></a>
 Remote A2A agent integration configuration (token-based auth).
 Type: [RemoteAgentConfiguration](API_RemoteAgentConfiguration.md) object
@@ -104,7 +109,7 @@ Type: [SlackConfiguration](API_SlackConfiguration.md) object
 Required: No
 
  ** sourceAws **   <a name="devopsagent-Type-ServiceConfiguration-sourceAws"></a>
-AWS source account configuration for monitoring resources.
+ AWS source account configuration for monitoring resources.
 Type: [SourceAwsConfiguration](API_SourceAwsConfiguration.md) object
 Required: No
 

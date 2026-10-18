@@ -11,7 +11,7 @@ Represents a complete AgentSpace with all its properties, timestamps, encryption
 <a name="API_AgentSpace_Contents"></a>
 
  ** agentSpaceId **   <a name="devopsagent-Type-AgentSpace-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Type: String
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes

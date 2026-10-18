@@ -13,7 +13,7 @@ Details specific to a registered MCP (Model Context Protocol) server.
  ** authorizationMethod **   <a name="devopsagent-Type-RegisteredMCPServerDetails-authorizationMethod"></a>
 The MCP server uses this authorization method.
 Type: String
-Valid Values: `oauth-client-credentials | oauth-3lo | api-key | bearer-token`
+Valid Values: `oauth-client-credentials | oauth-3lo | api-key | bearer-token | custom-headers`
 Required: Yes
 
  ** endpoint **   <a name="devopsagent-Type-RegisteredMCPServerDetails-endpoint"></a>
@@ -29,6 +29,14 @@ Required: Yes
  ** apiKeyHeader **   <a name="devopsagent-Type-RegisteredMCPServerDetails-apiKeyHeader"></a>
 If the MCP server uses API key authentication, these details are provided.
 Type: String
+Required: No
+
+ ** customHeaderNames **   <a name="devopsagent-Type-RegisteredMCPServerDetails-customHeaderNames"></a>
+The configured custom authentication header names when the MCP server uses custom-header authentication. Secret values are not returned.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[a-zA-Z0-9-_]+`
 Required: No
 
  ** description **   <a name="devopsagent-Type-RegisteredMCPServerDetails-description"></a>

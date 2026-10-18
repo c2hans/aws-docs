@@ -58,18 +58,26 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidClientTokenException **
 The client token was specified in an invalid format
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** InvalidJobStateException **
 The job state was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** JobNotFoundException **
 The job was specified in an invalid format or cannot be found.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## See Also

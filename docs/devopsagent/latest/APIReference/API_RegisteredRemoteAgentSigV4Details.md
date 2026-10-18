@@ -25,7 +25,7 @@ Pattern: `[a-zA-Z0-9_-]+`
 Required: Yes
 
  ** region **   <a name="devopsagent-Type-RegisteredRemoteAgentSigV4Details-region"></a>
-AWS region identifier or wildcard (\*) for SigV4a multi-region signing.
+ AWS region identifier or wildcard (\*) for SigV4a multi-region signing.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 50.
 Pattern: `(\*|[a-z]{2,4}(-[a-z]+)+-\d+)`
@@ -45,10 +45,10 @@ Pattern: `[\p{L}\p{N}\p{P}\p{S}\p{Z}]+`
 Required: No
 
  ** roleArn **   <a name="devopsagent-Type-RegisteredRemoteAgentSigV4Details-roleArn"></a>
-AWS IAM role ARN.
+ AWS IAM role ARN.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: No
 
 ## See Also

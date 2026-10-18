@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/index.html
 title: 'Amazon Verified Permissions Documentation'
 canonical_url: https://docs.aws.amazon.com/verifiedpermissions/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-17
 ---
 
 # Amazon Verified Permissions Documentation

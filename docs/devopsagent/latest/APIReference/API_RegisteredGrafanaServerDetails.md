@@ -13,7 +13,7 @@ Details specific to a registered Grafana server, used by the built-in MCP server
  ** authorizationMethod **   <a name="devopsagent-Type-RegisteredGrafanaServerDetails-authorizationMethod"></a>
 The authz method used by the MCP server.
 Type: String
-Valid Values: `oauth-client-credentials | oauth-3lo | api-key | bearer-token`
+Valid Values: `oauth-client-credentials | oauth-3lo | api-key | bearer-token | custom-headers`
 Required: Yes
 
  ** endpoint **   <a name="devopsagent-Type-RegisteredGrafanaServerDetails-endpoint"></a>

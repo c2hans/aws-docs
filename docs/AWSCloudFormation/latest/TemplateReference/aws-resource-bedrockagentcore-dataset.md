@@ -79,7 +79,7 @@ Properties:
  Versioned schema type governing the structure of examples. Immutable after creation.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | GENERIC_EVALUATION_PREDEFINED_V1`
+*Allowed values*: `AGENTCORE_EVALUATION_PREDEFINED_V1 | AGENTCORE_EVALUATION_SIMULATED_V1 | GENERIC_EVALUATION_PREDEFINED_V1 | THIRD_PARTY_EVALUATION_V1`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Source`  <a name="cfn-bedrockagentcore-dataset-source"></a>

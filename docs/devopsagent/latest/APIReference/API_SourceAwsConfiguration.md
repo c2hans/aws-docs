@@ -11,7 +11,7 @@ Configuration for AWS source account integration. Setting the role ARNs on this 
 <a name="API_SourceAwsConfiguration_Contents"></a>
 
  ** accountId **   <a name="devopsagent-Type-SourceAwsConfiguration-accountId"></a>
-AWS Account Id corresponding to provided resources.
+ AWS Account Id corresponding to provided resources.
 Type: String
 Pattern: `\d{12}`
 Required: Yes
@@ -26,14 +26,14 @@ Required: Yes
 Role ARN to be assumed by AIDevOps to operate on behalf of customer. To set this role ARN on AssociateService or UpdateAssociation, the caller must have at least the iam:PassRole permission on arn:aws:iam::<account-id>:role/\* in the caller's own account, with the condition iam:PassedToService set to aidevops.amazonaws.com. A broader iam:PassRole grant also satisfies this requirement.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: Yes
 
  ** agentElevatedRoleArn **   <a name="devopsagent-Type-SourceAwsConfiguration-agentElevatedRoleArn"></a>
 Optional IAM role ARN to be assumed by AIDevOps for elevated directed actions on behalf of the customer. Used for mutating operations gated by elevatedActionsEnabled on the AgentSpace. When not provided, only non-elevated directed actions are available for this AWS account. Setting this role is subject to the same minimum iam:PassRole requirement described on assumableRoleArn.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `arn:aws:iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
+Pattern: `arn:(aws|aws-cn|aws-us-gov):iam::\d{12}:role/[a-zA-Z0-9+=,.@_/-]+`
 Required: No
 
  ** agentElevatedRoleArnStatus **   <a name="devopsagent-Type-SourceAwsConfiguration-agentElevatedRoleArnStatus"></a>

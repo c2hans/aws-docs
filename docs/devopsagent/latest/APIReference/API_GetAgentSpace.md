@@ -11,7 +11,7 @@ Retrieves detailed information about a specific AgentSpace.
 <a name="API_GetAgentSpace_RequestSyntax"></a>
 
 ```
-GET /v1/agentspaces/{{agentSpaceId}} HTTP/1.1
+GET /v1/agentspaces/{{agentSpaceId}}?includedData={{includedData}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -20,9 +20,13 @@ GET /v1/agentspaces/{{agentSpaceId}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_GetAgentSpace_RequestSyntax) **   <a name="devopsagent-GetAgentSpace-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
+
+ ** [includedData](#API_GetAgentSpace_RequestSyntax) **   <a name="devopsagent-GetAgentSpace-request-uri-includedData"></a>
+How much data to include in the response.
+Valid Values: `METADATA_ONLY | ALL_DATA`
 
 ## Request Body
 <a name="API_GetAgentSpace_RequestBody"></a>

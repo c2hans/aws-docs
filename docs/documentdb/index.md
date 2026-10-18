@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/documentdb/index.html
 title: 'Amazon DocumentDB Documentation'
 canonical_url: https://docs.aws.amazon.com/documentdb/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-17
 ---
 
 # Amazon DocumentDB Documentation

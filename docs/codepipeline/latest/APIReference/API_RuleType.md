@@ -23,7 +23,7 @@ Required: Yes
  ** ruleConfigurationProperties **   <a name="CodePipeline-Type-RuleType-ruleConfigurationProperties"></a>
 The configuration properties for the rule type.
 Type: Array of [RuleConfigurationProperty](API_RuleConfigurationProperty.md) objects
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
  ** settings **   <a name="CodePipeline-Type-RuleType-settings"></a>

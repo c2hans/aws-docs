@@ -212,6 +212,15 @@ You can share one Slack workspace across multiple AWS accounts. This works even 
 
 You can register the same Slack workspace with more than one Agent Space or AWS account. Each registration is independent. Registering a workspace again does not overwrite an existing registration.
 
+## Managing channel associations
+<a name="managing-channel-associations"></a>
+
+AWS DevOps Agent posts to Slack through a shared app identity. It delivers messages as "AWS DevOps Agent" regardless of which Agent Space produced them. If you have access to the Agent Space, you can associate any channel in the connected workspace by entering its channel ID. The app can post to a channel only after a channel member adds the AWS DevOps Agent app to that channel.
+
+To control who can create or modify associations, scope Agent Space permissions with AWS Identity and Access Management (IAM) policies. You can review and remove existing associations at any time from the Agent Space console. AWS CloudTrail records all association changes in the Agent Space's account.
+
+To stop delivery to a channel, remove the AWS DevOps Agent app from that channel. This stops delivery from all Agent Spaces to that channel. For more information about security, see [AWS DevOps Agent Security](aws-devops-agent-security.html).
+
 ## Troubleshooting Slack communication
 <a name="troubleshooting-slack-communication"></a>
 

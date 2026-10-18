@@ -52,7 +52,7 @@ Required: No
  ** roleArn **   <a name="CodePipeline-Type-RuleDeclaration-roleArn"></a>
 The pipeline role ARN associated with the rule.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
 Required: No
 

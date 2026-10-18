@@ -34,7 +34,7 @@ CodePipeline provides the following pipeline types, which differ in characterist
 + V2 type pipelines have the same structure as a V1 type, along with additional parameters for release safety and trigger configuration.
 Including V2 parameters, such as triggers on Git tags, in the pipeline JSON when creating or updating a pipeline will result in the pipeline having the V2 type of pipeline and the associated costs.
 For information about pricing for CodePipeline, see [Pricing](http://aws.amazon.com/codepipeline/pricing/).
- For information about which type of pipeline to choose, see [What type of pipeline is right for me?](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types-planning.html).
+For information about which type of pipeline to choose, see [What type of pipeline is right for me?](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types-planning.html).
 Type: String
 Valid Values: `V1 | V2`
 Required: No

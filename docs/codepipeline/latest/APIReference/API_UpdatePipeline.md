@@ -479,26 +479,38 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidActionDeclarationException **
 The action declaration was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** InvalidBlockerDeclarationException **
 Reserved for future use.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** InvalidStageDeclarationException **
 The stage declaration was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** InvalidStructureException **
 The structure was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** LimitExceededException **
 The number of pipelines associated with the AWS account has exceeded the limit allowed for the account.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The validation was specified in an invalid format.
+ ** message **
+The message provided to the user in the event of an exception.
 HTTP Status Code: 400
 
 ## Examples

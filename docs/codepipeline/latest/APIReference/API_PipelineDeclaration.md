@@ -20,7 +20,7 @@ Required: Yes
  ** roleArn **   <a name="CodePipeline-Type-PipelineDeclaration-roleArn"></a>
 The Amazon Resource Name (ARN) for CodePipeline to use to either perform actions with no `actionRoleArn`, or to use to assume roles for actions with an `actionRoleArn`.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `arn:aws(-[\w]+)*:iam::[0-9]{12}:role/.*`
 Required: Yes
 
@@ -54,7 +54,7 @@ CodePipeline provides the following pipeline types, which differ in characterist
 + V2 type pipelines have the same structure as a V1 type, along with additional parameters for release safety and trigger configuration.
 Including V2 parameters, such as triggers on Git tags, in the pipeline JSON when creating or updating a pipeline will result in the pipeline having the V2 type of pipeline and the associated costs.
 For information about pricing for CodePipeline, see [Pricing](http://aws.amazon.com/codepipeline/pricing/).
- For information about which type of pipeline to choose, see [What type of pipeline is right for me?](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types-planning.html).
+For information about which type of pipeline to choose, see [What type of pipeline is right for me?](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types-planning.html).
 Type: String
 Valid Values: `V1 | V2`
 Required: No
@@ -63,13 +63,13 @@ Required: No
 The trigger configuration specifying a type of event, such as Git tags, that starts the pipeline.
 When a trigger configuration is specified, default change detection for repository and branch commits is disabled.
 Type: Array of [PipelineTriggerDeclaration](API_PipelineTriggerDeclaration.md) objects
-Array Members: Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
  ** variables **   <a name="CodePipeline-Type-PipelineDeclaration-variables"></a>
 A list that defines the pipeline variables for a pipeline resource. Variable names can have alphanumeric and underscore characters, and the values must match `[A-Za-z0-9@\-_]+`.
 Type: Array of [PipelineVariableDeclaration](API_PipelineVariableDeclaration.md) objects
-Array Members: Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: No
 
  ** version **   <a name="CodePipeline-Type-PipelineDeclaration-version"></a>

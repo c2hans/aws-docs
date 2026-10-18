@@ -21,7 +21,7 @@ x-amzn-app-auth-flow: {{authFlow}}
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_DisableOperatorApp_RequestSyntax) **   <a name="devopsagent-DisableOperatorApp-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
+The unique identifier of the AgentSpace
 Pattern: `[a-zA-Z0-9-]{1,64}`
 Required: Yes
 

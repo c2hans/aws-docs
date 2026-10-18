@@ -448,6 +448,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
+- **   DeleteAlert  **
+  - **SDK client:** cloudwatchomni
+  - **IAM action:**  [cloudwatch:DeleteAlert](#list_cloudwatch-action-DeleteAlert)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteDomain  **
   - **SDK client:** cloudwatchomni
   - **IAM action:**  [cloudwatch:DeleteDomain](#list_cloudwatch-action-DeleteDomain)

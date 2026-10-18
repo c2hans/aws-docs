@@ -41,7 +41,7 @@ The instance role needs `CloudWatchAgentServerPolicy`, which covers metrics, log
 
 ```
 # 1. Connect (SSH, or Session Manager — no key or open port needed)
-aws ssm start-session --target <instanceId>
+aws ssm start-session --target {{instance-id}}
 
 # 2. Install the CloudWatch agent from Amazon S3
 curl -fsSL -o /tmp/amazon-cloudwatch-agent.rpm \
@@ -52,6 +52,8 @@ sudo rpm -Uvh /tmp/amazon-cloudwatch-agent.rpm
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl \
   -a fetch-config -c default:otel -s
 ```
+
+Replace `{{instance-id}}` with the ID of the Amazon EC2 instance you want to connect to.
 + Install version 1.300071.0 or later, the first with OTLP support. The agent is available from Amazon S3, Systems Manager, and Amazon ECR, but not from the Amazon Linux yum repository.
 + `default:otel` turns on the OTLP receiver plus host metrics and span metrics.
 

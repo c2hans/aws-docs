@@ -10,6 +10,9 @@ Event stream for chat message responses using the content block model. Events fo
 ## Contents
 <a name="API_SendMessageEvents_Contents"></a>
 
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
  ** contentBlockDelta **   <a name="devopsagent-Type-SendMessageEvents-contentBlockDelta"></a>
 Emitted for each incremental content delta within a content block
 Type: [SendMessageContentBlockDeltaEvent](API_SendMessageContentBlockDeltaEvent.md) object

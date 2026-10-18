@@ -11,13 +11,17 @@ Lists all AgentSpaces with optional pagination.
 <a name="API_ListAgentSpaces_RequestSyntax"></a>
 
 ```
-POST /v1/agentspaces/list?maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+POST /v1/agentspaces/list?includedData={{includedData}}&maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
 ```
 
 ## URI Request Parameters
 <a name="API_ListAgentSpaces_RequestParameters"></a>
 
 The request uses the following URI parameters.
+
+ ** [includedData](#API_ListAgentSpaces_RequestSyntax) **   <a name="devopsagent-ListAgentSpaces-request-uri-includedData"></a>
+How much data to include in the response.
+Valid Values: `METADATA_ONLY | ALL_DATA`
 
  ** [maxResults](#API_ListAgentSpaces_RequestSyntax) **   <a name="devopsagent-ListAgentSpaces-request-uri-maxResults"></a>
 Maximum number of results to return in a single call.
