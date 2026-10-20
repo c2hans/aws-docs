@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/healthcare-industry-lens.html
 ---
 
-# Healthcare Industry Lens
+# Healthcare Industry Lens - AWS Well-Architected Framework
 <a name="healthcare-industry-lens"></a>
 
 Publication date: **November 17, 2022** ([Document revisions](document-revisions.md))

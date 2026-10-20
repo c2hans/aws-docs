@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/modern-industrial-data-technology-lens.html
 ---
 
-# Modern Industrial Data Technology Lens
+# Modern Industrial Data Technology Lens - AWS Well-Architected Framework
 <a name="modern-industrial-data-technology-lens"></a>
 
 Publication date: **October 30, 2025** ([Document revisions](document-revisions.md))

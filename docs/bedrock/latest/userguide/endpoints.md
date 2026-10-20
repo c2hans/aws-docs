@@ -58,7 +58,7 @@ Authentication does not grant access by itself. Whether you use SigV4 or a Bedro
 
 | Item | `bedrock-runtime` | `bedrock-mantle` |
 | --- | --- | --- |
-| AWS [SigV4](AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| AWS [SigV4](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) authentication | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | [Bedrock API key (also works with OpenAI SDK)](api-keys.md) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | IAM authorization for inference | bedrock:InvokeModel on the inference target and, for the Responses API, the default project; bedrock:InvokeModelWithResponseStream for streaming | bedrock-mantle:CreateInference |
 | [Usage attribution](cost-management.md) | [IAM principal](cost-mgmt-iam-principal-tracking.md), [per-request metadata tagging](cost-mgmt-request-metadata.md), [application inference profiles](cost-mgmt-application-inference-profiles.md) | [Projects](projects.md), [Workspaces](workspaces.md) |

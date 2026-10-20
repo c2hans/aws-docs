@@ -9,7 +9,10 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTREL08: How do agents determine when and where graceful degradation is appropriate?  |
 | --- |
-|   |
+| [AGENTREL08-BP01 Establish consistent configuration management practices](agentrel08-bp01.md) |
+| [AGENTREL08-BP02 Implement agent tracing for telemetry throughout agent processing](agentrel08-bp02.md) |
+| [AGENTREL08-BP03 Architect agent systems with resource isolation and contention mitigation](agentrel08-bp03.md) |
+| [AGENTREL08-BP04 Track agent memory utilization metrics](agentrel08-bp04.md) |
 
 ## Capability intent
 <a name="capability-intent-7"></a>

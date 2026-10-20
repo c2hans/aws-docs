@@ -23,7 +23,9 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[Description](#cfn-transfer-hostkey-description)" : {{String}},
       "[HostKeyBody](#cfn-transfer-hostkey-hostkeybody)" : {{String}},
+      "[KmsKey](#cfn-transfer-hostkey-kmskey)" : {{String}},
       "[ServerId](#cfn-transfer-hostkey-serverid)" : {{String}},
+      "[StorageType](#cfn-transfer-hostkey-storagetype)" : {{String}},
       "[Tags](#cfn-transfer-hostkey-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -37,7 +39,9 @@ Type: AWS::Transfer::HostKey
 Properties:
   [Description](#cfn-transfer-hostkey-description): {{String}}
   [HostKeyBody](#cfn-transfer-hostkey-hostkeybody): {{String}}
+  [KmsKey](#cfn-transfer-hostkey-kmskey): {{String}}
   [ServerId](#cfn-transfer-hostkey-serverid): {{String}}
+  [StorageType](#cfn-transfer-hostkey-storagetype): {{String}}
   [Tags](#cfn-transfer-hostkey-tags): {{
     - Tag}}
 ```
@@ -62,6 +66,15 @@ AWS Transfer Family accepts RSA, ECDSA, and ED25519 keys.
 *Maximum*: `4096`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`KmsKey`  <a name="cfn-transfer-hostkey-kmskey"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:\S+$`
+*Minimum*: `20`
+*Maximum*: `1600`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `ServerId`  <a name="cfn-transfer-hostkey-serverid"></a>
 The identifier of the server that contains the host key that you are importing.
 *Required*: Yes
@@ -70,6 +83,13 @@ The identifier of the server that contains the host key that you are importing.
 *Minimum*: `19`
 *Maximum*: `19`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`StorageType`  <a name="cfn-transfer-hostkey-storagetype"></a>
+Specifies whether the host key is stored by AWS Transfer Family (`SERVICE_MANAGED`) or in AWS Secrets Manager (`SECRETS_MANAGER`).
+*Required*: No
+*Type*: String
+*Allowed values*: `SERVICE_MANAGED | SECRETS_MANAGER`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-transfer-hostkey-tags"></a>
 Key-value pairs that can be used to group and search for host keys.
@@ -105,6 +125,9 @@ The public key fingerprint, which is a short sequence of bytes used to identify 
 
 `HostKeyId`  <a name="HostKeyId-fn::getatt"></a>
 A unique identifier for the host key.
+
+`SecretId`  <a name="SecretId-fn::getatt"></a>
+The ARN of the AWS Secrets Manager secret that stores the host key material, when `StorageType` is `SECRETS_MANAGER`.
 
 `Type`  <a name="Type-fn::getatt"></a>
 The encryption algorithm that is used for the host key. The `Type` parameter is specified by using one of the following values:

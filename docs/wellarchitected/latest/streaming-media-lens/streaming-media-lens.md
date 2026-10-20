@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-lens/streaming-media-lens.html
 ---
 
-# Streaming Media Lens - AWS Well-Architected
+# Streaming Media Lens - AWS Well-Architected Framework
 <a name="streaming-media-lens"></a>
 
 Last updated: **September 11, 2026** ([Release notes](release-notes.md))

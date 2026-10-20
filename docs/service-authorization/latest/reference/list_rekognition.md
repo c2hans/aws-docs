@@ -389,10 +389,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
-- **   StartPersonTracking  **
-  - **IAM action:**  [rekognition:StartPersonTracking](#list_rekognition-action-StartPersonTracking)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** rekognition.amazonaws.com / **Access level:** Write
-
 - **   StartProjectVersion  **
   - **IAM action:**  [rekognition:StartProjectVersion](#list_rekognition-action-StartProjectVersion)
   - **Condition key:**

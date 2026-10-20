@@ -445,6 +445,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateUserSettings  **
+  - **SDK client:** chime
+  - **IAM action:**  [chime:UpdateUserSettings](#list_chime-action-UpdateUserSettings)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateAppInstance  **
   - **SDK client:** chime-sdk-identity
   - **IAM action:**  [chime:CreateAppInstance](#list_chime-action-CreateAppInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

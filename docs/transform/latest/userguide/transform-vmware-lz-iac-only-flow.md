@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-lz-iac-only-flow.html
 ---
 
-# IaC-only flow
+# Generate landing zone IaC without deployment
 <a name="transform-vmware-lz-iac-only-flow"></a>
 
 The IaC-only flow enables you to use AWS Transform landing zone agent for analysis, recommendations, and Infrastructure as Code generation without direct deployment. This mode is available in two scenarios:

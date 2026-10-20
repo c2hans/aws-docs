@@ -9,7 +9,11 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTREL02: How do you develop agentic systems that reliably execute tasks with predictable outcomes?  |
 | --- |
-|   |
+| [AGENTREL02-BP01 Design agents for specific and atomic tasks](agentrel02-bp01.md) |
+| [AGENTREL02-BP02 Limit agent permissions to minimum required access](agentrel02-bp02.md) |
+| [AGENTREL02-BP03 Implement behavioral anomaly detection and monitoring](agentrel02-bp03.md) |
+| [AGENTREL02-BP04 Develop clear instruction protocols for agents](agentrel02-bp04.md) |
+| [AGENTREL02-BP05 Establish tiered human oversight and approval workflows](agentrel02-bp05.md) |
 
 ## Capability intent
 <a name="capability-intent-1"></a>

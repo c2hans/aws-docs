@@ -7,6 +7,12 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 
 Updates the firewall domain list from an array of domain specifications.
 
+DNS Firewall throttles `UpdateFirewallDomains` requests based on both the request rate and the total number of domains across your requests.
+
+ **Best Practice for Updating Domain Lists**
+
+If you only need to modify a subset of domains, use the `ADD` or `REMOVE` operations instead of `REPLACE`. With `REPLACE`, you send the complete list you want to end up with, and throttling counts every domain in that request, including domains that aren't changing, which can use up your available throttling capacity.
+
 ## Request Syntax
 <a name="API_route53resolver_UpdateFirewallDomains_RequestSyntax"></a>
 

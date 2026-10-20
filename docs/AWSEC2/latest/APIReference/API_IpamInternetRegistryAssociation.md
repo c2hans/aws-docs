@@ -67,6 +67,11 @@ Type: String
 Valid Values: `pending-enable | create-in-progress | create-failed | enable-in-progress | enable-complete | enable-failed | delete-in-progress | delete-complete | delete-failed`
 Required: No
 
+ ** stateMessage **
+A message describing the current state of the internet registry association, including additional details such as the reason for a failure.
+Type: String
+Required: No
+
  ** TagSet.N **
 The tags assigned to the internet registry association.
 Type: Array of [Tag](API_Tag.md) objects

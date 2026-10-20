@@ -42,11 +42,11 @@ ApplicationSets in additional namespaces don’t support the Plugin (`plugin`), 
 + Config Management Plugins (CMPs) for custom manifest generation
 + Notifications controller
 + Custom SSO providers (only AWS Identity Center is supported, including third-party federated identity through AWS Identity Center)
-+ UI extensions and custom banners
++ UI extensions
 + Argo CD configuration ConfigMaps and keys other than the supported `argocd-cm` fields and the `hydrator.enabled`, `application.namespaces`, and `applicationsetcontroller.namespaces` keys in `argocd-cmd-params-cm`. See [Configure Argo CD settings](argocd-configure-settings.md).
 + Modifying the sync timeout (fixed at 120 seconds)
 
- **Compatibility**: The capability uses the same Kubernetes APIs and CRDs as upstream Argo CD, so existing Application and ApplicationSet manifests generally require no changes. Tools like `kubectl` work the same way. Except for the limitations described in this topic, the capability supports Applications and ApplicationSets, GitOps workflows with automatic sync, multi-cluster deployments, sync policies (automated, prune, self-heal), sync waves and hooks, health assessment for standard Kubernetes resources, rollback capabilities, Git repository sources (HTTPS and SSH), Helm, Kustomize, and plain YAML manifests, GitHub app credentials, projects for multi-tenancy, and resource exclusions and inclusions.
+ **Compatibility**: The capability uses the same Kubernetes APIs and CRDs as upstream Argo CD, so existing Application and ApplicationSet manifests generally require no changes. Tools like `kubectl` work the same way. Except for the limitations described in this topic, the capability supports Applications and ApplicationSets, GitOps workflows with automatic sync, multi-cluster deployments, sync policies (automated, prune, self-heal), sync waves and hooks, health assessment for standard Kubernetes resources, custom health checks for Custom Resources (see [Custom health checks](argocd-configure-settings.md#argocd-custom-health-checks)), rollback capabilities, Git repository sources (HTTPS and SSH), Helm, Kustomize, and plain YAML manifests, GitHub app credentials, projects for multi-tenancy, and resource exclusions and inclusions.
 
 ## Using the Argo CD CLI with the managed capability
 <a name="argocd-cli-configuration"></a>
@@ -125,7 +125,7 @@ For complete Argo CD CLI documentation, see the [Argo CD CLI reference](https://
 
 You can migrate from self-managed Argo CD to the managed capability:
 
-1. Review your current Argo CD configuration for unsupported features (Notifications controller, CMPs, custom health checks, UI extensions)
+1. Review your current Argo CD configuration for unsupported features (Notifications controller, CMPs, UI extensions)
 
 1. Scale your self-managed Argo CD controllers to zero replicas to prevent conflicts
 

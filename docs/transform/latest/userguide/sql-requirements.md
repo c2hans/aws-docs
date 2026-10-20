@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/sql-requireme
 ### Externally hosted databases
 <a name="externally-hosted-databases"></a>
 
-Databases hosted outside of AWS are supported. To use an externally hosted database, you must ensure network connectivity between the database and the AWS Transform service.
+Databases hosted outside of AWS are supported. Because AWS Transform modernizes your schema from uploaded DDL files, no network connectivity between your database and the AWS Transform service is required. You run the extraction script in your own environment and upload the resulting schema files.
 
 ### SSIS workloads
 <a name="ssis-workloads"></a>

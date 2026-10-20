@@ -152,8 +152,8 @@ You can combine adaptive thinking with the effort parameter to guide how much th
 
 | Effort level | Thinking behavior |
 | --- | --- |
-| max | Claude always thinks with no constraints on thinking depth. Claude Opus 4.6, Claude Sonnet 4.6, Claude Opus 5, and Claude Haiku 5.5 support max. Requests using max on unsupported models return an error. |
-| xhigh | Claude always thinks with extended depth. Claude Opus 5, Claude Opus 4.6, and Claude Haiku 5.5 only. |
+| max | Claude always thinks with no constraints on thinking depth. Claude Haiku 5.5, Claude Sonnet 5.5, Claude Opus 5.5, Claude Opus 5, Claude Sonnet 5, Claude Opus 4.8, Claude Opus 4.7, Claude Opus 4.6, and Claude Sonnet 4.6 support max. Requests using max on unsupported models return an error. |
+| xhigh | Claude always thinks with extended depth. Claude Haiku 5.5, Claude Sonnet 5.5, Claude Opus 5.5, Claude Opus 5, Claude Sonnet 5, Claude Opus 4.8, and Claude Opus 4.7 only. |
 | high (default) | Claude always thinks. Provides deep reasoning on complex tasks. |
 | medium | Claude uses moderate thinking. May skip thinking for very simple queries. |
 | low | Claude minimizes thinking. Skips thinking for simple tasks where speed matters most. |
@@ -178,6 +178,38 @@ The following example shows how to set the effort level when using the InvokeMod
     },
     "output_config": {
         "effort": "high"
+    },
+    "messages": [{
+        "role": "user",
+        "content": "Your prompt here"
+    }]
+}
+```
+
+## Controlling thinking visibility with the display parameter
+<a name="claude-messages-adaptive-thinking-display"></a>
+
+When you use adaptive thinking, the `display` field controls whether Claude returns the text of its reasoning. Set it inside the `thinking` object, alongside `"type": "adaptive"`:
+
+| Display value | Behavior |
+| --- | --- |
+| omitted (default) | The response still contains a thinking block, but its thinking text is empty. The block carries a signature, so you can pass it back unchanged in multi-turn conversations. |
+| summarized | The thinking block contains a summary of Claude's reasoning as text. |
+
+Both values are generally available and don't require a beta header. A value other than `summarized` or `omitted` returns a `400` error.
+
+**Note**
+Setting `summarized` doesn't guarantee that reasoning text is returned. Some models accept the parameter but return no thinking text, and some don't return a thinking block at all. Read the `thinking` field of the response rather than assuming that a request accepted with `summarized` produced reasoning text.
+
+The following example requests summarized reasoning when using the InvokeModel API:
+
+```
+{
+    "anthropic_version": "bedrock-2023-05-31",
+    "max_tokens": 16000,
+    "thinking": {
+        "type": "adaptive",
+        "display": "summarized"
     },
     "messages": [{
         "role": "user",
@@ -235,7 +267,7 @@ response = bedrock_runtime.converse(
 ## Setting effort per turn (beta)
 <a name="claude-messages-adaptive-thinking-per-turn-effort"></a>
 
-This feature is a Beta Service as defined in the AWS Service Terms. On Claude Fable 5.1 and Claude Mythos 5.1, you can change the effort level partway through a conversation instead of setting it once for the whole request. Insert a system message that carries an `output_config.effort` value at any point in the `messages` array. The new effort level applies to the turns that follow it. The request returns 200 with no change to the response shape.
+This feature is a Beta Service as defined in the AWS Service Terms. On Claude Haiku 5.5, Claude Sonnet 5.5, Claude Opus 5.5, Claude Fable 5.1, and Claude Mythos 5.1, you can change the effort level partway through a conversation instead of setting it once for the whole request. Insert a system message that carries an `output_config.effort` value at any point in the `messages` array. The new effort level applies to the turns that follow it. The request returns 200 with no change to the response shape.
 
 To use per-turn effort, include one of the following `anthropic_beta` values: `mid-conversation-output-config-2026-07-01`, `mid-conversation-effort-2026-08-01`, `per-turn-control-2026-07-01`, or `per-message-effort-2026-07-01`.
 
@@ -279,7 +311,7 @@ Steering Claude to think less often may reduce quality on tasks that benefit fro
 ## Connector text summarization (beta)
 <a name="claude-messages-adaptive-thinking-connector-summarization"></a>
 
-On Claude Fable 5, text that the model emits between tool calls (sometimes called "connector text" — for example, "Let me check that file next...") is summarized server-side and returned as a thinking block rather than a plain text content block. The thinking block uses the same shape as any other thinking block (empty text with a signature under the default `omitted` display).
+On Claude Fable 5, text that the model emits between tool calls (sometimes called "connector text" — for example, "Let me check that file next...") is summarized server-side and returned as a thinking block rather than a plain text content block. The thinking block uses the same shape as any other thinking block (empty text with a signature under the default `omitted` display, described in [Controlling thinking visibility with the display parameter](#claude-messages-adaptive-thinking-display)).
 
 **Customer impact:**
 + **Response shape:** Tool-use responses from Claude Fable 5 may contain additional thinking blocks where previous models emitted plain text between `tool_use` blocks. There is no new content block type. Final assistant answers (after all tool use is complete) are unaffected and remain plain text.

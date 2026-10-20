@@ -307,6 +307,22 @@ The following models are in the Legacy state with an announced EOL date. Migrate
   - **EOL date:** November 30, 2026
   - **Public extended access start date:** August 29, 2026
 
+- **Writer**
+  - **Model name:** Palmyra X4
+  - **Model ID:** writer.palmyra-x4-v1:0
+  - **Regions:** us-east-1, us-east-2, us-west-2
+  - **Legacy date:** September 9, 2026
+  - **EOL date:** March 9, 2027
+  - **Public extended access start date:** To be announced
+
+- **Writer**
+  - **Model name:** Palmyra X5
+  - **Model ID:** writer.palmyra-x5-v1:0
+  - **Regions:** us-east-1, us-east-2, us-west-2
+  - **Legacy date:** September 21, 2026
+  - **EOL date:** March 21, 2027
+  - **Public extended access start date:** To be announced
+
 - **Z.AI**
   - **Model name:** GLM 4.7
   - **Model ID:** zai.glm-4.7
@@ -388,6 +404,46 @@ The following models have passed their EOL date. They have been removed from the
   - **Legacy date:** February 19, 2026
   - **EOL date:** August 19, 2026
   - **Public extended access start date:** May 19, 2026
+
+- **Meta**
+  - **Model name:** Llama 3.1 405B Instruct
+  - **Model ID:** meta.llama3-1-405b-instruct-v1:0
+  - **Regions:** us-east-2, us-west-2
+  - **Legacy date:** January 7, 2026
+  - **EOL date:** July 7, 2026
+  - **Public extended access start date:** April 7, 2026
+
+- **Meta**
+  - **Model name:** Llama 3.2 11B Instruct
+  - **Model ID:** meta.llama3-2-11b-instruct-v1:0
+  - **Regions:** us-east-1, us-east-2, us-west-2
+  - **Legacy date:** January 7, 2026
+  - **EOL date:** July 7, 2026
+  - **Public extended access start date:** April 7, 2026
+
+- **Meta**
+  - **Model name:** Llama 3.2 1B Instruct
+  - **Model ID:** meta.llama3-2-1b-instruct-v1:0
+  - **Regions:** eu-central-1, eu-west-1, eu-west-3, us-east-1, us-east-2, us-west-2
+  - **Legacy date:** January 7, 2026
+  - **EOL date:** July 7, 2026
+  - **Public extended access start date:** April 7, 2026
+
+- **Meta**
+  - **Model name:** Llama 3.2 3B Instruct
+  - **Model ID:** meta.llama3-2-3b-instruct-v1:0
+  - **Regions:** eu-central-1, eu-west-1, eu-west-3, us-east-1, us-east-2, us-west-2
+  - **Legacy date:** January 7, 2026
+  - **EOL date:** July 7, 2026
+  - **Public extended access start date:** April 7, 2026
+
+- **Meta**
+  - **Model name:** Llama 3.2 90B Instruct
+  - **Model ID:** meta.llama3-2-90b-instruct-v1:0
+  - **Regions:** us-east-1, us-east-2, us-west-2
+  - **Legacy date:** January 7, 2026
+  - **EOL date:** July 7, 2026
+  - **Public extended access start date:** April 7, 2026
 
 The public extended access date indicates when a Legacy model enters the public extended access portion of the Legacy period. During this phase, pricing may increase as set by the model provider. The model remains available until its EOL date.
 

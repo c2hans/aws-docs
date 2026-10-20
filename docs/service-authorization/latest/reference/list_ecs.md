@@ -47,8 +47,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs-tasks.amazonaws.com / **Access level:** Write
 
 - **   CreateExpressGatewayService  **
+  - **IAM action:**  [ecs:AssociateGatewayWithCluster](#list_ecs-action-AssociateGatewayWithCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:CreateCluster](#list_ecs-action-CreateCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:CreateExpressGatewayService](#list_ecs-action-CreateExpressGatewayService)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ecs:CreateGateway](#list_ecs-action-CreateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:RegisterTaskDefinition](#list_ecs-action-RegisterTaskDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:TagResource](#list_ecs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs-tasks.amazonaws.com, ecs.amazonaws.com / **Access level:** Write
@@ -443,6 +445,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs-tasks.amazonaws.com / **Access level:** Write
 
 - **   UpdateExpressGatewayService  **
+  - **IAM action:**  [ecs:AssociateGatewayWithCluster](#list_ecs-action-AssociateGatewayWithCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ecs:CreateGateway](#list_ecs-action-CreateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:RegisterTaskDefinition](#list_ecs-action-RegisterTaskDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:UpdateExpressGatewayService](#list_ecs-action-UpdateExpressGatewayService)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs-tasks.amazonaws.com, ecs.amazonaws.com / **Access level:** Write
@@ -474,6 +478,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
+- **   [AssociateGatewayWithCluster](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_AssociateGatewayWithCluster.html)  **
+  - **Description:** Grants permission to associate an Amazon ECS gateway with a cluster
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)
+  - **Access level:** Write
+
 - **   [ContinueServiceDeployment](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContinueServiceDeployment.html)  **
   - **Description:** Grants permission to continue a paused service deployment
   - **Resource types (\*required):** [service\*](#list_ecs-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
@@ -502,6 +512,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a new Amazon ECS Express Gateway service with cluster and task definition
   - **Resource types (\*required):** [service\*](#list_ecs-resource-service)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:enable-ecs-managed-tags](#list_ecs-ecs_enable-ecs-managed-tags)<br />[ecs:propagate-tags](#list_ecs-ecs_propagate-tags)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)<br />[ecs:subnet](#list_ecs-ecs_subnet)<br />[ecs:task-cpu](#list_ecs-ecs_task-cpu)<br />[ecs:task-definition](#list_ecs-ecs_task-definition)<br />[ecs:task-memory](#list_ecs-ecs_task-memory)
+  - **Access level:** Write
+
+- **   [CreateGateway](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateGateway.html)  **
+  - **Description:** Grants permission to create an Amazon ECS gateway
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:enable-ecs-managed-tags](#list_ecs-ecs_enable-ecs-managed-tags)<br />[ecs:propagate-tags](#list_ecs-ecs_propagate-tags)
   - **Access level:** Write
 
 - **   [CreateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html)  **
@@ -556,6 +572,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to delete a specified Express Gateway service
   - **Resource types (\*required):** [service\*](#list_ecs-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteGateway](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteGateway.html)  **
+  - **Description:** Grants permission to delete an Amazon ECS gateway
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [DeleteService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeleteService.html)  **
@@ -636,6 +658,24 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [DescribeGateway](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeGateway.html)  **
+  - **Description:** Grants permission to describe an Amazon ECS gateway
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [DescribeGatewayResources](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeGatewayResources.html)  **
+  - **Description:** Grants permission to describe the resources associated with an Amazon ECS gateway
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [DescribeGatewayRoute](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeGatewayRoute.html)  **
+  - **Description:** Grants permission to describe a route for an Amazon ECS gateway
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [gateway-route\*](#list_ecs-resource-gateway-route) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:gateway](#list_ecs-ecs_gateway)
+  - **Access level:** Read
+
 - **   [DescribeServiceDeployments](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DescribeServiceDeployments.html)  **
   - **Description:** Grants permission to describe one or more of your service deployments
   - **Resource types (\*required):** [service\*](#list_ecs-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
@@ -671,6 +711,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [task\*](#list_ecs-resource-task)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [DisassociateGatewayFromCluster](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DisassociateGatewayFromCluster.html)  **
+  - **Description:** Grants permission to disassociate an Amazon ECS gateway from a cluster
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)
+  - **Access level:** Write
 
 - **   [DiscoverPollEndpoint](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DiscoverPollEndpoint.html)  **
   - **Description:** Grants permission to get an endpoint for the Amazon ECS agent to poll for updates
@@ -730,6 +776,26 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to get a list of daemons that are running in a specified cluster
   - **Resource types (\*required):**
   - **Condition keys:** [ecs:cluster](#list_ecs-ecs_cluster)
+  - **Access level:** List
+
+- **   [ListGatewayClusterAssociations](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListGatewayClusterAssociations.html)  **
+  - **Description:** Grants permission to list the cluster associations for Amazon ECS gateways
+  - **Resource types (\*required):** [cluster](#list_ecs-resource-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:gateway](#list_ecs-ecs_gateway)
+  - **Access level:** List
+
+- **   [ListGatewayRoutes](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListGatewayRoutes.html)  **
+  - **Description:** Grants permission to list the routes for an Amazon ECS gateway
+  - **Resource types (\*required):** [cluster](#list_ecs-resource-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [gateway](#list_ecs-resource-gateway) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:gateway](#list_ecs-ecs_gateway)
+  - **Resource types (\*required):** [gateway-route](#list_ecs-resource-gateway-route) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:gateway](#list_ecs-ecs_gateway)
+  - **Resource types (\*required):** [service](#list_ecs-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)<br />[ecs:service](#list_ecs-ecs_service)
+  - **Access level:** List
+
+- **   [ListGateways](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListGateways.html)  **
+  - **Description:** Grants permission to list Amazon ECS gateways
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:gateway](#list_ecs-ecs_gateway)
   - **Access level:** List
 
 - **   [ListServiceDeployments](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListServiceDeployments.html)  **
@@ -870,6 +936,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [container-instance](#list_ecs-resource-container-instance) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Resource types (\*required):** [daemon](#list_ecs-resource-daemon) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)
   - **Resource types (\*required):** [daemon-task-definition](#list_ecs-resource-daemon-task-definition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)
+  - **Resource types (\*required):** [gateway](#list_ecs-resource-gateway) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)
   - **Resource types (\*required):** [service](#list_ecs-resource-service) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Resource types (\*required):** [task](#list_ecs-resource-task) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Resource types (\*required):** [task-definition](#list_ecs-resource-task-definition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_ecs-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:CreateAction](#list_ecs-ecs_CreateAction)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
@@ -883,6 +950,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [container-instance](#list_ecs-resource-container-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Resource types (\*required):** [daemon](#list_ecs-resource-daemon) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:cluster](#list_ecs-ecs_cluster)
   - **Resource types (\*required):** [daemon-task-definition](#list_ecs-resource-daemon-task-definition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)
+  - **Resource types (\*required):** [gateway](#list_ecs-resource-gateway) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)
   - **Resource types (\*required):** [service](#list_ecs-resource-service) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Resource types (\*required):** [task](#list_ecs-resource-task) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
   - **Resource types (\*required):** [task-definition](#list_ecs-resource-task-definition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_ecs-aws_TagKeys)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)
@@ -929,6 +997,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to modify the parameters of an Express Gateway service
   - **Resource types (\*required):** [service\*](#list_ecs-resource-service)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:enable-ecs-managed-tags](#list_ecs-ecs_enable-ecs-managed-tags)<br />[ecs:propagate-tags](#list_ecs-ecs_propagate-tags)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_)<br />[ecs:subnet](#list_ecs-ecs_subnet)<br />[ecs:task-cpu](#list_ecs-ecs_task-cpu)<br />[ecs:task-definition](#list_ecs-ecs_task-definition)<br />[ecs:task-memory](#list_ecs-ecs_task-memory)
+  - **Access level:** Write
+
+- **   [UpdateGateway](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateGateway.html)  **
+  - **Description:** Grants permission to modify the parameters of an Amazon ECS gateway
+  - **Resource types (\*required):** [gateway\*](#list_ecs-resource-gateway)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:enable-ecs-managed-tags](#list_ecs-ecs_enable-ecs-managed-tags)<br />[ecs:propagate-tags](#list_ecs-ecs_propagate-tags)
   - **Access level:** Write
 
 - **   [UpdateService](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_UpdateService.html)  **
@@ -998,6 +1072,8 @@ The following resource types are defined by this service and can be used in the 
 |  [daemon-deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/daemon-deployment.html)  | arn:${Partition}:ecs:${Region}:${Account}:daemon-deployment/${ClusterName}/${DaemonName}/${DaemonDeploymentId} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:daemon](#list_ecs-ecs_daemon) |
 |  [daemon-revision](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/daemon-revision.html)  | arn:${Partition}:ecs:${Region}:${Account}:daemon-revision/${ClusterName}/${DaemonName}/${DaemonRevisionId} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:daemon](#list_ecs-ecs_daemon) |
 |  [daemon-task-definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/daemon-task-definitions.html)  | arn:${Partition}:ecs:${Region}:${Account}:daemon-task-definition/${DaemonTaskDefinitionFamilyName}:${DaemonTaskDefinitionRevisionNumber} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_) |
+|  [gateway](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway.html)  | arn:${Partition}:ecs:${Region}:${Account}:gateway/${GatewayName}/${GatewayId} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_) |
+|  [gateway-route](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-route.html)  | arn:${Partition}:ecs:${Region}:${Account}:gateway-route/${GatewayName}/${GatewayId}/${RouteId} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:gateway](#list_ecs-ecs_gateway) |
 |  [service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html)  | arn:${Partition}:ecs:${Region}:${Account}:service/${ClusterName}/${ServiceName} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:ResourceTag/${TagKey}](#list_ecs-ecs_ResourceTag___TagKey_) |
 |  [service-deployment](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment.html)  | arn:${Partition}:ecs:${Region}:${Account}:service-deployment/${ClusterName}/${ServiceName}/${ServiceDeploymentId} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:service](#list_ecs-ecs_service) |
 |  [service-revision](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-revision.html)  | arn:${Partition}:ecs:${Region}:${Account}:service-revision/${ClusterName}/${ServiceName}/${ServiceRevisionId} | [aws:ResourceTag/${TagKey}](#list_ecs-aws_ResourceTag___TagKey_)<br />[ecs:cluster](#list_ecs-ecs_cluster)<br />[ecs:service](#list_ecs-ecs_service) |

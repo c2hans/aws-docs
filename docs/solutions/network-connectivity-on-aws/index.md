@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/network-connectivity-on-aws/in
 title: 'Guidance for Network Connectivity on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/network-connectivity-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-19
 ---
 
 # Guidance for Network Connectivity on AWS
@@ -275,7 +275,7 @@ During peak traffic and load for your workloads, your underlying infrastructure 
 
 Although network constructs are unique, you should pair network monitoring with the full breadth of your observability implementation, including specifying network metrics captured in [Amazon CloudWatch](/cloudwatch/) . This is where customers can get started with monitoring and alerting based on telemetry data.
 
-Automate the monitoring of your AWS networks and identify where network access to your environments may be misconfigured by implementing tools such as [VPC Reachability Analyzer](/vpc/latest/reachability/what-is-reachability-analyzer.html) and [Amazon Inspector Network Reachability](/inspector/latest/userguide/inspector_network-reachability.html) .
+Automate the monitoring of your AWS networks and identify where network access to your environments may be misconfigured by implementing tools such as [VPC Reachability Analyzer](/vpc/latest/reachability/what-is-reachability-analyzer.html) and [Amazon Inspector Network Reachability](/inspector/latest/user/network-reachability.html) .
 
 Enable network logging to view IP-level traffic entering and leaving your network
 

@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_SecurityHub"></a>
 
 **Resource types**
++ [AWS::SecurityHub::ActionTarget](aws-resource-securityhub-actiontarget.md)
 + [AWS::SecurityHub::AggregatorV2](aws-resource-securityhub-aggregatorv2.md)
 + [AWS::SecurityHub::AutomationRule](aws-resource-securityhub-automationrule.md)
 + [AWS::SecurityHub::AutomationRuleV2](aws-resource-securityhub-automationrulev2.md)

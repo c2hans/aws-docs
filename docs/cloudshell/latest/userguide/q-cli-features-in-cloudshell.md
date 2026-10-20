@@ -94,13 +94,40 @@ In the CloudShell terminal, run `zsh` to open Z shell, and then start typing a c
 **Note**
 Kiro inline suggestions are supported only in Z shell.
 
+## Configuring the AWS MCP Server for Kiro CLI in CloudShell
+<a name="configure-aws-mcp"></a>
+
+You can configure the AWS MCP Server (`aws-mcp`) for Kiro CLI in CloudShell so that Kiro can use AWS tools through the Model Context Protocol (MCP). The server signs its requests with your CloudShell session credentials, so its tools act with the same permissions that you have in the console.
+
+For more information about the AWS MCP Server, see [AWS MCP Server](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/mcp-server.html) in the *Agent Toolkit for AWS* documentation.
+
+To configure the server, run the following commands in CloudShell.
+
+```
+curl -fsS "https://docs.aws.amazon.com/cloudshell/latest/userguide/samples/kiro-cloudshell-aws-mcp.zip" -o "kiro-cloudshell-aws-mcp.zip"
+unzip -q -o kiro-cloudshell-aws-mcp.zip
+chmod +x kiro-cloudshell-aws-mcp.sh
+./kiro-cloudshell-aws-mcp.sh
+```
+
+You can also download [kiro-cloudshell-aws-mcp.zip](samples/kiro-cloudshell-aws-mcp.zip) directly.
+
+The script configures only the `aws-mcp` server for Kiro CLI. It doesn't install, update, or launch Kiro CLI, and it works with the pre-installed version. You don't need to sign in to Kiro CLI before you run the script. To verify the configuration, run `kiro-cli`, and then enter `/mcp` to confirm that `aws-mcp` is running.
+
+You can run the script again at any time. It updates only the `aws-mcp` entry in your configuration and leaves any other MCP servers in place. CloudShell keeps a separate home directory in each AWS Region, so run the script one time in each AWS Region where you use Kiro CLI.
+
+**Note**
+The script installs `uv` in a virtual environment in your home directory and writes the `aws-mcp` configuration to `~/.kiro/settings/mcp.json`. It keeps the larger `uv` cache and downloaded files in temporary storage to conserve space in your home directory.
+When you restart your CloudShell environment, the configuration and virtual environment persist, and the temporary files download again the next time the server starts. When you delete your CloudShell environment, run the script again.
+For more information about the script, see `kiro-cloudshell-aws-mcp-README.md` in the zip file.
+
 ## Using the latest version of Kiro CLI in CloudShell
 <a name="install-latest-kiro-cli"></a>
 
 CloudShell includes a pre-installed version of Kiro CLI, which might not be the latest release. To get the latest version, run the following commands in CloudShell.
 
 ```
-curl -s "https://docs.aws.amazon.com/cloudshell/latest/userguide/samples/kiro-cloudshell-latest.zip" -o "kiro-cloudshell-latest.zip"
+curl -fsS "https://docs.aws.amazon.com/cloudshell/latest/userguide/samples/kiro-cloudshell-latest.zip" -o "kiro-cloudshell-latest.zip"
 unzip -q -o kiro-cloudshell-latest.zip
 chmod +x kiro-cloudshell-latest.sh
 ./kiro-cloudshell-latest.sh --classic
@@ -114,12 +141,6 @@ Update Kiro CLI and then launch it with a list of previous chats to resume.
 
 ```
 ./kiro-cloudshell-latest.sh --resume-picker
-```
-
-Update Kiro CLI and then launch it with the classic interface.
-
-```
-./kiro-cloudshell-latest.sh --classic
 ```
 
 **Note**

@@ -9,7 +9,10 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTCOST05: How do you implement cost attribution?  |
 | --- |
-|   |
+| [AGENTCOST05-BP01 Establish agent-level reasoning cost tracking and attribution](agentcost05-bp01.md) |
+| [AGENTCOST05-BP02 Implement distributed cost tracing for multi-agent workflows](agentcost05-bp02.md) |
+| [AGENTCOST05-BP03 Design tenant-aware cost allocation for agent as a service (AaaS) pricing models](agentcost05-bp03.md) |
+| [AGENTCOST05-BP04 Create chargeback and ROI reporting](agentcost05-bp04.md) |
 
 ## Capability intent
 <a name="capability-intent-4"></a>

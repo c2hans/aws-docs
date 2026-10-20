@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-a-sap-cloud-data-ware
 title: 'Guidance for Building a SAP Cloud Data Warehouse on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/building-a-sap-cloud-data-warehouse-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-19
 ---
 
 # Guidance for Building a SAP Cloud Data Warehouse on AWS
@@ -73,7 +73,7 @@ With managed services and dynamic scaling, you minimize the environmental impact
 
 - **Extend RISE with SAP on AWS with Analytics Fabric for SAP Accelerators**: This blog post demonstrates how all SAP on AWS customers can turn SAP data into actionable insights within hours by using the AWS Analytics Fabric for SAP solution, and eliminate the burden of identifying AWS services and reduce build efforts by up to 90%.
 
-[Learn more](https://global.staging.iad.prod.content-server.marketing.aws.dev/blogs/awsforsap/extend-rise-with-sap-on-aws-with-analytics-fabric-for-sap-accelerators/)
+[Learn more](https://aws.amazon.com/blogs/awsforsap/extend-rise-with-sap-on-aws-with-analytics-fabric-for-sap-accelerators/)
 
 - **Modernize your SAP Accounts Payable reporting with an AWS Data Lake and AI/ML services**: This workshop demonstrates how to leverage AWS Generative AI service to use generative AI based queries to ask questions to find and solve problemes, and auto create reports.
 

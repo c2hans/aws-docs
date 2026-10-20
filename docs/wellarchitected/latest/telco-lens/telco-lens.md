@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telco-lens.html
 ---
 
-# Telco Lens - AWS Well-Architected
+# Telco Lens - AWS Well-Architected Framework
 <a name="telco-lens"></a>
 
 Publication date: **December 30, 2025** ([Document revisions](document-revisions.md))

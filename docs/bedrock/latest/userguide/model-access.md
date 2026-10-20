@@ -33,9 +33,21 @@ Review the EULA terms
 Enable model access through SCP/IAM policies only if you agree to the EULA terms
 
 **Topics**
++ [Request access to models using the console](#model-access-console)
 + [Grant IAM permissions to request access to Amazon Bedrock foundation models with a product ID](#model-access-permissions)
 + [Manage model access using SDK and CLI](#model-access-modify)
 + [Access Amazon Bedrock foundation models in AWS GovCloud (US)](#model-access-govcloud)
+
+## Request access to models using the console
+<a name="model-access-console"></a>
+
+If you are signed in to the AWS Management Console, you can complete the model access requirements without using the AWS CLI or an SDK. Open the [Amazon Bedrock console](https://console.aws.amazon.com/bedrock/home) and use the following paths.
++ **Most models** – Choose **Model catalog** in the navigation pane, choose a model, and then open it in the playground. Amazon Bedrock starts the subscription for you on the first invocation, so there is no access request to submit. Your identity still needs the AWS Marketplace permissions described in [Grant IAM permissions to request access to Amazon Bedrock foundation models with a product ID](#model-access-permissions).
++ **Anthropic models** – Submit your first-time use case details before you invoke the model. Choose an Anthropic model from **Model catalog** and open it in the playground, or go to the [Anthropic providers page](https://console.aws.amazon.com/bedrock/home#/providers/anthropic), and then complete the form. If the management account for your organization has already submitted these details, you can use Anthropic models right away.
++ **AWS Marketplace permissions** – Attach the policy described in [Grant IAM permissions to request access to Amazon Bedrock foundation models with a product ID](#model-access-permissions) in the [IAM console](https://console.aws.amazon.com/iam).
+
+**Note**
+The **Model access** page under **Bedrock configurations** applies to AWS GovCloud (US). In commercial AWS Regions, access to most models is enabled on first use and there is no access request to submit on that page. For the GovCloud procedure, see [Access Amazon Bedrock foundation models in AWS GovCloud (US)](#model-access-govcloud).
 
 ## Grant IAM permissions to request access to Amazon Bedrock foundation models with a product ID
 <a name="model-access-permissions"></a>
@@ -83,6 +95,7 @@ Z.AI
 Some providers sell only part of their model catalog through AWS Marketplace. The following models don't have product keys even though other models from the same provider do:
 OpenAI open-weight models: gpt-oss-120b, gpt-oss-20b, gpt-oss-safeguard-120b, and gpt-oss-safeguard-20b. These models are available to all Amazon Bedrock users and don't require a AWS Marketplace subscription.
 Writer Palmyra Vision 7B.
+This list covers providers whose models have no product key at all. It isn't a complete list of models without a documented product ID. To check a specific model, see the **Marketplace product ID** field on its model card in [models at a glance](model-cards.md). If a model's card doesn't show that field, scope your policy by model ID instead.
 You can, however, prevent the usage of these models by denying Amazon Bedrock actions and specifying these model IDs in the `Resource` field. For an example, see [Prevent an identity from using a model after access has already been granted](#model-access-prevent-usage).
 
 Select a section to see IAM policy examples for a specific use case:

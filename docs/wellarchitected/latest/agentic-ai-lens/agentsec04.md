@@ -9,7 +9,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTSEC04: How do you support agent goal alignment and prevent manipulation?  |
 | --- |
-|   |
+| [AGENTSEC04-BP01 Implement guardrails and alignment controls](agentsec04-bp01.md) |
+| [AGENTSEC04-BP02 Human-in-the-loop for critical decisions](agentsec04-bp02.md) |
 
 ## Capability intent
 <a name="capability-intent-3"></a>

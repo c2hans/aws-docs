@@ -11,7 +11,8 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTSEC05: How do you implement observability and prevent repudiation?  |
 | --- |
-|   |
+| [AGENTSEC05-BP01 Implement comprehensive logging and decision artifact storage](agentsec05-bp01.md) |
+| [AGENTSEC05-BP02 Implement distributed tracing for agent interactions](agentsec05-bp02.md) |
 
 ## Capability intent
 <a name="capability-intent-4"></a>

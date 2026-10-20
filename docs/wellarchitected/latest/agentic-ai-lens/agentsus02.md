@@ -9,7 +9,10 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTSUS02: How do I establish sustainable frameworks for agent dependencies?  |
 | --- |
-|   |
+| [AGENTSUS02-BP01 Optimize context management and memory utilization](agentsus02-bp01.md) |
+| [AGENTSUS02-BP02 Establish efficient agent caching strategies](agentsus02-bp02.md) |
+| [AGENTSUS02-BP03 Appropriately scale data, networking, and compute dependencies](agentsus02-bp03.md) |
+| [AGENTSUS02-BP04 Measure and optimize the environmental footprint of agent workloads](agentsus02-bp04.md) |
 
 ## Capability intent
 <a name="capability-intent-1"></a>

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/games-industry-lens.html
 ---
 
-# Games Industry Lens – AWS Well-Architected Framework
+# Games Industry Lens - AWS Well-Architected Framework
 <a name="games-industry-lens"></a>
 
 Publication date: **December 9, 2025** ([Document revisions](document-revisions.md))

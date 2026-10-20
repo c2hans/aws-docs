@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/data-residency-with-hybrid-cloud-services-lens.html
 ---
 
-# Data Residency with Hybrid Cloud Services Lens - AWS Well-Architected
+# Data Residency with Hybrid Cloud Services Lens - AWS Well-Architected Framework
 <a name="data-residency-with-hybrid-cloud-services-lens"></a>
 
 Publication date: **April 3, 2025** ([Document revisions](document-revisions.md))

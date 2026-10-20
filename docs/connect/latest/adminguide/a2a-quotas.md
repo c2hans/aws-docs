@@ -17,7 +17,7 @@ Agent-to-agent collaboration has the following requirements:
 ## Service quotas
 <a name="a2a-quotas-service-quotas"></a>
 
-The following quotas apply to agent-to-agent collaboration. Both quotas are adjustable. For the limit on collaboration depth, see [Design constraints](#a2a-quotas-design-constraints).
+The following quotas apply to agent-to-agent collaboration. All quotas are adjustable. For the limit on collaboration depth, see [Design constraints](#a2a-quotas-design-constraints).
 
 **Agent-to-agent collaboration quotas**
 
@@ -25,6 +25,7 @@ The following quotas apply to agent-to-agent collaboration. Both quotas are adju
 | --- | --- | --- | --- |
 | Collaborators per AI agent | 5 | Yes | The maximum number of collaborators that you can configure on a single AI agent. |
 | Handoffs per customer turn | 10 | Yes | The maximum number of handoffs between agents during a single customer turn. |
+| Concurrent outbound third-party agent connections per instance | 5 | Yes | The maximum number of concurrent outbound connections to third-party agents across a single Connect Customer instance. |
 
 ## Design constraints
 <a name="a2a-quotas-design-constraints"></a>

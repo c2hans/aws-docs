@@ -35,7 +35,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   AcceptAgreementRequest  **
   - **IAM action:**  [aws-marketplace:AcceptAgreementRequest](#list_marketplace-agreement-action-AcceptAgreementRequest)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [aws-marketplace:Subscribe](#list_marketplace-agreement-action-Subscribe)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
-  - **IAM action:**  [aws-marketplace:UpdatePurchaseOrders](#list_marketplace-agreement-action-UpdatePurchaseOrders)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   BatchCreateBillingAdjustmentRequest  **
   - **IAM action:**  [aws-marketplace:BatchCreateBillingAdjustmentRequest](#list_marketplace-agreement-action-BatchCreateBillingAdjustmentRequest)

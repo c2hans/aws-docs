@@ -22,7 +22,7 @@ Access to this model is limited to eligible customers. To learn more, see [Accel
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
-+ **Context window:** 1M tokens
++ **Context window:** 1,050,000 tokens
 + **Languages:** English, Spanish, French, German, Portuguese, Italian, Dutch, Russian, Chinese (Simplified and Traditional), Japanese, Korean, Arabic, Hindi, Turkish, Polish, Ukrainian, and other languages.
 + **Fine-tuning supported:** No
 + **Supported use cases:** Vulnerability discovery, detection engineering, and incident response.

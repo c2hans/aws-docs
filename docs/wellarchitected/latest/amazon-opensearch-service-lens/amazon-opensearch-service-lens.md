@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch-service-lens/amazon-opensearch-service-lens.html
 ---
 
-# Amazon OpenSearch Service Lens
+# Amazon OpenSearch Service Lens - AWS Well-Architected Framework
 <a name="amazon-opensearch-service-lens"></a>
 
 Publication date: **June 23, 2025** ([Document revisions](document-revisions.md))

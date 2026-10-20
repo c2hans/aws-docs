@@ -15,10 +15,10 @@ The following quotas apply specifically to managed knowledge bases:
 
 | Quota | Default value | Adjustable |
 | --- | --- | --- |
-| Maximum managed knowledge bases per account, per Region | 10,000 | Yes |
-| Maximum data sources per knowledge base | 200 | No |
+| Maximum managed knowledge bases per account, per Region | 10,000 | No |
+| Maximum data sources per knowledge base | 200 | Yes |
 | Maximum concurrent ingestion jobs per knowledge base | 50 | No |
-| Maximum raw data storage per knowledge base | 10 TB | No |
+| Maximum raw data storage per knowledge base | 10 TB | Yes |
 | Maximum query input characters per Retrieve or AgenticRetrieveStream request (English text) | 10,000 | No |
 | Maximum Retrieve requests per minute (RPM), per knowledge base | 600 (supports burst of 25 requests per second (RPS)) | Yes |
 | Maximum AgenticRetrieveStream requests per minute, per account | 300 | Yes |

@@ -9,7 +9,9 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 
 |  AGENTSEC01: How do you secure agentic memory and securely manage state between agents?  |
 | --- |
-|   |
+| [AGENTSEC01-BP01 Implement memory isolation and integrity controls](agentsec01-bp01.md) |
+| [AGENTSEC01-BP02 Validate and sanitize memory inputs](agentsec01-bp02.md) |
+| [AGENTSEC01-BP03 Monitor for hallucination propagation](agentsec01-bp03.md) |
 
 ## Capability intent
 <a name="capability-intent"></a>

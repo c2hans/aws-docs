@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/agentic-ai-lens.html
 ---
 
-# Agentic AI Lens - AWS Well-Architected
+# Agentic AI Lens - AWS Well-Architected Framework
 <a name="agentic-ai-lens"></a>
 
 Publication date: **June 10, 2026** ([Document revisions](document-revisions.md))

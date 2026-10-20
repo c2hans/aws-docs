@@ -93,6 +93,18 @@ For more information, see [Computer use](computer-use.html).
 | --- | --- |
 | computer\_20251124 | computer-use-2025-11-24 |
 
+**Client tools and toolsets using `bedrock-runtime` and `bedrock-mantle` endpoints**
+
+For more information, see [Tool use](tool-use.html).
+
+| **Tool type** | **Beta header** |
+| --- | --- |
+| computer\_toolset\_20260801 | None required |
+| browser\_toolset\_20260801 | None required |
+| bash\_20250124 | None required |
+| text\_editor\_20250728 | None required |
+| memory\_20250818 | None required |
+
 **Compaction using `bedrock-runtime` endpoint**
 
 For more information, see [Compaction](claude-messages-compaction.html).
@@ -113,7 +125,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | anthropic.claude-opus-5-5 | N/A | `us.anthropic.claude-opus-5-5`<br />`eu.anthropic.claude-opus-5-5`<br />`au.anthropic.claude-opus-5-5`<br />`jp.anthropic.claude-opus-5-5` | global.anthropic.claude-opus-5-5 |
+| bedrock-runtime | anthropic.claude-opus-5-5 | `https://bedrock-runtime.eu-west-2.amazonaws.com`<br />In-Region inference with the bare model ID is available in `eu-west-2` (London) only. From any other Region, use a geo or global inference profile ID. | `us.anthropic.claude-opus-5-5`<br />`eu.anthropic.claude-opus-5-5`<br />`au.anthropic.claude-opus-5-5`<br />`jp.anthropic.claude-opus-5-5` | global.anthropic.claude-opus-5-5 |
 | bedrock-mantle | anthropic.claude-opus-5-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A | N/A |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/anthropic/v1/messages".*

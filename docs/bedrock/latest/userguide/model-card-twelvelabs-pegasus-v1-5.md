@@ -19,6 +19,8 @@ Pegasus v1.5 is TwelveLabs' video-to-text generation model that produces summari
 + **Model EOL date:** N/A
 + **End User License Agreements and Terms of Use:** [View](https://aws.amazon.com/legal/bedrock/third-party-models/)
 + **Model lifecycle:** Active
++ **Context window:** 261,120 tokens
++ **Max output tokens:** 98,304 tokens
 + **Marketplace product ID:** `prod-emhhqbi7fzsyo`
 
 | **Input Modalities** | **Output Modalities** | **[APIs supported](apis.html)** | **[Endpoints supported](endpoints.html)** |
@@ -58,18 +60,20 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 For the full request parameters, response fields, and request and response examples, see [TwelveLabs Pegasus 1.5](model-parameters-pegasus-1-5.md).
 
-| **Endpoint** | **Model ID** | **Geo inference ID** | **Global inference ID** |
-| --- | --- | --- | --- |
-| bedrock-runtime | twelvelabs.pegasus-1-5-v1:0 | us.twelvelabs.pegasus-1-5-v1:0 | global.twelvelabs.pegasus-1-5-v1:0 |
+| **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
+| --- | --- | --- | --- | --- |
+| bedrock-runtime | twelvelabs.pegasus-1-5-v1:0 | N/A | us.twelvelabs.pegasus-1-5-v1:0 | global.twelvelabs.pegasus-1-5-v1:0 |
+
+*For example, to use Global cross-Region inference from us-east-1 (N. Virginia), use the endpoint URL "https://bedrock-runtime.us-east-1.amazonaws.com" with the inference profile ID "global.twelvelabs.pegasus-1-5-v1:0".*
 
 ## Service Tiers
 <a name="model-card-twelvelabs-pegasus-v1-5-tiers"></a>
 
 Amazon Bedrock offers multiple service tiers to match your workload requirements. **Standard** provides pay-per-token access with no commitment (set `"service_tier": "default"` or omit the field). **Priority** delivers the fastest response times for a price premium (set `"service_tier": "priority"`). **Flex** provides lower-cost access for flexible, non-time-sensitive workloads (set `"service_tier": "flex"`). **Reserved** provides dedicated throughput with a term commitment for predictable workloads; it is set at the account level rather than per request (contact your AWS account team to enable). For more information, see [service tiers](service-tiers-inference.html).
 
-| **Standard** | **Priority** | **Flex** | **Reserved** |
-| --- | --- | --- | --- |
-| ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| **Standard** | **Priority** | **Flex** | **Reserved** | **Batch** |
+| --- | --- | --- | --- | --- |
+| ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 ## Regional Availability
 <a name="model-card-twelvelabs-pegasus-v1-5-regional-availability"></a>
@@ -79,6 +83,10 @@ Amazon Bedrock offers multiple service tiers to match your workload requirements
 Amazon Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (such as US, EU, and APAC) while respecting data residency, and **Global Cross-Region** routes anywhere worldwide when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
 
 Pegasus v1.5 supports Geo Cross-Region inference from the US Regions and Global Cross-Region inference from the Regions listed in the following table. In-Region inference is not supported.
+
+The Region you call is the source Region. The inference profile you use determines where the request can be served:
++ The US geographic inference profile (`us.twelvelabs.pegasus-1-5-v1:0`) routes requests to us-east-1, us-east-2, and us-west-2.
++ The global inference profile (`global.twelvelabs.pegasus-1-5-v1:0`) routes requests globally across all supported AWS Regions.
 
 | **Region** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |
@@ -163,5 +171,8 @@ response = client.invoke_model(
 )
 print(json.loads(response['body'].read()))
 ```
+
+**Note**
+Replace `s3Location.uri` with a bucket in the same AWS Region that you send the request to — `us-east-1` in this example. The bucket Region must match the request Region even though the model is accessed through a geo or global inference profile, and a bucket in any other Region fails with a `ValidationException`. For the full parameter reference, see [TwelveLabs Pegasus 1.5](model-parameters-pegasus-1-5.md).
 
 ------

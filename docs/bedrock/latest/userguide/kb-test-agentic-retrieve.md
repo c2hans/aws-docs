@@ -53,10 +53,13 @@ The following table describes the key request fields:
 
 | Field | Description |
 | --- | --- |
-| policyConfiguration | Configures a Amazon Bedrock guardrail to apply during agentic retrieval. Specify a guardrailId and guardrailVersion. |
+| policyConfiguration | Configures a Amazon Bedrock guardrail to apply during agentic retrieval. Specify a guardrailId and guardrailVersion. A guardrail is supported only when foundationModelType is CUSTOM. Passing a guardrail with the default MANAGED type, or without setting foundationModelType, fails validation. Because CUSTOM also requires foundationModelConfiguration, applying a guardrail means naming an explicit model by its modelArn. |
 | userContext | Provides a user context for access control filtering. |
 | memoryConfiguration | Configures an AgentCore Memory resource to use with the retrieval. Specify a memoryId, and then sessionBinding to restore and continue a session, retrievalConfigs to let the agent retrieve from long-term memory, or both. For more information, see [Use AgentCore Memory with agentic retrieval](#kb-agentic-retrieve-memory). |
 | generateResponse | A boolean field that, when set to true (the default), instructs the foundation model to generate a natural-language answer from the retrieved results. The answer is streamed back as text chunks and included in the result event. |
+
+**Note**
+Agentic retrieval does not support guardrails whose sensitive information policy uses the `ANONYMIZE` action for PII entities or regular expressions. Such a request fails validation even when `foundationModelType` is `CUSTOM`.
 
 For the full request and response syntax, see [`AgenticRetrieveStream`](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_AgenticRetrieveStream.html) in the API reference.
 

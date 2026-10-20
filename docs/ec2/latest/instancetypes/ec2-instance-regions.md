@@ -387,7 +387,7 @@ The following instance types are available in Middle East (UAE).
 <a name="instance-types-sa-east-1"></a>
 
 The following instance types are available in South America (Sao Paulo).
-+ **General Purpose:** M1 \| M2 \| M3 \| M4 \| M5 \| M5a \| M5ad \| M5d \| M5zn \| M6a \| M6g \| M6gd \| M6i \| M6id \| M6idn \| M6in \| M7g \| M7gd \| M7i \| M7i-flex \| M8g \| M8gd \| M8i \| M8i-flex \| T1 \| T2 \| T3 \| T3a \| T4g
++ **General Purpose:** M1 \| M2 \| M3 \| M4 \| M5 \| M5a \| M5ad \| M5d \| M5zn \| M6a \| M6g \| M6gd \| M6i \| M6id \| M6idn \| M6in \| M7g \| M7gd \| M7i \| M7i-flex \| M8g \| M8gd \| M8i \| M8i-flex \| T1 \| T2 \| T3 \| T3a \| T4g \| T8i
 + **Compute Optimized:** C1 \| C3 \| C4 \| C5 \| C5a \| C5ad \| C5d \| C5n \| C6a \| C6g \| C6gd \| C6gn \| C6i \| C6id \| C6in \| C7g \| C7gd \| C7i \| C7i-flex \| C8g \| C8gd \| C8gn \| C8i \| C8i-flex
 + **Memory Optimized:** R3 \| R4 \| R5 \| R5a \| R5ad \| R5b \| R5d \| R5n \| R6g \| R6gd \| R6i \| R7g \| R7gd \| R7i \| R8g \| R8gd \| R8i \| R8i-flex \| U-3tb1 \| U-6tb1 \| U7i-6tb \| U7i-8tb \| U7i-12tb \| U7in-16tb \| U7in-24tb \| X1 \| X1e \| X2idn \| X2iedn \| X8i
 + **Storage Optimized:** I3 \| I3en \| I4g \| I4i \| I7i \| I7ie \| I8g
