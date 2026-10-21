@@ -11,7 +11,7 @@ Publishes a new version of a DataBrew recipe.
 <a name="API_PublishRecipe_RequestSyntax"></a>
 
 ```
-POST /recipes/{{name}}/publishRecipe HTTP/1.1
+POST /recipes/{{Name}}/publishRecipe HTTP/1.1
 Content-type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_PublishRecipe_RequestSyntax) **   <a name="databrew-PublishRecipe-request-uri-Name"></a>
+ ** [Name](#API_PublishRecipe_RequestSyntax) **   <a name="databrew-PublishRecipe-request-uri-Name"></a>
 The name of the recipe to be published.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -37,7 +37,7 @@ The request accepts the following data in JSON format.
  ** [Description](#API_PublishRecipe_RequestSyntax) **   <a name="databrew-PublishRecipe-request-Description"></a>
 A description of the recipe to be published, for this version of the recipe.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
 ## Response Syntax

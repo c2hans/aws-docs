@@ -14,6 +14,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::ECS::Daemon](aws-resource-ecs-daemon.md)
 + [AWS::ECS::DaemonTaskDefinition](aws-resource-ecs-daemontaskdefinition.md)
 + [AWS::ECS::ExpressGatewayService](aws-resource-ecs-expressgatewayservice.md)
++ [AWS::ECS::Gateway](aws-resource-ecs-gateway.md)
++ [AWS::ECS::GatewayClusterAssociations](aws-resource-ecs-gatewayclusterassociations.md)
 + [AWS::ECS::PrimaryTaskSet](aws-resource-ecs-primarytaskset.md)
 + [AWS::ECS::Service](aws-resource-ecs-service.md)
 + [AWS::ECS::TaskDefinition](aws-resource-ecs-taskdefinition.md)

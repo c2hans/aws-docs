@@ -32,13 +32,13 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [description](#API_UpdateRecoveryPlan_RequestSyntax) **   <a name="drs-UpdateRecoveryPlan-request-description"></a>
-The new description of the Recovery Plan.
+The description of a Recovery Plan.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** [name](#API_UpdateRecoveryPlan_RequestSyntax) **   <a name="drs-UpdateRecoveryPlan-request-name"></a>
-The new name of the Recovery Plan.
+The name of a Recovery Plan.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _-]*`
@@ -81,7 +81,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [recoveryPlan](#API_UpdateRecoveryPlan_ResponseSyntax) **   <a name="drs-UpdateRecoveryPlan-response-recoveryPlan"></a>
-The updated Recovery Plan.
+A Recovery Plan resource.
 Type: [RecoveryPlan](API_RecoveryPlan.md) object
 
 ## Errors

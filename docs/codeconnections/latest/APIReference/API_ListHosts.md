@@ -34,7 +34,7 @@ Required: No
 The token that was returned from the previous `ListHosts` call, which can be used to return the next set of hosts in the list.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: No
 
 ## Response Syntax
@@ -77,7 +77,7 @@ Type: Array of [Host](API_Host.md) objects
 A token that can be used in the next `ListHosts` call. To view all items in the list, continue to call this operation with each subsequent token until no more `nextToken` values are returned.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `^.*$`
+Pattern: `.*`
 
 ## Errors
 <a name="API_ListHosts_Errors"></a>

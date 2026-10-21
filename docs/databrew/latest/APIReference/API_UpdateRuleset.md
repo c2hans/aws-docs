@@ -11,7 +11,7 @@ Updates specified ruleset.
 <a name="API_UpdateRuleset_RequestSyntax"></a>
 
 ```
-PUT /rulesets/{{name}} HTTP/1.1
+PUT /rulesets/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -45,7 +45,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateRuleset_RequestSyntax) **   <a name="databrew-UpdateRuleset-request-uri-Name"></a>
+ ** [Name](#API_UpdateRuleset_RequestSyntax) **   <a name="databrew-UpdateRuleset-request-uri-Name"></a>
 The name of the ruleset to be updated.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -64,7 +64,7 @@ Required: Yes
  ** [Description](#API_UpdateRuleset_RequestSyntax) **   <a name="databrew-UpdateRuleset-request-Description"></a>
 The description of the ruleset.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
 ## Response Syntax

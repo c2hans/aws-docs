@@ -20,13 +20,13 @@ Required: Yes
  ** configurations **   <a name="emroneks-Type-Configuration-configurations"></a>
 A list of additional configurations to apply within a configuration object.
 Type: Array of [Configuration](#API_Configuration) objects
-Array Members: Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
  ** properties **   <a name="emroneks-Type-Configuration-properties"></a>
 A set of properties specified within a configuration classification.
 Type: String to string map
-Map Entries: Maximum number of 100 items.
+Map Entries: Minimum number of 0 items. Maximum number of 100 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 1024.
 Key Pattern: `.*\S.*`
 Value Length Constraints: Minimum length of 1. Maximum length of 1024.

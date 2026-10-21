@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/quota-monitor//index.html
 title: 'Quota Monitor for AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/quota-monitor/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Quota Monitor for AWS
 
 Monitor resource usage and receive notifications when approaching quotas
 
-- **Version**: 6.3.15
-- **Released**: 9/2026
+- **Version**: 6.3.16
+- **Released**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 5 mins
 - **Estimated cost**: [See details](/solutions/latest/quota-monitor-for-aws/plan-your-deployment.html)

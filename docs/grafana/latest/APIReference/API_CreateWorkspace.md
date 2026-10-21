@@ -64,7 +64,7 @@ Valid Values: `CURRENT_ACCOUNT | ORGANIZATION`
 Required: Yes
 
  ** [authenticationProviders](#API_CreateWorkspace_RequestSyntax) **   <a name="ManagedGrafana-CreateWorkspace-request-authenticationProviders"></a>
-Specifies whether this workspace uses SAML 2.0, AWS IAM Identity Center, or both to authenticate users for using the Grafana console within a workspace. For more information, see [User authentication in Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/authentication-in-AMG.html).
+Specifies whether this workspace uses SAML 2.0, AWS IAM Identity Center, or both to authenticate users for using the Grafana console within a workspace. For more information, see [User authentication in Amazon Managed Grafana ](https://docs.aws.amazon.com/grafana/latest/userguide/authentication-in-AMG.html).
 Type: Array of strings
 Valid Values: `AWS_SSO | SAML`
 Required: Yes
@@ -119,7 +119,7 @@ When creating a workspace through the AWS API, CLI or AWS CloudFormation, you mu
 You must also specify a `workspaceRoleArn` for a role that you will manage for the workspace to use when accessing those datasources and notification channels.
 The ability for Amazon Managed Grafana to create and update IAM roles on behalf of the user is supported only in the Amazon Managed Grafana console, where this value may be set to `SERVICE_MANAGED`.
 Use only the `CUSTOMER_MANAGED` permission type when creating a workspace with the API, CLI or AWS CloudFormation.
-For more information, see [Amazon Managed Grafana permissions and policies for AWS data sources and notification channels](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-permissions.html).
+For more information, see [ Amazon Managed Grafana permissions and policies for AWS data sources and notification channels](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-permissions.html).
 Type: String
 Valid Values: `CUSTOMER_MANAGED | SERVICE_MANAGED`
 Required: Yes

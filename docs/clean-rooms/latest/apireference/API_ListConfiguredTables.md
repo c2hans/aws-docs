@@ -49,6 +49,7 @@ Content-type: application/json
          "id": "string",
          "name": "string",
          "selectedAnalysisMethods": [ "string" ],
+         "tableType": "string",
          "updateTime": number
       }
    ],

@@ -20,7 +20,7 @@ Required: No
 The Amazon resource name (ARN) of the encryption key for logs.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `^(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})$`
+Pattern: `(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})`
 Required: No
 
 ## See Also

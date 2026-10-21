@@ -27,7 +27,7 @@ Required: Yes
  ** AccountId **   <a name="databrew-Type-Dataset-AccountId"></a>
 The ID of the AWS account that owns the dataset.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** CreateDate **   <a name="databrew-Type-Dataset-CreateDate"></a>
@@ -83,7 +83,7 @@ Metadata tags that have been applied to the dataset.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
 ## See Also

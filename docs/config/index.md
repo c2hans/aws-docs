@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/config/index.html
 title: 'AWS Config Documentation'
 canonical_url: https://docs.aws.amazon.com/config/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS Config Documentation

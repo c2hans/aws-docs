@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 # RecoveryPlanExecutionServer
 <a name="API_RecoveryPlanExecutionServer"></a>
 
-A server within a Recovery Plan execution step, enriched with execution state.
+A server within a recovery plan execution step, enriched with execution state.
 
 ## Contents
 <a name="API_RecoveryPlanExecutionServer_Contents"></a>
@@ -18,7 +18,7 @@ Pattern: `arn:(?:[0-9a-zA-Z_-]+:){3}([0-9]{12,}):source-server/(s-[0-9a-zA-Z]{17
 Required: Yes
 
  ** impactLevel **   <a name="drs-Type-RecoveryPlanExecutionServer-impactLevel"></a>
-The impact level of a server within a Recovery Plan step. `CRITICAL` means the step fails if this server fails. `OPTIONAL` means the step continues even if this server fails.
+Defaults to CRITICAL if not specified.
 Type: String
 Valid Values: `CRITICAL | OPTIONAL`
 Required: No

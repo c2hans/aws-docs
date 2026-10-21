@@ -25,6 +25,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Name](#cfn-bedrockagentcore-memory-semanticmemorystrategy-name)" : {{String}},
   "[Namespaces](#cfn-bedrockagentcore-memory-semanticmemorystrategy-namespaces)" : {{[ String, ... ]}},
   "[NamespaceTemplates](#cfn-bedrockagentcore-memory-semanticmemorystrategy-namespacetemplates)" : {{[ String, ... ]}},
+  "[RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-semanticmemorystrategy-recordexpirydurationdays)" : {{Integer}},
+  "[RecordExpirySpecification](#cfn-bedrockagentcore-memory-semanticmemorystrategy-recordexpiryspecification)" : {{RecordExpirySpecification}},
   "[Status](#cfn-bedrockagentcore-memory-semanticmemorystrategy-status)" : {{String}},
   "[StrategyId](#cfn-bedrockagentcore-memory-semanticmemorystrategy-strategyid)" : {{String}},
   "[Type](#cfn-bedrockagentcore-memory-semanticmemorystrategy-type)" : {{String}},
@@ -45,6 +47,9 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [NamespaceTemplates](#cfn-bedrockagentcore-memory-semanticmemorystrategy-namespacetemplates): {{
     - String}}
+  [RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-semanticmemorystrategy-recordexpirydurationdays): {{Integer}}
+  [RecordExpirySpecification](#cfn-bedrockagentcore-memory-semanticmemorystrategy-recordexpiryspecification): {{
+    RecordExpirySpecification}}
   [Status](#cfn-bedrockagentcore-memory-semanticmemorystrategy-status): {{String}}
   [StrategyId](#cfn-bedrockagentcore-memory-semanticmemorystrategy-strategyid): {{String}}
   [Type](#cfn-bedrockagentcore-memory-semanticmemorystrategy-type): {{String}}
@@ -91,6 +96,19 @@ The namespaceTemplates associated with the semantic memory strategy.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RecordExpiryDurationDays`  <a name="cfn-bedrockagentcore-memory-semanticmemorystrategy-recordexpirydurationdays"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Minimum*: `31`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RecordExpirySpecification`  <a name="cfn-bedrockagentcore-memory-semanticmemorystrategy-recordexpiryspecification"></a>
+Property description not available.
+*Required*: No
+*Type*: [RecordExpirySpecification](aws-properties-bedrockagentcore-memory-recordexpiryspecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-bedrockagentcore-memory-semanticmemorystrategy-status"></a>

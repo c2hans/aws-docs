@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/deploying-virtual-engineering-
 title: 'Guidance for Deploying Virtual Engineering Workbench on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/deploying-virtual-engineering-workbench-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Deploying Virtual Engineering Workbench on AWS

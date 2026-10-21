@@ -40,7 +40,7 @@ This eliminates custom deployment scripts while keeping your CI/CD pipeline in G
 ## Deployment Strategies
 <a name="deployment-strategies"></a>
 
-Elastic Beanstalk supports multiple deployment strategies, selectable per environment. The strategies available differ by deployment mode: Standard Mode offers all-at-once, rolling, rolling with additional batch, and immutable; Cluster Mode offers all-at-once, rolling, immutable, and traffic-splitting deployments. Confirm the strategies available for your mode in the deployment strategy documentation linked below.
+Elastic Beanstalk supports multiple deployment strategies, selectable per environment. The strategies available differ by deployment mode. Standard Mode offers all-at-once, rolling, rolling with additional batch, immutable, and traffic-splitting deployments. Cluster Mode offers all-at-once and rolling deployments. Confirm the strategies available for your mode in the deployment strategy documentation linked below.
 
 **Deployment Strategies**
 
@@ -49,10 +49,10 @@ Elastic Beanstalk supports multiple deployment strategies, selectable per enviro
 | All at once | Deploys to all instances simultaneously | Standard, Cluster | Development environments, fast iteration |
 | Rolling | Deploys in batches, maintaining capacity | Standard, Cluster | Production with tolerance for brief reduced capacity |
 | Rolling with additional batch | Launches new instances before retiring old | Standard | Production where full capacity must be maintained |
-| Immutable | Launches entirely new instances, swaps on health | Standard, Cluster | Production where deployment failure cannot impact running instances |
-| Traffic splitting | Routes a percentage of traffic to new version | Cluster | When you need to validate a new version with a subset of real production traffic before full rollout |
+| Immutable | Launches entirely new instances, swaps on health | Standard | Production where deployment failure cannot impact running instances |
+| Traffic splitting | Routes a percentage of traffic to new version | Standard | When you need to validate a new version with a subset of real production traffic before full rollout |
 
-All strategies include automatic rollback on health check failure. If a deployment causes health degradation, Elastic Beanstalk reverts to the previous version without manual intervention.
+Rollback behavior differs by deployment mode. In Cluster Mode, if the new version fails its health checks, Elastic Beanstalk automatically redeploys the last version that deployed successfully. In Standard Mode, only immutable and traffic-splitting deployments recover automatically. Elastic Beanstalk terminates the new instances if they fail health checks, and the previous version keeps serving traffic. With the other Standard Mode strategies, you recover by redeploying a previous version.
 
 ## Go Deeper
 <a name="deployment-frameworks-go-deeper"></a>

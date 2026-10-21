@@ -11,7 +11,7 @@ Modifies the definition of an existing DataBrew schedule.
 <a name="API_UpdateSchedule_RequestSyntax"></a>
 
 ```
-PUT /schedules/{{name}} HTTP/1.1
+PUT /schedules/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -25,7 +25,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateSchedule_RequestSyntax) **   <a name="databrew-UpdateSchedule-request-uri-Name"></a>
+ ** [Name](#API_UpdateSchedule_RequestSyntax) **   <a name="databrew-UpdateSchedule-request-uri-Name"></a>
 The name of the schedule to update.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -44,7 +44,7 @@ Required: Yes
  ** [JobNames](#API_UpdateSchedule_RequestSyntax) **   <a name="databrew-UpdateSchedule-request-JobNames"></a>
 The name or names of one or more jobs to be run for this schedule.
 Type: Array of strings
-Array Members: Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: No
 

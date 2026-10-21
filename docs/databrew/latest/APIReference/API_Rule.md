@@ -18,7 +18,7 @@ The expression which includes column references, condition names followed by var
 For more information, see [Available checks](https://docs.aws.amazon.com/databrew/latest/dg/profile.data-quality-available-checks.html)
 Type: String
 Length Constraints: Minimum length of 4. Maximum length of 1024.
-Pattern: `^[<>0-9A-Za-z_.,:)(!= ]+$`
+Pattern: `[<>0-9A-Za-z_.,:)(!= ]+`
 Required: Yes
 
  ** Name **   <a name="databrew-Type-Rule-Name"></a>
@@ -42,8 +42,8 @@ Required: No
 The map of substitution variable names to their values used in a check expression. Variable names should start with a ':' (colon). Variable values can either be actual values or column names. To differentiate between the two, column names should be enclosed in backticks, for example, `":col1": "`Column A`".`
 Type: String to string map
 Key Length Constraints: Minimum length of 2. Maximum length of 128.
-Key Pattern: `^:[A-Za-z0-9_]+$`
-Value Length Constraints: Maximum length of 1024.
+Key Pattern: `:[A-Za-z0-9_]+`
+Value Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** Threshold **   <a name="databrew-Type-Rule-Threshold"></a>

@@ -68,18 +68,26 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommentDeletedException **
 This comment has already been deleted. You cannot edit or delete a deleted comment.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentDoesNotExistException **
 No comment exists with the provided ID. Verify that you have used the correct ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentIdRequiredException **
 The comment ID is missing or null. A comment ID is required.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommentIdException **
 The comment ID is not in a valid format. Make sure that you have provided the full comment ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

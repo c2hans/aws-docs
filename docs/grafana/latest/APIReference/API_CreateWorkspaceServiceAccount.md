@@ -10,8 +10,8 @@ Creates a service account for the workspace. A service account can be used to ca
 You can only create service accounts for workspaces that are compatible with Grafana version 9 and above.
 
 **Note**
-For more information about service accounts, see [Service accounts](https://docs.aws.amazon.com/grafana/latest/userguide/service-accounts.html) in the *Amazon Managed Grafana User Guide*.
-For more information about the Grafana HTTP APIs, see [Using Grafana HTTP APIs](https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-APIs.html) in the *Amazon Managed Grafana User Guide*.
+For more information about service accounts, see [Service accounts](https://docs.aws.amazon.com/grafana/latest/userguide/service-accounts.html) in the * Amazon Managed Grafana User Guide*.
+For more information about the Grafana HTTP APIs, see [Using Grafana HTTP APIs](https://docs.aws.amazon.com/grafana/latest/userguide/Using-Grafana-APIs.html) in the * Amazon Managed Grafana User Guide*.
 
 ## Request Syntax
 <a name="API_CreateWorkspaceServiceAccount_RequestSyntax"></a>
@@ -43,7 +43,7 @@ The request accepts the following data in JSON format.
 
  ** [grafanaRole](#API_CreateWorkspaceServiceAccount_RequestSyntax) **   <a name="ManagedGrafana-CreateWorkspaceServiceAccount-request-grafanaRole"></a>
 The permission level to use for this service account.
-For more information about the roles and the permissions each has, see [User roles](https://docs.aws.amazon.com/grafana/latest/userguide/Grafana-user-roles.html) in the *Amazon Managed Grafana User Guide*.
+For more information about the roles and the permissions each has, see [User roles](https://docs.aws.amazon.com/grafana/latest/userguide/Grafana-user-roles.html) in the * Amazon Managed Grafana User Guide*.
 Type: String
 Valid Values: `ADMIN | EDITOR | VIEWER`
 Required: Yes

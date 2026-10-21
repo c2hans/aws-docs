@@ -16,6 +16,7 @@ Imports the specified Windows 10 or 11 Bring Your Own License (BYOL) image into 
    "ImageDescription": "{{string}}",
    "ImageName": "{{string}}",
    "ImageSource": { ... },
+   "ImageValidationMode": "{{string}}",
    "InfrastructureConfigurationArn": "{{string}}",
    "OsVersion": "{{string}}",
    "Platform": "{{string}}",
@@ -59,6 +60,12 @@ The options for image import source.
 Type: [ImageSourceIdentifier](API_ImageSourceIdentifier.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [ImageValidationMode](#API_ImportCustomWorkspaceImage_RequestSyntax) **   <a name="WorkSpaces-ImportCustomWorkspaceImage-request-ImageValidationMode"></a>
+The image validation mode for the WorkSpace image import.
+Type: String
+Valid Values: `CUSTOMER_MANAGED | SERVICE_MANAGED`
+Required: No
 
  ** [InfrastructureConfigurationArn](#API_ImportCustomWorkspaceImage_RequestSyntax) **   <a name="WorkSpaces-ImportCustomWorkspaceImage-request-InfrastructureConfigurationArn"></a>
 The infrastructure configuration ARN that specifies how the WorkSpace image is built.

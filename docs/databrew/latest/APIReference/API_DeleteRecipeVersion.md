@@ -11,7 +11,7 @@ Deletes a single version of a DataBrew recipe.
 <a name="API_DeleteRecipeVersion_RequestSyntax"></a>
 
 ```
-DELETE /recipes/{{name}}/recipeVersion/{{recipeVersion}} HTTP/1.1
+DELETE /recipes/{{Name}}/recipeVersion/{{RecipeVersion}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,12 +19,12 @@ DELETE /recipes/{{name}}/recipeVersion/{{recipeVersion}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DeleteRecipeVersion_RequestSyntax) **   <a name="databrew-DeleteRecipeVersion-request-uri-Name"></a>
+ ** [Name](#API_DeleteRecipeVersion_RequestSyntax) **   <a name="databrew-DeleteRecipeVersion-request-uri-Name"></a>
 The name of the recipe.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
- ** [recipeVersion](#API_DeleteRecipeVersion_RequestSyntax) **   <a name="databrew-DeleteRecipeVersion-request-uri-RecipeVersion"></a>
+ ** [RecipeVersion](#API_DeleteRecipeVersion_RequestSyntax) **   <a name="databrew-DeleteRecipeVersion-request-uri-RecipeVersion"></a>
 The version of the recipe to be deleted. You can specify a numeric versions (`X.Y`) or `LATEST_WORKING`. `LATEST_PUBLISHED` is not supported.
 Length Constraints: Minimum length of 1. Maximum length of 16.
 Required: Yes

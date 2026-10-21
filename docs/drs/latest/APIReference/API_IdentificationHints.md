@@ -11,7 +11,7 @@ Hints used to uniquely identify a machine.
 <a name="API_IdentificationHints_Contents"></a>
 
  ** awsInstanceID **   <a name="drs-Type-IdentificationHints-awsInstanceID"></a>
-AWS Instance ID identification hint.
+ AWS Instance ID identification hint.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `i-[0-9a-fA-F]{8,}`

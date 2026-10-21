@@ -28,7 +28,7 @@ The type of the target (for example, `SNS`).
 + Amazon Q Developer in chat applications clients for Slack are specified as `AWSChatbotSlack`.
 + Amazon Q Developer in chat applications clients for Microsoft Teams are specified as `AWSChatbotMicrosoftTeams`.
 Type: String
-Pattern: `^[A-Za-z]+$`
+Pattern: `[A-Za-z]+`
 Required: No
 
 ## See Also

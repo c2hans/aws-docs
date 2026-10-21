@@ -21,16 +21,16 @@ The request uses the following URI parameters.
 
  ** [DestinationName](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-DestinationName"></a>
 A filter to list only the wireless devices that use as uplink destination.
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 
  ** [DeviceProfileId](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-DeviceProfileId"></a>
 A filter to list only the wireless devices that use this device profile.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [FuotaTaskId](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-FuotaTaskId"></a>
 The ID of a FUOTA task.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [MaxResults](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-MaxResults"></a>
 The maximum number of results to return in this operation.
@@ -38,15 +38,15 @@ Valid Range: Minimum value of 0. Maximum value of 250.
 
  ** [MulticastGroupId](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-MulticastGroupId"></a>
 The ID of the multicast group.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [NextToken](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-NextToken"></a>
 To retrieve the next set of results, the `nextToken` value from a previous response; otherwise **null** to receive the first set of results.
-Length Constraints: Maximum length of 4096.
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 
  ** [ServiceProfileId](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-ServiceProfileId"></a>
 A filter to list only the wireless devices that use this service profile.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [WirelessDeviceType](#API_ListWirelessDevices_RequestSyntax) **   <a name="iotwireless-ListWirelessDevices-request-uri-WirelessDeviceType"></a>
 A filter to list only the wireless devices that use this wireless device type.
@@ -112,7 +112,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListWirelessDevices_ResponseSyntax) **   <a name="iotwireless-ListWirelessDevices-response-NextToken"></a>
 The token to use to get the next set of results, or **null** if there are no additional results.
 Type: String
-Length Constraints: Maximum length of 4096.
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 
  ** [WirelessDeviceList](#API_ListWirelessDevices_ResponseSyntax) **   <a name="iotwireless-ListWirelessDevices-response-WirelessDeviceList"></a>
 The ID of the wireless device.
@@ -143,13 +143,13 @@ HTTP Status Code: 400
 <a name="API_ListWirelessDevices_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/ListWirelessDevices)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/ListWirelessDevices)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/ListWirelessDevices)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/ListWirelessDevices)

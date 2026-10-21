@@ -33,7 +33,7 @@ The request accepts the following data in JSON format.
  ** [Arn](#API_Unsubscribe_RequestSyntax) **   <a name="codestarnotifications-Unsubscribe-request-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
  ** [TargetAddress](#API_Unsubscribe_RequestSyntax) **   <a name="codestarnotifications-Unsubscribe-request-TargetAddress"></a>
@@ -64,7 +64,7 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_Unsubscribe_ResponseSyntax) **   <a name="codestarnotifications-Unsubscribe-response-Arn"></a>
 The Amazon Resource Name (ARN) of the the notification rule from which you have removed a subscription.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 
 ## Errors
 <a name="API_Unsubscribe_Errors"></a>

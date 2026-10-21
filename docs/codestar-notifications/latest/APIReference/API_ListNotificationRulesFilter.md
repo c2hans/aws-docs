@@ -19,7 +19,7 @@ Required: Yes
  ** Value **   <a name="codestarnotifications-Type-ListNotificationRulesFilter-Value"></a>
 The value of the attribute you want to use to filter the returned notification rules. For example, if you specify filtering by *RESOURCE* in Name, you might specify the ARN of a pipeline in AWS CodePipeline for the value.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: Yes
 
 ## See Also

@@ -11,7 +11,7 @@ Deletes the specified DataBrew schedule.
 <a name="API_DeleteSchedule_RequestSyntax"></a>
 
 ```
-DELETE /schedules/{{name}} HTTP/1.1
+DELETE /schedules/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /schedules/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DeleteSchedule_RequestSyntax) **   <a name="databrew-DeleteSchedule-request-uri-Name"></a>
+ ** [Name](#API_DeleteSchedule_RequestSyntax) **   <a name="databrew-DeleteSchedule-request-uri-Name"></a>
 The name of the schedule to be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

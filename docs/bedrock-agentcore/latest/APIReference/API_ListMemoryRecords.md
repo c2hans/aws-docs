@@ -68,7 +68,7 @@ Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Required: No
 
  ** [namespace](#API_ListMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-ListMemoryRecords-request-namespace"></a>
-The namespace prefix to filter memory records by. Returns all memory records in namespaces that start with the provided prefix. Either `namespace` or `namespacePath` is required.
+The exact namespace to filter memory records by. Returns all memory records that matches the provided namespace. Either `namespace` or `namespacePath` is required.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`

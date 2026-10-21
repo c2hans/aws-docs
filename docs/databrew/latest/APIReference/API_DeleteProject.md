@@ -11,7 +11,7 @@ Deletes an existing DataBrew project.
 <a name="API_DeleteProject_RequestSyntax"></a>
 
 ```
-DELETE /projects/{{name}} HTTP/1.1
+DELETE /projects/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /projects/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DeleteProject_RequestSyntax) **   <a name="databrew-DeleteProject-request-uri-Name"></a>
+ ** [Name](#API_DeleteProject_RequestSyntax) **   <a name="databrew-DeleteProject-request-uri-Name"></a>
 The name of the project to be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

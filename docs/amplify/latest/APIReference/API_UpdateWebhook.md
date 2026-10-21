@@ -27,7 +27,7 @@ The request uses the following URI parameters.
 
  ** [webhookId](#API_UpdateWebhook_RequestSyntax) **   <a name="amplify-UpdateWebhook-request-uri-webhookId"></a>
 The unique ID for a webhook.
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: Yes
 
@@ -46,7 +46,7 @@ Required: No
  ** [description](#API_UpdateWebhook_RequestSyntax) **   <a name="amplify-UpdateWebhook-request-description"></a>
 The description for a webhook.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 

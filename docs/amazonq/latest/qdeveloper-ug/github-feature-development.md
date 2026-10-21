@@ -5,8 +5,10 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/github-feat
 # Developing features and iterating with Amazon Q Developer in GitHub
 <a name="github-feature-development"></a>
 
-**Note**
-Amazon Q Developer for GitHub is in preview release and is subject to change.
+**Amazon Q Developer for GitHub: end of support**
+On January 30, 2027, AWS will discontinue support for the Amazon Q Developer for GitHub App. New app installations will no longer be available starting November 18, 2026.
+For capabilities similar to the Amazon Q Developer for GitHub App, explore Kiro and the Kiro GitHub App to access the latest models and features, including agentic coding, chat and MCP support. For more information, see [Kiro GitHub App on the Kiro website](https://kiro.dev/docs/web/github).
+For more information about the end of support, see [Amazon Q Developer end-of-support announcement](https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/) on the AWS DevOps Blog.
 
 You can use Amazon Q Developer in GitHub to streamline development by automatically implementing new features and bug fixes, taking tasks from idea to a completed pull request. When you add the feature development label to an issue or use the `/q dev` slash command, Amazon Q Developer uses the issue, including its title and description, as well as repository code as context to generate new code fixes and create a pull request. On the pull request, you can provide feedback and Amazon Q Developer iterates on the suggested code.
 

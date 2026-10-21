@@ -14,7 +14,7 @@ The information about the container provider.
 The ID of the container cluster.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z][A-Za-z0-9\-_]*`
+Pattern: `[0-9A-Za-z][A-Za-z0-9\-_]*`
 Required: Yes
 
  ** type **   <a name="emroneks-Type-ContainerProvider-type"></a>

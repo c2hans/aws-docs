@@ -11,7 +11,7 @@ Modifies the definition of the `LATEST_WORKING` version of a DataBrew recipe.
 <a name="API_UpdateRecipe_RequestSyntax"></a>
 
 ```
-PUT /recipes/{{name}} HTTP/1.1
+PUT /recipes/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -41,7 +41,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateRecipe_RequestSyntax) **   <a name="databrew-UpdateRecipe-request-uri-Name"></a>
+ ** [Name](#API_UpdateRecipe_RequestSyntax) **   <a name="databrew-UpdateRecipe-request-uri-Name"></a>
 The name of the recipe to be updated.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -54,7 +54,7 @@ The request accepts the following data in JSON format.
  ** [Description](#API_UpdateRecipe_RequestSyntax) **   <a name="databrew-UpdateRecipe-request-Description"></a>
 A description of the recipe.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** [Steps](#API_UpdateRecipe_RequestSyntax) **   <a name="databrew-UpdateRecipe-request-Steps"></a>

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::JobTemplate ParametricCloudWatchMonitoringConfiguration
 <a name="aws-properties-emrcontainers-jobtemplate-parametriccloudwatchmonitoringconfiguration"></a>
 
- A configuration for CloudWatch monitoring. You can configure your jobs to send log information to CloudWatch Logs. This data type allows job template parameters to be specified within.
+A configuration for CloudWatch monitoring. You can configure your jobs to send log information to CloudWatch Logs. This data type allows job template parameters to be specified within.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametriccloudwatchmonitoringconfiguration-syntax"></a>
@@ -36,7 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametriccloudwatchmonitoringconfiguration-properties"></a>
 
 `LogGroupName`  <a name="cfn-emrcontainers-jobtemplate-parametriccloudwatchmonitoringconfiguration-loggroupname"></a>
- The name of the log group for log publishing.
+The name of the log group for log publishing.
 *Required*: No
 *Type*: String
 *Pattern*: `^[\.\-_/#A-Za-z0-9\$\{\}]+$`
@@ -45,7 +45,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `LogStreamNamePrefix`  <a name="cfn-emrcontainers-jobtemplate-parametriccloudwatchmonitoringconfiguration-logstreamnameprefix"></a>
- The specified name prefix for log streams.
+The specified name prefix for log streams.
 *Required*: No
 *Type*: String
 *Pattern*: `\S`

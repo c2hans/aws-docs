@@ -27,9 +27,9 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [resourceArn](#API_TagResource_RequestSyntax) **   <a name="amplify-TagResource-request-uri-resourceArn"></a>
- The Amazon Resource Name (ARN) to use to tag a resource.
+The Amazon Resource Name (ARN) to use to tag a resource.
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `^arn:aws:amplify:.*`
+Pattern: `arn:aws:amplify:.*`
 Required: Yes
 
 ## Request Body
@@ -42,9 +42,9 @@ The tags used to tag the resource.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `(?!aws:)[a-zA-Z+-=._:/]+`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: Yes
 
 ## Response Syntax

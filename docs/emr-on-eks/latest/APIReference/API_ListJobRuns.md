@@ -40,7 +40,7 @@ Pattern: `.*\S.*`
 
  ** [states](#API_ListJobRuns_RequestSyntax) **   <a name="emroneks-ListJobRuns-request-uri-states"></a>
 The states of the job run.
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Valid Values: `PENDING | SUBMITTED | RUNNING | FAILED | CANCELLED | CANCEL_PENDING | COMPLETED`
 
  ** [virtualClusterId](#API_ListJobRuns_RequestSyntax) **   <a name="emroneks-ListJobRuns-request-uri-virtualClusterId"></a>

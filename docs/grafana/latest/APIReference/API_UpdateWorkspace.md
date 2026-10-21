@@ -86,7 +86,7 @@ Required: No
  ** [permissionType](#API_UpdateWorkspace_RequestSyntax) **   <a name="ManagedGrafana-UpdateWorkspace-request-permissionType"></a>
 Use this parameter if you want to change a workspace from `SERVICE_MANAGED` to `CUSTOMER_MANAGED`. This allows you to manage the permissions that the workspace uses to access datasources and notification channels. If the workspace is in a member AWS account of an organization, and that account is not a delegated administrator account, and you want the workspace to access data sources in other AWS accounts in the organization, you must choose `CUSTOMER_MANAGED`.
 If you specify this as `CUSTOMER_MANAGED`, you must also specify a `workspaceRoleArn` that the workspace will use for accessing AWS resources.
-For more information on the role and permissions needed, see [Amazon Managed Grafana permissions and policies for AWS data sources and notification channels](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-permissions.html)
+For more information on the role and permissions needed, see [ Amazon Managed Grafana permissions and policies for AWS data sources and notification channels](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-manage-permissions.html)
 Do not use this to convert a `CUSTOMER_MANAGED` workspace to `SERVICE_MANAGED`. Do not include this parameter if you want to leave the workspace as `SERVICE_MANAGED`.
 You can convert a `CUSTOMER_MANAGED` workspace to `SERVICE_MANAGED` using the Amazon Managed Grafana console. For more information, see [Managing permissions for data sources and notification channels](https://docs.aws.amazon.com/grafana/latest/userguide/AMG-datasource-and-notification.html).
 Type: String

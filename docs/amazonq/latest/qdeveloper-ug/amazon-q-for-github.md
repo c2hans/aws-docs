@@ -5,8 +5,10 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/amazon-q-fo
 # Amazon Q Developer for GitHub (Preview)
 <a name="amazon-q-for-github"></a>
 
-**Note**
-Amazon Q Developer for GitHub is in preview release and is subject to change.
+**Amazon Q Developer for GitHub: end of support**
+On January 30, 2027, AWS will discontinue support for the Amazon Q Developer for GitHub App. New app installations will no longer be available starting November 18, 2026.
+For capabilities similar to the Amazon Q Developer for GitHub App, explore Kiro and the Kiro GitHub App to access the latest models and features, including agentic coding, chat and MCP support. For more information, see [Kiro GitHub App on the Kiro website](https://kiro.dev/docs/web/github).
+For more information about the end of support, see [Amazon Q Developer end-of-support announcement](https://aws.amazon.com/blogs/devops/amazon-q-developer-end-of-support-announcement/) on the AWS DevOps Blog.
 
 [Amazon Q Developer for GitHub or GitHub Enterprise Cloud](https://github.com/marketplace/amazon-q-developer) allows you to leverage Amazon Q Developer capabilities for your software development workflows. With specialized development agents, you can implement new ideas, review code for quality issues, and address vulnerabilities with unit tests. Once the agent completes a task, you can provide feedback, and the agent iterates on the previous solution. For more information, see [Amazon Q Developer agents](#github-agents).
 

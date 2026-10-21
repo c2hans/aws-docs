@@ -11,7 +11,7 @@ Displays detailed information about a specified job template. Job template store
 <a name="API_DescribeJobTemplate_RequestSyntax"></a>
 
 ```
-GET /jobtemplates/{{templateId}} HTTP/1.1
+GET /jobtemplates/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /jobtemplates/{{templateId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [templateId](#API_DescribeJobTemplate_RequestSyntax) **   <a name="emroneks-DescribeJobTemplate-request-uri-id"></a>
+ ** [id](#API_DescribeJobTemplate_RequestSyntax) **   <a name="emroneks-DescribeJobTemplate-request-uri-id"></a>
 The ID of the job template that will be described.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

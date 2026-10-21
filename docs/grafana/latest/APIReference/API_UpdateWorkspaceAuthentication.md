@@ -55,7 +55,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [authenticationProviders](#API_UpdateWorkspaceAuthentication_RequestSyntax) **   <a name="ManagedGrafana-UpdateWorkspaceAuthentication-request-authenticationProviders"></a>
-Specifies whether this workspace uses SAML 2.0, AWS IAM Identity Center, or both to authenticate users for using the Grafana console within a workspace. For more information, see [User authentication in Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/authentication-in-AMG.html).
+Specifies whether this workspace uses SAML 2.0, AWS IAM Identity Center, or both to authenticate users for using the Grafana console within a workspace. For more information, see [User authentication in Amazon Managed Grafana ](https://docs.aws.amazon.com/grafana/latest/userguide/authentication-in-AMG.html).
 Type: Array of strings
 Valid Values: `AWS_SSO | SAML`
 Required: Yes

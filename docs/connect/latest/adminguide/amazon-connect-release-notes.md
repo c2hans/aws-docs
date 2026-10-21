@@ -10,6 +10,15 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026 Updates
 <a name="oct26-release-notes"></a>
 
+### Connect Customer Global Resiliency now provides visibility into resiliency readiness across linked AWS Regions
+<a name="oct26-global-resiliency-readiness"></a>
+
+Connect Customer Global Resiliency now provides a **Global Resiliency** page in the admin website, giving administrators a single place to review their Region switch readiness. The page shows an overall readiness status and lists the resources that Global Resiliency natively replicates, including which resource types are in sync, which are still pending synchronization, and which need action. For example, if a phone number or user is not associated with a traffic distribution group, the page flags it and lets the administrator associate the affected resources directly from the page. With this readiness overview, administrators can review their resiliency posture at any time and verify that their instance is ready for a Region switch.
+
+For more information, see [View your resiliency readiness in Connect Customer Global Resiliency](global-resiliency-readiness-overview.md).
+
+Available in all AWS Regions where Connect Customer Global Resiliency is supported.
+
 ### Amazon Connect Customer now prefills step-by-step guides for after contact work
 <a name="oct26-acw-guide-prefill"></a>
 

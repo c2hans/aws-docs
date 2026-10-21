@@ -11,7 +11,7 @@ Modifies the definition of an existing profile job.
 <a name="API_UpdateProfileJob_RequestSyntax"></a>
 
 ```
-PUT /profileJobs/{{name}} HTTP/1.1
+PUT /profileJobs/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -93,7 +93,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateProfileJob_RequestSyntax) **   <a name="databrew-UpdateProfileJob-request-uri-Name"></a>
+ ** [Name](#API_UpdateProfileJob_RequestSyntax) **   <a name="databrew-UpdateProfileJob-request-uri-Name"></a>
 The name of the job to be updated.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes

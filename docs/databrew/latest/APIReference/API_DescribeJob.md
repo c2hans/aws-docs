@@ -11,7 +11,7 @@ Returns the definition of a specific DataBrew job.
 <a name="API_DescribeJob_RequestSyntax"></a>
 
 ```
-GET /jobs/{{name}} HTTP/1.1
+GET /jobs/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /jobs/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DescribeJob_RequestSyntax) **   <a name="databrew-DescribeJob-request-uri-Name"></a>
+ ** [Name](#API_DescribeJob_RequestSyntax) **   <a name="databrew-DescribeJob-request-uri-Name"></a>
 The name of the job to be described.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes
@@ -283,7 +283,7 @@ Metadata tags associated with this job.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [Timeout](#API_DescribeJob_ResponseSyntax) **   <a name="databrew-DescribeJob-response-Timeout"></a>
 The job's timeout in minutes. A job that attempts to run longer than this timeout period ends with a status of `TIMEOUT`.

@@ -18,19 +18,19 @@ Required: No
  ** Id **   <a name="iotwireless-Type-LoRaWANPublicGatewayMetadata-Id"></a>
 The ID of the gateways that are operated by the network provider.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** ProviderNetId **   <a name="iotwireless-Type-LoRaWANPublicGatewayMetadata-ProviderNetId"></a>
 The ID of the LoRaWAN public network provider.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** RfRegion **   <a name="iotwireless-Type-LoRaWANPublicGatewayMetadata-RfRegion"></a>
 The frequency band (RFRegion) value.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** Rssi **   <a name="iotwireless-Type-LoRaWANPublicGatewayMetadata-Rssi"></a>
@@ -47,6 +47,6 @@ Required: No
 <a name="API_LoRaWANPublicGatewayMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/LoRaWANPublicGatewayMetadata)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/LoRaWANPublicGatewayMetadata)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/LoRaWANPublicGatewayMetadata)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/LoRaWANPublicGatewayMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/LoRaWANPublicGatewayMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/LoRaWANPublicGatewayMetadata)

@@ -25,6 +25,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Name](#cfn-bedrockagentcore-memory-episodicmemorystrategy-name)" : {{String}},
   "[Namespaces](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespaces)" : {{[ String, ... ]}},
   "[NamespaceTemplates](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespacetemplates)" : {{[ String, ... ]}},
+  "[RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-episodicmemorystrategy-recordexpirydurationdays)" : {{Integer}},
+  "[RecordExpirySpecification](#cfn-bedrockagentcore-memory-episodicmemorystrategy-recordexpiryspecification)" : {{RecordExpirySpecification}},
   "[ReflectionConfiguration](#cfn-bedrockagentcore-memory-episodicmemorystrategy-reflectionconfiguration)" : {{EpisodicReflectionConfigurationInput}},
   "[Status](#cfn-bedrockagentcore-memory-episodicmemorystrategy-status)" : {{String}},
   "[StrategyId](#cfn-bedrockagentcore-memory-episodicmemorystrategy-strategyid)" : {{String}},
@@ -46,6 +48,9 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [NamespaceTemplates](#cfn-bedrockagentcore-memory-episodicmemorystrategy-namespacetemplates): {{
     - String}}
+  [RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-episodicmemorystrategy-recordexpirydurationdays): {{Integer}}
+  [RecordExpirySpecification](#cfn-bedrockagentcore-memory-episodicmemorystrategy-recordexpiryspecification): {{
+    RecordExpirySpecification}}
   [ReflectionConfiguration](#cfn-bedrockagentcore-memory-episodicmemorystrategy-reflectionconfiguration): {{
     EpisodicReflectionConfigurationInput}}
   [Status](#cfn-bedrockagentcore-memory-episodicmemorystrategy-status): {{String}}
@@ -94,6 +99,19 @@ The namespaceTemplates for which to create episodes.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RecordExpiryDurationDays`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-recordexpirydurationdays"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Minimum*: `31`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RecordExpirySpecification`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-recordexpiryspecification"></a>
+Property description not available.
+*Required*: No
+*Type*: [RecordExpirySpecification](aws-properties-bedrockagentcore-memory-recordexpiryspecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReflectionConfiguration`  <a name="cfn-bedrockagentcore-memory-episodicmemorystrategy-reflectionconfiguration"></a>

@@ -14,14 +14,14 @@ Information, such as repository, branch, provider, and resource names for a spec
 The branch associated with a specific sync configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** OwnerId **   <a name="codeconnections-Type-SyncConfiguration-OwnerId"></a>
 The owner ID for the repository associated with a specific sync configuration, such as the owner ID in GitHub.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** ProviderType **   <a name="codeconnections-Type-SyncConfiguration-ProviderType"></a>
@@ -33,21 +33,21 @@ Required: Yes
  ** RepositoryLinkId **   <a name="codeconnections-Type-SyncConfiguration-RepositoryLinkId"></a>
 The ID of the repository link associated with a specific sync configuration.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: Yes
 
  ** RepositoryName **   <a name="codeconnections-Type-SyncConfiguration-RepositoryName"></a>
 The name of the repository associated with a specific sync configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** ResourceName **   <a name="codeconnections-Type-SyncConfiguration-ResourceName"></a>
 The name of the connection resource associated with a specific sync configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: Yes
 
  ** RoleArn **   <a name="codeconnections-Type-SyncConfiguration-RoleArn"></a>

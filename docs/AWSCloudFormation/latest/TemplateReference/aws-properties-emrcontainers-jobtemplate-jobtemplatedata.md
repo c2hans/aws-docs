@@ -48,7 +48,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-jobtemplate-jobtemplatedata-properties"></a>
 
 `ConfigurationOverrides`  <a name="cfn-emrcontainers-jobtemplate-jobtemplatedata-configurationoverrides"></a>
- The configuration settings that are used to override defaults configuration.
+The configuration settings that are used to override defaults configuration.
 *Required*: No
 *Type*: [ParametricConfigurationOverrides](aws-properties-emrcontainers-jobtemplate-parametricconfigurationoverrides.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -84,7 +84,7 @@ The configuration of parameters existing in the job template.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ReleaseLabel`  <a name="cfn-emrcontainers-jobtemplate-jobtemplatedata-releaselabel"></a>
- The release version of Amazon EMR.
+The release version of Amazon EMR.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^([\.\-_/A-Za-z0-9]+|\$\{[a-zA-Z]\w*\})$`

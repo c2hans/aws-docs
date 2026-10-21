@@ -20,7 +20,7 @@ Required: Yes
 The file size at which to rotate logs. Minimum of 2KB, Maximum of 2GB.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 12.
-Pattern: `^\d+(\.\d+)?[KMG][Bb]?$`
+Pattern: `\d+(\.\d+)?[KMG][Bb]?`
 Required: Yes
 
 ## See Also

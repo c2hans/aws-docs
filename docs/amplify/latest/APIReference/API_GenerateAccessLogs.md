@@ -40,8 +40,8 @@ The request accepts the following data in JSON format.
  ** [domainName](#API_GenerateAccessLogs_RequestSyntax) **   <a name="amplify-GenerateAccessLogs-request-domainName"></a>
 The name of the domain.
 Type: String
-Length Constraints: Maximum length of 64.
-Pattern: `^(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?$`
+Length Constraints: Minimum length of 0. Maximum length of 64.
+Pattern: `(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?`
 Required: Yes
 
  ** [endTime](#API_GenerateAccessLogs_RequestSyntax) **   <a name="amplify-GenerateAccessLogs-request-endTime"></a>
@@ -76,7 +76,7 @@ The following data is returned in JSON format by the service.
  ** [logUrl](#API_GenerateAccessLogs_ResponseSyntax) **   <a name="amplify-GenerateAccessLogs-response-logUrl"></a>
 The pre-signed URL for the requested access logs.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 
 ## Errors
 <a name="API_GenerateAccessLogs_Errors"></a>

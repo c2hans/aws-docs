@@ -18,13 +18,13 @@ Required: No
  ** SidewalkManufacturingSn **   <a name="iotwireless-Type-SidewalkSingleStartImportInfo-SidewalkManufacturingSn"></a>
 The Sidewalk manufacturing serial number (SMSN) of the device added to the import task.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
 ## See Also
 <a name="API_SidewalkSingleStartImportInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/SidewalkSingleStartImportInfo)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/SidewalkSingleStartImportInfo)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/SidewalkSingleStartImportInfo)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/SidewalkSingleStartImportInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/SidewalkSingleStartImportInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/SidewalkSingleStartImportInfo)

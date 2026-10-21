@@ -13,7 +13,7 @@ LoRaWAN application configuration, which can be used to perform geolocation.
  ** DestinationName **   <a name="iotwireless-Type-ApplicationConfig-DestinationName"></a>
 The name of the position data destination that describes the AWS IoT rule that processes the device's position data for use by AWS IoT Core for LoRaWAN.
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 Required: No
 
@@ -33,6 +33,6 @@ Required: No
 <a name="API_ApplicationConfig_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/ApplicationConfig)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/ApplicationConfig)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/ApplicationConfig)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/ApplicationConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/ApplicationConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/ApplicationConfig)

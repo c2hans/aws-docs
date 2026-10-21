@@ -35,7 +35,7 @@ The request accepts the following data in JSON format.
 The branch for the sync configuration to be updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: No
 
  ** [ConfigFile](#API_UpdateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-UpdateSyncConfiguration-request-ConfigFile"></a>
@@ -58,14 +58,14 @@ Required: No
  ** [RepositoryLinkId](#API_UpdateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-UpdateSyncConfiguration-request-RepositoryLinkId"></a>
 The ID of the repository link for the sync configuration to be updated.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: No
 
  ** [ResourceName](#API_UpdateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-UpdateSyncConfiguration-request-ResourceName"></a>
 The name of the AWS resource for the sync configuration to be updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: Yes
 
  ** [RoleArn](#API_UpdateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-UpdateSyncConfiguration-request-RoleArn"></a>
@@ -127,15 +127,15 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConcurrentModificationException **
 Exception thrown as a result of concurrent modification to an application. For example, two individuals attempting to edit the same application at the same time.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -143,15 +143,15 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** UpdateOutOfSyncException **
 The update is out of sync. Try syncing again.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
 ## See Also
 <a name="API_UpdateSyncConfiguration_SeeAlso"></a>

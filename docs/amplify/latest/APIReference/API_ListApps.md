@@ -25,7 +25,7 @@ Valid Range: Minimum value of 0. Maximum value of 100.
 
  ** [nextToken](#API_ListApps_RequestSyntax) **   <a name="amplify-ListApps-request-uri-nextToken"></a>
 A pagination token. If non-null, the pagination token is returned in a result. Pass its value in another request to retrieve more entries.
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Request Body
@@ -129,7 +129,7 @@ Type: Array of [App](API_App.md) objects
  ** [nextToken](#API_ListApps_ResponseSyntax) **   <a name="amplify-ListApps-response-nextToken"></a>
 A pagination token. Set to null to start listing apps from start. If non-null, the pagination token is returned in a result. Pass its value in here to list more projects.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Errors

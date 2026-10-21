@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/switching-
 # Switching unauthenticated users to authenticated users
 <a name="switching-identities"></a>
 
-Amazon Cognito identity pools support both authenticated and unauthenticated users. Unauthenticated users receive access to your AWS resources even if they aren't logged in with any of your identity providers (IdPs). This degree of access is useful to display content to users before they log in. Each unauthenticated user has a unique identity in the identity pool, even though they haven't been individually logged in and authenticated.
+Amazon Cognito identity pools support both authenticated and unauthenticated users. Unauthenticated users receive access to your AWS resources even if they aren't signed in with any of your identity providers (IdPs). This degree of access is useful to display content to users before they sign in. Each unauthenticated user has a unique identity in the identity pool, even though they haven't been individually signed in and authenticated.
 
-This section describes the case where your user chooses to switch from logging in with an unauthenticated identity to using an authenticated identity.
+This section describes the case where your user chooses to switch from signing in with an unauthenticated identity to using an authenticated identity.
 
 ## Android
 <a name="switching-identities-1.android"></a>
 
-Users can log in to your application as unauthenticated guests. Eventually they might decide to log in using one of the supported IdPs. Amazon Cognito makes sure that an old identity retains the same unique identifier as the new one, and that the profile data is merged automatically.
+Users can sign in to your application as unauthenticated guests. Eventually they might decide to sign in using one of the supported IdPs. Amazon Cognito makes sure that an old identity retains the same unique identifier as the new one, and that the profile data is merged automatically.
 
 Your application is informed of a profile merge through the `IdentityChangedListener` interface. Implement the `identityChanged` method in the interface to receive these messages:
 
@@ -26,7 +26,7 @@ public void identityChanged(String oldIdentityId, String newIdentityId) {
 ## iOS - objective-C
 <a name="switching-identities-1.ios-objc"></a>
 
-Users can log in to your application as unauthenticated guests. Eventually they might decide to log in using one of the supported IdPs. Amazon Cognito makes sure that an old identity retains the same unique identifier as the new one, and that the profile data is merged automatically.
+Users can sign in to your application as unauthenticated guests. Eventually they might decide to sign in using one of the supported IdPs. Amazon Cognito makes sure that an old identity retains the same unique identifier as the new one, and that the profile data is merged automatically.
 
 `NSNotificationCenter` informs your application of a profile merge:
 
@@ -47,7 +47,7 @@ Users can log in to your application as unauthenticated guests. Eventually they 
 ## iOS - swift
 <a name="switching-identities-1.ios-swift"></a>
 
-Users can log in to your application as unauthenticated guests. Eventually they might decide to log in using one of the supported IdPs. Amazon Cognito makes sure that an old identity retains the same unique identifier as the new one, and that the profile data is merged automatically.
+Users can sign in to your application as unauthenticated guests. Eventually they might decide to sign in using one of the supported IdPs. Amazon Cognito makes sure that an old identity retains the same unique identifier as the new one, and that the profile data is merged automatically.
 
 `NSNotificationCenter` informs your application of a profile merge:
 

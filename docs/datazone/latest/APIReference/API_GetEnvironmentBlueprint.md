@@ -42,6 +42,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "blueprintCategory": "string",
    "createdAt": "string",
    "deploymentProperties": {
       "endTimeoutMinutes": number,
@@ -74,6 +75,11 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [blueprintCategory](#API_GetEnvironmentBlueprint_ResponseSyntax) **   <a name="datazone-GetEnvironmentBlueprint-response-blueprintCategory"></a>
+The category of this Amazon DataZone blueprint. The only valid value is `TOOLING`, which indicates a blueprint that provisions the tooling resources of a project.
+Type: String
+Valid Values: `TOOLING`
 
  ** [createdAt](#API_GetEnvironmentBlueprint_ResponseSyntax) **   <a name="datazone-GetEnvironmentBlueprint-response-createdAt"></a>
 A timestamp of when this blueprint was created.

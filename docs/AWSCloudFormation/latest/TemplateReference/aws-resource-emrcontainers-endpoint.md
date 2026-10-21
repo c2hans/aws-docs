@@ -142,7 +142,7 @@ The authentication proxy URL of the endpoint.
 The date and time when the endpoint was created.
 
 `FailureReason`  <a name="FailureReason-fn::getatt"></a>
- The reasons why the endpoint has failed.
+The reasons why the endpoint has failed.
 
 `Id`  <a name="Id-fn::getatt"></a>
 The ID of the endpoint.
@@ -157,4 +157,4 @@ The server URL of the endpoint.
 The state of the endpoint.
 
 `StateDetails`  <a name="StateDetails-fn::getatt"></a>
- Additional details of the endpoint state.
+Additional details of the endpoint state.

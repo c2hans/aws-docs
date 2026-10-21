@@ -25,7 +25,7 @@ Valid Range: Minimum value of 0. Maximum value of 250.
 
  ** [NextToken](#API_ListMulticastGroups_RequestSyntax) **   <a name="iotwireless-ListMulticastGroups-request-uri-NextToken"></a>
 To retrieve the next set of results, the `nextToken` value from a previous response; otherwise **null** to receive the first set of results.
-Length Constraints: Maximum length of 4096.
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 
 ## Request Body
 <a name="API_ListMulticastGroups_RequestBody"></a>
@@ -65,7 +65,7 @@ Type: Array of [MulticastGroup](API_MulticastGroup.md) objects
  ** [NextToken](#API_ListMulticastGroups_ResponseSyntax) **   <a name="iotwireless-ListMulticastGroups-response-NextToken"></a>
 To retrieve the next set of results, the `nextToken` value from a previous response; otherwise **null** to receive the first set of results.
 Type: String
-Length Constraints: Maximum length of 4096.
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 
 ## Errors
 <a name="API_ListMulticastGroups_Errors"></a>
@@ -92,13 +92,13 @@ HTTP Status Code: 400
 <a name="API_ListMulticastGroups_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/ListMulticastGroups)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/ListMulticastGroups)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/ListMulticastGroups)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/ListMulticastGroups)

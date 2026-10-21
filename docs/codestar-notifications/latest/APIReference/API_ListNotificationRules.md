@@ -51,7 +51,7 @@ Required: No
  ** [NextToken](#API_ListNotificationRules_RequestSyntax) **   <a name="codestarnotifications-ListNotificationRules-request-NextToken"></a>
 An enumeration token that, when provided in a request, returns the next batch of the results.
 Type: String
-Pattern: `^[\w/+=]+$`
+Pattern: `[\w/+=]+`
 Required: No
 
 ## Response Syntax
@@ -82,7 +82,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListNotificationRules_ResponseSyntax) **   <a name="codestarnotifications-ListNotificationRules-response-NextToken"></a>
 An enumeration token that can be used in a request to return the next batch of the results.
 Type: String
-Pattern: `^[\w/+=]+$`
+Pattern: `[\w/+=]+`
 
  ** [NotificationRules](#API_ListNotificationRules_ResponseSyntax) **   <a name="codestarnotifications-ListNotificationRules-response-NotificationRules"></a>
 The list of notification rules for the AWS account, by Amazon Resource Name (ARN) and ID.

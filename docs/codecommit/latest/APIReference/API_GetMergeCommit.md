@@ -98,55 +98,81 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommitDoesNotExistException **
 The specified commit does not exist or no commit was specified, and the specified repository has no default branch.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitRequiredException **
 A commit was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitException **
 The specified commit is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictDetailLevelException **
 The specified conflict detail level is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictResolutionStrategyException **
 The specified conflict resolution strategy is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

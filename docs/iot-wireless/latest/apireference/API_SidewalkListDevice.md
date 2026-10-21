@@ -13,7 +13,7 @@ Sidewalk object used by list functions.
  ** AmazonId **   <a name="iotwireless-Type-SidewalkListDevice-AmazonId"></a>
 The Sidewalk Amazon ID.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** DeviceCertificates **   <a name="iotwireless-Type-SidewalkListDevice-DeviceCertificates"></a>
@@ -24,7 +24,7 @@ Required: No
  ** DeviceProfileId **   <a name="iotwireless-Type-SidewalkListDevice-DeviceProfileId"></a>
 Sidewalk object used by list functions.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** Positioning **   <a name="iotwireless-Type-SidewalkListDevice-Positioning"></a>
@@ -35,13 +35,13 @@ Required: No
  ** SidewalkId **   <a name="iotwireless-Type-SidewalkListDevice-SidewalkId"></a>
 The sidewalk device identification.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** SidewalkManufacturingSn **   <a name="iotwireless-Type-SidewalkListDevice-SidewalkManufacturingSn"></a>
 The Sidewalk manufacturing series number.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** Status **   <a name="iotwireless-Type-SidewalkListDevice-Status"></a>
@@ -54,6 +54,6 @@ Required: No
 <a name="API_SidewalkListDevice_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/SidewalkListDevice)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/SidewalkListDevice)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/SidewalkListDevice)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/SidewalkListDevice)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/SidewalkListDevice)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/SidewalkListDevice)

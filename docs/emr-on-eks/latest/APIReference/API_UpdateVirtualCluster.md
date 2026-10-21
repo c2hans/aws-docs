@@ -11,7 +11,7 @@ Updates a virtual cluster. Virtual cluster is a managed entity on Amazon EMR on 
 <a name="API_UpdateVirtualCluster_RequestSyntax"></a>
 
 ```
-PATCH /virtualclusters/{{virtualClusterId}} HTTP/1.1
+PATCH /virtualclusters/{{id}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [virtualClusterId](#API_UpdateVirtualCluster_RequestSyntax) **   <a name="emroneks-UpdateVirtualCluster-request-uri-id"></a>
+ ** [id](#API_UpdateVirtualCluster_RequestSyntax) **   <a name="emroneks-UpdateVirtualCluster-request-uri-id"></a>
 The ID of the virtual cluster to update.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

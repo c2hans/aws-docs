@@ -34,6 +34,12 @@ Type: [ProvisioningProperties](API_ProvisioningProperties.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
 
+ ** blueprintCategory **   <a name="datazone-Type-EnvironmentBlueprintSummary-blueprintCategory"></a>
+The category of the environment blueprint. The only valid value is `TOOLING`.
+Type: String
+Valid Values: `TOOLING`
+Required: No
+
  ** createdAt **   <a name="datazone-Type-EnvironmentBlueprintSummary-createdAt"></a>
 The timestamp of when an environment blueprint was created.
 Type: Timestamp

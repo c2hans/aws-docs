@@ -16,12 +16,6 @@ There are several GPU setting optimizations that you can perform to achieve the 
    [ec2-user ~]$ sudo nvidia-persistenced
    ```
 
-1. [G3 instances only] Disable the autoboost feature for all GPUs on the instance.
-
-   ```
-   [ec2-user ~]$ sudo nvidia-smi --auto-boost-default=0
-   ```
-
 1. Set all GPU clock speeds to their maximum frequency. Use the memory and graphics clock speeds specified in the following commands.
 
    Some versions of the NVIDIA driver do not support setting the application clock speed, and display the error `"Setting applications clocks is not supported for GPU..."`, which you can ignore.
@@ -103,12 +97,6 @@ There are several GPU setting optimizations that you can perform to achieve the 
 
    ```
    PS C:\> cd "C:\Windows\System32\DriverStore\FileRepository\nvgridsw_aws.inf_*\"
-   ```
-
-1. [G3 instances only] Disable the autoboost feature for all GPUs on the instance.
-
-   ```
-   PS C:\> .\nvidia-smi --auto-boost-default=0
    ```
 
 1. Set all GPU clock speeds to their maximum frequency. Use the memory and graphics clock speeds specified in the following commands.

@@ -42,7 +42,7 @@ Required: No
  ** [RepositoryLinkId](#API_UpdateRepositoryLink_RequestSyntax) **   <a name="codeconnections-UpdateRepositoryLink-request-RepositoryLinkId"></a>
 The ID of the repository link to be updated.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: Yes
 
 ## Response Syntax
@@ -80,15 +80,15 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConditionalCheckFailedException **
 The conditional check failed. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -96,15 +96,15 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** UpdateOutOfSyncException **
 The update is out of sync. Try syncing again.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
 ## See Also
 <a name="API_UpdateRepositoryLink_SeeAlso"></a>

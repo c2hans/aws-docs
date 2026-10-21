@@ -11,7 +11,7 @@ Runs a DataBrew job.
 <a name="API_StartJobRun_RequestSyntax"></a>
 
 ```
-POST /jobs/{{name}}/startJobRun HTTP/1.1
+POST /jobs/{{Name}}/startJobRun HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ POST /jobs/{{name}}/startJobRun HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_StartJobRun_RequestSyntax) **   <a name="databrew-StartJobRun-request-uri-Name"></a>
+ ** [Name](#API_StartJobRun_RequestSyntax) **   <a name="databrew-StartJobRun-request-uri-Name"></a>
 The name of the job to be run.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes

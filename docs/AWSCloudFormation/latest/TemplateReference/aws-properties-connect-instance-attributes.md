@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AutoMuteAgentOnHold](#cfn-connect-instance-attributes-automuteagentonhold)" : {{Boolean}},
   "[AutoResolveBestVoices](#cfn-connect-instance-attributes-autoresolvebestvoices)" : {{Boolean}},
   "[ContactflowLogs](#cfn-connect-instance-attributes-contactflowlogs)" : {{Boolean}},
   "[ContactLens](#cfn-connect-instance-attributes-contactlens)" : {{Boolean}},
@@ -39,6 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-connect-instance-attributes-syntax.yaml"></a>
 
 ```
+  [AutoMuteAgentOnHold](#cfn-connect-instance-attributes-automuteagentonhold): {{Boolean}}
   [AutoResolveBestVoices](#cfn-connect-instance-attributes-autoresolvebestvoices): {{Boolean}}
   [ContactflowLogs](#cfn-connect-instance-attributes-contactflowlogs): {{Boolean}}
   [ContactLens](#cfn-connect-instance-attributes-contactlens): {{Boolean}}
@@ -56,6 +58,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-connect-instance-attributes-properties"></a>
+
+`AutoMuteAgentOnHold`  <a name="cfn-connect-instance-attributes-automuteagentonhold"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AutoResolveBestVoices`  <a name="cfn-connect-instance-attributes-autoresolvebestvoices"></a>
 

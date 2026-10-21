@@ -40,6 +40,13 @@ For more information, see [Using SSL/TLS to encrypt a connection to a DB instanc
 Type: String
 Required: No
 
+ ** DBCapacityReservationIdentifier **
+The identifier of the DB capacity reservation that the DB instance uses after a pending modification completes. Amazon RDS returns this value when a `ModifyDBInstance` request changes the DB capacity reservation, and the change hasn't been applied yet.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z](?:-?[a-z0-9]+){0,15}`
+Required: No
+
  ** DBInstanceClass **
 The name of the compute and memory capacity class for the DB instance.
 Type: String

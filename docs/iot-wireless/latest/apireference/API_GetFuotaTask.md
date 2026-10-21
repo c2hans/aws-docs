@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [Id](#API_GetFuotaTask_RequestSyntax) **   <a name="iotwireless-GetFuotaTask-request-uri-Id"></a>
 The ID of a FUOTA task.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
 ## Request Body
@@ -66,7 +66,7 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-Arn"></a>
 The arn of a FUOTA task.
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 
  ** [CreatedAt](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-CreatedAt"></a>
 Created at timestamp for the resource.
@@ -75,13 +75,13 @@ Type: Timestamp
  ** [Description](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-Description"></a>
 The description of the new resource.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 
  ** [Descriptor](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-Descriptor"></a>
 The descriptor is the metadata about the file that is transferred to the device using FUOTA, such as the software version. It is a binary field encoded in base64.
 Type: String
-Length Constraints: Maximum length of 332.
-Pattern: `^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$`
+Length Constraints: Minimum length of 0. Maximum length of 332.
+Pattern: `(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?`
 
  ** [FirmwareUpdateImage](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-FirmwareUpdateImage"></a>
 The S3 URI points to a firmware update image that is to be used with a FUOTA task.
@@ -107,7 +107,7 @@ Valid Range: Minimum value of 1.
  ** [Id](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-Id"></a>
 The ID of a FUOTA task.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [LoRaWAN](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-LoRaWAN"></a>
 The LoRaWAN information returned from getting a FUOTA task.
@@ -116,7 +116,7 @@ Type: [LoRaWANFuotaTaskGetInfo](API_LoRaWANFuotaTaskGetInfo.md) object
  ** [Name](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-Name"></a>
 The name of a FUOTA task.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [RedundancyPercent](#API_GetFuotaTask_ResponseSyntax) **   <a name="iotwireless-GetFuotaTask-response-RedundancyPercent"></a>
 The percentage of the added fragments that are redundant. For example, if the size of the firmware image file is 100 bytes and the fragment size is 10 bytes, with `RedundancyPercent` set to 50(%), the final number of encoded fragments is (100 / 10) \+ (100 / 10 \* 50%) = 15.
@@ -161,13 +161,13 @@ HTTP Status Code: 400
 <a name="API_GetFuotaTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/GetFuotaTask)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/GetFuotaTask)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/GetFuotaTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/GetFuotaTask)

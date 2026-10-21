@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_S3Mon
 # S3MonitoringConfiguration
 <a name="API_S3MonitoringConfiguration"></a>
 
- Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3.
+Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3.
 
 ## Contents
 <a name="API_S3MonitoringConfiguration_Contents"></a>
@@ -21,7 +21,7 @@ Required: Yes
 The Amazon Resource Name (ARN) of the encryption key for logs.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `^(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})$`
+Pattern: `(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})`
 Required: No
 
 ## See Also

@@ -151,115 +151,165 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** BeforeCommitIdAndAfterCommitIdAreSameException **
 The before commit ID and the after commit ID are the same, which is not valid. The before commit ID and the after commit ID must be different commit IDs.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ClientRequestTokenRequiredException **
 A client request token is required. A client request token is an unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request returns information about the initial request that used that token.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentContentRequiredException **
 The comment is empty. You must provide some content for a comment. The content cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentContentSizeLimitExceededException **
 The comment is too large. Comments are limited to 10,240 characters.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitDoesNotExistException **
 The specified commit does not exist or no commit was specified, and the specified repository has no default branch.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitIdRequiredException **
 A commit ID was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** IdempotencyParameterMismatchException **
 The client request token is not valid. Either the token is not in a valid format, or the token has been used in a previous request and cannot be reused.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidClientRequestTokenException **
 The client request token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitIdException **
 The specified commit ID is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidFileLocationException **
 The location of the file is not valid. Make sure that you include the file name and extension.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidFilePositionException **
 The position is not valid. Make sure that the line number exists in the version of the file you want to comment on.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPathException **
 The specified path is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRelativeFileVersionEnumException **
 Either the enum is not in a valid format, or the specified file version enum is not valid in respect to the current file version.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PathDoesNotExistException **
 The specified path does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PathRequiredException **
 The folderPath for a location cannot be null.
-HTTP Status Code: 400
-
- ** PathRequiredException **
-The folderPath for a location cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNotAssociatedWithPullRequestException **
 The repository does not contain any pull requests with that pull request ID. Use GetPullRequest to verify the correct repository name for the pull request ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

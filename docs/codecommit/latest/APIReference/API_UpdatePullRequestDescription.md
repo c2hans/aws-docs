@@ -27,7 +27,7 @@ The request accepts the following data in JSON format.
  ** [description](#API_UpdatePullRequestDescription_RequestSyntax) **   <a name="CodeCommit-UpdatePullRequestDescription-request-description"></a>
 The updated content of the description for the pull request. This content replaces the existing description.
 Type: String
-Length Constraints: Maximum length of 10240.
+Length Constraints: Minimum length of 0. Maximum length of 10240.
 Required: Yes
 
  ** [pullRequestId](#API_UpdatePullRequestDescription_RequestSyntax) **   <a name="CodeCommit-UpdatePullRequestDescription-request-pullRequestId"></a>
@@ -103,22 +103,32 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidDescriptionException **
 The pull request description is not valid. Descriptions cannot be more than 1,000 characters.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestAlreadyClosedException **
 The pull request status cannot be updated because it is already closed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

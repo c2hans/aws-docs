@@ -88,6 +88,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ModifyVolume  **
+  - **IAM action:**  [workspaces-instances:ModifyVolume](#list_workspaces-instances-action-ModifyVolume)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   TagResource  **
   - **IAM action:**  [workspaces-instances:TagResource](#list_workspaces-instances-action-TagResource)
   - **Condition key:**

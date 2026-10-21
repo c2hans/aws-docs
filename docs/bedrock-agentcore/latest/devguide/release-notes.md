@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026
 <a name="_october_2026"></a>
 
+### Evaluations: Failure analysis insights for batch evaluations
+<a name="_evaluations_failure_analysis_insights_for_batch_evaluations_2"></a>
+
+Amazon Bedrock AgentCore Evaluations now includes the failure analysis evaluator (`Builtin.FailureAnalysis`), which finds failures in your agent sessions, determines the root cause of each failure, and groups the findings across sessions into insights. Each insight includes the root causes behind the pattern and suggested fixes, such as changes to your system prompt or tool definitions. You can run the evaluator alone or together with other evaluators in a batch evaluation, and read the insights in the `insightResults` field of the `GetBatchEvaluation` response.
+
+For more information, see [Insights in batch evaluation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-evaluations-insights.html) and [Insight evaluators](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/insight-evaluators.html).
+
 ### Memory: Time-to-live for long-term memory records
 <a name="_memory_time_to_live_for_long_term_memory_records_2"></a>
 

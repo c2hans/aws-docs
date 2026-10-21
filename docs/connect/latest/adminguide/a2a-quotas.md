@@ -19,8 +19,6 @@ Agent-to-agent collaboration has the following requirements:
 
 The following quotas apply to agent-to-agent collaboration. All quotas are adjustable. For the limit on collaboration depth, see [Design constraints](#a2a-quotas-design-constraints).
 
-**Agent-to-agent collaboration quotas**
-
 | Quota | Value | Adjustable | Description |
 | --- | --- | --- | --- |
 | Collaborators per AI agent | 5 | Yes | The maximum number of collaborators that you can configure on a single AI agent. |

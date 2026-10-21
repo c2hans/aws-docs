@@ -13,7 +13,7 @@ Contains the IAM Identity Center settings for a security configuration, includin
  ** emrIdentityCenterApplicationARN **   <a name="emroneks-Type-IdentityCenterConfiguration-emrIdentityCenterApplicationARN"></a>
 The Amazon Resource Name (ARN) of the Amazon EMR Identity Center application.
 Type: String
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):sso:::application/ssoins-[0-9a-zA-Z/\\-_]+/apl-[0-9a-zA-Z/\\-_]+`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):sso:::application/ssoins-[0-9a-zA-Z/\\-_]+/apl-[0-9a-zA-Z/\\-_]+`
 Required: No
 
  ** enableIdentityCenter **   <a name="emroneks-Type-IdentityCenterConfiguration-enableIdentityCenter"></a>
@@ -30,7 +30,7 @@ Required: No
 The Amazon Resource Name (ARN) of the Identity Center instance.
 Type: String
 Length Constraints: Minimum length of 10. Maximum length of 1224.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):sso:::instance/ssoins-[0-9a-zA-Z/\\-_]+`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):sso:::instance/ssoins-[0-9a-zA-Z/\\-_]+`
 Required: No
 
 ## See Also

@@ -97,7 +97,7 @@ Required: Yes
 The KMS key ARN used to encrypt the job template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `^(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})$`
+Pattern: `(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})`
 Required: No
 
  ** [name](#API_CreateJobTemplate_RequestSyntax) **   <a name="emroneks-CreateJobTemplate-request-name"></a>
@@ -143,7 +143,7 @@ The following data is returned in JSON format by the service.
 This output display the ARN of the created job template.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/jobtemplates\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/jobtemplates\/[0-9a-zA-Z]+`
 
  ** [createdAt](#API_CreateJobTemplate_ResponseSyntax) **   <a name="emroneks-CreateJobTemplate-response-createdAt"></a>
 This output displays the date and time when the job template was created.

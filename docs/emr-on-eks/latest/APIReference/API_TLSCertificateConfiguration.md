@@ -20,14 +20,14 @@ Required: No
 Secrets Manager ARN that contains the private TLS certificate contents, used for communication between the user job and the system job.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):secretsmanager:.+:(\d{12}):secret:[0-9a-zA-Z/_+=.@-]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):secretsmanager:.+:(\d{12}):secret:[0-9a-zA-Z/_+=.@-]+`
 Required: No
 
  ** publicCertificateSecretArn **   <a name="emroneks-Type-TLSCertificateConfiguration-publicCertificateSecretArn"></a>
 Secrets Manager ARN that contains the public TLS certificate contents, used for communication between the user job and the system job.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):secretsmanager:.+:(\d{12}):secret:[0-9a-zA-Z/_+=.@-]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):secretsmanager:.+:(\d{12}):secret:[0-9a-zA-Z/_+=.@-]+`
 Required: No
 
 ## See Also

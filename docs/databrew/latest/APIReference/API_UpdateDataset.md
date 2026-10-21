@@ -11,7 +11,7 @@ Modifies the definition of an existing DataBrew dataset.
 <a name="API_UpdateDataset_RequestSyntax"></a>
 
 ```
-PUT /datasets/{{name}} HTTP/1.1
+PUT /datasets/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -99,7 +99,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateDataset_RequestSyntax) **   <a name="databrew-UpdateDataset-request-uri-Name"></a>
+ ** [Name](#API_UpdateDataset_RequestSyntax) **   <a name="databrew-UpdateDataset-request-uri-Name"></a>
 The name of the dataset to be updated.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

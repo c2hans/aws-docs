@@ -25,7 +25,7 @@ Required: No
 The resource type of the event.
 Type: String
 Length Constraints: Minimum length of 1.
-Pattern: `^([a-zA-Z0-9-])+$`
+Pattern: `([a-zA-Z0-9-])+`
 Required: No
 
  ** ServiceName **   <a name="codestarnotifications-Type-EventTypeSummary-ServiceName"></a>

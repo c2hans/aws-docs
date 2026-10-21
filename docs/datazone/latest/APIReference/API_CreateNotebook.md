@@ -88,7 +88,7 @@ Required: No
  ** [type](#API_CreateNotebook_RequestSyntax) **   <a name="datazone-CreateNotebook-request-type"></a>
 The type of the notebook.
 Type: String
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 Required: No
 
 ## Response Syntax
@@ -242,7 +242,7 @@ Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
  ** [type](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-type"></a>
 The type of the notebook.
 Type: String
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 
  ** [updatedAt](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

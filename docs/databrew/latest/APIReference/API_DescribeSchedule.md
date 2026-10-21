@@ -11,7 +11,7 @@ Returns the definition of a specific DataBrew schedule.
 <a name="API_DescribeSchedule_RequestSyntax"></a>
 
 ```
-GET /schedules/{{name}} HTTP/1.1
+GET /schedules/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /schedules/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DescribeSchedule_RequestSyntax) **   <a name="databrew-DescribeSchedule-request-uri-Name"></a>
+ ** [Name](#API_DescribeSchedule_RequestSyntax) **   <a name="databrew-DescribeSchedule-request-uri-Name"></a>
 The name of the schedule to be described.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -79,7 +79,7 @@ Length Constraints: Minimum length of 1. Maximum length of 512.
  ** [JobNames](#API_DescribeSchedule_ResponseSyntax) **   <a name="databrew-DescribeSchedule-response-JobNames"></a>
 The name or names of one or more jobs to be run by using the schedule.
 Type: Array of strings
-Array Members: Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 
  ** [LastModifiedBy](#API_DescribeSchedule_ResponseSyntax) **   <a name="databrew-DescribeSchedule-response-LastModifiedBy"></a>
@@ -100,7 +100,7 @@ Metadata tags associated with this schedule.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 
 ## Errors
 <a name="API_DescribeSchedule_Errors"></a>

@@ -159,91 +159,135 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommitDoesNotExistException **
 The specified commit does not exist or no commit was specified, and the specified repository has no default branch.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitRequiredException **
 A commit was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitException **
 The specified commit is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictDetailLevelException **
 The specified conflict detail level is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictResolutionStrategyException **
 The specified conflict resolution strategy is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidContinuationTokenException **
 The specified continuation token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidDestinationCommitSpecifierException **
 The destination commit specifier is not valid. You must provide a valid branch name, tag, or full commit ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMaxConflictFilesException **
 The specified value for the number of conflict files to return is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMergeOptionException **
 The specified merge option is not valid for this operation. Not all merge strategies are supported for all operations.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidSourceCommitSpecifierException **
 The source commit specifier is not valid. You must provide a valid branch name, tag, or full commit ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumFileContentToLoadExceededException **
 The number of files to load exceeds the allowed limit.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumItemsToCompareExceededException **
 The number of items to compare between the source or destination branches and the merge base has exceeded the maximum allowed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MergeOptionRequiredException **
 A merge option or stategy is required, and none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TipsDivergenceExceededException **
 The divergence between the tips of the provided commit specifiers is too great to determine whether there might be any merge conflicts. Locally compare the specifiers using `git diff` or a diff tool.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

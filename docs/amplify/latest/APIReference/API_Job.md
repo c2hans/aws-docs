@@ -5,18 +5,18 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Job.html
 # Job
 <a name="API_Job"></a>
 
- Describes an execution job for an Amplify app.
+Describes an execution job for an Amplify app.
 
 ## Contents
 <a name="API_Job_Contents"></a>
 
  ** steps **   <a name="amplify-Type-Job-steps"></a>
- The execution steps for an execution job, for an Amplify app.
+The execution steps for an execution job, for an Amplify app.
 Type: Array of [Step](API_Step.md) objects
 Required: Yes
 
  ** summary **   <a name="amplify-Type-Job-summary"></a>
- Describes the summary for an execution job for an Amplify app.
+Describes the summary for an execution job for an Amplify app.
 Type: [JobSummary](API_JobSummary.md) object
 Required: Yes
 

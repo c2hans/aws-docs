@@ -9,6 +9,8 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SHOW_PROCEDURE.html
 
 Shows the definition of a given stored procedure, including its signature. You can use the output of a SHOW PROCEDURE to recreate the stored procedure.
 
+To show a procedure in another database or a procedure shared through a datashare, run USE to set the database context first. For more information, see [Calling stored procedures across databases and through data sharing](stored-procedure-data-sharing.md).
+
 ## Syntax
 <a name="r_SHOW_PROCEDURE-synopsis"></a>
 

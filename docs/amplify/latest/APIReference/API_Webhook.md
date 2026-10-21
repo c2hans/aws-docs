@@ -25,7 +25,7 @@ Required: Yes
  ** description **   <a name="amplify-Type-Webhook-description"></a>
 The description for a webhook.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: Yes
 
@@ -37,20 +37,20 @@ Required: Yes
  ** webhookArn **   <a name="amplify-Type-Webhook-webhookArn"></a>
 The Amazon Resource Name (ARN) for the webhook.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: Yes
 
  ** webhookId **   <a name="amplify-Type-Webhook-webhookId"></a>
 The ID of the webhook.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: Yes
 
  ** webhookUrl **   <a name="amplify-Type-Webhook-webhookUrl"></a>
 The URL of the webhook.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: Yes
 
  ** appId **   <a name="amplify-Type-Webhook-appId"></a>

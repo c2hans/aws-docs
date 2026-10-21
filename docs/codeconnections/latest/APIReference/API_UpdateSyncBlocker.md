@@ -42,7 +42,7 @@ Required: Yes
 The name of the resource for the sync blocker to be updated.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: Yes
 
  ** [SyncType](#API_UpdateSyncBlocker_RequestSyntax) **   <a name="codeconnections-UpdateSyncBlocker-request-SyncType"></a>
@@ -87,13 +87,13 @@ The following data is returned in JSON format by the service.
 The parent resource name for the sync blocker.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 
  ** [ResourceName](#API_UpdateSyncBlocker_ResponseSyntax) **   <a name="codeconnections-UpdateSyncBlocker-response-ResourceName"></a>
 The resource name for the sync blocker.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 
  ** [SyncBlocker](#API_UpdateSyncBlocker_ResponseSyntax) **   <a name="codeconnections-UpdateSyncBlocker-response-SyncBlocker"></a>
 Information about the sync blocker to be updated.
@@ -106,11 +106,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -118,19 +118,19 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** RetryLatestCommitFailedException **
 Retrying the latest commit failed. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** SyncBlockerDoesNotExistException **
 Unable to continue. The sync blocker does not exist.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_UpdateSyncBlocker_SeeAlso"></a>

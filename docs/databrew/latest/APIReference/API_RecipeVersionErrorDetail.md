@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
  ** ErrorCode **   <a name="databrew-Type-RecipeVersionErrorDetail-ErrorCode"></a>
 The HTTP status code for the error.
 Type: String
-Pattern: `^[1-5][0-9][0-9]$`
+Pattern: `[1-5][0-9][0-9]`
 Required: No
 
  ** ErrorMessage **   <a name="databrew-Type-RecipeVersionErrorDetail-ErrorMessage"></a>

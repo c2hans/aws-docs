@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [Name](#API_GetDestination_RequestSyntax) **   <a name="iotwireless-GetDestination-request-uri-Name"></a>
 The name of the resource to get.
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 Required: Yes
 
@@ -61,12 +61,12 @@ Type: String
  ** [Description](#API_GetDestination_ResponseSyntax) **   <a name="iotwireless-GetDestination-response-Description"></a>
 The description of the resource.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 
  ** [Expression](#API_GetDestination_ResponseSyntax) **   <a name="iotwireless-GetDestination-response-Expression"></a>
 The rule name or topic rule to send messages to.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 
  ** [ExpressionType](#API_GetDestination_ResponseSyntax) **   <a name="iotwireless-GetDestination-response-ExpressionType"></a>
 The type of value in `Expression`.
@@ -76,7 +76,7 @@ Valid Values: `RuleName | MqttTopic`
  ** [Name](#API_GetDestination_ResponseSyntax) **   <a name="iotwireless-GetDestination-response-Name"></a>
 The name of the resource.
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 
  ** [RoleArn](#API_GetDestination_ResponseSyntax) **   <a name="iotwireless-GetDestination-response-RoleArn"></a>
@@ -117,13 +117,13 @@ HTTP Status Code: 400
 <a name="API_GetDestination_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/GetDestination)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/GetDestination)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/GetDestination)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/GetDestination)

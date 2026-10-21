@@ -47,7 +47,7 @@ Pattern: `.*\S.*`
 
  ** [states](#API_ListVirtualClusters_RequestSyntax) **   <a name="emroneks-ListVirtualClusters-request-uri-states"></a>
 The states of the requested virtual clusters.
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Valid Values: `RUNNING | TERMINATING | TERMINATED | ARRESTED`
 
 ## Request Body

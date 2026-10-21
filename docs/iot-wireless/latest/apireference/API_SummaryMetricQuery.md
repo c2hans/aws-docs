@@ -29,14 +29,14 @@ Required: No
  ** MetricName **   <a name="iotwireless-Type-SummaryMetricQuery-MetricName"></a>
 The name of the metric.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Valid Values: `DeviceRSSI | DeviceSNR | DeviceRoamingRSSI | DeviceRoamingSNR | DeviceUplinkCount | DeviceDownlinkCount | DeviceUplinkLostCount | DeviceUplinkLostRate | DeviceJoinRequestCount | DeviceJoinAcceptCount | DeviceRoamingUplinkCount | DeviceRoamingDownlinkCount | GatewayUpTime | GatewayDownTime | GatewayRSSI | GatewaySNR | GatewayUplinkCount | GatewayDownlinkCount | GatewayJoinRequestCount | GatewayJoinAcceptCount | AwsAccountUplinkCount | AwsAccountDownlinkCount | AwsAccountUplinkLostCount | AwsAccountUplinkLostRate | AwsAccountJoinRequestCount | AwsAccountJoinAcceptCount | AwsAccountRoamingUplinkCount | AwsAccountRoamingDownlinkCount | AwsAccountDeviceCount | AwsAccountGatewayCount | AwsAccountActiveDeviceCount | AwsAccountActiveGatewayCount`
 Required: No
 
  ** QueryId **   <a name="iotwireless-Type-SummaryMetricQuery-QueryId"></a>
 The id of the summary metric query.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** StartTimestamp **   <a name="iotwireless-Type-SummaryMetricQuery-StartTimestamp"></a>
@@ -48,6 +48,6 @@ Required: No
 <a name="API_SummaryMetricQuery_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/SummaryMetricQuery)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/SummaryMetricQuery)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/SummaryMetricQuery)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/SummaryMetricQuery)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/SummaryMetricQuery)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/SummaryMetricQuery)

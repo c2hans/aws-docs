@@ -5,22 +5,22 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_SubDomai
 # SubDomainSetting
 <a name="API_SubDomainSetting"></a>
 
- Describes the settings for the subdomain.
+Describes the settings for the subdomain.
 
 ## Contents
 <a name="API_SubDomainSetting_Contents"></a>
 
  ** branchName **   <a name="amplify-Type-SubDomainSetting-branchName"></a>
- The branch name setting for the subdomain.
+The branch name setting for the subdomain.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `(?s).+`
 Required: Yes
 
  ** prefix **   <a name="amplify-Type-SubDomainSetting-prefix"></a>
- The prefix setting for the subdomain.
+The prefix setting for the subdomain.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: Yes
 

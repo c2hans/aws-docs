@@ -11,7 +11,7 @@ Stops a particular run of a job.
 <a name="API_StopJobRun_RequestSyntax"></a>
 
 ```
-POST /jobs/{{name}}/jobRun/{{runId}}/stopJobRun HTTP/1.1
+POST /jobs/{{Name}}/jobRun/{{RunId}}/stopJobRun HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,12 +19,12 @@ POST /jobs/{{name}}/jobRun/{{runId}}/stopJobRun HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_StopJobRun_RequestSyntax) **   <a name="databrew-StopJobRun-request-uri-Name"></a>
+ ** [Name](#API_StopJobRun_RequestSyntax) **   <a name="databrew-StopJobRun-request-uri-Name"></a>
 The name of the job to be stopped.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes
 
- ** [runId](#API_StopJobRun_RequestSyntax) **   <a name="databrew-StopJobRun-request-uri-RunId"></a>
+ ** [RunId](#API_StopJobRun_RequestSyntax) **   <a name="databrew-StopJobRun-request-uri-RunId"></a>
 The ID of the job run to be stopped.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

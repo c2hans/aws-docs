@@ -13,8 +13,8 @@ Specify the list of gateways to which you want to send the multicast downlink me
  ** GatewayList **   <a name="iotwireless-Type-ParticipatingGatewaysMulticast-GatewayList"></a>
 The list of gateways that you want to use for sending the multicast downlink message. Each downlink message will be sent to all the gateways in the list in the order that you provided. If the gateway list is empty, then AWS IoT Core for LoRaWAN chooses the gateways that were most recently used by the devices to send an uplink message.
 Type: Array of strings
-Array Members: Maximum number of 20 items.
-Length Constraints: Maximum length of 256.
+Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** TransmissionInterval **   <a name="iotwireless-Type-ParticipatingGatewaysMulticast-TransmissionInterval"></a>
@@ -27,6 +27,6 @@ Required: No
 <a name="API_ParticipatingGatewaysMulticast_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/ParticipatingGatewaysMulticast)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/ParticipatingGatewaysMulticast)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/ParticipatingGatewaysMulticast)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/ParticipatingGatewaysMulticast)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/ParticipatingGatewaysMulticast)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/ParticipatingGatewaysMulticast)

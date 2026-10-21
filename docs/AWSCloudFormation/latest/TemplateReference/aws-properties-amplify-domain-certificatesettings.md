@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 `CertificateType`  <a name="cfn-amplify-domain-certificatesettings-certificatetype"></a>
 The certificate type.
 Specify `AMPLIFY_MANAGED` to use the default certificate that Amplify provisions for you.
-Specify `CUSTOM` to use your own certificate that you have already added to AWS Certificate Manager in your AWS account. Make sure you request (or import) the certificate in the US East (N. Virginia) Region (us-east-1). For more information about using ACM, see [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the *ACM User guide*.
+Specify `CUSTOM` to use your own certificate that you have already added to AWS Certificate Manager in your AWS account. Make sure you request (or import) the certificate in the US East (N. Virginia) Region (us-east-1). For more information about using ACM, see [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the * ACM User guide*.
 *Required*: No
 *Type*: String
 *Allowed values*: `AMPLIFY_MANAGED | CUSTOM`

@@ -28,6 +28,6 @@ Tags, by calling the following:
 +  [TagResource](API_TagResource.md), which associates a tag you provide with a notification rule in your account.
 +  [UntagResource](API_UntagResource.md), which removes a tag from a notification rule in your account.
 
- For information about how to use AWS CodeStar Notifications, see the [AWS Developer Tools Console User Guide](https://docs.aws.amazon.com/dtconsole/latest/userguide/what-is-dtconsole.html).
+For information about how to use AWS CodeStar Notifications, see the [AWS Developer Tools Console User Guide](https://docs.aws.amazon.com/dtconsole/latest/userguide/what-is-dtconsole.html).
 
-This document was last published on October 16, 2026.
+This document was last published on October 20, 2026.

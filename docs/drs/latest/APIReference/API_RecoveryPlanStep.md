@@ -11,7 +11,7 @@ A Recovery Plan Step resource.
 <a name="API_RecoveryPlanStep_Contents"></a>
 
  ** configuration **   <a name="drs-Type-RecoveryPlanStep-configuration"></a>
-The type-specific configuration of the step.
+Type-specific configuration for a recovery plan step. Exactly one member must be set.
 Type: [RecoveryPlanStepConfiguration](API_RecoveryPlanStepConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
@@ -31,14 +31,14 @@ Pattern: `arn:aws(-[a-z0-9]+)*:drs:[a-z0-9-]+:[0-9]{12}:[a-zA-Z0-9_/.-]+`
 Required: Yes
 
  ** stepName **   <a name="drs-Type-RecoveryPlanStep-stepName"></a>
-The name of the step.
+The name of a Recovery Plan Step.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _-]*`
 Required: Yes
 
  ** stepOrder **   <a name="drs-Type-RecoveryPlanStep-stepOrder"></a>
-The 1-based position of the step within the Recovery Plan.
+The order of a step within a Recovery Plan (1-based).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 20.
 Required: Yes

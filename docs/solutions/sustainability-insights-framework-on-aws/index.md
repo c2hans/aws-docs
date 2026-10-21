@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//solutions/sustainability-insights-frame
 title: 'Guidance for Sustainability Insights Framework on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/sustainability-insights-framework-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Sustainability Insights Framework on AWS

@@ -17,7 +17,7 @@ This data type is a UNION, so only one of the following members can be specified
 The actual session token being returned.
 Type: String
 Length Constraints: Minimum length of 1.
-Pattern: `^.*\S.*$`
+Pattern: `.*\S.*`
 Required: No
 
 ## See Also

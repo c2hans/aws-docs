@@ -11,7 +11,7 @@ Deletes a job template. Job template stores values of StartJobRun API request in
 <a name="API_DeleteJobTemplate_RequestSyntax"></a>
 
 ```
-DELETE /jobtemplates/{{templateId}} HTTP/1.1
+DELETE /jobtemplates/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /jobtemplates/{{templateId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [templateId](#API_DeleteJobTemplate_RequestSyntax) **   <a name="emroneks-DeleteJobTemplate-request-uri-id"></a>
+ ** [id](#API_DeleteJobTemplate_RequestSyntax) **   <a name="emroneks-DeleteJobTemplate-request-uri-id"></a>
 The ID of the job template that will be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

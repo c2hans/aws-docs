@@ -115,7 +115,7 @@ Required: No
  ** [type](#API_UpdateNotebook_RequestSyntax) **   <a name="datazone-UpdateNotebook-request-type"></a>
 The updated type of the notebook.
 Type: String
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 Required: No
 
 ## Response Syntax
@@ -269,7 +269,7 @@ Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
  ** [type](#API_UpdateNotebook_ResponseSyntax) **   <a name="datazone-UpdateNotebook-response-type"></a>
 The type of the notebook.
 Type: String
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 
  ** [updatedAt](#API_UpdateNotebook_ResponseSyntax) **   <a name="datazone-UpdateNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

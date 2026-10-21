@@ -29,4 +29,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Bedrock::Prompt](aws-resource-bedrock-prompt.md)
 + [AWS::Bedrock::PromptVersion](aws-resource-bedrock-promptversion.md)
 + [AWS::Bedrock::ResourcePolicy](aws-resource-bedrock-resourcepolicy.md)
++ [AWS::Bedrock::RetrievalInstruction](aws-resource-bedrock-retrievalinstruction.md)
 + [AWS::Bedrock::Session](aws-resource-bedrock-session.md)

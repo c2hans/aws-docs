@@ -9,7 +9,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Describes the configuration details that apply to the jobs for an Amplify app.
 
-Use `JobConfig` to apply configuration to jobs, such as customizing the build instance size when you create or update an Amplify app. For more information about customizable build instances, see [Custom build instances](https://docs.aws.amazon.com/amplify/latest/userguide/custom-build-instance.html) in the *Amplify User Guide*.
+Use `JobConfig` to apply configuration to jobs, such as customizing the build instance size when you create or update an Amplify app. For more information about customizable build instances, see [Custom build instances](https://docs.aws.amazon.com/amplify/latest/userguide/custom-build-instance.html) in the * Amplify User Guide*.
 
 ## Syntax
 <a name="aws-properties-amplify-app-jobconfig-syntax"></a>

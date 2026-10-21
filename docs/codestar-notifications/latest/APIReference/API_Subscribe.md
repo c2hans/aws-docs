@@ -37,14 +37,14 @@ The request accepts the following data in JSON format.
  ** [Arn](#API_Subscribe_RequestSyntax) **   <a name="codestarnotifications-Subscribe-request-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule for which you want to create the association.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
  ** [ClientRequestToken](#API_Subscribe_RequestSyntax) **   <a name="codestarnotifications-Subscribe-request-ClientRequestToken"></a>
 An enumeration token that, when provided in a request, returns the next batch of the results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^[\w:/-]+$`
+Pattern: `[\w:/-]+`
 Required: No
 
  ** [Target](#API_Subscribe_RequestSyntax) **   <a name="codestarnotifications-Subscribe-request-Target"></a>
@@ -74,7 +74,7 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_Subscribe_ResponseSyntax) **   <a name="codestarnotifications-Subscribe-response-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule for which you have created assocations.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 
 ## Errors
 <a name="API_Subscribe_Errors"></a>

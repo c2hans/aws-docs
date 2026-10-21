@@ -11,7 +11,7 @@ Displays detailed information about a job run. A job run is a unit of work, such
 <a name="API_DescribeJobRun_RequestSyntax"></a>
 
 ```
-GET /virtualclusters/{{virtualClusterId}}/jobruns/{{jobRunId}} HTTP/1.1
+GET /virtualclusters/{{virtualClusterId}}/jobruns/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /virtualclusters/{{virtualClusterId}}/jobruns/{{jobRunId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [jobRunId](#API_DescribeJobRun_RequestSyntax) **   <a name="emroneks-DescribeJobRun-request-uri-id"></a>
+ ** [id](#API_DescribeJobRun_RequestSyntax) **   <a name="emroneks-DescribeJobRun-request-uri-id"></a>
 The ID of the job run request.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

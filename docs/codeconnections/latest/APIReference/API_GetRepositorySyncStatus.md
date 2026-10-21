@@ -29,13 +29,13 @@ The request accepts the following data in JSON format.
 The branch of the repository link for the requested repository sync status.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** [RepositoryLinkId](#API_GetRepositorySyncStatus_RequestSyntax) **   <a name="codeconnections-GetRepositorySyncStatus-request-RepositoryLinkId"></a>
 The repository link ID for the requested repository sync status.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: Yes
 
  ** [SyncType](#API_GetRepositorySyncStatus_RequestSyntax) **   <a name="codeconnections-GetRepositorySyncStatus-request-SyncType"></a>
@@ -82,11 +82,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -94,11 +94,11 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_GetRepositorySyncStatus_SeeAlso"></a>

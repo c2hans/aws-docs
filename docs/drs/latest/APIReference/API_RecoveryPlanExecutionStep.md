@@ -17,7 +17,7 @@ Valid Range: Minimum value of 1.
 Required: Yes
 
  ** configuration **   <a name="drs-Type-RecoveryPlanExecutionStep-configuration"></a>
-The type-specific configuration of the execution step.
+Type-specific configuration for an execution step response. Mirrors RecoveryPlanStepConfiguration but uses execution-enriched server shapes.
 Type: [RecoveryPlanExecutionStepConfiguration](API_RecoveryPlanExecutionStepConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
@@ -43,13 +43,13 @@ Valid Values: `NOT_STARTED | EXECUTING | WAITING | COMPLETED | FAILED | TIMED_OU
 Required: Yes
 
  ** stepIndex **   <a name="drs-Type-RecoveryPlanExecutionStep-stepIndex"></a>
-The 1-based position of the step within the Recovery Plan execution.
+The order of a step within a Recovery Plan (1-based).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 20.
 Required: Yes
 
  ** stepName **   <a name="drs-Type-RecoveryPlanExecutionStep-stepName"></a>
-The name of the step.
+The name of a Recovery Plan Step.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _-]*`

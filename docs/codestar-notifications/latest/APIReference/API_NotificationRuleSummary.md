@@ -13,7 +13,7 @@ Information about a specified notification rule.
  ** Arn **   <a name="codestarnotifications-Type-NotificationRuleSummary-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: No
 
  ** Id **   <a name="codestarnotifications-Type-NotificationRuleSummary-Id"></a>

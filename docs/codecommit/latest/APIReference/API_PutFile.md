@@ -50,7 +50,7 @@ Required: No
  ** [fileContent](#API_PutFile_RequestSyntax) **   <a name="CodeCommit-PutFile-request-fileContent"></a>
 The content of the file, in binary object format.
 Type: Base64-encoded binary data object
-Length Constraints: Maximum length of 6291456.
+Length Constraints: Minimum length of 0. Maximum length of 6291456.
 Required: Yes
 
  ** [fileMode](#API_PutFile_RequestSyntax) **   <a name="CodeCommit-PutFile-request-fileMode"></a>
@@ -120,123 +120,183 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** BranchDoesNotExistException **
 The specified branch does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** BranchNameIsTagNameException **
 The specified branch name is not valid because it is a tag name. Enter the name of a branch in the repository. For a list of valid branch names, use [ListBranches](API_ListBranches.md).
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** BranchNameRequiredException **
 A branch name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitMessageLengthExceededException **
 The commit message is too long. Provide a shorter string.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** DirectoryNameConflictsWithFileNameException **
 A file cannot be added to the repository because the specified path name has the same name as a file that already exists in this repository. Either provide a different name for the file, or specify a different path for the file.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileContentRequiredException **
 The file cannot be added because it is empty. Empty files cannot be added to the repository with this API.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileContentSizeLimitExceededException **
 The file cannot be added because it is too large. The maximum file size is 6 MB, and the combined file content change size is 7 MB. Consider making these changes using a Git client.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileNameConflictsWithDirectoryNameException **
 A file cannot be added to the repository because the specified file name has the same name as a directory in this repository. Either provide another name for the file, or add the file in a directory that does not match the file name.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FilePathConflictsWithSubmodulePathException **
 The commit cannot be created because a specified file path points to a submodule. Verify that the destination files have valid file paths that do not point to a submodule.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FolderContentSizeLimitExceededException **
 The commit cannot be created because at least one of the overall changes in the commit results in a folder whose contents exceed the limit of 6 MB. Either reduce the number and size of your changes, or split the changes across multiple folders.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidBranchNameException **
 The specified reference name is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidDeletionParameterException **
 The specified deletion parameter is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidEmailException **
 The specified email address either contains one or more characters that are not allowed, or it exceeds the maximum number of characters allowed for an email address.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidFileModeException **
 The specified file mode permission is not valid. For a list of valid file mode permissions, see [PutFile](#API_PutFile).
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidParentCommitIdException **
 The parent commit ID is not valid. The commit ID cannot be empty, and must match the head commit ID for the branch of the repository where you want to add or update a file.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPathException **
 The specified path is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** NameLengthExceededException **
 The user name is not valid because it has exceeded the character limit for author names.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ParentCommitDoesNotExistException **
 The parent commit ID is not valid because it does not exist. The specified parent commit ID does not exist in the specified branch of the repository.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ParentCommitIdOutdatedException **
 The file could not be added because the provided parent commit ID is not the current tip of the specified branch. To view the full commit ID of the current head of the branch, use [GetBranch](API_GetBranch.md).
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ParentCommitIdRequiredException **
 A parent commit ID is required. To view the full commit ID of a branch in a repository, use [GetBranch](API_GetBranch.md) or a Git command (for example, git pull or git log).
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PathRequiredException **
 The folderPath for a location cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** SameFileContentException **
 The file was not added or updated because the content of the file is exactly the same as the content of that file in the repository and branch that you specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

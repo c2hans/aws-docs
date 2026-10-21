@@ -11,7 +11,7 @@ Returns the definition of a specific DataBrew recipe corresponding to a particul
 <a name="API_DescribeRecipe_RequestSyntax"></a>
 
 ```
-GET /recipes/{{name}}?recipeVersion={{RecipeVersion}} HTTP/1.1
+GET /recipes/{{Name}}?recipeVersion={{RecipeVersion}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /recipes/{{name}}?recipeVersion={{RecipeVersion}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DescribeRecipe_RequestSyntax) **   <a name="databrew-DescribeRecipe-request-uri-Name"></a>
+ ** [Name](#API_DescribeRecipe_RequestSyntax) **   <a name="databrew-DescribeRecipe-request-uri-Name"></a>
 The name of the recipe to be described.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -98,7 +98,7 @@ Type: String
  ** [Description](#API_DescribeRecipe_ResponseSyntax) **   <a name="databrew-DescribeRecipe-response-Description"></a>
 The description of the recipe.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 
  ** [LastModifiedBy](#API_DescribeRecipe_ResponseSyntax) **   <a name="databrew-DescribeRecipe-response-LastModifiedBy"></a>
 The identifier (user name) of the user who last modified the recipe.
@@ -140,7 +140,7 @@ Metadata tags associated with this project.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 
 ## Errors
 <a name="API_DescribeRecipe_Errors"></a>

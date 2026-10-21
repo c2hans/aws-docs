@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::Endpoint S3MonitoringConfiguration
 <a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration"></a>
 
- Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3.
+Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-endpoint-s3monitoringconfiguration-syntax"></a>

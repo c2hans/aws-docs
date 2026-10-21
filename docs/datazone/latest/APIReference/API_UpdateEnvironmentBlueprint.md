@@ -15,6 +15,7 @@ PATCH /v2/domains/{{domainIdentifier}}/environment-blueprints/{{identifier}} HTT
 Content-type: application/json
 
 {
+   "blueprintCategory": "{{string}}",
    "description": "{{string}}",
    "provisioningProperties": { ... },
    "userParameters": [
@@ -51,6 +52,12 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [blueprintCategory](#API_UpdateEnvironmentBlueprint_RequestSyntax) **   <a name="datazone-UpdateEnvironmentBlueprint-request-blueprintCategory"></a>
+The category to update. The only valid value is `TOOLING`.
+Type: String
+Valid Values: `TOOLING`
+Required: No
+
  ** [description](#API_UpdateEnvironmentBlueprint_RequestSyntax) **   <a name="datazone-UpdateEnvironmentBlueprint-request-description"></a>
 The description to be updated as part of the `UpdateEnvironmentBlueprint` action.
 Type: String
@@ -75,6 +82,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "blueprintCategory": "string",
    "createdAt": "string",
    "deploymentProperties": {
       "endTimeoutMinutes": number,
@@ -107,6 +115,11 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [blueprintCategory](#API_UpdateEnvironmentBlueprint_ResponseSyntax) **   <a name="datazone-UpdateEnvironmentBlueprint-response-blueprintCategory"></a>
+The category of the environment blueprint. The only valid value is `TOOLING`.
+Type: String
+Valid Values: `TOOLING`
 
  ** [createdAt](#API_UpdateEnvironmentBlueprint_ResponseSyntax) **   <a name="datazone-UpdateEnvironmentBlueprint-response-createdAt"></a>
 The timestamp of when the environment blueprint was created.

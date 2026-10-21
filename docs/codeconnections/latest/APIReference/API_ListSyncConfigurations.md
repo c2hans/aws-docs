@@ -36,13 +36,13 @@ Required: No
 An enumeration token that allows the operation to batch the results of the operation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: No
 
  ** [RepositoryLinkId](#API_ListSyncConfigurations_RequestSyntax) **   <a name="codeconnections-ListSyncConfigurations-request-RepositoryLinkId"></a>
 The ID of the repository link for the requested list of sync configurations.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: Yes
 
  ** [SyncType](#API_ListSyncConfigurations_RequestSyntax) **   <a name="codeconnections-ListSyncConfigurations-request-SyncType"></a>
@@ -87,7 +87,7 @@ The following data is returned in JSON format by the service.
 An enumeration token that allows the operation to batch the next results of the operation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^.*$`
+Pattern: `.*`
 
  ** [SyncConfigurations](#API_ListSyncConfigurations_ResponseSyntax) **   <a name="codeconnections-ListSyncConfigurations-response-SyncConfigurations"></a>
 The list of repository sync definitions returned by the request.
@@ -100,11 +100,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -112,11 +112,11 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_ListSyncConfigurations_SeeAlso"></a>

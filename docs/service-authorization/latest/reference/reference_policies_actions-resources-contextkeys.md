@@ -71,6 +71,7 @@ The **condition keys** table lists all of the condition keys that you can use in
 + [AWS Application Transformation Service (application-transformation)](list_application-transformation.md)
 + [AWS AppSync (appsync)](list_appsync.md)
 + [AWS Artifact (artifact)](list_artifact.md)
++ [AWS Assurance (assurance)](list_assurance.md)
 + [AWS Audit Manager (auditmanager)](list_auditmanager.md)
 + [AWS Auto Scaling (autoscaling-plans)](list_autoscaling-plans.md)
 + [AWS B2B Data Interchange (b2bi)](list_b2bi.md)

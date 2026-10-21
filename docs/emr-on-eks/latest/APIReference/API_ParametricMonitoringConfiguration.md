@@ -5,25 +5,25 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Param
 # ParametricMonitoringConfiguration
 <a name="API_ParametricMonitoringConfiguration"></a>
 
- Configuration setting for monitoring. This data type allows job template parameters to be specified within.
+Configuration setting for monitoring. This data type allows job template parameters to be specified within.
 
 ## Contents
 <a name="API_ParametricMonitoringConfiguration_Contents"></a>
 
  ** cloudWatchMonitoringConfiguration **   <a name="emroneks-Type-ParametricMonitoringConfiguration-cloudWatchMonitoringConfiguration"></a>
- Monitoring configurations for CloudWatch.
+Monitoring configurations for CloudWatch.
 Type: [ParametricCloudWatchMonitoringConfiguration](API_ParametricCloudWatchMonitoringConfiguration.md) object
 Required: No
 
  ** persistentAppUI **   <a name="emroneks-Type-ParametricMonitoringConfiguration-persistentAppUI"></a>
- Monitoring configurations for the persistent application UI.
+Monitoring configurations for the persistent application UI.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
 Pattern: `[\.\-_/#A-Za-z0-9\$\{\}]+`
 Required: No
 
  ** s3MonitoringConfiguration **   <a name="emroneks-Type-ParametricMonitoringConfiguration-s3MonitoringConfiguration"></a>
- Amazon S3 configuration for monitoring log publishing.
+Amazon S3 configuration for monitoring log publishing.
 Type: [ParametricS3MonitoringConfiguration](API_ParametricS3MonitoringConfiguration.md) object
 Required: No
 

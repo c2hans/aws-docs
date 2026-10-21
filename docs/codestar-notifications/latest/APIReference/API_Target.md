@@ -22,7 +22,7 @@ The target type. Can be an Amazon Q Developer in chat applications topic or Amaz
 + Amazon Q Developer in chat applications clients are specified as `AWSChatbotSlack`.
 + Amazon Q Developer in chat applications clients for Microsoft Teams are specified as `AWSChatbotMicrosoftTeams`.
 Type: String
-Pattern: `^[A-Za-z]+$`
+Pattern: `[A-Za-z]+`
 Required: No
 
 ## See Also

@@ -14,7 +14,7 @@ Contains the IAM settings for a security configuration, including the system rol
 The Amazon Resource Name (ARN) of the system role used by the security configuration.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)`
 Required: No
 
 ## See Also

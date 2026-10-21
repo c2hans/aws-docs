@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetBranc
 # GetBranch
 <a name="API_GetBranch"></a>
 
- Returns a branch for an Amplify app.
+Returns a branch for an Amplify app.
 
 ## Request Syntax
 <a name="API_GetBranch_RequestSyntax"></a>
@@ -20,7 +20,7 @@ GET /apps/{{appId}}/branches/{{branchName}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [appId](#API_GetBranch_RequestSyntax) **   <a name="amplify-GetBranch-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
@@ -93,7 +93,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [branch](#API_GetBranch_ResponseSyntax) **   <a name="amplify-GetBranch-response-branch"></a>
- The branch for an Amplify app, which maps to a third-party repository branch.
+The branch for an Amplify app, which maps to a third-party repository branch.
 Type: [Branch](API_Branch.md) object
 
 ## Errors

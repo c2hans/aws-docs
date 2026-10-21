@@ -32,14 +32,14 @@ The request accepts the following data in JSON format.
 The ID of the encryption key. You can view the ID of an encryption key in the AWS KMS console, or use the AWS KMS APIs to programmatically retrieve a key ID. For more information about acceptable values for kmsKeyID, see [KeyId](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html#KMS-Decrypt-request-KeyId) in the Decrypt API description in the * AWS Key Management Service API Reference*.
 If no key is specified, the default `aws/codecommit` AWS managed key is used.
 Type: String
-Pattern: `^[a-zA-Z0-9:/_-]+$`
+Pattern: `[a-zA-Z0-9:/_-]+`
 Required: No
 
  ** [repositoryDescription](#API_CreateRepository_RequestSyntax) **   <a name="CodeCommit-CreateRepository-request-repositoryDescription"></a>
 A comment or description about the new repository.
 The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: No
 
  ** [repositoryName](#API_CreateRepository_RequestSyntax) **   <a name="CodeCommit-CreateRepository-request-repositoryName"></a>
@@ -96,71 +96,105 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyInvalidIdException **
 The AWS Key Management Service encryption key is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyInvalidUsageException **
 A AWS KMS encryption key was used to try and encrypt or decrypt a repository, but either the repository or the key was not in a valid state to support the operation.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryDescriptionException **
 The specified repository description is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidSystemTagUsageException **
 The specified tag is not valid. Key names cannot be prefixed with aws:.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidTagsMapException **
 The map of tags is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** OperationNotAllowedException **
 The requested action is not allowed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryLimitExceededException **
 A repository resource limit was exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameExistsException **
 The specified repository name already exists.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TagPolicyException **
 The tag policy is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TooManyTagsException **
 The maximum number of tags for an AWS CodeCommit resource has been exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

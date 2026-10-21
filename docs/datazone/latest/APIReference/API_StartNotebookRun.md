@@ -30,6 +30,9 @@ Content-type: application/json
       "vpcId": "{{string}}"
    },
    "notebookIdentifier": "{{string}}",
+   "notificationConfiguration": {
+      "notifyOn": [ "{{string}}" ]
+   },
    "owningProjectIdentifier": "{{string}}",
    "parameters": {
       "{{string}}" : "{{string}}"
@@ -90,6 +93,11 @@ The identifier of the notebook to run.
 Type: String
 Pattern: `[a-zA-Z0-9_-]{1,36}`
 Required: Yes
+
+ ** [notificationConfiguration](#API_StartNotebookRun_RequestSyntax) **   <a name="datazone-StartNotebookRun-request-notificationConfiguration"></a>
+The notification configuration for the notebook run. Use this to specify the notebook run states that trigger notifications.
+Type: [NotificationConfig](API_NotificationConfig.md) object
+Required: No
 
  ** [owningProjectIdentifier](#API_StartNotebookRun_RequestSyntax) **   <a name="datazone-StartNotebookRun-request-owningProjectIdentifier"></a>
 The identifier of the project that owns the notebook run.
@@ -162,6 +170,9 @@ Content-type: application/json
       "vpcId": "string"
    },
    "notebookId": "string",
+   "notificationConfiguration": {
+      "notifyOn": [ "string" ]
+   },
    "owningProjectId": "string",
    "parameters": {
       "string" : "string"
@@ -246,6 +257,10 @@ Type: [NetworkConfig](API_NetworkConfig.md) object
 The identifier of the notebook.
 Type: String
 Pattern: `[a-zA-Z0-9_-]{1,36}`
+
+ ** [notificationConfiguration](#API_StartNotebookRun_ResponseSyntax) **   <a name="datazone-StartNotebookRun-response-notificationConfiguration"></a>
+The notification configuration of the notebook run, including the notebook run states that trigger notifications.
+Type: [NotificationConfig](API_NotificationConfig.md) object
 
  ** [owningProjectId](#API_StartNotebookRun_ResponseSyntax) **   <a name="datazone-StartNotebookRun-response-owningProjectId"></a>
 The identifier of the project that owns the notebook run.

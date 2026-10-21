@@ -75,7 +75,7 @@ Required: No
  ** [SizeInGB](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-SizeInGB"></a>
 Volume size in gigabytes.
 Type: Integer
-Valid Range: Minimum value of 0.
+Valid Range: Minimum value of 1. Maximum value of 16384.
 Required: No
 
  ** [SnapshotId](#API_CreateVolume_RequestSyntax) **   <a name="workspacesinstances-CreateVolume-request-SnapshotId"></a>

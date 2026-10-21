@@ -47,7 +47,7 @@ Array Members: Minimum number of 0 items. Maximum number of 60 items.
 Required: No
 
  ** stagingAvailabilityZone **   <a name="drs-Type-RecoveryInstanceDataReplicationInfo-stagingAvailabilityZone"></a>
-AWS Availability zone into which data is being replicated.
+ AWS Availability zone into which data is being replicated.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(us(-gov)?|ap|ca|cn|eu|eusc|sa|af|me|mx|il)-([a-z]{2}-)?(central|north|(north(?:east|west))|south|south(?:east|west)|east|west)-[0-9][a-z]`

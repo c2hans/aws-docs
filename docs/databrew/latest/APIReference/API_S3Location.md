@@ -23,7 +23,7 @@ Required: Yes
 The AWS account ID of the bucket owner.
 Type: String
 Length Constraints: Fixed length of 12.
-Pattern: `^[0-9]{12}$`
+Pattern: `[0-9]{12}`
 Required: No
 
  ** Key **   <a name="databrew-Type-S3Location-Key"></a>

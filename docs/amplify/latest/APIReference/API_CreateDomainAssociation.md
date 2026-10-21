@@ -38,7 +38,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [appId](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
@@ -49,17 +49,17 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [autoSubDomainCreationPatterns](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-autoSubDomainCreationPatterns"></a>
- Sets the branch patterns for automatic subdomain creation.
+Sets the branch patterns for automatic subdomain creation.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(?s).+`
 Required: No
 
  ** [autoSubDomainIAMRole](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-autoSubDomainIAMRole"></a>
- The required AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) for automatically creating subdomains.
+The required AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) for automatically creating subdomains.
 Type: String
-Length Constraints: Maximum length of 1000.
-Pattern: `^$|^arn:aws:iam::\d{12}:role.+`
+Length Constraints: Minimum length of 0. Maximum length of 1000.
+Pattern: `$|^arn:aws:iam::\d{12}:role.+`
 Required: No
 
  ** [certificateSettings](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-certificateSettings"></a>
@@ -68,21 +68,21 @@ Type: [CertificateSettings](API_CertificateSettings.md) object
 Required: No
 
  ** [domainName](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-domainName"></a>
- The domain name for the domain association.
+The domain name for the domain association.
 Type: String
-Length Constraints: Maximum length of 64.
-Pattern: `^(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?$`
+Length Constraints: Minimum length of 0. Maximum length of 64.
+Pattern: `(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?`
 Required: Yes
 
  ** [enableAutoSubDomain](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-enableAutoSubDomain"></a>
- Enables the automated creation of subdomains for branches.
+Enables the automated creation of subdomains for branches.
 Type: Boolean
 Required: No
 
  ** [subDomainSettings](#API_CreateDomainAssociation_RequestSyntax) **   <a name="amplify-CreateDomainAssociation-request-subDomainSettings"></a>
- The setting for the subdomain.
+The setting for the subdomain.
 Type: Array of [SubDomainSetting](API_SubDomainSetting.md) objects
-Array Members: Maximum number of 500 items.
+Array Members: Minimum number of 0 items. Maximum number of 500 items.
 Required: Yes
 
 ## Response Syntax
@@ -130,7 +130,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [domainAssociation](#API_CreateDomainAssociation_ResponseSyntax) **   <a name="amplify-CreateDomainAssociation-response-domainAssociation"></a>
- Describes the structure of a domain association, which associates a custom domain with an Amplify app.
+Describes the structure of a domain association, which associates a custom domain with an Amplify app.
 Type: [DomainAssociation](API_DomainAssociation.md) object
 
 ## Errors

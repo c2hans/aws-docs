@@ -30,7 +30,7 @@ The request accepts the following data in JSON format.
  ** [repositoryDescription](#API_UpdateRepositoryDescription_RequestSyntax) **   <a name="CodeCommit-UpdateRepositoryDescription-request-repositoryDescription"></a>
 The new comment or description for the specified repository. Repository descriptions are limited to 1,000 characters.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: No
 
  ** [repositoryName](#API_UpdateRepositoryDescription_RequestSyntax) **   <a name="CodeCommit-UpdateRepositoryDescription-request-repositoryName"></a>
@@ -52,39 +52,57 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryDescriptionException **
 The specified repository description is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

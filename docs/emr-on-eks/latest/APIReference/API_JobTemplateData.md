@@ -23,14 +23,14 @@ Type: [JobDriver](API_JobDriver.md) object
 Required: Yes
 
  ** releaseLabel **   <a name="emroneks-Type-JobTemplateData-releaseLabel"></a>
- The release version of Amazon EMR.
+The release version of Amazon EMR.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `([\.\-_/A-Za-z0-9]+|\$\{[a-zA-Z]\w*\})`
 Required: Yes
 
  ** configurationOverrides **   <a name="emroneks-Type-JobTemplateData-configurationOverrides"></a>
- The configuration settings that are used to override defaults configuration.
+The configuration settings that are used to override defaults configuration.
 Type: [ParametricConfigurationOverrides](API_ParametricConfigurationOverrides.md) object
 Required: No
 
@@ -47,7 +47,7 @@ Required: No
  ** parameterConfiguration **   <a name="emroneks-Type-JobTemplateData-parameterConfiguration"></a>
 The configuration of parameters existing in the job template.
 Type: String to [TemplateParameterConfiguration](API_TemplateParameterConfiguration.md) object map
-Map Entries: Maximum number of 100 items.
+Map Entries: Minimum number of 0 items. Maximum number of 100 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 512.
 Key Pattern: `[\.\-_\#A-Za-z0-9]+`
 Required: No

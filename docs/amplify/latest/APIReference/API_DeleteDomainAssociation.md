@@ -20,15 +20,15 @@ DELETE /apps/{{appId}}/domains/{{domainName}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [appId](#API_DeleteDomainAssociation_RequestSyntax) **   <a name="amplify-DeleteDomainAssociation-request-uri-appId"></a>
- The unique id for an Amplify app.
+The unique id for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
 
  ** [domainName](#API_DeleteDomainAssociation_RequestSyntax) **   <a name="amplify-DeleteDomainAssociation-request-uri-domainName"></a>
- The name of the domain.
-Length Constraints: Maximum length of 64.
-Pattern: `^(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?$`
+The name of the domain.
+Length Constraints: Minimum length of 0. Maximum length of 64.
+Pattern: `(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?`
 Required: Yes
 
 ## Request Body

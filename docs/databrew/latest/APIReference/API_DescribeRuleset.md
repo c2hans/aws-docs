@@ -11,7 +11,7 @@ Retrieves detailed information about the ruleset.
 <a name="API_DescribeRuleset_RequestSyntax"></a>
 
 ```
-GET /rulesets/{{name}} HTTP/1.1
+GET /rulesets/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /rulesets/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DescribeRuleset_RequestSyntax) **   <a name="databrew-DescribeRuleset-request-uri-Name"></a>
+ ** [Name](#API_DescribeRuleset_RequestSyntax) **   <a name="databrew-DescribeRuleset-request-uri-Name"></a>
 The name of the ruleset to be described.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -95,7 +95,7 @@ Type: String
  ** [Description](#API_DescribeRuleset_ResponseSyntax) **   <a name="databrew-DescribeRuleset-response-Description"></a>
 The description of the ruleset.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 
  ** [LastModifiedBy](#API_DescribeRuleset_ResponseSyntax) **   <a name="databrew-DescribeRuleset-response-LastModifiedBy"></a>
 The Amazon Resource Name (ARN) of the user who last modified the ruleset.
@@ -120,7 +120,7 @@ Metadata tags that have been applied to the ruleset.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [TargetArn](#API_DescribeRuleset_ResponseSyntax) **   <a name="databrew-DescribeRuleset-response-TargetArn"></a>
 The Amazon Resource Name (ARN) of a resource (dataset) that the ruleset is associated with.

@@ -62,6 +62,12 @@ Type: Array of strings
 Valid Values: `DIRECT_QUERY | DIRECT_JOB`
 Required: No
 
+ ** tableType **   <a name="API-Type-ConfiguredTableSummary-tableType"></a>
+Type of the Configured Table DataSource, example: Glue, Snowflake, Athena, Databricks
+Type: String
+Valid Values: `GLUE | SNOWFLAKE | ATHENA | DATABRICKS`
+Required: No
+
 ## See Also
 <a name="API_ConfiguredTableSummary_SeeAlso"></a>
 

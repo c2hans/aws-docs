@@ -11,7 +11,7 @@ Displays detailed information about a specified security configuration. Security
 <a name="API_DescribeSecurityConfiguration_RequestSyntax"></a>
 
 ```
-GET /securityconfigurations/{{securityConfigurationId}} HTTP/1.1
+GET /securityconfigurations/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /securityconfigurations/{{securityConfigurationId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [securityConfigurationId](#API_DescribeSecurityConfiguration_RequestSyntax) **   <a name="emroneks-DescribeSecurityConfiguration-request-uri-id"></a>
+ ** [id](#API_DescribeSecurityConfiguration_RequestSyntax) **   <a name="emroneks-DescribeSecurityConfiguration-request-uri-id"></a>
 The ID of the security configuration.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

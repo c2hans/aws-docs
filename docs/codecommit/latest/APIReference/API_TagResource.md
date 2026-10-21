@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_TagRe
 # TagResource
 <a name="API_TagResource"></a>
 
-Adds or updates tags for a resource in AWS CodeCommit. For a list of valid resources in AWS CodeCommit, see [CodeCommit Resources and Operations](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats) in the * AWS CodeCommit User Guide*.
+Adds or updates tags for a resource in AWS CodeCommit. For a list of valid resources in AWS CodeCommit, see [ CodeCommit Resources and Operations](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats) in the * AWS CodeCommit User Guide*.
 
 ## Request Syntax
 <a name="API_TagResource_RequestSyntax"></a>
@@ -51,38 +51,56 @@ For information about the errors that are common to all actions, see [Common Err
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidResourceArnException **
-The value for the resource ARN is not valid. For more information about resources in AWS CodeCommit, see [CodeCommit Resources and Operations](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats) in the AWS CodeCommit User Guide.
+The value for the resource ARN is not valid. For more information about resources in AWS CodeCommit, see [ CodeCommit Resources and Operations](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats) in the AWS CodeCommit User Guide.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidSystemTagUsageException **
 The specified tag is not valid. Key names cannot be prefixed with aws:.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidTagsMapException **
 The map of tags is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ResourceArnRequiredException **
-A valid Amazon Resource Name (ARN) for an AWS CodeCommit resource is required. For a list of valid resources in AWS CodeCommit, see [CodeCommit Resources and Operations](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats) in the AWS CodeCommit User Guide.
+A valid Amazon Resource Name (ARN) for an AWS CodeCommit resource is required. For a list of valid resources in AWS CodeCommit, see [ CodeCommit Resources and Operations](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-iam-access-control-identity-based.html#arn-formats) in the AWS CodeCommit User Guide.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TagPolicyException **
 The tag policy is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TagsMapRequiredException **
 A map of tags is required.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TooManyTagsException **
 The maximum number of tags for an AWS CodeCommit resource has been exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

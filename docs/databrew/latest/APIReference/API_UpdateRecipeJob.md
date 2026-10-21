@@ -11,7 +11,7 @@ Modifies the definition of an existing DataBrew recipe job.
 <a name="API_UpdateRecipeJob_RequestSyntax"></a>
 
 ```
-PUT /recipeJobs/{{name}} HTTP/1.1
+PUT /recipeJobs/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -86,7 +86,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateRecipeJob_RequestSyntax) **   <a name="databrew-UpdateRecipeJob-request-uri-Name"></a>
+ ** [Name](#API_UpdateRecipeJob_RequestSyntax) **   <a name="databrew-UpdateRecipeJob-request-uri-Name"></a>
 The name of the job to update.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes

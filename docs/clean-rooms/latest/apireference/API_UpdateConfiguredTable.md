@@ -102,6 +102,7 @@ Content-type: application/json
       "name": "string",
       "selectedAnalysisMethods": [ "string" ],
       "tableReference": { ... },
+      "tableType": "string",
       "updateTime": number
    }
 }

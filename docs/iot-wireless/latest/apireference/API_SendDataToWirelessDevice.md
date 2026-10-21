@@ -47,7 +47,7 @@ The request uses the following URI parameters.
 
  ** [Id](#API_SendDataToWirelessDevice_RequestSyntax) **   <a name="iotwireless-SendDataToWirelessDevice-request-uri-Id"></a>
 The ID of the wireless device to receive the data.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
 ## Request Body
@@ -58,8 +58,8 @@ The request accepts the following data in JSON format.
  ** [PayloadData](#API_SendDataToWirelessDevice_RequestSyntax) **   <a name="iotwireless-SendDataToWirelessDevice-request-PayloadData"></a>
 The binary to be sent to the end device, encoded in base64.
 Type: String
-Length Constraints: Maximum length of 2048.
-Pattern: `^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$`
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?`
 Required: Yes
 
  ** [TransmitMode](#API_SendDataToWirelessDevice_RequestSyntax) **   <a name="iotwireless-SendDataToWirelessDevice-request-TransmitMode"></a>
@@ -125,13 +125,13 @@ HTTP Status Code: 400
 <a name="API_SendDataToWirelessDevice_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/SendDataToWirelessDevice)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/SendDataToWirelessDevice)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/SendDataToWirelessDevice)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/SendDataToWirelessDevice)

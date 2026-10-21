@@ -35,16 +35,16 @@ The request accepts the following data in JSON format.
  ** [Arn](#API_TagResource_RequestSyntax) **   <a name="codestarnotifications-TagResource-request-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule to tag.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
  ** [Tags](#API_TagResource_RequestSyntax) **   <a name="codestarnotifications-TagResource-request-Tags"></a>
 The list of tags to associate with the resource. Tag key names cannot start with "`aws`".
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: Yes
 
 ## Response Syntax
@@ -72,9 +72,9 @@ The following data is returned in JSON format by the service.
 The list of tags associated with the resource.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 
 ## Errors
 <a name="API_TagResource_Errors"></a>

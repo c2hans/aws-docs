@@ -125,71 +125,105 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommitDoesNotExistException **
 The specified commit does not exist or no commit was specified, and the specified repository has no default branch.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitIdRequiredException **
 A commit ID was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitIdException **
 The specified commit ID is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidContinuationTokenException **
 The specified continuation token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMaxResultsException **
 The specified number of maximum results is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNotAssociatedWithPullRequestException **
 The repository does not contain any pull requests with that pull request ID. Use GetPullRequest to verify the correct repository name for the pull request ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

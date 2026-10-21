@@ -18,6 +18,11 @@ This data type is a UNION, so only one of the following members can be specified
 Type: [AthenaTableReference](API_AthenaTableReference.md) object
 Required: No
 
+ ** databricks **   <a name="API-Type-TableReference-databricks"></a>
+ If present, a reference to the Databricks table referred to by this table reference.
+Type: [DatabricksTableReference](API_DatabricksTableReference.md) object
+Required: No
+
  ** glue **   <a name="API-Type-TableReference-glue"></a>
 If present, a reference to the AWS Glue table referred to by this table reference.
 Type: [GlueTableReference](API_GlueTableReference.md) object

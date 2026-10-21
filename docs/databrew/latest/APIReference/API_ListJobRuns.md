@@ -11,7 +11,7 @@ Lists all of the previous runs of a particular DataBrew job.
 <a name="API_ListJobRuns_RequestSyntax"></a>
 
 ```
-GET /jobs/{{name}}/jobRuns?maxResults={{MaxResults}}&nextToken={{NextToken}} HTTP/1.1
+GET /jobs/{{Name}}/jobRuns?maxResults={{MaxResults}}&nextToken={{NextToken}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -23,7 +23,7 @@ The request uses the following URI parameters.
 The maximum number of results to return in this request.
 Valid Range: Minimum value of 1. Maximum value of 100.
 
- ** [name](#API_ListJobRuns_RequestSyntax) **   <a name="databrew-ListJobRuns-request-uri-Name"></a>
+ ** [Name](#API_ListJobRuns_RequestSyntax) **   <a name="databrew-ListJobRuns-request-uri-Name"></a>
 The name of the job.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes

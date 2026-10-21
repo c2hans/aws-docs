@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-reference-3P-apps-activity-client.html
 ---
 
-# Connect Customer agent workspace Activity API
+# Connect Customer SDK Activity API
 <a name="api-reference-3P-apps-activity-client"></a>
 
-The Amazon Connect SDK provides a `SessionExpirationWarningClient` which serves as an interface that your app in the Connect Customer agent workspace can use to subscribe to events related to session expiration due to inactivity and to signal the Connect Customer that the agent is active.
+The Connect Customer SDK provides a `SessionExpirationWarningClient` which serves as an interface that your app in the Connect Customer agent workspace can use to subscribe to events related to session expiration due to inactivity and to signal the Connect Customer that the agent is active.
 
 The `SessionExpirationWarningClient` accepts an optional constructor argument, ` ConnectClientConfig` which itself is defined as:
 

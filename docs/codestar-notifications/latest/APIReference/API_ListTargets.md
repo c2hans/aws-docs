@@ -51,7 +51,7 @@ Required: No
  ** [NextToken](#API_ListTargets_RequestSyntax) **   <a name="codestarnotifications-ListTargets-request-NextToken"></a>
 An enumeration token that, when provided in a request, returns the next batch of the results.
 Type: String
-Pattern: `^[\w/+=]+$`
+Pattern: `[\w/+=]+`
 Required: No
 
 ## Response Syntax
@@ -83,7 +83,7 @@ The following data is returned in JSON format by the service.
  ** [NextToken](#API_ListTargets_ResponseSyntax) **   <a name="codestarnotifications-ListTargets-response-NextToken"></a>
 An enumeration token that can be used in a request to return the next batch of results.
 Type: String
-Pattern: `^[\w/+=]+$`
+Pattern: `[\w/+=]+`
 
  ** [Targets](#API_ListTargets_ResponseSyntax) **   <a name="codestarnotifications-ListTargets-response-Targets"></a>
 The list of notification rule targets.

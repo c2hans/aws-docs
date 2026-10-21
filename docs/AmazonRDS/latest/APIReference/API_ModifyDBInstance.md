@@ -130,6 +130,40 @@ Type: String
 Valid Values: `standard | advanced`
 Required: No
 
+ ** DBCapacityReservationIdentifier **
+The identifier or the name of the DB capacity reservation for the DB instance to use. You can specify the identifier, which has the prefix `dbcr-`, or the reservation name. After the modification completes, the DB instance uses reserved capacity from this reservation.
+You can't change the DB capacity reservation of a DB instance on its own. A request that changes the reservation must also change the DB instance class, the Multi-AZ setting, the license model, or the engine. Therefore, this request always changes the configuration of the DB instance.
+If the DB instance already uses the reservation that you specify, this requirement doesn't apply. You can then change another setting, such as the Multi-AZ setting, and keep the reservation.
+For a DB instance that uses no reservation, change `DBInstanceClass` to the DB instance class that the reservation reserves. A reservation reserves capacity for one DB instance class, so that change moves the DB instance onto the reserved capacity. That change also resizes the DB instance, which interrupts it.
+If the DB instance already runs the DB instance class that the reservation reserves, change `MultiAZ` or `LicenseModel` instead. Only RDS for Oracle and RDS for Microsoft SQL Server accept a change of license model, so `MultiAZ` is the remaining choice for every other engine.
+If you don't specify this parameter, Amazon RDS moves the DB instance to unreserved capacity, and it releases the reserved capacity that the DB instance holds. A request that changes the DB instance class, the Multi-AZ setting, the license model, or the engine moves the DB instance to different hardware, and Amazon RDS places the DB instance on unreserved capacity. Therefore, to keep the DB instance on reserved capacity, specify this parameter in every request that changes any of those settings.
+The DB instance keeps its current reservation until Amazon RDS applies the modification. Until then, the `DBCapacityReservationIdentifier` field of the DB instance still reports that reservation, and `PendingModifiedValues` reports no reservation. Amazon RDS releases the reserved capacity when it moves the DB instance.
+Constraints:
++ If the request changes which DB capacity reservation the DB instance uses, it must also set a new value for `DBInstanceClass`, `MultiAZ`, `LicenseModel`, or `Engine`. The new value must differ from the current value. The only engine change that `ModifyDBInstance` supports is a conversion to the CDB architecture. Repeating the current value doesn't satisfy this requirement. This requirement applies both when the DB instance uses no reservation, and when it moves to a different reservation.
++ The reservation must reserve capacity for the DB instance class that the DB instance uses after the modification, and for the database engine of the DB instance. Therefore, when the request changes `DBInstanceClass`, the reservation reserves capacity for a DB instance class that the DB instance doesn't use today.
++ The reservation must be in the `active` state, and it must not be past its end date.
++ The reservation must have available capacity in each Availability Zone that the DB instance uses after the modification.
++ The reservation must cover the Availability Zone of the DB instance, except when the request changes the DB instance from Multi-AZ to Single-AZ.
++ For a Multi-AZ DB instance, the reservation must cover two or more Availability Zones. A Multi-AZ DB instance uses one unit of reserved capacity in each of two Availability Zones.
++ If the DB instance is already Multi-AZ, the reservation must cover both of its Availability Zones. If the request converts the DB instance to Multi-AZ, the reservation must cover the current Availability Zone of the DB instance, and Amazon RDS chooses the second Availability Zone from the reservation.
++ If the reservation reserves capacity for a specific license model, the license model of the DB instance must match it. Amazon RDS checks the license model only when the request specifies `LicenseModel`.
++ You can't specify this parameter together with a change to `DBSubnetGroupName`.
++ You can't specify this parameter together with a change to both `DBInstanceClass` and `LicenseModel`. Submit those changes as two separate requests.
++ Can't be specified together with a change to `DBInstanceClass` when the request also changes the DB instance from Multi-AZ to Single-AZ.
++ When the request changes the DB instance from Multi-AZ to Single-AZ, the reservation must cover either the primary or the secondary Availability Zone of the DB instance. Amazon RDS keeps the DB instance in its primary Availability Zone, and it removes the standby replica. Therefore, the primary Availability Zone keeps its unit of reserved capacity, and the secondary Availability Zone releases its unit.
++ Can't be specified together with `LicenseModel` while a modification of the DB instance class or the Multi-AZ setting is pending.
++ Can't be specified together with `DBInstanceClass` or `MultiAZ` while a modification of the license model is pending.
++ When a modification is already pending, the reservation must reserve capacity for the DB instance as it will be after both the pending modification and the requested modification complete.
++ The DB subnet group must be in a VPC with default tenancy.
++ The DB subnet group must cover each Availability Zone that the DB instance uses.
++ Isn't supported for an RDS on Outposts DB instance.
++ If the reservation expires within one week, you must also enable `ApplyImmediately`. Otherwise, choose a reservation with a later end date.
++ Amazon RDS holds a unit of reserved capacity for the DB instance when it accepts the request, even when the modification waits for the maintenance window.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z](?:-?[a-z0-9]+){0,15}`
+Required: No
+
  ** DBInstanceClass **
 The new compute and memory capacity of the DB instance, for example `db.m4.large`. Not all DB instance classes are available in all AWS Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see [DB Instance Class](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) in the *Amazon RDS User Guide* or [Aurora DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html) in the *Amazon Aurora User Guide*. For RDS Custom, see [DB instance class support for RDS Custom for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits.html#custom-reqs-limits.instances) and [ DB instance class support for RDS Custom for SQL Server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-reqs-limits-MS.html#custom-reqs-limits.instancesMS).
 If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless you specify `ApplyImmediately` in your request.
@@ -632,6 +666,10 @@ HTTP Status Code: 404
  `CertificateIdentifier` doesn't refer to an existing certificate.
 HTTP Status Code: 404
 
+ ** DBCapacityReservationNotFound **
+ `DBCapacityReservationIdentifier` doesn't refer to an existing DB capacity reservation.
+HTTP Status Code: 404
+
  ** DBInstanceAlreadyExists **
 The user already has a DB instance with the given identifier.
 HTTP Status Code: 400
@@ -658,6 +696,10 @@ HTTP Status Code: 404
 
  ** InsufficientDBInstanceCapacity **
 The specified DB instance class isn't available in the specified Availability Zone.
+HTTP Status Code: 400
+
+ ** InvalidDBCapacityReservationState **
+The DB capacity reservation isn't in a valid state.
 HTTP Status Code: 400
 
  ** InvalidDBClusterStateFault **

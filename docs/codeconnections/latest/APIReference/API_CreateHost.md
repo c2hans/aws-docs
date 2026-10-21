@@ -111,7 +111,7 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** LimitExceededException **
 Exceeded the maximum limit for connections.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_CreateHost_SeeAlso"></a>

@@ -13,7 +13,7 @@ Global navigation satellite system (GNSS) object used for positioning.
  ** Payload **   <a name="iotwireless-Type-Gnss-Payload"></a>
 Payload that contains the GNSS scan result, or NAV message, in hexadecimal notation.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: Yes
 
  ** AssistAltitude **   <a name="iotwireless-Type-Gnss-AssistAltitude"></a>
@@ -46,6 +46,6 @@ Required: No
 <a name="API_Gnss_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/Gnss)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/Gnss)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/Gnss)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/Gnss)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/Gnss)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/Gnss)

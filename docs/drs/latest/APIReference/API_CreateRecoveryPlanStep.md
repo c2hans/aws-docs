@@ -40,7 +40,7 @@ Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** [configuration](#API_CreateRecoveryPlanStep_RequestSyntax) **   <a name="drs-CreateRecoveryPlanStep-request-configuration"></a>
-The type-specific configuration of the step. Exactly one of `serverStepConfiguration` or `waitStepConfiguration` must be set.
+Type-specific configuration for a recovery plan step. Exactly one member must be set.
 Type: [RecoveryPlanStepConfiguration](API_RecoveryPlanStepConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
@@ -53,14 +53,14 @@ Pattern: `arn:aws(-[a-z0-9]+)*:drs:[a-z0-9-]+:[0-9]{12}:[a-zA-Z0-9_/.-]+`
 Required: Yes
 
  ** [stepName](#API_CreateRecoveryPlanStep_RequestSyntax) **   <a name="drs-CreateRecoveryPlanStep-request-stepName"></a>
-The name of the step.
+The name of a Recovery Plan Step.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _-]*`
 Required: Yes
 
  ** [stepOrder](#API_CreateRecoveryPlanStep_RequestSyntax) **   <a name="drs-CreateRecoveryPlanStep-request-stepOrder"></a>
-The 1-based position of the step within the Recovery Plan.
+The order of a step within a Recovery Plan (1-based).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 20.
 Required: No
@@ -92,7 +92,7 @@ If the action is successful, the service sends back an HTTP 201 response.
 The following data is returned in JSON format by the service.
 
  ** [recoveryPlanStep](#API_CreateRecoveryPlanStep_ResponseSyntax) **   <a name="drs-CreateRecoveryPlanStep-response-recoveryPlanStep"></a>
-The created Recovery Plan step.
+A Recovery Plan Step resource.
 Type: [RecoveryPlanStep](API_RecoveryPlanStep.md) object
 
 ## Errors

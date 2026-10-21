@@ -56,7 +56,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [operationIdentifier](#API_ResetEnabledControl_ResponseSyntax) **   <a name="controltower-ResetEnabledControl-response-operationIdentifier"></a>
- The operation identifier for this `ResetEnabledControl` operation.
+The operation identifier for this `ResetEnabledControl` operation.
 Type: String
 Length Constraints: Fixed length of 36.
 Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`

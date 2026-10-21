@@ -61,11 +61,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ConflictException **
 Two conflicting operations have been made on the same resource.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ResourceUnavailableException **
 Resource not found. Verify the ARN for the host resource and try again.

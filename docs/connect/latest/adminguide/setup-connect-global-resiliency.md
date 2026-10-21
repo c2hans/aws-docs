@@ -36,4 +36,5 @@ Global routing, analytics, and contact search are enabled by default for all new
 + [Manage phone numbers across Regions using Connect Customer APIs](manage-phone-numbers-across-regions.md)
 + [Manage chat in your Connect Customer instance across Regions](manage-chat-across-regions.md)
 + [Global routing across ACGR Regions](global-routing-across-acgr-regions.md)
++ [View your resiliency readiness in Connect Customer Global Resiliency](global-resiliency-readiness-overview.md)
 + [Metrics, Reports and Search across ACGR Regions](metrics-reports-and-search-across-acgr-regions.md)

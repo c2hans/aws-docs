@@ -106,7 +106,7 @@ Required: No
  ** [basicAuthCredentials](#API_UpdateApp_RequestSyntax) **   <a name="amplify-UpdateApp-request-basicAuthCredentials"></a>
 The basic authorization credentials for an Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 Required: No
 
@@ -123,7 +123,7 @@ Type: [CacheConfig](API_CacheConfig.md) object
 Required: No
 
  ** [computeRoleArn](#API_UpdateApp_RequestSyntax) **   <a name="amplify-UpdateApp-request-computeRoleArn"></a>
-The Amazon Resource Name (ARN) of the IAM role to assign to an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+The Amazon Resource Name (ARN) of the IAM role to assign to an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the * Amplify User Guide*.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
@@ -144,7 +144,7 @@ Required: No
  ** [description](#API_UpdateApp_RequestSyntax) **   <a name="amplify-UpdateApp-request-description"></a>
 The description for an Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 
@@ -171,9 +171,9 @@ Required: No
  ** [environmentVariables](#API_UpdateApp_RequestSyntax) **   <a name="amplify-UpdateApp-request-environmentVariables"></a>
 The environment variables for an Amplify app.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 5500.
+Value Length Constraints: Minimum length of 0. Maximum length of 5500.
 Value Pattern: `(?s).*`
 Required: No
 
@@ -203,7 +203,7 @@ To authorize access to GitHub as your repository provider, use `accessToken`.
 You must specify either `oauthToken` or `accessToken` when you update an app.
 Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see [Migrating an existing OAuth app to the Amplify GitHub App](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#migrating-to-github-app-auth) in the *Amplify User Guide* .
 Type: String
-Length Constraints: Maximum length of 4096.
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 Pattern: `(?s).*`
 Required: No
 
@@ -217,7 +217,7 @@ Required: No
  ** [repository](#API_UpdateApp_RequestSyntax) **   <a name="amplify-UpdateApp-request-repository"></a>
 The name of the Git repository for an Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 

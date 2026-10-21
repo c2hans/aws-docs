@@ -75,6 +75,9 @@ Content-type: application/json
       "vpcId": "string"
    },
    "notebookId": "string",
+   "notificationConfiguration": {
+      "notifyOn": [ "string" ]
+   },
    "owningProjectId": "string",
    "parameters": {
       "string" : "string"
@@ -159,6 +162,10 @@ Type: [NetworkConfig](API_NetworkConfig.md) object
 The identifier of the notebook.
 Type: String
 Pattern: `[a-zA-Z0-9_-]{1,36}`
+
+ ** [notificationConfiguration](#API_GetNotebookRun_ResponseSyntax) **   <a name="datazone-GetNotebookRun-response-notificationConfiguration"></a>
+The notification configuration of the notebook run, including the notebook run states that trigger notifications.
+Type: [NotificationConfig](API_NotificationConfig.md) object
 
  ** [owningProjectId](#API_GetNotebookRun_ResponseSyntax) **   <a name="datazone-GetNotebookRun-response-owningProjectId"></a>
 The identifier of the project that owns the notebook run.

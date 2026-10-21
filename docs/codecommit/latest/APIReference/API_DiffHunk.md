@@ -33,7 +33,7 @@ Required: No
  ** changes **   <a name="CodeCommit-Type-DiffHunk-changes"></a>
 An ordered list of line-level changes that make up this hunk. Each entry indicates whether the line is unchanged context, an addition, or a deletion.
 Type: Array of [DiffChange](API_DiffChange.md) objects
-Array Members: Maximum number of 25000 items.
+Array Members: Minimum number of 0 items. Maximum number of 25000 items.
 Required: No
 
 ## See Also

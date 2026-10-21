@@ -19,7 +19,8 @@ Content-type: application/json
    "description": "{{string}}",
    "name": "{{string}}",
    "owningProjectIdentifier": "{{string}}",
-   "sourceLocation": { ... }
+   "sourceLocation": { ... },
+   "type": "{{string}}"
 }
 ```
 
@@ -64,10 +65,16 @@ Pattern: `[a-zA-Z0-9_-]{1,36}`
 Required: Yes
 
  ** [sourceLocation](#API_StartNotebookImport_RequestSyntax) **   <a name="datazone-StartNotebookImport-request-sourceLocation"></a>
-The source location of the notebook to import. This specifies the Amazon Simple Storage Service URI of the notebook file.
+The source location of the notebook to import. Specify either a single Amazon Simple Storage Service URI, or a list of objects to import as the notebook's cells.
 Type: [SourceLocation](API_SourceLocation.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [type](#API_StartNotebookImport_RequestSyntax) **   <a name="datazone-StartNotebookImport-request-type"></a>
+The type of the notebook to import. If not specified, defaults to `DATA`.
+Type: String
+Valid Values: `DATA | SQL`
+Required: No
 
 ## Response Syntax
 <a name="API_StartNotebookImport_ResponseSyntax"></a>
@@ -85,7 +92,8 @@ Content-type: application/json
    "notebookId": "string",
    "owningProjectId": "string",
    "sourceLocation": { ... },
-   "status": "string"
+   "status": "string",
+   "type": "string"
 }
 ```
 
@@ -138,6 +146,11 @@ Type: [SourceLocation](API_SourceLocation.md) object
 The status of the notebook import.
 Type: String
 Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
+
+ ** [type](#API_StartNotebookImport_ResponseSyntax) **   <a name="datazone-StartNotebookImport-response-type"></a>
+The type of the imported notebook.
+Type: String
+Valid Values: `DATA | SQL`
 
 ## Errors
 <a name="API_StartNotebookImport_Errors"></a>

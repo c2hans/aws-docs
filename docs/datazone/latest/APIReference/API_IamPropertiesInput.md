@@ -15,6 +15,12 @@ Specifies whether AWS Glue lineage sync is enabled for a connection.
 Type: Boolean
 Required: No
 
+ ** roleArn **   <a name="datazone-Type-IamPropertiesInput-roleArn"></a>
+The ARN of the IAM role to associate with the connection as the project user role. To use this operation, you must have `iam:PassRole` permission for this role.
+Type: String
+Pattern: `arn:aws[^:]*:iam::\d{12}:role(/[a-zA-Z0-9+=,.@_-]+)*/[a-zA-Z0-9+=,.@_-]+`
+Required: No
+
 ## See Also
 <a name="API_IamPropertiesInput_SeeAlso"></a>
 

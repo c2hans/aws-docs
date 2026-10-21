@@ -22,6 +22,21 @@ The user-supplied instance identifier.
 Type: String
 Required: Yes
 
+ ** DBCapacityReservationIdentifier **
+The identifier or the name of the DB capacity reservation for the DB instance to use after it starts. You can specify the identifier, which has the prefix `dbcr-`, or the reservation name.
+Specify this parameter when the DB instance stopped using a reservation, or when you want the DB instance to use a different reservation.
+If you omit this parameter, and the DB instance kept a DB capacity reservation when it stopped, Amazon RDS starts the DB instance in that reservation.
+If that reservation is deleted, ended, or cancelled, the DB instance still starts. Amazon RDS starts the DB instance outside the reservation, on unreserved capacity, and it charges on-demand prices for the DB instance.
+If that reservation has no available capacity in the Availability Zone of the DB instance, the request fails. Amazon RDS doesn't start the DB instance, and it doesn't wait for capacity in that Availability Zone. Specify a reservation that has available capacity in that Availability Zone, or retry the request after the reservation has available capacity.
+Constraints:
++ The reservation must be in the `active` state.
++ The reservation must reserve capacity for the DB instance class and the engine of the DB instance.
++ The reservation must cover the Availability Zone of the DB instance, and it must have available capacity in that Availability Zone.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z](?:-?[a-z0-9]+){0,15}`
+Required: No
+
 ## Response Elements
 <a name="API_StartDBInstance_ResponseElements"></a>
 
@@ -42,6 +57,10 @@ The specified CIDR IP range or Amazon EC2 security group might not be authorized
 Or, RDS might not be authorized to perform necessary actions using IAM on your behalf.
 HTTP Status Code: 404
 
+ ** DBCapacityReservationNotFound **
+ `DBCapacityReservationIdentifier` doesn't refer to an existing DB capacity reservation.
+HTTP Status Code: 404
+
  ** DBClusterNotFoundFault **
  `DBClusterIdentifier` doesn't refer to an existing DB cluster.
 HTTP Status Code: 404
@@ -60,6 +79,10 @@ HTTP Status Code: 404
 
  ** InsufficientDBInstanceCapacity **
 The specified DB instance class isn't available in the specified Availability Zone.
+HTTP Status Code: 400
+
+ ** InvalidDBCapacityReservationState **
+The DB capacity reservation isn't in a valid state.
 HTTP Status Code: 400
 
  ** InvalidDBClusterStateFault **

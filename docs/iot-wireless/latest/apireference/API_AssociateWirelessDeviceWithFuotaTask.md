@@ -26,7 +26,7 @@ The request uses the following URI parameters.
 
  ** [Id](#API_AssociateWirelessDeviceWithFuotaTask_RequestSyntax) **   <a name="iotwireless-AssociateWirelessDeviceWithFuotaTask-request-uri-Id"></a>
 The ID of a FUOTA task.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
 ## Request Body
@@ -37,7 +37,7 @@ The request accepts the following data in JSON format.
  ** [WirelessDeviceId](#API_AssociateWirelessDeviceWithFuotaTask_RequestSyntax) **   <a name="iotwireless-AssociateWirelessDeviceWithFuotaTask-request-WirelessDeviceId"></a>
 The ID of the wireless device.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
 ## Response Syntax
@@ -93,13 +93,13 @@ HTTP Status Code: 400
 <a name="API_AssociateWirelessDeviceWithFuotaTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/AssociateWirelessDeviceWithFuotaTask)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/AssociateWirelessDeviceWithFuotaTask)

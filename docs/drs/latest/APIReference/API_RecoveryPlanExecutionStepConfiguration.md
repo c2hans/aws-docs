@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 # RecoveryPlanExecutionStepConfiguration
 <a name="API_RecoveryPlanExecutionStepConfiguration"></a>
 
-Type-specific configuration for an execution step response. Mirrors `RecoveryPlanStepConfiguration` but uses execution-enriched server shapes.
+Type-specific configuration for an execution step response. Mirrors RecoveryPlanStepConfiguration but uses execution-enriched server shapes.
 
 ## Contents
 <a name="API_RecoveryPlanExecutionStepConfiguration_Contents"></a>
@@ -14,12 +14,12 @@ Type-specific configuration for an execution step response. Mirrors `RecoveryPla
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
  ** executionServerStepConfiguration **   <a name="drs-Type-RecoveryPlanExecutionStepConfiguration-executionServerStepConfiguration"></a>
-Configuration for a `SERVER` type execution step.
+Configuration for a SERVER type step (with execution state like jobID).
 Type: [ExecutionServerStepConfiguration](API_ExecutionServerStepConfiguration.md) object
 Required: No
 
  ** waitStepConfiguration **   <a name="drs-Type-RecoveryPlanExecutionStepConfiguration-waitStepConfiguration"></a>
-Configuration for a `WAIT` type step.
+Configuration for a WAIT type step.
 Type: [WaitStepConfiguration](API_WaitStepConfiguration.md) object
 Required: No
 

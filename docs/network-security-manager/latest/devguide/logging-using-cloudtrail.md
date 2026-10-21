@@ -84,7 +84,7 @@ The following example shows a CloudTrail log entry for the `CreatePolicy` operat
       ],
       "policyConfiguration": {
           "remediationEnabled": true,
-          "resourcesCleanUp": false,
+          "resourcesCleanUp": true,
           "wafConfig": {
               "existingCustomerWebACLResolution": "RETROFIT",
               "conflictResolution": "MERGE_WHERE_APPLICABLE"

@@ -14,7 +14,7 @@ Namespace inputs for the system job.
 The ID of the Amazon EKS cluster where Amazon EMR on EKS jobs run.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z][A-Za-z0-9\-_]*`
+Pattern: `[0-9A-Za-z][A-Za-z0-9\-_]*`
 Required: No
 
  ** namespace **   <a name="emroneks-Type-SecureNamespaceInfo-namespace"></a>

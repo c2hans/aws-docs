@@ -15,6 +15,7 @@ POST /v2/domains/{{domainIdentifier}}/environment-blueprints HTTP/1.1
 Content-type: application/json
 
 {
+   "blueprintCategory": "{{string}}",
    "description": "{{string}}",
    "name": "{{string}}",
    "provisioningProperties": { ... },
@@ -46,6 +47,12 @@ Required: Yes
 <a name="API_CreateEnvironmentBlueprint_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [blueprintCategory](#API_CreateEnvironmentBlueprint_RequestSyntax) **   <a name="datazone-CreateEnvironmentBlueprint-request-blueprintCategory"></a>
+The category of the Amazon DataZone blueprint. The only valid value is `TOOLING`, which creates a blueprint that provisions the tooling resources of a project.
+Type: String
+Valid Values: `TOOLING`
+Required: No
 
  ** [description](#API_CreateEnvironmentBlueprint_RequestSyntax) **   <a name="datazone-CreateEnvironmentBlueprint-request-description"></a>
 The description of the Amazon DataZone blueprint.
@@ -79,6 +86,7 @@ HTTP/1.1 201
 Content-type: application/json
 
 {
+   "blueprintCategory": "string",
    "createdAt": "string",
    "deploymentProperties": {
       "endTimeoutMinutes": number,
@@ -111,6 +119,11 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 201 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [blueprintCategory](#API_CreateEnvironmentBlueprint_ResponseSyntax) **   <a name="datazone-CreateEnvironmentBlueprint-response-blueprintCategory"></a>
+The category of the Amazon DataZone blueprint. The only valid value is `TOOLING`, which indicates a blueprint that provisions the tooling resources of a project.
+Type: String
+Valid Values: `TOOLING`
 
  ** [createdAt](#API_CreateEnvironmentBlueprint_ResponseSyntax) **   <a name="datazone-CreateEnvironmentBlueprint-response-createdAt"></a>
 The timestamp at which the environment blueprint was created.

@@ -67,7 +67,6 @@ Cluster versions in this patch:
 
 ### New features and improvements in this patch
 <a name="cluster-version-2026-10-13-features"></a>
-+ Added the `probe_input_rows` and `build_input_rows` columns to `STL_HASHJOIN`, which record the number of input rows on the probe and build sides of a hash join.
 + Added the `PG_LAST_QUERY_UUID()` function, which returns the UUID of the last completed query.
 + Added a `session_id` column to `STL_UNLOAD_LOG` that records the leader node's session identifier that matches the `session_id` value in `SYS_QUERY_HISTORY`.
 + Added an `external_user_id` column to STL and STV system tables and SYS monitoring views for consistent identity tracking across provisioned clusters and serverless workgroups.

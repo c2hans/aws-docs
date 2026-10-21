@@ -59,7 +59,7 @@ Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
  ** [namespace](#API_RetrieveMemoryRecords_RequestSyntax) **   <a name="BedrockAgentCore-RetrieveMemoryRecords-request-namespace"></a>
-The namespace prefix to filter memory records by. Searches for memory records in namespaces that start with the provided prefix. Either `namespace` or `namespacePath` is required.
+The exact namespace to filter memory records by. Searches for memory records that matches the provided namespace value. Either `namespace` or `namespacePath` is required.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `[a-zA-Z0-9/*][a-zA-Z0-9-_/*]*(?::[a-zA-Z0-9-_/*]+)*[a-zA-Z0-9-_/*]*`

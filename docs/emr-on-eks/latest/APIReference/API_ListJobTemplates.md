@@ -23,13 +23,13 @@ The request uses the following URI parameters.
 The date and time after which the job templates were created.
 
  ** [createdBefore](#API_ListJobTemplates_RequestSyntax) **   <a name="emroneks-ListJobTemplates-request-uri-createdBefore"></a>
- The date and time before which the job templates were created.
+The date and time before which the job templates were created.
 
  ** [maxResults](#API_ListJobTemplates_RequestSyntax) **   <a name="emroneks-ListJobTemplates-request-uri-maxResults"></a>
- The maximum number of job templates that can be listed.
+The maximum number of job templates that can be listed.
 
  ** [nextToken](#API_ListJobTemplates_RequestSyntax) **   <a name="emroneks-ListJobTemplates-request-uri-nextToken"></a>
- The token for the next set of job templates to return.
+The token for the next set of job templates to return.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
 
@@ -119,7 +119,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [nextToken](#API_ListJobTemplates_ResponseSyntax) **   <a name="emroneks-ListJobTemplates-response-nextToken"></a>
- This output displays the token for the next set of job templates.
+This output displays the token for the next set of job templates.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`

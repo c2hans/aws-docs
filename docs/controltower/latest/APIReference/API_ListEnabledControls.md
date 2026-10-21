@@ -46,7 +46,7 @@ Type: [EnabledControlFilter](API_EnabledControlFilter.md) object
 Required: No
 
  ** [includeChildren](#API_ListEnabledControls_RequestSyntax) **   <a name="controltower-ListEnabledControls-request-includeChildren"></a>
-A boolean value that determines whether to include enabled controls from child organizational units in the response.
+Specifies whether to include enabled controls from child organizational units and child accounts in the response.
 Type: Boolean
 Required: No
 
@@ -62,7 +62,10 @@ Type: String
 Required: No
 
  ** [targetIdentifier](#API_ListEnabledControls_RequestSyntax) **   <a name="controltower-ListEnabledControls-request-targetIdentifier"></a>
-The ARN of the organizational unit. For information on how to find the `targetIdentifier`, see [the overview page](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
+The ARN of the target. The value depends on the target type:
++ Organizational unit (OU) – Specify the ARN of the OU.
++ Account – Specify the ARN of the account.
+For information on how to find the `targetIdentifier`, see [the overview page](https://docs.aws.amazon.com/controltower/latest/APIReference/Welcome.html).
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[0-9a-zA-Z_\-:\/]+`

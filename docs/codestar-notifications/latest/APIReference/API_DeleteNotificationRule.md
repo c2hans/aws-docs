@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
  ** [Arn](#API_DeleteNotificationRule_RequestSyntax) **   <a name="codestarnotifications-DeleteNotificationRule-request-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule you want to delete.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
 ## Response Syntax
@@ -57,7 +57,7 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_DeleteNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-DeleteNotificationRule-response-Arn"></a>
 The Amazon Resource Name (ARN) of the deleted notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 
 ## Errors
 <a name="API_DeleteNotificationRule_Errors"></a>

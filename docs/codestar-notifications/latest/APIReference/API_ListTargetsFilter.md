@@ -19,7 +19,7 @@ Required: Yes
  ** Value **   <a name="codestarnotifications-Type-ListTargetsFilter-Value"></a>
 The value of the attribute you want to use to filter the returned targets. For example, if you specify `SNS` for the Target type, you could specify an Amazon Resource Name (ARN) for a topic as the value.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: Yes
 
 ## See Also

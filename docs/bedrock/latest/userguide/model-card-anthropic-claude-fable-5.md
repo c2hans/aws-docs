@@ -70,7 +70,7 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)  |  + [Count tokens](count-tokens.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
+|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs](structured-output.md)  |  + [Count tokens](count-tokens.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
 
 ***Bedrock Features***
 
@@ -78,7 +78,7 @@ Whenever possible, we recommend using the `bedrock-runtime` endpoint for new app
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Count tokens](count-tokens.html)  |  + [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
+|  + [Response streaming](/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Implicit Prompt Caching](prompt-caching.html#prompt-caching-implicit)<br />+ [Explicit Prompt Caching](prompt-caching.html#prompt-caching-explicit)<br />+ [Abuse detection](abuse-detection.html)<br />+ [Count tokens](count-tokens.html)<br />+ ![Green circle with white checkmark icon.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs](structured-output.md)  |  + [Guardrails](guardrails.html)<br />+ [Prompt optimization](prompt-management-optimize.html)<br />+ [Knowledge base](knowledge-base.html)<br />+ [Model evaluation](evaluation.html)<br />+ [Prompt management](prompt-management.html)<br />+ [Flows](flows.html)<br />+ [Agents](agents.html)<br />+ [Intelligent prompt routing](prompt-routing.html)  |
 
 ***Implicit and Explicit Prompt Caching using `bedrock-runtime` and `bedrock-mantle` endpoints***
 

@@ -38,7 +38,7 @@ The Entity type group USA\_ALL is also supported, and includes all of the above 
 Type: Array of strings
 Array Members: Minimum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[A-Z_][A-Z\\d_]*$`
+Pattern: `[A-Z_][A-Z\\d_]*`
 Required: Yes
 
  ** AllowedStatistics **   <a name="databrew-Type-EntityDetectorConfiguration-AllowedStatistics"></a>

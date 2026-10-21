@@ -26,7 +26,7 @@ The `LATEST_WORKING` version will only be deleted if the recipe has no other ver
 <a name="API_BatchDeleteRecipeVersion_RequestSyntax"></a>
 
 ```
-POST /recipes/{{name}}/batchDeleteRecipeVersion HTTP/1.1
+POST /recipes/{{Name}}/batchDeleteRecipeVersion HTTP/1.1
 Content-type: application/json
 
 {
@@ -39,7 +39,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_BatchDeleteRecipeVersion_RequestSyntax) **   <a name="databrew-BatchDeleteRecipeVersion-request-uri-Name"></a>
+ ** [Name](#API_BatchDeleteRecipeVersion_RequestSyntax) **   <a name="databrew-BatchDeleteRecipeVersion-request-uri-Name"></a>
 The name of the recipe whose versions are to be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

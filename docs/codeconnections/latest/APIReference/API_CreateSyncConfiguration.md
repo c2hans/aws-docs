@@ -35,7 +35,7 @@ The request accepts the following data in JSON format.
 The branch in the repository from which changes will be synced.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** [ConfigFile](#API_CreateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-CreateSyncConfiguration-request-ConfigFile"></a>
@@ -58,14 +58,14 @@ Required: No
  ** [RepositoryLinkId](#API_CreateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-CreateSyncConfiguration-request-RepositoryLinkId"></a>
 The ID of the repository link created for the connection. A repository link allows Git sync to monitor and sync changes to files in a specified Git repository.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: Yes
 
  ** [ResourceName](#API_CreateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-CreateSyncConfiguration-request-ResourceName"></a>
 The name of the AWS resource (for example, a CloudFormation stack in the case of CFN\_STACK\_SYNC) that will be synchronized from the linked repository.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: Yes
 
  ** [RoleArn](#API_CreateSyncConfiguration_RequestSyntax) **   <a name="codeconnections-CreateSyncConfiguration-request-RoleArn"></a>
@@ -127,15 +127,15 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConcurrentModificationException **
 Exception thrown as a result of concurrent modification to an application. For example, two individuals attempting to edit the same application at the same time.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -143,15 +143,15 @@ HTTP Status Code: 400
 
  ** LimitExceededException **
 Exceeded the maximum limit for connections.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ResourceAlreadyExistsException **
 Unable to create resource. Resource already exists.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_CreateSyncConfiguration_SeeAlso"></a>

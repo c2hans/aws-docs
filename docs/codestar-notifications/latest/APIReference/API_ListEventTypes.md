@@ -50,7 +50,7 @@ Required: No
  ** [NextToken](#API_ListEventTypes_RequestSyntax) **   <a name="codestarnotifications-ListEventTypes-request-NextToken"></a>
 An enumeration token that, when provided in a request, returns the next batch of the results.
 Type: String
-Pattern: `^[\w/+=]+$`
+Pattern: `[\w/+=]+`
 Required: No
 
 ## Response Syntax
@@ -87,7 +87,7 @@ Type: Array of [EventTypeSummary](API_EventTypeSummary.md) objects
  ** [NextToken](#API_ListEventTypes_ResponseSyntax) **   <a name="codestarnotifications-ListEventTypes-response-NextToken"></a>
 An enumeration token that can be used in a request to return the next batch of the results.
 Type: String
-Pattern: `^[\w/+=]+$`
+Pattern: `[\w/+=]+`
 
 ## Errors
 <a name="API_ListEventTypes_Errors"></a>

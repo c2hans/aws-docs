@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [Identifier](#API_GetWirelessDevice_RequestSyntax) **   <a name="iotwireless-GetWirelessDevice-request-uri-Identifier"></a>
 The identifier of the wireless device to get.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
  ** [IdentifierType](#API_GetWirelessDevice_RequestSyntax) **   <a name="iotwireless-GetWirelessDevice-request-uri-IdentifierType"></a>
@@ -142,18 +142,18 @@ Type: String
  ** [Description](#API_GetWirelessDevice_ResponseSyntax) **   <a name="iotwireless-GetWirelessDevice-response-Description"></a>
 The description of the resource.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 
  ** [DestinationName](#API_GetWirelessDevice_ResponseSyntax) **   <a name="iotwireless-GetWirelessDevice-response-DestinationName"></a>
 The name of the destination to which the device is assigned.
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 
  ** [Id](#API_GetWirelessDevice_ResponseSyntax) **   <a name="iotwireless-GetWirelessDevice-response-Id"></a>
 The ID of the wireless device.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [LoRaWAN](#API_GetWirelessDevice_ResponseSyntax) **   <a name="iotwireless-GetWirelessDevice-response-LoRaWAN"></a>
 Information about the wireless device.
@@ -162,7 +162,7 @@ Type: [LoRaWANDevice](API_LoRaWANDevice.md) object
  ** [Name](#API_GetWirelessDevice_ResponseSyntax) **   <a name="iotwireless-GetWirelessDevice-response-Name"></a>
 The name of the resource.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [Positioning](#API_GetWirelessDevice_ResponseSyntax) **   <a name="iotwireless-GetWirelessDevice-response-Positioning"></a>
 The integration status of the Device Location feature for LoRaWAN and Sidewalk devices.
@@ -219,13 +219,13 @@ HTTP Status Code: 400
 <a name="API_GetWirelessDevice_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/GetWirelessDevice)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/GetWirelessDevice)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/GetWirelessDevice)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/GetWirelessDevice)

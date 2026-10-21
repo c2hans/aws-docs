@@ -41,7 +41,7 @@ Required: No
  ** [description](#API_CreatePullRequest_RequestSyntax) **   <a name="CodeCommit-CreatePullRequest-request-description"></a>
 A description of the pull request.
 Type: String
-Length Constraints: Maximum length of 10240.
+Length Constraints: Minimum length of 0. Maximum length of 10240.
 Required: No
 
  ** [targets](#API_CreatePullRequest_RequestSyntax) **   <a name="CodeCommit-CreatePullRequest-request-targets"></a>
@@ -52,7 +52,7 @@ Required: Yes
  ** [title](#API_CreatePullRequest_RequestSyntax) **   <a name="CodeCommit-CreatePullRequest-request-title"></a>
 The title of the pull request. This title is used to identify the pull request to other users in the repository.
 Type: String
-Length Constraints: Maximum length of 150.
+Length Constraints: Minimum length of 0. Maximum length of 150.
 Required: Yes
 
 ## Response Syntax
@@ -123,103 +123,153 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ClientRequestTokenRequiredException **
 A client request token is required. A client request token is an unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request returns information about the initial request that used that token.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** IdempotencyParameterMismatchException **
 The client request token is not valid. Either the token is not in a valid format, or the token has been used in a previous request and cannot be reused.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidClientRequestTokenException **
 The client request token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidDescriptionException **
 The pull request description is not valid. Descriptions cannot be more than 1,000 characters.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidReferenceNameException **
 The specified reference name format is not valid. Reference names must conform to the Git references format (for example, refs/heads/main). For more information, see [Git Internals - Git References](https://git-scm.com/book/en/v2/Git-Internals-Git-References) or consult your Git documentation.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidTargetException **
 The target for the pull request is not valid. A target must contain the full values for the repository name, source branch, and destination branch for the pull request.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidTargetsException **
 The targets for the pull request is not valid or not in a valid format. Targets are a list of target objects. Each target object must contain the full values for the repository name, source branch, and destination branch for a pull request.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidTitleException **
 The title of the pull request is not valid. Pull request titles cannot exceed 100 characters in length.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumOpenPullRequestsExceededException **
 You cannot create the pull request because the repository has too many open pull requests. The maximum number of open pull requests for a repository is 1,000. Close one or more open pull requests, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MultipleRepositoriesInPullRequestException **
 You cannot include more than one repository in a pull request. Make sure you have specified only one repository name in your request, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReferenceDoesNotExistException **
 The specified reference does not exist. You must provide a full commit ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReferenceNameRequiredException **
 A reference name is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReferenceTypeNotSupportedException **
 The specified reference is not a supported type.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** SourceAndDestinationAreSameException **
 The source branch and destination branch for the pull request are the same. You must specify different branches for the source and destination.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TargetRequiredException **
 A pull request target is required. It cannot be empty or null. A pull request target must contain the full values for the repository name, source branch, and destination branch for the pull request.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TargetsRequiredException **
 An array of target objects is required. It cannot be empty or null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TitleRequiredException **
 A pull request title is required. It cannot be empty or null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

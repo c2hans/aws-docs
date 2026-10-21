@@ -44,7 +44,7 @@ Before you begin, you need the following:
 ## Register an application with an OIDC IdP
 <a name="cognito-user-pools-oidc-idp-step-1"></a>
 
-Before you add an OIDC IdP to your user pool configuration and assign it to app clients, you set up an OIDC client application in your IdP. Your user pool is the relying-party application that will manage authentication with your IdP.
+Before you add an OIDC IdP to your user pool configuration and assign it to app clients, you set up an OIDC client application in your IdP. Your user pool is the relying-party application that manages authentication with your IdP.
 
 **To register with an OIDC IdP**
 
@@ -54,7 +54,7 @@ Before you add an OIDC IdP to your user pool configuration and assign it to app 
 
 <table>
 <thead>
-  <tr><th>OIDC IdP</th><th>How to Install</th><th>OIDC Discovery URL</th></tr>
+  <tr><th>OIDC IdP</th><th>How to install</th><th>OIDC discovery URL</th></tr>
 </thead>
 <tbody>
   <tr><td>Salesforce</td><td><a href="https://help.salesforce.com/s/articleView?id=xcloud.service_provider_define_oid.htm&amp;type=5">Salesforce as an OpenID Connect Identity Provider</a></td><td><code>https://MyDomainName.my.salesforce.com/.well-known/openid-configuration</code></td></tr>
@@ -86,7 +86,7 @@ Before you add an OIDC IdP to your user pool configuration and assign it to app 
 1. From your Salesforce page, do one of the following:
    +  If you’re using Lightning Experience, choose the setup gear icon, then choose **Setup Home**.
    +  If you’re using Salesforce Classic and you see **Setup** in the user interface header, choose it.
-   +  If you’re using Salesforce Classic and you don’t see **Setup** in the header, choose your name from the top navigation bar, and choose **Setup** from the drop-down list.
+   +  If you’re using Salesforce Classic and you don’t see **Setup** in the header, choose your name from the top navigation bar, and choose **Setup** from the dropdown list.
 
 1. On the left navigation bar, choose **Company Settings**.
 
@@ -146,7 +146,7 @@ After you set up your IdP, you can configure your user pool to handle authentica
 
 1. Enter the IdP **Client secret**. This must be the client secret for the same application client from the previous step.
 
-1. <a name="cognito-user-pools-oidc-step-2-substep-9"></a>Enter **Authorized scopes** for this provider. Scopes define which groups of user attributes (such as `name` and `email`) that your application will request from your provider. Scopes must be separated by spaces, following the [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-3.3) specification.
+1. <a name="cognito-user-pools-oidc-step-2-substep-9"></a>Enter **Authorized scopes** for this provider. Scopes define which groups of user attributes (such as `name` and `email`) that your application requests from your provider. Scopes must be separated by spaces, following the [OAuth 2.0](https://tools.ietf.org/html/rfc6749#section-3.3) specification.
 
    Your IdP might prompt users to consent to providing these attributes to your application when they sign in.
 

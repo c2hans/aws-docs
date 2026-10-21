@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/connecthealth/index.html
 title: 'Amazon Connect Health'
 canonical_url: https://docs.aws.amazon.com/connecthealth/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Amazon Connect Health

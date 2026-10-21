@@ -43,6 +43,6 @@ The ID of the EC2 launch template to use to provision instances.
 
 `Version`  <a name="cfn-pcs-computenodegroup-customlaunchtemplate-version"></a>
 The version of the EC2 launch template to use to provision instances.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

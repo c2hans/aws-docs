@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteJo
 # DeleteJob
 <a name="API_DeleteJob"></a>
 
- Deletes a job for a branch of an Amplify app.
+Deletes a job for a branch of an Amplify app.
 
 ## Request Syntax
 <a name="API_DeleteJob_RequestSyntax"></a>
@@ -20,7 +20,7 @@ DELETE /apps/{{appId}}/branches/{{branchName}}/jobs/{{jobId}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [appId](#API_DeleteJob_RequestSyntax) **   <a name="amplify-DeleteJob-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
@@ -32,8 +32,8 @@ Pattern: `(?s).+`
 Required: Yes
 
  ** [jobId](#API_DeleteJob_RequestSyntax) **   <a name="amplify-DeleteJob-request-uri-jobId"></a>
- The unique ID for the job.
-Length Constraints: Maximum length of 255.
+The unique ID for the job.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[0-9]+`
 Required: Yes
 
@@ -74,7 +74,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [jobSummary](#API_DeleteJob_ResponseSyntax) **   <a name="amplify-DeleteJob-response-jobSummary"></a>
- Describes the summary for an execution job for an Amplify app.
+Describes the summary for an execution job for an Amplify app.
 Type: [JobSummary](API_JobSummary.md) object
 
 ## Errors

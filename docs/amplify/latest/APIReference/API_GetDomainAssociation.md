@@ -20,15 +20,15 @@ GET /apps/{{appId}}/domains/{{domainName}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [appId](#API_GetDomainAssociation_RequestSyntax) **   <a name="amplify-GetDomainAssociation-request-uri-appId"></a>
- The unique id for an Amplify app.
+The unique id for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
 
  ** [domainName](#API_GetDomainAssociation_RequestSyntax) **   <a name="amplify-GetDomainAssociation-request-uri-domainName"></a>
- The name of the domain.
-Length Constraints: Maximum length of 64.
-Pattern: `^(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?$`
+The name of the domain.
+Length Constraints: Minimum length of 0. Maximum length of 64.
+Pattern: `(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?`
 Required: Yes
 
 ## Request Body
@@ -81,7 +81,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [domainAssociation](#API_GetDomainAssociation_ResponseSyntax) **   <a name="amplify-GetDomainAssociation-response-domainAssociation"></a>
- Describes the structure of a domain association, which associates a custom domain with an Amplify app.
+Describes the structure of a domain association, which associates a custom domain with an Amplify app.
 Type: [DomainAssociation](API_DomainAssociation.md) object
 
 ## Errors

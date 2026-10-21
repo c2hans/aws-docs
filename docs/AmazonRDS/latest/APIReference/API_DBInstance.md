@@ -145,6 +145,13 @@ Type: String
 Valid Values: `standard | advanced`
 Required: No
 
+ ** DBCapacityReservationIdentifier **
+The identifier of the DB capacity reservation associated with this DB instance. Amazon RDS doesn't return this value if the DB instance doesn't use a DB capacity reservation.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z](?:-?[a-z0-9]+){0,15}`
+Required: No
+
  ** DBClusterIdentifier **
 If the DB instance is a member of a DB cluster, indicates the name of the DB cluster that the DB instance is a member of.
 Type: String

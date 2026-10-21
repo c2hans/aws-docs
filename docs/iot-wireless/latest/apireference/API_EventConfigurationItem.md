@@ -18,7 +18,7 @@ Required: No
  ** Identifier **   <a name="iotwireless-Type-EventConfigurationItem-Identifier"></a>
 Resource identifier opted in for event messaging.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** IdentifierType **   <a name="iotwireless-Type-EventConfigurationItem-IdentifierType"></a>
@@ -37,6 +37,6 @@ Required: No
 <a name="API_EventConfigurationItem_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/EventConfigurationItem)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/EventConfigurationItem)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/EventConfigurationItem)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/EventConfigurationItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/EventConfigurationItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/EventConfigurationItem)

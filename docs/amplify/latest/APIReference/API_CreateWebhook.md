@@ -46,7 +46,7 @@ Required: Yes
  ** [description](#API_CreateWebhook_RequestSyntax) **   <a name="amplify-CreateWebhook-request-description"></a>
 The description for a webhook.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 

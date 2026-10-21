@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/insigh
 
 **Insights job creation ends October 16, 2026**
 Beginning October 16, 2026, Amazon Bedrock AgentCore insights no longer supports creating new batch or recurring insights. Existing recurring insight jobs continue to process sessions and generate reports through October 30, 2026. Beginning October 31, existing recurring insights will also stop generating reports. Historical batch results and recurring insights reports remain available.
-This change is part of a redesign of Insights. A new Insights experience will be available soon.
+To analyze failures in a batch evaluation with the new Insights experience, see [Insights](batch-evaluations-insights.md) in the batch evaluation documentation.
 
 Use `StartBatchEvaluation` to run an on-demand insights analysis over your agent’s sessions. This is useful when you want to investigate agent behavior after a deployment, a spike in failures, or as a periodic manual check.
 

@@ -9,7 +9,7 @@ Returns a list of end-to-end testing artifacts for a specified app, branch, and 
 
 To return the build artifacts, use the [GetJob](https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetJob.html) API.
 
-For more information about Amplify testing support, see [Setting up end-to-end Cypress tests for your Amplify application](https://docs.aws.amazon.com/amplify/latest/userguide/running-tests.html) in the *Amplify Hosting User Guide*.
+For more information about Amplify testing support, see [Setting up end-to-end Cypress tests for your Amplify application](https://docs.aws.amazon.com/amplify/latest/userguide/running-tests.html) in the * Amplify Hosting User Guide*.
 
 ## Request Syntax
 <a name="API_ListArtifacts_RequestSyntax"></a>
@@ -37,7 +37,7 @@ Required: Yes
 
  ** [jobId](#API_ListArtifacts_RequestSyntax) **   <a name="amplify-ListArtifacts-request-uri-jobId"></a>
 The unique ID for a job.
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[0-9]+`
 Required: Yes
 
@@ -47,7 +47,7 @@ Valid Range: Minimum value of 0. Maximum value of 50.
 
  ** [nextToken](#API_ListArtifacts_RequestSyntax) **   <a name="amplify-ListArtifacts-request-uri-nextToken"></a>
 A pagination token. Set to null to start listing artifacts from start. If a non-null pagination token is returned in a result, pass its value in here to list more artifacts.
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Request Body
@@ -87,7 +87,7 @@ Type: Array of [Artifact](API_Artifact.md) objects
  ** [nextToken](#API_ListArtifacts_ResponseSyntax) **   <a name="amplify-ListArtifacts-response-nextToken"></a>
 A pagination token. If a non-null pagination token is returned in a result, pass its value in another request to retrieve more entries.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Errors

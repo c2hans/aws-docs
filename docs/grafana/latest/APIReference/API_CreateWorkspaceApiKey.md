@@ -47,7 +47,7 @@ Required: Yes
 
  ** [keyRole](#API_CreateWorkspaceApiKey_RequestSyntax) **   <a name="ManagedGrafana-CreateWorkspaceApiKey-request-keyRole"></a>
 Specifies the permission level of the key.
- Valid values: `ADMIN`\|`EDITOR`\|`VIEWER`
+Valid values: `ADMIN`\|`EDITOR`\|`VIEWER`
 Type: String
 Required: Yes
 

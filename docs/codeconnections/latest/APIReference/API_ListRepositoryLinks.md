@@ -25,16 +25,16 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [MaxResults](#API_ListRepositoryLinks_RequestSyntax) **   <a name="codeconnections-ListRepositoryLinks-request-MaxResults"></a>
- A non-zero, non-negative integer used to limit the number of returned results.
+A non-zero, non-negative integer used to limit the number of returned results.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 100.
 Required: No
 
  ** [NextToken](#API_ListRepositoryLinks_RequestSyntax) **   <a name="codeconnections-ListRepositoryLinks-request-NextToken"></a>
- An enumeration token that, when provided in a request, returns the next batch of the results.
+An enumeration token that, when provided in a request, returns the next batch of the results.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: No
 
 ## Response Syntax
@@ -68,7 +68,7 @@ The following data is returned in JSON format by the service.
 An enumeration token that allows the operation to batch the results of the operation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Pattern: `^.*$`
+Pattern: `.*`
 
  ** [RepositoryLinks](#API_ListRepositoryLinks_ResponseSyntax) **   <a name="codeconnections-ListRepositoryLinks-response-RepositoryLinks"></a>
 Lists the repository links called by the list repository links operation.
@@ -81,15 +81,15 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConcurrentModificationException **
 Exception thrown as a result of concurrent modification to an application. For example, two individuals attempting to edit the same application at the same time.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -97,11 +97,11 @@ HTTP Status Code: 400
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_ListRepositoryLinks_SeeAlso"></a>

@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [webhookId](#API_DeleteWebhook_RequestSyntax) **   <a name="amplify-DeleteWebhook-request-uri-webhookId"></a>
 The unique ID for a webhook.
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: Yes
 

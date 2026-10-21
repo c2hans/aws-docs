@@ -62,18 +62,18 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_GetNetworkAnalyzerConfiguration_ResponseSyntax) **   <a name="iotwireless-GetNetworkAnalyzerConfiguration-response-Arn"></a>
 The Amazon Resource Name of the new resource.
 Type: String
-Length Constraints: Maximum length of 1124.
+Length Constraints: Minimum length of 0. Maximum length of 1124.
 
  ** [Description](#API_GetNetworkAnalyzerConfiguration_ResponseSyntax) **   <a name="iotwireless-GetNetworkAnalyzerConfiguration-response-Description"></a>
 The description of the new resource.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 
  ** [MulticastGroups](#API_GetNetworkAnalyzerConfiguration_ResponseSyntax) **   <a name="iotwireless-GetNetworkAnalyzerConfiguration-response-MulticastGroups"></a>
 List of multicast group resources that have been added to the network analyzer configuration.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [Name](#API_GetNetworkAnalyzerConfiguration_ResponseSyntax) **   <a name="iotwireless-GetNetworkAnalyzerConfiguration-response-Name"></a>
 Name of the network analyzer configuration.
@@ -89,12 +89,12 @@ Type: [TraceContent](API_TraceContent.md) object
 List of wireless device resources that have been added to the network analyzer configuration.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 250 items.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
  ** [WirelessGateways](#API_GetNetworkAnalyzerConfiguration_ResponseSyntax) **   <a name="iotwireless-GetNetworkAnalyzerConfiguration-response-WirelessGateways"></a>
 List of wireless gateway resources that have been added to the network analyzer configuration.
 Type: Array of strings
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 
 ## Errors
 <a name="API_GetNetworkAnalyzerConfiguration_Errors"></a>
@@ -129,13 +129,13 @@ HTTP Status Code: 400
 <a name="API_GetNetworkAnalyzerConfiguration_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/GetNetworkAnalyzerConfiguration)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/GetNetworkAnalyzerConfiguration)

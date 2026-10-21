@@ -11,21 +11,21 @@ Properties of the cloud environment where this Source Server originated from.
 <a name="API_SourceCloudProperties_Contents"></a>
 
  ** originAccountID **   <a name="drs-Type-SourceCloudProperties-originAccountID"></a>
-AWS Account ID for an EC2-originated Source Server.
+ AWS Account ID for an EC2-originated Source Server.
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `.*[0-9]{12,}.*`
 Required: No
 
  ** originAvailabilityZone **   <a name="drs-Type-SourceCloudProperties-originAvailabilityZone"></a>
-AWS Availability Zone for an EC2-originated Source Server.
+ AWS Availability Zone for an EC2-originated Source Server.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(us(-gov)?|ap|ca|cn|eu|eusc|sa|af|me|mx|il)-([a-z]{2}-)?(central|north|(north(?:east|west))|south|south(?:east|west)|east|west)-[0-9][a-z]`
 Required: No
 
  ** originRegion **   <a name="drs-Type-SourceCloudProperties-originRegion"></a>
-AWS Region for an EC2-originated Source Server.
+ AWS Region for an EC2-originated Source Server.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(us(-gov)?|ap|ca|cn|eu|eusc|sa|af|me|mx|il)-([a-z]{2}-)?(central|north|(north(?:east|west))|south|south(?:east|west)|east|west)-[0-9]`

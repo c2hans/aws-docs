@@ -5,20 +5,20 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Param
 # ParametricCloudWatchMonitoringConfiguration
 <a name="API_ParametricCloudWatchMonitoringConfiguration"></a>
 
- A configuration for CloudWatch monitoring. You can configure your jobs to send log information to CloudWatch Logs. This data type allows job template parameters to be specified within.
+A configuration for CloudWatch monitoring. You can configure your jobs to send log information to CloudWatch Logs. This data type allows job template parameters to be specified within.
 
 ## Contents
 <a name="API_ParametricCloudWatchMonitoringConfiguration_Contents"></a>
 
  ** logGroupName **   <a name="emroneks-Type-ParametricCloudWatchMonitoringConfiguration-logGroupName"></a>
- The name of the log group for log publishing.
+The name of the log group for log publishing.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
 Pattern: `[\.\-_/#A-Za-z0-9\$\{\}]+`
 Required: No
 
  ** logStreamNamePrefix **   <a name="emroneks-Type-ParametricCloudWatchMonitoringConfiguration-logStreamNamePrefix"></a>
- The specified name prefix for log streams.
+The specified name prefix for log streams.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `.*\S.*`

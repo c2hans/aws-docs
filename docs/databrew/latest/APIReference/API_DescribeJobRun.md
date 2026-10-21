@@ -11,7 +11,7 @@ Represents one run of a DataBrew job.
 <a name="API_DescribeJobRun_RequestSyntax"></a>
 
 ```
-GET /jobs/{{name}}/jobRun/{{runId}} HTTP/1.1
+GET /jobs/{{Name}}/jobRun/{{RunId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,12 +19,12 @@ GET /jobs/{{name}}/jobRun/{{runId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DescribeJobRun_RequestSyntax) **   <a name="databrew-DescribeJobRun-request-uri-Name"></a>
+ ** [Name](#API_DescribeJobRun_RequestSyntax) **   <a name="databrew-DescribeJobRun-request-uri-Name"></a>
 The name of the job being processed during this run.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes
 
- ** [runId](#API_DescribeJobRun_RequestSyntax) **   <a name="databrew-DescribeJobRun-request-uri-RunId"></a>
+ ** [RunId](#API_DescribeJobRun_RequestSyntax) **   <a name="databrew-DescribeJobRun-request-uri-RunId"></a>
 The unique identifier of the job run.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

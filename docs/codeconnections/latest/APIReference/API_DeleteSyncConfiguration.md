@@ -28,7 +28,7 @@ The request accepts the following data in JSON format.
 The name of the AWS resource associated with the sync configuration to be deleted.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: Yes
 
  ** [SyncType](#API_DeleteSyncConfiguration_RequestSyntax) **   <a name="codeconnections-DeleteSyncConfiguration-request-SyncType"></a>
@@ -49,15 +49,15 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConcurrentModificationException **
 Exception thrown as a result of concurrent modification to an application. For example, two individuals attempting to edit the same application at the same time.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -65,11 +65,11 @@ HTTP Status Code: 400
 
  ** LimitExceededException **
 Exceeded the maximum limit for connections.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_DeleteSyncConfiguration_SeeAlso"></a>

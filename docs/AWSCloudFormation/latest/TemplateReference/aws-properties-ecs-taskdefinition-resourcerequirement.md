@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[SharingStrategy](#cfn-ecs-taskdefinition-resourcerequirement-sharingstrategy)" : {{SharingStrategy}},
   "[Type](#cfn-ecs-taskdefinition-resourcerequirement-type)" : {{String}},
   "[Value](#cfn-ecs-taskdefinition-resourcerequirement-value)" : {{String}}
 }
@@ -28,12 +29,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-taskdefinition-resourcerequirement-syntax.yaml"></a>
 
 ```
+  [SharingStrategy](#cfn-ecs-taskdefinition-resourcerequirement-sharingstrategy): {{
+    SharingStrategy}}
   [Type](#cfn-ecs-taskdefinition-resourcerequirement-type): {{String}}
   [Value](#cfn-ecs-taskdefinition-resourcerequirement-value): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-ecs-taskdefinition-resourcerequirement-properties"></a>
+
+`SharingStrategy`  <a name="cfn-ecs-taskdefinition-resourcerequirement-sharingstrategy"></a>
+Property description not available.
+*Required*: No
+*Type*: [SharingStrategy](aws-properties-ecs-taskdefinition-sharingstrategy.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Type`  <a name="cfn-ecs-taskdefinition-resourcerequirement-type"></a>
 The type of resource to assign to a container.

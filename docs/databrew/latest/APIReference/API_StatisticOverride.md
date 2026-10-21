@@ -17,7 +17,7 @@ In the following list, the required parameters are described first.
 A map that includes overrides of an evaluation’s parameters.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^[A-Za-z0-9]+$`
+Key Pattern: `[A-Za-z0-9]+`
 Value Length Constraints: Minimum length of 1. Maximum length of 32768.
 Required: Yes
 
@@ -25,7 +25,7 @@ Required: Yes
 The name of an evaluation
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[A-Z\_]+$`
+Pattern: `[A-Z\_]+`
 Required: Yes
 
 ## See Also

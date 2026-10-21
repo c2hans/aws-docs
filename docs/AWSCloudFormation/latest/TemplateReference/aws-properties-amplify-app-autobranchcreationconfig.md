@@ -68,8 +68,6 @@ Automated branch creation glob patterns for the Amplify app.
 Sets password protection for your auto created branch.
 *Required*: No
 *Type*: [BasicAuthConfig](aws-properties-amplify-app-basicauthconfig.md)
-*Pattern*: `(?s).*`
-*Maximum*: `2000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BuildSpec`  <a name="cfn-amplify-app-autobranchcreationconfig-buildspec"></a>

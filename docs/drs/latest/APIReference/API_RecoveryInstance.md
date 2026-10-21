@@ -59,7 +59,7 @@ Pattern: `drsjob-[0-9a-zA-Z]{17}`
 Required: No
 
  ** originAvailabilityZone **   <a name="drs-Type-RecoveryInstance-originAvailabilityZone"></a>
-AWS availability zone associated with the recovery instance.
+ AWS availability zone associated with the recovery instance.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(us(-gov)?|ap|ca|cn|eu|eusc|sa|af|me|mx|il)-([a-z]{2}-)?(central|north|(north(?:east|west))|south|south(?:east|west)|east|west)-[0-9][a-z]`

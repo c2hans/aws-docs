@@ -76,7 +76,7 @@ Required: Yes
  ** [Description](#API_CreateRuleset_RequestSyntax) **   <a name="databrew-CreateRuleset-request-Description"></a>
 The description of the ruleset.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** [Tags](#API_CreateRuleset_RequestSyntax) **   <a name="databrew-CreateRuleset-request-Tags"></a>
@@ -84,7 +84,7 @@ Metadata tags to apply to the ruleset.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
 ## Response Syntax

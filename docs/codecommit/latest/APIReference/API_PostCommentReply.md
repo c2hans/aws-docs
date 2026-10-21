@@ -80,34 +80,50 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ClientRequestTokenRequiredException **
 A client request token is required. A client request token is an unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request returns information about the initial request that used that token.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentContentRequiredException **
 The comment is empty. You must provide some content for a comment. The content cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentContentSizeLimitExceededException **
 The comment is too large. Comments are limited to 10,240 characters.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentDoesNotExistException **
 No comment exists with the provided ID. Verify that you have used the correct ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommentIdRequiredException **
 The comment ID is missing or null. A comment ID is required.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** IdempotencyParameterMismatchException **
 The client request token is not valid. Either the token is not in a valid format, or the token has been used in a previous request and cannot be reused.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidClientRequestTokenException **
 The client request token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommentIdException **
 The comment ID is not in a valid format. Make sure that you have provided the full comment ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

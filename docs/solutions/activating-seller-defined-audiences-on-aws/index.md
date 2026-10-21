@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/activating-seller-defined-audi
 title: 'Guidance for Activating Seller Defined Audiences on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/activating-seller-defined-audiences-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Activating Seller Defined Audiences on AWS

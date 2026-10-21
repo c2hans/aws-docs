@@ -23,14 +23,14 @@ Required: Yes
 Optional value for a non-US locale code, needed for correct interpretation of some date formats.
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 100.
-Pattern: `^[A-Za-z0-9_\.#@\-]+$`
+Pattern: `[A-Za-z0-9_\.#@\-]+`
 Required: No
 
  ** TimezoneOffset **   <a name="databrew-Type-DatetimeOptions-TimezoneOffset"></a>
 Optional value for a timezone offset of the datetime parameter value in the Amazon S3 path. Shouldn't be used if Format for this parameter includes timezone fields. If no offset specified, UTC is assumed.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 6.
-Pattern: `^(Z|[-+](\d|\d{2}|\d{2}:?\d{2}))$`
+Pattern: `(Z|[-+](\d|\d{2}|\d{2}:?\d{2}))`
 Required: No
 
 ## See Also

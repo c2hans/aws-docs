@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[CurrentCount](#cfn-sagemaker-cluster-clusterinstancegroup-currentcount)" : {{Integer}},
   "[ExecutionRole](#cfn-sagemaker-cluster-clusterinstancegroup-executionrole)" : {{String}},
   "[ImageId](#cfn-sagemaker-cluster-clusterinstancegroup-imageid)" : {{String}},
+  "[ImageReleaseVersion](#cfn-sagemaker-cluster-clusterinstancegroup-imagereleaseversion)" : {{String}},
   "[InstanceCount](#cfn-sagemaker-cluster-clusterinstancegroup-instancecount)" : {{Integer}},
   "[InstanceGroupName](#cfn-sagemaker-cluster-clusterinstancegroup-instancegroupname)" : {{String}},
   "[InstanceRequirements](#cfn-sagemaker-cluster-clusterinstancegroup-instancerequirements)" : {{InstanceRequirements}},
@@ -53,6 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [CurrentCount](#cfn-sagemaker-cluster-clusterinstancegroup-currentcount): {{Integer}}
   [ExecutionRole](#cfn-sagemaker-cluster-clusterinstancegroup-executionrole): {{String}}
   [ImageId](#cfn-sagemaker-cluster-clusterinstancegroup-imageid): {{String}}
+  [ImageReleaseVersion](#cfn-sagemaker-cluster-clusterinstancegroup-imagereleaseversion): {{String}}
   [InstanceCount](#cfn-sagemaker-cluster-clusterinstancegroup-instancecount): {{Integer}}
   [InstanceGroupName](#cfn-sagemaker-cluster-clusterinstancegroup-instancegroupname): {{String}}
   [InstanceRequirements](#cfn-sagemaker-cluster-clusterinstancegroup-instancerequirements): {{
@@ -117,6 +119,15 @@ The ID of the Amazon Machine Image (AMI) to use for the instances in the group.
 *Pattern*: `^ami-[0-9a-fA-F]{8,17}|default$`
 *Minimum*: `7`
 *Maximum*: `21`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ImageReleaseVersion`  <a name="cfn-sagemaker-cluster-clusterinstancegroup-imagereleaseversion"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]+\.[0-9]+\.[0-9]+$`
+*Minimum*: `5`
+*Maximum*: `64`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InstanceCount`  <a name="cfn-sagemaker-cluster-clusterinstancegroup-instancecount"></a>

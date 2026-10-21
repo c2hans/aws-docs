@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[Arn](#cfn-arcregionswitch-plan-lambdas-arn)" : {{String}},
   "[CrossAccountRole](#cfn-arcregionswitch-plan-lambdas-crossaccountrole)" : {{String}},
-  "[ExternalId](#cfn-arcregionswitch-plan-lambdas-externalid)" : {{String}}
+  "[ExternalId](#cfn-arcregionswitch-plan-lambdas-externalid)" : {{String}},
+  "[Payload](#cfn-arcregionswitch-plan-lambdas-payload)" : {{String}}
 }
 ```
 
@@ -32,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Arn](#cfn-arcregionswitch-plan-lambdas-arn): {{String}}
   [CrossAccountRole](#cfn-arcregionswitch-plan-lambdas-crossaccountrole): {{String}}
   [ExternalId](#cfn-arcregionswitch-plan-lambdas-externalid): {{String}}
+  [Payload](#cfn-arcregionswitch-plan-lambdas-payload): {{String}}
 ```
 
 ## Properties
@@ -54,4 +56,14 @@ The cross account role for the configuration.
 The external ID (secret key) for the configuration.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Payload`  <a name="cfn-arcregionswitch-plan-lambdas-payload"></a>
+The JSON payload to send to the Lambda function invocation. If you don't specify a payload, Region switch invokes the function with only the execution metadata.
+If you provide a JSON object, Region switch merges execution metadata keys (`InvokedBy`, `PlanArn`, `ExecutionId`, `StepName`) into the top level. If one of your keys has the same name as a metadata key, your key takes precedence.
+If you provide any other JSON type (string, number, boolean, or array), Region switch forwards it to the Lambda function unchanged, without adding metadata.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `786432`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

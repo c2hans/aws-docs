@@ -32,7 +32,7 @@ Required: No
  ** MacVersion **   <a name="iotwireless-Type-LoRaWANDeviceProfile-MacVersion"></a>
 The MAC version (such as OTAA 1.1 or OTAA 1.0.3) to use with this device profile.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** MaxDutyCycle **   <a name="iotwireless-Type-LoRaWANDeviceProfile-MaxDutyCycle"></a>
@@ -68,13 +68,13 @@ Required: No
  ** RegParamsRevision **   <a name="iotwireless-Type-LoRaWANDeviceProfile-RegParamsRevision"></a>
 The version of regional parameters.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** RfRegion **   <a name="iotwireless-Type-LoRaWANDeviceProfile-RfRegion"></a>
 The frequency band (RFRegion) value.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** RxDataRate2 **   <a name="iotwireless-Type-LoRaWANDeviceProfile-RxDataRate2"></a>
@@ -125,6 +125,6 @@ Required: No
 <a name="API_LoRaWANDeviceProfile_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/LoRaWANDeviceProfile)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/LoRaWANDeviceProfile)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/LoRaWANDeviceProfile)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/LoRaWANDeviceProfile)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/LoRaWANDeviceProfile)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/LoRaWANDeviceProfile)

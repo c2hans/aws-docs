@@ -79,14 +79,20 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidContinuationTokenException **
 The specified continuation token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidOrderException **
 The specified sort order is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidSortByException **
 The specified sort by value is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

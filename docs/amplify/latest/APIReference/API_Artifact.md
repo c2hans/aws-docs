@@ -13,13 +13,13 @@ Describes an artifact.
  ** artifactFileName **   <a name="amplify-Type-Artifact-artifactFileName"></a>
 The file name for the artifact.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: Yes
 
  ** artifactId **   <a name="amplify-Type-Artifact-artifactId"></a>
 The unique ID for the artifact.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: Yes
 

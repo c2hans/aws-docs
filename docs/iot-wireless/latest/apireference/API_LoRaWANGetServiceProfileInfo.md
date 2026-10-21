@@ -18,7 +18,7 @@ Required: No
  ** ChannelMask **   <a name="iotwireless-Type-LoRaWANGetServiceProfileInfo-ChannelMask"></a>
 The ChannelMask value.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** DevStatusReqFreq **   <a name="iotwireless-Type-LoRaWANGetServiceProfileInfo-DevStatusReqFreq"></a>
@@ -42,7 +42,7 @@ Required: No
  ** DlRatePolicy **   <a name="iotwireless-Type-LoRaWANGetServiceProfileInfo-DlRatePolicy"></a>
 The DLRatePolicy value.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** DrMax **   <a name="iotwireless-Type-LoRaWANGetServiceProfileInfo-DrMax"></a>
@@ -142,13 +142,13 @@ Required: No
  ** UlRatePolicy **   <a name="iotwireless-Type-LoRaWANGetServiceProfileInfo-UlRatePolicy"></a>
 The ULRatePolicy value.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
 ## See Also
 <a name="API_LoRaWANGetServiceProfileInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/LoRaWANGetServiceProfileInfo)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/LoRaWANGetServiceProfileInfo)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/LoRaWANGetServiceProfileInfo)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/LoRaWANGetServiceProfileInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/LoRaWANGetServiceProfileInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/LoRaWANGetServiceProfileInfo)

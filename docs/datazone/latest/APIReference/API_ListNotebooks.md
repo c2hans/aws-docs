@@ -51,7 +51,7 @@ Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 
  ** [type](#API_ListNotebooks_RequestSyntax) **   <a name="datazone-ListNotebooks-request-uri-type"></a>
 The type to filter notebooks by.
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 
 ## Request Body
 <a name="API_ListNotebooks_RequestBody"></a>

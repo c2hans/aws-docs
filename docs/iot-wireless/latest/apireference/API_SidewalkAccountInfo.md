@@ -13,7 +13,7 @@ Information about a Sidewalk account.
  ** AmazonId **   <a name="iotwireless-Type-SidewalkAccountInfo-AmazonId"></a>
 The Sidewalk Amazon ID.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** AppServerPrivateKey **   <a name="iotwireless-Type-SidewalkAccountInfo-AppServerPrivateKey"></a>
@@ -27,6 +27,6 @@ Required: No
 <a name="API_SidewalkAccountInfo_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/SidewalkAccountInfo)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/SidewalkAccountInfo)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/SidewalkAccountInfo)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/SidewalkAccountInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/SidewalkAccountInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/SidewalkAccountInfo)

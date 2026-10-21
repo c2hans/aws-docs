@@ -79,7 +79,7 @@ You can use structured outputs across the following Amazon Bedrock features:
 | [InvokeModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html) and [InvokeModelWithResponseStream](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html) APIs | Yes | Single-turn inference. |
 | Cross-Region inference | Yes | Works without any additional setup. |
 | Batch inference | Yes | Works without any additional setup. |
-| Anthropic Messages API on the bedrock-mantle endpoint (https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages) | No | The output\_config.format parameter is rejected with a 400 error. To use structured outputs with Anthropic Claude models, send the request through the Converse API or the InvokeModel API on the bedrock-runtime endpoint. |
+| Anthropic Messages API on the bedrock-mantle endpoint (https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages) | Yes | Supported for Anthropic Claude models through the output\_config.format parameter. For Claude-specific guidance and examples, see [Structured outputs for Anthropic Claude models](claude-messages-structured-outputs.md). |
 
 **Note**
 Structured outputs is incompatible with citations for Anthropic models. If you enable citations while using structured outputs, the model will return a 400 error.

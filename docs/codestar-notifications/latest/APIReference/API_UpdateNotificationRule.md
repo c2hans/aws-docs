@@ -45,7 +45,7 @@ The request accepts the following data in JSON format.
  ** [Arn](#API_UpdateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-UpdateNotificationRule-request-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
  ** [DetailType](#API_UpdateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-UpdateNotificationRule-request-DetailType"></a>
@@ -64,7 +64,7 @@ Required: No
 The name of the notification rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z0-9\-_ ]+$`
+Pattern: `[A-Za-z0-9\-_ ]+`
 Required: No
 
  ** [Status](#API_UpdateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-UpdateNotificationRule-request-Status"></a>
@@ -76,7 +76,7 @@ Required: No
  ** [Targets](#API_UpdateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-UpdateNotificationRule-request-Targets"></a>
 The address and type of the targets to receive notifications from this notification rule.
 Type: Array of [Target](API_Target.md) objects
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
 ## Response Syntax

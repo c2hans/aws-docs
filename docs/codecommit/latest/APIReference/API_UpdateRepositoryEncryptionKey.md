@@ -27,7 +27,7 @@ The request accepts the following data in JSON format.
  ** [kmsKeyId](#API_UpdateRepositoryEncryptionKey_RequestSyntax) **   <a name="CodeCommit-UpdateRepositoryEncryptionKey-request-kmsKeyId"></a>
 The ID of the encryption key. You can view the ID of an encryption key in the AWS KMS console, or use the AWS KMS APIs to programmatically retrieve a key ID. For more information about acceptable values for keyID, see [KeyId](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html#KMS-Decrypt-request-KeyId) in the Decrypt API description in the * AWS Key Management Service API Reference*.
 Type: String
-Pattern: `^[a-zA-Z0-9:/_-]+$`
+Pattern: `[a-zA-Z0-9:/_-]+`
 Required: Yes
 
  ** [repositoryName](#API_UpdateRepositoryEncryptionKey_RequestSyntax) **   <a name="CodeCommit-UpdateRepositoryEncryptionKey-request-repositoryName"></a>
@@ -58,12 +58,12 @@ The following data is returned in JSON format by the service.
  ** [kmsKeyId](#API_UpdateRepositoryEncryptionKey_ResponseSyntax) **   <a name="CodeCommit-UpdateRepositoryEncryptionKey-response-kmsKeyId"></a>
 The ID of the encryption key.
 Type: String
-Pattern: `^[a-zA-Z0-9:/_-]+$`
+Pattern: `[a-zA-Z0-9:/_-]+`
 
  ** [originalKmsKeyId](#API_UpdateRepositoryEncryptionKey_ResponseSyntax) **   <a name="CodeCommit-UpdateRepositoryEncryptionKey-response-originalKmsKeyId"></a>
 The ID of the encryption key formerly used to encrypt and decrypt the repository.
 Type: String
-Pattern: `^[a-zA-Z0-9:/_-]+$`
+Pattern: `[a-zA-Z0-9:/_-]+`
 
  ** [repositoryId](#API_UpdateRepositoryEncryptionKey_ResponseSyntax) **   <a name="CodeCommit-UpdateRepositoryEncryptionKey-response-repositoryId"></a>
 The ID of the repository.
@@ -76,47 +76,69 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyInvalidIdException **
 The AWS Key Management Service encryption key is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyInvalidUsageException **
 A AWS KMS encryption key was used to try and encrypt or decrypt a repository, but either the repository or the key was not in a valid state to support the operation.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyRequiredException **
 A AWS KMS encryption key ID is required but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

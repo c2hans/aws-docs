@@ -22,5 +22,8 @@ The following quotas apply specifically to managed knowledge bases:
 | Maximum query input characters per Retrieve or AgenticRetrieveStream request (English text) | 10,000 | No |
 | Maximum Retrieve requests per minute (RPM), per knowledge base | 600 (supports burst of 25 requests per second (RPS)) | Yes |
 | Maximum AgenticRetrieveStream requests per minute, per account | 300 | Yes |
+| Maximum retrieval instructions per account, per Region | 50 | Yes |
+| Maximum versions per retrieval instruction | 50 | Yes |
+| Maximum total characters across the fields of a retrieval instruction | 24,000 | Yes |
 
 To request adjustable quota increases, follow the steps at [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html), or contact your AWS account team.

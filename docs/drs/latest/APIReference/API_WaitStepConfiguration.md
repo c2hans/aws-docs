@@ -11,7 +11,7 @@ Configuration for a `WAIT` type step.
 <a name="API_WaitStepConfiguration_Contents"></a>
 
  ** waitDurationMinutes **   <a name="drs-Type-WaitStepConfiguration-waitDurationMinutes"></a>
-The wait duration in minutes for a `WAIT` type step.
+The wait duration in minutes for a Wait type step.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 120.
 Required: Yes

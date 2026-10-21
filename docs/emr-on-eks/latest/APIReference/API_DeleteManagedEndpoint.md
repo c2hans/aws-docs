@@ -11,7 +11,7 @@ Deletes a managed endpoint. A managed endpoint is a gateway that connects Amazon
 <a name="API_DeleteManagedEndpoint_RequestSyntax"></a>
 
 ```
-DELETE /virtualclusters/{{virtualClusterId}}/endpoints/{{endpointId}} HTTP/1.1
+DELETE /virtualclusters/{{virtualClusterId}}/endpoints/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /virtualclusters/{{virtualClusterId}}/endpoints/{{endpointId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [endpointId](#API_DeleteManagedEndpoint_RequestSyntax) **   <a name="emroneks-DeleteManagedEndpoint-request-uri-id"></a>
+ ** [id](#API_DeleteManagedEndpoint_RequestSyntax) **   <a name="emroneks-DeleteManagedEndpoint-request-uri-id"></a>
 The ID of the managed endpoint.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

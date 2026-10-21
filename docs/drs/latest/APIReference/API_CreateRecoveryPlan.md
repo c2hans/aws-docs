@@ -41,13 +41,13 @@ Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** [description](#API_CreateRecoveryPlan_RequestSyntax) **   <a name="drs-CreateRecoveryPlan-request-description"></a>
-The description of the Recovery Plan.
+The description of a Recovery Plan.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** [name](#API_CreateRecoveryPlan_RequestSyntax) **   <a name="drs-CreateRecoveryPlan-request-name"></a>
-The name of the Recovery Plan.
+The name of a Recovery Plan.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _-]*`
@@ -90,7 +90,7 @@ If the action is successful, the service sends back an HTTP 201 response.
 The following data is returned in JSON format by the service.
 
  ** [recoveryPlan](#API_CreateRecoveryPlan_ResponseSyntax) **   <a name="drs-CreateRecoveryPlan-response-recoveryPlan"></a>
-The created Recovery Plan.
+A Recovery Plan resource.
 Type: [RecoveryPlan](API_RecoveryPlan.md) object
 
 ## Errors

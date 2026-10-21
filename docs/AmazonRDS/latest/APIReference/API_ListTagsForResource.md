@@ -42,6 +42,10 @@ For information about the errors that are common to all actions, see [Common Err
  `BlueGreenDeploymentIdentifier` doesn't refer to an existing blue/green deployment.
 HTTP Status Code: 404
 
+ ** DBCapacityReservationNotFound **
+ `DBCapacityReservationIdentifier` doesn't refer to an existing DB capacity reservation.
+HTTP Status Code: 404
+
  ** DBClusterNotFoundFault **
  `DBClusterIdentifier` doesn't refer to an existing DB cluster.
 HTTP Status Code: 404

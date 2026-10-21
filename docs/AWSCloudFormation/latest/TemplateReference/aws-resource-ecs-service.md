@@ -56,6 +56,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[EnableECSManagedTags](#cfn-ecs-service-enableecsmanagedtags)" : {{Boolean}},
       "[EnableExecuteCommand](#cfn-ecs-service-enableexecutecommand)" : {{Boolean}},
       "[ForceNewDeployment](#cfn-ecs-service-forcenewdeployment)" : {{ForceNewDeployment}},
+      "[GatewayConnectors](#cfn-ecs-service-gatewayconnectors)" : {{[ GatewayConnector, ... ]}},
       "[HealthCheckGracePeriodSeconds](#cfn-ecs-service-healthcheckgraceperiodseconds)" : {{Integer}},
       "[LaunchType](#cfn-ecs-service-launchtype)" : {{String}},
       "[LoadBalancers](#cfn-ecs-service-loadbalancers)" : {{[ LoadBalancer, ... ]}},
@@ -97,6 +98,8 @@ Properties:
   [EnableExecuteCommand](#cfn-ecs-service-enableexecutecommand): {{Boolean}}
   [ForceNewDeployment](#cfn-ecs-service-forcenewdeployment): {{
     ForceNewDeployment}}
+  [GatewayConnectors](#cfn-ecs-service-gatewayconnectors): {{
+    - GatewayConnector}}
   [HealthCheckGracePeriodSeconds](#cfn-ecs-service-healthcheckgraceperiodseconds): {{Integer}}
   [LaunchType](#cfn-ecs-service-launchtype): {{String}}
   [LoadBalancers](#cfn-ecs-service-loadbalancers): {{
@@ -193,6 +196,12 @@ Determines whether the execute command functionality is turned on for the servic
 Determines whether to force a new deployment of the service. By default, deployments aren't forced. You can use this option to start a new deployment with no service definition changes. For example, you can update a service's tasks to use a newer Docker image with the same image/tag combination (`my_image:latest`) or to roll Fargate tasks onto a newer platform version.
 *Required*: No
 *Type*: [ForceNewDeployment](aws-properties-ecs-service-forcenewdeployment.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`GatewayConnectors`  <a name="cfn-ecs-service-gatewayconnectors"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [GatewayConnector](aws-properties-ecs-service-gatewayconnector.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckGracePeriodSeconds`  <a name="cfn-ecs-service-healthcheckgraceperiodseconds"></a>

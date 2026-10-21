@@ -45,19 +45,19 @@ Pattern: `arn:aws(-[a-z0-9]+)*:drs:[a-z0-9-]+:[0-9]{12}:[a-zA-Z0-9_/.-]+`
 Required: Yes
 
  ** [servers](#API_UpdateRecoveryPlanExecutionStep_RequestSyntax) **   <a name="drs-UpdateRecoveryPlanExecutionStep-request-servers"></a>
-Full replacement of the server list. Only allowed when the step is in `NOT_STARTED` status for server steps.
+Full replacement of the server list. Only allowed when the step is in NOT\_STARTED status (Server type steps only).
 Type: Array of [RecoveryPlanServer](API_RecoveryPlanServer.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
 
  ** [status](#API_UpdateRecoveryPlanExecutionStep_RequestSyntax) **   <a name="drs-UpdateRecoveryPlanExecutionStep-request-status"></a>
-The status of a step within a Recovery Plan execution.
+Only SKIPPED is accepted. Step must be in NOT\_STARTED or FAILED status.
 Type: String
 Valid Values: `NOT_STARTED | EXECUTING | WAITING | COMPLETED | FAILED | TIMED_OUT | SKIPPED`
 Required: No
 
  ** [waitDurationMinutes](#API_UpdateRecoveryPlanExecutionStep_RequestSyntax) **   <a name="drs-UpdateRecoveryPlanExecutionStep-request-waitDurationMinutes"></a>
-Updated wait duration. Only allowed when the step is in `NOT_STARTED` status for wait steps.
+Updated wait duration. Only allowed when the step is in NOT\_STARTED status (Wait type steps only).
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 120.
 Required: No
@@ -95,7 +95,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [recoveryPlanExecutionStep](#API_UpdateRecoveryPlanExecutionStep_ResponseSyntax) **   <a name="drs-UpdateRecoveryPlanExecutionStep-response-recoveryPlanExecutionStep"></a>
-The updated execution step.
+A Recovery Plan Execution Step resource.
 Type: [RecoveryPlanExecutionStep](API_RecoveryPlanExecutionStep.md) object
 
 ## Errors

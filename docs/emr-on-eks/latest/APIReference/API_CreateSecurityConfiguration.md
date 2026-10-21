@@ -129,7 +129,7 @@ The following data is returned in JSON format by the service.
 The ARN (Amazon Resource Name) of the security configuration.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/securityconfigurations\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/securityconfigurations\/[0-9a-zA-Z]+`
 
  ** [id](#API_CreateSecurityConfiguration_ResponseSyntax) **   <a name="emroneks-CreateSecurityConfiguration-response-id"></a>
 The ID of the security configuration.

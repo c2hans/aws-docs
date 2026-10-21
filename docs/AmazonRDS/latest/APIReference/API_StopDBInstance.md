@@ -27,6 +27,15 @@ The user-supplied instance identifier of the DB Snapshot created immediately bef
 Type: String
 Required: No
 
+ ** DetachFromDBCapacityReservation **
+Specifies whether the DB instance stops using its DB capacity reservation when the DB instance stops. When you specify `true`, the DB instance belongs to no reservation after it stops, and a later start launches it outside the reservation.
+By default, a stopped DB instance keeps its DB capacity reservation, and a later start returns the DB instance to the same reservation.
+Every stop releases the unit of reserved capacity that the DB instance holds, for either value of this parameter. Another DB instance can then use that capacity. This parameter controls the reservation that the DB instance belongs to, and it does not control the release of the capacity.
+If the DB instance uses no DB capacity reservation, this parameter has no effect.
+Amazon RDS holds no capacity for a stopped DB instance. When the reservation has no available capacity in the Availability Zone of the DB instance, a later start waits for capacity in that Availability Zone. When the DB instance belongs to no reservation, a later start can fail because the AWS Region has insufficient capacity for the DB instance class.
+Type: Boolean
+Required: No
+
 ## Response Elements
 <a name="API_StopDBInstance_ResponseElements"></a>
 
@@ -48,6 +57,10 @@ HTTP Status Code: 404
 
  ** DBSnapshotAlreadyExists **
  `DBSnapshotIdentifier` is already used by an existing snapshot.
+HTTP Status Code: 400
+
+ ** InvalidDBCapacityReservationState **
+The DB capacity reservation isn't in a valid state.
 HTTP Status Code: 400
 
  ** InvalidDBClusterStateFault **

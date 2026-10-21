@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cloudtrail/index.html
 title: 'AWS CloudTrail Documentation'
 canonical_url: https://docs.aws.amazon.com/cloudtrail/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS CloudTrail Documentation

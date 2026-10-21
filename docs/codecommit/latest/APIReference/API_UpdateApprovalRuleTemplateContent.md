@@ -78,26 +78,38 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ApprovalRuleTemplateContentRequiredException **
 The content for the approval rule template is empty. You must provide some content for an approval rule template. The content cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ApprovalRuleTemplateDoesNotExistException **
 The specified approval rule template does not exist. Verify that the name is correct and that you are signed in to the AWS Region where the template was created, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ApprovalRuleTemplateNameRequiredException **
 An approval rule template name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidApprovalRuleTemplateContentException **
 The content of the approval rule template is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidApprovalRuleTemplateNameException **
 The name of the approval rule template is not valid. Template names must be between 1 and 100 valid characters in length. For more information about limits in AWS CodeCommit, see [Quotas](https://docs.aws.amazon.com/codecommit/latest/userguide/limits.html) in the * AWS CodeCommit User Guide*.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRuleContentSha256Exception **
 The SHA-256 hash signature for the rule content is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

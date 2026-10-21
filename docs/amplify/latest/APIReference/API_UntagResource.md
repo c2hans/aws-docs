@@ -22,14 +22,14 @@ The request uses the following URI parameters.
  ** [resourceArn](#API_UntagResource_RequestSyntax) **   <a name="amplify-UntagResource-request-uri-resourceArn"></a>
 The Amazon Resource Name (ARN) to use to untag a resource.
 Length Constraints: Minimum length of 0. Maximum length of 2048.
-Pattern: `^arn:aws:amplify:.*`
+Pattern: `arn:aws:amplify:.*`
 Required: Yes
 
  ** [tagKeys](#API_UntagResource_RequestSyntax) **   <a name="amplify-UntagResource-request-uri-tagKeys"></a>
 The tag keys to use to untag a resource.
 Array Members: Minimum number of 1 item. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^(?!aws:)[a-zA-Z+-=._:/]+$`
+Pattern: `(?!aws:)[a-zA-Z+-=._:/]+`
 Required: Yes
 
 ## Request Body

@@ -14,7 +14,7 @@ This entity represents the endpoint that is managed by Amazon EMR on EKS.
 The ARN of the endpoint.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/endpoints\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/endpoints\/[0-9a-zA-Z]+`
 Required: No
 
  ** authProxyUrl **   <a name="emroneks-Type-Endpoint-authProxyUrl"></a>
@@ -29,7 +29,7 @@ Required: No
 The certificate ARN of the endpoint. This field is under deprecation and will be removed in future.
 Type: String
 Length Constraints: Minimum length of 44. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):acm:.+:(\d{12}):certificate/.+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):acm:.+:(\d{12}):certificate/.+`
 Required: No
 
  ** certificateAuthority **   <a name="emroneks-Type-Endpoint-certificateAuthority"></a>
@@ -51,11 +51,11 @@ Required: No
 The execution role ARN of the endpoint.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)`
 Required: No
 
  ** failureReason **   <a name="emroneks-Type-Endpoint-failureReason"></a>
- The reasons why the endpoint has failed.
+The reasons why the endpoint has failed.
 Type: String
 Valid Values: `INTERNAL_ERROR | USER_ERROR | VALIDATION_ERROR | CLUSTER_UNAVAILABLE`
 Required: No
@@ -102,7 +102,7 @@ Valid Values: `CREATING | ACTIVE | TERMINATING | TERMINATED | TERMINATED_WITH_ER
 Required: No
 
  ** stateDetails **   <a name="emroneks-Type-Endpoint-stateDetails"></a>
- Additional details of the endpoint state.
+Additional details of the endpoint state.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `.*\S.*`

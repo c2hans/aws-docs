@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_JobConfi
 
 Describes the configuration details that apply to the jobs for an Amplify app.
 
-Use `JobConfig` to apply configuration to jobs, such as customizing the build instance size when you create or update an Amplify app. For more information about customizable build instances, see [Custom build instances](https://docs.aws.amazon.com/amplify/latest/userguide/custom-build-instance.html) in the *Amplify User Guide*.
+Use `JobConfig` to apply configuration to jobs, such as customizing the build instance size when you create or update an Amplify app. For more information about customizable build instances, see [Custom build instances](https://docs.aws.amazon.com/amplify/latest/userguide/custom-build-instance.html) in the * Amplify User Guide*.
 
 ## Contents
 <a name="API_JobConfig_Contents"></a>

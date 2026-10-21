@@ -11,7 +11,7 @@ Generate a session token to connect to a managed endpoint.
 <a name="API_GetManagedEndpointSessionCredentials_RequestSyntax"></a>
 
 ```
-POST /virtualclusters/{{virtualClusterId}}/endpoints/{{endpointId}}/credentials HTTP/1.1
+POST /virtualclusters/{{virtualClusterIdentifier}}/endpoints/{{endpointIdentifier}}/credentials HTTP/1.1
 Content-type: application/json
 
 {
@@ -28,13 +28,13 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [endpointId](#API_GetManagedEndpointSessionCredentials_RequestSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-request-uri-endpointIdentifier"></a>
+ ** [endpointIdentifier](#API_GetManagedEndpointSessionCredentials_RequestSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-request-uri-endpointIdentifier"></a>
 The ARN of the managed endpoint for which the request is submitted.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `.*\S.*`
 Required: Yes
 
- ** [virtualClusterId](#API_GetManagedEndpointSessionCredentials_RequestSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-request-uri-virtualClusterIdentifier"></a>
+ ** [virtualClusterIdentifier](#API_GetManagedEndpointSessionCredentials_RequestSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-request-uri-virtualClusterIdentifier"></a>
 The ARN of the Virtual Cluster which the Managed Endpoint belongs to.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `.*\S.*`
@@ -56,7 +56,7 @@ Required: No
 Type of the token requested. Currently supported and default value of this field is “TOKEN.”
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^.*\S.*$`
+Pattern: `.*\S.*`
 Required: Yes
 
  ** [durationInSeconds](#API_GetManagedEndpointSessionCredentials_RequestSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-request-durationInSeconds"></a>
@@ -68,14 +68,14 @@ Required: No
 The IAM Execution Role ARN that will be used by the job run.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)`
 Required: Yes
 
  ** [logContext](#API_GetManagedEndpointSessionCredentials_RequestSyntax) **   <a name="emroneks-GetManagedEndpointSessionCredentials-request-logContext"></a>
 String identifier used to separate sections of the execution logs uploaded to S3.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 63.
-Pattern: `^((?!.*-s3alias)(?!xn--.*)[a-z0-9][-a-z0-9.]*)?[a-z0-9]$`
+Pattern: `((?!.*-s3alias)(?!xn--.*)[a-z0-9][-a-z0-9.]*)?[a-z0-9]`
 Required: No
 
 ## Response Syntax

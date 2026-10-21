@@ -18,7 +18,7 @@ List of included evaluations. When the list is undefined, all supported evaluati
 Type: Array of strings
 Array Members: Minimum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[A-Z\_]+$`
+Pattern: `[A-Z\_]+`
 Required: No
 
  ** Overrides **   <a name="databrew-Type-StatisticsConfiguration-Overrides"></a>

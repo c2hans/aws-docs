@@ -13,4 +13,4 @@ Understanding where and how to deploy MCP servers is fundamental to building sca
 
 The choice between local and remote deployment significantly impacts the development of workflows, security models, scalability, and operational complexity.
 
-The following section explores both deployment models, their characteristics, and appropriate use cases. While local MCP servers excel for individual development and testing, remote deployments on AWS infrastructure enable enterprise-scale AI applications with centralized management, security controls, and reliable access for multiple users and applications.
+The following section explores both deployment models, their characteristics, and appropriate use cases. While local MCP servers excel for individual development and testing, remote deployments enable enterprise-scale AI applications with centralized management, security controls, and reliable access for multiple users and applications.

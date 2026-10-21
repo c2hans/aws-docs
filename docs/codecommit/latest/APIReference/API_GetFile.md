@@ -74,7 +74,7 @@ Type: String
  ** [fileContent](#API_GetFile_ResponseSyntax) **   <a name="CodeCommit-GetFile-response-fileContent"></a>
 The base-64 encoded binary data object that represents the content of the file.
 Type: Base64-encoded binary data object
-Length Constraints: Maximum length of 6291456.
+Length Constraints: Minimum length of 0. Maximum length of 6291456.
 
  ** [fileMode](#API_GetFile_ResponseSyntax) **   <a name="CodeCommit-GetFile-response-fileMode"></a>
 The extrapolated file mode permissions of the blob. Valid values include strings such as EXECUTABLE and not numeric values.
@@ -97,59 +97,87 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommitDoesNotExistException **
 The specified commit does not exist or no commit was specified, and the specified repository has no default branch.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileDoesNotExistException **
 The specified file does not exist. Verify that you have used the correct file name, full path, and extension.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileTooLargeException **
 The specified file exceeds the file size limit for AWS CodeCommit. For more information about limits in AWS CodeCommit, see [Quotas](https://docs.aws.amazon.com/codecommit/latest/userguide/limits.html) in the * AWS CodeCommit User Guide*.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitException **
 The specified commit is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPathException **
 The specified path is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PathRequiredException **
 The folderPath for a location cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

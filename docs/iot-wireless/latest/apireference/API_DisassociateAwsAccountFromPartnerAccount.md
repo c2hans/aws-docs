@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [PartnerAccountId](#API_DisassociateAwsAccountFromPartnerAccount_RequestSyntax) **   <a name="iotwireless-DisassociateAwsAccountFromPartnerAccount-request-uri-PartnerAccountId"></a>
 The partner account ID to disassociate from the AWS account.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
  ** [PartnerType](#API_DisassociateAwsAccountFromPartnerAccount_RequestSyntax) **   <a name="iotwireless-DisassociateAwsAccountFromPartnerAccount-request-uri-PartnerType"></a>
@@ -75,13 +75,13 @@ HTTP Status Code: 400
 <a name="API_DisassociateAwsAccountFromPartnerAccount_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/DisassociateAwsAccountFromPartnerAccount)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/DisassociateAwsAccountFromPartnerAccount)

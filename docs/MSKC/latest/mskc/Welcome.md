@@ -5,4 +5,4 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/Welcome.html
 # Welcome
 <a name="Welcome"></a>
 
-This document was last published on October 16, 2026.
+This document was last published on October 20, 2026.

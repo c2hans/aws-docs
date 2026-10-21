@@ -13,7 +13,7 @@ Information about an import task for wireless devices.
  ** Arn **   <a name="iotwireless-Type-WirelessDeviceImportTask-Arn"></a>
 The ARN (Amazon Resource Name) of the wireless device import task.
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Required: No
 
  ** CreationTime **   <a name="iotwireless-Type-WirelessDeviceImportTask-CreationTime"></a>
@@ -24,7 +24,7 @@ Required: No
  ** DestinationName **   <a name="iotwireless-Type-WirelessDeviceImportTask-DestinationName"></a>
 The name of the Sidewalk destination that that describes the IoT rule to route messages from the device in the import task that will be onboarded to AWS IoT Wireless
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 Required: No
 
@@ -36,7 +36,7 @@ Required: No
  ** Id **   <a name="iotwireless-Type-WirelessDeviceImportTask-Id"></a>
 The ID of the wireless device import task.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** InitializedImportedDeviceCount **   <a name="iotwireless-Type-WirelessDeviceImportTask-InitializedImportedDeviceCount"></a>
@@ -80,6 +80,6 @@ Required: No
 <a name="API_WirelessDeviceImportTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/WirelessDeviceImportTask)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/WirelessDeviceImportTask)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/WirelessDeviceImportTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/WirelessDeviceImportTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/WirelessDeviceImportTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/WirelessDeviceImportTask)

@@ -11,7 +11,7 @@ Deletes a dataset from DataBrew.
 <a name="API_DeleteDataset_RequestSyntax"></a>
 
 ```
-DELETE /datasets/{{name}} HTTP/1.1
+DELETE /datasets/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /datasets/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DeleteDataset_RequestSyntax) **   <a name="databrew-DeleteDataset-request-uri-Name"></a>
+ ** [Name](#API_DeleteDataset_RequestSyntax) **   <a name="databrew-DeleteDataset-request-uri-Name"></a>
 The name of the dataset to be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

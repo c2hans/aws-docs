@@ -33,3 +33,6 @@ Tables:
 
 Functions:
 + EXECUTE
+
+Stored procedures:
++ EXECUTE

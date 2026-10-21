@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_WafConfi
 # WafConfiguration
 <a name="API_WafConfiguration"></a>
 
-Describes the Firewall configuration for a hosted Amplify application. Firewall support enables you to protect your web applications with a direct integration with AWS WAF. For more information about using AWS WAF protections for an Amplify application, see [Firewall support for hosted sites](https://docs.aws.amazon.com/amplify/latest/userguide/WAF-integration.html) in the *Amplify User Guide*.
+Describes the Firewall configuration for a hosted Amplify application. Firewall support enables you to protect your web applications with a direct integration with AWS WAF. For more information about using AWS WAF protections for an Amplify application, see [Firewall support for hosted sites](https://docs.aws.amazon.com/amplify/latest/userguide/WAF-integration.html) in the * Amplify User Guide*.
 
 ## Contents
 <a name="API_WafConfiguration_Contents"></a>
@@ -13,7 +13,7 @@ Describes the Firewall configuration for a hosted Amplify application. Firewall 
  ** statusReason **   <a name="amplify-Type-WafConfiguration-statusReason"></a>
 The reason for the current status of the Firewall configuration.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: No
 
  ** wafStatus **   <a name="amplify-Type-WafConfiguration-wafStatus"></a>
@@ -26,7 +26,7 @@ Required: No
 The Amazon Resource Name (ARN) for the web ACL associated with an Amplify app.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 512.
-Pattern: `^arn:aws:wafv2:.*`
+Pattern: `arn:aws:wafv2:.*`
 Required: No
 
 ## See Also

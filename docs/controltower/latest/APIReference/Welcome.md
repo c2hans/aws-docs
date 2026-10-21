@@ -98,7 +98,7 @@ The individual API operations for baselines are detailed in this document, the [
 + If you use an AWS Control Tower identifier to call the `EnableControl` API, and then call `EnableControl` again with an AWS Control Catalog identifier, AWS Control Tower returns an error message stating that the control is already enabled. Similar behavior applies to the `DisableControl` API operation.
 + Mandatory controls and the landing-zone-level Region deny control have AWS Control Tower identifiers only.
 
-**Details and examples**
+ **Details and examples**
 +  [Control API input and output examples with CLI](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html)
 +  [Baseline API input and output examples with CLI](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html)
 +  [Enable controls with CloudFormation](https://docs.aws.amazon.com/controltower/latest/controlreference/enable-controls.html)
@@ -116,4 +116,4 @@ To view the open source resource repository on GitHub, see [aws-cloudformation/a
 
  AWS Control Tower supports AWS CloudTrail, a service that records AWS API calls for your AWS account and delivers log files to an Amazon S3 bucket. By using information collected by CloudTrail, you can determine which requests the AWS Control Tower service received, who made the request and when, and so on. For more about AWS Control Tower and its support for CloudTrail, see [Logging AWS Control Tower Actions with AWS CloudTrail](https://docs.aws.amazon.com/controltower/latest/userguide/logging-using-cloudtrail.html) in the AWS Control Tower User Guide. To learn more about CloudTrail, including how to turn it on and find your log files, see the AWS CloudTrail User Guide.
 
-This document was last published on October 16, 2026.
+This document was last published on October 20, 2026.

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_UpdateBr
 # UpdateBranch
 <a name="API_UpdateBranch"></a>
 
- Updates a branch for an Amplify app.
+Updates a branch for an Amplify app.
 
 ## Request Syntax
 <a name="API_UpdateBranch_RequestSyntax"></a>
@@ -46,7 +46,7 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [appId](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
@@ -77,52 +77,52 @@ Pattern: `(?s).*`
 Required: No
 
  ** [basicAuthCredentials](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-basicAuthCredentials"></a>
- The basic authorization credentials for the branch. You must base64-encode the authorization credentials and provide them in the format `user:password`.
+The basic authorization credentials for the branch. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 Required: No
 
  ** [buildSpec](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-buildSpec"></a>
- The build specification (build spec) for the branch.
+The build specification (build spec) for the branch.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 25000.
 Pattern: `(?s).+`
 Required: No
 
  ** [computeRoleArn](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-computeRoleArn"></a>
-The Amazon Resource Name (ARN) of the IAM role to assign to a branch of an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+The Amazon Resource Name (ARN) of the IAM role to assign to a branch of an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the * Amplify User Guide*.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 
  ** [description](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-description"></a>
- The description for the branch.
+The description for the branch.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 
  ** [displayName](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-displayName"></a>
- The display name for a branch. This is used as the default domain prefix.
+The display name for a branch. This is used as the default domain prefix.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: No
 
  ** [enableAutoBuild](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-enableAutoBuild"></a>
- Enables auto building for the branch.
+Enables auto building for the branch.
 Type: Boolean
 Required: No
 
  ** [enableBasicAuth](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-enableBasicAuth"></a>
- Enables basic authorization for the branch.
+Enables basic authorization for the branch.
 Type: Boolean
 Required: No
 
  ** [enableNotification](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-enableNotification"></a>
- Enables notifications for the branch.
+Enables notifications for the branch.
 Type: Boolean
 Required: No
 
@@ -133,47 +133,47 @@ Type: Boolean
 Required: No
 
  ** [enablePullRequestPreview](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-enablePullRequestPreview"></a>
- Enables pull request previews for this branch.
+Enables pull request previews for this branch.
 Type: Boolean
 Required: No
 
  ** [enableSkewProtection](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-enableSkewProtection"></a>
 Specifies whether the skew protection feature is enabled for the branch.
-Deployment skew protection is available to Amplify applications to eliminate version skew issues between client and servers in web applications. When you apply skew protection to a branch, you can ensure that your clients always interact with the correct version of server-side assets, regardless of when a deployment occurs. For more information about skew protection, see [Skew protection for Amplify deployments](https://docs.aws.amazon.com/amplify/latest/userguide/skew-protection.html) in the *Amplify User Guide*.
+Deployment skew protection is available to Amplify applications to eliminate version skew issues between client and servers in web applications. When you apply skew protection to a branch, you can ensure that your clients always interact with the correct version of server-side assets, regardless of when a deployment occurs. For more information about skew protection, see [Skew protection for Amplify deployments](https://docs.aws.amazon.com/amplify/latest/userguide/skew-protection.html) in the * Amplify User Guide*.
 Type: Boolean
 Required: No
 
  ** [environmentVariables](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-environmentVariables"></a>
- The environment variables for the branch.
+The environment variables for the branch.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 5500.
+Value Length Constraints: Minimum length of 0. Maximum length of 5500.
 Value Pattern: `(?s).*`
 Required: No
 
  ** [framework](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-framework"></a>
- The framework for the branch.
+The framework for the branch.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: No
 
  ** [pullRequestEnvironmentName](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-pullRequestEnvironmentName"></a>
- The Amplify environment name for the pull request.
+The Amplify environment name for the pull request.
 Type: String
-Length Constraints: Maximum length of 20.
+Length Constraints: Minimum length of 0. Maximum length of 20.
 Pattern: `(?s).*`
 Required: No
 
  ** [stage](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-stage"></a>
- Describes the current stage for the branch.
+Describes the current stage for the branch.
 Type: String
 Valid Values: `PRODUCTION | BETA | DEVELOPMENT | EXPERIMENTAL | PULL_REQUEST`
 Required: No
 
  ** [ttl](#API_UpdateBranch_RequestSyntax) **   <a name="amplify-UpdateBranch-request-ttl"></a>
- The content Time to Live (TTL) for the website in seconds.
+The content Time to Live (TTL) for the website in seconds.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 32.
 Pattern: `\d*`
@@ -236,7 +236,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [branch](#API_UpdateBranch_ResponseSyntax) **   <a name="amplify-UpdateBranch-response-branch"></a>
- The branch for an Amplify app, which maps to a third-party repository branch.
+The branch for an Amplify app, which maps to a third-party repository branch.
 Type: [Branch](API_Branch.md) object
 
 ## Errors

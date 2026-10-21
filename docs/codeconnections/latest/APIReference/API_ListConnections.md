@@ -43,7 +43,7 @@ Required: No
 The token that was returned from the previous `ListConnections` call, which can be used to return the next set of connections in the list.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: No
 
  ** [ProviderTypeFilter](#API_ListConnections_RequestSyntax) **   <a name="codeconnections-ListConnections-request-ProviderTypeFilter"></a>
@@ -86,7 +86,7 @@ Type: Array of [Connection](API_Connection.md) objects
 A token that can be used in the next `ListConnections` call. To view all items in the list, continue to call this operation with each subsequent token until no more `nextToken` values are returned.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
-Pattern: `^.*$`
+Pattern: `.*`
 
 ## Errors
 <a name="API_ListConnections_Errors"></a>
@@ -95,7 +95,7 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
 ## See Also
 <a name="API_ListConnections_SeeAlso"></a>

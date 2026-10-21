@@ -18,7 +18,7 @@ Required: No
  ** GatewayEui **   <a name="iotwireless-Type-LoRaWANGateway-GatewayEui"></a>
 The gateway's EUI value.
 Type: String
-Pattern: `^(([0-9A-Fa-f]{2}-){7}|([0-9A-Fa-f]{2}:){7}|([0-9A-Fa-f]{2}\s){7}|([0-9A-Fa-f]{2}){7})([0-9A-Fa-f]{2})$`
+Pattern: `(([0-9A-Fa-f]{2}-){7}|([0-9A-Fa-f]{2}:){7}|([0-9A-Fa-f]{2}\s){7}|([0-9A-Fa-f]{2}){7})([0-9A-Fa-f]{2})`
 Required: No
 
  ** JoinEuiFilters **   <a name="iotwireless-Type-LoRaWANGateway-JoinEuiFilters"></a>
@@ -45,7 +45,7 @@ Required: No
  ** RfRegion **   <a name="iotwireless-Type-LoRaWANGateway-RfRegion"></a>
 The frequency band (RFRegion) value.
 Type: String
-Length Constraints: Maximum length of 64.
+Length Constraints: Minimum length of 0. Maximum length of 64.
 Required: No
 
  ** SubBands **   <a name="iotwireless-Type-LoRaWANGateway-SubBands"></a>
@@ -59,6 +59,6 @@ Required: No
 <a name="API_LoRaWANGateway_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/LoRaWANGateway)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/LoRaWANGateway)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/LoRaWANGateway)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/LoRaWANGateway)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/LoRaWANGateway)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/LoRaWANGateway)

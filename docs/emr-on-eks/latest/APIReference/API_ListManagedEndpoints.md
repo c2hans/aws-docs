@@ -20,7 +20,7 @@ GET /virtualclusters/{{virtualClusterId}}/endpoints?createdAfter={{createdAfter}
 The request uses the following URI parameters.
 
  ** [createdAfter](#API_ListManagedEndpoints_RequestSyntax) **   <a name="emroneks-ListManagedEndpoints-request-uri-createdAfter"></a>
- The date and time after which the endpoints are created.
+The date and time after which the endpoints are created.
 
  ** [createdBefore](#API_ListManagedEndpoints_RequestSyntax) **   <a name="emroneks-ListManagedEndpoints-request-uri-createdBefore"></a>
 The date and time before which the endpoints are created.
@@ -29,18 +29,18 @@ The date and time before which the endpoints are created.
 The maximum number of managed endpoints that can be listed.
 
  ** [nextToken](#API_ListManagedEndpoints_RequestSyntax) **   <a name="emroneks-ListManagedEndpoints-request-uri-nextToken"></a>
- The token for the next set of managed endpoints to return.
+The token for the next set of managed endpoints to return.
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`
 
  ** [states](#API_ListManagedEndpoints_RequestSyntax) **   <a name="emroneks-ListManagedEndpoints-request-uri-states"></a>
 The states of the managed endpoints.
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Valid Values: `CREATING | ACTIVE | TERMINATING | TERMINATED | TERMINATED_WITH_ERRORS`
 
  ** [types](#API_ListManagedEndpoints_RequestSyntax) **   <a name="emroneks-ListManagedEndpoints-request-uri-types"></a>
 The types of the managed endpoints.
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `.*\S.*`
 
@@ -138,7 +138,7 @@ The managed endpoints to be listed.
 Type: Array of [Endpoint](API_Endpoint.md) objects
 
  ** [nextToken](#API_ListManagedEndpoints_ResponseSyntax) **   <a name="emroneks-ListManagedEndpoints-response-nextToken"></a>
- The token for the next set of endpoints to return.
+The token for the next set of endpoints to return.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `.*\S.*`

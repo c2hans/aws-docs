@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/battery-digital-twin-on-aws/in
 title: 'Guidance for Battery Digital Twin on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/battery-digital-twin-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Battery Digital Twin on AWS

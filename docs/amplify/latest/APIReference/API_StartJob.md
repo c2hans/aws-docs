@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_StartJob
 # StartJob
 <a name="API_StartJob"></a>
 
- Starts a new job for a branch of an Amplify app.
+Starts a new job for a branch of an Amplify app.
 
 ## Request Syntax
 <a name="API_StartJob_RequestSyntax"></a>
@@ -47,35 +47,35 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [commitId](#API_StartJob_RequestSyntax) **   <a name="amplify-StartJob-request-commitId"></a>
- The commit ID from a third-party repository provider for the job.
+The commit ID from a third-party repository provider for the job.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: No
 
  ** [commitMessage](#API_StartJob_RequestSyntax) **   <a name="amplify-StartJob-request-commitMessage"></a>
- The commit message from a third-party repository provider for the job.
+The commit message from a third-party repository provider for the job.
 Type: String
-Length Constraints: Maximum length of 10000.
+Length Constraints: Minimum length of 0. Maximum length of 10000.
 Pattern: `(?s).*`
 Required: No
 
  ** [commitTime](#API_StartJob_RequestSyntax) **   <a name="amplify-StartJob-request-commitTime"></a>
- The commit date and time for the job.
+The commit date and time for the job.
 Type: Timestamp
 Required: No
 
  ** [jobId](#API_StartJob_RequestSyntax) **   <a name="amplify-StartJob-request-jobId"></a>
 The unique ID for an existing job. This is required if the value of `jobType` is `RETRY`.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[0-9]+`
 Required: No
 
  ** [jobReason](#API_StartJob_RequestSyntax) **   <a name="amplify-StartJob-request-jobReason"></a>
 A descriptive reason for starting the job.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: No
 
@@ -83,7 +83,7 @@ Required: No
 Describes the type for the job. The job type `RELEASE` starts a new job with the latest change from the specified branch. This value is available only for apps that are connected to a repository.
 The job type `RETRY` retries an existing job. If the job type value is `RETRY`, the `jobId` is also required.
 Type: String
-Length Constraints: Maximum length of 10.
+Length Constraints: Minimum length of 0. Maximum length of 10.
 Valid Values: `RELEASE | RETRY | MANUAL | WEB_HOOK`
 Required: Yes
 
@@ -119,7 +119,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [jobSummary](#API_StartJob_ResponseSyntax) **   <a name="amplify-StartJob-response-jobSummary"></a>
- The summary for the job.
+The summary for the job.
 Type: [JobSummary](API_JobSummary.md) object
 
 ## Errors

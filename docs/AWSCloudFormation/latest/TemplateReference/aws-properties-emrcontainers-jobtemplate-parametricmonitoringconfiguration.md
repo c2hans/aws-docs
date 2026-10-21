@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::JobTemplate ParametricMonitoringConfiguration
 <a name="aws-properties-emrcontainers-jobtemplate-parametricmonitoringconfiguration"></a>
 
- Configuration setting for monitoring. This data type allows job template parameters to be specified within.
+Configuration setting for monitoring. This data type allows job template parameters to be specified within.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametricmonitoringconfiguration-syntax"></a>
@@ -40,13 +40,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametricmonitoringconfiguration-properties"></a>
 
 `CloudWatchMonitoringConfiguration`  <a name="cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-cloudwatchmonitoringconfiguration"></a>
- Monitoring configurations for CloudWatch.
+Monitoring configurations for CloudWatch.
 *Required*: No
 *Type*: [ParametricCloudWatchMonitoringConfiguration](aws-properties-emrcontainers-jobtemplate-parametriccloudwatchmonitoringconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PersistentAppUI`  <a name="cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-persistentappui"></a>
- Monitoring configurations for the persistent application UI.
+Monitoring configurations for the persistent application UI.
 *Required*: No
 *Type*: String
 *Pattern*: `^[\.\-_/#A-Za-z0-9\$\{\}]+$`
@@ -55,7 +55,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `S3MonitoringConfiguration`  <a name="cfn-emrcontainers-jobtemplate-parametricmonitoringconfiguration-s3monitoringconfiguration"></a>
- Amazon S3 configuration for monitoring log publishing.
+Amazon S3 configuration for monitoring log publishing.
 *Required*: No
 *Type*: [ParametricS3MonitoringConfiguration](aws-properties-emrcontainers-jobtemplate-parametrics3monitoringconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

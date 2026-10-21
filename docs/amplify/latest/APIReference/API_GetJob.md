@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_GetJob.h
 # GetJob
 <a name="API_GetJob"></a>
 
- Returns a job for a branch of an Amplify app.
+Returns a job for a branch of an Amplify app.
 
 ## Request Syntax
 <a name="API_GetJob_RequestSyntax"></a>
@@ -33,7 +33,7 @@ Required: Yes
 
  ** [jobId](#API_GetJob_RequestSyntax) **   <a name="amplify-GetJob-request-uri-jobId"></a>
 The unique ID for the job.
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[0-9]+`
 Required: Yes
 
@@ -93,7 +93,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [job](#API_GetJob_ResponseSyntax) **   <a name="amplify-GetJob-response-job"></a>
- Describes an execution job for an Amplify app.
+Describes an execution job for an Amplify app.
 Type: [Job](API_Job.md) object
 
 ## Errors

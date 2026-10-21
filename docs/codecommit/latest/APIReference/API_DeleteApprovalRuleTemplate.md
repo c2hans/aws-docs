@@ -56,14 +56,20 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ApprovalRuleTemplateInUseException **
 The approval rule template is associated with one or more repositories. You cannot delete a template that is associated with a repository. Remove all associations, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ApprovalRuleTemplateNameRequiredException **
 An approval rule template name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidApprovalRuleTemplateNameException **
 The name of the approval rule template is not valid. Template names must be between 1 and 100 valid characters in length. For more information about limits in AWS CodeCommit, see [Quotas](https://docs.aws.amazon.com/codecommit/latest/userguide/limits.html) in the * AWS CodeCommit User Guide*.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

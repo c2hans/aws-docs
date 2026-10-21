@@ -67,10 +67,14 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidContinuationTokenException **
 The specified continuation token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMaxResultsException **
 The specified number of maximum results is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

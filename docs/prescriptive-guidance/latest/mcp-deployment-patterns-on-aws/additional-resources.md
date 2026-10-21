@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 <a name="additional-resources"></a>
 
 ## AWS service documentation
-<a name="aws-service-documentation.490c7939-ca55-53d6-8644-1d6c927c6c26"></a>
+<a name="aws-service-documentation.7d1db791-1156-574a-9deb-c679ccf734d6"></a>
 + Strands Agents documentation at: [https://strandsagents.com/docs/user-guide/quickstart/overview/](https://strandsagents.com/docs/user-guide/quickstart/overview/)
 + Get started with Amazon Bedrock AgentCore at [https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-toolkit.html](https://strandsagents.com/docs/user-guide/quickstart/overview/)
 + AWS Lambda documentation at [https://docs.aws.amazon.com/lambda/](https://strandsagents.com/docs/user-guide/quickstart/overview/) covers function creation, triggers, and runtime environments.
@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 + Amazon Bedrock AgentCore samples: [https://github.com/awslabs/amazon-bedrock-agentcore-samples/tree/main/01-tutorials/01-AgentCore-runtime/02-hosting-MCP-server](https://strandsagents.com/docs/user-guide/quickstart/overview/)
 
 ## MCP Resources
-<a name="mcp-resources.d8029117-fa39-5d33-aa8a-3e11b794e5e3"></a>
+<a name="mcp-resources.18d35e2e-c97b-5bc2-a3a2-bff68d7ce84e"></a>
 + The Model Context Protocol specification at [https://modelcontextprotocol.io/specification/latest](https://strandsagents.com/docs/user-guide/quickstart/overview/) provides the authoritative protocol definition. Official SDK implementations:
 + TypeScript SDK at [https://github.com/modelcontextprotocol/typescript-sdk](https://strandsagents.com/docs/user-guide/quickstart/overview/)
 + Python SDK at [https://github.com/modelcontextprotocol/python-sdk](https://strandsagents.com/docs/user-guide/quickstart/overview/)
@@ -35,4 +35,4 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 
 ## Monitoring and observability
 <a name="monitoring-and-observability.38a3a0ae-cadb-5ac3-8871-7fb8b5c2e4a2"></a>
-+ Amazon CloudWatch Container Insights: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html](https://strandsagents.com/docs/user-guide/quickstart/overview/)
++ Amazon CloudWatch Container Insights: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights.html)

@@ -13,7 +13,7 @@ The type of SSL/TLS certificate to use for your custom domain. If a certificate 
  ** type **   <a name="amplify-Type-CertificateSettings-type"></a>
 The certificate type.
 Specify `AMPLIFY_MANAGED` to use the default certificate that Amplify provisions for you.
-Specify `CUSTOM` to use your own certificate that you have already added to AWS Certificate Manager in your AWS account. Make sure you request (or import) the certificate in the US East (N. Virginia) Region (us-east-1). For more information about using ACM, see [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the *ACM User guide*.
+Specify `CUSTOM` to use your own certificate that you have already added to AWS Certificate Manager in your AWS account. Make sure you request (or import) the certificate in the US East (N. Virginia) Region (us-east-1). For more information about using ACM, see [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the * ACM User guide*.
 Type: String
 Valid Values: `AMPLIFY_MANAGED | CUSTOM`
 Required: Yes
@@ -23,7 +23,7 @@ The Amazon resource name (ARN) for the custom certificate that you have already 
 This field is required only when the certificate type is `CUSTOM`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1000.
-Pattern: `^arn:aws:acm:[a-z0-9-]+:\d{12}:certificate\/.+$`
+Pattern: `arn:aws:acm:[a-z0-9-]+:\d{12}:certificate\/.+`
 Required: No
 
 ## See Also

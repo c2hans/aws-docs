@@ -53,66 +53,98 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ApprovalStateRequiredException **
 An approval state is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidApprovalStateException **
 The state for the approval is not valid. Valid values include APPROVE and REVOKE.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRevisionIdException **
 The revision ID is not valid. Use GetPullRequest to determine the value.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumNumberOfApprovalsExceededException **
 The number of approvals required for the approval rule exceeds the maximum number allowed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestAlreadyClosedException **
 The pull request status cannot be updated because it is already closed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestCannotBeApprovedByAuthorException **
 The approval cannot be applied because the user approving the pull request matches the user who created the pull request. You cannot approve a pull request that you created.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RevisionIdRequiredException **
 A revision ID is required, but was not provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RevisionNotCurrentException **
 The revision ID provided in the request does not match the current revision ID. Use GetPullRequest to retrieve the current revision ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

@@ -11,7 +11,7 @@ Deletes a ruleset.
 <a name="API_DeleteRuleset_RequestSyntax"></a>
 
 ```
-DELETE /rulesets/{{name}} HTTP/1.1
+DELETE /rulesets/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /rulesets/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DeleteRuleset_RequestSyntax) **   <a name="databrew-DeleteRuleset-request-uri-Name"></a>
+ ** [Name](#API_DeleteRuleset_RequestSyntax) **   <a name="databrew-DeleteRuleset-request-uri-Name"></a>
 The name of the ruleset to be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

@@ -58,7 +58,7 @@ The request uses the following URI parameters.
 
  ** [Id](#API_UpdateWirelessDevice_RequestSyntax) **   <a name="iotwireless-UpdateWirelessDevice-request-uri-Id"></a>
 The ID of the resource to update.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
 ## Request Body
@@ -69,13 +69,13 @@ The request accepts the following data in JSON format.
  ** [Description](#API_UpdateWirelessDevice_RequestSyntax) **   <a name="iotwireless-UpdateWirelessDevice-request-Description"></a>
 A new description of the resource.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** [DestinationName](#API_UpdateWirelessDevice_RequestSyntax) **   <a name="iotwireless-UpdateWirelessDevice-request-DestinationName"></a>
 The name of the new destination for the device.
 Type: String
-Length Constraints: Maximum length of 128.
+Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `[a-zA-Z0-9-_]+`
 Required: No
 
@@ -88,7 +88,7 @@ Required: No
 The new name of the resource.
 The following special characters aren't accepted: `<>^#~$`
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** [Positioning](#API_UpdateWirelessDevice_RequestSyntax) **   <a name="iotwireless-UpdateWirelessDevice-request-Positioning"></a>
@@ -147,13 +147,13 @@ HTTP Status Code: 400
 <a name="API_UpdateWirelessDevice_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/UpdateWirelessDevice)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/UpdateWirelessDevice)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/UpdateWirelessDevice)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/UpdateWirelessDevice)

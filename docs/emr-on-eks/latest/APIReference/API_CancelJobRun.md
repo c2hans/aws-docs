@@ -11,7 +11,7 @@ Cancels a job run. A job run is a unit of work, such as a Spark jar, PySpark scr
 <a name="API_CancelJobRun_RequestSyntax"></a>
 
 ```
-DELETE /virtualclusters/{{virtualClusterId}}/jobruns/{{jobRunId}} HTTP/1.1
+DELETE /virtualclusters/{{virtualClusterId}}/jobruns/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /virtualclusters/{{virtualClusterId}}/jobruns/{{jobRunId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [jobRunId](#API_CancelJobRun_RequestSyntax) **   <a name="emroneks-CancelJobRun-request-uri-id"></a>
+ ** [id](#API_CancelJobRun_RequestSyntax) **   <a name="emroneks-CancelJobRun-request-uri-id"></a>
 The ID of the job run to cancel.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::JobTemplate ParametricConfigurationOverrides
 <a name="aws-properties-emrcontainers-jobtemplate-parametricconfigurationoverrides"></a>
 
- A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.
+A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametricconfigurationoverrides-syntax"></a>
@@ -38,14 +38,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametricconfigurationoverrides-properties"></a>
 
 `ApplicationConfiguration`  <a name="cfn-emrcontainers-jobtemplate-parametricconfigurationoverrides-applicationconfiguration"></a>
- The configurations for the application running by the job run.
+The configurations for the application running by the job run.
 *Required*: No
 *Type*: Array of [Configuration](aws-properties-emrcontainers-jobtemplate-configuration.md)
 *Maximum*: `100`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MonitoringConfiguration`  <a name="cfn-emrcontainers-jobtemplate-parametricconfigurationoverrides-monitoringconfiguration"></a>
- The configurations for monitoring.
+The configurations for monitoring.
 *Required*: No
 *Type*: [ParametricMonitoringConfiguration](aws-properties-emrcontainers-jobtemplate-parametricmonitoringconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

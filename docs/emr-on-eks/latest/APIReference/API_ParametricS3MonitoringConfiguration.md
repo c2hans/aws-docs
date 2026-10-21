@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Param
 # ParametricS3MonitoringConfiguration
 <a name="API_ParametricS3MonitoringConfiguration"></a>
 
- Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3. This data type allows job template parameters to be specified within.
+Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3. This data type allows job template parameters to be specified within.
 
 ## Contents
 <a name="API_ParametricS3MonitoringConfiguration_Contents"></a>

@@ -40,7 +40,7 @@ Required: Yes
  ** [manifest](#API_UpdateLandingZone_RequestSyntax) **   <a name="controltower-UpdateLandingZone-request-manifest"></a>
 The manifest file (JSON) is a text file that describes your AWS resources. For an example, review [Launch your landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-launch). The example manifest file contains each of the available parameters. The schema for the landing zone's JSON manifest file is not published, by design.
 Type: JSON value
-Required: Yes
+Required: No
 
  ** [remediationTypes](#API_UpdateLandingZone_RequestSyntax) **   <a name="controltower-UpdateLandingZone-request-remediationTypes"></a>
 Specifies the types of remediation actions to apply when updating the landing zone configuration.

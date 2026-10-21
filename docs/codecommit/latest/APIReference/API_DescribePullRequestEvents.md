@@ -130,54 +130,80 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ActorDoesNotExistException **
 The specified Amazon Resource Name (ARN) does not exist in the AWS account.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidActorArnException **
 The Amazon Resource Name (ARN) is not valid. Make sure that you have provided the full ARN for the user who initiated the change for the pull request, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidContinuationTokenException **
 The specified continuation token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMaxResultsException **
 The specified number of maximum results is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestEventTypeException **
 The pull request event type is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

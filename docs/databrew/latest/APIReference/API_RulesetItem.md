@@ -28,7 +28,7 @@ Required: Yes
  ** AccountId **   <a name="databrew-Type-RulesetItem-AccountId"></a>
 The ID of the AWS account that owns the ruleset.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** CreateDate **   <a name="databrew-Type-RulesetItem-CreateDate"></a>
@@ -44,7 +44,7 @@ Required: No
  ** Description **   <a name="databrew-Type-RulesetItem-Description"></a>
 The description of the ruleset.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
  ** LastModifiedBy **   <a name="databrew-Type-RulesetItem-LastModifiedBy"></a>
@@ -74,7 +74,7 @@ Metadata tags that have been applied to the ruleset.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
 ## See Also

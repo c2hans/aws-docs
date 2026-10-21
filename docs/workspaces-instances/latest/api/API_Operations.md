@@ -17,5 +17,6 @@ The following actions are supported:
 +  [ListRegions](API_ListRegions.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)
 +  [ListWorkspaceInstances](API_ListWorkspaceInstances.md)
++  [ModifyVolume](API_ModifyVolume.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)

@@ -20,18 +20,18 @@ GET /apps/{{appId}}/domains?maxResults={{maxResults}}&nextToken={{nextToken}} HT
 The request uses the following URI parameters.
 
  ** [appId](#API_ListDomainAssociations_RequestSyntax) **   <a name="amplify-ListDomainAssociations-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
 
  ** [maxResults](#API_ListDomainAssociations_RequestSyntax) **   <a name="amplify-ListDomainAssociations-request-uri-maxResults"></a>
- The maximum number of records to list in a single response.
+The maximum number of records to list in a single response.
 Valid Range: Minimum value of 0. Maximum value of 50.
 
  ** [nextToken](#API_ListDomainAssociations_RequestSyntax) **   <a name="amplify-ListDomainAssociations-request-uri-nextToken"></a>
- A pagination token. Set to null to start listing apps from the start. If non-null, a pagination token is returned in a result. Pass its value in here to list more projects.
-Length Constraints: Maximum length of 2000.
+A pagination token. Set to null to start listing apps from the start. If non-null, a pagination token is returned in a result. Pass its value in here to list more projects.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Request Body
@@ -87,14 +87,14 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [domainAssociations](#API_ListDomainAssociations_ResponseSyntax) **   <a name="amplify-ListDomainAssociations-response-domainAssociations"></a>
- A list of domain associations.
+A list of domain associations.
 Type: Array of [DomainAssociation](API_DomainAssociation.md) objects
-Array Members: Maximum number of 255 items.
+Array Members: Minimum number of 0 items. Maximum number of 255 items.
 
  ** [nextToken](#API_ListDomainAssociations_ResponseSyntax) **   <a name="amplify-ListDomainAssociations-response-nextToken"></a>
- A pagination token. If non-null, a pagination token is returned in a result. Pass its value in another request to retrieve more entries.
+A pagination token. If non-null, a pagination token is returned in a result. Pass its value in another request to retrieve more entries.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Errors

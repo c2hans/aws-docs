@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [artifactId](#API_GetArtifactUrl_RequestSyntax) **   <a name="amplify-GetArtifactUrl-request-uri-artifactId"></a>
 The unique ID for an artifact.
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: Yes
 
@@ -53,13 +53,13 @@ The following data is returned in JSON format by the service.
  ** [artifactId](#API_GetArtifactUrl_ResponseSyntax) **   <a name="amplify-GetArtifactUrl-response-artifactId"></a>
 The unique ID for an artifact.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 
  ** [artifactUrl](#API_GetArtifactUrl_ResponseSyntax) **   <a name="amplify-GetArtifactUrl-response-artifactUrl"></a>
 The presigned URL for the artifact.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 
 ## Errors
 <a name="API_GetArtifactUrl_Errors"></a>

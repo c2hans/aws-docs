@@ -13,7 +13,7 @@ A configuration specification to be used to override existing configurations.
  ** applicationConfiguration **   <a name="emroneks-Type-ConfigurationOverrides-applicationConfiguration"></a>
 The configurations for the application running by the job run.
 Type: Array of [Configuration](API_Configuration.md) objects
-Array Members: Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
  ** monitoringConfiguration **   <a name="emroneks-Type-ConfigurationOverrides-monitoringConfiguration"></a>

@@ -117,7 +117,7 @@ Type: Long
  ** [hunks](#API_GetBlobDifferences_ResponseSyntax) **   <a name="CodeCommit-GetBlobDifferences-response-hunks"></a>
 An ordered list of diff hunks. Each hunk represents a contiguous run of changed and adjacent context lines. The list is empty when the blobs are identical or when the content is binary. The list is also empty when a paginated request has already returned all hunks in earlier pages, in which case `NextToken` is also `null`.
 Type: Array of [DiffHunk](API_DiffHunk.md) objects
-Array Members: Maximum number of 1000 items.
+Array Members: Minimum number of 0 items. Maximum number of 1000 items.
 
  ** [isBinary](#API_GetBlobDifferences_ResponseSyntax) **   <a name="CodeCommit-GetBlobDifferences-response-isBinary"></a>
 Specifies whether the operation treated the diff content as binary. When `true`, the operation does not compute a line-level diff and `hunks` is empty.
@@ -134,63 +134,93 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** BlobIdDoesNotExistException **
 The specified blob does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** BlobIdRequiredException **
 A blob ID is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileTooLargeException **
 The specified file exceeds the file size limit for AWS CodeCommit. For more information about limits in AWS CodeCommit, see [Quotas](https://docs.aws.amazon.com/codecommit/latest/userguide/limits.html) in the * AWS CodeCommit User Guide*.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidBlobIdException **
 The specified blob is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidContinuationTokenException **
 The specified continuation token is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMaxResultsException **
 The specified number of maximum results is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ValidationException **
 The specified input is either not valid, or it could not be validated.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## See Also

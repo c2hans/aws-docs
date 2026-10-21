@@ -11,7 +11,7 @@ Deletes a virtual cluster. Virtual cluster is a managed entity on Amazon EMR on 
 <a name="API_DeleteVirtualCluster_RequestSyntax"></a>
 
 ```
-DELETE /virtualclusters/{{virtualClusterId}} HTTP/1.1
+DELETE /virtualclusters/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /virtualclusters/{{virtualClusterId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [virtualClusterId](#API_DeleteVirtualCluster_RequestSyntax) **   <a name="emroneks-DeleteVirtualCluster-request-uri-id"></a>
+ ** [id](#API_DeleteVirtualCluster_RequestSyntax) **   <a name="emroneks-DeleteVirtualCluster-request-uri-id"></a>
 The ID of the virtual cluster that will be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

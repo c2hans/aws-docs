@@ -36,7 +36,7 @@ The request uses the following URI parameters.
 
  ** [Id](#API_UpdateFuotaTask_RequestSyntax) **   <a name="iotwireless-UpdateFuotaTask-request-uri-Id"></a>
 The ID of a FUOTA task.
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
 ## Request Body
@@ -47,14 +47,14 @@ The request accepts the following data in JSON format.
  ** [Description](#API_UpdateFuotaTask_RequestSyntax) **   <a name="iotwireless-UpdateFuotaTask-request-Description"></a>
 The description of the new resource.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** [Descriptor](#API_UpdateFuotaTask_RequestSyntax) **   <a name="iotwireless-UpdateFuotaTask-request-Descriptor"></a>
 The descriptor is the metadata about the file that is transferred to the device using FUOTA, such as the software version. It is a binary field encoded in base64.
 Type: String
-Length Constraints: Maximum length of 332.
-Pattern: `^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$`
+Length Constraints: Minimum length of 0. Maximum length of 332.
+Pattern: `(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?`
 Required: No
 
  ** [FirmwareUpdateImage](#API_UpdateFuotaTask_RequestSyntax) **   <a name="iotwireless-UpdateFuotaTask-request-FirmwareUpdateImage"></a>
@@ -90,7 +90,7 @@ Required: No
  ** [Name](#API_UpdateFuotaTask_RequestSyntax) **   <a name="iotwireless-UpdateFuotaTask-request-Name"></a>
 The name of a FUOTA task.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** [RedundancyPercent](#API_UpdateFuotaTask_RequestSyntax) **   <a name="iotwireless-UpdateFuotaTask-request-RedundancyPercent"></a>
@@ -152,13 +152,13 @@ HTTP Status Code: 400
 <a name="API_UpdateFuotaTask_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/UpdateFuotaTask)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/UpdateFuotaTask)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/UpdateFuotaTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/UpdateFuotaTask)

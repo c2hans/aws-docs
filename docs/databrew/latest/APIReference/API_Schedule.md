@@ -22,7 +22,7 @@ Required: Yes
  ** AccountId **   <a name="databrew-Type-Schedule-AccountId"></a>
 The ID of the AWS account that owns the schedule.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** CreateDate **   <a name="databrew-Type-Schedule-CreateDate"></a>
@@ -36,7 +36,7 @@ Type: String
 Required: No
 
  ** CronExpression **   <a name="databrew-Type-Schedule-CronExpression"></a>
-The dates and times when the job is to run. For more information, see [Working with cron expressions for recipe jobs](https://docs.aws.amazon.com/databrew/latest/dg/jobs.recipe.html#jobs.cron) in the * AWS Glue DataBrew Developer Guide*.
+The dates and times when the job is to run. For more information, see [Cron expressions](https://docs.aws.amazon.com/databrew/latest/dg/jobs.cron.html) in the * AWS Glue DataBrew Developer Guide*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 512.
 Required: No
@@ -44,7 +44,7 @@ Required: No
  ** JobNames **   <a name="databrew-Type-Schedule-JobNames"></a>
 A list of jobs to be run, according to the schedule.
 Type: Array of strings
-Array Members: Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: No
 
@@ -69,7 +69,7 @@ Metadata tags that have been applied to the schedule.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
 ## See Also

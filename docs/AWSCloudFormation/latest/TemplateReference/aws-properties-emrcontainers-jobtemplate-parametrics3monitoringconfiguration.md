@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EMRContainers::JobTemplate ParametricS3MonitoringConfiguration
 <a name="aws-properties-emrcontainers-jobtemplate-parametrics3monitoringconfiguration"></a>
 
- Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3. This data type allows job template parameters to be specified within.
+Amazon S3 configuration for monitoring log publishing. You can configure your jobs to send log information to Amazon S3. This data type allows job template parameters to be specified within.
 
 ## Syntax
 <a name="aws-properties-emrcontainers-jobtemplate-parametrics3monitoringconfiguration-syntax"></a>

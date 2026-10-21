@@ -22,6 +22,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AccessLogConfiguration](#cfn-ecs-service-serviceconnectconfiguration-accesslogconfiguration)" : {{ServiceConnectAccessLogConfiguration}},
+  "[ContainerConfigurations](#cfn-ecs-service-serviceconnectconfiguration-containerconfigurations)" : {{[ ServiceConnectContainerConfiguration, ... ]}},
   "[Enabled](#cfn-ecs-service-serviceconnectconfiguration-enabled)" : {{Boolean}},
   "[LogConfiguration](#cfn-ecs-service-serviceconnectconfiguration-logconfiguration)" : {{LogConfiguration}},
   "[Namespace](#cfn-ecs-service-serviceconnectconfiguration-namespace)" : {{String}},
@@ -35,6 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AccessLogConfiguration](#cfn-ecs-service-serviceconnectconfiguration-accesslogconfiguration): {{
     ServiceConnectAccessLogConfiguration}}
+  [ContainerConfigurations](#cfn-ecs-service-serviceconnectconfiguration-containerconfigurations): {{
+    - ServiceConnectContainerConfiguration}}
   [Enabled](#cfn-ecs-service-serviceconnectconfiguration-enabled): {{Boolean}}
   [LogConfiguration](#cfn-ecs-service-serviceconnectconfiguration-logconfiguration): {{
     LogConfiguration}}
@@ -51,6 +54,14 @@ The configuration for Service Connect access logging. Access logs capture detail
 To enable access logs, you must also specify a `logConfiguration` in the `serviceConnectConfiguration`.
 *Required*: No
 *Type*: [ServiceConnectAccessLogConfiguration](aws-properties-ecs-service-serviceconnectaccesslogconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ContainerConfigurations`  <a name="cfn-ecs-service-serviceconnectconfiguration-containerconfigurations"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [ServiceConnectContainerConfiguration](aws-properties-ecs-service-serviceconnectcontainerconfiguration.md)
+*Minimum*: `0`
+*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Enabled`  <a name="cfn-ecs-service-serviceconnectconfiguration-enabled"></a>

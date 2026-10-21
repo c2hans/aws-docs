@@ -73,7 +73,7 @@ Properties:
 <a name="aws-resource-amplify-branch-properties"></a>
 
 `AppId`  <a name="cfn-amplify-branch-appid"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 *Required*: Yes
 *Type*: String
 *Pattern*: `d[a-z0-9]+`
@@ -89,11 +89,9 @@ This field is available to Amplify Gen 2 apps only. When you deploy an applicati
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BasicAuthConfig`  <a name="cfn-amplify-branch-basicauthconfig"></a>
- The basic authorization credentials for a branch of an Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
+The basic authorization credentials for a branch of an Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 *Required*: No
 *Type*: [BasicAuthConfig](aws-properties-amplify-branch-basicauthconfig.md)
-*Pattern*: `(?s).*`
-*Maximum*: `2000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BranchName`  <a name="cfn-amplify-branch-branchname"></a>
@@ -106,7 +104,7 @@ The name for the branch.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `BuildSpec`  <a name="cfn-amplify-branch-buildspec"></a>
- The build specification (build spec) for the branch.
+The build specification (build spec) for the branch.
 *Required*: No
 *Type*: String
 *Pattern*: `(?s).+`
@@ -115,7 +113,7 @@ The name for the branch.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ComputeRoleArn`  <a name="cfn-amplify-branch-computerolearn"></a>
-The Amazon Resource Name (ARN) of the IAM role to assign to a branch of an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+The Amazon Resource Name (ARN) of the IAM role to assign to a branch of an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the * Amplify User Guide*.
 *Required*: No
 *Type*: String
 *Pattern*: `(?s).*`
@@ -132,7 +130,7 @@ The Amazon Resource Name (ARN) of the IAM role to assign to a branch of an SSR a
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EnableAutoBuild`  <a name="cfn-amplify-branch-enableautobuild"></a>
- Enables auto building for the branch.
+Enables auto building for the branch.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -154,19 +152,19 @@ For more information, see [Web Previews](https://docs.aws.amazon.com/amplify/lat
 
 `EnableSkewProtection`  <a name="cfn-amplify-branch-enableskewprotection"></a>
 Specifies whether the skew protection feature is enabled for the branch.
-Deployment skew protection is available to Amplify applications to eliminate version skew issues between client and servers in web applications. When you apply skew protection to a branch, you can ensure that your clients always interact with the correct version of server-side assets, regardless of when a deployment occurs. For more information about skew protection, see [Skew protection for Amplify deployments](https://docs.aws.amazon.com/amplify/latest/userguide/skew-protection.html) in the *Amplify User Guide*.
+Deployment skew protection is available to Amplify applications to eliminate version skew issues between client and servers in web applications. When you apply skew protection to a branch, you can ensure that your clients always interact with the correct version of server-side assets, regardless of when a deployment occurs. For more information about skew protection, see [Skew protection for Amplify deployments](https://docs.aws.amazon.com/amplify/latest/userguide/skew-protection.html) in the * Amplify User Guide*.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EnvironmentVariables`  <a name="cfn-amplify-branch-environmentvariables"></a>
- The environment variables for the branch.
+The environment variables for the branch.
 *Required*: No
 *Type*: Array of [EnvironmentVariable](aws-properties-amplify-branch-environmentvariable.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Framework`  <a name="cfn-amplify-branch-framework"></a>
- The framework for the branch.
+The framework for the branch.
 *Required*: No
 *Type*: String
 *Pattern*: `(?s).*`
@@ -192,7 +190,7 @@ Describes the current stage for the branch.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-amplify-branch-tags"></a>
- The tag for the branch.
+The tag for the branch.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-amplify-branch-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

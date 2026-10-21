@@ -22,7 +22,7 @@ The request uses the following URI parameters.
  ** [resourceArn](#API_ListTagsForResource_RequestSyntax) **   <a name="emroneks-ListTagsForResource-request-uri-resourceArn"></a>
 The ARN of tagged resources.
 Length Constraints: Minimum length of 60. Maximum length of 500.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):/virtualclusters/.+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):/virtualclusters/.+`
 Required: Yes
 
 ## Request Body

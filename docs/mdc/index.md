@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mdc/index.html
 title: 'AWS Modular Data Center Documentation'
 canonical_url: https://docs.aws.amazon.com/mdc/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS Modular Data Center Documentation

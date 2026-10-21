@@ -11,6 +11,7 @@ A filter name and value pair that is used to return a more specific list of resu
 Currently, wildcards are not supported in filters.
 
 The following actions can be filtered:
++  `DescribeDBCapacityReservations`
 +  `DescribeDBClusterBacktracks`
 +  `DescribeDBClusterEndpoints`
 +  `DescribeDBClusters`

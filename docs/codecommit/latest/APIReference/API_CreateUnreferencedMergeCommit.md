@@ -148,147 +148,219 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommitDoesNotExistException **
 The specified commit does not exist or no commit was specified, and the specified repository has no default branch.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitMessageLengthExceededException **
 The commit message is too long. Provide a shorter string.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** CommitRequiredException **
 A commit was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ConcurrentReferenceUpdateException **
 The merge cannot be completed because the target branch has been modified. Another user might have modified the target branch while the merge was in progress. Wait a few minutes, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileContentSizeLimitExceededException **
 The file cannot be added because it is too large. The maximum file size is 6 MB, and the combined file content change size is 7 MB. Consider making these changes using a Git client.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileModeRequiredException **
 The commit cannot be created because no file mode has been specified. A file mode is required to update mode permissions for a file.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FolderContentSizeLimitExceededException **
 The commit cannot be created because at least one of the overall changes in the commit results in a folder whose contents exceed the limit of 6 MB. Either reduce the number and size of your changes, or split the changes across multiple folders.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitException **
 The specified commit is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictDetailLevelException **
 The specified conflict detail level is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictResolutionException **
 The specified conflict resolution list is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictResolutionStrategyException **
 The specified conflict resolution strategy is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidEmailException **
 The specified email address either contains one or more characters that are not allowed, or it exceeds the maximum number of characters allowed for an email address.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidFileModeException **
 The specified file mode permission is not valid. For a list of valid file mode permissions, see [PutFile](API_PutFile.md).
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidMergeOptionException **
 The specified merge option is not valid for this operation. Not all merge strategies are supported for all operations.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPathException **
 The specified path is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidReplacementContentException **
 Automerge was specified for resolving the conflict, but the replacement type is not valid or content is missing.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidReplacementTypeException **
 Automerge was specified for resolving the conflict, but the specified replacement type is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ManualMergeRequiredException **
 The pull request cannot be merged automatically into the destination branch. You must manually merge the branches and resolve any conflicts.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumConflictResolutionEntriesExceededException **
 The number of allowed conflict resolution entries was exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumFileContentToLoadExceededException **
 The number of files to load exceeds the allowed limit.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumItemsToCompareExceededException **
 The number of items to compare between the source or destination branches and the merge base has exceeded the maximum allowed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MergeOptionRequiredException **
 A merge option or stategy is required, and none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MultipleConflictResolutionEntriesException **
 More than one conflict resolution entries exists for the conflict. A conflict can have only one conflict resolution entry.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** NameLengthExceededException **
 The user name is not valid because it has exceeded the character limit for author names.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PathRequiredException **
 The folderPath for a location cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReplacementContentRequiredException **
 USE\_NEW\_CONTENT was specified, but no replacement content has been provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReplacementTypeRequiredException **
 A replacement type is required.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TipsDivergenceExceededException **
 The divergence between the tips of the provided commit specifiers is too great to determine whether there might be any merge conflicts. Locally compare the specifiers using `git diff` or a diff tool.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

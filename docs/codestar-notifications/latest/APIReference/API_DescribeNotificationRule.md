@@ -32,7 +32,7 @@ The request accepts the following data in JSON format.
  ** [Arn](#API_DescribeNotificationRule_RequestSyntax) **   <a name="codestarnotifications-DescribeNotificationRule-request-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
 ## Response Syntax
@@ -82,7 +82,7 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_DescribeNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-DescribeNotificationRule-response-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 
  ** [CreatedBy](#API_DescribeNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-DescribeNotificationRule-response-CreatedBy"></a>
 The name or email alias of the person who created the notification rule.
@@ -110,12 +110,12 @@ Type: Timestamp
 The name of the notification rule.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z0-9\-_ ]+$`
+Pattern: `[A-Za-z0-9\-_ ]+`
 
  ** [Resource](#API_DescribeNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-DescribeNotificationRule-response-Resource"></a>
 The Amazon Resource Name (ARN) of the resource associated with the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:[^:\s]*:[^:\s]*:[0-9]{12}:[^\s]+$`
+Pattern: `arn:aws[^:\s]*:[^:\s]*:[^:\s]*:[0-9]{12}:[^\s]+`
 
  ** [Status](#API_DescribeNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-DescribeNotificationRule-response-Status"></a>
 The status of the notification rule. Valid statuses are on (sending notifications) or off (not sending notifications).
@@ -126,9 +126,9 @@ Valid Values: `ENABLED | DISABLED`
 The tags associated with the notification rule.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 
  ** [Targets](#API_DescribeNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-DescribeNotificationRule-response-Targets"></a>
 A list of the Amazon Q Developer in chat applications topics and Amazon Q Developer in chat applications clients associated with the notification rule.

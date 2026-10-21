@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListBran
 # ListBranches
 <a name="API_ListBranches"></a>
 
- Lists the branches of an Amplify app.
+Lists the branches of an Amplify app.
 
 ## Request Syntax
 <a name="API_ListBranches_RequestSyntax"></a>
@@ -26,12 +26,12 @@ Pattern: `d[a-z0-9]+`
 Required: Yes
 
  ** [maxResults](#API_ListBranches_RequestSyntax) **   <a name="amplify-ListBranches-request-uri-maxResults"></a>
- The maximum number of records to list in a single response.
+The maximum number of records to list in a single response.
 Valid Range: Minimum value of 0. Maximum value of 50.
 
  ** [nextToken](#API_ListBranches_RequestSyntax) **   <a name="amplify-ListBranches-request-uri-nextToken"></a>
 A pagination token. Set to null to start listing branches from the start. If a non-null pagination token is returned in a result, pass its value in here to list more branches.
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Request Body
@@ -99,14 +99,14 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [branches](#API_ListBranches_ResponseSyntax) **   <a name="amplify-ListBranches-response-branches"></a>
- A list of branches for an Amplify app.
+A list of branches for an Amplify app.
 Type: Array of [Branch](API_Branch.md) objects
-Array Members: Maximum number of 255 items.
+Array Members: Minimum number of 0 items. Maximum number of 255 items.
 
  ** [nextToken](#API_ListBranches_ResponseSyntax) **   <a name="amplify-ListBranches-response-nextToken"></a>
- A pagination token. If a non-null pagination token is returned in a result, pass its value in another request to retrieve more entries.
+A pagination token. If a non-null pagination token is returned in a result, pass its value in another request to retrieve more entries.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Errors

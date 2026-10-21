@@ -11,7 +11,7 @@ Creates an interactive session, enabling you to manipulate data in a DataBrew pr
 <a name="API_StartProjectSession_RequestSyntax"></a>
 
 ```
-PUT /projects/{{name}}/startProjectSession HTTP/1.1
+PUT /projects/{{Name}}/startProjectSession HTTP/1.1
 Content-type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_StartProjectSession_RequestSyntax) **   <a name="databrew-StartProjectSession-request-uri-Name"></a>
+ ** [Name](#API_StartProjectSession_RequestSyntax) **   <a name="databrew-StartProjectSession-request-uri-Name"></a>
 The name of the project to act upon.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -68,7 +68,7 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 A system-generated identifier for the session.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^[a-zA-Z0-9][a-zA-Z0-9-]*$`
+Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]*`
 
 ## Errors
 <a name="API_StartProjectSession_Errors"></a>

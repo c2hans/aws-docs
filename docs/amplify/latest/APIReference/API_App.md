@@ -13,7 +13,7 @@ Represents the different branches of a repository for building, deploying, and h
  ** appArn **   <a name="amplify-Type-App-appArn"></a>
 The Amazon Resource Name (ARN) of the Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: Yes
 
  ** appId **   <a name="amplify-Type-App-appId"></a>
@@ -37,7 +37,7 @@ Required: Yes
  ** description **   <a name="amplify-Type-App-description"></a>
 The description for the Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: Yes
 
@@ -55,9 +55,9 @@ Required: Yes
 The environment variables for the Amplify app.
 For a list of the environment variables that are accessible to Amplify by default, see [Amplify Environment variables](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-console-environment-variables.html) in the *Amplify Hosting User Guide*.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 5500.
+Value Length Constraints: Minimum length of 0. Maximum length of 5500.
 Value Pattern: `(?s).*`
 Required: Yes
 
@@ -78,7 +78,7 @@ Required: Yes
  ** repository **   <a name="amplify-Type-App-repository"></a>
 The Git repository for the Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: Yes
 
@@ -102,7 +102,7 @@ Required: No
  ** basicAuthCredentials **   <a name="amplify-Type-App-basicAuthCredentials"></a>
 The basic authorization credentials for branches for the Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 Required: No
 
@@ -119,7 +119,7 @@ Type: [CacheConfig](API_CacheConfig.md) object
 Required: No
 
  ** computeRoleArn **   <a name="amplify-Type-App-computeRoleArn"></a>
-The Amazon Resource Name (ARN) of the IAM role for an SSR app. The Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+The Amazon Resource Name (ARN) of the IAM role for an SSR app. The Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the * Amplify User Guide*.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
@@ -176,9 +176,9 @@ The tag for the Amplify app.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `(?!aws:)[a-zA-Z+-=._:/]+`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: No
 
  ** wafConfiguration **   <a name="amplify-Type-App-wafConfiguration"></a>

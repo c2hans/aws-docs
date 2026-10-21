@@ -11,7 +11,7 @@ Displays detailed information about a specified virtual cluster. Virtual cluster
 <a name="API_DescribeVirtualCluster_RequestSyntax"></a>
 
 ```
-GET /virtualclusters/{{virtualClusterId}} HTTP/1.1
+GET /virtualclusters/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /virtualclusters/{{virtualClusterId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [virtualClusterId](#API_DescribeVirtualCluster_RequestSyntax) **   <a name="emroneks-DescribeVirtualCluster-request-uri-id"></a>
+ ** [id](#API_DescribeVirtualCluster_RequestSyntax) **   <a name="emroneks-DescribeVirtualCluster-request-uri-id"></a>
 The ID of the virtual cluster that will be described.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

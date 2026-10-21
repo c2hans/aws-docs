@@ -14,7 +14,7 @@ Inputs related to the security configuration. Security configurations in Amazon 
 The ARN (Amazon Resource Name) of the security configuration.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/securityconfigurations\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/securityconfigurations\/[0-9a-zA-Z]+`
 Required: No
 
  ** createdAt **   <a name="emroneks-Type-SecurityConfiguration-createdAt"></a>
@@ -26,7 +26,7 @@ Required: No
 The user who created the job run.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):(iam|sts)::(\d{12})?:[\w/+=,.@-]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):(iam|sts)::(\d{12})?:[\w/+=,.@-]+`
 Required: No
 
  ** id **   <a name="emroneks-Type-SecurityConfiguration-id"></a>

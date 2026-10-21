@@ -50,14 +50,14 @@ Required: No
 The owner ID for the repository associated with a specific sync configuration, such as the owner ID in GitHub.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** [RepositoryName](#API_CreateRepositoryLink_RequestSyntax) **   <a name="codeconnections-CreateRepositoryLink-request-RepositoryName"></a>
 The name of the repository to be associated with the repository link.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** [Tags](#API_CreateRepositoryLink_RequestSyntax) **   <a name="codeconnections-CreateRepositoryLink-request-Tags"></a>
@@ -101,15 +101,15 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** AccessDeniedException **
 You do not have sufficient access to perform this action.
-HTTP Status Code: 400
+HTTP Status Code: 403
 
  ** ConcurrentModificationException **
 Exception thrown as a result of concurrent modification to an application. For example, two individuals attempting to edit the same application at the same time.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** InternalServerException **
 Received an internal server exception. Try again later.
-HTTP Status Code: 400
+HTTP Status Code: 503
 
  ** InvalidInputException **
 The input is not valid. Verify that the action is typed correctly.
@@ -117,15 +117,15 @@ HTTP Status Code: 400
 
  ** LimitExceededException **
 Exceeded the maximum limit for connections.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ResourceAlreadyExistsException **
 Unable to create resource. Resource already exists.
-HTTP Status Code: 400
+HTTP Status Code: 409
 
  ** ThrottlingException **
 The request was denied due to request throttling.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
 ## See Also
 <a name="API_CreateRepositoryLink_SeeAlso"></a>

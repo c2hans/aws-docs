@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-reference-3P-apps-quick-responses-client.html
 ---
 
-# Connect Customer agent workspace Quick Responses API
+# Connect Customer SDK Quick Responses API
 <a name="api-reference-3P-apps-quick-responses-client"></a>
 
-The Amazon Connect SDK provides a `QuickResponsesClient` which serves as an interface that you can use to make requests to search your Amazon Connect Quick Responses Knowledge Base.
+The Connect Customer SDK provides a `QuickResponsesClient` which serves as an interface that you can use to make requests to search your Connect Customer Quick Responses Knowledge Base.
 
 The `QuickResponsesClient` accepts an optional constructor argument, ` ConnectClientConfig` which itself is defined as:
 

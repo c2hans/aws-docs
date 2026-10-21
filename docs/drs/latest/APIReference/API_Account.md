@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Account.html
 # Account
 <a name="API_Account"></a>
 
-AWS account.
+ AWS account.
 
 ## Contents
 <a name="API_Account_Contents"></a>

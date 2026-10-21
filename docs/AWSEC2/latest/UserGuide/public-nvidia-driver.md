@@ -28,7 +28,6 @@ P6-B200 and P6-B300 instance types require installation and configuration of add
 
 | Instance | Product type | Product series | Product | Minimum driver version |
 | --- | --- | --- | --- | --- |
-| G3 | Tesla | M-Class | M60 | -- |
 | G4dn | Tesla | T-Series | T4 | -- |
 | G5 | Tesla | A-Series | A10 | 470.00 or later |
 | G5g1 | Tesla | T-Series | T4G | 470.82.01 or later |

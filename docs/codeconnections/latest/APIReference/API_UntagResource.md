@@ -51,7 +51,7 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
 ## See Also
 <a name="API_UntagResource_SeeAlso"></a>

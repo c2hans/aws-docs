@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/apprunner/index.html
 title: 'AWS App Runner Documentation'
 canonical_url: https://docs.aws.amazon.com/apprunner/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS App Runner Documentation

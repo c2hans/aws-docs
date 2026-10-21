@@ -66,7 +66,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [recoveryPlan](#API_GetRecoveryPlan_ResponseSyntax) **   <a name="drs-GetRecoveryPlan-response-recoveryPlan"></a>
-The Recovery Plan.
+A Recovery Plan resource.
 Type: [RecoveryPlan](API_RecoveryPlan.md) object
 
 ## Errors

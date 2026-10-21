@@ -11,7 +11,7 @@ Displays detailed information about a managed endpoint. A managed endpoint is a 
 <a name="API_DescribeManagedEndpoint_RequestSyntax"></a>
 
 ```
-GET /virtualclusters/{{virtualClusterId}}/endpoints/{{endpointId}} HTTP/1.1
+GET /virtualclusters/{{virtualClusterId}}/endpoints/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /virtualclusters/{{virtualClusterId}}/endpoints/{{endpointId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [endpointId](#API_DescribeManagedEndpoint_RequestSyntax) **   <a name="emroneks-DescribeManagedEndpoint-request-uri-id"></a>
+ ** [id](#API_DescribeManagedEndpoint_RequestSyntax) **   <a name="emroneks-DescribeManagedEndpoint-request-uri-id"></a>
 This output displays ID of the managed endpoint.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

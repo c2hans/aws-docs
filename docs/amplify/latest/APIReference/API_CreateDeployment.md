@@ -29,13 +29,13 @@ Content-type: application/json
 The request uses the following URI parameters.
 
  ** [appId](#API_CreateDeployment_RequestSyntax) **   <a name="amplify-CreateDeployment-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
 
  ** [branchName](#API_CreateDeployment_RequestSyntax) **   <a name="amplify-CreateDeployment-request-uri-branchName"></a>
- The name of the branch to use for the job.
+The name of the branch to use for the job.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `(?s).+`
 Required: Yes
@@ -46,11 +46,11 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [fileMap](#API_CreateDeployment_RequestSyntax) **   <a name="amplify-CreateDeployment-request-fileMap"></a>
- An optional file map that contains the file name as the key and the file content md5 hash as the value. If this argument is provided, the service will generate a unique upload URL per file. Otherwise, the service will only generate a single upload URL for the zipped files.
+An optional file map that contains the file name as the key and the file content md5 hash as the value. If this argument is provided, the service will generate a unique upload URL per file. Otherwise, the service will only generate a single upload URL for the zipped files.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 32.
+Value Length Constraints: Minimum length of 0. Maximum length of 32.
 Value Pattern: `(?s).*`
 Required: No
 
@@ -78,22 +78,22 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [fileUploadUrls](#API_CreateDeployment_ResponseSyntax) **   <a name="amplify-CreateDeployment-response-fileUploadUrls"></a>
- When the `fileMap` argument is provided in the request, `fileUploadUrls` will contain a map of file names to upload URLs.
+When the `fileMap` argument is provided in the request, `fileUploadUrls` will contain a map of file names to upload URLs.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 1000.
+Value Length Constraints: Minimum length of 0. Maximum length of 1000.
 
  ** [jobId](#API_CreateDeployment_ResponseSyntax) **   <a name="amplify-CreateDeployment-response-jobId"></a>
- The job ID for this deployment. will supply to start deployment api.
+The job ID for this deployment. will supply to start deployment api.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[0-9]+`
 
  ** [zipUploadUrl](#API_CreateDeployment_ResponseSyntax) **   <a name="amplify-CreateDeployment-response-zipUploadUrl"></a>
- When the `fileMap` argument is not provided in the request, this `zipUploadUrl` is returned.
+When the `fileMap` argument is not provided in the request, this `zipUploadUrl` is returned.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 
 ## Errors
 <a name="API_CreateDeployment_Errors"></a>

@@ -19,19 +19,19 @@ Required: Yes
 The ARN of the job template.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/jobtemplates\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/jobtemplates\/[0-9a-zA-Z]+`
 Required: No
 
  ** createdAt **   <a name="emroneks-Type-JobTemplate-createdAt"></a>
- The date and time when the job template was created.
+The date and time when the job template was created.
 Type: Timestamp
 Required: No
 
  ** createdBy **   <a name="emroneks-Type-JobTemplate-createdBy"></a>
- The user who created the job template.
+The user who created the job template.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):(iam|sts)::(\d{12})?:[\w/+=,.@-]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):(iam|sts)::(\d{12})?:[\w/+=,.@-]+`
 Required: No
 
  ** decryptionError **   <a name="emroneks-Type-JobTemplate-decryptionError"></a>
@@ -49,10 +49,10 @@ Pattern: `[0-9a-z]+`
 Required: No
 
  ** kmsKeyArn **   <a name="emroneks-Type-JobTemplate-kmsKeyArn"></a>
- The KMS key ARN used to encrypt the job template.
+The KMS key ARN used to encrypt the job template.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `^(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})$`
+Pattern: `(arn:(aws[a-zA-Z0-9-]*):kms:.+:(\d{12})?:key\/[(0-9a-zA-Z)-?]+|\$\{[a-zA-Z]\w*\})`
 Required: No
 
  ** name **   <a name="emroneks-Type-JobTemplate-name"></a>

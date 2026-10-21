@@ -20,7 +20,7 @@ GET /tags/{{resourceArn}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [resourceArn](#API_ListTagsForResource_RequestSyntax) **   <a name="controltower-ListTagsForResource-request-uri-resourceArn"></a>
- The ARN of the resource.
+The ARN of the resource.
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[0-9a-zA-Z_\-:\/]+`
 Required: Yes

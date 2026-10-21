@@ -21,7 +21,7 @@ In the following list, the required parameters are described first.
 A specific condition to apply to a recipe action. For more information, see [Recipe structure](https://docs.aws.amazon.com/databrew/latest/dg/recipes.html#recipes.structure) in the * AWS Glue DataBrew Developer Guide*.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[A-Z\_]+$`
+Pattern: `[A-Z\_]+`
 Required: Yes
 
  ** TargetColumn **   <a name="databrew-Type-ConditionExpression-TargetColumn"></a>
@@ -33,7 +33,7 @@ Required: Yes
  ** Value **   <a name="databrew-Type-ConditionExpression-Value"></a>
 A value that the condition must evaluate to for the condition to succeed.
 Type: String
-Length Constraints: Maximum length of 1024.
+Length Constraints: Minimum length of 0. Maximum length of 1024.
 Required: No
 
 ## See Also

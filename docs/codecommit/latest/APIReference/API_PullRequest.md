@@ -33,7 +33,7 @@ Required: No
  ** description **   <a name="CodeCommit-Type-PullRequest-description"></a>
 The user-defined description of the pull request. This description can be used to clarify what should be reviewed and other details of the request.
 Type: String
-Length Constraints: Maximum length of 10240.
+Length Constraints: Minimum length of 0. Maximum length of 10240.
 Required: No
 
  ** lastActivityDate **   <a name="CodeCommit-Type-PullRequest-lastActivityDate"></a>
@@ -65,7 +65,7 @@ Required: No
  ** title **   <a name="CodeCommit-Type-PullRequest-title"></a>
 The user-defined title of the pull request. This title is displayed in the list of pull requests to other repository users.
 Type: String
-Length Constraints: Maximum length of 150.
+Length Constraints: Minimum length of 0. Maximum length of 150.
 Required: No
 
 ## See Also

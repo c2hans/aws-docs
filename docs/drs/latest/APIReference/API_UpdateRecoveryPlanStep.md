@@ -32,7 +32,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [configuration](#API_UpdateRecoveryPlanStep_RequestSyntax) **   <a name="drs-UpdateRecoveryPlanStep-request-configuration"></a>
-The new type-specific configuration of the step. The step type cannot be changed.
+Type-specific configuration for a recovery plan step. Exactly one member must be set.
 Type: [RecoveryPlanStepConfiguration](API_RecoveryPlanStepConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
@@ -45,7 +45,7 @@ Pattern: `arn:aws(-[a-z0-9]+)*:drs:[a-z0-9-]+:[0-9]{12}:[a-zA-Z0-9_/.-]+`
 Required: Yes
 
  ** [stepName](#API_UpdateRecoveryPlanStep_RequestSyntax) **   <a name="drs-UpdateRecoveryPlanStep-request-stepName"></a>
-The new name of the step.
+The name of a Recovery Plan Step.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9][a-zA-Z0-9 _-]*`
@@ -78,7 +78,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [recoveryPlanStep](#API_UpdateRecoveryPlanStep_ResponseSyntax) **   <a name="drs-UpdateRecoveryPlanStep-response-recoveryPlanStep"></a>
-The updated Recovery Plan step.
+A Recovery Plan Step resource.
 Type: [RecoveryPlanStep](API_RecoveryPlanStep.md) object
 
 ## Errors

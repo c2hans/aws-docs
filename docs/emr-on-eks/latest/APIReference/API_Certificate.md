@@ -14,14 +14,14 @@ The entity representing certificate data generated for managed endpoint.
 The ARN of the certificate generated for managed endpoint.
 Type: String
 Length Constraints: Minimum length of 44. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):acm:.+:(\d{12}):certificate/.+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):acm:.+:(\d{12}):certificate/.+`
 Required: No
 
  ** certificateData **   <a name="emroneks-Type-Certificate-certificateData"></a>
 The base64 encoded PEM certificate data generated for managed endpoint.
 Type: String
-Length Constraints: Maximum length of 5000.
-Pattern: `^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$`
+Length Constraints: Minimum length of 0. Maximum length of 5000.
+Pattern: `([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{4}|[A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?`
 Required: No
 
 ## See Also

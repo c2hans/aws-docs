@@ -11,7 +11,7 @@ Performs a recipe step within an interactive DataBrew session that's currently o
 <a name="API_SendProjectSessionAction_RequestSyntax"></a>
 
 ```
-PUT /projects/{{name}}/sendProjectSessionAction HTTP/1.1
+PUT /projects/{{Name}}/sendProjectSessionAction HTTP/1.1
 Content-type: application/json
 
 {
@@ -49,7 +49,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_SendProjectSessionAction_RequestSyntax) **   <a name="databrew-SendProjectSessionAction-request-uri-Name"></a>
+ ** [Name](#API_SendProjectSessionAction_RequestSyntax) **   <a name="databrew-SendProjectSessionAction-request-uri-Name"></a>
 The name of the project to apply the action to.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -63,7 +63,7 @@ The request accepts the following data in JSON format.
 A unique identifier for an interactive session that's currently open and ready for work. The action will be performed on this session.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^[a-zA-Z0-9][a-zA-Z0-9-]*$`
+Pattern: `[a-zA-Z0-9][a-zA-Z0-9-]*`
 Required: No
 
  ** [Preview](#API_SendProjectSessionAction_RequestSyntax) **   <a name="databrew-SendProjectSessionAction-request-Preview"></a>

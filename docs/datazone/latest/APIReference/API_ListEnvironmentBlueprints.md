@@ -55,6 +55,7 @@ Content-type: application/json
 {
    "items": [
       {
+         "blueprintCategory": "string",
          "createdAt": "string",
          "description": "string",
          "id": "string",

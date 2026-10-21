@@ -98,11 +98,11 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** LimitExceededException **
 Exceeded the maximum limit for connections.
-HTTP Status Code: 400
+HTTP Status Code: 429
 
  ** ResourceNotFoundException **
 Resource not found. Verify the connection resource ARN and try again.
-HTTP Status Code: 400
+HTTP Status Code: 404
 
  ** ResourceUnavailableException **
 Resource not found. Verify the ARN for the host resource and try again.

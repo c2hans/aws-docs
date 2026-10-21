@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/low-code-intelligent-document-
 title: 'Guidance for Low Code Intelligent Document Processing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/low-code-intelligent-document-processing-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Low Code Intelligent Document Processing on AWS

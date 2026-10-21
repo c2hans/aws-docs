@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/wavelength/index.html
 title: 'AWS Wavelength Documentation'
 canonical_url: https://docs.aws.amazon.com/wavelength/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS Wavelength Documentation

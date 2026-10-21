@@ -100,8 +100,6 @@ Existing Amplify apps deployed from a GitHub repository using OAuth continue to 
 The credentials for basic authorization for an Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 *Required*: No
 *Type*: [BasicAuthConfig](aws-properties-amplify-app-basicauthconfig.md)
-*Pattern*: `(?s).*`
-*Maximum*: `2000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BuildSpec`  <a name="cfn-amplify-app-buildspec"></a>
@@ -120,7 +118,7 @@ The cache configuration for the Amplify app. If you don't specify the cache conf
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ComputeRoleArn`  <a name="cfn-amplify-app-computerolearn"></a>
-The Amazon Resource Name (ARN) of the IAM role for an SSR app. The Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+The Amazon Resource Name (ARN) of the IAM role for an SSR app. The Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the * Amplify User Guide*.
 *Required*: No
 *Type*: String
 *Pattern*: `(?s).*`

@@ -20,6 +20,11 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Pattern: `s3://.+`
 Required: No
 
+ ** s3Files **   <a name="datazone-Type-SourceLocation-s3Files"></a>
+The Amazon Simple Storage Service objects to import as the notebook's cells. One cell is created for each object, in the order in which you list them.
+Type: [S3FilesLocation](API_S3FilesLocation.md) object
+Required: No
+
 ## See Also
 <a name="API_SourceLocation_SeeAlso"></a>
 

@@ -14,7 +14,7 @@ Information about the revision for a specific sync event, such as the branch, ow
 The branch name for a specific revision.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** Directory **   <a name="codeconnections-Type-Revision-Directory"></a>
@@ -26,7 +26,7 @@ Required: Yes
 The owner ID for a specific revision, such as the GitHub owner ID for a GitHub repository.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** ProviderType **   <a name="codeconnections-Type-Revision-ProviderType"></a>
@@ -39,7 +39,7 @@ Required: Yes
 The repository name for a specific revision.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** Sha **   <a name="codeconnections-Type-Revision-Sha"></a>

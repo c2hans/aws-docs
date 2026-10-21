@@ -31,7 +31,7 @@ Valid Range: Minimum value of 0. Maximum value of 50.
 
  ** [nextToken](#API_ListWebhooks_RequestSyntax) **   <a name="amplify-ListWebhooks-request-uri-nextToken"></a>
 A pagination token. Set to null to start listing webhooks from the start. If non-null,the pagination token is returned in a result. Pass its value in here to list more webhooks.
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Request Body
@@ -73,7 +73,7 @@ The following data is returned in JSON format by the service.
  ** [nextToken](#API_ListWebhooks_ResponseSyntax) **   <a name="amplify-ListWebhooks-response-nextToken"></a>
 A pagination token. If non-null, the pagination token is returned in a result. Pass its value in another request to retrieve more entries.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
  ** [webhooks](#API_ListWebhooks_ResponseSyntax) **   <a name="amplify-ListWebhooks-response-webhooks"></a>

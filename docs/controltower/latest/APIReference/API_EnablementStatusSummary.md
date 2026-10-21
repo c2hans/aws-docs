@@ -18,7 +18,7 @@ Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
 Required: No
 
  ** status **   <a name="controltower-Type-EnablementStatusSummary-status"></a>
- The deployment status of the enabled resource.
+The deployment status of the enabled resource.
 Valid values:
 +  `SUCCEEDED`: The `EnabledControl` or `EnabledBaseline` configuration was deployed successfully.
 +  `UNDER_CHANGE`: The `EnabledControl` or `EnabledBaseline` configuration is changing.

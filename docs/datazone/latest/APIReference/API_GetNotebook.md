@@ -185,7 +185,7 @@ Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
  ** [type](#API_GetNotebook_ResponseSyntax) **   <a name="datazone-GetNotebook-response-type"></a>
 The type of the notebook.
 Type: String
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 
  ** [updatedAt](#API_GetNotebook_ResponseSyntax) **   <a name="datazone-GetNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

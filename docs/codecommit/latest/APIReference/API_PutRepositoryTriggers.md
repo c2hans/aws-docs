@@ -71,87 +71,129 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryTriggerBranchNameException **
 One or more branch names specified for the trigger is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryTriggerCustomDataException **
 The custom data provided for the trigger is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryTriggerDestinationArnException **
 The Amazon Resource Name (ARN) for the trigger is not valid for the specified destination. The most common reason for this error is that the ARN does not meet the requirements for the service type.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryTriggerEventsException **
 One or more events specified for the trigger is not valid. Check to make sure that all events specified match the requirements for allowed events.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryTriggerNameException **
 The name of the trigger is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryTriggerRegionException **
 The AWS Region for the trigger target does not match the AWS Region for the repository. Triggers must be created in the same AWS Region as the target for the trigger.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumBranchesExceededException **
 The number of branches for the trigger was exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumRepositoryTriggersExceededException **
 The number of triggers allowed for the repository was exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryTriggerBranchNameListRequiredException **
 At least one branch name is required, but was not specified in the trigger configuration.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryTriggerDestinationArnRequiredException **
 A destination ARN for the target service for the trigger is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryTriggerEventsListRequiredException **
 At least one event for the trigger is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryTriggerNameRequiredException **
 A name for the trigger is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryTriggersListRequiredException **
 The list of triggers for the repository is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

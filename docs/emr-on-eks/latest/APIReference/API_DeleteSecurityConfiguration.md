@@ -11,7 +11,7 @@ Deletes a security configuration.
 <a name="API_DeleteSecurityConfiguration_RequestSyntax"></a>
 
 ```
-DELETE /securityconfigurations/{{securityConfigurationId}} HTTP/1.1
+DELETE /securityconfigurations/{{id}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /securityconfigurations/{{securityConfigurationId}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [securityConfigurationId](#API_DeleteSecurityConfiguration_RequestSyntax) **   <a name="emroneks-DeleteSecurityConfiguration-request-uri-id"></a>
+ ** [id](#API_DeleteSecurityConfiguration_RequestSyntax) **   <a name="emroneks-DeleteSecurityConfiguration-request-uri-id"></a>
 The ID of the security configuration to delete.
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Pattern: `[0-9a-z]+`

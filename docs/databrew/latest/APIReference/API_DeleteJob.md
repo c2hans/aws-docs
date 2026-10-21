@@ -11,7 +11,7 @@ Deletes the specified DataBrew job.
 <a name="API_DeleteJob_RequestSyntax"></a>
 
 ```
-DELETE /jobs/{{name}} HTTP/1.1
+DELETE /jobs/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ DELETE /jobs/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DeleteJob_RequestSyntax) **   <a name="databrew-DeleteJob-request-uri-Name"></a>
+ ** [Name](#API_DeleteJob_RequestSyntax) **   <a name="databrew-DeleteJob-request-uri-Name"></a>
 The name of the job to be deleted.
 Length Constraints: Minimum length of 1. Maximum length of 240.
 Required: Yes

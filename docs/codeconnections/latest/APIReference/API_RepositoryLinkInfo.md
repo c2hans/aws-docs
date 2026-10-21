@@ -21,7 +21,7 @@ Required: Yes
 The owner ID for the repository associated with the repository link, such as the owner ID in GitHub.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** ProviderType **   <a name="codeconnections-Type-RepositoryLinkInfo-ProviderType"></a>
@@ -33,20 +33,20 @@ Required: Yes
  ** RepositoryLinkArn **   <a name="codeconnections-Type-RepositoryLinkInfo-RepositoryLinkArn"></a>
 The Amazon Resource Name (ARN) of the repository link.
 Type: String
-Pattern: `^arn:aws(?:-[a-z]+)*:(codestar-connections|codeconnections):[a-z\-0-9]+:\d{12}:repository-link\/[a-zA-Z0-9\-:/]+`
+Pattern: `arn:aws(?:-[a-z]+)*:(codestar-connections|codeconnections):[a-z\-0-9]+:\d{12}:repository-link\/[a-zA-Z0-9\-:/]+`
 Required: Yes
 
  ** RepositoryLinkId **   <a name="codeconnections-Type-RepositoryLinkInfo-RepositoryLinkId"></a>
 The ID of the repository link.
 Type: String
-Pattern: `^[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}$`
+Pattern: `[0-9a-fA-F]{8}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{4}\b-[0-9a-fA-F]{12}`
 Required: Yes
 
  ** RepositoryName **   <a name="codeconnections-Type-RepositoryLinkInfo-RepositoryName"></a>
 The name of the repository associated with the repository link.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** EncryptionKeyArn **   <a name="codeconnections-Type-RepositoryLinkInfo-EncryptionKeyArn"></a>

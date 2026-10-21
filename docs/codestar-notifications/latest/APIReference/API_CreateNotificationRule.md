@@ -48,7 +48,7 @@ A unique, client-generated idempotency token that, when provided in a request, e
 The AWS SDKs prepopulate client request tokens. If you are using an AWS SDK, an idempotency token is created for you.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `^[\w:/-]+$`
+Pattern: `[\w:/-]+`
 Required: No
 
  ** [DetailType](#API_CreateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-CreateNotificationRule-request-DetailType"></a>
@@ -67,13 +67,13 @@ Required: Yes
 The name for the notification rule. Notification rule names must be unique in your AWS account.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z0-9\-_ ]+$`
+Pattern: `[A-Za-z0-9\-_ ]+`
 Required: Yes
 
  ** [Resource](#API_CreateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-CreateNotificationRule-request-Resource"></a>
 The Amazon Resource Name (ARN) of the resource to associate with the notification rule. Supported resources include pipelines in AWS CodePipeline, repositories in AWS CodeCommit, and build projects in AWS CodeBuild.
 Type: String
-Pattern: `^arn:aws[^:\s]*:[^:\s]*:[^:\s]*:[0-9]{12}:[^\s]+$`
+Pattern: `arn:aws[^:\s]*:[^:\s]*:[^:\s]*:[0-9]{12}:[^\s]+`
 Required: Yes
 
  ** [Status](#API_CreateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-CreateNotificationRule-request-Status"></a>
@@ -86,15 +86,15 @@ Required: No
 A list of tags to apply to this notification rule. Key names cannot start with "`aws`".
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: No
 
  ** [Targets](#API_CreateNotificationRule_RequestSyntax) **   <a name="codestarnotifications-CreateNotificationRule-request-Targets"></a>
 A list of Amazon Resource Names (ARNs) of Amazon Simple Notification Service topics and Amazon Q Developer in chat applications clients to associate with the notification rule.
 Type: Array of [Target](API_Target.md) objects
-Array Members: Maximum number of 10 items.
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: Yes
 
 ## Response Syntax
@@ -119,7 +119,7 @@ The following data is returned in JSON format by the service.
  ** [Arn](#API_CreateNotificationRule_ResponseSyntax) **   <a name="codestarnotifications-CreateNotificationRule-response-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule.
 Type: String
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 
 ## Errors
 <a name="API_CreateNotificationRule_Errors"></a>

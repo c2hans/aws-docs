@@ -18,7 +18,7 @@ Required: Yes
  ** fileContent **   <a name="CodeCommit-Type-PutFileEntry-fileContent"></a>
 The content of the file, if a source file is not specified.
 Type: Base64-encoded binary data object
-Length Constraints: Maximum length of 6291456.
+Length Constraints: Minimum length of 0. Maximum length of 6291456.
 Required: No
 
  ** fileMode **   <a name="CodeCommit-Type-PutFileEntry-fileMode"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/mgn/index.html
 title: 'AWS Transform MGN Documentation'
 canonical_url: https://docs.aws.amazon.com/mgn/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS Transform MGN Documentation

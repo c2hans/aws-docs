@@ -81,7 +81,7 @@ The request accepts the following data in JSON format.
 The certificate ARN provided by users for the managed endpoint. This field is under deprecation and will be removed in future releases.
 Type: String
 Length Constraints: Minimum length of 44. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):acm:.+:(\d{12}):certificate/.+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):acm:.+:(\d{12}):certificate/.+`
 Required: No
 
  ** [clientToken](#API_CreateManagedEndpoint_RequestSyntax) **   <a name="emroneks-CreateManagedEndpoint-request-clientToken"></a>
@@ -100,7 +100,7 @@ Required: No
 The ARN of the execution role.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)`
 Required: Yes
 
  ** [name](#API_CreateManagedEndpoint_RequestSyntax) **   <a name="emroneks-CreateManagedEndpoint-request-name"></a>
@@ -165,7 +165,7 @@ The following data is returned in JSON format by the service.
 The output contains the ARN of the managed endpoint.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/endpoints\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/endpoints\/[0-9a-zA-Z]+`
 
  ** [id](#API_CreateManagedEndpoint_ResponseSyntax) **   <a name="emroneks-CreateManagedEndpoint-response-id"></a>
 The output contains the ID of the managed endpoint.

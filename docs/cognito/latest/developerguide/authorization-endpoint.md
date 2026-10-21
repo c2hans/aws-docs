@@ -11,7 +11,7 @@ The authorize endpoint redirects either to managed login or to an IdP sign-in pa
 
 To use the authorize endpoint, invoke your user's browser at `/oauth2/authorize` with parameters that provide your user pool with information about the following user pool details.
 + The app client that you want to sign in to.
-+ The callback URL that you want to end up at.
++ The callback URL that you want to be redirected to.
 + The OAuth 2.0 scopes that you want to request in your user's access token.
 + Optionally, the third-party IdP that you want to use to sign in.
 
@@ -97,7 +97,7 @@ When your authorization request invokes a redirect to OIDC IdPs, Amazon Cognito 
 **`prompt`**
 Optional.
 An OIDC parameter that controls authentication behavior for existing sessions. Available in the managed login branding version only, not in the classic hosted UI. For more information from the OIDC specification, see [Authentication request](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest). The values `none` and `login` have an effect on user pool authentication behavior.
-Amazon Cognito forwards all values of `prompt` except `none` to your IdPs when users select authentication with third-party providers. This is true when the URL that users access includes an `identity_provider` or `idp_identifier` parameter, or when the authorization server redirects them to the [Login endpoint](login-endpoint.md) and they select and IdP from the available buttons.
+Amazon Cognito forwards all values of `prompt` except `none` to your IdPs when users select authentication with third-party providers. This is true when the URL that users access includes an `identity_provider` or `idp_identifier` parameter, or when the authorization server redirects them to the [Login endpoint](login-endpoint.md) and they select an IdP from the available buttons.
 **Prompt parameter values**
 `prompt=none`
 Amazon Cognito silently continues authentication for users who have a valid authenticated session. With this prompt, users can silently authenticate between different app clients in your user pool. If the user is not already authenticated, the authorization server returns a `login_required` error.
@@ -329,7 +329,7 @@ Amazon Cognito might deny your request. Negative requests come with an HTTP erro
     ```
     HTTP 1.1 302 Found Location: https://client_redirect_uri?error=invalid_request&error_description=Google+Error+-+[status code]+[Google-provided error code]
     ```
-+ When Amazon Cognito encounters an communication exception when it connects to an external IdP, the authentication server redirects with an error to the client's `redirect_uri` with either of the following messages:
++ When Amazon Cognito encounters a communication exception when it connects to an external IdP, the authentication server redirects with an error to the client's `redirect_uri` with either of the following messages:
   +
 
     ```

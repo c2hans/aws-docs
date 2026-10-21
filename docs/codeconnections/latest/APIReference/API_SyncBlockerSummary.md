@@ -14,7 +14,7 @@ A summary for sync blockers.
 The resource name for sync blocker summary.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: Yes
 
  ** LatestBlockers **   <a name="codeconnections-Type-SyncBlockerSummary-LatestBlockers"></a>
@@ -26,7 +26,7 @@ Required: No
 The parent resource name for a sync blocker summary.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
-Pattern: `^[0-9A-Za-z]+[0-9A-Za-z_\\-]*$`
+Pattern: `[0-9A-Za-z]+[0-9A-Za-z_\\-]*`
 Required: No
 
 ## See Also

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cog
 # Understanding the identity (ID) token
 <a name="amazon-cognito-user-pools-using-the-id-token"></a>
 
-The ID token is a [JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519) that contains claims about the identity of the authenticated user, such as `name`, `email`, and `phone_number`. You can use this identity information inside your application. The ID token can also be used to authenticate users to your resource servers or server applications. You can also use an ID token outside of the application with your web API operations. In those cases, you must verify the signature of the ID token before you can trust any claims inside the ID token. See [Verifying JSON web tokens](amazon-cognito-user-pools-using-tokens-verifying-a-jwt.md).
+The ID token is a [JSON web token (JWT)](https://tools.ietf.org/html/rfc7519) that contains claims about the identity of the authenticated user, such as `name`, `email`, and `phone_number`. You can use this identity information inside your application. The ID token can also be used to authenticate users to your resource servers or server applications. You can also use an ID token outside of the application with your web API operations. In those cases, you must verify the signature of the ID token before you can trust any claims inside the ID token. See [Verifying JSON web tokens](amazon-cognito-user-pools-using-tokens-verifying-a-jwt.md).
 
 You can set the ID token expiration to any value between 5 minutes and 1 day. You can set this value per app client.
 
@@ -14,7 +14,7 @@ The ID token includes the `acr` and `amr` claims, which describe the authenticat
 **Important**
 When your user signs in with managed login, Amazon Cognito sets session cookies that are valid for 1 hour. If you use managed login for authentication in your application, and specify a minimum duration of less than 1 hour for your access and ID tokens, your users will still have a valid session until the cookie expires. If the user has tokens that expire during the one-hour session, the user can refresh their tokens without the need to reauthenticate.
 
-## ID Token Header
+## ID token header
 <a name="user-pool-id-token-header"></a>
 
 The header contains two pieces of information: the key ID (`kid`), and the algorithm (`alg`).
@@ -37,7 +37,7 @@ For more information about the `alg` parameter, see [Algorithm (alg) header para
 ## ID token default payload
 <a name="user-pool-id-token-payload"></a>
 
-This is a example payload from an ID token. It contains claims about the authenticated user. For more information about OpenID Connect (OIDC) standard claims, see the list of [OIDC standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims). You can add claims of your own design with a [Pre token generation Lambda trigger](user-pool-lambda-pre-token-generation.md).
+This is an example payload from an ID token. It contains claims about the authenticated user. For more information about OpenID Connect (OIDC) standard claims, see the list of [OIDC standard claims](http://openid.net/specs/openid-connect-core-1_0.html#StandardClaims). You can add claims of your own design with a [Pre token generation Lambda trigger](user-pool-lambda-pre-token-generation.md).
 
 This payload is representative, not exhaustive. The set of claims in a Amazon Cognito ID token grows over time as new features add new claims, so the claims that your tokens carry can differ from this example. Treat this example as a snapshot of common claims rather than a complete, fixed list, and read [How to parse this token safely](#user-pool-id-token-parse-safely) before you write code that parses Amazon Cognito tokens.
 
@@ -83,7 +83,7 @@ This payload is representative, not exhaustive. The set of claims in a Amazon Co
 
 **`sub`**
 A unique identifier ([UUID](cognito-terms.md#terms-uuid)), or subject, for the authenticated user. The username might not be unique in your user pool. The `sub` claim is the best way to identify a given user.
-Amazon Cognito generates `sub` in an Amazon Cognito-specific format that doesn't conform to a specific UUID format, including RFC UUID. You shouldn't strictly validate the format of `sub`. More generally, as described in [How to parse this token safely](#user-pool-id-token-parse-safely), read each claim as the type that this page documents and don't impose a stricter format than the documentation states.
+Amazon Cognito generates `sub` in an Amazon Cognito-specific format that doesn't conform to a specific UUID format, including RFC UUID. You shouldn't strictly validate the format of `sub`. More generally, as described in [the guidance on parsing token claims safely](#user-pool-id-token-parse-safely), read each claim as the type that this page documents and don't impose a stricter format than the documentation states.
 
 **`cognito:groups`**
 An array of strings. Each string is the name of a user pool group that has your user as a member. Groups can be an identifier that you present to your app, or they can generate a request for a preferred IAM role from an identity pool. This claim is always an array, even when the user belongs to a single group.
@@ -252,7 +252,7 @@ When your user pool reports the authentication level that the user reached, Amaz
 
 Requesting an authentication level requires the Essentials or Plus feature plan. The `acr` and `amr` claims are computed by Amazon Cognito and can't be modified by a pre token generation Lambda trigger. Translating the Amazon Cognito levels to another standard, such as NIST or eIDAS, is the responsibility of your application.
 
-## ID Token Signature
+## ID token signature
 <a name="user-pool-id-token-signature"></a>
 
-The signature of the ID token is calculated based on the header and payload of the JWT token. Before you accept the claims in any ID token that your app receives, verify the signature of the token. For more information, see Verifying a JSON Web Token. [Verifying JSON web tokens](amazon-cognito-user-pools-using-tokens-verifying-a-jwt.md).
+The signature of the ID token is calculated based on the header and payload of the JWT token. Before you accept the claims in any ID token that your app receives, verify the signature of the token. For more information, see Verifying a JSON web token. [Verifying JSON web tokens](amazon-cognito-user-pools-using-tokens-verifying-a-jwt.md).

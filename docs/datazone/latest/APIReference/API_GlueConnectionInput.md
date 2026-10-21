@@ -31,7 +31,7 @@ Required: No
  ** connectionType **   <a name="datazone-Type-GlueConnectionInput-connectionType"></a>
 The connection type of the AWS Glue connection.
 Type: String
-Valid Values: `SNOWFLAKE | BIGQUERY | DOCUMENTDB | DYNAMODB | MYSQL | OPENSEARCH | ORACLE | POSTGRESQL | REDSHIFT | SAPHANA | SQLSERVER | TERADATA | VERTICA`
+Valid Values: `SNOWFLAKE | BIGQUERY | DOCUMENTDB | DYNAMODB | MYSQL | OPENSEARCH | ORACLE | POSTGRESQL | REDSHIFT | SAPHANA | SQLSERVER | TERADATA | VERTICA | ICEBERGRESTCATALOG | SNOWFLAKEICEBERGRESTCATALOG | DATABRICKSICEBERGRESTCATALOG`
 Required: No
 
  ** description **   <a name="datazone-Type-GlueConnectionInput-description"></a>

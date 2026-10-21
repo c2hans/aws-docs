@@ -11,53 +11,53 @@ Describes the association between a custom domain and an Amplify app.
 <a name="API_DomainAssociation_Contents"></a>
 
  ** domainAssociationArn **   <a name="amplify-Type-DomainAssociation-domainAssociationArn"></a>
- The Amazon Resource Name (ARN) for the domain association.
+The Amazon Resource Name (ARN) for the domain association.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: Yes
 
  ** domainName **   <a name="amplify-Type-DomainAssociation-domainName"></a>
- The name of the domain.
+The name of the domain.
 Type: String
-Length Constraints: Maximum length of 64.
-Pattern: `^(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?$`
+Length Constraints: Minimum length of 0. Maximum length of 64.
+Pattern: `(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?`
 Required: Yes
 
  ** domainStatus **   <a name="amplify-Type-DomainAssociation-domainStatus"></a>
- The current status of the domain association.
+The current status of the domain association.
 Type: String
 Valid Values: `PENDING_VERIFICATION | IN_PROGRESS | AVAILABLE | IMPORTING_CUSTOM_CERTIFICATE | PENDING_DEPLOYMENT | AWAITING_APP_CNAME | FAILED | CREATING | REQUESTING_CERTIFICATE | UPDATING`
 Required: Yes
 
  ** enableAutoSubDomain **   <a name="amplify-Type-DomainAssociation-enableAutoSubDomain"></a>
- Enables the automated creation of subdomains for branches.
+Enables the automated creation of subdomains for branches.
 Type: Boolean
 Required: Yes
 
  ** statusReason **   <a name="amplify-Type-DomainAssociation-statusReason"></a>
- Additional information that describes why the domain association is in the current state.
+Additional information that describes why the domain association is in the current state.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: Yes
 
  ** subDomains **   <a name="amplify-Type-DomainAssociation-subDomains"></a>
- The subdomains for the domain association.
+The subdomains for the domain association.
 Type: Array of [SubDomain](API_SubDomain.md) objects
-Array Members: Maximum number of 500 items.
+Array Members: Minimum number of 0 items. Maximum number of 500 items.
 Required: Yes
 
  ** autoSubDomainCreationPatterns **   <a name="amplify-Type-DomainAssociation-autoSubDomainCreationPatterns"></a>
- Sets branch patterns for automatic subdomain creation.
+Sets branch patterns for automatic subdomain creation.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `(?s).+`
 Required: No
 
  ** autoSubDomainIAMRole **   <a name="amplify-Type-DomainAssociation-autoSubDomainIAMRole"></a>
- The required AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) for automatically creating subdomains.
+The required AWS Identity and Access Management (IAM) service role for the Amazon Resource Name (ARN) for automatically creating subdomains.
 Type: String
-Length Constraints: Maximum length of 1000.
-Pattern: `^$|^arn:aws:iam::\d{12}:role.+`
+Length Constraints: Minimum length of 0. Maximum length of 1000.
+Pattern: `$|^arn:aws:iam::\d{12}:role.+`
 Required: No
 
  ** certificate **   <a name="amplify-Type-DomainAssociation-certificate"></a>
@@ -67,9 +67,9 @@ Type: [Certificate](API_Certificate.md) object
 Required: No
 
  ** certificateVerificationDNSRecord **   <a name="amplify-Type-DomainAssociation-certificateVerificationDNSRecord"></a>
- The DNS record for certificate verification.
+The DNS record for certificate verification.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: No
 
  ** updateStatus **   <a name="amplify-Type-DomainAssociation-updateStatus"></a>
@@ -83,7 +83,7 @@ Indicates that an Amplify custom certificate is in the process of being imported
 PENDING\_DEPLOYMENT
 Indicates that the subdomain or certificate changes are being propagated.
 AWAITING\_APP\_CNAME
-Amplify is waiting for CNAME records corresponding to subdomains to be propagated. If your custom domain is on Route 53, Amplify handles this for you automatically. For more information about custom domains, see [Setting up custom domains](https://docs.aws.amazon.com/amplify/latest/userguide/custom-domains.html) in the *Amplify Hosting User Guide*.
+Amplify is waiting for CNAME records corresponding to subdomains to be propagated. If your custom domain is on Route 53, Amplify handles this for you automatically. For more information about custom domains, see [Setting up custom domains](https://docs.aws.amazon.com/amplify/latest/userguide/custom-domains.html) in the * Amplify Hosting User Guide*.
 UPDATE\_COMPLETE
 The certificate has been associated with a domain.
 UPDATE\_FAILED

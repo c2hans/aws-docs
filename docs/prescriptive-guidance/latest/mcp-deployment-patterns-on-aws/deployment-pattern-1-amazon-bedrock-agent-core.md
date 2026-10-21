@@ -5,49 +5,49 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 # Deployment Pattern 1 - Amazon Bedrock AgentCore
 <a name="deployment-pattern-1-amazon-bedrock-agent-core"></a>
 
-Amazon Bedrock AgentCore is a fully managed, purpose-built enterprise-grade platform for building, deploying, and operating highly capable AI agents securely at scale, removing the complexity of managing underlying infrastructure. The serverless runtime automatically scales to meet demand without requiring manual infrastructure management, ensuring high availability. Key advantages include enterprise-grade security with isolated sessions and comprehensive observability through integration with Amazon CloudWatch, making it a robust and hassle-free environment for hosting your agent's functionality.
+Amazon Bedrock AgentCore provides two approaches for exposing MCP capabilities on AWS: AgentCore Gateway and AgentCore Runtime. AgentCore Gateway converts existing AWS Lambda functions and APIs into MCP-compatible tools without requiring a standalone MCP server. AgentCore Runtime hosts custom MCP server implementations.
+
+For most new deployments, use AgentCore Gateway when existing Lambda functions or APIs provide the required business logic. Use AgentCore Runtime only when Gateway does not support the required target or when the solution requires a custom MCP server implementation.
 
 ## How it works:
-<a name="how-it-works-.aa57201e-8cf5-572e-92a2-869299fd7577"></a>
+<a name="how-it-works-.185d5907-05f4-52d8-aa78-cbd1ab5d6284"></a>
 
-Amazon Bedrock AgentCore Runtime hosts MCP servers as containerized workloads. When you deploy an MCP server, AgentCore expects a container that exposes the MCP streamable-HTTP endpoint at `0.0.0.0:8000/mcp` — the default path supported by official MCP SDKs (e.g., FastMCP).
+With AgentCore Gateway, MCP clients connect to a managed Streamable HTTP endpoint. Gateway uses the configured Lambda tool schema or OpenAPI specification to present target operations as MCP tools. When a client invokes a tool, Gateway authenticates and authorizes the request, translates it into a target-specific request, invokes the target using configured credentials, and returns the result as an MCP response.
+
+Policy in AgentCore provides fine-grained authorization for individual tools. Request and response interceptors support custom validation, identity propagation, request transformation, and response filtering. Guardrail policies provide content controls when required.
+
+With AgentCore Runtime, teams package and deploy a custom MCP server as a managed workload. Use Runtime only when the implementation requires custom MCP server behavior that Gateway targets cannot provide.
+
+![](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/3971a52b-a405-4fd2-8cae-6cec4f632cb9.png)
 
 **Deployment steps:**
 
-1. **Author the MCP server** — Use the MCP Python SDK (`FastMCP`) or TypeScript SDK to define your tools. Configure the server with `stateless_http=True` (default, recommended) or `stateless_http=False` for stateful multi-turn interactions.
+1. **Select the AgentCore approach **– Use AgentCore Gateway for existing Lambda functions and APIs. Use AgentCore Runtime only for custom MCP server implementations.
 
-1. **Test locally** — Run the server on `localhost:8000` and validate with an MCP client or the MCP Inspector.
+1. **Select the Gateway target **– Use a Lambda target for business logic implemented in Lambda. Use an OpenAPI or API Gateway target for an existing REST API with an OpenAPI specification.
 
-1. **Scaffold the project** — Install the AgentCore CLI (`npm install -g @aws/agentcore`) and run:
+1. **Define the tools** – Provide a clear name, description, input schema, and expected output for each tool.
 
-   ```
-   agentcore create --protocol MCP
-   ```
+1. **Create the Gateway **– Create an AgentCore Gateway and configure JWT or IAM authentication for MCP clients.
 
-   This generates the project structure including `agentcore/agentcore.json` configuration.
+1. **Add the target** – Register the Lambda function or OpenAPI specification with the Gateway.
 
-1. **Deploy** — Run `agentcore deploy`. The CLI packages your code and dependencies, uploads to S3, and creates an AgentCore Runtime. You receive an agent runtime ARN.
+1. **Configure target credentials** – Grant the Gateway only the permissions required to invoke the target. Use IAM for Lambda and an authentication method supported by the target API.
 
-1. **Invoke remotely** — Clients call the deployed MCP server via the AgentCore invocation endpoint:
+1. **Apply authorization policies** – Use default-deny Cedar policies that permit only the required identities and tools.
 
-   ```
-   https://bedrock-agentcore.<region>.amazonaws.com/runtimes/<encoded-arn>/invocations?qualifier=DEFAULT
-   ```
+1. **Add additional controls **– Configure interceptors when requests or responses require validation, transformation, or filtering. Add guardrail policies when content controls are required.
 
-1. Authentication uses OAuth bearer tokens (via Cognito) or IAM SigV4.
+1. **Test the deployment** – Validate tools/list, successful tools/call requests, invalid inputs, and denied requests with an MCP client or MCP Inspector.
 
-**Stateless vs Stateful modes:**
-+ **Stateless** (`stateless_http=True`): Recommended default. The platform auto-adds `Mcp-Session-Id` headers for connection continuity.
-+ **Stateful** (`stateless_http=False`): Required for elicitation (multi-turn prompts), sampling (LLM-generated content), or progress notifications.
+1. **Configure monitoring **– Monitor requests, authorization decisions, target errors, latency, and throttling.
 
-For the full walkthrough, see [Deploy MCP servers in AgentCore Runtime](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp.html).
-
-Sample Implementation:
-+ Amazon Bedrock AgentCore with IAM SigV4 sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-iam](https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-iam)
-+ Amazon Bedrock AgentCore with OAuth sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-oauth](https://github.com/aws-samples/sample-mcp-deployment-patterns/tree/main/deploy-agentcore-iam)
+Sample implementation
++ [AgentCore Gateway target configuration](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-building-adding-targets.html)
++ [AgentCore Runtime custom MCP server](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-mcp.html)
 
 ![Deploy MCP servers in AgentCore Runtime](https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deployment-patterns-on-aws/images/guide-img/596b5834-b415-44f3-9601-59b1ced57c6b/images/59c72693-ab7d-4dd8-8cb4-83a31e3e9d36.png)
 
 **Architecture Characteristics**
-+ Pros: infrastructure management (no servers, containers, or orchestration), built-in authentication and authorization, automatic scaling and high availability, integrated monitoring and logging, native AWS service access, rapid deployment (minutes vs hours/days).
-+ Limitations: AWS-specific (no portability), limited runtime customization compared to self-managed options, pricing based on request volume and compute time.
++ Pros: AgentCore Gateway removes the need to develop and operate a standalone MCP server for supported targets. It provides managed MCP translation, authentication, credential management, fine-grained authorization, guardrails, interceptors, and observability. Teams can reuse existing Lambda functions and REST APIs. AgentCore Runtime provides a managed deployment option when a custom MCP server is required.
++ Limitations: AgentCore Gateway requires a supported target and a defined tool schema. Teams remain responsible for operating the Lambda functions and APIs behind the Gateway. Gateway introduces additional request cost and latency. Implementations that require custom MCP server behavior must use AgentCore Runtime or another hosting pattern.

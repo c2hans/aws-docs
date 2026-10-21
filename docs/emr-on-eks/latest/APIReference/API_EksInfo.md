@@ -21,7 +21,7 @@ Required: No
 The nodeLabel of the nodes where the resources of this virtual cluster can get scheduled. It requires relevant scaling and policy engine addons.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$`
+Pattern: `[a-z0-9](?:[a-z0-9-]*[a-z0-9])?`
 Required: No
 
 ## See Also

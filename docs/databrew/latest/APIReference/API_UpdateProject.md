@@ -11,7 +11,7 @@ Modifies the definition of an existing DataBrew project.
 <a name="API_UpdateProject_RequestSyntax"></a>
 
 ```
-PUT /projects/{{name}} HTTP/1.1
+PUT /projects/{{Name}} HTTP/1.1
 Content-type: application/json
 
 {
@@ -28,7 +28,7 @@ Content-type: application/json
 
 The request uses the following URI parameters.
 
- ** [name](#API_UpdateProject_RequestSyntax) **   <a name="databrew-UpdateProject-request-uri-Name"></a>
+ ** [Name](#API_UpdateProject_RequestSyntax) **   <a name="databrew-UpdateProject-request-uri-Name"></a>
 The name of the project to be updated.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes

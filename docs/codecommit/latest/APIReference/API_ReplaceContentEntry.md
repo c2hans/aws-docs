@@ -24,7 +24,7 @@ Required: Yes
  ** content **   <a name="CodeCommit-Type-ReplaceContentEntry-content"></a>
 The base-64 encoded content to use when the replacement type is USE\_NEW\_CONTENT.
 Type: Base64-encoded binary data object
-Length Constraints: Maximum length of 6291456.
+Length Constraints: Minimum length of 0. Maximum length of 6291456.
 Required: No
 
  ** fileMode **   <a name="CodeCommit-Type-ReplaceContentEntry-fileMode"></a>

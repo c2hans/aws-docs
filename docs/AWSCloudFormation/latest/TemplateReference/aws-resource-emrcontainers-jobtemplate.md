@@ -82,10 +82,10 @@ The tags assigned to the job template.
 The ARN of the job template.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
- The date and time when the job template was created.
+The date and time when the job template was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
- The user who created the job template.
+The user who created the job template.
 
 `Id`  <a name="Id-fn::getatt"></a>
 The ID of the job template.

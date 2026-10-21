@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 # Batch evaluation encryption
 <a name="batch-evaluations-encryption"></a>
 
-When you specify a `kmsKeyArn` on a batch evaluation, the service encrypts all output artifacts stored in S3 using S3 server-side encryption with KMS (SSE-KMS). This includes the data source configuration, session metadata, and evaluation results.
+When you specify a `kmsKeyArn` on a batch evaluation, the service encrypts all output artifacts stored in S3 using S3 server-side encryption with KMS (SSE-KMS). This includes the data source configuration, session metadata, evaluation results, and insight results (for example from `Builtin.FailureAnalysis`).
 
 The `kmsKeyArn` is specified at creation time via `StartBatchEvaluation`.
 
@@ -18,6 +18,8 @@ At API time, the service validates that the caller has KMS permissions using a d
 
 The service also validates that it can perform `kms:GenerateDataKey` with its own credentials to ensure the key policy grants the service principal the required permissions for writing encrypted output.
 
+When you call `GetBatchEvaluation` on a batch evaluation that uses a customer managed key, the service checks with your credentials (Forward Access Sessions) that you can still use the key. The service calls `kms:DescribeKey` and a dry-run `kms:Decrypt` with the encryption context of the batch evaluation. If either call is denied, `GetBatchEvaluation` returns `AccessDeniedException` and no results.
+
 AgentCore Evaluations supports only symmetric encryption KMS keys. The KMS key must be in the same AWS Region as the batch evaluation.
 
 ### Configuring permissions to use a customer managed KMS key
@@ -26,7 +28,7 @@ AgentCore Evaluations supports only symmetric encryption KMS keys. The KMS key m
 The following key policy provides the minimum permissions required for batch evaluation encryption. The policy has three statements:
 +  **AllowCallerAccess** – Allows the IAM user or role to validate the key via `DescribeKey`.
 +  **AllowCallerCryptoOps** – Allows the IAM user or role to encrypt and decrypt, scoped by encryption context.
-+  **AllowServicePrincipalAccess** – Allows the AgentCore service principal to encrypt and decrypt batch evaluation data in S3, scoped by source account and source ARN.
++  **AllowServicePrincipalAccess** – Allows the AgentCore service principal to encrypt and decrypt batch evaluation data, scoped by source account, source ARN, and encryption context.
 
 ```
 {
@@ -75,6 +77,9 @@ The following key policy provides the minimum permissions required for batch eva
         },
         "ArnLike": {
           "aws:SourceArn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:batch-evaluate/*"
+        },
+        "StringLike": {
+          "kms:EncryptionContext:aws:bedrock-agentcore:batchEvaluationArn": "arn:aws:bedrock-agentcore:us-east-1:111122223333:batch-evaluate/*"
         }
       }
     }
@@ -83,9 +88,9 @@ The following key policy provides the minimum permissions required for batch eva
 ```
 
 The policy contains the following statements:
-+  **AllowCallerAccess** – Grants the IAM role `kms:DescribeKey` permission for key validation at batch evaluation creation time. Replace {{111122223333}} with your account ID and {{MyBatchEvaluationRole}} with the IAM role or user that starts batch evaluations.
++  **AllowCallerAccess** – Grants the IAM role `kms:DescribeKey` permission for key validation when you start a batch evaluation and when you call `GetBatchEvaluation`. Replace {{111122223333}} with your account ID and {{MyBatchEvaluationRole}} with the IAM role or user that starts batch evaluations.
 +  **AllowCallerCryptoOps** – Grants the IAM role `kms:GenerateDataKey` and `kms:Decrypt` permissions, scoped by the `aws:bedrock-agentcore:batchEvaluationArn` encryption context. Replace {{111122223333}}, {{MyBatchEvaluationRole}}, and {{us-east-1}} with your values. To allow access to all batch evaluations in your account, use a wildcard with `StringLike`: `arn:aws:bedrock-agentcore:us-east-1:111122223333:batch-evaluate/*`.
-+  **AllowServicePrincipalAccess** – Grants the AgentCore service principal `kms:GenerateDataKey` and `kms:Decrypt` permissions for encrypting and decrypting batch evaluation data in S3. Scoped by source account and source ARN (`aws:SourceArn`) to prevent confused deputy attacks. Replace {{us-east-1}} and {{111122223333}} with your region and account ID.
++  **AllowServicePrincipalAccess** – Grants the AgentCore service principal `kms:GenerateDataKey` and `kms:Decrypt` permissions for encrypting and decrypting batch evaluation data. Scoped by source account (`aws:SourceAccount`) and source ARN (`aws:SourceArn`) to prevent confused deputy attacks, and by the `aws:bedrock-agentcore:batchEvaluationArn` encryption context. Replace {{us-east-1}} and {{111122223333}} with your region and account ID.
 
 ### Scoping down access to the customer managed KMS key
 <a name="batch-evaluations-encryption-scoping"></a>
@@ -98,7 +103,7 @@ You can use the encryption context to scope down access to the customer managed 
 }
 ```
 
-You can use this encryption context in key policy conditions to restrict KMS operations to specific batch evaluations, as shown in the `AllowCallerCryptoOps` statement in the example key policy above. Note that `AllowServicePrincipalAccess` uses `aws:SourceArn` for scoping rather than encryption context.
+You can use this encryption context in key policy conditions to restrict KMS operations to specific batch evaluations, as shown in the caller and service principal statements in the example key policy above. Both statements are scoped by the encryption context. The service principal statement is additionally scoped by `aws:SourceAccount` and `aws:SourceArn`.
 
 ## Starting a batch evaluation with a customer managed KMS key
 <a name="batch-evaluations-encryption-creating"></a>
@@ -164,9 +169,9 @@ print(f"Batch Evaluation ID: {response['batchEvaluationId']}")
 <a name="batch-evaluations-encryption-monitoring"></a>
 
 The following CloudTrail event names appear for batch evaluation KMS operations:
-+  `GenerateDataKey` — When writing encrypted batch evaluation output to S3 (data source config, session metadata, evaluation results). The `encryptionContext` field contains `aws:bedrock-agentcore:batchEvaluationArn`.
-+  `Decrypt` — When reading encrypted batch evaluation output from S3.
-+  `DescribeKey` — When validating the key at batch evaluation creation time.
++  `GenerateDataKey` — When writing encrypted batch evaluation output to S3 (data source config, session metadata, evaluation results, insight results). The `encryptionContext` field contains `aws:bedrock-agentcore:batchEvaluationArn`.
++  `Decrypt` — When reading encrypted batch evaluation output from S3. Decrypt events also include a dry-run `Decrypt` made with the caller’s credentials on `GetBatchEvaluation`, which carries the `aws:bedrock-agentcore:batchEvaluationArn` encryption context.
++  `DescribeKey` — When validating the key at batch evaluation creation time and on `GetBatchEvaluation`.
 
 For more information about monitoring KMS usage, see [Logging AWS KMS API calls with AWS CloudTrail](https://docs.aws.amazon.com/kms/latest/developerguide/logging-using-cloudtrail.html) in the * AWS Key Management Service Developer Guide*.
 

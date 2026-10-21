@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListJobs
 # ListJobs
 <a name="API_ListJobs"></a>
 
- Lists the jobs for a branch of an Amplify app.
+Lists the jobs for a branch of an Amplify app.
 
 ## Request Syntax
 <a name="API_ListJobs_RequestSyntax"></a>
@@ -20,7 +20,7 @@ GET /apps/{{appId}}/branches/{{branchName}}/jobs?maxResults={{maxResults}}&nextT
 The request uses the following URI parameters.
 
  ** [appId](#API_ListJobs_RequestSyntax) **   <a name="amplify-ListJobs-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes
@@ -37,7 +37,7 @@ Valid Range: Minimum value of 0. Maximum value of 50.
 
  ** [nextToken](#API_ListJobs_RequestSyntax) **   <a name="amplify-ListJobs-request-uri-nextToken"></a>
 A pagination token. Set to null to start listing steps from the start. If a non-null pagination token is returned in a result, pass its value in here to list more steps.
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Request Body
@@ -86,7 +86,7 @@ Type: Array of [JobSummary](API_JobSummary.md) objects
  ** [nextToken](#API_ListJobs_ResponseSyntax) **   <a name="amplify-ListJobs-response-nextToken"></a>
 A pagination token. If non-null the pagination token is returned in a result. Pass its value in another request to retrieve more entries.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 
 ## Errors

@@ -13,7 +13,7 @@ The drift summary of the enabled control.
 <a name="API_DriftStatusSummary_Contents"></a>
 
  ** driftStatus **   <a name="controltower-Type-DriftStatusSummary-driftStatus"></a>
- The drift status of the enabled control.
+The drift status of the enabled control.
 Valid values:
 +  `DRIFTED`: The `enabledControl` deployed in this configuration doesn’t match the configuration that AWS Control Tower expected.
 +  `IN_SYNC`: The `enabledControl` deployed in this configuration matches the configuration that AWS Control Tower expected.

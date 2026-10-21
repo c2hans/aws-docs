@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/intelligent-data-modernization
 title: 'Guidance for Intelligent Data Modernization Assistant on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/intelligent-data-modernization-assistant/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Intelligent Data Modernization Assistant on AWS

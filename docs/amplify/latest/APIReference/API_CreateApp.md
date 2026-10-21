@@ -103,7 +103,7 @@ Required: No
  ** [basicAuthCredentials](#API_CreateApp_RequestSyntax) **   <a name="amplify-CreateApp-request-basicAuthCredentials"></a>
 The credentials for basic authorization for an Amplify app. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 Required: No
 
@@ -120,7 +120,7 @@ Type: [CacheConfig](API_CacheConfig.md) object
 Required: No
 
  ** [computeRoleArn](#API_CreateApp_RequestSyntax) **   <a name="amplify-CreateApp-request-computeRoleArn"></a>
-The Amazon Resource Name (ARN) of the IAM role to assign to an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the *Amplify User Guide*.
+The Amazon Resource Name (ARN) of the IAM role to assign to an SSR app. The SSR Compute role allows the Amplify Hosting compute service to securely access specific AWS resources based on the role's permissions. For more information about the SSR Compute role, see [Adding an SSR Compute role](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-SSR-compute-role.html) in the * Amplify User Guide*.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
@@ -141,7 +141,7 @@ Required: No
  ** [description](#API_CreateApp_RequestSyntax) **   <a name="amplify-CreateApp-request-description"></a>
 The description of the Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 
@@ -169,9 +169,9 @@ Required: No
 The environment variables map for an Amplify app.
 For a list of the environment variables that are accessible to Amplify by default, see [Amplify Environment variables](https://docs.aws.amazon.com/amplify/latest/userguide/amplify-console-environment-variables.html) in the *Amplify Hosting User Guide*.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 5500.
+Value Length Constraints: Minimum length of 0. Maximum length of 5500.
 Value Pattern: `(?s).*`
 Required: No
 
@@ -200,7 +200,7 @@ Use `oauthToken` for repository providers other than GitHub, such as Bitbucket o
 You must specify either `oauthToken` or `accessToken` when you create a new app.
 Existing Amplify apps deployed from a GitHub repository using OAuth continue to work with CI/CD. However, we strongly recommend that you migrate these apps to use the GitHub App. For more information, see [Migrating an existing OAuth app to the Amplify GitHub App](https://docs.aws.amazon.com/amplify/latest/userguide/setting-up-GitHub-access.html#migrating-to-github-app-auth) in the *Amplify User Guide* .
 Type: String
-Length Constraints: Maximum length of 4096.
+Length Constraints: Minimum length of 0. Maximum length of 4096.
 Pattern: `(?s).*`
 Required: No
 
@@ -214,7 +214,7 @@ Required: No
  ** [repository](#API_CreateApp_RequestSyntax) **   <a name="amplify-CreateApp-request-repository"></a>
 The Git repository for the Amplify app.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Pattern: `(?s).*`
 Required: No
 
@@ -223,9 +223,9 @@ The tag for an Amplify app.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 50 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^(?!aws:)[a-zA-Z+-=._:/]+$`
-Value Length Constraints: Maximum length of 256.
-Value Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Key Pattern: `(?!aws:)[a-zA-Z+-=._:/]+`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: No
 
 ## Response Syntax

@@ -14,7 +14,7 @@ The definition for a repository with a sync configuration.
 The branch specified for a repository sync definition.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
-Pattern: `^.*$`
+Pattern: `.*`
 Required: Yes
 
  ** Directory **   <a name="codeconnections-Type-RepositorySyncDefinition-Directory"></a>

@@ -9,13 +9,15 @@ A Custom grant allows exactly the actions you list. Nothing is added by default.
 
 A member who holds a Custom grant and a Viewer, Editor, or Space Admin grant gets the combination of both. To keep a member's access narrow, give them only the Custom grant.
 
-**Limits on Custom grants**
+## Limits on Custom grants
+<a name="omni-custom-grant-actions-limits-on-custom-grants"></a>
 + **Resource and tag scoping applies only to CloudWatch actions.** You can limit a `cloudwatch:` action to named resources, to resources with a tag, or to a data scope only when the action acts on a resource type: telemetry query actions (a `DataSet` data scope), alerts, dashboards, access profiles, and integrations. Other `cloudwatch:` actions, such as `cloudwatch:GetSpace`, apply to the whole space and accept no scope. Actions from every other service, such as `bedrock-agentcore:` or `logs:`, accept no resource or tag scope. They apply to everything the Omni Space Access role can reach.
 + **One service per action group.** An action group in the drawer holds actions from one service. To grant actions from two services, add two groups.
 + **Actions from other services also need the Space Access role.** A member can use a `bedrock-agentcore:` or `logs:` action only when the Omni Space Access role for the space also allows it. See [Control access to your space](omni-control-access-to-your-space.md). Model inference is separate. The base policy lets a space set up and view evaluations, but invoking a model also requires the optional AWS managed policy `CloudWatchOmniModelInferencePolicy` on the role.
 + **DevOps Agent actions are not part of the Space Access role.** To use the DevOps Agent from a space, attach the AWS managed policy `AIDevOpsAgentFullAccess` to the role.
 
-**Actions by service**
+## Actions by service
+<a name="omni-custom-grant-actions-actions-by-service"></a>
 
 | Service | Actions | What the actions are used for | Grant it to |
 | --- | --- | --- | --- |

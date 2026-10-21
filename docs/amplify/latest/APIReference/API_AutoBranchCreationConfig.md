@@ -13,7 +13,7 @@ Describes the automated branch creation configuration.
  ** basicAuthCredentials **   <a name="amplify-Type-AutoBranchCreationConfig-basicAuthCredentials"></a>
 The basic authorization credentials for the autocreated branch. You must base64-encode the authorization credentials and provide them in the format `user:password`.
 Type: String
-Length Constraints: Maximum length of 2000.
+Length Constraints: Minimum length of 0. Maximum length of 2000.
 Pattern: `(?s).*`
 Required: No
 
@@ -48,23 +48,23 @@ Required: No
  ** environmentVariables **   <a name="amplify-Type-AutoBranchCreationConfig-environmentVariables"></a>
 The environment variables for the autocreated branch.
 Type: String to string map
-Key Length Constraints: Maximum length of 255.
+Key Length Constraints: Minimum length of 0. Maximum length of 255.
 Key Pattern: `(?s).*`
-Value Length Constraints: Maximum length of 5500.
+Value Length Constraints: Minimum length of 0. Maximum length of 5500.
 Value Pattern: `(?s).*`
 Required: No
 
  ** framework **   <a name="amplify-Type-AutoBranchCreationConfig-framework"></a>
 The framework for the autocreated branch.
 Type: String
-Length Constraints: Maximum length of 255.
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `(?s).*`
 Required: No
 
  ** pullRequestEnvironmentName **   <a name="amplify-Type-AutoBranchCreationConfig-pullRequestEnvironmentName"></a>
 The Amplify environment name for the pull request.
 Type: String
-Length Constraints: Maximum length of 20.
+Length Constraints: Minimum length of 0. Maximum length of 20.
 Pattern: `(?s).*`
 Required: No
 

@@ -43,7 +43,7 @@ The request accepts the following data in JSON format.
 Each resource must have a unique client request token. The client token is used to implement idempotency. It ensures that the request completes no more than one time. If you retry a request with the same token and the same parameters, the request will complete successfully. However, if you try to create a new resource using the same token but different parameters, an HTTP 409 conflict occurs. If you omit this value, AWS SDKs will automatically generate a unique client request. For more information about idempotency, see [Ensuring idempotency in Amazon EC2 API requests](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `^[a-zA-Z0-9-_]+$`
+Pattern: `[a-zA-Z0-9-_]+`
 Required: No
 
  ** [Sidewalk](#API_AssociateAwsAccountWithPartnerAccount_RequestSyntax) **   <a name="iotwireless-AssociateAwsAccountWithPartnerAccount-request-Sidewalk"></a>
@@ -129,13 +129,13 @@ HTTP Status Code: 400
 <a name="API_AssociateAwsAccountWithPartnerAccount_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/AssociateAwsAccountWithPartnerAccount)
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/goto/boto3/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/AssociateAwsAccountWithPartnerAccount)

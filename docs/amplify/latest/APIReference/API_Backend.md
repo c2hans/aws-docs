@@ -16,7 +16,7 @@ This property is available to Amplify Gen 2 apps only. When you deploy an applic
 The Amazon Resource Name (ARN) for the CloudFormation stack.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:aws:cloudformation:[a-z0-9-]+:\d{12}:stack/.+/.+$`
+Pattern: `arn:aws:cloudformation:[a-z0-9-]+:\d{12}:stack/.+/.+`
 Required: No
 
 ## See Also

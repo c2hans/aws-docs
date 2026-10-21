@@ -174,155 +174,231 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** CommitMessageLengthExceededException **
 The commit message is too long. Provide a shorter string.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ConcurrentReferenceUpdateException **
 The merge cannot be completed because the target branch has been modified. Another user might have modified the target branch while the merge was in progress. Wait a few minutes, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FileContentSizeLimitExceededException **
 The file cannot be added because it is too large. The maximum file size is 6 MB, and the combined file content change size is 7 MB. Consider making these changes using a Git client.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** FolderContentSizeLimitExceededException **
 The commit cannot be created because at least one of the overall changes in the commit results in a folder whose contents exceed the limit of 6 MB. Either reduce the number and size of your changes, or split the changes across multiple folders.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidCommitIdException **
 The specified commit ID is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictDetailLevelException **
 The specified conflict detail level is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictResolutionException **
 The specified conflict resolution list is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidConflictResolutionStrategyException **
 The specified conflict resolution strategy is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidEmailException **
 The specified email address either contains one or more characters that are not allowed, or it exceeds the maximum number of characters allowed for an email address.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidFileModeException **
 The specified file mode permission is not valid. For a list of valid file mode permissions, see [PutFile](API_PutFile.md).
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPathException **
 The specified path is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidReplacementContentException **
 Automerge was specified for resolving the conflict, but the replacement type is not valid or content is missing.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidReplacementTypeException **
 Automerge was specified for resolving the conflict, but the specified replacement type is not valid.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRepositoryNameException **
 A specified repository name is not valid.
 This exception occurs only when a specified repository name is not valid. Other exceptions occur when a required repository parameter is missing, or when a specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ManualMergeRequiredException **
 The pull request cannot be merged automatically into the destination branch. You must manually merge the branches and resolve any conflicts.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumConflictResolutionEntriesExceededException **
 The number of allowed conflict resolution entries was exceeded.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumFileContentToLoadExceededException **
 The number of files to load exceeds the allowed limit.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MaximumItemsToCompareExceededException **
 The number of items to compare between the source or destination branches and the merge base has exceeded the maximum allowed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** MultipleConflictResolutionEntriesException **
 More than one conflict resolution entries exists for the conflict. A conflict can have only one conflict resolution entry.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** NameLengthExceededException **
 The user name is not valid because it has exceeded the character limit for author names.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PathRequiredException **
 The folderPath for a location cannot be null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestAlreadyClosedException **
 The pull request status cannot be updated because it is already closed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestApprovalRulesNotSatisfiedException **
 The pull request cannot be merged because one or more approval rules applied to the pull request have conditions that have not been met.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReplacementContentRequiredException **
 USE\_NEW\_CONTENT was specified, but no replacement content has been provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** ReplacementTypeRequiredException **
 A replacement type is required.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryDoesNotExistException **
 The specified repository does not exist.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNameRequiredException **
 A repository name is required, but was not specified.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RepositoryNotAssociatedWithPullRequestException **
 The repository does not contain any pull requests with that pull request ID. Use GetPullRequest to verify the correct repository name for the pull request ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TipOfSourceReferenceIsDifferentException **
 The tip of the source branch in the destination repository does not match the tip of the source branch specified in your request. The pull request might have been updated. Make sure that you have the latest changes.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TipsDivergenceExceededException **
 The divergence between the tips of the provided commit specifiers is too great to determine whether there might be any merge conflicts. Locally compare the specifiers using `git diff` or a diff tool.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

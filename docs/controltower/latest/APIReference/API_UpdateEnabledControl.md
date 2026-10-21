@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Upd
 # UpdateEnabledControl
 <a name="API_UpdateEnabledControl"></a>
 
- Updates the configuration of an already enabled control.
+Updates the configuration of an already enabled control.
 
 If the enabled control shows an `EnablementStatus` of SUCCEEDED, supply parameters that are different from the currently configured parameters. Otherwise, AWS Control Tower will not accept the request.
 
@@ -42,7 +42,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [enabledControlIdentifier](#API_UpdateEnabledControl_RequestSyntax) **   <a name="controltower-UpdateEnabledControl-request-enabledControlIdentifier"></a>
- The ARN of the enabled control that will be updated.
+The ARN of the enabled control that will be updated.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
 Pattern: `arn:aws[0-9a-zA-Z_\-:\/]+`
@@ -73,7 +73,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [operationIdentifier](#API_UpdateEnabledControl_ResponseSyntax) **   <a name="controltower-UpdateEnabledControl-response-operationIdentifier"></a>
- The operation identifier for this `UpdateEnabledControl` operation.
+The operation identifier for this `UpdateEnabledControl` operation.
 Type: String
 Length Constraints: Fixed length of 36.
 Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`

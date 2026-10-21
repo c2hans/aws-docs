@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_DeleteBr
 # DeleteBranch
 <a name="API_DeleteBranch"></a>
 
- Deletes a branch for an Amplify app.
+Deletes a branch for an Amplify app.
 
 ## Request Syntax
 <a name="API_DeleteBranch_RequestSyntax"></a>
@@ -20,7 +20,7 @@ DELETE /apps/{{appId}}/branches/{{branchName}} HTTP/1.1
 The request uses the following URI parameters.
 
  ** [appId](#API_DeleteBranch_RequestSyntax) **   <a name="amplify-DeleteBranch-request-uri-appId"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 Length Constraints: Minimum length of 1. Maximum length of 20.
 Pattern: `d[a-z0-9]+`
 Required: Yes

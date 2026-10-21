@@ -32,7 +32,7 @@ Required: Yes
  ** [title](#API_UpdatePullRequestTitle_RequestSyntax) **   <a name="CodeCommit-UpdatePullRequestTitle-request-title"></a>
 The updated title of the pull request. This replaces the existing title.
 Type: String
-Length Constraints: Maximum length of 150.
+Length Constraints: Minimum length of 0. Maximum length of 150.
 Required: Yes
 
 ## Response Syntax
@@ -103,26 +103,38 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidTitleException **
 The title of the pull request is not valid. Pull request titles cannot exceed 100 characters in length.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestAlreadyClosedException **
 The pull request status cannot be updated because it is already closed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** TitleRequiredException **
 A pull request title is required. It cannot be empty or null.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples

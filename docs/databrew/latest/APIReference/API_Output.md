@@ -49,7 +49,7 @@ Required: No
  ** PartitionColumns **   <a name="databrew-Type-Output-PartitionColumns"></a>
 The names of one or more partition columns for the output of the job.
 Type: Array of strings
-Array Members: Maximum number of 200 items.
+Array Members: Minimum number of 0 items. Maximum number of 200 items.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 

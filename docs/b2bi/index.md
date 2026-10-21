@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/b2bi/index.html
 title: 'AWS B2B Data Interchange Documentation'
 canonical_url: https://docs.aws.amazon.com/b2bi/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # AWS B2B Data Interchange Documentation

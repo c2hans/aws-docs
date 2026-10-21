@@ -29,7 +29,7 @@ Required: No
  ** DeviceProfileId **   <a name="iotwireless-Type-LoRaWANDevice-DeviceProfileId"></a>
 The ID of the device profile for the new wireless device.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** FPorts **   <a name="iotwireless-Type-LoRaWANDevice-FPorts"></a>
@@ -50,13 +50,13 @@ Required: No
  ** ServiceProfileId **   <a name="iotwireless-Type-LoRaWANDevice-ServiceProfileId"></a>
 The ID of the service profile.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
 ## See Also
 <a name="API_LoRaWANDevice_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/LoRaWANDevice)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/LoRaWANDevice)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/LoRaWANDevice)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/LoRaWANDevice)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/LoRaWANDevice)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/LoRaWANDevice)

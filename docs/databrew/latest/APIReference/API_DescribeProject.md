@@ -11,7 +11,7 @@ Returns the definition of a specific DataBrew project.
 <a name="API_DescribeProject_RequestSyntax"></a>
 
 ```
-GET /projects/{{name}} HTTP/1.1
+GET /projects/{{Name}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,7 +19,7 @@ GET /projects/{{name}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [name](#API_DescribeProject_RequestSyntax) **   <a name="databrew-DescribeProject-request-uri-Name"></a>
+ ** [Name](#API_DescribeProject_RequestSyntax) **   <a name="databrew-DescribeProject-request-uri-Name"></a>
 The name of the project to be described.
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
@@ -132,7 +132,7 @@ Metadata tags associated with this project.
 Type: String to string map
 Map Entries: Maximum number of 200 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Value Length Constraints: Maximum length of 256.
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
 
 ## Errors
 <a name="API_DescribeProject_Errors"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/multi-tenant-architectures-on-
 title: 'Guidance for Multi-Tenant Architectures on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/multi-tenant-architectures-on-aws/
 source: aws-documentation
-generated_on: 2026-10-16
+generated_on: 2026-10-20
 ---
 
 # Guidance for Multi-Tenant Architectures on AWS

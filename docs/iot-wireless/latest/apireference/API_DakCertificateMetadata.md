@@ -13,19 +13,19 @@ The device attestation key (DAK) information.
  ** CertificateId **   <a name="iotwireless-Type-DakCertificateMetadata-CertificateId"></a>
 The certificate ID for the DAK.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: Yes
 
  ** ApId **   <a name="iotwireless-Type-DakCertificateMetadata-ApId"></a>
 The advertised product ID (APID) that's used for pre-production and production applications.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** DeviceTypeId **   <a name="iotwireless-Type-DakCertificateMetadata-DeviceTypeId"></a>
 The device type ID that's used for prototyping applications.
 Type: String
-Length Constraints: Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** FactorySupport **   <a name="iotwireless-Type-DakCertificateMetadata-FactorySupport"></a>
@@ -42,6 +42,6 @@ Required: No
 <a name="API_DakCertificateMetadata_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/DakCertificateMetadata)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/DakCertificateMetadata)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/DakCertificateMetadata)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/DakCertificateMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/DakCertificateMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/DakCertificateMetadata)

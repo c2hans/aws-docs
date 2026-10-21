@@ -14,7 +14,7 @@ Wi-Fi access point.
 Wi-Fi MAC Address.
 Type: String
 Length Constraints: Minimum length of 12. Maximum length of 17.
-Pattern: `^([0-9A-Fa-f]{2}[:-]?){5}([0-9A-Fa-f]{2})$`
+Pattern: `([0-9A-Fa-f]{2}[:-]?){5}([0-9A-Fa-f]{2})`
 Required: Yes
 
  ** Rss **   <a name="iotwireless-Type-WiFiAccessPoint-Rss"></a>
@@ -27,6 +27,6 @@ Required: Yes
 <a name="API_WiFiAccessPoint_SeeAlso"></a>
 
 For more information about using this API in one of the language-specific AWS SDKs, see the following:
-+  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/WiFiAccessPoint)
-+  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/WiFiAccessPoint)
-+  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/WiFiAccessPoint)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2020-11-22/WiFiAccessPoint)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2020-11-22/WiFiAccessPoint)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2020-11-22/WiFiAccessPoint)

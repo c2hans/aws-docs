@@ -13,13 +13,13 @@ The scheduler configuration for a virtual cluster on Amazon EMR on EKS. It contr
  ** maxConcurrentJobRuns **   <a name="emroneks-Type-SchedulerConfiguration-maxConcurrentJobRuns"></a>
 The maximum number of job runs that can be in the `RUNNING` state at any time for the virtual cluster. As running slots free up, queued job runs start automatically. If you omit this field, the service applies no concurrency limit.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 1000.
+Valid Range: Minimum value of 1. Maximum value of 10000.
 Required: No
 
  ** maxInQueueJobRuns **   <a name="emroneks-Type-SchedulerConfiguration-maxInQueueJobRuns"></a>
 The maximum number of job runs that can be in the `PENDING` or `SUBMITTED` state at any time for the virtual cluster. When the queue is full, the service rejects `StartJobRun` requests with a `ValidationException`. If you omit this field, the service applies no queue-depth limit.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 1000.
+Valid Range: Minimum value of 100. Maximum value of 10000.
 Required: No
 
 ## See Also

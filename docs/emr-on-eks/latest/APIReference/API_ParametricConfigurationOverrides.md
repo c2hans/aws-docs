@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Param
 # ParametricConfigurationOverrides
 <a name="API_ParametricConfigurationOverrides"></a>
 
- A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.
+A configuration specification to be used to override existing configurations. This data type allows job template parameters to be specified within.
 
 ## Contents
 <a name="API_ParametricConfigurationOverrides_Contents"></a>
 
  ** applicationConfiguration **   <a name="emroneks-Type-ParametricConfigurationOverrides-applicationConfiguration"></a>
- The configurations for the application running by the job run.
+The configurations for the application running by the job run.
 Type: Array of [Configuration](API_Configuration.md) objects
-Array Members: Maximum number of 100 items.
+Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
  ** monitoringConfiguration **   <a name="emroneks-Type-ParametricConfigurationOverrides-monitoringConfiguration"></a>
- The configurations for monitoring.
+The configurations for monitoring.
 Type: [ParametricMonitoringConfiguration](API_ParametricMonitoringConfiguration.md) object
 Required: No
 

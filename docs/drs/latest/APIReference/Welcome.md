@@ -5,6 +5,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/Welcome.html
 # Welcome
 <a name="Welcome"></a>
 
-AWS Elastic Disaster Recovery Service.
+ AWS Elastic Disaster Recovery Service.
 
-This document was last published on October 16, 2026.
+This document was last published on October 20, 2026.

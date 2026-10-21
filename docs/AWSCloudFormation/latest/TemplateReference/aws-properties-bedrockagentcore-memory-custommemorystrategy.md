@@ -26,6 +26,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[Name](#cfn-bedrockagentcore-memory-custommemorystrategy-name)" : {{String}},
   "[Namespaces](#cfn-bedrockagentcore-memory-custommemorystrategy-namespaces)" : {{[ String, ... ]}},
   "[NamespaceTemplates](#cfn-bedrockagentcore-memory-custommemorystrategy-namespacetemplates)" : {{[ String, ... ]}},
+  "[RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-custommemorystrategy-recordexpirydurationdays)" : {{Integer}},
+  "[RecordExpirySpecification](#cfn-bedrockagentcore-memory-custommemorystrategy-recordexpiryspecification)" : {{RecordExpirySpecification}},
   "[Status](#cfn-bedrockagentcore-memory-custommemorystrategy-status)" : {{String}},
   "[StrategyId](#cfn-bedrockagentcore-memory-custommemorystrategy-strategyid)" : {{String}},
   "[Type](#cfn-bedrockagentcore-memory-custommemorystrategy-type)" : {{String}},
@@ -48,6 +50,9 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [NamespaceTemplates](#cfn-bedrockagentcore-memory-custommemorystrategy-namespacetemplates): {{
     - String}}
+  [RecordExpiryDurationDays](#cfn-bedrockagentcore-memory-custommemorystrategy-recordexpirydurationdays): {{Integer}}
+  [RecordExpirySpecification](#cfn-bedrockagentcore-memory-custommemorystrategy-recordexpiryspecification): {{
+    RecordExpirySpecification}}
   [Status](#cfn-bedrockagentcore-memory-custommemorystrategy-status): {{String}}
   [StrategyId](#cfn-bedrockagentcore-memory-custommemorystrategy-strategyid): {{String}}
   [Type](#cfn-bedrockagentcore-memory-custommemorystrategy-type): {{String}}
@@ -100,6 +105,19 @@ The namespaceTemplates associated with the custom memory strategy.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RecordExpiryDurationDays`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-recordexpirydurationdays"></a>
+Property description not available.
+*Required*: No
+*Type*: Integer
+*Minimum*: `31`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RecordExpirySpecification`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-recordexpiryspecification"></a>
+Property description not available.
+*Required*: No
+*Type*: [RecordExpirySpecification](aws-properties-bedrockagentcore-memory-recordexpiryspecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Status`  <a name="cfn-bedrockagentcore-memory-custommemorystrategy-status"></a>

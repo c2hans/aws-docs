@@ -107,7 +107,7 @@ Required: No
 The execution role ARN for the job run.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):iam::(\d{12})?:(role((\u002F)|(\u002F[\u0021-\u007F]+\u002F))[\w+=,.@-]+)`
 Required: No
 
  ** [jobDriver](#API_StartJobRun_RequestSyntax) **   <a name="emroneks-StartJobRun-request-jobDriver"></a>
@@ -125,7 +125,7 @@ Required: No
  ** [jobTemplateParameters](#API_StartJobRun_RequestSyntax) **   <a name="emroneks-StartJobRun-request-jobTemplateParameters"></a>
 The values of job template parameters to start a job run.
 Type: String to string map
-Map Entries: Maximum number of 100 items.
+Map Entries: Minimum number of 0 items. Maximum number of 100 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 512.
 Key Pattern: `[\.\-_\#A-Za-z0-9]+`
 Value Length Constraints: Minimum length of 1. Maximum length of 1024.
@@ -187,7 +187,7 @@ The following data is returned in JSON format by the service.
 This output lists the ARN of job run.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/jobruns\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+\/jobruns\/[0-9a-zA-Z]+`
 
  ** [id](#API_StartJobRun_ResponseSyntax) **   <a name="emroneks-StartJobRun-response-id"></a>
 This output displays the started job run ID.

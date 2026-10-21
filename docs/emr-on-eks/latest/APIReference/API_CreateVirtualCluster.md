@@ -115,7 +115,7 @@ The following data is returned in JSON format by the service.
 This output contains the ARN of virtual cluster.
 Type: String
 Length Constraints: Minimum length of 60. Maximum length of 1024.
-Pattern: `^arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+$`
+Pattern: `arn:(aws[a-zA-Z0-9-]*):emr-containers:.+:(\d{12}):\/virtualclusters\/[0-9a-zA-Z]+`
 
  ** [id](#API_CreateVirtualCluster_ResponseSyntax) **   <a name="emroneks-CreateVirtualCluster-response-id"></a>
 This output contains the virtual cluster ID.

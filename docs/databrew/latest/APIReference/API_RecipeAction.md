@@ -17,14 +17,14 @@ In the following list, the required parameters are described first.
 The name of a valid DataBrew transformation to be performed on the data.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^[A-Z\_]+$`
+Pattern: `[A-Z\_]+`
 Required: Yes
 
  ** Parameters **   <a name="databrew-Type-RecipeAction-Parameters"></a>
 Contextual parameters for the transformation.
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
-Key Pattern: `^[A-Za-z0-9]+$`
+Key Pattern: `[A-Za-z0-9]+`
 Value Length Constraints: Minimum length of 1. Maximum length of 32768.
 Required: No
 

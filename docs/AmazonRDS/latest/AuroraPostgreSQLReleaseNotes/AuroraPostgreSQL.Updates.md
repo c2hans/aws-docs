@@ -65,7 +65,6 @@ This release of Aurora PostgreSQL is compatible with PostgreSQL 18.6. For more i
 + Reduced minor version and patch upgrade downtime by decreasing session serialization time for backends with temporary schemas.
 + Aurora PostgreSQL now parallelizes index maintenance during bulk inserts with `COPY FROM`, reducing load time for tables with many indexes.
 + Aurora PostgreSQL now automatically detects and removes invalid databases left behind by interrupted `DROP DATABASE` operations, preventing false alerts and upgrade failures.
-+ Added support for hybrid key exchange (KEX) algorithms, such as `X25519MLKEM768` and `SecP256r1MLKEM768`, for SSL.
 + Added support for correlated aggregate subquery transformation, which rewrites correlated aggregate subqueries into window function equivalents to improve query performance. This feature is controlled by the `apg_enable_subquery_to_window_transform` parameter (default: `OFF`).
 
 **Critical stability enhancements**

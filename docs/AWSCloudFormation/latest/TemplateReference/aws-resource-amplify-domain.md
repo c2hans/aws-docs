@@ -54,7 +54,7 @@ Properties:
 <a name="aws-resource-amplify-domain-properties"></a>
 
 `AppId`  <a name="cfn-amplify-domain-appid"></a>
- The unique ID for an Amplify app.
+The unique ID for an Amplify app.
 *Required*: Yes
 *Type*: String
 *Pattern*: `d[a-z0-9]+`
@@ -85,7 +85,7 @@ The type of SSL/TLS certificate to use for your custom domain. If you don't spec
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DomainName`  <a name="cfn-amplify-domain-domainname"></a>
- The domain name for the domain association.
+The domain name for the domain association.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^(((?!-)[A-Za-z0-9-]{0,62}[A-Za-z0-9])\.)+((?!-)[A-Za-z0-9-]{1,62}[A-Za-z0-9])(\.)?$`
@@ -99,7 +99,7 @@ The type of SSL/TLS certificate to use for your custom domain. If you don't spec
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SubDomainSettings`  <a name="cfn-amplify-domain-subdomainsettings"></a>
- The setting for the subdomain.
+The setting for the subdomain.
 *Required*: Yes
 *Type*: Array of [SubDomainSetting](aws-properties-amplify-domain-subdomainsetting.md)
 *Maximum*: `255`
@@ -153,7 +153,7 @@ Indicates that an Amplify custom certificate is in the process of being imported
 PENDING\_DEPLOYMENT
 Indicates that the subdomain or certificate changes are being propagated.
 AWAITING\_APP\_CNAME
-Amplify is waiting for CNAME records corresponding to subdomains to be propagated. If your custom domain is on Route 53, Amplify handles this for you automatically. For more information about custom domains, see [Setting up custom domains](https://docs.aws.amazon.com/amplify/latest/userguide/custom-domains.html) in the *Amplify Hosting User Guide*.
+Amplify is waiting for CNAME records corresponding to subdomains to be propagated. If your custom domain is on Route 53, Amplify handles this for you automatically. For more information about custom domains, see [Setting up custom domains](https://docs.aws.amazon.com/amplify/latest/userguide/custom-domains.html) in the * Amplify Hosting User Guide*.
 UPDATE\_COMPLETE
 The certificate has been associated with a domain.
 UPDATE\_FAILED

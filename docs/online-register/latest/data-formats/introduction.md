@@ -241,6 +241,7 @@ To browse this Online Register by service, see the following topics.
 + [Data retrieval APIs for AWS App Studio](awsappstudio.md)
 + [Data retrieval APIs for AWS AppSync](awsappsync.md)
 + [Data retrieval APIs for AWS Artifact](awsartifact.md)
++ [Data retrieval APIs for AWS Assurance](awsassurance.md)
 + [Data retrieval APIs for AWS Audit Manager](awsauditmanager.md)
 + [Data retrieval APIs for AWS Auto Scaling](awsautoscaling.md)
 + [Data retrieval APIs for AWS B2B Data Interchange](awsb2bdatainterchange.md)

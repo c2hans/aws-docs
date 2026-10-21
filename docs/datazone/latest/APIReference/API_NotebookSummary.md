@@ -59,7 +59,7 @@ Required: No
  ** type **   <a name="datazone-Type-NotebookSummary-type"></a>
 The type of the notebook.
 Type: String
-Valid Values: `DATA | SQL | QUERYBOOK`
+Valid Values: `DATA | SQL`
 Required: No
 
  ** updatedAt **   <a name="datazone-Type-NotebookSummary-updatedAt"></a>

@@ -44,7 +44,7 @@ Required: No
  ** kmsKeyId **   <a name="CodeCommit-Type-RepositoryMetadata-kmsKeyId"></a>
 The ID of the AWS Key Management Service encryption key used to encrypt and decrypt the repository.
 Type: String
-Pattern: `^[a-zA-Z0-9:/_-]+$`
+Pattern: `[a-zA-Z0-9:/_-]+`
 Required: No
 
  ** lastModifiedDate **   <a name="CodeCommit-Type-RepositoryMetadata-lastModifiedDate"></a>
@@ -55,7 +55,7 @@ Required: No
  ** repositoryDescription **   <a name="CodeCommit-Type-RepositoryMetadata-repositoryDescription"></a>
 A comment or description about the repository.
 Type: String
-Length Constraints: Maximum length of 1000.
+Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: No
 
  ** repositoryId **   <a name="CodeCommit-Type-RepositoryMetadata-repositoryId"></a>

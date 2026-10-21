@@ -11,7 +11,7 @@ Removes the association between one or more provided tags and a notification rul
 <a name="API_UntagResource_RequestSyntax"></a>
 
 ```
-POST /untagResource/{{resourceArn}}?tagKeys={{TagKeys}} HTTP/1.1
+POST /untagResource/{{Arn}}?tagKeys={{TagKeys}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -19,15 +19,15 @@ POST /untagResource/{{resourceArn}}?tagKeys={{TagKeys}} HTTP/1.1
 
 The request uses the following URI parameters.
 
- ** [resourceArn](#API_UntagResource_RequestSyntax) **   <a name="codestarnotifications-UntagResource-request-uri-Arn"></a>
+ ** [Arn](#API_UntagResource_RequestSyntax) **   <a name="codestarnotifications-UntagResource-request-uri-Arn"></a>
 The Amazon Resource Name (ARN) of the notification rule from which to remove the tags.
-Pattern: `^arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?$`
+Pattern: `arn:aws[^:\s]*:codestar-notifications:[^:\s]+:\d{12}:notificationrule\/(.*\S)?`
 Required: Yes
 
  ** [TagKeys](#API_UntagResource_RequestSyntax) **   <a name="codestarnotifications-UntagResource-request-uri-TagKeys"></a>
 The key names of the tags to remove.
 Length Constraints: Minimum length of 1. Maximum length of 128.
-Pattern: `^([\p{L}\p{Z}\p{N}_.:/=+\-@]*)$`
+Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 Required: Yes
 
 ## Request Body

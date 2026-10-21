@@ -53,62 +53,92 @@ For information about the errors that are common to all actions, see [Common Err
 
  ** EncryptionIntegrityChecksFailedException **
 An encryption integrity check failed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 500
 
  ** EncryptionKeyAccessDeniedException **
 An encryption key could not be accessed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyDisabledException **
 The encryption key is disabled.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyNotFoundException **
 No encryption key was found.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** EncryptionKeyUnavailableException **
 The encryption key is not available.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidOverrideStatusException **
 The override status is not valid. Valid statuses are OVERRIDE and REVOKE.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidPullRequestIdException **
 The pull request ID is not valid. Make sure that you have provided the full ID and that the pull request is in the specified repository, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** InvalidRevisionIdException **
 The revision ID is not valid. Use GetPullRequest to determine the value.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** OverrideAlreadySetException **
 The pull request has already had its approval rules set to override.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** OverrideStatusRequiredException **
 An override status is required, but no value was provided. Valid values include OVERRIDE and REVOKE.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestAlreadyClosedException **
 The pull request status cannot be updated because it is already closed.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestDoesNotExistException **
 The pull request ID could not be found. Make sure that you have specified the correct repository name and pull request ID, and then try again.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** PullRequestIdRequiredException **
 A pull request ID is required, but none was provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RevisionIdRequiredException **
 A revision ID is required, but was not provided.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
  ** RevisionNotCurrentException **
 The revision ID provided in the request does not match the current revision ID. Use GetPullRequest to retrieve the current revision ID.
+ ** message **
+Any message associated with the exception.
 HTTP Status Code: 400
 
 ## Examples
