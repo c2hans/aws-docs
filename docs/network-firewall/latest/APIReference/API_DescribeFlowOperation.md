@@ -13,6 +13,7 @@ Returns key information about a specific flow operation.
 ```
 {
    "AvailabilityZone": "{{string}}",
+   "AvailabilityZoneId": "{{string}}",
    "FirewallArn": "{{string}}",
    "FlowOperationId": "{{string}}",
    "VpcEndpointAssociationArn": "{{string}}",
@@ -28,8 +29,13 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [AvailabilityZone](#API_DescribeFlowOperation_RequestSyntax) **   <a name="networkfirewall-DescribeFlowOperation-request-AvailabilityZone"></a>
-The ID of the Availability Zone where the firewall is located. For example, `us-east-2a`.
+The name of the Availability Zone where the firewall is located. For example, `us-east-2a`.
 Defines the scope a flow operation. You can use up to 20 filters to configure a single flow operation.
+Type: String
+Required: No
+
+ ** [AvailabilityZoneId](#API_DescribeFlowOperation_RequestSyntax) **   <a name="networkfirewall-DescribeFlowOperation-request-AvailabilityZoneId"></a>
+The ID of the Availability Zone where the firewall is located. For example, `use2-az1`. Availability Zone IDs are the same in every AWS account, so use this parameter when you coordinate resources across accounts. Specify either `AvailabilityZone` or `AvailabilityZoneId`, not both. If you specify both, the request fails.
 Type: String
 Required: No
 
@@ -67,6 +73,7 @@ Required: No
 ```
 {
    "AvailabilityZone": "string",
+   "AvailabilityZoneId": "string",
    "FirewallArn": "string",
    "FlowOperation": {
       "FlowFilters": [
@@ -102,8 +109,12 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [AvailabilityZone](#API_DescribeFlowOperation_ResponseSyntax) **   <a name="networkfirewall-DescribeFlowOperation-response-AvailabilityZone"></a>
-The ID of the Availability Zone where the firewall is located. For example, `us-east-2a`.
+The name of the Availability Zone where the firewall is located. For example, `us-east-2a`.
 Defines the scope a flow operation. You can use up to 20 filters to configure a single flow operation.
+Type: String
+
+ ** [AvailabilityZoneId](#API_DescribeFlowOperation_ResponseSyntax) **   <a name="networkfirewall-DescribeFlowOperation-response-AvailabilityZoneId"></a>
+The ID of the Availability Zone where the firewall is located. For example, `use2-az1`.
 Type: String
 
  ** [FirewallArn](#API_DescribeFlowOperation_ResponseSyntax) **   <a name="networkfirewall-DescribeFlowOperation-response-FirewallArn"></a>

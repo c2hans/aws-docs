@@ -28,6 +28,7 @@ The following data types are supported:
 +  [DeploymentStyle](API_DeploymentStyle.md)
 +  [DeploymentTarget](API_DeploymentTarget.md)
 +  [Diagnostics](API_Diagnostics.md)
++  [EC2DeploymentOptions](API_EC2DeploymentOptions.md)
 +  [EC2TagFilter](API_EC2TagFilter.md)
 +  [EC2TagSet](API_EC2TagSet.md)
 +  [ECSService](API_ECSService.md)

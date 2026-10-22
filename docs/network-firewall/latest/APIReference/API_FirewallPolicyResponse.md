@@ -59,10 +59,16 @@ A complex type that contains the AWS KMS encryption configuration settings for y
 Type: [EncryptionConfiguration](API_EncryptionConfiguration.md) object
 Required: No
 
+ ** Errors **   <a name="networkfirewall-Type-FirewallPolicyResponse-Errors"></a>
+Any configuration errors that apply to the firewall policy. Network Firewall detects these errors asynchronously, after you create or update the policy, so an error can appear after the request that caused it has already succeeded. Each entry describes the problem and how to resolve it, and Network Firewall clears it automatically after you resolve the problem.
+Type: Array of [FirewallPolicyError](API_FirewallPolicyError.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
+
  ** FirewallPolicyStatus **   <a name="networkfirewall-Type-FirewallPolicyResponse-FirewallPolicyStatus"></a>
 The current status of the firewall policy. You can retrieve this for a firewall policy by calling [DescribeFirewallPolicy](API_DescribeFirewallPolicy.md) and providing the firewall policy's name or ARN.
 Type: String
-Valid Values: `ACTIVE | DELETING | ERROR`
+Valid Values: `ACTIVE | DELETING | ERROR | UPDATING`
 Required: No
 
  ** LastModifiedTime **   <a name="networkfirewall-Type-FirewallPolicyResponse-LastModifiedTime"></a>
@@ -73,6 +79,12 @@ Required: No
  ** NumberOfAssociations **   <a name="networkfirewall-Type-FirewallPolicyResponse-NumberOfAssociations"></a>
 The number of firewalls that are associated with this firewall policy.
 Type: Integer
+Required: No
+
+ ** StatusMessage **   <a name="networkfirewall-Type-FirewallPolicyResponse-StatusMessage"></a>
+Additional detail about the firewall policy's current status, when applicable. For example, while an Amazon Route 53 Resolver DNS Firewall rule group change is in progress, the status is `UPDATING` and this message is "A DNS Firewall rule group change is in progress."
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 8192.
 Required: No
 
  ** Tags **   <a name="networkfirewall-Type-FirewallPolicyResponse-Tags"></a>

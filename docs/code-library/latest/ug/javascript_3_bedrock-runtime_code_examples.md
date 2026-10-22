@@ -19,7 +19,6 @@ Each example includes a link to the complete source code, where you can find ins
 + [Amazon Nova](#amazon_nova)
 + [Amazon Nova Canvas](#amazon_nova_canvas)
 + [Anthropic Claude](#anthropic_claude)
-+ [Cohere Command](#cohere_command)
 + [Meta Llama](#meta_llama)
 + [Mistral AI](#mistral_ai)
 
@@ -1302,120 +1301,6 @@ const command = new ConverseStreamCommand({
   modelId,
   messages: conversation,
   inferenceConfig: { maxTokens: 512 },
-});
-
-try {
-  // Send the command to the model and wait for the response
-  const response = await client.send(command);
-
-  // Extract and print the streamed response text in real-time.
-  for await (const item of response.stream) {
-    if (item.contentBlockDelta) {
-      process.stdout.write(item.contentBlockDelta.delta?.text);
-    }
-  }
-} catch (err) {
-  console.log(`ERROR: Can't invoke '${modelId}'. Reason: ${err}`);
-  process.exit(1);
-}
-```
-+  For API details, see [ConverseStream](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/bedrock-runtime/command/ConverseStreamCommand) in *AWS SDK for JavaScript API Reference*.
-
-## Cohere Command
-<a name="cohere_command"></a>
-
-### Converse
-<a name="bedrock-runtime_Converse_CohereCommand_javascript_3_topic"></a>
-
-The following code example shows how to send a text message to Cohere Command, using Bedrock's Converse API.
-
-**SDK for JavaScript (v3)**
- There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
-Send a text message to Cohere Command, using Bedrock's Converse API.
-
-```
-// Use the Conversation API to send a text message to Cohere Command.
-
-import {
-  BedrockRuntimeClient,
-  ConverseCommand,
-} from "@aws-sdk/client-bedrock-runtime";
-
-// Create a Bedrock Runtime client in the AWS Region you want to use.
-const client = new BedrockRuntimeClient({ region: "us-east-1" });
-
-// Set the model ID, e.g., Command R.
-const modelId = "cohere.command-r-v1:0";
-
-// Start a conversation with the user message.
-const userMessage =
-  "Describe the purpose of a 'hello world' program in one line.";
-const conversation = [
-  {
-    role: "user",
-    content: [{ text: userMessage }],
-  },
-];
-
-// Create a command with the model ID, the message, and a basic configuration.
-const command = new ConverseCommand({
-  modelId,
-  messages: conversation,
-  inferenceConfig: { maxTokens: 512, temperature: 0.5, topP: 0.9 },
-});
-
-try {
-  // Send the command to the model and wait for the response
-  const response = await client.send(command);
-
-  // Extract and print the response text.
-  const responseText = response.output.message.content[0].text;
-  console.log(responseText);
-} catch (err) {
-  console.log(`ERROR: Can't invoke '${modelId}'. Reason: ${err}`);
-  process.exit(1);
-}
-```
-+  For API details, see [Converse](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/bedrock-runtime/command/ConverseCommand) in *AWS SDK for JavaScript API Reference*.
-
-### ConverseStream
-<a name="bedrock-runtime_ConverseStream_CohereCommand_javascript_3_topic"></a>
-
-The following code example shows how to send a text message to Cohere Command, using Bedrock's Converse API and process the response stream in real-time.
-
-**SDK for JavaScript (v3)**
- There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/bedrock-runtime#code-examples).
-Send a text message to Cohere Command, using Bedrock's Converse API and process the response stream in real-time.
-
-```
-// Use the Conversation API to send a text message to Cohere Command.
-
-import {
-  BedrockRuntimeClient,
-  ConverseStreamCommand,
-} from "@aws-sdk/client-bedrock-runtime";
-
-// Create a Bedrock Runtime client in the AWS Region you want to use.
-const client = new BedrockRuntimeClient({ region: "us-east-1" });
-
-// Set the model ID, e.g., Command R.
-const modelId = "cohere.command-r-v1:0";
-
-// Start a conversation with the user message.
-const userMessage =
-  "Describe the purpose of a 'hello world' program in one line.";
-const conversation = [
-  {
-    role: "user",
-    content: [{ text: userMessage }],
-  },
-];
-
-// Create a command with the model ID, the message, and a basic configuration.
-const command = new ConverseStreamCommand({
-  modelId,
-  messages: conversation,
-  inferenceConfig: { maxTokens: 512, temperature: 0.5, topP: 0.9 },
 });
 
 try {

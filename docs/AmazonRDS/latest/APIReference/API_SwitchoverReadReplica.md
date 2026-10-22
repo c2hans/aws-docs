@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Switch
 # SwitchoverReadReplica
 <a name="API_SwitchoverReadReplica"></a>
 
-Switches over an Oracle standby database in an Oracle Data Guard environment, making it the new primary database. Issue this command in the Region that hosts the current standby database.
+Switches over an Oracle standby database in an Oracle Data Guard environment or a SQL Server read replica, making it the new primary database. Issue this command in the Region that hosts the current standby database or read replica.
 
 ## Request Parameters
 <a name="API_SwitchoverReadReplica_RequestParameters"></a>
@@ -13,9 +13,9 @@ Switches over an Oracle standby database in an Oracle Data Guard environment, ma
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** DBInstanceIdentifier **
-The DB instance identifier of the current standby database. This value is stored as a lowercase string.
+The DB instance identifier of the current standby database or read replica. This value is stored as a lowercase string.
 Constraints:
-+ Must match the identiﬁer of an existing Oracle read replica DB instance.
++ Must match the identifier of an existing Oracle or SQL Server read replica DB instance.
 Type: String
 Required: Yes
 

@@ -75,43 +75,6 @@ The tag value applied to only those AWS resources that you want to trigger an ev
 ## Examples
 <a name="aws-properties-config-configrule-scope--examples"></a>
 
-**Topics**
-+ [Multiple Resource Types with Tag-Based Scope](#aws-properties-config-configrule-scope--examples--Multiple_Resource_Types_with_Tag-Based_Scope)
-+ [Single Resource Specific Scope](#aws-properties-config-configrule-scope--examples--Single_Resource_Specific_Scope)
-
-### Multiple Resource Types with Tag-Based Scope
-<a name="aws-properties-config-configrule-scope--examples--Multiple_Resource_Types_with_Tag-Based_Scope"></a>
-
-This example configures AWS Config to evaluate both Amazon EC2 instances and volumes that are tagged with "`Environment`=`Production`". This is useful when you want to monitor compliance for multiple resource types that share specific tags.
-
-#### YAML
-<a name="aws-properties-config-configrule-scope--examples--Multiple_Resource_Types_with_Tag-Based_Scope--yaml"></a>
-
-```
-Scope:
-  ComplianceResourceTypes:
-    - "AWS::EC2::Instance"
-    - "AWS::EC2::Volume"
-  TagKey: "Environment"
-  TagValue: "Production"
-```
-
-#### JSON
-<a name="aws-properties-config-configrule-scope--examples--Multiple_Resource_Types_with_Tag-Based_Scope--json"></a>
-
-```
-{
-  "Scope": {
-    "ComplianceResourceTypes": [
-      "AWS::EC2::Instance",
-      "AWS::EC2::Volume"
-    ],
-    "TagKey": "Environment",
-    "TagValue": "Production"
-  }
-}
-```
-
 ### Single Resource Specific Scope
 <a name="aws-properties-config-configrule-scope--examples--Single_Resource_Specific_Scope"></a>
 

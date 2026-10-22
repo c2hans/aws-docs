@@ -13,6 +13,7 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 The following data types are supported:
 +  [AccessLogSubscriptionSummary](API_AccessLogSubscriptionSummary.md)
 +  [ArnResource](API_ArnResource.md)
++  [CidrResource](API_CidrResource.md)
 +  [DnsEntry](API_DnsEntry.md)
 +  [DnsOptions](API_DnsOptions.md)
 +  [DnsResource](API_DnsResource.md)
@@ -28,6 +29,7 @@ The following data types are supported:
 +  [Matcher](API_Matcher.md)
 +  [PathMatch](API_PathMatch.md)
 +  [PathMatchType](API_PathMatchType.md)
++  [PayerResponsibilityEntry](API_PayerResponsibilityEntry.md)
 +  [ResourceConfigurationDefinition](API_ResourceConfigurationDefinition.md)
 +  [ResourceConfigurationSummary](API_ResourceConfigurationSummary.md)
 +  [ResourceEndpointAssociationSummary](API_ResourceEndpointAssociationSummary.md)

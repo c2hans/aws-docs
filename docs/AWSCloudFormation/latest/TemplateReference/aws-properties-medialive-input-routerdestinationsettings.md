@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AvailabilityZoneName](#cfn-medialive-input-routerdestinationsettings-availabilityzonename)" : {{String}}
+  "[AvailabilityZoneName](#cfn-medialive-input-routerdestinationsettings-availabilityzonename)" : {{String}},
+  "[RouterOutputArn](#cfn-medialive-input-routerdestinationsettings-routeroutputarn)" : {{String}}
 }
 ```
 
@@ -30,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AvailabilityZoneName](#cfn-medialive-input-routerdestinationsettings-availabilityzonename): {{String}}
+  [RouterOutputArn](#cfn-medialive-input-routerdestinationsettings-routeroutputarn): {{String}}
 ```
 
 ## Properties
@@ -37,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `AvailabilityZoneName`  <a name="cfn-medialive-input-routerdestinationsettings-availabilityzonename"></a>
 The Availability Zone for this MediaConnect Router destination endpoint.
+*Required*: Yes
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RouterOutputArn`  <a name="cfn-medialive-input-routerdestinationsettings-routeroutputarn"></a>
+Property description not available.
 *Required*: No
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

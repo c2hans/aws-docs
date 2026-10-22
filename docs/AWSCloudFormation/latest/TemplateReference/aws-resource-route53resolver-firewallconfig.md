@@ -45,14 +45,14 @@ Determines how DNS Firewall operates during failures, for example when all traff
 + By default, fail open is disabled, which means the failure mode is closed. This approach favors security over availability. DNS Firewall returns a failure error when it is unable to properly evaluate a query.
 + If you enable this option, the failure mode is open. This approach favors availability over security. DNS Firewall allows queries to proceed if it is unable to properly evaluate them.
 This behavior is only enforced for VPCs that have at least one DNS Firewall rule group association.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Allowed values*: `ENABLED | DISABLED | USE_LOCAL_RESOURCE_SETTING`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceId`  <a name="cfn-route53resolver-firewallconfig-resourceid"></a>
 The ID of the VPC that this firewall configuration applies to.
-*Required*: No
+*Required*: Yes
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `64`

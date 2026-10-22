@@ -521,10 +521,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UpdateFinding  **
-  - **IAM action:**  [securityagent:UpdateFinding](#list_securityagent-action-UpdateFinding)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [securityagent:UpdateFinding](#list_securityagent-action-UpdateFinding)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** securityagent.amazonaws.com / **Access level:** Write
 
 - **   UpdateIntegratedResources  **
   - **IAM action:**  [securityagent:UpdateIntegratedResources](#list_securityagent-action-UpdateIntegratedResources)
@@ -617,12 +615,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [BatchDeleteThreatModels](https://docs.aws.amazon.com/securityagent/API_BatchDeleteThreatModels.html)  **
   - **Description:** Grants permission to delete multiple threat models in a single request
-  - **Resource types (\*required):** [AgentSpace\*](#list_securityagent-resource-AgentSpace)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityagent-aws_ResourceTag___TagKey_)
-  - **Access level:** Write
-
-- **   [BatchDeleteThreats](https://docs.aws.amazon.com/securityagent/API_BatchDeleteThreats.html)  **
-  - **Description:** Grants permission to delete multiple threats
   - **Resource types (\*required):** [AgentSpace\*](#list_securityagent-resource-AgentSpace)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_securityagent-aws_ResourceTag___TagKey_)
   - **Access level:** Write

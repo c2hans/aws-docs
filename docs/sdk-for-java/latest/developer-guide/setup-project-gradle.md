@@ -270,3 +270,43 @@ tasks.named('test') {
 ------
 
 For next steps, see the Getting Started guide on the Gradle website for instructions on how to [build and run a Gradle application](https://docs.gradle.org/current/samples/sample_building_java_applications.html#run_the_application).
+
+## Enforce consistent SDK module versions
+<a name="gradle-enforce-sdk-module-versions"></a>
+
+**Important**
+Use a single AWS SDK for Java 2.x version throughout your Gradle build. If the modules resolve to different versions, your application can throw runtime exceptions or fail to compile, depending on which components differ. For more information, see [component version compatibility](https://github.com/aws/aws-sdk-java-v2/blob/master/VERSIONING.md#component-version-compatibility) in the SDK's versioning policy on the GitHub website.
+
+The `platform(...)` form shown earlier imports the BOM versions as recommendations. During conflict resolution, Gradle selects the highest requested version. As a result, if another part of the dependency graph requests a different `software.amazon.awssdk` version, that version wins and leaves a mixed set of SDK versions.
+
+To guarantee a single SDK version, use `enforcedPlatform(...)` instead. This form imports the BOM versions as forced (strict) constraints that override every other version in the graph for `software.amazon.awssdk` modules. The following examples show the `dependencies` block for the Kotlin and Groovy DSLs. In the build file you created earlier, replace only the `platform("software.amazon.awssdk:bom:...")` line with the `enforcedPlatform(...)` line shown here, so that the build file declares the SDK BOM only once. Leave any other `platform(...)` declarations, such as those for the Log4j or JUnit BOMs, unchanged. Replace the version number with the latest version of the SDK for Java 2.x.
+
+------
+#### [ Kotlin DSL (build.gradle.kts) ]
+
+```
+dependencies {
+    implementation(enforcedPlatform("software.amazon.awssdk:bom:{{2.27.21}}"))
+    implementation("software.amazon.awssdk:s3")
+}
+```
+
+------
+#### [ Groovy DSL (build.gradle) ]
+
+```
+dependencies {
+    implementation enforcedPlatform('software.amazon.awssdk:bom:{{2.27.21}}')
+    implementation 'software.amazon.awssdk:s3'
+}
+```
+
+------
+
+**Note**
+Find the latest version in the [Maven Central repository](https://central.sonatype.com/artifact/software.amazon.awssdk/bom/versions) on the Sonatype website.
+
+**Important**
+Because `enforcedPlatform(...)` applies forced constraints, it can downgrade or override versions across the entire dependency graph, including transitive dependencies, not only the ones you declare. Gradle applies this override without failing the build. If another library in your build requires a newer SDK version than the BOM provides, the downgrade can cause runtime errors such as `NoSuchMethodError` or `NoClassDefFoundError` when that library calls an API that the older version does not contain. To resolve this, update the BOM to a version that satisfies every library in your build. The AWS SDK for Java 2.x BOM manages only `software.amazon.awssdk` artifacts, so this effect applies only to those modules. Prefer `enforcedPlatform(...)` for final applications. Avoid it in published libraries, because the forced versions leak to downstream consumers.
+
+For more information about diagnosing problems that result from mismatched SDK versions, see [Classpath errors](troubleshooting.md#faq-classpath-errors).

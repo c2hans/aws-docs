@@ -17,6 +17,7 @@ A flow is network traffic that is monitored by a firewall, either by stateful or
 ```
 {
    "AvailabilityZone": "{{string}}",
+   "AvailabilityZoneId": "{{string}}",
    "FirewallArn": "{{string}}",
    "FlowOperationType": "{{string}}",
    "MaxResults": {{number}},
@@ -34,8 +35,13 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [AvailabilityZone](#API_ListFlowOperations_RequestSyntax) **   <a name="networkfirewall-ListFlowOperations-request-AvailabilityZone"></a>
-The ID of the Availability Zone where the firewall is located. For example, `us-east-2a`.
+The name of the Availability Zone where the firewall is located. For example, `us-east-2a`.
 Defines the scope a flow operation. You can use up to 20 filters to configure a single flow operation.
+Type: String
+Required: No
+
+ ** [AvailabilityZoneId](#API_ListFlowOperations_RequestSyntax) **   <a name="networkfirewall-ListFlowOperations-request-AvailabilityZoneId"></a>
+The ID of the Availability Zone where the firewall is located. For example, `use2-az1`. Availability Zone IDs are the same in every AWS account, so use this parameter when you coordinate resources across accounts. Specify either `AvailabilityZone` or `AvailabilityZoneId`, not both. If you specify both, the request fails.
 Type: String
 Required: No
 

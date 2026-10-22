@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Service GatewayConnectorHealthCheck
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheck"></a>
 
-<a name="aws-properties-ecs-service-gatewayconnectorhealthcheck-description"></a>The `GatewayConnectorHealthCheck` property type specifies Property description not available. for an [AWS::ECS::Service](aws-resource-ecs-service.md).
+The health check configuration that a gateway uses to evaluate the targets associated with a gateway connector.
 
 ## Syntax
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheck-syntax"></a>
@@ -49,50 +49,53 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheck-properties"></a>
 
 `HealthCheckIntervalSeconds`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckintervalseconds"></a>
-Property description not available.
+The approximate amount of time, in seconds, between health checks of an individual target.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckPath`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckpath"></a>
-Property description not available.
+The destination path for health check requests.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckPort`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckport"></a>
-Property description not available.
+The port that the gateway uses to perform health checks on the targets.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckProtocol`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-healthcheckprotocol"></a>
-Property description not available.
+The protocol that the gateway uses to perform health checks.
+Valid values:
++ `HTTP` - Health checks are performed over HTTP.
++ `HTTPS` - Health checks are performed over HTTPS.
 *Required*: No
 *Type*: String
 *Allowed values*: `HTTP | HTTPS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckTimeoutSeconds`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-healthchecktimeoutseconds"></a>
-Property description not available.
+The amount of time, in seconds, during which no response from a target means a failed health check.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthyThresholdCount`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-healthythresholdcount"></a>
-Property description not available.
+The number of consecutive successful health checks that a target must pass before the gateway considers it healthy.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Matcher`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-matcher"></a>
-Property description not available.
+The HTTP or gRPC codes that indicate a successful health check response from a target.
 *Required*: No
 *Type*: [GatewayConnectorHealthCheckMatcher](aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UnhealthyThresholdCount`  <a name="cfn-ecs-service-gatewayconnectorhealthcheck-unhealthythresholdcount"></a>
-Property description not available.
+The number of consecutive failed health checks that a target must fail before the gateway considers it unhealthy.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -9,6 +9,7 @@ X.509 certificate policy variables assist with writing AWS IoT Core policies. Th
 
 **Important**
 If your X.509 certificate doesn't include a particular certificate attribute but the corresponding certificate policy variable is used in your policy document, the policy evaluation might lead to unexpected behavior.
+AWS IoT Core also doesn't replace a certificate policy variable when the certificate attribute value contains a wildcard character (`*`, `$`, `+`, `?`, or `#`). In that case, the `${policy-variable}` remains unsubstituted. For this and other limitations that apply to certificate policy variables, see [X.509 Certificate policy variable limitations](use-policy-variables.md#policy-limits).
 
 ## CertificateId
 <a name="cert-policy-variables-certid"></a>

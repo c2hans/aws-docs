@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-vpclattice-rule-pathmatch-properties"></a>
 
 `CaseSensitive`  <a name="cfn-vpclattice-rule-pathmatch-casesensitive"></a>
-Indicates whether the match is case sensitive.
+Specifies whether the match is case sensitive. Defaults to `true` (case-sensitive matching). Set to `false` to match the path case-insensitively.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -24,6 +24,13 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `[a-zA-Z0-9\._:\/=+\-@ ]+`
 Required: No
 
+ ** XAmznTraceId **   <a name="lambda-Type-ChainedInvokeOptions-XAmznTraceId"></a>
+The AWS X-Ray trace header to use when starting the chained invocation. This parameter is optional. If you omit this value, the child invocation inherits the parent durable execution's trace header.
+Specify this value on the `START` update for the chained invocation operation. For more information about the header format, see [Tracing header](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html#xray-concepts-tracingheader) in the * AWS X-Ray Developer Guide*.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 8192.
+Required: No
+
 ## See Also
 <a name="API_ChainedInvokeOptions_SeeAlso"></a>
 

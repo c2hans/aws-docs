@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Service GatewayConnector
 <a name="aws-properties-ecs-service-gatewayconnector"></a>
 
-<a name="aws-properties-ecs-service-gatewayconnector-description"></a>The `GatewayConnector` property type specifies Property description not available. for an [AWS::ECS::Service](aws-resource-ecs-service.md).
+A gateway connector that attaches an Amazon ECS service to a gateway ingress path. The connector specifies the service port that receives gateway-managed ingress traffic, along with the health check and traffic filters that the gateway applies. A service can have at most one gateway connector.
 
 ## Syntax
 <a name="aws-properties-ecs-service-gatewayconnector-syntax"></a>
@@ -40,19 +40,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnector-properties"></a>
 
 `Filters`  <a name="cfn-ecs-service-gatewayconnector-filters"></a>
-Property description not available.
+The filters that control which gateway ingress paths the connector applies to.
 *Required*: No
 *Type*: [GatewayConnectorFilters](aws-properties-ecs-service-gatewayconnectorfilters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheck`  <a name="cfn-ecs-service-gatewayconnector-healthcheck"></a>
-Property description not available.
+The health check that the gateway uses to determine whether the targets for this connector are healthy.
 *Required*: No
 *Type*: [GatewayConnectorHealthCheck](aws-properties-ecs-service-gatewayconnectorhealthcheck.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PortName`  <a name="cfn-ecs-service-gatewayconnector-portname"></a>
-Property description not available.
+The name of the service port that the gateway routes ingress traffic to.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

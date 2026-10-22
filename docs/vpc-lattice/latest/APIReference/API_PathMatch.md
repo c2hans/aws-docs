@@ -17,7 +17,7 @@ Type: [PathMatchType](API_PathMatchType.md) object
 Required: Yes
 
  ** caseSensitive **   <a name="vpclattice-Type-PathMatch-caseSensitive"></a>
-Indicates whether the match is case sensitive.
+Specifies whether the match is case sensitive. Defaults to `true` (case-sensitive matching). Set to `false` to match the path case-insensitively.
 Type: Boolean
 Required: No
 

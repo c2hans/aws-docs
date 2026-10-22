@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway HostSharedAlbConfiguration
 <a name="aws-properties-ecs-gateway-hostsharedalbconfiguration"></a>
 
-<a name="aws-properties-ecs-gateway-hostsharedalbconfiguration-description"></a>The `HostSharedAlbConfiguration` property type specifies Property description not available. for an [AWS::ECS::Gateway](aws-resource-ecs-gateway.md).
+The configuration for a gateway that uses shared Application Load Balancers with host-based routing. Where they apply, the field names and values are kept consistent with the Elastic Load Balancing API.
 
 ## Syntax
 <a name="aws-properties-ecs-gateway-hostsharedalbconfiguration-syntax"></a>
@@ -55,7 +55,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-gateway-hostsharedalbconfiguration-properties"></a>
 
 `AccessLogs`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-accesslogs"></a>
-Property description not available.
+The access log configuration for the load balancers that the gateway manages.
 *Required*: No
 *Type*: [GatewayElbAccessLogConfiguration](aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -67,26 +67,26 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HttpDesync`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-httpdesync"></a>
-Property description not available.
+The desync mitigation mode for the load balancers that the gateway manages, which determines how the load balancers handle requests that might pose a security risk. The default is `defensive`.
 *Required*: No
 *Type*: String
 *Allowed values*: `monitor | defensive | strictest`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MaxAlbCount`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-maxalbcount"></a>
-Property description not available.
+The maximum number of Application Load Balancers that the gateway manages. The default is 10.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkConfiguration`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-networkconfiguration"></a>
-Property description not available.
+The network configuration for the load balancers that the gateway manages.
 *Required*: No
 *Type*: [GatewayElbNetworkConfiguration](aws-properties-ecs-gateway-gatewayelbnetworkconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Port`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-port"></a>
-Property description not available.
+The port that the load balancer listener uses is 443. The gateway supports only HTTPS at port 443.
 *Required*: No
 *Type*: Integer
 *Minimum*: `1`
@@ -94,27 +94,27 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Protocol`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-protocol"></a>
-Property description not available.
+The protocol for the load balancer listener is `HTTPS`. No other protocol is supported.
 *Required*: No
 *Type*: String
 *Allowed values*: `HTTP | HTTPS`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Scheme`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-scheme"></a>
-Property description not available.
+Specifies whether the load balancers the gateway manages are `internet-facing` or `internal`. The default is `internet-facing`.
 *Required*: No
 *Type*: String
 *Allowed values*: `internet-facing | internal`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `TestTrafficRules`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-testtrafficrules"></a>
-Property description not available.
+The rules that route test traffic for progressive deployments. During a progressive deployment, requests whose headers match these rules are routed to the new service revision so that it can be validated before production traffic shifts to it.
 *Required*: No
 *Type*: [GatewayAlbTestTrafficRules](aws-properties-ecs-gateway-gatewayalbtesttrafficrules.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WebACLArn`  <a name="cfn-ecs-gateway-hostsharedalbconfiguration-webaclarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the WAF web ACL to associate with the load balancers that the gateway manages.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway GatewayElbAccessLogConfiguration
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration"></a>
 
-<a name="aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration-description"></a>The `GatewayElbAccessLogConfiguration` property type specifies Property description not available. for an [AWS::ECS::Gateway](aws-resource-ecs-gateway.md).
+The access log configuration for the load balancers that a gateway manages.
 
 ## Syntax
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogconfiguration-properties"></a>
 
 `Destination`  <a name="cfn-ecs-gateway-gatewayelbaccesslogconfiguration-destination"></a>
-Property description not available.
+The destination where access logs are delivered.
 *Required*: No
 *Type*: [GatewayElbAccessLogDestination](aws-properties-ecs-gateway-gatewayelbaccesslogdestination.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

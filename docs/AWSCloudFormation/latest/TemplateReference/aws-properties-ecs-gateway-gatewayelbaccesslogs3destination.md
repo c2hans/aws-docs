@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway GatewayElbAccessLogS3Destination
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogs3destination"></a>
 
-<a name="aws-properties-ecs-gateway-gatewayelbaccesslogs3destination-description"></a>The `GatewayElbAccessLogS3Destination` property type specifies Property description not available. for an [AWS::ECS::Gateway](aws-resource-ecs-gateway.md).
+The Amazon S3 destination for the access logs of a gateway's load balancers.
 
 ## Syntax
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogs3destination-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-gateway-gatewayelbaccesslogs3destination-properties"></a>
 
 `Bucket`  <a name="cfn-ecs-gateway-gatewayelbaccesslogs3destination-bucket"></a>
-Property description not available.
+The name of the Amazon S3 bucket where access logs are delivered.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Prefix`  <a name="cfn-ecs-gateway-gatewayelbaccesslogs3destination-prefix"></a>
-Property description not available.
+The object key prefix for the access logs in the Amazon S3 bucket.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

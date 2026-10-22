@@ -28,12 +28,14 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[KeyPair](#cfn-imagebuilder-infrastructureconfiguration-keypair)" : {{String}},
       "[Logging](#cfn-imagebuilder-infrastructureconfiguration-logging)" : {{Logging}},
       "[Name](#cfn-imagebuilder-infrastructureconfiguration-name)" : {{String}},
+      "[ParentInstance](#cfn-imagebuilder-infrastructureconfiguration-parentinstance)" : {{ParentInstance}},
       "[Placement](#cfn-imagebuilder-infrastructureconfiguration-placement)" : {{Placement}},
       "[ResourceTags](#cfn-imagebuilder-infrastructureconfiguration-resourcetags)" : {{{{{Key}}: {{Value}}, ...}}},
       "[SecurityGroupIds](#cfn-imagebuilder-infrastructureconfiguration-securitygroupids)" : {{[ String, ... ]}},
       "[SnsTopicArn](#cfn-imagebuilder-infrastructureconfiguration-snstopicarn)" : {{String}},
       "[SubnetId](#cfn-imagebuilder-infrastructureconfiguration-subnetid)" : {{String}},
       "[Tags](#cfn-imagebuilder-infrastructureconfiguration-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[TerminateInstanceOnCompletion](#cfn-imagebuilder-infrastructureconfiguration-terminateinstanceoncompletion)" : {{Boolean}},
       "[TerminateInstanceOnFailure](#cfn-imagebuilder-infrastructureconfiguration-terminateinstanceonfailure)" : {{Boolean}}
     }
 }
@@ -55,6 +57,8 @@ Properties:
   [Logging](#cfn-imagebuilder-infrastructureconfiguration-logging): {{
     Logging}}
   [Name](#cfn-imagebuilder-infrastructureconfiguration-name): {{String}}
+  [ParentInstance](#cfn-imagebuilder-infrastructureconfiguration-parentinstance): {{
+    ParentInstance}}
   [Placement](#cfn-imagebuilder-infrastructureconfiguration-placement): {{
     Placement}}
   [ResourceTags](#cfn-imagebuilder-infrastructureconfiguration-resourcetags): {{
@@ -65,6 +69,7 @@ Properties:
   [SubnetId](#cfn-imagebuilder-infrastructureconfiguration-subnetid): {{String}}
   [Tags](#cfn-imagebuilder-infrastructureconfiguration-tags): {{
     {{Key}}: {{Value}}}}
+  [TerminateInstanceOnCompletion](#cfn-imagebuilder-infrastructureconfiguration-terminateinstanceoncompletion): {{Boolean}}
   [TerminateInstanceOnFailure](#cfn-imagebuilder-infrastructureconfiguration-terminateinstanceonfailure): {{Boolean}}
 ```
 
@@ -123,6 +128,12 @@ The name of the infrastructure configuration. Infrastructure configuration names
 *Pattern*: `^[-_A-Za-z-0-9][-_A-Za-z0-9 ]{1,126}[-_A-Za-z-0-9]$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`ParentInstance`  <a name="cfn-imagebuilder-infrastructureconfiguration-parentinstance"></a>
+The Amazon EC2 Auto Scaling group that Image Builder takes the build instance from, instead of launching a new instance. This applies only to the build phase.
+*Required*: No
+*Type*: [ParentInstance](aws-properties-imagebuilder-infrastructureconfiguration-parentinstance.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Placement`  <a name="cfn-imagebuilder-infrastructureconfiguration-placement"></a>
 The instance placement settings that define where the build and test instances that Image Builder launches during image creation run. These settings don't affect instances that you launch from the output image.
 *Required*: No
@@ -163,6 +174,12 @@ The metadata tags to assign to the infrastructure configuration resource that Im
 *Required*: No
 *Type*: Object of String
 *Pattern*: `.{1,}`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TerminateInstanceOnCompletion`  <a name="cfn-imagebuilder-infrastructureconfiguration-terminateinstanceoncompletion"></a>
+Specifies whether Image Builder terminates build and test instances when image creation ends without a failure.
+*Required*: No
+*Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TerminateInstanceOnFailure`  <a name="cfn-imagebuilder-infrastructureconfiguration-terminateinstanceonfailure"></a>

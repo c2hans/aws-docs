@@ -391,7 +391,7 @@ The **condition keys** table lists all of the condition keys that you can use in
 + [Amazon EventBridge Scheduler (scheduler)](list_scheduler.md)
 + [Amazon EventBridge Schemas (schemas)](list_schemas.md)
 + [Amazon FinSpace (finspace)](list_finspace.md)
-+ [Amazon FinSpace API (finspace-api)](list_finspace-data.md)
++ [Amazon FinSpace API (finspace-api)](list_finspace-api.md)
 + [Amazon Forecast (forecast)](list_forecast.md)
 + [Amazon Fraud Detector (frauddetector)](list_frauddetector.md)
 + [Amazon FreeRTOS (freertos)](list_freertos.md)

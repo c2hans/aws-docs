@@ -155,9 +155,9 @@ Type: [SchedulingConfiguration](API_SchedulingConfiguration.md) object
 
  ** [status](#API_GetQueue_ResponseSyntax) **   <a name="deadlinecloud-GetQueue-response-status"></a>
 The status of the queue.
-+  `ACTIVE`–The queue is active.
-+  `SCHEDULING`–The queue is scheduling.
-+  `SCHEDULING_BLOCKED`–The queue scheduling is blocked. See the provided reason.
++  `ACTIVE` - The queue is active.
++  `SCHEDULING` - The queue is scheduling.
++  `SCHEDULING_BLOCKED` - The queue scheduling is blocked. See the provided reason.
 Type: String
 Valid Values: `IDLE | SCHEDULING | SCHEDULING_BLOCKED`
 

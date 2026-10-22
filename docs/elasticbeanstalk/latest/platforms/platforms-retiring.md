@@ -53,7 +53,7 @@ Elastic Beanstalk has scheduled the following PHP platform versions for retireme
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Proxy Server  |  End Date  |
 | --- | --- | --- | --- | --- | --- |
-|  ** PHP 8.2 AL2023 version 4.13.11** <br /> * 64bit Amazon Linux 2023 v4.13.11 running PHP 8.2 *  | 2023.12.20261016 | PHP 8.2.34 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 | 2027-03-31 |
+|  ** PHP 8.2 AL2023 version 4.13.12** <br /> * 64bit Amazon Linux 2023 v4.13.12 running PHP 8.2 *  | 2023.12.20261016 | PHP 8.2.34 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 | 2027-03-31 |
 
 For information about current platform versions, see [PHP](platforms-supported.md#platforms-supported.PHP).
 

@@ -39,9 +39,9 @@ Pattern: `([0-9a-f]{10}-|)[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-
 
  ** [status](#API_ListQueues_RequestSyntax) **   <a name="deadlinecloud-ListQueues-request-uri-status"></a>
 The status of the queues listed.
-+  `ACTIVE`–The queues are active.
-+  `SCHEDULING`–The queues are scheduling.
-+  `SCHEDULING_BLOCKED`–The queue scheduling is blocked for these queues.
++  `ACTIVE` - The queues are active.
++  `SCHEDULING` - The queues are scheduling.
++  `SCHEDULING_BLOCKED` - The queue scheduling is blocked for these queues.
 Valid Values: `IDLE | SCHEDULING | SCHEDULING_BLOCKED`
 
 ## Request Body

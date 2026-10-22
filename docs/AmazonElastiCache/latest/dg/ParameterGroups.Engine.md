@@ -394,7 +394,7 @@ For Redis OSS 2.8.23 the following additional parameter is supported.
 | close-on-slave-write  | Default: yes<br />Type: string (yes/no)<br />Modifiable: Yes<br />Changes Take Effect: Immediately | If enabled, clients who attempt to write to a read-only replica will be disconnected. |
 
 #### How close-on-slave-write works
-<a name="w2aac27c18c30c49c15c41b9"></a>
+<a name="w2aac29c18c30c49c15c41b9"></a>
 
 The `close-on-slave-write` parameter is introduced by Amazon ElastiCache to give you more control over how your cluster responds when a primary node and a read replica node swap roles due to promoting a read replica to primary.
 
@@ -409,7 +409,7 @@ With `close-on-replica-write` enabled, any time a client attempts to write to a 
 ![Image: close-on-slave-write, writing to new primary cluster](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ElastiCache-close-on-slave-write-03.png)
 
 #### When you might disable close-on-replica-write
-<a name="w2aac27c18c30c49c15c41c11"></a>
+<a name="w2aac29c18c30c49c15c41c11"></a>
 
 If disabling `close-on-replica-write` results in writes to the failing cluster, why disable `close-on-replica-write`?
 

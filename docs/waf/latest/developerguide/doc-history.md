@@ -15,6 +15,8 @@ Service features are sometimes rolled out incrementally to the AWS Regions where
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated AWS Managed Rules for AWS WAF](aws-managed-rule-groups-changelog.md) | Released static version 2.3 of the PHP application managed rule group. This version adds the `PHP2Shell_BODY` rule, which detects requests that match the PHP web runtime CVE-2026-109619 remote code execution vulnerability. | October 21, 2026 |
+| [Updated AWS Managed Rules for AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups-changelog.html) | Released static version 2.3 of the PHP application managed rule group. This version adds the `PHP2Shell_BODY` rule, which detects requests that match the PHP web runtime CVE-2026-109619 remote code execution vulnerability. | October 21, 2026 |
 | [Updated AWS Managed Rules for AWS WAF](aws-managed-rule-groups-changelog.md) | Released static version 7.0 of the Bot Control rule group. This version adds token provenance labels and device ID labels at the targeted protection level. | October 15, 2026 |
 | [Added FAQ page for supported protocols](#doc-history) | Added a new FAQ page with answers to common questions about the AWS JSON and Smithy RPC v2 CBOR wire protocols. For more information, see [ FAQs on supported protocols](https://docs.aws.amazon.com/waf/latest/dg/cbor-faq.html). | October 6, 2026 |
 | [Updated AWS Managed Rules for AWS WAF](aws-managed-rule-groups-changelog.md) | Released static version 2.5 of the SQL database managed rule group. | September 16, 2026 |

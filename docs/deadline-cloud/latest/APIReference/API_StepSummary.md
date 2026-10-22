@@ -40,16 +40,16 @@ Required: Yes
 
  ** taskRunStatus **   <a name="deadlinecloud-Type-StepSummary-taskRunStatus"></a>
 The task run status for the job.
-+  `PENDING`–pending and waiting for resources.
-+  `READY`–ready to process.
-+  `ASSIGNED`–assigned and will run next on a worker.
-+  `SCHEDULED`–scheduled to run on a worker.
-+  `INTERRUPTING`–being interrupted.
-+  `RUNNING`–running on a worker.
-+  `SUSPENDED`–the task is suspended.
-+  `CANCELED`–the task has been canceled.
-+  `FAILED`–the task has failed.
-+  `SUCCEEDED`–the task has succeeded.
++  `PENDING` - pending and waiting for resources.
++  `READY` - ready to process.
++  `ASSIGNED` - assigned and will run next on a worker.
++  `SCHEDULED` - scheduled to run on a worker.
++  `INTERRUPTING` - being interrupted.
++  `RUNNING` - running on a worker.
++  `SUSPENDED` - the task is suspended.
++  `CANCELED` - the task has been canceled.
++  `FAILED` - the task has failed.
++  `SUCCEEDED` - the task has succeeded.
 Type: String
 Valid Values: `PENDING | READY | ASSIGNED | STARTING | SCHEDULED | INTERRUPTING | RUNNING | SUSPENDED | CANCELED | FAILED | SUCCEEDED | NOT_COMPATIBLE`
 Required: Yes

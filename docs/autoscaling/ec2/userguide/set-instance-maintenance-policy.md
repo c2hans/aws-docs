@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-instance-m
 # Set an instance maintenance policy
 <a name="set-instance-maintenance-policy"></a>
 
+**Note**
+To apply the equivalent replacement behavior (a minimum healthy percentage of 100 and a maximum of 110) across your account without setting a policy on each group, enable the `launchBeforeTerminate` account setting. For more information, see [Launch replacement instances before terminating old ones](ec2-auto-scaling-launch-before-terminate-account-setting.md).
+
 To set an instance maintenance policy on an Auto Scaling group, use one of the following methods:
 
 ------

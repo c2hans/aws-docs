@@ -50,6 +50,7 @@ The destinations for the input from MediaConnect Router. Specify one destination
 The type of encryption for the MediaConnect router input. Specify `AUTOMATIC` to use a service-managed encryption key, or `SECRETS_MANAGER` to supply your own AES-256 encryption key via AWS Secrets Manager. This property is required.
 *Required*: No
 *Type*: String
+*Allowed values*: `AUTOMATIC | SECRETS_MANAGER`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SecretArn`  <a name="cfn-medialive-input-routersettings-secretarn"></a>

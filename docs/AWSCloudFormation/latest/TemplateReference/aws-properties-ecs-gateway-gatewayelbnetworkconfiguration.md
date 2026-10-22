@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway GatewayElbNetworkConfiguration
 <a name="aws-properties-ecs-gateway-gatewayelbnetworkconfiguration"></a>
 
-<a name="aws-properties-ecs-gateway-gatewayelbnetworkconfiguration-description"></a>The `GatewayElbNetworkConfiguration` property type specifies Property description not available. for an [AWS::ECS::Gateway](aws-resource-ecs-gateway.md).
+The network configuration for the load balancers that a gateway manages.
 
 ## Syntax
 <a name="aws-properties-ecs-gateway-gatewayelbnetworkconfiguration-syntax"></a>
@@ -39,20 +39,20 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-gateway-gatewayelbnetworkconfiguration-properties"></a>
 
 `InboundSecurityGroup`  <a name="cfn-ecs-gateway-gatewayelbnetworkconfiguration-inboundsecuritygroup"></a>
-Property description not available.
+The ID of a security group that you provide to control inbound traffic to the load balancers that the gateway manages. When you specify a security group, the gateway doesn't create inbound rules on the security group it manages.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IpAddressType`  <a name="cfn-ecs-gateway-gatewayelbnetworkconfiguration-ipaddresstype"></a>
-Property description not available.
+The IP address type for the load balancers that the gateway manages. The default is `dualstack`.
 *Required*: No
 *Type*: String
 *Allowed values*: `ipv4 | dualstack | dualstack-without-public-ipv4`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Subnets`  <a name="cfn-ecs-gateway-gatewayelbnetworkconfiguration-subnets"></a>
-Property description not available.
+The subnets for the load balancers that the gateway manages. The default is the subnets in the default VPC.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `2`

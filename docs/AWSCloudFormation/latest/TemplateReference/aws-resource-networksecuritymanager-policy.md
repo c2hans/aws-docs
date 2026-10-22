@@ -194,7 +194,7 @@ The version of the policy. Network Security Manager increments this value each t
                         - TemplateArn: !GetAtt BaselineTemplate.TemplateArn
                       PolicyConfiguration:
                         RemediationEnabled: true
-                        ResourcesCleanUp: false
+                        ResourcesCleanUp: true
                         WafConfig:
                           ExistingCustomerWebACLResolution: RETROFIT
                           ConflictResolution: MERGE_WHERE_APPLICABLE

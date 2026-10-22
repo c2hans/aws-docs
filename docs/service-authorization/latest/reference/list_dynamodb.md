@@ -888,6 +888,12 @@ The following actions are defined by Amazon DynamoDB but are not directly invoca
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [DisassociateTableReplica](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2gt_IAM.html)  **
+  - **Description:** Grants permission to disassociate a replica table from a global table while retaining the table and its data
+  - **Resource types (\*required):** [table\*](#list_dynamodb-resource-table)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_dynamodb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [GetAbacStatus](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-enable-ddb.html)  **
   - **Description:** Grants permission to view the status of Attribute Based Access Control for the account
   - **Resource types (\*required):**

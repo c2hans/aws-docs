@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `WorkloadIdentityArn`  <a name="cfn-bedrockagentcore-paymentmanager-workloadidentitydetails-workloadidentityarn"></a>
 The Amazon Resource Name (ARN) of the workload identity associated with the payment manager.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `1024`

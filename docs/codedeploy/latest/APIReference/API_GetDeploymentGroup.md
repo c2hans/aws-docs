@@ -86,6 +86,9 @@ Required: Yes
          "deploymentOption": "string",
          "deploymentType": "string"
       },
+      "ec2DeploymentOptions": {
+         "autoScalingGroupProcessesToSuspend": [ "string" ]
+      },
       "ec2TagFilters": [
          {
             "Key": "string",

@@ -57,7 +57,8 @@ To enable access logs, you must also specify a `logConfiguration` in the `servic
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ContainerConfigurations`  <a name="cfn-ecs-service-serviceconnectconfiguration-containerconfigurations"></a>
-Property description not available.
+The settings for the Service Connect proxy container that Amazon ECS adds to each task in this service. Each object in the list sets exactly one setting, and each setting can appear only once in the list.
+Your changes to these settings apply only to tasks that Amazon ECS launches after you update the service. Your running tasks keep their existing settings until Amazon ECS replaces them. If you update the `serviceConnectConfiguration` of your service and don't include `containerConfigurations`, the proxy container settings return to their defaults.
 *Required*: No
 *Type*: Array of [ServiceConnectContainerConfiguration](aws-properties-ecs-service-serviceconnectcontainerconfiguration.md)
 *Minimum*: `0`

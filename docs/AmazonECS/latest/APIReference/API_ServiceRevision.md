@@ -42,6 +42,12 @@ The amount of ephemeral storage to allocate for the deployment.
 Type: [DeploymentEphemeralStorage](API_DeploymentEphemeralStorage.md) object
 Required: No
 
+ ** gatewayConnectors **   <a name="ECS-Type-ServiceRevision-gatewayConnectors"></a>
+The gateway connectors that are associated with the service revision.
+Type: Array of [GatewayConnector](API_GatewayConnector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Required: No
+
  ** guardDutyEnabled **   <a name="ECS-Type-ServiceRevision-guardDutyEnabled"></a>
 Indicates whether Runtime Monitoring is turned on.
 Type: Boolean

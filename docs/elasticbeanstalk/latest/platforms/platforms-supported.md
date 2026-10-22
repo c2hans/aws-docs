@@ -166,10 +166,10 @@ Elastic Beanstalk supports the following PHP platform versions.
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Language  |  Package Manager  |  Proxy Server  |
 | --- | --- | --- | --- | --- |
-|  ** PHP 8.5 AL2023 version 4.13.11** <br /> * 64bit Amazon Linux 2023 v4.13.11 running PHP 8.5 *  | 2023.12.20261016 | PHP 8.5.11 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
-|  ** PHP 8.4 AL2023 version 4.13.11** <br /> * 64bit Amazon Linux 2023 v4.13.11 running PHP 8.4 *  | 2023.12.20261016 | PHP 8.4.26 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
-|  ** PHP 8.3 AL2023 version 4.13.11** <br /> * 64bit Amazon Linux 2023 v4.13.11 running PHP 8.3 *  | 2023.12.20261016 | PHP 8.3.35 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
-|  ** PHP 8.2 AL2023 version 4.13.11** <br /> * 64bit Amazon Linux 2023 v4.13.11 running PHP 8.2 *  | 2023.12.20261016 | PHP 8.2.34 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
+|  ** PHP 8.5 AL2023 version 4.13.13** <br /> * 64bit Amazon Linux 2023 v4.13.13 running PHP 8.5 *  | 2023.12.20261016 | PHP 8.5.12 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
+|  ** PHP 8.4 AL2023 version 4.13.13** <br /> * 64bit Amazon Linux 2023 v4.13.13 running PHP 8.4 *  | 2023.12.20261016 | PHP 8.4.27 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
+|  ** PHP 8.3 AL2023 version 4.13.12** <br /> * 64bit Amazon Linux 2023 v4.13.12 running PHP 8.3 *  | 2023.12.20261016 | PHP 8.3.35 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
+|  ** PHP 8.2 AL2023 version 4.13.12** <br /> * 64bit Amazon Linux 2023 v4.13.12 running PHP 8.2 *  | 2023.12.20261016 | PHP 8.2.34 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
 
  For information about platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [PHP](platforms-retiring.md#platforms-retiring.PHP) on the *Retiring Platform Versions* page. For information about previous platform versions, see [PHP platform history](platform-history-php.md).
 

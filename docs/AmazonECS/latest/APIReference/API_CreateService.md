@@ -139,6 +139,27 @@ When the service scheduler launches new tasks, it determines task placement. For
    "desiredCount": {{number}},
    "enableECSManagedTags": {{boolean}},
    "enableExecuteCommand": {{boolean}},
+   "gatewayConnectors": [
+      {
+         "filters": {
+            "accessTypes": [ "{{string}}" ]
+         },
+         "healthCheck": {
+            "healthCheckIntervalSeconds": {{number}},
+            "healthCheckPath": "{{string}}",
+            "healthCheckPort": {{number}},
+            "healthCheckProtocol": "{{string}}",
+            "healthCheckTimeoutSeconds": {{number}},
+            "healthyThresholdCount": {{number}},
+            "matcher": {
+               "grpcCode": "{{string}}",
+               "httpCode": "{{string}}"
+            },
+            "unhealthyThresholdCount": {{number}}
+         },
+         "portName": "{{string}}"
+      }
+   ],
    "healthCheckGracePeriodSeconds": {{number}},
    "launchType": "{{string}}",
    "loadBalancers": [
@@ -358,6 +379,12 @@ Required: No
  ** [enableExecuteCommand](#API_CreateService_RequestSyntax) **   <a name="ECS-CreateService-request-enableExecuteCommand"></a>
 Determines whether the execute command functionality is turned on for the service. If `true`, this enables execute command functionality on all containers in the service tasks.
 Type: Boolean
+Required: No
+
+ ** [gatewayConnectors](#API_CreateService_RequestSyntax) **   <a name="ECS-CreateService-request-gatewayConnectors"></a>
+The gateway connectors that attach the service to a gateway ingress path. You can specify at most one gateway connector.
+Type: Array of [GatewayConnector](API_GatewayConnector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** [healthCheckGracePeriodSeconds](#API_CreateService_RequestSyntax) **   <a name="ECS-CreateService-request-healthCheckGracePeriodSeconds"></a>

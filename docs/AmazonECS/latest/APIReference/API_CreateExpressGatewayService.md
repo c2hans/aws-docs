@@ -18,7 +18,6 @@ Provide an execution role for task operations and an infrastructure role for man
 {
    "cluster": "{{string}}",
    "cpu": "{{string}}",
-   "cpuArchitecture": "{{string}}",
    "executionRoleArn": "{{string}}",
    "healthCheckPath": "{{string}}",
    "infrastructureRoleArn": "{{string}}",
@@ -84,17 +83,6 @@ Required: No
  ** [cpu](#API_CreateExpressGatewayService_RequestSyntax) **   <a name="ECS-CreateExpressGatewayService-request-cpu"></a>
 The number of CPU units used by the task. This parameter determines the CPU allocation for each task in the Express service. The default value for an Express service is 256 (.25 vCPU).
 Type: String
-Required: No
-
- ** [cpuArchitecture](#API_CreateExpressGatewayService_RequestSyntax) **   <a name="ECS-CreateExpressGatewayService-request-cpuArchitecture"></a>
-The CPU architecture that the task runs on. If you don't specify a value, the default is `X86_64`.
-Valid values:
-+  `X86_64` - The x86 64-bit architecture.
-+  `ARM64` - The 64-bit ARM architecture.
-Ensure that the container image you specify supports the architecture you choose. The operating system family for an Express service is always `LINUX`.
-You can't specify `cpuArchitecture` together with `taskDefinitionArn`.
-Type: String
-Valid Values: `X86_64 | ARM64`
 Required: No
 
  ** [executionRoleArn](#API_CreateExpressGatewayService_RequestSyntax) **   <a name="ECS-CreateExpressGatewayService-request-executionRoleArn"></a>
@@ -172,7 +160,6 @@ Required: No
       "activeConfigurations": [
          {
             "cpu": "string",
-            "cpuArchitecture": "string",
             "createdAt": number,
             "executionRoleArn": "string",
             "healthCheckPath": "string",

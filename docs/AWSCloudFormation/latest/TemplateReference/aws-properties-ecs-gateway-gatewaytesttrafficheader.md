@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway GatewayTestTrafficHeader
 <a name="aws-properties-ecs-gateway-gatewaytesttrafficheader"></a>
 
-<a name="aws-properties-ecs-gateway-gatewaytesttrafficheader-description"></a>The `GatewayTestTrafficHeader` property type specifies Property description not available. for an [AWS::ECS::Gateway](aws-resource-ecs-gateway.md).
+A header-based rule that identifies test traffic for progressive deployments.
 
 ## Syntax
 <a name="aws-properties-ecs-gateway-gatewaytesttrafficheader-syntax"></a>
@@ -37,13 +37,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-gateway-gatewaytesttrafficheader-properties"></a>
 
 `Name`  <a name="cfn-ecs-gateway-gatewaytesttrafficheader-name"></a>
-Property description not available.
+The name of the header to match for test traffic routing.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Values`  <a name="cfn-ecs-gateway-gatewaytesttrafficheader-values"></a>
-Property description not available.
+The header values to match for test traffic routing.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

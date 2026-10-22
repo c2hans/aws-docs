@@ -29,6 +29,21 @@ An AWS Network Firewall firewall policy defines the behavior of a firewall, in a
             }
          }
       },
+      "Route53ResolvedIPValidation": {
+         "Action": "{{string}}",
+         "BypassDestinationValidationIPRanges": [
+            {
+               "AddressDefinition": "{{string}}"
+            }
+         ],
+         "DNSExpiryExceptionPolicy": "{{string}}",
+         "DNSFirewallRuleGroupId": "{{string}}",
+         "SourceIPRanges": [
+            {
+               "AddressDefinition": "{{string}}"
+            }
+         ]
+      },
       "StatefulDefaultActions": [ "{{string}}" ],
       "StatefulEngineOptions": {
          "FlowTimeouts": {
@@ -139,12 +154,20 @@ Required: No
          "KeyId": "string",
          "Type": "string"
       },
+      "Errors": [
+         {
+            "Code": "string",
+            "Message": "string",
+            "ResourceId": "string"
+         }
+      ],
       "FirewallPolicyArn": "string",
       "FirewallPolicyId": "string",
       "FirewallPolicyName": "string",
       "FirewallPolicyStatus": "string",
       "LastModifiedTime": number,
       "NumberOfAssociations": number,
+      "StatusMessage": "string",
       "Tags": [
          {
             "Key": "string",
@@ -186,6 +209,10 @@ HTTP Status Code: 500
  ** InternalServerError **
 Your request is valid, but Network Firewall couldn't perform the operation because of a system problem. Retry your request.
 HTTP Status Code: 500
+
+ ** InvalidOperationException **
+The operation failed because it's not valid. For example, you might have tried to delete a rule group or firewall policy that's in use.
+HTTP Status Code: 400
 
  ** InvalidRequestException **
 The operation failed because of a problem with your request. Examples include:

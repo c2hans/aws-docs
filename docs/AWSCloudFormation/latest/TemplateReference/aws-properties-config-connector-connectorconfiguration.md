@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Config::Connector ConnectorConfiguration
 <a name="aws-properties-config-connector-connectorconfiguration"></a>
 
-The provider-specific configuration for connecting to the third-party cloud service provider. You must specify exactly one provider configuration.
+Configuration for connecting to a third-party cloud service provider. You must specify exactly one provider configuration.
 
 ## Syntax
 <a name="aws-properties-config-connector-connectorconfiguration-syntax"></a>

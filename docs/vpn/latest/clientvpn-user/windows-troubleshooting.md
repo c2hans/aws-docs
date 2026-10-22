@@ -43,6 +43,7 @@ C:\ProgramData\Amazon\AWSVPNClient\logs\
 **Topics**
 + [AWS provided client event logs](#aws-provided-client)
 + [Profiles or preferences missing after upgrade to version 6.0](#windows-troubleshooting-profiles-missing)
++ [Connection stays up when a VPN route overlaps with the endpoint IP](#windows-troubleshooting-route-includes-endpoint-ip)
 + [Client cannot connect](#windows-troubleshooting-client-vpn-cannot-connect)
 + [Client cannot connect with "no TAP-Windows adapters" log message](#windows-troubleshooting-client-vpn-cannot-connect-tap-driver)
 + [Client is stuck in a reconnecting state](#windows-troubleshooting-client-vpn-stuck)
@@ -75,6 +76,18 @@ Skipping profile due to migration error (partial migration)
 Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect using the AWS provided client](client-vpn-connect-how.md).
 
 If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
+
+## Connection stays up when a VPN route overlaps with the endpoint IP
+<a name="windows-troubleshooting-route-includes-endpoint-ip"></a>
+
+**Problem**
+When a VPN route overlaps with the public IPv4 address of the Client VPN endpoint, the connection stays up with version 6.0 and later on both UDP and TCP endpoints. With version 5.x, the connection stays up on TCP endpoints but drops and reconnects on UDP endpoints. On other platforms, the connection drops and reconnects.
+
+**Cause**
+By default, Windows keeps traffic for an existing connection on the network interface where the connection was established. This behavior is known as the strong host model. Version 5.x set up UDP connections differently, so the traffic followed the VPN route.
+
+**Solution**
+This is an expected difference between 5.x and 6.x, and no action is required.
 
 ## Client cannot connect
 <a name="windows-troubleshooting-client-vpn-cannot-connect"></a>

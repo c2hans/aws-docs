@@ -156,7 +156,7 @@ Length Constraints: Fixed length of 22.
 Pattern: `rcfg-[0-9a-z]{17}`
 
  ** [resourceGatewayId](#API_GetResourceConfiguration_ResponseSyntax) **   <a name="vpclattice-GetResourceConfiguration-response-resourceGatewayId"></a>
-The ID of the resource gateway used to connect to the resource configuration in a given VPC. You can specify the resource gateway identifier only for resource configurations with type SINGLE, GROUP, or ARN.
+The ID of the resource gateway used to connect to the resource configuration in a given VPC. You can specify the resource gateway identifier only for resource configurations with type SINGLE, GROUP, ARN, or CIDR.
 Type: String
 Length Constraints: Fixed length of 21.
 Pattern: `rgw-[0-9a-z]{17}`
@@ -172,8 +172,9 @@ The type of resource configuration.
 +  `GROUP` - A group of resources.
 +  `CHILD` - A single resource that is part of a group resource configuration.
 +  `ARN` - An AWS resource.
++  `CIDR` - A network segment (a range of IP addresses) accessed through a `Tunnel` VPC endpoint.
 Type: String
-Valid Values: `GROUP | CHILD | SINGLE | ARN`
+Valid Values: `GROUP | CHILD | SINGLE | ARN | CIDR`
 
 ## Errors
 <a name="API_GetResourceConfiguration_Errors"></a>

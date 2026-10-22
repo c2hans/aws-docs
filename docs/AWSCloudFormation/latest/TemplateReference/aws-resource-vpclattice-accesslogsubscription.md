@@ -55,7 +55,7 @@ The Amazon Resource Name (ARN) of the destination. The supported destination typ
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceIdentifier`  <a name="cfn-vpclattice-accesslogsubscription-resourceidentifier"></a>
-The ID or ARN of the service network or service.
+The ID or ARN of the service network, service, or resource configuration.
 *Required*: No
 *Type*: String
 *Pattern*: `^((((sn)|(svc)|(rcfg))-[0-9a-z]{17})|(arn(:[a-z0-9]+([.-][a-z0-9]+)*){2}(:([a-z0-9]+([.-][a-z0-9]+)*)?){2}:((servicenetwork/sn)|(resourceconfiguration/rcfg)|(service/svc))-[0-9a-z]{17}))$`
@@ -108,4 +108,4 @@ The ID of the access log subscription.
 The Amazon Resource Name (ARN) of the access log subscription.
 
 `ResourceId`  <a name="ResourceId-fn::getatt"></a>
-The ID of the service network or service.
+The ID of the service network, service, or resource configuration.

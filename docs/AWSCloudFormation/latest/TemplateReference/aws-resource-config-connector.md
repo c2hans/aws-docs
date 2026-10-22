@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Config::Connector
 <a name="aws-resource-config-connector"></a>
 
-The details of the connector, including the connector configuration and connector ARN.
+Creates a connector for connecting a third-party cloud service provider to AWS Config.
 
 ## Syntax
 <a name="aws-resource-config-connector-syntax"></a>
@@ -43,13 +43,13 @@ Properties:
 <a name="aws-resource-config-connector-properties"></a>
 
 `ConnectorConfiguration`  <a name="cfn-config-connector-connectorconfiguration"></a>
-The provider-specific configuration for connecting to the third-party cloud service provider.
+The configuration for connecting to the third-party cloud service provider.
 *Required*: Yes
 *Type*: [ConnectorConfiguration](aws-properties-config-connector-connectorconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-config-connector-tags"></a>
-Property description not available.
+The tags for the connector.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-config-connector-tag.md)
 *Maximum*: `50`
@@ -61,6 +61,10 @@ Property description not available.
 ### Ref
 <a name="aws-resource-config-connector-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the Amazon Resource Name (ARN) of the connector.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-config-connector-return-values-fn--getatt"></a>
 
@@ -71,7 +75,53 @@ Property description not available.
 The Amazon Resource Name (ARN) of the connector.
 
 `CreatedTime`  <a name="CreatedTime-fn::getatt"></a>
-The date and time that the connector was created.
+The creation time of the connector.
 
 `Name`  <a name="Name-fn::getatt"></a>
 The name of the connector.
+
+## Examples
+<a name="aws-resource-config-connector--examples"></a>
+
+### Azure Connector
+<a name="aws-resource-config-connector--examples--Azure_Connector"></a>
+
+The following example creates a connector to Microsoft Azure using tenant and client identifiers.
+
+#### JSON
+<a name="aws-resource-config-connector--examples--Azure_Connector--JSON"></a>
+
+```
+{
+    "Type": "AWS::Config::Connector",
+    "Properties": {
+        "ConnectorConfiguration": {
+            "Azure": {
+                "TenantIdentifier": "your-azure-tenant-id",
+                "ClientIdentifier": "your-azure-client-id"
+            }
+        },
+        "Tags": [
+            {
+                "Key": "Environment",
+                "Value": "Production"
+            }
+        ]
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-config-connector--examples--Azure_Connector--YAML"></a>
+
+```
+Type: AWS::Config::Connector
+Properties:
+  ConnectorConfiguration:
+    Azure:
+      TenantIdentifier: your-azure-tenant-id
+      ClientIdentifier: your-azure-client-id
+  Tags:
+    - Key: Environment
+      Value: Production
+```

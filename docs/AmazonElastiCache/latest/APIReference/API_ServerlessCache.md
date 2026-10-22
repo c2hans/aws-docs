@@ -69,6 +69,11 @@ The version number of the engine the serverless cache is compatible with.
 Type: String
 Required: No
 
+ ** Migration **
+Provides a summary of the migration status for the serverless cache.
+Type: [MigrationSummary](API_MigrationSummary.md) object
+Required: No
+
  ** NetworkType **
 The type of IP address protocol used by the serverless cache. Must be either `ipv4` \| `ipv6` \| `dual_stack`. `ipv6` is only supported with IPv6-only subnets. If not specified, defaults to `ipv4`, unless all provided subnets are IPv6-only, in which case it defaults to `ipv6`.
 Type: String

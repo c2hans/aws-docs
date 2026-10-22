@@ -97,6 +97,7 @@ Cluster versions in this patch:
 <a name="cluster-version-205"></a>
 
 Cluster versions in this patch:
++ 1.0.501809 – **CURRENT Track** Amazon Redshift provisioned cluster version and Amazon Redshift Serverless workgroup version – Released October 19, 2026
 + 1.0.477953 – **CURRENT Track** Amazon Redshift provisioned cluster version and Amazon Redshift Serverless workgroup version – Released October 6, 2026
 + 1.0.434008 – **CURRENT Track** Amazon Redshift provisioned cluster version and Amazon Redshift Serverless workgroup version – Released September 16, 2026
 
@@ -113,6 +114,7 @@ Cluster versions in this patch:
 + Amazon Redshift now supports a `DEBUG` permission on federated permissions catalog databases, letting a global identity, an IAM Identity Center (IdC) group, or a consumer account's administrators view unredacted secure logging records for fine-grained access control (FGAC)-protected data.
 + Amazon Redshift now supports scoped permissions with Metadata Security.
 + Iceberg tables can now be created with a NOT NULL column constraint.
++ Amazon Redshift now supports IANA Time Zone Database version 2026c.
 + Amazon CloudTrail audit events for Amazon Redshift-initiated API calls now include a `queryUuid` field for correlation with system tables.
 + Renamed the `user_query_uuid` column to `query_uuid` in system tables and views for consistency.
 + Improved query performance and availability on clusters with zero-ETL integrations under high query concurrency.

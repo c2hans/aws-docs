@@ -7,11 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway
 <a name="aws-resource-ecs-gateway"></a>
 
-Creates an Express service that simplifies deploying containerized web applications on Amazon ECS with managed AWS infrastructure. This operation provisions and configures Application Load Balancers, target groups, security groups, and auto-scaling policies automatically.
-
-Specify a primary container configuration with your application image and basic settings. Amazon ECS creates the necessary AWS resources for traffic distribution, health monitoring, network access control, and capacity management.
-
-Provide an execution role for task operations and an infrastructure role for managing AWS resources on your behalf.
+The details of a gateway, including its configuration, status, and the infrastructure settings for its type.
 
 ## Syntax
 <a name="aws-resource-ecs-gateway-syntax"></a>
@@ -55,19 +51,19 @@ Properties:
 <a name="aws-resource-ecs-gateway-properties"></a>
 
 `Configuration`  <a name="cfn-ecs-gateway-configuration"></a>
-Property description not available.
+The type-specific configuration for the gateway.
 *Required*: Yes
 *Type*: [GatewayConfiguration](aws-properties-ecs-gateway-gatewayconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DeletionProtection`  <a name="cfn-ecs-gateway-deletionprotection"></a>
-Property description not available.
+Specifies whether deletion protection is enabled for the gateway.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GatewayName`  <a name="cfn-ecs-gateway-gatewayname"></a>
-Property description not available.
+The name of the gateway.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9-]+$`
@@ -76,20 +72,20 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InfrastructureRoleArn`  <a name="cfn-ecs-gateway-infrastructurerolearn"></a>
-The ARN of the infrastructure role that manages AWS resources for the Express service.
+The Amazon Resource Name (ARN) of the IAM role that the gateway uses to manage infrastructure on your behalf.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PropagateTags`  <a name="cfn-ecs-gateway-propagatetags"></a>
-Property description not available.
+Specifies whether the gateway propagates its tags to the infrastructure it manages.
 *Required*: No
 *Type*: String
 *Allowed values*: `NONE | GATEWAY`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-ecs-gateway-tags"></a>
-The metadata applied to the Express service.
+The metadata applied to the gateway. Each tag consists of a key and an optional value.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-ecs-gateway-tag.md)
 *Minimum*: `0`
@@ -109,19 +105,19 @@ The metadata applied to the Express service.
 <a name="aws-resource-ecs-gateway-return-values-fn--getatt-fn--getatt"></a>
 
 `AccessType`  <a name="AccessType-fn::getatt"></a>
-Property description not available.
+Specifies whether the gateway is publicly accessible (`PUBLIC`) or private (`PRIVATE`). The gateway derives this value from its scheme when you create the gateway, and the value is immutable.
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the security group.
 
 `Configuration.HostSharedAlb.CurrentAlbCount`  <a name="Configuration.HostSharedAlb.CurrentAlbCount-fn::getatt"></a>
-Property description not available.
+The current number of Application Load Balancers that the gateway has allocated.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-The Unix timestamp for when the Express service was created.
+The Unix timestamp for the time when the gateway was created.
 
 `Status`  <a name="Status-fn::getatt"></a>
-The current status of the Express service.
+The status of the gateway.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The Unix timestamp for when the Express service was last updated.
+The Unix timestamp for the time when the gateway was last updated.

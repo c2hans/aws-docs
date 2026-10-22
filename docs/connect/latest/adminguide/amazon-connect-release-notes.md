@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026 Updates
 <a name="oct26-release-notes"></a>
 
+### Amazon Connect Customer launches two new layouts for the agent workspace
+<a name="oct26-agent-workspace-layouts"></a>
+
+Amazon Connect Customer now offers two different layouts that optimize screen space on the agent workspace. On the Modern layout, contact controls are at the top of the workspace, maximizing screen space for the applications beneath during voice calls. When agents handle chat, email, and task contacts on the Modern layout, they now have a taller, wider area to read and respond. The Classic layout offers a familiar experience for agents already using the agent workspace, now with contact controls that expand and contract by channel and a resizable agent assist application.
+
+For more information, see [Choose a layout](agent-workspace-layouts.md).
+
 ### Connect Customer Global Resiliency now provides visibility into resiliency readiness across linked AWS Regions
 <a name="oct26-global-resiliency-readiness"></a>
 

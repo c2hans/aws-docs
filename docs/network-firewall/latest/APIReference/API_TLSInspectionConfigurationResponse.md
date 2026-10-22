@@ -72,7 +72,7 @@ Required: No
  ** TLSInspectionConfigurationStatus **   <a name="networkfirewall-Type-TLSInspectionConfigurationResponse-TLSInspectionConfigurationStatus"></a>
 Detailed information about the current status of a [TLSInspectionConfiguration](API_TLSInspectionConfiguration.md). You can retrieve this for a TLS inspection configuration by calling [DescribeTLSInspectionConfiguration](API_DescribeTLSInspectionConfiguration.md) and providing the TLS inspection configuration name and ARN.
 Type: String
-Valid Values: `ACTIVE | DELETING | ERROR`
+Valid Values: `ACTIVE | DELETING | ERROR | UPDATING`
 Required: No
 
 ## See Also

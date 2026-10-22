@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/cloudsearch/index.html
 title: 'Amazon CloudSearch Documentation'
 canonical_url: https://docs.aws.amazon.com/cloudsearch/
 source: aws-documentation
-generated_on: 2026-10-20
+generated_on: 2026-10-21
 ---
 
 # Amazon CloudSearch Documentation

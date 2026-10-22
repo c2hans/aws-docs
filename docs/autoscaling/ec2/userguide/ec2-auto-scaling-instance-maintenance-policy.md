@@ -13,4 +13,4 @@ An instance maintenance policy also helps you minimize any potential disruptions
 
 **Topics**
 + [Instance maintenance policy for Auto Scaling group](instance-maintenance-policy-overview-and-considerations.md)
-+ [Set an instance maintenance policy on your Auto Scaling group](set-instance-maintenance-policy-on-group.md)
++ [Set an instance maintenance policy on your Auto Scaling groups](set-instance-maintenance-policy-on-group.md)

@@ -110,6 +110,27 @@ When the service scheduler stops running tasks, it attempts to maintain balance 
    "enableECSManagedTags": {{boolean}},
    "enableExecuteCommand": {{boolean}},
    "forceNewDeployment": {{boolean}},
+   "gatewayConnectors": [
+      {
+         "filters": {
+            "accessTypes": [ "{{string}}" ]
+         },
+         "healthCheck": {
+            "healthCheckIntervalSeconds": {{number}},
+            "healthCheckPath": "{{string}}",
+            "healthCheckPort": {{number}},
+            "healthCheckProtocol": "{{string}}",
+            "healthCheckTimeoutSeconds": {{number}},
+            "healthyThresholdCount": {{number}},
+            "matcher": {
+               "grpcCode": "{{string}}",
+               "httpCode": "{{string}}"
+            },
+            "unhealthyThresholdCount": {{number}}
+         },
+         "portName": "{{string}}"
+      }
+   ],
    "healthCheckGracePeriodSeconds": {{number}},
    "loadBalancers": [
       {
@@ -337,6 +358,12 @@ Required: No
  ** [forceNewDeployment](#API_UpdateService_RequestSyntax) **   <a name="ECS-UpdateService-request-forceNewDeployment"></a>
 Determines whether to force a new deployment of the service. By default, deployments aren't forced. You can use this option to start a new deployment with no service definition changes. For example, you can update a service's tasks to use a newer Docker image with the same image/tag combination (`my_image:latest`) or to roll Fargate tasks onto a newer platform version.
 Type: Boolean
+Required: No
+
+ ** [gatewayConnectors](#API_UpdateService_RequestSyntax) **   <a name="ECS-UpdateService-request-gatewayConnectors"></a>
+The updated set of gateway connectors that connect the service to a gateway ingress path. A service supports no more than one gateway connector.
+Type: Array of [GatewayConnector](API_GatewayConnector.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** [healthCheckGracePeriodSeconds](#API_UpdateService_RequestSyntax) **   <a name="ECS-UpdateService-request-healthCheckGracePeriodSeconds"></a>

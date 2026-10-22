@@ -41,8 +41,8 @@ Required: Yes
 
  ** status **   <a name="deadlinecloud-Type-BudgetSummary-status"></a>
 The status of the budget.
-+  `ACTIVE`–The budget is being evaluated.
-+  `INACTIVE`–The budget is inactive. This can include Expired, Canceled, or deleted Deleted statuses.
++  `ACTIVE` - The budget is being evaluated.
++  `INACTIVE` - The budget is inactive. This can include Expired, Canceled, or deleted Deleted statuses.
 Type: String
 Valid Values: `ACTIVE | INACTIVE`
 Required: Yes

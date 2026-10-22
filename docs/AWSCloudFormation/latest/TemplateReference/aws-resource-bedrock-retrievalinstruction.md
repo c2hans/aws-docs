@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Bedrock::RetrievalInstruction
 <a name="aws-resource-bedrock-retrievalinstruction"></a>
 
-<a name="aws-resource-bedrock-retrievalinstruction-description"></a>The `AWS::Bedrock::RetrievalInstruction` resource Property description not available. for Bedrock.
+Creates a new retrieval instruction. The retrieval instruction is usable once its status becomes ACTIVE. Use GetRetrievalInstruction to check whether it is ready.
 
 ## Syntax
 <a name="aws-resource-bedrock-retrievalinstruction-syntax"></a>
@@ -58,7 +58,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Description`  <a name="cfn-bedrock-retrievalinstruction-description"></a>
-Property description not available.
+A description of the retrieval instruction.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -72,7 +72,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-bedrock-retrievalinstruction-name"></a>
-Property description not available.
+The name of the retrieval instruction.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^([0-9a-zA-Z][_-]?){1,100}$`
@@ -102,16 +102,16 @@ Property description not available.
 Property description not available.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+When you created the retrieval instruction.
 
 `LastTransitionStatus`  <a name="LastTransitionStatus-fn::getatt"></a>
-Property description not available.
+The outcome or in-progress state of the most recent create or update of the retrieval instruction.
 
 `RetrievalInstructionId`  <a name="RetrievalInstructionId-fn::getatt"></a>
-Property description not available.
+The identifier of the retrieval instruction.
 
 `Status`  <a name="Status-fn::getatt"></a>
-Property description not available.
+Whether the instruction can be used. Only ACTIVE is resolvable at retrieval time.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-Property description not available.
+When the retrieval instruction was last updated.

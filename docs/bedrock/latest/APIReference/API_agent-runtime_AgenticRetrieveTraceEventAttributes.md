@@ -32,6 +32,11 @@ The list of actions taken during this step.
 Type: Array of [AgenticRetrieveAction](API_agent-runtime_AgenticRetrieveAction.md) objects
 Required: No
 
+ ** appliedInstruction **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveTraceEventAttributes-appliedInstruction"></a>
+The agent reports the retrieval instruction applied to this request on the first planning step.
+Type: [AgenticRetrieveAppliedInstruction](API_agent-runtime_AgenticRetrieveAppliedInstruction.md) object
+Required: No
+
  ** failures **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveTraceEventAttributes-failures"></a>
 Failures that occurred during this step.
 Type: Array of [AgenticRetrieveFailure](API_agent-runtime_AgenticRetrieveFailure.md) objects

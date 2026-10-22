@@ -89,13 +89,15 @@ Required: No
       {
          "AnomalyDetectorId": "string",
          "Configuration": {
+            "AdaptationSpeed": "string",
             "ExcludedTimeRanges": [
                {
                   "EndTime": number,
                   "StartTime": number
                }
             ],
-            "MetricTimezone": "string"
+            "MetricTimezone": "string",
+            "OutlierFilteringStrength": "string"
          },
          "Dimensions": [
             {

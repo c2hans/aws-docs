@@ -589,6 +589,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AppRunnerNetworkingServiceRolePolicy](AppRunnerNetworkingServiceRolePolicy.md)
 + [AppRunnerServiceRolePolicy](AppRunnerServiceRolePolicy.md)
 + [AppStudioServiceRolePolicy](AppStudioServiceRolePolicy.md)
++ [AssuranceOperatorPolicy](AssuranceOperatorPolicy.md)
 + [AssuranceServiceRolePolicy](AssuranceServiceRolePolicy.md)
 + [AuroraDsqlServiceLinkedRolePolicy](AuroraDsqlServiceLinkedRolePolicy.md)
 + [AutoScalingConsoleFullAccess](AutoScalingConsoleFullAccess.md)

@@ -141,6 +141,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   DescribeAccountSettings  **
+  - **IAM action:**  [autoscaling:DescribeAccountSettings](#list_autoscaling-action-DescribeAccountSettings)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   DescribeAdjustmentTypes  **
   - **IAM action:**  [autoscaling:DescribeAdjustmentTypes](#list_autoscaling-action-DescribeAdjustmentTypes)
   - **Condition key:**
@@ -323,6 +329,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   LaunchInstances  **
   - **IAM action:**  [autoscaling:LaunchInstances](#list_autoscaling-action-LaunchInstances)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   PutAccountSetting  **
+  - **IAM action:**  [autoscaling:PutAccountSetting](#list_autoscaling-action-PutAccountSetting)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

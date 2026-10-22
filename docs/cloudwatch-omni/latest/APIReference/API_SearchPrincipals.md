@@ -19,13 +19,13 @@ Pattern: `d-[0-9a-z]{1,25}`
 Required: Yes
 
  ** maxResults **
-The maximum number of results to return. Defaults to 10. Valid only when searchQuery is \*; other searches reject this parameter and return at most 10 results.
+The maximum number of results to return. Defaults to 100.
 Type: Integer
-Valid Range: Minimum value of 1. Maximum value of 50.
+Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
  ** nextToken **
-A token to retrieve the next page of results. Valid only when searchQuery is \*; other searches do not paginate and reject this parameter. Tokens expire after 24 hours.
+A token to retrieve the next page of results. Supply the same searchQuery used on the request that returned it. Tokens expire after 24 hours.
 Type: String
 Required: No
 
@@ -91,7 +91,7 @@ HTTP Status Code: 400
 ### Search principals by name
 <a name="API_SearchPrincipals_Example_1"></a>
 
-The following example searches a domain for principals whose name matches a text query. A text search (any searchQuery other than \*) returns at most 10 results and does not paginate, so maxResults and nextToken are not supplied and no nextToken is returned. To grant access to a result, pass its principalId to CreateAccessGrant with a principalType of IDC\_USER for a user or IDC\_GROUP for a group. Payloads are shown as JSON; on the wire they are CBOR-encoded.
+The following example searches a domain for principals whose name matches a text query. No nextToken is returned, so there are no more results. To grant access to a result, pass its principalId to CreateAccessGrant with a principalType of IDC\_USER for a user or IDC\_GROUP for a group. Payloads are shown as JSON; on the wire they are CBOR-encoded.
 
 #### Sample Request
 <a name="API_SearchPrincipals_Example_1_Request"></a>

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-instance-maintenance-policy-on-group.html
 ---
 
-# Set an instance maintenance policy on your Auto Scaling group
+# Set an instance maintenance policy on your Auto Scaling groups
 <a name="set-instance-maintenance-policy-on-group"></a>
 
 You can create an instance maintenance policy when you create an Auto Scaling group. You can also create it for existing groups.
@@ -14,3 +14,4 @@ In the console, Amazon EC2 Auto Scaling provides options to help you get started
 **Topics**
 + [Set an instance maintenance policy](set-instance-maintenance-policy.md)
 + [Remove an instance maintenance policy](remove-instance-maintenance-policy.md)
++ [Launch replacement instances before terminating old ones](ec2-auto-scaling-launch-before-terminate-account-setting.md)

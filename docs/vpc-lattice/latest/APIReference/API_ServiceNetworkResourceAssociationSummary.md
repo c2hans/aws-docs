@@ -57,7 +57,7 @@ Type: Boolean
 Required: No
 
  ** privateDnsEntry **   <a name="vpclattice-Type-ServiceNetworkResourceAssociationSummary-privateDnsEntry"></a>
-The private DNS entry for the service.
+The private DNS entry for the service. This entry includes only the domain name.
 Type: [DnsEntry](API_DnsEntry.md) object
 Required: No
 

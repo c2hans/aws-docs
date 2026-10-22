@@ -18,6 +18,11 @@ The Amazon Resource Name (ARN) of the resource.
 Type: [ArnResource](API_ArnResource.md) object
 Required: No
 
+ ** cidrResource **   <a name="vpclattice-Type-ResourceConfigurationDefinition-cidrResource"></a>
+The network segment for a resource configuration of type CIDR, specified as one or more CIDR ranges (`cidrRanges`). Resources whose IP addresses fall within these ranges are reachable through a `Tunnel` VPC endpoint.
+Type: [CidrResource](API_CidrResource.md) object
+Required: No
+
  ** dnsResource **   <a name="vpclattice-Type-ResourceConfigurationDefinition-dnsResource"></a>
 The DNS name of the resource.
 Type: [DnsResource](API_DnsResource.md) object

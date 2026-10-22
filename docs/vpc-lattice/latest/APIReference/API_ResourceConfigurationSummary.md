@@ -91,8 +91,9 @@ The type of resource configuration.
 +  `GROUP` - A group of resources. You must create a group resource configuration before you create a child resource configuration.
 +  `CHILD` - A single resource that is part of a group resource configuration.
 +  `ARN` - An AWS resource.
++  `CIDR` - A network segment (a range of IP addresses) accessed through a `Tunnel` VPC endpoint.
 Type: String
-Valid Values: `GROUP | CHILD | SINGLE | ARN`
+Valid Values: `GROUP | CHILD | SINGLE | ARN | CIDR`
 Required: No
 
 ## See Also

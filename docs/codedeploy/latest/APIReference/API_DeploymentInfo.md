@@ -107,6 +107,11 @@ A comment about the deployment.
 Type: String
 Required: No
 
+ ** ec2DeploymentOptions **   <a name="CodeDeploy-Type-DeploymentInfo-ec2DeploymentOptions"></a>
+Options that control how AWS CodeDeploy manages Amazon EC2 resources during the deployment.
+Type: [EC2DeploymentOptions](API_EC2DeploymentOptions.md) object
+Required: No
+
  ** errorInformation **   <a name="CodeDeploy-Type-DeploymentInfo-errorInformation"></a>
 Information about any error associated with this deployment.
 Type: [ErrorInformation](API_ErrorInformation.md) object

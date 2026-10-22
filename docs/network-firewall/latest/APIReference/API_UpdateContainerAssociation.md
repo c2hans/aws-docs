@@ -198,6 +198,10 @@ HTTP Status Code: 400
 The token you provided is stale or isn't valid for the operation.
 HTTP Status Code: 400
 
+ ** LimitExceededException **
+Unable to perform the operation because doing so would violate a limit setting.
+HTTP Status Code: 400
+
  ** ResourceNotFoundException **
 Unable to locate a resource using the parameters that you provided.
 HTTP Status Code: 400

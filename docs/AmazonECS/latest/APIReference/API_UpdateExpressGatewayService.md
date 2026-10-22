@@ -17,7 +17,6 @@ Some parameters like the infrastructure role cannot be modified after service cr
 ```
 {
    "cpu": "{{string}}",
-   "cpuArchitecture": "{{string}}",
    "executionRoleArn": "{{string}}",
    "healthCheckPath": "{{string}}",
    "memory": "{{string}}",
@@ -71,17 +70,6 @@ The request accepts the following data in JSON format.
  ** [cpu](#API_UpdateExpressGatewayService_RequestSyntax) **   <a name="ECS-UpdateExpressGatewayService-request-cpu"></a>
 The number of CPU units used by the task.
 Type: String
-Required: No
-
- ** [cpuArchitecture](#API_UpdateExpressGatewayService_RequestSyntax) **   <a name="ECS-UpdateExpressGatewayService-request-cpuArchitecture"></a>
-The CPU architecture that the task runs on. If you don't specify a value, the service keeps its current architecture.
-Valid values:
-+  `X86_64` - The x86 64-bit architecture.
-+  `ARM64` - The 64-bit ARM architecture.
-Changing the architecture starts a new deployment that replaces the running tasks. Ensure that the container image you specify supports the architecture you choose. The operating system family for an Express service is always `LINUX`.
-You can't specify `cpuArchitecture` together with `taskDefinitionArn`.
-Type: String
-Valid Values: `X86_64 | ARM64`
 Required: No
 
  ** [executionRoleArn](#API_UpdateExpressGatewayService_RequestSyntax) **   <a name="ECS-UpdateExpressGatewayService-request-executionRoleArn"></a>
@@ -147,7 +135,6 @@ Required: No
       },
       "targetConfiguration": {
          "cpu": "string",
-         "cpuArchitecture": "string",
          "createdAt": number,
          "executionRoleArn": "string",
          "healthCheckPath": "string",

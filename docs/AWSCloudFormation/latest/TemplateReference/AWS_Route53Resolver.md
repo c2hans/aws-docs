@@ -8,6 +8,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Route53Resolver"></a>
 
 **Resource types**
++ [AWS::Route53Resolver::FirewallConfig](aws-resource-route53resolver-firewallconfig.md)
 + [AWS::Route53Resolver::FirewallDomainList](aws-resource-route53resolver-firewalldomainlist.md)
 + [AWS::Route53Resolver::FirewallRuleGroup](aws-resource-route53resolver-firewallrulegroup.md)
 + [AWS::Route53Resolver::FirewallRuleGroupAssociation](aws-resource-route53resolver-firewallrulegroupassociation.md)

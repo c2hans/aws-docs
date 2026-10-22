@@ -27,7 +27,6 @@ Amazon Q Developer for GitHub (Preview) does not currently use your content for 
 + [Installing Amazon Q Developer app and authorizing access](#github-concepts-set-up)
 + [Amazon Q Developer agents](#github-agents)
 + [Registering app installation](#github-concepts-register-app-install)
-+ [Using browser extensions in GitHub](#github-concepts-extensions)
 + [Using slash commands in GitHub issues and pull requests](#github-slash-commands)
 + [Quickstart: Installing, using features in GitHub, and increasing usage limits](github-quickstart.md)
 + [Developing features and iterating with Amazon Q Developer in GitHub](github-feature-development.md)
@@ -73,16 +72,6 @@ The Amazon Q Developer integration for GitHub is available for free without the 
 
 **Important**
 To register the app installation in the Amazon Q Developer console, you must meet the requirements for the GitHub organization. For more information, see [Requirements to install a GitHub App](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/installing-a-github-app-from-a-third-party#requirements-to-install-a-github-app) and [OAuth apps and organizations](https://docs.github.com/en/apps/oauth-apps/using-oauth-apps/authorizing-oauth-apps#oauth-apps-and-organizations) in the *GitHub documentation*.
-
-## Using browser extensions in GitHub
-<a name="github-concepts-extensions"></a>
-
-You can use the Amazon Q Developer extension in a supported browser to quickly add a label for feature development in GitHub issues without having to search through label menus.
-
-The Amazon Q Developer extension is available for the following browsers:
-+ [Google Chrome](https://chromewebstore.google.com/detail/amazon-q-github-issue-hel/oefafjbablenakmhacfllkmpaeabnnfi)
-+ [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/amazon-q-github-issue-helper)
-+ [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/amazon-q-github-issue-helper/poghackjbfhejeppjaegbnblangjbmmc)
 
 ## Using slash commands in GitHub issues and pull requests
 <a name="github-slash-commands"></a>

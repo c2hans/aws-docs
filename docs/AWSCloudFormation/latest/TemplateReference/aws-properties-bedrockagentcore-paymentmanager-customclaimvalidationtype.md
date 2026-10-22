@@ -19,7 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue)" : {{AuthorizingClaimMatchValueType}},
+  "[AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue)" : {{AuthorizingClaimMatchValue}},
   "[InboundTokenClaimName](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname)" : {{String}},
   "[InboundTokenClaimValueType](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimvaluetype)" : {{String}}
 }
@@ -30,7 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [AuthorizingClaimMatchValue](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue): {{
-    AuthorizingClaimMatchValueType}}
+    AuthorizingClaimMatchValue}}
   [InboundTokenClaimName](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname): {{String}}
   [InboundTokenClaimValueType](#cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimvaluetype): {{String}}
 ```
@@ -41,14 +41,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 `AuthorizingClaimMatchValue`  <a name="cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-authorizingclaimmatchvalue"></a>
 The value or values to match against the claim.
 *Required*: Yes
-*Type*: [AuthorizingClaimMatchValueType](aws-properties-bedrockagentcore-paymentmanager-authorizingclaimmatchvaluetype.md)
+*Type*: [AuthorizingClaimMatchValue](aws-properties-bedrockagentcore-paymentmanager-authorizingclaimmatchvalue.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InboundTokenClaimName`  <a name="cfn-bedrockagentcore-paymentmanager-customclaimvalidationtype-inboundtokenclaimname"></a>
 The name of the claim in the inbound JWT token to validate.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[A-Za-z0-9_.:/-]+$`
+*Pattern*: `^[A-Za-z0-9_.-:]+$`
 *Minimum*: `1`
 *Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

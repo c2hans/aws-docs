@@ -47,7 +47,7 @@ A regional grouping of one or more container instances where you can run task re
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Gateway`  <a name="cfn-ecs-gatewayclusterassociations-gateway"></a>
-Property description not available.
+The details of a gateway, including its configuration, status, and the infrastructure settings for its type.
 *Required*: Yes
 *Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

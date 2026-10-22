@@ -125,7 +125,7 @@ Type: Timestamp
 Type: Boolean
 
  ** [privateDnsEntry](#API_GetServiceNetworkResourceAssociation_ResponseSyntax) **   <a name="vpclattice-GetServiceNetworkResourceAssociation-response-privateDnsEntry"></a>
-The private DNS entry for the service.
+The private DNS entry for the service. This entry includes only the domain name.
 Type: [DnsEntry](API_DnsEntry.md) object
 
  ** [resourceConfigurationArn](#API_GetServiceNetworkResourceAssociation_ResponseSyntax) **   <a name="vpclattice-GetServiceNetworkResourceAssociation-response-resourceConfigurationArn"></a>

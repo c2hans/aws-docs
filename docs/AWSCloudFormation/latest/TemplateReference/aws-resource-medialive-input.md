@@ -23,19 +23,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::MediaLive::Input",
   "Properties" : {
-      "[Destinations](#cfn-medialive-input-destinations)" : {{[ InputDestinationRequest, ... ]}},
+      "[Destinations](#cfn-medialive-input-destinations)" : {{[ InputDestination, ... ]}},
       "[InputDevices](#cfn-medialive-input-inputdevices)" : {{[ InputDeviceSettings, ... ]}},
       "[InputNetworkLocation](#cfn-medialive-input-inputnetworklocation)" : {{String}},
       "[InputSecurityGroups](#cfn-medialive-input-inputsecuritygroups)" : {{[ String, ... ]}},
-      "[MediaConnectFlows](#cfn-medialive-input-mediaconnectflows)" : {{[ MediaConnectFlowRequest, ... ]}},
-      "[MulticastSettings](#cfn-medialive-input-multicastsettings)" : {{MulticastSettingsCreateRequest}},
+      "[MediaConnectFlows](#cfn-medialive-input-mediaconnectflows)" : {{[ MediaConnectFlow, ... ]}},
+      "[MulticastSettings](#cfn-medialive-input-multicastsettings)" : {{MulticastSettings}},
       "[Name](#cfn-medialive-input-name)" : {{String}},
       "[RoleArn](#cfn-medialive-input-rolearn)" : {{String}},
       "[RouterSettings](#cfn-medialive-input-routersettings)" : {{RouterSettings}},
       "[SdiSources](#cfn-medialive-input-sdisources)" : {{[ String, ... ]}},
       "[Smpte2110ReceiverGroupSettings](#cfn-medialive-input-smpte2110receivergroupsettings)" : {{Smpte2110ReceiverGroupSettings}},
-      "[Sources](#cfn-medialive-input-sources)" : {{[ InputSourceRequest, ... ]}},
-      "[SrtSettings](#cfn-medialive-input-srtsettings)" : {{SrtSettingsRequest}},
+      "[Sources](#cfn-medialive-input-sources)" : {{[ InputSource, ... ]}},
+      "[SrtSettings](#cfn-medialive-input-srtsettings)" : {{SrtSettings}},
       "[Tags](#cfn-medialive-input-tags)" : {{{{{Key}}: {{Value}}, ...}}},
       "[Type](#cfn-medialive-input-type)" : {{String}},
       "[Vpc](#cfn-medialive-input-vpc)" : {{InputVpcRequest}}
@@ -50,16 +50,16 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::MediaLive::Input
 Properties:
   [Destinations](#cfn-medialive-input-destinations): {{
-    - InputDestinationRequest}}
+    - InputDestination}}
   [InputDevices](#cfn-medialive-input-inputdevices): {{
     - InputDeviceSettings}}
   [InputNetworkLocation](#cfn-medialive-input-inputnetworklocation): {{String}}
   [InputSecurityGroups](#cfn-medialive-input-inputsecuritygroups): {{
     - String}}
   [MediaConnectFlows](#cfn-medialive-input-mediaconnectflows): {{
-    - MediaConnectFlowRequest}}
+    - MediaConnectFlow}}
   [MulticastSettings](#cfn-medialive-input-multicastsettings): {{
-    MulticastSettingsCreateRequest}}
+    MulticastSettings}}
   [Name](#cfn-medialive-input-name): {{String}}
   [RoleArn](#cfn-medialive-input-rolearn): {{String}}
   [RouterSettings](#cfn-medialive-input-routersettings): {{
@@ -69,9 +69,9 @@ Properties:
   [Smpte2110ReceiverGroupSettings](#cfn-medialive-input-smpte2110receivergroupsettings): {{
     Smpte2110ReceiverGroupSettings}}
   [Sources](#cfn-medialive-input-sources): {{
-    - InputSourceRequest}}
+    - InputSource}}
   [SrtSettings](#cfn-medialive-input-srtsettings): {{
-    SrtSettingsRequest}}
+    SrtSettings}}
   [Tags](#cfn-medialive-input-tags): {{
     {{Key}}: {{Value}}}}
   [Type](#cfn-medialive-input-type): {{String}}
@@ -85,7 +85,7 @@ Properties:
 `Destinations`  <a name="cfn-medialive-input-destinations"></a>
 Settings that apply only if the input is a push type of input.
 *Required*: No
-*Type*: Array of [InputDestinationRequest](aws-properties-medialive-input-inputdestinationrequest.md)
+*Type*: Array of [InputDestination](aws-properties-medialive-input-inputdestination.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `InputDevices`  <a name="cfn-medialive-input-inputdevices"></a>
@@ -98,6 +98,7 @@ Settings that apply only if the input is an Elemental Link input.
 The location of this input. AWS, for an input existing in the AWS Cloud, On-Prem for an input in a customer network.
 *Required*: No
 *Type*: String
+*Allowed values*: `AWS | ON_PREMISES`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `InputSecurityGroups`  <a name="cfn-medialive-input-inputsecuritygroups"></a>
@@ -109,13 +110,13 @@ The list of input security groups (referenced by IDs) to attach to the input if 
 `MediaConnectFlows`  <a name="cfn-medialive-input-mediaconnectflows"></a>
 Settings that apply only if the input is a MediaConnect input.
 *Required*: No
-*Type*: Array of [MediaConnectFlowRequest](aws-properties-medialive-input-mediaconnectflowrequest.md)
+*Type*: Array of [MediaConnectFlow](aws-properties-medialive-input-mediaconnectflow.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MulticastSettings`  <a name="cfn-medialive-input-multicastsettings"></a>
 Multicast input settings.
 *Required*: No
-*Type*: [MulticastSettingsCreateRequest](aws-properties-medialive-input-multicastsettingscreaterequest.md)
+*Type*: [MulticastSettings](aws-properties-medialive-input-multicastsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-medialive-input-name"></a>
@@ -151,13 +152,13 @@ Include this parameter if the input is a SMPTE 2110 input, to identify the strea
 `Sources`  <a name="cfn-medialive-input-sources"></a>
 Settings that apply only if the input is a pull type of input.
 *Required*: No
-*Type*: Array of [InputSourceRequest](aws-properties-medialive-input-inputsourcerequest.md)
+*Type*: Array of [InputSource](aws-properties-medialive-input-inputsource.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SrtSettings`  <a name="cfn-medialive-input-srtsettings"></a>
 The settings associated with an SRT input.
 *Required*: No
-*Type*: [SrtSettingsRequest](aws-properties-medialive-input-srtsettingsrequest.md)
+*Type*: [SrtSettings](aws-properties-medialive-input-srtsettings.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-medialive-input-tags"></a>
@@ -171,6 +172,7 @@ A collection of tags for this input. Each tag is a key-value pair.
 The type for this input.
 *Required*: No
 *Type*: String
+*Allowed values*: `UDP_PUSH | RTP_PUSH | RTMP_PUSH | RTMP_PULL | URL_PULL | MP4_FILE | MEDIACONNECT | INPUT_DEVICE | AWS_CDI | TS_FILE | SRT_CALLER | MULTICAST | SMPTE_2110_RECEIVER_GROUP | SDI | MEDIACONNECT_ROUTER | SRT_LISTENER`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Vpc`  <a name="cfn-medialive-input-vpc"></a>
@@ -204,14 +206,38 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 `Arn`  <a name="Arn-fn::getatt"></a>
 The ARN of the MediaLive input. For example: arn:aws:medialive:us-west-1:111122223333:medialive:input:1234567. MediaLive creates this ARN when it creates the input.
 
+`AttachedChannels`  <a name="AttachedChannels-fn::getatt"></a>
+A list of channel IDs that that input is attached to (currently an input can only be attached to one channel).
+
 `Destinations`  <a name="Destinations-fn::getatt"></a>
 For a push input, the the destination or destinations for the input. The destinations are the URLs of locations on MediaLive where the upstream system pushes the content to, for this input. MediaLive creates these addresses when it creates the input.
+
+`DestinationUrls`  <a name="DestinationUrls-fn::getatt"></a>
+Property description not available.
 
 `Id`  <a name="Id-fn::getatt"></a>
 The unique ID for the device.
 
+`InputClass`  <a name="InputClass-fn::getatt"></a>
+STANDARD - MediaLive expects two sources to be connected to this input. If the channel is also STANDARD, both sources will be ingested. If the channel is SINGLE\_PIPELINE, only the first source will be ingested; the second source will always be ignored, even if the first source fails. SINGLE\_PIPELINE - You can connect only one source to this input. If the ChannelClass is also SINGLE\_PIPELINE, this value is valid. If the ChannelClass is STANDARD, this value is not valid because the channel requires two sources in the input.
+
+`InputPartnerIds`  <a name="InputPartnerIds-fn::getatt"></a>
+A list of IDs for all Inputs which are partners of this one.
+
+`InputSourceType`  <a name="InputSourceType-fn::getatt"></a>
+Certain pull input sources can be dynamic, meaning that they can have their URL's dynamically changes during input switch actions. Presently, this functionality only works with MP4\_FILE and TS\_FILE inputs.
+
+`SecurityGroups`  <a name="SecurityGroups-fn::getatt"></a>
+A list of IDs for all the Input Security Groups attached to the input.
+
 `Sources`  <a name="Sources-fn::getatt"></a>
 For a pull input, the source or sources for the input. The sources are the URLs of locations on the upstream system where MediaLive pulls the content from, for this input. You included these URLs in the create request.
+
+`SourceUrls`  <a name="SourceUrls-fn::getatt"></a>
+Property description not available.
+
+`State`  <a name="State-fn::getatt"></a>
+Property description not available.
 
 ## Examples
 <a name="aws-resource-medialive-input--examples"></a>

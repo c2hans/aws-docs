@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [filterServiceType](#API_ListServices_RequestSyntax) **   <a name="devopsagent-ListServices-request-uri-filterServiceType"></a>
 Optional filter to list only services of a specific type.
-Valid Values: `github | slack | azure | azuredevops | dynatrace | servicenow | pagerduty | gitlab | eventChannel | mcpservernewrelic | mcpservergrafana | mcpserverdatadog | mcpserver | mcpserversplunk | azureidentity | mcpserversigv4 | remoteagent | remoteagentsigv4`
+Valid Values: `github | slack | azure | azuredevops | msteams | dynatrace | servicenow | pagerduty | gitlab | eventChannel | mcpservernewrelic | mcpservergrafana | mcpserverdatadog | mcpserver | mcpserversplunk | azureidentity | mcpserversigv4 | remoteagent | remoteagentsigv4`
 
  ** [maxResults](#API_ListServices_RequestSyntax) **   <a name="devopsagent-ListServices-request-uri-maxResults"></a>
 Maximum number of results to return in a single call.

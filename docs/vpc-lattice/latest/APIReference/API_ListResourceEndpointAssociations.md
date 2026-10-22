@@ -67,6 +67,12 @@ Content-type: application/json
          "createdAt": "string",
          "createdBy": "string",
          "id": "string",
+         "payerResponsibility": [
+            {
+               "payerResponsibilityType": "string",
+               "scope": "string"
+            }
+         ],
          "resourceConfigurationArn": "string",
          "resourceConfigurationId": "string",
          "resourceConfigurationName": "string",

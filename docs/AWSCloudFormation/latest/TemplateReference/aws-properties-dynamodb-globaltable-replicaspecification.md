@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[ContributorInsightsSpecification](#cfn-dynamodb-globaltable-replicaspecification-contributorinsightsspecification)" : {{ContributorInsightsSpecification}},
   "[DeletionProtectionEnabled](#cfn-dynamodb-globaltable-replicaspecification-deletionprotectionenabled)" : {{Boolean}},
+  "[DisassociationProtectionEnabled](#cfn-dynamodb-globaltable-replicaspecification-disassociationprotectionenabled)" : {{Boolean}},
   "[GlobalSecondaryIndexes](#cfn-dynamodb-globaltable-replicaspecification-globalsecondaryindexes)" : {{[ ReplicaGlobalSecondaryIndexSpecification, ... ]}},
   "[GlobalTableSettingsReplicationMode](#cfn-dynamodb-globaltable-replicaspecification-globaltablesettingsreplicationmode)" : {{String}},
   "[KinesisStreamSpecification](#cfn-dynamodb-globaltable-replicaspecification-kinesisstreamspecification)" : {{KinesisStreamSpecification}},
@@ -43,6 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ContributorInsightsSpecification](#cfn-dynamodb-globaltable-replicaspecification-contributorinsightsspecification): {{
     ContributorInsightsSpecification}}
   [DeletionProtectionEnabled](#cfn-dynamodb-globaltable-replicaspecification-deletionprotectionenabled): {{Boolean}}
+  [DisassociationProtectionEnabled](#cfn-dynamodb-globaltable-replicaspecification-disassociationprotectionenabled): {{Boolean}}
   [GlobalSecondaryIndexes](#cfn-dynamodb-globaltable-replicaspecification-globalsecondaryindexes): {{
     - ReplicaGlobalSecondaryIndexSpecification}}
   [GlobalTableSettingsReplicationMode](#cfn-dynamodb-globaltable-replicaspecification-globaltablesettingsreplicationmode): {{String}}
@@ -77,6 +79,13 @@ The settings used to enable or disable CloudWatch Contributor Insights for the s
 
 `DeletionProtectionEnabled`  <a name="cfn-dynamodb-globaltable-replicaspecification-deletionprotectionenabled"></a>
 Determines if a replica is protected from deletion. When enabled, the table cannot be deleted by any user or process. This setting is disabled by default. For more information, see [Using deletion protection](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.DeletionProtection) in the *Amazon DynamoDBDeveloper Guide*.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DisassociationProtectionEnabled`  <a name="cfn-dynamodb-globaltable-replicaspecification-disassociationprotectionenabled"></a>
+Protects a global table replica from disassociation. Enabled by default and independent of `DeletionProtectionEnabled`. You manage this setting independently for each replica.
+Set this property to `false` in a separate stack update before you set `TableType` to `Regional`. Remove this property in the disassociation update. The setting applies only while the table is a replica, so a value left in the template is reported as drift after disassociation. In other updates, omitting this property leaves the existing protection setting unchanged. For more information, see the [TableType](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-dynamodb-globaltable.html#cfn-dynamodb-globaltable-tabletype) property.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -75,7 +75,6 @@ Required: No
 The ID or ARN of the service network. You must use an ARN if the resources are in different accounts.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 2048.
-Pattern: `((sn-[0-9a-z]{17})|(arn:[a-z0-9\-]+:vpc-lattice:[a-zA-Z0-9\-]+:\d{12}:servicenetwork/sn-[0-9a-z]{17}))`
 Required: Yes
 
  ** [tags](#API_CreateServiceNetworkVpcAssociation_RequestSyntax) **   <a name="vpclattice-CreateServiceNetworkVpcAssociation-request-tags"></a>

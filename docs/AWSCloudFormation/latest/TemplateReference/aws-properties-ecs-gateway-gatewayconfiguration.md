@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Gateway GatewayConfiguration
 <a name="aws-properties-ecs-gateway-gatewayconfiguration"></a>
 
-<a name="aws-properties-ecs-gateway-gatewayconfiguration-description"></a>The `GatewayConfiguration` property type specifies Property description not available. for an [AWS::ECS::Gateway](aws-resource-ecs-gateway.md).
+The type-specific configuration for a gateway that you provide when you create it. Exactly one variant is set, and it determines the gateway type.
 
 ## Syntax
 <a name="aws-properties-ecs-gateway-gatewayconfiguration-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-gateway-gatewayconfiguration-properties"></a>
 
 `HostSharedAlb`  <a name="cfn-ecs-gateway-gatewayconfiguration-hostsharedalb"></a>
-Property description not available.
+The configuration for a host-based, shared Application Load Balancer gateway. Each service that uses the gateway is assigned a unique DNS host name.
 *Required*: Yes
 *Type*: [HostSharedAlbConfiguration](aws-properties-ecs-gateway-hostsharedalbconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

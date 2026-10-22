@@ -46,6 +46,9 @@ Creates a deployment group to which application revisions are deployed.
       "deploymentOption": "{{string}}",
       "deploymentType": "{{string}}"
    },
+   "ec2DeploymentOptions": {
+      "autoScalingGroupProcessesToSuspend": [ "{{string}}" ]
+   },
    "ec2TagFilters": [
       {
          "Key": "{{string}}",
@@ -189,6 +192,11 @@ Information about the type of deployment, in-place or blue/green, that you want 
 Type: [DeploymentStyle](API_DeploymentStyle.md) object
 Required: No
 
+ ** [ec2DeploymentOptions](#API_CreateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-CreateDeploymentGroup-request-ec2DeploymentOptions"></a>
+Options that control how AWS CodeDeploy manages Amazon EC2 resources during deployments to the deployment group. You can override these options for an individual deployment when you call `CreateDeployment`.
+Type: [EC2DeploymentOptions](API_EC2DeploymentOptions.md) object
+Required: No
+
  ** [ec2TagFilters](#API_CreateDeploymentGroup_RequestSyntax) **   <a name="CodeDeploy-CreateDeploymentGroup-request-ec2TagFilters"></a>
 The Amazon EC2 tags on which to filter. The deployment group includes Amazon EC2 instances with any of the specified tags. Cannot be used in the same call as ec2TagSet.
 Type: Array of [EC2TagFilter](API_EC2TagFilter.md) objects
@@ -326,6 +334,10 @@ HTTP Status Code: 400
 
  ** InvalidAutoScalingGroupException **
 The Auto Scaling group was specified in an invalid format or does not exist.
+HTTP Status Code: 400
+
+ ** InvalidAutoScalingGroupProcessToSuspendException **
+The `autoScalingGroupProcessesToSuspend` list in `ec2DeploymentOptions` contains a process that is not valid, or the deployment group isn't an in-place deployment group with at least one Auto Scaling group. Valid values are `Terminate`, `AZRebalance`, `InstanceRefresh`, and `ScheduledActions`. Process names are case sensitive.
 HTTP Status Code: 400
 
  ** InvalidBlueGreenDeploymentConfigurationException **

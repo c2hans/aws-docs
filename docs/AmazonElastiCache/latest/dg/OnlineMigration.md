@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/OnlineMigrat
 This refers to migration from a self-hosted instance to the ElastiCache service. For information on upgrading from Redis OSS to Valkey on ElastiCache see [Upgrading engine versions including cross engine upgrades](VersionManagement.HowTo.md).
 
 **Note**
-Online migration is not supported to ElastiCache serverless caches or clusters running on the r6gd node type.
+To migrate to an ElastiCache Serverless cache, see [Online migration to ElastiCache Serverless](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to-serverless.html). The migration described on this page targets node-based clusters. It does not support serverless caches or clusters running on the r6gd node type.
 
 ## Overview
 <a name="Migration-Overview"></a>

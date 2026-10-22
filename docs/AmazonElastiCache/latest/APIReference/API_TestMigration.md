@@ -36,6 +36,16 @@ Type: [ReplicationGroup](API_ReplicationGroup.md) object
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** InvalidCacheClusterState **
+The requested cluster is not in the `available` state.
+HTTP Status Code: 400
+
+ ** InvalidParameterCombination **
+Two or more incompatible parameters were specified.
+ ** message **
+Two or more parameters that must not be used together were used together.
+HTTP Status Code: 400
+
  ** InvalidParameterValue **
 The value for a parameter is invalid.
  ** message **

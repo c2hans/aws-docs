@@ -28,7 +28,8 @@ Content-type: application/json
          },
          "ChainedInvokeOptions": {
             "FunctionName": "{{string}}",
-            "TenantId": "{{string}}"
+            "TenantId": "{{string}}",
+            "XAmznTraceId": "{{string}}"
          },
          "ContextOptions": {
             "ReplayChildren": {{boolean}}

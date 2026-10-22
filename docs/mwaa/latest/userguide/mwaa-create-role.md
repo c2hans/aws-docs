@@ -208,6 +208,11 @@ The following example presents an execution role policy you can use for an [Cust
  "Version":"2012-10-17",
  "Statement": [
   {
+   "Effect": "Allow",
+   "Action": "airflow:PublishMetrics",
+   "Resource": "arn:aws:airflow:{{us-east-1}}:{{111122223333}}:environment/{{your-environment-name}}"
+  },
+  {
    "Effect": "Deny",
    "Action": "s3:ListAllMyBuckets",
    "Resource": [
@@ -240,7 +245,7 @@ The following example presents an execution role policy you can use for an [Cust
     "logs:DescribeLogStreams"
    ],
    "Resource": [
-    "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:airflow-{{your-environment-name}}:*"
+    "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:airflow-{{your-environment-name}}-*"
    ]
   },
   {
@@ -368,14 +373,14 @@ The following example presents an execution role policy you can use for an [AWS-
         {
             "Effect": "Allow",
             "Action": "airflow:PublishMetrics",
-            "Resource": "arn:aws:airflow:{{us-east-1}}:{{111122223333}}:environment/{your-environment-name}"
+            "Resource": "arn:aws:airflow:{{us-east-1}}:{{111122223333}}:environment/{{your-environment-name}}"
         },
         {
             "Effect": "Deny",
             "Action": "s3:ListAllMyBuckets",
             "Resource": [
-								{{"arn:aws:s3:::amzn-s3-demo-bucket"}},
-								{{"arn:aws:s3:::amzn-s3-demo-bucket/*"}}
+                {{"arn:aws:s3:::amzn-s3-demo-bucket"}},
+                {{"arn:aws:s3:::amzn-s3-demo-bucket/*"}}
             ]
         },
         {
@@ -386,8 +391,8 @@ The following example presents an execution role policy you can use for an [AWS-
                 "s3:List*"
             ],
             "Resource": [
-								{{"arn:aws:s3:::amzn-s3-demo-bucket"}},
-								{{"arn:aws:s3:::amzn-s3-demo-bucket/*"}}
+                {{"arn:aws:s3:::amzn-s3-demo-bucket"}},
+                {{"arn:aws:s3:::amzn-s3-demo-bucket/*"}}
             ]
         },
         {
@@ -403,7 +408,7 @@ The following example presents an execution role policy you can use for an [AWS-
                 "logs:DescribeLogStreams"
             ],
             "Resource": [
-            "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:airflow-{your-environment-name}-*"
+            "arn:aws:logs:{{us-east-1}}:{{111122223333}}:log-group:airflow-{{your-environment-name}}-*"
             ]
         },
         {

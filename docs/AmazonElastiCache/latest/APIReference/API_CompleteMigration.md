@@ -5,39 +5,72 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 # CompleteMigration
 <a name="API_CompleteMigration"></a>
 
-Complete the migration of data.
+Completes the migration of data.
 
 ## Request Parameters
 <a name="API_CompleteMigration_RequestParameters"></a>
 
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
- ** ReplicationGroupId **
-The ID of the replication group to which data is being migrated.
-Type: String
-Required: Yes
-
  ** Force **
 Forces the migration to stop without ensuring that data is in sync. It is recommended to use this option only to abort the migration and not recommended when application wants to continue migration to ElastiCache.
 Type: Boolean
 Required: No
 
+ ** ReplicationGroupId **
+The ID of the replication group to which data is being migrated.
+Type: String
+Required: No
+
+ ** ServerlessCacheName **
+The name of the serverless cache to which data is being migrated.
+Type: String
+Required: No
+
 ## Response Elements
 <a name="API_CompleteMigration_ResponseElements"></a>
 
-The following element is returned by the service.
+The following elements are returned by the service.
 
  ** ReplicationGroup **
 Contains all of the attributes of a specific Valkey or Redis OSS replication group.
 Type: [ReplicationGroup](API_ReplicationGroup.md) object
+
+ ** ServerlessCache **
+Provides the details of the serverless cache for which the migration completed.
+Type: [ServerlessCache](API_ServerlessCache.md) object
 
 ## Errors
 <a name="API_CompleteMigration_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** InvalidCacheClusterState **
+The requested cluster is not in the `available` state.
+HTTP Status Code: 400
+
+ ** InvalidParameterCombination **
+Two or more incompatible parameters were specified.
+ ** message **
+Two or more parameters that must not be used together were used together.
+HTTP Status Code: 400
+
+ ** InvalidParameterValue **
+The value for a parameter is invalid.
+ ** message **
+A parameter value is invalid.
+HTTP Status Code: 400
+
  ** InvalidReplicationGroupState **
 The requested replication group is not in the `available` state.
+HTTP Status Code: 400
+
+ ** InvalidServerlessCacheStateFault **
+The account for these credentials is not currently active.
+HTTP Status Code: 400
+
+ ** MigrationHealthFault **
+The migration is not healthy. Check the events for this serverless cache for more details. For `CompleteMigration`, set `Force` to true to bypass this check.
 HTTP Status Code: 400
 
  ** ReplicationGroupNotFoundFault **
@@ -46,6 +79,14 @@ HTTP Status Code: 404
 
  ** ReplicationGroupNotUnderMigrationFault **
 The designated replication group is not available for data migration.
+HTTP Status Code: 400
+
+ ** ServerlessCacheNotFoundFault **
+The serverless cache was not found or does not exist.
+HTTP Status Code: 404
+
+ ** ServerlessCacheNotUnderMigrationFault **
+The serverless cache is not currently under migration.
 HTTP Status Code: 400
 
 ## See Also

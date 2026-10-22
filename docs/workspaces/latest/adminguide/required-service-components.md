@@ -56,6 +56,9 @@ On Amazon Linux WorkSpaces, the service components are installed in the followin
 
 **Note**
 Making changes to files other than `/etc/pcoip-agent/pcoip-agent.conf` might cause your WorkSpaces to stop working and might require you to rebuild them. For information about modifying `/etc/pcoip-agent/pcoip-agent.conf`, see [Manage your Amazon Linux 2 WorkSpaces in WorkSpaces Personal](manage_linux_workspace.md).
++ `/opt/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/AmazonWorkSpacesInstaller`
 + `/etc/dhcp/dhclient.conf`
 + `/etc/logrotate.d/pcoip-agent`
 + `/etc/logrotate.d/pcoip-server`
@@ -102,6 +105,9 @@ Making changes to files other than `/etc/pcoip-agent/pcoip-agent.conf` might cau
 <a name="required-service-components-ubuntu"></a>
 
 On Ubuntu WorkSpaces, the service components are installed in the following locations. Do not delete, change, block, or quarantine these objects. If you do so, the WorkSpace will not function correctly.
++ `/opt/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/AmazonWorkSpacesInstaller`
 + `/etc/X11/default-display-manager`
 + `/etc/dcv`
 + `/etc/default/grub.d/zz-hibernation.cfg`
@@ -128,6 +134,9 @@ On Ubuntu WorkSpaces, the service components are installed in the following loca
 <a name="required-service-components-rocky"></a>
 
 On Red Hat Enterprise Linux WorkSpaces, the service components are installed in the following locations. Do not delete, change, block, or quarantine these objects. If you do so, the WorkSpace will not function correctly.
++ `/opt/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/AmazonWorkSpacesInstaller`
 + `/etc/dcv`
 + `/etc/os-release`
 + `/etc/pam.d/dcv-graphical-sso`
@@ -153,6 +162,9 @@ On Red Hat Enterprise Linux WorkSpaces, the service components are installed in 
 <a name="required-service-components-red-hat"></a>
 
 On Red Hat Enterprise Linux WorkSpaces, the service components are installed in the following locations. Do not delete, change, block, or quarantine these objects. If you do so, the WorkSpace will not function correctly.
++ `/opt/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/`
++ `/usr/lib/amazon/workspaces/AmazonWorkSpacesInstaller`
 + `/etc/dcv`
 + `/etc/os-release`
 + `/etc/pam.d/dcv-graphical-sso`

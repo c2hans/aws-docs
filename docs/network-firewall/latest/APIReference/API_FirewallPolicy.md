@@ -36,6 +36,11 @@ Contains variables that you can use to override default Suricata settings in you
 Type: [PolicyVariables](API_PolicyVariables.md) object
 Required: No
 
+ ** Route53ResolvedIPValidation **   <a name="networkfirewall-Type-FirewallPolicy-Route53ResolvedIPValidation"></a>
+The settings that enable resolved IP validation for the policy. Resolved IP validation verifies that a connection's destination IP address is one that the Amazon Route 53 Resolver returned in a DNS response for a domain. The response must come from a VPC that's associated with the Route 53 Resolver DNS Firewall rule group that you specify. This checks how the destination IP address was obtained, instead of relying only on the domain that the client asserts in its TLS Server Name Indication (SNI) or HTTP `Host` header. For more information, see [Route53ResolvedIPValidation](API_Route53ResolvedIPValidation.md).
+Type: [Route53ResolvedIPValidation](API_Route53ResolvedIPValidation.md) object
+Required: No
+
  ** StatefulDefaultActions **   <a name="networkfirewall-Type-FirewallPolicy-StatefulDefaultActions"></a>
 The default actions to take on a packet that doesn't match any stateful rules. The stateful default action is optional, and is only valid when using the strict rule order.
 Valid values of the stateful default action:

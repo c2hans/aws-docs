@@ -54,12 +54,20 @@ Required: No
          "KeyId": "string",
          "Type": "string"
       },
+      "Errors": [
+         {
+            "Code": "string",
+            "Message": "string",
+            "ResourceId": "string"
+         }
+      ],
       "FirewallPolicyArn": "string",
       "FirewallPolicyId": "string",
       "FirewallPolicyName": "string",
       "FirewallPolicyStatus": "string",
       "LastModifiedTime": number,
       "NumberOfAssociations": number,
+      "StatusMessage": "string",
       "Tags": [
          {
             "Key": "string",

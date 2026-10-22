@@ -27,7 +27,7 @@ Consider hugepages for the following workloads:
 
 Hugepages are not a universal win. They are pre-allocated and pinned, so the memory is unavailable to any workload that does not request it, and a workload that cannot use hugepages sees only the reduced conventional memory. Benchmark your workload before you reserve hugepages in production.
 
-### Static hugepages compared to transparent hugepages
+### Static vs transparent hugepages
 <a name="ml-hugepages-static-vs-thp"></a>
 
 Amazon EKS supports two independent mechanisms. You can use them separately or together.
@@ -36,12 +36,22 @@ Amazon EKS supports two independent mechanisms. You can use them separately or t
 
 Use static hugepages when a workload requires an explicit, guaranteed reservation. Use THP when you want the kernel to opportunistically use hugepages for a workload that is not written to request them. Some databases recommend disabling THP, which you can also do through these settings.
 
+## Considerations
+<a name="_considerations"></a>
++  **Memory accounting** — Static hugepages count against the instance’s total memory and are not available to workloads that do not request them. On EKS Auto Mode, Amazon EKS marks instance types as incompatible with the `NodeClass` when the combined reservation would exceed 80% of total memory.
++  **Requests must equal limits** — Kubernetes requires that a container’s hugepage request and limit match. Hugepages cannot be overcommitted.
++  **Hugepages are not swappable and not shared** — Pages reserved but unused by a Pod stay idle for the Pod’s lifetime. Size reservations to actual workload demand.
++  **EFA and static hugepages on EKS Auto Mode** — Elastic Fabric Adapter and static hugepages cannot coexist on the same EKS Auto Mode `NodeClass`. Use a separate `NodeClass` for EFA workloads. Transparent hugepages do not conflict with EFA. For more information, see [Hugepages considerations](create-node-class.md#hugepages-considerations).
++  **1 GiB pages need contiguous memory** — Reserve 1 GiB pages at boot. Allocating them on a long-running node often fails because physical memory has fragmented.
++  **Keep the NodeOverlay in sync** — On self-managed Karpenter, the `NodeOverlay` capacity and the `userData` reservation are two independent declarations of the same thing. If you change one, change the other. An overlay that claims more than the node allocates causes Karpenter to schedule Pods onto nodes that cannot run them. EKS Auto Mode has a single source of truth in the `NodeClass`, so it is not affected.
++  **Dedicate NodePools** — Put hugepages workloads on their own `NodePool` so that the reservation does not reduce usable memory for the rest of your cluster.
+
 ## Prerequisites
 <a name="_prerequisites"></a>
 + An Amazon EKS cluster running either EKS Auto Mode or self-managed Karpenter. To create one, see [Set up Amazon EKS cluster for AI/ML workloads](ml-cluster-setup.md).
 +  `kubectl` installed and configured for your cluster. For more information, see [Set up `kubectl` and `eksctl`](install-kubectl.md).
 + The node IAM role and the subnet and security group tags that your NodeClass selects. These are already in place if you followed [Set up Amazon EKS cluster for AI/ML workloads](ml-cluster-setup.md).
-+ The cluster name and AWS Region set in every terminal you run these commands from. The examples below reference both. The following values are the defaults from [Set up Amazon EKS cluster for AI/ML workloads](ml-cluster-setup.md), so replace them if you created your cluster with different ones:
++ The cluster name and AWS Region set in every terminal you run these commands from. The examples in this topic reference both. The following values are the defaults from [Set up Amazon EKS cluster for AI/ML workloads](ml-cluster-setup.md), so replace them if you created your cluster with different ones:
 
   ```
   export CLUSTER_NAME=ai-eks-docs
@@ -51,15 +61,15 @@ Use static hugepages when a workload requires an explicit, guaranteed reservatio
 ## Step 1: Allocate hugepages on your nodes
 <a name="_step_1_allocate_hugepages_on_your_nodes"></a>
 
-Hugepages must be allocated on the node before kubelet starts, so that kubelet reports the capacity. Both paths below handle that ordering for you. Choose the path that matches how your cluster provisions nodes.
+Hugepages must be allocated on the node before kubelet starts, so that kubelet reports the capacity. Both paths handle that ordering for you. Choose the tab for the way your cluster provisions nodes.
 
 | Node provisioning | Mechanism |
 | --- | --- |
 | EKS Auto Mode | The `advancedCompute.hugepages` field on the EKS Auto Mode `NodeClass`. |
 | Self-managed Karpenter (AL2023) | A shell script in the `EC2NodeClass` `userData`, which `nodeadm` runs before it starts kubelet, plus a `NodeOverlay` so Karpenter’s scheduler accounts for the pages. |
 
-### EKS Auto Mode
-<a name="_eks_auto_mode"></a>
+------
+#### [ EKS Auto Mode ]
 
 EKS Auto Mode configures hugepages declaratively through the `advancedCompute.hugepages` field on the `NodeClass`. Create a dedicated `NodeClass` and `NodePool` for hugepages workloads, so that nodes without a hugepages reservation remain available for everything else.
 
@@ -140,8 +150,8 @@ hugepages   hugepages   0       True    45s
 
 For the full field reference, including the valid `transparent` values and the EFA restriction, see [Configure hugepages on nodes](create-node-class.md#hugepages).
 
-### Self-managed Karpenter with AL2023
-<a name="_self_managed_karpenter_with_al2023"></a>
+------
+#### [ Self-managed Karpenter ]
 
 The AL2023 `nodeadm` `NodeConfig` API does not have a hugepages field, so you allocate the pages from a shell script in the `EC2NodeClass` `userData`. On AL2023, `nodeadm-run.service` is ordered `After=cloud-final.service` specifically so that user-supplied cloud-init scripts run first. Because `nodeadm-run` is what starts kubelet, a shell script that writes to `/sys/kernel/mm/hugepages` always completes before kubelet inspects the node, and the capacity is reported correctly.
 
@@ -284,6 +294,8 @@ hugepages   True    10s
 A `NodeOverlay` can only add extended resources such as hugepages. It cannot change a node’s CPU, memory, or ephemeral storage. For more information, see [NodeOverlays](https://karpenter.sh/docs/concepts/nodeoverlays/) in the Karpenter documentation.
 If you prefer not to enable an Alpha feature gate, the alternative is a *static* `NodePool` (`spec.replicas`, behind the `StaticCapacity` gate), which maintains a fixed node count instead of scaling in response to pending Pods. The nodes then exist and advertise their hugepage capacity before any Pod requests it, so Karpenter never simulates the scheduling decision. That approach gives up scale-from-zero.
 
+------
+
 ## Step 2: Request hugepages from a Pod
 <a name="_step_2_request_hugepages_from_a_pod"></a>
 
@@ -386,16 +398,6 @@ An example output is as follows.
 always [madvise] never
 always [defer] defer+madvise madvise never
 ```
-
-## Considerations
-<a name="_considerations"></a>
-+  **Memory accounting** — Static hugepages count against the instance’s total memory and are not available to workloads that do not request them. On EKS Auto Mode, Amazon EKS marks instance types as incompatible with the `NodeClass` when the combined reservation would exceed 80% of total memory.
-+  **Requests must equal limits** — Kubernetes requires that a container’s hugepage request and limit match. Hugepages cannot be overcommitted.
-+  **Hugepages are not swappable and not shared** — Pages reserved but unused by a Pod stay idle for the Pod’s lifetime. Size reservations to actual workload demand.
-+  **EFA and static hugepages on EKS Auto Mode** — Elastic Fabric Adapter and static hugepages cannot coexist on the same EKS Auto Mode `NodeClass`. Use a separate `NodeClass` for EFA workloads. Transparent hugepages do not conflict with EFA. For more information, see [Hugepages considerations](create-node-class.md#hugepages-considerations).
-+  **1 GiB pages need contiguous memory** — Reserve 1 GiB pages at boot, as shown here. Allocating them on a long-running node often fails because physical memory has fragmented.
-+  **Keep the NodeOverlay in sync** — On self-managed Karpenter, the `NodeOverlay` capacity and the `userData` reservation are two independent declarations of the same thing. If you change one, change the other. An overlay that claims more than the node allocates causes Karpenter to schedule Pods onto nodes that cannot run them. EKS Auto Mode has a single source of truth in the `NodeClass`, so it is not affected.
-+  **Dedicate NodePools** — Put hugepages workloads on their own `NodePool` so that the reservation does not reduce usable memory for the rest of your cluster.
 
 ## Clean up
 <a name="_clean_up"></a>

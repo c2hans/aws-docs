@@ -29,9 +29,18 @@ Type: Array of strings
 Required: Yes
 
  ** TargetTypes **   <a name="networkfirewall-Type-RulesSourceList-TargetTypes"></a>
-The protocols you want to inspect. Specify `TLS_SNI` for `HTTPS`. Specify `HTTP_HOST` for `HTTP`. You can specify either or both.
+The types of matching to perform against the domains in `Targets`. You can specify any combination of the following:
++  `AWS_ROUTE_53_RESOLVED_DOMAIN` – Match the domain against the domain that the Amazon Route 53 Resolver resolved the connection's destination IP address for.
++  `HTTP_HOST` – Match the domain against the `Host` header of HTTP traffic.
++  `TLS_SNI` – Match the domain against the Server Name Indication (SNI) of HTTPS traffic.
+ `AWS_ROUTE_53_RESOLVED_DOMAIN` matches on how the destination IP address was resolved, rather than on the domain that the client asserts in its TLS SNI or HTTP `Host` header. This target type takes effect when you configure resolved IP validation on the firewall policy. For more information, see [Route53ResolvedIPValidation](API_Route53ResolvedIPValidation.md).
+Whether you include `AWS_ROUTE_53_RESOLVED_DOMAIN` changes what the generated rules match, together with `GeneratedRulesType`:
++ Combining `AWS_ROUTE_53_RESOLVED_DOMAIN` with `TLS_SNI` or `HTTP_HOST` in an `ALLOWLIST` requires both conditions to match. The SNI or `Host` header must match the domain, **and** the Route 53 Resolver must have resolved the destination IP address for that domain. Network Firewall allows traffic only in that case. Traffic that matches one condition, such as a spoofed `Host` header sent to an unresolved IP address, is not allowed.
++ In a `DENYLIST`, or when `AWS_ROUTE_53_RESOLVED_DOMAIN` is the only target type, Network Firewall evaluates each condition independently: a match on either the domain (SNI or `Host`) or the resolved destination IP address triggers the rule.
++ When you don't include `AWS_ROUTE_53_RESOLVED_DOMAIN`, the generated rules match only on the SNI or `Host` header, without checking how the destination IP address was resolved.
+An `ALLOWLIST` whose only target type is `AWS_ROUTE_53_RESOLVED_DOMAIN` is additive: it allows matching traffic but doesn't generate a default rule that drops non-matching traffic. Only the `TLS_SNI` and `HTTP_HOST` target types generate that default drop. To allow only the resolved domains and drop all other traffic, include a protocol target type as well.
 Type: Array of strings
-Valid Values: `TLS_SNI | HTTP_HOST`
+Valid Values: `TLS_SNI | HTTP_HOST | AWS_ROUTE_53_RESOLVED_DOMAIN`
 Required: Yes
 
 ## See Also

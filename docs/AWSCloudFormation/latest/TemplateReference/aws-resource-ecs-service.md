@@ -199,9 +199,11 @@ Determines whether to force a new deployment of the service. By default, deploym
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `GatewayConnectors`  <a name="cfn-ecs-service-gatewayconnectors"></a>
-Property description not available.
+The gateway connectors that attach the service to a gateway ingress path. You can specify at most one gateway connector.
 *Required*: No
 *Type*: Array of [GatewayConnector](aws-properties-ecs-service-gatewayconnector.md)
+*Minimum*: `0`
+*Maximum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HealthCheckGracePeriodSeconds`  <a name="cfn-ecs-service-healthcheckgraceperiodseconds"></a>

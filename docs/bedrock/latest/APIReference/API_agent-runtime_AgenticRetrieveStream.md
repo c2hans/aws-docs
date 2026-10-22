@@ -82,6 +82,10 @@ Content-type: application/json
          "guardrailVersion": "{{string}}"
       }
    },
+   "retrievalInstructionConfiguration": {
+      "retrievalInstructionId": "{{string}}",
+      "version": "{{string}}"
+   },
    "retrievers": [
       {
          "configuration": { ... },
@@ -135,6 +139,11 @@ Required: No
  ** [policyConfiguration](#API_agent-runtime_AgenticRetrieveStream_RequestSyntax) **   <a name="bedrock-agent-runtime_AgenticRetrieveStream-request-policyConfiguration"></a>
 Policy configuration for guardrails and content filtering.
 Type: [AgenticRetrievePolicyConfiguration](API_agent-runtime_AgenticRetrievePolicyConfiguration.md) object
+Required: No
+
+ ** [retrievalInstructionConfiguration](#API_agent-runtime_AgenticRetrieveStream_RequestSyntax) **   <a name="bedrock-agent-runtime_AgenticRetrieveStream-request-retrievalInstructionConfiguration"></a>
+A retrieval instruction to apply to this request.
+Type: [AgenticRetrieveInstructionConfiguration](API_agent-runtime_AgenticRetrieveInstructionConfiguration.md) object
 Required: No
 
  ** [retrievers](#API_agent-runtime_AgenticRetrieveStream_RequestSyntax) **   <a name="bedrock-agent-runtime_AgenticRetrieveStream-request-retrievers"></a>
@@ -238,6 +247,10 @@ Content-type: application/json
                }
             }
          ],
+         "appliedInstruction": {
+            "id": "string",
+            "version": "string"
+         },
          "failures": [
             {
                "message": "string"

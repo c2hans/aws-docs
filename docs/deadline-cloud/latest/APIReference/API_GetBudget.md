@@ -120,8 +120,8 @@ Type: [BudgetSchedule](API_BudgetSchedule.md) object
 
  ** [status](#API_GetBudget_ResponseSyntax) **   <a name="deadlinecloud-GetBudget-response-status"></a>
 The status of the budget.
-+  `ACTIVE`–Get a budget being evaluated.
-+  `INACTIVE`–Get an inactive budget. This can include expired, canceled, or deleted statuses.
++  `ACTIVE` - Get a budget being evaluated.
++  `INACTIVE` - Get an inactive budget. This can include expired, canceled, or deleted statuses.
 Type: String
 Valid Values: `ACTIVE | INACTIVE`
 

@@ -25,6 +25,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_ecs-actions-as-permissions).
 
+- **   AssociateGatewayWithCluster  **
+  - **IAM action:**  [ecs:AssociateGatewayWithCluster](#list_ecs-action-AssociateGatewayWithCluster)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   ContinueServiceDeployment  **
   - **IAM action:**  [ecs:ContinueServiceDeployment](#list_ecs-action-ContinueServiceDeployment)
   - **Condition key:**
@@ -54,6 +60,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ecs:RegisterTaskDefinition](#list_ecs-action-RegisterTaskDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:TagResource](#list_ecs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs-tasks.amazonaws.com, ecs.amazonaws.com / **Access level:** Write
+
+- **   CreateGateway  **
+  - **IAM action:**  [ecs:CreateGateway](#list_ecs-action-CreateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ecs:TagResource](#list_ecs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs.amazonaws.com / **Access level:** Write
 
 - **   CreateService  **
   - **IAM action:**  [ecs:CreateService](#list_ecs-action-CreateService)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -101,6 +112,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteExpressGatewayService  **
   - **IAM action:**  [ecs:DeleteExpressGatewayService](#list_ecs-action-DeleteExpressGatewayService)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteGateway  **
+  - **IAM action:**  [ecs:DeleteGateway](#list_ecs-action-DeleteGateway)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -183,6 +200,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeGateway  **
+  - **IAM action:**  [ecs:DescribeGateway](#list_ecs-action-DescribeGateway)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeGatewayResources  **
+  - **IAM action:**  [ecs:DescribeGatewayResources](#list_ecs-action-DescribeGatewayResources)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeGatewayRoute  **
+  - **IAM action:**  [ecs:DescribeGatewayRoute](#list_ecs-action-DescribeGatewayRoute)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   DescribeServiceDeployments  **
   - **IAM action:**  [ecs:DescribeServiceDeployments](#list_ecs-action-DescribeServiceDeployments)
   - **Condition key:**
@@ -218,6 +253,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   DisassociateGatewayFromCluster  **
+  - **IAM action:**  [ecs:DisassociateGatewayFromCluster](#list_ecs-action-DisassociateGatewayFromCluster)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   DiscoverPollEndpoint  **
   - **IAM action:**  [ecs:DiscoverPollEndpoint](#list_ecs-action-DiscoverPollEndpoint)
@@ -275,6 +316,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListDaemons  **
   - **IAM action:**  [ecs:ListDaemons](#list_ecs-action-ListDaemons)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListGatewayClusterAssociations  **
+  - **IAM action:**  [ecs:ListGatewayClusterAssociations](#list_ecs-action-ListGatewayClusterAssociations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListGatewayRoutes  **
+  - **IAM action:**  [ecs:ListGatewayRoutes](#list_ecs-action-ListGatewayRoutes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListGateways  **
+  - **IAM action:**  [ecs:ListGateways](#list_ecs-action-ListGateways)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -450,6 +509,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ecs:RegisterTaskDefinition](#list_ecs-action-RegisterTaskDefinition)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ecs:UpdateExpressGatewayService](#list_ecs-action-UpdateExpressGatewayService)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs-tasks.amazonaws.com, ecs.amazonaws.com / **Access level:** Write
+
+- **   UpdateGateway  **
+  - **IAM action:**  [ecs:UpdateGateway](#list_ecs-action-UpdateGateway)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** ecs.amazonaws.com / **Access level:** Write
 
 - **   UpdateService  **
   - **IAM action:**  [ecs:UpdateService](#list_ecs-action-UpdateService)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

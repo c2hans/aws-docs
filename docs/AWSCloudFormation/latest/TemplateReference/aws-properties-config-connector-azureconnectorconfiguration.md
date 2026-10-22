@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::Config::Connector AzureConnectorConfiguration
 <a name="aws-properties-config-connector-azureconnectorconfiguration"></a>
 
-The configuration details for connecting to Microsoft Azure.
+Configuration for connecting to Microsoft Azure.
 
 ## Syntax
 <a name="aws-properties-config-connector-azureconnectorconfiguration-syntax"></a>

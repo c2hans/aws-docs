@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-r
 # Creating rules that send events to an API destination in EventBridge
 <a name="eb-create-rule-api-destination-target"></a>
 
-After you create an API destination, you can select it as the target of a [rule](eb-rules.md). To use an API destination as a target, you must provide an IAM role with the correct permissions. For more information, see [Permissions required for EventBridge to access targets using IAM roles](eb-events-iam-roles.md#eb-target-permissions)
+After you create an API destination, you can select it as the target of a [rule](eb-rules.md). To use an API destination as a target, you must provide an IAM role with the correct permissions. For more information, see [Permissions to access targets](eb-events-iam-roles.md#eb-target-permissions).
 
 Selecting an API destination as a target is part of creating the rule.
 

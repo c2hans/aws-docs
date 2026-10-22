@@ -101,8 +101,8 @@ Required: No
 
  ** [status](#API_UpdateBudget_RequestSyntax) **   <a name="deadlinecloud-UpdateBudget-request-status"></a>
 Updates the status of the budget.
-+  `ACTIVE`–The budget is being evaluated.
-+  `INACTIVE`–The budget is inactive. This can include Expired, Canceled, or deleted Deleted statuses.
++  `ACTIVE` - The budget is being evaluated.
++  `INACTIVE` - The budget is inactive. This can include Expired, Canceled, or deleted Deleted statuses.
 Type: String
 Valid Values: `ACTIVE | INACTIVE`
 Required: No

@@ -15,6 +15,11 @@ PATCH /servicenetworkvpcassociations/{{serviceNetworkVpcAssociationIdentifier}} 
 Content-type: application/json
 
 {
+   "dnsOptions": {
+      "privateDnsPreference": "{{string}}",
+      "privateDnsSpecifiedDomains": [ "{{string}}" ]
+   },
+   "privateDnsEnabled": {{boolean}},
    "securityGroupIds": [ "{{string}}" ]
 }
 ```
@@ -35,13 +40,23 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [dnsOptions](#API_UpdateServiceNetworkVpcAssociation_RequestSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-request-dnsOptions"></a>
+ DNS options for the service network VPC association.
+Type: [DnsOptions](API_DnsOptions.md) object
+Required: No
+
+ ** [privateDnsEnabled](#API_UpdateServiceNetworkVpcAssociation_RequestSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-request-privateDnsEnabled"></a>
+ Indicates if private DNS is enabled for the VPC association.
+Type: Boolean
+Required: No
+
  ** [securityGroupIds](#API_UpdateServiceNetworkVpcAssociation_RequestSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-request-securityGroupIds"></a>
 The IDs of the security groups.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Length Constraints: Minimum length of 5. Maximum length of 200.
 Pattern: `sg-(([0-9a-z]{8})|([0-9a-z]{17}))`
-Required: Yes
+Required: No
 
 ## Response Syntax
 <a name="API_UpdateServiceNetworkVpcAssociation_ResponseSyntax"></a>
@@ -53,7 +68,12 @@ Content-type: application/json
 {
    "arn": "string",
    "createdBy": "string",
+   "dnsOptions": {
+      "privateDnsPreference": "string",
+      "privateDnsSpecifiedDomains": [ "string" ]
+   },
    "id": "string",
+   "privateDnsEnabled": boolean,
    "securityGroupIds": [ "string" ],
    "status": "string"
 }
@@ -78,11 +98,19 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 12.
 Pattern: `[0-9]{12}`
 
+ ** [dnsOptions](#API_UpdateServiceNetworkVpcAssociation_ResponseSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-response-dnsOptions"></a>
+ DNS options for the service network VPC association.
+Type: [DnsOptions](API_DnsOptions.md) object
+
  ** [id](#API_UpdateServiceNetworkVpcAssociation_ResponseSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-response-id"></a>
 The ID of the association.
 Type: String
 Length Constraints: Fixed length of 22.
 Pattern: `snva-[0-9a-z]{17}`
+
+ ** [privateDnsEnabled](#API_UpdateServiceNetworkVpcAssociation_ResponseSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-response-privateDnsEnabled"></a>
+ Indicates if private DNS is enabled for the VPC association.
+Type: Boolean
 
  ** [securityGroupIds](#API_UpdateServiceNetworkVpcAssociation_ResponseSyntax) **   <a name="vpclattice-UpdateServiceNetworkVpcAssociation-response-securityGroupIds"></a>
 The IDs of the security groups.

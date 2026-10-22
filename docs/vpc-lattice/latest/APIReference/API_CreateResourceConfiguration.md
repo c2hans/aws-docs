@@ -82,14 +82,14 @@ Pattern: `(?!rcfg-)(?![-])(?!.*[-]$)(?!.*[-]{2})[a-z0-9-]+`
 Required: Yes
 
  ** [portRanges](#API_CreateResourceConfiguration_RequestSyntax) **   <a name="vpclattice-CreateResourceConfiguration-request-portRanges"></a>
-(SINGLE, GROUP, CHILD) The TCP port ranges that a consumer can use to access a resource configuration (for example: 1-65535). You can separate port ranges using commas (for example: 1,2,22-30).
+(SINGLE, GROUP, CHILD, CIDR) The port ranges that a consumer can use to access a resource configuration (for example: 1-65535). You can separate port ranges using commas (for example: 1,2,22-30). To resolve DNS through a CIDR resource configuration, include port 53 in the port ranges.
 Type: Array of strings
 Length Constraints: Minimum length of 1. Maximum length of 11.
 Pattern: `((\d{1,5}\-\d{1,5})|(\d+))`
 Required: No
 
  ** [protocol](#API_CreateResourceConfiguration_RequestSyntax) **   <a name="vpclattice-CreateResourceConfiguration-request-protocol"></a>
-(SINGLE, GROUP) The protocol accepted by the resource configuration.
+(SINGLE, GROUP, CIDR) The protocol accepted by the resource configuration. The default is `TCP`. `TCP_UDP` is supported only for CIDR resource configurations; specify it for a CIDR resource configuration to allow DNS resolution, which uses UDP.
 Type: String
 Valid Values: `TCP | TCP_UDP`
 Required: No
@@ -99,6 +99,7 @@ Identifies the resource configuration in one of the following ways:
 +  **Amazon Resource Name (ARN)** - Supported resource-types that are provisioned by AWS services, such as RDS databases, can be identified by their ARN.
 +  **Domain name** - Any domain name that is publicly resolvable.
 +  **IP address** - For IPv4 and IPv6, only IP addresses in the VPC are supported.
++  **CIDR range** - For a resource configuration of type CIDR, specify a `cidrResource` with one or more `cidrRanges` (for example, `10.0.0.0/16`) that cover the IP addresses of the resources you want to make accessible. You can specify up to 10 ranges, using IPv4, IPv6, or both, and each range must include a prefix length. To represent your entire network, specify `0.0.0.0/0` (IPv4) or `::/0` (IPv6) as the only range. You can't use reserved ranges such as `169.254.0.0/16`, `100.64.0.0/10`, `224.0.0.0/4`, `fe80::/10`, or `ff00::/8`.
 Type: [ResourceConfigurationDefinition](API_ResourceConfigurationDefinition.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
@@ -111,7 +112,7 @@ Pattern: `((rcfg-[0-9a-z]{17})|(arn:[a-z0-9\-]+:vpc-lattice:[a-zA-Z0-9\-]+:\d{12
 Required: No
 
  ** [resourceGatewayIdentifier](#API_CreateResourceConfiguration_RequestSyntax) **   <a name="vpclattice-CreateResourceConfiguration-request-resourceGatewayIdentifier"></a>
-(SINGLE, GROUP, ARN) The ID or ARN of the resource gateway used to connect to the resource configuration. For a child resource configuration, this value is inherited from the parent resource configuration.
+(SINGLE, GROUP, ARN, CIDR) The ID or ARN of the resource gateway used to connect to the resource configuration. For a child resource configuration, this value is inherited from the parent resource configuration. For a CIDR resource configuration, the associated resource gateway must have its DNS resolution set to `IN_VPC` so that DNS queries resolve in the context of your VPC.
 Type: String
 Length Constraints: Minimum length of 17. Maximum length of 2048.
 Pattern: `((rgw-[0-9a-z]{17})|(arn:[a-z0-9\-]+:vpc-lattice:[a-zA-Z0-9\-]+:\d{12}:resourcegateway/rgw-[0-9a-z]{17}))`
@@ -131,8 +132,9 @@ The type of resource configuration. A resource configuration can be one of the f
 +  **GROUP** - A group of resources. You must create a group resource configuration before you create a child resource configuration.
 +  **CHILD** - A single resource that is part of a group resource configuration.
 +  **ARN** - An AWS resource.
++  **CIDR** - A network segment, expressed as a range of IP addresses (a CIDR block). Use this type to share a portion of your network rather than an individual resource. A consumer accesses the resources within the CIDR range through a `Tunnel` VPC endpoint. You can't add a CIDR resource configuration to a service network. A CIDR resource configuration must be associated with a resource gateway whose DNS resolution is set to `IN_VPC`.
 Type: String
-Valid Values: `GROUP | CHILD | SINGLE | ARN`
+Valid Values: `GROUP | CHILD | SINGLE | ARN | CIDR`
 Required: Yes
 
 ## Response Syntax
@@ -264,8 +266,9 @@ The type of resource configuration. A resource configuration can be one of the f
 +  **GROUP** - A group of resources. You must create a group resource configuration before you create a child resource configuration.
 +  **CHILD** - A single resource that is part of a group resource configuration.
 +  **ARN** - An AWS resource.
++  **CIDR** - A network segment, expressed as a range of IP addresses (a CIDR block). A consumer accesses the resources within the CIDR range through a `Tunnel` VPC endpoint. A CIDR resource configuration must be associated with a resource gateway whose DNS resolution is set to `IN_VPC`.
 Type: String
-Valid Values: `GROUP | CHILD | SINGLE | ARN`
+Valid Values: `GROUP | CHILD | SINGLE | ARN | CIDR`
 
 ## Errors
 <a name="API_CreateResourceConfiguration_Errors"></a>

@@ -36,6 +36,12 @@ Length Constraints: Fixed length of 21.
 Pattern: `rea-[0-9a-f]{17}`
 Required: No
 
+ ** payerResponsibility **   <a name="vpclattice-Type-ResourceEndpointAssociationSummary-payerResponsibility"></a>
+Who pays for each category of charges on the VPC endpoint association.
+Type: Array of [PayerResponsibilityEntry](API_PayerResponsibilityEntry.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
  ** resourceConfigurationArn **   <a name="vpclattice-Type-ResourceEndpointAssociationSummary-resourceConfigurationArn"></a>
 The Amazon Resource Name (ARN) of the resource configuration.
 Type: String

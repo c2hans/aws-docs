@@ -79,21 +79,6 @@ To sign in with a different method, sign out first, and then run the following c
 kiro-cli login
 ```
 
-## CLI command completion in CloudShell
-<a name="cli-completion"></a>
-
-CLI completion in CloudShell provides suggestions for commands and options as you type in the terminal. For more information, see [Generating command line completion](https://kiro.dev/docs/cli/autocomplete/) on the Kiro website.
-
-## Using Kiro inline suggestions in CloudShell
-<a name="q-inline-suggestions"></a>
-
-Kiro inline suggestions in CloudShell provide command suggestions as you type in the terminal. For more information, see [Inline suggestions](https://kiro.dev/docs/cli/autocomplete/#inline-suggestions) on the Kiro website.
-
-In the CloudShell terminal, run `zsh` to open Z shell, and then start typing a command. Kiro makes suggestions based on your current input and previous commands. Inline suggestions are automatically enabled.
-
-**Note**
-Kiro inline suggestions are supported only in Z shell.
-
 ## Configuring the AWS MCP Server for Kiro CLI in CloudShell
 <a name="configure-aws-mcp"></a>
 

@@ -93,6 +93,9 @@ If you created your project using the project archetype as described previously,
 
 The archetype generates a BOM (bill of materials) artifact dependency for the `software.amazon.awssdk` group id. With a BOM, you do not have to specify the maven version for individual artifact dependencies that share the same group id.
 
+**Important**
+Always use the same version across all AWS SDK for Java 2.x dependencies. Mixed versions can cause runtime exceptions or compile-time errors, depending on which components are mismatched. The BOM is the recommended way to keep these versions aligned. For more information, see [component version compatibility](https://github.com/aws/aws-sdk-java-v2/blob/master/VERSIONING.md#component-version-compatibility) in the SDK's versioning policy on the GitHub website.
+
 If you created your Maven project in a different way, configure the latest version of the SDK for your project by ensuring that the `pom.xml` file contains the following.
 
 ```
@@ -191,6 +194,49 @@ To optimize your application, we strongly recommend that you pull in only the co
   </dependencies>
 </project>
 ```
+
+## Enforce consistent SDK module versions
+<a name="enforce-sdk-module-versions"></a>
+
+The BOM aligns the versions of AWS SDK for Java 2.x modules, but it is optional and not enforced. You can specify an explicit `<version>` on an SDK dependency, or a transitive dependency can pull in a different `software.amazon.awssdk` version. Either way, your build can still resolve a mixed set of SDK versions. Such a build might compile successfully but fail at runtime.
+
+To fail the build when SDK versions diverge, use the [Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) on the Apache Maven website with the `dependencyConvergence` rule, scoped to the `software.amazon.awssdk` group id. Scoping the rule with `<includes>` limits the check to AWS SDK for Java 2.x modules, so unrelated third-party version conflicts do not fail the build. When your build resolves two or more SDK modules (direct or transitive) to different versions, it fails during the Maven `validate` phase and lists the mismatched modules.
+
+The following example adds the Maven Enforcer Plugin to the `<build>` section of your `pom.xml` file.
+
+```
+<build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-enforcer-plugin</artifactId>
+      <version>3.6.3</version>
+      <executions>
+        <execution>
+          <id>enforce-sdk-version-convergence</id>
+          <goals>
+            <goal>enforce</goal>
+          </goals>
+          <configuration>
+            <rules>
+              <dependencyConvergence>
+                <includes>
+                  <include>software.amazon.awssdk</include>
+                </includes>
+              </dependencyConvergence>
+            </rules>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+</build>
+```
+
+**Note**
+If the build resolves more than one SDK version (for example, `s3` at version 2.20.0 mixed with `dynamodb` at version 2.27.21), the build fails with messages such as `Dependency convergence error for software.amazon.awssdk:aws-core:jar:2.20.0`, along with similar errors for other shared modules such as `sdk-core`, `http-client-spi`, `utils`, and `regions`.
+
+For more information about diagnosing problems that result from mismatched SDK versions, see [Classpath errors](troubleshooting.md#faq-classpath-errors).
 
 ## Build your project
 <a name="build-project"></a>

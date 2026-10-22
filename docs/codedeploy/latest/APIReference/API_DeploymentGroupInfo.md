@@ -67,6 +67,11 @@ Information about the type of deployment, either in-place or blue/green, you wan
 Type: [DeploymentStyle](API_DeploymentStyle.md) object
 Required: No
 
+ ** ec2DeploymentOptions **   <a name="CodeDeploy-Type-DeploymentGroupInfo-ec2DeploymentOptions"></a>
+Options that control how AWS CodeDeploy manages Amazon EC2 resources during deployments to the deployment group.
+Type: [EC2DeploymentOptions](API_EC2DeploymentOptions.md) object
+Required: No
+
  ** ec2TagFilters **   <a name="CodeDeploy-Type-DeploymentGroupInfo-ec2TagFilters"></a>
 The Amazon EC2 tags on which to filter. The deployment group includes EC2 instances with any of the specified tags.
 Type: Array of [EC2TagFilter](API_EC2TagFilter.md) objects

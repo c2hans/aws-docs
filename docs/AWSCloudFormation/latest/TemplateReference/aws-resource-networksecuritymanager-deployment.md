@@ -191,7 +191,7 @@ The version of the deployment. Network Security Manager assigns version `1` when
                         - TemplateArn: !GetAtt BaselineTemplate.TemplateArn
                       PolicyConfiguration:
                         RemediationEnabled: true
-                        ResourcesCleanUp: false
+                        ResourcesCleanUp: true
                         WafConfig:
                           ExistingCustomerWebACLResolution: RETROFIT
                           ConflictResolution: MERGE_WHERE_APPLICABLE

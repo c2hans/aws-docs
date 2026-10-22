@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Service GatewayConnectorFilters
 <a name="aws-properties-ecs-service-gatewayconnectorfilters"></a>
 
-<a name="aws-properties-ecs-service-gatewayconnectorfilters-description"></a>The `GatewayConnectorFilters` property type specifies Property description not available. for an [AWS::ECS::Service](aws-resource-ecs-service.md).
+The filters that determine which gateway ingress paths a connector applies to.
 
 ## Syntax
 <a name="aws-properties-ecs-service-gatewayconnectorfilters-syntax"></a>
@@ -35,7 +35,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnectorfilters-properties"></a>
 
 `AccessTypes`  <a name="cfn-ecs-service-gatewayconnectorfilters-accesstypes"></a>
-Property description not available.
+The access types of the gateway ingress paths that the connector applies to.
+The access type can be one of the following values:
++ `PUBLIC` - The ingress path is publicly accessible.
++ `PRIVATE` - The ingress path is only accessible privately.
 *Required*: No
 *Type*: Array of String
 *Allowed values*: `PUBLIC | PRIVATE`

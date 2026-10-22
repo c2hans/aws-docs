@@ -10,6 +10,16 @@ The configuration specifies details about how the anomaly detection model is to 
 ## Contents
 <a name="API_AnomalyDetectorConfiguration_Contents"></a>
 
+ ** AdaptationSpeed **   <a name="ACW-Type-AnomalyDetectorConfiguration-AdaptationSpeed"></a>
+The speed at which the anomaly detection model adapts to sustained changes in the metric's baseline. Faster adaptation lets the model track shifting workloads sooner, but increases the chance that the model treats a real, lasting change as normal.
+Valid values:
++  `FAST` - The model adapts quickly to sustained changes in the baseline.
++  `NORMAL` - The model adapts at a moderate pace. This is the default value.
++  `SLOW` - The model adapts slowly, reducing the risk of treating a real change as normal.
+Type: String
+Valid Values: `FAST | NORMAL | SLOW`
+Required: No
+
  ** ExcludedTimeRanges **   <a name="ACW-Type-AnomalyDetectorConfiguration-ExcludedTimeRanges"></a>
 An array of time ranges to exclude from use when the anomaly detection model is trained. Use this to make sure that events that could cause unusual values for the metric, such as deployments, aren't used when CloudWatch creates the model.
 Type: Array of [Range](API_Range.md) objects
@@ -21,6 +31,16 @@ To specify a time zone, use the name of the time zone as specified in the standa
 Type: String
 Length Constraints: Maximum length of 50.
 Pattern: `.*`
+Required: No
+
+ ** OutlierFilteringStrength **   <a name="ACW-Type-AnomalyDetectorConfiguration-OutlierFilteringStrength"></a>
+The aggressiveness with which CloudWatch filters outliers from the metric data that the anomaly detection model uses. Stronger filtering excludes more extreme values, which can produce a tighter band of expected values but may also suppress legitimate spikes.
+Valid values:
++  `MINIMAL` - Excludes only the most extreme outliers.
++  `MODERATE` - Excludes a moderate range of outliers. This is the default value.
++  `STRICT` - Excludes a wider range of outliers, which can suppress legitimate spikes.
+Type: String
+Valid Values: `MINIMAL | MODERATE | STRICT`
 Required: No
 
 ## See Also

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::Service GatewayConnectorHealthCheckMatcher
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher"></a>
 
-<a name="aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher-description"></a>The `GatewayConnectorHealthCheckMatcher` property type specifies Property description not available. for an [AWS::ECS::Service](aws-resource-ecs-service.md).
+The codes that indicate a successful health check response from a target.
 
 ## Syntax
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-service-gatewayconnectorhealthcheckmatcher-properties"></a>
 
 `GrpcCode`  <a name="cfn-ecs-service-gatewayconnectorhealthcheckmatcher-grpccode"></a>
-Property description not available.
+The gRPC codes that indicate a successful response from a target.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `HttpCode`  <a name="cfn-ecs-service-gatewayconnectorhealthcheckmatcher-httpcode"></a>
-Property description not available.
+The HTTP codes that indicate a successful response from a target.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

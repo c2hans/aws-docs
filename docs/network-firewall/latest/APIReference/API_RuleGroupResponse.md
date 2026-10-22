@@ -73,7 +73,7 @@ Required: No
  ** RuleGroupStatus **   <a name="networkfirewall-Type-RuleGroupResponse-RuleGroupStatus"></a>
 Detailed information about the current status of a rule group.
 Type: String
-Valid Values: `ACTIVE | DELETING | ERROR`
+Valid Values: `ACTIVE | DELETING | ERROR | UPDATING`
 Required: No
 
  ** SnsTopic **   <a name="networkfirewall-Type-RuleGroupResponse-SnsTopic"></a>

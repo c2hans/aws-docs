@@ -69,7 +69,7 @@ The type of authorizer used to authenticate inbound requests to the payment mana
 A description of the payment manager.
 *Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9\s]+$`
+*Pattern*: `^[^\p{C}]*$`
 *Minimum*: `1`
 *Maximum*: `4096`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -79,6 +79,8 @@ The name of the payment manager.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z][a-zA-Z0-9]{0,47}$`
+*Minimum*: `1`
+*Maximum*: `48`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RoleArn`  <a name="cfn-bedrockagentcore-paymentmanager-rolearn"></a>

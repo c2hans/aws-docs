@@ -103,6 +103,7 @@ The `AWS/EC2` namespace includes the following status check metrics.
 | StatusCheckFailed\_Instance | Reports whether the instance has passed the instance status check in the last minute.<br />This metric can be either `0` (passed) or `1` (failed).<br />By default, this metric is available at a 1-minute frequency at no charge. | Count |  +  Average <br />+  Minimum <br />+  Maximum   |
 | StatusCheckFailed\_System | Reports whether the instance has passed the system status check in the last minute.<br />This metric can be either `0` (passed) or `1` (failed).<br />By default, this metric is available at a 1-minute frequency at no charge. | Count |  +  Average <br />+  Minimum <br />+  Maximum   |
 | StatusCheckFailed\_AttachedEBS | Reports whether the instance has passed the attached EBS status check in the last minute.<br />This metric can be either `0` (passed) or `1` (failed).<br />By default, this metric is available at a 1-minute frequency at no charge. | Count |  +  Average <br />+  Minimum <br />+  Maximum   |
+| StatusCheckFailed\_Performance | Reports whether the instance has passed the performance status checks in the last minute.<br />This metric can be either `0` (passed) or `1` (failed).<br />By default, this metric is available at a 1-minute frequency at no charge. | Count |  +  Average <br />+  Minimum <br />+  Maximum   |
 
 The `AWS/EBS` namespace includes the following status check metric.
 

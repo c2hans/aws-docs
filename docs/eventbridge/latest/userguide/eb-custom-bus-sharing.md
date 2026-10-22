@@ -23,10 +23,10 @@ The following table lists what the consumer account can do with each managed per
 
 | Managed permission | What the consumer account can do |
 | --- | --- |
-| AWSRAMEventBridgeEventBusV2PublishOnly | Publish to the bus, and describe the bus |
-| AWSRAMEventBridgeEventBusV2SubscribeOnly | Attach subscribers to the bus, update their filters, and describe the bus |
-| AWSRAMEventBridgeEventBusV2EventSourceAccess | Attach and update event sources, and describe the bus |
-| AWSRAMEventBridgeEventBusV2FullAccess | Publish with either API, describe the bus, and create, update, and delete its own subscribers and event sources |
+| `AWSRAMEventBridgeEventBusV2PublishOnly` | Publish to the bus, and describe the bus |
+| `AWSRAMEventBridgeEventBusV2SubscribeOnly` | Attach subscribers to the bus, update their filters, and describe the bus |
+| `AWSRAMEventBridgeEventBusV2EventSourceAccess` | Attach and update event sources, and describe the bus |
+| `AWSRAMEventBridgeEventBusV2FullAccess` | Publish with either API, describe the bus, and create, update, and delete its own subscribers and event sources |
 
 ```
 aws ram create-resource-share \

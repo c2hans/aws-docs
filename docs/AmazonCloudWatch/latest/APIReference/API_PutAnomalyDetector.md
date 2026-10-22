@@ -17,13 +17,15 @@ For more information, see [CloudWatch Anomaly Detection](https://docs.aws.amazon
 ```
 {
    "Configuration": {
+      "AdaptationSpeed": "{{string}}",
       "ExcludedTimeRanges": [
          {
             "EndTime": {{number}},
             "StartTime": {{number}}
          }
       ],
-      "MetricTimezone": "{{string}}"
+      "MetricTimezone": "{{string}}",
+      "OutlierFilteringStrength": "{{string}}"
    },
    "Dimensions": [
       {

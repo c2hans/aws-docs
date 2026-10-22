@@ -78,6 +78,9 @@ Required: Yes
          "deploymentType": "string"
       },
       "description": "string",
+      "ec2DeploymentOptions": {
+         "autoScalingGroupProcessesToSuspend": [ "string" ]
+      },
       "errorInformation": {
          "code": "string",
          "message": "string"

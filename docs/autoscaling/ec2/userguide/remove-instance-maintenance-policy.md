@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/remove-instanc
 
 If you want to stop using an instance maintenance policy with your Auto Scaling group, you can remove it.
 
+**Note**
+After you remove an instance maintenance policy, the group falls back to your account default. If the `launchBeforeTerminate` account setting is enabled, replacements use a minimum healthy percentage of 100 and a maximum of 110. For more information, see [Launch replacement instances before terminating old ones](ec2-auto-scaling-launch-before-terminate-account-setting.md).
+
 ------
 #### [ Console ]
 

@@ -148,8 +148,9 @@ The type of resource configuration.
 +  `GROUP` - A group of resources.
 +  `CHILD` - A single resource that is part of a group resource configuration.
 +  `ARN` - An AWS resource.
++  `CIDR` - A network segment (a range of IP addresses) accessed through a `Tunnel` VPC endpoint.
 Type: String
-Valid Values: `GROUP | CHILD | SINGLE | ARN`
+Valid Values: `GROUP | CHILD | SINGLE | ARN | CIDR`
 
 ## Errors
 <a name="API_UpdateResourceConfiguration_Errors"></a>

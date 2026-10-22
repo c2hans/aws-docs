@@ -21,6 +21,9 @@ Deploys an application revision through the specified deployment group.
    "deploymentGroupName": "{{string}}",
    "deploymentMode": "{{string}}",
    "description": "{{string}}",
+   "ec2DeploymentOptions": {
+      "autoScalingGroupProcessesToSuspend": [ "{{string}}" ]
+   },
    "fileExistsBehavior": "{{string}}",
    "ignoreApplicationStopFailures": {{boolean}},
    "overrideAlarmConfiguration": {
@@ -129,6 +132,11 @@ Required: No
  ** [description](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-description"></a>
 A comment about the deployment.
 Type: String
+Required: No
+
+ ** [ec2DeploymentOptions](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-ec2DeploymentOptions"></a>
+Options that control how AWS CodeDeploy manages Amazon EC2 resources during this deployment. If you specify this parameter, the deployment uses these options instead of the options set on the deployment group. If you don't specify it, the deployment uses the options set on the deployment group.
+Type: [EC2DeploymentOptions](API_EC2DeploymentOptions.md) object
 Required: No
 
  ** [fileExistsBehavior](#API_CreateDeployment_RequestSyntax) **   <a name="CodeDeploy-CreateDeployment-request-fileExistsBehavior"></a>
@@ -246,6 +254,10 @@ HTTP Status Code: 400
 
  ** InvalidAutoScalingGroupException **
 The Auto Scaling group was specified in an invalid format or does not exist.
+HTTP Status Code: 400
+
+ ** InvalidAutoScalingGroupProcessToSuspendException **
+The `autoScalingGroupProcessesToSuspend` list in `ec2DeploymentOptions` contains a process that is not valid, or the deployment group isn't an in-place deployment group with at least one Auto Scaling group. Valid values are `Terminate`, `AZRebalance`, `InstanceRefresh`, and `ScheduledActions`. Process names are case sensitive.
 HTTP Status Code: 400
 
  ** InvalidComputePlatformException **

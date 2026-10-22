@@ -135,5 +135,5 @@ The budget ID.
 
 `Status`  <a name="Status-fn::getatt"></a>
 The status of the budget.
-+ `ACTIVE`–The budget is being evaluated.
-+ `INACTIVE`–The budget is inactive. This can include Expired, Canceled, or deleted Deleted statuses.
++ `ACTIVE` - The budget is being evaluated.
++ `INACTIVE` - The budget is inactive. This can include Expired, Canceled, or deleted Deleted statuses.

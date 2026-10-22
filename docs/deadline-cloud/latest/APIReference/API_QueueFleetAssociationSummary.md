@@ -34,10 +34,10 @@ Required: Yes
 
  ** status **   <a name="deadlinecloud-Type-QueueFleetAssociationSummary-status"></a>
 The status of task scheduling in the queue-fleet association.
-+  `ACTIVE`–Association is active.
-+  `STOP_SCHEDULING_AND_COMPLETE_TASKS`–Association has stopped scheduling new tasks and is completing current tasks.
-+  `STOP_SCHEDULING_AND_CANCEL_TASKS`–Association has stopped scheduling new tasks and is canceling current tasks.
-+  `STOPPED`–Association has been stopped.
++  `ACTIVE` - Association is active.
++  `STOP_SCHEDULING_AND_COMPLETE_TASKS` - Association has stopped scheduling new tasks and is completing current tasks.
++  `STOP_SCHEDULING_AND_CANCEL_TASKS` - Association has stopped scheduling new tasks and is canceling current tasks.
++  `STOPPED` - Association has been stopped.
 Type: String
 Valid Values: `ACTIVE | STOP_SCHEDULING_AND_COMPLETE_TASKS | STOP_SCHEDULING_AND_CANCEL_TASKS | STOPPED`
 Required: Yes

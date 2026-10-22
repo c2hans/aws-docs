@@ -78,6 +78,11 @@ Splunk MCP server integration configuration.
 Type: [MCPServerSplunkConfiguration](API_MCPServerSplunkConfiguration.md) object
 Required: No
 
+ ** msteams **   <a name="devopsagent-Type-ServiceConfiguration-msteams"></a>
+The configuration for connecting a Microsoft Teams team to the DevOps Agent service.
+Type: [MSTeamsConfiguration](API_MSTeamsConfiguration.md) object
+Required: No
+
  ** pagerduty **   <a name="devopsagent-Type-ServiceConfiguration-pagerduty"></a>
 PagerDuty integration configuration
 Type: [PagerDutyConfiguration](API_PagerDutyConfiguration.md) object

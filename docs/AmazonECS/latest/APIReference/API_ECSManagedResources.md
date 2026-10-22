@@ -15,6 +15,12 @@ The auto-scaling configuration and policies for the Express service.
 Type: [ManagedAutoScaling](API_ManagedAutoScaling.md) object
 Required: No
 
+ ** gatewayConnections **   <a name="ECS-Type-ECSManagedResources-gatewayConnections"></a>
+The gateway-managed connections for the service revision, including the gateway routes and infrastructure that a gateway created for the service's connector.
+Type: Array of [GatewayConnection](API_GatewayConnection.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
+Required: No
+
  ** ingressPaths **   <a name="ECS-Type-ECSManagedResources-ingressPaths"></a>
 The ingress paths and endpoints for the Express service.
 Type: Array of [ManagedIngressPath](API_ManagedIngressPath.md) objects

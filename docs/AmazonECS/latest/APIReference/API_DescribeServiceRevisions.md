@@ -86,6 +86,17 @@ Required: Yes
                   "updatedAt": number
                }
             },
+            "gatewayConnections": [
+               {
+                  "accessType": "string",
+                  "gatewayArn": "string",
+                  "gatewayRouteArn": "string",
+                  "portName": "string",
+                  "resources": { ... },
+                  "serviceUrl": "string",
+                  "status": "string"
+               }
+            ],
             "ingressPaths": [
                {
                   "accessType": "string",
@@ -168,6 +179,27 @@ Required: Yes
          "fargateEphemeralStorage": {
             "kmsKeyId": "string"
          },
+         "gatewayConnectors": [
+            {
+               "filters": {
+                  "accessTypes": [ "string" ]
+               },
+               "healthCheck": {
+                  "healthCheckIntervalSeconds": number,
+                  "healthCheckPath": "string",
+                  "healthCheckPort": number,
+                  "healthCheckProtocol": "string",
+                  "healthCheckTimeoutSeconds": number,
+                  "healthyThresholdCount": number,
+                  "matcher": {
+                     "grpcCode": "string",
+                     "httpCode": "string"
+                  },
+                  "unhealthyThresholdCount": number
+               },
+               "portName": "string"
+            }
+         ],
          "guardDutyEnabled": boolean,
          "launchType": "string",
          "loadBalancers": [

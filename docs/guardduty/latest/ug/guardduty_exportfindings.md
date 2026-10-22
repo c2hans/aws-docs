@@ -16,9 +16,9 @@ When you configure settings to export findings to an Amazon S3 bucket, GuardDuty
 + [Step 1 – Permissions required to export findings](#guardduty_exportfindings-permissions)
 + [Step 2 – Attaching policy to your KMS key](#guardduty-exporting-findings-kms-policy)
 + [Step 3 – Attaching policy to Amazon S3 bucket](#guardduty_exportfindings-s3-policies)
-+ [Step 4 - Exporting findings to an S3 bucket (Console)](#guardduty_exportfindings-new-bucket)
-+ [Verifying the Amazon S3 bucket owner](#guardduty-exportfindings-expected-bucket-owner)
++ [Step 4 – Exporting findings to an S3 bucket (Console)](#guardduty_exportfindings-new-bucket)
 + [Step 5 – Setting frequency to export updated active findings](#guardduty_exportfindings-frequency)
++ [Verifying the Amazon S3 bucket owner](#guardduty-exportfindings-expected-bucket-owner)
 
 ## Considerations
 <a name="guardduty-export-findings-considerations"></a>
@@ -29,7 +29,7 @@ Before proceeding with the prerequisites and steps to export findings, consider 
   + Your Amazon S3 bucket or object, and AWS KMS key must belong to the same AWS Region.
   + For the findings generated in a commercial Region, you can choose to export these findings to an S3 bucket in any commercial Region. However, you can't export these findings to an S3 bucket in an opt-in Region.
   + For the findings generated in an opt-in Region, you can choose to export these findings to the same opt-in Region where they're generated or any commercial Region. However, you can't export findings from one opt-in Region to another opt-in Region.
-+ **Permissions to export findings** – To configure settings for exporting active findings, your S3 bucket must have permissions that allows GuardDuty to upload objects. You must also have an AWS KMS key that GuardDuty can use to encrypt findings.
++ **Permissions to export findings** – To configure settings for exporting active findings, your S3 bucket must have permissions that allow GuardDuty to upload objects. You must also have an AWS KMS key that GuardDuty can use to encrypt findings.
 + **(Optional) Amazon S3 bucket owner verification** – You can specify the AWS account ID that you expect to own the destination Amazon S3 bucket, so that your findings aren't exported to a bucket that another account owns. We strongly recommend that you provide the expected bucket owner when possible. For more information, see [Verifying the Amazon S3 bucket owner](#guardduty-exportfindings-expected-bucket-owner).
 + **Archived findings are not exported** – The default behavior is that the archived findings, including new instances of suppressed findings, are not exported.
 
@@ -98,7 +98,7 @@ The AWS Region of your KMS key and the Amazon S3 bucket must be the same.
 
    1. Replace {{Region2}} with the AWS Region where the GuardDuty findings are generated.
 
-   1. Replace {{SourceDetectorID}} with the `detectorID` of the GuardDuty account in the specific Region where the findings generated.
+   1. Replace {{SourceDetectorID}} with the `detectorID` of the GuardDuty account in the specific Region where the findings are generated.
 
       To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 **Note**
@@ -124,11 +124,11 @@ If you do not already have an Amazon S3 bucket where you want to export these fi
 
 1. Perform the steps under [To create or edit a bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html) in the *Amazon S3 User Guide*, until the **Edit bucket policy** page appears.
 
-1. The **example policy** shows how grant GuardDuty permission to export findings to your Amazon S3 bucket. If you change the path after you configure export findings, then you must modify the policy to grant permission to the new location.
+1. The **example policy** shows how to grant GuardDuty permission to export findings to your Amazon S3 bucket. If you change the path after you configure export findings, then you must modify the policy to grant permission to the new location.
 
    Copy the following **example policy** and paste it into the **Bucket policy editor**.
 
-   If you added the policy statement before the final statement, add a comma before adding this statement. Make sure that the JSON syntax of your KMS key policy is valid.
+   If you added the policy statement before the final statement, add a comma before adding this statement. Make sure that the JSON syntax of your bucket policy is valid.
 
    **S3 bucket example policy**
 
@@ -227,7 +227,7 @@ If you do not already have an Amazon S3 bucket where you want to export these fi
 
    1. Replace {{us-east-2}} with the AWS Region where the GuardDuty findings are generated.
 
-   1. Replace {{SourceDetectorID}} with the `detectorID` of the GuardDuty account in the specific Region where the findings generated.
+   1. Replace {{SourceDetectorID}} with the `detectorID` of the GuardDuty account in the specific Region where the findings are generated.
 
       To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API.
 
@@ -241,7 +241,7 @@ If you're using GuardDuty in an opt-in Region, replace the value for the "Servic
 
 1. Choose **Save**.
 
-## Step 4 - Exporting findings to an S3 bucket (Console)
+## Step 4 – Exporting findings to an S3 bucket (Console)
 <a name="guardduty_exportfindings-new-bucket"></a>
 
 GuardDuty permits you to export findings to an existing bucket in another AWS account.
@@ -271,32 +271,59 @@ Before completing these steps, make sure you have attached the respective polici
 
    We recommend that you provide this value. If you don't provide a value, GuardDuty doesn't verify the bucket owner. For more information, see [Verifying the Amazon S3 bucket owner](#guardduty-exportfindings-expected-bucket-owner).
 
-1.
-
-**Attach policies**
+1. Attach the following policies to your Amazon S3 bucket and AWS KMS key:
    + Perform the steps to attach the S3 bucket policy. For more information, see [Step 3 – Attaching policy to Amazon S3 bucket](#guardduty_exportfindings-s3-policies).
    + Perform the steps to attach the KMS key policy. For more information, see [Step 2 – Attaching policy to your KMS key](#guardduty-exporting-findings-kms-policy).
 
 1. Choose **Save**.
+
+## Step 5 – Setting frequency to export updated active findings
+<a name="guardduty_exportfindings-frequency"></a>
+
+Configure the frequency for exporting updated active findings as appropriate for your environment. By default, updated findings are exported every 6 hours. This means that any findings that are updated after the most recent export are included in the next export. If updated findings are exported every 6 hours and the export occurs at 12:00, any finding that you update after 12:00 is exported at 18:00.
+
+**To set the frequency**
+
+1. Open the GuardDuty console at [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/).
+
+1. Choose **Settings**.
+
+1. In the **Findings export options** section, choose **Frequency for updated findings**. This sets the frequency for exporting updated Active findings to both EventBridge and Amazon S3. You can choose from the following:
+   + **Update EventBridge and S3 every 15 minutes**
+   + **Update EventBridge and S3 every 1 hour**
+   + **Update EventBridge and S3 every 6 hours (default)**
+
+1. Choose **Save changes**.
 
 ## Verifying the Amazon S3 bucket owner
 <a name="guardduty-exportfindings-expected-bucket-owner"></a>
 
 When you configure settings to export findings, you identify the destination Amazon S3 bucket by its Amazon Resource Name (ARN). If the bucket is later deleted, another AWS account can create a new bucket that uses the same name. Your findings then continue to go to a bucket that a different account now owns.
 
-To protect against this, you can optionally specify the expected bucket owner – the 12-digit AWS account ID of the account that owns the destination Amazon S3 bucket. When you provide this value, GuardDuty verifies that the specified account owns the bucket before it exports findings. If the account ID doesn't match the actual owner of the bucket, GuardDuty doesn't export findings to that bucket and the publishing destination status changes to indicate that you need to fix the destination property. GuardDuty enforces this verification consistently, regardless of the AWS Region where your findings are generated.
+To protect against this, you can optionally specify the expected bucket owner – the 12-digit AWS account ID of the account that owns the destination Amazon S3 bucket. When you provide this value, GuardDuty verifies that the specified account owns the bucket before it exports findings. If the account ID doesn't match the actual owner of the bucket, GuardDuty doesn't export findings to that bucket.
+
+Verify that the account ID that you provide is correct so that GuardDuty continues to export your findings. GuardDuty doesn't check the bucket owner when you create or update the publishing destination. GuardDuty detects an account ID that doesn't match the bucket owner only when it exports findings to the bucket.
 
 **Note**
-Providing the expected bucket owner is optional. If you don't specify the expected bucket owner, GuardDuty doesn't perform this verification and continues to export findings to the bucket that matches the destination ARN. We strongly recommend that you provide the expected bucket owner when possible.
+Providing the expected bucket owner is optional. If you don't specify the expected bucket owner, GuardDuty doesn't perform this verification and continues to export findings to the bucket that matches the destination ARN.
 
-You set the expected bucket owner through the **Expected bucket owner** field on the GuardDuty console (see [Step 4 - Exporting findings to an S3 bucket (Console)](#guardduty_exportfindings-new-bucket)), or through the `ExpectedBucketOwner` property of `DestinationProperties` when you call the [CreatePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreatePublishingDestination.html) or [UpdatePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdatePublishingDestination.html) API. The same property is returned by the [DescribePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribePublishingDestination.html) API.
+You set the expected bucket owner through the **Expected bucket owner** field on the GuardDuty console (see [Step 4 – Exporting findings to an S3 bucket (Console)](#guardduty_exportfindings-new-bucket)), or through the `ExpectedBucketOwner` property of `DestinationProperties` when you call the [CreatePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CreatePublishingDestination.html) or [UpdatePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdatePublishingDestination.html) API. The same property is returned by the [DescribePublishingDestination](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribePublishingDestination.html) API.
 
 ### Adding the expected bucket owner to an existing publishing destination
 <a name="guardduty-exportfindings-expected-bucket-owner-add"></a>
 
 If you already export findings to an Amazon S3 bucket, we recommend that you add the expected bucket owner to your existing publishing destination, so that your findings aren't exported to a bucket that another account creates with the same name if your bucket is ever deleted. Adding this value doesn't change where GuardDuty exports your findings; it only adds the ownership verification described earlier.
 
-Before you begin, make sure that the AWS CLI is installed and configured, and that you know your detector ID and the ID of the publishing destination.
+**Important**
+Make sure that the account ID is correct. If it doesn't match the owner of the bucket, GuardDuty stops exporting findings to the bucket. Although you can change the expected bucket owner later, you can't remove it from the publishing destination.
+
+Before you begin, make sure that you have the following:
++ The latest version of the AWS Command Line Interface (AWS CLI), installed and configured.
++ Your detector ID.
++ The ID of the publishing destination.
+
+**Note**
+Earlier versions of the AWS CLI don't support the `ExpectedBucketOwner` property.
 
 To add the expected bucket owner by using the AWS CLI, run the `update-publishing-destination` command. Provide the current bucket ARN and AWS KMS key ARN along with the account ID that owns the bucket in `ExpectedBucketOwner`. Replace each {{user input placeholder}} with your own values.
 
@@ -323,22 +350,4 @@ In this command, replace the following values:
 To find the `detectorId` for your account and current Region, see the **Settings** page in the [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console, or run the [ListDetectors](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListDetectors.html) API. To find the `destination-id`, run the [ListPublishingDestinations](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListPublishingDestinations.html) API.
 
 **Note**
-If you omit `ExpectedBucketOwner` (or pass an empty value) in an `UpdatePublishingDestination` request, GuardDuty keeps the previously configured value. To change it, provide the new 12-digit AWS account ID.
-
-## Step 5 – Setting frequency to export updated active findings
-<a name="guardduty_exportfindings-frequency"></a>
-
-Configure the frequency for exporting updated active findings as appropriate for your environment. By default, updated findings are exported every 6 hours. This means that any findings that are updated after the most recent export are included in the next export. If updated findings are exported every 6 hours and the export occurs at 12:00, any finding that you update after 12:00 is exported at 18:00.
-
-**To set the frequency**
-
-1. Open the GuardDuty console at [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/).
-
-1. Choose **Settings**.
-
-1. In the **Findings export options** section, choose **Frequency for updated findings**. This sets the frequency for exporting updated Active findings to both EventBridge and Amazon S3. You can choose from the following:
-   + **Update EventBridge and S3 every 15 minutes**
-   + **Update EventBridge and S3 every 1 hour**
-   + **Update EventBridge and S3 every 6 hours (default)**
-
-1. Choose **Save changes**.
+If you omit `ExpectedBucketOwner` (or pass an empty value) in an `UpdatePublishingDestination` request, GuardDuty keeps the previously configured value. This also applies when you clear the **Expected bucket owner** field on the GuardDuty console. To change the value, provide the new 12-digit AWS account ID. To remove the expected bucket owner, delete the publishing destination and create it again without specifying the expected bucket owner.

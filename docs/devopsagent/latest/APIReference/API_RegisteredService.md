@@ -25,7 +25,7 @@ Required: Yes
  ** serviceType **   <a name="devopsagent-Type-RegisteredService-serviceType"></a>
 The service type e.g github or dynatrace
 Type: String
-Valid Values: `github | slack | azure | azuredevops | dynatrace | servicenow | pagerduty | gitlab | eventChannel | mcpservernewrelic | mcpservergrafana | mcpserverdatadog | mcpserver | mcpserversplunk | azureidentity | mcpserversigv4 | remoteagent | remoteagentsigv4`
+Valid Values: `github | slack | azure | azuredevops | msteams | dynatrace | servicenow | pagerduty | gitlab | eventChannel | mcpservernewrelic | mcpservergrafana | mcpserverdatadog | mcpserver | mcpserversplunk | azureidentity | mcpserversigv4 | remoteagent | remoteagentsigv4`
 Required: Yes
 
  ** updatedAt **   <a name="devopsagent-Type-RegisteredService-updatedAt"></a>
