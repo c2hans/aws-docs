@@ -111,23 +111,24 @@ You can use this encryption context in key policy conditions to restrict KMS ope
 Specify the `kmsKeyArn` parameter when calling `StartBatchEvaluation`:
 
 **Example**
-With the AgentCore CLI, use the `--kms-key` option to specify a single KMS key ARN for encrypting batch evaluation results. The AgentCore CLI uses the `--kms-key` flag, which differs from the AWS CLI’s `--kms-key-arn` flag and the boto3 `kmsKeyArn` parameter.
+With the AgentCore CLI, use `--kms-key-arn` to specify a KMS key for encrypting batch evaluation results.
 
 ```
-agentcore run batch-evaluation \
-  -r MyAgent \
-  -e Builtin.Correctness \
-  --kms-key arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab
+agentcore eval batch-evaluation evaluate \
+  --agent <AGENT_ID> \
+  --evaluators Builtin.Correctness \
+  --name my_encrypted_eval \
+  --kms-key-arn arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab
 ```
 
 ```
 aws bedrock-agentcore start-batch-evaluation \
   --batch-evaluation-name "MyEncryptedBatchEval" \
   --kms-key-arn "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab" \
-  --evaluators '[{"evaluatorArn": "arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness"}]' \
+  --evaluators '[{"evaluatorId": "Builtin.Helpfulness"}]' \
   --data-source-config '{
-    "cloudwatchLogs": {
-      "logGroupNames": ["/aws/bedrock-agentcore/sessions/my-agent"],
+    "cloudWatchLogs": {
+      "logGroupNames": ["/aws/bedrock-agentcore/runtimes/my-agent-abc123-DEFAULT"],
       "serviceNames": ["my-agent.DEFAULT"],
       "filterConfig": {
         "timeRange": {
@@ -147,10 +148,10 @@ client = boto3.client('bedrock-agentcore')
 response = client.start_batch_evaluation(
     batchEvaluationName='MyEncryptedBatchEval',
     kmsKeyArn='arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab',
-    evaluators=[{'evaluatorArn': 'arn:aws:bedrock-agentcore:::evaluator/Builtin.Helpfulness'}],
+    evaluators=[{'evaluatorId': 'Builtin.Helpfulness'}],
     dataSourceConfig={
-        'cloudwatchLogs': {
-            'logGroupNames': ['/aws/bedrock-agentcore/sessions/my-agent'],
+        'cloudWatchLogs': {
+            'logGroupNames': ['/aws/bedrock-agentcore/runtimes/my-agent-abc123-DEFAULT'],
             'serviceNames': ['my-agent.DEFAULT'],
             'filterConfig': {
                 'timeRange': {
@@ -179,17 +180,18 @@ For more information about monitoring KMS usage, see [Logging AWS KMS API calls 
 <a name="batch-evaluations-encryption-unavailable"></a>
 
 If you disable or delete the customer managed KMS key used by a batch evaluation:
-+  **StartBatchEvaluation** — Fails at validation with `ValidationException`.
-+  **GetBatchEvaluation** — Returns metadata (name, status, timestamps) but evaluation results stored in encrypted S3 objects cannot be read by the service.
-+  **ListBatchEvaluations** — Succeeds because listing returns metadata only and does not require KMS operations.
-+  **StopBatchEvaluation** — Succeeds because stopping does not require decrypting data.
-+  **DeleteBatchEvaluation** — Succeeds because S3 object deletion does not require KMS decryption.
++  **StartBatchEvaluation**: Fails at validation with `ValidationException`.
++  **GetBatchEvaluation**: Returns metadata (name, status, timestamps), but the service cannot read evaluation results stored in encrypted S3 objects.
++  **ListBatchEvaluations**: Succeeds because listing returns metadata only and does not require KMS operations.
++  **StopBatchEvaluation**: Succeeds because stopping does not require decrypting data.
++  **DeleteBatchEvaluation**: Succeeds because S3 object deletion does not require KMS decryption.
 
 To restore access, re-enable the key or update the key policy to grant the required permissions.
 
-The batch evaluation lifecycle operations described above map to AgentCore CLI commands. The `stop` and `archive` commands target the job via the `-i, --id <id>` option. The `view batch-evaluation` command takes the ID as a positional argument:
-+  **StartBatchEvaluation** — `agentcore run batch-evaluation --kms-key <arn>` (use `-r/--runtime` and `-e/--evaluator`)
-+  **GetBatchEvaluation** — `agentcore view batch-evaluation <id>`
-+  **ListBatchEvaluations** — `agentcore view batch-evaluation` or `agentcore batch-evaluations history`
-+  **StopBatchEvaluation** — `agentcore stop batch-evaluation -i <id>`
-+  **DeleteBatchEvaluation** — `agentcore archive batch-evaluation -i <id>`
+The AgentCore CLI maps these lifecycle operations as follows:
++  **StartBatchEvaluation**: `agentcore eval batch-evaluation evaluate`
++  **GetBatchEvaluation**: `agentcore eval batch-evaluation get --id <id>`
++  **ListBatchEvaluations**: `agentcore eval batch-evaluation list`
++  **StopBatchEvaluation**: `agentcore eval batch-evaluation stop --id <id>`
+
+To call `DeleteBatchEvaluation`, use the AWS SDK.

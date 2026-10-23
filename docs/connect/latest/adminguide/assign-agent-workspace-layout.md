@@ -33,6 +33,8 @@ Your security profile needs permissions to view, edit, create, delete, assign, a
 
 1. For **View version**, choose **LATEST**.
 
+1. (Optional) In the **Customize apps on Agent Workspace** section, choose a layout for the Customer Profiles app. For more information, see [Show Profile Explorer in the agent workspace](add-profileexplorer-to-agentworkspace.md).
+
 1. Choose **Save**.
 
 ## Assign the workspace to agents

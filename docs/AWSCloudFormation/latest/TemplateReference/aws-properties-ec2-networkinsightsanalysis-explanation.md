@@ -458,13 +458,13 @@ The transit gateway attachment.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransitGatewayPolicyTable`  <a name="cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytable"></a>
-Property description not available.
+The transit gateway policy table.
 *Required*: No
 *Type*: [AnalysisComponent](aws-properties-ec2-networkinsightsanalysis-analysiscomponent.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransitGatewayPolicyTableEntry`  <a name="cfn-ec2-networkinsightsanalysis-explanation-transitgatewaypolicytableentry"></a>
-Property description not available.
+The transit gateway policy table entry.
 *Required*: No
 *Type*: [AnalysisTransitGatewayPolicyTableEntry](aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

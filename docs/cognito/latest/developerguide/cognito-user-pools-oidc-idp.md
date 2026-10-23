@@ -40,6 +40,7 @@ Before you begin, you need the following:
   + Only signs ID tokens with HMAC-SHA, ECDSA, or RSA algorithms.
   + Publishes a key ID `kid` claim at its `jwks_uri` and includes a `kid` claim in its tokens.
   + Presents a non-expired public key with a valid root CA trust chain.
+  + Limits responses from its discovery, `token`, `userInfo`, and `jwks_uri` endpoints to 1 MB or smaller.
 
 ## Register an application with an OIDC IdP
 <a name="cognito-user-pools-oidc-idp-step-1"></a>
@@ -194,6 +195,9 @@ https://{{mydomain.auth.us-east-1.amazoncognito.com}}/oauth2/authorize?identity_
 
 ## Step-up authentication for federated users
 <a name="cognito-user-pools-step-up-federation"></a>
+
+**Note**
+Authentication levels with ACR and AMR claims is rolling out gradually. This feature might not yet be available to your user pool. If the behavior described here isn't available, check back later as the rollout continues.
 
 For federated users who sign in through an OpenID Connect (OIDC) identity provider (IdP), Amazon Cognito passes through the ACR and AMR values of the OIDC IdP instead of computing its own. The OIDC IdP owns authentication for these federated users. Step-up authentication for a federated user happens through the OIDC IdP: Amazon Cognito redirects to the IdP with `acr_values`. For more information about ACR levels and AMR values, see [Authentication levels with ACR and AMR claims](cognito-user-pools-step-up-authentication.md).
 

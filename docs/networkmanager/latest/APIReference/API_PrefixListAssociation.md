@@ -11,7 +11,7 @@ Information about a prefix list association with a core network.
 <a name="API_PrefixListAssociation_Contents"></a>
 
  ** CoreNetworkId **   <a name="networkmanager-Type-PrefixListAssociation-CoreNetworkId"></a>
-The core network id in the association.
+The ID of the core network in the association.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 50.
 Pattern: `^core-network-([0-9a-f]{8,17})$`

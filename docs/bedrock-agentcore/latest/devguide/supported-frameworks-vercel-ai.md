@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 This page explains how to instrument a [Vercel AI SDK](https://sdk.vercel.ai/) agent, how spans are identified, and how evaluation fields are extracted. The Vercel AI SDK is a TypeScript-only framework, so all support on this page applies to TypeScript agents.
 
 **Note**
-AgentCore Evaluations supports the Vercel AI SDK for TypeScript agents only. Python is not supported at this time.
+AgentCore Evaluations supports the Vercel AI SDK for TypeScript agents.
 
  **Topics**
 +  [TypeScript agent support](#vercel-ai-typescript)

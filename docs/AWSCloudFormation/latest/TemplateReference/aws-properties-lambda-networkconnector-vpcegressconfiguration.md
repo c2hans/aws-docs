@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AssociatedComputeResourceTypes](#cfn-lambda-networkconnector-vpcegressconfiguration-associatedcomputeresourcetypes)" : {{[ String, ... ]}},
+  "[ElasticIpConfiguration](#cfn-lambda-networkconnector-vpcegressconfiguration-elasticipconfiguration)" : {{}},
   "[NetworkProtocol](#cfn-lambda-networkconnector-vpcegressconfiguration-networkprotocol)" : {{String}},
   "[SecurityGroupIds](#cfn-lambda-networkconnector-vpcegressconfiguration-securitygroupids)" : {{[ String, ... ]}},
   "[SubnetIds](#cfn-lambda-networkconnector-vpcegressconfiguration-subnetids)" : {{[ String, ... ]}}
@@ -32,6 +33,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AssociatedComputeResourceTypes](#cfn-lambda-networkconnector-vpcegressconfiguration-associatedcomputeresourcetypes): {{
     - String}}
+  [ElasticIpConfiguration](#cfn-lambda-networkconnector-vpcegressconfiguration-elasticipconfiguration): {{
+    }}
   [NetworkProtocol](#cfn-lambda-networkconnector-vpcegressconfiguration-networkprotocol): {{String}}
   [SecurityGroupIds](#cfn-lambda-networkconnector-vpcegressconfiguration-securitygroupids): {{
     - String}}
@@ -51,6 +54,12 @@ The types of Lambda compute resources that can use this connector:
 *Allowed values*: `MicroVm | WebFunction`
 *Minimum*: `1`
 *Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ElasticIpConfiguration`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-elasticipconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*:
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NetworkProtocol`  <a name="cfn-lambda-networkconnector-vpcegressconfiguration-networkprotocol"></a>

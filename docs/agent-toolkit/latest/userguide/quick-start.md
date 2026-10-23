@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-sta
 
 The fastest way to get started with the Agent Toolkit for AWS is to install the plugin for your AI coding agent. The plugin bundles the AWS MCP Server configuration and a curated set of agent skills in a single install.
 
+For what the Agent Toolkit for AWS adds to the agent you already use, and what it does not do, see [When to use the Agent Toolkit for AWS](what-is-agent-toolkit.md#agent-toolkit-when-to-use).
+
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>
 
@@ -38,6 +40,16 @@ codex plugin marketplace add aws/agent-toolkit-for-aws
 ```
 
 Then launch Codex and run `/plugins` to browse and install the **aws-core** plugin.
+
+**Devin**
+
+In your terminal:
+
+```
+devin plugins install aws/agent-toolkit-for-aws#plugins/aws-core
+```
+
+You must be signed in to Devin (`devin auth login`) to install plugins. In the Devin web app, you can instead choose **Customize**, **Plugins**, **Add plugin**, and then **From repository**. Enter the repository `aws/agent-toolkit-for-aws` and the subdirectory `plugins/aws-core`. Plugins that you install in the web app are also available in the Devin CLI and Devin Desktop.
 
 **Kiro**
 
@@ -84,7 +96,9 @@ If you have the AWS CLI installed (version `2.35.0` or later), you can run an in
 aws configure agent-toolkit
 ```
 
-The wizard works with multiple agents, including Kiro, Cursor, and Claude Code. For more information, including how to install and manage individual skills from the command line, see [AWS CLI](aws-cli.md).
+The wizard works with multiple agents, including Kiro, Cursor, and Claude Code.
+
+To install and manage individual skills from the command line, see [AWS CLI](aws-cli.md).
 
 ## Step 2: Verify your connection
 <a name="quick-start-verify"></a>
@@ -106,6 +120,8 @@ Ask your agent to perform an AWS task:
 + "Help me troubleshoot why my CloudFormation deployment failed."
 
 The agent discovers and uses relevant skills automatically. You do not need to know which skills are available — the agent finds them based on your request.
+
+For more tasks, what handles each one, and where each is documented, see [Common tasks and where to start](what-is-agent-toolkit.md#agent-toolkit-common-tasks).
 
 ## Configure the recommended rules file
 <a name="quick-start-rules-file"></a>

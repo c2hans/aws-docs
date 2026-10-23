@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/knowledge-desktop
 # Knowledge
 <a name="knowledge-desktop"></a>
 
-The Knowledge tab in Customize is where you give Amazon Quick access to files on your computer and control how Quick indexes them. For each folder, choose whether Quick uploads its files for full-content search, extracts information from them into your knowledge graph, both, or neither. Adding a folder grants access only; indexing stays off until you turn it on.
+The **Knowledge** tab in **Customize** is where you give Amazon Quick access to files on your computer and control how Quick indexes them. For each folder, choose whether Quick uploads its files for full-content search, extracts information from them into your knowledge graph, both, or neither. Adding a folder grants access only; indexing stays off until you turn it on.
 
 ## Indexing options
 <a name="knowledge-indexing-options"></a>
 
-Open a folder's details pane and choose **Settings** to find these options under Indexing.
+Open a folder's details pane and choose **Settings** to find these options under **Indexing**.
 
 | Option | Description |
 | --- | --- |
@@ -21,12 +21,12 @@ Open a folder's details pane and choose **Settings** to find these options under
 ## Details
 <a name="knowledge-details"></a>
 
-The Details tab reports Files, Size, and Entities extracted. Entities extracted shows a dash until you turn on Always remember file information. Choose **Files** to jump to the advanced settings. Choose **Sync** at the top of the pane to pick up changes immediately.
+The **Details** tab reports Files, Size, and Entities extracted. Entities extracted shows a dash until you turn on **Always remember file information**. Choose **Files** to jump to the advanced settings. Choose **Sync** at the top of the pane to pick up changes immediately.
 
 ## Advanced settings
 <a name="knowledge-advanced"></a>
 
-Choose **Advanced** on the Settings tab to reach the per-folder indexing controls. Scan interval (every 30 minutes) and Max file size are read-only; files larger than the maximum are skipped. You can set Max file age to index only files modified within a window, restrict File extensions, add Exclude patterns as glob patterns that Quick never indexes, and give knowledge graph extraction instructions to guide entity extraction. Rescan folder picks up changes incrementally. Rebuild index rebuilds from scratch and shows a cost estimate first.
+Choose **Advanced** on the **Settings** tab to reach the per-folder indexing controls. **Scan interval** (every 30 minutes) and **Max file size** are read-only; files larger than the maximum are skipped. You can set **Max file age** to index only files modified within a window, restrict **File extensions**, add **Exclude patterns** as glob patterns that Quick never indexes, and give knowledge graph extraction instructions to guide entity extraction. **Rescan folder** picks up changes incrementally. **Rebuild index** rebuilds from scratch and shows a cost estimate first.
 
 ## Search indexing limits
 <a name="knowledge-limits"></a>
@@ -36,4 +36,4 @@ Global search-indexing limits apply across all indexed folders. Indexing stops a
 ## Folder access permissions
 <a name="knowledge-permissions"></a>
 
-To set what Quick can do with a folder, choose **Manage permissions** and set an access level: Full Access (read and write), Read Only, or Ask Each Time. You can adjust individual read and write operations independently.
+To set what Quick can do with a folder, choose **Manage permissions** and set an access level: **Full Access** (read and write), **Read Only**, or **Ask Each Time**. You can adjust individual read and write operations independently.

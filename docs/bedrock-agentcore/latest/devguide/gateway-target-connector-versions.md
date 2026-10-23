@@ -40,6 +40,15 @@ The following table describes how the Gateway resolves connector versions when y
 | --- | --- | --- |
 |  `1.0.0`  | 2026-04-01 | Initial release — `Retrieve` and `AgenticRetrieveStream` operations. |
 
+## AWS Step Functions (`states`)
+<a name="gateway-target-connector-versions-step-functions"></a>
+
+ **Default version:** `1.0.0`
+
+| Version | Released | Changes |
+| --- | --- | --- |
+|  `1.0.0`  | 2026-10-21 | Initial release — `StartExecution`, `StartSyncExecution`, `DescribeExecution`, `StopExecution`, `GetExecutionHistory`, `ListExecutions`, `DescribeStateMachine`, `SendTaskSuccess`, `SendTaskFailure`, and `SendTaskHeartbeat` operations. `stateMachineArn` is pinnable on the four state-machine operations. |
+
 ## Example: pin a version
 <a name="gateway-target-connector-versions-pin-example"></a>
 

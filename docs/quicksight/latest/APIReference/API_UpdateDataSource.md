@@ -58,7 +58,17 @@ Content-type: application/json
                   "ConnectionType": "{{string}}"
                },
                "DatabricksParameters": {
+                  "AuthenticationType": "{{string}}",
                   "Host": "{{string}}",
+                  "OAuthParameters": {
+                     "IdentityProviderCACertificatesBundleS3Uri": "{{string}}",
+                     "IdentityProviderResourceUri": "{{string}}",
+                     "IdentityProviderVpcConnectionProperties": {
+                        "VpcConnectionArn": "{{string}}"
+                     },
+                     "OAuthScope": "{{string}}",
+                     "TokenProviderUrl": "{{string}}"
+                  },
                   "Port": {{number}},
                   "SqlEndpointPath": "{{string}}"
                },
@@ -240,7 +250,20 @@ Content-type: application/json
          "ClientSecret": "{{string}}",
          "Username": "{{string}}"
       },
+      "OneDriveClientCredentials": {
+         "CertThumbprint": "{{string}}",
+         "KmsKeyArn": "{{string}}"
+      },
       "SecretArn": "{{string}}",
+      "ServiceAccountCredentials": {
+         "AdminAccountEmail": "{{string}}",
+         "ClientEmail": "{{string}}",
+         "ServiceAccountPrivateKey": "{{string}}"
+      },
+      "SharePointClientCredentials": {
+         "CertThumbprint": "{{string}}",
+         "KmsKeyArn": "{{string}}"
+      },
       "WebProxyCredentials": {
          "WebProxyPassword": "{{string}}",
          "WebProxyUsername": "{{string}}"
@@ -285,7 +308,17 @@ Content-type: application/json
          "ConnectionType": "{{string}}"
       },
       "DatabricksParameters": {
+         "AuthenticationType": "{{string}}",
          "Host": "{{string}}",
+         "OAuthParameters": {
+            "IdentityProviderCACertificatesBundleS3Uri": "{{string}}",
+            "IdentityProviderResourceUri": "{{string}}",
+            "IdentityProviderVpcConnectionProperties": {
+               "VpcConnectionArn": "{{string}}"
+            },
+            "OAuthScope": "{{string}}",
+            "TokenProviderUrl": "{{string}}"
+         },
          "Port": {{number}},
          "SqlEndpointPath": "{{string}}"
       },

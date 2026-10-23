@@ -16,6 +16,10 @@ To call this API operation for specific countries, see the following country-spe
 + You must complete the tax registration process in the [Payment preferences](https://console.aws.amazon.com/billing/home#/paymentpreferences/paymentmethods) page in the AWS Billing and Cost Management console. After your TRN and billing address are verified, you can call this API operation.
 + For AWS accounts created through AWS Organizations, you can call this API operation when you don't have a billing address.
 
+ **Colombia**
++ You can provide a Registro Único Tributario (RUT) document in the **verificationDetails** field.
++ If you provide the RUT document, you do not need to provide address and legal name. These will be populated based on your document.
+
  **Georgia**
 + The valid `personType` values are `Physical Person` and `Business`.
 
@@ -176,6 +180,11 @@ Content-type: application/json
             "businessRegistrationNumber": "{{string}}",
             "serviceTaxCodes": [ "{{string}}" ],
             "taxInformationNumber": "{{string}}"
+         },
+         "mexicoAdditionalInfo": {
+            "cfdiUsageCode": "{{string}}",
+            "taxRegime": "{{string}}",
+            "taxRegimeFullName": "{{string}}"
          },
          "monacoAdditionalInfo": {
             "businessNumber": "{{string}}"

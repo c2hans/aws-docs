@@ -100,6 +100,11 @@ The transit gateway.
 Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
+ ** transitGatewayPolicyTableEntry **
+The entry in a transit gateway policy table.
+Type: [AnalysisTransitGatewayPolicyTableEntry](API_AnalysisTransitGatewayPolicyTableEntry.md) object
+Required: No
+
  ** transitGatewayRouteTableRoute **
 The route in a transit gateway route table.
 Type: [TransitGatewayRouteTableRoute](API_TransitGatewayRouteTableRoute.md) object

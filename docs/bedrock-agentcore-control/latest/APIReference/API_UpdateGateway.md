@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 
 Updates an existing gateway.
 
+Replaces the entire gateway configuration. Any optional field that you omit, including fields in `protocolConfiguration`, is reset. For information about retrieving the current configuration, see [GetGateway](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_GetGateway.html).
+
 ## Request Syntax
 <a name="API_UpdateGateway_RequestSyntax"></a>
 

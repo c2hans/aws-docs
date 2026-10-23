@@ -18,7 +18,9 @@ The following PHP versions contain the fix:
 | 8.4 | 8.4.27 |
 | 8.5 | 8.5.12 |
 
-PHP 8.1 and older no longer receive updates from the PHP project. If your instance runs one of these versions, upgrade to a supported version.
+**Note**
+We recommend that you use PHP 8.2 or later. PHP 8.1 and older no longer receive updates from the PHP project. However, the Sury PHP repository (packages.sury.org) has published fixes for these vulnerabilities for PHP 5.6 through 8.1 on Debian. If you can't upgrade to PHP 8.2 or later right away, you can install these fixes from the Sury repository, and then plan to upgrade to a supported version. For the commands to add the Sury repository, see [Add the Sury PHP package repository and install PHP-FPM](#php-cve-bitnami-add-sury-repo).
+The Sury PHP repository is a third-party repository. It is not owned or maintained by AWS. For more information, see the [Sury website](https://deb.sury.org/).
 
 If your Lightsail instance runs PHP, we recommend that you update it as soon as possible. To find out whether your instance is affected, see [Which instances are affected](#php-cve-affected-instances). For details about the vulnerabilities, see the [PHP security advisory](https://www.php.net/index.php#2026-10-20-1) on the PHP website.
 
@@ -120,7 +122,7 @@ These steps change several configuration files on your instance. If you're not c
    /opt/bitnami/php/bin/php -v
    ```
 
-1. **Add the Sury PHP package repository and install PHP-FPM.** Debian's own repositories only provide one PHP release line, so add the Sury PHP repository (packages.sury.org), which provides all supported PHP release lines for Debian. Run the following commands. The first line of the commands reads the release line of your Bitnami PHP, the same one that you checked in the previous step (for example, `8.2`), and saves it in the `PHP_VERSION` variable, so that you install the same release line.
+1. <a name="php-cve-bitnami-add-sury-repo"></a>**Add the Sury PHP package repository and install PHP-FPM.** Debian's own repositories only provide one PHP release line, so add the Sury PHP repository (packages.sury.org), which provides all supported PHP release lines for Debian. Run the following commands. The first line of the commands reads the release line of your Bitnami PHP, the same one that you checked in the previous step (for example, `8.2`), and saves it in the `PHP_VERSION` variable, so that you install the same release line.
 **Important**
 The Sury PHP repository is a third-party repository. It is not owned or maintained by AWS. For more information, see the [Sury website](https://deb.sury.org/).
 

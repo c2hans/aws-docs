@@ -13,6 +13,7 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 + [Managing access using policies](#security_iam_access-manage)
 + [How AWS MCP Server works with IAM](security_iam_service-with-iam.md)
 + [Identity-based policy examples for AWS MCP Server](security_iam_id-based-policy-examples.md)
++ [AWS managed policies for AWS MCP Server](security-iam-awsmanpol.md)
 + [Troubleshooting AWS MCP Server identity and access](security_iam_troubleshoot.md)
 
 ## Audience

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-window-tutorial-cli.html
 ---
 
-• The AWS Systems Manager CloudWatch Dashboard will no longer be available after April 30, 2026. Customers can continue to use Amazon CloudWatch console to view, create, and manage their Amazon CloudWatch dashboards, just as they do today. For more information, see [Amazon CloudWatch Dashboard documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
-
 # Tutorials: Create and manage maintenance windows using the AWS CLI
 <a name="maintenance-window-tutorial-cli"></a>
 

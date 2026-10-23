@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-update-v
 
 1.  Go to the **Machine learning product** page and select your product.
 
-1.  Choose **Request changes**, select **Update product visibilty**, and then select **Public** or **Restricted**.
+1.  Choose **Request changes**, select **Update product visibility**, and then select **Public** or **Restricted**.
 
 1.  Review your changes and choose **Submit**.
 

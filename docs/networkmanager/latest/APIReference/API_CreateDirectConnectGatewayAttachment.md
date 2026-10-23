@@ -19,6 +19,15 @@ Content-type: application/json
    "CoreNetworkId": "{{string}}",
    "DirectConnectGatewayArn": "{{string}}",
    "EdgeLocations": [ "{{string}}" ],
+   "NatGatewayRules": [
+      {
+         "MatchSourceCidr": "{{string}}",
+         "NatCidr": "{{string}}",
+         "RuleNumber": {{number}}
+      }
+   ],
+   "NatGatewaySupport": "{{string}}",
+   "NatSystemRouteSupport": {{boolean}},
    "RoutingPolicyLabel": "{{string}}",
    "Tags": [
       {
@@ -67,6 +76,23 @@ Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[\s\S]*`
 Required: Yes
 
+ ** [NatGatewayRules](#API_CreateDirectConnectGatewayAttachment_RequestSyntax) **   <a name="networkmanager-CreateDirectConnectGatewayAttachment-request-NatGatewayRules"></a>
+The NAT rules for the Direct Connect gateway attachment, up to 50 rules.
+Type: Array of [NatRuleRequest](API_NatRuleRequest.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Required: No
+
+ ** [NatGatewaySupport](#API_CreateDirectConnectGatewayAttachment_RequestSyntax) **   <a name="networkmanager-CreateDirectConnectGatewayAttachment-request-NatGatewaySupport"></a>
+Specifies whether to enable NAT gateway support on the Direct Connect gateway attachment. To enable NAT gateway support, you must also specify at least one NAT rule. If you don't specify a value, NAT gateway support is disabled. Only the core network owner can configure NAT on an attachment.
+Type: String
+Valid Values: `ENABLE | DISABLE`
+Required: No
+
+ ** [NatSystemRouteSupport](#API_CreateDirectConnectGatewayAttachment_RequestSyntax) **   <a name="networkmanager-CreateDirectConnectGatewayAttachment-request-NatSystemRouteSupport"></a>
+Specifies whether the core network installs system routes for the NAT CIDR blocks of the attachment's NAT rules. System routes have a route type of `SYSTEM`. NAT is applied to traffic whether or not this option is enabled. The default is `true`.
+Type: Boolean
+Required: No
+
  ** [RoutingPolicyLabel](#API_CreateDirectConnectGatewayAttachment_RequestSyntax) **   <a name="networkmanager-CreateDirectConnectGatewayAttachment-request-RoutingPolicyLabel"></a>
 The routing policy label to apply to the Direct Connect Gateway attachment for traffic routing decisions.
 Type: String
@@ -105,6 +131,8 @@ Content-type: application/json
                "ResourceArn": "string"
             }
          ],
+         "NatGatewaySupport": "string",
+         "NatSystemRouteSupport": boolean,
          "NetworkFunctionGroupName": "string",
          "OwnerAccountId": "string",
          "ProposedNetworkFunctionGroupChange": {

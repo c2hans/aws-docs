@@ -30,6 +30,16 @@ A control to display a dropdown list with buttons that are used to select a sing
 Type: [FilterDropDownControl](API_FilterDropDownControl.md) object
 Required: No
 
+ ** HierarchyDropdown **   <a name="QS-Type-FilterControl-HierarchyDropdown"></a>
+A control from a hierarchy filter that displays the hierarchy as a dropdown list. You can expand a value to see and select the values beneath it, and select either a single value or multiple values.
+Type: [HierarchyFilterDropDownControl](API_HierarchyFilterDropDownControl.md) object
+Required: No
+
+ ** HierarchyList **   <a name="QS-Type-FilterControl-HierarchyList"></a>
+A control from a hierarchy filter that displays the hierarchy as a list. You can expand a value to see and select the values beneath it, and select either a single value or multiple values.
+Type: [HierarchyFilterListControl](API_HierarchyFilterListControl.md) object
+Required: No
+
  ** List **   <a name="QS-Type-FilterControl-List"></a>
 A control to display a list of buttons or boxes. This is used to select either a single value or multiple values.
 Type: [FilterListControl](API_FilterListControl.md) object

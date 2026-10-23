@@ -20,6 +20,8 @@ Content-type: application/json
    },
    "ExactCidrMatches": [ "{{string}}" ],
    "LongestPrefixMatches": [ "{{string}}" ],
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}",
    "PrefixListIds": [ "{{string}}" ],
    "RouteTableIdentifier": {
       "CoreNetworkNetworkFunctionGroup": {
@@ -80,6 +82,19 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `[\s\S]*`
 Required: No
 
+ ** [MaxResults](#API_GetNetworkRoutes_RequestSyntax) **   <a name="networkmanager-GetNetworkRoutes-request-MaxResults"></a>
+The maximum number of results to return.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 500.
+Required: No
+
+ ** [NextToken](#API_GetNetworkRoutes_RequestSyntax) **   <a name="networkmanager-GetNetworkRoutes-request-NextToken"></a>
+The token for the next page of results.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `[\s\S]*`
+Required: No
+
  ** [PrefixListIds](#API_GetNetworkRoutes_RequestSyntax) **   <a name="networkmanager-GetNetworkRoutes-request-PrefixListIds"></a>
 The IDs of the prefix lists.
 Type: Array of strings
@@ -115,7 +130,7 @@ Required: No
  ** [Types](#API_GetNetworkRoutes_RequestSyntax) **   <a name="networkmanager-GetNetworkRoutes-request-Types"></a>
 The route types.
 Type: Array of strings
-Valid Values: `PROPAGATED | STATIC`
+Valid Values: `PROPAGATED | STATIC | SYSTEM`
 Required: No
 
 ## Response Syntax
@@ -126,6 +141,11 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "CoreNetworkNetworkFunctionGroup": {
+      "CoreNetworkId": "string",
+      "EdgeLocation": "string",
+      "NetworkFunctionGroupName": "string"
+   },
    "CoreNetworkSegmentEdge": {
       "CoreNetworkId": "string",
       "EdgeLocation": "string",
@@ -150,6 +170,7 @@ Content-type: application/json
          "Type": "string"
       }
    ],
+   "NextToken": "string",
    "RouteTableArn": "string",
    "RouteTableTimestamp": number,
    "RouteTableType": "string"
@@ -163,6 +184,10 @@ If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
 
+ ** [CoreNetworkNetworkFunctionGroup](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-CoreNetworkNetworkFunctionGroup"></a>
+Describes the network function group route table that the routes are from. This field is present only when you specify `CoreNetworkNetworkFunctionGroup` in `RouteTableIdentifier`.
+Type: [CoreNetworkNetworkFunctionGroupIdentifier](API_CoreNetworkNetworkFunctionGroupIdentifier.md) object
+
  ** [CoreNetworkSegmentEdge](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-CoreNetworkSegmentEdge"></a>
 Describes a core network segment edge.
 Type: [CoreNetworkSegmentEdgeIdentifier](API_CoreNetworkSegmentEdgeIdentifier.md) object
@@ -170,6 +195,12 @@ Type: [CoreNetworkSegmentEdgeIdentifier](API_CoreNetworkSegmentEdgeIdentifier.md
  ** [NetworkRoutes](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-NetworkRoutes"></a>
 The network routes.
 Type: Array of [NetworkRoute](API_NetworkRoute.md) objects
+
+ ** [NextToken](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-NextToken"></a>
+The token for the next page of results.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `[\s\S]*`
 
  ** [RouteTableArn](#API_GetNetworkRoutes_ResponseSyntax) **   <a name="networkmanager-GetNetworkRoutes-response-RouteTableArn"></a>
 The ARN of the route table.

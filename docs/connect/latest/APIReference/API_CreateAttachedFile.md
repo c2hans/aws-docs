@@ -116,7 +116,7 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
  ** [FileStatus](#API_CreateAttachedFile_ResponseSyntax) **   <a name="connect-CreateAttachedFile-response-FileStatus"></a>
 The current status of the attached file. Valid values: `PROCESSING` \| `APPROVED` \| `REJECTED` \| `FAILED`.
 Type: String
-Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED`
+Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
 
 ## Errors
 <a name="API_CreateAttachedFile_Errors"></a>

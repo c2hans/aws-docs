@@ -47,6 +47,7 @@ Content-type: application/json
    },
    "Arn": "string",
    "Id": "string",
+   "LastFailoverTime": number,
    "SignInConfig": {
       "Distributions": [
          {
@@ -86,6 +87,10 @@ Pattern: `^arn:([a-zA-Z0-9-]+):connect:[a-z]+-[a-z-]+-[0-9]+:[0-9]+:traffic-dist
 The identifier of the traffic distribution group. This can be the ID or the ARN if the API is being called in the Region where the traffic distribution group was created. The ARN must be provided if the call is from the replicated Region.
 Type: String
 Pattern: `^[a-zA-Z0-9_-]+$`
+
+ ** [LastFailoverTime](#API_GetTrafficDistribution_ResponseSyntax) **   <a name="connect-GetTrafficDistribution-response-LastFailoverTime"></a>
+The timestamp of the most recent failover for the traffic distribution group. This value is updated each time `UpdateTrafficDistribution` is called to change the traffic distribution.
+Type: Timestamp
 
  ** [SignInConfig](#API_GetTrafficDistribution_ResponseSyntax) **   <a name="connect-GetTrafficDistribution-response-SignInConfig"></a>
 The distribution that determines which AWS Regions should be used to sign in agents in to both the instance and its replica(s).

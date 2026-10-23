@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/oauth-aut
 # OAuth 2.1 authentication for AWS MCP Server
 <a name="oauth-authentication"></a>
 
-AWS MCP Server supports OAuth 2.1 authorization through AWS Sign-in. OAuth-compatible MCP clients — including Claude Code, Cursor, Gemini CLI, Kiro, and GitHub Copilot — can connect directly to AWS MCP Server. No local proxy software is required. For an overview of how OAuth works with AWS Sign-in, see [OAuth with AWS Sign-in overview](https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html) and [AWS MCP Server](https://docs.aws.amazon.com/signin/latest/userguide/aws-mcp-server.html) in the *AWS Sign-in User Guide*.
+AWS MCP Server supports OAuth 2.1 authorization through AWS Sign-in. OAuth-compatible MCP clients can connect directly to AWS MCP Server. No local proxy software is required. Such clients include Claude Code, Cursor, Gemini CLI, Kiro, Visual Studio Code, and GitHub Copilot. For an overview of how OAuth works with AWS Sign-in, see [OAuth with AWS Sign-in overview](https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html) and [AWS MCP Server](https://docs.aws.amazon.com/signin/latest/userguide/aws-mcp-server.html) in the *AWS Sign-in User Guide*.
 
 With OAuth, your MCP client authenticates using standard OAuth authorization flows while continuing to rely on existing IAM identities, permissions, and organizational controls. AWS Sign-in acts as the OAuth authorization server, issuing scoped access tokens that AWS MCP Server accepts as bearer tokens.
 
@@ -14,7 +14,7 @@ With OAuth, your MCP client authenticates using standard OAuth authorization flo
 
 Before using OAuth with AWS MCP Server, ensure the following:
 + **IAM permissions** — The IAM principal must have `signin:AuthorizeOAuth2Access` and `signin:CreateOAuth2Token` actions allowed. You can use the AWS managed policy `AWSMCPSignInOAuthAccessPolicy`, or create a custom policy.
-+ **Supported MCP client** — An OAuth-compatible MCP client such as Claude Code, Cursor, Cline, Gemini CLI, Kiro, or GitHub Copilot.
++ **Supported MCP client** — An OAuth-compatible MCP client such as Claude Code, Cursor, Cline, Gemini CLI, Kiro, Visual Studio Code, or GitHub Copilot.
 
 **Attach the managed policy**
 
@@ -84,6 +84,43 @@ codex mcp add aws-mcp --url https://aws-mcp.us-east-1.api.aws/mcp?oauth=initiali
 ```
 gemini mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize --transport http
 ```
+
+------
+#### [ Visual Studio Code ]
+
+Add the server to `.vscode/mcp.json` in your workspace, or run *MCP: Open User Configuration* from the Command Palette to configure it for every workspace:
+
+```
+{
+  "servers": {
+    "aws-mcp": {
+      "type": "http",
+      "url": "https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize"
+    }
+  }
+}
+```
+
+Visual Studio Code uses a `servers` top-level key rather than the `mcpServers` key that most other clients use.
+
+------
+#### [ GitHub Copilot CLI ]
+
+Add the server to `~/.copilot/mcp-config.json` to configure it for all projects, or to `.github/mcp.json` (or `.mcp.json` at your repository root) to configure it for a single project:
+
+```
+{
+  "mcpServers": {
+    "aws-mcp": {
+      "type": "http",
+      "url": "https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize",
+      "tools": ["*"]
+    }
+  }
+}
+```
+
+Run `/mcp` in a Copilot CLI session to confirm that the server is listed. For more information, see [Add MCP servers to Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers) in the GitHub documentation.
 
 ------
 

@@ -79,6 +79,7 @@ Content-type: application/json
          "context": { ... },
          "errorCode": "string",
          "errorMessage": "string",
+         "evaluationDimensionName": "string",
          "evaluatorArn": "string",
          "evaluatorId": "string",
          "evaluatorName": "string",

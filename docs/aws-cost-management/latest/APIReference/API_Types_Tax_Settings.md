@@ -33,6 +33,7 @@ The following data types are supported by Tax Settings:
 +  [Jurisdiction](API_taxSettings_Jurisdiction.md)
 +  [KenyaAdditionalInfo](API_taxSettings_KenyaAdditionalInfo.md)
 +  [MalaysiaAdditionalInfo](API_taxSettings_MalaysiaAdditionalInfo.md)
++  [MexicoAdditionalInfo](API_taxSettings_MexicoAdditionalInfo.md)
 +  [MonacoAdditionalInfo](API_taxSettings_MonacoAdditionalInfo.md)
 +  [PhilippinesAdditionalInfo](API_taxSettings_PhilippinesAdditionalInfo.md)
 +  [PolandAdditionalInfo](API_taxSettings_PolandAdditionalInfo.md)

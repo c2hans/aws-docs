@@ -46,7 +46,7 @@ Pattern: `[\s\S]*`
 Required: No
 
  ** RoutingPolicyAssociationDetails **   <a name="networkmanager-Type-CoreNetworkChangeEventValues-RoutingPolicyAssociationDetails"></a>
-The names of the routing policies and other association details in the core network change values.
+The names of the routing policies and other association details in a core network change event.
 Type: Array of [RoutingPolicyAssociationDetail](API_RoutingPolicyAssociationDetail.md) objects
 Required: No
 

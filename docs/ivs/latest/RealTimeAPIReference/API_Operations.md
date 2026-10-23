@@ -37,6 +37,7 @@ The following actions are supported:
 +  [ListStageSessions](API_ListStageSessions.md)
 +  [ListStorageConfigurations](API_ListStorageConfigurations.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)
++  [RevokeConnectionToken](API_RevokeConnectionToken.md)
 +  [StartComposition](API_StartComposition.md)
 +  [StartParticipantReplication](API_StartParticipantReplication.md)
 +  [StopComposition](API_StopComposition.md)

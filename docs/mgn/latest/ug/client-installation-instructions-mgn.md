@@ -7,6 +7,9 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # MGN vCenter Client installation instructions
 <a name="client-installation-instructions-mgn"></a>
 
+**Important**
+Agentless replication is no longer available for new deployments. We recommend agent-based replication for all migrations. To learn more, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).
+
 To install the MGN vCenter Client, follow these steps:
 
 1. Download the MGN vCenter Client installer onto a VM within your vCenter environment. You can download the client from this URL: `https://aws-application-migration-service-(region).s3.(region).amazonaws.com/latest/vcenter-client/linux/aws-vcenter-client-installer-init.py` Replace `(region)` with the AWS Region into which you are replicating.

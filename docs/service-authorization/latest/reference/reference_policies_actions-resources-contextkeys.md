@@ -108,6 +108,7 @@ The **condition keys** table lists all of the condition keys that you can use in
 + [AWS Config (config)](list_config.md)
 + [AWS Connector Service (awsconnector)](list_awsconnector.md)
 + [AWS Consolidated Billing (consolidatedbilling)](list_consolidatedbilling.md)
++ [AWS Continuum (continuum)](list_continuum.md)
 + [AWS Control Catalog (controlcatalog)](list_controlcatalog.md)
 + [AWS Control Tower (controltower)](list_controltower.md)
 + [AWS Cost and Usage Report (cur)](list_cur.md)

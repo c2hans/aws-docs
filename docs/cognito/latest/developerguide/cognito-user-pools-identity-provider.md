@@ -11,7 +11,7 @@ The supported identity provider options include social providers like Facebook, 
 
 The **Social and external providers** menu under **Authentication** adds and updates user pool IdPs. For more information, see [User pool sign-in with third party identity providers](cognito-user-pools-identity-federation.md).
 
-For an OIDC or OAuth IdP, you can map the ACR values of the IdP to Amazon Cognito authentication levels with the `AcrMapping` field to support step-up authentication for federated users. For more information, see [Step-up authentication for federated users](cognito-user-pools-oidc-idp.md#cognito-user-pools-step-up-federation).
+For an OIDC or OAuth IdP, you can map the ACR values of the IdP to Amazon Cognito authentication levels with the `AcrMapping` field to support step-up authentication for federated users. This capability is rolling out gradually and might not yet be available to your user pool. For more information, see [Step-up authentication for federated users](cognito-user-pools-oidc-idp.md#cognito-user-pools-step-up-federation).
 
 **Topics**
 + [Set up user sign-in with a social IdP](#cognito-user-pools-facebook-provider)

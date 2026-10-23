@@ -42,7 +42,7 @@ Required: Yes
  ** FileStatus **   <a name="connect-Type-AttachedFile-FileStatus"></a>
 The current status of the attached file.
 Type: String
-Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED`
+Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
 Required: Yes
 
  ** AssociatedResourceArn **   <a name="connect-Type-AttachedFile-AssociatedResourceArn"></a>

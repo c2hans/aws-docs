@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-datasource-databricksparameters-properties"></a>
 
 `AuthenticationType`  <a name="cfn-quicksight-datasource-databricksparameters-authenticationtype"></a>
-Property description not available.
+The authentication type that you want to use for your connection. This parameter accepts OAuth and non-OAuth authentication types.
 *Required*: No
 *Type*: String
 *Allowed values*: `PASSWORD | TOKEN | X509 | KEYPAIR`
@@ -58,7 +58,7 @@ The host name of the Databricks data source.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OAuthParameters`  <a name="cfn-quicksight-datasource-databricksparameters-oauthparameters"></a>
-Property description not available.
+An object that contains information needed to create a data source connection between an Quick Sight account and Databricks.
 *Required*: No
 *Type*: [OAuthParameters](aws-properties-quicksight-datasource-oauthparameters.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

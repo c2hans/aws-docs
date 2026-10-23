@@ -179,6 +179,8 @@ Geo inference ID: `in.moonshotai.kimi-k3`
 
 Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](quotas-increase.html). See your default quotas in Service Quotas and request limit increases as necessary.
 
+The burndown rate for Moonshot AI Kimi K3 on the `bedrock-runtime` endpoint is 10x for output tokens (1 output token consumes 10 tokens from your quotas).
+
 ## Usage Considerations and Limitations
 <a name="model-card-moonshot-ai-kimi-k3-considerations"></a>
 

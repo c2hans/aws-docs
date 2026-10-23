@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/connect/latest/adminguide/editing-explorer-layout.html
 ---
 
-# Editing your explorer layout
+# Edit a layout
 <a name="editing-explorer-layout"></a>
 
-Customize your Profile explorer layout through simple, intuitive controls for managing widgets and their placement.
+Customize your Profile Explorer layout through simple, intuitive controls for managing widgets and their placement.
 
 ## Widget controls
 <a name="widget-controls"></a>

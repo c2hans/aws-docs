@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.
 # What Is Amazon EventBridge?
 <a name="eb-what-is"></a>
 
-EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. Event-driven architecture is a style of building loosely-coupled software systems that work together by emitting and responding to events. Event-driven architecture can help you boost agility and build reliable, scalable applications.
+Amazon EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. Event-driven architecture is a style of building loosely-coupled software systems that work together by emitting and responding to events. Event-driven architecture can help you boost agility and build reliable, scalable applications.
 
  EventBridge provides simple and consistent ways to ingest, filter, transform, and deliver events so you can build applications quickly.
 
-EventBridge offers two event buses. The [Custom Event Bus](eb-custom-bus.md) routes events to subscribers that consumers create themselves, retains events for a period that you set, and supports ordered delivery, replay, and non-JSON payloads. [Custom Event Bus - Classic](eb-event-bus.md) routes events with rules and targets that the bus owner writes. For new applications, start with the Custom Event Bus. Custom Event Bus - Classic remains available, and this guide describes both.
+EventBridge offers two event buses. The [Custom Event Bus](eb-custom-bus.md) routes events to subscribers that you create, retains events for a period that you set, and supports ordered delivery, replay, and non-JSON payloads. [Custom Event Bus - Classic](eb-event-bus.md) routes events using rules and targets that you write. For new applications, start with the Custom Event Bus. Custom Event Bus - Classic remains available, and this guide describes both.
 
 EventBridge includes two ways to process and deliver events: *event buses* and *pipes*.
 + [Event buses](eb-event-bus.md) are routers that receive [events](eb-events.md) and delivers them to zero or more targets. Use EventBridge to route events from sources such as home-grown applications, AWS services, and third-party software to consumer applications across your organization.

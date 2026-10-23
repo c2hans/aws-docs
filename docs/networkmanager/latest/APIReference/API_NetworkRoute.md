@@ -36,9 +36,9 @@ Valid Values: `ACTIVE | BLACKHOLE`
 Required: No
 
  ** Type **   <a name="networkmanager-Type-NetworkRoute-Type"></a>
-The route type. The possible values are `propagated` and `static`.
+The route type. The possible values are `PROPAGATED`, `STATIC`, and `SYSTEM`. A `SYSTEM` route is installed by the core network for the NAT CIDR block of an attachment's NAT rule.
 Type: String
-Valid Values: `PROPAGATED | STATIC`
+Valid Values: `PROPAGATED | STATIC | SYSTEM`
 Required: No
 
 ## See Also

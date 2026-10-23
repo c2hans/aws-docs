@@ -148,8 +148,8 @@ Elastic Beanstalk supports the following Node.js platform versions.
 
 |  Platform Version and *Solution Stack Name*   |  AMI  |  Node.js versions (npm versions)  |  Proxy Server  |  Git  |  AWS X-Ray  |
 | --- | --- | --- | --- | --- | --- |
-|  ** Node.js 24 AL2023 version 6.11.11** <br /> * 64bit Amazon Linux 2023 v6.11.11 running Node.js 24 *  | 2023.12.20261016 | 24.22.0 (11.19.1)<br /> Default version: v24.22.0 | nginx 1.30.5 (default), Apache 2.4.69 | 2.50.1 | 3.7.0 |
-|  ** Node.js 22 AL2023 version 6.11.11** <br /> * 64bit Amazon Linux 2023 v6.11.11 running Node.js 22 *  | 2023.12.20261016 | 22.23.3 (10.9.9)<br /> Default version: v22.23.3 | nginx 1.30.5 (default), Apache 2.4.69 | 2.50.1 | 3.7.0 |
+|  ** Node.js 24 AL2023 version 6.11.12** <br /> * 64bit Amazon Linux 2023 v6.11.12 running Node.js 24 *  | 2023.12.20261021 | 24.22.1 (11.19.1)<br /> Default version: v24.22.1 | nginx 1.30.5 (default), Apache 2.4.69 | 2.50.1 | 3.7.0 |
+|  ** Node.js 22 AL2023 version 6.11.12** <br /> * 64bit Amazon Linux 2023 v6.11.12 running Node.js 22 *  | 2023.12.20261021 | 22.23.4 (10.9.9)<br /> Default version: v22.23.4 | nginx 1.30.5 (default), Apache 2.4.69 | 2.50.1 | 3.7.0 |
 
  For information about platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [Node.js](platforms-retiring.md#platforms-retiring.nodejs) on the *Retiring Platform Versions* page. For information about previous platform versions, see [Node.js platform history](platform-history-nodejs.md).
 
@@ -168,8 +168,8 @@ Elastic Beanstalk supports the following PHP platform versions.
 | --- | --- | --- | --- | --- |
 |  ** PHP 8.5 AL2023 version 4.13.13** <br /> * 64bit Amazon Linux 2023 v4.13.13 running PHP 8.5 *  | 2023.12.20261016 | PHP 8.5.12 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
 |  ** PHP 8.4 AL2023 version 4.13.13** <br /> * 64bit Amazon Linux 2023 v4.13.13 running PHP 8.4 *  | 2023.12.20261016 | PHP 8.4.27 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
-|  ** PHP 8.3 AL2023 version 4.13.12** <br /> * 64bit Amazon Linux 2023 v4.13.12 running PHP 8.3 *  | 2023.12.20261016 | PHP 8.3.35 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
-|  ** PHP 8.2 AL2023 version 4.13.12** <br /> * 64bit Amazon Linux 2023 v4.13.12 running PHP 8.2 *  | 2023.12.20261016 | PHP 8.2.34 | Composer 2.10.3, PIE 1.5.2 | nginx 1.30.5 (default), Apache 2.4.69 |
+|  ** PHP 8.3 AL2023 version 4.13.13** <br /> * 64bit Amazon Linux 2023 v4.13.13 running PHP 8.3 *  | 2023.12.20261021 | PHP 8.3.36 | Composer 2.10.3, PIE 1.5.3 | nginx 1.30.5 (default), Apache 2.4.69 |
+|  ** PHP 8.2 AL2023 version 4.13.13** <br /> * 64bit Amazon Linux 2023 v4.13.13 running PHP 8.2 *  | 2023.12.20261021 | PHP 8.2.35 | Composer 2.10.3, PIE 1.5.3 | nginx 1.30.5 (default), Apache 2.4.69 |
 
  For information about platform versions scheduled for retirement as published in [Platform Support Policy](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/platforms-support-policy.html), see [PHP](platforms-retiring.md#platforms-retiring.PHP) on the *Retiring Platform Versions* page. For information about previous platform versions, see [PHP platform history](platform-history-php.md).
 

@@ -67,13 +67,13 @@ For more information about configuring logging, see [ Working with Amazon RDS an
 The `stderr` log format prefixes each log message with the details specified by the `log_line_prefix` parameter. The default value is:
 
 ```
-%t:%r:%u@%d:[%p]:t
+%t:%r:%u@%d:[%p]:
 ```
 
-Starting from Aurora PostgreSQL version 16, you can also choose:
+You can also choose the following value:
 
 ```
-%m:%r:%u@%d:[%p]:%l:%e:%s:%v:%x:%c:%q%a
+%m:%r:%u@%d:[%p]:%l:%e:%s:%v:%x:%c:%q%a:
 ```
 
 Each log entry sent to stderr includes the following information based on the selected value:

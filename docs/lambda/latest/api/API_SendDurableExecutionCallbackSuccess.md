@@ -33,8 +33,8 @@ Required: Yes
 The request accepts the following binary data.
 
  ** [Result](#API_SendDurableExecutionCallbackSuccess_RequestSyntax) **   <a name="lambda-SendDurableExecutionCallbackSuccess-request-Result"></a>
-The result data from the successful callback operation. Maximum size is 256 KB.
-Length Constraints: Minimum length of 0. Maximum length of 262144.
+The result data from the successful callback operation. Maximum size is 1 MB.
+Length Constraints: Minimum length of 0. Maximum length of 1048576.
 
 ## Response Syntax
 <a name="API_SendDurableExecutionCallbackSuccess_ResponseSyntax"></a>

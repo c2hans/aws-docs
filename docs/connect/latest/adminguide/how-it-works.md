@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/how-it-works.h
 # How it works
 <a name="how-it-works"></a>
 
-Profile explorer offers various widgets to display customer information, layouts are stored as JSON definitions, representing the complete structure and configuration of your dashboard. Each widget and component in your visual layout corresponds to a specific JSON block within this definition.
+Profile Explorer offers various widgets to display customer information, layouts are stored as JSON definitions, representing the complete structure and configuration of your dashboard. Each widget and component in your visual layout corresponds to a specific JSON block within this definition.
 
 ## Core components
 <a name="core-components"></a>
@@ -69,7 +69,7 @@ The following is a sample JSON structure for a dashboard table component:
 ## Dynamic data configuration
 <a name="dynamic-data-configuration"></a>
 
-Profile explorer uses template expressions to access and display Customer Profiles data dynamically within your components.
+Profile Explorer uses template expressions to access and display Customer Profiles data dynamically within your components.
 
 ### Single value support
 <a name="single-value-support"></a>

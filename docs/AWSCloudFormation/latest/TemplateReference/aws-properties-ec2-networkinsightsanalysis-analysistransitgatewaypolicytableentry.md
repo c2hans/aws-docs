@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::EC2::NetworkInsightsAnalysis AnalysisTransitGatewayPolicyTableEntry
 <a name="aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry"></a>
 
-<a name="aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-description"></a>The `AnalysisTransitGatewayPolicyTableEntry` property type specifies Property description not available. for an [AWS::EC2::NetworkInsightsAnalysis](aws-resource-ec2-networkinsightsanalysis.md).
+Describes an entry in a transit gateway policy table.
 
 ## Syntax
 <a name="aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-syntax"></a>
@@ -48,43 +48,43 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-properties"></a>
 
 `DestinationCidr`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-destinationcidr"></a>
-Property description not available.
+The destination CIDR block. If this value is not present, the entry matches any destination address.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DestinationPortRange`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-destinationportrange"></a>
-Property description not available.
+The destination port range. If this value is not present, the entry matches any destination port.
 *Required*: No
 *Type*: [PortRange](aws-properties-ec2-networkinsightsanalysis-portrange.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Protocol`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-protocol"></a>
-Property description not available.
+The protocol number. A value of `-1` means that the entry matches all protocols.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RuleNumber`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-rulenumber"></a>
-Property description not available.
+The rule number for the policy table entry. Entries are evaluated in ascending order of rule number.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceCidr`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-sourcecidr"></a>
-Property description not available.
+The source CIDR block. If this value is not present, the entry matches any source address.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourcePortRange`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-sourceportrange"></a>
-Property description not available.
+The source port range. If this value is not present, the entry matches any source port.
 *Required*: No
 *Type*: [PortRange](aws-properties-ec2-networkinsightsanalysis-portrange.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TargetRouteTableId`  <a name="cfn-ec2-networkinsightsanalysis-analysistransitgatewaypolicytableentry-targetroutetableid"></a>
-Property description not available.
+The ID of the transit gateway route table to which the entry routes matching traffic.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

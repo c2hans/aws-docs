@@ -117,7 +117,8 @@ Content-type: application/json
          "SecurityProfileName": "string",
          "Tags": {
             "string" : "string"
-         }
+         },
+         "Type": "string"
       }
    ]
 }

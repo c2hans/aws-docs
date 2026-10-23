@@ -23,6 +23,16 @@ The default options that correspond to the `Dropdown` filter control type.
 Type: [DefaultFilterDropDownControlOptions](API_DefaultFilterDropDownControlOptions.md) object
 Required: No
 
+ ** DefaultHierarchyDropdown **   <a name="QS-Type-DefaultFilterControlOptions-DefaultHierarchyDropdown"></a>
+The default options that correspond to the `HierarchyDropdown` filter control type.
+Type: [DefaultHierarchyFilterDropDownControlOptions](API_DefaultHierarchyFilterDropDownControlOptions.md) object
+Required: No
+
+ ** DefaultHierarchyList **   <a name="QS-Type-DefaultFilterControlOptions-DefaultHierarchyList"></a>
+The default options that correspond to the `HierarchyList` filter control type.
+Type: [DefaultHierarchyFilterListControlOptions](API_DefaultHierarchyFilterListControlOptions.md) object
+Required: No
+
  ** DefaultListOptions **   <a name="QS-Type-DefaultFilterControlOptions-DefaultListOptions"></a>
 The default options that correspond to the `List` filter control type.
 Type: [DefaultFilterListControlOptions](API_DefaultFilterListControlOptions.md) object

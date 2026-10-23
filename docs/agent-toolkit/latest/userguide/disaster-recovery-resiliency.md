@@ -9,4 +9,4 @@ The AWS global infrastructure is built around AWS Regions and Availability Zones
 
 For more information about AWS Regions and Availability Zones, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/).
 
-In addition to the AWS global infrastructure, Agent Toolkit for AWS offers several features to help support your data resiliency and backup needs.
+AWS MCP Server is a stateless proxy that runs AWS API calls on your behalf. It does not use persistent storage to store customer content, so there is no AWS MCP Server data for you to back up or restore. For more information, see [Data protection in AWS MCP Server](data-protection.md).

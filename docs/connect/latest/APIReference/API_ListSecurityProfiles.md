@@ -53,7 +53,8 @@ Content-type: application/json
          "Id": "string",
          "LastModifiedRegion": "string",
          "LastModifiedTime": number,
-         "Name": "string"
+         "Name": "string",
+         "Type": "string"
       }
    ]
 }

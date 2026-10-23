@@ -179,7 +179,7 @@ The following example demonstrates the policy you must attach to your execution 
 
 ------
 
-For more information about restricting access to your Amazon S3 buckets, refer to [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/) in the *Amazon Simple Storage Service User Guide*.
+For more information about restricting access to your Amazon S3 buckets, refer to [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html) in the *Amazon Simple Storage Service User Guide*.
 
 ## Use Apache Airflow connections
 <a name="mwaa-create-role-airflow-connections"></a>
@@ -333,6 +333,9 @@ Next, you need to allow Amazon MWAA to assume this role to perform actions on yo
 
 Then attach the following JSON policy to your [Customer-managed key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk). This policy uses the [`kms:EncryptionContext`](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html#conditions-kms-encryption-context) condition key prefix to permit access to your Apache Airflow logs group in CloudWatch Logs.
 
+------
+#### [ JSON ]
+
 ```
 {
   "Sid": "Allow logs access",
@@ -350,11 +353,13 @@ Then attach the following JSON policy to your [Customer-managed key](https://doc
   "Resource": "*",
   "Condition": {
     "ArnLike": {
-      {{"kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:*"}}
+      "kms:EncryptionContext:aws:logs:arn": "arn:aws:logs:{{us-east-1}}:{{111122223333}}:*"
     }
   }
 }
 ```
+
+------
 
 ### Sample policy for an AWS-owned key
 <a name="mwaa-create-role-aocmk"></a>

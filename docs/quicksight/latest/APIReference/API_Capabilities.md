@@ -31,6 +31,24 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** AdobeAction **   <a name="QS-Type-Capabilities-AdobeAction"></a>
+The ability to perform actions using Adobe Marketing Agent connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** AdobeAnalyticsDataSource **   <a name="QS-Type-Capabilities-AdobeAnalyticsDataSource"></a>
+The ability to create, update, and share Adobe Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** AirtableAction **   <a name="QS-Type-Capabilities-AirtableAction"></a>
+The ability to perform actions using Airtable connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** AmazonBedrockARSAction **   <a name="QS-Type-Capabilities-AmazonBedrockARSAction"></a>
 The ability to perform actions using Bedrock Agent connectors.
 Type: String
@@ -79,6 +97,18 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** AthenaDataSource **   <a name="QS-Type-Capabilities-AthenaDataSource"></a>
+The ability to create, update, and share Amazon Athena data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** AuroraDataSource **   <a name="QS-Type-Capabilities-AuroraDataSource"></a>
+The ability to create, update, and share Amazon Aurora data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** Automate **   <a name="QS-Type-Capabilities-Automate"></a>
 The ability to perform automate-related actions.
 Type: String
@@ -95,6 +125,12 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** BeeAction **   <a name="QS-Type-Capabilities-BeeAction"></a>
+The ability to perform actions using Bee connectors.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -131,6 +167,18 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CiscoWebexMeetingsAction **   <a name="QS-Type-Capabilities-CiscoWebexMeetingsAction"></a>
+The ability to perform actions using Cisco Webex Meetings connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CiscoWebexVidcastAction **   <a name="QS-Type-Capabilities-CiscoWebexVidcastAction"></a>
+The ability to perform actions using Cisco Webex Video Messaging Agent connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ComprehendAction **   <a name="QS-Type-Capabilities-ComprehendAction"></a>
 The ability to perform actions using Comprehend connectors.
 Type: String
@@ -153,6 +201,24 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAdobeAnalyticsDataSource **   <a name="QS-Type-Capabilities-CreateAdobeAnalyticsDataSource"></a>
+The ability to create Adobe Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateAdobeAction **   <a name="QS-Type-Capabilities-CreateAndUpdateAdobeAction"></a>
+The ability to create and update Adobe Marketing Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateAirtableAction **   <a name="QS-Type-Capabilities-CreateAndUpdateAirtableAction"></a>
+The ability to create and update Airtable actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -207,6 +273,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateBeeAction **   <a name="QS-Type-Capabilities-CreateAndUpdateBeeAction"></a>
+The ability to create and update Bee actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateBoxAgentAction **   <a name="QS-Type-Capabilities-CreateAndUpdateBoxAgentAction"></a>
 The ability to create and update Box Agent actions.
 Type: String
@@ -223,6 +295,18 @@ Required: No
 
  ** CreateAndUpdateCanvaAgentAction **   <a name="QS-Type-Capabilities-CreateAndUpdateCanvaAgentAction"></a>
 The ability to create and update Canva Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateCiscoWebexMeetingsAction **   <a name="QS-Type-Capabilities-CreateAndUpdateCiscoWebexMeetingsAction"></a>
+The ability to create and update Cisco Webex Meetings actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateCiscoWebexVidcastAction **   <a name="QS-Type-Capabilities-CreateAndUpdateCiscoWebexVidcastAction"></a>
+The ability to create and update Cisco Webex Video Messaging Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -271,8 +355,26 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateDropboxAction **   <a name="QS-Type-Capabilities-CreateAndUpdateDropboxAction"></a>
+The ability to create and update Dropbox actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateDunAndBradstreetAction **   <a name="QS-Type-Capabilities-CreateAndUpdateDunAndBradstreetAction"></a>
+The ability to create and update Dun and Bradstreet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateFactSetAction **   <a name="QS-Type-Capabilities-CreateAndUpdateFactSetAction"></a>
 The ability to create and update FactSet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateFigmaAction **   <a name="QS-Type-Capabilities-CreateAndUpdateFigmaAction"></a>
+The ability to create and update Figma actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -289,8 +391,44 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateGmailAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGmailAction"></a>
+The ability to create and update Gmail actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGongAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGongAction"></a>
+The ability to create and update Gong actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleAnalyticsAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleAnalyticsAction"></a>
+The ability to create and update Google Analytics actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateGoogleCalendarAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleCalendarAction"></a>
 The ability to create and update Google Calendar actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleChatAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleChatAction"></a>
+The ability to create and update Google Chat actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleDocsAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleDocsAction"></a>
+The ability to create and update Google Docs actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleDriveAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleDriveAction"></a>
+The ability to create and update Google Drive actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -299,6 +437,30 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleMeetAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleMeetAction"></a>
+The ability to create and update Google Meet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleSheetsAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleSheetsAction"></a>
+The ability to create and update Google Sheets actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateGoogleSlidesAction **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleSlidesAction"></a>
+The ability to create and update Google Slides actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateHGInsightsAction **   <a name="QS-Type-Capabilities-CreateAndUpdateHGInsightsAction"></a>
+The ability to create and update HG Insights Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -361,6 +523,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateMoodysAction **   <a name="QS-Type-Capabilities-CreateAndUpdateMoodysAction"></a>
+The ability to create and update Moody's GenAI Ready Data actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateMSExchangeAction **   <a name="QS-Type-Capabilities-CreateAndUpdateMSExchangeAction"></a>
 The ability to create and update Microsoft Outlook actions.
 Type: String
@@ -399,6 +567,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateOneNoteAction **   <a name="QS-Type-Capabilities-CreateAndUpdateOneNoteAction"></a>
+The ability to create and update Microsoft OneNote actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateOpenAPIAction **   <a name="QS-Type-Capabilities-CreateAndUpdateOpenAPIAction"></a>
 The ability to create and update OpenAPI Specification actions.
 Type: String
@@ -411,10 +585,22 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdatePagerDutyAgentAction **   <a name="QS-Type-Capabilities-CreateAndUpdatePagerDutyAgentAction"></a>
+The ability to create and update PagerDuty Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateQBusinessKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateQBusinessKnowledgeBase"></a>
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateQuickBooksAction **   <a name="QS-Type-Capabilities-CreateAndUpdateQuickBooksAction"></a>
+The ability to create and update QuickBooks actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -495,6 +681,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateShopifyAction **   <a name="QS-Type-Capabilities-CreateAndUpdateShopifyAction"></a>
+The ability to create and update Shopify actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateSlackAction **   <a name="QS-Type-Capabilities-CreateAndUpdateSlackAction"></a>
 The ability to create and update Slack actions.
 Type: String
@@ -503,6 +695,12 @@ Required: No
 
  ** CreateAndUpdateSmartsheetAction **   <a name="QS-Type-Capabilities-CreateAndUpdateSmartsheetAction"></a>
 The ability to create and update Smartsheet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateSnowFlakeAction **   <a name="QS-Type-Capabilities-CreateAndUpdateSnowFlakeAction"></a>
+The ability to create and update Snowflake Cortex Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -525,6 +723,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateVisierAgentAction **   <a name="QS-Type-Capabilities-CreateAndUpdateVisierAgentAction"></a>
+The ability to create and update Visier Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateWebCrawlerKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateWebCrawlerKnowledgeBase"></a>
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
@@ -533,8 +737,44 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateWhatsAppAction **   <a name="QS-Type-Capabilities-CreateAndUpdateWhatsAppAction"></a>
+The ability to create and update WhatsApp actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateZapierAction **   <a name="QS-Type-Capabilities-CreateAndUpdateZapierAction"></a>
+The ability to create and update Zapier Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateZendeskAction **   <a name="QS-Type-Capabilities-CreateAndUpdateZendeskAction"></a>
 The ability to create and update Zendesk actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateZoomAction **   <a name="QS-Type-Capabilities-CreateAndUpdateZoomAction"></a>
+The ability to create and update Zoom actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateZoomInfoAction **   <a name="QS-Type-Capabilities-CreateAndUpdateZoomInfoAction"></a>
+The ability to create and update ZoomInfo Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAthenaDataSource **   <a name="QS-Type-Capabilities-CreateAthenaDataSource"></a>
+The ability to create Amazon Athena data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAuroraDataSource **   <a name="QS-Type-Capabilities-CreateAuroraDataSource"></a>
+The ability to create Amazon Aurora data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -551,8 +791,212 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateDatabricksDataSource **   <a name="QS-Type-Capabilities-CreateDatabricksDataSource"></a>
+The ability to create Databricks data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateDb2DataSource **   <a name="QS-Type-Capabilities-CreateDb2DataSource"></a>
+The ability to create Db2 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateDenodoDataSource **   <a name="QS-Type-Capabilities-CreateDenodoDataSource"></a>
+The ability to create Denodo data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateDocumentDbDataSource **   <a name="QS-Type-Capabilities-CreateDocumentDbDataSource"></a>
+The ability to create Amazon DocumentDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateDremioDataSource **   <a name="QS-Type-Capabilities-CreateDremioDataSource"></a>
+The ability to create Dremio data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateDynamoDbDataSource **   <a name="QS-Type-Capabilities-CreateDynamoDbDataSource"></a>
+The ability to create Amazon DynamoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateExasolDataSource **   <a name="QS-Type-Capabilities-CreateExasolDataSource"></a>
+The ability to create Exasol data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateFileDataSource **   <a name="QS-Type-Capabilities-CreateFileDataSource"></a>
+The ability to create file data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateGitHubDataSource **   <a name="QS-Type-Capabilities-CreateGitHubDataSource"></a>
+The ability to create GitHub data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateGoogleAnalyticsDataSource **   <a name="QS-Type-Capabilities-CreateGoogleAnalyticsDataSource"></a>
+The ability to create Google Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateGoogleBigQueryDataSource **   <a name="QS-Type-Capabilities-CreateGoogleBigQueryDataSource"></a>
+The ability to create Google BigQuery data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateGoogleSheetsDataSource **   <a name="QS-Type-Capabilities-CreateGoogleSheetsDataSource"></a>
+The ability to create Google Sheets data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateImpalaDataSource **   <a name="QS-Type-Capabilities-CreateImpalaDataSource"></a>
+The ability to create Impala data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateJiraDataSource **   <a name="QS-Type-Capabilities-CreateJiraDataSource"></a>
+The ability to create Jira data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateMariaDbDataSource **   <a name="QS-Type-Capabilities-CreateMariaDbDataSource"></a>
+The ability to create MariaDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateMongoAtlasDataSource **   <a name="QS-Type-Capabilities-CreateMongoAtlasDataSource"></a>
+The ability to create MongoDB Atlas data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateMongoDbDataSource **   <a name="QS-Type-Capabilities-CreateMongoDbDataSource"></a>
+The ability to create MongoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateMySqlDataSource **   <a name="QS-Type-Capabilities-CreateMySqlDataSource"></a>
+The ability to create MySQL data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateOpenSearchDataSource **   <a name="QS-Type-Capabilities-CreateOpenSearchDataSource"></a>
+The ability to create Amazon OpenSearch Service data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateOracleDataSource **   <a name="QS-Type-Capabilities-CreateOracleDataSource"></a>
+The ability to create Oracle data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreatePayPalDataSource **   <a name="QS-Type-Capabilities-CreatePayPalDataSource"></a>
+The ability to create PayPal data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreatePostgreSqlDataSource **   <a name="QS-Type-Capabilities-CreatePostgreSqlDataSource"></a>
+The ability to create PostgreSQL data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreatePrestoDataSource **   <a name="QS-Type-Capabilities-CreatePrestoDataSource"></a>
+The ability to create Presto data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateRadiantDataSource **   <a name="QS-Type-Capabilities-CreateRadiantDataSource"></a>
+The ability to create Amazon QuickSight data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateRdsDataSource **   <a name="QS-Type-Capabilities-CreateRdsDataSource"></a>
+The ability to create auto-discovered Amazon RDS data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateRedshiftAutoDiscoveredDataSource **   <a name="QS-Type-Capabilities-CreateRedshiftAutoDiscoveredDataSource"></a>
+The ability to create auto-discovered Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateRedshiftManualDataSource **   <a name="QS-Type-Capabilities-CreateRedshiftManualDataSource"></a>
+The ability to create manually configured Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateS3AnalyticsDataSource **   <a name="QS-Type-Capabilities-CreateS3AnalyticsDataSource"></a>
+The ability to create Amazon S3 Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateS3DataSource **   <a name="QS-Type-Capabilities-CreateS3DataSource"></a>
+The ability to create Amazon S3 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateS3TablesDataSource **   <a name="QS-Type-Capabilities-CreateS3TablesDataSource"></a>
+The ability to create Amazon S3 Tables data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateSalesforceDataSource **   <a name="QS-Type-Capabilities-CreateSalesforceDataSource"></a>
+The ability to create Salesforce data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateSapHanaDataSource **   <a name="QS-Type-Capabilities-CreateSapHanaDataSource"></a>
+The ability to create SAP HANA data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateServiceNowDataSource **   <a name="QS-Type-Capabilities-CreateServiceNowDataSource"></a>
+The ability to create ServiceNow data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateSharedFolders **   <a name="QS-Type-Capabilities-CreateSharedFolders"></a>
 The ability to create shared folders.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateSnowflakeDataSource **   <a name="QS-Type-Capabilities-CreateSnowflakeDataSource"></a>
+The ability to create Snowflake data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -563,8 +1007,56 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateSparkDataSource **   <a name="QS-Type-Capabilities-CreateSparkDataSource"></a>
+The ability to create Spark data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateSPICEDataset **   <a name="QS-Type-Capabilities-CreateSPICEDataset"></a>
 The ability to create a SPICE dataset.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateSqlServerDataSource **   <a name="QS-Type-Capabilities-CreateSqlServerDataSource"></a>
+The ability to create SQL Server data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateSquareDataSource **   <a name="QS-Type-Capabilities-CreateSquareDataSource"></a>
+The ability to create Square data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateStarburstDataSource **   <a name="QS-Type-Capabilities-CreateStarburstDataSource"></a>
+The ability to create Starburst data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateTeradataDataSource **   <a name="QS-Type-Capabilities-CreateTeradataDataSource"></a>
+The ability to create Teradata data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateTimestreamDataSource **   <a name="QS-Type-Capabilities-CreateTimestreamDataSource"></a>
+The ability to create Amazon Timestream data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateTrinoDataSource **   <a name="QS-Type-Capabilities-CreateTrinoDataSource"></a>
+The ability to create Trino data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateTwitterDataSource **   <a name="QS-Type-Capabilities-CreateTwitterDataSource"></a>
+The ability to create Twitter data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -575,8 +1067,62 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** DatabricksDataSource **   <a name="QS-Type-Capabilities-DatabricksDataSource"></a>
+The ability to create, update, and share Databricks data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** Db2DataSource **   <a name="QS-Type-Capabilities-Db2DataSource"></a>
+The ability to create, update, and share Db2 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** DenodoDataSource **   <a name="QS-Type-Capabilities-DenodoDataSource"></a>
+The ability to create, update, and share Denodo data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** DocumentDbDataSource **   <a name="QS-Type-Capabilities-DocumentDbDataSource"></a>
+The ability to create, update, and share Amazon DocumentDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** DremioDataSource **   <a name="QS-Type-Capabilities-DremioDataSource"></a>
+The ability to create, update, and share Dremio data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** DropboxAction **   <a name="QS-Type-Capabilities-DropboxAction"></a>
+The ability to perform actions using Dropbox connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** DunAndBradstreetAction **   <a name="QS-Type-Capabilities-DunAndBradstreetAction"></a>
+The ability to perform actions using Dun and Bradstreet connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** DynamoDbDataSource **   <a name="QS-Type-Capabilities-DynamoDbDataSource"></a>
+The ability to create, update, and share Amazon DynamoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** EditVisualWithQ **   <a name="QS-Type-Capabilities-EditVisualWithQ"></a>
 The ability to Edit Visual with AI
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ExasolDataSource **   <a name="QS-Type-Capabilities-ExasolDataSource"></a>
+The ability to create, update, and share Exasol data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -629,6 +1175,18 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** FigmaAction **   <a name="QS-Type-Capabilities-FigmaAction"></a>
+The ability to perform actions using Figma connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** FileDataSource **   <a name="QS-Type-Capabilities-FileDataSource"></a>
+The ability to create, update, and share file data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** Flow **   <a name="QS-Type-Capabilities-Flow"></a>
 The ability to perform flow-related actions.
 Type: String
@@ -653,8 +1211,62 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** GitHubDataSource **   <a name="QS-Type-Capabilities-GitHubDataSource"></a>
+The ability to create, update, and share GitHub data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GmailAction **   <a name="QS-Type-Capabilities-GmailAction"></a>
+The ability to perform actions using Gmail connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GongAction **   <a name="QS-Type-Capabilities-GongAction"></a>
+The ability to perform actions using Gong connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleAnalyticsAction **   <a name="QS-Type-Capabilities-GoogleAnalyticsAction"></a>
+The ability to perform actions using Google Analytics connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleAnalyticsDataSource **   <a name="QS-Type-Capabilities-GoogleAnalyticsDataSource"></a>
+The ability to create, update, and share Google Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleBigQueryDataSource **   <a name="QS-Type-Capabilities-GoogleBigQueryDataSource"></a>
+The ability to create, update, and share Google BigQuery data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** GoogleCalendarAction **   <a name="QS-Type-Capabilities-GoogleCalendarAction"></a>
 The ability to perform actions using Google Calendar connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleChatAction **   <a name="QS-Type-Capabilities-GoogleChatAction"></a>
+The ability to perform actions using Google Chat connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleDocsAction **   <a name="QS-Type-Capabilities-GoogleDocsAction"></a>
+The ability to perform actions using Google Docs connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleDriveAction **   <a name="QS-Type-Capabilities-GoogleDriveAction"></a>
+The ability to perform actions using Google Drive connectors.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -663,6 +1275,36 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleMeetAction **   <a name="QS-Type-Capabilities-GoogleMeetAction"></a>
+The ability to perform actions using Google Meet connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleSheetsAction **   <a name="QS-Type-Capabilities-GoogleSheetsAction"></a>
+The ability to perform actions using Google Sheets connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleSheetsDataSource **   <a name="QS-Type-Capabilities-GoogleSheetsDataSource"></a>
+The ability to create, update, and share Google Sheets data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** GoogleSlidesAction **   <a name="QS-Type-Capabilities-GoogleSlidesAction"></a>
+The ability to perform actions using Google Slides connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** HGInsightsAction **   <a name="QS-Type-Capabilities-HGInsightsAction"></a>
+The ability to perform actions using HG Insights Agent connectors.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -683,6 +1325,12 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ImpalaDataSource **   <a name="QS-Type-Capabilities-ImpalaDataSource"></a>
+The ability to create, update, and share Impala data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -717,6 +1365,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** JiraDataSource **   <a name="QS-Type-Capabilities-JiraDataSource"></a>
+The ability to create, update, and share Jira data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** KnowledgeBase **   <a name="QS-Type-Capabilities-KnowledgeBase"></a>
 The ability to use knowledge bases to specify content from external applications.
 Type: String
@@ -736,6 +1390,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** MariaDbDataSource **   <a name="QS-Type-Capabilities-MariaDbDataSource"></a>
+The ability to create, update, and share MariaDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** MCPAction **   <a name="QS-Type-Capabilities-MCPAction"></a>
 The ability to perform actions using Model Context Protocol connectors.
 Type: String
@@ -748,6 +1408,24 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** MongoAtlasDataSource **   <a name="QS-Type-Capabilities-MongoAtlasDataSource"></a>
+The ability to create, update, and share MongoDB Atlas data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** MongoDbDataSource **   <a name="QS-Type-Capabilities-MongoDbDataSource"></a>
+The ability to create, update, and share MongoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** MoodysAction **   <a name="QS-Type-Capabilities-MoodysAction"></a>
+The ability to perform actions using Moody's GenAI Ready Data connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** MSExchangeAction **   <a name="QS-Type-Capabilities-MSExchangeAction"></a>
 The ability to perform actions using Microsoft Outlook connectors.
 Type: String
@@ -756,6 +1434,12 @@ Required: No
 
  ** MSTeamsAction **   <a name="QS-Type-Capabilities-MSTeamsAction"></a>
 The ability to perform actions using Microsoft Teams connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** MySqlDataSource **   <a name="QS-Type-Capabilities-MySqlDataSource"></a>
+The ability to create, update, and share MySQL data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -786,8 +1470,26 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** OneNoteAction **   <a name="QS-Type-Capabilities-OneNoteAction"></a>
+The ability to perform actions using Microsoft OneNote connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** OpenAPIAction **   <a name="QS-Type-Capabilities-OpenAPIAction"></a>
 The ability to perform actions using OpenAPI Specification connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** OpenSearchDataSource **   <a name="QS-Type-Capabilities-OpenSearchDataSource"></a>
+The ability to create, update, and share Amazon OpenSearch Service data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** OracleDataSource **   <a name="QS-Type-Capabilities-OracleDataSource"></a>
+The ability to create, update, and share Oracle data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -798,8 +1500,32 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** PagerDutyAgentAction **   <a name="QS-Type-Capabilities-PagerDutyAgentAction"></a>
+The ability to perform actions using PagerDuty Agent connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** PayPalDataSource **   <a name="QS-Type-Capabilities-PayPalDataSource"></a>
+The ability to create, update, and share PayPal data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** PerformFlowUiTask **   <a name="QS-Type-Capabilities-PerformFlowUiTask"></a>
 The ability to use UI Agent step to perform tasks on public websites.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** PostgreSqlDataSource **   <a name="QS-Type-Capabilities-PostgreSqlDataSource"></a>
+The ability to create, update, and share PostgreSQL data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** PrestoDataSource **   <a name="QS-Type-Capabilities-PrestoDataSource"></a>
+The ability to create, update, and share Presto data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -824,8 +1550,38 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** QuickBooksAction **   <a name="QS-Type-Capabilities-QuickBooksAction"></a>
+The ability to perform actions using QuickBooks connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** QuickEventTrigger **   <a name="QS-Type-Capabilities-QuickEventTrigger"></a>
 The ability to create, view, edit, delete, and run Quick event triggers for flows and automations.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** RadiantDataSource **   <a name="QS-Type-Capabilities-RadiantDataSource"></a>
+The ability to create, update, and share Amazon QuickSight data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** RdsDataSource **   <a name="QS-Type-Capabilities-RdsDataSource"></a>
+The ability to create, update, and share auto-discovered Amazon RDS data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** RedshiftAutoDiscoveredDataSource **   <a name="QS-Type-Capabilities-RedshiftAutoDiscoveredDataSource"></a>
+The ability to create, update, and share auto-discovered Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** RedshiftManualDataSource **   <a name="QS-Type-Capabilities-RedshiftManualDataSource"></a>
+The ability to create, update, and share manually configured Amazon Redshift data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -842,6 +1598,18 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** S3AnalyticsDataSource **   <a name="QS-Type-Capabilities-S3AnalyticsDataSource"></a>
+The ability to create, update, and share Amazon S3 Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** S3DataSource **   <a name="QS-Type-Capabilities-S3DataSource"></a>
+The ability to create, update, and share Amazon S3 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** S3KnowledgeBase **   <a name="QS-Type-Capabilities-S3KnowledgeBase"></a>
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
@@ -850,8 +1618,20 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** S3TablesDataSource **   <a name="QS-Type-Capabilities-S3TablesDataSource"></a>
+The ability to create, update, and share Amazon S3 Tables data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** SalesforceAction **   <a name="QS-Type-Capabilities-SalesforceAction"></a>
 The ability to perform actions using Salesforce connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SalesforceDataSource **   <a name="QS-Type-Capabilities-SalesforceDataSource"></a>
+The ability to create, update, and share Salesforce data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -876,6 +1656,12 @@ Required: No
 
  ** SAPBusinessPartnerAction **   <a name="QS-Type-Capabilities-SAPBusinessPartnerAction"></a>
 The ability to perform actions using SAP Business Partner connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SapHanaDataSource **   <a name="QS-Type-Capabilities-SapHanaDataSource"></a>
+The ability to create, update, and share SAP HANA data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -922,6 +1708,30 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ServiceNowDataSource **   <a name="QS-Type-Capabilities-ServiceNowDataSource"></a>
+The ability to create, update, and share ServiceNow data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareAdobeAction **   <a name="QS-Type-Capabilities-ShareAdobeAction"></a>
+The ability to share Adobe Marketing Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareAdobeAnalyticsDataSource **   <a name="QS-Type-Capabilities-ShareAdobeAnalyticsDataSource"></a>
+The ability to share Adobe Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareAirtableAction **   <a name="QS-Type-Capabilities-ShareAirtableAction"></a>
+The ability to share Airtable actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareAmazonBedrockARSAction **   <a name="QS-Type-Capabilities-ShareAmazonBedrockARSAction"></a>
 The ability to share Bedrock Agent actions.
 Type: String
@@ -964,6 +1774,18 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareAthenaDataSource **   <a name="QS-Type-Capabilities-ShareAthenaDataSource"></a>
+The ability to share Amazon Athena data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareAuroraDataSource **   <a name="QS-Type-Capabilities-ShareAuroraDataSource"></a>
+The ability to share Amazon Aurora data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareBambooHRAction **   <a name="QS-Type-Capabilities-ShareBambooHRAction"></a>
 The ability to share BambooHR actions.
 Type: String
@@ -974,6 +1796,12 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareBeeAction **   <a name="QS-Type-Capabilities-ShareBeeAction"></a>
+The ability to share Bee actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1000,6 +1828,18 @@ Required: No
 
  ** ShareChatAgents **   <a name="QS-Type-Capabilities-ShareChatAgents"></a>
 The ability to share chat agents with other users and groups.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareCiscoWebexMeetingsAction **   <a name="QS-Type-Capabilities-ShareCiscoWebexMeetingsAction"></a>
+The ability to share Cisco Webex Meetings actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareCiscoWebexVidcastAction **   <a name="QS-Type-Capabilities-ShareCiscoWebexVidcastAction"></a>
+The ability to share Cisco Webex Video Messaging Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1036,6 +1876,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareDatabricksDataSource **   <a name="QS-Type-Capabilities-ShareDatabricksDataSource"></a>
+The ability to share Databricks data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareDatasets **   <a name="QS-Type-Capabilities-ShareDatasets"></a>
 The ability to share datasets.
 Type: String
@@ -1048,8 +1894,68 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareDb2DataSource **   <a name="QS-Type-Capabilities-ShareDb2DataSource"></a>
+The ability to share Db2 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareDenodoDataSource **   <a name="QS-Type-Capabilities-ShareDenodoDataSource"></a>
+The ability to share Denodo data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareDocumentDbDataSource **   <a name="QS-Type-Capabilities-ShareDocumentDbDataSource"></a>
+The ability to share Amazon DocumentDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareDremioDataSource **   <a name="QS-Type-Capabilities-ShareDremioDataSource"></a>
+The ability to share Dremio data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareDropboxAction **   <a name="QS-Type-Capabilities-ShareDropboxAction"></a>
+The ability to share Dropbox actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareDunAndBradstreetAction **   <a name="QS-Type-Capabilities-ShareDunAndBradstreetAction"></a>
+The ability to share Dun and Bradstreet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareDynamoDbDataSource **   <a name="QS-Type-Capabilities-ShareDynamoDbDataSource"></a>
+The ability to share Amazon DynamoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareExasolDataSource **   <a name="QS-Type-Capabilities-ShareExasolDataSource"></a>
+The ability to share Exasol data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareFactSetAction **   <a name="QS-Type-Capabilities-ShareFactSetAction"></a>
 The ability to share FactSet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareFigmaAction **   <a name="QS-Type-Capabilities-ShareFigmaAction"></a>
+The ability to share Figma actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareFileDataSource **   <a name="QS-Type-Capabilities-ShareFileDataSource"></a>
+The ability to share file data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1066,8 +1972,62 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareGitHubDataSource **   <a name="QS-Type-Capabilities-ShareGitHubDataSource"></a>
+The ability to share GitHub data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGmailAction **   <a name="QS-Type-Capabilities-ShareGmailAction"></a>
+The ability to share Gmail actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGongAction **   <a name="QS-Type-Capabilities-ShareGongAction"></a>
+The ability to share Gong actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleAnalyticsAction **   <a name="QS-Type-Capabilities-ShareGoogleAnalyticsAction"></a>
+The ability to share Google Analytics actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleAnalyticsDataSource **   <a name="QS-Type-Capabilities-ShareGoogleAnalyticsDataSource"></a>
+The ability to share Google Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleBigQueryDataSource **   <a name="QS-Type-Capabilities-ShareGoogleBigQueryDataSource"></a>
+The ability to share Google BigQuery data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareGoogleCalendarAction **   <a name="QS-Type-Capabilities-ShareGoogleCalendarAction"></a>
 The ability to share Google Calendar actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleChatAction **   <a name="QS-Type-Capabilities-ShareGoogleChatAction"></a>
+The ability to share Google Chat actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleDocsAction **   <a name="QS-Type-Capabilities-ShareGoogleDocsAction"></a>
+The ability to share Google Docs actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleDriveAction **   <a name="QS-Type-Capabilities-ShareGoogleDriveAction"></a>
+The ability to share Google Drive actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1076,6 +2036,36 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleMeetAction **   <a name="QS-Type-Capabilities-ShareGoogleMeetAction"></a>
+The ability to share Google Meet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleSheetsAction **   <a name="QS-Type-Capabilities-ShareGoogleSheetsAction"></a>
+The ability to share Google Sheets actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleSheetsDataSource **   <a name="QS-Type-Capabilities-ShareGoogleSheetsDataSource"></a>
+The ability to share Google Sheets data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareGoogleSlidesAction **   <a name="QS-Type-Capabilities-ShareGoogleSlidesAction"></a>
+The ability to share Google Slides actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareHGInsightsAction **   <a name="QS-Type-Capabilities-ShareHGInsightsAction"></a>
+The ability to share HG Insights Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1100,6 +2090,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareImpalaDataSource **   <a name="QS-Type-Capabilities-ShareImpalaDataSource"></a>
+The ability to share Impala data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareIntercomAction **   <a name="QS-Type-Capabilities-ShareIntercomAction"></a>
 The ability to share Intercom actions.
 Type: String
@@ -1108,6 +2104,12 @@ Required: No
 
  ** ShareJiraAction **   <a name="QS-Type-Capabilities-ShareJiraAction"></a>
 The ability to share Jira actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareJiraDataSource **   <a name="QS-Type-Capabilities-ShareJiraDataSource"></a>
+The ability to share Jira data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1126,6 +2128,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareMariaDbDataSource **   <a name="QS-Type-Capabilities-ShareMariaDbDataSource"></a>
+The ability to share MariaDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareMCPAction **   <a name="QS-Type-Capabilities-ShareMCPAction"></a>
 The ability to share Model Context Protocol actions.
 Type: String
@@ -1138,6 +2146,24 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareMongoAtlasDataSource **   <a name="QS-Type-Capabilities-ShareMongoAtlasDataSource"></a>
+The ability to share MongoDB Atlas data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareMongoDbDataSource **   <a name="QS-Type-Capabilities-ShareMongoDbDataSource"></a>
+The ability to share MongoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareMoodysAction **   <a name="QS-Type-Capabilities-ShareMoodysAction"></a>
+The ability to share Moody's GenAI Ready Data actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareMSExchangeAction **   <a name="QS-Type-Capabilities-ShareMSExchangeAction"></a>
 The ability to share Microsoft Outlook actions.
 Type: String
@@ -1146,6 +2172,12 @@ Required: No
 
  ** ShareMSTeamsAction **   <a name="QS-Type-Capabilities-ShareMSTeamsAction"></a>
 The ability to share Microsoft Teams actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareMySqlDataSource **   <a name="QS-Type-Capabilities-ShareMySqlDataSource"></a>
+The ability to share MySQL data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1176,14 +2208,44 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareOneNoteAction **   <a name="QS-Type-Capabilities-ShareOneNoteAction"></a>
+The ability to share Microsoft OneNote actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareOpenAPIAction **   <a name="QS-Type-Capabilities-ShareOpenAPIAction"></a>
 The ability to share OpenAPI Specification actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareOpenSearchDataSource **   <a name="QS-Type-Capabilities-ShareOpenSearchDataSource"></a>
+The ability to share Amazon OpenSearch Service data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareOracleDataSource **   <a name="QS-Type-Capabilities-ShareOracleDataSource"></a>
+The ability to share Oracle data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** SharePagerDutyAction **   <a name="QS-Type-Capabilities-SharePagerDutyAction"></a>
 The ability to share PagerDuty Advance actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SharePagerDutyAgentAction **   <a name="QS-Type-Capabilities-SharePagerDutyAgentAction"></a>
+The ability to share PagerDuty Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SharePayPalDataSource **   <a name="QS-Type-Capabilities-SharePayPalDataSource"></a>
+The ability to share PayPal data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1202,10 +2264,64 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** SharePostgreSqlDataSource **   <a name="QS-Type-Capabilities-SharePostgreSqlDataSource"></a>
+The ability to share PostgreSQL data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SharePrestoDataSource **   <a name="QS-Type-Capabilities-SharePrestoDataSource"></a>
+The ability to share Presto data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareQBusinessKnowledgeBase **   <a name="QS-Type-Capabilities-ShareQBusinessKnowledgeBase"></a>
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareQuickBooksAction **   <a name="QS-Type-Capabilities-ShareQuickBooksAction"></a>
+The ability to share QuickBooks actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareRadiantDataSource **   <a name="QS-Type-Capabilities-ShareRadiantDataSource"></a>
+The ability to share Amazon QuickSight data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareRdsDataSource **   <a name="QS-Type-Capabilities-ShareRdsDataSource"></a>
+The ability to share auto-discovered Amazon RDS data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareRedshiftAutoDiscoveredDataSource **   <a name="QS-Type-Capabilities-ShareRedshiftAutoDiscoveredDataSource"></a>
+The ability to share auto-discovered Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareRedshiftManualDataSource **   <a name="QS-Type-Capabilities-ShareRedshiftManualDataSource"></a>
+The ability to share manually configured Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareS3AnalyticsDataSource **   <a name="QS-Type-Capabilities-ShareS3AnalyticsDataSource"></a>
+The ability to share Amazon S3 Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareS3DataSource **   <a name="QS-Type-Capabilities-ShareS3DataSource"></a>
+The ability to share Amazon S3 data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1218,8 +2334,20 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareS3TablesDataSource **   <a name="QS-Type-Capabilities-ShareS3TablesDataSource"></a>
+The ability to share Amazon S3 Tables data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareSalesforceAction **   <a name="QS-Type-Capabilities-ShareSalesforceAction"></a>
 The ability to share Salesforce actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareSalesforceDataSource **   <a name="QS-Type-Capabilities-ShareSalesforceDataSource"></a>
+The ability to share Salesforce data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1248,6 +2376,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareSapHanaDataSource **   <a name="QS-Type-Capabilities-ShareSapHanaDataSource"></a>
+The ability to share SAP HANA data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareSAPMaterialStockAction **   <a name="QS-Type-Capabilities-ShareSAPMaterialStockAction"></a>
 The ability to share SAP Material Stock actions.
 Type: String
@@ -1272,6 +2406,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareServiceNowDataSource **   <a name="QS-Type-Capabilities-ShareServiceNowDataSource"></a>
+The ability to share ServiceNow data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareSharePointAction **   <a name="QS-Type-Capabilities-ShareSharePointAction"></a>
 The ability to share Microsoft SharePoint Online actions.
 Type: String
@@ -1282,6 +2422,12 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareShopifyAction **   <a name="QS-Type-Capabilities-ShareShopifyAction"></a>
+The ability to share Shopify actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1298,14 +2444,80 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareSnowFlakeAction **   <a name="QS-Type-Capabilities-ShareSnowFlakeAction"></a>
+The ability to share Snowflake Cortex Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareSnowflakeDataSource **   <a name="QS-Type-Capabilities-ShareSnowflakeDataSource"></a>
+The ability to share Snowflake data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareSpaces **   <a name="QS-Type-Capabilities-ShareSpaces"></a>
 The ability to share spaces with other users and groups.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareSparkDataSource **   <a name="QS-Type-Capabilities-ShareSparkDataSource"></a>
+The ability to share Spark data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareSqlServerDataSource **   <a name="QS-Type-Capabilities-ShareSqlServerDataSource"></a>
+The ability to share SQL Server data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareSquareDataSource **   <a name="QS-Type-Capabilities-ShareSquareDataSource"></a>
+The ability to share Square data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareStarburstDataSource **   <a name="QS-Type-Capabilities-ShareStarburstDataSource"></a>
+The ability to share Starburst data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareTeradataDataSource **   <a name="QS-Type-Capabilities-ShareTeradataDataSource"></a>
+The ability to share Teradata data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareTextractAction **   <a name="QS-Type-Capabilities-ShareTextractAction"></a>
 The ability to share Textract actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareTimestreamDataSource **   <a name="QS-Type-Capabilities-ShareTimestreamDataSource"></a>
+The ability to share Amazon Timestream data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareTrinoDataSource **   <a name="QS-Type-Capabilities-ShareTrinoDataSource"></a>
+The ability to share Trino data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareTwitterDataSource **   <a name="QS-Type-Capabilities-ShareTwitterDataSource"></a>
+The ability to share Twitter data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareVisierAgentAction **   <a name="QS-Type-Capabilities-ShareVisierAgentAction"></a>
+The ability to share Visier Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1318,8 +2530,38 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareWhatsAppAction **   <a name="QS-Type-Capabilities-ShareWhatsAppAction"></a>
+The ability to share WhatsApp actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareZapierAction **   <a name="QS-Type-Capabilities-ShareZapierAction"></a>
+The ability to share Zapier Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareZendeskAction **   <a name="QS-Type-Capabilities-ShareZendeskAction"></a>
 The ability to share Zendesk actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareZoomAction **   <a name="QS-Type-Capabilities-ShareZoomAction"></a>
+The ability to share Zoom actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareZoomInfoAction **   <a name="QS-Type-Capabilities-ShareZoomInfoAction"></a>
+The ability to share ZoomInfo Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShopifyAction **   <a name="QS-Type-Capabilities-ShopifyAction"></a>
+The ability to perform actions using Shopify connectors.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1336,8 +2578,44 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** SnowFlakeAction **   <a name="QS-Type-Capabilities-SnowFlakeAction"></a>
+The ability to perform actions using Snowflake Cortex Agent connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SnowflakeDataSource **   <a name="QS-Type-Capabilities-SnowflakeDataSource"></a>
+The ability to create, update, and share Snowflake data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** Space **   <a name="QS-Type-Capabilities-Space"></a>
 The ability to perform space-related actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SparkDataSource **   <a name="QS-Type-Capabilities-SparkDataSource"></a>
+The ability to create, update, and share Spark data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SqlServerDataSource **   <a name="QS-Type-Capabilities-SqlServerDataSource"></a>
+The ability to create, update, and share SQL Server data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SquareDataSource **   <a name="QS-Type-Capabilities-SquareDataSource"></a>
+The ability to create, update, and share Square data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** StarburstDataSource **   <a name="QS-Type-Capabilities-StarburstDataSource"></a>
+The ability to create, update, and share Starburst data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1354,8 +2632,20 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** TeradataDataSource **   <a name="QS-Type-Capabilities-TeradataDataSource"></a>
+The ability to create, update, and share Teradata data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** TextractAction **   <a name="QS-Type-Capabilities-TextractAction"></a>
 The ability to perform actions using Textract connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** TimestreamDataSource **   <a name="QS-Type-Capabilities-TimestreamDataSource"></a>
+The ability to create, update, and share Amazon Timestream data sources.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1372,8 +2662,302 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** TrinoDataSource **   <a name="QS-Type-Capabilities-TrinoDataSource"></a>
+The ability to create, update, and share Trino data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** TwitterDataSource **   <a name="QS-Type-Capabilities-TwitterDataSource"></a>
+The ability to create, update, and share Twitter data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateAdobeAnalyticsDataSource **   <a name="QS-Type-Capabilities-UpdateAdobeAnalyticsDataSource"></a>
+The ability to update Adobe Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateAthenaDataSource **   <a name="QS-Type-Capabilities-UpdateAthenaDataSource"></a>
+The ability to update Amazon Athena data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateAuroraDataSource **   <a name="QS-Type-Capabilities-UpdateAuroraDataSource"></a>
+The ability to update Amazon Aurora data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateDatabricksDataSource **   <a name="QS-Type-Capabilities-UpdateDatabricksDataSource"></a>
+The ability to update Databricks data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateDb2DataSource **   <a name="QS-Type-Capabilities-UpdateDb2DataSource"></a>
+The ability to update Db2 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateDenodoDataSource **   <a name="QS-Type-Capabilities-UpdateDenodoDataSource"></a>
+The ability to update Denodo data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateDocumentDbDataSource **   <a name="QS-Type-Capabilities-UpdateDocumentDbDataSource"></a>
+The ability to update Amazon DocumentDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateDremioDataSource **   <a name="QS-Type-Capabilities-UpdateDremioDataSource"></a>
+The ability to update Dremio data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateDynamoDbDataSource **   <a name="QS-Type-Capabilities-UpdateDynamoDbDataSource"></a>
+The ability to update Amazon DynamoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateExasolDataSource **   <a name="QS-Type-Capabilities-UpdateExasolDataSource"></a>
+The ability to update Exasol data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateFileDataSource **   <a name="QS-Type-Capabilities-UpdateFileDataSource"></a>
+The ability to update file data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateGitHubDataSource **   <a name="QS-Type-Capabilities-UpdateGitHubDataSource"></a>
+The ability to update GitHub data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateGoogleAnalyticsDataSource **   <a name="QS-Type-Capabilities-UpdateGoogleAnalyticsDataSource"></a>
+The ability to update Google Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateGoogleBigQueryDataSource **   <a name="QS-Type-Capabilities-UpdateGoogleBigQueryDataSource"></a>
+The ability to update Google BigQuery data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateGoogleSheetsDataSource **   <a name="QS-Type-Capabilities-UpdateGoogleSheetsDataSource"></a>
+The ability to update Google Sheets data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateImpalaDataSource **   <a name="QS-Type-Capabilities-UpdateImpalaDataSource"></a>
+The ability to update Impala data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateJiraDataSource **   <a name="QS-Type-Capabilities-UpdateJiraDataSource"></a>
+The ability to update Jira data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateMariaDbDataSource **   <a name="QS-Type-Capabilities-UpdateMariaDbDataSource"></a>
+The ability to update MariaDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateMongoAtlasDataSource **   <a name="QS-Type-Capabilities-UpdateMongoAtlasDataSource"></a>
+The ability to update MongoDB Atlas data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateMongoDbDataSource **   <a name="QS-Type-Capabilities-UpdateMongoDbDataSource"></a>
+The ability to update MongoDB data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateMySqlDataSource **   <a name="QS-Type-Capabilities-UpdateMySqlDataSource"></a>
+The ability to update MySQL data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateOpenSearchDataSource **   <a name="QS-Type-Capabilities-UpdateOpenSearchDataSource"></a>
+The ability to update Amazon OpenSearch Service data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateOracleDataSource **   <a name="QS-Type-Capabilities-UpdateOracleDataSource"></a>
+The ability to update Oracle data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdatePayPalDataSource **   <a name="QS-Type-Capabilities-UpdatePayPalDataSource"></a>
+The ability to update PayPal data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdatePostgreSqlDataSource **   <a name="QS-Type-Capabilities-UpdatePostgreSqlDataSource"></a>
+The ability to update PostgreSQL data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdatePrestoDataSource **   <a name="QS-Type-Capabilities-UpdatePrestoDataSource"></a>
+The ability to update Presto data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateRadiantDataSource **   <a name="QS-Type-Capabilities-UpdateRadiantDataSource"></a>
+The ability to update Amazon QuickSight data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateRdsDataSource **   <a name="QS-Type-Capabilities-UpdateRdsDataSource"></a>
+The ability to update auto-discovered Amazon RDS data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateRedshiftAutoDiscoveredDataSource **   <a name="QS-Type-Capabilities-UpdateRedshiftAutoDiscoveredDataSource"></a>
+The ability to update auto-discovered Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateRedshiftManualDataSource **   <a name="QS-Type-Capabilities-UpdateRedshiftManualDataSource"></a>
+The ability to update manually configured Amazon Redshift data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateS3AnalyticsDataSource **   <a name="QS-Type-Capabilities-UpdateS3AnalyticsDataSource"></a>
+The ability to update Amazon S3 Analytics data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateS3DataSource **   <a name="QS-Type-Capabilities-UpdateS3DataSource"></a>
+The ability to update Amazon S3 data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateS3TablesDataSource **   <a name="QS-Type-Capabilities-UpdateS3TablesDataSource"></a>
+The ability to update Amazon S3 Tables data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateSalesforceDataSource **   <a name="QS-Type-Capabilities-UpdateSalesforceDataSource"></a>
+The ability to update Salesforce data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateSapHanaDataSource **   <a name="QS-Type-Capabilities-UpdateSapHanaDataSource"></a>
+The ability to update SAP HANA data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateServiceNowDataSource **   <a name="QS-Type-Capabilities-UpdateServiceNowDataSource"></a>
+The ability to update ServiceNow data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateSnowflakeDataSource **   <a name="QS-Type-Capabilities-UpdateSnowflakeDataSource"></a>
+The ability to update Snowflake data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateSparkDataSource **   <a name="QS-Type-Capabilities-UpdateSparkDataSource"></a>
+The ability to update Spark data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateSqlServerDataSource **   <a name="QS-Type-Capabilities-UpdateSqlServerDataSource"></a>
+The ability to update SQL Server data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateSquareDataSource **   <a name="QS-Type-Capabilities-UpdateSquareDataSource"></a>
+The ability to update Square data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateStarburstDataSource **   <a name="QS-Type-Capabilities-UpdateStarburstDataSource"></a>
+The ability to update Starburst data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateTeradataDataSource **   <a name="QS-Type-Capabilities-UpdateTeradataDataSource"></a>
+The ability to update Teradata data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateTimestreamDataSource **   <a name="QS-Type-Capabilities-UpdateTimestreamDataSource"></a>
+The ability to update Amazon Timestream data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateTrinoDataSource **   <a name="QS-Type-Capabilities-UpdateTrinoDataSource"></a>
+The ability to update Trino data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UpdateTwitterDataSource **   <a name="QS-Type-Capabilities-UpdateTwitterDataSource"></a>
+The ability to update Twitter data sources.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseAdobeAction **   <a name="QS-Type-Capabilities-UseAdobeAction"></a>
+The ability to use Adobe Marketing Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseAgentWebSearch **   <a name="QS-Type-Capabilities-UseAgentWebSearch"></a>
 The ability to use internet to enhance results in Chat Agents, Flows, and Quick Research. Web search queries will be processed securely in an AWS region `us-east-1`.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseAirtableAction **   <a name="QS-Type-Capabilities-UseAirtableAction"></a>
+The ability to use Airtable actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1428,6 +3012,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseBeeAction **   <a name="QS-Type-Capabilities-UseBeeAction"></a>
+The ability to use Bee actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseBoxAgentAction **   <a name="QS-Type-Capabilities-UseBoxAgentAction"></a>
 The ability to use Box Agent actions.
 Type: String
@@ -1450,6 +3040,18 @@ Required: No
 
  ** UseCanvaAgentAction **   <a name="QS-Type-Capabilities-UseCanvaAgentAction"></a>
 The ability to use Canva Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseCiscoWebexMeetingsAction **   <a name="QS-Type-Capabilities-UseCiscoWebexMeetingsAction"></a>
+The ability to use Cisco Webex Meetings actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseCiscoWebexVidcastAction **   <a name="QS-Type-Capabilities-UseCiscoWebexVidcastAction"></a>
+The ability to use Cisco Webex Video Messaging Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1480,6 +3082,18 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseDropboxAction **   <a name="QS-Type-Capabilities-UseDropboxAction"></a>
+The ability to use Dropbox actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseDunAndBradstreetAction **   <a name="QS-Type-Capabilities-UseDunAndBradstreetAction"></a>
+The ability to use Dun and Bradstreet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseExcelAddInExtension **   <a name="QS-Type-Capabilities-UseExcelAddInExtension"></a>
 The ability to use Amazon Quick through the Microsoft Excel add-in.
 Type: String
@@ -1488,6 +3102,12 @@ Required: No
 
  ** UseFactSetAction **   <a name="QS-Type-Capabilities-UseFactSetAction"></a>
 The ability to use FactSet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseFigmaAction **   <a name="QS-Type-Capabilities-UseFigmaAction"></a>
+The ability to use Figma actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1504,8 +3124,44 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseGmailAction **   <a name="QS-Type-Capabilities-UseGmailAction"></a>
+The ability to use Gmail actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGongAction **   <a name="QS-Type-Capabilities-UseGongAction"></a>
+The ability to use Gong actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleAnalyticsAction **   <a name="QS-Type-Capabilities-UseGoogleAnalyticsAction"></a>
+The ability to use Google Analytics actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseGoogleCalendarAction **   <a name="QS-Type-Capabilities-UseGoogleCalendarAction"></a>
 The ability to use Google Calendar actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleChatAction **   <a name="QS-Type-Capabilities-UseGoogleChatAction"></a>
+The ability to use Google Chat actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleDocsAction **   <a name="QS-Type-Capabilities-UseGoogleDocsAction"></a>
+The ability to use Google Docs actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleDriveAction **   <a name="QS-Type-Capabilities-UseGoogleDriveAction"></a>
+The ability to use Google Drive actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1514,6 +3170,30 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleMeetAction **   <a name="QS-Type-Capabilities-UseGoogleMeetAction"></a>
+The ability to use Google Meet actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleSheetsAction **   <a name="QS-Type-Capabilities-UseGoogleSheetsAction"></a>
+The ability to use Google Sheets actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseGoogleSlidesAction **   <a name="QS-Type-Capabilities-UseGoogleSlidesAction"></a>
+The ability to use Google Slides actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseHGInsightsAction **   <a name="QS-Type-Capabilities-UseHGInsightsAction"></a>
+The ability to use HG Insights Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1568,6 +3248,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseMoodysAction **   <a name="QS-Type-Capabilities-UseMoodysAction"></a>
+The ability to use Moody's GenAI Ready Data actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseMSExchangeAction **   <a name="QS-Type-Capabilities-UseMSExchangeAction"></a>
 The ability to use Microsoft Outlook actions.
 Type: String
@@ -1606,6 +3292,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseOneNoteAction **   <a name="QS-Type-Capabilities-UseOneNoteAction"></a>
+The ability to use Microsoft OneNote actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseOpenAPIAction **   <a name="QS-Type-Capabilities-UseOpenAPIAction"></a>
 The ability to use OpenAPI Specification actions.
 Type: String
@@ -1624,6 +3316,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UsePagerDutyAgentAction **   <a name="QS-Type-Capabilities-UsePagerDutyAgentAction"></a>
+The ability to use PagerDuty Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UsePowerpointAddInExtension **   <a name="QS-Type-Capabilities-UsePowerpointAddInExtension"></a>
 The ability to use Amazon Quick through the Microsoft PowerPoint add-in.
 Type: String
@@ -1634,6 +3332,12 @@ Required: No
 The permission state of a capability in a custom permissions profile. Valid values:
 +  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
 +  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseQuickBooksAction **   <a name="QS-Type-Capabilities-UseQuickBooksAction"></a>
+The ability to use QuickBooks actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1714,6 +3418,12 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseShopifyAction **   <a name="QS-Type-Capabilities-UseShopifyAction"></a>
+The ability to use Shopify actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseSlackAction **   <a name="QS-Type-Capabilities-UseSlackAction"></a>
 The ability to use Slack actions.
 Type: String
@@ -1726,8 +3436,20 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseSnowFlakeAction **   <a name="QS-Type-Capabilities-UseSnowFlakeAction"></a>
+The ability to use Snowflake Cortex Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseTextractAction **   <a name="QS-Type-Capabilities-UseTextractAction"></a>
 The ability to use Textract actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseVisierAgentAction **   <a name="QS-Type-Capabilities-UseVisierAgentAction"></a>
+The ability to use Visier Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1740,8 +3462,20 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseWhatsAppAction **   <a name="QS-Type-Capabilities-UseWhatsAppAction"></a>
+The ability to use WhatsApp actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseWordAddInExtension **   <a name="QS-Type-Capabilities-UseWordAddInExtension"></a>
 The ability to use Amazon Quick through the Microsoft Word add-in.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseZapierAction **   <a name="QS-Type-Capabilities-UseZapierAction"></a>
+The ability to use Zapier Agent actions.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1752,8 +3486,26 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseZoomAction **   <a name="QS-Type-Capabilities-UseZoomAction"></a>
+The ability to use Zoom actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseZoomInfoAction **   <a name="QS-Type-Capabilities-UseZoomInfoAction"></a>
+The ability to use ZoomInfo Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ViewAccountSPICECapacity **   <a name="QS-Type-Capabilities-ViewAccountSPICECapacity"></a>
 The ability to view account SPICE capacity.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** VisierAgentAction **   <a name="QS-Type-Capabilities-VisierAgentAction"></a>
+The ability to perform actions using Visier Agent connectors.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1766,8 +3518,32 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** WhatsAppAction **   <a name="QS-Type-Capabilities-WhatsAppAction"></a>
+The ability to perform actions using WhatsApp connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ZapierAction **   <a name="QS-Type-Capabilities-ZapierAction"></a>
+The ability to perform actions using Zapier Agent connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ZendeskAction **   <a name="QS-Type-Capabilities-ZendeskAction"></a>
 The ability to perform actions using Zendesk connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ZoomAction **   <a name="QS-Type-Capabilities-ZoomAction"></a>
+The ability to perform actions using Zoom connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ZoomInfoAction **   <a name="QS-Type-Capabilities-ZoomInfoAction"></a>
+The ability to perform actions using ZoomInfo Agent connectors.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No

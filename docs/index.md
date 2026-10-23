@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-10-21
+generated_on: 2026-10-22
 ---
 
 # Welcome to AWS Documentation
@@ -467,6 +467,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [AWS Payment Cryptography](/payment-cryptography/?icmpid=docs_homepage_security): Fully managed payment cryptography service
 - [AWS Resource Access Manager](/ARG/?icmpid=docs_homepage_security): Simple, secure service to share AWS resources
 - [AWS Secrets Manager](/secretsmanager/?icmpid=docs_homepage_security): Rotate, manage, and retrieve secrets
+- [AWS Continuum](/continuum/?icmpid=docs_homepage_security): Discovers, prioritizes, validates, and remediates security risks across the software lifecycle
 - [AWS Key Management Service](/kms/?icmpid=docs_homepage_security): Managed creation and control of encryption keys
 - [AWS Network Security Manager](/network-security-manager/?icmpid=docs_homepage_security): Define and deploy network security protections
 - [AWS Private Certificate Authority](/privateca/?icmpid=docs_homepage_security): Create private certificates to identify resources and protect data

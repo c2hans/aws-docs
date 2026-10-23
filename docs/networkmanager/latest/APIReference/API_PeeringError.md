@@ -13,7 +13,7 @@ Describes an error associated with a peering request.
  ** Code **   <a name="networkmanager-Type-PeeringError-Code"></a>
 The error code for the peering request.
 Type: String
-Valid Values: `TRANSIT_GATEWAY_NOT_FOUND | TRANSIT_GATEWAY_PEERS_LIMIT_EXCEEDED | MISSING_PERMISSIONS | INTERNAL_ERROR | EDGE_LOCATION_PEER_DUPLICATE | INVALID_TRANSIT_GATEWAY_STATE`
+Valid Values: `TRANSIT_GATEWAY_NOT_FOUND | TRANSIT_GATEWAY_PEERS_LIMIT_EXCEEDED | MISSING_PERMISSIONS | INTERNAL_ERROR | EDGE_LOCATION_PEER_DUPLICATE | INVALID_TRANSIT_GATEWAY_STATE | TRANSIT_GATEWAY_ENCRYPTION_NOT_SUPPORTED | CREATION_FAILED | DELETION_FAILED`
 Required: No
 
  ** Message **   <a name="networkmanager-Type-PeeringError-Message"></a>

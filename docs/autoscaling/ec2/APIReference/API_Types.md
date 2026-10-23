@@ -13,6 +13,7 @@ The order of each element in a data type structure is not guaranteed. Applicatio
 The following data types are supported:
 +  [AcceleratorCountRequest](API_AcceleratorCountRequest.md)
 +  [AcceleratorTotalMemoryMiBRequest](API_AcceleratorTotalMemoryMiBRequest.md)
++  [AccountSetting](API_AccountSetting.md)
 +  [Activity](API_Activity.md)
 +  [AdjustmentType](API_AdjustmentType.md)
 +  [Alarm](API_Alarm.md)

@@ -40,7 +40,7 @@ Each entry in `evaluatorSummaries` provides aggregate metrics for one evaluator:
 
 ```
 {
-    "batchEvaluationId": "12345678-1234-1234-1234-123456789012",
+    "batchEvaluationId": "acme_baseline-a1b2c3d4e5",
     "status": "COMPLETED",
     "evaluationResults": {
         "numberOfSessionsCompleted": 47,
@@ -79,7 +79,7 @@ The `outputConfig` field in the `GetBatchEvaluation` response specifies a CloudW
     "outputConfig": {
         "cloudWatchConfig": {
             "logGroupName": "/aws/bedrock-agentcore/evaluations/batch",
-            "logStreamName": "12345678-1234-1234-1234-123456789012"
+            "logStreamName": "acme_baseline-a1b2c3d4e5"
         }
     }
 }
@@ -96,7 +96,7 @@ Each event in the log stream contains per-turn, per-evaluator detail:
 |  `gen_ai.evaluation.score.label`  | Categorical label (for example, `PASS`, `Very Helpful`). |
 |  `gen_ai.evaluation.explanation`  | LLM-generated reasoning for the score. |
 
-To read these events, use the CloudWatch Logs API:
+To read these events with the AWS SDK, use the CloudWatch Logs API. `agentcore eval batch-evaluation get` reads them for you, as described in [Viewing results from the CLI](#batch-eval-viewing-from-cli).
 
 ```
 import boto3
@@ -105,7 +105,7 @@ logs_client = boto3.client("logs", region_name="us-west-2")
 
 response = logs_client.get_log_events(
     logGroupName="/aws/bedrock-agentcore/evaluations/batch",
-    logStreamName="12345678-1234-1234-1234-123456789012",
+    logStreamName="acme_baseline-a1b2c3d4e5",
 )
 
 for event in response["events"]:
@@ -170,18 +170,17 @@ for eid in baseline_summaries:
 ## Viewing results from the CLI
 <a name="batch-eval-viewing-from-cli"></a>
 
-In addition to the `GetBatchEvaluation` API, the AgentCore CLI surfaces the same results:
-+  `agentcore view batch-evaluation <batch-evaluation-id>` — view a single job and its results (add `--json` for the raw output).
-+  `agentcore batch-evaluations history` — list batch evaluation jobs (running jobs are refreshed from the service; add `--json`).
-+  `agentcore run batch-evaluation …​ --json` — returns the same `batchEvaluationId` / `evaluationResults` / `evaluatorSummaries` object shown in the JSON example above.
+The AgentCore CLI provides the following commands:
++  `agentcore eval batch-evaluation get --id <batch-evaluation-id>`: Returns the `GetBatchEvaluation` response. For a finished job, the command also reads the result log stream and adds a `results` array with one entry per score. Each entry has fields such as `evaluatorId`, `level`, `sessionId`, `traceId`, `score`, `label`, `explanation`, and `error`. Pass `--disable-cw-results` to skip the CloudWatch read and return only the job metadata.
++  `agentcore eval batch-evaluation list`: Lists batch evaluation jobs.
++  `agentcore eval batch-evaluation evaluate`: Starts a job and prints its metadata as JSON.
 
 ```
 # View a single batch evaluation job and its results
-agentcore view batch-evaluation 12345678-1234-1234-1234-123456789012 --json
+agentcore eval batch-evaluation get \
+  --id acme_baseline-a1b2c3d4e5 \
+  --json
 
-# List batch evaluation jobs (running jobs are refreshed from the service)
-agentcore batch-evaluations history --json
+# List batch evaluation jobs
+agentcore eval batch-evaluation list --json
 ```
-
-**Note**
-The run command flag for selecting evaluators is `-e, --evaluator <ids…​>` (or `--evaluator-arn <arns…​>`).

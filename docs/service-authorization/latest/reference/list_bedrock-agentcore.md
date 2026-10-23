@@ -27,10 +27,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   BatchCreateMemoryRecords  **
   - **SDK client:** bedrock-agentcore
-  - **IAM action:**  [bedrock-agentcore:BatchCreateMemoryRecords](#list_bedrock-agentcore-action-BatchCreateMemoryRecords)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:BatchCreateMemoryRecords](#list_bedrock-agentcore-action-BatchCreateMemoryRecords)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [bedrock-agentcore:UpdateMemoryRecordExpirySpecification](#list_bedrock-agentcore-action-UpdateMemoryRecordExpirySpecification)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   BatchDeleteMemoryRecords  **
   - **SDK client:** bedrock-agentcore

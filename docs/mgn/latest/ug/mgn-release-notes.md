@@ -7,6 +7,10 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Release notes
 <a name="mgn-release-notes"></a>
 
+## October 2026
+<a name="release-notes-oct-2026"></a>
++ Agentless replication is no longer available for new deployments. We recommend using agent-based replication for all migrations. For more information, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).
+
 ## September 2026
 <a name="release-notes-sep-2026"></a>
 + Added support for the following operating systems:

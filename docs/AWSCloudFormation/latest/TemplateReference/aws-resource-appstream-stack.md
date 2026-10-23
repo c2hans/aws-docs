@@ -33,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[FeedbackURL](#cfn-appstream-stack-feedbackurl)" : {{String}},
       "[Name](#cfn-appstream-stack-name)" : {{String}},
       "[RedirectURL](#cfn-appstream-stack-redirecturl)" : {{String}},
+      "[StorageConnectorAuthentication](#cfn-appstream-stack-storageconnectorauthentication)" : {{String}},
       "[StorageConnectors](#cfn-appstream-stack-storageconnectors)" : {{[ StorageConnector, ... ]}},
       "[StreamingExperienceSettings](#cfn-appstream-stack-streamingexperiencesettings)" : {{StreamingExperienceSettings}},
       "[Tags](#cfn-appstream-stack-tags)" : {{[ Tag, ... ]}},
@@ -65,6 +66,7 @@ Properties:
   [FeedbackURL](#cfn-appstream-stack-feedbackurl): {{String}}
   [Name](#cfn-appstream-stack-name): {{String}}
   [RedirectURL](#cfn-appstream-stack-redirecturl): {{String}}
+  [StorageConnectorAuthentication](#cfn-appstream-stack-storageconnectorauthentication): {{String}}
   [StorageConnectors](#cfn-appstream-stack-storageconnectors): {{
     - StorageConnector}}
   [StreamingExperienceSettings](#cfn-appstream-stack-streamingexperiencesettings): {{
@@ -158,6 +160,13 @@ The URL that users are redirected to after their streaming session ends.
 *Required*: No
 *Type*: String
 *Maximum*: `1000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StorageConnectorAuthentication`  <a name="cfn-appstream-stack-storageconnectorauthentication"></a>
+Specifies whether users' cloud storage authentication persists across streaming sessions. When this attribute is FORCE\_REAUTHENTICATION, WorkSpaces Applications removes the stored authentication for the stack's OneDrive and Google Drive connectors when a user's session ends. The user links their cloud storage again on their next session. The default is REUSE\_CREDENTIALS.
+*Required*: No
+*Type*: String
+*Allowed values*: `FORCE_REAUTHENTICATION | REUSE_CREDENTIALS`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StorageConnectors`  <a name="cfn-appstream-stack-storageconnectors"></a>

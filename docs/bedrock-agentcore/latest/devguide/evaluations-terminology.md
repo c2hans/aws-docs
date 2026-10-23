@@ -36,7 +36,7 @@ For more information about supported instrumentation libraries, see [Supported a
 
 An instrumentation agent automatically captures telemetry from application code, processes it, and exports it to a backend service for storage or evaluation. Tools such as **ADOT (AWS Distro for OpenTelemetry)** provide a vendor-neutral, production-ready auto-instrumentation agent that dynamically injects bytecode to capture traces without code changes. The agent is a key component in enabling automated evaluation.
 
-AgentCore Evaluations currently supports **ADOT (AWS Distro for OpenTelemetry)** as the instrumentation agent.
+AgentCore Evaluations uses **ADOT (AWS Distro for OpenTelemetry)** as the instrumentation agent.
 
 ## Session
 <a name="session"></a>

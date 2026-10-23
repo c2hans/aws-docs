@@ -142,6 +142,8 @@ GLM 5.3 supports Geo Cross-Region inference from the US Regions and Global Cross
 
 Your AWS account has default quotas to maintain the performance of the service and to ensure appropriate usage of Amazon Bedrock. The default quotas assigned to an account might be updated depending on regional factors, payment history, fraudulent usage, and/or approval of a quota [increase request](quotas-increase.html). For more information, see [Quotas for Amazon Bedrock](quotas.md) documentation and see the [limits](/general/latest/gr/bedrock.html#limits_bedrock) for the model.
 
+The burndown rate for Z.AI GLM 5.3 on the `bedrock-runtime` endpoint is 10x for output tokens (1 output token consumes 10 tokens from your quotas).
+
 ## Sample Code
 <a name="model-card-zai-glm-5-3-sample-code"></a>
 

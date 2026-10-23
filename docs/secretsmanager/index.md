@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/index.html
 title: 'AWS Secrets Manager Documentation'
 canonical_url: https://docs.aws.amazon.com/secretsmanager/
 source: aws-documentation
-generated_on: 2026-10-21
+generated_on: 2026-10-22
 ---
 
 # AWS Secrets Manager Documentation

@@ -257,6 +257,16 @@ The transit gateway attachment.
 Type: [AnalysisComponent](API_AnalysisComponent.md) object
 Required: No
 
+ ** transitGatewayPolicyTable **
+The transit gateway policy table.
+Type: [AnalysisComponent](API_AnalysisComponent.md) object
+Required: No
+
+ ** transitGatewayPolicyTableEntry **
+The transit gateway policy table entry.
+Type: [AnalysisTransitGatewayPolicyTableEntry](API_AnalysisTransitGatewayPolicyTableEntry.md) object
+Required: No
+
  ** transitGatewayRouteTable **
 The transit gateway route table.
 Type: [AnalysisComponent](API_AnalysisComponent.md) object

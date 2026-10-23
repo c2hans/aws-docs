@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OAuth
 # OAuthParameters
 <a name="API_OAuthParameters"></a>
 
-An object that contains information needed to create a data source connection that uses OAuth client credentials. This option is available for data source connections that are made with Snowflake and Starburst.
+An object that contains information needed to create a data source connection that uses OAuth client credentials. This option is available for data source connections that are made with Snowflake, Starburst, and Databricks.
 
 ## Contents
 <a name="API_OAuthParameters_Contents"></a>

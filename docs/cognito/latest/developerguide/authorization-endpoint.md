@@ -344,6 +344,9 @@ Amazon Cognito might deny your request. Negative requests come with an HTTP erro
 ## Example: Step-up authentication request
 <a name="authorization-endpoint-step-up"></a>
 
+**Note**
+Authentication levels with ACR and AMR claims is rolling out gradually. This feature might not yet be available to your user pool. If the behavior described here isn't available, check back later as the rollout continues.
+
 Amazon Cognito supports step-up authentication with managed login. It isn't supported in the hosted UI. If your application relies on ACR and AMR, use managed login.
 
 For more information about ACR levels and AMR values, see [Authentication levels with ACR and AMR claims](cognito-user-pools-step-up-authentication.md).

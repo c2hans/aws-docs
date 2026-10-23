@@ -10,6 +10,11 @@ Summary statistics for a single evaluator within a batch evaluation.
 ## Contents
 <a name="API_EvaluatorSummary_Contents"></a>
 
+ ** evaluationDimensionName **   <a name="BedrockAgentCore-Type-EvaluatorSummary-evaluationDimensionName"></a>
+The name of the dimension that this summary covers. This field is set only for evaluators that use a multi-dimensional rating scale, where each dimension is summarized separately. For single-scale evaluators, this field is not set.
+Type: String
+Required: No
+
  ** evaluatorId **   <a name="BedrockAgentCore-Type-EvaluatorSummary-evaluatorId"></a>
 The unique identifier of the evaluator.
 Type: String

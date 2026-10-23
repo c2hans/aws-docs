@@ -11,8 +11,19 @@ A summary of a flow version's metadata.
 <a name="API_ContactFlowVersionSummary_Contents"></a>
 
  ** Arn **   <a name="connect-Type-ContactFlowVersionSummary-Arn"></a>
-The Amazon Resource Name (ARN) of the view version.
+The Amazon Resource Name (ARN) of the flow version.
 Type: String
+Required: No
+
+ ** LastModifiedRegion **   <a name="connect-Type-ContactFlowVersionSummary-LastModifiedRegion"></a>
+The AWS Region where this resource was last modified.
+Type: String
+Pattern: `[a-z]{2}(-[a-z]+){1,2}(-[0-9])?`
+Required: No
+
+ ** LastModifiedTime **   <a name="connect-Type-ContactFlowVersionSummary-LastModifiedTime"></a>
+The timestamp when this resource was last modified.
+Type: Timestamp
 Required: No
 
  ** Version **   <a name="connect-Type-ContactFlowVersionSummary-Version"></a>

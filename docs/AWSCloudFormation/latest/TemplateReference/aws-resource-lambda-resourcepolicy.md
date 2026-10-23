@@ -75,7 +75,7 @@ The Amazon Resource Name (ARN) of the Lambda resource you want to add the policy
 The value must be a complete ARN, and the operation does not accept wildcard characters.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?([a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$|^(?:arn:(?:aws[a-zA-Z-]*)?:lambda:)?(?:[a-z]{2}(?:(?:-gov)|(?:-iso(?:[a-z]?)))?-[a-z]+-\d{1}:)?(?:\d{12}:)?web-function/[a-zA-Z0-9-_]+$`
+*Pattern*: `^(arn:(aws[a-zA-Z-]*)?:lambda:)?((eusc-)?[a-z]{2}((-gov)|(-iso([a-z]?)))?-[a-z]+-\d{1}:)?(\d{12}:)?(function:)?([a-zA-Z0-9-_]+)(:(\$LATEST(\.PUBLISHED)?|[a-zA-Z0-9-_]+))?$|^(?:arn:(?:aws[a-zA-Z-]*)?:lambda:)?(?:(?:eusc-)?[a-z]{2}(?:(?:-gov)|(?:-iso(?:[a-z]?)))?-[a-z]+-\d{1}:)?(?:\d{12}:)?web-function/[a-zA-Z0-9-_]+$`
 *Minimum*: `12`
 *Maximum*: `1024`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

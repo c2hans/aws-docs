@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceS
 # InstanceStatus
 <a name="API_InstanceStatus"></a>
 
-Describes the status of an instance, including system status, instance status, attached EBS status, and application status.
+Describes the status of an instance, including system status, instance status, attached EBS status, application status, and performance status.
 
 ## Contents
 <a name="API_InstanceStatus_Contents"></a>
@@ -58,6 +58,11 @@ Required: No
  ** outpostArn **
 The Amazon Resource Name (ARN) of the Outpost.
 Type: String
+Required: No
+
+ ** performanceStatus **
+Reports the performance-related health status for the instance. This information is returned only when performance status checks are enabled for the instance.
+Type: [PerformanceStatusSummary](API_PerformanceStatusSummary.md) object
 Required: No
 
  ** systemStatus **

@@ -9,7 +9,7 @@ The ID token is a [JSON web token (JWT)](https://tools.ietf.org/html/rfc7519) th
 
 You can set the ID token expiration to any value between 5 minutes and 1 day. You can set this value per app client.
 
-The ID token includes the `acr` and `amr` claims, which describe the authentication level that the user satisfied and the methods that they completed. For more information, see [ACR and AMR token claims](cognito-user-pools-step-up-authentication.md#cognito-user-pools-step-up-token-claims).
+The ID token includes the `acr` and `amr` claims, which describe the authentication level that the user satisfied and the methods that they completed. These claims are part of a capability that is rolling out gradually and might not yet be available to your user pool. For more information, see [ACR and AMR token claims](cognito-user-pools-step-up-authentication.md#cognito-user-pools-step-up-token-claims).
 
 **Important**
 When your user signs in with managed login, Amazon Cognito sets session cookies that are valid for 1 hour. If you use managed login for authentication in your application, and specify a minimum duration of less than 1 hour for your access and ID tokens, your users will still have a valid session until the cookie expires. If the user has tokens that expire during the one-hour session, the user can refresh their tokens without the need to reauthenticate.
@@ -230,6 +230,9 @@ Inside each `identities` object, `primary` and `dateCreated` are serialized as s
 
 #### Authentication strength (ACR and AMR)
 <a name="user-pool-id-token-example-step-up"></a>
+
+**Note**
+Authentication levels with ACR and AMR claims is rolling out gradually. This feature might not yet be available to your user pool. If the behavior described here isn't available, check back later as the rollout continues.
 
 When your user pool reports the authentication level that the user reached, Amazon Cognito adds the `acr` and `amr` claims. The following token is from a user who authenticated with a password and a TOTP from an authenticator app, which is the highest level. Each token contains exactly one of the possible `acr` levels. For the fixed set of levels, the factor combinations that satisfy each one, and the complete list of `amr` values, see [Authentication levels with ACR and AMR claims](cognito-user-pools-step-up-authentication.md).
 

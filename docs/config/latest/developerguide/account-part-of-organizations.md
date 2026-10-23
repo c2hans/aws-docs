@@ -22,7 +22,7 @@ To avoid unnecessary evaluations, you should only deploy periodic rules that rep
 **Parameters:**
 
 MasterAccountId (Optional)Type: String
-The master account ID for an AWS account.
+The management account ID for an AWS account.
 
 ## AWS CloudFormation template
 <a name="w2aac20c16c17b7b3c19"></a>

@@ -20,6 +20,14 @@ Content-type: application/json
    "ClientToken": "{{string}}",
    "CoreNetworkId": "{{string}}",
    "EdgeLocation": "{{string}}",
+   "NatGatewayRules": [
+      {
+         "MatchSourceCidr": "{{string}}",
+         "NatCidr": "{{string}}",
+         "RuleNumber": {{number}}
+      }
+   ],
+   "NatGatewaySupport": "{{string}}",
    "Options": {
       "Protocol": "{{string}}"
    },
@@ -64,6 +72,18 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[\s\S]*`
 Required: Yes
+
+ ** [NatGatewayRules](#API_CreateConnectAttachment_RequestSyntax) **   <a name="networkmanager-CreateConnectAttachment-request-NatGatewayRules"></a>
+The NAT rules for the Connect attachment, up to 50 rules.
+Type: Array of [NatRuleRequest](API_NatRuleRequest.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Required: No
+
+ ** [NatGatewaySupport](#API_CreateConnectAttachment_RequestSyntax) **   <a name="networkmanager-CreateConnectAttachment-request-NatGatewaySupport"></a>
+Specifies whether to enable NAT gateway support on the Connect attachment. NAT is supported only on Connect attachments that use the GRE tunnel protocol. Tunnel-less Connect attachments aren't supported. To enable NAT gateway support, you must also specify at least one NAT rule. If you don't specify a value, NAT gateway support is disabled. Only the core network owner can configure NAT on an attachment.
+Type: String
+Valid Values: `ENABLE | DISABLE`
+Required: No
 
  ** [Options](#API_CreateConnectAttachment_RequestSyntax) **   <a name="networkmanager-CreateConnectAttachment-request-Options"></a>
 Options for creating an attachment.
@@ -115,6 +135,8 @@ Content-type: application/json
                "ResourceArn": "string"
             }
          ],
+         "NatGatewaySupport": "string",
+         "NatSystemRouteSupport": boolean,
          "NetworkFunctionGroupName": "string",
          "OwnerAccountId": "string",
          "ProposedNetworkFunctionGroupChange": {

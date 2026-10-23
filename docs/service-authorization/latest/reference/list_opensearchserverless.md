@@ -75,6 +75,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CreateIngestionJob  **
+  - **IAM action:**  [aoss:TagResource](#list_opensearchserverless-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   CreateIngestionStream  **
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateLifecyclePolicy  **
   - **IAM action:**  [aoss:CreateLifecyclePolicy](#list_opensearchserverless-action-CreateLifecyclePolicy)
   - **Condition key:**

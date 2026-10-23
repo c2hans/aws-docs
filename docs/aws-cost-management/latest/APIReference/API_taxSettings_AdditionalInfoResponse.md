@@ -90,6 +90,11 @@ Required: No
 Type: [MalaysiaAdditionalInfo](API_taxSettings_MalaysiaAdditionalInfo.md) object
 Required: No
 
+ ** mexicoAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-mexicoAdditionalInfo"></a>
+Additional tax information associated with your Tax Registration Number (TRN) in Mexico.
+Type: [MexicoAdditionalInfo](API_taxSettings_MexicoAdditionalInfo.md) object
+Required: No
+
  ** monacoAdditionalInfo **   <a name="awscostmanagement-Type-taxSettings_AdditionalInfoResponse-monacoAdditionalInfo"></a>
 Additional tax information associated with your TRN in Monaco.
 Type: [MonacoAdditionalInfo](API_taxSettings_MonacoAdditionalInfo.md) object

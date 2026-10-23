@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 
 Updates `ChannelSubtypeConfig` for an outbound campaign.
 
+For telephony campaigns that use the progressive, predictive, or preview dialing modes, the queue (`connectQueueId`) is immutable after the campaign starts: it cannot be added, changed, or removed with this operation, and any such request is rejected. Telephony campaigns that use the agentless dialing mode can change the queue at any time.
+
 ## Request Syntax
 <a name="API_connect-outbound-campaigns-v2_UpdateCampaignChannelSubtypeConfig_RequestSyntax"></a>
 

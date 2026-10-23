@@ -137,33 +137,17 @@ Using either configuration, you can create the custom evaluator through the API 
 1.
 
    ```
-   agentcore add evaluator \
+   agentcore add evaluator llm-as-a-judge \
      --name "your_custom_evaluator_name" \
-     --config custom_evaluator_config.json \
-     --level "TRACE"
+     --level TRACE \
+     --model "global.anthropic.claude-sonnet-4-5-20250929-v1:0" \
+     --instructions file://evaluator-instructions.txt \
+     --rating-scale '{"categorical":[{"label":"Pass","definition":"Meets the evaluation criteria"},{"label":"Fail","definition":"Does not meet the evaluation criteria"}]}'
    ```
 
-   This command adds the evaluator to your local `agentcore.json` configuration. Run `agentcore deploy` to create it in your AWS account.
+   Store the `instructions` text from the preceding configuration in `evaluator-instructions.txt` as plain text. Replace each `\n` escape with a real line break. Pass the rating scale as a preset name or inline JSON. An evaluator that the AgentCore CLI deploys uses `maxTokens` 4096 and `temperature` 0. To set other inference parameters, use the AgentCore SDK, AWS SDK, or AWS CLI tab. Numerical rating values must be integers. The example uses a categorical scale. To reuse the numerical scale from the preceding configuration, use the AgentCore SDK, AWS SDK, or AWS CLI tab. This command adds the evaluator to your local `agentcore.json` configuration. Run `agentcore deploy` to create it in your AWS account.
 **Note**
-Run this from inside an AgentCore project directory (created with `agentcore create` ).
-
-1. Enter a name for your custom evaluator.
-![Evaluator name input](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/eval-add-name.png)
-
-1. Select the evaluation level: Session, Trace, or Tool Call.
-![Evaluation level selection](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/eval-add-level.png)
-
-1. Choose the LLM judge model for evaluation.
-![Model selection](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/eval-add-model.png)
-
-1. Enter your evaluation instructions. The prompt must include at least one placeholder: `{context}` for conversation history or `{available_tools}` for the tool list.
-![Evaluation instructions input](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/eval-add-instructions.png)
-
-1. Select a rating scale preset or define a custom scale.
-![Rating scale selection](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/eval-add-rating-scale.png)
-
-1. Review the evaluator configuration and press Enter to confirm.
-![Review evaluator configuration](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/eval-add-confirm.png)
+Run this from inside an AgentCore project directory created with `agentcore create`.
 
 1.
 

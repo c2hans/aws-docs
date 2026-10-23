@@ -11,7 +11,7 @@ Provides a pre-signed URL for download of an approved attached file. This API al
 <a name="API_GetAttachedFile_RequestSyntax"></a>
 
 ```
-GET /attached-files/{{InstanceId}}/{{FileId}}?associatedResourceArn={{AssociatedResourceArn}}&urlExpiryInSeconds={{UrlExpiryInSeconds}} HTTP/1.1
+GET /attached-files/{{InstanceId}}/{{FileId}}?associatedResourceArn={{AssociatedResourceArn}}&urlContentDisposition={{UrlContentDisposition}}&urlExpiryInSeconds={{UrlExpiryInSeconds}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -33,6 +33,14 @@ Required: Yes
 The unique identifier of the Connect Customer instance.
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Required: Yes
+
+ ** [UrlContentDisposition](#API_GetAttachedFile_RequestSyntax) **   <a name="connect-GetAttachedFile-request-uri-UrlContentDisposition"></a>
+Specifies how a browser handles the file at the pre-signed URL. The valid values are the following:
+INLINE
+Displays the file in the browser.
+ATTACHMENT
+Downloads the file. This is the default.
+Valid Values: `INLINE | ATTACHMENT`
 
  ** [UrlExpiryInSeconds](#API_GetAttachedFile_RequestSyntax) **   <a name="connect-GetAttachedFile-request-uri-UrlExpiryInSeconds"></a>
 Optional override for the expiry of the pre-signed S3 URL in seconds. The default value is 300.
@@ -117,7 +125,7 @@ Valid Range: Minimum value of 1.
  ** [FileStatus](#API_GetAttachedFile_ResponseSyntax) **   <a name="connect-GetAttachedFile-response-FileStatus"></a>
 The current status of the attached file.
 Type: String
-Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED`
+Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
 
  ** [FileUseCaseType](#API_GetAttachedFile_ResponseSyntax) **   <a name="connect-GetAttachedFile-response-FileUseCaseType"></a>
 The use case for the file.

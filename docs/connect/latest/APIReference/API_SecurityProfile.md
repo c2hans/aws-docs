@@ -88,6 +88,12 @@ Key Pattern: `^(?!aws:)[\p{L}\p{Z}\p{N}_.:/=+\-@]*$`
 Value Length Constraints: Maximum length of 256.
 Required: No
 
+ ** Type **   <a name="connect-Type-SecurityProfile-Type"></a>
+The type of the security profile: `AWS_MANAGED` or `CUSTOMER_MANAGED`.
+Type: String
+Valid Values: `AWS_MANAGED | CUSTOMER_MANAGED`
+Required: No
+
 ## See Also
 <a name="API_SecurityProfile_SeeAlso"></a>
 

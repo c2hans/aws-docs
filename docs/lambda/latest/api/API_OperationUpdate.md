@@ -45,7 +45,7 @@ Type: [ContextOptions](API_ContextOptions.md) object
 Required: No
 
  ** Error **   <a name="lambda-Type-OperationUpdate-Error"></a>
-The error information for failed operations.
+The error information for failed operations. The combined size of all error fields is limited to 1 MB.
 Type: [ErrorObject](API_ErrorObject.md) object
 Required: No
 
@@ -64,7 +64,7 @@ Pattern: `[a-zA-Z0-9-_]+`
 Required: No
 
  ** Payload **   <a name="lambda-Type-OperationUpdate-Payload"></a>
-The payload for successful operations. The maximum payload size is 6 MB for synchronous `EXECUTION` operations (RequestResponse invocationType), 1 MB for asynchronous `EXECUTION` (Event invocationType) and `CHAINED_INVOKE` operations, and 256 KB for `CONTEXT`, `STEP`, `WAIT`, and `CALLBACK` operations.
+The payload for successful operations. The maximum payload size is 6 MB for synchronous `EXECUTION` operations (RequestResponse invocationType), and 1 MB for asynchronous `EXECUTION` (Event invocationType), `CHAINED_INVOKE`, `CONTEXT`, `STEP`, `WAIT`, and `CALLBACK` operations.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 6291456.
 Required: No

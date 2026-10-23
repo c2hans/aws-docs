@@ -72,7 +72,8 @@ Content-type: application/json
       "TagRestrictedResources": [ "string" ],
       "Tags": {
          "string" : "string"
-      }
+      },
+      "Type": "string"
    }
 }
 ```

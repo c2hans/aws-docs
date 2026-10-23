@@ -36,6 +36,12 @@ The name of the security profile.
 Type: String
 Required: No
 
+ ** Type **   <a name="connect-Type-SecurityProfileSummary-Type"></a>
+The type of the security profile: `AWS_MANAGED` or `CUSTOMER_MANAGED`.
+Type: String
+Valid Values: `AWS_MANAGED | CUSTOMER_MANAGED`
+Required: No
+
 ## See Also
 <a name="API_SecurityProfileSummary_SeeAlso"></a>
 

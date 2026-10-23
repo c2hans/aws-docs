@@ -50,6 +50,7 @@ Content-type: application/json
          "evaluationResults": {
             "evaluatorSummaries": [
                {
+                  "evaluationDimensionName": "string",
                   "evaluatorId": "string",
                   "statistics": {
                      "averageScore": number

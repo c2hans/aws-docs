@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/al-2023-spal-packages.html
 ---
 
-# List of SPAL packages available as of the 2023.12.20260930 release
+# List of SPAL packages available as of the 2023.12.20261021 release
 <a name="al-2023-spal-packages"></a>
 
 **Important**
@@ -16,7 +16,7 @@ For more information, see [Semi-Permanent Additional Libraries (SPAL)](https://d
 **Note**
 SPAL also ships a debuginfo repository that contains both debuginfo and debugsource packages. For details, see [Installing SPAL debuginfo packages](https://docs.aws.amazon.com/linux/al2023/ug/configure-spal-repository.html#configure-spal-debuginfo-pkgs).
 
-The following list includes all SPAL packages for Amazon Linux 2023 release 2023.12.20260930.
+The following list includes all SPAL packages for Amazon Linux 2023 release 2023.12.20261021.
 
 ## SPAL repository
 <a name="list-packages"></a>
@@ -25,11 +25,11 @@ SPAL contains the following packages across different architectures.
 
 | Package Type | Count |
 | --- | --- |
-| Source | 3118 |
-| Total Binary RPMs | 16175 |
-|  aarch64 binary RPMs | 2865 |
+| Source | 3119 |
+| Total Binary RPMs | 16177 |
+|  aarch64 binary RPMs | 2866 |
 |  noarch binary RPMs | 10418 |
-|  x86\_64 binary RPMs | 2892 |
+|  x86\_64 binary RPMs | 2893 |
 
 The following list includes SPAL packages for AL2023.
 
@@ -220,7 +220,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>chromaprint</code> </td><td>src</td><td>1.5.1-1.5.spal2023-1.5.spal2023</td></tr>
   <tr><td> <code>libchromaprint</code> </td><td>aarch64, x86_64</td><td rowspan="2">1.5.1-1.5.spal2023</td></tr>
   <tr><td> <code>libchromaprint-devel</code> </td><td>aarch64, x86_64</td></tr>
-  <tr><td> <code>chromedriver</code> </td><td>aarch64, x86_64</td><td rowspan="5">153.0.8010.36-1.1.spal2023</td></tr>
+  <tr><td> <code>chromedriver</code> </td><td>aarch64, x86_64</td><td rowspan="5">154.0.8037.97-1.1.spal2023</td></tr>
   <tr><td> <code>chromium</code> </td><td>src, aarch64, x86_64</td></tr>
   <tr><td> <code>chromium-common</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>chromium-headless</code> </td><td>aarch64, x86_64</td></tr>
@@ -15080,6 +15080,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>wcslib</code> </td><td>src, aarch64, x86_64</td><td rowspan="3">7.12-1.1.spal2023</td></tr>
   <tr><td> <code>wcslib-devel</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>wcslib-utils</code> </td><td>aarch64, x86_64</td></tr>
+  <tr><td> <code>wdiff</code> </td><td>src, aarch64, x86_64</td><td>1.2.2-1.1.spal2023</td></tr>
   <tr><td> <code>web-assets</code> </td><td>src</td><td>5-15.3.spal2023-15.3.spal2023</td></tr>
   <tr><td> <code>web-assets-devel</code> </td><td>noarch</td><td rowspan="4">5-15.3.spal2023</td></tr>
   <tr><td> <code>web-assets-filesystem</code> </td><td>noarch</td></tr>

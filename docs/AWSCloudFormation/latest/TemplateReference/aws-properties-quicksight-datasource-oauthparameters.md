@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::QuickSight::DataSource OAuthParameters
 <a name="aws-properties-quicksight-datasource-oauthparameters"></a>
 
-An object that contains information needed to create a data source connection that uses OAuth client credentials. This option is available for data source connections that are made with Snowflake and Starburst.
+An object that contains information needed to create a data source connection that uses OAuth client credentials. This option is available for data source connections that are made with Snowflake, Starburst, and Databricks.
 
 ## Syntax
 <a name="aws-properties-quicksight-datasource-oauthparameters-syntax"></a>

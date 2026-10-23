@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/plugins.h
 
 Plugins for the Agent Toolkit for AWS are single-install packages that bundle the AWS MCP Server configuration and a curated set of agent skills. Instead of configuring MCP endpoints and installing skills individually, you install one plugin. Your agent is then ready to work with AWS.
 
-Plugins work with Claude Code and Codex. They are open source and published at [Agent Toolkit for AWS repository](https://github.com/aws/agent-toolkit-for-aws) on the GitHub website. Kiro connects to the AWS MCP Server directly and does not require a plugin. For instructions on setting up Kiro, see [Setting up the AWS MCP Server](getting-started-aws-mcp-server.md).
+Plugins work with Claude Code, Codex, and Devin. They are open source and published at [Agent Toolkit for AWS repository](https://github.com/aws/agent-toolkit-for-aws) on the GitHub website. Kiro connects to the AWS MCP Server directly and does not require a plugin. For instructions on setting up Kiro, see [Setting up the AWS MCP Server](getting-started-aws-mcp-server.md).
 
 **Topics**
 + [Available plugins](#available-plugins)
@@ -45,6 +45,17 @@ codex plugin marketplace add aws/agent-toolkit-for-aws
 ```
 
 Then launch Codex and run `/plugins` to browse and install the **aws-core** plugin.
+
+### Devin
+<a name="install-devin"></a>
+
+In your terminal:
+
+```
+devin plugins install aws/agent-toolkit-for-aws#plugins/aws-core
+```
+
+You must be signed in to Devin (`devin auth login`) to install plugins. In the Devin web app, you can instead choose **Customize**, **Plugins**, **Add plugin**, and then **From repository**. Enter the repository `aws/agent-toolkit-for-aws` and the subdirectory `plugins/aws-core`. Plugins that you install in the web app are also available in the Devin CLI and Devin Desktop.
 
 ### Agents that do not support plugins
 <a name="install-other-agents"></a>

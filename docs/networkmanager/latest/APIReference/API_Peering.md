@@ -37,7 +37,7 @@ Pattern: `[\s\S]*`
 Required: No
 
  ** LastModificationErrors **   <a name="networkmanager-Type-Peering-LastModificationErrors"></a>
-Describes the error associated with the Connect peer request.
+Describes the error associated with the peering request.
 Type: Array of [PeeringError](API_PeeringError.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No

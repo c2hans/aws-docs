@@ -48,6 +48,12 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
+ ** evaluationDimensionName **   <a name="BedrockAgentCore-Type-EvaluationResultContent-evaluationDimensionName"></a>
+ The name of the dimension that this result scores. This field is set only on results produced by an evaluator that uses a multi-dimensional rating scale, where each dimension is scored independently. For evaluators with a single rating scale, this field is absent.
+Type: String
+Pattern: `[a-zA-Z][a-zA-Z0-9_]{0,47}`
+Required: No
+
  ** explanation **   <a name="BedrockAgentCore-Type-EvaluationResultContent-explanation"></a>
  The detailed explanation provided by the evaluator describing the reasoning behind the assigned score. This qualitative feedback helps understand why specific ratings were given and provides actionable insights for improvement.
 Type: String

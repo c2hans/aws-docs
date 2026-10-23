@@ -47,6 +47,7 @@ Content-type: application/json
    "evaluationResults": {
       "evaluatorSummaries": [
          {
+            "evaluationDimensionName": "string",
             "evaluatorId": "string",
             "statistics": {
                "averageScore": number
@@ -131,6 +132,53 @@ Content-type: application/json
          }
       ]
    },
+   "insightResults": [
+      {
+         "affectedSessionCount": number,
+         "createdAt": "string",
+         "description": "string",
+         "name": "string",
+         "rootCauses": [
+            {
+               "affectedSessionCount": number,
+               "explanation": "string",
+               "name": "string",
+               "sampleSessions": [
+                  {
+                     "findings": [
+                        {
+                           "category": "string",
+                           "confidence": number,
+                           "description": "string",
+                           "targetId": "string",
+                           "targetType": "string"
+                        }
+                     ],
+                     "lastSeenAt": "string",
+                     "sessionId": "string"
+                  }
+               ],
+               "suggestedFix": "string"
+            }
+         ],
+         "sampleSessions": [
+            {
+               "findings": [
+                  {
+                     "category": "string",
+                     "confidence": number,
+                     "description": "string",
+                     "targetId": "string",
+                     "targetType": "string"
+                  }
+               ],
+               "lastSeenAt": "string",
+               "sessionId": "string"
+            }
+         ],
+         "type": "string"
+      }
+   ],
    "insights": [
       {
          "insightId": "string"
@@ -215,6 +263,11 @@ Type: [ExecutionSummaryClusteringResultContent](API_ExecutionSummaryClusteringRe
  ** [failureAnalysisResult](#API_GetBatchEvaluation_ResponseSyntax) **   <a name="BedrockAgentCore-GetBatchEvaluation-response-failureAnalysisResult"></a>
 The failure analysis results from insights, containing categorized failure clusters with root causes and recommendations.
 Type: [FailureAnalysisResultContent](API_FailureAnalysisResultContent.md) object
+
+ ** [insightResults](#API_GetBatchEvaluation_ResponseSyntax) **   <a name="BedrockAgentCore-GetBatchEvaluation-response-insightResults"></a>
+The insights generated when the batch evaluation includes the `Builtin.FailureAnalysis` evaluator. Each insight groups related failures found across the evaluated sessions. An empty list means that no failures were found. If the analysis fails, this field is omitted and `errorDetails` describes the error.
+Type: Array of [InsightResult](API_InsightResult.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 
  ** [insights](#API_GetBatchEvaluation_ResponseSyntax) **   <a name="BedrockAgentCore-GetBatchEvaluation-response-insights"></a>
 The list of insight analyses applied during the batch evaluation.

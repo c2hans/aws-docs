@@ -18,12 +18,16 @@ Content-type: application/json
    "CommunityMatches": [ "{{string}}" ],
    "EdgeLocation": "{{string}}",
    "ExactAsPathMatches": [ "{{string}}" ],
+   "ExactPrefixMatches": [ "{{string}}" ],
    "LocalPreferenceMatches": [ "{{string}}" ],
+   "LongestPrefixMatches": [ "{{string}}" ],
    "MedMatches": [ "{{string}}" ],
    "NextHopFilters": {
       "{{string}}" : [ "{{string}}" ]
    },
-   "SegmentName": "{{string}}"
+   "SegmentName": "{{string}}",
+   "SubnetOfMatches": [ "{{string}}" ],
+   "SupernetOfMatches": [ "{{string}}" ]
 }
 ```
 
@@ -73,8 +77,22 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `[\s\S]*`
 Required: No
 
+ ** [ExactPrefixMatches](#API_ListCoreNetworkRoutingInformation_RequestSyntax) **   <a name="networkmanager-ListCoreNetworkRoutingInformation-request-ExactPrefixMatches"></a>
+Exact prefix values to match when filtering routing information.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `[\s\S]*`
+Required: No
+
  ** [LocalPreferenceMatches](#API_ListCoreNetworkRoutingInformation_RequestSyntax) **   <a name="networkmanager-ListCoreNetworkRoutingInformation-request-LocalPreferenceMatches"></a>
 Local preference values to match when filtering routing information.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `[\s\S]*`
+Required: No
+
+ ** [LongestPrefixMatches](#API_ListCoreNetworkRoutingInformation_RequestSyntax) **   <a name="networkmanager-ListCoreNetworkRoutingInformation-request-LongestPrefixMatches"></a>
+Filters routing information based on the longest prefix that matches each provided IP address.
 Type: Array of strings
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `[\s\S]*`
@@ -88,7 +106,14 @@ Pattern: `[\s\S]*`
 Required: No
 
  ** [NextHopFilters](#API_ListCoreNetworkRoutingInformation_RequestSyntax) **   <a name="networkmanager-ListCoreNetworkRoutingInformation-request-NextHopFilters"></a>
-Filters to apply based on next hop information.
+Filters to apply based on next hop information. Each filter value must exactly match the corresponding next hop value. Values for the same filter are joined with OR, and different filters are joined with AND. The following filters are supported:
++  `core-network-attachment-id`: The ID of the core network attachment for the next hop, for example `attachment-0123456789abcdef0`.
++  `segment-name`: The name of the segment for the next hop.
++  `edge-location`: The edge location for the next hop, for example `us-east-1`.
++  `resource-id`: The ID of the resource for the next hop.
++  `resource-type`: The type of resource for the next hop. The possible values are `vpc`, `vpn`, `connect-peer`, `direct-connect-gateway`, `transit-gateway-route-table`, `attachment`, and `blackhole`.
++  `ip-address`: The IP address of the next hop. For a Site-to-Site VPN next hop, this is the outside IP address of the AWS side of the VPN tunnel. For a Connect peer next hop, this is the core network BGP address of the Connect peer. The value must be a single IPv4 or IPv6 address.
+You can specify up to 10 filter values in total across `NextHopFilters` and the other match parameters in the request. Each filter value can be up to 256 characters.
 Type: String to array of strings map
 Key Length Constraints: Maximum length of 128.
 Key Pattern: `^[0-9a-zA-Z\.-]*$`
@@ -102,6 +127,20 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Pattern: `[\s\S]*`
 Required: Yes
+
+ ** [SubnetOfMatches](#API_ListCoreNetworkRoutingInformation_RequestSyntax) **   <a name="networkmanager-ListCoreNetworkRoutingInformation-request-SubnetOfMatches"></a>
+Prefix values to filter routing information whose prefix is a subnet of the prefixes provided.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `[\s\S]*`
+Required: No
+
+ ** [SupernetOfMatches](#API_ListCoreNetworkRoutingInformation_RequestSyntax) **   <a name="networkmanager-ListCoreNetworkRoutingInformation-request-SupernetOfMatches"></a>
+Prefix values to filter routing information whose prefix is a supernet of the prefixes provided.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `[\s\S]*`
+Required: No
 
 ## Response Syntax
 <a name="API_ListCoreNetworkRoutingInformation_ResponseSyntax"></a>

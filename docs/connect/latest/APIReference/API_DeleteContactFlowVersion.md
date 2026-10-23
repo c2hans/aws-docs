@@ -89,6 +89,27 @@ HTTP Status Code: 404
 The throttling limit has been exceeded.
 HTTP Status Code: 429
 
+## Examples
+<a name="API_DeleteContactFlowVersion_Examples"></a>
+
+### Sample Request
+<a name="API_DeleteContactFlowVersion_Example_1"></a>
+
+This example illustrates one usage of DeleteContactFlowVersion.
+
+```
+DELETE /contact-flows/12345678-1234-1234-1234-123456789012/abcdefgh-1234-5678-9012-abcdefghijkl/version/2
+```
+
+### Sample Response
+<a name="API_DeleteContactFlowVersion_Example_2"></a>
+
+This example illustrates one usage of DeleteContactFlowVersion.
+
+```
+HTTP/1.1 200 OK
+```
+
 ## See Also
 <a name="API_DeleteContactFlowVersion_SeeAlso"></a>
 

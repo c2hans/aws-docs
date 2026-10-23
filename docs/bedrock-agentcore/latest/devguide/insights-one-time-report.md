@@ -26,29 +26,22 @@ Use `StartBatchEvaluation` to run an on-demand insights analysis over your agent
 **Example**
 
 ```
-agentcore run insights --runtime MyAgent --insights Builtin.Insight.FailureAnalysis --lookback-days 7 --json
+agentcore eval batch-insights run \
+  --name my_agent_insights \
+  --agent <AGENT_ID> \
+  --insight Builtin.Insight.FailureAnalysis \
+  --start-time <START_TIME> \
+  --end-time <END_TIME> \
+  --json
 ```
-The CLI is async by default — it prints the job ID and exits. Use `--wait` to block until the job completes:
+The command starts an asynchronous run and returns its ID and ARN. Save the `batchEvaluationArn` if you plan to generate a recommendation from the findings. If you have an online evaluation config already deployed, use its sampled sessions:
 
 ```
-agentcore run insights --runtime MyAgent --insights Builtin.Insight.FailureAnalysis --lookback-days 7 --wait --json
+agentcore eval batch-insights run \
+  --name my_agent_insights \
+  --online-eval <ONLINE_EVAL_ID> \
+  --json
 ```
-If you have an online evaluation config already deployed, you can inherit its settings:
-
-```
-agentcore run insights --online-eval-config-arn <arn> --json
-```
-
-1. Run `agentcore` to open the TUI, then select **run** and choose **Insights**:
-![Run menu: select Insights](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/insights-run-select.png)
-
-1. Choose the session source:
-![Run Insights wizard: select session source](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/insights-run-source.png)
-
-1. Select the insights to run:
-![Run Insights wizard: select insights](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/images/tui/insights-run-insights.png)
-
-   Continue through the remaining wizard steps (sessions, lookback period, name) and confirm.
 
 ```
 import boto3
@@ -57,7 +50,7 @@ import uuid
 client = boto3.client("bedrock-agentcore", region_name="us-west-2")
 
 response = client.start_batch_evaluation(
-    batchEvaluationName=f"insights-run-{uuid.uuid4().hex[:8]}",
+    batchEvaluationName=f"insights_run_{uuid.uuid4().hex[:8]}",
     insights=[
         {"insightId": "Builtin.Insight.FailureAnalysis"},
         {"insightId": "Builtin.Insight.UserIntent"},
@@ -68,16 +61,16 @@ response = client.start_batch_evaluation(
             "logGroupNames": [
                 "/aws/bedrock-agentcore/runtimes/MyAgent-abc123-DEFAULT"
             ],
+            # Optional: narrow to a specific time range
+            "filterConfig": {
+                "timeRange": {
+                    "startTime": "2026-05-27T00:00:00Z",
+                    "endTime": "2026-06-03T00:00:00Z",
+                },
+                # Or analyze specific sessions by ID
+                # "sessionIds": ["session-001", "session-002", "session-003"],
+            },
         }
-    },
-    # Optional: narrow to a specific time range
-    filterConfig={
-        "timeRange": {
-            "startTime": "2026-05-27T00:00:00Z",
-            "endTime": "2026-06-03T00:00:00Z",
-        },
-        # Or analyze specific sessions by ID
-        "sessionIds": ["session-001", "session-002", "session-003"]
     },
     clientToken=str(uuid.uuid4()),
 )
@@ -86,8 +79,8 @@ batch_eval_id = response["batchEvaluationId"]
 print(f"Started: {batch_eval_id}")
 ```
 You can also:
-+ Narrow the analysis to a specific time range by adding `filterConfig.timeRange`
-+ Analyze specific sessions by ID using `filterConfig.sessionIds`
++ Narrow the analysis to a specific time range by adding `dataSourceConfig.cloudWatchLogs.filterConfig.timeRange`
++ Analyze specific sessions by ID using `dataSourceConfig.cloudWatchLogs.filterConfig.sessionIds`
 
 ## Poll for results
 <a name="insights-one-time-poll"></a>
@@ -96,13 +89,14 @@ You can also:
 List all insights jobs:
 
 ```
-agentcore view insights --json
+agentcore eval batch-insights list --json
 ```
 View detail for a specific job:
 
 ```
-agentcore view insights <id> --json
+agentcore eval batch-insights get --id <BATCH_INSIGHTS_ID> --json
 ```
+The response includes `batchEvaluationArn`, which you can use as the trace source for a system prompt recommendation.
 
 ```
 import time
@@ -189,7 +183,7 @@ The `executionSummaryResult` field contains clustered execution patterns:
 + Maximum 10 insights per request.
 +  `dataSourceConfig` is required and must include at least one log group and one service name.
 + If using `onlineEvaluationConfigSource`, do not provide `insights` or `evaluators` (the config is inherited).
-+ If `filterConfig.timeRange` is specified, `startTime` must be earlier than `endTime`.
++ If `dataSourceConfig.cloudWatchLogs.filterConfig.timeRange` is specified, `startTime` must be earlier than `endTime`.
 + Timestamps must be valid ISO 8601 format.
 + Only one batch evaluation can be active per account at a time.
 + A maximum of 500 sessions are analyzed per insights run.

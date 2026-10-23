@@ -5,15 +5,15 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2023.12
 # New packages in AL2023.12 since AL2023.12
 <a name="new-AL2023.12-AL2023.12"></a>
 
- Comparing AL2023.12 version 2023.12.20260608 to AL2023.12 version [2023.12.20260930](relnotes-2023.12.20260930.md).
+ Comparing AL2023.12 version 2023.12.20260608 to AL2023.12 version [2023.12.20261021](relnotes-2023.12.20261021.md).
 
 | Package Type | Number of new packages in AL2023.12 compared to AL2023.12 |
 | --- | --- |
-| Source RPMs | 26 |
-| Total Binary RPMs | 542 |
+| Source RPMs | 27 |
+| Total Binary RPMs | 558 |
 |  noarch binary RPMs | 30 |
-|  x86\_64 binary RPMs | 257 |
-|  aarch64 binary RPMs | 255 |
+|  x86\_64 binary RPMs | 265 |
+|  aarch64 binary RPMs | 263 |
 
 New packages in AL2023.12:
 
@@ -64,12 +64,22 @@ New packages in AL2023.12:
   - **RPM:**  isa-l-tools  / **Architectures:** aarch64, x86\_64
   - **Version:** 2.32.1-2.amzn2023.0.1
 
+- ** `java-27-amazon-corretto` **
+  - **RPM:**  java-27-amazon-corretto  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  java-27-amazon-corretto-debugsymbols  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  java-27-amazon-corretto-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  java-27-amazon-corretto-headless  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  java-27-amazon-corretto-javadoc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  java-27-amazon-corretto-jmods  / **Architectures:** aarch64, x86\_64
+  - **Version:** 27.0.0\+36-1.amzn2023.1
+
 - ** `kernel6.12` **
   - **RPM:**  kernel-livepatch-6.12.100-125.179  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.103-127.188  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.103-129.197  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.110-135.201  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.110-135.202  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.111-136.204  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.92-122.166  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.92-122.168  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.94-123.174  / **Architectures:** aarch64, x86\_64
@@ -95,6 +105,7 @@ New packages in AL2023.12:
   - **RPM:**  kernel-livepatch-6.18.48-109.150  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.51-120.162  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.51-120.163  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.54-121.166  / **Architectures:** aarch64, x86\_64
   - **RPM:**  microvm-kernel6.18  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.0-0.amzn2023
 
@@ -234,7 +245,7 @@ New packages in AL2023.12:
   - **RPM:**  mariadb123-server-utils  / **Architectures:** noarch
   - **RPM:**  mariadb123-sphinx-engine  / **Architectures:** aarch64, x86\_64
   - **RPM:**  mariadb123-test  / **Architectures:** aarch64, x86\_64
-  - **Version:** 12.3.2-2.amzn2023.0.1
+  - **Version:** 12.3.3-2.amzn2023.0.1
 
 - ** `nagios-plugins` **
   - **RPM:**  nagios-plugins  / **Architectures:** aarch64, x86\_64
@@ -404,4 +415,4 @@ New packages in AL2023.12:
   - **RPM:**  tomcat11-lib  / **Architectures:** noarch
   - **RPM:**  tomcat11-servlet-6.1-api  / **Architectures:** noarch
   - **RPM:**  tomcat11-webapps  / **Architectures:** noarch
-  - **Version:** 11.0.24-1.amzn2023.0.1
+  - **Version:** 11.0.26-1.amzn2023.0.1

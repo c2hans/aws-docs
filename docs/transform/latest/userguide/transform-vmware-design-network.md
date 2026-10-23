@@ -23,6 +23,9 @@ The AWS Transform agent guides you through the following steps, handling the des
 
 1. Deploy your network.
 
+**Note**
+For multi-account deployments, you must set up cross-account access before you start the network migration. For more information, see [Set up multi-account network migration](transform-vmware-network-multi-account-setup.md).
+
 ## Step 1: Select a network topology
 <a name="transform-vmware-design-network-topology"></a>
 
@@ -66,12 +69,12 @@ Because you defined this network, AWS Transform doesn't recommend changes to you
 ## Step 4: Generate a network diagram (optional)
 <a name="transform-vmware-design-network-diagram"></a>
 
-You can optionally generate a diagram of your network. For more information, see [Network diagram](transform-vmware-migrate-network-new-vpcs.md#transform-vmware-network-diagram) in [Map source network to new VPCs](transform-vmware-migrate-network-new-vpcs.md).
+You can generate a diagram of your network. For more information, see [Network diagram](transform-vmware-migrate-network-new-vpcs.md#transform-vmware-network-diagram) in [Map source network to new VPCs](transform-vmware-migrate-network-new-vpcs.md).
 
 ## Step 5: Configure resource tagging
 <a name="transform-vmware-design-network-tagging"></a>
 
-You can optionally add custom tags to the resources that AWS Transform generates. For more information, see [Configure resource tagging](transform-vmware-migrate-network-new-vpcs.md#transform-vmware-tag-network-resources) in [Map source network to new VPCs](transform-vmware-migrate-network-new-vpcs.md).
+You can add custom tags to the resources that AWS Transform generates. For more information, see [Configure resource tagging](transform-vmware-migrate-network-new-vpcs.md#transform-vmware-tag-network-resources) in [Map source network to new VPCs](transform-vmware-migrate-network-new-vpcs.md).
 
 ## Step 6: Deploy your network
 <a name="transform-vmware-design-network-deploy"></a>

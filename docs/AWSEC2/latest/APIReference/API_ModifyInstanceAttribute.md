@@ -56,6 +56,11 @@ This option is supported only for HVM instances. Specifying this option with a P
 Type: [AttributeBooleanValue](API_AttributeBooleanValue.md) object
 Required: No
 
+ **EnclaveOptions**
+Enables or disables the instance for AWS Nitro Enclaves. For more information, see the [AWS Nitro Enclaves User Guide](https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave.html).
+Type: [EnclaveOptionsRequest](API_EnclaveOptionsRequest.md) object
+Required: No
+
  **GroupId.N**
 Replaces the security groups of the instance with the specified security groups. You must specify the ID of at least one security group, even if it's just the default security group for the VPC.
 Type: Array of strings

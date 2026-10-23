@@ -82,7 +82,7 @@ Type: Array of [RoutingPolicyAssociationDetail](API_RoutingPolicyAssociationDeta
 Required: No
 
  ** RoutingPolicyDirection **   <a name="networkmanager-Type-CoreNetworkChangeValues-RoutingPolicyDirection"></a>
-The routing policy direction (inbound/outbound) in a core network change event.
+The routing policy direction (inbound/outbound) in the core network change values.
 Type: String
 Valid Values: `inbound | outbound`
 Required: No

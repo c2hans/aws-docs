@@ -87,6 +87,8 @@ Content-type: application/json
                "ResourceArn": "string"
             }
          ],
+         "NatGatewaySupport": "string",
+         "NatSystemRouteSupport": boolean,
          "NetworkFunctionGroupName": "string",
          "OwnerAccountId": "string",
          "ProposedNetworkFunctionGroupChange": {

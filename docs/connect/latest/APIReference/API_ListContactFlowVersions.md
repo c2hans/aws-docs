@@ -51,6 +51,8 @@ Content-type: application/json
    "ContactFlowVersionSummaryList": [
       {
          "Arn": "string",
+         "LastModifiedRegion": "string",
+         "LastModifiedTime": number,
          "Version": number,
          "VersionDescription": "string"
       }
@@ -128,7 +130,9 @@ This example illustrates one usage of ListContactFlowVersions.
       {
          "Arn": "[contact_flow_arn]",
          "Version": 1,
-         "VersionDescription": "description of the flow version"
+         "VersionDescription": "description of the flow version",
+         "LastModifiedTime": "2026-09-15T10:30:00.000Z",
+         "LastModifiedRegion": "us-west-2"
       }
    ]
 }

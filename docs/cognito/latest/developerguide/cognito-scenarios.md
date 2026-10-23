@@ -89,6 +89,9 @@ To enable M2M authorization, build an app client that has a client secret, and e
 ## Step-up authentication
 <a name="scenario-step-up-authentication"></a>
 
+**Note**
+Authentication levels with ACR and AMR claims is rolling out gradually. This feature might not yet be available to your user pool. If the behavior described here isn't available, check back later as the rollout continues.
+
 Consider a banking application that lets users sign in with a username and password. To make a wire transfer, the application requires multi-factor authentication (MFA). When a user attempts a transfer, the application inspects the `acr` claim in the user's access and ID tokens, determines that the authentication level is insufficient, and redirects the user to Amazon Cognito to complete MFA. Amazon Cognito then issues a new token with an elevated authentication level, and the application allows the transfer.
 
 Before you redirect a user to Amazon Cognito for step-up authentication, evaluate the tokens that your application already holds. Compare the `auth_time` claim to the maximum age that the operation allows, and compare the token's `acr` level to the level that the operation requires. Redirect the user to Amazon Cognito to complete the authentication flow only when the required authentication level or freshness isn't already met.

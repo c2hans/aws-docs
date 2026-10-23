@@ -13,6 +13,7 @@ For additional details regarding new features and major updates, [see the MGN re
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Updated agentless replication availability | Updated the documentation to reflect that agentless replication is no longer available for new deployments, and that agent-based replication is recommended for all migrations. For more information, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based). | October 22, 2026 |
 | Added Oracle Linux 7.9 support | Added Oracle Linux 7.9 to the list of supported Linux operating systems. | September 29, 2026 |
 | Added Debian 12 support | Added Debian 12 to the list of supported Linux operating systems. | September 23, 2026 |
 | Added Amazon EBS volume settings to the default EC2 launch template | You can now configure the **Volume initialization rate** and **Delete on termination** Amazon EBS volume settings in the default EC2 launch template. For more information, see [Default EC2 launch template settings](launch-template.md#default-ec2-launch-template). | September 8, 2026 |

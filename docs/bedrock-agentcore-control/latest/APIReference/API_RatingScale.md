@@ -18,6 +18,12 @@ This data type is a UNION, so only one of the following members can be specified
 Type: Array of [CategoricalScaleDefinition](API_CategoricalScaleDefinition.md) objects
 Required: No
 
+ ** multiDimensional **   <a name="bedrockagentcorecontrol-Type-RatingScale-multiDimensional"></a>
+ A list of dimensions that lets an LLM-as-a-judge evaluator score several dimensions of the same target in a single evaluation. Each dimension has its own instruction and rating scale, and produces its own result.
+Type: Array of [EvaluationDimension](API_EvaluationDimension.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Required: No
+
  ** numerical **   <a name="bedrockagentcorecontrol-Type-RatingScale-numerical"></a>
  The numerical rating scale with defined score values and descriptions for quantitative evaluation.
 Type: Array of [NumericalScaleDefinition](API_NumericalScaleDefinition.md) objects

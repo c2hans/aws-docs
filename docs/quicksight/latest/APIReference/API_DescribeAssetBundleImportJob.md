@@ -147,7 +147,17 @@ Content-type: application/json
                   "ConnectionType": "string"
                },
                "DatabricksParameters": {
+                  "AuthenticationType": "string",
                   "Host": "string",
+                  "OAuthParameters": {
+                     "IdentityProviderCACertificatesBundleS3Uri": "string",
+                     "IdentityProviderResourceUri": "string",
+                     "IdentityProviderVpcConnectionProperties": {
+                        "VpcConnectionArn": "string"
+                     },
+                     "OAuthScope": "string",
+                     "TokenProviderUrl": "string"
+                  },
                   "Port": number,
                   "SqlEndpointPath": "string"
                },

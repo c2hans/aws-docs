@@ -67,6 +67,17 @@ Type: Array of [AttachmentError](API_AttachmentError.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No
 
+ ** NatGatewaySupport **   <a name="networkmanager-Type-Attachment-NatGatewaySupport"></a>
+The state of NAT gateway support on the attachment. This is returned only to the core network owner for attachment types that support NAT.
+Type: String
+Valid Values: `ENABLED | ENABLING | DISABLED | DISABLING | PENDING_ATTACHMENT_ACCEPTANCE`
+Required: No
+
+ ** NatSystemRouteSupport **   <a name="networkmanager-Type-Attachment-NatSystemRouteSupport"></a>
+Indicates whether the core network installs system routes for the NAT CIDR blocks of the attachment's NAT rules. This is returned only to the core network owner for attachment types that support NAT.
+Type: Boolean
+Required: No
+
  ** NetworkFunctionGroupName **   <a name="networkmanager-Type-Attachment-NetworkFunctionGroupName"></a>
 The name of the network function group.
 Type: String

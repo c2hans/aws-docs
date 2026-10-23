@@ -148,7 +148,7 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
  ** [FileStatus](#API_StartAttachedFileUpload_ResponseSyntax) **   <a name="connect-StartAttachedFileUpload-response-FileStatus"></a>
 The current status of the attached file.
 Type: String
-Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED`
+Valid Values: `APPROVED | REJECTED | PROCESSING | FAILED | DRAFTING`
 
  ** [UploadUrlMetadata](#API_StartAttachedFileUpload_ResponseSyntax) **   <a name="connect-StartAttachedFileUpload-response-UploadUrlMetadata"></a>
 The headers to be provided while uploading the file to the URL.

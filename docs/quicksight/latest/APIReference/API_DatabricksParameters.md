@@ -31,6 +31,17 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Required: Yes
 
+ ** AuthenticationType **   <a name="QS-Type-DatabricksParameters-AuthenticationType"></a>
+The authentication type that you want to use for your connection. This parameter accepts OAuth and non-OAuth authentication types.
+Type: String
+Valid Values: `PASSWORD | KEYPAIR | TOKEN | X509`
+Required: No
+
+ ** OAuthParameters **   <a name="QS-Type-DatabricksParameters-OAuthParameters"></a>
+An object that contains information needed to create a data source connection between an Quick Sight account and Databricks.
+Type: [OAuthParameters](API_OAuthParameters.md) object
+Required: No
+
 ## See Also
 <a name="API_DatabricksParameters_SeeAlso"></a>
 

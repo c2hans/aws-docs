@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ComputeTypesAllowed](#cfn-codebuild-project-batchrestrictions-computetypesallowed)" : {{[ String, ... ]}},
+  "[FleetsAllowed](#cfn-codebuild-project-batchrestrictions-fleetsallowed)" : {{[ String, ... ]}},
   "[MaximumBuildsAllowed](#cfn-codebuild-project-batchrestrictions-maximumbuildsallowed)" : {{Integer}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [ComputeTypesAllowed](#cfn-codebuild-project-batchrestrictions-computetypesallowed): {{
     - String}}
+  [FleetsAllowed](#cfn-codebuild-project-batchrestrictions-fleetsallowed): {{
+    - String}}
   [MaximumBuildsAllowed](#cfn-codebuild-project-batchrestrictions-maximumbuildsallowed): {{Integer}}
 ```
 
@@ -38,6 +41,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `ComputeTypesAllowed`  <a name="cfn-codebuild-project-batchrestrictions-computetypesallowed"></a>
 An array of strings that specify the compute types that are allowed for the batch build. See [Build environment compute types](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-compute-types.html) in the *AWS CodeBuild User Guide* for these values.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FleetsAllowed`  <a name="cfn-codebuild-project-batchrestrictions-fleetsallowed"></a>
+An array of strings that specify the fleets that are allowed for the batch build. See [Run builds on reserved capacity fleets](https://docs.aws.amazon.com/codebuild/latest/userguide/fleets.html) in the *AWS CodeBuild User Guide* for more information.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

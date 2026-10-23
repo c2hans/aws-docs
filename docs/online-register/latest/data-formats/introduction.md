@@ -286,6 +286,7 @@ To browse this Online Register by service, see the following topics.
 + [Data retrieval APIs for AWS Connector Service](awsconnectorservice.md)
 + [Data retrieval APIs for AWS Management Console Mobile App](awsconsolemobileapp.md)
 + [Data retrieval APIs for AWS Consolidated Billing](awsconsolidatedbilling.md)
++ [Data retrieval APIs for AWS Continuum](awscontinuum.md)
 + [Data retrieval APIs for AWS Control Catalog](awscontrolcatalog.md)
 + [Data retrieval APIs for AWS Control Tower](awscontroltower.md)
 + [Data retrieval APIs for AWS Cost and Usage Report](awscostandusagereport.md)

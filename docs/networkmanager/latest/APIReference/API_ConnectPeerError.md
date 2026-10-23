@@ -13,7 +13,7 @@ Describes an error associated with a Connect peer request
  ** Code **   <a name="networkmanager-Type-ConnectPeerError-Code"></a>
 The error code for the Connect peer request.
 Type: String
-Valid Values: `EDGE_LOCATION_NO_FREE_IPS | EDGE_LOCATION_PEER_DUPLICATE | SUBNET_NOT_FOUND | IP_OUTSIDE_SUBNET_CIDR_RANGE | INVALID_INSIDE_CIDR_BLOCK | NO_ASSOCIATED_CIDR_BLOCK`
+Valid Values: `EDGE_LOCATION_NO_FREE_IPS | EDGE_LOCATION_PEER_DUPLICATE | SUBNET_NOT_FOUND | IP_OUTSIDE_SUBNET_CIDR_RANGE | INVALID_INSIDE_CIDR_BLOCK | NO_ASSOCIATED_CIDR_BLOCK | CREATION_FAILED | DELETION_FAILED`
 Required: No
 
  ** Message **   <a name="networkmanager-Type-ConnectPeerError-Message"></a>

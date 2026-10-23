@@ -92,6 +92,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::TrafficMirrorTarget](aws-resource-ec2-trafficmirrortarget.md)
 + [AWS::EC2::TransitGateway](aws-resource-ec2-transitgateway.md)
 + [AWS::EC2::TransitGatewayAttachment](aws-resource-ec2-transitgatewayattachment.md)
++ [AWS::EC2::TransitGatewayAttachmentNatConfiguration](aws-resource-ec2-transitgatewayattachmentnatconfiguration.md)
 + [AWS::EC2::TransitGatewayConnect](aws-resource-ec2-transitgatewayconnect.md)
 + [AWS::EC2::TransitGatewayConnectPeer](aws-resource-ec2-transitgatewayconnectpeer.md)
 + [AWS::EC2::TransitGatewayMeteringPolicy](aws-resource-ec2-transitgatewaymeteringpolicy.md)

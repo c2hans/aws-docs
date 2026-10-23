@@ -112,6 +112,11 @@ Content-type: application/json
             "serviceTaxCodes": [ "string" ],
             "taxInformationNumber": "string"
          },
+         "mexicoAdditionalInfo": {
+            "cfdiUsageCode": "string",
+            "taxRegime": "string",
+            "taxRegimeFullName": "string"
+         },
          "monacoAdditionalInfo": {
             "businessNumber": "string"
          },

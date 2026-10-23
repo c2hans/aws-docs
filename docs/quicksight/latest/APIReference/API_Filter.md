@@ -21,6 +21,11 @@ For more information, see [Adding text filters](https://docs.aws.amazon.com/quic
 Type: [CategoryFilter](API_CategoryFilter.md) object
 Required: No
 
+ ** HierarchyFilter **   <a name="QS-Type-Filter-HierarchyFilter"></a>
+A `HierarchyFilter` filters data by drilling down through an ordered list of columns. Each level in the list narrows the data by one column, and the selected values at each level determine which values are available at the next.
+Type: [HierarchyFilter](API_HierarchyFilter.md) object
+Required: No
+
  ** NestedFilter **   <a name="QS-Type-Filter-NestedFilter"></a>
 A `NestedFilter` filters data with a subset of data that is defined by the nested inner filter.
 Type: [NestedFilter](API_NestedFilter.md) object

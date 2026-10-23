@@ -9,6 +9,7 @@ When using the MCP Proxy for AWS with the AWS MCP Server, you can configure mult
 
 **Note**
 This feature is specific to the AWS MCP Server. Profile switching is not available when proxying to other MCP servers.
+Profile switching is a client-side feature of the MCP Proxy for AWS, so it behaves the same in every AWS Region that the AWS MCP Server supports. The proxy strips the `aws_profile` parameter before it forwards the request, which means the Region that you connect to has no effect on whether the parameter is available.
 
 **Important**
 Multi-profile switching requires SigV4 authentication with the MCP Proxy for AWS. OAuth authentication does not support this feature. If you use OAuth, each session is bound to a single IAM role and switching accounts requires re-authentication.
@@ -67,9 +68,18 @@ AWS_MCP_PROXY_PROFILES="prod-readonly dev staging"
 
 ## Prerequisites
 <a name="multi-profile-prerequisites"></a>
-+ AWS CLI profiles configured in `~/.aws/config` and `~/.aws/credentials` for each profile you want to use.
-+ `mcp-proxy-for-aws` version 1.6.0 or later.
++ Two or more AWS CLI profiles configured in `~/.aws/config` and `~/.aws/credentials`, and passed to the proxy at startup with the `--profile` flag or the `AWS_MCP_PROXY_PROFILES` environment variable. The proxy adds the `aws_profile` parameter only when you make more than one profile available to it.
++ `mcp-proxy-for-aws` version 1.6.0 or later. The latest version is `1.6.3`.
++ SigV4 authentication. OAuth does not support multi-profile switching.
 + Valid IAM permissions for each profile. Each profile should have the minimum permissions required for the operations the agent will perform.
+
+**Note**
+If the `aws_profile` parameter doesn't appear in the `run_script`, `get_presigned_url`, or `get_tasks` tool schemas, check each of the following common causes in turn:
+A single profile passed to the proxy.
+An `mcp-proxy-for-aws` version that is earlier than the minimum.
+The use of OAuth instead of SigV4.
+The AWS Region that you connect to is not a cause — the parameter is added by the proxy on your machine and is never sent to the AWS MCP Server.
+The proxy reads your profiles only at startup. Switching between profiles that the proxy already loaded never requires a restart, but a profile that you add to `~/.aws/config` while the proxy is running is not picked up until you restart the proxy or your agent.
 
 ## Security considerations
 <a name="multi-profile-security"></a>

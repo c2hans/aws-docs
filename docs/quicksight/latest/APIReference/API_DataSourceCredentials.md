@@ -34,11 +34,26 @@ The OAuth client credentials for connecting to a data source using OAuth 2.0 cli
 Type: [OAuthClientCredentials](API_OAuthClientCredentials.md) object
 Required: No
 
+ ** OneDriveClientCredentials **   <a name="QS-Type-DataSourceCredentials-OneDriveClientCredentials"></a>
+The client credentials for connecting to a Microsoft OneDrive data source using two-legged OAuth (2LO) certificate-based authentication.
+Type: [OneDriveClientCredentials](API_OneDriveClientCredentials.md) object
+Required: No
+
  ** SecretArn **   <a name="QS-Type-DataSourceCredentials-SecretArn"></a>
 The Amazon Resource Name (ARN) of the secret associated with the data source in Amazon Secrets Manager.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `^arn:[-a-z0-9]*:secretsmanager:[-a-z0-9]*:[0-9]{12}:secret:.+`
+Required: No
+
+ ** ServiceAccountCredentials **   <a name="QS-Type-DataSourceCredentials-ServiceAccountCredentials"></a>
+The service account credentials for connecting to a data source that uses Google Workspace domain-wide delegation.
+Type: [ServiceAccountCredentials](API_ServiceAccountCredentials.md) object
+Required: No
+
+ ** SharePointClientCredentials **   <a name="QS-Type-DataSourceCredentials-SharePointClientCredentials"></a>
+The client credentials for connecting to a Microsoft SharePoint data source using two-legged OAuth (2LO) certificate-based authentication.
+Type: [SharePointClientCredentials](API_SharePointClientCredentials.md) object
 Required: No
 
  ** WebProxyCredentials **   <a name="QS-Type-DataSourceCredentials-WebProxyCredentials"></a>

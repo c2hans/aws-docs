@@ -111,7 +111,7 @@ Add as a remote MCP server with URL: `https://aws-mcp.us-east-1.api.aws/mcp`
 Devin CLI
 
 ```
-devin mcp add aws-mcp https://aws-mcp.us-east-1.api.aws/mcp
+devin mcp add -s user aws-mcp https://aws-mcp.us-east-1.api.aws/mcp
 ```
 
 The following clients support OAuth when you append `?oauth=initialize` to the endpoint URL:
@@ -125,6 +125,20 @@ Add as a remote MCP server with URL: `https://aws-mcp.us-east-1.api.aws/mcp?oaut
 Kiro IDE
 Add as a remote MCP server with URL: `https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize`
 
+Visual Studio Code
+Add the server to `.vscode/mcp.json` in your workspace, or run *MCP: Open User Configuration* from the Command Palette to configure it for every workspace. Visual Studio Code uses a `servers` top-level key rather than `mcpServers`:
+
+```
+{
+  "servers": {
+    "aws-mcp": {
+      "type": "http",
+      "url": "https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize"
+    }
+  }
+}
+```
+
 Gemini CLI
 
 ```
@@ -136,6 +150,22 @@ Codex CLI and Codex Desktop
 ```
 codex mcp add aws-mcp --url https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize
 ```
+
+GitHub Copilot CLI
+Add the server to `~/.copilot/mcp-config.json` to configure it for all projects, or to `.github/mcp.json` (or `.mcp.json` at your repository root) to configure it for a single project:
+
+```
+{
+  "mcpServers": {
+    "aws-mcp": {
+      "type": "http",
+      "url": "https://aws-mcp.us-east-1.api.aws/mcp?oauth=initialize",
+      "tools": ["*"]
+    }
+  }
+}
+```
+Run `/mcp` in a Copilot CLI session to confirm that the server is listed. For more information, see [Add MCP servers to Copilot CLI](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers) in the GitHub documentation.
 
 When you first invoke a tool, your MCP client opens a browser window to AWS Sign-in. Sign in with your existing credentials and authorize access. After you grant consent, access tokens remain valid for 1 hour. AWS Sign-in automatically refreshes them for up to 12 hours.
 
@@ -221,6 +251,25 @@ Cursor IDE, Claude Desktop, or Devin Desktop
 }
 ```
 
+Visual Studio Code
+Add the following to `.vscode/mcp.json` in your workspace. Visual Studio Code uses a `servers` top-level key rather than the `mcpServers` key that most other clients use:
+
+```
+{
+  "servers": {
+    "aws-mcp": {
+      "command": "uvx",
+      "args": [
+        "mcp-proxy-for-aws-cli@latest",
+        "https://aws-mcp.us-east-1.api.aws/mcp",
+        "--metadata", "AWS_REGION=us-west-2"
+      ]
+    }
+  }
+}
+```
+You can also run *MCP: Add Server* from the Command Palette and choose the `stdio` server type to create this entry interactively.
+
 Claude Code CLI
 
 ```
@@ -236,8 +285,29 @@ codex mcp add aws-mcp uvx mcp-proxy-for-aws-cli@latest https://aws-mcp.us-east-1
 Devin CLI
 
 ```
-devin mcp add aws-mcp -- uvx mcp-proxy-for-aws-cli@latest https://aws-mcp.us-east-1.api.aws/mcp --metadata AWS_REGION=us-west-2
+devin mcp add -s user aws-mcp -- uvx mcp-proxy-for-aws-cli@latest https://aws-mcp.us-east-1.api.aws/mcp --metadata AWS_REGION=us-west-2
 ```
+
+GitHub Copilot CLI
+Add the following to `~/.copilot/mcp-config.json`. Copilot CLI uses the `mcpServers` key, and identifies a locally run server with `"type": "local"`:
+
+```
+{
+  "mcpServers": {
+    "aws-mcp": {
+      "type": "local",
+      "command": "uvx",
+      "args": [
+        "mcp-proxy-for-aws-cli@latest",
+        "https://aws-mcp.us-east-1.api.aws/mcp",
+        "--metadata", "AWS_REGION=us-west-2"
+      ],
+      "tools": ["*"]
+    }
+  }
+}
+```
+The `tools` field lists which of the server's tools Copilot CLI can call. Use `["*"]` to allow all of them.
 
 **Tip**
 To work with multiple AWS accounts in a single session, configure additional named profiles. See [Multi-profile support](multi-account-access.md) for setup instructions. Multi-profile switching is only available with SigV4 authentication.
@@ -263,7 +333,7 @@ To work with multiple AWS accounts in a single session, configure additional nam
 
    `/mcp`
 
-You should see tools like `aws___search_documentation` and `aws___retrieve_skill` listed. For more information about the tools, see [Understanding the MCP Server tools](https://docs.aws.amazon.com/aws-mcp/latest/userguide/understanding-mcp-server-tools.html).
+You should see tools like `aws___search_documentation` and `aws___retrieve_skill` listed. For more information about the tools, see [Understanding the MCP Server tools](understanding-mcp-server-tools.md).
 
 ## Troubleshooting authentication errors
 <a name="troubleshooting-auth-errors"></a>
@@ -279,7 +349,7 @@ Use the following table to identify and resolve common authentication errors.
 | ExpiredTokenException: Your AWS session token has expired. | Your temporary AWS credentials have expired. This is the most common authentication error. Short-lived session tokens (default 1 hour) typically expire during development. | Refresh your credentials based on your authentication method:+ `aws login` users: Run `aws login` again to start a new session. Consider switching to this method if you experience frequent expiry, because it auto-rotates credentials every 15 minutes.<br />+ SSO users: Run `aws sso login --profile your-profile-name` to refresh your SSO session.<br />+ Assume-role users: Refresh the source profile credentials. The SDK then automatically re-assumes the role.<br />After refreshing, restart your MCP client to re-initialize the server. |
 | UnrecognizedClientException: The security token included in the request is not recognized. | Your credentials are invalid. This can happen when credentials have been revoked, are from a different AWS partition, are malformed, or belong to a deleted IAM user or role. | Verify your credentials are valid:1. Run `aws sts get-caller-identity` to check if your credentials are recognized.<br />2. If the command fails, reconfigure your credentials using `aws login` or `aws configure sso`.<br />3. Ensure you are using credentials for the correct AWS partition (for example, `aws` vs. `aws-cn`). |
 | InvalidSignatureException: The request signature we calculated does not match the signature you provided. | The SigV4 signature does not match. Common causes include credentials scoped to the wrong service or Region, clock skew on your machine, or a request body modified after signing. | Try the following steps:1. Verify your system clock is accurate. Run `date` and compare with an authoritative time source. SigV4 requires your clock to be within 5 minutes of AWS servers.<br />2. Ensure your credentials are configured for the correct AWS Region and service.<br />3. Reconfigure your credentials and restart your MCP client. |
-| 400 error page after OAuth sign-in | Your IAM principal does not have the required OAuth permissions (signin:AuthorizeOAuth2Access and signin:CreateOAuth2Token). | Attach the `AWSMCPSignInOAuthAccessPolicy` managed policy to your IAM role or user:<pre>aws iam attach-role-policy \<br />  --role-name MyRole \<br />  --policy-arn arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy</pre><br />For more information, see [AWS managed policies for AWS MCP Server](https://docs.aws.amazon.com/aws-mcp/latest/userguide/security-iam-awsmanpol.html). |
+| 400 error page after OAuth sign-in | Your IAM principal does not have the required OAuth permissions (signin:AuthorizeOAuth2Access and signin:CreateOAuth2Token). | Attach the `AWSMCPSignInOAuthAccessPolicy` managed policy to your IAM role or user:<pre>aws iam attach-role-policy \<br />  --role-name MyRole \<br />  --policy-arn arn:aws:iam::aws:policy/AWSMCPSignInOAuthAccessPolicy</pre><br />For more information, see [AWS managed policies for AWS MCP Server](security-iam-awsmanpol.md). |
 | No AWS credentials found. | AWS credentials are not configured on your machine, or the credential provider chain cannot locate them. | Configure your credentials by following [Step 2: Configure authentication and connect](#step-2-choose-auth-method). We recommend using `aws login` for the simplest setup with automatic credential renewal. |
 
 **Note**

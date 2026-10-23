@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/index.html
 title: 'Amazon Bedrock AgentCore Documentation'
 canonical_url: https://docs.aws.amazon.com/bedrock-agentcore/
 source: aws-documentation
-generated_on: 2026-10-22
+generated_on: 2026-10-23
 ---
 
 # Amazon Bedrock AgentCore Documentation

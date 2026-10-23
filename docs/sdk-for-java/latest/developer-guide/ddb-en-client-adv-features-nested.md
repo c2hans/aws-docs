@@ -248,7 +248,7 @@ After comment lines 1 and 2 in the definition of `PERSON_TABLE_SCHEMA`, you see 
         .addAttribute(String.class, a -> a.name("city")
             .getter(Address::getCity)
             .setter(Address::setCity))
-        .addAttribute(String.class, a -> a.name("zipcode")
+        .addAttribute(String.class, a -> a.name("zipCode")
             .getter(Address::getZipCode)
             .setter(Address::setZipCode))
         .addAttribute(String.class, a -> a.name("state")
@@ -289,7 +289,7 @@ After comment lines 1 and 2 in the definition of `PERSON_TABLE_SCHEMA`, you see 
             .addAttribute(EnhancedType.documentOf(Address.class, TABLE_SCHEMA_ADDRESS), a -> a.name("mainAddress")
                 .getter(Person::getMainAddress)
                 .setter(Person::setMainAddress))
-            .addAttribute(EnhancedType.listOf(String.class), a -> a.name("hobbies")
+            .addAttribute(EnhancedType.setOf(String.class), a -> a.name("hobbies")
                 .getter(Person::getHobbies)
                 .setter(Person::setHobbies))
             .addAttribute(EnhancedType.mapOf(
@@ -317,7 +317,7 @@ The first scan accesses all items in the table in order to compare the results t
 
 The second scan uses the [`addNestedAttributeToProject()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#addNestedAttributeToProject(software.amazon.awssdk.enhanced.dynamodb.NestedAttributeName)) builder method to return only the `street` attribute value.
 
-The third scan operation uses the [`attributesToProject()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#attributesToProject(java.lang.String...)) builder method to return the data for the first-level attribute, `hobbies`. The attribute type of `hobbies` is a list. To access individual list items, perform a `get()` operation on the list.
+The third scan operation uses the [`attributesToProject()`](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/model/ScanEnhancedRequest.Builder.html#attributesToProject(java.lang.String...)) builder method to return the data for the first-level attribute, `hobbies`. The attribute type of `hobbies` is a set. To access the items, iterate over the set.
 
 ```
         personDynamoDbTable = getDynamoDbEnhancedClient().table("Person", PERSON_TABLE_SCHEMA);
@@ -344,7 +344,7 @@ The third scan operation uses the [`attributesToProject()`](https://sdk.amazonaw
                 //2. Log the results of requesting nested attributes.
                 logger.info(p.toString()));
 
-        // Scan for a top-level list attribute.
+        // Scan for a top-level set attribute.
         PageIterable<Person> hobbiesScanResult = personDynamoDbTable.scan(b -> b
                 // Use the 'attributesToProject()' method to access first-level attributes.
                 .attributesToProject("hobbies"));
@@ -352,10 +352,10 @@ The third scan operation uses the [`attributesToProject()`](https://sdk.amazonaw
         hobbiesScanResult.items().forEach((p) -> {
             // 3. Log the results of the request for the 'hobbies' attribute.
             logger.info(p.toString());
-            // To access an item in a list, first get the parent attribute, 'hobbies', then access items in the list.
-            String hobby = p.getHobbies().get(1);
-            // 4. Log an item in the list.
-            logger.info(hobby);
+            // To access the items in a set, first get the parent attribute, 'hobbies', then iterate over the set.
+            p.getHobbies().forEach(hobby ->
+                    // 4. Log each item in the set.
+                    logger.info(hobby));
         });
 ```
 
@@ -370,8 +370,10 @@ Person{id=null, firstName='null', lastName='null', age=null, addresses={work=Add
 
 // Logged results from comment lines 3 and 4.
 Person{id=null, firstName='null', lastName='null', age=null, addresses=null, phoneNumbers=null, hobbies=[hobby 2, hobby 21]}
+hobby 2
 hobby 21
 Person{id=null, firstName='null', lastName='null', age=null, addresses=null, phoneNumbers=null, hobbies=[hobby 1, hobby 11]}
+hobby 1
 hobby 11
 ```
 

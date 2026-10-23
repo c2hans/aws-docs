@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026 Updates
 <a name="oct26-release-notes"></a>
 
+### Amazon Connect Customer now supports customizing the Customer Profiles app on the agent workspace
+<a name="oct26-customize-customer-profiles"></a>
+
+Amazon Connect Customer Profiles now allows administrators to customize which customer data that agents see in the agent workspace, and how it is displayed, using layouts they build in Profile Explorer. Within Profile Explorer, administrators can create and save each layout of Customer Profiles widgets, such as contact history, contact information, and lifetime value calculated attributes, and assign it to agents in place of the legacy Customer Profiles view. For example, an airline baggage claims agent sees contact history, active flights, and baggage ticket information, while a loyalty agent sees loyalty status, preferences, and upcoming flights. Layouts can also include an AI Profile Summary that focuses the agent's attention on key customer insights by summarizing the customer profile.
+
+For more information about Profile Explorer, see [Profile Explorer](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-profile-explorer.html).
+
 ### Amazon Connect Customer launches two new layouts for the agent workspace
 <a name="oct26-agent-workspace-layouts"></a>
 
@@ -32,6 +39,17 @@ Available in all AWS Regions where Connect Customer Global Resiliency is support
 Amazon Connect Customer can now fill in the step-by-step guides that agents complete after a contact, using information extracted from customer conversations, such as booking identifiers, claim numbers, and conversation summaries. Managers can set which information populates each form field. Agents can review and submit rather than manually typing in each field, saving time and improving data accuracy during after contact work.
 
 For more information, see [Prefill guides for after contact work using conversational analytics](https://docs.aws.amazon.com/connect/latest/adminguide/integrate-views-conversational-analytics.html).
+
+### Connect Customer dashboards now include business outcome metrics, plus customer segments as filters and groupings
+<a name="oct26-business-outcome-metrics"></a>
+
+**Business outcome metrics:** When you use [evaluation forms](https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html) with business outcome questions, each contact is evaluated and scored on metrics such as CSAT, churn propensity, self-service resolution, and successful sale. These evaluations are used to compute new metrics on your dashboards, available in the metric picker and in the business outcomes widget category. For example, you can add the Evaluated CSAT percent metric to your queue performance dashboard to see the percentage of contacts that received a satisfied CSAT score.
+
+**Customer segment filters and groupings:** Two customer segment filters and groupings are available on metrics associated with individual contacts: Lifetime Value (High, Medium, or Low) and Repeat Caller. These segments are driven by [default segments](https://docs.aws.amazon.com/connect/latest/adminguide/customerprofiles-default-segments.html) in Customer Profiles. The High lifetime value and Low lifetime value calculated attributes determine the lifetime value tier. Customers matching neither are classified as Medium. The Call count calculated attribute identifies repeat callers. These segments appear as new filters and groupings on metrics that are associated with individual contacts. For example, you can group the queue performance table by lifetime value to compare handle time and CSAT for high value versus low value customers.
+
+These features are available in Connect Customer. They are not available in Connect Customer Basic.
+
+For more information about configuring evaluation forms, see [Create an evaluation form](https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html). For information about using these metrics and segments on dashboards, see [Queue and agent performance dashboard](https://docs.aws.amazon.com/connect/latest/adminguide/queue-performance-dashboard.html). For information about the calculated attributes that drive the lifetime value and repeat caller segments, see [Default calculated attributes](https://docs.aws.amazon.com/connect/latest/adminguide/customerprofiles-default-calculated-attributes.html).
 
 ## September 2026 Updates
 <a name="sep26-release-notes"></a>
@@ -1506,7 +1524,7 @@ Connect Customer Customer Profiles Profile Explorer is a feature that provides a
 
 Profile Explorer is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Africa (Cape Town), Asia Pacific (Seoul), Asia Pacific (Tokyo), Asia Pacific (Singapore), Asia Pacific (Sydney), Canada (Central), Europe (Frankfurt), and Europe (London). Note that AI summary is currently not available in Africa (Cape Town).
 
-For more information, see the [Set up Profile explorer in Connect Customer Customer Profiles](customer-profiles-profile-explorer.md).
+For more information, see the [Set up Profile Explorer in Customer Profiles](customer-profiles-profile-explorer.md).
 
 ### New quota: Maximum contacts in an agent queue per instance
 <a name="contacts-quota-june25"></a>
@@ -3016,7 +3034,7 @@ Added the [CreateParticipant](https://docs.aws.amazon.com/connect/latest/APIRefe
 #### Customer Profiles displays case information in the agent workspace
 <a name="agent-workspace-case-info-apr23"></a>
 
-Using Connect Customer Customer Profiles inside the agent workspace, agents can see cases from third-party case management solutions and Connect Customer Cases inside a particular customer profile. For more information, see [Use Connect Customer Customer Profiles](customer-profiles.md) and [Access Connect Customer Customer Profiles in the agent workspace](customer-profile-access.md).
+Using Connect Customer Customer Profiles inside the agent workspace, agents can see cases from third-party case management solutions and Connect Customer Cases inside a particular customer profile. For more information, see [Customer Profiles in Connect Customer](customer-profiles.md) and [Access Customer Profiles in the agent workspace](customer-profile-access.md).
 
 #### Added Cross-channel concurrency
 <a name="routing-profiles-apr23"></a>
@@ -4159,7 +4177,7 @@ Added the Amazon AppIntegrations APIs (Preview), which enables you to configure 
 #### Customer Profiles
 <a name="december20-customerprofiles"></a>
 
-Added Connect Customer Customer Profiles, enabling agents to create a customer profile for every new contact that comes in. You can also integrate with external applications that provide customer profile data. For more information, see [Use Connect Customer Customer Profiles](customer-profiles.md) and the [Connect Customer Customer Profiles API Reference](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/Welcome.html).
+Added Connect Customer Customer Profiles, enabling agents to create a customer profile for every new contact that comes in. You can also integrate with external applications that provide customer profile data. For more information, see [Customer Profiles in Connect Customer](customer-profiles.md) and the [Connect Customer Customer Profiles API Reference](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/Welcome.html).
 
 #### Real-time analytics using conversational analytics
 <a name="december20-contactlens"></a>
