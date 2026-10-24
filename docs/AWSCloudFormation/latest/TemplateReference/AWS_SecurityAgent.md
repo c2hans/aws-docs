@@ -13,5 +13,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SecurityAgent::Artifact](aws-resource-securityagent-artifact.md)
 + [AWS::SecurityAgent::Integration](aws-resource-securityagent-integration.md)
 + [AWS::SecurityAgent::Pentest](aws-resource-securityagent-pentest.md)
++ [AWS::SecurityAgent::PrivateConnection](aws-resource-securityagent-privateconnection.md)
 + [AWS::SecurityAgent::SecurityRequirementPack](aws-resource-securityagent-securityrequirementpack.md)
 + [AWS::SecurityAgent::TargetDomain](aws-resource-securityagent-targetdomain.md)

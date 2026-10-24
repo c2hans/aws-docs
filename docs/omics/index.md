@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com//omics/index.html
 title: 'AWS HealthOmics Documentation'
 canonical_url: https://docs.aws.amazon.com/omics/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-24
 ---
 
 # AWS HealthOmics Documentation
