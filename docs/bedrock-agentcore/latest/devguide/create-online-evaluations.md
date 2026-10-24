@@ -194,7 +194,7 @@ You can create online evaluation configurations using the Amazon Bedrock AgentCo
 
    1.  **Select a CloudWatch log group** – Select up to 10 log groups. Enter the service name used by your agent for observability. For agents hosted on AgentCore Runtime, service name follows the format <agent-runtime-name>.<agent-runtime-endpoint-name>. For agents running outside AgentCore Runtime, service name is configured in OTEL\_RESOURCE\_ATTRIBUTES environment variable.
 
-1. For **Evaluators** , select up to 25 evaluators per evaluation configuration, including built-in and custom evaluators.
+1. For **Evaluators** , select up to 25 evaluators per evaluation configuration, including built-in and custom evaluators. The **Dimensions** column shows how many dimensions each custom evaluator has. A [multi-dimension evaluator](multi-dimension-evaluators.md) produces one result for each dimension.
 
 1. (Optional) For **Filters** , add up to 5 filters to identify which sessions to evaluate.
 

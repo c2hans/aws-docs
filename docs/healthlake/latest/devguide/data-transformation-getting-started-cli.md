@@ -10,9 +10,9 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/data-transfor
 
 For installation and configuration instructions, see [Install the AWS CLI](https://docs.aws.amazon.com/healthlake/latest/devguide/getting-started-setting-up.html#setting-up-install-cli) and [Install the AWS SDK for Python](https://docs.aws.amazon.com/healthlake/latest/devguide/getting-started-setting-up.html#setting-up-install-boto3).
 
-Use the Python SDK with boto3 version greater than or equal to `1.43.117` to call the `UpdateProfileWithAgent` operation programmatically. The AWS CLI cannot stream responses.
+The AWS CLI cannot process streaming responses. To use UpdateProfileWithAgent from the command line, create a Python script that handles the event stream and expose the script as a CLI command. The boto3 version must be greater than or equal to `1.43.117`.
 
-**To run a Python code example in a shell environment**
+**To run Python code in a shell environment:**
 
 1. Save the Python code in a file, for example `my_healthlake_script.py`.
 

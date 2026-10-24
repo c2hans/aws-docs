@@ -54,7 +54,7 @@ There are several GPU setting optimizations that you can perform to achieve the 
      ```
      [ec2-user ~]$ sudo nvidia-smi -ac {{12501,2415}}
      ```
-   + P3 and P3dn instances:
+   + P3dn instances:
 
      ```
      [ec2-user ~]$ sudo nvidia-smi -ac {{877,1530}}
@@ -127,7 +127,7 @@ There are several GPU setting optimizations that you can perform to achieve the 
      ```
      PS C:\> .\nvidia-smi -ac "{{9001,2520}}"
      ```
-   + P3 and P3dn instances:
+   + P3dn instances:
 
      ```
      PS C:\> .\nvidia-smi -ac "{{877,1530}}"

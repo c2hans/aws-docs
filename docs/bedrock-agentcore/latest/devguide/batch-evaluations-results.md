@@ -26,14 +26,17 @@ When a batch evaluation completes, the `GetBatchEvaluation` response includes an
 ### Per-evaluator summaries
 <a name="batch-eval-evaluator-summaries"></a>
 
-Each entry in `evaluatorSummaries` provides aggregate metrics for one evaluator:
+Each entry in `evaluatorSummaries` provides aggregate metrics for one evaluator, or for one dimension of a multi-dimension evaluator:
 
 | Field | Description |
 | --- | --- |
 |  `evaluatorId`  | Short ID (for example, `Builtin.GoalSuccessRate`). |
-|  `statistics.averageScore`  | Mean score across all evaluated sessions. Range depends on the evaluator (typically 0–1). |
+|  `evaluationDimensionName`  | For a [multi-dimension evaluator](multi-dimension-evaluators.md), the dimension this entry covers. Absent for single-scale evaluators. |
+|  `statistics.averageScore`  | Mean score across all evaluated sessions. Range depends on the evaluator (typically 0–1). Absent for categorical evaluators and categorical dimensions. |
 |  `totalEvaluated`  | Number of sessions this evaluator successfully scored. |
 |  `totalFailed`  | Number of sessions where this evaluator returned an error. |
+
+A multi-dimension evaluator has one entry per dimension. A separate entry for the evaluator, without `evaluationDimensionName`, counts the sessions that fail before the judge model runs.
 
 ### Example response
 <a name="batch-eval-example-response"></a>
@@ -149,22 +152,23 @@ A common workflow is to run batch evaluation before and after a change (prompt u
 baseline = client.get_batch_evaluation(batchEvaluationId=baseline_id)
 treatment = client.get_batch_evaluation(batchEvaluationId=treatment_id)
 
-baseline_summaries = {
-    s["evaluatorId"]: s["statistics"]["averageScore"]
-    for s in baseline["evaluationResults"]["evaluatorSummaries"]
-}
-treatment_summaries = {
-    s["evaluatorId"]: s["statistics"]["averageScore"]
-    for s in treatment["evaluationResults"]["evaluatorSummaries"]
-}
+def average_scores(job):
+    # Key on the dimension too: a multi-dimension evaluator has one summary per dimension.
+    return {
+        (s["evaluatorId"], s.get("evaluationDimensionName")): s["statistics"]["averageScore"]
+        for s in job["evaluationResults"]["evaluatorSummaries"]
+        if "averageScore" in s.get("statistics", {})
+    }
 
-print(f"{'Evaluator':<35} {'Baseline':>10} {'Treatment':>10} {'Delta':>10}")
-print("=" * 67)
-for eid in baseline_summaries:
-    b = baseline_summaries[eid]
-    t = treatment_summaries.get(eid, 0)
-    delta = t - b
-    print(f"{eid:<35} {b:>10.4f} {t:>10.4f} {delta:>+10.4f}")
+baseline_summaries = average_scores(baseline)
+treatment_summaries = average_scores(treatment)
+
+print(f"{'Evaluator':<45} {'Baseline':>10} {'Treatment':>10} {'Delta':>10}")
+print("=" * 77)
+for (eid, dim), b in baseline_summaries.items():
+    t = treatment_summaries.get((eid, dim), 0)
+    name = f"{eid}/{dim}" if dim else eid
+    print(f"{name:<45} {b:>10.4f} {t:>10.4f} {t - b:>+10.4f}")
 ```
 
 ## Viewing results from the CLI

@@ -9,6 +9,8 @@ The `UpdateEvaluator` API modifies an existing custom evaluator’s configuratio
 
  **Modification lock protection:** Updates are not allowed if the evaluator has been used by any enabled evaluation configuration.
 
+ **Rating scale changes:** You can change `ratingScale` between `numerical`, `categorical`, and `multiDimensional`, and add, remove, or edit dimensions of a [multi-dimension evaluator](multi-dimension-evaluators.md). A new multi-dimension scale is validated the same way as on create. If you change the evaluation `level` without resending `ratingScale`, the stored dimension instructions are checked against the new level’s placeholders.
+
 The API returns immediately with updated metadata. Monitor the evaluator status to confirm changes are applied successfully using the `GetEvaluator` API.
 
 **Topics**

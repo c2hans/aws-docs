@@ -36,7 +36,6 @@ P6-B200 and P6-B300 instance types require installation and configuration of add
 | Gr6 | Tesla | L-Series | L4 | 525.0 or later |
 | G7 | Tesla | RTX series | RTX PRO 4500 Blackwell | 595 or later |
 | G7e | Tesla | RTX series | RTX PRO 6000 Blackwell | 575.0 or later |
-| P3 | Tesla | V-Series | V100 | -- |
 | P4d | Tesla | A-Series | A100 | -- |
 | P4de | Tesla | A-Series | A100 | -- |
 | P5 | Tesla | H-Series | H100 | 530 or later |

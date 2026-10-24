@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eventbridge/index.html
 title: 'Amazon EventBridge Documentation'
 canonical_url: https://docs.aws.amazon.com/eventbridge/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-24
 ---
 
 # Amazon EventBridge Documentation

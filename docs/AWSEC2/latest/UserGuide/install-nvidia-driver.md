@@ -61,7 +61,6 @@ The following table summarizes the supported NVIDIA drivers for each GPU instanc
 | Gr6f | No | Yes | No |
 | G7 | Yes | Yes | Yes |
 | G7e | Yes | Yes | Yes |
-| P3 | Yes | No | No |
 | P4d | Yes | No | No |
 | P4de | Yes | No | No |
 | P5 | Yes | No | No |

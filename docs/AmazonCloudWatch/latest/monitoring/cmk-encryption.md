@@ -142,7 +142,7 @@ To associate a customer managed key by using the AWS CLI, run the following comm
 
 ```
 aws cloudwatch associate-dataset-kms-key \
-    --dataset-name default \
+    --dataset-identifier default \
     --kms-key-arn arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{key-id}}
 ```
 
@@ -166,7 +166,7 @@ To remove the customer managed key and revert to AWS owned key encryption, call 
 
 ```
 aws cloudwatch disassociate-dataset-kms-key \
-    --dataset-name default
+    --dataset-identifier default
 ```
 
 **Note**
@@ -196,7 +196,7 @@ Call `DisassociateDatasetKmsKey` to remove the association with the unusable key
 
 ```
 aws cloudwatch disassociate-dataset-kms-key \
-    --dataset-name default
+    --dataset-identifier default
 ```
 
 ### Rotate to a new key
@@ -206,7 +206,7 @@ Call `AssociateDatasetKmsKey` with a new, valid KMS key ARN. CloudWatch validate
 
 ```
 aws cloudwatch associate-dataset-kms-key \
-    --dataset-name default \
+    --dataset-identifier default \
     --kms-key-arn arn:aws:kms:{{us-east-1}}:{{111122223333}}:key/{{new-key-id}}
 ```
 

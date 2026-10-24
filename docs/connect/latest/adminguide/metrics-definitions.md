@@ -4496,7 +4496,7 @@ This column heading appears on Real-time metrics reports. It's not a metric exac
 ## Effective staffing
 <a name="effective-staffing"></a>
 
-The count of agents working on a given queue based on the time that agents spend handling contacts within each queue (even when they are assigned to multiple queues within each routing profile).
+The count of agents working on a given queue based on the time that agents spend handling contacts within each queue (even when they are assigned to multiple queues within each routing profile). This is calculated using historical agent-staffing data.
 
 ## Error status time
 <a name="error-status-time"></a>

@@ -24,6 +24,9 @@ The Sury PHP repository is a third-party repository. It is not owned or maintain
 
 If your Lightsail instance runs PHP, we recommend that you update it as soon as possible. To find out whether your instance is affected, see [Which instances are affected](#php-cve-affected-instances). For details about the vulnerabilities, see the [PHP security advisory](https://www.php.net/index.php#2026-10-20-1) on the PHP website.
 
+**CVE-2026-115560 isn't fixed yet**
+On October 23, 2026, the PHP project disclosed CVE-2026-115560, which the versions in the preceding table don't fix. Until a fixed PHP version is released, set `session.upload_progress.enabled = 0` in `php.ini`, as the PHP project recommends. Only applications that change `session.serialize_handler` to `php` at runtime are affected. For more information, see the [PHP informational advisory](https://www.php.net/archive/2026.php#2026-10-23-1).
+
 **Contents**
 + [Which instances are affected](#php-cve-affected-instances)
 + [Before you begin](#php-cve-before-you-begin)

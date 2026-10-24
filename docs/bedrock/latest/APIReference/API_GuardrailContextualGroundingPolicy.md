@@ -16,6 +16,11 @@ Type: Array of [GuardrailContextualGroundingFilter](API_GuardrailContextualGroun
 Array Members: Minimum number of 1 item.
 Required: Yes
 
+ ** tier **   <a name="bedrock-Type-GuardrailContextualGroundingPolicy-tier"></a>
+The tier that your guardrail uses for contextual grounding.
+Type: [GuardrailContextualGroundingTier](API_GuardrailContextualGroundingTier.md) object
+Required: No
+
 ## See Also
 <a name="API_GuardrailContextualGroundingPolicy_SeeAlso"></a>
 

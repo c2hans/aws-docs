@@ -26,7 +26,7 @@ These excerpts call the Amazon RDS API and are code excerpts from larger program
 + [`DescribeDBParameters`](rds_example_rds_DescribeDBParameters_section.md)
 + [`DescribeDBSnapshots`](rds_example_rds_DescribeDBSnapshots_section.md)
 + [`DescribeOrderableDBInstanceOptions`](rds_example_rds_DescribeOrderableDBInstanceOptions_section.md)
-+ [`GenerateRDSAuthToken`](rds_example_rds_GenerateRDSAuthToken_section.md)
 + [`ModifyDBInstance`](rds_example_rds_ModifyDBInstance_section.md)
 + [`ModifyDBParameterGroup`](rds_example_rds_ModifyDBParameterGroup_section.md)
 + [`RebootDBInstance`](rds_example_rds_RebootDBInstance_section.md)
++ [`Utilities`](rds_example_rds_Utilities_section.md)

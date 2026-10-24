@@ -112,7 +112,7 @@ The information that we publish for the rules in the AWS Managed Rules rule grou
 If you need more information than you find here, contact the [AWS Support Center](https://console.aws.amazon.com/support/home#/).
 
 **Important**
-This rule group contains a virtual patch for CVE-2026-109618 and CVE-2026-109619. You can add this rule group to your protection pack (web ACL) to help protect your application against exploitation attempts until your application is patched.
+This rule group provides protection against exploit attempts for CVE-2026-109618, CVE-2026-109619, and CVE-2026-115560. You can add this rule group to your protection pack (web ACL) until the relevant PHP patches have been installed.
 
 The PHP application rule group contains rules that block request patterns associated with the exploitation of vulnerabilities specific to the use of the PHP programming language, including injection of unsafe PHP functions. This can help prevent exploitation of vulnerabilities that permit an attacker to remotely run code or commands for which they are not authorized. Evaluate this rule group if PHP is installed on any server with which your application interfaces.
 

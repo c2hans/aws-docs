@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/migrationhub/index.html
 title: 'AWS Migration Hub Documentation'
 canonical_url: https://docs.aws.amazon.com/migrationhub/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-24
 ---
 
 # AWS Migration Hub Documentation

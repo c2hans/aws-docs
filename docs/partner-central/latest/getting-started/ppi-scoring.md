@@ -62,7 +62,7 @@ The following table shows the thresholds for each performance level.
 | Performance level | Win rate |
 | --- | --- |
 | High Performance Track (3 points) | 75% or higher |
-| Core Program Track (2 points) | 40%–75% |
+| Core Program Track (2 points) | 40% to less than 75% |
 | Turnaround Track (1 point) | Below 40% |
 
 For example, if you've received Assess funding for 100 projects and 85 of them converted to signed migrations while 15 were lost, your win rate is 85/100 = 85%, earning you 3 points (High Performance Track).
@@ -99,7 +99,7 @@ The following table shows the thresholds for each performance level.
 | Performance level | Projects hitting target |
 | --- | --- |
 | High Performance Track (3 points) | 75% or higher of projects |
-| Core Program Track (2 points) | 40%–75% of projects |
+| Core Program Track (2 points) | 40% to less than 75% of projects |
 | Turnaround Track (1 point) | Below 40% of projects |
 
 For example, if you have 50 projects that are at least 6 months past their start date, and 44 of them reached $50K within 90 days from the day of $1K, your speed to value is 44/50 = 88%, earning you 3 points (High Performance Track).
@@ -138,7 +138,7 @@ The following table shows the thresholds for each performance level.
 | Performance level | Revenue achievement |
 | --- | --- |
 | High Performance Track (3 points) | 75% or higher |
-| Core Program Track (2 points) | 40%–75% |
+| Core Program Track (2 points) | 40% to less than 75% |
 | Turnaround Track (1 point) | Below 40% |
 
 For example, if your completed projects had a combined expected terminal ARR of $10M and you achieved $9.2M in actual map tagged spend, your portfolio success rate is 9.2/10 = 92%, earning you 3 points (High Performance Track).
@@ -176,7 +176,7 @@ The following table shows the thresholds for each performance level.
 | Performance level | Projects over 50% ARR |
 | --- | --- |
 | High Performance Track (3 points) | 75% or higher |
-| Core Program Track (2 points) | 40%–75% |
+| Core Program Track (2 points) | 40% to less than 75% |
 | Turnaround Track (1 point) | below 40% |
 
 For example, if you've completed 30 projects and 26 of them achieved over 50% of their expected ARR, then 26/30 = 87% of your projects met the threshold, earning you 3 points (High Performance Track).

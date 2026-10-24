@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/account-par
 # account-part-of-organizations
 <a name="account-part-of-organizations"></a>
 
-Checks if an AWS account is part of AWS Organizations. The rule is NON\_COMPLIANT if an AWS account is not part of AWS Organizations or AWS Organizations master account ID does not match rule parameter `MasterAccountId`.
+Rule checks whether AWS account is part of AWS Organizations. The rule is NON\_COMPLIANT if the AWS account is not part of AWS Organizations or AWS Organizations management account ID does not match rule parameter `MasterAccountId`.
 
 **Note**
 **Managed Rules and Global IAM Resource Types**
@@ -25,6 +25,6 @@ MasterAccountId (Optional)Type: String
 The management account ID for an AWS account.
 
 ## AWS CloudFormation template
-<a name="w2aac20c16c17b7b3c19"></a>
+<a name="w2aac20c16c17b7b3c17"></a>
 
 To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

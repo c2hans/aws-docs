@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/kinesis/index.html
 title: 'Amazon Kinesis Documentation'
 canonical_url: https://docs.aws.amazon.com/kinesis/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-24
 ---
 
 # Amazon Kinesis Documentation

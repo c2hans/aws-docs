@@ -487,7 +487,7 @@ Operating system support differs depending on the processor type. The following 
 | --- | --- | --- |
 | Amazon Linux 2023 | ✓ | ✓ |
 | RHEL 8, 9, and 10 | ✓ | ✓ |
-| Debian 11, 12, and 13 | ✓ | ✓ |
+| Debian 12 and 13 | ✓ | ✓ |
 | Rocky Linux 8 and 9 | ✓ | ✓ |
 | Ubuntu 22.04, 24.04, and 26.04 | ✓ | ✓ |
 | SUSE Linux Enterprise 15 SP2 and later | ✓ | ✓ |

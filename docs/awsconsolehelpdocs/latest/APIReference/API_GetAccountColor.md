@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/A
 <a name="API_GetAccountColor"></a>
 
 **Important**
-This action has been deprecated. Use [GetAccountCustomizations](API_GetAccountCustomizations.md) instead.
+Deprecated. This operation becomes unavailable on April 28, 2027. Use [GetAccountCustomizations](API_GetAccountCustomizations.md) instead.
 
 Gets the color associated with the account.
 

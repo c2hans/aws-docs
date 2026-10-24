@@ -426,6 +426,7 @@ The following table describes the service quotas for AgentCore Evaluations:
 | Online evaluation configurations per account | 1,000 | Yes |  |
 | Evaluators per online evaluation configuration | 25 | No |  |
 | Custom evaluators per account | 10,000 | Yes |  |
+| Dimensions per multi-dimension evaluator | 50 | No |  |
 
 ## AgentCore Batch Evaluation Service Quotas
 <a name="optimization-batch-evaluation-limits"></a>
@@ -600,7 +601,7 @@ The following table describes the quotas for resource-based policies:
 
 | Quota | Default value | Adjustable | Notes |
 | --- | --- | --- | --- |
-| Maximum registries per account per Region | 5 | Yes |  |
+| Maximum registries per account per Region | 10 | Yes |  |
 
 ### Throttling limits
 <a name="registry-throttling-limits"></a>

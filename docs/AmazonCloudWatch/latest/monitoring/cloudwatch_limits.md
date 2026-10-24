@@ -256,7 +256,7 @@ CloudWatch RUM (Real-User Monitoring) helps you collect and analyze performance 
 
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
-| RUM AppMonitors | mx-central-1: 20<br />Each of the other supported Regions: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/rum/quotas/L-3FB7EA17)  | The maximum number of RUM AppMonitors that you can have in this AWS account. |
+| RUM AppMonitors | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/rum/quotas/L-3FB7EA17)  | The maximum number of RUM AppMonitors that you can have in this AWS account. |
 | RUM Events per second per AWS Account | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/rum/quotas/L-35851224)  | The maximum number of RUM Events per second that RUM will ingest for this AWS account. |
 
 ## Managing your CloudWatch service quotas

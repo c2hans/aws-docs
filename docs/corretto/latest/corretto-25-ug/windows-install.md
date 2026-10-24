@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/windows-i
 
 1.  Once the install wizard is finished, set the `JAVA_HOME` and `PATH` environment variables.
 
-   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 25.0.4, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk25.0.4_10`.
+   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 25.0.5, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk25.0.5_0`.
 
    Add `%JAVA_HOME%\bin` to the current `PATH` variable.
 
@@ -28,9 +28,9 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/windows-i
 **Example**
 
    ```
-   openjdk version "25.0.4" 2026-09-25 LTS
-   OpenJDK Runtime Environment Corretto-25.0.4.10.1 (build 25.0.4+10-LTS)
-   OpenJDK 64-Bit Server VM Corretto-25.0.4.10.1 (build 25.0.4+10-LTS, mixed mode)
+   openjdk version "25.0.5" 2026-10-22 LTS
+   OpenJDK Runtime Environment Corretto-25.0.5.0.9 (build 25.0.5+0-LTS)
+   OpenJDK 64-Bit Server VM Corretto-25.0.5.0.9 (build 25.0.5+0-LTS, mixed mode)
    ```
 
 ## Uninstall Amazon Corretto 25

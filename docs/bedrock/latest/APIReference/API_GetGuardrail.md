@@ -74,7 +74,10 @@ Content-type: application/json
             "threshold": number,
             "type": "string"
          }
-      ]
+      ],
+      "tier": {
+         "tierName": "string"
+      }
    },
    "createdAt": "string",
    "crossRegionDetails": {

@@ -113,6 +113,9 @@ EKS Auto Mode uses different labels than Karpenter. Labels related to EC2 manage
 | eks.amazonaws.com/instance-cpu-sustained-clock-speed-mhz | 3500 | Sustained CPU clock speed in MHz |
 | eks.amazonaws.com/instance-capability-flex | false | Whether the instance type is a flexible (`flex`) variant |
 | eks.amazonaws.com/instance-memory | 131072 | Number of mebibytes of memory on the instance |
+| eks.amazonaws.com/instance-numa-nodes | 2 | Number of NUMA nodes on the instance. Present only on supported instance types. |
+| eks.amazonaws.com/instance-min-cpus-per-numa | 16 | Number of CPUs on the smallest NUMA node of the instance. Present only on supported instance types. |
+| eks.amazonaws.com/instance-min-memory-per-numa | 65536 | Number of mebibytes of memory on the smallest NUMA node of the instance. Present only on supported instance types. |
 | eks.amazonaws.com/instance-ebs-bandwidth | 9500 | Number of [maximum megabits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html#ebs-optimization-performance) of EBS available on the instance |
 | eks.amazonaws.com/instance-network-bandwidth | 131072 | Number of [baseline megabits](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html) available on the instance |
 | eks.amazonaws.com/instance-gpu-name | t4 | Name of the GPU on the instance, if available |

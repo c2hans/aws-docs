@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 # Configure the URLConnection-based HTTP client
 <a name="http-configuration-url"></a>
 
-The AWS SDK for Java 2.x offers a lighter-weight `[UrlConnectionHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html)` HTTP client in comparison to the default `ApacheHttpClient`. The `UrlConnectionHttpClient` is based on Java's `[URLConnection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLConnection.html)`.
+The AWS SDK for Java 2.x offers a lighter-weight `[UrlConnectionHttpClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/http/urlconnection/UrlConnectionHttpClient.html)` HTTP client in comparison to the default `Apache5HttpClient`. The `UrlConnectionHttpClient` is based on Java's `[URLConnection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLConnection.html)`.
 
 The `UrlConnectionHttpClient` loads more quickly than the Apache-based HTTP client, but has fewer features. Because it loads more quickly, it is a [good solution](lambda-optimize-starttime.md) for Java AWS Lambda functions.
 
@@ -25,14 +25,14 @@ Connection pooling is managed internally by the JVM. To configure the idle timeo
 ```
 $ java -Dhttp.keepAlive.time.server=60 -cp ... App
 ```
-This is a JVM-global setting that affects all `HttpURLConnection` usage in the process, not just SDK clients. If you need per-client control over idle connection timeout, use the `ApacheHttpClient` with the `connectionMaxIdleTime` setting.
+This is a JVM-global setting that affects all `HttpURLConnection` usage in the process, not just SDK clients. If you need per-client control over idle connection timeout, use the `Apache5HttpClient` with the `connectionMaxIdleTime` setting.
 
 ## Access the `UrlConnectionHttpClient`
 <a name="http-url-dependency"></a>
 
 To configure and use the `UrlConnectionHttpClient`, you declare a dependency on the `url-connection-client` Maven artifact in your `pom.xml` file.
 
-Unlike the `ApacheHttpClient`, the `UrlConnectionHttpClient` is not automatically added to your project, so use must specifically declare it.
+Unlike the `Apache5HttpClient`, the `UrlConnectionHttpClient` is not automatically added to your project, so declare it explicitly.
 
 The following example of a `pom.xml` file shows the dependencies required to use and configure the HTTP client.
 
@@ -42,7 +42,7 @@ The following example of a `pom.xml` file shows the dependencies required to use
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>bom</artifactId>
-            <version>2.27.21</version>
+            <version>{{2.57.3}}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -58,6 +58,60 @@ The following example of a `pom.xml` file shows the dependencies required to use
     </dependency>
 </dependencies>
 ```
+
+Replace {{2.57.3}} with the version of the Java SDK that you want to use. For information about the latest version, see the [Maven Central](https://central.sonatype.com/artifact/software.amazon.awssdk/bom) website.
+
+Each service artifact, such as `s3`, also adds the `apache5-client` and `netty-nio-client` artifacts to your project by default. If you use only the `UrlConnectionHttpClient`, you can exclude those artifacts from each service dependency to reduce the number of jars in your application.
+
+The following Maven and Gradle examples exclude both artifacts from the `s3` dependency and add the `url-connection-client` dependency:
+
+------
+#### [ Maven ]
+
+```
+<dependencies>
+    <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>s3</artifactId>
+        <exclusions>
+            <exclusion>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>netty-nio-client</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>software.amazon.awssdk</groupId>
+                <artifactId>apache5-client</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <!-- Repeat the exclusions for each service dependency, such as ec2 or dynamodb. -->
+    <dependency>
+        <groupId>software.amazon.awssdk</groupId>
+        <artifactId>url-connection-client</artifactId>
+    </dependency>
+</dependencies>
+```
+
+------
+#### [ Gradle ]
+
+```
+dependencies {
+    implementation(platform("software.amazon.awssdk:bom:{{2.57.3}}"))
+    implementation("software.amazon.awssdk:s3") {
+        exclude(group = "software.amazon.awssdk", module = "netty-nio-client")
+        exclude(group = "software.amazon.awssdk", module = "apache5-client")
+    }
+    // Repeat the exclusions for each service dependency, such as ec2 or dynamodb.
+    implementation("software.amazon.awssdk:url-connection-client")
+}
+```
+
+------
+
+**Note**
+Before version 2.46.0, the default synchronous HTTP client artifact was `apache-client`. If you use an earlier version, exclude `apache-client` instead of `apache5-client`.
+The `UrlConnectionHttpClient` supports only synchronous service clients. If you exclude `netty-nio-client` and also use asynchronous service clients, such as `S3AsyncClient`, add another asynchronous HTTP client.
 
 ## Use and configure the `UrlConnectionHttpClient`
 <a name="http-url-config"></a>
@@ -151,27 +205,20 @@ dynamoDbClient.close();
 urlHttpClient.close();
 ```
 
-#### Use `URLConnectionHttpClient` and `ApacheHttpClient` together
+#### Use multiple HTTP clients together
 <a name="http-config-url-caveat"></a>
 
-When you use the `UrlConnectionHttpClient` in your application, you must supply each service client with either a `URLConnectionHttpClient` instance or a `ApacheHttpClient` instance using the service client builder's `httpClientBuilder` method.
+If you don't specify an HTTP client for a service client, the SDK chooses one for you from the HTTP clients on your classpath. When there's more than one, the SDK uses the one with the highest priority. `Apache5HttpClient` has the highest priority, so the SDK uses it for any service client that doesn't specify an HTTP client, even if another service client uses the `UrlConnectionHttpClient`.
 
-An exception occurs if your program uses multiple service clients and both of the following are true:
-+ One service client is configured to use a `UrlConnectionHttpClient` instance
-+ Another service client uses the default `ApacheHttpClient` without explicitly building it with the `httpClient()` or `httpClientBuilder()` methods
-
-The exception will state that multiple HTTP implementations were found on the classpath.
-
-The following example code snippet leads to an exception.
+In the following example, the `dynamoDbClient` uses the `UrlConnectionHttpClient`. The `s3Client` doesn't specify an HTTP client, so the SDK uses `Apache5HttpClient`:
 
 ```
-// The dynamoDbClient uses the UrlConnectionHttpClient
+// The dynamoDbClient uses the UrlConnectionHttpClient.
 DynamoDbClient dynamoDbClient = DynamoDbClient.builder()
-        .httpClient(UrlConnectionHttpClient.create())
+        .httpClientBuilder(UrlConnectionHttpClient.builder())
         .build();
 
-// The s3Client below uses the ApacheHttpClient at runtime, without specifying it.
-// An SdkClientException is thrown with the message that multiple HTTP implementations were found on the classpath.
+// The s3Client doesn't specify an HTTP client, so the SDK uses the Apache5HttpClient.
 S3Client s3Client = S3Client.create();
 
 // Perform work with the s3Client and dynamoDbClient.
@@ -180,15 +227,15 @@ dynamoDbClient.close();
 s3Client.close();
 ```
 
-Avoid the exception by explicitly configuring the `S3Client` with an `ApacheHttpClient`.
+To choose the HTTP client for a service client, specify it explicitly:
 
 ```
 DynamoDbClient dynamoDbClient = DynamoDbClient.builder()
-        .httpClient(UrlConnectionHttpClient.create())
+        .httpClientBuilder(UrlConnectionHttpClient.builder())
         .build();
 
 S3Client s3Client = S3Client.builder()
-        .httpClient(ApacheHttpClient.create())    // Explicitly build the ApacheHttpClient.
+        .httpClientBuilder(Apache5HttpClient.builder())    // Explicitly use the Apache5HttpClient.
         .build();
 
 // Perform work with the s3Client and dynamoDbClient.
@@ -198,7 +245,8 @@ s3Client.close();
 ```
 
 **Note**
-To explicitly create the `ApacheHttpClient`, you must [add a dependency](http-configuration-apache.md#http-apache-dependency) on the `apache-client` artifact in your Maven project file.
+To explicitly use the `Apache5HttpClient`, add a dependency on the `apache5-client` artifact. For more information about adding the dependency, see [Configuration needed](http-configuration-apache5.md#http-config-apache-5-yes-config).
+Before version 2.22.0, the SDK threw an `SdkClientException` with the message that multiple HTTP implementations were found on the classpath. To avoid the exception, specify the HTTP client for each service client.
 
 ## Proxy configuration example
 <a name="http-configuration-url-proxy-conf-ex"></a>

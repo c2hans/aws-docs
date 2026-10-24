@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/corretto/index.html
 title: 'Amazon Corretto Documentation'
 canonical_url: https://docs.aws.amazon.com/corretto/
 source: aws-documentation
-generated_on: 2026-10-22
+generated_on: 2026-10-23
 ---
 
 # Amazon Corretto Documentation

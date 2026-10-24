@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Modi
 
 Modifies the size, volume type, IOPS (input/output operations per second), or throughput of a volume. When you modify a volume, you must specify at least one of these parameters. You can modify a volume only after any previous modification for that volume has finished.
 
+You can increase the size of a volume, but you can't decrease it. Changes to size and performance must be within the limits of the target volume type, and some volume type changes aren't supported. For more information, see [Limitations](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modify-volume.html#elastic-volumes-limitations) in the *Amazon EBS User Guide*.
+
 To track the progress of a modification, use the Amazon EC2 [DescribeVolumesModifications](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumesModifications.html) operation. For more information, see [Monitor the progress of Amazon EBS volume modifications](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-modifications.html) in the *Amazon EBS User Guide*.
 
 After you increase the size of a volume, you must extend the partition and file system to use the new storage capacity. For more information, see [Extend the file system after resizing an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/recognize-expanded-volume-linux.html) in the *Amazon EBS User Guide*, which covers both [Linux](https://docs.aws.amazon.com/ebs/latest/userguide/recognize-expanded-volume-linux.html#extend-linux) and [Windows](https://docs.aws.amazon.com/ebs/latest/userguide/recognize-expanded-volume-linux.html#extend-windows) instances.

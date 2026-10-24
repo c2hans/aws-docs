@@ -7,7 +7,11 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 
 By default, every member of the space can read all of its telemetry. To give a member a narrower view, add a **data scope** to their grant. A data scope is a set of conditions that a row of telemetry must match for that member to see it. Rows that do not match are filtered out at read time, before results reach the member. The stored data is not changed. To control what telemetry is captured or stored in the first place, see [Protect sensitive data](omni-data-protection.md).
 
-A data scope is enforced on the query path, so it applies wherever the member reads telemetry: query results, dashboards, trace and session views, and the answers the Omni agent gives them. The same scope applies in the Omni web UI, the IDE extension, and the API.
+A data scope is enforced on the query path. It applies wherever the member reads telemetry from the CloudWatch Dataset, including query results, dashboards, trace and session views, and the answers the Omni agent gives from its own queries. The same scope applies in the Omni web UI, the IDE extension, and the API.
+
+**Note**
+A data scope applies only to telemetry read from the CloudWatch Dataset. It doesn't filter investigation results from AWS DevOps Agent. It also doesn't filter other data from outside the Dataset, such as CloudWatch Logs log groups or third-party tools.
+If your space is connected to an AWS DevOps Agent space, a member with a data scope can still see investigation content. This content can come from CloudWatch Logs log groups outside their scope. For more information, see [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
 
 You configure a data scope on the grant, under `Advanced: limit the data this principal can see`, when you add or edit a member (step 5 of the procedure in [Manage space members and permissions](omni-manage-space-members-and-permissions.md)).
 

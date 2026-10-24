@@ -57,7 +57,10 @@ Content-type: application/json
             "threshold": {{number}},
             "type": "{{string}}"
          }
-      ]
+      ],
+      "tierConfig": {
+         "tierName": "{{string}}"
+      }
    },
    "crossRegionConfig": {
       "guardrailProfileIdentifier": "{{string}}"

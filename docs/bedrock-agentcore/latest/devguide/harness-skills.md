@@ -20,6 +20,8 @@ The harness supports four skill sources:
 
 Skills are fetched once per session on the first invocation. Within a session, skills persist on disk across multiple invocations. When the VM expires and a new session starts, skills are re-fetched to guarantee freshness.
 
+When you use a custom container image with Git, Amazon S3, or AWS skills, include `tar` in the image. Give the container user write access to `/tmp`. For details, see [Custom environment (container images)](harness-environment.md#harness-custom-container).
+
 You can set `skills` as a default on the harness (via `CreateHarness` or `UpdateHarness`), or override per invocation. Invoke-time skills are appended after create-time skills; if both define a skill with the same name, the invoke-time version wins.
 
 **Note**

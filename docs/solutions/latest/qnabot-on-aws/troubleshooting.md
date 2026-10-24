@@ -5,54 +5,58 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/troublesh
 # Troubleshooting
 <a name="troubleshooting"></a>
 
-If you need help with this guidance, contact AWS Support to open a support case for this guidance.
+This section provides information about known issues with QnABot on AWS and instructions for resolving them.
 
-## Contact AWS Support
-<a name="contact-aws-support"></a>
+## Amazon Bedrock model parameter errors (TopP and Temperature)
+<a name="amazon-bedrock-model-parameter-errors"></a>
 
-If you have [AWS Business Support\+](https://aws.amazon.com/premiumsupport/plans/business-plus/), [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/), or [AWS Unified Operations](https://aws.amazon.com/premiumsupport/plans/unified-operations/), you can use the AWS Support Center to get expert assistance with this guidance. The following sections provide instructions.
+When using Amazon Bedrock large language models (LLMs) with QnABot on AWS, you might encounter errors if both the TopP and Temperature parameters are set simultaneously in the `LLM_GENERATE_QUERY_MODEL_PARAMS` or `LLM_QA_MODEL_PARAMS` settings. Certain Amazon Bedrock models do not support specifying both parameters in the same request, and invocations to those models will fail.
 
-### Create case
-<a name="create-case"></a>
+### Root causes
+<a name="amazon-bedrock-model-parameter-errors-root-causes"></a>
++ The Amazon Bedrock model you are using does not accept both TopP and Temperature parameters in the same request. Not all models have this restriction—some models do accept both parameters.
++ The default QnABot on AWS settings may include both TopP and Temperature, which can cause invocation failures when the selected model does not support the combination.
 
-1. Sign in to [Support Center](https://support.console.aws.amazon.com/support/home#/).
+### Resolution
+<a name="amazon-bedrock-model-parameter-errors-resolution"></a>
 
-1. Choose **Create case**.
+1. Sign in to the QnABot Content Designer and navigate to the **Settings** page.
 
-### How can we help?
-<a name="how-can-we-help"></a>
+1. Locate the `LLM_GENERATE_QUERY_MODEL_PARAMS` and `LLM_QA_MODEL_PARAMS` settings.
 
-1. Choose **Technical**.
+1. Review the JSON object for each setting. If both `topP` and `temperature` are present, remove the parameter that is not supported by your model. For example, if your model does not support both, remove either `topP` or `temperature` from the JSON object.
 
-1. For **Service**, select **Solutions**.
+1. Choose **Save** to apply the changes.
 
-1. For **Category**, select **Other Solutions**.
+1. Test your QnABot on AWS deployment to confirm that LLM queries are processed successfully.
 
-1. For **Severity**, select the option that best matches your use case.
+**Note**
+Not all Amazon Bedrock models restrict the use of both TopP and Temperature simultaneously. Refer to the Amazon Bedrock inference parameters documentation to determine which parameters are supported by your chosen model. If you are unsure which parameter to remove, consult the model provider’s documentation for recommended inference settings.
 
-1. When you enter the **Service**, **Category**, and **Severity**, the interface populates links to common troubleshooting questions. If you can’t resolve your question with these links, choose **Next step: Additional information**.
+For more information, see the related [GitHub issue \#892](https://github.com/aws-solutions/qnabot-on-aws/issues/892) in the QnABot on AWS GitHub repository.
 
-### Additional information
-<a name="additional-information"></a>
+## Unable to use Managed Knowledge Base with Amazon Bedrock
+<a name="unable-to-use-managed-knowledge-base-with-amazon-bedrock"></a>
 
-1. For **Subject**, enter text summarizing your question or issue.
+If you are using Amazon Bedrock Knowledge Bases with QnABot on AWS and the fulfillment Lambda function does not return a response, the issue may be related to the type of knowledge base in use.
 
-1. For **Description**, describe the issue in detail, including the name of this product and the version you are using, such as this example: **QnABot on AWS vX.Y.Z**.
+### Root causes
+<a name="unable-to-use-managed-knowledge-base-with-amazon-bedrock-root-causes"></a>
++ Amazon Bedrock has discontinued support for the RetrieveAndGenerate API with managed knowledge bases. QnABot on AWS uses this API to retrieve and generate responses from Amazon Bedrock Knowledge Bases.
++ If your knowledge base is configured as a managed knowledge base, API calls will fail and the fulfillment Lambda function will not return a response.
 
-1. Choose **Attach files**.
+### Resolution
+<a name="unable-to-use-managed-knowledge-base-with-amazon-bedrock-resolution"></a>
 
-1. Attach the information that AWS Support needs to process the request.
+1. Sign in to the Amazon Bedrock console.
 
-### Help us resolve your case faster
-<a name="help-us-resolve-your-case-faster"></a>
+1. Navigate to **Knowledge bases** and identify the knowledge base that is associated with your QnABot on AWS deployment.
 
-1. Enter the requested information.
+1. If the knowledge base is a managed knowledge base, create a new knowledge base using an unstructured vector store configuration. For instructions, see [Create a knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html) in the *Amazon Bedrock User Guide*.
 
-1. Choose **Next step: Solve now or contact us**.
+1. Update your QnABot on AWS settings to reference the new knowledge base ID.
 
-### Solve now or contact us
-<a name="solve-now-or-contact-us"></a>
+1. Test your QnABot on AWS deployment to confirm that the knowledge base integration is functioning correctly.
 
-1. Review the **Solve now** solutions.
-
-1. If you can’t resolve your issue with these solutions, choose **Contact us**, enter the requested information, and choose **Submit**.
+**Note**
+Existing knowledge bases that use an unstructured vector store configuration are not affected by this change. Only managed knowledge bases are impacted. If you are creating a new knowledge base for use with QnABot on AWS, ensure that you select the unstructured vector store option during creation.

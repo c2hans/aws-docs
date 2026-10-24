@@ -72,6 +72,20 @@ The base environment includes Python and bash, enough for most tasks. When you n
 
 Container images must be built for the `linux/arm64` platform.
 
+Include the following programs in your image:
++ Include `/bin/bash`. The harness uses it for the shell tool, commands, and interactive terminals.
++ Include `/bin/sh` and `sleep`. The harness uses them to keep the container running.
++ Include `base64`, `cat`, `dirname`, `env`, `ls`, `mkdir`, and `rm`. The file tools use them to read and write files.
++ Include `tar` when you configure Git, Amazon S3, or AWS skills. The harness uses it to copy these skills into the container.
+
+When you configure Git, Amazon S3, or AWS skills, give the container user write access to `/tmp`. The harness copies these skills into `/tmp` before the agent starts.
+
+Most general-purpose base images include these programs, but some minimal images don’t. For example, `amazonlinux:2023` and `amazonlinux:2` don’t include `tar`. Alpine and BusyBox images don’t include `/bin/bash`. To install `tar` on Amazon Linux, add `RUN dnf install -y tar` to your Dockerfile.
+
+If you omit `tar` or write access to `/tmp`, invocations that use fetched skills fail. This applies to Git, Amazon S3, and AWS skills. The error is `Unable to copy configured skills to the customer container`. Add the missing program or permission to resolve the error. You don’t need `tar` for path skills because the harness reads them in place.
+
+For more information about skill sources, see [Skills](harness-skills.md).
+
 The harness overrides your container’s `ENTRYPOINT` and `CMD` to keep it running as an environment. Your installed software, filesystem, and environment variables are available to the agent; your container’s startup command is not executed. If you need a background process (such as a dev server), start it via `InvokeAgentRuntimeCommand` after the session begins.
 
 **Example**

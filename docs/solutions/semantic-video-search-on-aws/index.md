@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/semantic-video-search-on-aws/i
 title: 'Guidance for Semantic Video Search on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/semantic-video-search-on-aws/
 source: aws-documentation
-generated_on: 2026-10-22
+generated_on: 2026-10-23
 ---
 
 # Guidance for Semantic Video Search on AWS

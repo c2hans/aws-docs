@@ -9,6 +9,8 @@ This release provides new versions for AWS Elastic Beanstalk Node.js 24 and Node
 
 **Release date:** October 22, 2026
 
+To update your environments to the new platform versions, see [Updating your Elastic Beanstalk environment's platform version](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.platform.upgrade.html) in the *AWS Elastic Beanstalk Developer Guide*. If you've turned on [managed platform updates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html), Elastic Beanstalk applies the new platform versions to your environments during their weekly maintenance window.
+
 ## Changes
 <a name="release-2026-10-22-al2023-nodejs.changes"></a>
 

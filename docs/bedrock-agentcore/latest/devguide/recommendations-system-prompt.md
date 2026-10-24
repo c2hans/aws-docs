@@ -223,7 +223,7 @@ You can use a [built-in evaluator](built-in-evaluators-overview.md) or provide a
 + If the quality you care about is domain-specific or not captured by a built-in evaluator, use a custom evaluator to best represent the measurement.
 
 **Note**
-Recommendations support built-in, custom LLM-as-judge, and code-based evaluators, but require the evaluator to return a numerical value as the optimization signal. For custom LLM-as-judge evaluators, configure the `ratingScale` with a `numerical` scale (not `categorical`). For code-based evaluators, include the `value` field in the [response schema](code-based-evaluators.md#code-based-response-schema).
+Recommendations support built-in, custom LLM-as-judge, and code-based evaluators, but require the evaluator to return a numerical value as the optimization signal. For custom LLM-as-judge evaluators, configure the `ratingScale` with a `numerical` scale (not `categorical`). For code-based evaluators, include the `value` field in the [response schema](code-based-evaluators.md#code-based-response-schema). [Multi-dimension evaluators](multi-dimension-evaluators.md) aren’t supported. A recommendation whose evaluator is a multi-dimension evaluator, including one inherited from the trace source, is rejected with a validation error.
 
 In the API, specify the evaluator in the `evaluationConfig.evaluators` list with exactly one evaluator reference:
 

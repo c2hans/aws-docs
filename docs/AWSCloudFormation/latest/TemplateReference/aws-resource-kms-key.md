@@ -165,7 +165,7 @@ AWS KMS supports the following key specs for KMS keys:
   + `SM2` (China Regions only)
 *Required*: No
 *Type*: String
-*Allowed values*: `SYMMETRIC_DEFAULT | RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519`
+*Allowed values*: `SYMMETRIC_DEFAULT | RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519 | ML_KEM_512 | ML_KEM_768 | ML_KEM_1024`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `KeyUsage`  <a name="cfn-kms-key-keyusage"></a>
@@ -181,7 +181,7 @@ Select only one valid value.
 + For asymmetric KMS keys with SM2 key pairs (China Regions only), specify `ENCRYPT_DECRYPT`, `SIGN_VERIFY`, or `KEY_AGREEMENT`.
 *Required*: No
 *Type*: String
-*Allowed values*: `ENCRYPT_DECRYPT | SIGN_VERIFY | GENERATE_VERIFY_MAC | KEY_AGREEMENT`
+*Allowed values*: `ENCRYPT_DECRYPT | SIGN_VERIFY | GENERATE_VERIFY_MAC | KEY_AGREEMENT | ENCAPSULATE_DECAPSULATE`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MultiRegion`  <a name="cfn-kms-key-multiregion"></a>

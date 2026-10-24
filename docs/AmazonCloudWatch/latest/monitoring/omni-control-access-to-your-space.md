@@ -18,8 +18,8 @@ When you add a member to a space or edit their access, you create a **grant** th
 
 Each grant carries one permission level:
 + **Viewer**: Read-only access to the whole space, including queries and the Omni agent.
-+ **Editor**: Create, modify, and delete resources, run queries, and manage datasets, in addition to everything a Viewer can do.
-+ **Space Admin**: Full access, including managing members and their permissions.
++ **Editor**: Create, modify, and delete resources other than integrations, run queries, and manage datasets, in addition to everything a Viewer can do.
++ **Space Admin**: Full access, including managing members and their permissions, and connecting, changing, or removing integrations.
 + **Custom**: Exactly the actions you list, optionally limited to specific resources. See [Custom grant actions](omni-custom-grant-actions.md).
 
 A member can hold grants directly and through groups, and the grants combine: their effective access is the union of what all the grants allow. For the tiered levels the highest one wins, and a Custom grant adds exactly the actions it lists. There are no explicit denies; a grant only ever adds access.

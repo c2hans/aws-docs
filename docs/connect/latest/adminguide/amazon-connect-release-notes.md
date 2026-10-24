@@ -51,6 +51,15 @@ These features are available in Connect Customer. They are not available in Conn
 
 For more information about configuring evaluation forms, see [Create an evaluation form](https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html). For information about using these metrics and segments on dashboards, see [Queue and agent performance dashboard](https://docs.aws.amazon.com/connect/latest/adminguide/queue-performance-dashboard.html). For information about the calculated attributes that drive the lifetime value and repeat caller segments, see [Default calculated attributes](https://docs.aws.amazon.com/connect/latest/adminguide/customerprofiles-default-calculated-attributes.html).
 
+### Amazon Connect Customer now provides automated checks to improve performance evaluation forms
+<a name="oct26-evaluation-form-checks"></a>
+
+Amazon Connect Customer now checks performance evaluation forms for questions that AI cannot score reliably. A question clear to a person can still lack the context AI needs, and managers had no quick way to find those gaps. While setting up a form, a manager runs a one-click check against best practices and receives a list of questions to make more specific. For example, the check might flag "Did the agent provide a sales disclosure?" and prompt the manager to define exactly what must be disclosed before a sale.
+
+For more information, see [Create an evaluation form](https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html) in the Connect Customer Administrator Guide.
+
+Available in US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo).
+
 ## September 2026 Updates
 <a name="sep26-release-notes"></a>
 
@@ -129,6 +138,93 @@ Both request members are optional, so existing chat integrations are unaffected.
 For more information, see the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API.
 
 Available in all AWS Regions where Connect Customer is offered.
+
+### Amazon Connect Customer Customer Profiles now sends events when customers enter or exit a segment
+<a name="sep26-segment-membership-events"></a>
+
+Amazon Connect Customer Customer Profiles now sends an event the moment a profile enters or exits a segment. Detecting those changes previously meant exporting whole segments on a schedule and running custom scripts to compare them, adding hours of delay.
+
+Customer Profiles now streams each change to your Amazon Kinesis data stream, in near real time for Classic segments and at scheduled intervals for Enhanced (Spark SQL) segments. Each event carries the profile ID, segment name, and whether the customer joined or left. For example, the instant a customer who abandoned their cart enters a win-back segment, your contact center can launch a proactive offer.
+
+For more information, see [Track segment membership changes](https://docs.aws.amazon.com/connect/latest/adminguide/customer-segments-membership-events.html) in the Connect Customer Administrator Guide.
+
+Available in all AWS Regions where Amazon Connect Customer Customer Profiles is offered.
+
+### Amazon Connect Customer now enables agents to bid on preferred shifts
+<a name="sep26-shift-bidding"></a>
+
+Amazon Connect Customer now lets agents bid on the shifts they prefer, reducing the manual assignment work schedulers did before. Schedulers set an agent ranking by CSV or randomized order, Connect Customer generates available shifts from forecasted demand and shift profiles, and agents rank their preferences in the agent workspace before the deadline. When the window closes, each agent is assigned their highest-ranked available shift, with the ranking as tiebreaker. For example, a scheduler opens a bid across nine-hour shifts in a weekday 6 AM to 10 PM profile, and agents rank them.
+
+For more information, see [Shift bidding](https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-shift-bid.html) in the Connect Customer Administrator Guide.
+
+Available in all AWS Regions where Connect Customer agent scheduling is offered.
+
+### Amazon Connect Customer can now import evaluation form PDFs using AI
+<a name="sep26-evaluation-pdf-import"></a>
+
+Amazon Connect Customer can now import a PDF of an evaluation form from a third-party quality application and recreate it using AI, instead of rebuilding it question by question. You upload the PDF, choose percentage or points-based scoring, and Connect Customer extracts the sections, questions, answer options, and scoring into a draft form. Natural language instructions refine the import as it runs. For example, you can ask it to split one broad question into two simpler ones while the form is generated.
+
+For more information, see [Create an evaluation form](https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html) in the Connect Customer Administrator Guide.
+
+Available in US East (N. Virginia), US West (Oregon), Canada (Central), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Frankfurt).
+
+### Amazon Connect Customer now lets you create, manage, and search custom metrics through APIs
+<a name="sep26-custom-metrics-apis"></a>
+
+Amazon Connect Customer now lets you create, manage, and search custom metrics through APIs, so definitions stay consistent instead of drifting as you manage them by hand across instances. Seven new operations (CreateMetric, DeleteMetric, DescribeMetric, ListMetrics, SearchMetrics, UpdateMetricContent, UpdateMetricMetadata) let you define a metric once and manage it programmatically across queues, teams, and environments, with every change tracked in AWS CloudTrail. For example, you can define a metric for interactions where customers abandon and request a live agent within 90 seconds, then create and publish it to a dashboard through the API.
+
+For more information, see the [Connect Customer API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) and the Connect Customer Administrator Guide.
+
+Available in all AWS Regions where Connect Customer is offered.
+
+### Amazon Connect Customer now supports tag-based access control for custom metrics
+<a name="sep26-custom-metrics-tbac"></a>
+
+Amazon Connect Customer now supports tag-based access control for custom metrics, so you can govern who can view, create, or modify each one as more teams share the same library. Tag each metric and use those tags to set access: a team gets full control of its own metrics, view-only access to another team's, and no visibility into the ones you restrict. Search follows the same rules, so people only see what they are allowed to. For example, you can give a partner team view-only access to your metrics while hiding a restricted set entirely.
+
+For more information, see the [Connect Customer API Reference](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html) and the Connect Customer Administrator Guide.
+
+Available in all AWS Regions where Connect Customer is offered.
+
+### Amazon Connect Customer launches agent-to-agent collaboration
+<a name="sep26-agent-to-agent-collaboration"></a>
+
+Amazon Connect Customer now supports agent-to-agent collaboration, so you can bring specialized AI agents into a live interaction to resolve a request. Connect Customer AI agents can collaborate with each other, and with AI agents outside Connect Customer, over the open A2A protocol through text or bidirectional voice, while Connect Customer coordinates context passing with unified observability, guardrails, and escalation.
+
+Administrators see one contact record showing what each agent said, which tools it called, and how long each step took. For example, a bank's frontline AI agent can delegate a fraud risk assessment to a specialist scoring agent, approve the transaction on the result, then hand a complex dispute to another AI agent that resolves it with the customer.
+
+For more information, see the Connect Customer Administrator Guide.
+
+Available in the AWS Regions where Connect Customer is offered.
+
+### Amazon Connect Customer now provides routing step data in the analytics data lake
+<a name="sep26-routing-step-data-lake"></a>
+
+Amazon Connect Customer now provides routing step data in the analytics data lake, so you can analyze routing decisions without building complex data pipelines. Use Amazon Athena and Amazon QuickSight to report on trends such as contacts queued and contacts joined at each routing step. For example, an analyst can trace how contacts progressed through each step, identify where agent matching criteria were relaxed, and measure the effect on wait times and agent utilization.
+
+For more information, see the Connect Customer Administrator Guide.
+
+Available in all AWS Regions where the Connect Customer analytics data lake is offered.
+
+### Amazon Connect Customer now supports larger data tables and bulk editing with CSV import and export
+<a name="sep26-larger-data-tables"></a>
+
+Amazon Connect Customer now supports larger data tables and CSV import and export. Data tables hold the reference information that drives contact flows, such as operating hours, escalation rules, AI agent prompts, and queue assignments, but they could not hold everything flows needed and every record had to be edited by hand.
+
+Business users can now work with up to 20,000 values per table, four times the previous limit. Administrators can export a table, edit it in a tool such as Excel, and re-import it, which also moves a table between staging, QA, and production without rebuilding it and provides a point-in-time backup. For example, you can export a production table, revise hundreds of queue assignments in a spreadsheet, and re-import to apply them at once.
+
+For more information, see [Create and configure data tables](https://docs.aws.amazon.com/connect/latest/adminguide/data-tables.html) in the Connect Customer Administrator Guide.
+
+Available in all AWS commercial Regions and the AWS GovCloud (US-West) Region where Connect Customer is offered.
+
+### Amazon Connect Customer announces Live Sync and Touchpoint
+<a name="sep26-live-sync-touchpoint"></a>
+
+Amazon Connect Customer announces the general availability of Live Sync and Touchpoint. Live Sync drives a customer's web or mobile experience in real time during a voice or chat conversation, turning a spoken exchange into a guided task. Touchpoint is an embeddable conversational surface that combines voice and chat with rich visual elements including carousels, cards, forms, and video. For example, a customer calling to start a loan application can have Live Sync's AI walk them through the form and fill fields on their behalf, confirming each step by voice without leaving the call.
+
+For more information, see [Using the Live Sync agent node](https://docs.aws.amazon.com/connect/latest/adminguide/acxd-live-sync.html) in the Connect Customer Administrator Guide.
+
+Available in US East (N. Virginia), US West (Oregon), Canada (Central), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Europe (Frankfurt), and Europe (London).
 
 ## August 2026 Updates
 <a name="aug26-release-notes"></a>

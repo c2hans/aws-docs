@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/user-profiles-export-with-amaz
 title: 'Guidance for User Profiles Export with Amazon Cognito'
 canonical_url: https://docs.aws.amazon.com/solutions/user-profiles-export-with-amazon-cognito/
 source: aws-documentation
-generated_on: 2026-10-22
+generated_on: 2026-10-23
 ---
 
 # Guidance for User Profiles Export with Amazon Cognito

@@ -20,6 +20,28 @@ The Performance Indicators dashboard contains the following key sections:
   + Month-over-month (MoM) trending data
 + **Migration level summary** – This section shows underlying migration partner ecosystem (MPE) level data used to calculate each key metric
 
+### Migration Level Summary data definitions
+<a name="ppi-dashboard-mls-definitions"></a>
+
+The following table defines each column in the Migration level summary and explains how to use it.
+
+| Column | What it tells you | How to use it |
+| --- | --- | --- |
+| MPE ID | A unique ID for one migration project. Every row is one project. | Use it to find and track an individual migration. |
+| Customer account name | The end customer being migrated. | Identify which customer the row is about. |
+| Customer type / geo | The customer segment (Commercial or Public Sector) and region (NAMER, LATAM, EMEA, APJ, GCR). | Group your results by segment and region. |
+| Estimated migrations ARR | The expected yearly revenue the migrated workloads should generate once live. This is the target you are measured against. | See the revenue goal each project is held to. |
+| Assess funded / claimed | Whether the early Assess phase received approved AWS funding, and whether you have drawn it down. | Confirm the project qualifies and funding is collected. |
+| Assess status | The outcome of the Assess phase: Won, Lost, or In progress. | Track how many early opportunities convert to committed migrations. |
+| Mobilize funded / claimed | Whether the active migration phase received approved AWS funding, and whether you have drawn it down. | Confirm the delivery phase is funded and claimed. |
+| Tenure in days | How long the project has been running, counted from the Mobilize start date. | Judge whether a project has had enough time to show results (very new projects are not yet judged on speed or revenue). |
+| $1K status | Whether an Assess won, active migration has reached its first revenue milestone of $1,000. It credits qualifying won migrations, so a deal that is not yet won, or is no longer active, may show as not attained even if some usage exists. | The earliest sign a qualifying migration has started generating real usage. |
+| Monthly tagged spend (Months 1 to 6) | The attributed AWS spend generated in each of the first six months after the project start. Month 1 is the calendar month of Mobilize Start Date. Months 2–6 are the following calendar months. | See how quickly a migration ramps. Reaching $50K within the first three months is the fast-ramp bar. |
+| Terminal spend and MRR | The actual revenue delivered near the end of the migration, and the monthly target it is compared against. | Compare what the migration actually delivered against what was expected. |
+| Performance status | A simple health label (Performing or Underperforming) based on whether the migration is hitting its revenue bar. | A quick flag for which projects are behind on revenue. |
+
+**Reading blanks and zeros:** A blank cell usually means that measure does not apply yet (for example, final revenue only appears once a migration completes). A zero means it is being tracked but nothing has been billed yet.
+
 ## Using the dashboard
 <a name="ppi-dashboard-using"></a>
 

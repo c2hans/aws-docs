@@ -1243,67 +1243,6 @@ The following code example shows how to use `DescribeDBParameters`.
 ```
 +  For API details, see [DescribeDBParameters](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/DescribeDBParameters) in *AWS SDK for Java 2.x API Reference*.
 
-### `GenerateRDSAuthToken`
-<a name="rds_GenerateRDSAuthToken_java_2_topic"></a>
-
-The following code example shows how to use `GenerateRDSAuthToken`.
-
-**SDK for Java 2.x**
- There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
-Use the [RdsUtilities](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/rds/RdsUtilities.html) class to generate an authentication token.
-
-```
-public class GenerateRDSAuthToken {
-    public static void main(String[] args) {
-        final String usage = """
-
-                Usage:
-                    <dbInstanceIdentifier> <masterUsername>
-
-                Where:
-                    dbInstanceIdentifier - The database instance identifier.\s
-                    masterUsername - The master user name.\s
-                """;
-
-        if (args.length != 2) {
-            System.out.println(usage);
-            System.exit(1);
-        }
-
-        String dbInstanceIdentifier = args[0];
-        String masterUsername = args[1];
-        Region region = Region.US_WEST_2;
-        RdsClient rdsClient = RdsClient.builder()
-                .region(region)
-                .build();
-
-        String token = getAuthToken(rdsClient, dbInstanceIdentifier, masterUsername);
-        System.out.println("The token response is " + token);
-    }
-
-    public static String getAuthToken(RdsClient rdsClient, String dbInstanceIdentifier, String masterUsername) {
-
-        RdsUtilities utilities = rdsClient.utilities();
-        try {
-            GenerateAuthenticationTokenRequest tokenRequest = GenerateAuthenticationTokenRequest.builder()
-                    .credentialsProvider(ProfileCredentialsProvider.create())
-                    .username(masterUsername)
-                    .port(3306)
-                    .hostname(dbInstanceIdentifier)
-                    .build();
-
-            return utilities.generateAuthenticationToken(tokenRequest);
-
-        } catch (RdsException e) {
-            System.out.println(e.getLocalizedMessage());
-            System.exit(1);
-        }
-        return "";
-    }
-}
-```
-+  For API details, see [GenerateRDSAuthToken](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/GenerateRDSAuthToken) in *AWS SDK for Java 2.x API Reference*.
-
 ### `ModifyDBInstance`
 <a name="rds_ModifyDBInstance_java_2_topic"></a>
 
@@ -1477,6 +1416,67 @@ public class RebootDBInstance {
 }
 ```
 +  For API details, see [RebootDBInstance](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/RebootDBInstance) in *AWS SDK for Java 2.x API Reference*.
+
+### `Utilities`
+<a name="rds_Utilities_java_2_topic"></a>
+
+The following code example shows how to use `Utilities`.
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rds#code-examples).
+Returns a RdsUtilities object that generates the authentication token.
+
+```
+public class GenerateRDSAuthToken {
+    public static void main(String[] args) {
+        final String usage = """
+
+                Usage:
+                    <dbInstanceIdentifier> <masterUsername>
+
+                Where:
+                    dbInstanceIdentifier - The database instance identifier.\s
+                    masterUsername - The master user name.\s
+                """;
+
+        if (args.length != 2) {
+            System.out.println(usage);
+            System.exit(1);
+        }
+
+        String dbInstanceIdentifier = args[0];
+        String masterUsername = args[1];
+        Region region = Region.US_WEST_2;
+        RdsClient rdsClient = RdsClient.builder()
+                .region(region)
+                .build();
+
+        String token = getAuthToken(rdsClient, dbInstanceIdentifier, masterUsername);
+        System.out.println("The token response is " + token);
+    }
+
+    public static String getAuthToken(RdsClient rdsClient, String dbInstanceIdentifier, String masterUsername) {
+
+        RdsUtilities utilities = rdsClient.utilities();
+        try {
+            GenerateAuthenticationTokenRequest tokenRequest = GenerateAuthenticationTokenRequest.builder()
+                    .credentialsProvider(ProfileCredentialsProvider.create())
+                    .username(masterUsername)
+                    .port(3306)
+                    .hostname(dbInstanceIdentifier)
+                    .build();
+
+            return utilities.generateAuthenticationToken(tokenRequest);
+
+        } catch (RdsException e) {
+            System.out.println(e.getLocalizedMessage());
+            System.exit(1);
+        }
+        return "";
+    }
+}
+```
++  For API details, see [Utilities](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/Utilities) in *AWS SDK for Java 2.x API Reference*.
 
 ## Scenarios
 <a name="scenarios"></a>

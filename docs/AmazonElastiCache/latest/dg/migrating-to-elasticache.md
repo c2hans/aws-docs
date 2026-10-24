@@ -15,4 +15,4 @@ Both paths require a self-managed source that runs on Amazon EC2.
 
 **Topics**
 + [Online migration to ElastiCache Serverless](migration-to-serverless.md)
-+ [Online migration for Valkey or Redis OSS](OnlineMigration.md)
++ [Online migration to ElastiCache node-based clusters](OnlineMigration.md)

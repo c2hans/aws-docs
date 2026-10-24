@@ -66,4 +66,4 @@ The agent works with your permissions: it can read only the telemetry you have a
 ## Investigations with the AWS DevOps Agent
 <a name="omni-ask-the-omni-agent-investigations-with-the-devops-agent"></a>
 
-If your space is connected to the AWS DevOps Agent, the Omni agent automatically delegates root cause analysis to it, and you can track the investigation's progress from the conversation. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).
+If your space is connected to the AWS DevOps Agent, the Omni agent automatically delegates root cause analysis to it, and you can track the investigation's progress from the conversation. The investigation runs with the permissions of the DevOps Agent, not yours. It can read CloudWatch Logs log groups directly, and your data scope does not filter its results. See [Investigate with the AWS DevOps Agent](omni-investigate-with-the-aws-devops-agent.md).

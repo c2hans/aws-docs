@@ -10,7 +10,7 @@ Amazon ElastiCache Serverless for Valkey supports migration from self-managed Va
 **Zero downtime**
 Zero downtime means zero Errors returned to the client during migration, measured the same way the [ElastiCache SLA](https://aws.amazon.com/elasticache/sla/) measures availability. Your application continues reading and writing through cutover.
 
-These topics cover migration to an ElastiCache Serverless cache. To migrate to a node-based cluster instead, use the separate online migration flow for provisioned clusters. For more information, see [Online migration for Valkey or Redis OSS](OnlineMigration.md).
+These topics cover migration to an ElastiCache Serverless cache. To migrate to a node-based cluster instead, see [Online migration to ElastiCache node-based clusters](OnlineMigration.md).
 
 Online migration moves your self-managed Valkey or Redis OSS data into ElastiCache Serverless for Valkey while your application keeps serving traffic. You do not need a third-party replication tool or a maintenance window to switch over.
 

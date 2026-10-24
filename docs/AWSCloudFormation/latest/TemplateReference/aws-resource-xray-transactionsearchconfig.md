@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::XRay::TransactionSearchConfig",
   "Properties" : {
+      "[CloudWatchLogsConfiguration](#cfn-xray-transactionsearchconfig-cloudwatchlogsconfiguration)" : {{CloudWatchLogsConfiguration}},
       "[IndexingPercentage](#cfn-xray-transactionsearchconfig-indexingpercentage)" : {{Number}}
     }
 }
@@ -34,11 +35,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::XRay::TransactionSearchConfig
 Properties:
+  [CloudWatchLogsConfiguration](#cfn-xray-transactionsearchconfig-cloudwatchlogsconfiguration): {{
+    CloudWatchLogsConfiguration}}
   [IndexingPercentage](#cfn-xray-transactionsearchconfig-indexingpercentage): {{Number}}
 ```
 
 ## Properties
 <a name="aws-resource-xray-transactionsearchconfig-properties"></a>
+
+`CloudWatchLogsConfiguration`  <a name="cfn-xray-transactionsearchconfig-cloudwatchlogsconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [CloudWatchLogsConfiguration](aws-properties-xray-transactionsearchconfig-cloudwatchlogsconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IndexingPercentage`  <a name="cfn-xray-transactionsearchconfig-indexingpercentage"></a>
 The percentage of spans to be indexed as trace summaries. The value can be set between 0 and 100.

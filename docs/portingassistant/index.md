@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/portingassistant/index.html
 title: 'Porting Assistant for .NET Documentation'
 canonical_url: https://docs.aws.amazon.com/portingassistant/
 source: aws-documentation
-generated_on: 2026-10-22
+generated_on: 2026-10-23
 ---
 
 # Porting Assistant for .NET Documentation

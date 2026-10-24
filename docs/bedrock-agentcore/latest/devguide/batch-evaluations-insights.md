@@ -32,6 +32,66 @@ For example, a batch evaluation of about 14 sessions typically finishes in about
 Add `Builtin.FailureAnalysis` to the `evaluators` list when you call `StartBatchEvaluation`. The data source, time range, and output options work as described in [Start a batch evaluation](batch-evaluations-start.md).
 
 **Example**
+The following AgentCore CLI command starts a batch evaluation with the failure analysis and goal success rate evaluators.
+
+```
+agentcore eval batch-evaluation evaluate \
+  --name "MyFailureAnalysis" \
+  --evaluators Builtin.FailureAnalysis Builtin.GoalSuccessRate \
+  --data-source-config '{
+    "cloudWatchLogs": {
+      "serviceNames": ["MyAgent.DEFAULT"],
+      "logGroupNames": ["/aws/bedrock-agentcore/runtimes/MyAgent-abc123-DEFAULT"],
+      "filterConfig": {
+        "timeRange": {
+          "startTime": "2026-10-12T17:00:00Z",
+          "endTime": "2026-10-12T17:30:00Z"
+        }
+      }
+    }
+  }' \
+  --region us-west-2 --json
+```
+The response contains the `batchEvaluationId`. To read the sessions of a deployed agent without writing a data source configuration, pass `--agent` with the agent’s runtime ID instead of `--data-source-config`.
+The AgentCore SDK evaluates the sessions that it creates. `BatchEvaluationRunner` invokes your agent once for each scenario in a dataset, then starts a batch evaluation over those sessions, so you add `Builtin.FailureAnalysis` to `evaluator_ids` rather than selecting sessions by time range. To evaluate sessions that already exist, use the AgentCore CLI or `StartBatchEvaluation` instead. For the dataset format and the `agent_invoker` contract, see [Batch dataset evaluations](dataset-evaluations-batch.md).
+
+```
+from bedrock_agentcore.evaluation import (
+    BatchEvaluationRunner,
+    BatchEvaluationRunConfig,
+    BatchEvaluatorConfig,
+    CloudWatchDataSourceConfig,
+    FileDatasetProvider,
+)
+
+dataset = FileDatasetProvider("dataset.json").get_dataset()
+
+config = BatchEvaluationRunConfig(
+    batch_evaluation_name="MyFailureAnalysis",
+    evaluator_config=BatchEvaluatorConfig(
+        evaluator_ids=[
+            "Builtin.FailureAnalysis",
+            "Builtin.GoalSuccessRate",
+        ],
+    ),
+    data_source=CloudWatchDataSourceConfig(
+        service_names=["MyAgent.DEFAULT"],
+        log_group_names=["/aws/bedrock-agentcore/runtimes/MyAgent-abc123-DEFAULT"],
+        ingestion_delay_seconds=180,
+    ),
+    polling_timeout_seconds=1800,
+    polling_interval_seconds=30,
+)
+
+runner = BatchEvaluationRunner(region="us-west-2")
+result = runner.run_dataset_evaluation(
+    agent_invoker=agent_invoker,
+    dataset=dataset,
+    config=config,
+)
+
+print(f"Batch evaluation ID: {result.batch_evaluation_id}")
+```
 The following AWS CLI command starts a batch evaluation with the failure analysis and goal success rate evaluators.
 
 ```
@@ -94,6 +154,30 @@ You can also encrypt the results with a customer managed key by specifying `kmsK
 Poll `GetBatchEvaluation` until the status is `COMPLETED`, `COMPLETED_WITH_ERRORS`, `FAILED`, or `STOPPED`. Then read `insightResults` from the response. For the full list of status values and response fields, see [Get batch evaluation results](batch-evaluations-manage.md#batch-evaluations-get).
 
 **Example**
+The following AgentCore CLI command gets a batch evaluation, including its `insightResults`. Replace `<batch-evaluation-id>` with your batch evaluation ID.
+
+```
+agentcore eval batch-evaluation get \
+  --id <batch-evaluation-id> \
+  --region us-west-2 --json
+```
+The command also reads the per-session results from CloudWatch Logs and returns them alongside the job. Pass `--disable-cw-results` to return only the job itself.
+ `run_dataset_evaluation` polls until the job reaches a terminal state, so the insights are on the result that it returns. An empty `insight_results` list means that the analysis ran and found no failures, while `None` means that no insight-providing evaluator ran or that the service could not read its results, in which case `error_details` names the evaluator.
+
+```
+print("Status:", result.status)
+print("Errors:", result.error_details)
+
+if result.insight_results is None:
+    print("No insights were returned.")
+else:
+    for insight in result.insight_results:
+        print(f"{insight.name} ({insight.affected_session_count} sessions)")
+        for cause in insight.root_causes or []:
+            print(f"  Root cause: {cause.name}")
+            print(f"  Suggested fix: {cause.suggested_fix}")
+```
+Call `fetch_evaluation_events` on the runner to read the per-session results from CloudWatch Logs.
 The following AWS CLI command gets a batch evaluation. Replace `<batch-evaluation-id>` with your batch evaluation ID.
 
 ```

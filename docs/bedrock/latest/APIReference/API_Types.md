@@ -161,6 +161,8 @@ The following data types are supported by Amazon Bedrock:
 +  [GuardrailContextualGroundingFilterConfig](API_GuardrailContextualGroundingFilterConfig.md)
 +  [GuardrailContextualGroundingPolicy](API_GuardrailContextualGroundingPolicy.md)
 +  [GuardrailContextualGroundingPolicyConfig](API_GuardrailContextualGroundingPolicyConfig.md)
++  [GuardrailContextualGroundingTier](API_GuardrailContextualGroundingTier.md)
++  [GuardrailContextualGroundingTierConfig](API_GuardrailContextualGroundingTierConfig.md)
 +  [GuardrailCrossRegionConfig](API_GuardrailCrossRegionConfig.md)
 +  [GuardrailCrossRegionDetails](API_GuardrailCrossRegionDetails.md)
 +  [GuardrailManagedWords](API_GuardrailManagedWords.md)

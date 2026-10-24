@@ -344,6 +344,8 @@ Each `Evaluate` API call returns a response containing a list of evaluator resul
 }
 ```
 
+A [multi-dimension evaluator](multi-dimension-evaluators.md) returns one result per dimension for each entity it evaluates. Each result has `evaluationDimensionName` set to the dimension it rates.
+
 **Topics**
 + [Result limit](#result-limit)
 + [Partial failures](#partial-failures)
@@ -366,6 +368,8 @@ An API call may process n evaluations while m of them fail. Failures can occur d
 + Other processing issues
 
 In cases of partial failure, the response includes both successful and failed evaluations. Failed results include an error code and error message to help you diagnose the issue.
+
+For a multi-dimension evaluator, one dimension can fail while the others succeed. For details, see [Errors and token usage](multi-dimension-evaluators.md#multi-dimension-evaluators-errors).
 
 ### Span context
 <a name="span-context"></a>
