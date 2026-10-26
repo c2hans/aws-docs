@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anth
 <a name="model-card-anthropic-claude-3-haiku-details"></a>
 
 **Important**
-Claude 3 Haiku reached end of life on September 10, 2026 in most Regions, where requests now fail with `ResourceNotFoundException: This model version has reached the end of its life.` It remains available in `ca-central-1` (Canada), `eu-central-2` (Zurich) and `sa-east-1` (São Paulo), and is in the Legacy stage in `ap-northeast-2` (Seoul). For models that are currently available, see [Models at a glance](model-cards.md). For how model lifecycle stages work, see [Model lifecycle](model-lifecycle-legacy.md).
+Claude 3 Haiku reached end of life on September 10, 2026 in most Regions, where requests now fail with `ResourceNotFoundException: This model version has reached the end of its life.` It remains available in the Legacy stage in `ap-northeast-2` (Seoul), `ap-south-1` (Mumbai), `ap-southeast-1` (Singapore), `ca-central-1` (Canada), `eu-central-2` (Zurich), and `sa-east-1` (São Paulo). These Regions have an upcoming end of life of November 13, 2026, after which requests in these Regions will also fail. For models that are currently available, see [Models at a glance](model-cards.md). For how model lifecycle stages work, see [Model lifecycle](model-lifecycle-legacy.md).
 
 Claude 3 Haiku is Anthropic's fastest and most compact Claude 3 model, optimized for speed and efficiency in near-instant responses. For more information about model development and performance, see the [model/service card](https://www-cdn.anthropic.com/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627/Model_Card_Claude_3.pdf).
 + **Model launch date:** Mar 13, 2024

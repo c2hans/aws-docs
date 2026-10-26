@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/mgn/latest/ug/monitoring-cloudwatch.html
 ---
 
-NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
-
 # Monitoring Application Migration Service with Amazon CloudWatch
 <a name="monitoring-cloudwatch"></a>
 

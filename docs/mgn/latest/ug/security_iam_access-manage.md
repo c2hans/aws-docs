@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/mgn/latest/ug/security_iam_access-manage.html
 ---
 
-NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
-
 # Managing access using policies
 <a name="security_iam_access-manage"></a>
 

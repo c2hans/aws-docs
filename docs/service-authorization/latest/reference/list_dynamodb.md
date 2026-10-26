@@ -336,10 +336,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   Scan  **
   - **SDK client:** dynamodb
-  - **IAM action:**  [dynamodb:Scan](#list_dynamodb-action-Scan)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Read
+  - **IAM action:**  [dynamodb:ReadDataForReplication](#list_dynamodb-action-ReadDataForReplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [dynamodb:Scan](#list_dynamodb-action-Scan)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
 - **   TagResource  **
   - **SDK client:** dynamodb

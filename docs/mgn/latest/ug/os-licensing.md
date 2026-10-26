@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/mgn/latest/ug/os-licensing.html
 ---
 
-NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
-
 # Operating system licensing
 <a name="os-licensing"></a>
 

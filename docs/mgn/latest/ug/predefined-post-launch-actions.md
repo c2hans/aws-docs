@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/mgn/latest/ug/predefined-post-launch-actions.html
 ---
 
-NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
-
 # Predefined post-launch actions reference
 <a name="predefined-post-launch-actions"></a>
 

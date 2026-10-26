@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/physical-ai-simulation-platfor
 title: 'Guidance for Physical AI Simulation Platform on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/physical-ai-simulation-platform-on-aws/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-26
 ---
 
 # Guidance for Physical AI Simulation Platform on AWS

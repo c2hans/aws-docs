@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/mgn/latest/ug/using-service-linked-roles.html
 ---
 
-NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
-
 # Using service-linked roles for AWS Transform MGN
 <a name="using-service-linked-roles"></a>
 

@@ -47,6 +47,7 @@ This setup is not required for direct IAM user credentials or IdC authentication
 
 ```
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Sid": "RoleTrustPolicyRequireUsernameForSessionName",

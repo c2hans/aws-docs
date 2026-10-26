@@ -107,6 +107,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [odb:DeleteCloudVmCluster](#list_odb-action-DeleteCloudVmCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [odb:DeleteDbNode](#list_odb-action-DeleteDbNode)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
+- **   DeleteExadbVmCluster  **
+  - **IAM action:**  [odb:DeleteDbNode](#list_odb-action-DeleteDbNode)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [odb:DeleteExadbVmCluster](#list_odb-action-DeleteExadbVmCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
 - **   DeleteExascaleDbStorageVault  **
   - **IAM action:**  [odb:DeleteExascaleDbStorageVault](#list_odb-action-DeleteExascaleDbStorageVault)
   - **Condition key:**
