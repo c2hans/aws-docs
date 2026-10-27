@@ -20,6 +20,12 @@ The creation time.
 Type: Timestamp
 Required: No
 
+ ** natGatewaySupport **
+The state of NAT gateway support for the attachment. Only the owner of the transit gateway receives this parameter.
+Type: String
+Valid Values: `enabled | disabled | enabling | disabling`
+Required: No
+
  ** resourceId **
 The ID of the resource.
 Type: String

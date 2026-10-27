@@ -27,6 +27,11 @@ You can't change `destinationTransitEncryption` while the router output is conne
 Type: [MediaLiveInputRouterOutputConfiguration](API_MediaLiveInputRouterOutputConfiguration.md) object
 Required: No
 
+ ** sourceEndpoint **   <a name="mediaconnect-Type-RouterOutputConfiguration-sourceEndpoint"></a>
+Configuration settings for a router output that is represented by a source endpoint.
+Type: [SourceEndpointRouterOutputConfiguration](API_SourceEndpointRouterOutputConfiguration.md) object
+Required: No
+
  ** standard **   <a name="mediaconnect-Type-RouterOutputConfiguration-standard"></a>
 The configuration settings for a standard router output, including the protocol, protocol-specific configuration, network interface, and availability zone.
 Type: [StandardRouterOutputConfiguration](API_StandardRouterOutputConfiguration.md) object

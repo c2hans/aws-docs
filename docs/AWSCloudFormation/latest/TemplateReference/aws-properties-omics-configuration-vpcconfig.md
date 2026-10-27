@@ -20,7 +20,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[SecurityGroupIds](#cfn-omics-configuration-vpcconfig-securitygroupids)" : {{[ String, ... ]}},
-  "[SubnetIds](#cfn-omics-configuration-vpcconfig-subnetids)" : {{[ String, ... ]}}
+  "[SubnetIds](#cfn-omics-configuration-vpcconfig-subnetids)" : {{[ String, ... ]}},
+  "[VpcOwnerAccountId](#cfn-omics-configuration-vpcconfig-vpcowneraccountid)" : {{String}}
 }
 ```
 
@@ -32,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
     - String}}
   [SubnetIds](#cfn-omics-configuration-vpcconfig-subnetids): {{
     - String}}
+  [VpcOwnerAccountId](#cfn-omics-configuration-vpcconfig-vpcowneraccountid): {{String}}
 ```
 
 ## Properties
@@ -49,4 +51,13 @@ List of subnet IDs. Maximum of 16 subnets allowed.
 *Required*: No
 *Type*: Array of String
 *Maximum*: `16`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`VpcOwnerAccountId`  <a name="cfn-omics-configuration-vpcconfig-vpcowneraccountid"></a>
+The AWS account ID of the cross-account VPC owner for RAM-shared VPC configurations.
+*Required*: No
+*Type*: String
+*Pattern*: `^[0-9]+$`
+*Minimum*: `12`
+*Maximum*: `12`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

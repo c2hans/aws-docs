@@ -163,11 +163,7 @@ The **Data replication status** section provides an overview of the overall sour
 + **Last seen** – The last time the server successfully connected to AWS Transform MGN.
 + **Replication start time** – The date and time replication first began on the server.
 
-Data replication can be in one of several states, as indicated in the panel title:
-+ **Initial sync**: initial copying of data from external servers is not done. Progress bar and** Total replicated storage** fields indicate how far along the process is.
-+ **Healthy:** all data has been copied and any changes at the source are continuously being replicated (data is flowing).
-+ **Rescan**: an event happened that forced the agent on the external server to rescan all of the blocks on all of the replicated disks. This is similar to the initial sync but faster because only changed blocks are copied. A rescan progress bar is displayed.
-+ **Stalled**: data is not flowing. You may need to intervene. When stalled, either the initial sync never completes, or the difference between the state of the replicated data and that of the source server continues to grow. When the state is stalled, then the replication initiation checklist is shown and indicates where the error occurred that caused the stall.
+The panel title shows the current data replication state. For a description of each state, see [Understand data replication status](source-server-migration-metrics.md#source-server-migration-metrics-status).
 
 This panel also shows:
 + **Total replicated storage:** size of all disks being replicated for this source server, and how much has been copied to AWS (once initial sync is complete)
@@ -292,7 +288,7 @@ The **Test and cutover menu** allows you to manage your test and cutover instanc
   The AWS Transform MGN console indicates **X servers cutover. Data replication has been stopped for servers** once the cutover has been completed successfully. The AWS Transform MGN console automatically stops data replication for the cutover source servers to save resource costs. The selected source servers' **Migration lifecycle** column shows the **Cutover** status, the **Data replication** column shows **Disconnected** and the **Next step** column states **Mark as archived**. The source servers have now been successfully migrated into AWS and can be archived.
 
 **Note**
-This action does not uninstall the AWS Replication Agent from the source server. Use the **Disconnect from service** option under the **Actions** menu when you have completed the migration and want to uninstall the agent from your source server.
+The AWS Replication Agent receives a command to uninstall itself from the source server (within 10 minutes). You can also uninstall the agent by using the **Disconnect from service** option under the **Actions** menu.
 + **Revert to "ready for cutover"** – Choose this option to revert a finalized cutover for this server if you encounter any issues or want to reverse the cutover for any reason.
 
   This reverts your source servers' **Migration lifecycle** to the **Ready for cutover** status, indicating that these servers have not undergone cutover.

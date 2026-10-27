@@ -53,15 +53,7 @@ Valid Values: `LORA`
 Required: No
 
  ** SequenceLength **   <a name="sagemaker-Type-ServerlessJobConfig-SequenceLength"></a>
- The maximum sequence length, in tokens, that the customization job supports. SageMaker uses this value to select a training configuration for the base model that you specify. The parameter supports the following values:
-+  `1K`
-+  `2K`
-+  `4K`
-+  `8K`
-+  `16K`
-+  `32K`
-+  `64K`
-+  `128K`
+ The maximum sequence length, in tokens, that the customization job supports. SageMaker uses this value to select a training configuration for the base model that you specify. The value must be an integer value from `1K` to `1024K` (for example, `32K`).
  If you don't specify a value, SageMaker selects a training configuration based on the other values that you specify. The selection is not restricted to a particular sequence length.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 50.

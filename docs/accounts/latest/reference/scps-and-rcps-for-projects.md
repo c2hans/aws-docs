@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/scps-and-rcps-
 # Managed policies for your organization
 <a name="scps-and-rcps-for-projects"></a>
 
-**Warning**
-We're currently releasing our new experience to a limited number of customers. You might not be able to access this experience yet.
+**Note**
+Our new AWS experience lets you build using AWS accounts created with preconfigured defaults. If you have regulated workloads, want complete control over where your content is stored, or require advanced features right away, such as networking and security services, [sign up for AWS (advanced)](https://docs.aws.amazon.com/accounts/latest/reference/getting-started.html). [Compare sign-up options](https://docs.aws.amazon.com/accounts/latest/reference/sign-up-for-aws.html#compare-sign-up-options).
 
 When you use our new AWS experience, AWS manages the organization management policies including the resource control policies (RCPs) and the service control policies (SCPs). These protective controls prevent a project owner or team member from performing actions that would inhibit the preconfigured defaults AWS has defined to help you build and develop quickly.
 
@@ -83,7 +83,9 @@ In addition, we apply the following service control policy for all users in a pr
         "account:PutAccountName",
         "account:PutAlternateContact",
         "account:PutContactInformation",
-        "account:StartPrimaryEmailUpdate"
+        "account:SendPhoneNumberVerification",
+        "account:StartPrimaryEmailUpdate",
+        "account:VerifyPhoneNumber"
       ],
       "Resource" : "*"
     },
@@ -173,7 +175,6 @@ In addition, we also apply the following service control policy for all users in
         "access-analyzer:ValidatePolicy",
         "account:*",
         "acm:*",
-        "activate:*",
         "artifact:*",
         "aws-marketplace:*",
         "bedrock-mantle:CallWithBearerToken",
@@ -203,6 +204,7 @@ In addition, we also apply the following service control policy for all users in
         "cloudwatch:Get*",
         "cloudwatch:List*",
         "consoleapp:*",
+        "consolidatedbilling:*",
         "cost-optimization-hub:*",
         "ec2:DescribeRegions",
         "ecr-public:*",
@@ -267,8 +269,10 @@ In addition, we also apply the following service control policy for all users in
         "sso:*",
         "sts:*",
         "support:*",
+        "supportapp:*",
         "tax:*",
         "trustedadvisor:*",
+        "ts:*",
         "uxc:*",
         "waf:*",
         "wafv2:*"
@@ -281,25 +285,10 @@ In addition, we also apply the following service control policy for all users in
       }
     },
     {
-      "Sid" : "DenyUsEast1WafResourceAssociation",
-      "Effect" : "Deny",
-      "Action" : [
-        "wafv2:AssociateWebACL",
-        "wafv2:DisassociateWebACL",
-        "wafv2:GetWebACLForResource",
-        "wafv2:ListResourcesForWebACL"
-      ],
-      "Resource" : "*",
-      "Condition" : {
-        "StringEquals" : {
-          "aws:RequestedRegion" : "us-east-1"
-        }
-      }
-    },
-    {
       "Sid" : "UsWest2Partitional",
       "Effect" : "Deny",
       "NotAction" : [
+        "activate:*",
         "bedrock-mantle:CallWithBearerToken",
         "bedrock-mantle:CreateInference",
         "bedrock-mantle:GetInference",
@@ -392,7 +381,6 @@ After you activate advanced features, the following service control policy is ap
         "account-access:*",
         "account:*",
         "acm:*",
-        "activate:*",
         "artifact:*",
         "aws-marketplace-management:*",
         "aws-marketplace:*",
@@ -483,7 +471,6 @@ After you activate advanced features, the following service control policy is ap
         "managedblockchain:*",
         "mapcredits:*",
         "mobileanalytics:*",
-        "networkmanager:*",
         "notifications-contacts:*",
         "notifications:*",
         "organizations:*",
@@ -493,8 +480,6 @@ After you activate advanced features, the following service control policy is ap
         "quicksight:DescribeAccountSubscription",
         "resource-explorer-2:*",
         "route53-recovery-cluster:*",
-        "route53-recovery-control-config:*",
-        "route53-recovery-readiness:*",
         "route53:*",
         "route53domains:*",
         "route53globalresolver:*",
@@ -530,6 +515,7 @@ After you activate advanced features, the following service control policy is ap
         "tag:GetResources",
         "tax:*",
         "trustedadvisor:*",
+        "ts:*",
         "uxc:*",
         "vendor-insights:ListEntitledSecurityProfiles",
         "waf-regional:*",
@@ -547,6 +533,7 @@ After you activate advanced features, the following service control policy is ap
       "Sid" : "UsWest2Partitional",
       "Effect" : "Deny",
       "NotAction" : [
+        "activate:*",
         "bedrock-mantle:CallWithBearerToken",
         "bedrock-mantle:CreateInference",
         "bedrock-mantle:GetInference",
@@ -1001,7 +988,6 @@ The following service control policy controls access to the AWS services availab
         "appmesh:*",
         "appsync:*",
         "aps:*",
-        "arc-zonal-shift:*",
         "artifact:*",
         "athena:*",
         "autoscaling-plans:*",
@@ -1111,6 +1097,7 @@ The following service control policy controls access to the AWS services availab
         "license-manager-linux-subscriptions:*",
         "license-manager-user-subscriptions:*",
         "license-manager:*",
+        "lightsail:*",
         "logs:*",
         "mgn:*",
         "migrationhub-orchestrator:*",
@@ -1160,9 +1147,6 @@ The following service control policy controls access to the AWS services availab
         "resource-explorer:*",
         "resource-groups:*",
         "rhelkb:*",
-        "route53-recovery-cluster:*",
-        "route53-recovery-control-config:*",
-        "route53-recovery-readiness:*",
         "route53:*",
         "route53domains:*",
         "route53globalresolver:*",
@@ -1214,6 +1198,7 @@ The following service control policy controls access to the AWS services availab
         "states:*",
         "sts:*",
         "support:*",
+        "supportapp:*",
         "swf:*",
         "synthetics:*",
         "tag:*",
@@ -1441,6 +1426,12 @@ The following service control policy controls access to the AWS services availab
           "acm:AllowExport": "true"
         }
       }
+    },
+    {
+      "Sid": "DenySESGlobalDeliverability",
+      "Effect": "Deny",
+      "Action": ["ses:PutDeliverabilityDashboardOption"],
+      "Resource": "*"
     }
   ]
 }
@@ -1479,7 +1470,6 @@ The following service control policy controls access to the AWS services availab
         "apigateway:*",
         "app-integrations:*",
         "appconfig:*",
-        "appfabric:*",
         "appflow:*",
         "application-autoscaling:*",
         "application-signals-mcp:*",
@@ -1619,6 +1609,7 @@ The following service control policy controls access to the AWS services availab
         "license-manager-linux-subscriptions:*",
         "license-manager-user-subscriptions:*",
         "license-manager:*",
+        "lightsail:*",
         "logs:*",
         "managedblockchain-query:*",
         "managedblockchain:*",
@@ -1737,6 +1728,7 @@ The following service control policy controls access to the AWS services availab
         "storagegateway:*",
         "sts:*",
         "support:*",
+        "supportapp:*",
         "swf:*",
         "synthetics:*",
         "tag:*",
@@ -1833,17 +1825,6 @@ The following service control policy controls access to the AWS services availab
       "Effect": "Deny",
       "Action": ["ec2:CreateFleet"],
       "Resource": "*"
-    },
-    {
-      "Sid": "DenyEC2BYOLAndLicenseConfigurations",
-      "Effect": "Deny",
-      "Action": ["ec2:RunInstances", "ec2:StartInstances"],
-      "Resource": "arn:aws:ec2:*:*:instance/*",
-      "Condition": {
-        "StringEquals": {
-          "ec2:Tenancy": "host"
-        }
-      }
     },
     {
       "Sid": "DenyEC2InstanceStoreRootDevice",
@@ -1946,6 +1927,12 @@ The following service control policy controls access to the AWS services availab
           "acm:AllowExport": "true"
         }
       }
+    },
+    {
+      "Sid": "DenySESGlobalDeliverability",
+      "Effect": "Deny",
+      "Action": ["ses:PutDeliverabilityDashboardOption"],
+      "Resource": "*"
     }
   ]
 }

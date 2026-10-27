@@ -28,9 +28,9 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/windows-i
 **Example**
 
    ```
-   openjdk version "21.0.13" 2026-10-22 LTS
-   OpenJDK Runtime Environment Corretto-21.0.13.0.10 (build 21.0.13+0-LTS)
-   OpenJDK 64-Bit Server VM Corretto-21.0.13.0.10 (build 21.0.13+0-LTS, mixed mode, sharing)
+   openjdk version "21.0.13" 2026-10-26 LTS
+   OpenJDK Runtime Environment Corretto-21.0.13.0.11 (build 21.0.13+0-LTS)
+   OpenJDK 64-Bit Server VM Corretto-21.0.13.0.11 (build 21.0.13+0-LTS, mixed mode, sharing)
    ```
 
 ## Uninstall Amazon Corretto 21

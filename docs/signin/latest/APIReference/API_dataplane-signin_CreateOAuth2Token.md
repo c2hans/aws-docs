@@ -10,7 +10,7 @@ Exchanges an authorization code or refresh token for an OAuth 2.0 access token a
 This operation accepts `application/x-www-form-urlencoded` requests ([RFC 6749 §4.1.3](https://datatracker.ietf.org/doc/html/rfc6749#section-4.1.3)).
 
 **Important**
- AWS AWS CLI and AWS SDK clients use `application/json` as the content type and receive a camelCase response. The `accessToken` field is an object containing `accessKeyId`, `secretAccessKey`, and `sessionToken` rather than an opaque Bearer JWT string.
+ AWS CLI and AWS SDK clients use `application/json` as the content type and receive a camelCase response. The `accessToken` field is an object containing `accessKeyId`, `secretAccessKey`, and `sessionToken` rather than an opaque Bearer token.
 
 ## Request Syntax
 <a name="API_dataplane-signin_CreateOAuth2Token_RequestSyntax"></a>
@@ -111,7 +111,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [access\_token](#API_dataplane-signin_CreateOAuth2Token_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2Token-response-access_token"></a>
-The access token issued by the authorization server. This is an opaque Bearer JWT string (prefix `ASOA`). Use as a `Bearer` token in the `Authorization` header when calling the target resource.
+The access token issued by the authorization server. This is an opaque Bearer token. Use it as a `Bearer` token in the `Authorization` header when calling the target resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
@@ -126,13 +126,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [refresh\_token](#API_dataplane-signin_CreateOAuth2Token_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2Token-response-refresh_token"></a>
-An encrypted refresh token that can be used to obtain new access tokens without re-authenticating. Valid for up to 12 hours.
-Each time a refresh token is used, a new refresh token is returned (token rotation). Always use the most recently issued refresh token for subsequent requests.
+A refresh token that can be used to obtain new access tokens without re-authenticating.
+A new refresh token is issued each time. Always refresh using the most recently issued token.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 
  ** [token\_type](#API_dataplane-signin_CreateOAuth2Token_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2Token-response-token_type"></a>
-The type of token issued. Value is `Bearer` per RFC 6749 §5.1.
+The type of token issued. Value is `Bearer` as defined in RFC 6749 §5.1.
 Type: String
 
 ## Errors
@@ -145,15 +145,15 @@ You do not have sufficient access to perform this action.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+The request failed because of an internal server error.
 HTTP Status Code: 500
 
  ** TooManyRequestsError **
-Indicates that the principal has exceeded the limit of requests to this API operation.
+The request failed because you exceeded the request rate limit for this operation.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request failed because it contains a syntax error.
+The request failed because it contains a malformed, missing, or invalid parameter.
 HTTP Status Code: 400
 
 ## See Also

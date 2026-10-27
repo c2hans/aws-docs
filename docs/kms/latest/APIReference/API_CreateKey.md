@@ -154,10 +154,16 @@ The `KeySpec` determines whether the KMS key contains a symmetric key or an asym
   +  `ML_DSA_44`
   +  `ML_DSA_65`
   +  `ML_DSA_87`
++ Asymmetric ML-KEM key pairs (establishing shared secrets)
+  +  `ML_KEM_512`
+  +  `ML_KEM_768`
+  +  `ML_KEM_1024`
+
+  The ML-KEM key specs are not available in China Regions.
 + SM2 key pairs (encryption and decryption -or- signing and verification -or- deriving shared secrets)
   +  `SM2` (China Regions only)
 Type: String
-Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519`
+Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519 | ML_KEM_512 | ML_KEM_768 | ML_KEM_1024`
 Required: No
 
  ** [KeyUsage](#API_CreateKey_RequestSyntax) **   <a name="KMS-CreateKey-request-KeyUsage"></a>
@@ -169,9 +175,10 @@ Select only one valid value.
 + For asymmetric KMS keys with NIST-standard elliptic curve key pairs, specify `SIGN_VERIFY` or `KEY_AGREEMENT`.
 + For asymmetric KMS keys with `ECC_SECG_P256K1` key pairs, specify `SIGN_VERIFY`.
 + For asymmetric KMS keys with ML-DSA key pairs, specify `SIGN_VERIFY`.
++ For asymmetric KMS keys with ML-KEM key pairs, specify `ENCAPSULATE_DECAPSULATE`.
 + For asymmetric KMS keys with SM2 key pairs (China Regions only), specify `ENCRYPT_DECRYPT`, `SIGN_VERIFY`, or `KEY_AGREEMENT`.
 Type: String
-Valid Values: `SIGN_VERIFY | ENCRYPT_DECRYPT | GENERATE_VERIFY_MAC | KEY_AGREEMENT`
+Valid Values: `SIGN_VERIFY | ENCRYPT_DECRYPT | GENERATE_VERIFY_MAC | KEY_AGREEMENT | ENCAPSULATE_DECAPSULATE`
 Required: No
 
  ** [MultiRegion](#API_CreateKey_RequestSyntax) **   <a name="KMS-CreateKey-request-MultiRegion"></a>
@@ -243,6 +250,7 @@ Required: No
       "DeletionDate": number,
       "Description": "string",
       "Enabled": boolean,
+      "EncapsulationAlgorithms": [ "string" ],
       "EncryptionAlgorithms": [ "string" ],
       "ExpirationModel": "string",
       "KeyAgreementAlgorithms": [ "string" ],

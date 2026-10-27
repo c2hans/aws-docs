@@ -23,6 +23,11 @@ Configuration details for a MediaLive input when used as a router output destina
 Type: [MediaLiveInputRouterOutputStreamDetails](API_MediaLiveInputRouterOutputStreamDetails.md) object
 Required: No
 
+ ** sourceEndpoint **   <a name="mediaconnect-Type-RouterOutputStreamDetails-sourceEndpoint"></a>
+Configuration details for a router output stream that is represented by a source endpoint.
+Type: [SourceEndpointRouterOutputStreamDetails](API_SourceEndpointRouterOutputStreamDetails.md) object
+Required: No
+
  ** standard **   <a name="mediaconnect-Type-RouterOutputStreamDetails-standard"></a>
 Configuration details for a standard router output stream type. Contains information about the destination IP address and connection state for basic output routing.
 Type: [StandardRouterOutputStreamDetails](API_StandardRouterOutputStreamDetails.md) object

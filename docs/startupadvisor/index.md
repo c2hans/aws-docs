@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/startupadvisor/index.html
 title: 'AWS Startup Advisor'
 canonical_url: https://docs.aws.amazon.com/startupadvisor/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-27
 ---
 
 # AWS Startup Advisor

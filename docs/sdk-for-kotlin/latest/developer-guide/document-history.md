@@ -9,6 +9,7 @@ This topic describes important changes to the AWS SDK for Kotlin Developer Guide
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Add information about mapping heterogeneous types and nested classes with annotations |  [Map heterogeneous types with annotations](ddb-mapper-anno-heterogeneous.md)  | October 15, 2026 |
 |  [Retries in the AWS SDK for Kotlin](retries.md)  | Retry content reorganized and details about retryable exceptions added. | September 10, 2025 |
 | Add information about how to cache credentials for a standalone credentials provider |  [Cache credentials with a standalone provider](credential-providers.md#credentials-caching)  | June 17, 2025 |
 |  [Mocking in the AWS SDK for Kotlin](mocking.md)  | Add information about mocking and using MockK with the SDK for Kotlin | April 30, 2025 |

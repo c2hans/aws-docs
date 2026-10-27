@@ -26,9 +26,18 @@ Each example includes a link to the complete source code, where you can find ins
 <a name="kinesis_Scenario_GettingStarted_sap-abap_1_topic"></a>
 
 The following code example shows how to:
-+ Create a stream and put a record in it.
-+ Create a shard iterator.
-+ Read the record, then clean up resources.
++ Create a stream and wait for it to become ACTIVE.
++ List streams and verify creation.
++ Describe stream summary to get metadata.
++ List shards in the stream.
++ Batch put records using PutRecords.
++ Get a shard iterator and read records.
++ Add tags to the stream.
++ List tags for the stream.
++ Remove tags from the stream.
++ Register an enhanced fan-out consumer.
++ Deregister the consumer.
++ Clean up all resources.
 
 **SDK for SAP ABAP**
  There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kns#code-examples).
@@ -146,11 +155,20 @@ The following code example shows how to:
     ENDTRY.
 ```
 + For API details, see the following topics in *AWS SDK for SAP ABAP API reference*.
+  + [AddTagsToStream](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
   + [CreateStream](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
   + [DeleteStream](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [DeregisterStreamConsumer](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [DescribeStreamSummary](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
   + [GetRecords](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
   + [GetShardIterator](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [ListShards](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [ListStreams](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [ListTagsForStream](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
   + [PutRecord](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [PutRecords](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [RegisterStreamConsumer](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
+  + [RemoveTagsFromStream](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html)
 
 ## Actions
 <a name="actions"></a>

@@ -20,6 +20,11 @@ Time when the channel went offline. This is an ISO 8601 timestamp; *note that th
 Type: Timestamp
 Required: No
 
+ ** failoverSlateConfiguration **   <a name="ivs-Type-StreamSession-failoverSlateConfiguration"></a>
+The properties of the failover slate configuration at the time of going live.
+Type: [FailoverSlateConfiguration](API_FailoverSlateConfiguration.md) object
+Required: No
+
  ** ingestConfiguration **   <a name="ivs-Type-StreamSession-ingestConfiguration"></a>
 The properties of the incoming RTMP stream.
  **Note:** `ingestConfiguration` is deprecated in favor of `ingestConfigurations` but retained to ensure backward compatibility. If multitrack is not enabled, `ingestConfiguration` and `ingestConfigurations` contain the same data, namely information about Track0 (the sole track). If multitrack is enabled, `ingestConfiguration` contains data for only the first track (Track0) and `ingestConfigurations` contains data for all tracks.

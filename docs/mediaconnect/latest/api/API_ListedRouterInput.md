@@ -34,7 +34,7 @@ Required: Yes
  ** inputType **   <a name="mediaconnect-Type-ListedRouterInput-inputType"></a>
 The type of the router input.
 Type: String
-Valid Values: `STANDARD | FAILOVER | MERGE | MEDIACONNECT_FLOW | MEDIALIVE_CHANNEL`
+Valid Values: `STANDARD | FAILOVER | MERGE | MEDIACONNECT_FLOW | MEDIALIVE_CHANNEL | DESTINATION_ENDPOINT`
 Required: Yes
 
  ** maximumBitrate **   <a name="mediaconnect-Type-ListedRouterInput-maximumBitrate"></a>

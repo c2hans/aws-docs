@@ -11,7 +11,7 @@ A resource is one of the following: the ARN for an AWS resource that is supporte
 <a name="API_Resource_Contents"></a>
 
  ** Cidr **   <a name="globalaccelerator-Type-Resource-Cidr"></a>
-An IP address range, in CIDR format, that is specified as resource. The address must be provisioned and advertised in AWS Global Accelerator by following the bring your own IP address (BYOIP) process for Global Accelerator
+An IP address range, in CIDR format, that is specified as a resource. The address must be provisioned and advertised in AWS Global Accelerator by following the bring your own IP address (BYOIP) process for Global Accelerator
  For more information, see [Bring your own IP addresses (BYOIP)](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.html) in the AWS Global Accelerator Developer Guide.
 Type: String
 Length Constraints: Maximum length of 255.

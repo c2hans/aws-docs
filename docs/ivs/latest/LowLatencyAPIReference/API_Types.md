@@ -20,6 +20,8 @@ The following data types are supported:
 +  [Channel](API_Channel.md)
 +  [ChannelSummary](API_ChannelSummary.md)
 +  [DestinationConfiguration](API_DestinationConfiguration.md)
++  [FailoverSlateConfiguration](API_FailoverSlateConfiguration.md)
++  [FailoverSlateConfigurationSummary](API_FailoverSlateConfigurationSummary.md)
 +  [IngestConfiguration](API_IngestConfiguration.md)
 +  [IngestConfigurations](API_IngestConfigurations.md)
 +  [MediaTailorPlaybackConfiguration](API_MediaTailorPlaybackConfiguration.md)

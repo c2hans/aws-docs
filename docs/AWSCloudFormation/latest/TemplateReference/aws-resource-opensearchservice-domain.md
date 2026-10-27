@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::OpenSearchService::Domain",
   "Properties" : {
+      "[AcceptedWarnings](#cfn-opensearchservice-domain-acceptedwarnings)" : {{[ String, ... ]}},
       "[AccessPolicies](#cfn-opensearchservice-domain-accesspolicies)" : {{Json}},
       "[AdvancedOptions](#cfn-opensearchservice-domain-advancedoptions)" : {{{{{Key}}: {{Value}}, ...}}},
       "[AdvancedSecurityOptions](#cfn-opensearchservice-domain-advancedsecurityoptions)" : {{AdvancedSecurityOptionsInput}},
@@ -56,6 +57,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::OpenSearchService::Domain
 Properties:
+  [AcceptedWarnings](#cfn-opensearchservice-domain-acceptedwarnings): {{
+    - String}}
   [AccessPolicies](#cfn-opensearchservice-domain-accesspolicies): {{Json}}
   [AdvancedOptions](#cfn-opensearchservice-domain-advancedoptions): {{
     {{Key}}: {{Value}}}}
@@ -103,6 +106,13 @@ Properties:
 
 ## Properties
 <a name="aws-resource-opensearchservice-domain-properties"></a>
+
+`AcceptedWarnings`  <a name="cfn-opensearchservice-domain-acceptedwarnings"></a>
+A list of advisory warning codes to accept for this configuration change. By default, any advisory warning blocks the change. Include the code of each warning you want to accept so the change can proceed. You can find warning codes in the`ValidationFailures` list returned by `DescribeDomainChangeProgress`and `DescribeDryRunProgress`. Critical validation failures cannot be accepted and always block the change. If you omit this parameter or pass an empty list, all warnings block the change. For more information, see [Validating a domain update](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-configuration-changes#validation-check).
+*Required*: No
+*Type*: Array of String
+*Maximum*: `25`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AccessPolicies`  <a name="cfn-opensearchservice-domain-accesspolicies"></a>
 An AWS Identity and Access Management (IAM) policy document that specifies who can access the OpenSearch Service domain and their permissions. For more information, see [Configuring access policies](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html#ac-creating) in the *Amazon OpenSearch Service Developer Guide*.

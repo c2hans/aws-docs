@@ -58,6 +58,8 @@ You must already publish your sensitivity labels (for example, *Public*, *Confid
 
 Register an application in Microsoft Entra ID (Azure AD) that Quick uses to read labels and classify files. Note the **Directory (tenant) ID** and **Application (client) ID**. Both are GUIDs that you need to create a client secret credential. You must grant the app registration the following API permissions.
 
+**API permissions for the app registration**
+
 | API permission | Type | Description |
 | --- | --- | --- |
 | UnifiedPolicy.Tenant.Read | Required | Read the unified data-protection policy for the tenant. |
@@ -162,6 +164,8 @@ If a customer managed KMS key doesn't encrypt the secret, replicating it is suff
 <a name="create-dlp-configuration"></a>
 
 Sign in to the admin console. Choose **Governance**, choose **Data loss prevention**, and then choose **Create DLP configuration** to open the setup wizard. The wizard has four steps, listed in the navigation pane. The following table describes each step.
+
+**DLP configuration wizard steps**
 
 | Step | Name | Description |
 | --- | --- | --- |

@@ -27,7 +27,7 @@ Required: No
  ** outputTypes **   <a name="mediaconnect-Type-RouterOutputFilter-outputTypes"></a>
 The types of router outputs to include in the filter.
 Type: Array of strings
-Valid Values: `STANDARD | MEDIACONNECT_FLOW | MEDIALIVE_INPUT`
+Valid Values: `STANDARD | MEDIACONNECT_FLOW | MEDIALIVE_INPUT | SOURCE_ENDPOINT`
 Required: No
 
  ** regionNames **   <a name="mediaconnect-Type-RouterOutputFilter-regionNames"></a>

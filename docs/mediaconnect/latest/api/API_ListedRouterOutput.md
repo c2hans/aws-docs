@@ -49,7 +49,7 @@ Required: Yes
  ** outputType **   <a name="mediaconnect-Type-ListedRouterOutput-outputType"></a>
 The type of the router output.
 Type: String
-Valid Values: `STANDARD | MEDIACONNECT_FLOW | MEDIALIVE_INPUT`
+Valid Values: `STANDARD | MEDIACONNECT_FLOW | MEDIALIVE_INPUT | SOURCE_ENDPOINT`
 Required: Yes
 
  ** regionName **   <a name="mediaconnect-Type-ListedRouterOutput-regionName"></a>

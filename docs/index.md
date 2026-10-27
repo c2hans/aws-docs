@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-26
 ---
 
 # Welcome to AWS Documentation
@@ -229,6 +229,7 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Agent Toolkit for AWS](/agent-toolkit/?icmpid=docs_homepage_devtools): Tools, knowledge, and guardrails AI coding agents need to build, deploy, and manage applications on AWS
 - [AWS App Studio](/appstudio/?icmpid=docs_homepage_devtools): Build internal applications to automate processes and simplify organization activities
 - [AWS Cloud Development Kit (AWS CDK)](/cdk/?icmpid=docs_homepage_devtools): Define cloud infrastructure using familiar programming languages
+- [AWS Coding Plugin for SAP ABAP](/coding-plugin-for-sap-abap/latest/devguide/?icmpid=docs_homepage_devtools): Agentic development for the SAP ABAP language, powered by Kiro
 - [Amazon Connect Health](/connecthealth/?icmpid=docs_homepage_devtools): Agentic AI for healthcare that's built around the people that deliver it
 - [Amazon Corretto](/corretto/?icmpid=docs_homepage_devtools): A no-cost, multiplatform, production-ready distribution of OpenJDK
 - [AWS SDK for .NET](/sdk-for-net/?icmpid=docs_homepage_devtools): Develop applications with .NET-specific APIs and libraries

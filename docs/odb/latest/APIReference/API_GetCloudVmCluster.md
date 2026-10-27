@@ -55,6 +55,14 @@ Required: Yes
       "diskRedundancy": "string",
       "displayName": "string",
       "domain": "string",
+      "exascaleDbStorageVaultArn": "string",
+      "exascaleDbStorageVaultId": "string",
+      "fileSystemConfigurationDetails": [
+         {
+            "fileSystemSizeInGBs": number,
+            "mountPoint": "string"
+         }
+      ],
       "giVersion": "string",
       "hostname": "string",
       "iamRoles": [
@@ -97,10 +105,13 @@ Required: Yes
       "sshPublicKeys": [ "string" ],
       "status": "string",
       "statusReason": "string",
+      "storageManagementType": "string",
       "storageSizeInGBs": number,
       "systemVersion": "string",
       "timeZone": "string",
-      "vipIds": [ "string" ]
+      "vipIds": [ "string" ],
+      "vmBackupStorageType": "string",
+      "vmFileSystemStorageType": "string"
    }
 }
 ```

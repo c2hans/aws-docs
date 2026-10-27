@@ -15,4 +15,4 @@ This API reference describes the operations and data types for AWS Continuum.
 
 For more information, see the [AWS Continuum User Guide](https://docs.aws.amazon.com/continuum/latest/userguide/what-is-continuum.html). For information about service quotas, see [Quotas](https://docs.aws.amazon.com/continuum/latest/userguide/quotas.html).
 
-This document was last published on October 23, 2026.
+This document was last published on October 26, 2026.

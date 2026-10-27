@@ -55,6 +55,11 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [ivs:CreateChannel](#list_interactive-video-service-action-CreateChannel)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [ivs:TagResource](#list_interactive-video-service-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   CreateFailoverSlateConfiguration  **
+  - **SDK client:** ivs
+  - **IAM action:**  [ivs:CreateFailoverSlateConfiguration](#list_interactive-video-service-action-CreateFailoverSlateConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [ivs:TagResource](#list_interactive-video-service-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
+
 - **   CreatePlaybackRestrictionPolicy  **
   - **SDK client:** ivs
   - **IAM action:**  [ivs:CreatePlaybackRestrictionPolicy](#list_interactive-video-service-action-CreatePlaybackRestrictionPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -80,6 +85,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   DeleteChannel  **
   - **SDK client:** ivs
   - **IAM action:**  [ivs:DeleteChannel](#list_interactive-video-service-action-DeleteChannel)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteFailoverSlateConfiguration  **
+  - **SDK client:** ivs
+  - **IAM action:**  [ivs:DeleteFailoverSlateConfiguration](#list_interactive-video-service-action-DeleteFailoverSlateConfiguration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -122,6 +134,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   GetChannel  **
   - **SDK client:** ivs
   - **IAM action:**  [ivs:GetChannel](#list_interactive-video-service-action-GetChannel)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetFailoverSlateConfiguration  **
+  - **SDK client:** ivs
+  - **IAM action:**  [ivs:GetFailoverSlateConfiguration](#list_interactive-video-service-action-GetFailoverSlateConfiguration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -190,6 +209,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ListChannels  **
   - **SDK client:** ivs
   - **IAM action:**  [ivs:ListChannels](#list_interactive-video-service-action-ListChannels)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListFailoverSlateConfigurations  **
+  - **SDK client:** ivs
+  - **IAM action:**  [ivs:ListFailoverSlateConfigurations](#list_interactive-video-service-action-ListFailoverSlateConfigurations)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -288,6 +314,13 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   UpdateChannel  **
   - **SDK client:** ivs
   - **IAM action:**  [ivs:UpdateChannel](#list_interactive-video-service-action-UpdateChannel)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateFailoverSlateConfiguration  **
+  - **SDK client:** ivs
+  - **IAM action:**  [ivs:UpdateFailoverSlateConfiguration](#list_interactive-video-service-action-UpdateFailoverSlateConfiguration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -608,6 +641,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Access level:** Write
 
+- **   [CreateFailoverSlateConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_CreateFailoverSlateConfiguration.html)  **
+  - **Description:** Grants permission to create a new failover slate configuration
+  - **Resource types (\*required):** [Failover-Slate-Configuration\*](#list_interactive-video-service-resource-Failover-Slate-Configuration)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateIngestConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_CreateIngestConfiguration.html)  **
   - **Description:** Grants permission to create a new ingest configuration
   - **Resource types (\*required):** [Ingest-Configuration\*](#list_interactive-video-service-resource-Ingest-Configuration)
@@ -665,6 +704,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [DeleteEncoderConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_DeleteEncoderConfiguration.html)  **
   - **Description:** Grants permission to delete an encoder configuration for the specified ARN
   - **Resource types (\*required):** [Encoder-Configuration\*](#list_interactive-video-service-resource-Encoder-Configuration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteFailoverSlateConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_DeleteFailoverSlateConfiguration.html)  **
+  - **Description:** Grants permission to delete a failover slate configuration for the specified ARN
+  - **Resource types (\*required):** [Failover-Slate-Configuration\*](#list_interactive-video-service-resource-Failover-Slate-Configuration)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -743,6 +788,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [GetEncoderConfiguration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_GetEncoderConfiguration.html)  **
   - **Description:** Grants permission to get the encoder configuration for the specified ARN
   - **Resource types (\*required):** [Encoder-Configuration\*](#list_interactive-video-service-resource-Encoder-Configuration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [GetFailoverSlateConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_GetFailoverSlateConfiguration.html)  **
+  - **Description:** Grants permission to get the failover slate configuration for the specified ARN
+  - **Resource types (\*required):** [Failover-Slate-Configuration\*](#list_interactive-video-service-resource-Failover-Slate-Configuration)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
@@ -860,6 +911,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
+- **   [ListFailoverSlateConfigurations](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_ListFailoverSlateConfigurations.html)  **
+  - **Description:** Grants permission to get summary information about failover slate configurations
+  - **Resource types (\*required):** [Failover-Slate-Configuration\*](#list_interactive-video-service-resource-Failover-Slate-Configuration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
+  - **Access level:** List
+
 - **   [ListIngestConfigurations](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_ListIngestConfigurations.html)  **
   - **Description:** Grants permission to get summary information about ingest configurations
   - **Resource types (\*required):**
@@ -950,6 +1007,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [Channel](#list_interactive-video-service-resource-Channel) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Composition](#list_interactive-video-service-resource-Composition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Encoder-Configuration](#list_interactive-video-service-resource-Encoder-Configuration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
+  - **Resource types (\*required):** [Failover-Slate-Configuration](#list_interactive-video-service-resource-Failover-Slate-Configuration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Ingest-Configuration](#list_interactive-video-service-resource-Ingest-Configuration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Playback-Key-Pair](#list_interactive-video-service-resource-Playback-Key-Pair) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Playback-Restriction-Policy](#list_interactive-video-service-resource-Playback-Restriction-Policy) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
@@ -1016,6 +1074,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [Channel](#list_interactive-video-service-resource-Channel) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Composition](#list_interactive-video-service-resource-Composition) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Encoder-Configuration](#list_interactive-video-service-resource-Encoder-Configuration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
+  - **Resource types (\*required):** [Failover-Slate-Configuration](#list_interactive-video-service-resource-Failover-Slate-Configuration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Ingest-Configuration](#list_interactive-video-service-resource-Ingest-Configuration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Playback-Key-Pair](#list_interactive-video-service-resource-Playback-Key-Pair) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Playback-Restriction-Policy](#list_interactive-video-service-resource-Playback-Restriction-Policy) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_interactive-video-service-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
@@ -1032,6 +1091,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [Channel](#list_interactive-video-service-resource-Channel) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Composition](#list_interactive-video-service-resource-Composition) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Encoder-Configuration](#list_interactive-video-service-resource-Encoder-Configuration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
+  - **Resource types (\*required):** [Failover-Slate-Configuration](#list_interactive-video-service-resource-Failover-Slate-Configuration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Ingest-Configuration](#list_interactive-video-service-resource-Ingest-Configuration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Playback-Key-Pair](#list_interactive-video-service-resource-Playback-Key-Pair) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
   - **Resource types (\*required):** [Playback-Restriction-Policy](#list_interactive-video-service-resource-Playback-Restriction-Policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_interactive-video-service-aws_TagKeys)
@@ -1051,6 +1111,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateChannel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_UpdateChannel.html)  **
   - **Description:** Grants permission to update a channel's configuration
   - **Resource types (\*required):** [Channel\*](#list_interactive-video-service-resource-Channel)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateFailoverSlateConfiguration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_UpdateFailoverSlateConfiguration.html)  **
+  - **Description:** Grants permission to update a failover slate configuration for the specified ARN
+  - **Resource types (\*required):** [Failover-Slate-Configuration\*](#list_interactive-video-service-resource-Failover-Slate-Configuration)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -1083,6 +1149,7 @@ The following resource types are defined by this service and can be used in the 
 |  [Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Channel.html)  | arn:${Partition}:ivs:${Region}:${Account}:channel/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |
 |  [Composition](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Composition.html)  | arn:${Partition}:ivs:${Region}:${Account}:composition/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |
 |  [Encoder-Configuration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_EncoderConfiguration.html)  | arn:${Partition}:ivs:${Region}:${Account}:encoder-configuration/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |
+|  [Failover-Slate-Configuration](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_FailoverSlateConfiguration.html)  | arn:${Partition}:ivs:${Region}:${Account}:failover-slate-configuration/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |
 |  [Ingest-Configuration](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_IngestConfiguration.html)  | arn:${Partition}:ivs:${Region}:${Account}:ingest-configuration/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |
 |  [Playback-Key-Pair](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_PlaybackKeyPair.html)  | arn:${Partition}:ivs:${Region}:${Account}:playback-key/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |
 |  [Playback-Restriction-Policy](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_PlaybackRestrictionPolicy.html)  | arn:${Partition}:ivs:${Region}:${Account}:playback-restriction-policy/${ResourceId} | [aws:ResourceTag/${TagKey}](#list_interactive-video-service-aws_ResourceTag___TagKey_) |

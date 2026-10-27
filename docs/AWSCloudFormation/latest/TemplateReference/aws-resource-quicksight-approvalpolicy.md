@@ -21,10 +21,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::QuickSight::ApprovalPolicy",
   "Properties" : {
-      "[Actions](#cfn-quicksight-approvalpolicy-actions)" : {{[ , ... ]}},
+      "[Actions](#cfn-quicksight-approvalpolicy-actions)" : {{[ String, ... ]}},
       "[ApplicableTo](#cfn-quicksight-approvalpolicy-applicableto)" : {{ApplicableTo}},
       "[ApprovalGroups](#cfn-quicksight-approvalpolicy-approvalgroups)" : {{[ String, ... ]}},
-      "[AssetTypes](#cfn-quicksight-approvalpolicy-assettypes)" : {{[ , ... ]}},
+      "[AssetTypes](#cfn-quicksight-approvalpolicy-assettypes)" : {{[ String, ... ]}},
       "[Description](#cfn-quicksight-approvalpolicy-description)" : {{String}},
       "[Name](#cfn-quicksight-approvalpolicy-name)" : {{String}},
       "[PolicyId](#cfn-quicksight-approvalpolicy-policyid)" : {{String}}
@@ -39,13 +39,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 Type: AWS::QuickSight::ApprovalPolicy
 Properties:
   [Actions](#cfn-quicksight-approvalpolicy-actions): {{
-    - }}
+    - String}}
   [ApplicableTo](#cfn-quicksight-approvalpolicy-applicableto): {{
     ApplicableTo}}
   [ApprovalGroups](#cfn-quicksight-approvalpolicy-approvalgroups): {{
     - String}}
   [AssetTypes](#cfn-quicksight-approvalpolicy-assettypes): {{
-    - }}
+    - String}}
   [Description](#cfn-quicksight-approvalpolicy-description): {{String}}
   [Name](#cfn-quicksight-approvalpolicy-name): {{String}}
   [PolicyId](#cfn-quicksight-approvalpolicy-policyid): {{String}}
@@ -57,7 +57,7 @@ Properties:
 `Actions`  <a name="cfn-quicksight-approvalpolicy-actions"></a>
 The list of governed actions that trigger the approval workflow.
 *Required*: Yes
-*Type*: Array
+*Type*: Array of String
 *Minimum*: `1`
 *Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -78,7 +78,7 @@ The list of group ARNs whose members can approve requests.
 `AssetTypes`  <a name="cfn-quicksight-approvalpolicy-assettypes"></a>
 The list of asset types that the approval policy applies to.
 *Required*: Yes
-*Type*: Array
+*Type*: Array of String
 *Minimum*: `1`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 

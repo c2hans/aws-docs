@@ -12,8 +12,10 @@ Returns information about the Exascale storage vaults owned by your AWS account.
 
 ```
 {
+   "cloudExadataInfrastructureId": "{{string}}",
    "maxResults": {{number}},
-   "nextToken": "{{string}}"
+   "nextToken": "{{string}}",
+   "vaultType": "{{string}}"
 }
 ```
 
@@ -23,6 +25,13 @@ Returns information about the Exascale storage vaults owned by your AWS account.
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [cloudExadataInfrastructureId](#API_ListExascaleDbStorageVaults_RequestSyntax) **   <a name="odb-ListExascaleDbStorageVaults-request-cloudExadataInfrastructureId"></a>
+The unique identifier or Amazon Resource Name (ARN) of an Exadata infrastructure. If you specify this value, the operation returns only the Exascale storage vaults on that infrastructure that you own or that are shared with you. The infrastructure can be one that's shared with you through AWS Resource Access Manager (AWS RAM). You can't combine this filter with a `vaultType` of `EXASCALE_INFRASTRUCTURE`.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 2048.
+Pattern: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
+Required: No
 
  ** [maxResults](#API_ListExascaleDbStorageVaults_RequestSyntax) **   <a name="odb-ListExascaleDbStorageVaults-request-maxResults"></a>
 The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output.
@@ -34,6 +43,12 @@ Required: No
 The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 8192.
+Required: No
+
+ ** [vaultType](#API_ListExascaleDbStorageVaults_RequestSyntax) **   <a name="odb-ListExascaleDbStorageVaults-request-vaultType"></a>
+The type of Exascale storage vaults to return. Specify `DEDICATED_INFRASTRUCTURE` to return Exascale storage vaults on dedicated Exadata infrastructure, or `EXASCALE_INFRASTRUCTURE` to return Exascale storage vaults for Exascale VM clusters. If you don't specify a value, the operation returns both types. You can't combine `EXASCALE_INFRASTRUCTURE` with the `cloudExadataInfrastructureId` filter.
+Type: String
+Valid Values: `EXASCALE_INFRASTRUCTURE | DEDICATED_INFRASTRUCTURE`
 Required: No
 
 ## Response Syntax
@@ -48,6 +63,8 @@ Required: No
          "autoscaleLimitInGBs": number,
          "availabilityZone": "string",
          "availabilityZoneId": "string",
+         "cloudExadataInfrastructureArn": "string",
+         "cloudExadataInfrastructureId": "string",
          "createdAt": "string",
          "description": "string",
          "displayName": "string",
@@ -65,6 +82,7 @@ Required: No
          "status": "string",
          "statusReason": "string",
          "timeZone": "string",
+         "vaultType": "string",
          "vmClusterArns": [ "string" ],
          "vmClusterCount": number,
          "vmClusterIds": [ "string" ]
@@ -103,6 +121,14 @@ Occurs when there is an internal failure in the Oracle Database@AWS service. Wai
  ** retryAfterSeconds **
 The number of seconds to wait before retrying the request after an internal server error.
 HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The operation tried to access a resource that doesn't exist. Make sure you provided the correct resource and try again.
+ ** resourceId **
+The identifier of the resource that was not found.
+ ** resourceType **
+The type of resource that was not found.
+HTTP Status Code: 400
 
  ** ThrottlingException **
 The request was denied due to request throttling.

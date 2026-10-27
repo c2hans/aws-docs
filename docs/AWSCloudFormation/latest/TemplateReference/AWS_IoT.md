@@ -24,6 +24,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::IoT::JobTemplate](aws-resource-iot-jobtemplate.md)
 + [AWS::IoT::Logging](aws-resource-iot-logging.md)
 + [AWS::IoT::MitigationAction](aws-resource-iot-mitigationaction.md)
++ [AWS::IoT::OTAUpdate](aws-resource-iot-otaupdate.md)
 + [AWS::IoT::Policy](aws-resource-iot-policy.md)
 + [AWS::IoT::PolicyPrincipalAttachment](aws-resource-iot-policyprincipalattachment.md)
 + [AWS::IoT::ProvisioningTemplate](aws-resource-iot-provisioningtemplate.md)

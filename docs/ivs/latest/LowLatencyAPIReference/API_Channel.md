@@ -35,6 +35,13 @@ Type: String
 Valid Values: `TS | FRAGMENTED_MP4`
 Required: No
 
+ ** failoverSlateConfigurationArn **   <a name="ivs-Type-Channel-failoverSlateConfigurationArn"></a>
+Failover-slate-configuration ARN. A valid ARN value here both specifies the ARN and enables failover slate. Default: "" (empty string, no failover slate configuration is applied).
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 128.
+Pattern: `^$|^arn:aws:ivs:[a-z0-9-]+:[0-9]+:failover-slate-configuration/[a-zA-Z0-9-]+$`
+Required: No
+
  ** ingestEndpoint **   <a name="ivs-Type-Channel-ingestEndpoint"></a>
 Channel ingest endpoint, part of the definition of an ingest server, used when you set up streaming software.
 Type: String

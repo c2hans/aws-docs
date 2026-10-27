@@ -18,7 +18,7 @@ This guide provides information about API actions for identity-aware sessions. F
 ## AWS Sign-In Data Plane
 <a name="Welcome_AWS_Sign-In_Data_Plane"></a>
 
-The AWS Sign-In Data Plane implements OAuth 2.0 flows for AWS CLI authentication, providing secure token exchange and refresh capabilities.
+ AWS Sign-In manages authentication for AWS services. It implements OAuth 2.0, providing secure token exchange and refresh capabilities.
 
 **Note**
  AWS Sign-In Data Plane uses the `signin` namespace.

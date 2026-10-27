@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/usage-limits-desktop.html
 ---
 
-# Usage limits
+# Amazon Quick desktop usage limits
 <a name="usage-limits-desktop"></a>
 
 Amazon Quick applies the following limits to your account.

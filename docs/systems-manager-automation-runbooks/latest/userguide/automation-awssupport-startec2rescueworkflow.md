@@ -168,38 +168,17 @@ Linux, macOS, Windows
 
 The `AutomationAssumeRole` parameter requires the following actions to use the runbook successfully.
 
-It is recommended the user who runs the automation have the **AmazonSSMAutomationRole** IAM managed policy attached. In addition to that policy, the user must have:
+Attach the **AmazonSSMAutomationRole** IAM managed policy to the IAM user or role that runs the automation, and add the permissions in the following example policy.
 
-------
-#### [ JSON ]
-
-****
+The following example policy grants the additional permissions that the runbook needs. Each statement is scoped to the resource types that its actions use. The `DescribeActions` statement uses `"Resource": "*"` because describe actions don't support resource-level permissions. In the following example, replace {{111122223333}} with your AWS account ID:
 
 ```
 {
-    "Version":"2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
-            "Action": [
-                "lambda:InvokeFunction",
-                "lambda:DeleteFunction",
-                "lambda:GetFunction"
-            ],
-            "Resource": "arn:aws:lambda:*:{{111122223333}}:function:AWSSupport-EC2Rescue-*",
-            "Effect": "Allow"
-        },
-        {
-            "Action": [
-                "s3:GetObject",
-                "s3:GetObjectVersion"
-            ],
-            "Resource": [
-                "arn:aws:s3:::awssupport-ssm.*/*.template",
-                "arn:aws:s3:::awssupport-ssm.*/*.zip"
-            ],
-            "Effect": "Allow"
-        },
-        {
+            "Sid": "HelperInstanceRoleAndProfile",
+            "Effect": "Allow",
             "Action": [
                 "iam:CreateRole",
                 "iam:CreateInstanceProfile",
@@ -208,22 +187,62 @@ It is recommended the user who runs the automation have the **AmazonSSMAutomatio
                 "iam:PutRolePolicy",
                 "iam:DetachRolePolicy",
                 "iam:AttachRolePolicy",
-                "iam:PassRole",
                 "iam:AddRoleToInstanceProfile",
                 "iam:RemoveRoleFromInstanceProfile",
                 "iam:DeleteRole",
                 "iam:DeleteRolePolicy",
-                "iam:DeleteInstanceProfile"
+                "iam:DeleteInstanceProfile",
+                "iam:TagRole"
             ],
             "Resource": [
                 "arn:aws:iam::{{111122223333}}:role/AWSSupport-EC2Rescue-*",
                 "arn:aws:iam::{{111122223333}}:instance-profile/AWSSupport-EC2Rescue-*"
-            ],
-            "Effect": "Allow"
+            ]
         },
         {
+            "Sid": "PassHelperInstanceRole",
+            "Effect": "Allow",
+            "Action": "iam:PassRole",
+            "Resource": "arn:aws:iam::{{111122223333}}:role/AWSSupport-EC2Rescue-*",
+            "Condition": {
+                "StringEquals": {
+                    "iam:PassedToService": "ec2.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Sid": "EC2RescueStack",
+            "Effect": "Allow",
+            "Action": "cloudformation:DescribeStackResource",
+            "Resource": "arn:aws:cloudformation:*:{{111122223333}}:stack/AWSSupport-EC2Rescue-*/*"
+        },
+        {
+            "Sid": "InstanceAndRootVolume",
+            "Effect": "Allow",
             "Action": [
-                "lambda:CreateFunction",
+                "ec2:AttachVolume",
+                "ec2:DetachVolume",
+                "ec2:ModifyInstanceAttribute",
+                "ec2:RebootInstances"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:instance/*",
+                "arn:aws:ec2:*:{{111122223333}}:volume/*"
+            ]
+        },
+        {
+            "Sid": "HelperLaunchTemplate",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:CreateLaunchTemplate",
+                "ec2:DeleteLaunchTemplate"
+            ],
+            "Resource": "arn:aws:ec2:*:{{111122223333}}:launch-template/*"
+        },
+        {
+            "Sid": "HelperNetwork",
+            "Effect": "Allow",
+            "Action": [
                 "ec2:CreateVpc",
                 "ec2:ModifyVpcAttribute",
                 "ec2:DeleteVpc",
@@ -232,26 +251,38 @@ It is recommended the user who runs the automation have the **AmazonSSMAutomatio
                 "ec2:DetachInternetGateway",
                 "ec2:DeleteInternetGateway",
                 "ec2:CreateSubnet",
+                "ec2:ModifySubnetAttribute",
                 "ec2:DeleteSubnet",
+                "ec2:CreateRouteTable",
                 "ec2:CreateRoute",
                 "ec2:DeleteRoute",
-                "ec2:CreateRouteTable",
                 "ec2:AssociateRouteTable",
                 "ec2:DisassociateRouteTable",
-                "ec2:DeleteRouteTable",
-                "ec2:CreateVpcEndpoint",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:ModifyVpcEndpoint",
+                "ec2:DeleteRouteTable"
+            ],
+            "Resource": [
+                "arn:aws:ec2:*:{{111122223333}}:vpc/*",
+                "arn:aws:ec2:*:{{111122223333}}:subnet/*",
+                "arn:aws:ec2:*:{{111122223333}}:internet-gateway/*",
+                "arn:aws:ec2:*:{{111122223333}}:route-table/*"
+            ]
+        },
+        {
+            "Sid": "DescribeActions",
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:DescribeAutoScalingInstances",
                 "ec2:Describe*"
             ],
-            "Resource": "*",
-            "Effect": "Allow"
+            "Resource": "*"
         }
     ]
 }
 ```
 
-------
+The `HelperNetwork` statement is needed only when you set `SubnetId` to `CreateNewVPC`.
+
+If you specify an existing instance profile in the `HelperInstanceProfileName` parameter, the `AutomationAssumeRole` also needs the `iam:PassRole` permission for the IAM role in that instance profile.
 
  **Document Steps**
 

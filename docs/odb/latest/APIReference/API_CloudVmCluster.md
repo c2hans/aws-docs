@@ -92,6 +92,25 @@ The domain of the VM cluster.
 Type: String
 Required: No
 
+ ** exascaleDbStorageVaultArn **   <a name="odb-Type-CloudVmCluster-exascaleDbStorageVaultArn"></a>
+The Amazon Resource Name (ARN) of the Exascale storage vault that the VM cluster uses. This value is present only for VM clusters that use an Exascale storage vault.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-z0-9-_]{6,64}`
+Required: No
+
+ ** exascaleDbStorageVaultId **   <a name="odb-Type-CloudVmCluster-exascaleDbStorageVaultId"></a>
+The unique identifier of the Exascale storage vault that the VM cluster uses. This value is present only for VM clusters that use an Exascale storage vault.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 64.
+Pattern: `[a-zA-Z0-9_~.-]+`
+Required: No
+
+ ** fileSystemConfigurationDetails **   <a name="odb-Type-CloudVmCluster-fileSystemConfigurationDetails"></a>
+The list of file system configurations for the VM cluster.
+Type: Array of [FileSystemConfigurationDetails](API_FileSystemConfigurationDetails.md) objects
+Required: No
+
  ** giVersion **   <a name="odb-Type-CloudVmCluster-giVersion"></a>
 The software version of the Oracle Grid Infrastructure (GI) for the VM cluster.
 Type: String
@@ -219,6 +238,12 @@ Additional information about the status of the VM cluster.
 Type: String
 Required: No
 
+ ** storageManagementType **   <a name="odb-Type-CloudVmCluster-storageManagementType"></a>
+The type of storage management for the VM cluster. A value of `ASM` indicates Oracle Automatic Storage Management, and `EXASCALE` indicates Exascale storage.
+Type: String
+Valid Values: `ASM | EXASCALE`
+Required: No
+
  ** storageSizeInGBs **   <a name="odb-Type-CloudVmCluster-storageSizeInGBs"></a>
 The amount of local node storage, in gigabytes (GB), that's allocated to the VM cluster.
 Type: Integer
@@ -238,6 +263,18 @@ Required: No
 The virtual IP (VIP) addresses that are associated with the VM cluster. Oracle's Cluster Ready Services (CRS) creates and maintains one VIP address for each node in the VM cluster to enable failover. If one node fails, the VIP is reassigned to another active node in the cluster.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 1024 items.
+Required: No
+
+ ** vmBackupStorageType **   <a name="odb-Type-CloudVmCluster-vmBackupStorageType"></a>
+The type of storage that the VM cluster uses for VM backups.
+Type: String
+Valid Values: `LOCAL | EXASCALE`
+Required: No
+
+ ** vmFileSystemStorageType **   <a name="odb-Type-CloudVmCluster-vmFileSystemStorageType"></a>
+The type of storage that the VM cluster uses for its VM file systems.
+Type: String
+Valid Values: `LOCAL | EXASCALE`
 Required: No
 
 ## See Also

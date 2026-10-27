@@ -48,6 +48,7 @@ Content-type: application/json
    "routerOutputs": [
       {
          "arn": "string",
+         "associatedSourceEndpointArns": [ "string" ],
          "availabilityZone": "string",
          "configuration": { ... },
          "createdAt": "string",

@@ -182,12 +182,12 @@ Array Members: Minimum number of 1 item. Maximum number of 1024 items.
 Required: No
 
  ** scanListenerPortTcp **   <a name="odb-Type-ExadbVmClusterSummary-scanListenerPortTcp"></a>
-The port number for TCP connections to the single client access name (SCAN) listener for the Exascale VM cluster.
+The port number for TCP connections to the Single Client Access Name (SCAN) listener for the Exascale VM cluster.
 Type: Integer
 Required: No
 
  ** scanListenerPortTcpSsl **   <a name="odb-Type-ExadbVmClusterSummary-scanListenerPortTcpSsl"></a>
-The port number for TCP connections with SSL to the single client access name (SCAN) listener for the Exascale VM cluster.
+Reserved for future use.
 Type: Integer
 Required: No
 

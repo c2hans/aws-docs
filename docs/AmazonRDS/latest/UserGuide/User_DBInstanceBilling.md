@@ -12,7 +12,7 @@ Amazon RDS instances are billed based on the following components:
 + Provisioned IOPS (per IOPS per month) – Provisioned IOPS rate, regardless of IOPS consumed, for Amazon RDS Provisioned IOPS (SSD) and General Purpose (SSD) gp3 storage. Provisioned storage for EBS volumes are billed in 1-second increments, with a minimum of 10 minutes.
 + Backup storage (per GiB per month) – *Backup storage *is the storage that is associated with automated database backups and any active database snapshots that you have taken. Increasing your backup retention period or taking additional database snapshots increases the backup storage consumed by your database. Per second billing doesn't apply to backup storage (metered in GB-month).
 
-  For more information, see [Backing up, restoring, and exporting data](CHAP_CommonTasks.BackupRestore.md).
+  Snapshot storage charges are attributed to each snapshot individually in AWS Cost Explorer and your AWS Cost and Usage Report, where the `ResourceId` field shows the snapshot ARN instead of the DB instance ARN. For more information, see [Backing up, restoring, and exporting data](CHAP_CommonTasks.BackupRestore.md).
 + Data transfer (per GB) – Data transfer in and out of your DB instance from or to the internet and other AWS Regions. For useful examples, see the AWS blog post [Exploring Data Transfer Costs for AWS Managed Databases](https://aws.amazon.com/blogs/architecture/exploring-data-transfer-costs-for-aws-managed-databases).
 
 Amazon RDS provides the following purchasing options to enable you to optimize your costs based on your needs:

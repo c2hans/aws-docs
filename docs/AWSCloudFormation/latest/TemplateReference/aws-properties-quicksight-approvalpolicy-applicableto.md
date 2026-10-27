@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[GroupArns](#cfn-quicksight-approvalpolicy-applicableto-grouparns)" : {{[ String, ... ]}},
-  "[Type](#cfn-quicksight-approvalpolicy-applicableto-type)" : {{}}
+  "[Type](#cfn-quicksight-approvalpolicy-applicableto-type)" : {{String}}
 }
 ```
 
@@ -30,8 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [GroupArns](#cfn-quicksight-approvalpolicy-applicableto-grouparns): {{
     - String}}
-  [Type](#cfn-quicksight-approvalpolicy-applicableto-type): {{
-    }}
+  [Type](#cfn-quicksight-approvalpolicy-applicableto-type): {{String}}
 ```
 
 ## Properties
@@ -47,5 +46,6 @@ Property description not available.
 `Type`  <a name="cfn-quicksight-approvalpolicy-applicableto-type"></a>
 Property description not available.
 *Required*: Yes
-*Type*:
+*Type*: String
+*Allowed values*: `GROUP`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

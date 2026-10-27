@@ -39,16 +39,16 @@ The request accepts the following data in JSON format.
 **Note**
 In the following list, the required parameters are described first.
 
- ** [Database](#API_ListDatabases_RequestSyntax) **   <a name="redshiftdata-ListDatabases-request-Database"></a>
-The name of the database. This parameter is required when authenticating using either AWS Secrets Manager or temporary credentials.
-Type: String
-Required: Yes
-
  ** [ClusterIdentifier](#API_ListDatabases_RequestSyntax) **   <a name="redshiftdata-ListDatabases-request-ClusterIdentifier"></a>
 The cluster identifier. This parameter is required when connecting to a cluster and authenticating using either AWS Secrets Manager or temporary credentials.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 63.
 Pattern: `[a-z][a-z0-9]*(-[a-z0-9]+)*`
+Required: No
+
+ ** [Database](#API_ListDatabases_RequestSyntax) **   <a name="redshiftdata-ListDatabases-request-Database"></a>
+The name of the database. This parameter is required when authenticating using either AWS Secrets Manager or temporary credentials.
+Type: String
 Required: No
 
  ** [DbUser](#API_ListDatabases_RequestSyntax) **   <a name="redshiftdata-ListDatabases-request-DbUser"></a>
@@ -76,7 +76,7 @@ Required: No
 The serverless workgroup name or Amazon Resource Name (ARN). This parameter is required when connecting to a serverless workgroup and authenticating using either AWS Secrets Manager or temporary credentials.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 128.
-Pattern: `([a-z0-9-]{3,63}|arn:(aws(-[a-z]+)*):redshift-serverless:([a-z]{2}(-gov|(-iso[a-z]?))?|eusc-[a-z]+)-[a-z]+-\d{1}:\d{12}:workgroup/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})`
+Pattern: `([a-z0-9-]{3,63}|arn:(aws(-[a-z]+)*):redshift-serverless:([a-z]{2}(-gov|(-iso[a-z]?))?|eusc-[a-z]+)-[a-z]+-\d{1}:\d{12}:workgroup/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}|[a-z0-9-]{1,63}/[a-z0-9-]{1,63}))`
 Required: No
 
 ## Response Syntax

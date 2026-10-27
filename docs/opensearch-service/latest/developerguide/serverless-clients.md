@@ -585,6 +585,9 @@ print(delete_response)
 **Note**
 The `id = '1'` parameter in this example specifies a custom document ID. Custom document IDs are only supported for *search* collections. For time series and vector search collections, indexing with a custom document ID is not supported and will return an error. Omit the `id` parameter when indexing into time series or vector search collections.
 
+**Note**
+Every document that you ingest into a *NextGen time series* collection must include the index's designated timestamp field, and its value must be a valid `date`. OpenSearch Serverless rejects documents that omit the field or that provide an invalid value. For more information, see [Using the timestamp field in time series collections](serverless-timestamp-field.md).
+
 ## Ruby
 <a name="serverless-ruby"></a>
 

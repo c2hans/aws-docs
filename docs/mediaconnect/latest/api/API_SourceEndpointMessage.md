@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourceEndpointMessage.html
+---
+
+# SourceEndpointMessage
+<a name="API_SourceEndpointMessage"></a>
+
+A status message for a source endpoint.
+
+## Contents
+<a name="API_SourceEndpointMessage_Contents"></a>
+
+ ** code **   <a name="mediaconnect-Type-SourceEndpointMessage-code"></a>
+The message code.
+Type: String
+Required: Yes
+
+ ** message **   <a name="mediaconnect-Type-SourceEndpointMessage-message"></a>
+The message text.
+Type: String
+Required: Yes
+
+## See Also
+<a name="API_SourceEndpointMessage_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/SourceEndpointMessage)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/SourceEndpointMessage)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/SourceEndpointMessage)

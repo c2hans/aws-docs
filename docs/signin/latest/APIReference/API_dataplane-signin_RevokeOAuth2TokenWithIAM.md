@@ -9,7 +9,7 @@ Revokes an OAuth 2.0 refresh token and its associated token chain.
 
 Implements RFC 7009 (OAuth 2.0 Token Revocation) over a SigV4-authenticated endpoint. Invalidates the specified refresh token so that it can no longer be used to obtain new access tokens.
 
-This operation is idempotent – revoking an already-revoked, expired, or otherwise invalid token returns 200 OK with an empty body. Only refresh tokens (prefix `ASOR`) are accepted.
+This operation is idempotent. Revoking an already-revoked, expired, or otherwise invalid token returns 200 OK with an empty body. Only refresh tokens are accepted.
 
 **Important**
 Revoking a refresh token does not invalidate access tokens that were previously issued using that refresh token. Existing access tokens remain valid until they expire (up to 1 hour). To immediately block access, use an IAM policy with `aws:SignInSessionArn` to deny the specific session.
@@ -37,7 +37,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [token](#API_dataplane-signin_RevokeOAuth2TokenWithIAM_RequestSyntax) **   <a name="signin-dataplane-signin_RevokeOAuth2TokenWithIAM-request-token"></a>
-The refresh token to revoke. Must be a refresh token issued by AWS Sign-In (prefix `ASOR`). Access tokens are not accepted for revocation.
+The refresh token to revoke. Must be a refresh token issued by AWS Sign-In. Access tokens are not accepted for revocation.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `ASOR[A-Za-z0-9+/=_\-]+`
@@ -65,15 +65,15 @@ You do not have sufficient access to perform this action.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+The request failed because of an internal server error.
 HTTP Status Code: 500
 
  ** TooManyRequestsError **
-Indicates that the principal has exceeded the limit of requests to this API operation.
+The request failed because you exceeded the request rate limit for this operation.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request failed because it contains a syntax error.
+The request failed because it contains a malformed, missing, or invalid parameter.
 HTTP Status Code: 400
 
 ## See Also

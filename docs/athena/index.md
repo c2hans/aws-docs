@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/athena/index.html
 title: 'Amazon Athena Documentation'
 canonical_url: https://docs.aws.amazon.com/athena/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-26
 ---
 
 # Amazon Athena Documentation

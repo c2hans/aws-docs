@@ -7,9 +7,9 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/API_dataplane
 
 Exchanges client credentials for an OAuth 2.0 access token scoped to a resource, which you can use to access AWS services from applications.
 
-Implements the OAuth 2.0 client credentials grant. Applications authenticate to the token endpoint using SigV4 signing, and AWS Sign-In returns a short-lived OAuth access token (JWT) scoped to the requested resource.
+Implements the OAuth 2.0 client credentials grant. Applications authenticate to the token endpoint using SigV4 signing, and AWS Sign-In returns a short-lived OAuth access token scoped to the requested resource.
 
-The returned access token is a Bearer token per the OAuth 2.0 specification. The token is a JSON Web Token (JWT). Token lifetime is the minimum of the caller's session validity and 1 hour (3600 seconds).
+The returned access token is a Bearer token as defined in RFC 6749. Token lifetime is the minimum of the caller's session validity and 1 hour (3600 seconds).
 
 ## Request Syntax
 <a name="API_dataplane-signin_CreateOAuth2TokenWithIAM_RequestSyntax"></a>
@@ -41,7 +41,7 @@ Pattern: `client_credentials`
 Required: Yes
 
  ** [resource](#API_dataplane-signin_CreateOAuth2TokenWithIAM_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithIAM-request-resource"></a>
-The OAuth resource for which the access token is requested. This identifies the target service that the token grants access to. To scope the access token down to the specific resource, the resource parameter is mandated under RFC 8707 (Resource Indicators for OAuth 2.0).
+The OAuth resource for which the access token is requested. This identifies the target service that the token grants access to. To scope the access token to the specific resource, the resource parameter is mandated under RFC 8707 (Resource Indicators for OAuth 2.0).
 When using a dynamically registered client (DCR), the resource parameter is required.
 Example: `aws-mcp.amazonaws.com`.
 Type: String
@@ -70,7 +70,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [access\_token](#API_dataplane-signin_CreateOAuth2TokenWithIAM_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithIAM-response-access_token"></a>
-JWT access token containing principal identity, resource scope, and session metadata. Use this token as a Bearer token when accessing the target resource.
+Access token containing principal identity, resource scope, and session metadata. Use this token as a Bearer token when accessing the target resource.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 
@@ -80,7 +80,7 @@ Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 3600.
 
  ** [token\_type](#API_dataplane-signin_CreateOAuth2TokenWithIAM_ResponseSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2TokenWithIAM-response-token_type"></a>
-Always `Bearer` per OAuth 2.0 specification.
+The token type. Always `Bearer` as defined in RFC 6749.
 Type: String
 Pattern: `Bearer`
 
@@ -94,15 +94,15 @@ You do not have sufficient access to perform this action.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+The request failed because of an internal server error.
 HTTP Status Code: 500
 
  ** TooManyRequestsError **
-Indicates that the principal has exceeded the limit of requests to this API operation.
+The request failed because you exceeded the request rate limit for this operation.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request failed because it contains a syntax error.
+The request failed because it contains a malformed, missing, or invalid parameter.
 HTTP Status Code: 400
 
 ## See Also

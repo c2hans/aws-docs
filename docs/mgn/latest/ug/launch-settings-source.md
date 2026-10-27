@@ -11,4 +11,14 @@ Launch settings, including the EC2 launch template, are automatically created ev
 
 The launch settings can be modified at any time, including before the source servers have even completed initial sync.
 
+To edit the launch settings for a source server:
+
+1. Open the AWS Transform MGN console and navigate to the **Source servers** page.
+
+1. Select the checkbox next to the source server.
+
+1. Choose **Test and cutover**, then choose **Edit launch settings**.
+
+1. Modify the settings as needed and save your changes.
+
 [Learn more about individual launch settings.](launch-settings.md)

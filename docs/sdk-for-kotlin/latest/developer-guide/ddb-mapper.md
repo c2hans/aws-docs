@@ -24,6 +24,7 @@ DynamoDB Mapper uses the SDK’s low-level [`DynamoDbClient`](/sdk-for-kotlin/ap
 + [Batch operations](ddb-mapper-batch.md)
 + [Transactional operations](ddb-mapper-transactions.md)
 + [Generate schemas](ddb-mapper-anno-schema-gen.md)
++ [Heterogeneous types](ddb-mapper-anno-heterogeneous.md)
 + [Manual schemas](ddb-mapper-code-schemas.md)
 + [Secondary indexes](ddb-mapper-secondary-indexes.md)
 + [Expressions](ddb-mapper-expressions.md)

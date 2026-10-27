@@ -33,6 +33,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DeploymentConfigName](#cfn-codedeploy-deploymentgroup-deploymentconfigname)" : {{String}},
       "[DeploymentGroupName](#cfn-codedeploy-deploymentgroup-deploymentgroupname)" : {{String}},
       "[DeploymentStyle](#cfn-codedeploy-deploymentgroup-deploymentstyle)" : {{DeploymentStyle}},
+      "[Ec2DeploymentOptions](#cfn-codedeploy-deploymentgroup-ec2deploymentoptions)" : {{Ec2DeploymentOptions}},
       "[Ec2TagFilters](#cfn-codedeploy-deploymentgroup-ec2tagfilters)" : {{[ EC2TagFilter, ... ]}},
       "[Ec2TagSet](#cfn-codedeploy-deploymentgroup-ec2tagset)" : {{EC2TagSet}},
       "[ECSServices](#cfn-codedeploy-deploymentgroup-ecsservices)" : {{[ ECSService, ... ]}},
@@ -69,6 +70,8 @@ Properties:
   [DeploymentGroupName](#cfn-codedeploy-deploymentgroup-deploymentgroupname): {{String}}
   [DeploymentStyle](#cfn-codedeploy-deploymentgroup-deploymentstyle): {{
     DeploymentStyle}}
+  [Ec2DeploymentOptions](#cfn-codedeploy-deploymentgroup-ec2deploymentoptions): {{
+    Ec2DeploymentOptions}}
   [Ec2TagFilters](#cfn-codedeploy-deploymentgroup-ec2tagfilters): {{
     - EC2TagFilter}}
   [Ec2TagSet](#cfn-codedeploy-deploymentgroup-ec2tagset): {{
@@ -157,6 +160,12 @@ Information about blue/green deployment options for a deployment group.
  For blue/green deployments, CloudFormation supports deployments on Lambda compute platforms only. You can perform Amazon ECS blue/green deployments using `AWS::CodeDeploy::BlueGreen ` hook. See [Perform Amazon ECS blue/green deployments through CodeDeploy using CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/blue-green.html) for more information.
 *Required*: No
 *Type*: [DeploymentStyle](aws-properties-codedeploy-deploymentgroup-deploymentstyle.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Ec2DeploymentOptions`  <a name="cfn-codedeploy-deploymentgroup-ec2deploymentoptions"></a>
+Options that control how AWS CodeDeploy manages Amazon EC2 resources during deployments to the deployment group. You can override these options for an individual deployment when you call `CreateDeployment`.
+*Required*: No
+*Type*: [Ec2DeploymentOptions](aws-properties-codedeploy-deploymentgroup-ec2deploymentoptions.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Ec2TagFilters`  <a name="cfn-codedeploy-deploymentgroup-ec2tagfilters"></a>

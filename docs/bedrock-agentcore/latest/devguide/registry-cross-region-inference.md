@@ -19,12 +19,18 @@ There is no additional cost for using cross-region inference. Amazon CloudWatch 
 
 The following Regions support AWS Agent Registry with cross-region inference:
 
+ **Canada**
++ Canada - Central (ca-central-1)
+
  **United States**
 + US East - N. Virginia (us-east-1)
++ US East - Ohio (us-east-2)
 + US West - Oregon (us-west-2)
 
  **Europe**
++ Europe - Frankfurt (eu-central-1)
 + Europe - Ireland (eu-west-1)
++ Europe - London (eu-west-2)
 
  **Asia Pacific**
 + Asia Pacific - Tokyo (ap-northeast-1)

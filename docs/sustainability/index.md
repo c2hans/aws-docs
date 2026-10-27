@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sustainability/index.html
 title: 'AWS Sustainability Documentation'
 canonical_url: https://docs.aws.amazon.com/sustainability/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-27
 ---
 
 # AWS Sustainability Documentation

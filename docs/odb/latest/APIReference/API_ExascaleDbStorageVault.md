@@ -43,6 +43,20 @@ The Availability Zone ID for the Exascale storage vault.
 Type: String
 Required: No
 
+ ** cloudExadataInfrastructureArn **   <a name="odb-Type-ExascaleDbStorageVault-cloudExadataInfrastructureArn"></a>
+The Amazon Resource Name (ARN) of the Exadata infrastructure that hosts the Exascale storage vault. This value is present only for vaults on dedicated Exadata infrastructure.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-z0-9-_]{6,64}`
+Required: No
+
+ ** cloudExadataInfrastructureId **   <a name="odb-Type-ExascaleDbStorageVault-cloudExadataInfrastructureId"></a>
+The unique identifier of the Exadata infrastructure that hosts the Exascale storage vault. This value is present only for vaults on dedicated Exadata infrastructure.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 64.
+Pattern: `[a-zA-Z0-9_~.-]+`
+Required: No
+
  ** createdAt **   <a name="odb-Type-ExascaleDbStorageVault-createdAt"></a>
 The date and time when the Exascale storage vault was created.
 Type: Timestamp
@@ -109,6 +123,12 @@ Required: No
  ** timeZone **   <a name="odb-Type-ExascaleDbStorageVault-timeZone"></a>
 The time zone of the Exascale storage vault.
 Type: String
+Required: No
+
+ ** vaultType **   <a name="odb-Type-ExascaleDbStorageVault-vaultType"></a>
+The type of infrastructure that hosts the Exascale storage vault.
+Type: String
+Valid Values: `EXASCALE_INFRASTRUCTURE | DEDICATED_INFRASTRUCTURE`
 Required: No
 
  ** vmClusterArns **   <a name="odb-Type-ExascaleDbStorageVault-vmClusterArns"></a>

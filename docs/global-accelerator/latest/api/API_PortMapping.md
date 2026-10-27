@@ -34,7 +34,7 @@ Length Constraints: Maximum length of 255.
 Required: No
 
  ** EndpointId **   <a name="globalaccelerator-Type-PortMapping-EndpointId"></a>
-The IP address of the VPC subnet (the subnet ID).
+The ID of the virtual private cloud (VPC) subnet.
 Type: String
 Length Constraints: Maximum length of 255.
 Required: No

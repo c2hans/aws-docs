@@ -875,6 +875,8 @@ The following data types are supported:
 +  [TransitGatewayMulticastGroup](API_TransitGatewayMulticastGroup.md)
 +  [TransitGatewayMulticastRegisteredGroupMembers](API_TransitGatewayMulticastRegisteredGroupMembers.md)
 +  [TransitGatewayMulticastRegisteredGroupSources](API_TransitGatewayMulticastRegisteredGroupSources.md)
++  [TransitGatewayNatRule](API_TransitGatewayNatRule.md)
++  [TransitGatewayNatRuleRequest](API_TransitGatewayNatRuleRequest.md)
 +  [TransitGatewayOptions](API_TransitGatewayOptions.md)
 +  [TransitGatewayPeeringAttachment](API_TransitGatewayPeeringAttachment.md)
 +  [TransitGatewayPeeringAttachmentOptions](API_TransitGatewayPeeringAttachmentOptions.md)

@@ -57,6 +57,12 @@ Required: Yes
       "dbNodeStorageSizeInGBs": number,
       "dbServerVersion": "string",
       "displayName": "string",
+      "exascaleConfiguration": {
+         "availableStorageSizeInGBs": number,
+         "availableVmStorageSizeInGBs": number,
+         "totalStorageSizeInGBs": number,
+         "totalVmStorageSizeInGBs": number
+      },
       "lastMaintenanceRunId": "string",
       "maintenanceWindow": {
          "customActionTimeoutInMins": number,

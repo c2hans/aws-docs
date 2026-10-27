@@ -13,6 +13,11 @@ The configuration settings for a router input.
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
 
+ ** destinationEndpoint **   <a name="mediaconnect-Type-RouterInputConfiguration-destinationEndpoint"></a>
+Configuration settings for a router input that is represented by a destination endpoint.
+Type: [DestinationEndpointRouterInputConfiguration](API_DestinationEndpointRouterInputConfiguration.md) object
+Required: No
+
  ** failover **   <a name="mediaconnect-Type-RouterInputConfiguration-failover"></a>
 Configuration settings for a failover router input that allows switching between two input sources.
 Type: [FailoverRouterInputConfiguration](API_FailoverRouterInputConfiguration.md) object

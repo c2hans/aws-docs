@@ -20,42 +20,42 @@ GET /v1/authorize?client_id={{clientId}}&code_challenge={{codeChallenge}}&code_c
 The request uses the following URI parameters.
 
  ** [clientId](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-clientId"></a>
-Client identifier which is unique to authorization server. Expected values: `arn:aws:signin:::devtools/same-device`, `arn:aws:signin:::devtools/cross-device`, or `arn:aws:signin:{region}::external-client/dcr/{uuid}` for dynamically registered clients.
+Client identifier unique to the authorization server. Expected values: `arn:aws:signin:::devtools/same-device`, `arn:aws:signin:::devtools/cross-device`, or `arn:aws:signin:{region}::external-client/dcr/{uuid}` for dynamically registered clients.
 Pattern: `arn:aws:signin:::devtools/(same-device|cross-device)$|^arn:aws:signin:[^:]*::external-client/dcr/.*`
 Required: Yes
 
  ** [codeChallenge](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-codeChallenge"></a>
-PKCE code challenge (SHA-256 hash of code verifier). Base64URL encoded, 43-128 characters.
+PKCE code challenge (SHA-256 hash of the code verifier). Base64URL encoded, 43-128 characters.
 Length Constraints: Minimum length of 43. Maximum length of 128.
 Pattern: `[A-Za-z0-9\-._~]+`
 Required: Yes
 
  ** [codeChallengeMethod](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-codeChallengeMethod"></a>
-PKCE code challenge method - must be `SHA-256` for AWS CLI.
+PKCE code challenge method. Must be `SHA-256` for AWS CLI.
 Pattern: `SHA-256`
 Required: Yes
 
  ** [redirectUri](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-redirectUri"></a>
-Redirect URI where authorization code will be sent.
+Redirect URI where the authorization code is sent.
 Same-device: `http://127.0.0.1:PORT/oauth/callback`
 Cross-device: `https://{region}.signin.aws.amazon.com/v1/sessions/confirmation`
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
  ** [resource](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-resource"></a>
-The OAuth resource for which the access token is requested. This identifies the target service that the token grants access to. To scope the access token down to the specific resource, the resource parameter is mandated under RFC 8707 (Resource Indicators for OAuth 2.0).
+The OAuth resource for which the access token is requested. This identifies the target service that the token grants access to. To scope the access token to the specific resource, the resource parameter is mandated under RFC 8707 (Resource Indicators for OAuth 2.0).
 If the client is a dynamically registered (DCR) client, this parameter is required.
 Example: `https://aws-mcp.us-east-1.api.aws/mcp`.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 
  ** [responseType](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-responseType"></a>
-OAuth 2.0 response type - must be `code` for authorization code flow.
+OAuth 2.0 response type. Must be `code` for authorization code flow.
 Pattern: `code`
 Required: Yes
 
  ** [scope](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-scope"></a>
-OAuth 2.0 scope parameter - must be `openid` for AWS CLI clients.
-Pattern: `openid`
+OAuth 2.0 scope parameter. Must be `openid` for AWS CLI clients.
+Length Constraints: Minimum length of 1. Maximum length of 4096.
 
  ** [state](#API_dataplane-signin_AuthorizeOAuth2Access_RequestSyntax) **   <a name="signin-dataplane-signin_AuthorizeOAuth2Access-request-uri-state"></a>
 CSRF protection parameter to prevent authorization injection attacks.
@@ -98,15 +98,15 @@ Example values:
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
  ** BadRequestException **
-The request is invalid. Used for OAuth 2.0 request validation errors such as missing required parameters, invalid parameter values, malformed PKCE parameters, or invalid scope values.
+The request failed because of an invalid OAuth 2.0 request parameter, such as a missing required parameter, an invalid value, a malformed PKCE parameter, or an invalid scope.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+The request failed because of an internal server error.
 HTTP Status Code: 500
 
  ** TooManyRequestsError **
-Indicates that the principal has exceeded the limit of requests to this API operation.
+The request failed because you exceeded the request rate limit for this operation.
 HTTP Status Code: 429
 
 ## See Also

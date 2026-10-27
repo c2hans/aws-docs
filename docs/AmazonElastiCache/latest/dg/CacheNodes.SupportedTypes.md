@@ -272,7 +272,7 @@ Instance types with burstable network performance use a network I/O credit mecha
 | cache.m4.2xlarge | 4.0.10 | Y | Y | Y | 1.0 | 10.0 | 29.70 |
 | cache.m4.4xlarge | 4.0.10 | Y | Y | Y | 2.0 | 10.0 | 60.78 |
 | cache.m4.10xlarge | 4.0.10 | Y | Y | Y | 5.0 | 10.0 | 154.64 |
-| cache.t4g.micro | 4.0.10 | N | N | N | 0.064 | 5.0 | 0.50 |
+| cache.t4g.micro | 5.0.6 | No | No | No | 0.064 | 5.0 | 0.50 |
 | cache.t4g.small | 5.0.6 | No | No | No | 0.128 | 5.0 | 1.37 |
 | cache.t4g.medium | 5.0.6 | No | No | No | 0.256 | 5.0 | 3.09 |
 | cache.t3.micro | 4.0.10 | N | N | N | 0.064 | 5.0 | 0.50 |

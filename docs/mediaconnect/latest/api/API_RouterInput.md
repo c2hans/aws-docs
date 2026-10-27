@@ -52,7 +52,7 @@ Required: Yes
  ** inputType **   <a name="mediaconnect-Type-RouterInput-inputType"></a>
 The type of the router input.
 Type: String
-Valid Values: `STANDARD | FAILOVER | MERGE | MEDIACONNECT_FLOW | MEDIALIVE_CHANNEL`
+Valid Values: `STANDARD | FAILOVER | MERGE | MEDIACONNECT_FLOW | MEDIALIVE_CHANNEL | DESTINATION_ENDPOINT`
 Required: Yes
 
  ** maintenanceConfiguration **   <a name="mediaconnect-Type-RouterInput-maintenanceConfiguration"></a>
@@ -136,6 +136,13 @@ Required: Yes
 The timestamp when the router input was last updated.
 Type: Timestamp
 Required: Yes
+
+ ** associatedDestinationEndpointArns **   <a name="mediaconnect-Type-RouterInput-associatedDestinationEndpointArns"></a>
+The Amazon Resource Names (ARNs) of one or more destination endpoints that are associated with this router input.
+Type: Array of strings
+Length Constraints: Minimum length of 64. Maximum length of 128.
+Pattern: `arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:destinationEndpoint:[a-z0-9]{12}`
+Required: No
 
  ** ipAddress **   <a name="mediaconnect-Type-RouterInput-ipAddress"></a>
 The IP address of the router input.

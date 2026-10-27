@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/supported.html
  For Amazon EC2 instances, Amazon Inspector can scan for package vulnerabilities in operating systems that support agent-based scanning. Amazon Inspector can also scan for package vulnerabilities in operating systems and programming languages that support hybrid scanning. Amazon Inspector does not scan for toolchain vulnerabilities. The version of the programming language compiler used to build the application introduces these vulnerabilities.
 +  Container images stored in Amazon Elastic Container Registry (Amazon ECR) repositories
 **Note**
- For ECR container images, Amazon Inspector can scan for operating system and programming language package vulnerabilities. Amazon Inspector also supports hardened images provided by Chainguard, Minimus, Echo, Docker, and Red Hat. Amazon Inspector does not scan for toolchain vulnerabilities in Rust——the version of the programming language compiler used to build the application introduces these vulnerabilities.
+ For ECR container images, Amazon Inspector can scan for operating system and programming language package vulnerabilities. Amazon Inspector also supports hardened images provided by Chainguard, Echo, Docker, and Red Hat. Amazon Inspector does not scan for toolchain vulnerabilities in Rust——the version of the programming language compiler used to build the application introduces these vulnerabilities.
 +  AWS Lambda functions
 **Note**
  For Lambda functions, Amazon Inspector can scan for programming language package vulnerabilities and code vulnerabilities. Amazon Inspector does not scan for toolchain vulnerabilities. The version of the programming language compiler used to build the application introduces these vulnerabilities.
@@ -133,7 +133,6 @@ Ubuntu
 | Fedora | 43 | CVE Errata | Fixed | Yes | Yes |
 | Fedora | 44 | CVE Errata | Fixed | Yes | Yes |
 | Hummingbird OS | – | RHEL VEX CVE | Fixed | Yes | No |
-| MinimOS | – | CVE Errata | Fixed | Yes | Yes |
 | Oracle Linux | 8 | CVE Errata | Fixed | Yes | Yes |
 | Oracle Linux | 9 | CVE Errata | Fixed | Yes | Yes |
 | Oracle Linux | 10 | CVE Errata | Fixed | Yes | Yes |
@@ -209,7 +208,6 @@ Ubuntu
 | Fedora | 44 |
 | Hummingbird OS | – |
 | macOS | 11\+ |
-| MinimOS | – |
 | Oracle Linux | 8 |
 | Oracle Linux | 9 |
 | Oracle Linux | 10 |
@@ -283,6 +281,7 @@ Ubuntu
 | Fedora | 40 | May 13, 2025 |
 | Fedora | 41 | November 19, 2025 |
 | Fedora | 42 | May 13, 2026 |
+| MinimOS | – | October 22, 2026 |
 | OpenSUSE Leap | 15.2 | December 1, 2021 |
 | OpenSUSE Leap | 15.3 | December 1, 2022 |
 | OpenSUSE Leap | 15.4 | December 7, 2023 |
@@ -371,7 +370,7 @@ Deep inspection is not supported for Bottlerocket operating systems.
  Amazon Inspector currently supports the following programming languages when scanning container images in Amazon ECR repositories:
 
 **Note**
- Amazon Inspector doesn't scan for toolchain vulnerabilities in Rust. The version of the programming language compiler used to build the application introduces these vulnerabilities. For Python and Java applications using Chainguard Libraries, Amazon Inspector recognizes the back-ported security fixes and excludes them from findings. Amazon Inspector also recognizes the back-ported security fixes for Python, Java, and JavaScript applications using Echo Libraries. For more information, see [Chainguard Libraries](https://www.chainguard.dev/libraries) on the Chainguard website and [Echo Libraries](https://www.echo.ai/product/libraries) on the Echo website.
+ Amazon Inspector doesn't scan for toolchain vulnerabilities in Rust. The version of the programming language compiler used to build the application introduces these vulnerabilities. For Python, Java, and JavaScript applications using Chainguard Libraries or Echo Libraries, Amazon Inspector recognizes the back-ported security fixes and excludes them from findings. For more information, see [Chainguard Libraries](https://www.chainguard.dev/libraries) on the Chainguard website and [Echo Libraries](https://www.echo.ai/product/libraries) on the Echo website.
 + C\#
 + Go
 + Go toolchain

@@ -50,7 +50,7 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [clientToken](#API_CreateExadbVmCluster_RequestSyntax) **   <a name="odb-CreateExadbVmCluster-request-clientToken"></a>
-A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don't specify a client token, the Amazon Web Services SDK automatically generates one and uses it for the request to ensure idempotency. The client token is valid for up to 24 hours after it's first used.
+A unique, case-sensitive identifier that you provide to ensure that the operation completes no more than one time. If you submit the same request twice with the same client token, the service ignores the second request and returns the result of the first. If you don't specify a client token, the AWS SDK automatically generates one. The client token is valid for up to 24 hours after it's first used.
 Type: String
 Length Constraints: Minimum length of 8. Maximum length of 64.
 Pattern: `[a-zA-Z0-9_\/.=-]+`
@@ -121,13 +121,13 @@ Pattern: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z
 Required: Yes
 
  ** [scanListenerPortTcp](#API_CreateExadbVmCluster_RequestSyntax) **   <a name="odb-CreateExadbVmCluster-request-scanListenerPortTcp"></a>
-The port number for TCP connections to the single client access name (SCAN) listener.
+The port number for TCP connections to the Single Client Access Name (SCAN) listener.
 Type: Integer
 Valid Range: Minimum value of 1024. Maximum value of 8999.
 Required: No
 
  ** [scanListenerPortTcpSsl](#API_CreateExadbVmCluster_RequestSyntax) **   <a name="odb-CreateExadbVmCluster-request-scanListenerPortTcpSsl"></a>
-The port number for TCP connections with SSL to the single client access name (SCAN) listener.
+Reserved for future use.
 Type: Integer
 Valid Range: Minimum value of 1024. Maximum value of 8999.
 Required: No

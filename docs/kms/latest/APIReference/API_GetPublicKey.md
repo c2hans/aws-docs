@@ -75,6 +75,7 @@ Required: No
 ```
 {
    "CustomerMasterKeySpec": "string",
+   "EncapsulationAlgorithms": [ "string" ],
    "EncryptionAlgorithms": [ "string" ],
    "KeyAgreementAlgorithms": [ "string" ],
    "KeyId": "string",
@@ -99,6 +100,11 @@ The `KeySpec` and `CustomerMasterKeySpec` fields have the same value. We recomme
 Type: String
 Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2`
 
+ ** [EncapsulationAlgorithms](#API_GetPublicKey_ResponseSyntax) **   <a name="KMS-GetPublicKey-response-EncapsulationAlgorithms"></a>
+The key encapsulation algorithm used to establish a shared secret. This field is present only when the KMS key has a `KeyUsage` value of `ENCAPSULATE_DECAPSULATE`.
+Type: Array of strings
+Valid Values: `ML_KEM`
+
  ** [EncryptionAlgorithms](#API_GetPublicKey_ResponseSyntax) **   <a name="KMS-GetPublicKey-response-EncryptionAlgorithms"></a>
 The encryption algorithms that AWS KMS supports for this key.
 This information is critical. If a public key encrypts data outside of AWS KMS by using an unsupported encryption algorithm, the ciphertext cannot be decrypted.
@@ -119,13 +125,13 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
  ** [KeySpec](#API_GetPublicKey_ResponseSyntax) **   <a name="KMS-GetPublicKey-response-KeySpec"></a>
 The type of the of the public key that was downloaded.
 Type: String
-Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519`
+Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519 | ML_KEM_512 | ML_KEM_768 | ML_KEM_1024`
 
  ** [KeyUsage](#API_GetPublicKey_ResponseSyntax) **   <a name="KMS-GetPublicKey-response-KeyUsage"></a>
 The permitted use of the public key. Valid values for asymmetric key pairs are `ENCRYPT_DECRYPT`, `SIGN_VERIFY`, and `KEY_AGREEMENT`.
 This information is critical. For example, if a public key with `SIGN_VERIFY` key usage encrypts data outside of AWS KMS, the ciphertext cannot be decrypted.
 Type: String
-Valid Values: `SIGN_VERIFY | ENCRYPT_DECRYPT | GENERATE_VERIFY_MAC | KEY_AGREEMENT`
+Valid Values: `SIGN_VERIFY | ENCRYPT_DECRYPT | GENERATE_VERIFY_MAC | KEY_AGREEMENT | ENCAPSULATE_DECAPSULATE`
 
  ** [PublicKey](#API_GetPublicKey_ResponseSyntax) **   <a name="KMS-GetPublicKey-response-PublicKey"></a>
 The exported public key.
@@ -165,7 +171,7 @@ HTTP Status Code: 400
 The request was rejected for one of the following reasons:
 + The `KeyUsage` value of the KMS key is incompatible with the API operation.
 + The encryption algorithm or signing algorithm specified for the operation is incompatible with the type of key material in the KMS key `(KeySpec`).
-For encrypting, decrypting, re-encrypting, and generating data keys, the `KeyUsage` must be `ENCRYPT_DECRYPT`. For signing and verifying messages, the `KeyUsage` must be `SIGN_VERIFY`. For generating and verifying message authentication codes (MACs), the `KeyUsage` must be `GENERATE_VERIFY_MAC`. For deriving key agreement secrets, the `KeyUsage` must be `KEY_AGREEMENT`. To find the `KeyUsage` of a KMS key, use the [DescribeKey](API_DescribeKey.md) operation.
+For encrypting, decrypting, re-encrypting, and generating data keys, the `KeyUsage` must be `ENCRYPT_DECRYPT`. For signing and verifying messages, the `KeyUsage` must be `SIGN_VERIFY`. For generating and verifying message authentication codes (MACs), the `KeyUsage` must be `GENERATE_VERIFY_MAC`. For deriving key agreement secrets, the `KeyUsage` must be `KEY_AGREEMENT`. For encapsulating and decapsulating shared secrets, the `KeyUsage` must be `ENCAPSULATE_DECAPSULATE`. To find the `KeyUsage` of a KMS key, use the [DescribeKey](API_DescribeKey.md) operation.
 To find the encryption or signing algorithms supported for a particular KMS key, use the [DescribeKey](API_DescribeKey.md) operation.
 HTTP Status Code: 400
 

@@ -48,6 +48,7 @@ Content-type: application/json
    "routerInputs": [
       {
          "arn": "string",
+         "associatedDestinationEndpointArns": [ "string" ],
          "availabilityZone": "string",
          "configuration": { ... },
          "contentQualityAnalysisConfiguration": { ... },

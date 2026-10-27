@@ -58,6 +58,7 @@ Content-type: application/json
          "arn": "string",
          "authorized": boolean,
          "containerFormat": "string",
+         "failoverSlateConfigurationArn": "string",
          "ingestEndpoint": "string",
          "insecureIngest": boolean,
          "latencyMode": "string",
@@ -81,6 +82,17 @@ Content-type: application/json
          "type": "string"
       },
       "endTime": "string",
+      "failoverSlateConfiguration": {
+         "activationThresholdSeconds": number,
+         "arn": "string",
+         "maxSlateDisplaySeconds": number,
+         "minSlateDisplaySeconds": number,
+         "name": "string",
+         "state": "string",
+         "tags": {
+            "string" : "string"
+         }
+      },
       "ingestConfiguration": {
          "audio": {
             "channels": number,

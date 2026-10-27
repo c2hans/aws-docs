@@ -7,6 +7,16 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-n
 
 This document contains all Amazon IVS Low-Latency Streaming release notes, latest first, organized by date of release.
 
+## October 26, 2026
+<a name="oct26-26-failover-slate"></a>
+
+### Failover Slate
+<a name="oct26-26-failover-slate-details"></a>
+
+Amazon IVS failover slate automatically displays an animated slate to viewers during unexpected stream interruptions and seamlessly resumes playback when the broadcaster reconnects, preventing buffering wheels and retaining audience engagement.
+
+See the new [Failover Slate](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/failover-slate.html) document in the *IVS Low-Latency Streaming User Guide*. For details of all documentation changes, see the [Document History](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/doc-history.html) (both the User Guide and API Reference tables).
+
 ## October 22, 2026
 <a name="oct22-26-broadcast-web-ll"></a>
 

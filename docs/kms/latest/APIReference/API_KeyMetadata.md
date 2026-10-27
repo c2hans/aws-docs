@@ -82,6 +82,12 @@ Specifies whether the KMS key is enabled. When `KeyState` is `Enabled` this valu
 Type: Boolean
 Required: No
 
+ ** EncapsulationAlgorithms **   <a name="KMS-Type-KeyMetadata-EncapsulationAlgorithms"></a>
+The key encapsulation algorithm that the KMS key supports. This field appears only for KMS keys with a `KeyUsage` value of `ENCAPSULATE_DECAPSULATE`.
+Type: Array of strings
+Valid Values: `ML_KEM`
+Required: No
+
  ** EncryptionAlgorithms **   <a name="KMS-Type-KeyMetadata-EncryptionAlgorithms"></a>
 The encryption algorithms that the KMS key supports. You cannot use the KMS key with other encryption algorithms within AWS KMS.
 This value is present only when the `KeyUsage` of the KMS key is `ENCRYPT_DECRYPT`.
@@ -110,7 +116,7 @@ Required: No
  ** KeySpec **   <a name="KMS-Type-KeyMetadata-KeySpec"></a>
 Describes the type of key material in the KMS key.
 Type: String
-Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519`
+Valid Values: `RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SYMMETRIC_DEFAULT | HMAC_224 | HMAC_256 | HMAC_384 | HMAC_512 | SM2 | ML_DSA_44 | ML_DSA_65 | ML_DSA_87 | ECC_NIST_EDWARDS25519 | ML_KEM_512 | ML_KEM_768 | ML_KEM_1024`
 Required: No
 
  ** KeyState **   <a name="KMS-Type-KeyMetadata-KeyState"></a>
@@ -123,7 +129,7 @@ Required: No
  ** KeyUsage **   <a name="KMS-Type-KeyMetadata-KeyUsage"></a>
 The [cryptographic operations](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#cryptographic-operations) for which you can use the KMS key.
 Type: String
-Valid Values: `SIGN_VERIFY | ENCRYPT_DECRYPT | GENERATE_VERIFY_MAC | KEY_AGREEMENT`
+Valid Values: `SIGN_VERIFY | ENCRYPT_DECRYPT | GENERATE_VERIFY_MAC | KEY_AGREEMENT | ENCAPSULATE_DECAPSULATE`
 Required: No
 
  ** MacAlgorithms **   <a name="KMS-Type-KeyMetadata-MacAlgorithms"></a>

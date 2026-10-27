@@ -145,6 +145,7 @@ Required: No
       "DeletionDate": number,
       "Description": "string",
       "Enabled": boolean,
+      "EncapsulationAlgorithms": [ "string" ],
       "EncryptionAlgorithms": [ "string" ],
       "ExpirationModel": "string",
       "KeyAgreementAlgorithms": [ "string" ],

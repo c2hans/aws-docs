@@ -72,7 +72,7 @@ Required: Yes
  ** outputType **   <a name="mediaconnect-Type-RouterOutput-outputType"></a>
 The type of the router output.
 Type: String
-Valid Values: `STANDARD | MEDIACONNECT_FLOW | MEDIALIVE_INPUT`
+Valid Values: `STANDARD | MEDIACONNECT_FLOW | MEDIALIVE_INPUT | SOURCE_ENDPOINT`
 Required: Yes
 
  ** regionName **   <a name="mediaconnect-Type-RouterOutput-regionName"></a>
@@ -125,6 +125,13 @@ Required: Yes
 The timestamp when the router output was last updated.
 Type: Timestamp
 Required: Yes
+
+ ** associatedSourceEndpointArns **   <a name="mediaconnect-Type-RouterOutput-associatedSourceEndpointArns"></a>
+The Amazon Resource Names (ARNs) of one or more source endpoints that are associated with this router output.
+Type: Array of strings
+Length Constraints: Minimum length of 64. Maximum length of 128.
+Pattern: `arn:(aws[a-zA-Z-]*):mediaconnect:[a-z0-9-]+:[0-9]{12}:sourceEndpoint:[a-z0-9]{12}`
+Required: No
 
  ** ipAddress **   <a name="mediaconnect-Type-RouterOutput-ipAddress"></a>
 The IP address of the router output.

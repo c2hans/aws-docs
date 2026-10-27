@@ -10,6 +10,11 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026
 <a name="_october_2026"></a>
 
+### AWS Agent Registry now available in US East (Ohio), Europe (Frankfurt), Europe (London), and Canada (Central)
+<a name="shared_aws_agent_registry_now_available_in_us_east_ohio_europe_frankfurt_europe_london_and_canada_central"></a>
+
+ AWS Agent Registry is now available in US East (Ohio), Europe (Frankfurt), Europe (London), and Canada (Central). As in the other AWS Regions that support Agent Registry, semantic search uses cross-region inference. For more information, see [Supported AWS Regions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html) and [Cross-region inference in AWS Agent Registry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-region-inference.html).
+
 ### Gateway: Amazon Bedrock InvokeModel support on inference targets
 <a name="_gateway_amazon_bedrock_invokemodel_support_on_inference_targets_2"></a>
 

@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[SnapshotMode](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotmode)" : {{String}},
   "[SnapshotsEnabled](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled)" : {{Boolean}}
 }
 ```
@@ -27,11 +28,19 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-syntax.yaml"></a>
 
 ```
+  [SnapshotMode](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotmode): {{String}}
   [SnapshotsEnabled](#cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled): {{Boolean}}
 ```
 
 ## Properties
 <a name="aws-properties-kinesisanalyticsv2-application-applicationsnapshotconfiguration-properties"></a>
+
+`SnapshotMode`  <a name="cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `APPLICATION_SNAPSHOTS_LEGACY | ENHANCED_SNAPSHOTS`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SnapshotsEnabled`  <a name="cfn-kinesisanalyticsv2-application-applicationsnapshotconfiguration-snapshotsenabled"></a>
 Describes whether snapshots are enabled for a Managed Service for Apache Flink application.

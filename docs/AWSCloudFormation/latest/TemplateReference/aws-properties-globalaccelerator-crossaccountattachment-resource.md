@@ -38,7 +38,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-globalaccelerator-crossaccountattachment-resource-properties"></a>
 
 `Cidr`  <a name="cfn-globalaccelerator-crossaccountattachment-resource-cidr"></a>
-An IP address range, in CIDR format, that is specified as resource. The address must be provisioned and advertised in AWS Global Accelerator by following the bring your own IP address (BYOIP) process for Global Accelerator
+An IP address range, in CIDR format, that is specified as a resource. The address must be provisioned and advertised in AWS Global Accelerator by following the bring your own IP address (BYOIP) process for Global Accelerator
  For more information, see [Bring your own IP addresses (BYOIP)](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.html) in the AWS Global Accelerator Developer Guide.
 *Required*: No
 *Type*: String

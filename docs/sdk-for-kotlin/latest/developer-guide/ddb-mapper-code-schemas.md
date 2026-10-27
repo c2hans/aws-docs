@@ -188,9 +188,9 @@ You can reference a custom value converter from a [`SimpleItemConverter`](/sdk-f
 Two more built-in [`ItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-item-converter/index.html) implementations cover specialized mappings:
 
 ### HeterogeneousItemConverter
-<a name="_heterogeneousitemconverter"></a>
+<a name="ddb-mapper-code-schemas-heterogeneous"></a>
 
- `HeterogeneousItemConverter` maps polymorphic or heterogeneous types by using a string discriminator attribute and delegating to per-subtype converters. You provide: \* `typeMapper`: a function which returns the discriminator value for an object \* `typeAttribute`: the item attribute name which stores the discriminator \* `subConverters`: a map from discriminator values to [`ItemConverter`s](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-item-converter/index.html) for each subtype. Each subtype converter is an ordinary [`ItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-item-converter/index.html) such as a [`SimpleItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-simple-item-converter/index.html) built as shown [earlier in this topic](#ddb-mapper-code-schemas-simple-converter)).
+ [`HeterogeneousItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-heterogeneous-item-converter/index.html) maps polymorphic or heterogeneous types by storing a string type name in a discriminator attribute and delegating to a separate converter for each type. Build one by passing the discriminator attribute name and registering a converter for each type. Each converter is an ordinary [`ItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-item-converter/index.html), such as a [`SimpleItemConverter`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper.items/-simple-item-converter/index.html) built as shown [earlier in this topic](#ddb-mapper-code-schemas-simple-converter).
 
 For example:
 
@@ -203,24 +203,23 @@ sealed interface PaymentMethod {
     data class GiftCard(val customerId: String, val methodId: String, val balanceCents: Long) : PaymentMethod
 }
 
-fun paymentType(p: PaymentMethod): String = when (p) {
-    is PaymentMethod.CreditCard -> "credit_card"
-    is PaymentMethod.BankAccount -> "bank_account"
-    is PaymentMethod.GiftCard -> "gift_card"
+val paymentConverter = HeterogeneousItemConverter<PaymentMethod>(typeAttribute = "type") {
+    exactType("bank_account", bankAccountConverter)
+    exactType("credit_card", creditCardConverter)
+    exactType("gift_card", giftCardConverter)
 }
-
-val paymentConverter = HeterogeneousItemConverter(
-    typeMapper = ::paymentType,
-    typeAttribute = "type",
-    subConverters = mapOf(
-        "bank_account" to bankAccountConverter,
-        "credit_card" to creditCardConverter,
-        "gift_card" to giftCardConverter,
-    ),
-)
 ```
 
-Each object is stored using only the attributes relevant to its subtype, plus the discriminator.
+Two methods register a type:
++  `exactType` matches only objects whose class is exactly the registered type.
++  `instanceOf` matches objects of the registered type or any of its subtypes.
+
+When writing an object, the converter uses the first registration that matches it, so register more specific types before less specific ones. Each object is stored using only the attributes of its own type, plus the discriminator. The discriminator attribute belongs to the heterogeneous converter, so the registered converters must not write it. Reading an item whose discriminator is missing or unregistered throws `IllegalArgumentException`.
+
+If the type name can’t be derived from an object’s class (for example, if it depends on a property value), use the constructor that takes a `typeMapper` function and a map of type names to converters instead.
+
+**Tip**
+If you generate schemas from annotations, the schema-generator plugin can build this converter for you. See [Map heterogeneous types with annotations](ddb-mapper-anno-heterogeneous.md).
 
 ### DocumentItemConverter
 <a name="_documentitemconverter"></a>

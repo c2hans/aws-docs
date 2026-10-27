@@ -39,7 +39,7 @@ Required: No
  ** type **
 The route type.
 Type: String
-Valid Values: `static | propagated`
+Valid Values: `static | propagated | system`
 Required: No
 
 ## See Also

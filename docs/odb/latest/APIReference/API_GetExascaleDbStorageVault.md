@@ -41,6 +41,8 @@ Required: Yes
       "autoscaleLimitInGBs": number,
       "availabilityZone": "string",
       "availabilityZoneId": "string",
+      "cloudExadataInfrastructureArn": "string",
+      "cloudExadataInfrastructureId": "string",
       "createdAt": "string",
       "description": "string",
       "displayName": "string",
@@ -58,6 +60,7 @@ Required: Yes
       "status": "string",
       "statusReason": "string",
       "timeZone": "string",
+      "vaultType": "string",
       "vmClusterArns": [ "string" ],
       "vmClusterCount": number,
       "vmClusterIds": [ "string" ]

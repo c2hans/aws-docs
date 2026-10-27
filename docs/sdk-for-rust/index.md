@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/index.html
 title: 'AWS SDK for Rust Documentation'
 canonical_url: https://docs.aws.amazon.com/sdk-for-rust/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-27
 ---
 
 # AWS SDK for Rust Documentation

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/iso-20022-messaging-workflows-
 title: 'Guidance for ISO 20022 Messaging Workflows on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/iso-20022-messaging-workflows-on-aws/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-27
 ---
 
 # Guidance for ISO 20022 Messaging Workflows on AWS

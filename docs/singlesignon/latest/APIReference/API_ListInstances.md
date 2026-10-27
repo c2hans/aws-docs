@@ -13,7 +13,8 @@ Lists the details of the organization and account instances of IAM Identity Cent
 ```
 {
    "MaxResults": {{number}},
-   "NextToken": "{{string}}"
+   "NextToken": "{{string}}",
+   "RegionScope": "{{string}}"
 }
 ```
 
@@ -35,6 +36,15 @@ The pagination token for the list API. Initially the value is null. Use the outp
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 Pattern: `[-a-zA-Z0-9+=/_]*`
+Required: No
+
+ ** [RegionScope](#API_ListInstances_RequestSyntax) **   <a name="singlesignon-ListInstances-request-RegionScope"></a>
+Specifies which AWS Regions to list AWS IAM Identity Center instances from. Valid values:
++  `CURRENT_REGION` - Lists only the instances in the Region that you call this API from.
++  `ALL_REGIONS` - Lists the instances that the caller owns or that are shared with the caller across all Regions.
+If you don't specify a value, the default is `CURRENT_REGION`.
+Type: String
+Valid Values: `CURRENT_REGION | ALL_REGIONS`
 Required: No
 
 ## Response Syntax

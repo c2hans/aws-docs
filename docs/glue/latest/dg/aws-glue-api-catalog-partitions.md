@@ -386,6 +386,7 @@ Creates one or more partitions in a batch operation.
 + `EntityNotFoundException`
 + `OperationTimeoutException`
 + `GlueEncryptionException`
++ `ConcurrentModificationException`
 
 ## UpdatePartition action (Python: update\_partition)
 <a name="aws-glue-api-catalog-partitions-UpdatePartition"></a>
@@ -478,6 +479,7 @@ Deletes one or more partitions in a batch operation.
 + `EntityNotFoundException`
 + `InternalServiceException`
 + `OperationTimeoutException`
++ `ConcurrentModificationException`
 
 ## GetPartition action (Python: get\_partition)
 <a name="aws-glue-api-catalog-partitions-GetPartition"></a>
@@ -724,6 +726,7 @@ Updates one or more partitions in a batch operation.
 + `OperationTimeoutException`
 + `InternalServiceException`
 + `GlueEncryptionException`
++ `ConcurrentModificationException`
 
 ## GetColumnStatisticsForPartition action (Python: get\_column\_statistics\_for\_partition)
 <a name="aws-glue-api-catalog-partitions-GetColumnStatisticsForPartition"></a>

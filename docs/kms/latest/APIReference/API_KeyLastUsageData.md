@@ -26,7 +26,7 @@ Required: No
  ** Operation **   <a name="KMS-Type-KeyLastUsageData-Operation"></a>
 The last successful cryptographic operation the KMS key was used for. Absent if the key has not been used since AWS KMS began tracking.
 Type: String
-Valid Values: `Decrypt | DeriveSharedSecret | Encrypt | GenerateDataKey | GenerateDataKeyPair | GenerateDataKeyPairWithoutPlaintext | GenerateDataKeyWithoutPlaintext | GenerateMac | ReEncrypt | Sign | Verify | VerifyMac`
+Valid Values: `Decrypt | DeriveSharedSecret | Encrypt | GenerateDataKey | GenerateDataKeyPair | GenerateDataKeyPairWithoutPlaintext | GenerateDataKeyWithoutPlaintext | GenerateMac | ReEncrypt | Sign | Verify | VerifyMac | Encapsulate | Decapsulate`
 Required: No
 
  ** Timestamp **   <a name="KMS-Type-KeyLastUsageData-Timestamp"></a>

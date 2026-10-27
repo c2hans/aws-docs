@@ -12,6 +12,10 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connector-grou
 
 Now say that a call comes in to the Voice Connector in the US East (N. Virginia) Region. If that Region has a connectivity issue, the call automatically reroutes to the Voice Connector in the US West (Oregon) Region.
 
+A host on the current Voice Connector can return one of the final responses described in [Editing origination settings](edit-voicecon.md#edit-origination). If it does, the Voice Connector doesn't move the call to another Voice Connector in the Voice Connector group.
+
+If every host on the current Voice Connector fails to respond or returns another `4xx` or `5xx` response, the Voice Connector moves the call to the next Voice Connector in the Voice Connector group.
+
 **Get started with an Amazon Chime SDK Voice Connector group**
 To get started, first create Voice Connectors in different AWS Regions. Then, create a Voice Connector group and assign the Voice Connectors to it. You can also provision phone numbers for your Voice Connector group from your Amazon Chime SDK **Phone number management** inventory. For more information, see [Provisioning phone numbers](provision-phone.md). For more information about creating Amazon Chime SDK Voice Connectors in different AWS Regions, see [Managing Amazon Chime SDK Voice Connectors](voice-connectors.md).
 

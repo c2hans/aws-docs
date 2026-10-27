@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/cost-optimizer-for-amazon-wor
 title: 'Cost Optimizer for Amazon WorkSpaces'
 canonical_url: https://docs.aws.amazon.com/solutions/cost-optimizer-for-amazon-workspaces/
 source: aws-documentation
-generated_on: 2026-10-23
+generated_on: 2026-10-27
 ---
 
 # Cost Optimizer for Amazon WorkSpaces
 
 Monitor Amazon WorkSpaces usage and optimize costs
 
-- **Version**: 2.9.14
+- **Version**: 2.9.15
 - **Released**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 5-15 mins
@@ -21,7 +21,7 @@ Monitor Amazon WorkSpaces usage and optimize costs
 
 ## Overview
 
-Cost Optimizer for Amazon WorkSpaces analyzes all of your Amazon WorkSpaces usage data and automatically converts the WorkSpace to the most cost-effective billing option (hourly or monthly), depending on your individual usage. You can use this AWS Solution with a single account—or with AWS Organizations across multiple accounts—to help you monitor your WorkSpace usage and optimize costs. This solution calculates hourly WorkSpace usage once per day, just before midnight GMT. If the WorkSpace exceeds the hourly usage threshold, the solution will convert the WorkSpace from hourly to monthly billing. If usage exceeds the threshold after the nightly calculation, the WorkSpace will not be converted until usage is calculated the following night. You can manually change the billing model at any time using the WorkSpaces console. If you want to change the threshold for when each Workspace converts from hourly to monthly billing, the solution’s AWS CloudFormation template includes parameters that will execute these conversions. For more information, review [Billing model conversion](/solutions/latest/cost-optimizer-for-workspaces/overview.html) in the implementation guide.
+**Important: This solution will retire in April 2027. Deployments (via CloudFormation or GitHub) will remain operational, but customers will assume responsibility for maintenance and API-related updates post-retirement.** **The functionality provided by Cost Optimizer for Amazon WorkSpaces is moving to native [Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/) cost-optimization capabilities (delivered through WorkSpaces Advisor and AWS Compute Optimizer). The native direction will give customers a fully AWS-managed experience with no CloudFormation stack to deploy and maintain in your own account (no VPC, ECS, DynamoDB, or S3). [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/) already detects idle WorkSpaces, and [WorkSpaces Advisor](https://aws.amazon.com/workspaces/advisor/) surfaces prioritized recommendations you can action directly from the console. These native capabilities continue to expand over time. Customers can explore using WorkSpaces Advisor and AWS Compute Optimizer to get familiar with the native experience.** Cost Optimizer for Amazon WorkSpaces analyzes all of your Amazon WorkSpaces usage data and automatically converts the WorkSpace to the most cost-effective billing option (hourly or monthly), depending on your individual usage. You can use this AWS Solution with a single account—or with AWS Organizations across multiple accounts—to help you monitor your WorkSpace usage and optimize costs. This solution calculates hourly WorkSpace usage once per day, just before midnight GMT. If the WorkSpace exceeds the hourly usage threshold, the solution will convert the WorkSpace from hourly to monthly billing. If usage exceeds the threshold after the nightly calculation, the WorkSpace will not be converted until usage is calculated the following night. You can manually change the billing model at any time using the WorkSpaces console. If you want to change the threshold for when each Workspace converts from hourly to monthly billing, the solution’s AWS CloudFormation template includes parameters that will execute these conversions. For more information, review [Billing model conversion](/solutions/latest/cost-optimizer-for-workspaces/overview.html) in the implementation guide.
 
 ## Benefits
 

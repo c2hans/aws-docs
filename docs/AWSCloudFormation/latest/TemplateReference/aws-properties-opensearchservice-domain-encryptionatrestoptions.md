@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Enabled](#cfn-opensearchservice-domain-encryptionatrestoptions-enabled)" : {{Boolean}},
+  "[EncryptionMode](#cfn-opensearchservice-domain-encryptionatrestoptions-encryptionmode)" : {{String}},
   "[KmsKeyId](#cfn-opensearchservice-domain-encryptionatrestoptions-kmskeyid)" : {{String}}
 }
 ```
@@ -29,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Enabled](#cfn-opensearchservice-domain-encryptionatrestoptions-enabled): {{Boolean}}
+  [EncryptionMode](#cfn-opensearchservice-domain-encryptionatrestoptions-encryptionmode): {{String}}
   [KmsKeyId](#cfn-opensearchservice-domain-encryptionatrestoptions-kmskeyid): {{String}}
 ```
 
@@ -41,6 +43,13 @@ If no encryption at rest options were initially specified in the template, updat
 *Required*: Conditional
 *Type*: Boolean
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
+
+`EncryptionMode`  <a name="cfn-opensearchservice-domain-encryptionatrestoptions-encryptionmode"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Allowed values*: `DISK | NATIVE`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKeyId`  <a name="cfn-opensearchservice-domain-encryptionatrestoptions-kmskeyid"></a>
 The KMS key ID. Takes the form `1a2a3a4-1a2a-3a4a-5a6a-1a2a3a4a5a6a`. Required if you enable encryption at rest.

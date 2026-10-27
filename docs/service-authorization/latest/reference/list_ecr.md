@@ -154,6 +154,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeReplicationBackfillResults  **
+  - **IAM action:**  [ecr:DescribeReplicationBackfillResults](#list_ecr-action-DescribeReplicationBackfillResults)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   DescribeRepositories  **
   - **IAM action:**  [ecr:DescribeRepositories](#list_ecr-action-DescribeRepositories)
   - **Condition key:**
@@ -241,6 +247,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListReplicationBackfills  **
+  - **IAM action:**  [ecr:ListReplicationBackfills](#list_ecr-action-ListReplicationBackfills)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListTagsForResource  **
   - **IAM action:**  [ecr:ListTagsForResource](#list_ecr-action-ListTagsForResource)
   - **Condition key:**
@@ -321,6 +333,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   StartLifecyclePolicyPreview  **
   - **IAM action:**  [ecr:StartLifecyclePolicyPreview](#list_ecr-action-StartLifecyclePolicyPreview)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StartReplicationBackfill  **
+  - **IAM action:**  [ecr:StartReplicationBackfill](#list_ecr-action-StartReplicationBackfill)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StopReplicationBackfill  **
+  - **IAM action:**  [ecr:StopReplicationBackfill](#list_ecr-action-StopReplicationBackfill)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -503,6 +527,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [DescribeReplicationBackfillResults](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeReplicationBackfillResults.html)  **
+  - **Description:** Grants permission to retrieve the results of a replication backfill for the registry
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [DescribeRepositories](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_DescribeRepositories.html)  **
   - **Description:** Grants permission to describe image repositories in a registry
   - **Resource types (\*required):** [repository\*](#list_ecr-resource-repository)
@@ -583,6 +613,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListPullTimeUpdateExclusions](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListPullTimeUpdateExclusions)  **
   - **Description:** Grants permission to list pull time update exclusions for the registry
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListReplicationBackfills](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ListReplicationBackfills.html)  **
+  - **Description:** Grants permission to list the replication backfills for the registry
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -669,6 +705,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to start a preview of the specified lifecycle policy
   - **Resource types (\*required):** [repository\*](#list_ecr-resource-repository)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecr-aws_ResourceTag___TagKey_)<br />[ecr:ResourceTag/${TagKey}](#list_ecr-ecr_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [StartReplicationBackfill](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StartReplicationBackfill.html)  **
+  - **Description:** Grants permission to start a replication backfill to a destination region for the registry
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [StopReplicationBackfill](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StopReplicationBackfill.html)  **
+  - **Description:** Grants permission to stop an in-progress replication backfill for the registry
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** Write
 
 - **   [TagResource](https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_TagResource.html)  **

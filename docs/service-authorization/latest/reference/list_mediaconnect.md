@@ -306,6 +306,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   RegisterDestinationEndpoint  **
+  - **IAM action:**  [mediaconnect:TagResource](#list_mediaconnect-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   RegisterSourceEndpoint  **
+  - **IAM action:**  [mediaconnect:TagResource](#list_mediaconnect-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
 - **   RemoveBridgeOutput  **
   - **IAM action:**  [mediaconnect:RemoveBridgeOutput](#list_mediaconnect-action-RemoveBridgeOutput)
   - **Condition key:**

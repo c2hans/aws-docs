@@ -84,7 +84,7 @@ Required: Yes
 A list of operations that the grant permits.
 This list must include only operations that are permitted in a grant. Also, the operation must be supported on the KMS key. For example, you cannot create a grant for a symmetric encryption KMS key that allows the [Sign](API_Sign.md) operation, or a grant for an asymmetric KMS key that allows the [GenerateDataKey](API_GenerateDataKey.md) operation. If you try, AWS KMS returns a `ValidationError` exception. For details, see [Grant operations](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html#terms-grant-operations) in the * AWS Key Management Service Developer Guide*.
 Type: Array of strings
-Valid Values: `Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | Sign | Verify | GetPublicKey | CreateGrant | RetireGrant | DescribeKey | GenerateDataKeyPair | GenerateDataKeyPairWithoutPlaintext | GenerateMac | VerifyMac | DeriveSharedSecret`
+Valid Values: `Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | Sign | Verify | GetPublicKey | CreateGrant | RetireGrant | DescribeKey | GenerateDataKeyPair | GenerateDataKeyPairWithoutPlaintext | GenerateMac | VerifyMac | DeriveSharedSecret | Encapsulate | Decapsulate`
 Required: Yes
 
  ** [Constraints](#API_CreateGrant_RequestSyntax) **   <a name="KMS-CreateGrant-request-Constraints"></a>

@@ -67,7 +67,7 @@ Required: No
  ** Operations **   <a name="KMS-Type-GrantListEntry-Operations"></a>
 The list of operations permitted by the grant.
 Type: Array of strings
-Valid Values: `Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | Sign | Verify | GetPublicKey | CreateGrant | RetireGrant | DescribeKey | GenerateDataKeyPair | GenerateDataKeyPairWithoutPlaintext | GenerateMac | VerifyMac | DeriveSharedSecret`
+Valid Values: `Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | Sign | Verify | GetPublicKey | CreateGrant | RetireGrant | DescribeKey | GenerateDataKeyPair | GenerateDataKeyPairWithoutPlaintext | GenerateMac | VerifyMac | DeriveSharedSecret | Encapsulate | Decapsulate`
 Required: No
 
  ** RetiringPrincipal **   <a name="KMS-Type-GrantListEntry-RetiringPrincipal"></a>

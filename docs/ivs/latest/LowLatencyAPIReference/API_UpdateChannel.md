@@ -19,6 +19,7 @@ Content-type: application/json
    "arn": "{{string}}",
    "authorized": {{boolean}},
    "containerFormat": "{{string}}",
+   "failoverSlateConfigurationArn": "{{string}}",
    "insecureIngest": {{boolean}},
    "latencyMode": "{{string}}",
    "multitrackInputConfiguration": {
@@ -67,6 +68,13 @@ Required: No
 Indicates which content-packaging format is used (MPEG-TS or fMP4). If `multitrackInputConfiguration` is specified and `enabled` is `true`, then `containerFormat` is required and must be set to `FRAGMENTED_MP4`. Otherwise, `containerFormat` may be set to `TS` or `FRAGMENTED_MP4`. Default: `TS`.
 Type: String
 Valid Values: `TS | FRAGMENTED_MP4`
+Required: No
+
+ ** [failoverSlateConfigurationArn](#API_UpdateChannel_RequestSyntax) **   <a name="ivs-UpdateChannel-request-failoverSlateConfigurationArn"></a>
+Failover-slate-configuration ARN. A valid ARN value here both specifies the ARN and enables failover slate. If this is set to an empty string, failover slate configuration is disabled.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 128.
+Pattern: `^$|^arn:aws:ivs:[a-z0-9-]+:[0-9]+:failover-slate-configuration/[a-zA-Z0-9-]+$`
 Required: No
 
  ** [insecureIngest](#API_UpdateChannel_RequestSyntax) **   <a name="ivs-UpdateChannel-request-insecureIngest"></a>
@@ -131,6 +139,7 @@ Content-type: application/json
       "arn": "string",
       "authorized": boolean,
       "containerFormat": "string",
+      "failoverSlateConfigurationArn": "string",
       "ingestEndpoint": "string",
       "insecureIngest": boolean,
       "latencyMode": "string",
@@ -187,6 +196,10 @@ HTTP Status Code: 403
  ** ResourceNotFoundException **
 Request references a resource which does not exist.
 HTTP Status Code: 404
+
+ ** ThrottlingException **
+Request was denied due to request throttling.
+HTTP Status Code: 429
 
  ** ValidationException **
 The input fails to satisfy the constraints specified by an AWS service.

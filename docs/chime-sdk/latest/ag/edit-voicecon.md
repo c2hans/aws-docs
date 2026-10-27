@@ -124,8 +124,16 @@ Choose **Save** again.
 
 Origination settings apply to inbound calls to your Amazon Chime SDK Voice Connector. You can configure inbound routes for your SIP hosts to receive inbound calls. Inbound calls are routed to hosts in your SIP infrastructure by the priority and weight you set for each host. Calls are routed in priority order first, with 1 the highest priority. If hosts are equal in priority, calls are distributed among them based on their relative weight.
 
+The Amazon Chime SDK Voice Connector sends each call to one host at a time, in priority and weight order. When a host doesn't connect the call, the Voice Connector does the following:
++ If the host returns a `400`, `404`, `405`, `410`, `480`, `482`, `484`, `486`, or `487`, or any `6xx` response, the Voice Connector doesn't try additional hosts.
++ If the host returns any other `4xx` or `5xx` response, the Voice Connector tries the next host.
++ If the host doesn't respond within 4 seconds, the Voice Connector tries the next host.
+
 **Note**
 Encryption-enabled Voice Connectors use TLS (TCP) protocol for all calls.
+
+**Note**
+The Amazon Chime SDK Voice Connector doesn't send Session Initiation Protocol (SIP) `OPTIONS` requests to origination hosts.
 
 **To edit origination settings**
 

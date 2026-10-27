@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateExasca
 
 Creates an Exascale storage vault.
 
+To create the Exascale storage vault on dedicated Exadata infrastructure, specify `cloudExadataInfrastructureId`.
+
 ## Request Syntax
 <a name="API_CreateExascaleDbStorageVault_RequestSyntax"></a>
 
@@ -17,6 +19,7 @@ Creates an Exascale storage vault.
    "availabilityZone": "{{string}}",
    "availabilityZoneId": "{{string}}",
    "clientToken": "{{string}}",
+   "cloudExadataInfrastructureId": "{{string}}",
    "description": "{{string}}",
    "displayName": "{{string}}",
    "highCapacityDatabaseStorageTotalSizeInGBs": {{number}},
@@ -60,10 +63,17 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: No
 
  ** [clientToken](#API_CreateExascaleDbStorageVault_RequestSyntax) **   <a name="odb-CreateExascaleDbStorageVault-request-clientToken"></a>
-A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don't specify a client token, the Amazon Web Services SDK automatically generates one and uses it for the request to ensure idempotency. The client token is valid for up to 24 hours after it's first used.
+A unique, case-sensitive identifier that you provide to ensure that the operation completes no more than one time. If you submit the same request twice with the same client token, the service ignores the second request and returns the result of the first. If you don't specify a client token, the AWS SDK automatically generates one. The client token is valid for up to 24 hours after it's first used.
 Type: String
 Length Constraints: Minimum length of 8. Maximum length of 64.
 Pattern: `[a-zA-Z0-9_\/.=-]+`
+Required: No
+
+ ** [cloudExadataInfrastructureId](#API_CreateExascaleDbStorageVault_RequestSyntax) **   <a name="odb-CreateExascaleDbStorageVault-request-cloudExadataInfrastructureId"></a>
+The unique identifier or Amazon Resource Name (ARN) of the Exadata infrastructure on which to create the Exascale storage vault. Specify this value to create the Exascale storage vault on dedicated Exadata infrastructure that has Exascale storage configured. If you specify `availabilityZone` or `availabilityZoneId`, the value must match the Availability Zone of the Exadata infrastructure. If you specify neither, the service uses the Availability Zone of the Exadata infrastructure.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 2048.
+Pattern: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
 Required: No
 
  ** [description](#API_CreateExascaleDbStorageVault_RequestSyntax) **   <a name="odb-CreateExascaleDbStorageVault-request-description"></a>
@@ -162,6 +172,14 @@ Occurs when there is an internal failure in the Oracle Database@AWS service. Wai
  ** retryAfterSeconds **
 The number of seconds to wait before retrying the request after an internal server error.
 HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The operation tried to access a resource that doesn't exist. Make sure you provided the correct resource and try again.
+ ** resourceId **
+The identifier of the resource that was not found.
+ ** resourceType **
+The type of resource that was not found.
+HTTP Status Code: 400
 
  ** ServiceQuotaExceededException **
 You have exceeded the service quota.

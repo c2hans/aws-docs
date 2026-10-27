@@ -31,8 +31,8 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/windows-in
 
    ```
    openjdk version "1.8.0_512"
-   OpenJDK Runtime Environment Corretto-8.512.08.1 (build 1.8.0_512-b08)
-   OpenJDK 64-Bit Server VM Corretto-8.512.08.1 (build 25.512-b08, mixed mode)
+   OpenJDK Runtime Environment Corretto-8.512.09.1 (build 1.8.0_512-b09)
+   OpenJDK 64-Bit Server VM Corretto-8.512.09.1 (build 25.512-b09, mixed mode)
    ```
 
 ## Uninstall Amazon Corretto 8

@@ -10,6 +10,7 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 The following code examples show how to use the basics of Amazon Kinesis with AWS SDKs.
 
 **Contents**
++ [Hello](kinesis_example_kinesis_Hello_section.md)
 + [Learn the basics](kinesis_example_kinesis_Scenario_GettingStarted_section.md)
 + [Actions](kinesis_code_examples_actions.md)
   + [`AddTagsToStream`](kinesis_example_kinesis_AddTagsToStream_section.md)
@@ -17,11 +18,14 @@ The following code examples show how to use the basics of Amazon Kinesis with AW
   + [`DeleteStream`](kinesis_example_kinesis_DeleteStream_section.md)
   + [`DeregisterStreamConsumer`](kinesis_example_kinesis_DeregisterStreamConsumer_section.md)
   + [`DescribeStream`](kinesis_example_kinesis_DescribeStream_section.md)
+  + [`DescribeStreamSummary`](kinesis_example_kinesis_DescribeStreamSummary_section.md)
   + [`GetRecords`](kinesis_example_kinesis_GetRecords_section.md)
   + [`GetShardIterator`](kinesis_example_kinesis_GetShardIterator_section.md)
+  + [`ListShards`](kinesis_example_kinesis_ListShards_section.md)
   + [`ListStreamConsumers`](kinesis_example_kinesis_ListStreamConsumers_section.md)
   + [`ListStreams`](kinesis_example_kinesis_ListStreams_section.md)
   + [`ListTagsForStream`](kinesis_example_kinesis_ListTagsForStream_section.md)
   + [`PutRecord`](kinesis_example_kinesis_PutRecord_section.md)
   + [`PutRecords`](kinesis_example_kinesis_PutRecords_section.md)
   + [`RegisterStreamConsumer`](kinesis_example_kinesis_RegisterStreamConsumer_section.md)
+  + [`RemoveTagsFromStream`](kinesis_example_kinesis_RemoveTagsFromStream_section.md)

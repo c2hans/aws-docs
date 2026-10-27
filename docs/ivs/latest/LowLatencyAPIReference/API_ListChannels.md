@@ -16,6 +16,7 @@ Content-type: application/json
 
 {
    "filterByAdConfigurationArn": "{{string}}",
+   "filterByFailoverSlateConfigurationArn": "{{string}}",
    "filterByName": "{{string}}",
    "filterByPlaybackRestrictionPolicyArn": "{{string}}",
    "filterByRecordingConfigurationArn": "{{string}}",
@@ -39,6 +40,13 @@ Filters the channel list to match the specified ad configuration ARN.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 Pattern: `^$|^arn:aws:ivs:[a-z0-9-]+:[0-9]+:ad-configuration/[a-zA-Z0-9-]+$`
+Required: No
+
+ ** [filterByFailoverSlateConfigurationArn](#API_ListChannels_RequestSyntax) **   <a name="ivs-ListChannels-request-filterByFailoverSlateConfigurationArn"></a>
+Filters the channel list to match the specified failover-slate-configuration ARN.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 128.
+Pattern: `^$|^arn:aws:ivs:[a-z0-9-]+:[0-9]+:failover-slate-configuration/[a-zA-Z0-9-]+$`
 Required: No
 
  ** [filterByName](#API_ListChannels_RequestSyntax) **   <a name="ivs-ListChannels-request-filterByName"></a>
@@ -88,6 +96,7 @@ Content-type: application/json
          "adConfigurationArn": "string",
          "arn": "string",
          "authorized": boolean,
+         "failoverSlateConfigurationArn": "string",
          "insecureIngest": boolean,
          "latencyMode": "string",
          "name": "string",

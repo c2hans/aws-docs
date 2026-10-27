@@ -268,6 +268,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   PutCompositeAlarm  **
   - **SDK client:** cloudwatch
+  - **IAM action:**  [cloudwatch:ListTagsForResource](#list_cloudwatch-action-ListTagsForResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [cloudwatch:PutCompositeAlarm](#list_cloudwatch-action-PutCompositeAlarm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 

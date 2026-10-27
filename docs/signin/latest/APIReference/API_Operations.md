@@ -21,5 +21,6 @@ The following actions are supported by AWS Sign-In Data Plane:
 +  [CreateOAuth2PublicClient](API_dataplane-signin_CreateOAuth2PublicClient.md)
 +  [CreateOAuth2Token](API_dataplane-signin_CreateOAuth2Token.md)
 +  [CreateOAuth2TokenWithIAM](API_dataplane-signin_CreateOAuth2TokenWithIAM.md)
++  [CreateOAuth2TokenWithTokenExchange](API_dataplane-signin_CreateOAuth2TokenWithTokenExchange.md)
 +  [IntrospectOAuth2TokenWithIAM](API_dataplane-signin_IntrospectOAuth2TokenWithIAM.md)
 +  [RevokeOAuth2TokenWithIAM](API_dataplane-signin_RevokeOAuth2TokenWithIAM.md)

@@ -116,9 +116,9 @@ You set the platform version for each agent runtime. Set it when you create a ru
 
 **Example**
 
-1. Open the Amazon Bedrock AgentCore console and choose **Runtime**.
+1. Open the Amazon Bedrock AgentCore console and choose **Agents**.
 
-1. On the **Runtime** page, choose **Create runtime**.
+1. On the **Agents** page, choose **Create Host agent (runtime)**.
 
 1. Enter a **Name** for the agent or tool.
 

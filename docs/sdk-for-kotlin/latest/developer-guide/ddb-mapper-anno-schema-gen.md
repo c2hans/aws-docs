@@ -178,6 +178,45 @@ object UuidConverter : ValueConverter<Uuid> {
 
 The class passed to `@DynamoDbAttributeConverter(…​)` must implement `ValueConverter`. See [Manually define schemas](ddb-mapper-code-schemas.md) for the full converter model and the built-in converters you can reuse.
 
+## Nest mapped classes
+<a name="ddb-mapper-anno-schema-gen-nested"></a>
+
+A property can hold another class of your own, which is stored as a DynamoDB [`M`](/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.Map) (Map) attribute. Annotate the nested class with `@DynamoDbMappable` so that the plugin generates a converter for it:
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMappable
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
+
+@DynamoDbMappable
+data class Address(
+    val street: String,
+    val city: String,
+    val postalCode: String,
+)
+
+@DynamoDbItem
+data class Customer(
+    @DynamoDbPartitionKey
+    val customerId: String,
+    val shippingAddress: Address,
+    val previousAddresses: List<Address>,
+)
+```
+
+Nested classes follow the same mapping rules as item classes, with the following differences:
++ A `@DynamoDbMappable` class doesn’t describe a table item, so the plugin doesn’t generate a schema or table extension for it. Key, TTL, and counter annotations aren’t allowed on it.
++ A `@DynamoDbItem` class is also mappable, so it can be nested in another class without additional annotations.
++ Like `@DynamoDbItem`, `@DynamoDbMappable` accepts an optional `converter` to use your own [`ItemConverter`](ddb-mapper-code-schemas.md#ddb-mapper-code-schemas-item-converters) instead of a generated one.
++ A nested class must be defined in the same module as the classes that use it, and a class can’t be nested within itself, directly or indirectly.
+
+To nest values of several different classes in one property, use a [heterogeneous family](ddb-mapper-anno-heterogeneous.md).
+
+## Map heterogeneous types
+<a name="ddb-mapper-anno-schema-gen-heterogeneous"></a>
+
+To store several different classes in one table, or in one attribute, declare a heterogeneous family with `@DynamoDbHeterogeneousType` and `@DynamoDbSubtype`. The plugin generates a converter that stores a type name with each item and uses it to choose the right class when reading. For more information, see [Map heterogeneous types with annotations](ddb-mapper-anno-heterogeneous.md).
+
 ## Use the generated schema
 <a name="ddb-mapper-anno-schema-gen-use"></a>
 
@@ -234,5 +273,6 @@ The configurable settings, in alphabetical order:
 ## Related topics
 <a name="ddb-mapper-anno-schema-gen-related"></a>
 +  [Manually define schemas](ddb-mapper-code-schemas.md): define schemas in code instead of with annotations.
++  [Map heterogeneous types with annotations](ddb-mapper-anno-heterogeneous.md): store several classes in one table or attribute.
 +  [DynamoDB Mapper annotations reference](ddb-mapper-anno-index.md): every annotation and its parameters.
 +  [Built-in features (TTL, atomic counters)](ddb-mapper-builtins.md): runtime behavior of `@DynamoDbCounter` and `@DynamoDbTtlSeconds`.

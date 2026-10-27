@@ -77,6 +77,7 @@ Select an OS platform to see the supported major and minor versions.
 | --- | --- | --- | --- |
 | Bullseye (11) |  | ✓ | ✓ |
 | Bookworm (12) |  | ✓ | ✓ |
+| Trixie (13) |  | ✓ | ✓ |
 
 **Oracle Linux**
 
@@ -107,7 +108,8 @@ Select an OS platform to see the supported major and minor versions.
 
 | Versions | x86 | x86\_64 | ARM64 |
 | --- | --- | --- | --- |
-| 15.3 and later versionsx |  | ✓ | ✓ |
+| 15.3 and later 15.x versions |  | ✓ | ✓ |
+| 16.x |  | ✓ | ✓ |
 
 **Ubuntu Server**
 
@@ -118,6 +120,7 @@ Select an OS platform to see the supported major and minor versions.
 | 22.04 LTS |  | ✓ | ✓ |
 | 24.04 LTS |  | ✓ | ✓ |
 | 25.04 |  | ✓ | ✓ |
+| 26.04 LTS |  | ✓ | ✓ |
 
 ### macOS (Amazon EC2 instances only)
 <a name="prereqs-os-mac"></a>
@@ -127,6 +130,7 @@ Select an OS platform to see the supported major and minor versions.
 | 13.x (Ventura) |  | ✓ | ✓ |
 | 14.x (Sonoma) |  | ✓ | ✓ |
 | 15.x (Sequoia) |  | ✓ | ✓ |
+| 26.x (Tahoe) |  |  | ✓ |
 
 **Note**
 macOS is not supported in all AWS Regions. For more information about Amazon EC2 support for macOS, see [Amazon EC2 Mac instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html) in the *Amazon EC2 User Guide*.

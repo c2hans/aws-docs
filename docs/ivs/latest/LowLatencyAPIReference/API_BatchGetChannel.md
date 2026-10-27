@@ -58,6 +58,7 @@ Content-type: application/json
          "arn": "string",
          "authorized": boolean,
          "containerFormat": "string",
+         "failoverSlateConfigurationArn": "string",
          "ingestEndpoint": "string",
          "insecureIngest": boolean,
          "latencyMode": "string",

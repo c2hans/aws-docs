@@ -16,7 +16,7 @@ This data type is a UNION, so only one of the following members can be specified
  ** inputTypes **   <a name="mediaconnect-Type-RouterInputFilter-inputTypes"></a>
 The types of router inputs to include in the filter.
 Type: Array of strings
-Valid Values: `STANDARD | FAILOVER | MERGE | MEDIACONNECT_FLOW | MEDIALIVE_CHANNEL`
+Valid Values: `STANDARD | FAILOVER | MERGE | MEDIACONNECT_FLOW | MEDIALIVE_CHANNEL | DESTINATION_ENDPOINT`
 Required: No
 
  ** nameContains **   <a name="mediaconnect-Type-RouterInputFilter-nameContains"></a>

@@ -7,10 +7,10 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/docker-ins
 
  This topic describes how to build and launch a Docker image that uses Amazon Corretto 8. You must have the latest version of Docker installed.
 
-## Using the official image for Amazon Corretto 8.
+## Using the official Docker image for Amazon Corretto 8
 <a name="docker-hello-world"></a>
 
- Amazon Corretto 8 is available as an [official image on Docker Hub](https://hub.docker.com/_/amazoncorretto). The following example runs a container and displays Corretto 8's version.
+You can use the official Amazon Corretto 8 Docker image to quickly set up a consistent Java runtime environment without manually installing Amazon Corretto 8 on your host. Amazon Corretto 8 is available as an [official image on Docker Hub](https://hub.docker.com/_/amazoncorretto). The following example runs a container and displays Corretto 8's version.
 
 **Example**
 
@@ -24,8 +24,8 @@ docker run amazoncorretto:8 java -version
 
 ```
 openjdk version "1.8.0_512"
-OpenJDK Runtime Environment Corretto-8.512.08.1 (build 1.8.0_512-b08)
-OpenJDK 64-Bit Server VM Corretto-8.512.08.1 (build 25.512-b08, mixed mode)
+OpenJDK Runtime Environment Corretto-8.512.09.1 (build 1.8.0_512-b09)
+OpenJDK 64-Bit Server VM Corretto-8.512.09.1 (build 25.512-b09, mixed mode)
 ```
 
 ## Using the Corretto ECR Instance
@@ -43,7 +43,7 @@ docker pull public.ecr.aws/amazoncorretto/amazoncorretto:8
 docker run -it public.ecr.aws/amazoncorretto/amazoncorretto:8 /bin/bash
 ```
 
-You can see the list of available images by going [here](https://gallery.ecr.aws/amazoncorretto/amazoncorretto):
+You can see the list of available images on the [Amazon ECR Public Gallery](https://gallery.ecr.aws/amazoncorretto/amazoncorretto).
 
 ## Amazon Corretto on Alpine
 <a name="alpine-images"></a>
@@ -70,7 +70,7 @@ docker run -it amazoncorretto:8-alpine-jdk /bin/sh
 docker build -t amazon-corretto-8 github.com/corretto/corretto-docker#main:8/jdk/al2023
 ```
 
- After the command completes, you have an image called *amazon-corretto-8*.
+ After the command completes, you have an image called `amazon-corretto-8`.
 
  To launch this image locally, run the following command.
 

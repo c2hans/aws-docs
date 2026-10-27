@@ -242,7 +242,7 @@ Before you create the Lambda function, calculate the volume of log data that wil
 
 1. Create the AWS Lambda function.
 
-   Ensure that you have set up the Lambda execution role. For more information, see [Step 2.2: Create an IAM Role (execution role)](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) in the *AWS Lambda Developer Guide*.
+   Ensure that you have set up the Lambda execution role. For more information, see [Defining Lambda function permissions with an execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) in the *AWS Lambda Developer Guide*.
 
 1. Open a text editor and create a file named `helloWorld.js` with the following contents:
 
@@ -272,7 +272,7 @@ Before you create the Lambda function, calculate the volume of log data that wil
        --zip-file fileb://file-path/helloWorld.zip \
        --role lambda-execution-role-arn \
        --handler helloWorld.handler \
-       --runtime nodejs18.x
+       --runtime nodejs22.x
    ```
 
 1. Grant CloudWatch Logs the permission to execute your function. Use the following command, replacing the placeholder account with your own account.

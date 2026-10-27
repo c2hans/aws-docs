@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 
 1. Open the AgentCore console at [https://console.aws.amazon.com/bedrock-agentcore/home\#](https://console.aws.amazon.com/bedrock-agentcore/home#).
 
-1. From the left navigation pane, select **Gateways**.
+1. From the left navigation pane, under **Resources**, select **Gateways**.
 
 1. In the **Gateways** section, choose **Create gateway**.
 

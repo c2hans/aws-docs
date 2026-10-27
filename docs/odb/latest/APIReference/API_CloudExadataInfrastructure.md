@@ -98,6 +98,11 @@ The user-friendly name for the Exadata infrastructure.
 Type: String
 Required: No
 
+ ** exascaleConfiguration **   <a name="odb-Type-CloudExadataInfrastructure-exascaleConfiguration"></a>
+The Exascale storage configuration of the Exadata infrastructure. This value is present only when Exascale storage is configured on the infrastructure.
+Type: [ExascaleConfiguration](API_ExascaleConfiguration.md) object
+Required: No
+
  ** lastMaintenanceRunId **   <a name="odb-Type-CloudExadataInfrastructure-lastMaintenanceRunId"></a>
 The Oracle Cloud Identifier (OCID) of the last maintenance run for the Exadata infrastructure.
 Type: String
@@ -200,7 +205,7 @@ Type: String
 Required: No
 
  ** totalStorageSizeInGBs **   <a name="odb-Type-CloudExadataInfrastructure-totalStorageSizeInGBs"></a>
-The total amount of storage, in gigabytes (GB), on the the Exadata infrastructure.
+The total amount of storage, in gigabytes (GB), on the Exadata infrastructure.
 Type: Integer
 Required: No
 

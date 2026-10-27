@@ -29,6 +29,13 @@ Whether the channel is private (enabled for playback authorization). Default: `f
 Type: Boolean
 Required: No
 
+ ** failoverSlateConfigurationArn **   <a name="ivs-Type-ChannelSummary-failoverSlateConfigurationArn"></a>
+Failover-slate-configuration ARN. A valid ARN value here both specifies the ARN and enables failover slate. Default: "" (empty string, no failover slate configuration is applied).
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 128.
+Pattern: `^$|^arn:aws:ivs:[a-z0-9-]+:[0-9]+:failover-slate-configuration/[a-zA-Z0-9-]+$`
+Required: No
+
  ** insecureIngest **   <a name="ivs-Type-ChannelSummary-insecureIngest"></a>
 Whether the channel allows insecure RTMP ingest. Default: `false`.
 Type: Boolean

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/airport-data-management-on-aws
 title: 'Guidance for Airport Data Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/airport-data-management-on-aws/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-27
 ---
 
 # Guidance for Airport Data Management on AWS

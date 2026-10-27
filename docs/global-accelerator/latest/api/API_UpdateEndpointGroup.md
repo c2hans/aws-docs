@@ -191,7 +191,7 @@ aws globalaccelerator update-endpoint-group \
 ```
 {
     "EndpointGroup": {
-        "TrafficDialPercentage": 100.0,
+        "TrafficDialPercentage": 100,
         "EndpointDescriptions": [
            {
               "Weight": 128,

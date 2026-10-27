@@ -9,6 +9,9 @@ There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://
 
 The following code examples show how to use `RegisterStreamConsumer`.
 
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Learn the basics](kinesis_example_kinesis_Scenario_GettingStarted_section.md)
+
 ------
 #### [ .NET ]
 
@@ -89,6 +92,42 @@ Output:
 ```
 For more information, see [Developing Consumers with Enhanced Fan-Out Using the Kinesis Data Streams API](https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-consumers-api.html) in the *Amazon Kinesis Data Streams Developer Guide*.
 +  For API details, see [RegisterStreamConsumer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kinesis/register-stream-consumer.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kinesis#code-examples).
+
+```
+    def register_stream_consumer(self, stream_arn, consumer_name):
+        """
+        Registers an enhanced fan-out consumer with a Kinesis data stream.
+
+        :param stream_arn: The ARN of the stream.
+        :param consumer_name: The name for the consumer.
+        :return: A dictionary containing consumer details.
+        """
+        try:
+            response = self.kinesis_client.register_stream_consumer(
+                StreamARN=stream_arn, ConsumerName=consumer_name
+            )
+            consumer = response.get("Consumer", dict())
+            logger.info(
+                "Registered consumer '%s' with status '%s'.",
+                consumer_name,
+                consumer.get("ConsumerStatus", "UNKNOWN"),
+            )
+            return consumer
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "ResourceInUseException":
+                logger.error(
+                    "Consumer '%s' already exists or stream is not available.",
+                    consumer_name,
+                )
+            raise
+```
++  For API details, see [RegisterStreamConsumer](https://docs.aws.amazon.com/goto/boto3/kinesis-2013-12-02/RegisterStreamConsumer) in *AWS SDK for Python (Boto3) API Reference*.
 
 ------
 #### [ SAP ABAP ]

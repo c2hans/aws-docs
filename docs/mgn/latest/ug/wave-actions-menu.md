@@ -22,7 +22,7 @@ Use this menu to perform the following actions:
 +  **Finalize cutover** – Choose this option to finalize the cutover for this wave servers after you have successfully performed a cutover.
 
 **Note**
- This action does not uninstall the AWS Replication Agent from the source servers. When you have completed the migration and want to uninstall the agent from your source servers, go to ** Source servers** page and select the relevant servers. Use the **Disconnect from service** option under the **Actions** menu.
+The AWS Replication Agent receives a command to uninstall itself from the source servers (within 10 minutes). Another way to uninstall the agent is to go to the **Source servers** page, select the relevant servers, and use the **Disconnect from service** option under the **Actions** menu.
 +  **Revert to "ready for cutover"** – Choose this option to revert a finalized cutover for this wave if you encounter any issues or want to reverse the cutover for any reason.
 +  **Start data replication** – Choose this option to start replication of the wave source servers.
 **Note**

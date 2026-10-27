@@ -25,6 +25,13 @@ Creates a VM cluster on the specified Exadata infrastructure.
    "dbNodeStorageSizeInGBs": {{number}},
    "dbServers": [ "{{string}}" ],
    "displayName": "{{string}}",
+   "exascaleDbStorageVaultId": "{{string}}",
+   "fileSystemConfigurationDetails": [
+      {
+         "fileSystemSizeInGBs": {{number}},
+         "mountPoint": "{{string}}"
+      }
+   ],
    "giVersion": "{{string}}",
    "hostname": "{{string}}",
    "isLocalBackupEnabled": {{boolean}},
@@ -38,7 +45,9 @@ Creates a VM cluster on the specified Exadata infrastructure.
    "tags": {
       "{{string}}" : "{{string}}"
    },
-   "timeZone": "{{string}}"
+   "timeZone": "{{string}}",
+   "vmBackupStorageType": "{{string}}",
+   "vmFileSystemStorageType": "{{string}}"
 }
 ```
 
@@ -103,6 +112,18 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[a-zA-Z_](?!.*--)[a-zA-Z0-9_-]*`
 Required: Yes
+
+ ** [exascaleDbStorageVaultId](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-exascaleDbStorageVaultId"></a>
+The unique identifier or Amazon Resource Name (ARN) of the Exascale storage vault to use for the VM cluster. Specify this value to create a VM cluster that uses Exascale storage on dedicated Exadata infrastructure.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 2048.
+Pattern: `(arn:(?:aws|aws-cn|aws-us-gov|aws-iso-{0,1}[a-z]{0,1}):[a-z0-9-]+:[a-z0-9-]*:[0-9]+:[a-z0-9-]+/[a-zA-Z0-9_~.-]{6,64}|[a-zA-Z0-9_~.-]{6,64})`
+Required: No
+
+ ** [fileSystemConfigurationDetails](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-fileSystemConfigurationDetails"></a>
+The list of file system configurations for the VM cluster. Each entry specifies the mount point of a file system and its size, in gigabytes (GB).
+Type: Array of [FileSystemConfigurationDetails](API_FileSystemConfigurationDetails.md) objects
+Required: No
 
  ** [giVersion](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-giVersion"></a>
 A valid software version of Oracle Grid Infrastructure (GI). To get the list of valid values, use the `ListGiVersions` operation and specify the shape of the Exadata infrastructure.
@@ -185,6 +206,18 @@ The time zone for the VM cluster. For a list of valid values for time zone, you 
 Default: UTC
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
+ ** [vmBackupStorageType](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-vmBackupStorageType"></a>
+The type of storage to use for VM backups. Specify `EXASCALE` to store VM backups in Exascale storage on the storage servers, or `LOCAL` to store them on the database servers.
+Type: String
+Valid Values: `LOCAL | EXASCALE`
+Required: No
+
+ ** [vmFileSystemStorageType](#API_CreateCloudVmCluster_RequestSyntax) **   <a name="odb-CreateCloudVmCluster-request-vmFileSystemStorageType"></a>
+The type of storage to use for the VM file systems. Specify `EXASCALE` to store the VM file systems in Exascale storage on the storage servers, or `LOCAL` to store them on the database servers.
+Type: String
+Valid Values: `LOCAL | EXASCALE`
 Required: No
 
 ## Response Syntax

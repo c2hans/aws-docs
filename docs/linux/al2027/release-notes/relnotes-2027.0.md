@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/relnotes-2027
 The following releases are updates to the 2027.0 release of AL2027.
 
 **Topics**
++ [AL2027 preview version 2027.0.20261026](relnotes-2027.0.20261026.md)
 + [AL2027 preview version 2027.0.20261021](relnotes-2027.0.20261021.md)
 + [AL2027 preview version 2027.0.20261012](relnotes-2027.0.20261012.md)
 + [AL2027 preview version 2027.0.20260928](relnotes-2027.0.20260928.md)

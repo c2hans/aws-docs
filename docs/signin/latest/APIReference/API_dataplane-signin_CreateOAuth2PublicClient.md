@@ -37,20 +37,20 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [grant\_types](#API_dataplane-signin_CreateOAuth2PublicClient_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2PublicClient-request-grant_types"></a>
-The grant types that this client will use. Supported values: `authorization_code`, `refresh_token`. Defaults to both if omitted. The `client_credentials` grant type is not supported. The `refresh_token` grant type cannot be specified alone without `authorization_code`.
+The grant types that this client uses. Supported values: `authorization_code`, `refresh_token`. Defaults to both if omitted. The `client_credentials` grant type is not supported. The `refresh_token` grant type cannot be specified alone without `authorization_code`.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Required: No
 
  ** [redirect\_uris](#API_dataplane-signin_CreateOAuth2PublicClient_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2PublicClient-request-redirect_uris"></a>
-The redirect URIs that this client will use for OAuth callbacks. Only redirect URIs matching the allowlisted patterns are accepted. Maximum of 10 URIs.
+The redirect URIs that this client uses for OAuth callbacks. Only redirect URIs matching the allowlisted patterns are accepted. Maximum of 10 URIs.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
  ** [response\_types](#API_dataplane-signin_CreateOAuth2PublicClient_RequestSyntax) **   <a name="signin-dataplane-signin_CreateOAuth2PublicClient-request-response_types"></a>
-The response types that this client will use. Only `code` is supported. Defaults to `["code"]` if omitted.
+The response types that this client uses. Only `code` is supported. Defaults to `["code"]` if omitted.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Required: No
@@ -124,15 +124,15 @@ You do not have sufficient access to perform this action.
 HTTP Status Code: 400
 
  ** InternalServerException **
-The request processing has failed because of an unknown error, exception or failure with an internal server.
+The request failed because of an internal server error.
 HTTP Status Code: 500
 
  ** TooManyRequestsError **
-Indicates that the principal has exceeded the limit of requests to this API operation.
+The request failed because you exceeded the request rate limit for this operation.
 HTTP Status Code: 429
 
  ** ValidationException **
-The request failed because it contains a syntax error.
+The request failed because it contains a malformed, missing, or invalid parameter.
 HTTP Status Code: 400
 
 ## See Also
