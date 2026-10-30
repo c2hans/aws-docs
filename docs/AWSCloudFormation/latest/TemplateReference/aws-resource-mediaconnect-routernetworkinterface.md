@@ -60,6 +60,7 @@ The configuration settings for a router network interface.
 The name of the router network interface.
 *Required*: Yes
 *Type*: String
+*Pattern*: `^[a-zA-Z0-9]([a-zA-Z0-9\-_]*[a-zA-Z0-9])?$`
 *Minimum*: `1`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

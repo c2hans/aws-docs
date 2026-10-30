@@ -39,7 +39,7 @@ Required: Yes
  ** format **   <a name="API-Type-AnalysisTemplate-format"></a>
 The format of the analysis template.
 Type: String
-Valid Values: `SQL | PYSPARK_1_0`
+Valid Values: `SQL | PYSPARK_1_0 | PYSPARK_2_0`
 Required: Yes
 
  ** id **   <a name="API-Type-AnalysisTemplate-id"></a>

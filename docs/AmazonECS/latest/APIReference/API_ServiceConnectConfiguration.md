@@ -23,6 +23,13 @@ To enable access logs, you must also specify a `logConfiguration` in the `servic
 Type: [ServiceConnectAccessLogConfiguration](API_ServiceConnectAccessLogConfiguration.md) object
 Required: No
 
+ ** containerConfigurations **   <a name="ECS-Type-ServiceConnectConfiguration-containerConfigurations"></a>
+The settings for the Service Connect proxy container that Amazon ECS adds to each task in this service. Each object in the list sets exactly one setting, and each setting can appear only once in the list.
+Your changes to these settings apply only to tasks that Amazon ECS launches after you update the service. Your running tasks keep their existing settings until Amazon ECS replaces them. If you update the `serviceConnectConfiguration` of your service and don't include `containerConfigurations`, the proxy container settings return to their defaults.
+Type: Array of [ServiceConnectContainerConfiguration](API_ServiceConnectContainerConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
+
  ** logConfiguration **   <a name="ECS-Type-ServiceConnectConfiguration-logConfiguration"></a>
 The log configuration for the container. This parameter maps to `LogConfig` in the docker container create command and the `--log-driver` option to docker run.
 By default, containers use the same logging driver that the Docker daemon uses. However, the container might use a different logging driver than the Docker daemon by specifying a log driver configuration in the container definition.

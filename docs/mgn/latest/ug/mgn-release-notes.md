@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/mgn-release-notes.html
 
 ## October 2026
 <a name="release-notes-oct-2026"></a>
++ Added support for the following operating systems:
+  + Debian 13
 + Agentless replication is no longer available for new deployments. We recommend using agent-based replication for all migrations. For more information, see [Why we recommend agent-based replication](installing-vcenter-overview-mgn.md#why-agent-based).
 
 ## September 2026

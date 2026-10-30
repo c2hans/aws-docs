@@ -85,12 +85,12 @@ Required: Yes
 The name of the metric to associate with the alarm.
 You can configure up to two alarms per metric.
 The following metrics are available for each resource type:
-+  **Instances**: `BurstCapacityPercentage`, `BurstCapacityTime`, `CPUUtilization`, `NetworkIn`, `NetworkOut`, `StatusCheckFailed`, `StatusCheckFailed_Instance`, and `StatusCheckFailed_System`.
++  **Instances**: `BurstCapacityPercentage`, `BurstCapacityTime`, `CPUUtilization`, `NetworkIn`, `NetworkOut`, `StatusCheckFailed`, `StatusCheckFailed_Instance`, `StatusCheckFailed_System`, `DiskReadOps`, `DiskWriteOps`, `DiskReadBytes`, `DiskWriteBytes`, `DiskTotalReadTime`, `DiskTotalWriteTime`, and `DiskQueueLength`.
 +  **Load balancers**: `ClientTLSNegotiationErrorCount`, `HealthyHostCount`, `UnhealthyHostCount`, `HTTPCode_LB_4XX_Count`, `HTTPCode_LB_5XX_Count`, `HTTPCode_Instance_2XX_Count`, `HTTPCode_Instance_3XX_Count`, `HTTPCode_Instance_4XX_Count`, `HTTPCode_Instance_5XX_Count`, `InstanceResponseTime`, `RejectedConnectionCount`, and `RequestCount`.
 +  **Relational databases**: `CPUUtilization`, `DatabaseConnections`, `DiskQueueDepth`, `FreeStorageSpace`, `NetworkReceiveThroughput`, and `NetworkTransmitThroughput`.
 For more information about these metrics, see [Metrics available in Lightsail](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-resource-health-metrics#available-metrics).
 Type: String
-Valid Values: `CPUUtilization | NetworkIn | NetworkOut | StatusCheckFailed | StatusCheckFailed_Instance | StatusCheckFailed_System | ClientTLSNegotiationErrorCount | HealthyHostCount | UnhealthyHostCount | HTTPCode_LB_4XX_Count | HTTPCode_LB_5XX_Count | HTTPCode_Instance_2XX_Count | HTTPCode_Instance_3XX_Count | HTTPCode_Instance_4XX_Count | HTTPCode_Instance_5XX_Count | InstanceResponseTime | RejectedConnectionCount | RequestCount | DatabaseConnections | DiskQueueDepth | FreeStorageSpace | NetworkReceiveThroughput | NetworkTransmitThroughput | FreeableMemory | SwapUsage | BurstCapacityTime | BurstCapacityPercentage`
+Valid Values: `CPUUtilization | NetworkIn | NetworkOut | StatusCheckFailed | StatusCheckFailed_Instance | StatusCheckFailed_System | ClientTLSNegotiationErrorCount | HealthyHostCount | UnhealthyHostCount | HTTPCode_LB_4XX_Count | HTTPCode_LB_5XX_Count | HTTPCode_Instance_2XX_Count | HTTPCode_Instance_3XX_Count | HTTPCode_Instance_4XX_Count | HTTPCode_Instance_5XX_Count | InstanceResponseTime | RejectedConnectionCount | RequestCount | DatabaseConnections | DiskQueueDepth | FreeStorageSpace | NetworkReceiveThroughput | NetworkTransmitThroughput | FreeableMemory | SwapUsage | BurstCapacityTime | BurstCapacityPercentage | DiskReadOps | DiskWriteOps | DiskReadBytes | DiskWriteBytes | DiskTotalReadTime | DiskTotalWriteTime | DiskQueueLength`
 Required: Yes
 
  ** [monitoredResourceName](#API_PutAlarm_RequestSyntax) **   <a name="Lightsail-PutAlarm-request-monitoredResourceName"></a>

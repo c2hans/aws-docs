@@ -602,6 +602,8 @@ The following table describes the quotas for resource-based policies:
 | Quota | Default value | Adjustable | Notes |
 | --- | --- | --- | --- |
 | Maximum registries per account per Region | 10 | Yes |  |
+| Conditions per search filter | 10 | No | Applies to `SearchDiscoverableRegistryRecords` and the registry MCP endpoint search tool. For how conditions are counted, see [Filter rules and limits](registry-search-records.md#registry-search-filter-rules). |
+| Values per `$in` search filter operator | 25 | No |  |
 
 ### Throttling limits
 <a name="registry-throttling-limits"></a>

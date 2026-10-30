@@ -127,6 +127,13 @@ Linux, macOS, Windows
   Default: t3.medium
 
   Description: (Optional) The EC2 instance type for the EC2Rescue instance.
++ HelperInstanceProfileName
+
+  Type: String
+
+  Default: `""`
+
+  Description: (Optional) The name of an existing IAM instance profile for the EC2Rescue instance. If you don't specify one, the automation creates a helper IAM role and instance profile, and deletes them when the automation completes.
 + InstanceId
 
   Type: String
@@ -170,40 +177,32 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 
 Attach the **AmazonSSMAutomationRole** IAM managed policy to the IAM user or role that runs the automation, and add the permissions in the following example policy.
 
-The following example policy grants the additional permissions that the runbook needs. Each statement is scoped to the resource types that its actions use. The `DescribeActions` statement uses `"Resource": "*"` because describe actions don't support resource-level permissions. In the following example, replace {{111122223333}} with your AWS account ID:
+The following example policy grants the additional permissions that the runbook needs. Each statement is scoped to the resource types that its actions use. The `DescribeActions` statement uses `"Resource": "*"` because describe actions don't support resource-level permissions. In the following example, replace {{111122223333}} with your AWS account ID, {{EC2RescueHelperProfile}} with the name of the instance profile that you pass in `HelperInstanceProfileName`, and {{EC2RescueHelperRole}} with the name of the IAM role inside that instance profile:
+
+**Note**
+This policy assumes that you specify an existing instance profile in the `HelperInstanceProfileName` parameter.
+The IAM role inside that instance profile is a separate identity from the one you attach this policy to, and it needs its own permissions:
+It must trust `ec2.amazonaws.com`.
+It needs the **AmazonSSMManagedInstanceCore** policy, so that the EC2Rescue helper instance can register with Systems Manager and receive the commands this automation sends it.
+It needs whatever permissions the script that you pass in `OfflineScript` calls for. For example, `AWSSupport-ResetAccess` passes a script that stores a generated SSH key in Parameter Store, so the role it uses also needs `ssm:PutParameter` and `kms:Encrypt`.
+If you set `S3BucketName`, it needs `s3:PutObject` and `s3:AbortMultipartUpload` on that bucket under the `S3Prefix` that you specify, because the automation passes the bucket and prefix to your script rather than uploading on its own.
+If you leave `HelperInstanceProfileName` empty, the automation creates a helper IAM role and instance profile on your behalf, which requires permissions to create and configure IAM resources that this policy doesn't grant.
 
 ```
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "HelperInstanceRoleAndProfile",
+            "Sid": "ReadHelperInstanceProfile",
             "Effect": "Allow",
-            "Action": [
-                "iam:CreateRole",
-                "iam:CreateInstanceProfile",
-                "iam:GetRole",
-                "iam:GetInstanceProfile",
-                "iam:PutRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:AttachRolePolicy",
-                "iam:AddRoleToInstanceProfile",
-                "iam:RemoveRoleFromInstanceProfile",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DeleteInstanceProfile",
-                "iam:TagRole"
-            ],
-            "Resource": [
-                "arn:aws:iam::{{111122223333}}:role/AWSSupport-EC2Rescue-*",
-                "arn:aws:iam::{{111122223333}}:instance-profile/AWSSupport-EC2Rescue-*"
-            ]
+            "Action": "iam:GetInstanceProfile",
+            "Resource": "arn:aws:iam::{{111122223333}}:instance-profile/{{EC2RescueHelperProfile}}"
         },
         {
             "Sid": "PassHelperInstanceRole",
             "Effect": "Allow",
             "Action": "iam:PassRole",
-            "Resource": "arn:aws:iam::{{111122223333}}:role/AWSSupport-EC2Rescue-*",
+            "Resource": "arn:aws:iam::{{111122223333}}:role/{{EC2RescueHelperRole}}",
             "Condition": {
                 "StringEquals": {
                     "iam:PassedToService": "ec2.amazonaws.com"
@@ -282,8 +281,6 @@ The following example policy grants the additional permissions that the runbook 
 
 The `HelperNetwork` statement is needed only when you set `SubnetId` to `CreateNewVPC`.
 
-If you specify an existing instance profile in the `HelperInstanceProfileName` parameter, the `AutomationAssumeRole` also needs the `iam:PassRole` permission for the IAM role in that instance profile.
-
  **Document Steps**
 
 1. `aws:executeAwsApi` - Describe the provided instance
@@ -306,7 +303,7 @@ If you specify an existing instance profile in the `HelperInstanceProfileName` p
 
       `aws:createStack` - Deploy the EC2Rescue CloudFormation stack
 
-1. `aws:invokeLambdaFunction` - Perform additional input validation
+1. `aws:executeScript` - Perform additional input validation
 
 1. `aws:executeAwsApi` - Update the EC2Rescue CloudFormation stack to create the EC2Rescue helper instance
 

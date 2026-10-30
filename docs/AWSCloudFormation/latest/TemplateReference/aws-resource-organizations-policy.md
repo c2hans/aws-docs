@@ -123,7 +123,7 @@ The [regex pattern](http://wikipedia.org/wiki/regex) for a target ID string requ
 The type of policy to create.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `AISERVICES_OPT_OUT_POLICY | BACKUP_POLICY | BEDROCK_POLICY | CHATBOT_POLICY | DECLARATIVE_POLICY_EC2 | INSPECTOR_POLICY | NETWORK_SECURITY_DIRECTOR_POLICY | RESOURCE_CONTROL_POLICY | S3_POLICY | SECURITYHUB_POLICY | SERVICE_CONTROL_POLICY | TAG_POLICY | UPGRADE_ROLLOUT_POLICY`
+*Allowed values*: `AISERVICES_OPT_OUT_POLICY | BACKUP_POLICY | BEDROCK_POLICY | CHATBOT_POLICY | DECLARATIVE_POLICY_EC2 | GUARDDUTY_POLICY | INSPECTOR_POLICY | NETWORK_SECURITY_DIRECTOR_POLICY | RESOURCE_CONTROL_POLICY | S3_POLICY | SECURITYHUB_POLICY | SERVICE_CONTROL_POLICY | TAG_POLICY | UPGRADE_ROLLOUT_POLICY`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values

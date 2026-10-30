@@ -146,9 +146,14 @@ The following node types are supported by ElastiCache. Generally speaking, the c
 
     **R7g node types:**`cache.r7g.large`, `cache.r7g.xlarge`, `cache.r7g.2xlarge`, `cache.r7g.4xlarge`, `cache.r7g.8xlarge`, `cache.r7g.12xlarge`, `cache.r7g.16xlarge`
 
+    **R8gd node types:**`cache.r8gd.xlarge`, `cache.r8gd.2xlarge`, `cache.r8gd.4xlarge`, `cache.r8gd.8xlarge`, `cache.r8gd.12xlarge`, `cache.r8gd.16xlarge`
+
+    **R7gd node types:**`cache.r7gd.xlarge`, `cache.r7gd.2xlarge`, `cache.r7gd.4xlarge`, `cache.r7gd.8xlarge`, `cache.r7gd.12xlarge`, `cache.r7gd.16xlarge`
+
     **R6gd node types:**`cache.r6gd.xlarge`, `cache.r6gd.2xlarge`, `cache.r6gd.4xlarge`, `cache.r6gd.8xlarge`, `cache.r6gd.12xlarge`, `cache.r6gd.16xlarge`
 **Note**
 The `r6gd` family is available in the following regions: `us-east-2`, `us-east-1`, `us-west-2`, `us-west-1`, `eu-west-1`, `eu-central-1`, `ap-northeast-1`, `ap-southeast-1`, `ap-southeast-2`.
+The `r7gd` family is available in the following Regions: `eu-south-2`, `ap-south-2`. The `r8gd` family is available in the following Region: `eu-south-2`. The `r7gd` and `r8gd` families support only the Valkey engine, version 7.2 and later.
 
     **R6g node types:**`cache.r6g.large`, `cache.r6g.xlarge`, `cache.r6g.2xlarge`, `cache.r6g.4xlarge`, `cache.r6g.8xlarge`, `cache.r6g.12xlarge`, `cache.r6g.16xlarge`, `cache.r6g.24xlarge`
 

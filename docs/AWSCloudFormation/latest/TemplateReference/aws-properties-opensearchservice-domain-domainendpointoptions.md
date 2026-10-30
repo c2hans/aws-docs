@@ -75,5 +75,5 @@ The minimum TLS version required for traffic to the domain. The policy can be on
 + **Policy-Min-TLS-1-2-PFS-2023-10:** TLS security policy that supports TLS version 1.2 to TLS version 1.3 with perfect forward secrecy cipher suites
 *Required*: No
 *Type*: String
-*Allowed values*: `Policy-Min-TLS-1-0-2019-07 | Policy-Min-TLS-1-2-2019-07 | Policy-Min-TLS-1-2-PFS-2023-10 | Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08`
+*Allowed values*: `Policy-Min-TLS-1-0-2019-07 | Policy-Min-TLS-1-2-2019-07 | Policy-Min-TLS-1-2-PFS-2023-10 | Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 | Policy-Min-TLS-1-2-FIPS-PQ-2026-10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

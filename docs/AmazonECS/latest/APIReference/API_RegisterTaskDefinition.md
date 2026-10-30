@@ -135,6 +135,7 @@ You can specify a Docker networking mode for the containers in your task definit
          },
          "resourceRequirements": [
             {
+               "sharingStrategy": { ... },
                "type": "{{string}}",
                "value": "{{string}}"
             }
@@ -297,7 +298,6 @@ Required: No
 The amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. For more information, see [Using data volumes in tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_data_volumes.html) in the *Amazon ECS Developer Guide*.
 For tasks using the Fargate launch type, the task requires the following platforms:
 + Linux platform version `1.4.0` or later.
-+ Windows platform version `1.0.0` or later.
 Type: [EphemeralStorage](API_EphemeralStorage.md) object
 Required: No
 
@@ -549,6 +549,7 @@ Required: No
             },
             "resourceRequirements": [
                {
+                  "sharingStrategy": { ... },
                   "type": "string",
                   "value": "string"
                }

@@ -138,7 +138,9 @@ The name of the new event bus.
 ### Fn::GetAtt
 <a name="aws-resource-events-eventbus-return-values-fn--getatt"></a>
 
-The ARN of the task definition to use. If no task revision is supplied, it defaults to the most recent revision at the time of resource creation.
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-events-eventbus-return-values-fn--getatt-fn--getatt"></a>

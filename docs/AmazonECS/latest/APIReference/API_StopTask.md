@@ -86,6 +86,7 @@ Required: Yes
             "cpu": "string",
             "exitCode": number,
             "gpuIds": [ "string" ],
+            "gpuSharingStrategy": { ... },
             "healthStatus": "string",
             "image": "string",
             "imageDigest": "string",
@@ -169,6 +170,7 @@ Required: Yes
                "name": "string",
                "resourceRequirements": [
                   {
+                     "sharingStrategy": { ... },
                      "type": "string",
                      "value": "string"
                   }

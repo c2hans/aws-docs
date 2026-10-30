@@ -144,6 +144,6 @@ Specifies whether the intent's confirmation is sent to the user. When this field
 `PromptSpecification`  <a name="cfn-lex-bot-intentconfirmationsetting-promptspecification"></a>
 Prompts the user to confirm the intent. This question should have a yes or no answer.
 Amazon Lex uses this prompt to ensure that the user acknowledges that the intent is ready for fulfillment. For example, with the `OrderPizza` intent, you might want to confirm that the order is correct before placing it. For other intents, such as intents that simply respond to user questions, you might not need to ask the user for confirmation before providing the information.
-*Required*: Yes
+*Required*: No
 *Type*: [PromptSpecification](aws-properties-lex-bot-promptspecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

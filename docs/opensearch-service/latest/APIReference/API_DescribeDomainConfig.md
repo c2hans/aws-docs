@@ -266,6 +266,7 @@ Content-type: application/json
       "EncryptionAtRestOptions": {
          "Options": {
             "Enabled": boolean,
+            "EncryptionMode": "string",
             "KmsKeyId": "string"
          },
          "Status": {

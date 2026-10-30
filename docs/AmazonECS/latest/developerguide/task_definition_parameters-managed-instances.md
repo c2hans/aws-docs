@@ -1023,6 +1023,19 @@ If the `GPU` type is used, the value is the number of physical `GPUs` the Amazon
 GPUs aren't available for tasks that are running on Fargate.
 If the `NeuronDevice` type is used, the only supported value is `ALL`. When `ALL` is specified, the container gets exclusive access to all Neuron devices on the instance.
 Neuron devices aren't available for tasks that are running on Fargate.
+`sharingStrategy`
+Type: SharingStrategy object
+Required: No
+The GPU sharing configuration for the container. Specify `sharingStrategy` to share a single physical GPU across multiple containers with NVIDIA Multi-Process Service (MPS). This object contains an `nvidiaMps` object with the following fields:
+On a `GPU` resource requirement, `value` and `sharingStrategy` are mutually exclusive. When you specify `sharingStrategy`, you must omit `value`.
+`memory`
+Type: Integer
+Required: Yes
+The GPU memory limit for the container, in MiB. This value is a hard ceiling on the GPU memory that the container can use. The value must be greater than `0`.
+`maxComputePercent`
+Type: Integer
+Required: No
+The maximum percentage of GPU compute that the container can use, as an integer from `1` to `100`. This value is a ceiling, not a reservation. If you omit it, the container can use up to `100` percent.
 
 #### Container timeouts
 <a name="container_definition_timeout-managed-instances"></a>

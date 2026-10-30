@@ -21,6 +21,7 @@ PUT /v1/feed/{{id}} HTTP/1.1
 Content-type: application/json
 
 {
+   "accessRoleArn": "{{string}}",
    "name": "{{string}}",
    "outputs": [
       {
@@ -49,6 +50,13 @@ Required: Yes
 
 The request accepts the following data in JSON format.
 
+ ** [accessRoleArn](#API_UpdateFeed_RequestSyntax) **   <a name="elementalinference-UpdateFeed-request-accessRoleArn"></a>
+The ARN of an IAM role that Elemental Inference assumes to access resources in your account on your behalf. You can specify the existing role (to leave it unchanged) or a new role. You specify one access role for each feed.
+Type: String
+Length Constraints: Minimum length of 32. Maximum length of 255.
+Pattern: `arn:aws[a-z\-]*:iam::[0-9]{12}:role/.+`
+Required: No
+
  ** [name](#API_UpdateFeed_RequestSyntax) **   <a name="elementalinference-UpdateFeed-request-name"></a>
 Required. You can specify the existing name (to leave it unchanged) or a new name.
 Type: String
@@ -68,6 +76,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "accessRoleArn": "string",
    "arn": "string",
    "association": {
       "associatedResourceName": "string"
@@ -97,6 +106,12 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [accessRoleArn](#API_UpdateFeed_ResponseSyntax) **   <a name="elementalinference-UpdateFeed-response-accessRoleArn"></a>
+The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role for the feed, after the update. This property is absent if the feed doesn't have an IAM role.
+Type: String
+Length Constraints: Minimum length of 32. Maximum length of 255.
+Pattern: `arn:aws[a-z\-]*:iam::[0-9]{12}:role/.+`
 
  ** [arn](#API_UpdateFeed_ResponseSyntax) **   <a name="elementalinference-UpdateFeed-response-arn"></a>
 The ARN of the feed.

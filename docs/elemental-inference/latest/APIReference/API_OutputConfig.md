@@ -18,6 +18,11 @@ The output config type that applies to the clipping feature.
 Type: [ClippingConfig](API_ClippingConfig.md) object
 Required: No
 
+ ** contextualMetadata **   <a name="elementalinference-Type-OutputConfig-contextualMetadata"></a>
+The output config type that applies to the contextual metadata feature.
+Type: [ContextualMetadataConfig](API_ContextualMetadataConfig.md) object
+Required: No
+
  ** cropping **   <a name="elementalinference-Type-OutputConfig-cropping"></a>
 The output config type that applies to the cropping feature.
 Type: [CroppingConfig](API_CroppingConfig.md) object

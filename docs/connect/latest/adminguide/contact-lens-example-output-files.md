@@ -36,11 +36,11 @@ Note the following about the analyzed file:
             "ReasonCode": "QUOTA_EXCEEDED",
             "SkippedEntities": [
                 {
-                    "CategoryName": "PotentialFraud"
+                    "CategoryName": "PotentialFraud",
                     "RuleId": "a1130485-9529-4249-a1d4-5738b4883748"
                 },
                 {
-                    "CategoryName": "Refund"
+                    "CategoryName": "Refund",
                     "RuleId": "bbbbbbb-9529-4249-a1d4-5738b4883748"
                 }
             ]
@@ -50,9 +50,9 @@ Note the following about the analyzed file:
             "ReasonCode": "FAILED_SAFETY_GUIDELINES",
             "SkippedEntities": [
                 {
-                    "CategoryName": "ManagerEscalation"
+                    "CategoryName": "ManagerEscalation",
                     "RuleId": "cccccccc-9529-4249-a1d4-5738b4883748"
-                },
+                }
             ]
         },
     ]
@@ -73,6 +73,7 @@ Note the following about the analyzed file:
       "MatchedCategories": ["Cancellation"],
       "MatchedDetails": {
           "Cancellation": {
+              "RuleId": "2a0c5e7d-9b3f-4e1a-8c6d-7f2b1a9e4c3d",
               "PointsOfInterest": [
                   {
                       "BeginOffsetMillis": 7370,
@@ -414,11 +415,11 @@ In this example, `RedactionMaskMode` is set to PII. When an entity is redacted, 
             "ReasonCode": "QUOTA_EXCEEDED",
             "SkippedEntities": [
                 {
-                    "CategoryName": "PotentialFraud"
+                    "CategoryName": "PotentialFraud",
                     "RuleId": "a1130485-9529-4249-a1d4-5738b4883748"
                 },
                 {
-                    "CategoryName": "Refund"
+                    "CategoryName": "Refund",
                     "RuleId": "bbbbbbb-9529-4249-a1d4-5738b4883748"
                 }
             ]
@@ -428,9 +429,9 @@ In this example, `RedactionMaskMode` is set to PII. When an entity is redacted, 
             "ReasonCode": "FAILED_SAFETY_GUIDELINES",
             "SkippedEntities": [
                 {
-                    "CategoryName": "ManagerEscalation"
+                    "CategoryName": "ManagerEscalation",
                     "RuleId": "cccccccc-9529-4249-a1d4-5738b4883748"
-                },
+                }
             ]
         },
     ]
@@ -451,6 +452,7 @@ In this example, `RedactionMaskMode` is set to PII. When an entity is redacted, 
       "MatchedCategories": ["Cancellation"],
       "MatchedDetails": {
           "Cancellation": {
+              "RuleId": "2a0c5e7d-9b3f-4e1a-8c6d-7f2b1a9e4c3d",
               "PointsOfInterest": [
                   {
                       "BeginOffsetMillis": 7370,

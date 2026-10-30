@@ -114,7 +114,37 @@ Required: No
                "value": "string"
             }
          ],
-         "viewerMinimumTlsProtocolVersion": "string"
+         "viewerMinimumTlsProtocolVersion": "string",
+         "waf": {
+            "isWafEnabled": boolean,
+            "wafRules": [
+               {
+                  "acfpConfig": {
+                     "creationPath": "string",
+                     "payloadType": "string",
+                     "registrationPagePath": "string",
+                     "responseInspection": {
+                        "failureCodes": [ number ],
+                        "successCodes": [ number ]
+                     }
+                  },
+                  "atpConfig": {
+                     "loginPath": "string",
+                     "passwordField": "string",
+                     "payloadType": "string",
+                     "responseInspection": {
+                        "failureCodes": [ number ],
+                        "successCodes": [ number ]
+                     },
+                     "usernameField": "string"
+                  },
+                  "botControlConfig": {
+                     "inspectionLevel": "string"
+                  },
+                  "name": "string"
+               }
+            ]
+         }
       }
    ],
    "nextPageToken": "string"

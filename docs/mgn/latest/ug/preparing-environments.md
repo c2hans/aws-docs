@@ -48,7 +48,7 @@ For optimal performance of replication servers and conversion servers, we recomm
 
 Test and cutover instances are launched in a subnet you specify in the Amazon EC2 launch template associated with each source server. The Amazon EC2 launch template is created automatically when you add a source server to AWS Transform MGN.
 
-[Learn more about launching test and cutover instances](launching-test-gs.md).
+[Learn more about launching test and cutover instances](launching-target-servers.md).
 
 [Learn more about how Amazon EC2 launch templates are used](ec2-launch.md).
 

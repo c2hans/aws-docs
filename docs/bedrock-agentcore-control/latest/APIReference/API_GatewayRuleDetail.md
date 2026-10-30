@@ -49,7 +49,7 @@ Required: Yes
  ** conditions **   <a name="bedrockagentcorecontrol-Type-GatewayRuleDetail-conditions"></a>
 The conditions that must be met for the rule to apply.
 Type: Array of [Condition](API_Condition.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
 Required: No
 
  ** description **   <a name="bedrockagentcorecontrol-Type-GatewayRuleDetail-description"></a>

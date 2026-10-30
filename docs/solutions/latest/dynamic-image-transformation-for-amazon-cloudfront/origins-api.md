@@ -48,6 +48,8 @@ POST /origins
 }
 ```
 
+You can define up to 20 `originHeaders` for an origin. Each header name can be up to 100 characters, and each value can be up to 1,000 characters.
+
  **Get Origin**
 
 ```

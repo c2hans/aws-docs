@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[DisableMcpListToolsPagination](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-disablemcplisttoolspagination)" : {{Boolean}},
   "[Instructions](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-instructions)" : {{String}},
   "[SearchType](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-searchtype)" : {{String}},
   "[SessionConfiguration](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-sessionconfiguration)" : {{SessionConfiguration}},
@@ -31,6 +32,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-gateway-mcpgatewayconfiguration-syntax.yaml"></a>
 
 ```
+  [DisableMcpListToolsPagination](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-disablemcplisttoolspagination): {{Boolean}}
   [Instructions](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-instructions): {{String}}
   [SearchType](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-searchtype): {{String}}
   [SessionConfiguration](#cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-sessionconfiguration): {{
@@ -43,6 +45,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-bedrockagentcore-gateway-mcpgatewayconfiguration-properties"></a>
+
+`DisableMcpListToolsPagination`  <a name="cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-disablemcplisttoolspagination"></a>
+Specifies whether the gateway disables pagination for the Model Context Protocol (MCP) `tools/list` operation. When set to `true`, the gateway returns the complete list of tools in a single response without a pagination cursor. When set to `false` or omitted, the gateway returns tools in paginated responses. For information about changing this value on an existing gateway, see [UpdateGateway](https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIReference/API_UpdateGateway.html).
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Instructions`  <a name="cfn-bedrockagentcore-gateway-mcpgatewayconfiguration-instructions"></a>
 The instructions for using the Model Context Protocol gateway. These instructions provide guidance on how to interact with the gateway.

@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/security-automations-for-aws-
 title: 'Security Automations for AWS WAF'
 canonical_url: https://docs.aws.amazon.com/solutions/security-automations-for-aws-waf/
 source: aws-documentation
-generated_on: 2026-10-27
+generated_on: 2026-10-29
 ---
 
 # Security Automations for AWS WAF
 
 Deploy a set of preconfigured AWS WAF rules to filter common web-based attacks
 
-- **Version**: 4.1.7
+- **Version**: 4.1.8
 - **Released**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 15 mins

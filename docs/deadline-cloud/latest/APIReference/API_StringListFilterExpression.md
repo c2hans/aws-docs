@@ -16,7 +16,7 @@ Type: String
 Required: Yes
 
  ** operator **   <a name="deadlinecloud-Type-StringListFilterExpression-operator"></a>
-The type of comparison to use for this search.
+The type of comparison to use for this search. Only `ANY_EQUALS` and `ALL_NOT_EQUALS` are supported.
 Type: String
 Valid Values: `EQUAL | NOT_EQUAL | GREATER_THAN_EQUAL_TO | GREATER_THAN | LESS_THAN_EQUAL_TO | LESS_THAN | ANY_EQUALS | ALL_NOT_EQUALS`
 Required: Yes

@@ -42,6 +42,8 @@ These actions are included in the AWS managed policies that grant read access to
 
 MediaTailor publishes CloudWatch metrics in each AWS region where you run playback configurations. The region selector at the top of the dashboard controls which regions the page queries and how it combines the results.
 
+![The MediaTailor analytics dashboard region selector with the Aggregate regions and Compare regions toggle.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-regions.png)
+
 When you first open the dashboard, MediaTailor checks each AWS region in which MediaTailor is available and offers you the regions where your account has at least one playback configuration. Regions in which the check could not complete are noted on the page and can be retried. If the check fails in every AWS region, the dashboard falls back to the AWS region you are currently signed in to.
 
 The dashboard supports two view modes, chosen with the **Aggregate regions** / **Compare regions** selector above the region selector:
@@ -64,6 +66,8 @@ The metric tables display values by playback configuration or by ad tracking dom
 
 The **Key monetization metrics** section at the top of the dashboard shows a set of summary tiles that summarize ad insertion performance across all of your playback configurations in the selected regions, over the selected time range. In **Compare regions** view, each tile shows a value for each region group, and each group's tile displays the percentage difference from the other group.
 
+![The Key monetization metrics section summary tiles.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-kpis.png)
+
 The dashboard shows the following key monetization metrics. For definitions of the underlying CloudWatch metrics, see [Monitoring AWS Elemental MediaTailor with Amazon CloudWatch metrics](monitoring-cloudwatch-metrics.md).
 + **Weighted fill rate**: `SUM(Avail.FilledDuration) / SUM(Avail.Duration) × 100`
 + **Ad insertion rate**: `SUM(AdsBilled) / SUM(AdDecisionServer.Ads) × 100`
@@ -78,12 +82,16 @@ The dashboard shows the following key monetization metrics. For definitions of t
 
 The **Trends** section shows the key monetization metrics as time-series line charts over the selected time range. Use the trend graphs to see how each metric moves over time and to spot regressions that a single summary value can hide.
 
+![The Trends section with time-series line charts for each key monetization metric.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-trends.png)
+
 In **Aggregate regions** view, each chart shows a single line representing all selected regions combined. In **Compare regions** view, each chart shows one line per region group, with a legend identifying **Group A** and **Group B**.
 
 ## Ad delivery breakdown
 <a name="analytics-dashboard-ad-delivery-breakdown"></a>
 
 The **Ad delivery breakdown** section shows how many ads progress through each stage of the ad lifecycle for the selected regions and time range, and categorizes the ads that were returned by the ad decision server but not inserted. Use this section to see where ads drop off between stages and to understand why ad insertions are lower than ads returned.
+
+![The Ad delivery breakdown section with the funnel and skipped reasons panels.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-ad-delivery-breakdown.png)
 
 The section contains two panels: the **Ad delivery funnel** on the left, and the **Ad insertion skipped reasons** breakdown on the right. Both panels use account-level CloudWatch metrics in the `AWS/MediaTailor` namespace. For definitions of the underlying metrics, see [Monitoring AWS Elemental MediaTailor with Amazon CloudWatch metrics](monitoring-cloudwatch-metrics.md).
 
@@ -110,8 +118,12 @@ Use the segmented control above the chart to switch between two views:
 **Ranked list**
 A list of reasons sorted by count, descending. Each row shows the reason, its count, its percentage of the total skipped, and a horizontal progress bar. The top of the list shows the total ads skipped.
 
+![The Ad insertion skipped reasons panel in ranked list view.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-skipped-reasons-ranked-list.png)
+
 **Donut**
 A donut chart showing each reason's share of the total skipped. Reason labels and counts appear in the legend and when you hover over a slice. The total is displayed in the center of the ring.
+
+![The Ad insertion skipped reasons panel in donut view.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-skipped-reasons-donut.png)
 
 Each slice or row corresponds to one `SkippedReason.*` CloudWatch metric. Reasons with zero occurrences during the selected time range are not shown. For the full list of skipped reasons and what each one means, see [Monitoring AWS Elemental MediaTailor with Amazon CloudWatch metrics](monitoring-cloudwatch-metrics.md).
 
@@ -119,6 +131,8 @@ Each slice or row corresponds to one `SkippedReason.*` CloudWatch metric. Reason
 <a name="analytics-dashboard-configurations-table"></a>
 
 The **Monetization performance by configuration** table shows the key monetization metrics for each of your playback configurations in the selected regions, over the selected time range. Use this table to find configurations that are underperforming compared to your other configurations.
+
+![The Monetization performance by configuration table.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-configurations-table.png)
 
 Playback configurations are scoped to a specific AWS region. If the same configuration name exists in more than one selected region, the table shows a separate row for each region. The **Configuration name** column links to the details page for that configuration in its region.
 
@@ -147,6 +161,8 @@ The table supports two view modes, chosen with the **Browse** and **Ranked** sel
 
 **Browse** view lists each ad tracking domain observed in the selected regions, with beacon counts summed across those regions. In **Compare regions** view, an ad tracking domain that appears in both groups is shown as one row per group.
 
+![The Beacon firing performance table in Browse view.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-beacon-table-browse.png)
+
 The Browse view shows the following columns:
 + **Ad tracking domain**
 + **Group**: In **Compare regions** view only.
@@ -160,6 +176,8 @@ To limit CloudWatch API usage, Browse view makes up to 10 `ListMetrics` calls pe
 <a name="analytics-dashboard-beacon-table-ranked"></a>
 
 **Ranked** view lists the top or bottom ad tracking domains for the selected beacon count metric, with one row per (domain, region) pair. In **Compare regions** view, ranking runs independently per group so each group contributes its own top or bottom domains.
+
+![The Beacon firing performance table in Ranked view.](https://docs.aws.amazon.com/mediatailor/latest/ug/images/analytics-dashboard-beacon-table-ranked.png)
 
 Use the two controls above the table to configure the ranking:
 + **Metric**: The beacon count metric to rank by: **Fired**, **Retried**, or **Recovered**. **Retry success rate** is a computed ratio and cannot be used to rank rows.

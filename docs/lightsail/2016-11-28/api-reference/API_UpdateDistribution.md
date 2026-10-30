@@ -54,6 +54,7 @@ Use this action to update the configuration of your existing distribution.
    "defaultRootObject": "{{string}}",
    "distributionName": "{{string}}",
    "enablePrivateOriginAccess": {{boolean}},
+   "enableWaf": {{boolean}},
    "isEnabled": {{boolean}},
    "origin": {
       "ipAddressType": "{{string}}",
@@ -63,7 +64,34 @@ Use this action to update the configuration of your existing distribution.
       "responseTimeout": {{number}}
    },
    "useDefaultCertificate": {{boolean}},
-   "viewerMinimumTlsProtocolVersion": "{{string}}"
+   "viewerMinimumTlsProtocolVersion": "{{string}}",
+   "wafRules": [
+      {
+         "acfpConfig": {
+            "creationPath": "{{string}}",
+            "payloadType": "{{string}}",
+            "registrationPagePath": "{{string}}",
+            "responseInspection": {
+               "failureCodes": [ {{number}} ],
+               "successCodes": [ {{number}} ]
+            }
+         },
+         "atpConfig": {
+            "loginPath": "{{string}}",
+            "passwordField": "{{string}}",
+            "payloadType": "{{string}}",
+            "responseInspection": {
+               "failureCodes": [ {{number}} ],
+               "successCodes": [ {{number}} ]
+            },
+            "usernameField": "{{string}}"
+         },
+         "botControlConfig": {
+            "inspectionLevel": "{{string}}"
+         },
+         "name": "{{string}}"
+      }
+   ]
 }
 ```
 
@@ -123,6 +151,14 @@ You can enable private origin access only when the distribution's origin is a Li
 Type: Boolean
 Required: No
 
+ ** [enableWaf](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-enableWaf"></a>
+Specifies whether to enable Web Application Firewall (WAF) for the distribution. WAF inspects viewer requests and blocks requests that match the WAF rule groups that you enable.
+When you enable WAF without specifying the `wafRules` parameter, the distribution has no WAF rule groups enabled and doesn't block any requests.
+WAF is available only for distributions that use the `medium_1_0` or `large_1_0` bundle.
+Setting this parameter to `false` disables WAF for the distribution and removes its WAF rule groups. You must enable the WAF rule groups again if you enable WAF again.
+Type: Boolean
+Required: No
+
  ** [isEnabled](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-isEnabled"></a>
 Indicates whether to enable the distribution.
 Type: Boolean
@@ -144,6 +180,16 @@ Required: No
 Use this parameter to update the minimum TLS protocol version for the SSL/TLS certificate that's attached to the distribution.
 Type: String
 Valid Values: `TLSv1.1_2016 | TLSv1.2_2018 | TLSv1.2_2019 | TLSv1.2_2021`
+Required: No
+
+ ** [wafRules](#API_UpdateDistribution_RequestSyntax) **   <a name="Lightsail-UpdateDistribution-request-wafRules"></a>
+An array of objects that describe the WAF rule groups to enable for the distribution.
+The array that you specify replaces the existing WAF rule groups of the distribution. To keep a WAF rule group enabled, include it in the array. To disable all WAF rule groups, specify an empty array.
+You can specify this parameter only when WAF is enabled for the distribution.
+The WAF rule groups that you can specify depend on the bundle of the distribution:
++  `medium_1_0` – Supports the `AWSManagedRulesCommonRuleSet`, `AWSManagedRulesKnownBadInputsRuleSet`, and `AWSManagedRulesAnonymousIpList` rule groups.
++  `large_1_0` – Supports the rule groups for `medium_1_0`, plus `AWSManagedRulesAdminProtectionRuleSet`, `AWSManagedRulesSQLiRuleSet`, `AWSManagedRulesLinuxRuleSet`, `AWSManagedRulesUnixRuleSet`, `AWSManagedRulesWindowsRuleSet`, `AWSManagedRulesPHPRuleSet`, `AWSManagedRulesWordPressRuleSet`, `AWSManagedRulesAmazonIpReputationList`, `AWSManagedRulesATPRuleSet`, `AWSManagedRulesACFPRuleSet`, and `AWSManagedRulesBotControlRuleSet` rule groups.
+Type: Array of [WafRule](API_WafRule.md) objects
 Required: No
 
 ## Response Syntax

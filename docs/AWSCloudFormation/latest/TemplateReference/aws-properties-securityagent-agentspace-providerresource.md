@@ -19,6 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[AzureDevOpsCapabilities](#cfn-securityagent-agentspace-providerresource-azuredevopscapabilities)" : {{AzureDevOpsCapabilitiesResource}},
+  "[AzureDevOpsRepository](#cfn-securityagent-agentspace-providerresource-azuredevopsrepository)" : {{AzureDevOpsRepositoryResource}},
   "[BitbucketCapabilities](#cfn-securityagent-agentspace-providerresource-bitbucketcapabilities)" : {{BitbucketCapabilitiesResource}},
   "[BitbucketRepository](#cfn-securityagent-agentspace-providerresource-bitbucketrepository)" : {{BitbucketRepositoryResource}},
   "[ConfluenceCapabilities](#cfn-securityagent-agentspace-providerresource-confluencecapabilities)" : {{ConfluenceCapabilitiesResource}},
@@ -34,6 +36,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-securityagent-agentspace-providerresource-syntax.yaml"></a>
 
 ```
+  [AzureDevOpsCapabilities](#cfn-securityagent-agentspace-providerresource-azuredevopscapabilities): {{
+    AzureDevOpsCapabilitiesResource}}
+  [AzureDevOpsRepository](#cfn-securityagent-agentspace-providerresource-azuredevopsrepository): {{
+    AzureDevOpsRepositoryResource}}
   [BitbucketCapabilities](#cfn-securityagent-agentspace-providerresource-bitbucketcapabilities): {{
     BitbucketCapabilitiesResource}}
   [BitbucketRepository](#cfn-securityagent-agentspace-providerresource-bitbucketrepository): {{
@@ -54,6 +60,18 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-securityagent-agentspace-providerresource-properties"></a>
+
+`AzureDevOpsCapabilities`  <a name="cfn-securityagent-agentspace-providerresource-azuredevopscapabilities"></a>
+Property description not available.
+*Required*: No
+*Type*: [AzureDevOpsCapabilitiesResource](aws-properties-securityagent-agentspace-azuredevopscapabilitiesresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AzureDevOpsRepository`  <a name="cfn-securityagent-agentspace-providerresource-azuredevopsrepository"></a>
+Property description not available.
+*Required*: No
+*Type*: [AzureDevOpsRepositoryResource](aws-properties-securityagent-agentspace-azuredevopsrepositoryresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `BitbucketCapabilities`  <a name="cfn-securityagent-agentspace-providerresource-bitbucketcapabilities"></a>
 Property description not available.

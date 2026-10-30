@@ -41,6 +41,7 @@ Required: Yes
       "activeConfigurations": [
          {
             "cpu": "string",
+            "cpuArchitecture": "string",
             "createdAt": number,
             "executionRoleArn": "string",
             "healthCheckPath": "string",

@@ -30,6 +30,7 @@ The following data types are supported by AWS WAFV2:
 +  [CaptchaResponse](API_CaptchaResponse.md)
 +  [ChallengeAction](API_ChallengeAction.md)
 +  [ChallengeConfig](API_ChallengeConfig.md)
++  [ChallengeJavascriptSdkInjectionConfig](API_ChallengeJavascriptSdkInjectionConfig.md)
 +  [ChallengeResponse](API_ChallengeResponse.md)
 +  [ClientSideAction](API_ClientSideAction.md)
 +  [ClientSideActionConfig](API_ClientSideActionConfig.md)

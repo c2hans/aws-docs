@@ -108,7 +108,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[StorageType](#cfn-rds-dbcluster-storagetype)" : {{String}},
       "[Tags](#cfn-rds-dbcluster-tags)" : {{[ Tag, ... ]}},
       "[UseLatestRestorableTime](#cfn-rds-dbcluster-uselatestrestorabletime)" : {{Boolean}},
-      "[VpcSecurityGroupIds](#cfn-rds-dbcluster-vpcsecuritygroupids)" : {{[ String, ... ]}}
+      "[VpcSecurityGroupIds](#cfn-rds-dbcluster-vpcsecuritygroupids)" : {{[ String, ... ]}},
+      "[WithExpressConfiguration](#cfn-rds-dbcluster-withexpressconfiguration)" : {{Boolean}}
     }
 }
 ```
@@ -188,6 +189,7 @@ Properties:
   [UseLatestRestorableTime](#cfn-rds-dbcluster-uselatestrestorabletime): {{Boolean}}
   [VpcSecurityGroupIds](#cfn-rds-dbcluster-vpcsecuritygroupids): {{
     - String}}
+  [WithExpressConfiguration](#cfn-rds-dbcluster-withexpressconfiguration): {{Boolean}}
 ```
 
 ## Properties
@@ -800,6 +802,13 @@ Valid for: Aurora DB clusters and Multi-AZ DB clusters
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WithExpressConfiguration`  <a name="cfn-rds-dbcluster-withexpressconfiguration"></a>
+Specifies to create an Aurora DB Cluster with express configuration in seconds. Express configuration provides a cluster with a writer instance and feature specific values set to all other input parameters of this API.
+Valid for Cluster Type: Aurora DB clusters
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-rds-dbcluster-return-values"></a>

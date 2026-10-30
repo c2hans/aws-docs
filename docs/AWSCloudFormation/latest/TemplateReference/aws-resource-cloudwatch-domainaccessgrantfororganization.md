@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::DomainAccessGrantForOrganization
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization"></a>
 
-<a name="aws-resource-cloudwatch-domainaccessgrantfororganization-description"></a>The `AWS::CloudWatch::DomainAccessGrantForOrganization` resource Property description not available. for CloudWatch.
+Resource Type definition for `AWS::CloudWatch::DomainAccessGrantForOrganization`. An organization access grant authorizes a principal to administer an organization-scoped CloudWatch Omni domain.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-syntax"></a>
@@ -49,14 +49,14 @@ Properties:
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-properties"></a>
 
 `DomainId`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-domainid"></a>
-Property description not available.
+The unique identifier of the organization domain the grant applies to.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^d-[0-9a-z]{1,25}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-name"></a>
-Property description not available.
+The name of the grant.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9_-]+$`
@@ -65,7 +65,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Permission`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-permission"></a>
-Property description not available.
+The permission level the grant confers. Organization grants are administrative only.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ADMIN`
@@ -78,7 +78,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloudwatch-domainaccessgrantfororganization-tag.md)
 *Maximum*: `50`
@@ -90,26 +90,34 @@ Property description not available.
 ### Ref
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the value of the `Arn` property.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the organization access grant.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The time the grant was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
-Property description not available.
+The principal that created the grant.
 
 `GrantId`  <a name="GrantId-fn::getatt"></a>
-Property description not available.
+The unique identifier of the grant.
 
 `GrantType`  <a name="GrantType-fn::getatt"></a>
-Property description not available.
+Whether the grant is managed by the service or by the customer.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-Property description not available.
+The time the grant was last updated.

@@ -37,4 +37,5 @@ To declare this entity in your CloudFormation template, use the following syntax
 The CIDR block that is allowed to access the public router network interface.
 *Required*: Yes
 *Type*: String
+*Pattern*: `^(?:[0-9]{1,3}\.){3}[0-9]{1,3}/([0-9]|[12][0-9]|3[0-2])$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

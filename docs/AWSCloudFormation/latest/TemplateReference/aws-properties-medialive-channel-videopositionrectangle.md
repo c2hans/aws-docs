@@ -9,6 +9,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 A rectangle defined by a position (x, y) and dimensions (width, height), in pixels.
 
+The parent of this entity is VideoDescription.
+
 ## Syntax
 <a name="aws-properties-medialive-channel-videopositionrectangle-syntax"></a>
 

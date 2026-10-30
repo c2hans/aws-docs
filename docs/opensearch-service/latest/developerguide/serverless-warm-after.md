@@ -11,7 +11,7 @@ Amazon OpenSearch Serverless NextGen time series collections use a combination o
 The `index.warm.after` setting and warm storage apply only to NextGen time series collections. OpenSearch Serverless rejects the setting for search and vector search collections, and for OpenSearch Serverless Classic collections.
 
 **Note**
-Moving data from hot storage to warm storage is a one-way operation. OpenSearch Serverless doesn't move data in warm storage back to hot storage, even if you lengthen the warm-after period.
+Changing the warm-after period only affects the new data movement to warm.
 
 **Topics**
 + [Specifying the warm-after period](#serverless-warm-after-setting)

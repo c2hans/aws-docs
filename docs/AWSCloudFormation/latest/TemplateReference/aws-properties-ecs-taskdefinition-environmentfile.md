@@ -15,7 +15,6 @@ Environment variable files are objects in Amazon S3 and all Amazon S3 security c
 
 You must use the following platforms for the Fargate launch type:
 + Linux platform version `1.4.0` or later.
-+ Windows platform version `1.0.0` or later.
 
 Consider the following when using the Fargate launch type:
 + The file is handled like a native Docker env-file.

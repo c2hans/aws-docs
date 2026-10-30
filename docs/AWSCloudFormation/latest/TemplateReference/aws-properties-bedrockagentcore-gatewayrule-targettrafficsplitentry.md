@@ -20,7 +20,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Description](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-description)" : {{String}},
+  "[Fallback](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-fallback)" : {{Fallback}},
   "[Metadata](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-metadata)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Model](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-model)" : {{String}},
   "[Name](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-name)" : {{String}},
   "[TargetName](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-targetname)" : {{String}},
   "[Weight](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-weight)" : {{Number}}
@@ -32,8 +34,11 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Description](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-description): {{String}}
+  [Fallback](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-fallback): {{
+    Fallback}}
   [Metadata](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-metadata): {{
     {{Key}}: {{Value}}}}
+  [Model](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-model): {{String}}
   [Name](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-name): {{String}}
   [TargetName](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-targetname): {{String}}
   [Weight](#cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-weight): {{Number}}
@@ -50,6 +55,12 @@ The description of this traffic split variant.
 *Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Fallback`  <a name="cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-fallback"></a>
+The fallback configuration for this variant. Supported only for inference targets.
+*Required*: No
+*Type*: [Fallback](aws-properties-bedrockagentcore-gatewayrule-fallback.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Metadata`  <a name="cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-metadata"></a>
 Key-value metadata associated with this traffic split variant.
 *Required*: No
@@ -57,6 +68,15 @@ Key-value metadata associated with this traffic split variant.
 *Pattern*: `.+`
 *Minimum*: `1`
 *Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Model`  <a name="cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-model"></a>
+The model ID to send to the target for this variant. Supported only for inference targets. If you don't specify a model, the gateway sends the model from the original request.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9\-._/@:]*$`
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-bedrockagentcore-gatewayrule-targettrafficsplitentry-name"></a>

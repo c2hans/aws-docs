@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::DomainForOrganization IdentityCenterConfiguration
 <a name="aws-properties-cloudwatch-domainfororganization-identitycenterconfiguration"></a>
 
-<a name="aws-properties-cloudwatch-domainfororganization-identitycenterconfiguration-description"></a>The `IdentityCenterConfiguration` property type specifies Property description not available. for an [AWS::CloudWatch::DomainForOrganization](aws-resource-cloudwatch-domainfororganization.md).
+Identity Center configuration. Required when identityProviders includes IDC.
 
 ## Syntax
 <a name="aws-properties-cloudwatch-domainfororganization-identitycenterconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-cloudwatch-domainfororganization-identitycenterconfiguration-properties"></a>
 
 `IdentityCenterInstanceArn`  <a name="cfn-cloudwatch-domainfororganization-identitycenterconfiguration-identitycenterinstancearn"></a>
-Property description not available.
+Identity Center instance ARN
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:aws[a-z-]*:sso:::instance/[a-zA-Z0-9-]+$`

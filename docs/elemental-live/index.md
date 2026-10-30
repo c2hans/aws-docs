@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/index.html
 title: 'The AWS Elemental Live suite of products'
 canonical_url: https://docs.aws.amazon.com/elemental-live/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-29
 ---
 
 # The AWS Elemental Live suite of products
@@ -17,13 +17,10 @@ This suite includes three products: AWS Elemental Live, AWS Elemental Conductor,
 
 These release notes apply to AWS Elemental Live, AWS Elemental Conductor, and AWS Elemental Statmux. Release notes describe new features, resolved issues, and known issues.
 
-- **Current release notes**: These release notes apply to the current major version of the products. These release notes apply to AWS Elemental Live, AWS Elemental Conductor, and AWS Elemental Statmux.
+- **Release notes**: Describe the new features, resolved issues, and known issues in each release, starting with version 2.21 (or version 3.21 for AWS Elemental Conductor). The guide also links to the release notes for earlier versions.
 
-[PDF](/elemental-onprem/latest/pdf/live_cl3_current_rn.pdf)
-
-- **Consolidated release notes**: These release notes consolidate all supported versions except the current version. These release notes apply to AWS Elemental Live, AWS Elemental Conductor, and AWS Elemental Statmux.
-
-[PDF](/elemental-onprem/latest/pdf/live_cl3_rn_since_2_14.pdf)
+[Release notes (HTML)](/elemental-live/latest/releasenotes/)
+[Release notes (PDF)](/elemental-live/latest/releasenotes/elemental-live-rn.pdf)
 
 ## Current user documents
 

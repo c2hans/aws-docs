@@ -15,6 +15,11 @@ Indicates if the load balancing capability is enabled on your EKS Auto Mode clus
 Type: Boolean
 Required: No
 
+ ** gatewayApi **   <a name="AmazonEKS-Type-ElasticLoadBalancing-gatewayApi"></a>
+Indicates the current configuration of the Kubernetes Gateway API for the load balancing capability on your EKS Auto Mode cluster. For more information, see EKS Auto Mode load balancing capability in the *Amazon EKS User Guide*.
+Type: [GatewayApiConfiguration](API_GatewayApiConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_ElasticLoadBalancing_SeeAlso"></a>
 

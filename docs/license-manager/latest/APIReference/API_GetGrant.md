@@ -47,10 +47,12 @@ Required: No
       "GranteePrincipalArn": "string",
       "GrantName": "string",
       "GrantStatus": "string",
+      "GrantType": "string",
       "HomeRegion": "string",
       "LicenseArn": "string",
       "Options": {
-         "ActivationOverrideBehavior": "string"
+         "ActivationOverrideBehavior": "string",
+         "DesiredStatus": "string"
       },
       "ParentArn": "string",
       "StatusReason": "string",

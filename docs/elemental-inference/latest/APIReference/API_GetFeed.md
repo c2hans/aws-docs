@@ -37,6 +37,7 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
+   "accessRoleArn": "string",
    "arn": "string",
    "association": {
       "associatedResourceName": "string"
@@ -66,6 +67,12 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 200 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [accessRoleArn](#API_GetFeed_ResponseSyntax) **   <a name="elementalinference-GetFeed-response-accessRoleArn"></a>
+The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that Elemental Inference assumes. Elemental Inference uses this role to access resources in your account on your behalf. This property is absent if the feed doesn't have an IAM role.
+Type: String
+Length Constraints: Minimum length of 32. Maximum length of 255.
+Pattern: `arn:aws[a-z\-]*:iam::[0-9]{12}:role/.+`
 
  ** [arn](#API_GetFeed_ResponseSyntax) **   <a name="elementalinference-GetFeed-response-arn"></a>
 The ARN of the feed.

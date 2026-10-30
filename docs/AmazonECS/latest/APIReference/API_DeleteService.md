@@ -156,6 +156,9 @@ Required: Yes
                   "format": "string",
                   "includeQueryParameters": "string"
                },
+               "containerConfigurations": [
+                  { ... }
+               ],
                "enabled": boolean,
                "logConfiguration": {
                   "logDriver": "string",

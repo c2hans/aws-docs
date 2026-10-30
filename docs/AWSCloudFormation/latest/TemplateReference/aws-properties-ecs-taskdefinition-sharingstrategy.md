@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ECS::TaskDefinition SharingStrategy
 <a name="aws-properties-ecs-taskdefinition-sharingstrategy"></a>
 
-<a name="aws-properties-ecs-taskdefinition-sharingstrategy-description"></a>The `SharingStrategy` property type specifies Property description not available. for an [AWS::ECS::TaskDefinition](aws-resource-ecs-taskdefinition.md).
+The strategy that a container uses to share a GPU with other containers. Specify exactly one member.
 
 ## Syntax
 <a name="aws-properties-ecs-taskdefinition-sharingstrategy-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-taskdefinition-sharingstrategy-properties"></a>
 
 `NvidiaMps`  <a name="cfn-ecs-taskdefinition-sharingstrategy-nvidiamps"></a>
-Property description not available.
+Shares a GPU between containers by using NVIDIA Multi-Process Service (MPS). You specify the GPU memory to allocate to the container and, optionally, the maximum percentage of the GPU's compute capacity that the container can use.
 *Required*: Yes
 *Type*: [NvidiaMpsAllocation](aws-properties-ecs-taskdefinition-nvidiampsallocation.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

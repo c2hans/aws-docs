@@ -16,6 +16,18 @@ Type: String
 Pattern: `([0-9a-zA-Z][-]?){1,100}`
 Required: Yes
 
+ ** fallback **   <a name="bedrockagentcorecontrol-Type-StaticRoute-fallback"></a>
+The fallback configuration for this route. Supported only for inference targets.
+Type: [Fallback](API_Fallback.md) object
+Required: No
+
+ ** model **   <a name="bedrockagentcorecontrol-Type-StaticRoute-model"></a>
+The model ID to send to the target. Supported only for inference targets. If you don't specify a model, the gateway sends the model from the original request.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[a-zA-Z0-9][a-zA-Z0-9\-._/@:]*`
+Required: No
+
 ## See Also
 <a name="API_StaticRoute_SeeAlso"></a>
 

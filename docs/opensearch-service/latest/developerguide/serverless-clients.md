@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 
 These sections provide details about the supported ingest pipelines for data ingestion into Amazon OpenSearch Serverless collections. They also cover some of the clients that you can use to interact with the OpenSearch API operations. Your clients should be compatible with OpenSearch 2.x in order to integrate with OpenSearch Serverless.
 
+Amazon OpenSearch Serverless supports OpenSearch ingest pipelines, which transform or enrich documents before they're indexed, regardless of which client or integration you use to send them. An ingest pipeline is a sequence of processors that transform documents before they are indexed. For example, you can use ingest pipelines to remove sensitive fields, normalize field values, parse timestamps, or generate vector embeddings for semantic search. Because the pipeline runs in OpenSearch Serverless, your documents receive consistent transformations without custom preprocessing logic in each client. For more information, see [Ingest pipelines in Amazon OpenSearch Serverless](serverless-ingest-pipelines.md).
+
 **Topics**
 + [Minimum required permissions](#serverless-ingestion-permissions)
 + [OpenSearch Ingestion](#serverless-osis-ingestion)

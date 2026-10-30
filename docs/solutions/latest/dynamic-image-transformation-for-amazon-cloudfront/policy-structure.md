@@ -27,9 +27,9 @@ A policy is a single JSON object containing the `transformations` array, the `ou
 | Field | Type | Description |
 | --- | --- | --- |
 |  `transformations`  | array (optional) | Ordered list of operations applied to the image. Each item is a transformation object (see below). A policy can define up to 100 transformations. |
-|  `outputs`  | array (optional) | Device-aware auto-optimization settings. Each `type` (`quality`, `format`, `autosize`) can appear at most once. See [Output optimizations](output-optimizations-outputs.md). |
+|  `outputs`  | array (optional) | Device-aware auto-optimization settings. Each `type` (`quality`, `format`, `autosize`) can appear at most once. You can specify up to 3 entries. See [Output optimizations](output-optimizations-outputs.md). |
 
-A policy must contain at least one entry across `transformations` and `outputs`, and the serialized policy cannot exceed 10 KB.
+A policy must contain at least one entry across `transformations` and `outputs`. The serialized policy can be up to 10 KB (10,000 characters of JSON). For all list and size limits, see [Policy limits](transformation-policy-limits.md).
 
  **Transformation object**
 
@@ -39,4 +39,4 @@ Each entry in `transformations` has the following fields:
 | --- | --- | --- |
 |  `transformation`  | string | The operation to apply (for example, `resize`, `blur`, `smartCrop`, `watermark`). For the full list of operations and their `value` formats, see [Apply transformations using URL query parameters](transformation-filter-reference.md); `smartCrop` and `contentModeration` are detailed below. |
 |  `value`  | varies | The configuration for the operation. The accepted shape depends on `transformation` (for example, a boolean for `flip`, an object for `resize`). |
-|  `condition`  | object (optional) | Applies the transformation only when a request header matches. Contains `field` (the request header name) and `value` (a string, number, or array of either; an array matches if any element matches). |
+|  `condition`  | object (optional) | Applies the transformation only when a request header matches. Contains `field` (the request header name) and `value` (a string, number, or array of either; an array matches if any element matches). You can list up to 50 values in an array. |

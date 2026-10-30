@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Athena](#cfn-cleanrooms-configuredtable-tablereference-athena)" : {{AthenaTableReference}},
+  "[Databricks](#cfn-cleanrooms-configuredtable-tablereference-databricks)" : {{DatabricksTableReference}},
   "[Glue](#cfn-cleanrooms-configuredtable-tablereference-glue)" : {{GlueTableReference}},
   "[Snowflake](#cfn-cleanrooms-configuredtable-tablereference-snowflake)" : {{SnowflakeTableReference}}
 }
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Athena](#cfn-cleanrooms-configuredtable-tablereference-athena): {{
     AthenaTableReference}}
+  [Databricks](#cfn-cleanrooms-configuredtable-tablereference-databricks): {{
+    DatabricksTableReference}}
   [Glue](#cfn-cleanrooms-configuredtable-tablereference-glue): {{
     GlueTableReference}}
   [Snowflake](#cfn-cleanrooms-configuredtable-tablereference-snowflake): {{
@@ -44,6 +47,12 @@ To declare this entity in your CloudFormation template, use the following syntax
  If present, a reference to the Athena table referred to by this table reference.
 *Required*: No
 *Type*: [AthenaTableReference](aws-properties-cleanrooms-configuredtable-athenatablereference.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Databricks`  <a name="cfn-cleanrooms-configuredtable-tablereference-databricks"></a>
+ If present, a reference to the Databricks table referred to by this table reference.
+*Required*: No
+*Type*: [DatabricksTableReference](aws-properties-cleanrooms-configuredtable-databrickstablereference.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Glue`  <a name="cfn-cleanrooms-configuredtable-tablereference-glue"></a>

@@ -56,6 +56,7 @@ You can attach Amazon EBS volumes to Amazon ECS tasks by configuring the volume 
             "name": "{{string}}",
             "resourceRequirements": [
                {
+                  "sharingStrategy": { ... },
                   "type": "{{string}}",
                   "value": "{{string}}"
                }
@@ -252,6 +253,7 @@ Required: No
                "cpu": "string",
                "exitCode": number,
                "gpuIds": [ "string" ],
+               "gpuSharingStrategy": { ... },
                "healthStatus": "string",
                "image": "string",
                "imageDigest": "string",
@@ -335,6 +337,7 @@ Required: No
                   "name": "string",
                   "resourceRequirements": [
                      {
+                        "sharingStrategy": { ... },
                         "type": "string",
                         "value": "string"
                      }

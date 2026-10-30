@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 
 Allows a user or application in a secure environment to access data in a specific Amazon S3 location registered with AWS Lake Formation by providing temporary scoped credentials that are limited to the requested data location and the caller's authorized access level.
 
+ `GetDataAccess` is logged in CloudTrail whenever a principal requests temporary data location credentials to access data in a data lake location that is registered with Lake Formation.
+
  The API operation returns an error in the following scenarios:
 + The data location is not registered with Lake Formation.
 + No AWS Glue table is associated with the data location.

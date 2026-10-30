@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/opg-cmafi.html
 # Creating a CMAF Ingest output group
 <a name="opg-cmafi"></a>
 
-When you create a AWS Elemental MediaLive channel, you might want to include a CMAF Ingest output group. For information about the use cases for a CMAF Ingest output group, see [Containers, protocols, and downstream systems](outputs-supported-containers-downstream-systems.md).
+When you create an AWS Elemental MediaLive channel, you might want to include a CMAF Ingest output group. For information about the use cases for a CMAF Ingest output group, see [Containers, protocols, and downstream systems](outputs-supported-containers-downstream-systems.md).
 
 Note that MediaLive generates a quality score for outputs in a CMAF Ingest output group. For more information, see [Working with MQCS](mqcs.md).
 

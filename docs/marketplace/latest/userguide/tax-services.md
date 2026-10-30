@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/tax-service
 
 This section describes the tax collection, invoicing, reporting, and remittance services that AWS provides for AWS Marketplace sellers in specific countries or regions. The applicable services depend on your country of incorporation and your tax registration status.
 
+Notwithstanding anything to the contrary in Section 7(g) of the AWS Marketplace Seller Terms, AWS operates as a facilitator where it facilitates a Transaction (as defined in Section 1(j) of the AWS Marketplace Seller Terms) and issues an invoice for that Transaction (including a Transaction between a Listing Owner (as defined in Section 1(a) of the AWS Marketplace Resale Addendum) and an authorized reseller or channel partner. AWS may issue a tax invoice or commercial invoice and, where required by applicable tax law, apply marketplace facilitator rules on each Transaction.
+
 **Countries and regions**
 + [Australia](#tax-services-australia)
 + [Canada](#tax-services-canada)

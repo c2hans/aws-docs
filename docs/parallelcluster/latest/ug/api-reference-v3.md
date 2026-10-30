@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/api-reference-v3.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # AWS ParallelCluster API
 <a name="api-reference-v3"></a>
 
@@ -36,7 +38,7 @@ The template used to deploy the API is available at the following URL:
 https://{{<REGION>}}-aws-parallelcluster.s3.{{<REGION>}}.amazonaws.com/parallelcluster/{{<VERSION>}}/api/parallelcluster-api.yaml
 ```
 
-where `{{<REGION>}}` is the AWS Region where the API needs to be deployed to and `{{<VERSION>}}` is the AWS ParallelCluster version (e.g. 3.16.1).
+where `{{<REGION>}}` is the AWS Region where the API needs to be deployed to and `{{<VERSION>}}` is the AWS ParallelCluster version (e.g. 3.16.2).
 
 AWS Lambda uses a Lambda layer interface with the [AWS ParallelCluster Python library API](pc-py-library-v3.md) to process the API invoked features.
 

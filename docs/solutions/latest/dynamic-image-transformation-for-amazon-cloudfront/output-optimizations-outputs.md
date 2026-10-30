@@ -31,8 +31,8 @@ The `outputs` array configures auto-optimization. Each `type` (`quality`, `forma
 
 | Output |  `value`  |  `fallback`  |
 | --- | --- | --- |
-|  `quality`  | An array whose first element is the default quality integer (1-100), followed by `[minDpr, maxDpr, quality]` mapping entries. The leading default-quality integer is required. |  `{ "dpr": <1.0-5.0> }`: the device pixel ratio used to select a quality level when no DPR signal is available. |
+|  `quality`  | An array whose first element is the default quality integer (1-100), followed by `[minDpr, maxDpr, quality]` mapping entries. The leading default-quality integer is required. You can add up to 20 mapping entries after the default quality. |  `{ "dpr": <1.0-5.0> }`: the device pixel ratio used to select a quality level when no DPR signal is available. |
 |  `format`  |  `auto`, or one of `jpg`, `jpeg`, `png`, `tiff`, `webp`, `gif`, `avif`. |  `{ "format": <one of the format values> }`: the format used when `auto` cannot determine browser support. |
-|  `autosize`  | An array of one or more derivative widths (positive integers). |  `{ "viewportWidth": <320-3840> }`: the viewport width used when no viewport signal is available. |
+|  `autosize`  | An array of 1 to 20 derivative widths (positive integers). |  `{ "viewportWidth": <320-3840> }`: the viewport width used when no viewport signal is available. |
 
 The `fallback` object is optional on every output; policies without it remain valid.

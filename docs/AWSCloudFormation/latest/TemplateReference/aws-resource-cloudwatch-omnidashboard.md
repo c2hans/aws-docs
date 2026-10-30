@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::OmniDashboard
 <a name="aws-resource-cloudwatch-omnidashboard"></a>
 
-<a name="aws-resource-cloudwatch-omnidashboard-description"></a>The `AWS::CloudWatch::OmniDashboard` resource Property description not available. for CloudWatch.
+Resource type definition for `AWS::CloudWatch::OmniDashboard`
 
 ## Syntax
 <a name="aws-resource-cloudwatch-omnidashboard-syntax"></a>
@@ -48,7 +48,7 @@ Properties:
 <a name="aws-resource-cloudwatch-omnidashboard-properties"></a>
 
 `Body`  <a name="cfn-cloudwatch-omnidashboard-body"></a>
-Property description not available.
+The dashboard body, a JSON document describing the dashboard's widgets and layout.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -56,7 +56,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-cloudwatch-omnidashboard-description"></a>
-Property description not available.
+The description of the dashboard.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -64,7 +64,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-cloudwatch-omnidashboard-name"></a>
-Property description not available.
+The name of the dashboard.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9_.@~()-]+$`
@@ -73,14 +73,14 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SpaceId`  <a name="cfn-cloudwatch-omnidashboard-spaceid"></a>
-Property description not available.
+The unique identifier of the space the dashboard belongs to.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-cloudwatch-omnidashboard-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloudwatch-omnidashboard-tag.md)
 *Maximum*: `50`
@@ -92,23 +92,31 @@ Property description not available.
 ### Ref
 <a name="aws-resource-cloudwatch-omnidashboard-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a unique identifier for this resource.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-cloudwatch-omnidashboard-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-cloudwatch-omnidashboard-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the dashboard.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The time the dashboard was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
-Property description not available.
+The principal that created the dashboard.
 
 `DashboardId`  <a name="DashboardId-fn::getatt"></a>
-Property description not available.
+The unique identifier of the dashboard.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-Property description not available.
+The time the dashboard was last updated.

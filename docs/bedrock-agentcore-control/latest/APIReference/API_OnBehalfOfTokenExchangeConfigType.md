@@ -16,6 +16,11 @@ Type: String
 Valid Values: `TOKEN_EXCHANGE | JWT_AUTHORIZATION_GRANT`
 Required: Yes
 
+ ** onBehalfOfAuthenticationConfig **   <a name="bedrockagentcorecontrol-Type-OnBehalfOfTokenExchangeConfigType-onBehalfOfAuthenticationConfig"></a>
+Specify the client authentication configuration to use for the on-behalf-of token exchange. With this configuration, you override the provider level client authentication method for the on-behalf-of exchange with the identity provider. If you don't specify this configuration, we use the provider level client authentication method.
+Type: [OnBehalfOfAuthenticationConfig](API_OnBehalfOfAuthenticationConfig.md) object
+Required: No
+
  ** tokenExchangeGrantTypeConfig **   <a name="bedrockagentcorecontrol-Type-OnBehalfOfTokenExchangeConfigType-tokenExchangeGrantTypeConfig"></a>
 Configuration specific to the TOKEN\_EXCHANGE grant type (RFC 8693).
 Type: [TokenExchangeGrantTypeConfigType](API_TokenExchangeGrantTypeConfigType.md) object

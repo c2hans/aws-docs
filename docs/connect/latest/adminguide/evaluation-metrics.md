@@ -34,7 +34,7 @@ The average evaluation score corresponds to the grouping. For example, if the gr
 + Score granularity depends on grouping level.
 + Returns percentage value.
 + Requires at least one filter from: queues, routing profiles, agents, or user hierarchy groups.
-+ Based on submitted evaluation timestamp.
++ Based on contact initiation date.
 + Data for this metric is available starting from January 10, 2025 0:00:00 GMT.
 
 ## Average weighted evaluation score
@@ -67,7 +67,7 @@ The weights are per the evaluation form version that was used to perform the eva
 + Score granularity depends on grouping level.
 + Returns percentage value.
 + Requires at least one filter from: queues, routing profiles, agents, or user hierarchy groups.
-+ Based on submitted evaluation timestamp.
++ Based on contact initiation date.
 + Data for this metric is available starting from January 10, 2025 0:00:00 GMT.
 
 ## Automatic fails percent
@@ -94,7 +94,7 @@ If a question is marked as an automatic fail, then the parent section and the fo
 + Excludes calibration evaluations.
 + Returns percentage value.
 + Requires at least one filter from: queues, routing profiles, agents, or user hierarchy groups.
-+ Based on submitted evaluation timestamp.
++ Based on contact initiation date.
 + Data for this metric is available starting from January 10, 2025 0:00:00 GMT.
 
 ## Evaluations performed
@@ -122,5 +122,5 @@ This metric provides the number of evaluations performed with evaluation status 
 + Excludes calibration evaluations.
 + Returns integer count.
 + Requires at least one filter from: queues, routing profiles, agents, or user hierarchy groups.
-+ Based on submitted evaluation timestamp.
++ Based on contact initiation date.
 + Data for this metric is available starting from January 10, 2025 0:00:00 GMT.

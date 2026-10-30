@@ -36,12 +36,13 @@ A value that specifies which requests CloudFront signs (adds authentication info
 +  `never` – CloudFront doesn't sign any origin requests.
 +  `always` – CloudFront signs all origin requests, overwriting the `Authorization` header from the viewer request if necessary.
 +  `no-override` – If the viewer request doesn't contain the `Authorization` header, CloudFront signs the origin request. If the viewer request contains the `Authorization` header, CloudFront doesn't sign the origin request, but instead passes along the `Authorization` header that it received in the viewer request.
++  `always-amz-auth` – CloudFront signs all origin requests with Amazon authentication headers, and forwards the viewer's `Authorization` header to the origin if one is present. This value is only valid with Lambda-Web origins.
 Type: String
 Valid Values: `never | always | no-override`
 Required: Yes
 
  ** SigningProtocol **   <a name="cloudfront-Type-OriginAccessControlSummary-SigningProtocol"></a>
-The signing protocol of the origin access control. The signing protocol determines how CloudFront signs (authenticates) requests. The only valid value is `sigv4`.
+The signing protocol of the origin access control. The signing protocol determines how CloudFront signs (authenticates) requests. The only valid values are `sigv4` and `sigv4a`.
 Type: String
 Valid Values: `sigv4`
 Required: Yes

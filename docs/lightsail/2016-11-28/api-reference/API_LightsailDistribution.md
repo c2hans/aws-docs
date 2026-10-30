@@ -134,6 +134,11 @@ The minimum TLS protocol version that the distribution can use to communicate wi
 Type: String
 Required: No
 
+ ** waf **   <a name="Lightsail-Type-LightsailDistribution-waf"></a>
+An object that describes the Web Application Firewall (WAF) configuration of the distribution.
+Type: [WafConfig](API_WafConfig.md) object
+Required: No
+
 ## See Also
 <a name="API_LightsailDistribution_SeeAlso"></a>
 

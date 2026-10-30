@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::Integration IntegrationCredential
 <a name="aws-properties-cloudwatch-integration-integrationcredential"></a>
 
-<a name="aws-properties-cloudwatch-integration-integrationcredential-description"></a>The `IntegrationCredential` property type specifies Property description not available. for an [AWS::CloudWatch::Integration](aws-resource-cloudwatch-integration.md).
+Write-only API-key credential material for the integration. Stored encrypted and never returned on read.
 
 ## Syntax
 <a name="aws-properties-cloudwatch-integration-integrationcredential-syntax"></a>
@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-cloudwatch-integration-integrationcredential-properties"></a>
 
 `ApiKeyCredential`  <a name="cfn-cloudwatch-integration-integrationcredential-apikeycredential"></a>
-Property description not available.
+API-key credential material that can be rotated in place on update.
 *Required*: Yes
 *Type*: [ApiKeyCredential](aws-properties-cloudwatch-integration-apikeycredential.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

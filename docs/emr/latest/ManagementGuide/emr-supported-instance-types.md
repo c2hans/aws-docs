@@ -7221,6 +7221,14 @@ The following tables list the Amazon EC2 instance types that Amazon EMR supports
   - **Instance type:** r6i.16xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.35.0, emr-6.6.0, emr-7.0.0
   - **Instance type:** r6i.24xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.35.0, emr-6.6.0, emr-7.0.0
   - **Instance type:** r6i.32xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.35.0, emr-6.6.0, emr-7.0.0
+  - **Instance type:** r6in.xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.2xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.4xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.8xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.12xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.16xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.24xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.32xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
   - **Instance type:** r7g.xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
   - **Instance type:** r7g.2xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
   - **Instance type:** r7g.4xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
@@ -10477,6 +10485,14 @@ The following tables list the Amazon EC2 instance types that Amazon EMR supports
   - **Instance type:** r6i.16xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.35.0, emr-6.6.0, emr-7.0.0
   - **Instance type:** r6i.24xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.35.0, emr-6.6.0, emr-7.0.0
   - **Instance type:** r6i.32xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.35.0, emr-6.6.0, emr-7.0.0
+  - **Instance type:** r6in.xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.2xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.4xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.8xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.12xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.16xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.24xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
+  - **Instance type:** r6in.32xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
   - **Instance type:** r7g.xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
   - **Instance type:** r7g.2xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0
   - **Instance type:** r7g.4xlarge / **Minimum supported Amazon EMR version (5.x, 6.x, 7.x):** emr-5.36.1, emr-6.10.0, emr-7.0.0

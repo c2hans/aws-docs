@@ -40,11 +40,11 @@ The revision of the worker configuration.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `WorkerConfigurationArn`  <a name="cfn-kafkaconnect-connector-workerconfiguration-workerconfigurationarn"></a>
 The Amazon Resource Name (ARN) of the worker configuration.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafkaconnect:.*`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):kafkaconnect:.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

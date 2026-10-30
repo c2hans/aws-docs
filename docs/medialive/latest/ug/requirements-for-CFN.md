@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-for-CFN
 # Requirements for CloudFormation
 <a name="requirements-for-CFN"></a>
 
-MediaLive includes a workflow wizard. Creation of a workflow always includes automatic creation of an CloudFormation stack. Therefore, to use the workflow wizard, users need permissions in CloudFormation.
+MediaLive includes a workflow wizard. Creation of a workflow always includes automatic creation of a CloudFormation stack. Therefore, to use the workflow wizard, users need permissions in CloudFormation.
 
 | Permissions | Service name in IAM | Actions |
 | --- | --- | --- |

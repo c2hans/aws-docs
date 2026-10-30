@@ -73,7 +73,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** endedAt **   <a name="deadlinecloud-Type-BatchGetJobItem-endedAt"></a>
-The date and time the resource ended running.
+The date and time the resource ended running. Returned only when the job has finished.
 Type: Timestamp
 Required: No
 
@@ -109,7 +109,7 @@ Pattern: `job-[0-9a-f]{32}`
 Required: No
 
  ** startedAt **   <a name="deadlinecloud-Type-BatchGetJobItem-startedAt"></a>
-The date and time the resource started running.
+The date and time the resource started running. Requeuing the job doesn't change this value.
 Type: Timestamp
 Required: No
 
@@ -144,7 +144,7 @@ Valid Keys: `PENDING | READY | ASSIGNED | STARTING | SCHEDULED | INTERRUPTING | 
 Required: No
 
  ** updatedAt **   <a name="deadlinecloud-Type-BatchGetJobItem-updatedAt"></a>
-The date and time the resource was updated.
+The date and time the resource was updated. Task status changes don't update this value.
 Type: Timestamp
 Required: No
 

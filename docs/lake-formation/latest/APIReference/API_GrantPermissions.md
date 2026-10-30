@@ -64,6 +64,10 @@ Content-type: application/json
          "ExpressionName": "{{string}}",
          "ResourceType": "{{string}}"
       },
+      "RLSPolicy": {
+         "CatalogId": "{{string}}",
+         "Name": "{{string}}"
+      },
       "Table": {
          "CatalogId": "{{string}}",
          "DatabaseName": "{{string}}",

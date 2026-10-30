@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/cfn-cluster-ops-troubleshooting.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # Troubleshooting stacks that include the AWS ParallelCluster custom resource
 <a name="cfn-cluster-ops-troubleshooting"></a>
 

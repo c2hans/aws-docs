@@ -78,6 +78,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::SecurityGroupEgress](aws-resource-ec2-securitygroupegress.md)
 + [AWS::EC2::SecurityGroupIngress](aws-resource-ec2-securitygroupingress.md)
 + [AWS::EC2::SecurityGroupVpcAssociation](aws-resource-ec2-securitygroupvpcassociation.md)
++ [AWS::EC2::Snapshot](aws-resource-ec2-snapshot.md)
 + [AWS::EC2::SnapshotBlockPublicAccess](aws-resource-ec2-snapshotblockpublicaccess.md)
 + [AWS::EC2::SpotFleet](aws-resource-ec2-spotfleet.md)
 + [AWS::EC2::SqlHaStandbyDetectedInstance](aws-resource-ec2-sqlhastandbydetectedinstance.md)

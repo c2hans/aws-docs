@@ -12,9 +12,12 @@ Image transformations can continue to be supplied either through individual quer
 **Warning**
 These changes can have undesired security implications like sending requests to origin that are not onboarded on DIT. **Consider using the host header mapping feature unless it is not feasible for you to enumerate every host mapping in the DIT config.**
 
+**Important**
+The solution checks the override header value before fetching from it. The value must be an HTTPS URL, origins given as a private or link-local IP address (for example, `10.0.0.5` or `169.254.169.254`) are rejected, and redirects from the origin are not followed. The solution does not check which IP address a hostname resolves to. A hostname that resolves to a private address, such as an internal load balancer or a record in an Amazon Route 53 private hosted zone, is fetched like any other origin. Only set the header to origins that you control, and don’t build its value from viewer input unless your CloudFront function first checks it against a list of origins that you allow.
+
 To use this capability, follow these steps:
 
-1. Update **Origin Override Header** parameter in CloudFormation stack - this identifies the custom header that will be added by CloudFront function and used by the image processing layer to route requests to the targeted origin. All solution specific custom headers are prepended with `dit-` we recommend the same for this header for example, `dit-origin`.
+1. Update **Origin Override Header** parameter in CloudFormation stack - this identifies the custom header that will be added by CloudFront function and used by the image processing layer to route requests to the targeted origin. All solution specific custom headers are prepended with `dit-`, and as of v8.1.0 this header must be too, for example `dit-origin`. The CloudFront function removes any `dit-` header sent by viewers, so the value can only come from your CloudFront function.
 
    This change updates the implemented cache policy and ECS environment variable to use the identified custom header.
 

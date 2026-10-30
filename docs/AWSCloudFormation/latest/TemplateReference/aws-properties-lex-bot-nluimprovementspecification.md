@@ -42,7 +42,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Specifies the mode for Assisted NLU operation. Use `Primary` to make Assisted NLU the primary intent recognition method, or `Fallback` to use it only when standard NLU confidence is low.
 *Required*: No
 *Type*: String
-*Allowed values*: `Primary | Fallback`
+*Allowed values*: `Primary | Fallback | DialogManager`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Enabled`  <a name="cfn-lex-bot-nluimprovementspecification-enabled"></a>

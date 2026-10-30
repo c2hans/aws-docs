@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/thumbnails-enable.ht
 # Enabling thumbnails in a channel
 <a name="thumbnails-enable"></a>
 
-You must enable the thumbnails feature in each MediaLivechannel.
+You must enable the thumbnails feature in each MediaLive channel.
 
 You can enable or disable thumbnails only when the channel is idle (not running).
 

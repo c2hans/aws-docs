@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/general-topiclist.ht
 # SageMaker AI Crowd HTML Elements
 <a name="general-topiclist"></a>
 
-The following is a list of Crowd HTML Elements that make building a custom template easier and provide a familiar UI for workers. These elements are supported in Ground Truth, Augmented AI, and Mechanical Turk.
+The following is a list of Crowd HTML Elements that make building a custom template easier and provide a familiar UI for workers. These elements are supported in Ground Truth and Augmented AI.
 
 ## Crowd HTML Elements V2
 <a name="elements-v2"></a>

@@ -10,7 +10,11 @@ A type of OutputConfig, used when the output in a feed is for the crop feature.
 ## Contents
 <a name="API_CroppingConfig_Contents"></a>
 
-The members of this exception structure are context-dependent.
+ ** templateGroups **   <a name="elementalinference-Type-CroppingConfig-templateGroups"></a>
+An array of template groups for the crop output. Each template group provides the graphics-compositing templates that Elemental Inference applies to the cropped video. You can specify from 1 to 4 template groups.
+Type: Array of [TemplateGroup](API_TemplateGroup.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 4 items.
+Required: No
 
 ## See Also
 <a name="API_CroppingConfig_SeeAlso"></a>

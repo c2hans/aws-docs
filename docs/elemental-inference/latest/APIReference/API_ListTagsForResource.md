@@ -21,7 +21,7 @@ The request uses the following URI parameters.
 
  ** [resourceArn](#API_ListTagsForResource_RequestSyntax) **   <a name="elementalinference-ListTagsForResource-request-uri-resourceArn"></a>
 The ARN of the resource whose tags you want to query.
-Pattern: `arn:aws[a-z\-]*:elemental-inference[a-z\-]*:[a-z0-9\-]+:[0-9]{12}:(feed|dictionary)/[a-zA-Z0-9]{1,19}`
+Pattern: `arn:aws[a-z\-]*:elemental-inference[a-z\-]*:[a-z0-9\-]+:[0-9]{12}:[a-z]+/[a-zA-Z0-9]{1,19}`
 Required: Yes
 
 ## Request Body

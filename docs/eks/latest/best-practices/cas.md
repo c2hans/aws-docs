@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/cas.html
 <a name="cas"></a>
 
 **Tip**
- [Explore](https://aws-experience.com/emea/smb/events/series/get-hands-on-with-amazon-eks?trk=4a9b4147-2490-4c63-bc9f-f8a84b122c8c&sc_channel=el) best practices through Amazon EKS workshops.
+ [Explore](https://awsworkshop.io/eks?trk=4a9b4147-2490-4c63-bc9f-f8a84b122c8c&sc_channel=el) best practices through Amazon EKS workshops.
 
 ## Overview
 <a name="_overview"></a>

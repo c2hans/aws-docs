@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-ips.html
 
 When you plan for a MediaLive channel that includes multiple inputs that you will switch between, there are special requirements that you must consider.
 
-This section assumes that you are familiar with the general procedures for designing a channel, as described in [Planning the outputs in the channel](planning-the-channel-in-workflow.md) and for creating a channel, as described in[Creating a channel from scratch](creating-channel-scratch.md).
+This section assumes that you are familiar with the general procedures for designing a channel, as described in [Planning the outputs in the channel](planning-the-channel-in-workflow.md) and for creating a channel, as described in [Creating a channel from scratch](creating-channel-scratch.md).
 
 **Topics**
 + [Plan the outputs](ips-step-plan-outputs.md)

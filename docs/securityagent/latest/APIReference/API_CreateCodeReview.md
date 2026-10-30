@@ -30,6 +30,13 @@ Content-type: application/json
             "uris": [ "{{string}}" ]
          }
       ],
+      "clientCertificates": [
+         {
+            "name": "{{string}}",
+            "origins": [ "{{string}}" ],
+            "secretArn": "{{string}}"
+         }
+      ],
       "documents": [
          {
             "artifactId": "{{string}}",
@@ -174,6 +181,13 @@ Content-type: application/json
             "identifier": "string",
             "mfaForwardingAddress": "string",
             "uris": [ "string" ]
+         }
+      ],
+      "clientCertificates": [
+         {
+            "name": "string",
+            "origins": [ "string" ],
+            "secretArn": "string"
          }
       ],
       "documents": [

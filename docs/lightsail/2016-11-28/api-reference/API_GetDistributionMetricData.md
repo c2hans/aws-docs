@@ -82,8 +82,18 @@ Valid distribution metric names are listed below, along with the most useful `st
    `Statistics`: The most useful statistic is `Average`.
 
    `Unit`: The published unit is `Percent`.
++  ** `WafAllowedRequests` ** - The number of viewer requests that Web Application Firewall (WAF) allowed. This metric is available only when WAF is enabled for the distribution.
+
+   `Statistics`: The most useful statistic is `Sum`.
+
+   `Unit`: The published unit is `None`.
++  ** `WafBlockedRequests` ** - The number of viewer requests that WAF blocked. This metric is available only when WAF is enabled for the distribution.
+
+   `Statistics`: The most useful statistic is `Sum`.
+
+   `Unit`: The published unit is `None`.
 Type: String
-Valid Values: `Requests | BytesDownloaded | BytesUploaded | TotalErrorRate | Http4xxErrorRate | Http5xxErrorRate`
+Valid Values: `Requests | BytesDownloaded | BytesUploaded | TotalErrorRate | Http4xxErrorRate | Http5xxErrorRate | WafAllowedRequests | WafBlockedRequests`
 Required: Yes
 
  ** [period](#API_GetDistributionMetricData_RequestSyntax) **   <a name="Lightsail-GetDistributionMetricData-request-period"></a>
@@ -156,7 +166,7 @@ Type: Array of [MetricDatapoint](API_MetricDatapoint.md) objects
  ** [metricName](#API_GetDistributionMetricData_ResponseSyntax) **   <a name="Lightsail-GetDistributionMetricData-response-metricName"></a>
 The name of the metric returned.
 Type: String
-Valid Values: `Requests | BytesDownloaded | BytesUploaded | TotalErrorRate | Http4xxErrorRate | Http5xxErrorRate`
+Valid Values: `Requests | BytesDownloaded | BytesUploaded | TotalErrorRate | Http4xxErrorRate | Http5xxErrorRate | WafAllowedRequests | WafBlockedRequests`
 
 ## Errors
 <a name="API_GetDistributionMetricData_Errors"></a>

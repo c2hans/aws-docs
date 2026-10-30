@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/index.html
 title: 'AWS Data Transfer Terminal Documentation'
 canonical_url: https://docs.aws.amazon.com/datatransferterminal/
 source: aws-documentation
-generated_on: 2026-10-27
+generated_on: 2026-10-30
 ---
 
 # AWS Data Transfer Terminal Documentation

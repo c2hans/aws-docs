@@ -173,6 +173,7 @@ Required: Yes
                },
                "resourceRequirements": [
                   {
+                     "sharingStrategy": { ... },
                      "type": "string",
                      "value": "string"
                   }

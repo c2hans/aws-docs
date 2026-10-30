@@ -14,7 +14,7 @@ The configuration for a specific inference operation, including its request path
 The request path for this operation (for example, `/v1/messages` or `/v1/responses`).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `/[a-zA-Z0-9\-\._/]+`
+Pattern: `/[a-zA-Z0-9\-\._/{}]+`
 Required: Yes
 
  ** models **   <a name="bedrockagentcorecontrol-Type-InferenceOperationConfiguration-models"></a>
@@ -27,7 +27,7 @@ Required: No
 The provider path to forward requests to, if it differs from the request path. For example, `/anthropic/v1/messages` when the provider expects a different path than the client-facing `/v1/messages`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `/[a-zA-Z0-9\-\._/]+`
+Pattern: `/[a-zA-Z0-9\-\._/{}]+`
 Required: No
 
 ## See Also

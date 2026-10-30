@@ -37,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The model ID or glob pattern that identifies the model (for example, `anthropic.claude-opus-*` or `openai.gpt-oss-*`).
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9\-\._\*\?@]+(/[a-zA-Z0-9\-\._\*\?@]+)*$`
+*Pattern*: `^[a-zA-Z0-9\-\._\*\?@:]+(/[a-zA-Z0-9\-\._\*\?@:]+)*$`
 *Minimum*: `1`
-*Maximum*: `256`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -63,6 +63,10 @@ Required: Yes
       },
       "ARN": "string",
       "AssociationConfig": {
+         "ChallengeJavascriptSdkInjection": {
+            "string" : {
+            }
+         },
          "RequestBody": {
             "string" : {
                "DefaultSizeInspectionLimit": "string"

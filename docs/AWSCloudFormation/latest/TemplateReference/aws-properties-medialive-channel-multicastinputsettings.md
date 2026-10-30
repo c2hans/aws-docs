@@ -37,6 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `SourceIpAddress`  <a name="cfn-medialive-channel-multicastinputsettings-sourceipaddress"></a>
 Optionally, a source IP address to filter by for Source-specific Multicast (SSM).
+Leave this property empty if the input has a `SecondaryUrl`. For an input with a secondary source, specify the source IP addresses on the input instead (`SourceIp` and `SecondarySourceIp`).
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

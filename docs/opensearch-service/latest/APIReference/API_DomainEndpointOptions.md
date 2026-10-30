@@ -40,8 +40,9 @@ Specify the TLS security policy to apply to the HTTPS endpoint of the domain. Th
 +  **Policy-Min-TLS-1-2-2019-07:** TLS security policy that supports only TLS version 1.2
 +  **Policy-Min-TLS-1-2-PFS-2023-10:** TLS security policy that supports TLS version 1.2 to TLS version 1.3 with perfect forward secrecy cipher suites
 +  **Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08:** TLS security policy that supports TLS version 1.3 with FIPS
++  **Policy-Min-TLS-1-2-FIPS-PQ-2026-10:** TLS security policy that supports TLS version 1.2 to TLS version 1.3 with FIPS and post-quantum cipher suites
 Type: String
-Valid Values: `Policy-Min-TLS-1-0-2019-07 | Policy-Min-TLS-1-2-2019-07 | Policy-Min-TLS-1-2-PFS-2023-10 | Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08`
+Valid Values: `Policy-Min-TLS-1-0-2019-07 | Policy-Min-TLS-1-2-2019-07 | Policy-Min-TLS-1-2-PFS-2023-10 | Policy-Min-TLS-1-2-RFC9151-FIPS-2024-08 | Policy-Min-TLS-1-2-FIPS-PQ-2026-10`
 Required: No
 
 ## See Also

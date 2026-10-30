@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::DomainForOrganization IdentityProviderConfiguration
 <a name="aws-properties-cloudwatch-domainfororganization-identityproviderconfiguration"></a>
 
-<a name="aws-properties-cloudwatch-domainfororganization-identityproviderconfiguration-description"></a>The `IdentityProviderConfiguration` property type specifies Property description not available. for an [AWS::CloudWatch::DomainForOrganization](aws-resource-cloudwatch-domainfororganization.md).
+Identity provider configuration for the domain.
 
 ## Syntax
 <a name="aws-properties-cloudwatch-domainfororganization-identityproviderconfiguration-syntax"></a>

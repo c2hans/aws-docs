@@ -95,6 +95,7 @@ Required: No
          "ProductSKU": "string",
          "ReceivedMetadata": {
             "AllowedOperations": [ "string" ],
+            "GrantType": "string",
             "ReceivedStatus": "string",
             "ReceivedStatusReason": "string"
          },

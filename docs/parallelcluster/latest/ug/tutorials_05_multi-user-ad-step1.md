@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials_05_multi-user-ad-step1.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # Create the AD infrastructure
 <a name="tutorials_05_multi-user-ad-step1"></a>
 

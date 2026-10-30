@@ -23,6 +23,10 @@ Creates a [WebACL](API_WebACL.md) per the specifications provided.
       ]
    },
    "AssociationConfig": {
+      "ChallengeJavascriptSdkInjection": {
+         "{{string}}" : {
+         }
+      },
       "RequestBody": {
          "{{string}}" : {
             "DefaultSizeInspectionLimit": "{{string}}"
@@ -1059,6 +1063,7 @@ Specifies custom configurations for the associations between the web ACL and pro
 Use this to customize the maximum size of the request body that your protected resources forward to AWS WAF for inspection. You can customize this setting for CloudFront, API Gateway, Amazon Cognito, App Runner, or Verified Access resources. The default setting is 16 KB (16,384 bytes).
 You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see [AWS WAF Pricing](http://aws.amazon.com/waf/pricing/).
 For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
+You can also use this to have your CloudFront distributions insert the AWS WAF challenge JavaScript SDK into the HTML responses that they return. For more information, see the `ChallengeJavascriptSdkInjection` setting.
 Type: [AssociationConfig](API_AssociationConfig.md) object
 Required: No
 

@@ -108,7 +108,7 @@ Properties:
 <a name="aws-resource-opensearchservice-domain-properties"></a>
 
 `AcceptedWarnings`  <a name="cfn-opensearchservice-domain-acceptedwarnings"></a>
-A list of advisory warning codes to accept for this configuration change. By default, any advisory warning blocks the change. Include the code of each warning you want to accept so the change can proceed. You can find warning codes in the`ValidationFailures` list returned by `DescribeDomainChangeProgress`and `DescribeDryRunProgress`. Critical validation failures cannot be accepted and always block the change. If you omit this parameter or pass an empty list, all warnings block the change. For more information, see [Validating a domain update](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-configuration-changes#validation-check).
+A list of advisory warning codes to accept for this configuration change. By default, any advisory warning blocks the change. Include the code of each warning you want to accept so the change can proceed. You can find warning codes in the `ValidationFailures` list returned by `DescribeDomainChangeProgress` and `DescribeDryRunProgress`. Critical validation failures cannot be accepted and always block the change. If you omit this parameter or pass an empty list, all warnings block the change. For more information, see [Validating a domain update](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-configuration-changes#validation-check).
 *Required*: No
 *Type*: Array of String
 *Maximum*: `25`

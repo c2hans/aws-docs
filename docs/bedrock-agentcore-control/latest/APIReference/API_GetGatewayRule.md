@@ -77,7 +77,7 @@ Array Members: Minimum number of 1 item. Maximum number of 2 items.
  ** [conditions](#API_GetGatewayRule_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetGatewayRule-response-conditions"></a>
 The conditions that must be met for the rule to apply.
 Type: Array of [Condition](API_Condition.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
 
  ** [createdAt](#API_GetGatewayRule_ResponseSyntax) **   <a name="bedrockagentcorecontrol-GetGatewayRule-response-createdAt"></a>
 The timestamp when the rule was created.

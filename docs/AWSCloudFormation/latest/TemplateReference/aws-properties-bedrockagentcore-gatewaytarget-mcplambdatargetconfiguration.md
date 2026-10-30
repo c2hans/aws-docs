@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Resource Name (ARN) of the Lambda function. This function is invoked by the gateway to communicate with the target.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^arn:(aws[a-zA-Z-]*)?:lambda:([a-z]{2}(-gov)?-[a-z]+-\d{1}):(\d{12}):function:([a-zA-Z0-9-_.]+)(:(\$LATEST|[a-zA-Z0-9-_]+))?$`
+*Pattern*: `^arn:(aws[a-zA-Z-]*)?:lambda:([a-z0-9-]+):(\d{12}):function:([a-zA-Z0-9-_.]+)(:(\$LATEST|[a-zA-Z0-9-_]+))?$`
 *Minimum*: `1`
 *Maximum*: `170`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

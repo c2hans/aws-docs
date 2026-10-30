@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::Space
 <a name="aws-resource-cloudwatch-space"></a>
 
-<a name="aws-resource-cloudwatch-space-description"></a>The `AWS::CloudWatch::Space` resource Property description not available. for CloudWatch.
+Resource type definition for `AWS::CloudWatch::Space`
 
 ## Syntax
 <a name="aws-resource-cloudwatch-space-syntax"></a>
@@ -51,7 +51,7 @@ Properties:
 <a name="aws-resource-cloudwatch-space-properties"></a>
 
 `AgentCoreEvaluationRoleArn`  <a name="cfn-cloudwatch-space-agentcoreevaluationrolearn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the IAM role used for AgentCore evaluation.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:.+$`
@@ -60,7 +60,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DataAccessRoleArn`  <a name="cfn-cloudwatch-space-dataaccessrolearn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the IAM role the space uses to access observability data.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:.+$`
@@ -69,7 +69,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DomainId`  <a name="cfn-cloudwatch-space-domainid"></a>
-Property description not available.
+The identifier of the domain the space belongs to.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^d-[0-9a-z]{1,25}$`
@@ -82,7 +82,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-cloudwatch-space-name"></a>
-Property description not available.
+The name of the space.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-z0-9]+(-[a-z0-9]+)*$`
@@ -91,7 +91,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-cloudwatch-space-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloudwatch-space-tag.md)
 *Maximum*: `50`
@@ -103,29 +103,37 @@ Property description not available.
 ### Ref
 <a name="aws-resource-cloudwatch-space-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the value of the `Arn` property.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-cloudwatch-space-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-cloudwatch-space-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the space.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The time the space was created.
 
 `OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
-Property description not available.
+The AWS account that owns the space.
 
 `Region`  <a name="Region-fn::getatt"></a>
-Property description not available.
+The AWS Region the space resides in.
 
 `SpaceId`  <a name="SpaceId-fn::getatt"></a>
-Property description not available.
+The unique identifier of the space.
 
 `Status`  <a name="Status-fn::getatt"></a>
-Property description not available.
+The status of the space.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-Property description not available.
+The time the space was last updated.

@@ -74,7 +74,7 @@ Specifies the preemption behavior for jobs in a quota share.
 
 `QuotaShareName`  <a name="cfn-batch-quotashare-quotasharename"></a>
 The name of the quota share.
-*Required*: Yes
+*Required*: No
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `128`

@@ -128,7 +128,7 @@ The tier level for the router output. The tier sets the maximum bitrate, in Mbps
 The 250 Mbps and 500 Mbps tiers are high-bitrate tiers that support TR-07 (JPEG XS) workflows.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `OUTPUT_100 | OUTPUT_50 | OUTPUT_20`
+*Allowed values*: `OUTPUT_100 | OUTPUT_50 | OUTPUT_20 | OUTPUT_500 | OUTPUT_250`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -155,6 +155,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the router output.
+
+`AssociatedSourceEndpointArns`  <a name="AssociatedSourceEndpointArns-fn::getatt"></a>
+The Amazon Resource Names (ARNs) of one or more source endpoints that are associated with this router output.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the router output was created.

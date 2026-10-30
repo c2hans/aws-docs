@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::Integration ApiKeyCredential
 <a name="aws-properties-cloudwatch-integration-apikeycredential"></a>
 
-<a name="aws-properties-cloudwatch-integration-apikeycredential-description"></a>The `ApiKeyCredential` property type specifies Property description not available. for an [AWS::CloudWatch::Integration](aws-resource-cloudwatch-integration.md).
+API-key credential material that can be rotated in place on update.
 
 ## Syntax
 <a name="aws-properties-cloudwatch-integration-apikeycredential-syntax"></a>

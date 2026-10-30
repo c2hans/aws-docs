@@ -144,13 +144,13 @@ Specifies which plugin to use for the connector. You must specify a single-eleme
 *Required*: Yes
 *Type*: Array of [Plugin](aws-properties-kafkaconnect-connector-plugin.md)
 *Minimum*: `1`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ServiceExecutionRoleArn`  <a name="cfn-kafkaconnect-connector-serviceexecutionrolearn"></a>
 The Amazon Resource Name (ARN) of the IAM role used by the connector to access Amazon Web Services resources.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):iam:.*`
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):iam:.*`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-kafkaconnect-connector-tags"></a>
@@ -163,7 +163,7 @@ Property description not available.
 The worker configurations that are in use with the connector.
 *Required*: No
 *Type*: [WorkerConfiguration](aws-properties-kafkaconnect-connector-workerconfiguration.md)
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
 <a name="aws-resource-kafkaconnect-connector-return-values"></a>

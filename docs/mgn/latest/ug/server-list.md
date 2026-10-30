@@ -53,7 +53,7 @@ The columns include:
   + **Wait for initial sync to complete** – Data replication is initiating for the server. Wait for the initial sync process to complete.
   + **Start data replication** – Data replication has not been started or has been stopped. For a paused server, choose **Resume data replication** from the **Replication** menu.
   + **Launch test instance** – The server is ready to launch a test instance.
-  + **Complete testing and mark as 'ready for cutover'** – The server has launched a Test instance that needs to be reverted or finalized.
+  + **Complete testing and mark as 'Ready for cutover'** – The server has launched a Test instance that needs to be reverted or finalized.
   + **Launch cutover instance** – The server had a Test instance launched and finalized and now is ready to launch a cutover instance.
   + **Finalize cutover** – The server has launched a cutover instance that needs to be finalized.
   + **Terminate launched instance, Launch cutover instance** – The server is ready for cutover. Terminate the launched Test instance and launch a cutover instance.

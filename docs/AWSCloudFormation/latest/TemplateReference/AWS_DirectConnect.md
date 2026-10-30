@@ -14,4 +14,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::DirectConnect::Lag](aws-resource-directconnect-lag.md)
 + [AWS::DirectConnect::PrivateVirtualInterface](aws-resource-directconnect-privatevirtualinterface.md)
 + [AWS::DirectConnect::PublicVirtualInterface](aws-resource-directconnect-publicvirtualinterface.md)
++ [AWS::DirectConnect::ResiliencyGroup](aws-resource-directconnect-resiliencygroup.md)
 + [AWS::DirectConnect::TransitVirtualInterface](aws-resource-directconnect-transitvirtualinterface.md)

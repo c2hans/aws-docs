@@ -17,6 +17,12 @@ Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `[\w \-\.',@:;]*`
 Required: No
 
+ ** dataSourceConfiguration **   <a name="elementalinference-Type-ClippingConfig-dataSourceConfiguration"></a>
+The data source to map onto this clipping output. This parameter is optional. When you include this parameter, Elemental Inference reads the event data for the fixture that you specify, and includes that data in the event clipping metadata for this output.
+If you omit this parameter, Elemental Inference doesn't map a data source onto this output.
+Type: [DataSourceConfiguration](API_DataSourceConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_ClippingConfig_SeeAlso"></a>
 

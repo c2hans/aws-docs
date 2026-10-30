@@ -65,6 +65,13 @@ Content-type: application/json
                   "uris": [ "string" ]
                }
             ],
+            "clientCertificates": [
+               {
+                  "name": "string",
+                  "origins": [ "string" ],
+                  "secretArn": "string"
+               }
+            ],
             "documents": [
                {
                   "artifactId": "string",

@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::DomainForOrganization
 <a name="aws-resource-cloudwatch-domainfororganization"></a>
 
-<a name="aws-resource-cloudwatch-domainfororganization-description"></a>The `AWS::CloudWatch::DomainForOrganization` resource Property description not available. for CloudWatch.
+Resource Type definition for `AWS::CloudWatch::DomainForOrganization`. The organization-level boundary for CloudWatch Omni: an organization domain configures the identity providers users sign in through for the whole AWS Organization and exposes the endpoint URLs used to reach CloudWatch Omni. It can only be created by the organization's management account.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-domainfororganization-syntax"></a>
@@ -50,7 +50,7 @@ Properties:
 <a name="aws-resource-cloudwatch-domainfororganization-properties"></a>
 
 `DomainAccessRoleArn`  <a name="cfn-cloudwatch-domainfororganization-domainaccessrolearn"></a>
-Property description not available.
+The ARN of an IAM role in the management account that CloudWatch Omni assumes for domain-scoped credential vending.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws[a-zA-Z-]*:iam::[0-9]{12}:role/.+$`
@@ -65,7 +65,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IdentityProviders`  <a name="cfn-cloudwatch-domainfororganization-identityproviders"></a>
-Property description not available.
+The identity providers configured for the domain.
 *Required*: Yes
 *Type*: Array of String
 *Allowed values*: `IAM | IDC`
@@ -74,7 +74,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-cloudwatch-domainfororganization-name"></a>
-Property description not available.
+A name that identifies the domain.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-z0-9]+(-[a-z0-9]+)*$`
@@ -83,7 +83,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-cloudwatch-domainfororganization-tags"></a>
-Property description not available.
+An array of key-value pairs to apply to this resource.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloudwatch-domainfororganization-tag.md)
 *Maximum*: `50`
@@ -95,41 +95,49 @@ Property description not available.
 ### Ref
 <a name="aws-resource-cloudwatch-domainfororganization-return-values-ref"></a>
 
+When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the value of the `Arn` property.
+
+For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
 ### Fn::GetAtt
 <a name="aws-resource-cloudwatch-domainfororganization-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
 
 ####
 <a name="aws-resource-cloudwatch-domainfororganization-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the resource.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-Property description not available.
+The timestamp when the domain was created.
 
 `CustomEndpointUrls`  <a name="CustomEndpointUrls-fn::getatt"></a>
-Property description not available.
+Additional endpoint URLs derived from the domain name.
 
 `DomainEndpointUrl`  <a name="DomainEndpointUrl-fn::getatt"></a>
-Property description not available.
+The HTTPS endpoint URL for accessing the domain.
 
 `DomainId`  <a name="DomainId-fn::getatt"></a>
-Property description not available.
+The unique ID of the domain.
 
 `IdentityCenterApplicationArn`  <a name="IdentityCenterApplicationArn-fn::getatt"></a>
-Property description not available.
+The ARN of the Identity Center application. Absent for IAM-only domains.
 
 `OrganizationId`  <a name="OrganizationId-fn::getatt"></a>
-Property description not available.
+The ID of the AWS Organization this domain belongs to.
 
 `OwnerAccountId`  <a name="OwnerAccountId-fn::getatt"></a>
-Property description not available.
+The account ID of the organization's management account, which owns this domain.
 
 `Region`  <a name="Region-fn::getatt"></a>
-Property description not available.
+The Region where this domain was created.
 
 `Status`  <a name="Status-fn::getatt"></a>
-Property description not available.
+Current status of the domain.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-Property description not available.
+The timestamp when the domain was last updated.

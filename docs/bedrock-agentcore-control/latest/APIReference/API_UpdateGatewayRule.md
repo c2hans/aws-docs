@@ -56,7 +56,7 @@ Required: No
  ** [conditions](#API_UpdateGatewayRule_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateGatewayRule-request-conditions"></a>
 The updated conditions for the rule.
 Type: Array of [Condition](API_Condition.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
 Required: No
 
  ** [description](#API_UpdateGatewayRule_RequestSyntax) **   <a name="bedrockagentcorecontrol-UpdateGatewayRule-request-description"></a>
@@ -113,7 +113,7 @@ Array Members: Minimum number of 1 item. Maximum number of 2 items.
  ** [conditions](#API_UpdateGatewayRule_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateGatewayRule-response-conditions"></a>
 The conditions that must be met for the rule to apply.
 Type: Array of [Condition](API_Condition.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
 
  ** [createdAt](#API_UpdateGatewayRule_ResponseSyntax) **   <a name="bedrockagentcorecontrol-UpdateGatewayRule-response-createdAt"></a>
 The timestamp when the rule was created.

@@ -74,6 +74,10 @@ Required: No
       },
       "ARN": "string",
       "AssociationConfig": {
+         "ChallengeJavascriptSdkInjection": {
+            "string" : {
+            }
+         },
          "RequestBody": {
             "string" : {
                "DefaultSizeInspectionLimit": "string"

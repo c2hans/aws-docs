@@ -40,6 +40,7 @@ The following data types are supported:
 +  [CaCertificateSource](API_CaCertificateSource.md)
 +  [Category](API_Category.md)
 +  [CiCdConfiguration](API_CiCdConfiguration.md)
++  [ClientCertificate](API_ClientCertificate.md)
 +  [CloudWatchLog](API_CloudWatchLog.md)
 +  [CodeLocation](API_CodeLocation.md)
 +  [CodeRemediationTask](API_CodeRemediationTask.md)

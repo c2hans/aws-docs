@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials_05_multi-user-ad-step3.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # Create the cluster
 <a name="tutorials_05_multi-user-ad-step3"></a>
 
@@ -192,7 +194,7 @@ $ pcluster create-cluster --cluster-name {{"ad-cluster"}} --cluster-configuratio
     "cloudformationStackStatus": "CREATE_IN_PROGRESS",
     "cloudformationStackArn": "arn:aws:cloudformation:region-id:123456789012:stack/ad-cluster/1234567-abcd-0123-def0-abcdef0123456",
     "region": "region-id",
-    "version": 3.16.1,
+    "version": 3.16.2,
     "clusterStatus": "CREATE_IN_PROGRESS"
   }
 }

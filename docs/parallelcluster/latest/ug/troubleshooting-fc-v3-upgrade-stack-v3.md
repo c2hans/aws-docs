@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/troubleshooting-fc-v3-upgrade-stack-v3.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # Trying to upgrade the AWS ParallelCluster API stack
 <a name="troubleshooting-fc-v3-upgrade-stack-v3"></a>
 

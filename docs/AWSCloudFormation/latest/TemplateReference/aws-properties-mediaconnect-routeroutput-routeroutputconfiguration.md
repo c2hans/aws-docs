@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[MediaConnectFlow](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-mediaconnectflow)" : {{MediaConnectFlowRouterOutputConfiguration}},
   "[MediaLiveInput](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-medialiveinput)" : {{MediaLiveInputRouterOutputConfiguration}},
+  "[SourceEndpoint](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-sourceendpoint)" : {{SourceEndpointRouterOutputConfiguration}},
   "[Standard](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-standard)" : {{StandardRouterOutputConfiguration}}
 }
 ```
@@ -33,6 +34,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     MediaConnectFlowRouterOutputConfiguration}}
   [MediaLiveInput](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-medialiveinput): {{
     MediaLiveInputRouterOutputConfiguration}}
+  [SourceEndpoint](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-sourceendpoint): {{
+    SourceEndpointRouterOutputConfiguration}}
   [Standard](#cfn-mediaconnect-routeroutput-routeroutputconfiguration-standard): {{
     StandardRouterOutputConfiguration}}
 ```
@@ -54,6 +57,12 @@ To connect the router output to the MediaLive input, provide both `mediaLiveInpu
 You can't change `destinationTransitEncryption` while the router output is connected to a MediaLive input. To change it, first disconnect the router output, then update the encryption.
 *Required*: No
 *Type*: [MediaLiveInputRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-medialiveinputrouteroutputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SourceEndpoint`  <a name="cfn-mediaconnect-routeroutput-routeroutputconfiguration-sourceendpoint"></a>
+Property description not available.
+*Required*: No
+*Type*: [SourceEndpointRouterOutputConfiguration](aws-properties-mediaconnect-routeroutput-sourceendpointrouteroutputconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Standard`  <a name="cfn-mediaconnect-routeroutput-routeroutputconfiguration-standard"></a>

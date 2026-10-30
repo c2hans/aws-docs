@@ -22,4 +22,4 @@ The `contentModeration` transformation accepts `true` (defaults) or an object:
 | --- | --- | --- |
 |  `minConfidence`  | number (0-100) | Minimum confidence for a detected moderation label to trigger blurring. Default `75`. |
 |  `blur`  | number (0.3-1000) | Gaussian blur strength applied to flagged images. Default `50`. |
-|  `moderationLabels`  | string array | Specific moderation labels to act on. When omitted or empty, any detected moderation label above the confidence threshold triggers blurring. |
+|  `moderationLabels`  | string array | Specific moderation labels to act on. When omitted or empty, any detected moderation label above the confidence threshold triggers blurring. You can specify up to 100 labels, each up to 100 characters. |

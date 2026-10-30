@@ -181,6 +181,9 @@ When the service scheduler stops running tasks, it attempts to maintain balance 
          "format": "{{string}}",
          "includeQueryParameters": "{{string}}"
       },
+      "containerConfigurations": [
+         { ... }
+      ],
       "enabled": {{boolean}},
       "logConfiguration": {
          "logDriver": "{{string}}",
@@ -575,6 +578,9 @@ Required: No
                   "format": "string",
                   "includeQueryParameters": "string"
                },
+               "containerConfigurations": [
+                  { ... }
+               ],
                "enabled": boolean,
                "logConfiguration": {
                   "logDriver": "string",

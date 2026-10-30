@@ -16,6 +16,8 @@ You are charged additional fees when your protected resources forward body sizes
 
 For Application Load Balancer and AWS AppSync, the limit is fixed at 8 KB (8,192 bytes).
 
+You can also use this to have your CloudFront distributions insert the AWS WAF challenge JavaScript SDK into the HTML responses that they return. For more information, see the `ChallengeJavascriptSdkInjection` setting.
+
 ## Syntax
 <a name="aws-properties-wafv2-webacl-associationconfig-syntax"></a>
 

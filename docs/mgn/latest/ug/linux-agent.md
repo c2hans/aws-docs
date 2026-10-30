@@ -123,7 +123,7 @@ This flag may only be used when adding new source servers to MGN. You cannot use
 
    + --no-replication
 
-     By default after agent installation, the replication begins automatically. This attribute allows you to install the agent without immediately starting the replication. The 90-day free replication period excludes hours where the replication was stopped.
+     By default after agent installation, the replication begins automatically. This attribute allows you to install the agent without immediately starting the replication. The free period of 2,160 hours (90 days when used continuously) excludes hours when replication was stopped.
 
      To start the replication post installation of replication agent using `--no-replication` attribute you can start replication by using the "Start Replication" option from Replication menu for the source server in the AWS MGN Dashboard or by using AWS CLI [start-replication](https://docs.aws.amazon.com/mgn/latest/APIReference/API_StartReplication.html)
    + --dualstack

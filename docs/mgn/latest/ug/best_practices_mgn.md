@@ -32,7 +32,7 @@ The following are the required steps to complete a successful migration implemen
 
 1. Confirm that the data replication status is **Healthy**.
 
-1. Test the launch of Test instances a week before the actual cutover.
+1. Test the launch of test instances at least two weeks before the actual cutover.
 
 1. Address any issues that come up, such as Launch setting misconfiguration and potential AWS limits.
 

@@ -83,6 +83,7 @@ When you enable connection logging for a new or existing endpoint, you can set `
 <a name="device-token-status-failure-reasons"></a>
 
 When the `status` of a `device-token-status` provider entry is `failed`, the entry includes a `reason` subfield. The `reason` subfield can have one of the following values.
++ `token-not-provided`
 + `token-expired`
 + `signature-invalid`
 + `token-malformed`

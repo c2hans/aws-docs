@@ -15,6 +15,12 @@ The list of actors used during penetration testing.
 Type: Array of [Actor](API_Actor.md) objects
 Required: No
 
+ ** clientCertificates **   <a name="securityagent-Type-Assets-clientCertificates"></a>
+The client certificates for mutual TLS (mTLS) authentication to target hosts. Each certificate is stored in Secrets Manager and scoped to specific target origins.
+Type: Array of [ClientCertificate](API_ClientCertificate.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Required: No
+
  ** documents **   <a name="securityagent-Type-Assets-documents"></a>
 The list of documents that provide context for the pentest.
 Type: Array of [DocumentInfo](API_DocumentInfo.md) objects

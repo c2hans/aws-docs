@@ -57,7 +57,7 @@ Required: Yes
 The request accepts the following data in JSON format.
 
  ** [configuration](#API_UpdateFleet_RequestSyntax) **   <a name="deadlinecloud-UpdateFleet-request-configuration"></a>
-The fleet configuration to update.
+The fleet configuration to update. The new configuration replaces the existing one, so include every setting you want to keep. Settings that you omit revert to their defaults.
 Type: [FleetConfiguration](API_FleetConfiguration.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No

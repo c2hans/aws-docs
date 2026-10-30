@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[Enabled](#cfn-eks-cluster-elasticloadbalancing-enabled)" : {{Boolean}}
+  "[Enabled](#cfn-eks-cluster-elasticloadbalancing-enabled)" : {{Boolean}},
+  "[GatewayApi](#cfn-eks-cluster-elasticloadbalancing-gatewayapi)" : {{GatewayApi}}
 }
 ```
 
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Enabled](#cfn-eks-cluster-elasticloadbalancing-enabled): {{Boolean}}
+  [GatewayApi](#cfn-eks-cluster-elasticloadbalancing-gatewayapi): {{
+    GatewayApi}}
 ```
 
 ## Properties
@@ -37,4 +40,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 Indicates if the load balancing capability is enabled on your EKS Auto Mode cluster. If the load balancing capability is enabled, EKS Auto Mode will create and delete load balancers in your AWS account.
 *Required*: No
 *Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`GatewayApi`  <a name="cfn-eks-cluster-elasticloadbalancing-gatewayapi"></a>
+Indicates the current configuration of the Kubernetes Gateway API for the load balancing capability on your EKS Auto Mode cluster. For more information, see EKS Auto Mode load balancing capability in the *Amazon EKS User Guide*.
+*Required*: No
+*Type*: [GatewayApi](aws-properties-eks-cluster-gatewayapi.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

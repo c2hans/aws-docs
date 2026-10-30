@@ -76,7 +76,7 @@ Required: No
  ** [format](#API_CreateAnalysisTemplate_RequestSyntax) **   <a name="API-CreateAnalysisTemplate-request-format"></a>
 The format of the analysis template.
 Type: String
-Valid Values: `SQL | PYSPARK_1_0`
+Valid Values: `SQL | PYSPARK_1_0 | PYSPARK_2_0`
 Required: Yes
 
  ** [name](#API_CreateAnalysisTemplate_RequestSyntax) **   <a name="API-CreateAnalysisTemplate-request-name"></a>

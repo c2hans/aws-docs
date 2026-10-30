@@ -57,7 +57,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-channel-videodescription-properties"></a>
 
 `Border`  <a name="cfn-medialive-channel-videodescription-border"></a>
-The width, in pixels, of the black border to insert around each edge of the encoded picture. Must be an even integer from 0 (no border, which is the default) through 100. The border is applied to every side, so the width and height of this VideoDescription must each be greater than twice this value. You can't use this field together with outputPositionRectangle, because both fields govern the position of the encoded content within the output frame.
+The width, in pixels, of the black border to insert around each edge of the encoded picture. Must be an even integer from 0 (no border, which is the default) through 100. The border is applied to every side, so the Width and Height of this VideoDescription must each be greater than twice this value. You can't use this field together with OutputPositionRectangle, because both fields govern the position of the encoded content within the output frame.
 *Required*: No
 *Type*: Integer
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -87,7 +87,7 @@ The name of this VideoDescription. Outputs use this name to uniquely identify th
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `OutputPositionRectangle`  <a name="cfn-medialive-channel-videodescription-outputpositionrectangle"></a>
-The position of the encoded video within the output frame. The area outside the rectangle is filled with black. If you don't specify this field, the video fills the entire output frame. If you do specify it, you must also explicitly specify the width and height of this VideoDescription, so that MediaLive can validate the rectangle against the output frame.
+The position of the encoded video within the output frame. The area outside the rectangle is filled with black. If you don't specify this field, the video fills the entire output frame. If you do specify it, you must also explicitly specify the Width and Height of this VideoDescription, so that MediaLive can validate the rectangle against the output frame.
 *Required*: No
 *Type*: [VideoPositionRectangle](aws-properties-medialive-channel-videopositionrectangle.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

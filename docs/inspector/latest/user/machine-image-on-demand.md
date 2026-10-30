@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 # Running on-demand machine image scans with Amazon Inspector
 <a name="machine-image-on-demand"></a>
 
- An on-demand machine image scan is a one-time scan of a single machine image that you request explicitly. You don't need to activate Amazon Inspector to run an on-demand scan. Use an on-demand scan when you want to check one machine image at a point in time, such as immediately after a build pipeline produces a new image, without bringing that image into a continuous scanning scope.
+ An on-demand machine image scan is a one-time scan of a single machine image that you request. You don't need to activate Amazon Inspector to run one. Use an on-demand scan to scan a single image at a point in time, such as an image a build pipeline just produced. The image doesn't enter a continuous scanning scope.
 
  You start an on-demand scan with the [StartOnDemandScan](https://docs.aws.amazon.com/inspector/v2/APIReference/API_StartOnDemandScan.html) API operation. Amazon Inspector returns a `scanId` that identifies the scan, collects a software inventory from the Amazon EBS snapshots that back the machine image, evaluates that inventory against Amazon Inspector vulnerability data, and then publishes the results to Amazon EventBridge. You can also start an on-demand scan from the Amazon EC2 console, which calls StartOnDemandScan on your behalf.
 
 **Important**
- Amazon Inspector delivers the findings from an on-demand scan only through EventBridge. On-demand scan findings don't appear in the Amazon Inspector console, aren't returned by the [ListFindings](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListFindings.html) API operation, and aren't sent to AWS Security Hub CSPM. To view the findings for a machine image in a console, use the Amazon EC2 console. For more information, see [Receiving on-demand scan results with Amazon EventBridge](#machine-image-on-demand-events).
+ Amazon Inspector delivers the findings from an on-demand scan only through EventBridge. On-demand scan findings don't appear in the Amazon Inspector console, aren't returned by the [ListFindings](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListFindings.html) API operation, and aren't sent to AWS Security Hub CSPM. To view the findings for a machine image in a console, use the Amazon EC2 console. If you also activated continuous machine image scanning and the image is in scope, its continuous-scan findings still appear in these places. For more information, see [Receiving on-demand scan results with Amazon EventBridge](#machine-image-on-demand-events).
 
  The following table compares on-demand scanning with continuous machine image scanning.
 
@@ -18,11 +18,11 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
 |  | On-demand scanning | Continuous scanning |
 | --- | --- | --- |
-| How a scan starts | You call StartOnDemandScan for a specific machine image. | Amazon Inspector scans automatically when you create, copy, register, or enable an image, and when a relevant new CVE is published. |
+| How a scan starts | You call StartOnDemandScan for a specific machine image. | Amazon Inspector scans machine images automatically when you create, copy, register, or enable an image, and when a relevant new CVE is published, as long as the image is within your scan eligibility windows. For more information, see [Setting scan eligibility windows](machine-image-scan-configuration.md#machine-image-eligibility-windows). |
 | Activation required | No. You don't need to activate Amazon Inspector. | Yes. You activate machine image scanning for the account. |
 | Scan configuration | Not applied. On-demand scans ignore scan eligibility windows, scan mode, and exclusion options. | Applied. For more information, see [Configuring machine image scanning](machine-image-scan-configuration.md). |
-| Rescans | None. Each scan is a one-time evaluation. Call StartOnDemandScan again to rescan. | Amazon Inspector rescans in-scope images automatically. |
-| Where results go | EventBridge only. | The Amazon Inspector console, the Amazon Inspector API, EventBridge, and Security Hub CSPM. |
+| Rescans | None. Each scan is a one-time evaluation. Call StartOnDemandScan again to rescan. | Amazon Inspector rescans in-scope images automatically. For more information about which images are in scope, see [Eligible machine images](scanning-machine-images.md#machine-image-eligible). |
+| Where results go | EventBridge only. | The same places as your other Amazon Inspector findings. For more information, see [Viewing Amazon Inspector findings](https://docs.aws.amazon.com/inspector/latest/user/findings-understanding-locating-analyzing.html). |
 | Free trial | Not eligible. | Eligible. For more information, see [About the Amazon Inspector free trial](usage.md#free-trial). |
 
 **Note**
@@ -38,12 +38,13 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 ## Requirements for on-demand machine image scans
 <a name="machine-image-on-demand-requirements"></a>
 
- Amazon Inspector runs an on-demand scan only if the machine image meets the following conditions:
-+  Your account owns the machine image and the Amazon EBS snapshots that back it. If the machine image belongs to another account, Amazon Inspector returns an `AccessDeniedException`. To scan a machine image that another account shared with you, copy it into your own account first, and then scan the copy.
-+  No other on-demand scan is already in progress for the machine image. Amazon Inspector runs one on-demand scan per machine image at a time. If a scan is already in progress, Amazon Inspector returns a `ConflictException`. Use [GetOnDemandScanStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetOnDemandScanStatus.html) to check whether the in-progress scan finished before you retry.
+ Amazon Inspector runs an on-demand scan only if the following conditions are met:
++  The IAM identity that starts the scan has permission for both the `inspector2:StartOnDemandScan` action and the `iam:CreateServiceLinkedRole` action. Amazon Inspector needs `iam:CreateServiceLinkedRole` to create the service-linked roles that it uses to read your snapshot data. For more information, see [Service-linked role permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#service-linked-role-permissions) in the *IAM User Guide*.
++  Your account owns the machine image and the Amazon EBS snapshots that back it. If the image belongs to another account, Amazon Inspector returns an `AccessDeniedException`. To scan an image that another account shared with you, or a public image, first copy it into your own account. Then scan the copy.
++  No other on-demand scan is already in progress for the same machine image. Amazon Inspector runs one on-demand scan per image at a time, but you can scan different images at the same time. If a scan is already in progress, Amazon Inspector returns a `ConflictException`. Use [GetOnDemandScanStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetOnDemandScanStatus.html) to check whether the in-progress scan finished before you retry.
 +  The machine image meets the same eligibility requirements that apply to continuous scanning, including a supported operating system and a supported file system format on every snapshot that backs the image. For more information, see [Eligible machine images](scanning-machine-images.md#machine-image-eligible) and [Supported operating systems: machine image scanning](supported.md#supported-os-ami).
 
- When you start your first on-demand scan, Amazon Inspector creates the service-linked roles that it needs to read your snapshot data. While an on-demand scan is in progress for your account, Amazon Inspector prevents you from deleting those service-linked roles so that the scan can finish. After all of your on-demand scans finish, you can delete the roles again. The roles remain in your account until you delete them. For more information, see [Using service-linked roles for Amazon Inspector](using-service-linked-roles.md).
+ When you start your first on-demand scan, Amazon Inspector creates the service-linked roles that it needs to read your snapshot data. While an on-demand scan is in progress for your account, Amazon Inspector prevents you from deleting those service-linked roles so that the scan can finish. After all of your on-demand scans finish, you can delete the roles. The roles remain in your account until you delete them. For more information, see [Using service-linked roles for Amazon Inspector](using-service-linked-roles.md).
 
 ## Starting an on-demand machine image scan
 <a name="machine-image-on-demand-start"></a>
@@ -62,7 +63,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 }
 ```
 
- Amazon Inspector returns a `scanId` that uniquely identifies the scan. Store the `scanId`. You use it to check the status of the scan, and Amazon Inspector includes it in every EventBridge notification for the scan.
+ Amazon Inspector returns a `scanId` that uniquely identifies the scan. Store the `scanId`. You use it to check the status of the scan, and Amazon Inspector includes it in every EventBridge notification for the scan. If you don't have the `scanId`, you can find it by using the [ListOnDemandScans](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListOnDemandScans.html) API operation.
 
 ```
 {
@@ -75,7 +76,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
 **To start an on-demand machine image scan**
 
-1.  Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/home).
+1.  Open the [Amazon EC2 console](https://console.aws.amazon.com/ec2/home).
 
 1.  Select the AWS Region that contains the machine image that you want to scan.
 
@@ -85,7 +86,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
 ------
 
- To check the status of a scan, use the [GetOnDemandScanStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetOnDemandScanStatus.html) API operation with the `scanId` and the machine image ID. To list the on-demand scan history for a machine image, use the [ListOnDemandScans](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListOnDemandScans.html) API operation. Amazon Inspector returns the scans for the machine image with the most recent scan first, and paginates the results with `maxResults` and `nextToken`.
+ To check the status of a scan, use the [GetOnDemandScanStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetOnDemandScanStatus.html) API operation with the `scanId` and the machine image ID. To list the on-demand scans that Amazon Inspector still retains for a machine image, use the [ListOnDemandScans](https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListOnDemandScans.html) API operation. Amazon Inspector returns the scans for the machine image with the most recent scan first, and paginates the results with `maxResults` and `nextToken`.
 
 **Note**
  Amazon Inspector retains the record of an on-demand scan, including its status and the manifest that Amazon Inspector collected, for 30 days after the scan completes. After 30 days, GetOnDemandScanStatus returns a `ResourceNotFoundException` for that `scanId`, and the scan no longer appears in ListOnDemandScans results.
@@ -103,8 +104,8 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 | SUCCESSFUL | – | Amazon Inspector finished the scan and published the findings to EventBridge. |
 | FAILED | ACCESS\_DENIED | Amazon Inspector couldn't access the machine image or the snapshots that back it. This can occur if a resource policy or a AWS KMS key policy prevents Amazon Inspector from reading the snapshot data. |
 | FAILED | UNSUPPORTED\_OS | The operating system of the machine image isn't supported for scanning, or one or more of the snapshots that back the image uses a configuration that Amazon Inspector can't read, such as Logical Volume Manager (LVM). For more information, see [Supported operating systems: machine image scanning](supported.md#supported-os-ami). |
-| FAILED | AGENTLESS\_INSTANCE\_STORAGE\_LIMIT\_EXCEEDED | The combined size of the snapshots that back the machine image exceeds the limit that Amazon Inspector supports for scanning. |
-| FAILED | AGENTLESS\_INSTANCE\_COLLECTION\_TIME\_LIMIT\_EXCEEDED | Amazon Inspector timed out while collecting the software inventory from the snapshots that back the machine image. |
+| FAILED | STORAGE\_LIMIT\_EXCEEDED | The combined size of the snapshots that back the machine image exceeds the limit that Amazon Inspector supports for scanning. Amazon Inspector can't scan this machine image. |
+| FAILED | EXTRACTION\_COLLECTION\_TIME\_LIMIT\_EXCEEDED | Amazon Inspector timed out while collecting the software inventory from the snapshots that back the machine image. |
 | FAILED | RESOURCE\_TERMINATED | You deregistered the machine image, or deleted a snapshot that backs it, while the scan was in progress. |
 | FAILED | INTERNAL\_ERROR | Amazon Inspector encountered an internal error while scanning the machine image. Call StartOnDemandScan again to retry the scan. |
 
@@ -114,7 +115,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
  Amazon Inspector publishes two kinds of EventBridge events for an on-demand machine image scan:
 
 **Findings events**
- Amazon Inspector publishes one event for each vulnerability that it detects in the machine image. The `detail-type` field is set to `OnDemand AMI Scan Findings`. To keep the payload size manageable, these events don't include machine image metadata beyond the machine image ID.
+ Amazon Inspector publishes one event for each vulnerability that it detects in the machine image. The `detail-type` field is set to `Inspector2 OnDemand Finding`. These events identify the machine image by its ID and don't include other machine image metadata.
 
 **Scan complete events**
  Amazon Inspector publishes one event when the scan reaches a terminal state. The `detail-type` field is set to `Inspector2 OnDemand Scan Complete`. A successful event includes a `findingSeverityCounts` object. A failed event includes a `scanStatusReason` field instead.
@@ -189,8 +190,8 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-on-d
 
 ```
 {
-    "source": "inspector2.ami.ondemand",
-    "detail-type": "OnDemand AMI Scan Findings",
+    "source": "aws.inspector2",
+    "detail-type": "Inspector2 OnDemand Finding",
     "detail": {
         "findingArn": "arn:aws:inspector2:us-east-1:111122223333:finding/ondemand/9f1c4b8d2e6a4f0b7c3d5e1a8b2f6c4d/cea7c73a3d57d9c142992e845644d317",
         "scanId": "9f1c4b8d2e6a4f0b7c3d5e1a8b2f6c4d",

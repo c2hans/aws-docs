@@ -97,7 +97,7 @@ The number of periods over which data is compared to the specified threshold.
 The name of the metric associated with the alarm.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `CPUUtilization | NetworkIn | NetworkOut | StatusCheckFailed | StatusCheckFailed_Instance | StatusCheckFailed_System | ClientTLSNegotiationErrorCount | HealthyHostCount | UnhealthyHostCount | HTTPCode_LB_4XX_Count | HTTPCode_LB_5XX_Count | HTTPCode_Instance_2XX_Count | HTTPCode_Instance_3XX_Count | HTTPCode_Instance_4XX_Count | HTTPCode_Instance_5XX_Count | InstanceResponseTime | RejectedConnectionCount | RequestCount | DatabaseConnections | DiskQueueDepth | FreeStorageSpace | NetworkReceiveThroughput | NetworkTransmitThroughput | FreeableMemory | SwapUsage | BurstCapacityTime | BurstCapacityPercentage`
+*Allowed values*: `CPUUtilization | NetworkIn | NetworkOut | StatusCheckFailed | StatusCheckFailed_Instance | StatusCheckFailed_System | ClientTLSNegotiationErrorCount | HealthyHostCount | UnhealthyHostCount | HTTPCode_LB_4XX_Count | HTTPCode_LB_5XX_Count | HTTPCode_Instance_2XX_Count | HTTPCode_Instance_3XX_Count | HTTPCode_Instance_4XX_Count | HTTPCode_Instance_5XX_Count | InstanceResponseTime | RejectedConnectionCount | RequestCount | DatabaseConnections | DiskQueueDepth | FreeStorageSpace | NetworkReceiveThroughput | NetworkTransmitThroughput | FreeableMemory | SwapUsage | BurstCapacityTime | BurstCapacityPercentage | DiskReadOps | DiskWriteOps | DiskReadBytes | DiskWriteBytes | DiskTotalReadTime | DiskTotalWriteTime | DiskQueueLength`
 *Update requires*: Updates are not supported.
 
 `MonitoredResourceName`  <a name="cfn-lightsail-alarm-monitoredresourcename"></a>

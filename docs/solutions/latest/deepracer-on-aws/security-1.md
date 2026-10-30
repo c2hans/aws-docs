@@ -132,7 +132,7 @@ For more information:
 ### AWS Web application firewall (WAF)
 <a name="aws-web-application-firewall-waf"></a>
 
-The solution deploys AWS WAF to protect against common web exploits and bot traffic. It includes rules to mitigate against common vulnerabilities and allows for custom rule creation.
+The solution deploys AWS WAF to protect against common web exploits and bot traffic. It includes rules to mitigate against common vulnerabilities and allows for custom rule creation. The Web ACL is associated with the solution’s API Gateway REST API and has a fixed monthly cost. For details, refer to [Fixed cost of AWS WAF](cost.md#waf-fixed-cost). We recommend keeping AWS WAF in place for any deployment that is used by people outside your team or that runs long-term. For other cases, refer to [Remove AWS WAF to reduce fixed costs](post-deployment-tasks.md#remove-waf).
 
 ## Data protection
 <a name="data-protection"></a>

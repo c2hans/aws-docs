@@ -21,7 +21,7 @@ Type: String
 Required: Yes
 
  ** operator **   <a name="deadlinecloud-Type-DateTimeFilterExpression-operator"></a>
-The type of comparison to use to filter the results.
+The type of comparison to use to filter the results. `NOT_EQUAL`, `ANY_EQUALS`, and `ALL_NOT_EQUALS` aren't supported.
 Type: String
 Valid Values: `EQUAL | NOT_EQUAL | GREATER_THAN_EQUAL_TO | GREATER_THAN | LESS_THAN_EQUAL_TO | LESS_THAN | ANY_EQUALS | ALL_NOT_EQUALS`
 Required: Yes

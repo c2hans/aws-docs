@@ -13,8 +13,8 @@ A model entry that specifies a model supported for an inference operation.
  ** model **   <a name="bedrockagentcorecontrol-Type-ModelEntry-model"></a>
 The model ID or glob pattern that identifies the model (for example, `anthropic.claude-opus-*` or `openai.gpt-oss-*`).
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 256.
-Pattern: `[a-zA-Z0-9\-\._\*\?@]+(/[a-zA-Z0-9\-\._\*\?@]+)*`
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[a-zA-Z0-9\-\._\*\?@:]+(/[a-zA-Z0-9\-\._\*\?@:]+)*`
 Required: Yes
 
 ## See Also

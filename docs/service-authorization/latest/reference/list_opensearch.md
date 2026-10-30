@@ -38,6 +38,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [es:AddTags](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AddTags.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** directquery.opensearchservice.amazonaws.com / **Access level:** Write
 
+- **   AddReplicationPeer  **
+  - **IAM action:**  [es:AddReplicationPeer](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AddReplicationPeer.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   AddTags  **
   - **IAM action:**  [es:AddTags](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AddTags.html)
   - **Condition key:**
@@ -77,6 +83,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   CancelServiceSoftwareUpdate  **
   - **IAM action:**  [es:CancelElasticsearchServiceSoftwareUpdate](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_CancelServiceSoftwareUpdate.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [es:CancelServiceSoftwareUpdate](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_CancelServiceSoftwareUpdate.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   CompareDomainConfiguration  **
+  - **IAM action:**  [es:CompareDomainConfiguration](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_CompareDomainConfiguration.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   CreateApplication  **
   - **IAM action:**  [es:AddTags](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_AddTags.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -201,6 +213,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeDomainNodes  **
   - **IAM action:**  [es:DescribeDomainNodes](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DescribeDomainNodes.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeDomainReplication  **
+  - **IAM action:**  [es:DescribeDomainReplication](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_DescribeDomainReplication.html)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -465,6 +483,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [es:RejectInboundConnection](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_RejectInboundConnection.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [es:RejectInboundCrossClusterSearchConnection](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_RejectInboundConnection.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
+- **   RemoveReplicationPeer  **
+  - **IAM action:**  [es:RemoveReplicationPeer](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_RemoveReplicationPeer.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   RemoveTags  **
   - **IAM action:**  [es:RemoveTags](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_RemoveTags.html)
   - **Condition key:**
@@ -496,6 +520,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   StartServiceSoftwareUpdate  **
   - **IAM action:**  [es:StartElasticsearchServiceSoftwareUpdate](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_StartServiceSoftwareUpdate.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [es:StartServiceSoftwareUpdate](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_StartServiceSoftwareUpdate.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+
+- **   SwitchoverReplication  **
+  - **IAM action:**  [es:SwitchoverReplication](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_SwitchoverReplication.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
 
 - **   UpdateApplication  **
   - **IAM action:**  [es:UpdateApplication](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_UpdateApplication.html)

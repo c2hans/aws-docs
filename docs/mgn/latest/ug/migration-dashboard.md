@@ -17,7 +17,7 @@ The **Lifecycle** view shows the current state of each server within the migrati
 Lifecycle states include:
 
 + **Not ready** – The server is undergoing the Initial Sync process and is not yet ready for testing. Data replication can only commence once all of the Initial Sync steps have been completed.
-+ **Ready for testing** – The server has been successfully added to AWS Transform MGN and data replication has started. Test or cutover instances can now be launched for this server.
++ **Ready for testing** – The server has been successfully added to AWS Transform MGN and data replication has started. Test instances can now be launched for this server.
 + **Test in progress** – A test instance is currently being launched for this server.
 + **Ready for cutover** – This server has been tested and is now ready for a cutover instance to be launched.
 + **Cutover in progress** – A cutover instance is currently being launched for this server.
@@ -109,7 +109,7 @@ Within the **Lifecycle** box, you can review the **Launch status** and **Last te
 + Once the test instance has been launched, the Launch status shows **Launched**. Wait for the instance to boot and then choose **View in EC2 console** link to open the EC2 console in a new tab, in order to view and monitor your launched test instance.
 + The AWS EC2 console opens in a new tab and automatically searches for and displays your test instance.
 + The **Last test** field shows the date of the last test. To review the test launch details, choose **Job ID**, which opens the job within the **Launch History** page in a new tab.
-+ On the main **Source servers** page, the **Migration lifecycle** column shows **Test in progress** and the **Next step** column shows **Complete testing and mark as "Ready for cutover"**.
++ On the main **Source servers** page, the **Migration lifecycle** column shows **Test in progress** and the **Next step** column shows **Complete testing and mark as 'Ready for cutover'**.
 + The server stays in the **Test in progress** Lifecycle state until you finalize your testing and mark the server as **Ready for cutover**.
 
 You can use these indicators to verify that your test instance was successfully launched:
@@ -245,7 +245,7 @@ This uninstalls the AWS Replication Agent from the source server and data replic
 
   On the **Archive X servers** dialog, select **Archive**.
 
-  To see your archived servers, open the **Preferences** menu by choosing the gear button. Select the **Show only archived servers** option and choose **Confirm**. You can now see all of your archived servers. Unselect this option to see your non-archived servers.
+  To view archived servers, choose **Archived source servers** from the drop-down menu above the source servers table. To see your active servers again, choose **Active source servers**.
 
 ### Replication menu
 <a name="server-replication"></a>

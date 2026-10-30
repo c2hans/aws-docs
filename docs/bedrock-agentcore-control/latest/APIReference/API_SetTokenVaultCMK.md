@@ -96,6 +96,10 @@ HTTP Status Code: 403
 Exception thrown when a resource is modified concurrently by multiple requests.
 HTTP Status Code: 409
 
+ ** ConflictException **
+This exception is thrown when there is a conflict performing an operation
+HTTP Status Code: 409
+
  ** InternalServerException **
 This exception is thrown if there was an unexpected error during processing of request
 HTTP Status Code: 500

@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AssuranceServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: August 26, 2026, 21:07 UTC
-+ **Edited time:** October 20, 2026, 15:37 UTC
++ **Edited time:** October 28, 2026, 15:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AssuranceServiceRolePolicy`
 
 ## Policy version
 <a name="AssuranceServiceRolePolicy-version"></a>
 
-**Policy version:** v2 (default)
+**Policy version:** v3 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -416,6 +416,8 @@ The policy's default version is the version that defines the permissions for the
         "config:ListStoredQueries",
         "config:ListTagsForResource",
         "config:SelectResourceConfig",
+        "config:BatchGetResourceConfig",
+        "config:ListDiscoveredResources",
         "connect-campaigns:DescribeCampaign",
         "connect-campaigns:ListCampaigns",
         "connect:DescribeInstance",

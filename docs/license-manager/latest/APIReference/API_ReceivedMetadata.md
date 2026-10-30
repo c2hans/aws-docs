@@ -14,7 +14,15 @@ Metadata associated with received licenses and grants.
 Allowed operations.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 8 items.
-Valid Values: `CreateGrant | CheckoutLicense | CheckoutBorrowLicense | CheckInLicense | ExtendConsumptionLicense | ListPurchasedLicenses | CreateToken`
+Valid Values: `CreateGrant | CheckoutLicense | CheckoutBorrowLicense | CheckInLicense | ExtendConsumptionLicense | ListPurchasedLicenses | CreateToken | ListReceivedLicenses`
+Required: No
+
+ ** GrantType **   <a name="licensemanager-Type-ReceivedMetadata-GrantType"></a>
+The type of the grant through which the license was received. Valid values:
++  `BuyerGrant` - Grants you the entitlement to use the license.
++  `DelegateGrant` - Gives you read-only visibility into the licenses and grants distributed to buyers, with no entitlement to use them.
+Type: String
+Valid Values: `BuyerGrant | DelegateGrant`
 Required: No
 
  ** ReceivedStatus **   <a name="licensemanager-Type-ReceivedMetadata-ReceivedStatus"></a>

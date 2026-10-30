@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-regi
  IAM Identity Center replicates user sessions from the originating Region to the other enabled Regions. Session revocation and sign-out in one Region are also replicated to the other Regions.
 
 **Note**
-During a Regional disruption, a workforce user may need to sign in again in another enabled Region to regain access.
+During a Regional disruption, a workforce user might need to sign in again in another enabled Region to regain access.
 
 ### Session revocation by IAM Identity Center administrators
 <a name="session-revocation"></a>

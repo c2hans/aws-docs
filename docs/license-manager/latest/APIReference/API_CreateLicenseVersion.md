@@ -47,6 +47,7 @@ Creates a new version of the specified license.
    ],
    "LicenseName": "{{string}}",
    "ProductName": "{{string}}",
+   "ResetUsage": {{boolean}},
    "SourceVersion": "{{string}}",
    "Status": "{{string}}",
    "Validity": {
@@ -111,6 +112,11 @@ Required: Yes
 Product name.
 Type: String
 Required: Yes
+
+ ** [ResetUsage](#API_CreateLicenseVersion_RequestSyntax) **   <a name="licensemanager-CreateLicenseVersion-request-ResetUsage"></a>
+Specifies whether to reset the license usage for the new license version. If you don't specify a value, the license usage is not reset.
+Type: Boolean
+Required: No
 
  ** [SourceVersion](#API_CreateLicenseVersion_RequestSyntax) **   <a name="licensemanager-CreateLicenseVersion-request-SourceVersion"></a>
 Current version of the license.

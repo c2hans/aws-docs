@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 | --- | --- | --- |
 |  **Admin Email**  | <Requires input> | The email address of the admin user for the Admin UI. Must be a valid email address (7-100 characters). This email will receive the initial login credentials for the administrative interface. |
 |  **Deployment Size**  | small | T-shirt sizing for ECS Fargate deployment configuration. Options: small, medium, large, xlarge. This determines the number of ECS tasks, CPU, and memory allocation. Refer to [sizing guidance](choosing-deployment-architecture.md) for details. |
-|  **Origin Override Header**  |  *<Optional input>*  | HTTP header name used to override the origin destination for image requests. Must be a valid HTTP header name or empty. Useful for routing requests to different origins based on custom headers. |
+|  **Origin Override Header**  |  *<Optional input>*  | HTTP header name used to override the origin destination for image requests. Must start with `dit-` (for example, `dit-origin`) or be empty. Useful for routing requests to different origins based on custom headers. |
 |  **Cors Origin Parameter**  |  *<Optional input>*  | If you would like to specify an origin to use for CORS, specify an origin value here. We recommend specifying an origin (for example, https://example.domain) to restrict cross-site access to your API. Leave empty to default to wildcard (\*). |
 
 1. Choose **Next**.

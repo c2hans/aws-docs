@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/continuum/index.html
 title: 'AWS Continuum'
 canonical_url: https://docs.aws.amazon.com/continuum/
 source: aws-documentation
-generated_on: 2026-10-26
+generated_on: 2026-10-29
 ---
 
 # AWS Continuum

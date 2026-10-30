@@ -40,15 +40,13 @@ Source server **Data replication status** can have one of these values:
 
 The source server **Migration lifecycle** metric shows an aggregated overview of your source servers' migration lifecycle. You can look up an individual source server's **Migration lifecycle** status in the **Source servers** table at the bottom of the page.
 
-Source server **Migration lifecycle** can have one of these values:
-+ **Not ready**
-+ **Ready for testing**
-+ **Test in progress**
-+ **Ready for cutover**
-+ **Cutover in progress**
-+ **Cutover complete**
-+ **Disconnected**
-+ **Stopped**
-+ **Discovered**
-
-For a description of each state, see [Understand lifecycle states](migration-dashboard.md#lifecycle) and the [Migration lifecycle column](server-list.md#interracting) description.
+From **Ready for testing** through **Cutover complete**, data replication to your staging area subnet continues as long as the source server is available. Source server **Migration lifecycle** can have one of these values:
++ **Not ready** – The AWS Replication Agent is installed, but the initial sync is not yet complete.
++ **Ready for testing** – The initial sync is complete and ongoing replication is in progress. You can launch test instances.
++ **Test in progress** – You launched test instances. Use them to confirm that your applications work as expected.
++ **Ready for cutover** – You completed application testing and can launch production cutover instances. We recommend that you shut down the source server before you launch cutover instances, so that the source environment and the target instances don't drift apart.
++ **Cutover in progress** – Production cutover instances are launching.
++ **Cutover complete** – Production cutover instances finished launching. A cutover instance doesn't receive changes that occur on the source server after the instance launches. If the source server changed, choose [Revert to "ready for cutover"](server-test-cutover-main.md), and then launch new cutover instances to pick up the latest data.
++ **Disconnected** – You disconnected the source server from MGN. Changes to the source server are no longer replicated to your staging area subnet.
++ **Stopped** – You chose **Stop data replication**. Replication and billing for the source server are stopped. For how to restart replication, and how stopping differs from pausing, see [Manage data replication](server-replication-main.md).
++ **Discovered** – The agentless replication process discovered the source server, but the initial sync to your staging area subnet hasn't started.

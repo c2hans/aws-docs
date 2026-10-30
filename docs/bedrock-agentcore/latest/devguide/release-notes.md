@@ -10,6 +10,24 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026
 <a name="_october_2026"></a>
 
+### Runtime: Scope access to a session or runtime
+<a name="_runtime_scope_access_to_a_session_or_runtime_2"></a>
+
+Amazon Bedrock AgentCore Runtime is the managed environment that hosts your agent containers. It now supports session context keys that scope access to a session or runtime.
+
+With this capability, sessions that share an execution role can each be restricted to only their own data with a single execution role policy, so you don’t need a separate role for each session. This capability is available on platform version V2 agent runtimes.
+
+For more information, see [Session context keys](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-sessions.html#runtime-session-isolation) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+### Runtime: Mount file systems with FUSE in your container
+<a name="_runtime_mount_file_systems_with_fuse_in_your_container_2"></a>
+
+Amazon Bedrock AgentCore Runtime is the managed environment that hosts your agent containers. It now supports mounting file systems with Filesystem in Userspace (FUSE) inside those containers.
+
+With this capability, your agent can mount storage at runtime and work with it as local files, instead of orchestrating downloads and uploads. This capability is available on platform version V2 agent runtimes.
+
+For more information about mounting file systems with FUSE, see [Mount your own file systems in your container](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-filesystem-configurations.html#runtime-fuse-mounts) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ### AWS Agent Registry now available in US East (Ohio), Europe (Frankfurt), Europe (London), and Canada (Central)
 <a name="shared_aws_agent_registry_now_available_in_us_east_ohio_europe_frankfurt_europe_london_and_canada_central"></a>
 
@@ -272,7 +290,7 @@ Resource quotas (such as active session workloads, agents, versions, and endpoin
 ### Gateway: Web Search Tool now available in Europe (Ireland) and Asia Pacific (Tokyo)
 <a name="_gateway_web_search_tool_now_available_in_europe_ireland_and_asia_pacific_tokyo_2"></a>
 
-The Web Search Tool connector on Amazon Bedrock AgentCore Gateway is now available in two new Regions. These Regions are Europe (Ireland) `eu-west-1` and Asia Pacific (Tokyo) `ap-northeast-1`. Agents in these Regions can invoke the `WebSearch` tool to ground responses in current web knowledge without routing traffic outside their Region. The same Amazon-operated web index and knowledge graph that powers US East (N. Virginia) backs these new Regions. AWS infrastructure processes all queries with the same privacy guarantees and zero data egress. All connector versions (`1.1.0` and `1.2.0`) are available, including request-level domain and date filters. Existing agents require no changes—create a gateway and add a `web-search` connector target in the new Region to get started. See [Web Search Tool](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html).
+The Web Search Tool connector on Amazon Bedrock AgentCore Gateway is now available in two new Regions. These Regions are Europe (Ireland) `eu-west-1` and Asia Pacific (Tokyo) `ap-northeast-1`. Agents in these Regions can invoke the `WebSearch` tool to ground responses in current web knowledge without routing traffic outside their Region. The same Amazon-operated web index and knowledge graph power every Region, served locally within a Region. AWS infrastructure processes all queries with the same privacy guarantees and zero data egress. All connector versions (`1.1.0` and `1.2.0`) are available, including request-level domain and date filters. Existing agents require no changes—create a gateway and add a `web-search` connector target in the new Region to get started. See [Web Search Tool](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html).
 
 ## July 2026
 <a name="_july_2026"></a>

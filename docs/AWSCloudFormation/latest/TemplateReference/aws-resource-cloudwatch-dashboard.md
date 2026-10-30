@@ -59,7 +59,7 @@ The name of the dashboard. The name must be between 1 and 255 characters and can
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-cloudwatch-dashboard-tags"></a>
-Property description not available.
+A list of key-value pairs to associate with the cloudwatch dashboard. You can associate up to 50 tags with a dashboard
 *Required*: No
 *Type*: Array of [Tag](aws-properties-cloudwatch-dashboard-tag.md)
 *Maximum*: `50`

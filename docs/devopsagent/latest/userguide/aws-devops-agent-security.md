@@ -24,6 +24,8 @@ Agent Spaces serve as the primary security boundary in AWS DevOps Agent. Each Ag
 
 Agent Spaces maintain strict isolation to ensure security and prevent unintended access across different environments or teams.
 
+Chats and investigations are shared within an Agent Space. To keep your teams' work separate, use a different Agent Space for each team.
+
 ## Regional processing and data flow
 <a name="regional-processing-and-data-flow"></a>
 

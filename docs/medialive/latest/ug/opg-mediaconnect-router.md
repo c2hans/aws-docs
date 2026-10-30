@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/opg-mediaconnect-rou
 # Creating a MediaConnect Router output group
 <a name="opg-mediaconnect-router"></a>
 
-When you create a AWS Elemental MediaLive channel, you might want to include a MediaConnect Router output group. For information about the use cases for a MediaConnect Router output group, see [Containers, protocols, and downstream systems](outputs-supported-containers-downstream-systems.md).
+When you create an AWS Elemental MediaLive channel, you might want to include a MediaConnect Router output group. For information about the use cases for a MediaConnect Router output group, see [Containers, protocols, and downstream systems](outputs-supported-containers-downstream-systems.md).
 
 **Topics**
 + [Organize encodes](design-mediaconnect-router-package.md)

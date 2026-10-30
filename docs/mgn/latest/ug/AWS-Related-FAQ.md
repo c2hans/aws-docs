@@ -77,7 +77,7 @@ After AWS Transform MGN launches the machine, you can switch the AMI. Launch a n
 
 By default, AWS Transform MGN removes any resources created during the test process either when requested by the user or when a new Test instance is launched.
 
-To prevent this in AWS, you can [activate Termination Protection](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination) for the test or cutover instance, and the resources are not removed upon a new instance launch.
+To prevent this in AWS, you can [activate Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDisableAPITermination.html) for the test or cutover instance, and the resources are not removed upon a new instance launch.
 
 ## Why do I observe EBS volume performance issues while using test or cutover instances?
 <a name="EBS-performance-hit-after-instance-launch"></a>

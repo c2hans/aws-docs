@@ -137,6 +137,7 @@ Content-type: application/json
    },
    "EncryptionAtRestOptions": {
       "Enabled": {{boolean}},
+      "EncryptionMode": "{{string}}",
       "KmsKeyId": "{{string}}"
    },
    "EngineMode": "{{string}}",
@@ -473,6 +474,7 @@ Content-type: application/json
       },
       "EncryptionAtRestOptions": {
          "Enabled": boolean,
+         "EncryptionMode": "string",
          "KmsKeyId": "string"
       },
       "Endpoint": "string",

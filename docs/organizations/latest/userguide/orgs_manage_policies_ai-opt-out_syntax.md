@@ -83,6 +83,7 @@ AI services opt-out policy syntax includes the following elements:
     + `connecthealth::operations`
     + `connecthealth::training`
     + `connecttalent`
+    + `continuum`
     + `datazone`
     + `dms`
     + `entityresolution`

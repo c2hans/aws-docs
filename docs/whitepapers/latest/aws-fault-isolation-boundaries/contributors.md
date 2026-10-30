@@ -6,4 +6,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 <a name="contributors"></a>
 
  Contributors to this document include:
-+  Michael Haken, Principal Solutions Architect, Amazon Web Services
++  Michael Haken, Senior Principal Solutions Architect, Amazon Web Services

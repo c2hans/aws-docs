@@ -91,6 +91,15 @@ Required: Yes
          "capacityProviderName": "string",
          "containerInstanceArn": "string",
          "ec2InstanceId": "string",
+         "gpuDevices": [
+            {
+               "containerCount": number,
+               "gpuId": "string",
+               "remainingMemoryInMiB": number,
+               "sharingMode": "string",
+               "totalMemoryInMiB": number
+            }
+         ],
          "healthStatus": {
             "details": [
                {

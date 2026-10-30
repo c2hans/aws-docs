@@ -24,7 +24,6 @@ Required: No
 The ephemeral storage setting override for the task.
 This parameter is only supported for tasks hosted on Fargate that use the following platform versions:
 + Linux platform version `1.4.0` or later.
-+ Windows platform version `1.0.0` or later.
 Type: [EphemeralStorage](API_EphemeralStorage.md) object
 Required: No
 

@@ -72,6 +72,7 @@ Information about the content to extract from the input and about the general ha
 
 `LogicalInterfaceNames`  <a name="cfn-medialive-channel-inputattachment-logicalinterfacenames"></a>
 Optional assignment of an input to a logical interface on the Node. Only applies to on premises channels.
+For a multicast input that has a `SecondaryUrl` (SMPTE 2022-7 seamless protection switching), specify exactly two different logical interfaces. The first interface receives the stream at `Url`. The second interface receives the stream at `SecondaryUrl`.
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

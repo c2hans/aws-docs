@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[DestinationEndpoint](#cfn-mediaconnect-routerinput-routerinputconfiguration-destinationendpoint)" : {{DestinationEndpointRouterInputConfiguration}},
   "[Failover](#cfn-mediaconnect-routerinput-routerinputconfiguration-failover)" : {{FailoverRouterInputConfiguration}},
   "[MediaConnectFlow](#cfn-mediaconnect-routerinput-routerinputconfiguration-mediaconnectflow)" : {{MediaConnectFlowRouterInputConfiguration}},
   "[MediaLiveChannel](#cfn-mediaconnect-routerinput-routerinputconfiguration-medialivechannel)" : {{MediaLiveChannelRouterInputConfiguration}},
@@ -31,6 +32,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-mediaconnect-routerinput-routerinputconfiguration-syntax.yaml"></a>
 
 ```
+  [DestinationEndpoint](#cfn-mediaconnect-routerinput-routerinputconfiguration-destinationendpoint): {{
+    DestinationEndpointRouterInputConfiguration}}
   [Failover](#cfn-mediaconnect-routerinput-routerinputconfiguration-failover): {{
     FailoverRouterInputConfiguration}}
   [MediaConnectFlow](#cfn-mediaconnect-routerinput-routerinputconfiguration-mediaconnectflow): {{
@@ -45,6 +48,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-mediaconnect-routerinput-routerinputconfiguration-properties"></a>
+
+`DestinationEndpoint`  <a name="cfn-mediaconnect-routerinput-routerinputconfiguration-destinationendpoint"></a>
+Property description not available.
+*Required*: No
+*Type*: [DestinationEndpointRouterInputConfiguration](aws-properties-mediaconnect-routerinput-destinationendpointrouterinputconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Failover`  <a name="cfn-mediaconnect-routerinput-routerinputconfiguration-failover"></a>
 Configuration settings for a failover router input that allows switching between two input sources.

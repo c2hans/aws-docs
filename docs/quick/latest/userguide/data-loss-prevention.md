@@ -64,7 +64,10 @@ Register an application in Microsoft Entra ID (Azure AD) that Quick uses to read
 | --- | --- | --- |
 | UnifiedPolicy.Tenant.Read | Required | Read the unified data-protection policy for the tenant. |
 | SensitivityLabels.Read.All | Required | Read all sensitivity labels defined in the tenant. |
-| Files.Read.All | Optional | Required only if you use knowledge bases backed by SharePoint or OneDrive. |
+| Sites.Selected (or Sites.Read.All) | Optional | Required only if you use knowledge bases backed by SharePoint or OneDrive. Grant Sites.Selected to limit access to specific site collections, or Sites.Read.All for tenant-wide site access. Files.Read.All is not required. |
+
+**Important**
+If you grant `Sites.Selected` and you use a different app registration for DLP than the one used for SharePoint or OneDrive knowledge base sync, configure the DLP app with the same site collections that you configured for the knowledge base sync app. This keeps the DLP label-extraction flow within the same site-collection boundary as the knowledge base connector and preserves full DLP functionality for SharePoint-backed knowledge bases without granting tenant-wide file access.
 
 ### An AWS Secrets Manager secret
 <a name="dlp-prereq-secret"></a>
@@ -339,7 +342,7 @@ To reduce the risk for files with no detected label or an unsupported file type,
 ## Security best practices
 <a name="dlp-security-best-practices"></a>
 + **Use a dedicated app registration for DLP.** Register a separate Microsoft Entra ID application for Quick DLP rather than reusing an app registration that serves other integrations. A dedicated registration lets you rotate or revoke its credentials independently and keeps its permission scope narrow.
-+ **Grant only the permissions that DLP needs.** Scope the app registration to `SensitivityLabels.Read.All` and `UnifiedPolicy.Tenant.Read`. Add `Files.Read.All` only if you use knowledge bases backed by SharePoint or OneDrive; it isn't required to list or map labels.
++ **Grant only the permissions that DLP needs.** Scope the app registration to `SensitivityLabels.Read.All` and `UnifiedPolicy.Tenant.Read`. If you use knowledge bases backed by SharePoint or OneDrive, add `Sites.Selected` to limit access to specific site collections (or `Sites.Read.All` for tenant-wide site access). These permissions are not required to list or map labels, and `Files.Read.All` is not required.
 + **Keep credentials in Secrets Manager.** Quick stores only the ARN of your secret. Quick reads your credentials at runtime and never displays them in the console, returns them from the API, or writes them to logs.
 + **Monitor data loss prevention (DLP) activity.** Quick delivers a `DLP_LOGS` vended log to CloudWatch Logs, Amazon S3, or Firehose. Use it to audit DLP policy changes, including when enforcement was enabled or disabled and which principal made the change (`DLP_SETTING_*` events, `status`, and `last_updated_by`). You can also identify blocked, warned, or inspection-failed files by filtering on `event_type` and `failure_type`. For setup and the full schema, see [Monitoring Amazon Quick using CloudWatch Logs](monitoring-cloudwatch-logs.md).
 

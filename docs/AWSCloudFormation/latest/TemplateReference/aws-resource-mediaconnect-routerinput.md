@@ -131,7 +131,7 @@ The tier level for the router input. The tier sets the maximum bitrate, in Mbps,
 The 250 Mbps and 500 Mbps tiers are high-bitrate tiers that support TR-07 (JPEG XS) workflows.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `INPUT_100 | INPUT_50 | INPUT_20`
+*Allowed values*: `INPUT_100 | INPUT_50 | INPUT_20 | INPUT_500 | INPUT_250`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TransitEncryption`  <a name="cfn-mediaconnect-routerinput-transitencryption"></a>
@@ -164,6 +164,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the router input.
+
+`AssociatedDestinationEndpointArns`  <a name="AssociatedDestinationEndpointArns-fn::getatt"></a>
+The Amazon Resource Names (ARNs) of one or more destination endpoints that are associated with this router input.
 
 `ContentQualityAnalysisType`  <a name="ContentQualityAnalysisType-fn::getatt"></a>
 The type of content quality analysis applied to the router input.

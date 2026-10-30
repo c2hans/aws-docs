@@ -393,7 +393,6 @@ Grant the IAM identity that creates and manages ingestion streams the following 
         "aoss:CreateIngestionStream",
         "aoss:GetIngestionStream",
         "aoss:ListIngestionStreams",
-        "aoss:UpdateIngestionStream",
         "aoss:DeleteIngestionStream"
       ],
       "Resource": [

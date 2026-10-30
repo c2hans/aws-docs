@@ -369,6 +369,13 @@ The following image shows the rotation progress view in the Amazon EKS console. 
 
 ![The Amazon EKS console showing the rotation progress view with each step of the CA rotation lifecycle and its completion status](https://docs.aws.amazon.com/eks/latest/userguide/images/ca-rotation-console-rotation-progress.png)
 
+In addition to the per-cluster rotation progress view, the Amazon EKS console provides a cluster CA dashboard for monitoring rotation across your entire fleet. From a single view, the dashboard shows:
++ All clusters across your regions and accounts, with the CA rotation status of each.
++ Clusters whose CAs are approaching expiration, so that you can prioritize them.
++ Upcoming automated rotation events, so that you can plan ahead.
+
+![The Amazon EKS console cluster CA dashboard.](https://docs.aws.amazon.com/eks/latest/userguide/images/ca-rotation-cluster-dashboard.png)
+
 ## Updating your Kubernetes clients
 <a name="_updating_your_kubernetes_clients"></a>
 

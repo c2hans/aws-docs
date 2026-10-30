@@ -212,6 +212,9 @@ When the service scheduler launches new tasks, it determines task placement. For
          "format": "{{string}}",
          "includeQueryParameters": "{{string}}"
       },
+      "containerConfigurations": [
+         { ... }
+      ],
       "enabled": {{boolean}},
       "logConfiguration": {
          "logDriver": "{{string}}",
@@ -625,6 +628,9 @@ Required: No
                   "format": "string",
                   "includeQueryParameters": "string"
                },
+               "containerConfigurations": [
+                  { ... }
+               ],
                "enabled": boolean,
                "logConfiguration": {
                   "logDriver": "string",

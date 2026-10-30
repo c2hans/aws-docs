@@ -17,7 +17,8 @@ Creates a new version of the specified grant. For more information, see [Granted
    "GrantArn": "{{string}}",
    "GrantName": "{{string}}",
    "Options": {
-      "ActivationOverrideBehavior": "{{string}}"
+      "ActivationOverrideBehavior": "{{string}}",
+      "DesiredStatus": "{{string}}"
    },
    "SourceVersion": "{{string}}",
    "Status": "{{string}}",
@@ -36,7 +37,7 @@ The request accepts the following data in JSON format.
 Allowed operations for the grant.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 8 items.
-Valid Values: `CreateGrant | CheckoutLicense | CheckoutBorrowLicense | CheckInLicense | ExtendConsumptionLicense | ListPurchasedLicenses | CreateToken`
+Valid Values: `CreateGrant | CheckoutLicense | CheckoutBorrowLicense | CheckInLicense | ExtendConsumptionLicense | ListPurchasedLicenses | CreateToken | ListReceivedLicenses`
 Required: No
 
  ** [ClientToken](#API_CreateGrantVersion_RequestSyntax) **   <a name="licensemanager-CreateGrantVersion-request-ClientToken"></a>

@@ -3409,6 +3409,54 @@ Output:
 ```
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
+### `sign-cookies`
+<a name="cloudfront_SignCookies_cli_2_topic"></a>
+
+The following code example shows how to use `sign-cookies`.
+
+**AWS CLI**
+**To generate CloudFront signed cookies**
+The following example generates signed cookies that grant access to every object in a CloudFront distribution. To generate signed cookies, you need the key pair ID (called the **Access Key ID** in the AWS Management Console) and the private key of the trusted signer's CloudFront key pair. Because the resource contains a wildcard, a custom policy is used. For more information about signed cookies, see [Using signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html) in the *Amazon CloudFront Developer Guide*.
+
+```
+aws cloudfront sign-cookies \
+    --resource {{"https://d111111abcdef8.cloudfront.net/*"}} \
+    --key-pair-id {{APKAEIBAERJR2EXAMPLE}} \
+    --private-key {{file://cf-signer-priv-key.pem}} \
+    --date-less-than {{2020-01-01}} \
+    --hash-algorithm {{SHA256}}
+```
+Output:
+
+```
+{
+    "CloudFront-Policy": "eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMTExMTExYWJjZGVmOC5jbG91ZGZyb250Lm5ldC8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNTc3ODM2ODAwfX19XX0_",
+    "CloudFront-Signature": "Uu8FSzfyZ1pUJfnPTfpZpXoR3cHtu6Vk41gOodDpfCGmY4j~TBvOMBUsXzrcBjAqRuVV9b0Aa1HBpHeY-TR3G3Jbb2Yn2cxNSlAfC4tIYwWOkwypCZl4csuHdFC8XaN0yA0G8GRHDsxNPHKY6lq3ypbnJcXDSzzCixTAgJpOO7M_",
+    "CloudFront-Key-Pair-Id": "APKAEIBAERJR2EXAMPLE",
+    "CloudFront-Hash-Algorithm": "SHA256"
+}
+```
+Set each cookie in the response to the viewer, adding the cookie attributes (such as `Domain`, `Path`, `Secure` and `HttpOnly`) that your application needs.
+**To extract a single cookie value**
+The set of cookies depends on the policy type and hash algorithm, so the columns of `--output text` vary between invocations. Use `--query` to select a cookie by name.
+
+```
+aws cloudfront sign-cookies \
+    --resource {{"https://d111111abcdef8.cloudfront.net/*"}} \
+    --key-pair-id {{APKAEIBAERJR2EXAMPLE}} \
+    --private-key {{file://cf-signer-priv-key.pem}} \
+    --date-less-than {{2020-01-01}} \
+    --hash-algorithm {{SHA256}} \
+    --query '{{"CloudFront-Signature"}}' \
+    --output {{text}}
+```
+Output:
+
+```
+Uu8FSzfyZ1pUJfnPTfpZpXoR3cHtu6Vk41gOodDpfCGmY4j~TBvOMBUsXzrcBjAqRuVV9b0Aa1HBpHeY-TR3G3Jbb2Yn2cxNSlAfC4tIYwWOkwypCZl4csuHdFC8XaN0yA0G8GRHDsxNPHKY6lq3ypbnJcXDSzzCixTAgJpOO7M_
+```
++  For API details, see [SignCookies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/sign-cookies.html) in *AWS CLI Command Reference*.
+
 ### `sign`
 <a name="cloudfront_Sign_cli_2_topic"></a>
 
@@ -3428,7 +3476,54 @@ aws cloudfront sign \
 Output:
 
 ```
-https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=nEXK7Kby47XKeZQKVc6pwkif6oZc-JWSpDkH0UH7EBGGqvgurkecCbgL5VfUAXyLQuJxFwRQWscz-owcq9KpmewCXrXQbPaJZNi9XSNwf4YKurPDQYaRQawKoeenH0GFteRf9ELK-Bs3nljTLjtbgzIUt7QJNKXcWr8AuUYikzGdJ4-qzx6WnxXfH~fxg4-GGl6l2kgCpXUB6Jx6K~Y3kpVOdzUPOIqFLHAnJojbhxqrVejomZZ2XrquDvNUCCIbePGnR3d24UPaLXG4FKOqNEaWDIBXu7jUUPwOyQCvpt-GNvjRJxqWf93uMobeMOiVYahb-e0KItiQewGcm0eLZQ__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE
+https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=v7tTOShSbp6U853uAIy3IWkegvCyg5kfulm2m7qLAc8NX-wtRFXbLSAmRep3uqYsckuij8c0KE97OQE1QadcusZa3uU~ez6QVoQ9-FSsaiB3hgB-DNxZyCu4~zrx-RfZkI7ZZQXDOEOVjurup2dXIb~obJEymOUMiADckQI-FwnC0utB7ax8Y2sjU7GeP9fcU9sT~I50MUgaxqqZo6-CUOAlER55-pnuuJRc3pCWZKtEI~3YMZ5Gbfv1sF~egkphOYzbGm7iO9~L0YK4S2naC57EmoByvCdiphA6XjXdZmoLzKXEjtniryC0k-mVm99RVz2QQQDJX9hGmhjz3uj7rw__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE
+```
+**To sign a CloudFront URL using SHA-256**
+The following example signs a CloudFront URL using the SHA-256 hash algorithm, which is recommended for its stronger security posture. The signed URL includes the `Hash-Algorithm` query parameter so that CloudFront verifies the signature with SHA-256.
+
+```
+aws cloudfront sign \
+    --url {{https://d111111abcdef8.cloudfront.net/private-content/private-file.html}} \
+    --key-pair-id {{APKAEIBAERJR2EXAMPLE}} \
+    --private-key {{file://cf-signer-priv-key.pem}} \
+    --date-less-than {{2020-01-01}} \
+    --hash-algorithm {{SHA256}}
+```
+Output:
+
+```
+https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=YS1t-C1br-5iHCU1ggKKk3pio61TpuQtgQaOekhfA-JzdAG35qwU8Fjz78BwJmZUGHAFnxJTq2msCigm9cm1~m6~M-ue8wsoAxDXpTlCmJGWWt2bJLFaBpLSHaHAjj8C9J6Qn07IyVP7jTv4m0HTzO-O2VhCYCYQK018twXjGmf44~FynVJK~GFgpl8OBp4Nv673twzXbzwuEU~0kq-zvXOZCiqZqMQ6~uVtOxa6JzKd6Y453fGyLXtzJj6D9mw6vLIup1zaKA2vVekFWsljwyYfMhVfJRshoHlU8wq0mhYJlFM7jNQGJyI14guHXLh-3Cailhe7dkIeMebzJ26klA__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE&Hash-Algorithm=SHA256
+```
+**To sign a CloudFront URL using an ECDSA key**
+The following example signs a CloudFront URL with an ECDSA (P-256) private key. ECDSA keys always sign with SHA-256, so the signed URL includes the `Hash-Algorithm=SHA256` query parameter without specifying `--hash-algorithm`. The key pair ID is the ID of the public key in the CloudFront key group.
+
+```
+aws cloudfront sign \
+    --url {{https://d111111abcdef8.cloudfront.net/private-content/private-file.html}} \
+    --key-pair-id {{K2JCJMDEHXQW5F}} \
+    --private-key {{file://cf-signer-ecdsa-priv-key.pem}} \
+    --date-less-than {{2020-01-01}}
+```
+Output:
+
+```
+https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=MEUCIQC9y65NPHY3Y0ADS3pIIBjYoVbB~N1rnGwYcTudKTj9ZAIgV3pHaL-WuumMpAApEaTN3svwatuNGDt2n0sKDrEGSfM_&Key-Pair-Id=K2JCJMDEHXQW5F&Hash-Algorithm=SHA256
+```
+**To sign a CloudFront URL with a wildcard policy resource**
+The following example signs a policy for every object under `/videos/` and applies the signature to a specific URL. Because the policy resource contains a wildcard, a custom policy is used and included in the signed URL. The same `Policy`, `Signature` and `Key-Pair-Id` query parameters can be reused for any URL matching the policy resource.
+
+```
+aws cloudfront sign \
+    --url {{https://d111111abcdef8.cloudfront.net/videos/intro.mp4}} \
+    --policy-resource {{"https://d111111abcdef8.cloudfront.net/videos/*"}} \
+    --key-pair-id {{APKAEIBAERJR2EXAMPLE}} \
+    --private-key {{file://cf-signer-priv-key.pem}} \
+    --date-less-than {{2020-01-01}}
+```
+Output:
+
+```
+https://d111111abcdef8.cloudfront.net/videos/intro.mp4?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMTExMTExYWJjZGVmOC5jbG91ZGZyb250Lm5ldC92aWRlb3MvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTU3NzgzNjgwMH19fV19&Signature=G0xpyeYh8qA0p5rQbCdlOihuPXaX15w~KrUlEXgnws9ALZipi1EC5O~5QC~bVhpi2HjMQZDuazj8IJN5YAgDsGfUft1uwZmjmr-loumKhInIqAurYzg0UE3QqZOmwB~kSn-XcLLb5aeMaUT~cT1Lm89cSkL2QkOPoOVaarEcF4Y5dt~BF4XFKVXz3pDLWkwxynRXtsfXv1t9wq1mSNSQNjt~TrI4-sOW3z4t1ObLmFsmG-JuJOAjfbZeJHnko1DRtZ3MpJamaj6aKY5NDK7eXE4w5TrE8U~yS5FV1dVURu3WVZ7ae3gBp5fC0smyMNb~dQ7Pak3-PAU~sdbXsg-V7Q__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE
 ```
 +  For API details, see [Sign](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/sign.html) in *AWS CLI Command Reference*.
 

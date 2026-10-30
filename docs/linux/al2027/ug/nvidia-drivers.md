@@ -91,7 +91,7 @@ AL2027 is currently available for preview. It is intended for evaluation and tes
 1. Install the kernel headers and development packages for your running kernel:
 
    ```
-   [ec2-user ~]$ sudo dnf install kernel-devel-$(uname -r) kernel-headers-$(uname -r) -y
+   [ec2-user ~]$ KVER=$(uname -r) && KSERIES=$(echo "$KVER" | grep -oP '^\d+\.\d+') && sudo dnf install -y "kernel${KSERIES}-devel-${KVER}" "kernel${KSERIES}-headers-${KVER}"
    ```
 
 1. Install the NVIDIA driver:

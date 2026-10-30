@@ -153,6 +153,9 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 ####
 <a name="aws-resource-neptunegraph-graph-return-values-fn--getatt-fn--getatt"></a>
 
+`CreateTime`  <a name="CreateTime-fn::getatt"></a>
+Property description not available.
+
 `Endpoint`  <a name="Endpoint-fn::getatt"></a>
 The connection endpoint for the graph. For example: `g-12a3bcdef4.us-east-1.neptune-graph.amazonaws.com`
 
@@ -161,3 +164,6 @@ The ARN of the graph. For example: `arn:aws:neptune-graph:us-east-1:111122223333
 
 `GraphId`  <a name="GraphId-fn::getatt"></a>
 The ID of the graph. For example: `g-12a3bcdef4`
+
+`Status`  <a name="Status-fn::getatt"></a>
+The status of the graph.

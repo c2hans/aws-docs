@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/aiml-performan
 <a name="aiml-performance"></a>
 
 **Tip**
- [Register](https://events.eksworkshop.com/workshops/genai/) for upcoming Amazon EKS AI/ML workshops.
+ [Register](https://awsworkshop.io/eks/genai?trk=4a9b4147-2490-4c63-bc9f-f8a84b122c8c&sc_channel=el) for upcoming Amazon EKS AI/ML workshops.
 
 ## Managing ML Artifacts, Serving Frameworks, and Startup Optimization
 <a name="_managing_ml_artifacts_serving_frameworks_and_startup_optimization"></a>

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/firehose/index.html
 title: 'Amazon Data Firehose Documentation'
 canonical_url: https://docs.aws.amazon.com/firehose/
 source: aws-documentation
-generated_on: 2026-10-27
+generated_on: 2026-10-30
 ---
 
 # Amazon Data Firehose Documentation

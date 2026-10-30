@@ -46,11 +46,11 @@ Following is an example of failed categories within `JobDetails`:
             "ReasonCode": "QUOTA_EXCEEDED",
             "SkippedEntities": [
                 {
-                    "CategoryName": "PotentialFraud"
+                    "CategoryName": "PotentialFraud",
                     "RuleId": "a1130485-9529-4249-a1d4-5738b4883748"
                 },
                 {
-                    "CategoryName": "Refund"
+                    "CategoryName": "Refund",
                     "RuleId": "bbbbbbb-9529-4249-a1d4-5738b4883748"
                 }
             ]
@@ -60,9 +60,9 @@ Following is an example of failed categories within `JobDetails`:
             "ReasonCode": "FAILED_SAFETY_GUIDELINES",
             "SkippedEntities": [
                 {
-                    "CategoryName": "ManagerEscalation"
+                    "CategoryName": "ManagerEscalation",
                     "RuleId": "cccccccc-9529-4249-a1d4-5738b4883748"
-                },
+                }
             ]
         },
         {

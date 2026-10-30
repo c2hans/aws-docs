@@ -39,12 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Resource Name (ARN) of the custom plugin.
 *Required*: Yes
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn):kafkaconnect:.*`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-eusc):kafkaconnect:.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Revision`  <a name="cfn-kafkaconnect-connector-customplugin-revision"></a>
 The revision of the custom plugin.
 *Required*: Yes
 *Type*: Integer
 *Minimum*: `1`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

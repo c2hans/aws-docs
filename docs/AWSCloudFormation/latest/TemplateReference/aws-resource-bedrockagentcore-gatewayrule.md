@@ -61,7 +61,7 @@ Property description not available.
 *Required*: No
 *Type*: Array of [Condition](aws-properties-bedrockagentcore-gatewayrule-condition.md)
 *Minimum*: `0`
-*Maximum*: `2`
+*Maximum*: `3`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-bedrockagentcore-gatewayrule-description"></a>

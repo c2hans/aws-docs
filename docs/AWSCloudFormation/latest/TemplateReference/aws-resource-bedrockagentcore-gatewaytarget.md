@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::BedrockAgentCore::GatewayTarget",
   "Properties" : {
+      "[CertificateConfigurations](#cfn-bedrockagentcore-gatewaytarget-certificateconfigurations)" : {{[ CertificateConfiguration, ... ]}},
       "[CredentialProviderConfigurations](#cfn-bedrockagentcore-gatewaytarget-credentialproviderconfigurations)" : {{[ CredentialProviderConfiguration, ... ]}},
       "[Description](#cfn-bedrockagentcore-gatewaytarget-description)" : {{String}},
       "[GatewayIdentifier](#cfn-bedrockagentcore-gatewaytarget-gatewayidentifier)" : {{String}},
@@ -42,6 +43,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::BedrockAgentCore::GatewayTarget
 Properties:
+  [CertificateConfigurations](#cfn-bedrockagentcore-gatewaytarget-certificateconfigurations): {{
+    - CertificateConfiguration}}
   [CredentialProviderConfigurations](#cfn-bedrockagentcore-gatewaytarget-credentialproviderconfigurations): {{
     - CredentialProviderConfiguration}}
   [Description](#cfn-bedrockagentcore-gatewaytarget-description): {{String}}
@@ -57,6 +60,14 @@ Properties:
 
 ## Properties
 <a name="aws-resource-bedrockagentcore-gatewaytarget-properties"></a>
+
+`CertificateConfigurations`  <a name="cfn-bedrockagentcore-gatewaytarget-certificateconfigurations"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [CertificateConfiguration](aws-properties-bedrockagentcore-gatewaytarget-certificateconfiguration.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CredentialProviderConfigurations`  <a name="cfn-bedrockagentcore-gatewaytarget-credentialproviderconfigurations"></a>
 The credential provider configurations.

@@ -202,9 +202,14 @@ The following node types are supported by ElastiCache. Generally speaking, the c
 
     **R7g node types:**`cache.r7g.large`, `cache.r7g.xlarge`, `cache.r7g.2xlarge`, `cache.r7g.4xlarge`, `cache.r7g.8xlarge`, `cache.r7g.12xlarge`, `cache.r7g.16xlarge`
 
+    **R8gd node types:**`cache.r8gd.xlarge`, `cache.r8gd.2xlarge`, `cache.r8gd.4xlarge`, `cache.r8gd.8xlarge`, `cache.r8gd.12xlarge`, `cache.r8gd.16xlarge`
+
+    **R7gd node types:**`cache.r7gd.xlarge`, `cache.r7gd.2xlarge`, `cache.r7gd.4xlarge`, `cache.r7gd.8xlarge`, `cache.r7gd.12xlarge`, `cache.r7gd.16xlarge`
+
     **R6gd node types:**`cache.r6gd.xlarge`, `cache.r6gd.2xlarge`, `cache.r6gd.4xlarge`, `cache.r6gd.8xlarge`, `cache.r6gd.12xlarge`, `cache.r6gd.16xlarge`
 **Note**
 The `r6gd` family is available in the following regions: `us-east-2`, `us-east-1`, `us-west-2`, `us-west-1`, `eu-west-1`, `eu-central-1`, `ap-northeast-1`, `ap-southeast-1`, `ap-southeast-2`.
+The `r7gd` family is available in the following Regions: `eu-south-2`, `ap-south-2`. The `r8gd` family is available in the following Region: `eu-south-2`. The `r7gd` and `r8gd` families support only the Valkey engine, version 7.2 and later.
 
     **R6g node types:**`cache.r6g.large`, `cache.r6g.xlarge`, `cache.r6g.2xlarge`, `cache.r6g.4xlarge`, `cache.r6g.12xlarge`, `cache.r6g.24xlarge`
 
@@ -252,7 +257,7 @@ Valid values: `enabled` \| `disabled` \| `compatible`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataTieringEnabled`  <a name="cfn-elasticache-replicationgroup-datatieringenabled"></a>
-Enables data tiering. Data tiering is only supported for replication groups using the r6gd node type. This parameter must be set to true when using r6gd nodes. For more information, see [Data tiering](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/data-tiering.html).
+Specifies whether data tiering is enabled. You can use data tiering only with replication groups that use a node type from the r6gd, r7gd, or r8gd families. You must set this parameter to true when you use those node types. For more information, see [Data tiering](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/data-tiering.html).
 *Required*: No
 *Type*: Boolean
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -505,7 +510,7 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `ConfigurationEndPoint.Address`  <a name="ConfigurationEndPoint.Address-fn::getatt"></a>
  The DNS hostname of the cache node.
-Valkey or Redis OSS (cluster mode disabled) replication groups don't have this attribute. Therefore, `Fn::GetAtt` returns a value for this attribute only if the replication group is clustered. Otherwise, `Fn::GetAtt` fails. For Valkey or Redis OSS (cluster mode disabled) replication groups, use the `PrimaryEndpoint` or `ReadEndpoint` attributes.
+Valkey or Redis OSS (cluster mode disabled) replication groups don't have this attribute. Therefore, `Fn::GetAtt` returns a value for this attribute only if the replication group is clustered. Otherwise, `Fn::GetAtt` fails. For Valkey or Redis OSS (cluster mode disabled) replication groups, use the `PrimaryEndPoint` or `ReadEndPoint` attributes.
 
 `ConfigurationEndPoint.Port`  <a name="ConfigurationEndPoint.Port-fn::getatt"></a>
 The port number that the cache engine is listening on.

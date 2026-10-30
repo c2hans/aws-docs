@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-s3-tables.html
 ---
 
-# Working with S3 Storage Lens data in S3 Tables
+# Viewing metrics in AWS managed S3 Tables
 <a name="storage-lens-s3-tables"></a>
 
 Amazon S3 Storage Lens can export your storage analytics and insights to S3 Tables, enabling you to query your Storage Lens metrics using SQL with AWS analytics services like Amazon Athena, Amazon EMR, Amazon SageMaker Studio (SMStudio), and other AWS analytics tools. When you configure S3 Storage Lens to export to S3 Tables, your metrics are automatically stored in read-only Apache Iceberg tables in the AWS-managed `aws-s3` table bucket.

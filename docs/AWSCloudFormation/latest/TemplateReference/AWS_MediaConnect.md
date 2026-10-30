@@ -11,6 +11,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::MediaConnect::Bridge](aws-resource-mediaconnect-bridge.md)
 + [AWS::MediaConnect::BridgeOutput](aws-resource-mediaconnect-bridgeoutput.md)
 + [AWS::MediaConnect::BridgeSource](aws-resource-mediaconnect-bridgesource.md)
++ [AWS::MediaConnect::DestinationEndpoint](aws-resource-mediaconnect-destinationendpoint.md)
 + [AWS::MediaConnect::Flow](aws-resource-mediaconnect-flow.md)
 + [AWS::MediaConnect::FlowEntitlement](aws-resource-mediaconnect-flowentitlement.md)
 + [AWS::MediaConnect::FlowMediaStream](aws-resource-mediaconnect-flowmediastream.md)
@@ -21,3 +22,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md)
 + [AWS::MediaConnect::RouterNetworkInterface](aws-resource-mediaconnect-routernetworkinterface.md)
 + [AWS::MediaConnect::RouterOutput](aws-resource-mediaconnect-routeroutput.md)
++ [AWS::MediaConnect::SourceEndpoint](aws-resource-mediaconnect-sourceendpoint.md)

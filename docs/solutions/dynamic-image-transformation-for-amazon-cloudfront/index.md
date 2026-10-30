@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/dynamic-image-transformation-
 title: 'Dynamic Image Transformation for Amazon CloudFront'
 canonical_url: https://docs.aws.amazon.com/solutions/dynamic-image-transformation-for-amazon-cloudfront/
 source: aws-documentation
-generated_on: 2026-10-27
+generated_on: 2026-10-29
 ---
 
 # Dynamic Image Transformation for Amazon CloudFront
 
 Transform, optimize, and deliver images in real time at a fraction of the cost
 
-- **Version**: 8.1.2
+- **Version**: 8.1.3
 - **Released**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 15 mins

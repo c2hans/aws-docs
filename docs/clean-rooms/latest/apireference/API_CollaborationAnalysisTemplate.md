@@ -46,7 +46,7 @@ Required: Yes
  ** format **   <a name="API-Type-CollaborationAnalysisTemplate-format"></a>
 The format of the analysis template in the collaboration.
 Type: String
-Valid Values: `SQL | PYSPARK_1_0`
+Valid Values: `SQL | PYSPARK_1_0 | PYSPARK_2_0`
 Required: Yes
 
  ** id **   <a name="API-Type-CollaborationAnalysisTemplate-id"></a>

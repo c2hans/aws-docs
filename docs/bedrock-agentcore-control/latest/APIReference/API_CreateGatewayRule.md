@@ -58,7 +58,7 @@ Required: No
  ** [conditions](#API_CreateGatewayRule_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayRule-request-conditions"></a>
 The conditions that must be met for the rule to apply. Conditions can match on principals (IAM ARNs) or request paths.
 Type: Array of [Condition](API_Condition.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
 Required: No
 
  ** [description](#API_CreateGatewayRule_RequestSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayRule-request-description"></a>
@@ -114,7 +114,7 @@ Array Members: Minimum number of 1 item. Maximum number of 2 items.
  ** [conditions](#API_CreateGatewayRule_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayRule-response-conditions"></a>
 The conditions that must be met for the rule to apply.
 Type: Array of [Condition](API_Condition.md) objects
-Array Members: Minimum number of 0 items. Maximum number of 2 items.
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
 
  ** [createdAt](#API_CreateGatewayRule_ResponseSyntax) **   <a name="bedrockagentcorecontrol-CreateGatewayRule-response-createdAt"></a>
 The timestamp when the rule was created.

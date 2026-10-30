@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::DomainAccessGrantForOrganization OrganizationAccessGrantPrincipal
 <a name="aws-properties-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal"></a>
 
-<a name="aws-properties-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal-description"></a>The `OrganizationAccessGrantPrincipal` property type specifies Property description not available. for an [AWS::CloudWatch::DomainAccessGrantForOrganization](aws-resource-cloudwatch-domainaccessgrantfororganization.md).
+The principal the grant is issued to. Supply PrincipalId, or PrincipalAttributes for an attribute-based grant.
 
 ## Syntax
 <a name="aws-properties-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal-syntax"></a>
@@ -39,14 +39,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal-properties"></a>
 
 `PrincipalAttributes`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal-principalattributes"></a>
-Property description not available.
+Attribute key-value pairs that select the principals the grant applies to.
 *Required*: No
 *Type*: Array of [PrincipalAttribute](aws-properties-cloudwatch-domainaccessgrantfororganization-principalattribute.md)
 *Maximum*: `10`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PrincipalId`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal-principalid"></a>
-Property description not available.
+The identifier of the principal, such as an IAM role ARN or an Identity Center user ID.
 *Required*: No
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9][a-zA-Z0-9:/_+=,.@-]*$`
@@ -55,7 +55,7 @@ Property description not available.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PrincipalType`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal-principaltype"></a>
-Property description not available.
+The type of principal the grant is issued to.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `IDC_USER | IDC_GROUP | IAM_USER | IAM_ROLE | IAM_ROOT`

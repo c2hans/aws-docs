@@ -110,7 +110,12 @@ Content-type: application/json
       },
       "kubernetesNetworkConfig": {
          "elasticLoadBalancing": {
-            "enabled": boolean
+            "enabled": boolean,
+            "gatewayApi": {
+               "crds": {
+                  "managed": boolean
+               }
+            }
          },
          "ipFamily": "string",
          "serviceIpv4Cidr": "string",

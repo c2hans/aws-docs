@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::BedrockAgentCore::GatewayRule Condition
 <a name="aws-properties-bedrockagentcore-gatewayrule-condition"></a>
 
-A condition that determines when a gateway rule applies. Conditions can match on principals or request paths.
+A condition that determines when a gateway rule applies. Conditions can match on principals, request paths, or the requested model.
 
 ## Syntax
 <a name="aws-properties-bedrockagentcore-gatewayrule-condition-syntax"></a>
@@ -19,6 +19,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[MatchModels](#cfn-bedrockagentcore-gatewayrule-condition-matchmodels)" : {{MatchModels}},
   "[MatchPaths](#cfn-bedrockagentcore-gatewayrule-condition-matchpaths)" : {{MatchPaths}},
   "[MatchPrincipals](#cfn-bedrockagentcore-gatewayrule-condition-matchprincipals)" : {{MatchPrincipals}}
 }
@@ -28,6 +29,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-bedrockagentcore-gatewayrule-condition-syntax.yaml"></a>
 
 ```
+  [MatchModels](#cfn-bedrockagentcore-gatewayrule-condition-matchmodels): {{
+    MatchModels}}
   [MatchPaths](#cfn-bedrockagentcore-gatewayrule-condition-matchpaths): {{
     MatchPaths}}
   [MatchPrincipals](#cfn-bedrockagentcore-gatewayrule-condition-matchprincipals): {{
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-bedrockagentcore-gatewayrule-condition-properties"></a>
+
+`MatchModels`  <a name="cfn-bedrockagentcore-gatewayrule-condition-matchmodels"></a>
+A condition that matches on the model requested in an inference request.
+*Required*: No
+*Type*: [MatchModels](aws-properties-bedrockagentcore-gatewayrule-matchmodels.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `MatchPaths`  <a name="cfn-bedrockagentcore-gatewayrule-condition-matchpaths"></a>
 A condition that matches on the request path.

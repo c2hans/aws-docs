@@ -46,6 +46,11 @@ The ID of the container instance. For Amazon EC2 instances, this value is the Am
 Type: String
 Required: No
 
+ ** gpuDevices **   <a name="ECS-Type-ContainerInstance-gpuDevices"></a>
+The state of each GPU on the container instance, including its sharing mode and available memory. This field is present only for container instances that support GPU sharing.
+Type: Array of [GpuDevice](API_GpuDevice.md) objects
+Required: No
+
  ** healthStatus **   <a name="ECS-Type-ContainerInstance-healthStatus"></a>
 An object representing the health status of the container instance.
 Type: [ContainerInstanceHealthStatus](API_ContainerInstanceHealthStatus.md) object

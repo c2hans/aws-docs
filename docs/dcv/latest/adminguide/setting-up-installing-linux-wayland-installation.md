@@ -32,12 +32,12 @@ The Amazon DCV server is available for RHEL, CentOS, and Rocky Linux 10 servers 
    + 64-bit x86
 
      ```
-     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-24952-el10-x86_64.tgz
+     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-25174-el10-x86_64.tgz
      ```
    + 64-bit ARM
 
      ```
-     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-24952-el10-aarch64.tgz
+     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-25174-el10-aarch64.tgz
      ```
 **Tip**
 The [latest packages](http://download.amazondcv.com/latest.html) page of the download website contains links that point to the newest available version. You can use these links to automatically retrieve the newest Amazon DCV packages.
@@ -56,36 +56,36 @@ The [latest packages](http://download.amazondcv.com/latest.html) page of the dow
    + 64-bit x86
 
      ```
-     $ tar -xvzf nice-dcv-2026.0-24952-el10-x86_64.tgz && cd nice-dcv-2026.0-24952-el10-x86_64
+     $ tar -xvzf nice-dcv-2026.0-25174-el10-x86_64.tgz && cd nice-dcv-2026.0-25174-el10-x86_64
      ```
    + 64-bit ARM
 
      ```
-     $ tar -xvzf nice-dcv-2026.0-24952-el10-aarch64.tgz && cd nice-dcv-2026.0-24952-el10-aarch64
+     $ tar -xvzf nice-dcv-2026.0-25174-el10-aarch64.tgz && cd nice-dcv-2026.0-25174-el10-aarch64
      ```
 
 1. Install the Amazon DCV server.
    + 64-bit x86
 
      ```
-     $ sudo dnf install nice-dcv-server-2026.0.24952-1.el10.x86_64.rpm
+     $ sudo dnf install nice-dcv-server-2026.0.25174-1.el10.x86_64.rpm
      ```
    + 64-bit ARM
 
      ```
-     $ sudo dnf install nice-dcv-server-2026.0.24952-1.el10.aarch64.rpm
+     $ sudo dnf install nice-dcv-server-2026.0.25174-1.el10.aarch64.rpm
      ```
 
 1. (Optional) If you plan to use the web client, install the `nice-dcv-web-viewer` package.
    + 64-bit x86
 
      ```
-     $ sudo dnf install nice-dcv-web-viewer-2026.0.24952-1.el10.x86_64.rpm
+     $ sudo dnf install nice-dcv-web-viewer-2026.0.25174-1.el10.x86_64.rpm
      ```
    + 64-bit ARM
 
      ```
-     $ sudo dnf install nice-dcv-web-viewer-2026.0.24952-1.el10.aarch64.rpm
+     $ sudo dnf install nice-dcv-web-viewer-2026.0.25174-1.el10.aarch64.rpm
      ```
 
 1. (Optional) If you plan to support specialized USB devices using USB remotization, install the DCV USB drivers.
@@ -119,7 +119,7 @@ The [latest packages](http://download.amazondcv.com/latest.html) page of the dow
 1. (Optional) If you need to use SSO with system auth, use the following command to install it.
 
    ```
-   $ sudo dnf install nice-dcv-gnome-shell-extension-2026.0.80-1.el10.noarch.rpm
+   $ sudo dnf install nice-dcv-gnome-shell-extension-2026.0.81-1.el10.noarch.rpm
    ```
 
 ------
@@ -145,12 +145,12 @@ The Amazon DCV server is available for Ubuntu 26.04 servers based on the 64-bit 
    + 64-bit x86
 
      ```
-     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-24952-ubuntu2604-x86_64.tgz
+     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-25174-ubuntu2604-x86_64.tgz
      ```
    + 64-bit ARM
 
      ```
-     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-24952-ubuntu2604-aarch64.tgz
+     $ wget https://d1uj6qtbmh3dt5.cloudfront.net/2026.0/Servers/nice-dcv-2026.0-25174-ubuntu2604-aarch64.tgz
      ```
 **Tip**
 The [latest packages](http://download.amazondcv.com/latest.html) page of the download website contains links that point to the newest available version. You can use these links to automatically retrieve the newest Amazon DCV packages.
@@ -169,36 +169,36 @@ The [latest packages](http://download.amazondcv.com/latest.html) page of the dow
    + 64-bit x86
 
      ```
-     $ tar -xvzf nice-dcv-2026.0-24952-ubuntu2604-x86_64.tgz && cd nice-dcv-2026.0-24952-ubuntu2604-x86_64
+     $ tar -xvzf nice-dcv-2026.0-25174-ubuntu2604-x86_64.tgz && cd nice-dcv-2026.0-25174-ubuntu2604-x86_64
      ```
    + 64-bit ARM
 
      ```
-     $ tar -xvzf nice-dcv-2026.0-24952-ubuntu2604-aarch64.tgz && cd nice-dcv-2026.0-24952-ubuntu2604-aarch64
+     $ tar -xvzf nice-dcv-2026.0-25174-ubuntu2604-aarch64.tgz && cd nice-dcv-2026.0-25174-ubuntu2604-aarch64
      ```
 
 1. Install the Amazon DCV server.
    + 64-bit x86
 
      ```
-     $ sudo apt install ./nice-dcv-server_2026.0.24952-1_amd64.ubuntu2604.deb
+     $ sudo apt install ./nice-dcv-server_2026.0.25174-1_amd64.ubuntu2604.deb
      ```
    + 64-bit ARM
 
      ```
-     $ sudo apt install ./nice-dcv-server_2026.0.24952-1_arm64.ubuntu2604.deb
+     $ sudo apt install ./nice-dcv-server_2026.0.25174-1_arm64.ubuntu2604.deb
      ```
 
 1. (Optional) If you plan to use the web client, install the `nice-dcv-web-viewer` package.
    + 64-bit x86
 
      ```
-     $ sudo apt install ./nice-dcv-web-viewer_2026.0.24952-1_amd64.ubuntu2604.deb
+     $ sudo apt install ./nice-dcv-web-viewer_2026.0.25174-1_amd64.ubuntu2604.deb
      ```
    + 64-bit ARM
 
      ```
-     $ sudo apt install ./nice-dcv-web-viewer_2026.0.24952-1_arm64.ubuntu2604.deb
+     $ sudo apt install ./nice-dcv-web-viewer_2026.0.25174-1_arm64.ubuntu2604.deb
      ```
 
 1. Add the `dcv` user to the `video` group.
@@ -232,7 +232,7 @@ The [latest packages](http://download.amazondcv.com/latest.html) page of the dow
 1. (Optional) If you need to use SSO with system auth, use the following command to install it.
 
    ```
-   $ sudo apt install ./nice-dcv-gnome-shell-extension_2026.0.80-1_all.ubuntu2604.deb
+   $ sudo apt install ./nice-dcv-gnome-shell-extension_2026.0.81-1_all.ubuntu2604.deb
    ```
 
 ------

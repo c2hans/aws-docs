@@ -7,6 +7,10 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 
 Creates a grant for the specified license. A grant shares the use of license entitlements with a specific AWS account, an organization, or an organizational unit (OU). For more information, see [Granted licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html) in the * AWS License Manager User Guide*.
 
+Set the type of grant with the `GrantType` field:
++  `BuyerGrant` - The default grant type, created by the seller when a customer subscribes to a product. The seller creates a license for the subscription and a buyer grant for the customer. With a buyer grant, the customer can use, consume, and distribute the license, according to the permissions the seller sets in the product contract.
++  `DelegateGrant` - A delegate grant gives the grantee read-only visibility into the licenses and grants that you have distributed to buyers for a product. The grantee can monitor that activity on your behalf, and can also listen for the related Amazon EventBridge events. A delegate grant conveys no entitlement to use the licenses, and its only allowed operation is `ListReceivedLicenses`. You must create the delegate grant, and its license, from the same AWS account that you used to create those buyer licenses and grants.
+
 ## Request Syntax
 <a name="API_CreateGrant_RequestSyntax"></a>
 
@@ -15,8 +19,13 @@ Creates a grant for the specified license. A grant shares the use of license ent
    "AllowedOperations": [ "{{string}}" ],
    "ClientToken": "{{string}}",
    "GrantName": "{{string}}",
+   "GrantType": "{{string}}",
    "HomeRegion": "{{string}}",
    "LicenseArn": "{{string}}",
+   "Options": {
+      "ActivationOverrideBehavior": "{{string}}",
+      "DesiredStatus": "{{string}}"
+   },
    "Principals": [ "{{string}}" ],
    "Tags": [
       {
@@ -38,7 +47,7 @@ The request accepts the following data in JSON format.
 Allowed operations for the grant.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 8 items.
-Valid Values: `CreateGrant | CheckoutLicense | CheckoutBorrowLicense | CheckInLicense | ExtendConsumptionLicense | ListPurchasedLicenses | CreateToken`
+Valid Values: `CreateGrant | CheckoutLicense | CheckoutBorrowLicense | CheckInLicense | ExtendConsumptionLicense | ListPurchasedLicenses | CreateToken | ListReceivedLicenses`
 Required: Yes
 
  ** [ClientToken](#API_CreateGrant_RequestSyntax) **   <a name="licensemanager-CreateGrant-request-ClientToken"></a>
@@ -53,6 +62,14 @@ Grant name.
 Type: String
 Required: Yes
 
+ ** [GrantType](#API_CreateGrant_RequestSyntax) **   <a name="licensemanager-CreateGrant-request-GrantType"></a>
+The type of grant to create. For more information about each type, see the preceding description of this operation. Valid values:
++  `BuyerGrant` - The default grant type if you don't specify a value. Conveys the entitlement to use the license.
++  `DelegateGrant` - Gives the grantee read-only visibility into the licenses and grants that you have distributed to buyers, with no entitlement to use them.
+Type: String
+Valid Values: `BuyerGrant | DelegateGrant`
+Required: No
+
  ** [HomeRegion](#API_CreateGrant_RequestSyntax) **   <a name="licensemanager-CreateGrant-request-HomeRegion"></a>
 Home Region of the grant.
 Type: String
@@ -64,6 +81,11 @@ Type: String
 Length Constraints: Maximum length of 2048.
 Pattern: `^arn:aws[a-zA-Z-]*:[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9_/.-]{0,63}:[A-Za-z0-9][A-Za-z0-9:_/+=,@.-]{0,1023}$`
 Required: Yes
+
+ ** [Options](#API_CreateGrant_RequestSyntax) **   <a name="licensemanager-CreateGrant-request-Options"></a>
+The options for the grant: the status to set after creation, and how activating the grant affects other active grants for the same product.
+Type: [Options](API_Options.md) object
+Required: No
 
  ** [Principals](#API_CreateGrant_RequestSyntax) **   <a name="licensemanager-CreateGrant-request-Principals"></a>
 The grant principals. You can specify one of the following as an Amazon Resource Name (ARN):

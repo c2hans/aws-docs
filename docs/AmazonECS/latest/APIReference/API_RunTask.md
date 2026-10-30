@@ -81,6 +81,7 @@ If you get a `ClientException`error, the `RunTask` could not be processed becaus
             "name": "{{string}}",
             "resourceRequirements": [
                {
+                  "sharingStrategy": { ... },
                   "type": "{{string}}",
                   "value": "{{string}}"
                }
@@ -340,6 +341,7 @@ Required: No
                "cpu": "string",
                "exitCode": number,
                "gpuIds": [ "string" ],
+               "gpuSharingStrategy": { ... },
                "healthStatus": "string",
                "image": "string",
                "imageDigest": "string",
@@ -423,6 +425,7 @@ Required: No
                   "name": "string",
                   "resourceRequirements": [
                      {
+                        "sharingStrategy": { ... },
                         "type": "string",
                         "value": "string"
                      }

@@ -58,6 +58,10 @@ Content-type: application/json
          "ExpressionName": "{{string}}",
          "ResourceType": "{{string}}"
       },
+      "RLSPolicy": {
+         "CatalogId": "{{string}}",
+         "Name": "{{string}}"
+      },
       "Table": {
          "CatalogId": "{{string}}",
          "DatabaseName": "{{string}}",
@@ -165,6 +169,10 @@ Content-type: application/json
                "ExpressionName": "string",
                "ResourceType": "string"
             },
+            "RLSPolicy": {
+               "CatalogId": "string",
+               "Name": "string"
+            },
             "Table": {
                "CatalogId": "string",
                "DatabaseName": "string",
@@ -207,6 +215,12 @@ Type: String
 <a name="API_ListLakeFormationOptIns_Errors"></a>
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+Access to a resource was denied.
+ ** Message **
+A message describing the problem.
+HTTP Status Code: 403
 
  ** AccessDeniedException **
 Access to a resource was denied.

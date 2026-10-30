@@ -17,6 +17,7 @@ POST /v1/feed HTTP/1.1
 Content-type: application/json
 
 {
+   "accessRoleArn": "{{string}}",
    "name": "{{string}}",
    "outputs": [
       {
@@ -41,6 +42,13 @@ The request does not use any URI parameters.
 <a name="API_CreateFeed_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [accessRoleArn](#API_CreateFeed_RequestSyntax) **   <a name="elementalinference-CreateFeed-request-accessRoleArn"></a>
+The ARN of an IAM role that Elemental Inference assumes to access resources in your account on your behalf. For example, the smart crop feature uses this role to read graphics-compositing templates from your Amazon S3 bucket. You specify one access role for each feed.
+Type: String
+Length Constraints: Minimum length of 32. Maximum length of 255.
+Pattern: `arn:aws[a-z\-]*:iam::[0-9]{12}:role/.+`
+Required: No
 
  ** [name](#API_CreateFeed_RequestSyntax) **   <a name="elementalinference-CreateFeed-request-name"></a>
 A user-friendly name for this feed.
@@ -68,6 +76,7 @@ HTTP/1.1 202
 Content-type: application/json
 
 {
+   "accessRoleArn": "string",
    "arn": "string",
    "association": {
       "associatedResourceName": "string"
@@ -97,6 +106,12 @@ Content-type: application/json
 If the action is successful, the service sends back an HTTP 202 response.
 
 The following data is returned in JSON format by the service.
+
+ ** [accessRoleArn](#API_CreateFeed_ResponseSyntax) **   <a name="elementalinference-CreateFeed-response-accessRoleArn"></a>
+The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that you specified in the request. This property is absent if you didn't specify an IAM role.
+Type: String
+Length Constraints: Minimum length of 32. Maximum length of 255.
+Pattern: `arn:aws[a-z\-]*:iam::[0-9]{12}:role/.+`
 
  ** [arn](#API_CreateFeed_ResponseSyntax) **   <a name="elementalinference-CreateFeed-response-arn"></a>
 A unique ARN that Elemental Inference assigns to the feed.

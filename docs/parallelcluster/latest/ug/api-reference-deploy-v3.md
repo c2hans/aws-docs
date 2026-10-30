@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/api-reference-deploy-v3.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # Deploy the AWS ParallelCluster API with AWS CLI
 <a name="api-reference-deploy-v3"></a>
 
@@ -18,7 +20,7 @@ Run the following commands to deploy the API:
 ```
 $ REGION={{<region>}}
 $ API_STACK_NAME={{<stack-name>}}  # This can be any name
-$ VERSION=3.16.1
+$ VERSION=3.16.2
 $ aws cloudformation create-stack \
     --region ${REGION} \
     --stack-name ${API_STACK_NAME} \

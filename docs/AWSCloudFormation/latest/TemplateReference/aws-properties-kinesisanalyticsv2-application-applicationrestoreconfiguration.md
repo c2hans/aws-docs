@@ -20,7 +20,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[ApplicationRestoreType](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype)" : {{String}},
-  "[SnapshotArn](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotarn)" : {{String}},
   "[SnapshotName](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname)" : {{String}}
 }
 ```
@@ -30,7 +29,6 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [ApplicationRestoreType](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-applicationrestoretype): {{String}}
-  [SnapshotArn](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotarn): {{String}}
   [SnapshotName](#cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname): {{String}}
 ```
 
@@ -42,14 +40,6 @@ Specifies how the application should be restored.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `SKIP_RESTORE_FROM_SNAPSHOT | RESTORE_FROM_LATEST_SNAPSHOT | RESTORE_FROM_CUSTOM_SNAPSHOT`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`SnapshotArn`  <a name="cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotarn"></a>
-Property description not available.
-*Required*: No
-*Type*: String
-*Minimum*: `1`
-*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SnapshotName`  <a name="cfn-kinesisanalyticsv2-application-applicationrestoreconfiguration-snapshotname"></a>

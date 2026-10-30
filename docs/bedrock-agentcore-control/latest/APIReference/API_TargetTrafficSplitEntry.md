@@ -35,12 +35,24 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 200.
 Required: No
 
+ ** fallback **   <a name="bedrockagentcorecontrol-Type-TargetTrafficSplitEntry-fallback"></a>
+The fallback configuration for this variant. Supported only for inference targets.
+Type: [Fallback](API_Fallback.md) object
+Required: No
+
  ** metadata **   <a name="bedrockagentcorecontrol-Type-TargetTrafficSplitEntry-metadata"></a>
 Key-value metadata associated with this traffic split variant.
 Type: String to string map
 Map Entries: Minimum number of 0 items. Maximum number of 25 items.
 Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Value Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
+ ** model **   <a name="bedrockagentcorecontrol-Type-TargetTrafficSplitEntry-model"></a>
+The model ID to send to the target for this variant. Supported only for inference targets. If you don't specify a model, the gateway sends the model from the original request.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[a-zA-Z0-9][a-zA-Z0-9\-._/@:]*`
 Required: No
 
 ## See Also

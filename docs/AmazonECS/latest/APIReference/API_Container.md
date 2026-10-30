@@ -30,6 +30,12 @@ The IDs of each GPU assigned to the container.
 Type: Array of strings
 Required: No
 
+ ** gpuSharingStrategy **   <a name="ECS-Type-Container-gpuSharingStrategy"></a>
+The GPU sharing strategy that the task definition specifies for the container. This field is present only for containers whose resource requirements include `sharingStrategy`.
+Type: [SharingStrategy](API_SharingStrategy.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
  ** healthStatus **   <a name="ECS-Type-Container-healthStatus"></a>
 The health status of the container. If health checks aren't configured for this container in its task definition, then it reports the health status as `UNKNOWN`.
 Type: String

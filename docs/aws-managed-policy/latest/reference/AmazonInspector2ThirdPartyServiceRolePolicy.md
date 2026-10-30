@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AmazonInspector2ThirdPartyServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: June 26, 2026, 15:27 UTC
-+ **Edited time:** June 26, 2026, 15:27 UTC
++ **Edited time:** October 27, 2026, 20:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AmazonInspector2ThirdPartyServiceRolePolicy`
 
 ## Policy version
 <a name="AmazonInspector2ThirdPartyServiceRolePolicy-version"></a>
 
-**Policy version:** v1 (default)
+**Policy version:** v2 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -64,6 +64,7 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*",
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnGcp*",
         "arn:aws:ssm:*:*:association/*"
       ]
     },
@@ -93,7 +94,8 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AmazonInspector2-*",
-        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*"
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*",
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnGcp*"
       ],
       "Condition" : {
         "StringEquals" : {
@@ -113,6 +115,7 @@ The policy's default version is the version that defines the permissions for the
       ],
       "Resource" : [
         "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnAzure*",
+        "arn:aws:ssm:*:*:document/AWS-InstallDistributorPackageOnGcp*",
         "arn:aws:ssm:*:*:automation-execution/*"
       ]
     },
@@ -206,7 +209,8 @@ The policy's default version is the version that defines the permissions for the
         },
         "ForAnyValue:StringLike" : {
           "sts:IdentityTokenAudience" : [
-            "api://AzureADTokenExchange"
+            "api://AzureADTokenExchange",
+            "https://sts.googleapis.com"
           ]
         }
       }

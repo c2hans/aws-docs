@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 
 Associates the specified origination identity with a pool.
 
-If the origination identity is a phone number and is already associated with another pool, an error is returned. A sender ID can be associated with multiple pools.
+If the origination identity is a phone number or an AWS RCS Agent and is already associated with another pool, an error is returned. A sender ID can be associated with multiple pools.
 
 If the origination identity configuration doesn't match the pool's configuration, an error is returned.
 
@@ -45,7 +45,7 @@ Pattern: `[A-Z]{2}`
 Required: No
 
  ** [OriginationIdentity](#API_AssociateOriginationIdentity_RequestSyntax) **   <a name="pinpoint-AssociateOriginationIdentity-request-OriginationIdentity"></a>
-The origination identity to use, such as PhoneNumberId, PhoneNumberArn, SenderId, or SenderIdArn. You can use [DescribePhoneNumbers](API_DescribePhoneNumbers.md) to find the values for PhoneNumberId and PhoneNumberArn, while [DescribeSenderIds](API_DescribeSenderIds.md) can be used to get the values for SenderId and SenderIdArn.
+The origination identity to use, such as PhoneNumberId, PhoneNumberArn, SenderId, SenderIdArn, or an AWS RCS Agent ARN. You can use [DescribePhoneNumbers](API_DescribePhoneNumbers.md) to find the values for PhoneNumberId and PhoneNumberArn, [DescribeSenderIds](API_DescribeSenderIds.md) to get the values for SenderId and SenderIdArn, and [DescribeRcsAgents](API_DescribeRcsAgents.md) to get the AWS RCS Agent ARN.
 If you are using a shared AWS End User Messaging SMS resource then you must use the full Amazon Resource Name(ARN).
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.

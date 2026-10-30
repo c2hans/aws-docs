@@ -815,8 +815,7 @@ The following policy enforces that a training job is created by a user calling [
 ### Restrict access to workforce types for Ground Truth labeling jobs and Amazon A2I Human Review workflows
 <a name="sagemaker-condition-keys-labeling"></a>
 
-Amazon SageMaker Ground Truth and Amazon Augmented AI work teams fall into one of three [workforce types](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-management.html):
-+ public (with Amazon Mechanical Turk)
+Amazon SageMaker Ground Truth and Amazon Augmented AI work teams fall into one of two [workforce types](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-management.html):
 + private
 + vendor
 
@@ -824,7 +823,7 @@ You can restrict user access to a specific work team using one of these types or
 
 The following policies show different ways to use the `sagemaker:WorkteamType` and `sagemaker:WorkteamArn` condition keys with appropriate condition operators and valid condition values.
 
-The following example uses the `sagemaker:WorkteamType` condition key with the `StringEquals` condition operator to restrict access to a public work team. It accepts condition values in the following format: `{{workforcetype}}-crowd`, where {{workforcetype}} can equal `public`, `private`, or `vendor`.
+The following example uses the `sagemaker:WorkteamType` condition key with the `StringEquals` condition operator to restrict access to a work team. It accepts condition values in the following format: `{{workforcetype}}-crowd`, where {{workforcetype}} can equal `private` or `vendor`.
 
 ------
 #### [ JSON ]
@@ -852,7 +851,7 @@ The following example uses the `sagemaker:WorkteamType` condition key with the `
 
 ------
 
-The following policies show how to restrict access to a public work team using the `sagemaker:WorkteamArn` condition key. The first shows how to use it with a valid IAM regex-variant of the work team ARN and the `ArnLike` condition operator. The second shows how to use it with the `ArnEquals` condition operator and the work team ARN.
+The following policies show how to restrict access to a work team using the `sagemaker:WorkteamArn` condition key. The first shows how to use it with a valid IAM regex-variant of the work team ARN and the `ArnLike` condition operator. The second shows how to use it with the `ArnEquals` condition operator and the work team ARN.
 
 ------
 #### [ JSON ]

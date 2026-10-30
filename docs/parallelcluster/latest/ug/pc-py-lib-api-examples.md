@@ -2,6 +2,8 @@
 source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/pc-py-lib-api-examples.html
 ---
 
+This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
+
 # Example
 <a name="pc-py-lib-api-examples"></a>
 
@@ -47,5 +49,5 @@ pp.pprint(pc.create_cluster(cluster_name="mycluster", cluster_configuration=CONF
              'clusterStatus': 'CREATE_IN_PROGRESS',
              'region': 'us-east-2',
              'scheduler': {'type': 'slurm'},
-             'version': '3.16.1'}}
+             'version': '3.16.2'}}
 ```

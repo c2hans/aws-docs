@@ -7,7 +7,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::MediaLive::Input MulticastSettings
 <a name="aws-properties-medialive-input-multicastsettings"></a>
 
-<a name="aws-properties-medialive-input-multicastsettings-description"></a>The `MulticastSettings` property type specifies Property description not available. for an [AWS::MediaLive::Input](aws-resource-medialive-input.md).
+Multicast input settings.
+
+The parent of this entity is Input.
 
 ## Syntax
 <a name="aws-properties-medialive-input-multicastsettings-syntax"></a>
@@ -35,7 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-medialive-input-multicastsettings-properties"></a>
 
 `Sources`  <a name="cfn-medialive-input-multicastsettings-sources"></a>
-Property description not available.
+The list of multicast sources for this input. Each source has a multicast URL and an optional source IP address. For SMPTE 2022-7 seamless protection switching, a source also has a secondary URL and an optional secondary source IP address.
 *Required*: No
 *Type*: Array of [MulticastSource](aws-properties-medialive-input-multicastsource.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

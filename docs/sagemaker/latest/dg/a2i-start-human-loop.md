@@ -30,7 +30,6 @@ To start a human loop using a built-in task type, use the corresponding service'
 
 **Important**
 When you create a human loop using a built-in task type, you can use `DataAttributes` to specify a set of `ContentClassifiers` related to the input provided to the `StartHumanLoop` operation. Use content classifiers to declare that your content is free of personally identifiable information or adult content.
-To use Amazon Mechanical Turk, ensure your data is free of personally identifiable information, including protected health information under HIPAA. Include the `FreeOfPersonallyIdentifiableInformation` content classifier. If you do not use this content classifier, SageMaker AI does not send your task to Mechanical Turk. If your data is free of adult content, also include the `'FreeOfAdultContent'` classifier. If you do not use these content classifiers, SageMaker AI may restrict the Mechanical Turk workers that can view your task.
 
 After you start your ML job using your built-in task type's AWS service API, Amazon A2I monitors the inference results of that service. For example, when running a job with Amazon Rekognition, Amazon A2I checks the inference confidence score for each image and compares it to the confidence thresholds specified in your flow definition. If the conditions to start a human review task are satisfied, or if you didn't specify conditions in your flow definition, a human review task is sent to workers.
 
@@ -152,8 +151,6 @@ To complete this procedure, you need:
 **To configure the human loop**
 
 1. For `DataAttributes`, specify a set of `ContentClassifiers` related to the input provided to the `StartHumanLoop` operation. Use content classifiers to declare that your content is free of personally identifiable information or adult content.
-
-   To use Amazon Mechanical Turk, ensure your data is free of personally identifiable information, including protected health information under HIPAA, and include the `FreeOfPersonallyIdentifiableInformation` content classifier. If you do not use this content classifier, SageMaker AI does not send your task to Mechanical Turk. If your data is free of adult content, also include the `'FreeOfAdultContent'` classifier. If you do not use these content classifiers, SageMaker AI may restrict the Mechanical Turk workers that can view your task.
 
 1. For `FlowDefinitionArn`, enter the Amazon Resource Name (ARN) of your flow definition.
 

@@ -784,6 +784,12 @@ The following actions are defined by Amazon Elastic Container Registry but are n
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecr-aws_ResourceTag___TagKey_)<br />[ecr:ResourceTag/${TagKey}](#list_ecr-ecr_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [ReplicateImageDelete](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-permissions.html)  **
+  - **Description:** Grants permission to replicate image deletions to the destination registry
+  - **Resource types (\*required):** [repository\*](#list_ecr-resource-repository)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_ecr-aws_ResourceTag___TagKey_)<br />[ecr:ResourceTag/${TagKey}](#list_ecr-ecr_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 ## Resource types defined by Amazon Elastic Container Registry
 <a name="list_ecr-resources-for-iam-policies"></a>
 

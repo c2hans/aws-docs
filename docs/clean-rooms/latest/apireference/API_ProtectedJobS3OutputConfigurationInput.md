@@ -24,6 +24,12 @@ Length Constraints: Minimum length of 0. Maximum length of 512.
 Pattern: `[\w!.=*/-]*`
 Required: No
 
+ ** resultFormat **   <a name="API-Type-ProtectedJobS3OutputConfigurationInput-resultFormat"></a>
+The file format of the protected job results. If you don't specify a format, results are written as CSV.
+Type: String
+Valid Values: `CSV | PARQUET`
+Required: No
+
 ## See Also
 <a name="API_ProtectedJobS3OutputConfigurationInput_SeeAlso"></a>
 

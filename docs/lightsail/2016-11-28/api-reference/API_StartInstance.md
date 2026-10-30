@@ -17,6 +17,9 @@ The `start instance` operation supports tag-based access control via resource ta
 
 ```
 {
+   "attributeUpdates": {
+      "bundleId": "{{string}}"
+   },
    "instanceName": "{{string}}"
 }
 ```
@@ -27,6 +30,11 @@ The `start instance` operation supports tag-based access control via resource ta
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [attributeUpdates](#API_StartInstance_RequestSyntax) **   <a name="Lightsail-StartInstance-request-attributeUpdates"></a>
+An object that describes the attributes to update on the instance before it starts.
+Type: [InstanceAttributeUpdates](API_InstanceAttributeUpdates.md) object
+Required: No
 
  ** [instanceName](#API_StartInstance_RequestSyntax) **   <a name="Lightsail-StartInstance-request-instanceName"></a>
 The name of the instance (a virtual private server) to start.

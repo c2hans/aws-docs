@@ -115,7 +115,7 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
 
  ** [endedAt](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-endedAt"></a>
-The date and time the resource ended running.
+The date and time the resource ended running. Returned only when the job has finished.
 Type: Timestamp
 
  ** [jobId](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-jobId"></a>
@@ -170,7 +170,7 @@ Type: String
 Pattern: `job-[0-9a-f]{32}`
 
  ** [startedAt](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-startedAt"></a>
-The date and time the resource started running.
+The date and time the resource started running. Requeuing the job doesn't change this value.
 Type: Timestamp
 
  ** [storageProfileId](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-storageProfileId"></a>
@@ -199,7 +199,7 @@ Type: String to integer map
 Valid Keys: `PENDING | READY | ASSIGNED | STARTING | SCHEDULED | INTERRUPTING | RUNNING | SUSPENDED | CANCELED | FAILED | SUCCEEDED | NOT_COMPATIBLE`
 
  ** [updatedAt](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-updatedAt"></a>
-The date and time the resource was updated.
+The date and time the resource was updated. Task status changes don't update this value.
 Type: Timestamp
 
  ** [updatedBy](#API_GetJob_ResponseSyntax) **   <a name="deadlinecloud-GetJob-response-updatedBy"></a>

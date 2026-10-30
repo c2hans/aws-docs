@@ -5,13 +5,18 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 # Condition
 <a name="API_Condition"></a>
 
-A condition that determines when a gateway rule applies. Conditions can match on principals or request paths.
+A condition that determines when a gateway rule applies. Conditions can match on principals, request paths, or the requested model.
 
 ## Contents
 <a name="API_Condition_Contents"></a>
 
 **Important**
 This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** matchModels **   <a name="bedrockagentcorecontrol-Type-Condition-matchModels"></a>
+A condition that matches on the model requested in an inference request.
+Type: [MatchModels](API_MatchModels.md) object
+Required: No
 
  ** matchPaths **   <a name="bedrockagentcorecontrol-Type-Condition-matchPaths"></a>
 A condition that matches on the request path.

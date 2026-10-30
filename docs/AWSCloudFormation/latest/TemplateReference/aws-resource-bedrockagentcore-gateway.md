@@ -113,7 +113,7 @@ A list of configuration settings for a gateway interceptor. Gateway interceptors
 The KMS key ARN for the gateway.
 *Required*: No
 *Type*: String
-*Pattern*: `^arn:aws(|-cn|-us-gov):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
+*Pattern*: `^arn:(aws(-[a-z]+)*):kms:[a-zA-Z0-9-]*:[0-9]{12}:key/[a-zA-Z0-9-]{36}$`
 *Minimum*: `1`
 *Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

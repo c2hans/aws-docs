@@ -329,7 +329,7 @@ This flag may only be used when adding new source servers to MGN. You cannot use
      Use this parameter to specify the Private Link endpoint you created for AWS Transform MGN if you do not wish to open your firewall ports to access the default MGN endpoint. [Learn more about installing the agent on a blocked network.](installing-agent-blocked.md)
    + --no-replication
 
-     By default after agent installation, the replication begins automatically. This attribute allows you to install the agent without immediately starting the replication. The 90-day free replication period excludes hours where the replication was stopped.
+     By default after agent installation, the replication begins automatically. This attribute allows you to install the agent without immediately starting the replication. The free period of 2,160 hours (90 days when used continuously) excludes hours when replication was stopped.
    + --dualstack
 
      This parameter enables the agent to run in a dual-stack MGN configuration.

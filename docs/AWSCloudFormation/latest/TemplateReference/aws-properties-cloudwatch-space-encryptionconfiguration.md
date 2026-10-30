@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::Space EncryptionConfiguration
 <a name="aws-properties-cloudwatch-space-encryptionconfiguration"></a>
 
-<a name="aws-properties-cloudwatch-space-encryptionconfiguration-description"></a>The `EncryptionConfiguration` property type specifies Property description not available. for an [AWS::CloudWatch::Space](aws-resource-cloudwatch-space.md).
+The encryption configuration for the space.
 
 ## Syntax
 <a name="aws-properties-cloudwatch-space-encryptionconfiguration-syntax"></a>
@@ -36,14 +36,14 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-cloudwatch-space-encryptionconfiguration-properties"></a>
 
 `EncryptionStrategy`  <a name="cfn-cloudwatch-space-encryptionconfiguration-encryptionstrategy"></a>
-Property description not available.
+Whether the space is encrypted with an AWS owned key or a customer managed key.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `AWS_OWNED | CUSTOMER_MANAGED`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `KmsKeyArn`  <a name="cfn-cloudwatch-space-encryptionconfiguration-kmskeyarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the customer managed KMS key. Required when encryptionStrategy is CUSTOMER\_MANAGED.
 *Required*: No
 *Type*: String
 *Pattern*: `^arn:(aws|aws-cn|aws-us-gov):kms:[a-z0-9-]+:[0-9]{12}:key/(?:mrk-)?[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`

@@ -39,7 +39,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-ecs-taskdefinition-resourcerequirement-properties"></a>
 
 `SharingStrategy`  <a name="cfn-ecs-taskdefinition-resourcerequirement-sharingstrategy"></a>
-Property description not available.
+The strategy that the container uses to share a GPU with other containers. Specify a sharing strategy only when the type is `GPU`. For a GPU resource requirement, specify either `value` or `sharingStrategy`, but not both. If you don't specify a sharing strategy, the container has exclusive use of each GPU that Amazon ECS assigns to it. The containers in a task that request GPUs must all use the same option.
+You can use GPU sharing with tasks that run on Amazon EC2 instances or Amazon ECS Managed Instances. Task definitions that require `EXTERNAL` compatibility don't support GPU sharing.
 *Required*: No
 *Type*: [SharingStrategy](aws-properties-ecs-taskdefinition-sharingstrategy.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -53,6 +54,7 @@ The type of resource to assign to a container.
 
 `Value`  <a name="cfn-ecs-taskdefinition-resourcerequirement-value"></a>
 The value for the specified resource type.
+You must specify this parameter unless the type is `GPU` and you specify `sharingStrategy`.
 When the type is `GPU`, the value is the number of physical `GPUs` the Amazon ECS container agent reserves for the container. The number of GPUs that's reserved for all containers in a task can't exceed the number of available GPUs on the container instance that the task is launched on. You can also specify `ALL` to allocate all available GPUs on the instance to the container.
 When the type is `NeuronDevice`, the value must be `ALL`. This allocates all available Neuron devices on the instance to the container. Only one container in a task can specify `NeuronDevice` resources. This resource type is only supported on Managed Instances.
 When the type is `InferenceAccelerator`, the `value` matches the `deviceName` for an [InferenceAccelerator](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_InferenceAccelerator.html) specified in a task definition.

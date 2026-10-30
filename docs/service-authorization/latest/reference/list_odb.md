@@ -457,6 +457,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   UpdateExascaleCloudExadataInfrastructure  **
+  - **IAM action:**  [odb:UpdateExascaleCloudExadataInfrastructure](#list_odb-action-UpdateExascaleCloudExadataInfrastructure)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdateExascaleDbStorageVault  **
   - **IAM action:**  [odb:UpdateExascaleDbStorageVault](#list_odb-action-UpdateExascaleDbStorageVault)
   - **Condition key:**
@@ -531,6 +537,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateCloudVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateCloudVmCluster.html)  **
   - **Description:** Grants permission to create a VM cluster on the specified Exadata infrastructure
   - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [exascale-db-storage-vault](#list_odb-resource-exascale-db-storage-vault) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Resource types (\*required):** [odb-network\*](#list_odb-resource-odb-network) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Access level:** Write
 
@@ -542,8 +549,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateExascaleDbStorageVault](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateExascaleDbStorageVault.html)  **
   - **Description:** Grants permission to create an Exascale DB storage vault
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
+  - **Resource types (\*required):** [cloud-exadata-infrastructure](#list_odb-resource-cloud-exadata-infrastructure)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_odb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_odb-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateOdbNetwork](https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateOdbNetwork.html)  **
@@ -806,8 +813,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListExascaleDbStorageVaults](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListExascaleDbStorageVaults.html)  **
   - **Description:** Grants permission to list information about the Exascale DB storage vaults owned by your Amazon Web Services account
-  - **Resource types (\*required):**
-  - **Condition keys:**
+  - **Resource types (\*required):** [cloud-exadata-infrastructure](#list_odb-resource-cloud-exadata-infrastructure)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListFlexComponents](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListFlexComponents.html)  **
@@ -963,6 +970,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateExadbVmCluster](https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExadbVmCluster.html)  **
   - **Description:** Grants permission to update properties of a specified Exadb VM cluster
   - **Resource types (\*required):** [exadb-vm-cluster\*](#list_odb-resource-exadb-vm-cluster)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateExascaleCloudExadataInfrastructure](https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateExascaleCloudExadataInfrastructure.html)  **
+  - **Description:** Grants permission to configure Exascale storage on an Exadata infrastructure resource
+  - **Resource types (\*required):** [cloud-exadata-infrastructure\*](#list_odb-resource-cloud-exadata-infrastructure)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_odb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 

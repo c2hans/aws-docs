@@ -170,6 +170,7 @@ Content-type: application/json
       },
       "EncryptionAtRestOptions": {
          "Enabled": boolean,
+         "EncryptionMode": "string",
          "KmsKeyId": "string"
       },
       "Endpoint": "string",

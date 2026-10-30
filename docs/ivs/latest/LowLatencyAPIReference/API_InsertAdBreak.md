@@ -17,8 +17,10 @@ POST /InsertAdBreak HTTP/1.1
 Content-type: application/json
 
 {
+   "adBreakId": "{{string}}",
    "channelArn": "{{string}}",
-   "durationSeconds": {{number}}
+   "durationSeconds": {{number}},
+   "targetStartAt": "{{string}}"
 }
 ```
 
@@ -31,6 +33,13 @@ The request does not use any URI parameters.
 <a name="API_InsertAdBreak_RequestBody"></a>
 
 The request accepts the following data in JSON format.
+
+ ** [adBreakId](#API_InsertAdBreak_RequestSyntax) **   <a name="ivs-InsertAdBreak-request-adBreakId"></a>
+Caller-specified unique identifier for the ad break to insert into the playlist.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `[a-zA-Z0-9]+`
+Required: No
 
  ** [channelArn](#API_InsertAdBreak_RequestSyntax) **   <a name="ivs-InsertAdBreak-request-channelArn"></a>
 ARN of the channel into which the ad break is inserted.
@@ -45,6 +54,11 @@ Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 300.
 Required: Yes
 
+ ** [targetStartAt](#API_InsertAdBreak_RequestSyntax) **   <a name="ivs-InsertAdBreak-request-targetStartAt"></a>
+Target time at which the ad break starts.
+Type: Timestamp
+Required: No
+
 ## Response Syntax
 <a name="API_InsertAdBreak_ResponseSyntax"></a>
 
@@ -53,7 +67,8 @@ HTTP/1.1 200
 Content-type: application/json
 
 {
-   "adBreakId": "string"
+   "adBreakId": "string",
+   "targetStartAt": "string"
 }
 ```
 
@@ -69,6 +84,10 @@ Unique identifier for the ad break that was inserted into the playlist.
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `[a-zA-Z0-9]+`
+
+ ** [targetStartAt](#API_InsertAdBreak_ResponseSyntax) **   <a name="ivs-InsertAdBreak-response-targetStartAt"></a>
+Target start time for the inserted ad break.
+Type: Timestamp
 
 ## Errors
 <a name="API_InsertAdBreak_Errors"></a>

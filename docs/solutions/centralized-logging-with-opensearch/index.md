@@ -6,14 +6,14 @@ source_url: https://docs.aws.amazon.com//solutions/centralized-logging-with-open
 title: 'Centralized Logging with OpenSearch'
 canonical_url: https://docs.aws.amazon.com/solutions/centralized-logging-with-opensearch/
 source: aws-documentation
-generated_on: 2026-10-27
+generated_on: 2026-10-29
 ---
 
 # Centralized Logging with OpenSearch
 
 Build a centralized log analytics platform with Amazon OpenSearch Service on AWS in 20 minutes
 
-- **Version**: 2.4.17
+- **Version**: 2.4.18
 - **Released**: 10/2026
 - **Author**: AWS
 - **Est. deployment time**: 15 mins

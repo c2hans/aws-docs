@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/design-emp-hls-packa
 # Organize encodes in a MediaPackage output group
 <a name="design-emp-hls-package"></a>
 
-An MediaPackage output group is typically set up as a video ABR stack. A video ABR stack is an output group that contains the following:
+A MediaPackage output group is typically set up as a video ABR stack. A video ABR stack is an output group that contains the following:
 + More than one outputs.
 
 Each output can contain the following:

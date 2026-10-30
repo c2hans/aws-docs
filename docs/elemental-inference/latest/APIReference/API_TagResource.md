@@ -28,7 +28,7 @@ The request uses the following URI parameters.
 
  ** [resourceArn](#API_TagResource_RequestSyntax) **   <a name="elementalinference-TagResource-request-uri-resourceArn"></a>
 The ARN of the resource where you want to add tags.
-Pattern: `arn:aws[a-z\-]*:elemental-inference[a-z\-]*:[a-z0-9\-]+:[0-9]{12}:(feed|dictionary)/[a-zA-Z0-9]{1,19}`
+Pattern: `arn:aws[a-z\-]*:elemental-inference[a-z\-]*:[a-z0-9\-]+:[0-9]{12}:[a-z]+/[a-zA-Z0-9]{1,19}`
 Required: Yes
 
 ## Request Body

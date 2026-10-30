@@ -59,7 +59,9 @@ Array Members: Minimum number of 0 items. Maximum number of 30 items.
 Required: No
 
  ** Parameters **   <a name="lakeformation-Type-DataLakeSettings-Parameters"></a>
-A key-value map that provides an additional configuration on your data lake. CROSS\_ACCOUNT\_VERSION is the key you can configure in the Parameters field. Accepted values for the CrossAccountVersion key are 1, 2, 3, and 4.
+A key-value map that provides an additional configuration on your data lake. The following key-value pairs are supported:
++  `CROSS_ACCOUNT_VERSION` - Accepted values are 1, 2, 3, 4, and 5.
++  `SET_SOURCE_IDENTITY` - Accepted values are `TRUE` and `FALSE`. When set to `TRUE`, Lake Formation includes the IAM role identifier that was used to query in the S3 data event CloudTrail logs for `s3:GetObject` calls. For more information, see [Tracking query engine IAM roles in S3 data events](https://docs.aws.amazon.com/lake-formation/latest/dg/cloudtrail-logging.html#source-identity-cloudtrail).
 Type: String to string map
 Key Length Constraints: Minimum length of 1. Maximum length of 255.
 Key Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`

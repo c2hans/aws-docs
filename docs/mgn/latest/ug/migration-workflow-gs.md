@@ -7,11 +7,9 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/migration-workflow-gs.html
 
 The general process is:
 
-1.  Initialize AWS Transform MGN in the target region. Refer to the [list ](https://docs.aws.amazon.com/mgn/latest/ug/supported-regions.html) of supported AWS regions.
+1.  Initialize AWS Transform MGN in the target region. Refer to the [list ](what-is-mgn.md#supported-regions) of supported AWS regions.
 
-1. Install the AWS Replication Agent on the source server. Learn more about [agent installation ](https://docs.aws.amazon.com/mgn/latest/ug/source-servers.html).
-**Note**
-If you are using the agentless replication for vCenter feature, then you will need to add your source servers by installing the MGN vCenter Client. [Learn more about agentless replication.](agentless-mgn.md)
+1. Install the AWS Replication Agent on the source server. Learn more about [agent installation ](source-servers.md).
 
 1. Wait until the initial sync is finished. After installing the agent, you need to wait for the initial synchronization process to complete. This process performs block level replication from the source server to the replication server in staging area.
 
@@ -19,7 +17,7 @@ If you are using the agentless replication for vCenter feature, then you will ne
 
 1. Perform acceptance tests on the servers. After the test instance is tested successfully, finalize the test and delete the test instance.
 
-1. Configure Post-launch actions (if needed). Learn more about [Post-launch settings ](https://docs.aws.amazon.com/mgn/latest/ug/post-launch-settings.html).
+1. Configure Post-launch actions (if needed). Learn more about [Post-launch settings ](post-launch-settings.md).
 
 1. Wait for the cutover window.
 
@@ -32,3 +30,5 @@ If you are using the agentless replication for vCenter feature, then you will ne
 1. Confirm that the cutover instance was launched successfully and then finalize the cutover.
 
 1. Archive the source server.
+
+For a checklist with the key actions, completion indicators, and links to detailed instructions for each step, see [Quick start guide for AWS Transform MGN](quick-start-guide-gs.md).

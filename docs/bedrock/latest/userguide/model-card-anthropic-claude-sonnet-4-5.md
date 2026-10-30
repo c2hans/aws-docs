@@ -100,6 +100,9 @@ This model is a third-party model offered and billed through AWS Marketplace. Ch
 
 Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](apis.html) and [Endpoints supported](endpoints.html).
 
+**Important**
+This model is offered through one or more inference profiles designated as inference profiles with limited model selection. These profiles are expected to offer a narrower selection of models, and new models or model versions might not be released for them. Before you take a dependency on one of these inference profiles, review [Inference profiles with limited model selection](inference-profiles-limited-model-selection.md) and plan for model lifecycle events.
+
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
 | bedrock-runtime | anthropic.claude-sonnet-4-5-20250929-v1:0 | N/A | `us.anthropic.claude-sonnet-4-5-20250929-v1:0`<br />`eu.anthropic.claude-sonnet-4-5-20250929-v1:0`<br />`au.anthropic.claude-sonnet-4-5-20250929-v1:0`<br />`jp.anthropic.claude-sonnet-4-5-20250929-v1:0` | global.anthropic.claude-sonnet-4-5-20250929-v1:0 |

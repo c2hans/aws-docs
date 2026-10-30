@@ -45,6 +45,11 @@ A list of LF-tag conditions or saved LF-Tag expressions that define a resource's
 Type: [LFTagPolicyResource](API_LFTagPolicyResource.md) object
 Required: No
 
+ ** RLSPolicy **   <a name="lakeformation-Type-Resource-RLSPolicy"></a>
+A row-level security policy resource. Specify this when granting or revoking permissions on a row-level security policy.
+Type: [RLSPolicyResource](API_RLSPolicyResource.md) object
+Required: No
+
  ** Table **   <a name="lakeformation-Type-Resource-Table"></a>
 The table for the resource. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal.
 Type: [TableResource](API_TableResource.md) object

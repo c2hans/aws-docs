@@ -44,7 +44,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 `ContinueResponse`  <a name="cfn-lex-bot-waitandcontinuespecification-continueresponse"></a>
 The response that Amazon Lex sends to indicate that the bot is ready to continue the conversation.
-*Required*: Yes
+*Required*: No
 *Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -62,6 +62,6 @@ A response that Amazon Lex sends periodically to the user to indicate that the b
 
 `WaitingResponse`  <a name="cfn-lex-bot-waitandcontinuespecification-waitingresponse"></a>
 The response that Amazon Lex sends to indicate that the bot is waiting for the conversation to continue.
-*Required*: Yes
+*Required*: No
 *Type*: [ResponseSpecification](aws-properties-lex-bot-responsespecification.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

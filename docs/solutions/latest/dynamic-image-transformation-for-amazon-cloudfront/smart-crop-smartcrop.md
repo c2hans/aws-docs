@@ -36,12 +36,12 @@ At least one detection method (`faces`, `faceIndex`, `labels`, `customModelArn`,
 | --- | --- | --- |
 |  `faces`  | boolean | Detect faces (DetectFaces). |
 |  `faceIndex`  | integer (0-15) | Crop around a specific detected face by index. Implies face detection. |
-|  `labels`  | string array | Object or subject labels to detect (DetectLabels), for example `["Person", "Car"]`. |
+|  `labels`  | string array | Object or subject labels to detect (DetectLabels), for example `["Person", "Car"]`. You can specify up to 50 labels, each up to 100 characters. |
 |  `customModelArn`  | string | ARN of an Amazon Rekognition Custom Labels model version. The model must be running and the ECS task role must be permitted to call it. |
 |  `aspectRatio`  | string (`w:h`) | Target ratio, with width and height each between 1 and 100. Orientation is preserved. |
 |  `padding`  | integer or string | Breathing room around the targets, applied symmetrically on all sides. An integer is pixels; a string is `10%` or `50px`. Default `3%`. |
 |  `gravity`  | string | Crop anchor: a directional position (`top-left`, `top-center`, `top-right`, `center-left`, `center`, `center-right`, `bottom-left`, `bottom-center`, `bottom-right`) or a label name from `labels`. Default `center`. |
-|  `priorities`  | string array | Order in which `aspectRatio` and `padding` are satisfied when they conflict (first listed wins). Only `aspectRatio` and `padding` are accepted; target inclusion is always resolved first and gravity always last. Default `["aspectRatio", "padding"]`. |
+|  `priorities`  | string array | Order in which `aspectRatio` and `padding` are satisfied when they conflict (first listed wins). Only `aspectRatio` and `padding` are accepted; target inclusion is always resolved first and gravity always last. Default `["aspectRatio", "padding"]`. You can specify up to 2 entries. |
 |  `retainText`  | boolean | Include detected text regions (DetectText) in the crop. |
 |  `retainLogo`  | boolean | Include detected brand logos in the crop. |
 |  `fallback`  | string | Strategy when no targets are detected: `cover`, `contain`, `fill`, `inside`, `outside`, or `no-crop`. Default `cover`. |

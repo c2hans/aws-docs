@@ -31,6 +31,7 @@ The following features are not supported on Windows containers on Fargate:
   + `maxSwap`
   + `swappiness`
   + `environmentFiles`
+  + `ephemeralStorage`
 + The Fargate Spot capacity provider
 + Image volumes
 

@@ -141,7 +141,12 @@ Configure the method to perform a deployment.
 +  `prepare-change-set` – Create change set but don’t perform deployment. This is useful if you have external tools that will inspect the change set or if you have an approval process for change sets. Use `execute-change-set` to execute the prepared change set.
 +  `execute-change-set` – Execute a change set that was previously created with `prepare-change-set`. The change set name defaults to `cdk-deploy-change-set`, or you can specify a custom name with `--change-set-name`.
  *Valid values*: `change-set`, `direct`, `execute-change-set`, `prepare-change-set`
- *Default value*: `change-set` <a name="ref-cli-cmd-deploy-options-notification-arns"></a>
+ *Default value*: `change-set` <a name="ref-cli-cmd-deploy-options-monitoring-time-minutes"></a>
+
+ `--monitoring-time-minutes <NUMBER>`
+The number of minutes that CloudFormation continues to monitor the rollback trigger alarms after the deployment completes, before cleaning up old resources. The value must be a whole number between 0 and 180.
+You must use this option together with ` --rollback-trigger-alarm-arns `.
+ *Default value*: `0` (CloudFormation monitors the alarms only while the deployment is in progress)<a name="ref-cli-cmd-deploy-options-notification-arns"></a>
 
  `--notification-arns <ARRAY>`
 The ARNs of Amazon SNS topics that CloudFormation will notify for stack related events.<a name="ref-cli-cmd-deploy-options-outputs-file"></a>
@@ -207,7 +212,13 @@ During deployment, if a resource fails to be created or updated, the deployment 
 Specify `--no-rollback` to turn off this behavior. If a resource fails to be created or updated, the CDK CLI will leave changes made up to that point in place and return. This will leave your deployment in a failed, paused state. From here, you can update your code and try the deployment again. This may be helpful in development environments where you are iterating quickly.
 If a deployment performed with `--no-rollback` fails, and you decide that you want to rollback the deployment, you can use the `cdk rollback` command. For more information, see [cdk rollback](ref-cli-cmd-rollback.md).
 With `--no-rollback`, deployments that cause resource replacements will always fail. You can only use this option value for deployments that update or create new resources.
- *Default value*: `--rollback` <a name="ref-cli-cmd-deploy-options-toolkit-stack-name"></a>
+ *Default value*: `--rollback` <a name="ref-cli-cmd-deploy-options-rollback-trigger-alarm-arns"></a>
+
+ `--rollback-trigger-alarm-arns <ARRAY>`
+The ARNs of the CloudWatch alarms that CloudFormation monitors during the deployment. If any of these alarms goes to the `ALARM` state, CloudFormation rolls back the deployment. You can specify a maximum of 5 alarms. The alarms are treated as metric alarms (`AWS::CloudWatch::Alarm`).
+This option can be specified multiple times in a single command.
+To clear any rollback triggers that were previously configured on the stack, pass the single value `none`.
+To control how long CloudFormation continues to monitor these alarms after the deployment completes, use ` --monitoring-time-minutes `.<a name="ref-cli-cmd-deploy-options-toolkit-stack-name"></a>
 
  `--toolkit-stack-name <STRING>`
 The name of the existing CDK Toolkit stack.
