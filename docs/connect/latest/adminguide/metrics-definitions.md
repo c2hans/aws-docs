@@ -2425,7 +2425,7 @@ The average evaluation score corresponds to the grouping. For example, if the gr
 ## Average evaluation score (Submit time)
 <a name="average-evaluation-score-by-submit-time"></a>
 
-This metric provides the average evaluation score across all submission events by the evaluator, including all resubmissions. Each submission event, including every resubmission of the same evaluation, is included in the average. Evaluations for calibrations are excluded from this metric.
+This metric provides the average evaluation score across all submission events by the evaluator, including resubmissions. Each submission event, including every resubmission of the same evaluation, is included in the average. Evaluations for calibrations are excluded from this metric.
 
 The average evaluation score is provided at an evaluation form level.
 
@@ -2440,7 +2440,7 @@ The average evaluation score is provided at an evaluation form level.
 + Dashboard: [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md)
 
 **Calculation logic**:
-+ Get sum of of evaluation scores: forms \+ sections \+ questions.
++ Get sum of of evaluation scores across forms.
 + Get total number of submission events where scoring has been completed and recorded, including resubmissions.
 + Calculate average score: (sum of scores) / (total submission events).
 
@@ -4727,7 +4727,7 @@ This metric provides the number of evaluations performed with evaluation status 
 ## Evaluations performed (Submit time)
 <a name="evaluations-performed-by-submit-time"></a>
 
-This metric provides the number of evaluations submitted by the evaluator, including all resubmissions. Each submission event, including every resubmission of the same evaluation, is counted separately. Evaluations for calibrations are excluded from this metric.
+This metric provides the number of evaluations submitted by the evaluator, including resubmissions. Each submission event, including every resubmission of the same evaluation, is also counted here. Evaluations for calibrations are excluded from this metric.
 
 **Metric type**: Integer
 

@@ -30,9 +30,9 @@ The following `associate-assets` example associates a wind turbine asset to a wi
 
 ```
 aws iotsitewise associate-assets \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}} \
-    --hierarchy-id {{a1b2c3d4-5678-90ab-cdef-77777EXAMPLE}} \
-    --child-asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --hierarchy-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --child-asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 This command produces no output.
 For more information, see [Associating assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-associated-assets.html) in the *AWS IoT SiteWise User Guide*.
@@ -49,8 +49,8 @@ The following `batch-associate-project-assets` example associates a wind farm as
 
 ```
 aws iotsitewise batch-associate-project-assets \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}} \
-    --asset-ids {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}}
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --asset-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Adding assets to projects](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/add-assets-to-projects-sd.html) in the *AWS IoT SiteWise Monitor Application Guide*.
@@ -67,8 +67,8 @@ The following `batch-disassociate-project-assets` example disassociates a wind f
 
 ```
 aws iotsitewise batch-disassociate-project-assets \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}} \
-    --asset-ids {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}}
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --asset-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Adding assets to projects](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/add-assets-to-projects-sd.html) in the *AWS IoT SiteWise Monitor Application Guide*.
@@ -159,7 +159,7 @@ Contents of `create-portal-administrator-access-policy.json`:
     "accessPolicyPermission": "ADMINISTRATOR",
     "accessPolicyResource": {
         "portal": {
-            "id": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE"
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     }
 }
@@ -168,11 +168,11 @@ Output:
 
 ```
 {
-    "accessPolicyId": "a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE",
-    "accessPolicyArn": "arn:aws:iotsitewise:us-west-2:123456789012:access-policy/a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE"
+    "accessPolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "accessPolicyArn": "arn:aws:iotsitewise:us-west-2:123456789012:access-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Adding or removing portal administrators](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/administer-portals.html#portal-change-admins) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Adding or removing portal administrators](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/portal-change-admins.html) in the *AWS IoT SiteWise User Guide*.
 **Example 2: To grant a user read-only access to a project**
 The following `create-access-policy` example creates an access policy that grants a user read-only access to a wind farm project.
 
@@ -192,7 +192,7 @@ Contents of `create-project-viewer-access-policy.json`:
     "accessPolicyPermission": "VIEWER",
     "accessPolicyResource": {
         "project": {
-            "id": "a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE"
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     }
 }
@@ -201,8 +201,8 @@ Output:
 
 ```
 {
-    "accessPolicyId": "a1b2c3d4-5678-90ab-cdef-dddddEXAMPLE",
-    "accessPolicyArn": "arn:aws:iotsitewise:us-west-2:123456789012:access-policy/a1b2c3d4-5678-90ab-cdef-dddddEXAMPLE"
+    "accessPolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+    "accessPolicyArn": "arn:aws:iotsitewise:us-west-2:123456789012:access-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
 }
 ```
 For more information, see [Assigning project viewers](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/assign-project-viewers.html) in the *AWS IoT SiteWise Monitor Application Guide*.
@@ -217,6 +217,7 @@ The following code example shows how to use `create-asset-model`.
 **To create an asset model**
 The following `create-asset-model` example creates an asset model that defines a wind turbine with the following properties:
 Serial number - The serial number of a wind turbineGenerated power - The generated power data stream from a wind turbineTemperature C - The temperature data stream from a wind turbine in CelsiusTemperature F - The mapped temperature data points from Celsius to Fahrenheit
+The asset model definition is in the `create-wind-turbine-model.json` file.
 
 ```
 aws iotsitewise create-asset-model \
@@ -300,8 +301,8 @@ Output:
 
 ```
 {
-    "assetModelId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
-    "assetModelArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+    "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "assetModelArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "assetModelStatus": {
         "state": "CREATING"
     }
@@ -321,15 +322,15 @@ The following `create-asset` example creates a wind turbine asset from a wind tu
 
 ```
 aws iotsitewise create-asset \
-    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
+    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --asset-name {{"Wind Turbine 1"}}
 ```
 Output:
 
 ```
 {
-    "assetId": "a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
-    "assetArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
+    "assetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "assetArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "assetStatus": {
         "state": "CREATING"
     }
@@ -349,7 +350,7 @@ The following `create-dashboard` example creates a dashboard with a line chart t
 
 ```
 aws iotsitewise create-dashboard \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}} \
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --dashboard-name {{"Wind Farm"}} \
     --dashboard-definition {{file://create-wind-farm-dashboard.json}}
 ```
@@ -369,8 +370,8 @@ Contents of `create-wind-farm-dashboard.json`:
                 {
                     "label": "Power",
                     "type": "iotsitewise",
-                    "assetId": "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
-                    "propertyId": "a1b2c3d4-5678-90ab-cdef-99999EXAMPLE"
+                    "assetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                    "propertyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
                 }
             ]
         }
@@ -381,8 +382,8 @@ Output:
 
 ```
 {
-    "dashboardId": "a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE",
-    "dashboardArn": "arn:aws:iotsitewise:us-west-2:123456789012:dashboard/a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE"
+    "dashboardId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+    "dashboardArn": "arn:aws:iotsitewise:us-west-2:123456789012:dashboard/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
 }
 ```
 For more information, see [Creating dashboards (CLI)](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/create-dashboards-using-aws-cli.html) in the *AWS IoT SiteWise User Guide*.
@@ -400,14 +401,14 @@ The following `create-gateway` example creates a gateway that runs on AWS IoT Gr
 ```
 aws iotsitewise create-gateway \
     --gateway-name {{ExampleCorpGateway}} \
-    --gateway-platform {{greengrass={groupArn=arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-1b1b1EXAMPLE}}}
+    --gateway-platform {{greengrass={groupArn=arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}}
 ```
 Output:
 
 ```
 {
-    "gatewayId": "a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE",
-    "gatewayArn": "arn:aws:iotsitewise:us-west-2:123456789012:gateway/a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE"
+    "gatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "gatewayArn": "arn:aws:iotsitewise:us-west-2:123456789012:gateway/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Configuring a gateway](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-gateway.html) in the *AWS IoT SiteWise User Guide*.
@@ -433,16 +434,16 @@ Output:
 
 ```
 {
-    "portalId": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
-    "portalArn": "arn:aws:iotsitewise:us-west-2:123456789012:portal/a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
-    "portalStartUrl": "https://a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE.app.iotsitewise.aws",
+    "portalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "portalArn": "arn:aws:iotsitewise:us-west-2:123456789012:portal/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "portalStartUrl": "https://a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.app.iotsitewise.aws",
     "portalStatus": {
         "state": "CREATING"
     },
     "ssoApplicationId": "ins-a1b2c3d4-EXAMPLE"
 }
 ```
-For more information, see [Getting started with AWS IoT SiteWise Monitor](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-getting-started.html) in the *AWS IoT SiteWise User Guide* and [Enabling AWS SSO](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-getting-started.html#monitor-enable-sso) in the *AWS IoT SiteWise User Guide*..
+For more information, see [Getting started with AWS IoT SiteWise Monitor](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-getting-started.html) in the *AWS IoT SiteWise User Guide* and [Enabling AWS SSO](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-getting-started.html) in the *AWS IoT SiteWise User Guide*..
 +  For API details, see [CreatePortal](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/create-portal.html) in *AWS CLI Command Reference*.
 
 ### `create-project`
@@ -456,7 +457,7 @@ The following `create-project` example creates a wind farm project.
 
 ```
 aws iotsitewise create-project \
-    --portal-id {{a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE}} \
+    --portal-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --project-name {{"Wind Farm 1"}} \
     --project-description {{"Contains asset visualizations for Wind Farm #1 for Example Corp."}}
 ```
@@ -464,8 +465,8 @@ Output:
 
 ```
 {
-    "projectId": "a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE",
-    "projectArn": "arn:aws:iotsitewise:us-west-2:123456789012:project/a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE"
+    "projectId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "projectArn": "arn:aws:iotsitewise:us-west-2:123456789012:project/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Creating projects](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/create-projects.html) in the *AWS IoT SiteWise Monitor Application Guide*.
@@ -482,10 +483,10 @@ The following `delete-access-policy` example deletes an access policy that grant
 
 ```
 aws iotsitewise delete-access-policy \
-    --access-policy-id {{a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE}}
+    --access-policy-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
-For more information, see [Adding or removing portal administrators](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/administer-portals.html#portal-change-admins) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Adding or removing portal administrators](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/portal-change-admins.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DeleteAccessPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/delete-access-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-asset-model`
@@ -499,7 +500,7 @@ The following `delete-asset-model` example deletes a wind turbine asset model.
 
 ```
 aws iotsitewise delete-asset-model \
-    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -510,7 +511,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting asset models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-assets-and-models.html#delete-asset-models) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Deleting asset models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DeleteAssetModel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/delete-asset-model.html) in *AWS CLI Command Reference*.
 
 ### `delete-asset`
@@ -524,7 +525,7 @@ The following `delete-asset` example deletes a wind turbine asset.
 
 ```
 aws iotsitewise delete-asset \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -535,7 +536,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-assets-and-models.html#delete-assets) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Deleting assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-assets.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DeleteAsset](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/delete-asset.html) in *AWS CLI Command Reference*.
 
 ### `delete-dashboard`
@@ -549,7 +550,7 @@ The following `delete-dashboard` example deletes a wind turbine dashboard.
 
 ```
 aws iotsitewise delete-dashboard \
-    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE}}
+    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Deleting dashboards](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/delete-dashboards.html) in the *AWS IoT SiteWise Monitor Application Guide*.
@@ -566,7 +567,7 @@ The following `delete-gateway` example deletes a gateway.
 
 ```
 aws iotsitewise delete-gateway \
-    --gateway-id {{a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE}}
+    --gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Ingesting data using a gateway](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/gateways.html) in the *AWS IoT SiteWise User Guide*.
@@ -583,7 +584,7 @@ The following `delete-portal` example deletes a web portal for a wind farm compa
 
 ```
 aws iotsitewise delete-portal \
-    --portal-id {{a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE}}
+    --portal-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -594,7 +595,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting a portal](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/administer-portals.html#portal-delete-portal) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Deleting a portal](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/portal-delete-portal.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DeletePortal](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/delete-portal.html) in *AWS CLI Command Reference*.
 
 ### `delete-project`
@@ -608,7 +609,7 @@ The following `delete-project` example deletes a wind farm project.
 
 ```
 aws iotsitewise delete-project \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}}
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Deleting projects](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/delete-projects.html) in the *AWS IoT SiteWise Monitor Application Guide*.
@@ -625,14 +626,14 @@ The following `describe-access-policy` example describes an access policy that g
 
 ```
 aws iotsitewise describe-access-policy \
-    --access-policy-id {{a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE}}
+    --access-policy-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "accessPolicyId": "a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE",
-    "accessPolicyArn": "arn:aws:iotsitewise:us-west-2:123456789012:access-policy/a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE",
+    "accessPolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "accessPolicyArn": "arn:aws:iotsitewise:us-west-2:123456789012:access-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "accessPolicyIdentity": {
         "user": {
             "id": "a1b2c3d4e5-a1b2c3d4-5678-90ab-cdef-bbbbbEXAMPLE"
@@ -640,7 +641,7 @@ Output:
     },
     "accessPolicyResource": {
         "portal": {
-            "id": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE"
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     },
     "accessPolicyPermission": "ADMINISTRATOR",
@@ -648,7 +649,7 @@ Output:
     "accessPolicyLastUpdateDate": "2020-02-20T22:35:15.552880124Z"
 }
 ```
-For more information, see [Adding or removing portal administrators](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/administer-portals.html#portal-change-admins) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Adding or removing portal administrators](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/portal-change-admins.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DescribeAccessPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/describe-access-policy.html) in *AWS CLI Command Reference*.
 
 ### `describe-asset-model`
@@ -662,19 +663,19 @@ The following `describe-asset-model` example describes a wind farm asset model.
 
 ```
 aws iotsitewise describe-asset-model \
-    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-22222EXAMPLE}}
+    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "assetModelId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
-    "assetModelArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+    "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "assetModelArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "assetModelName": "Wind Farm Model",
     "assetModelDescription": "Represents a wind farm that comprises many wind turbines",
     "assetModelProperties": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-99999EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "Total Generated Power",
             "dataType": "DOUBLE",
             "unit": "kW",
@@ -685,8 +686,8 @@ Output:
                         {
                             "name": "power",
                             "value": {
-                                "propertyId": "a1b2c3d4-5678-90ab-cdef-66666EXAMPLE",
-                                "hierarchyId": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE"
+                                "propertyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                                "hierarchyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
                             }
                         }
                     ],
@@ -699,7 +700,7 @@ Output:
             }
         },
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-88888EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "name": "Region",
             "dataType": "STRING",
             "type": {
@@ -711,9 +712,9 @@ Output:
     ],
     "assetModelHierarchies": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "name": "Wind Turbines",
-            "childAssetModelId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+            "childAssetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
         }
     ],
     "assetModelCreationDate": 1575671284.0,
@@ -723,7 +724,7 @@ Output:
     }
 }
 ```
-For more information, see [Describing a specific asset model](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#describe-asset-model) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Check the status of an asset or component model](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/check-model-status.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DescribeAssetModel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/describe-asset-model.html) in *AWS CLI Command Reference*.
 
 ### `describe-asset-property`
@@ -737,21 +738,21 @@ The following `describe-asset-property` example describes a wind farm asset's to
 
 ```
 aws iotsitewise describe-asset-property \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}} \
-    --property-id {{a1b2c3d4-5678-90ab-cdef-99999EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --property-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
-    "assetId": "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
+    "assetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "assetName": "Wind Farm 1",
-    "assetModelId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+    "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "assetProperty": {
-        "id": "a1b2c3d4-5678-90ab-cdef-99999EXAMPLE",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "name": "Total Generated Power",
         "notification": {
-            "topic": "$aws/sitewise/asset-models/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE/assets/a1b2c3d4-5678-90ab-cdef-44444EXAMPLE/properties/a1b2c3d4-5678-90ab-cdef-99999EXAMPLE",
+            "topic": "$aws/sitewise/asset-models/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/assets/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/properties/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "state": "DISABLED"
         },
         "dataType": "DOUBLE",
@@ -763,8 +764,8 @@ Output:
                     {
                         "name": "power",
                         "value": {
-                            "propertyId": "a1b2c3d4-5678-90ab-cdef-66666EXAMPLE",
-                            "hierarchyId": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE"
+                            "propertyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+                            "hierarchyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
                         }
                     }
                 ],
@@ -778,7 +779,7 @@ Output:
     }
 }
 ```
-For more information, see [Describing a specific asset property](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#describe-asset-property) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Model industrial assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DescribeAssetProperty](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/describe-asset-property.html) in *AWS CLI Command Reference*.
 
 ### `describe-asset`
@@ -792,24 +793,24 @@ The following `describe-asset` example describes a wind farm asset.
 
 ```
 aws iotsitewise describe-asset \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "assetId": "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
-    "assetArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
+    "assetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "assetArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "assetName": "Wind Farm 1",
-    "assetModelId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+    "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "assetProperties": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-88888EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "name": "Region",
             "dataType": "STRING"
         },
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-99999EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "name": "Total Generated Power",
             "dataType": "DOUBLE",
             "unit": "kW"
@@ -817,7 +818,7 @@ Output:
     ],
     "assetHierarchies": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "name": "Wind Turbines"
         }
     ],
@@ -828,7 +829,7 @@ Output:
     }
 }
 ```
-For more information, see [Describing a specific asset](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#describe-asset) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Check the status of an asset](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/check-asset-status.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DescribeAsset](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/describe-asset.html) in *AWS CLI Command Reference*.
 
 ### `describe-dashboard`
@@ -842,17 +843,17 @@ The following `describe-dashboard` example describes the specified wind farm das
 
 ```
 aws iotsitewise describe-dashboard \
-    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE}}
+    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "dashboardId": "a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE",
-    "dashboardArn": "arn:aws:iotsitewise:us-west-2:123456789012:dashboard/a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE",
+    "dashboardId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "dashboardArn": "arn:aws:iotsitewise:us-west-2:123456789012:dashboard/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "dashboardName": "Wind Farm",
-    "projectId": "a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE",
-    "dashboardDefinition": "{\"widgets\":[{\"type\":\"monitor-line-chart\",\"title\":\"Generated Power\",\"x\":0,\"y\":0,\"height\":3,\"width\":3,\"metrics\":[{\"label\":\"Power\",\"type\":\"iotsitewise\",\"assetId\":\"a1b2c3d4-5678-90ab-cdef-44444EXAMPLE\",\"propertyId\":\"a1b2c3d4-5678-90ab-cdef-99999EXAMPLE\"}]}]}",
+    "projectId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "dashboardDefinition": "{\"widgets\":[{\"type\":\"monitor-line-chart\",\"title\":\"Generated Power\",\"x\":0,\"y\":0,\"height\":3,\"width\":3,\"metrics\":[{\"label\":\"Power\",\"type\":\"iotsitewise\",\"assetId\":\"a1b2c3d4-5678-90ab-cdef-EXAMPLE33333\",\"propertyId\":\"a1b2c3d4-5678-90ab-cdef-EXAMPLE44444\"}]}]}",
     "dashboardCreationDate": "2020-05-01T20:32:12.228476348Z",
     "dashboardLastUpdateDate": "2020-05-01T20:32:12.228476348Z"
 }
@@ -871,20 +872,20 @@ The following `describe-gateway-capability-configuration` example describes an O
 
 ```
 aws iotsitewise describe-gateway-capability-configuration \
-    --gateway-id {{a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE}} \
+    --gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --capability-namespace {{"iotsitewise:opcuacollector:1"}}
 ```
 Output:
 
 ```
 {
-    "gatewayId": "a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE",
+    "gatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "capabilityNamespace": "iotsitewise:opcuacollector:1",
-    "capabilityConfiguration": "{\"sources\":[{\"name\":\"Wind Farm #1\",\"endpoint\":{\"certificateTrust\":{\"type\":\"TrustAny\"},\"endpointUri\":\"opc.tcp://203.0.113.0:49320\",\"securityPolicy\":\"BASIC256\",\"messageSecurityMode\":\"SIGN_AND_ENCRYPT\",\"identityProvider\":{\"type\":\"Username\",\"usernameSecretArn\":\"arn:aws:secretsmanager:us-east-1:123456789012:secret:greengrass-factory1-auth-3QNDmM\"},\"nodeFilterRules\":[]},\"measurementDataStreamPrefix\":\"\"}]}",
+    "capabilityConfiguration": "{\"sources\":[{\"name\":\"Wind Farm #1\",\"endpoint\":{\"certificateTrust\":{\"type\":\"TrustAny\"},\"endpointUri\":\"opc.tcp://203.0.113.0:49320\",\"securityPolicy\":\"BASIC256\",\"messageSecurityMode\":\"SIGN_AND_ENCRYPT\",\"identityProvider\":{\"type\":\"Username\",\"usernameSecretArn\":\"arn:aws:secretsmanager:us-west-2:123456789012:secret:greengrass-factory1-auth-3QNDmM\"},\"nodeFilterRules\":[]},\"measurementDataStreamPrefix\":\"\"}]}",
     "capabilitySyncStatus": "IN_SYNC"
 }
 ```
-For more information, see [Configuring data sources](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-sources.html) in the *AWS IoT SiteWise User Guide*.
+For more information, see [OPC UA data sources for AWS IoT SiteWise Edge gateways](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-sources-opcua.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [DescribeGatewayCapabilityConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/describe-gateway-capability-configuration.html) in *AWS CLI Command Reference*.
 
 ### `describe-gateway`
@@ -898,18 +899,18 @@ The following `describe-gateway` example describes a gateway.
 
 ```
 aws iotsitewise describe-gateway \
-    --gateway-id {{a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE}}
+    --gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "gatewayId": "a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE",
+    "gatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "gatewayName": "ExampleCorpGateway",
-    "gatewayArn": "arn:aws:iotsitewise:us-west-2:123456789012:gateway/a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE",
+    "gatewayArn": "arn:aws:iotsitewise:us-west-2:123456789012:gateway/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "gatewayPlatform": {
         "greengrass": {
-            "groupArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-1b1b1EXAMPLE"
+            "groupArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     },
     "gatewayCapabilitySummaries": [
@@ -960,18 +961,18 @@ The following `describe-portal` example describes a web portal for a wind farm c
 
 ```
 aws iotsitewise describe-portal \
-    --portal-id {{a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE}}
+    --portal-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "portalId": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
-    "portalArn": "arn:aws:iotsitewise:us-west-2:123456789012:portal/a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
+    "portalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "portalArn": "arn:aws:iotsitewise:us-west-2:123456789012:portal/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "portalName": "WindFarmPortal",
     "portalDescription": "A portal that contains wind farm projects for Example Corp.",
     "portalClientId": "E-a1b2c3d4e5f6_a1b2c3d4e5f6EXAMPLE",
-    "portalStartUrl": "https://a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE.app.iotsitewise.aws",
+    "portalStartUrl": "https://a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.app.iotsitewise.aws",
     "portalContactEmail": "support@example.com",
     "portalStatus": {
         "state": "ACTIVE"
@@ -995,16 +996,16 @@ The following `describe-project` example describes a wind farm project.
 
 ```
 aws iotsitewise describe-project \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}}
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "projectId": "a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE",
-    "projectArn": "arn:aws:iotsitewise:us-west-2:123456789012:project/a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE",
+    "projectId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "projectArn": "arn:aws:iotsitewise:us-west-2:123456789012:project/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "projectName": "Wind Farm 1",
-    "portalId": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
+    "portalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "projectDescription": "Contains asset visualizations for Wind Farm #1 for Example Corp.",
     "projectCreationDate": "2020-02-20T21:58:43.362246001Z",
     "projectLastUpdateDate": "2020-02-20T21:58:43.362246095Z"
@@ -1024,9 +1025,9 @@ The following `disassociate-assets` example disassociates a wind turbine asset f
 
 ```
 aws iotsitewise disassociate-assets \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}} \
-    --hierarchy-id {{a1b2c3d4-5678-90ab-cdef-77777EXAMPLE}} \
-    --child-asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE44444}} \
+    --hierarchy-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE77777}} \
+    --child-asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 This command produces no output.
 For more information, see [Associating assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-associated-assets.html) in the *AWS IoT SiteWise User Guide*.
@@ -1043,8 +1044,8 @@ The following `get-asset-property-aggregates` example retrieves a wind turbine a
 
 ```
 aws iotsitewise get-asset-property-aggregates \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
-    --property-id {{a1b2c3d4-5678-90ab-cdef-66666EXAMPLE}} \
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --property-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE66666}} \
     --start-date {{1580849400}} \
     --end-date {{1580853000}} \
     --aggregate-types {{AVERAGE}} {{COUNT}} \
@@ -1066,7 +1067,7 @@ Output:
     ]
 }
 ```
-For more information, see [Querying asset property aggregates](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#aggregates) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Querying asset property aggregates](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/aggregates.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [GetAssetPropertyAggregates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/get-asset-property-aggregates.html) in *AWS CLI Command Reference*.
 
 ### `get-asset-property-value-history`
@@ -1080,8 +1081,8 @@ The following `get-asset-property-value-history` example retrieves a wind turbin
 
 ```
 aws iotsitewise get-asset-property-value-history \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
-    --property-id {{a1b2c3d4-5678-90ab-cdef-66666EXAMPLE}} \
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --property-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE66666}} \
     --start-date {{1580851800}} \
     --end-date {{1580853000}}
 ```
@@ -1133,7 +1134,7 @@ Output:
     ]
 }
 ```
-For more information, see [Querying historical asset property values](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#historical-values) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Querying historical asset property values](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/historical-values.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [GetAssetPropertyValueHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/get-asset-property-value-history.html) in *AWS CLI Command Reference*.
 
 ### `get-asset-property-value`
@@ -1147,8 +1148,8 @@ The following `get-asset-property-value` example retrieves a wind turbine asset'
 
 ```
 aws iotsitewise get-asset-property-value \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
-    --property-id {{a1b2c3d4-5678-90ab-cdef-66666EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --property-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE66666}}
 ```
 Output:
 
@@ -1166,7 +1167,7 @@ Output:
     }
 }
 ```
-For more information, see [Querying current asset property values](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#current-values) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Querying current asset property values](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/current-values.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [GetAssetPropertyValue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/get-asset-property-value.html) in *AWS CLI Command Reference*.
 
 ### `list-access-policies`
@@ -1189,7 +1190,7 @@ Output:
 {
     "accessPolicySummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-cccccEXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "identity": {
                 "user": {
                     "id": "a1b2c3d4e5-a1b2c3d4-5678-90ab-cdef-bbbbbEXAMPLE"
@@ -1197,7 +1198,7 @@ Output:
             },
             "resource": {
                 "portal": {
-                    "id": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE"
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                 }
             },
             "permission": "ADMINISTRATOR"
@@ -1226,8 +1227,8 @@ Output:
 {
     "assetModelSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
-            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "Wind Farm Model",
             "description": "Represents a wind farm that comprises many wind turbines",
             "creationDate": 1575671284.0,
@@ -1237,8 +1238,8 @@ Output:
             }
         },
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
-            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "name": "Wind Turbine Model",
             "description": "Represents a wind turbine manufactured by Example Corp",
             "creationDate": 1575671207.0,
@@ -1250,7 +1251,7 @@ Output:
     ]
 }
 ```
-For more information, see [Listing all asset models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#list-asset-models) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Model industrial assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [ListAssetModels](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/list-asset-models.html) in *AWS CLI Command Reference*.
 
 ### `list-assets`
@@ -1272,10 +1273,10 @@ Output:
 {
     "assetSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
-            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "name": "Wind Farm 1",
-            "assetModelId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+            "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "creationDate": 1575672453.0,
             "lastUpdateDate": 1575672453.0,
             "status": {
@@ -1283,7 +1284,7 @@ Output:
             },
             "hierarchies": [
                 {
-                    "id": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
                     "name": "Wind Turbines"
                 }
             ]
@@ -1291,13 +1292,13 @@ Output:
     ]
 }
 ```
-For more information, see [Listing assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#list-assets) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Model industrial assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 **Example 2: To list all assets based on an asset model**
 The following `list-assets` example lists all assets based on an asset model and defined in your AWS account in the current Region.
 
 ```
 aws iotsitewise list-assets \
-    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+    --asset-model-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1305,10 +1306,10 @@ Output:
 {
     "assetSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
-            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "name": "Wind Turbine 1",
-            "assetModelId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "creationDate": 1575671550.0,
             "lastUpdateDate": 1575686308.0,
             "status": {
@@ -1319,7 +1320,7 @@ Output:
     ]
 }
 ```
-For more information, see [Listing assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#list-assets) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Model industrial assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [ListAssets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/list-assets.html) in *AWS CLI Command Reference*.
 
 ### `list-associated-assets`
@@ -1333,8 +1334,8 @@ The following `list-associated-assets` example lists all wind turbine assets ass
 
 ```
 aws iotsitewise list-associated-assets \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-44444EXAMPLE}} \
-    --hierarchy-id {{a1b2c3d4-5678-90ab-cdef-77777EXAMPLE}}
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE44444}} \
+    --hierarchy-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE77777}}
 ```
 Output:
 
@@ -1342,10 +1343,10 @@ Output:
 {
     "assetSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
-            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "arn": "arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "name": "Wind Turbine 1",
-            "assetModelId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "creationDate": 1575671550.0,
             "lastUpdateDate": 1575686308.0,
             "status": {
@@ -1356,7 +1357,7 @@ Output:
     ]
 }
 ```
-For more information, see [Listing assets associated to a specific asset](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/discover-asset-resources.html#list-associated-assets) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Model industrial assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/industrial-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [ListAssociatedAssets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/list-associated-assets.html) in *AWS CLI Command Reference*.
 
 ### `list-dashboards`
@@ -1370,7 +1371,7 @@ The following `list-dashboards` example lists all dashboards that are defined in
 
 ```
 aws iotsitewise list-dashboards \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}}
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1378,7 +1379,7 @@ Output:
 {
     "dashboardSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-fffffEXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "Wind Farm",
             "creationDate": "2020-05-01T20:32:12.228476348Z",
             "lastUpdateDate": "2020-05-01T20:32:12.228476348Z"
@@ -1407,7 +1408,7 @@ Output:
 {
     "gatewaySummaries": [
         {
-            "gatewayId": "a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE",
+            "gatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "gatewayName": "ExampleCorpGateway",
             "gatewayCapabilitySummaries": [
                 {
@@ -1442,10 +1443,10 @@ Output:
 {
     "portalSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "name": "WindFarmPortal",
             "description": "A portal that contains wind farm projects for Example Corp.",
-            "startUrl": "https://a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE.app.iotsitewise.aws",
+            "startUrl": "https://a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.app.iotsitewise.aws",
             "creationDate": "2020-02-04T23:01:52.90248068Z",
             "lastUpdateDate": "2020-02-04T23:01:52.90248078Z",
             "roleArn": "arn:aws:iam::123456789012:role/service-role/MySiteWiseMonitorServiceRole"
@@ -1467,14 +1468,14 @@ The following `list-project-assets` example lists all assets that are associated
 
 ```
 aws iotsitewise list-project-assets \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}}
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "assetIds": [
-        "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE"
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
     ]
 }
 ```
@@ -1492,7 +1493,7 @@ The following `list-projects` example lists all projects that are defined in a p
 
 ```
 aws iotsitewise list-projects \
-    --portal-id {{a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE}}
+    --portal-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1500,7 +1501,7 @@ Output:
 {
     "projectSummaries": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "Wind Farm 1",
             "description": "Contains asset visualizations for Wind Farm #1 for Example Corp.",
             "creationDate": "2020-02-20T21:58:43.362246001Z",
@@ -1523,7 +1524,7 @@ The following `list-tags-for-resource` example lists all tags for a wind turbine
 
 ```
 aws iotsitewise list-tags-for-resource \
-    --resource-arn {{arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}}
+    --resource-arn {{arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
 
@@ -1565,7 +1566,7 @@ The following `tag-resource` example adds an owner tag to a wind turbine asset. 
 
 ```
 aws iotsitewise tag-resource \
-    --resource-arn {{arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
+    --resource-arn {{arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --tags {{Owner=richard-roe}}
 ```
 This command produces no output.
@@ -1583,7 +1584,7 @@ The following `untag-resource` example removes an owner tag from a wind turbine 
 
 ```
 aws iotsitewise untag-resource \
-    --resource-arn {{arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
+    --resource-arn {{arn:aws:iotsitewise:us-west-2:123456789012:asset/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --tag-keys {{Owner}}
 ```
 This command produces no output.
@@ -1601,7 +1602,7 @@ The following `update-access-policy` example updates an access policy that grant
 
 ```
 aws iotsitewise update-access-policy \
-    --access-policy-id {{a1b2c3d4-5678-90ab-cdef-dddddEXAMPLE}} \
+    --access-policy-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --cli-input-json {{file://update-project-viewer-access-policy.json}}
 ```
 Contents of `update-project-viewer-access-policy.json`:
@@ -1616,7 +1617,7 @@ Contents of `update-project-viewer-access-policy.json`:
     "accessPolicyPermission": "ADMINISTRATOR",
     "accessPolicyResource": {
         "project": {
-            "id": "a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE"
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     }
 }
@@ -1646,7 +1647,7 @@ Contents of `update-wind-farm-model.json`:
     "assetModelDescription": "Represents a wind farm that comprises many wind turbines",
     "assetModelProperties": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-88888EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
             "name": "Region",
             "dataType": "STRING",
             "type": {
@@ -1654,7 +1655,7 @@ Contents of `update-wind-farm-model.json`:
             }
         },
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-99999EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999",
             "name": "Total Generated Power",
             "dataType": "DOUBLE",
             "unit": "kW",
@@ -1665,8 +1666,8 @@ Contents of `update-wind-farm-model.json`:
                         {
                             "name": "power",
                             "value": {
-                                "hierarchyId": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE",
-                                "propertyId": "a1b2c3d4-5678-90ab-cdef-66666EXAMPLE"
+                                "hierarchyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
+                                "propertyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
                             }
                         }
                     ],
@@ -1681,9 +1682,9 @@ Contents of `update-wind-farm-model.json`:
     ],
     "assetModelHierarchies": [
         {
-            "id": "a1b2c3d4-5678-90ab-cdef-77777EXAMPLE",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "name": "Wind Turbines",
-            "childAssetModelId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+            "childAssetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
@@ -1692,14 +1693,13 @@ Output:
 
 ```
 {
-    "assetModelId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
-    "assetModelArn": "arn:aws:iotsitewise:us-west-2:123456789012:asset-model/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+    "assetModelId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "assetModelStatus": {
         "state": "CREATING"
     }
 }
 ```
-For more information, see [Updating asset models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-assets-and-models.html#update-asset-models) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Updating asset models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-asset-models.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [UpdateAssetModel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/update-asset-model.html) in *AWS CLI Command Reference*.
 
 ### `update-asset-property`
@@ -1713,20 +1713,20 @@ The following `update-asset-property` example updates a wind turbine asset's pow
 
 ```
 aws iotsitewise update-asset-property \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
-    --property-id {{a1b2c3d4-5678-90ab-cdef-55555EXAMPLE}} \
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --property-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE55555}} \
     --property-alias {{"/examplecorp/windfarm/1/turbine/1/power"}} \
     --property-notification-state {{DISABLED}}
 ```
 This command produces no output.
-For more information, see [Mapping industrial data streams to asset properties](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/connect-data-streams.html) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Update an asset property alias](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-data-streams-method.html) in the *AWS IoT SiteWise User Guide*.
 **Example 2: To enable asset property notifications**
 The following `update-asset-property` example enables asset property update notifications for a wind turbine asset's power property. Property value updates are published to the MQTT topic `$aws/sitewise/asset-models/<assetModelId>/assets/<assetId>/properties/<propertyId>`, where each ID is replaced by the property, asset, and model ID of the asset property.
 
 ```
 aws iotsitewise update-asset-property \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
-    --property-id {{a1b2c3d4-5678-90ab-cdef-66666EXAMPLE}} \
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --property-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE66666}} \
     --property-notification-state {{ENABLED}} \
     --property-alias {{"/examplecorp/windfarm/1/turbine/1/power"}}
 ```
@@ -1745,7 +1745,7 @@ The following `update-asset` example updates a wind turbine asset's name.
 
 ```
 aws iotsitewise update-asset \
-    --asset-id {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}} \
+    --asset-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --asset-name {{"Wind Turbine 2"}}
 ```
 Output:
@@ -1757,7 +1757,7 @@ Output:
     }
 }
 ```
-For more information, see [Updating assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-assets-and-models.html#update-assets) in the *AWS IoT SiteWise User Guide*.
+For more information, see [Updating assets](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-assets.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [UpdateAsset](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/update-asset.html) in *AWS CLI Command Reference*.
 
 ### `update-dashboard`
@@ -1771,7 +1771,7 @@ The following `update-dashboard` example changes the title of a dashboard's line
 
 ```
 aws iotsitewise update-dashboard \
-    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-dddddEXAMPLE}} \
+    --dashboard-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --dashboard-name {{"Wind Farm"}} \
     --dashboard-definition {{file://update-wind-farm-dashboard.json}}
 ```
@@ -1791,8 +1791,8 @@ Contents of `update-wind-farm-dashboard.json`:
                 {
                     "label": "Power",
                     "type": "iotsitewise",
-                    "assetId": "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
-                    "propertyId": "a1b2c3d4-5678-90ab-cdef-99999EXAMPLE"
+                    "assetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+                    "propertyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999"
                 }
             ]
         }
@@ -1812,10 +1812,11 @@ The following code example shows how to use `update-gateway-capability-configura
 **To update a gateway capability**
 The following `update-gateway-capability-configuration` example configures an OPC-UA source with the following properties:
 Trusts any certificate.Uses the Basic256 algorithm to secure messages.Uses the SignAndEncrypt mode to secure connections.Uses authentication credentials stored in an AWS Secrets Manager secret.
+The capability configuration is in the `opc-ua-capability-configuration.json` file.
 
 ```
 aws iotsitewise update-gateway-capability-configuration \
-    --gateway-id {{a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE}} \
+    --gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --capability-namespace {{"iotsitewise:opcuacollector:1"}} \
     --capability-configuration {{file://opc-ua-capability-configuration.json}}
 ```
@@ -1852,7 +1853,7 @@ Output:
     "capabilitySyncStatus": "OUT_OF_SYNC"
 }
 ```
-For more information, see [Configuring data sources](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-sources.html) in the *AWS IoT SiteWise User Guide*.
+For more information, see [OPC UA data sources for AWS IoT SiteWise Edge gateways](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-sources-opcua.html) in the *AWS IoT SiteWise User Guide*.
 +  For API details, see [UpdateGatewayCapabilityConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotsitewise/update-gateway-capability-configuration.html) in *AWS CLI Command Reference*.
 
 ### `update-gateway`
@@ -1866,7 +1867,7 @@ The following `update-gateway` example updates a gateway's name.
 
 ```
 aws iotsitewise update-gateway \
-    --gateway-id {{a1b2c3d4-5678-90ab-cdef-1a1a1EXAMPLE}} \
+    --gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --gateway-name {{ExampleCorpGateway1}}
 ```
 This command produces no output.
@@ -1884,7 +1885,7 @@ The following `update-portal` example updates a web portal for a wind farm compa
 
 ```
 aws iotsitewise update-portal \
-    --portal-id {{a1b2c3d4-5678-90ab-cdef-aaaaaEXAMPLE}} \
+    --portal-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --portal-name {{WindFarmPortal}} \
     --portal-description {{"A portal that contains wind farm projects for Example Corp."}} \
     --portal-contact-email {{support@example.com}} \
@@ -1913,7 +1914,7 @@ The following `update-project` example updates a wind farm project.
 
 ```
 aws iotsitewise update-project \
-    --project-id {{a1b2c3d4-5678-90ab-cdef-eeeeeEXAMPLE}} \
+    --project-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --project-name {{"Wind Farm 1"}} \
     --project-description {{"Contains asset visualizations for Wind Farm #1 for Example Corp."}}
 ```

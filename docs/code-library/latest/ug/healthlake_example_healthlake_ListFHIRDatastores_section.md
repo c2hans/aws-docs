@@ -32,12 +32,12 @@ Output:
         "SseConfiguration": {
             "KmsEncryptionConfig": {
                 "CmkType": "CUSTOMER_MANAGED_KMS_KEY",
-                "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         },
         "DatastoreName": "Demo",
-        "DatastoreArn": "arn:aws:healthlake:us-east-1:<AWS Account ID>:datastore/<Data store ID>",
-        "DatastoreEndpoint": "https://healthlake.us-east-1.amazonaws.com/datastore/<Data store ID>/r4/",
+        "DatastoreArn": "arn:aws:healthlake:us-west-2:<AWS Account ID>:datastore/<Data store ID>",
+        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/<Data store ID>/r4/",
         "DatastoreStatus": "ACTIVE",
         "DatastoreTypeVersion": "R4",
         "CreatedAt": 1603761064.881,
@@ -50,7 +50,7 @@ Output:
     ]
 }
 ```
-For more information, see [Creating and monitoring a FHIR data store](https://docs.aws.amazon.com/healthlake/latest/devguide/working-with-FHIR-healthlake.html) in the *AWS HealthLake Developer Guide*.
+For more information, see [Listing HealthLake data stores](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-list.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [ListFHIRDatastores](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-fhir-datastores.html) in *AWS CLI Command Reference*.
 
 ------

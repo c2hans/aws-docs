@@ -17,7 +17,8 @@ The following code examples show how to use `BatchGetDeployments`.
 The following `batch-get-deployments` example displays information about multiple deployments that are associated with the user's AWS account.
 
 ```
-aws deploy batch-get-deployments --deployment-ids {{d-A1B2C3111}} {{d-A1B2C3222}}
+aws deploy batch-get-deployments \
+    --deployment-ids {{d-A1B2C3111}} {{d-A1B2C3222}}
 ```
 Output:
 
@@ -83,6 +84,7 @@ Output:
     ]
 }
 ```
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-deployments.html) in *AWS CLI Command Reference*.
 
 ------

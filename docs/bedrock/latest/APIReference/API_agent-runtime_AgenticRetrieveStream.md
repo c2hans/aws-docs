@@ -220,6 +220,16 @@ Content-type: application/json
       "attributes": {
          "actions": [
             {
+               "codeExecution": {
+                  "documents": [
+                     {
+                        "documentId": "string",
+                        "sourceRetriever": {
+                           "identifier": "string"
+                        }
+                     }
+                  ]
+               },
                "fullDocumentExpansion": {
                   "documentId": "string",
                   "sourceRetriever": {

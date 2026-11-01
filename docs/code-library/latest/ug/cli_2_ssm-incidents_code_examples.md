@@ -30,18 +30,16 @@ The following `create-replication-set` example creates the replication set Incid
 
 ```
 aws ssm-incidents create-replication-set \
-    --regions '{{{"us-east-1": {"sseKmsKeyId": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"}, "us-east-2": {"sseKmsKeyId": "arn:aws:kms:us-east-1:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"}}}}'
+    --regions '{{{"us-east-1": {"sseKmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}, "us-east-2": {"sseKmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}'
 ```
 Output:
 
 ```
 {
-    "replicationSetArns": [
-        "arn:aws:ssm-incidents::111122223333:replication-set/c4bcb603-4bf9-bb3f-413c-08df53673b57"
-    ]
+    "arn": "arn:aws:ssm-incidents::123456789012:replication-set/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Using the Incident Manager replication set](https://docs.aws.amazon.com/incident-manager/latest/userguide/replication.html) in the *Incident Manager User Guide*.
+For more information, see [Configuring replication sets and Findings in Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/general-settings.html) in the *Incident Manager User Guide*.
 +  For API details, see [CreateReplicationSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-incidents/create-replication-set.html) in *AWS CLI Command Reference*.
 
 ### `create-response-plan`
@@ -55,18 +53,18 @@ The following `create-response-plan` example creates a response plan with the sp
 
 ```
 aws ssm-incidents create-response-plan \
-    --chat-channel '{{{"chatbotSns": ["arn:aws:sns:us-east-1:111122223333:Standard_User"]}}}' \
+    --chat-channel '{{{"chatbotSns": ["arn:aws:sns:us-west-2:123456789012:Standard_User"]}}}' \
     --display-name {{"Example response plan"}} \
     --incident-template '{{{"impact": 5, "title": "example-incident"}}}' \
     --name {{"example-response"}} \
-    --actions '{{[{"ssmAutomation": {"documentName": "AWSIncidents-CriticalIncidentRunbookTemplate", "documentVersion": "$DEFAULT", "roleArn": "arn:aws:iam::111122223333:role/aws-service-role/ssm-incidents.amazonaws.com/AWSServiceRoleForIncidentManager", "targetAccount": "RESPONSE_PLAN_OWNER_ACCOUNT"}}]}}' \
-    --engagements '{{["arn:aws:ssm-contacts:us-east-1:111122223333:contact/example"]}}'
+    --actions '{{[{"ssmAutomation": {"documentName": "AWSIncidents-CriticalIncidentRunbookTemplate", "documentVersion": "$DEFAULT", "roleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm-incidents.amazonaws.com/AWSServiceRoleForIncidentManager", "targetAccount": "RESPONSE_PLAN_OWNER_ACCOUNT"}}]}}' \
+    --engagements '{{["arn:aws:ssm-contacts:us-west-2:123456789012:contact/example"]}}'
 ```
 Output:
 
 ```
 {
-    "arn": "arn:aws:ssm-incidents::111122223333:response-plan/example-response"
+    "arn": "arn:aws:ssm-incidents::123456789012:response-plan/example-response"
 }
 ```
 For more information, see [Incident preparation](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-response.html) in the *Incident Manager User Guide*.
@@ -86,14 +84,14 @@ aws ssm-incidents create-timeline-event \
     --event-data "\"example timeline event\"" \
     --event-time {{2022-10-01T20:30:00.000}} \
     --event-type {{"Custom Event"}} \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4EXAMPLE"}}
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "eventId": "c0bcc885-a41d-eb01-b4ab-9d2deEXAMPLE",
-    "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4EXAMPLE"
+    "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To create a timeline event with an incident note**
@@ -101,18 +99,18 @@ The following `create-timeline-event` example creates a timeline event that is l
 
 ```
 aws ssm-incidents create-timeline-event \
-     --event-data "\"New {{Note}}\"" \
-     --event-type "Note" \
-     --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Test/6cc46130-ca6c-3b38-68f1-f6abeEXAMPLE"}} \
-     --event-time {{2023-06-20T12:06:00.000}} \
-     --event-references '{{[{"resource":"arn:aws:ssm-incidents::111122223333:incident-record/Test/6cc46130-ca6c-3b38-68f1-f6abeEXAMPLE"}]}}'
+    --event-data "\"New {{Note}}\"" \
+    --event-type "Note" \
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Test/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} \
+    --event-time {{2023-06-20T12:06:00.000}} \
+    --event-references '{{[{"resource":"arn:aws:ssm-incidents::123456789012:incident-record/Test/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}]}}'
 ```
 Output:
 
 ```
 {
-    "eventId": "a41dc885-c0bc-b4ab-eb01-de9d2EXAMPLE",
-    "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4EXAMPLE"
+    "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+    "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Incident details](https://docs.aws.amazon.com/incident-manager/latest/userguide/tracking-details.html) in the *Incident Manager User Guide*.
@@ -129,7 +127,7 @@ The following `delete-incident-record` example deletes the specified incident re
 
 ```
 aws ssm-incidents delete-incident-record \
-    --arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}}
+    --arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Incident tracking](https://docs.aws.amazon.com/incident-manager/latest/userguide/tracking.html) in the *Incident Manager User Guide*.
@@ -146,10 +144,10 @@ The following `delete-replication-set` example deletes the replication set from 
 
 ```
 aws ssm-incidents delete-replication-set \
-    --arn {{"arn:aws:ssm-incidents::111122223333:replication-set/c4bcb603-4bf9-bb3f-413c-08df53673b57"}}
+    --arn {{"arn:aws:ssm-incidents::123456789012:replication-set/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
-For more information, see [Using the Incident Manager replication set](https://docs.aws.amazon.com/incident-manager/latest/userguide/replication.html) in the *Incident Manager User Guide*.
+For more information, see [Configuring replication sets and Findings in Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/general-settings.html) in the *Incident Manager User Guide*.
 +  For API details, see [DeleteReplicationSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-incidents/delete-replication-set.html) in *AWS CLI Command Reference*.
 
 ### `delete-resource-policy`
@@ -164,7 +162,7 @@ The following `delete-resource-policy` example deletes a resource policy from a 
 ```
 aws ssm-incidents delete-resource-policy \
     --policy-id {{"be8b57191f0371f1c6827341aa3f0a03"}} \
-    --resource-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}}
+    --resource-arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}}
 ```
 This command produces no output.
 For more information, see [Working with shared contacts and response plans](https://docs.aws.amazon.com/incident-manager/latest/userguide/sharing.html) in the *Incident Manager User Guide*.
@@ -181,7 +179,7 @@ The following `delete-response-plan` example deletes the specified response plan
 
 ```
 aws ssm-incidents delete-response-plan \
-    --arn {{"arn:aws:ssm-incidents::111122223333:response-plan/example-response"}}
+    --arn {{"arn:aws:ssm-incidents::123456789012:response-plan/example-response"}}
 ```
 This command produces no output.
 For more information, see [Incident preparation](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-response.html) in the *Incident Manager User Guide*.
@@ -198,8 +196,8 @@ The following `delete-timeline-event` example deletes a custom timeline event fr
 
 ```
 aws ssm-incidents delete-timeline-event \
-    --event-id {{"c0bcc885-a41d-eb01-b4ab-9d2de193643c"}} \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}}
+    --event-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 This command produces no output.
 For more information, see [Incident details](https://docs.aws.amazon.com/incident-manager/latest/userguide/tracking-details.html) in the *Incident Manager User Guide*.
@@ -216,24 +214,24 @@ The following `get-incident-record` example gets details about the specified inc
 
 ```
 aws ssm-incidents get-incident-record \
-    --arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}}
+    --arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
     "incidentRecord": {
-        "arn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308",
+        "arn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "automationExecutions": [],
         "creationTime": "2021-05-21T18:16:57.579000+00:00",
-        "dedupeString": "c4bcc812-85e7-938d-2b78-17181176ee1a",
+        "dedupeString": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "impact": 5,
         "incidentRecordSource": {
-            "createdBy": "arn:aws:iam::111122223333:user/draliatp",
-            "invokedBy": "arn:aws:iam::111122223333:user/draliatp",
+            "createdBy": "arn:aws:iam::123456789012:user/draliatp",
+            "invokedBy": "arn:aws:iam::123456789012:user/draliatp",
             "source": "aws.ssm-incidents.custom"
         },
-        "lastModifiedBy": "arn:aws:iam::111122223333:user/draliatp",
+        "lastModifiedBy": "arn:aws:iam::123456789012:user/draliatp",
         "lastModifiedTime": "2021-05-21T18:16:59.149000+00:00",
         "notificationTargets": [],
         "status": "OPEN",
@@ -255,17 +253,17 @@ The following `get-replication-set` example gets the details of the replication 
 
 ```
 aws ssm-incidents get-replication-set \
-    --arn {{"arn:aws:ssm-incidents::111122223333:replication-set/c4bcb603-4bf9-bb3f-413c-08df53673b57"}}
+    --arn {{"arn:aws:ssm-incidents::123456789012:replication-set/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
     "replicationSet": {
-        "createdBy": "arn:aws:sts::111122223333:assumed-role/Admin/username",
+        "createdBy": "arn:aws:sts::123456789012:assumed-role/Admin/username",
         "createdTime": "2021-05-14T17:57:22.010000+00:00",
         "deletionProtected": false,
-        "lastModifiedBy": "arn:aws:sts::111122223333:assumed-role/Admin/username",
+        "lastModifiedBy": "arn:aws:sts::123456789012:assumed-role/Admin/username",
         "lastModifiedTime": "2021-05-14T17:57:22.010000+00:00",
         "regionMap": {
             "us-east-1": {
@@ -282,7 +280,7 @@ Output:
     }
 }
 ```
-For more information, see [Using the Incident Manager replication set](https://docs.aws.amazon.com/incident-manager/latest/userguide/replication.html) in the *Incident Manager User Guide*.
+For more information, see [Configuring replication sets and Findings in Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/general-settings.html) in the *Incident Manager User Guide*.
 +  For API details, see [GetReplicationSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-incidents/get-replication-set.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-policies`
@@ -292,11 +290,11 @@ The following code example shows how to use `get-resource-policies`.
 
 **AWS CLI**
 **To list resource policies for a response plan**
-The following `command-name` example lists the resource policies associated with the specified response plan.
+The following `get-resource-policies` example lists the resource policies associated with the specified response plan.
 
 ```
 aws ssm-incidents get-resource-policies \
---resource-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}}
+    --resource-arn {{"arn:aws:ssm-incidents::123456789111:response-plan/Example-Response-Plan"}}
 ```
 Output:
 
@@ -304,9 +302,9 @@ Output:
 {
     "resourcePolicies": [
         {
-            "policyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"d901b37a-dbb0-458a-8842-75575c464219-external-principals\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::222233334444:root\"},\"Action\":[\"ssm-incidents:GetResponsePlan\",\"ssm-incidents:StartIncident\",\"ssm-incidents:UpdateIncidentRecord\",\"ssm-incidents:GetIncidentRecord\",\"ssm-incidents:CreateTimelineEvent\",\"ssm-incidents:UpdateTimelineEvent\",\"ssm-incidents:GetTimelineEvent\",\"ssm-incidents:ListTimelineEvents\",\"ssm-incidents:UpdateRelatedItems\",\"ssm-incidents:ListRelatedItems\"],\"Resource\":[\"arn:aws:ssm-incidents:*:111122223333:response-plan/Example-Response-Plan\",\"arn:aws:ssm-incidents:*:111122223333:incident-record/Example-Response-Plan/*\"]}]}",
+            "policyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"d901b37a-dbb0-458a-8842-75575c464219-external-principals\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789222:root\"},\"Action\":[\"ssm-incidents:GetResponsePlan\",\"ssm-incidents:StartIncident\",\"ssm-incidents:UpdateIncidentRecord\",\"ssm-incidents:GetIncidentRecord\",\"ssm-incidents:CreateTimelineEvent\",\"ssm-incidents:UpdateTimelineEvent\",\"ssm-incidents:GetTimelineEvent\",\"ssm-incidents:ListTimelineEvents\",\"ssm-incidents:UpdateRelatedItems\",\"ssm-incidents:ListRelatedItems\"],\"Resource\":[\"arn:aws:ssm-incidents:*:123456789111:response-plan/Example-Response-Plan\",\"arn:aws:ssm-incidents:*:123456789111:incident-record/Example-Response-Plan/*\"]}]}",
             "policyId": "be8b57191f0371f1c6827341aa3f0a03",
-            "ramResourceShareRegion": "us-east-1"
+            "ramResourceShareRegion": "us-west-2"
         }
     ]
 }
@@ -321,11 +319,11 @@ The following code example shows how to use `get-response-plan`.
 
 **AWS CLI**
 **To get details of a response plan**
-The following `command-name` example gets details about a specified response plan in your AWS account.
+The following `get-response-plan` example gets details about a specified response plan in your AWS account.
 
 ```
 aws ssm-incidents get-response-plan \
-    --arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}}
+    --arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}}
 ```
 Output:
 
@@ -336,20 +334,20 @@ Output:
             "ssmAutomation": {
                 "documentName": "AWSIncidents-CriticalIncidentRunbookTemplate",
                 "documentVersion": "$DEFAULT",
-                "roleArn": "arn:aws:iam::111122223333:role/aws-service-role/ssm-incidents.amazonaws.com/AWSServiceRoleForIncidentManager",
+                "roleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm-incidents.amazonaws.com/AWSServiceRoleForIncidentManager",
                 "targetAccount": "RESPONSE_PLAN_OWNER_ACCOUNT"
             }
         }
     ],
-    "arn": "arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan",
+    "arn": "arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan",
     "chatChannel": {
         "chatbotSns": [
-            "arn:aws:sns:us-east-1:111122223333:Standard_User"
+            "arn:aws:sns:us-west-2:123456789012:Standard_User"
         ]
     },
     "displayName": "Example response plan",
     "engagements": [
-        "arn:aws:ssm-contacts:us-east-1:111122223333:contact/example"
+        "arn:aws:ssm-contacts:us-west-2:123456789012:contact/example"
     ],
     "incidentTemplate": {
         "impact": 5,
@@ -372,8 +370,8 @@ The following `get-timeline-event` example returns details of the specified time
 
 ```
 aws ssm-incidents get-timeline-event \
-    --event-id {{20bcc812-8a94-4cd7-520c-0ff742111424}} \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}}
+    --event-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
@@ -381,11 +379,11 @@ Output:
 {
     "event": {
         "eventData": "\"Incident Started\"",
-        "eventId": "20bcc812-8a94-4cd7-520c-0ff742111424",
+        "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "eventTime": "2021-05-21T18:16:57+00:00",
         "eventType": "Custom Event",
         "eventUpdatedTime": "2021-05-21T18:16:59.944000+00:00",
-        "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+        "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     }
 }
 ```
@@ -399,7 +397,7 @@ The following code example shows how to use `list-incident-records`.
 
 **AWS CLI**
 **To list incident records**
-The following `command-name` example lists the incident records in your Amazon Web Services account.
+The following `list-incident-records` example lists the incident records in your Amazon Web Services account.
 
 ```
 aws ssm-incidents list-incident-records
@@ -410,12 +408,12 @@ Output:
 {
     "incidentRecordSummaries": [
         {
-            "arn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308",
+            "arn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "creationTime": "2021-05-21T18:16:57.579000+00:00",
             "impact": 5,
             "incidentRecordSource": {
-                "createdBy": "arn:aws:iam::111122223333:user/draliatp",
-                "invokedBy": "arn:aws:iam::111122223333:user/draliatp",
+                "createdBy": "arn:aws:iam::123456789012:user/draliatp",
+                "invokedBy": "arn:aws:iam::123456789012:user/draliatp",
                 "source": "aws.ssm-incidents.custom"
             },
             "status": "OPEN",
@@ -438,7 +436,7 @@ The following `list-related-items` example lists the related items of the specif
 
 ```
 aws ssm-incidents list-related-items \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}}
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -449,7 +447,7 @@ Output:
             "identifier": {
                 "type": "OTHER",
                 "value": {
-                    "url": "https://console.aws.amazon.com/systems-manager/opsitems/oi-8ef82158e190/workbench?region=us-east-1"
+                    "url": "https://console.aws.amazon.com/systems-manager/opsitems/oi-8ef82158e190/workbench?region=us-west-2"
                 }
             },
             "title": "Example related item"
@@ -458,7 +456,7 @@ Output:
             "identifier": {
                 "type": "PARENT",
                 "value": {
-                    "arn": "arn:aws:ssm:us-east-1:111122223333:opsitem/oi-8084126392ac"
+                    "arn": "arn:aws:ssm:us-west-2:123456789012:opsitem/oi-8084126392ac"
                 }
             },
             "title": "parentItem"
@@ -476,7 +474,7 @@ The following code example shows how to use `list-replication-sets`.
 
 **AWS CLI**
 **To list the replication set**
-The following `list-replication-set` example lists the replication set Incident Manager uses to replicate and encrypt data in your AWS account.
+The following `list-replication-sets` example lists the replication set Incident Manager uses to replicate and encrypt data in your AWS account.
 
 ```
 aws ssm-incidents list-replication-sets
@@ -486,11 +484,11 @@ Output:
 ```
 {
     "replicationSetArns": [
-        "arn:aws:ssm-incidents::111122223333:replication-set/c4bcb603-4bf9-bb3f-413c-08df53673b57"
+        "arn:aws:ssm-incidents::123456789012:replication-set/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     ]
 }
 ```
-For more information, see [Using the Incident Manager replication set](https://docs.aws.amazon.com/incident-manager/latest/userguide/replication.html) in the *Incident Manager User Guide*.
+For more information, see [Configuring replication sets and Findings in Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/general-settings.html) in the *Incident Manager User Guide*.
 +  For API details, see [ListReplicationSets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-incidents/list-replication-sets.html) in *AWS CLI Command Reference*.
 
 ### `list-response-plans`
@@ -511,7 +509,7 @@ Output:
 {
     "responsePlanSummaries": [
         {
-            "arn": "arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan",
+            "arn": "arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan",
             "displayName": "Example response plan",
             "name": "Example-Response-Plan"
         }
@@ -532,7 +530,7 @@ The following `list-tags-for-resource` example lists the tags associated with th
 
 ```
 aws ssm-incidents list-tags-for-resource \
-    --resource-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}}
+    --resource-arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}}
 ```
 Output:
 
@@ -553,11 +551,11 @@ The following code example shows how to use `list-timeline-events`.
 
 **AWS CLI**
 **To list timeline events of an incident**
-The following `command-name` example lists the timeline events of the specified incident.
+The following `list-timeline-events` example lists the timeline events of the specified incident.
 
 ```
 aws ssm-incidents list-timeline-events \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}}
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -565,46 +563,46 @@ Output:
 {
     "eventSummaries": [
         {
-            "eventId": "8cbcc889-35e1-a42d-2429-d6f100799915",
+            "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "eventTime": "2021-05-21T22:36:13.766000+00:00",
             "eventType": "SSM Incident Record Update",
             "eventUpdatedTime": "2021-05-21T22:36:13.766000+00:00",
-            "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+            "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "eventId": "a2bcc825-aab5-1787-c605-f9bb2640d85b",
+            "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "eventTime": "2021-05-21T18:58:46.443000+00:00",
             "eventType": "SSM Incident Record Update",
             "eventUpdatedTime": "2021-05-21T18:58:46.443000+00:00",
-            "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+            "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "eventId": "5abcc812-89c0-b0a8-9437-1c74223d4685",
+            "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "eventTime": "2021-05-21T18:16:59.149000+00:00",
             "eventType": "SSM Incident Record Update",
             "eventUpdatedTime": "2021-05-21T18:16:59.149000+00:00",
-            "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+            "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "eventId": "06bcc812-8820-405e-4065-8d2b14d29b92",
+            "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "eventTime": "2021-05-21T18:16:58+00:00",
             "eventType": "SSM Automation Execution Start Failure for Incident",
             "eventUpdatedTime": "2021-05-21T18:16:58.689000+00:00",
-            "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+            "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "eventId": "20bcc812-8a94-4cd7-520c-0ff742111424",
+            "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "eventTime": "2021-05-21T18:16:57+00:00",
             "eventType": "Custom Event",
             "eventUpdatedTime": "2021-05-21T18:16:59.944000+00:00",
-            "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+            "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "eventId": "c0bcc885-a41d-eb01-b4ab-9d2de193643c",
+            "eventId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "eventTime": "2020-10-01T20:30:00+00:00",
             "eventType": "Custom Event",
             "eventUpdatedTime": "2021-05-21T22:28:26.299000+00:00",
-            "incidentRecordArn": "arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+            "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
@@ -619,12 +617,12 @@ The following code example shows how to use `put-resource-policy`.
 
 **AWS CLI**
 **To share a response plan and incidents**
-The following `command-name` example adds a resource policy to the Example-Response-Plan that shares the response plan and associated incidents with the specified principal.
+The following `put-resource-policy` example adds a resource policy to the Example-Response-Plan that shares the response plan and associated incidents with the specified principal.
 
 ```
 aws ssm-incidents put-resource-policy \
-    --resource-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}} \
-    --policy "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"ExampleResourcePolciy\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::222233334444:root\"},\"Action\":[\"ssm-incidents:GetResponsePlan\",\"ssm-incidents:StartIncident\",\"ssm-incidents:UpdateIncidentRecord\",\"ssm-incidents:GetIncidentRecord\",\"ssm-incidents:CreateTimelineEvent\",\"ssm-incidents:UpdateTimelineEvent\",\"ssm-incidents:GetTimelineEvent\",\"ssm-incidents:ListTimelineEvents\",\"ssm-incidents:UpdateRelatedItems\",\"ssm-incidents:ListRelatedItems\"],\"Resource\":[\"arn:aws:ssm-incidents:*:111122223333:response-plan/Example-Response-Plan\",\"arn:aws:ssm-incidents:*:111122223333:incident-record/Example-Response-Plan/*\"]}]}"
+    --resource-arn {{"arn:aws:ssm-incidents::123456789111:response-plan/Example-Response-Plan"}} \
+    --policy "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"ExampleResourcePolciy\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789222:root\"},\"Action\":[\"ssm-incidents:GetResponsePlan\",\"ssm-incidents:StartIncident\",\"ssm-incidents:UpdateIncidentRecord\",\"ssm-incidents:GetIncidentRecord\",\"ssm-incidents:CreateTimelineEvent\",\"ssm-incidents:UpdateTimelineEvent\",\"ssm-incidents:GetTimelineEvent\",\"ssm-incidents:ListTimelineEvents\",\"ssm-incidents:UpdateRelatedItems\",\"ssm-incidents:ListRelatedItems\"],\"Resource\":[\"arn:aws:ssm-incidents:*:123456789111:response-plan/Example-Response-Plan\",\"arn:aws:ssm-incidents:*:123456789111:incident-record/Example-Response-Plan/*\"]}]}"
 ```
 Output:
 
@@ -647,13 +645,13 @@ The following `start-incident` example starts an incident using the specified re
 
 ```
 aws ssm-incidents start-incident \
-    --response-plan-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}}
+    --response-plan-arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}}
 ```
 Output:
 
 ```
 {
-    "incidentRecordArn": "arn:aws:ssm-incidents::682428703967:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"
+    "incidentRecordArn": "arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Incident creation](https://docs.aws.amazon.com/incident-manager/latest/userguide/incident-creation.html) in the *Incident Manager User Guide*.
@@ -670,7 +668,7 @@ The following `tag-resource` example tags a specified response plan with the pro
 
 ```
 aws ssm-incidents tag-resource \
-    --resource-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}} \
+    --resource-arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}} \
     --tags '{{{"group1":"1"}}}'
 ```
 This command produces no output.
@@ -688,7 +686,7 @@ The following `untag-resource` example removes the specified tags from the respo
 
 ```
 aws ssm-incidents untag-resource \
-    --resource-arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}} \
+    --resource-arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}} \
     --tag-keys '{{["group1"]}}'
 ```
 This command produces no output.
@@ -706,11 +704,11 @@ The following `update-deletion-protection` example updates the deletion protecti
 
 ```
 aws ssm-incidents update-deletion-protection \
-    --arn {{"arn:aws:ssm-incidents::111122223333:replication-set/a2bcc5c9-0f53-8047-7fef-c20749989b40"}} \
+    --arn {{"arn:aws:ssm-incidents::123456789012:replication-set/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --deletion-protected
 ```
 This command produces no output.
-For more information, see [Using the Incident Manager replication set](https://docs.aws.amazon.com/incident-manager/latest/userguide/replication.html) in the *Incident Manager User Guide*.
+For more information, see [Configuring replication sets and Findings in Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/general-settings.html) in the *Incident Manager User Guide*.
 +  For API details, see [UpdateDeletionProtection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-incidents/update-deletion-protection.html) in *AWS CLI Command Reference*.
 
 ### `update-incident-record`
@@ -720,11 +718,11 @@ The following code example shows how to use `update-incident-record`.
 
 **AWS CLI**
 **To update an incident record**
-The following `command-name` example resolves the specified incident.
+The following `update-incident-record` example resolves the specified incident.
 
 ```
 aws ssm-incidents update-incident-record \
-    --arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}} \
+    --arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --status {{"RESOLVED"}}
 ```
 This command produces no output.
@@ -738,12 +736,12 @@ The following code example shows how to use `update-related-items`.
 
 **AWS CLI**
 **To update an incidents related item**
-The following `update-related-item` example removes a related item from the specified incident record.
+The following `update-related-items` example removes a related item from the specified incident record.
 
 ```
 aws ssm-incidents update-related-items \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}} \
-    --related-items-update '{{{"itemToRemove": {"type": "OTHER", "value": {"url": "https://console.aws.amazon.com/systems-manager/opsitems/oi-8ef82158e190/workbench?region=us-east-1"}}}}}'
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --related-items-update '{{{"itemToRemove": {"type": "OTHER", "value": {"url": "https://console.aws.amazon.com/systems-manager/opsitems/oi-8ef82158e190/workbench?region=us-west-2"}}}}}'
 ```
 This command produces no output.
 For more information, see [Incident details](https://docs.aws.amazon.com/incident-manager/latest/userguide/tracking-details.html) in the *Incident Manager User Guide*.
@@ -756,15 +754,15 @@ The following code example shows how to use `update-replication-set`.
 
 **AWS CLI**
 **To update a replication set**
-The following `command-name` example deletes the us-east-2 Region from the replication set.
+The following `update-replication-set` example deletes the us-west-2 Region from the replication set.
 
 ```
 aws ssm-incidents update-replication-set \
-    --arn {{"arn:aws:ssm-incidents::111122223333:replication-set/a2bcc5c9-0f53-8047-7fef-c20749989b40"}} \
-    --actions '{{[{"deleteRegionAction": {"regionName": "us-east-2"}}]}}'
+    --arn {{"arn:aws:ssm-incidents::123456789012:replication-set/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --actions '{{[{"deleteRegionAction": {"regionName": "us-west-2"}}]}}'
 ```
 This command produces no output.
-For more information, see [Using the Incident Manager replication set](https://docs.aws.amazon.com/incident-manager/latest/userguide/replication.html) in the *Incident Manager User Guide*.
+For more information, see [Configuring replication sets and Findings in Incident Manager](https://docs.aws.amazon.com/incident-manager/latest/userguide/general-settings.html) in the *Incident Manager User Guide*.
 +  For API details, see [UpdateReplicationSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-incidents/update-replication-set.html) in *AWS CLI Command Reference*.
 
 ### `update-response-plan`
@@ -778,7 +776,7 @@ The following `update-response-plan` example removes a chat channel from the spe
 
 ```
 aws ssm-incidents update-response-plan \
-    --arn {{"arn:aws:ssm-incidents::111122223333:response-plan/Example-Response-Plan"}} \
+    --arn {{"arn:aws:ssm-incidents::123456789012:response-plan/Example-Response-Plan"}} \
     --chat-channel '{{{"empty":{}}}}'
 ```
 This command produces no output.
@@ -796,8 +794,8 @@ The following `update-timeline-event` example updates the time that the event oc
 
 ```
 aws ssm-incidents update-timeline-event \
-    --event-id {{20bcc812-8a94-4cd7-520c-0ff742111424}} \
-    --incident-record-arn {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/6ebcc812-85f5-b7eb-8b2f-283e4d844308"}} \
+    --event-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --incident-record-arn {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} \
     --event-time {{"2021-05-21T18:10:57+00:00"}}
 ```
 This command produces no output.

@@ -26,16 +26,14 @@ The following code example shows how to use `delete-alarms`.
 
 **AWS CLI**
 **To delete an alarm**
-The following example uses the `delete-alarms` command to delete the Amazon CloudWatch alarm named "myalarm":
+The following `delete-alarms` example deletes the Amazon CloudWatch alarm named "myalarm".
 
 ```
-aws cloudwatch delete-alarms --alarm-names {{myalarm}}
+aws cloudwatch delete-alarms \
+    --alarm-names {{myalarm}}
 ```
-Output:
-
-```
-This command returns to the prompt if successful.
-```
+This command produces no output.
+For more information, see [Edit or delete a CloudWatch alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Edit-CloudWatch-Alarm.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [DeleteAlarms](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/delete-alarms.html) in *AWS CLI Command Reference*.
 
 ### `delete-anomaly-detector`
@@ -121,10 +119,12 @@ The following code example shows how to use `describe-alarm-history`.
 
 **AWS CLI**
 **To retrieve history for an alarm**
-The following example uses the `describe-alarm-history` command to retrieve history for the Amazon CloudWatch alarm named "myalarm":
+The following `describe-alarm-history` example retrieves history for the Amazon CloudWatch alarm named "myalarm".
 
 ```
-aws cloudwatch describe-alarm-history --alarm-name {{"myalarm"}} --history-item-type {{StateUpdate}}
+aws cloudwatch describe-alarm-history \
+    --alarm-name {{"myalarm"}} \
+    --history-item-type {{StateUpdate}}
 ```
 Output:
 
@@ -148,6 +148,7 @@ Output:
     ]
 }
 ```
+For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [DescribeAlarmHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/describe-alarm-history.html) in *AWS CLI Command Reference*.
 
 ### `describe-alarms-for-metric`
@@ -157,10 +158,13 @@ The following code example shows how to use `describe-alarms-for-metric`.
 
 **AWS CLI**
 **To display information about alarms associated with a metric**
-The following example uses the `describe-alarms-for-metric` command to display information about any alarms associated with the Amazon EC2 CPUUtilization metric and the instance with the ID i-0c986c72.:
+The following `describe-alarms-for-metric` example displays information about any alarms associated with the Amazon EC2 CPUUtilization metric and the instance with the ID i-0c986c72.
 
 ```
-aws cloudwatch describe-alarms-for-metric --metric-name {{CPUUtilization}} --namespace {{AWS/EC2}} --dimensions {{Name=InstanceId,Value=i-0c986c72}}
+aws cloudwatch describe-alarms-for-metric \
+    --metric-name {{CPUUtilization}} \
+    --namespace {{AWS/EC2}} \
+    --dimensions {{Name=InstanceId,Value=i-0c986c72}}
 ```
 Output:
 
@@ -169,12 +173,12 @@ Output:
     "MetricAlarms": [
         {
             "EvaluationPeriods": 10,
-            "AlarmArn": "arn:aws:cloudwatch:us-east-1:111122223333:alarm:myHighCpuAlarm2",
+            "AlarmArn": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:myHighCpuAlarm2",
             "StateUpdatedTimestamp": "2013-10-30T03:03:51.479Z",
             "AlarmConfigurationUpdatedTimestamp": "2013-10-30T03:03:50.865Z",
             "ComparisonOperator": "GreaterThanOrEqualToThreshold",
             "AlarmActions": [
-                "arn:aws:sns:us-east-1:111122223333:NotifyMe"
+                "arn:aws:sns:us-west-2:123456789012:NotifyMe"
             ],
             "Namespace": "AWS/EC2",
             "AlarmDescription": "CPU usage exceeds 70 percent",
@@ -198,12 +202,12 @@ Output:
         },
         {
             "EvaluationPeriods": 2,
-            "AlarmArn": "arn:aws:cloudwatch:us-east-1:111122223333:alarm:myHighCpuAlarm",
+            "AlarmArn": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:myHighCpuAlarm",
             "StateUpdatedTimestamp": "2014-04-09T18:59:06.442Z",
             "AlarmConfigurationUpdatedTimestamp": "2014-04-09T22:26:05.958Z",
             "ComparisonOperator": "GreaterThanThreshold",
             "AlarmActions": [
-                "arn:aws:sns:us-east-1:111122223333:HighCPUAlarm"
+                "arn:aws:sns:us-west-2:123456789012:HighCPUAlarm"
             ],
             "Namespace": "AWS/EC2",
             "AlarmDescription": "CPU usage exceeds 70 percent",
@@ -228,6 +232,7 @@ Output:
     ]
 }
 ```
+For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [DescribeAlarmsForMetric](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/describe-alarms-for-metric.html) in *AWS CLI Command Reference*.
 
 ### `describe-alarms`
@@ -237,10 +242,11 @@ The following code example shows how to use `describe-alarms`.
 
 **AWS CLI**
 **To list information about an alarm**
-The following example uses the `describe-alarms` command to provide information about the alarm named "myalarm":
+The following `describe-alarms` example provides information about the alarm named "myalarm".
 
 ```
-aws cloudwatch describe-alarms --alarm-names {{"myalarm"}}
+aws cloudwatch describe-alarms \
+    --alarm-names {{"myalarm"}}
 ```
 Output:
 
@@ -249,12 +255,12 @@ Output:
     "MetricAlarms": [
         {
             "EvaluationPeriods": 2,
-            "AlarmArn": "arn:aws:cloudwatch:us-east-1:123456789012:alarm:myalarm",
+            "AlarmArn": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:myalarm",
             "StateUpdatedTimestamp": "2014-04-09T18:59:06.442Z",
             "AlarmConfigurationUpdatedTimestamp": "2012-12-27T00:49:54.032Z",
             "ComparisonOperator": "GreaterThanThreshold",
             "AlarmActions": [
-                "arn:aws:sns:us-east-1:123456789012:myHighCpuAlarm"
+                "arn:aws:sns:us-west-2:123456789012:myHighCpuAlarm"
             ],
             "Namespace": "AWS/EC2",
             "AlarmDescription": "CPU usage exceeds 70 percent",
@@ -279,6 +285,7 @@ Output:
     ]
 }
 ```
+For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [DescribeAlarms](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/describe-alarms.html) in *AWS CLI Command Reference*.
 
 ### `describe-anomaly-detectors`
@@ -370,14 +377,14 @@ Output:
             "Name": "Rule-A",
             "State": "ENABLED",
             "Schema": "CloudWatchLogRule/1",
-            "Definition": "{\n\t\"AggregateOn\": \"Count\",\n\t\"Contribution\": {\n\t\t\"Filters\": [],\n\t\t\"Keys\": [\n\t\t\t\"$.requestId\"\n\t\t]\n\t},\n\t\"LogFormat\": \"JSON\",\n\t\"Schema\": {\n\t\t\"Name\": \"CloudWatchLogRule\",\n\t\t\"Version\": 1\n\t},\n\t\"LogGroupARNs\": [\n\t\t\"arn:aws:logs:us-east-1:123456789012:log-group:demo\"\n\t]\n}",
+            "Definition": "{\n\t\"AggregateOn\": \"Count\",\n\t\"Contribution\": {\n\t\t\"Filters\": [],\n\t\t\"Keys\": [\n\t\t\t\"$.requestId\"\n\t\t]\n\t},\n\t\"LogFormat\": \"JSON\",\n\t\"Schema\": {\n\t\t\"Name\": \"CloudWatchLogRule\",\n\t\t\"Version\": 1\n\t},\n\t\"LogGroupARNs\": [\n\t\t\"arn:aws:logs:us-west-2:123456789012:log-group:demo\"\n\t]\n}",
             "ManagedRule": false
         },
         {
             "Name": "Rule-B",
             "State": "ENABLED",
             "Schema": "CloudWatchLogRule/1",
-            "Definition": "{\n\t\"AggregateOn\": \"Count\",\n\t\"Contribution\": {\n\t\t\"Filters\": [],\n\t\t\"Keys\": [\n\t\t\t\"$.requestId\"\n\t\t]\n\t},\n\t\"LogFormat\": \"JSON\",\n\t\"Schema\": {\n\t\t\"Name\": \"CloudWatchLogRule\",\n\t\t\"Version\": 1\n\t},\n\t\"LogGroupARNs\": [\n\t\t\"arn:aws:logs:us-east-1:123456789012:log-group:demo-1\"\n\t]\n}",
+            "Definition": "{\n\t\"AggregateOn\": \"Count\",\n\t\"Contribution\": {\n\t\t\"Filters\": [],\n\t\t\"Keys\": [\n\t\t\t\"$.requestId\"\n\t\t]\n\t},\n\t\"LogFormat\": \"JSON\",\n\t\"Schema\": {\n\t\t\"Name\": \"CloudWatchLogRule\",\n\t\t\"Version\": 1\n\t},\n\t\"LogGroupARNs\": [\n\t\t\"arn:aws:logs:us-west-2:123456789012:log-group:demo-1\"\n\t]\n}",
             "ManagedRule": false
         }
     ]
@@ -393,12 +400,15 @@ The following code example shows how to use `disable-alarm-actions`.
 
 **AWS CLI**
 **To disable actions for an alarm**
-The following example uses the `disable-alarm-actions` command to disable all actions for the alarm named myalarm.:
+The following `disable-alarm-actions` example disables all actions for the alarm named myalarm.
 
 ```
-aws cloudwatch disable-alarm-actions --alarm-names {{myalarm}}
+aws cloudwatch disable-alarm-actions \
+    --alarm-names {{myalarm}}
 ```
+This command produces no output.
 This command returns to the prompt if successful.
+For more information, see [Alarm actions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-actions.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [DisableAlarmActions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/disable-alarm-actions.html) in *AWS CLI Command Reference*.
 
 ### `disable-insight-rules`
@@ -431,12 +441,15 @@ The following code example shows how to use `enable-alarm-actions`.
 
 **AWS CLI**
 **To enable all actions for an alarm**
-The following example uses the `enable-alarm-actions` command to enable all actions for the alarm named myalarm.:
+The following `enable-alarm-actions` example enables all actions for the alarm named myalarm.
 
 ```
-aws cloudwatch enable-alarm-actions --alarm-names {{myalarm}}
+aws cloudwatch enable-alarm-actions \
+    --alarm-names {{myalarm}}
 ```
+This command produces no output.
 This command returns to the prompt if successful.
+For more information, see [Alarm actions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-actions.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [EnableAlarmActions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/enable-alarm-actions.html) in *AWS CLI Command Reference*.
 
 ### `enable-insight-rules`
@@ -480,7 +493,7 @@ Output:
 ```
 {
     "DashboardArn": "arn:aws:cloudwatch::123456789012:dashboard/Dashboard-A",
-    "DashboardBody": "{\"widgets\":[{\"type\":\"metric\",\"x\":0,\"y\":0,\"width\":6,\"height\":6,\"properties\":{\"view\":\"timeSeries\",\"stacked\":false,\"metrics\":[[\"AWS/EC2\",\"NetworkIn\",\"InstanceId\",\"i-0131f062232ade043\"],[\".\",\"NetworkOut\",\".\",\".\"]],\"region\":\"us-east-1\"}}]}",
+    "DashboardBody": "{\"widgets\":[{\"type\":\"metric\",\"x\":0,\"y\":0,\"width\":6,\"height\":6,\"properties\":{\"view\":\"timeSeries\",\"stacked\":false,\"metrics\":[[\"AWS/EC2\",\"NetworkIn\",\"InstanceId\",\"i-0131f062232ade043\"],[\".\",\"NetworkOut\",\".\",\".\"]],\"region\":\"us-west-2\"}}]}",
     "DashboardName": "Dashboard-A"
 }
 ```
@@ -526,8 +539,7 @@ Output:
                 }
             ]
         }
-    ],
-    "RuleAttributes": []
+    ]
 }
 ```
 For more information, see [Use Contributor Insights to analyze high-cardinality data](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html) in the *Amazon CloudWatch User Guide*.
@@ -656,11 +668,18 @@ For more information, see [Using math expressions with CloudWatch metrics](https
 The following code example shows how to use `get-metric-statistics`.
 
 **AWS CLI**
-**To get the CPU utilization per EC2 instance**
-The following example uses the `get-metric-statistics` command to get the CPU utilization for an EC2 instance with the ID i-abcdef.
+**Example 1: To get the CPU utilization per EC2 instance**
+The following `get-metric-statistics` example gets the CPU utilization for an EC2 instance with the ID i-abcdef.
 
 ```
-aws cloudwatch get-metric-statistics --metric-name {{CPUUtilization}} --start-time {{2014-04-08T23:18:00Z}} --end-time {{2014-04-09T23:18:00Z}} --period {{3600}} --namespace {{AWS/EC2}} --statistics {{Maximum}} --dimensions {{Name=InstanceId,Value=i-abcdef}}
+aws cloudwatch get-metric-statistics \
+    --metric-name {{CPUUtilization}} \
+    --start-time {{2014-04-08T23:18:00Z}} \
+    --end-time {{2014-04-09T23:18:00Z}} \
+    --period {{3600}} \
+    --namespace {{AWS/EC2}} \
+    --statistics {{Maximum}} \
+    --dimensions {{Name=InstanceId,Value=i-abcdef}}
 ```
 Output:
 
@@ -786,13 +805,40 @@ Output:
     "Label": "CPUUtilization"
 }
 ```
-**Specifying multiple dimensions**
-The following example illustrates how to specify multiple dimensions. Each dimension is specified as a Name/Value pair, with a comma between the name and the value. Multiple dimensions are separated by a space. If a single metric includes multiple dimensions, you must specify a value for every defined dimension.
-For more examples using the `get-metric-statistics` command, see Get Statistics for a Metric in the *Amazon CloudWatch Developer Guide*.
+For more information, see [Get statistics for a metric (GetMetricStatistics)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/getting-metric-statistics.html) in the *Amazon CloudWatch User Guide*.
+**Example 2: To get statistics for a metric with multiple dimensions**
+The following `get-metric-statistics` example illustrates how to specify multiple dimensions. Each dimension is specified as a Name/Value pair, with a comma between the name and the value. Multiple dimensions are separated by a space. If a single metric includes multiple dimensions, you must specify a value for every defined dimension.
 
 ```
-aws cloudwatch get-metric-statistics --metric-name {{Buffers}} --namespace {{MyNameSpace}} --dimensions {{Name=InstanceID,Value=i-abcdef}} {{Name=InstanceType,Value=m1.small}} --start-time {{2016-10-15T04:00:00Z}} --end-time {{2016-10-19T07:00:00Z}} --statistics {{Average}} --period {{60}}
+aws cloudwatch get-metric-statistics \
+    --metric-name {{Buffers}} \
+    --namespace {{MyNameSpace}} \
+    --dimensions {{Name=InstanceID,Value=i-abcdef}} {{Name=InstanceType,Value=m1.small}} \
+    --start-time {{2016-10-15T04:00:00Z}} \
+    --end-time {{2016-10-19T07:00:00Z}} \
+    --statistics {{Average}} \
+    --period {{60}}
 ```
+Output:
+
+```
+{
+    "Label": "Buffers",
+    "Datapoints": [
+        {
+            "Timestamp": "2016-10-15T04:00:00Z",
+            "Average": 231434333.0,
+            "Unit": "Bytes"
+        },
+        {
+            "Timestamp": "2016-10-15T04:01:00Z",
+            "Average": 231434333.0,
+            "Unit": "Bytes"
+        }
+    ]
+}
+```
+For more information, see [Get statistics for a metric (GetMetricStatistics)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/getting-metric-statistics.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [GetMetricStatistics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/get-metric-statistics.html) in *AWS CLI Command Reference*.
 
 ### `get-metric-stream`
@@ -812,9 +858,9 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:cloudwatch:us-east-1:123456789012:metric-stream/QuickFull-GuaFbs",
+    "Arn": "arn:aws:cloudwatch:us-west-2:123456789012:metric-stream/QuickFull-GuaFbs",
     "Name": "QuickFull-GuaFbs",
-    "FirehoseArn": "arn:aws:firehose:us-east-1:123456789012:deliverystream/MetricStreams-QuickFull-GuaFbs-WnySbECG",
+    "FirehoseArn": "arn:aws:firehose:us-west-2:123456789012:deliverystream/MetricStreams-QuickFull-GuaFbs-WnySbECG",
     "RoleArn": "arn:aws:iam::123456789012:role/service-role/MetricStreams-FirehosePutRecords-JN10W9B3",
     "State": "running",
     "CreationDate": "2024-10-11T18:48:59.187000+00:00",
@@ -842,6 +888,7 @@ aws cloudwatch get-metric-widget-image \
     --output {{text}} {{|}} {{base64}} --decode {{>}} {{image.png}}
 ```
 This command produces no output.
+For more information, see [Graphing metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/graph_metrics.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [GetMetricWidgetImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/get-metric-widget-image.html) in *AWS CLI Command Reference*.
 
 ### `list-dashboards`
@@ -897,11 +944,11 @@ Output:
 {
     "Entries": [
         {
-            "Arn": "arn:aws:cloudwatch:us-east-1:123456789012:metric-stream/QuickFull-GuaFbs",
+            "Arn": "arn:aws:cloudwatch:us-west-2:123456789012:metric-stream/QuickFull-GuaFbs",
             "CreationDate": "2024-10-11T18:48:59.187000+00:00",
             "LastUpdateDate": "2024-10-11T18:48:59.187000+00:00",
             "Name": "QuickFull-GuaFbs",
-            "FirehoseArn": "arn:aws:firehose:us-east-1:123456789012:deliverystream/MetricStreams-QuickFull-GuaFbs-WnySbECG",
+            "FirehoseArn": "arn:aws:firehose:us-west-2:123456789012:deliverystream/MetricStreams-QuickFull-GuaFbs-WnySbECG",
             "State": "running",
             "OutputFormat": "json"
         }
@@ -1012,6 +1059,7 @@ Output:
     ]
 }
 ```
+For more information, see [View available metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/viewing_metrics_with_cloudwatch.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [ListMetrics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/list-metrics.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1025,7 +1073,7 @@ The following `list-tags-for-resource` example lists all the tags associated wit
 
 ```
 aws cloudwatch list-tags-for-resource \
-    --resource-arn {{arn:aws:cloudwatch:us-east-1:123456789012:alarm:demo}}
+    --resource-arn {{arn:aws:cloudwatch:us-west-2:123456789012:alarm:demo}}
 ```
 Output:
 
@@ -1078,7 +1126,7 @@ The following `put-composite-alarm` example creates a composite alarm named `Pro
 aws cloudwatch put-composite-alarm \
     --alarm-name {{ProdAlarm}} \
     --alarm-rule {{"ALARM(CPUUtilizationTooHigh) AND ALARM(MemUsageTooHigh)"}} \
-    --alarm-actions {{arn:aws:sns:us-east-1:123456789012:demo}} \
+    --alarm-actions {{arn:aws:sns:us-west-2:123456789012:demo}} \
     --actions-enabled
 ```
 This command produces no output.
@@ -1097,7 +1145,7 @@ The following `put-dashboard` example creates a dashboard named `Dashboard-A` in
 ```
 aws cloudwatch put-dashboard \
     --dashboard-name {{Dashboard-A}} \
-    --dashboard-body '{{{"widgets":[{"height":6,"width":6,"y":0,"x":0,"type":"metric","properties":{"view":"timeSeries","stacked":false,"metrics":[["Namespace","CPUUtilization","Environment","Prod","Type","App"]],"region":"us-east-1"}}]}}}'
+    --dashboard-body '{{{"widgets":[{"height":6,"width":6,"y":0,"x":0,"type":"metric","properties":{"view":"timeSeries","stacked":false,"metrics":[["Namespace","CPUUtilization","Environment","Prod","Type","App"]],"region":"us-west-2"}}]}}}'
 ```
 Output:
 
@@ -1158,19 +1206,45 @@ For more information, see [Create a Contributor Insights rule in CloudWatch](htt
 The following code example shows how to use `put-metric-alarm`.
 
 **AWS CLI**
-**To send an Amazon Simple Notification Service email message when CPU utilization exceeds 70 percent**
-The following example uses the `put-metric-alarm` command to send an Amazon Simple Notification Service email message when CPU utilization exceeds 70 percent:
+**Example 1: To send an Amazon Simple Notification Service email message when CPU utilization exceeds 70 percent**
+The following `put-metric-alarm` example sends an Amazon Simple Notification Service email message when CPU utilization exceeds 70 percent.
 
 ```
-aws cloudwatch put-metric-alarm --alarm-name {{cpu-mon}} --alarm-description {{"Alarm when CPU exceeds 70 percent"}} --metric-name {{CPUUtilization}} --namespace {{AWS/EC2}} --statistic {{Average}} --period {{300}} --threshold {{70}} --comparison-operator {{GreaterThanThreshold}}  --dimensions {{"Name=InstanceId,Value=i-12345678"}} --evaluation-periods {{2}} --alarm-actions {{arn:aws:sns:us-east-1:111122223333:MyTopic}} --unit {{Percent}}
+aws cloudwatch put-metric-alarm \
+    --alarm-name {{cpu-mon}} \
+    --alarm-description {{"Alarm when CPU exceeds 70 percent"}} \
+    --metric-name {{CPUUtilization}} \
+    --namespace {{AWS/EC2}} \
+    --statistic {{Average}} \
+    --period {{300}} \
+    --threshold {{70}} \
+    --comparison-operator {{GreaterThanThreshold}} \
+    --dimensions {{"Name=InstanceId,Value=i-12345678"}} \
+    --evaluation-periods {{2}} \
+    --alarm-actions {{arn:aws:sns:us-west-2:123456789012:MyTopic}} \
+    --unit {{Percent}}
 ```
-This command returns to the prompt if successful. If an alarm with the same name already exists, it will be overwritten by the new alarm.
-**To specify multiple dimensions**
-The following example illustrates how to specify multiple dimensions. Each dimension is specified as a Name/Value pair, with a comma between the name and the value. Multiple dimensions are separated by a space:
+This command produces no output.
+If an alarm with the same name already exists, it will be overwritten by the new alarm.
+For more information, see [Create a CPU usage alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_AlarmAtThresholdEC2.html) in the *Amazon CloudWatch User Guide*.
+**Example 2: To specify multiple dimensions**
+The following `put-metric-alarm` example illustrates how to specify multiple dimensions. Each dimension is specified as a Name/Value pair, with a comma between the name and the value. Multiple dimensions are separated by a space.
 
 ```
-aws cloudwatch put-metric-alarm --alarm-name {{"Default_Test_Alarm3"}} --alarm-description {{"The default example alarm"}} --namespace {{"CW EXAMPLE METRICS"}} --metric-name {{Default_Test}} --statistic {{Average}} --period {{60}} --evaluation-periods {{3}} --threshold {{50}} --comparison-operator {{GreaterThanOrEqualToThreshold}} --dimensions {{Name=key1,Value=value1}} {{Name=key2,Value=value2}}
+aws cloudwatch put-metric-alarm \
+    --alarm-name {{"Default_Test_Alarm3"}} \
+    --alarm-description {{"The default example alarm"}} \
+    --namespace {{"CW EXAMPLE METRICS"}} \
+    --metric-name {{Default_Test}} \
+    --statistic {{Average}} \
+    --period {{60}} \
+    --evaluation-periods {{3}} \
+    --threshold {{50}} \
+    --comparison-operator {{GreaterThanOrEqualToThreshold}} \
+    --dimensions {{Name=key1,Value=value1}} {{Name=key2,Value=value2}}
 ```
+This command produces no output.
+For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [PutMetricAlarm](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/put-metric-alarm.html) in *AWS CLI Command Reference*.
 
 ### `put-metric-data`
@@ -1179,32 +1253,41 @@ aws cloudwatch put-metric-alarm --alarm-name {{"Default_Test_Alarm3"}} --alarm-d
 The following code example shows how to use `put-metric-data`.
 
 **AWS CLI**
-**To publish a custom metric to Amazon CloudWatch**
-The following example uses the `put-metric-data` command to publish a custom metric to Amazon CloudWatch:
+**Example 1: To publish a custom metric to Amazon CloudWatch**
+The following `put-metric-data` example publishes a custom metric to Amazon CloudWatch.
 
 ```
-aws cloudwatch put-metric-data --namespace {{"Usage Metrics"}} --metric-data {{file://metric.json}}
+aws cloudwatch put-metric-data \
+    --namespace {{"Usage Metrics"}} \
+    --metric-data {{file://metric.json}}
 ```
-The values for the metric itself are stored in the JSON file, `metric.json`.
-Here are the contents of that file:
+Contents of `metric.json`:
 
 ```
 [
-  {
-    "MetricName": "New Posts",
-    "Timestamp": "Wednesday, June 12, 2013 8:28:20 PM",
-    "Value": 0.50,
-    "Unit": "Count"
-  }
+    {
+        "MetricName": "New Posts",
+        "Timestamp": "Wednesday, June 12, 2013 8:28:20 PM",
+        "Value": 0.50,
+        "Unit": "Count"
+    }
 ]
 ```
-For more information, see Publishing Custom Metrics in the *Amazon CloudWatch Developer Guide*.
-**To specify multiple dimensions**
-The following example illustrates how to specify multiple dimensions. Each dimension is specified as a Name=Value pair. Multiple dimensions are separated by a comma.:
+This command produces no output.
+For more information, see [Publish custom metrics (PutMetricData / EMF)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/publishingMetrics.html) in the *Amazon CloudWatch User Guide*.
+**Example 2: To specify multiple dimensions**
+The following `put-metric-data` example illustrates how to specify multiple dimensions. Each dimension is specified as a Name=Value pair. Multiple dimensions are separated by a comma.
 
 ```
-aws cloudwatch put-metric-data --metric-name {{Buffers}} --namespace {{MyNameSpace}} --unit {{Bytes}} --value {{231434333}} --dimensions {{InstanceID=1-23456789,InstanceType=m1.small}}
+aws cloudwatch put-metric-data \
+    --metric-name {{Buffers}} \
+    --namespace {{MyNameSpace}} \
+    --unit {{Bytes}} \
+    --value {{231434333}} \
+    --dimensions {{InstanceID=1-23456789,InstanceType=m1.small}}
 ```
+This command produces no output.
+For more information, see [Metrics concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [PutMetricData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/put-metric-data.html) in *AWS CLI Command Reference*.
 
 ### `put-metric-stream`
@@ -1219,7 +1302,7 @@ The following `put-metric-stream` example creates a metric stream named `QuickFu
 ```
 aws cloudwatch put-metric-stream \
     --name {{QuickFull-GuaFbs}} \
-    --firehose-arn {{arn:aws:firehose:us-east-1:123456789012:deliverystream/MetricStreams-QuickFull-GuaFbs-WnySbECG}} \
+    --firehose-arn {{arn:aws:firehose:us-west-2:123456789012:deliverystream/MetricStreams-QuickFull-GuaFbs-WnySbECG}} \
     --role-arn {{arn:aws:iam::123456789012:role/service-role/MetricStreams-FirehosePutRecords-JN10W9B3}} \
     --output-format {{json}} \
     --no-include-linked-accounts-metrics
@@ -1228,7 +1311,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:cloudwatch:us-east-1:123456789012:metric-stream/QuickFull-GuaFbs"
+    "Arn": "arn:aws:cloudwatch:us-west-2:123456789012:metric-stream/QuickFull-GuaFbs"
 }
 ```
 For more information, see [Set up a metric stream](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-metric-streams-setup.html) in the *Amazon CloudWatch User Guide*.
@@ -1241,12 +1324,17 @@ The following code example shows how to use `set-alarm-state`.
 
 **AWS CLI**
 **To temporarily change the state of an alarm**
-The following example uses the `set-alarm-state` command to temporarily change the state of an Amazon CloudWatch alarm named "myalarm" and set it to the ALARM state for testing purposes:
+The following `set-alarm-state` example temporarily changes the state of an Amazon CloudWatch alarm named "myalarm" and sets it to the ALARM state for testing purposes.
 
 ```
-aws cloudwatch set-alarm-state --alarm-name {{"myalarm"}} --state-value {{ALARM}} --state-reason {{"testing purposes"}}
+aws cloudwatch set-alarm-state \
+    --alarm-name {{"myalarm"}} \
+    --state-value {{ALARM}} \
+    --state-reason {{"testing purposes"}}
 ```
+This command produces no output.
 This command returns to the prompt if successful.
+For more information, see [Using Amazon CloudWatch alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Alarms.html) in the *Amazon CloudWatch User Guide*.
 +  For API details, see [SetAlarmState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudwatch/set-alarm-state.html) in *AWS CLI Command Reference*.
 
 ### `start-metric-streams`
@@ -1294,7 +1382,7 @@ The following `tag-resource` example adds 2 tags to the cloudwatch alarm named `
 
 ```
 aws cloudwatch tag-resource \
-    --resource-arn {{arn:aws:cloudwatch:us-east-1:123456789012:alarm:demo}} \
+    --resource-arn {{arn:aws:cloudwatch:us-west-2:123456789012:alarm:demo}} \
     --tags {{Key=stack,Value=Production}} {{Key=team,Value=Devops}}
 ```
 This command produces no output.
@@ -1312,7 +1400,7 @@ The following `untag-resource` example removes 2 tags from the cloudwatch alarm 
 
 ```
 aws cloudwatch untag-resource \
-    --resource-arn {{arn:aws:cloudwatch:us-east-1:123456789012:alarm:demo}} \
+    --resource-arn {{arn:aws:cloudwatch:us-west-2:123456789012:alarm:demo}} \
     --tag-keys {{stack}} {{team}}
 ```
 This command produces no output.

@@ -17,7 +17,8 @@ The following code examples show how to use `BatchGetOnPremisesInstances`.
 The following `batch-get-on-premises-instances` example gets information about two on-premises instances.
 
 ```
-aws deploy batch-get-on-premises-instances --instance-names {{AssetTag12010298EX}} {{AssetTag23121309EX}}
+aws deploy batch-get-on-premises-instances \
+    --instance-names {{AssetTag12010298EX}} {{AssetTag23121309EX}}
 ```
 Output:
 
@@ -51,6 +52,7 @@ Output:
     ]
 }
 ```
+For more information, see [Get information about multiple on-premises instances](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-view-details-multiple.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ------

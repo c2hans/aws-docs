@@ -26,11 +26,11 @@ The following code example shows how to use `create-budget`.
 
 **AWS CLI**
 **To create a Cost and Usage budget**
-The following `create-budget` command creates a Cost and Usage budget.
+The following `create-budget` example creates a Cost and Usage budget.
 
 ```
 aws budgets create-budget \
-    --account-id {{111122223333}} \
+    --account-id {{123456789012}} \
     --budget {{file://budget.json}} \
     --notifications-with-subscribers {{file://notifications-with-subscribers.json}}
 ```
@@ -69,6 +69,7 @@ Contents of `budget.json`:
     "TimeUnit": "MONTHLY"
 }
 ```
+This command produces no output.
 Contents of `notifications-with-subscribers.json`:
 
 ```
@@ -89,6 +90,7 @@ Contents of `notifications-with-subscribers.json`:
     }
 ]
 ```
+For more information, see [Creating a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [CreateBudget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/create-budget.html) in *AWS CLI Command Reference*.
 
 ### `create-notification`
@@ -98,12 +100,17 @@ The following code example shows how to use `create-notification`.
 
 **AWS CLI**
 **To create a notification for the specified Cost and Usage budget**
-This example creates a notification for the specified Cost and Usage budget.
-Command:
+The following `create-notification` example creates a notification for the specified Cost and Usage budget.
 
 ```
-aws budgets create-notification --account-id {{111122223333}} --budget-name {{"Example Budget"}} --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} --subscriber {{SubscriptionType=EMAIL,Address=example@example.com}}
+aws budgets create-notification \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} \
+    --subscriber {{SubscriptionType=EMAIL,Address=example@example.com}}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [CreateNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/create-notification.html) in *AWS CLI Command Reference*.
 
 ### `create-subscriber`
@@ -113,12 +120,17 @@ The following code example shows how to use `create-subscriber`.
 
 **AWS CLI**
 **To create a subscriber for a notification associated with a Cost and Usage budget**
-This example creates a subscriber for the specified notification.
-Command:
+The following `create-subscriber` example creates a subscriber for the specified notification.
 
 ```
-aws budgets create-subscriber --account-id {{111122223333}} --budget-name {{"Example Budget"}} --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} --subscriber {{SubscriptionType=EMAIL,Address=example@example.com}}
+aws budgets create-subscriber \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} \
+    --subscriber {{SubscriptionType=EMAIL,Address=example@example.com}}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [CreateSubscriber](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/create-subscriber.html) in *AWS CLI Command Reference*.
 
 ### `delete-budget`
@@ -128,12 +140,15 @@ The following code example shows how to use `delete-budget`.
 
 **AWS CLI**
 **To delete a Cost and Usage budget**
-This example deletes the specified Cost and Usage budget.
-Command:
+The following `delete-budget` example deletes the specified Cost and Usage budget.
 
 ```
-aws budgets delete-budget --account-id {{111122223333}} --budget-name {{"Example Budget"}}
+aws budgets delete-budget \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}}
 ```
+This command produces no output.
+For more information, see [Deleting a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-delete.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DeleteBudget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/delete-budget.html) in *AWS CLI Command Reference*.
 
 ### `delete-notification`
@@ -143,12 +158,16 @@ The following code example shows how to use `delete-notification`.
 
 **AWS CLI**
 **To delete a notification from a budget**
-This example deletes the specified notification from the specified budget.
-Command:
+The following `delete-notification` example deletes the specified notification from the specified budget.
 
 ```
-aws budgets delete-notification --account-id {{111122223333}} --budget-name {{"Example Budget"}} --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}}
+aws budgets delete-notification \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DeleteNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/delete-notification.html) in *AWS CLI Command Reference*.
 
 ### `delete-subscriber`
@@ -158,12 +177,17 @@ The following code example shows how to use `delete-subscriber`.
 
 **AWS CLI**
 **To delete a subscriber from a notification**
-This example deletes the specified subscriber from the specified notification.
-Command:
+The following `delete-subscriber` example deletes the specified subscriber from the specified notification.
 
 ```
-aws budgets delete-subscriber --account-id {{111122223333}} --budget-name {{"Example Budget"}} --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} --subscriber {{SubscriptionType=EMAIL,Address=example@example.com}}
+aws budgets delete-subscriber \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} \
+    --subscriber {{SubscriptionType=EMAIL,Address=example@example.com}}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DeleteSubscriber](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/delete-subscriber.html) in *AWS CLI Command Reference*.
 
 ### `describe-budget`
@@ -173,59 +197,61 @@ The following code example shows how to use `describe-budget`.
 
 **AWS CLI**
 **To retrieve a budget associated with an account**
-This example retrieves the specified Cost and Usage budget.
-Command:
+The following `describe-budget` example retrieves the specified Cost and Usage budget.
 
 ```
-aws budgets describe-budget --account-id {{111122223333}} --budget-name {{"Example Budget"}}
+aws budgets describe-budget \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}}
 ```
 Output:
 
 ```
 {
-   "Budget": {
-       "CalculatedSpend": {
-           "ForecastedSpend": {
-               "Amount": "2641.54800000000022919266484677791595458984375",
-               "Unit": "USD"
-           },
-           "ActualSpend": {
-               "Amount": "604.4560000000000172803993336856365203857421875",
-               "Unit": "USD"
-           }
-       },
-       "BudgetType": "COST",
-       "BudgetLimit": {
-           "Amount": "100",
-           "Unit": "USD"
-       },
-       "BudgetName": "Example Budget",
-       "CostTypes": {
-           "IncludeOtherSubscription": true,
-           "IncludeUpfront": true,
-           "IncludeRefund": true,
-           "UseBlended": false,
-           "IncludeDiscount": true,
-           "UseAmortized": false,
-           "IncludeTax": true,
-           "IncludeCredit": true,
-           "IncludeSupport": true,
-           "IncludeRecurring": true,
-           "IncludeSubscription": true
-       },
-       "TimeUnit": "MONTHLY",
-       "TimePeriod": {
-           "Start": 1477958399.0,
-           "End": 3706473600.0
-       },
-       "CostFilters": {
-           "AZ": [
-               "us-east-1"
-           ]
-       }
-   }
+    "Budget": {
+        "CalculatedSpend": {
+            "ForecastedSpend": {
+                "Amount": "2641.54800000000022919266484677791595458984375",
+                "Unit": "USD"
+            },
+            "ActualSpend": {
+                "Amount": "604.4560000000000172803993336856365203857421875",
+                "Unit": "USD"
+            }
+        },
+        "BudgetType": "COST",
+        "BudgetLimit": {
+            "Amount": "100",
+            "Unit": "USD"
+        },
+        "BudgetName": "Example Budget",
+        "CostTypes": {
+            "IncludeOtherSubscription": true,
+            "IncludeUpfront": true,
+            "IncludeRefund": true,
+            "UseBlended": false,
+            "IncludeDiscount": true,
+            "UseAmortized": false,
+            "IncludeTax": true,
+            "IncludeCredit": true,
+            "IncludeSupport": true,
+            "IncludeRecurring": true,
+            "IncludeSubscription": true
+        },
+        "TimeUnit": "MONTHLY",
+        "TimePeriod": {
+            "Start": 1477958399.0,
+            "End": 3706473600.0
+        },
+        "CostFilters": {
+            "AZ": [
+                "us-west-2"
+            ]
+        }
+    }
 }
 ```
+For more information, see [Viewing your budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-view.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DescribeBudget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/describe-budget.html) in *AWS CLI Command Reference*.
 
 ### `describe-budgets`
@@ -235,61 +261,63 @@ The following code example shows how to use `describe-budgets`.
 
 **AWS CLI**
 **To retrieve the budgets associated with an account**
-This example retrieves the Cost and Usage budgets for an account.
-Command:
+The following `describe-budgets` example retrieves the Cost and Usage budgets for an account.
 
 ```
-aws budgets describe-budgets --account-id {{111122223333}} --max-results {{20}}
+aws budgets describe-budgets \
+    --account-id {{123456789012}} \
+    --max-results {{20}}
 ```
 Output:
 
 ```
 {
-   "Budgets": [
-       {
-           "CalculatedSpend": {
-               "ForecastedSpend": {
-                   "Amount": "2641.54800000000022919266484677791595458984375",
-                   "Unit": "USD"
-               },
-               "ActualSpend": {
-                   "Amount": "604.4560000000000172803993336856365203857421875",
-                   "Unit": "USD"
-               }
-           },
-           "BudgetType": "COST",
-           "BudgetLimit": {
-               "Amount": "100",
-               "Unit": "USD"
-           },
-           "BudgetName": "Example Budget",
-           "CostTypes": {
-               "IncludeOtherSubscription": true,
-               "IncludeUpfront": true,
-               "IncludeRefund": true,
-               "UseBlended": false,
-               "IncludeDiscount": true,
-               "UseAmortized": false,
-               "IncludeTax": true,
-               "IncludeCredit": true,
-               "IncludeSupport": true,
-               "IncludeRecurring": true,
-               "IncludeSubscription": true
-           },
-           "TimeUnit": "MONTHLY",
-           "TimePeriod": {
-               "Start": 1477958399.0,
-               "End": 3706473600.0
-           },
-           "CostFilters": {
-               "AZ": [
-                   "us-east-1"
-               ]
-           }
-       }
-   ]
+    "Budgets": [
+        {
+            "CalculatedSpend": {
+                "ForecastedSpend": {
+                    "Amount": "2641.54800000000022919266484677791595458984375",
+                    "Unit": "USD"
+                },
+                "ActualSpend": {
+                    "Amount": "604.4560000000000172803993336856365203857421875",
+                    "Unit": "USD"
+                }
+            },
+            "BudgetType": "COST",
+            "BudgetLimit": {
+                "Amount": "100",
+                "Unit": "USD"
+            },
+            "BudgetName": "Example Budget",
+            "CostTypes": {
+                "IncludeOtherSubscription": true,
+                "IncludeUpfront": true,
+                "IncludeRefund": true,
+                "UseBlended": false,
+                "IncludeDiscount": true,
+                "UseAmortized": false,
+                "IncludeTax": true,
+                "IncludeCredit": true,
+                "IncludeSupport": true,
+                "IncludeRecurring": true,
+                "IncludeSubscription": true
+            },
+            "TimeUnit": "MONTHLY",
+            "TimePeriod": {
+                "Start": 1477958399.0,
+                "End": 3706473600.0
+            },
+            "CostFilters": {
+                "AZ": [
+                    "us-west-2"
+                ]
+            }
+        }
+    ]
 }
 ```
+For more information, see [Viewing your budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-view.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DescribeBudgets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/describe-budgets.html) in *AWS CLI Command Reference*.
 
 ### `describe-notifications-for-budget`
@@ -299,25 +327,28 @@ The following code example shows how to use `describe-notifications-for-budget`.
 
 **AWS CLI**
 **To retrieve the notifications for a budget**
-This example retrieves the notifications for a Cost and Usage budget.
-Command:
+The following `describe-notifications-for-budget` example retrieves the notifications for a Cost and Usage budget.
 
 ```
-aws budgets describe-notifications-for-budget --account-id {{111122223333}} --budget-name {{"Example Budget"}} --max-results {{5}}
+aws budgets describe-notifications-for-budget \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --max-results {{5}}
 ```
 Output:
 
 ```
 {
-   "Notifications": [
-       {
-           "Threshold": 80.0,
-           "ComparisonOperator": "GREATER_THAN",
-           "NotificationType": "ACTUAL"
-       }
-   ]
+    "Notifications": [
+        {
+            "Threshold": 80.0,
+            "ComparisonOperator": "GREATER_THAN",
+            "NotificationType": "ACTUAL"
+        }
+    ]
 }
 ```
+For more information, see [Viewing your budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-view.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DescribeNotificationsForBudget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/describe-notifications-for-budget.html) in *AWS CLI Command Reference*.
 
 ### `describe-subscribers-for-notification`
@@ -327,28 +358,32 @@ The following code example shows how to use `describe-subscribers-for-notificati
 
 **AWS CLI**
 **To retrieve the subscribers for a budget notification**
-This example retrieves the subscribers for a Cost and Usage budget notification.
-Command:
+The following `describe-subscribers-for-notification` example retrieves the subscribers for a Cost and Usage budget notification.
 
 ```
-aws budgets describe-subscribers-for-notification --account-id {{111122223333}} --budget-name {{"Example Budget"}} --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} --max-results {{5}}
+aws budgets describe-subscribers-for-notification \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} \
+    --max-results {{5}}
 ```
 Output:
 
 ```
 {
-   "Subscribers": [
-       {
-           "SubscriptionType": "EMAIL",
-           "Address": "example2@example.com"
-       },
-       {
-           "SubscriptionType": "EMAIL",
-           "Address": "example@example.com"
-       }
-   ]
+    "Subscribers": [
+        {
+            "SubscriptionType": "EMAIL",
+            "Address": "example2@example.com"
+        },
+        {
+            "SubscriptionType": "EMAIL",
+            "Address": "example@example.com"
+        }
+    ]
 }
 ```
+For more information, see [Viewing your budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-view.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [DescribeSubscribersForNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/describe-subscribers-for-notification.html) in *AWS CLI Command Reference*.
 
 ### `update-budget`
@@ -358,45 +393,50 @@ The following code example shows how to use `update-budget`.
 
 **AWS CLI**
 **To replace a budget for a Cost and Usage budget**
-This example replaces a Cost and Usage budget with a new budget.
-Command:
+The following `update-budget` example replaces a Cost and Usage budget with a new budget.
 
 ```
-aws budgets update-budget --account-id {{111122223333}} --new-budget {{file://new-budget.json}}
+aws budgets update-budget \
+    --account-id {{123456789012}} \
+    --new-budget {{file://new-budget.json}}
 ```
-new-budget.json:
+Contents of `new-budget.json`:
 
 ```
 {
     "BudgetLimit": {
-       "Amount": "100",
-       "Unit": "USD"
+        "Amount": "100",
+        "Unit": "USD"
     },
     "BudgetName": "Example Budget",
     "BudgetType": "COST",
     "CostFilters": {
-       "AZ" : [ "us-east-1" ]
+        "AZ": [
+            "us-west-2"
+        ]
     },
     "CostTypes": {
-       "IncludeCredit": false,
-       "IncludeDiscount": true,
-       "IncludeOtherSubscription": true,
-       "IncludeRecurring": true,
-       "IncludeRefund": true,
-       "IncludeSubscription": true,
-       "IncludeSupport": true,
-       "IncludeTax": true,
-       "IncludeUpfront": true,
-       "UseBlended": false,
-       "UseAmortized": true
+        "IncludeCredit": false,
+        "IncludeDiscount": true,
+        "IncludeOtherSubscription": true,
+        "IncludeRecurring": true,
+        "IncludeRefund": true,
+        "IncludeSubscription": true,
+        "IncludeSupport": true,
+        "IncludeTax": true,
+        "IncludeUpfront": true,
+        "UseBlended": false,
+        "UseAmortized": true
     },
     "TimePeriod": {
-       "Start": 1477958399,
-       "End": 3706473600
+        "Start": 1477958399,
+        "End": 3706473600
     },
     "TimeUnit": "MONTHLY"
- }
+}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [UpdateBudget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/update-budget.html) in *AWS CLI Command Reference*.
 
 ### `update-notification`
@@ -406,12 +446,17 @@ The following code example shows how to use `update-notification`.
 
 **AWS CLI**
 **To replace a notification for a Cost and Usage budget**
-This example replaces an 80% notification for a Cost and Usage budget with a 90% notification.
-Command:
+The following `update-notification` example replaces an 80% notification for a Cost and Usage budget with a 90% notification.
 
 ```
-aws budgets update-notification --account-id {{111122223333}} --budget-name {{"Example Budget"}} --old-notification  {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} --new-notification  {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=90,ThresholdType=PERCENTAGE}}
+aws budgets update-notification \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --old-notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} \
+    --new-notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=90,ThresholdType=PERCENTAGE}}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [UpdateNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/update-notification.html) in *AWS CLI Command Reference*.
 
 ### `update-subscriber`
@@ -421,10 +466,16 @@ The following code example shows how to use `update-subscriber`.
 
 **AWS CLI**
 **To replace a subscriber for a Cost and Usage budget**
-This example replaces the subscriber for a Cost and Usage budget.
-Command:
+The following `update-subscriber` example replaces the subscriber for a Cost and Usage budget.
 
 ```
-aws budgets update-subscriber --account-id {{111122223333}} --budget-name {{"Example Budget"}} --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} --old-subscriber {{SubscriptionType=EMAIL,Address=example@example.com}} --new-subscriber {{SubscriptionType=EMAIL,Address=example2@example.com}}
+aws budgets update-subscriber \
+    --account-id {{123456789012}} \
+    --budget-name {{"Example Budget"}} \
+    --notification {{NotificationType=ACTUAL,ComparisonOperator=GREATER_THAN,Threshold=80,ThresholdType=PERCENTAGE}} \
+    --old-subscriber {{SubscriptionType=EMAIL,Address=example@example.com}} \
+    --new-subscriber {{SubscriptionType=EMAIL,Address=example2@example.com}}
 ```
+This command produces no output.
+For more information, see [Editing a budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-edit.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [UpdateSubscriber](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/budgets/update-subscriber.html) in *AWS CLI Command Reference*.

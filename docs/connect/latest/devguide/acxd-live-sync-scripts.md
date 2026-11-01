@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-live-sync-scripts.html
 ---
 
-# Live Sync Scripts
+# Live Sync scripts
 <a name="acxd-live-sync-scripts"></a>
 
 **Topics**

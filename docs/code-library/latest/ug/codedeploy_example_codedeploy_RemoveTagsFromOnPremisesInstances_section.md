@@ -22,6 +22,7 @@ aws deploy remove-tags-from-on-premises-instances \
     --tags {{Key=Name,Value=CodeDeployDemo-OnPrem}}
 ```
 This command produces no output.
+For more information, see [Manually remove on-premises instance tags from an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-remove-tags.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [RemoveTagsFromOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/remove-tags-from-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ------

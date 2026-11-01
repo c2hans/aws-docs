@@ -51,6 +51,7 @@ Output:
     ]
 }
 ```
+For more information, see [View application revision details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListApplicationRevisions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-application-revisions.html) in *AWS CLI Command Reference*.
 
 ------

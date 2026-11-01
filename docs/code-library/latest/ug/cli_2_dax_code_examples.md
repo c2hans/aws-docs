@@ -70,7 +70,7 @@ Output:
     }
 }
 ```
-For more information, see [Step 3: Create a DAX Cluster](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.cli.create-cluster.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Creating a DAX cluster using the AWS CLI](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.cli.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [CreateCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dax/create-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-parameter-group`
@@ -80,7 +80,7 @@ The following code example shows how to use `create-parameter-group`.
 
 **AWS CLI**
 **To create a parameter group**
-The following `` create-parameter-group`` example creates a parameter group with the specified settings.
+The following `create-parameter-group` example creates a parameter group with the specified settings.
 
 ```
 aws dax create-parameter-group \
@@ -134,7 +134,7 @@ Output:
     }
 }
 ```
-For more information, see [Step 2: Create a Subnet Group](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.cli.create-subnet-group.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Creating a DAX cluster using the AWS CLI](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.cli.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [CreateSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dax/create-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `decrease-replication-factor`

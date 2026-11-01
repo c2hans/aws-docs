@@ -18,11 +18,11 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To describe a compute environment**
-This example describes the P2OnDemand compute environment.
-Command:
+The following `describe-compute-environments` example describes the P2OnDemand compute environment.
 
 ```
-aws batch describe-compute-environments --compute-environments {{P2OnDemand}}
+aws batch describe-compute-environments \
+    --compute-environments {{P2OnDemand}}
 ```
 Output:
 
@@ -31,8 +31,8 @@ Output:
     "computeEnvironments": [
         {
             "status": "VALID",
-            "serviceRole": "arn:aws:iam::012345678910:role/AWSBatchServiceRole",
-            "computeEnvironmentArn": "arn:aws:batch:us-east-1:012345678910:compute-environment/P2OnDemand",
+            "serviceRole": "arn:aws:iam::123456789012:role/AWSBatchServiceRole",
+            "computeEnvironmentArn": "arn:aws:batch:us-west-2:123456789012:compute-environment/P2OnDemand",
             "computeResources": {
                 "subnets": [
                     "subnet-220c0e0a",
@@ -56,7 +56,7 @@ Output:
                 "ec2KeyPair": "id_rsa"
             },
             "statusReason": "ComputeEnvironment Healthy",
-            "ecsClusterArn": "arn:aws:ecs:us-east-1:012345678910:cluster/P2OnDemand_Batch_2c06f29d-d1fe-3a49-879d-42394c86effc",
+            "ecsClusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/P2OnDemand_Batch_2c06f29d-d1fe-3a49-879d-42394c86effc",
             "state": "ENABLED",
             "computeEnvironmentName": "P2OnDemand",
             "type": "MANAGED"
@@ -64,6 +64,7 @@ Output:
     ]
 }
 ```
+For more information, see [Compute environments for AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the *AWS Batch User Guide*.
 +  For API details, see [DescribeComputeEnvironments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/describe-compute-environments.html) in *AWS CLI Command Reference*.
 
 ------

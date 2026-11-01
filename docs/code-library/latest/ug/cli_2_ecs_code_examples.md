@@ -19,48 +19,6 @@ Each example includes a link to the complete source code, where you can find ins
 ## Actions
 <a name="actions"></a>
 
-### `capacity-provider-update`
-<a name="ecs_CapacityProviderUpdate_cli_2_topic"></a>
-
-The following code example shows how to use `capacity-provider-update`.
-
-**AWS CLI**
-**Update the capacity provider in an ECS cluster**
-The following `update-capacity-provider` example shows how we can modify the parameters of the capacity provider in an ECS cluster.
-
-```
-aws ecs update-capacity-provider \
-    --name {{Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt}} \
-    --auto-scaling-group-provider {{"managedScaling={status=DISABLED,targetCapacity=50,minimumScalingStepSize=2,maximumScalingStepSize=30,instanceWarmupPeriod=200},managedTerminationProtection=DISABLED,managedDraining=DISABLED"}}
-```
-Output:
-
-```
-{
-    "capacityProvider": {
-        "capacityProviderArn": "arn:aws:ecs:us-west-2:123456789012:capacity-provider/Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
-        "name": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
-        "status": "ACTIVE",
-        "autoScalingGroupProvider": {
-            "autoScalingGroupArn": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:424941d1-b43f-4a17-adbb-08b6a6e397e1:autoScalingGroupName/Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-ECSAutoScalingGroup-f44jrQHS2nRB",
-            "managedScaling": {
-                "status": "ENABLED",
-                "targetCapacity": 100,
-                "minimumScalingStepSize": 1,
-                "maximumScalingStepSize": 10000,
-                "instanceWarmupPeriod": 300
-            },
-            "managedTerminationProtection": "DISABLED",
-            "managedDraining": "ENABLED"
-        },
-        "updateStatus": "UPDATE_IN_PROGRESS",
-        "tags": []
-    }
-}
-```
-For more information on Capacity Provider, see [Amazon ECS capacity providers for the EC2 launch type](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
-+  For API details, see [CapacityProviderUpdate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/capacity-provider-update.html) in *AWS CLI Command Reference*.
-
 ### `create-capacity-provider`
 <a name="ecs_CreateCapacityProvider_cli_2_topic"></a>
 
@@ -68,33 +26,34 @@ The following code example shows how to use `create-capacity-provider`.
 
 **AWS CLI**
 **To create a capacity provider**
-The following create-capacity-provider example creates a capacity provider that uses an Auto Scaling group named MyASG, has managed scaling and managed termination protection enabled. This configuration is used for Amazon ECS cluster auto scaling.
+The following `create-capacity-provider` example creates a capacity provider that uses an Auto Scaling group named MyASG, has managed scaling and managed termination protection enabled. This configuration is used for Amazon ECS cluster auto scaling.
 
 ```
 aws ecs create-capacity-provider \
     --name {{"MyCapacityProvider"}} \
-    --auto-scaling-group-provider {{"autoScalingGroupArn=arn:aws:autoscaling:us-east-1:123456789012:autoScalingGroup:57ffcb94-11f0-4d6d-bf60-3bac5EXAMPLE:autoScalingGroupName/MyASG,managedScaling={status=ENABLED,targetCapacity=100},managedTerminationProtection=ENABLED"}}
+    --auto-scaling-group-provider {{"autoScalingGroupArn=arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/MyASG,managedScaling={status=ENABLED,targetCapacity=100},managedTerminationProtection=ENABLED"}}
 ```
 Output:
 
 ```
 {
     "capacityProvider": {
-    "capacityProviderArn": "arn:aws:ecs:us-east-1:123456789012:capacity-provider/MyCapacityProvider",
-    "name": "MyCapacityProvider",
-    "status": "ACTIVE",
-    "autoScalingGroupProvider": {
-        "autoScalingGroupArn": "arn:aws:autoscaling:us-east-1:132456789012:autoScalingGroup:57ffcb94-11f0-4d6d-bf60-3bac5EXAMPLE:autoScalingGroupName/MyASG",
-        "managedScaling": {
-            "status": "ENABLED",
-            "targetCapacity": 100,
-            "minimumScalingStepSize": 1,
-            "maximumScalingStepSize": 10000,
-            "instanceWarmupPeriod": 300
+        "capacityProviderArn": "arn:aws:ecs:us-west-2:123456789012:capacity-provider/MyCapacityProvider",
+        "name": "MyCapacityProvider",
+        "status": "ACTIVE",
+        "autoScalingGroupProvider": {
+            "autoScalingGroupArn": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/MyASG",
+            "managedScaling": {
+                "status": "ENABLED",
+                "targetCapacity": 100,
+                "minimumScalingStepSize": 1,
+                "maximumScalingStepSize": 10000,
+                "instanceWarmupPeriod": 300
+            },
+            "managedTerminationProtection": "ENABLED"
         },
-        "managedTerminationProtection": "ENABLED"
-    },
-    "tags": []
+        "tags": []
+    }
 }
 ```
 For more information, see [Amazon ECS cluster auto scaling](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-auto-scaling.html) in the *Amazon ECS Developer Guide*.
@@ -137,7 +96,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a Cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create_cluster.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Creating an Amazon ECS cluster for Fargate workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-cluster-console-v2.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To create a new cluster using capacity providers**
 The following `create-cluster` example creates a cluster and associates two existing capacity providers with it. The `create-capacity-provider` command is used to create a capacity provider. Specifying a default capacity provider strategy is optional, but recommended. In this example, we create a cluster named `MyCluster` and associate the `MyCapacityProvider1` and `MyCapacityProvider2` capacity providers with it. A default capacity provider strategy is specified that spreads the tasks evenly across both capacity providers.
 
@@ -183,23 +142,23 @@ Output:
             }
         ],
         "attachments": [
-           {
-               "id": "0fb0c8f4-6edd-4de1-9b09-17e470ee1918",
-               "type": "asp",
-               "status": "PRECREATED",
-               "details": [
-                   {
-                       "name": "capacityProviderName",
-                       "value": "MyCapacityProvider1"
-                   },
-                   {
-                       "name": "scalingPlanName",
-                       "value": "ECSManagedAutoScalingPlan-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
-                   }
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                "type": "asp",
+                "status": "PRECREATED",
+                "details": [
+                    {
+                        "name": "capacityProviderName",
+                        "value": "MyCapacityProvider1"
+                    },
+                    {
+                        "name": "scalingPlanName",
+                        "value": "ECSManagedAutoScalingPlan-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                    }
                 ]
             },
             {
-                "id": "ae592060-2382-4663-9476-b015c685593c",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                 "type": "asp",
                 "status": "PRECREATED",
                 "details": [
@@ -218,7 +177,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS capacity providers for EC2 workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
 **Example 3: To create a new cluster with multiple tags**
 The following `create-cluster` example creates a cluster with multiple tags. For more information about adding tags using shorthand syntax, see [Using Shorthand Syntax with the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-shorthand.html) in the *AWS CLI User Guide*.
 
@@ -250,10 +209,10 @@ Output:
                 "value": "value2"
             }
         ]
-     }
- }
+    }
+}
 ```
-For more information, see [Creating a Cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create_cluster.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Creating an Amazon ECS cluster for Fargate workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-cluster-console-v2.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [CreateCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/create-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-service`
@@ -283,7 +242,7 @@ Output:
     "service": {
         "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/MyService",
         "serviceName": "MyService",
-          "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
         "loadBalancers": [],
         "serviceRegistries": [],
         "status": "ACTIVE",
@@ -471,7 +430,7 @@ aws ecs create-service \
 Contents of `ecs-simple-service-elb.json`:
 
 ```
- {
+{
     "serviceName": "ecs-simple-service-elb",
     "taskDefinition": "ecs-demo",
     "loadBalancers": [
@@ -558,7 +517,7 @@ Contents of `ecs-simple-service-ebs.json`:
                 "filesystemType": "ext4"
             }
         }
-   ]
+    ]
 }
 ```
 Output:
@@ -710,6 +669,7 @@ Output:
     }
 }
 ```
+For more information, see [Deploy Amazon ECS services using a third-party controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [CreateTaskSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/create-task-set.html) in *AWS CLI Command Reference*.
 
 ### `delete-account-setting`
@@ -719,7 +679,7 @@ The following code example shows how to use `delete-account-setting`.
 
 **AWS CLI**
 **To delete the account settings for a specific IAM user or IAM role**
-The following example `delete-account-setting` deletes the account settings for the specific IAM user or IAM role.
+The following `delete-account-setting` example deletes the account settings for the specific IAM user or IAM role.
 
 ```
 aws ecs delete-account-setting \
@@ -737,7 +697,7 @@ Output:
     }
 }
 ```
-For more information, see [Amazon Resource Names (ARNs) and IDs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-resource-ids.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Access Amazon ECS features with account settings](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteAccountSetting](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-account-setting.html) in *AWS CLI Command Reference*.
 
 ### `delete-attributes`
@@ -747,11 +707,11 @@ The following code example shows how to use `delete-attributes`.
 
 **AWS CLI**
 **To delete one or more custom attributes from an Amazon ECS resource**
-The following `delete-attributes` deletes an attribute with the name `stack` from a container instance.
+The following `delete-attributes` example deletes an attribute with the name `stack` from a container instance.
 
 ```
 aws ecs delete-attributes \
-    --attributes {{name=stack,targetId=arn:aws:ecs:us-west-2:130757420319:container-instance/1c3be8ed-df30-47b4-8f1e-6e68ebd01f34}}
+    --attributes {{name=stack,targetId=arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -760,12 +720,13 @@ Output:
     "attributes": [
         {
             "name": "stack",
-            "targetId": "arn:aws:ecs:us-west-2:130757420319:container-instance/1c3be8ed-df30-47b4-8f1e-6e68ebd01f34",
+            "targetId": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "value": "production"
         }
     ]
 }
 ```
+For more information, see [Define which container instances Amazon ECS uses for tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-attributes.html) in *AWS CLI Command Reference*.
 
 ### `delete-capacity-provider`
@@ -804,7 +765,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Deleting an Amazon ECS capacity provider](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-capacity-provider-console-v2.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To delete a capacity provider using the name**
 The following `delete-capacity-provider` example deletes a capacity provider by specifying the short name of the capacity provider. The short name as well as the status of the capacity provider deletion can be retrieved using the `describe-capacity-providers` command.
 
@@ -835,7 +796,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Deleting an Amazon ECS capacity provider](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-capacity-provider-console-v2.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteCapacityProvider](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-capacity-provider.html) in *AWS CLI Command Reference*.
 
 ### `delete-cluster`
@@ -848,7 +809,8 @@ The following code example shows how to use `delete-cluster`.
 The following `delete-cluster` example deletes the specified empty cluster.
 
 ```
-aws ecs delete-cluster --cluster {{MyCluster}}
+aws ecs delete-cluster \
+    --cluster {{MyCluster}}
 ```
 Output:
 
@@ -861,13 +823,13 @@ Output:
         "registeredContainerInstancesCount": 0,
         "pendingTasksCount": 0,
         "runningTasksCount": 0,
-        "activeServicesCount": 0
+        "activeServicesCount": 0,
         "statistics": [],
         "tags": []
     }
 }
 ```
-For more information, see [Deleting a Cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete_cluster.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Deleting an Amazon ECS cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete_cluster-new-console.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-cluster.html) in *AWS CLI Command Reference*.
 
 ### `delete-service`
@@ -877,12 +839,70 @@ The following code example shows how to use `delete-service`.
 
 **AWS CLI**
 **To delete a service**
-The following `ecs delete-service` example deletes the specified service from a cluster. You can include the `--force` parameter to delete a service even if it has not been scaled to zero tasks.
+The following `delete-service` example deletes the specified service from a cluster. You can include the `--force` parameter to delete a service even if it has not been scaled to zero tasks.
 
 ```
-aws ecs delete-service --cluster {{MyCluster}} --service {{MyService1}} --force
+aws ecs delete-service \
+    --cluster {{MyCluster}} \
+    --service {{MyService1}} \
+    --force
 ```
-For more information, see [Deleting a Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-service.html) in the *Amazon ECS Developer Guide*.
+Output:
+
+```
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/MyService1",
+        "serviceName": "MyService1",
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
+        "loadBalancers": [],
+        "serviceRegistries": [],
+        "status": "DRAINING",
+        "desiredCount": 0,
+        "runningCount": 2,
+        "pendingCount": 0,
+        "launchType": "EC2",
+        "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/MyTaskDefinition:1",
+        "deploymentConfiguration": {
+            "deploymentCircuitBreaker": {
+                "enable": false,
+                "rollback": false
+            },
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/1234567890123456789",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/MyTaskDefinition:1",
+                "desiredCount": 0,
+                "pendingCount": 0,
+                "runningCount": 2,
+                "failedTasks": 0,
+                "createdAt": "2025-01-15T10:00:00.000000+00:00",
+                "updatedAt": "2025-01-15T11:30:00.000000+00:00",
+                "launchType": "EC2",
+                "rolloutState": "IN_PROGRESS",
+                "rolloutStateReason": "ECS deployment ecs-svc/1234567890123456789 in progress."
+            }
+        ],
+        "events": [],
+        "createdAt": "2025-01-15T10:00:00.000000+00:00",
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "schedulingStrategy": "REPLICA",
+        "deploymentController": {
+            "type": "ECS"
+        },
+        "createdBy": "arn:aws:iam::123456789012:role/admin",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE",
+        "enableExecuteCommand": false
+    }
+}
+```
+For more information, see [Deleting an Amazon ECS service using the console](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-service-v2.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-service.html) in *AWS CLI Command Reference*.
 
 ### `delete-task-definitions`
@@ -904,7 +924,7 @@ Output:
 {
 "taskDefinitions": [
     {
-        "taskDefinitionArn": "arn:aws:ecs:us-east-1:123456789012:task-definition/curltest:1",
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/curltest:1",
         "containerDefinitions": [
             {
                 "name": "ctest",
@@ -927,7 +947,7 @@ Output:
                     "options": {
                         "awslogs-create-group": "true",
                         "awslogs-group": "/ecs/curltest",
-                        "awslogs-region": "us-east-1",
+                        "awslogs-region": "us-west-2",
                         "awslogs-stream-prefix": "ecs"
                     }
                 }
@@ -957,7 +977,7 @@ Output:
     "failures": []
 }
 ```
-For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteTaskDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-task-definitions.html) in *AWS CLI Command Reference*.
 
 ### `delete-task-set`
@@ -1013,6 +1033,7 @@ Output:
     }
 }
 ```
+For more information, see [Deploy Amazon ECS services using a third-party controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteTaskSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-task-set.html) in *AWS CLI Command Reference*.
 
 ### `deregister-container-instance`
@@ -1027,7 +1048,7 @@ The following `deregister-container-instance` example deregisters a container in
 ```
 aws ecs deregister-container-instance \
     --cluster {{arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster}} \
-    --container-instance {{arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
+    --container-instance {{arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --force
 ```
 Output:
@@ -1230,7 +1251,7 @@ Output:
         ],
         "pendingTasksCount": 0,
         "tags": [],
-        "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "registeredResources": [
             {
                 "integerValue": 1024,
@@ -1283,7 +1304,7 @@ Output:
     }
 }
 ```
-For more information, see [Deregister a Container Instance](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deregister_container_instance.html) in the *ECS Developer Guide*.
+For more information, see [Deregistering an Amazon ECS container instance](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deregister_container_instance.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeregisterContainerInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/deregister-container-instance.html) in *AWS CLI Command Reference*.
 
 ### `deregister-task-definition`
@@ -1293,12 +1314,13 @@ The following code example shows how to use `deregister-task-definition`.
 
 **AWS CLI**
 **To deregister a task definition**
-The following `deregister-task-definition` example deregisters the first revision of the `curler` task definition in your default region.
+The following `deregister-task-definition` example deregisters the first revision of the `curler` task definition in your default region. In the output, the task definition status shows `INACTIVE`.
 
 ```
-aws ecs deregister-task-definition --task-definition {{curler:1}}
+aws ecs deregister-task-definition \
+    --task-definition {{curler:1}}
 ```
-Note that in the resulting output, the task definition status shows `INACTIVE`:
+Output:
 
 ```
 {
@@ -1328,7 +1350,7 @@ Note that in the resulting output, the task definition status shows `INACTIVE`:
     }
 }
 ```
-For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeregisterTaskDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/deregister-task-definition.html) in *AWS CLI Command Reference*.
 
 ### `describe-capacity-providers`
@@ -1379,7 +1401,7 @@ Output:
     ]
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS capacity providers for EC2 workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To describe a specific capacity providers**
 The following `describe-capacity-providers` example retrieves details about a specific capacity provider. Using the `--include TAGS` parameter will add the tags associated with the capacity provider to the output.
 
@@ -1417,7 +1439,7 @@ Output:
     ]
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS capacity providers for EC2 workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DescribeCapacityProviders](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/describe-capacity-providers.html) in *AWS CLI Command Reference*.
 
 ### `describe-clusters`
@@ -1466,7 +1488,7 @@ Output:
 {
     "clusters": [
         {
-            "clusterArn": "arn:aws:ecs:af-south-1:123456789222:cluster/sampleCluster",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789222:cluster/sampleCluster",
             "clusterName": "sampleCluster",
             "status": "ACTIVE",
             "registeredContainerInstancesCount": 0,
@@ -1482,7 +1504,7 @@ Output:
             "defaultCapacityProviderStrategy": [],
             "attachments": [
                 {
-                    "id": "a1b2c3d4-5678-901b-cdef-EXAMPLE22222",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "type": "as_policy",
                     "status": "CREATED",
                     "details": [
@@ -1518,7 +1540,7 @@ The following `describe-container-instances` example retrieves details for a con
 ```
 aws ecs describe-container-instances \
     --cluster {{update}} \
-    --container-instances {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+    --container-instances {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1559,7 +1581,7 @@ Output:
             ],
             "ec2InstanceId": "i-A1B2C3D4",
             "agentConnected": true,
-            "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "pendingTasksCount": 0,
             "remainingResources": [
                 {
@@ -1600,7 +1622,7 @@ Output:
     ]
 }
 ```
-For more information, see [Amazon ECS Container Instances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_instances.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon EC2 container instances for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DescribeContainerInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/describe-container-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-service-deployments`
@@ -1610,11 +1632,11 @@ The following code example shows how to use `describe-service-deployments`.
 
 **AWS CLI**
 **To describe service deployment details**
-The following `describe-service-deployments` example returns the service deployment details for the service deployment with the ARN `arn:aws:ecs:us-east-1:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe`.
+The following `describe-service-deployments` example returns the service deployment details for the service deployment with the ARN `arn:aws:ecs:us-west-2:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe`.
 
 ```
 aws ecs describe-service-deployments \
-    --service-deployment-arn {{arn:aws:ecs:us-east-1:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe}}
+    --service-deployment-arn {{arn:aws:ecs:us-west-2:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe}}
 ```
 Output:
 
@@ -1622,16 +1644,16 @@ Output:
 {
     "serviceDeployments": [
         {
-            "serviceDeploymentArn": "arn:aws:ecs:us-east-1:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe",
-            "serviceArn": "arn:aws:ecs:us-east-1:123456789012:service/example-cluster/example-service",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/example-cluster",
+            "serviceDeploymentArn": "arn:aws:ecs:us-west-2:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe",
+            "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/example-cluster/example-service",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/example-cluster",
             "createdAt": "2024-10-31T08:03:30.917000-04:00",
             "startedAt": "2024-10-31T08:03:32.510000-04:00",
             "finishedAt": "2024-10-31T08:05:04.527000-04:00",
             "updatedAt": "2024-10-31T08:05:04.527000-04:00",
             "sourceServiceRevisions": [],
             "targetServiceRevision": {
-                "arn": "arn:aws:ecs:us-east-1:123456789012:service-revision/example-cluster/example-service/1485800978477494678",
+                "arn": "arn:aws:ecs:us-west-2:123456789012:service-revision/example-cluster/example-service/1485800978477494678",
                 "requestedTaskCount": 1,
                 "runningTaskCount": 1,
                 "pendingTaskCount": 0
@@ -1673,11 +1695,11 @@ The following code example shows how to use `describe-service-revisions`.
 
 **AWS CLI**
 **To describe service revision details**
-The following `describe-service-revisions` example returns the service revision details for the service revision with the ARN `arn:aws:ecs:us-east-1:123456789012:service-revision/example-cluster/example-service/1485800978477494678`.
+The following `describe-service-revisions` example returns the service revision details for the service revision with the ARN `arn:aws:ecs:us-west-2:123456789012:service-revision/example-cluster/example-service/1485800978477494678`.
 
 ```
 aws ecs describe-service-revisions \
-    --service-revision-arns {{arn:aws:ecs:us-east-1:123456789012:service-revision/example-cluster/example-service/1485800978477494678}}
+    --service-revision-arns {{arn:aws:ecs:us-west-2:123456789012:service-revision/example-cluster/example-service/1485800978477494678}}
 ```
 Output:
 
@@ -1685,10 +1707,10 @@ Output:
 {
     "serviceRevisions": [
         {
-            "serviceRevisionArn": "arn:aws:ecs:us-east-1:123456789012:service-revision/example-cluster/example-service/1485800978477494678",
-            "serviceArn": "arn:aws:ecs:us-east-1:123456789012:service/example-cluster/example-service",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/example-cluster",
-            "taskDefinition": "arn:aws:ecs:us-east-1:123456789012:task-definition/webserver:5",
+            "serviceRevisionArn": "arn:aws:ecs:us-west-2:123456789012:service-revision/example-cluster/example-service/1485800978477494678",
+            "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/example-cluster/example-service",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/example-cluster",
+            "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/webserver:5",
             "capacityProviderStrategy": [
                 {
                     "capacityProvider": "FARGATE",
@@ -1745,7 +1767,8 @@ The following code example shows how to use `describe-services`.
 The following `describe-services` example retrieves details for the `my-http-service` service in the default cluster.
 
 ```
-aws ecs describe-services --services {{my-http-service}}
+aws ecs describe-services \
+    --services {{my-http-service}}
 ```
 Output:
 
@@ -1777,7 +1800,7 @@ Output:
             "events": [
                 {
                     "message": "(service my-http-service) has reached a steady state.",
-                    "id": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "createdAt": 1466801812.435
                 }
             ],
@@ -1787,7 +1810,7 @@ Output:
     "failures": []
 }
 ```
-For more information, see [Services](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS services](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DescribeServices](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/describe-services.html) in *AWS CLI Command Reference*.
 
 ### `describe-task-definition`
@@ -1808,7 +1831,7 @@ Output:
 ```
 {
     "taskDefinition": {
-        "taskDefinitionArn": "arn:aws:ecs:us-east-1:012345678910:task-definition/hello_world:8",
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/hello_world:8",
         "containerDefinitions": [
             {
                 "cpu": 10,
@@ -1856,12 +1879,12 @@ Output:
         "EC2"
     ],
     "registeredAt": "2024-06-21T11:15:12.669000-05:00",
-    "registeredBy": "arn:aws:sts::012345678910:assumed-role/demo-role/jane-doe"
+    "registeredBy": "arn:aws:sts::123456789012:assumed-role/demo-role/jane-doe"
     },
     "tags": []
 }
 ```
-For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DescribeTaskDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/describe-task-definition.html) in *AWS CLI Command Reference*.
 
 ### `describe-task-sets`
@@ -1919,6 +1942,7 @@ Output:
     "failures": []
 }
 ```
+For more information, see [Deploy Amazon ECS services using a third-party controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DescribeTaskSets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/describe-task-sets.html) in *AWS CLI Command Reference*.
 
 ### `describe-tasks`
@@ -1933,7 +1957,7 @@ The following `describe-tasks` example retrieves the details of a task in a clus
 ```
 aws ecs describe-tasks \
     --cluster {{MyCluster}} \
-    --tasks {{arn:aws:ecs:us-east-1:123456789012:task/MyCluster/4d590253bb114126b7afa7b58EXAMPLE}}
+    --tasks {{arn:aws:ecs:us-west-2:123456789012:task/MyCluster/4d590253bb114126b7afa7b58EXAMPLE}}
 ```
 Output:
 
@@ -1948,15 +1972,15 @@ Output:
                     "value": "x86_64"
                 }
             ],
-            "availabilityZone": "us-east-1b",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/MyCluster",
+            "availabilityZone": "us-west-2b",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
             "connectivity": "CONNECTED",
             "connectivityAt": "2021-08-11T12:21:26.681000-04:00",
-            "containerInstanceArn": "arn:aws:ecs:us-east-1:123456789012:container-instance/test/025c7e2c5e054a6790a29fc1fEXAMPLE",
+            "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/test/025c7e2c5e054a6790a29fc1fEXAMPLE",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-east-1:123456789012:container/MyCluster/4d590253bb114126b7afa7b58eea9221/a992d1cc-ea46-474a-b6e8-24688EXAMPLE",
-                    "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/MyCluster/4d590253bb114126b7afa7b58EXAMPLE",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/MyCluster/4d590253bb114126b7afa7b58eea9221/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                    "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/MyCluster/4d590253bb114126b7afa7b58EXAMPLE",
                     "name": "simple-app",
                     "image": "httpd:2.4",
                     "runtimeId": "91251eed27db90006ad67b1a08187290869f216557717dd5c39b37c94EXAMPLE",
@@ -1995,10 +2019,10 @@ Output:
             "pullStartedAt": "2021-08-11T12:21:28.234000-04:00",
             "pullStoppedAt": "2021-08-11T12:21:33.793000-04:00",
             "startedAt": "2021-08-11T12:21:34.945000-04:00",
-            "startedBy": "ecs-svc/968695068243EXAMPLE",
+            "startedBy": "ecs-svc/1234567890123456789",
             "tags": [],
-            "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/MyCluster/4d590253bb114126b7afa7b58eea9221",
-            "taskDefinitionArn": "arn:aws:ecs:us-east-1:123456789012:task-definition/console-sample-app-static2:1",
+            "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/MyCluster/4d590253bb114126b7afa7b58eea9221",
+            "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/console-sample-app-static2:1",
             "version": 2
         }
     ],
@@ -2022,7 +2046,7 @@ Output:
         {
             "attachments": [
                 {
-                    "id": "d9e7735a-16aa-4128-bc7a-b2d51EXAMPLE",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                     "type": "ElasticNetworkInterface",
                     "status": "ATTACHED",
                     "details": [
@@ -2055,14 +2079,14 @@ Output:
                     "value": "x86_64"
                 }
             ],
-            "availabilityZone": "us-east-1b",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/MyCluster",
+            "availabilityZone": "us-west-2b",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
             "connectivity": "CONNECTED",
             "connectivityAt": "2021-12-20T12:13:37.875000-05:00",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-east-1:123456789012:container/MyCluster/74de0355a10a4f979ac495c14EXAMPLE/aad3ba00-83b3-4dac-84d4-11f8cEXAMPLE",
-                    "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/MyCluster/74de0355a10a4f979ac495c14EXAMPLE",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/MyCluster/74de0355a10a4f979ac495c14EXAMPLE/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                    "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/MyCluster/74de0355a10a4f979ac495c14EXAMPLE",
                     "name": "web",
                     "image": "nginx",
                     "runtimeId": "74de0355a10a4f979ac495c14EXAMPLE-265927825",
@@ -2070,7 +2094,7 @@ Output:
                     "networkBindings": [],
                     "networkInterfaces": [
                         {
-                            "attachmentId": "d9e7735a-16aa-4128-bc7a-b2d51EXAMPLE",
+                            "attachmentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                             "privateIpv4Address": "10.0.1.184"
                         }
                     ],
@@ -2101,10 +2125,10 @@ Output:
             "pullStartedAt": "2021-12-20T12:13:42.665000-05:00",
             "pullStoppedAt": "2021-12-20T12:13:46.543000-05:00",
             "startedAt": "2021-12-20T12:13:48.086000-05:00",
-            "startedBy": "ecs-svc/988401040018EXAMPLE",
+            "startedBy": "ecs-svc/9876543210987654321",
             "tags": [],
-            "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/MyCluster/74de0355a10a4f979ac495c14EXAMPLE",
-            "taskDefinitionArn": "arn:aws:ecs:us-east-1:123456789012:task-definition/webserver:2",
+            "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/MyCluster/74de0355a10a4f979ac495c14EXAMPLE",
+            "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/webserver:2",
             "version": 3,
             "ephemeralStorage": {
             "sizeInGiB": 20
@@ -2113,7 +2137,7 @@ Output:
         {
             "attachments": [
                 {
-                    "id": "214eb5a9-45cd-4bf8-87bc-57fefEXAMPLE",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                     "type": "ElasticNetworkInterface",
                     "status": "ATTACHED",
                     "details": [
@@ -2146,14 +2170,14 @@ Output:
                     "value": "x86_64"
                 }
             ],
-            "availabilityZone": "us-east-1b",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/MyCluster",
+            "availabilityZone": "us-west-2b",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
             "connectivity": "CONNECTED",
             "connectivityAt": "2021-12-20T12:13:35.243000-05:00",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-east-1:123456789012:container/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE/9afef792-609b-43a5-bb6a-3efdbEXAMPLE",
-                    "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+                    "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE",
                     "name": "web",
                     "image": "nginx",
                     "runtimeId": "d789e94343414c25b9f6bd59eEXAMPLE-265927825",
@@ -2161,7 +2185,7 @@ Output:
                     "networkBindings": [],
                     "networkInterfaces": [
                         {
-                            "attachmentId": "214eb5a9-45cd-4bf8-87bc-57fefEXAMPLE",
+                            "attachmentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                             "privateIpv4Address": "10.0.1.41"
                         }
                     ],
@@ -2192,10 +2216,10 @@ Output:
             "pullStartedAt": "2021-12-20T12:13:44.611000-05:00",
             "pullStoppedAt": "2021-12-20T12:13:48.251000-05:00",
             "startedAt": "2021-12-20T12:13:49.326000-05:00",
-            "startedBy": "ecs-svc/988401040018EXAMPLE",
+            "startedBy": "ecs-svc/9876543210987654321",
             "tags": [],
-            "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE",
-            "taskDefinitionArn": "arn:aws:ecs:us-east-1:123456789012:task-definition/webserver:2",
+            "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE",
+            "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/webserver:2",
             "version": 3,
             "ephemeralStorage": {
                 "sizeInGiB": 20
@@ -2215,12 +2239,12 @@ The following code example shows how to use `execute-command`.
 
 **AWS CLI**
 **To run an interactive /bin/sh command**
-The following `execute-command` example runs an interactive /bin/sh command against a container named MyContainer for a task with an id of `arn:aws:ecs:us-east-1:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE`.
+The following `execute-command` example runs an interactive /bin/sh command against a container named MyContainer for a task with an id of `arn:aws:ecs:us-west-2:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE`.
 
 ```
 aws ecs execute-command \
     --cluster {{MyCluster}} \
-    --task {{arn:aws:ecs:us-east-1:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE}} \
+    --task {{arn:aws:ecs:us-west-2:123456789012:task/MyCluster/d789e94343414c25b9f6bd59eEXAMPLE}} \
     --container {{MyContainer}} \
     --interactive \
     --command {{"/bin/sh"}}
@@ -2235,8 +2259,8 @@ For more information, see [Using Amazon ECS Exec for debugging](https://docs.aws
 The following code example shows how to use `get-task-protection`.
 
 **AWS CLI**
-**Retrieve the protection status of task in ECS service**
-The following `get-task-protection` provides the protection status of ECS tasks that belong to Amazon ECS service.
+**To retrieve the protection status of a task in an ECS service**
+The following `get-task-protection` example retrieves the protection status of ECS tasks that belong to Amazon ECS service.
 
 ```
 aws ecs get-task-protection \
@@ -2269,7 +2293,8 @@ The following code example shows how to use `list-account-settings`.
 The following `list-account-settings` example displays the effective account settings for an account.
 
 ```
-aws ecs list-account-settings --effective-settings
+aws ecs list-account-settings \
+    --effective-settings
 ```
 Output:
 
@@ -2294,11 +2319,13 @@ Output:
     ]
 }
 ```
+For more information, see [Access Amazon ECS features with account settings](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To view the account settings for a specific IAM user or IAM role**
 The following `list-account-settings` example displays the account settings for the specified IAM user or IAM role.
 
 ```
-aws ecs list-account-settings --principal-arn {{arn:aws:iam::123456789012:user/MyUser}}
+aws ecs list-account-settings \
+    --principal-arn {{arn:aws:iam::123456789012:user/MyUser}}
 ```
 Output:
 
@@ -2313,7 +2340,7 @@ Output:
     ]
 }
 ```
-For more information, see [Amazon Resource Names (ARNs) and IDs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-resource-ids.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Access Amazon ECS features with account settings](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListAccountSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-account-settings.html) in *AWS CLI Command Reference*.
 
 ### `list-attributes`
@@ -2323,7 +2350,7 @@ The following code example shows how to use `list-attributes`.
 
 **AWS CLI**
 **To list the container instances that contain a specific attribute**
-The following example lists the attributes for container instances that have the `stack=production` attribute in the default cluster.
+The following `list-attributes` example lists the attributes for container instances that have the `stack=production` attribute in the default cluster.
 
 ```
 aws ecs list-attributes \
@@ -2339,7 +2366,7 @@ Output:
     "attributes": [
         {
             "name": "stack",
-            "targetId": "arn:aws:ecs:us-west-2:130757420319:container-instance/1c3be8ed-df30-47b4-8f1e-6e68ebd01f34",
+            "targetId": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "value": "production"
         }
     ]
@@ -2370,7 +2397,7 @@ Output:
     ]
 }
 ```
-For more information, see [Amazon ECS Clusters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_clusters.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS clusters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-clusters.html) in *AWS CLI Command Reference*.
 
 ### `list-container-instances`
@@ -2383,19 +2410,20 @@ The following code example shows how to use `list-container-instances`.
 The following `list-container-instances` example lists all of the available container instances in a cluster.
 
 ```
-aws ecs list-container-instances --cluster {{MyCluster}}
+aws ecs list-container-instances \
+    --cluster {{MyCluster}}
 ```
 Output:
 
 ```
 {
     "containerInstanceArns": [
-        "arn:aws:ecs:us-west-2:123456789012:container-instance/MyCluster/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
-        "arn:aws:ecs:us-west-2:123456789012:container-instance/MyCluster/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE"
+        "arn:aws:ecs:us-west-2:123456789012:container-instance/MyCluster/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "arn:aws:ecs:us-west-2:123456789012:container-instance/MyCluster/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     ]
 }
 ```
-For more information, see [Amazon ECS Container Instances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_instances.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon EC2 container instances for Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListContainerInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-container-instances.html) in *AWS CLI Command Reference*.
 
 ### `list-service-deployments`
@@ -2409,7 +2437,7 @@ The following `list-service-deployments` example retrieves the service deploymen
 
 ```
 aws ecs list-service-deployments \
-    --service {{arn:aws:ecs:us-east-1:123456789012:service/example-cluster/example-service}}
+    --service {{arn:aws:ecs:us-west-2:123456789012:service/example-cluster/example-service}}
 ```
 Output:
 
@@ -2417,13 +2445,13 @@ Output:
 {
     "serviceDeployments": [
         {
-            "serviceDeploymentArn": "arn:aws:ecs:us-east-1:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe",
-            "serviceArn": "arn:aws:ecs:us-east-1:123456789012:service/example-cluster/example-service",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/example-cluster",
+            "serviceDeploymentArn": "arn:aws:ecs:us-west-2:123456789012:service-deployment/example-cluster/example-service/ejGvqq2ilnbKT9qj0vLJe",
+            "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/example-cluster/example-service",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/example-cluster",
             "startedAt": "2024-10-31T08:03:32.510000-04:00",
             "createdAt": "2024-10-31T08:03:30.917000-04:00",
             "finishedAt": "2024-10-31T08:05:04.527000-04:00",
-            "targetServiceRevisionArn": "arn:aws:ecs:us-east-1:123456789012:service-revision/example-cluster/example-service/1485800978477494678",
+            "targetServiceRevisionArn": "arn:aws:ecs:us-west-2:123456789012:service-revision/example-cluster/example-service/1485800978477494678",
             "status": "SUCCESSFUL"
         }
     ]
@@ -2468,18 +2496,19 @@ The following code example shows how to use `list-services`.
 The following `list-services` example shows how to list the services running in a cluster.
 
 ```
-aws ecs list-services --cluster {{MyCluster}}
+aws ecs list-services \
+    --cluster {{MyCluster}}
 ```
 Output:
 
 ```
- {
-     "serviceArns": [
-         "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/MyService"
-     ]
+{
+    "serviceArns": [
+        "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/MyService"
+    ]
 }
 ```
-For more information, see [Services](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS services](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListServices](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-services.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -2515,6 +2544,7 @@ Output:
     ]
 }
 ```
+For more information, see [Tagging Amazon ECS resources](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-task-definition-families`
@@ -2541,11 +2571,13 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon ECS task definition parameters for Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#family) in the *Amazon ECS Developer Guide*.
 **Example 2: To filter the registered task definition families**
 The following `list-task-definition-families` example lists the task definition revisions that start with "hpcc".
 
 ```
-aws ecs list-task-definition-families --family-prefix {{hpcc}}
+aws ecs list-task-definition-families \
+    --family-prefix {{hpcc}}
 ```
 Output:
 
@@ -2557,7 +2589,7 @@ Output:
     ]
 }
 ```
-For more information, see [Task Definition Parameters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#family) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definition parameters for Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#family) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListTaskDefinitionFamilies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-task-definition-families.html) in *AWS CLI Command Reference*.
 
 ### `list-task-definitions`
@@ -2586,11 +2618,13 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To list the registered task definitions in a family**
-The following list-task-definitions example lists the task definition revisions of a specified family.
+The following `list-task-definitions` example lists the task definition revisions of a specified family.
 
 ```
-aws ecs list-task-definitions --family-prefix {{wordpress}}
+aws ecs list-task-definitions \
+    --family-prefix {{wordpress}}
 ```
 Output:
 
@@ -2604,7 +2638,7 @@ Output:
     ]
 }
 ```
-For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListTaskDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-task-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-tasks`
@@ -2617,34 +2651,38 @@ The following code example shows how to use `list-tasks`.
 The following `list-tasks` example lists all of the tasks in a cluster.
 
 ```
-aws ecs list-tasks --cluster {{default}}
+aws ecs list-tasks \
+    --cluster {{default}}
 ```
 Output:
 
 ```
 {
     "taskArns": [
-        "arn:aws:ecs:us-west-2:123456789012:task/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
-        "arn:aws:ecs:us-west-2:123456789012:task/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE"
+        "arn:aws:ecs:us-west-2:123456789012:task/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "arn:aws:ecs:us-west-2:123456789012:task/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     ]
 }
 ```
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To list the tasks on a particular container instance**
 The following `list-tasks` example lists the tasks on a container instance, using the container instance UUID as a filter.
 
 ```
-aws ecs list-tasks --cluster {{default}} --container-instance {{a1b2c3d4-5678-90ab-cdef-33333EXAMPLE}}
+aws ecs list-tasks \
+    --cluster {{default}} \
+    --container-instance {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
 
 ```
 {
     "taskArns": [
-        "arn:aws:ecs:us-west-2:123456789012:task/a1b2c3d4-5678-90ab-cdef-44444EXAMPLE"
+        "arn:aws:ecs:us-west-2:123456789012:task/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
     ]
 }
 ```
-For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-tasks.html) in *AWS CLI Command Reference*.
 
 ### `monitor-express-gateway-service`
@@ -2653,24 +2691,26 @@ For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.
 The following code example shows how to use `monitor-express-gateway-service`.
 
 **AWS CLI**
-**To monitor an Express Gateway Service deployment**
+**Example 1: To monitor an Express Gateway Service deployment**
 The following `monitor-express-gateway-service` example monitors an Express Gateway Service deployment, showing all resources associated with the service.
 
 ```
-aws ecs monitor-express-gateway-service --service-arn {{arn:aws:ecs:us-east-1:123456789012:service/my-cluster/my-express-gateway-service}}
+aws ecs monitor-express-gateway-service \
+    --service-arn {{arn:aws:ecs:us-west-2:123456789012:service/my-cluster/my-express-gateway-service}}
 ```
-This command displays an interactive monitoring interface rather than producing standard output.
+This command produces no output. It displays an interactive monitoring interface.
 For more information, see [Express Gateway Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html) in the *Amazon Elastic Container Service Developer Guide*.
-**To monitor only resources that changed in the latest deployment**
+**Example 2: To monitor only resources that changed in the latest deployment**
 The following `monitor-express-gateway-service` example monitors an Express Gateway Service but only shows resources that have changed in the most recent deployment.
 
 ```
 aws ecs monitor-express-gateway-service \
-    --service-arn {{arn:aws:ecs:us-east-1:123456789012:service/my-cluster/my-express-gateway-service}} \
+    --service-arn {{arn:aws:ecs:us-west-2:123456789012:service/my-cluster/my-express-gateway-service}} \
     --resource-view {{DEPLOYMENT}}
 ```
+This command produces no output. It displays an interactive monitoring interface.
 For more information, see [Express Gateway Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html) in the *Amazon Elastic Container Service Developer Guide*.
-**To monitor with a custom timeout**
+**Example 3: To monitor with a custom timeout**
 The following `monitor-express-gateway-service` example monitors an Express Gateway Service with a timeout of 60 minutes instead of the default 30 minutes.
 
 ```
@@ -2678,7 +2718,7 @@ aws ecs monitor-express-gateway-service \
     --service-arn {{my-express-gateway-service}} \
     --timeout {{60}}
 ```
-The command provides an interactive display with the following controls:
+This command produces no output. It displays an interactive monitoring interface. The interface provides the following controls:
 Press `up` / `down` keys to scroll up or down through the resource listPress `q` to quit the monitoring sessionStatus bar shows a spinner indicating active monitoring
 The command requires a terminal (TTY) and will continue monitoring until manually stopped by the user or the timeout is reached.
 For more information, see [Express Gateway Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html) in the *Amazon Elastic Container Service Developer Guide*.
@@ -2694,7 +2734,9 @@ The following code example shows how to use `put-account-setting-default`.
 The following `put-account-setting-default` example modifies the default account setting for all IAM users or roles on your account. These changes apply to the entire AWS account unless an IAM user or role explicitly overrides these settings for themselves.
 
 ```
-aws ecs put-account-setting-default --name {{serviceLongArnFormat}} --value {{enabled}}
+aws ecs put-account-setting-default \
+    --name {{serviceLongArnFormat}} \
+    --value {{enabled}}
 ```
 Output:
 
@@ -2707,7 +2749,7 @@ Output:
     }
 }
 ```
-For more information, see [Amazon Resource Names (ARNs) and IDs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-resource-ids.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Access Amazon ECS features with account settings](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [PutAccountSettingDefault](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/put-account-setting-default.html) in *AWS CLI Command Reference*.
 
 ### `put-account-setting`
@@ -2716,7 +2758,7 @@ For more information, see [Amazon Resource Names (ARNs) and IDs](https://docs.aw
 The following code example shows how to use `put-account-setting`.
 
 **AWS CLI**
-**To modify the account setting for your IAM user account**
+**Example 1: To modify the account setting for your IAM user account**
 The following `put-account-setting` example sets the `containerInsights` account setting to `enhanced` for your IAM user account. This turns on Container Insights with enhanced observability.
 
 ```
@@ -2737,16 +2779,8 @@ Output:
 }
 ```
 For more information, see [Modifying Account Settings](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-modifying-longer-id-settings.html) in the *Amazon ECS Developer Guide*.
-+  For API details, see [PutAccountSetting](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/put-account-setting.html) in *AWS CLI Command Reference*.
-
-### `put-account-settings`
-<a name="ecs_PutAccountSettings_cli_2_topic"></a>
-
-The following code example shows how to use `put-account-settings`.
-
-**AWS CLI**
-**To modify the account settings for an IAM user or IAM role**
-The following `put-account-setting` example modifies the account settings for the specified IAM user or IAM role.
+**Example 2: To modify the account setting for a specified IAM user or IAM role**
+The following `put-account-setting` example modifies the `serviceLongArnFormat` account setting for the specified IAM user or IAM role.
 
 ```
 aws ecs put-account-setting \
@@ -2765,7 +2799,8 @@ Output:
     }
 }
 ```
-+  For API details, see [PutAccountSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/put-account-settings.html) in *AWS CLI Command Reference*.
+For more information, see [Modifying Account Settings](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-modifying-longer-id-settings.html) in the *Amazon ECS Developer Guide*.
++  For API details, see [PutAccountSetting](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/put-account-setting.html) in *AWS CLI Command Reference*.
 
 ### `put-attributes`
 <a name="ecs_PutAttributes_cli_2_topic"></a>
@@ -2774,11 +2809,11 @@ The following code example shows how to use `put-attributes`.
 
 **AWS CLI**
 **To create an attribute and associate it with an Amazon ECS resource**
-The following `put-attributes` applies an attribute with the name stack and the value production to a container instance.
+The following `put-attributes` example applies an attribute with the name stack and the value production to a container instance.
 
 ```
 aws ecs put-attributes \
-    --attributes {{name=stack,value=production,targetId=arn:aws:ecs:us-west-2:130757420319:container-instance/1c3be8ed-df30-47b4-8f1e-6e68ebd01f34}}
+    --attributes {{name=stack,value=production,targetId=arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -2787,12 +2822,13 @@ Output:
     "attributes": [
         {
             "name": "stack",
-            "targetId": "arn:aws:ecs:us-west-2:130757420319:container-instance/1c3be8ed-df30-47b4-8f1e-6e68ebd01f34",
+            "targetId": "arn:aws:ecs:us-west-2:123456789012:container-instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "value": "production"
         }
     ]
 }
 ```
+For more information, see [Define which container instances Amazon ECS uses for tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [PutAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/put-attributes.html) in *AWS CLI Command Reference*.
 
 ### `put-cluster-capacity-providers`
@@ -2847,8 +2883,8 @@ Output:
             }
         ],
         "attachments": [
-           {
-                "id": "0fb0c8f4-6edd-4de1-9b09-17e470ee1918",
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "type": "as_policy",
                 "status": "ACTIVE",
                 "details": [
@@ -2863,7 +2899,7 @@ Output:
                 ]
             },
             {
-                "id": "ae592060-2382-4663-9476-b015c685593c",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "type": "as_policy",
                 "status": "ACTIVE",
                 "details": [
@@ -2882,7 +2918,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS capacity providers for EC2 workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To remove a capacity provider from a cluster**
 The following `put-cluster-capacity-providers` example removes a capacity provider from a cluster. The `describe-clusters` command is used to describe the current capacity providers associated with a cluster. When removing a capacity provider from a cluster, you must specify the capacity providers you want to remain associated with the cluster as well as the default capacity provider strategy to associate with the cluster. In this example, the cluster has the `MyCapacityProvider1` and `MyCapacityProvider2` capacity providers associated with it and you want to remove the `MyCapacityProvider2` capacity provider, so you specify only `MyCapacityProvider1` in the command along with the updated default capacity provider strategy.
 
@@ -2916,13 +2952,15 @@ Output:
             "MyCapacityProvider1"
         ],
         "defaultCapacityProviderStrategy": [
-            "capacityProvider": "MyCapacityProvider1",
-            "weight": 1,
-            "base": 0
+            {
+                "capacityProvider": "MyCapacityProvider1",
+                "weight": 1,
+                "base": 0
+            }
         ],
         "attachments": [
-           {
-                "id": "0fb0c8f4-6edd-4de1-9b09-17e470ee1918",
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "type": "as_policy",
                 "status": "ACTIVE",
                 "details": [
@@ -2937,7 +2975,7 @@ Output:
                 ]
             },
             {
-                "id": "ae592060-2382-4663-9476-b015c685593c",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "type": "as_policy",
                 "status": "DELETING",
                 "details": [
@@ -2956,7 +2994,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS capacity providers for EC2 workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
 **Example 3: To remove all capacity providers from a cluster**
 The following `put-cluster-capacity-providers` example removes all existing capacity providers from the cluster.
 
@@ -2989,8 +3027,8 @@ Output:
         "capacityProviders": [],
         "defaultCapacityProviderStrategy": [],
         "attachments": [
-           {
-                "id": "0fb0c8f4-6edd-4de1-9b09-17e470ee1918",
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "type": "as_policy",
                 "status": "DELETING",
                 "details": [
@@ -3005,7 +3043,7 @@ Output:
                 ]
             },
             {
-                "id": "ae592060-2382-4663-9476-b015c685593c",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "type": "as_policy",
                 "status": "DELETING",
                 "details": [
@@ -3024,7 +3062,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster capacity providers](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-capacity-providers.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS capacity providers for EC2 workloads](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [PutClusterCapacityProviders](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/put-cluster-capacity-providers.html) in *AWS CLI Command Reference*.
 
 ### `register-task-definition`
@@ -3069,11 +3107,11 @@ Output:
         "family": "sleep360",
         "placementConstraints": [],
         "compatibilities": [
-                "EXTERNAL",
-                "EC2"
+            "EXTERNAL",
+            "EC2"
         ],
         "volumes": [],
-        "taskDefinitionArn": "arn:aws:ecs:us-east-1:123456789012:task-definition/sleep360:1",
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/sleep360:1",
         "containerDefinitions": [
             {
                 "environment": [],
@@ -3086,16 +3124,16 @@ Output:
                     "sleep",
                     "360"
                 ],
-        "memory": 10,
-        "essential": true,
-        "volumesFrom": []
-        }
-    ],
+                "memory": 10,
+                "essential": true,
+                "volumesFrom": []
+            }
+        ],
         "revision": 1
     }
 }
 ```
-For more information, see [Example task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Example Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html) in the *Amazon ECS Developer Guide*.
 **Example 2: To register a task definition with a JSON string parameter**
 The following `register-task-definition` example registers a task definition using container definitions provided as a JSON string parameter with escaped double quotes.
 
@@ -3104,8 +3142,42 @@ aws ecs register-task-definition \
     --family {{sleep360}} \
     --container-definitions "[{\"name\":\"sleep\",\"image\":\"busybox\",\"cpu\":10,\"command\":[\"sleep\",\"360\"],\"memory\":10,\"essential\":true}]"
 ```
-The output is identical to the previous example.
-For more information, see [Creating a Task Definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-task-definition.html) in the *Amazon ECS Developer Guide*.
+Output:
+
+```
+{
+    "taskDefinition": {
+        "status": "ACTIVE",
+        "family": "sleep360",
+        "placementConstraints": [],
+        "compatibilities": [
+            "EXTERNAL",
+            "EC2"
+        ],
+        "volumes": [],
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/sleep360:1",
+        "containerDefinitions": [
+            {
+                "environment": [],
+                "name": "sleep",
+                "mountPoints": [],
+                "image": "busybox",
+                "cpu": 10,
+                "portMappings": [],
+                "command": [
+                    "sleep",
+                    "360"
+                ],
+                "memory": 10,
+                "essential": true,
+                "volumesFrom": []
+            }
+        ],
+        "revision": 1
+    }
+}
+```
+For more information, see [Creating an Amazon ECS task definition using the console](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-task-definition.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [RegisterTaskDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/register-task-definition.html) in *AWS CLI Command Reference*.
 
 ### `run-task`
@@ -3121,7 +3193,7 @@ The following `run-task` example runs a task on the default cluster and uses a c
 aws ecs run-task \
     --cluster {{default}} \
     --task-definition {{sleep360:1}} \
-    --client-token {{550e8400-e29b-41d4-a716-446655440000}}
+    --client-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -3136,14 +3208,14 @@ Output:
                     "value": "x86_64"
                 }
             ],
-            "availabilityZone": "us-east-1b",
+            "availabilityZone": "us-west-2b",
             "capacityProviderName": "example-capacity-provider",
-            "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/default",
-            "containerInstanceArn": "arn:aws:ecs:us-east-1:123456789012:container-instance/default/bc4d2ec611d04bb7bb97e83ceEXAMPLE",
+            "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/default",
+            "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/default/bc4d2ec611d04bb7bb97e83ceEXAMPLE",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-east-1:123456789012:container/default/d6f51cc5bbc94a47969c92035e9f66f8/75853d2d-711e-458a-8362-0f0aEXAMPLE",
-                    "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/default/d6f51cc5bbc94a47969c9203EXAMPLE",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/default/d6f51cc5bbc94a47969c92035e9f66f8/75853d2d-711e-458a-8362-0f0aEXAMPLE",
+                    "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/d6f51cc5bbc94a47969c9203EXAMPLE",
                     "name": "sleep",
                     "image": "busybox",
                     "lastStatus": "PENDING",
@@ -3169,8 +3241,8 @@ Output:
                 "inferenceAcceleratorOverrides": []
             },
             "tags": [],
-            "taskArn": "arn:aws:ecs:us-east-1:123456789012:task/default/d6f51cc5bbc94a47969c9203EXAMPLE",
-            "taskDefinitionArn": "arn:aws:ecs:us-east-1:123456789012:task-definition/sleep360:1",
+            "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/d6f51cc5bbc94a47969c9203EXAMPLE",
+            "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/sleep360:1",
             "version": 1
         }
     ],
@@ -3189,17 +3261,17 @@ Contents of `ebs.json`:
 
 ```
 {
-   "cluster": "default",
-   "taskDefinition": "mytaskdef",
-   "launchType": "FARGATE",
-   "networkConfiguration":{
+    "cluster": "default",
+    "taskDefinition": "mytaskdef",
+    "launchType": "FARGATE",
+    "networkConfiguration":{
         "awsvpcConfiguration":{
             "assignPublicIp": "ENABLED",
             "securityGroups": ["sg-12344321"],
             "subnets":["subnet-12344321"]
         }
     },
-   "volumeConfigurations": [
+    "volumeConfigurations": [
         {
             "name": "myEBSVolume",
             "managedEBSVolume": {
@@ -3207,7 +3279,7 @@ Contents of `ebs.json`:
                 "sizeInGiB": 100,
                 "roleArn":"arn:aws:iam::1111222333:role/ecsInfrastructureRole",
                 "encrypted": true,
-                "kmsKeyId": "arn:aws:kms:region:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+                "kmsKeyId": "arn:aws:kms:region:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             }
         }
     ]
@@ -3221,18 +3293,18 @@ Output:
         {
             "attachments": [
                 {
-                    "id": "ce868693-15ca-4083-91ac-f782f64000c9",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                     "type": "ElasticNetworkInterface",
                     "status": "PRECREATED",
                     "details": [
                         {
-                        "name": "subnetId",
-                        "value": "subnet-070982705451dad82"
+                            "name": "subnetId",
+                            "value": "subnet-12344321"
                         }
                     ]
                 },
                 {
-                    "id": "a17ed863-786c-4372-b5b3-b23e53f37877",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                     "type": "AmazonElasticBlockStorage",
                     "status": "CREATED",
                     "details": [
@@ -3261,7 +3333,7 @@ Output:
             "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/default",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/default/7f1fbd3629434cc4b82d72d2f09b67c9/e21962a2-f328-4699-98a3-5161ac2c186a",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/default/7f1fbd3629434cc4b82d72d2f09b67c9/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
                     "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/7f1fbd3629434cc4b82d72d2f09b67c9",
                     "name": "container-using-ebs",
                     "image": "amazonlinux:2",
@@ -3343,7 +3415,7 @@ Output:
             "memory": "128",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/75f11ed4-8a3d-4f26-a33b-ad1db9e02d41",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/666fdccc2e2d4b6894dd422f4eeee8f8",
                     "name": "sleep",
                     "lastStatus": "PENDING",
@@ -3376,16 +3448,16 @@ Contents of `ebs.json`:
 
 ```
 {
-   "cluster": "default",
-   "taskDefinition": "mytaskdef",
-   "networkConfiguration":{
+    "cluster": "default",
+    "taskDefinition": "mytaskdef",
+    "networkConfiguration":{
         "awsvpcConfiguration":{
             "assignPublicIp": "ENABLED",
             "securityGroups": ["sg-12344321"],
             "subnets":["subnet-12344321"]
         }
     },
-   "volumeConfigurations": [
+    "volumeConfigurations": [
         {
             "name": "myEBSVolume",
             "managedEBSVolume": {
@@ -3393,7 +3465,7 @@ Contents of `ebs.json`:
                 "sizeInGiB": 100,
                 "roleArn":"arn:aws:iam::123456789012:role/ecsInfrastructureRole",
                 "encrypted": true,
-                "kmsKeyId": "arn:aws:kms:region:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+                "kmsKeyId": "arn:aws:kms:region:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             }
         }
     ]
@@ -3407,7 +3479,7 @@ Output:
         {
             "attachments": [
                 {
-                    "id": "aea29489-9dcd-49f1-8164-4d91566e1113",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                     "type": "ElasticNetworkInterface",
                     "status": "PRECREATED",
                     "details": [
@@ -3418,7 +3490,7 @@ Output:
                     ]
                 },
                 {
-                    "id": "f29e1222-9a1e-410f-b499-a12a7cd6d42e",
+                    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                     "type": "AmazonElasticBlockStorage",
                     "status": "CREATED",
                     "details": [
@@ -3448,7 +3520,7 @@ Output:
             "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/default/765936fadbdd46b5991a4bd70c2a43d4",
             "containers": [
                 {
-                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/default/bb122ace3ed84add92c00a351a03c69e/a4a9ed10-51c7-4567-9653-50e71b94f867",
+                    "containerArn": "arn:aws:ecs:us-west-2:123456789012:container/default/bb122ace3ed84add92c00a351a03c69e/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
                     "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/bb122ace3ed84add92c00a351a03c69e",
                     "name": "container-using-ebs",
                     "image": "amazonlinux:2",
@@ -3473,7 +3545,7 @@ Output:
                 ],
                 "inferenceAcceleratorOverrides": []
             },
-             "tags": [],
+            "tags": [],
             "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/bb122ace3ed84add92c00a351a03c69e",
             "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/mytaskdef:4",
             "version": 1
@@ -3492,7 +3564,7 @@ The following code example shows how to use `stop-task`.
 
 **AWS CLI**
 **To stop a task**
-The following `stop-task` stops the specified task from running in the default cluster.
+The following `stop-task` example stops the specified task from running in the default cluster.
 
 ```
 aws ecs stop-task \
@@ -3503,10 +3575,10 @@ Output:
 ```
 {
     "task": {
-        "taskArn": "arn:aws:ecs:us-west-2:130757420319:task/default/666fdccc2e2d4b6894dd422f4eeee8f8",
-        "clusterArn": "arn:aws:ecs:us-west-2:130757420319:cluster/default",
-        "taskDefinitionArn": "arn:aws:ecs:us-west-2:130757420319:task-definition/sleep360:3",
-        "containerInstanceArn": "arn:aws:ecs:us-west-2:130757420319:container-instance/default/765936fadbdd46b5991a4bd70c2a43d4",
+        "taskArn": "arn:aws:ecs:us-west-2:123456789012:task/default/666fdccc2e2d4b6894dd422f4eeee8f8",
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/default",
+        "taskDefinitionArn": "arn:aws:ecs:us-west-2:123456789012:task-definition/sleep360:3",
+        "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/default/765936fadbdd46b5991a4bd70c2a43d4",
         "overrides": {
             "containerOverrides": []
         },
@@ -3533,6 +3605,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon ECS standalone tasks](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/standalone-tasks.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [StopTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/stop-task.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -3541,24 +3614,26 @@ Output:
 The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
-**To tag a resource**
+**Example 1: To tag a resource**
 The following `tag-resource` example adds a single tag to the specified resource.
 
 ```
 aws ecs tag-resource \
-    --resource-arn {{arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster}}
+    --resource-arn {{arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster}} \
     --tags {{key=key1,value=value1}}
 ```
 This command produces no output.
-**To add multiple tags to a resource**
+For more information, see [Tagging Amazon ECS resources](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html) in the *Amazon ECS Developer Guide*.
+**Example 2: To add multiple tags to a resource**
 The following `tag-resource` example adds multiple tags to the specified resource.
 
 ```
 aws ecs tag-resource \
---resource-arn {{arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster}} \
---tags {{key=key1,value=value1}} {{key=key2,value=value2}} {{key=key3,value=value3}}
+    --resource-arn {{arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster}} \
+    --tags {{key=key1,value=value1}} {{key=key2,value=value2}} {{key=key3,value=value3}}
 ```
 This command produces no output.
+For more information, see [Tagging Amazon ECS resources](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -3576,7 +3651,50 @@ aws ecs untag-resource \
     --tag-keys {{key1,key2}}
 ```
 This command produces no output.
+For more information, see [Tagging Amazon ECS resources](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/untag-resource.html) in *AWS CLI Command Reference*.
+
+### `update-capacity-provider`
+<a name="ecs_UpdateCapacityProvider_cli_2_topic"></a>
+
+The following code example shows how to use `update-capacity-provider`.
+
+**AWS CLI**
+**To update the capacity provider in an ECS cluster**
+The following `update-capacity-provider` example shows how we can modify the parameters of the capacity provider in an ECS cluster.
+
+```
+aws ecs update-capacity-provider \
+    --name {{Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt}} \
+    --auto-scaling-group-provider {{"managedScaling={status=DISABLED,targetCapacity=50,minimumScalingStepSize=2,maximumScalingStepSize=30,instanceWarmupPeriod=200},managedTerminationProtection=DISABLED,managedDraining=DISABLED"}}
+```
+Output:
+
+```
+{
+    "capacityProvider": {
+        "capacityProviderArn": "arn:aws:ecs:us-west-2:123456789012:capacity-provider/Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
+        "name": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
+        "status": "ACTIVE",
+        "autoScalingGroupProvider": {
+            "autoScalingGroupArn": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-ECSAutoScalingGroup-f44jrQHS2nRB",
+            "managedScaling": {
+                "status": "ENABLED",
+                "targetCapacity": 100,
+                "minimumScalingStepSize": 1,
+                "maximumScalingStepSize": 10000,
+                "instanceWarmupPeriod": 300
+            },
+            "managedTerminationProtection": "DISABLED",
+            "managedDraining": "ENABLED"
+        },
+        "updateStatus": "UPDATE_IN_PROGRESS",
+        "tags": []
+    }
+}
+```
+For more information on Capacity Provider, see [Amazon ECS capacity providers for the EC2 launch type](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html) in the *Amazon ECS Developer Guide*.
++  For API details, see [UpdateCapacityProvider](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/update-capacity-provider.html) in *AWS CLI Command Reference*.
 
 ### `update-cluster-settings`
 <a name="ecs_UpdateClusterSettings_cli_2_topic"></a>
@@ -3624,8 +3742,8 @@ For more information, see [Modifying Account Settings](https://docs.aws.amazon.c
 The following code example shows how to use `update-cluster`.
 
 **AWS CLI**
-**Example 1: Update ECS cluster enabling containerInsights**
-The following `update-cluster` updates the containerInsights value to `enabled` in an already created cluster. By default, it is disabled.
+**Example 1: To update an ECS cluster to enable containerInsights**
+The following `update-cluster` example updates the containerInsights value to `enabled` in an already created cluster. By default, it is disabled.
 
 ```
 aws ecs update-cluster \
@@ -3635,78 +3753,80 @@ aws ecs update-cluster \
 Output:
 
 ```
-"cluster": {
-    "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/ECS-project-update-cluster",
-    "clusterName": "ECS-project-update-cluster",
-    "status": "ACTIVE",
-    "registeredContainerInstancesCount": 0,
-    "runningTasksCount": 0,
-    "pendingTasksCount": 0,
-    "activeServicesCount": 0,
-    "statistics": [],
-    "tags": [],
-    "settings": [
-        {
-            "name": "containerInsights",
-            "value": "enabled"
+{
+    "cluster": {
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/ECS-project-update-cluster",
+        "clusterName": "ECS-project-update-cluster",
+        "status": "ACTIVE",
+        "registeredContainerInstancesCount": 0,
+        "runningTasksCount": 0,
+        "pendingTasksCount": 0,
+        "activeServicesCount": 0,
+        "statistics": [],
+        "tags": [],
+        "settings": [
+            {
+                "name": "containerInsights",
+                "value": "enabled"
+            }
+        ],
+        "capacityProviders": [
+            "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
+        ],
+        "defaultCapacityProviderStrategy": [
+            {
+                "capacityProvider": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
+                "weight": 1,
+                "base": 0
+            }
+        ],
+        "attachments": [
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "type": "as_policy",
+                "status": "CREATED",
+                "details": [
+                    {
+                        "name": "capacityProviderName",
+                        "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
+                    },
+                    {
+                        "name": "scalingPolicyName",
+                        "value": "ECSManagedAutoScalingPolicy-152363a6-8c65-484c-b721-42c3e070ae93"
+                    }
+                ]
+            },
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                "type": "managed_draining",
+                "status": "CREATED",
+                "details": [
+                    {
+                        "name": "capacityProviderName",
+                        "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
+                    },
+                    {
+                        "name": "autoScalingLifecycleHookName",
+                        "value": "ecs-managed-draining-termination-hook"
+                    }
+                ]
+            },
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                "type": "sc",
+                "status": "ATTACHED",
+                "details": []
+            }
+        ],
+        "attachmentsStatus": "UPDATE_COMPLETE",
+        "serviceConnectDefaults": {
+            "namespace": "arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-igwrsylmy3kwvcdx"
         }
-    ],
-    "capacityProviders": [
-        "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
-    ],
-    "defaultCapacityProviderStrategy": [
-        {
-            "capacityProvider": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
-            "weight": 1,
-            "base": 0
-        }
-    ],
-    "attachments": [
-        {
-            "id": "069d002b-7634-42e4-b1d4-544f4c8f6380",
-            "type": "as_policy",
-            "status": "CREATED",
-            "details": [
-                {
-                    "name": "capacityProviderName",
-                    "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
-                },
-                {
-                    "name": "scalingPolicyName",
-                    "value": "ECSManagedAutoScalingPolicy-152363a6-8c65-484c-b721-42c3e070ae93"
-                }
-            ]
-        },
-        {
-            "id": "08b5b6ca-45e9-4209-a65d-e962a27c490a",
-            "type": "managed_draining",
-            "status": "CREATED",
-            "details": [
-                {
-                    "name": "capacityProviderName",
-                    "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
-                },
-                {
-                    "name": "autoScalingLifecycleHookName",
-                    "value": "ecs-managed-draining-termination-hook"
-                }
-            ]
-        },
-        {
-            "id": "45d0b36f-8cff-46b6-9380-1288744802ab",
-            "type": "sc",
-            "status": "ATTACHED",
-            "details": []
-        }
-    ],
-    "attachmentsStatus": "UPDATE_COMPLETE",
-    "serviceConnectDefaults": {
-        "namespace": "arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-igwrsylmy3kwvcdx"
     }
 }
 ```
-**Example 2: Update ECS cluster to set a default Service Connect namespace**
-The following `update-cluster` updates ECS cluster by setting a default Service Connect namespace.
+**Example 2: To update an ECS cluster to set a default Service Connect namespace**
+The following `update-cluster` example updates an ECS cluster by setting a default Service Connect namespace.
 
 ```
 aws ecs update-cluster \
@@ -3716,88 +3836,88 @@ aws ecs update-cluster \
 Output:
 
 ```
- {
-     "cluster": {
-         "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/ECS-project-update-cluster",
-         "clusterName": "ECS-project-update-cluster",
-         "status": "ACTIVE",
-         "registeredContainerInstancesCount": 0,
-         "runningTasksCount": 0,
-         "pendingTasksCount": 0,
-         "activeServicesCount": 0,
-         "statistics": [],
-         "tags": [],
-         "settings": [
-             {
-                 "name": "containerInsights",
-                 "value": "enabled"
-             }
-         ],
-         "capacityProviders": [
-             "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
-         ],
-         "defaultCapacityProviderStrategy": [
-             {
-                 "capacityProvider": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
-                 "weight": 1,
-                 "base": 0
-             }
-         ],
-         "attachments": [
-             {
-                 "id": "069d002b-7634-42e4-b1d4-544f4c8f6380",
-                 "type": "as_policy",
-                 "status": "CREATED",
-                 "details": [
-                     {
-                         "name": "capacityProviderName",
-                         "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
-                     },
-                     {
-                         "name": "scalingPolicyName",
-                         "value": "ECSManagedAutoScalingPolicy-152363a6-8c65-484c-b721-42c3e070ae93"
-                     }
-                 ]
-             },
-             {
-                 "id": "08b5b6ca-45e9-4209-a65d-e962a27c490a",
-                 "type": "managed_draining",
-                 "status": "CREATED",
-                 "details": [
-                     {
-                         "name": "capacityProviderName",
-                         "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
-                     },
-                     {
-                         "name": "autoScalingLifecycleHookName",
-                         "value": "ecs-managed-draining-termination-hook"
-                     }
-                 ]
-             },
-             {
-                 "id": "45d0b36f-8cff-46b6-9380-1288744802ab",
-                 "type": "sc",
-                 "status": "DELETED",
-                 "details": []
-             },
-             {
-                 "id": "3e6890c3-609c-4832-91de-d6ca891b3ef1",
-                 "type": "sc",
-                 "status": "ATTACHED",
-                 "details": []
-             },
-             {
-                 "id": "961b8ec1-c2f1-4070-8495-e669b7668e90",
-                 "type": "sc",
-                 "status": "DELETED",
-                 "details": []
-             }
-         ],
-         "attachmentsStatus": "UPDATE_COMPLETE",
-         "serviceConnectDefaults": {
-             "namespace": "arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-dtjmxqpfi46ht7dr"
-         }
-     }
+{
+    "cluster": {
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/ECS-project-update-cluster",
+        "clusterName": "ECS-project-update-cluster",
+        "status": "ACTIVE",
+        "registeredContainerInstancesCount": 0,
+        "runningTasksCount": 0,
+        "pendingTasksCount": 0,
+        "activeServicesCount": 0,
+        "statistics": [],
+        "tags": [],
+        "settings": [
+            {
+                "name": "containerInsights",
+                "value": "enabled"
+            }
+        ],
+        "capacityProviders": [
+            "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
+        ],
+        "defaultCapacityProviderStrategy": [
+            {
+                "capacityProvider": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt",
+                "weight": 1,
+                "base": 0
+            }
+        ],
+        "attachments": [
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "type": "as_policy",
+                "status": "CREATED",
+                "details": [
+                    {
+                        "name": "capacityProviderName",
+                        "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
+                    },
+                    {
+                        "name": "scalingPolicyName",
+                        "value": "ECSManagedAutoScalingPolicy-152363a6-8c65-484c-b721-42c3e070ae93"
+                    }
+                ]
+            },
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                "type": "managed_draining",
+                "status": "CREATED",
+                "details": [
+                    {
+                        "name": "capacityProviderName",
+                        "value": "Infra-ECS-Cluster-ECS-project-update-cluster-d6bb6d5b-EC2CapacityProvider-3fIpdkLywwFt"
+                    },
+                    {
+                        "name": "autoScalingLifecycleHookName",
+                        "value": "ecs-managed-draining-termination-hook"
+                    }
+                ]
+            },
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                "type": "sc",
+                "status": "DELETED",
+                "details": []
+            },
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+                "type": "sc",
+                "status": "ATTACHED",
+                "details": []
+            },
+            {
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+                "type": "sc",
+                "status": "DELETED",
+                "details": []
+            }
+        ],
+        "attachmentsStatus": "UPDATE_COMPLETE",
+        "serviceConnectDefaults": {
+            "namespace": "arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-dtjmxqpfi46ht7dr"
+        }
+    }
 }
 ```
 For more information on Service Connect, see [Use Service Connect to connect Amazon ECS services with short names](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html) in the *Amazon ECS Developer Guide*.
@@ -3813,7 +3933,9 @@ The following code example shows how to use `update-container-agent`.
 The following `update-container-agent` example updates the container agent on the specified container instance in the default cluster.
 
 ```
-aws ecs update-container-agent --cluster {{default}} --container-instance {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+aws ecs update-container-agent \
+    --cluster {{default}} \
+    --container-instance {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -3821,7 +3943,6 @@ Output:
 {
     "containerInstance": {
         "status": "ACTIVE",
-...
         "agentUpdateStatus": "PENDING",
         "versionInfo": {
             "agentVersion": "1.0.0",
@@ -3831,7 +3952,7 @@ Output:
     }
 }
 ```
-For more information, see [Updating the Amazon ECS Container Agent](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-update.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Updating the Amazon ECS container agent](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-update.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [UpdateContainerAgent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/update-container-agent.html) in *AWS CLI Command Reference*.
 
 ### `update-container-instances-state`
@@ -3841,7 +3962,7 @@ The following code example shows how to use `update-container-instances-state`.
 
 **AWS CLI**
 **To update the state of a container instance**
-The following `update-container-instances-state` updates the state of the specified container instance to `DRAINING` which will remove it from the cluster is it registered to.
+The following `update-container-instances-state` example updates the state of the specified container instance to `DRAINING` which will remove it from the cluster is it registered to.
 
 ```
 aws ecs update-container-instances-state \
@@ -3854,7 +3975,7 @@ Output:
 {
     "containerInstances": [
         {
-            "containerInstanceArn": "arn:aws:ecs:us-west-2:130757420319:container-instance/default/765936fadbdd46b5991a4bd70c2a43d4",
+            "containerInstanceArn": "arn:aws:ecs:us-west-2:123456789012:container-instance/default/765936fadbdd46b5991a4bd70c2a43d4",
             "ec2InstanceId": "i-013d87ffbb4d513bf",
             "version": 4390,
             "versionInfo": {
@@ -4111,6 +4232,7 @@ Output:
     "failures": []
 }
 ```
+For more information, see [Draining Amazon ECS container instances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-instance-draining.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [UpdateContainerInstancesState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/update-container-instances-state.html) in *AWS CLI Command Reference*.
 
 ### `update-service-primary-task-set`
@@ -4165,6 +4287,7 @@ Output:
     }
 }
 ```
+For more information, see [Deploy Amazon ECS services using a third-party controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [UpdateServicePrimaryTaskSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/update-service-primary-task-set.html) in *AWS CLI Command Reference*.
 
 ### `update-service`
@@ -4260,7 +4383,7 @@ Output:
                             "subnet-12344321"
                         ],
                         "securityGroups": [
-                             "sg-12344321"
+                            "sg-12344321"
                         ],
                         "assignPublicIp": "ENABLED"
                     }
@@ -4272,17 +4395,17 @@ Output:
         "roleArn": "arn:aws:iam::123456789012:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "e40b4d1c-80d9-4834-aaf3-6a268e530e17",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "createdAt": "2025-02-21T10:31:26.037000-06:00",
                 "message": "(my-http-service) has reached a steady state."
             },
             {
-                "id": "6ac069ad-fc8b-4e49-a35d-b5574a964c8e",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "createdAt": "2025-02-21T04:31:22.703000-06:00",
                 "message": "(my-http-service) has reached a steady state."
             },
             {
-                "id": "265f7d37-dfd1-4880-a846-ec486f341919",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "createdAt": "2025-02-20T22:31:22.514000-06:00",
                 "message": "(my-http-service) has reached a steady state."
             }
@@ -4293,7 +4416,7 @@ Output:
         "networkConfiguration": {
             "awsvpcConfiguration": {
                 "subnets": [
-                    "subnet-12344321",
+                    "subnet-12344321"
                 ],
                 "securityGroups": [
                     "sg-12344321"
@@ -4329,9 +4452,9 @@ Output:
 ```
 {
     "service": {
-        "serviceArn": "arn:aws:ecs:us-east-1:123456789012:service/MyCluster/my-http-service",
+        "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/my-http-service",
         "serviceName": "my-http-service",
-        "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/MyCluster",
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
         "loadBalancers": [],
         "serviceRegistries": [],
         "status": "ACTIVE",
@@ -4347,7 +4470,7 @@ Output:
         ],
         "platformVersion": "LATEST",
         "platformFamily": "Linux",
-        "taskDefinition": "arn:aws:ecs:us-east-1:123456789012:task-definition/MyTaskDefinition",
+        "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/MyTaskDefinition",
         "deploymentConfiguration": {
             "deploymentCircuitBreaker": {
                 "enable": true,
@@ -4365,7 +4488,7 @@ Output:
             {
                 "id": "ecs-svc/1976744184940610707",
                 "status": "PRIMARY",
-                "taskkDefinition": "arn:aws:ecs:us-east-1:123456789012:task-definition/MyTaskDefinition",
+                "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/MyTaskDefinition",
                 "desiredCount": 1,
                 "pendingCount": 0,
                 "runningCount": 1,
@@ -4400,17 +4523,17 @@ Output:
         "roleArn": "arn:aws:iam::123456789012:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "f27350b9-4b2a-4e2e-b72e-a4b68380de45",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "createdAt": "2024-12-30T13:24:07.345000-05:00",
                 "message": "(service my-http-service) has reached a steady state."
             },
             {
-                "id": "e764ec63-f53f-45e3-9af2-d99f922d2957",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "createdAt": "2024-12-30T12:32:21.600000-05:00",
                 "message": "(service my-http-service) has reached a steady state."
             },
             {
-                "id": "28444756-c2fa-47f8-bd60-93a8e05f3991",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "createdAt": "2024-12-08T19:26:10.367000-05:00",
                 "message": "(service my-http-service) has reached a steady state."
             }
@@ -4455,11 +4578,11 @@ Contents of `ebs.json`:
 
 ```
 {
-   "cluster": "mycluster",
-   "taskDefinition": "mytaskdef",
-   "service": "my-http-service",
-   "desiredCount": 2,
-   "volumeConfigurations": [
+    "cluster": "mycluster",
+    "taskDefinition": "mytaskdef",
+    "service": "my-http-service",
+    "desiredCount": 2,
+    "volumeConfigurations": [
         {
             "name": "myEbsVolume",
             "managedEBSVolume": {
@@ -4471,7 +4594,7 @@ Contents of `ebs.json`:
                 "filesystemType": "ext4"
             }
         }
-   ]
+    ]
 }
 ```
 Output:
@@ -4522,7 +4645,7 @@ Output:
                 "networkConfiguration": {
                     "awsvpcConfiguration": {
                         "subnets": [
-                            "subnet-12344321",
+                            "subnet-12344321"
                         ],
                         "securityGroups": [
                             "sg-12344321"
@@ -4577,20 +4700,20 @@ Output:
         "roleArn": "arn:aws:iam::123456789012:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "b5823113-c2c5-458e-9649-8c2ed38f23a5",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
                 "createdAt": "2025-02-21T14:57:22.508000-06:00",
                 "message": "(service my-http-service) has reached a steady state."
             },
             {
-                "id": "b05a48e8-da35-4074-80aa-37ceb3167357",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
                 "createdAt": "2025-02-21T14:57:22.507000-06:00",
                 "message": "(service my-http-service) (deployment ecs-svc/5191625155316533644) deployment completed."
             },
             {
-                "id": "a10cd55d-4ba6-4cea-a655-5a5d32ada8a0",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999",
                 "createdAt": "2025-02-21T14:55:32.833000-06:00",
                 "message": "(service my-http-service) has started 1 tasks: (task fb9c8df512684aec92f3c57dc3f22361)."
-            },
+            }
         ],
         "createdAt": "2025-02-21T14:54:48.862000-06:00",
         "placementConstraints": [],
@@ -4673,7 +4796,7 @@ Output:
                 "failedTasks": 0,
                 "createdAt": "2025-02-21T15:25:38.598000-06:00",
                 "updatedAt": "2025-02-21T15:25:38.598000-06:00",
-                    "launchType": "FARGATE",
+                "launchType": "FARGATE",
                 "platformVersion": "1.4.0",
                 "platformFamily": "Linux",
                 "networkConfiguration": {
@@ -4734,54 +4857,49 @@ Output:
         "roleArn": "arn:aws:iam::123456789012:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
         "events": [
             {
-                "id": "4f2c3ca1-7800-4048-ba57-bba210ada2ad",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "createdAt": "2025-02-21T15:10:59.959000-06:00",
                 "message": "(service my-http-service) has reached a steady state."
             },
             {
-                "id": "4b36a593-2d40-4ed6-8be8-b9b699eb6198",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "createdAt": "2025-02-21T15:10:59.958000-06:00",
                 "message": "(service my-http-service) (deployment ecs-svc/2420458347226626275) deployment completed."
             },
             {
-                "id": "88380089-14e2-4ef0-8dbb-a33991683371",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "createdAt": "2025-02-21T15:09:39.055000-06:00",
                 "message": "(service my-http-service) has stopped 1 running tasks: (task fb9c8df512684aec92f3c57dc3f22361)."
             },
             {
-                "id": "97d84243-d52f-4255-89bb-9311391c61f6",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                 "createdAt": "2025-02-21T15:08:57.653000-06:00",
                 "message": "(service my-http-service) has stopped 1 running tasks: (task 33eff090ad2c40539daa837e6503a9bc)."
             },
             {
-                "id": "672ece6c-e2d0-4021-b5da-eefb14001687",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
                 "createdAt": "2025-02-21T15:08:15.631000-06:00",
                 "message": "(service my-http-service) has started 1 tasks: (task 996c02a66ff24f3190a4a8e0c841740f)."
             },
             {
-                "id": "a3cf9bea-9be6-4175-ac28-4c68360986eb",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
                 "createdAt": "2025-02-21T15:07:36.931000-06:00",
                 "message": "(service my-http-service) has started 1 tasks: (task d5d23c39f89e46cf9a647b9cc6572feb)."
             },
             {
-                "id": "b5823113-c2c5-458e-9649-8c2ed38f23a5",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
                 "createdAt": "2025-02-21T14:57:22.508000-06:00",
                 "message": "(service my-http-service) has reached a steady state."
             },
             {
-                "id": "b05a48e8-da35-4074-80aa-37ceb3167357",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
                 "createdAt": "2025-02-21T14:57:22.507000-06:00",
                 "message": "(service my-http-service) (deployment ecs-svc/5191625155316533644) deployment completed."
             },
             {
-                "id": "a10cd55d-4ba6-4cea-a655-5a5d32ada8a0",
+                "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999",
                 "createdAt": "2025-02-21T14:55:32.833000-06:00",
                 "message": "(service my-http-service) has started 1 tasks: (task fb9c8df512684aec92f3c57dc3f22361)."
-            },
-            {
-                "id": "42da91fa-e26d-42ef-88c3-bb5965c56b2f",
-                "createdAt": "2025-02-21T14:55:02.703000-06:00",
-                "message": "(service my-http-service) has started 1 tasks: (task 33eff090ad2c40539daa837e6503a9bc)."
             }
         ],
         "createdAt": "2025-02-21T14:54:48.862000-06:00",
@@ -4826,9 +4944,9 @@ Output:
 ```
 {
     "service": {
-        "serviceArn": "arn:aws:ecs:us-east-1:123456789012:service/MyCluster/my-http-service",
+        "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/my-http-service",
         "serviceName": "my-http-service",
-        "clusterArn": "arn:aws:ecs:us-east-1:123456789012:cluster/MyCluster",
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
         "loadBalancers": [],
         "serviceRegistries": [],
         "status": "ACTIVE",
@@ -4844,7 +4962,7 @@ Output:
         ],
         "platformVersion": "LATEST",
         "platformFamily": "Linux",
-        "taskDefinition": "arn:aws:ecs:us-east-1:123456789012:task-definition/MyTaskDefinition",
+        "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/MyTaskDefinition",
         "deploymentConfiguration": {
             "deploymentCircuitBreaker": {
                 "enable": true,
@@ -4862,7 +4980,7 @@ Output:
             {
                 "id": "ecs-svc/1976744184940610707",
                 "status": "PRIMARY",
-                "taskkDefinition": "arn:aws:ecs:us-east-1:123456789012:task-definition/MyTaskDefinition",
+                "taskDefinition": "arn:aws:ecs:us-west-2:123456789012:task-definition/MyTaskDefinition",
                 "desiredCount": 1,
                 "pendingCount": 0,
                 "runningCount": 1,
@@ -4933,8 +5051,8 @@ For more information, see [Updating an Amazon ECS service using the console](htt
 The following code example shows how to use `update-task-protection`.
 
 **AWS CLI**
-**Example 1: Enable task protection for ECS tasks**
-The following `update-task-protection` protects your ECS task from termination during scale-in from Deployments or Service AutoScaling. You can specify custom expiration period for task protection from 1 up to 2,880 minutes (48 hours). If you do not specify expiration period, enabling task protection default time is 2 hours.
+**Example 1: To enable task protection for ECS tasks**
+The following `update-task-protection` example protects your ECS task from termination during scale-in from Deployments or Service AutoScaling. You can specify custom expiration period for task protection from 1 up to 2,880 minutes (48 hours). If you do not specify expiration period, enabling task protection default time is 2 hours.
 
 ```
 aws ecs update-task-protection \
@@ -4957,8 +5075,8 @@ Output:
 "failures": []
 }
 ```
-**Example 2: Disable task protection for ECS tasks**
-The following `update-task-protection` disables the tasks protected from scale in from Deployments or Service AutoScaling.
+**Example 2: To disable task protection for ECS tasks**
+The following `update-task-protection` example disables the tasks protected from scale in from Deployments or Service AutoScaling.
 
 ```
 aws ecs update-task-protection \
@@ -5035,4 +5153,5 @@ Output:
     }
 }
 ```
+For more information, see [Deploy Amazon ECS services using a third-party controller](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [UpdateTaskSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/update-task-set.html) in *AWS CLI Command Reference*.

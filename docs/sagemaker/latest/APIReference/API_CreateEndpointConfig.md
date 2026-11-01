@@ -95,6 +95,11 @@ When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIR
    },
    "ProductionVariants": [
       {
+         "AcceleratorPartitionLayouts": [
+            {
+               "AcceleratorPartitionTypes": [ "{{string}}" ]
+            }
+         ],
          "AcceleratorType": "{{string}}",
          "CapacityReservationConfig": {
             "CapacityReservationPreference": "{{string}}",
@@ -148,6 +153,11 @@ When you call [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIR
    ],
    "ShadowProductionVariants": [
       {
+         "AcceleratorPartitionLayouts": [
+            {
+               "AcceleratorPartitionTypes": [ "{{string}}" ]
+            }
+         ],
          "AcceleratorType": "{{string}}",
          "CapacityReservationConfig": {
             "CapacityReservationPreference": "{{string}}",

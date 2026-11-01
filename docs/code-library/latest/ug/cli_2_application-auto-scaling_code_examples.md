@@ -26,12 +26,17 @@ The following code example shows how to use `delete-scaling-policy`.
 
 **AWS CLI**
 **To delete a scaling policy**
-This example deletes a scaling policy for the Amazon ECS service web-app running in the default cluster.
-Command:
+The following `delete-scaling-policy` example deletes a scaling policy for the Amazon ECS service web-app running in the default cluster.
 
 ```
-aws application-autoscaling delete-scaling-policy --policy-name {{web-app-cpu-lt-25}} --scalable-dimension {{ecs:service:DesiredCount}} --resource-id {{service/default/web-app}} --service-namespace {{ecs}}
+aws application-autoscaling delete-scaling-policy \
+    --policy-name {{web-app-cpu-lt-25}} \
+    --scalable-dimension {{ecs:service:DesiredCount}} \
+    --resource-id {{service/default/web-app}} \
+    --service-namespace {{ecs}}
 ```
+This command produces no output.
+For more information, see [Delete a step scaling policy for Application Auto Scaling using the AWS CLI](https://docs.aws.amazon.com/autoscaling/application/userguide/delete-step-scaling-policy.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [DeleteScalingPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/delete-scaling-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-scheduled-action`
@@ -41,7 +46,7 @@ The following code example shows how to use `delete-scheduled-action`.
 
 **AWS CLI**
 **To delete a scheduled action**
-The following `delete-scheduled-action` example deletes the specified scheduled action from the specified Amazon AppStream 2.0 fleet:
+The following `delete-scheduled-action` example deletes the specified scheduled action from the specified Amazon AppStream 2.0 fleet.
 
 ```
 aws application-autoscaling delete-scheduled-action \
@@ -61,23 +66,30 @@ The following code example shows how to use `deregister-scalable-target`.
 
 **AWS CLI**
 **To deregister a scalable target**
-This example deregisters a scalable target for an Amazon ECS service called web-app that is running in the default cluster.
-Command:
+The following `deregister-scalable-target` example deregisters a scalable target for an Amazon ECS service called web-app that is running in the default cluster.
 
 ```
-aws application-autoscaling deregister-scalable-target --service-namespace {{ecs}} --scalable-dimension {{ecs:service:DesiredCount}} --resource-id {{service/default/web-app}}
+aws application-autoscaling deregister-scalable-target \
+    --service-namespace {{ecs}} \
+    --scalable-dimension {{ecs:service:DesiredCount}} \
+    --resource-id {{service/default/web-app}}
 ```
-This example deregisters a scalable target for a custom resource. The custom-resource-id.txt file contains a string that identifies the Resource ID, which, for a custom resource, is the path to the custom resource through your Amazon API Gateway endpoint.
-Command:
+This command produces no output.
+For more information, see [Application Auto Scaling concepts](https://docs.aws.amazon.com/autoscaling/application/userguide/getting-started.html) in the *Application Auto Scaling User Guide*.
+The following `deregister-scalable-target` example deregisters a scalable target for a custom resource. The custom-resource-id.txt file contains a string that identifies the Resource ID, which, for a custom resource, is the path to the custom resource through your Amazon API Gateway endpoint.
 
 ```
-aws application-autoscaling deregister-scalable-target --service-namespace {{custom-resource}} --scalable-dimension {{custom-resource:ResourceType:Property}} --resource-id {{file://~/custom-resource-id.txt}}
+aws application-autoscaling deregister-scalable-target \
+    --service-namespace {{custom-resource}} \
+    --scalable-dimension {{custom-resource:ResourceType:Property}} \
+    --resource-id {{file://~/custom-resource-id.txt}}
 ```
-Contents of custom-resource-id.txt file:
+Contents of `custom-resource-id.txt`:
 
 ```
 https://example.execute-api.us-west-2.amazonaws.com/prod/scalableTargetDimensions/1-23456789
 ```
+For more information, see [Custom resources and Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/services-that-can-integrate-custom.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [DeregisterScalableTarget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/deregister-scalable-target.html) in *AWS CLI Command Reference*.
 
 ### `describe-scalable-targets`
@@ -142,7 +154,7 @@ Output:
             "ScalableDimension": "ecs:service:DesiredCount",
             "Description": "Setting desired count to 1.",
             "ResourceId": "service/default/web-app",
-            "ActivityId": "e6c5f7d1-dbbb-4a3f-89b2-51f33e766399",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "StartTime": 1462575838.171,
             "ServiceNamespace": "ecs",
             "EndTime": 1462575872.111,
@@ -171,7 +183,7 @@ Output:
             "ScalableDimension": "dynamodb:table:WriteCapacityUnits",
             "Description": "Setting write capacity units to 10.",
             "ResourceId": "table/my-table",
-            "ActivityId": "4d1308c0-bbcf-4514-a673-b0220ae38547",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "StartTime": 1561574415.086,
             "ServiceNamespace": "dynamodb",
             "EndTime": 1561574449.51,
@@ -183,7 +195,7 @@ Output:
             "ScalableDimension": "dynamodb:table:WriteCapacityUnits",
             "Description": "Setting min capacity to 5 and max capacity to 10",
             "ResourceId": "table/my-table",
-            "ActivityId": "f2b7847b-721d-4e01-8ef0-0c8d3bacc1c7",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "StartTime": 1561574414.644,
             "ServiceNamespace": "dynamodb",
             "Cause": "scheduled action name my-second-scheduled-action was triggered",
@@ -194,7 +206,7 @@ Output:
             "ScalableDimension": "dynamodb:table:WriteCapacityUnits",
             "Description": "Setting write capacity units to 15.",
             "ResourceId": "table/my-table",
-            "ActivityId": "d8ea4de6-9eaa-499f-b466-2cc5e681ba8b",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "StartTime": 1561574108.904,
             "ServiceNamespace": "dynamodb",
             "EndTime": 1561574140.255,
@@ -206,7 +218,7 @@ Output:
             "ScalableDimension": "dynamodb:table:WriteCapacityUnits",
             "Description": "Setting min capacity to 15 and max capacity to 20",
             "ResourceId": "table/my-table",
-            "ActivityId": "3250fd06-6940-4e8e-bb1f-d494db7554d2",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "StartTime": 1561574108.512,
             "ServiceNamespace": "dynamodb",
             "Cause": "scheduled action name my-first-scheduled-action was triggered",
@@ -226,11 +238,11 @@ The following code example shows how to use `describe-scaling-policies`.
 
 **AWS CLI**
 **To describe scaling policies**
-This example command describes the scaling policies for the ecs service namespace.
-Command:
+The following `describe-scaling-policies` example describes the scaling policies for the ecs service namespace.
 
 ```
-aws application-autoscaling describe-scaling-policies --service-namespace {{ecs}}
+aws application-autoscaling describe-scaling-policies \
+    --service-namespace {{ecs}}
 ```
 Output:
 
@@ -252,12 +264,12 @@ Output:
                 ],
                 "AdjustmentType": "PercentChangeInCapacity"
             },
-            "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy:6d8972f3-efc8-437c-92d1-6270f29a66e7:resource/ecs/service/default/web-app:policyName/web-app-cpu-gt-75",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/ecs/service/default/web-app:policyName/web-app-cpu-gt-75",
             "PolicyType": "StepScaling",
             "Alarms": [
                 {
                     "AlarmName": "web-app-cpu-gt-75",
-                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:web-app-cpu-gt-75"
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:web-app-cpu-gt-75"
                 }
             ],
             "ServiceNamespace": "ecs"
@@ -277,12 +289,12 @@ Output:
                 ],
                 "AdjustmentType": "PercentChangeInCapacity"
             },
-            "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy:6d8972f3-efc8-437c-92d1-6270f29a66e7:resource/ecs/service/default/web-app:policyName/web-app-cpu-lt-25",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/ecs/service/default/web-app:policyName/web-app-cpu-lt-25",
             "PolicyType": "StepScaling",
             "Alarms": [
                 {
                     "AlarmName": "web-app-cpu-lt-25",
-                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:web-app-cpu-lt-25"
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:web-app-cpu-lt-25"
                 }
             ],
             "ServiceNamespace": "ecs"
@@ -290,6 +302,7 @@ Output:
     ]
 }
 ```
+For more information, see [Describe step scaling policies for Application Auto Scaling using the AWS CLI](https://docs.aws.amazon.com/autoscaling/application/userguide/describe-step-scaling-policy.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [DescribeScalingPolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/describe-scaling-policies.html) in *AWS CLI Command Reference*.
 
 ### `describe-scheduled-actions`
@@ -299,7 +312,7 @@ The following code example shows how to use `describe-scheduled-actions`.
 
 **AWS CLI**
 **To describe scheduled actions**
-The following `describe-scheduled-actions` example displays details for the scheduled actions for the specified service namespace:
+The following `describe-scheduled-actions` example displays details for the scheduled actions for the specified service namespace.
 
 ```
 aws application-autoscaling describe-scheduled-actions \
@@ -315,7 +328,7 @@ Output:
             "Schedule": "at(2019-05-20T18:35:00)",
             "ResourceId": "table/my-table",
             "CreationTime": 1561571888.361,
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledAction:2d36aa3b-cdf9-4565-b290-81db519b227d:resource/dynamodb/table/my-table:scheduledActionName/my-first-scheduled-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/dynamodb/table/my-table:scheduledActionName/my-first-scheduled-action",
             "ScalableTargetAction": {
                 "MinCapacity": 15,
                 "MaxCapacity": 20
@@ -328,7 +341,7 @@ Output:
             "Schedule": "at(2019-05-20T18:40:00)",
             "ResourceId": "table/my-table",
             "CreationTime": 1561571946.021,
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledAction:2d36aa3b-cdf9-4565-b290-81db519b227d:resource/dynamodb/table/my-table:scheduledActionName/my-second-scheduled-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/dynamodb/table/my-table:scheduledActionName/my-second-scheduled-action",
             "ScalableTargetAction": {
                 "MinCapacity": 5,
                 "MaxCapacity": 10
@@ -377,21 +390,23 @@ The following code example shows how to use `put-scaling-policy`.
 The following `put-scaling-policy` example applies a target tracking scaling policy with a predefined metric specification to an Amazon ECS service called web-app in the default cluster. The policy keeps the average CPU utilization of the service at 75 percent, with scale-out and scale-in cooldown periods of 60 seconds. The output contains the ARNs and names of the two CloudWatch alarms created on your behalf.
 
 ```
-aws application-autoscaling put-scaling-policy --service-namespace {{ecs}} \
---scalable-dimension {{ecs:service:DesiredCount}} \
---resource-id {{service/default/web-app}} \
---policy-name {{cpu75-target-tracking-scaling-policy}} --policy-type {{TargetTrackingScaling}} \
---target-tracking-scaling-policy-configuration {{file://config.json}}
+aws application-autoscaling put-scaling-policy \
+    --service-namespace {{ecs}} \
+    --scalable-dimension {{ecs:service:DesiredCount}} \
+    --resource-id {{service/default/web-app}} \
+    --policy-name {{cpu75-target-tracking-scaling-policy}} \
+    --policy-type {{TargetTrackingScaling}} \
+    --target-tracking-scaling-policy-configuration {{file://config.json}}
 ```
 This example assumes that you have a config.json file in the current directory with the following contents:
 
 ```
 {
-     "TargetValue": 75.0,
-     "PredefinedMetricSpecification": {
-         "PredefinedMetricType": "ECSServiceAverageCPUUtilization"
-     },
-     "ScaleOutCooldown": 60,
+    "TargetValue": 75.0,
+    "PredefinedMetricSpecification": {
+        "PredefinedMetricType": "ECSServiceAverageCPUUtilization"
+    },
+    "ScaleOutCooldown": 60,
     "ScaleInCooldown": 60
 }
 ```
@@ -399,29 +414,31 @@ Output:
 
 ```
 {
-    "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy:6d8972f3-efc8-437c-92d1-6270f29a66e7:resource/ecs/service/default/web-app:policyName/cpu75-target-tracking-scaling-policy",
+    "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/ecs/service/default/web-app:policyName/cpu75-target-tracking-scaling-policy",
     "Alarms": [
         {
-            "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:TargetTracking-service/default/web-app-AlarmHigh-d4f0770c-b46e-434a-a60f-3b36d653feca",
+            "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-service/default/web-app-AlarmHigh-d4f0770c-b46e-434a-a60f-3b36d653feca",
             "AlarmName": "TargetTracking-service/default/web-app-AlarmHigh-d4f0770c-b46e-434a-a60f-3b36d653feca"
         },
         {
-            "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:TargetTracking-service/default/web-app-AlarmLow-1b437334-d19b-4a63-a812-6c67aaf2910d",
+            "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-service/default/web-app-AlarmLow-1b437334-d19b-4a63-a812-6c67aaf2910d",
             "AlarmName": "TargetTracking-service/default/web-app-AlarmLow-1b437334-d19b-4a63-a812-6c67aaf2910d"
         }
     ]
 }
 ```
+For more information, see [Create a target tracking scaling policy for Application Auto Scaling using the AWS CLI](https://docs.aws.amazon.com/autoscaling/application/userguide/create-target-tracking-policy-cli.html) in the *Application Auto Scaling User Guide*.
 **Example 2: To apply a target tracking scaling policy with a customized metric specification**
 The following `put-scaling-policy` example applies a target tracking scaling policy with a customized metric specification to an Amazon ECS service called web-app in the default cluster. The policy keeps the average utilization of the service at 75 percent, with scale-out and scale-in cooldown periods of 60 seconds. The output contains the ARNs and names of the two CloudWatch alarms created on your behalf.
 
 ```
-aws application-autoscaling put-scaling-policy --service-namespace {{ecs}} \
---scalable-dimension {{ecs:service:DesiredCount}} \
---resource-id {{service/default/web-app}} \
---policy-name {{cms75-target-tracking-scaling-policy}} \
---policy-type {{TargetTrackingScaling}} \
---target-tracking-scaling-policy-configuration {{file://config.json}}
+aws application-autoscaling put-scaling-policy \
+    --service-namespace {{ecs}} \
+    --scalable-dimension {{ecs:service:DesiredCount}} \
+    --resource-id {{service/default/web-app}} \
+    --policy-name {{cms75-target-tracking-scaling-policy}} \
+    --policy-type {{TargetTrackingScaling}} \
+    --target-tracking-scaling-policy-configuration {{file://config.json}}
 ```
 This example assumes that you have a config.json file in the current directory with the following contents:
 
@@ -448,19 +465,20 @@ Output:
 
 ```
 {
-    "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy: 8784a896-b2ba-47a1-b08c-27301cc499a1:resource/ecs/service/default/web-app:policyName/cms75-target-tracking-scaling-policy",
+    "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy: a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:resource/ecs/service/default/web-app:policyName/cms75-target-tracking-scaling-policy",
     "Alarms": [
         {
-            "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:TargetTracking-service/default/web-app-AlarmHigh-9bc77b56-0571-4276-ba0f-d4178882e0a0",
+            "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-service/default/web-app-AlarmHigh-9bc77b56-0571-4276-ba0f-d4178882e0a0",
             "AlarmName": "TargetTracking-service/default/web-app-AlarmHigh-9bc77b56-0571-4276-ba0f-d4178882e0a0"
         },
         {
-            "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:TargetTracking-service/default/web-app-AlarmLow-9b6ad934-6d37-438e-9e05-02836ddcbdc4",
+            "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-service/default/web-app-AlarmLow-9b6ad934-6d37-438e-9e05-02836ddcbdc4",
             "AlarmName": "TargetTracking-service/default/web-app-AlarmLow-9b6ad934-6d37-438e-9e05-02836ddcbdc4"
         }
     ]
 }
 ```
+For more information, see [Create a target tracking scaling policy for Application Auto Scaling using the AWS CLI](https://docs.aws.amazon.com/autoscaling/application/userguide/create-target-tracking-policy-cli.html) in the *Application Auto Scaling User Guide*.
 **Example 3: To apply a target tracking scaling policy for scale out only**
 The following `put-scaling-policy` example applies a target tracking scaling policy to an Amazon ECS service called `web-app` in the default cluster. The policy is used to scale out the ECS service when the `RequestCountPerTarget` metric from the Application Load Balancer exceeds the threshold. The output contains the ARN and name of the CloudWatch alarm created on your behalf.
 
@@ -477,12 +495,12 @@ Contents of `config.json`:
 
 ```
 {
-     "TargetValue": 1000.0,
-     "PredefinedMetricSpecification": {
-         "PredefinedMetricType": "ALBRequestCountPerTarget",
-         "ResourceLabel": "app/EC2Co-EcsEl-1TKLTMITMM0EO/f37c06a68c1748aa/targetgroup/EC2Co-Defau-LDNM7Q3ZH1ZN/6d4ea56ca2d6a18d"
-     },
-     "ScaleOutCooldown": 60,
+    "TargetValue": 1000.0,
+    "PredefinedMetricSpecification": {
+        "PredefinedMetricType": "ALBRequestCountPerTarget",
+        "ResourceLabel": "app/EC2Co-EcsEl-1TKLTMITMM0EO/f37c06a68c1748aa/targetgroup/EC2Co-Defau-LDNM7Q3ZH1ZN/6d4ea56ca2d6a18d"
+    },
+    "ScaleOutCooldown": 60,
     "ScaleInCooldown": 60,
     "DisableScaleIn": true
 }
@@ -491,7 +509,7 @@ Output:
 
 ```
 {
-    "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:6d8972f3-efc8-437c-92d1-6270f29a66e7:resource/ecs/service/default/web-app:policyName/alb-scale-out-target-tracking-scaling-policy",
+    "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/ecs/service/default/web-app:policyName/alb-scale-out-target-tracking-scaling-policy",
     "Alarms": [
         {
             "AlarmName": "TargetTracking-service/default/web-app-AlarmHigh-d4f0770c-b46e-434a-a60f-3b36d653feca",
@@ -500,7 +518,7 @@ Output:
     ]
 }
 ```
-For more information, see [Target Tracking Scaling Policies for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html) in the *AWS Application Auto Scaling User Guide*.
+For more information, see [Target tracking scaling policies for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-target-tracking.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [PutScalingPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/put-scaling-policy.html) in *AWS CLI Command Reference*.
 
 ### `put-scheduled-action`
@@ -510,13 +528,19 @@ The following code example shows how to use `put-scheduled-action`.
 
 **AWS CLI**
 **To add a scheduled action to a DynamoDB table**
-This example adds a scheduled action to a DynamoDB table called TestTable to scale out on a recurring schedule. On the specified schedule (every day at 12:15pm UTC), if the current capacity is below the value specified for MinCapacity, Application Auto Scaling scales out to the value specified by MinCapacity.
-Command:
+The following `put-scheduled-action` example adds a scheduled action to a DynamoDB table called TestTable to scale out on a recurring schedule. On the specified schedule (every day at 12:15pm UTC), if the current capacity is below the value specified for MinCapacity, Application Auto Scaling scales out to the value specified by MinCapacity.
 
 ```
-aws application-autoscaling put-scheduled-action --service-namespace {{dynamodb}} --scheduled-action-name {{my-recurring-action}} --schedule {{"cron(15 12 * * ? *)"}} --resource-id {{table/TestTable}} --scalable-dimension {{dynamodb:table:WriteCapacityUnits}} --scalable-target-action {{MinCapacity=6}}
+aws application-autoscaling put-scheduled-action \
+    --service-namespace {{dynamodb}} \
+    --scheduled-action-name {{my-recurring-action}} \
+    --schedule {{"cron(15 12 * * ? *)"}} \
+    --resource-id {{table/TestTable}} \
+    --scalable-dimension {{dynamodb:table:WriteCapacityUnits}} \
+    --scalable-target-action {{MinCapacity=6}}
 ```
-For more information, see Scheduled Scaling in the *Application Auto Scaling User Guide*.
+This command produces no output.
+For more information, see [Scheduled scaling for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-scheduled-scaling.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [PutScheduledAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/put-scheduled-action.html) in *AWS CLI Command Reference*.
 
 ### `register-scalable-target`
@@ -533,7 +557,8 @@ aws application-autoscaling register-scalable-target \
     --service-namespace {{ecs}} \
     --scalable-dimension {{ecs:service:DesiredCount}} \
     --resource-id {{service/default/web-app}} \
-    --min-capacity {{1}} --max-capacity {{10}} \
+    --min-capacity {{1}} \
+    --max-capacity {{10}} \
     --tags {{environment=production}}
 ```
 Output:

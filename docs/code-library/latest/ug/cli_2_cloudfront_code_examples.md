@@ -32,7 +32,7 @@ The following `associate-distribution-tenant-web-acl` example associates a web A
 aws cloudfront associate-distribution-tenant-web-acl \
     --id {{dt_2wjDZi3hD1ivOXf6rpZJO1AB}} \
     --if-match {{E13V1IB3VIYABC}} \
-    --web-acl-arn {{arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/626900da-5f64-418b-ba9b-743f37123ABC}}
+    --web-acl-arn {{arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -40,7 +40,7 @@ Output:
 {
     "ETag": "E1VC38T7YXBABC",
     "Id": "dt_2wjDZi3hD1ivOXf6rpZJO1AB",
-    "WebACLArn": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/626900da-5f64-418b-ba9b-743f37123ABC"
+    "WebACLArn": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Use AWS WAF protections](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html) in the *Amazon CloudFront Developer Guide*.
@@ -59,7 +59,7 @@ The following `associate-distribution-web-acl` example associates a web ACL with
 aws cloudfront associate-distribution-web-acl \
     --id {{E1XNX8R2GOAABC}} \
     --if-match {{E2YWS1C2J3OABC}} \
-    --web-acl-arn {{arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/626900da-5f64-418b-ba9b-743f3746cABC}}
+    --web-acl-arn {{arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -67,7 +67,7 @@ Output:
 {
     "ETag": "E3QE7ED60U0ABC",
     "Id": "E1XNX8R2GOAABC",
-    "WebACLArn": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/626900da-5f64-418b-ba9b-743f3746cABC"
+    "WebACLArn": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Use AWS WAF protections](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html) in the *Amazon CloudFront Developer Guide*.
@@ -80,20 +80,19 @@ The following code example shows how to use `create-cloud-front-origin-access-id
 
 **AWS CLI**
 **To create a CloudFront origin access identity**
-The following example creates a CloudFront origin access identity (OAI) by providing the OAI configuration as a command line argument:
+The following `create-cloud-front-origin-access-identity` example creates a CloudFront origin access identity (OAI) by providing the OAI configuration as a command line argument.
 
 ```
 aws cloudfront create-cloud-front-origin-access-identity \
-    --cloud-front-origin-access-identity-config \
-        CallerReference="cli-example",Comment="Example OAI"
+    --cloud-front-origin-access-identity-config CallerReference="cli-example",Comment="Example OAI"
 ```
-You can accomplish the same thing by providing the OAI configuration in a JSON file, as shown in the following example:
+You can accomplish the same thing by providing the OAI configuration in a JSON file, as shown in the following example.
 
 ```
 aws cloudfront create-cloud-front-origin-access-identity \
     --cloud-front-origin-access-identity-config {{file://OAI-config.json}}
 ```
-The file `OAI-config.json` is a JSON document in the current directory that contains the following:
+Contents of `OAI-config.json`:
 
 ```
 {
@@ -101,7 +100,8 @@ The file `OAI-config.json` is a JSON document in the current directory that cont
     "Comment": "Example OAI"
 }
 ```
-Whether you provide the OAI configuration with a command line argument or a JSON file, the output is the same:
+Whether you provide the OAI configuration with a command line argument or a JSON file, the output is the same.
+Output:
 
 ```
 {
@@ -117,6 +117,7 @@ Whether you provide the OAI configuration with a command line argument or a JSON
     }
 }
 ```
+For more information, see [Restrict access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [CreateCloudFrontOriginAccessIdentity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-cloud-front-origin-access-identity.html) in *AWS CLI Command Reference*.
 
 ### `create-connection-group`
@@ -216,7 +217,7 @@ Contents of `tenant.json`:
             "Action": "disable"
         },
         "Certificate": {
-            "Arn": "arn:aws:acm:us-east-1:123456789012:certificate/ec53f564-ea5a-4e4a-a0a2-e3c989449abc"
+            "Arn": "arn:aws:acm:us-east-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     }
 }
@@ -250,7 +251,7 @@ Output:
                 "Action": "disable"
             },
             "Certificate": {
-                "Arn": "arn:aws:acm:us-east-1:123456789012:certificate/ec53f564-ea5a-4e4a-a0a2-e3c989449abc"
+                "Arn": "arn:aws:acm:us-east-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "GeoRestrictions": {
                 "RestrictionType": "whitelist",
@@ -705,6 +706,7 @@ Output:
     }
 }
 ```
+For more information, see [Tag a CloudFront resource](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/tagging.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [CreateDistributionWithTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-distribution-with-tags.html) in *AWS CLI Command Reference*.
 
 ### `create-distribution`
@@ -948,7 +950,124 @@ Contents of `dist-config.json`:
     "IsIPV6Enabled": true
 }
 ```
-See Example 1 for sample output.
+Output:
+
+```
+{
+    "Location": "https://cloudfront.amazonaws.com/2019-03-26/distribution/EMLARXS9EXAMPLE",
+    "ETag": "E9LHASXEXAMPLE",
+    "Distribution": {
+        "Id": "EMLARXS9EXAMPLE",
+        "ARN": "arn:aws:cloudfront::123456789012:distribution/EMLARXS9EXAMPLE",
+        "Status": "InProgress",
+        "LastModifiedTime": "2019-11-22T00:55:15.705Z",
+        "InProgressInvalidationBatches": 0,
+        "DomainName": "d111111abcdef8.cloudfront.net",
+        "ActiveTrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+        },
+        "DistributionConfig": {
+            "CallerReference": "cli-example",
+            "Aliases": {
+                "Quantity": 0
+            },
+            "DefaultRootObject": "index.html",
+            "Origins": {
+                "Quantity": 1,
+                "Items": [
+                    {
+                        "Id": "amzn-s3-demo-bucket.s3.amazonaws.com-cli-example",
+                        "DomainName": "amzn-s3-demo-bucket.s3.amazonaws.com",
+                        "OriginPath": "",
+                        "CustomHeaders": {
+                            "Quantity": 0
+                        },
+                        "S3OriginConfig": {
+                            "OriginAccessIdentity": ""
+                        }
+                    }
+                ]
+            },
+            "OriginGroups": {
+                "Quantity": 0
+            },
+            "DefaultCacheBehavior": {
+                "TargetOriginId": "amzn-s3-demo-bucket.s3.amazonaws.com-cli-example",
+                "ForwardedValues": {
+                    "QueryString": false,
+                    "Cookies": {
+                        "Forward": "none"
+                    },
+                    "Headers": {
+                        "Quantity": 0
+                    },
+                    "QueryStringCacheKeys": {
+                        "Quantity": 0
+                    }
+                },
+                "TrustedSigners": {
+                    "Enabled": false,
+                    "Quantity": 0
+                },
+                "ViewerProtocolPolicy": "allow-all",
+                "MinTTL": 0,
+                "AllowedMethods": {
+                    "Quantity": 2,
+                    "Items": [
+                        "HEAD",
+                        "GET"
+                    ],
+                    "CachedMethods": {
+                        "Quantity": 2,
+                        "Items": [
+                            "HEAD",
+                            "GET"
+                        ]
+                    }
+                },
+                "SmoothStreaming": false,
+                "DefaultTTL": 86400,
+                "MaxTTL": 31536000,
+                "Compress": false,
+                "LambdaFunctionAssociations": {
+                    "Quantity": 0
+                },
+                "FieldLevelEncryptionId": ""
+            },
+            "CacheBehaviors": {
+                "Quantity": 0
+            },
+            "CustomErrorResponses": {
+                "Quantity": 0
+            },
+            "Comment": "",
+            "Logging": {
+                "Enabled": false,
+                "IncludeCookies": false,
+                "Bucket": "",
+                "Prefix": ""
+            },
+            "PriceClass": "PriceClass_All",
+            "Enabled": true,
+            "ViewerCertificate": {
+                "CloudFrontDefaultCertificate": true,
+                "MinimumProtocolVersion": "TLSv1",
+                "CertificateSource": "cloudfront"
+            },
+            "Restrictions": {
+                "GeoRestriction": {
+                    "RestrictionType": "none",
+                    "Quantity": 0
+                }
+            },
+            "WebACLId": "",
+            "HttpVersion": "http2",
+            "IsIPV6Enabled": true
+        }
+    }
+}
+```
 **Example 3: To create a CloudFront multi-tenant distribution with a certificate**
 The following `create-distribution` example creates a CloudFront distribution with multi-tenant support and a specifies a TLS certificate.
 
@@ -967,8 +1086,8 @@ Contents of `dist-config.json`:
         "Quantity": 1,
         "Items": [
             {
-                "Id": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
-                "DomainName": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                "Id": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
+                "DomainName": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                 "OriginPath": "/{{tenantName}}",
                 "CustomHeaders": {
                     "Quantity": 0
@@ -980,7 +1099,7 @@ Contents of `dist-config.json`:
         ]
     },
     "DefaultCacheBehavior": {
-        "TargetOriginId": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+        "TargetOriginId": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
         "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e5ABC",
         "ViewerProtocolPolicy": "allow-all",
         "AllowedMethods": {
@@ -994,7 +1113,7 @@ Contents of `dist-config.json`:
     },
     "Enabled": true,
     "ViewerCertificate": {
-        "ACMCertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/191306a1-db01-49ca-90ef-fc414ee5dabc",
+        "ACMCertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "SSLSupportMethod": "sni-only"
     },
     "HttpVersion": "http2",
@@ -1043,8 +1162,8 @@ Output:
                 "Quantity": 1,
                 "Items": [
                     {
-                        "Id": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
-                        "DomainName": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                        "Id": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
+                        "DomainName": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                         "OriginPath": "/{{tenantName}}",
                         "CustomHeaders": {
                             "Quantity": 0
@@ -1065,7 +1184,7 @@ Output:
                 "Quantity": 0
             },
             "DefaultCacheBehavior": {
-                "TargetOriginId": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                "TargetOriginId": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                 "TrustedKeyGroups": {
                     "Enabled": false,
                     "Quantity": 0
@@ -1160,8 +1279,8 @@ Contents of `dist-config.json`:
         "Quantity": 1,
         "Items": [
             {
-                "Id": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
-                "DomainName": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                "Id": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
+                "DomainName": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                 "OriginPath": "/{{tenantName}}",
                 "CustomHeaders": {
                     "Quantity": 0
@@ -1173,7 +1292,7 @@ Contents of `dist-config.json`:
         ]
     },
     "DefaultCacheBehavior": {
-        "TargetOriginId": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+        "TargetOriginId": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
         "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e5ABC",
         "ViewerProtocolPolicy": "allow-all",
         "AllowedMethods": {
@@ -1238,8 +1357,8 @@ Output:
                 "Quantity": 1,
                 "Items": [
                     {
-                        "Id": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
-                        "DomainName": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                        "Id": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
+                        "DomainName": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                         "OriginPath": "/{{tenantName}}",
                         "CustomHeaders": {
                             "Quantity": 0
@@ -1260,7 +1379,7 @@ Output:
                 "Quantity": 0
             },
             "DefaultCacheBehavior": {
-                "TargetOriginId": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                "TargetOriginId": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                 "TrustedKeyGroups": {
                     "Enabled": false,
                     "Quantity": 0
@@ -1350,14 +1469,13 @@ The following code example shows how to use `create-field-level-encryption-confi
 
 **AWS CLI**
 **To create a CloudFront field-level encryption configuration**
-The following example creates a field-level encryption configuration by providing the configuration parameters in a JSON file named `fle-config.json`. Before you can create a field-level encryption configuration, you must have a field-level encryption profile. To create a profile, see the create-field-level-encryption-profile command.
-For more information about CloudFront field-level encryption, see [Using Field-Level Encryption to Help Protect Sensitive Data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
+The following `create-field-level-encryption-config` example creates a field-level encryption configuration by providing the configuration parameters in a JSON file named `fle-config.json`. Before you can create a field-level encryption configuration, you must have a field-level encryption profile. To create a profile, see the create-field-level-encryption-profile command.
 
 ```
 aws cloudfront create-field-level-encryption-config \
     --field-level-encryption-config {{file://fle-config.json}}
 ```
-The file `fle-config.json` is a JSON document in the current folder that contains the following:
+Contents of `fle-config.json`:
 
 ```
 {
@@ -1420,6 +1538,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [CreateFieldLevelEncryptionConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-field-level-encryption-config.html) in *AWS CLI Command Reference*.
 
 ### `create-field-level-encryption-profile`
@@ -1429,14 +1548,13 @@ The following code example shows how to use `create-field-level-encryption-profi
 
 **AWS CLI**
 **To create a CloudFront field-level encryption profile**
-The following example creates a field-level encryption profile by providing the parameters in a JSON file named `fle-profile-config.json`. Before you can create a field-level encryption profile, you must have a CloudFront public key. To create a CloudFront public key, see the create-public-key command.
-For more information about CloudFront field-level encryption, see [Using Field-Level Encryption to Help Protect Sensitive Data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
+The following `create-field-level-encryption-profile` example creates a field-level encryption profile by providing the parameters in a JSON file named `fle-profile-config.json`. Before you can create a field-level encryption profile, you must have a CloudFront public key. To create a CloudFront public key, see the create-public-key command.
 
 ```
 aws cloudfront create-field-level-encryption-profile \
     --field-level-encryption-profile-config {{file://fle-profile-config.json}}
 ```
-The file `fle-profile-config.json` is a JSON document in the current folder that contains the following:
+Contents of `fle-profile-config.json`:
 
 ```
 {
@@ -1492,6 +1610,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [CreateFieldLevelEncryptionProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-field-level-encryption-profile.html) in *AWS CLI Command Reference*.
 
 ### `create-invalidation-for-distribution-tenant`
@@ -1539,7 +1658,7 @@ The following code example shows how to use `create-invalidation`.
 
 **AWS CLI**
 **To create an invalidation for a CloudFront distribution**
-The following `create-invalidation` example creates an invalidation for the specified files in the specified CloudFront distribution:
+The following `create-invalidation` example creates an invalidation for the specified files in the specified CloudFront distribution.
 
 ```
 aws cloudfront create-invalidation \
@@ -1568,7 +1687,7 @@ Output:
     }
 }
 ```
-In the previous example, the AWS CLI automatically generated a random `CallerReference`. To specify your own `CallerReference`, or to avoid passing the invalidation parameters as command line arguments, you can use a JSON file. The following example creates an invalidation for two files, by providing the invalidation parameters in a JSON file named `inv-batch.json`:
+In the previous example, the AWS CLI automatically generated a random `CallerReference`. To specify your own `CallerReference`, or to avoid passing the invalidation parameters as command line arguments, you can use a JSON file. The following example creates an invalidation for two files, by providing the invalidation parameters in a JSON file named `inv-batch.json`.
 
 ```
 aws cloudfront create-invalidation \
@@ -1611,6 +1730,7 @@ Output:
     }
 }
 ```
+For more information, see [Invalidate files to remove content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [CreateInvalidation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-invalidation.html) in *AWS CLI Command Reference*.
 
 ### `create-public-key`
@@ -1620,13 +1740,13 @@ The following code example shows how to use `create-public-key`.
 
 **AWS CLI**
 **To create a CloudFront public key**
-The following example creates a CloudFront public key by providing the parameters in a JSON file named `pub-key-config.json`. Before you can use this command, you must have a PEM-encoded public key. For more information, see [Create an RSA Key Pair](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html#field-level-encryption-setting-up-step1) in the *Amazon CloudFront Developer Guide*.
+The following `create-public-key` example creates a CloudFront public key by providing the parameters in a JSON file named `pub-key-config.json`. Before you can use this command, you must have a PEM-encoded public key. For more information, see [Step 1: Create an RSA key pair](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html#field-level-encryption-setting-up-step1) in the *Amazon CloudFront Developer Guide*.
 
 ```
 aws cloudfront create-public-key \
     --public-key-config {{file://pub-key-config.json}}
 ```
-The file `pub-key-config.json` is a JSON document in the current folder that contains the following. Note that the public key is encoded in PEM format.
+Contents of `pub-key-config.json`:
 
 ```
 {
@@ -1654,6 +1774,7 @@ Output:
     }
 }
 ```
+For more information, see [Step 2: Add your public key to CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html#field-level-encryption-setting-up-step2) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [CreatePublicKey](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-public-key.html) in *AWS CLI Command Reference*.
 
 ### `delete-cloud-front-origin-access-identity`
@@ -1663,14 +1784,16 @@ The following code example shows how to use `delete-cloud-front-origin-access-id
 
 **AWS CLI**
 **To delete a CloudFront origin access identity**
-The following example deletes the origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`. To delete an OAI, you must have the OAI's ID and `ETag`. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands. To get the `ETag`, use the get-cloud-front-origin-access-identity or get-cloud-front-origin-access-identity-config command. Use the `--if-match` option to provide the OAI's `ETag`.
+The following `delete-cloud-front-origin-access-identity` example deletes the origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`. To delete an OAI, you must have the OAI's ID and `ETag`. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands. To get the `ETag`, use the get-cloud-front-origin-access-identity or get-cloud-front-origin-access-identity-config command. Use the `--if-match` option to provide the OAI's `ETag`.
 
 ```
 aws cloudfront delete-cloud-front-origin-access-identity \
     --id {{E74FTE3AEXAMPLE}} \
     --if-match {{E2QWRUHEXAMPLE}}
 ```
+This command produces no output.
 When successful, this command has no output.
+For more information, see [Restrict access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeleteCloudFrontOriginAccessIdentity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-cloud-front-origin-access-identity.html) in *AWS CLI Command Reference*.
 
 ### `delete-connection-group`
@@ -1687,7 +1810,7 @@ aws cloudfront delete-connection-group \
     --id {{cg_2wjLpjbHkLUdhWAjHllcOeABC}} \
     --if-match {{ETVPDKIKX0DABC}}
 ```
-When successful, this command has no output.
+This command produces no output.
 For more information about managing connection groups, see [Create custom connection group (optional)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/custom-connection-group.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeleteConnectionGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-connection-group.html) in *AWS CLI Command Reference*.
 
@@ -1705,7 +1828,7 @@ aws cloudfront delete-distribution-tenant \
     --id {{dt_2wjMUbg3NHZEQ7OfoalP5zi1AB}} \
     --if-match {{ETVPDKIKX0DABC}}
 ```
-When successful, this command has no output.
+This command produces no output.
 For more information, see [Delete a distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToDeleteDistribution.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeleteDistributionTenant](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-distribution-tenant.html) in *AWS CLI Command Reference*.
 
@@ -1716,7 +1839,7 @@ The following code example shows how to use `delete-distribution`.
 
 **AWS CLI**
 **To delete a CloudFront distribution**
-The following example deletes the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`. Before you can delete a distribution, you must disable it. To disable a distribution, use the update-distribution command. For more information, see the update-distribution examples.
+The following `delete-distribution` example deletes the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`. Before you can delete a distribution, you must disable it. To disable a distribution, use the update-distribution command. For more information, see the update-distribution examples.
 When a distribution is disabled, you can delete it. To delete a distribution, you must use the `--if-match` option to provide the distribution's `ETag`. To get the `ETag`, use the get-distribution or get-distribution-config command.
 
 ```
@@ -1724,7 +1847,9 @@ aws cloudfront delete-distribution \
     --id {{EDFDVBD6EXAMPLE}} \
     --if-match {{E2QWRUHEXAMPLE}}
 ```
+This command produces no output.
 When successful, this command has no output.
+For more information, see [Delete a distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToDeleteDistribution.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeleteDistribution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-distribution.html) in *AWS CLI Command Reference*.
 
 ### `delete-field-level-encryption-config`
@@ -1734,14 +1859,16 @@ The following code example shows how to use `delete-field-level-encryption-confi
 
 **AWS CLI**
 **To delete a CloudFront field-level encryption configuration**
-The following example deletes the CloudFront field-level encryption configuration with the ID `C3KM2WVD605UAY`. To delete a field-level encryption configuration, you must have its ID and `ETag`. The ID is returned in the output of the create-field-level-encryption-config and list-field-level-encryption-configs commands. To get the `ETag`, use the get-field-level-encryption or get-field-level-encryption-config command. Use the `--if-match` option to provide the configuration's `ETag`.
+The following `delete-field-level-encryption-config` example deletes the CloudFront field-level encryption configuration with the ID `C3KM2WVD605UAY`. To delete a field-level encryption configuration, you must have its ID and `ETag`. The ID is returned in the output of the create-field-level-encryption-config and list-field-level-encryption-configs commands. To get the `ETag`, use the get-field-level-encryption or get-field-level-encryption-config command. Use the `--if-match` option to provide the configuration's `ETag`.
 
 ```
 aws cloudfront delete-field-level-encryption-config \
     --id {{C3KM2WVD605UAY}} \
     --if-match {{E26M4BIAV81ZF6}}
 ```
+This command produces no output.
 When successful, this command has no output.
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeleteFieldLevelEncryptionConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-field-level-encryption-config.html) in *AWS CLI Command Reference*.
 
 ### `delete-field-level-encryption-profile`
@@ -1751,14 +1878,16 @@ The following code example shows how to use `delete-field-level-encryption-profi
 
 **AWS CLI**
 **To delete a CloudFront field-level encryption profile**
-The following example deletes the CloudFront field-level encryption profile with the ID `PPK0UOSIF5WSV`. To delete a field-level encryption profile, you must have its ID and `ETag`. The ID is returned in the output of the create-field-level-encryption-profile and list-field-level-encryption-profiles commands. To get the `ETag`, use the get-field-level-encryption-profile or get-field-level-encryption-profile-config command. Use the `--if-match` option to provide the profile's `ETag`.
+The following `delete-field-level-encryption-profile` example deletes the CloudFront field-level encryption profile with the ID `PPK0UOSIF5WSV`. To delete a field-level encryption profile, you must have its ID and `ETag`. The ID is returned in the output of the create-field-level-encryption-profile and list-field-level-encryption-profiles commands. To get the `ETag`, use the get-field-level-encryption-profile or get-field-level-encryption-profile-config command. Use the `--if-match` option to provide the profile's `ETag`.
 
 ```
 aws cloudfront delete-field-level-encryption-profile \
     --id {{PPK0UOSIF5WSV}} \
     --if-match {{EJETYFJ9CL66D}}
 ```
+This command produces no output.
 When successful, this command has no output.
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeleteFieldLevelEncryptionProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-field-level-encryption-profile.html) in *AWS CLI Command Reference*.
 
 ### `delete-public-key`
@@ -1768,14 +1897,16 @@ The following code example shows how to use `delete-public-key`.
 
 **AWS CLI**
 **To delete a CloudFront public key**
-The following example deletes the CloudFront public key with the ID `KDFB19YGCR002`. To delete a public key, you must have its ID and `ETag`. The ID is returned in the output of the create-public-key and list-public-keys commands. To get the `ETag`, use the get-public-key or get-public-key-config command. Use the `--if-match` option to provide the public key's `ETag`.
+The following `delete-public-key` example deletes the CloudFront public key with the ID `KDFB19YGCR002`. To delete a public key, you must have its ID and `ETag`. The ID is returned in the output of the create-public-key and list-public-keys commands. To get the `ETag`, use the get-public-key or get-public-key-config command. Use the `--if-match` option to provide the public key's `ETag`.
 
 ```
 aws cloudfront delete-public-key \
     --id {{KDFB19YGCR002}} \
     --if-match {{E2QWRUHEXAMPLE}}
 ```
+This command produces no output.
 When successful, this command has no output.
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [DeletePublicKey](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/delete-public-key.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-distribution-tenant-web-acl`
@@ -1835,10 +1966,11 @@ The following code example shows how to use `get-cloud-front-origin-access-ident
 
 **AWS CLI**
 **To get a CloudFront origin access identity configuration**
-The following example gets metadata about the CloudFront origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`, including its `ETag`. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands.
+The following `get-cloud-front-origin-access-identity-config` example gets metadata about the CloudFront origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`, including its `ETag`. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands.
 
 ```
-aws cloudfront get-cloud-front-origin-access-identity-config --id {{E74FTE3AEXAMPLE}}
+aws cloudfront get-cloud-front-origin-access-identity-config \
+    --id {{E74FTE3AEXAMPLE}}
 ```
 Output:
 
@@ -1851,6 +1983,7 @@ Output:
     }
 }
 ```
+For more information, see [Restrict access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetCloudFrontOriginAccessIdentityConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-cloud-front-origin-access-identity-config.html) in *AWS CLI Command Reference*.
 
 ### `get-cloud-front-origin-access-identity`
@@ -1860,10 +1993,11 @@ The following code example shows how to use `get-cloud-front-origin-access-ident
 
 **AWS CLI**
 **To get a CloudFront origin access identity**
-The following example gets the CloudFront origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`, including its `ETag` and the associated S3 canonical ID. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands.
+The following `get-cloud-front-origin-access-identity` example gets the CloudFront origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`, including its `ETag` and the associated S3 canonical ID. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands.
 
 ```
-aws cloudfront get-cloud-front-origin-access-identity --id {{E74FTE3AEXAMPLE}}
+aws cloudfront get-cloud-front-origin-access-identity \
+    --id {{E74FTE3AEXAMPLE}}
 ```
 Output:
 
@@ -1880,6 +2014,7 @@ Output:
     }
 }
 ```
+For more information, see [Restrict access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetCloudFrontOriginAccessIdentity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-cloud-front-origin-access-identity.html) in *AWS CLI Command Reference*.
 
 ### `get-connection-group-by-routing-endpoint`
@@ -1959,7 +2094,7 @@ The following code example shows how to use `get-distribution-config`.
 
 **AWS CLI**
 **To get a CloudFront distribution configuration**
-The following example gets metadata about the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`, including its `ETag`. The distribution ID is returned in the create-distribution and list-distributions commands.
+The following `get-distribution-config` example gets metadata about the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`, including its `ETag`. The distribution ID is returned in the create-distribution and list-distributions commands.
 
 ```
 aws cloudfront get-distribution-config \
@@ -2070,6 +2205,7 @@ Output:
     }
 }
 ```
+For more information, see [Configure distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetDistributionConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-distribution-config.html) in *AWS CLI Command Reference*.
 
 ### `get-distribution-tenant-by-domain`
@@ -2288,6 +2424,7 @@ Output:
     }
 }
 ```
+For more information, see [Configure distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetDistribution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-distribution.html) in *AWS CLI Command Reference*.
 
 ### `get-field-level-encryption-config`
@@ -2297,10 +2434,11 @@ The following code example shows how to use `get-field-level-encryption-config`.
 
 **AWS CLI**
 **To get metadata about a CloudFront field-level encryption configuration**
-The following example gets metadata about the CloudFront field-level encryption configuration with the ID `C3KM2WVD605UAY`, including its `ETag`:
+The following `get-field-level-encryption-config` example gets metadata about the CloudFront field-level encryption configuration with the ID `C3KM2WVD605UAY`, including its `ETag`.
 
 ```
-aws cloudfront get-field-level-encryption-config --id {{C3KM2WVD605UAY}}
+aws cloudfront get-field-level-encryption-config \
+    --id {{C3KM2WVD605UAY}}
 ```
 Output:
 
@@ -2333,6 +2471,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetFieldLevelEncryptionConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-field-level-encryption-config.html) in *AWS CLI Command Reference*.
 
 ### `get-field-level-encryption-profile-config`
@@ -2342,10 +2481,11 @@ The following code example shows how to use `get-field-level-encryption-profile-
 
 **AWS CLI**
 **To get a CloudFront field-level encryption profile configuration**
-The following example gets metadata about the CloudFront field-level encryption profile with ID `PPK0UOSIF5WSV` , including its `ETag`:
+The following `get-field-level-encryption-profile-config` example gets metadata about the CloudFront field-level encryption profile with ID `PPK0UOSIF5WSV`, including its `ETag`.
 
 ```
-aws cloudfront get-field-level-encryption-profile-config --id {{PPK0UOSIF5WSV}}
+aws cloudfront get-field-level-encryption-profile-config \
+    --id {{PPK0UOSIF5WSV}}
 ```
 Output:
 
@@ -2374,6 +2514,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetFieldLevelEncryptionProfileConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-field-level-encryption-profile-config.html) in *AWS CLI Command Reference*.
 
 ### `get-field-level-encryption-profile`
@@ -2383,10 +2524,11 @@ The following code example shows how to use `get-field-level-encryption-profile`
 
 **AWS CLI**
 **To get a CloudFront field-level encryption profile**
-The following example gets the CloudFront field-level encryption profile with ID `PPK0UOSIF5WSV` , including its `ETag`:
+The following `get-field-level-encryption-profile` example gets the CloudFront field-level encryption profile with ID `PPK0UOSIF5WSV`, including its `ETag`.
 
 ```
-aws cloudfront get-field-level-encryption-profile --id {{PPK0UOSIF5WSV}}
+aws cloudfront get-field-level-encryption-profile \
+    --id {{PPK0UOSIF5WSV}}
 ```
 Output:
 
@@ -2419,6 +2561,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetFieldLevelEncryptionProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-field-level-encryption-profile.html) in *AWS CLI Command Reference*.
 
 ### `get-field-level-encryption`
@@ -2428,10 +2571,11 @@ The following code example shows how to use `get-field-level-encryption`.
 
 **AWS CLI**
 **To get a CloudFront field-level encryption configuration**
-The following example gets the CloudFront field-level encryption configuration with the ID `C3KM2WVD605UAY`, including its `ETag`:
+The following `get-field-level-encryption` example gets the CloudFront field-level encryption configuration with the ID `C3KM2WVD605UAY`, including its `ETag`.
 
 ```
-aws cloudfront get-field-level-encryption --id {{C3KM2WVD605UAY}}
+aws cloudfront get-field-level-encryption \
+    --id {{C3KM2WVD605UAY}}
 ```
 Output:
 
@@ -2468,6 +2612,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetFieldLevelEncryption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-field-level-encryption.html) in *AWS CLI Command Reference*.
 
 ### `get-invalidation-for-distribution-tenant`
@@ -2500,7 +2645,7 @@ Output:
                     "/more/invalidations"
                 ]
             },
-            "CallerReference": "007ee5a6-d0a0-42be-bb61-e7b915969b48"
+            "CallerReference": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     }
 }
@@ -2515,10 +2660,12 @@ The following code example shows how to use `get-invalidation`.
 
 **AWS CLI**
 **To get a CloudFront invalidation**
-The following example gets the invalidation with the ID `I2J0I21PCUYOIK` for the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`:
+The following `get-invalidation` example gets the invalidation with the ID `I2J0I21PCUYOIK` for the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`.
 
 ```
-aws cloudfront get-invalidation --id {{I2J0I21PCUYOIK}} --distribution-id {{EDFDVBD6EXAMPLE}}
+aws cloudfront get-invalidation \
+    --id {{I2J0I21PCUYOIK}} \
+    --distribution-id {{EDFDVBD6EXAMPLE}}
 ```
 Output:
 
@@ -2541,6 +2688,7 @@ Output:
     }
 }
 ```
+For more information, see [Invalidate files to remove content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetInvalidation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-invalidation.html) in *AWS CLI Command Reference*.
 
 ### `get-managed-certificate-details`
@@ -2561,7 +2709,7 @@ Output:
 ```
 {
     "ManagedCertificateDetails": {
-        "CertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/655dc1fe-6d37-451d-a013-c2db3a034abc",
+        "CertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CertificateStatus": "pending-validation",
         "ValidationTokenHost": "self-hosted",
         "ValidationTokenDetails": [
@@ -2584,10 +2732,11 @@ The following code example shows how to use `get-public-key-config`.
 
 **AWS CLI**
 **To get a CloudFront public key configuration**
-The following example gets metadata about the CloudFront public key with the ID `KDFB19YGCR002`, including its `ETag`. The public key ID is returned in the create-public-key and list-public-keys commands.
+The following `get-public-key-config` example gets metadata about the CloudFront public key with the ID `KDFB19YGCR002`, including its `ETag`. The public key ID is returned in the create-public-key and list-public-keys commands.
 
 ```
-aws cloudfront get-public-key-config --id {{KDFB19YGCR002}}
+aws cloudfront get-public-key-config \
+    --id {{KDFB19YGCR002}}
 ```
 Output:
 
@@ -2602,6 +2751,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetPublicKeyConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-public-key-config.html) in *AWS CLI Command Reference*.
 
 ### `get-public-key`
@@ -2611,10 +2761,11 @@ The following code example shows how to use `get-public-key`.
 
 **AWS CLI**
 **To get a CloudFront public key**
-The following example gets the CloudFront public key with the ID `KDFB19YGCR002`, including its `ETag`. The public key ID is returned in the create-public-key and list-public-keys commands.
+The following `get-public-key` example gets the CloudFront public key with the ID `KDFB19YGCR002`, including its `ETag`. The public key ID is returned in the create-public-key and list-public-keys commands.
 
 ```
-aws cloudfront get-public-key --id {{KDFB19YGCR002}}
+aws cloudfront get-public-key \
+    --id {{KDFB19YGCR002}}
 ```
 Output:
 
@@ -2633,6 +2784,7 @@ Output:
     }
 }
 ```
+For more information, see [Specify signers that can create signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [GetPublicKey](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/get-public-key.html) in *AWS CLI Command Reference*.
 
 ### `list-cloud-front-origin-access-identities`
@@ -2642,7 +2794,7 @@ The following code example shows how to use `list-cloud-front-origin-access-iden
 
 **AWS CLI**
 **To list CloudFront origin access identities**
-The following example gets a list of the CloudFront origin access identities (OAIs) in your AWS account:
+The following `list-cloud-front-origin-access-identities` example gets a list of the CloudFront origin access identities (OAIs) in your AWS account.
 
 ```
 aws cloudfront list-cloud-front-origin-access-identities
@@ -2672,6 +2824,7 @@ Output:
     }
 }
 ```
+For more information, see [Restrict access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListCloudFrontOriginAccessIdentities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-cloud-front-origin-access-identities.html) in *AWS CLI Command Reference*.
 
 ### `list-connection-groups`
@@ -2732,7 +2885,7 @@ The following `list-distribution-tenants-by-customization` example lists distrib
 
 ```
 aws cloudfront list-distribution-tenants-by-customization \
-    --web-acl-arn {{arn:aws:wafv2:us-east-1:123456789012:global/webacl/CreatedByCloudFront-0273cd2f/a3c19bce-42b5-48a1-a8d4-b2bb2f28eabc}}
+    --web-acl-arn {{arn:aws:wafv2:us-east-1:123456789012:global/webacl/CreatedByCloudFront-0273cd2f/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -2754,7 +2907,7 @@ Output:
             "Customizations": {
                 "WebAcl": {
                     "Action": "override",
-                    "Arn": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/CreatedByCloudFront-0273cd2f/a3c19bce-42b5-48a1-a8d4-b2bb2f28eabc"
+                    "Arn": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/CreatedByCloudFront-0273cd2f/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 },
                 "GeoRestrictions": {
                     "RestrictionType": "whitelist",
@@ -2973,10 +3126,10 @@ Output:
                 "Enabled": true,
                 "ViewerCertificate": {
                     "CloudFrontDefaultCertificate": false,
-                    "ACMCertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/ec53f564-ea5a-4e4a-a0a2-e3c989449abc",
+                    "ACMCertificateArn": "arn:aws:acm:us-east-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "SSLSupportMethod": "sni-only",
                     "MinimumProtocolVersion": "TLSv1.2_2021",
-                    "Certificate": "arn:aws:acm:us-east-1:123456789012:certificate/ec53f564-ea5a-4e4a-a0a2-e3c989449abc",
+                    "Certificate": "arn:aws:acm:us-east-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "CertificateSource": "acm"
                 },
                 "Restrictions": {
@@ -2985,7 +3138,7 @@ Output:
                         "Quantity": 0
                     }
                 },
-                "WebACLId": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/626900da-5f64-418b-ba9b-743f3746cabc",
+                "WebACLId": "arn:aws:wafv2:us-east-1:123456789012:global/webacl/web-global-example/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "HttpVersion": "http2",
                 "IsIPV6Enabled": false,
                 "Staging": false,
@@ -3005,7 +3158,7 @@ The following code example shows how to use `list-distributions`.
 
 **AWS CLI**
 **To list CloudFront distributions**
-The following example gets a list of the CloudFront distributions in your AWS account.
+The following `list-distributions` example gets a list of the CloudFront distributions in your AWS account.
 
 ```
 aws cloudfront list-distributions
@@ -3029,8 +3182,8 @@ Output:
                     "Quantity": 1,
                     "Items": [
                         {
-                            "Id": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
-                            "DomainName": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                            "Id": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
+                            "DomainName": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                             "OriginPath": "",
                             "CustomHeaders": {
                                 "Quantity": 0
@@ -3051,7 +3204,7 @@ Output:
                     "Quantity": 0
                 },
                 "DefaultCacheBehavior": {
-                    "TargetOriginId": "amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com",
+                    "TargetOriginId": "amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com",
                     "TrustedSigners": {
                         "Enabled": false,
                         "Quantity": 0
@@ -3084,7 +3237,7 @@ Output:
                         "Quantity": 0
                     },
                     "FieldLevelEncryptionId": "",
-                    "CachePolicyId": "658327ea-f89d-4fab-a63d-7e886EXAMPLE"
+                    "CachePolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 },
                 "CacheBehaviors": {
                     "Quantity": 0
@@ -3116,6 +3269,7 @@ Output:
     }
 }
 ```
+For more information, see [Configure distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListDistributions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-distributions.html) in *AWS CLI Command Reference*.
 
 ### `list-domain-conflicts`
@@ -3156,7 +3310,7 @@ The following code example shows how to use `list-field-level-encryption-configs
 
 **AWS CLI**
 **To list CloudFront field-level encryption configurations**
-The following example gets a list of the CloudFront field-level encryption configurations in your AWS account:
+The following `list-field-level-encryption-configs` example gets a list of the CloudFront field-level encryption configurations in your AWS account.
 
 ```
 aws cloudfront list-field-level-encryption-configs
@@ -3198,6 +3352,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListFieldLevelEncryptionConfigs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-field-level-encryption-configs.html) in *AWS CLI Command Reference*.
 
 ### `list-field-level-encryption-profiles`
@@ -3207,7 +3362,7 @@ The following code example shows how to use `list-field-level-encryption-profile
 
 **AWS CLI**
 **To list CloudFront field-level encryption profiles**
-The following example gets a list of the CloudFront field-level encryption profiles in your AWS account:
+The following `list-field-level-encryption-profiles` example gets a list of the CloudFront field-level encryption profiles in your AWS account.
 
 ```
 aws cloudfront list-field-level-encryption-profiles
@@ -3266,6 +3421,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListFieldLevelEncryptionProfiles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-field-level-encryption-profiles.html) in *AWS CLI Command Reference*.
 
 ### `list-invalidations-for-distribution-tenant`
@@ -3306,10 +3462,11 @@ The following code example shows how to use `list-invalidations`.
 
 **AWS CLI**
 **To list CloudFront invalidations**
-The following example gets a list of the invalidations for the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`:
+The following `list-invalidations` example gets a list of the invalidations for the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`.
 
 ```
-aws cloudfront list-invalidations --distribution-id {{EDFDVBD6EXAMPLE}}
+aws cloudfront list-invalidations \
+    --distribution-id {{EDFDVBD6EXAMPLE}}
 ```
 Output:
 
@@ -3330,6 +3487,7 @@ Output:
     }
 }
 ```
+For more information, see [Invalidate files to remove content](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListInvalidations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-invalidations.html) in *AWS CLI Command Reference*.
 
 ### `list-public-keys`
@@ -3339,7 +3497,7 @@ The following code example shows how to use `list-public-keys`.
 
 **AWS CLI**
 **To list CloudFront public keys**
-The following example gets a list of the CloudFront public keys in your AWS account:
+The following `list-public-keys` example gets a list of the CloudFront public keys in your AWS account.
 
 ```
 aws cloudfront list-public-keys
@@ -3370,6 +3528,7 @@ Output:
     }
 }
 ```
+For more information, see [Specify signers that can create signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListPublicKeys](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-public-keys.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -3379,7 +3538,7 @@ The following code example shows how to use `list-tags-for-resource`.
 
 **AWS CLI**
 **To list tags for a CloudFront distribution**
-The following example gets a list of the tags for a CloudFront distribution:
+The following `list-tags-for-resource` example gets a list of the tags for a CloudFront distribution.
 
 ```
 aws cloudfront list-tags-for-resource \
@@ -3407,6 +3566,7 @@ Output:
     }
 }
 ```
+For more information, see [Tag a CloudFront resource](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/tagging.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `sign-cookies`
@@ -3415,8 +3575,8 @@ Output:
 The following code example shows how to use `sign-cookies`.
 
 **AWS CLI**
-**To generate CloudFront signed cookies**
-The following example generates signed cookies that grant access to every object in a CloudFront distribution. To generate signed cookies, you need the key pair ID (called the **Access Key ID** in the AWS Management Console) and the private key of the trusted signer's CloudFront key pair. Because the resource contains a wildcard, a custom policy is used. For more information about signed cookies, see [Using signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html) in the *Amazon CloudFront Developer Guide*.
+**Example 1: To generate CloudFront signed cookies**
+The following `sign-cookies` example generates signed cookies that grant access to every object in a CloudFront distribution. To generate signed cookies, you need the key pair ID (called the **Access Key ID** in the AWS Management Console) and the private key of the trusted signer's CloudFront key pair. Because the resource contains a wildcard, a custom policy is used.
 
 ```
 aws cloudfront sign-cookies \
@@ -3425,6 +3585,14 @@ aws cloudfront sign-cookies \
     --private-key {{file://cf-signer-priv-key.pem}} \
     --date-less-than {{2020-01-01}} \
     --hash-algorithm {{SHA256}}
+```
+Contents of `cf-signer-priv-key.pem`:
+
+```
+-----BEGIN RSA PRIVATE KEY-----
+EXAMPLEPRIVATEKEYMIIEowIBAAKCAQEAxPMbCA2Ks0lnd7IR+3pwwd3H/7jPGwj8
+bLUmore7bX+oeGpZ6QmLAe/1UOWcmZX2u70dYcSIzB1ofZtcn4cJEXAMPLEKEY...
+-----END RSA PRIVATE KEY-----
 ```
 Output:
 
@@ -3437,8 +3605,9 @@ Output:
 }
 ```
 Set each cookie in the response to the viewer, adding the cookie attributes (such as `Domain`, `Path`, `Secure` and `HttpOnly`) that your application needs.
-**To extract a single cookie value**
-The set of cookies depends on the policy type and hash algorithm, so the columns of `--output text` vary between invocations. Use `--query` to select a cookie by name.
+For more information, see [Use signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html) in the *Amazon CloudFront Developer Guide*.
+**Example 2: To extract a single cookie value**
+The following `sign-cookies` example generates signed cookies and returns only the value of the `CloudFront-Signature` cookie. The set of cookies depends on the policy type and hash algorithm, so the columns of `--output text` vary between invocations. Use `--query` to select a cookie by name.
 
 ```
 aws cloudfront sign-cookies \
@@ -3455,6 +3624,7 @@ Output:
 ```
 Uu8FSzfyZ1pUJfnPTfpZpXoR3cHtu6Vk41gOodDpfCGmY4j~TBvOMBUsXzrcBjAqRuVV9b0Aa1HBpHeY-TR3G3Jbb2Yn2cxNSlAfC4tIYwWOkwypCZl4csuHdFC8XaN0yA0G8GRHDsxNPHKY6lq3ypbnJcXDSzzCixTAgJpOO7M_
 ```
+For more information, see [Use signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [SignCookies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/sign-cookies.html) in *AWS CLI Command Reference*.
 
 ### `sign`
@@ -3463,8 +3633,8 @@ Uu8FSzfyZ1pUJfnPTfpZpXoR3cHtu6Vk41gOodDpfCGmY4j~TBvOMBUsXzrcBjAqRuVV9b0Aa1HBpHeY
 The following code example shows how to use `sign`.
 
 **AWS CLI**
-**To sign a CloudFront URL**
-The following example signs a CloudFront URL. To sign a URL, you need the key pair ID (called the **Access Key ID** in the AWS Management Console) and the private key of the trusted signer's CloudFront key pair. For more information about signed URLs, see [Serving Private Content with Signed URLs and Signed Cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html) in the *Amazon CloudFront Developer Guide*.
+**Example 1: To sign a CloudFront URL**
+The following `sign` example signs a CloudFront URL. To sign a URL, you need the key pair ID (called the **Access Key ID** in the AWS Management Console) and the private key of the trusted signer's CloudFront key pair.
 
 ```
 aws cloudfront sign \
@@ -3473,13 +3643,22 @@ aws cloudfront sign \
     --private-key {{file://cf-signer-priv-key.pem}} \
     --date-less-than {{2020-01-01}}
 ```
+Contents of `cf-signer-priv-key.pem`:
+
+```
+-----BEGIN RSA PRIVATE KEY-----
+EXAMPLEPRIVATEKEYMIIEowIBAAKCAQEAxPMbCA2Ks0lnd7IR+3pwwd3H/7jPGwj8
+bLUmore7bX+oeGpZ6QmLAe/1UOWcmZX2u70dYcSIzB1ofZtcn4cJEXAMPLEKEY...
+-----END RSA PRIVATE KEY-----
+```
 Output:
 
 ```
 https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=v7tTOShSbp6U853uAIy3IWkegvCyg5kfulm2m7qLAc8NX-wtRFXbLSAmRep3uqYsckuij8c0KE97OQE1QadcusZa3uU~ez6QVoQ9-FSsaiB3hgB-DNxZyCu4~zrx-RfZkI7ZZQXDOEOVjurup2dXIb~obJEymOUMiADckQI-FwnC0utB7ax8Y2sjU7GeP9fcU9sT~I50MUgaxqqZo6-CUOAlER55-pnuuJRc3pCWZKtEI~3YMZ5Gbfv1sF~egkphOYzbGm7iO9~L0YK4S2naC57EmoByvCdiphA6XjXdZmoLzKXEjtniryC0k-mVm99RVz2QQQDJX9hGmhjz3uj7rw__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE
 ```
-**To sign a CloudFront URL using SHA-256**
-The following example signs a CloudFront URL using the SHA-256 hash algorithm, which is recommended for its stronger security posture. The signed URL includes the `Hash-Algorithm` query parameter so that CloudFront verifies the signature with SHA-256.
+For more information, see [Use signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html) in the *Amazon CloudFront Developer Guide*.
+**Example 2: To sign a CloudFront URL using SHA-256**
+The following `sign` example signs a CloudFront URL using the SHA-256 hash algorithm, which is recommended for its stronger security posture. The signed URL includes the `Hash-Algorithm` query parameter so that CloudFront verifies the signature with SHA-256.
 
 ```
 aws cloudfront sign \
@@ -3494,8 +3673,9 @@ Output:
 ```
 https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=YS1t-C1br-5iHCU1ggKKk3pio61TpuQtgQaOekhfA-JzdAG35qwU8Fjz78BwJmZUGHAFnxJTq2msCigm9cm1~m6~M-ue8wsoAxDXpTlCmJGWWt2bJLFaBpLSHaHAjj8C9J6Qn07IyVP7jTv4m0HTzO-O2VhCYCYQK018twXjGmf44~FynVJK~GFgpl8OBp4Nv673twzXbzwuEU~0kq-zvXOZCiqZqMQ6~uVtOxa6JzKd6Y453fGyLXtzJj6D9mw6vLIup1zaKA2vVekFWsljwyYfMhVfJRshoHlU8wq0mhYJlFM7jNQGJyI14guHXLh-3Cailhe7dkIeMebzJ26klA__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE&Hash-Algorithm=SHA256
 ```
-**To sign a CloudFront URL using an ECDSA key**
-The following example signs a CloudFront URL with an ECDSA (P-256) private key. ECDSA keys always sign with SHA-256, so the signed URL includes the `Hash-Algorithm=SHA256` query parameter without specifying `--hash-algorithm`. The key pair ID is the ID of the public key in the CloudFront key group.
+For more information, see [Use signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html) in the *Amazon CloudFront Developer Guide*.
+**Example 3: To sign a CloudFront URL using an ECDSA key**
+The following `sign` example signs a CloudFront URL with an ECDSA (P-256) private key. ECDSA keys always sign with SHA-256, so the signed URL includes the `Hash-Algorithm=SHA256` query parameter without specifying `--hash-algorithm`. The key pair ID is the ID of the public key in the CloudFront key group.
 
 ```
 aws cloudfront sign \
@@ -3504,13 +3684,22 @@ aws cloudfront sign \
     --private-key {{file://cf-signer-ecdsa-priv-key.pem}} \
     --date-less-than {{2020-01-01}}
 ```
+Contents of `cf-signer-ecdsa-priv-key.pem`:
+
+```
+-----BEGIN EC PRIVATE KEY-----
+EXAMPLEPRIVATEKEYMHcCAQEEIOdA2Ks0lnd7IR+3pwwd3H/7jPGwj8bLUmore7bX
++oeGoAoGCCqGSM49AwEHoUQDQgAEEXAMPLEKEY...
+-----END EC PRIVATE KEY-----
+```
 Output:
 
 ```
 https://d111111abcdef8.cloudfront.net/private-content/private-file.html?Expires=1577836800&Signature=MEUCIQC9y65NPHY3Y0ADS3pIIBjYoVbB~N1rnGwYcTudKTj9ZAIgV3pHaL-WuumMpAApEaTN3svwatuNGDt2n0sKDrEGSfM_&Key-Pair-Id=K2JCJMDEHXQW5F&Hash-Algorithm=SHA256
 ```
-**To sign a CloudFront URL with a wildcard policy resource**
-The following example signs a policy for every object under `/videos/` and applies the signature to a specific URL. Because the policy resource contains a wildcard, a custom policy is used and included in the signed URL. The same `Policy`, `Signature` and `Key-Pair-Id` query parameters can be reused for any URL matching the policy resource.
+For more information, see [Use signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html) in the *Amazon CloudFront Developer Guide*.
+**Example 4: To sign a CloudFront URL with a wildcard policy resource**
+The following `sign` example signs a policy for every object under `/videos/` and applies the signature to a specific URL. Because the policy resource contains a wildcard, a custom policy is used and included in the signed URL. The same `Policy`, `Signature` and `Key-Pair-Id` query parameters can be reused for any URL matching the policy resource.
 
 ```
 aws cloudfront sign \
@@ -3525,6 +3714,7 @@ Output:
 ```
 https://d111111abcdef8.cloudfront.net/videos/intro.mp4?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMTExMTExYWJjZGVmOC5jbG91ZGZyb250Lm5ldC92aWRlb3MvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTU3NzgzNjgwMH19fV19&Signature=G0xpyeYh8qA0p5rQbCdlOihuPXaX15w~KrUlEXgnws9ALZipi1EC5O~5QC~bVhpi2HjMQZDuazj8IJN5YAgDsGfUft1uwZmjmr-loumKhInIqAurYzg0UE3QqZOmwB~kSn-XcLLb5aeMaUT~cT1Lm89cSkL2QkOPoOVaarEcF4Y5dt~BF4XFKVXz3pDLWkwxynRXtsfXv1t9wq1mSNSQNjt~TrI4-sOW3z4t1ObLmFsmG-JuJOAjfbZeJHnko1DRtZ3MpJamaj6aKY5NDK7eXE4w5TrE8U~yS5FV1dVURu3WVZ7ae3gBp5fC0smyMNb~dQ7Pak3-PAU~sdbXsg-V7Q__&Key-Pair-Id=APKAEIBAERJR2EXAMPLE
 ```
+For more information, see [Use signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [Sign](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/sign.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -3541,7 +3731,7 @@ aws cloudfront tag-resource \
     --resource {{arn:aws:cloudfront::123456789012:distribution/EDFDVBD6EXAMPLE}} \
     --tags '{{Items=[{Key=Name,Value="Example name"},{Key=Project,Value="Example project"}]}}'
 ```
-Instead of using command line arguments, you can provide the tags in a JSON file, as shown in the following example:
+Instead of using command line arguments, you can provide the tags in a JSON file, as shown in the following example.
 
 ```
 aws cloudfront tag-resource \
@@ -3565,6 +3755,7 @@ Contents of `tags.json`:
 }
 ```
 This command produces no output.
+For more information, see [Tag a CloudFront resource](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/tagging.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -3574,21 +3765,22 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To remove tags from a CloudFront distribution**
-The following example removes two tags from a CloudFront distribution by using command line arguments:
+The following `untag-resource` example removes two tags from a CloudFront distribution by using command line arguments.
 
 ```
 aws cloudfront untag-resource \
     --resource {{arn:aws:cloudfront::123456789012:distribution/EDFDVBD6EXAMPLE}} \
     --tag-keys {{Items=Name,Project}}
 ```
-Instead of using command line arguments, you can provide the tag keys in a JSON file, as shown in the following example:
+This command produces no output.
+Instead of using command line arguments, you can provide the tag keys in a JSON file, as shown in the following example.
 
 ```
 aws cloudfront untag-resource \
     --resource {{arn:aws:cloudfront::123456789012:distribution/EDFDVBD6EXAMPLE}} \
     --tag-keys {{file://tag-keys.json}}
 ```
-The file `tag-keys.json` is a JSON document in the current folder that contains the following:
+Contents of `tag-keys.json`:
 
 ```
 {
@@ -3599,6 +3791,7 @@ The file `tag-keys.json` is a JSON document in the current folder that contains 
 }
 ```
 When successful, this command has no output.
+For more information, see [Tag a CloudFront resource](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/tagging.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-cloud-front-origin-access-identity`
@@ -3608,17 +3801,16 @@ The following code example shows how to use `update-cloud-front-origin-access-id
 
 **AWS CLI**
 **To update a CloudFront origin access identity**
-The following example updates the origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`. The only field that you can update is the OAI's `Comment`.
+The following `update-cloud-front-origin-access-identity` example updates the origin access identity (OAI) with the ID `E74FTE3AEXAMPLE`. The only field that you can update is the OAI's `Comment`.
 To update an OAI, you must have the OAI's ID and `ETag`. The OAI ID is returned in the output of the create-cloud-front-origin-access-identity and list-cloud-front-origin-access-identities commands. To get the `ETag`, use the get-cloud-front-origin-access-identity or get-cloud-front-origin-access-identity-config command. Use the `--if-match` option to provide the OAI's `ETag`.
 
 ```
 aws cloudfront update-cloud-front-origin-access-identity \
     --id {{E74FTE3AEXAMPLE}} \
     --if-match {{E2QWRUHEXAMPLE}} \
-    --cloud-front-origin-access-identity-config \
-        CallerReference=cli-example,Comment="Example OAI Updated"
+    --cloud-front-origin-access-identity-config CallerReference=cli-example,Comment="Example OAI Updated"
 ```
-You can accomplish the same thing by providing the OAI configuration in a JSON file, as shown in the following example:
+You can accomplish the same thing by providing the OAI configuration in a JSON file, as shown in the following example.
 
 ```
 aws cloudfront update-cloud-front-origin-access-identity \
@@ -3626,7 +3818,7 @@ aws cloudfront update-cloud-front-origin-access-identity \
     --if-match {{E2QWRUHEXAMPLE}} \
     --cloud-front-origin-access-identity-config {{file://OAI-config.json}}
 ```
-The file `OAI-config.json` is a JSON document in the current directory that contains the following:
+Contents of `OAI-config.json`:
 
 ```
 {
@@ -3634,7 +3826,8 @@ The file `OAI-config.json` is a JSON document in the current directory that cont
     "Comment": "Example OAI Updated"
 }
 ```
-Whether you provide the OAI configuration with a command line argument or a JSON file, the output is the same:
+Whether you provide the OAI configuration with a command line argument or a JSON file, the output is the same.
+Output:
 
 ```
 {
@@ -3649,6 +3842,7 @@ Whether you provide the OAI configuration with a command line argument or a JSON
     }
 }
 ```
+For more information, see [Restrict access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [UpdateCloudFrontOriginAccessIdentity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-cloud-front-origin-access-identity.html) in *AWS CLI Command Reference*.
 
 ### `update-connection-group`
@@ -3782,7 +3976,7 @@ The following code example shows how to use `update-distribution`.
 
 **AWS CLI**
 **Example 1: To update a CloudFront distribution's default root object**
-The following example updates the default root object to `index.html` for the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`.
+The following `update-distribution` example updates the default root object to `index.html` for the CloudFront distribution with the ID `EDFDVBD6EXAMPLE`.
 
 ```
 aws cloudfront update-distribution \
@@ -3806,7 +4000,7 @@ Output:
             "Quantity": 0
         },
         "DistributionConfig": {
-            "CallerReference": "6b10378d-49be-4c4b-a642-419ccaf8f3b5",
+            "CallerReference": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Aliases": {
                 "Quantity": 0
             },
@@ -3920,8 +4114,9 @@ Output:
     }
 }
 ```
+For more information, see [Update a distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToUpdateDistribution.html) in the *Amazon CloudFront Developer Guide*.
 **Example 2: To update a CloudFront distribution**
-The following example disables the CloudFront distribution with the ID `EMLARXS9EXAMPLE` by providing the distribution configuration in a JSON file named `dist-config-disable.json`. To update a distribution, you must use the `--if-match` option to provide the distribution's `ETag`. To get the `ETag`, use the get-distribution or get-distribution-config command. Note that the `Enabled` field is set to `false` in the JSON file.
+The following `update-distribution` example disables the CloudFront distribution with the ID `EMLARXS9EXAMPLE` by providing the distribution configuration in a JSON file named `dist-config-disable.json`. To update a distribution, you must use the `--if-match` option to provide the distribution's `ETag`. To get the `ETag`, use the get-distribution or get-distribution-config command. Note that the `Enabled` field is set to `false` in the JSON file.
 After you use the following example to disable a distribution, you can use the delete-distribution command to delete it.
 
 ```
@@ -4149,6 +4344,7 @@ Output:
     }
 }
 ```
+For more information, see [Update a distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToUpdateDistribution.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [UpdateDistribution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-distribution.html) in *AWS CLI Command Reference*.
 
 ### `update-domain-association`
@@ -4185,7 +4381,7 @@ The following code example shows how to use `update-field-level-encryption-confi
 
 **AWS CLI**
 **To update a CloudFront field-level encryption configuration**
-The following example updates the `Comment` field of the field-level encryption configuration with the ID `C3KM2WVD605UAY` by providing the parameters in a JSON file.
+The following `update-field-level-encryption-config` example updates the `Comment` field of the field-level encryption configuration with the ID `C3KM2WVD605UAY` by providing the parameters in a JSON file.
 To update a field-level encryption configuration, you must have the configuration's ID and `ETag`. The ID is returned in the output of the create-field-level-encryption-config and list-field-level-encryption-configs commands. To get the `ETag`, use the get-field-level-encryption or get-field-level-encryption-config command. Use the `--if-match` option to provide the configuration's `ETag`.
 
 ```
@@ -4194,7 +4390,7 @@ aws cloudfront update-field-level-encryption-config \
     --if-match {{E2P4Z4VU7TY5SG}} \
     --field-level-encryption-config {{file://fle-config.json}}
 ```
-The file `fle-config.json` is a JSON document in the current directory that contains the following:
+Contents of `fle-config.json`:
 
 ```
 {
@@ -4256,6 +4452,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [UpdateFieldLevelEncryptionConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-field-level-encryption-config.html) in *AWS CLI Command Reference*.
 
 ### `update-field-level-encryption-profile`
@@ -4265,7 +4462,7 @@ The following code example shows how to use `update-field-level-encryption-profi
 
 **AWS CLI**
 **To update a CloudFront field-level encryption profile**
-The following example updates the field-level encryption profile with the ID `PPK0UOSIF5WSV`. This example updates the profile's `Name` and `Comment`, and adds a second `FieldPatterns` item, by providing the parameters in a JSON file.
+The following `update-field-level-encryption-profile` example updates the field-level encryption profile with the ID `PPK0UOSIF5WSV`. This example updates the profile's `Name` and `Comment`, and adds a second `FieldPatterns` item, by providing the parameters in a JSON file.
 To update a field-level encryption profile, you must have the profile's ID and `ETag`. The ID is returned in the output of the create-field-level-encryption-profile and list-field-level-encryption-profiles commands. To get the `ETag`, use the get-field-level-encryption-profile or get-field-level-encryption-profile-config command. Use the `--if-match` option to provide the profile's `ETag`.
 
 ```
@@ -4274,7 +4471,7 @@ aws cloudfront update-field-level-encryption-profile \
     --if-match {{E1QQG65FS2L2GC}} \
     --field-level-encryption-profile-config {{file://fle-profile-config.json}}
 ```
-The file `fle-profile-config.json` is a JSON document in the current directory that contains the following:
+Contents of `fle-profile-config.json`:
 
 ```
 {
@@ -4331,6 +4528,7 @@ Output:
     }
 }
 ```
+For more information, see [Use field-level encryption to help protect sensitive data](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-encryption.html) in the *Amazon CloudFront Developer Guide*.
 +  For API details, see [UpdateFieldLevelEncryptionProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-field-level-encryption-profile.html) in *AWS CLI Command Reference*.
 
 ### `verify-dns-configuration`

@@ -77,6 +77,7 @@ Required: Yes
    "Specification": {
       "BaseInferenceComponentName": "string",
       "ComputeResourceRequirements": {
+         "AcceleratorPartitionType": "string",
          "MaxMemoryRequiredInMb": number,
          "MinMemoryRequiredInMb": number,
          "NumberOfAcceleratorDevicesRequired": number,
@@ -122,6 +123,7 @@ Required: Yes
       {
          "BaseInferenceComponentName": "string",
          "ComputeResourceRequirements": {
+            "AcceleratorPartitionType": "string",
             "MaxMemoryRequiredInMb": number,
             "MinMemoryRequiredInMb": number,
             "NumberOfAcceleratorDevicesRequired": number,

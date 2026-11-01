@@ -193,11 +193,11 @@ Output:
 ```
 For more information, see [Retrieve a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets.html) in the *Secrets Manager User Guide*.
 **Example 2: To retrieve the previous secret value**
-The following `get-secret-value` example gets the previous secret value.:
+The following `get-secret-value` example gets the previous secret value.
 
 ```
 aws secretsmanager get-secret-value \
-    --secret-id {{MyTestSecret}}
+    --secret-id {{MyTestSecret}} \
     --version-stage {{AWSPREVIOUS}}
 ```
 Output:

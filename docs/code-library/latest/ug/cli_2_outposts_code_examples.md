@@ -87,7 +87,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/work-with-outposts.html) in the *AWS Outposts User Guide*.
+For more information, see [What is AWS Outposts?](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html) in the *AWS Outposts User Guide*.
 +  For API details, see [GetOutpost](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/outposts/get-outpost.html) in *AWS CLI Command Reference*.
 
 ### `list-outposts`
@@ -135,7 +135,7 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/work-with-outposts.html) in the *AWS Outposts User Guide*.
+For more information, see [What is AWS Outposts?](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html) in the *AWS Outposts User Guide*.
 +  For API details, see [ListOutposts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/outposts/list-outposts.html) in *AWS CLI Command Reference*.
 
 ### `list-sites`
@@ -165,5 +165,5 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/work-with-outposts.html) in the *AWS Outposts User Guide*.
+For more information, see [What is AWS Outposts?](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html) in the *AWS Outposts User Guide*.
 +  For API details, see [ListSites](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/outposts/list-sites.html) in *AWS CLI Command Reference*.

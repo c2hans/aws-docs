@@ -116,6 +116,7 @@ Output:
     ]
 }
 ```
+For more information, see [Exploring your data using Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-exploring-data.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [GetCostAndUsage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ce/get-cost-and-usage.html) in *AWS CLI Command Reference*.
 
 ### `get-dimension-values`
@@ -125,46 +126,49 @@ The following code example shows how to use `get-dimension-values`.
 
 **AWS CLI**
 **To retrieve the tags for the dimension SERVICE, with a value of "Elastic"**
-This example retrieves the tags for the dimension SERVICE, with a value of "Elastic" for January 01 2017 through May 18 2017.
-Command:
+The following `get-dimension-values` example retrieves the tags for the dimension SERVICE, with a value of "Elastic" for January 01 2017 through May 18 2017.
 
 ```
-aws ce get-dimension-values --search-string {{Elastic}} --time-period {{Start=2017-01-01,End=2017-05-18}} --dimension {{SERVICE}}
+aws ce get-dimension-values \
+    --search-string {{Elastic}} \
+    --time-period {{Start=2017-01-01,End=2017-05-18}} \
+    --dimension {{SERVICE}}
 ```
 Output:
 
 ```
 {
-   "TotalSize": 6,
-   "DimensionValues": [
-       {
-           "Attributes": {},
-           "Value": "Amazon ElastiCache"
-       },
-       {
-           "Attributes": {},
-           "Value": "EC2 - Other"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elastic Compute Cloud - Compute"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elastic Load Balancing"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elastic MapReduce"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elasticsearch Service"
-       }
-   ],
-   "ReturnSize": 6
+    "TotalSize": 6,
+    "DimensionValues": [
+        {
+            "Attributes": {},
+            "Value": "Amazon ElastiCache"
+        },
+        {
+            "Attributes": {},
+            "Value": "EC2 - Other"
+        },
+        {
+            "Attributes": {},
+            "Value": "Amazon Elastic Compute Cloud - Compute"
+        },
+        {
+            "Attributes": {},
+            "Value": "Amazon Elastic Load Balancing"
+        },
+        {
+            "Attributes": {},
+            "Value": "Amazon Elastic MapReduce"
+        },
+        {
+            "Attributes": {},
+            "Value": "Amazon Elasticsearch Service"
+        }
+    ],
+    "ReturnSize": 6
 }
 ```
+For more information, see [Filtering the data that you want to view](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-filtering.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [GetDimensionValues](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ce/get-dimension-values.html) in *AWS CLI Command Reference*.
 
 ### `get-reservation-coverage`
@@ -173,69 +177,85 @@ Output:
 The following code example shows how to use `get-reservation-coverage`.
 
 **AWS CLI**
-**To retrieve the reservation coverage for EC2 t2.nano instances in the us-east-1 region**
-This example retrieves the reservation coverage for EC2 t2.nano instances in the us-east-1 region for July-September of 2017.
-Command:
+**To retrieve the reservation coverage for EC2 t2.nano instances in the us-west-2 region**
+The following `get-reservation-coverage` example retrieves the reservation coverage for EC2 t2.nano instances in the us-west-2 region for July-September of 2017.
 
 ```
-aws ce get-reservation-coverage --time-period {{Start=2017-07-01,End=2017-10-01}} --group-by {{Type=Dimension,Key=REGION}} --filter {{file://filters.json}}
+aws ce get-reservation-coverage \
+    --time-period {{Start=2017-07-01,End=2017-10-01}} \
+    --group-by {{Type=Dimension,Key=REGION}} \
+    --filter {{file://filters.json}}
 ```
-filters.json:
+Contents of `filters.json`:
 
 ```
 {
-   "And": [
-     {
-       "Dimensions": {
-         "Key": "INSTANCE_TYPE",
-         "Values": [
-           "t2.nano"
-         ]
-       },
-       "Dimensions": {
-         "Key": "REGION",
-         "Values": [
-           "us-east-1"
-         ]
-       }
-     }
-   ]
- }
+    "And": [
+        {
+            "Dimensions": {
+                "Key": "INSTANCE_TYPE",
+                "Values": [
+                    "t2.nano"
+                ]
+            }
+        },
+        {
+            "Dimensions": {
+                "Key": "REGION",
+                "Values": [
+                    "us-west-2"
+                ]
+            }
+        }
+    ]
+}
 ```
 Output:
 
 ```
 {
-   "TotalSize": 6,
-   "DimensionValues": [
-       {
-           "Attributes": {},
-           "Value": "Amazon ElastiCache"
-       },
-       {
-           "Attributes": {},
-           "Value": "EC2 - Other"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elastic Compute Cloud - Compute"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elastic Load Balancing"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elastic MapReduce"
-       },
-       {
-           "Attributes": {},
-           "Value": "Amazon Elasticsearch Service"
-       }
-   ],
-   "ReturnSize": 6
+    "CoveragesByTime": [
+        {
+            "TimePeriod": {
+                "Start": "2017-07-01",
+                "End": "2017-10-01"
+            },
+            "Groups": [
+                {
+                    "Attributes": {
+                        "region": "us-west-2"
+                    },
+                    "Coverage": {
+                        "CoverageHours": {
+                            "OnDemandHours": "3000",
+                            "ReservedHours": "1000",
+                            "TotalRunningHours": "4000",
+                            "CoverageHoursPercentage": "25"
+                        }
+                    }
+                }
+            ],
+            "Total": {
+                "CoverageHours": {
+                    "OnDemandHours": "3000",
+                    "ReservedHours": "1000",
+                    "TotalRunningHours": "4000",
+                    "CoverageHoursPercentage": "25"
+                }
+            }
+        }
+    ],
+    "Total": {
+        "CoverageHours": {
+            "OnDemandHours": "3000",
+            "ReservedHours": "1000",
+            "TotalRunningHours": "4000",
+            "CoverageHoursPercentage": "25"
+        }
+    }
 }
 ```
+For more information, see [Understanding reservations in Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-ris.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [GetReservationCoverage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ce/get-reservation-coverage.html) in *AWS CLI Command Reference*.
 
 ### `get-reservation-purchase-recommendation`
@@ -265,6 +285,7 @@ Output:
     }
 }
 ```
+For more information, see [Accessing reservation recommendations](https://docs.aws.amazon.com/cost-management/latest/userguide/ri-recommendations.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [GetReservationPurchaseRecommendation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ce/get-reservation-purchase-recommendation.html) in *AWS CLI Command Reference*.
 
 ### `get-reservation-utilization`
@@ -312,6 +333,7 @@ Output:
     "UtilizationsByTime": []
 }
 ```
+For more information, see [Understanding reservations in Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-ris.html) in the *AWS Cost Management User Guide*.
 +  For API details, see [GetReservationUtilization](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ce/get-reservation-utilization.html) in *AWS CLI Command Reference*.
 
 ### `get-tags`
@@ -321,22 +343,25 @@ The following code example shows how to use `get-tags`.
 
 **AWS CLI**
 **To retrieve keys and values for a cost allocation tag**
-This example retrieves all cost allocation tags with a key of "Project" and a value that contains "secretProject".
-Command:
+The following `get-tags` example retrieves all cost allocation tags with a key of "Project" and a value that contains "secretProject".
 
 ```
-aws ce get-tags --search-string {{secretProject}} --time-period {{Start=2017-01-01,End=2017-05-18}} --tag-key {{Project}}
+aws ce get-tags \
+    --search-string {{secretProject}} \
+    --time-period {{Start=2017-01-01,End=2017-05-18}} \
+    --tag-key {{Project}}
 ```
 Output:
 
 ```
 {
-  "ReturnSize": 2,
-  "Tags": [
-    "secretProject1",
-    "secretProject2"
-  ],
-  "TotalSize": 2
+    "ReturnSize": 2,
+    "Tags": [
+        "secretProject1",
+        "secretProject2"
+    ],
+    "TotalSize": 2
 }
 ```
+For more information, see [Organizing and tracking costs using AWS cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing User Guide*.
 +  For API details, see [GetTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ce/get-tags.html) in *AWS CLI Command Reference*.

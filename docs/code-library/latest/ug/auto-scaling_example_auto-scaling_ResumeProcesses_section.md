@@ -14,7 +14,7 @@ The following code examples show how to use `ResumeProcesses`.
 
 **AWS CLI**
 **To resume suspended processes**
-This example resumes the specified suspended scaling process for the specified Auto Scaling group.
+The following `resume-processes` example resumes the specified suspended scaling process for the specified Auto Scaling group.
 
 ```
 aws autoscaling resume-processes \

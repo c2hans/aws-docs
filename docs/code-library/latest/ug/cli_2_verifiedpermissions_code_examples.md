@@ -133,7 +133,7 @@ aws verifiedpermissions create-policy \
     --definition {{file://definition1.txt}} \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```
-Contents of file `definition1.txt`:
+Contents of `definition1.txt`:
 
 ```
 {
@@ -170,7 +170,7 @@ aws verifiedpermissions create-policy \
     --definition {{file://definition2.txt}} \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```
-Contents of file `definition2.txt`:
+Contents of `definition2.txt`:
 
 ```
 {
@@ -486,7 +486,7 @@ The policy store contains a policy with the following statement that accepts ide
 
 ```
 permit(
-    principal == CognitoUser::"us-east-1_1a2b3c4d5|a1b2c3d4e5f6g7h8i9j0kalbmc",
+    principal == CognitoUser::"us-west-2_1a2b3c4d5|a1b2c3d4e5f6g7h8i9j0kalbmc",
     action,
     resource == Photo::"VacationPhoto94.jpg"
 );
@@ -498,7 +498,7 @@ Output:
     "decision":"Allow",
     "determiningPolicies":[
         {
-        "determiningPolicyId":"SPEXAMPLEabcdefg111111"
+            "policyId":"SPEXAMPLEabcdefg111111"
         }
     ],
     "errors":[]
@@ -538,12 +538,14 @@ Output:
 }
 ```
 **Example 2: To request an authorization decision for a user request (deny)**
-The following example is the same as the previous example, except that the principal is `User::"Bob"`. The policy store doesn't contain any policy that allows that user access to `Album::"alice_folder"`.
+The following `is-authorized` example requests the same authorization decision as the previous example, except that the principal is `User::"Bob"`. The policy store doesn't contain any policy that allows that user access to `Album::"alice_folder"`.
 The output indicates that the `Deny` was implicit because the list of `DeterminingPolicies` is empty.
 
 ```
-aws verifiedpermissions create-policy \
-    --definition {{file://definition2.txt}} \
+aws verifiedpermissions is-authorized \
+    --principal {{entityType=User,entityId=bob}} \
+    --action {{actionType=Action,actionId=view}} \
+    --resource {{entityType=Photo,entityId=VactionPhoto94.jpg}} \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```
 Output:
@@ -555,7 +557,7 @@ Output:
     "errors": []
 }
 ```
-For more information, see the [Amazon Verified Permissions User Guide](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/).
+For more information, see [Implementing authorization in Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/authorization.html) in the *Amazon Verified Permissions User Guide*.
 +  For API details, see [IsAuthorized](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/verifiedpermissions/is-authorized.html) in *AWS CLI Command Reference*.
 
 ### `list-identity-sources`
@@ -789,7 +791,7 @@ The following code example shows how to use `update-identity-source`.
 The following `update-identity-source` example modifies the specified identity source by providing a new Cognito user pool configuration and changing the entity type returned by the identity source.
 
 ```
-aws verifiedpermissions update-identity-source
+aws verifiedpermissions update-identity-source \
     --identity-source-id {{ISEXAMPLEabcdefg111111}} \
     --update-configuration {{file://config.txt}} \
     --principal-entity-type {{"Employee"}} \
@@ -799,10 +801,10 @@ Contents of `config.txt`:
 
 ```
 {
-        "cognitoUserPoolConfiguration": {
-                "userPoolArn": "arn:aws:cognito-idp:us-west-2:123456789012:userpool/us-west-2_1a2b3c4d5",
-                "clientIds":["a1b2c3d4e5f6g7h8i9j0kalbmc"]
-        }
+    "cognitoUserPoolConfiguration": {
+        "userPoolArn": "arn:aws:cognito-idp:us-west-2:123456789012:userpool/us-west-2_1a2b3c4d5",
+        "clientIds":["a1b2c3d4e5f6g7h8i9j0kalbmc"]
+    }
 }
 ```
 Output:
@@ -860,7 +862,7 @@ aws verifiedpermissions update-policy-template \
     --statement {{file://template1.txt}} \
     --policy-store-id {{PSEXAMPLEabcdefg111111}}
 ```
-Contents of file `template1.txt`:
+Contents of `template1.txt`:
 
 ```
 permit(
@@ -899,7 +901,7 @@ aws verifiedpermissions update-policy \
 ```
 The `statement` parameter takes a string representation of a JSON object. It contains embedded quotation marks (") within the outermost quotation mark pair. This requires you to convert the JSON to a string by preceding all embedded quotation marks with a backslash character ( " ) and combining all lines into a single text line with no line breaks.
 You can display example strings wrapped across multiple lines for readability, but the operation requires the parameters to be submitted as single-line strings.
-Contents of file `updated-definition.txt`:
+Contents of `updated-definition.txt`:
 
 ```
 {

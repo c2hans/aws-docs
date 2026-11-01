@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-context-variables.html
 ---
 
-# Context Variables
+# Context variables
 <a name="acxd-context-variables"></a>
 
 Define typed variables available across conversations within a workspace. Context variables can be referenced in flows and set by external systems.

@@ -30,7 +30,7 @@ The following `add-tags-to-resource` example adds up to 10 tags, key-value pairs
 
 ```
 aws elasticache add-tags-to-resource \
-    --resource-name {{"arn:aws:elasticache:us-east-1:1234567890:cluster:my-mem-cluster"}} \
+    --resource-name {{"arn:aws:elasticache:us-west-2:1234567890:cluster:my-mem-cluster"}} \
     --tags Key="APIVersion",Value="20150202" Key="Service",Value="ElastiCache"
 ```
 Output:
@@ -63,11 +63,29 @@ The following `authorize-cache-security-group-ingress` example allows network in
 
 ```
 aws elasticache authorize-cache-security-group-ingress \
-     --cache-security-group-name  {{"my-sec-grp"}} \
-     --ec2-security-group-name {{"my-ec2-sec-grp"}} \
-     --ec2-security-group-owner-id {{"1234567890"}}
+    --cache-security-group-name {{"my-sec-grp"}} \
+    --ec2-security-group-name {{"my-ec2-sec-grp"}} \
+    --ec2-security-group-owner-id {{"1234567890"}}
 ```
-The command produces no output.
+Output:
+
+```
+{
+    "CacheSecurityGroup": {
+        "OwnerId": "123456789012",
+        "CacheSecurityGroupName": "my-sec-grp",
+        "Description": "My cache security group",
+        "EC2SecurityGroups": [
+            {
+                "Status": "authorizing",
+                "EC2SecurityGroupName": "my-ec2-sec-grp",
+                "EC2SecurityGroupOwnerId": "1234567890"
+            }
+        ],
+        "ARN": "arn:aws:elasticache:us-west-2:123456789012:securitygroup:my-sec-grp"
+    }
+}
+```
 For more information, see [Self-Service Updates in Amazon ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Self-Service-Updates.html) in the *Elasticache User Guide*.
 +  For API details, see [AuthorizeCacheSecurityGroupIngress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/authorize-cache-security-group-ingress.html) in *AWS CLI Command Reference*.
 
@@ -161,7 +179,7 @@ Output:
         "SnapshotName": "my-snapshot-copy",
         "CacheClusterCreateTime": "2016-12-21T22:24:04.955Z",
         "AutoMinorVersionUpgrade": true,
-        "PreferredAvailabilityZone": "us-east-1c",
+        "PreferredAvailabilityZone": "us-west-2c",
         "SnapshotStatus": "creating",
         "SnapshotSource": "manual",
         "SnapshotWindow": "07:00-08:00",
@@ -295,7 +313,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a Cache Subnet Group](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/VPCs.CreatingSubnetGroup.html) in the *Elasticache User Guide*.
+For more information, see [Creating a subnet group](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SubnetGroups.Creating.html) in the *Elasticache User Guide*.
 +  For API details, see [CreateCacheSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/create-cache-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `create-global-replication-group`
@@ -345,7 +363,7 @@ Output:
     }
 }
 ```
-For more information, see [Replication Across AWS Regions Using Global Datastore](https://docs.amazonaws.cn/en_us/AmazonElastiCache/latest/red-ug/Redis-Global-Datastore.html) in the *Elasticache User Guide*.
+For more information, see [Replication across AWS Regions using global datastores](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Redis-Global-Datastore.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [CreateGlobalReplicationGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/create-global-replication-group.html) in *AWS CLI Command Reference*.
 
 ### `create-replication-group`
@@ -355,14 +373,15 @@ The following code example shows how to use `create-replication-group`.
 
 **AWS CLI**
 **To create a replication group**
-The following `create-replication-group` example creates a Redis (cluster mode disabled) or a Redis (cluster mode enabled) replication group. This operation is valid for Redis only.
+The following `create-replication-group` example creates a Valkey (cluster mode disabled) replication group with in-transit encryption enabled. This operation is valid for Valkey and Redis OSS. For Valkey, you must specify `--transit-encryption-enabled` or `--no-transit-encryption-enabled`.
 
 ```
 aws elasticache create-replication-group \
     --replication-group-id {{"mygroup"}} \
     --replication-group-description {{"my group"}} \
-    --engine {{"redis"}} \
-    --cache-node-type {{"cache.m5.large"}}
+    --engine {{"valkey"}} \
+    --cache-node-type {{"cache.m7g.large"}} \
+    --transit-encryption-enabled
 ```
 Output:
 
@@ -371,23 +390,77 @@ Output:
     "ReplicationGroup": {
         "ReplicationGroupId": "mygroup",
         "Description": "my group",
+        "GlobalReplicationGroupInfo": {},
         "Status": "creating",
         "PendingModifiedValues": {},
         "MemberClusters": [
             "mygroup-001"
         ],
         "AutomaticFailover": "disabled",
+        "MultiAZ": "disabled",
         "SnapshotRetentionLimit": 0,
-        "SnapshotWindow": "06:00-07:00",
+        "SnapshotWindow": "09:30-10:30",
         "ClusterEnabled": false,
-        "CacheNodeType": "cache.m5.large",
-        "TransitEncryptionEnabled": false,
-        "AtRestEncryptionEnabled": false
+        "CacheNodeType": "cache.m7g.large",
+        "TransitEncryptionEnabled": true,
+        "AtRestEncryptionEnabled": true,
+        "ARN": "arn:aws:elasticache:us-west-2:123456789012:replicationgroup:mygroup",
+        "LogDeliveryConfigurations": [],
+        "ReplicationGroupCreateTime": "2026-10-26T14:21:45.460000+00:00",
+        "DataTiering": "disabled",
+        "AutoMinorVersionUpgrade": true,
+        "NetworkType": "ipv4",
+        "IpDiscovery": "ipv4",
+        "TransitEncryptionMode": "required",
+        "ClusterMode": "disabled",
+        "Engine": "valkey"
     }
 }
 ```
-For more information, see [Creating a Redis Replication Group](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.CreatingRepGroup.html) in the *Elasticache User Guide*.
+For more information, see [Creating a Valkey or Redis OSS replication group](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Replication.CreatingRepGroup.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [CreateReplicationGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/create-replication-group.html) in *AWS CLI Command Reference*.
+
+### `create-serverless-cache`
+<a name="elasticache_CreateServerlessCache_cli_2_topic"></a>
+
+The following code example shows how to use `create-serverless-cache`.
+
+**AWS CLI**
+**To create a serverless cache**
+The following `create-serverless-cache` example creates a Valkey serverless cache using only the required parameters. The example omits `--subnet-ids` and `--security-group-ids`, so ElastiCache selects default subnets in your default VPC and uses the default security group of that VPC.
+
+```
+aws elasticache create-serverless-cache \
+    --serverless-cache-name {{my-serverless-cache}} \
+    --engine {{valkey}}
+```
+Output:
+
+```
+{
+    "ServerlessCache": {
+        "ServerlessCacheName": "my-serverless-cache",
+        "Description": " ",
+        "CreateTime": "2026-10-26T14:21:19.667000+00:00",
+        "Status": "creating",
+        "Engine": "valkey",
+        "MajorEngineVersion": "9",
+        "SecurityGroupIds": [
+            "sg-xxxxxxxxxxxxxc560"
+        ],
+        "ARN": "arn:aws:elasticache:us-west-2:123456789012:serverlesscache:my-serverless-cache",
+        "SubnetIds": [
+            "subnet-xxxxxxxxxxxxxb4b0",
+            "subnet-xxxxxxxxxxxxx2437",
+            "subnet-xxxxxxxxxxxxx5198"
+        ],
+        "SnapshotRetentionLimit": 0,
+        "DailySnapshotTime": "08:30"
+    }
+}
+```
+For more information, see [Create a Valkey serverless cache in a VPC](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/getting-started-valkey-vpc.html) in the *Amazon ElastiCache User Guide*.
++  For API details, see [CreateServerlessCache](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/create-serverless-cache.html) in *AWS CLI Command Reference*.
 
 ### `create-snapshot`
 <a name="elasticache_CreateSnapshot_cli_2_topic"></a>
@@ -515,7 +588,7 @@ The following code example shows how to use `decrease-node-groups-in-global-repl
 
 **AWS CLI**
 **To decrease the number of node groups in a global replication group**
-The following `decrease-node-groups-in-global-replication-group` decreases the node group count using the Redis engine.
+The following `decrease-node-groups-in-global-replication-group` example decreases the node group count using the Redis engine.
 
 ```
 aws elasticache decrease-node-groups-in-global-replication-group \
@@ -689,10 +762,11 @@ The following code example shows how to use `delete-cache-cluster`.
 The following `delete-cache-cluster` example deletes the specified previously provisioned cluster. The command deletes all associated cache nodes, node endpoints. and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you can't cancel or revert this operation.
 This operation is not valid for the following:
 Redis (cluster mode enabled) clustersA cluster that is the last read replica of a replication groupA node group (shard) that has Multi-AZ mode enabledA cluster from a Redis (cluster mode enabled) replication groupA cluster that is not in the available state
+The following command deletes the cluster `my-cluster-002`.
 
 ```
 aws elasticache delete-cache-cluster \
-    --cache-cluster-id "my-cluster-002"
+    --cache-cluster-id {{"my-cluster-002"}}
 ```
 Output:
 
@@ -818,7 +892,7 @@ Output:
     }
 }
 ```
-For more information, see [Replication Across AWS Regions Using Global Datastore](https://docs.amazonaws.cn/en_us/AmazonElastiCache/latest/red-ug/Redis-Global-Datastore.html) in the *Elasticache User Guide*.
+For more information, see [Replication across AWS Regions using global datastores](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Redis-Global-Datastore.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [DeleteGlobalReplicationGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/delete-global-replication-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-replication-group`
@@ -839,19 +913,20 @@ Output:
 
 ```
 {
-     "ReplicationGroup": {
-         "ReplicationGroupId": "mygroup",
-         "Description": "my group",
-         "Status": "deleting",
-         "PendingModifiedValues": {},
-         "AutomaticFailover": "disabled",
-         "SnapshotRetentionLimit": 0,
-         "SnapshotWindow": "06:00-07:00",
-         "TransitEncryptionEnabled": false,
-         "AtRestEncryptionEnabled": false
-     }
- }
+    "ReplicationGroup": {
+        "ReplicationGroupId": "mygroup",
+        "Description": "my group",
+        "Status": "deleting",
+        "PendingModifiedValues": {},
+        "AutomaticFailover": "disabled",
+        "SnapshotRetentionLimit": 0,
+        "SnapshotWindow": "06:00-07:00",
+        "TransitEncryptionEnabled": false,
+        "AtRestEncryptionEnabled": false
+    }
+}
 ```
+For more information, see [Deleting a replication group](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Replication.DeletingRepGroup.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [DeleteReplicationGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/delete-replication-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-snapshot`
@@ -1197,6 +1272,7 @@ Output:
     ]
 }
 ```
+For more information, see [Engine versions and upgrading in ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/engine-versions.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [DescribeCacheEngineVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/describe-cache-engine-versions.html) in *AWS CLI Command Reference*.
 
 ### `describe-cache-parameter-groups`
@@ -1235,7 +1311,7 @@ The following code example shows how to use `describe-cache-parameters`.
 
 **AWS CLI**
 **To describe cache parameters**
-The following ''describe-cache-parameters'' example returns the detailed parameter list for the specified cache parameter group.
+The following `describe-cache-parameters` example returns the detailed parameter list for the specified cache parameter group.
 
 ```
 aws elasticache describe-cache-parameters \
@@ -2605,6 +2681,7 @@ Output:
     }
 }
 ```
+For more information, see [Engine specific parameters](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGroups.Engine.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [DescribeEngineDefaultParameters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/describe-engine-default-parameters.html) in *AWS CLI Command Reference*.
 
 ### `describe-events`
@@ -2811,7 +2888,7 @@ Output:
 {
     "ReservedCacheNodesOfferings": [
         {
-            "ReservedCacheNodesOfferingId": "01ce0a19-a476-41cb-8aee-48eacbcdc8e5",
+            "ReservedCacheNodesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CacheNodeType": "cache.t3.small",
             "Duration": 31536000,
             "FixedPrice": 97.0,
@@ -2826,7 +2903,7 @@ Output:
             ]
         },
         {
-            "ReservedCacheNodesOfferingId": "0443a27b-4da5-4b90-b92d-929fbd7abed2",
+            "ReservedCacheNodesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CacheNodeType": "cache.m3.2xlarge",
             "Duration": 31536000,
             "FixedPrice": 1772.0,
@@ -2839,14 +2916,11 @@ Output:
                     "RecurringChargeFrequency": "Hourly"
                 }
             ]
-        },
-
-        ...
-
+        }
     ]
 }
 ```
-For more information, see [Getting Info About Reserved Node Offerings](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/reserved-nodes-offerings.html) in the *Elasticache Redis User Guide* or [Getting Info About Reserved Node Offerings](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/reserved-nodes-offerings.html) in the *Elasticache Memcached User Guide*.
+For more information, see [Reserved nodes](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.Reserved.html) in the *Elasticache User Guide*.
 +  For API details, see [DescribeReservedCacheNodesOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/describe-reserved-cache-nodes-offerings.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-cache-nodes`
@@ -2886,7 +2960,7 @@ Output:
     ]
 }
 ```
-For more information, see [Managing Costs with Reserved Nodes](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/reserved-nodes.html) in the *Elasticache User Guide*.
+For more information, see [Reserved nodes](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.Reserved.html) in the *Elasticache User Guide*.
 +  For API details, see [DescribeReservedCacheNodes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/describe-reserved-cache-nodes.html) in *AWS CLI Command Reference*.
 
 ### `describe-service-updates`
@@ -2905,38 +2979,39 @@ Output:
 
 ```
 {
-     "ServiceUpdates": [
-         {
-             "ServiceUpdateName": "elc-xxxxxxxx7-001",
-             "ServiceUpdateReleaseDate": "2019-10-09T16:00:00Z",
-             "ServiceUpdateEndDate": "2020-02-09T15:59:59Z",
-             "ServiceUpdateSeverity": "important",
-             "ServiceUpdateRecommendedApplyByDate": "2019-11-08T15:59:59Z",
-             "ServiceUpdateStatus": "available",
-             "ServiceUpdateDescription": "Upgrades to improve the security, reliability, and operational performance of your ElastiCache nodes",
-             "ServiceUpdateType": "security-update",
-             "Engine": "redis, memcached",
-             "EngineVersion": "redis 2.6.13 and onwards, memcached 1.4.5 and onwards",
-             "AutoUpdateAfterRecommendedApplyByDate": false,
-             "EstimatedUpdateTime": "30 minutes per node"
-         },
-         {
-             "ServiceUpdateName": "elc-xxxxxxxx4-001",
-             "ServiceUpdateReleaseDate": "2019-06-11T15:00:00Z",
-             "ServiceUpdateEndDate": "2019-10-01T09:24:00Z",
-             "ServiceUpdateSeverity": "important",
-             "ServiceUpdateRecommendedApplyByDate": "2019-07-11T14:59:59Z",
-             "ServiceUpdateStatus": "expired",
-             "ServiceUpdateDescription": "Upgrades to improve the security, reliability, and operational performance of your ElastiCache nodes",
-             "ServiceUpdateType": "security-update",
-             "Engine": "redis",
-             "EngineVersion": "redis 3.2.6, redis 4.0 and onwards",
-             "AutoUpdateAfterRecommendedApplyByDate": false,
-             "EstimatedUpdateTime": "30 minutes per node"
-         }
-     ]
- }
+    "ServiceUpdates": [
+        {
+            "ServiceUpdateName": "elc-xxxxxxxx7-001",
+            "ServiceUpdateReleaseDate": "2019-10-09T16:00:00Z",
+            "ServiceUpdateEndDate": "2020-02-09T15:59:59Z",
+            "ServiceUpdateSeverity": "important",
+            "ServiceUpdateRecommendedApplyByDate": "2019-11-08T15:59:59Z",
+            "ServiceUpdateStatus": "available",
+            "ServiceUpdateDescription": "Upgrades to improve the security, reliability, and operational performance of your ElastiCache nodes",
+            "ServiceUpdateType": "security-update",
+            "Engine": "redis, memcached",
+            "EngineVersion": "redis 2.6.13 and onwards, memcached 1.4.5 and onwards",
+            "AutoUpdateAfterRecommendedApplyByDate": false,
+            "EstimatedUpdateTime": "30 minutes per node"
+        },
+        {
+            "ServiceUpdateName": "elc-xxxxxxxx4-001",
+            "ServiceUpdateReleaseDate": "2019-06-11T15:00:00Z",
+            "ServiceUpdateEndDate": "2019-10-01T09:24:00Z",
+            "ServiceUpdateSeverity": "important",
+            "ServiceUpdateRecommendedApplyByDate": "2019-07-11T14:59:59Z",
+            "ServiceUpdateStatus": "expired",
+            "ServiceUpdateDescription": "Upgrades to improve the security, reliability, and operational performance of your ElastiCache nodes",
+            "ServiceUpdateType": "security-update",
+            "Engine": "redis",
+            "EngineVersion": "redis 3.2.6, redis 4.0 and onwards",
+            "AutoUpdateAfterRecommendedApplyByDate": false,
+            "EstimatedUpdateTime": "30 minutes per node"
+        }
+    ]
+}
 ```
+For more information, see [Service updates in ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Self-Service-Updates.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [DescribeServiceUpdates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/describe-service-updates.html) in *AWS CLI Command Reference*.
 
 ### `describe-snapshots`
@@ -2946,7 +3021,7 @@ The following code example shows how to use `describe-snapshots`.
 
 **AWS CLI**
 **To describe snapshots**
-The following ''describe-snapshots'' example returns information about your cluster or replication group snapshots.
+The following `describe-snapshots` example returns information about your cluster or replication group snapshots.
 
 ```
 aws elasticache describe-snapshots
@@ -3235,7 +3310,7 @@ The following code example shows how to use `disassociate-global-replication-gro
 
 **AWS CLI**
 **To diassociate a secondary cluster from a global replication group**
-The following `disassociate-global-replication-group` example removes a secondary cluster from a Global datastore
+The following `disassociate-global-replication-group` example removes a secondary cluster from a Global datastore.
 
 ```
 aws elasticache disassociate-global-replication-group \
@@ -3287,7 +3362,7 @@ The following code example shows how to use `increase-node-groups-in-global-repl
 
 **AWS CLI**
 **To increase the number of node groups in a global replication group**
-The following `increase-node-groups-in-global-replication-group` increases the node group count using the Redis engine.
+The following `increase-node-groups-in-global-replication-group` example increases the node group count using the Redis engine.
 
 ```
 aws elasticache increase-node-groups-in-global-replication-group \
@@ -3373,64 +3448,64 @@ Output:
 
 ```
 {
-     "ReplicationGroup": {
-         "ReplicationGroupId": "my-cluster",
-         "Description": " ",
-         "Status": "modifying",
-         "PendingModifiedValues": {},
-         "MemberClusters": [
-             "my-cluster-001",
-             "my-cluster-002",
-             "my-cluster-003",
-             "my-cluster-004"
-         ],
-         "NodeGroups": [
-             {
-                 "NodeGroupId": "0001",
-                 "Status": "modifying",
-                 "PrimaryEndpoint": {
-                     "Address": "my-cluster.xxxxxih.ng.0001.usw2.cache.amazonaws.com",
-                     "Port": 6379
-                 },
-                 "ReaderEndpoint": {
-                     "Address": "my-cluster-ro.xxxxxxih.ng.0001.usw2.cache.amazonaws.com",
-                     "Port": 6379
-                 },
-                 "NodeGroupMembers": [
-                     {
-                         "CacheClusterId": "my-cluster-001",
-                         "CacheNodeId": "0001",
-                         "ReadEndpoint": {
-                             "Address": "my-cluster-001.xxxxxih.0001.usw2.cache.amazonaws.com",
-                             "Port": 6379
-                         },
-                         "PreferredAvailabilityZone": "us-west-2a",
-                         "CurrentRole": "primary"
-                     },
-                     {
-                         "CacheClusterId": "my-cluster-003",
-                         "CacheNodeId": "0001",
-                         "ReadEndpoint": {
-                             "Address": "my-cluster-003.xxxxxih.0001.usw2.cache.amazonaws.com",
-                             "Port": 6379
-                         },
-                         "PreferredAvailabilityZone": "us-west-2a",
-                         "CurrentRole": "replica"
-                     }
-                 ]
-             }
-         ],
-         "AutomaticFailover": "disabled",
-         "SnapshotRetentionLimit": 0,
-         "SnapshotWindow": "07:30-08:30",
-         "ClusterEnabled": false,
-         "CacheNodeType": "cache.r5.xlarge",
-         "TransitEncryptionEnabled": false,
-         "AtRestEncryptionEnabled": false
-     }
- }
+    "ReplicationGroup": {
+        "ReplicationGroupId": "my-cluster",
+        "Description": " ",
+        "Status": "modifying",
+        "PendingModifiedValues": {},
+        "MemberClusters": [
+            "my-cluster-001",
+            "my-cluster-002",
+            "my-cluster-003",
+            "my-cluster-004"
+        ],
+        "NodeGroups": [
+            {
+                "NodeGroupId": "0001",
+                "Status": "modifying",
+                "PrimaryEndpoint": {
+                    "Address": "my-cluster.xxxxxih.ng.0001.usw2.cache.amazonaws.com",
+                    "Port": 6379
+                },
+                "ReaderEndpoint": {
+                    "Address": "my-cluster-ro.xxxxxxih.ng.0001.usw2.cache.amazonaws.com",
+                    "Port": 6379
+                },
+                "NodeGroupMembers": [
+                    {
+                        "CacheClusterId": "my-cluster-001",
+                        "CacheNodeId": "0001",
+                        "ReadEndpoint": {
+                            "Address": "my-cluster-001.xxxxxih.0001.usw2.cache.amazonaws.com",
+                            "Port": 6379
+                        },
+                        "PreferredAvailabilityZone": "us-west-2a",
+                        "CurrentRole": "primary"
+                    },
+                    {
+                        "CacheClusterId": "my-cluster-003",
+                        "CacheNodeId": "0001",
+                        "ReadEndpoint": {
+                            "Address": "my-cluster-003.xxxxxih.0001.usw2.cache.amazonaws.com",
+                            "Port": 6379
+                        },
+                        "PreferredAvailabilityZone": "us-west-2a",
+                        "CurrentRole": "replica"
+                    }
+                ]
+            }
+        ],
+        "AutomaticFailover": "disabled",
+        "SnapshotRetentionLimit": 0,
+        "SnapshotWindow": "07:30-08:30",
+        "ClusterEnabled": false,
+        "CacheNodeType": "cache.r5.xlarge",
+        "TransitEncryptionEnabled": false,
+        "AtRestEncryptionEnabled": false
+    }
+}
 ```
-For more information, see [Increasing the Number of Replicas in a Shard](https://docs.aws.amazon.c`m/AmazonElastiCache/latest/red-ug/increase-replica-count.html) in the *Elasticache User Guide*.
+For more information, see [Increasing the number of replicas in a shard](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/increase-replica-count.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [IncreaseReplicaCount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/increase-replica-count.html) in *AWS CLI Command Reference*.
 
 ### `list-allowed-node-type-modifications`
@@ -3495,7 +3570,7 @@ The following `list-tags-for-resource` example lists tags for a resource.
 
 ```
 aws elasticache list-tags-for-resource \
-    --resource-name {{"arn:aws:elasticache:us-east-1:123456789012:cluster:my-cluster"}}
+    --resource-name {{"arn:aws:elasticache:us-west-2:123456789012:cluster:my-cluster"}}
 ```
 Output:
 
@@ -3631,7 +3706,7 @@ The following code example shows how to use `modify-global-replication-group`.
 
 **AWS CLI**
 **To modify a global replication group**
-The following `modify-global-replication-group` modifies the properties of a global replication group, in this case disabling automatic failover, using the Redis engine.
+The following `modify-global-replication-group` example modifies the properties of a global replication group, in this case disabling automatic failover, using the Redis engine.
 
 ```
 aws elasticache modify-global-replication-group \
@@ -3639,7 +3714,7 @@ aws elasticache modify-global-replication-group \
     --apply-immediately \
     --no-automatic-failover-enabled
 ```
-Output
+Output:
 
 ```
 {
@@ -3667,7 +3742,7 @@ The following code example shows how to use `modify-replication-group-shard-conf
 
 **AWS CLI**
 **To modify a replication group shard configuration**
-The following `modify-replication-group-shard-configuration` decreases the node group count using the Redis engine.
+The following `modify-replication-group-shard-configuration` example decreases the node group count using the Redis engine.
 
 ```
 aws elasticache modify-replication-group-shard-configuration \
@@ -3676,7 +3751,7 @@ aws elasticache modify-replication-group-shard-configuration \
     --apply-immediately \
     --node-groups-to-remove {{0002}}
 ```
-Output
+Output:
 
 ```
 {
@@ -3821,7 +3896,7 @@ The following code example shows how to use `modify-replication-group`.
 
 **AWS CLI**
 **To modify a replication group**
-The following `modify-replication-group` disables Multi-AZ using the Redis engine.
+The following `modify-replication-group` example disables Multi-AZ using the Redis engine.
 
 ```
 aws elasticache modify-replication-group \
@@ -3829,7 +3904,7 @@ aws elasticache modify-replication-group \
     --no-multi-az-enabled \
     --apply-immediately
 ```
-Output
+Output:
 
 ```
 {
@@ -3991,7 +4066,7 @@ The following `purchase-reserved-cache-nodes-offering` example allows you to pur
 aws elasticache purchase-reserved-cache-nodes-offering \
     --reserved-cache-nodes-offering-id {{xxxxxxx-4da5-4b90-b92d-929fbd7abed2}}
 ```
-Output
+Output:
 
 ```
 {
@@ -4016,7 +4091,7 @@ Output
     }
 }
 ```
-For more information, see [Getting Info About Reserved Node Offerings](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/reserved-nodes-offerings.html) in the *Elasticache Redis User Guide* or [Getting Info About Reserved Node Offerings](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/reserved-nodes-offerings.html) in the *Elasticache Memcached User Guide*.
+For more information, see [Reserved nodes](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.Reserved.html) in the *Elasticache User Guide*.
 +  For API details, see [PurchaseReservedCacheNodesOffering](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/purchase-reserved-cache-nodes-offering.html) in *AWS CLI Command Reference*.
 
 ### `reboot-cache-cluster`
@@ -4079,7 +4154,7 @@ Output:
     }
 }
 ```
-For more information, see Rebooting a Cluster <https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Clusters.Rebooting.html in the *Elasticache User Guide*.
+For more information, see [Rebooting nodes](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/nodes.rebooting.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [RebootCacheCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/reboot-cache-cluster.html) in *AWS CLI Command Reference*.
 
 ### `reset-cache-parameter-group`
@@ -4103,6 +4178,7 @@ Output:
     "CacheParameterGroupName": "mygroup"
 }
 ```
+For more information, see [Configuring engine parameters using ElastiCache parameter groups](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGroups.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [ResetCacheParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/reset-cache-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `start-migration`
@@ -4112,14 +4188,14 @@ The following code example shows how to use `start-migration`.
 
 **AWS CLI**
 **To start a migration**
-The following `start-migration` migrates your data from self-hosted Redis on Amazon EC2 to Amazon ElastiCache, using the Redis engine.
+The following `start-migration` example migrates your data from self-hosted Redis on Amazon EC2 to Amazon ElastiCache, using the Redis engine.
 
 ```
 aws elasticache start-migration \
-   --replication-group-id {{test}} \
-   --customer-node-endpoint-list {{"Address='test.g2xbih.ng.0001.usw2.cache.amazonaws.com',Port=6379"}}
+    --replication-group-id {{test}} \
+    --customer-node-endpoint-list {{"Address='test.g2xbih.ng.0001.usw2.cache.amazonaws.com',Port=6379"}}
 ```
-Output
+Output:
 
 ```
 {
@@ -4205,8 +4281,8 @@ The following code example shows how to use `test-failover`.
 The following `test-failover` example tests automatic failover on the specified node group (called a shard in the console) in a replication group (called a cluster in the console).
 
 ```
-aws elasticache test-failover {{/}}
-    --replication-group-id {{"mycluster"}} {{/}}
+aws elasticache test-failover \
+    --replication-group-id {{"mycluster"}} \
     --node-group-id {{"0001"}}
 ```
 Output:
@@ -4311,4 +4387,5 @@ Output:
     }
 }
 ```
+For more information, see [Minimizing downtime in ElastiCache by using Multi-AZ with Valkey and Redis OSS](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoFailover.html) in the *Amazon ElastiCache User Guide*.
 +  For API details, see [TestFailover](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticache/test-failover.html) in *AWS CLI Command Reference*.

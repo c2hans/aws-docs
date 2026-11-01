@@ -113,6 +113,7 @@ For more information, see [Low-Latency Streaming Service Quotas](https://docs.aw
 | Composition: max duration | 24 | No | Maximum amount of time a composition can exist, in hours. |
 | Compositions | 20 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ivs/quotas/L-E945C199) | Maximum concurrent Composition resources per account. |
 | Compositions per stage | 5 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ivs/quotas/L-21B2923F) | Maximum concurrent Composition resources per stage. |
+| Composition: video publishers | 12 | No | Maximum number of publishers whose video is included in a composition. Audio from publishers beyond this limit is still mixed into the composition, but their video is not included. |
 | Concurrent participant replications | 5 | No | Maximum number of concurrent replications per participant across all stages in an AWS Region. |
 | Concurrent publishers | 1,000 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ivs/quotas/L-B33A5A4F) | Maximum number of participants who can be publishing across all stages in an AWS Region. |
 | Concurrent subscriptions | 20,000 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ivs/quotas/L-E9691DAB) | Maximum number of simultaneous publisher-to-subscriber connections across all stages in an AWS Region. |

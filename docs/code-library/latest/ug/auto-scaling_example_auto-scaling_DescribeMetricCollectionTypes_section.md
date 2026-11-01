@@ -14,7 +14,7 @@ The following code examples show how to use `DescribeMetricCollectionTypes`.
 
 **AWS CLI**
 **To describe the available metric collection types**
-This example describes the available metric collection types.
+The following `describe-metric-collection-types` example describes the available metric collection types.
 
 ```
 aws autoscaling describe-metric-collection-types
@@ -71,7 +71,7 @@ Output:
     ]
 }
 ```
-For more information, see [Auto Scaling group metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html#as-group-metrics) in the *Amazon EC2 Auto Scaling User Guide*.
+For more information, see [Auto Scaling group metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeMetricCollectionTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-metric-collection-types.html) in *AWS CLI Command Reference*.
 
 ------

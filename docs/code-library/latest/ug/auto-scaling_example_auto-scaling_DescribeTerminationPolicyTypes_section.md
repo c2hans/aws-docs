@@ -14,7 +14,7 @@ The following code examples show how to use `DescribeTerminationPolicyTypes`.
 
 **AWS CLI**
 **To describe available termination policy types**
-This example describes the available termination policy types.
+The following `describe-termination-policy-types` example describes the available termination policy types.
 
 ```
 aws autoscaling describe-termination-policy-types

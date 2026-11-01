@@ -18,12 +18,14 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To delete a compute environment**
-This example deletes the P2OnDemand compute environment.
-Command:
+The following `delete-compute-environment` example deletes the P2OnDemand compute environment.
 
 ```
-aws batch delete-compute-environment --compute-environment {{P2OnDemand}}
+aws batch delete-compute-environment \
+    --compute-environment {{P2OnDemand}}
 ```
+This command produces no output.
+For more information, see [Compute environments for AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the *AWS Batch User Guide*.
 +  For API details, see [DeleteComputeEnvironment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/delete-compute-environment.html) in *AWS CLI Command Reference*.
 
 ------

@@ -30,12 +30,12 @@ The following `associate-phone-number-with-user` example associates the specifie
 
 ```
 aws chime associate-phone-number-with-user \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --user-id {{1ab2345c-67de-8901-f23g-45h678901j2k}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --e164-phone-number {{"+12065550100"}}
 ```
 This command produces no output.
-For more information, see [Managing User Phone Numbers](https://docs.aws.amazon.com/chime/latest/ag/user-phone.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Assigning Amazon Chime Business Calling phone numbers](https://docs.aws.amazon.com/chime/latest/ag/assign-cbc-numbers.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [AssociatePhoneNumberWithUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/associate-phone-number-with-user.html) in *AWS CLI Command Reference*.
 
 ### `associate-signin-delegate-groups-with-account`
@@ -49,7 +49,7 @@ The following `associate-signin-delegate-groups-with-account` example associates
 
 ```
 aws chime associate-signin-delegate-groups-with-account \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --signin-delegate-groups {{GroupName=my_users}}
 ```
 This command produces no output.
@@ -67,26 +67,14 @@ The following `batch-create-room-membership` example adds multiple users to a ch
 
 ```
 aws chime batch-create-room-membership \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}} \
-    --membership-item-list {{"MemberId=1ab2345c-67de-8901-f23g-45h678901j2k,Role=Administrator"}} {{"MemberId=2ab2345c-67de-8901-f23g-45h678901j2k,Role=Member"}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --membership-item-list {{"MemberId=a1b2c3d4-5678-90ab-cdef-EXAMPLE33333,Role=Administrator"}} {{"MemberId=a1b2c3d4-5678-90ab-cdef-EXAMPLE44444,Role=Member"}}
 ```
 Output:
 
 ```
 {
-    "ResponseMetadata": {
-        "RequestId": "169ba401-d886-475f-8b3f-e01eac6fadfb",
-        "HTTPStatusCode": 201,
-        "HTTPHeaders": {
-            "x-amzn-requestid": "169ba401-d886-475f-8b3f-e01eac6fadfb",
-            "content-type": "application/json",
-            "content-length": "13",
-            "date": "Mon, 02 Dec 2019 22:46:58 GMT",
-            "connection": "keep-alive"
-        },
-        "RetryAttempts": 0
-    },
     "Errors": []
 }
 ```
@@ -127,8 +115,8 @@ The following `batch-suspend-user` example suspends the listed users from the sp
 
 ```
 aws chime batch-suspend-user \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
-    --user-id-list {{"a1b2c3d4-5678-90ab-cdef-22222EXAMPLE"}} {{"a1b2c3d4-5678-90ab-cdef-33333EXAMPLE"}} {{"a1b2c3d4-5678-90ab-cdef-44444EXAMPLE"}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id-list {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"}}
 ```
 Output:
 
@@ -137,6 +125,7 @@ Output:
     "UserErrors": []
 }
 ```
+For more information, see [Managing user permissions and access](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [BatchSuspendUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/batch-suspend-user.html) in *AWS CLI Command Reference*.
 
 ### `batch-unsuspend-user`
@@ -150,8 +139,8 @@ The following `batch-unsuspend-user` example removes any previous suspension for
 
 ```
 aws chime batch-unsuspend-user \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
-    --user-id-list {{"a1b2c3d4-5678-90ab-cdef-22222EXAMPLE"}} {{"a1b2c3d4-5678-90ab-cdef-33333EXAMPLE"}} {{"a1b2c3d4-5678-90ab-cdef-44444EXAMPLE"}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id-list {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"}}
 ```
 Output:
 
@@ -160,6 +149,7 @@ Output:
     "UserErrors": []
 }
 ```
+For more information, see [Managing user permissions and access](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [BatchUnsuspendUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/batch-unsuspend-user.html) in *AWS CLI Command Reference*.
 
 ### `batch-update-phone-number`
@@ -168,7 +158,7 @@ Output:
 The following code example shows how to use `batch-update-phone-number`.
 
 **AWS CLI**
-**To update several phone number product types at the same time**
+**Example 1: To update several phone number product types at the same time**
 The following `batch-update-phone-number` example updates the product types for all of the specified phone numbers.
 
 ```
@@ -182,7 +172,7 @@ Output:
     "PhoneNumberErrors": []
 }
 ```
-**To update several phone number calling names at the same time**
+**Example 2: To update several phone number calling names at the same time**
 The following `batch-update-phone-number` example updates the calling names for all of the specified phone numbers.
 
 ```
@@ -210,8 +200,8 @@ The following `batch-update-user` example updates the `LicenseType` for each of 
 
 ```
 aws chime batch-update-user \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
-    --update-user-request-items {{"UserId=a1b2c3d4-5678-90ab-cdef-22222EXAMPLE,LicenseType=Basic"}} {{"UserId=a1b2c3d4-5678-90ab-cdef-33333EXAMPLE,LicenseType=Basic"}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --update-user-request-items {{"UserId=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,LicenseType=Basic"}} {{"UserId=a1b2c3d4-5678-90ab-cdef-EXAMPLE33333,LicenseType=Basic"}}
 ```
 Output:
 
@@ -220,6 +210,7 @@ Output:
     "UserErrors": []
 }
 ```
+For more information, see [Managing user permissions and access](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [BatchUpdateUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/batch-update-user.html) in *AWS CLI Command Reference*.
 
 ### `create-account`
@@ -240,8 +231,8 @@ Output:
 ```
 {
     "Account": {
-        "AwsAccountId": "111122223333",
-        "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "AwsAccountId": "123456789012",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name": "MyChimeAccount",
         "AccountType": "Team",
         "CreatedTimestamp": "2019-01-04T17:11:22.003Z",
@@ -253,12 +244,12 @@ Output:
         "SigninDelegateGroups": [
             {
                 "GroupName": "myGroup"
-            },
+            }
         ]
     }
 }
 ```
-For more information, see [Getting Started](https://docs.aws.amazon.com/chime/latest/ag/getting-started.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Getting started](https://docs.aws.amazon.com/chime/latest/ag/getting-started.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [CreateAccount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/create-account.html) in *AWS CLI Command Reference*.
 
 ### `create-bot`
@@ -272,7 +263,7 @@ The following `create-bot` example creates a bot for the specified Amazon Chime 
 
 ```
 aws chime create-bot \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --display-name {{"myBot"}} \
     --domain {{"example.com"}}
 ```
@@ -281,8 +272,8 @@ Output:
 ```
 {
     "Bot": {
-        "BotId": "123abcd4-5ef6-789g-0h12-34j56789012k",
-        "UserId": "123abcd4-5ef6-789g-0h12-34j56789012k",
+        "BotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "DisplayName": "myBot (Bot)",
         "BotType": "ChatBot",
         "Disabled": false,
@@ -293,7 +284,7 @@ Output:
     }
 }
 ```
-For more information, see [Integrate a Chat Bot with Amazon Chime](https://docs.aws.amazon.com/chime/latest/dg/integrate-bots.html) in the *Amazon Chime Developer Guide*.
+For more information, see [Step 1: Integrate a chatbot with Amazon Chime](https://docs.aws.amazon.com/chime/latest/ag/integrate-bots.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [CreateBot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/create-bot.html) in *AWS CLI Command Reference*.
 
 ### `create-phone-number-order`
@@ -315,7 +306,7 @@ Output:
 ```
 {
     "PhoneNumberOrder": {
-        "PhoneNumberOrderId": "abc12345-de67-89f0-123g-h45i678j9012",
+        "PhoneNumberOrderId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "ProductType": "VoiceConnector",
         "Status": "Processing",
         "OrderedPhoneNumbers": [
@@ -324,12 +315,12 @@ Output:
                 "Status": "Processing"
             },
             {
-               "E164PhoneNumber": "+12065550101",
-               "Status": "Processing"
+                "E164PhoneNumber": "+12065550101",
+                "Status": "Processing"
             },
             {
-              "E164PhoneNumber": "+12065550102",
-              "Status": "Processing"
+                "E164PhoneNumber": "+12065550102",
+                "Status": "Processing"
             }
         ],
         "CreatedTimestamp": "2019-08-09T21:35:21.427Z",
@@ -351,25 +342,25 @@ The following `create-room-membership` example adds the specified user to the ch
 
 ```
 aws chime create-room-membership \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}} \
-    --member-id {{1ab2345c-67de-8901-f23g-45h678901j2k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --member-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
 
 ```
 {
     "RoomMembership": {
-        "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+        "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Member": {
-            "MemberId": "1ab2345c-67de-8901-f23g-45h678901j2k",
+            "MemberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "MemberType": "User",
             "Email": "janed@example.com",
             "FullName": "Jane Doe",
-            "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45"
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         "Role": "Member",
-        "InvitedBy": "arn:aws:iam::111122223333:user/alejandro",
+        "InvitedBy": "arn:aws:iam::123456789012:user/alejandro",
         "UpdatedTimestamp": "2019-12-02T22:36:41.969Z"
     }
 }
@@ -388,7 +379,7 @@ The following `create-room` example creates a chat room for the specified Amazon
 
 ```
 aws chime create-room \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --name {{chatRoom}}
 ```
 Output:
@@ -396,10 +387,10 @@ Output:
 ```
 {
     "Room": {
-        "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+        "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Name": "chatRoom",
-        "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45",
-        "CreatedBy": "arn:aws:iam::111122223333:user/alejandro",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "CreatedBy": "arn:aws:iam::123456789012:user/alejandro",
         "CreatedTimestamp": "2019-12-02T22:29:31.549Z",
         "UpdatedTimestamp": "2019-12-02T22:29:31.549Z"
     }
@@ -419,7 +410,7 @@ The following `create-user` example creates a shared device profile for the spec
 
 ```
 aws chime create-user \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --email {{roomdevice@example.com}} \
     --user-type {{SharedDevice}}
 ```
@@ -428,8 +419,8 @@ Output:
 ```
 {
     "User": {
-        "UserId": "1ab2345c-67de-8901-f23g-45h678901j2k",
-        "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "PrimaryEmail": "roomdevice@example.com",
         "DisplayName": "Room Device",
         "LicenseType": "Pro",
@@ -442,7 +433,7 @@ Output:
     }
 }
 ```
-For more information, see [Preparing for Setup](https://docs.aws.amazon.com/chime/latest/ag/prepare-setup.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Adding users](https://docs.aws.amazon.com/chime/latest/ag/adding-users.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [CreateUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/create-user.html) in *AWS CLI Command Reference*.
 
 ### `delete-account`
@@ -455,10 +446,11 @@ The following code example shows how to use `delete-account`.
 The following `delete-account` example deletes the specified account.
 
 ```
-aws chime delete-account --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+aws chime delete-account \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
-For more information, see [Deleting Your Account](https://docs.aws.amazon.com/chime/latest/ag/enterprise-account.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Deleting your account](https://docs.aws.amazon.com/chime/latest/ag/enterprise-account.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [DeleteAccount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/delete-account.html) in *AWS CLI Command Reference*.
 
 ### `delete-phone-number`
@@ -489,9 +481,9 @@ The following `delete-room-membership` example removes the specified member from
 
 ```
 aws chime delete-room-membership \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}} \
-    --member-id {{1ab2345c-67de-8901-f23g-45h678901j2k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --member-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 This command produces no output.
 For more information, see [Creating a Chat Room](https://docs.aws.amazon.com/chime/latest/ug/chime-chat-room.html) in the *Amazon Chime User Guide*.
@@ -508,8 +500,8 @@ The following `delete-room` example deletes the specified chat room and removes 
 
 ```
 aws chime delete-room \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Creating a Chat Room](https://docs.aws.amazon.com/chime/latest/ug/chime-chat-room.html) in the *Amazon Chime User Guide*.
@@ -526,11 +518,11 @@ The following `disassociate-phone-number-from-user` example disassociates a phon
 
 ```
 aws chime disassociate-phone-number-from-user \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --user-id {{1ab2345c-67de-8901-f23g-45h678901j2k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
-For more information, see [Managing User Phone Numbers](https://docs.aws.amazon.com/chime/latest/ag/user-phone.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Unassigning Amazon Chime Business Calling phone numbers](https://docs.aws.amazon.com/chime/latest/ag/unassign-cbc-numbers.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [DisassociatePhoneNumberFromUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/disassociate-phone-number-from-user.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-signin-delegate-groups-from-account`
@@ -544,7 +536,7 @@ The following `disassociate-signin-delegate-groups-from-account` example disasso
 
 ```
 aws chime disassociate-signin-delegate-groups-from-account \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --group-names {{"my_users"}}
 ```
 This command produces no output.
@@ -561,7 +553,8 @@ The following code example shows how to use `get-account-settings`.
 The following `get-account-settings` example retrieves the account settings for the specified account.
 
 ```
-aws chime get-account-settings --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+aws chime get-account-settings \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -573,7 +566,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing Your Amazon Chime Accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing your Amazon Chime accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [GetAccountSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/get-account-settings.html) in *AWS CLI Command Reference*.
 
 ### `get-account`
@@ -587,15 +580,15 @@ The following `get-account` example retrieves the details for the specified Amaz
 
 ```
 aws chime get-account \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "Account": {
-        "AwsAccountId": "111122223333",
-        "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "AwsAccountId": "123456789012",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name": "EnterpriseDirectory",
         "AccountType": "EnterpriseDirectory",
         "CreatedTimestamp": "2018-12-20T18:38:02.181Z",
@@ -607,12 +600,12 @@ Output:
         "SigninDelegateGroups": [
             {
                 "GroupName": "myGroup"
-            },
+            }
         ]
     }
 }
 ```
-For more information, see [Managing Your Amazon Chime Accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing your Amazon Chime accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [GetAccount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/get-account.html) in *AWS CLI Command Reference*.
 
 ### `get-bot`
@@ -626,16 +619,16 @@ The following `get-bot` example displays the details for the specified bot.
 
 ```
 aws chime get-bot \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --bot-id {{123abcd4-5ef6-789g-0h12-34j56789012k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --bot-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "Bot": {
-        "BotId": "123abcd4-5ef6-789g-0h12-34j56789012k",
-        "UserId": "123abcd4-5ef6-789g-0h12-34j56789012k",
+        "BotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "DisplayName": "myBot (Bot)",
         "BotType": "ChatBot",
         "Disabled": false,
@@ -646,7 +639,7 @@ Output:
     }
 }
 ```
-For more information, see [Update Chat Bots](https://docs.aws.amazon.com/chime/latest/dg/update-bots.html) in the *Amazon Chime Developer Guide*.
+For more information, see [Update chatbots](https://docs.aws.amazon.com/chime/latest/ag/update-bots.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [GetBot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/get-bot.html) in *AWS CLI Command Reference*.
 
 ### `get-global-settings`
@@ -687,20 +680,20 @@ The following `get-phone-number-order` example displays the details of the speci
 
 ```
 aws chime get-phone-number-order \
-    --phone-number-order-id {{abc12345-de67-89f0-123g-h45i678j9012}}
+    --phone-number-order-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "PhoneNumberOrder": {
-        "PhoneNumberOrderId": "abc12345-de67-89f0-123g-h45i678j9012",
+        "PhoneNumberOrderId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "ProductType": "VoiceConnector",
         "Status": "Partial",
         "OrderedPhoneNumbers": [
             {
-              "E164PhoneNumber": "+12065550100",
-              "Status": "Acquired"
+                "E164PhoneNumber": "+12065550100",
+                "Status": "Acquired"
             },
             {
                 "E164PhoneNumber": "+12065550101",
@@ -773,7 +766,7 @@ Output:
             "InboundMMS": true,
             "OutboundMMS": true
         },
-       "Associations": [
+        "Associations": [
             {
                 "Value": "abcdef1ghij2klmno3pqr4",
                 "Name": "VoiceConnectorId",
@@ -800,18 +793,18 @@ The following `get-room` example displays details about the specified chat room.
 
 ```
 aws chime get-room \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "Room": {
-        "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+        "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Name": "chatRoom",
-        "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45",
-        "CreatedBy": "arn:aws:iam::111122223333:user/alejandro",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "CreatedBy": "arn:aws:iam::123456789012:user/alejandro",
         "CreatedTimestamp": "2019-12-02T22:29:31.549Z",
         "UpdatedTimestamp": "2019-12-02T22:29:31.549Z"
     }
@@ -831,8 +824,8 @@ The following `get-user-settings` example displays the specified user settings.
 
 ```
 aws chime get-user-settings \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --user-id {{1ab2345c-67de-8901-f23g-45h678901j2k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -847,7 +840,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing User Phone Numbers](https://docs.aws.amazon.com/chime/latest/ag/user-phone.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing phone numbers in Amazon Chime](https://docs.aws.amazon.com/chime/latest/ag/phone-numbers.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [GetUserSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/get-user-settings.html) in *AWS CLI Command Reference*.
 
 ### `get-user`
@@ -861,16 +854,16 @@ The following `get-user` example retrieves the details for the specified user.
 
 ```
 aws chime get-user \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
-    --user-id {{a1b2c3d4-5678-90ab-cdef-22222EXAMPLE}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "User": {
-        "UserId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
-        "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "PrimaryEmail": "marthar@example.com",
         "DisplayName": "Martha Rivera",
         "LicenseType": "Pro",
@@ -878,14 +871,14 @@ Output:
         "RegisteredOn": "2018-12-20T18:45:25.231Z",
         "InvitedOn": "2018-12-20T18:45:25.231Z",
         "AlexaForBusinessMetadata": {
-            "IsAlexaForBusinessEnabled": False,
+            "IsAlexaForBusinessEnabled": false,
             "AlexaForBusinessRoomArn": "null"
         },
         "PersonalPIN": "XXXXXXXXXX"
     }
 }
 ```
-For more information, see [Managing Users](https://docs.aws.amazon.com/chime/latest/ag/manage-users.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing users](https://docs.aws.amazon.com/chime/latest/ag/manage-users.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [GetUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/get-user.html) in *AWS CLI Command Reference*.
 
 ### `invite-users`
@@ -899,7 +892,7 @@ The following `invite-users` example sends an email to invite a user to the spec
 
 ```
 aws chime invite-users \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --user-email-list {{"alejandror@example.com"}} {{"janed@example.com"}}
 ```
 Output:
@@ -908,13 +901,13 @@ Output:
 {
     "Invites": [
         {
-            "InviteId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+            "InviteId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Status": "Pending",
             "EmailAddress": "alejandror@example.com",
             "EmailStatus": "Sent"
-        }
+        },
         {
-            "InviteId": "a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
+            "InviteId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "Pending",
             "EmailAddress": "janed@example.com",
             "EmailStatus": "Sent"
@@ -922,7 +915,7 @@ Output:
     ]
 }
 ```
-For more information, see [Inviting and Suspending Users](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html#invite-users-team) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing user permissions and access](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [InviteUsers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/invite-users.html) in *AWS CLI Command Reference*.
 
 ### `list-accounts`
@@ -943,8 +936,8 @@ Output:
 {
     "Accounts": [
         {
-            "AwsAccountId": "111122223333",
-            "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "AwsAccountId": "123456789012",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "First Chime Account",
             "AccountType": "EnterpriseDirectory",
             "CreatedTimestamp": "2018-12-20T18:38:02.181Z",
@@ -956,12 +949,12 @@ Output:
             "SigninDelegateGroups": [
                 {
                     "GroupName": "myGroup"
-                },
+                }
             ]
         },
         {
-            "AwsAccountId": "111122223333",
-            "AccountId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
+            "AwsAccountId": "123456789012",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "Second Chime Account",
             "AccountType": "Team",
             "CreatedTimestamp": "2018-09-04T21:44:22.292Z",
@@ -973,13 +966,13 @@ Output:
             "SigninDelegateGroups": [
                 {
                     "GroupName": "myGroup"
-                },
+                }
             ]
         }
     ]
 }
 ```
-For more information, see [Managing Your Amazon Chime Accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing your Amazon Chime accounts](https://docs.aws.amazon.com/chime/latest/ag/manage-chime-account.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [ListAccounts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/list-accounts.html) in *AWS CLI Command Reference*.
 
 ### `list-bots`
@@ -993,23 +986,25 @@ The following `list-bots` example lists the bots associated with the specified A
 
 ```
 aws chime list-bots \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "Bot": {
-        "BotId": "123abcd4-5ef6-789g-0h12-34j56789012k",
-        "UserId": "123abcd4-5ef6-789g-0h12-34j56789012k",
-        "DisplayName": "myBot (Bot)",
-        "BotType": "ChatBot",
-        "Disabled": false,
-        "CreatedTimestamp": "2019-09-09T18:05:56.749Z",
-        "UpdatedTimestamp": "2019-09-09T18:05:56.749Z",
-        "BotEmail": "myBot-chimebot@example.com",
-        "SecurityToken": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
-    }
+    "Bots": [
+        {
+            "BotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "DisplayName": "myBot (Bot)",
+            "BotType": "ChatBot",
+            "Disabled": false,
+            "CreatedTimestamp": "2019-09-09T18:05:56.749Z",
+            "UpdatedTimestamp": "2019-09-09T18:05:56.749Z",
+            "BotEmail": "myBot-chimebot@example.com",
+            "SecurityToken": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+        }
+    ]
 }
 ```
 For more information, see [Use Chat Bots with Amazon Chime](https://docs.aws.amazon.com/chime/latest/dg/use-bots.html) in the *Amazon Chime Developer Guide*.
@@ -1033,7 +1028,7 @@ Output:
 {
     "PhoneNumberOrders": [
         {
-            "PhoneNumberOrderId": "abc12345-de67-89f0-123g-h45i678j9012",
+            "PhoneNumberOrderId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ProductType": "VoiceConnector",
             "Status": "Partial",
             "OrderedPhoneNumbers": [
@@ -1052,9 +1047,9 @@ Output:
             ],
             "CreatedTimestamp": "2019-08-09T21:35:21.427Z",
             "UpdatedTimestamp": "2019-08-09T21:35:31.926Z"
-        }
+        },
         {
-            "PhoneNumberOrderId": "cba54321-ed76-09f5-321g-h54i876j2109",
+            "PhoneNumberOrderId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "ProductType": "BusinessCalling",
             "Status": "Partial",
             "OrderedPhoneNumbers": [
@@ -1164,8 +1159,8 @@ The following `list-room-memberships` example displays a list of the membership 
 
 ```
 aws chime list-room-memberships \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -1173,29 +1168,29 @@ Output:
 {
     "RoomMemberships": [
         {
-            "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+            "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Member": {
-                "MemberId": "2ab2345c-67de-8901-f23g-45h678901j2k",
+                "MemberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "MemberType": "User",
                 "Email": "zhangw@example.com",
                 "FullName": "Zhang Wei",
-                "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45"
+                "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "Role": "Member",
-            "InvitedBy": "arn:aws:iam::111122223333:user/alejandro",
+            "InvitedBy": "arn:aws:iam::123456789012:user/alejandro",
             "UpdatedTimestamp": "2019-12-02T22:46:58.532Z"
         },
         {
-            "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+            "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Member": {
-                "MemberId": "1ab2345c-67de-8901-f23g-45h678901j2k",
+                "MemberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                 "MemberType": "User",
                 "Email": "janed@example.com",
                 "FullName": "Jane Doe",
-                "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45"
+                "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "Role": "Administrator",
-            "InvitedBy": "arn:aws:iam::111122223333:user/alejandro",
+            "InvitedBy": "arn:aws:iam::123456789012:user/alejandro",
             "UpdatedTimestamp": "2019-12-02T22:46:58.532Z"
         }
     ]
@@ -1215,21 +1210,23 @@ The following `list-rooms` example displays a list of chat rooms in the specifie
 
 ```
 aws chime list-rooms \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --member-id {{1ab2345c-67de-8901-f23g-45h678901j2k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --member-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
-    "Room": {
-        "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
-        "Name": "teamRoom",
-        "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45",
-        "CreatedBy": "arn:aws:iam::111122223333:user/alejandro",
-        "CreatedTimestamp": "2019-12-02T22:29:31.549Z",
-        "UpdatedTimestamp": "2019-12-02T22:33:19.310Z"
-    }
+    "Rooms": [
+        {
+            "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Name": "teamRoom",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "CreatedBy": "arn:aws:iam::123456789012:user/alejandro",
+            "CreatedTimestamp": "2019-12-02T22:29:31.549Z",
+            "UpdatedTimestamp": "2019-12-02T22:33:19.310Z"
+        }
+    ]
 }
 ```
 For more information, see [Creating a Chat Room](https://docs.aws.amazon.com/chime/latest/ug/chime-chat-room.html) in the *Amazon Chime User Guide*.
@@ -1245,7 +1242,8 @@ The following code example shows how to use `list-users`.
 The following `list-users` example lists the users for the specified Amazon Chime account.
 
 ```
-aws chime list-users --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+aws chime list-users \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1253,53 +1251,53 @@ Output:
 {
     "Users": [
         {
-            "UserId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
-            "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "PrimaryEmail": "mariag@example.com",
             "DisplayName": "Maria Garcia",
             "LicenseType": "Pro",
             "UserType": "PrivateUser",
             "UserRegistrationStatus": "Registered",
-            "RegisteredOn": "2018-12-20T18:45:25.231Z"
+            "RegisteredOn": "2018-12-20T18:45:25.231Z",
             "AlexaForBusinessMetadata": {
                 "IsAlexaForBusinessEnabled": false
             }
         },
         {
-            "UserId": "a1b2c3d4-5678-90ab-cdef-33333EXAMPLE",
-            "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "PrimaryEmail": "richardr@example.com",
             "DisplayName": "Richard Roe",
             "LicenseType": "Pro",
             "UserType": "PrivateUser",
             "UserRegistrationStatus": "Registered",
-            "RegisteredOn": "2018-12-20T18:45:45.415Z"
+            "RegisteredOn": "2018-12-20T18:45:45.415Z",
             "AlexaForBusinessMetadata": {
                 "IsAlexaForBusinessEnabled": false
             }
         },
         {
-            "UserId": "a1b2c3d4-5678-90ab-cdef-44444EXAMPLE",
-            "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "PrimaryEmail": "saanvis@example.com",
             "DisplayName": "Saanvi Sarkar",
             "LicenseType": "Basic",
             "UserType": "PrivateUser",
             "UserRegistrationStatus": "Registered",
-            "RegisteredOn": "2018-12-20T18:46:57.747Z"
+            "RegisteredOn": "2018-12-20T18:46:57.747Z",
             "AlexaForBusinessMetadata": {
                 "IsAlexaForBusinessEnabled": false
             }
         },
         {
-            "UserId": "a1b2c3d4-5678-90ab-cdef-55555EXAMPLE",
-            "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "PrimaryEmail": "wxiulan@example.com",
             "DisplayName": "Wang Xiulan",
             "LicenseType": "Basic",
             "UserType": "PrivateUser",
             "UserRegistrationStatus": "Registered",
-            "RegisteredOn": "2018-12-20T18:47:15.390Z"
+            "RegisteredOn": "2018-12-20T18:47:15.390Z",
             "AlexaForBusinessMetadata": {
                 "IsAlexaForBusinessEnabled": false
             }
@@ -1307,7 +1305,7 @@ Output:
     ]
 }
 ```
-For more information, see [Managing Users](https://docs.aws.amazon.com/chime/latest/ag/manage-users.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing users](https://docs.aws.amazon.com/chime/latest/ag/manage-users.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [ListUsers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/list-users.html) in *AWS CLI Command Reference*.
 
 ### `logout-user`
@@ -1321,10 +1319,11 @@ The following `logout-user` example logs out the specified user.
 
 ```
 aws chime logout-user \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
-    --user-id {{a1b2c3d4-5678-90ab-cdef-22222EXAMPLE}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
+For more information, see [Managing users](https://docs.aws.amazon.com/chime/latest/ag/manage-users.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [LogoutUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/logout-user.html) in *AWS CLI Command Reference*.
 
 ### `regenerate-security-token`
@@ -1338,16 +1337,16 @@ The following `regenerate-security-token` example regenerates the security token
 
 ```
 aws chime regenerate-security-token \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --bot-id {{123abcd4-5ef6-789g-0h12-34j56789012k}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --bot-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "Bot": {
-        "BotId": "123abcd4-5ef6-789g-0h12-34j56789012k",
-        "UserId": "123abcd4-5ef6-789g-0h12-34j56789012k",
+        "BotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "DisplayName": "myBot (Bot)",
         "BotType": "ChatBot",
         "Disabled": false,
@@ -1358,7 +1357,7 @@ Output:
     }
 }
 ```
-For more information, see [Authenticate Chat Bot Requests](https://docs.aws.amazon.com/chime/latest/dg/auth-bots.html) in the *Amazon Chime Developer Guide*.
+For more information, see [Authenticate chatbot requests](https://docs.aws.amazon.com/chime/latest/ag/auth-bots.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [RegenerateSecurityToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/regenerate-security-token.html) in *AWS CLI Command Reference*.
 
 ### `reset-personal-pin`
@@ -1372,16 +1371,16 @@ The following `reset-personal-pin` example resets the specified user's personal 
 
 ```
 aws chime reset-personal-pin \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
-    --user-id {{a1b2c3d4-5678-90ab-cdef-22222EXAMPLE}}
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "User": {
-        "UserId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE",
-        "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "PrimaryEmail": "mateo@example.com",
         "DisplayName": "Mateo Jackson",
         "LicenseType": "Pro",
@@ -1389,14 +1388,14 @@ Output:
         "UserRegistrationStatus": "Registered",
         "RegisteredOn": "2018-12-20T18:45:25.231Z",
         "AlexaForBusinessMetadata": {
-            "IsAlexaForBusinessEnabled": False,
+            "IsAlexaForBusinessEnabled": false,
             "AlexaForBusinessRoomArn": "null"
         },
         "PersonalPIN": "XXXXXXXXXX"
     }
 }
 ```
-For more information, see [Changing Personal Meeting PINs](https://docs.aws.amazon.com/chime/latest/ag/change-PINs.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Changing personal meeting PINs](https://docs.aws.amazon.com/chime/latest/ag/change-PINs.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [ResetPersonalPin](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/reset-personal-pin.html) in *AWS CLI Command Reference*.
 
 ### `restore-phone-number`
@@ -1466,7 +1465,7 @@ Output:
         "+12065550106",
         "+12065550107",
         "+12065550108",
-        "+12065550109",
+        "+12065550109"
     ]
 }
 ```
@@ -1484,10 +1483,11 @@ The following `update-account-settings` example disables the remote control of s
 
 ```
 aws chime update-account-settings \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --account-settings {{DisableRemoteControl=true}}
 ```
 This command produces no output.
+For more information, see [Managing meeting settings](https://docs.aws.amazon.com/chime/latest/ag/mtg-settings.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [UpdateAccountSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/update-account-settings.html) in *AWS CLI Command Reference*.
 
 ### `update-account`
@@ -1501,7 +1501,7 @@ The following `update-account` example updates the specified account name.
 
 ```
 aws chime update-account \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --name {{MyAccountName}}
 ```
 Output:
@@ -1509,8 +1509,8 @@ Output:
 ```
 {
     "Account": {
-        "AwsAccountId": "111122223333",
-        "AccountId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "AwsAccountId": "123456789012",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name": "MyAccountName",
         "AccountType": "Team",
         "CreatedTimestamp": "2018-09-04T21:44:22.292Z",
@@ -1522,7 +1522,7 @@ Output:
         "SigninDelegateGroups": [
             {
                 "GroupName": "myGroup"
-            },
+            }
         ]
     }
 }
@@ -1541,8 +1541,8 @@ The following `update-bot` example updates the status of the specified bot to st
 
 ```
 aws chime update-bot \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --bot-id {{123abcd4-5ef6-789g-0h12-34j56789012k}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --bot-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --disabled
 ```
 Output:
@@ -1550,8 +1550,8 @@ Output:
 ```
 {
     "Bot": {
-        "BotId": "123abcd4-5ef6-789g-0h12-34j56789012k",
-        "UserId": "123abcd4-5ef6-789g-0h12-34j56789012k",
+        "BotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "DisplayName": "myBot (Bot)",
         "BotType": "ChatBot",
         "Disabled": true,
@@ -1562,7 +1562,7 @@ Output:
     }
 }
 ```
-For more information, see [Update Chat Bots](https://docs.aws.amazon.com/chime/latest/dg/update-bots.html) in the *Amazon Chime Developer Guide*.
+For more information, see [Update chatbots](https://docs.aws.amazon.com/chime/latest/ag/update-bots.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [UpdateBot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/update-bot.html) in *AWS CLI Command Reference*.
 
 ### `update-global-settings`
@@ -1681,9 +1681,9 @@ The following `update-room-membership` example modifies the role of the specifie
 
 ```
 aws chime update-room-membership \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}} \
-    --member-id {{1ab2345c-67de-8901-f23g-45h678901j2k}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --member-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --role {{Administrator}}
 ```
 Output:
@@ -1691,16 +1691,16 @@ Output:
 ```
 {
     "RoomMembership": {
-        "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+        "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Member": {
-            "MemberId": "1ab2345c-67de-8901-f23g-45h678901j2k",
+            "MemberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "MemberType": "User",
             "Email": "sofiamartinez@example.com",
             "FullName": "Sofia Martinez",
-            "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45"
+            "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         "Role": "Administrator",
-        "InvitedBy": "arn:aws:iam::111122223333:user/admin",
+        "InvitedBy": "arn:aws:iam::123456789012:user/admin",
         "UpdatedTimestamp": "2019-12-02T22:40:22.931Z"
     }
 }
@@ -1719,8 +1719,8 @@ The following `update-room` example modifies the name of the specified chat room
 
 ```
 aws chime update-room \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --room-id {{abcd1e2d-3e45-6789-01f2-3g45h67i890j}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --room-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --name {{teamRoom}}
 ```
 Output:
@@ -1728,10 +1728,10 @@ Output:
 ```
 {
     "Room": {
-        "RoomId": "abcd1e2d-3e45-6789-01f2-3g45h67i890j",
+        "RoomId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Name": "teamRoom",
-        "AccountId": "12a3456b-7c89-012d-3456-78901e23fg45",
-        "CreatedBy": "arn:aws:iam::111122223333:user/alejandro",
+        "AccountId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "CreatedBy": "arn:aws:iam::123456789012:user/alejandro",
         "CreatedTimestamp": "2019-12-02T22:29:31.549Z",
         "UpdatedTimestamp": "2019-12-02T22:33:19.310Z"
     }
@@ -1751,12 +1751,12 @@ The following `update-user-settings` example enables the specified user to make 
 
 ```
 aws chime update-user-settings \
-    --account-id {{12a3456b-7c89-012d-3456-78901e23fg45}} \
-    --user-id {{1ab2345c-67de-8901-f23g-45h678901j2k}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --user-settings {{"Telephony={InboundCalling=true,OutboundCalling=true,SMS=true}"}}
 ```
 This command produces no output.
-For more information, see [Managing User Phone Numbers](https://docs.aws.amazon.com/chime/latest/ag/user-phone.html) in the *Amazon Chime Administration Guide*.
+For more information, see [Managing phone numbers in Amazon Chime](https://docs.aws.amazon.com/chime/latest/ag/phone-numbers.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [UpdateUserSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/update-user-settings.html) in *AWS CLI Command Reference*.
 
 ### `update-user`
@@ -1766,13 +1766,12 @@ The following code example shows how to use `update-user`.
 
 **AWS CLI**
 **To update user details**
-This example updates the specified details for the specified user.
-Command:
+The following `update-user` example updates the specified details for the specified user.
 
 ```
 aws chime update-user \
-    --account-id {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
-    --user-id {{a1b2c3d4-5678-90ab-cdef-22222EXAMPLE}} \
+    --account-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --license-type {{"Basic"}}
 ```
 Output:
@@ -1780,8 +1779,9 @@ Output:
 ```
 {
     "User": {
-        "UserId": "a1b2c3d4-5678-90ab-cdef-22222EXAMPLE"
+        "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     }
 }
 ```
+For more information, see [Managing user permissions and access](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html) in the *Amazon Chime Administration Guide*.
 +  For API details, see [UpdateUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/chime/update-user.html) in *AWS CLI Command Reference*.

@@ -47,10 +47,12 @@ The following code examples show how to use `DescribeComplianceByResource`.
 
 **AWS CLI**
 **To get compliance information for your AWS resources**
-The following command returns compliance information for each EC2 instance that is recorded by AWS Config and that violates one or more rules:
+The following `describe-compliance-by-resource` example returns compliance information for each EC2 instance that is recorded by AWS Config and that violates one or more rules.
 
 ```
-aws configservice describe-compliance-by-resource --resource-type {{AWS::EC2::Instance}} --compliance-types {{NON_COMPLIANT}}
+aws configservice describe-compliance-by-resource \
+    --resource-type {{AWS::EC2::Instance}} \
+    --compliance-types {{NON_COMPLIANT}}
 ```
 In the output, the value for each `CappedCount` attribute indicates how many rules the resource violates. For example, the following output indicates that instance `i-1a2b3c4d` violates 2 rules.
 Output:
@@ -83,6 +85,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing Compliance Information and Evaluation Results for your AWS Resources with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_view-compliance.html) in the *AWS Config Developer Guide*.
 +  For API details, see [DescribeComplianceByResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configservice/describe-compliance-by-resource.html) in *AWS CLI Command Reference*.
 
 ------
@@ -131,8 +134,8 @@ The following code examples show how to use `GetComplianceSummaryByResourceType`
 #### [ CLI ]
 
 **AWS CLI**
-**To get the compliance summary for all resource types**
-The following command returns the number of AWS resources that are noncompliant and the number that are compliant:
+**Example 1: To get the compliance summary for all resource types**
+The following `get-compliance-summary-by-resource-type` example returns the number of AWS resources that are noncompliant and the number that are compliant.
 
 ```
 aws configservice get-compliance-summary-by-resource-type
@@ -159,11 +162,13 @@ Output:
     ]
 }
 ```
-**To get the compliance summary for a specific resource type**
-The following command returns the number of EC2 instances that are noncompliant and the number that are compliant:
+For more information, see [Viewing Compliance Information and Evaluation Results for your AWS Resources with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_view-compliance.html) in the *AWS Config Developer Guide*.
+**Example 2: To get the compliance summary for a specific resource type**
+The following `get-compliance-summary-by-resource-type` example returns the number of EC2 instances that are noncompliant and the number that are compliant.
 
 ```
-aws configservice get-compliance-summary-by-resource-type --resource-types {{AWS::EC2::Instance}}
+aws configservice get-compliance-summary-by-resource-type \
+    --resource-types {{AWS::EC2::Instance}}
 ```
 In the output, the value for each `CappedCount` attribute indicates how many resources are compliant or noncompliant.
 Output:
@@ -188,6 +193,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing Compliance Information and Evaluation Results for your AWS Resources with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_view-compliance.html) in the *AWS Config Developer Guide*.
 +  For API details, see [GetComplianceSummaryByResourceType](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configservice/get-compliance-summary-by-resource-type.html) in *AWS CLI Command Reference*.
 
 ------
@@ -243,10 +249,13 @@ The following code examples show how to use `GetComplianceDetailsByResource`.
 
 **AWS CLI**
 **To get the evaluation results for an AWS resource**
-The following command returns the evaluation results for each rule with which the EC2 instance `i-1a2b3c4d` does not comply:
+The following `get-compliance-details-by-resource` example returns the evaluation results for each rule with which the EC2 instance `i-1a2b3c4d` does not comply.
 
 ```
-aws configservice get-compliance-details-by-resource --resource-type {{AWS::EC2::Instance}} --resource-id {{i-1a2b3c4d}} --compliance-types {{NON_COMPLIANT}}
+aws configservice get-compliance-details-by-resource \
+    --resource-type {{AWS::EC2::Instance}} \
+    --resource-id {{i-1a2b3c4d}} \
+    --compliance-types {{NON_COMPLIANT}}
 ```
 Output:
 
@@ -282,6 +291,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing Compliance Information and Evaluation Results for your AWS Resources with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_view-compliance.html) in the *AWS Config Developer Guide*.
 +  For API details, see [GetComplianceDetailsByResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configservice/get-compliance-details-by-resource.html) in *AWS CLI Command Reference*.
 
 ------

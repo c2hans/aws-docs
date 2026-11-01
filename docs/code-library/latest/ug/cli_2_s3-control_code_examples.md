@@ -26,12 +26,12 @@ The following code example shows how to use `create-access-point`.
 
 **AWS CLI**
 **To create an access point**
-The following `create-access-point` example creates an access point named `finance-ap` for the bucket `business-records` in account 123456789012. Before running this example, replace the access point name, bucket name, and account number with appropriate values for your use case.
+The following `create-access-point` example creates an access point named `finance-ap` for the bucket `amzn-s3-demo-bucket` in account 123456789012. Before running this example, replace the access point name, bucket name, and account number with appropriate values for your use case.
 
 ```
 aws s3control create-access-point \
     --account-id {{123456789012}} \
-    --bucket {{business-records}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --name {{finance-ap}}
 ```
 This command produces no output.
@@ -51,8 +51,8 @@ The following `create-job` example creates an Amazon S3 batch operations job to 
 aws s3control create-job \
     --account-id {{123456789012}} \
     --operation '{{{"S3PutObjectTagging": { "TagSet": [{"Key":"confidential", "Value":"true"}] }}}}' \
-    --report '{{{"Bucket":"arn:aws:s3:::employee-records-logs","Prefix":"batch-op-create-job", "Format":"Report_CSV_20180820","Enabled":true,"ReportScope":"AllTasks"}}}' \
-    --manifest '{{{"Spec":{"Format":"S3BatchOperations_CSV_20180820","Fields":["Bucket","Key"]},"Location":{"ObjectArn":"arn:aws:s3:::employee-records-logs/inv-report/7a6a9be4-072c-407e-85a2-ec3e982f773e.csv","ETag":"69f52a4e9f797e987155d9c8f5880897"}}}}' \
+    --report '{{{"Bucket":"arn:aws:s3:::amzn-s3-demo-bucket2","Prefix":"batch-op-create-job", "Format":"Report_CSV_20180820","Enabled":true,"ReportScope":"AllTasks"}}}' \
+    --manifest '{{{"Spec":{"Format":"S3BatchOperations_CSV_20180820","Fields":["Bucket","Key"]},"Location":{"ObjectArn":"arn:aws:s3:::amzn-s3-demo-bucket2/inv-report/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222.csv","ETag":"69f52a4e9f797e987155d9c8f5880897"}}}}' \
     --priority {{42}} \
     --role-arn {{arn:aws:iam::123456789012:role/S3BatchJobRole}}
 ```
@@ -60,9 +60,10 @@ Output:
 
 ```
 {
-    "JobId": "93735294-df46-44d5-8638-6356f335324e"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Creating an S3 Batch Operations job](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-create-job.html) in the *Amazon S3 User Guide*.
 +  For API details, see [CreateJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/create-job.html) in *AWS CLI Command Reference*.
 
 ### `delete-access-point-policy`
@@ -115,6 +116,7 @@ aws s3control delete-public-access-block \
     --account-id {{123456789012}}
 ```
 This command produces no output.
+For more information, see [Configuring block public access settings for your account](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-block-public-access-account.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeletePublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/delete-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `describe-job`
@@ -124,12 +126,12 @@ The following code example shows how to use `describe-job`.
 
 **AWS CLI**
 **To describe an Amazon S3 batch operations job**
-The following `describe-job` provides configuration parameters and status for the specified batch operations job.
+The following `describe-job` example provides configuration parameters and status for the specified batch operations job.
 
 ```
 aws s3control describe-job \
     --account-id {{123456789012}} \
-    --job-id {{93735294-df46-44d5-8638-6356f335324e}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -137,7 +139,7 @@ Output:
 {
     "Job": {
         "TerminationDate": "2019-10-03T21:49:53.944Z",
-        "JobId": "93735294-df46-44d5-8638-6356f335324e",
+        "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "FailureReasons": [],
         "Manifest": {
             "Spec": {
@@ -149,7 +151,7 @@ Output:
             },
             "Location": {
                 "ETag": "69f52a4e9f797e987155d9c8f5880897",
-                "ObjectArn": "arn:aws:s3:::employee-records-logs/inv-report/7a6a9be4-072c-407e-85a2-ec3e982f773e.csv"
+                "ObjectArn": "arn:aws:s3:::amzn-s3-demo-bucket/inv-report/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222.csv"
             }
         },
         "Operation": {
@@ -174,14 +176,15 @@ Output:
             "Format": "Report_CSV_20180820",
             "Enabled": true,
             "Prefix": "batch-op-create-job",
-            "Bucket": "arn:aws:s3:::employee-records-logs"
+            "Bucket": "arn:aws:s3:::amzn-s3-demo-bucket"
         },
-        "JobArn": "arn:aws:s3:us-west-2:123456789012:job/93735294-df46-44d5-8638-6356f335324e",
+        "JobArn": "arn:aws:s3:us-west-2:123456789012:job/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2019-10-03T21:48:48.048Z",
         "Status": "Complete"
     }
 }
 ```
+For more information, see [Tracking job status and completion reports](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-job-status.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DescribeJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/describe-job.html) in *AWS CLI Command Reference*.
 
 ### `get-access-point-policy-status`
@@ -253,7 +256,7 @@ Output:
 ```
 {
     "Name": "finance-ap",
-    "Bucket": "business-records",
+    "Bucket": "amzn-s3-demo-bucket",
     "NetworkOrigin": "Internet",
     "PublicAccessBlockConfiguration": {
         "BlockPublicAcls": false,
@@ -279,14 +282,14 @@ The following `get-multi-region-access-point-routes` example returns the current
 ```
 aws s3control get-multi-region-access-point-routes \
     --region {{Region}} \
-    --account-id {{111122223333}} \
+    --account-id {{123456789012}} \
     --mrap {{MultiRegionAccessPoint_ARN}}
 ```
 Output:
 
 ```
 {
-    "Mrap": "arn:aws:s3::111122223333:accesspoint/0000000000000.mrap",
+    "Mrap": "arn:aws:s3::123456789012:accesspoint/0000000000000.mrap",
     "Routes": [
         {
             "Bucket": "amzn-s3-demo-bucket1",
@@ -301,6 +304,7 @@ Output:
     ]
 }
 ```
+For more information, see [Using Amazon S3 Multi-Region Access Point failover controls](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingFailover.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetMultiRegionAccessPointRoutes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/get-multi-region-access-point-routes.html) in *AWS CLI Command Reference*.
 
 ### `get-public-access-block`
@@ -320,14 +324,15 @@ Output:
 
 ```
 {
-   "PublicAccessBlockConfiguration": {
-      "BlockPublicPolicy": true,
-      "RestrictPublicBuckets": true,
-      "IgnorePublicAcls": true,
-      "BlockPublicAcls": true
-   }
+    "PublicAccessBlockConfiguration": {
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicAcls": true
+    }
 }
 ```
+For more information, see [Configuring block public access settings for your account](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-block-public-access-account.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetPublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/get-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `list-access-points`
@@ -351,12 +356,12 @@ Output:
         {
             "Name": "finance-ap",
             "NetworkOrigin": "Internet",
-            "Bucket": "business-records"
+            "Bucket": "amzn-s3-demo-bucket1"
         },
         {
             "Name": "managers-ap",
             "NetworkOrigin": "Internet",
-            "Bucket": "business-records"
+            "Bucket": "amzn-s3-demo-bucket1"
         },
         {
             "Name": "private-network-ap",
@@ -364,28 +369,28 @@ Output:
             "VpcConfiguration": {
                 "VpcId": "1a2b3c"
             },
-            "Bucket": "business-records"
+            "Bucket": "amzn-s3-demo-bucket1"
         },
         {
             "Name": "customer-ap",
             "NetworkOrigin": "Internet",
-            "Bucket": "external-docs"
+            "Bucket": "amzn-s3-demo-bucket2"
         },
         {
             "Name": "public-ap",
             "NetworkOrigin": "Internet",
-            "Bucket": "external-docs"
+            "Bucket": "amzn-s3-demo-bucket2"
         }
     ]
 }
 ```
 **Example 2: To retrieve a list of all access points for a bucket**
-The following `list-access-points` example retrieves a list of all access points attached to the bucket `external-docs` owned by account 123456789012.
+The following `list-access-points` example retrieves a list of all access points attached to the bucket `amzn-s3-demo-bucket2` owned by account 123456789012.
 
 ```
 aws s3control list-access-points \
     --account-id {{123456789012}} \
-    --bucket {{external-docs}}
+    --bucket {{amzn-s3-demo-bucket2}}
 ```
 Output:
 
@@ -395,12 +400,12 @@ Output:
         {
             "Name": "customer-ap",
             "NetworkOrigin": "Internet",
-            "Bucket": "external-docs"
+            "Bucket": "amzn-s3-demo-bucket2"
         },
         {
             "Name": "public-ap",
             "NetworkOrigin": "Internet",
-            "Bucket": "external-docs"
+            "Bucket": "amzn-s3-demo-bucket2"
         }
     ]
 }
@@ -435,7 +440,7 @@ Output:
             },
             "CreationTime": "2019-10-03T21:48:48.048Z",
             "Status": "Complete",
-            "JobId": "93735294-df46-44d5-8638-6356f335324e",
+            "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Priority": 42
         },
         {
@@ -447,12 +452,13 @@ Output:
             },
             "CreationTime": "2019-10-03T21:46:07.084Z",
             "Status": "Failed",
-            "JobId": "3f3c7619-02d3-4779-97f6-1d98dd313108",
+            "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Priority": 42
-        },
+        }
     ]
 }
 ```
+For more information, see [Managing S3 Batch Operations jobs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-managing-jobs.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/list-jobs.html) in *AWS CLI Command Reference*.
 
 ### `put-access-point-policy`
@@ -506,6 +512,7 @@ aws s3control put-public-access-block \
     --public-access-block-configuration '{{{"BlockPublicAcls": true, "IgnorePublicAcls": true, "BlockPublicPolicy": true, "RestrictPublicBuckets": true}}}'
 ```
 This command produces no output.
+For more information, see [Configuring block public access settings for your account](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-block-public-access-account.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutPublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/put-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `submit-multi-region-access-point-routes`
@@ -515,16 +522,17 @@ The following code example shows how to use `submit-multi-region-access-point-ro
 
 **AWS CLI**
 **To update your Multi-Region Access Point routing configuration**
-The following `submit-multi-region-access-point-routes` example updates the routing statuses of `amzn-s3-demo-bucket1` and `amzn-s3-demo-bucket2` in the `ap-southeast-2` Region for your Multi-Region Access Point.
+The following `submit-multi-region-access-point-routes` example updates the routing statuses of `amzn-s3-demo-bucket1` and `amzn-s3-demo-bucket2` in the `us-west-2` Region for your Multi-Region Access Point.
 
 ```
 aws s3control submit-multi-region-access-point-routes \
-    --region {{ap-southeast-2}} \
-    --account-id {{111122223333}} \
+    --region {{us-west-2}} \
+    --account-id {{123456789012}} \
     --mrap {{MultiRegionAccessPoint_ARN}} \
     --route-updates {{Bucket=amzn-s3-demo-bucket1,TrafficDialPercentage=100}} {{Bucket=amzn-s3-demo-bucket2,TrafficDialPercentage=0}}
 ```
 This command produces no output.
+For more information, see [Using Amazon S3 Multi-Region Access Point failover controls](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingFailover.html) in the *Amazon S3 User Guide*.
 +  For API details, see [SubmitMultiRegionAccessPointRoutes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/submit-multi-region-access-point-routes.html) in *AWS CLI Command Reference*.
 
 ### `update-job-priority`
@@ -539,17 +547,18 @@ The following `update-job-priority` example updates the specified job to a new p
 ```
 aws s3control update-job-priority \
     --account-id {{123456789012}} \
-    --job-id {{8d9a18fe-c303-4d39-8ccc-860d372da386}} \
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --priority {{52}}
 ```
 Output:
 
 ```
 {
-    "JobId": "8d9a18fe-c303-4d39-8ccc-860d372da386",
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Priority": 52
 }
 ```
+For more information, see [Assigning job priority](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-job-priority.html) in the *Amazon S3 User Guide*.
 +  For API details, see [UpdateJobPriority](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/update-job-priority.html) in *AWS CLI Command Reference*.
 
 ### `update-job-status`
@@ -564,7 +573,7 @@ The following `update-job-status` example cancels the specified job which is awa
 ```
 aws s3control update-job-status \
     --account-id {{123456789012}} \
-    --job-id {{8d9a18fe-c303-4d39-8ccc-860d372da386}} \
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --requested-job-status {{Cancelled}}
 ```
 Output:
@@ -572,7 +581,7 @@ Output:
 ```
 {
     "Status": "Cancelled",
-    "JobId": "8d9a18fe-c303-4d39-8ccc-860d372da386"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 The following `update-job-status` example confirms and runs the specified which is awaiting approval.
@@ -580,28 +589,32 @@ The following `update-job-status` example confirms and runs the specified which 
 ```
 aws s3control update-job-status \
     --account-id {{123456789012}} \
-    --job-id {{5782949f-3301-4fb3-be34-8d5bab54dbca}} \
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --requested-job-status {{Ready}}
+```
+Output:
 
-{{Output::}}
-
-{{{}}
+```
+{
     "Status": "Ready",
-    "JobId": {{"5782949f-3301-4fb3-be34-8d5bab54dbca"}}
-{{}}}
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+}
 ```
 The following `update-job-status` example cancels the specified job which is running.
 
 ```
- aws s3control update-job-status \
-    --account-id 123456789012 \
-    --job-id 5782949f-3301-4fb3-be34-8d5bab54dbca \
-    --requested-job-status Cancelled
+aws s3control update-job-status \
+    --account-id {{123456789012}} \
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --requested-job-status {{Cancelled}}
+```
+Output:
 
-Output::
+```
 {
-         "Status": "Cancelling",
-         "JobId": "5782949f-3301-4fb3-be34-8d5bab54dbca"
+    "Status": "Cancelling",
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Tracking job status and completion reports](https://docs.aws.amazon.com/AmazonS3/latest/userguide/batch-ops-job-status.html) in the *Amazon S3 User Guide*.
 +  For API details, see [UpdateJobStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3control/update-job-status.html) in *AWS CLI Command Reference*.

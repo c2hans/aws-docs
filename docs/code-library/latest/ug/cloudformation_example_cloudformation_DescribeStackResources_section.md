@@ -27,7 +27,7 @@ Output:
     "StackResources": [
         {
             "StackName": "my-stack",
-            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/my-stack/d0a825a0-e4cd-xmpl-b9fb-061c69e99204",
+            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/my-stack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LogicalResourceId": "bucket",
             "PhysicalResourceId": "my-stack-bucket-1vc62xmplgguf",
             "ResourceType": "AWS::S3::Bucket",
@@ -39,7 +39,7 @@ Output:
         },
         {
             "StackName": "my-stack",
-            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/my-stack/d0a825a0-e4cd-xmpl-b9fb-061c69e99204",
+            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/my-stack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LogicalResourceId": "function",
             "PhysicalResourceId": "my-function-SEZV4XMPL4S5",
             "ResourceType": "AWS::Lambda::Function",
@@ -51,7 +51,7 @@ Output:
         },
         {
             "StackName": "my-stack",
-            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/my-stack/d0a825a0-e4cd-xmpl-b9fb-061c69e99204",
+            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/my-stack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LogicalResourceId": "functionRole",
             "PhysicalResourceId": "my-functionRole-HIZXMPLEOM9E",
             "ResourceType": "AWS::IAM::Role",
@@ -64,6 +64,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing AWS resources as a single unit with CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [DescribeStackResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/describe-stack-resources.html) in *AWS CLI Command Reference*.
 
 ------

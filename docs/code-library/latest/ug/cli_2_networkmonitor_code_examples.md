@@ -30,14 +30,14 @@ The following `create-monitor` example creates a monitor named `Example_NetworkM
 
 ```
 aws networkmonitor create-monitor \
-     --monitor-name {{Example_NetworkMonitor}} \
-     --aggregation-period {{30}}
+    --monitor-name {{Example_NetworkMonitor}} \
+    --aggregation-period {{30}}
 ```
 Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkmonitor:region:111122223333:monitor/Example_NetworkMonitor",
+    "monitorArn": "arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor",
     "monitorName": "Example_NetworkMonitor",
     "state": "INACTIVE",
     "aggregationPeriod": 30,
@@ -51,14 +51,14 @@ The following `create-monitor` example creates a monitor named `Example_NetworkM
 ```
 aws networkmonitor create-monitor \
     --monitor-name {{Example_NetworkMonitor}} \
-    --probes {{sourceArn=arn:aws:ec2:region:111122223333:subnet/subnet-id,destination=10.0.0.100,destinationPort=80,protocol=TCP,packetSize=56,probeTags={Name=Probe1}}} \
+    --probes {{sourceArn=arn:aws:ec2:region:123456789012:subnet/subnet-id,destination=10.0.0.100,destinationPort=80,protocol=TCP,packetSize=56,probeTags={Name=Probe1}}} \
     --tags {{Monitor=Monitor1}}
 ```
 Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkmonitor:region111122223333:monitor/Example_NetworkMonitor",
+    "monitorArn": "arn:aws:networkmonitor:region123456789012:monitor/Example_NetworkMonitor",
     "monitorName": "Example_NetworkMonitor",
     "state": "PENDING",
     "aggregationPeriod": 60,
@@ -73,16 +73,16 @@ The following `create-monitor` example creates a monitor named `Example_NetworkM
 
 ```
 aws networkmonitor create-monitor \
-     --monitor-name {{Example_NetworkMonitor}} \
-     --aggregation-period {{30}} \
-     --probes {{sourceArn=arn:aws:ec2:region111122223333:subnet/subnet-id,destination=10.0.0.100,protocol=ICMP,packetSize=56,probeTags={Name=Probe1}}} \
-     --tags {{Monitor=Monitor1}}
+    --monitor-name {{Example_NetworkMonitor}} \
+    --aggregation-period {{30}} \
+    --probes {{sourceArn=arn:aws:ec2:region123456789012:subnet/subnet-id,destination=10.0.0.100,protocol=ICMP,packetSize=56,probeTags={Name=Probe1}}} \
+    --tags {{Monitor=Monitor1}}
 ```
 Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkmonitor:region:111122223333:monitor/Example_NetworkMonitor",
+    "monitorArn": "arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor",
     "monitorName": "Example_NetworkMonitor",
     "state": "PENDING",
     "aggregationPeriod": 30,
@@ -106,14 +106,14 @@ The following `create-probe` example creates a probe that uses the `TCP` `protoc
 ```
 aws networkmonitor create-probe \
     --monitor-name {{Example_NetworkMonitor}} \
-    --probe {{sourceArn=arn:aws:ec2:region:111122223333:subnet/subnet-id,destination=10.0.0.100,destinationPort=80,protocol=TCP,packetSize=56,tags={Name=Probe1}}}
+    --probe {{sourceArn=arn:aws:ec2:region:123456789012:subnet/subnet-id,destination=10.0.0.100,destinationPort=80,protocol=TCP,packetSize=56,tags={Name=Probe1}}}
 ```
 Output:
 
 ```
 {
     "probeId": "probe-12345",
-    "probeArn": "arn:aws:networkmonitor:region:111122223333:probe/probe-12345",
+    "probeArn": "arn:aws:networkmonitor:region:123456789012:probe/probe-12345",
     "destination": "10.0.0.100",
     "destinationPort": 80,
     "packetSize": 56,
@@ -133,14 +133,14 @@ The following `create-probe` example creates a probe that uses the `ICMP` `proto
 ```
 aws networkmonitor create-probe \
     --monitor-name {{Example_NetworkMonitor}} \
-    --probe {{sourceArn=arn:aws:ec2:region:012345678910:subnet/subnet-id,destination=10.0.0.100,protocol=ICMP,packetSize=56,tags={Name=Probe1}}}
+    --probe {{sourceArn=arn:aws:ec2:region:123456789012:subnet/subnet-id,destination=10.0.0.100,protocol=ICMP,packetSize=56,tags={Name=Probe1}}}
 ```
 Output:
 
 ```
 {
     "probeId": "probe-12345",
-    "probeArn": "arn:aws:networkmonitor:region:111122223333:probe/probe-12345",
+    "probeArn": "arn:aws:networkmonitor:region:123456789012:probe/probe-12345",
     "destination": "10.0.0.100",
     "packetSize": 56,
     "addressFamily": "IPV4",
@@ -208,7 +208,7 @@ Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkmonitor:region:012345678910:monitor/Example_NetworkMonitor",
+    "monitorArn": "arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor",
     "monitorName": "Example_NetworkMonitor",
     "state": "ACTIVE",
     "aggregationPeriod": 60,
@@ -240,8 +240,8 @@ Output:
 ```
 {
     "probeId": "probe-12345",
-    "probeArn": "arn:aws:networkmonitor:region:012345678910:probe/probe-12345",
-    "sourceArn": "arn:aws:ec2:region:012345678910:subnet/subnet-12345",
+    "probeArn": "arn:aws:networkmonitor:region:123456789012:probe/probe-12345",
+    "sourceArn": "arn:aws:ec2:region:123456789012:subnet/subnet-12345",
     "destination": "10.0.0.100",
     "destinationPort": 80,
     "protocol": "TCP",
@@ -276,7 +276,7 @@ Output:
 ```
 {
     "monitors": [{
-            "monitorArn": "arn:aws:networkmonitor:region:012345678910:monitor/Example_NetworkMonitor",
+            "monitorArn": "arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor",
             "monitorName": "Example_NetworkMonitor",
             "state": "ACTIVE",
             "aggregationPeriod": 60,
@@ -300,14 +300,14 @@ Output:
 {
     "monitors": [
         {
-            "monitorArn": "arn:aws:networkmonitor:us-east-1:111122223333:monitor/Example_NetworkMonitor",
+            "monitorArn": "arn:aws:networkmonitor:us-west-2:123456789012:monitor/Example_NetworkMonitor",
             "monitorName": "Example_NetworkMonitor",
             "state": "INACTIVE",
             "aggregationPeriod": 60,
             "tags": {}
         },
         {
-            "monitorArn": "arn:aws:networkmonitor:us-east-1:111122223333:monitor/Example_NetworkMonitor2",
+            "monitorArn": "arn:aws:networkmonitor:us-west-2:123456789012:monitor/Example_NetworkMonitor2",
             "monitorName": "Example_NetworkMonitor2",
             "state": "ACTIVE",
             "aggregationPeriod": 60,
@@ -316,7 +316,7 @@ Output:
             }
         },
         {
-            "monitorArn": "arn:aws:networkmonitor:us-east-1:111122223333:monitor/TestNetworkMonitor_CLI",
+            "monitorArn": "arn:aws:networkmonitor:us-west-2:123456789012:monitor/TestNetworkMonitor_CLI",
             "monitorName": "TestNetworkMonitor_CLI",
             "state": "INACTIVE",
             "aggregationPeriod": 60,
@@ -339,7 +339,7 @@ The following `list-tags-for-resource` example returns a list of the tags for a 
 
 ```
 aws networkmonitor list-tags-for-resource \
-    --resource-arn {{arn:aws:networkmonitor:region:012345678910:monitor/Example_NetworkMonitor}}
+    --resource-arn {{arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor}}
 ```
 Output:
 
@@ -365,7 +365,7 @@ The following `tag-resource` example tags a monitor named `Example_NetworkMonito
 
 ```
 aws networkmonitor tag-resource \
-    --resource-arn {{arn:aws:networkmonitor:region:012345678910:monitor/Example_NetworkMonitor}} \
+    --resource-arn {{arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor}} \
     --tags {{Environment=Dev,Application=PetStore}}
 ```
 This command produces no output.
@@ -383,7 +383,7 @@ The following `untag-resource` example removes a `tag-keys` parameter with the k
 
 ```
 aws networkmonitor untag-resource \
-    --resource-arn {{arn:aws:networkmonitor:region:012345678910:monitor/Example_NetworkMonitor}} \
+    --resource-arn {{arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor}} \
     --tag-keys {{Environment}} {{Application}}
 ```
 This command produces no output.
@@ -408,7 +408,7 @@ Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkmonitor:region:012345678910:monitor/Example_NetworkMonitor",
+    "monitorArn": "arn:aws:networkmonitor:region:123456789012:monitor/Example_NetworkMonitor",
     "monitorName": "Example_NetworkMonitor",
     "state": "PENDING",
     "aggregationPeriod": 30,
@@ -441,8 +441,8 @@ Output:
 ```
 {
     "probeId": "probe-12345",
-    "probeArn": "arn:aws:networkmonitor:region:012345678910:probe/probe-12345",
-    "sourceArn": "arn:aws:ec2:region:012345678910:subnet/subnet-12345",
+    "probeArn": "arn:aws:networkmonitor:region:123456789012:probe/probe-12345",
+    "sourceArn": "arn:aws:ec2:region:123456789012:subnet/subnet-12345",
     "destination": "10.0.0.150",
     "destinationPort": 80,
     "protocol": "TCP",

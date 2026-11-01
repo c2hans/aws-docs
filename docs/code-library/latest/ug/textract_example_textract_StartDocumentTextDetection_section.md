@@ -15,19 +15,18 @@ The following code examples show how to use `StartDocumentTextDetection`.
 **AWS CLI**
 **To start detecting text in a multi-page document**
 The following `start-document-text-detection` example shows how to start asynchronous detection of text in a multi-page document.
-Linux/macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws textract start-document-text-detection \
-        --document-location '{{{"S3Object":{"Bucket":"bucket","Name":"document"}}}}' \
-        --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleARN"}}
+    --document-location '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}' \
+    --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleARN"}}
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws textract start-document-text-detection \
-    --document-location "{\"S3Object\":{\"Bucket\":\"bucket\",\"Name\":\"document\"}}" \
-    --region {{region-name}} \
+    --document-location "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}" \
     --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
 ```
 Output:
@@ -37,7 +36,7 @@ Output:
     "JobId": "57849a3dc627d4df74123dca269d69f7b89329c870c65bb16c9fd63409d200b9"
 }
 ```
-For more information, see Detecting and Analyzing Text in Multi-Page Documents in the *Amazon Textract Developers Guide*
+For more information, see [Processing Documents Asynchronously](https://docs.aws.amazon.com/textract/latest/dg/async.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [StartDocumentTextDetection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/start-document-text-detection.html) in *AWS CLI Command Reference*.
 
 ------

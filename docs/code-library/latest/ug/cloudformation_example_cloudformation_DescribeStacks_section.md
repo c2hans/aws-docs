@@ -18,10 +18,11 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To describe AWS CloudFormation stacks**
-The following `describe-stacks` command shows summary information for the `myteststack` stack:
+The following `describe-stacks` example shows summary information for the `myteststack` stack.
 
 ```
-aws cloudformation describe-stacks --stack-name {{myteststack}}
+aws cloudformation describe-stacks \
+    --stack-name {{myteststack}}
 ```
 Output:
 
@@ -29,7 +30,7 @@ Output:
 {
     "Stacks":  [
         {
-            "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/myteststack/466df9e0-0dff-08e3-8e2f-5088487c4896",
+            "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/myteststack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description": "AWS CloudFormation Sample Template S3_Bucket: Sample template showing how to create a publicly accessible S3 bucket. **WARNING** This template creates an S3 bucket. You will be billed for the AWS resources used if you create a stack from this template.",
             "Tags": [],
             "Outputs": [
@@ -49,7 +50,7 @@ Output:
     ]
 }
 ```
-For more information, see Stacks in the *AWS CloudFormation User Guide*.
+For more information, see [Managing AWS resources as a single unit with CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [DescribeStacks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/describe-stacks.html) in *AWS CLI Command Reference*.
 
 ------

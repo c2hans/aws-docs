@@ -13,3 +13,4 @@ The following code examples show how to use the basics of AWS Directory Service 
 + [Actions](directory-service_code_examples_actions.md)
   + [`DescribeDirectories`](directory-service_example_directory-service_DescribeDirectories_section.md)
   + [`DescribeTrusts`](directory-service_example_directory-service_DescribeTrusts_section.md)
+  + [`ResetUserPassword`](directory-service_example_directory-service_ResetUserPassword_section.md)

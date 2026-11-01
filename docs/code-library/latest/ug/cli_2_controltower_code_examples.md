@@ -33,12 +33,47 @@ aws controltower create-landing-zone \
     --landing-zone-version {{3.3}} \
     --manifest {{"file://LandingZoneManifest.json"}}
 ```
+Contents of `LandingZoneManifest.json`:
+
+```
+{
+    "governedRegions": [
+        "us-west-2"
+    ],
+    "organizationStructure": {
+        "security": {
+            "name": "Security"
+        },
+        "sandbox": {
+            "name": "Sandbox"
+        }
+    },
+    "centralizedLogging": {
+        "accountId": "123456789222",
+        "configurations": {
+            "loggingBucket": {
+                "retentionDays": 365
+            },
+            "accessLoggingBucket": {
+                "retentionDays": 3650
+            }
+        },
+        "enabled": true
+    },
+    "securityRoles": {
+        "accountId": "123456789111"
+    },
+    "accessManagement": {
+        "enabled": true
+    }
+}
+```
 Output:
 
 ```
 {
-    "arn": "arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5",
-    "operationIdentifier": "55XXXXXX-e2XX-41XX-a7XX-446XXXXXXXXX"
+    "arn": "arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5",
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Getting started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) in the *AWS Control Tower User Guide*.
@@ -55,13 +90,13 @@ The following `delete-landing-zone` example decommissions the AWS Control Tower 
 
 ```
 aws controltower delete-landing-zone \
-    --landing-zone-identifier {{arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5}}
+    --landing-zone-identifier {{arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5}}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "47XXXXXX-a6XX-82XX-c9XX-432XXXXXXXXX"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Decommission an AWS Control Tower landing zone](https://docs.aws.amazon.com/controltower/latest/userguide/decommission-landing-zone.html) in the *AWS Control Tower User Guide*.
@@ -78,13 +113,13 @@ The following `disable-baseline` example disables an AWS Control Tower baseline.
 
 ```
 aws controltower disable-baseline \
-    --enabled-baseline-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
+    --enabled-baseline-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "b33486d7-5396-4ad0-9eae-3a57969fe8cd"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Types of baselines](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html) in the *AWS Control Tower User Guide*.
@@ -108,7 +143,7 @@ Output:
 
 ```
 {
-    "operationIdentifier": "b8f0dxxx-08xx-43xx-a2xx-568e9922xxxx"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html) in the *AWS Control Tower User Guide*.
@@ -125,7 +160,7 @@ The following `enable-baseline` example enables an AWS Control Tower baseline if
 
 ```
 aws controltower enable-baseline \
-    --baseline-identifier {{arn:aws:controltower:us-east-1::baseline/17BSJV3IGJ2QSGA2}} \
+    --baseline-identifier {{arn:aws:controltower:us-west-2::baseline/17BSJV3IGJ2QSGA2}} \
     --baseline-version {{4.0}} \
     --target-identifier {{arn:aws:organizations::123456789012:ou/o-s64ryixxxx/ou-oq9f-i5wnxxxx}}
 ```
@@ -133,8 +168,8 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2",
-    "operationIdentifier": "51e190ac-8a37-4f6d-b63c-fb5104b5db38"
+    "arn": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2",
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Types of baselines](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html) in the *AWS Control Tower User Guide*.
@@ -143,17 +178,17 @@ The following `enable-baseline` example enables an AWS Control Tower baseline if
 
 ```
 aws controltower enable-baseline \
-    --baseline-identifier {{arn:aws:controltower:us-east-1::baseline/17BSJV3IGJ2QSGA2}} \
+    --baseline-identifier {{arn:aws:controltower:us-west-2::baseline/17BSJV3IGJ2QSGA2}} \
     --baseline-version {{4.0}} \
     --target-identifier {{arn:aws:organizations::123456789012:ou/o-s64ryixxxx/ou-oqxx-i5wnxxxx}} \
-    --parameters '{{[{"key":"IdentityCenterEnabledBaselineArn","value":"arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XAJNZNCBC1I386C7B"}]}}'
+    --parameters '{{[{"key":"IdentityCenterEnabledBaselineArn","value":"arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XAJNZNCBC1I386C7B"}]}}'
 ```
 Output:
 
 ```
 {
-    "arn": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2",
-    "operationIdentifier": "51e190ac-8a37-4f6d-b63c-fb5104b5db38"
+    "arn": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2",
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Types of baselines](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html) in the *AWS Control Tower User Guide*.
@@ -177,8 +212,8 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:controltower:us-east-1:123456789012:enabledcontrol/18J5KBJ3W3VTIRLV",
-    "operationIdentifier": "7691fc5a-de87-4540-8c95-b0aabd56382c"
+    "arn": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/18J5KBJ3W3VTIRLV",
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html) in the *AWS Control Tower User Guide*.
@@ -195,7 +230,7 @@ The following `get-baseline-operation` example gets details of an AWS Control To
 
 ```
 aws controltower get-baseline-operation \
-    --operation-identifier {{"51e190ac-8a37-4f6d-b63c-fb5104b5db38"}}
+    --operation-identifier {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -203,7 +238,7 @@ Output:
 {
     "baselineOperation": {
         "endTime": "2025-04-17T23:48:46+00:00",
-        "operationIdentifier": "51e190ac-8a37-4f6d-b63c-fb5104b5db38",
+        "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "operationType": "ENABLE_BASELINE",
         "startTime": "2025-04-17T23:46:37+00:00",
         "status": "SUCCEEDED",
@@ -225,13 +260,13 @@ The following `get-baseline` example gets details of an AWS Control Tower baseli
 
 ```
 aws controltower get-baseline \
-    --baseline-identifier {{arn:aws:controltower:us-east-1::baseline/LN25R72TTG6IGPTQ}}
+    --baseline-identifier {{arn:aws:controltower:us-west-2::baseline/LN25R72TTG6IGPTQ}}
 ```
 Output:
 
 ```
 {
-    "arn": "arn:aws:controltower:us-east-1::baseline/LN25R72TTG6IGPTQ",
+    "arn": "arn:aws:controltower:us-west-2::baseline/LN25R72TTG6IGPTQ",
     "description": "Sets up shared resources for AWS Identity Center, which prepares the AWSControlTowerBaseline to set up Identity Center access for accounts.",
     "name": "IdentityCenterBaseline"
 }
@@ -250,7 +285,7 @@ The following `get-control-operation` example gets details of an AWS Control Tow
 
 ```
 aws controltower get-control-operation \
-    --operation-identifier {{"7691fc5a-de87-4540-8c95-b0aabd56382c"}}
+    --operation-identifier {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -258,9 +293,9 @@ Output:
 {
     "controlOperation": {
         "controlIdentifier": "arn:aws:controlcatalog:::control/497wrm2xnk1wxlf4obrdo7mej",
-        "enabledControlIdentifier": "arn:aws:controltower:us-east-1:123456789012:enabledcontrol/18J5KBJ3W3VTIRLV",
+        "enabledControlIdentifier": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/18J5KBJ3W3VTIRLV",
         "endTime": "2025-04-17T03:08:55+00:00",
-        "operationIdentifier": "7691fc5a-de87-4540-8c95-b0aabd56382c",
+        "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "operationType": "ENABLE_CONTROL",
         "startTime": "2025-04-17T03:07:52+00:00",
         "status": "SUCCEEDED",
@@ -283,24 +318,24 @@ The following `get-enabled-baseline` example gets details of an AWS Control Towe
 
 ```
 aws controltower get-enabled-baseline \
-    --enabled-baseline-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
+    --enabled-baseline-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
 ```
 Output:
 
 ```
 {
     "enabledBaselineDetails": {
-        "arn": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2",
-        "baselineIdentifier": "arn:aws:controltower:us-east-1::baseline/17BSJV3IGJ2QSGA2",
+        "arn": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2",
+        "baselineIdentifier": "arn:aws:controltower:us-west-2::baseline/17BSJV3IGJ2QSGA2",
         "baselineVersion": "4.0",
         "parameters": [
             {
                 "key": "IdentityCenterEnabledBaselineArn",
-                "value": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XAJNZNCBC1I386C7B"
+                "value": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XAJNZNCBC1I386C7B"
             }
         ],
         "statusSummary": {
-            "lastOperationIdentifier": "51e190ac-8a37-4f6d-b63c-fb5104b5db38",
+            "lastOperationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "status": "SUCCEEDED"
         },
         "targetIdentifier": "arn:aws:organizations::123456789012:ou/o-3onqfufxxx/ou-g8xx-5kluxxxx"
@@ -321,17 +356,17 @@ The following `get-enabled-control` example gets details of an AWS Control Tower
 
 ```
 aws controltower get-enabled-control \
-    --enabled-control-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledcontrol/26RGJRSLXCP1KW8D}}
+    --enabled-control-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledcontrol/26RGJRSLXCP1KW8D}}
 ```
 Output:
 
 ```
 {
     "enabledControlDetails": {
-        "arn": "arn:aws:controltower:us-east-1:123456789012:enabledcontrol/26RGJRSLXCP1KW8D",
-        "controlIdentifier": "arn:aws:controltower:us-east-1::control/AWS-GR_CLOUDTRAIL_CHANGE_PROHIBITED",
+        "arn": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/26RGJRSLXCP1KW8D",
+        "controlIdentifier": "arn:aws:controltower:us-west-2::control/AWS-GR_CLOUDTRAIL_CHANGE_PROHIBITED",
         "driftStatusSummary": {
-             "driftStatus": "NOT_CHECKING"
+            "driftStatus": "NOT_CHECKING"
         },
         "parameters": [],
         "statusSummary": {
@@ -340,16 +375,7 @@ Output:
         "targetIdentifier": "arn:aws:organizations::123456789012:ou/o-s64ryixxxx/ou-oqxx-i5wnxxxx",
         "targetRegions": [
             {
-                "name": "ap-south-2"
-            },
-            {
-                "name": "ap-south-1"
-            },
-            {
-                "name": "eu-south-1"
-            },
-            {
-                "name": "us-east-1"
+                "name": "us-west-2"
             }
         ]
     }
@@ -369,14 +395,14 @@ The following `get-landing-zone-operation` example gets details of an AWS Contro
 
 ```
 aws controltower get-landing-zone-operation \
-    --operation-identifier {{ee9d0d2d-6532-42d8-9b85-3fbb0700a606}}
+    --operation-identifier {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "operationDetails": {
-        "operationIdentifier": "ee9d0d2d-6532-42d8-9b85-3fbb0700xxxx",
+        "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "operationType": "RESET",
         "startTime": "2025-04-17T03:19:33+00:00",
         "status": "IN_PROGRESS"
@@ -397,14 +423,14 @@ The following `get-landing-zone` example gets details of an AWS Control Tower la
 
 ```
 aws controltower get-landing-zone \
-    --landing-zone-identifier {{arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5}}
+    --landing-zone-identifier {{arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5}}
 ```
 Output:
 
 ```
 {
     "landingZone": {
-        "arn": "arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5",
+        "arn": "arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5",
         "driftStatus": {
             "status": "IN_SYNC"
         },
@@ -414,10 +440,9 @@ Output:
                 "enabled": true
             },
             "securityRoles": {
-                "accountId": "098765432101"
+                "accountId": "123456789111"
             },
             "governedRegions": [
-                "us-east-1",
                 "us-west-2"
             ],
             "organizationStructure": {
@@ -426,12 +451,12 @@ Output:
                 }
             },
             "centralizedLogging": {
-                "accountId": "111122223333",
+                "accountId": "123456789222",
                 "configurations": {
                     "loggingBucket": {
                         "retentionDays": 365
                     },
-                    "kmsKeyArn": "arn:aws:kms:us-east-1:123456789012:key/example-key-id",
+                    "kmsKeyArn": "arn:aws:kms:us-west-2:123456789012:key/example-key-id",
                     "accessLoggingBucket": {
                         "retentionDays": 3650
                     }
@@ -465,37 +490,37 @@ Output:
 {
     "baselines": [
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/4T4HA1KMO10S6311",
+            "arn": "arn:aws:controltower:us-west-2::baseline/4T4HA1KMO10S6311",
             "description": "Sets up resources to monitor security and compliance of accounts in your organization.",
             "name": "AuditBaseline"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/J8HX46AHS5MIKQPD",
+            "arn": "arn:aws:controltower:us-west-2::baseline/J8HX46AHS5MIKQPD",
             "description": "Sets up a central repository for logs of API activities and resource configurations from accounts in your organization.",
             "name": "LogArchiveBaseline"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/LN25R72TTG6IGPTQ",
+            "arn": "arn:aws:controltower:us-west-2::baseline/LN25R72TTG6IGPTQ",
             "description": "Sets up shared resources for AWS Identity Center, which prepares the AWSControlTowerBaseline to set up Identity Center access for accounts.",
             "name": "IdentityCenterBaseline"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/17BSJV3IGJ2QSGA2",
+            "arn": "arn:aws:controltower:us-west-2::baseline/17BSJV3IGJ2QSGA2",
             "description": "Sets up resources and mandatory controls for member accounts within the target OU, required for AWS Control Tower governance.",
             "name": "AWSControlTowerBaseline"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/3WPD0NA6TJ9AOMU2",
+            "arn": "arn:aws:controltower:us-west-2::baseline/3WPD0NA6TJ9AOMU2",
             "description": "Sets up a central AWS Backup vault in your organization.",
             "name": "BackupCentralVaultBaseline"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/H6C5JFCJJ3CPU3J5",
+            "arn": "arn:aws:controltower:us-west-2::baseline/H6C5JFCJJ3CPU3J5",
             "description": "Sets up AWS Backup Audit Manager.",
             "name": "BackupAdminBaseline"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1::baseline/APO9ATVPBKFRRGLK",
+            "arn": "arn:aws:controltower:us-west-2::baseline/APO9ATVPBKFRRGLK",
             "description": "Sets up a local AWS Backup vault and attaches multiple AWS Backup plans.",
             "name": "BackupBaseline"
         }
@@ -527,20 +552,20 @@ Output:
             "operationType": "ENABLE_CONTROL",
             "status": "IN_PROGRESS",
             "statusMessage": "Operation is in progress.",
-            "operationIdentifier": "f9f43b45-db27-44df-89d8-f9129e3632XX",
-            "controlIdentifier": "arn:aws:controltower:us-east-1::control/SKIBWKYUQAAC",
+            "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "controlIdentifier": "arn:aws:controltower:us-west-2::control/SKIBWKYUQAAC",
             "targetIdentifier": "arn:aws:organizations::123456789012:ou/o-yy67i3pfv2/ou-slt4-8abknXXX",
-            "enabledControlIdentifier": "arn:aws:controltower:us-east-1:123456789012:enabledcontrol/RWZFSHV2BBRU6JSE"
+            "enabledControlIdentifier": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/RWZFSHV2BBRU6JSE"
         },
         {
             "startTime": "2024-02-19T19:21:09+00:00",
             "operationType": "ENABLE_CONTROL",
             "status": "IN_PROGRESS",
             "statusMessage": "Operation is in progress",
-            "operationIdentifier": "171ee0b1-e926-486e-9775-005bd244ccXX",
-            "controlIdentifier": "arn:aws:controltower:us-east-1::control/PDKYAANJEWJE",
+            "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "controlIdentifier": "arn:aws:controltower:us-west-2::control/PDKYAANJEWJE",
             "targetIdentifier": "arn:aws:organizations::123456789012:ou/o-yy67i3pfv2/ou-slt4-fl6miXXX",
-            "enabledControlIdentifier": "arn:aws:controltower:us-east-2:123456789012:enabledcontrol/XCNJARWZFSHV6JSE"
+            "enabledControlIdentifier": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/XCNJARWZFSHV6JSE"
         }
     ]
 }
@@ -566,28 +591,28 @@ Output:
 {
     "enabledBaselines": [
         {
-            "arn": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XAJNZNCBC1I386C7B",
-            "baselineIdentifier": "arn:aws:controltower:us-east-1::baseline/LN25R72TTG6IGPTQ",
+            "arn": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XAJNZNCBC1I386C7B",
+            "baselineIdentifier": "arn:aws:controltower:us-west-2::baseline/LN25R72TTG6IGPTQ",
             "statusSummary": {
                 "status": "SUCCEEDED"
             },
             "targetIdentifier": "arn:aws:organizations::123456789012:account/o-3onqfuxxxx/123456789012"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XAH3ZJL9DWA386CA5",
-            "baselineIdentifier": "arn:aws:controltower:us-east-1::baseline/4T4HA1KMO10S6311",
+            "arn": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XAH3ZJL9DWA386CA5",
+            "baselineIdentifier": "arn:aws:controltower:us-west-2::baseline/4T4HA1KMO10S6311",
             "statusSummary": {
                 "status": "SUCCEEDED"
             },
-            "targetIdentifier": "arn:aws:organizations::123456789012:account/o-3onqfuxxxx/012345098765"
+            "targetIdentifier": "arn:aws:organizations::123456789012:account/o-3onqfuxxxx/123456789111"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XALFJ9548TL386CBT",
-            "baselineIdentifier": "arn:aws:controltower:us-east-1::baseline/J8HX46AHS5MIKQPD",
+            "arn": "arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XALFJ9548TL386CBT",
+            "baselineIdentifier": "arn:aws:controltower:us-west-2::baseline/J8HX46AHS5MIKQPD",
             "statusSummary": {
                 "status": "SUCCEEDED"
             },
-            "targetIdentifier": "arn:aws:organizations::123456789012:account/o-3onqfuxxxx/098765432109"
+            "targetIdentifier": "arn:aws:organizations::123456789012:account/o-3onqfuxxxx/123456789222"
         }
     ]
 }
@@ -614,8 +639,8 @@ Output:
 {
     "enabledControls": [
         {
-            "arn": "arn:aws:controltower:us-east-1:123456789012:enabledcontrol/26RGJRSLXCP1KW8D",
-            "controlIdentifier": "arn:aws:controltower:us-east-1::control/AWS-GR_CLOUDTRAIL_CHANGE_PROHIBITED",
+            "arn": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/26RGJRSLXCP1KW8D",
+            "controlIdentifier": "arn:aws:controltower:us-west-2::control/AWS-GR_CLOUDTRAIL_CHANGE_PROHIBITED",
             "driftStatusSummary": {
                 "driftStatus": "NOT_CHECKING"
             },
@@ -625,8 +650,8 @@ Output:
             "targetIdentifier": "arn:aws:organizations::123456789012:ou/o-s64ryxxxxx/ou-oqxx-i5wnxxxx"
         },
         {
-            "arn": "arn:aws:controltower:us-east-1:123456789012:enabledcontrol/18AY24CWKM6IVSLU",
-            "controlIdentifier": "arn:aws:controltower:us-east-1::control/AWS-GR_CLOUDTRAIL_CLOUDWATCH_LOGS_ENABLED",
+            "arn": "arn:aws:controltower:us-west-2:123456789012:enabledcontrol/18AY24CWKM6IVSLU",
+            "controlIdentifier": "arn:aws:controltower:us-west-2::control/AWS-GR_CLOUDTRAIL_CLOUDWATCH_LOGS_ENABLED",
             "driftStatusSummary": {
                 "driftStatus": "NOT_CHECKING"
             },
@@ -659,22 +684,22 @@ Output:
 {
     "landingZoneOperations": [
         {
-            "operationIdentifier": "202ee056-5147-49fd-a7ad-8161e3bf043a",
+            "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "operationType": "RESET",
             "status": "SUCCEEDED"
         },
         {
-            "operationIdentifier": "dbd4a4b1-baf9-48cc-bd71-6b923d0f2339",
+            "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "operationType": "RESET",
             "status": "SUCCEEDED"
         },
         {
-            "operationIdentifier": "e6261ab8-3247-4052-af31-1afe7bb0593e",
+            "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "operationType": "UPDATE",
             "status": "SUCCEEDED"
         },
         {
-            "operationIdentifier": "507c6c87-89a8-435f-8697-b257a800f129",
+            "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "operationType": "UPDATE",
             "status": "SUCCEEDED"
         }
@@ -702,7 +727,7 @@ Output:
 {
     "landingZones": [
         {
-            "arn": "arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5"
+            "arn": "arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5"
         }
     ]
 }
@@ -721,7 +746,7 @@ The following `list-tags-for-resource` example lists the tags for AWS Control To
 
 ```
 aws controltower list-tags-for-resource \
-    --resource-arn {{"arn:aws:controltower:us-east-1:123456789012:enabledcontrol/2H2AWUG4SKG81855"}}
+    --resource-arn {{"arn:aws:controltower:us-west-2:123456789012:enabledcontrol/2H2AWUG4SKG81855"}}
 ```
 Output:
 
@@ -746,13 +771,13 @@ The following `reset-enabled-baseline` example resets an AWS Control Tower enabl
 
 ```
 aws controltower reset-enabled-baseline \
-    --enabled-baseline-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
+    --enabled-baseline-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "214cde95-5c39-46b9-b429-4fad550a7096"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Types of baselines](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html) in the *AWS Control Tower User Guide*.
@@ -769,13 +794,13 @@ The following `reset-enabled-control` example resets an AWS Control Tower enable
 
 ```
 aws controltower reset-enabled-control \
-    --enabled-control-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledcontrol/2H2AWUG4SKG81855}}
+    --enabled-control-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledcontrol/2H2AWUG4SKG81855}}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "8276XXXX-b4XX-4eXX-96XX-881d2a4XXXXX"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html) in the *AWS Control Tower User Guide*.
@@ -792,13 +817,13 @@ The following `reset-landing-zone` example resets a AWS Control Tower landing zo
 
 ```
 aws controltower reset-landing-zone \
-    --landing-zone-identifier {{arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5}}
+    --landing-zone-identifier {{arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5}}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "73XXXXXX-b2XX-77XX-c6XX-374XXXXXXXXX"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Getting started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) in the *AWS Control Tower User Guide*.
@@ -815,7 +840,7 @@ The following `tag-resource` example tags an AWS Control Tower enabled control.
 
 ```
 aws controltower tag-resource \
-    --resource-arn {{"arn:aws:controltower:us-east-1:123456789012:enabledcontrol/2H2AWUG4SKG81855"}} \
+    --resource-arn {{"arn:aws:controltower:us-west-2:123456789012:enabledcontrol/2H2AWUG4SKG81855"}} \
     --tags {{"TestTagKey=TestTagValue"}}
 ```
 This command produces no output.
@@ -833,7 +858,7 @@ The following `untag-resource` example untags an AWS Control Tower enabled contr
 
 ```
 aws controltower untag-resource \
-    --resource-arn {{"arn:aws:controltower:us-east-1:123456789012:enabledcontrol/2H2AWUG4SKG81855"}} \
+    --resource-arn {{"arn:aws:controltower:us-west-2:123456789012:enabledcontrol/2H2AWUG4SKG81855"}} \
     --tag-keys {{"TestTagKey"}}
 ```
 This command produces no output.
@@ -852,13 +877,13 @@ The following `update-enabled-baseline` example updates an AWS Control Tower ena
 ```
 aws controltower update-enabled-baseline \
     --baseline-version {{4.0}} \
-    --enabled-baseline-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
+    --enabled-baseline-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "214cde95-5c39-46b9-b429-4fad550a7096"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To update an enabled Control Tower baseline**
@@ -867,14 +892,14 @@ The following `update-enabled-baseline` example updates an AWS Control Tower ena
 ```
 aws controltower update-enabled-baseline \
     --baseline-version {{4.0}} \
-    --enabled-baseline-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}} \
-    --parameters '{{[{"key":"IdentityCenterEnabledBaselineArn","value":"arn:aws:controltower:us-east-1:123456789012:enabledbaseline/XAJNZNCBC1I386C7B"}]}}'
+    --enabled-baseline-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XOM12BEL4YD578CQ2}} \
+    --parameters '{{[{"key":"IdentityCenterEnabledBaselineArn","value":"arn:aws:controltower:us-west-2:123456789012:enabledbaseline/XAJNZNCBC1I386C7B"}]}}'
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "b0f4a7c2-334d-48d9-971e-47fea9db3e8b"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Types of baselines](https://docs.aws.amazon.com/controltower/latest/userguide/types-of-baselines.html) in the *AWS Control Tower User Guide*.
@@ -891,14 +916,14 @@ The following `update-enabled-control` example updates an AWS Control Tower enab
 
 ```
 aws controltower update-enabled-control \
-    --enabled-control-identifier {{arn:aws:controltower:us-east-1:123456789012:enabledcontrol/JSJN8UL0G2MWGRTZ}} \
+    --enabled-control-identifier {{arn:aws:controltower:us-west-2:123456789012:enabledcontrol/JSJN8UL0G2MWGRTZ}} \
     --parameters '{{[{"key":"AllowedRegions","value":["us-east-1","us-west-1","us-west-2","us-east-2"]}]}}'
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "b8f0dxxx-08xx-43xx-a2xx-568e9922xxxx"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html) in the *AWS Control Tower User Guide*.
@@ -915,15 +940,50 @@ The following `update-landing-zone` example updates AWS Control Tower landing zo
 
 ```
 aws controltower update-landing-zone \
-    --landing-zone-identifier {{arn:aws:controltower:us-east-1:123456789012:landingzone/13CJG46WZKXXX4X5}} \
+    --landing-zone-identifier {{arn:aws:controltower:us-west-2:123456789012:landingzone/13CJG46WZKXXX4X5}} \
     --landing-zone-version {{3.3}} \
     --manifest {{"file://UpdateLandingZoneManifest.json"}}
+```
+Contents of `UpdateLandingZoneManifest.json`:
+
+```
+{
+    "governedRegions": [
+        "us-west-2"
+    ],
+    "organizationStructure": {
+        "security": {
+            "name": "Security"
+        },
+        "sandbox": {
+            "name": "Sandbox"
+        }
+    },
+    "centralizedLogging": {
+        "accountId": "123456789222",
+        "configurations": {
+            "loggingBucket": {
+                "retentionDays": 365
+            },
+            "accessLoggingBucket": {
+                "retentionDays": 3650
+            }
+        },
+        "enabled": true
+    },
+    "securityRoles": {
+        "accountId": "123456789111"
+    },
+    "accessManagement": {
+        "enabled": true
+    }
+}
 ```
 Output:
 
 ```
 {
-    "operationIdentifier": "53XXXXXX-b2XX-97XX-c6XX-474XXXXXXXXX"
+    "operationIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Getting started with AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) in the *AWS Control Tower User Guide*.

@@ -29,7 +29,8 @@ The following code example shows how to use `batch-delete-builds`.
 The following `batch-delete-builds` example deletes builds in CodeBuild with the specified IDs.
 
 ```
-aws codebuild batch-delete-builds --ids {{my-build-project-one:a1b2c3d4-5678-9012-abcd-11111EXAMPLE}} {{my-build-project-two:a1b2c3d4-5678-9012-abcd-22222EXAMPLE}}
+aws codebuild batch-delete-builds \
+    --ids {{my-build-project-one:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} {{my-build-project-two:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -37,16 +38,16 @@ Output:
 {
     "buildsNotDeleted": [
         {
-            "id": "arn:aws:codebuild:us-west-2:123456789012:build/my-build-project-one:a1b2c3d4-5678-9012-abcd-11111EXAMPLE",
+            "id": "arn:aws:codebuild:us-west-2:123456789012:build/my-build-project-one:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "statusCode": "BUILD_IN_PROGRESS"
         }
     ],
     "buildsDeleted": [
-        "arn:aws:codebuild:us-west-2:123456789012:build/my-build-project-two:a1b2c3d4-5678-9012-abcd-22222EXAMPLE"
+        "arn:aws:codebuild:us-west-2:123456789012:build/my-build-project-two:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     ]
 }
 ```
-For more information, see [Delete Builds (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/delete-builds.html#delete-builds-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Delete builds in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/delete-builds.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [BatchDeleteBuilds](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/batch-delete-builds.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-build-batches`
@@ -60,7 +61,7 @@ The following `batch-get-build-batches` example gets information about build bat
 
 ```
 aws codebuild batch-get-build-batches \
-    --ids {{codebuild-demo-project:e9c4f4df-3f43-41d2-ab3a-60fe2EXAMPLE}}
+    --ids {{codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -68,8 +69,8 @@ Output:
 {
     "buildBatches": [
         {
-            "id": "codebuild-demo-project:e9c4f4df-3f43-41d2-ab3a-60fe2EXAMPLE",
-            "arn": "arn:aws:codebuild:us-west-2:123456789012:build-batch/codebuild-demo-project:e9c4f4df-3f43-41d2-ab3a-60fe2EXAMPLE",
+            "id": "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "arn": "arn:aws:codebuild:us-west-2:123456789012:build-batch/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "startTime": "2020-11-03T21:52:20.775000+00:00",
             "endTime": "2020-11-03T21:56:59.784000+00:00",
             "currentPhase": "SUCCEEDED",
@@ -164,7 +165,7 @@ Output:
                     "identifier": "DOWNLOAD_SOURCE",
                     "ignoreFailure": false,
                     "currentBuildSummary": {
-                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:379737d8-bc35-48ec-97fd-776d27545315",
+                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                         "requestedOn": "2020-11-03T21:52:21.394000+00:00",
                         "buildStatus": "SUCCEEDED",
                         "primaryArtifact": {
@@ -179,7 +180,7 @@ Output:
                     "dependsOn": [],
                     "ignoreFailure": false,
                     "currentBuildSummary": {
-                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:dd785171-ed84-4bb6-8ede-ceeb86e54bdb",
+                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                         "requestedOn": "2020-11-03T21:52:57.604000+00:00",
                         "buildStatus": "SUCCEEDED",
                         "primaryArtifact": {
@@ -196,7 +197,7 @@ Output:
                     ],
                     "ignoreFailure": false,
                     "currentBuildSummary": {
-                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:97cf7bd4-5313-4786-8243-4aef350a1267",
+                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                         "requestedOn": "2020-11-03T21:54:18.474000+00:00",
                         "buildStatus": "SUCCEEDED",
                         "primaryArtifact": {
@@ -213,7 +214,7 @@ Output:
                     ],
                     "ignoreFailure": false,
                     "currentBuildSummary": {
-                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:60a194cd-0d03-4337-9db1-d41476a17d27",
+                        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
                         "requestedOn": "2020-11-03T21:55:39.203000+00:00",
                         "buildStatus": "SUCCEEDED",
                         "primaryArtifact": {
@@ -229,7 +230,7 @@ Output:
     "buildBatchesNotFound": []
 }
 ```
-For more information, see Batch builds in AWS CodeBuild <https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.html>)\_\_ in the *AWS CodeBuild User Guide*.
+For more information, see [Run builds in batches](https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [BatchGetBuildBatches](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/batch-get-build-batches.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-builds`
@@ -242,7 +243,8 @@ The following code example shows how to use `batch-get-builds`.
 The following `batch-get-builds` example gets information about builds in CodeBuild with the specified IDs.
 
 ```
-aws codebuild batch-get-builds --ids {{codebuild-demo-project:e9c4f4df-3f43-41d2-ab3a-60fe2EXAMPLE}} {{codebuild-demo-project:815e755f-bade-4a7e-80f0-efe51EXAMPLE}}
+aws codebuild batch-get-builds \
+    --ids {{codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} {{codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -253,7 +255,7 @@ Output:
         {
             "artifacts": {
                 "md5sum": "0e95edf915048a0c22efe6d139fff837",
-                "location": "arn:aws:s3:::codepipeline-us-west-2-820783811474/CodeBuild-Python-Pip/BuildArtif/6DJsqQa",
+                "location": "arn:aws:s3:::amzn-s3-demo-bucket1/CodeBuild-Python-Pip/BuildArtif/6DJsqQa",
                 "encryptionDisabled": false,
                 "sha256sum": "cfa0df33a090966a737f64ae4fe498969fdc842a0c9aec540bf93c37ac0d05a2"
             },
@@ -264,9 +266,9 @@ Output:
                 "s3Logs": {
                     "status": "DISABLED"
                 },
-                "streamName": "46472baf-8f6b-43c2-9255-b3b963af2732",
+                "streamName": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "groupName": "/aws/codebuild/codebuild-demo-project",
-                "deepLink": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEvent:group=/aws/codebuild/codebuild-demo-project;stream=46472baf-8f6b-43c2-9255-b3b963af2732"
+                "deepLink": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEvent:group=/aws/codebuild/codebuild-demo-project;stream=a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
             },
             "timeoutInMinutes": 60,
             "environment": {
@@ -415,13 +417,13 @@ Output:
             "secondarySources": [],
             "serviceRole": "arn:aws:iam::123456789012:role/service-role/my-codebuild-service-role",
             "currentPhase": "COMPLETED",
-            "id": "codebuild-demo-project:e9c4f4df-3f43-41d2-ab3a-60fe2EXAMPLE",
+            "id": "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "cache": {
                 "type": "NO_CACHE"
             },
-            "sourceVersion": "arn:aws:s3:::codepipeline-us-west-2-820783811474/CodeBuild-Python-Pip/SourceArti/1TspnN3.zip",
+            "sourceVersion": "arn:aws:s3:::amzn-s3-demo-bucket1/CodeBuild-Python-Pip/SourceArti/1TspnN3.zip",
             "endTime": 1548717536.846,
-            "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:e9c4f4df-3f43-41d2-ab3a-60fe2EXAMPLE",
+            "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "queuedTimeoutInMinutes": 480,
             "resolvedSourceVersion": "f2194c1757bbdcb0f8f229254a4b3c8b27d43e0b"
         },
@@ -429,7 +431,7 @@ Output:
             "artifacts": {
                 "md5sum": "",
                 "overrideArtifactName": false,
-                "location": "arn:aws:s3:::my-artifacts/codebuild-demo-project",
+                "location": "arn:aws:s3:::amzn-s3-demo-bucket2/codebuild-demo-project",
                 "encryptionDisabled": false,
                 "sha256sum": ""
             },
@@ -440,9 +442,9 @@ Output:
                 "s3Logs": {
                     "status": "DISABLED"
                 },
-                "streamName": "4dea3ca4-20ec-4898-b22a-a9eb9292775d",
+                "streamName": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                 "groupName": "/aws/codebuild/codebuild-demo-project",
-                "deepLink": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEvent:group=/aws/codebuild/codebuild-demo-project;stream=4dea3ca4-20ec-4898-b22a-a9eb9292775d"
+                "deepLink": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEvent:group=/aws/codebuild/codebuild-demo-project;stream=a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
             },
             "timeoutInMinutes": 60,
             "environment": {
@@ -590,11 +592,11 @@ Output:
             "startTime": 1548716241.89,
             "secondarySourceVersions": [],
             "initiator": "my-codebuild-project",
-            "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:815e755f-bade-4a7e-80f0-efe51EXAMPLE",
+            "arn": "arn:aws:codebuild:us-west-2:123456789012:build/codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "encryptionKey": "arn:aws:kms:us-west-2:123456789012:alias/aws/s3",
             "serviceRole": "arn:aws:iam::123456789012:role/service-role/my-codebuild-service-role",
             "currentPhase": "COMPLETED",
-            "id": "codebuild-demo-project:815e755f-bade-4a7e-80f0-efe51EXAMPLE",
+            "id": "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "cache": {
                 "type": "NO_CACHE"
             },
@@ -606,7 +608,7 @@ Output:
     ]
 }
 ```
-For more information, see [View Build Details (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/view-build-details.html#view-build-details-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [View build details in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/view-build-details.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [BatchGetBuilds](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/batch-get-builds.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-projects`
@@ -619,9 +621,11 @@ The following code example shows how to use `batch-get-projects`.
 The following `batch-get-projects` example gets a list of CodeBuild build projects specified by name.
 
 ```
-aws codebuild batch-get-projects --names {{codebuild-demo-project}} {{codebuild-demo-project2}} {{my-other-demo-project}}
+aws codebuild batch-get-projects \
+    --names {{codebuild-demo-project}} {{codebuild-demo-project2}} {{my-other-demo-project}}
 ```
 In the following output, the `projectsNotFound` array lists any build project names that were specified, but not found. The `projects` array lists details for each build project where information was found.
+Output:
 
 ```
 {
@@ -703,7 +707,7 @@ In the following output, the `projectsNotFound` array lists any build project na
     ]
 }
 ```
-For more information, see [View a Build Project's Details (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/view-project-details.html#view-project-details-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [View a build project's details in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/view-project-details.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [BatchGetProjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/batch-get-projects.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-report-groups`
@@ -824,7 +828,7 @@ The following code example shows how to use `create-project`.
 
 **AWS CLI**
 **Example 1: To create an AWS CodeBuild build project**
-The following `create-project` example creates a CodeBuild build project using source files from an S3 bucket
+The following `create-project` example creates a CodeBuild build project using source files from an S3 bucket.
 
 ```
 aws codebuild create-project \
@@ -881,9 +885,10 @@ Output:
 The following `create-project` example creates a CodeBuild build project by passing all of the required parameters in a JSON input file. Create the input file template by running the command with only the `--generate-cli-skeleton parameter`.
 
 ```
-aws codebuild create-project --cli-input-json {{file://create-project.json}}
+aws codebuild create-project \
+    --cli-input-json {{file://create-project.json}}
 ```
-The input JSON file `create-project.json` contains the following content:
+Contents of `create-project.json`:
 
 ```
 {
@@ -936,7 +941,7 @@ Output:
     }
 }
 ```
-For more information, see [Create a Build Project (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/create-project.html#create-project-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Create a build project in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/create-project.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [CreateProject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/create-project.html) in *AWS CLI Command Reference*.
 
 ### `create-report-group`
@@ -952,7 +957,7 @@ The following `create-report-group` example creates a new report group.
 aws codebuild create-report-group \
     --cli-input-json {{file://create-report-group-source.json}}
 ```
-Contents of create-report-group-source.json:
+Contents of `create-report-group-source.json`:
 
 ```
 {
@@ -1050,7 +1055,7 @@ Output:
     }
 }
 ```
-For more information, see [Filter GitHub Webhook Events (SDK)](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-github-pull-request.html#sample-github-pull-request-filter-webhook-events-sdk) in the *AWS CodeBuild User Guide*.
+For more information, see [Run the GitHub pull request and webhook filter sample for CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-github-pull-request.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [CreateWebhook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/create-webhook.html) in *AWS CLI Command Reference*.
 
 ### `delete-build-batch`
@@ -1093,10 +1098,11 @@ The following code example shows how to use `delete-project`.
 The following `delete-project` example deletes the specified CodeBuild build project.
 
 ```
-aws codebuild delete-project --name {{my-project}}
+aws codebuild delete-project \
+    --name {{my-project}}
 ```
 This command produces no output.
-For more information, see [Delete a Build Project (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/delete-project.html) in the *AWS CodeBuild User Guide*.
+For more information, see [Delete build projects in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/delete-project.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [DeleteProject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/delete-project.html) in *AWS CLI Command Reference*.
 
 ### `delete-report-group`
@@ -1143,7 +1149,8 @@ The following code example shows how to use `delete-source-credentials`.
 The following `delete-source-credentials` example disconnects from a source provider and removes its tokens. The ARN of source credentials used to connect to the source provider determines which source credentials.
 
 ```
-aws codebuild delete-source-credentials --arn {{arn-of-your-credentials}}
+aws codebuild delete-source-credentials \
+    --arn {{arn-of-your-credentials}}
 ```
 Output:
 
@@ -1152,7 +1159,7 @@ Output:
     "arn": "arn:aws:codebuild:your-region:your-account-id:token/your-server-type"
 }
 ```
-For more information, see [Connect Source Providers with Access Tokens (CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-access-tokens.html#sample-access-tokens-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Access your source provider in CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [DeleteSourceCredentials](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/delete-source-credentials.html) in *AWS CLI Command Reference*.
 
 ### `delete-webhook`
@@ -1165,10 +1172,11 @@ The following code example shows how to use `delete-webhook`.
 The following `delete-webhook` example deletes a webhook from the specified CodeBuild project.
 
 ```
-aws codebuild delete-webhook --project-name {{my-project}}
+aws codebuild delete-webhook \
+    --project-name {{my-project}}
 ```
 This command produces no output.
-For more information, see [Stop Running Builds Automatically (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/run-build.html#run-build-cli-auto-stop) in the *AWS CodeBuild User Guide*.
+For more information, see [Use webhooks with AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/webhooks.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [DeleteWebhook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/delete-webhook.html) in *AWS CLI Command Reference*.
 
 ### `describe-code-coverages`
@@ -1190,8 +1198,8 @@ Output:
 {
     "codeCoverages": [
         {
-            "id": "20a0adcc-db13-4b66-804b-ecaf9f852855",
-            "reportARN": "arn:aws:codebuild:<region-ID>:972506530580:report/<report-group-name>:<report-ID>",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "reportARN": "arn:aws:codebuild:<region-ID>:123456789012:report/<report-group-name>:<report-ID>",
             "filePath": "<source-file-1-path>",
             "lineCoveragePercentage": 83.33,
             "linesCovered": 5,
@@ -1202,8 +1210,8 @@ Output:
             "expired": "2020-11-20T21:22:45+00:00"
         },
         {
-            "id": "0887162d-bf57-4cf1-a164-e432373d1a83",
-            "reportARN": "arn:aws:codebuild:<region-ID>:972506530580:report/<report-group-name>:<report-ID>",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "reportARN": "arn:aws:codebuild:<region-ID>:123456789012:report/<report-group-name>:<report-ID>",
             "filePath": "<source-file-2-path>",
             "lineCoveragePercentage": 90.9,
             "linesCovered": 10,
@@ -1269,11 +1277,15 @@ For more information, see [Working with test reporting in AWS CodeBuild](https:/
 The following code example shows how to use `import-source-credentials`.
 
 **AWS CLI**
-**Connect an AWS CodeBuild user to a source provider by importing credentials for the source provider.**
+**To connect an AWS CodeBuild user to a source provider by importing credentials for the source provider**
 The following `import-source-credentials` example imports a token for a Bitbucket repository that uses BASIC\_AUTH for its authentication type.
 
 ```
-aws codebuild import-source-credentials --server-type {{BITBUCKET}} --auth-type {{BASIC_AUTH}} --token {{my-Bitbucket-password}} --username {{my-Bitbucket-username}}
+aws codebuild import-source-credentials \
+    --server-type {{BITBUCKET}} \
+    --auth-type {{BASIC_AUTH}} \
+    --token {{my-Bitbucket-password}} \
+    --username {{my-Bitbucket-username}}
 ```
 Output:
 
@@ -1282,7 +1294,7 @@ Output:
     "arn": "arn:aws:codebuild:us-west-2:123456789012:token/bitbucket"
 }
 ```
-For more information, see [Connect Source Providers with Access Tokens (CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-access-tokens.html#sample-access-tokens-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Access your source provider in CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ImportSourceCredentials](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/import-source-credentials.html) in *AWS CLI Command Reference*.
 
 ### `invalidate-project-cache`
@@ -1295,10 +1307,11 @@ The following code example shows how to use `invalidate-project-cache`.
 The following `invalidate-project-cache` example resets the cache for the specified CodeBuild project.
 
 ```
-aws codebuild invalidate-project-cache --project-name {{my-project}}
+aws codebuild invalidate-project-cache \
+    --project-name {{my-project}}
 ```
 This command produces no output.
-For more information, see [Build Caching in CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-caching.html) in the *AWS CodeBuild User Guide*.
+For more information, see [Cache builds to improve performance](https://docs.aws.amazon.com/codebuild/latest/userguide/build-caching.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [InvalidateProjectCache](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/invalidate-project-cache.html) in *AWS CLI Command Reference*.
 
 ### `list-build-batches-for-project`
@@ -1349,7 +1362,7 @@ Output:
     ]
 }
 ```
-For more information, see Batch builds in AWS CodeBuild <https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.html>)\_\_ in the *AWS CodeBuild User Guide*.
+For more information, see [Run builds in batches](https://docs.aws.amazon.com/codebuild/latest/userguide/batch-build.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ListBuildBatches](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/list-build-batches.html) in *AWS CLI Command Reference*.
 
 ### `list-builds-for-project`
@@ -1362,22 +1375,24 @@ The following code example shows how to use `list-builds-for-project`.
 The following `list-builds-for-project` example lists the build IDs in descending order for the specified CodeBuild build project.
 
 ```
-aws codebuild list-builds-for-project --project-name {{codebuild-demo-project}} --sort-order {{DESCENDING}}
+aws codebuild list-builds-for-project \
+    --project-name {{codebuild-demo-project}} \
+    --sort-order {{DESCENDING}}
 ```
 Output:
 
 ```
 {
     "ids": [
-        "codebuild-demo-project:1a2b3c4d-5678-90ab-cdef-11111example",
-        "codebuild-demo-project:1a2b3c4d-5678-90ab-cdef-22222example",
-        "codebuild-demo-project:1a2b3c4d-5678-90ab-cdef-33333example",
-        "codebuild-demo-project:1a2b3c4d-5678-90ab-cdef-44444example",
-        "codebuild-demo-project:1a2b3c4d-5678-90ab-cdef-55555example"
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
     ]
 }
 ```
-For more information, see [View a List of Build IDs for a Build Project (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/view-builds-for-project.html#view-builds-for-project-cli) in the *AWS CodeBuild User Guide*
+For more information, see [View a list of build IDs for a build project in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/view-builds-for-project.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ListBuildsForProject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/list-builds-for-project.html) in *AWS CLI Command Reference*.
 
 ### `list-builds`
@@ -1390,39 +1405,41 @@ The following code example shows how to use `list-builds`.
 The following `list-builds` example gets a list of CodeBuild IDs sorted in ascending order.
 
 ```
-aws codebuild list-builds --sort-order {{ASCENDING}}
+aws codebuild list-builds \
+    --sort-order {{ASCENDING}}
 ```
 The output includes a `nextToken` value which indicates that there is more output available.
+Output:
 
 ```
 {
     "nextToken": "4AEA6u7J...The full token has been omitted for brevity...MzY2OA==",
     "ids": [
-        "codebuild-demo-project:815e755f-bade-4a7e-80f0-efe51EXAMPLE"
-        "codebuild-demo-project:84a7f3d1-d40e-4956-b4cf-7a9d4EXAMPLE"
-            ... The full list of build IDs has been omitted for brevity ...
-        "codebuild-demo-project:931d0b72-bf6f-4040-a472-5c707EXAMPLE"
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
     ]
 }
 ```
 Run this command again and provide the `nextToken` value in the previous response as a parameter to get the next part of the output. Repeat until you don't receive a `nextToken` value in the response.
 
 ```
-aws codebuild list-builds --sort-order {{ASCENDING}} --next-token {{4AEA6u7J...The}} {{full}} {{token}} {{has}} {{been}} {{omitted}} {{for}} {{brevity...MzY2OA==}}
+aws codebuild list-builds \
+    --sort-order {{ASCENDING}} \
+    --next-token {{4AEA6u7J...The}} {{full}} {{token}} {{has}} {{been}} {{omitted}} {{for}} {{brevity...MzY2OA==}}
 ```
-Next part of the output:
+Output:
 
 ```
 {
     "ids": [
-        "codebuild-demo-project:49015049-21cf-4b50-9708-df115EXAMPLE",
-        "codebuild-demo-project:543e7206-68a3-46d6-a4da-759abEXAMPLE",
-            ... The full list of build IDs has been omitted for brevity ...
-        "codebuild-demo-project:c282f198-4582-4b38-bdc0-26f96EXAMPLE"
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+        "codebuild-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
     ]
 }
 ```
-For more information, see [View a List of Build IDs (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/view-build-list.html) in the *AWS CodeBuild User Guide*
+For more information, see [View a list of build IDs in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/view-build-list.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ListBuilds](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/list-builds.html) in *AWS CLI Command Reference*.
 
 ### `list-curated-environment-images`
@@ -1432,7 +1449,7 @@ The following code example shows how to use `list-curated-environment-images`.
 
 **AWS CLI**
 **To get a list of Docker images managed by AWS CodeBuild that you can use for your builds.**
-The following `list-curated-environment-images` example lists the Docker images managed by CodeBuild that can be used for builds.:
+The following `list-curated-environment-images` example lists the Docker images managed by CodeBuild that can be used for builds.
 
 ```
 aws codebuild list-curated-environment-images
@@ -1461,8 +1478,7 @@ Output:
                             "versions": [
                                 "aws/codebuild/eb-java-8-amazonlinux-64:2.1.3-1.0.0"
                             ]
-                        },
-                        ... LIST TRUNCATED FOR BREVITY ...
+                        }
                     ]
                 }
             ]
@@ -1470,7 +1486,7 @@ Output:
     ]
 }
 ```
-For more information, see [Docker Images Provided by CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) in the *AWS CodeBuild User Guide*
+For more information, see [Docker images provided by CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-env-ref-available.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ListCuratedEnvironmentImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/list-curated-environment-images.html) in *AWS CLI Command Reference*.
 
 ### `list-projects`
@@ -1483,9 +1499,11 @@ The following code example shows how to use `list-projects`.
 The following `list-projects` example gets a list of CodeBuild build projects sorted by name in ascending order.
 
 ```
-aws codebuild list-projects --sort-by {{NAME}} --sort-order {{ASCENDING}}
+aws codebuild list-projects \
+    --sort-by {{NAME}} \
+    --sort-order {{ASCENDING}}
 ```
-The output includes a `nextToken` value which indicates that there is more output available.
+Output:
 
 ```
 {
@@ -1493,26 +1511,31 @@ The output includes a `nextToken` value which indicates that there is more outpu
     "projects": [
         "codebuild-demo-project",
         "codebuild-demo-project2",
-            ... The full list of build project names has been omitted for brevity ...
         "codebuild-demo-project99"
     ]
 }
 ```
+The output includes a `nextToken` value which indicates that there is more output available.
 Run this command again and provide the `nextToken` value from the previous response as a parameter to get the next part of the output. Repeat until you don't receive a `nextToken` value in the response.
 
 ```
-aws codebuild list-projects  --sort-by {{NAME}} --sort-order {{ASCENDING}} --next-token {{Ci33ACF6...The}} {{full}} {{token}} {{has}} {{been}} {{omitted}} {{for}} {{brevity...U+AkMx8=}}
+aws codebuild list-projects \
+    --sort-by {{NAME}} \
+    --sort-order {{ASCENDING}} \
+    --next-token {{Ci33ACF6...The}} {{full}} {{token}} {{has}} {{been}} {{omitted}} {{for}} {{brevity...U+AkMx8=}}
+```
+Output:
 
-{{{}}
-    "projects": {{[}}
+```
+{
+    "projects": [
         "codebuild-demo-project100",
         "codebuild-demo-project101",
-            {{...}} {{The}} {{full}} {{list}} {{of}} {{build}} {{project}} {{names}} {{has}} {{been}} {{omitted}} {{for}} {{brevity}} {{...}}
-        {{"codebuild-demo-project122"}}
-    {{]}}
-{{}}}
+        "codebuild-demo-project122"
+    ]
+}
 ```
-For more information, see [View a List of Build Project Names (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/view-project-list.html#view-project-list-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [View build project names in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/view-project-list.html#view-project-list-cli) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ListProjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/list-projects.html) in *AWS CLI Command Reference*.
 
 ### `list-report-groups`
@@ -1548,7 +1571,7 @@ The following code example shows how to use `list-reports-for-report-group`.
 
 **AWS CLI**
 **To get a list of the reports in a report group in AWS CodeBuild.**
-The following `list-report-for-report-groups` example retrieves the reports in the specified report group for the account in the region.
+The following `list-reports-for-report-group` example retrieves the reports in the specified report group for the account in the region.
 
 ```
 aws codebuild list-reports-for-report-group \
@@ -1675,7 +1698,7 @@ Output:
     ]
 }
 ```
-For more information, see [Connect Source Providers with Access Tokens (CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/sample-access-tokens.html#sample-access-tokens-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Access your source provider in CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [ListSourceCredentials](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/list-source-credentials.html) in *AWS CLI Command Reference*.
 
 ### `retry-build-batch`
@@ -2027,7 +2050,7 @@ The following `start-build` example starts a build for the specified CodeBuild p
 aws codebuild start-build \
     --project-name {{"my-demo-project"}} \
     --queued-timeout-in-minutes-override {{5}} \
-    --artifacts-override {"\"type\": \"S3\",\"location\": \"arn:aws:s3:::artifacts-override\",\"overrideArtifactName\":true"}
+    --artifacts-override {"\"type\": \"S3\",\"location\": \"arn:aws:s3:::amzn-s3-demo-bucket\",\"overrideArtifactName\":true"}
 ```
 Output:
 
@@ -2074,19 +2097,19 @@ Output:
         },
         "artifacts": {
             "encryptionDisabled": false,
-            "location": "arn:aws:s3:::artifacts-override/my-demo-project",
+            "location": "arn:aws:s3:::amzn-s3-demo-bucket/my-demo-project",
             "overrideArtifactName": true
         },
         "cache": {
             "type": "NO_CACHE"
         },
-        "id": "my-demo-project::12345678-a1b2-c3d4-e5f6-11111EXAMPLE",
+        "id": "my-demo-project::a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "initiator": "my-aws-account-name",
-        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/my-demo-project::12345678-a1b2-c3d4-e5f6-11111EXAMPLE"
+        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/my-demo-project::a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
-For more information, see [Run a Build (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/run-build.html#run-build-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Run a build (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/run-build-cli.html) in the *AWS CodeBuild User Guide*.
 +  For API details, see [StartBuild](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/start-build.html) in *AWS CLI Command Reference*.
 
 ### `stop-build-batch`
@@ -2257,7 +2280,8 @@ The following code example shows how to use `stop-build`.
 The following `stop-build` example stops the specified CodeBuild build.
 
 ```
-aws codebuild stop-build --id {{my-demo-project:12345678-a1b2-c3d4-e5f6-11111EXAMPLE}}
+aws codebuild stop-build \
+    --id {{my-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -2276,7 +2300,7 @@ Output:
             "location": "codebuild-us-west-2-123456789012-input-bucket/my-source.zip",
             "type": "S3"
         },
-        "id": "my-demo-project:1a2b3c4d-5678-90ab-cdef-11111EXAMPLE",
+        "id": "my-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "endTime": 1556906974.781,
         "phases": [
             {
@@ -2358,7 +2382,7 @@ Output:
             }
         ],
         "artifacts": {
-            "location": "arn:aws:s3:::artifacts-override/my-demo-project",
+            "location": "arn:aws:s3:::amzn-s3-demo-bucket/my-demo-project",
             "encryptionDisabled": false,
             "overrideArtifactName": true
         },
@@ -2377,15 +2401,15 @@ Output:
             "imagePullCredentialsType": "CODEBUILD"
         },
         "logs": {
-            "streamName": "1a2b3c4d-5678-90ab-cdef-11111EXAMPLE",
-            "deepLink": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEvent:group=/aws/codebuild/my-demo-project;stream=1a2b3c4d-5678-90ab-cdef-11111EXAMPLE",
+            "streamName": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "deepLink": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEvent:group=/aws/codebuild/my-demo-project;stream=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "groupName": "/aws/codebuild/my-demo-project"
         },
-        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/my-demo-project:1a2b3c4d-5678-90ab-cdef-11111EXAMPLE"
+        "arn": "arn:aws:codebuild:us-west-2:123456789012:build/my-demo-project:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
-For more information, see [Stop a Build (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/stop-build.html#stop-build-cli) in the *AWS CodeBuild User Guide*.
+For more information, see [Stop builds in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/stop-build.html#stop-build-cli) in the *AWS CodeBuild User Guide*.
 +  For API details, see [StopBuild](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/stop-build.html) in *AWS CLI Command Reference*.
 
 ### `update-project`
@@ -2398,14 +2422,15 @@ The following code example shows how to use `update-project`.
 The following `update-project` example changes the settings of the specified CodeBuild build project named my-demo-project.
 
 ```
-aws codebuild update-project --name {{"my-demo-project"}} \
+aws codebuild update-project \
+    --name {{"my-demo-project"}} \
     --description {{"This project is updated"}} \
     --source "{\"type\": \"S3\",\"location\": \"codebuild-us-west-2-123456789012-input-bucket/my-source-2.zip\"}" \
     --artifacts {"\"type\": \"S3\",\"location\": \"codebuild-us-west-2-123456789012-output-bucket-2\""} \
     --environment "{\"type\": \"LINUX_CONTAINER\",\"image\": \"aws/codebuild/standard:1.0\",\"computeType\": \"BUILD_GENERAL1_MEDIUM\"}" \
     --service-role {{"arn:aws:iam::123456789012:role/service-role/my-codebuild-service-role"}}
 ```
-The output displays the updated settings.
+Output:
 
 ```
 {
@@ -2450,7 +2475,7 @@ The output displays the updated settings.
     }
 }
 ```
-For more information, see [Change a Build Project's Settings (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/change-project.html#change-project-cli) in the *AWS CodeBuild User Guide*
+For more information, see [Change build project settings in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/change-project.html#change-project-cli) in the *AWS CodeBuild User Guide*.
 +  For API details, see [UpdateProject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/update-project.html) in *AWS CLI Command Reference*.
 
 ### `update-report-group`
@@ -2540,5 +2565,5 @@ Output:
     }
 }
 ```
-For more information, see [Change a Build Project's Settings (AWS CLI)](https://docs.aws.amazon.com/codebuild/latest/userguide/change-project.html#change-project-cli) in the *AWS CodeBuild User Guide*
+For more information, see [Change build project settings in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/change-project.html#change-project-cli) in the *AWS CodeBuild User Guide*.
 +  For API details, see [UpdateWebhook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codebuild/update-webhook.html) in *AWS CLI Command Reference*.

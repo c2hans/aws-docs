@@ -77,7 +77,7 @@ The permission granted. Exactly one permission is granted per access grant.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Principal`  <a name="cfn-cloudwatch-accessgrant-principal"></a>
-Property description not available.
+The principal receiving the grant.
 *Required*: Yes
 *Type*: [AccessGrantPrincipal](aws-properties-cloudwatch-accessgrant-accessgrantprincipal.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

@@ -94,10 +94,10 @@ Output:
         "LastUpdatedTimeStamp": 1595634764.029,
         "ProviderType": "CodeCommit",
         "CreatedTimeStamp": 1595634764.029,
-        "Owner": "544120495673",
+        "Owner": "123456789012",
         "State": "Associating",
         "StateReason": "Pending Repository Association",
-        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:544120495673:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -111,7 +111,7 @@ The following code example shows how to use `create-code-review`.
 
 **AWS CLI**
 **To create a code review.**
-The following `create-code-review` creates a review of code in the `mainline` branch of an AWS CodeCommit repository that is named `my-repository-name`.
+The following `create-code-review` example creates a review of code in the `mainline` branch of an AWS CodeCommit repository that is named `my-repository-name`.
 
 ```
 aws codeguru-reviewer create-code-review \
@@ -152,38 +152,36 @@ For more information, see [Create code reviews in Amazon CodeGuru Reviewer](http
 The following code example shows how to use `describe-code-review`.
 
 **AWS CLI**
-**List details about a code review.**
-The following `describe-code-review` lists information about a review of code in the "mainline" branch of an AWS CodeCommit repository that is named "my-repo-name".
+**To list details about a code review**
+The following `describe-code-review` example lists information about a review of code in the "mainline" branch of an AWS CodeCommit repository that is named "my-repo-name".
 
 ```
-aws codeguru-reviewer put-recommendation-feedback \
-    --code-review-arn {{arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:code-review:RepositoryAnalysis-my-repository-name-branch-abcdefgh12345678}} \
-    --recommendation-id {{3be1b2e5d7ef6e298a06499379ee290c9c596cf688fdcadb08285ddb0dd390eb}} \
-    --reactions {{ThumbsUp}}
+aws codeguru-reviewer describe-code-review \
+    --code-review-arn {{arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:code-review:RepositoryAnalysis-my-repo-name}}
 ```
-Output
+Output:
 
 ```
 {
-        "CodeReview": {
-            "Name": "My-ecs-beta-repo-master-xs6di4kfd4j269dz",
-            "CodeReviewArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:code-review:RepositoryAnalysis-my-repo-name",
-            "RepositoryName": "My-ecs-beta-repo",
-            "Owner": "123456789012",
-            "ProviderType": "CodeCommit",
-            "State": "Pending",
-            "StateReason": "CodeGuru Reviewer is reviewing the source code.",
-            "CreatedTimeStamp": 1618874226.226,
-            "LastUpdatedTimeStamp": 1618874233.689,
-            "Type": "RepositoryAnalysis",
-            "SourceCodeType": {
-                "RepositoryHead": {
-                    "BranchName": "mainline"
-                }
-            },
-            "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
-        }
+    "CodeReview": {
+        "Name": "My-ecs-beta-repo-master-xs6di4kfd4j269dz",
+        "CodeReviewArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:code-review:RepositoryAnalysis-my-repo-name",
+        "RepositoryName": "My-ecs-beta-repo",
+        "Owner": "123456789012",
+        "ProviderType": "CodeCommit",
+        "State": "Pending",
+        "StateReason": "CodeGuru Reviewer is reviewing the source code.",
+        "CreatedTimeStamp": 1618874226.226,
+        "LastUpdatedTimeStamp": 1618874233.689,
+        "Type": "RepositoryAnalysis",
+        "SourceCodeType": {
+            "RepositoryHead": {
+                "BranchName": "mainline"
+            }
+        },
+        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
+}
 ```
 For more information, see [View code review details](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/view-code-review-details.html) in the *Amazon CodeGuru Reviewer User Guide*.
 +  For API details, see [DescribeCodeReview](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeguru-reviewer/describe-code-review.html) in *AWS CLI Command Reference*.
@@ -195,7 +193,7 @@ The following code example shows how to use `describe-recommendation-feedback`.
 
 **AWS CLI**
 **To view information about feedback on a recommendation**
-The following `describe-recommendation-feedback` displays information about feedback on a recommendation. This recommendation has one `ThumbsUp` reaction.
+The following `describe-recommendation-feedback` example displays information about feedback on a recommendation. This recommendation has one `ThumbsUp` reaction.
 
 ```
 aws codeguru-reviewer describe-recommendation-feedback \
@@ -239,7 +237,7 @@ Output:
 ```
 {
     "RepositoryAssociation": {
-        "AssociationId": "b822717e-0711-4e8a-bada-0e738289c75e",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name": "mySampleRepo",
         "LastUpdatedTimeStamp": 1588102637.649,
         "ProviderType": "GitHub",
@@ -272,7 +270,7 @@ Output:
         "ConnectionArn": "arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "State": "Failed",
         "StateReason": "Failed, Please retry.",
-        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Owner": "sample-owner"
     }
 }
@@ -298,7 +296,7 @@ Output:
         "ConnectionArn": "arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "State": "Disassociating",
         "StateReason": "Source code access removal in progress",
-        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "AssociationArn": "arn:aws:codeguru-reviewer:us-west-2:123456789012:association:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Owner": "sample-owner"
     }
 }
@@ -313,7 +311,7 @@ The following code example shows how to use `disassociate-repository`.
 
 **AWS CLI**
 **To disassociate a repository association**
-The following `disassociate-repository` disassociates a repository association that is using an AWS CodeCommit repository.
+The following `disassociate-repository` example disassociates a repository association that is using an AWS CodeCommit repository.
 
 ```
 aws codeguru-reviewer disassociate-repository \
@@ -469,7 +467,7 @@ The following code example shows how to use `list-recommendation-feedback`.
 
 **AWS CLI**
 **To list customer recommendation feedback for a recommendation on an associated repository**
-The following `list-recommendation-feedback` Lists customer feedback on all recommendations on a code review. This code review has one piece of feedback, a "ThumbsUp", from a customer.
+The following `list-recommendation-feedback` example lists customer feedback on all recommendations on a code review. This code review has one piece of feedback, a "ThumbsUp", from a customer.
 
 ```
 aws codeguru-reviewer list-recommendation-feedback \
@@ -504,7 +502,7 @@ The following `list-recommendations` example lists the recommendations for a com
 
 ```
 aws codeguru-reviewer list-recommendations \
-    --code-review-arn {{arn:aws:codeguru-reviewer:us-west-2:544120495673:code-review:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
+    --code-review-arn {{arn:aws:codeguru-reviewer:us-west-2:123456789012:code-review:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -608,7 +606,7 @@ The following code example shows how to use `list-tags-for-resource`.
 
 **AWS CLI**
 **To list the tags on an associated repository**
-The following `list-tags-for-resource` lists the tags on an associated repository. This associated repository has two tags.
+The following `list-tags-for-resource` example lists the tags on an associated repository. This associated repository has two tags.
 
 ```
 aws codeguru-reviewer list-tags-for-resource \
@@ -634,7 +632,7 @@ The following code example shows how to use `put-recommendation-feedback`.
 
 **AWS CLI**
 **To add a recommendation to a code review**
-The following `put-recommendation-feedback` puts a `ThumbsUp` recommendation on a code review.
+The following `put-recommendation-feedback` example puts a `ThumbsUp` recommendation on a code review.
 
 ```
 aws codeguru-reviewer put-recommendation-feedback \
@@ -653,7 +651,7 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To add a tag to an associated repository**
-The following `tag-resource` adds two tags to an associated repository
+The following `tag-resource` example adds two tags to an associated repository.
 
 ```
 aws codeguru-reviewer tag-resource \
@@ -671,7 +669,7 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To untag an associated repository**
-The following `untag-resource` removes two tags with keys "Secret" and "Team" from an associated repository.
+The following `untag-resource` example removes two tags with keys "Secret" and "Team" from an associated repository.
 
 ```
 aws codeguru-reviewer untag-resource \

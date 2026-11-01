@@ -14,11 +14,12 @@ The following code examples show how to use `ModifyLoadBalancerAttributes`.
 
 **AWS CLI**
 **To modify the attributes of a load balancer**
-This example modifies the `CrossZoneLoadBalancing` attribute of the specified load balancer.
-Command:
+The following `modify-load-balancer-attributes` example modifies the `CrossZoneLoadBalancing` attribute of the specified load balancer.
 
 ```
-aws elb modify-load-balancer-attributes --load-balancer-name {{my-load-balancer}} --load-balancer-attributes "{\"CrossZoneLoadBalancing\":{\"Enabled\":true}}"
+aws elb modify-load-balancer-attributes \
+    --load-balancer-name {{my-load-balancer}} \
+    --load-balancer-attributes "{\"CrossZoneLoadBalancing\":{\"Enabled\":true}}"
 ```
 Output:
 
@@ -32,11 +33,13 @@ Output:
     "LoadBalancerName": "my-load-balancer"
 }
 ```
-This example modifies the `ConnectionDraining` attribute of the specified load balancer.
-Command:
+For more information, see [Configure cross-zone load balancing for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/enable-disable-crosszone-lb.html) in the *Classic Load Balancers Guide*.
+The following `modify-load-balancer-attributes` example modifies the `ConnectionDraining` attribute of the specified load balancer.
 
 ```
-aws elb modify-load-balancer-attributes --load-balancer-name {{my-load-balancer}} --load-balancer-attributes "{\"ConnectionDraining\":{\"Enabled\":true,\"Timeout\":300}}"
+aws elb modify-load-balancer-attributes \
+    --load-balancer-name {{my-load-balancer}} \
+    --load-balancer-attributes "{\"ConnectionDraining\":{\"Enabled\":true,\"Timeout\":300}}"
 ```
 Output:
 
@@ -51,6 +54,7 @@ Output:
     "LoadBalancerName": "my-load-balancer"
 }
 ```
+For more information, see [Configure connection draining for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/config-conn-drain.html) in the *Classic Load Balancers Guide*.
 +  For API details, see [ModifyLoadBalancerAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/modify-load-balancer-attributes.html) in *AWS CLI Command Reference*.
 
 ------

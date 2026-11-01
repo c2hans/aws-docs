@@ -26,11 +26,11 @@ The following code example shows how to use `create-aws-log-source`.
 
 **AWS CLI**
 **To add a natively supported Amazon Web Service as an Amazon Security Lake source**
-The following `create-aws-logsource` example adds VPC Flow Logs as a Security Lake source in the designated accounts and Regions.
+The following `create-aws-log-source` example adds VPC Flow Logs as a Security Lake source in the designated accounts and Regions.
 
 ```
 aws securitylake create-aws-log-source \
-    --sources '{{[{"regions": ["us-east-1"], "accounts": ["123456789012"], "sourceName": "SH_FINDINGS", "sourceVersion": "2.0"}]}}'
+    --sources '{{[{"regions": ["us-west-2"], "accounts": ["123456789012"], "sourceName": "SH_FINDINGS", "sourceVersion": "2.0"}]}}'
 ```
 Output:
 
@@ -51,34 +51,34 @@ The following code example shows how to use `create-custom-log-source`.
 
 **AWS CLI**
 **To add a custom source as an Amazon Security Lake source**
-The following `create-custom-logsource` example adds a custom source as a Security Lake source in the designated log provider account and the designated Region.
+The following `create-custom-log-source` example adds a custom source as a Security Lake source in the designated log provider account and the designated Region.
 
 ```
 aws securitylake create-custom-log-source \
     --source-name {{"VPC_FLOW"}} \
     --event-classes '{{["DNS_ACTIVITY", "NETWORK_ACTIVITY"]}}' \
-    --configuration '{{{"crawlerConfiguration": {"roleArn": "arn:aws:glue:eu-west-2:123456789012:crawler/E1WG1ZNPRXT0D4"},"providerIdentity": {"principal": "029189416600","externalId": "123456789012"}}}}' --region {{"us-east-1"}}
+    --configuration '{{{"crawlerConfiguration": {"roleArn": "arn:aws:glue:us-west-2:123456789012:crawler/E1WG1ZNPRXT0D4"},"providerIdentity": {"principal": "123456789111","externalId": "123456789012"}}}}'
 ```
 Output:
 
 ```
 {
-    "customLogSource": {
+    "source": {
         "attributes": {
-            "crawlerArn": "arn:aws:glue:eu-west-2:123456789012:crawler/E1WG1ZNPRXT0D4",
-            "databaseArn": "arn:aws:glue:eu-west-2:123456789012:database/E1WG1ZNPRXT0D4",
-            "tableArn": "arn:aws:glue:eu-west-2:123456789012:table/E1WG1ZNPRXT0D4"
+            "crawlerArn": "arn:aws:glue:us-west-2:123456789012:crawler/E1WG1ZNPRXT0D4",
+            "databaseArn": "arn:aws:glue:us-west-2:123456789012:database/E1WG1ZNPRXT0D4",
+            "tableArn": "arn:aws:glue:us-west-2:123456789012:table/E1WG1ZNPRXT0D4"
         },
         "provider": {
             "location": "amzn-s3-demo-bucket--usw2-az1--x-s3",
             "roleArn": "arn:aws:iam::123456789012:role/AmazonSecurityLake-Provider-testCustom2-eu-west-2"
         },
-        "sourceName": "testCustom2"
+        "sourceName": "testCustom2",
         "sourceVersion": "2.0"
     }
 }
 ```
-For more information, see [Adding a custom source](https://docs.aws.amazon.com/security-lake/latest/userguide/custom-sources.html#adding-custom-sources) in the *Amazon Security Lake User Guide*.
+For more information, see [Adding a custom source](https://docs.aws.amazon.com/security-lake/latest/userguide/adding-custom-sources.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [CreateCustomLogSource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-custom-log-source.html) in *AWS CLI Command Reference*.
 
 ### `create-data-lake-exception-subscription`
@@ -97,7 +97,7 @@ aws securitylake create-data-lake-exception-subscription \
     --subscription-protocol {{"sms"}}
 ```
 This command produces no output.
-For more information, see [Troubleshooting Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/security-lake-troubleshoot.html#securitylake-data-lake-troubleshoot) in the *Amazon Security Lake User Guide*.
+For more information, see [Troubleshooting Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/securitylake-data-lake-troubleshoot.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [CreateDataLakeExceptionSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-data-lake-exception-subscription.html) in *AWS CLI Command Reference*.
 
 ### `create-data-lake-organization-configuration`
@@ -111,7 +111,7 @@ The following `create-data-lake-organization-configuration` example enables Secu
 
 ```
 aws securitylake create-data-lake-organization-configuration \
-    --auto-enable-new-account '{{[{"region":"us-east-1","sources":[{"sourceName":"SH_FINDINGS","sourceVersion": "1.0"}]}]}}'
+    --auto-enable-new-account '{{[{"region":"us-west-2","sources":[{"sourceName":"SH_FINDINGS","sourceVersion": "1.0"}]}]}}'
 ```
 This command produces no output.
 For more information, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/security-lake/latest/userguide/multi-account-management.html) in the *Amazon Security Lake User Guide*.
@@ -138,7 +138,7 @@ Output:
     "dataLakes": [
         {
             "createStatus": "COMPLETED",
-            "dataLakeArn": "arn:aws:securitylake:us-east-1:522481757177:data-lake/default",
+            "dataLakeArn": "arn:aws:securitylake:us-east-1:123456789012:data-lake/default",
             "encryptionConfiguration": {
                 "kmsKeyId": "S3_MANAGED_KEY"
             },
@@ -158,18 +158,18 @@ Output:
                 "regions": [
                     "ap-northeast-3"
                 ],
-                "roleArn": "arn:aws:securitylake:ap-northeast-3:522481757177:data-lake/default"
+                "roleArn": "arn:aws:securitylake:ap-northeast-3:123456789012:data-lake/default"
             },
             "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-1-gnevt6s8z7bzby8oi3uiaysbr8v2ml",
             "updateStatus": {
                 "exception": {},
-                "requestId": "f20a6450-d24a-4f87-a6be-1d4c075a59c2",
+                "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "status": "INITIALIZED"
             }
         },
         {
             "createStatus": "COMPLETED",
-            "dataLakeArn": "arn:aws:securitylake:us-east-2:522481757177:data-lake/default",
+            "dataLakeArn": "arn:aws:securitylake:us-east-2:123456789012:data-lake/default",
             "encryptionConfiguration": {
                 "kmsKeyId": "S3_MANAGED_KEY"
             },
@@ -189,12 +189,12 @@ Output:
                 "regions": [
                     "ap-northeast-3"
                 ],
-                "roleArn": "arn:aws:securitylake:ap-northeast-3:522481757177:data-lake/default"
+                "roleArn": "arn:aws:securitylake:ap-northeast-3:123456789012:data-lake/default"
             },
             "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-2-cehuifzl5rwmhm6m62h7zhvtseogr9",
             "updateStatus": {
                 "exception": {},
-                "requestId": "f20a6450-d24a-4f87-a6be-1d4c075a59c2",
+                "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "status": "INITIALIZED"
             }
         }
@@ -207,7 +207,7 @@ The following `create-data-lake` example enables Amazon Security Lake in a singl
 
 ```
 aws securitylake create-data-lake \
-    --configurations '{{[{"encryptionConfiguration": {"kmsKeyId":"1234abcd-12ab-34cd-56ef-1234567890ab"},"region":"us-east-2","lifecycleConfiguration": {"expiration":{"days":500},"transitions":[{"days":30,"storageClass":"GLACIER"}]}}]}}' \
+    --configurations '{{[{"encryptionConfiguration": {"kmsKeyId":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"},"region":"us-east-2","lifecycleConfiguration": {"expiration":{"days":500},"transitions":[{"days":30,"storageClass":"GLACIER"}]}}]}}' \
     --meta-store-manager-role-arn {{"arn:aws:iam:us-east-1:123456789012:role/service-role/AmazonSecurityLakeMetaStoreManager"}}
 ```
 Output:
@@ -217,9 +217,9 @@ Output:
     "dataLakes": [
         {
             "createStatus": "COMPLETED",
-            "dataLakeArn": "arn:aws:securitylake:us-east-2:522481757177:data-lake/default",
+            "dataLakeArn": "arn:aws:securitylake:us-east-2:123456789012:data-lake/default",
             "encryptionConfiguration": {
-                "kmsKeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"
+                "kmsKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             },
             "lifecycleConfiguration": {
                 "expiration": {
@@ -237,12 +237,12 @@ Output:
                 "regions": [
                     "ap-northeast-3"
                 ],
-                "roleArn": "arn:aws:securitylake:ap-northeast-3:522481757177:data-lake/default"
+                "roleArn": "arn:aws:securitylake:ap-northeast-3:123456789012:data-lake/default"
             },
             "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-2-cehuifzl5rwmhm6m62h7zhvtseogr9",
             "updateStatus": {
                 "exception": {},
-                "requestId": "77702a53-dcbf-493e-b8ef-518e362f3003",
+                "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "status": "INITIALIZED"
             }
         }
@@ -270,9 +270,7 @@ Output:
 
 ```
 {
-    "subscriberEndpoint": [
-        "https://account-management.$3.$2.securitylake.aws.dev/v1/datalake"
-    ]
+    "subscriberEndpoint": "https://account-management.$3.$2.securitylake.aws.dev/v1/datalake"
 }
 ```
 For more information, see [Subscriber management](https://docs.aws.amazon.com/security-lake/latest/userguide/subscriber-management.html) in the *Amazon Security Lake User Guide*.
@@ -292,7 +290,7 @@ aws securitylake create-subscriber \
     --access-types {{"S3"}} \
     --sources '{{[{"awsLogSource": {"sourceName": "VPC_FLOW","sourceVersion": "2.0"}}]}}' \
     --subscriber-name '{{opensearch-s3}}' \
-    --subscriber-identity '{{{"principal": "029189416600","externalId": "123456789012"}}}'
+    --subscriber-identity '{{{"principal": "123456789111","externalId": "123456789012"}}}'
 ```
 Output:
 
@@ -303,8 +301,8 @@ Output:
             "S3"
         ],
         "createdAt": "2024-07-17T19:08:26.787000+00:00",
-        "roleArn": "arn:aws:iam::773172568199:role/AmazonSecurityLake-896f218b-cfba-40be-a255-8b49a65d0407",
-        "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-1-um632ufwpvxkyz0bc5hkb64atycnf3",
+        "roleArn": "arn:aws:iam::123456789012:role/AmazonSecurityLake-896f218b-cfba-40be-a255-8b49a65d0407",
+        "s3BucketArn": "arn:aws:s3:::amzn-s3-demo-bucket",
         "sources": [
             {
                 "awsLogSource": {
@@ -313,11 +311,11 @@ Output:
                 }
             }
         ],
-        "subscriberArn": "arn:aws:securitylake:us-east-1:773172568199:subscriber/896f218b-cfba-40be-a255-8b49a65d0407",
-        "subscriberId": "896f218b-cfba-40be-a255-8b49a65d0407",
+        "subscriberArn": "arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "subscriberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "subscriberIdentity": {
             "externalId": "123456789012",
-            "principal": "029189416600"
+            "principal": "123456789111"
         },
         "subscriberName": "opensearch-s3",
         "subscriberStatus": "ACTIVE",
@@ -325,7 +323,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a subscriber with data access](https://docs.aws.amazon.com/security-lake/latest/userguide/subscriber-data-access.html#create-subscriber-data-access) in the *Amazon Security Lake User Guide*.
+For more information, see [Creating a subscriber with data access](https://docs.aws.amazon.com/security-lake/latest/userguide/create-subscriber-data-access.html) in the *Amazon Security Lake User Guide*.
 **Example 2: To create a subscriber with query access**
 The following `create-subscriber` example creates a subscriber in Security Lake with query access in the current AWS Region for the specified subscriber identity.
 
@@ -334,7 +332,7 @@ aws securitylake create-subscriber \
     --access-types {{"LAKEFORMATION"}} \
     --sources '{{[{"awsLogSource": {"sourceName": "VPC_FLOW","sourceVersion": "2.0"}}]}}' \
     --subscriber-name '{{opensearch-s3}}' \
-    --subscriber-identity '{{{"principal": "029189416600","externalId": "123456789012"}}}'
+    --subscriber-identity '{{{"principal": "123456789111","externalId": "123456789012"}}}'
 ```
 Output:
 
@@ -345,7 +343,7 @@ Output:
             "LAKEFORMATION"
         ],
         "createdAt": "2024-07-18T01:05:55.853000+00:00",
-        "resourceShareArn": "arn:aws:ram:us-east-1:123456789012:resource-share/8c31da49-c224-4f1e-bb12-37ab756d6d8a",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "resourceShareName": "LakeFormation-V2-NAMENAMENA-123456789012",
         "sources": [
             {
@@ -355,11 +353,11 @@ Output:
                 }
             }
         ],
-        "subscriberArn": "arn:aws:securitylake:us-east-1:123456789012:subscriber/e762aabb-ce3d-4585-beab-63474597845d",
-        "subscriberId": "e762aabb-ce3d-4585-beab-63474597845d",
+        "subscriberArn": "arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "subscriberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "subscriberIdentity": {
             "externalId": "123456789012",
-            "principal": "029189416600"
+            "principal": "123456789111"
         },
         "subscriberName": "opensearch-s3",
         "subscriberStatus": "ACTIVE",
@@ -367,7 +365,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a subscriber with query access](https://docs.aws.amazon.com/security-lake/latest/userguide/subscriber-query-access.html#create-query-subscriber-procedures) in the *Amazon Security Lake User Guide*.
+For more information, see [Creating a subscriber with query access](https://docs.aws.amazon.com/security-lake/latest/userguide/create-query-subscriber-procedures.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [CreateSubscriber](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/create-subscriber.html) in *AWS CLI Command Reference*.
 
 ### `delete-aws-log-source`
@@ -377,11 +375,11 @@ The following code example shows how to use `delete-aws-log-source`.
 
 **AWS CLI**
 **To remove a natively-supported AWS service.**
-The following `delete-aws-logsource` example deletes VPC Flow Logs as a Security Lake source in the designated accounts and Regions.
+The following `delete-aws-log-source` example deletes VPC Flow Logs as a Security Lake source in the designated accounts and Regions.
 
 ```
 aws securitylake delete-aws-log-source \
-    --sources '{{[{"regions": ["us-east-1"], "accounts": ["123456789012"], "sourceName": "SH_FINDINGS", "sourceVersion": "2.0"}]}}'
+    --sources '{{[{"regions": ["us-west-2"], "accounts": ["123456789012"], "sourceName": "SH_FINDINGS", "sourceVersion": "2.0"}]}}'
 ```
 Output:
 
@@ -402,14 +400,14 @@ The following code example shows how to use `delete-custom-log-source`.
 
 **AWS CLI**
 **To remove a custom source.**
-The following `delete-custom-logsource` example deletes a custom source in the designated log provider account in the designated Region.
+The following `delete-custom-log-source` example deletes a custom source in the designated log provider account in the designated Region.
 
 ```
 aws securitylake delete-custom-log-source \
     --source-name {{"CustomSourceName"}}
 ```
 This command produces no output.
-For more information, see [Deleting a custom source](https://docs.aws.amazon.com/security-lake/latest/userguide/custom-sources.html#delete-custom-source) in the *Amazon Security Lake User Guide*.
+For more information, see [Deleting a custom source](https://docs.aws.amazon.com/security-lake/latest/userguide/delete-custom-source.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [DeleteCustomLogSource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-custom-log-source.html) in *AWS CLI Command Reference*.
 
 ### `delete-data-lake-organization-configuration`
@@ -423,10 +421,10 @@ The following `delete-data-lake-organization-configuration` example stops the au
 
 ```
 aws securitylake delete-data-lake-organization-configuration \
-    --auto-enable-new-account '{{[{"region":"us-east-1","sources":[{"sourceName":"SH_FINDINGS"}]}]}}'
+    --auto-enable-new-account '{{[{"region":"us-west-2","sources":[{"sourceName":"SH_FINDINGS"}]}]}}'
 ```
 This command produces no output.
-For more information, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/securityhub/latest/userguide/multi-account-management.html) in the *Amazon Security Lake User Guide*.
+For more information, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/security-lake/latest/userguide/multi-account-management.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [DeleteDataLakeOrganizationConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-data-lake-organization-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-data-lake`
@@ -443,7 +441,7 @@ aws securitylake delete-data-lake \
     --regions {{"ap-northeast-1"}} {{"eu-central-1"}}
 ```
 This command produces no output.
-For more information, see [Disabling Amazon Security Lake](https://docs.aws.amazon.com/securityhub/latest/userguide/disable-security-lake.html) in the *Amazon Security Lake User Guide*.
+For more information, see [Disabling Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/disable-security-lake.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [DeleteDataLake](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-data-lake.html) in *AWS CLI Command Reference*.
 
 ### `delete-subscriber-notification`
@@ -501,7 +499,7 @@ Output:
     "subscriptionProtocol": "sms"
 }
 ```
-For more information, see [Troubleshooting data lake status](https://docs.aws.amazon.com/securityhub/latest/userguide/security-lake-troubleshoot.html#securitylake-data-lake-troubleshoot) in the *Amazon Security Lake User Guide*.
+For more information, see [Troubleshooting data lake status](https://docs.aws.amazon.com/security-lake/latest/userguide/securitylake-data-lake-troubleshoot.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [GetDataLakeExceptionSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/get-data-lake-exception-subscription.html) in *AWS CLI Command Reference*.
 
 ### `get-data-lake-organization-configuration`
@@ -522,7 +520,7 @@ Output:
 {
     "autoEnableNewAccount": [
         {
-            "region": "us-east-1",
+            "region": "us-west-2",
             "sources": [
                 {
                     "sourceName": "VPC_FLOW",
@@ -641,7 +639,7 @@ Output:
             "LAKEFORMATION"
         ],
         "createdAt": "2024-04-19T15:19:44.421803+00:00",
-        "resourceShareArn": "arn:aws:ram:eu-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "resourceShareName": "LakeFormation-V3-TKJGBHCKTZ-123456789012",
         "sources": [
             {
@@ -677,12 +675,12 @@ Output:
             {
                 "customLogSource": {
                     "attributes": {
-                        "crawlerArn": "arn:aws:glue:eu-west-2:123456789012:crawler/testCustom2",
-                        "databaseArn": "arn:aws:glue:eu-west-2:123456789012:database/amazon_security_lake_glue_db_eu_west_2",
-                        "tableArn": "arn:aws:glue:eu-west-2:123456789012:table/amazon_security_lake_table_eu_west_2_ext_testcustom2"
+                        "crawlerArn": "arn:aws:glue:us-west-2:123456789012:crawler/testCustom2",
+                        "databaseArn": "arn:aws:glue:us-west-2:123456789012:database/amazon_security_lake_glue_db_eu_west_2",
+                        "tableArn": "arn:aws:glue:us-west-2:123456789012:table/amazon_security_lake_table_eu_west_2_ext_testcustom2"
                     },
                     "provider": {
-                        "location": "s3://aws-security-data-lake-eu-west-2-8ugsus4ztnsfpjbldwbgf4vge98av9/ext/testCustom2/",
+                        "location": "s3://amzn-s3-demo-bucket/ext/testCustom2/",
                         "roleArn": "arn:aws:iam::123456789012:role/AmazonSecurityLake-Provider-testCustom2-eu-west-2"
                     },
                     "sourceName": "testCustom2"
@@ -691,19 +689,19 @@ Output:
             {
                 "customLogSource": {
                     "attributes": {
-                        "crawlerArn": "arn:aws:glue:eu-west-2:123456789012:crawler/TestCustom",
-                        "databaseArn": "arn:aws:glue:eu-west-2:123456789012:database/amazon_security_lake_glue_db_eu_west_2",
-                        "tableArn": "arn:aws:glue:eu-west-2:123456789012:table/amazon_security_lake_table_eu_west_2_ext_testcustom"
+                        "crawlerArn": "arn:aws:glue:us-west-2:123456789012:crawler/TestCustom",
+                        "databaseArn": "arn:aws:glue:us-west-2:123456789012:database/amazon_security_lake_glue_db_eu_west_2",
+                        "tableArn": "arn:aws:glue:us-west-2:123456789012:table/amazon_security_lake_table_eu_west_2_ext_testcustom"
                     },
                     "provider": {
-                        "location": "s3://aws-security-data-lake-eu-west-2-8ugsus4ztnsfpjbldwbgf4vge98av9/ext/TestCustom/",
+                        "location": "s3://amzn-s3-demo-bucket/ext/TestCustom/",
                         "roleArn": "arn:aws:iam::123456789012:role/AmazonSecurityLake-Provider-TestCustom-eu-west-2"
                     },
                     "sourceName": "TestCustom"
                 }
             }
         ],
-        "subscriberArn": "arn:aws:securitylake:eu-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "subscriberArn": "arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "subscriberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "subscriberIdentity": {
             "externalId": "123456789012",
@@ -749,7 +747,7 @@ Output:
     ]
 }
 ```
-For more information, see [Troubleshooting Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/security-lake-troubleshoot.html#securitylake-data-lake-troubleshoot) in the *Amazon Security Lake User Guide*.
+For more information, see [Troubleshooting Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/securitylake-data-lake-troubleshoot.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [ListDataLakeExceptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/list-data-lake-exceptions.html) in *AWS CLI Command Reference*.
 
 ### `list-data-lakes`
@@ -827,20 +825,24 @@ Output:
 
 ```
 {
-    "account": "123456789012",
-    "region": "xy-region-1",
     "sources": [
         {
-               "awsLogSource": {
-                "sourceName": "VPC_FLOW",
-                "sourceVersion": "2.0"
-            }
-        },
-        {
-            "awsLogSource": {
-                "sourceName": "SH_FINDINGS",
-                "sourceVersion": "2.0"
-            }
+            "account": "123456789012",
+            "region": "xy-region-1",
+            "sources": [
+                {
+                    "awsLogSource": {
+                        "sourceName": "VPC_FLOW",
+                        "sourceVersion": "2.0"
+                    }
+                },
+                {
+                    "awsLogSource": {
+                        "sourceName": "SH_FINDINGS",
+                        "sourceVersion": "2.0"
+                    }
+                }
+            ]
         }
     ]
 }
@@ -888,9 +890,9 @@ Output:
                 {
                     "customLogSource": {
                         "attributes": {
-                            "crawlerArn": "arn:aws:glue:eu-west-2:123456789012:crawler/E1WG1ZNPRXT0D4",
-                            "databaseArn": "arn:aws:glue:eu-west-2:123456789012:database/E1WG1ZNPRXT0D4",
-                            "tableArn": "arn:aws:glue:eu-west-2:123456789012:table/E1WG1ZNPRXT0D4"
+                            "crawlerArn": "arn:aws:glue:us-west-2:123456789012:crawler/E1WG1ZNPRXT0D4",
+                            "databaseArn": "arn:aws:glue:us-west-2:123456789012:database/E1WG1ZNPRXT0D4",
+                            "tableArn": "arn:aws:glue:us-west-2:123456789012:table/E1WG1ZNPRXT0D4"
                         },
                         "provider": {
                             "location": "amzn-s3-demo-bucket--usw2-az1--x-s3",
@@ -900,8 +902,8 @@ Output:
                     }
                 }
             ],
-            "subscriberArn": "arn:aws:securitylake:eu-west-2:123456789012:subscriber/E1WG1ZNPRXT0D4",
-            "subscriberEndpoint": "arn:aws:sqs:eu-west-2:123456789012:AmazonSecurityLake-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111-Main-Queue",
+            "subscriberArn": "arn:aws:securitylake:us-west-2:123456789012:subscriber/E1WG1ZNPRXT0D4",
+            "subscriberEndpoint": "arn:aws:sqs:us-west-2:123456789012:AmazonSecurityLake-a1b2c3d4-5678-90ab-cdef-EXAMPLE11111-Main-Queue",
             "subscriberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "subscriberIdentity": {
                 "externalId": "ext123456789012",
@@ -928,7 +930,7 @@ The following `list-tags-for-resource` example lists tags for the specified Amaz
 
 ```
 aws securitylake list-tags-for-resource \
-    --resource-arn {{"arn:aws:securitylake:us-east-1:123456789012:subscriber/1234abcd-12ab-34cd-56ef-1234567890ab"}}
+    --resource-arn {{"arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -950,7 +952,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com/security-lake/latest/userguide/tagging-resources.html#tags-retrieve) in the *Amazon Security Lake User Guide*.
+For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com/security-lake/latest/userguide/tagging-resources.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `register-data-lake-delegated-administrator`
@@ -981,11 +983,11 @@ The following `tag-resource` example add tags to an existing subscriber resource
 
 ```
 aws securitylake tag-resource \
-    --resource-arn {{"arn:aws:securitylake:us-east-1:123456789012:subscriber/1234abcd-12ab-34cd-56ef-1234567890ab"}} \
+    --resource-arn {{"arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --tags {{key=Environment,value=Cloud}}
 ```
 This command produces no output.
-For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com/security-lake/latest/userguide/tagging-resources.html#tags-retrieve) in the *Amazon Security Lake User Guide*.
+For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com/security-lake/latest/userguide/tagging-resources.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -999,11 +1001,11 @@ The following `untag-resource` example removes the specified tags from an existi
 
 ```
 aws securitylake untag-resource \
-    --resource-arn {{"arn:aws:securitylake:us-east-1:123456789012:subscriber/1234abcd-12ab-34cd-56ef-1234567890ab"}} \
+    --resource-arn {{"arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --tag-keys {{Environment}} {{Owner}}
 ```
 This command produces no output.
-For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com/security-lake/latest/userguide/tagging-resources.html#tags-retrieve) in the *Amazon Security Lake User Guide*.
+For more information, see [Tagging Amazon Security Lake resources](https://docs.aws.amazon.com/security-lake/latest/userguide/tagging-resources.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-data-lake-exception-subscription`
@@ -1022,7 +1024,7 @@ aws securitylake update-data-lake-exception-subscription \
     --subscription-protocol {{"email"}}
 ```
 This command produces no output.
-For more information, see [Troubleshooting Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/security-lake-troubleshoot.html#securitylake-data-lake-troubleshoot) in the *Amazon Security Lake User Guide*.
+For more information, see [Troubleshooting Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/securitylake-data-lake-troubleshoot.html) in the *Amazon Security Lake User Guide*.
 +  For API details, see [UpdateDataLakeExceptionSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/update-data-lake-exception-subscription.html) in *AWS CLI Command Reference*.
 
 ### `update-data-lake`
@@ -1046,7 +1048,7 @@ Output:
     "dataLakes": [
         {
             "createStatus": "COMPLETED",
-            "dataLakeArn": "arn:aws:securitylake:us-east-1:522481757177:data-lake/default",
+            "dataLakeArn": "arn:aws:securitylake:us-east-1:123456789012:data-lake/default",
             "encryptionConfiguration": {
                 "kmsKeyId": "S3_MANAGED_KEY"
             },
@@ -1066,18 +1068,18 @@ Output:
                 "regions": [
                     "ap-northeast-3"
                 ],
-                "roleArn": "arn:aws:securitylake:ap-northeast-3:522481757177:data-lake/default"
+                "roleArn": "arn:aws:securitylake:ap-northeast-3:123456789012:data-lake/default"
             },
             "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-1-gnevt6s8z7bzby8oi3uiaysbr8v2ml",
             "updateStatus": {
                 "exception": {},
-                "requestId": "f20a6450-d24a-4f87-a6be-1d4c075a59c2",
+                "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "status": "INITIALIZED"
             }
         },
         {
             "createStatus": "COMPLETED",
-            "dataLakeArn": "arn:aws:securitylake:us-east-2:522481757177:data-lake/default",
+            "dataLakeArn": "arn:aws:securitylake:us-east-2:123456789012:data-lake/default",
             "encryptionConfiguration": {
                 "kmsKeyId": "S3_MANAGED_KEY"
             },
@@ -1097,12 +1099,12 @@ Output:
                 "regions": [
                     "ap-northeast-3"
                 ],
-                "roleArn": "arn:aws:securitylake:ap-northeast-3:522481757177:data-lake/default"
+                "roleArn": "arn:aws:securitylake:ap-northeast-3:123456789012:data-lake/default"
             },
             "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-2-cehuifzl5rwmhm6m62h7zhvtseogr9",
             "updateStatus": {
                 "exception": {},
-                "requestId": "f20a6450-d24a-4f87-a6be-1d4c075a59c2",
+                "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "status": "INITIALIZED"
             }
         }
@@ -1111,11 +1113,11 @@ Output:
 ```
 For more information, see [Getting started with Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/getting-started.html) in the *Amazon Security Lake User Guide*.
 **Example 2: To configure your data lake in a single Region**
-The following `create-data-lake` example enables Amazon Security Lake in a single AWS Region and configures your data lake.
+The following `update-data-lake` example configures your Amazon Security Lake data lake in a single AWS Region.
 
 ```
-aws securitylake create-data-lake \
-    --configurations '{{[{"encryptionConfiguration": {"kmsKeyId":"1234abcd-12ab-34cd-56ef-1234567890ab"},"region":"us-east-2","lifecycleConfiguration": {"expiration":{"days":500},"transitions":[{"days":30,"storageClass":"GLACIER"}]}}]}}' \
+aws securitylake update-data-lake \
+    --configurations '{{[{"encryptionConfiguration": {"kmsKeyId":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"},"region":"us-east-2","lifecycleConfiguration": {"expiration":{"days":500},"transitions":[{"days":30,"storageClass":"GLACIER"}]}}]}}' \
     --meta-store-manager-role-arn {{"arn:aws:iam:us-east-1:123456789012:role/service-role/AmazonSecurityLakeMetaStoreManager"}}
 ```
 Output:
@@ -1125,9 +1127,9 @@ Output:
     "dataLakes": [
         {
             "createStatus": "COMPLETED",
-            "dataLakeArn": "arn:aws:securitylake:us-east-2:522481757177:data-lake/default",
+            "dataLakeArn": "arn:aws:securitylake:us-east-2:123456789012:data-lake/default",
             "encryptionConfiguration": {
-                "kmsKeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"
+                "kmsKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             },
             "lifecycleConfiguration": {
                 "expiration": {
@@ -1145,12 +1147,12 @@ Output:
                 "regions": [
                     "ap-northeast-3"
                 ],
-                "roleArn": "arn:aws:securitylake:ap-northeast-3:522481757177:data-lake/default"
+                "roleArn": "arn:aws:securitylake:ap-northeast-3:123456789012:data-lake/default"
             },
             "s3BucketArn": "arn:aws:s3:::aws-security-data-lake-us-east-2-cehuifzl5rwmhm6m62h7zhvtseogr9",
             "updateStatus": {
                 "exception": {},
-                "requestId": "77702a53-dcbf-493e-b8ef-518e362f3003",
+                "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "status": "INITIALIZED"
             }
         }
@@ -1178,9 +1180,7 @@ Output:
 
 ```
 {
-    "subscriberEndpoint": [
-        "https://account-management.$3.$2.securitylake.aws.dev/v1/datalake"
-    ]
+    "subscriberEndpoint": "https://account-management.$3.$2.securitylake.aws.dev/v1/datalake"
 }
 ```
 For more information, see [Subscriber management](https://docs.aws.amazon.com/security-lake/latest/userguide/subscriber-management.html) in the *Amazon Security Lake User Guide*.
@@ -1208,7 +1208,7 @@ Output:
             "LAKEFORMATION"
         ],
         "createdAt": "2024-04-19T15:19:44.421803+00:00",
-        "resourceShareArn": "arn:aws:ram:eu-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "resourceShareName": "LakeFormation-V3-TKJGBHCKTZ-123456789012",
         "sources": [
             {
@@ -1244,9 +1244,9 @@ Output:
             {
                 "customLogSource": {
                     "attributes": {
-                        "crawlerArn": "arn:aws:glue:eu-west-2:123456789012:crawler/E1WG1ZNPRXT0D4",
-                        "databaseArn": "arn:aws:glue:eu-west-2:123456789012:database/E1WG1ZNPRXT0D4",
-                        "tableArn": "arn:aws:glue:eu-west-2:123456789012:table/E1WG1ZNPRXT0D4"
+                        "crawlerArn": "arn:aws:glue:us-west-2:123456789012:crawler/E1WG1ZNPRXT0D4",
+                        "databaseArn": "arn:aws:glue:us-west-2:123456789012:database/E1WG1ZNPRXT0D4",
+                        "tableArn": "arn:aws:glue:us-west-2:123456789012:table/E1WG1ZNPRXT0D4"
                     },
                     "provider": {
                         "location": "amzn-s3-demo-bucket--usw2-az1--x-s3",
@@ -1256,7 +1256,7 @@ Output:
                 }
             }
         ],
-        "subscriberArn": "arn:aws:securitylake:eu-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "subscriberArn": "arn:aws:securitylake:us-west-2:123456789012:subscriber/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "subscriberId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "subscriberIdentity": {
             "externalId": "123456789012",

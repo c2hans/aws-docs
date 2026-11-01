@@ -14,3 +14,4 @@ The following code examples demonstrate how to perform individual Directory Serv
 **Topics**
 + [`DescribeDirectories`](directory-service_example_directory-service_DescribeDirectories_section.md)
 + [`DescribeTrusts`](directory-service_example_directory-service_DescribeTrusts_section.md)
++ [`ResetUserPassword`](directory-service_example_directory-service_ResetUserPassword_section.md)

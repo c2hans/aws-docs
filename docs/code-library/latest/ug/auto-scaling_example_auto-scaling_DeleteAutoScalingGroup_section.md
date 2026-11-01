@@ -182,7 +182,7 @@ Update the minimum size of an Auto Scaling group to zero, terminate all instance
 
 **AWS CLI**
 **Example 1: To delete the specified Auto Scaling group**
-This example deletes the specified Auto Scaling group.
+The following `delete-auto-scaling-group` example deletes the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-auto-scaling-group \
@@ -191,7 +191,7 @@ aws autoscaling delete-auto-scaling-group \
 This command produces no output.
 For more information, see [Deleting your Auto Scaling infrastructure](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-process-shutdown.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To force delete the specified Auto Scaling group**
-To delete the Auto Scaling group without waiting for the instances in the group to terminate, use the `--force-delete` option.
+The following `delete-auto-scaling-group` example deletes the specified Auto Scaling group without waiting for the instances in the group to terminate by using the `--force-delete` option.
 
 ```
 aws autoscaling delete-auto-scaling-group \

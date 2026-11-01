@@ -11,3 +11,4 @@ The following decision guides help you choose AWS services for generative AI, ma
 + [Choosing a generative AI service](genai-guide.md)
 + [Choosing an AWS machine learning service](ml-guide.md)
 + [Amazon Bedrock or Amazon SageMaker AI?](bedrock-or-sagemaker.md)
++ [Choosing a vector database for your generative AI applications](vector-database-guide.md)

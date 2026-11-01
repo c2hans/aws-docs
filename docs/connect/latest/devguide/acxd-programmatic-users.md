@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-programmatic-users.html
 ---
 
-# Programmatic Users
+# Programmatic users
 <a name="acxd-programmatic-users"></a>
 
 Manage machine identities that authenticate with the Platform SDK. Programmatic users are assigned role configurations that determine their access level.
@@ -14,7 +14,7 @@ Manage machine identities that authenticate with the Platform SDK. Programmatic 
 + [UpdateProgrammaticUser](#acxd-programmatic-users-updateprogrammaticuser)
 + [DeleteProgrammaticUser](#acxd-programmatic-users-deleteprogrammaticuser)
 + [Request Parameters](#acxd-programmatic-users-request-parameters)
-+ [Role Config](#acxd-programmatic-users-role-config)
++ [Role config](#acxd-programmatic-users-role-config)
 
 ## ListProgrammaticUsers
 <a name="acxd-programmatic-users-listprogrammaticusers"></a>
@@ -249,7 +249,7 @@ Pagination token. See Common Types.
 Type: Integer
 Max items per page. See Common Types.
 
-## Role Config
+## Role config
 <a name="acxd-programmatic-users-role-config"></a>
 
 Provide exactly one variant:
@@ -281,7 +281,7 @@ Workspace-scoped role assignments. Each entry grants access to a specific worksp
 }
 ```
 
-### Workspace Role Assignment
+### Workspace role assignment
 <a name="acxd-programmatic-users-workspace-role-assignment"></a>
 
 | Field | Type | Required |

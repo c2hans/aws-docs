@@ -33,7 +33,7 @@ aws polly delete-lexicon \
     --name {{w3c}}
 ```
 This command produces no output.
-For more information, see [Using the DeleteLexicon operation](https://docs.aws.amazon.com/polly/latest/dg/gs-delete-lexicon.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Managing lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [DeleteLexicon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/delete-lexicon.html) in *AWS CLI Command Reference*.
 
 ### `get-lexicon`
@@ -61,13 +61,13 @@ Output:
         "Alphabet": "ipa",
         "LanguageCode": "en-US",
         "LastModified": 1603908910.99,
-        "LexiconArn": "arn:aws:polly:us-west-2:880185128111:lexicon/w3c",
+        "LexiconArn": "arn:aws:polly:us-west-2:123456789012:lexicon/w3c",
         "LexemesCount": 1,
         "Size": 492
     }
 }
 ```
-For more information, see [Using the GetLexicon operation](https://docs.aws.amazon.com/polly/latest/dg/gs-get-lexicon.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Managing lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [GetLexicon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/get-lexicon.html) in *AWS CLI Command Reference*.
 
 ### `get-speech-synthesis-task`
@@ -81,16 +81,16 @@ The following `get-speech-synthesis-task` example retrieves information about th
 
 ```
 aws polly get-speech-synthesis-task \
-    --task-id {{70b61c0f-57ce-4715-a247-cae8729dcce9}}
+    --task-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "SynthesisTask": {
-        "TaskId": "70b61c0f-57ce-4715-a247-cae8729dcce9",
+        "TaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "TaskStatus": "completed",
-        "OutputUri": "https://s3.us-west-2.amazonaws.com/amzn-s3-demo-bucket/70b61c0f-57ce-4715-a247-cae8729dcce9.mp3",
+        "OutputUri": "https://s3.us-west-2.amazonaws.com/amzn-s3-demo-bucket/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.mp3",
         "CreationTime": 1603911042.689,
         "RequestCharacters": 1311,
         "OutputFormat": "mp3",
@@ -99,7 +99,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating long audio files](https://docs.aws.amazon.com/polly/latest/dg/longer-cli.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Creating long audio files](https://docs.aws.amazon.com/polly/latest/dg/longer-console.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [GetSpeechSynthesisTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/get-speech-synthesis-task.html) in *AWS CLI Command Reference*.
 
 ### `list-lexicons`
@@ -125,7 +125,7 @@ Output:
                 "Alphabet": "ipa",
                 "LanguageCode": "en-US",
                 "LastModified": 1603908910.99,
-                "LexiconArn": "arn:aws:polly:us-east-2:123456789012:lexicon/w3c",
+                "LexiconArn": "arn:aws:polly:us-west-2:123456789012:lexicon/w3c",
                 "LexemesCount": 1,
                 "Size": 492
             }
@@ -133,7 +133,7 @@ Output:
     ]
 }
 ```
-For more information, see [Using the ListLexicons operation](https://docs.aws.amazon.com/polly/latest/dg/gs-list-lexicons.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Managing lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [ListLexicons](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/list-lexicons.html) in *AWS CLI Command Reference*.
 
 ### `list-speech-synthesis-tasks`
@@ -154,9 +154,9 @@ Output:
 {
     "SynthesisTasks": [
         {
-            "TaskId": "70b61c0f-57ce-4715-a247-cae8729dcce9",
+            "TaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TaskStatus": "completed",
-            "OutputUri": "https://s3.us-west-2.amazonaws.com/amzn-s3-demo-bucket/70b61c0f-57ce-4715-a247-cae8729dcce9.mp3",
+            "OutputUri": "https://s3.us-west-2.amazonaws.com/amzn-s3-demo-bucket/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.mp3",
             "CreationTime": 1603911042.689,
             "RequestCharacters": 1311,
             "OutputFormat": "mp3",
@@ -166,7 +166,7 @@ Output:
     ]
 }
 ```
-For more information, see [Creating long audio files](https://docs.aws.amazon.com/polly/latest/dg/longer-cli.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Creating long audio files](https://docs.aws.amazon.com/polly/latest/dg/longer-console.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [ListSpeechSynthesisTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/list-speech-synthesis-tasks.html) in *AWS CLI Command Reference*.
 
 ### `put-lexicon`
@@ -183,27 +183,25 @@ aws polly put-lexicon \
     --name {{w3c}} \
     --content {{file://example.pls}}
 ```
-Contents of `example.pls`
+Contents of `example.pls`:
 
 ```
-{
-    <?xml version="1.0" encoding="UTF-8"?>
-    <lexicon version="1.0"
-        xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.w3.org/2005/01/pronunciation-lexicon
-            http://www.w3.org/TR/2007/CR-pronunciation-lexicon-20071212/pls.xsd"
-        alphabet="ipa"
-        xml:lang="en-US">
-        <lexeme>
-            <grapheme>W3C</grapheme>
-            <alias>World Wide Web Consortium</alias>
-        </lexeme>
-    </lexicon>
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<lexicon version="1.0"
+    xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.w3.org/2005/01/pronunciation-lexicon
+        http://www.w3.org/TR/2007/CR-pronunciation-lexicon-20071212/pls.xsd"
+    alphabet="ipa"
+    xml:lang="en-US">
+    <lexeme>
+        <grapheme>W3C</grapheme>
+        <alias>World Wide Web Consortium</alias>
+    </lexeme>
+</lexicon>
 ```
 This command produces no output.
-For more information, see [Using the PutLexicon operation](https://docs.aws.amazon.com/polly/latest/dg/gs-put-lexicon.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Managing lexicons](https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [PutLexicon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/put-lexicon.html) in *AWS CLI Command Reference*.
 
 ### `start-speech-synthesis-task`
@@ -222,14 +220,36 @@ aws polly start-speech-synthesis-task \
     --text  {{file://text_file.txt}} \
     --voice-id {{Joanna}}
 ```
+Contents of `text_file.txt`:
+
+```
+Amazon Polly is a service that turns text into lifelike speech. With
+asynchronous synthesis tasks, you can convert long documents, such as
+articles, book chapters, and training material, into a single audio file
+that is stored in the Amazon S3 bucket that you specify. Synchronous
+requests are limited in the amount of text that they can process, so
+asynchronous tasks are the better choice when you have a large amount of
+text to synthesize. When you start a task, Amazon Polly returns a task ID
+right away and continues to process the text in the background. You can use
+the task ID to check the status of the task at any time. When the task is
+complete, the audio file is available in the output bucket, and you can
+download it, play it in an application, or share it with your users. You can
+also have Amazon Polly send a notification to an Amazon SNS topic when the
+task finishes, so that you do not have to check the status yourself. Amazon
+Polly supports many languages and voices, and you can choose the voice that
+best fits your content. For example, you might use one voice for a news
+article and a different voice for a story for children. You can also use
+SSML tags to control how the text is spoken, such as adding pauses or
+changing the speaking rate. This makes it simple to create audio content.
+```
 Output:
 
 ```
 {
     "SynthesisTask": {
-        "TaskId": "70b61c0f-57ce-4715-a247-cae8729dcce9",
+        "TaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "TaskStatus": "scheduled",
-        "OutputUri": "https://s3.us-east-2.amazonaws.com/amzn-s3-demo-bucket/70b61c0f-57ce-4715-a247-cae8729dcce9.mp3",
+        "OutputUri": "https://s3.us-west-2.amazonaws.com/amzn-s3-demo-bucket/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.mp3",
         "CreationTime": 1603911042.689,
         "RequestCharacters": 1311,
         "OutputFormat": "mp3",
@@ -238,5 +258,5 @@ Output:
     }
 }
 ```
-For more information, see [Creating long audio files](https://docs.aws.amazon.com/polly/latest/dg/longer-cli.html) in the *Amazon Polly Developer Guide*.
+For more information, see [Creating long audio files](https://docs.aws.amazon.com/polly/latest/dg/longer-console.html) in the *Amazon Polly Developer Guide*.
 +  For API details, see [StartSpeechSynthesisTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/polly/start-speech-synthesis-task.html) in *AWS CLI Command Reference*.

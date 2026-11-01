@@ -56,19 +56,21 @@ The following code example shows how to use `accept-reserved-instances-exchange-
 
 **AWS CLI**
 **To perform a Convertible Reserved Instance exchange**
-This example performs an exchange of the specified Convertible Reserved Instances.
-Command:
+The following `accept-reserved-instances-exchange-quote` example performs an exchange of the specified Convertible Reserved Instances.
 
 ```
-aws ec2 accept-reserved-instances-exchange-quote --reserved-instance-ids {{7b8750c3-397e-4da4-bbcb-a45ebexample}} --target-configurations {{OfferingId=b747b472-423c-48f3-8cee-679bcexample}}
+aws ec2 accept-reserved-instances-exchange-quote \
+    --reserved-instance-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --target-configurations {{OfferingId=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
-  "ExchangeId": "riex-e68ed3c1-8bc8-4c17-af77-811afexample"
+    "ExchangeId": "riex-e68ed3c1-8bc8-4c17-af77-811afexample"
 }
 ```
+For more information, see [Exchange Convertible Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-convertible-exchange.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [AcceptReservedInstancesExchangeQuote](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/accept-reserved-instances-exchange-quote.html) in *AWS CLI Command Reference*.
 
 ### `accept-transit-gateway-peering-attachment`
@@ -153,19 +155,21 @@ The following code example shows how to use `accept-vpc-endpoint-connections`.
 
 **AWS CLI**
 **To accept an interface endpoint connection request**
-This example accepts the specified endpoint connection request for the specified endpoint service.
-Command:
+The following `accept-vpc-endpoint-connections` example accepts the specified endpoint connection request for the specified endpoint service.
 
 ```
-aws ec2 accept-vpc-endpoint-connections --service-id {{vpce-svc-03d5ebb7d9579a2b3}} --vpc-endpoint-ids {{vpce-0c1308d7312217abc}}
+aws ec2 accept-vpc-endpoint-connections \
+    --service-id {{vpce-svc-03d5ebb7d9579a2b3}} \
+    --vpc-endpoint-ids {{vpce-0c1308d7312217abc}}
 ```
 Output:
 
 ```
 {
-  "Unsuccessful": []
+    "Unsuccessful": []
 }
 ```
+For more information, see [Configure an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#accept-reject-connection-requests) in the *AWS PrivateLink Guide*.
 +  For API details, see [AcceptVpcEndpointConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/accept-vpc-endpoint-connections.html) in *AWS CLI Command Reference*.
 
 ### `accept-vpc-peering-connection`
@@ -175,36 +179,37 @@ The following code example shows how to use `accept-vpc-peering-connection`.
 
 **AWS CLI**
 **To accept a VPC peering connection**
-This example accepts the specified VPC peering connection request.
-Command:
+The following `accept-vpc-peering-connection` example accepts the specified VPC peering connection request.
 
 ```
-aws ec2 accept-vpc-peering-connection --vpc-peering-connection-id {{pcx-1a2b3c4d}}
+aws ec2 accept-vpc-peering-connection \
+    --vpc-peering-connection-id {{pcx-1a2b3c4d}}
 ```
 Output:
 
 ```
 {
-  "VpcPeeringConnection": {
-    "Status": {
-      "Message": "Provisioning",
-      "Code": "provisioning"
-    },
-    "Tags": [],
-    "AccepterVpcInfo": {
-      "OwnerId": "444455556666",
-      "VpcId": "vpc-44455566",
-      "CidrBlock": "10.0.1.0/28"
-    },
-    "VpcPeeringConnectionId": "pcx-1a2b3c4d",
-    "RequesterVpcInfo": {
-      "OwnerId": "444455556666",
-      "VpcId": "vpc-111abc45",
-      "CidrBlock": "10.0.0.0/28"
+    "VpcPeeringConnection": {
+        "Status": {
+            "Message": "Provisioning",
+            "Code": "provisioning"
+        },
+        "Tags": [],
+        "AccepterVpcInfo": {
+            "OwnerId": "123456789012",
+            "VpcId": "vpc-44455566",
+            "CidrBlock": "10.0.1.0/28"
+        },
+        "VpcPeeringConnectionId": "pcx-1a2b3c4d",
+        "RequesterVpcInfo": {
+            "OwnerId": "123456789012",
+            "VpcId": "vpc-111abc45",
+            "CidrBlock": "10.0.0.0/28"
+        }
     }
-  }
 }
 ```
+For more information, see [Accept or reject a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/accept-vpc-peering-connection.html) in the *Amazon VPC Peering Guide*.
 +  For API details, see [AcceptVpcPeeringConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/accept-vpc-peering-connection.html) in *AWS CLI Command Reference*.
 
 ### `advertise-byoip-cidr`
@@ -231,6 +236,7 @@ Output:
     }
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [AdvertiseByoipCidr](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/advertise-byoip-cidr.html) in *AWS CLI Command Reference*.
 
 ### `allocate-address`
@@ -292,7 +298,6 @@ Output:
     "CustomerOwnedIp": "18.218.95.81",
     "CustomerOwnedIpv4Pool": "ipv4pool-ec2-1234567890abcdef0",
     "Domain": "vpc"
-    "NetworkBorderGroup": "us-west-2",
 }
 ```
 For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
@@ -301,7 +306,6 @@ The following `allocate-address` example allocates a specific /32 Elastic IP add
 
 ```
 aws ec2 allocate-address \
-    --region {{us-east-1}} \
     --ipam-pool-id {{ipam-pool-1234567890abcdef0}} \
     --address {{192.0.2.0}}
 ```
@@ -312,7 +316,7 @@ Output:
     "PublicIp": "192.0.2.0",
     "AllocationId": "eipalloc-abcdef01234567890",
     "PublicIpv4Pool": "ipam-pool-1234567890abcdef0",
-    "NetworkBorderGroup": "us-east-1",
+    "NetworkBorderGroup": "us-west-2",
     "Domain": "vpc"
 }
 ```
@@ -326,12 +330,12 @@ The following code example shows how to use `allocate-hosts`.
 
 **AWS CLI**
 **Example 1: To allocate a Dedicated Host**
-The following `allocate-hosts` example allocates a single Dedicated Host in the `eu-west-1a` Availability Zone, onto which you can launch `m5.large` instances. By default, the Dedicated Host accepts only target instance launches, and does not support host recovery.
+The following `allocate-hosts` example allocates a single Dedicated Host in the `us-west-2a` Availability Zone, onto which you can launch `m5.large` instances. By default, the Dedicated Host accepts only target instance launches, and does not support host recovery.
 
 ```
 aws ec2 allocate-hosts \
     --instance-type {{m5.large}} \
-    --availability-zone {{eu-west-1a}} \
+    --availability-zone {{us-west-2a}} \
     --quantity {{1}}
 ```
 Output:
@@ -344,12 +348,12 @@ Output:
 }
 ```
 **Example 2: To allocate a Dedicated Host with auto-placement and host recovery enabled**
-The following `allocate-hosts` example allocates a single Dedicated Host in the `eu-west-1a` Availability Zone with auto-placement and host recovery enabled.
+The following `allocate-hosts` example allocates a single Dedicated Host in the `us-west-2a` Availability Zone with auto-placement and host recovery enabled.
 
 ```
 aws ec2 allocate-hosts \
     --instance-type {{m5.large}} \
-    --availability-zone {{eu-west-1a}} \
+    --availability-zone {{us-west-2a}} \
     --auto-placement {{on}} \
     --host-recovery {{on}} \
     --quantity {{1}}
@@ -358,9 +362,9 @@ Output:
 
 ```
 {
-     "HostIds": [
-         "h-07879acf49EXAMPLE"
-     ]
+    "HostIds": [
+        "h-07879acf49EXAMPLE"
+    ]
 }
 ```
 **Example 3: To allocate a Dedicated Host with tags**
@@ -369,7 +373,7 @@ The following `allocate-hosts` example allocates a single Dedicated Host and app
 ```
 aws ec2 allocate-hosts \
     --instance-type {{m5.large}} \
-    --availability-zone {{eu-west-1a}} \
+    --availability-zone {{us-west-2a}} \
     --quantity {{1}} \
     --tag-specifications '{{ResourceType=dedicated-host,Tags={Key=purpose,Value=production}}}'
 ```
@@ -393,19 +397,19 @@ The following code example shows how to use `allocate-ipam-pool-cidr`.
 **AWS CLI**
 **To allocate a CIDR from an IPAM pool**
 The following `allocate-ipam-pool-cidr` example allocates a CIDR from an IPAM pool.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 allocate-ipam-pool-cidr \
     --ipam-pool-id {{ipam-pool-0533048da7d823723}} \
     --netmask-length {{24}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 allocate-ipam-pool-cidr {{^}}
-   --ipam-pool-id {{ipam-pool-0533048da7d823723}} {{^}}
-   --netmask-length {{24}}
+    --ipam-pool-id {{ipam-pool-0533048da7d823723}} {{^}}
+    --netmask-length {{24}}
 ```
 Output:
 
@@ -435,7 +439,7 @@ The following `apply-security-groups-to-client-vpn-target-network` example appli
 aws ec2 apply-security-groups-to-client-vpn-target-network \
     --security-group-ids {{sg-01f6e627a89f4db32}} \
     --vpc-id {{vpc-0e2110c2f324332e0}} \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}}
 ```
 Output:
 
@@ -455,42 +459,46 @@ For more information, see [Target Networks](https://docs.aws.amazon.com/vpn/late
 The following code example shows how to use `assign-ipv6-addresses`.
 
 **AWS CLI**
-**To assign specific IPv6 addresses to a network interface**
-This example assigns the specified IPv6 addresses to the specified network interface.
-Command:
+**Example 1: To assign specific IPv6 addresses to a network interface**
+The following `assign-ipv6-addresses` example assigns the specified IPv6 addresses to the specified network interface.
 
 ```
-aws ec2 assign-ipv6-addresses --network-interface-id {{eni-38664473}} --ipv6-addresses {{2001:db8:1234:1a00:3304:8879:34cf:4071}} {{2001:db8:1234:1a00:9691:9503:25ad:1761}}
+aws ec2 assign-ipv6-addresses \
+    --network-interface-id {{eni-38664473}} \
+    --ipv6-addresses {{2001:db8:1234:1a00:3304:8879:34cf:4071}} {{2001:db8:1234:1a00:9691:9503:25ad:1761}}
 ```
 Output:
 
 ```
 {
-  "AssignedIpv6Addresses": [
-      "2001:db8:1234:1a00:3304:8879:34cf:4071",
-      "2001:db8:1234:1a00:9691:9503:25ad:1761"
-  ],
-  "NetworkInterfaceId": "eni-38664473"
+    "AssignedIpv6Addresses": [
+        "2001:db8:1234:1a00:3304:8879:34cf:4071",
+        "2001:db8:1234:1a00:9691:9503:25ad:1761"
+    ],
+    "NetworkInterfaceId": "eni-38664473"
 }
 ```
-**To assign IPv6 addresses that Amazon selects to a network interface**
-This example assigns two IPv6 addresses to the specified network interface. Amazon automatically assigns these IPv6 addresses from the available IPv6 addresses in the IPv6 CIDR block range of the subnet.
-Command:
+For more information, see [Manage the IPv6 addresses for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-ipv6-addresses.html) in the *Amazon EC2 User Guide*.
+**Example 2: To assign IPv6 addresses that Amazon selects to a network interface**
+The following `assign-ipv6-addresses` example assigns two IPv6 addresses to the specified network interface. Amazon automatically assigns these IPv6 addresses from the available IPv6 addresses in the IPv6 CIDR block range of the subnet.
 
 ```
-aws ec2 assign-ipv6-addresses --network-interface-id {{eni-38664473}} --ipv6-address-count {{2}}
+aws ec2 assign-ipv6-addresses \
+    --network-interface-id {{eni-38664473}} \
+    --ipv6-address-count {{2}}
 ```
 Output:
 
 ```
 {
-  "AssignedIpv6Addresses": [
-      "2001:db8:1234:1a00:3304:8879:34cf:4071",
-      "2001:db8:1234:1a00:9691:9503:25ad:1761"
-  ],
-  "NetworkInterfaceId": "eni-38664473"
+    "AssignedIpv6Addresses": [
+        "2001:db8:1234:1a00:3304:8879:34cf:4071",
+        "2001:db8:1234:1a00:9691:9503:25ad:1761"
+    ],
+    "NetworkInterfaceId": "eni-38664473"
 }
 ```
+For more information, see [Manage the IPv6 addresses for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-ipv6-addresses.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [AssignIpv6Addresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/assign-ipv6-addresses.html) in *AWS CLI Command Reference*.
 
 ### `assign-private-ip-addresses`
@@ -499,20 +507,51 @@ Output:
 The following code example shows how to use `assign-private-ip-addresses`.
 
 **AWS CLI**
-**To assign a specific secondary private IP address a network interface**
-This example assigns the specified secondary private IP address to the specified network interface. If the command succeeds, no output is returned.
-Command:
+**Example 1: To assign a specific secondary private IP address to a network interface**
+The following `assign-private-ip-addresses` example assigns the specified secondary private IP address to the specified network interface.
 
 ```
-aws ec2 assign-private-ip-addresses --network-interface-id {{eni-e5aa89a3}} --private-ip-addresses {{10.0.0.82}}
+aws ec2 assign-private-ip-addresses \
+    --network-interface-id {{eni-e5aa89a3}} \
+    --private-ip-addresses {{10.0.0.82}}
 ```
-**To assign secondary private IP addresses that Amazon EC2 selects to a network interface**
-This example assigns two secondary private IP addresses to the specified network interface. Amazon EC2 automatically assigns these IP addresses from the available IP addresses in the CIDR block range of the subnet the network interface is associated with. If the command succeeds, no output is returned.
-Command:
+Output:
 
 ```
-aws ec2 assign-private-ip-addresses --network-interface-id {{eni-e5aa89a3}} --secondary-private-ip-address-count {{2}}
+{
+    "NetworkInterfaceId": "eni-e5aa89a3",
+    "AssignedPrivateIpAddresses": [
+        {
+            "PrivateIpAddress": "10.0.0.82"
+        }
+    ]
+}
 ```
+For more information, see [Secondary IP addresses for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-secondary-ip-addresses.html) in the *Amazon EC2 User Guide*.
+**Example 2: To assign secondary private IP addresses that Amazon EC2 selects to a network interface**
+The following `assign-private-ip-addresses` example assigns two secondary private IP addresses to the specified network interface. Amazon EC2 automatically assigns these IP addresses from the available IP addresses in the CIDR block range of the subnet the network interface is associated with.
+
+```
+aws ec2 assign-private-ip-addresses \
+    --network-interface-id {{eni-e5aa89a3}} \
+    --secondary-private-ip-address-count {{2}}
+```
+Output:
+
+```
+{
+    "NetworkInterfaceId": "eni-e5aa89a3",
+    "AssignedPrivateIpAddresses": [
+        {
+            "PrivateIpAddress": "10.0.0.93"
+        },
+        {
+            "PrivateIpAddress": "10.0.0.147"
+        }
+    ]
+}
+```
+For more information, see [Secondary IP addresses for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-secondary-ip-addresses.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [AssignPrivateIpAddresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/assign-private-ip-addresses.html) in *AWS CLI Command Reference*.
 
 ### `assign-private-nat-gateway-address`
@@ -576,7 +615,7 @@ Output:
 The following `associate-address` example associates the specified Elastic IP address with the specified network interface.
 
 ```
-aws ec2 associate-address
+aws ec2 associate-address \
     --allocation-id {{eipalloc-64d5890a}} \
     --network-interface-id {{eni-1a2b3c4d}}
 ```
@@ -618,7 +657,7 @@ The following `associate-client-vpn-target-network` example associates a subnet 
 ```
 aws ec2 associate-client-vpn-target-network \
     --subnet-id {{subnet-0123456789abcabca}} \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}}
 ```
 Output:
 
@@ -639,20 +678,26 @@ For more information, see [Target Networks](https://docs.aws.amazon.com/vpn/late
 The following code example shows how to use `associate-dhcp-options`.
 
 **AWS CLI**
-**To associate a DHCP options set with your VPC**
-This example associates the specified DHCP options set with the specified VPC. If the command succeeds, no output is returned.
-Command:
+**Example 1: To associate a DHCP options set with your VPC**
+The following `associate-dhcp-options` example associates the specified DHCP options set with the specified VPC.
 
 ```
-aws ec2 associate-dhcp-options --dhcp-options-id {{dopt-d9070ebb}} --vpc-id {{vpc-a01106c2}}
+aws ec2 associate-dhcp-options \
+    --dhcp-options-id {{dopt-d9070ebb}} \
+    --vpc-id {{vpc-a01106c2}}
 ```
-**To associate the default DHCP options set with your VPC**
-This example associates the default DHCP options set with the specified VPC. If the command succeeds, no output is returned.
-Command:
+This command produces no output.
+For more information, see [Work with DHCP option sets](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html) in the *Amazon VPC User Guide*.
+**Example 2: To associate the default DHCP options set with your VPC**
+The following `associate-dhcp-options` example associates the default DHCP options set with the specified VPC.
 
 ```
-aws ec2 associate-dhcp-options --dhcp-options-id {{default}} --vpc-id {{vpc-a01106c2}}
+aws ec2 associate-dhcp-options \
+    --dhcp-options-id {{default}} \
+    --vpc-id {{vpc-a01106c2}}
 ```
+This command produces no output.
+For more information, see [Work with DHCP option sets](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html) in the *Amazon VPC User Guide*.
 +  For API details, see [AssociateDhcpOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-dhcp-options.html) in *AWS CLI Command Reference*.
 
 ### `associate-iam-instance-profile`
@@ -662,27 +707,29 @@ The following code example shows how to use `associate-iam-instance-profile`.
 
 **AWS CLI**
 **To associate an IAM instance profile with an instance**
-This example associates an IAM instance profile named `admin-role` with instance `i-123456789abcde123`.
-Command:
+The following `associate-iam-instance-profile` example associates an IAM instance profile named `admin-role` with instance `i-123456789abcde123`.
 
 ```
-aws ec2 associate-iam-instance-profile --instance-id {{i-123456789abcde123}} --iam-instance-profile {{Name=admin-role}}
+aws ec2 associate-iam-instance-profile \
+    --instance-id {{i-123456789abcde123}} \
+    --iam-instance-profile {{Name=admin-role}}
 ```
 Output:
 
 ```
 {
-  "IamInstanceProfileAssociation": {
-      "InstanceId": "i-123456789abcde123",
-      "State": "associating",
-      "AssociationId": "iip-assoc-0e7736511a163c209",
-      "IamInstanceProfile": {
-          "Id": "AIPAJBLK7RKJKWDXVHIEC",
-          "Arn": "arn:aws:iam::123456789012:instance-profile/admin-role"
-      }
-  }
+    "IamInstanceProfileAssociation": {
+        "InstanceId": "i-123456789abcde123",
+        "State": "associating",
+        "AssociationId": "iip-assoc-0e7736511a163c209",
+        "IamInstanceProfile": {
+            "Id": "AIPAJBLK7RKJKWDXVHIEC",
+            "Arn": "arn:aws:iam::123456789012:instance-profile/admin-role"
+        }
+    }
 }
 ```
+For more information, see [Attach an IAM role to an instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attach-iam-role.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [AssociateIamInstanceProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-iam-instance-profile.html) in *AWS CLI Command Reference*.
 
 ### `associate-instance-event-window`
@@ -696,7 +743,6 @@ The following `associate-instance-event-window` example associates one or more i
 
 ```
 aws ec2 associate-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --association-target {{"InstanceIds=i-1234567890abcdef0,i-0598c7d356eba48d7"}}
 ```
@@ -720,13 +766,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 2: To associate instance tags with an event window**
 The following `associate-instance-event-window` example associates instance tags with an event window. Enter an `instance-event-window-id` parameter to specify the event window. To associate instance tags, specify the `association-target` parameter, and for the parameter value, specify one or more tags.
 
 ```
 aws ec2 associate-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --association-target {{"InstanceTags=[{Key=k2,Value=v2},{Key=k1,Value=v1}]"}}
 ```
@@ -756,13 +801,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 3: To associate a Dedicated Host with an event window**
 The following `associate-instance-event-window` example associates a Dedicated Host with an event window. Enter an `instance-event-window-id` parameter to specify the event window. To associate a Dedicated Host, specify the `--association-target` parameter, and for the parameter values, specify one of more Dedicated Host IDs.
 
 ```
 aws ec2 associate-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --association-target {{"DedicatedHostIds=h-029fa35a02b99801d"}}
 ```
@@ -785,7 +829,7 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 +  For API details, see [AssociateInstanceEventWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-instance-event-window.html) in *AWS CLI Command Reference*.
 
 ### `associate-ipam-resource-discovery`
@@ -795,36 +839,34 @@ The following code example shows how to use `associate-ipam-resource-discovery`.
 
 **AWS CLI**
 **To associate a resource discovery with an IPAM**
-In this example, you are an IPAM delegated admin and a resource discovery has been created and shared with you by another AWS account so that you can use IPAM to manage and monitor resource CIDRs owned by the other account.
+The following `associate-ipam-resource-discovery` example associates a resource discovery with an IPAM. In this example, you are an IPAM delegated admin and a resource discovery has been created and shared with you by another AWS account so that you can use IPAM to manage and monitor resource CIDRs owned by the other account.
 Note
 To complete this request, you'll need the resource discovery ID which you can get with [describe-ipam-resource-discoveries](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-resource-discoveries.html) and the IPAM ID which you can get with [describe-ipams](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipams.html).The resource discovery that you are associating must have first been shared with your account using AWS RAM.The `--region` you enter must match the home Region of the IPAM you are associating it with.
-The following `associate-ipam-resource-discovery` example associates a resource discovery with an IPAM.
+To associate the resource discovery with the IPAM, run the following command.
 
 ```
 aws ec2 associate-ipam-resource-discovery \
     --ipam-id {{ipam-005f921c17ebd5107}} \
     --ipam-resource-discovery-id {{ipam-res-disco-03e0406de76a044ee}} \
     --tag-specifications '{{ResourceType=ipam-resource-discovery,Tags=[{Key=cost-center,Value=cc123}]}}' \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
 ```
 {
-    {
-        "IpamResourceDiscoveryAssociation": {
-            "OwnerId": "320805250157",
-            "IpamResourceDiscoveryAssociationId": "ipam-res-disco-assoc-04382a6346357cf82",
-            "IpamResourceDiscoveryAssociationArn": "arn:aws:ec2::320805250157:ipam-resource-discovery-association/ipam-res-disco-assoc-04382a6346357cf82",
-            "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
-            "IpamId": "ipam-005f921c17ebd5107",
-            "IpamArn": "arn:aws:ec2::320805250157:ipam/ipam-005f921c17ebd5107",
-            "IpamRegion": "us-east-1",
-            "IsDefault": false,
-            "ResourceDiscoveryStatus": "active",
-            "State": "associate-in-progress",
-            "Tags": []
-        }
+    "IpamResourceDiscoveryAssociation": {
+        "OwnerId": "123456789012",
+        "IpamResourceDiscoveryAssociationId": "ipam-res-disco-assoc-04382a6346357cf82",
+        "IpamResourceDiscoveryAssociationArn": "arn:aws:ec2::123456789012:ipam-resource-discovery-association/ipam-res-disco-assoc-04382a6346357cf82",
+        "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
+        "IpamId": "ipam-005f921c17ebd5107",
+        "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-005f921c17ebd5107",
+        "IpamRegion": "us-west-2",
+        "IsDefault": false,
+        "ResourceDiscoveryStatus": "active",
+        "State": "associate-in-progress",
+        "Tags": []
     }
 }
 ```
@@ -870,11 +912,12 @@ The following code example shows how to use `associate-route-table`.
 
 **AWS CLI**
 **To associate a route table with a subnet**
-This example associates the specified route table with the specified subnet.
-Command:
+The following `associate-route-table` example associates the specified route table with the specified subnet.
 
 ```
-aws ec2 associate-route-table --route-table-id {{rtb-22574640}} --subnet-id {{subnet-9d4a7b6c}}
+aws ec2 associate-route-table \
+    --route-table-id {{rtb-22574640}} \
+    --subnet-id {{subnet-9d4a7b6c}}
 ```
 Output:
 
@@ -883,6 +926,7 @@ Output:
     "AssociationId": "rtbassoc-781d0d1a"
 }
 ```
+For more information, see [Subnet route tables](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-route-tables.html) in the *Amazon VPC User Guide*.
 +  For API details, see [AssociateRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-route-table.html) in *AWS CLI Command Reference*.
 
 ### `associate-security-group-vpc`
@@ -916,26 +960,28 @@ The following code example shows how to use `associate-subnet-cidr-block`.
 
 **AWS CLI**
 **To associate an IPv6 CIDR block with a subnet**
-This example associates an IPv6 CIDR block with the specified subnet.
-Command:
+The following `associate-subnet-cidr-block` example associates an IPv6 CIDR block with the specified subnet.
 
 ```
-aws ec2 associate-subnet-cidr-block --subnet-id {{subnet-5f46ec3b}} --ipv6-cidr-block {{2001:db8:1234:1a00::/64}}
+aws ec2 associate-subnet-cidr-block \
+    --subnet-id {{subnet-5f46ec3b}} \
+    --ipv6-cidr-block {{2001:db8:1234:1a00::/64}}
 ```
 Output:
 
 ```
 {
-  "SubnetId": "subnet-5f46ec3b",
-  "Ipv6CidrBlockAssociation": {
-      "Ipv6CidrBlock": "2001:db8:1234:1a00::/64",
-      "AssociationId": "subnet-cidr-assoc-3aa54053",
-      "Ipv6CidrBlockState": {
-          "State": "associating"
-      }
-  }
+    "SubnetId": "subnet-5f46ec3b",
+    "Ipv6CidrBlockAssociation": {
+        "Ipv6CidrBlock": "2001:db8:1234:1a00::/64",
+        "AssociationId": "subnet-cidr-assoc-3aa54053",
+        "Ipv6CidrBlockState": {
+            "State": "associating"
+        }
+    }
 }
 ```
+For more information, see [Add or remove an IPv6 CIDR block from your subnet](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-associate-ipv6-cidr.html) in the *Amazon VPC User Guide*.
 +  For API details, see [AssociateSubnetCidrBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-subnet-cidr-block.html) in *AWS CLI Command Reference*.
 
 ### `associate-transit-gateway-multicast-domain`
@@ -982,7 +1028,7 @@ The following code example shows how to use `associate-transit-gateway-route-tab
 
 **AWS CLI**
 **To associate a transit gateway route table with a transit gateway attachment**
-The following example associates the specified transit gateway route table with the specified VPC attachment.
+The following `associate-transit-gateway-route-table` example associates the specified transit gateway route table with the specified VPC attachment.
 
 ```
 aws ec2 associate-transit-gateway-route-table \
@@ -1002,7 +1048,7 @@ Output:
     }
 }
 ```
-For more information, see [Associate a Transit Gateway Route Table](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#associate-tgw-route-table) in the *AWS Transit Gateways Guide*.
+For more information, see [Associate a Transit Gateway Route Table](https://docs.aws.amazon.com/vpc/latest/tgw/associate-tgw-route-table.html) in the *AWS Transit Gateways Guide*.
 +  For API details, see [AssociateTransitGatewayRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-transit-gateway-route-table.html) in *AWS CLI Command Reference*.
 
 ### `associate-vpc-cidr-block`
@@ -1012,7 +1058,7 @@ The following code example shows how to use `associate-vpc-cidr-block`.
 
 **AWS CLI**
 **Example 1: To associate an Amazon-provided IPv6 CIDR block with a VPC**
-The following `associate-vpc-cidr-block` example associates an IPv6 CIDR block with the specified VPC.:
+The following `associate-vpc-cidr-block` example associates an IPv6 CIDR block with the specified VPC.
 
 ```
 aws ec2 associate-vpc-cidr-block \
@@ -1034,7 +1080,8 @@ Output:
     "VpcId": "vpc-8EXAMPLE"
 }
 ```
-**Example 2:To associate an additional IPv4 CIDR block with a VPC**
+For more information, see [Add or remove a CIDR block from your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/add-ipv4-cidr.html) in the *Amazon VPC User Guide*.
+**Example 2: To associate an additional IPv4 CIDR block with a VPC**
 The following `associate-vpc-cidr-block` example associates the IPv4 CIDR block `10.2.0.0/16` with the specified VPC.
 
 ```
@@ -1056,6 +1103,7 @@ Output:
     "VpcId": "vpc-1EXAMPLE"
 }
 ```
+For more information, see [Add or remove a CIDR block from your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/add-ipv4-cidr.html) in the *Amazon VPC User Guide*.
 +  For API details, see [AssociateVpcCidrBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/associate-vpc-cidr-block.html) in *AWS CLI Command Reference*.
 
 ### `attach-classic-link-vpc`
@@ -1065,17 +1113,19 @@ The following code example shows how to use `attach-classic-link-vpc`.
 
 **AWS CLI**
 **To link (attach) an EC2-Classic instance to a VPC**
-This example links instance i-1234567890abcdef0 to VPC vpc-88888888 through the VPC security group sg-12312312.
-Command:
+The following `attach-classic-link-vpc` example links instance i-1234567890abcdef0 to VPC vpc-88888888 through the VPC security group sg-12312312.
 
 ```
-aws ec2 attach-classic-link-vpc --instance-id  {{i-1234567890abcdef0}} --vpc-id {{vpc-88888888}} --groups {{sg-12312312}}
+aws ec2 attach-classic-link-vpc \
+    --instance-id {{i-1234567890abcdef0}} \
+    --vpc-id {{vpc-88888888}} \
+    --groups {{sg-12312312}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
 +  For API details, see [AttachClassicLinkVpc](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/attach-classic-link-vpc.html) in *AWS CLI Command Reference*.
@@ -1193,23 +1243,26 @@ The following code example shows how to use `attach-volume`.
 
 **AWS CLI**
 **To attach a volume to an instance**
-This example command attaches a volume (`vol-1234567890abcdef0`) to an instance (`i-01474ef662b89480`) as `/dev/sdf`.
-Command:
+The following `attach-volume` example attaches a volume (`vol-1234567890abcdef0`) to an instance (`i-01474ef662b89480`) as `/dev/sdf`.
 
 ```
-aws ec2 attach-volume --volume-id {{vol-1234567890abcdef0}} --instance-id {{i-01474ef662b89480}} --device {{/dev/sdf}}
+aws ec2 attach-volume \
+    --volume-id {{vol-1234567890abcdef0}} \
+    --instance-id {{i-01474ef662b89480}} \
+    --device {{/dev/sdf}}
 ```
 Output:
 
 ```
 {
-    "AttachTime": "YYYY-MM-DDTHH:MM:SS.000Z",
+    "AttachTime": "2024-03-10T21:47:12.000Z",
     "InstanceId": "i-01474ef662b89480",
     "VolumeId": "vol-1234567890abcdef0",
     "State": "attaching",
     "Device": "/dev/sdf"
 }
 ```
+For more information, see [Attach an Amazon EBS volume to an Amazon EC2 instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-attaching-volume.html) in the *Amazon EBS User Guide*.
 +  For API details, see [AttachVolume](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/attach-volume.html) in *AWS CLI Command Reference*.
 
 ### `attach-vpn-gateway`
@@ -1236,6 +1289,7 @@ Output:
     }
 }
 ```
+For more information, see [Get started with AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [AttachVpnGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/attach-vpn-gateway.html) in *AWS CLI Command Reference*.
 
 ### `authorize-client-vpn-ingress`
@@ -1249,7 +1303,7 @@ The following `authorize-client-vpn-ingress` example adds an ingress authorizati
 
 ```
 aws ec2 authorize-client-vpn-ingress \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}} \
     --target-network-cidr {{0.0.0.0/0}} \
     --authorize-all-groups
 ```
@@ -1516,7 +1570,7 @@ Output:
     ]
 }
 ```
-**Example 7: Add a rule with a description**
+**Example 7: To add a rule with a description**
 The following `authorize-security-group-ingress` example uses the `ip-permissions` parameter to add an inbound rule that allows RDP traffic from the specified IPv4 address range. The rule includes a description to help you identify it later.
 
 ```
@@ -1581,31 +1635,36 @@ The following code example shows how to use `bundle-instance`.
 
 **AWS CLI**
 **To bundle an instance**
-This example bundles instance `i-1234567890abcdef0` to a bucket called `bundletasks`. Before you specify values for your access key IDs, review and follow the guidance in Best Practices for Managing AWS Access Keys.
-Command:
+The following `bundle-instance` example bundles instance `i-1234567890abcdef0` to a bucket called `amzn-s3-demo-bucket`. Before you specify values for your access key IDs, review and follow the guidance in [Manage access keys for IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the *IAM User Guide*.
 
 ```
-aws ec2 bundle-instance --instance-id {{i-1234567890abcdef0}} --bucket {{bundletasks}} --prefix {{winami}} --owner-akid {{AK12AJEXAMPLE}} --owner-sak {{example123example}}
+aws ec2 bundle-instance \
+    --instance-id {{i-1234567890abcdef0}} \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --prefix {{winami}} \
+    --owner-akid {{AK12AJEXAMPLE}} \
+    --owner-sak {{example123example}}
 ```
 Output:
 
 ```
 {
-  "BundleTask": {
-    "UpdateTime": "2015-09-15T13:30:35.000Z",
-    "InstanceId": "i-1234567890abcdef0",
-    "Storage": {
-      "S3": {
-        "Prefix": "winami",
-        "Bucket": "bundletasks"
-      }
-    },
-    "State": "pending",
-    "StartTime": "2015-09-15T13:30:35.000Z",
-    "BundleId": "bun-294e041f"
-  }
+    "BundleTask": {
+        "UpdateTime": "2015-09-15T13:30:35.000Z",
+        "InstanceId": "i-1234567890abcdef0",
+        "Storage": {
+            "S3": {
+                "Prefix": "winami",
+                "Bucket": "amzn-s3-demo-bucket"
+            }
+        },
+        "State": "pending",
+        "StartTime": "2015-09-15T13:30:35.000Z",
+        "BundleId": "bun-294e041f"
+    }
 }
 ```
+For more information, see [AMI types and characteristics in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [BundleInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/bundle-instance.html) in *AWS CLI Command Reference*.
 
 ### `cancel-bundle-task`
@@ -1615,31 +1674,32 @@ The following code example shows how to use `cancel-bundle-task`.
 
 **AWS CLI**
 **To cancel a bundle task**
-This example cancels bundle task `bun-2a4e041c`.
-Command:
+The following `cancel-bundle-task` example cancels bundle task `bun-2a4e041c`.
 
 ```
-aws ec2 cancel-bundle-task --bundle-id {{bun-2a4e041c}}
+aws ec2 cancel-bundle-task \
+    --bundle-id {{bun-2a4e041c}}
 ```
 Output:
 
 ```
 {
-  "BundleTask": {
-    "UpdateTime": "2015-09-15T13:27:40.000Z",
-    "InstanceId": "i-1234567890abcdef0",
-    "Storage": {
-      "S3": {
-        "Prefix": "winami",
-        "Bucket": "bundletasks"
-      }
-    },
-    "State": "cancelling",
-    "StartTime": "2015-09-15T13:24:35.000Z",
-    "BundleId": "bun-2a4e041c"
-  }
+    "BundleTask": {
+        "UpdateTime": "2015-09-15T13:27:40.000Z",
+        "InstanceId": "i-1234567890abcdef0",
+        "Storage": {
+            "S3": {
+                "Prefix": "winami",
+                "Bucket": "amzn-s3-demo-bucket"
+            }
+        },
+        "State": "cancelling",
+        "StartTime": "2015-09-15T13:24:35.000Z",
+        "BundleId": "bun-2a4e041c"
+    }
 }
 ```
+For more information, see [AMI types and characteristics in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ComponentsAMIs.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CancelBundleTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-bundle-task.html) in *AWS CLI Command Reference*.
 
 ### `cancel-capacity-reservation-fleets`
@@ -1702,12 +1762,14 @@ The following code example shows how to use `cancel-conversion-task`.
 
 **AWS CLI**
 **To cancel an active conversion of an instance or a volume**
-This example cancels the upload associated with the task ID import-i-fh95npoc. If the command succeeds, no output is returned.
-Command:
+The following `cancel-conversion-task` example cancels the upload associated with the task ID import-i-fh95npoc.
 
 ```
-aws ec2 cancel-conversion-task --conversion-task-id {{import-i-fh95npoc}}
+aws ec2 cancel-conversion-task \
+    --conversion-task-id {{import-i-fh95npoc}}
 ```
+This command produces no output.
+For more information, see [Import a VM as an EC2 instance using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-instance-import.html) in the *VM Import/Export User Guide*.
 +  For API details, see [CancelConversionTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-conversion-task.html) in *AWS CLI Command Reference*.
 
 ### `cancel-export-task`
@@ -1717,12 +1779,14 @@ The following code example shows how to use `cancel-export-task`.
 
 **AWS CLI**
 **To cancel an active export task**
-This example cancels an active export task with the task ID export-i-fgelt0i7. If the command succeeds, no output is returned.
-Command:
+The following `cancel-export-task` example cancels an active export task with the task ID export-i-fgelt0i7.
 
 ```
-aws ec2 cancel-export-task --export-task-id {{export-i-fgelt0i7}}
+aws ec2 cancel-export-task \
+    --export-task-id {{export-i-fgelt0i7}}
 ```
+This command produces no output.
+For more information, see [Export an EC2 instance as a VM using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html) in the *VM Import/Export User Guide*.
 +  For API details, see [CancelExportTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-export-task.html) in *AWS CLI Command Reference*.
 
 ### `cancel-image-launch-permission`
@@ -1736,8 +1800,7 @@ The following `cancel-image-launch-permission` example removes your account from
 
 ```
 aws ec2 cancel-image-launch-permission \
-    --image-id {{ami-0123456789example}} \
-    --region {{us-east-1}}
+    --image-id {{ami-0123456789example}}
 ```
 Output:
 
@@ -1771,6 +1834,7 @@ Output:
     "State": "deleting"
 }
 ```
+For more information, see [Monitor an import image task](https://docs.aws.amazon.com/vm-import/latest/userguide/check-import-task-status.html) in the *VM Import/Export User Guide*.
 +  For API details, see [CancelImportTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-import-task.html) in *AWS CLI Command Reference*.
 
 ### `cancel-reserved-instances-listing`
@@ -1784,8 +1848,53 @@ The following `cancel-reserved-instances-listing` example cancels the specified 
 
 ```
 aws ec2 cancel-reserved-instances-listing \
-    --reserved-instances-listing-id {{5ec28771-05ff-4b9b-aa31-9e57dexample}}
+    --reserved-instances-listing-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
+Output:
+
+```
+{
+    "ReservedInstancesListings": [
+        {
+            "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "CreateDate": "2024-05-14T18:12:30.000Z",
+            "InstanceCounts": [
+                {
+                    "InstanceCount": 0,
+                    "State": "available"
+                },
+                {
+                    "InstanceCount": 0,
+                    "State": "sold"
+                },
+                {
+                    "InstanceCount": 3,
+                    "State": "cancelled"
+                },
+                {
+                    "InstanceCount": 0,
+                    "State": "pending"
+                }
+            ],
+            "PriceSchedules": [
+                {
+                    "Active": false,
+                    "CurrencyCode": "USD",
+                    "Price": 25.5,
+                    "Term": 11
+                }
+            ],
+            "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ReservedInstancesListingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Status": "cancelled",
+            "StatusMessage": "cancelled",
+            "Tags": [],
+            "UpdateDate": "2024-05-15T09:24:51.000Z"
+        }
+    ]
+}
+```
+For more information, see [Sell Reserved Instances for Amazon EC2 in the Reserved Instance Marketplace](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-general.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CancelReservedInstancesListing](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-reserved-instances-listing.html) in *AWS CLI Command Reference*.
 
 ### `cancel-spot-fleet-requests`
@@ -1848,11 +1957,11 @@ The following code example shows how to use `cancel-spot-instance-requests`.
 
 **AWS CLI**
 **To cancel Spot Instance requests**
-This example command cancels a Spot Instance request.
-Command:
+The following `cancel-spot-instance-requests` example cancels a Spot Instance request.
 
 ```
-aws ec2 cancel-spot-instance-requests --spot-instance-request-ids {{sir-08b93456}}
+aws ec2 cancel-spot-instance-requests \
+    --spot-instance-request-ids {{sir-08b93456}}
 ```
 Output:
 
@@ -1866,6 +1975,7 @@ Output:
     ]
 }
 ```
+For more information, see [Cancel a Spot Instance request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances-cancel.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CancelSpotInstanceRequests](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/cancel-spot-instance-requests.html) in *AWS CLI Command Reference*.
 
 ### `confirm-product-instance`
@@ -1875,19 +1985,21 @@ The following code example shows how to use `confirm-product-instance`.
 
 **AWS CLI**
 **To confirm the product instance**
-This example determines whether the specified product code is associated with the specified instance.
-Command:
+The following `confirm-product-instance` example determines whether the specified product code is associated with the specified instance.
 
 ```
-aws ec2 confirm-product-instance --product-code {{774F4FF8}} --instance-id {{i-1234567890abcdef0}}
+aws ec2 confirm-product-instance \
+    --product-code {{774F4FF8}} \
+    --instance-id {{i-1234567890abcdef0}}
 ```
 Output:
 
 ```
 {
-  "OwnerId": "123456789012"
+    "OwnerId": "123456789012"
 }
 ```
+For more information, see [Paid AMIs in the AWS Marketplace for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/paid-amis.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ConfirmProductInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/confirm-product-instance.html) in *AWS CLI Command Reference*.
 
 ### `copy-fpga-image`
@@ -1897,19 +2009,23 @@ The following code example shows how to use `copy-fpga-image`.
 
 **AWS CLI**
 **To copy an Amazon FPGA image**
-This example copies the specified AFI from the `us-east-1` region to the current region (`eu-west-1`).
-Command:
+The following `copy-fpga-image` example copies the specified AFI from the `us-east-1` region to the current region (`eu-west-1`).
 
 ```
-aws ec2 copy-fpga-image --name {{copy-afi}} --source-fpga-image-id {{afi-0d123e123bfc85abc}} --source-region {{us-east-1}} --region {{eu-west-1}}
+aws ec2 copy-fpga-image \
+    --name {{copy-afi}} \
+    --source-fpga-image-id {{afi-0d123e123bfc85abc}} \
+    --source-region {{us-east-1}} \
+    --region {{eu-west-1}}
 ```
 Output:
 
 ```
 {
-  "FpgaImageId": "afi-06b12350a123fbabc"
+    "FpgaImageId": "afi-06b12350a123fbabc"
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [CopyFpgaImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/copy-fpga-image.html) in *AWS CLI Command Reference*.
 
 ### `copy-image`
@@ -1919,14 +2035,14 @@ The following code example shows how to use `copy-image`.
 
 **AWS CLI**
 **Example 1: To copy an AMI to another Region**
-The following `copy-image` example command copies the specified AMI from the `us-west-2` Region to the `us-east-1` Region and adds a short description.
+The following `copy-image` example copies the specified AMI from the `us-west-2` Region to the `us-east-1` Region and adds a short description.
 
 ```
 aws ec2 copy-image \
     --region {{us-east-1}} \
     --name {{ami-name}} \
     --source-region {{us-west-2}} \
-    --source-image-id {{ami-066877671789bd71b}} \
+    --source-image-id {{ami-0abcdef1234567890}} \
     --description {{"This is my copied image."}}
 ```
 Output:
@@ -1938,13 +2054,13 @@ Output:
 ```
 For more information, see [Copy an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html) in the *Amazon EC2 User Guide*.
 **Example 2: To copy an AMI to another Region and encrypt the backing snapshot**
-The following `copy-image` command copies the specified AMI from the `us-west-2` Region to the current Region and encrypts the backing snapshot using the specified KMS key.
+The following `copy-image` example copies the specified AMI from the `us-west-2` Region to the current Region and encrypts the backing snapshot using the specified KMS key.
 
 ```
 aws ec2 copy-image \
     --source-region {{us-west-2}} \
     --name {{ami-name}} \
-    --source-image-id {{ami-066877671789bd71b}} \
+    --source-image-id {{ami-0abcdef1234567890}} \
     --encrypted \
     --kms-key-id {{alias/my-kms-key}}
 ```
@@ -1957,15 +2073,15 @@ Output:
 ```
 For more information, see [Copy an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/CopyingAMIs.html) in the *Amazon EC2 User Guide*.
 **Example 3: To include your user-defined AMI tags when copying an AMI**
-The following `copy-image` command uses the `--copy-image-tags` parameter to copy your user-defined AMI tags when copying the AMI.
+The following `copy-image` example uses the `--copy-image-tags` parameter to copy your user-defined AMI tags when copying the AMI.
 
 ```
 aws ec2 copy-image \
     --region {{us-east-1}} \
     --name {{ami-name}} \
     --source-region {{us-west-2}} \
-    --source-image-id {{ami-066877671789bd71b}} \
-    --description {{"This is my copied image."}}
+    --source-image-id {{ami-0abcdef1234567890}} \
+    --description {{"This is my copied image."}} \
     --copy-image-tags
 ```
 Output:
@@ -1985,29 +2101,29 @@ The following code example shows how to use `copy-snapshot`.
 
 **AWS CLI**
 **Example 1: To copy a snapshot to another Region**
-The following `copy-snapshot` example command copies the specified snapshot from the `us-west-2` Region to the `us-east-1` Region and adds a short description.
+The following `copy-snapshot` example copies the specified snapshot from the `us-west-2` Region to the `us-east-1` Region and adds a short description.
 
 ```
 aws ec2 copy-snapshot \
     --region {{us-east-1}} \
     --source-region {{us-west-2}} \
-    --source-snapshot-id {{snap-066877671789bd71b}} \
+    --source-snapshot-id {{snap-0abcdef1234567890}} \
     --description '{{This is my copied snapshot.}}'
 ```
 Output:
 
 ```
 {
-    "SnapshotId": "snap-066877671789bd71b"
+    "SnapshotId": "snap-0abcdef1234567890"
 }
 ```
 **Example 2: To copy an unencrypted snapshot and encrypt the new snapshot**
-The following `copy-snapshot` command copies the specified unencrypted snapshot from the `us-west-2` Region to the current Region and encrypts the new snapshot using the specified KMS key.
+The following `copy-snapshot` example copies the specified unencrypted snapshot from the `us-west-2` Region to the current Region and encrypts the new snapshot using the specified KMS key.
 
 ```
 aws ec2 copy-snapshot \
     --source-region {{us-west-2}} \
-    --source-snapshot-id {{snap-066877671789bd71b}} \
+    --source-snapshot-id {{snap-0abcdef1234567890}} \
     --encrypted \
     --kms-key-id {{alias/my-kms-key}}
 ```
@@ -2015,7 +2131,7 @@ Output:
 
 ```
 {
-    "SnapshotId": "snap-066877671789bd71b"
+    "SnapshotId": "snap-0abcdef1234567890"
 }
 ```
 For more information, see [Copy an Amazon EBS snapshot](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copy-snapshot.html) in the *Amazon EBS User Guide*.
@@ -2032,12 +2148,12 @@ The following `create-capacity-reservation-fleet` example creates a Capacity Res
 
 ```
 aws ec2 create-capacity-reservation-fleet \
---total-target-capacity {{24}} \
---allocation-strategy {{prioritized}} \
---instance-match-criteria {{open}} \
---tenancy {{default}} \
---end-date {{2022-12-31T23:59:59.000Z}} \
---instance-type-specifications {{file://instanceTypeSpecification.json}}
+    --total-target-capacity {{24}} \
+    --allocation-strategy {{prioritized}} \
+    --instance-match-criteria {{open}} \
+    --tenancy {{default}} \
+    --end-date {{2022-12-31T23:59:59.000Z}} \
+    --instance-type-specifications {{file://instanceTypeSpecification.json}}
 ```
 Contents of `instanceTypeSpecification.json`:
 
@@ -2047,7 +2163,7 @@ Contents of `instanceTypeSpecification.json`:
         "InstanceType": "m5.xlarge",
         "InstancePlatform": "Linux/UNIX",
         "Weight": 3.0,
-        "AvailabilityZone":"us-east-1a",
+        "AvailabilityZone":"us-west-2a",
         "EbsOptimized": true,
         "Priority" : 1
     }
@@ -2057,7 +2173,7 @@ Output:
 
 ```
 {
-    "Status": "submitted",
+    "State": "submitted",
     "TotalFulfilledCapacity": 0.0,
     "CapacityReservationFleetId": "crf-abcdef01234567890",
     "TotalTargetCapacity": 24
@@ -2075,11 +2191,11 @@ The following code example shows how to use `create-capacity-reservation`.
 
 **AWS CLI**
 **Example 1: To create a Capacity Reservation**
-The following `create-capacity-reservation` example creates a capacity reservation in the `eu-west-1a` Availability Zone, into which you can launch three `t2.medium` instances running a Linux/Unix operating system. By default, the capacity reservation is created with open instance matching criteria and no support for ephemeral storage, and it remains active until you manually cancel it.
+The following `create-capacity-reservation` example creates a capacity reservation in the `us-west-2a` Availability Zone, into which you can launch three `t2.medium` instances running a Linux/Unix operating system. By default, the capacity reservation is created with open instance matching criteria and no support for ephemeral storage, and it remains active until you manually cancel it.
 
 ```
 aws ec2 create-capacity-reservation \
-    --availability-zone {{eu-west-1a}} \
+    --availability-zone {{us-west-2a}} \
     --instance-type {{t2.medium}} \
     --instance-platform {{Linux/UNIX}} \
     --instance-count {{3}}
@@ -2091,7 +2207,7 @@ Output:
     "CapacityReservation": {
         "CapacityReservationId": "cr-1234abcd56EXAMPLE ",
         "EndDateType": "unlimited",
-        "AvailabilityZone": "eu-west-1a",
+        "AvailabilityZone": "us-west-2a",
         "InstanceMatchCriteria": "open",
         "EphemeralStorage": false,
         "CreateDate": "2019-08-16T09:27:35.000Z",
@@ -2106,11 +2222,11 @@ Output:
 }
 ```
 **Example 2: To create a Capacity Reservation that automatically ends at a specified date/time**
-The following `create-capacity-reservation` example creates a capacity reservation in the `eu-west-1a` Availability Zone, into which you can launch three `m5.large` instances running a Linux/Unix operating system. This capacity reservation automatically ends on 08/31/2019 at 23:59:59.
+The following `create-capacity-reservation` example creates a capacity reservation in the `us-west-2a` Availability Zone, into which you can launch three `m5.large` instances running a Linux/Unix operating system. This capacity reservation automatically ends on 08/31/2019 at 23:59:59.
 
 ```
 aws ec2 create-capacity-reservation \
-    --availability-zone {{eu-west-1a}} \
+    --availability-zone {{us-west-2a}} \
     --instance-type {{m5.large}} \
     --instance-platform {{Linux/UNIX}} \
     --instance-count {{3}} \
@@ -2124,7 +2240,7 @@ Output:
     "CapacityReservation": {
         "CapacityReservationId": "cr-1234abcd56EXAMPLE ",
         "EndDateType": "limited",
-        "AvailabilityZone": "eu-west-1a",
+        "AvailabilityZone": "us-west-2a",
         "EndDate": "2019-08-31T23:59:59.000Z",
         "InstanceMatchCriteria": "open",
         "EphemeralStorage": false,
@@ -2144,7 +2260,7 @@ The following `create-capacity-reservation` example creates a capacity reservati
 
 ```
 aws ec2 create-capacity-reservation \
-    --availability-zone {{eu-west-1a}} \
+    --availability-zone {{us-west-2a}} \
     --instance-type {{m5.large}} \
     --instance-platform {{Linux/UNIX}} \
     --instance-count {{3}} \
@@ -2157,7 +2273,7 @@ Output:
     "CapacityReservation": {
         "CapacityReservationId": "cr-1234abcd56EXAMPLE ",
         "EndDateType": "unlimited",
-        "AvailabilityZone": "eu-west-1a",
+        "AvailabilityZone": "us-west-2a",
         "InstanceMatchCriteria": "targeted",
         "EphemeralStorage": false,
         "CreateDate": "2019-08-16T10:21:57.000Z",
@@ -2214,19 +2330,19 @@ The following `create-client-vpn-endpoint` example creates a Client VPN endpoint
 ```
 aws ec2 create-client-vpn-endpoint \
     --client-cidr-block {{"172.31.0.0/16"}} \
-    --server-certificate-arn {{arn:aws:acm:ap-south-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}} \
-    --authentication-options {{Type=certificate-authentication,MutualAuthentication={ClientRootCertificateChainArn=arn:aws:acm:ap-south-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE}}} \
+    --server-certificate-arn {{arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --authentication-options {{Type=certificate-authentication,MutualAuthentication={ClientRootCertificateChainArn=arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}} \
     --connection-log-options {{Enabled=false}}
 ```
 Output:
 
 ```
 {
-    "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+    "ClientVpnEndpointId": "cvpn-endpoint-123456789012abcde",
     "Status": {
         "Code": "pending-associate"
     },
-    "DnsName": "cvpn-endpoint-123456789123abcde.prod.clientvpn.ap-south-1.amazonaws.com"
+    "DnsName": "cvpn-endpoint-123456789012abcde.prod.clientvpn.us-west-2.amazonaws.com"
 }
 ```
 For more information, see [Client VPN Endpoints](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoints.html) in the *AWS Client VPN Administrator Guide*.
@@ -2243,7 +2359,7 @@ The following `create-client-vpn-route` example adds a route to the internet (`0
 
 ```
 aws ec2 create-client-vpn-route \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}} \
     --destination-cidr-block {{0.0.0.0/0}}  \
     --target-vpc-subnet-id {{subnet-0123456789abcabca}}
 ```
@@ -2321,11 +2437,13 @@ The following code example shows how to use `create-customer-gateway`.
 
 **AWS CLI**
 **To create a customer gateway**
-This example creates a customer gateway with the specified IP address for its outside interface.
-Command:
+The following `create-customer-gateway` example creates a customer gateway with the specified IP address for its outside interface.
 
 ```
-aws ec2 create-customer-gateway --type {{ipsec.1}} --public-ip {{12.1.2.3}} --bgp-asn {{65534}}
+aws ec2 create-customer-gateway \
+    --type {{ipsec.1}} \
+    --public-ip {{12.1.2.3}} \
+    --bgp-asn {{65534}}
 ```
 Output:
 
@@ -2340,6 +2458,7 @@ Output:
     }
 }
 ```
+For more information, see [AWS Site-to-Site VPN customer gateway devices](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [CreateCustomerGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-customer-gateway.html) in *AWS CLI Command Reference*.
 
 ### `create-default-subnet`
@@ -2349,28 +2468,32 @@ The following code example shows how to use `create-default-subnet`.
 
 **AWS CLI**
 **To create a default subnet**
-This example creates a default subnet in Availability Zone `us-east-2a`.
-Command:
+The following `create-default-subnet` example creates a default subnet in Availability Zone `us-west-2a`.
 
 ```
- aws ec2 create-default-subnet --availability-zone us-east-2a
+aws ec2 create-default-subnet \
+    --availability-zone {{us-west-2a}}
+```
+Output:
 
+```
 {
-   "Subnet": {
-       "AvailabilityZone": "us-east-2a",
-       "Tags": [],
-       "AvailableIpAddressCount": 4091,
-       "DefaultForAz": true,
-       "Ipv6CidrBlockAssociationSet": [],
-       "VpcId": "vpc-1a2b3c4d",
-       "State": "available",
-       "MapPublicIpOnLaunch": true,
-       "SubnetId": "subnet-1122aabb",
-       "CidrBlock": "172.31.32.0/20",
-       "AssignIpv6AddressOnCreation": false
-   }
- }
+    "Subnet": {
+        "AvailabilityZone": "us-west-2a",
+        "Tags": [],
+        "AvailableIpAddressCount": 4091,
+        "DefaultForAz": true,
+        "Ipv6CidrBlockAssociationSet": [],
+        "VpcId": "vpc-1a2b3c4d",
+        "State": "available",
+        "MapPublicIpOnLaunch": true,
+        "SubnetId": "subnet-1122aabb",
+        "CidrBlock": "172.31.32.0/20",
+        "AssignIpv6AddressOnCreation": false
+    }
+}
 ```
+For more information, see [Work with your default VPC and default subnets](https://docs.aws.amazon.com/vpc/latest/userguide/work-with-default-vpc.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateDefaultSubnet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-default-subnet.html) in *AWS CLI Command Reference*.
 
 ### `create-default-vpc`
@@ -2380,8 +2503,7 @@ The following code example shows how to use `create-default-vpc`.
 
 **AWS CLI**
 **To create a default VPC**
-This example creates a default VPC.
-Command:
+The following `create-default-vpc` example creates a default VPC.
 
 ```
 aws ec2 create-default-vpc
@@ -2390,18 +2512,19 @@ Output:
 
 ```
 {
-   "Vpc": {
-       "VpcId": "vpc-8eaae5ea",
-       "InstanceTenancy": "default",
-       "Tags": [],
-       "Ipv6CidrBlockAssociationSet": [],
-       "State": "pending",
-       "DhcpOptionsId": "dopt-af0c32c6",
-       "CidrBlock": "172.31.0.0/16",
-       "IsDefault": true
-   }
- }
+    "Vpc": {
+        "VpcId": "vpc-8eaae5ea",
+        "InstanceTenancy": "default",
+        "Tags": [],
+        "Ipv6CidrBlockAssociationSet": [],
+        "State": "pending",
+        "DhcpOptionsId": "dopt-af0c32c6",
+        "CidrBlock": "172.31.0.0/16",
+        "IsDefault": true
+    }
+}
 ```
+For more information, see [Work with your default VPC and default subnets](https://docs.aws.amazon.com/vpc/latest/userguide/work-with-default-vpc.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateDefaultVpc](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-default-vpc.html) in *AWS CLI Command Reference*.
 
 ### `create-dhcp-options`
@@ -2415,10 +2538,7 @@ The following `create-dhcp-options` example creates a set of DHCP options that s
 
 ```
 aws ec2 create-dhcp-options \
-    --dhcp-configuration \
-        {{"Key=domain-name-servers,Values=10.2.5.1,10.2.5.2"}} \
-        {{"Key=domain-name,Values=example.com"}} \
-        {{"Key=netbios-node-type,Values=2"}}
+    --dhcp-configuration {{"Key=domain-name-servers,Values=10.2.5.1,10.2.5.2"}} {{"Key=domain-name,Values=example.com"}} {{"Key=netbios-node-type,Values=2"}}
 ```
 Output:
 
@@ -2458,6 +2578,7 @@ Output:
     }
 }
 ```
+For more information, see [DHCP option sets in Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateDhcpOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-dhcp-options.html) in *AWS CLI Command Reference*.
 
 ### `create-egress-only-internet-gateway`
@@ -2467,27 +2588,28 @@ The following code example shows how to use `create-egress-only-internet-gateway
 
 **AWS CLI**
 **To create an egress-only Internet gateway**
-This example creates an egress-only Internet gateway for the specified VPC.
-Command:
+The following `create-egress-only-internet-gateway` example creates an egress-only Internet gateway for the specified VPC.
 
 ```
-aws ec2 create-egress-only-internet-gateway --vpc-id {{vpc-0c62a468}}
+aws ec2 create-egress-only-internet-gateway \
+    --vpc-id {{vpc-0c62a468}}
 ```
 Output:
 
 ```
 {
-  "EgressOnlyInternetGateway": {
-      "EgressOnlyInternetGatewayId": "eigw-015e0e244e24dfe8a",
-      "Attachments": [
-          {
-              "State": "attached",
-              "VpcId": "vpc-0c62a468"
-          }
-      ]
-  }
+    "EgressOnlyInternetGateway": {
+        "EgressOnlyInternetGatewayId": "eigw-015e0e244e24dfe8a",
+        "Attachments": [
+            {
+                "State": "attached",
+                "VpcId": "vpc-0c62a468"
+            }
+        ]
+    }
 }
 ```
+For more information, see [Enable outbound IPv6 traffic using an egress-only internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateEgressOnlyInternetGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-egress-only-internet-gateway.html) in *AWS CLI Command Reference*.
 
 ### `create-fleet`
@@ -2504,17 +2626,17 @@ When you create an EC2 Fleet, use a JSON file to specify information about the i
 aws ec2 create-fleet \
     --cli-input-json {{file://file_name.json}}
 ```
-Contents of file\_name.json:
+Contents of `file_name.json`:
 
 ```
 {
     "LaunchTemplateConfigs": [
-    {
-        "LaunchTemplateSpecification": {
-        "LaunchTemplateId": "lt-0e8c754449b27161c",
-        "Version": "1"
+        {
+            "LaunchTemplateSpecification": {
+                "LaunchTemplateId": "lt-0e8c754449b27161c",
+                "Version": "1"
+            }
         }
-    }
     ],
     "TargetCapacitySpecification": {
         "TotalTargetCapacity": 2,
@@ -2529,6 +2651,7 @@ Output:
     "FleetId": "fleet-12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE"
 }
 ```
+For more information, see [Create an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-fleet.html) in the *Amazon EC2 User Guide*.
 **Example 2: To create an EC2 Fleet that launches On-Demand Instances as the default purchasing model**
 The following `create-fleet` example creates an EC2 Fleet using the minimum parameters required to launch a fleet: a launch template, target capacity, and default purchasing model. The launch template is identified by its launch template ID and version number. The target capacity for the fleet is 2 instances, and the default purchasing model is `on-demand`, which results in the fleet launching 2 On-Demand Instances.
 When you create an EC2 Fleet, use a JSON file to specify information about the instances to launch.
@@ -2537,21 +2660,21 @@ When you create an EC2 Fleet, use a JSON file to specify information about the i
 aws ec2 create-fleet \
     --cli-input-json {{file://file_name.json}}
 ```
-Contents of file\_name.json:
+Contents of `file_name.json`:
 
 ```
 {
     "LaunchTemplateConfigs": [
-    {
-        "LaunchTemplateSpecification": {
-        "LaunchTemplateId": "lt-0e8c754449b27161c",
-        "Version": "1"
+        {
+            "LaunchTemplateSpecification": {
+                "LaunchTemplateId": "lt-0e8c754449b27161c",
+                "Version": "1"
+            }
         }
-    }
     ],
     "TargetCapacitySpecification": {
-    "TotalTargetCapacity": 2,
-    "DefaultTargetCapacityType": "on-demand"
+        "TotalTargetCapacity": 2,
+        "DefaultTargetCapacityType": "on-demand"
     }
 }
 ```
@@ -2562,6 +2685,7 @@ Output:
     "FleetId": "fleet-12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE"
 }
 ```
+For more information, see [Create an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-fleet.html) in the *Amazon EC2 User Guide*.
 **Example 3: To create an EC2 Fleet that launches On-Demand Instances as the primary capacity**
 The following `create-fleet` example creates an EC2 Fleet that specifies the total target capacity of 2 instances for the fleet, and a target capacity of 1 On-Demand Instance. The default purchasing model is `spot`. The fleet launches 1 On-Demand Instance as specified, but needs to launch one more instance to fulfil the total target capacity. The purchasing model for the difference is calculated as `TotalTargetCapacity` - `OnDemandTargetCapacity` = `DefaultTargetCapacityType`, which results in the fleet launching 1 Spot Instance.
 When you create an EC2 Fleet, use a JSON file to specify information about the instances to launch.
@@ -2570,21 +2694,21 @@ When you create an EC2 Fleet, use a JSON file to specify information about the i
 aws ec2 create-fleet \
     --cli-input-json {{file://file_name.json}}
 ```
-Contents of file\_name.json:
+Contents of `file_name.json`:
 
 ```
 {
     "LaunchTemplateConfigs": [
-    {
-        "LaunchTemplateSpecification": {
-        "LaunchTemplateId": "lt-0e8c754449b27161c",
-        "Version": "1"
+        {
+            "LaunchTemplateSpecification": {
+                "LaunchTemplateId": "lt-0e8c754449b27161c",
+                "Version": "1"
+            }
         }
-    }
     ],
     "TargetCapacitySpecification": {
         "TotalTargetCapacity": 2,
-        "OnDemandTargetCapacity":1,
+        "OnDemandTargetCapacity": 1,
         "DefaultTargetCapacityType": "spot"
     }
 }
@@ -2596,45 +2720,49 @@ Output:
     "FleetId": "fleet-12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE"
 }
 ```
+For more information, see [Create an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-fleet.html) in the *Amazon EC2 User Guide*.
 **Example 4: To create an EC2 Fleet that launches Spot Instances using the lowest-price allocation strategy**
-If the allocation strategy for Spot Instances is not specified, the default allocation strategy, which is `lowest-price`, is used. The following `create-fleet` example creates an EC2 Fleet using the `lowest-price` allocation strategy. The three launch specifications, which override the launch template, have different instance types but the same weighted capacity and subnet. The total target capacity is 2 instances and the default purchasing model is `spot`. The EC2 Fleet launches 2 Spot Instances using the instance type of the launch specification with the lowest price.
+The following `create-fleet` example creates an EC2 Fleet using the `lowest-price` allocation strategy. If the allocation strategy for Spot Instances is not specified, the default allocation strategy, which is `lowest-price`, is used. The three launch specifications, which override the launch template, have different instance types but the same weighted capacity and subnet. The total target capacity is 2 instances and the default purchasing model is `spot`. The EC2 Fleet launches 2 Spot Instances using the instance type of the launch specification with the lowest price.
 When you create an EC2 Fleet, use a JSON file to specify information about the instances to launch.
 
 ```
 aws ec2 create-fleet \
-    --cli-input-json {{file://file_name.jsonContents}} {{of}} {{file_name.json::}}
+    --cli-input-json {{file://file_name.json}}
+```
+Contents of `file_name.json`:
 
-{{{}}
-    "LaunchTemplateConfigs": {{[}}
-    {{{}}
-        "LaunchTemplateSpecification": {{{}}
-        "LaunchTemplateId": "lt-0e8c754449b27{{1}}61c",
-        "Version": "1"
-        {{},}}
-        "Overrides": {{[}}
-            {{{}}
-                "InstanceType": "c4.large",
-                "WeightedCapacity": {{1,}}
-                "SubnetId": {{"subnet-a4f6c5d3"}}
-            {{},}}
-            {{{}}
-                "InstanceType": "c3.large",
-                "WeightedCapacity": {{1,}}
-                "SubnetId": {{"subnet-a4f6c5d3"}}
-            {{},}}
-            {{{}}
-                "InstanceType": "c5.large",
-                "WeightedCapacity": {{1,}}
-                "SubnetId": {{"subnet-a4f6c5d3"}}
-            {{}}}
-        {{]}}
-    {{}}}
-    {{],}}
-    "TargetCapacitySpecification": {{{}}
-        "TotalTargetCapacity": {{2,}}
-        "DefaultTargetCapacityType": {{"spot"}}
-    {{}}}
-{{}}}
+```
+{
+    "LaunchTemplateConfigs": [
+        {
+            "LaunchTemplateSpecification": {
+                "LaunchTemplateId": "lt-0e8c754449b27161c",
+                "Version": "1"
+            },
+            "Overrides": [
+                {
+                    "InstanceType": "c4.large",
+                    "WeightedCapacity": 1,
+                    "SubnetId": "subnet-a4f6c5d3"
+                },
+                {
+                    "InstanceType": "c3.large",
+                    "WeightedCapacity": 1,
+                    "SubnetId": "subnet-a4f6c5d3"
+                },
+                {
+                    "InstanceType": "c5.large",
+                    "WeightedCapacity": 1,
+                    "SubnetId": "subnet-a4f6c5d3"
+                }
+            ]
+        }
+    ],
+    "TargetCapacitySpecification": {
+        "TotalTargetCapacity": 2,
+        "DefaultTargetCapacityType": "spot"
+    }
+}
 ```
 Output:
 
@@ -2643,6 +2771,7 @@ Output:
     "FleetId": "fleet-12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE"
 }
 ```
+For more information, see [Use allocation strategies to determine how EC2 Fleet or Spot Fleet fulfills Spot and On-Demand capacity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-allocation-strategy.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateFleet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-fleet.html) in *AWS CLI Command Reference*.
 
 ### `create-flow-logs`
@@ -2660,7 +2789,7 @@ aws ec2 create-flow-logs \
     --resource-ids {{eni-11223344556677889}} \
     --traffic-type {{REJECT}} \
     --log-group-name {{my-flow-logs}} \
-    --deliver-logs-permission-arn {{arn:aws:iam::123456789101:role/publishFlowLogs}}
+    --deliver-logs-permission-arn {{arn:aws:iam::123456789012:role/publishFlowLogs}}
 ```
 Output:
 
@@ -2683,8 +2812,19 @@ aws ec2 create-flow-logs \
     --resource-ids {{vpc-00112233344556677}} \
     --traffic-type {{ALL}} \
     --log-destination-type {{s3}} \
-    --log-destination {{arn:aws:s3:::flow-log-bucket/my-custom-flow-logs/}} \
+    --log-destination {{arn:aws:s3:::amzn-s3-demo-bucket/my-custom-flow-logs/}} \
     --log-format '{{${version} ${vpc-id} ${subnet-id} ${instance-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${tcp-flags} ${type} ${pkt-srcaddr} ${pkt-dstaddr}}}'
+```
+Output:
+
+```
+{
+    "ClientToken": "so0eNA2uSHUNlHI0S2cJ305GuIX1CezaRdGtexample",
+    "FlowLogIds": [
+        "fl-1a2b3c4d5e6f7a8b9"
+    ],
+    "Unsuccessful": []
+}
 ```
 For more information, see [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) in the *Amazon VPC User Guide*.
 **Example 3: To create a flow log with a one-minute maximum aggregation interval**
@@ -2696,8 +2836,19 @@ aws ec2 create-flow-logs \
     --resource-ids {{vpc-00112233344556677}} \
     --traffic-type {{ALL}} \
     --log-destination-type {{s3}} \
-    --log-destination {{arn:aws:s3:::flow-log-bucket/my-custom-flow-logs/}} \
+    --log-destination {{arn:aws:s3:::amzn-s3-demo-bucket/my-custom-flow-logs/}} \
     --max-aggregation-interval {{60}}
+```
+Output:
+
+```
+{
+    "ClientToken": "so0eNA2uSHUNlHI0S2cJ305GuIX1CezaRdGtexample",
+    "FlowLogIds": [
+        "fl-0a1b2c3d4e5f6a7b8"
+    ],
+    "Unsuccessful": []
+}
 ```
 For more information, see [VPC Flow Logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateFlowLogs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-flow-logs.html) in *AWS CLI Command Reference*.
@@ -2709,20 +2860,24 @@ The following code example shows how to use `create-fpga-image`.
 
 **AWS CLI**
 **To create an Amazon FPGA image**
-This example creates an AFI from the specified tarball in the specified bucket.
-Command:
+The following `create-fpga-image` example creates an AFI from the specified tarball in the specified bucket.
 
 ```
-aws ec2 create-fpga-image --name {{my-afi}} --description {{test-afi}} --input-storage-location {{Bucket=my-fpga-bucket,Key=dcp/17_12_22-103226.Developer_CL.tar}} --logs-storage-location {{Bucket=my-fpga-bucket,Key=logs}}
+aws ec2 create-fpga-image \
+    --name {{my-afi}} \
+    --description {{test-afi}} \
+    --input-storage-location {{Bucket=my-fpga-bucket,Key=dcp/17_12_22-103226.Developer_CL.tar}} \
+    --logs-storage-location {{Bucket=my-fpga-bucket,Key=logs}}
 ```
 Output:
 
 ```
 {
-  "FpgaImageId": "afi-0d123e123bfc85abc",
-  "FpgaImageGlobalId": "agfi-123cb27b5e84a0abc"
+    "FpgaImageId": "afi-0d123e123bfc85abc",
+    "FpgaImageGlobalId": "agfi-123cb27b5e84a0abc"
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [CreateFpgaImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-fpga-image.html) in *AWS CLI Command Reference*.
 
 ### `create-image`
@@ -2747,7 +2902,7 @@ Output:
     "ImageId": "ami-abcdef01234567890"
 }
 ```
-For more information about specifying a block device mapping for your AMI, see [Specifying a block device mapping for an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html#create-ami-bdm) in the *Amazon EC2 User Guide*.
+For more information about specifying a block device mapping for your AMI, see [Specifying a block device mapping for an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
 **Example 2: To create an AMI from an Amazon EBS-backed instance without reboot**
 The following `create-image` example creates an AMI and sets the --no-reboot parameter, so that the instance is not rebooted before the image is created.
 
@@ -2764,9 +2919,9 @@ Output:
     "ImageId": "ami-abcdef01234567890"
 }
 ```
-For more information about specifying a block device mapping for your AMI, see [Specifying a block device mapping for an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html#create-ami-bdm) in the *Amazon EC2 User Guide*.
+For more information about specifying a block device mapping for your AMI, see [Specifying a block device mapping for an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
 **Example 3: To tag an AMI and snapshots on creation**
-The following `create-image` example creates an AMI, and tags the AMI and the snapshots with the same tag `cost-center=cc123`
+The following `create-image` example creates an AMI, and tags the AMI and the snapshots with the same tag `cost-center=cc123`.
 
 ```
 aws ec2 create-image \
@@ -2781,7 +2936,7 @@ Output:
     "ImageId": "ami-abcdef01234567890"
 }
 ```
-For more information about tagging your resources on creation, see [Add tags on resource creation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-on-create-examples) in the *Amazon EC2 User Guide*.
+For more information about tagging your resources on creation, see [Add tags on resource creation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-image.html) in *AWS CLI Command Reference*.
 
 ### `create-instance-connect-endpoint`
@@ -2795,32 +2950,33 @@ The following `create-instance-connect-endpoint` example creates an EC2 Instance
 
 ```
 aws ec2 create-instance-connect-endpoint \
-    --region {{us-east-1}} \
     --subnet-id {{subnet-0123456789example}}
 ```
 Output:
 
 ```
 {
-    "VpcId": "vpc-0123abcd",
-    "InstanceConnectEndpointArn": "arn:aws:ec2:us-east-1:111111111111:instance-connect-endpoint/eice-0123456789example",
-    "AvailabilityZone": "us-east-1a",
-    "NetworkInterfaceIds": [
-        "eni-0123abcd"
-    ],
-    "PreserveClientIp": true,
-    "Tags": [],
-    "FipsDnsName": "eice-0123456789example.0123abcd.fips.ec2-instance-connect-endpoint.us-east-1.amazonaws.com",
-    "StateMessage": "",
-    "State": "create-complete",
-    "DnsName": "eice-0123456789example.0123abcd.ec2-instance-connect-endpoint.us-east-1.amazonaws.com",
-    "SubnetId": "subnet-0123abcd",
-    "OwnerId": "111111111111",
-    "SecurityGroupIds": [
-        "sg-0123abcd"
-    ],
-    "InstanceConnectEndpointId": "eice-0123456789example",
-    "CreatedAt": "2023-04-07T15:43:53.000Z"
+    "InstanceConnectEndpoint": {
+        "VpcId": "vpc-0123abcd",
+        "InstanceConnectEndpointArn": "arn:aws:ec2:us-west-2:123456789012:instance-connect-endpoint/eice-0123456789example",
+        "AvailabilityZone": "us-west-2a",
+        "NetworkInterfaceIds": [
+            "eni-0123abcd"
+        ],
+        "PreserveClientIp": true,
+        "Tags": [],
+        "FipsDnsName": "eice-0123456789example.0123abcd.fips.ec2-instance-connect-endpoint.us-west-2.amazonaws.com",
+        "StateMessage": "",
+        "State": "create-complete",
+        "DnsName": "eice-0123456789example.0123abcd.ec2-instance-connect-endpoint.us-west-2.amazonaws.com",
+        "SubnetId": "subnet-0123abcd",
+        "OwnerId": "123456789012",
+        "SecurityGroupIds": [
+            "sg-0123abcd"
+        ],
+        "InstanceConnectEndpointId": "eice-0123456789example",
+        "CreatedAt": "2023-04-07T15:43:53.000Z"
+    }
 }
 ```
 For more information, see [Create an EC2 Instance Connect Endpoint](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-ec2-instance-connect-endpoints.html) in the *Amazon EC2 User Guide*.
@@ -2837,7 +2993,6 @@ The following `create-instance-event-window` example creates an event window wit
 
 ```
 aws ec2 create-instance-event-window \
-    --region {{us-east-1}} \
     --time-range {{StartWeekDay=monday,StartHour=2,EndWeekDay=wednesday,EndHour=8}} \
     --tag-specifications {{"ResourceType=instance-event-window,Tags=[{Key=K1,Value=V1}]"}} \
     --name {{myEventWindowName}}
@@ -2867,13 +3022,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 2: To create an event window with a cron expression**
 The following `create-instance-event-window` example creates an event window with a cron expression. You can't also specify the `time-range` parameter.
 
 ```
 aws ec2 create-instance-event-window \
-    --region {{us-east-1}} \
     --cron-expression {{"* 21-23 * * 2,3"}} \
     --tag-specifications {{"ResourceType=instance-event-window,Tags=[{Key=K1,Value=V1}]"}} \
     --name {{myEventWindowName}}
@@ -2896,7 +3050,7 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateInstanceEventWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-instance-event-window.html) in *AWS CLI Command Reference*.
 
 ### `create-instance-export-task`
@@ -2906,11 +3060,14 @@ The following code example shows how to use `create-instance-export-task`.
 
 **AWS CLI**
 **To export an instance**
-This example command creates a task to export the instance i-1234567890abcdef0 to the Amazon S3 bucket myexportbucket.
-Command:
+The following `create-instance-export-task` example creates a task to export the instance i-1234567890abcdef0 to the Amazon S3 bucket myexportbucket.
 
 ```
-aws ec2 create-instance-export-task --description {{"RHEL5 instance"}} --instance-id {{i-1234567890abcdef0}} --target-environment {{vmware}} --export-to-s3-task {{DiskImageFormat=vmdk,ContainerFormat=ova,S3Bucket=myexportbucket,S3Prefix=RHEL5}}
+aws ec2 create-instance-export-task \
+    --description {{"RHEL5 instance"}} \
+    --instance-id {{i-1234567890abcdef0}} \
+    --target-environment {{vmware}} \
+    --export-to-s3-task {{DiskImageFormat=vmdk,ContainerFormat=ova,S3Bucket=myexportbucket,S3Prefix=RHEL5}}
 ```
 Output:
 
@@ -2933,6 +3090,7 @@ Output:
     }
 }
 ```
+For more information, see [Export an EC2 instance as a VM using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html) in the *VM Import/Export User Guide*.
 +  For API details, see [CreateInstanceExportTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-instance-export-task.html) in *AWS CLI Command Reference*.
 
 ### `create-internet-gateway`
@@ -2976,7 +3134,7 @@ The following code example shows how to use `create-ipam-pool`.
 **AWS CLI**
 **To create an IPAM pool**
 The following `create-ipam-pool` example creates an IPAM pool.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 create-ipam-pool \
@@ -2989,7 +3147,7 @@ aws ec2 create-ipam-pool \
     --allocation-resource-tags {{"Key=Environment,Value=Preprod"}} \
     --tag-specifications '{{ResourceType=ipam-pool,Tags=[{Key=Name,Value="Preprod pool"}]}}'
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 create-ipam-pool {{^}}
@@ -3013,7 +3171,7 @@ Output:
         "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-02fc38cd4c48e7d38",
         "IpamScopeType": "private",
         "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-        "IpamRegion": "us-east-1",
+        "IpamRegion": "us-west-2",
         "Locale": "None",
         "PoolDepth": 1,
         "State": "create-in-progress",
@@ -3047,11 +3205,11 @@ The following code example shows how to use `create-ipam-resource-discovery`.
 
 **AWS CLI**
 **To create a resource discovery**
-In this example, you're a delegated IPAM admin who wants to create and share a resource discovery with the IPAM admin in another AWS Organization so that the admin in the other organization can manage and monitor the IP addresses of resources in your organization.
+The following `create-ipam-resource-discovery` example creates an IPAM resource discovery. In this example, you're a delegated IPAM admin who wants to create and share a resource discovery with the IPAM admin in another AWS Organization so that the admin in the other organization can manage and monitor the IP addresses of resources in your organization.
 Important
 This example includes both the `--region` and `--operating-regions` options because, while they are optional, they must be configured in a particular way to successfully integrate a resource discovery with an IPAM. \* `--operating-regions` must match the Regions where you have resources that you want IPAM to discover. If there are Regions where you do not want IPAM to manage the IP addresses (for example for compliance reasons), do not include them. \* `--region` must match the home Region of the IPAM you want to associate it with. You must create the resource discovery in the same Region that the IPAM was created in. For example, if the IPAM you are associating with was created in us-east-1, include `--region us-east-1` in the request.Both the `--region` and `--operating-regions` options default to the Region you're running the command in if you don't specify them.
 In this example, the operating Regions of the IPAM we're integrating with include `us-west-1`, `us-west-2`, and `ap-south-1`. When we create the resource discovery, we want IPAM to discover the resource IP addresses in `us-west-1` and `us-west-2` but not `ap-south-1`. So we are including only `--operating-regions RegionName='us-west-1' RegionName='us-west-2'` in the request.
-The following `create-ipam-resource-discovery` example creates an IPAM resource discovery.
+To create the resource discovery, use the following command.
 
 ```
 aws ec2 create-ipam-resource-discovery \
@@ -3065,9 +3223,9 @@ Output:
 ```
 {
     "IpamResourceDiscovery":{
-        "OwnerId": "149977607591",
+        "OwnerId": "123456789012",
         "IpamResourceDiscoveryId": "ipam-res-disco-0257046d8aa78b8bc",
-        "IpamResourceDiscoveryArn": "arn:aws:ec2::149977607591:ipam-resource-discovery/ipam-res-disco-0257046d8aa78b8bc",
+        "IpamResourceDiscoveryArn": "arn:aws:ec2::123456789012:ipam-resource-discovery/ipam-res-disco-0257046d8aa78b8bc",
         "IpamResourceDiscoveryRegion": "us-east-1",
         "Description": "'Example-resource-discovery'",
         "OperatingRegions":[
@@ -3083,6 +3241,7 @@ Output:
                 "Value": "cc123"
             }
         ]
+    }
 }
 ```
 Once you create a resource discovery, you may want to share it with another IPAM delegated admin, which you can do with [create-resource-share](https://docs.aws.amazon.com/cli/latest/reference/ram/create-resource-share.html). For more information, see [Integrate IPAM with accounts outside of your organization](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam-outside-org.html) in the *Amazon VPC IPAM User Guide*.
@@ -3096,7 +3255,7 @@ The following code example shows how to use `create-ipam-scope`.
 **AWS CLI**
 **To create an IPAM scope**
 The following `create-ipam-scope` example creates an IPAM scope.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 create-ipam-scope \
@@ -3104,7 +3263,7 @@ aws ec2 create-ipam-scope \
     --description {{"Example description"}} \
     --tag-specifications '{{ResourceType=ipam-scope,Tags=[{Key=Name,Value="Example name value"}]}}'
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 create-ipam-scope {{^}}
@@ -3121,7 +3280,7 @@ Output:
         "IpamScopeId": "ipam-scope-01c1ebab2b63bd7e4",
         "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-01c1ebab2b63bd7e4",
         "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-        "IpamRegion": "us-east-1",
+        "IpamRegion": "us-west-2",
         "IpamScopeType": "private",
         "IsDefault": false,
         "Description": "Example description",
@@ -3147,7 +3306,7 @@ The following code example shows how to use `create-ipam`.
 **AWS CLI**
 **To create an IPAM**
 The following `create-ipam` example creates an IPAM.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 create-ipam \
@@ -3155,7 +3314,7 @@ aws ec2 create-ipam \
     --operating-regions {{"RegionName=us-east-2"}} {{"RegionName=us-west-1"}} \
     --tag-specifications '{{ResourceType=ipam,Tags=[{Key=Name,Value=ExampleIPAM}]}}'
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 create-ipam {{^}}
@@ -3206,14 +3365,24 @@ The following code example shows how to use `create-key-pair`.
 
 **AWS CLI**
 **To create a key pair**
-This example creates a key pair named `MyKeyPair`.
-Command:
+The following `create-key-pair` example creates a key pair named `MyKeyPair`.
 
 ```
-aws ec2 create-key-pair --key-name {{MyKeyPair}}
+aws ec2 create-key-pair \
+    --key-name {{MyKeyPair}}
 ```
 The output is an ASCII version of the private key and key fingerprint. You need to save the key to a file.
-For more information, see Using Key Pairs in the *AWS Command Line Interface User Guide*.
+Output:
+
+```
+{
+    "KeyFingerprint": "1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca:9f:f5:f1:6f",
+    "KeyMaterial": "-----BEGIN RSA PRIVATE KEY-----\nEXAMPLEKEYMATERIAL\n-----END RSA PRIVATE KEY-----",
+    "KeyName": "MyKeyPair",
+    "KeyPairId": "key-0b94643da6EXAMPLE"
+}
+```
+For more information, see [Creating, displaying, and deleting Amazon EC2 key pairs in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-keypairs.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [CreateKeyPair](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-key-pair.html) in *AWS CLI Command Reference*.
 
 ### `create-launch-template-version`
@@ -3223,43 +3392,47 @@ The following code example shows how to use `create-launch-template-version`.
 
 **AWS CLI**
 **To create a launch template version**
-This example creates a new launch template version based on version 1 of the launch template and specifies a different AMI ID.
-Command:
+The following `create-launch-template-version` example creates a new launch template version based on version 1 of the launch template and specifies a different AMI ID.
 
 ```
-aws ec2 create-launch-template-version --launch-template-id {{lt-0abcd290751193123}} --version-description {{WebVersion2}} --source-version {{1}} --launch-template-data '{{{"ImageId":"ami-c998b6b2"}}}'
+aws ec2 create-launch-template-version \
+    --launch-template-id {{lt-0abcd1234567890ab}} \
+    --version-description {{WebVersion2}} \
+    --source-version {{1}} \
+    --launch-template-data '{{{"ImageId":"ami-c998b6b2"}}}'
 ```
 Output:
 
 ```
 {
-  "LaunchTemplateVersion": {
-      "VersionDescription": "WebVersion2",
-      "LaunchTemplateId": "lt-0abcd290751193123",
-      "LaunchTemplateName": "WebServers",
-      "VersionNumber": 2,
-      "CreatedBy": "arn:aws:iam::123456789012:root",
-      "LaunchTemplateData": {
-          "ImageId": "ami-c998b6b2",
-          "InstanceType": "t2.micro",
-          "NetworkInterfaces": [
-              {
-                  "Ipv6Addresses": [
-                      {
-                          "Ipv6Address": "2001:db8:1234:1a00::123"
-                      }
-                  ],
-                  "DeviceIndex": 0,
-                  "SubnetId": "subnet-7b16de0c",
-                  "AssociatePublicIpAddress": true
-              }
-          ]
-      },
-      "DefaultVersion": false,
-      "CreateTime": "2017-12-01T13:35:46.000Z"
-  }
+    "LaunchTemplateVersion": {
+        "VersionDescription": "WebVersion2",
+        "LaunchTemplateId": "lt-0abcd1234567890ab",
+        "LaunchTemplateName": "WebServers",
+        "VersionNumber": 2,
+        "CreatedBy": "arn:aws:iam::123456789012:root",
+        "LaunchTemplateData": {
+            "ImageId": "ami-c998b6b2",
+            "InstanceType": "t2.micro",
+            "NetworkInterfaces": [
+                {
+                    "Ipv6Addresses": [
+                        {
+                            "Ipv6Address": "2001:db8:1234:1a00::123"
+                        }
+                    ],
+                    "DeviceIndex": 0,
+                    "SubnetId": "subnet-7b16de0c",
+                    "AssociatePublicIpAddress": true
+                }
+            ]
+        },
+        "DefaultVersion": false,
+        "CreateTime": "2017-12-01T13:35:46.000Z"
+    }
 }
 ```
+For more information, see [Modify a launch template (manage launch template versions)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-launch-template-versions.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateLaunchTemplateVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-launch-template-version.html) in *AWS CLI Command Reference*.
 
 ### `create-launch-template`
@@ -3291,7 +3464,7 @@ Output:
     }
 }
 ```
-For more information, see Launching an Instance from a Launch Template in the *Amazon Elastic Compute Cloud User Guide*. For information about quoting JSON-formatted parameters, see Quoting Strings in the *AWS Command Line Interface User Guide*.
+For more information, see [Store instance launch parameters in Amazon EC2 launch templates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html) in the *Amazon EC2 User Guide*. For information about quoting JSON-formatted parameters, see [Using quotation marks and literals with strings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-quoting-strings.html) in the *AWS Command Line Interface User Guide*.
 **Example 2: To create a launch template for Amazon EC2 Auto Scaling**
 The following `create-launch-template` example creates a launch template with multiple tags and a block device mapping to specify an additional EBS volume when an instance launches. Specify a value for `Groups` that corresponds to security groups for the VPC that your Auto Scaling group will launch instances into. Specify the VPC and subnets as properties of the Auto Scaling group.
 
@@ -3299,7 +3472,7 @@ The following `create-launch-template` example creates a launch template with mu
 aws ec2 create-launch-template \
     --launch-template-name {{TemplateForAutoScaling}} \
     --version-description {{AutoScalingVersion1}} \
-    --launch-template-data '{{{"NetworkInterfaces":[{"DeviceIndex":0,"AssociatePublicIpAddress":true,"Groups":["sg-7c227019,sg-903004f8"],"DeleteOnTermination":true}],"ImageId":"ami-b42209de","InstanceType":"m4.large","TagSpecifications":[{"ResourceType":"instance","Tags":[{"Key":"environment","Value":"production"},{"Key":"purpose","Value":"webserver"}]},{"ResourceType":"volume","Tags":[{"Key":"environment","Value":"production"},{"Key":"cost-center","Value":"cc123"}]}],"BlockDeviceMappings":[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":100}}]}}}' --region {{us-east-1}}
+    --launch-template-data '{{{"NetworkInterfaces":[{"DeviceIndex":0,"AssociatePublicIpAddress":true,"Groups":["sg-7c227019,sg-903004f8"],"DeleteOnTermination":true}],"ImageId":"ami-b42209de","InstanceType":"m4.large","TagSpecifications":[{"ResourceType":"instance","Tags":[{"Key":"environment","Value":"production"},{"Key":"purpose","Value":"webserver"}]},{"ResourceType":"volume","Tags":[{"Key":"environment","Value":"production"},{"Key":"cost-center","Value":"cc123"}]}],"BlockDeviceMappings":[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":100}}]}}}'
 ```
 Output:
 
@@ -3315,14 +3488,14 @@ Output:
     }
 }
 ```
-For more information, see Creating a Launch Template for an Auto Scaling Group in the *Amazon EC2 Auto Scaling User Guide*. For information about quoting JSON-formatted parameters, see Quoting Strings in the *AWS Command Line Interface User Guide*.
+For more information, see [Create a launch template for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) in the *Amazon EC2 Auto Scaling User Guide*. For information about quoting JSON-formatted parameters, see [Using quotation marks and literals with strings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-quoting-strings.html) in the *AWS Command Line Interface User Guide*.
 **Example 3: To create a launch template that specifies encryption of EBS volumes**
 The following `create-launch-template` example creates a launch template that includes encrypted EBS volumes created from an unencrypted snapshot. It also tags the volumes during creation. If encryption by default is disabled, you must specify the `"Encrypted"` option as shown in the following example. If you use the `"KmsKeyId"` option to specify a customer managed CMK, you also must specify the `"Encrypted"` option even if encryption by default is enabled.
 
 ```
 aws ec2 create-launch-template \
-  --launch-template-name {{TemplateForEncryption}} \
-  --launch-template-data {{file://config.json}}
+    --launch-template-name {{TemplateForEncryption}} \
+    --launch-template-data {{file://config.json}}
 ```
 Contents of `config.json`:
 
@@ -3334,9 +3507,9 @@ Contents of `config.json`:
             "Ebs":{
                 "VolumeType":"gp2",
                 "DeleteOnTermination":true,
-                "SnapshotId":"snap-066877671789bd71b",
+                "SnapshotId":"snap-0abcdef1234567890",
                 "Encrypted":true,
-                "KmsKeyId":"arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef"
+                "KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         }
     ],
@@ -3369,7 +3542,7 @@ Output:
     }
 }
 ```
-For more information, see Restoring an Amazon EBS Volume from a Snapshot and Encryption by Default in the *Amazon Elastic Compute Cloud User Guide*.
+For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume.html) and [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 +  For API details, see [CreateLaunchTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-launch-template.html) in *AWS CLI Command Reference*.
 
 ### `create-local-gateway-route-table-virtual-interface-group-association`
@@ -3395,14 +3568,14 @@ Output:
         "LocalGatewayVirtualInterfaceGroupId": "lgw-vif-grp-exampleid0123abcd",
         "LocalGatewayId": "lgw-exampleid11223344",
         "LocalGatewayRouteTableId": "lgw-rtb-exampleidabcd1234",
-        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:111122223333:local-gateway-route-table/lgw-rtb-exampleidabcd1234",
-        "OwnerId": "111122223333",
+        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:local-gateway-route-table/lgw-rtb-exampleidabcd1234",
+        "OwnerId": "123456789012",
         "State": "pending",
         "Tags": []
     }
 }
 ```
-For more information, see [VIF group associations](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#vif-group-associations) in the *AWS Outposts User Guide*.
+For more information, see [VIF group associations](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [CreateLocalGatewayRouteTableVirtualInterfaceGroupAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-local-gateway-route-table-virtual-interface-group-association.html) in *AWS CLI Command Reference*.
 
 ### `create-local-gateway-route-table-vpc-association`
@@ -3432,6 +3605,7 @@ Output:
     }
 }
 ```
+For more information, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [CreateLocalGatewayRouteTableVpcAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-local-gateway-route-table-vpc-association.html) in *AWS CLI Command Reference*.
 
 ### `create-local-gateway-route-table`
@@ -3454,10 +3628,10 @@ Output:
 {
     "LocalGatewayRouteTable": {
         "LocalGatewayRouteTableId": "lgw-rtb-abcdefg1234567890",
-        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:111122223333:local-gateway-route-table/lgw-rtb-abcdefg1234567890",
+        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:local-gateway-route-table/lgw-rtb-abcdefg1234567890",
         "LocalGatewayId": "lgw-1a2b3c4d5e6f7g8h9",
-        "OutpostArn": "arn:aws:outposts:us-west-2:111122223333:outpost/op-021345abcdef67890",
-        "OwnerId": "111122223333",
+        "OutpostArn": "arn:aws:outposts:us-west-2:123456789012:outpost/op-021345abcdef67890",
+        "OwnerId": "123456789012",
         "State": "pending",
         "Tags": [],
         "Mode": "direct-vpc-routing"
@@ -3494,6 +3668,7 @@ Output:
     }
 }
 ```
+For more information, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [CreateLocalGatewayRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-local-gateway-route.html) in *AWS CLI Command Reference*.
 
 ### `create-managed-prefix-list`
@@ -3601,18 +3776,34 @@ The following code example shows how to use `create-network-acl-entry`.
 
 **AWS CLI**
 **To create a network ACL entry**
-This example creates an entry for the specified network ACL. The rule allows ingress traffic from any IPv4 address (0.0.0.0/0) on UDP port 53 (DNS) into any associated subnet. If the command succeeds, no output is returned.
-Command:
+The following `create-network-acl-entry` example creates an entry for the specified network ACL. The rule allows ingress traffic from any IPv4 address (0.0.0.0/0) on UDP port 53 (DNS) into any associated subnet.
 
 ```
-aws ec2 create-network-acl-entry --network-acl-id {{acl-5fb85d36}} --ingress --rule-number {{100}} --protocol {{udp}} --port-range {{From=53,To=53}} --cidr-block {{0.0.0.0/0}} --rule-action {{allow}}
+aws ec2 create-network-acl-entry \
+    --network-acl-id {{acl-5fb85d36}} \
+    --ingress \
+    --rule-number {{100}} \
+    --protocol {{udp}} \
+    --port-range {{From=53,To=53}} \
+    --cidr-block {{0.0.0.0/0}} \
+    --rule-action {{allow}}
 ```
-This example creates a rule for the specified network ACL that allows ingress traffic from any IPv6 address (::/0) on TCP port 80 (HTTP).
-Command:
+This command produces no output.
+For more information, see [Network ACL rules](https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html) in the *Amazon VPC User Guide*.
+The following `create-network-acl-entry` example creates a rule for the specified network ACL that allows ingress traffic from any IPv6 address (::/0) on TCP port 80 (HTTP).
 
 ```
-aws ec2 create-network-acl-entry --network-acl-id {{acl-5fb85d36}} --ingress --rule-number {{120}} --protocol {{tcp}} --port-range {{From=80,To=80}} --ipv6-cidr-block {{::/0}} --rule-action {{allow}}
+aws ec2 create-network-acl-entry \
+    --network-acl-id {{acl-5fb85d36}} \
+    --ingress \
+    --rule-number {{120}} \
+    --protocol {{tcp}} \
+    --port-range {{From=80,To=80}} \
+    --ipv6-cidr-block {{::/0}} \
+    --rule-action {{allow}}
 ```
+This command produces no output.
+For more information, see [Network ACL rules](https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateNetworkAclEntry](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-network-acl-entry.html) in *AWS CLI Command Reference*.
 
 ### `create-network-acl`
@@ -3622,11 +3813,11 @@ The following code example shows how to use `create-network-acl`.
 
 **AWS CLI**
 **To create a network ACL**
-This example creates a network ACL for the specified VPC.
-Command:
+The following `create-network-acl` example creates a network ACL for the specified VPC.
 
 ```
-aws ec2 create-network-acl --vpc-id {{vpc-a01106c2}}
+aws ec2 create-network-acl \
+    --vpc-id {{vpc-a01106c2}}
 ```
 Output:
 
@@ -3657,6 +3848,7 @@ Output:
     }
 }
 ```
+For more information, see [Create a network ACL for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/create-network-acl.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateNetworkAcl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-network-acl.html) in *AWS CLI Command Reference*.
 
 ### `create-network-insights-access-scope`
@@ -3685,7 +3877,7 @@ Contents of `access-scope-file.json`:
                     ]
                 }
             }
-         }
+        }
     ],
     "ExcludePaths": [
         {
@@ -3706,7 +3898,7 @@ Output:
 {
     "NetworkInsightsAccessScope": {
         "NetworkInsightsAccessScopeId": "nis-123456789abc01234",
-        "NetworkInsightsAccessScopeArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-access-scope/nis-123456789abc01234",
+        "NetworkInsightsAccessScopeArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-access-scope/nis-123456789abc01234",
         "CreatedDate": "2022-01-25T19:20:28.796000+00:00",
         "UpdatedDate": "2022-01-25T19:20:28.797000+00:00"
     },
@@ -3760,9 +3952,9 @@ Output:
 
 ```
 {
-    "NetworkInsightsPaths": {
+    "NetworkInsightsPath": {
         "NetworkInsightsPathId": "nip-0b26f224f1d131fa8",
-        "NetworkInsightsPathArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-path/nip-0b26f224f1d131fa8",
+        "NetworkInsightsPathArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-path/nip-0b26f224f1d131fa8",
         "CreatedDate": "2021-01-20T22:43:46.933Z",
         "Source": "igw-0797cccdc9d73b0e5",
         "Destination": "i-0495d385ad28331c7",
@@ -3780,27 +3972,30 @@ The following code example shows how to use `create-network-interface-permission
 
 **AWS CLI**
 **To create a network interface permission**
-This example grants permission to account `123456789012` to attach network interface `eni-1a2b3c4d` to an instance.
-Command:
+The following `create-network-interface-permission` example grants permission to account `123456789012` to attach network interface `eni-1a2b3c4d` to an instance.
 
 ```
-aws ec2 create-network-interface-permission --network-interface-id {{eni-1a2b3c4d}} --aws-account-id {{123456789012}} --permission {{INSTANCE-ATTACH}}
+aws ec2 create-network-interface-permission \
+    --network-interface-id {{eni-1a2b3c4d}} \
+    --aws-account-id {{123456789012}} \
+    --permission {{INSTANCE-ATTACH}}
 ```
 Output:
 
 ```
 {
-  "InterfacePermission": {
-      "PermissionState": {
-          "State": "GRANTED"
-      },
-      "NetworkInterfacePermissionId": "eni-perm-06fd19020ede149ea",
-      "NetworkInterfaceId": "eni-1a2b3c4d",
-      "Permission": "INSTANCE-ATTACH",
-      "AwsAccountId": "123456789012"
-  }
+    "InterfacePermission": {
+        "PermissionState": {
+            "State": "GRANTED"
+        },
+        "NetworkInterfacePermissionId": "eni-perm-06fd19020ede149ea",
+        "NetworkInterfaceId": "eni-1a2b3c4d",
+        "Permission": "INSTANCE-ATTACH",
+        "AwsAccountId": "123456789012"
+    }
 }
 ```
+For more information, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateNetworkInterfacePermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-network-interface-permission.html) in *AWS CLI Command Reference*.
 
 ### `create-network-interface`
@@ -4015,20 +4210,52 @@ For more information, see [Elastic network interfaces](https://docs.aws.amazon.c
 The following code example shows how to use `create-placement-group`.
 
 **AWS CLI**
-**To create a placement group**
-This example command creates a placement group with the specified name.
-Command:
+**Example 1: To create a placement group**
+The following `create-placement-group` example creates a placement group with the specified name.
 
 ```
-aws ec2 create-placement-group --group-name {{my-cluster}} --strategy {{cluster}}
+aws ec2 create-placement-group \
+    --group-name {{my-cluster}} \
+    --strategy {{cluster}}
 ```
-**To create a partition placement group**
-This example command creates a partition placement group named `HDFS-Group-A` with five partitions.
-Command:
+Output:
 
 ```
-aws ec2 create-placement-group --group-name {{HDFS-Group-A}} --strategy {{partition}} --partition-count {{5}}
+{
+    "PlacementGroup": {
+        "GroupName": "my-cluster",
+        "State": "available",
+        "Strategy": "cluster",
+        "GroupId": "pg-0123456789example",
+        "GroupArn": "arn:aws:ec2:us-west-2:123456789012:placement-group/my-cluster"
+    }
+}
 ```
+For more information, see [Placement groups for your Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide*.
+**Example 2: To create a partition placement group**
+The following `create-placement-group` example creates a partition placement group named `HDFS-Group-A` with five partitions.
+
+```
+aws ec2 create-placement-group \
+    --group-name {{HDFS-Group-A}} \
+    --strategy {{partition}} \
+    --partition-count {{5}}
+```
+Output:
+
+```
+{
+    "PlacementGroup": {
+        "GroupName": "HDFS-Group-A",
+        "State": "available",
+        "Strategy": "partition",
+        "PartitionCount": 5,
+        "GroupId": "pg-0abcdef1234example",
+        "GroupArn": "arn:aws:ec2:us-west-2:123456789012:placement-group/HDFS-Group-A"
+    }
+}
+```
+For more information, see [Placement strategies for your placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-strategies.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreatePlacementGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-placement-group.html) in *AWS CLI Command Reference*.
 
 ### `create-replace-root-volume-task`
@@ -4051,10 +4278,10 @@ Output:
     "ReplaceRootVolumeTask":
     {
         "InstanceId": "i-0123456789abcdefa",
-            "ReplaceRootVolumeTaskId": "replacevol-0111122223333abcd",
-            "TaskState": "pending",
-            "StartTime": "2022-03-14T15:06:38Z",
-            "Tags": []
+        "ReplaceRootVolumeTaskId": "replacevol-0111122223333abcd",
+        "TaskState": "pending",
+        "StartTime": "2022-03-14T15:06:38Z",
+        "Tags": []
     }
 }
 ```
@@ -4094,11 +4321,56 @@ The following `create-reserved-instances-listing` example creates a listing for 
 
 ```
 aws ec2 create-reserved-instances-listing \
-    --reserved-instances-id {{5ec28771-05ff-4b9b-aa31-9e57dexample}} \
+    --reserved-instances-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --instance-count {{3}} \
     --price-schedules {{CurrencyCode=USD,Price=25.50}} \
-    --client-token {{550e8400-e29b-41d4-a716-446655440000}}
+    --client-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
+Output:
+
+```
+{
+    "ReservedInstancesListings": [
+        {
+            "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "CreateDate": "2024-05-14T18:12:30.000Z",
+            "InstanceCounts": [
+                {
+                    "InstanceCount": 3,
+                    "State": "available"
+                },
+                {
+                    "InstanceCount": 0,
+                    "State": "sold"
+                },
+                {
+                    "InstanceCount": 0,
+                    "State": "cancelled"
+                },
+                {
+                    "InstanceCount": 0,
+                    "State": "pending"
+                }
+            ],
+            "PriceSchedules": [
+                {
+                    "Active": true,
+                    "CurrencyCode": "USD",
+                    "Price": 25.5,
+                    "Term": 11
+                }
+            ],
+            "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ReservedInstancesListingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Status": "active",
+            "StatusMessage": "active",
+            "Tags": [],
+            "UpdateDate": "2024-05-14T18:12:30.000Z"
+        }
+    ]
+}
+```
+For more information, see [Sell Reserved Instances for Amazon EC2 in the Reserved Instance Marketplace](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-general.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateReservedInstancesListing](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-reserved-instances-listing.html) in *AWS CLI Command Reference*.
 
 ### `create-restore-image-task`
@@ -4113,7 +4385,7 @@ The following `create-restore-image-task` example restores an AMI from an S3 buc
 ```
 aws ec2 create-restore-image-task \
     --object-key {{ami-1234567890abcdef0.bin}} \
-    --bucket {{my-ami-bucket}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --name '{{New AMI Name}}'
 ```
 Output:
@@ -4133,11 +4405,11 @@ The following code example shows how to use `create-route-table`.
 
 **AWS CLI**
 **To create a route table**
-This example creates a route table for the specified VPC.
-Command:
+The following `create-route-table` example creates a route table for the specified VPC.
 
 ```
-aws ec2 create-route-table --vpc-id {{vpc-a01106c2}}
+aws ec2 create-route-table \
+    --vpc-id {{vpc-a01106c2}}
 ```
 Output:
 
@@ -4159,6 +4431,7 @@ Output:
     }
 }
 ```
+For more information, see [Create a route table for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-route-table.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-route-table.html) in *AWS CLI Command Reference*.
 
 ### `create-route`
@@ -4168,24 +4441,54 @@ The following code example shows how to use `create-route`.
 
 **AWS CLI**
 **To create a route**
-This example creates a route for the specified route table. The route matches all IPv4 traffic (`0.0.0.0/0`) and routes it to the specified Internet gateway. If the command succeeds, no output is returned.
-Command:
+The following `create-route` example creates a route for the specified route table. The route matches all IPv4 traffic (`0.0.0.0/0`) and routes it to the specified Internet gateway.
 
 ```
-aws ec2 create-route --route-table-id {{rtb-22574640}} --destination-cidr-block {{0.0.0.0/0}} --gateway-id {{igw-c0a643a9}}
+aws ec2 create-route \
+    --route-table-id {{rtb-22574640}} \
+    --destination-cidr-block {{0.0.0.0/0}} \
+    --gateway-id {{igw-c0a643a9}}
 ```
-This example command creates a route in route table rtb-g8ff4ea2. The route matches traffic for the IPv4 CIDR block 10.0.0.0/16 and routes it to VPC peering connection, pcx-111aaa22. This route enables traffic to be directed to the peer VPC in the VPC peering connection. If the command succeeds, no output is returned.
-Command:
+Output:
 
 ```
-aws ec2 create-route --route-table-id {{rtb-g8ff4ea2}} --destination-cidr-block {{10.0.0.0/16}} --vpc-peering-connection-id {{pcx-1a2b3c4d}}
+{
+    "Return": true
+}
 ```
-This example creates a route in the specified route table that matches all IPv6 traffic (`::/0`) and routes it to the specified egress-only Internet gateway.
-Command:
+For more information, see [Configure route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide*.
+The following `create-route` example creates a route in route table rtb-g8ff4ea2. The route matches traffic for the IPv4 CIDR block 10.0.0.0/16 and routes it to VPC peering connection, pcx-1a2b3c4d. This route enables traffic to be directed to the peer VPC in the VPC peering connection.
 
 ```
-aws ec2 create-route --route-table-id {{rtb-dce620b8}} --destination-ipv6-cidr-block {{::/0}} --egress-only-internet-gateway-id {{eigw-01eadbd45ecd7943f}}
+aws ec2 create-route \
+    --route-table-id {{rtb-g8ff4ea2}} \
+    --destination-cidr-block {{10.0.0.0/16}} \
+    --vpc-peering-connection-id {{pcx-1a2b3c4d}}
 ```
+Output:
+
+```
+{
+    "Return": true
+}
+```
+For more information, see [Update your route tables for a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-routing.html) in the *Amazon VPC Peering Guide*.
+The following `create-route` example creates a route in the specified route table that matches all IPv6 traffic (`::/0`) and routes it to the specified egress-only Internet gateway.
+
+```
+aws ec2 create-route \
+    --route-table-id {{rtb-dce620b8}} \
+    --destination-ipv6-cidr-block {{::/0}} \
+    --egress-only-internet-gateway-id {{eigw-01eadbd45ecd7943f}}
+```
+Output:
+
+```
+{
+    "Return": true
+}
+```
+For more information, see [Enable outbound IPv6 traffic using an egress-only internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html) in the *Amazon VPC User Guide*.
 +  For API details, see [CreateRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-route.html) in *AWS CLI Command Reference*.
 
 ### `create-security-group`
@@ -4194,12 +4497,13 @@ aws ec2 create-route --route-table-id {{rtb-dce620b8}} --destination-ipv6-cidr-b
 The following code example shows how to use `create-security-group`.
 
 **AWS CLI**
-**To create a security group for EC2-Classic**
-This example creates a security group named `MySecurityGroup`.
-Command:
+**Example 1: To create a security group for EC2-Classic**
+The following `create-security-group` example creates a security group named `MySecurityGroup`.
 
 ```
-aws ec2 create-security-group --group-name {{MySecurityGroup}} --description {{"My security group"}}
+aws ec2 create-security-group \
+    --group-name {{MySecurityGroup}} \
+    --description {{"My security group"}}
 ```
 Output:
 
@@ -4208,12 +4512,15 @@ Output:
     "GroupId": "sg-903004f8"
 }
 ```
-**To create a security group for EC2-VPC**
-This example creates a security group named `MySecurityGroup` for the specified VPC.
-Command:
+For more information, see [Amazon EC2 security groups for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) in the *Amazon EC2 User Guide*.
+**Example 2: To create a security group for EC2-VPC**
+The following `create-security-group` example creates a security group named `MySecurityGroup` for the specified VPC.
 
 ```
-aws ec2 create-security-group --group-name {{MySecurityGroup}} --description {{"My security group"}} --vpc-id {{vpc-1a2b3c4d}}
+aws ec2 create-security-group \
+    --group-name {{MySecurityGroup}} \
+    --description {{"My security group"}} \
+    --vpc-id {{vpc-1a2b3c4d}}
 ```
 Output:
 
@@ -4222,7 +4529,7 @@ Output:
     "GroupId": "sg-903004f8"
 }
 ```
-For more information, see Using Security Groups in the *AWS Command Line Interface User Guide*.
+For more information, see [Creating, configuring, and deleting Amazon EC2 security groups in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-sg.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [CreateSecurityGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-security-group.html) in *AWS CLI Command Reference*.
 
 ### `create-snapshot`
@@ -4231,12 +4538,13 @@ For more information, see Using Security Groups in the *AWS Command Line Interfa
 The following code example shows how to use `create-snapshot`.
 
 **AWS CLI**
-**To create a snapshot**
-This example command creates a snapshot of the volume with a volume ID of `vol-1234567890abcdef0` and a short description to identify the snapshot.
-Command:
+**Example 1: To create a snapshot**
+The following `create-snapshot` example creates a snapshot of the volume with a volume ID of `vol-1234567890abcdef0` and a short description to identify the snapshot.
 
 ```
-aws ec2 create-snapshot --volume-id {{vol-1234567890abcdef0}} --description {{"This is my root volume snapshot"}}
+aws ec2 create-snapshot \
+    --volume-id {{vol-1234567890abcdef0}} \
+    --description {{"This is my root volume snapshot"}}
 ```
 Output:
 
@@ -4250,16 +4558,19 @@ Output:
     "VolumeSize": 8,
     "StartTime": "2018-02-28T21:06:01.000Z",
     "Progress": "",
-    "OwnerId": "012345678910",
-    "SnapshotId": "snap-066877671789bd71b"
+    "OwnerId": "123456789012",
+    "SnapshotId": "snap-0abcdef1234567890"
 }
 ```
-**To create a snapshot with tags**
-This example command creates a snapshot and applies two tags: purpose=prod and costcenter=123.
-Command:
+For more information, see [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html) in the *Amazon EBS User Guide*.
+**Example 2: To create a snapshot with tags**
+The following `create-snapshot` example creates a snapshot and applies two tags: purpose=prod and costcenter=123.
 
 ```
-aws ec2 create-snapshot --volume-id {{vol-1234567890abcdef0}} --description '{{Prod backup}}' --tag-specifications '{{ResourceType=snapshot,Tags=[{Key=purpose,Value=prod},{Key=costcenter,Value=123}]}}'
+aws ec2 create-snapshot \
+    --volume-id {{vol-1234567890abcdef0}} \
+    --description '{{Prod backup}}' \
+    --tag-specifications '{{ResourceType=snapshot,Tags=[{Key=purpose,Value=prod},{Key=costcenter,Value=123}]}}'
 ```
 Output:
 
@@ -4275,17 +4586,18 @@ Output:
             "Value": "123",
             "Key": "costcenter"
         }
-     ],
-     "Encrypted": false,
-     "VolumeId": "vol-1234567890abcdef0",
-     "State": "pending",
-     "VolumeSize": 8,
-     "StartTime": "2018-02-28T21:06:06.000Z",
-     "Progress": "",
-     "OwnerId": "012345678910",
-     "SnapshotId": "snap-09ed24a70bc19bbe4"
- }
+    ],
+    "Encrypted": false,
+    "VolumeId": "vol-1234567890abcdef0",
+    "State": "pending",
+    "VolumeSize": 8,
+    "StartTime": "2018-02-28T21:06:06.000Z",
+    "Progress": "",
+    "OwnerId": "123456789012",
+    "SnapshotId": "snap-09ed24a70bc19bbe4"
+}
 ```
+For more information, see [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html) in the *Amazon EBS User Guide*.
 +  For API details, see [CreateSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `create-snapshots`
@@ -4308,7 +4620,7 @@ Output:
 {
     "Snapshots": [
         {
-            "Description": "This is a snapshot of a volume from my-instance",
+            "Description": "This is snapshot of a volume from my-instance",
             "Tags": [],
             "Encrypted": false,
             "VolumeId": "vol-0a01d2d5a34697479",
@@ -4320,7 +4632,7 @@ Output:
             "SnapshotId": "snap-07f30e3909aa0045e"
         },
         {
-            "Description": "This is a snapshot of a volume from my-instance",
+            "Description": "This is snapshot of a volume from my-instance",
             "Tags": [],
             "Encrypted": false,
             "VolumeId": "vol-02d0d4947008cb1a2",
@@ -4330,11 +4642,11 @@ Output:
             "Progress": "",
             "OwnerId": "123456789012",
             "SnapshotId": "snap-0ec20b602264aad48"
-        },
-        ...
+        }
     ]
 }
 ```
+For more information, see [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html) in the *Amazon EBS User Guide*.
 **Example 2: To create a multi-volume snapshot with tags from the source volume**
 The following `create-snapshots` example creates snapshots of all volumes attached to the specified instance and copies the tags from each volume to its corresponding snapshot.
 
@@ -4350,7 +4662,7 @@ Output:
 {
     "Snapshots": [
         {
-            "Description": "This is a snapshot of a volume from my-instance",
+            "Description": "This is snapshot of a volume from my-instance",
             "Tags": [
                 {
                     "Key": "Name",
@@ -4366,10 +4678,10 @@ Output:
             "OwnerId": "123456789012",
             "SnapshotId": "snap-053bfaeb821a458dd"
         }
-        ...
     ]
 }
 ```
+For more information, see [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html) in the *Amazon EBS User Guide*.
 **Example 3: To create a multi-volume snapshot not including the root volume**
 The following `create-snapshots` example creates a snapshot of all volumes attached to the specified instance except for the root volume.
 
@@ -4377,7 +4689,27 @@ The following `create-snapshots` example creates a snapshot of all volumes attac
 aws ec2 create-snapshots \
     --instance-specification {{InstanceId=i-1234567890abcdef0,ExcludeBootVolume=true}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Snapshots": [
+        {
+            "Description": "",
+            "Tags": [],
+            "Encrypted": false,
+            "VolumeId": "vol-02d0d4947008cb1a2",
+            "State": "pending",
+            "VolumeSize": 20,
+            "StartTime": "2019-08-05T17:02:41.000Z",
+            "Progress": "",
+            "OwnerId": "123456789012",
+            "SnapshotId": "snap-0a1b2c3d4e5f67890"
+        }
+    ]
+}
+```
+For more information, see [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html) in the *Amazon EBS User Guide*.
 **Example 4: To create a multi-volume snapshot and add tags**
 The following `create-snapshots` example creates snapshots of all volumes attached to the specified instance and adds two tags to each snapshot.
 
@@ -4386,7 +4718,57 @@ aws ec2 create-snapshots \
     --instance-specification {{InstanceId=i-1234567890abcdef0}} \
     --tag-specifications '{{ResourceType=snapshot,Tags=[{Key=Name,Value=backup},{Key=costcenter,Value=123}]}}'
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Snapshots": [
+        {
+            "Description": "",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "backup"
+                },
+                {
+                    "Key": "costcenter",
+                    "Value": "123"
+                }
+            ],
+            "Encrypted": false,
+            "VolumeId": "vol-0a01d2d5a34697479",
+            "State": "pending",
+            "VolumeSize": 16,
+            "StartTime": "2019-08-05T17:05:12.000Z",
+            "Progress": "",
+            "OwnerId": "123456789012",
+            "SnapshotId": "snap-01234567890abcdef"
+        },
+        {
+            "Description": "",
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "backup"
+                },
+                {
+                    "Key": "costcenter",
+                    "Value": "123"
+                }
+            ],
+            "Encrypted": false,
+            "VolumeId": "vol-02d0d4947008cb1a2",
+            "State": "pending",
+            "VolumeSize": 20,
+            "StartTime": "2019-08-05T17:05:12.000Z",
+            "Progress": "",
+            "OwnerId": "123456789012",
+            "SnapshotId": "snap-0fedcba9876543210"
+        }
+    ]
+}
+```
+For more information, see [Create Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-snapshot.html) in the *Amazon EBS User Guide*.
 +  For API details, see [CreateSnapshots](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-snapshots.html) in *AWS CLI Command Reference*.
 
 ### `create-spot-datafeed-subscription`
@@ -4420,7 +4802,7 @@ The data feed is stored in the Amazon S3 bucket that you specified. The file nam
 ```
 amzn-s3-demo-bucket.s3.amazonaws.com/spot-data-feed/123456789012.YYYY-MM-DD-HH.n.abcd1234.gz
 ```
-For more information, see [Spot Instance data feed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Track your Spot Instance costs using the Spot Instance data feed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateSpotDatafeedSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-spot-datafeed-subscription.html) in *AWS CLI Command Reference*.
 
 ### `create-store-image-task`
@@ -4434,8 +4816,8 @@ The following `create-store-image-task` example stores an AMI in an S3 bucket. S
 
 ```
 aws ec2 create-store-image-task \
-  --image-id {{ami-1234567890abcdef0}} \
-  --bucket {{my-ami-bucket}}
+    --image-id {{ami-1234567890abcdef0}} \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -4626,7 +5008,7 @@ aws ec2 create-tags \
     --resources {{ami-1234567890abcdef0}} \
     --tags {{Key=Stack,Value=production}}
 ```
-This command produces no output
+This command produces no output.
 **Example 2: To add tags to multiple resources**
 The following `create-tags` example adds (or overwrites) two tags for an AMI and an instance. One of the tags has a key (`webserver`) but no value (value is set to an empty string). The other tag has a key (`stack`) and a value (`Production`).
 
@@ -4635,7 +5017,7 @@ aws ec2 create-tags \
     --resources {{ami-1a2b3c4d}} {{i-1234567890abcdef0}} \
     --tags {{Key=webserver,Value=}}   {{Key=stack,Value=Production}}
 ```
-This command produces no output
+This command produces no output.
 **Example 3: To add tags containing special characters**
 The following `create-tags` examples add the tag `[Group]=test` for an instance. The square brackets ([ and ]) are special characters, and must be escaped. The following examples also use the line continuation character appropriate for each environment.
 If you are using Windows, surround the element that has special characters with double quotes ("), and then precede each double quote character with a backslash (\\) as follows.
@@ -4645,6 +5027,7 @@ aws ec2 create-tags {{^}}
     --resources {{i-1234567890abcdef0}} {{^}}
     --tags Key=\"[Group]\",Value=test
 ```
+This command produces no output.
 If you are using Windows PowerShell, surround the element the value that has special characters with double quotes ("), precede each double quote character with a backslash (\\), and then surround the entire key and value structure with single quotes (') as follows.
 
 ```
@@ -4652,6 +5035,7 @@ aws ec2 create-tags {{`}}
     --resources {{i-1234567890abcdef0}} {{`}}
     --tags '{{Key=\"[Group]\",Value=test}}'
 ```
+This command produces no output.
 If you are using Linux or OS X, surround the element that has special characters with double quotes ("), and then surround the entire key and value structure with single quotes (') as follows.
 
 ```
@@ -4659,6 +5043,7 @@ aws ec2 create-tags \
     --resources {{i-1234567890abcdef0}} \
     --tags '{{Key="[Group]",Value=test}}'
 ```
+This command produces no output.
 For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [CreateTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-tags.html) in *AWS CLI Command Reference*.
 
@@ -4697,7 +5082,7 @@ Output:
         "RuleAction": "accept",
         "Protocol": 6
     },
-    "ClientToken": "4752b573-40a6-4eac-a8a4-a72058761219"
+    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Create a traffic mirror filter](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-filter.html) in the *Traffic Mirroring Guide*.
@@ -4720,7 +5105,7 @@ Output:
 
 ```
 {
-    "ClientToken": "28908518-100b-4987-8233-8c744EXAMPLE",
+    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "TrafficMirrorFilter": {
         "TrafficMirrorFilterId": "tmf-04812ff784EXAMPLE",
         "Description": "TCP Filter",
@@ -4741,7 +5126,7 @@ The following code example shows how to use `create-traffic-mirror-session`.
 
 **AWS CLI**
 **To create a traffic mirror session**
-The following `create-traffic-mirror-session` command creates a traffic mirror session for the specified source and target for 25 bytes of the packet.
+The following `create-traffic-mirror-session` example creates a traffic mirror session for the specified source and target for 25 bytes of the packet.
 
 ```
 aws ec2 create-traffic-mirror-session \
@@ -4761,14 +5146,14 @@ Output:
         "TrafficMirrorTargetId": "tmt-07f75d8feeEXAMPLE",
         "TrafficMirrorFilterId": "tmf-04812ff784EXAMPLE",
         "NetworkInterfaceId": "eni-070203f901EXAMPLE",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "PacketLength": 25,
         "SessionNumber": 1,
         "VirtualNetworkId": 7159709,
         "Description": "example session",
         "Tags": []
     },
-    "ClientToken": "5236cffc-ee13-4a32-bb5b-388d9da09d96"
+    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Create a traffic mirror session](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-session.html) in the *Traffic Mirroring Guide*.
@@ -4780,13 +5165,13 @@ For more information, see [Create a traffic mirror session](https://docs.aws.ama
 The following code example shows how to use `create-traffic-mirror-target`.
 
 **AWS CLI**
-**To create a a Network Load Balancer traffic mirror target**
+**Example 1: To create a Network Load Balancer traffic mirror target**
 The following `create-traffic-mirror-target` example creates a Network Load Balancer traffic mirror target.
 
 ```
 aws ec2 create-traffic-mirror-target \
     --description '{{Example Network Load Balancer Target}}' \
-    --network-load-balancer-arn {{arn:aws:elasticloadbalancing:us-east-1:111122223333:loadbalancer/net/NLB/7cdec873EXAMPLE}}
+    --network-load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLB/7cdec873EXAMPLE}}
 ```
 Output:
 
@@ -4796,14 +5181,14 @@ Output:
         "Type": "network-load-balancer",
         "Tags": [],
         "Description": "Example Network Load Balancer Target",
-        "OwnerId": "111122223333",
-        "NetworkLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:724145273726:loadbalancer/net/NLB/7cdec873EXAMPLE",
+        "OwnerId": "123456789012",
+        "NetworkLoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLB/7cdec873EXAMPLE",
         "TrafficMirrorTargetId": "tmt-0dabe9b0a6EXAMPLE"
     },
-    "ClientToken": "d5c090f5-8a0f-49c7-8281-72c796a21f72"
+    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-**To create a network traffic mirror target**
+**Example 2: To create a network traffic mirror target**
 The following `create-traffic-mirror-target` example creates a network interface Traffic Mirror target.
 
 ```
@@ -4815,12 +5200,12 @@ Output:
 
 ```
 {
-    "ClientToken": "5289a345-0358-4e62-93d5-47ef3061d65e",
+    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "TrafficMirrorTarget": {
         "Description": "Network interface target",
         "NetworkInterfaceId": "eni-01f6f631eEXAMPLE",
         "TrafficMirrorTargetId": "tmt-02dcdbe2abEXAMPLE",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "Type": "network-interface",
         "Tags": []
     }
@@ -4976,7 +5361,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing multicast domains](https://docs.aws.amazon.com/vpc/latest/tgw/manage-domain.html) in the *Transit Gateways Guide*.
+For more information, see [Multicast domains in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/multicast-domains-about.html) in the *Transit Gateways Guide*.
 +  For API details, see [CreateTransitGatewayMulticastDomain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-transit-gateway-multicast-domain.html) in *AWS CLI Command Reference*.
 
 ### `create-transit-gateway-peering-attachment`
@@ -5075,7 +5460,7 @@ Output:
         "TransitGatewayAttachment": {
             "TransitGatewayAttachmentId": "tgw-attach-aaaaaabbbbbb11111",
             "ResourceType": "vpc",
-            "ResourceId": "vpc-112233445566aabbc"
+            "ResourceId": "vpc-0a1b2c3d4e5f6a7b8"
         }
     }
 }
@@ -5110,7 +5495,7 @@ Output:
     }
 }
 ```
-For more information, see [Create a transit gateway route table](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#create-tgw-route-table) in the *Transit Gateways Guide*.
+For more information, see [Create a transit gateway route table](https://docs.aws.amazon.com/vpc/latest/tgw/create-tgw-route-table.html) in the *Transit Gateways Guide*.
 +  For API details, see [CreateTransitGatewayRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-transit-gateway-route-table.html) in *AWS CLI Command Reference*.
 
 ### `create-transit-gateway-route`
@@ -5172,7 +5557,7 @@ Output:
         "TransitGatewayAttachmentId": "tgw-attach-0a34fe6b4fEXAMPLE",
         "TransitGatewayId": "tgw-0262a0e521EXAMPLE",
         "VpcId": "vpc-07e8ffd50fEXAMPLE",
-        "VpcOwnerId": "111122223333",
+        "VpcOwnerId": "123456789012",
         "State": "pending",
         "SubnetIds": [
             "subnet-0752213d59EXAMPLE"
@@ -5185,7 +5570,7 @@ Output:
     }
 }
 ```
-For more information, see [Create a transit gateway attachment to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html#create-vpc-attachment) in the *Transit Gateways Guide*.
+For more information, see [Create a transit gateway attachment to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/create-vpc-attachment.html) in the *Transit Gateways Guide*.
 **Example 2: To associate a transit gateway with multiple subnets in a VPC**
 The following `create-transit-gateway-vpc-attachment` example creates a transit gateway attachment to the specified VPC and subnets.
 
@@ -5203,7 +5588,7 @@ Output:
         "TransitGatewayAttachmentId": "tgw-attach-0e141e0bebEXAMPLE",
         "TransitGatewayId": "tgw-02f776b1a7EXAMPLE",
         "VpcId": "vpc-3EXAMPLE",
-        "VpcOwnerId": "111122223333",
+        "VpcOwnerId": "123456789012",
         "State": "pending",
         "SubnetIds": [
             "subnet-6EXAMPLE",
@@ -5217,7 +5602,7 @@ Output:
     }
 }
 ```
-For more information, see [Create a transit gateway attachment to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html#create-vpc-attachment) in the *Transit Gateways Guide*.
+For more information, see [Create a transit gateway attachment to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/create-vpc-attachment.html) in the *Transit Gateways Guide*.
 +  For API details, see [CreateTransitGatewayVpcAttachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-transit-gateway-vpc-attachment.html) in *AWS CLI Command Reference*.
 
 ### `create-transit-gateway`
@@ -5240,9 +5625,9 @@ Output:
 {
     "TransitGateway": {
         "TransitGatewayId": "tgw-0262a0e521EXAMPLE",
-        "TransitGatewayArn": "arn:aws:ec2:us-east-2:111122223333:transit-gateway/tgw-0262a0e521EXAMPLE",
+        "TransitGatewayArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-0262a0e521EXAMPLE",
         "State": "pending",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "Description": "MyTGW",
         "CreationTime": "2019-07-10T14:02:12.000Z",
         "Options": {
@@ -5258,7 +5643,7 @@ Output:
     }
 }
 ```
-For more information, see [Create a transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html#create-tgw) in the *Transit Gateways Guide*.
+For more information, see [Create a transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/create-tgw.html) in the *Transit Gateways Guide*.
 +  For API details, see [CreateTransitGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-transit-gateway.html) in *AWS CLI Command Reference*.
 
 ### `create-verified-access-endpoint`
@@ -5275,7 +5660,7 @@ aws ec2 create-verified-access-endpoint \
     --verified-access-group-id {{vagr-0dbe967baf14b7235}} \
     --endpoint-type {{network-interface}} \
     --attachment-type {{vpc}} \
-    --domain-certificate-arn {{arn:aws:acm:us-east-2:123456789012:certificate/eb065ea0-26f9-4e75-a6ce-0a1a7EXAMPLE}} \
+    --domain-certificate-arn {{arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --application-domain {{example.com}} \
     --endpoint-domain-prefix {{my-ava-app}} \
     --security-group-ids {{sg-004915970c4c8f13a}} \
@@ -5293,8 +5678,8 @@ Output:
         "ApplicationDomain": "example.com",
         "EndpointType": "network-interface",
         "AttachmentType": "vpc",
-        "DomainCertificateArn": "arn:aws:acm:us-east-2:123456789012:certificate/eb065ea0-26f9-4e75-a6ce-0a1a7EXAMPLE",
-        "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-east-2.amazonaws.com",
+        "DomainCertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-west-2.amazonaws.com",
         "SecurityGroupIds": [
             "sg-004915970c4c8f13a"
         ],
@@ -5344,7 +5729,7 @@ Output:
         "VerifiedAccessInstanceId": "vai-0ce000c0b7643abea",
         "Description": "",
         "Owner": "123456789012",
-        "VerifiedAccessGroupArn": "arn:aws:ec2:us-east-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
+        "VerifiedAccessGroupArn": "arn:aws:ec2:us-west-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
         "CreationTime": "2023-08-25T19:55:19",
         "LastUpdatedTime": "2023-08-25T19:55:19",
         "Tags": [
@@ -5441,20 +5826,20 @@ The following code example shows how to use `create-volume`.
 
 **AWS CLI**
 **Example 1: To create an empty General Purpose SSD (gp2) volume**
-The following `create-volume` example creates an 80 GiB General Purpose SSD (gp2) volume in the specified Availability Zone. Note that the current Region must be `us-east-1`, or you can add the `--region` parameter to specify the Region for the command.
+The following `create-volume` example creates an 80 GiB General Purpose SSD (gp2) volume in the specified Availability Zone. Note that the current Region must be `us-west-2`, or you can add the `--region` parameter to specify the Region for the command.
 
 ```
 aws ec2 create-volume \
     --volume-type {{gp2}} \
     --size {{80}} \
-    --availability-zone {{us-east-1a}}
+    --availability-zone {{us-west-2a}}
 ```
 Output:
 
 ```
 {
     "AvailabilityZoneId": "use1-az1",
-    "AvailabilityZone": "us-east-1a",
+    "AvailabilityZone": "us-west-2a",
     "Tags": [],
     "Encrypted": false,
     "VolumeType": "gp2",
@@ -5462,7 +5847,7 @@ Output:
     "State": "creating",
     "Iops": 240,
     "SnapshotId": "",
-    "CreateTime": "YYYY-MM-DDTHH:MM:SS.000Z",
+    "CreateTime": "2025-03-12T19:21:34.000Z",
     "Size": 80
 }
 ```
@@ -5471,8 +5856,9 @@ If you do not specify a volume type, the default volume type is `gp2`.
 ```
 aws ec2 create-volume \
     --size {{80}} \
-    --availability-zone {{us-east-1a}}
+    --availability-zone {{us-west-2a}}
 ```
+For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume.html) in the *Amazon EBS User Guide*.
 **Example 2: To create a Provisioned IOPS SSD (io1) volume from a snapshot**
 The following `create-volume` example creates a Provisioned IOPS SSD (io1) volume with 1000 provisioned IOPS in the specified Availability Zone using the specified snapshot.
 
@@ -5480,26 +5866,27 @@ The following `create-volume` example creates a Provisioned IOPS SSD (io1) volum
 aws ec2 create-volume \
     --volume-type {{io1}} \
     --iops {{1000}} \
-    --snapshot-id {{snap-066877671789bd71b}} \
-    --availability-zone {{us-east-1a}}
+    --snapshot-id {{snap-0abcdef1234567890}} \
+    --availability-zone {{us-west-2a}}
 ```
 Output:
 
 ```
 {
     "AvailabilityZoneId": "use1-az1",
-    "AvailabilityZone": "us-east-1a",
+    "AvailabilityZone": "us-west-2a",
     "Tags": [],
     "Encrypted": false,
     "VolumeType": "io1",
     "VolumeId": "vol-1234567890abcdef0",
     "State": "creating",
     "Iops": 1000,
-    "SnapshotId": "snap-066877671789bd71b",
-    "CreateTime": "YYYY-MM-DDTHH:MM:SS.000Z",
+    "SnapshotId": "snap-0abcdef1234567890",
+    "CreateTime": "2025-03-12T19:21:34.000Z",
     "Size": 500
 }
 ```
+For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume.html) in the *Amazon EBS User Guide*.
 **Example 3: To create an encrypted volume**
 The following `create-volume` example creates an encrypted volume using the default CMK for EBS encryption. If encryption by default is disabled, you must specify the `--encrypted` parameter as follows.
 
@@ -5507,14 +5894,14 @@ The following `create-volume` example creates an encrypted volume using the defa
 aws ec2 create-volume \
     --size {{80}} \
     --encrypted \
-    --availability-zone {{us-east-1a}}
+    --availability-zone {{us-west-2a}}
 ```
 Output:
 
 ```
 {
     "AvailabilityZoneId": "use1-az1",
-    "AvailabilityZone": "us-east-1a",
+    "AvailabilityZone": "us-west-2a",
     "Tags": [],
     "Encrypted": true,
     "VolumeType": "gp2",
@@ -5522,7 +5909,7 @@ Output:
     "State": "creating",
     "Iops": 240,
     "SnapshotId": "",
-    "CreateTime": "YYYY-MM-DDTHH:MM:SS.000Z",
+    "CreateTime": "2025-03-12T19:21:34.000Z",
     "Size": 80
 }
 ```
@@ -5531,7 +5918,7 @@ If encryption by default is enabled, the following example command creates an en
 ```
 aws ec2 create-volume \
     --size {{80}} \
-    --availability-zone {{us-east-1a}}
+    --availability-zone {{us-west-2a}}
 ```
 If you use the `--kms-key-id` parameter to specify a customer managed CMK, you must specify the `--encrypted` parameter even if encryption by default is enabled.
 
@@ -5540,19 +5927,47 @@ aws ec2 create-volume \
     --volume-type {{gp2}} \
     --size {{80}} \
     --encrypted \
-    --kms-key-id {{0ea3fef3-80a7-4778-9d8c-1c0c6EXAMPLE}} \
-    --availability-zone {{us-east-1a}}
+    --kms-key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --availability-zone {{us-west-2a}}
 ```
+For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html) in the *Amazon EBS User Guide*.
 **Example 4: To create a volume with tags**
 The following `create-volume` example creates a volume and adds two tags.
 
 ```
 aws ec2 create-volume \
-    --availability-zone {{us-east-1a}} \
+    --availability-zone {{us-west-2a}} \
     --volume-type {{gp2}} \
     --size {{80}} \
     --tag-specifications '{{ResourceType=volume,Tags=[{Key=purpose,Value=production},{Key=cost-center,Value=cc123}]}}'
 ```
+Output:
+
+```
+{
+    "AvailabilityZoneId": "use1-az1",
+    "AvailabilityZone": "us-west-2a",
+    "Tags": [
+        {
+            "Key": "purpose",
+            "Value": "production"
+        },
+        {
+            "Key": "cost-center",
+            "Value": "cc123"
+        }
+    ],
+    "Encrypted": false,
+    "VolumeType": "gp2",
+    "VolumeId": "vol-1234567890abcdef0",
+    "State": "creating",
+    "Iops": 240,
+    "SnapshotId": "",
+    "CreateTime": "2025-03-12T19:21:34.000Z",
+    "Size": 80
+}
+```
+For more information, see [Create an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume.html) in the *Amazon EBS User Guide*.
 +  For API details, see [CreateVolume](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-volume.html) in *AWS CLI Command Reference*.
 
 ### `create-vpc-endpoint-connection-notification`
@@ -5562,29 +5977,32 @@ The following code example shows how to use `create-vpc-endpoint-connection-noti
 
 **AWS CLI**
 **To create an endpoint connection notification**
-This example creates a notification for a specific endpoint service that alerts you when interface endpoints have connected to your service and when endpoints have been accepted for your service.
-Command:
+The following `create-vpc-endpoint-connection-notification` example creates a notification for a specific endpoint service that alerts you when interface endpoints have connected to your service and when endpoints have been accepted for your service.
 
 ```
-aws ec2 create-vpc-endpoint-connection-notification --connection-notification-arn {{arn:aws:sns:us-east-2:123456789012:VpceNotification}} --connection-events {{Connect}} {{Accept}} --service-id {{vpce-svc-1237881c0d25a3abc}}
+aws ec2 create-vpc-endpoint-connection-notification \
+    --connection-notification-arn {{arn:aws:sns:us-west-2:123456789012:VpceNotification}} \
+    --connection-events {{Connect}} {{Accept}} \
+    --service-id {{vpce-svc-1237881c0d25a3abc}}
 ```
 Output:
 
 ```
 {
-   "ConnectionNotification": {
-       "ConnectionNotificationState": "Enabled",
-       "ConnectionNotificationType": "Topic",
-       "ServiceId": "vpce-svc-1237881c0d25a3abc",
-       "ConnectionEvents": [
-           "Accept",
-           "Connect"
-       ],
-       "ConnectionNotificationId": "vpce-nfn-008776de7e03f5abc",
-       "ConnectionNotificationArn": "arn:aws:sns:us-east-2:123456789012:VpceNotification"
-   }
- }
+    "ConnectionNotification": {
+        "ConnectionNotificationState": "Enabled",
+        "ConnectionNotificationType": "Topic",
+        "ServiceId": "vpce-svc-1237881c0d25a3abc",
+        "ConnectionEvents": [
+            "Accept",
+            "Connect"
+        ],
+        "ConnectionNotificationId": "vpce-nfn-008776de7e03f5abc",
+        "ConnectionNotificationArn": "arn:aws:sns:us-west-2:123456789012:VpceNotification"
+    }
+}
 ```
+For more information, see [Receive alerts for endpoint service events](https://docs.aws.amazon.com/vpc/latest/privatelink/create-notification-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [CreateVpcEndpointConnectionNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-vpc-endpoint-connection-notification.html) in *AWS CLI Command Reference*.
 
 ### `create-vpc-endpoint-service-configuration`
@@ -5598,33 +6016,33 @@ The following `create-vpc-endpoint-service-configuration` example creates a VPC 
 
 ```
 aws ec2 create-vpc-endpoint-service-configuration \
-    --network-load-balancer-arns {{arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/nlb-vpce/e94221227f1ba532}} \
+    --network-load-balancer-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/nlb-vpce/e94221227f1ba532}} \
     --acceptance-required
 ```
 Output:
 
 ```
 {
-   "ServiceConfiguration": {
-       "ServiceType": [
-           {
-               "ServiceType": "Interface"
-           }
-       ],
-       "NetworkLoadBalancerArns": [
-           "arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/nlb-vpce/e94221227f1ba532"
-       ],
-       "ServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-03d5ebb7d9579a2b3",
-       "ServiceState": "Available",
-       "ServiceId": "vpce-svc-03d5ebb7d9579a2b3",
-       "AcceptanceRequired": true,
-       "AvailabilityZones": [
-           "us-east-1d"
-       ],
-       "BaseEndpointDnsNames": [
-           "vpce-svc-03d5ebb7d9579a2b3.us-east-1.vpce.amazonaws.com"
-       ]
-   }
+    "ServiceConfiguration": {
+        "ServiceType": [
+            {
+                "ServiceType": "Interface"
+            }
+        ],
+        "NetworkLoadBalancerArns": [
+            "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/nlb-vpce/e94221227f1ba532"
+        ],
+        "ServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-03d5ebb7d9579a2b3",
+        "ServiceState": "Available",
+        "ServiceId": "vpce-svc-03d5ebb7d9579a2b3",
+        "AcceptanceRequired": true,
+        "AvailabilityZones": [
+            "us-west-2d"
+        ],
+        "BaseEndpointDnsNames": [
+            "vpce-svc-03d5ebb7d9579a2b3.us-west-2.vpce.amazonaws.com"
+        ]
+    }
 }
 ```
 For more information, see [Create an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/create-endpoint-service.html) in the *AWS PrivateLink User Guide*.
@@ -5633,7 +6051,7 @@ The following `create-vpc-endpoint-service-configuration` example creates a VPC 
 
 ```
 aws ec2 create-vpc-endpoint-service-configuration \
-    --gateway-load-balancer-arns {{arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/gwy/GWLBService/123123123123abcc}} \
+    --gateway-load-balancer-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/GWLBService/1a2b3c4d5e6f7a8b}} \
     --no-acceptance-required
 ```
 Output:
@@ -5647,15 +6065,15 @@ Output:
             }
         ],
         "ServiceId": "vpce-svc-123123a1c43abc123",
-        "ServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-123123a1c43abc123",
+        "ServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-123123a1c43abc123",
         "ServiceState": "Available",
         "AvailabilityZones": [
-            "us-east-1d"
+            "us-west-2d"
         ],
         "AcceptanceRequired": false,
         "ManagesVpcEndpoints": false,
         "GatewayLoadBalancerArns": [
-            "arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/gwy/GWLBService/123123123123abcc"
+            "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/GWLBService/1a2b3c4d5e6f7a8b"
         ]
     }
 }
@@ -5670,12 +6088,12 @@ The following code example shows how to use `create-vpc-endpoint`.
 
 **AWS CLI**
 **Example 1: To create a gateway endpoint**
-The following `create-vpc-endpoint` example creates a gateway VPC endpoint between VPC `vpc-1a2b3c4d` and Amazon S3 in the `us-east-1` region, and associates route table `rtb-11aa22bb` with the endpoint.
+The following `create-vpc-endpoint` example creates a gateway VPC endpoint between VPC `vpc-1a2b3c4d` and Amazon S3 in the `us-west-2` region, and associates route table `rtb-11aa22bb` with the endpoint.
 
 ```
 aws ec2 create-vpc-endpoint \
     --vpc-id {{vpc-1a2b3c4d}} \
-    --service-name {{com.amazonaws.us-east-1.s3}} \
+    --service-name {{com.amazonaws.us-west-2.s3}} \
     --route-table-ids {{rtb-11aa22bb}}
 ```
 Output:
@@ -5683,10 +6101,10 @@ Output:
 ```
 {
     "VpcEndpoint": {
-        "PolicyDocument": "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":\"\*\",\"Action\":\"\*\",\"Resource\":\"\*\"}]}",
+        "PolicyDocument": "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Action\":\"*\",\"Resource\":\"*\"}]}",
         "VpcId": "vpc-1a2b3c4d",
         "State": "available",
-        "ServiceName": "com.amazonaws.us-east-1.s3",
+        "ServiceName": "com.amazonaws.us-west-2.s3",
         "RouteTableIds": [
             "rtb-11aa22bb"
         ],
@@ -5697,13 +6115,13 @@ Output:
 ```
 For more information, see [Create a gateway endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-endpoints-s3.html#create-gateway-endpoint-s3) in the *AWS PrivateLink User Guide*.
 **Example 2: To create an interface endpoint**
-The following `create-vpc-endpoint` example creates an interface VPC endpoint between VPC `vpc-1a2b3c4d` and Amazon S3 in the `us-east-1` region. The command creates the endpoint in subnet `subnet-1a2b3c4d`, associates it with security group `sg-1a2b3c4d`, and adds a tag with a key of "Service" and a Value of "S3".
+The following `create-vpc-endpoint` example creates an interface VPC endpoint between VPC `vpc-1a2b3c4d` and Amazon S3 in the `us-west-2` region. The command creates the endpoint in subnet `subnet-1a2b3c4d`, associates it with security group `sg-1a2b3c4d`, and adds a tag with a key of "Service" and a Value of "S3".
 
 ```
 aws ec2 create-vpc-endpoint \
     --vpc-id {{vpc-1a2b3c4d}} \
     --vpc-endpoint-type {{Interface}} \
-    --service-name {{com.amazonaws.us-east-1.s3}} \
+    --service-name {{com.amazonaws.us-west-2.s3}} \
     --subnet-ids {{subnet-7b16de0c}} \
     --security-group-id {{sg-1a2b3c4d}} \
     --tag-specifications {{ResourceType=vpc-endpoint,Tags=[{Key=service,Value=S3}]}}
@@ -5716,7 +6134,7 @@ Output:
         "VpcEndpointId": "vpce-1a2b3c4d5e6f1a2b3",
         "VpcEndpointType": "Interface",
         "VpcId": "vpc-1a2b3c4d",
-        "ServiceName": "com.amazonaws.us-east-1.s3",
+        "ServiceName": "com.amazonaws.us-west-2.s3",
         "State": "pending",
         "RouteTableIds": [],
         "SubnetIds": [
@@ -5735,11 +6153,11 @@ Output:
         ],
         "DnsEntries": [
             {
-                "DnsName": "*.vpce-1a2b3c4d5e6f1a2b3-9hnenorg.s3.us-east-1.vpce.amazonaws.com",
+                "DnsName": "*.vpce-1a2b3c4d5e6f1a2b3-9hnenorg.s3.us-west-2.vpce.amazonaws.com",
                 "HostedZoneId": "Z7HUB22UULQXV"
             },
             {
-                "DnsName": "*.vpce-1a2b3c4d5e6f1a2b3-9hnenorg-us-east-1c.s3.us-east-1.vpce.amazonaws.com",
+                "DnsName": "*.vpce-1a2b3c4d5e6f1a2b3-9hnenorg-us-west-2c.s3.us-west-2.vpce.amazonaws.com",
                 "HostedZoneId": "Z7HUB22UULQXV"
             }
         ],
@@ -5756,13 +6174,13 @@ Output:
 ```
 For more information, see [Create an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink User Guide*.
 **Example 3: To create a Gateway Load Balancer endpoint**
-The following `create-vpc-endpoint` example creates a Gateway Load Balancer endpoint between VPC `vpc-111122223333aabbc` and and a service that is configured using a Gateway Load Balancer.
+The following `create-vpc-endpoint` example creates a Gateway Load Balancer endpoint between VPC `vpc-1a2b3c4d5e6f7a8b9` and and a service that is configured using a Gateway Load Balancer.
 
 ```
 aws ec2 create-vpc-endpoint \
-    --service-name {{com.amazonaws.vpce.us-east-1.vpce-svc-123123a1c43abc123}} \
+    --service-name {{com.amazonaws.vpce.us-west-2.vpce-svc-123123a1c43abc123}} \
     --vpc-endpoint-type {{GatewayLoadBalancer}} \
-    --vpc-id {{vpc-111122223333aabbc}} \
+    --vpc-id {{vpc-1a2b3c4d5e6f7a8b9}} \
     --subnet-ids {{subnet-0011aabbcc2233445}}
 ```
 Output:
@@ -5772,8 +6190,8 @@ Output:
     "VpcEndpoint": {
         "VpcEndpointId": "vpce-aabbaabbaabbaabba",
         "VpcEndpointType": "GatewayLoadBalancer",
-        "VpcId": "vpc-111122223333aabbc",
-        "ServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-123123a1c43abc123",
+        "VpcId": "vpc-1a2b3c4d5e6f7a8b9",
+        "ServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-123123a1c43abc123",
         "State": "pending",
         "SubnetIds": [
             "subnet-0011aabbcc2233445"
@@ -5794,7 +6212,7 @@ The following `create-vpc-endpoint` example creates a resource endpoint.
 ```
 aws ec2 create-vpc-endpoint \
     --vpc-endpoint-type {{Resource}} \
-    --vpc-id {{vpc-111122223333aabbc}} \
+    --vpc-id {{vpc-1a2b3c4d5e6f7a8b9}} \
     --subnet-ids {{subnet-0011aabbcc2233445}} \
     --resource-configuration-arn {{arn:aws:vpc-lattice-us-east-1:123456789012:resourceconfiguration/rcfg-0123abcde98765432}}
 ```
@@ -5805,7 +6223,7 @@ Output:
     "VpcEndpoint": {
         "VpcEndpointId": "vpce-00939a7ed9EXAMPLE",
         "VpcEndpointType": "Resource",
-        "VpcId": "vpc-111122223333aabbc",
+        "VpcId": "vpc-1a2b3c4d5e6f7a8b9",
         "State": "Pending",
         "SubnetIds": [
             "subnet-0011aabbcc2233445"
@@ -5821,7 +6239,7 @@ Output:
         "CreationTimestamp": "2025-02-06T23:38:49.525000+00:00",
         "Tags": [],
         "OwnerId": "123456789012",
-        "ResourceConfigurationArn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceconfiguration/rcfg-0123abcde98765432"
+        "ResourceConfigurationArn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceconfiguration/rcfg-0123abcde98765432"
     }
 }
 ```
@@ -5832,9 +6250,9 @@ The following `create-vpc-endpoint` example creates a service network endpoint.
 ```
 aws ec2 create-vpc-endpoint \
     --vpc-endpoint-type {{ServiceNetwork}} \
-    --vpc-id {{vpc-111122223333aabbc}} \
+    --vpc-id {{vpc-1a2b3c4d5e6f7a8b9}} \
     --subnet-ids {{subnet-0011aabbcc2233445}} \
-    --service-network-arn {{arn:aws:vpc-lattice:us-east-1:123456789012:servicenetwork/sn-0101abcd5432abcd0}} \
+    --service-network-arn {{arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-0101abcd5432abcd0}} \
     --security-group-ids {{sg-0123456789012abcd}}
 ```
 Output:
@@ -5844,7 +6262,7 @@ Output:
     "VpcEndpoint": {
         "VpcEndpointId": "vpce-0f00567fa8EXAMPLE",
         "VpcEndpointType": "ServiceNetwork",
-        "VpcId": "vpc-111122223333aabbc",
+        "VpcId": "vpc-1a2b3c4d5e6f7a8b9",
         "State": "Pending",
         "SubnetIds": [
             "subnet-0011aabbcc2233445"
@@ -5860,7 +6278,7 @@ Output:
         "CreationTimestamp": "2025-02-06T23:44:20.449000+00:00",
         "Tags": [],
         "OwnerId": "123456789012",
-        "ServiceNetworkArn": "arn:aws:vpc-lattice:us-east-1:123456789012:servicenetwork/sn-0101abcd5432abcd0"
+        "ServiceNetworkArn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-0101abcd5432abcd0"
     }
 }
 ```
@@ -5873,12 +6291,13 @@ For more information, see [Service network endpoints](https://docs.aws.amazon.co
 The following code example shows how to use `create-vpc-peering-connection`.
 
 **AWS CLI**
-**To create a VPC peering connection between your VPCs**
-This example requests a peering connection between your VPCs vpc-1a2b3c4d and vpc-11122233.
-Command:
+**Example 1: To create a VPC peering connection between your VPCs**
+The following `create-vpc-peering-connection` example requests a peering connection between your VPCs vpc-1a2b3c4d and vpc-11122233.
 
 ```
-aws ec2 create-vpc-peering-connection --vpc-id {{vpc-1a2b3c4d}} --peer-vpc-id {{vpc-11122233}}
+aws ec2 create-vpc-peering-connection \
+    --vpc-id {{vpc-1a2b3c4d}} \
+    --peer-vpc-id {{vpc-11122233}}
 ```
 Output:
 
@@ -5886,44 +6305,128 @@ Output:
 {
     "VpcPeeringConnection": {
         "Status": {
-            "Message": "Initiating Request to 444455556666",
+            "Message": "Initiating Request to 123456789012",
             "Code": "initiating-request"
         },
         "Tags": [],
         "RequesterVpcInfo": {
-            "OwnerId": "444455556666",
+            "OwnerId": "123456789012",
             "VpcId": "vpc-1a2b3c4d",
             "CidrBlock": "10.0.0.0/28"
         },
         "VpcPeeringConnectionId": "pcx-111aaa111",
         "ExpirationTime": "2014-04-02T16:13:36.000Z",
         "AccepterVpcInfo": {
-            "OwnerId": "444455556666",
+            "OwnerId": "123456789012",
             "VpcId": "vpc-11122233"
         }
     }
 }
 ```
-**To create a VPC peering connection with a VPC in another account**
-This example requests a peering connection between your VPC (vpc-1a2b3c4d), and a VPC (vpc-11122233) that belongs AWS account 123456789012.
-Command:
+For more information, see [Create a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html) in the *Amazon VPC Peering Guide*.
+**Example 2: To create a VPC peering connection with a VPC in another account**
+The following `create-vpc-peering-connection` example requests a peering connection between your VPC (vpc-1a2b3c4d), and a VPC (vpc-11122233) that belongs to AWS account 123456789111.
 
 ```
-aws ec2 create-vpc-peering-connection --vpc-id {{vpc-1a2b3c4d}} --peer-vpc-id {{vpc-11122233}} --peer-owner-id {{123456789012}}
+aws ec2 create-vpc-peering-connection \
+    --vpc-id {{vpc-1a2b3c4d}} \
+    --peer-vpc-id {{vpc-11122233}} \
+    --peer-owner-id {{123456789111}}
 ```
-**To create a VPC peering connection with a VPC in a different region**
-This example requests a peering connection between your VPC in the current region (vpc-1a2b3c4d), and a VPC (vpc-11122233) in your account in the `us-west-2` region.
-Command:
+Output:
 
 ```
-aws ec2 create-vpc-peering-connection --vpc-id {{vpc-1a2b3c4d}} --peer-vpc-id {{vpc-11122233}} --peer-region {{us-west-2}}
+{
+    "VpcPeeringConnection": {
+        "Status": {
+            "Message": "Initiating Request to 123456789111",
+            "Code": "initiating-request"
+        },
+        "Tags": [],
+        "RequesterVpcInfo": {
+            "OwnerId": "123456789012",
+            "VpcId": "vpc-1a2b3c4d",
+            "CidrBlock": "10.0.0.0/28"
+        },
+        "VpcPeeringConnectionId": "pcx-222bbb222",
+        "ExpirationTime": "2014-04-02T16:13:36.000Z",
+        "AccepterVpcInfo": {
+            "OwnerId": "123456789111",
+            "VpcId": "vpc-11122233"
+        }
+    }
+}
 ```
-This example requests a peering connection between your VPC in the current region (vpc-1a2b3c4d), and a VPC (vpc-11122233) that belongs AWS account 123456789012 that's in the `us-west-2` region.
-Command:
+For more information, see [Create a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html) in the *Amazon VPC Peering Guide*.
+**Example 3: To create a VPC peering connection with a VPC in a different region**
+The following `create-vpc-peering-connection` example requests a peering connection between your VPC in the current region (vpc-1a2b3c4d), and a VPC (vpc-11122233) in your account in the `us-west-2` region.
 
 ```
-aws ec2 create-vpc-peering-connection --vpc-id {{vpc-1a2b3c4d}} --peer-vpc-id {{vpc-11122233}} --peer-owner-id {{123456789012}} --peer-region {{us-west-2}}
+aws ec2 create-vpc-peering-connection \
+    --vpc-id {{vpc-1a2b3c4d}} \
+    --peer-vpc-id {{vpc-11122233}} \
+    --peer-region {{us-west-2}}
 ```
+Output:
+
+```
+{
+    "VpcPeeringConnection": {
+        "Status": {
+            "Message": "Initiating Request to 123456789012",
+            "Code": "initiating-request"
+        },
+        "Tags": [],
+        "RequesterVpcInfo": {
+            "OwnerId": "123456789012",
+            "VpcId": "vpc-1a2b3c4d",
+            "CidrBlock": "10.0.0.0/28"
+        },
+        "VpcPeeringConnectionId": "pcx-333ccc333",
+        "ExpirationTime": "2014-04-02T16:13:36.000Z",
+        "AccepterVpcInfo": {
+            "OwnerId": "123456789012",
+            "VpcId": "vpc-11122233",
+            "Region": "us-west-2"
+        }
+    }
+}
+```
+The following `create-vpc-peering-connection` example requests a peering connection between your VPC in the current region (vpc-1a2b3c4d), and a VPC (vpc-11122233) that belongs to AWS account 123456789111 that's in the `us-west-2` region.
+
+```
+aws ec2 create-vpc-peering-connection \
+    --vpc-id {{vpc-1a2b3c4d}} \
+    --peer-vpc-id {{vpc-11122233}} \
+    --peer-owner-id {{123456789111}} \
+    --peer-region {{us-west-2}}
+```
+Output:
+
+```
+{
+    "VpcPeeringConnection": {
+        "Status": {
+            "Message": "Initiating Request to 123456789111",
+            "Code": "initiating-request"
+        },
+        "Tags": [],
+        "RequesterVpcInfo": {
+            "OwnerId": "123456789012",
+            "VpcId": "vpc-1a2b3c4d",
+            "CidrBlock": "10.0.0.0/28"
+        },
+        "VpcPeeringConnectionId": "pcx-444ddd444",
+        "ExpirationTime": "2014-04-02T16:13:36.000Z",
+        "AccepterVpcInfo": {
+            "OwnerId": "123456789111",
+            "VpcId": "vpc-11122233",
+            "Region": "us-west-2"
+        }
+    }
+}
+```
+For more information, see [Create a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html) in the *Amazon VPC Peering Guide*.
 +  For API details, see [CreateVpcPeeringConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-vpc-peering-connection.html) in *AWS CLI Command Reference*.
 
 ### `create-vpc`
@@ -5965,7 +6468,7 @@ Output:
         "Tags": [
             {
                 "Key": "Name",
-                "Value": MyVpc"
+                "Value": "MyVpc"
             }
         ]
     }
@@ -5988,7 +6491,7 @@ Output:
         "DhcpOptionsId": "dopt-19edf471",
         "State": "pending",
         "VpcId": "vpc-0a53287fa4EXAMPLE",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "InstanceTenancy": "dedicated",
         "Ipv6CidrBlockAssociationSet": [],
         "CidrBlockAssociationSet": [
@@ -6049,14 +6552,14 @@ Output:
 ```
 **Example 4: To create a VPC with a CIDR from an IPAM pool**
 The following `create-vpc` example creates a VPC with a CIDR from an Amazon VPC IP Address Manager (IPAM) pool.
-Linux and macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws ec2 create-vpc \
     --ipv4-ipam-pool-id {{ipam-pool-0533048da7d823723}} \
     --tag-specifications ResourceType=vpc,Tags='[{Key=Environment,Value="Preprod"},{Key=Owner,Value="Build Team"}]'
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws ec2 create-vpc {{^}}
@@ -6108,12 +6611,15 @@ The following code example shows how to use `create-vpn-connection-route`.
 
 **AWS CLI**
 **To create a static route for a VPN connection**
-This example creates a static route for the specified VPN connection. If the command succeeds, no output is returned.
-Command:
+The following `create-vpn-connection-route` example creates a static route for the specified VPN connection.
 
 ```
-aws ec2 create-vpn-connection-route --vpn-connection-id {{vpn-40f41529}} --destination-cidr-block {{11.12.0.0/16}}
+aws ec2 create-vpn-connection-route \
+    --vpn-connection-id {{vpn-40f41529}} \
+    --destination-cidr-block {{11.12.0.0/16}}
 ```
+This command produces no output.
+For more information, see [AWS Site-to-Site VPN routing options](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPNRoutingTypes.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [CreateVpnConnectionRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-vpn-connection-route.html) in *AWS CLI Command Reference*.
 
 ### `create-vpn-connection`
@@ -6128,7 +6634,7 @@ The following `create-vpn-connection` example creates a VPN connection between t
 ```
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
     --tag-specification '{{ResourceType=vpn-connection,Tags=[{Key=Name,Value=BGP-VPN}]}}'
 ```
@@ -6138,10 +6644,10 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "...configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
-        "VpnConnectionId": "vpn-123123123123abcab",
+        "VpnConnectionId": "vpn-1a2b3c4d5e6f7a8b9",
         "VpnGatewayId": "vgw-1a1a1a1a1a1a2b2b2",
         "Options": {
             "EnableAcceleration": false,
@@ -6156,7 +6662,7 @@ Output:
         },
         "Routes": [],
         "Tags": [
-             {
+            {
                 "Key": "Name",
                 "Value": "BGP-VPN"
             }
@@ -6171,7 +6677,7 @@ The following `create-vpn-connection` example creates a VPN connection between t
 ```
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
     --options "{\"StaticRoutesOnly\":true}"
 ```
@@ -6181,10 +6687,10 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "..configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
-        "VpnConnectionId": "vpn-123123123123abcab",
+        "VpnConnectionId": "vpn-1a2b3c4d5e6f7a8b9",
         "VpnGatewayId": "vgw-1a1a1a1a1a1a2b2b2",
         "Options": {
             "EnableAcceleration": false,
@@ -6209,7 +6715,7 @@ The following `create-vpn-connection` example creates a VPN connection and speci
 ```
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
     --options TunnelOptions='[{TunnelInsideCidr=169.254.12.0/30,PreSharedKey=ExamplePreSharedKey1},{TunnelInsideCidr=169.254.13.0/30,PreSharedKey=ExamplePreSharedKey2}]'
 ```
@@ -6219,10 +6725,10 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "..configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
-        "VpnConnectionId": "vpn-123123123123abcab",
+        "VpnConnectionId": "vpn-1a2b3c4d5e6f7a8b9",
         "VpnGatewayId": "vgw-1a1a1a1a1a1a2b2b2",
         "Options": {
             "EnableAcceleration": false,
@@ -6256,7 +6762,7 @@ The following `create-vpn-connection` example creates a VPN connection that supp
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
     --transit-gateway-id {{tgw-12312312312312312}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --options {{TunnelInsideIpVersion=ipv6,TunnelOptions=[{StartupAction=start},{StartupAction=start}]}}
 ```
 Output:
@@ -6265,7 +6771,7 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "..configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
         "VpnConnectionId": "vpn-11111111122222222",
@@ -6301,12 +6807,12 @@ For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amaz
 The following code example shows how to use `create-vpn-gateway`.
 
 **AWS CLI**
-**To create a virtual private gateway**
-This example creates a virtual private gateway.
-Command:
+**Example 1: To create a virtual private gateway**
+The following `create-vpn-gateway` example creates a virtual private gateway.
 
 ```
-aws ec2 create-vpn-gateway --type {{ipsec.1}}
+aws ec2 create-vpn-gateway \
+    --type {{ipsec.1}}
 ```
 Output:
 
@@ -6321,12 +6827,14 @@ Output:
     }
 }
 ```
-**To create a virtual private gateway with a specific Amazon-side ASN**
-This example creates a virtual private gateway and specifies the Autonomous System Number (ASN) for the Amazon side of the BGP session.
-Command:
+For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html) in the *AWS Site-to-Site VPN User Guide*.
+**Example 2: To create a virtual private gateway with a specific Amazon-side ASN**
+The following `create-vpn-gateway` example creates a virtual private gateway and specifies the Autonomous System Number (ASN) for the Amazon side of the BGP session.
 
 ```
-aws ec2 create-vpn-gateway --type {{ipsec.1}} --amazon-side-asn {{65001}}
+aws ec2 create-vpn-gateway \
+    --type {{ipsec.1}} \
+    --amazon-side-asn {{65001}}
 ```
 Output:
 
@@ -6341,6 +6849,7 @@ Output:
     }
 }
 ```
+For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [CreateVpnGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/create-vpn-gateway.html) in *AWS CLI Command Reference*.
 
 ### `delete-carrier-gateway`
@@ -6382,7 +6891,7 @@ The following `delete-client-vpn-endpoint` example deletes the specified Client 
 
 ```
 aws ec2 delete-client-vpn-endpoint \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-0123456789abcdef0}}
 ```
 Output:
 
@@ -6407,7 +6916,7 @@ The following `delete-client-vpn-route` example deletes the `0.0.0.0/0` route fo
 
 ```
 aws ec2 delete-client-vpn-route \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-0123456789abcdef0}} \
     --destination-cidr-block {{0.0.0.0/0}} \
     --target-vpc-subnet-id {{subnet-0123456789abcabca}}
 ```
@@ -6485,12 +6994,14 @@ The following code example shows how to use `delete-customer-gateway`.
 
 **AWS CLI**
 **To delete a customer gateway**
-This example deletes the specified customer gateway. If the command succeeds, no output is returned.
-Command:
+The following `delete-customer-gateway` example deletes the specified customer gateway.
 
 ```
-aws ec2 delete-customer-gateway --customer-gateway-id {{cgw-0e11f167}}
+aws ec2 delete-customer-gateway \
+    --customer-gateway-id {{cgw-0e11f167}}
 ```
+This command produces no output.
+For more information, see [Delete an AWS Site-to-Site VPN connection and gateway](https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-vpn.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DeleteCustomerGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-customer-gateway.html) in *AWS CLI Command Reference*.
 
 ### `delete-dhcp-options`
@@ -6500,12 +7011,14 @@ The following code example shows how to use `delete-dhcp-options`.
 
 **AWS CLI**
 **To delete a DHCP options set**
-This example deletes the specified DHCP options set. If the command succeeds, no output is returned.
-Command:
+The following `delete-dhcp-options` example deletes the specified DHCP options set.
 
 ```
-aws ec2 delete-dhcp-options --dhcp-options-id {{dopt-d9070ebb}}
+aws ec2 delete-dhcp-options \
+    --dhcp-options-id {{dopt-d9070ebb}}
 ```
+This command produces no output.
+For more information, see [Work with DHCP option sets](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteDhcpOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-dhcp-options.html) in *AWS CLI Command Reference*.
 
 ### `delete-egress-only-internet-gateway`
@@ -6515,19 +7028,20 @@ The following code example shows how to use `delete-egress-only-internet-gateway
 
 **AWS CLI**
 **To delete an egress-only Internet gateway**
-This example deletes the specified egress-only Internet gateway.
-Command:
+The following `delete-egress-only-internet-gateway` example deletes the specified egress-only Internet gateway.
 
 ```
-aws ec2 delete-egress-only-internet-gateway --egress-only-internet-gateway-id {{eigw-01eadbd45ecd7943f}}
+aws ec2 delete-egress-only-internet-gateway \
+    --egress-only-internet-gateway-id {{eigw-01eadbd45ecd7943f}}
 ```
 Output:
 
 ```
 {
-  "ReturnCode": true
+    "ReturnCode": true
 }
 ```
+For more information, see [Enable outbound IPv6 traffic using an egress-only internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteEgressOnlyInternetGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-egress-only-internet-gateway.html) in *AWS CLI Command Reference*.
 
 ### `delete-fleets`
@@ -6558,7 +7072,7 @@ Output:
     "UnsuccessfulFleetDeletions": []
 }
 ```
-For more information, see [Delete an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html#delete-fleet) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Delete an EC2 Fleet request and the instances in the fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-fleet.html) in the *Amazon EC2 User Guide*.
 **Example 2: To delete an EC2 Fleet without terminating the associated instances**
 The following `delete-fleets` example deletes the specified EC2 Fleet without terminating the associated On-Demand Instances and Spot Instances.
 
@@ -6581,7 +7095,7 @@ Output:
     "UnsuccessfulFleetDeletions": []
 }
 ```
-For more information, see [Delete an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html#delete-fleet) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Delete an EC2 Fleet request and the instances in the fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteFleets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-fleets.html) in *AWS CLI Command Reference*.
 
 ### `delete-flow-logs`
@@ -6594,7 +7108,8 @@ The following code example shows how to use `delete-flow-logs`.
 The following `delete-flow-logs` example deletes the specified flow log.
 
 ```
-aws ec2 delete-flow-logs --flow-log-id {{fl-11223344556677889}}
+aws ec2 delete-flow-logs \
+    --flow-log-id {{fl-11223344556677889}}
 ```
 Output:
 
@@ -6603,6 +7118,7 @@ Output:
     "Unsuccessful": []
 }
 ```
+For more information, see [Work with flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteFlowLogs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-flow-logs.html) in *AWS CLI Command Reference*.
 
 ### `delete-fpga-image`
@@ -6612,19 +7128,20 @@ The following code example shows how to use `delete-fpga-image`.
 
 **AWS CLI**
 **To delete an Amazon FPGA image**
-This example deletes the specified AFI.
-Command:
+The following `delete-fpga-image` example deletes the specified AFI.
 
 ```
-aws ec2 delete-fpga-image --fpga-image-id {{afi-06b12350a123fbabc}}
+aws ec2 delete-fpga-image \
+    --fpga-image-id {{afi-06b12350a123fbabc}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [DeleteFpgaImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-fpga-image.html) in *AWS CLI Command Reference*.
 
 ### `delete-instance-connect-endpoint`
@@ -6645,14 +7162,14 @@ Output:
 ```
 {
     "InstanceConnectEndpoint": {
-        "OwnerId": "111111111111",
+        "OwnerId": "123456789012",
         "InstanceConnectEndpointId": "eice-0123456789example",
-        "InstanceConnectEndpointArn": "arn:aws:ec2:us-east-1:111111111111:instance-connect-endpoint/eice-0123456789example",
+        "InstanceConnectEndpointArn": "arn:aws:ec2:us-west-2:123456789012:instance-connect-endpoint/eice-0123456789example",
         "State": "delete-in-progress",
         "StateMessage": "",
         "NetworkInterfaceIds": [],
         "VpcId": "vpc-0123abcd",
-        "AvailabilityZone": "us-east-1d",
+        "AvailabilityZone": "us-west-2d",
         "CreatedAt": "2023-02-07T12:05:37+00:00",
         "SubnetId": "subnet-0123abcd"
     }
@@ -6672,7 +7189,6 @@ The following `delete-instance-event-window` example deletes an event window.
 
 ```
 aws ec2 delete-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}}
 ```
 Output:
@@ -6685,13 +7201,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 2: To force delete an event window**
 The following `delete-instance-event-window` example force deletes an event window if the event window is currently associated with targets.
 
 ```
 aws ec2 delete-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --force-delete
 ```
@@ -6705,7 +7220,7 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteInstanceEventWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-instance-event-window.html) in *AWS CLI Command Reference*.
 
 ### `delete-internet-gateway`
@@ -6732,29 +7247,29 @@ The following code example shows how to use `delete-ipam-pool`.
 
 **AWS CLI**
 **To delete an IPAM pool**
-In this example, you're a IPAM delegated admin who wants to delete an IPAM pool that you no longer need, but the pool has a CIDR provisioned to it. You cannot delete a pool if it has CIDRs provisioned to it unless you use the `--cascade` option, so you'll use `--cascade`.
+The following `delete-ipam-pool` example deletes an IPAM pool in your AWS account. In this example, you're an IPAM delegated admin who wants to delete an IPAM pool that you no longer need, but the pool has a CIDR provisioned to it. You cannot delete a pool if it has CIDRs provisioned to it unless you use the `--cascade` option, so you'll use `--cascade`.
 To complete this request:
 You'll need the IPAM pool ID which you can get with [describe-ipam-pools](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-pools.html).The `--region` must be the IPAM home Region.
-The following `delete-ipam-pool` example deletes an IPAM pool in your AWS account.
+To delete the pool, use the following command.
 
 ```
 aws ec2 delete-ipam-pool \
     --ipam-pool-id {{ipam-pool-050c886a3ca41cd5b}} \
     --cascade \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
 ```
 {
     "IpamPool": {
-        "OwnerId": "320805250157",
+        "OwnerId": "123456789012",
         "IpamPoolId": "ipam-pool-050c886a3ca41cd5b",
-        "IpamPoolArn": "arn:aws:ec2::320805250157:ipam-pool/ipam-pool-050c886a3ca41cd5b",
-        "IpamScopeArn": "arn:aws:ec2::320805250157:ipam-scope/ipam-scope-0a158dde35c51107b",
+        "IpamPoolArn": "arn:aws:ec2::123456789012:ipam-pool/ipam-pool-050c886a3ca41cd5b",
+        "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-0a158dde35c51107b",
         "IpamScopeType": "private",
-        "IpamArn": "arn:aws:ec2::320805250157:ipam/ipam-005f921c17ebd5107",
-        "IpamRegion": "us-east-1",
+        "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-005f921c17ebd5107",
+        "IpamRegion": "us-west-2",
         "Locale": "None",
         "PoolDepth": 1,
         "State": "delete-in-progress",
@@ -6776,28 +7291,28 @@ The following code example shows how to use `delete-ipam-resource-discovery`.
 
 **AWS CLI**
 **To delete a resource discovery**
-In this example, you're a IPAM delegated admin who wants to delete a non-default resource discovery that you created to share with another IPAM admin during the process of integrating IPAM with accounts outside of your organization.
+The following `delete-ipam-resource-discovery` example deletes a resource discovery. In this example, you're an IPAM delegated admin who wants to delete a non-default resource discovery that you created to share with another IPAM admin during the process of integrating IPAM with accounts outside of your organization.
 To complete this request:
 The `--region` must be the Region where you created the resource discovery.You cannot delete a default resource discovery if `"IsDefault": true`. A default resource discovery is one that is created automatically in the account that creates an IPAM. To delete a default resource discovery, you have to delete the IPAM.
-The following `delete-ipam-resource-discovery` example deletes a resource discovery.
+To delete the resource discovery, use the following command.
 
 ```
 aws ec2 delete-ipam-resource-discovery \
     --ipam-resource-discovery-id {{ipam-res-disco-0e39761475298ee0f}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
 ```
 {
     "IpamResourceDiscovery": {
-        "OwnerId": "149977607591",
+        "OwnerId": "123456789012",
         "IpamResourceDiscoveryId": "ipam-res-disco-0e39761475298ee0f",
-        "IpamResourceDiscoveryArn": "arn:aws:ec2::149977607591:ipam-resource-discovery/ipam-res-disco-0e39761475298ee0f",
-        "IpamResourceDiscoveryRegion": "us-east-1",
+        "IpamResourceDiscoveryArn": "arn:aws:ec2::123456789012:ipam-resource-discovery/ipam-res-disco-0e39761475298ee0f",
+        "IpamResourceDiscoveryRegion": "us-west-2",
         "OperatingRegions": [
             {
-                "RegionName": "us-east-1"
+                "RegionName": "us-west-2"
             }
         ],
         "IsDefault": false,
@@ -6830,7 +7345,7 @@ Output:
         "IpamScopeId": "ipam-scope-01c1ebab2b63bd7e4",
         "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-01c1ebab2b63bd7e4",
         "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-        "IpamRegion": "us-east-1",
+        "IpamRegion": "us-west-2",
         "IpamScopeType": "private",
         "IsDefault": false,
         "Description": "Example description",
@@ -6863,19 +7378,13 @@ Output:
         "OwnerId": "123456789012",
         "IpamId": "ipam-036486dfa6af58ee0",
         "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-036486dfa6af58ee0",
-        "IpamRegion": "us-east-1",
+        "IpamRegion": "us-west-2",
         "PublicDefaultScopeId": "ipam-scope-071b8042b0195c183",
         "PrivateDefaultScopeId": "ipam-scope-0807405dece705a30",
         "ScopeCount": 2,
         "OperatingRegions": [
             {
-                "RegionName": "us-east-1"
-            },
-            {
-                "RegionName": "us-east-2"
-            },
-            {
-                "RegionName": "us-west-1"
+                "RegionName": "us-west-2"
             }
         ],
         "State": "delete-in-progress"
@@ -6916,26 +7425,28 @@ The following code example shows how to use `delete-launch-template-versions`.
 
 **AWS CLI**
 **To delete a launch template version**
-This example deletes the specified launch template version.
-Command:
+The following `delete-launch-template-versions` example deletes the specified launch template version.
 
 ```
-aws ec2 delete-launch-template-versions --launch-template-id {{lt-0abcd290751193123}} --versions {{1}}
+aws ec2 delete-launch-template-versions \
+    --launch-template-id {{lt-0abcd1234567890ab}} \
+    --versions {{1}}
 ```
 Output:
 
 ```
 {
-  "UnsuccessfullyDeletedLaunchTemplateVersions": [],
-  "SuccessfullyDeletedLaunchTemplateVersions": [
-      {
-          "LaunchTemplateName": "TestVersion",
-          "VersionNumber": 1,
-          "LaunchTemplateId": "lt-0abcd290751193123"
-      }
-  ]
+    "UnsuccessfullyDeletedLaunchTemplateVersions": [],
+    "SuccessfullyDeletedLaunchTemplateVersions": [
+        {
+            "LaunchTemplateName": "TestVersion",
+            "VersionNumber": 1,
+            "LaunchTemplateId": "lt-0abcd1234567890ab"
+        }
+    ]
 }
 ```
+For more information, see [Delete a launch template or a launch template version](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-launch-template.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteLaunchTemplateVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-launch-template-versions.html) in *AWS CLI Command Reference*.
 
 ### `delete-launch-template`
@@ -6945,26 +7456,27 @@ The following code example shows how to use `delete-launch-template`.
 
 **AWS CLI**
 **To delete a launch template**
-This example deletes the specified launch template.
-Command:
+The following `delete-launch-template` example deletes the specified launch template.
 
 ```
-aws ec2 delete-launch-template --launch-template-id {{lt-0abcd290751193123}}
+aws ec2 delete-launch-template \
+    --launch-template-id {{lt-0abcd29075EXAMPLE}}
 ```
 Output:
 
 ```
 {
-  "LaunchTemplate": {
-      "LatestVersionNumber": 2,
-      "LaunchTemplateId": "lt-0abcd290751193123",
-      "LaunchTemplateName": "TestTemplate",
-      "DefaultVersionNumber": 2,
-      "CreatedBy": "arn:aws:iam::123456789012:root",
-      "CreateTime": "2017-11-23T16:46:25.000Z"
-  }
+    "LaunchTemplate": {
+        "LatestVersionNumber": 2,
+        "LaunchTemplateId": "lt-0abcd29075EXAMPLE",
+        "LaunchTemplateName": "TestTemplate",
+        "DefaultVersionNumber": 2,
+        "CreatedBy": "arn:aws:iam::123456789012:root",
+        "CreateTime": "2017-11-23T16:46:25.000Z"
+    }
 }
 ```
+For more information, see [Delete a launch template or a launch template version](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-launch-template.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteLaunchTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-launch-template.html) in *AWS CLI Command Reference*.
 
 ### `delete-local-gateway-route-table-virtual-interface-group-association`
@@ -6989,14 +7501,14 @@ Output:
         "LocalGatewayVirtualInterfaceGroupId": "lgw-vif-grp-exampleid0123abcd",
         "LocalGatewayId": "lgw-exampleid11223344",
         "LocalGatewayRouteTableId": "lgw-rtb-exampleidabcd1234",
-        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:111122223333:local-gateway-route-table/lgw-rtb-exampleidabcd1234",
-        "OwnerId": "111122223333",
+        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:local-gateway-route-table/lgw-rtb-exampleidabcd1234",
+        "OwnerId": "123456789012",
         "State": "disassociating",
         "Tags": []
     }
 }
 ```
-For more information, see [VIF group associations](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#vif-group-associations) in the *AWS Outposts User Guide*.
+For more information, see [VIF group associations](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-local-gateway-route-table-virtual-interface-group-association.html) in *AWS CLI Command Reference*.
 
 ### `delete-local-gateway-route-table-vpc-association`
@@ -7019,15 +7531,15 @@ Output:
     "LocalGatewayRouteTableVpcAssociation": {
         "LocalGatewayRouteTableVpcAssociationId": "lgw-vpc-assoc-abcd1234wxyz56789",
         "LocalGatewayRouteTableId": "lgw-rtb-abcdefg1234567890",
-        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:555555555555:local-gateway-route-table/lgw-rtb-abcdefg1234567890",
+        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:local-gateway-route-table/lgw-rtb-abcdefg1234567890",
         "LocalGatewayId": "lgw-exampleid01234567",
         "VpcId": "vpc-example0123456789",
-        "OwnerId": "555555555555",
+        "OwnerId": "123456789012",
         "State": "disassociating"
     }
 }
 ```
-For more information, see [VPC associations](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#vpc-associations) in the *AWS Outposts User Guide*.
+For more information, see [VPC associations](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [DeleteLocalGatewayRouteTableVpcAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-local-gateway-route-table-vpc-association.html) in *AWS CLI Command Reference*.
 
 ### `delete-local-gateway-route-table`
@@ -7049,10 +7561,10 @@ Output:
 {
     "LocalGatewayRouteTable": {
         "LocalGatewayRouteTableId": "lgw-rtb-abcdefg1234567890",
-        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:111122223333:local-gateway-route-table/lgw-rtb-abcdefg1234567890",
+        "LocalGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:local-gateway-route-table/lgw-rtb-abcdefg1234567890",
         "LocalGatewayId": "lgw-1a2b3c4d5e6f7g8h9",
-        "OutpostArn": "arn:aws:outposts:us-west-2:111122223333:outpost/op-021345abcdef67890",
-        "OwnerId": "111122223333",
+        "OutpostArn": "arn:aws:outposts:us-west-2:123456789012:outpost/op-021345abcdef67890",
+        "OwnerId": "123456789012",
         "State": "deleting",
         "Tags": [],
         "Mode": "direct-vpc-routing"
@@ -7089,6 +7601,7 @@ Output:
     }
 }
 ```
+For more information, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [DeleteLocalGatewayRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-local-gateway-route.html) in *AWS CLI Command Reference*.
 
 ### `delete-managed-prefix-list`
@@ -7130,19 +7643,20 @@ The following code example shows how to use `delete-nat-gateway`.
 
 **AWS CLI**
 **To delete a NAT gateway**
-This example deletes NAT gateway `nat-04ae55e711cec5680`.
-Command:
+The following `delete-nat-gateway` example deletes NAT gateway `nat-04ae55e711cec5680`.
 
 ```
-aws ec2 delete-nat-gateway --nat-gateway-id {{nat-04ae55e711cec5680}}
+aws ec2 delete-nat-gateway \
+    --nat-gateway-id {{nat-04ae55e711cec5680}}
 ```
 Output:
 
 ```
 {
-   "NatGatewayId": "nat-04ae55e711cec5680"
+    "NatGatewayId": "nat-04ae55e711cec5680"
 }
 ```
+For more information, see [Work with NAT gateways](https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateway-working-with.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteNatGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-nat-gateway.html) in *AWS CLI Command Reference*.
 
 ### `delete-network-acl-entry`
@@ -7152,12 +7666,16 @@ The following code example shows how to use `delete-network-acl-entry`.
 
 **AWS CLI**
 **To delete a network ACL entry**
-This example deletes ingress rule number 100 from the specified network ACL. If the command succeeds, no output is returned.
-Command:
+The following `delete-network-acl-entry` example deletes ingress rule number 100 from the specified network ACL.
 
 ```
-aws ec2 delete-network-acl-entry --network-acl-id {{acl-5fb85d36}} --ingress --rule-number {{100}}
+aws ec2 delete-network-acl-entry \
+    --network-acl-id {{acl-5fb85d36}} \
+    --ingress \
+    --rule-number {{100}}
 ```
+This command produces no output.
+For more information, see [Network ACL rules](https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteNetworkAclEntry](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-network-acl-entry.html) in *AWS CLI Command Reference*.
 
 ### `delete-network-acl`
@@ -7167,12 +7685,14 @@ The following code example shows how to use `delete-network-acl`.
 
 **AWS CLI**
 **To delete a network ACL**
-This example deletes the specified network ACL. If the command succeeds, no output is returned.
-Command:
+The following `delete-network-acl` example deletes the specified network ACL.
 
 ```
-aws ec2 delete-network-acl --network-acl-id {{acl-5fb85d36}}
+aws ec2 delete-network-acl \
+    --network-acl-id {{acl-5fb85d36}}
 ```
+This command produces no output.
+For more information, see [Delete a network ACL for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/delete-network-acl.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteNetworkAcl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-network-acl.html) in *AWS CLI Command Reference*.
 
 ### `delete-network-insights-access-scope-analysis`
@@ -7192,7 +7712,7 @@ Output:
 
 ```
 {
-    "NetworkInsightsAccessScopeAnalysisId": "nisa-01234567891abcdef
+    "NetworkInsightsAccessScopeAnalysisId": "nisa-01234567891abcdef"
 }
 ```
 For more information, see [Getting started with Network Access Analyzer using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getting-started-cli.html) in the *Network Access Analyzer Guide*.
@@ -7274,19 +7794,20 @@ The following code example shows how to use `delete-network-interface-permission
 
 **AWS CLI**
 **To delete a network interface permission**
-This example deletes the specified network interface permission.
-Command:
+The following `delete-network-interface-permission` example deletes the specified network interface permission.
 
 ```
-aws ec2 delete-network-interface-permission --network-interface-permission-id {{eni-perm-06fd19020ede149ea}}
+aws ec2 delete-network-interface-permission \
+    --network-interface-permission-id {{eni-perm-06fd19020ede149ea}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
+For more information, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteNetworkInterfacePermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-network-interface-permission.html) in *AWS CLI Command Reference*.
 
 ### `delete-network-interface`
@@ -7296,12 +7817,14 @@ The following code example shows how to use `delete-network-interface`.
 
 **AWS CLI**
 **To delete a network interface**
-This example deletes the specified network interface. If the command succeeds, no output is returned.
-Command:
+The following `delete-network-interface` example deletes the specified network interface.
 
 ```
-aws ec2 delete-network-interface --network-interface-id {{eni-e5aa89a3}}
+aws ec2 delete-network-interface \
+    --network-interface-id {{eni-e5aa89a3}}
 ```
+This command produces no output.
+For more information, see [Delete a network interface](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete_eni.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteNetworkInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-network-interface.html) in *AWS CLI Command Reference*.
 
 ### `delete-placement-group`
@@ -7311,12 +7834,14 @@ The following code example shows how to use `delete-placement-group`.
 
 **AWS CLI**
 **To delete a placement group**
-This example command deletes the specified placement group.
-Command:
+The following `delete-placement-group` example deletes the specified placement group.
 
 ```
-aws ec2 delete-placement-group --group-name {{my-cluster}}
+aws ec2 delete-placement-group \
+    --group-name {{my-cluster}}
 ```
+This command produces no output.
+For more information, see [Delete a placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/delete-placement-group.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeletePlacementGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-placement-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-queued-reserved-instances`
@@ -7330,7 +7855,7 @@ The following `delete-queued-reserved-instances` example deletes the specified R
 
 ```
 aws ec2 delete-queued-reserved-instances \
-    --reserved-instances-ids {{af9f760e-6f91-4559-85f7-4980eexample}}
+    --reserved-instances-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -7338,12 +7863,13 @@ Output:
 {
     "SuccessfulQueuedPurchaseDeletions": [
         {
-            "ReservedInstancesId": "af9f760e-6f91-4559-85f7-4980eexample"
+            "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ],
     "FailedQueuedPurchaseDeletions": []
 }
 ```
+For more information, see [Cancel a queued purchase](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html#cancel-queued-purchase) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteQueuedReservedInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-queued-reserved-instances.html) in *AWS CLI Command Reference*.
 
 ### `delete-route-table`
@@ -7353,12 +7879,14 @@ The following code example shows how to use `delete-route-table`.
 
 **AWS CLI**
 **To delete a route table**
-This example deletes the specified route table. If the command succeeds, no output is returned.
-Command:
+The following `delete-route-table` example deletes the specified route table.
 
 ```
-aws ec2 delete-route-table --route-table-id {{rtb-22574640}}
+aws ec2 delete-route-table \
+    --route-table-id {{rtb-22574640}}
 ```
+This command produces no output.
+For more information, see [Configure route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-route-table.html) in *AWS CLI Command Reference*.
 
 ### `delete-route`
@@ -7368,12 +7896,15 @@ The following code example shows how to use `delete-route`.
 
 **AWS CLI**
 **To delete a route**
-This example deletes the specified route from the specified route table. If the command succeeds, no output is returned.
-Command:
+The following `delete-route` example deletes the specified route from the specified route table.
 
 ```
-aws ec2 delete-route --route-table-id {{rtb-22574640}} --destination-cidr-block {{0.0.0.0/0}}
+aws ec2 delete-route \
+    --route-table-id {{rtb-22574640}} \
+    --destination-cidr-block {{0.0.0.0/0}}
 ```
+This command produces no output.
+For more information, see [Add, modify, and remove routes](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html#AddRemoveRoutes) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-route.html) in *AWS CLI Command Reference*.
 
 ### `delete-security-group`
@@ -7382,21 +7913,38 @@ aws ec2 delete-route --route-table-id {{rtb-22574640}} --destination-cidr-block 
 The following code example shows how to use `delete-security-group`.
 
 **AWS CLI**
-**[EC2-Classic] To delete a security group**
-This example deletes the security group named `MySecurityGroup`. If the command succeeds, no output is returned.
-Command:
+**Example 1: To delete a security group (EC2-Classic)**
+The following `delete-security-group` example deletes the security group named `MySecurityGroup`.
 
 ```
-aws ec2 delete-security-group --group-name {{MySecurityGroup}}
+aws ec2 delete-security-group \
+    --group-name {{MySecurityGroup}}
 ```
-**[EC2-VPC] To delete a security group**
-This example deletes the security group with the ID `sg-903004f8`. Note that you can't reference a security group for EC2-VPC by name. If the command succeeds, no output is returned.
-Command:
+Output:
 
 ```
-aws ec2 delete-security-group --group-id {{sg-903004f8}}
+{
+    "Return": true,
+    "GroupId": "sg-1a2b3c4d"
+}
 ```
-For more information, see Using Security Groups in the *AWS Command Line Interface User Guide*.
+For more information, see [Delete an Amazon EC2 security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deleting-security-group.html) in the *Amazon EC2 User Guide*.
+**Example 2: To delete a security group (EC2-VPC)**
+The following `delete-security-group` example deletes the security group with the ID `sg-903004f8`. Note that you can't reference a security group for EC2-VPC by name.
+
+```
+aws ec2 delete-security-group \
+    --group-id {{sg-903004f8}}
+```
+Output:
+
+```
+{
+    "Return": true,
+    "GroupId": "sg-903004f8"
+}
+```
+For more information, see [Delete an Amazon EC2 security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deleting-security-group.html) in the *Amazon EC2 User Guide* and [Creating, configuring, and deleting Amazon EC2 security groups in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-sg.html) in the *AWS CLI User Guide*.
 +  For API details, see [DeleteSecurityGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-security-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-snapshot`
@@ -7406,12 +7954,14 @@ The following code example shows how to use `delete-snapshot`.
 
 **AWS CLI**
 **To delete a snapshot**
-This example command deletes a snapshot with the snapshot ID of `snap-1234567890abcdef0`. If the command succeeds, no output is returned.
-Command:
+The following `delete-snapshot` example deletes a snapshot with the snapshot ID of `snap-1234567890abcdef0`.
 
 ```
-aws ec2 delete-snapshot --snapshot-id {{snap-1234567890abcdef0}}
+aws ec2 delete-snapshot \
+    --snapshot-id {{snap-1234567890abcdef0}}
 ```
+This command produces no output.
+For more information, see [Delete an Amazon EBS snapshot](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-deleting-snapshot.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DeleteSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `delete-spot-datafeed-subscription`
@@ -7421,12 +7971,13 @@ The following code example shows how to use `delete-spot-datafeed-subscription`.
 
 **AWS CLI**
 **To cancel a Spot Instance data feed subscription**
-This example command deletes a Spot data feed subscription for the account. If the command succeeds, no output is returned.
-Command:
+The following `delete-spot-datafeed-subscription` example deletes a Spot data feed subscription for the account.
 
 ```
 aws ec2 delete-spot-datafeed-subscription
 ```
+This command produces no output.
+For more information, see [Track your Spot Instance costs using the Spot Instance data feed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteSpotDatafeedSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-spot-datafeed-subscription.html) in *AWS CLI Command Reference*.
 
 ### `delete-subnet-cidr-reservation`
@@ -7465,12 +8016,14 @@ The following code example shows how to use `delete-subnet`.
 
 **AWS CLI**
 **To delete a subnet**
-This example deletes the specified subnet. If the command succeeds, no output is returned.
-Command:
+The following `delete-subnet` example deletes the specified subnet.
 
 ```
-aws ec2 delete-subnet --subnet-id {{subnet-9d4a7b6c}}
+aws ec2 delete-subnet \
+    --subnet-id {{subnet-9d4a7b6c}}
 ```
+This command produces no output.
+For more information, see [Delete a subnet](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-deleting.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteSubnet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-subnet.html) in *AWS CLI Command Reference*.
 
 ### `delete-tags`
@@ -7487,6 +8040,7 @@ aws ec2 delete-tags \
     --resources {{ami-1234567890abcdef0}} \
     --tags {{Key=Stack,Value=Test}}
 ```
+This command produces no output.
 It's optional to specify the value for a tag. The following `delete-tags` example deletes the tag with the key name `purpose` from the specified instance, regardless of the tag value for the tag.
 
 ```
@@ -7494,6 +8048,7 @@ aws ec2 delete-tags \
     --resources {{i-1234567890abcdef0}} \
     --tags {{Key=purpose}}
 ```
+This command produces no output.
 If you specify the empty string as the tag value, the tag is deleted only if the tag's value is the empty string. The following `delete-tags` example specifies the empty string as the tag value for the tag to delete.
 
 ```
@@ -7501,6 +8056,8 @@ aws ec2 delete-tags \
     --resources {{i-1234567890abcdef0}} \
     --tags {{Key=Name,Value=}}
 ```
+This command produces no output.
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 **Example 2: To delete a tag from multiple resources**
 The following `delete-tags` example deletes the tag``Purpose=Test`` from both an instance and an AMI. As shown in the previous example, you can omit the tag value from the command.
 
@@ -7509,6 +8066,8 @@ aws ec2 delete-tags \
     --resources {{i-1234567890abcdef0}} {{ami-1234567890abcdef0}} \
     --tags {{Key=Purpose}}
 ```
+This command produces no output.
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeleteTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-tags.html) in *AWS CLI Command Reference*.
 
 ### `delete-traffic-mirror-filter-rule`
@@ -7531,7 +8090,7 @@ Output:
     "TrafficMirrorFilterRuleId": "tmfr-081f71283bEXAMPLE"
 }
 ```
-For more information, see [Modify Your Traffic Mirror Filter Rules](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-filter.html#modify-traffic-mirroring-filter-rules) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror filter](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-filter.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [DeleteTrafficMirrorFilterRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-traffic-mirror-filter-rule.html) in *AWS CLI Command Reference*.
 
 ### `delete-traffic-mirror-filter`
@@ -7554,7 +8113,7 @@ Output:
     "TrafficMirrorFilterId": "tmf-0be0b25fcdEXAMPLE"
 }
 ```
-For more information, see [Delete a Traffic Mirror Filter](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-filter.html#delete-traffic-mirroring-filter) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror filter](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-filter.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [DeleteTrafficMirrorFilter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-traffic-mirror-filter.html) in *AWS CLI Command Reference*.
 
 ### `delete-traffic-mirror-session`
@@ -7577,7 +8136,7 @@ Output:
     "TrafficMirrorSessionId": "tms-0af3141ce5EXAMPLE"
 }
 ```
-For more information, see [Delete a Traffic Mirror Session](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-session.html#delete-traffic-mirroring-session) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror session](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-session.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [DeleteTrafficMirrorSession](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-traffic-mirror-session.html) in *AWS CLI Command Reference*.
 
 ### `delete-traffic-mirror-target`
@@ -7600,7 +8159,7 @@ Output:
     "TrafficMirrorTargetId": "tmt-060f48ce9EXAMPLE"
 }
 ```
-For more information, see [Delete a Traffic Mirror Target](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-target.html#delete-traffic-mirroring-target) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create or delete a traffic mirror target](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-target.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [DeleteTrafficMirrorTarget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-traffic-mirror-target.html) in *AWS CLI Command Reference*.
 
 ### `delete-transit-gateway-connect-peer`
@@ -7712,7 +8271,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing multicast domains](https://docs.aws.amazon.com/vpc/latest/tgw/manage-domain.html) in the *Transit Gateways Guide*.
+For more information, see [Delete a multicast domain in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/delete-tgw-domain.html) in the *Transit Gateways Guide*.
 +  For API details, see [DeleteTransitGatewayMulticastDomain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-transit-gateway-multicast-domain.html) in *AWS CLI Command Reference*.
 
 ### `delete-transit-gateway-peering-attachment`
@@ -7769,15 +8328,13 @@ Output:
 
 ```
 {
-    "TransitGatewayPolicyTables": [
-        {
-            "TransitGatewayPolicyTableId": "tgw-ptb-0a16f134b78668a81",
-            "TransitGatewayId": "tgw-067f8505c18f0bd6e",
-            "State": "deleting",
-            "CreationTime": "2023-11-28T16:36:43+00:00",
-            "Tags": []
-        }
-    ]
+    "TransitGatewayPolicyTable": {
+        "TransitGatewayPolicyTableId": "tgw-ptb-0a16f134b78668a81",
+        "TransitGatewayId": "tgw-067f8505c18f0bd6e",
+        "State": "deleting",
+        "CreationTime": "2023-11-28T16:36:43+00:00",
+        "Tags": []
+    }
 }
 ```
 For more information, see [Transit gateway policy tables](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables.html) in the *Transit Gateway User Guide*.
@@ -7810,12 +8367,12 @@ Output:
         "TransitGatewayAttachment": {
             "TransitGatewayAttachmentId": "tgw-attach-aabbccddaabbccaab",
             "ResourceType": "vpc",
-            "ResourceId": "vpc-112233445566aabbc"
+            "ResourceId": "vpc-1122334455aabbccd"
         }
     }
 }
 ```
-For more information, see [Prefix list references](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-prefix-lists.html) in the *Transit Gateways Guide*.
+For more information, see [Delete a prefix list reference in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/delete-prefix-list-reference.html) in the *Transit Gateways Guide*.
 +  For API details, see [DeleteTransitGatewayPrefixListReference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-transit-gateway-prefix-list-reference.html) in *AWS CLI Command Reference*.
 
 ### `delete-transit-gateway-route-table`
@@ -7845,7 +8402,7 @@ Output:
     }
 }
 ```
-For more information, see [Delete a transit gateway route table](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#delete-tgw-route-table) in the *Transit Gateways Guide*.
+For more information, see [Delete a transit gateway route table](https://docs.aws.amazon.com/vpc/latest/tgw/delete-tgw-route-table.html) in the *Transit Gateways Guide*.
 +  For API details, see [DeleteTransitGatewayRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-transit-gateway-route-table.html) in *AWS CLI Command Reference*.
 
 ### `delete-transit-gateway-route`
@@ -7880,7 +8437,7 @@ Output:
     }
 }
 ```
-For more information, see [Delete a static route](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#tgw-delete-static-route) in the *Transit Gateways Guide*.
+For more information, see [Delete a static route](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-delete-static-route.html) in the *Transit Gateways Guide*.
 +  For API details, see [DeleteTransitGatewayRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-transit-gateway-route.html) in *AWS CLI Command Reference*.
 
 ### `delete-transit-gateway-vpc-attachment`
@@ -7904,13 +8461,13 @@ Output:
         "TransitGatewayAttachmentId": "tgw-attach-0d2c54bdb3EXAMPLE",
         "TransitGatewayId": "tgw-02f776b1a7EXAMPLE",
         "VpcId": "vpc-0065acced4f61c651",
-        "VpcOwnerId": "111122223333",
+        "VpcOwnerId": "123456789012",
         "State": "deleting",
         "CreationTime": "2019-07-17T16:04:27.000Z"
     }
 }
 ```
-For more information, see [Delete a VPC attachment](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html#delete-vpc-attachment) in the *Transit Gateways Guide*.
+For more information, see [Delete a VPC attachment](https://docs.aws.amazon.com/vpc/latest/tgw/delete-vpc-attachment.html) in the *Transit Gateways Guide*.
 +  For API details, see [DeleteTransitGatewayVpcAttachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-transit-gateway-vpc-attachment.html) in *AWS CLI Command Reference*.
 
 ### `delete-transit-gateway`
@@ -7949,7 +8506,7 @@ Output:
     }
 }
 ```
-For more information, see [Delete a transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html#delete-tgw) in the *Transit Gateways Guide*.
+For more information, see [Delete a transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/delete-tgw.html) in the *Transit Gateways Guide*.
 +  For API details, see [DeleteTransitGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-transit-gateway.html) in *AWS CLI Command Reference*.
 
 ### `delete-verified-access-endpoint`
@@ -7976,8 +8533,8 @@ Output:
         "ApplicationDomain": "example.com",
         "EndpointType": "network-interface",
         "AttachmentType": "vpc",
-        "DomainCertificateArn": "arn:aws:acm:us-east-2:123456789012:certificate/eb065ea0-26f9-4e75-a6ce-0a1a7EXAMPLE",
-        "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-east-2.amazonaws.com",
+        "DomainCertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-west-2.amazonaws.com",
         "SecurityGroupIds": [
             "sg-004915970c4c8f13a"
         ],
@@ -8020,7 +8577,7 @@ Output:
         "VerifiedAccessInstanceId": "vai-0ce000c0b7643abea",
         "Description": "Testing Verified Access",
         "Owner": "123456789012",
-        "VerifiedAccessGroupArn": "arn:aws:ec2:us-east-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
+        "VerifiedAccessGroupArn": "arn:aws:ec2:us-west-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
         "CreationTime": "2023-08-25T19:55:19",
         "LastUpdatedTime": "2023-08-25T22:49:03",
         "DeletionTime": "2023-08-26T00:58:31"
@@ -8097,12 +8654,14 @@ The following code example shows how to use `delete-volume`.
 
 **AWS CLI**
 **To delete a volume**
-This example command deletes an available volume with the volume ID of `vol-049df61146c4d7901`. If the command succeeds, no output is returned.
-Command:
+The following `delete-volume` example deletes an available volume with the volume ID of `vol-049df61146c4d7901`.
 
 ```
-aws ec2 delete-volume --volume-id {{vol-049df61146c4d7901}}
+aws ec2 delete-volume \
+    --volume-id {{vol-049df61146c4d7901}}
 ```
+This command produces no output.
+For more information, see [Delete an Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-deleting-volume.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DeleteVolume](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-volume.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpc-endpoint-connection-notifications`
@@ -8112,19 +8671,20 @@ The following code example shows how to use `delete-vpc-endpoint-connection-noti
 
 **AWS CLI**
 **To delete an endpoint connection notification**
-This example deletes the specified endpoint connection notification.
-Command:
+The following `delete-vpc-endpoint-connection-notifications` example deletes the specified endpoint connection notification.
 
 ```
-aws ec2 delete-vpc-endpoint-connection-notifications --connection-notification-ids {{vpce-nfn-008776de7e03f5abc}}
+aws ec2 delete-vpc-endpoint-connection-notifications \
+    --connection-notification-ids {{vpce-nfn-008776de7e03f5abc}}
 ```
 Output:
 
 ```
 {
-  "Unsuccessful": []
+    "Unsuccessful": []
 }
 ```
+For more information, see [Receive alerts for endpoint service events](https://docs.aws.amazon.com/vpc/latest/privatelink/create-notification-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [DeleteVpcEndpointConnectionNotifications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpc-endpoint-connection-notifications.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpc-endpoint-service-configurations`
@@ -8134,19 +8694,20 @@ The following code example shows how to use `delete-vpc-endpoint-service-configu
 
 **AWS CLI**
 **To delete an endpoint service configuration**
-This example deletes the specified endpoint service configuration.
-Command:
+The following `delete-vpc-endpoint-service-configurations` example deletes the specified endpoint service configuration.
 
 ```
-aws ec2 delete-vpc-endpoint-service-configurations --service-ids {{vpce-svc-03d5ebb7d9579a2b3}}
+aws ec2 delete-vpc-endpoint-service-configurations \
+    --service-ids {{vpce-svc-03d5ebb7d9579a2b3}}
 ```
 Output:
 
 ```
 {
-   "Unsuccessful": []
+    "Unsuccessful": []
 }
 ```
+For more information, see [Delete an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/delete-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [DeleteVpcEndpointServiceConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpc-endpoint-service-configurations.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpc-endpoints`
@@ -8156,19 +8717,20 @@ The following code example shows how to use `delete-vpc-endpoints`.
 
 **AWS CLI**
 **To delete an endpoint**
-This example deletes endpoints vpce-aa22bb33 and vpce-1a2b3c4d. If the command is partially successful or unsuccessful, a list of unsuccessful items is returned. If the command succeeds, the returned list is empty.
-Command:
+The following `delete-vpc-endpoints` example deletes endpoints vpce-aa22bb33 and vpce-1a2b3c4d. If the command is partially successful or unsuccessful, a list of unsuccessful items is returned. If the command succeeds, the returned list is empty.
 
 ```
-aws ec2 delete-vpc-endpoints --vpc-endpoint-ids {{vpce-aa22bb33}} {{vpce-1a2b3c4d}}
+aws ec2 delete-vpc-endpoints \
+    --vpc-endpoint-ids {{vpce-aa22bb33}} {{vpce-1a2b3c4d}}
 ```
 Output:
 
 ```
 {
-  "Unsuccessful": []
+    "Unsuccessful": []
 }
 ```
+For more information, see [Delete an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/delete-interface-endpoint.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [DeleteVpcEndpoints](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpc-endpoints.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpc-peering-connection`
@@ -8178,11 +8740,11 @@ The following code example shows how to use `delete-vpc-peering-connection`.
 
 **AWS CLI**
 **To delete a VPC peering connection**
-This example deletes the specified VPC peering connection.
-Command:
+The following `delete-vpc-peering-connection` example deletes the specified VPC peering connection.
 
 ```
-aws ec2 delete-vpc-peering-connection --vpc-peering-connection-id {{pcx-1a2b3c4d}}
+aws ec2 delete-vpc-peering-connection \
+    --vpc-peering-connection-id {{pcx-1a2b3c4d}}
 ```
 Output:
 
@@ -8191,6 +8753,7 @@ Output:
     "Return": true
 }
 ```
+For more information, see [Delete a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/delete-vpc-peering-connection.html) in the *Amazon VPC Peering Guide*.
 +  For API details, see [DeleteVpcPeeringConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpc-peering-connection.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpc`
@@ -8200,12 +8763,14 @@ The following code example shows how to use `delete-vpc`.
 
 **AWS CLI**
 **To delete a VPC**
-This example deletes the specified VPC. If the command succeeds, no output is returned.
-Command:
+The following `delete-vpc` example deletes the specified VPC.
 
 ```
-aws ec2 delete-vpc --vpc-id {{vpc-a01106c2}}
+aws ec2 delete-vpc \
+    --vpc-id {{vpc-a01106c2}}
 ```
+This command produces no output.
+For more information, see [Delete your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/delete-vpc.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DeleteVpc](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpc.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpn-connection-route`
@@ -8215,12 +8780,15 @@ The following code example shows how to use `delete-vpn-connection-route`.
 
 **AWS CLI**
 **To delete a static route from a VPN connection**
-This example deletes the specified static route from the specified VPN connection. If the command succeeds, no output is returned.
-Command:
+The following `delete-vpn-connection-route` example deletes the specified static route from the specified VPN connection.
 
 ```
-aws ec2 delete-vpn-connection-route --vpn-connection-id {{vpn-40f41529}} --destination-cidr-block {{11.12.0.0/16}}
+aws ec2 delete-vpn-connection-route \
+    --vpn-connection-id {{vpn-40f41529}} \
+    --destination-cidr-block {{11.12.0.0/16}}
 ```
+This command produces no output.
+For more information, see [AWS Site-to-Site VPN routing options](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPNRoutingTypes.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DeleteVpnConnectionRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpn-connection-route.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpn-connection`
@@ -8230,12 +8798,14 @@ The following code example shows how to use `delete-vpn-connection`.
 
 **AWS CLI**
 **To delete a VPN connection**
-This example deletes the specified VPN connection. If the command succeeds, no output is returned.
-Command:
+The following `delete-vpn-connection` example deletes the specified VPN connection.
 
 ```
-aws ec2 delete-vpn-connection --vpn-connection-id {{vpn-40f41529}}
+aws ec2 delete-vpn-connection \
+    --vpn-connection-id {{vpn-40f41529}}
 ```
+This command produces no output.
+For more information, see [Delete an AWS Site-to-Site VPN connection](https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-vpn-connection.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DeleteVpnConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpn-connection.html) in *AWS CLI Command Reference*.
 
 ### `delete-vpn-gateway`
@@ -8245,12 +8815,14 @@ The following code example shows how to use `delete-vpn-gateway`.
 
 **AWS CLI**
 **To delete a virtual private gateway**
-This example deletes the specified virtual private gateway. If the command succeeds, no output is returned.
-Command:
+The following `delete-vpn-gateway` example deletes the specified virtual private gateway.
 
 ```
-aws ec2 delete-vpn-gateway --vpn-gateway-id {{vgw-9a4cacf3}}
+aws ec2 delete-vpn-gateway \
+    --vpn-gateway-id {{vgw-9a4cacf3}}
 ```
+This command produces no output.
+For more information, see [Detach and delete a virtual private gateway in AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/delete-vgw.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DeleteVpnGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/delete-vpn-gateway.html) in *AWS CLI Command Reference*.
 
 ### `deprovision-byoip-cidr`
@@ -8260,7 +8832,7 @@ The following code example shows how to use `deprovision-byoip-cidr`.
 
 **AWS CLI**
 **To remove an IP address range from use**
-The following example removes the specified address range from use with AWS.
+The following `deprovision-byoip-cidr` example removes the specified address range from use with AWS.
 
 ```
 aws ec2 deprovision-byoip-cidr \
@@ -8276,6 +8848,7 @@ Output:
     }
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeprovisionByoipCidr](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/deprovision-byoip-cidr.html) in *AWS CLI Command Reference*.
 
 ### `deprovision-ipam-pool-cidr`
@@ -8286,14 +8859,14 @@ The following code example shows how to use `deprovision-ipam-pool-cidr`.
 **AWS CLI**
 **To deprovision an IPAM pool CIDR**
 The following `deprovision-ipam-pool-cidr` example deprovisions a CIDR provisioned to an IPAM pool.
-(Linux):
+The following command is for Linux.
 
 ```
 aws ec2 deprovision-ipam-pool-cidr \
     --ipam-pool-id {{ipam-pool-02ec043a19bbe5d08}} \
     --cidr {{11.0.0.0/16}}
 ```
-(Windows):
+The following command is for Windows.
 
 ```
 aws ec2 deprovision-ipam-pool-cidr {{^}}
@@ -8320,12 +8893,20 @@ The following code example shows how to use `deregister-image`.
 
 **AWS CLI**
 **To deregister an AMI**
-This example deregisters the specified AMI. If the command succeeds, no output is returned.
-Command:
+The following `deregister-image` example deregisters the specified AMI.
 
 ```
-aws ec2 deregister-image --image-id {{ami-4fa54026}}
+aws ec2 deregister-image \
+    --image-id {{ami-4fa54026}}
 ```
+Output:
+
+```
+{
+    "Return": true
+}
+```
+For more information, see [Deregister an Amazon EC2 AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeregisterImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/deregister-image.html) in *AWS CLI Command Reference*.
 
 ### `deregister-instance-event-notification-attributes`
@@ -8351,7 +8932,7 @@ Output:
     }
 }
 ```
-For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Scheduled events for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 **Example 2: To remove specific tags from event notifications**
 The following `deregister-instance-event-notification-attributes` example removes the specified tag from the tags included in event notifications. To describe the remaining tags included in event notifications, use `describe-instance-event-notification-attributes`.
 
@@ -8371,7 +8952,7 @@ Output:
     }
 }
 ```
-For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Scheduled events for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DeregisterInstanceEventNotificationAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/deregister-instance-event-notification-attributes.html) in *AWS CLI Command Reference*.
 
 ### `deregister-transit-gateway-multicast-group-members`
@@ -8381,7 +8962,7 @@ The following code example shows how to use `deregister-transit-gateway-multicas
 
 **AWS CLI**
 **To deregister group members from a multicast group**
-This example deregisters the specified network interface group member from the transit gateway multicast group.
+The following `deregister-transit-gateway-multicast-group-members` example deregisters the specified network interface group member from the transit gateway multicast group.
 
 ```
 aws ec2 deregister-transit-gateway-multicast-group-members \
@@ -8395,27 +8976,27 @@ Output:
 {
     "DeregisteredMulticastGroupMembers": {
         "TransitGatewayMulticastDomainId": "tgw-mcast-domain-0c4905cef7EXAMPLE",
-        "RegisteredNetworkInterfaceIds": [
+        "DeregisteredNetworkInterfaceIds": [
             "eni-0e246d3269EXAMPLE"
         ],
         "GroupIpAddress": "224.0.1.0"
     }
 }
 ```
-For more information, see [Deregister Members from a Multicast Group](https://docs.aws.amazon.com/vpc/latest/tgw/working-with-multicast.html#remove-members-multicast-group) in the *AWS Transit Gateways Users Guide*.
+For more information, see [Deregister members from a multicast group in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/remove-members-multicast-group.html) in the *AWS Transit Gateways Users Guide*.
 +  For API details, see [DeregisterTransitGatewayMulticastGroupMembers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/deregister-transit-gateway-multicast-group-members.html) in *AWS CLI Command Reference*.
 
-### `deregister-transit-gateway-multicast-group-source`
-<a name="ec2_DeregisterTransitGatewayMulticastGroupSource_cli_2_topic"></a>
+### `deregister-transit-gateway-multicast-group-sources`
+<a name="ec2_DeregisterTransitGatewayMulticastGroupSources_cli_2_topic"></a>
 
-The following code example shows how to use `deregister-transit-gateway-multicast-group-source`.
+The following code example shows how to use `deregister-transit-gateway-multicast-group-sources`.
 
 **AWS CLI**
 **To deregister a source from the transit gateway multicast group**
-This example deregisters the specified network interface group source from the multicast group.
+The following `deregister-transit-gateway-multicast-group-sources` example deregisters the specified network interface group source from the multicast group.
 
 ```
-aws ec2 register-transit-gateway-multicast-group-sources \
+aws ec2 deregister-transit-gateway-multicast-group-sources \
     --transit-gateway-multicast-domain-id {{tgw-mcast-domain-0c4905cef79d6e597}} \
     --group-ip-address {{224.0.1.0}} \
     --network-interface-ids {{eni-07f290fc3c090cbae}}
@@ -8433,8 +9014,8 @@ Output:
     }
 }
 ```
-For more information, see [Deregister Sources from a Multicast Group](https://docs.aws.amazon.com/vpc/latest/tgw/working-with-multicast.html#remove-source-multicast-group) in the *AWS Transit Gateways User Guide*.
-+  For API details, see [DeregisterTransitGatewayMulticastGroupSource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/deregister-transit-gateway-multicast-group-source.html) in *AWS CLI Command Reference*.
+For more information, see [Deregister sources from a multicast group in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/remove-source-multicast-group.html) in the *AWS Transit Gateways User Guide*.
++  For API details, see [DeregisterTransitGatewayMulticastGroupSources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/deregister-transit-gateway-multicast-group-sources.html) in *AWS CLI Command Reference*.
 
 ### `describe-account-attributes`
 <a name="ec2_DescribeAccountAttributes_cli_2_topic"></a>
@@ -8442,9 +9023,8 @@ For more information, see [Deregister Sources from a Multicast Group](https://do
 The following code example shows how to use `describe-account-attributes`.
 
 **AWS CLI**
-**To describe all the attributes for your AWS account**
-This example describes the attributes for your AWS account.
-Command:
+**Example 1: To describe all the attributes for your AWS account**
+The following `describe-account-attributes` example describes the attributes for your AWS account.
 
 ```
 aws ec2 describe-account-attributes
@@ -8508,12 +9088,13 @@ Output:
     ]
 }
 ```
-**To describe a single attribute for your AWS account**
-This example describes the `supported-platforms` attribute for your AWS account.
-Command:
+For more information, see [Amazon EC2 service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe a single attribute for your AWS account**
+The following `describe-account-attributes` example describes the `supported-platforms` attribute for your AWS account.
 
 ```
-aws ec2 describe-account-attributes --attribute-names {{supported-platforms}}
+aws ec2 describe-account-attributes \
+    --attribute-names {{supported-platforms}}
 ```
 Output:
 
@@ -8534,6 +9115,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EC2 service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeAccountAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-account-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-address-transfers`
@@ -8564,7 +9146,7 @@ Output:
     ]
 }
 ```
-For more information, see [Transfer Elastic IP addresses](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-eips.html#transfer-EIPs-intro) in the *Amazon VPC User Guide*.
+For more information, see [Transfer Elastic IP addresses](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-eips.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeAddressTransfers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-address-transfers.html) in *AWS CLI Command Reference*.
 
 ### `describe-addresses-attribute`
@@ -8574,15 +9156,15 @@ The following code example shows how to use `describe-addresses-attribute`.
 
 **AWS CLI**
 **To view the attributes of the domain name associated with an elastic IP address**
-The following `describe-addresses-attribute` examples return the attributes of the domain name associated with the elastic IP address.
-Linux:
+The following `describe-addresses-attribute` example returns the attributes of the domain name associated with the elastic IP address.
+The following command is for Linux.
 
 ```
 aws ec2 describe-addresses-attribute \
     --allocation-ids {{eipalloc-abcdef01234567890}} \
     --attribute {{domain-name}}
 ```
-Windows:
+The following command is for Windows.
 
 ```
 aws ec2 describe-addresses-attribute {{^}}
@@ -8602,7 +9184,7 @@ Output:
     ]
 }
 ```
-To view the attributes of an elastic IP address, you must have first associated a domain name with the elastic IP address. For more information, see [Use reverse DNS for email applications](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#Using_Elastic_Addressing_Reverse_DNS) in the *Amazon EC2 User Guide* or [modify-address-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-address-attribute.html) in the *AWS CLI Command Reference*.
+To view the attributes of an elastic IP address, you must have first associated a domain name with the elastic IP address. For more information, see [Create a reverse DNS record for email on Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Elastic_Addressing_Reverse_DNS.html) in the *Amazon EC2 User Guide*. To associate a domain name with an elastic IP address, see [modify-address-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-address-attribute.html) in the *AWS CLI Command Reference*.
 +  For API details, see [DescribeAddressesAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-addresses-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-addresses`
@@ -8612,7 +9194,7 @@ The following code example shows how to use `describe-addresses`.
 
 **AWS CLI**
 **Example 1: To retrieve details about all of your Elastic IP addresses**
-The following `describe addresses` example displays details about your Elastic IP addresses.
+The following `describe-addresses` example displays details about your Elastic IP addresses.
 
 ```
 aws ec2 describe-addresses
@@ -8642,6 +9224,7 @@ Output:
     ]
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 **Example 2: To retrieve details your Elastic IP addresses for EC2-VPC**
 The following `describe-addresses` example displays details about your Elastic IP addresses for use with instances in a VPC.
 
@@ -8668,6 +9251,7 @@ Output:
     ]
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 **Example 3: To retrieve details about an Elastic IP address specified by allocation ID**
 The following `describe-addresses` example displays details about the Elastic IP address with the specified allocation ID, which is associated with an instance in EC2-VPC.
 
@@ -8694,6 +9278,7 @@ Output:
     ]
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 **Example 4: To retrieve details about an Elastic IP address specified by its VPC private IP address**
 The following `describe-addresses` example displays details about the Elastic IP address associated with a particular private IP address in EC2-VPC.
 
@@ -8701,6 +9286,26 @@ The following `describe-addresses` example displays details about the Elastic IP
 aws ec2 describe-addresses \
     --filters {{"Name=private-ip-address,Values=10.251.50.12"}}
 ```
+Output:
+
+```
+{
+    "Addresses": [
+        {
+            "Domain": "vpc",
+            "PublicIpv4Pool": "amazon",
+            "InstanceId": "i-1234567890abcdef0",
+            "NetworkInterfaceId": "eni-1a2b3c4d",
+            "AssociationId": "eipassoc-123abc12",
+            "NetworkInterfaceOwnerId": "1234567891012",
+            "PublicIp": "203.0.113.25",
+            "AllocationId": "eipalloc-282d9641",
+            "PrivateIpAddress": "10.251.50.12"
+        }
+    ]
+}
+```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 **Example 5: To retrieve details about Elastic IP addresses in EC2-Classic**
 The following `describe-addresses` example displays details about your Elastic IP addresses for use in EC2-Classic.
 
@@ -8722,6 +9327,7 @@ Output:
     ]
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 **Example 6: To retrieve details about an Elastic IP addresses specified by its public IP address**
 The following `describe-addresses` example displays details about the Elastic IP address with the value `203.0.110.25`, which is associated with an instance in EC2-Classic.
 
@@ -8743,6 +9349,7 @@ Output:
     ]
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeAddresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-addresses.html) in *AWS CLI Command Reference*.
 
 ### `describe-aggregate-id-format`
@@ -8777,11 +9384,11 @@ Output:
             "Deadline": "2018-08-13T02:00:00.000Z",
             "Resource": "elastic-ip-association",
             "UseLongIds": true
-        },
-        ...
+        }
     ]
 }
 ```
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeAggregateIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-aggregate-id-format.html) in *AWS CLI Command Reference*.
 
 ### `describe-availability-zones`
@@ -8791,7 +9398,7 @@ The following code example shows how to use `describe-availability-zones`.
 
 **AWS CLI**
 **To describe your Availability Zones**
-The following example `describe-availability-zones` displays details for the Availability Zones that are available to you. The response includes Availability Zones only for the current Region. In this example, it uses the profiles default `us-west-2` (Oregon) Region.
+The following `describe-availability-zones` example displays details for the Availability Zones that are available to you. The response includes Availability Zones only for the current Region. In this example, it uses the profiles default `us-west-2` (Oregon) Region.
 
 ```
 aws ec2 describe-availability-zones
@@ -8854,37 +9461,8 @@ Output:
     ]
 }
 ```
+For more information, see [Regions and Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeAvailabilityZones](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-availability-zones.html) in *AWS CLI Command Reference*.
-
-### `describe-aws-network-performance-metric-subscription`
-<a name="ec2_DescribeAwsNetworkPerformanceMetricSubscription_cli_2_topic"></a>
-
-The following code example shows how to use `describe-aws-network-performance-metric-subscription`.
-
-**AWS CLI**
-**To describe your metric subscriptions**
-The following `describe-aws-network-performance-metric-subscriptions` example describes your metric subscriptions.
-
-```
-aws ec2 describe-aws-network-performance-metric-subscriptions
-```
-Output:
-
-```
-{
-    "Subscriptions": [
-        {
-            "Source": "us-east-1",
-            "Destination": "eu-west-1",
-            "Metric": "aggregate-latency",
-            "Statistic": "p50",
-            "Period": "five-minutes"
-        }
-    ]
-}
-```
-For more information, see [Manage subscriptions](https://docs.aws.amazon.com/network-manager/latest/infrastructure-performance/nmip-subscriptions-cw.html) in the *Infrastructure Performance User Guide*.
-+  For API details, see [DescribeAwsNetworkPerformanceMetricSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-aws-network-performance-metric-subscription.html) in *AWS CLI Command Reference*.
 
 ### `describe-aws-network-performance-metric-subscriptions`
 <a name="ec2_DescribeAwsNetworkPerformanceMetricSubscriptions_cli_2_topic"></a>
@@ -8923,8 +9501,7 @@ The following code example shows how to use `describe-bundle-tasks`.
 
 **AWS CLI**
 **To describe your bundle tasks**
-This example describes all of your bundle tasks.
-Command:
+The following `describe-bundle-tasks` example describes all of your bundle tasks.
 
 ```
 aws ec2 describe-bundle-tasks
@@ -8933,24 +9510,25 @@ Output:
 
 ```
 {
-  "BundleTasks": [
-    {
-      "UpdateTime": "2015-09-15T13:26:54.000Z",
-      "InstanceId": "i-1234567890abcdef0",
-      "Storage": {
-        "S3": {
-            "Prefix": "winami",
-            "Bucket": "bundletasks"
+    "BundleTasks": [
+        {
+            "UpdateTime": "2015-09-15T13:26:54.000Z",
+            "InstanceId": "i-1234567890abcdef0",
+            "Storage": {
+                "S3": {
+                    "Prefix": "winami",
+                    "Bucket": "amzn-s3-demo-bucket"
+                }
+            },
+            "State": "bundling",
+            "StartTime": "2015-09-15T13:24:35.000Z",
+            "Progress": "3%",
+            "BundleId": "bun-2a4e041c"
         }
-      },
-      "State": "bundling",
-      "StartTime": "2015-09-15T13:24:35.000Z",
-      "Progress": "3%",
-      "BundleId": "bun-2a4e041c"
-    }
-  ]
+    ]
 }
 ```
+For more information, see [Create an Amazon S3-backed AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-instance-store.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeBundleTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-bundle-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-byoip-cidrs`
@@ -8979,6 +9557,7 @@ Output:
     ]
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeByoipCidrs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-byoip-cidrs.html) in *AWS CLI Command Reference*.
 
 ### `describe-capacity-reservation-fleets`
@@ -9009,7 +9588,7 @@ Output:
             "InstanceTypeSpecifications": [
                 {
                     "CapacityReservationId": "cr-1234567890abcdef0",
-                    "AvailabilityZone": "us-east-1a",
+                    "AvailabilityZone": "us-west-2a",
                     "FulfilledCapacity": 5.0,
                     "Weight": 1.0,
                     "CreateDate": "2022-07-02T08:34:33.398Z",
@@ -9051,11 +9630,11 @@ Output:
         {
             "CapacityReservationId": "cr-1234abcd56EXAMPLE ",
             "OwnerId": "123456789111",
-            "CapacityReservationArn": "arn:aws:ec2:us-east-1:123456789111:capacity-reservation/cr-1234abcd56EXAMPLE",
+            "CapacityReservationArn": "arn:aws:ec2:us-west-2:123456789111:capacity-reservation/cr-1234abcd56EXAMPLE",
             "AvailabilityZoneId": "use1-az2",
             "InstanceType": "c5.large",
             "InstancePlatform": "Linux/UNIX",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "Tenancy": "default",
             "TotalInstanceCount": 1,
             "AvailableInstanceCount": 1,
@@ -9072,11 +9651,11 @@ Output:
         {
             "CapacityReservationId": "cr-abcdEXAMPLE9876ef ",
             "OwnerId": "123456789111",
-            "CapacityReservationArn": "arn:aws:ec2:us-east-1:123456789111:capacity-reservation/cr-abcdEXAMPLE9876ef",
+            "CapacityReservationArn": "arn:aws:ec2:us-west-2:123456789111:capacity-reservation/cr-abcdEXAMPLE9876ef",
             "AvailabilityZoneId": "use1-az2",
             "InstanceType": "c4.large",
             "InstancePlatform": "Linux/UNIX",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "Tenancy": "default",
             "TotalInstanceCount": 1,
             "AvailableInstanceCount": 1,
@@ -9093,6 +9672,7 @@ Output:
     ]
 }
 ```
+For more information, see [View the state of a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-view.html) in the *Amazon EC2 User Guide*.
 **Example 2: To describe one or more of your capacity reservations**
 The following `describe-capacity-reservations` example displays details about the specified capacity reservation.
 
@@ -9108,11 +9688,11 @@ Output:
         {
             "CapacityReservationId": "cr-abcdEXAMPLE9876ef ",
             "OwnerId": "123456789111",
-            "CapacityReservationArn": "arn:aws:ec2:us-east-1:123456789111:capacity-reservation/cr-abcdEXAMPLE9876ef",
+            "CapacityReservationArn": "arn:aws:ec2:us-west-2:123456789111:capacity-reservation/cr-abcdEXAMPLE9876ef",
             "AvailabilityZoneId": "use1-az2",
             "InstanceType": "c4.large",
             "InstancePlatform": "Linux/UNIX",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "Tenancy": "default",
             "TotalInstanceCount": 1,
             "AvailableInstanceCount": 1,
@@ -9129,7 +9709,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-using.html#capacity-reservations-view) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [View the state of a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-view.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeCapacityReservations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-capacity-reservations.html) in *AWS CLI Command Reference*.
 
 ### `describe-carrier-gateways`
@@ -9165,7 +9745,7 @@ Output:
     ]
 }
 ```
-For more information, see Carrier gateways<https://docs.aws.amazon.com/vpc/latest/userguide/Carrier\_Gateway.html> in the *Amazon Virtual Private Cloud User Guide*.
+For more information, see [Carrier gateway for AWS Wavelength](https://docs.aws.amazon.com/wavelength/latest/developerguide/carrier-gateways.html) in the *AWS Wavelength Developer Guide*.
 +  For API details, see [DescribeCarrierGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-carrier-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-classic-link-instances`
@@ -9175,8 +9755,7 @@ The following code example shows how to use `describe-classic-link-instances`.
 
 **AWS CLI**
 **To describe linked EC2-Classic instances**
-This example lists all of your linked EC2-Classic instances.
-Command:
+The following `describe-classic-link-instances` example lists all of your linked EC2-Classic instances.
 
 ```
 aws ec2 describe-classic-link-instances
@@ -9185,67 +9764,67 @@ Output:
 
 ```
 {
-        "Instances": [
+    "Instances": [
+        {
+            "InstanceId": "i-1234567890abcdef0",
+            "VpcId": "vpc-88888888",
+            "Groups": [
                 {
-                        "InstanceId": "i-1234567890abcdef0",
-                        "VpcId": "vpc-88888888",
-                        "Groups": [
-                                {
-                                        "GroupId": "sg-11122233"
-                                }
-                        ],
-                        "Tags": [
-                                {
-                                        "Value": "ClassicInstance",
-                                        "Key": "Name"
-                                }
-                        ]
-                },
-                {
-                        "InstanceId": "i-0598c7d356eba48d7",
-                        "VpcId": "vpc-12312312",
-                        "Groups": [
-                                {
-                                        "GroupId": "sg-aabbccdd"
-                                }
-                        ],
-                        "Tags": [
-                                {
-                                        "Value": "ClassicInstance2",
-                                        "Key": "Name"
-                                }
-                        ]
+                    "GroupId": "sg-11122233"
                 }
-        ]
+            ],
+            "Tags": [
+                {
+                    "Value": "ClassicInstance",
+                    "Key": "Name"
+                }
+            ]
+        },
+        {
+            "InstanceId": "i-0598c7d356eba48d7",
+            "VpcId": "vpc-12312312",
+            "Groups": [
+                {
+                    "GroupId": "sg-aabbccdd"
+                }
+            ],
+            "Tags": [
+                {
+                    "Value": "ClassicInstance2",
+                    "Key": "Name"
+                }
+            ]
+        }
+    ]
 }
 ```
-This example lists all of your linked EC2-Classic instances, and filters the response to include only instances that are linked to VPC vpc-88888888.
-Command:
+The following `describe-classic-link-instances` example lists all of your linked EC2-Classic instances, and filters the response to include only instances that are linked to VPC vpc-88888888.
 
 ```
-aws ec2 describe-classic-link-instances --filter {{"Name=vpc-id,Values=vpc-88888888"}}
+aws ec2 describe-classic-link-instances \
+    --filter {{"Name=vpc-id,Values=vpc-88888888"}}
 ```
 Output:
 
 ```
 {
-        "Instances": [
+    "Instances": [
+        {
+            "InstanceId": "i-1234567890abcdef0",
+            "VpcId": "vpc-88888888",
+            "Groups": [
                 {
-                        "InstanceId": "i-1234567890abcdef0",
-                        "VpcId": "vpc-88888888",
-                        "Groups": [
-                                {
-                                        "GroupId": "sg-11122233"
-                                }
-                        ],
-                        "Tags": [
-                                {
-                                        "Value": "ClassicInstance",
-                                        "Key": "Name"
-                                }
-                        ]
+                    "GroupId": "sg-11122233"
                 }
-        ]
+            ],
+            "Tags": [
+                {
+                    "Value": "ClassicInstance",
+                    "Key": "Name"
+                }
+            ]
+        }
+    ]
 }
 ```
 +  For API details, see [DescribeClassicLinkInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-classic-link-instances.html) in *AWS CLI Command Reference*.
@@ -9261,7 +9840,7 @@ The following `describe-client-vpn-authorization-rules` example displays details
 
 ```
 aws ec2 describe-client-vpn-authorization-rules \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789abcabcde}}
 ```
 Output:
 
@@ -9269,7 +9848,7 @@ Output:
 {
     "AuthorizationRules": [
         {
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "GroupId": "",
             "AccessAll": true,
             "DestinationCidr": "0.0.0.0/0",
@@ -9294,7 +9873,7 @@ The following `describe-client-vpn-connections` example displays details about t
 
 ```
 aws ec2 describe-client-vpn-connections \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789abcabcde}}
 ```
 Output:
 
@@ -9302,7 +9881,7 @@ Output:
 {
     "Connections": [
         {
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "Timestamp": "2019-08-12 07:58:34",
             "ConnectionId": "cvpn-connection-0e03eb24267165acd",
             "ConnectionEstablishedTime": "2019-08-12 07:57:14",
@@ -9318,7 +9897,7 @@ Output:
             "ConnectionEndTime": "2019-08-12 07:58:34"
         },
         {
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "Timestamp": "2019-08-12 08:02:54",
             "ConnectionId": "cvpn-connection-00668867a40f18253",
             "ConnectionEstablishedTime": "2019-08-12 08:02:53",
@@ -9357,13 +9936,13 @@ Output:
 {
     "ClientVpnEndpoints": [
         {
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "Description": "Endpoint for Admin access",
             "Status": {
                 "Code": "available"
             },
             "CreationTime": "2020-11-13T11:37:27",
-            "DnsName": "*.cvpn-endpoint-123456789123abcde.prod.clientvpn.ap-south-1.amazonaws.com",
+            "DnsName": "*.cvpn-endpoint-123456789abcabcde.prod.clientvpn.us-west-2.amazonaws.com",
             "ClientCidrBlock": "172.31.0.0/16",
             "DnsServers": [
                 "8.8.8.8"
@@ -9372,19 +9951,19 @@ Output:
             "VpnProtocol": "openvpn",
             "TransportProtocol": "udp",
             "VpnPort": 443,
-            "ServerCertificateArn": "arn:aws:acm:ap-south-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "ServerCertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AuthenticationOptions": [
                 {
                     "Type": "certificate-authentication",
                     "MutualAuthentication": {
-                        "ClientRootCertificateChain": "arn:aws:acm:ap-south-1:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-22222EXAMPLE"
+                        "ClientRootCertificateChain": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     }
                 }
             ],
             "ConnectionLogOptions": {
                 "Enabled": true,
                 "CloudwatchLogGroup": "Client-vpn-connection-logs",
-                "CloudwatchLogStream": "cvpn-endpoint-123456789123abcde-ap-south-1-2020/11/13-FCD8HEMVaCcw"
+                "CloudwatchLogStream": "cvpn-endpoint-123456789abcabcde-us-west-2-2020/11/13-FCD8HEMVaCcw"
             },
             "Tags": [
                 {
@@ -9396,9 +9975,9 @@ Output:
                 "sg-aabbcc11223344567"
             ],
             "VpcId": "vpc-a87f92c1",
-            "SelfServicePortalUrl": "https://self-service.clientvpn.amazonaws.com/endpoints/cvpn-endpoint-123456789123abcde",
+            "SelfServicePortalUrl": "https://self-service.clientvpn.amazonaws.com/endpoints/cvpn-endpoint-123456789abcabcde",
             "ClientConnectOptions": {
-                 "Enabled": false
+                "Enabled": false
             }
         }
     ]
@@ -9418,7 +9997,7 @@ The following `describe-client-vpn-routes` example displays details about the ro
 
 ```
 aws ec2 describe-client-vpn-routes \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789abcabcde}}
 ```
 Output:
 
@@ -9426,7 +10005,7 @@ Output:
 {
     "Routes": [
         {
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "DestinationCidr": "10.0.0.0/16",
             "TargetSubnet": "subnet-0123456789abcabca",
             "Type": "Nat",
@@ -9437,7 +10016,7 @@ Output:
             "Description": "Default Route"
         },
         {
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "DestinationCidr": "0.0.0.0/0",
             "TargetSubnet": "subnet-0123456789abcabca",
             "Type": "Nat",
@@ -9463,7 +10042,7 @@ The following `describe-client-vpn-target-networks` example displays details abo
 
 ```
 aws ec2 describe-client-vpn-target-networks \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789abcabcde}}
 ```
 Output:
 
@@ -9474,12 +10053,12 @@ Output:
             "AssociationId": "cvpn-assoc-012e837060753dc3d",
             "VpcId": "vpc-11111222222333333",
             "TargetNetworkId": "subnet-0123456789abcabca",
-            "ClientVpnEndpointId": "cvpn-endpoint-123456789123abcde",
+            "ClientVpnEndpointId": "cvpn-endpoint-123456789abcabcde",
             "Status": {
                 "Code": "associating"
             },
             "SecurityGroups": [
-                "sg-012345678910abcab"
+                "sg-0123456789aabcabc"
             ]
         }
     ]
@@ -9516,7 +10095,7 @@ Output:
     ]
 }
 ```
-For more information, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-networking-components.html#ip-addressing) in the *AWS Outposts User Guide*.
+For more information, see [Create a CoIP pool](https://docs.aws.amazon.com/outposts/latest/userguide/coip-pools.html) in the *AWS Outposts User Guide*.
 +  For API details, see [DescribeCoipPools](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-coip-pools.html) in *AWS CLI Command Reference*.
 
 ### `describe-conversion-tasks`
@@ -9526,11 +10105,11 @@ The following code example shows how to use `describe-conversion-tasks`.
 
 **AWS CLI**
 **To view the status of a conversion task**
-This example returns the status of a conversion task with the ID import-i-ffvko9js.
-Command:
+The following `describe-conversion-tasks` example returns the status of a conversion task with the ID import-i-ffvko9js.
 
 ```
-aws ec2 describe-conversion-tasks --conversion-task-ids {{import-i-ffvko9js}}
+aws ec2 describe-conversion-tasks \
+    --conversion-task-ids {{import-i-ffvko9js}}
 ```
 Output:
 
@@ -9550,11 +10129,11 @@ Output:
                         "Status": "completed",
                         "Image": {
                             "Size": 1300687360,
-                            "ImportManifestUrl": "https://s3.amazonaws.com/myimportbucket/411443cd-d620-4f1c-9d66-13144EXAMPLE/RHEL5.vmdkmanifest.xml?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&Expires=140EXAMPLE&Signature=XYNhznHNgCqsjDxL9wRL%2FJvEXAMPLE",
+                            "ImportManifestUrl": "https://s3.amazonaws.com/myimportbucket/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/RHEL5.vmdkmanifest.xml?AWSAccessKeyId=AKIAIOSFODNN7EXAMPLE&Expires=140EXAMPLE&Signature=XYNhznHNgCqsjDxL9wRL%2FJvEXAMPLE",
                             "Format": "VMDK"
                         },
                         "BytesConverted": 1300682960,
-                        "AvailabilityZone": "us-east-1d"
+                        "AvailabilityZone": "us-west-2d"
                     }
                 ]
             },
@@ -9564,6 +10143,7 @@ Output:
     ]
 }
 ```
+For more information, see [Import a VM as an EC2 instance using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-instance-import.html) in the *VM Import/Export User Guide*.
 +  For API details, see [DescribeConversionTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-conversion-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-customer-gateways`
@@ -9572,9 +10152,8 @@ Output:
 The following code example shows how to use `describe-customer-gateways`.
 
 **AWS CLI**
-**To describe your customer gateways**
-This example describes your customer gateways.
-Command:
+**Example 1: To describe your customer gateways**
+The following `describe-customer-gateways` example describes your customer gateways.
 
 ```
 aws ec2 describe-customer-gateways
@@ -9601,12 +10180,13 @@ Output:
     ]
 }
 ```
-**To describe a specific customer gateway**
-This example describes the specified customer gateway.
-Command:
+For more information, see [AWS Site-to-Site VPN customer gateway devices](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html) in the *AWS Site-to-Site VPN User Guide*.
+**Example 2: To describe a specific customer gateway**
+The following `describe-customer-gateways` example describes the specified customer gateway.
 
 ```
-aws ec2 describe-customer-gateways --customer-gateway-ids {{cgw-0e11f167}}
+aws ec2 describe-customer-gateways \
+    --customer-gateway-ids {{cgw-0e11f167}}
 ```
 Output:
 
@@ -9623,6 +10203,7 @@ Output:
     ]
 }
 ```
+For more information, see [AWS Site-to-Site VPN customer gateway devices](https://docs.aws.amazon.com/vpn/latest/s2svpn/your-cgw.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DescribeCustomerGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-customer-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-dhcp-options`
@@ -9648,7 +10229,7 @@ Output:
                     "Key": "domain-name",
                     "Values": [
                         {
-                            "Value": "us-east-2.compute.internal"
+                            "Value": "us-west-2.compute.internal"
                         }
                     ]
                 },
@@ -9662,7 +10243,7 @@ Output:
                 }
             ],
             "DhcpOptionsId": "dopt-19edf471",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         },
         {
             "DhcpConfigurations": [
@@ -9670,7 +10251,7 @@ Output:
                     "Key": "domain-name",
                     "Values": [
                         {
-                            "Value": "us-east-2.compute.internal"
+                            "Value": "us-west-2.compute.internal"
                         }
                     ]
                 },
@@ -9684,12 +10265,12 @@ Output:
                 }
             ],
             "DhcpOptionsId": "dopt-fEXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         }
     ]
 }
 ```
-For more information, see [Working with DHCP Option Sets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html#DHCPOptionSet) in the *AWS VPC User Guide*.
+For more information, see [Working with DHCP Option Sets](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html) in the *AWS VPC User Guide*.
 **Example 2: To describe your DHCP options and filter the output**
 The following `describe-dhcp-options` example describes your DHCP options and uses a filter to return only DHCP options that have `example.com` for the domain name server. The example uses the `--query` parameter to display only the configuration information and ID in the output.
 
@@ -9725,7 +10306,7 @@ Output:
     ]
 ]
 ```
-For more information, see [Working with DHCP Option Sets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html#DHCPOptionSet) in the *AWS VPC User Guide*.
+For more information, see [Working with DHCP Option Sets](https://docs.aws.amazon.com/vpc/latest/userguide/DHCPOptionSet.html) in the *AWS VPC User Guide*.
 +  For API details, see [DescribeDhcpOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-dhcp-options.html) in *AWS CLI Command Reference*.
 
 ### `describe-egress-only-internet-gateways`
@@ -9735,8 +10316,7 @@ The following code example shows how to use `describe-egress-only-internet-gatew
 
 **AWS CLI**
 **To describe your egress-only Internet gateways**
-This example describes your egress-only Internet gateways.
-Command:
+The following `describe-egress-only-internet-gateways` example describes your egress-only Internet gateways.
 
 ```
 aws ec2 describe-egress-only-internet-gateways
@@ -9745,19 +10325,20 @@ Output:
 
 ```
 {
-  "EgressOnlyInternetGateways": [
-      {
-          "EgressOnlyInternetGatewayId": "eigw-015e0e244e24dfe8a",
-          "Attachments": [
-              {
-                  "State": "attached",
-                  "VpcId": "vpc-0c62a468"
-              }
-          ]
-      }
-  ]
+    "EgressOnlyInternetGateways": [
+        {
+            "EgressOnlyInternetGatewayId": "eigw-015e0e244e24dfe8a",
+            "Attachments": [
+                {
+                    "State": "attached",
+                    "VpcId": "vpc-0c62a468"
+                }
+            ]
+        }
+    ]
 }
 ```
+For more information, see [Enable outbound IPv6 traffic using an egress-only internet gateway](https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeEgressOnlyInternetGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-egress-only-internet-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-elastic-gpus`
@@ -9767,10 +10348,29 @@ The following code example shows how to use `describe-elastic-gpus`.
 
 **AWS CLI**
 **To describe an Elastic GPU**
-Command:
+The following `describe-elastic-gpus` example describes the specified Elastic GPU.
 
 ```
-aws ec2 describe-elastic-gpus --elastic-gpu-ids {{egpu-12345678901234567890abcdefghijkl}}
+aws ec2 describe-elastic-gpus \
+    --elastic-gpu-ids {{egpu-12345678901234567890abcdefghijkl}}
+```
+Output:
+
+```
+{
+    "ElasticGpuSet": [
+        {
+            "ElasticGpuId": "egpu-12345678901234567890abcdefghijkl",
+            "AvailabilityZone": "us-west-2a",
+            "ElasticGpuType": "eg1.medium",
+            "ElasticGpuHealth": {
+                "Status": "OK"
+            },
+            "ElasticGpuState": "ATTACHED",
+            "InstanceId": "i-1234567890abcdef0"
+        }
+    ]
+}
 ```
 +  For API details, see [DescribeElasticGpus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-elastic-gpus.html) in *AWS CLI Command Reference*.
 
@@ -9787,13 +10387,14 @@ The following `describe-export-image-tasks` example checks the status of the spe
 aws ec2 describe-export-image-tasks \
     --export-image-task-ids {{export-ami-1234567890abcdef0}}
 ```
-Output for an export image task that is in progress.
+The following example output is for an export image task that is in progress.
+Output:
 
 ```
 {
     "ExportImageTasks": [
         {
-            "ExportImageTaskId": "export-ami-1234567890abcdef0"
+            "ExportImageTaskId": "export-ami-1234567890abcdef0",
             "Progress": "21",
             "S3ExportLocation": {
                 "S3Bucket": "my-export-bucket",
@@ -9805,13 +10406,14 @@ Output for an export image task that is in progress.
     ]
 }
 ```
-Output for an export image task that is completed.
+The following example output is for an export image task that is completed.
+Output:
 
 ```
 {
     "ExportImageTasks": [
         {
-            "ExportImageTaskId": "export-ami-1234567890abcdef0"
+            "ExportImageTaskId": "export-ami-1234567890abcdef0",
             "S3ExportLocation": {
                 "S3Bucket": "my-export-bucket",
                 "S3Prefix": "exports/"
@@ -9831,11 +10433,11 @@ The following code example shows how to use `describe-export-tasks`.
 
 **AWS CLI**
 **To list details about an instance export task**
-This example describes the export task with ID export-i-fh8sjjsq.
-Command:
+The following `describe-export-tasks` example describes the export task with ID export-i-fh8sjjsq.
 
 ```
-aws ec2 describe-export-tasks --export-task-ids {{export-i-fh8sjjsq}}
+aws ec2 describe-export-tasks \
+    --export-task-ids {{export-i-fh8sjjsq}}
 ```
 Output:
 
@@ -9860,6 +10462,7 @@ Output:
     ]
 }
 ```
+For more information, see [Export an EC2 instance as a VM using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html) in the *VM Import/Export User Guide*.
 +  For API details, see [DescribeExportTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-export-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-fast-launch-images`
@@ -9897,7 +10500,7 @@ Output:
     ]
 }
 ```
-For more information about configuring a Windows AMI for faster launching, see [Configure your AMI for faster launching](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/windows-ami-version-history.html#win-ami-config-fast-launch) in the *Amazon EC2 User Guide*.
+For more information about configuring a Windows AMI for faster launching, see [Configure your AMI for faster launching](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-ami-config-fast-launch.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeFastLaunchImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fast-launch-images.html) in *AWS CLI Command Reference*.
 
 ### `describe-fast-snapshot-restores`
@@ -9938,6 +10541,7 @@ The following `describe-fast-snapshot-restores` example describes all fast snaps
 ```
 aws ec2 describe-fast-snapshot-restores
 ```
+For more information, see [Amazon EBS fast snapshot restore](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fast-snapshot-restore.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DescribeFastSnapshotRestores](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fast-snapshot-restores.html) in *AWS CLI Command Reference*.
 
 ### `describe-fleet-history`
@@ -10005,7 +10609,7 @@ Output:
     "StartTime": "2020-08-31T23:53:20.000Z"
 }
 ```
-For more information, see [Managing an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Work with EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeFleetHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fleet-history.html) in *AWS CLI Command Reference*.
 
 ### `describe-fleet-instances`
@@ -10019,7 +10623,7 @@ The following `describe-fleet-instances` example describes the running instances
 
 ```
 aws ec2 describe-fleet-instances \
-    --fleet-id {{12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE}}
+    --fleet-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -10042,7 +10646,7 @@ Output:
     "FleetId": "fleet-12a34b55-67cd-8ef9-ba9b-9208dEXAMPLE"
 }
 ```
-For more information, see [Managing an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Work with EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeFleetInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fleet-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-fleets`
@@ -10100,7 +10704,7 @@ Output:
     ]
 }
 ```
-For more information, see [Managing an EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Work with EC2 Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-ec2-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeFleets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fleets.html) in *AWS CLI Command Reference*.
 
 ### `describe-flow-logs`
@@ -10142,12 +10746,13 @@ Output:
             "ResourceId": "vpc-00112233445566778",
             "TrafficType": "ACCEPT",
             "LogDestinationType": "s3",
-            "LogDestination": "arn:aws:s3:::my-flow-log-bucket/custom",
+            "LogDestination": "arn:aws:s3:::amzn-s3-demo-bucket/custom",
             "LogFormat": "${version} ${vpc-id} ${subnet-id} ${instance-id} ${interface-id} ${account-id} ${type} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${pkt-srcaddr} ${pkt-dstaddr} ${protocol} ${bytes} ${packets} ${start} ${end} ${action} ${tcp-flags} ${log-status}"
         }
     ]
 }
 ```
+For more information, see [Work with flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html) in the *Amazon VPC User Guide*.
 **Example 2: To describe a subset of your flow logs**
 The following `describe-flow-logs` example uses a filter to display details for only those flow logs that are in the specified log group in Amazon CloudWatch Logs.
 
@@ -10155,6 +10760,28 @@ The following `describe-flow-logs` example uses a filter to display details for 
 aws ec2 describe-flow-logs \
     --filter {{"Name=log-group-name,Values=MyFlowLogs"}}
 ```
+Output:
+
+```
+{
+    "FlowLogs": [
+        {
+            "CreationTime": "2021-06-10T08:15:42.317Z",
+            "DeliverLogsPermissionArn": "arn:aws:iam::123456789012:role/flow-logs-role",
+            "DeliverLogsStatus": "SUCCESS",
+            "FlowLogId": "fl-1a2b3c4d5e6f7a8b9",
+            "MaxAggregationInterval": 600,
+            "FlowLogStatus": "ACTIVE",
+            "LogGroupName": "MyFlowLogs",
+            "ResourceId": "vpc-1a2b3c4d5e6f7a8b9",
+            "TrafficType": "ALL",
+            "LogDestinationType": "cloud-watch-logs",
+            "LogFormat": "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}"
+        }
+    ]
+}
+```
+For more information, see [Work with flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeFlowLogs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-flow-logs.html) in *AWS CLI Command Reference*.
 
 ### `describe-fpga-image-attribute`
@@ -10164,26 +10791,28 @@ The following code example shows how to use `describe-fpga-image-attribute`.
 
 **AWS CLI**
 **To describe the attributes of an Amazon FPGA image**
-This example describes the load permissions for the specified AFI.
-Command:
+The following `describe-fpga-image-attribute` example describes the load permissions for the specified AFI.
 
 ```
-aws ec2 describe-fpga-image-attribute --fpga-image-id {{afi-0d123e123bfc85abc}} --attribute {{loadPermission}}
+aws ec2 describe-fpga-image-attribute \
+    --fpga-image-id {{afi-0d123e123bfc85abc}} \
+    --attribute {{loadPermission}}
 ```
 Output:
 
 ```
 {
-  "FpgaImageAttribute": {
-      "FpgaImageId": "afi-0d123e123bfc85abc",
-      "LoadPermissions": [
-          {
-              "UserId": "123456789012"
-          }
-      ]
-  }
+    "FpgaImageAttribute": {
+        "FpgaImageId": "afi-0d123e123bfc85abc",
+        "LoadPermissions": [
+            {
+                "UserId": "123456789012"
+            }
+        ]
+    }
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [DescribeFpgaImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fpga-image-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-fpga-images`
@@ -10193,40 +10822,41 @@ The following code example shows how to use `describe-fpga-images`.
 
 **AWS CLI**
 **To describe Amazon FPGA images**
-This example describes AFIs that are owned by account `123456789012`.
-Command:
+The following `describe-fpga-images` example describes AFIs that are owned by account `123456789012`.
 
 ```
-aws ec2 describe-fpga-images --filters {{Name=owner-id,Values=123456789012}}
+aws ec2 describe-fpga-images \
+    --filters {{Name=owner-id,Values=123456789012}}
 ```
 Output:
 
 ```
 {
-  "FpgaImages": [
-      {
-          "UpdateTime": "2017-12-22T12:09:14.000Z",
-          "Name": "my-afi",
-          "PciId": {
-              "SubsystemVendorId": "0xfedd",
-              "VendorId": "0x1d0f",
-              "DeviceId": "0xf000",
-              "SubsystemId": "0x1d51"
-          },
-          "FpgaImageGlobalId": "agfi-123cb27b5e84a0abc",
-          "Public": false,
-          "State": {
-              "Code": "available"
-          },
-          "ShellVersion": "0x071417d3",
-          "OwnerId": "123456789012",
-          "FpgaImageId": "afi-0d123e123bfc85abc",
-          "CreateTime": "2017-12-22T11:43:33.000Z",
-          "Description": "my-afi"
-      }
-  ]
+    "FpgaImages": [
+        {
+            "UpdateTime": "2017-12-22T12:09:14.000Z",
+            "Name": "my-afi",
+            "PciId": {
+                "SubsystemVendorId": "0xfedd",
+                "VendorId": "0x1d0f",
+                "DeviceId": "0xf000",
+                "SubsystemId": "0x1d51"
+            },
+            "FpgaImageGlobalId": "agfi-123cb27b5e84a0abc",
+            "Public": false,
+            "State": {
+                "Code": "available"
+            },
+            "ShellVersion": "0x071417d3",
+            "OwnerId": "123456789012",
+            "FpgaImageId": "afi-0d123e123bfc85abc",
+            "CreateTime": "2017-12-22T11:43:33.000Z",
+            "Description": "my-afi"
+        }
+    ]
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [DescribeFpgaImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-fpga-images.html) in *AWS CLI Command Reference*.
 
 ### `describe-host-reservation-offerings`
@@ -10236,68 +10866,69 @@ The following code example shows how to use `describe-host-reservation-offerings
 
 **AWS CLI**
 **To describe Dedicated Host Reservation offerings**
-This example describes the Dedicated Host Reservations for the M4 instance family that are available to purchase.
-Command:
+The following `describe-host-reservation-offerings` example describes the Dedicated Host Reservations for the M4 instance family that are available to purchase.
 
 ```
-aws ec2 describe-host-reservation-offerings --filter {{Name=instance-family,Values=m4}}
+aws ec2 describe-host-reservation-offerings \
+    --filter {{Name=instance-family,Values=m4}}
 ```
 Output:
 
 ```
 {
-  "OfferingSet": [
-      {
-          "HourlyPrice": "1.499",
-          "OfferingId": "hro-03f707bf363b6b324",
-          "InstanceFamily": "m4",
-          "PaymentOption": "NoUpfront",
-          "UpfrontPrice": "0.000",
-          "Duration": 31536000
-      },
-      {
-          "HourlyPrice": "1.045",
-          "OfferingId": "hro-0ef9181cabdef7a02",
-          "InstanceFamily": "m4",
-          "PaymentOption": "NoUpfront",
-          "UpfrontPrice": "0.000",
-          "Duration": 94608000
-      },
-      {
-          "HourlyPrice": "0.714",
-          "OfferingId": "hro-04567a15500b92a51",
-          "InstanceFamily": "m4",
-          "PaymentOption": "PartialUpfront",
-          "UpfrontPrice": "6254.000",
-          "Duration": 31536000
-      },
-      {
-          "HourlyPrice": "0.484",
-          "OfferingId": "hro-0d5d7a9d23ed7fbfe",
-          "InstanceFamily": "m4",
-          "PaymentOption": "PartialUpfront",
-          "UpfrontPrice": "12720.000",
-          "Duration": 94608000
-      },
-      {
-          "HourlyPrice": "0.000",
-          "OfferingId": "hro-05da4108ca998c2e5",
-          "InstanceFamily": "m4",
-          "PaymentOption": "AllUpfront",
-          "UpfrontPrice": "23913.000",
-          "Duration": 94608000
-      },
-      {
-          "HourlyPrice": "0.000",
-          "OfferingId": "hro-0a9f9be3b95a3dc8f",
-          "InstanceFamily": "m4",
-          "PaymentOption": "AllUpfront",
-          "UpfrontPrice": "12257.000",
-          "Duration": 31536000
-      }
-  ]
+    "OfferingSet": [
+        {
+            "HourlyPrice": "1.499",
+            "OfferingId": "hro-03f707bf363b6b324",
+            "InstanceFamily": "m4",
+            "PaymentOption": "NoUpfront",
+            "UpfrontPrice": "0.000",
+            "Duration": 31536000
+        },
+        {
+            "HourlyPrice": "1.045",
+            "OfferingId": "hro-0ef9181cabdef7a02",
+            "InstanceFamily": "m4",
+            "PaymentOption": "NoUpfront",
+            "UpfrontPrice": "0.000",
+            "Duration": 94608000
+        },
+        {
+            "HourlyPrice": "0.714",
+            "OfferingId": "hro-04567a15500b92a51",
+            "InstanceFamily": "m4",
+            "PaymentOption": "PartialUpfront",
+            "UpfrontPrice": "6254.000",
+            "Duration": 31536000
+        },
+        {
+            "HourlyPrice": "0.484",
+            "OfferingId": "hro-0d5d7a9d23ed7fbfe",
+            "InstanceFamily": "m4",
+            "PaymentOption": "PartialUpfront",
+            "UpfrontPrice": "12720.000",
+            "Duration": 94608000
+        },
+        {
+            "HourlyPrice": "0.000",
+            "OfferingId": "hro-05da4108ca998c2e5",
+            "InstanceFamily": "m4",
+            "PaymentOption": "AllUpfront",
+            "UpfrontPrice": "23913.000",
+            "Duration": 94608000
+        },
+        {
+            "HourlyPrice": "0.000",
+            "OfferingId": "hro-0a9f9be3b95a3dc8f",
+            "InstanceFamily": "m4",
+            "PaymentOption": "AllUpfront",
+            "UpfrontPrice": "12257.000",
+            "Duration": 31536000
+        }
+    ]
 }
 ```
+For more information, see [Amazon EC2 Dedicated Host pricing and billing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html#dedicated-host-reservations) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeHostReservationOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-host-reservation-offerings.html) in *AWS CLI Command Reference*.
 
 ### `describe-host-reservations`
@@ -10307,8 +10938,7 @@ The following code example shows how to use `describe-host-reservations`.
 
 **AWS CLI**
 **To describe Dedicated Host Reservations in your account**
-This example describes the Dedicated Host Reservations in your account.
-Command:
+The following `describe-host-reservations` example describes the Dedicated Host Reservations in your account.
 
 ```
 aws ec2 describe-host-reservations
@@ -10317,26 +10947,27 @@ Output:
 
 ```
 {
-  "HostReservationSet": [
-      {
-          "Count": 1,
-          "End": "2019-01-10T12:14:09Z",
-          "HourlyPrice": "1.499",
-          "InstanceFamily": "m4",
-          "OfferingId": "hro-03f707bf363b6b324",
-          "PaymentOption": "NoUpfront",
-          "State": "active",
-          "HostIdSet": [
-              "h-013abcd2a00cbd123"
-          ],
-          "Start": "2018-01-10T12:14:09Z",
-          "HostReservationId": "hr-0d418a3a4ffc669ae",
-          "UpfrontPrice": "0.000",
-          "Duration": 31536000
-      }
-  ]
+    "HostReservationSet": [
+        {
+            "Count": 1,
+            "End": "2019-01-10T12:14:09Z",
+            "HourlyPrice": "1.499",
+            "InstanceFamily": "m4",
+            "OfferingId": "hro-03f707bf363b6b324",
+            "PaymentOption": "NoUpfront",
+            "State": "active",
+            "HostIdSet": [
+                "h-013abcd2a00cbd123"
+            ],
+            "Start": "2018-01-10T12:14:09Z",
+            "HostReservationId": "hr-0d418a3a4ffc669ae",
+            "UpfrontPrice": "0.000",
+            "Duration": 31536000
+        }
+    ]
 }
 ```
+For more information, see [Amazon EC2 Dedicated Host pricing and billing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html#dedicated-host-reservations) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeHostReservations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-host-reservations.html) in *AWS CLI Command Reference*.
 
 ### `describe-hosts`
@@ -10349,7 +10980,8 @@ The following code example shows how to use `describe-hosts`.
 The following `describe-hosts` example displays details for the `available` Dedicated Hosts in your AWS account.
 
 ```
-aws ec2 describe-hosts --filter {{"Name=state,Values=available"}}
+aws ec2 describe-hosts \
+    --filter {{"Name=state,Values=available"}}
 ```
 Output:
 
@@ -10372,7 +11004,7 @@ Output:
             },
             "Instances": [],
             "State": "available",
-            "AvailabilityZone": "eu-west-1a",
+            "AvailabilityZone": "us-west-2a",
             "AvailableCapacity": {
                 "AvailableInstanceCapacity": [
                     {
@@ -10390,7 +11022,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-managing) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Monitor the state of your Amazon EC2 Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-monitoring.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeHosts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-hosts.html) in *AWS CLI Command Reference*.
 
 ### `describe-iam-instance-profile-associations`
@@ -10400,8 +11032,7 @@ The following code example shows how to use `describe-iam-instance-profile-assoc
 
 **AWS CLI**
 **To describe IAM instance profile associations**
-This example describes all of your IAM instance profile associations.
-Command:
+The following `describe-iam-instance-profile-associations` example describes all of your IAM instance profile associations.
 
 ```
 aws ec2 describe-iam-instance-profile-associations
@@ -10410,28 +11041,29 @@ Output:
 
 ```
 {
-  "IamInstanceProfileAssociations": [
-      {
-          "InstanceId": "i-09eb09efa73ec1dee",
-          "State": "associated",
-          "AssociationId": "iip-assoc-0db249b1f25fa24b8",
-          "IamInstanceProfile": {
-              "Id": "AIPAJVQN4F5WVLGCJDRGM",
-              "Arn": "arn:aws:iam::123456789012:instance-profile/admin-role"
-          }
-      },
-      {
-          "InstanceId": "i-0402909a2f4dffd14",
-          "State": "associating",
-          "AssociationId": "iip-assoc-0d1ec06278d29f44a",
-          "IamInstanceProfile": {
-              "Id": "AGJAJVQN4F5WVLGCJABCM",
-              "Arn": "arn:aws:iam::123456789012:instance-profile/user1-role"
-          }
-      }
-   ]
+    "IamInstanceProfileAssociations": [
+        {
+            "InstanceId": "i-09eb09efa73ec1dee",
+            "State": "associated",
+            "AssociationId": "iip-assoc-0db249b1f25fa24b8",
+            "IamInstanceProfile": {
+                "Id": "AIPAJVQN4F5WVLGCJDRGM",
+                "Arn": "arn:aws:iam::123456789012:instance-profile/admin-role"
+            }
+        },
+        {
+            "InstanceId": "i-0402909a2f4dffd14",
+            "State": "associating",
+            "AssociationId": "iip-assoc-0d1ec06278d29f44a",
+            "IamInstanceProfile": {
+                "Id": "AGJAJVQN4F5WVLGCJABCM",
+                "Arn": "arn:aws:iam::123456789012:instance-profile/user1-role"
+            }
+        }
+    ]
 }
 ```
+For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeIamInstanceProfileAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-iam-instance-profile-associations.html) in *AWS CLI Command Reference*.
 
 ### `describe-id-format`
@@ -10448,6 +11080,7 @@ aws ec2 describe-id-format \
     --resource {{security-group}}
 ```
 In the following example output, the `Deadline` value indicates that the deadline for this resource type to permanently switch from the short ID format to the long ID format expired at 00:00 UTC on August 15, 2018.
+Output:
 
 ```
 {
@@ -10460,12 +11093,47 @@ In the following example output, the `Deadline` value indicates that the deadlin
     ]
 }
 ```
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 **Example 2: To describe the ID format for all resources**
 The following `describe-id-format` example describes the ID format for all resource types. All resource types that supported the short ID format were switched to use the long ID format.
 
 ```
 aws ec2 describe-id-format
 ```
+Output:
+
+```
+{
+    "Statuses": [
+        {
+            "Deadline": "2016-12-15T00:00:00.000Z",
+            "Resource": "instance",
+            "UseLongIds": true
+        },
+        {
+            "Deadline": "2018-08-15T00:00:00.000Z",
+            "Resource": "network-interface",
+            "UseLongIds": true
+        },
+        {
+            "Deadline": "2018-08-15T00:00:00.000Z",
+            "Resource": "security-group",
+            "UseLongIds": true
+        },
+        {
+            "Deadline": "2016-12-15T00:00:00.000Z",
+            "Resource": "snapshot",
+            "UseLongIds": true
+        },
+        {
+            "Deadline": "2016-12-15T00:00:00.000Z",
+            "Resource": "volume",
+            "UseLongIds": true
+        }
+    ]
+}
+```
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-id-format.html) in *AWS CLI Command Reference*.
 
 ### `describe-identity-id-format`
@@ -10474,7 +11142,7 @@ aws ec2 describe-id-format
 The following code example shows how to use `describe-identity-id-format`.
 
 **AWS CLI**
-**To describe the ID format for an IAM role**
+**Example 1: To describe the ID format for an IAM role**
 The following `describe-identity-id-format` example describes the ID format received by instances created by the IAM role `EC2Role` in your AWS account.
 
 ```
@@ -10483,6 +11151,7 @@ aws ec2 describe-identity-id-format \
     --resource {{instance}}
 ```
 The following output indicates that instances created by this role receive IDs in long ID format.
+Output:
 
 ```
 {
@@ -10495,7 +11164,8 @@ The following output indicates that instances created by this role receive IDs i
     ]
 }
 ```
-**To describe the ID format for an IAM user**
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe the ID format for an IAM user**
 The following `describe-identity-id-format` example describes the ID format received by snapshots created by the IAM user `AdminUser` in your AWS account.
 
 ```
@@ -10504,6 +11174,7 @@ aws ec2 describe-identity-id-format \
     --resource {{snapshot}}
 ```
 The output indicates that snapshots created by this user receive IDs in long ID format.
+Output:
 
 ```
 {
@@ -10516,6 +11187,7 @@ The output indicates that snapshots created by this user receive IDs in long ID 
     ]
 }
 ```
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeIdentityIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-identity-id-format.html) in *AWS CLI Command Reference*.
 
 ### `describe-image-attribute`
@@ -10524,12 +11196,13 @@ The output indicates that snapshots created by this user receive IDs in long ID 
 The following code example shows how to use `describe-image-attribute`.
 
 **AWS CLI**
-**To describe the launch permissions for an AMI**
-This example describes the launch permissions for the specified AMI.
-Command:
+**Example 1: To describe the launch permissions for an AMI**
+The following `describe-image-attribute` example describes the launch permissions for the specified AMI.
 
 ```
-aws ec2 describe-image-attribute --image-id {{ami-5731123e}} --attribute {{launchPermission}}
+aws ec2 describe-image-attribute \
+    --image-id {{ami-5731123e}} \
+    --attribute {{launchPermission}}
 ```
 Output:
 
@@ -10540,24 +11213,27 @@ Output:
             "UserId": "123456789012"
         }
     ],
-    "ImageId": "ami-5731123e",
+    "ImageId": "ami-5731123e"
 }
 ```
-**To describe the product codes for an AMI**
-This example describes the product codes for the specified AMI. Note that this AMI has no product codes.
-Command:
+For more information, see [Share an AMI with specific AWS accounts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-explicit.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe the product codes for an AMI**
+The following `describe-image-attribute` example describes the product codes for the specified AMI. Note that this AMI has no product codes.
 
 ```
-aws ec2 describe-image-attribute --image-id {{ami-5731123e}} --attribute {{productCodes}}
+aws ec2 describe-image-attribute \
+    --image-id {{ami-5731123e}} \
+    --attribute {{productCodes}}
 ```
 Output:
 
 ```
 {
     "ProductCodes": [],
-    "ImageId": "ami-5731123e",
+    "ImageId": "ami-5731123e"
 }
 ```
+For more information, see [Paid AMIs in the AWS Marketplace for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/paid-amis.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-image-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-images`
@@ -10567,11 +11243,10 @@ The following code example shows how to use `describe-images`.
 
 **AWS CLI**
 **Example 1: To describe an AMI**
-The following `describe-images` example describes the specified AMI in the specified Region.
+The following `describe-images` example describes the specified AMI.
 
 ```
 aws ec2 describe-images \
-    --region {{us-east-1}} \
     --image-ids {{ami-1234567890EXAMPLE}}
 ```
 Output:
@@ -10593,7 +11268,7 @@ Output:
                 {
                     "DeviceName": "/dev/sda1",
                     "Ebs": {
-                        "SnapshotId": "snap-111222333444aaabb",
+                        "SnapshotId": "snap-1234567890abcdef0",
                         "DeleteOnTermination": true,
                         "VolumeType": "gp2",
                         "VolumeSize": 10,
@@ -10623,7 +11298,48 @@ aws ec2 describe-images \
     --owners {{amazon}} \
     --filters {{"Name=platform,Values=windows"}} {{"Name=root-device-type,Values=ebs"}}
 ```
-For an example of the output for `describe-images`, see Example 1.
+Output:
+
+```
+{
+    "Images": [
+        {
+            "Architecture": "x86_64",
+            "CreationDate": "2024-05-15T09:12:34.000Z",
+            "ImageId": "ami-0abcdef1234567890",
+            "ImageLocation": "amazon/Windows_Server-2022-English-Full-Base-2024.05.15",
+            "ImageType": "machine",
+            "Public": true,
+            "OwnerId": "123456789012",
+            "Platform": "windows",
+            "PlatformDetails": "Windows",
+            "UsageOperation": "RunInstances:0002",
+            "State": "available",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1",
+                    "Ebs": {
+                        "DeleteOnTermination": true,
+                        "SnapshotId": "snap-0abcdef1234567890",
+                        "VolumeSize": 30,
+                        "VolumeType": "gp2",
+                        "Encrypted": false
+                    }
+                }
+            ],
+            "Description": "Microsoft Windows Server 2022 Full Locale English AMI provided by Amazon",
+            "EnaSupport": true,
+            "Hypervisor": "xen",
+            "ImageOwnerAlias": "amazon",
+            "Name": "Windows_Server-2022-English-Full-Base-2024.05.15",
+            "RootDeviceName": "/dev/sda1",
+            "RootDeviceType": "ebs",
+            "SriovNetSupport": "simple",
+            "VirtualizationType": "hvm"
+        }
+    ]
+}
+```
 For additional examples using filters, see [Listing and filtering your resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#Filtering_Resources_CLI) in the *Amazon EC2 User Guide*.
 **Example 3: To describe AMIs based on tags**
 The following `describe-images` example describes all AMIs that have the tag `Type=Custom`. The example uses the `--query` parameter to display only the AMI IDs.
@@ -10631,16 +11347,21 @@ The following `describe-images` example describes all AMIs that have the tag `Ty
 ```
 aws ec2 describe-images \
     --filters {{"Name=tag:Type,Values=Custom"}} \
-    --query '{{Images[*].[ImageId]}}' \
-    --output {{text}}
+    --query '{{Images[*].[ImageId]}}'
 ```
 Output:
 
 ```
-ami-1234567890EXAMPLE
-ami-0abcdef1234567890
+[
+    [
+        "ami-1234567890EXAMPLE"
+    ],
+    [
+        "ami-0abcdef1234567890"
+    ]
+]
 ```
-For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI) in the *Amazon EC2 User Guide*.
+For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-images.html) in *AWS CLI Command Reference*.
 
 ### `describe-import-image-tasks`
@@ -10656,7 +11377,8 @@ The following `describe-import-image-tasks` example checks the status of the spe
 aws ec2 describe-import-image-tasks \
     --import-task-ids {{import-ami-1234567890abcdef0}}
 ```
-Output for an import image task that is in progress.
+The following example output is for an import image task that is in progress.
+Output:
 
 ```
 {
@@ -10681,7 +11403,8 @@ Output for an import image task that is in progress.
     ]
 }
 ```
-Output for an import image task that is completed. The ID of the resulting AMI is provided by `ImageId`.
+The following example output is for an import image task that is completed. The ID of the resulting AMI is provided by `ImageId`.
+Output:
 
 ```
 {
@@ -10693,7 +11416,7 @@ Output for an import image task that is completed. The ID of the resulting AMI i
                 {
                     "DiskImageSize": 705638400.0,
                     "Format": "ova",
-                    "SnapshotId": "snap-1234567890abcdef0"
+                    "SnapshotId": "snap-1234567890abcdef0",
                     "Status": "completed",
                     "UserBucket": {
                         "S3Bucket": "my-import-bucket",
@@ -10706,6 +11429,7 @@ Output for an import image task that is completed. The ID of the resulting AMI i
     ]
 }
 ```
+For more information, see [Import a VM to Amazon EC2 as an image using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html) in the *VM Import/Export User Guide*.
 +  For API details, see [DescribeImportImageTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-import-image-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-import-snapshot-tasks`
@@ -10721,7 +11445,8 @@ The following `describe-import-snapshot-tasks` example checks the status of the 
 aws ec2 describe-import-snapshot-tasks \
     --import-task-ids {{import-snap-1234567890abcdef0}}
 ```
-Output for an import snapshot task that is in progress:
+The following example output is for an import snapshot task that is in progress.
+Output:
 
 ```
 {
@@ -10731,7 +11456,7 @@ Output for an import snapshot task that is in progress:
             "ImportTaskId": "import-snap-1234567890abcdef0",
             "SnapshotTaskDetail": {
                 "Description": "My server VMDK",
-                "DiskImageSize": "705638400.0",
+                "DiskImageSize": 705638400.0,
                 "Format": "VMDK",
                 "Progress": "42",
                 "Status": "active",
@@ -10745,7 +11470,8 @@ Output for an import snapshot task that is in progress:
     ]
 }
 ```
-Output for an import snapshot task that is completed. The ID of the resulting snapshot is provided by `SnapshotId`.
+The following example output is for an import snapshot task that is completed. The ID of the resulting snapshot is provided by `SnapshotId`.
+Output:
 
 ```
 {
@@ -10755,9 +11481,9 @@ Output for an import snapshot task that is completed. The ID of the resulting sn
             "ImportTaskId": "import-snap-1234567890abcdef0",
             "SnapshotTaskDetail": {
                 "Description": "My server VMDK",
-                "DiskImageSize": "705638400.0",
+                "DiskImageSize": 705638400.0,
                 "Format": "VMDK",
-                "SnapshotId": "snap-1234567890abcdef0"
+                "SnapshotId": "snap-1234567890abcdef0",
                 "Status": "completed",
                 "UserBucket": {
                     "S3Bucket": "my-import-bucket",
@@ -10768,6 +11494,7 @@ Output for an import snapshot task that is completed. The ID of the resulting sn
     ]
 }
 ```
+For more information, see [Import a disk as an EBS snapshot using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-import-snapshot.html) in the *VM Import/Export User Guide*.
 +  For API details, see [DescribeImportSnapshotTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-import-snapshot-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-instance-attribute`
@@ -10776,52 +11503,57 @@ Output for an import snapshot task that is completed. The ID of the resulting sn
 The following code example shows how to use `describe-instance-attribute`.
 
 **AWS CLI**
-**To describe the instance type**
-This example describes the instance type of the specified instance.
-Command:
+**Example 1: To describe the instance type**
+The following `describe-instance-attribute` example describes the instance type of the specified instance.
 
 ```
-aws ec2 describe-instance-attribute --instance-id {{i-1234567890abcdef0}} --attribute {{instanceType}}
+aws ec2 describe-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --attribute {{instanceType}}
 ```
 Output:
 
 ```
 {
-    "InstanceId": "i-1234567890abcdef0"
+    "InstanceId": "i-1234567890abcdef0",
     "InstanceType": {
         "Value": "t1.micro"
     }
 }
 ```
-**To describe the disableApiTermination attribute**
-This example describes the `disableApiTermination` attribute of the specified instance.
-Command:
+For more information, see [Amazon EC2 instance type changes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-resize.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe the disableApiTermination attribute**
+The following `describe-instance-attribute` example describes the `disableApiTermination` attribute of the specified instance.
 
 ```
-aws ec2 describe-instance-attribute --instance-id {{i-1234567890abcdef0}} --attribute {{disableApiTermination}}
+aws ec2 describe-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --attribute {{disableApiTermination}}
 ```
 Output:
 
 ```
 {
-"InstanceId": "i-1234567890abcdef0"
+    "InstanceId": "i-1234567890abcdef0",
     "DisableApiTermination": {
-        "Value": "false"
+        "Value": false
     }
 }
 ```
-**To describe the block device mapping for an instance**
-This example describes the `blockDeviceMapping` attribute of the specified instance.
-Command:
+For more information, see [Change instance termination protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDisableAPITermination.html) in the *Amazon EC2 User Guide*.
+**Example 3: To describe the block device mapping for an instance**
+The following `describe-instance-attribute` example describes the `blockDeviceMapping` attribute of the specified instance.
 
 ```
-aws ec2 describe-instance-attribute --instance-id {{i-1234567890abcdef0}} --attribute {{blockDeviceMapping}}
+aws ec2 describe-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --attribute {{blockDeviceMapping}}
 ```
 Output:
 
 ```
 {
-    "InstanceId": "i-1234567890abcdef0"
+    "InstanceId": "i-1234567890abcdef0",
     "BlockDeviceMappings": [
         {
             "DeviceName": "/dev/sda1",
@@ -10841,9 +11573,10 @@ Output:
                 "AttachTime": "2013-09-10T23:07:00.000Z"
             }
         }
-    ],
+    ]
 }
 ```
+For more information, see [Block device mappings for volumes on Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeInstanceAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instance-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-instance-connect-endpoints`
@@ -10857,7 +11590,6 @@ The following `describe-instance-connect-endpoints` example describes the specif
 
 ```
 aws ec2 describe-instance-connect-endpoints \
-    --region {{us-east-1}} \
     --instance-connect-endpoint-ids {{eice-0123456789example}}
 ```
 Output:
@@ -10866,17 +11598,17 @@ Output:
 {
     "InstanceConnectEndpoints": [
         {
-            "OwnerId": "111111111111",
+            "OwnerId": "123456789012",
             "InstanceConnectEndpointId": "eice-0123456789example",
-            "InstanceConnectEndpointArn": "arn:aws:ec2:us-east-1:111111111111:instance-connect-endpoint/eice-0123456789example",
+            "InstanceConnectEndpointArn": "arn:aws:ec2:us-west-2:123456789012:instance-connect-endpoint/eice-0123456789example",
             "State": "create-complete",
             "StateMessage": "",
-            "DnsName": "eice-0123456789example.b67b86ba.ec2-instance-connect-endpoint.us-east-1.amazonaws.com",
+            "DnsName": "eice-0123456789example.b67b86ba.ec2-instance-connect-endpoint.us-west-2.amazonaws.com",
             "NetworkInterfaceIds": [
                 "eni-0123456789example"
             ],
             "VpcId": "vpc-0123abcd",
-            "AvailabilityZone": "us-east-1d",
+            "AvailabilityZone": "us-west-2d",
             "CreatedAt": "2023-02-07T12:05:37+00:00",
             "SubnetId": "subnet-0123abcd",
             "Tags": []
@@ -10937,7 +11669,7 @@ Output:
     }
 }
 ```
-For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Scheduled events for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeInstanceEventNotificationAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instance-event-notification-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-instance-event-windows`
@@ -10947,11 +11679,10 @@ The following code example shows how to use `describe-instance-event-windows`.
 
 **AWS CLI**
 **Example 1: To describe all event windows**
-The following `describe-instance-event-windows` example describes all event windows in the specified Region.
+The following `describe-instance-event-windows` example describes all event windows.
 
 ```
-aws ec2 describe-instance-event-windows \
-    --region {{us-east-1}}
+aws ec2 describe-instance-event-windows
 ```
 Output:
 
@@ -10973,11 +11704,8 @@ Output:
             "State": "active",
             "Tags": []
         }
-
-        ...
-
     ],
-    "NextToken": "9d624e0c-388b-4862-a31e-a85c64fc1d4a"
+    "NextToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To describe a specific event window**
@@ -10985,7 +11713,6 @@ The following `describe-instance-event-windows` example describes a specific eve
 
 ```
 aws ec2 describe-instance-event-windows \
-    --region {{us-east-1}} \
     --instance-event-window-ids {{iew-0abcdef1234567890}}
 ```
 Output:
@@ -11008,6 +11735,7 @@ Output:
             "State": "active",
             "Tags": []
         }
+    ]
 }
 ```
 **Example 3: To describe event windows that match one or more filters**
@@ -11015,7 +11743,6 @@ The following `describe-instance-event-windows` example describes event windows 
 
 ```
 aws ec2 describe-instance-event-windows \
-    --region {{us-east-1}} \
     --filters {{Name=instance-id,Values=i-1234567890abcdef0}} \
     --max-results {{100}} \
     --next-token {{<next-token-value>}}
@@ -11060,11 +11787,10 @@ The following code example shows how to use `describe-instance-image-metadata`.
 
 **AWS CLI**
 **Example 1: To describe the AMI metadata for all instances**
-The following `describe-instance-image-metadata` example describes the AMI metadata of all the instances in your AWS account in the specified Region.
+The following `describe-instance-image-metadata` example describes the AMI metadata of all the instances in your AWS account.
 
 ```
-aws ec2 describe-instance-image-metadata \
-    --region {{us-east-1}}
+aws ec2 describe-instance-image-metadata
 ```
 Output:
 
@@ -11075,12 +11801,12 @@ Output:
             "InstanceId": "i-1234567890EXAMPLE",
             "InstanceType": "t2.micro",
             "LaunchTime": "2024-08-28T11:25:45+00:00",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "State": {
                 "Code": 16,
                 "Name": "running"
             },
-            "OwnerId": "123412341234",
+            "OwnerId": "123456789012",
             "Tags": [
                 {
                     "Key": "MyTagName",
@@ -11108,7 +11834,6 @@ The following `describe-instance-image-metadata` example describes the AMI metad
 
 ```
 aws ec2 describe-instance-image-metadata \
-    --region {{us-east-1}} \
     --instance-ids {{i-1234567890EXAMPLE}} {{i-0987654321EXAMPLE}}
 ```
 Output:
@@ -11120,12 +11845,12 @@ Output:
             "InstanceId": "i-1234567890EXAMPLE",
             "InstanceType": "t2.micro",
             "LaunchTime": "2024-08-28T11:25:45+00:00",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "State": {
                 "Code": 16,
                 "Name": "running"
             },
-            "OwnerId": "123412341234",
+            "OwnerId": "123456789012",
             "Tags": [
                 {
                     "Key": "MyTagName",
@@ -11147,12 +11872,12 @@ Output:
             "InstanceId": "i-0987654321EXAMPLE",
             "InstanceType": "t2.micro",
             "LaunchTime": "2024-08-28T11:25:45+00:00",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "State": {
                 "Code": 16,
                 "Name": "running"
             },
-            "OwnerId": "123412341234",
+            "OwnerId": "123456789012",
             "Tags": [
                 {
                     "Key": "MyTagName",
@@ -11175,12 +11900,11 @@ Output:
 ```
 For more information, see [Amazon Machine Images in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html) in the *Amazon EC2 User Guide*.
 **Example 3: To describe the AMI metadata for instances based on filters**
-The following `describe-instance-image-metadata` example describes the AMI metadata for `t2.nano` and `t2.micro` instances in the `us-east-1a` Availability Zone.
+The following `describe-instance-image-metadata` example describes the AMI metadata for `t2.nano` and `t2.micro` instances in the `us-west-2a` Availability Zone.
 
 ```
 aws ec2 describe-instance-image-metadata \
-    --region {{us-east-1}} \
-    --filters {{Name=availability-zone,Values=us-east-1a}} {{Name=instance-type,Values=t2.nano,t2.micro}}
+    --filters {{Name=availability-zone,Values=us-west-2a}} {{Name=instance-type,Values=t2.nano,t2.micro}}
 ```
 Output:
 
@@ -11191,12 +11915,12 @@ Output:
             "InstanceId": "i-1234567890EXAMPLE",
             "InstanceType": "t2.micro",
             "LaunchTime": "2024-08-28T11:25:45+00:00",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "State": {
                 "Code": 16,
                 "Name": "running"
             },
-            "OwnerId": "123412341234",
+            "OwnerId": "123456789012",
             "Tags": [
                 {
                     "Key": "MyTagName",
@@ -11218,12 +11942,12 @@ Output:
             "InstanceId": "i-0987654321EXAMPLE",
             "InstanceType": "t2.micro",
             "LaunchTime": "2024-08-28T11:25:45+00:00",
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "State": {
                 "Code": 16,
                 "Name": "running"
             },
-            "OwnerId": "123412341234",
+            "OwnerId": "123456789012",
             "Tags": [
                 {
                     "Key": "MyTagName",
@@ -11272,7 +11996,7 @@ Output:
                 "Code": 16,
                 "Name": "running"
             },
-            "AvailabilityZone": "us-east-1d",
+            "AvailabilityZone": "us-west-2d",
             "SystemStatus": {
                 "Status": "ok",
                 "Details": [
@@ -11308,8 +12032,7 @@ The following code example shows how to use `describe-instance-topology`.
 The following `describe-instance-topology` example describes the topology of all your instances that match the supported instance types for this command.
 
 ```
-aws ec2 describe-instance-topology \
-    --region {{us-west-2}}
+aws ec2 describe-instance-topology
 ```
 Output:
 
@@ -11384,43 +12107,62 @@ To list the instance types offered in a different Region, specify the Region usi
 
 ```
 aws ec2 describe-instance-type-offerings \
-    --region {{us-east-2}}
+    --region {{us-west-2}}
 ```
 Output:
 
 ```
 {
-  "InstanceTypeOfferings": [
-      {
-          "InstanceType": "m5.2xlarge",
-          "LocationType": "region",
-          "Location": "us-east-2"
-      },
-      {
-          "InstanceType": "t3.micro",
-          "LocationType": "region",
-          "Location": "us-east-2"
-      },
-      ...
-  ]
+    "InstanceTypeOfferings": [
+        {
+            "InstanceType": "m5.2xlarge",
+            "LocationType": "region",
+            "Location": "us-west-2"
+        },
+        {
+            "InstanceType": "t3.micro",
+            "LocationType": "region",
+            "Location": "us-west-2"
+        }
+    ]
 }
 ```
+For more information, see [Find an Amazon EC2 instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-discovery.html) in the *Amazon EC2 User Guide*.
 **Example 2: To list the instance types offered in an Availability Zone**
 The following `describe-instance-type-offerings` example lists the instance types offered in the specified Availability Zone. The Availability Zone must be in the specified Region.
 
 ```
 aws ec2 describe-instance-type-offerings \
     --location-type {{availability-zone}} \
-    --filters {{Name=location,Values=us-east-2a}} \
-    --region {{us-east-2}}
+    --filters {{Name=location,Values=us-west-2a}} \
+    --region {{us-west-2}}
 ```
+Output:
+
+```
+{
+    "InstanceTypeOfferings": [
+        {
+            "InstanceType": "m5.2xlarge",
+            "LocationType": "availability-zone",
+            "Location": "us-west-2a"
+        },
+        {
+            "InstanceType": "t3.micro",
+            "LocationType": "availability-zone",
+            "Location": "us-west-2a"
+        }
+    ]
+}
+```
+For more information, see [Find an Amazon EC2 instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-discovery.html) in the *Amazon EC2 User Guide*.
 **Example 3: To check whether an instance type is supported**
-The following `describe-instance-type-offerings` command indicates whether the `c5.xlarge` instance type is supported in the specified Region.
+The following `describe-instance-type-offerings` example indicates whether the `c5.xlarge` instance type is supported in the specified Region.
 
 ```
 aws ec2 describe-instance-type-offerings \
     --filters {{Name=instance-type,Values=c5.xlarge}} \
-    --region {{us-east-2}}
+    --region {{us-west-2}}
 ```
 The following `describe-instance-type-offerings` example lists all C5 instance types that are supported in the specified Region.
 
@@ -11428,7 +12170,7 @@ The following `describe-instance-type-offerings` example lists all C5 instance t
 aws ec2 describe-instance-type-offerings \
     --filters {{Name=instance-type,Values=c5*}} \
     --query {{"InstanceTypeOfferings[].InstanceType"}} \
-    --region {{us-east-2}}
+    --region {{us-west-2}}
 ```
 Output:
 
@@ -11461,6 +12203,7 @@ Output:
     "c5.4xlarge"
 ]
 ```
+For more information, see [Find an Amazon EC2 instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-discovery.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeInstanceTypeOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instance-type-offerings.html) in *AWS CLI Command Reference*.
 
 ### `describe-instance-types`
@@ -11542,13 +12285,14 @@ Output:
     ]
 }
 ```
-For more information, see [Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Amazon EC2 instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon EC2 User Guide*.
 **Example 2: To filter the available instance types**
-You can specify a filter to scope the results to instance types that have a specific characteristic. The following `describe-instance-types` example lists the instance types that support hibernation.
+The following `describe-instance-types` example lists the instance types that support hibernation. You can specify a filter to scope the results to instance types that have a specific characteristic.
 
 ```
 aws ec2 describe-instance-types \
-    --filters {{Name=hibernation-supported,Values=true}} --query '{{InstanceTypes[*].InstanceType}}'
+    --filters {{Name=hibernation-supported,Values=true}} \
+    --query '{{InstanceTypes[*].InstanceType}}'
 ```
 Output:
 
@@ -11571,7 +12315,7 @@ Output:
     "c5.4xlarge"
 ]
 ```
-For more information, see [Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
+For more information, see [Amazon EC2 instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeInstanceTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instance-types.html) in *AWS CLI Command Reference*.
 
 ### `describe-instances`
@@ -11606,14 +12350,14 @@ Output:
                         "State": "disabled"
                     },
                     "Placement": {
-                        "AvailabilityZone": "us-east-2a",
+                        "AvailabilityZone": "us-west-2a",
                         "GroupName": "",
                         "Tenancy": "default"
                     },
-                    "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
                     "PrivateIpAddress": "10-0-0-157",
                     "ProductCodes": [],
-                    "PublicDnsName": "ec2-34-253-223-13.us-east-2.compute.amazonaws.com",
+                    "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
                     "PublicIpAddress": "34.253.223.13",
                     "State": {
                         "Code": 16,
@@ -11634,19 +12378,19 @@ Output:
                             }
                         }
                     ],
-                    "ClientToken": "1234abcd-1234-abcd-1234-d46a8903e9bc",
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "EbsOptimized": true,
                     "EnaSupport": true,
                     "Hypervisor": "xen",
                     "IamInstanceProfile": {
-                        "Arn": "arn:aws:iam::111111111111:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
                         "Id": "111111111111111111111"
                     },
                     "NetworkInterfaces": [
                         {
                             "Association": {
                                 "IpOwnerId": "amazon",
-                                "PublicDnsName": "ec2-34-253-223-13.us-east-2.compute.amazonaws.com",
+                                "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
                                 "PublicIp": "34.253.223.13"
                             },
                             "Attachment": {
@@ -11667,18 +12411,18 @@ Output:
                             "Ipv6Addresses": [],
                             "MacAddress": "00:11:22:33:44:55",
                             "NetworkInterfaceId": "eni-1234567890abcdefg",
-                            "OwnerId": "104024344472",
-                            "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
                             "PrivateIpAddress": "10-0-0-157",
                             "PrivateIpAddresses": [
                                 {
                                     "Association": {
                                         "IpOwnerId": "amazon",
-                                        "PublicDnsName": "ec2-34-253-223-13.us-east-2.compute.amazonaws.com",
+                                        "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
                                         "PublicIp": "34.253.223.13"
                                     },
                                     "Primary": true,
-                                    "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
                                     "PrivateIpAddress": "10-0-0-157"
                                 }
                             ],
@@ -11739,7 +12483,7 @@ Output:
                     }
                 }
             ],
-            "OwnerId": "111111111111",
+            "OwnerId": "123456789012",
             "ReservationId": "r-1234567890abcdefg"
         }
     ]
@@ -11752,16 +12496,330 @@ The following `describe-instances` example uses filters to scope the results to 
 aws ec2 describe-instances \
     --filters {{Name=instance-type,Values=m5.large}}
 ```
-For example output, see Example 1.
+Output:
+
+```
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0abcdef1234567890",
+                    "InstanceId": "i-0abcdef1234567890",
+                    "InstanceType": "m5.large",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-11-15T10:48:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-0-158.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.0.158",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-203-0-113-18.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "203.0.113.18",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-04a636d18e83cfacb",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-11-15T10:49:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0a1b2c3d4e5f6a7b8"
+                            }
+                        }
+                    ],
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "111111111111111111111"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-203-0-113-18.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "203.0.113.18"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-11-15T10:48:59+00:00",
+                                "AttachmentId": "eni-attach-0a1b2c3d4e5f6a7b8",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-146",
+                                    "GroupId": "sg-1234567890abcdefg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "00:11:22:33:44:66",
+                            "NetworkInterfaceId": "eni-0a1b2c3d4e5f6a7b8",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-0-158.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.0.158",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-203-0-113-18.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "203.0.113.18"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-0-158.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.0.158"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-04a636d18e83cfacb",
+                            "VpcId": "vpc-1234567890abcdef0",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-146",
+                            "GroupId": "sg-1234567890abcdefg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "my-instance"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "enabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-11-15T10:48:59+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "123456789012",
+            "ReservationId": "r-0abcdef1234567890"
+        }
+    ]
+}
+```
 For more information, see [List and filter using the CLI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#Filtering_Resources_CLI) in the *Amazon EC2 User Guide*.
 **Example 3: To filter for instances with the specified type and Availability Zone**
 The following `describe-instances` example uses multiple filters to scope the results to instances with the specified type that are also in the specified Availability Zone.
 
 ```
 aws ec2 describe-instances \
-    --filters {{Name=instance-type,Values=t2.micro,t3.micro}} {{Name=availability-zone,Values=us-east-2c}}
+    --filters {{Name=instance-type,Values=t2.micro,t3.micro}} {{Name=availability-zone,Values=us-west-2c}}
 ```
-For example output, see Example 1.
+Output:
+
+```
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0abcdef1234567890",
+                    "InstanceId": "i-0598c7d356eba48d7",
+                    "InstanceType": "t3.micro",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-11-15T10:48:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2c",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-2-45.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.2.45",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-203-0-113-27.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "203.0.113.27",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0c1d2e3f4a5b6c7d8",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-11-15T10:49:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b2c3d4e5f6a7b8c9"
+                            }
+                        }
+                    ],
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "111111111111111111111"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-203-0-113-27.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "203.0.113.27"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-11-15T10:48:59+00:00",
+                                "AttachmentId": "eni-attach-0b2c3d4e5f6a7b8c9",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-146",
+                                    "GroupId": "sg-1234567890abcdefg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "00:11:22:33:44:77",
+                            "NetworkInterfaceId": "eni-0b2c3d4e5f6a7b8c9",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-2-45.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.2.45",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-203-0-113-27.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "203.0.113.27"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-2-45.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.2.45"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0c1d2e3f4a5b6c7d8",
+                            "VpcId": "vpc-1234567890abcdef0",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-146",
+                            "GroupId": "sg-1234567890abcdefg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "my-instance"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "enabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-11-15T10:48:59+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "123456789012",
+            "ReservationId": "r-0598c7d356eba48d7"
+        }
+    ]
+}
+```
 **Example 4: To filter for instances with the specified type and Availability Zone using a JSON file**
 The following `describe-instances` example uses a JSON input file to perform the same filtering as the previous example. When filters get more complicated, they can be easier to specify in a JSON file.
 
@@ -11779,11 +12837,168 @@ Contents of `filters.json`:
     },
     {
         "Name": "availability-zone",
-        "Values": ["us-east-2c"]
+        "Values": ["us-west-2c"]
     }
 ]
 ```
-For example output, see Example 1.
+Output:
+
+```
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0abcdef1234567890",
+                    "InstanceId": "i-0598c7d356eba48d7",
+                    "InstanceType": "t3.micro",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-11-15T10:48:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2c",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-2-45.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.2.45",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-203-0-113-27.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "203.0.113.27",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-0c1d2e3f4a5b6c7d8",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-11-15T10:49:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b2c3d4e5f6a7b8c9"
+                            }
+                        }
+                    ],
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "111111111111111111111"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-203-0-113-27.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "203.0.113.27"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-11-15T10:48:59+00:00",
+                                "AttachmentId": "eni-attach-0b2c3d4e5f6a7b8c9",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-146",
+                                    "GroupId": "sg-1234567890abcdefg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "00:11:22:33:44:77",
+                            "NetworkInterfaceId": "eni-0b2c3d4e5f6a7b8c9",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-2-45.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.2.45",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-203-0-113-27.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "203.0.113.27"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-2-45.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10.0.2.45"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0c1d2e3f4a5b6c7d8",
+                            "VpcId": "vpc-1234567890abcdef0",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-146",
+                            "GroupId": "sg-1234567890abcdefg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "my-instance"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "enabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-11-15T10:48:59+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "123456789012",
+            "ReservationId": "r-0598c7d356eba48d7"
+        }
+    ]
+}
+```
 **Example 5: To filter for instances with the specified Owner tag**
 The following `describe-instances` example uses tag filters to scope the results to instances that have a tag with the specified tag key (Owner), regardless of the tag value.
 
@@ -11791,7 +13006,168 @@ The following `describe-instances` example uses tag filters to scope the results
 aws ec2 describe-instances \
     --filters {{"Name=tag-key,Values=Owner"}}
 ```
-For example output, see Example 1.
+Output:
+
+```
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0abcdef1234567890",
+                    "InstanceId": "i-1234567890abcdef0",
+                    "InstanceType": "t3.nano",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-11-15T10:48:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10-0-0-157",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "34.253.223.13",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-04a636d18e83cfacb",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-11-15T10:49:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-02e6ccdca7de29cf2"
+                            }
+                        }
+                    ],
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "111111111111111111111"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "34.253.223.13"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-11-15T10:48:59+00:00",
+                                "AttachmentId": "eni-attach-1234567890abcdefg",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-146",
+                                    "GroupId": "sg-1234567890abcdefg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "00:11:22:33:44:55",
+                            "NetworkInterfaceId": "eni-1234567890abcdefg",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10-0-0-157",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "34.253.223.13"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10-0-0-157"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-1234567890abcdefg",
+                            "VpcId": "vpc-1234567890abcdefg",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-146",
+                            "GroupId": "sg-1234567890abcdefg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "my-instance"
+                        },
+                        {
+                            "Key": "Owner",
+                            "Value": "my-team"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "enabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-11-15T10:48:59+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "123456789012",
+            "ReservationId": "r-1234567890abcdefg"
+        }
+    ]
+}
+```
 **Example 6: To filter for instances with the specified my-team tag value**
 The following `describe-instances` example uses tag filters to scope the results to instances that have a tag with the specified tag value (my-team), regardless of the tag key.
 
@@ -11799,7 +13175,168 @@ The following `describe-instances` example uses tag filters to scope the results
 aws ec2 describe-instances \
     --filters {{"Name=tag-value,Values=my-team"}}
 ```
-For example output, see Example 1.
+Output:
+
+```
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0abcdef1234567890",
+                    "InstanceId": "i-1234567890abcdef0",
+                    "InstanceType": "t3.nano",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-11-15T10:48:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10-0-0-157",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "34.253.223.13",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-04a636d18e83cfacb",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-11-15T10:49:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-02e6ccdca7de29cf2"
+                            }
+                        }
+                    ],
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "111111111111111111111"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "34.253.223.13"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-11-15T10:48:59+00:00",
+                                "AttachmentId": "eni-attach-1234567890abcdefg",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-146",
+                                    "GroupId": "sg-1234567890abcdefg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "00:11:22:33:44:55",
+                            "NetworkInterfaceId": "eni-1234567890abcdefg",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10-0-0-157",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "34.253.223.13"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10-0-0-157"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-1234567890abcdefg",
+                            "VpcId": "vpc-1234567890abcdefg",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-146",
+                            "GroupId": "sg-1234567890abcdefg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "my-instance"
+                        },
+                        {
+                            "Key": "Owner",
+                            "Value": "my-team"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "enabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-11-15T10:48:59+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "123456789012",
+            "ReservationId": "r-1234567890abcdefg"
+        }
+    ]
+}
+```
 **Example 7: To filter for instances with the specified Owner tag and my-team value**
 The following `describe-instances` example uses tag filters to scope the results to instances that have the specified tag (Owner=my-team).
 
@@ -11807,22 +13344,181 @@ The following `describe-instances` example uses tag filters to scope the results
 aws ec2 describe-instances \
     --filters {{"Name=tag:Owner,Values=my-team"}}
 ```
-For example output, see Example 1.
+Output:
+
+```
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-0abcdef1234567890",
+                    "InstanceId": "i-1234567890abcdef0",
+                    "InstanceType": "t3.nano",
+                    "KeyName": "my-key-pair",
+                    "LaunchTime": "2022-11-15T10:48:59+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10-0-0-157",
+                    "ProductCodes": [],
+                    "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                    "PublicIpAddress": "34.253.223.13",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "StateTransitionReason": "",
+                    "SubnetId": "subnet-04a636d18e83cfacb",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2022-11-15T10:49:00+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-02e6ccdca7de29cf2"
+                            }
+                        }
+                    ],
+                    "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                    "EbsOptimized": true,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "IamInstanceProfile": {
+                        "Arn": "arn:aws:iam::123456789012:instance-profile/AmazonSSMRoleForInstancesQuickSetup",
+                        "Id": "111111111111111111111"
+                    },
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                                "PublicIp": "34.253.223.13"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2022-11-15T10:48:59+00:00",
+                                "AttachmentId": "eni-attach-1234567890abcdefg",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "launch-wizard-146",
+                                    "GroupId": "sg-1234567890abcdefg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "00:11:22:33:44:55",
+                            "NetworkInterfaceId": "eni-1234567890abcdefg",
+                            "OwnerId": "123456789012",
+                            "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10-0-0-157",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-34-253-223-13.us-west-2.compute.amazonaws.com",
+                                        "PublicIp": "34.253.223.13"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
+                                    "PrivateIpAddress": "10-0-0-157"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-1234567890abcdefg",
+                            "VpcId": "vpc-1234567890abcdefg",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-146",
+                            "GroupId": "sg-1234567890abcdefg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "my-instance"
+                        },
+                        {
+                            "Key": "Owner",
+                            "Value": "my-team"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "enabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2022-11-15T10:48:59+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": true,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    }
+                }
+            ],
+            "OwnerId": "123456789012",
+            "ReservationId": "r-1234567890abcdefg"
+        }
+    ]
+}
+```
 **Example 8: To display only instance and subnet IDs for all instances**
 The following `describe-instances` examples use the `--query` parameter to display only the instance and subnet IDs for all instances, in JSON format.
-Linux and macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws ec2 describe-instances \
-    --query '{{Reservations[*].Instances[*].{Instance:InstanceId,Subnet:SubnetId}}}' \
-    --output {{json}}
+    --query '{{Reservations[*].Instances[*].{Instance:InstanceId,Subnet:SubnetId}}}'
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws ec2 describe-instances {{^}}
-    --query {{"Reservations[*].Instances[*].{Instance:InstanceId,Subnet:SubnetId}"}} {{^}}
-    --output {{json}}
+    --query {{"Reservations[*].Instances[*].{Instance:InstanceId,Subnet:SubnetId}"}}
 ```
 Output:
 
@@ -11840,7 +13536,6 @@ Output:
         "Instance": "i-027552a73f021f3bd",
         "Subnet": "subnet-0250c25a1f4e15235"
     }
-    ...
 ]
 ```
 **Example 9: To filter instances of the specified type and only display their instance IDs**
@@ -11864,7 +13559,7 @@ i-0fc71c25d2374130c
 ```
 **Example 10: To filter instances of the specified type and only display their instance IDs, Availability Zone, and the specified tag value**
 The following `describe-instances` examples display the instance ID, Availability Zone, and the value of the `Name` tag for instances that have a tag with the name `tag-key`, in table format.
-Linux and macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws ec2 describe-instances \
@@ -11872,7 +13567,7 @@ aws ec2 describe-instances \
     --query '{{Reservations[*].Instances[*].{Instance:InstanceId,AZ:Placement.AvailabilityZone,Name:Tags[?Key==`Name`]|[0].Value}}}' \
     --output {{table}}
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws ec2 describe-instances {{^}}
@@ -11888,9 +13583,9 @@ Output:
 +--------------+-----------------------+--------------------+
 |      AZ      |       Instance        |        Name        |
 +--------------+-----------------------+--------------------+
-|  us-east-2b  |  i-057750d42936e468a  |  my-prod-server    |
-|  us-east-2a  |  i-001efd250faaa6ffa  |  test-server-1     |
-|  us-east-2a  |  i-027552a73f021f3bd  |  test-server-2     |
+|  us-west-2b  |  i-057750d42936e468a  |  my-prod-server    |
+|  us-west-2a  |  i-001efd250faaa6ffa  |  test-server-1     |
+|  us-west-2a  |  i-027552a73f021f3bd  |  test-server-2     |
 +--------------+-----------------------+--------------------+
 ```
 **Example 11: To describe instances in a partition placement group**
@@ -11898,7 +13593,7 @@ The following `describe-instances` example describes the specified instance. The
 
 ```
 aws ec2 describe-instances \
-    --instance-ids {{i-0123a456700123456}} \
+    --instance-ids {{i-0123a4567abcd1234}} \
     --query {{"Reservations[*].Instances[*].Placement"}}
 ```
 Output:
@@ -11907,7 +13602,7 @@ Output:
 [
     [
         {
-            "AvailabilityZone": "us-east-1c",
+            "AvailabilityZone": "us-west-2c",
             "GroupName": "HDFS-Group-A",
             "PartitionNumber": 3,
             "Tenancy": "default"
@@ -11916,7 +13611,7 @@ Output:
     ]
 ]
 ```
-For more information, see [Describing instances in a placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html#describe-instance-placement) in the *Amazon EC2 User Guide*.
+For more information, see [Describing instances in a placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide*.
 **Example 12: To filter to instances with the specified placement group and partition number**
 The following `describe-instances` example filters the results to only those instances with the specified placement group and partition number.
 
@@ -11924,32 +13619,40 @@ The following `describe-instances` example filters the results to only those ins
 aws ec2 describe-instances \
     --filters {{"Name=placement-group-name,Values=HDFS-Group-A"}} {{"Name=placement-partition-number,Values=7"}}
 ```
-The following shows only the relevant information from the output.
+The following example output shows only the relevant information.
+Output:
 
 ```
-"Instances": [
-    {
-        "InstanceId": "i-0123a456700123456",
-        "InstanceType": "r4.large",
-        "Placement": {
-            "AvailabilityZone": "us-east-1c",
-            "GroupName": "HDFS-Group-A",
-            "PartitionNumber": 7,
-            "Tenancy": "default"
+{
+    "Reservations": [
+        {
+            "Instances": [
+                {
+                    "InstanceId": "i-0123a4567abcd1234",
+                    "InstanceType": "r4.large",
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2c",
+                        "GroupName": "HDFS-Group-A",
+                        "PartitionNumber": 7,
+                        "Tenancy": "default"
+                    }
+                },
+                {
+                    "InstanceId": "i-9876a5432abcd9876",
+                    "InstanceType": "r4.large",
+                    "Placement": {
+                        "AvailabilityZone": "us-west-2c",
+                        "GroupName": "HDFS-Group-A",
+                        "PartitionNumber": 7,
+                        "Tenancy": "default"
+                    }
+                }
+            ]
         }
-    },
-    {
-        "InstanceId": "i-9876a543210987654",
-        "InstanceType": "r4.large",
-        "Placement": {
-            "AvailabilityZone": "us-east-1c",
-            "GroupName": "HDFS-Group-A",
-            "PartitionNumber": 7,
-            "Tenancy": "default"
-        }
-    ],
+    ]
+}
 ```
-For more information, see [Describing instances in a placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html#describe-instance-placement) in the *Amazon EC2 User Guide*.
+For more information, see [Describing instances in a placement group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide*.
 **Example 13: To filter to instances that are configured to allow access to tags from instance metadata**
 The following `describe-instances` example filters the results to only those instances that are configured to allow access to instance tags from instance metadata.
 
@@ -11959,7 +13662,7 @@ aws ec2 describe-instances \
     --query {{"Reservations[*].Instances[*].InstanceId"}} \
     --output {{text}}
 ```
-The following shows the expected output.
+Output:
 
 ```
 i-1234567890abcdefg
@@ -11967,7 +13670,7 @@ i-abcdefg1234567890
 i-11111111aaaaaaaaa
 i-aaaaaaaa111111111
 ```
-For more information, see [Work with instance tags in instance metadata](https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/Using_Tags.html#view-access-to-tags-in-IMDS) in the *Amazon EC2 User Guide*.
+For more information, see [Work with instance tags in instance metadata](https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-internet-gateways`
@@ -12018,12 +13721,12 @@ The following code example shows how to use `describe-ipam-pool-allocations`.
 **AWS CLI**
 **Example 1: To describe all your IPAM pool allocations**
 The following `describe-ipam-pool-allocations` example describes all IPAM pool allocations owned by you.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 describe-ipam-pool-allocations
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 describe-ipam-pool-allocations
@@ -12053,13 +13756,13 @@ Output:
 ```
 **Example 2: To describe a specific IPAM pool allocation**
 The following `describe-ipam-pool-allocations` example describes a specific IPAM pool allocation by its ID.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 describe-ipam-pool-allocations \
     --ipam-pool-allocation-ids {{ipam-pool-alloc-018ecc28043b54ba38e2cd99943cebfbd}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 describe-ipam-pool-allocations {{^}}
@@ -12092,13 +13795,13 @@ The following code example shows how to use `describe-ipam-pools`.
 **AWS CLI**
 **To view the details for an IPAM pool**
 The following `describe-ipam-pools` example shows the details for pools.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 describe-ipam-pools \
     --filters {{Name=owner-id,Values=123456789012}} {{Name=ipam-scope-id,Values=ipam-scope-02fc38cd4c48e7d38}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 describe-ipam-pools {{^}}
@@ -12116,7 +13819,7 @@ Output:
             "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-02fc38cd4c48e7d38",
             "IpamScopeType": "private",
             "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-            "IpamRegion": "us-east-1",
+            "IpamRegion": "us-west-2",
             "Locale": "None",
             "PoolDepth": 1,
             "State": "create-complete",
@@ -12141,6 +13844,7 @@ Output:
     ]
 }
 ```
+For more information, see [How IPAM works](https://docs.aws.amazon.com/vpc/latest/ipam/how-it-works-ipam.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [DescribeIpamPools](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-ipam-pools.html) in *AWS CLI Command Reference*.
 
 ### `describe-ipam-resource-discoveries`
@@ -12149,15 +13853,15 @@ Output:
 The following code example shows how to use `describe-ipam-resource-discoveries`.
 
 **AWS CLI**
-**Example 1: View complete details of resource discoveries**
+**Example 1: To view complete details of resource discoveries**
+The following `describe-ipam-resource-discoveries` example lists the details of the resource discovery in your AWS account. You can have one resource discovery per AWS Region.
 In this example, you're a delegated IPAM admin who wants to create and share a resource discovery with the IPAM admin in another AWS Organization so that the admin can manage and monitor the IP addresses of resources in your organization.
 This example may be useful if:
 You tried to create a resource discovery, but you got an error that you've reached your limit of 1. You realize that you may have already created a resource discovery and you want to view it in your account.You have resources in a Region that are not being discovered by the IPAM. You want to view the `--operating-regions` defined for the resource and ensure that you've added the right Region as an operating Region so that the resources there can be discovered.
-The following `describe-ipam-resource-discoveries` example lists the details of the resource discovery in your AWS account. You can have one resource discovery per AWS Region.
+To view the resource discovery in the `us-west-2` Region, use the following command.
 
 ```
-aws ec2 describe-ipam-resource-discoveries \
-    --region {{us-east-1}}
+aws ec2 describe-ipam-resource-discoveries
 ```
 Output:
 
@@ -12165,13 +13869,13 @@ Output:
 {
     "IpamResourceDiscoveries": [
         {
-            "OwnerId": "149977607591",
+            "OwnerId": "123456789012",
             "IpamResourceDiscoveryId": "ipam-res-disco-0f8bdee9067137c0d",
-            "IpamResourceDiscoveryArn": "arn:aws:ec2::149977607591:ipam-resource-discovery/ipam-res-disco-0f8bdee9067137c0d",
-            "IpamResourceDiscoveryRegion": "us-east-1",
+            "IpamResourceDiscoveryArn": "arn:aws:ec2::123456789012:ipam-resource-discovery/ipam-res-disco-0f8bdee9067137c0d",
+            "IpamResourceDiscoveryRegion": "us-west-2",
             "OperatingRegions": [
                 {
-                    "RegionName": "us-east-1"
+                    "RegionName": "us-west-2"
                 }
             ],
             "IsDefault": false,
@@ -12182,18 +13886,19 @@ Output:
 }
 ```
 For more information, see [Integrate IPAM with accounts outside of your organization](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam-outside-org.html) in the *Amazon VPC IPAM User Guide*.
-**Example 2: View only resource discovery IDs**
+**Example 2: To view only resource discovery IDs**
 The following `describe-ipam-resource-discoveries` example lists the ID of the resource discovery in your AWS account. You can have one resource discovery per AWS Region.
 
 ```
 aws ec2 describe-ipam-resource-discoveries \
-    --query {{"IpamResourceDiscoveries[*].IpamResourceDiscoveryId"}} \
-    --output {{text}}
+    --query {{"IpamResourceDiscoveries[*].IpamResourceDiscoveryId"}}
 ```
 Output:
 
 ```
-ipam-res-disco-0481e39b242860333
+[
+    "ipam-res-disco-0481e39b242860333"
+]
 ```
 For more information, see [Integrate IPAM with accounts outside of your organization](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam-outside-org.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [DescribeIpamResourceDiscoveries](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-ipam-resource-discoveries.html) in *AWS CLI Command Reference*.
@@ -12205,13 +13910,12 @@ The following code example shows how to use `describe-ipam-resource-discovery-as
 
 **AWS CLI**
 **To view all resource discovery associations with your IPAM**
-In this example, you're a IPAM delegated admin who has associated resource discoveries with your IPAM to integrate other accounts with your IPAM. You've noticed that your IPAM is not discovering the resources in the operating Regions of the resource discovery as expected. You want to check the status and state of the resource discovery to ensure that the account that created it is still active and the resource discovery is still being shared.
+The following `describe-ipam-resource-discovery-associations` example lists the resource discovery associations in your AWS account. In this example, you're a IPAM delegated admin who has associated resource discoveries with your IPAM to integrate other accounts with your IPAM. You've noticed that your IPAM is not discovering the resources in the operating Regions of the resource discovery as expected. You want to check the status and state of the resource discovery to ensure that the account that created it is still active and the resource discovery is still being shared.
 The `--region` must be the home Region of your IPAM.
-The following `describe-ipam-resource-discovery-associations` example lists the resource discovery associations in your AWS account.
 
 ```
 aws ec2 describe-ipam-resource-discovery-associations \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
@@ -12219,26 +13923,26 @@ Output:
 {
     "IpamResourceDiscoveryAssociations": [
         {
-            "OwnerId": "320805250157",
+            "OwnerId": "123456789111",
             "IpamResourceDiscoveryAssociationId": "ipam-res-disco-assoc-05e6b45eca5bf5cf7",
-            "IpamResourceDiscoveryAssociationArn": "arn:aws:ec2::320805250157:ipam-resource-discovery-association/ipam-res-disco-assoc-05e6b45eca5bf5cf7",
+            "IpamResourceDiscoveryAssociationArn": "arn:aws:ec2::123456789111:ipam-resource-discovery-association/ipam-res-disco-assoc-05e6b45eca5bf5cf7",
             "IpamResourceDiscoveryId": "ipam-res-disco-0f4ef577a9f37a162",
             "IpamId": "ipam-005f921c17ebd5107",
-            "IpamArn": "arn:aws:ec2::320805250157:ipam/ipam-005f921c17ebd5107",
-            "IpamRegion": "us-east-1",
+            "IpamArn": "arn:aws:ec2::123456789111:ipam/ipam-005f921c17ebd5107",
+            "IpamRegion": "us-west-2",
             "IsDefault": true,
             "ResourceDiscoveryStatus": "active",
             "State": "associate-complete",
             "Tags": []
         },
         {
-            "OwnerId": "149977607591",
+            "OwnerId": "123456789222",
             "IpamResourceDiscoveryAssociationId": "ipam-res-disco-assoc-0dfd21ae189ab5f62",
-            "IpamResourceDiscoveryAssociationArn": "arn:aws:ec2::149977607591:ipam-resource-discovery-association/ipam-res-disco-assoc-0dfd21ae189ab5f62",
+            "IpamResourceDiscoveryAssociationArn": "arn:aws:ec2::123456789222:ipam-resource-discovery-association/ipam-res-disco-assoc-0dfd21ae189ab5f62",
             "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
             "IpamId": "ipam-005f921c17ebd5107",
-            "IpamArn": "arn:aws:ec2::149977607591:ipam/ipam-005f921c17ebd5107",
-            "IpamRegion": "us-east-1",
+            "IpamArn": "arn:aws:ec2::123456789222:ipam/ipam-005f921c17ebd5107",
+            "IpamRegion": "us-west-2",
             "IsDefault": false,
             "ResourceDiscoveryStatus": "active",
             "State": "create-complete",
@@ -12275,7 +13979,7 @@ Output:
             "IpamScopeId": "ipam-scope-02fc38cd4c48e7d38",
             "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-02fc38cd4c48e7d38",
             "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-            "IpamRegion": "us-east-1",
+            "IpamRegion": "us-west-2",
             "IpamScopeType": "private",
             "IsDefault": true,
             "PoolCount": 2,
@@ -12287,7 +13991,7 @@ Output:
             "IpamScopeId": "ipam-scope-0b9eed026396dbc16",
             "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-0b9eed026396dbc16",
             "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-            "IpamRegion": "us-east-1",
+            "IpamRegion": "us-west-2",
             "IpamScopeType": "public",
             "IsDefault": true,
             "PoolCount": 0,
@@ -12299,7 +14003,7 @@ Output:
             "IpamScopeId": "ipam-scope-0f1aff29486355c22",
             "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-0f1aff29486355c22",
             "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-            "IpamRegion": "us-east-1",
+            "IpamRegion": "us-west-2",
             "IpamScopeType": "private",
             "IsDefault": false,
             "Description": "Example description",
@@ -12315,6 +14019,7 @@ Output:
     ]
 }
 ```
+For more information, see [How IPAM works](https://docs.aws.amazon.com/vpc/latest/ipam/how-it-works-ipam.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [DescribeIpamScopes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-ipam-scopes.html) in *AWS CLI Command Reference*.
 
 ### `describe-ipams`
@@ -12365,6 +14070,7 @@ Output:
     ]
 }
 ```
+For more information, see [What is IPAM?](https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [DescribeIpams](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-ipams.html) in *AWS CLI Command Reference*.
 
 ### `describe-ipv6-pools`
@@ -12401,6 +14107,7 @@ Output:
     ]
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeIpv6Pools](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-ipv6-pools.html) in *AWS CLI Command Reference*.
 
 ### `describe-key-pairs`
@@ -12442,89 +14149,90 @@ The following code example shows how to use `describe-launch-template-versions`.
 
 **AWS CLI**
 **To describe launch template versions**
-This example describes the versions of the specified launch template.
-Command:
+The following `describe-launch-template-versions` example describes the versions of the specified launch template.
 
 ```
-aws ec2 describe-launch-template-versions --launch-template-id {{lt-068f72b72934aff71}}
+aws ec2 describe-launch-template-versions \
+    --launch-template-id {{lt-068f72b72934aff71}}
 ```
 Output:
 
 ```
 {
-  "LaunchTemplateVersions": [
-      {
-          "LaunchTemplateId": "lt-068f72b72934aff71",
-          "LaunchTemplateName": "Webservers",
-          "VersionNumber": 3,
-          "CreatedBy": "arn:aws:iam::123456789102:root",
-          "LaunchTemplateData": {
-              "KeyName": "kp-us-east",
-              "ImageId": "ami-6057e21a",
-              "InstanceType": "t2.small",
-              "NetworkInterfaces": [
-                  {
-                      "SubnetId": "subnet-7b16de0c",
-                      "DeviceIndex": 0,
-                      "Groups": [
-                          "sg-7c227019"
-                      ]
-                  }
-              ]
-          },
-          "DefaultVersion": false,
-          "CreateTime": "2017-11-20T13:19:54.000Z"
-      },
-      {
-          "LaunchTemplateId": "lt-068f72b72934aff71",
-          "LaunchTemplateName": "Webservers",
-          "VersionNumber": 2,
-          "CreatedBy": "arn:aws:iam::123456789102:root",
-          "LaunchTemplateData": {
-              "KeyName": "kp-us-east",
-              "ImageId": "ami-6057e21a",
-              "InstanceType": "t2.medium",
-              "NetworkInterfaces": [
-                  {
-                      "SubnetId": "subnet-1a2b3c4d",
-                      "DeviceIndex": 0,
-                      "Groups": [
-                          "sg-7c227019"
-                      ]
-                  }
-              ]
-          },
-          "DefaultVersion": false,
-          "CreateTime": "2017-11-20T13:12:32.000Z"
-      },
-      {
-          "LaunchTemplateId": "lt-068f72b72934aff71",
-          "LaunchTemplateName": "Webservers",
-          "VersionNumber": 1,
-          "CreatedBy": "arn:aws:iam::123456789102:root",
-          "LaunchTemplateData": {
-              "UserData": "",
-              "KeyName": "kp-us-east",
-              "ImageId": "ami-aabbcc11",
-              "InstanceType": "t2.medium",
-              "NetworkInterfaces": [
-                  {
-                      "SubnetId": "subnet-7b16de0c",
-                      "DeviceIndex": 0,
-                      "DeleteOnTermination": false,
-                      "Groups": [
-                          "sg-7c227019"
-                      ],
-                      "AssociatePublicIpAddress": true
-                  }
-              ]
-          },
-          "DefaultVersion": true,
-          "CreateTime": "2017-11-20T12:52:33.000Z"
-      }
-  ]
+    "LaunchTemplateVersions": [
+        {
+            "LaunchTemplateId": "lt-068f72b72934aff71",
+            "LaunchTemplateName": "Webservers",
+            "VersionNumber": 3,
+            "CreatedBy": "arn:aws:iam::123456789012:root",
+            "LaunchTemplateData": {
+                "KeyName": "kp-us-east",
+                "ImageId": "ami-6057e21a",
+                "InstanceType": "t2.small",
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": "subnet-7b16de0c",
+                        "DeviceIndex": 0,
+                        "Groups": [
+                            "sg-7c227019"
+                        ]
+                    }
+                ]
+            },
+            "DefaultVersion": false,
+            "CreateTime": "2017-11-20T13:19:54.000Z"
+        },
+        {
+            "LaunchTemplateId": "lt-068f72b72934aff71",
+            "LaunchTemplateName": "Webservers",
+            "VersionNumber": 2,
+            "CreatedBy": "arn:aws:iam::123456789012:root",
+            "LaunchTemplateData": {
+                "KeyName": "kp-us-east",
+                "ImageId": "ami-6057e21a",
+                "InstanceType": "t2.medium",
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": "subnet-1a2b3c4d",
+                        "DeviceIndex": 0,
+                        "Groups": [
+                            "sg-7c227019"
+                        ]
+                    }
+                ]
+            },
+            "DefaultVersion": false,
+            "CreateTime": "2017-11-20T13:12:32.000Z"
+        },
+        {
+            "LaunchTemplateId": "lt-068f72b72934aff71",
+            "LaunchTemplateName": "Webservers",
+            "VersionNumber": 1,
+            "CreatedBy": "arn:aws:iam::123456789012:root",
+            "LaunchTemplateData": {
+                "UserData": "",
+                "KeyName": "kp-us-east",
+                "ImageId": "ami-aabbcc11",
+                "InstanceType": "t2.medium",
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": "subnet-7b16de0c",
+                        "DeviceIndex": 0,
+                        "DeleteOnTermination": false,
+                        "Groups": [
+                            "sg-7c227019"
+                        ],
+                        "AssociatePublicIpAddress": true
+                    }
+                ]
+            },
+            "DefaultVersion": true,
+            "CreateTime": "2017-11-20T12:52:33.000Z"
+        }
+    ]
 }
 ```
+For more information, see [Modify a launch template (manage launch template versions)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-launch-template-versions.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeLaunchTemplateVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-launch-template-versions.html) in *AWS CLI Command Reference*.
 
 ### `describe-launch-templates`
@@ -12534,8 +14242,7 @@ The following code example shows how to use `describe-launch-templates`.
 
 **AWS CLI**
 **To describe launch templates**
-This example describes your launch templates.
-Command:
+The following `describe-launch-templates` example describes your launch templates.
 
 ```
 aws ec2 describe-launch-templates
@@ -12544,42 +14251,43 @@ Output:
 
 ```
 {
-  "LaunchTemplates": [
-      {
-          "LatestVersionNumber": 2,
-          "LaunchTemplateId": "lt-0e06d290751193123",
-          "LaunchTemplateName": "TemplateForWebServer",
-          "DefaultVersionNumber": 2,
-          "CreatedBy": "arn:aws:iam::123456789012:root",
-          "CreateTime": "2017-11-27T09:30:23.000Z"
-      },
-      {
-          "LatestVersionNumber": 6,
-          "LaunchTemplateId": "lt-0c45b5e061ec98456",
-          "LaunchTemplateName": "DBServersTemplate",
-          "DefaultVersionNumber": 1,
-          "CreatedBy": "arn:aws:iam::123456789012:root",
-          "CreateTime": "2017-11-20T09:25:22.000Z"
-      },
-      {
-          "LatestVersionNumber": 1,
-          "LaunchTemplateId": "lt-0d47d774e8e52dabc",
-          "LaunchTemplateName": "MyLaunchTemplate2",
-          "DefaultVersionNumber": 1,
-          "CreatedBy": "arn:aws:iam::123456789012:root",
-          "CreateTime": "2017-11-02T12:06:21.000Z"
-      },
-      {
-          "LatestVersionNumber": 3,
-          "LaunchTemplateId": "lt-01e5f948eb4f589d6",
-          "LaunchTemplateName": "testingtemplate2",
-          "DefaultVersionNumber": 1,
-          "CreatedBy": "arn:aws:sts::123456789012:assumed-role/AdminRole/i-03ee35176e2e5aabc",
-          "CreateTime": "2017-12-01T08:19:48.000Z"
-      },
-  ]
+    "LaunchTemplates": [
+        {
+            "LatestVersionNumber": 2,
+            "LaunchTemplateId": "lt-0e06d29075EXAMPLE",
+            "LaunchTemplateName": "TemplateForWebServer",
+            "DefaultVersionNumber": 2,
+            "CreatedBy": "arn:aws:iam::123456789012:root",
+            "CreateTime": "2017-11-27T09:30:23.000Z"
+        },
+        {
+            "LatestVersionNumber": 6,
+            "LaunchTemplateId": "lt-0c45b5e061ec98456",
+            "LaunchTemplateName": "DBServersTemplate",
+            "DefaultVersionNumber": 1,
+            "CreatedBy": "arn:aws:iam::123456789012:root",
+            "CreateTime": "2017-11-20T09:25:22.000Z"
+        },
+        {
+            "LatestVersionNumber": 1,
+            "LaunchTemplateId": "lt-0d47d774e8e52dabc",
+            "LaunchTemplateName": "MyLaunchTemplate2",
+            "DefaultVersionNumber": 1,
+            "CreatedBy": "arn:aws:iam::123456789012:root",
+            "CreateTime": "2017-11-02T12:06:21.000Z"
+        },
+        {
+            "LatestVersionNumber": 3,
+            "LaunchTemplateId": "lt-01e5f948eb4f589d6",
+            "LaunchTemplateName": "testingtemplate2",
+            "DefaultVersionNumber": 1,
+            "CreatedBy": "arn:aws:sts::123456789012:assumed-role/AdminRole/i-03ee35176e2e5aabc",
+            "CreateTime": "2017-12-01T08:19:48.000Z"
+        }
+    ]
 }
 ```
+For more information, see [Store instance launch parameters in Amazon EC2 launch templates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeLaunchTemplates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-launch-templates.html) in *AWS CLI Command Reference*.
 
 ### `describe-local-gateway-route-table-virtual-interface-group-associations`
@@ -12632,13 +14340,15 @@ Output:
 
 ```
 {
-    "LocalGatewayRouteTableVpcAssociation": {
-        "LocalGatewayRouteTableVpcAssociationId": "lgw-vpc-assoc-0e0f27af1EXAMPLE",
-        "LocalGatewayRouteTableId": "lgw-rtb-059615ef7dEXAMPLE",
-        "LocalGatewayId": "lgw-09b493aa7cEXAMPLE",
-        "VpcId": "vpc-0efe9bde08EXAMPLE",
-        "State": "associated"
-    }
+    "LocalGatewayRouteTableVpcAssociations": [
+        {
+            "LocalGatewayRouteTableVpcAssociationId": "lgw-vpc-assoc-0e0f27af15EXAMPLE",
+            "LocalGatewayRouteTableId": "lgw-rtb-059615ef7dEXAMPLE",
+            "LocalGatewayId": "lgw-09b493aa7cEXAMPLE",
+            "VpcId": "vpc-0efe9bde08EXAMPLE",
+            "State": "associated"
+        }
+    ]
 }
 ```
 For more information, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *Outposts User Guide*.
@@ -12664,12 +14374,13 @@ Output:
         {
             "LocalGatewayRouteTableId": "lgw-rtb-059615ef7deEXAMPLE",
             "LocalGatewayId": "lgw-09b493aa7cEXAMPLE",
-            "OutpostArn": "arn:aws:outposts:us-west-2:111122223333:outpost/op-0dc11b66edEXAMPLE",
+            "OutpostArn": "arn:aws:outposts:us-west-2:123456789012:outpost/op-0dc11b66edEXAMPLE",
             "State": "available"
         }
     ]
 }
 ```
+For more information, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [DescribeLocalGatewayRouteTables](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-local-gateway-route-tables.html) in *AWS CLI Command Reference*.
 
 ### `describe-local-gateway-virtual-interface-groups`
@@ -12776,6 +14487,7 @@ Output:
     ]
 }
 ```
+For more information, see [Local gateways for your Outposts racks](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-local-gateways.html) in the *AWS Outposts User Guide*.
 +  For API details, see [DescribeLocalGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-local-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-locked-snapshots`
@@ -12850,8 +14562,8 @@ Output:
             "Version": 1,
             "Tags": [],
             "OwnerId": "123456789012"
-      }
-  ]
+        }
+    ]
 }
 ```
 For more information, see [Managed prefix lists](https://docs.aws.amazon.com/vpc/latest/userguide/managed-prefix-lists.html) in the *Amazon VPC User Guide*.
@@ -12864,8 +14576,7 @@ The following code example shows how to use `describe-moving-addresses`.
 
 **AWS CLI**
 **To describe your moving addresses**
-This example describes all of your moving Elastic IP addresses.
-Command:
+The following `describe-moving-addresses` example describes all of your moving Elastic IP addresses.
 
 ```
 aws ec2 describe-moving-addresses
@@ -12874,20 +14585,21 @@ Output:
 
 ```
 {
-  "MovingAddressStatuses": [
-    {
-      "PublicIp": "198.51.100.0",
-      "MoveStatus": "MovingToVpc"
-    }
-  ]
+    "MovingAddressStatuses": [
+        {
+            "PublicIp": "198.51.100.0",
+            "MoveStatus": "MovingToVpc"
+        }
+    ]
 }
 ```
-This example describes all addresses that are moving to the EC2-VPC platform.
-Command:
+The following `describe-moving-addresses` example describes all addresses that are moving to the EC2-VPC platform.
 
 ```
-aws ec2 describe-moving-addresses --filters {{Name=moving-status,Values=MovingToVpc}}
+aws ec2 describe-moving-addresses \
+    --filters {{Name=moving-status,Values=MovingToVpc}}
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeMovingAddresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-moving-addresses.html) in *AWS CLI Command Reference*.
 
 ### `describe-nat-gateways`
@@ -13056,7 +14768,7 @@ Output:
             "NetworkAclId": "acl-0ea1f54ca7EXAMPLE",
             "Tags": [],
             "VpcId": "vpc-06e4ab6c6cEXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         },
         {
             "Associations": [],
@@ -13122,7 +14834,7 @@ Output:
             "NetworkAclId": "acl-0e2a78e4e2EXAMPLE",
             "Tags": [],
             "VpcId": "vpc-03914afb3eEXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         }
     ]
 }
@@ -13140,8 +14852,7 @@ The following code example shows how to use `describe-network-insights-access-sc
 The following `describe-network-insights-access-scope-analyses` example describes the access scope analysis in your AWS account.
 
 ```
-aws ec2 describe-network-insights-access-scope-analyses \
-    --region {{us-east-1}}
+aws ec2 describe-network-insights-access-scope-analyses
 ```
 Output:
 
@@ -13150,7 +14861,7 @@ Output:
     "NetworkInsightsAccessScopeAnalyses": [
         {
             "NetworkInsightsAccessScopeAnalysisId": "nisa-123456789111",
-            "NetworkInsightsAccessScopeAnalysisArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-access-scope-analysis/nisa-123456789111",
+            "NetworkInsightsAccessScopeAnalysisArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-access-scope-analysis/nisa-123456789111",
             "NetworkInsightsAccessScopeId": "nis-123456789222",
             "Status": "succeeded",
             "StartDate": "2022-01-25T19:45:36.842000+00:00",
@@ -13160,7 +14871,7 @@ Output:
     ]
 }
 ```
-For more information, see [Getting started with Network Access Analyzer using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getting-started-cli-naa.html) in the *Network Access Analyzer Guide*.
+For more information, see [Getting started with Network Access Analyzer using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getting-started-cli.html) in the *Network Access Analyzer Guide*.
 +  For API details, see [DescribeNetworkInsightsAccessScopeAnalyses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-network-insights-access-scope-analyses.html) in *AWS CLI Command Reference*.
 
 ### `describe-network-insights-access-scopes`
@@ -13173,8 +14884,7 @@ The following code example shows how to use `describe-network-insights-access-sc
 The following `describe-network-insights-access-scopes` example describes the access-scope analyses in your AWS account.
 
 ```
-aws ec2 describe-network-insights-access-scopes \
-    --region {{us-east-1}}
+aws ec2 describe-network-insights-access-scopes
 ```
 Output:
 
@@ -13183,7 +14893,7 @@ Output:
     "NetworkInsightsAccessScopes": [
         {
             "NetworkInsightsAccessScopeId": "nis-123456789111",
-            "NetworkInsightsAccessScopeArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-access-scope/nis-123456789111",
+            "NetworkInsightsAccessScopeArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-access-scope/nis-123456789111",
             "CreatedDate": "2021-11-29T21:12:41.416000+00:00",
             "UpdatedDate": "2021-11-29T21:12:41.416000+00:00",
             "Tags": []
@@ -13191,7 +14901,7 @@ Output:
     ]
 }
 ```
-For more information, see [Getting started with Network Access Analyzer using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getting-started-cli-naa.html) in the *Network Access Analyzer Guide*.
+For more information, see [Getting started with Network Access Analyzer using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getting-started-cli.html) in the *Network Access Analyzer Guide*.
 +  For API details, see [DescribeNetworkInsightsAccessScopes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-network-insights-access-scopes.html) in *AWS CLI Command Reference*.
 
 ### `describe-network-insights-analyses`
@@ -13214,7 +14924,7 @@ Output:
     "NetworkInsightsAnalyses": [
         {
             "NetworkInsightsAnalysisId": "nia-02207aa13eb480c7a",
-            "NetworkInsightsAnalysisArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-analysis/nia-02207aa13eb480c7a",
+            "NetworkInsightsAnalysisArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-analysis/nia-02207aa13eb480c7a",
             "NetworkInsightsPathId": "nip-0b26f224f1d131fa8",
             "StartDate": "2021-01-20T22:58:37.495Z",
             "Status": "succeeded",
@@ -13225,21 +14935,21 @@ Output:
                     "ExplanationCode": "ENI_SG_RULES_MISMATCH",
                     "NetworkInterface": {
                         "Id": "eni-0a25edef15a6cc08c",
-                        "Arn": "arn:aws:ec2:us-east-1:123456789012:network-interface/eni-0a25edef15a6cc08c"
+                        "Arn": "arn:aws:ec2:us-west-2:123456789012:network-interface/eni-0a25edef15a6cc08c"
                     },
                     "SecurityGroups": [
                         {
                             "Id": "sg-02f0d35a850ba727f",
-                            "Arn": "arn:aws:ec2:us-east-1:123456789012:security-group/sg-02f0d35a850ba727f"
+                            "Arn": "arn:aws:ec2:us-west-2:123456789012:security-group/sg-02f0d35a850ba727f"
                         }
                     ],
                     "Subnet": {
                         "Id": "subnet-004ff41eccb4d1194",
-                        "Arn": "arn:aws:ec2:us-east-1:123456789012:subnet/subnet-004ff41eccb4d1194"
+                        "Arn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-004ff41eccb4d1194"
                     },
                     "Vpc": {
                         "Id": "vpc-f1663d98ad28331c7",
-                        "Arn": "arn:aws:ec2:us-east-1:123456789012:vpc/vpc-f1663d98ad28331c7"
+                        "Arn": "arn:aws:ec2:us-west-2:123456789012:vpc/vpc-f1663d98ad28331c7"
                     }
                 }
             ],
@@ -13271,7 +14981,7 @@ Output:
     "NetworkInsightsPaths": [
         {
             "NetworkInsightsPathId": "nip-0b26f224f1d131fa8",
-            "NetworkInsightsPathArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-path/nip-0b26f224f1d131fa8",
+            "NetworkInsightsPathArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-path/nip-0b26f224f1d131fa8",
             "CreatedDate": "2021-01-20T22:43:46.933Z",
             "Source": "igw-0797cccdc9d73b0e5",
             "Destination": "i-0495d385ad28331c7",
@@ -13289,83 +14999,91 @@ For more information, see [Getting started using the AWS CLI](https://docs.aws.a
 The following code example shows how to use `describe-network-interface-attribute`.
 
 **AWS CLI**
-**To describe the attachment attribute of a network interface**
-This example command describes the `attachment` attribute of the specified network interface.
-Command:
+**Example 1: To describe the attachment attribute of a network interface**
+The following `describe-network-interface-attribute` example describes the `attachment` attribute of the specified network interface.
 
 ```
-aws ec2 describe-network-interface-attribute --network-interface-id {{eni-686ea200}} --attribute {{attachment}}
+aws ec2 describe-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --attribute {{attachment}}
 ```
 Output:
 
 ```
 {
-  "NetworkInterfaceId": "eni-686ea200",
-  "Attachment": {
-      "Status": "attached",
-      "DeviceIndex": 0,
-      "AttachTime": "2015-05-21T20:02:20.000Z",
-      "InstanceId": "i-1234567890abcdef0",
-      "DeleteOnTermination": true,
-      "AttachmentId": "eni-attach-43348162",
-      "InstanceOwnerId": "123456789012"
-  }
+    "NetworkInterfaceId": "eni-686ea200",
+    "Attachment": {
+        "Status": "attached",
+        "DeviceIndex": 0,
+        "AttachTime": "2015-05-21T20:02:20.000Z",
+        "InstanceId": "i-1234567890abcdef0",
+        "DeleteOnTermination": true,
+        "AttachmentId": "eni-attach-43348162",
+        "InstanceOwnerId": "123456789012"
+    }
 }
 ```
-**To describe the description attribute of a network interface**
-This example command describes the `description` attribute of the specified network interface.
-Command:
+For more information, see [Modify network interface attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-interface-attributes.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe the description attribute of a network interface**
+The following `describe-network-interface-attribute` example describes the `description` attribute of the specified network interface.
 
 ```
-aws ec2 describe-network-interface-attribute --network-interface-id {{eni-686ea200}} --attribute {{description}}
+aws ec2 describe-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --attribute {{description}}
 ```
 Output:
 
 ```
 {
-  "NetworkInterfaceId": "eni-686ea200",
-  "Description": {
-      "Value": "My description"
-  }
+    "NetworkInterfaceId": "eni-686ea200",
+    "Description": {
+        "Value": "My description"
+    }
 }
 ```
-**To describe the groupSet attribute of a network interface**
-This example command describes the `groupSet` attribute of the specified network interface.
-Command:
+For more information, see [Modify network interface attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-interface-attributes.html) in the *Amazon EC2 User Guide*.
+**Example 3: To describe the groupSet attribute of a network interface**
+The following `describe-network-interface-attribute` example describes the `groupSet` attribute of the specified network interface.
 
 ```
-aws ec2 describe-network-interface-attribute --network-interface-id {{eni-686ea200}} --attribute {{groupSet}}
+aws ec2 describe-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --attribute {{groupSet}}
 ```
 Output:
 
 ```
 {
-  "NetworkInterfaceId": "eni-686ea200",
-  "Groups": [
-      {
-          "GroupName": "my-security-group",
-          "GroupId": "sg-903004f8"
-      }
-  ]
+    "NetworkInterfaceId": "eni-686ea200",
+    "Groups": [
+        {
+            "GroupName": "my-security-group",
+            "GroupId": "sg-903004f8"
+        }
+    ]
 }
 ```
-**To describe the sourceDestCheck attribute of a network interface**
-This example command describes the `sourceDestCheck` attribute of the specified network interface.
-Command:
+For more information, see [Modify network interface attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-interface-attributes.html) in the *Amazon EC2 User Guide*.
+**Example 4: To describe the sourceDestCheck attribute of a network interface**
+The following `describe-network-interface-attribute` example describes the `sourceDestCheck` attribute of the specified network interface.
 
 ```
-aws ec2 describe-network-interface-attribute --network-interface-id {{eni-686ea200}} --attribute {{sourceDestCheck}}
+aws ec2 describe-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --attribute {{sourceDestCheck}}
 ```
 Output:
 
 ```
 {
-  "NetworkInterfaceId": "eni-686ea200",
-  "SourceDestCheck": {
-      "Value": true
-  }
+    "NetworkInterfaceId": "eni-686ea200",
+    "SourceDestCheck": {
+        "Value": true
+    }
 }
 ```
+For more information, see [Modify network interface attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-interface-attributes.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeNetworkInterfaceAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-network-interface-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-network-interface-permissions`
@@ -13375,8 +15093,7 @@ The following code example shows how to use `describe-network-interface-permissi
 
 **AWS CLI**
 **To describe your network interface permissions**
-This example describes all of your network interface permissions.
-Command:
+The following `describe-network-interface-permissions` example describes all of your network interface permissions.
 
 ```
 aws ec2 describe-network-interface-permissions
@@ -13385,19 +15102,20 @@ Output:
 
 ```
 {
-  "NetworkInterfacePermissions": [
-      {
-          "PermissionState": {
-              "State": "GRANTED"
-          },
-          "NetworkInterfacePermissionId": "eni-perm-06fd19020ede149ea",
-          "NetworkInterfaceId": "eni-b909511a",
-          "Permission": "INSTANCE-ATTACH",
-          "AwsAccountId": "123456789012"
-      }
-  ]
+    "NetworkInterfacePermissions": [
+        {
+            "PermissionState": {
+                "State": "GRANTED"
+            },
+            "NetworkInterfacePermissionId": "eni-perm-06fd19020ede149ea",
+            "NetworkInterfaceId": "eni-b909511a",
+            "Permission": "INSTANCE-ATTACH",
+            "AwsAccountId": "123456789012"
+        }
+    ]
 }
 ```
+For more information, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeNetworkInterfacePermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-network-interface-permissions.html) in *AWS CLI Command Reference*.
 
 ### `describe-network-interfaces`
@@ -13407,8 +15125,7 @@ The following code example shows how to use `describe-network-interfaces`.
 
 **AWS CLI**
 **To describe your network interfaces**
-This example describes all your network interfaces.
-Command:
+The following `describe-network-interfaces` example describes all your network interfaces.
 
 ```
 aws ec2 describe-network-interfaces
@@ -13417,157 +15134,158 @@ Output:
 
 ```
 {
-  "NetworkInterfaces": [
-      {
-          "Status": "in-use",
-          "MacAddress": "02:2f:8f:b0:cf:75",
-          "SourceDestCheck": true,
-          "VpcId": "vpc-a01106c2",
-          "Description": "my network interface",
-          "Association": {
-              "PublicIp": "203.0.113.12",
-              "AssociationId": "eipassoc-0fbb766a",
-              "PublicDnsName": "ec2-203-0-113-12.compute-1.amazonaws.com",
-              "IpOwnerId": "123456789012"
-          },
-          "NetworkInterfaceId": "eni-e5aa89a3",
-          "PrivateIpAddresses": [
-              {
-                  "PrivateDnsName": "ip-10-0-1-17.ec2.internal",
-                  "Association": {
-                      "PublicIp": "203.0.113.12",
-                      "AssociationId": "eipassoc-0fbb766a",
-                      "PublicDnsName": "ec2-203-0-113-12.compute-1.amazonaws.com",
-                      "IpOwnerId": "123456789012"
-                  },
-                  "Primary": true,
-                  "PrivateIpAddress": "10.0.1.17"
-              }
-          ],
-          "RequesterManaged": false,
-          "Ipv6Addresses": [],
-          "PrivateDnsName": "ip-10-0-1-17.ec2.internal",
-          "AvailabilityZone": "us-east-1d",
-          "Attachment": {
-              "Status": "attached",
-              "DeviceIndex": 1,
-              "AttachTime": "2013-11-30T23:36:42.000Z",
-              "InstanceId": "i-1234567890abcdef0",
-              "DeleteOnTermination": false,
-              "AttachmentId": "eni-attach-66c4350a",
-              "InstanceOwnerId": "123456789012"
-          },
-          "Groups": [
-              {
-                  "GroupName": "default",
-                  "GroupId": "sg-8637d3e3"
-              }
-          ],
-          "SubnetId": "subnet-b61f49f0",
-          "OwnerId": "123456789012",
-          "TagSet": [],
-          "PrivateIpAddress": "10.0.1.17"
-      },
-      {
-          "Status": "in-use",
-          "MacAddress": "02:58:f5:ef:4b:06",
-          "SourceDestCheck": true,
-          "VpcId": "vpc-a01106c2",
-          "Description": "Primary network interface",
-          "Association": {
-              "PublicIp": "198.51.100.0",
-              "IpOwnerId": "amazon"
-          },
-          "NetworkInterfaceId": "eni-f9ba99bf",
-          "PrivateIpAddresses": [
-              {
-                  "Association": {
-                      "PublicIp": "198.51.100.0",
-                      "IpOwnerId": "amazon"
-                  },
-                  "Primary": true,
-                  "PrivateIpAddress": "10.0.1.149"
-              }
-          ],
-          "RequesterManaged": false,
-          "Ipv6Addresses": [],
-          "AvailabilityZone": "us-east-1d",
-          "Attachment": {
-              "Status": "attached",
-              "DeviceIndex": 0,
-              "AttachTime": "2013-11-30T23:35:33.000Z",
-              "InstanceId": "i-0598c7d356eba48d7",
-              "DeleteOnTermination": true,
-              "AttachmentId": "eni-attach-1b9db777",
-              "InstanceOwnerId": "123456789012"
-          },
-          "Groups": [
-              {
-                  "GroupName": "default",
-                  "GroupId": "sg-8637d3e3"
-              }
-          ],
-          "SubnetId": "subnet-b61f49f0",
-          "OwnerId": "123456789012",
-          "TagSet": [],
-          "PrivateIpAddress": "10.0.1.149"
-      }
-  ]
+    "NetworkInterfaces": [
+        {
+            "Status": "in-use",
+            "MacAddress": "02:2f:8f:b0:cf:75",
+            "SourceDestCheck": true,
+            "VpcId": "vpc-a01106c2",
+            "Description": "my network interface",
+            "Association": {
+                "PublicIp": "203.0.113.12",
+                "AssociationId": "eipassoc-0fbb766a",
+                "PublicDnsName": "ec2-203-0-113-12.compute-1.amazonaws.com",
+                "IpOwnerId": "123456789012"
+            },
+            "NetworkInterfaceId": "eni-e5aa89a3",
+            "PrivateIpAddresses": [
+                {
+                    "PrivateDnsName": "ip-10-0-1-17.ec2.internal",
+                    "Association": {
+                        "PublicIp": "203.0.113.12",
+                        "AssociationId": "eipassoc-0fbb766a",
+                        "PublicDnsName": "ec2-203-0-113-12.compute-1.amazonaws.com",
+                        "IpOwnerId": "123456789012"
+                    },
+                    "Primary": true,
+                    "PrivateIpAddress": "10.0.1.17"
+                }
+            ],
+            "RequesterManaged": false,
+            "Ipv6Addresses": [],
+            "PrivateDnsName": "ip-10-0-1-17.ec2.internal",
+            "AvailabilityZone": "us-west-2d",
+            "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 1,
+                "AttachTime": "2013-11-30T23:36:42.000Z",
+                "InstanceId": "i-1234567890abcdef0",
+                "DeleteOnTermination": false,
+                "AttachmentId": "eni-attach-66c4350a",
+                "InstanceOwnerId": "123456789012"
+            },
+            "Groups": [
+                {
+                    "GroupName": "default",
+                    "GroupId": "sg-8637d3e3"
+                }
+            ],
+            "SubnetId": "subnet-b61f49f0",
+            "OwnerId": "123456789012",
+            "TagSet": [],
+            "PrivateIpAddress": "10.0.1.17"
+        },
+        {
+            "Status": "in-use",
+            "MacAddress": "02:58:f5:ef:4b:06",
+            "SourceDestCheck": true,
+            "VpcId": "vpc-a01106c2",
+            "Description": "Primary network interface",
+            "Association": {
+                "PublicIp": "198.51.100.0",
+                "IpOwnerId": "amazon"
+            },
+            "NetworkInterfaceId": "eni-f9ba99bf",
+            "PrivateIpAddresses": [
+                {
+                    "Association": {
+                        "PublicIp": "198.51.100.0",
+                        "IpOwnerId": "amazon"
+                    },
+                    "Primary": true,
+                    "PrivateIpAddress": "10.0.1.149"
+                }
+            ],
+            "RequesterManaged": false,
+            "Ipv6Addresses": [],
+            "AvailabilityZone": "us-west-2d",
+            "Attachment": {
+                "Status": "attached",
+                "DeviceIndex": 0,
+                "AttachTime": "2013-11-30T23:35:33.000Z",
+                "InstanceId": "i-0598c7d356eba48d7",
+                "DeleteOnTermination": true,
+                "AttachmentId": "eni-attach-1b9db777",
+                "InstanceOwnerId": "123456789012"
+            },
+            "Groups": [
+                {
+                    "GroupName": "default",
+                    "GroupId": "sg-8637d3e3"
+                }
+            ],
+            "SubnetId": "subnet-b61f49f0",
+            "OwnerId": "123456789012",
+            "TagSet": [],
+            "PrivateIpAddress": "10.0.1.149"
+        }
+    ]
 }
 ```
-This example describes network interfaces that have a tag with the key `Purpose` and the value `Prod`.
-Command:
+The following `describe-network-interfaces` example describes network interfaces that have a tag with the key `Purpose` and the value `Prod`.
 
 ```
-aws ec2 describe-network-interfaces --filters {{Name=tag:Purpose,Values=Prod}}
+aws ec2 describe-network-interfaces \
+    --filters {{Name=tag:Purpose,Values=Prod}}
 ```
 Output:
 
 ```
 {
-  "NetworkInterfaces": [
-      {
-          "Status": "available",
-          "MacAddress": "12:2c:bd:f9:bf:17",
-          "SourceDestCheck": true,
-          "VpcId": "vpc-8941ebec",
-          "Description": "ProdENI",
-          "NetworkInterfaceId": "eni-b9a5ac93",
-          "PrivateIpAddresses": [
-              {
-                  "PrivateDnsName": "ip-10-0-1-55.ec2.internal",
-                  "Primary": true,
-                  "PrivateIpAddress": "10.0.1.55"
-              },
-              {
-                  "PrivateDnsName": "ip-10-0-1-117.ec2.internal",
-                  "Primary": false,
-                  "PrivateIpAddress": "10.0.1.117"
-              }
-          ],
-          "RequesterManaged": false,
-          "PrivateDnsName": "ip-10-0-1-55.ec2.internal",
-          "AvailabilityZone": "us-east-1d",
-          "Ipv6Addresses": [],
-          "Groups": [
-              {
-                  "GroupName": "MySG",
-                  "GroupId": "sg-905002f5"
-              }
-          ],
-          "SubnetId": "subnet-31d6c219",
-          "OwnerId": "123456789012",
-          "TagSet": [
-              {
-                  "Value": "Prod",
-                  "Key": "Purpose"
-              }
-          ],
-          "PrivateIpAddress": "10.0.1.55"
-      }
-  ]
+    "NetworkInterfaces": [
+        {
+            "Status": "available",
+            "MacAddress": "12:2c:bd:f9:bf:17",
+            "SourceDestCheck": true,
+            "VpcId": "vpc-8941ebec",
+            "Description": "ProdENI",
+            "NetworkInterfaceId": "eni-b9a5ac93",
+            "PrivateIpAddresses": [
+                {
+                    "PrivateDnsName": "ip-10-0-1-55.ec2.internal",
+                    "Primary": true,
+                    "PrivateIpAddress": "10.0.1.55"
+                },
+                {
+                    "PrivateDnsName": "ip-10-0-1-117.ec2.internal",
+                    "Primary": false,
+                    "PrivateIpAddress": "10.0.1.117"
+                }
+            ],
+            "RequesterManaged": false,
+            "PrivateDnsName": "ip-10-0-1-55.ec2.internal",
+            "AvailabilityZone": "us-west-2d",
+            "Ipv6Addresses": [],
+            "Groups": [
+                {
+                    "GroupName": "MySG",
+                    "GroupId": "sg-905002f5"
+                }
+            ],
+            "SubnetId": "subnet-31d6c219",
+            "OwnerId": "123456789012",
+            "TagSet": [
+                {
+                    "Value": "Prod",
+                    "Key": "Purpose"
+                }
+            ],
+            "PrivateIpAddress": "10.0.1.55"
+        }
+    ]
 }
 ```
+For more information, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeNetworkInterfaces](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-network-interfaces.html) in *AWS CLI Command Reference*.
 
 ### `describe-placement-groups`
@@ -13577,8 +15295,7 @@ The following code example shows how to use `describe-placement-groups`.
 
 **AWS CLI**
 **To describe your placement groups**
-This example command describes all of your placement groups.
-Command:
+The following `describe-placement-groups` example describes all of your placement groups.
 
 ```
 aws ec2 describe-placement-groups
@@ -13592,11 +15309,11 @@ Output:
             "GroupName": "my-cluster",
             "State": "available",
             "Strategy": "cluster"
-        },
-        ...
+        }
     ]
 }
 ```
+For more information, see [Placement groups for your Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribePlacementGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-placement-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-prefix-lists`
@@ -13606,8 +15323,7 @@ The following code example shows how to use `describe-prefix-lists`.
 
 **AWS CLI**
 **To describe prefix lists**
-This example lists all available prefix lists for the region.
-Command:
+The following `describe-prefix-lists` example lists all available prefix lists for the region.
 
 ```
 aws ec2 describe-prefix-lists
@@ -13616,17 +15332,18 @@ Output:
 
 ```
 {
-  "PrefixLists": [
-    {
-      "PrefixListName": "com.amazonaws.us-east-1.s3",
-      "Cidrs": [
-        "54.231.0.0/17"
-      ],
-      "PrefixListId": "pl-63a5400a"
-    }
-  ]
+    "PrefixLists": [
+        {
+            "PrefixListName": "com.amazonaws.us-west-2.s3",
+            "Cidrs": [
+                "54.231.0.0/17"
+            ],
+            "PrefixListId": "pl-63a5400a"
+        }
+    ]
 }
 ```
+For more information, see [AWS-managed prefix lists](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-aws-managed-prefix-lists.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribePrefixLists](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-prefix-lists.html) in *AWS CLI Command Reference*.
 
 ### `describe-principal-id-format`
@@ -13664,13 +15381,13 @@ Output:
                     "Deadline": "2016-12-15T00:00:00.000Z",
                     "Resource": "volume",
                     "UseLongIds": true
-                },
+                }
             ]
-        },
-        ...
+        }
     ]
 }
 ```
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribePrincipalIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-principal-id-format.html) in *AWS CLI Command Reference*.
 
 ### `describe-public-ipv4-pools`
@@ -13706,6 +15423,7 @@ Output:
     ]
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribePublicIpv4Pools](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-public-ipv4-pools.html) in *AWS CLI Command Reference*.
 
 ### `describe-regions`
@@ -14021,7 +15739,7 @@ Output:
     ]
 }
 ```
-For more information, see [Replace a root volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-restoring-volume.html#replace-root) in the *Amazon Elastic Compute Cloud User Guide*.
+For more information, see [Replace a root volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.html) in the *Amazon Elastic Compute Cloud User Guide*.
 **Example 2: To view information about all root volume replacement tasks for a specific instance**
 The following `describe-replace-root-volume-tasks` example describes all of the root volume replacement tasks for instance i-0123456789abcdefa.
 
@@ -14053,7 +15771,7 @@ Output:
     ]
 }
 ```
-For more information, see [Replace a root volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-restoring-volume.html#replace-root) in the *Amazon Elastic Compute Cloud User Guide*.
+For more information, see [Replace a root volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/replace-root.html) in the *Amazon Elastic Compute Cloud User Guide*.
 +  For API details, see [DescribeReplaceRootVolumeTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-replace-root-volume-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-instances-listings`
@@ -14067,9 +15785,10 @@ The following `describe-reserved-instances-listings` example retrieves informati
 
 ```
 aws ec2 describe-reserved-instances-listings \
-    --reserved-instances-listing-id {{5ec28771-05ff-4b9b-aa31-9e57dexample}}
+    --reserved-instances-listing-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
+For more information, see [Sell Reserved Instances for Amazon EC2 in the Reserved Instance Marketplace](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-general.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeReservedInstancesListings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-reserved-instances-listings.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-instances-modifications`
@@ -14079,8 +15798,7 @@ The following code example shows how to use `describe-reserved-instances-modific
 
 **AWS CLI**
 **To describe Reserved Instances modifications**
-This example command describes all the Reserved Instances modification requests that have been submitted for your account.
-Command:
+The following `describe-reserved-instances-modifications` example describes all the Reserved Instances modification requests that have been submitted for your account.
 
 ```
 aws ec2 describe-reserved-instances-modifications
@@ -14094,36 +15812,37 @@ Output:
             "Status": "fulfilled",
             "ModificationResults": [
                 {
-                    "ReservedInstancesId": "93bbbca2-62f1-4d9d-b225-16bada29e6c7",
+                    "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                     "TargetConfiguration": {
-                        "AvailabilityZone": "us-east-1b",
+                        "AvailabilityZone": "us-west-2b",
                         "InstanceType": "m1.large",
                         "InstanceCount": 3
                     }
                 },
                 {
-                     "ReservedInstancesId": "1ba8e2e3-aabb-46c3-bcf5-3fe2fda922e6",
-                     "TargetConfiguration": {
-                         "AvailabilityZone": "us-east-1d",
-                         "InstanceType": "m1.xlarge",
-                         "InstanceCount": 1
-                     }
-                 }
+                    "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                    "TargetConfiguration": {
+                        "AvailabilityZone": "us-west-2d",
+                        "InstanceType": "m1.xlarge",
+                        "InstanceCount": 1
+                    }
+                }
             ],
             "EffectiveDate": "2015-08-12T17:00:00.000Z",
             "CreateDate": "2015-08-12T17:52:52.630Z",
             "UpdateDate": "2015-08-12T18:08:06.698Z",
-            "ClientToken": "c9adb218-3222-4889-8216-0cf0e52dc37e:
+            "ClientToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "ReservedInstancesModificationId": "rimod-d3ed4335-b1d3-4de6-ab31-0f13aaf46687",
             "ReservedInstancesIds": [
                 {
-                    "ReservedInstancesId": "b847fa93-e282-4f55-b59a-1342f5bd7c02"
+                    "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
                 }
             ]
         }
     ]
 }
 ```
+For more information, see [Modify Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeReservedInstancesModifications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-reserved-instances-modifications.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-instances-offerings`
@@ -14132,9 +15851,8 @@ Output:
 The following code example shows how to use `describe-reserved-instances-offerings`.
 
 **AWS CLI**
-**To describe Reserved Instances offerings**
-This example command describes all Reserved Instances available for purchase in the region.
-Command:
+**Example 1: To describe Reserved Instances offerings**
+The following `describe-reserved-instances-offerings` example describes all Reserved Instances available for purchase in the region.
 
 ```
 aws ec2 describe-reserved-instances-offerings
@@ -14143,107 +15861,110 @@ Output:
 
 ```
 {
-  "ReservedInstancesOfferings": [
-      {
-          "OfferingType": "Partial Upfront",
-          "AvailabilityZone": "us-east-1b",
-          "InstanceTenancy": "default",
-          "PricingDetails": [],
-          "ProductDescription": "Red Hat Enterprise Linux",
-          "UsagePrice": 0.0,
-          "RecurringCharges": [
-              {
-                  "Amount": 0.088,
-                  "Frequency": "Hourly"
-              }
-          ],
-          "Marketplace": false,
-          "CurrencyCode": "USD",
-          "FixedPrice": 631.0,
-          "Duration": 94608000,
-          "ReservedInstancesOfferingId": "9a06095a-bdc6-47fe-a94a-2a382f016040",
-          "InstanceType": "c1.medium"
-      },
-      {
-          "OfferingType": "PartialUpfront",
-          "AvailabilityZone": "us-east-1b",
-          "InstanceTenancy": "default",
-          "PricingDetails": [],
-          "ProductDescription": "Linux/UNIX",
-          "UsagePrice": 0.0,
-          "RecurringCharges": [
-              {
-                  "Amount": 0.028,
-                  "Frequency": "Hourly"
-              }
-          ],
-          "Marketplace": false,
-          "CurrencyCode": "USD",
-          "FixedPrice": 631.0,
-          "Duration": 94608000,
-          "ReservedInstancesOfferingId": "bfbefc6c-0d10-418d-b144-7258578d329d",
-          "InstanceType": "c1.medium"
-      },
-  ...
+    "ReservedInstancesOfferings": [
+        {
+            "OfferingType": "Partial Upfront",
+            "AvailabilityZone": "us-west-2b",
+            "InstanceTenancy": "default",
+            "PricingDetails": [],
+            "ProductDescription": "Red Hat Enterprise Linux",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "Amount": 0.088,
+                    "Frequency": "Hourly"
+                }
+            ],
+            "Marketplace": false,
+            "CurrencyCode": "USD",
+            "FixedPrice": 631.0,
+            "Duration": 94608000,
+            "ReservedInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "InstanceType": "c1.medium"
+        },
+        {
+            "OfferingType": "PartialUpfront",
+            "AvailabilityZone": "us-west-2b",
+            "InstanceTenancy": "default",
+            "PricingDetails": [],
+            "ProductDescription": "Linux/UNIX",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "Amount": 0.028,
+                    "Frequency": "Hourly"
+                }
+            ],
+            "Marketplace": false,
+            "CurrencyCode": "USD",
+            "FixedPrice": 631.0,
+            "Duration": 94608000,
+            "ReservedInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "InstanceType": "c1.medium"
+        }
+    ]
 }
 ```
-**To describe your Reserved Instances offerings using options**
-This example lists Reserved Instances offered by AWS with the following specifications: t1.micro instance types, Windows (Amazon VPC) product, and Heavy Utilization offerings.
-Command:
+For more information, see [Buy Reserved Instances for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe your Reserved Instances offerings using options**
+The following `describe-reserved-instances-offerings` example lists Reserved Instances offered by AWS with the following specifications: t1.micro instance types, Windows (Amazon VPC) product, and No Upfront offerings.
 
 ```
-aws ec2 describe-reserved-instances-offerings --no-include-marketplace --instance-type {{"t1.micro"}} --product-description {{"Windows (Amazon VPC)"}} --offering-type {{"no upfront"}}
+aws ec2 describe-reserved-instances-offerings \
+    --no-include-marketplace \
+    --instance-type {{"t1.micro"}} \
+    --product-description {{"Windows (Amazon VPC)"}} \
+    --offering-type {{"no upfront"}}
 ```
 Output:
 
 ```
 {
     "ReservedInstancesOfferings": [
-      {
-          "OfferingType": "No Upfront",
-          "AvailabilityZone": "us-east-1b",
-          "InstanceTenancy": "default",
-          "PricingDetails": [],
-          "ProductDescription": "Windows",
-          "UsagePrice": 0.0,
-          "RecurringCharges": [
-              {
-                  "Amount": 0.015,
-                  "Frequency": "Hourly"
-              }
-          ],
-          "Marketplace": false,
-          "CurrencyCode": "USD",
-          "FixedPrice": 0.0,
-          "Duration": 31536000,
-          "ReservedInstancesOfferingId": "c48ab04c-fe69-4f94-8e39-a23842292823",
-          "InstanceType": "t1.micro"
-      },
-
-              ...
-      {
-          "OfferingType": "No Upfront",
-          "AvailabilityZone": "us-east-1d",
-          "InstanceTenancy": "default",
-          "PricingDetails": [],
-          "ProductDescription": "Windows (Amazon VPC)",
-          "UsagePrice": 0.0,
-          "RecurringCharges": [
-              {
-                  "Amount": 0.015,
-                  "Frequency": "Hourly"
-              }
-          ],
-          "Marketplace": false,
-          "CurrencyCode": "USD",
-          "FixedPrice": 0.0,
-          "Duration": 31536000,
-          "ReservedInstancesOfferingId": "3a98bf7d-2123-42d4-b4f5-8dbec4b06dc6",
-          "InstanceType": "t1.micro"
-      }
+        {
+            "OfferingType": "No Upfront",
+            "AvailabilityZone": "us-west-2b",
+            "InstanceTenancy": "default",
+            "PricingDetails": [],
+            "ProductDescription": "Windows",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "Amount": 0.015,
+                    "Frequency": "Hourly"
+                }
+            ],
+            "Marketplace": false,
+            "CurrencyCode": "USD",
+            "FixedPrice": 0.0,
+            "Duration": 31536000,
+            "ReservedInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "InstanceType": "t1.micro"
+        },
+        {
+            "OfferingType": "No Upfront",
+            "AvailabilityZone": "us-west-2d",
+            "InstanceTenancy": "default",
+            "PricingDetails": [],
+            "ProductDescription": "Windows (Amazon VPC)",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "Amount": 0.015,
+                    "Frequency": "Hourly"
+                }
+            ],
+            "Marketplace": false,
+            "CurrencyCode": "USD",
+            "FixedPrice": 0.0,
+            "Duration": 31536000,
+            "ReservedInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "InstanceType": "t1.micro"
+        }
     ]
 }
 ```
+For more information, see [Buy Reserved Instances for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeReservedInstancesOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-reserved-instances-offerings.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-instances`
@@ -14252,9 +15973,8 @@ Output:
 The following code example shows how to use `describe-reserved-instances`.
 
 **AWS CLI**
-**To describe your Reserved Instances**
-This example command describes the Reserved Instances that you own.
-Command:
+**Example 1: To describe your Reserved Instances**
+The following `describe-reserved-instances` example describes the Reserved Instances that you own.
 
 ```
 aws ec2 describe-reserved-instances
@@ -14263,39 +15983,39 @@ Output:
 
 ```
 {
-  "ReservedInstances": [
-      {
-          "ReservedInstancesId": "b847fa93-e282-4f55-b59a-1342fexample",
-          "OfferingType": "No Upfront",
-          "AvailabilityZone": "us-west-1c",
-          "End": "2016-08-14T21:34:34.000Z",
-          "ProductDescription": "Linux/UNIX",
-          "UsagePrice": 0.00,
-          "RecurringCharges": [
-              {
-                  "Amount": 0.104,
-                  "Frequency": "Hourly"
-              }
-          ],
-          "Start": "2015-08-15T21:34:35.086Z",
-          "State": "active",
-          "FixedPrice": 0.0,
-          "CurrencyCode": "USD",
-          "Duration": 31536000,
-          "InstanceTenancy": "default",
-          "InstanceType": "m3.medium",
-          "InstanceCount": 2
-      },
-      ...
-  ]
+    "ReservedInstances": [
+        {
+            "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "OfferingType": "No Upfront",
+            "AvailabilityZone": "us-west-2c",
+            "End": "2016-08-14T21:34:34.000Z",
+            "ProductDescription": "Linux/UNIX",
+            "UsagePrice": 0.00,
+            "RecurringCharges": [
+                {
+                    "Amount": 0.104,
+                    "Frequency": "Hourly"
+                }
+            ],
+            "Start": "2015-08-15T21:34:35.086Z",
+            "State": "active",
+            "FixedPrice": 0.0,
+            "CurrencyCode": "USD",
+            "Duration": 31536000,
+            "InstanceTenancy": "default",
+            "InstanceType": "m3.medium",
+            "InstanceCount": 2
+        }
+    ]
 }
 ```
-**To describe your Reserved Instances using filters**
-This example filters the response to include only three-year, t2.micro Linux/UNIX Reserved Instances in us-west-1c.
-Command:
+For more information, see [Reserved Instances for Amazon EC2 overview](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe your Reserved Instances using filters**
+The following `describe-reserved-instances` example filters the response to include only three-year, t2.micro Linux/UNIX Reserved Instances in us-west-2c.
 
 ```
-aws ec2 describe-reserved-instances --filters {{Name=duration,Values=94608000}} {{Name=instance-type,Values=t2.micro}} {{Name=product-description,Values=Linux/UNIX}} {{Name=availability-zone,Values=us-east-1e}}
+aws ec2 describe-reserved-instances \
+    --filters {{Name=duration,Values=94608000}} {{Name=instance-type,Values=t2.micro}} {{Name=product-description,Values=Linux/UNIX}} {{Name=availability-zone,Values=us-west-2c}}
 ```
 Output:
 
@@ -14303,9 +16023,9 @@ Output:
 {
     "ReservedInstances": [
         {
-            "ReservedInstancesId": "f127bd27-edb7-44c9-a0eb-0d7e09259af0",
+            "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "OfferingType": "All Upfront",
-            "AvailabilityZone": "us-east-1e",
+            "AvailabilityZone": "us-west-2c",
             "End": "2018-03-26T21:34:34.000Z",
             "ProductDescription": "Linux/UNIX",
             "UsagePrice": 0.00,
@@ -14322,7 +16042,7 @@ Output:
     ]
 }
 ```
-For more information, see Using Amazon EC2 Instances in the *AWS Command Line Interface User Guide*.
+For more information, see [Reserved Instances for Amazon EC2 overview](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeReservedInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-reserved-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-route-tables`
@@ -14332,7 +16052,7 @@ The following code example shows how to use `describe-route-tables`.
 
 **AWS CLI**
 **To describe your route tables**
-The following `describe-route-tables` example retrieves the details about your route tables
+The following `describe-route-tables` example retrieves the details about your route tables.
 
 ```
 aws ec2 describe-route-tables
@@ -14368,7 +16088,7 @@ Output:
             ],
             "Tags": [],
             "VpcId": "vpc-0065acced4EXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         },
         {
             "Associations": [
@@ -14396,7 +16116,7 @@ Output:
             ],
             "Tags": [],
             "VpcId": "vpc-3EXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         },
         {
             "Associations": [
@@ -14425,12 +16145,12 @@ Output:
             ],
             "Tags": [],
             "VpcId": "vpc-0065acced4EXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         }
     ]
 }
 ```
-For more information, see [Working with Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html#WorkWithRouteTables) in the *AWS VPC User Guide*.
+For more information, see [Working with Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html) in the *AWS VPC User Guide*.
 +  For API details, see [DescribeRouteTables](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-route-tables.html) in *AWS CLI Command Reference*.
 
 ### `describe-scheduled-instance-availability`
@@ -14440,46 +16160,47 @@ The following code example shows how to use `describe-scheduled-instance-availab
 
 **AWS CLI**
 **To describe an available schedule**
-This example describes a schedule that occurs every week on Sunday, starting on the specified date.
-Command:
+The following `describe-scheduled-instance-availability` example describes a schedule that occurs every week on Sunday, starting on the specified date.
 
 ```
-aws ec2 describe-scheduled-instance-availability --recurrence {{Frequency=Weekly,Interval=1,OccurrenceDays=[1]}} --first-slot-start-time-range {{EarliestTime=2016-01-31T00:00:00Z,LatestTime=2016-01-31T04:00:00Z}}
+aws ec2 describe-scheduled-instance-availability \
+    --recurrence {{Frequency=Weekly,Interval=1,OccurrenceDays=[1]}} \
+    --first-slot-start-time-range {{EarliestTime=2016-01-31T00:00:00Z,LatestTime=2016-01-31T04:00:00Z}}
 ```
 Output:
 
 ```
 {
-  "ScheduledInstanceAvailabilitySet": [
-    {
-        "AvailabilityZone": "us-west-2b",
-        "TotalScheduledInstanceHours": 1219,
-        "PurchaseToken": "eyJ2IjoiMSIsInMiOjEsImMiOi...",
-        "MinTermDurationInDays": 366,
-        "AvailableInstanceCount": 20,
-        "Recurrence": {
-            "OccurrenceDaySet": [
-                1
-            ],
-            "Interval": 1,
-            "Frequency": "Weekly",
-            "OccurrenceRelativeToEnd": false
-        },
-        "Platform": "Linux/UNIX",
-        "FirstSlotStartTime": "2016-01-31T00:00:00Z",
-        "MaxTermDurationInDays": 366,
-        "SlotDurationInHours": 23,
-        "NetworkPlatform": "EC2-VPC",
-        "InstanceType": "c4.large",
-        "HourlyPrice": "0.095"
-    },
-    ...
-  ]
+    "ScheduledInstanceAvailabilitySet": [
+        {
+            "AvailabilityZone": "us-west-2b",
+            "TotalScheduledInstanceHours": 1219,
+            "PurchaseToken": "eyJ2IjoiMSIsInMiOjEsImMiOi...",
+            "MinTermDurationInDays": 366,
+            "AvailableInstanceCount": 20,
+            "Recurrence": {
+                "OccurrenceDaySet": [
+                    1
+                ],
+                "Interval": 1,
+                "Frequency": "Weekly",
+                "OccurrenceRelativeToEnd": false
+            },
+            "Platform": "Linux/UNIX",
+            "FirstSlotStartTime": "2016-01-31T00:00:00Z",
+            "MaxTermDurationInDays": 366,
+            "SlotDurationInHours": 23,
+            "NetworkPlatform": "EC2-VPC",
+            "InstanceType": "c4.large",
+            "HourlyPrice": "0.095"
+        }
+    ]
 }
 ```
 To narrow the results, you can add filters that specify the operating system, network, and instance type.
 Command:
 --filters Name=platform,Values=Linux/UNIX Name=network-platform,Values=EC2-VPC Name=instance-type,Values=c4.large
+For more information, see [Amazon EC2 billing and purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeScheduledInstanceAvailability](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-scheduled-instance-availability.html) in *AWS CLI Command Reference*.
 
 ### `describe-scheduled-instances`
@@ -14489,50 +16210,50 @@ The following code example shows how to use `describe-scheduled-instances`.
 
 **AWS CLI**
 **To describe your Scheduled Instances**
-This example describes the specified Scheduled Instance.
-Command:
+The following `describe-scheduled-instances` example describes the specified Scheduled Instance.
 
 ```
-aws ec2 describe-scheduled-instances --scheduled-instance-ids {{sci-1234-1234-1234-1234-123456789012}}
+aws ec2 describe-scheduled-instances \
+    --scheduled-instance-ids {{sci-1234-1234-1234-1234-123456789012}}
 ```
 Output:
 
 ```
 {
-  "ScheduledInstanceSet": [
-      {
-          "AvailabilityZone": "us-west-2b",
-          "ScheduledInstanceId": "sci-1234-1234-1234-1234-123456789012",
-          "HourlyPrice": "0.095",
-          "CreateDate": "2016-01-25T21:43:38.612Z",
-          "Recurrence": {
-              "OccurrenceDaySet": [
-                  1
-              ],
-              "Interval": 1,
-              "Frequency": "Weekly",
-              "OccurrenceRelativeToEnd": false,
-              "OccurrenceUnit": ""
-          },
-          "Platform": "Linux/UNIX",
-          "TermEndDate": "2017-01-31T09:00:00Z",
-          "InstanceCount": 1,
-          "SlotDurationInHours": 32,
-          "TermStartDate": "2016-01-31T09:00:00Z",
-          "NetworkPlatform": "EC2-VPC",
-          "TotalScheduledInstanceHours": 1696,
-          "NextSlotStartTime": "2016-01-31T09:00:00Z",
-          "InstanceType": "c4.large"
-      }
-  ]
+    "ScheduledInstanceSet": [
+        {
+            "AvailabilityZone": "us-west-2b",
+            "ScheduledInstanceId": "sci-1234-1234-1234-1234-123456789012",
+            "HourlyPrice": "0.095",
+            "CreateDate": "2016-01-25T21:43:38.612Z",
+            "Recurrence": {
+                "OccurrenceDaySet": [
+                    1
+                ],
+                "Interval": 1,
+                "Frequency": "Weekly",
+                "OccurrenceRelativeToEnd": false,
+                "OccurrenceUnit": ""
+            },
+            "Platform": "Linux/UNIX",
+            "TermEndDate": "2017-01-31T09:00:00Z",
+            "InstanceCount": 1,
+            "SlotDurationInHours": 32,
+            "TermStartDate": "2016-01-31T09:00:00Z",
+            "NetworkPlatform": "EC2-VPC",
+            "TotalScheduledInstanceHours": 1696,
+            "NextSlotStartTime": "2016-01-31T09:00:00Z",
+            "InstanceType": "c4.large"
+        }
+    ]
 }
 ```
-This example describes all your Scheduled Instances.
-Command:
+The following `describe-scheduled-instances` example describes all your Scheduled Instances.
 
 ```
 aws ec2 describe-scheduled-instances
 ```
+For more information, see [Amazon EC2 billing and purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeScheduledInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-scheduled-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-security-group-references`
@@ -14542,25 +16263,26 @@ The following code example shows how to use `describe-security-group-references`
 
 **AWS CLI**
 **To describe security group references**
-This example describes the security group references for `sg-bbbb2222`. The response indicates that security group `sg-bbbb2222` is being referenced by a security group in VPC `vpc-aaaaaaaa`.
-Command:
+The following `describe-security-group-references` example describes the security group references for `sg-bbbbb22222`. The response indicates that security group `sg-bbbbb22222` is being referenced by a security group in VPC `vpc-aaaaaaaa`.
 
 ```
-aws ec2 describe-security-group-references --group-id {{sg-bbbbb22222}}
+aws ec2 describe-security-group-references \
+    --group-id {{sg-bbbbb22222}}
 ```
 Output:
 
 ```
 {
-  "SecurityGroupsReferenceSet": [
-    {
-      "ReferencingVpcId": "vpc-aaaaaaaa ",
-      "GroupId": "sg-bbbbb22222",
-      "VpcPeeringConnectionId": "pcx-b04deed9"
-    }
-  ]
+    "SecurityGroupReferenceSet": [
+        {
+            "ReferencingVpcId": "vpc-aaaaaaaa ",
+            "GroupId": "sg-bbbbb22222",
+            "VpcPeeringConnectionId": "pcx-b04deed9"
+        }
+    ]
 }
 ```
+For more information, see [Identify your referenced security groups](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html#vpc-peering-referenced-groups) in the *Amazon VPC Peering Guide*.
 +  For API details, see [DescribeSecurityGroupReferences](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-security-group-references.html) in *AWS CLI Command Reference*.
 
 ### `describe-security-group-rules`
@@ -14584,21 +16306,21 @@ Output:
         {
             "SecurityGroupRuleId": "sgr-abcdef01234567890",
             "GroupId": "sg-1234567890abcdef0",
-            "GroupOwnerId": "111122223333",
+            "GroupOwnerId": "123456789012",
             "IsEgress": false,
             "IpProtocol": "-1",
             "FromPort": -1,
             "ToPort": -1,
             "ReferencedGroupInfo": {
                 "GroupId": "sg-1234567890abcdef0",
-                "UserId": "111122223333"
+                "UserId": "123456789012"
             },
             "Tags": []
         },
         {
             "SecurityGroupRuleId": "sgr-bcdef01234567890a",
             "GroupId": "sg-1234567890abcdef0",
-            "GroupOwnerId": "111122223333",
+            "GroupOwnerId": "123456789012",
             "IsEgress": true,
             "IpProtocol": "-1",
             "FromPort": -1,
@@ -14609,7 +16331,7 @@ Output:
         {
             "SecurityGroupRuleId": "sgr-cdef01234567890ab",
             "GroupId": "sg-1234567890abcdef0",
-            "GroupOwnerId": "111122223333",
+            "GroupOwnerId": "123456789012",
             "IsEgress": true,
             "IpProtocol": "-1",
             "FromPort": -1,
@@ -14635,7 +16357,7 @@ Output:
         {
             "SecurityGroupRuleId": "sgr-cdef01234567890ab",
             "GroupId": "sg-1234567890abcdef0",
-            "GroupOwnerId": "111122223333",
+            "GroupOwnerId": "123456789012",
             "IsEgress": true,
             "IpProtocol": "-1",
             "FromPort": -1,
@@ -14741,12 +16463,12 @@ Output:
                     "ToPort": 22,
                     "IpProtocol": "tcp",
                     "UserIdGroupPairs": []
-                    }
+                }
             ],
             "GroupName": "MySecurityGroup",
             "VpcId": "vpc-1a2b3c4d",
             "OwnerId": "123456789012",
-            "GroupId": "sg-903004f8",
+            "GroupId": "sg-903004f8"
         }
     ]
 }
@@ -14757,16 +16479,25 @@ The following `describe-security-groups` example uses filters to scope the resul
 ```
 aws ec2 describe-security-groups \
     --filters {{Name=ip-permission.from-port,Values=22}} {{Name=ip-permission.to-port,Values=22}} Name=ip-permission.cidr,Values='0.0.0.0/0' \
-    --query {{"SecurityGroups[*].[GroupName]"}} \
-    --output {{text}}
+    --query {{"SecurityGroups[*].[GroupName]"}}
 ```
 Output:
 
 ```
-default
-my-security-group
-web-servers
-launch-wizard-1
+[
+    [
+        "default"
+    ],
+    [
+        "my-security-group"
+    ],
+    [
+        "web-servers"
+    ],
+    [
+        "launch-wizard-1"
+    ]
+]
 ```
 **Example 3: To describe security groups based on tags**
 The following `describe-security-groups` example uses filters to scope the results to security groups that include `test` in the security group name, and that have the tag `Test=To-delete`. The example uses the `--query` parameter to display only the names and IDs of the security groups.
@@ -14790,7 +16521,7 @@ Output:
     }
 ]
 ```
-For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI) in the *Amazon EC2 User Guide*.
+For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSecurityGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-security-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-snapshot-attribute`
@@ -14846,7 +16577,7 @@ Output:
             "LastTieringProgress": 100,
             "Tags": [],
             "VolumeId": "vol-01234567890abcedf",
-            "LastTieringOperationState": "archival-completed",
+            "LastTieringOperationStatus": "archival-completed",
             "StorageTier": "archive",
             "OwnerId": "123456789012",
             "SnapshotId": "snap-01234567890abcedf",
@@ -14855,7 +16586,7 @@ Output:
     ]
 }
 ```
-For more information, see [View archived snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-snapshot-archiving.html#view-archived-snapshot) in the *Amazon Elastic Compute Cloud User Guide*.
+For more information, see [View archived Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/view-archived-snapshot.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DescribeSnapshotTierStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-snapshot-tier-status.html) in *AWS CLI Command Reference*.
 
 ### `describe-snapshots`
@@ -14884,7 +16615,7 @@ Output:
             "VolumeSize": 8,
             "StartTime": "2019-02-28T21:28:32.000Z",
             "Progress": "100%",
-            "OwnerId": "012345678910",
+            "OwnerId": "123456789012",
             "SnapshotId": "snap-01234567890abcdef",
             "Tags": [
                 {
@@ -14915,10 +16646,9 @@ Output:
         "Time": "2019-08-04T12:48:18.000Z"
     },
     {
-        "ID": "snap-066877671789bd71b",
-        "Time": "2019-08-04T02:45:16.000Z
-    },
-    ...
+        "ID": "snap-0a1b2c3d4e5f6a7b8",
+        "Time": "2019-08-04T02:45:16.000Z"
+    }
 ]
 ```
 The following `describe-snapshots` example uses filters to scope the results to snapshots created from the specified volume. The example uses the `--query` parameter to display only the snapshot IDs.
@@ -14932,9 +16662,15 @@ aws ec2 describe-snapshots \
 Output:
 
 ```
-snap-1234567890abcdef0
-snap-08637175a712c3fb9
-...
+[
+    [
+        "snap-1234567890abcdef0"
+    ],
+    [
+        "snap-08637175a712c3fb9"
+    ],
+    ...
+]
 ```
 For additional examples using filters, see [Listing and filtering your resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#Filtering_Resources_CLI) in the *Amazon EC2 User Guide*.
 **Example 3: To describe snapshots based on tags**
@@ -14944,15 +16680,51 @@ The following `describe-snapshots` example uses tag filters to scope the results
 aws ec2 describe-snapshots \
     --filters {{Name=tag:Stack,Values=prod}}
 ```
-For an example of the output for `describe-snapshots`, see Example 1.
-For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI) in the *Amazon EC2 User Guide*.
+Output:
+
+```
+{
+    "Snapshots": [
+        {
+            "Description": "This is my prod snapshot",
+            "Encrypted": false,
+            "VolumeId": "vol-049df61146c4d7901",
+            "State": "completed",
+            "VolumeSize": 8,
+            "StartTime": "2019-02-28T21:28:32.000Z",
+            "Progress": "100%",
+            "OwnerId": "123456789012",
+            "SnapshotId": "snap-0abcdef1234567890",
+            "Tags": [
+                {
+                    "Key": "Stack",
+                    "Value": "prod"
+                }
+            ]
+        }
+    ]
+}
+```
+For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 **Example 4: To describe snapshots based on age**
 The following `describe-snapshots` example uses JMESPath expressions to describe all snapshots created by your AWS account before the specified date. It displays only the snapshot IDs.
 
 ```
 aws ec2 describe-snapshots \
-    --owner-ids {{012345678910}} \
+    --owner-ids {{123456789012}} \
     --query {{"Snapshots[?(StartTime<='2020-03-31')].[SnapshotId]"}}
+```
+Output:
+
+```
+[
+    [
+        "snap-1234567890abcdef0"
+    ],
+    [
+        "snap-08637175a712c3fb9"
+    ]
+]
 ```
 For additional examples using filters, see [Listing and filtering your resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#Filtering_Resources_CLI) in the *Amazon EC2 User Guide*.
 **Example 5: To view only archived snapshots**
@@ -14979,11 +16751,11 @@ Output:
             "SnapshotId": "snap-01234567890aaaaaa",
             "StorageTier": "archive",
             "Tags": []
-        },
+        }
     ]
 }
 ```
-For more information, see [View archived snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-snapshot-archiving.html#view-archived-snapshot) in the *Amazon Elastic Compute Cloud User Guide*.
+For more information, see [View archived Amazon EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/view-archived-snapshot.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DescribeSnapshots](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-snapshots.html) in *AWS CLI Command Reference*.
 
 ### `describe-spot-datafeed-subscription`
@@ -14993,8 +16765,7 @@ The following code example shows how to use `describe-spot-datafeed-subscription
 
 **AWS CLI**
 **To describe Spot Instance datafeed subscription for an account**
-This example command describes the data feed for the account.
-Command:
+The following `describe-spot-datafeed-subscription` example describes the data feed for the account.
 
 ```
 aws ec2 describe-spot-datafeed-subscription
@@ -15011,6 +16782,7 @@ Output:
     }
 }
 ```
+For more information, see [Track your Spot Instance costs using the Spot Instance data feed](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-data-feeds.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSpotDatafeedSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-spot-datafeed-subscription.html) in *AWS CLI Command Reference*.
 
 ### `describe-spot-fleet-instances`
@@ -15020,27 +16792,27 @@ The following code example shows how to use `describe-spot-fleet-instances`.
 
 **AWS CLI**
 **To describe the Spot Instances associated with a Spot fleet**
-This example command lists the Spot instances associated with the specified Spot fleet.
-Command:
+The following `describe-spot-fleet-instances` example lists the Spot instances associated with the specified Spot fleet.
 
 ```
-aws ec2 describe-spot-fleet-instances --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
+aws ec2 describe-spot-fleet-instances \
+    --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 Output:
 
 ```
 {
-  "ActiveInstances": [
-      {
-          "InstanceId": "i-1234567890abcdef0",
-          "InstanceType": "m3.medium",
-          "SpotInstanceRequestId": "sir-08b93456"
-      },
-      ...
-  ],
-  "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE"
+    "ActiveInstances": [
+        {
+            "InstanceId": "i-1234567890abcdef0",
+            "InstanceType": "m3.medium",
+            "SpotInstanceRequestId": "sir-08b93456"
+        }
+    ],
+    "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE"
 }
 ```
+For more information, see [Describe a Spot Fleet request, its instances, and event history](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-spot-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSpotFleetInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-spot-fleet-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-spot-fleet-request-history`
@@ -15050,54 +16822,56 @@ The following code example shows how to use `describe-spot-fleet-request-history
 
 **AWS CLI**
 **To describe Spot fleet history**
-This example command returns the history for the specified Spot fleet starting at the specified time.
-Command:
+The following `describe-spot-fleet-request-history` example returns the history for the specified Spot fleet starting at the specified time.
 
 ```
-aws ec2 describe-spot-fleet-request-history --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} --start-time {{2015-05-26T00:00:00Z}}
+aws ec2 describe-spot-fleet-request-history \
+    --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}} \
+    --start-time {{2015-05-26T00:00:00Z}}
 ```
 The following example output shows the successful launches of two Spot Instances for the Spot fleet.
 Output:
 
 ```
 {
-  "HistoryRecords": [
-      {
-          "Timestamp": "2015-05-26T23:17:20.697Z",
-          "EventInformation": {
-              "EventSubType": "submitted"
-          },
-          "EventType": "fleetRequestChange"
-      },
-      {
-          "Timestamp": "2015-05-26T23:17:20.873Z",
-          "EventInformation": {
-              "EventSubType": "active"
-          },
-          "EventType": "fleetRequestChange"
-      },
-      {
-          "Timestamp": "2015-05-26T23:21:21.712Z",
-          "EventInformation": {
-              "InstanceId": "i-1234567890abcdef0",
-              "EventSubType": "launched"
-          },
-          "EventType": "instanceChange"
-      },
-      {
-          "Timestamp": "2015-05-26T23:21:21.816Z",
-          "EventInformation": {
-              "InstanceId": "i-1234567890abcdef1",
-              "EventSubType": "launched"
-          },
-          "EventType": "instanceChange"
-      }
-  ],
-  "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE",
-  "NextToken": "CpHNsscimcV5oH7bSbub03CI2Qms5+ypNpNm+53MNlR0YcXAkp0xFlfKf91yVxSExmbtma3awYxMFzNA663ZskT0AHtJ6TCb2Z8bQC2EnZgyELbymtWPfpZ1ZbauVg+P+TfGlWxWWB/Vr5dk5d4LfdgA/DRAHUrYgxzrEXAMPLE=",
-  "StartTime": "2015-05-26T00:00:00Z"
+    "HistoryRecords": [
+        {
+            "Timestamp": "2015-05-26T23:17:20.697Z",
+            "EventInformation": {
+                "EventSubType": "submitted"
+            },
+            "EventType": "fleetRequestChange"
+        },
+        {
+            "Timestamp": "2015-05-26T23:17:20.873Z",
+            "EventInformation": {
+                "EventSubType": "active"
+            },
+            "EventType": "fleetRequestChange"
+        },
+        {
+            "Timestamp": "2015-05-26T23:21:21.712Z",
+            "EventInformation": {
+                "InstanceId": "i-1234567890abcdef0",
+                "EventSubType": "launched"
+            },
+            "EventType": "instanceChange"
+        },
+        {
+            "Timestamp": "2015-05-26T23:21:21.816Z",
+            "EventInformation": {
+                "InstanceId": "i-1234567890abcdef1",
+                "EventSubType": "launched"
+            },
+            "EventType": "instanceChange"
+        }
+    ],
+    "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE",
+    "NextToken": "CpHNsscimcV5oH7bSbub03CI2Qms5+ypNpNm+53MNlR0YcXAkp0xFlfKf91yVxSExmbtma3awYxMFzNA663ZskT0AHtJ6TCb2Z8bQC2EnZgyELbymtWPfpZ1ZbauVg+P+TfGlWxWWB/Vr5dk5d4LfdgA/DRAHUrYgxzrEXAMPLE=",
+    "StartTime": "2015-05-26T00:00:00Z"
 }
 ```
+For more information, see [Describe a Spot Fleet request, its instances, and event history](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-spot-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSpotFleetRequestHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-spot-fleet-request-history.html) in *AWS CLI Command Reference*.
 
 ### `describe-spot-fleet-requests`
@@ -15106,9 +16880,8 @@ Output:
 The following code example shows how to use `describe-spot-fleet-requests`.
 
 **AWS CLI**
-**To describe your Spot fleet requests**
-This example describes all of your Spot fleet requests.
-Command:
+**Example 1: To describe your Spot fleet requests**
+The following `describe-spot-fleet-requests` example describes all of your Spot fleet requests.
 
 ```
 aws ec2 describe-spot-fleet-requests
@@ -15117,128 +16890,130 @@ Output:
 
 ```
 {
-  "SpotFleetRequestConfigs": [
-      {
-          "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE",
-          "SpotFleetRequestConfig": {
-              "TargetCapacity": 20,
-              "LaunchSpecifications": [
-                  {
-                      "EbsOptimized": false,
-                      "NetworkInterfaces": [
-                          {
-                              "SubnetId": "subnet-a61dafcf",
-                              "DeviceIndex": 0,
-                              "DeleteOnTermination": false,
-                              "AssociatePublicIpAddress": true,
-                              "SecondaryPrivateIpAddressCount": 0
-                          }
-                      ],
-                      "InstanceType": "cc2.8xlarge",
-                      "ImageId": "ami-1a2b3c4d"
-                  },
-                  {
-                      "EbsOptimized": false,
-                      "NetworkInterfaces": [
-                          {
-                              "SubnetId": "subnet-a61dafcf",
-                              "DeviceIndex": 0,
-                              "DeleteOnTermination": false,
-                              "AssociatePublicIpAddress": true,
-                              "SecondaryPrivateIpAddressCount": 0
-                          }
-                      ],
-                      "InstanceType": "r3.8xlarge",
-                      "ImageId": "ami-1a2b3c4d"
-                  }
-              ],
-              "SpotPrice": "0.05",
-              "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role"
-          },
-          "SpotFleetRequestState": "active"
-      },
-      {
-          "SpotFleetRequestId": "sfr-306341ed-9739-402e-881b-ce47bEXAMPLE",
-          "SpotFleetRequestConfig": {
-              "TargetCapacity": 20,
-              "LaunchSpecifications": [
-                  {
-                      "EbsOptimized": false,
-                      "NetworkInterfaces": [
-                          {
-                              "SubnetId": "subnet-6e7f829e",
-                              "DeviceIndex": 0,
-                              "DeleteOnTermination": false,
-                              "AssociatePublicIpAddress": true,
-                              "SecondaryPrivateIpAddressCount": 0
-                          }
-                      ],
-                      "InstanceType": "m3.medium",
-                      "ImageId": "ami-1a2b3c4d"
-                  }
-              ],
-              "SpotPrice": "0.05",
-              "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role"
-          },
-          "SpotFleetRequestState": "active"
-      }
-  ]
+    "SpotFleetRequestConfigs": [
+        {
+            "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE",
+            "SpotFleetRequestConfig": {
+                "TargetCapacity": 20,
+                "LaunchSpecifications": [
+                    {
+                        "EbsOptimized": false,
+                        "NetworkInterfaces": [
+                            {
+                                "SubnetId": "subnet-a61dafcf",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": false,
+                                "AssociatePublicIpAddress": true,
+                                "SecondaryPrivateIpAddressCount": 0
+                            }
+                        ],
+                        "InstanceType": "cc2.8xlarge",
+                        "ImageId": "ami-1a2b3c4d"
+                    },
+                    {
+                        "EbsOptimized": false,
+                        "NetworkInterfaces": [
+                            {
+                                "SubnetId": "subnet-a61dafcf",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": false,
+                                "AssociatePublicIpAddress": true,
+                                "SecondaryPrivateIpAddressCount": 0
+                            }
+                        ],
+                        "InstanceType": "r3.8xlarge",
+                        "ImageId": "ami-1a2b3c4d"
+                    }
+                ],
+                "SpotPrice": "0.05",
+                "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role"
+            },
+            "SpotFleetRequestState": "active"
+        },
+        {
+            "SpotFleetRequestId": "sfr-306341ed-9739-402e-881b-ce47bEXAMPLE",
+            "SpotFleetRequestConfig": {
+                "TargetCapacity": 20,
+                "LaunchSpecifications": [
+                    {
+                        "EbsOptimized": false,
+                        "NetworkInterfaces": [
+                            {
+                                "SubnetId": "subnet-6e7f829e",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": false,
+                                "AssociatePublicIpAddress": true,
+                                "SecondaryPrivateIpAddressCount": 0
+                            }
+                        ],
+                        "InstanceType": "m3.medium",
+                        "ImageId": "ami-1a2b3c4d"
+                    }
+                ],
+                "SpotPrice": "0.05",
+                "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role"
+            },
+            "SpotFleetRequestState": "active"
+        }
+    ]
 }
 ```
-**To describe a Spot fleet request**
-This example describes the specified Spot fleet request.
-Command:
+For more information, see [Describe a Spot Fleet request, its instances, and event history](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-spot-fleet.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe a Spot fleet request**
+The following `describe-spot-fleet-requests` example describes the specified Spot fleet request.
 
 ```
-aws ec2 describe-spot-fleet-requests --spot-fleet-request-ids {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
+aws ec2 describe-spot-fleet-requests \
+    --spot-fleet-request-ids {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 Output:
 
 ```
 {
-  "SpotFleetRequestConfigs": [
-      {
-          "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE",
-          "SpotFleetRequestConfig": {
-              "TargetCapacity": 20,
-              "LaunchSpecifications": [
-                  {
-                      "EbsOptimized": false,
-                      "NetworkInterfaces": [
-                          {
-                              "SubnetId": "subnet-a61dafcf",
-                              "DeviceIndex": 0,
-                              "DeleteOnTermination": false,
-                              "AssociatePublicIpAddress": true,
-                              "SecondaryPrivateIpAddressCount": 0
-                          }
-                      ],
-                      "InstanceType": "cc2.8xlarge",
-                      "ImageId": "ami-1a2b3c4d"
-                  },
-                  {
-                      "EbsOptimized": false,
-                      "NetworkInterfaces": [
-                          {
-                              "SubnetId": "subnet-a61dafcf",
-                              "DeviceIndex": 0,
-                              "DeleteOnTermination": false,
-                              "AssociatePublicIpAddress": true,
-                              "SecondaryPrivateIpAddressCount": 0
-                          }
-                      ],
-                      "InstanceType": "r3.8xlarge",
-                      "ImageId": "ami-1a2b3c4d"
-                  }
-              ],
-              "SpotPrice": "0.05",
-              "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role"
-          },
-          "SpotFleetRequestState": "active"
-      }
-  ]
+    "SpotFleetRequestConfigs": [
+        {
+            "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE",
+            "SpotFleetRequestConfig": {
+                "TargetCapacity": 20,
+                "LaunchSpecifications": [
+                    {
+                        "EbsOptimized": false,
+                        "NetworkInterfaces": [
+                            {
+                                "SubnetId": "subnet-a61dafcf",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": false,
+                                "AssociatePublicIpAddress": true,
+                                "SecondaryPrivateIpAddressCount": 0
+                            }
+                        ],
+                        "InstanceType": "cc2.8xlarge",
+                        "ImageId": "ami-1a2b3c4d"
+                    },
+                    {
+                        "EbsOptimized": false,
+                        "NetworkInterfaces": [
+                            {
+                                "SubnetId": "subnet-a61dafcf",
+                                "DeviceIndex": 0,
+                                "DeleteOnTermination": false,
+                                "AssociatePublicIpAddress": true,
+                                "SecondaryPrivateIpAddressCount": 0
+                            }
+                        ],
+                        "InstanceType": "r3.8xlarge",
+                        "ImageId": "ami-1a2b3c4d"
+                    }
+                ],
+                "SpotPrice": "0.05",
+                "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role"
+            },
+            "SpotFleetRequestState": "active"
+        }
+    ]
 }
 ```
+For more information, see [Describe a Spot Fleet request, its instances, and event history](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-spot-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSpotFleetRequests](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-spot-fleet-requests.html) in *AWS CLI Command Reference*.
 
 ### `describe-spot-instance-requests`
@@ -15292,17 +17067,17 @@ Output:
                     }
                 ],
                 "Placement": {
-                    "AvailabilityZone": "us-east-2b",
+                    "AvailabilityZone": "us-west-2b",
                     "Tenancy": "default"
                 },
                 "Monitoring": {
                     "Enabled": false
                 }
             },
-            "LaunchedAvailabilityZone": "us-east-2b",
+            "LaunchedAvailabilityZone": "us-west-2b",
             "ProductDescription": "Linux/UNIX",
             "SpotInstanceRequestId": "sir-08b93456",
-            "SpotPrice": "0.010000"
+            "SpotPrice": "0.010000",
             "State": "active",
             "Status": {
                 "Code": "fulfilled",
@@ -15321,17 +17096,25 @@ The following `describe-spot-instance-requests` example uses filters to scope th
 
 ```
 aws ec2 describe-spot-instance-requests \
-    --filters {{Name=launch.instance-type,Values=m3.medium}} {{Name=launched-availability-zone,Values=us-east-2a}} \
+    --filters {{Name=launch.instance-type,Values=m3.medium}} {{Name=launched-availability-zone,Values=us-west-2a}} \
     --query {{"SpotInstanceRequests[*].[InstanceId]"}} \
     --output {{text}}
 ```
 Output:
 
 ```
-i-057750d42936e468a
-i-001efd250faaa6ffa
-i-027552a73f021f3bd
-...
+[
+    [
+        "i-057750d42936e468a"
+    ],
+    [
+        "i-001efd250faaa6ffa"
+    ],
+    [
+        "i-027552a73f021f3bd"
+    ],
+    ...
+]
 ```
 For additional examples using filters, see [Listing and filtering your resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Filtering.html#Filtering_Resources_CLI) in the *Amazon Elastic Compute Cloud User Guide*.
 **Example 3: To describe Spot Instance requests based on tags**
@@ -15341,8 +17124,55 @@ The following `describe-spot-instance-requests` example uses tag filters to scop
 aws ec2 describe-spot-instance-requests \
     --filters {{Name=tag:cost-center,Values=cc123}}
 ```
-For an example of the output for `describe-spot-instance-requests`, see Example 1.
-For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI) in the *Amazon EC2 User Guide*.
+Output:
+
+```
+{
+    "SpotInstanceRequests": [
+        {
+            "CreateTime": "2018-04-30T18:14:55.000Z",
+            "InstanceId": "i-1234567890abcdef2",
+            "LaunchSpecification": {
+                "InstanceType": "t2.micro",
+                "ImageId": "ami-003634241a8fcdec0",
+                "KeyName": "my-key-pair",
+                "SecurityGroups": [
+                    {
+                        "GroupName": "default",
+                        "GroupId": "sg-e38f24a7"
+                    }
+                ],
+                "Placement": {
+                    "AvailabilityZone": "us-west-2b",
+                    "Tenancy": "default"
+                },
+                "Monitoring": {
+                    "Enabled": false
+                }
+            },
+            "LaunchedAvailabilityZone": "us-west-2b",
+            "ProductDescription": "Linux/UNIX",
+            "SpotInstanceRequestId": "sir-0a1b2c3d",
+            "SpotPrice": "0.010000",
+            "State": "active",
+            "Status": {
+                "Code": "fulfilled",
+                "Message": "Your Spot request is fulfilled.",
+                "UpdateTime": "2018-04-30T18:16:21.000Z"
+            },
+            "Tags": [
+                {
+                    "Key": "cost-center",
+                    "Value": "cc123"
+                }
+            ],
+            "Type": "one-time",
+            "InstanceInterruptionBehavior": "terminate"
+        }
+    ]
+}
+```
+For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSpotInstanceRequests](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-spot-instance-requests.html) in *AWS CLI Command Reference*.
 
 ### `describe-spot-price-history`
@@ -15351,71 +17181,78 @@ For additional examples using tag filters, see [Working with tags](https://docs.
 The following code example shows how to use `describe-spot-price-history`.
 
 **AWS CLI**
-**To describe Spot price history**
-This example command returns the Spot Price history for m1.xlarge instances for a particular day in January.
-Command:
+**Example 1: To describe Spot price history**
+The following `describe-spot-price-history` example returns the Spot Price history for m1.xlarge instances for a particular day in January.
 
 ```
-aws ec2 describe-spot-price-history --instance-types {{m1.xlarge}} --start-time {{2014-01-06T07:08:09}} --end-time {{2014-01-06T08:09:10}}
+aws ec2 describe-spot-price-history \
+    --instance-types {{m1.xlarge}} \
+    --start-time {{2014-01-06T07:08:09}} \
+    --end-time {{2014-01-06T08:09:10}}
 ```
 Output:
 
 ```
 {
-  "SpotPriceHistory": [
-          {
-              "Timestamp": "2014-01-06T07:10:55.000Z",
-              "ProductDescription": "SUSE Linux",
-              "InstanceType": "m1.xlarge",
-              "SpotPrice": "0.087000",
-              "AvailabilityZone": "us-west-1b"
-          },
-          {
-              "Timestamp": "2014-01-06T07:10:55.000Z",
-              "ProductDescription": "SUSE Linux",
-              "InstanceType": "m1.xlarge",
-              "SpotPrice": "0.087000",
-              "AvailabilityZone": "us-west-1c"
-          },
-          {
-              "Timestamp": "2014-01-06T05:42:36.000Z",
-              "ProductDescription": "SUSE Linux (Amazon VPC)",
-              "InstanceType": "m1.xlarge",
-              "SpotPrice": "0.087000",
-              "AvailabilityZone": "us-west-1a"
-      },
-      ...
+    "SpotPriceHistory": [
+        {
+            "Timestamp": "2014-01-06T07:10:55.000Z",
+            "ProductDescription": "SUSE Linux",
+            "InstanceType": "m1.xlarge",
+            "SpotPrice": "0.087000",
+            "AvailabilityZone": "us-west-2b"
+        },
+        {
+            "Timestamp": "2014-01-06T07:10:55.000Z",
+            "ProductDescription": "SUSE Linux",
+            "InstanceType": "m1.xlarge",
+            "SpotPrice": "0.087000",
+            "AvailabilityZone": "us-west-2c"
+        },
+        {
+            "Timestamp": "2014-01-06T05:42:36.000Z",
+            "ProductDescription": "SUSE Linux (Amazon VPC)",
+            "InstanceType": "m1.xlarge",
+            "SpotPrice": "0.087000",
+            "AvailabilityZone": "us-west-2a"
+        }
+    ]
 }
 ```
-**To describe Spot price history for Linux/UNIX Amazon VPC**
-This example command returns the Spot Price history for m1.xlarge, Linux/UNIX Amazon VPC instances for a particular day in January.
-Command:
+For more information, see [View Spot Instance pricing history](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances-history.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe Spot price history for Linux/UNIX Amazon VPC**
+The following `describe-spot-price-history` example returns the Spot Price history for m1.xlarge, Linux/UNIX Amazon VPC instances for a particular day in January.
 
 ```
-aws ec2 describe-spot-price-history --instance-types {{m1.xlarge}} --product-description {{"Linux/UNIX (Amazon VPC)"}} --start-time {{2014-01-06T07:08:09}} --end-time {{2014-01-06T08:09:10}}
+aws ec2 describe-spot-price-history \
+    --instance-types {{m1.xlarge}} \
+    --product-description {{"Linux/UNIX (Amazon VPC)"}} \
+    --start-time {{2014-01-06T07:08:09}} \
+    --end-time {{2014-01-06T08:09:10}}
 ```
 Output:
 
 ```
 {
-  "SpotPriceHistory": [
-      {
-          "Timestamp": "2014-01-06T04:32:53.000Z",
-          "ProductDescription": "Linux/UNIX (Amazon VPC)",
-          "InstanceType": "m1.xlarge",
-          "SpotPrice": "0.080000",
-          "AvailabilityZone": "us-west-1a"
-      },
-      {
-          "Timestamp": "2014-01-05T11:28:26.000Z",
-          "ProductDescription": "Linux/UNIX (Amazon VPC)",
-          "InstanceType": "m1.xlarge",
-          "SpotPrice": "0.080000",
-          "AvailabilityZone": "us-west-1c"
-      }
-  ]
+    "SpotPriceHistory": [
+        {
+            "Timestamp": "2014-01-06T04:32:53.000Z",
+            "ProductDescription": "Linux/UNIX (Amazon VPC)",
+            "InstanceType": "m1.xlarge",
+            "SpotPrice": "0.080000",
+            "AvailabilityZone": "us-west-2a"
+        },
+        {
+            "Timestamp": "2014-01-05T11:28:26.000Z",
+            "ProductDescription": "Linux/UNIX (Amazon VPC)",
+            "InstanceType": "m1.xlarge",
+            "SpotPrice": "0.080000",
+            "AvailabilityZone": "us-west-2c"
+        }
+    ]
 }
 ```
+For more information, see [View Spot Instance pricing history](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances-history.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeSpotPriceHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-spot-price-history.html) in *AWS CLI Command Reference*.
 
 ### `describe-stale-security-groups`
@@ -15425,65 +17262,66 @@ The following code example shows how to use `describe-stale-security-groups`.
 
 **AWS CLI**
 **To describe stale security groups**
-This example describes stale security group rules for `vpc-11223344`. The response shows that sg-5fa68d3a in your account has a stale ingress SSH rule that references `sg-279ab042` in the peer VPC, and that `sg-fe6fba9a` in your account has a stale egress SSH rule that references `sg-ef6fba8b` in the peer VPC.
-Command:
+The following `describe-stale-security-groups` example describes stale security group rules for `vpc-11223344`. The response shows that `sg-5fa68d3a` in your account has a stale ingress SSH rule that references `sg-279ab042` in the peer VPC, and that `sg-fe6fba9a` in your account has a stale egress SSH rule that references `sg-ef6fba8b` in the peer VPC.
 
 ```
-aws ec2 describe-stale-security-groups --vpc-id {{vpc-11223344}}
+aws ec2 describe-stale-security-groups \
+    --vpc-id {{vpc-11223344}}
 ```
 Output:
 
 ```
 {
-  "StaleSecurityGroupSet": [
-      {
-          "VpcId": "vpc-11223344",
-          "StaleIpPermissionsEgress": [
-              {
-                  "ToPort": 22,
-                  "FromPort": 22,
-                  "UserIdGroupPairs": [
-                      {
-                          "VpcId": "vpc-7a20e51f",
-                          "GroupId": "sg-ef6fba8b",
-                          "VpcPeeringConnectionId": "pcx-b04deed9",
-                          "PeeringStatus": "active"
-                      }
-                  ],
-                  "IpProtocol": "tcp"
-              }
-          ],
-          "GroupName": "MySG1",
-          "StaleIpPermissions": [],
-          "GroupId": "sg-fe6fba9a",
-          "Description": MySG1"
-      },
-      {
-          "VpcId": "vpc-11223344",
-          "StaleIpPermissionsEgress": [],
-          "GroupName": "MySG2",
-          "StaleIpPermissions": [
-              {
-                  "ToPort": 22,
-                  "FromPort": 22,
-                  "UserIdGroupPairs": [
-                      {
-                          "VpcId": "vpc-7a20e51f",
-                          "GroupId": "sg-279ab042",
-                          "Description": "Access from pcx-b04deed9",
-                          "VpcPeeringConnectionId": "pcx-b04deed9",
-                          "PeeringStatus": "active"
-                      }
-                  ],
-                  "IpProtocol": "tcp"
-              }
-          ],
-          "GroupId": "sg-5fa68d3a",
-          "Description": "MySG2"
-      }
-  ]
+    "StaleSecurityGroupSet": [
+        {
+            "VpcId": "vpc-11223344",
+            "StaleIpPermissionsEgress": [
+                {
+                    "ToPort": 22,
+                    "FromPort": 22,
+                    "UserIdGroupPairs": [
+                        {
+                            "VpcId": "vpc-7a20e51f",
+                            "GroupId": "sg-ef6fba8b",
+                            "VpcPeeringConnectionId": "pcx-b04deed9",
+                            "PeeringStatus": "active"
+                        }
+                    ],
+                    "IpProtocol": "tcp"
+                }
+            ],
+            "GroupName": "MySG1",
+            "StaleIpPermissions": [],
+            "GroupId": "sg-fe6fba9a",
+            "Description": "MySG1"
+        },
+        {
+            "VpcId": "vpc-11223344",
+            "StaleIpPermissionsEgress": [],
+            "GroupName": "MySG2",
+            "StaleIpPermissions": [
+                {
+                    "ToPort": 22,
+                    "FromPort": 22,
+                    "UserIdGroupPairs": [
+                        {
+                            "VpcId": "vpc-7a20e51f",
+                            "GroupId": "sg-279ab042",
+                            "Description": "Access from pcx-b04deed9",
+                            "VpcPeeringConnectionId": "pcx-b04deed9",
+                            "PeeringStatus": "active"
+                        }
+                    ],
+                    "IpProtocol": "tcp"
+                }
+            ],
+            "GroupId": "sg-5fa68d3a",
+            "Description": "MySG2"
+        }
+    ]
 }
 ```
+For more information, see [View and delete with stale security group rules](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-security-groups.html#vpc-peering-stale-groups) in the *Amazon VPC Peering Guide*.
 +  For API details, see [DescribeStaleSecurityGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-stale-security-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-store-image-tasks`
@@ -15505,7 +17343,7 @@ Output:
     "StoreImageTaskResults": [
         {
             "AmiId": "ami-1234567890abcdef0",
-            "Bucket": "my-ami-bucket",
+            "Bucket": "amzn-s3-demo-bucket",
             "ProgressPercentage": 17,
             "S3objectKey": "ami-1234567890abcdef0.bin",
             "StoreTaskState": "InProgress",
@@ -15515,7 +17353,7 @@ Output:
     ]
 }
 ```
-For more information about storing and restoring an AMI using S3, see Store and restore an AMI using S3 <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-store-restore.html> in the *Amazon EC2 User Guide*.
+For more information, see [Store and restore an AMI using S3](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-store-restore.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeStoreImageTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-store-image-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-subnets`
@@ -15536,7 +17374,7 @@ Output:
 {
     "Subnets": [
         {
-            "AvailabilityZone": "us-east-1d",
+            "AvailabilityZone": "us-west-2d",
             "AvailabilityZoneId": "use1-az2",
             "AvailableIpAddressCount": 4089,
             "CidrBlock": "172.31.80.0/20",
@@ -15546,11 +17384,11 @@ Output:
             "State": "available",
             "SubnetId": "subnet-0bb1c79de3EXAMPLE",
             "VpcId": "vpc-0ee975135dEXAMPLE",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "AssignIpv6AddressOnCreation": false,
             "Ipv6CidrBlockAssociationSet": [],
-            "CustomerOwnedIpv4Pool:": 'pool-2EXAMPLE',
-            "SubnetArn": "arn:aws:ec2:us-east-2:111122223333:subnet/subnet-0bb1c79de3EXAMPLE",
+            "CustomerOwnedIpv4Pool": "pool-2EXAMPLE",
+            "SubnetArn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0bb1c79de3EXAMPLE",
             "EnableDns64": false,
             "Ipv6Native": false,
             "PrivateDnsNameOptionsOnLaunch": {
@@ -15560,7 +17398,7 @@ Output:
             }
         },
         {
-            "AvailabilityZone": "us-east-1d",
+            "AvailabilityZone": "us-west-2d",
             "AvailabilityZoneId": "use1-az2",
             "AvailableIpAddressCount": 4089,
             "CidrBlock": "172.31.80.0/20",
@@ -15579,7 +17417,7 @@ Output:
                     "Value": "MySubnet"
                 }
             ],
-            "SubnetArn": "arn:aws:ec2:us-east-1:111122223333:subnet/subnet-8EXAMPLE",
+            "SubnetArn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-8EXAMPLE",
             "EnableDns64": false,
             "Ipv6Native": false,
             "PrivateDnsNameOptionsOnLaunch": {
@@ -15605,7 +17443,7 @@ Output:
 {
     "Subnets": [
         {
-            "AvailabilityZone": "us-east-1d",
+            "AvailabilityZone": "us-west-2d",
             "AvailabilityZoneId": "use1-az2",
             "AvailableIpAddressCount": 4089,
             "CidrBlock": "172.31.80.0/20",
@@ -15624,7 +17462,7 @@ Output:
                     "Value": "MySubnet"
                 }
             ],
-            "SubnetArn": "arn:aws:ec2:us-east-1:111122223333:subnet/subnet-8EXAMPLE",
+            "SubnetArn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-8EXAMPLE",
             "EnableDns64": false,
             "Ipv6Native": false,
             "PrivateDnsNameOptionsOnLaunch": {
@@ -15643,15 +17481,16 @@ The following `describe-subnets` example uses a filter to retrieve the details o
 ```
 aws ec2 describe-subnets \
     --filters {{"Name=tag:CostCenter,Values=123"}} \
-    --query {{"Subnets[*].SubnetId"}} \
-    --output {{text}}
+    --query {{"Subnets[*].SubnetId"}}
 ```
 Output:
 
 ```
-subnet-0987a87c8b37348ef
-subnet-02a95061c45f372ee
-subnet-03f720e7de2788d73
+[
+    "subnet-0987a87c8b37348ef",
+    "subnet-02a95061c45f372ee",
+    "subnet-03f720e7de2788d73"
+]
 ```
 For more information, see [Working with VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeSubnets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-subnets.html) in *AWS CLI Command Reference*.
@@ -15689,6 +17528,7 @@ Output:
     ]
 }
 ```
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 **Example 2: To describe all tags for a resource type**
 The following `describe-tags` example describes the tags for your volumes.
 
@@ -15716,12 +17556,40 @@ Output:
     ]
 }
 ```
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 **Example 3: To describe all your tags**
 The following `describe-tags` example describes the tags for all your resources.
 
 ```
 aws ec2 describe-tags
 ```
+Output:
+
+```
+{
+    "Tags": [
+        {
+            "ResourceType": "instance",
+            "ResourceId": "i-1234567890abcdef8",
+            "Value": "Test",
+            "Key": "Stack"
+        },
+        {
+            "ResourceType": "instance",
+            "ResourceId": "i-1234567890abcdef8",
+            "Value": "Beta Server",
+            "Key": "Name"
+        },
+        {
+            "ResourceType": "volume",
+            "ResourceId": "vol-049df61146c4d7901",
+            "Value": "Logs",
+            "Key": "Purpose"
+        }
+    ]
+}
+```
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 **Example 4: To describe the tags for your resources based on a tag key**
 The following `describe-tags` example describes the tags for your resources that have a tag with the key `Stack`.
 
@@ -15749,6 +17617,7 @@ Output:
     ]
 }
 ```
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 **Example 5: To describe the tags for your resources based on a tag key and tag value**
 The following `describe-tags` example describes the tags for your resources that have the tag `Stack=Test`.
 
@@ -15796,12 +17665,13 @@ Output:
         {
             "ResourceType": "instance",
             "ResourceId": "i-1234567890abcdef5",
-            "Value": null,
+            "Value": "",
             "Key": "Purpose"
         }
     ]
 }
 ```
+For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-tags.html) in *AWS CLI Command Reference*.
 
 ### `describe-traffic-mirror-filters`
@@ -15844,7 +17714,7 @@ Output:
     ]
 }
 ```
-For more information, see [View your traffic mirror filters](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-filter.html#view-traffic-mirroring-filter) in the *Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror filter](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-filter.html) in the *Traffic Mirroring Guide*.
 +  For API details, see [DescribeTrafficMirrorFilters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-traffic-mirror-filters.html) in *AWS CLI Command Reference*.
 
 ### `describe-traffic-mirror-sessions`
@@ -15867,7 +17737,7 @@ Output:
         {
             "Tags": [],
             "VirtualNetworkId": 42,
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "Description": "TCP Session",
             "NetworkInterfaceId": "eni-0a471a5cf3EXAMPLE",
             "TrafficMirrorTargetId": "tmt-0dabe9b0a6EXAMPLE",
@@ -15884,7 +17754,7 @@ Output:
                 }
             ],
             "VirtualNetworkId": 13314501,
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "Description": "TCP Session",
             "NetworkInterfaceId": "eni-0a471a5cf3EXAMPLE",
             "TrafficMirrorTargetId": "tmt-03665551cbEXAMPLE",
@@ -15895,7 +17765,7 @@ Output:
     ]
 }
 ```
-For more information, see [View Traffic Mirror Session Details](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-session.html#view-traffic-mirroring-session) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror session](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-session.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [DescribeTrafficMirrorSessions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-traffic-mirror-sessions.html) in *AWS CLI Command Reference*.
 
 ### `describe-traffic-mirror-targets`
@@ -15918,16 +17788,16 @@ Output:
     "TrafficMirrorTargets": [
         {
             "TrafficMirrorTargetId": "tmt-0dabe9b0a6EXAMPLE",
-            "NetworkLoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:111122223333:loadbalancer/net/NLB/7cdec873fEXAMPLE",
+            "NetworkLoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLB/7cdec873fEXAMPLE",
             "Type": "network-load-balancer",
             "Description": "Example Network Load Balancer target",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "Tags": []
         }
     ]
 }
 ```
-For more information, see [Traffic mirror targets](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-target.html) in the *Amazon VPC Traffic Mirroring Guide*.
+For more information, see [View traffic mirror targets and modify target tags](https://docs.aws.amazon.com/vpc/latest/mirroring/modify-traffic-mirroring-targets.html) in the *Amazon VPC Traffic Mirroring Guide*.
 +  For API details, see [DescribeTrafficMirrorTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-traffic-mirror-targets.html) in *AWS CLI Command Reference*.
 
 ### `describe-transit-gateway-attachments`
@@ -15988,7 +17858,7 @@ Output:
             "TransitGatewayOwnerId": "123456789012",
             "ResourceOwnerId": "123456789012",
             "ResourceType": "direct-connect-gateway",
-            "ResourceId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
+            "ResourceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "State": "available",
             "Association": {
                 "TransitGatewayRouteTableId": "tgw-rtb-002573ed1eEXAMPLE",
@@ -16003,7 +17873,7 @@ Output:
             "TransitGatewayOwnerId": "123456789012",
             "ResourceOwnerId": "123456789012",
             "ResourceType": "direct-connect-gateway",
-            "ResourceId": "8384da05-13ce-4a91-aada-5a1baEXAMPLE",
+            "ResourceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "State": "available",
             "Association": {
                 "TransitGatewayRouteTableId": "tgw-rtb-002573ed1eEXAMPLE",
@@ -16129,7 +17999,7 @@ Output:
         {
             "TransitGatewayMulticastDomainId": "tgw-mcast-domain-000fb24d04EXAMPLE",
             "TransitGatewayId": "tgw-0bf0bffefaEXAMPLE",
-            "TransitGatewayMulticastDomainArn": "arn:aws:ec2:us-east-1:123456789012:transit-gateway-multicast-domain/tgw-mcast-domain-000fb24d04EXAMPLE",
+            "TransitGatewayMulticastDomainArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway-multicast-domain/tgw-mcast-domain-000fb24d04EXAMPLE",
             "OwnerId": "123456789012",
             "Options": {
                 "Igmpv2Support": "disable",
@@ -16148,7 +18018,7 @@ Output:
     ]
 }
 ```
-For more information, see [Managing multicast domains](https://docs.aws.amazon.com/vpc/latest/tgw/manage-domain.html) in the *Transit Gateways Guide*.
+For more information, see [Multicast domains in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/multicast-domains-about.html) in the *Transit Gateways Guide*.
 +  For API details, see [DescribeTransitGatewayMulticastDomains](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-transit-gateway-multicast-domains.html) in *AWS CLI Command Reference*.
 
 ### `describe-transit-gateway-peering-attachments`
@@ -16259,7 +18129,7 @@ Output:
     ]
 }
 ```
-For more information, see [View transit gateway route tables](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#view-tgw-route-tables) in the *Transit Gateways Guide*.
+For more information, see [View transit gateway route tables](https://docs.aws.amazon.com/vpc/latest/tgw/view-tgw-route-tables.html) in the *Transit Gateways Guide*.
 +  For API details, see [DescribeTransitGatewayRouteTables](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-transit-gateway-route-tables.html) in *AWS CLI Command Reference*.
 
 ### `describe-transit-gateway-vpc-attachments`
@@ -16283,7 +18153,7 @@ Output:
             "TransitGatewayAttachmentId": "tgw-attach-0a08e88308EXAMPLE",
             "TransitGatewayId": "tgw-0043d72bb4EXAMPLE",
             "VpcId": "vpc-0f501f7ee8EXAMPLE",
-            "VpcOwnerId": "111122223333",
+            "VpcOwnerId": "123456789012",
             "State": "available",
             "SubnetIds": [
                 "subnet-045d586432EXAMPLE",
@@ -16304,7 +18174,7 @@ Output:
     ]
 }
 ```
-For more information, see [View your VPC attachments](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html#view-vpc-attachment) in the *Transit Gateways Guide*.
+For more information, see [View your VPC attachments](https://docs.aws.amazon.com/vpc/latest/tgw/view-vpc-attachment.html) in the *Transit Gateways Guide*.
 +  For API details, see [DescribeTransitGatewayVpcAttachments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-transit-gateway-vpc-attachments.html) in *AWS CLI Command Reference*.
 
 ### `describe-transit-gateways`
@@ -16326,9 +18196,9 @@ Output:
     "TransitGateways": [
         {
             "TransitGatewayId": "tgw-0262a0e521EXAMPLE",
-            "TransitGatewayArn": "arn:aws:ec2:us-east-2:111122223333:transit-gateway/tgw-0262a0e521EXAMPLE",
+            "TransitGatewayArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-0262a0e521EXAMPLE",
             "State": "available",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "Description": "MyTGW",
             "CreationTime": "2019-07-10T14:02:12.000Z",
             "Options": {
@@ -16345,9 +18215,9 @@ Output:
         },
         {
             "TransitGatewayId": "tgw-0fb8421e2dEXAMPLE",
-            "TransitGatewayArn": "arn:aws:ec2:us-east-2:111122223333:transit-gateway/tgw-0fb8421e2da853bf3",
+            "TransitGatewayArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-0fb8421e2da853bf3",
             "State": "available",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "CreationTime": "2019-03-15T22:57:33.000Z",
             "Options": {
                 "AmazonSideAsn": 65412,
@@ -16369,6 +18239,7 @@ Output:
     ]
 }
 ```
+For more information, see [Transit gateways in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html) in the *Transit Gateways Guide*.
 +  For API details, see [DescribeTransitGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-transit-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-verified-access-endpoints`
@@ -16396,8 +18267,8 @@ Output:
             "ApplicationDomain": "example.com",
             "EndpointType": "network-interface",
             "AttachmentType": "vpc",
-            "DomainCertificateArn": "arn:aws:acm:us-east-2:123456789012:certificate/eb065ea0-26f9-4e75-a6ce-0a1a7EXAMPLE",
-            "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-east-2.amazonaws.com",
+            "DomainCertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-west-2.amazonaws.com",
             "SecurityGroupIds": [
                 "sg-004915970c4c8f13a"
             ],
@@ -16448,7 +18319,7 @@ Output:
             "VerifiedAccessInstanceId": "vai-0ce000c0b7643abea",
             "Description": "Testing Verified Access",
             "Owner": "123456789012",
-            "VerifiedAccessGroupArn": "arn:aws:ec2:us-east-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
+            "VerifiedAccessGroupArn": "arn:aws:ec2:us-west-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
             "CreationTime": "2023-08-25T19:55:19",
             "LastUpdatedTime": "2023-08-25T22:17:25",
             "Tags": [
@@ -16597,11 +18468,12 @@ The following code example shows how to use `describe-volume-attribute`.
 
 **AWS CLI**
 **To describe a volume attribute**
-This example command describes the `autoEnableIo` attribute of the volume with the ID `vol-049df61146c4d7901`.
-Command:
+The following `describe-volume-attribute` example describes the `autoEnableIo` attribute of the volume with the ID `vol-049df61146c4d7901`.
 
 ```
-aws ec2 describe-volume-attribute --volume-id {{vol-049df61146c4d7901}} --attribute {{autoEnableIO}}
+aws ec2 describe-volume-attribute \
+    --volume-id {{vol-049df61146c4d7901}} \
+    --attribute {{autoEnableIO}}
 ```
 Output:
 
@@ -16613,6 +18485,7 @@ Output:
     "VolumeId": "vol-049df61146c4d7901"
 }
 ```
+For more information, see [Amazon EBS volume status checks](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-checks.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DescribeVolumeAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-volume-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-volume-status`
@@ -16621,12 +18494,12 @@ Output:
 The following code example shows how to use `describe-volume-status`.
 
 **AWS CLI**
-**To describe the status of a single volume**
-This example command describes the status for the volume `vol-1234567890abcdef0`.
-Command:
+**Example 1: To describe the status of a single volume**
+The following `describe-volume-status` example describes the status for the volume `vol-1234567890abcdef0`.
 
 ```
-aws ec2 describe-volume-status --volume-ids {{vol-1234567890abcdef0}}
+aws ec2 describe-volume-status \
+    --volume-ids {{vol-1234567890abcdef0}}
 ```
 Output:
 
@@ -16647,7 +18520,7 @@ Output:
                     }
                 ]
             },
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "VolumeId": "vol-1234567890abcdef0",
             "Actions": [],
             "Events": []
@@ -16655,12 +18528,13 @@ Output:
     ]
 }
 ```
-**To describe the status of impaired volumes**
-This example command describes the status for all volumes that are impaired. In this example output, there are no impaired volumes.
-Command:
+For more information, see [Amazon EBS volume status checks](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-checks.html) in the *Amazon EBS User Guide*.
+**Example 2: To describe the status of impaired volumes**
+The following `describe-volume-status` example describes the status for all volumes that are impaired. In this example output, there are no impaired volumes.
 
 ```
-aws ec2 describe-volume-status --filters {{Name=volume-status.status,Values=impaired}}
+aws ec2 describe-volume-status \
+    --filters {{Name=volume-status.status,Values=impaired}}
 ```
 Output:
 
@@ -16669,7 +18543,7 @@ Output:
     "VolumeStatuses": []
 }
 ```
-If you have a volume with a failed status check (status is impaired), see Working with an Impaired Volume in the *Amazon EC2 User Guide*.
+For more information, see [Work with an impaired Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/work_volumes_impaired.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DescribeVolumeStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-volume-status.html) in *AWS CLI Command Reference*.
 
 ### `describe-volumes-modifications`
@@ -16689,20 +18563,23 @@ Output:
 
 ```
 {
-    "VolumeModification": {
-        "TargetSize": 150,
-        "TargetVolumeType": "io1",
-        "ModificationState": "optimizing",
-        "VolumeId": " vol-1234567890abcdef0",
-        "TargetIops": 100,
-        "StartTime": "2019-05-17T11:27:19.000Z",
-        "Progress": 70,
-        "OriginalVolumeType": "io1",
-        "OriginalIops": 100,
-        "OriginalSize": 100
-    }
+    "VolumesModifications": [
+        {
+            "TargetSize": 150,
+            "TargetVolumeType": "io1",
+            "ModificationState": "optimizing",
+            "VolumeId": " vol-1234567890abcdef0",
+            "TargetIops": 100,
+            "StartTime": "2019-05-17T11:27:19.000Z",
+            "Progress": 70,
+            "OriginalVolumeType": "io1",
+            "OriginalIops": 100,
+            "OriginalSize": 100
+        }
+    ]
 }
 ```
+For more information, see [Monitor the progress of Amazon EBS volume modifications](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-modifications.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DescribeVolumesModifications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-volumes-modifications.html) in *AWS CLI Command Reference*.
 
 ### `describe-volumes`
@@ -16724,7 +18601,7 @@ Output:
 {
     "Volumes": [
         {
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "Attachments": [
                 {
                     "AttachTime": "2013-12-18T22:35:00.000Z",
@@ -16736,7 +18613,7 @@ Output:
                 }
             ],
             "Encrypted": true,
-            "KmsKeyId": "arn:aws:kms:us-east-2a:123456789012:key/8c5b2c63-b9bc-45a3-a87a-5513eEXAMPLE,
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "VolumeType": "gp2",
             "VolumeId": "vol-049df61146c4d7901",
             "State": "in-use",
@@ -16746,7 +18623,7 @@ Output:
             "Size": 8
         },
         {
-            "AvailabilityZone": "us-east-1a",
+            "AvailabilityZone": "us-west-2a",
             "Attachments": [],
             "Encrypted": false,
             "VolumeType": "gp2",
@@ -16765,18 +18642,65 @@ The following `describe-volumes` example describes all volumes that are both att
 
 ```
 aws ec2 describe-volumes \
-    --region {{us-east-1}} \
     --filters {{Name=attachment.instance-id,Values=i-1234567890abcdef0}} {{Name=attachment.delete-on-termination,Values=true}}
 ```
-For an example of the output for `describe-volumes`, see Example 1.
+Output:
+
+```
+{
+    "Volumes": [
+        {
+            "AvailabilityZone": "us-west-2a",
+            "Attachments": [
+                {
+                    "AttachTime": "2013-12-18T22:35:00.000Z",
+                    "InstanceId": "i-1234567890abcdef0",
+                    "VolumeId": "vol-049df61146c4d7901",
+                    "State": "attached",
+                    "DeleteOnTermination": true,
+                    "Device": "/dev/sda1"
+                }
+            ],
+            "Encrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "VolumeType": "gp2",
+            "VolumeId": "vol-049df61146c4d7901",
+            "State": "in-use",
+            "Iops": 100,
+            "SnapshotId": "snap-1234567890abcdef0",
+            "CreateTime": "2019-12-18T22:35:00.084Z",
+            "Size": 8
+        }
+    ]
+}
+```
 **Example 3: To describe available volumes in a specific Availability Zone**
 The following `describe-volumes` example describes all volumes that have a status of `available` and are in the specified Availability Zone.
 
 ```
 aws ec2 describe-volumes \
-    --filters {{Name=status,Values=available}} {{Name=availability-zone,Values=us-east-1a}}
+    --filters {{Name=status,Values=available}} {{Name=availability-zone,Values=us-west-2a}}
 ```
-For an example of the output for `describe-volumes`, see Example 1.
+Output:
+
+```
+{
+    "Volumes": [
+        {
+            "AvailabilityZone": "us-west-2a",
+            "Attachments": [],
+            "Encrypted": false,
+            "VolumeType": "gp2",
+            "VolumeId": "vol-1234567890abcdef0",
+            "State": "available",
+            "Iops": 300,
+            "SnapshotId": "",
+            "CreateTime": "2020-02-27T00:02:41.791Z",
+            "Size": 100
+        }
+    ]
+}
+```
 **Example 4: To describe volumes based on tags**
 The following `describe-volumes` example describes all volumes that have the tag key `Name` and a value that begins with `Test`. The output is then filtered with a query that displays only the tags and IDs of the volumes.
 
@@ -16790,26 +18714,26 @@ Output:
 ```
 [
     {
-       "Tag": [
-           {
-               "Value": "Test2",
-               "Key": "Name"
-           }
-       ],
-       "ID": "vol-1234567890abcdef0"
-   },
-   {
-       "Tag": [
-           {
-               "Value": "Test1",
-               "Key": "Name"
-           }
-       ],
-       "ID": "vol-049df61146c4d7901"
+        "Tag": [
+            {
+                "Value": "Test2",
+                "Key": "Name"
+            }
+        ],
+        "ID": "vol-1234567890abcdef0"
+    },
+    {
+        "Tag": [
+            {
+                "Value": "Test1",
+                "Key": "Name"
+            }
+        ],
+        "ID": "vol-049df61146c4d7901"
     }
 ]
 ```
-For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#Using_Tags_CLI) in the *Amazon EC2 User Guide*.
+For additional examples using tag filters, see [Working with tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeVolumes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-volumes.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpc-attribute`
@@ -16818,12 +18742,13 @@ For additional examples using tag filters, see [Working with tags](https://docs.
 The following code example shows how to use `describe-vpc-attribute`.
 
 **AWS CLI**
-**To describe the enableDnsSupport attribute**
-This example describes the `enableDnsSupport` attribute. This attribute indicates whether DNS resolution is enabled for the VPC. If this attribute is `true`, the Amazon DNS server resolves DNS hostnames for your instances to their corresponding IP addresses; otherwise, it does not.
-Command:
+**Example 1: To describe the enableDnsSupport attribute**
+The following `describe-vpc-attribute` example describes the `enableDnsSupport` attribute. This attribute indicates whether DNS resolution is enabled for the VPC. If this attribute is `true`, the Amazon DNS server resolves DNS hostnames for your instances to their corresponding IP addresses; otherwise, it does not.
 
 ```
-aws ec2 describe-vpc-attribute --vpc-id {{vpc-a01106c2}} --attribute {{enableDnsSupport}}
+aws ec2 describe-vpc-attribute \
+    --vpc-id {{vpc-a01106c2}} \
+    --attribute {{enableDnsSupport}}
 ```
 Output:
 
@@ -16835,12 +18760,14 @@ Output:
     }
 }
 ```
-**To describe the enableDnsHostnames attribute**
-This example describes the `enableDnsHostnames` attribute. This attribute indicates whether the instances launched in the VPC get DNS hostnames. If this attribute is `true`, instances in the VPC get DNS hostnames; otherwise, they do not.
-Command:
+For more information, see [DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) in the *Amazon VPC User Guide*.
+**Example 2: To describe the enableDnsHostnames attribute**
+The following `describe-vpc-attribute` example describes the `enableDnsHostnames` attribute. This attribute indicates whether the instances launched in the VPC get DNS hostnames. If this attribute is `true`, instances in the VPC get DNS hostnames; otherwise, they do not.
 
 ```
-aws ec2 describe-vpc-attribute --vpc-id {{vpc-a01106c2}} --attribute {{enableDnsHostnames}}
+aws ec2 describe-vpc-attribute \
+    --vpc-id {{vpc-a01106c2}} \
+    --attribute {{enableDnsHostnames}}
 ```
 Output:
 
@@ -16852,6 +18779,7 @@ Output:
     }
 }
 ```
+For more information, see [DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeVpcAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-attribute.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpc-classic-link-dns-support`
@@ -16861,8 +18789,7 @@ The following code example shows how to use `describe-vpc-classic-link-dns-suppo
 
 **AWS CLI**
 **To describe ClassicLink DNS support for your VPCs**
-This example describes the ClassicLink DNS support status of all of your VPCs.
-Command:
+The following `describe-vpc-classic-link-dns-support` example describes the ClassicLink DNS support status of all of your VPCs.
 
 ```
 aws ec2 describe-vpc-classic-link-dns-support
@@ -16871,16 +18798,16 @@ Output:
 
 ```
 {
-  "Vpcs": [
-    {
-      "VpcId": "vpc-88888888",
-      "ClassicLinkDnsSupported": true
-    },
-    {
-      "VpcId": "vpc-1a2b3c4d",
-      "ClassicLinkDnsSupported": false
-    }
-  ]
+    "Vpcs": [
+        {
+            "VpcId": "vpc-88888888",
+            "ClassicLinkDnsSupported": true
+        },
+        {
+            "VpcId": "vpc-1a2b3c4d",
+            "ClassicLinkDnsSupported": false
+        }
+    ]
 }
 ```
 +  For API details, see [DescribeVpcClassicLinkDnsSupport](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-classic-link-dns-support.html) in *AWS CLI Command Reference*.
@@ -16892,35 +18819,35 @@ The following code example shows how to use `describe-vpc-classic-link`.
 
 **AWS CLI**
 **To describe the ClassicLink status of your VPCs**
-This example lists the ClassicLink status of vpc-88888888.
-Command:
+The following `describe-vpc-classic-link` example lists the ClassicLink status of vpc-88888888.
 
 ```
-aws ec2 describe-vpc-classic-link --vpc-id {{vpc-88888888}}
+aws ec2 describe-vpc-classic-link \
+    --vpc-id {{vpc-88888888}}
 ```
 Output:
 
 ```
 {
-  "Vpcs": [
-    {
-      "ClassicLinkEnabled": true,
-      "VpcId": "vpc-88888888",
-      "Tags": [
+    "Vpcs": [
         {
-          "Value": "classiclinkvpc",
-          "Key": "Name"
+            "ClassicLinkEnabled": true,
+            "VpcId": "vpc-88888888",
+            "Tags": [
+                {
+                    "Value": "classiclinkvpc",
+                    "Key": "Name"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
 ```
-This example lists only VPCs that are enabled for Classiclink (the filter value of `is-classic-link-enabled` is set to `true`).
-Command:
+The following `describe-vpc-classic-link` example lists only VPCs that are enabled for ClassicLink (the filter value of `is-classic-link-enabled` is set to `true`).
 
 ```
-aws ec2 describe-vpc-classic-link --filter {{"Name=is-classic-link-enabled,Values=true"}}
+aws ec2 describe-vpc-classic-link \
+    --filter {{"Name=is-classic-link-enabled,Values=true"}}
 ```
 +  For API details, see [DescribeVpcClassicLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-classic-link.html) in *AWS CLI Command Reference*.
 
@@ -16946,10 +18873,10 @@ Output:
             "VpcEndpointId": "vpce-019b90d6f16d4f958",
             "AssociatedResourceAccessibility": "Accessible",
             "DnsEntry": {
-                "DnsName": "vpce-019b90d6f16d4f958.rcfg-07129f3acded87625.4232ccc.vpc-lattice-rsc.us-east-2.on.aws",
+                "DnsName": "vpce-019b90d6f16d4f958.rcfg-07129f3acded87625.4232ccc.vpc-lattice-rsc.us-west-2.on.aws",
                 "HostedZoneId": "Z03265862FOUNWMZOKUF4"
             },
-            "AssociatedResourceArn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceconfiguration/rcfg-07129f3acded87625"
+            "AssociatedResourceArn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceconfiguration/rcfg-07129f3acded87625"
         }
     ]
 }
@@ -16973,23 +18900,24 @@ Output:
 
 ```
 {
-   "ConnectionNotificationSet": [
-       {
-           "ConnectionNotificationState": "Enabled",
-           "ConnectionNotificationType": "Topic",
-           "ConnectionEvents": [
-               "Accept",
-               "Reject",
-               "Delete",
-               "Connect"
-           ],
-           "ConnectionNotificationId": "vpce-nfn-04bcb952bc8af7abc",
-           "ConnectionNotificationArn": "arn:aws:sns:us-east-1:123456789012:VpceNotification",
-           "VpcEndpointId": "vpce-0324151a02f327123"
-       }
-   ]
- }
+    "ConnectionNotificationSet": [
+        {
+            "ConnectionNotificationState": "Enabled",
+            "ConnectionNotificationType": "Topic",
+            "ConnectionEvents": [
+                "Accept",
+                "Reject",
+                "Delete",
+                "Connect"
+            ],
+            "ConnectionNotificationId": "vpce-nfn-04bcb952bc8af7abc",
+            "ConnectionNotificationArn": "arn:aws:sns:us-west-2:123456789012:VpceNotification",
+            "VpcEndpointId": "vpce-0324151a02f327123"
+        }
+    ]
+}
 ```
+For more information, see [Receive alerts for endpoint service events](https://docs.aws.amazon.com/vpc/latest/privatelink/create-notification-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [DescribeVpcEndpointConnectionNotifications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-endpoint-connection-notifications.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpc-endpoint-connections`
@@ -16999,27 +18927,28 @@ The following code example shows how to use `describe-vpc-endpoint-connections`.
 
 **AWS CLI**
 **To describe VPC endpoint connections**
-This example describes the interface endpoint connections to your endpoint service and filters the results to display endpoints that are `PendingAcceptance`.
-Command:
+The following `describe-vpc-endpoint-connections` example describes the interface endpoint connections to your endpoint service and filters the results to display endpoints that are `PendingAcceptance`.
 
 ```
-aws ec2 describe-vpc-endpoint-connections --filters {{Name=vpc-endpoint-state,Values=pendingAcceptance}}
+aws ec2 describe-vpc-endpoint-connections \
+    --filters {{Name=vpc-endpoint-state,Values=pendingAcceptance}}
 ```
 Output:
 
 ```
 {
-  "VpcEndpointConnections": [
-      {
-          "VpcEndpointId": "vpce-0abed31004e618123",
-          "ServiceId": "vpce-svc-0abced088d20def56",
-          "CreationTimestamp": "2017-11-30T10:00:24.350Z",
-          "VpcEndpointState": "pendingAcceptance",
-          "VpcEndpointOwner": "123456789012"
-      }
-  ]
+    "VpcEndpointConnections": [
+        {
+            "VpcEndpointId": "vpce-0abed31004e618123",
+            "ServiceId": "vpce-svc-0abced088d20def56",
+            "CreationTimestamp": "2017-11-30T10:00:24.350Z",
+            "VpcEndpointState": "pendingAcceptance",
+            "VpcEndpointOwner": "123456789012"
+        }
+    ]
 }
 ```
+For more information, see [Accept or reject connection requests](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#accept-reject-connection-requests) in the *AWS PrivateLink User Guide*.
 +  For API details, see [DescribeVpcEndpointConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-endpoint-connections.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpc-endpoint-service-configurations`
@@ -17046,15 +18975,15 @@ Output:
                 }
             ],
             "ServiceId": "vpce-svc-012d33a1c4321cabc",
-            "ServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-012d33a1c4321cabc",
+            "ServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-012d33a1c4321cabc",
             "ServiceState": "Available",
             "AvailabilityZones": [
-                "us-east-1d"
+                "us-west-2d"
             ],
             "AcceptanceRequired": false,
             "ManagesVpcEndpoints": false,
             "GatewayLoadBalancerArns": [
-                "arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/gwy/GWLBService/123210844e429123"
+                "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/GWLBService/123210844e429123"
             ],
             "Tags": []
         },
@@ -17065,18 +18994,18 @@ Output:
                 }
             ],
             "ServiceId": "vpce-svc-123cabc125efa123",
-            "ServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-123cabc125efa123",
+            "ServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-123cabc125efa123",
             "ServiceState": "Available",
             "AvailabilityZones": [
-                "us-east-1a"
+                "us-west-2a"
             ],
             "AcceptanceRequired": true,
             "ManagesVpcEndpoints": false,
             "NetworkLoadBalancerArns": [
-                "arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/NLBforService/1238753950b25123"
+                "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLBforService/1238753950b25123"
             ],
             "BaseEndpointDnsNames": [
-                "vpce-svc-123cabc125efa123.us-east-1.vpce.amazonaws.com"
+                "vpce-svc-123cabc125efa123.us-west-2.vpce.amazonaws.com"
             ],
             "PrivateDnsName": "example.com",
             "PrivateDnsNameConfiguration": {
@@ -17100,24 +19029,25 @@ The following code example shows how to use `describe-vpc-endpoint-service-permi
 
 **AWS CLI**
 **To describe endpoint service permissions**
-This example describes the permissions for the specified endpoint service.
-Command:
+The following `describe-vpc-endpoint-service-permissions` example describes the permissions for the specified endpoint service.
 
 ```
-aws ec2 describe-vpc-endpoint-service-permissions --service-id {{vpce-svc-03d5ebb7d9579a2b3}}
+aws ec2 describe-vpc-endpoint-service-permissions \
+    --service-id {{vpce-svc-03d5ebb7d9579a2b3}}
 ```
 Output:
 
 ```
 {
-   "AllowedPrincipals": [
-       {
-           "PrincipalType": "Account",
-           "Principal": "arn:aws:iam::123456789012:root"
-       }
-   ]
+    "AllowedPrincipals": [
+        {
+            "PrincipalType": "Account",
+            "Principal": "arn:aws:iam::123456789012:root"
+        }
+    ]
 }
 ```
+For more information, see [Manage permissions](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#add-remove-permissions) in the *AWS PrivateLink User Guide*.
 +  For API details, see [DescribeVpcEndpointServicePermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-endpoint-service-permissions.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpc-endpoint-services`
@@ -17144,19 +19074,17 @@ Output:
                 }
             ],
             "AcceptanceRequired": false,
-            "ServiceName": "com.amazonaws.us-east-1.dynamodb",
+            "ServiceName": "com.amazonaws.us-west-2.dynamodb",
             "VpcEndpointPolicySupported": true,
             "Owner": "amazon",
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1c",
-                "us-east-1d",
-                "us-east-1e",
-                "us-east-1f"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c",
+                "us-west-2d"
             ],
             "BaseEndpointDnsNames": [
-                "dynamodb.us-east-1.amazonaws.com"
+                "dynamodb.us-west-2.amazonaws.com"
             ]
         },
         {
@@ -17165,21 +19093,19 @@ Output:
                     "ServiceType": "Interface"
                 }
             ],
-            "PrivateDnsName": "ec2.us-east-1.amazonaws.com",
-            "ServiceName": "com.amazonaws.us-east-1.ec2",
+            "PrivateDnsName": "ec2.us-west-2.amazonaws.com",
+            "ServiceName": "com.amazonaws.us-west-2.ec2",
             "VpcEndpointPolicySupported": false,
             "Owner": "amazon",
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1c",
-                "us-east-1d",
-                "us-east-1e",
-                "us-east-1f"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c",
+                "us-west-2d"
             ],
             "AcceptanceRequired": false,
             "BaseEndpointDnsNames": [
-                "ec2.us-east-1.vpce.amazonaws.com"
+                "ec2.us-west-2.vpce.amazonaws.com"
             ]
         },
         {
@@ -17188,31 +19114,30 @@ Output:
                     "ServiceType": "Interface"
                 }
             ],
-            "PrivateDnsName": "ssm.us-east-1.amazonaws.com",
-            "ServiceName": "com.amazonaws.us-east-1.ssm",
+            "PrivateDnsName": "ssm.us-west-2.amazonaws.com",
+            "ServiceName": "com.amazonaws.us-west-2.ssm",
             "VpcEndpointPolicySupported": true,
             "Owner": "amazon",
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1c",
-                "us-east-1d",
-                "us-east-1e"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c",
+                "us-west-2d"
             ],
             "AcceptanceRequired": false,
             "BaseEndpointDnsNames": [
-                "ssm.us-east-1.vpce.amazonaws.com"
+                "ssm.us-west-2.vpce.amazonaws.com"
             ]
         }
     ],
     "ServiceNames": [
-        "com.amazonaws.us-east-1.dynamodb",
-        "com.amazonaws.us-east-1.ec2",
-        "com.amazonaws.us-east-1.ec2messages",
-        "com.amazonaws.us-east-1.elasticloadbalancing",
-        "com.amazonaws.us-east-1.kinesis-streams",
-        "com.amazonaws.us-east-1.s3",
-        "com.amazonaws.us-east-1.ssm"
+        "com.amazonaws.us-west-2.dynamodb",
+        "com.amazonaws.us-west-2.ec2",
+        "com.amazonaws.us-west-2.ec2messages",
+        "com.amazonaws.us-west-2.elasticloadbalancing",
+        "com.amazonaws.us-west-2.kinesis-streams",
+        "com.amazonaws.us-west-2.s3",
+        "com.amazonaws.us-west-2.ssm"
     ]
 }
 ```
@@ -17221,7 +19146,7 @@ The following `describe-vpc-endpoint-services` example lists the details of the 
 
 ```
 aws ec2 describe-vpc-endpoint-services \
-    --filter '{{Name=service-type,Values=Interface}}' {{Name=service-name,Values=com.amazonaws.us-east-1.s3}}
+    --filter '{{Name=service-type,Values=Interface}}' {{Name=service-name,Values=com.amazonaws.us-west-2.s3}}
 ```
 Output:
 
@@ -17229,7 +19154,7 @@ Output:
 {
     "ServiceDetails": [
         {
-            "ServiceName": "com.amazonaws.us-east-1.s3",
+            "ServiceName": "com.amazonaws.us-west-2.s3",
             "ServiceId": "vpce-svc-081d84efcdEXAMPLE",
             "ServiceType": [
                 {
@@ -17237,16 +19162,14 @@ Output:
                 }
             ],
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1c",
-                "us-east-1d",
-                "us-east-1e",
-            "us-east-1f"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c",
+                "us-west-2d"
             ],
             "Owner": "amazon",
             "BaseEndpointDnsNames": [
-                "s3.us-east-1.vpce.amazonaws.com"
+                "s3.us-west-2.vpce.amazonaws.com"
             ],
             "VpcEndpointPolicySupported": true,
             "AcceptanceRequired": false,
@@ -17255,7 +19178,7 @@ Output:
         }
     ],
     "ServiceNames": [
-        "com.amazonaws.us-east-1.s3"
+        "com.amazonaws.us-west-2.s3"
     ]
 }
 ```
@@ -17286,7 +19209,7 @@ Output:
             "SubnetIds": [],
             "PrivateDnsEnabled": true,
             "State": "available",
-            "ServiceName": "com.amazonaws.us-east-1.dynamodb",
+            "ServiceName": "com.amazonaws.us-west-2.dynamodb",
             "RouteTableIds": [
                 "rtb-3d560345"
             ],
@@ -17310,7 +19233,7 @@ Output:
             ],
             "PrivateDnsEnabled": false,
             "State": "available",
-            "ServiceName": "com.amazonaws.us-east-1.elasticloadbalancing",
+            "ServiceName": "com.amazonaws.us-west-2.elasticloadbalancing",
             "RouteTableIds": [],
             "Groups": [
                 {
@@ -17324,15 +19247,15 @@ Output:
             "DnsEntries": [
                 {
                     "HostedZoneId": "Z7HUB22UULQXV",
-                    "DnsName": "vpce-0f89a33420c1931d7-bluzidnv.elasticloadbalancing.us-east-1.vpce.amazonaws.com"
+                    "DnsName": "vpce-0f89a33420c1931d7-bluzidnv.elasticloadbalancing.us-west-2.vpce.amazonaws.com"
                 },
                 {
                     "HostedZoneId": "Z7HUB22UULQXV",
-                    "DnsName": "vpce-0f89a33420c1931d7-bluzidnv-us-east-1b.elasticloadbalancing.us-east-1.vpce.amazonaws.com"
+                    "DnsName": "vpce-0f89a33420c1931d7-bluzidnv-us-west-2b.elasticloadbalancing.us-west-2.vpce.amazonaws.com"
                 },
                 {
                     "HostedZoneId": "Z7HUB22UULQXV",
-                    "DnsName": "vpce-0f89a33420c1931d7-bluzidnv-us-east-1a.elasticloadbalancing.us-east-1.vpce.amazonaws.com"
+                    "DnsName": "vpce-0f89a33420c1931d7-bluzidnv-us-west-2a.elasticloadbalancing.us-west-2.vpce.amazonaws.com"
                 }
             ],
             "OwnerId": "123456789012"
@@ -17340,8 +19263,8 @@ Output:
         {
             "VpcEndpointId": "vpce-aabbaabbaabbaabba",
             "VpcEndpointType": "GatewayLoadBalancer",
-            "VpcId": "vpc-111122223333aabbc",
-            "ServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-123123a1c43abc123",
+            "VpcId": "vpc-1a2b3c4d5e6f7a8b9",
+            "ServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-123123a1c43abc123",
             "State": "available",
             "SubnetIds": [
                 "subnet-0011aabbcc2233445"
@@ -17366,9 +19289,8 @@ For more information, see [Concepts](https://docs.aws.amazon.com/vpc/latest/priv
 The following code example shows how to use `describe-vpc-peering-connections`.
 
 **AWS CLI**
-**To describe your VPC peering connections**
-This example describes all of your VPC peering connections.
-Command:
+**Example 1: To describe your VPC peering connections**
+The following `describe-vpc-peering-connections` example describes all of your VPC peering connections.
 
 ```
 aws ec2 describe-vpc-peering-connections
@@ -17390,7 +19312,7 @@ Output:
                 }
             ],
             "AccepterVpcInfo": {
-                "OwnerId": "111122223333",
+                "OwnerId": "123456789111",
                 "VpcId": "vpc-1a2b3c4d",
                 "CidrBlock": "10.0.1.0/28"
             },
@@ -17400,14 +19322,14 @@ Output:
                     "AllowEgressFromLocalVpcToRemoteClassicLink": false,
                     "AllowEgressFromLocalClassicLinkToRemoteVpc": false
                 },
-                "OwnerId": "444455556666",
+                "OwnerId": "123456789222",
                 "VpcId": "vpc-123abc45",
                 "CidrBlock": "192.168.0.0/16"
             }
         },
         {
             "Status": {
-                "Message": "Pending Acceptance by 444455556666",
+                "Message": "Pending Acceptance by 123456789222",
                 "Code": "pending-acceptance"
             },
             "Tags": [],
@@ -17416,39 +19338,136 @@ Output:
                     "AllowEgressFromLocalVpcToRemoteClassicLink": false,
                     "AllowEgressFromLocalClassicLinkToRemoteVpc": false
                 },
-                "OwnerId": "444455556666",
+                "OwnerId": "123456789222",
                 "VpcId": "vpc-11aa22bb",
                 "CidrBlock": "10.0.0.0/28"
             },
             "VpcPeeringConnectionId": "pcx-abababab",
             "ExpirationTime": "2014-04-03T09:12:43.000Z",
             "AccepterVpcInfo": {
-                "OwnerId": "444455556666",
+                "OwnerId": "123456789222",
                 "VpcId": "vpc-33cc44dd"
             }
         }
     ]
 }
 ```
-**To describe specific VPC peering connections**
-This example describes all of your VPC peering connections that are in the pending-acceptance state.
-Command:
+For more information, see [VPC peering connections](https://docs.aws.amazon.com/vpc/latest/peering/working-with-vpc-peering.html) in the *Amazon VPC Peering Guide*.
+**Example 2: To describe specific VPC peering connections**
+The following `describe-vpc-peering-connections` example describes all of your VPC peering connections that are in the pending-acceptance state.
 
 ```
-aws ec2 describe-vpc-peering-connections --filters {{Name=status-code,Values=pending-acceptance}}
+aws ec2 describe-vpc-peering-connections \
+    --filters {{Name=status-code,Values=pending-acceptance}}
 ```
-This example describes all of your VPC peering connections that have the tag Owner=Finance.
-Command:
+Output:
 
 ```
-aws ec2 describe-vpc-peering-connections --filters {{Name=tag:Owner,Values=Finance}}
+{
+    "VpcPeeringConnections": [
+        {
+            "Status": {
+                "Message": "Pending Acceptance by 123456789222",
+                "Code": "pending-acceptance"
+            },
+            "Tags": [],
+            "RequesterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false,
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                },
+                "OwnerId": "123456789222",
+                "VpcId": "vpc-11aa22bb",
+                "CidrBlock": "10.0.0.0/28"
+            },
+            "VpcPeeringConnectionId": "pcx-abababab",
+            "ExpirationTime": "2014-04-03T09:12:43.000Z",
+            "AccepterVpcInfo": {
+                "OwnerId": "123456789222",
+                "VpcId": "vpc-33cc44dd"
+            }
+        }
+    ]
+}
 ```
-This example describes all of the VPC peering connections you requested for the specified VPC, vpc-1a2b3c4d.
-Command:
+The following `describe-vpc-peering-connections` example describes all of your VPC peering connections that have the tag Owner=Finance.
 
 ```
-aws ec2 describe-vpc-peering-connections --filters {{Name=requester-vpc-info.vpc-id,Values=vpc-1a2b3c4d}}
+aws ec2 describe-vpc-peering-connections \
+    --filters {{Name=tag:Owner,Values=Finance}}
 ```
+Output:
+
+```
+{
+    "VpcPeeringConnections": [
+        {
+            "Status": {
+                "Message": "Active",
+                "Code": "active"
+            },
+            "Tags": [
+                {
+                    "Value": "Finance",
+                    "Key": "Owner"
+                }
+            ],
+            "AccepterVpcInfo": {
+                "OwnerId": "123456789222",
+                "VpcId": "vpc-44dd55ee",
+                "CidrBlock": "10.1.0.0/16"
+            },
+            "VpcPeeringConnectionId": "pcx-cdcdcdcd",
+            "RequesterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false,
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                },
+                "OwnerId": "123456789222",
+                "VpcId": "vpc-123abc45",
+                "CidrBlock": "192.168.0.0/16"
+            }
+        }
+    ]
+}
+```
+The following `describe-vpc-peering-connections` example describes all of the VPC peering connections you requested for the specified VPC, vpc-1a2b3c4d.
+
+```
+aws ec2 describe-vpc-peering-connections \
+    --filters {{Name=requester-vpc-info.vpc-id,Values=vpc-1a2b3c4d}}
+```
+Output:
+
+```
+{
+    "VpcPeeringConnections": [
+        {
+            "Status": {
+                "Message": "Active",
+                "Code": "active"
+            },
+            "Tags": [],
+            "AccepterVpcInfo": {
+                "OwnerId": "123456789222",
+                "VpcId": "vpc-55ee66ff",
+                "CidrBlock": "172.31.0.0/16"
+            },
+            "VpcPeeringConnectionId": "pcx-efefefef",
+            "RequesterVpcInfo": {
+                "PeeringOptions": {
+                    "AllowEgressFromLocalVpcToRemoteClassicLink": false,
+                    "AllowEgressFromLocalClassicLinkToRemoteVpc": false
+                },
+                "OwnerId": "123456789111",
+                "VpcId": "vpc-1a2b3c4d",
+                "CidrBlock": "10.0.1.0/28"
+            }
+        }
+    ]
+}
+```
+For more information, see [VPC peering connections](https://docs.aws.amazon.com/vpc/latest/peering/working-with-vpc-peering.html) in the *Amazon VPC Peering Guide*.
 +  For API details, see [DescribeVpcPeeringConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpc-peering-connections.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpcs`
@@ -17473,7 +19492,7 @@ Output:
             "DhcpOptionsId": "dopt-19edf471",
             "State": "available",
             "VpcId": "vpc-0e9801d129EXAMPLE",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -17497,7 +19516,7 @@ Output:
             "DhcpOptionsId": "dopt-19edf471",
             "State": "available",
             "VpcId": "vpc-06e4ab6c6cEXAMPLE",
-            "OwnerId": "222222222222",
+            "OwnerId": "123456789111",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -17519,6 +19538,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure a virtual private cloud](https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html) in the *Amazon VPC User Guide*.
 **Example 2: To describe a specified VPC**
 The following `describe-vpcs` example retrieves details for the specified VPC.
 
@@ -17536,7 +19556,7 @@ Output:
             "DhcpOptionsId": "dopt-19edf471",
             "State": "available",
             "VpcId": "vpc-06e4ab6c6cEXAMPLE",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -17558,6 +19578,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure a virtual private cloud](https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeVpcs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpcs.html) in *AWS CLI Command Reference*.
 
 ### `describe-vpn-connections`
@@ -17627,6 +19648,53 @@ The following `describe-vpn-connections` example describes your Site-to-Site VPN
 aws ec2 describe-vpn-connections \
     --filters {{"Name=state,Values=available"}}
 ```
+Output:
+
+```
+{
+    "VpnConnections": [
+        {
+            "CustomerGatewayConfiguration": "...configuration information...",
+            "CustomerGatewayId": "cgw-01234567abcde1234",
+            "Category": "VPN",
+            "State": "available",
+            "Type": "ipsec.1",
+            "VpnConnectionId": "vpn-1122334455aabbccd",
+            "TransitGatewayId": "tgw-00112233445566aab",
+            "Options": {
+                "EnableAcceleration": false,
+                "StaticRoutesOnly": true,
+                "LocalIpv4NetworkCidr": "0.0.0.0/0",
+                "RemoteIpv4NetworkCidr": "0.0.0.0/0",
+                "TunnelInsideIpVersion": "ipv4"
+            },
+            "Routes": [],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "CanadaVPN"
+                }
+            ],
+            "VgwTelemetry": [
+                {
+                    "AcceptedRouteCount": 0,
+                    "LastStatusChange": "2020-07-29T10:35:11.000Z",
+                    "OutsideIpAddress": "203.0.113.3",
+                    "Status": "DOWN",
+                    "StatusMessage": ""
+                },
+                {
+                    "AcceptedRouteCount": 0,
+                    "LastStatusChange": "2020-09-02T09:09:33.000Z",
+                    "OutsideIpAddress": "203.0.113.5",
+                    "Status": "UP",
+                    "StatusMessage": ""
+                }
+            ]
+        }
+    ]
+}
+```
 For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DescribeVpnConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpn-connections.html) in *AWS CLI Command Reference*.
 
@@ -17637,8 +19705,7 @@ The following code example shows how to use `describe-vpn-gateways`.
 
 **AWS CLI**
 **To describe your virtual private gateways**
-This example describes your virtual private gateways.
-Command:
+The following `describe-vpn-gateways` example describes your virtual private gateways.
 
 ```
 aws ec2 describe-vpn-gateways
@@ -17673,6 +19740,7 @@ Output:
     ]
 }
 ```
+For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DescribeVpnGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpn-gateways.html) in *AWS CLI Command Reference*.
 
 ### `detach-classic-link-vpc`
@@ -17682,17 +19750,18 @@ The following code example shows how to use `detach-classic-link-vpc`.
 
 **AWS CLI**
 **To unlink (detach) an EC2-Classic instance from a VPC**
-This example unlinks instance i-0598c7d356eba48d7 from VPC vpc-88888888.
-Command:
+The following `detach-classic-link-vpc` example unlinks instance i-0598c7d356eba48d7 from VPC vpc-88888888.
 
 ```
-aws ec2 detach-classic-link-vpc --instance-id {{i-0598c7d356eba48d7}} --vpc-id {{vpc-88888888}}
+aws ec2 detach-classic-link-vpc \
+    --instance-id {{i-0598c7d356eba48d7}} \
+    --vpc-id {{vpc-88888888}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
 +  For API details, see [DetachClassicLinkVpc](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/detach-classic-link-vpc.html) in *AWS CLI Command Reference*.
@@ -17722,12 +19791,14 @@ The following code example shows how to use `detach-network-interface`.
 
 **AWS CLI**
 **To detach a network interface from your instance**
-This example detaches the specified network interface from the specified instance. If the command succeeds, no output is returned.
-Command:
+The following `detach-network-interface` example detaches the specified network interface from the specified instance.
 
 ```
-aws ec2 detach-network-interface --attachment-id {{eni-attach-66c4350a}}
+aws ec2 detach-network-interface \
+    --attachment-id {{eni-attach-66c4350a}}
 ```
+This command produces no output.
+For more information, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DetachNetworkInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/detach-network-interface.html) in *AWS CLI Command Reference*.
 
 ### `detach-verified-access-trust-provider`
@@ -17776,11 +19847,11 @@ The following code example shows how to use `detach-volume`.
 
 **AWS CLI**
 **To detach a volume from an instance**
-This example command detaches the volume (`vol-049df61146c4d7901`) from the instance it is attached to.
-Command:
+The following `detach-volume` example detaches the volume (`vol-049df61146c4d7901`) from the instance it is attached to.
 
 ```
-aws ec2 detach-volume --volume-id {{vol-1234567890abcdef0}}
+aws ec2 detach-volume \
+    --volume-id {{vol-049df61146c4d7901}}
 ```
 Output:
 
@@ -17793,6 +19864,7 @@ Output:
     "Device": "/dev/sdb"
 }
 ```
+For more information, see [Detach an Amazon EBS volume from an Amazon EC2 instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-detaching-volume.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DetachVolume](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/detach-volume.html) in *AWS CLI Command Reference*.
 
 ### `detach-vpn-gateway`
@@ -17802,12 +19874,15 @@ The following code example shows how to use `detach-vpn-gateway`.
 
 **AWS CLI**
 **To detach a virtual private gateway from your VPC**
-This example detaches the specified virtual private gateway from the specified VPC. If the command succeeds, no output is returned.
-Command:
+The following `detach-vpn-gateway` example detaches the specified virtual private gateway from the specified VPC.
 
 ```
-aws ec2 detach-vpn-gateway --vpn-gateway-id {{vgw-9a4cacf3}} --vpc-id {{vpc-a01106c2}}
+aws ec2 detach-vpn-gateway \
+    --vpn-gateway-id {{vgw-9a4cacf3}} \
+    --vpc-id {{vpc-a01106c2}}
 ```
+This command produces no output.
+For more information, see [How AWS Site-to-Site VPN works](https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [DetachVpnGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/detach-vpn-gateway.html) in *AWS CLI Command Reference*.
 
 ### `disable-address-transfer`
@@ -17882,6 +19957,7 @@ Output:
     "EbsEncryptionByDefault": false
 }
 ```
+For more information, see [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DisableEbsEncryptionByDefault](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disable-ebs-encryption-by-default.html) in *AWS CLI Command Reference*.
 
 ### `disable-fast-launch`
@@ -17930,7 +20006,7 @@ The following `disable-fast-snapshot-restores` example disables fast snapshot re
 
 ```
 aws ec2 disable-fast-snapshot-restores \
-    --availability-zones {{us-east-2a}} \
+    --availability-zones {{us-west-2a}} \
     --source-snapshot-ids {{snap-1234567890abcdef0}}
 ```
 Output:
@@ -17939,8 +20015,8 @@ Output:
 {
     "Successful": [
         {
-            "SnapshotId": "snap-1234567890abcdef0"
-            "AvailabilityZone": "us-east-2a",
+            "SnapshotId": "snap-1234567890abcdef0",
+            "AvailabilityZone": "us-west-2a",
             "State": "disabling",
             "StateTransitionReason": "Client.UserInitiated",
             "OwnerId": "123456789012",
@@ -17950,6 +20026,7 @@ Output:
     "Unsuccessful": []
 }
 ```
+For more information, see [Amazon EBS fast snapshot restore](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fast-snapshot-restore.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DisableFastSnapshotRestores](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disable-fast-snapshot-restores.html) in *AWS CLI Command Reference*.
 
 ### `disable-image-block-public-access`
@@ -17958,12 +20035,11 @@ Output:
 The following code example shows how to use `disable-image-block-public-access`.
 
 **AWS CLI**
-**To disable block public access for AMIs in the specified Region**
-The following `disable-image-block-public-access` example disables block public access for AMIs at the account level in the specified Region.
+**To disable block public access for AMIs in the current Region**
+The following `disable-image-block-public-access` example disables block public access for AMIs at the account level in the current Region.
 
 ```
-aws ec2 disable-image-block-public-access \
-    --region {{us-east-1}}
+aws ec2 disable-image-block-public-access
 ```
 Output:
 
@@ -17992,8 +20068,7 @@ Output:
 
 ```
 {
-    "RequestID": "11aabb229-4eac-35bd-99ed-be587EXAMPLE",
-    "Return": "true"
+    "Return": true
 }
 ```
 For more information, see [Deprecate an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-deprecate.html) in the *Amazon EC2 User Guide*.
@@ -18039,7 +20114,7 @@ Output:
 
 ```
 {
-    "Return": "true"
+    "Return": true
 }
 ```
 For more information, see [Disable an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disable-an-ami.html) in the *Amazon EC2 User Guide*.
@@ -18052,16 +20127,11 @@ The following code example shows how to use `disable-ipam-organization-admin-acc
 
 **AWS CLI**
 **To disable the delegated IPAM admin**
+The following `disable-ipam-organization-admin-account` example disables the delegated IPAM admin in your AWS account.
 In certain scenarios, you'll integrate IPAM with AWS Organizations. When you do that, the AWS Organizations management account delegates an AWS Organizations member account as the IPAM admin.
 In this example, you are the AWS Organizations management account that delegated the IPAM admin account and you want to disable that account from being the IPAM admin.
-You can use any AWS Region for `--region` when making this request. You don't have to use the Region where you originally delegated the admin, where the IPAM was created, or an IPAM operating Region. If you disable the delegated admin account, you can re-enable it at any time or delegate a new account as IPAM admin.
-The following `disable-ipam-organization-admin-account` example disables the delegated IPAM admin in your AWS account.
-
-```
-aws ec2 disable-ipam-organization-admin-account \
-    --delegated-admin-account-id {{320805250157}} \
-    --region {{ap-south-1}}
-```
+You can use any AWS Region when making this request. You don't have to use the Region where you originally delegated the admin, where the IPAM was created, or an IPAM operating Region. If you disable the delegated admin account, you can re-enable it at any time or delegate a new account as IPAM admin.
+aws ec2 disable-ipam-organization-admin-account --delegated-admin-account-id 123456789012
 Output:
 
 ```
@@ -18153,12 +20223,15 @@ The following code example shows how to use `disable-vgw-route-propagation`.
 
 **AWS CLI**
 **To disable route propagation**
-This example disables the specified virtual private gateway from propagating static routes to the specified route table. If the command succeeds, no output is returned.
-Command:
+The following `disable-vgw-route-propagation` example disables the specified virtual private gateway from propagating static routes to the specified route table.
 
 ```
-aws ec2 disable-vgw-route-propagation --route-table-id {{rtb-22574640}} --gateway-id {{vgw-9a4cacf3}}
+aws ec2 disable-vgw-route-propagation \
+    --route-table-id {{rtb-22574640}} \
+    --gateway-id {{vgw-9a4cacf3}}
 ```
+This command produces no output.
+For more information, see [Enable or disable route propagation](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html#EnableDisableRouteProp) in the *Amazon VPC User Guide*.
 +  For API details, see [DisableVgwRoutePropagation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disable-vgw-route-propagation.html) in *AWS CLI Command Reference*.
 
 ### `disable-vpc-classic-link-dns-support`
@@ -18168,17 +20241,17 @@ The following code example shows how to use `disable-vpc-classic-link-dns-suppor
 
 **AWS CLI**
 **To disable ClassicLink DNS support for a VPC**
-This example disables ClassicLink DNS support for `vpc-88888888`.
-Command:
+The following `disable-vpc-classic-link-dns-support` example disables ClassicLink DNS support for `vpc-88888888`.
 
 ```
-aws ec2 disable-vpc-classic-link-dns-support --vpc-id {{vpc-88888888}}
+aws ec2 disable-vpc-classic-link-dns-support \
+    --vpc-id {{vpc-88888888}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
 +  For API details, see [DisableVpcClassicLinkDnsSupport](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disable-vpc-classic-link-dns-support.html) in *AWS CLI Command Reference*.
@@ -18190,17 +20263,17 @@ The following code example shows how to use `disable-vpc-classic-link`.
 
 **AWS CLI**
 **To disable ClassicLink for a VPC**
-This example disables ClassicLink for vpc-8888888.
-Command:
+The following `disable-vpc-classic-link` example disables ClassicLink for `vpc-88888888`.
 
 ```
-aws ec2 disable-vpc-classic-link --vpc-id {{vpc-88888888}}
+aws ec2 disable-vpc-classic-link \
+    --vpc-id {{vpc-88888888}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
 +  For API details, see [DisableVpcClassicLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disable-vpc-classic-link.html) in *AWS CLI Command Reference*.
@@ -18211,20 +20284,24 @@ Output:
 The following code example shows how to use `disassociate-address`.
 
 **AWS CLI**
-**To disassociate an Elastic IP addresses in EC2-Classic**
-This example disassociates an Elastic IP address from an instance in EC2-Classic. If the command succeeds, no output is returned.
-Command:
+**Example 1: To disassociate an Elastic IP address in EC2-Classic**
+The following `disassociate-address` example disassociates an Elastic IP address from an instance in EC2-Classic.
 
 ```
-aws ec2 disassociate-address --public-ip {{198.51.100.0}}
+aws ec2 disassociate-address \
+    --public-ip {{198.51.100.0}}
 ```
-**To disassociate an Elastic IP address in EC2-VPC**
-This example disassociates an Elastic IP address from an instance in a VPC. If the command succeeds, no output is returned.
-Command:
+This command produces no output.
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
+**Example 2: To disassociate an Elastic IP address in EC2-VPC**
+The following `disassociate-address` example disassociates an Elastic IP address from an instance in a VPC.
 
 ```
-aws ec2 disassociate-address --association-id {{eipassoc-2bebb745}}
+aws ec2 disassociate-address \
+    --association-id {{eipassoc-2bebb745}}
 ```
+This command produces no output.
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DisassociateAddress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-address.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-client-vpn-target-network`
@@ -18238,7 +20315,7 @@ The following `disassociate-client-vpn-target-network` example disassociates the
 
 ```
 aws ec2 disassociate-client-vpn-target-network \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}} \
     --association-id {{cvpn-assoc-12312312312312312}}
 ```
 Output:
@@ -18261,27 +20338,28 @@ The following code example shows how to use `disassociate-iam-instance-profile`.
 
 **AWS CLI**
 **To disassociate an IAM instance profile**
-This example disassociates an IAM instance profile with the association ID `iip-assoc-05020b59952902f5f`.
-Command:
+The following `disassociate-iam-instance-profile` example disassociates an IAM instance profile with the association ID `iip-assoc-05020b59952902f5f`.
 
 ```
-aws ec2 disassociate-iam-instance-profile --association-id {{iip-assoc-05020b59952902f5f}}
+aws ec2 disassociate-iam-instance-profile \
+    --association-id {{iip-assoc-05020b59952902f5f}}
 ```
 Output:
 
 ```
 {
-  "IamInstanceProfileAssociation": {
-      "InstanceId": "i-123456789abcde123",
-      "State": "disassociating",
-      "AssociationId": "iip-assoc-05020b59952902f5f",
-      "IamInstanceProfile": {
-          "Id": "AIPAI5IVIHMFFYY2DKV5Y",
-          "Arn": "arn:aws:iam::123456789012:instance-profile/admin-role"
-      }
-  }
+    "IamInstanceProfileAssociation": {
+        "InstanceId": "i-123456789abcde123",
+        "State": "disassociating",
+        "AssociationId": "iip-assoc-05020b59952902f5f",
+        "IamInstanceProfile": {
+            "Id": "AIPAI5IVIHMFFYY2DKV5Y",
+            "Arn": "arn:aws:iam::123456789012:instance-profile/admin-role"
+        }
+    }
 }
 ```
+For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DisassociateIamInstanceProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-iam-instance-profile.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-instance-event-window`
@@ -18295,7 +20373,6 @@ The following `disassociate-instance-event-window` example disassociates one or 
 
 ```
 aws ec2 disassociate-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --association-target {{"InstanceIds=i-1234567890abcdef0,i-0598c7d356eba48d7"}}
 ```
@@ -18316,13 +20393,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 2: To disassociate instance tags from an event window**
 The following `disassociate-instance-event-window` example disassociates instance tags from an event window. Specify the `instance-event-window-id` parameter to specify the event window. To disassociate instance tags, specify the `association-target` parameter, and for the parameter values, specify one or more tags.
 
 ```
 aws ec2 disassociate-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --association-target {{"InstanceTags=[{Key=k2,Value=v2},{Key=k1,Value=v1}]"}}
 ```
@@ -18343,13 +20419,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 3: To disassociate a Dedicated Host from an event window**
 The following `disassociate-instance-event-window` example disassociates a Dedicated Host from an event window. Specify the `instance-event-window-id` parameter to specify the event window. To disassociate a Dedicated Host, specify the `association-target` parameter, and for the parameter values, specify one or more Dedicated Host IDs.
 
 ```
 aws ec2 disassociate-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --association-target {{DedicatedHostIds=h-029fa35a02b99801d}}
 ```
@@ -18370,7 +20445,7 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 +  For API details, see [DisassociateInstanceEventWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-instance-event-window.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-ipam-resource-discovery`
@@ -18380,26 +20455,24 @@ The following code example shows how to use `disassociate-ipam-resource-discover
 
 **AWS CLI**
 **To disassociate a resource discovery from an IPAM**
-In this example, you are an IPAM delegated admin account and you want to disassociate an IPAM resource discovery from your IPAM. You ran the describe command and noticed that the `"ResourceDiscoveryStatus": "not-found"` and you want to disassociate it from your IPAM to make room for other associations.
-The following `disassociate-ipam-resource-discovery` example disassociates an IPAM resource discovery in your AWS account.
+The following `disassociate-ipam-resource-discovery` example disassociates an IPAM resource discovery in your AWS account. In this example, you are an IPAM delegated admin account and you want to disassociate an IPAM resource discovery from your IPAM. You ran the describe command and noticed that the `"ResourceDiscoveryStatus": "not-found"` and you want to disassociate it from your IPAM to make room for other associations.
 
 ```
 aws ec2 disassociate-ipam-resource-discovery \
-    --ipam-resource-discovery-association-id {{ipam-res-disco-assoc-04382a6346357cf82}} \
-    --region {{us-east-1}}
+    --ipam-resource-discovery-association-id {{ipam-res-disco-assoc-04382a6346357cf82}}
 ```
 Output:
 
 ```
 {
     "IpamResourceDiscoveryAssociation": {
-        "OwnerId": "320805250157",
+        "OwnerId": "123456789012",
         "IpamResourceDiscoveryAssociationId": "ipam-res-disco-assoc-04382a6346357cf82",
-        "IpamResourceDiscoveryAssociationArn":             "arn:aws:ec2::320805250157:ipam-resource-discovery-association/ipam-res-disco-assoc-04382a6346357cf82",
+        "IpamResourceDiscoveryAssociationArn":             "arn:aws:ec2::123456789012:ipam-resource-discovery-association/ipam-res-disco-assoc-04382a6346357cf82",
         "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
         "IpamId": "ipam-005f921c17ebd5107",
-        "IpamArn": "arn:aws:ec2::320805250157:ipam/ipam-005f921c17ebd5107",
-        "IpamRegion": "us-east-1",
+        "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-005f921c17ebd5107",
+        "IpamRegion": "us-west-2",
         "IsDefault": false,
         "ResourceDiscoveryStatus": "not-found",
         "State": "disassociate-in-progress"
@@ -18451,12 +20524,14 @@ The following code example shows how to use `disassociate-route-table`.
 
 **AWS CLI**
 **To disassociate a route table**
-This example disassociates the specified route table from the specified subnet. If the command succeeds, no output is returned.
-Command:
+The following `disassociate-route-table` example disassociates the specified route table from the specified subnet.
 
 ```
-aws ec2 disassociate-route-table --association-id {{rtbassoc-781d0d1a}}
+aws ec2 disassociate-route-table \
+    --association-id {{rtbassoc-781d0d1a}}
 ```
+This command produces no output.
+For more information, see [Change the route table for a subnet](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html#ChangeRouteTable) in the *Amazon VPC User Guide*.
 +  For API details, see [DisassociateRouteTable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-route-table.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-security-group-vpc`
@@ -18490,26 +20565,27 @@ The following code example shows how to use `disassociate-subnet-cidr-block`.
 
 **AWS CLI**
 **To disassociate an IPv6 CIDR block from a subnet**
-This example disassociates an IPv6 CIDR block from a subnet using the association ID for the CIDR block.
-Command:
+The following `disassociate-subnet-cidr-block` example disassociates an IPv6 CIDR block from a subnet using the association ID for the CIDR block.
 
 ```
-aws ec2 disassociate-subnet-cidr-block --association-id {{subnet-cidr-assoc-3aa54053}}
+aws ec2 disassociate-subnet-cidr-block \
+    --association-id {{subnet-cidr-assoc-3aa54053}}
 ```
 Output:
 
 ```
 {
-  "SubnetId": "subnet-5f46ec3b",
-  "Ipv6CidrBlockAssociation": {
-      "Ipv6CidrBlock": "2001:db8:1234:1a00::/64",
-      "AssociationId": "subnet-cidr-assoc-3aa54053",
-      "Ipv6CidrBlockState": {
-          "State": "disassociating"
-      }
-  }
+    "SubnetId": "subnet-5f46ec3b",
+    "Ipv6CidrBlockAssociation": {
+        "Ipv6CidrBlock": "2001:db8:1234:1a00::/64",
+        "AssociationId": "subnet-cidr-assoc-3aa54053",
+        "Ipv6CidrBlockState": {
+            "State": "disassociating"
+        }
+    }
 }
 ```
+For more information, see [Add or remove an IPv6 CIDR block from your subnet](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-associate-ipv6-cidr.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DisassociateSubnetCidrBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-subnet-cidr-block.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-transit-gateway-multicast-domain`
@@ -18545,7 +20621,7 @@ Output:
     }
 }
 ```
-For more information, see [Multicast domains](https://docs.aws.amazon.com/vpc/latest/tgw/multicast-domains-about.html) in the *Transit Gateways Guide*'.
+For more information, see [Multicast domains](https://docs.aws.amazon.com/vpc/latest/tgw/multicast-domains-about.html) in the *Transit Gateways Guide*.
 +  For API details, see [DisassociateTransitGatewayMulticastDomain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-transit-gateway-multicast-domain.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-transit-gateway-route-table`
@@ -18569,7 +20645,7 @@ Output:
     "Association": {
         "TransitGatewayRouteTableId": "tgw-rtb-002573ed1eEXAMPLE",
         "TransitGatewayAttachmentId": "tgw-attach-08e0bc912cEXAMPLE",
-        "ResourceId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
+        "ResourceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "ResourceType": "direct-connect-gateway",
         "State": "disassociating"
     }
@@ -18584,48 +20660,50 @@ For more information, see [Transit gateway route tables](https://docs.aws.amazon
 The following code example shows how to use `disassociate-vpc-cidr-block`.
 
 **AWS CLI**
-**To disassociate an IPv6 CIDR block from a VPC**
-This example disassociates an IPv6 CIDR block from a VPC using the association ID for the CIDR block.
-Command:
+**Example 1: To disassociate an IPv6 CIDR block from a VPC**
+The following `disassociate-vpc-cidr-block` example disassociates an IPv6 CIDR block from a VPC using the association ID for the CIDR block.
 
 ```
-aws ec2 disassociate-vpc-cidr-block --association-id {{vpc-cidr-assoc-eca54085}}
+aws ec2 disassociate-vpc-cidr-block \
+    --association-id {{vpc-cidr-assoc-eca54085}}
 ```
 Output:
 
 ```
 {
-  "Ipv6CidrBlockAssociation": {
-      "Ipv6CidrBlock": "2001:db8:1234:1a00::/56",
-      "AssociationId": "vpc-cidr-assoc-eca54085",
-      "Ipv6CidrBlockState": {
-          "State": "disassociating"
-      }
-  },
-  "VpcId": "vpc-a034d6c4"
+    "Ipv6CidrBlockAssociation": {
+        "Ipv6CidrBlock": "2001:db8:1234:1a00::/56",
+        "AssociationId": "vpc-cidr-assoc-eca54085",
+        "Ipv6CidrBlockState": {
+            "State": "disassociating"
+        }
+    },
+    "VpcId": "vpc-a034d6c4"
 }
 ```
-**To disassociate an IPv4 CIDR block from a VPC**
-This example disassociates an IPv4 CIDR block from a VPC.
-Command:
+For more information, see [Add or remove a CIDR block from your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/add-ipv4-cidr.html) in the *Amazon VPC User Guide*.
+**Example 2: To disassociate an IPv4 CIDR block from a VPC**
+The following `disassociate-vpc-cidr-block` example disassociates an IPv4 CIDR block from a VPC.
 
 ```
-aws ec2 disassociate-vpc-cidr-block --association-id {{vpc-cidr-assoc-0287ac6b}}
+aws ec2 disassociate-vpc-cidr-block \
+    --association-id {{vpc-cidr-assoc-0287ac6b}}
 ```
 Output:
 
 ```
 {
-  "CidrBlockAssociation": {
-      "AssociationId": "vpc-cidr-assoc-0287ac6b",
-      "CidrBlock": "172.18.0.0/16",
-      "CidrBlockState": {
-          "State": "disassociating"
-      }
-  },
-  "VpcId": "vpc-27621243"
+    "CidrBlockAssociation": {
+        "AssociationId": "vpc-cidr-assoc-0287ac6b",
+        "CidrBlock": "172.18.0.0/16",
+        "CidrBlockState": {
+            "State": "disassociating"
+        }
+    },
+    "VpcId": "vpc-27621243"
 }
 ```
+For more information, see [Add or remove a CIDR block from your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/add-ipv4-cidr.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DisassociateVpcCidrBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/disassociate-vpc-cidr-block.html) in *AWS CLI Command Reference*.
 
 ### `enable-address-transfer`
@@ -18646,7 +20724,7 @@ Output:
 
 ```
 {
-     "AddressTransfer": {
+    "AddressTransfer": {
         "PublicIp": "100.21.184.216",
         "AllocationId": "eipalloc-09ad461b0d03f6aaf",
         "TransferAccountId": "123456789012",
@@ -18703,6 +20781,7 @@ Output:
     "EbsEncryptionByDefault": true
 }
 ```
+For more information, see [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 +  For API details, see [EnableEbsEncryptionByDefault](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-ebs-encryption-by-default.html) in *AWS CLI Command Reference*.
 
 ### `enable-fast-launch`
@@ -18751,7 +20830,7 @@ The following `enable-fast-snapshot-restores` example enables fast snapshot rest
 
 ```
 aws ec2 enable-fast-snapshot-restores \
-    --availability-zones {{us-east-2a}} {{us-east-2b}} \
+    --availability-zones {{us-west-2a}} {{us-west-2b}} \
     --source-snapshot-ids {{snap-1234567890abcdef0}}
 ```
 Output:
@@ -18760,16 +20839,16 @@ Output:
 {
     "Successful": [
         {
-            "SnapshotId": "snap-1234567890abcdef0"
-            "AvailabilityZone": "us-east-2a",
+            "SnapshotId": "snap-1234567890abcdef0",
+            "AvailabilityZone": "us-west-2a",
             "State": "enabling",
             "StateTransitionReason": "Client.UserInitiated",
             "OwnerId": "123456789012",
             "EnablingTime": "2020-01-25T23:57:49.602Z"
         },
         {
-            "SnapshotId": "snap-1234567890abcdef0"
-            "AvailabilityZone": "us-east-2b",
+            "SnapshotId": "snap-1234567890abcdef0",
+            "AvailabilityZone": "us-west-2b",
             "State": "enabling",
             "StateTransitionReason": "Client.UserInitiated",
             "OwnerId": "123456789012",
@@ -18779,6 +20858,7 @@ Output:
     "Unsuccessful": []
 }
 ```
+For more information, see [Amazon EBS fast snapshot restore](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-fast-snapshot-restore.html) in the *Amazon EBS User Guide*.
 +  For API details, see [EnableFastSnapshotRestores](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-fast-snapshot-restores.html) in *AWS CLI Command Reference*.
 
 ### `enable-image-block-public-access`
@@ -18787,12 +20867,11 @@ Output:
 The following code example shows how to use `enable-image-block-public-access`.
 
 **AWS CLI**
-**To enable block public access for AMIs in the specified Region**
-The following `enable-image-block-public-access` example enables block public access for AMIs at the account level in the specified Region.
+**To enable block public access for AMIs in the current Region**
+The following `enable-image-block-public-access` example enables block public access for AMIs at the account level in the current Region.
 
 ```
 aws ec2 enable-image-block-public-access \
-    --region {{us-east-1}} \
     --image-block-public-access-state {{block-new-sharing}}
 ```
 Output:
@@ -18802,7 +20881,7 @@ Output:
     "ImageBlockPublicAccessState": "block-new-sharing"
 }
 ```
-For more information, see [Block public access to your AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html#block-public-access-to-amis) in the *Amazon EC2 User Guide*.
+For more information, see [Block public access to your AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-public-access-to-amis.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [EnableImageBlockPublicAccess](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-image-block-public-access.html) in *AWS CLI Command Reference*.
 
 ### `enable-image-deprecation`
@@ -18823,8 +20902,7 @@ Output:
 
 ```
 {
-    "RequestID": "59dbff89-35bd-4eac-99ed-be587EXAMPLE",
-    "Return": "true"
+    "Return": true
 }
 ```
 For more information, see [Deprecate an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-deprecate.html#deprecate-ami) in the *Amazon EC2 User Guide*.
@@ -18870,7 +20948,7 @@ Output:
 
 ```
 {
-    "Return": "true"
+    "Return": true
 }
 ```
 For more information, see [Disable an AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/disable-an-ami.html) in the *Amazon EC2 User Guide*.
@@ -18887,7 +20965,7 @@ The following `enable-ipam-organization-admin-account` example integrates IPAM w
 
 ```
 aws ec2 enable-ipam-organization-admin-account \
-    --delegated-admin-account-id {{320805250157}}
+    --delegated-admin-account-id {{123456789012}}
 ```
 Output:
 
@@ -18997,12 +21075,15 @@ The following code example shows how to use `enable-vgw-route-propagation`.
 
 **AWS CLI**
 **To enable route propagation**
-This example enables the specified virtual private gateway to propagate static routes to the specified route table. If the command succeeds, no output is returned.
-Command:
+The following `enable-vgw-route-propagation` example enables the specified virtual private gateway to propagate static routes to the specified route table.
 
 ```
-aws ec2 enable-vgw-route-propagation --route-table-id {{rtb-22574640}} --gateway-id {{vgw-9a4cacf3}}
+aws ec2 enable-vgw-route-propagation \
+    --route-table-id {{rtb-22574640}} \
+    --gateway-id {{vgw-9a4cacf3}}
 ```
+This command produces no output.
+For more information, see [Manage subnet route tables](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html#EnableDisableRouteProp) in the *Amazon VPC User Guide*.
 +  For API details, see [EnableVgwRoutePropagation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-vgw-route-propagation.html) in *AWS CLI Command Reference*.
 
 ### `enable-volume-io`
@@ -19012,19 +21093,14 @@ The following code example shows how to use `enable-volume-io`.
 
 **AWS CLI**
 **To enable I/O for a volume**
-This example enables I/O on volume `vol-1234567890abcdef0`.
-Command:
+The following `enable-volume-io` example enables I/O on volume `vol-1234567890abcdef0`.
 
 ```
-aws ec2 enable-volume-io --volume-id {{vol-1234567890abcdef0}}
+aws ec2 enable-volume-io \
+    --volume-id {{vol-1234567890abcdef0}}
 ```
-Output:
-
-```
-{
-  "Return": true
-}
-```
+This command produces no output.
+For more information, see [Work with an impaired Amazon EBS volume](https://docs.aws.amazon.com/ebs/latest/userguide/work_volumes_impaired.html) in the *Amazon EBS User Guide*.
 +  For API details, see [EnableVolumeIo](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-volume-io.html) in *AWS CLI Command Reference*.
 
 ### `enable-vpc-classic-link-dns-support`
@@ -19034,17 +21110,17 @@ The following code example shows how to use `enable-vpc-classic-link-dns-support
 
 **AWS CLI**
 **To enable ClassicLink DNS support for a VPC**
-This example enables ClassicLink DNS support for `vpc-88888888`.
-Command:
+The following `enable-vpc-classic-link-dns-support` example enables ClassicLink DNS support for `vpc-88888888`.
 
 ```
-aws ec2 enable-vpc-classic-link-dns-support --vpc-id {{vpc-88888888}}
+aws ec2 enable-vpc-classic-link-dns-support \
+    --vpc-id {{vpc-88888888}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
 +  For API details, see [EnableVpcClassicLinkDnsSupport](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-vpc-classic-link-dns-support.html) in *AWS CLI Command Reference*.
@@ -19056,17 +21132,17 @@ The following code example shows how to use `enable-vpc-classic-link`.
 
 **AWS CLI**
 **To enable a VPC for ClassicLink**
-This example enables vpc-8888888 for ClassicLink.
-Command:
+The following `enable-vpc-classic-link` example enables `vpc-88888888` for ClassicLink.
 
 ```
-aws ec2 enable-vpc-classic-link --vpc-id {{vpc-88888888}}
+aws ec2 enable-vpc-classic-link \
+    --vpc-id {{vpc-88888888}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
 +  For API details, see [EnableVpcClassicLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/enable-vpc-classic-link.html) in *AWS CLI Command Reference*.
@@ -19082,7 +21158,7 @@ The following `export-client-vpn-client-certificate-revocation-list` example exp
 
 ```
 aws ec2 export-client-vpn-client-certificate-revocation-list \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}} \
     --output {{text}}
 ```
 Output:
@@ -19104,7 +21180,7 @@ nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
 FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
 NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
 -----END X509 CRL-----
-STATUS      pending
+STATUS    pending
 ```
 For more information, see [Client Certificate Revocation Lists](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-certificates.html) in the *AWS Client VPN Administrator Guide*.
 +  For API details, see [ExportClientVpnClientCertificateRevocationList](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/export-client-vpn-client-certificate-revocation-list.html) in *AWS CLI Command Reference*.
@@ -19120,7 +21196,7 @@ The following `export-client-vpn-client-configuration` example exports the clien
 
 ```
 aws ec2 export-client-vpn-client-configuration \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}} \
     --output {{text}}
 ```
 Output:
@@ -19129,7 +21205,7 @@ Output:
 client
 dev tun
 proto udp
-remote cvpn-endpoint-123456789123abcde.prod.clientvpn.ap-south-1.amazonaws.com 443
+remote cvpn-endpoint-123456789012abcde.prod.clientvpn.us-west-2.amazonaws.com 443
 remote-random-hostname
 resolv-retry infinite
 nobind
@@ -19181,7 +21257,7 @@ Output:
 ```
 {
     "DiskImageFormat": "vmdk",
-    "ExportImageTaskId": "export-ami-1234567890abcdef0"
+    "ExportImageTaskId": "export-ami-1234567890abcdef0",
     "ImageId": "ami-1234567890abcdef0",
     "RoleName": "vmimport",
     "Progress": "0",
@@ -19193,6 +21269,7 @@ Output:
     "StatusMessage": "validating"
 }
 ```
+For more information, see [Export a VM from an Amazon Machine Image (AMI) using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport_image.html) in the *VM Import/Export User Guide*.
 +  For API details, see [ExportImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/export-image.html) in *AWS CLI Command Reference*.
 
 ### `get-associated-ipv6-pool-cidrs`
@@ -19220,6 +21297,7 @@ Output:
     ]
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetAssociatedIpv6PoolCidrs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-associated-ipv6-pool-cidrs.html) in *AWS CLI Command Reference*.
 
 ### `get-aws-network-performance-data`
@@ -19369,7 +21447,7 @@ Output:
     "LocalGatewayRouteTableId": "lgw-rtb-059615ef7dEXAMPLE"
 }
 ```
-For more information, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing) in the *AWS Outposts User Guide for Outposts racks*.
+For more information, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing) in the *AWS Outposts User Guide*.
 +  For API details, see [GetCoipPoolUsage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-coip-pool-usage.html) in *AWS CLI Command Reference*.
 
 ### `get-console-output`
@@ -19440,6 +21518,7 @@ Output:
     "InstanceId": "i-1234567890abcdef0"
 }
 ```
+For more information, see [Troubleshoot an unreachable Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-unreachable-instance.html#instance-console-screenshot) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetConsoleScreenshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-console-screenshot.html) in *AWS CLI Command Reference*.
 
 ### `get-default-credit-specification`
@@ -19465,6 +21544,7 @@ Output:
     }
 }
 ```
+For more information, see [Configure burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-how-to.html#burstable-performance-instance-set-default-credit-specification-for-account) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetDefaultCreditSpecification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-default-credit-specification.html) in *AWS CLI Command Reference*.
 
 ### `get-ebs-default-kms-key-id`
@@ -19479,20 +21559,22 @@ The following `get-ebs-default-kms-key-id` example describes the default CMK for
 ```
 aws ec2 get-ebs-default-kms-key-id
 ```
-The output shows the default CMK for EBS encryption, which is an AWS managed CMK with the alias `alias/aws/ebs`.
+Output:
 
 ```
 {
     "KmsKeyId": "alias/aws/ebs"
 }
 ```
+The preceding output shows the default CMK for EBS encryption, which is an AWS managed CMK with the alias `alias/aws/ebs`.
 The following output shows a custom CMK for EBS encryption.
 
 ```
 {
-    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/0ea3fef3-80a7-4778-9d8c-1c0c6EXAMPLE"
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html) in the *Amazon EBS User Guide*.
 +  For API details, see [GetEbsDefaultKmsKeyId](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-ebs-default-kms-key-id.html) in *AWS CLI Command Reference*.
 
 ### `get-ebs-encryption-by-default`
@@ -19507,13 +21589,14 @@ The following `get-ebs-encryption-by-default` example indicates whether EBS encr
 ```
 aws ec2 get-ebs-encryption-by-default
 ```
-The following output indicates that EBS encryption by default is disabled.
+Output:
 
 ```
 {
     "EbsEncryptionByDefault": false
 }
 ```
+The preceding output indicates that EBS encryption by default is disabled.
 The following output indicates that EBS encryption by default is enabled.
 
 ```
@@ -19521,6 +21604,7 @@ The following output indicates that EBS encryption by default is enabled.
     "EbsEncryptionByDefault": true
 }
 ```
+For more information, see [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 +  For API details, see [GetEbsEncryptionByDefault](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-ebs-encryption-by-default.html) in *AWS CLI Command Reference*.
 
 ### `get-flow-logs-integration-template`
@@ -19531,7 +21615,7 @@ The following code example shows how to use `get-flow-logs-integration-template`
 **AWS CLI**
 **To create a CloudFormation template to automate the integration of VPC flow logs with Amazon Athena**
 The following `get-flow-logs-integration-template` examples create a CloudFormation template to automate the integration of VPC flow logs with Amazon Athena.
-Linux:
+Linux command.
 
 ```
 aws ec2 get-flow-logs-integration-template \
@@ -19539,7 +21623,7 @@ aws ec2 get-flow-logs-integration-template \
     --config-delivery-s3-destination-arn {{arn:aws:s3:::amzn-s3-demo-bucket}} \
     --integrate-services AthenaIntegrations='[{IntegrationResultS3DestinationArn=arn:aws:s3:::amzn-s3-demo-bucket,PartitionLoadFrequency=none,PartitionStartDate=2021-07-21T00:40:00,PartitionEndDate=2021-07-21T00:42:00},{IntegrationResultS3DestinationArn=arn:aws:s3:::amzn-s3-demo-bucket,PartitionLoadFrequency=none,PartitionStartDate=2021-07-21T00:40:00,PartitionEndDate=2021-07-21T00:42:00}]'
 ```
-Windows:
+Windows command.
 
 ```
 aws ec2 get-flow-logs-integration-template {{^}}
@@ -19551,7 +21635,7 @@ Output:
 
 ```
 {
-    "Result": "https://amzn-s3-demo-bucket.s3.us-east-2.amazonaws.com/VPCFlowLogsIntegrationTemplate_fl-1234567890abcdef0_Wed%20Jul%2021%2000%3A57%3A56%20UTC%202021.yml"
+    "Result": "https://amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com/VPCFlowLogsIntegrationTemplate_fl-1234567890abcdef0_Wed%20Jul%2021%2000%3A57%3A56%20UTC%202021.yml"
 }
 ```
 For information on using CloudFormation templates, see [Working with AWS CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) in the *AWS CloudFormation User Guide*.
@@ -19575,7 +21659,7 @@ Output:
 
 ```
 {
-    "CapacityReservationsGroup": [
+    "CapacityReservationGroups": [
         {
             "GroupArn": "arn:aws:resource-groups:us-west-2:123456789012:group/my-resource-group",
             "OwnerId": "123456789012"
@@ -19593,32 +21677,34 @@ The following code example shows how to use `get-host-reservation-purchase-previ
 
 **AWS CLI**
 **To get a purchase preview for a Dedicated Host Reservation**
-This example provides a preview of the costs for a specified Dedicated Host Reservation for the specified Dedicated Host in your account.
-Command:
+The following `get-host-reservation-purchase-preview` example provides a preview of the costs for a specified Dedicated Host Reservation for the specified Dedicated Host in your account.
 
 ```
-aws ec2 get-host-reservation-purchase-preview --offering-id {{hro-03f707bf363b6b324}} --host-id-set {{h-013abcd2a00cbd123}}
+aws ec2 get-host-reservation-purchase-preview \
+    --offering-id {{hro-03f707bf363b6b324}} \
+    --host-id-set {{h-013abcd2a00cbd123}}
 ```
 Output:
 
 ```
 {
-  "TotalHourlyPrice": "1.499",
-  "Purchase": [
-      {
-          "HourlyPrice": "1.499",
-          "InstanceFamily": "m4",
-          "PaymentOption": "NoUpfront",
-          "HostIdSet": [
-              "h-013abcd2a00cbd123"
-          ],
-          "UpfrontPrice": "0.000",
-          "Duration": 31536000
-      }
-  ],
-  "TotalUpfrontPrice": "0.000"
+    "TotalHourlyPrice": "1.499",
+    "Purchase": [
+        {
+            "HourlyPrice": "1.499",
+            "InstanceFamily": "m4",
+            "PaymentOption": "NoUpfront",
+            "HostIdSet": [
+                "h-013abcd2a00cbd123"
+            ],
+            "UpfrontPrice": "0.000",
+            "Duration": 31536000
+        }
+    ],
+    "TotalUpfrontPrice": "0.000"
 }
 ```
+For more information, see [Amazon EC2 Dedicated Host pricing and billing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html#dedicated-host-reservations) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetHostReservationPurchasePreview](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-host-reservation-purchase-preview.html) in *AWS CLI Command Reference*.
 
 ### `get-image-block-public-access-state`
@@ -19627,12 +21713,11 @@ Output:
 The following code example shows how to use `get-image-block-public-access-state`.
 
 **AWS CLI**
-**To get the block public access state for AMIs in the specified Region**
-The following `get-image-block-public-access-state` example gets the block public access state for AMIs at the account level in the specified Region.
+**To get the block public access state for AMIs in the current Region**
+The following `get-image-block-public-access-state` example gets the block public access state for AMIs at the account level in the current Region.
 
 ```
-aws ec2 get-image-block-public-access-state \
-    --region {{us-east-1}}
+aws ec2 get-image-block-public-access-state
 ```
 Output:
 
@@ -19641,7 +21726,7 @@ Output:
     "ImageBlockPublicAccessState": "block-new-sharing"
 }
 ```
-For more information, see [Block public access to your AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html#block-public-access-to-amis) in the *Amazon EC2 User Guide*.
+For more information, see [Block public access to your AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-public-access-to-amis.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetImageBlockPublicAccessState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-image-block-public-access-state.html) in *AWS CLI Command Reference*.
 
 ### `get-instance-types-from-instance-requirements`
@@ -19656,7 +21741,6 @@ To generate all possible attributes and save the output directly to a JSON file,
 
 ```
 aws ec2 get-instance-types-from-instance-requirements \
-    --region {{us-east-1}} \
     --generate-cli-skeleton {{input}} {{>}} {{attributes.json}}
 ```
 Output:
@@ -19743,11 +21827,10 @@ aws ec2 get-instance-types-from-instance-requirements \
     --cli-input-json {{file://attributes.json}} \
     --output {{table}}
 ```
-Contents of `attributes.json` file:
+Contents of `attributes.json`:
 
 ```
 {
-
     "ArchitectureTypes": [
         "x86_64"
     ],
@@ -19808,9 +21891,7 @@ Output:
 ```
 {
     "InstanceId": "i-0123456789example",
-    "UefiData": "QU1aTlVFRkkf+uLXAAAAAHj5a7fZ9+3dBzxXb/.
-    <snipped>
-    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4L/J/AODshho="
+    "UefiData": "QU1aTlVFRkkf+uLXAAAAAHj5a7fZ9+3dBzxXb/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4L/J/AODshho="
 }
 ```
 For more information, see [UEFI Secure Boot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/uefi-secure-boot.html) in the *Amazon EC2 User Guide*.
@@ -19824,23 +21905,23 @@ The following code example shows how to use `get-ipam-address-history`.
 **AWS CLI**
 **To get the history of a CIDR**
 The following `get-ipam-address-history` example gets the history of a CIDR.
-(Linux):
+Linux command.
 
 ```
 aws ec2 get-ipam-address-history \
-   --cidr {{10.0.0.0/16}} \
-   --ipam-scope-id {{ipam-scope-02fc38cd4c48e7d38}} \
-   --start-time {{2021-12-08T01:00:00.000Z}} \
-   --end-time {{2021-12-10T01:00:00.000Z}}
+    --cidr {{10.0.0.0/16}} \
+    --ipam-scope-id {{ipam-scope-02fc38cd4c48e7d38}} \
+    --start-time {{2021-12-08T01:00:00.000Z}} \
+    --end-time {{2021-12-10T01:00:00.000Z}}
 ```
-(Windows):
+Windows command.
 
 ```
 aws ec2 get-ipam-address-history {{^}}
-   --cidr {{10.0.0.0/16}} {{^}}
-   --ipam-scope-id {{ipam-scope-02fc38cd4c48e7d38}} {{^}}
-   --start-time {{2021-12-08T01:00:00.000Z}} {{^}}
-   --end-time {{2021-12-10T01:00:00.000Z}}
+    --cidr {{10.0.0.0/16}} {{^}}
+    --ipam-scope-id {{ipam-scope-02fc38cd4c48e7d38}} {{^}}
+    --start-time {{2021-12-08T01:00:00.000Z}} {{^}}
+    --end-time {{2021-12-10T01:00:00.000Z}}
 ```
 Output:
 
@@ -19849,7 +21930,7 @@ Output:
     "HistoryRecords": [
         {
             "ResourceOwnerId": "123456789012",
-            "ResourceRegion": "us-west-1",
+            "ResourceRegion": "us-west-2",
             "ResourceType": "vpc",
             "ResourceId": "vpc-06cbefa9ee907e1c0",
             "ResourceCidr": "10.0.0.0/16",
@@ -19861,7 +21942,7 @@ Output:
         },
         {
             "ResourceOwnerId": "123456789012",
-            "ResourceRegion": "us-east-2",
+            "ResourceRegion": "us-west-2",
             "ResourceType": "vpc",
             "ResourceId": "vpc-042702f474812c9ad",
             "ResourceCidr": "10.0.0.0/16",
@@ -19873,7 +21954,7 @@ Output:
         },
         {
             "ResourceOwnerId": "123456789012",
-            "ResourceRegion": "us-east-2",
+            "ResourceRegion": "us-west-2",
             "ResourceType": "vpc",
             "ResourceId": "vpc-042b8a44f64267d67",
             "ResourceCidr": "10.0.0.0/16",
@@ -19896,14 +21977,13 @@ The following code example shows how to use `get-ipam-discovered-accounts`.
 
 **AWS CLI**
 **To view the accounts discovered by an IPAM**
-In this scenario, you're a IPAM delegated admin who wants to view the AWS accounts that own resources that the IPAM is discovering.
+The following `get-ipam-discovered-accounts` example lists the AWS accounts that own resources that the IPAM is discovering. In this scenario, you're an IPAM delegated admin.
 The `--discovery-region` is the IPAM operating Region you want to view the monitored account statuses in. For example, if you have three IPAM operating Regions, you may want to make this request three times to view the timestamps specific to discovery in each of those particular Regions.
-The following `get-ipam-discovered-accounts` example lists the AWS accounts that own resources that the IPAM is discovering.
 
 ```
 aws ec2 get-ipam-discovered-accounts \
-   --ipam-resource-discovery-id {{ipam-res-disco-0365d2977fc1672fe}} \
-   --discovery-region {{us-east-1}}
+    --ipam-resource-discovery-id {{ipam-res-disco-0365d2977fc1672fe}} \
+    --discovery-region {{us-west-2}}
 ```
 Output:
 
@@ -19911,8 +21991,8 @@ Output:
 {
     "IpamDiscoveredAccounts": [
         {
-            "AccountId": "149977607591",
-            "DiscoveryRegion": "us-east-1",
+            "AccountId": "123456789012",
+            "DiscoveryRegion": "us-west-2",
             "LastAttemptedDiscoveryTime": "2024-02-09T19:04:31.379000+00:00",
             "LastSuccessfulDiscoveryTime": "2024-02-09T19:04:31.379000+00:00"
         }
@@ -19929,14 +22009,12 @@ The following code example shows how to use `get-ipam-discovered-public-addresse
 
 **AWS CLI**
 **To view discovered public IP addresses**
-In this example, you are an IPAM delegated admin and you want to view the IP addresses of resources discovered by IPAM. You can get the resource discovery ID with [describe-ipam-resource-discoveries](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-resource-discoveries.html).
-The following `get-ipam-discovered-public-addresses` example shows the discovered public IP addresses for a resource discovery.
+The following `get-ipam-discovered-public-addresses` example shows the discovered public IP addresses for a resource discovery. In this example, you are an IPAM delegated admin and you want to view the IP addresses of resources discovered by IPAM. You can get the resource discovery ID with [describe-ipam-resource-discoveries](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-resource-discoveries.html).
 
 ```
 aws ec2 get-ipam-discovered-public-addresses \
     --ipam-resource-discovery-id {{ipam-res-disco-0f4ef577a9f37a162}} \
-    --address-region {{us-east-1}} \
-    --region {{us-east-1}}
+    --address-region {{us-west-2}}
 ```
 Output:
 
@@ -19944,10 +22022,10 @@ Output:
 {
     "IpamDiscoveredPublicAddresses": [
         {
-           "IpamResourceDiscoveryId": "ipam-res-disco-0f4ef577a9f37a162",
-            "AddressRegion": "us-east-1",
+            "IpamResourceDiscoveryId": "ipam-res-disco-0f4ef577a9f37a162",
+            "AddressRegion": "us-west-2",
             "Address": "54.208.155.7",
-            "AddressOwnerId": "320805250157",
+            "AddressOwnerId": "123456789012",
             "AssociationStatus": "associated",
             "AddressType": "ec2-public-ip",
             "VpcId": "vpc-073b294916198ce49",
@@ -19956,7 +22034,7 @@ Output:
             "NetworkInterfaceDescription": "",
             "InstanceId": "i-07459a6fca5b35823",
             "Tags": {},
-            "NetworkBorderGroup": "us-east-1c",
+            "NetworkBorderGroup": "us-west-2c",
             "SecurityGroups": [
                 {
                     "GroupName": "launch-wizard-2",
@@ -19967,9 +22045,9 @@ Output:
         },
         {
             "IpamResourceDiscoveryId": "ipam-res-disco-0f4ef577a9f37a162",
-            "AddressRegion": "us-east-1",
+            "AddressRegion": "us-west-2",
             "Address": "44.201.251.218",
-            "AddressOwnerId": "470889052923",
+            "AddressOwnerId": "123456789111",
             "AssociationStatus": "associated",
             "AddressType": "ec2-public-ip",
             "VpcId": "vpc-6c31a611",
@@ -19978,7 +22056,7 @@ Output:
             "NetworkInterfaceDescription": "",
             "InstanceId": "i-04ef786d9c4e03f41",
             "Tags": {},
-            "NetworkBorderGroup": "us-east-1a",
+            "NetworkBorderGroup": "us-west-2a",
             "SecurityGroups": [
                 {
                     "GroupName": "launch-wizard-32",
@@ -19987,6 +22065,7 @@ Output:
             ],
             "SampleTime": "2024-04-05T15:13:59.145000+00:00"
         }
+    ]
 }
 ```
 For more information, see [View public IP insights](https://docs.aws.amazon.com/vpc/latest/ipam/view-public-ip-insights.html) in the *Amazon VPC IPAM User Guide*.
@@ -19999,27 +22078,24 @@ The following code example shows how to use `get-ipam-discovered-resource-cidrs`
 
 **AWS CLI**
 **To view the IP address CIDRs discovered by an IPAM**
-In this example, you're a IPAM delegated admin who wants to view details related to the IP address CIDRs for resources that the IPAM is discovering.
-To complete this request:
-The resource discovery you choose must be associated with the IPAM.The `--resource-region` is the AWS Region where resource was created.
-The following `get-ipam-discovered-resource-cidrs` example lists the IP addresses for resources that the IPAM is discovering.
+The following `get-ipam-discovered-resource-cidrs` example lists the IP addresses for resources that the IPAM is discovering. In this example, you're an IPAM delegated admin who wants to view details related to these IP address CIDRs.
+To complete this request, the resource discovery you choose must be associated with the IPAM, and the `--resource-region` is the AWS Region where the resource was created.
 
 ```
 aws ec2 get-ipam-discovered-resource-cidrs \
-   --ipam-resource-discovery-id {{ipam-res-disco-0365d2977fc1672fe}} \
-   --resource-region {{us-east-1}}
+    --ipam-resource-discovery-id {{ipam-res-disco-0365d2977fc1672fe}} \
+    --resource-region {{us-west-2}}
 ```
 Output:
 
 ```
 {
-    {
-        "IpamDiscoveredResourceCidrs": [
+    "IpamDiscoveredResourceCidrs": [
         {
             "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
-            "ResourceRegion": "us-east-1",
+            "ResourceRegion": "us-west-2",
             "ResourceId": "vpc-0c974c95ca7ceef4a",
-            "ResourceOwnerId": "149977607591",
+            "ResourceOwnerId": "123456789012",
             "ResourceCidr": "172.31.0.0/16",
             "ResourceType": "vpc",
             "ResourceTags": [],
@@ -20029,9 +22105,9 @@ Output:
         },
         {
             "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
-            "ResourceRegion": "us-east-1",
+            "ResourceRegion": "us-west-2",
             "ResourceId": "subnet-07fe028119082a8c1",
-            "ResourceOwnerId": "149977607591",
+            "ResourceOwnerId": "123456789012",
             "ResourceCidr": "172.31.0.0/20",
             "ResourceType": "subnet",
             "ResourceTags": [],
@@ -20041,9 +22117,9 @@ Output:
         },
         {
             "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
-            "ResourceRegion": "us-east-1",
+            "ResourceRegion": "us-west-2",
             "ResourceId": "subnet-0a96893763984cc4e",
-            "ResourceOwnerId": "149977607591",
+            "ResourceOwnerId": "123456789012",
             "ResourceCidr": "172.31.64.0/20",
             "ResourceType": "subnet",
             "ResourceTags": [],
@@ -20051,7 +22127,7 @@ Output:
             "VpcId": "vpc-0c974c95ca7ceef4a",
             "SampleTime": "2024-02-09T19:15:16.529000+00:00"
         }
-    }
+    ]
 }
 ```
 For more information, see [Monitor CIDR usage by resource](https://docs.aws.amazon.com/vpc/latest/ipam/monitor-cidr-compliance-ipam.html) in the *Amazon VPC IPAM User Guide*.
@@ -20065,14 +22141,14 @@ The following code example shows how to use `get-ipam-pool-allocations`.
 **AWS CLI**
 **To get the CIDRs allocated from an IPAM pool**
 The following `get-ipam-pool-allocations` example gets the CIDRs allocated from an IPAM pool.
-(Linux):
+Linux command.
 
 ```
 aws ec2 get-ipam-pool-allocations \
     --ipam-pool-id {{ipam-pool-0533048da7d823723}} \
     --filters {{Name=ipam-pool-allocation-id,Values=ipam-pool-alloc-0e6186d73999e47389266a5d6991e6220}}
 ```
-(Windows):
+Windows command.
 
 ```
 aws ec2 get-ipam-pool-allocations {{^}}
@@ -20093,6 +22169,7 @@ Output:
     ]
 }
 ```
+For more information, see [View IPAM pool allocations](https://docs.aws.amazon.com/vpc/latest/ipam/view-alloc-ipam.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [GetIpamPoolAllocations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-ipam-pool-allocations.html) in *AWS CLI Command Reference*.
 
 ### `get-ipam-pool-cidrs`
@@ -20103,14 +22180,14 @@ The following code example shows how to use `get-ipam-pool-cidrs`.
 **AWS CLI**
 **To get the CIDRs provisioned to an IPAM pool**
 The following `get-ipam-pool-cidrs` example gets the CIDRs provisioned to an IPAM pool.
-(Linux):
+Linux command.
 
 ```
 aws ec2 get-ipam-pool-cidrs \
     --ipam-pool-id {{ipam-pool-0533048da7d823723}} \
     --filters '{{Name=cidr,Values=10.*}}'
 ```
-(Windows):
+Windows command.
 
 ```
 aws ec2 get-ipam-pool-cidrs {{^}}
@@ -20121,12 +22198,15 @@ Output:
 
 ```
 {
-    "IpamPoolCidr": {
-        "Cidr": "10.0.0.0/24",
-        "State": "provisioned"
-    }
+    "IpamPoolCidrs": [
+        {
+            "Cidr": "10.0.0.0/24",
+            "State": "provisioned"
+        }
+    ]
 }
 ```
+For more information, see [Provision CIDRs to a pool](https://docs.aws.amazon.com/vpc/latest/ipam/prov-cidr-ipam.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [GetIpamPoolCidrs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-ipam-pool-cidrs.html) in *AWS CLI Command Reference*.
 
 ### `get-ipam-resource-cidrs`
@@ -20137,14 +22217,14 @@ The following code example shows how to use `get-ipam-resource-cidrs`.
 **AWS CLI**
 **To get the CIDRs allocated to a resource**
 The following `get-ipam-resource-cidrs` example gets the CIDRs allocated to a resource.
-(Linux):
+Linux command.
 
 ```
 aws ec2 get-ipam-resource-cidrs \
     --ipam-scope-id {{ipam-scope-02fc38cd4c48e7d38}} \
     --filters {{Name=management-state,Values=unmanaged}}
 ```
-(Windows):
+Windows command.
 
 ```
 aws ec2 get-ipam-resource-cidrs {{^}}
@@ -20159,7 +22239,7 @@ Output:
         {
             "IpamId": "ipam-08440e7a3acde3908",
             "IpamScopeId": "ipam-scope-02fc38cd4c48e7d38",
-            "ResourceRegion": "us-east-2",
+            "ResourceRegion": "us-west-2",
             "ResourceOwnerId": "123456789012",
             "ResourceId": "vpc-621b8709",
             "ResourceName": "Default AWS VPC",
@@ -20194,57 +22274,59 @@ The following code example shows how to use `get-launch-template-data`.
 
 **AWS CLI**
 **To get instance data for a launch template**
-This example gets data about the specified instance and uses the `--query` option to return the contents in `LaunchTemplateData`. You can use the output as a base to create a new launch template or launch template version.
-Command:
+The following `get-launch-template-data` example gets data about the specified instance and uses the `--query` option to return the contents in `LaunchTemplateData`. You can use the output as a base to create a new launch template or launch template version.
 
 ```
-aws ec2 get-launch-template-data --instance-id {{i-0123d646e8048babc}} --query '{{LaunchTemplateData}}'
+aws ec2 get-launch-template-data \
+    --instance-id {{i-0123d646e8048babc}} \
+    --query '{{LaunchTemplateData}}'
 ```
 Output:
 
 ```
 {
-      "Monitoring": {},
-      "ImageId": "ami-8c1be5f6",
-      "BlockDeviceMappings": [
-          {
-              "DeviceName": "/dev/xvda",
-              "Ebs": {
-                  "DeleteOnTermination": true
-              }
-          }
-      ],
-      "EbsOptimized": false,
-      "Placement": {
-          "Tenancy": "default",
-          "GroupName": "",
-          "AvailabilityZone": "us-east-1a"
-      },
-      "InstanceType": "t2.micro",
-      "NetworkInterfaces": [
-          {
-              "Description": "",
-              "NetworkInterfaceId": "eni-35306abc",
-              "PrivateIpAddresses": [
-                  {
-                      "Primary": true,
-                      "PrivateIpAddress": "10.0.0.72"
-                  }
-              ],
-              "SubnetId": "subnet-7b16de0c",
-              "Groups": [
-                  "sg-7c227019"
-              ],
-              "Ipv6Addresses": [
-                  {
-                      "Ipv6Address": "2001:db8:1234:1a00::123"
-                  }
-              ],
-              "PrivateIpAddress": "10.0.0.72"
-          }
-      ]
+    "Monitoring": {},
+    "ImageId": "ami-8c1be5f6",
+    "BlockDeviceMappings": [
+        {
+            "DeviceName": "/dev/xvda",
+            "Ebs": {
+                "DeleteOnTermination": true
+            }
+        }
+    ],
+    "EbsOptimized": false,
+    "Placement": {
+        "Tenancy": "default",
+        "GroupName": "",
+        "AvailabilityZone": "us-west-2a"
+    },
+    "InstanceType": "t2.micro",
+    "NetworkInterfaces": [
+        {
+            "Description": "",
+            "NetworkInterfaceId": "eni-35306abc",
+            "PrivateIpAddresses": [
+                {
+                    "Primary": true,
+                    "PrivateIpAddress": "10.0.0.72"
+                }
+            ],
+            "SubnetId": "subnet-7b16de0c",
+            "Groups": [
+                "sg-7c227019"
+            ],
+            "Ipv6Addresses": [
+                {
+                    "Ipv6Address": "2001:db8:1234:1a00::123"
+                }
+            ],
+            "PrivateIpAddress": "10.0.0.72"
+        }
+    ]
 }
 ```
+For more information, see [Create an Amazon EC2 launch template](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-launch-template.html#create-launch-template-from-instance) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetLaunchTemplateData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-launch-template-data.html) in *AWS CLI Command Reference*.
 
 ### `get-managed-prefix-list-associations`
@@ -20282,7 +22364,7 @@ The following code example shows how to use `get-managed-prefix-list-entries`.
 
 **AWS CLI**
 **To get the entries for a prefix list**
-The following `get-managed-prefix-list-entries` gets the entries for the specified prefix list.
+The following `get-managed-prefix-list-entries` example gets the entries for the specified prefix list.
 
 ```
 aws ec2 get-managed-prefix-list-entries \
@@ -20318,9 +22400,7 @@ The following `get-network-insights-access-scope-analysis-findings` example gets
 
 ```
 aws ec2 get-network-insights-access-scope-analysis-findings \
-    --region {{us-east-1}} \
-    --network-insights-access-scope-analysis-id {{nis}} \
-    --nis-123456789111
+    --network-insights-access-scope-analysis-id {{nisa-123456789222}}
 ```
 Output:
 
@@ -20336,7 +22416,7 @@ Output:
                     "SequenceNumber": 1,
                     "Component": {
                         "Id": "eni-02e3d42d5cceca67d",
-                        "Arn": "arn:aws:ec2:us-east-1:936459623503:network-interface/eni-02e3d32d9cceca17d"
+                        "Arn": "arn:aws:ec2:us-west-2:123456789012:network-interface/eni-02e3d32d9cceca17d"
                     },
                     "OutboundHeader": {
                         "DestinationAddresses": [
@@ -20347,7 +22427,7 @@ Output:
                             "16.0.0.0/4",
                             "160.0.0.0/5",
                             "168.0.0.0/6",
-                            "172.0.0.0/12"
+                            "172.0.0.0/12",
                             "8.0.0.0/7"
                         ],
                         "DestinationPortRanges": [
@@ -20366,9 +22446,9 @@ Output:
                                 "To": 65535
                             }
                         ]
-                    }, [etc]
-                ]
-            }
+                    }
+                }
+            ]
         }
     ]
 }
@@ -20387,7 +22467,6 @@ The following `get-network-insights-access-scope-content` example gets the conte
 
 ```
 aws ec2 get-network-insights-access-scope-content \
-    --region {{us-east-1}} \
     --network-insights-access-scope-id {{nis-123456789222}}
 ```
 Output:
@@ -20426,12 +22505,12 @@ For more information, see [Getting started with Network Access Analyzer using th
 The following code example shows how to use `get-password-data`.
 
 **AWS CLI**
-**To get the encrypted password**
-This example gets the encrypted password.
-Command:
+**Example 1: To get the encrypted password**
+The following `get-password-data` example gets the encrypted password.
 
 ```
-aws ec2 get-password-data --instance-id {{i-1234567890abcdef0}}
+aws ec2 get-password-data \
+    --instance-id {{i-1234567890abcdef0}}
 ```
 Output:
 
@@ -20439,19 +22518,17 @@ Output:
 {
     "InstanceId": "i-1234567890abcdef0",
     "Timestamp": "2013-08-07T22:18:38.000Z",
-    "PasswordData": "gSlJFq+VpcZXqy+iktxMF6NyxQ4qCrT4+gaOuNOenX1MmgXPTj7XEXAMPLE
-UQ+YeFfb+L1U4C4AKv652Ux1iRB3CPTYP7WmU3TUnhsuBd+p6LVk7T2lKUml6OXbk6WPW1VYYm/TRPB1
-e1DQ7PY4an/DgZT4mwcpRFigzhniQgDDeO1InvSDcwoUTwNs0Y1S8ouri2W4n5GNlriM3Q0AnNVelVz/
-53TkDtxbNoU606M1gK9zUWSxqEgwvbV2j8c5rP0WCuaMWSFl4ziDu4bd7q+4RSyi8NUsVWnKZ4aEZffu
-DPGzKrF5yLlf3etP2L4ZR6CvG7K1hx7VKOQVN32Dajw=="
+    "PasswordData": "gSlJFq+VpcZXqy+iktxMF6NyxQ4qCrT4+gaOuNOenX1MmgXPTj7XEXAMPLEUQ+YeFfb+L1U4C4AKv652Ux1iRB3CPTYP7WmU3TUnhsuBd+p6LVk7T2lKUml6OXbk6WPW1VYYm/TRPB1e1DQ7PY4an/DgZT4mwcpRFigzhniQgDDeO1InvSDcwoUTwNs0Y1S8ouri2W4n5GNlriM3Q0AnNVelVz/53TkDtxbNoU606M1gK9zUWSxqEgwvbV2j8c5rP0WCuaMWSFl4ziDu4bd7q+4RSyi8NUsVWnKZ4aEZffuDPGzKrF5yLlf3etP2L4ZR6CvG7K1hx7VKOQVN32Dajw=="
 }
 ```
-**To get the decrypted password**
-This example gets the decrypted password.
-Command:
+For more information, see [Connect to your Windows instance using RDP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connecting_to_windows_instance.html) in the *Amazon EC2 User Guide*.
+**Example 2: To get the decrypted password**
+The following `get-password-data` example gets the decrypted password.
 
 ```
-aws ec2 get-password-data --instance-id  {{i-1234567890abcdef0}} --priv-launch-key C:\Keys\MyKeyPair.pem
+aws ec2 get-password-data \
+    --instance-id {{i-1234567890abcdef0}} \
+    --priv-launch-key C:\Keys\MyKeyPair.pem
 ```
 Output:
 
@@ -20462,6 +22539,7 @@ Output:
     "PasswordData": "&ViJ652e*u"
 }
 ```
+For more information, see [Connect to your Windows instance using RDP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connecting_to_windows_instance.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetPasswordData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-password-data.html) in *AWS CLI Command Reference*.
 
 ### `get-reserved-instances-exchange-quote`
@@ -20471,55 +22549,57 @@ The following code example shows how to use `get-reserved-instances-exchange-quo
 
 **AWS CLI**
 **To get a quote for exchanging a Convertible Reserved Instance**
-This example gets the exchange information for the specified Convertible Reserved Instances.
-Command:
+The following `get-reserved-instances-exchange-quote` example gets the exchange information for the specified Convertible Reserved Instances.
 
 ```
-aws ec2 get-reserved-instances-exchange-quote --reserved-instance-ids {{7b8750c3-397e-4da4-bbcb-a45ebexample}} --target-configurations {{OfferingId=6fea5434-b379-434c-b07b-a7abexample}}
+aws ec2 get-reserved-instances-exchange-quote \
+    --reserved-instance-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --target-configurations {{OfferingId=6fea5434-b379-434c-b07b-a7abexample}}
 ```
 Output:
 
 ```
 {
-  "CurrencyCode": "USD",
-  "ReservedInstanceValueSet": [
-      {
-          "ReservedInstanceId": "7b8750c3-397e-4da4-bbcb-a45ebexample",
-          "ReservationValue": {
-              "RemainingUpfrontValue": "0.000000",
-              "HourlyPrice": "0.027800",
-              "RemainingTotalValue": "730.556200"
-          }
-      }
-  ],
-  "PaymentDue": "424.983828",
-  "TargetConfigurationValueSet": [
-      {
-          "TargetConfiguration": {
-              "InstanceCount": 5,
-              "OfferingId": "6fea5434-b379-434c-b07b-a7abexample"
-          },
-          "ReservationValue": {
-              "RemainingUpfrontValue": "424.983828",
-              "HourlyPrice": "0.016000",
-              "RemainingTotalValue": "845.447828"
-          }
-      }
-  ],
-  "IsValidExchange": true,
-  "OutputReservedInstancesWillExpireAt": "2020-10-01T13:03:39Z",
-  "ReservedInstanceValueRollup": {
-      "RemainingUpfrontValue": "0.000000",
-      "HourlyPrice": "0.027800",
-      "RemainingTotalValue": "730.556200"
-  },
-  "TargetConfigurationValueRollup": {
-      "RemainingUpfrontValue": "424.983828",
-      "HourlyPrice": "0.016000",
-      "RemainingTotalValue": "845.447828"
-  }
+    "CurrencyCode": "USD",
+    "ReservedInstanceValueSet": [
+        {
+            "ReservedInstanceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ReservationValue": {
+                "RemainingUpfrontValue": "0.000000",
+                "HourlyPrice": "0.027800",
+                "RemainingTotalValue": "730.556200"
+            }
+        }
+    ],
+    "PaymentDue": "424.983828",
+    "TargetConfigurationValueSet": [
+        {
+            "TargetConfiguration": {
+                "InstanceCount": 5,
+                "OfferingId": "6fea5434-b379-434c-b07b-a7abexample"
+            },
+            "ReservationValue": {
+                "RemainingUpfrontValue": "424.983828",
+                "HourlyPrice": "0.016000",
+                "RemainingTotalValue": "845.447828"
+            }
+        }
+    ],
+    "IsValidExchange": true,
+    "OutputReservedInstancesWillExpireAt": "2020-10-01T13:03:39Z",
+    "ReservedInstanceValueRollup": {
+        "RemainingUpfrontValue": "0.000000",
+        "HourlyPrice": "0.027800",
+        "RemainingTotalValue": "730.556200"
+    },
+    "TargetConfigurationValueRollup": {
+        "RemainingUpfrontValue": "424.983828",
+        "HourlyPrice": "0.016000",
+        "RemainingTotalValue": "845.447828"
+    }
 }
 ```
+For more information, see [Exchange Convertible Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-convertible-exchange.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetReservedInstancesExchangeQuote](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-reserved-instances-exchange-quote.html) in *AWS CLI Command Reference*.
 
 ### `get-security-groups-for-vpc`
@@ -20533,8 +22613,7 @@ The following `get-security-groups-for-vpc` example shows the security groups th
 
 ```
 aws ec2 get-security-groups-for-vpc \
-    --vpc-id {{vpc-6c31a611}} \
-    --region {{us-east-1}}
+    --vpc-id {{vpc-6c31a611}}
 ```
 Output:
 
@@ -20544,7 +22623,7 @@ Output:
         {
             "Description": "launch-wizard-36 created 2022-08-29T15:59:35.338Z",
             "GroupName": "launch-wizard-36",
-            "OwnerId": "470889052923",
+            "OwnerId": "123456789012",
             "GroupId": "sg-007e0c3027ee885f5",
             "Tags": [],
             "PrimaryVpcId": "vpc-6c31a611"
@@ -20552,13 +22631,15 @@ Output:
         {
             "Description": "launch-wizard-18 created 2024-01-19T20:22:27.527Z",
             "GroupName": "launch-wizard-18",
-            "OwnerId": "470889052923",
+            "OwnerId": "123456789012",
             "GroupId": "sg-0147193bef51c9eef",
             "Tags": [],
             "PrimaryVpcId": "vpc-6c31a611"
         }
+    ]
 }
 ```
+For more information, see [Associate security groups with multiple VPCs](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-assoc.html) in the *Amazon VPC User Guide*.
 +  For API details, see [GetSecurityGroupsForVpc](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-security-groups-for-vpc.html) in *AWS CLI Command Reference*.
 
 ### `get-serial-console-access-status`
@@ -20617,7 +22698,6 @@ To generate all possible parameters that can be specified for the Spot placement
 
 ```
 aws ec2 get-spot-placement-scores \
-    --region {{us-east-1}} \
     --generate-cli-skeleton {{input}} {{>}} {{attributes.json}}
 ```
 Output:
@@ -20712,8 +22792,36 @@ Calculate the Spot placement score for the requirements specified in `attributes
 
 ```
 aws ec2 get-spot-placement-scores \
-    --region {{us-east-1}} \
     --cli-input-json {{file://attributes.json}}
+```
+Contents of `attributes.json`:
+
+```
+{
+    "TargetCapacity": 500,
+    "TargetCapacityUnitType": "vcpu",
+    "RegionNames": [
+        "us-east-1",
+        "us-west-1"
+    ],
+    "InstanceRequirementsWithMetadata": {
+        "ArchitectureTypes": [
+            "x86_64"
+        ],
+        "VirtualizationTypes": [
+            "hvm"
+        ],
+        "InstanceRequirements": {
+            "VCpuCount": {
+                "Min": 4,
+                "Max": 6
+            },
+            "MemoryMiB": {
+                "Min": 2048
+            }
+        }
+    }
+}
 ```
 Output if `SingleAvailabilityZone` is set to `false` or omitted (if omitted, it defaults to `false`). A scored list of Regions is returned.
 
@@ -20745,7 +22853,7 @@ Output if `SingleAvailabilityZone` is set to `true`. A scored list of SingleAvai
     },
    ...
 ```
-For more information about calculating a Spot placement score, and for example configurations, see [Calculate a Spot placement score](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-placement-score.html#work-with-spot-placement-score) in the *Amazon EC2 User Guide*.
+For more information about calculating a Spot placement score, and for example configurations, see [Calculate a Spot placement score](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-spot-placement-score.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [GetSpotPlacementScores](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-spot-placement-scores.html) in *AWS CLI Command Reference*.
 
 ### `get-subnet-cidr-reservations`
@@ -20905,7 +23013,7 @@ Output:
             "TransitGatewayAttachment": {
                 "TransitGatewayAttachmentId": "tgw-attach-aabbccddaabbccaab",
                 "ResourceType": "vpc",
-                "ResourceId": "vpc-112233445566aabbc"
+                "ResourceId": "vpc-1234567890abcdef0"
             }
         }
     ]
@@ -20941,7 +23049,7 @@ Output:
     ]
 }
 ```
-For more information, see [Transit gateway route tables](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-route-tables.html#associate-tgw-route-table) in the *Transit Gateways Guide*.
+For more information, see [Transit gateway route tables](https://docs.aws.amazon.com/vpc/latest/tgw/associate-tgw-route-table.html) in the *Transit Gateways Guide*.
 +  For API details, see [GetTransitGatewayRouteTableAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/get-transit-gateway-route-table-associations.html) in *AWS CLI Command Reference*.
 
 ### `get-transit-gateway-route-table-propagations`
@@ -20970,13 +23078,13 @@ Output:
         },
         {
             "TransitGatewayAttachmentId": "tgw-attach-08e0bc912cEXAMPLE",
-            "ResourceId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
+            "ResourceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ResourceType": "direct-connect-gateway",
             "State": "enabled"
         },
         {
             "TransitGatewayAttachmentId": "tgw-attach-0a89069f57EXAMPLE",
-            "ResourceId": "8384da05-13ce-4a91-aada-5a1baEXAMPLE",
+            "ResourceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "ResourceType": "direct-connect-gateway",
             "State": "enabled"
         }
@@ -21110,7 +23218,15 @@ The following `import-client-vpn-client-certificate-revocation-list` example imp
 ```
 aws ec2 import-client-vpn-client-certificate-revocation-list \
     --certificate-revocation-list {{file:///path/to/crl.pem}} \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}}
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}}
+```
+Contents of `crl.pem`:
+
+```
+-----BEGIN X509 CRL-----
+MIIBpzCBkAIBATANBgkqhkiG9w0BAQsFADAUMRIwEAYDVQQDDAlFWEFNUExFQ0EX
+EXAMPLECRLDATAEXAMPLECRLDATAEXAMPLECRLDATAEXAMPLECRLDATAEXAMPLE=
+-----END X509 CRL-----
 ```
 Output:
 
@@ -21133,7 +23249,7 @@ The following `import-image` example imports the specified OVA.
 
 ```
 aws ec2 import-image \
-  --disk-containers Format=ova,UserBucket="{S3Bucket=my-import-bucket,S3Key=vms/my-server-vm.ova}"
+    --disk-containers Format=ova,UserBucket="{S3Bucket=my-import-bucket,S3Key=vms/my-server-vm.ova}"
 ```
 Output:
 
@@ -21155,6 +23271,7 @@ Output:
     "StatusMessage": "pending"
 }
 ```
+For more information, see [Import a VM to Amazon EC2 as an image using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html) in the *VM Import/Export User Guide*.
 +  For API details, see [ImportImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/import-image.html) in *AWS CLI Command Reference*.
 
 ### `import-key-pair`
@@ -21164,13 +23281,12 @@ The following code example shows how to use `import-key-pair`.
 
 **AWS CLI**
 **To import a public key**
-First, generate a key pair with the tool of your choice. For example, use this ssh-keygen command:
-Command:
+The following `import-key-pair` example imports a public key. First, generate a key pair with the tool of your choice. For example, use the following `ssh-keygen` command.
 
 ```
 ssh-keygen -t rsa -C "my-key" -f ~/.ssh/my-key
 ```
-Output:
+The `ssh-keygen` command displays output similar to the following:
 
 ```
 Generating public/private rsa key pair.
@@ -21180,20 +23296,22 @@ Your identification has been saved in /home/ec2-user/.ssh/my-key.
 Your public key has been saved in /home/ec2-user/.ssh/my-key.pub.
 ...
 ```
-This example command imports the specified public key.
-Command:
+The following command imports the specified public key.
 
 ```
-aws ec2 import-key-pair --key-name {{"my-key"}} --public-key-material {{fileb://~/.ssh/my-key.pub}}
+aws ec2 import-key-pair \
+    --key-name {{"my-key"}} \
+    --public-key-material {{fileb://~/.ssh/my-key.pub}}
 ```
 Output:
 
 ```
 {
-  "KeyName": "my-key",
-  "KeyFingerprint": "1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca"
+    "KeyName": "my-key",
+    "KeyFingerprint": "1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca"
 }
 ```
+For more information, see [Create a key pair for your Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html#how-to-generate-your-own-key-and-import-it-to-aws) in the *Amazon EC2 User Guide*.
 +  For API details, see [ImportKeyPair](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/import-key-pair.html) in *AWS CLI Command Reference*.
 
 ### `import-snapshot`
@@ -21218,11 +23336,11 @@ Output:
     "ImportTaskId": "import-snap-1234567890abcdef0",
     "SnapshotTaskDetail": {
         "Description": "My server VMDK",
-        "DiskImageSize": "0.0",
+        "DiskImageSize": 0.0,
         "Format": "VMDK",
         "Progress": "3",
         "Status": "active",
-        "StatusMessage": "pending"
+        "StatusMessage": "pending",
         "UserBucket": {
             "S3Bucket": "my-import-bucket",
             "S3Key": "vms/my-server-vm.vmdk"
@@ -21230,6 +23348,7 @@ Output:
     }
 }
 ```
+For more information, see [Import a disk as an EBS snapshot using VM Import/Export](https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-import-snapshot.html) in the *VM Import/Export User Guide*.
 +  For API details, see [ImportSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/import-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `list-images-in-recycle-bin`
@@ -21279,7 +23398,7 @@ Output:
 
 ```
 {
-    "SnapshotRecycleBinInfo": [
+    "Snapshots": [
         {
             "Description": "Monthly data backup snapshot",
             "RecycleBinEnterTime": "2022-12-01T13:00:00.000Z",
@@ -21356,14 +23475,14 @@ The following code example shows how to use `modify-address-attribute`.
 **AWS CLI**
 **To modify the domain name attribute associated with an elastic IP address**
 The following `modify-address-attribute` examples modify the domain name attribute of an elastic IP address.
-Linux:
+Linux command.
 
 ```
 aws ec2 modify-address-attribute \
     --allocation-id {{eipalloc-abcdef01234567890}} \
     --domain-name {{example.com}}
 ```
-Windows:
+Windows command.
 
 ```
 aws ec2 modify-address-attribute {{^}}
@@ -21374,19 +23493,19 @@ Output:
 
 ```
 {
-    "Addresses": [
-        {
-            "PublicIp": "192.0.2.0",
-            "AllocationId": "eipalloc-abcdef01234567890",
-            "PtrRecord": "example.net."
-            "PtrRecordUpdate": {
-                "Value": "example.com.",
-                "Status": "PENDING"
+    "Address": {
+        "PublicIp": "192.0.2.0",
+        "AllocationId": "eipalloc-abcdef01234567890",
+        "PtrRecord": "example.net.",
+        "PtrRecordUpdate": {
+            "Value": "example.com.",
+            "Status": "PENDING"
         }
-    ]
+    }
 }
 ```
 To monitor the pending change and to view the modified attributes of an elastic IP address, see [describe-addresses-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-addresses-attribute.html) in the *AWS CLI Command Reference*.
+For more information, see [Create a reverse DNS record for email on Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Elastic_Addressing_Reverse_DNS.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyAddressAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-address-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-availability-zone-group`
@@ -21483,6 +23602,13 @@ aws ec2 modify-capacity-reservation \
     --end-date-type {{limited}} \
     --end-date {{2019-08-31T23:59:59Z}}
 ```
+Output:
+
+```
+{
+    "Return": true
+}
+```
 For more information, see [Modify a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-modify.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyCapacityReservation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-capacity-reservation.html) in *AWS CLI Command Reference*.
 
@@ -21497,7 +23623,7 @@ The following `modify-client-vpn-endpoint` example enables client connection log
 
 ```
 aws ec2 modify-client-vpn-endpoint \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789012abcde}} \
     --connection-log-options {{Enabled=true,CloudwatchLogGroup=ClientVPNLogs}}
 ```
 Output:
@@ -21534,6 +23660,7 @@ Output:
     }
 }
 ```
+For more information, see [Configure burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-how-to.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyDefaultCreditSpecification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-default-credit-specification.html) in *AWS CLI Command Reference*.
 
 ### `modify-ebs-default-kms-key-id`
@@ -21553,9 +23680,10 @@ Output:
 
 ```
 {
-    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/0ea3fef3-80a7-4778-9d8c-1c0c6EXAMPLE"
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 +  For API details, see [ModifyEbsDefaultKmsKeyId](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-ebs-default-kms-key-id.html) in *AWS CLI Command Reference*.
 
 ### `modify-fleet`
@@ -21589,26 +23717,29 @@ The following code example shows how to use `modify-fpga-image-attribute`.
 
 **AWS CLI**
 **To modify the attributes of an Amazon FPGA image**
-This example adds load permissions for account ID `123456789012` for the specified AFI.
-Command:
+The following `modify-fpga-image-attribute` example adds load permissions for account ID `123456789012` for the specified AFI.
 
 ```
-aws ec2 modify-fpga-image-attribute --attribute {{loadPermission}} --fpga-image-id {{afi-0d123e123bfc85abc}} --load-permission {{Add=[{UserId=123456789012}]}}
+aws ec2 modify-fpga-image-attribute \
+    --attribute {{loadPermission}} \
+    --fpga-image-id {{afi-0d123e123bfc85abc}} \
+    --load-permission {{Add=[{UserId=123456789012}]}}
 ```
 Output:
 
 ```
 {
-  "FpgaImageAttribute": {
-      "FpgaImageId": "afi-0d123e123bfc85abc",
-      "LoadPermissions": [
-          {
-              "UserId": "123456789012"
-          }
-      ]
-  }
+    "FpgaImageAttribute": {
+        "FpgaImageId": "afi-0d123e123bfc85abc",
+        "LoadPermissions": [
+            {
+                "UserId": "123456789012"
+            }
+        ]
+    }
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [ModifyFpgaImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-fpga-image-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-hosts`
@@ -21663,7 +23794,7 @@ For more information, see [Modify the auto-placement setting for a Dedicated Hos
 The following code example shows how to use `modify-id-format`.
 
 **AWS CLI**
-**To enable the longer ID format for a resource**
+**Example 1: To enable the longer ID format for a resource**
 The following `modify-id-format` example enables the longer ID format for the `instance` resource type.
 
 ```
@@ -21671,7 +23802,9 @@ aws ec2 modify-id-format \
     --resource {{instance}} \
     --use-long-ids
 ```
-**To disable the longer ID format for a resource**
+This command produces no output.
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
+**Example 2: To disable the longer ID format for a resource**
 The following `modify-id-format` example disables the longer ID format for the `instance` resource type.
 
 ```
@@ -21679,6 +23812,7 @@ aws ec2 modify-id-format \
     --resource {{instance}} \
     --no-use-long-ids
 ```
+This command produces no output.
 The following `modify-id-format` example enables the longer ID format for all supported resource types that are within their opt-in period.
 
 ```
@@ -21686,6 +23820,8 @@ aws ec2 modify-id-format \
     --resource {{all-current}} \
     --use-long-ids
 ```
+This command produces no output.
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-id-format.html) in *AWS CLI Command Reference*.
 
 ### `modify-identity-id-format`
@@ -21694,7 +23830,7 @@ aws ec2 modify-id-format \
 The following code example shows how to use `modify-identity-id-format`.
 
 **AWS CLI**
-**To enable an IAM role to use longer IDs for a resource**
+**Example 1: To enable an IAM role to use longer IDs for a resource**
 The following `modify-identity-id-format` example enables the IAM role `EC2Role` in your AWS account to use long ID format for the `instance` resource type.
 
 ```
@@ -21703,7 +23839,9 @@ aws ec2 modify-identity-id-format \
     --resource {{instance}} \
     --use-long-ids
 ```
-**To enable an IAM user to use longer IDs for a resource**
+This command produces no output.
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
+**Example 2: To enable an IAM user to use longer IDs for a resource**
 The following `modify-identity-id-format` example enables the IAM user `AdminUser` in your AWS account to use the longer ID format for the `volume` resource type.
 
 ```
@@ -21712,6 +23850,7 @@ aws ec2 modify-identity-id-format \
     --resource {{volume}} \
     --use-long-ids
 ```
+This command produces no output.
 The following `modify-identity-id-format` example enables the IAM user `AdminUser` in your AWS account to use the longer ID format for all supported resource types that are within their opt-in period.
 
 ```
@@ -21720,6 +23859,8 @@ aws ec2 modify-identity-id-format \
     --resource {{all-current}} \
     --use-long-ids
 ```
+This command produces no output.
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyIdentityIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-identity-id-format.html) in *AWS CLI Command Reference*.
 
 ### `modify-image-attribute`
@@ -21729,7 +23870,7 @@ The following code example shows how to use `modify-image-attribute`.
 
 **AWS CLI**
 **Example 1: To make an AMI public**
-The following `modify-instance-attribute` example makes the specified AMI public.
+The following `modify-image-attribute` example makes the specified AMI public.
 
 ```
 aws ec2 modify-image-attribute \
@@ -21737,8 +23878,9 @@ aws ec2 modify-image-attribute \
     --launch-permission {{"Add=[{Group=all}]"}}
 ```
 This command produces no output.
+For more information, see [Make your AMI publicly available for use in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html) in the *Amazon EC2 User Guide*.
 **Example 2: To make an AMI private**
-The following `modify-instance-attribute` example makes the specified AMI private.
+The following `modify-image-attribute` example makes the specified AMI private.
 
 ```
 aws ec2 modify-image-attribute \
@@ -21746,8 +23888,9 @@ aws ec2 modify-image-attribute \
     --launch-permission {{"Remove=[{Group=all}]"}}
 ```
 This command produces no output.
+For more information, see [Make your AMI publicly available for use in Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intro.html) in the *Amazon EC2 User Guide*.
 **Example 3: To grant launch permission to an AWS account**
-The following `modify-instance-attribute` example grants launch permissions to the specified AWS account.
+The following `modify-image-attribute` example grants launch permissions to the specified AWS account.
 
 ```
 aws ec2 modify-image-attribute \
@@ -21755,14 +23898,17 @@ aws ec2 modify-image-attribute \
     --launch-permission {{"Add=[{UserId=123456789012}]"}}
 ```
 This command produces no output.
+For more information, see [Share an AMI with specific AWS accounts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-explicit.html) in the *Amazon EC2 User Guide*.
 **Example 4: To remove launch permission from an AWS account**
-The following `modify-instance-attribute` example removes launch permissions from the specified AWS account.
+The following `modify-image-attribute` example removes launch permissions from the specified AWS account.
 
 ```
 aws ec2 modify-image-attribute \
     --image-id {{ami-5731123e}} \
     --launch-permission {{"Remove=[{UserId=123456789012}]"}}
 ```
+This command produces no output.
+For more information, see [Share an AMI with specific AWS accounts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-explicit.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-image-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-instance-attribute`
@@ -21793,22 +23939,23 @@ This command produces no output.
 The following `modify-instance-attribute` example sets the `sourceDestCheck` attribute of the specified instance to `true`. The instance must be in a VPC.
 
 ```
-aws ec2 modify-instance-attribute --instance-id {{i-1234567890abcdef0}} --source-dest-check "{\"Value\": true}"
+aws ec2 modify-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --source-dest-check "{\"Value\": true}"
 ```
 This command produces no output.
 **Example 4: To modify the deleteOnTermination attribute of the root volume**
 The following `modify-instance-attribute` example sets the `deleteOnTermination` attribute for the root volume of the specified Amazon EBS-backed instance to `false`. By default, this attribute is `true` for the root volume.
-Command:
 
 ```
 aws ec2 modify-instance-attribute \
-  --instance-id {{i-1234567890abcdef0}} \
-  --block-device-mappings "[{\"DeviceName\": \"/dev/sda1\",\"Ebs\":{\"DeleteOnTermination\":false}}]"
+    --instance-id {{i-1234567890abcdef0}} \
+    --block-device-mappings "[{\"DeviceName\": \"/dev/sda1\",\"Ebs\":{\"DeleteOnTermination\":false}}]"
 ```
 This command produces no output.
 **Example 5: To modify the user data attached to an instance**
 The following `modify-instance-attribute` example adds the contents of the file `UserData.txt` as the UserData for the specified instance.
-Contents of original file `UserData.txt`:
+Contents of `UserData.txt`:
 
 ```
 #!/bin/bash
@@ -21822,25 +23969,25 @@ Linux/macOS version of the command:
 ```
 base64 UserData.txt > UserData.base64.txt
 ```
-This command produces no output.
 Windows version of the command:
 
 ```
 certutil -encode UserData.txt tmp.b64 && findstr /v /c:- tmp.b64 > UserData.base64.txt
 ```
-Output:
+The `certutil` command displays output similar to the following:
 
 ```
 Input Length = 67
 Output Length = 152
 CertUtil: -encode command completed successfully.
 ```
-Now you can reference that file in the CLI command that follows:
+Now you can reference that file in the following CLI command.
 
 ```
 aws ec2 modify-instance-attribute \
     --instance-id=i-09b5a14dbca622e76 \
-    --attribute {{userData}} --value {{fileb://UserData.base64.txt}}
+    --attribute {{userData}} \
+    --value {{fileb://UserData.base64.txt}}
 ```
 This command produces no output.
 For more information, see [User Data and the AWS CLI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html#user-data-api-cli) in the *EC2 User Guide*.
@@ -21893,24 +24040,25 @@ The following code example shows how to use `modify-instance-credit-specificatio
 
 **AWS CLI**
 **To modify the credit option for CPU usage of an instance**
-This example modifies the credit option for CPU usage of the specified instance in the specified region to "unlimited". Valid credit options are "standard" and "unlimited".
-Command:
+The following `modify-instance-credit-specification` example modifies the credit option for CPU usage of the specified instance in the specified region to "unlimited". Valid credit options are "standard" and "unlimited".
 
 ```
-aws ec2 modify-instance-credit-specification --instance-credit-specification {{"InstanceId=i-1234567890abcdef0,CpuCredits=unlimited"}}
+aws ec2 modify-instance-credit-specification \
+    --instance-credit-specification {{"InstanceId=i-1234567890abcdef0,CpuCredits=unlimited"}}
 ```
 Output:
 
 ```
 {
-  "SuccessfulInstanceCreditSpecifications": [
-    {
-      "InstanceId": "i-1234567890abcdef0"
-    }
-  ],
-  "UnsuccessfulInstanceCreditSpecifications": []
+    "SuccessfulInstanceCreditSpecifications": [
+        {
+            "InstanceId": "i-1234567890abcdef0"
+        }
+    ],
+    "UnsuccessfulInstanceCreditSpecifications": []
 }
 ```
+For more information, see [Configure burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances-how-to.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyInstanceCreditSpecification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-instance-credit-specification.html) in *AWS CLI Command Reference*.
 
 ### `modify-instance-event-start-time`
@@ -21920,24 +24068,29 @@ The following code example shows how to use `modify-instance-event-start-time`.
 
 **AWS CLI**
 **To modify the event start time for an instance**
-The following `modify-instance-event-start-time` command shows how to modify the event start time for the specified instance. Specify the event ID by using the `--instance-event-id` parameter. Specify the new date and time by using the `--not-before` parameter.
+The following `modify-instance-event-start-time` example modifies the event start time for the specified instance. Specify the event ID by using the `--instance-event-id` parameter. Specify the new date and time by using the `--not-before` parameter.
 
 ```
-aws ec2 modify-instance-event-start-time --instance-id {{i-1234567890abcdef0}} --instance-event-id {{instance-event-0abcdef1234567890}} --not-before {{2019-03-25T10:00:00.000}}
+aws ec2 modify-instance-event-start-time \
+    --instance-id {{i-1234567890abcdef0}} \
+    --instance-event-id {{instance-event-0abcdef1234567890}} \
+    --not-before {{2019-03-25T10:00:00.000}}
 ```
 Output:
 
 ```
-"Event": {
-    "InstanceEventId": "instance-event-0abcdef1234567890",
-    "Code": "system-reboot",
-    "Description": "scheduled reboot",
-    "NotAfter": "2019-03-25T12:00:00.000Z",
-    "NotBefore": "2019-03-25T10:00:00.000Z",
-    "NotBeforeDeadline": "2019-04-22T21:00:00.000Z"
+{
+    "Event": {
+        "InstanceEventId": "instance-event-0abcdef1234567890",
+        "Code": "system-reboot",
+        "Description": "scheduled reboot",
+        "NotAfter": "2019-03-25T12:00:00.000Z",
+        "NotBefore": "2019-03-25T10:00:00.000Z",
+        "NotBeforeDeadline": "2019-04-22T21:00:00.000Z"
+    }
 }
 ```
-For more information, see Working with Instances Scheduled for Reboot in the *Amazon Elastic Compute Cloud User Guide*
+For more information, see [Reschedule a scheduled event for an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/reschedule-event.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyInstanceEventStartTime](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-instance-event-start-time.html) in *AWS CLI Command Reference*.
 
 ### `modify-instance-event-window`
@@ -21951,8 +24104,7 @@ The following `modify-instance-event-window` example modifies the time range of 
 
 ```
 aws ec2 modify-instance-event-window \
-    --region {{us-east-1}} \
-    --instance-event-window-id {{iew-0abcdef1234567890}}
+    --instance-event-window-id {{iew-0abcdef1234567890}} \
     --time-range {{StartWeekDay=monday,StartHour=2,EndWeekDay=wednesday,EndHour=8}}
 ```
 Output:
@@ -21988,13 +24140,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Create custom event windows for scheduled events that affect your Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 2: To modify a set of time ranges for an event window**
 The following `modify-instance-event-window` example modifies the time range of an event window. Specify the `time-range` parameter to modify the time range. You can't also specify the `cron-expression` parameter.
 
 ```
 aws ec2 modify-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --time-range '{{[{"StartWeekDay": "monday", "StartHour": 2, "EndWeekDay": "wednesday", "EndHour": 8},
         {"StartWeekDay": "thursday", "StartHour": 2, "EndWeekDay": "friday", "EndHour": 8}]}}'
@@ -22038,13 +24189,12 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Create custom event windows for scheduled events that affect your Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 **Example 3: To modify the cron expression of an event window**
 The following `modify-instance-event-window` example modifies the cron expression of an event window. Specify the `cron-expression` parameter to modify the cron expression. You can't also specify the `time-range` parameter.
 
 ```
 aws ec2 modify-instance-event-window \
-    --region {{us-east-1}} \
     --instance-event-window-id {{iew-0abcdef1234567890}} \
     --cron-expression {{"* 21-23 * * 2,3"}}
 ```
@@ -22074,7 +24224,7 @@ Output:
     }
 }
 ```
-For event window constraints, see [Considerations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the Scheduled Events section of the *Amazon EC2 User Guide*.
+For more information about event window constraints, see [Create custom event windows for scheduled events that affect your Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/event-windows.html#event-windows-considerations) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyInstanceEventWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-instance-event-window.html) in *AWS CLI Command Reference*.
 
 ### `modify-instance-maintenance-options`
@@ -22171,7 +24321,7 @@ Output:
 ```
 For more information, see [Instance metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html) in the *Amazon EC2 User Guide*.
 **Example 3: To enable instance metadata IPv6 endpoint for your instance**
-The following `modify-instance-metadata-options` example shows you how to turn on the IPv6 endpoint for the instance metadata service. By default, the IPv6 endpoint is disabled. This is true even if you have launched an instance into an IPv6-only subnet. The IPv6 endpoint for IMDS is only accessible on instances built on the Nitro System.
+The following `modify-instance-metadata-options` example turns on the IPv6 endpoint for the instance metadata service. By default, the IPv6 endpoint is disabled. This is true even if you have launched an instance into an IPv6-only subnet. The IPv6 endpoint for IMDS is only accessible on instances built on the Nitro System.
 
 ```
 aws ec2 modify-instance-metadata-options \
@@ -22189,7 +24339,7 @@ Output:
         "HttpTokens": "required",
         "HttpPutResponseHopLimit": 1,
         "HttpEndpoint": "enabled",
-        HttpProtocolIpv6": "enabled"
+        "HttpProtocolIpv6": "enabled"
     }
 }
 ```
@@ -22234,46 +24384,19 @@ Output:
 }
 ```
 **Example 3: To move an instance to a placement group**
-The following `modify-instance-placement` example moves an instance to a placement group, stop the instance, modify the instance placement, and then restart the instance.
+The following `modify-instance-placement` example moves an instance to a placement group by stopping the instance, modifying the instance placement, and then restarting the instance.
+Stop the instance.
 
 ```
 aws ec2 stop-instances \
-    --instance-ids {{i-0123a456700123456}}
-
-{{aws}} {{ec2}} {{modify-instance-placement}} \
-    --instance-id {{i-0123a456700123456}} \
-    --group-name {{MySpreadGroup}}
-
-{{aws}} {{ec2}} {{start-instances}} \
-    --instance-ids {{i-0123a456700123456}}
+    --instance-ids {{i-1234567890abcdef0}}
 ```
-**Example 4: To remove an instance from a placement group**
-The following `modify-instance-placement` example removes an instance from a placement group by stopping the instance, modifying the instance placement, and then restarting the instance. The following example specifies an empty string ("") for the placement group name to indicate that the instance is not to be located in a placement group.
-Stop the instance:
-
-```
-aws ec2 stop-instances \
-    --instance-ids {{i-0123a456700123456}}
-```
-Modify the placement (Windows Command Prompt):
+Modify the placement.
 
 ```
 aws ec2 modify-instance-placement \
-    --instance-id {{i-0123a456700123456}} \
-    --group-name ""
-```
-Modify the placement (Windows PowerShell, Linux, and macOS):
-
-```
-aws ec2 modify-instance-placement {{`}}
-    --instance-id {{i-0123a456700123456}} {{`}}
-    --group-name ''
-```
-Restart the instance:
-
-```
-aws ec2 start-instances \
-    --instance-ids {{i-0123a456700123456}}
+    --instance-id {{i-1234567890abcdef0}} \
+    --group-name {{MySpreadGroup}}
 ```
 Output:
 
@@ -22281,6 +24404,47 @@ Output:
 {
     "Return": true
 }
+```
+Restart the instance.
+
+```
+aws ec2 start-instances \
+    --instance-ids {{i-1234567890abcdef0}}
+```
+**Example 4: To remove an instance from a placement group**
+The following `modify-instance-placement` example removes an instance from a placement group by stopping the instance, modifying the instance placement, and then restarting the instance. The following example specifies an empty string ("") for the placement group name to indicate that the instance is not to be located in a placement group.
+Stop the instance.
+
+```
+aws ec2 stop-instances \
+    --instance-ids {{i-1234567890abcdef0}}
+```
+Modify the placement (Windows Command Prompt).
+
+```
+aws ec2 modify-instance-placement \
+    --instance-id {{i-1234567890abcdef0}} \
+    --group-name ""
+```
+Modify the placement (Windows PowerShell, Linux, and macOS).
+
+```
+aws ec2 modify-instance-placement {{`}}
+    --instance-id {{i-1234567890abcdef0}} {{`}}
+    --group-name ''
+```
+Output:
+
+```
+{
+    "Return": true
+}
+```
+Restart the instance.
+
+```
+aws ec2 start-instances \
+    --instance-ids {{i-1234567890abcdef0}}
 ```
 For more information, see [Modify Dedicated Host tenancy and affinity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/moving-instances-dedicated-hosts.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyInstancePlacement](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-instance-placement.html) in *AWS CLI Command Reference*.
@@ -22293,14 +24457,14 @@ The following code example shows how to use `modify-ipam-pool-allocation`.
 **AWS CLI**
 **To modify an IPAM pool allocation**
 The following `modify-ipam-pool-allocation` example modifies the description of an IPAM pool allocation.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 modify-ipam-pool-allocation \
     --ipam-pool-allocation-id {{ipam-pool-alloc-018ecc28043b54ba38e2cd99943cebfbd}} \
     --description {{"Engineering team  us-west-2 allocation"}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 modify-ipam-pool-allocation {{^}}
@@ -22331,7 +24495,7 @@ The following code example shows how to use `modify-ipam-pool`.
 **AWS CLI**
 **To modify an IPAM pool**
 The following `modify-ipam-pool` example modifies an IPAM pool.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 modify-ipam-pool \
@@ -22340,7 +24504,7 @@ aws ec2 modify-ipam-pool \
     --clear-allocation-default-netmask-length \
     --allocation-min-netmask-length {{14}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 modify-ipam-pool {{^}}
@@ -22360,7 +24524,7 @@ Output:
         "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-02fc38cd4c48e7d38",
         "IpamScopeType": "private",
         "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-08440e7a3acde3908",
-        "IpamRegion": "us-east-1",
+        "IpamRegion": "us-west-2",
         "Locale": "None",
         "PoolDepth": 1,
         "State": "modify-complete",
@@ -22392,7 +24556,7 @@ The following code example shows how to use `modify-ipam-resource-cidr`.
 **AWS CLI**
 **To modify the CIDR allocated to a resource**
 The following `modify-ipam-resource-cidr` example modifies a resource CIDR.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 modify-ipam-resource-cidr \
@@ -22400,10 +24564,10 @@ aws ec2 modify-ipam-resource-cidr \
     --destination-ipam-scope-id {{ipam-scope-0da34c61fd189a141}} \
     --resource-id {{vpc-010e1791024eb0af9}} \
     --resource-cidr {{10.0.1.0/24}} \
-    --resource-region {{us-east-1}} \
+    --resource-region {{us-west-2}} \
     --monitored
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 modify-ipam-resource-cidr {{^}}
@@ -22411,7 +24575,7 @@ aws ec2 modify-ipam-resource-cidr {{^}}
     --destination-ipam-scope-id {{ipam-scope-0da34c61fd189a141}} {{^}}
     --resource-id {{vpc-010e1791024eb0af9}} {{^}}
     --resource-cidr {{10.0.1.0/24}} {{^}}
-    --resource-region {{us-east-1}} {{^}}
+    --resource-region {{us-west-2}} {{^}}
     --monitored
 ```
 Output:
@@ -22422,7 +24586,7 @@ Output:
         "IpamId": "ipam-08440e7a3acde3908",
         "IpamScopeId": "ipam-scope-0da34c61fd189a141",
         "IpamPoolId": "ipam-pool-0533048da7d823723",
-        "ResourceRegion": "us-east-1",
+        "ResourceRegion": "us-west-2",
         "ResourceOwnerId": "123456789012",
         "ResourceId": "vpc-010e1791024eb0af9",
         "ResourceCidr": "10.0.1.0/24",
@@ -22456,26 +24620,25 @@ The following code example shows how to use `modify-ipam-resource-discovery`.
 
 **AWS CLI**
 **To modify the operating regions of a resource discovery**
-In this example, you're an IPAM delegated admin who wants to modify the operating regions of a resource discovery.
+The following `modify-ipam-resource-discovery` example modifies the operating regions of a non-default resource discovery in your AWS account. In this example, you're an IPAM delegated admin.
 To complete this request:
 You cannot modify a default resource discovery and you must be the owner of the resource discovery.You need the resource discovery ID, which you can get with [describe-ipam-resource-discoveries](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-resource-discoveries.html).
-The following `modify-ipam-resource-discovery` example modifies a non-default resource discovery in your AWS account.
+The command adds the `us-west-1` operating Region and removes the `us-east-2` operating Region.
 
 ```
 aws ec2 modify-ipam-resource-discovery \
     --ipam-resource-discovery-id {{ipam-res-disco-0f4ef577a9f37a162}} \
     --add-operating-regions RegionName='us-west-1' \
-    --remove-operating-regions RegionName='us-east-2' \
-    --region {{us-east-1}}
+    --remove-operating-regions RegionName='us-east-2'
 ```
 Output:
 
 ```
 {
     "IpamResourceDiscovery": {
-        "OwnerId": "149977607591",
+        "OwnerId": "123456789012",
         "IpamResourceDiscoveryId": "ipam-res-disco-0365d2977fc1672fe",
-        "IpamResourceDiscoveryArn": "arn:aws:ec2::149977607591:ipam-resource-discovery/ipam-res-disco-0365d2977fc1672fe",
+        "IpamResourceDiscoveryArn": "arn:aws:ec2::123456789012:ipam-resource-discovery/ipam-res-disco-0365d2977fc1672fe",
         "IpamResourceDiscoveryRegion": "us-east-1",
         "Description": "Example",
         "OperatingRegions": [
@@ -22501,26 +24664,24 @@ The following code example shows how to use `modify-ipam-scope`.
 
 **AWS CLI**
 **To modify the description of a scope**
-In this scenario, you're an IPAM delegated admin who wants to modify the description of an IPAM scope.
+The following `modify-ipam-scope` example updates the description of an IPAM scope. In this scenario, you're an IPAM delegated admin.
 To complete this request, you'll need the scope ID, which you can get with [describe-ipam-scopes](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-scopes.html).
-The following `modify-ipam-scope` example updates the description of the scope.
 
 ```
 aws ec2 modify-ipam-scope \
     --ipam-scope-id {{ipam-scope-0d3539a30b57dcdd1}} \
-    --description {{example}} \
-    --region {{us-east-1}}
+    --description {{example}}
 ```
 Output:
 
 ```
 {
-"IpamScope": {
-        "OwnerId": "320805250157",
+    "IpamScope": {
+        "OwnerId": "123456789012",
         "IpamScopeId": "ipam-scope-0d3539a30b57dcdd1",
-        "IpamScopeArn": "arn:aws:ec2::320805250157:ipam-scope/ipam-scope-0d3539a30b57dcdd1",
-        "IpamArn": "arn:aws:ec2::320805250157:ipam/ipam-005f921c17ebd5107",
-        "IpamRegion": "us-east-1",
+        "IpamScopeArn": "arn:aws:ec2::123456789012:ipam-scope/ipam-scope-0d3539a30b57dcdd1",
+        "IpamArn": "arn:aws:ec2::123456789012:ipam/ipam-005f921c17ebd5107",
+        "IpamRegion": "us-west-2",
         "IpamScopeType": "public",
         "IsDefault": true,
         "Description": "example",
@@ -22540,14 +24701,14 @@ The following code example shows how to use `modify-ipam`.
 **AWS CLI**
 **To modify an IPAM**
 The following `modify-ipam` example modifies an IPAM by adding an Operating Region.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 modify-ipam \
     --ipam-id {{ipam-08440e7a3acde3908}} \
     --add-operating-regions {{RegionName=us-west-2}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 modify-ipam {{^}}
@@ -22584,6 +24745,7 @@ Output:
     }
 }
 ```
+For more information, see [Modify IPAM operating Regions](https://docs.aws.amazon.com/vpc/latest/ipam/mod-ipam-region.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [ModifyIpam](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-ipam.html) in *AWS CLI Command Reference*.
 
 ### `modify-launch-template`
@@ -22593,26 +24755,28 @@ The following code example shows how to use `modify-launch-template`.
 
 **AWS CLI**
 **To change the default launch template version**
-This example specifies version 2 of the specified launch template as the default version.
-Command:
+The following `modify-launch-template` example specifies version 2 of the specified launch template as the default version.
 
 ```
-aws ec2 modify-launch-template --launch-template-id {{lt-0abcd290751193123}} --default-version {{2}}
+aws ec2 modify-launch-template \
+    --launch-template-id {{lt-0abcd2907511931ef}} \
+    --default-version {{2}}
 ```
 Output:
 
 ```
 {
-  "LaunchTemplate": {
-      "LatestVersionNumber": 2,
-      "LaunchTemplateId": "lt-0abcd290751193123",
-      "LaunchTemplateName": "WebServers",
-      "DefaultVersionNumber": 2,
-      "CreatedBy": "arn:aws:iam::123456789012:root",
-      "CreateTime": "2017-12-01T13:35:46.000Z"
-  }
+    "LaunchTemplate": {
+        "LatestVersionNumber": 2,
+        "LaunchTemplateId": "lt-0abcd2907511931ef",
+        "LaunchTemplateName": "WebServers",
+        "DefaultVersionNumber": 2,
+        "CreatedBy": "arn:aws:iam::123456789012:root",
+        "CreateTime": "2017-12-01T13:35:46.000Z"
+    }
 }
 ```
+For more information, see [Modify a launch template (manage launch template versions)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-launch-template-versions.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyLaunchTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-launch-template.html) in *AWS CLI Command Reference*.
 
 ### `modify-managed-prefix-list`
@@ -22655,34 +24819,43 @@ For more information, see [Managed prefix lists](https://docs.aws.amazon.com/vpc
 The following code example shows how to use `modify-network-interface-attribute`.
 
 **AWS CLI**
-**To modify the attachment attribute of a network interface**
-This example command modifies the `attachment` attribute of the specified network interface.
-Command:
+**Example 1: To modify the attachment attribute of a network interface**
+The following `modify-network-interface-attribute` example modifies the `attachment` attribute of the specified network interface.
 
 ```
-aws ec2 modify-network-interface-attribute --network-interface-id {{eni-686ea200}} --attachment {{AttachmentId=eni-attach-43348162,DeleteOnTermination=false}}
+aws ec2 modify-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --attachment {{AttachmentId=eni-attach-43348162,DeleteOnTermination=false}}
 ```
-**To modify the description attribute of a network interface**
-This example command modifies the `description` attribute of the specified network interface.
-Command:
+This command produces no output.
+**Example 2: To modify the description attribute of a network interface**
+The following `modify-network-interface-attribute` example modifies the `description` attribute of the specified network interface.
 
 ```
-aws ec2 modify-network-interface-attribute --network-interface-id {{eni-686ea200}} --description {{"My description"}}
+aws ec2 modify-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --description {{"My description"}}
 ```
-**To modify the groupSet attribute of a network interface**
-This example command modifies the `groupSet` attribute of the specified network interface.
-Command:
+This command produces no output.
+**Example 3: To modify the groupSet attribute of a network interface**
+The following `modify-network-interface-attribute` example modifies the `groupSet` attribute of the specified network interface.
 
 ```
-aws ec2 modify-network-interface-attribute --network-interface-id {{eni-686ea200}} --groups {{sg-903004f8}} {{sg-1a2b3c4d}}
+aws ec2 modify-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --groups {{sg-903004f8}} {{sg-1a2b3c4d}}
 ```
-**To modify the sourceDestCheck attribute of a network interface**
-This example command modifies the `sourceDestCheck` attribute of the specified network interface.
-Command:
+This command produces no output.
+**Example 4: To modify the sourceDestCheck attribute of a network interface**
+The following `modify-network-interface-attribute` example modifies the `sourceDestCheck` attribute of the specified network interface.
 
 ```
-aws ec2 modify-network-interface-attribute --network-interface-id {{eni-686ea200}} --no-source-dest-check
+aws ec2 modify-network-interface-attribute \
+    --network-interface-id {{eni-686ea200}} \
+    --no-source-dest-check
 ```
+This command produces no output.
+For more information, see [Modify network interface attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-interface-attributes.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyNetworkInterfaceAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-network-interface-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-private-dns-name-options`
@@ -22715,40 +24888,45 @@ For more information, see [Amazon EC2 instance hostname types](https://docs.aws.
 The following code example shows how to use `modify-reserved-instances`.
 
 **AWS CLI**
-**To modify Reserved Instances**
-This example command moves a Reserved Instance to another Availability Zone in the same region.
-Command:
+**Example 1: To modify Reserved Instances**
+The following `modify-reserved-instances` example moves a Reserved Instance to another Availability Zone in the same region.
 
 ```
-aws ec2 modify-reserved-instances --reserved-instances-ids {{b847fa93-e282-4f55-b59a-1342f5bd7c02}} --target-configurations {{AvailabilityZone=us-west-1c,Platform=EC2-Classic,InstanceCount=10}}
+aws ec2 modify-reserved-instances \
+    --reserved-instances-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --target-configurations {{AvailabilityZone=us-west-2c,Platform=EC2-Classic,InstanceCount=10}}
 ```
 Output:
 
 ```
 {
-  "ReservedInstancesModificationId": "rimod-d3ed4335-b1d3-4de6-ab31-0f13aaf46687"
+    "ReservedInstancesModificationId": "rimod-d3ed4335-b1d3-4de6-ab31-0f13aaf46687"
 }
 ```
-**To modify the network platform of Reserved Instances**
-This example command converts EC2-Classic Reserved Instances to EC2-VPC.
-Command:
+For more information, see [Modify Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html) in the *Amazon EC2 User Guide*.
+**Example 2: To modify the network platform of Reserved Instances**
+The following `modify-reserved-instances` example converts EC2-Classic Reserved Instances to EC2-VPC.
 
 ```
-aws ec2 modify-reserved-instances --reserved-instances-ids {{f127bd27-edb7-44c9-a0eb-0d7e09259af0}} --target-configurations {{AvailabilityZone=us-west-1c,Platform=EC2-VPC,InstanceCount=5}}
+aws ec2 modify-reserved-instances \
+    --reserved-instances-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --target-configurations {{AvailabilityZone=us-west-2c,Platform=EC2-VPC,InstanceCount=5}}
 ```
 Output:
 
 ```
 {
-  "ReservedInstancesModificationId": "rimod-82fa9020-668f-4fb6-945d-61537009d291"
+    "ReservedInstancesModificationId": "rimod-82fa9020-668f-4fb6-945d-61537009d291"
 }
 ```
-For more information, see Modifying Your Reserved Instances in the *Amazon EC2 User Guide*.
-**To modify the instance size of Reserved Instances**
-This example command modifies a Reserved Instance that has 10 m1.small Linux/UNIX instances in us-west-1c so that 8 m1.small instances become 2 m1.large instances, and the remaining 2 m1.small become 1 m1.medium instance in the same Availability Zone. Command:
+For more information, see [Modify Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html) in the *Amazon EC2 User Guide*.
+**Example 3: To modify the instance size of Reserved Instances**
+The following `modify-reserved-instances` example modifies a Reserved Instance that has 10 m1.small Linux/UNIX instances in us-west-2c so that 8 m1.small instances become 2 m1.large instances, and the remaining 2 m1.small become 1 m1.medium instance in the same Availability Zone.
 
 ```
-aws ec2 modify-reserved-instances --reserved-instances-ids {{1ba8e2e3-3556-4264-949e-63ee671405a9}} --target-configurations {{AvailabilityZone=us-west-1c,Platform=EC2-Classic,InstanceCount=2,InstanceType=m1.large}} {{AvailabilityZone=us-west-1c,Platform=EC2-Classic,InstanceCount=1,InstanceType=m1.medium}}
+aws ec2 modify-reserved-instances \
+    --reserved-instances-ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --target-configurations {{AvailabilityZone=us-west-2c,Platform=EC2-Classic,InstanceCount=2,InstanceType=m1.large}} {{AvailabilityZone=us-west-2c,Platform=EC2-Classic,InstanceCount=1,InstanceType=m1.medium}}
 ```
 Output:
 
@@ -22757,7 +24935,7 @@ Output:
     "ReservedInstancesModificationId": "rimod-acc5f240-080d-4717-b3e3-1c6b11fa00b6"
 }
 ```
-For more information, see Modifying the Instance Size of Your Reservations in the *Amazon EC2 User Guide*.
+For more information, see [Modify Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-modifying.html#ri-modification-instancemove) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyReservedInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-reserved-instances.html) in *AWS CLI Command Reference*.
 
 ### `modify-security-group-rules`
@@ -22800,6 +24978,8 @@ aws ec2 modify-snapshot-attribute \
     --operation-type {{remove}} \
     --user-ids {{123456789012}}
 ```
+This command produces no output.
+For more information, see [Share an Amazon EBS snapshot with other AWS accounts](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modifying-snapshot-permissions.html) in the *Amazon EBS User Guide*.
 **Example 2: To make a snapshot public**
 The following `modify-snapshot-attribute` example makes the specified snapshot public.
 
@@ -22810,6 +24990,8 @@ aws ec2 modify-snapshot-attribute \
     --operation-type {{add}} \
     --group-names {{all}}
 ```
+This command produces no output.
+For more information, see [Share an Amazon EBS snapshot with other AWS accounts](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modifying-snapshot-permissions.html) in the *Amazon EBS User Guide*.
 +  For API details, see [ModifySnapshotAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-snapshot-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-snapshot-tier`
@@ -22844,11 +25026,12 @@ The following code example shows how to use `modify-spot-fleet-request`.
 
 **AWS CLI**
 **To modify a Spot fleet request**
-This example command updates the target capacity of the specified Spot fleet request.
-Command:
+The following `modify-spot-fleet-request` example updates the target capacity of the specified Spot fleet request.
 
 ```
-aws ec2 modify-spot-fleet-request --target-capacity {{20}} --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
+aws ec2 modify-spot-fleet-request \
+    --target-capacity {{20}} \
+    --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 Output:
 
@@ -22857,11 +25040,13 @@ Output:
     "Return": true
 }
 ```
-This example command decreases the target capacity of the specified Spot fleet request without terminating any Spot Instances as a result.
-Command:
+The following `modify-spot-fleet-request` example decreases the target capacity of the specified Spot fleet request without terminating any Spot Instances as a result.
 
 ```
-aws ec2 modify-spot-fleet-request --target-capacity {{10}} --excess-capacity-termination-policy {{NoTermination}} --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
+aws ec2 modify-spot-fleet-request \
+    --target-capacity {{10}} \
+    --excess-capacity-termination-policy {{NoTermination}} \
+    --spot-fleet-request-id {{sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE}}
 ```
 Output:
 
@@ -22870,6 +25055,7 @@ Output:
     "Return": true
 }
 ```
+For more information, see [Modify a Spot Fleet request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-spot-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifySpotFleetRequest](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-spot-fleet-request.html) in *AWS CLI Command Reference*.
 
 ### `modify-subnet-attribute`
@@ -22878,21 +25064,26 @@ Output:
 The following code example shows how to use `modify-subnet-attribute`.
 
 **AWS CLI**
-**To change a subnet's public IPv4 addressing behavior**
-This example modifies subnet-1a2b3c4d to specify that all instances launched into this subnet are assigned a public IPv4 address. If the command succeeds, no output is returned.
-Command:
+**Example 1: To change a subnet's public IPv4 addressing behavior**
+The following `modify-subnet-attribute` example modifies subnet-1a2b3c4d to specify that all instances launched into this subnet are assigned a public IPv4 address.
 
 ```
-aws ec2 modify-subnet-attribute --subnet-id {{subnet-1a2b3c4d}} --map-public-ip-on-launch
+aws ec2 modify-subnet-attribute \
+    --subnet-id {{subnet-1a2b3c4d}} \
+    --map-public-ip-on-launch
 ```
-**To change a subnet's IPv6 addressing behavior**
-This example modifies subnet-1a2b3c4d to specify that all instances launched into this subnet are assigned an IPv6 address from the range of the subnet.
-Command:
+This command produces no output.
+For more information, see [Modify the IP addressing attributes of your subnet](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-public-ip.html) in the *Amazon VPC User Guide*.
+**Example 2: To change a subnet's IPv6 addressing behavior**
+The following `modify-subnet-attribute` example modifies subnet-1a2b3c4d to specify that all instances launched into this subnet are assigned an IPv6 address from the range of the subnet.
 
 ```
-aws ec2 modify-subnet-attribute --subnet-id {{subnet-1a2b3c4d}} --assign-ipv6-address-on-creation
+aws ec2 modify-subnet-attribute \
+    --subnet-id {{subnet-1a2b3c4d}} \
+    --assign-ipv6-address-on-creation
 ```
-For more information, see IP Addressing in Your VPC in the *AWS Virtual Private Cloud User Guide*.
+This command produces no output.
+For more information, see [IP addressing for your VPCs and subnets](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html) in the *Amazon VPC User Guide*.
 +  For API details, see [ModifySubnetAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-subnet-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-traffic-mirror-filter-network-services`
@@ -22941,7 +25132,7 @@ Output:
     }
 }
 ```
-For more information, see [Modify Traffic Mirror Filter Network Services](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-filter.html#modify-traffic-mirroring-filter-network-services) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror filter](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-filter.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [ModifyTrafficMirrorFilterNetworkServices](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-traffic-mirror-filter-network-services.html) in *AWS CLI Command Reference*.
 
 ### `modify-traffic-mirror-filter-rule`
@@ -22975,7 +25166,7 @@ Output:
     }
 }
 ```
-For more information, see [Modify Your Traffic Mirror Filter Rules](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-filter.html#modify-traffic-mirroring-filter-rules) in the *AWS Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror filter](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-filter.html) in the *AWS Traffic Mirroring Guide*.
 +  For API details, see [ModifyTrafficMirrorFilterRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-traffic-mirror-filter-rule.html) in *AWS CLI Command Reference*.
 
 ### `modify-traffic-mirror-session`
@@ -23002,7 +25193,7 @@ Output:
         "TrafficMirrorTargetId": "tmt-07f75d8feeEXAMPLE",
         "TrafficMirrorFilterId": "tmf-04812ff784EXAMPLE",
         "NetworkInterfaceId": "eni-070203f901EXAMPLE",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "SessionNumber": 1,
         "VirtualNetworkId": 7159709,
         "Description": "Change packet length",
@@ -23010,7 +25201,7 @@ Output:
     }
 }
 ```
-For more information, see [Modify your traffic mirror session](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-session.html#modify-traffic-mirroring-session) in the *Traffic Mirroring Guide*.
+For more information, see [Create, modify, or delete a traffic mirror session](https://docs.aws.amazon.com/vpc/latest/mirroring/create-traffic-mirroring-session.html) in the *Traffic Mirroring Guide*.
 +  For API details, see [ModifyTrafficMirrorSession](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-traffic-mirror-session.html) in *AWS CLI Command Reference*.
 
 ### `modify-transit-gateway-prefix-list-reference`
@@ -23041,7 +25232,7 @@ Output:
         "TransitGatewayAttachment": {
             "TransitGatewayAttachmentId": "tgw-attach-aabbccddaabbccaab",
             "ResourceType": "vpc",
-            "ResourceId": "vpc-112233445566aabbc"
+            "ResourceId": "vpc-112233445aabbccdd"
         }
     }
 }
@@ -23071,7 +25262,7 @@ Output:
         "TransitGatewayAttachmentId": "tgw-attach-09fbd47ddfEXAMPLE",
         "TransitGatewayId": "tgw-0560315ccfEXAMPLE",
         "VpcId": "vpc-5eccc927",
-        "VpcOwnerId": "111122223333",
+        "VpcOwnerId": "123456789012",
         "State": "modifying",
         "SubnetIds": [
             "subnet-0e51f45802EXAMPLE",
@@ -23099,7 +25290,7 @@ The following `modify-transit-gateway` example modifies the specified transit ga
 
 ```
 aws ec2 modify-transit-gateway \
-    --transit-gateway-id {{tgw-111111222222aaaaa}} \
+    --transit-gateway-id {{tgw-1111112222aaaaaaa}} \
     --options {{VpnEcmpSupport=enable}}
 ```
 Output:
@@ -23107,7 +25298,7 @@ Output:
 ```
 {
     "TransitGateway": {
-        "TransitGatewayId": "tgw-111111222222aaaaa",
+        "TransitGatewayId": "tgw-1111112222aaaaaaa",
         "TransitGatewayArn": "64512",
         "State": "modifying",
         "OwnerId": "123456789012",
@@ -23188,8 +25379,8 @@ Output:
         "ApplicationDomain": "example.com",
         "EndpointType": "network-interface",
         "AttachmentType": "vpc",
-        "DomainCertificateArn": "arn:aws:acm:us-east-2:123456789012:certificate/eb065ea0-26f9-4e75-a6ce-0a1a7EXAMPLE",
-        "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-east-2.amazonaws.com",
+        "DomainCertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "EndpointDomain": "my-ava-app.edge-00c3372d53b1540bb.vai-0ce000c0b7643abea.prod.verified-access.us-west-2.amazonaws.com",
         "SecurityGroupIds": [
             "sg-004915970c4c8f13a"
         ],
@@ -23268,7 +25459,7 @@ Output:
         "VerifiedAccessInstanceId": "vai-0ce000c0b7643abea",
         "Description": "Testing Verified Access",
         "Owner": "123456789012",
-        "VerifiedAccessGroupArn": "arn:aws:ec2:us-east-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
+        "VerifiedAccessGroupArn": "arn:aws:ec2:us-west-2:123456789012:verified-access-group/vagr-0dbe967baf14b7235",
         "CreationTime": "2023-08-25T19:55:19",
         "LastUpdatedTime": "2023-08-25T22:17:25"
     }
@@ -23395,12 +25586,15 @@ The following code example shows how to use `modify-volume-attribute`.
 
 **AWS CLI**
 **To modify a volume attribute**
-This example sets the `autoEnableIo` attribute of the volume with the ID `vol-1234567890abcdef0` to `true`. If the command succeeds, no output is returned.
-Command:
+The following `modify-volume-attribute` example sets the `autoEnableIo` attribute of the volume with the ID `vol-1234567890abcdef0` to `true`.
 
 ```
-aws ec2 modify-volume-attribute --volume-id {{vol-1234567890abcdef0}} --auto-enable-io
+aws ec2 modify-volume-attribute \
+    --volume-id {{vol-1234567890abcdef0}} \
+    --auto-enable-io
 ```
+This command produces no output.
+For more information, see [Amazon EBS volume status checks](https://docs.aws.amazon.com/ebs/latest/userguide/monitoring-volume-checks.html) in the *Amazon EBS User Guide*.
 +  For API details, see [ModifyVolumeAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-volume-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-volume`
@@ -23411,10 +25605,11 @@ The following code example shows how to use `modify-volume`.
 **AWS CLI**
 **Example 1: To modify a volume by changing its size**
 The following `modify-volume` example changes the size of the specified volume to 150GB.
-Command:
 
 ```
-aws ec2 modify-volume --size {{150}} --volume-id {{vol-1234567890abcdef0}}
+aws ec2 modify-volume \
+    --size {{150}} \
+    --volume-id {{vol-1234567890abcdef0}}
 ```
 Output:
 
@@ -23434,6 +25629,7 @@ Output:
     }
 }
 ```
+For more information, see [Request Amazon EBS volume modifications](https://docs.aws.amazon.com/ebs/latest/userguide/requesting-ebs-volume-modifications.html) in the *Amazon EBS User Guide*.
 **Example 2: To modify a volume by changing its type, size, and IOPS value**
 The following `modify-volume` example changes the volume type to Provisioned IOPS SSD, sets the target IOPS rate to 10000, and sets the volume size to 350GB.
 
@@ -23462,6 +25658,7 @@ Output:
     }
 }
 ```
+For more information, see [Request Amazon EBS volume modifications](https://docs.aws.amazon.com/ebs/latest/userguide/requesting-ebs-volume-modifications.html) in the *Amazon EBS User Guide*.
 +  For API details, see [ModifyVolume](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-volume.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-attribute`
@@ -23470,20 +25667,26 @@ Output:
 The following code example shows how to use `modify-vpc-attribute`.
 
 **AWS CLI**
-**To modify the enableDnsSupport attribute**
-This example modifies the `enableDnsSupport` attribute. This attribute indicates whether DNS resolution is enabled for the VPC. If this attribute is `true`, the Amazon DNS server resolves DNS hostnames for your instances to their corresponding IP addresses; otherwise, it does not. If the command succeeds, no output is returned.
-Command:
+**Example 1: To modify the enableDnsSupport attribute**
+The following `modify-vpc-attribute` example modifies the `enableDnsSupport` attribute. This attribute indicates whether DNS resolution is enabled for the VPC. If this attribute is `true`, the Amazon DNS server resolves DNS hostnames for your instances to their corresponding IP addresses; otherwise, it does not.
 
 ```
-aws ec2 modify-vpc-attribute --vpc-id {{vpc-a01106c2}} --enable-dns-support "{\"Value\":false}"
+aws ec2 modify-vpc-attribute \
+    --vpc-id {{vpc-a01106c2}} \
+    --enable-dns-support "{\"Value\":false}"
 ```
-**To modify the enableDnsHostnames attribute**
-This example modifies the `enableDnsHostnames` attribute. This attribute indicates whether instances launched in the VPC get DNS hostnames. If this attribute is `true`, instances in the VPC get DNS hostnames; otherwise, they do not. If the command succeeds, no output is returned.
-Command:
+This command produces no output.
+For more information, see [View and update DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns-updating.html) in the *Amazon VPC User Guide*.
+**Example 2: To modify the enableDnsHostnames attribute**
+The following `modify-vpc-attribute` example modifies the `enableDnsHostnames` attribute. This attribute indicates whether instances launched in the VPC get DNS hostnames. If this attribute is `true`, instances in the VPC get DNS hostnames; otherwise, they do not.
 
 ```
-aws ec2 modify-vpc-attribute --vpc-id {{vpc-a01106c2}} --enable-dns-hostnames "{\"Value\":false}"
+aws ec2 modify-vpc-attribute \
+    --vpc-id {{vpc-a01106c2}} \
+    --enable-dns-hostnames "{\"Value\":false}"
 ```
+This command produces no output.
+For more information, see [View and update DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns-updating.html) in the *Amazon VPC User Guide*.
 +  For API details, see [ModifyVpcAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-attribute.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-endpoint-connection-notification`
@@ -23493,19 +25696,22 @@ The following code example shows how to use `modify-vpc-endpoint-connection-noti
 
 **AWS CLI**
 **To modify an endpoint connection notification**
-This example changes the SNS topic for the specified endpoint connection notification.
-Command:
+The following `modify-vpc-endpoint-connection-notification` example changes the SNS topic for the specified endpoint connection notification.
 
 ```
-aws ec2 modify-vpc-endpoint-connection-notification --connection-notification-id {{vpce-nfn-008776de7e03f5abc}} --connection-events {{Accept}} {{Reject}} --connection-notification-arn {{arn:aws:sns:us-east-2:123456789012:mytopic}}
+aws ec2 modify-vpc-endpoint-connection-notification \
+    --connection-notification-id {{vpce-nfn-008776de7e03f5abc}} \
+    --connection-events {{Accept}} {{Reject}} \
+    --connection-notification-arn {{arn:aws:sns:us-west-2:123456789012:mytopic}}
 ```
 Output:
 
 ```
 {
-   "ReturnValue": true
+    "ReturnValue": true
 }
 ```
+For more information, see [Receive alerts for endpoint service events](https://docs.aws.amazon.com/vpc/latest/privatelink/create-notification-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [ModifyVpcEndpointConnectionNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-endpoint-connection-notification.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-endpoint-service-configuration`
@@ -23515,19 +25721,21 @@ The following code example shows how to use `modify-vpc-endpoint-service-configu
 
 **AWS CLI**
 **To modify an endpoint service configuration**
-This example changes the acceptance requirement for the specified endpoint service.
-Command:
+The following `modify-vpc-endpoint-service-configuration` example changes the acceptance requirement for the specified endpoint service.
 
 ```
-aws ec2 modify-vpc-endpoint-service-configuration --service-id {{vpce-svc-09222513e6e77dc86}} --no-acceptance-required
+aws ec2 modify-vpc-endpoint-service-configuration \
+    --service-id {{vpce-svc-09222513e6e77dc86}} \
+    --no-acceptance-required
 ```
 Output:
 
 ```
 {
-   "ReturnValue": true
+    "Return": true
 }
 ```
+For more information, see [Configure an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [ModifyVpcEndpointServiceConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-endpoint-service-configuration.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-endpoint-service-payer-responsibility`
@@ -23545,6 +25753,7 @@ aws ec2 modify-vpc-endpoint-service-payer-responsibility \
     --payer-responsibility {{ServiceOwner}}
 ```
 This command produces no output.
+For more information, see [Configure an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [ModifyVpcEndpointServicePayerResponsibility](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-endpoint-service-payer-responsibility.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-endpoint-service-permissions`
@@ -23554,25 +25763,28 @@ The following code example shows how to use `modify-vpc-endpoint-service-permiss
 
 **AWS CLI**
 **To modify endpoint service permissions**
-This example adds permission for an AWS account to connect to the specified endpoint service.
-Command:
+The following `modify-vpc-endpoint-service-permissions` example adds permission for an AWS account to connect to the specified endpoint service.
 
 ```
-aws ec2 modify-vpc-endpoint-service-permissions --service-id {{vpce-svc-03d5ebb7d9579a2b3}} --add-allowed-principals '{{["arn:aws:iam::123456789012:root"]}}'
+aws ec2 modify-vpc-endpoint-service-permissions \
+    --service-id {{vpce-svc-03d5ebb7d9579a2b3}} \
+    --add-allowed-principals '{{["arn:aws:iam::123456789012:root"]}}'
 ```
 Output:
 
 ```
 {
-   "ReturnValue": true
+    "ReturnValue": true
 }
 ```
-This example adds permission for a specific IAM user (`admin`) to connect to the specified endpoint service.
-Command:
+The following `modify-vpc-endpoint-service-permissions` example adds permission for a specific IAM user (`admin`) to connect to the specified endpoint service.
 
 ```
-aws ec2 modify-vpc-endpoint-service-permissions --service-id {{vpce-svc-03d5ebb7d9579a2b3}} --add-allowed-principals '{{["arn:aws:iam::123456789012:user/admin"]}}'
+aws ec2 modify-vpc-endpoint-service-permissions \
+    --service-id {{vpce-svc-03d5ebb7d9579a2b3}} \
+    --add-allowed-principals '{{["arn:aws:iam::123456789012:user/admin"]}}'
 ```
+For more information, see [Configure an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#add-remove-permissions) in the *AWS PrivateLink User Guide*.
 +  For API details, see [ModifyVpcEndpointServicePermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-endpoint-service-permissions.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-endpoint`
@@ -23581,34 +25793,39 @@ aws ec2 modify-vpc-endpoint-service-permissions --service-id {{vpce-svc-03d5ebb7
 The following code example shows how to use `modify-vpc-endpoint`.
 
 **AWS CLI**
-**To modify a gateway endpoint**
-This example modifies gateway endpoint `vpce-1a2b3c4d` by associating route table `rtb-aaa222bb` with the endpoint, and resetting the policy document.
-Command:
+**Example 1: To modify a gateway endpoint**
+The following `modify-vpc-endpoint` example modifies gateway endpoint `vpce-1a2b3c4d` by associating route table `rtb-aaa222bb` with the endpoint, and resetting the policy document.
 
 ```
-aws ec2 modify-vpc-endpoint --vpc-endpoint-id {{vpce-1a2b3c4d}} --add-route-table-ids {{rtb-aaa222bb}} --reset-policy
+aws ec2 modify-vpc-endpoint \
+    --vpc-endpoint-id {{vpce-1a2b3c4d}} \
+    --add-route-table-ids {{rtb-aaa222bb}} \
+    --reset-policy
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
-**To modify an interface endpoint**
-This example modifies interface endpoint `vpce-0fe5b17a0707d6fa5` by adding subnet `subnet-d6fcaa8d` to the endpoint.
-Command:
+For more information, see [Gateway endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html) in the *AWS PrivateLink User Guide*.
+**Example 2: To modify an interface endpoint**
+The following `modify-vpc-endpoint` example modifies interface endpoint `vpce-0fe5b17a0707d6fa5` by adding subnet `subnet-d6fcaa8d` to the endpoint.
 
 ```
-aws ec2 modify-vpc-endpoint --vpc-endpoint-id {{vpce-0fe5b17a0707d6fa5}} --add-subnet-id {{subnet-d6fcaa8d}}
+aws ec2 modify-vpc-endpoint \
+    --vpc-endpoint-id {{vpce-0fe5b17a0707d6fa5}} \
+    --add-subnet-id {{subnet-d6fcaa8d}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
+For more information, see [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *AWS PrivateLink User Guide*.
 +  For API details, see [ModifyVpcEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-peering-connection-options`
@@ -23617,54 +25834,58 @@ Output:
 The following code example shows how to use `modify-vpc-peering-connection-options`.
 
 **AWS CLI**
-**To enable communication over a VPC peering connection from your local ClassicLink connection**
-In this example, for peering connection `pcx-aaaabbb`, the owner of the requester VPC modifies the VPC peering connection options to enable a local ClassicLink connection to communicate with the peer VPC.
-Command:
+**Example 1: To enable communication over a VPC peering connection from your local ClassicLink connection**
+The following `modify-vpc-peering-connection-options` example modifies the VPC peering connection options for peering connection `pcx-aaaabbbb` to enable a local ClassicLink connection to communicate with the peer VPC. In this example, the owner of the requester VPC modifies the options.
 
 ```
-aws ec2 modify-vpc-peering-connection-options --vpc-peering-connection-id {{pcx-aaaabbbb}} --requester-peering-connection-options {{AllowEgressFromLocalClassicLinkToRemoteVpc=true}}
+aws ec2 modify-vpc-peering-connection-options \
+    --vpc-peering-connection-id {{pcx-aaaabbbb}} \
+    --requester-peering-connection-options {{AllowEgressFromLocalClassicLinkToRemoteVpc=true}}
 ```
 Output:
 
 ```
 {
-  "RequesterPeeringConnectionOptions": {
-      "AllowEgressFromLocalClassicLinkToRemoteVpc": true
-  }
+    "RequesterPeeringConnectionOptions": {
+        "AllowEgressFromLocalClassicLinkToRemoteVpc": true
+    }
 }
 ```
-**To enable communication over a VPC peering connection from your local VPC to a remote ClassicLink connection**
-In this example, the owner of the accepter VPC modifies the VPC peering connection options to enable the local VPC to communicate with the ClassicLink connection in the peer VPC.
-Command:
+**Example 2: To enable communication over a VPC peering connection from your local VPC to a remote ClassicLink connection**
+The following `modify-vpc-peering-connection-options` example modifies the VPC peering connection options for `pcx-aaaabbbb` to enable the local VPC to communicate with the ClassicLink connection in the peer VPC. In this example, the owner of the accepter VPC modifies the options.
 
 ```
-aws ec2 modify-vpc-peering-connection-options --vpc-peering-connection-id {{pcx-aaaabbbb}} --accepter-peering-connection-options {{AllowEgressFromLocalVpcToRemoteClassicLink=true}}
+aws ec2 modify-vpc-peering-connection-options \
+    --vpc-peering-connection-id {{pcx-aaaabbbb}} \
+    --accepter-peering-connection-options {{AllowEgressFromLocalVpcToRemoteClassicLink=true}}
 ```
 Output:
 
 ```
 {
-  "AccepterPeeringConnectionOptions": {
-    "AllowEgressFromLocalVpcToRemoteClassicLink": true
-  }
+    "AccepterPeeringConnectionOptions": {
+        "AllowEgressFromLocalVpcToRemoteClassicLink": true
+    }
 }
 ```
-**To enable DNS resolution support for the VPC peering connection**
-In this example, the owner of the requester VPC modifies the VPC peering connection options for `pcx-aaaabbbb` to enable the local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.
-Command:
+**Example 3: To enable DNS resolution support for the VPC peering connection**
+The following `modify-vpc-peering-connection-options` example modifies the VPC peering connection options for `pcx-aaaabbbb` to enable the local VPC to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC. In this example, the owner of the requester VPC modifies the options.
 
 ```
-aws ec2 modify-vpc-peering-connection-options --vpc-peering-connection-id {{pcx-aaaabbbb}} --requester-peering-connection-options {{AllowDnsResolutionFromRemoteVpc=true}}
+aws ec2 modify-vpc-peering-connection-options \
+    --vpc-peering-connection-id {{pcx-aaaabbbb}} \
+    --requester-peering-connection-options {{AllowDnsResolutionFromRemoteVpc=true}}
 ```
 Output:
 
 ```
 {
-  "RequesterPeeringConnectionOptions": {
-      "AllowDnsResolutionFromRemoteVpc": true
-  }
+    "RequesterPeeringConnectionOptions": {
+        "AllowDnsResolutionFromRemoteVpc": true
+    }
 }
 ```
+For more information, see [Enable DNS resolution for a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/vpc-peering-dns.html) in the *Amazon VPC Peering Guide*.
 +  For API details, see [ModifyVpcPeeringConnectionOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-peering-connection-options.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpc-tenancy`
@@ -23674,19 +25895,21 @@ The following code example shows how to use `modify-vpc-tenancy`.
 
 **AWS CLI**
 **To modify the tenancy of a VPC**
-This example modifies the tenancy of VPC `vpc-1a2b3c4d` to `default`.
-Command:
+The following `modify-vpc-tenancy` example modifies the tenancy of VPC `vpc-1a2b3c4d` to `default`.
 
 ```
-aws ec2 modify-vpc-tenancy --vpc-id {{vpc-1a2b3c4d}} --instance-tenancy {{default}}
+aws ec2 modify-vpc-tenancy \
+    --vpc-id {{vpc-1a2b3c4d}} \
+    --instance-tenancy {{default}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "ReturnValue": true
 }
 ```
+For more information, see [Change the instance tenancy of a VPC](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/change-tenancy-vpc.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ModifyVpcTenancy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpc-tenancy.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpn-connection-options`
@@ -23707,47 +25930,45 @@ Output:
 
 ```
 {
-    "VpnConnections": [
-        {
-            "CustomerGatewayConfiguration": "...configuration information...",
-            "CustomerGatewayId": "cgw-01234567abcde1234",
-            "Category": "VPN",
-            "State": "modifying",
-            "Type": "ipsec.1",
-            "VpnConnectionId": "vpn-1122334455aabbccd",
-            "TransitGatewayId": "tgw-00112233445566aab",
-            "Options": {
-                "EnableAcceleration": false,
-                "StaticRoutesOnly": true,
-                "LocalIpv4NetworkCidr": "10.0.0.0/16",
-                "RemoteIpv4NetworkCidr": "0.0.0.0/0",
-                "TunnelInsideIpVersion": "ipv4"
+    "VpnConnection": {
+        "CustomerGatewayConfiguration": "...configuration information...",
+        "CustomerGatewayId": "cgw-01234567abcde1234",
+        "Category": "VPN",
+        "State": "modifying",
+        "Type": "ipsec.1",
+        "VpnConnectionId": "vpn-1122334455aabbccd",
+        "TransitGatewayId": "tgw-00112233445566aab",
+        "Options": {
+            "EnableAcceleration": false,
+            "StaticRoutesOnly": true,
+            "LocalIpv4NetworkCidr": "10.0.0.0/16",
+            "RemoteIpv4NetworkCidr": "0.0.0.0/0",
+            "TunnelInsideIpVersion": "ipv4"
+        },
+        "Routes": [],
+        "Tags": [
+            {
+                "Key": "Name",
+                "Value": "CanadaVPN"
+            }
+        ],
+        "VgwTelemetry": [
+            {
+                "AcceptedRouteCount": 0,
+                "LastStatusChange": "2020-07-29T10:35:11.000Z",
+                "OutsideIpAddress": "203.0.113.3",
+                "Status": "DOWN",
+                "StatusMessage": ""
             },
-            "Routes": [],
-            "Tags": [
-                {
-                    "Key": "Name",
-                    "Value": "CanadaVPN"
-                }
-            ],
-            "VgwTelemetry": [
-                {
-                    "AcceptedRouteCount": 0,
-                    "LastStatusChange": "2020-07-29T10:35:11.000Z",
-                    "OutsideIpAddress": "203.0.113.3",
-                    "Status": "DOWN",
-                    "StatusMessage": ""
-                },
-                {
-                    "AcceptedRouteCount": 0,
-                    "LastStatusChange": "2020-09-02T09:09:33.000Z",
-                    "OutsideIpAddress": "203.0.113.5",
-                    "Status": "UP",
-                    "StatusMessage": ""
-                }
-            ]
-        }
-    ]
+            {
+                "AcceptedRouteCount": 0,
+                "LastStatusChange": "2020-09-02T09:09:33.000Z",
+                "OutsideIpAddress": "203.0.113.5",
+                "Status": "UP",
+                "StatusMessage": ""
+            }
+        ]
+    }
 }
 ```
 For more information, see [Modifying Site-to-Site VPN connection options](https://docs.aws.amazon.com/vpn/latest/s2svpn/modify-vpn-connection-options.html) in the *AWS Site-to-Site VPN User Guide*.
@@ -23760,7 +25981,7 @@ The following code example shows how to use `modify-vpn-connection`.
 
 **AWS CLI**
 **To modify a VPN connection**
-The following `modify-vpn-connection` example changes the target gateway for VPN connection `vpn-12345678901234567` to virtual private gateway `vgw-11223344556677889`:
+The following `modify-vpn-connection` example changes the target gateway for VPN connection `vpn-12345678901234567` to virtual private gateway `vgw-11223344556677889`.
 
 ```
 aws ec2 modify-vpn-connection \
@@ -23801,6 +26022,7 @@ Output:
     }
 }
 ```
+For more information, see [Modify the target gateway of an AWS Site-to-Site VPN connection](https://docs.aws.amazon.com/vpn/latest/s2svpn/modify-vpn-target.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [ModifyVpnConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpn-connection.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpn-tunnel-certificate`
@@ -23810,7 +26032,7 @@ The following code example shows how to use `modify-vpn-tunnel-certificate`.
 
 **AWS CLI**
 **To rotate a VPN tunnel certificate**
-The following `modify-vpn-tunnel-certificate` example rotates the certificate for the specified tunnel for a VPN connection
+The following `modify-vpn-tunnel-certificate` example rotates the certificate for the specified tunnel for a VPN connection.
 
 ```
 aws ec2 modify-vpn-tunnel-certificate \
@@ -23822,7 +26044,7 @@ Output:
 ```
 {
     "VpnConnection": {
-        "CustomerGatewayConfiguration": ...configuration information...,
+        "CustomerGatewayConfiguration": "...configuration information...",
         "CustomerGatewayId": "cgw-aabbccddee1122334",
         "Category": "VPN",
         "State": "modifying",
@@ -23839,7 +26061,7 @@ Output:
                 "OutsideIpAddress": "203.0.113.17",
                 "Status": "DOWN",
                 "StatusMessage": "IPSEC IS DOWN",
-                "CertificateArn": "arn:aws:acm:us-east-1:123456789101:certificate/c544d8ce-20b8-4fff-98b0-example"
+                "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/c544d8ce-20b8-4fff-98b0-example"
             },
             {
                 "AcceptedRouteCount": 0,
@@ -23847,12 +26069,13 @@ Output:
                 "OutsideIpAddress": "203.0.114.18",
                 "Status": "DOWN",
                 "StatusMessage": "IPSEC IS DOWN",
-                "CertificateArn": "arn:aws:acm:us-east-1:123456789101:certificate/5ab64566-761b-4ad3-b259-example"
+                "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/5ab64566-761b-4ad3-b259-example"
             }
         ]
     }
 }
 ```
+For more information, see [AWS Site-to-Site VPN tunnel authentication options](https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-tunnel-authentication-options.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [ModifyVpnTunnelCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpn-tunnel-certificate.html) in *AWS CLI Command Reference*.
 
 ### `modify-vpn-tunnel-options`
@@ -23946,6 +26169,7 @@ Output:
     }
 }
 ```
+For more information, see [Modify AWS Site-to-Site VPN tunnel options](https://docs.aws.amazon.com/vpn/latest/s2svpn/modify-vpn-tunnel-options.html) in the *AWS Site-to-Site VPN User Guide*.
 +  For API details, see [ModifyVpnTunnelOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/modify-vpn-tunnel-options.html) in *AWS CLI Command Reference*.
 
 ### `monitor-instances`
@@ -23955,26 +26179,27 @@ The following code example shows how to use `monitor-instances`.
 
 **AWS CLI**
 **To enable detailed monitoring for an instance**
-This example command enables detailed monitoring for the specified instance.
-Command:
+The following `monitor-instances` example enables detailed monitoring for the specified instance.
 
 ```
-aws ec2 monitor-instances --instance-ids {{i-1234567890abcdef0}}
+aws ec2 monitor-instances \
+    --instance-ids {{i-1234567890abcdef0}}
 ```
 Output:
 
 ```
 {
-  "InstanceMonitorings": [
-      {
-          "InstanceId": "i-1234567890abcdef0",
-          "Monitoring": {
-              "State": "pending"
-          }
-      }
-  ]
+    "InstanceMonitorings": [
+        {
+            "InstanceId": "i-1234567890abcdef0",
+            "Monitoring": {
+                "State": "pending"
+            }
+        }
+    ]
 }
 ```
+For more information, see [Manage detailed monitoring for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-detailed-monitoring.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [MonitorInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/monitor-instances.html) in *AWS CLI Command Reference*.
 
 ### `move-address-to-vpc`
@@ -23984,19 +26209,20 @@ The following code example shows how to use `move-address-to-vpc`.
 
 **AWS CLI**
 **To move an address to EC2-VPC**
-This example moves Elastic IP address 54.123.4.56 to the EC2-VPC platform.
-Command:
+The following `move-address-to-vpc` example moves Elastic IP address 54.123.4.56 to the EC2-VPC platform.
 
 ```
-aws ec2 move-address-to-vpc --public-ip {{54.123.4.56}}
+aws ec2 move-address-to-vpc \
+    --public-ip {{54.123.4.56}}
 ```
 Output:
 
 ```
 {
-  "Status": "MoveInProgress"
+    "Status": "MoveInProgress"
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [MoveAddressToVpc](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/move-address-to-vpc.html) in *AWS CLI Command Reference*.
 
 ### `move-byoip-cidr-to-ipam`
@@ -24007,22 +26233,20 @@ The following code example shows how to use `move-byoip-cidr-to-ipam`.
 **AWS CLI**
 **To transfer a BYOIP CIDR to IPAM**
 The following `move-byoip-cidr-to-ipam` example transfers a BYOIP CIDR to IPAM.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 move-byoip-cidr-to-ipam \
-    --region {{us-west-2}} \
     --ipam-pool-id {{ipam-pool-0a03d430ca3f5c035}} \
-    --ipam-pool-owner {{111111111111}} \
+    --ipam-pool-owner {{123456789012}} \
     --cidr {{130.137.249.0/24}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 move-byoip-cidr-to-ipam {{^}}
-    --region {{us-west-2}} {{^}}
     --ipam-pool-id {{ipam-pool-0a03d430ca3f5c035}} {{^}}
-    --ipam-pool-owner {{111111111111}} {{^}}
+    --ipam-pool-owner {{123456789012}} {{^}}
     --cidr {{130.137.249.0/24}}
 ```
 Output:
@@ -24037,91 +26261,6 @@ Output:
 ```
 For more information, see [Tutorial: Transfer an existing BYOIP IPv4 CIDR to IPAM](https://docs.aws.amazon.com/vpc/latest/ipam/tutorials-byoip-ipam-transfer-ipv4.html) in the *Amazon VPC IPAM User Guide*.
 +  For API details, see [MoveByoipCidrToIpam](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/move-byoip-cidr-to-ipam.html) in *AWS CLI Command Reference*.
-
-### `network-insights-access-scope`
-<a name="ec2_NetworkInsightsAccessScope_cli_2_topic"></a>
-
-The following code example shows how to use `network-insights-access-scope`.
-
-**AWS CLI**
-**To create Network Insights access scopes**
-The following `create-network-insights-access-scope` example creates a network insights access scope in your AWS account.
-
-```
-aws ec2 create-network-insights-access-scope \
-    --cli-input-json {{file://access-scope-file.json}}
-```
-Contents of `access-scope-file.json`:
-
-```
-{
-    {
-        "MatchPaths": [
-            {
-                "Source": {
-                    "ResourceStatement": {
-                         "Resources": [
-                            "vpc-abcd12e3"
-                        ]
-                    }
-                }
-            }
-        ],
-        "ExcludePaths": [
-            {
-                "Source": {
-                    "ResourceStatement": {
-                        "ResourceTypes": [
-                            "AWS::EC2::InternetGateway"
-                        ]
-                    }
-                }
-            }
-        ]
-    }
-}
-```
-Output:
-
-```
-{
-    "NetworkInsightsAccessScopeAnalysisId": "nisa-123456789111"
-    }{
-    "NetworkInsightsAccessScope": {
-        "NetworkInsightsAccessScopeId": "nis-123456789222",
-        "NetworkInsightsAccessScopeArn": "arn:aws:ec2:us-east-1:123456789222:network-insights-access-scope/nis-123456789222",
-        "CreatedDate": "2022-01-25T19:20:28.796000+00:00",
-        "UpdatedDate": "2022-01-25T19:20:28.797000+00:00"
-    },
-    "NetworkInsightsAccessScopeContent": {
-        "NetworkInsightsAccessScopeId": "nis-04c0c0fbca737c404",
-        "MatchPaths": [
-            {
-                "Source": {
-                    "ResourceStatement": {
-                        "Resources": [
-                            "vpc-abcd12e3"
-                        ]
-                    }
-                }
-            }
-        ],
-        "ExcludePaths": [
-            {
-                "Source": {
-                    "ResourceStatement": {
-                        "ResourceTypes": [
-                            "AWS::EC2::InternetGateway"
-                        ]
-                    }
-                }
-            }
-        ]
-    }
-}
-```
-For more information, see [Getting started with Network Access Analyzer using the AWS CLI](https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/getting-started-cli-naa.html) in the *Network Access Analyzer Guide*.
-+  For API details, see [NetworkInsightsAccessScope](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/network-insights-access-scope.html) in *AWS CLI Command Reference*.
 
 ### `provision-byoip-cidr`
 <a name="ec2_ProvisionByoipCidr_cli_2_topic"></a>
@@ -24158,14 +26297,14 @@ The following code example shows how to use `provision-ipam-pool-cidr`.
 **AWS CLI**
 **To provision a CIDR to an IPAM pool**
 The following `provision-ipam-pool-cidr` example provisions a CIDR to an IPAM pool.
-(Linux):
+For Linux, use the following command.
 
 ```
 aws ec2 provision-ipam-pool-cidr \
     --ipam-pool-id {{ipam-pool-0533048da7d823723}} \
     --cidr {{10.0.0.0/24}}
 ```
-(Windows):
+For Windows, use the following command.
 
 ```
 aws ec2 provision-ipam-pool-cidr {{^}}
@@ -24192,33 +26331,35 @@ The following code example shows how to use `purchase-host-reservation`.
 
 **AWS CLI**
 **To purchase a Dedicated Host Reservation**
-This example purchases the specified Dedicated Host Reservation offering for the specified Dedicated Host in your account.
-Command:
+The following `purchase-host-reservation` example purchases the specified Dedicated Host Reservation offering for the specified Dedicated Host in your account.
 
 ```
-aws ec2 purchase-host-reservation --offering-id {{hro-03f707bf363b6b324}} --host-id-set {{h-013abcd2a00cbd123}}
+aws ec2 purchase-host-reservation \
+    --offering-id {{hro-03f707bf363b6b324}} \
+    --host-id-set {{h-013abcd2a00cbd123}}
 ```
 Output:
 
 ```
 {
-  "TotalHourlyPrice": "1.499",
-  "Purchase": [
-      {
-          "HourlyPrice": "1.499",
-          "InstanceFamily": "m4",
-          "PaymentOption": "NoUpfront",
-          "HostIdSet": [
-              "h-013abcd2a00cbd123"
-          ],
-          "HostReservationId": "hr-0d418a3a4ffc669ae",
-          "UpfrontPrice": "0.000",
-          "Duration": 31536000
-      }
-  ],
-  "TotalUpfrontPrice": "0.000"
+    "TotalHourlyPrice": "1.499",
+    "Purchase": [
+        {
+            "HourlyPrice": "1.499",
+            "InstanceFamily": "m4",
+            "PaymentOption": "NoUpfront",
+            "HostIdSet": [
+                "h-013abcd2a00cbd123"
+            ],
+            "HostReservationId": "hr-0d418a3a4ffc669ae",
+            "UpfrontPrice": "0.000",
+            "Duration": 31536000
+        }
+    ],
+    "TotalUpfrontPrice": "0.000"
 }
 ```
+For more information, see [Amazon EC2 Dedicated Host pricing and billing](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-billing.html#dedicated-host-reservations) in the *Amazon EC2 User Guide*.
 +  For API details, see [PurchaseHostReservation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/purchase-host-reservation.html) in *AWS CLI Command Reference*.
 
 ### `purchase-reserved-instances-offering`
@@ -24228,19 +26369,21 @@ The following code example shows how to use `purchase-reserved-instances-offerin
 
 **AWS CLI**
 **To purchase a Reserved Instance offering**
-This example command illustrates a purchase of a Reserved Instances offering, specifying an offering ID and instance count.
-Command:
+The following `purchase-reserved-instances-offering` example purchases a Reserved Instances offering, specifying an offering ID and instance count.
 
 ```
-aws ec2 purchase-reserved-instances-offering --reserved-instances-offering-id {{ec06327e-dd07-46ee-9398-75b5fexample}} --instance-count {{3}}
+aws ec2 purchase-reserved-instances-offering \
+    --reserved-instances-offering-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --instance-count {{3}}
 ```
 Output:
 
 ```
 {
-  "ReservedInstancesId": "af9f760e-6f91-4559-85f7-4980eexample"
+    "ReservedInstancesId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Buy Reserved Instances for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [PurchaseReservedInstancesOffering](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/purchase-reserved-instances-offering.html) in *AWS CLI Command Reference*.
 
 ### `purchase-scheduled-instances`
@@ -24250,13 +26393,13 @@ The following code example shows how to use `purchase-scheduled-instances`.
 
 **AWS CLI**
 **To purchase a Scheduled Instance**
-This example purchases a Scheduled Instance.
-Command:
+The following `purchase-scheduled-instances` example purchases a Scheduled Instance.
 
 ```
-aws ec2 purchase-scheduled-instances --purchase-requests {{file://purchase-request.json}}
+aws ec2 purchase-scheduled-instances \
+    --purchase-requests {{file://purchase-request.json}}
 ```
-Purchase-request.json:
+Contents of `purchase-request.json`:
 
 ```
 [
@@ -24270,34 +26413,35 @@ Output:
 
 ```
 {
-  "ScheduledInstanceSet": [
-      {
-          "AvailabilityZone": "us-west-2b",
-          "ScheduledInstanceId": "sci-1234-1234-1234-1234-123456789012",
-          "HourlyPrice": "0.095",
-          "CreateDate": "2016-01-25T21:43:38.612Z",
-          "Recurrence": {
-              "OccurrenceDaySet": [
-                  1
-              ],
-              "Interval": 1,
-              "Frequency": "Weekly",
-              "OccurrenceRelativeToEnd": false,
-              "OccurrenceUnit": ""
-          },
-          "Platform": "Linux/UNIX",
-          "TermEndDate": "2017-01-31T09:00:00Z",
-          "InstanceCount": 1,
-          "SlotDurationInHours": 32,
-          "TermStartDate": "2016-01-31T09:00:00Z",
-          "NetworkPlatform": "EC2-VPC",
-          "TotalScheduledInstanceHours": 1696,
-          "NextSlotStartTime": "2016-01-31T09:00:00Z",
-          "InstanceType": "c4.large"
-      }
-  ]
+    "ScheduledInstanceSet": [
+        {
+            "AvailabilityZone": "us-west-2b",
+            "ScheduledInstanceId": "sci-1234-1234-1234-1234-123456789012",
+            "HourlyPrice": "0.095",
+            "CreateDate": "2016-01-25T21:43:38.612Z",
+            "Recurrence": {
+                "OccurrenceDaySet": [
+                    1
+                ],
+                "Interval": 1,
+                "Frequency": "Weekly",
+                "OccurrenceRelativeToEnd": false,
+                "OccurrenceUnit": ""
+            },
+            "Platform": "Linux/UNIX",
+            "TermEndDate": "2017-01-31T09:00:00Z",
+            "InstanceCount": 1,
+            "SlotDurationInHours": 32,
+            "TermStartDate": "2016-01-31T09:00:00Z",
+            "NetworkPlatform": "EC2-VPC",
+            "TotalScheduledInstanceHours": 1696,
+            "NextSlotStartTime": "2016-01-31T09:00:00Z",
+            "InstanceType": "c4.large"
+        }
+    ]
 }
 ```
+For more information, see [Amazon EC2 billing and purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [PurchaseScheduledInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/purchase-scheduled-instances.html) in *AWS CLI Command Reference*.
 
 ### `reboot-instances`
@@ -24307,13 +26451,14 @@ The following code example shows how to use `reboot-instances`.
 
 **AWS CLI**
 **To reboot an Amazon EC2 instance**
-This example reboots the specified instance. If the command succeeds, no output is returned.
-Command:
+The following `reboot-instances` example reboots the specified instance.
 
 ```
-aws ec2 reboot-instances --instance-ids {{i-1234567890abcdef5}}
+aws ec2 reboot-instances \
+    --instance-ids {{i-1234567890abcdef5}}
 ```
-For more information, see Reboot Your Instance in the *Amazon Elastic Compute Cloud User Guide*.
+This command produces no output.
+For more information, see [Reboot your Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-reboot.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RebootInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reboot-instances.html) in *AWS CLI Command Reference*.
 
 ### `register-image`
@@ -24403,37 +26548,6 @@ Output:
 ```
 For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RegisterInstanceEventNotificationAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/register-instance-event-notification-attributes.html) in *AWS CLI Command Reference*.
-
-### `register-transit-gateway-multicase-group-sources`
-<a name="ec2_RegisterTransitGatewayMulticaseGroupSources_cli_2_topic"></a>
-
-The following code example shows how to use `register-transit-gateway-multicase-group-sources`.
-
-**AWS CLI**
-**To register a source with a transit gateway multicast group.**
-The following `register-transit-gateway-multicast-group-sources` example registers the specified network interface group source with a multicast group.
-
-```
-aws ec2 register-transit-gateway-multicast-group-sources \
-    --transit-gateway-multicast-domain-id {{tgw-mcast-domain-0c4905cef79d6e597}} \
-    --group-ip-address {{224.0.1.0}} \
-    --network-interface-ids {{eni-07f290fc3c090cbae}}
-```
-Output:
-
-```
-{
-    "RegisteredMulticastGroupSources": {
-        "TransitGatewayMulticastDomainId": "tgw-mcast-domain-0c4905cef79d6e597",
-        "RegisteredNetworkInterfaceIds": [
-            "eni-07f290fc3c090cbae"
-        ],
-        "GroupIpAddress": "224.0.1.0"
-    }
-}
-```
-For more information, see [Register Sources with a Multicast Group](https://docs.aws.amazon.com/vpc/latest/tgw/working-with-multicast.html#add-source-multicast-group) in the *AWS Transit Gateways User Guide*.
-+  For API details, see [RegisterTransitGatewayMulticaseGroupSources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/register-transit-gateway-multicase-group-sources.html) in *AWS CLI Command Reference*.
 
 ### `register-transit-gateway-multicast-group-members`
 <a name="ec2_RegisterTransitGatewayMulticastGroupMembers_cli_2_topic"></a>
@@ -24556,7 +26670,7 @@ Output:
         "TransitGatewayAttachmentId": "tgw-attach-0a34fe6b4fEXAMPLE",
         "TransitGatewayId": "tgw-0262a0e521EXAMPLE",
         "VpcId": "vpc-07e8ffd50fEXAMPLE",
-        "VpcOwnerId": "111122223333",
+        "VpcOwnerId": "123456789012",
         "State": "pending",
         "SubnetIds": [
             "subnet-0752213d59EXAMPLE"
@@ -24572,43 +26686,6 @@ Output:
 For more information, see [Transit gateway attachments to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html) in the *Transit Gateways Guide*.
 +  For API details, see [RejectTransitGatewayVpcAttachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reject-transit-gateway-vpc-attachment.html) in *AWS CLI Command Reference*.
 
-### `reject-transit-gateway-vpc-attachments`
-<a name="ec2_RejectTransitGatewayVpcAttachments_cli_2_topic"></a>
-
-The following code example shows how to use `reject-transit-gateway-vpc-attachments`.
-
-**AWS CLI**
-**To reject a transit gateway VPC attachment**
-The following `reject-transit-gateway-vpc-attachment` example rejects the specified transit gateway VPC attachment.
-
-```
-aws ec2 reject-transit-gateway-vpc-attachment \
-    --transit-gateway-attachment-id {{tgw-attach-0a34fe6b4fEXAMPLE}}
-```
-Output:
-
-```
-{
-    "TransitGatewayVpcAttachment": {
-        "TransitGatewayAttachmentId": "tgw-attach-0a34fe6b4fEXAMPLE",
-        "TransitGatewayId": "tgw-0262a0e521EXAMPLE",
-        "VpcId": "vpc-07e8ffd50fEXAMPLE",
-        "VpcOwnerId": "111122223333",
-        "State": "pending",
-        "SubnetIds": [
-            "subnet-0752213d59EXAMPLE"
-        ],
-        "CreationTime": "2019-07-10T17:33:46.000Z",
-        "Options": {
-            "DnsSupport": "enable",
-            "Ipv6Support": "disable"
-        }
-    }
-}
-```
-For more information, see [Transit gateway attachments to a VPC](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpc-attachments.html) in the *Transit Gateways Guide*.
-+  For API details, see [RejectTransitGatewayVpcAttachments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reject-transit-gateway-vpc-attachments.html) in *AWS CLI Command Reference*.
-
 ### `reject-vpc-endpoint-connections`
 <a name="ec2_RejectVpcEndpointConnections_cli_2_topic"></a>
 
@@ -24616,19 +26693,21 @@ The following code example shows how to use `reject-vpc-endpoint-connections`.
 
 **AWS CLI**
 **To reject an interface endpoint connection request**
-This example rejects the specified endpoint connection request for the specified endpoint service.
-Command:
+The following `reject-vpc-endpoint-connections` example rejects the specified endpoint connection request for the specified endpoint service.
 
 ```
-aws ec2 reject-vpc-endpoint-connections --service-id {{vpce-svc-03d5ebb7d9579a2b3}} --vpc-endpoint-ids {{vpce-0c1308d7312217abc}}
+aws ec2 reject-vpc-endpoint-connections \
+    --service-id {{vpce-svc-03d5ebb7d9579a2b3}} \
+    --vpc-endpoint-ids {{vpce-0c1308d7312217abc}}
 ```
 Output:
 
 ```
 {
-  "Unsuccessful": []
+    "Unsuccessful": []
 }
 ```
+For more information, see [Configure an endpoint service](https://docs.aws.amazon.com/vpc/latest/privatelink/configure-endpoint-service.html#accept-reject-connection-requests) in the *AWS PrivateLink User Guide*.
 +  For API details, see [RejectVpcEndpointConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reject-vpc-endpoint-connections.html) in *AWS CLI Command Reference*.
 
 ### `reject-vpc-peering-connection`
@@ -24638,11 +26717,11 @@ The following code example shows how to use `reject-vpc-peering-connection`.
 
 **AWS CLI**
 **To reject a VPC peering connection**
-This example rejects the specified VPC peering connection request.
-Command:
+The following `reject-vpc-peering-connection` example rejects the specified VPC peering connection request.
 
 ```
-aws ec2 reject-vpc-peering-connection --vpc-peering-connection-id {{pcx-1a2b3c4d}}
+aws ec2 reject-vpc-peering-connection \
+    --vpc-peering-connection-id {{pcx-1a2b3c4d}}
 ```
 Output:
 
@@ -24651,6 +26730,7 @@ Output:
     "Return": true
 }
 ```
+For more information, see [Accept or reject a VPC peering connection](https://docs.aws.amazon.com/vpc/latest/peering/accept-vpc-peering-connection.html) in the *Amazon VPC Peering Guide*.
 +  For API details, see [RejectVpcPeeringConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reject-vpc-peering-connection.html) in *AWS CLI Command Reference*.
 
 ### `release-address`
@@ -24659,20 +26739,24 @@ Output:
 The following code example shows how to use `release-address`.
 
 **AWS CLI**
-**To release an Elastic IP addresses for EC2-Classic**
-This example releases an Elastic IP address for use with instances in EC2-Classic. If the command succeeds, no output is returned.
-Command:
+**Example 1: To release an Elastic IP address for EC2-Classic**
+The following `release-address` example releases an Elastic IP address for use with instances in EC2-Classic.
 
 ```
-aws ec2 release-address --public-ip {{198.51.100.0}}
+aws ec2 release-address \
+    --public-ip {{198.51.100.0}}
 ```
-**To release an Elastic IP address for EC2-VPC**
-This example releases an Elastic IP address for use with instances in a VPC. If the command succeeds, no output is returned.
-Command:
+This command produces no output.
+For more information, see [Release an Elastic IP address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing-eips-releasing.html) in the *Amazon EC2 User Guide*.
+**Example 2: To release an Elastic IP address for EC2-VPC**
+The following `release-address` example releases an Elastic IP address for use with instances in a VPC.
 
 ```
-aws ec2 release-address --allocation-id {{eipalloc-64d5890a}}
+aws ec2 release-address \
+    --allocation-id {{eipalloc-64d5890a}}
 ```
+This command produces no output.
+For more information, see [Release an Elastic IP address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing-eips-releasing.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ReleaseAddress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/release-address.html) in *AWS CLI Command Reference*.
 
 ### `release-hosts`
@@ -24682,11 +26766,11 @@ The following code example shows how to use `release-hosts`.
 
 **AWS CLI**
 **To release a Dedicated host from your account**
-To release a Dedicated host from your account. Instances that are on the host must be stopped or terminated before the host can be released.
-Command:
+The following `release-hosts` example releases a Dedicated host from your account. Instances that are on the host must be stopped or terminated before the host can be released.
 
 ```
-aws ec2 release-hosts --host-id=h-0029d6e3cacf1b3da
+aws ec2 release-hosts \
+    --host-id=h-0029d6e3cacf1b3da
 ```
 Output:
 
@@ -24694,11 +26778,11 @@ Output:
 {
     "Successful":  [
         "h-0029d6e3cacf1b3da"
-         ],
-  "Unsuccessful": []
-
- }
+    ],
+    "Unsuccessful": []
+}
 ```
+For more information, see [Release an Amazon EC2 Dedicated Host](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-releasing.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ReleaseHosts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/release-hosts.html) in *AWS CLI Command Reference*.
 
 ### `release-ipam-pool-allocation`
@@ -24708,17 +26792,17 @@ The following code example shows how to use `release-ipam-pool-allocation`.
 
 **AWS CLI**
 **To release an IPAM pool allocation**
-In this example, you're an IPAM delegated admin who tried to delete an IPAM pool but received an error that you cannot delete the pool while the pool has allocations. You are using this command to release a pool allocation.
+The following `release-ipam-pool-allocation` example releases an IPAM pool allocation. In this example, you're an IPAM delegated admin who tried to delete an IPAM pool but received an error that you cannot delete the pool while the pool has allocations. You are using this command to release a pool allocation.
 Note the following:
 You can only use this command for custom allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using [modify-ipam-resource-cidr](https://docs.aws.amazon.com/cli/latest/reference/ec2/modify-ipam-resource-cidr.html).To complete this request, you'll need the IPAM pool ID, which you can get with [describe-ipam-pools](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-ipam-pools.html). You'll also need the allocation ID, which you can get with [get-ipam-pool-allocations](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-ipam-pool-allocations.html).If you do not want to remove allocations one by one, you can use the `--cascade option` when you delete an IPAM pool to automatically release any allocations in the pool before deleting it.There are a number of prerequisites before running this command. For more information, see [Release an allocation](https://docs.aws.amazon.com/vpc/latest/ipam/release-alloc-ipam.html) in the *Amazon VPC IPAM User Guide*.The `--region` in which you run this command must be the locale of the IPAM pool where the allocation is.
-The following `release-ipam-pool-allocation` example releases an IPAM pool allocation.
+To release the allocation, run the following command.
 
 ```
 aws ec2 release-ipam-pool-allocation \
     --ipam-pool-id {{ipam-pool-07bdd12d7c94e4693}} \
     --cidr {{10.0.0.0/23}} \
     --ipam-pool-allocation-id {{ipam-pool-alloc-0e66a1f730da54791b99465b79e7d1e89}} \
-    --region {{us-west-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
@@ -24737,7 +26821,7 @@ The following code example shows how to use `replace-iam-instance-profile-associ
 
 **AWS CLI**
 **To replace an IAM instance profile for an instance**
-This example replaces the IAM instance profile represented by the association `iip-assoc-060bae234aac2e7fa` with the IAM instance profile named `AdminRole`.
+The following `replace-iam-instance-profile-association` example replaces the IAM instance profile represented by the association `iip-assoc-060bae234aac2e7fa` with the IAM instance profile named `AdminRole`.
 
 ```
 aws ec2 replace-iam-instance-profile-association \
@@ -24759,6 +26843,7 @@ Output:
     }
 }
 ```
+For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ReplaceIamInstanceProfileAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/replace-iam-instance-profile-association.html) in *AWS CLI Command Reference*.
 
 ### `replace-network-acl-association`
@@ -24768,11 +26853,12 @@ The following code example shows how to use `replace-network-acl-association`.
 
 **AWS CLI**
 **To replace the network ACL associated with a subnet**
-This example associates the specified network ACL with the subnet for the specified network ACL association.
-Command:
+The following `replace-network-acl-association` example associates the specified network ACL with the subnet for the specified network ACL association.
 
 ```
-aws ec2 replace-network-acl-association --association-id {{aclassoc-e5b95c8c}} --network-acl-id {{acl-5fb85d36}}
+aws ec2 replace-network-acl-association \
+    --association-id {{aclassoc-e5b95c8c}} \
+    --network-acl-id {{acl-5fb85d36}}
 ```
 Output:
 
@@ -24781,6 +26867,7 @@ Output:
     "NewAssociationId": "aclassoc-3999875b"
 }
 ```
+For more information, see [Control subnet traffic with network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html) in the *Amazon VPC User Guide*.
 +  For API details, see [ReplaceNetworkAclAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/replace-network-acl-association.html) in *AWS CLI Command Reference*.
 
 ### `replace-network-acl-entry`
@@ -24790,12 +26877,20 @@ The following code example shows how to use `replace-network-acl-entry`.
 
 **AWS CLI**
 **To replace a network ACL entry**
-This example replaces an entry for the specified network ACL. The new rule 100 allows ingress traffic from 203.0.113.12/24 on UDP port 53 (DNS) into any associated subnet.
-Command:
+The following `replace-network-acl-entry` example replaces an entry for the specified network ACL. The new rule 100 allows ingress traffic from 203.0.113.12/24 on UDP port 53 (DNS) into any associated subnet.
 
 ```
-aws ec2 replace-network-acl-entry --network-acl-id {{acl-5fb85d36}} --ingress --rule-number {{100}} --protocol {{udp}} --port-range {{From=53,To=53}} --cidr-block {{203.0.113.12/24}} --rule-action {{allow}}
+aws ec2 replace-network-acl-entry \
+    --network-acl-id {{acl-5fb85d36}} \
+    --ingress \
+    --rule-number {{100}} \
+    --protocol {{udp}} \
+    --port-range {{From=53,To=53}} \
+    --cidr-block {{203.0.113.12/24}} \
+    --rule-action {{allow}}
 ```
+This command produces no output.
+For more information, see [Network ACL rules](https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html) in the *Amazon VPC User Guide*.
 +  For API details, see [ReplaceNetworkAclEntry](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/replace-network-acl-entry.html) in *AWS CLI Command Reference*.
 
 ### `replace-route-table-association`
@@ -24805,11 +26900,12 @@ The following code example shows how to use `replace-route-table-association`.
 
 **AWS CLI**
 **To replace the route table associated with a subnet**
-This example associates the specified route table with the subnet for the specified route table association.
-Command:
+The following `replace-route-table-association` example associates the specified route table with the subnet for the specified route table association.
 
 ```
-aws ec2 replace-route-table-association --association-id {{rtbassoc-781d0d1a}} --route-table-id {{rtb-22574640}}
+aws ec2 replace-route-table-association \
+    --association-id {{rtbassoc-781d0d1a}} \
+    --route-table-id {{rtb-22574640}}
 ```
 Output:
 
@@ -24818,6 +26914,7 @@ Output:
     "NewAssociationId": "rtbassoc-3a1f0f58"
 }
 ```
+For more information, see [Manage subnet route tables](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html) in the *Amazon VPC User Guide*.
 +  For API details, see [ReplaceRouteTableAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/replace-route-table-association.html) in *AWS CLI Command Reference*.
 
 ### `replace-route`
@@ -24827,12 +26924,16 @@ The following code example shows how to use `replace-route`.
 
 **AWS CLI**
 **To replace a route**
-This example replaces the specified route in the specified route table. The new route matches the specified CIDR and sends the traffic to the specified virtual private gateway. If the command succeeds, no output is returned.
-Command:
+The following `replace-route` example replaces the specified route in the specified route table. The new route matches the specified CIDR and sends the traffic to the specified virtual private gateway.
 
 ```
-aws ec2 replace-route --route-table-id {{rtb-22574640}} --destination-cidr-block {{10.0.0.0/16}} --gateway-id {{vgw-9a4cacf3}}
+aws ec2 replace-route \
+    --route-table-id {{rtb-22574640}} \
+    --destination-cidr-block {{10.0.0.0/16}} \
+    --gateway-id {{vgw-9a4cacf3}}
 ```
+This command produces no output.
+For more information, see [Manage subnet route tables](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html) in the *Amazon VPC User Guide*.
 +  For API details, see [ReplaceRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/replace-route.html) in *AWS CLI Command Reference*.
 
 ### `replace-transit-gateway-route`
@@ -24878,12 +26979,16 @@ The following code example shows how to use `report-instance-status`.
 
 **AWS CLI**
 **To report status feedback for an instance**
-This example command reports status feedback for the specified instance.
-Command:
+The following `report-instance-status` example reports status feedback for the specified instance.
 
 ```
-aws ec2 report-instance-status --instances {{i-1234567890abcdef0}} --status {{impaired}} --reason-codes {{unresponsive}}
+aws ec2 report-instance-status \
+    --instances {{i-1234567890abcdef0}} \
+    --status {{impaired}} \
+    --reason-codes {{unresponsive}}
 ```
+This command produces no output.
+For more information, see [Status checks for Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ReportInstanceStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/report-instance-status.html) in *AWS CLI Command Reference*.
 
 ### `request-spot-fleet`
@@ -24892,149 +26997,175 @@ aws ec2 report-instance-status --instances {{i-1234567890abcdef0}} --status {{im
 The following code example shows how to use `request-spot-fleet`.
 
 **AWS CLI**
-**To request a Spot fleet in the subnet with the lowest price**
-This example command creates a Spot fleet request with two launch specifications that differ only by subnet. The Spot fleet launches the instances in the specified subnet with the lowest price. If the instances are launched in a default VPC, they receive a public IP address by default. If the instances are launched in a nondefault VPC, they do not receive a public IP address by default.
+**Example 1: To request a Spot fleet in the subnet with the lowest price**
+The following `request-spot-fleet` example creates a Spot fleet request with two launch specifications that differ only by subnet. The Spot fleet launches the instances in the specified subnet with the lowest price. If the instances are launched in a default VPC, they receive a public IP address by default. If the instances are launched in a nondefault VPC, they do not receive a public IP address by default.
 Note that you can't specify different subnets from the same Availability Zone in a Spot fleet request.
-Command:
 
 ```
-aws ec2 request-spot-fleet --spot-fleet-request-config {{file://config.json}}
+aws ec2 request-spot-fleet \
+    --spot-fleet-request-config {{file://config.json}}
 ```
-Config.json:
+Contents of `config.json`:
 
 ```
 {
-  "SpotPrice": "0.04",
-  "TargetCapacity": 2,
-  "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
-  "LaunchSpecifications": [
-      {
-          "ImageId": "ami-1a2b3c4d",
-          "KeyName": "my-key-pair",
-          "SecurityGroups": [
-              {
-                  "GroupId": "sg-1a2b3c4d"
-              }
-          ],
-          "InstanceType": "m3.medium",
-          "SubnetId": "subnet-1a2b3c4d, subnet-3c4d5e6f",
-          "IamInstanceProfile": {
-              "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-          }
-      }
-  ]
+    "SpotPrice": "0.04",
+    "TargetCapacity": 2,
+    "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
+    "LaunchSpecifications": [
+        {
+            "ImageId": "ami-1a2b3c4d",
+            "KeyName": "my-key-pair",
+            "SecurityGroups": [
+                {
+                    "GroupId": "sg-1a2b3c4d"
+                }
+            ],
+            "InstanceType": "m3.medium",
+            "SubnetId": "subnet-1a2b3c4d, subnet-3c4d5e6f",
+            "IamInstanceProfile": {
+                "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+            }
+        }
+    ]
 }
 ```
 Output:
 
 ```
 {
-  "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE"
+    "SpotFleetRequestId": "sfr-73fbd2ce-aa30-494c-8788-1cee4EXAMPLE"
 }
 ```
-**To request a Spot fleet in the Availability Zone with the lowest price**
-This example command creates a Spot fleet request with two launch specifications that differ only by Availability Zone. The Spot fleet launches the instances in the specified Availability Zone with the lowest price. If your account supports EC2-VPC only, Amazon EC2 launches the Spot instances in the default subnet of the Availability Zone. If your account supports EC2-Classic, Amazon EC2 launches the instances in EC2-Classic in the Availability Zone.
-Command:
+For more information, see [Create a Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-spot-fleet.html) in the *Amazon EC2 User Guide*.
+**Example 2: To request a Spot fleet in the Availability Zone with the lowest price**
+The following `request-spot-fleet` example creates a Spot fleet request with two launch specifications that differ only by Availability Zone. The Spot fleet launches the instances in the specified Availability Zone with the lowest price. If your account supports EC2-VPC only, Amazon EC2 launches the Spot instances in the default subnet of the Availability Zone. If your account supports EC2-Classic, Amazon EC2 launches the instances in EC2-Classic in the Availability Zone.
 
 ```
-aws ec2 request-spot-fleet --spot-fleet-request-config {{file://config.json}}
+aws ec2 request-spot-fleet \
+    --spot-fleet-request-config {{file://config.json}}
 ```
-Config.json:
+Contents of `config.json`:
 
 ```
 {
-  "SpotPrice": "0.04",
-  "TargetCapacity": 2,
-  "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
-  "LaunchSpecifications": [
-      {
-          "ImageId": "ami-1a2b3c4d",
-          "KeyName": "my-key-pair",
-          "SecurityGroups": [
-              {
-                  "GroupId": "sg-1a2b3c4d"
-              }
-          ],
-          "InstanceType": "m3.medium",
-          "Placement": {
-              "AvailabilityZone": "us-west-2a, us-west-2b"
-          },
-          "IamInstanceProfile": {
-              "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-          }
-      }
-  ]
+    "SpotPrice": "0.04",
+    "TargetCapacity": 2,
+    "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
+    "LaunchSpecifications": [
+        {
+            "ImageId": "ami-1a2b3c4d",
+            "KeyName": "my-key-pair",
+            "SecurityGroups": [
+                {
+                    "GroupId": "sg-1a2b3c4d"
+                }
+            ],
+            "InstanceType": "m3.medium",
+            "Placement": {
+                "AvailabilityZone": "us-west-2a, us-west-2b"
+            },
+            "IamInstanceProfile": {
+                "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+            }
+        }
+    ]
 }
 ```
-**To launch Spot instances in a subnet and assign them public IP addresses**
-This example command assigns public addresses to instances launched in a nondefault VPC. Note that when you specify a network interface, you must include the subnet ID and security group ID using the network interface.
-Command:
-
-```
-aws ec2 request-spot-fleet --spot-fleet-request-config {{file://config.json}}
-```
-Config.json:
+Output:
 
 ```
 {
-  "SpotPrice": "0.04",
-  "TargetCapacity": 2,
-  "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
-  "LaunchSpecifications": [
-      {
-          "ImageId": "ami-1a2b3c4d",
-          "KeyName": "my-key-pair",
-          "InstanceType": "m3.medium",
-          "NetworkInterfaces": [
-              {
-                  "DeviceIndex": 0,
-                  "SubnetId": "subnet-1a2b3c4d",
-                  "Groups": [ "sg-1a2b3c4d" ],
-                  "AssociatePublicIpAddress": true
-              }
-          ],
-          "IamInstanceProfile": {
-              "Arn": "arn:aws:iam::880185128111:instance-profile/my-iam-role"
-          }
-      }
-  ]
+    "SpotFleetRequestId": "sfr-a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-**To request a Spot fleet using the diversified allocation strategy**
-This example command creates a Spot fleet request that launches 30 instances using the diversified allocation strategy. The launch specifications differ by instance type. The Spot fleet distributes the instances across the launch specifications such that there are 10 instances of each type.
-Command:
+For more information, see [Create a Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-spot-fleet.html) in the *Amazon EC2 User Guide*.
+**Example 3: To launch Spot instances in a subnet and assign them public IP addresses**
+The following `request-spot-fleet` example assigns public addresses to instances launched in a nondefault VPC. Note that when you specify a network interface, you must include the subnet ID and security group ID using the network interface.
 
 ```
-aws ec2 request-spot-fleet --spot-fleet-request-config {{file://config.json}}
+aws ec2 request-spot-fleet \
+    --spot-fleet-request-config {{file://config.json}}
 ```
-Config.json:
+Contents of `config.json`:
 
 ```
 {
-  "SpotPrice": "0.70",
-  "TargetCapacity": 30,
-  "AllocationStrategy": "diversified",
-  "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
-  "LaunchSpecifications": [
-      {
-          "ImageId": "ami-1a2b3c4d",
-          "InstanceType": "c4.2xlarge",
-          "SubnetId": "subnet-1a2b3c4d"
-      },
-      {
-          "ImageId": "ami-1a2b3c4d",
-          "InstanceType": "m3.2xlarge",
-          "SubnetId": "subnet-1a2b3c4d"
-      },
-      {
-          "ImageId": "ami-1a2b3c4d",
-          "InstanceType": "r3.2xlarge",
-          "SubnetId": "subnet-1a2b3c4d"
-      }
-  ]
+    "SpotPrice": "0.04",
+    "TargetCapacity": 2,
+    "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
+    "LaunchSpecifications": [
+        {
+            "ImageId": "ami-1a2b3c4d",
+            "KeyName": "my-key-pair",
+            "InstanceType": "m3.medium",
+            "NetworkInterfaces": [
+                {
+                    "DeviceIndex": 0,
+                    "SubnetId": "subnet-1a2b3c4d",
+                    "Groups": [
+                        "sg-1a2b3c4d"
+                    ],
+                    "AssociatePublicIpAddress": true
+                }
+            ],
+            "IamInstanceProfile": {
+                "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+            }
+        }
+    ]
 }
 ```
-For more information, see Spot Fleet Requests in the *Amazon Elastic Compute Cloud User Guide*.
+Output:
+
+```
+{
+    "SpotFleetRequestId": "sfr-a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
+}
+```
+For more information, see [Create a Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-spot-fleet.html) in the *Amazon EC2 User Guide*.
+**Example 4: To request a Spot fleet using the diversified allocation strategy**
+The following `request-spot-fleet` example creates a Spot fleet request that launches 30 instances using the diversified allocation strategy. The launch specifications differ by instance type. The Spot fleet distributes the instances across the launch specifications such that there are 10 instances of each type.
+
+```
+aws ec2 request-spot-fleet \
+    --spot-fleet-request-config {{file://config.json}}
+```
+Contents of `config.json`:
+
+```
+{
+    "SpotPrice": "0.70",
+    "TargetCapacity": 30,
+    "AllocationStrategy": "diversified",
+    "IamFleetRole": "arn:aws:iam::123456789012:role/my-spot-fleet-role",
+    "LaunchSpecifications": [
+        {
+            "ImageId": "ami-1a2b3c4d",
+            "InstanceType": "c4.2xlarge",
+            "SubnetId": "subnet-1a2b3c4d"
+        },
+        {
+            "ImageId": "ami-1a2b3c4d",
+            "InstanceType": "m3.2xlarge",
+            "SubnetId": "subnet-1a2b3c4d"
+        },
+        {
+            "ImageId": "ami-1a2b3c4d",
+            "InstanceType": "r3.2xlarge",
+            "SubnetId": "subnet-1a2b3c4d"
+        }
+    ]
+}
+```
+Output:
+
+```
+{
+    "SpotFleetRequestId": "sfr-a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
+}
+```
+For more information, see [Create a Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-spot-fleet.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RequestSpotFleet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/request-spot-fleet.html) in *AWS CLI Command Reference*.
 
 ### `request-spot-instances`
@@ -25044,157 +27175,173 @@ The following code example shows how to use `request-spot-instances`.
 
 **AWS CLI**
 **To request Spot Instances**
-This example command creates a one-time Spot Instance request for five instances in the specified Availability Zone. If your account supports EC2-VPC only, Amazon EC2 launches the instances in the default subnet of the specified Availability Zone. If your account supports EC2-Classic, Amazon EC2 launches the instances in EC2-Classic in the specified Availability Zone.
-Command:
+The following `request-spot-instances` example creates a one-time Spot Instance request for five instances in the specified Availability Zone. If your account supports EC2-VPC only, Amazon EC2 launches the instances in the default subnet of the specified Availability Zone. If your account supports EC2-Classic, Amazon EC2 launches the instances in EC2-Classic in the specified Availability Zone.
 
 ```
-aws ec2 request-spot-instances --spot-price {{"0.03"}} --instance-count {{5}} --type {{"one-time"}} --launch-specification {{file://specification.json}}
+aws ec2 request-spot-instances \
+    --spot-price {{"0.03"}} \
+    --instance-count {{5}} \
+    --type {{"one-time"}} \
+    --launch-specification {{file://specification.json}}
 ```
-Specification.json:
-
-```
-{
-  "ImageId": "ami-1a2b3c4d",
-  "KeyName": "my-key-pair",
-  "SecurityGroupIds": [ "sg-1a2b3c4d" ],
-  "InstanceType": "m3.medium",
-  "Placement": {
-    "AvailabilityZone": "us-west-2a"
-  },
-  "IamInstanceProfile": {
-      "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-  }
-}
-```
-Output:
+Contents of `specification.json`:
 
 ```
 {
-  "SpotInstanceRequests": [
-      {
-          "Status": {
-              "UpdateTime": "2014-03-25T20:54:21.000Z",
-              "Code": "pending-evaluation",
-              "Message": "Your Spot request has been submitted for review, and is pending evaluation."
-          },
-          "ProductDescription": "Linux/UNIX",
-          "SpotInstanceRequestId": "sir-df6f405d",
-          "State": "open",
-          "LaunchSpecification": {
-              "Placement": {
-                  "AvailabilityZone": "us-west-2a"
-              },
-              "ImageId": "ami-1a2b3c4d",
-              "KeyName": "my-key-pair",
-              "SecurityGroups": [
-                  {
-                      "GroupName": "my-security-group",
-                      "GroupId": "sg-1a2b3c4d"
-                  }
-              ],
-              "Monitoring": {
-                  "Enabled": false
-              },
-              "IamInstanceProfile": {
-                  "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-              },
-              "InstanceType": "m3.medium"
-          },
-          "Type": "one-time",
-          "CreateTime": "2014-03-25T20:54:20.000Z",
-          "SpotPrice": "0.050000"
-      },
-      ...
-  ]
-}
-```
-This example command creates a one-time Spot Instance request for five instances in the specified subnet. Amazon EC2 launches the instances in the specified subnet. If the VPC is a nondefault VPC, the instances do not receive a public IP address by default.
-Command:
-
-```
-aws ec2 request-spot-instances --spot-price {{"0.050"}} --instance-count {{5}} --type {{"one-time"}} --launch-specification {{file://specification.json}}
-```
-Specification.json:
-
-```
-{
-  "ImageId": "ami-1a2b3c4d",
-  "SecurityGroupIds": [ "sg-1a2b3c4d" ],
-  "InstanceType": "m3.medium",
-  "SubnetId": "subnet-1a2b3c4d",
-  "IamInstanceProfile": {
-      "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-  }
-}
-```
-Output:
-
-```
-{
-  "SpotInstanceRequests": [
-      {
-          "Status": {
-             "UpdateTime": "2014-03-25T22:21:58.000Z",
-             "Code": "pending-evaluation",
-             "Message": "Your Spot request has been submitted for review, and is pending evaluation."
-          },
-          "ProductDescription": "Linux/UNIX",
-          "SpotInstanceRequestId": "sir-df6f405d",
-          "State": "open",
-          "LaunchSpecification": {
-             "Placement": {
-                 "AvailabilityZone": "us-west-2a"
-             }
-             "ImageId": "ami-1a2b3c4d"
-             "SecurityGroups": [
-                 {
-                     "GroupName": "my-security-group",
-                     "GroupID": "sg-1a2b3c4d"
-                 }
-             ]
-             "SubnetId": "subnet-1a2b3c4d",
-             "Monitoring": {
-                 "Enabled": false
-             },
-             "IamInstanceProfile": {
-                 "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-             },
-             "InstanceType": "m3.medium",
-         },
-         "Type": "one-time",
-         "CreateTime": "2014-03-25T22:21:58.000Z",
-         "SpotPrice": "0.050000"
-      },
-      ...
-  ]
-}
-```
-This example assigns a public IP address to the Spot Instances that you launch in a nondefault VPC. Note that when you specify a network interface, you must include the subnet ID and security group ID using the network interface.
-Command:
-
-```
-aws ec2 request-spot-instances --spot-price {{"0.050"}} --instance-count {{1}} --type {{"one-time"}} --launch-specification {{file://specification.json}}
-```
-Specification.json:
-
-```
-{
-  "ImageId": "ami-1a2b3c4d",
-  "KeyName": "my-key-pair",
-  "InstanceType": "m3.medium",
-  "NetworkInterfaces": [
-    {
-      "DeviceIndex": 0,
-      "SubnetId": "subnet-1a2b3c4d",
-      "Groups": [ "sg-1a2b3c4d" ],
-      "AssociatePublicIpAddress": true
+    "ImageId": "ami-1a2b3c4d",
+    "KeyName": "my-key-pair",
+    "SecurityGroupIds": [
+        "sg-1a2b3c4d"
+    ],
+    "InstanceType": "m3.medium",
+    "Placement": {
+        "AvailabilityZone": "us-west-2a"
+    },
+    "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
     }
-  ],
-  "IamInstanceProfile": {
-      "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
-  }
 }
 ```
+Output:
+
+```
+{
+    "SpotInstanceRequests": [
+        {
+            "Status": {
+                "UpdateTime": "2014-03-25T20:54:21.000Z",
+                "Code": "pending-evaluation",
+                "Message": "Your Spot request has been submitted for review, and is pending evaluation."
+            },
+            "ProductDescription": "Linux/UNIX",
+            "SpotInstanceRequestId": "sir-df6f405d",
+            "State": "open",
+            "LaunchSpecification": {
+                "Placement": {
+                    "AvailabilityZone": "us-west-2a"
+                },
+                "ImageId": "ami-1a2b3c4d",
+                "KeyName": "my-key-pair",
+                "SecurityGroups": [
+                    {
+                        "GroupName": "my-security-group",
+                        "GroupId": "sg-1a2b3c4d"
+                    }
+                ],
+                "Monitoring": {
+                    "Enabled": false
+                },
+                "IamInstanceProfile": {
+                    "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+                },
+                "InstanceType": "m3.medium"
+            },
+            "Type": "one-time",
+            "CreateTime": "2014-03-25T20:54:20.000Z",
+            "SpotPrice": "0.050000"
+        }
+    ]
+}
+```
+For more information, see [Create a Spot Instance request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html) in the *Amazon EC2 User Guide*.
+The following `request-spot-instances` example creates a one-time Spot Instance request for five instances in the specified subnet. Amazon EC2 launches the instances in the specified subnet. If the VPC is a nondefault VPC, the instances do not receive a public IP address by default.
+
+```
+aws ec2 request-spot-instances \
+    --spot-price {{"0.050"}} \
+    --instance-count {{5}} \
+    --type {{"one-time"}} \
+    --launch-specification {{file://specification.json}}
+```
+Contents of `specification.json`:
+
+```
+{
+    "ImageId": "ami-1a2b3c4d",
+    "SecurityGroupIds": [
+        "sg-1a2b3c4d"
+    ],
+    "InstanceType": "m3.medium",
+    "SubnetId": "subnet-1a2b3c4d",
+    "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+    }
+}
+```
+Output:
+
+```
+{
+    "SpotInstanceRequests": [
+        {
+            "Status": {
+                "UpdateTime": "2014-03-25T22:21:58.000Z",
+                "Code": "pending-evaluation",
+                "Message": "Your Spot request has been submitted for review, and is pending evaluation."
+            },
+            "ProductDescription": "Linux/UNIX",
+            "SpotInstanceRequestId": "sir-df6f405d",
+            "State": "open",
+            "LaunchSpecification": {
+                "Placement": {
+                    "AvailabilityZone": "us-west-2a"
+                },
+                "ImageId": "ami-1a2b3c4d",
+                "SecurityGroups": [
+                    {
+                        "GroupName": "my-security-group",
+                        "GroupId": "sg-1a2b3c4d"
+                    }
+                ],
+                "SubnetId": "subnet-1a2b3c4d",
+                "Monitoring": {
+                    "Enabled": false
+                },
+                "IamInstanceProfile": {
+                    "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+                },
+                "InstanceType": "m3.medium"
+            },
+            "Type": "one-time",
+            "CreateTime": "2014-03-25T22:21:58.000Z",
+            "SpotPrice": "0.050000"
+        }
+    ]
+}
+```
+For more information, see [Create a Spot Instance request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html) in the *Amazon EC2 User Guide*.
+The following `request-spot-instances` example assigns a public IP address to the Spot Instances that you launch in a nondefault VPC. Note that when you specify a network interface, you must include the subnet ID and security group ID using the network interface.
+
+```
+aws ec2 request-spot-instances \
+    --spot-price {{"0.050"}} \
+    --instance-count {{1}} \
+    --type {{"one-time"}} \
+    --launch-specification {{file://specification.json}}
+```
+Contents of `specification.json`:
+
+```
+{
+    "ImageId": "ami-1a2b3c4d",
+    "KeyName": "my-key-pair",
+    "InstanceType": "m3.medium",
+    "NetworkInterfaces": [
+        {
+            "DeviceIndex": 0,
+            "SubnetId": "subnet-1a2b3c4d",
+            "Groups": [
+                "sg-1a2b3c4d"
+            ],
+            "AssociatePublicIpAddress": true
+        }
+    ],
+    "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::123456789012:instance-profile/my-iam-role"
+    }
+}
+```
+For more information, see [Create a Spot Instance request](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RequestSpotInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/request-spot-instances.html) in *AWS CLI Command Reference*.
 
 ### `reset-address-attribute`
@@ -25205,14 +27352,14 @@ The following code example shows how to use `reset-address-attribute`.
 **AWS CLI**
 **To reset the domain name attribute associated with an elastic IP address**
 The following `reset-address-attribute` examples reset the domain name attribute of an elastic IP address.
-Linux:
+For Linux, use the following command.
 
 ```
 aws ec2 reset-address-attribute \
     --allocation-id {{eipalloc-abcdef01234567890}} \
     --attribute {{domain-name}}
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws ec2 reset-address-attribute {{^}}
@@ -25223,19 +27370,19 @@ Output:
 
 ```
 {
-    "Addresses": [
-        {
-            "PublicIp": "192.0.2.0",
-            "AllocationId": "eipalloc-abcdef01234567890",
-            "PtrRecord": "example.com."
-            "PtrRecordUpdate": {
-                "Value": "example.net.",
-                "Status": "PENDING"
+    "Address": {
+        "PublicIp": "192.0.2.0",
+        "AllocationId": "eipalloc-abcdef01234567890",
+        "PtrRecord": "example.com.",
+        "PtrRecordUpdate": {
+            "Value": "example.net.",
+            "Status": "PENDING"
         }
-    ]
+    }
 }
 ```
 To monitor the pending change, see [describe-addresses-attribute](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-addresses-attribute.html) in the *AWS CLI Command Reference*.
+For more information, see [Create a reverse DNS record for email on Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Elastic_Addressing_Reverse_DNS.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ResetAddressAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-address-attribute.html) in *AWS CLI Command Reference*.
 
 ### `reset-ebs-default-kms-key-id`
@@ -25254,9 +27401,10 @@ Output:
 
 ```
 {
-   "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/8c5b2c63-b9bc-45a3-a87a-5513eEXAMPLE"
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Enable Amazon EBS encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/encryption-by-default.html) in the *Amazon EBS User Guide*.
 +  For API details, see [ResetEbsDefaultKmsKeyId](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-ebs-default-kms-key-id.html) in *AWS CLI Command Reference*.
 
 ### `reset-fpga-image-attribute`
@@ -25266,19 +27414,21 @@ The following code example shows how to use `reset-fpga-image-attribute`.
 
 **AWS CLI**
 **To reset the attributes of an Amazon FPGA image**
-This example resets the load permissions for the specified AFI.
-Command:
+The following `reset-fpga-image-attribute` example resets the load permissions for the specified AFI.
 
 ```
-aws ec2 reset-fpga-image-attribute --fpga-image-id {{afi-0d123e123bfc85abc}} --attribute {{loadPermission}}
+aws ec2 reset-fpga-image-attribute \
+    --fpga-image-id {{afi-0d123e123bfc85abc}} \
+    --attribute {{loadPermission}}
 ```
 Output:
 
 ```
 {
-  "Return": true
+    "Return": true
 }
 ```
+For more information, see [Specifications for Amazon EC2 accelerated computing instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types Guide*.
 +  For API details, see [ResetFpgaImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-fpga-image-attribute.html) in *AWS CLI Command Reference*.
 
 ### `reset-image-attribute`
@@ -25288,12 +27438,15 @@ The following code example shows how to use `reset-image-attribute`.
 
 **AWS CLI**
 **To reset the launchPermission attribute**
-This example resets the `launchPermission` attribute for the specified AMI to its default value. By default, AMIs are private. If the command succeeds, no output is returned.
-Command:
+The following `reset-image-attribute` example resets the `launchPermission` attribute for the specified AMI to its default value. By default, AMIs are private.
 
 ```
-aws ec2 reset-image-attribute --image-id {{ami-5731123e}} --attribute {{launchPermission}}
+aws ec2 reset-image-attribute \
+    --image-id {{ami-5731123e}} \
+    --attribute {{launchPermission}}
 ```
+This command produces no output.
+For more information, see [Share an AMI with specific AWS accounts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-explicit.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ResetImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-image-attribute.html) in *AWS CLI Command Reference*.
 
 ### `reset-instance-attribute`
@@ -25302,27 +27455,36 @@ aws ec2 reset-image-attribute --image-id {{ami-5731123e}} --attribute {{launchPe
 The following code example shows how to use `reset-instance-attribute`.
 
 **AWS CLI**
-**To reset the sourceDestCheck attribute**
-This example resets the `sourceDestCheck` attribute of the specified instance. The instance must be in a VPC. If the command succeeds, no output is returned.
-Command:
+**Example 1: To reset the sourceDestCheck attribute**
+The following `reset-instance-attribute` example resets the `sourceDestCheck` attribute of the specified instance. The instance must be in a VPC.
 
 ```
-aws ec2 reset-instance-attribute --instance-id {{i-1234567890abcdef0}} --attribute {{sourceDestCheck}}
+aws ec2 reset-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --attribute {{sourceDestCheck}}
 ```
-**To reset the kernel attribute**
-This example resets the `kernel` attribute of the specified instance. The instance must be in the `stopped` state. If the command succeeds, no output is returned.
-Command:
+This command produces no output.
+For more information, see [NAT instances](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html) in the *Amazon VPC User Guide*.
+**Example 2: To reset the kernel attribute**
+The following `reset-instance-attribute` example resets the `kernel` attribute of the specified instance. The instance must be in the `stopped` state.
 
 ```
-aws ec2 reset-instance-attribute --instance-id {{i-1234567890abcdef0}} --attribute {{kernel}}
+aws ec2 reset-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --attribute {{kernel}}
 ```
-**To reset the ramdisk attribute**
-This example resets the `ramdisk` attribute of the specified instance. The instance must be in the `stopped` state. If the command succeeds, no output is returned.
-Command:
+This command produces no output.
+For more information, see [User provided kernels](https://docs.aws.amazon.com/linux/al2/ug/UserProvidedKernels.html) in the *Amazon Linux 2 User Guide*.
+**Example 3: To reset the ramdisk attribute**
+The following `reset-instance-attribute` example resets the `ramdisk` attribute of the specified instance. The instance must be in the `stopped` state.
 
 ```
-aws ec2 reset-instance-attribute --instance-id {{i-1234567890abcdef0}} --attribute {{ramdisk}}
+aws ec2 reset-instance-attribute \
+    --instance-id {{i-1234567890abcdef0}} \
+    --attribute {{ramdisk}}
 ```
+This command produces no output.
+For more information, see [User provided kernels](https://docs.aws.amazon.com/linux/al2/ug/UserProvidedKernels.html) in the *Amazon Linux 2 User Guide*.
 +  For API details, see [ResetInstanceAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-instance-attribute.html) in *AWS CLI Command Reference*.
 
 ### `reset-network-interface-attribute`
@@ -25340,6 +27502,7 @@ aws ec2 reset-network-interface-attribute \
     --source-dest-check {{sourceDestCheck}}
 ```
 This command produces no output.
+For more information, see [Modify network interface attributes](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/modify-network-interface-attributes.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [ResetNetworkInterfaceAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-network-interface-attribute.html) in *AWS CLI Command Reference*.
 
 ### `reset-snapshot-attribute`
@@ -25349,12 +27512,15 @@ The following code example shows how to use `reset-snapshot-attribute`.
 
 **AWS CLI**
 **To reset a snapshot attribute**
-This example resets the create volume permissions for snapshot `snap-1234567890abcdef0`. If the command succeeds, no output is returned.
-Command:
+The following `reset-snapshot-attribute` example resets the create volume permissions for snapshot `snap-1234567890abcdef0`.
 
 ```
-aws ec2 reset-snapshot-attribute --snapshot-id {{snap-1234567890abcdef0}} --attribute {{createVolumePermission}}
+aws ec2 reset-snapshot-attribute \
+    --snapshot-id {{snap-1234567890abcdef0}} \
+    --attribute {{createVolumePermission}}
 ```
+This command produces no output.
+For more information, see [Share an Amazon EBS snapshot with other AWS accounts](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-modifying-snapshot-permissions.html) in the *Amazon EBS User Guide*.
 +  For API details, see [ResetSnapshotAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/reset-snapshot-attribute.html) in *AWS CLI Command Reference*.
 
 ### `restore-address-to-classic`
@@ -25364,20 +27530,21 @@ The following code example shows how to use `restore-address-to-classic`.
 
 **AWS CLI**
 **To restore an address to EC2-Classic**
-This example restores Elastic IP address 198.51.100.0 to the EC2-Classic platform.
-Command:
+The following `restore-address-to-classic` example restores Elastic IP address 198.51.100.0 to the EC2-Classic platform.
 
 ```
-aws ec2 restore-address-to-classic --public-ip {{198.51.100.0}}
+aws ec2 restore-address-to-classic \
+    --public-ip {{198.51.100.0}}
 ```
 Output:
 
 ```
 {
-  "Status": "MoveInProgress",
-  "PublicIp": "198.51.100.0"
+    "Status": "MoveInProgress",
+    "PublicIp": "198.51.100.0"
 }
 ```
+For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RestoreAddressToClassic](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/restore-address-to-classic.html) in *AWS CLI Command Reference*.
 
 ### `restore-image-from-recycle-bin`
@@ -25409,8 +27576,8 @@ For more information, see [Recover deleted AMIs from the Recycle Bin](https://do
 The following code example shows how to use `restore-managed-prefix-list-version`.
 
 **AWS CLI**
-us-west-2\*\*To restore a prefix list version\*\*
-The following `restore-managed-prefix-list-version` restores the entries from version 1 of the specified prefix list.
+**To restore a prefix list version**
+The following `restore-managed-prefix-list-version` example restores the entries from version 1 of the specified prefix list.
 
 ```
 aws ec2 restore-managed-prefix-list-version \
@@ -25457,7 +27624,7 @@ Output:
     "SnapshotId": "snap-01234567890abcdef",
     "Description": "Monthly data backup snapshot",
     "Encrypted": false,
-    "OwnerId": "111122223333",
+    "OwnerId": "123456789012",
     "Progress": "99%",
     "StartTime": "2021-12-01T13:00:00.000000+00:00",
     "State": "recovering",
@@ -25514,7 +27681,7 @@ The following `restore-snapshot-tier` example changes the restore period for the
 
 ```
 aws ec2 restore-snapshot-tier \
-    --snapshot-id {{snap-01234567890abcedf}}
+    --snapshot-id {{snap-01234567890abcedf}} \
     --temporary-restore-days {{10}}
 ```
 Output:
@@ -25532,7 +27699,7 @@ The following `restore-snapshot-tier` example changes the restore type for the s
 
 ```
 aws ec2 restore-snapshot-tier \
-    --snapshot-id {{snap-01234567890abcedf}}
+    --snapshot-id {{snap-01234567890abcedf}} \
     --permanent-restore
 ```
 Output:
@@ -25557,8 +27724,9 @@ The following `revoke-client-vpn-ingress` example revokes a rule for internet ac
 
 ```
 aws ec2 revoke-client-vpn-ingress \
-    --client-vpn-endpoint-id {{cvpn-endpoint-123456789123abcde}} \
-    --target-network-cidr {{0.0.0.0/0}} --revoke-all-groups
+    --client-vpn-endpoint-id {{cvpn-endpoint-123456789abcabcde}} \
+    --target-network-cidr {{0.0.0.0/0}} \
+    --revoke-all-groups
 ```
 Output:
 
@@ -25611,12 +27779,29 @@ The following `revoke-security-group-ingress` example removes TCP port 22 access
 
 ```
 aws ec2 revoke-security-group-ingress \
-    --group-name {{mySecurityGroup}}
+    --group-name {{mySecurityGroup}} \
     --protocol {{tcp}} \
     --port {{22}} \
     --cidr {{203.0.113.0/24}}
 ```
-This command produces no output if it succeeds.
+Output:
+
+```
+{
+    "Return": true,
+    "RevokedSecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-0abcdef1234567890",
+            "GroupId": "sg-1234567890abcdef0",
+            "IsEgress": false,
+            "IpProtocol": "tcp",
+            "FromPort": 22,
+            "ToPort": 22,
+            "CidrIpv4": "203.0.113.0/24"
+        }
+    ]
+}
+```
 For more information, see [Security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) in the *Amazon EC2 User Guide*.
 **Example 2: To remove a rule using the IP permissions set**
 The following `revoke-security-group-ingress` example uses the `ip-permissions` parameter to remove an inbound rule that allows the ICMP message `Destination Unreachable: Fragmentation Needed and Don't Fragment was Set` (Type 3, Code 4).
@@ -25626,7 +27811,24 @@ aws ec2 revoke-security-group-ingress \
     --group-id {{sg-026c12253ce15eff7}} \
     --ip-permissions {{IpProtocol=icmp,FromPort=3,ToPort=4,IpRanges=[{CidrIp=0.0.0.0/0}]}}
 ```
-This command produces no output if it succeeds.
+Output:
+
+```
+{
+    "Return": true,
+    "RevokedSecurityGroupRules": [
+        {
+            "SecurityGroupRuleId": "sgr-0fedcba9876543210",
+            "GroupId": "sg-026c12253ce15eff7",
+            "IsEgress": false,
+            "IpProtocol": "icmp",
+            "FromPort": 3,
+            "ToPort": 4,
+            "CidrIpv4": "0.0.0.0/0"
+        }
+    ]
+}
+```
 For more information, see [Security groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RevokeSecurityGroupIngress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/revoke-security-group-ingress.html) in *AWS CLI Command Reference*.
 
@@ -25661,11 +27863,11 @@ Output:
                 "State": "disabled"
             },
             "Placement": {
-                "AvailabilityZone": "us-east-2a",
+                "AvailabilityZone": "us-west-2a",
                 "GroupName": "",
                 "Tenancy": "default"
             },
-            "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+            "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
             "PrivateIpAddress": "10.0.0.157",
             "ProductCodes": [],
             "PublicDnsName": "",
@@ -25701,12 +27903,12 @@ Output:
                     "MacAddress": "0a:ab:58:e0:67:e2",
                     "NetworkInterfaceId": "eni-0c0a29997760baee7",
                     "OwnerId": "123456789012",
-                    "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                    "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
                     "PrivateIpAddress": "10.0.0.157",
                     "PrivateIpAddresses": [
                         {
                             "Primary": true,
-                            "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                            "PrivateDnsName": "ip-10-0-0-157.us-west-2.compute.internal",
                             "PrivateIpAddress": "10.0.0.157"
                         }
                     ],
@@ -25763,7 +27965,112 @@ aws ec2 run-instances \
     --associate-public-ip-address \
     --key-name {{MyKeyPair}}
 ```
-For an example of the output for `run-instances`, see Example 1.
+Output:
+
+```
+{
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0abcdef1234567890",
+            "InstanceId": "i-1234567890abcdef2",
+            "InstanceType": "t2.micro",
+            "KeyName": "MyKeyPair",
+            "LaunchTime": "2018-05-10T08:05:20.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-west-2a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-10-0-0-162.us-west-2.compute.internal",
+            "PrivateIpAddress": "10.0.0.162",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-08fc749671b2d077c",
+            "VpcId": "vpc-1234567890abcdef0",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "",
+            "EbsOptimized": false,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2018-05-10T08:05:20.000Z",
+                        "AttachmentId": "eni-attach-0e325c07e928a0402",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "MySecurityGroup",
+                            "GroupId": "sg-0b0384b66d7d692f9"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:ab:58:e0:67:e3",
+                    "NetworkInterfaceId": "eni-0c0a29997760baee2",
+                    "OwnerId": "123456789012",
+                    "PrivateDnsName": "ip-10-0-0-162.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.0.162",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-10-0-0-162.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.0.162"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-08fc749671b2d077c",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "MySecurityGroup",
+                    "GroupId": "sg-0b0384b66d7d692f9"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "123456789012",
+    "ReservationId": "r-02a3f596d91211702"
+}
+```
 **Example 3: To launch an instance with additional volumes**
 The following `run-instances` example uses a block device mapping, specified in mapping.json, to attach additional volumes at launch. A block device mapping can specify EBS volumes, instance store volumes, or both EBS volumes and instance store volumes.
 
@@ -25776,7 +28083,8 @@ aws ec2 run-instances \
     --key-name {{MyKeyPair}} \
     --block-device-mappings {{file://mapping.json}}
 ```
-Contents of `mapping.json`. This example adds `/dev/sdh` an empty EBS volume with a size of 100 GiB.
+The following mapping adds `/dev/sdh` as an empty EBS volume with a size of 100 GiB.
+Contents of `mapping.json`:
 
 ```
 [
@@ -25788,7 +28096,8 @@ Contents of `mapping.json`. This example adds `/dev/sdh` an empty EBS volume wit
     }
 ]
 ```
-Contents of `mapping.json`. This example adds `ephemeral1` as an instance store volume.
+Alternatively, the following mapping adds `ephemeral1` as an instance store volume.
+Contents of `mapping.json`:
 
 ```
 [
@@ -25798,7 +28107,112 @@ Contents of `mapping.json`. This example adds `ephemeral1` as an instance store 
     }
 ]
 ```
-For an example of the output for `run-instances`, see Example 1.
+Output:
+
+```
+{
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0abcdef1234567890",
+            "InstanceId": "i-1234567890abcdef3",
+            "InstanceType": "t2.micro",
+            "KeyName": "MyKeyPair",
+            "LaunchTime": "2018-05-10T08:05:20.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-west-2a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-10-0-0-163.us-west-2.compute.internal",
+            "PrivateIpAddress": "10.0.0.163",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-08fc749671b2d077c",
+            "VpcId": "vpc-1234567890abcdef0",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "",
+            "EbsOptimized": false,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2018-05-10T08:05:20.000Z",
+                        "AttachmentId": "eni-attach-0e325c07e928a0403",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "MySecurityGroup",
+                            "GroupId": "sg-0b0384b66d7d692f9"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:ab:58:e0:67:e4",
+                    "NetworkInterfaceId": "eni-0c0a29997760baee3",
+                    "OwnerId": "123456789012",
+                    "PrivateDnsName": "ip-10-0-0-163.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.0.163",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-10-0-0-163.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.0.163"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-08fc749671b2d077c",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "MySecurityGroup",
+                    "GroupId": "sg-0b0384b66d7d692f9"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "123456789012",
+    "ReservationId": "r-02a3f596d91211703"
+}
+```
 For more information about block device mappings, see [Block device mapping](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
 **Example 4: To launch an instance and add tags on creation**
 The following `run-instances` example adds a tag with a key of `webserver` and value of `production` to the instance. The command also applies a tag with a key of `cost-center` and a value of `cc123` to any EBS volume that's created (in this case, the root volume).
@@ -25813,7 +28227,117 @@ aws ec2 run-instances \
     --security-group-ids {{sg-0b0384b66d7d692f9}} \
     --tag-specifications '{{ResourceType=instance,Tags=[{Key=webserver,Value=production}]}}' '{{ResourceType=volume,Tags=[{Key=cost-center,Value=cc123}]}}'
 ```
-For an example of the output for `run-instances`, see Example 1.
+Output:
+
+```
+{
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0abcdef1234567890",
+            "InstanceId": "i-1234567890abcdef4",
+            "InstanceType": "t2.micro",
+            "KeyName": "MyKeyPair",
+            "LaunchTime": "2018-05-10T08:05:20.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-west-2a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-10-0-0-164.us-west-2.compute.internal",
+            "PrivateIpAddress": "10.0.0.164",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-08fc749671b2d077c",
+            "VpcId": "vpc-1234567890abcdef0",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "",
+            "EbsOptimized": false,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2018-05-10T08:05:20.000Z",
+                        "AttachmentId": "eni-attach-0e325c07e928a0404",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "MySecurityGroup",
+                            "GroupId": "sg-0b0384b66d7d692f9"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:ab:58:e0:67:e5",
+                    "NetworkInterfaceId": "eni-0c0a29997760baee4",
+                    "OwnerId": "123456789012",
+                    "PrivateDnsName": "ip-10-0-0-164.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.0.164",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-10-0-0-164.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.0.164"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-08fc749671b2d077c",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "MySecurityGroup",
+                    "GroupId": "sg-0b0384b66d7d692f9"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [
+                {
+                    "Key": "webserver",
+                    "Value": "production"
+                }
+            ],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "123456789012",
+    "ReservationId": "r-02a3f596d91211704"
+}
+```
 **Example 5: To launch an instance with user data**
 The following `run-instances` example passes user data in a file called `my_script.txt` that contains a configuration script for your instance. The script runs at launch.
 
@@ -25827,8 +28351,122 @@ aws ec2 run-instances \
     --security-group-ids {{sg-0b0384b66d7d692f9}} \
     --user-data {{file://my_script.txt}}
 ```
-For an example of the output for `run-instances`, see Example 1.
-For more information about instance user data, see [Working with instance user data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-add-user-data.html) in the *Amazon EC2 User Guide*.
+Contents of `my_script.txt`:
+
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+```
+Output:
+
+```
+{
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0abcdef1234567890",
+            "InstanceId": "i-1234567890abcdef5",
+            "InstanceType": "t2.micro",
+            "KeyName": "MyKeyPair",
+            "LaunchTime": "2018-05-10T08:05:20.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-west-2a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-10-0-0-165.us-west-2.compute.internal",
+            "PrivateIpAddress": "10.0.0.165",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-08fc749671b2d077c",
+            "VpcId": "vpc-1234567890abcdef0",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "",
+            "EbsOptimized": false,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2018-05-10T08:05:20.000Z",
+                        "AttachmentId": "eni-attach-0e325c07e928a0405",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "MySecurityGroup",
+                            "GroupId": "sg-0b0384b66d7d692f9"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:ab:58:e0:67:e6",
+                    "NetworkInterfaceId": "eni-0c0a29997760baee5",
+                    "OwnerId": "123456789012",
+                    "PrivateDnsName": "ip-10-0-0-165.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.0.165",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-10-0-0-165.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.0.165"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-08fc749671b2d077c",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "MySecurityGroup",
+                    "GroupId": "sg-0b0384b66d7d692f9"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "123456789012",
+    "ReservationId": "r-02a3f596d91211705"
+}
+```
+For more information about instance user data, see [Run commands when you launch an EC2 instance with user data input](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html) in the *Amazon EC2 User Guide*.
 **Example 6: To launch a burstable performance instance**
 The following `run-instances` example launches a t2.micro instance with the `unlimited` credit option. When you launch a T2 instance, if you do not specify `--credit-specification`, the default is the `standard` credit option. When you launch a T3 instance, the default is the `unlimited` credit option.
 
@@ -25842,7 +28480,112 @@ aws ec2 run-instances \
     --security-group-ids {{sg-0b0384b66d7d692f9}} \
     --credit-specification {{CpuCredits=unlimited}}
 ```
-For an example of the output for `run-instances`, see Example 1.
+Output:
+
+```
+{
+    "Instances": [
+        {
+            "AmiLaunchIndex": 0,
+            "ImageId": "ami-0abcdef1234567890",
+            "InstanceId": "i-1234567890abcdef6",
+            "InstanceType": "t2.micro",
+            "KeyName": "MyKeyPair",
+            "LaunchTime": "2018-05-10T08:05:20.000Z",
+            "Monitoring": {
+                "State": "disabled"
+            },
+            "Placement": {
+                "AvailabilityZone": "us-west-2a",
+                "GroupName": "",
+                "Tenancy": "default"
+            },
+            "PrivateDnsName": "ip-10-0-0-166.us-west-2.compute.internal",
+            "PrivateIpAddress": "10.0.0.166",
+            "ProductCodes": [],
+            "PublicDnsName": "",
+            "State": {
+                "Code": 0,
+                "Name": "pending"
+            },
+            "StateTransitionReason": "",
+            "SubnetId": "subnet-08fc749671b2d077c",
+            "VpcId": "vpc-1234567890abcdef0",
+            "Architecture": "x86_64",
+            "BlockDeviceMappings": [],
+            "ClientToken": "",
+            "EbsOptimized": false,
+            "Hypervisor": "xen",
+            "NetworkInterfaces": [
+                {
+                    "Attachment": {
+                        "AttachTime": "2018-05-10T08:05:20.000Z",
+                        "AttachmentId": "eni-attach-0e325c07e928a0406",
+                        "DeleteOnTermination": true,
+                        "DeviceIndex": 0,
+                        "Status": "attaching"
+                    },
+                    "Description": "",
+                    "Groups": [
+                        {
+                            "GroupName": "MySecurityGroup",
+                            "GroupId": "sg-0b0384b66d7d692f9"
+                        }
+                    ],
+                    "Ipv6Addresses": [],
+                    "MacAddress": "0a:ab:58:e0:67:e7",
+                    "NetworkInterfaceId": "eni-0c0a29997760baee6",
+                    "OwnerId": "123456789012",
+                    "PrivateDnsName": "ip-10-0-0-166.us-west-2.compute.internal",
+                    "PrivateIpAddress": "10.0.0.166",
+                    "PrivateIpAddresses": [
+                        {
+                            "Primary": true,
+                            "PrivateDnsName": "ip-10-0-0-166.us-west-2.compute.internal",
+                            "PrivateIpAddress": "10.0.0.166"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Status": "in-use",
+                    "SubnetId": "subnet-08fc749671b2d077c",
+                    "VpcId": "vpc-1234567890abcdef0",
+                    "InterfaceType": "interface"
+                }
+            ],
+            "RootDeviceName": "/dev/xvda",
+            "RootDeviceType": "ebs",
+            "SecurityGroups": [
+                {
+                    "GroupName": "MySecurityGroup",
+                    "GroupId": "sg-0b0384b66d7d692f9"
+                }
+            ],
+            "SourceDestCheck": true,
+            "StateReason": {
+                "Code": "pending",
+                "Message": "pending"
+            },
+            "Tags": [],
+            "VirtualizationType": "hvm",
+            "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 1
+            },
+            "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+            },
+            "MetadataOptions": {
+                "State": "pending",
+                "HttpTokens": "optional",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "enabled"
+            }
+        }
+    ],
+    "OwnerId": "123456789012",
+    "ReservationId": "r-02a3f596d91211706"
+}
+```
 For more information about burstable performance instances, see [Burstable performance instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RunInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-instances.html) in *AWS CLI Command Reference*.
 
@@ -25853,72 +28596,82 @@ The following code example shows how to use `run-scheduled-instances`.
 
 **AWS CLI**
 **To launch a Scheduled Instance**
-This example launches the specified Scheduled Instance in a VPC.
-Command:
+The following `run-scheduled-instances` example launches the specified Scheduled Instance in a VPC.
 
 ```
-aws ec2 run-scheduled-instances --scheduled-instance-id {{sci-1234-1234-1234-1234-123456789012}} --instance-count {{1}} --launch-specification {{file://launch-specification.json}}
+aws ec2 run-scheduled-instances \
+    --scheduled-instance-id {{sci-1234-1234-1234-1234-123456789012}} \
+    --instance-count {{1}} \
+    --launch-specification {{file://launch-specification.json}}
 ```
-Launch-specification.json:
+Contents of `launch-specification.json`:
 
 ```
 {
-  "ImageId": "ami-12345678",
-  "KeyName": "my-key-pair",
-  "InstanceType": "c4.large",
-  "NetworkInterfaces": [
-    {
-        "DeviceIndex": 0,
-        "SubnetId": "subnet-12345678",
-        "AssociatePublicIpAddress": true,
-        "Groups": ["sg-12345678"]
+    "ImageId": "ami-12345678",
+    "KeyName": "my-key-pair",
+    "InstanceType": "c4.large",
+    "NetworkInterfaces": [
+        {
+            "DeviceIndex": 0,
+            "SubnetId": "subnet-12345678",
+            "AssociatePublicIpAddress": true,
+            "Groups": [
+                "sg-12345678"
+            ]
+        }
+    ],
+    "IamInstanceProfile": {
+        "Name": "my-iam-role"
     }
-  ],
-  "IamInstanceProfile": {
-      "Name": "my-iam-role"
-  }
 }
 ```
 Output:
 
 ```
 {
-  "InstanceIdSet": [
-      "i-1234567890abcdef0"
-  ]
+    "InstanceIdSet": [
+        "i-1234567890abcdef0"
+    ]
 }
 ```
-This example launches the specified Scheduled Instance in EC2-Classic.
-Command:
+For more information, see [Amazon EC2 billing and purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html) in the *Amazon EC2 User Guide*.
+The following `run-scheduled-instances` example launches the specified Scheduled Instance in EC2-Classic.
 
 ```
-aws ec2 run-scheduled-instances --scheduled-instance-id {{sci-1234-1234-1234-1234-123456789012}} --instance-count {{1}} --launch-specification {{file://launch-specification.json}}
+aws ec2 run-scheduled-instances \
+    --scheduled-instance-id {{sci-1234-1234-1234-1234-123456789012}} \
+    --instance-count {{1}} \
+    --launch-specification {{file://launch-specification.json}}
 ```
-Launch-specification.json:
+Contents of `launch-specification.json`:
 
 ```
 {
-  "ImageId": "ami-12345678",
-  "KeyName": "my-key-pair",
-  "SecurityGroupIds": ["sg-12345678"],
-  "InstanceType": "c4.large",
-  "Placement": {
-    "AvailabilityZone": "us-west-2b"
-  }
-  "IamInstanceProfile": {
-      "Name": "my-iam-role"
-  }
+    "ImageId": "ami-12345678",
+    "KeyName": "my-key-pair",
+    "SecurityGroupIds": [
+        "sg-12345678"
+    ],
+    "InstanceType": "c4.large",
+    "Placement": {
+        "AvailabilityZone": "us-west-2b"
+    },
+    "IamInstanceProfile": {
+        "Name": "my-iam-role"
+    }
 }
 ```
 Output:
 
 ```
 {
-  "InstanceIdSet": [
-      "i-1234567890abcdef0"
-  ]
+    "InstanceIdSet": [
+        "i-1234567890abcdef0"
+    ]
 }
 ```
+For more information, see [Amazon EC2 billing and purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [RunScheduledInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/run-scheduled-instances.html) in *AWS CLI Command Reference*.
 
 ### `search-local-gateway-routes`
@@ -25939,15 +28692,18 @@ Output:
 
 ```
 {
-    "Route": {
-        "DestinationCidrBlock": "0.0.0.0/0",
-        "LocalGatewayVirtualInterfaceGroupId": "lgw-vif-grp-07145b276bEXAMPLE",
-        "Type": "static",
-        "State": "deleted",
-        "LocalGatewayRouteTableId": "lgw-rtb-059615ef7EXAMPLE"
-    }
+    "Routes": [
+        {
+            "DestinationCidrBlock": "0.0.0.0/0",
+            "LocalGatewayVirtualInterfaceGroupId": "lgw-vif-grp-07145b276bEXAMPLE",
+            "Type": "static",
+            "State": "deleted",
+            "LocalGatewayRouteTableId": "lgw-rtb-059615ef7EXAMPLE"
+        }
+    ]
 }
 ```
+For more information, see [Local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) in the *AWS Outposts User Guide*.
 +  For API details, see [SearchLocalGatewayRoutes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/search-local-gateway-routes.html) in *AWS CLI Command Reference*.
 
 ### `search-transit-gateway-multicast-groups`
@@ -26049,6 +28805,7 @@ aws ec2 send-diagnostic-interrupt \
     --instance-id {{i-1234567890abcdef0}}
 ```
 This command produces no output.
+For more information, see [Send a diagnostic interrupt to debug an unreachable Amazon EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/diagnostic-interrupt.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [SendDiagnosticInterrupt](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/send-diagnostic-interrupt.html) in *AWS CLI Command Reference*.
 
 ### `start-instances`
@@ -26058,11 +28815,11 @@ The following code example shows how to use `start-instances`.
 
 **AWS CLI**
 **To start an Amazon EC2 instance**
-This example starts the specified Amazon EBS-backed instance.
-Command:
+The following `start-instances` example starts the specified Amazon EBS-backed instance.
 
 ```
-aws ec2 start-instances --instance-ids {{i-1234567890abcdef0}}
+aws ec2 start-instances \
+    --instance-ids {{i-1234567890abcdef0}}
 ```
 Output:
 
@@ -26083,7 +28840,7 @@ Output:
     ]
 }
 ```
-For more information, see Stop and Start Your Instance in the *Amazon Elastic Compute Cloud User Guide*.
+For more information, see [Stop and start Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [StartInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/start-instances.html) in *AWS CLI Command Reference*.
 
 ### `start-network-insights-access-scope-analysis`
@@ -26097,7 +28854,6 @@ The following `start-network-insights-access-scope-analysis` example starts the 
 
 ```
 aws ec2 start-network-insights-access-scope-analysis \
-    --region {{us-east-1}} \
     --network-insights-access-scope-id {{nis-123456789111}}
 ```
 Output:
@@ -26106,7 +28862,7 @@ Output:
 {
     "NetworkInsightsAccessScopeAnalysis": {
         "NetworkInsightsAccessScopeAnalysisId": "nisa-123456789222",
-        "NetworkInsightsAccessScopeAnalysisArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-access-scope-analysis/nisa-123456789222",
+        "NetworkInsightsAccessScopeAnalysisArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-access-scope-analysis/nisa-123456789222",
         "NetworkInsightsAccessScopeId": "nis-123456789111",
         "Status": "running",
         "StartDate": "2022-01-26T00:47:06.814000+00:00"
@@ -26135,7 +28891,7 @@ Output:
 {
     "NetworkInsightsAnalysis": {
         "NetworkInsightsAnalysisId": "nia-02207aa13eb480c7a",
-        "NetworkInsightsAnalysisArn": "arn:aws:ec2:us-east-1:123456789012:network-insights-analysis/nia-02207aa13eb480c7a",
+        "NetworkInsightsAnalysisArn": "arn:aws:ec2:us-west-2:123456789012:network-insights-analysis/nia-02207aa13eb480c7a",
         "NetworkInsightsPathId": "nip-0b26f224f1d131fa8",
         "StartDate": "2021-01-20T22:58:37.495Z",
         "Status": "running"
@@ -26236,14 +28992,14 @@ The following `terminate-client-vpn-connections` example terminates the specifie
 
 ```
 aws ec2 terminate-client-vpn-connections \
-    --client-vpn-endpoint-id {{vpn-endpoint-123456789123abcde}} \
+    --client-vpn-endpoint-id {{vpn-endpoint-123456789abcabcde}} \
     --connection-id {{cvpn-connection-04edd76f5201e0cb8}}
 ```
 Output:
 
 ```
 {
-    "ClientVpnEndpointId": "vpn-endpoint-123456789123abcde",
+    "ClientVpnEndpointId": "vpn-endpoint-123456789abcabcde",
     "ConnectionStatuses": [
         {
             "ConnectionId": "cvpn-connection-04edd76f5201e0cb8",
@@ -26267,11 +29023,11 @@ The following code example shows how to use `terminate-instances`.
 
 **AWS CLI**
 **To terminate an Amazon EC2 instance**
-This example terminates the specified instance.
-Command:
+The following `terminate-instances` example terminates the specified instance.
 
 ```
-aws ec2 terminate-instances --instance-ids {{i-1234567890abcdef0}}
+aws ec2 terminate-instances \
+    --instance-ids {{i-1234567890abcdef0}}
 ```
 Output:
 
@@ -26292,7 +29048,7 @@ Output:
     ]
 }
 ```
-For more information, see Using Amazon EC2 Instances in the *AWS Command Line Interface User Guide*.
+For more information, see [Launching, listing, and deleting Amazon EC2 instances in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-instances.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [TerminateInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/terminate-instances.html) in *AWS CLI Command Reference*.
 
 ### `unassign-ipv6-addresses`
@@ -26302,22 +29058,24 @@ The following code example shows how to use `unassign-ipv6-addresses`.
 
 **AWS CLI**
 **To unassign an IPv6 address from a network interface**
-This example unassigns the specified IPv6 address from the specified network interface.
-Command:
+The following `unassign-ipv6-addresses` example unassigns the specified IPv6 address from the specified network interface.
 
 ```
-aws ec2 unassign-ipv6-addresses --ipv6-addresses {{2001:db8:1234:1a00:3304:8879:34cf:4071}} --network-interface-id {{eni-23c49b68}}
+aws ec2 unassign-ipv6-addresses \
+    --ipv6-addresses {{2001:db8:1234:1a00:3304:8879:34cf:4071}} \
+    --network-interface-id {{eni-23c49b68}}
 ```
 Output:
 
 ```
 {
-  "NetworkInterfaceId": "eni-23c49b68",
-  "UnassignedIpv6Addresses": [
-      "2001:db8:1234:1a00:3304:8879:34cf:4071"
-  ]
+    "NetworkInterfaceId": "eni-23c49b68",
+    "UnassignedIpv6Addresses": [
+        "2001:db8:1234:1a00:3304:8879:34cf:4071"
+    ]
 }
 ```
+For more information, see [Manage the IPv6 addresses for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-ipv6-addresses.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [UnassignIpv6Addresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/unassign-ipv6-addresses.html) in *AWS CLI Command Reference*.
 
 ### `unassign-private-ip-addresses`
@@ -26327,12 +29085,15 @@ The following code example shows how to use `unassign-private-ip-addresses`.
 
 **AWS CLI**
 **To unassign a secondary private IP address from a network interface**
-This example unassigns the specified private IP address from the specified network interface. If the command succeeds, no output is returned.
-Command:
+The following `unassign-private-ip-addresses` example unassigns the specified private IP address from the specified network interface.
 
 ```
-aws ec2 unassign-private-ip-addresses --network-interface-id {{eni-e5aa89a3}} --private-ip-addresses {{10.0.0.82}}
+aws ec2 unassign-private-ip-addresses \
+    --network-interface-id {{eni-e5aa89a3}} \
+    --private-ip-addresses {{10.0.0.82}}
 ```
+This command produces no output.
+For more information, see [Secondary IP addresses for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-secondary-ip-addresses.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [UnassignPrivateIpAddresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/unassign-private-ip-addresses.html) in *AWS CLI Command Reference*.
 
 ### `unassign-private-nat-gateway-address`
@@ -26397,26 +29158,27 @@ The following code example shows how to use `unmonitor-instances`.
 
 **AWS CLI**
 **To disable detailed monitoring for an instance**
-This example command disables detailed monitoring for the specified instance.
-Command:
+The following `unmonitor-instances` example disables detailed monitoring for the specified instance.
 
 ```
-aws ec2 unmonitor-instances --instance-ids {{i-1234567890abcdef0}}
+aws ec2 unmonitor-instances \
+    --instance-ids {{i-1234567890abcdef0}}
 ```
 Output:
 
 ```
 {
-  "InstanceMonitorings": [
-      {
-          "InstanceId": "i-1234567890abcdef0",
-          "Monitoring": {
-              "State": "disabling"
-          }
-      }
-  ]
+    "InstanceMonitorings": [
+        {
+            "InstanceId": "i-1234567890abcdef0",
+            "Monitoring": {
+                "State": "disabling"
+            }
+        }
+    ]
 }
 ```
+For more information, see [Manage detailed monitoring for your EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-detailed-monitoring.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [UnmonitorInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/unmonitor-instances.html) in *AWS CLI Command Reference*.
 
 ### `update-security-group-rule-descriptions-egress`
@@ -26440,7 +29202,7 @@ Output:
     "Return": true
 }
 ```
-For more information, see [Security group rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html#security-group-rules) in the *Amazon EC2 User Guide*.
+For more information, see [Security group rules](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [UpdateSecurityGroupRuleDescriptionsEgress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/update-security-group-rule-descriptions-egress.html) in *AWS CLI Command Reference*.
 
 ### `update-security-group-rule-descriptions-ingress`
@@ -26464,7 +29226,7 @@ Output:
     "Return": true
 }
 ```
-For more information, see [Security group rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html#security-group-rules) in the *Amazon EC2 User Guide*.
+For more information, see [Security group rules](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.html) in the *Amazon EC2 User Guide*.
 **Example 2: To update the description of an inbound security group rule with a prefix list source**
 The following `update-security-group-rule-descriptions-ingress` example updates the description for the security group rule for the specified port and prefix list. The description '`SSH access from ABC office`' replaces any existing description for the rule.
 
@@ -26480,7 +29242,7 @@ Output:
     "Return": true
 }
 ```
-For more information, see [Security group rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html#security-group-rules) in the *Amazon EC2 User Guide*.
+For more information, see [Security group rules](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [UpdateSecurityGroupRuleDescriptionsIngress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/update-security-group-rule-descriptions-ingress.html) in *AWS CLI Command Reference*.
 
 ### `withdraw-byoip-cidr`
@@ -26493,7 +29255,7 @@ The following code example shows how to use `withdraw-byoip-cidr`.
 The following `withdraw-byoip-cidr` example stops advertising the specified address range.
 
 ```
-aws ec2 withdraw-byoip-cidr
+aws ec2 withdraw-byoip-cidr \
     --cidr {{203.0.113.25/24}}
 ```
 Output:
@@ -26507,4 +29269,5 @@ Output:
     }
 }
 ```
+For more information, see [Bring your own IP addresses (BYOIP) to Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-byoip.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [WithdrawByoipCidr](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/withdraw-byoip-cidr.html) in *AWS CLI Command Reference*.

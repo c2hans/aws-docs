@@ -12,7 +12,7 @@ The following code examples show how to use `DescribeLoadBalancers`.
 
 **AWS CLI**
 **To describe the Classic Load Balancers for an Auto Scaling group**
-This example describes the Classic Load Balancers for the specified Auto Scaling group.
+The following `describe-load-balancers` example describes the Classic Load Balancers for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-load-balancers \
@@ -30,6 +30,7 @@ Output:
     ]
 }
 ```
+For more information, see [Use Elastic Load Balancing to distribute incoming application traffic in your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLoadBalancers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-load-balancers.html) in *AWS CLI Command Reference*.
 
 ------

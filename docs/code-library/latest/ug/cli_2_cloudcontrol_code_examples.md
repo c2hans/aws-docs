@@ -43,7 +43,7 @@ Output:
         "OperationStatus": "IN_PROGRESS",
         "Operation": "CREATE",
         "Identifier": "ResourceExample",
-        "RequestToken": "20999d87-e304-4725-ad84-832dcbfd7fc5"
+        "RequestToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -71,7 +71,7 @@ Output:
     "ProgressEvent": {
         "TypeName": "AWS::Kinesis::Stream",
         "Identifier": "ResourceExample",
-        "RequestToken": "e48f26ff-d0f9-4ab8-a878-120db1edf111",
+        "RequestToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Operation": "DELETE",
         "OperationStatus": "IN_PROGRESS",
         "EventTime": 1632950300.14
@@ -92,7 +92,7 @@ The following `get-resource-request-status` example returns status information a
 
 ```
 aws cloudcontrol get-resource-request-status \
-    --request-token {{"e1a6b86e-46bd-41ac-bfba-001234567890"}}
+    --request-token {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -101,7 +101,7 @@ Output:
     "ProgressEvent": {
         "TypeName": "AWS::Kinesis::Stream",
         "Identifier": "Demo",
-        "RequestToken": "e1a6b86e-46bd-41ac-bfba-001234567890",
+        "RequestToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Operation": "CREATE",
         "OperationStatus": "FAILED",
         "EventTime": 1632950268.481,
@@ -134,7 +134,7 @@ Output:
     "TypeName": "AWS::Kinesis::Stream",
     "ResourceDescription": {
         "Identifier": "ResourceExample",
-        "Properties": "{\"Arn\":\"arn:aws:kinesis:us-west-2:099908667365:stream/ResourceExample\",\"RetentionPeriodHours\":168,\"Name\":\"ResourceExample\",\"ShardCount\":3}"
+        "Properties": "{\"Arn\":\"arn:aws:kinesis:us-west-2:123456789012:stream/ResourceExample\",\"RetentionPeriodHours\":168,\"Name\":\"ResourceExample\",\"ShardCount\":3}"
     }
 }
 ```
@@ -162,7 +162,7 @@ Output:
         {
             "TypeName": "AWS::Kinesis::Stream",
             "Identifier": "Demo",
-            "RequestToken": "e1a6b86e-46bd-41ac-bfba-633abcdfdbd7",
+            "RequestToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Operation": "CREATE",
             "OperationStatus": "FAILED",
             "EventTime": 1632950268.481,
@@ -233,7 +233,7 @@ Output:
         "OperationStatus": "IN_PROGRESS",
         "Operation": "UPDATE",
         "Identifier": "ExampleLogGroup",
-        "RequestToken": "5f40c577-3534-4b20-9599-0b0123456789"
+        "RequestToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```

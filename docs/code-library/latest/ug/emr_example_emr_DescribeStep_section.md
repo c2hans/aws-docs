@@ -16,10 +16,13 @@ Action examples are code excerpts from larger programs and must be run in contex
 #### [ CLI ]
 
 **AWS CLI**
-The following command describes a step with the step ID `s-3LZC0QUT43AM` in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To describe a step**
+The following `describe-step` example describes a step with the step ID `s-3LZC0QUT43AM` in a cluster with the cluster ID `j-3SD91U2E1L2QX`.
 
 ```
-aws emr describe-step --cluster-id {{j-3SD91U2E1L2QX}} --step-id {{s-3LZC0QUT43AM}}
+aws emr describe-step \
+    --cluster-id {{j-3SD91U2E1L2QX}} \
+    --step-id {{s-3LZC0QUT43AM}}
 ```
 Output:
 
@@ -53,6 +56,7 @@ Output:
     }
 }
 ```
+For more information, see [Submit work to an Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-work-with-steps.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [DescribeStep](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/describe-step.html) in *AWS CLI Command Reference*.
 
 ------

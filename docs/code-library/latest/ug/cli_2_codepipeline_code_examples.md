@@ -26,19 +26,21 @@ The following code example shows how to use `acknowledge-job`.
 
 **AWS CLI**
 **To retrieve information about a specified job**
-This example returns information about a specified job, including the status of that job if it exists. This is only used for job workers and custom actions. To determine the value of nonce and the job ID, use aws codepipeline poll-for-jobs.
-Command:
+The following `acknowledge-job` example returns information about a specified job, including the status of that job if it exists. This is only used for job workers and custom actions. To determine the value of nonce and the job ID, use aws codepipeline poll-for-jobs.
 
 ```
-aws codepipeline acknowledge-job --job-id {{f4f4ff82-2d11-EXAMPLE}} --nonce {{3}}
+aws codepipeline acknowledge-job \
+    --job-id {{f4f4ff82-2d11-EXAMPLE}} \
+    --nonce {{3}}
 ```
 Output:
 
 ```
 {
-  "status": "InProgress"
+    "status": "InProgress"
 }
 ```
+For more information, see [Create and add a custom action in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-create-custom-action.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [AcknowledgeJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/acknowledge-job.html) in *AWS CLI Command Reference*.
 
 ### `create-custom-action-type`
@@ -48,12 +50,13 @@ The following code example shows how to use `create-custom-action-type`.
 
 **AWS CLI**
 **To create a custom action**
-This example creates a custom action for AWS CodePipeline using an already-created JSON file (here named MyCustomAction.json) that contains the structure of the custom action. For more information about the requirements for creating a custom action, including the structure of the file, see the AWS CodePipeline User Guide.
+The following `create-custom-action-type` example creates a custom action for AWS CodePipeline using an already-created JSON file (here named MyCustomAction.json) that contains the structure of the custom action.
 
 ```
-aws codepipeline create-custom-action-type --cli-input-json {{file://MyCustomAction.json}}
+aws codepipeline create-custom-action-type \
+    --cli-input-json {{file://MyCustomAction.json}}
 ```
-Contents of JSON file `MyCustomAction.json`:
+Contents of `MyCustomAction.json`:
 
 ```
 {
@@ -86,6 +89,44 @@ Contents of JSON file `MyCustomAction.json`:
 }
 ```
 This command returns the structure of the custom action.
+Output:
+
+```
+{
+    "actionType": {
+        "id": {
+            "category": "Build",
+            "owner": "Custom",
+            "provider": "MyJenkinsProviderName",
+            "version": "1"
+        },
+        "settings": {
+            "entityUrlTemplate": "https://192.0.2.4/job/{Config:ProjectName}/",
+            "executionUrlTemplate": "https://192.0.2.4/job/{Config:ProjectName}/lastSuccessfulBuild/{ExternalExecutionId}/"
+        },
+        "actionConfigurationProperties": [
+            {
+                "name": "MyJenkinsExampleBuildProject",
+                "required": true,
+                "key": true,
+                "secret": false,
+                "queryable": false,
+                "description": "The name of the build project must be provided when this action is added to the pipeline.",
+                "type": "String"
+            }
+        ],
+        "inputArtifactDetails": {
+            "minimumCount": 0,
+            "maximumCount": 1
+        },
+        "outputArtifactDetails": {
+            "minimumCount": 0,
+            "maximumCount": 1
+        }
+    }
+}
+```
+For more information, see [Create and add a custom action in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-create-custom-action.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [CreateCustomActionType](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/create-custom-action-type.html) in *AWS CLI Command Reference*.
 
 ### `create-pipeline`
@@ -95,84 +136,148 @@ The following code example shows how to use `create-pipeline`.
 
 **AWS CLI**
 **To create a pipeline**
-This example creates a pipeline in AWS CodePipeline using an already-created JSON file (here named MySecondPipeline.json) that contains the structure of the pipeline. For more information about the requirements for creating a pipeline, including the structure of the file, see the AWS CodePipeline User Guide.
-Command:
+The following `create-pipeline` example creates a pipeline in AWS CodePipeline using an already-created JSON file (here named MySecondPipeline.json) that contains the structure of the pipeline.
 
 ```
-aws codepipeline create-pipeline --cli-input-json {{file://MySecondPipeline.json}}
+aws codepipeline create-pipeline \
+    --cli-input-json {{file://MySecondPipeline.json}}
 ```
-JSON file sample contents:
+Contents of `MySecondPipeline.json`:
 
 ```
 {
- "pipeline": {
-  "roleArn": "arn:aws:iam::111111111111:role/AWS-CodePipeline-Service",
-  "stages": [
-    {
-      "name": "Source",
-      "actions": [
-        {
-          "inputArtifacts": [],
-          "name": "Source",
-          "actionTypeId": {
-            "category": "Source",
-            "owner": "AWS",
-            "version": "1",
-            "provider": "S3"
-          },
-          "outputArtifacts": [
+    "pipeline": {
+        "roleArn": "arn:aws:iam::123456789012:role/AWS-CodePipeline-Service",
+        "stages": [
             {
-              "name": "MyApp"
-            }
-          ],
-          "configuration": {
-            "S3Bucket": "awscodepipeline-demo-bucket",
-            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
-          },
-          "runOrder": 1
-        }
-      ]
-    },
-    {
-      "name": "Beta",
-      "actions": [
-        {
-          "inputArtifacts": [
+                "name": "Source",
+                "actions": [
+                    {
+                        "inputArtifacts": [],
+                        "name": "Source",
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "S3"
+                        },
+                        "outputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "configuration": {
+                            "S3Bucket": "awscodepipeline-demo-bucket",
+                            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            },
             {
-              "name": "MyApp"
+                "name": "Beta",
+                "actions": [
+                    {
+                        "inputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "name": "CodePipelineDemoFleet",
+                        "actionTypeId": {
+                            "category": "Deploy",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "CodeDeploy"
+                        },
+                        "outputArtifacts": [],
+                        "configuration": {
+                            "ApplicationName": "CodePipelineDemoApplication",
+                            "DeploymentGroupName": "CodePipelineDemoFleet"
+                        },
+                        "runOrder": 1
+                    }
+                ]
             }
-          ],
-          "name": "CodePipelineDemoFleet",
-          "actionTypeId": {
-            "category": "Deploy",
-            "owner": "AWS",
-            "version": "1",
-            "provider": "CodeDeploy"
-          },
-          "outputArtifacts": [],
-          "configuration": {
-            "ApplicationName": "CodePipelineDemoApplication",
-            "DeploymentGroupName": "CodePipelineDemoFleet"
-          },
-          "runOrder": 1
-        }
-      ]
+        ],
+        "artifactStore": {
+            "type": "S3",
+            "location": "codepipeline-us-east-1-11EXAMPLE11"
+        },
+        "name": "MySecondPipeline",
+        "version": 1
     }
-  ],
-  "artifactStore": {
-    "type": "S3",
-    "location": "codepipeline-us-east-1-11EXAMPLE11"
-  },
-  "name": "MySecondPipeline",
-  "version": 1
- }
 }
 ```
+This command returns the structure of the pipeline.
 Output:
 
 ```
-This command returns the structure of the pipeline.
+{
+    "pipeline": {
+        "roleArn": "arn:aws:iam::123456789012:role/AWS-CodePipeline-Service",
+        "stages": [
+            {
+                "name": "Source",
+                "actions": [
+                    {
+                        "inputArtifacts": [],
+                        "name": "Source",
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "S3"
+                        },
+                        "outputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "configuration": {
+                            "S3Bucket": "awscodepipeline-demo-bucket",
+                            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            },
+            {
+                "name": "Beta",
+                "actions": [
+                    {
+                        "inputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "name": "CodePipelineDemoFleet",
+                        "actionTypeId": {
+                            "category": "Deploy",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "CodeDeploy"
+                        },
+                        "outputArtifacts": [],
+                        "configuration": {
+                            "ApplicationName": "CodePipelineDemoApplication",
+                            "DeploymentGroupName": "CodePipelineDemoFleet"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            }
+        ],
+        "artifactStore": {
+            "type": "S3",
+            "location": "codepipeline-us-east-1-11EXAMPLE11"
+        },
+        "name": "MySecondPipeline",
+        "version": 1
+    }
+}
 ```
+For more information, see [Create a pipeline, stages, and actions](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-create.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [CreatePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/create-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `delete-custom-action-type`
@@ -182,26 +287,23 @@ The following code example shows how to use `delete-custom-action-type`.
 
 **AWS CLI**
 **To delete a custom action**
-This example deletes a custom action in AWS CodePipeline by using an already-created JSON file (here named DeleteMyCustomAction.json) that contains the action type, provider name, and version number of the action to be deleted. Use the list-action-types command to view the correct values for category, version, and provider.
-Command:
+The following `delete-custom-action-type` example deletes a custom action in AWS CodePipeline by using an already-created JSON file (here named DeleteMyCustomAction.json) that contains the action type, provider name, and version number of the action to be deleted. Use the list-action-types command to view the correct values for category, version, and provider.
 
 ```
-aws codepipeline delete-custom-action-type --cli-input-json {{file://DeleteMyCustomAction.json}}
+aws codepipeline delete-custom-action-type \
+    --cli-input-json {{file://DeleteMyCustomAction.json}}
 ```
-JSON file sample contents:
+Contents of `DeleteMyCustomAction.json`:
 
 ```
 {
-  "category": "Build",
-  "version": "1",
-  "provider": "MyJenkinsProviderName"
+    "category": "Build",
+    "version": "1",
+    "provider": "MyJenkinsProviderName"
 }
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Create and add a custom action in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-create-custom-action.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DeleteCustomActionType](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/delete-custom-action-type.html) in *AWS CLI Command Reference*.
 
 ### `delete-pipeline`
@@ -211,17 +313,14 @@ The following code example shows how to use `delete-pipeline`.
 
 **AWS CLI**
 **To delete a pipeline**
-This example deletes a pipeline named MySecondPipeline from AWS CodePipeline. Use the list-pipelines command to view a list of pipelines associated with your AWS account.
-Command:
+The following `delete-pipeline` example deletes a pipeline named MySecondPipeline from AWS CodePipeline. Use the list-pipelines command to view a list of pipelines associated with your AWS account.
 
 ```
-aws codepipeline delete-pipeline --name {{MySecondPipeline}}
+aws codepipeline delete-pipeline \
+    --name {{MySecondPipeline}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Delete a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-delete.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DeletePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/delete-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `delete-webhook`
@@ -238,7 +337,7 @@ aws codepipeline delete-webhook \
     --name {{my-webhook}}
 ```
 This command produces no output.
-For more information, see [Delete the webhook for your GitHub source](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html#pipelines-webhooks-delete) in the *AWS CodePipeline User Guide*.
+For more information, see [Delete the webhook for your GitHub source](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DeleteWebhook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/delete-webhook.html) in *AWS CLI Command Reference*.
 
 ### `deregister-webhook-with-third-party`
@@ -255,7 +354,7 @@ aws codepipeline deregister-webhook-with-third-party \
     --webhook-name {{my-webhook}}
 ```
 This command produces no output.
-For more information, see [Delete the webhook for your GitHub source](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html#pipelines-webhooks-delete) in the *AWS CodePipeline User Guide*.
+For more information, see [Delete the webhook for your GitHub source](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DeregisterWebhookWithThirdParty](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/deregister-webhook-with-third-party.html) in *AWS CLI Command Reference*.
 
 ### `disable-stage-transition`
@@ -265,21 +364,17 @@ The following code example shows how to use `disable-stage-transition`.
 
 **AWS CLI**
 **To disable a transition to a stage in a pipeline**
-This example disables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
-Command:
+The following `disable-stage-transition` example disables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
 
 ```
 aws codepipeline disable-stage-transition \
---pipeline-name {{MyFirstPipeline}} \
---stage-name {{Beta}}  \
---transition-type {{Inbound}} \
---reason {{"An example reason"}}
+    --pipeline-name {{MyFirstPipeline}} \
+    --stage-name {{Beta}}  \
+    --transition-type {{Inbound}} \
+    --reason {{"An example reason"}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Working with stage transitions in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/transitions.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DisableStageTransition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/disable-stage-transition.html) in *AWS CLI Command Reference*.
 
 ### `enable-stage-transition`
@@ -289,17 +384,16 @@ The following code example shows how to use `enable-stage-transition`.
 
 **AWS CLI**
 **To enable a transition to a stage in a pipeline**
-This example enables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
-Command:
+The following `enable-stage-transition` example enables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
 
 ```
-aws codepipeline enable-stage-transition --pipeline-name {{MyFirstPipeline}} --stage-name {{Beta}}  --transition-type {{Inbound}}
+aws codepipeline enable-stage-transition \
+    --pipeline-name {{MyFirstPipeline}} \
+    --stage-name {{Beta}} \
+    --transition-type {{Inbound}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Working with stage transitions in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/transitions.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [EnableStageTransition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/enable-stage-transition.html) in *AWS CLI Command Reference*.
 
 ### `get-job-details`
@@ -309,67 +403,63 @@ The following code example shows how to use `get-job-details`.
 
 **AWS CLI**
 **To get details of a job**
-This example returns details about a job whose ID is represented by f4f4ff82-2d11-EXAMPLE. This command is only used for custom actions. When this command is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if required for the custom action. This command will also return any secret values defined for the action, if any are defined.
-Command:
+The following `get-job-details` example returns details about a job whose ID is represented by f4f4ff82-2d11-EXAMPLE. This command is only used for custom actions. When this command is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline, if required for the custom action. This command will also return any secret values defined for the action, if any are defined.
 
 ```
-aws codepipeline get-job-details --job-id {{f4f4ff82-2d11-EXAMPLE}}
+aws codepipeline get-job-details \
+    --job-id {{f4f4ff82-2d11-EXAMPLE}}
 ```
 Output:
 
 ```
 {
- "jobDetails": {
-  "accountId": "111111111111",
-  "data": {
-    "actionConfiguration": {
-      "__type": "ActionConfiguration",
-      "configuration": {
-        "ProjectName": "MyJenkinsExampleTestProject"
-      }
-    },
-    "actionTypeId": {
-      "__type": "ActionTypeId",
-      "category": "Test",
-      "owner": "Custom",
-      "provider": "MyJenkinsProviderName",
-      "version": "1"
-    },
-    "artifactCredentials": {
-      "__type": "AWSSessionCredentials",
-      "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
-      "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
-      "sessionToken": "fICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcNMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9TrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpEIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0FkbFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTbNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE="
-    },
-    "inputArtifacts": [
-      {
-        "__type": "Artifact",
-        "location": {
-          "s3Location": {
-            "bucketName": "codepipeline-us-east-1-11EXAMPLE11",
-            "objectKey": "MySecondPipeline/MyAppBuild/EXAMPLE"
-          },
-          "type": "S3"
+    "jobDetails": {
+        "accountId": "123456789012",
+        "data": {
+            "actionConfiguration": {
+                "configuration": {
+                    "ProjectName": "MyJenkinsExampleTestProject"
+                }
+            },
+            "actionTypeId": {
+                "category": "Test",
+                "owner": "Custom",
+                "provider": "MyJenkinsProviderName",
+                "version": "1"
+            },
+            "artifactCredentials": {
+                "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+                "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+                "sessionToken": "fICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcNMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9TrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpEIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0FkbFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTbNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE="
+            },
+            "inputArtifacts": [
+                {
+                    "location": {
+                        "s3Location": {
+                            "bucketName": "codepipeline-us-east-1-11EXAMPLE11",
+                            "objectKey": "MySecondPipeline/MyAppBuild/EXAMPLE"
+                        },
+                        "type": "S3"
+                    },
+                    "name": "MyAppBuild"
+                }
+            ],
+            "outputArtifacts": [],
+            "pipelineContext": {
+                "action": {
+                    "name": "MyJenkinsTest-Action"
+                },
+                "pipelineName": "MySecondPipeline",
+                "stage": {
+                    "name": "Testing"
+                }
+            }
         },
-        "name": "MyAppBuild"
-      }
-    ],
-    "outputArtifacts": [],
-    "pipelineContext": {
-      "__type": "PipelineContext",
-      "action": {
-        "name": "MyJenkinsTest-Action"
-      },
-      "pipelineName": "MySecondPipeline",
-      "stage": {
-        "name": "Testing"
-      }
+        "id": "f4f4ff82-2d11-EXAMPLE"
     }
-  },
-  "id": "f4f4ff82-2d11-EXAMPLE"
- }
 }
 ```
+For more information, see [Create and add a custom action in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-create-custom-action.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [GetJobDetails](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/get-job-details.html) in *AWS CLI Command Reference*.
 
 ### `get-pipeline-state`
@@ -379,56 +469,57 @@ The following code example shows how to use `get-pipeline-state`.
 
 **AWS CLI**
 **To get information about the state of a pipeline**
-This example returns the most recent state of a pipeline named MyFirstPipeline.
-Command:
+The following `get-pipeline-state` example returns the most recent state of a pipeline named MyFirstPipeline.
 
 ```
-aws codepipeline get-pipeline-state --name {{MyFirstPipeline}}
+aws codepipeline get-pipeline-state \
+    --name {{MyFirstPipeline}}
 ```
 Output:
 
 ```
 {
- "created": 1446137312.204,
- "pipelineName": "MyFirstPipeline",
- "pipelineVersion": 1,
- "stageStates": [
-  {
-    "actionStates": [
-      {
-        "actionName": "Source",
-        "entityUrl": "https://console.aws.amazon.com/s3/home?#",
-        "latestExecution": {
-          "lastStatusChange": 1446137358.328,
-          "status": "Succeeded"
+    "created": 1446137312.204,
+    "pipelineName": "MyFirstPipeline",
+    "pipelineVersion": 1,
+    "stageStates": [
+        {
+            "actionStates": [
+                {
+                    "actionName": "Source",
+                    "entityUrl": "https://console.aws.amazon.com/s3/home?#",
+                    "latestExecution": {
+                        "lastStatusChange": 1446137358.328,
+                        "status": "Succeeded"
+                    }
+                }
+            ],
+            "stageName": "Source"
+        },
+        {
+            "actionStates": [
+                {
+                    "actionName": "CodePipelineDemoFleet",
+                    "entityUrl": "https://console.aws.amazon.com/codedeploy/home?#/applications/CodePipelineDemoApplication/deployment-groups/CodePipelineDemoFleet",
+                    "latestExecution": {
+                        "externalExecutionId": "d-EXAMPLE",
+                        "externalExecutionUrl": "https://console.aws.amazon.com/codedeploy/home?#/deployments/d-EXAMPLE",
+                        "lastStatusChange": 1446137493.131,
+                        "status": "Succeeded",
+                        "summary": "Deployment Succeeded"
+                    }
+                }
+            ],
+            "inboundTransitionState": {
+                "enabled": true
+            },
+            "stageName": "Beta"
         }
-      }
     ],
-    "stageName": "Source"
-  },
-  {
-    "actionStates": [
-      {
-        "actionName": "CodePipelineDemoFleet",
-        "entityUrl": "https://console.aws.amazon.com/codedeploy/home?#/applications/CodePipelineDemoApplication/deployment-groups/CodePipelineDemoFleet",
-        "latestExecution": {
-          "externalExecutionId": "d-EXAMPLE",
-          "externalExecutionUrl": "https://console.aws.amazon.com/codedeploy/home?#/deployments/d-EXAMPLE",
-          "lastStatusChange": 1446137493.131,
-          "status": "Succeeded",
-          "summary": "Deployment Succeeded"
-        }
-      }
-    ],
-    "inboundTransitionState": {
-      "enabled": true
-    },
-    "stageName": "Beta"
-  }
- ],
- "updated": 1446137312.204
+    "updated": 1446137312.204
 }
 ```
+For more information, see [View pipeline details and history (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [GetPipelineState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/get-pipeline-state.html) in *AWS CLI Command Reference*.
 
 ### `get-pipeline`
@@ -438,79 +529,80 @@ The following code example shows how to use `get-pipeline`.
 
 **AWS CLI**
 **To view the structure of a pipeline**
-This example returns the structure of a pipeline named MyFirstPipeline.
-Command:
+The following `get-pipeline` example returns the structure of a pipeline named MyFirstPipeline.
 
 ```
-aws codepipeline get-pipeline --name {{MyFirstPipeline}}
+aws codepipeline get-pipeline \
+    --name {{MyFirstPipeline}}
 ```
 Output:
 
 ```
 {
-  "pipeline": {
-      "roleArn": "arn:aws:iam::111111111111:role/AWS-CodePipeline-Service",
-      "stages": [
-          {
-              "name": "Source",
-              "actions": [
-                  {
-                      "inputArtifacts": [],
-                      "name": "Source",
-                      "actionTypeId": {
-                          "category": "Source",
-                          "owner": "AWS",
-                          "version": "1",
-                          "provider": "S3"
-                      },
-                      "outputArtifacts": [
-                          {
-                              "name": "MyApp"
-                          }
-                      ],
-                      "configuration": {
-                          "S3Bucket": "awscodepipeline-demo-bucket",
-                          "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
-                      },
-                      "runOrder": 1
-                  }
-              ]
-          },
-          {
-              "name": "Beta",
-              "actions": [
-                  {
-                      "inputArtifacts": [
-                          {
-                              "name": "MyApp"
-                          }
-                      ],
-                      "name": "CodePipelineDemoFleet",
-                      "actionTypeId": {
-                          "category": "Deploy",
-                          "owner": "AWS",
-                          "version": "1",
-                          "provider": "CodeDeploy"
-                      },
-                      "outputArtifacts": [],
-                      "configuration": {
-                          "ApplicationName": "CodePipelineDemoApplication",
-                          "DeploymentGroupName": "CodePipelineDemoFleet"
-                      },
-                      "runOrder": 1
-                  }
-              ]
-          }
-      ],
-      "artifactStore": {
-          "type": "S3",
-          "location": "codepipeline-us-east-1-11EXAMPLE11"
-      },
-      "name": "MyFirstPipeline",
-      "version": 1
-  }
+    "pipeline": {
+        "roleArn": "arn:aws:iam::123456789012:role/AWS-CodePipeline-Service",
+        "stages": [
+            {
+                "name": "Source",
+                "actions": [
+                    {
+                        "inputArtifacts": [],
+                        "name": "Source",
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "S3"
+                        },
+                        "outputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "configuration": {
+                            "S3Bucket": "awscodepipeline-demo-bucket",
+                            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            },
+            {
+                "name": "Beta",
+                "actions": [
+                    {
+                        "inputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "name": "CodePipelineDemoFleet",
+                        "actionTypeId": {
+                            "category": "Deploy",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "CodeDeploy"
+                        },
+                        "outputArtifacts": [],
+                        "configuration": {
+                            "ApplicationName": "CodePipelineDemoApplication",
+                            "DeploymentGroupName": "CodePipelineDemoFleet"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            }
+        ],
+        "artifactStore": {
+            "type": "S3",
+            "location": "codepipeline-us-east-1-11EXAMPLE11"
+        },
+        "name": "MyFirstPipeline",
+        "version": 1
+    }
 }
 ```
+For more information, see [View pipeline details and history (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [GetPipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/get-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `list-action-executions`
@@ -532,8 +624,8 @@ Output:
 {
     "actionExecutionDetails": [
         {
-            "pipelineExecutionId": "EXAMPLE0-adfc-488e-bf4c-1111111720d3",
-            "actionExecutionId": "EXAMPLE4-2ee8-4853-bd6a-111111158148",
+            "pipelineExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "actionExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "pipelineVersion": 12,
             "stageName": "Deploy",
             "actionName": "Deploy",
@@ -555,7 +647,7 @@ Output:
                     "ApplicationName": "my-application",
                     "DeploymentGroupName": "my-deployment-group"
                 },
-                "region": "us-east-1",
+                "region": "us-west-2",
                 "inputArtifacts": [
                     {
                         "name": "SourceArtifact",
@@ -578,8 +670,8 @@ Output:
             }
         },
         {
-            "pipelineExecutionId": "EXAMPLE0-adfc-488e-bf4c-1111111720d3",
-            "actionExecutionId": "EXAMPLE5-abb4-4192-9031-11111113a7b0",
+            "pipelineExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "actionExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "pipelineVersion": 12,
             "stageName": "Source",
             "actionName": "Source",
@@ -603,7 +695,7 @@ Output:
                     "PollForSourceChanges": "false",
                     "RepositoryName": "my-repo"
                 },
-                "region": "us-east-1",
+                "region": "us-west-2",
                 "inputArtifacts": [],
                 "namespace": "SourceVariables"
             },
@@ -625,16 +717,17 @@ Output:
                 "outputVariables": {
                     "AuthorDate": "2020-05-08T17:45:43Z",
                     "BranchName": "production",
-                    "CommitId": "EXAMPLEad99dcd35914c00b7fbea139951111111",
+                    "CommitId": "1111111ad99dcd35914c00b7fbea13995EXAMPLE",
                     "CommitMessage": "Edited template.yml",
                     "CommitterDate": "2020-05-08T17:45:43Z",
                     "RepositoryName": "my-repo"
                 }
             }
-        },
-. . . .
+        }
+    ]
+}
 ```
-For more information, see [View action executions (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html#pipelines-action-executions-cli) in the *AWS CodePipeline User Guide*.
+For more information, see [View action executions (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [ListActionExecutions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/list-action-executions.html) in *AWS CLI Command Reference*.
 
 ### `list-action-types`
@@ -644,78 +737,79 @@ The following code example shows how to use `list-action-types`.
 
 **AWS CLI**
 **To view the action types available**
-Used by itself, the list-action-types command returns the structure of all actions available to your AWS account. This example uses the --action-owner-filter option to return only custom actions.
-Command:
+The following `list-action-types` example uses the `--action-owner-filter` option to return only custom actions. Used by itself, the `list-action-types` command returns the structure of all actions available to your AWS account.
 
 ```
-aws codepipeline list-action-types --action-owner-filter {{Custom}}
+aws codepipeline list-action-types \
+    --action-owner-filter {{Custom}}
 ```
 Output:
 
 ```
 {
-  "actionTypes": [
-      {
-          "inputArtifactDetails": {
-              "maximumCount": 5,
-              "minimumCount": 0
-          },
-          "actionConfigurationProperties": [
-              {
-                  "secret": false,
-                  "required": true,
-                  "name": "MyJenkinsExampleBuildProject",
-                  "key": true,
-                  "queryable": true
-              }
-          ],
-          "outputArtifactDetails": {
-              "maximumCount": 5,
-              "minimumCount": 0
-          },
-          "id": {
-              "category": "Build",
-              "owner": "Custom",
-              "version": "1",
-              "provider": "MyJenkinsProviderName"
-          },
-          "settings": {
-              "entityUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}",
-              "executionUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}/{ExternalExecutionId}"
-          }
-      },
-      {
-          "inputArtifactDetails": {
-              "maximumCount": 5,
-              "minimumCount": 0
-          },
-          "actionConfigurationProperties": [
-              {
-                  "secret": false,
-                  "required": true,
-                  "name": "MyJenkinsExampleTestProject",
-                  "key": true,
-                  "queryable": true
-              }
-          ],
-          "outputArtifactDetails": {
-              "maximumCount": 5,
-              "minimumCount": 0
-          },
-          "id": {
-              "category": "Test",
-              "owner": "Custom",
-              "version": "1",
-              "provider": "MyJenkinsProviderName"
-          },
-          "settings": {
-              "entityUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}",
-              "executionUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}/{ExternalExecutionId}"
-          }
-      }
-  ]
+    "actionTypes": [
+        {
+            "inputArtifactDetails": {
+                "maximumCount": 5,
+                "minimumCount": 0
+            },
+            "actionConfigurationProperties": [
+                {
+                    "secret": false,
+                    "required": true,
+                    "name": "MyJenkinsExampleBuildProject",
+                    "key": true,
+                    "queryable": true
+                }
+            ],
+            "outputArtifactDetails": {
+                "maximumCount": 5,
+                "minimumCount": 0
+            },
+            "id": {
+                "category": "Build",
+                "owner": "Custom",
+                "version": "1",
+                "provider": "MyJenkinsProviderName"
+            },
+            "settings": {
+                "entityUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}",
+                "executionUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}/{ExternalExecutionId}"
+            }
+        },
+        {
+            "inputArtifactDetails": {
+                "maximumCount": 5,
+                "minimumCount": 0
+            },
+            "actionConfigurationProperties": [
+                {
+                    "secret": false,
+                    "required": true,
+                    "name": "MyJenkinsExampleTestProject",
+                    "key": true,
+                    "queryable": true
+                }
+            ],
+            "outputArtifactDetails": {
+                "maximumCount": 5,
+                "minimumCount": 0
+            },
+            "id": {
+                "category": "Test",
+                "owner": "Custom",
+                "version": "1",
+                "provider": "MyJenkinsProviderName"
+            },
+            "settings": {
+                "entityUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}",
+                "executionUrlTemplate": "http://192.0.2.4/job/{Config:ProjectName}/{ExternalExecutionId}"
+            }
+        }
+    ]
 }
 ```
+For more information, see [Use action types, custom actions, and approval actions](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [ListActionTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/list-action-types.html) in *AWS CLI Command Reference*.
 
 ### `list-pipeline-executions`
@@ -738,7 +832,7 @@ Output:
     "pipelineExecutionSummaries": [
         {
             "lastUpdateTime": 1496380678.648,
-            "pipelineExecutionId": "7cf7f7cb-3137-539g-j458-d7eu3EXAMPLE",
+            "pipelineExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "startTime": 1496380258.243,
             "status": "Succeeded"
         },
@@ -750,14 +844,14 @@ Output:
         },
         {
             "lastUpdateTime": 1496946071.6456,
-            "pipelineExecutionId": "4992f7jf-7cf7-913k-k334-d7eu3EXAMPLE",
+            "pipelineExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "startTime": 1496945471.5645,
             "status": "Succeeded"
         }
     ]
 }
 ```
-For more information, see [View execution history](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html#pipelines-executions-cli) in the *AWS CodePipeline User Guide*.
+For more information, see [View execution history](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [ListPipelineExecutions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/list-pipeline-executions.html) in *AWS CLI Command Reference*.
 
 ### `list-pipelines`
@@ -767,8 +861,7 @@ The following code example shows how to use `list-pipelines`.
 
 **AWS CLI**
 **To view a list of pipelines**
-This example lists all AWS CodePipeline pipelines associated with the user's AWS account.
-Command:
+The following `list-pipelines` example lists all AWS CodePipeline pipelines associated with the user's AWS account.
 
 ```
 aws codepipeline list-pipelines
@@ -777,22 +870,23 @@ Output:
 
 ```
 {
-  "pipelines": [
-      {
-          "updated": 1439504274.641,
-          "version": 1,
-          "name": "MyFirstPipeline",
-          "created": 1439504274.641
-      },
-      {
-          "updated": 1436461837.992,
-          "version": 2,
-          "name": "MySecondPipeline",
-          "created": 1436460801.381
-      }
-      ]
+    "pipelines": [
+        {
+            "updated": 1439504274.641,
+            "version": 1,
+            "name": "MyFirstPipeline",
+            "created": 1439504274.641
+        },
+        {
+            "updated": 1436461837.992,
+            "version": 2,
+            "name": "MySecondPipeline",
+            "created": 1436460801.381
+        }
+    ]
 }
 ```
+For more information, see [View pipeline details and history (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [ListPipelines](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/list-pipelines.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -806,16 +900,22 @@ The following `list-tags-for-resource` example retrieves a list of all tags atta
 
 ```
 aws codepipeline list-tags-for-resource \
-    --resource-arn {{arn:aws:codepipeline:us-east-1:123456789012:MyPipeline}}
+    --resource-arn {{arn:aws:codepipeline:us-west-2:123456789012:MyPipeline}}
 ```
 Output:
 
 ```
 {
-    "tags": {
-        "Project": "ProjectA",
-        "IscontainerBased": "true"
-    }
+    "tags": [
+        {
+            "key": "Project",
+            "value": "ProjectA"
+        },
+        {
+            "key": "IscontainerBased",
+            "value": "true"
+        }
+    ]
 }
 ```
 For more information, see [View tags for a pipeline (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-tag.html#pipelines-tag-list-cli) in the *AWS CodePipeline User Guide*.
@@ -831,9 +931,7 @@ The following code example shows how to use `list-webhooks`.
 The following `list-webhooks` example retrieves a list of all tags attached to the specified pipeline resource.
 
 ```
-aws codepipeline list-webhooks \
-    --endpoint-url {{"https://codepipeline.eu-central-1.amazonaws.com"}} \
-    --region {{"eu-central-1"}}
+aws codepipeline list-webhooks
 ```
 Output:
 
@@ -841,7 +939,7 @@ Output:
 {
     "webhooks": [
         {
-            "url": "https://webhooks.domain.com/trigger111111111EXAMPLE11111111111111111": {
+            "definition": {
                 "authenticationConfiguration": {
                     "SecretToken": "Secret"
                 },
@@ -856,12 +954,13 @@ Output:
                     }
                 ]
             },
-            "arn": "arn:aws:codepipeline:eu-central-1:123456789012:webhook:my-webhook"
+            "url": "https://webhooks.domain.com/trigger111111111EXAMPLE11111111111111111",
+            "arn": "arn:aws:codepipeline:us-west-2:123456789012:webhook:my-webhook"
         }
     ]
 }
 ```
-For more information, see [List webhooks in your account](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html#pipelines-webhooks-view) in the *AWS CodePipeline User Guide*.
+For more information, see [List webhooks in your account](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [ListWebhooks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/list-webhooks.html) in *AWS CLI Command Reference*.
 
 ### `poll-for-jobs`
@@ -871,86 +970,82 @@ The following code example shows how to use `poll-for-jobs`.
 
 **AWS CLI**
 **To view any available jobs**
-This example returns information about any jobs for a job worker to act upon. This example uses a pre-defined JSON file (MyActionTypeInfo.json) to supply information about the action type for which the job worker processes jobs. This command is only used for custom actions. When this command is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline. This command will also return any secret values defined for the action, if any are defined.
-Command:
+The following `poll-for-jobs` example returns information about any jobs for a job worker to act upon. This example uses a pre-defined JSON file (MyActionTypeInfo.json) to supply information about the action type for which the job worker processes jobs. This command is only used for custom actions. When this command is called, AWS CodePipeline returns temporary credentials for the Amazon S3 bucket used to store artifacts for the pipeline. This command will also return any secret values defined for the action, if any are defined.
 
 ```
-aws codepipeline poll-for-jobs --cli-input-json {{file://MyActionTypeInfo.json}}
+aws codepipeline poll-for-jobs \
+    --cli-input-json {{file://MyActionTypeInfo.json}}
 ```
-JSON file sample contents:
+Contents of `MyActionTypeInfo.json`:
 
 ```
 {
-  "actionTypeId": {
-    "category": "Test",
-    "owner": "Custom",
-    "provider": "MyJenkinsProviderName",
-    "version": "1"
-  },
-  "maxBatchSize": 5,
-  "queryParam": {
-      "ProjectName": "MyJenkinsTestProject"
-  }
+    "actionTypeId": {
+        "category": "Test",
+        "owner": "Custom",
+        "provider": "MyJenkinsProviderName",
+        "version": "1"
+    },
+    "maxBatchSize": 5,
+    "queryParam": {
+        "ProjectName": "MyJenkinsTestProject"
+    }
 }
 ```
 Output:
 
 ```
 {
- "jobs": [
-  {
-    "accountId": "111111111111",
-    "data": {
-      "actionConfiguration": {
-        "__type": "ActionConfiguration",
-        "configuration": {
-          "ProjectName": "MyJenkinsExampleTestProject"
-        }
-      },
-      "actionTypeId": {
-        "__type": "ActionTypeId",
-        "category": "Test",
-        "owner": "Custom",
-        "provider": "MyJenkinsProviderName",
-        "version": "1"
-      },
-      "artifactCredentials": {
-        "__type": "AWSSessionCredentials",
-        "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
-        "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
-        "sessionToken": "fICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcNMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9TrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpEIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0FkbFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTbNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE="
-      },
-      "inputArtifacts": [
+    "jobs": [
         {
-          "__type": "Artifact",
-          "location": {
-            "s3Location": {
-              "bucketName": "codepipeline-us-east-1-11EXAMPLE11",
-              "objectKey": "MySecondPipeline/MyAppBuild/EXAMPLE"
+            "accountId": "123456789012",
+            "data": {
+                "actionConfiguration": {
+                    "configuration": {
+                        "ProjectName": "MyJenkinsExampleTestProject"
+                    }
+                },
+                "actionTypeId": {
+                    "category": "Test",
+                    "owner": "Custom",
+                    "provider": "MyJenkinsProviderName",
+                    "version": "1"
+                },
+                "artifactCredentials": {
+                    "accessKeyId": "AKIAIOSFODNN7EXAMPLE",
+                    "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+                    "sessionToken": "fICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcNMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9TrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpEIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0FkbFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTbNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE="
+                },
+                "inputArtifacts": [
+                    {
+                        "location": {
+                            "s3Location": {
+                                "bucketName": "codepipeline-us-east-1-11EXAMPLE11",
+                                "objectKey": "MySecondPipeline/MyAppBuild/EXAMPLE"
+                            },
+                            "type": "S3"
+                        },
+                        "name": "MyAppBuild"
+                    }
+                ],
+                "outputArtifacts": [],
+                "pipelineContext": {
+                    "action": {
+                        "name": "MyJenkinsTest-Action"
+                    },
+                    "pipelineName": "MySecondPipeline",
+                    "stage": {
+                        "name": "Testing"
+                    }
+                }
             },
-            "type": "S3"
-          },
-          "name": "MyAppBuild"
+            "id": "ef66c259-64f9-EXAMPLE",
+            "nonce": "3"
         }
-      ],
-      "outputArtifacts": [],
-      "pipelineContext": {
-        "__type": "PipelineContext",
-        "action": {
-          "name": "MyJenkinsTest-Action"
-        },
-        "pipelineName": "MySecondPipeline",
-        "stage": {
-          "name": "Testing"
-        }
-      }
-    },
-    "id": "ef66c259-64f9-EXAMPLE",
-    "nonce": "3"
-  }
- ]
+    ]
 }
 ```
+For more information, see [Create and add a custom action in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-create-custom-action.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [PollForJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/poll-for-jobs.html) in *AWS CLI Command Reference*.
 
 ### `put-webhook`
@@ -964,8 +1059,7 @@ The following `put-webhook` example creates a webhook for a GitHub version 1 sou
 
 ```
 aws codepipeline put-webhook \
-    --cli-input-json {{file://webhook_json.json}} \
-    --region {{"eu-central-1"}}
+    --cli-input-json {{file://webhook_json.json}}
 ```
 Contents of `webhook_json.json`:
 
@@ -1009,17 +1103,11 @@ Output:
                 }
             ]
         },
-        "arn": "arn:aws:codepipeline:eu-central-1:123456789012:webhook:my-webhook"
-    },
-    "tags": [
-        {
-            "key": "Project",
-            "value": "ProjectA"
-        }
-    ]
+        "arn": "arn:aws:codepipeline:us-west-2:123456789012:webhook:my-webhook"
+    }
 }
 ```
-For more information, see [Create a webhook for a GitHub source](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html#pipelines-webhooks-create) in the *AWS CodePipeline User Guide*.
+For more information, see [Create a webhook for a GitHub source](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [PutWebhook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/put-webhook.html) in *AWS CLI Command Reference*.
 
 ### `retry-stage-execution`
@@ -1045,7 +1133,7 @@ Output:
     "pipelineExecutionId": "b59babff-5f34-EXAMPLE"
 }
 ```
-For more information, see [Retry failed actions (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/actions-retry.html#actions-retry-cli) in the *AWS CodePipeline User Guide*.
+For more information, see [Configuring stage retry for a failed stage or failed actions](https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-retry.html#stage-retry-cli) in the *AWS CodePipeline User Guide*.
 +  For API details, see [RetryStageExecution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/retry-stage-execution.html) in *AWS CLI Command Reference*.
 
 ### `start-pipeline-execution`
@@ -1055,19 +1143,20 @@ The following code example shows how to use `start-pipeline-execution`.
 
 **AWS CLI**
 **To run the latest revision through a pipeline**
-This example runs the latest revision present in the source stage of a pipeline through the pipeline named "MyFirstPipeline".
-Command:
+The following `start-pipeline-execution` example runs the latest revision present in the source stage of a pipeline through the pipeline named "MyFirstPipeline".
 
 ```
-aws codepipeline start-pipeline-execution --name {{MyFirstPipeline}}
+aws codepipeline start-pipeline-execution \
+    --name {{MyFirstPipeline}}
 ```
 Output:
 
 ```
 {
-  "pipelineExecutionId": "3137f7cb-7cf7-EXAMPLE"
+    "pipelineExecutionId": "3137f7cb-7cf7-EXAMPLE"
 }
 ```
+For more information, see [Start a pipeline manually](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-rerun-manually.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [StartPipelineExecution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/start-pipeline-execution.html) in *AWS CLI Command Reference*.
 
 ### `stop-pipeline-execution`
@@ -1085,7 +1174,13 @@ aws codepipeline stop-pipeline-execution \
     --pipeline-execution-id {{d-EXAMPLE}} \
     --reason {{"Stopping pipeline after the build action is done"}}
 ```
-This command returns no output.
+Output:
+
+```
+{
+    "pipelineExecutionId": "d-EXAMPLE"
+}
+```
 For more information, see [Stop a pipeline execution (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-stop.html#pipelines-stop-cli) in the *AWS CodePipeline User Guide*.
 +  For API details, see [StopPipelineExecution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/stop-pipeline-execution.html) in *AWS CLI Command Reference*.
 
@@ -1100,7 +1195,7 @@ The following `tag-resource` example associates a set of provided tags with a pi
 
 ```
 aws codepipeline tag-resource \
-    --resource-arn {{arn:aws:codepipeline:us-east-1:123456789012:MyPipeline}} \
+    --resource-arn {{arn:aws:codepipeline:us-west-2:123456789012:MyPipeline}} \
     --tags {{key=Project,value=ProjectA}} {{key=IscontainerBased,value=true}}
 ```
 This command produces no output.
@@ -1118,7 +1213,7 @@ The following `untag-resource` example removes a tag from the specified resource
 
 ```
 aws codepipeline untag-resource \
-    --resource-arn {{arn:aws:codepipeline:us-east-1:123456789012:MyPipeline}} \
+    --resource-arn {{arn:aws:codepipeline:us-west-2:123456789012:MyPipeline}} \
     --tag-keys {{Project}} {{IscontainerBased}}
 ```
 This command produces no output.
@@ -1132,148 +1227,148 @@ The following code example shows how to use `update-pipeline`.
 
 **AWS CLI**
 **To update the structure of a pipeline**
-This example uses the update-pipeline command with the --cli-input-json argument. This example uses a pre-defined JSON file (MyFirstPipeline.json) to update the structure of a pipeline. AWS CodePipeline recognizes the pipeline name contained in the JSON file, and then applies any changes from modified fields in the pipeline structure to update the pipeline.
+The following `update-pipeline` example uses the `--cli-input-json` argument with a pre-defined JSON file (MyFirstPipeline.json) to update the structure of a pipeline. AWS CodePipeline recognizes the pipeline name contained in the JSON file, and then applies any changes from modified fields in the pipeline structure to update the pipeline.
 Use the following guidelines when creating the pre-defined JSON file:
 If you are working with a pipeline structure retrieved using the get-pipeline command, you must remove the metadata section from the pipeline structure in the JSON file (the "metadata": { } lines and the "created," "pipelineARN," and "updated" fields within).The pipeline name cannot be changed.
-Command:
+Run the following command to update the pipeline.
 
 ```
-aws codepipeline update-pipeline --cli-input-json {{file://MyFirstPipeline.json}}
+aws codepipeline update-pipeline \
+    --cli-input-json {{file://MyFirstPipeline.json}}
 ```
-Sample JSON file contents:
+Contents of `MyFirstPipeline.json`:
 
 ```
 {
- "pipeline": {
-  "roleArn": "arn:aws:iam::111111111111:role/AWS-CodePipeline-Service",
-  "stages": [
-    {
-      "name": "Source",
-      "actions": [
-        {
-          "inputArtifacts": [],
-          "name": "Source",
-          "actionTypeId": {
-            "category": "Source",
-            "owner": "AWS",
-            "version": "1",
-            "provider": "S3"
-          },
-          "outputArtifacts": [
+    "pipeline": {
+        "roleArn": "arn:aws:iam::123456789012:role/AWS-CodePipeline-Service",
+        "stages": [
             {
-              "name": "MyApp"
-            }
-          ],
-          "configuration": {
-            "S3Bucket": "awscodepipeline-demo-bucket2",
-            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
-          },
-          "runOrder": 1
-        }
-      ]
-    },
-    {
-      "name": "Beta",
-      "actions": [
-        {
-          "inputArtifacts": [
+                "name": "Source",
+                "actions": [
+                    {
+                        "inputArtifacts": [],
+                        "name": "Source",
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "S3"
+                        },
+                        "outputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "configuration": {
+                            "S3Bucket": "awscodepipeline-demo-bucket2",
+                            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            },
             {
-              "name": "MyApp"
+                "name": "Beta",
+                "actions": [
+                    {
+                        "inputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "name": "CodePipelineDemoFleet",
+                        "actionTypeId": {
+                            "category": "Deploy",
+                            "owner": "AWS",
+                            "version": "1",
+                            "provider": "CodeDeploy"
+                        },
+                        "outputArtifacts": [],
+                        "configuration": {
+                            "ApplicationName": "CodePipelineDemoApplication",
+                            "DeploymentGroupName": "CodePipelineDemoFleet"
+                        },
+                        "runOrder": 1
+                    }
+                ]
             }
-          ],
-          "name": "CodePipelineDemoFleet",
-          "actionTypeId": {
-            "category": "Deploy",
-            "owner": "AWS",
-            "version": "1",
-            "provider": "CodeDeploy"
-          },
-          "outputArtifacts": [],
-          "configuration": {
-            "ApplicationName": "CodePipelineDemoApplication",
-            "DeploymentGroupName": "CodePipelineDemoFleet"
-          },
-          "runOrder": 1
-        }
-      ]
+        ],
+        "artifactStore": {
+            "type": "S3",
+            "location": "codepipeline-us-east-1-11EXAMPLE11"
+        },
+        "name": "MyFirstPipeline",
+        "version": 1
     }
-  ],
-  "artifactStore": {
-    "type": "S3",
-    "location": "codepipeline-us-east-1-11EXAMPLE11"
-  },
-  "name": "MyFirstPipeline",
-  "version": 1
- }
 }
 ```
 Output:
 
 ```
 {
- "pipeline": {
-  "artifactStore": {
-    "location": "codepipeline-us-east-1-11EXAMPLE11",
-    "type": "S3"
-  },
-  "name": "MyFirstPipeline",
-  "roleArn": "arn:aws:iam::111111111111:role/AWS-CodePipeline-Service",
-  "stages": [
-    {
-      "actions": [
-        {
-          "actionTypeId": {
-            "__type": "ActionTypeId",
-            "category": "Source",
-            "owner": "AWS",
-            "provider": "S3",
-            "version": "1"
-          },
-          "configuration": {
-            "S3Bucket": "awscodepipeline-demo-bucket2",
-            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
-          },
-          "inputArtifacts": [],
-          "name": "Source",
-          "outputArtifacts": [
+    "pipeline": {
+        "artifactStore": {
+            "location": "codepipeline-us-east-1-11EXAMPLE11",
+            "type": "S3"
+        },
+        "name": "MyFirstPipeline",
+        "roleArn": "arn:aws:iam::123456789012:role/AWS-CodePipeline-Service",
+        "stages": [
             {
-              "name": "MyApp"
-            }
-          ],
-          "runOrder": 1
-        }
-      ],
-      "name": "Source"
-    },
-    {
-      "actions": [
-        {
-          "actionTypeId": {
-            "__type": "ActionTypeId",
-            "category": "Deploy",
-            "owner": "AWS",
-            "provider": "CodeDeploy",
-            "version": "1"
-          },
-          "configuration": {
-            "ApplicationName": "CodePipelineDemoApplication",
-            "DeploymentGroupName": "CodePipelineDemoFleet"
-          },
-          "inputArtifacts": [
+                "actions": [
+                    {
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "provider": "S3",
+                            "version": "1"
+                        },
+                        "configuration": {
+                            "S3Bucket": "awscodepipeline-demo-bucket2",
+                            "S3ObjectKey": "aws-codepipeline-s3-aws-codedeploy_linux.zip"
+                        },
+                        "inputArtifacts": [],
+                        "name": "Source",
+                        "outputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "runOrder": 1
+                    }
+                ],
+                "name": "Source"
+            },
             {
-              "name": "MyApp"
+                "actions": [
+                    {
+                        "actionTypeId": {
+                            "category": "Deploy",
+                            "owner": "AWS",
+                            "provider": "CodeDeploy",
+                            "version": "1"
+                        },
+                        "configuration": {
+                            "ApplicationName": "CodePipelineDemoApplication",
+                            "DeploymentGroupName": "CodePipelineDemoFleet"
+                        },
+                        "inputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ],
+                        "name": "CodePipelineDemoFleet",
+                        "outputArtifacts": [],
+                        "runOrder": 1
+                    }
+                ],
+                "name": "Beta"
             }
-          ],
-          "name": "CodePipelineDemoFleet",
-          "outputArtifacts": [],
-          "runOrder": 1
-        }
-      ],
-      "name": "Beta"
+        ],
+        "version": 3
     }
-  ],
-  "version": 3
- }
 }
 ```
+For more information, see [Edit a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-edit.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [UpdatePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/update-pipeline.html) in *AWS CLI Command Reference*.

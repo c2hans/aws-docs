@@ -28,6 +28,7 @@ Output:
     "hooksNotCleanedUp": []
 }
 ```
+For more information, see [Delete a deployment group with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-delete.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeleteDeploymentGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/delete-deployment-group.html) in *AWS CLI Command Reference*.
 
 ------

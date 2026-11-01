@@ -14,8 +14,8 @@ Manage users in the account. Users are human identities (as opposed to programma
 + [UpdateUser](#acxd-users-updateuser)
 + [DeleteUser](#acxd-users-deleteuser)
 + [Request Parameters](#acxd-users-request-parameters)
-+ [User Role Assignment](#acxd-users-user-role-assignment)
-+ [Default Role](#acxd-users-default-role)
++ [User role assignment](#acxd-users-user-role-assignment)
++ [Default role](#acxd-users-default-role)
 
 ## ListUsers
 <a name="acxd-users-listusers"></a>
@@ -374,7 +374,7 @@ Pagination token. See Common Types.
 Type: Integer
 Max items per page (1–100). See Common Types.
 
-## User Role Assignment
+## User role assignment
 <a name="acxd-users-user-role-assignment"></a>
 
 | Field | Type | Required |
@@ -395,7 +395,7 @@ Pre-defined role name. One of: `administrator`, `developer`, `contentManager`, `
 Type: String
 Custom role ID (alternative to `role`). Created via the Roles API.
 
-## Default Role
+## Default role
 <a name="acxd-users-default-role"></a>
 
 The fallback role applied when the user accesses a workspace without a specific role assignment.

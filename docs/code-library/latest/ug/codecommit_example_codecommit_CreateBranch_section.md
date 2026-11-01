@@ -14,17 +14,16 @@ The following code examples show how to use `CreateBranch`.
 
 **AWS CLI**
 **To create a branch**
-This example creates a branch in an AWS CodeCommit repository. This command produces output only if there are errors.
-Command:
+The following `create-branch` example creates a branch in an AWS CodeCommit repository.
 
 ```
-aws codecommit create-branch --repository-name {{MyDemoRepo}} --branch-name {{MyNewBranch}} --commit-id {{317f8570EXAMPLE}}
+aws codecommit create-branch \
+    --repository-name {{MyDemoRepo}} \
+    --branch-name {{MyNewBranch}} \
+    --commit-id {{317f8570EXAMPLE}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Create a branch in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-branch.html#how-to-create-branch-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [CreateBranch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/create-branch.html) in *AWS CLI Command Reference*.
 
 ------

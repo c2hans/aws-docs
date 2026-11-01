@@ -177,6 +177,12 @@ Type: String
 Valid Values: `ebs | instance-store`
 Required: No
 
+ ** scanResults **
+The Amazon Inspector scan results for the AMI. This information is present only for AMIs that Amazon Inspector has scanned.
+When you share an AMI with other accounts, organizations, or organizational units (OUs), or make it public, its scan results are available to the accounts that can use the AMI.
+Type: [ScanResults](API_ScanResults.md) object
+Required: No
+
  ** sourceImageId **
 The ID of the source AMI from which the AMI was created.
 The ID only appears if the AMI was created using [CreateImage](API_CreateImage.md), [CopyImage](API_CopyImage.md), or [CreateRestoreImageTask](API_CreateRestoreImageTask.md). The ID does not appear if the AMI was created using any other API. For some older AMIs, the ID might not be available. For more information, see [Identify the source AMI used to create a new Amazon EC2 AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/identify-source-ami-used-to-create-new-ami.html) in the *Amazon EC2 User Guide*.

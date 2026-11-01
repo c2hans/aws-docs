@@ -132,7 +132,7 @@ Output:
         },
         "Type": "DNS_HTTP",
         "CreateDate": "2025-08-18T13:45:31.023000-05:00",
-        "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreatedByAccount": "123456789012"
     }
 }
@@ -169,7 +169,7 @@ Output:
         },
         "Type": "DNS_HTTP",
         "CreateDate": "2025-08-18T13:45:31.023000-05:00",
-        "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreatedByAccount": "123456789012"
     }
 }
@@ -194,7 +194,7 @@ Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation`. For more information, see [get-operation](https://docs.aws.amazon.com/cli/latest/reference/servicediscovery/get-operation.html) .
@@ -210,7 +210,7 @@ Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Deleting an AWS Cloud Map namespace](https://docs.aws.amazon.com/cloud-map/latest/dg/deleting-namespaces.html) in the *AWS Cloud Map Developer Guide*.
@@ -430,7 +430,7 @@ The following `get-instance` example gets the attributes of a service.
 
 ```
 aws servicediscovery get-instance \
-    --service-id {{srv-e4anhexample0004}}
+    --service-id {{srv-e4anhexample0004}} \
     --instance-id {{i-abcd1234}}
 ```
 Output:
@@ -439,7 +439,7 @@ Output:
 {
     "ResourceOwner": "123456789012",
     "Instance": {
-        "Id": "arn:aws:servicediscovery:us-west-2:111122223333;:service/srv-e4anhexample0004",
+        "Id": "arn:aws:servicediscovery:us-west-2:123456789012;:service/srv-e4anhexample0004",
         "Attributes": {
             "AWS_INSTANCE_IPV4": "192.0.2.44",
             "AWS_INSTANCE_PORT": "80",
@@ -553,7 +553,7 @@ Output:
             }
         },
         "CreateDate": "2024-02-23T13:35:21.874000-06:00",
-        "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -583,7 +583,7 @@ Output:
             }
         },
         "CreateDate": "2024-02-23T13:35:21.874000-06:00",
-        "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -724,7 +724,7 @@ Output:
         "DnsConfig": {},
         "Type": "HTTP",
         "CreateDate": "2025-08-18T13:53:02.775000-05:00",
-        "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreatedByAccount": "123456789012"
     }
 }
@@ -750,7 +750,7 @@ Output:
         "DnsConfig": {},
         "Type": "HTTP",
         "CreateDate": "2025-08-18T13:53:02.775000-05:00",
-        "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreatedByAccount": "123456789111"
     }
 }
@@ -854,7 +854,7 @@ Output:
                 },
                 "HttpProperties": {
                     "HttpName": "local"
-                 }
+                }
             },
             "CreateDate": "2023-07-17T13:37:27.872000-05:00"
         },
@@ -1004,12 +1004,10 @@ Output:
             "Arn": "arn:aws:servicediscovery:us-west-2:123456789111:service/srv-abcd1234xmpl5678",
             "ResourceOwner": "123456789111",
             "Name": "shared-service",
-            "NamespaceId": "ns-abcd1234xmpl5678",
             "Type": "HTTP",
             "Description": "Service in shared namespace",
             "DnsConfig": {},
             "CreateDate": "2025-01-13T13:35:21.874000-06:00",
-            "CreatorRequestId": "abcd1234-5678-90ab-cdef-xmpl12345678",
             "CreatedByAccount": "123456789012"
         }
     ]
@@ -1141,14 +1139,14 @@ The following `update-http-namespace` example updates the specified HTTP namespa
 ```
 aws servicediscovery update-http-namespace \
     --id {{ns-abcd1234xmpl5678}} \
-    --updater-request-id {{abcd1234-5678-90ab-cdef-xmpl12345678}} \
+    --updater-request-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --namespace Description="The updated namespace description."
 ```
 Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation`. For more information, see [get-operation](https://docs.aws.amazon.com/cli/latest/reference/servicediscovery/get-operation.html) .
@@ -1159,14 +1157,14 @@ The following `update-http-namespace` example updates the specified HTTP namespa
 ```
 aws servicediscovery update-http-namespace \
     --id {{arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-abcd1234xmpl5678}} \
-    --updater-request-id {{abcd1234-5678-90ab-cdef-xmpl12345678}} \
+    --updater-request-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --namespace Description="The updated namespace description."
 ```
 Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/working-with-namespaces.html) in the *AWS Cloud Map Developer Guide*.
@@ -1214,14 +1212,14 @@ The following `update-private-dns-namespace` example updates the description of 
 ```
 aws servicediscovery update-private-dns-namespace \
     --id {{ns-abcd1234xmpl5678}} \
-    --updater-request-id {{abcd1234-5678-90ab-cdef-xmpl12345678}} \
+    --updater-request-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --namespace Description="The updated namespace description."
 ```
 Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation`.
@@ -1232,14 +1230,14 @@ The following `update-private-dns-namespace` example updates a private DNS names
 ```
 aws servicediscovery update-private-dns-namespace \
     --id {{arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-abcd1234xmpl5678}} \
-    --updater-request-id {{abcd1234-5678-90ab-cdef-xmpl12345678}} \
+    --updater-request-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --namespace Description="The updated namespace description."
 ```
 Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/working-with-namespaces.html) in the *AWS Cloud Map Developer Guide*.
@@ -1257,14 +1255,14 @@ The following `update-public-dns-namespace` example updates the description of a
 ```
 aws servicediscovery update-public-dns-namespace \
     --id {{ns-abcd1234xmpl5678}} \
-    --updater-request-id {{abcd1234-5678-90ab-cdef-xmpl12345678}} \
+    --updater-request-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --namespace Description="The updated namespace description."
 ```
 Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation`.
@@ -1275,14 +1273,14 @@ The following `update-public-dns-namespace` example updates a public DNS namespa
 ```
 aws servicediscovery update-public-dns-namespace \
     --id {{arn:aws:servicediscovery:us-west-2:123456789012:namespace/ns-abcd1234xmpl5678}} \
-    --updater-request-id {{abcd1234-5678-90ab-cdef-xmpl12345678}} \
+    --updater-request-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --namespace Description="The updated namespace description."
 ```
 Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/working-with-namespaces.html) in the *AWS Cloud Map Developer Guide*.
@@ -1334,7 +1332,7 @@ Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation`.
@@ -1351,7 +1349,7 @@ Output:
 
 ```
 {
-    "OperationId": "abcd1234-5678-90ab-cdef-xmpl12345678"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information about updating a service, see [Updating an AWS Cloud Map service](https://docs.aws.amazon.com/cloud-map/latest/dg/editing-services.html) and [Shared AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-namespaces.html) in the *AWS Cloud Map Developer Guide*.

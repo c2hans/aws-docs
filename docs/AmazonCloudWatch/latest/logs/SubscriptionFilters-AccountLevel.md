@@ -155,7 +155,7 @@ The following example uses an account-level subscription policy to forward all l
 
 1. After you set up the subscription filter, CloudWatch Logs forwards all the incoming log events that match the filter pattern and selection criteria to your stream.
 
-   The `selection-criteria` field is optional, but is important for excluding log groups that can cause an infinite log recursion from a subscription filter. For more information about this issue and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md). Currently, NOT IN is the only supported operator for `selection-criteria`.
+   The `selection-criteria` field is optional, but is important for excluding log groups that can cause an infinite log recursion from a subscription filter. For more information about this issue and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md). Currently, NOT IN is the only supported operator for `selection-criteria`. Selection criteria has a size limit of 25 KB (25,600 bytes).
 
    You can verify that the flow of log events by by using a Amazon Kinesis Data Streams shard iterator and using the Amazon Kinesis Data Streams `get-records` command to fetch some Amazon Kinesis Data Streams records::
 
@@ -300,7 +300,7 @@ Before you create the Lambda function, calculate the volume of log data that wil
 
    After you set up the subscription filter, CloudWatch Logs forwards all the incoming log events that match the filter pattern and selection criteria to your stream.
 
-   The `selection-criteria` field is optional, but is important for excluding log groups that can cause an infinite log recursion from a subscription filter. For more information about this issue and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md). Currently, NOT IN is the only supported operator for `selection-criteria`.
+   The `selection-criteria` field is optional, but is important for excluding log groups that can cause an infinite log recursion from a subscription filter. For more information about this issue and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md). Currently, NOT IN is the only supported operator for `selection-criteria`. Selection criteria has a size limit of 25 KB (25,600 bytes).
 
 1. (Optional) Test using a sample log event. At a command prompt, run the following command, which will put a simple log message into the subscribed stream.
 
@@ -592,7 +592,7 @@ Before you create the Firehose stream, calculate the volume of log data that wil
 
 1. After you set up the subscription filter, CloudWatch Logs forwards the incoming log events that match the filter pattern to your Amazon Data Firehose delivery stream.
 
-   The `selection-criteria` field is optional, but is important for excluding log groups that can cause an infinite log recursion from a subscription filter. For more information about this issue and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md). Currently, NOT IN is the only supported operator for `selection-criteria`.
+   The `selection-criteria` field is optional, but is important for excluding log groups that can cause an infinite log recursion from a subscription filter. For more information about this issue and determining which log groups to exclude, see [Log recursion prevention](Subscriptions-recursion-prevention.md). Currently, NOT IN is the only supported operator for `selection-criteria`. Selection criteria has a size limit of 25 KB (25,600 bytes).
 
    Your data will start appearing in your Amazon S3 based on the time buffer interval set on your Amazon Data Firehose delivery stream. Once enough time has passed, you can verify your data by checking your Amazon S3 Bucket.
 

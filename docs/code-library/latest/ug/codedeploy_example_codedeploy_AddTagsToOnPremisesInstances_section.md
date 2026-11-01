@@ -22,6 +22,7 @@ aws deploy add-tags-to-on-premises-instances \
     --tags {{Key=Name,Value=CodeDeployDemo-OnPrem}}
 ```
 This command produces no output.
+For more information, see [Tagging instances for deployment groups in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-tagging.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [AddTagsToOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/add-tags-to-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ------

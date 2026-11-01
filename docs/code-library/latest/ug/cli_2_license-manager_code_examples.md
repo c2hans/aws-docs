@@ -29,7 +29,8 @@ The following code example shows how to use `create-license-configuration`.
 The following `create-license-configuration` example creates a license configuration with a hard limit of 10 cores.
 
 ```
-aws license-manager create-license-configuration --name {{my-license-configuration}} \
+aws license-manager create-license-configuration \
+    --name {{my-license-configuration}} \
     --license-counting-type {{Core}} \
     --license-count {{10}} \
     --license-count-hard-limit
@@ -38,14 +39,16 @@ Output:
 
 ```
 {
-  "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba41EXAMPLE1111"
+    "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba41EXAMPLE1111"
 }
 ```
+For more information, see [Create a self-managed license in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/create-license-configuration.html) in the *AWS License Manager User Guide*.
 **Example 2: To create a license configuration**
 The following `create-license-configuration` example creates a license configuration with a soft limit of 100 vCPUs. It uses a rule to enable vCPU optimization.
 
 ```
-aws license-manager create-license-configuration --name {{my-license-configuration}}
+aws license-manager create-license-configuration \
+    --name {{my-license-configuration}} \
     --license-counting-type {{vCPU}} \
     --license-count {{100}} \
     --license-rules {{"#honorVcpuOptimization=true"}}
@@ -54,9 +57,10 @@ Output:
 
 ```
 {
-  "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba41EXAMPLE2222"
+    "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba41EXAMPLE2222"
 }
 ```
+For more information, see [Create a self-managed license in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/create-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [CreateLicenseConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/create-license-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-license-configuration`
@@ -73,6 +77,7 @@ aws license-manager delete-license-configuration \
     --license-configuration-arn {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Delete a self-managed license in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/delete-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [DeleteLicenseConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/delete-license-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-license-configuration`
@@ -135,6 +140,7 @@ Output:
     ]
 }
 ```
+For more information, see [View self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/view-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [GetLicenseConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/get-license-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-service-settings`
@@ -150,6 +156,7 @@ The following `get-service-settings` example displays the service settings for L
 aws license-manager get-service-settings
 ```
 The following shows example output if cross-account resource discovery is disabled.
+Output:
 
 ```
 {
@@ -160,6 +167,7 @@ The following shows example output if cross-account resource discovery is disabl
 }
 ```
 The following shows example output if cross-account resource discovery is enabled.
+Output:
 
 ```
 {
@@ -170,6 +178,7 @@ The following shows example output if cross-account resource discovery is enable
     "EnableCrossAccountsDiscovery": true
 }
 ```
+For more information, see [Settings in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/settings.html) in the *AWS License Manager User Guide*.
 +  For API details, see [GetServiceSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/get-service-settings.html) in *AWS CLI Command Reference*.
 
 ### `list-associations-for-license-configuration`
@@ -205,6 +214,7 @@ Output:
     ]
 }
 ```
+For more information, see [View self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/view-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [ListAssociationsForLicenseConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/list-associations-for-license-configuration.html) in *AWS CLI Command Reference*.
 
 ### `list-license-configurations`
@@ -267,13 +277,11 @@ Output:
                     "AssociationCount": 0
                 }
             ]
-        },
-        {
-            ...
         }
     ]
 }
 ```
+For more information, see [View self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/view-license-configuration.html) in the *AWS License Manager User Guide*.
 **Example 2: To list a specific license configuration**
 The following `list-license-configurations` example lists only the specified license configuration.
 
@@ -281,6 +289,39 @@ The following `list-license-configurations` example lists only the specified lic
 aws license-manager list-license-configurations \
     --license-configuration-arns {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-38b658717b87478aaa7c00883EXAMPLE}}
 ```
+Output:
+
+```
+{
+    "LicenseConfigurations": [
+        {
+            "LicenseConfigurationId": "lic-38b658717b87478aaa7c00883EXAMPLE",
+            "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-38b658717b87478aaa7c00883EXAMPLE",
+            "Name": "my-license-configuration",
+            "LicenseCountingType": "vCPU",
+            "LicenseRules": [],
+            "LicenseCount": 10,
+            "LicenseCountHardLimit": false,
+            "ConsumedLicenses": 0,
+            "Status": "AVAILABLE",
+            "OwnerAccountId": "123456789012",
+            "ConsumedLicenseSummaryList": [
+                {
+                    "ResourceType": "EC2_INSTANCE",
+                    "ConsumedLicenses": 0
+                }
+            ],
+            "ManagedResourceSummaryList": [
+                {
+                    "ResourceType": "EC2_INSTANCE",
+                    "AssociationCount": 0
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [View self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/view-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [ListLicenseConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/list-license-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-license-specifications-for-resource`
@@ -300,9 +341,14 @@ Output:
 
 ```
 {
-    "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-38b658717b87478aaa7c00883EXAMPLE"
+    "LicenseSpecifications": [
+        {
+            "LicenseConfigurationArn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-38b658717b87478aaa7c00883EXAMPLE"
+        }
+    ]
 }
 ```
+For more information, see [Self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/license-configurations.html) in the *AWS License Manager User Guide*.
 +  For API details, see [ListLicenseSpecificationsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/list-license-specifications-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-inventory`
@@ -349,6 +395,7 @@ Output:
     ]
 }
 ```
+For more information, see [Inventory search in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/inventory.html) in the *AWS License Manager User Guide*.
 +  For API details, see [ListResourceInventory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/list-resource-inventory.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -376,6 +423,7 @@ Output:
     ]
 }
 ```
+For more information, see [Self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/license-configurations.html) in the *AWS License Manager User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-usage-for-license-configuration`
@@ -407,6 +455,7 @@ Output:
     ]
 }
 ```
+For more information, see [View self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/view-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [ListUsageForLicenseConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/list-usage-for-license-configuration.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -424,6 +473,7 @@ aws license-manager tag-resource \
     --resource-arn {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/license-configurations.html) in the *AWS License Manager User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -441,6 +491,7 @@ aws license-manager untag-resource \
     --resource-arn {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/license-configurations.html) in the *AWS License Manager User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-license-configuration`
@@ -455,17 +506,19 @@ The following `update-license-configuration` example updates the specified licen
 ```
 aws license-manager update-license-configuration \
     --no-license-count-hard-limit \
-    --license-configuration-arn {{arn:aws:license-manager:us-west-2:880185128111:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
+    --license-configuration-arn {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Edit a self-managed license in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/modify-license-configuration.html) in the *AWS License Manager User Guide*.
 The following `update-license-configuration` example updates the specified license configuration to change its status to `DISABLED`.
 
 ```
 aws license-manager update-license-configuration \
-    --license-configuration-status {{DISABLED}}
-    --license-configuration-arn {{arn:aws:license-manager:us-west-2:880185128111:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
+    --license-configuration-status {{DISABLED}} \
+    --license-configuration-arn {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-6eb6586f508a786a2ba4f56c1EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Deactivate a self-managed license in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/deactivate-license-configuration.html) in the *AWS License Manager User Guide*.
 +  For API details, see [UpdateLicenseConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/update-license-configuration.html) in *AWS CLI Command Reference*.
 
 ### `update-license-specifications-for-resource`
@@ -484,6 +537,7 @@ aws license-manager update-license-specifications-for-resource \
     --add-license-specifications {{LicenseConfigurationArn=arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-42b6deb06e5399a980d555927EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Self-managed licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/license-configurations.html) in the *AWS License Manager User Guide*.
 +  For API details, see [UpdateLicenseSpecificationsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/update-license-specifications-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-service-settings`
@@ -502,4 +556,5 @@ aws license-manager update-service-settings \
     --s3-bucket-arn {{arn:aws:s3:::aws-license-manager-service-abcd1234EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Settings in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/settings.html) in the *AWS License Manager User Guide*.
 +  For API details, see [UpdateServiceSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/license-manager/update-service-settings.html) in *AWS CLI Command Reference*.

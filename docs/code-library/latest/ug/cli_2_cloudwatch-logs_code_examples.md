@@ -25,11 +25,15 @@ Each example includes a link to the complete source code, where you can find ins
 The following code example shows how to use `create-log-group`.
 
 **AWS CLI**
-The following command creates a log group named `my-logs`:
+**To create a log group**
+The following `create-log-group` example creates a log group named `my-logs`.
 
 ```
-aws logs create-log-group --log-group-name {{my-logs}}
+aws logs create-log-group \
+    --log-group-name {{my-logs}}
 ```
+This command produces no output.
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [CreateLogGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/create-log-group.html) in *AWS CLI Command Reference*.
 
 ### `create-log-stream`
@@ -38,11 +42,16 @@ aws logs create-log-group --log-group-name {{my-logs}}
 The following code example shows how to use `create-log-stream`.
 
 **AWS CLI**
-The following command creates a log stream named `20150601` in the log group `my-logs`:
+**To create a log stream**
+The following `create-log-stream` example creates a log stream named `20150601` in the log group `my-logs`.
 
 ```
-aws logs create-log-stream --log-group-name {{my-logs}} --log-stream-name {{20150601}}
+aws logs create-log-stream \
+    --log-group-name {{my-logs}} \
+    --log-stream-name {{20150601}}
 ```
+This command produces no output.
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [CreateLogStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/create-log-stream.html) in *AWS CLI Command Reference*.
 
 ### `delete-log-group`
@@ -51,11 +60,15 @@ aws logs create-log-stream --log-group-name {{my-logs}} --log-stream-name {{2015
 The following code example shows how to use `delete-log-group`.
 
 **AWS CLI**
-The following command deletes a log group named `my-logs`:
+**To delete a log group**
+The following `delete-log-group` example deletes a log group named `my-logs`.
 
 ```
-aws logs delete-log-group --log-group-name {{my-logs}}
+aws logs delete-log-group \
+    --log-group-name {{my-logs}}
 ```
+This command produces no output.
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [DeleteLogGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/delete-log-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-log-stream`
@@ -64,11 +77,16 @@ aws logs delete-log-group --log-group-name {{my-logs}}
 The following code example shows how to use `delete-log-stream`.
 
 **AWS CLI**
-The following command deletes a log stream named `20150531` from a log group named `my-logs`:
+**To delete a log stream**
+The following `delete-log-stream` example deletes a log stream named `20150531` from a log group named `my-logs`.
 
 ```
-aws logs delete-log-stream --log-group-name {{my-logs}} --log-stream-name {{20150531}}
+aws logs delete-log-stream \
+    --log-group-name {{my-logs}} \
+    --log-stream-name {{20150531}}
 ```
+This command produces no output.
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [DeleteLogStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/delete-log-stream.html) in *AWS CLI Command Reference*.
 
 ### `delete-retention-policy`
@@ -77,11 +95,15 @@ aws logs delete-log-stream --log-group-name {{my-logs}} --log-stream-name {{2015
 The following code example shows how to use `delete-retention-policy`.
 
 **AWS CLI**
-The following command removes the retention policy that has previously been applied to a log group named `my-logs`:
+**To delete the retention policy of a log group**
+The following `delete-retention-policy` example removes the retention policy that has previously been applied to a log group named `my-logs`.
 
 ```
-aws logs delete-retention-policy --log-group-name {{my-logs}}
+aws logs delete-retention-policy \
+    --log-group-name {{my-logs}}
 ```
+This command produces no output.
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [DeleteRetentionPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/delete-retention-policy.html) in *AWS CLI Command Reference*.
 
 ### `describe-log-groups`
@@ -90,10 +112,12 @@ aws logs delete-retention-policy --log-group-name {{my-logs}}
 The following code example shows how to use `describe-log-groups`.
 
 **AWS CLI**
-The following command describes a log group named `my-logs`:
+**To describe a log group**
+The following `describe-log-groups` example describes a log group named `my-logs`.
 
 ```
-aws logs describe-log-groups --log-group-name-prefix {{my-logs}}
+aws logs describe-log-groups \
+    --log-group-name-prefix {{my-logs}}
 ```
 Output:
 
@@ -111,6 +135,7 @@ Output:
     ]
 }
 ```
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [DescribeLogGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/describe-log-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-log-streams`
@@ -119,10 +144,13 @@ Output:
 The following code example shows how to use `describe-log-streams`.
 
 **AWS CLI**
-The following command shows all log streams starting with the prefix `2015` in the log group `my-logs`:
+**To describe the log streams in a log group**
+The following `describe-log-streams` example shows all log streams starting with the prefix `2015` in the log group `my-logs`.
 
 ```
-aws logs describe-log-streams --log-group-name {{my-logs}} --log-stream-name-prefix {{2015}}
+aws logs describe-log-streams \
+    --log-group-name {{my-logs}} \
+    --log-stream-name-prefix {{2015}}
 ```
 Output:
 
@@ -144,6 +172,7 @@ Output:
     ]
 }
 ```
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [DescribeLogStreams](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/describe-log-streams.html) in *AWS CLI Command Reference*.
 
 ### `get-log-events`
@@ -152,10 +181,13 @@ Output:
 The following code example shows how to use `get-log-events`.
 
 **AWS CLI**
-The following command retrieves log events from a log stream named `20150601` in the log group `my-logs`:
+**To get log events from a log stream**
+The following `get-log-events` example retrieves log events from a log stream named `20150601` in the log group `my-logs`.
 
 ```
-aws logs get-log-events --log-group-name {{my-logs}} --log-stream-name {{20150601}}
+aws logs get-log-events \
+    --log-group-name {{my-logs}} \
+    --log-stream-name {{20150601}}
 ```
 Output:
 
@@ -182,6 +214,7 @@ Output:
     "nextBackwardToken": "b/31961209122358285602261756944988674324553373268216709120"
 }
 ```
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#ViewingLogData) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [GetLogEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/get-log-events.html) in *AWS CLI Command Reference*.
 
 ### `put-log-events`
@@ -190,10 +223,32 @@ Output:
 The following code example shows how to use `put-log-events`.
 
 **AWS CLI**
-The following command puts log events to a log stream named `20150601` in the log group `my-logs`:
+**To put log events into a log stream**
+The following `put-log-events` example puts log events to a log stream named `20150601` in the log group `my-logs`. The command reads a JSON array of events from a file named `events` in the current directory.
 
 ```
-aws logs put-log-events --log-group-name {{my-logs}} --log-stream-name {{20150601}} --log-events {{file://events}}
+aws logs put-log-events \
+    --log-group-name {{my-logs}} \
+    --log-stream-name {{20150601}} \
+    --log-events {{file://events}}
+```
+Contents of `events`:
+
+```
+[
+    {
+        "timestamp": 1433190184356,
+        "message": "Example Event 1"
+    },
+    {
+        "timestamp": 1433190184358,
+        "message": "Example Event 2"
+    },
+    {
+        "timestamp": 1433190184360,
+        "message": "Example Event 3"
+    }
+]
 ```
 Output:
 
@@ -202,28 +257,28 @@ Output:
     "nextSequenceToken": "49542672486831074009579604567656788214806863282469607346"
 }
 ```
-The above example reads a JSON array of events from a file named `events` in the current directory:
+Each subsequent call requires the next sequence token provided by the previous call to be specified with the sequence token option.
+
+```
+aws logs put-log-events \
+    --log-group-name {{my-logs}} \
+    --log-stream-name {{20150601}} \
+    --log-events {{file://events2}} \
+    --sequence-token {{"49542672486831074009579604567656788214806863282469607346"}}
+```
+Contents of `events2`:
 
 ```
 [
-  {
-    "timestamp": 1433190184356,
-    "message": "Example Event 1"
-  },
-  {
-    "timestamp": 1433190184358,
-    "message": "Example Event 2"
-  },
-  {
-    "timestamp": 1433190184360,
-    "message": "Example Event 3"
-  }
+    {
+        "timestamp": 1433190184362,
+        "message": "Example Event 4"
+    },
+    {
+        "timestamp": 1433190184364,
+        "message": "Example Event 5"
+    }
 ]
-```
-Each subsequent call requires the next sequence token provided by the previous call to be specified with the sequence token option:
-
-```
-aws logs put-log-events --log-group-name {{my-logs}} --log-stream-name {{20150601}} --log-events {{file://events2}} --sequence-token {{"49542672486831074009579604567656788214806863282469607346"}}
 ```
 Output:
 
@@ -232,6 +287,7 @@ Output:
     "nextSequenceToken": "49542672486831074009579604567900991230369019956308219826"
 }
 ```
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [PutLogEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/put-log-events.html) in *AWS CLI Command Reference*.
 
 ### `put-retention-policy`
@@ -240,11 +296,16 @@ Output:
 The following code example shows how to use `put-retention-policy`.
 
 **AWS CLI**
-The following command adds a 5 day retention policy to a log group named `my-logs`:
+**To set the retention policy of a log group**
+The following `put-retention-policy` example adds a 5 day retention policy to a log group named `my-logs`.
 
 ```
-aws logs put-retention-policy --log-group-name {{my-logs}} --retention-in-days {{5}}
+aws logs put-retention-policy \
+    --log-group-name {{my-logs}} \
+    --retention-in-days {{5}}
 ```
+This command produces no output.
+For more information, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [PutRetentionPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/put-retention-policy.html) in *AWS CLI Command Reference*.
 
 ### `start-live-tail`
@@ -253,15 +314,27 @@ aws logs put-retention-policy --log-group-name {{my-logs}} --retention-in-days {
 The following code example shows how to use `start-live-tail`.
 
 **AWS CLI**
-The following command starts a Live Tail session on a log group named `my-logs`:
+**To start a Live Tail session on a log group**
+The following `start-live-tail` example starts a Live Tail session on a log group named `my-logs`.
 
 ```
-aws logs start-live-tail --log-group-identifiers {{arn:aws:logs:us-east-1:111111222222:log-group:my-logs}}
+aws logs start-live-tail \
+    --log-group-identifiers {{arn:aws:logs:us-west-2:123456789012:log-group:my-logs}}
 ```
-The following command starts a Live Tail session on a log group named `my-logs` in interactive mode:
+Output:
 
 ```
-aws logs start-live-tail --log-group-identifiers {{arn:aws:logs:us-east-1:111111222222:log-group:my-logs}} --mode {{interactive}}
+INFO Processing request a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
+INFO Request a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 completed in 120 ms
 ```
+The following command starts a Live Tail session on a log group named `my-logs` in interactive mode.
+
+```
+aws logs start-live-tail \
+    --log-group-identifiers {{arn:aws:logs:us-west-2:123456789012:log-group:my-logs}} \
+    --mode {{interactive}}
+```
+This command produces no output. It displays an interactive Live Tail session in the terminal.
 In interactive mode you can highlight as many as five terms in the tailed logs. The severity codes are highlighted by default. Press `h` to enter the highlight mode and then type in the terms to be highlighted, one at a time, and press enter. Press `c` to clear the highlighted term(s). Press `t` to toggle formatting between JSON/Plain text. Press `Esc` to exit the Live Tail session. Press `up` / `down` keys to scroll up or down between log events, use `Ctrl + u` / `Ctrl + d` to scroll faster. Press `q` to scroll to latest log events.
+For more information, see [Troubleshoot with CloudWatch Logs Live Tail](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs_LiveTail.html) in the *Amazon CloudWatch Logs User Guide*.
 +  For API details, see [StartLiveTail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/logs/start-live-tail.html) in *AWS CLI Command Reference*.

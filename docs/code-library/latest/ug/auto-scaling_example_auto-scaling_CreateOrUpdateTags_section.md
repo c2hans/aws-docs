@@ -14,7 +14,7 @@ The following code examples show how to use `CreateOrUpdateTags`.
 
 **AWS CLI**
 **To create or update tags for an Auto Scaling group**
-This example adds two tags to the specified Auto Scaling group.
+The following `create-or-update-tags` example adds two tags to the specified Auto Scaling group.
 
 ```
 aws autoscaling create-or-update-tags \

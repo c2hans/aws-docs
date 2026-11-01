@@ -31,11 +31,11 @@ The following `cancel-job` example cancels the job with ID `1234567891234-abc123
 ```
 aws mediaconvert cancel-job \
     --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
-    --region {{region-name-1}} \
     --id {{1234567891234-abc123}}
 ```
+This command produces no output.
 To get your account-specific endpoint, use `describe-endpoints`, or send the command without the endpoint. The service returns an error and your endpoint.
-For more information, see [Working with AWS Elemental MediaConvert Jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
+For more information, see [Working with jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [CancelJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/cancel-job.html) in *AWS CLI Command Reference*.
 
 ### `create-job-template`
@@ -50,14 +50,138 @@ The following `create-job-template` example creates a job template with the tran
 ```
 aws mediaconvert create-job-template \
     --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
-    --region {{region-name-1}} \
     --name {{JobTemplate1}} \
     --cli-input-json {{file://~/job-template.json}}
+```
+Contents of `job-template.json`:
+
+```
+{
+    "Description": "Job template that creates an MP4 output with H.264 video and AAC audio",
+    "Settings": {
+        "TimecodeConfig": {
+            "Source": "ZEROBASED"
+        },
+        "Inputs": [
+            {
+                "AudioSelectors": {
+                    "Audio Selector 1": {
+                        "DefaultSelection": "DEFAULT"
+                    }
+                },
+                "VideoSelector": {},
+                "TimecodeSource": "ZEROBASED"
+            }
+        ],
+        "OutputGroups": [
+            {
+                "Name": "File Group",
+                "OutputGroupSettings": {
+                    "Type": "FILE_GROUP_SETTINGS",
+                    "FileGroupSettings": {
+                        "Destination": "s3://amzn-s3-demo-bucket/output/"
+                    }
+                },
+                "Outputs": [
+                    {
+                        "ContainerSettings": {
+                            "Container": "MP4"
+                        },
+                        "VideoDescription": {
+                            "CodecSettings": {
+                                "Codec": "H_264",
+                                "H264Settings": {
+                                    "RateControlMode": "QVBR",
+                                    "MaxBitrate": 5000000,
+                                    "SceneChangeDetect": "TRANSITION_DETECTION",
+                                    "QualityTuningLevel": "SINGLE_PASS"
+                                }
+                            }
+                        },
+                        "AudioDescriptions": [
+                            {
+                                "CodecSettings": {
+                                    "Codec": "AAC",
+                                    "AacSettings": {
+                                        "Bitrate": 96000,
+                                        "CodingMode": "CODING_MODE_2_0",
+                                        "SampleRate": 48000
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
 ```
 If you create your job template JSON file by using `get-job-template` and then modifying the file, remove the `JobTemplate` object, but keep the Settings child object inside it. Also, make sure to remove the following key-value pairs: `LastUpdated`, `Arn`, `Type`, and `CreatedAt`. You can specific the category, description, name, and queue either in the JSON file or at the command line.
 To get your account-specific endpoint, use `describe-endpoints`, or send the command without the endpoint. The service returns an error and your endpoint.
 If your request is successful, the service returns the JSON specification for the job template that you created.
-For more information, see [Working with AWS Elemental MediaConvert Job Templates](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-job-templates.html) in the *AWS Elemental MediaConvert User Guide*.
+Output:
+
+```
+{
+    "JobTemplate": {
+        "Arn": "arn:aws:mediaconvert:region-name-1:123456789012:jobTemplates/JobTemplate1",
+        "CreatedAt": "2024-04-01T17:20:31+00:00",
+        "LastUpdated": "2024-04-01T17:20:31+00:00",
+        "Name": "JobTemplate1",
+        "Priority": 0,
+        "Settings": {
+            "OutputGroups": [
+                {
+                    "Name": "File Group",
+                    "OutputGroupSettings": {
+                        "Type": "FILE_GROUP_SETTINGS",
+                        "FileGroupSettings": {}
+                    },
+                    "Outputs": [
+                        {
+                            "ContainerSettings": {
+                                "Container": "MP4",
+                                "Mp4Settings": {
+                                    "CslgAtom": "INCLUDE",
+                                    "FreeSpaceBox": "EXCLUDE",
+                                    "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                                }
+                            },
+                            "VideoDescription": {
+                                "Width": 1920,
+                                "Height": 1080,
+                                "CodecSettings": {
+                                    "Codec": "H_264",
+                                    "H264Settings": {
+                                        "MaxBitrate": 10000000,
+                                        "RateControlMode": "QVBR"
+                                    }
+                                }
+                            },
+                            "AudioDescriptions": [
+                                {
+                                    "CodecSettings": {
+                                        "Codec": "AAC",
+                                        "AacSettings": {
+                                            "Bitrate": 96000,
+                                            "CodingMode": "CODING_MODE_2_0",
+                                            "SampleRate": 48000
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "StatusUpdateInterval": "SECONDS_60",
+        "Type": "CUSTOM"
+    }
+}
+```
+For more information, see [Working with job templates](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-job-templates.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [CreateJobTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/create-job-template.html) in *AWS CLI Command Reference*.
 
 ### `create-job`
@@ -72,13 +196,151 @@ The following `create-job` example creates a transcoding job with the settings t
 ```
 aws mediaconvert create-job \
     --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
-    --region {{region-name-1}} \
     --cli-input-json {{file://~/job.json}}
+```
+Contents of `job.json`:
+
+```
+{
+    "Role": "arn:aws:iam::123456789012:role/MediaConvert_Default_Role",
+    "Settings": {
+        "TimecodeConfig": {
+            "Source": "ZEROBASED"
+        },
+        "Inputs": [
+            {
+                "FileInput": "s3://amzn-s3-demo-bucket1/input/video.mp4",
+                "AudioSelectors": {
+                    "Audio Selector 1": {
+                        "DefaultSelection": "DEFAULT"
+                    }
+                },
+                "VideoSelector": {},
+                "TimecodeSource": "ZEROBASED"
+            }
+        ],
+        "OutputGroups": [
+            {
+                "Name": "File Group",
+                "OutputGroupSettings": {
+                    "Type": "FILE_GROUP_SETTINGS",
+                    "FileGroupSettings": {
+                        "Destination": "s3://amzn-s3-demo-bucket2/output/"
+                    }
+                },
+                "Outputs": [
+                    {
+                        "ContainerSettings": {
+                            "Container": "MP4"
+                        },
+                        "VideoDescription": {
+                            "CodecSettings": {
+                                "Codec": "H_264",
+                                "H264Settings": {
+                                    "RateControlMode": "QVBR",
+                                    "MaxBitrate": 5000000,
+                                    "SceneChangeDetect": "TRANSITION_DETECTION",
+                                    "QualityTuningLevel": "SINGLE_PASS"
+                                }
+                            }
+                        },
+                        "AudioDescriptions": [
+                            {
+                                "CodecSettings": {
+                                    "Codec": "AAC",
+                                    "AacSettings": {
+                                        "Bitrate": 96000,
+                                        "CodingMode": "CODING_MODE_2_0",
+                                        "SampleRate": 48000
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
 ```
 You can use the AWS Elemental MediaConvert console to generate the JSON job specification by choosing your job settings, and then choosing **Show job JSON** at the bottom of the **Job** section.
 To get your account-specific endpoint, use `describe-endpoints`, or send the command without the endpoint. The service returns an error and your endpoint.
 If your request is successful, the service returns the JSON job specification that you sent with your request.
-For more information, see [Working with AWS Elemental MediaConvert Jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
+Output:
+
+```
+{
+    "Job": {
+        "AccelerationStatus": "NOT_APPLICABLE",
+        "Arn": "arn:aws:mediaconvert:region-name-1:123456789012:jobs/1234567891234-abc123",
+        "CreatedAt": "2024-04-01T17:35:12+00:00",
+        "Id": "1234567891234-abc123",
+        "Priority": 0,
+        "Queue": "arn:aws:mediaconvert:region-name-1:123456789012:queues/Default",
+        "Role": "arn:aws:iam::123456789012:role/MediaConvertServiceRole",
+        "Settings": {
+            "Inputs": [
+                {
+                    "FileInput": "s3://amzn-s3-demo-bucket/input/file-name.mp4"
+                }
+            ],
+            "OutputGroups": [
+                {
+                    "Name": "File Group",
+                    "OutputGroupSettings": {
+                        "Type": "FILE_GROUP_SETTINGS",
+                        "FileGroupSettings": {
+                            "Destination": "s3://amzn-s3-demo-bucket/output/"
+                        }
+                    },
+                    "Outputs": [
+                        {
+                            "ContainerSettings": {
+                                "Container": "MP4",
+                                "Mp4Settings": {
+                                    "CslgAtom": "INCLUDE",
+                                    "FreeSpaceBox": "EXCLUDE",
+                                    "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                                }
+                            },
+                            "VideoDescription": {
+                                "Width": 1920,
+                                "Height": 1080,
+                                "CodecSettings": {
+                                    "Codec": "H_264",
+                                    "H264Settings": {
+                                        "MaxBitrate": 10000000,
+                                        "RateControlMode": "QVBR"
+                                    }
+                                }
+                            },
+                            "AudioDescriptions": [
+                                {
+                                    "CodecSettings": {
+                                        "Codec": "AAC",
+                                        "AacSettings": {
+                                            "Bitrate": 96000,
+                                            "CodingMode": "CODING_MODE_2_0",
+                                            "SampleRate": 48000
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Status": "SUBMITTED",
+        "StatusUpdateInterval": "SECONDS_60",
+        "Timing": {
+            "SubmitTime": "2024-04-01T17:35:12+00:00"
+        },
+        "UserMetadata": {}
+    }
+}
+```
+For more information, see [Working with jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [CreateJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/create-job.html) in *AWS CLI Command Reference*.
 
 ### `create-preset`
@@ -92,13 +354,94 @@ The following `create-preset` example creates a custom output preset based on th
 
 ```
 aws mediaconvert create-preset \
-    --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}}
-    --region {{region-name-1}} \
+    --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
     --cli-input-json {{file://~/preset.json}}
+```
+Contents of `preset.json`:
+
+```
+{
+    "Name": "SimpleMP4",
+    "Description": "MP4 output with H.264 video and AAC audio",
+    "Settings": {
+        "ContainerSettings": {
+            "Container": "MP4"
+        },
+        "VideoDescription": {
+            "CodecSettings": {
+                "Codec": "H_264",
+                "H264Settings": {
+                    "RateControlMode": "QVBR",
+                    "MaxBitrate": 5000000,
+                    "SceneChangeDetect": "TRANSITION_DETECTION",
+                    "QualityTuningLevel": "SINGLE_PASS"
+                }
+            }
+        },
+        "AudioDescriptions": [
+            {
+                "CodecSettings": {
+                    "Codec": "AAC",
+                    "AacSettings": {
+                        "Bitrate": 96000,
+                        "CodingMode": "CODING_MODE_2_0",
+                        "SampleRate": 48000
+                    }
+                }
+            }
+        ]
+    }
+}
 ```
 If you create your preset JSON file by using `get-preset` and then modifying the output file, ensure that you remove the following key-value pairs: `LastUpdated`, `Arn`, `Type`, and `CreatedAt`.
 To get your account-specific endpoint, use `describe-endpoints`, or send the command without the endpoint. The service returns an error and your endpoint.
-For more information, see [Working with AWS Elemental MediaConvert Output Presets](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-presets.html) in the *AWS Elemental MediaConvert User Guide*.
+Output:
+
+```
+{
+    "Preset": {
+        "Arn": "arn:aws:mediaconvert:region-name-1:123456789012:presets/SimpleMP4",
+        "CreatedAt": "2024-04-01T17:22:05+00:00",
+        "Description": "Creates basic MP4 file. No filtering or preprocessing.",
+        "LastUpdated": "2024-04-01T17:22:05+00:00",
+        "Name": "SimpleMP4",
+        "Settings": {
+            "ContainerSettings": {
+                "Container": "MP4",
+                "Mp4Settings": {
+                    "CslgAtom": "INCLUDE",
+                    "FreeSpaceBox": "EXCLUDE",
+                    "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                }
+            },
+            "VideoDescription": {
+                "CodecSettings": {
+                    "Codec": "H_264",
+                    "H264Settings": {
+                        "Bitrate": 400000,
+                        "CodecProfile": "MAIN",
+                        "RateControlMode": "CBR"
+                    }
+                }
+            },
+            "AudioDescriptions": [
+                {
+                    "CodecSettings": {
+                        "Codec": "AAC",
+                        "AacSettings": {
+                            "Bitrate": 96000,
+                            "CodingMode": "CODING_MODE_2_0",
+                            "SampleRate": 48000
+                        }
+                    }
+                }
+            ]
+        },
+        "Type": "CUSTOM"
+    }
+}
+```
+For more information, see [Working with output presets](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-presets.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [CreatePreset](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/create-preset.html) in *AWS CLI Command Reference*.
 
 ### `create-queue`
@@ -113,7 +456,6 @@ The following `create-queue` example creates a custom transcoding queue.
 ```
 aws mediaconvert create-queue \
     --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
-    --region {{region-name-1}} \
     --name {{Queue1}} \
     --description {{"Keep this queue empty unless job is urgent."}}
 ```
@@ -126,14 +468,14 @@ Output:
         "Status": "ACTIVE",
         "Name": "Queue1",
         "LastUpdated": 1518034928,
-        "Arn": "arn:aws:mediaconvert:region-name-1:012345678998:queues/Queue1",
+        "Arn": "arn:aws:mediaconvert:region-name-1:123456789012:queues/Queue1",
         "Type": "CUSTOM",
         "CreatedAt": 1518034928,
         "Description": "Keep this queue empty unless job is urgent."
     }
 }
 ```
-For more information, see [Working with AWS Elemental MediaConvert Queues](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html) in the *AWS Elemental MediaConvert User Guide*.
+For more information, see [Working with queues in AWS Elemental MediaConvert](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [CreateQueue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/create-queue.html) in *AWS CLI Command Reference*.
 
 ### `delete-job-template`
@@ -214,7 +556,7 @@ Output:
     ]
 }
 ```
-For more information, see [Getting Started with MediaConvert Using the API](https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting-started.html) in the *AWS Elemental MediaConvert API Reference*.
+For more information, see [Getting started with MediaConvert](https://docs.aws.amazon.com/mediaconvert/latest/ug/getting-started.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [DescribeEndpoints](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/describe-endpoints.html) in *AWS CLI Command Reference*.
 
 ### `get-job-template`
@@ -229,7 +571,7 @@ The following `get-job-template` example displays the JSON definition of the spe
 ```
 aws mediaconvert get-job-template \
     --name {{"DASH Streaming"}} \
-    --endpoint-url {{https://abcd1234.mediaconvert.us-east-1.amazonaws.com}}
+    --endpoint-url {{https://abcd1234.mediaconvert.us-west-2.amazonaws.com}}
 ```
 Output:
 
@@ -243,7 +585,73 @@ Output:
         "Priority": 0,
         "Name": "DASH Streaming",
         "Settings": {
-            ...<truncatedforbrevity>...
+            "OutputGroups": [
+                {
+                    "Name": "DASH ISO",
+                    "OutputGroupSettings": {
+                        "Type": "DASH_ISO_GROUP_SETTINGS",
+                        "DashIsoGroupSettings": {
+                            "FragmentLength": 2,
+                            "SegmentControl": "SEGMENTED_FILES",
+                            "SegmentLength": 30
+                        }
+                    },
+                    "Outputs": [
+                        {
+                            "NameModifier": "_1080p",
+                            "ContainerSettings": {
+                                "Container": "MPD"
+                            },
+                            "VideoDescription": {
+                                "Width": 1920,
+                                "Height": 1080,
+                                "CodecSettings": {
+                                    "Codec": "H_264",
+                                    "H264Settings": {
+                                        "MaxBitrate": 6000000,
+                                        "RateControlMode": "QVBR"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "NameModifier": "_720p",
+                            "ContainerSettings": {
+                                "Container": "MPD"
+                            },
+                            "VideoDescription": {
+                                "Width": 1280,
+                                "Height": 720,
+                                "CodecSettings": {
+                                    "Codec": "H_264",
+                                    "H264Settings": {
+                                        "MaxBitrate": 3500000,
+                                        "RateControlMode": "QVBR"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "NameModifier": "_audio",
+                            "ContainerSettings": {
+                                "Container": "MPD"
+                            },
+                            "AudioDescriptions": [
+                                {
+                                    "CodecSettings": {
+                                        "Codec": "AAC",
+                                        "AacSettings": {
+                                            "Bitrate": 96000,
+                                            "CodingMode": "CODING_MODE_2_0",
+                                            "SampleRate": 48000
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:jobTemplates/DASH Streaming",
         "Type": "CUSTOM"
@@ -260,29 +668,51 @@ The following code example shows how to use `get-job`.
 
 **AWS CLI**
 **To get details for a particular job**
-The following example requests the information for the job with ID `1234567890987-1ab2c3`, which in this example ended in an error.
+The following `get-job` example requests the information for the job with ID `1234567890987-1ab2c3`, which in this example ended in an error.
 
 ```
 aws mediaconvert get-job \
     --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
-    --region {{region-name-1}} \
     --id {{1234567890987-1ab2c3}}
 ```
 To get your account-specific endpoint, use `describe-endpoints`, or send the command without the endpoint. The service returns an error and your endpoint.
-If your request is successful, the service returns a JSON file with job information, including job settings, any returned errors, and other job data, as follows:
+If your request is successful, the service returns a JSON file with job information, including job settings, any returned errors, and other job data.
+Output:
 
 ```
 {
     "Job": {
         "Status": "ERROR",
-        "Queue": "arn:aws:mediaconvert:region-name-1:012345678998:queues/Queue1",
+        "Queue": "arn:aws:mediaconvert:region-name-1:123456789012:queues/Queue1",
         "Settings": {
-            ...<truncated for brevity>...
+            "Inputs": [
+                {
+                    "FileInput": "s3://amzn-s3-demo-bucket/file-name.mp4"
+                }
+            ],
+            "OutputGroups": [
+                {
+                    "Name": "File Group",
+                    "OutputGroupSettings": {
+                        "Type": "FILE_GROUP_SETTINGS",
+                        "FileGroupSettings": {
+                            "Destination": "s3://amzn-s3-demo-bucket/output/"
+                        }
+                    },
+                    "Outputs": [
+                        {
+                            "Extension": "mp4",
+                            "NameModifier": "_720p",
+                            "Preset": "System-Generic_Hd_Mp4_Avc_Aac_16x9_Sdr_1280x720p_30Hz_5Mbps_Qvbr_Vq9"
+                        }
+                    ]
+                }
+            ]
         },
-        "ErrorMessage": "Unable to open input file [s3://my-input-bucket/file-name.mp4]: [Failed probe/open: [Failed to read data: AssumeRole failed]]",
+        "ErrorMessage": "Unable to open input file [s3://amzn-s3-demo-bucket/file-name.mp4]: [Failed probe/open: [Failed to read data: AssumeRole failed]]",
         "ErrorCode": 1434,
-        "Role": "arn:aws:iam::012345678998:role/MediaConvertServiceRole",
-        "Arn": "arn:aws:mediaconvert:us-west-1:012345678998:jobs/1234567890987-1ab2c3",
+        "Role": "arn:aws:iam::123456789012:role/MediaConvertServiceRole",
+        "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:jobs/1234567890987-1ab2c3",
         "UserMetadata": {},
         "Timing": {
             "FinishTime": 1517442131,
@@ -294,7 +724,7 @@ If your request is successful, the service returns a JSON file with job informat
     }
 }
 ```
-For more information, see [Working with AWS Elemental MediaConvert Jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
+For more information, see [Working with jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [GetJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/get-job.html) in *AWS CLI Command Reference*.
 
 ### `get-preset`
@@ -462,7 +892,73 @@ Output:
             "LastUpdated": 1568653007,
             "Priority": 0,
             "Settings": {
-                ...<truncatedforbrevity>...
+                "OutputGroups": [
+                    {
+                        "Name": "DASH ISO",
+                        "OutputGroupSettings": {
+                            "Type": "DASH_ISO_GROUP_SETTINGS",
+                            "DashIsoGroupSettings": {
+                                "FragmentLength": 2,
+                                "SegmentControl": "SEGMENTED_FILES",
+                                "SegmentLength": 30
+                            }
+                        },
+                        "Outputs": [
+                            {
+                                "NameModifier": "_1080p",
+                                "ContainerSettings": {
+                                    "Container": "MPD"
+                                },
+                                "VideoDescription": {
+                                    "Width": 1920,
+                                    "Height": 1080,
+                                    "CodecSettings": {
+                                        "Codec": "H_264",
+                                        "H264Settings": {
+                                            "MaxBitrate": 6000000,
+                                            "RateControlMode": "QVBR"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "NameModifier": "_720p",
+                                "ContainerSettings": {
+                                    "Container": "MPD"
+                                },
+                                "VideoDescription": {
+                                    "Width": 1280,
+                                    "Height": 720,
+                                    "CodecSettings": {
+                                        "Codec": "H_264",
+                                        "H264Settings": {
+                                            "MaxBitrate": 3500000,
+                                            "RateControlMode": "QVBR"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "NameModifier": "_audio",
+                                "ContainerSettings": {
+                                    "Container": "MPD"
+                                },
+                                "AudioDescriptions": [
+                                    {
+                                        "CodecSettings": {
+                                            "Codec": "AAC",
+                                            "AacSettings": {
+                                                "Bitrate": 96000,
+                                                "CodingMode": "CODING_MODE_2_0",
+                                                "SampleRate": 48000
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             "Type": "CUSTOM",
             "StatusUpdateInterval": "SECONDS_60",
@@ -475,7 +971,50 @@ Output:
             "LastUpdated": 1568653007,
             "Priority": 0,
             "Settings": {
-                ...<truncatedforbrevity>...
+                "OutputGroups": [
+                    {
+                        "Name": "File Group",
+                        "OutputGroupSettings": {
+                            "Type": "FILE_GROUP_SETTINGS",
+                            "FileGroupSettings": {}
+                        },
+                        "Outputs": [
+                            {
+                                "ContainerSettings": {
+                                    "Container": "MP4",
+                                    "Mp4Settings": {
+                                        "CslgAtom": "INCLUDE",
+                                        "FreeSpaceBox": "EXCLUDE",
+                                        "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                                    }
+                                },
+                                "VideoDescription": {
+                                    "Width": 1920,
+                                    "Height": 1080,
+                                    "CodecSettings": {
+                                        "Codec": "H_264",
+                                        "H264Settings": {
+                                            "MaxBitrate": 10000000,
+                                            "RateControlMode": "QVBR"
+                                        }
+                                    }
+                                },
+                                "AudioDescriptions": [
+                                    {
+                                        "CodecSettings": {
+                                            "Codec": "AAC",
+                                            "AacSettings": {
+                                                "Bitrate": 96000,
+                                                "CodingMode": "CODING_MODE_2_0",
+                                                "SampleRate": 48000
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
             },
             "Type": "CUSTOM",
             "StatusUpdateInterval": "SECONDS_60",
@@ -489,7 +1028,7 @@ The following `list-job-templates` example lists all system job templates.
 
 ```
 aws mediaconvert list-job-templates \
-    --endpoint-url {{https://abcd1234.mediaconvert.us-east-1.amazonaws.com}} \
+    --endpoint-url {{https://abcd1234.mediaconvert.us-west-2.amazonaws.com}} \
     --list-by {{SYSTEM}}
 ```
 Output:
@@ -499,7 +1038,7 @@ Output:
     "JobTemplates": [
         {
             "CreatedAt": 1568321779,
-            "Arn": "arn:aws:mediaconvert:us-east-1:123456789012:jobTemplates/System-Generic_Mp4_Hev1_Avc_Aac_Sdr_Qvbr",
+            "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:jobTemplates/System-Generic_Mp4_Hev1_Avc_Aac_Sdr_Qvbr",
             "Name": "System-Generic_Mp4_Hev1_Avc_Aac_Sdr_Qvbr",
             "Description": "GENERIC, MP4, AVC + HEV1(HEVC,SDR), AAC, SDR, QVBR",
             "Category": "GENERIC",
@@ -540,9 +1079,7 @@ Output:
                             }
                         ],
                         "OutputGroupSettings": {
-                            "FileGroupSettings": {
-
-                            },
+                            "FileGroupSettings": {},
                             "Type": "FILE_GROUP_SETTINGS"
                         },
                         "Name": "File Group"
@@ -551,8 +1088,7 @@ Output:
             },
             "Type": "SYSTEM",
             "LastUpdated": 1568321779
-        },
-        ...<truncatedforbrevity>...
+        }
     ]
 }
 ```
@@ -566,15 +1102,163 @@ The following code example shows how to use `list-jobs`.
 
 **AWS CLI**
 **To get details for all jobs in a region**
-The following example requests the information for all of your jobs in the specified region.
+The following `list-jobs` example requests the information for all of your jobs in the specified region.
 
 ```
 aws mediaconvert list-jobs \
-    --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}} \
-    --region {{region-name-1}}
+    --endpoint-url {{https://abcd1234.mediaconvert.region-name-1.amazonaws.com}}
 ```
 To get your account-specific endpoint, use `describe-endpoints`, or send the command without the endpoint. The service returns an error and your endpoint.
-For more information, see [Working with AWS Elemental MediaConvert Jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
+Output:
+
+```
+{
+    "Jobs": [
+        {
+            "AccelerationStatus": "NOT_APPLICABLE",
+            "Arn": "arn:aws:mediaconvert:region-name-1:123456789012:jobs/1234567891234-abc123",
+            "CreatedAt": "2024-04-01T17:35:12+00:00",
+            "Id": "1234567891234-abc123",
+            "Priority": 0,
+            "Queue": "arn:aws:mediaconvert:region-name-1:123456789012:queues/Default",
+            "Role": "arn:aws:iam::123456789012:role/MediaConvertServiceRole",
+            "Settings": {
+                "Inputs": [
+                    {
+                        "FileInput": "s3://amzn-s3-demo-bucket/input/file-name.mp4"
+                    }
+                ],
+                "OutputGroups": [
+                    {
+                        "Name": "File Group",
+                        "OutputGroupSettings": {
+                            "Type": "FILE_GROUP_SETTINGS",
+                            "FileGroupSettings": {
+                                "Destination": "s3://amzn-s3-demo-bucket/output/"
+                            }
+                        },
+                        "Outputs": [
+                            {
+                                "ContainerSettings": {
+                                    "Container": "MP4",
+                                    "Mp4Settings": {
+                                        "CslgAtom": "INCLUDE",
+                                        "FreeSpaceBox": "EXCLUDE",
+                                        "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                                    }
+                                },
+                                "VideoDescription": {
+                                    "Width": 1920,
+                                    "Height": 1080,
+                                    "CodecSettings": {
+                                        "Codec": "H_264",
+                                        "H264Settings": {
+                                            "MaxBitrate": 10000000,
+                                            "RateControlMode": "QVBR"
+                                        }
+                                    }
+                                },
+                                "AudioDescriptions": [
+                                    {
+                                        "CodecSettings": {
+                                            "Codec": "AAC",
+                                            "AacSettings": {
+                                                "Bitrate": 96000,
+                                                "CodingMode": "CODING_MODE_2_0",
+                                                "SampleRate": 48000
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Status": "PROGRESSING",
+            "StatusUpdateInterval": "SECONDS_60",
+            "Timing": {
+                "StartTime": "2024-04-01T17:35:14+00:00",
+                "SubmitTime": "2024-04-01T17:35:12+00:00"
+            },
+            "UserMetadata": {},
+            "CurrentPhase": "TRANSCODING",
+            "JobPercentComplete": 45
+        },
+        {
+            "AccelerationStatus": "NOT_APPLICABLE",
+            "Arn": "arn:aws:mediaconvert:region-name-1:123456789012:jobs/1234567890987-1ab2c3",
+            "CreatedAt": "2024-04-01T16:20:01+00:00",
+            "Id": "1234567890987-1ab2c3",
+            "Priority": 0,
+            "Queue": "arn:aws:mediaconvert:region-name-1:123456789012:queues/Default",
+            "Role": "arn:aws:iam::123456789012:role/MediaConvertServiceRole",
+            "Settings": {
+                "Inputs": [
+                    {
+                        "FileInput": "s3://amzn-s3-demo-bucket/input/file-name.mp4"
+                    }
+                ],
+                "OutputGroups": [
+                    {
+                        "Name": "File Group",
+                        "OutputGroupSettings": {
+                            "Type": "FILE_GROUP_SETTINGS",
+                            "FileGroupSettings": {
+                                "Destination": "s3://amzn-s3-demo-bucket/output/"
+                            }
+                        },
+                        "Outputs": [
+                            {
+                                "ContainerSettings": {
+                                    "Container": "MP4",
+                                    "Mp4Settings": {
+                                        "CslgAtom": "INCLUDE",
+                                        "FreeSpaceBox": "EXCLUDE",
+                                        "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                                    }
+                                },
+                                "VideoDescription": {
+                                    "Width": 1920,
+                                    "Height": 1080,
+                                    "CodecSettings": {
+                                        "Codec": "H_264",
+                                        "H264Settings": {
+                                            "MaxBitrate": 10000000,
+                                            "RateControlMode": "QVBR"
+                                        }
+                                    }
+                                },
+                                "AudioDescriptions": [
+                                    {
+                                        "CodecSettings": {
+                                            "Codec": "AAC",
+                                            "AacSettings": {
+                                                "Bitrate": 96000,
+                                                "CodingMode": "CODING_MODE_2_0",
+                                                "SampleRate": 48000
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "Status": "COMPLETE",
+            "StatusUpdateInterval": "SECONDS_60",
+            "Timing": {
+                "FinishTime": "2024-04-01T16:22:48+00:00",
+                "StartTime": "2024-04-01T16:20:03+00:00",
+                "SubmitTime": "2024-04-01T16:20:01+00:00"
+            },
+            "UserMetadata": {}
+        }
+    ]
+}
+```
+For more information, see [Working with jobs](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-jobs.html) in the *AWS Elemental MediaConvert User Guide*.
 +  For API details, see [ListJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconvert/list-jobs.html) in *AWS CLI Command Reference*.
 
 ### `list-presets`
@@ -599,9 +1283,38 @@ Output:
             "Name": "SimpleMP4",
             "CreatedAt": 1568841521,
             "Settings": {
-                ......
+                "ContainerSettings": {
+                    "Container": "MP4",
+                    "Mp4Settings": {
+                        "CslgAtom": "INCLUDE",
+                        "FreeSpaceBox": "EXCLUDE",
+                        "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                    }
+                },
+                "VideoDescription": {
+                    "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                            "Bitrate": 400000,
+                            "CodecProfile": "MAIN",
+                            "RateControlMode": "CBR"
+                        }
+                    }
+                },
+                "AudioDescriptions": [
+                    {
+                        "CodecSettings": {
+                            "Codec": "AAC",
+                            "AacSettings": {
+                                "Bitrate": 96000,
+                                "CodingMode": "CODING_MODE_2_0",
+                                "SampleRate": 48000
+                            }
+                        }
+                    }
+                ]
             },
-            "Arn": "arn:aws:mediaconvert:us-east-1:003235472598:presets/SimpleMP4",
+            "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:presets/SimpleMP4",
             "Type": "CUSTOM",
             "LastUpdated": 1568843141,
             "Description": "Creates basic MP4 file. No filtering or preproccessing."
@@ -610,9 +1323,36 @@ Output:
             "Name": "SimpleTS",
             "CreatedAt": 1568843113,
             "Settings": {
-                ... truncated for brevity ...
+                "ContainerSettings": {
+                    "Container": "M2TS",
+                    "M2tsSettings": {
+                        "RateMode": "CBR"
+                    }
+                },
+                "VideoDescription": {
+                    "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                            "Bitrate": 400000,
+                            "CodecProfile": "MAIN",
+                            "RateControlMode": "CBR"
+                        }
+                    }
+                },
+                "AudioDescriptions": [
+                    {
+                        "CodecSettings": {
+                            "Codec": "AAC",
+                            "AacSettings": {
+                                "Bitrate": 96000,
+                                "CodingMode": "CODING_MODE_2_0",
+                                "SampleRate": 48000
+                            }
+                        }
+                    }
+                ]
             },
-            "Arn": "arn:aws:mediaconvert:us-east-1:003235472598:presets/SimpleTS",
+            "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:presets/SimpleTS",
             "Type": "CUSTOM",
             "LastUpdated": 1568843113,
             "Description": "Create a basic transport stream."
@@ -642,14 +1382,40 @@ Output:
             "Type": "SYSTEM",
             "Category": "HLS",
             "Settings": {
-            ...<output settings removed for brevity>...
+                "ContainerSettings": {
+                    "Container": "M3U8"
+                },
+                "VideoDescription": {
+                    "Width": 1920,
+                    "Height": 1080,
+                    "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                            "Bitrate": 8500000,
+                            "CodecProfile": "MAIN",
+                            "RateControlMode": "CBR",
+                            "FramerateControl": "SPECIFIED",
+                            "FramerateNumerator": 30000,
+                            "FramerateDenominator": 1001
+                        }
+                    }
+                },
+                "AudioDescriptions": [
+                    {
+                        "CodecSettings": {
+                            "Codec": "AAC",
+                            "AacSettings": {
+                                "Bitrate": 96000,
+                                "CodingMode": "CODING_MODE_2_0",
+                                "SampleRate": 48000
+                            }
+                        }
+                    }
+                ]
             }
         },
-
-        ...<list of presets shortened for brevity>...
-
         {
-            "Arn": "arn:aws:mediaconvert:us-east-1:123456789012:presets/System-Xdcam_HD_1080i_29_97fps_35mpbs",
+            "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:presets/System-Xdcam_HD_1080i_29_97fps_35mpbs",
             "Name": "System-Xdcam_HD_1080i_29_97fps_35mpbs",
             "CreatedAt": 1568321790,
             "Description": "XDCAM MPEG HD, 1920x1080i, 29.97fps, 35mbps",
@@ -657,7 +1423,39 @@ Output:
             "Type": "SYSTEM",
             "Category": "MXF",
             "Settings": {
-            ...<output settings removed for brevity>...
+                "ContainerSettings": {
+                    "Container": "MXF"
+                },
+                "VideoDescription": {
+                    "Width": 1920,
+                    "Height": 1080,
+                    "CodecSettings": {
+                        "Codec": "MPEG2",
+                        "Mpeg2Settings": {
+                            "Bitrate": 35000000,
+                            "CodecLevel": "HIGH",
+                            "CodecProfile": "MAIN",
+                            "InterlaceMode": "TOP_FIELD",
+                            "RateControlMode": "VBR",
+                            "MaxBitrate": 35000000,
+                            "FramerateControl": "SPECIFIED",
+                            "FramerateNumerator": 30000,
+                            "FramerateDenominator": 1001
+                        }
+                    }
+                },
+                "AudioDescriptions": [
+                    {
+                        "CodecSettings": {
+                            "Codec": "WAV",
+                            "WavSettings": {
+                                "BitDepth": 24,
+                                "Channels": 2,
+                                "SampleRate": 48000
+                            }
+                        }
+                    }
+                ]
             }
         }
     ]
@@ -775,96 +1573,96 @@ Contents of `job-template-update.json`:
 ```
 {
     "Description": "A simple job template that generates a single file output.",
-    "Queue": "arn:aws:mediaconvert:us-east-1:012345678998:queues/Default",
+    "Queue": "arn:aws:mediaconvert:us-west-2:123456789012:queues/Default",
     "Name": "SimpleFile",
     "Settings": {
-      "OutputGroups": [
-        {
-          "Name": "File Group",
-          "Outputs": [
+        "OutputGroups": [
             {
-              "ContainerSettings": {
-                "Container": "MP4",
-                "Mp4Settings": {
-                  "CslgAtom": "INCLUDE",
-                  "FreeSpaceBox": "EXCLUDE",
-                  "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
-                }
-              },
-              "VideoDescription": {
-                "ScalingBehavior": "DEFAULT",
-                "TimecodeInsertion": "DISABLED",
-                "AntiAlias": "ENABLED",
-                "Sharpness": 50,
-                "CodecSettings": {
-                  "Codec": "H_264",
-                  "H264Settings": {
-                    "InterlaceMode": "PROGRESSIVE",
-                    "NumberReferenceFrames": 3,
-                    "Syntax": "DEFAULT",
-                    "Softness": 0,
-                    "GopClosedCadence": 1,
-                    "GopSize": 90,
-                    "Slices": 1,
-                    "GopBReference": "DISABLED",
-                    "SlowPal": "DISABLED",
-                    "SpatialAdaptiveQuantization": "ENABLED",
-                    "TemporalAdaptiveQuantization": "ENABLED",
-                    "FlickerAdaptiveQuantization": "DISABLED",
-                    "EntropyEncoding": "CABAC",
-                    "Bitrate": 400000,
-                    "FramerateControl": "INITIALIZE_FROM_SOURCE",
-                    "RateControlMode": "CBR",
-                    "CodecProfile": "MAIN",
-                    "Telecine": "NONE",
-                    "MinIInterval": 0,
-                    "AdaptiveQuantization": "HIGH",
-                    "CodecLevel": "AUTO",
-                    "FieldEncoding": "PAFF",
-                    "SceneChangeDetect": "ENABLED",
-                    "QualityTuningLevel": "SINGLE_PASS",
-                    "FramerateConversionAlgorithm": "DUPLICATE_DROP",
-                    "UnregisteredSeiTimecode": "DISABLED",
-                    "GopSizeUnits": "FRAMES",
-                    "ParControl": "INITIALIZE_FROM_SOURCE",
-                    "NumberBFramesBetweenReferenceFrames": 2,
-                    "RepeatPps": "DISABLED",
-                    "DynamicSubGop": "STATIC"
-                  }
-                },
-                "AfdSignaling": "NONE",
-                "DropFrameTimecode": "ENABLED",
-                "RespondToAfd": "NONE",
-                "ColorMetadata": "INSERT"
-              },
-              "AudioDescriptions": [
-                {
-                  "AudioTypeControl": "FOLLOW_INPUT",
-                  "CodecSettings": {
-                    "Codec": "AAC",
-                    "AacSettings": {
-                      "AudioDescriptionBroadcasterMix": "NORMAL",
-                      "Bitrate": 96000,
-                      "RateControlMode": "CBR",
-                      "CodecProfile": "LC",
-                      "CodingMode": "CODING_MODE_2_0",
-                      "RawFormat": "NONE",
-                      "SampleRate": 48000,
-                      "Specification": "MPEG4"
+                "Name": "File Group",
+                "Outputs": [
+                    {
+                        "ContainerSettings": {
+                            "Container": "MP4",
+                            "Mp4Settings": {
+                                "CslgAtom": "INCLUDE",
+                                "FreeSpaceBox": "EXCLUDE",
+                                "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                            }
+                        },
+                        "VideoDescription": {
+                            "ScalingBehavior": "DEFAULT",
+                            "TimecodeInsertion": "DISABLED",
+                            "AntiAlias": "ENABLED",
+                            "Sharpness": 50,
+                            "CodecSettings": {
+                                "Codec": "H_264",
+                                "H264Settings": {
+                                    "InterlaceMode": "PROGRESSIVE",
+                                    "NumberReferenceFrames": 3,
+                                    "Syntax": "DEFAULT",
+                                    "Softness": 0,
+                                    "GopClosedCadence": 1,
+                                    "GopSize": 90,
+                                    "Slices": 1,
+                                    "GopBReference": "DISABLED",
+                                    "SlowPal": "DISABLED",
+                                    "SpatialAdaptiveQuantization": "ENABLED",
+                                    "TemporalAdaptiveQuantization": "ENABLED",
+                                    "FlickerAdaptiveQuantization": "DISABLED",
+                                    "EntropyEncoding": "CABAC",
+                                    "Bitrate": 400000,
+                                    "FramerateControl": "INITIALIZE_FROM_SOURCE",
+                                    "RateControlMode": "CBR",
+                                    "CodecProfile": "MAIN",
+                                    "Telecine": "NONE",
+                                    "MinIInterval": 0,
+                                    "AdaptiveQuantization": "HIGH",
+                                    "CodecLevel": "AUTO",
+                                    "FieldEncoding": "PAFF",
+                                    "SceneChangeDetect": "ENABLED",
+                                    "QualityTuningLevel": "SINGLE_PASS",
+                                    "FramerateConversionAlgorithm": "DUPLICATE_DROP",
+                                    "UnregisteredSeiTimecode": "DISABLED",
+                                    "GopSizeUnits": "FRAMES",
+                                    "ParControl": "INITIALIZE_FROM_SOURCE",
+                                    "NumberBFramesBetweenReferenceFrames": 2,
+                                    "RepeatPps": "DISABLED",
+                                    "DynamicSubGop": "STATIC"
+                                }
+                            },
+                            "AfdSignaling": "NONE",
+                            "DropFrameTimecode": "ENABLED",
+                            "RespondToAfd": "NONE",
+                            "ColorMetadata": "INSERT"
+                        },
+                        "AudioDescriptions": [
+                            {
+                                "AudioTypeControl": "FOLLOW_INPUT",
+                                "CodecSettings": {
+                                    "Codec": "AAC",
+                                    "AacSettings": {
+                                        "AudioDescriptionBroadcasterMix": "NORMAL",
+                                        "Bitrate": 96000,
+                                        "RateControlMode": "CBR",
+                                        "CodecProfile": "LC",
+                                        "CodingMode": "CODING_MODE_2_0",
+                                        "RawFormat": "NONE",
+                                        "SampleRate": 48000,
+                                        "Specification": "MPEG4"
+                                    }
+                                },
+                                "LanguageCodeControl": "FOLLOW_INPUT"
+                            }
+                        ]
                     }
-                  },
-                  "LanguageCodeControl": "FOLLOW_INPUT"
+                ],
+                "OutputGroupSettings": {
+                    "Type": "FILE_GROUP_SETTINGS",
+                    "FileGroupSettings": {}
                 }
-              ]
             }
-          ],
-          "OutputGroupSettings": {
-            "Type": "FILE_GROUP_SETTINGS",
-            "FileGroupSettings": {}
-          }
-        }
-      ],
-      "AdAvailOffset": 0
+        ],
+        "AdAvailOffset": 0
     },
     "StatusUpdateInterval": "SECONDS_60",
     "Priority": 0
@@ -886,18 +1684,47 @@ The following `update-preset` example replaces the description for the specified
 
 ```
 aws mediaconvert update-preset \
---name Customer1 \
---description "New description text."
---endpoint-url https://abcd1234.mediaconvert.us-west-2.amazonaws.com
+    --name {{Customer1}} \
+    --description {{"New description text."}} \
+    --endpoint-url {{https://abcd1234.mediaconvert.us-west-2.amazonaws.com}}
 ```
-This command produces no output. Output:
+Output:
 
 ```
 {
     "Preset": {
-        "Arn": "arn:aws:mediaconvert:us-east-1:003235472598:presets/SimpleMP4",
+        "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:presets/SimpleMP4",
         "Settings": {
-        ...<output settings removed for brevity>...
+            "ContainerSettings": {
+                "Container": "MP4",
+                "Mp4Settings": {
+                    "CslgAtom": "INCLUDE",
+                    "FreeSpaceBox": "EXCLUDE",
+                    "MoovPlacement": "PROGRESSIVE_DOWNLOAD"
+                }
+            },
+            "VideoDescription": {
+                "CodecSettings": {
+                    "Codec": "H_264",
+                    "H264Settings": {
+                        "Bitrate": 400000,
+                        "CodecProfile": "MAIN",
+                        "RateControlMode": "CBR"
+                    }
+                }
+            },
+            "AudioDescriptions": [
+                {
+                    "CodecSettings": {
+                        "Codec": "AAC",
+                        "AacSettings": {
+                            "Bitrate": 96000,
+                            "CodingMode": "CODING_MODE_2_0",
+                            "SampleRate": 48000
+                        }
+                    }
+                }
+            ]
         },
         "Type": "CUSTOM",
         "LastUpdated": 1568938411,
@@ -921,9 +1748,9 @@ The following `update-queue` example pauses the specified queue, by changing its
 
 ```
 aws mediaconvert update-queue \
---name {{Customer1}} \
---status {{PAUSED}}
---endpoint-url {{https://abcd1234.mediaconvert.us-west-2.amazonaws.com}}
+    --name {{Customer1}} \
+    --status {{PAUSED}} \
+    --endpoint-url {{https://abcd1234.mediaconvert.us-west-2.amazonaws.com}}
 ```
 Output:
 
@@ -934,7 +1761,7 @@ Output:
         "Status": "PAUSED",
         "ProgressingJobsCount": 0,
         "CreatedAt": 1526428516,
-        "Arn": "arn:aws:mediaconvert:us-west-1:123456789012:queues/Customer1",
+        "Arn": "arn:aws:mediaconvert:us-west-2:123456789012:queues/Customer1",
         "Name": "Customer1",
         "SubmittedJobsCount": 0,
         "PricingPlan": "ON_DEMAND",

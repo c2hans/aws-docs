@@ -12,7 +12,7 @@ The following code examples show how to use `AttachInstances`.
 
 **AWS CLI**
 **To attach an instance to an Auto Scaling group**
-This example attaches the specified instance to the specified Auto Scaling group.
+The following `attach-instances` example attaches the specified instance to the specified Auto Scaling group.
 
 ```
 aws autoscaling attach-instances \
@@ -20,6 +20,7 @@ aws autoscaling attach-instances \
     --auto-scaling-group-name {{my-asg}}
 ```
 This command produces no output.
+For more information, see [Detach or attach instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-detach-attach-instances.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [AttachInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/attach-instances.html) in *AWS CLI Command Reference*.
 
 ------

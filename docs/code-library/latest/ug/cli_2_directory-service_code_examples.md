@@ -30,7 +30,7 @@ The following `describe-directories` example displays details about the specifie
 
 ```
 aws ds describe-directories \
-   --directory-id {{d-a1b2c3d4e5}}
+    --directory-id {{d-a1b2c3d4e5}}
 ```
 Output:
 
@@ -77,6 +77,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing AWS Managed Microsoft AD directory information](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_view_directory_info.html) in the *AWS Directory Service Administration Guide*.
 +  For API details, see [DescribeDirectories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/describe-directories.html) in *AWS CLI Command Reference*.
 
 ### `describe-trusts`
@@ -90,7 +91,7 @@ The following `describe-trusts` example displays details about the trust relatio
 
 ```
 aws ds describe-trusts \
-   --directory-id {{d-a1b2c3d4e5}}
+    --directory-id {{d-a1b2c3d4e5}}
 ```
 Output:
 
@@ -112,4 +113,58 @@ Output:
     ]
 }
 ```
+For more information, see [Creating a trust relationship between your AWS Managed Microsoft AD and self-managed AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_setup_trust.html) in the *AWS Directory Service Administration Guide*.
 +  For API details, see [DescribeTrusts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/describe-trusts.html) in *AWS CLI Command Reference*.
+
+### `disable-directory-data-access`
+<a name="directory-service_DisableDirectoryDataAccess_cli_2_topic"></a>
+
+The following code example shows how to use `disable-directory-data-access`.
+
+**AWS CLI**
+**To disable Directory Service Data API for a directory**
+The following `disable-directory-data-access` example disables the Directory Service Data API for the specified directory.
+
+```
+aws ds disable-directory-data-access \
+    --directory-id {{d-1234567890}}
+```
+This command produces no output.
+For more information, see [Enabling or disabling user and group management or AWS Directory Service Data](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_users_groups_mgmt_enable_disable.html) in the *AWS Directory Service Administration Guide*.
++  For API details, see [DisableDirectoryDataAccess](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/disable-directory-data-access.html) in *AWS CLI Command Reference*.
+
+### `enable-directory-data-access`
+<a name="directory-service_EnableDirectoryDataAccess_cli_2_topic"></a>
+
+The following code example shows how to use `enable-directory-data-access`.
+
+**AWS CLI**
+**To enable Directory Service Data API for a directory**
+The following `enable-directory-data-access` example enables the Directory Service Data API for the specified directory.
+
+```
+aws ds enable-directory-data-access \
+    --directory-id {{d-1234567890}}
+```
+This command produces no output.
+For more information, see [Enabling or disabling user and group management or AWS Directory Service Data](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_users_groups_mgmt_enable_disable.html) in the *AWS Directory Service Administration Guide*.
++  For API details, see [EnableDirectoryDataAccess](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/enable-directory-data-access.html) in *AWS CLI Command Reference*.
+
+### `reset-user-password`
+<a name="directory-service_ResetUserPassword_cli_2_topic"></a>
+
+The following code example shows how to use `reset-user-password`.
+
+**AWS CLI**
+**To reset a user password in a directory**
+The following `reset-user-password` example resets and enables the specified user in the specified directory.
+
+```
+aws ds reset-user-password \
+    --directory-id {{d-1234567890}} \
+    --user-name '{{john.doe}}' \
+    --new-{{password}} 'password'
+```
+This command produces no output.
+For more information, see [Resetting and enabling an AWS Managed Microsoft AD user's password](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_reset_user_pswd.html) in the *AWS Directory Service Administration Guide*.
++  For API details, see [ResetUserPassword](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/reset-user-password.html) in *AWS CLI Command Reference*.

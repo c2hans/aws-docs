@@ -31,14 +31,14 @@ The following `create-monitor` example creates a monitor named `demo` in the spe
 ```
 aws networkflowmonitor create-monitor \
     --monitor-name {{demo}} \
-    --local-resources type="AWS::EC2::VPC",identifier="arn:aws:ec2:us-east-1:123456789012:vpc/vpc-03ea55eeda25adbb0"  \
-    --scope-arn {{arn:aws:networkflowmonitor:us-east-1:123456789012:scope/e21cda79-30a0-4c12-9299-d8629d76d8cf}}
+    --local-resources type="AWS::EC2::VPC",identifier="arn:aws:ec2:us-west-2:123456789012:vpc/vpc-03ea55eeda25adbb0"  \
+    --scope-arn {{arn:aws:networkflowmonitor:us-west-2:123456789012:scope/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/demo",
+    "monitorArn": "arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/demo",
     "monitorName": "demo",
     "monitorStatus": "ACTIVE",
     "tags": {}
@@ -58,13 +58,13 @@ The following `create-scope` example creates a scope that includes a set of reso
 
 ```
 aws networkflowmonitor create-scope \
-    --targets '{{[{"targetIdentifier":{"targetId":{"accountId":"123456789012"},"targetType":"ACCOUNT"},"region":"us-east-1"}]}}'
+    --targets '{{[{"targetIdentifier":{"targetId":{"accountId":"123456789012"},"targetType":"ACCOUNT"},"region":"us-west-2"}]}}'
 ```
 Output:
 
 ```
 {
-    "scopeId": "97626f8d-8a21-4b5d-813a-1a0962dd4615",
+    "scopeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "status": "IN_PROGRESS",
     "tags": {}
 }
@@ -100,7 +100,7 @@ The following `delete-scope` example deletes a specified scope.
 
 ```
 aws networkflowmonitor delete-scope \
-    --scope-id {{fdc20616-6bb4-4242-a24e-a748e65ca7ac}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Components and features of Network Flow Monitor](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-components.html) in the *Amazon CloudWatch User Guide*.
@@ -123,13 +123,13 @@ Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/Demo",
+    "monitorArn": "arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/Demo",
     "monitorName": "Demo",
     "monitorStatus": "ACTIVE",
     "localResources": [
         {
             "type": "AWS::EC2::VPC",
-            "identifier": "arn:aws:ec2:us-east-1:123456789012:vpc/vpc-03ea55eeda25adbb0"
+            "identifier": "arn:aws:ec2:us-west-2:123456789012:vpc/vpc-03ea55eeda25adbb0"
         }
     ],
     "remoteResources": [],
@@ -152,8 +152,8 @@ The following `get-query-results-workload-insights-top-contributors-data` exampl
 
 ```
 aws networkflowmonitor get-query-results-workload-insights-top-contributors-data \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
-    --query-id {{cc4f4ab3-3103-33b8-80ff-d6597a0c6cea}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -191,8 +191,8 @@ The following `get-query-results-workload-insights-top-contributors` example ret
 
 ```
 aws networkflowmonitor get-query-results-workload-insights-top-contributors \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
-    --query-id {{1fc423d3-b144-37a6-80e6-e2c7d26eea0c}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -204,11 +204,11 @@ Output:
             "localSubnetId": "subnet-0a5b30fb95dca2c14",
             "localAz": "use1-az6",
             "localVpcId": "vpc-03ea55eeda25adbb0",
-            "localRegion": "us-east-1",
+            "localRegion": "us-west-2",
             "remoteIdentifier": "",
             "value": 908443,
-            "localSubnetArn": "arn:aws:ec2:us-east-1:123456789012:subnet/subnet-0a5b30fb95dca2c14",
-            "localVpcArn": "arn:aws:ec2:us-east-1:123456789012:vpc/vpc-03ea55eeda25adbb0"
+            "localSubnetArn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0a5b30fb95dca2c14",
+            "localVpcArn": "arn:aws:ec2:us-west-2:123456789012:vpc/vpc-03ea55eeda25adbb0"
         }
     ]
 }
@@ -228,7 +228,7 @@ The following `get-query-status-monitor-top-contributors` example displays the c
 ```
 aws networkflowmonitor get-query-status-monitor-top-contributors \
     --monitor-name {{Demo}} \
-    --query-id {{5398eabd-bc40-3f5f-aba3-bcb639d3c7ca}}
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -251,8 +251,8 @@ The following `get-query-status-workload-insights-top-contributors-data` example
 
 ```
 aws networkflowmonitor get-query-status-workload-insights-top-contributors-data \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
-    --query-id {{4333754d-8ae1-3f29-b6b7-c36db2e7f8ac}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -275,8 +275,8 @@ The following `get-query-status-workload-insights-top-contributors` example disp
 
 ```
 aws networkflowmonitor get-query-status-workload-insights-top-contributors \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
-    --query-id {{f2a87c70-3e5a-362e-8beb-4747d13d8419}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -299,15 +299,15 @@ The following `get-scope` example displays information about a scope, such as st
 
 ```
 aws networkflowmonitor get-scope \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "scopeId": "e21cda79-30a0-4c12-9299-d8629d76d8cf",
+    "scopeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "status": "SUCCEEDED",
-    "scopeArn": "arn:aws:networkflowmonitor:us-east-1:123456789012:scope/e21cda79-30a0-4c12-9299-d8629d76d8cf",
+    "scopeArn": "arn:aws:networkflowmonitor:us-west-2:123456789012:scope/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "targets": [
         {
             "targetIdentifier": {
@@ -316,7 +316,7 @@ Output:
                 },
                 "targetType": "ACCOUNT"
             },
-            "region": "us-east-1"
+            "region": "us-west-2"
         }
     ],
     "tags": {}
@@ -343,7 +343,7 @@ Output:
 {
     "monitors": [
         {
-            "monitorArn": "arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/Demo",
+            "monitorArn": "arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/Demo",
             "monitorName": "Demo",
             "monitorStatus": "ACTIVE"
         }
@@ -371,9 +371,9 @@ Output:
 {
     "scopes": [
         {
-            "scopeId": "fdc20616-6bb4-4242-a24e-a748e65ca7ac",
+            "scopeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "status": "SUCCEEDED",
-            "scopeArn": "arn:aws:networkflowmonitor:us-east-1:123456789012:scope/fdc20616-6bb4-4242-a24e-a748e65ca7ac"
+            "scopeArn": "arn:aws:networkflowmonitor:us-west-2:123456789012:scope/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
@@ -392,7 +392,7 @@ The following `list-tags-for-resource` example returns all the tags associated w
 
 ```
 aws networkflowmonitor list-tags-for-resource \
-    --resource-arn {{arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/Demo}}
+    --resource-arn {{arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/Demo}}
 ```
 Output:
 
@@ -428,7 +428,7 @@ Output:
 
 ```
 {
-    "queryId": "aecd3a88-0283-35b0-a17d-6e944dc8531d"
+    "queryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Evaluate network flows with workload insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-configure-evaluate-flows.html) in the *Amazon CloudWatch User Guide*.
@@ -445,7 +445,7 @@ The following `start-query-workload-insights-top-contributors-data` example star
 
 ```
 aws networkflowmonitor start-query-workload-insights-top-contributors-data \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --start-time {{2024-12-09T19:00:00Z}} \
     --end-time {{2024-12-09T19:15:00Z}} \
     --metric-name {{DATA_TRANSFERRED}} \
@@ -455,7 +455,7 @@ Output:
 
 ```
 {
-    "queryId": "cc4f4ab3-3103-33b8-80ff-d6597a0c6cea"
+    "queryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Evaluate network flows with workload insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-configure-evaluate-flows.html) in the *Amazon CloudWatch User Guide*.
@@ -472,7 +472,7 @@ The following `start-query-workload-insights-top-contributors` example starts th
 
 ```
 aws networkflowmonitor start-query-workload-insights-top-contributors \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --start-time {{2024-12-09T19:00:00Z}} \
     --end-time {{2024-12-09T19:15:00Z}} \
     --metric-name {{DATA_TRANSFERRED}} \
@@ -482,7 +482,7 @@ Output:
 
 ```
 {
-    "queryId": "1fc423d3-b144-37a6-80e6-e2c7d26eea0c"
+    "queryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Evaluate network flows with workload insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-configure-evaluate-flows.html) in the *Amazon CloudWatch User Guide*.
@@ -500,7 +500,7 @@ The following `stop-query-monitor-top-contributors` example stops the query in t
 ```
 aws networkflowmonitor stop-query-monitor-top-contributors \
     --monitor-name {{Demo}} \
-    --query-id {{aecd3a88-0283-35b0-a17d-6e944dc8531d}}
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Evaluate network flows with workload insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-configure-evaluate-flows.html) in the *Amazon CloudWatch User Guide*.
@@ -517,8 +517,8 @@ The following `stop-query-workload-insights-top-contributors-data` example stops
 
 ```
 aws networkflowmonitor stop-query-workload-insights-top-contributors-data \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
-    --query-id {{cc4f4ab3-3103-33b8-80ff-d6597a0c6cea}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Evaluate network flows with workload insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-configure-evaluate-flows.html) in the *Amazon CloudWatch User Guide*.
@@ -535,8 +535,8 @@ The following `stop-query-workload-insights-top-contributors` example stops the 
 
 ```
 aws networkflowmonitor stop-query-workload-insights-top-contributors \
-    --scope-id {{e21cda79-30a0-4c12-9299-d8629d76d8cf}} \
-    --query-id {{1fc423d3-b144-37a6-80e6-e2c7d26eea0c}}
+    --scope-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --query-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Evaluate network flows with workload insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor-configure-evaluate-flows.html) in the *Amazon CloudWatch User Guide*.
@@ -553,7 +553,7 @@ The following `tag-resource` example adds a tag to the monitor in the specified 
 
 ```
 aws networkflowmonitor tag-resource \
-    --resource-arn {{arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/Demo}} \
+    --resource-arn {{arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/Demo}} \
     --tags {{Key=stack,Value=Production}}
 ```
 This command produces no output.
@@ -571,7 +571,7 @@ The following `untag-resource` example removes a tag from the monitor in the spe
 
 ```
 aws networkflowmonitor untag-resource \
-    --resource-arn {{arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/Demo}} \
+    --resource-arn {{arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/Demo}} \
     --tag-keys {{stack}}
 ```
 This command produces no output.
@@ -590,13 +590,13 @@ The following `update-monitor` example updates the monitor named `Demo` in the s
 ```
 aws networkflowmonitor update-monitor \
     --monitor-name {{Demo}} \
-    --local-resources-to-add type="AWS::EC2::VPC",identifier="arn:aws:ec2:us-east-1:123456789012:vpc/vpc-048d08dfbec623f94"
+    --local-resources-to-add type="AWS::EC2::VPC",identifier="arn:aws:ec2:us-west-2:123456789012:vpc/vpc-048d08dfbec623f94"
 ```
 Output:
 
 ```
 {
-    "monitorArn": "arn:aws:networkflowmonitor:us-east-1:123456789012:monitor/Demo",
+    "monitorArn": "arn:aws:networkflowmonitor:us-west-2:123456789012:monitor/Demo",
     "monitorName": "Demo",
     "monitorStatus": "ACTIVE",
     "tags": {

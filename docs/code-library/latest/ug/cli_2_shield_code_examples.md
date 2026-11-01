@@ -26,7 +26,7 @@ The following code example shows how to use `associate-drt-log-bucket`.
 
 **AWS CLI**
 **To authorize the DRT to access an Amazon S3 bucket**
-The following `associate-drt-log-bucket` example creates an association between the DRT and the specified S3 bucket. This permits the DRT to access the bucket on behalf of the account.:
+The following `associate-drt-log-bucket` example creates an association between the DRT and the specified S3 bucket. This permits the DRT to access the bucket on behalf of the account.
 
 ```
 aws shield associate-drt-log-bucket \
@@ -120,7 +120,8 @@ The following code example shows how to use `describe-attack`.
 The following `describe-attack` example displays details about the DDoS attack with the specified attack ID. You can obtain attack IDs by running the `list-attacks` command.
 
 ```
-aws shield describe-attack --attack-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
+aws shield describe-attack \
+    --attack-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -394,11 +395,11 @@ Output:
         },
         {
             "EmailAddress": "ddos-notifications@example.com"
-       }
+        }
     ]
 }
 ```
-For more information, see How AWS Shield Works<https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html> in the *AWS Shield Advanced Developer Guide*.
+For more information, see [How AWS Shield and Shield Advanced work](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html) in the *AWS Shield Advanced Developer Guide*.
 +  For API details, see [DescribeEmergencyContactSettings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/shield/describe-emergency-contact-settings.html) in *AWS CLI Command Reference*.
 
 ### `describe-protection`
@@ -435,7 +436,7 @@ The following code example shows how to use `describe-subscription`.
 
 **AWS CLI**
 **To retrieve the details of the AWS Shield Advanced protection for the account**
-The following `describe-subscription` example displays details about the Shield Advanced protection provided for the account.:
+The following `describe-subscription` example displays details about the Shield Advanced protection provided for the account.
 
 ```
 aws shield describe-subscription
@@ -607,7 +608,7 @@ The following `update-emergency-contact-settings` example defines two e-mail add
 
 ```
 aws shield update-emergency-contact-settings \
-        --emergency-contact-list {{EmailAddress=ops@example.com}} {{EmailAddress=ddos-notifications@example.com}}
+    --emergency-contact-list {{EmailAddress=ops@example.com}} {{EmailAddress=ddos-notifications@example.com}}
 ```
 This command produces no output.
 For more information, see [How AWS Shield Works](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html) in the *AWS Shield Advanced Developer Guide*.

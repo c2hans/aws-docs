@@ -26,7 +26,7 @@ The following code example shows how to use `abort-multipart-upload`.
 
 **AWS CLI**
 **To abort the specified multipart upload**
-The following `abort-multipart-upload` command aborts a multipart upload for the key `multipart/01` in the bucket `amzn-s3-demo-bucket`.
+The following `abort-multipart-upload` example aborts a multipart upload for the key `multipart/01` in the bucket `amzn-s3-demo-bucket`.
 
 ```
 aws s3api abort-multipart-upload \
@@ -34,7 +34,9 @@ aws s3api abort-multipart-upload \
     --key {{multipart/01}} \
     --upload-id {{dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R}}
 ```
+This command produces no output.
 The upload ID required by this command is output by `create-multipart-upload` and can also be retrieved with `list-multipart-uploads`.
+For more information, see [Aborting a multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/abort-mpu.html) in the *Amazon S3 User Guide*.
 +  For API details, see [AbortMultipartUpload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/abort-multipart-upload.html) in *AWS CLI Command Reference*.
 
 ### `complete-multipart-upload`
@@ -43,31 +45,36 @@ The upload ID required by this command is output by `create-multipart-upload` an
 The following code example shows how to use `complete-multipart-upload`.
 
 **AWS CLI**
-The following command completes a multipart upload for the key `multipart/01` in the bucket `amzn-s3-demo-bucket`:
+**To complete a multipart upload**
+The following `complete-multipart-upload` example completes a multipart upload for the key `multipart/01` in the bucket `amzn-s3-demo-bucket`.
 
 ```
-aws s3api complete-multipart-upload --multipart-upload {{file://mpustruct}} --bucket {{amzn-s3-demo-bucket}} --key '{{multipart/01}}' --upload-id {{dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R}}
+aws s3api complete-multipart-upload \
+    --multipart-upload {{file://mpustruct}} \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key '{{multipart/01}}' \
+    --upload-id {{dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R}}
 ```
 The upload ID required by this command is output by `create-multipart-upload` and can also be retrieved with `list-multipart-uploads`.
 The multipart upload option in the above command takes a JSON structure that describes the parts of the multipart upload that should be reassembled into the complete file. In this example, the `file://` prefix is used to load the JSON structure from a file in the local folder named `mpustruct`.
-mpustruct:
+Contents of `mpustruct`:
 
 ```
 {
-  "Parts": [
-    {
-      "ETag": "e868e0f4719e394144ef36531ee6824c",
-      "PartNumber": 1
-    },
-    {
-      "ETag": "6bb2b12753d66fe86da4998aa33fffb0",
-      "PartNumber": 2
-    },
-    {
-      "ETag": "d0a0112e841abec9c9ec83406f0159c8",
-      "PartNumber": 3
-    }
-  ]
+    "Parts": [
+        {
+            "ETag": "e868e0f4719e394144ef36531ee6824c",
+            "PartNumber": 1
+        },
+        {
+            "ETag": "6bb2b12753d66fe86da4998aa33fffb0",
+            "PartNumber": 2
+        },
+        {
+            "ETag": "d0a0112e841abec9c9ec83406f0159c8",
+            "PartNumber": 3
+        }
+    ]
 }
 ```
 The ETag value for each part is upload is output each time you upload a part using the `upload-part` command and can also be retrieved by calling `list-parts` or calculated by taking the MD5 checksum of each part.
@@ -81,6 +88,7 @@ Output:
     "Key": "multipart/01"
 }
 ```
+For more information, see [Uploading and copying objects using multipart upload in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [CompleteMultipartUpload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/complete-multipart-upload.html) in *AWS CLI Command Reference*.
 
 ### `copy-object`
@@ -89,10 +97,14 @@ Output:
 The following code example shows how to use `copy-object`.
 
 **AWS CLI**
-The following command copies an object from `bucket-1` to `bucket-2`:
+**To copy an object**
+The following `copy-object` example copies an object from `bucket-1` to `amzn-s3-demo-bucket2`.
 
 ```
-aws s3api copy-object --copy-source {{bucket-1/test.txt}} --key {{test.txt}} --bucket {{bucket-2}}
+aws s3api copy-object \
+    --copy-source {{bucket-1/test.txt}} \
+    --key {{test.txt}} \
+    --bucket {{amzn-s3-demo-bucket2}}
 ```
 Output:
 
@@ -105,6 +117,7 @@ Output:
     "VersionId": "YdnYvTCVDqRRFA.NFJjy36p0hxifMlkA"
 }
 ```
+For more information, see [Copying, moving, and renaming objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/copy-object.html) in the *Amazon S3 User Guide*.
 +  For API details, see [CopyObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/copy-object.html) in *AWS CLI Command Reference*.
 
 ### `cp`
@@ -113,8 +126,8 @@ Output:
 The following code example shows how to use `cp`.
 
 **AWS CLI**
-**Example 1: Copying a local file to S3**
-The following `cp` command copies a single file to a specified bucket and key:
+**Example 1: To copy a local file to S3**
+The following `cp` example copies a single file to a specified bucket and key.
 
 ```
 aws s3 cp {{test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}}
@@ -124,8 +137,8 @@ Output:
 ```
 upload: test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 2: Copying a local file to S3 with an expiration date**
-The following `cp` command copies a single file to a specified bucket and key that expires at the specified ISO 8601 timestamp:
+**Example 2: To copy a local file to S3 with an expiration date**
+The following `cp` example copies a single file to a specified bucket and key that expires at the specified ISO 8601 timestamp.
 
 ```
 aws s3 cp {{test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}} \
@@ -136,8 +149,8 @@ Output:
 ```
 upload: test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 3: Copying a file from S3 to S3**
-The following `cp` command copies a single S3 object to a specified bucket and key:
+**Example 3: To copy a file from S3 to S3**
+The following `cp` example copies a single S3 object to a specified bucket and key.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}}
@@ -147,8 +160,8 @@ Output:
 ```
 copy: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 4: Copying an S3 object to a local file**
-The following `cp` command copies a single object to a specified file locally:
+**Example 4: To copy an S3 object to a local file**
+The following `cp` example copies a single object to a specified file locally.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/test.txt}} {{test2.txt}}
@@ -158,8 +171,8 @@ Output:
 ```
 download: s3://amzn-s3-demo-bucket/test.txt to test2.txt
 ```
-**Example 5: Copying an S3 object from one bucket to another**
-The following `cp` command copies a single object to a specified bucket while retaining its original name:
+**Example 5: To copy an S3 object from one bucket to another**
+The following `cp` example copies a single object to a specified bucket while retaining its original name.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/test.txt}} {{s3://amzn-s3-demo-bucket2/}}
@@ -169,8 +182,8 @@ Output:
 ```
 copy: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket2/test.txt
 ```
-**Example 6: Recursively copying S3 objects to a local directory**
-When passed with the parameter `--recursive`, the following `cp` command recursively copies all objects under a specified prefix and bucket to a specified directory. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `test2.txt`:
+**Example 6: To recursively copy S3 objects to a local directory**
+The following `cp` example recursively copies all objects under a specified prefix and bucket to a specified directory when passed with the parameter `--recursive`. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `test2.txt`.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket}} {{.}} \
@@ -182,8 +195,8 @@ Output:
 download: s3://amzn-s3-demo-bucket/test1.txt to test1.txt
 download: s3://amzn-s3-demo-bucket/test2.txt to test2.txt
 ```
-**Example 7: Recursively copying local files to S3**
-When passed with the parameter `--recursive`, the following `cp` command recursively copies all files under a specified directory to a specified bucket and prefix while excluding some files by using an `--exclude` parameter. In this example, the directory `myDir` has the files `test1.txt` and `test2.jpg`:
+**Example 7: To recursively copy local files to S3**
+The following `cp` example recursively copies all files under a specified directory to a specified bucket and prefix when passed with the parameter `--recursive`, while excluding some files by using an `--exclude` parameter. In this example, the directory `myDir` has the files `test1.txt` and `test2.jpg`.
 
 ```
 aws s3 cp {{myDir}} {{s3://amzn-s3-demo-bucket/}} \
@@ -195,8 +208,8 @@ Output:
 ```
 upload: myDir/test1.txt to s3://amzn-s3-demo-bucket/test1.txt
 ```
-**Example 8: Recursively copying S3 objects to another bucket**
-When passed with the parameter `--recursive`, the following `cp` command recursively copies all objects under a specified bucket to another bucket while excluding some objects by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `another/test1.txt`:
+**Example 8: To recursively copy S3 objects to another bucket**
+The following `cp` example recursively copies all objects under a specified bucket to another bucket when passed with the parameter `--recursive`, while excluding some objects by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `another/test1.txt`.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/}} {{s3://amzn-s3-demo-bucket2/}} \
@@ -208,7 +221,7 @@ Output:
 ```
 copy: s3://amzn-s3-demo-bucket/test1.txt to s3://amzn-s3-demo-bucket2/test1.txt
 ```
-You can combine `--exclude` and `--include` options to copy only objects that match a pattern, excluding all others:
+You can combine `--exclude` and `--include` options to copy only objects that match a pattern, excluding all others.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/logs/}} {{s3://amzn-s3-demo-bucket2/logs/}} \
@@ -222,8 +235,8 @@ Output:
 copy: s3://amzn-s3-demo-bucket/logs/test/test.log to s3://amzn-s3-demo-bucket2/logs/test/test.log
 copy: s3://amzn-s3-demo-bucket/logs/test3.log to s3://amzn-s3-demo-bucket2/logs/test3.log
 ```
-**Example 9: Setting the Access Control List (ACL) while copying an S3 object**
-The following `cp` command copies a single object to a specified bucket and key while setting the ACL to `public-read-write`:
+**Example 9: To set the Access Control List (ACL) while copying an S3 object**
+The following `cp` example copies a single object to a specified bucket and key while setting the ACL to `public-read-write`.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}} \
@@ -234,7 +247,7 @@ Output:
 ```
 copy: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-Note that if you're using the `--acl` option, ensure that any associated IAM policies include the `"s3:PutObjectAcl"` action:
+Note that if you're using the `--acl` option, ensure that any associated IAM policies include the `"s3:PutObjectAcl"` action.
 
 ```
 aws iam get-user-policy \
@@ -265,39 +278,43 @@ Output:
     }
 }
 ```
-**Example 10: Granting permissions for an S3 object**
-The following `cp` command illustrates the use of the `--grants` option to grant read access to all users identified by URI and full control to a specific user identified by their Canonical ID:
+**Example 10: To grant permissions for an S3 object**
+The following `cp` example uses the `--grants` option to grant read access to all users identified by URI and full control to a specific user identified by their Canonical ID.
 
 ```
-aws s3 cp {{file.txt}} {{s3://amzn-s3-demo-bucket/}} --grants {{read=uri=http://acs.amazonaws.com/groups/global/AllUsers}} {{full=id=79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be}}
+aws s3 cp {{file.txt}} {{s3://amzn-s3-demo-bucket/}} \
+    --grants {{read=uri=http://acs.amazonaws.com/groups/global/AllUsers}} {{full=id=79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be}}
 ```
 Output:
 
 ```
 upload: file.txt to s3://amzn-s3-demo-bucket/file.txt
 ```
-**Example 11: Uploading a local file stream to S3**
-PowerShell may alter the encoding of or add a CRLF to piped input.
-The following `cp` command uploads a local file stream from standard input to a specified bucket and key:
+**Example 11: To upload a local file stream to S3**
+The following `cp` example uploads a local file stream from standard input to a specified bucket and key.
 
 ```
 aws s3 cp {{-}} {{s3://amzn-s3-demo-bucket/stream.txt}}
 ```
-**Example 12: Uploading a local file stream that is larger than 50GB to S3**
-The following `cp` command uploads a 51GB local file stream from standard input to a specified bucket and key. The `--expected-size` option must be provided, or the upload may fail when it reaches the default part limit of 10,000:
+This command produces no output.
+PowerShell may alter the encoding of or add a CRLF to piped input.
+**Example 12: To upload a local file stream that is larger than 50GB to S3**
+The following `cp` example uploads a 51GB local file stream from standard input to a specified bucket and key. The `--expected-size` option must be provided, or the upload may fail when it reaches the default part limit of 10,000.
 
 ```
-aws s3 cp {{-}} {{s3://amzn-s3-demo-bucket/stream.txt}} --expected-size {{54760833024}}
+aws s3 cp {{-}} {{s3://amzn-s3-demo-bucket/stream.txt}} \
+    --expected-size {{54760833024}}
 ```
-**Example 13: Downloading an S3 object as a local file stream**
-PowerShell may alter the encoding of or add a CRLF to piped or redirected output.
-The following `cp` command downloads an S3 object locally as a stream to standard output. Downloading as a stream is not currently compatible with the `--recursive` parameter:
+This command produces no output.
+**Example 13: To download an S3 object as a local file stream**
+The following `cp` example downloads an S3 object locally as a stream to standard output. Downloading as a stream is not currently compatible with the `--recursive` parameter.
 
 ```
 aws s3 cp {{s3://amzn-s3-demo-bucket/stream.txt}} {{-}}
 ```
-**Example 14: Uploading to an S3 access point**
-The following `cp` command uploads a single file (`mydoc.txt`) to the access point (`myaccesspoint`) at the key (`mykey`):
+PowerShell may alter the encoding of or add a CRLF to piped or redirected output.
+**Example 14: To upload to an S3 access point**
+The following `cp` example uploads a single file (`mydoc.txt`) to the access point (`myaccesspoint`) at the key (`mykey`).
 
 ```
 aws s3 cp {{mydoc.txt}} {{s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey}}
@@ -307,8 +324,8 @@ Output:
 ```
 upload: mydoc.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey
 ```
-**Example 15: Downloading from an S3 access point**
-The following `cp` command downloads a single object (`mykey`) from the access point (`myaccesspoint`) to the local file (`mydoc.txt`):
+**Example 15: To download from an S3 access point**
+The following `cp` example downloads a single object (`mykey`) from the access point (`myaccesspoint`) to the local file (`mydoc.txt`).
 
 ```
 aws s3 cp {{s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey}} {{mydoc.txt}}
@@ -318,6 +335,7 @@ Output:
 ```
 download: s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey to mydoc.txt
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-copy) in the *AWS CLI User Guide*.
 +  For API details, see [Cp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/cp.html) in *AWS CLI Command Reference*.
 
 ### `create-bucket`
@@ -327,7 +345,7 @@ The following code example shows how to use `create-bucket`.
 
 **AWS CLI**
 **Example 1: To create a bucket**
-The following `create-bucket` example creates a bucket named `amzn-s3-demo-bucket`:
+The following `create-bucket` example creates a bucket named `amzn-s3-demo-bucket`.
 
 ```
 aws s3api create-bucket \
@@ -360,13 +378,13 @@ Output:
 ```
 For more information, see [Controlling ownership of objects and disabling ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) in the *Amazon S3 User Guide*.
 **Example 3: To create a bucket outside of the ``us-east-1`` region**
-The following `create-bucket` example creates a bucket named `amzn-s3-demo-bucket` in the `eu-west-1` region. Regions outside of `us-east-1` require the appropriate `LocationConstraint` to be specified in order to create the bucket in the desired region.
+The following `create-bucket` example creates a bucket named `amzn-s3-demo-bucket` in the `us-west-2` region. Regions outside of `us-east-1` require the appropriate `LocationConstraint` to be specified in order to create the bucket in the desired region.
 
 ```
 aws s3api create-bucket \
     --bucket {{amzn-s3-demo-bucket}} \
-    --region {{eu-west-1}} \
-    --create-bucket-configuration {{LocationConstraint=eu-west-1}}
+    --region {{us-west-2}} \
+    --create-bucket-configuration {{LocationConstraint=us-west-2}}
 ```
 Output:
 
@@ -384,10 +402,13 @@ For more information, see [Creating a bucket](https://docs.aws.amazon.com/Amazon
 The following code example shows how to use `create-multipart-upload`.
 
 **AWS CLI**
-The following command creates a multipart upload in the bucket `amzn-s3-demo-bucket` with the key `multipart/01`:
+**To create a multipart upload**
+The following `create-multipart-upload` example creates a multipart upload in the bucket `amzn-s3-demo-bucket` with the key `multipart/01`.
 
 ```
-aws s3api create-multipart-upload --bucket {{amzn-s3-demo-bucket}} --key '{{multipart/01}}'
+aws s3api create-multipart-upload \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key '{{multipart/01}}'
 ```
 Output:
 
@@ -399,6 +420,7 @@ Output:
 }
 ```
 The completed file will be named `01` in a folder called `multipart` in the bucket `amzn-s3-demo-bucket`. Save the upload ID, key and bucket name for use with the `upload-part` command.
+For more information, see [Uploading and copying objects using multipart upload in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [CreateMultipartUpload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/create-multipart-upload.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-analytics-configuration`
@@ -416,6 +438,7 @@ aws s3api delete-bucket-analytics-configuration \
     --id {{1}}
 ```
 This command produces no output.
+For more information, see [Amazon S3 analytics - Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketAnalyticsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-analytics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-cors`
@@ -424,11 +447,15 @@ This command produces no output.
 The following code example shows how to use `delete-bucket-cors`.
 
 **AWS CLI**
-The following command deletes a Cross-Origin Resource Sharing configuration from a bucket named `amzn-s3-demo-bucket`:
+**To delete the CORS configuration of a bucket**
+The following `delete-bucket-cors` example deletes a Cross-Origin Resource Sharing configuration from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket-cors --bucket {{amzn-s3-demo-bucket}}
+aws s3api delete-bucket-cors \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Using cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketCors](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-cors.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-encryption`
@@ -445,6 +472,7 @@ aws s3api delete-bucket-encryption \
     --bucket {{amzn-s3-demo-bucket}}
 ```
 This command produces no output.
+For more information, see [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketEncryption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-encryption.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-intelligent-tiering-configuration`
@@ -480,6 +508,7 @@ aws s3api delete-bucket-inventory-configuration \
     --id {{1}}
 ```
 This command produces no output.
+For more information, see [Cataloging and analyzing your data with S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketInventoryConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-inventory-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-lifecycle`
@@ -488,11 +517,15 @@ This command produces no output.
 The following code example shows how to use `delete-bucket-lifecycle`.
 
 **AWS CLI**
-The following command deletes a lifecycle configuration from a bucket named `amzn-s3-demo-bucket`:
+**To delete the lifecycle configuration of a bucket**
+The following `delete-bucket-lifecycle` example deletes a lifecycle configuration from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket-lifecycle --bucket {{amzn-s3-demo-bucket}}
+aws s3api delete-bucket-lifecycle \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Managing the lifecycle of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketLifecycle](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-lifecycle.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-metrics-configuration`
@@ -510,6 +543,7 @@ aws s3api delete-bucket-metrics-configuration \
     --id {{123}}
 ```
 This command produces no output.
+For more information, see [CloudWatch metrics configurations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-configurations.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketMetricsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-metrics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-ownership-controls`
@@ -535,11 +569,15 @@ For more information, see [Setting Object Ownership on an existing bucket](https
 The following code example shows how to use `delete-bucket-policy`.
 
 **AWS CLI**
-The following command deletes a bucket policy from a bucket named `amzn-s3-demo-bucket`:
+**To delete a bucket policy**
+The following `delete-bucket-policy` example deletes a bucket policy from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket-policy --bucket {{amzn-s3-demo-bucket}}
+aws s3api delete-bucket-policy \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-replication`
@@ -548,11 +586,15 @@ aws s3api delete-bucket-policy --bucket {{amzn-s3-demo-bucket}}
 The following code example shows how to use `delete-bucket-replication`.
 
 **AWS CLI**
-The following command deletes a replication configuration from a bucket named `amzn-s3-demo-bucket`:
+**To delete the replication configuration of a bucket**
+The following `delete-bucket-replication` example deletes a replication configuration from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket-replication --bucket {{amzn-s3-demo-bucket}}
+aws s3api delete-bucket-replication \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Replicating objects within and across Regions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketReplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-replication.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-tagging`
@@ -561,11 +603,15 @@ aws s3api delete-bucket-replication --bucket {{amzn-s3-demo-bucket}}
 The following code example shows how to use `delete-bucket-tagging`.
 
 **AWS CLI**
-The following command deletes a tagging configuration from a bucket named `amzn-s3-demo-bucket`:
+**To delete the tagging configuration of a bucket**
+The following `delete-bucket-tagging` example deletes a tagging configuration from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket-tagging --bucket {{amzn-s3-demo-bucket}}
+aws s3api delete-bucket-tagging \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Using cost allocation S3 bucket tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-tagging.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket-website`
@@ -574,11 +620,15 @@ aws s3api delete-bucket-tagging --bucket {{amzn-s3-demo-bucket}}
 The following code example shows how to use `delete-bucket-website`.
 
 **AWS CLI**
-The following command deletes a website configuration from a bucket named `amzn-s3-demo-bucket`:
+**To delete the website configuration of a bucket**
+The following `delete-bucket-website` example deletes a website configuration from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket-website --bucket {{amzn-s3-demo-bucket}}
+aws s3api delete-bucket-website \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucketWebsite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket-website.html) in *AWS CLI Command Reference*.
 
 ### `delete-bucket`
@@ -587,11 +637,15 @@ aws s3api delete-bucket-website --bucket {{amzn-s3-demo-bucket}}
 The following code example shows how to use `delete-bucket`.
 
 **AWS CLI**
-The following command deletes a bucket named `amzn-s3-demo-bucket`:
+**To delete a bucket**
+The following `delete-bucket` example deletes a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-bucket --bucket {{amzn-s3-demo-bucket}} --region {{us-east-1}}
+aws s3api delete-bucket \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
+This command produces no output.
+For more information, see [Deleting a general purpose bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteBucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-bucket.html) in *AWS CLI Command Reference*.
 
 ### `delete-object-tagging`
@@ -609,6 +663,7 @@ aws s3api delete-object-tagging \
     --key {{doc1.rtf}}
 ```
 This command produces no output.
+For more information, see [Tagging your objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteObjectTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object-tagging.html) in *AWS CLI Command Reference*.
 
 ### `delete-object`
@@ -617,20 +672,24 @@ This command produces no output.
 The following code example shows how to use `delete-object`.
 
 **AWS CLI**
-The following command deletes an object named `test.txt` from a bucket named `amzn-s3-demo-bucket`:
+**To delete an object**
+The following `delete-object` example deletes an object named `test.txt` from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-object --bucket {{amzn-s3-demo-bucket}} --key {{test.txt}}
+aws s3api delete-object \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{test.txt}}
 ```
-If bucket versioning is enabled, the output will contain the version ID of the delete marker:
+If bucket versioning is enabled, the output contains the version ID of the delete marker.
+Output:
 
 ```
 {
-  "VersionId": "9_gKg5vG56F.TTEUdwkxGpJ3tNDlWlGq",
-  "DeleteMarker": true
+    "VersionId": "9_gKg5vG56F.TTEUdwkxGpJ3tNDlWlGq",
+    "DeleteMarker": true
 }
 ```
-For more information about deleting objects, see Deleting Objects in the *Amazon S3 Developer Guide*.
+For more information, see [Deleting a single object](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-object.html) in *AWS CLI Command Reference*.
 
 ### `delete-objects`
@@ -639,21 +698,25 @@ For more information about deleting objects, see Deleting Objects in the *Amazon
 The following code example shows how to use `delete-objects`.
 
 **AWS CLI**
-The following command deletes an object from a bucket named `amzn-s3-demo-bucket`:
+**To delete an object by using a JSON file**
+The following `delete-objects` example deletes an object from a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api delete-objects --bucket {{amzn-s3-demo-bucket}} --delete {{file://delete.json}}
+aws s3api delete-objects \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --delete {{file://delete.json}}
 ```
-`delete.json` is a JSON document in the current directory that specifies the object to delete:
+The file `delete.json` is a JSON document in the current directory that specifies the object to delete.
+Contents of `delete.json`:
 
 ```
 {
-  "Objects": [
-    {
-      "Key": "test1.txt"
-    }
-  ],
-  "Quiet": false
+    "Objects": [
+        {
+            "Key": "test1.txt"
+        }
+    ],
+    "Quiet": false
 }
 ```
 Output:
@@ -669,6 +732,7 @@ Output:
     ]
 }
 ```
+For more information, see [Deleting multiple objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-multiple-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeleteObjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-objects.html) in *AWS CLI Command Reference*.
 
 ### `delete-public-access-block`
@@ -685,6 +749,7 @@ aws s3api delete-public-access-block \
     --bucket {{amzn-s3-demo-bucket}}
 ```
 This command produces no output.
+For more information, see [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html) in the *Amazon S3 User Guide*.
 +  For API details, see [DeletePublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/delete-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-accelerate-configuration`
@@ -707,6 +772,7 @@ Output:
     "Status": "Enabled"
 }
 ```
+For more information, see [Configuring fast, secure file transfers using Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketAccelerateConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-accelerate-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-acl`
@@ -715,10 +781,12 @@ Output:
 The following code example shows how to use `get-bucket-acl`.
 
 **AWS CLI**
-The following command retrieves the access control list for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the access control list of a bucket**
+The following `get-bucket-acl` example retrieves the access control list for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-acl --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-acl \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -739,6 +807,7 @@ Output:
     ]
 }
 ```
+For more information, see [Access control list (ACL) overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketAcl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-acl.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-analytics-configuration`
@@ -765,6 +834,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon S3 analytics - Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketAnalyticsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-analytics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-cors`
@@ -773,10 +843,12 @@ Output:
 The following code example shows how to use `get-bucket-cors`.
 
 **AWS CLI**
-The following command retrieves the Cross-Origin Resource Sharing configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the CORS configuration of a bucket**
+The following `get-bucket-cors` example retrieves the Cross-Origin Resource Sharing configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-cors --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-cors \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -815,6 +887,7 @@ Output:
     ]
 }
 ```
+For more information, see [Using cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketCors](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-cors.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-encryption`
@@ -845,6 +918,7 @@ Output:
     }
 }
 ```
+For more information, see [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketEncryption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-encryption.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-intelligent-tiering-configuration`
@@ -922,6 +996,7 @@ Output:
     }
 }
 ```
+For more information, see [Cataloging and analyzing your data with S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketInventoryConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-inventory-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-lifecycle-configuration`
@@ -930,10 +1005,12 @@ Output:
 The following code example shows how to use `get-bucket-lifecycle-configuration`.
 
 **AWS CLI**
-The following command retrieves the lifecycle configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the lifecycle configuration of a bucket**
+The following `get-bucket-lifecycle-configuration` example retrieves the lifecycle configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-lifecycle-configuration --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-lifecycle-configuration \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -965,6 +1042,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing the lifecycle of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketLifecycleConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-lifecycle-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-lifecycle`
@@ -973,36 +1051,39 @@ Output:
 The following code example shows how to use `get-bucket-lifecycle`.
 
 **AWS CLI**
-The following command retrieves the lifecycle configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the lifecycle configuration of a bucket**
+The following `get-bucket-lifecycle` example retrieves the lifecycle configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-lifecycle --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-lifecycle \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
 ```
 {
-  "Rules": [
-    {
-      "ID": "Move to Glacier after sixty days (objects in logs/2015/)",
-      "Prefix": "logs/2015/",
-      "Status": "Enabled",
-      "Transition": {
-        "Days": 60,
-        "StorageClass": "GLACIER"
-      }
-    },
-    {
-      "Expiration": {
-        "Date": "2016-01-01T00:00:00.000Z"
-      },
-      "ID": "Delete 2014 logs in 2016.",
-      "Prefix": "logs/2014/",
-      "Status": "Enabled"
-    }
-  ]
+    "Rules": [
+        {
+            "ID": "Move to Glacier after sixty days (objects in logs/2015/)",
+            "Prefix": "logs/2015/",
+            "Status": "Enabled",
+            "Transition": {
+                "Days": 60,
+                "StorageClass": "GLACIER"
+            }
+        },
+        {
+            "Expiration": {
+                "Date": "2016-01-01T00:00:00.000Z"
+            },
+            "ID": "Delete 2014 logs in 2016.",
+            "Prefix": "logs/2014/",
+            "Status": "Enabled"
+        }
+    ]
 }
 ```
+For more information, see [Managing the lifecycle of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketLifecycle](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-lifecycle.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-location`
@@ -1011,10 +1092,12 @@ Output:
 The following code example shows how to use `get-bucket-location`.
 
 **AWS CLI**
-The following command retrieves the location constraint for a bucket named `amzn-s3-demo-bucket`, if a constraint exists:
+**To retrieve the location constraint of a bucket**
+The following `get-bucket-location` example retrieves the location constraint for a bucket named `amzn-s3-demo-bucket`, if a constraint exists.
 
 ```
-aws s3api get-bucket-location --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-location \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1023,6 +1106,7 @@ Output:
     "LocationConstraint": "us-west-2"
 }
 ```
+For more information, see [General purpose buckets overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketLocation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-location.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-logging`
@@ -1045,9 +1129,10 @@ Output:
     "LoggingEnabled": {
         "TargetPrefix": "",
         "TargetBucket": "amzn-s3-demo-bucket-logs"
-          }
+    }
 }
 ```
+For more information, see [Logging requests with server access logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketLogging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-logging.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-metrics-configuration`
@@ -1076,6 +1161,7 @@ Output:
     }
 }
 ```
+For more information, see [CloudWatch metrics configurations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-configurations.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketMetricsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-metrics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-notification-configuration`
@@ -1084,10 +1170,12 @@ Output:
 The following code example shows how to use `get-bucket-notification-configuration`.
 
 **AWS CLI**
-The following command retrieves the notification configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the notification configuration of a bucket**
+The following `get-bucket-notification-configuration` example retrieves the notification configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-notification-configuration --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-notification-configuration \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1104,6 +1192,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketNotificationConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-notification-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-notification`
@@ -1112,10 +1201,12 @@ Output:
 The following code example shows how to use `get-bucket-notification`.
 
 **AWS CLI**
-The following command retrieves the notification configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the notification configuration of a bucket**
+The following `get-bucket-notification` example retrieves the notification configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-notification --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-notification \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1131,6 +1222,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-notification.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-ownership-controls`
@@ -1184,6 +1276,7 @@ Output:
     }
 }
 ```
+For more information, see [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketPolicyStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy-status.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-policy`
@@ -1192,10 +1285,12 @@ Output:
 The following code example shows how to use `get-bucket-policy`.
 
 **AWS CLI**
-The following command retrieves the bucket policy for a bucket named `amzn-s3-demo-bucket`:
+**Example 1: To retrieve a bucket policy**
+The following `get-bucket-policy` example retrieves the bucket policy for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-policy --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-policy \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1204,18 +1299,48 @@ Output:
     "Policy": "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":\"*\",\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::amzn-s3-demo-bucket/*\"},{\"Sid\":\"\",\"Effect\":\"Deny\",\"Principal\":\"*\",\"Action\":\"s3:GetObject\",\"Resource\":\"arn:aws:s3:::amzn-s3-demo-bucket/secret/*\"}]}"
 }
 ```
-Get and put a bucket policyThe following example shows how you can download an Amazon S3 bucket policy, make modifications to the file, and then use `put-bucket-policy` to apply the modified bucket policy. To download the bucket policy to a file, you can run:
+**Example 2: To get and put a bucket policy**
+The following `get-bucket-policy` example shows how you can download an Amazon S3 bucket policy, make modifications to the file, and then use `put-bucket-policy` to apply the modified bucket policy. To download the bucket policy to a file, run the following command.
 
 ```
-aws s3api get-bucket-policy --bucket amzn-s3-demo-bucket --query Policy --output text > policy.json
+aws s3api get-bucket-policy \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --query {{Policy}} \
+    --output {{text}} {{>}} {{policy.json}}
 ```
-You can then modify the `policy.json` file as needed. Finally you can apply this modified policy back to the S3 bucket by running:
-`policy.json` file as needed. Finally you can apply this modified policy back to the S3 bucket by running:
- file as needed. Finally you can apply this modified policy back to the S3 bucket by running:
+This command produces no output.
+You can then modify the `policy.json` file as needed. Finally you can apply this modified policy back to the S3 bucket by running the following command.
 
 ```
-aws s3api put-bucket-policy --bucket amzn-s3-demo-bucket --policy file://policy.json
+aws s3api put-bucket-policy \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --policy {{file://policy.json}}
 ```
+Contents of `policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/*"
+        },
+        {
+            "Sid": "",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/secret/*"
+        }
+    ]
+}
+```
+This command produces no output.
+For more information, see [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-replication`
@@ -1224,10 +1349,12 @@ aws s3api put-bucket-policy --bucket amzn-s3-demo-bucket --policy file://policy.
 The following code example shows how to use `get-bucket-replication`.
 
 **AWS CLI**
-The following command retrieves the replication configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the replication configuration of a bucket**
+The following `get-bucket-replication` example retrieves the replication configuration for a bucket named `amzn-s3-demo-bucket1`.
 
 ```
-aws s3api get-bucket-replication --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-replication \
+    --bucket {{amzn-s3-demo-bucket1}}
 ```
 Output:
 
@@ -1239,7 +1366,7 @@ Output:
                 "Status": "Enabled",
                 "Prefix": "",
                 "Destination": {
-                    "Bucket": "arn:aws:s3:::amzn-s3-demo-bucket-backup",
+                    "Bucket": "arn:aws:s3:::amzn-s3-demo-bucket2",
                     "StorageClass": "STANDARD"
                 },
                 "ID": "ZmUwNzE4ZmQ4tMjVhOS00MTlkLOGI4NDkzZTIWJjNTUtYTA1"
@@ -1249,6 +1376,7 @@ Output:
     }
 }
 ```
+For more information, see [Replicating objects within and across Regions](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketReplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-replication.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-request-payment`
@@ -1271,6 +1399,7 @@ Output:
     "Payer": "BucketOwner"
 }
 ```
+For more information, see [Using Requester Pays general purpose buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketRequestPayment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-request-payment.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-tagging`
@@ -1279,10 +1408,12 @@ Output:
 The following code example shows how to use `get-bucket-tagging`.
 
 **AWS CLI**
-The following command retrieves the tagging configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the tagging configuration of a bucket**
+The following `get-bucket-tagging` example retrieves the tagging configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-tagging --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-tagging \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1296,6 +1427,7 @@ Output:
     ]
 }
 ```
+For more information, see [Using cost allocation S3 bucket tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-tagging.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-versioning`
@@ -1304,10 +1436,12 @@ Output:
 The following code example shows how to use `get-bucket-versioning`.
 
 **AWS CLI**
-The following command retrieves the versioning configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the versioning configuration of a bucket**
+The following `get-bucket-versioning` example retrieves the versioning configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-versioning --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-versioning \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1316,6 +1450,7 @@ Output:
     "Status": "Enabled"
 }
 ```
+For more information, see [Retaining multiple versions of objects with S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketVersioning](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-versioning.html) in *AWS CLI Command Reference*.
 
 ### `get-bucket-website`
@@ -1324,10 +1459,12 @@ Output:
 The following code example shows how to use `get-bucket-website`.
 
 **AWS CLI**
-The following command retrieves the static website configuration for a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the website configuration of a bucket**
+The following `get-bucket-website` example retrieves the static website configuration for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-bucket-website --bucket {{amzn-s3-demo-bucket}}
+aws s3api get-bucket-website \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1341,6 +1478,7 @@ Output:
     }
 }
 ```
+For more information, see [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetBucketWebsite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-website.html) in *AWS CLI Command Reference*.
 
 ### `get-object-acl`
@@ -1349,10 +1487,13 @@ Output:
 The following code example shows how to use `get-object-acl`.
 
 **AWS CLI**
-The following command retrieves the access control list for an object in a bucket named `amzn-s3-demo-bucket`:
+**To retrieve the access control list of an object**
+The following `get-object-acl` example retrieves the access control list for an object in a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-object-acl --bucket {{amzn-s3-demo-bucket}} --key {{index.html}}
+aws s3api get-object-acl \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{index.html}}
 ```
 Output:
 
@@ -1379,6 +1520,7 @@ Output:
     ]
 }
 ```
+For more information, see [Access control list (ACL) overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectAcl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-acl.html) in *AWS CLI Command Reference*.
 
 ### `get-object-attributes`
@@ -1407,7 +1549,7 @@ Output:
     "ObjectSize": 405
 }
 ```
-For more information, see [GetObjectAttributes](https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAttributes.html) in the Amazon S3 API Reference.
+For more information, see [Working with object metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-attributes.html) in *AWS CLI Command Reference*.
 
 ### `get-object-legal-hold`
@@ -1416,12 +1558,12 @@ For more information, see [GetObjectAttributes](https://docs.aws.amazon.com/Amaz
 The following code example shows how to use `get-object-legal-hold`.
 
 **AWS CLI**
-**Retrieves the Legal Hold status of an object**
+**To retrieve the Legal Hold status of an object**
 The following `get-object-legal-hold` example retrieves the Legal Hold status for the specified object.
 
 ```
 aws s3api get-object-legal-hold \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --key {{doc1.rtf}}
 ```
 Output:
@@ -1433,6 +1575,7 @@ Output:
     }
 }
 ```
+For more information, see [Locking objects with Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectLegalHold](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-legal-hold.html) in *AWS CLI Command Reference*.
 
 ### `get-object-lock-configuration`
@@ -1446,7 +1589,7 @@ The following `get-object-lock-configuration` example retrieves the object lock 
 
 ```
 aws s3api get-object-lock-configuration \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}}
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1463,6 +1606,7 @@ Output:
     }
 }
 ```
+For more information, see [Configuring S3 Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock-configure.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectLockConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-lock-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-object-retention`
@@ -1476,7 +1620,7 @@ The following `get-object-retention` example retrieves the object retention conf
 
 ```
 aws s3api get-object-retention \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --key {{doc1.rtf}}
 ```
 Output:
@@ -1489,6 +1633,7 @@ Output:
     }
 }
 ```
+For more information, see [Locking objects with Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectRetention](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-retention.html) in *AWS CLI Command Reference*.
 
 ### `get-object-tagging`
@@ -1558,6 +1703,7 @@ Output:
     ]
 }
 ```
+For more information, see [Tagging your objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-tagging.html) in *AWS CLI Command Reference*.
 
 ### `get-object-torrent`
@@ -1566,12 +1712,17 @@ Output:
 The following code example shows how to use `get-object-torrent`.
 
 **AWS CLI**
-The following command creates a torrent for an object in a bucket named `amzn-s3-demo-bucket`:
+**To create a torrent for an object**
+The following `get-object-torrent` example creates a torrent for an object in a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api get-object-torrent --bucket {{amzn-s3-demo-bucket}} --key {{large-video-file.mp4}} {{large-video-file.torrent}}
+aws s3api get-object-torrent {{large-video-file.torrent}} \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{large-video-file.mp4}}
 ```
-The torrent file is saved locally in the current folder. Note that the output filename (`large-video-file.torrent`) is specified without an option name and must be the last argument in the command.
+This command produces no output.
+The torrent file is saved locally in the current folder. Note that the output filename (`large-video-file.torrent`) is specified without an option name.
+For more information, see [Working with objects in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/uploading-downloading-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObjectTorrent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object-torrent.html) in *AWS CLI Command Reference*.
 
 ### `get-object`
@@ -1580,18 +1731,52 @@ The torrent file is saved locally in the current folder. Note that the output fi
 The following code example shows how to use `get-object`.
 
 **AWS CLI**
-The following example uses the `get-object` command to download an object from Amazon S3:
+**Example 1: To download an object**
+The following `get-object` example downloads an object from Amazon S3.
 
 ```
-aws s3api get-object --bucket {{text-content}} --key {{dir/my_images.tar.bz2}} {{my_images.tar.bz2}}
+aws s3api get-object {{my_images.tar.bz2}} \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{dir/my_images.tar.bz2}}
 ```
-Note that the outfile parameter is specified without an option name such as "--outfile". The name of the output file must be the last parameter in the command.
-The example below demonstrates the use of `--range` to download a specific byte range from an object. Note the byte ranges needs to be prefixed with "bytes=":
+Output:
 
 ```
-aws s3api get-object --bucket {{text-content}} --key {{dir/my_data}} --range {{bytes=8888-9999}} {{my_data_range}}
+{
+    "AcceptRanges": "bytes",
+    "LastModified": "2015-04-16T18:19:14+00:00",
+    "ContentLength": 3191,
+    "ETag": "\"30a6ec7e1a9ad79c203d05a589c8b400\"",
+    "ContentType": "binary/octet-stream",
+    "ServerSideEncryption": "AES256",
+    "Metadata": {}
+}
 ```
-For more information about retrieving objects, see Getting Objects in the *Amazon S3 Developer Guide*.
+Note that the outfile parameter is specified without an option name such as "--outfile".
+**Example 2: To download a specific byte range from an object**
+The following `get-object` example uses `--range` to download a specific byte range from an object. Note the byte ranges need to be prefixed with "bytes=".
+
+```
+aws s3api get-object {{my_data_range}} \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{dir/my_data}} \
+    --range {{bytes=8888-9999}}
+```
+Output:
+
+```
+{
+    "AcceptRanges": "bytes",
+    "LastModified": "2015-04-16T18:21:07+00:00",
+    "ContentLength": 1112,
+    "ETag": "\"0db5e5a2c4f0b9d3e1f6a7b8c9d0e1f2\"",
+    "ContentRange": "bytes 8888-9999/20000",
+    "ContentType": "binary/octet-stream",
+    "ServerSideEncryption": "AES256",
+    "Metadata": {}
+}
+```
+For more information, see [Downloading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/download-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-object.html) in *AWS CLI Command Reference*.
 
 ### `get-public-access-block`
@@ -1619,6 +1804,7 @@ Output:
     }
 }
 ```
+For more information, see [Configuring block public access settings for your S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configuring-block-public-access-bucket.html) in the *Amazon S3 User Guide*.
 +  For API details, see [GetPublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `head-bucket`
@@ -1627,16 +1813,27 @@ Output:
 The following code example shows how to use `head-bucket`.
 
 **AWS CLI**
-The following command verifies access to a bucket named `amzn-s3-demo-bucket`:
+**To verify access to a bucket**
+The following `head-bucket` example verifies access to a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api head-bucket --bucket {{amzn-s3-demo-bucket}}
+aws s3api head-bucket \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
-If the bucket exists and you have access to it, no output is returned. Otherwise, an error message will be shown. For example:
+Output:
+
+```
+{
+    "BucketRegion": "us-west-2",
+    "AccessPointAlias": false
+}
+```
+If the bucket exists and you have access to it, the output contains the Region of the bucket. Otherwise, an error message will be shown. For example:
 
 ```
 A client error (404) occurred when calling the HeadBucket operation: Not Found
 ```
+For more information, see [General purpose buckets overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) in the *Amazon S3 User Guide*.
 +  For API details, see [HeadBucket](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-bucket.html) in *AWS CLI Command Reference*.
 
 ### `head-object`
@@ -1645,10 +1842,13 @@ A client error (404) occurred when calling the HeadBucket operation: Not Found
 The following code example shows how to use `head-object`.
 
 **AWS CLI**
-The following command retrieves metadata for an object in a bucket named `amzn-s3-demo-bucket`:
+**To retrieve metadata for an object**
+The following `head-object` example retrieves metadata for an object in a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api head-object --bucket {{amzn-s3-demo-bucket}} --key {{index.html}}
+aws s3api head-object \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{index.html}}
 ```
 Output:
 
@@ -1663,6 +1863,7 @@ Output:
     "Metadata": {}
 }
 ```
+For more information, see [Working with object metadata](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMetadata.html) in the *Amazon S3 User Guide*.
 +  For API details, see [HeadObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/head-object.html) in *AWS CLI Command Reference*.
 
 ### `list-bucket-analytics-configurations`
@@ -1672,7 +1873,7 @@ The following code example shows how to use `list-bucket-analytics-configuration
 
 **AWS CLI**
 **To retrieve a list of analytics configurations for a bucket**
-The following `list-bucket-analytics-configurations` retrieves a list of analytics configurations for the specified bucket.
+The following `list-bucket-analytics-configurations` example retrieves a list of analytics configurations for the specified bucket.
 
 ```
 aws s3api list-bucket-analytics-configurations \
@@ -1691,6 +1892,7 @@ Output:
     "IsTruncated": false
 }
 ```
+For more information, see [Amazon S3 analytics - Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListBucketAnalyticsConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-bucket-analytics-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-bucket-intelligent-tiering-configurations`
@@ -1817,6 +2019,7 @@ Output:
     "IsTruncated": false
 }
 ```
+For more information, see [Cataloging and analyzing your data with S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListBucketInventoryConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-bucket-inventory-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-bucket-metrics-configurations`
@@ -1853,6 +2056,7 @@ Output:
     ]
 }
 ```
+For more information, see [CloudWatch metrics configurations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-configurations.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListBucketMetricsConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-bucket-metrics-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-buckets`
@@ -1861,13 +2065,23 @@ Output:
 The following code example shows how to use `list-buckets`.
 
 **AWS CLI**
-The following command uses the `list-buckets` command to display the names of all your Amazon S3 buckets (across all regions):
+**To list the names of all your Amazon S3 buckets**
+The following `list-buckets` example displays the names of all your Amazon S3 buckets (across all regions).
 
 ```
-aws s3api list-buckets --query {{"Buckets[].Name"}}
+aws s3api list-buckets \
+    --query {{"Buckets[].Name"}}
+```
+Output:
+
+```
+[
+    "amzn-s3-demo-bucket1",
+    "amzn-s3-demo-bucket2"
+]
 ```
 The query option filters the output of `list-buckets` down to only the bucket names.
-For more information about buckets, see Working with Amazon S3 Buckets in the *Amazon S3 Developer Guide*.
+For more information, see [General purpose buckets overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListBuckets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-buckets.html) in *AWS CLI Command Reference*.
 
 ### `list-multipart-uploads`
@@ -1876,10 +2090,12 @@ For more information about buckets, see Working with Amazon S3 Buckets in the *A
 The following code example shows how to use `list-multipart-uploads`.
 
 **AWS CLI**
-The following command lists all of the active multipart uploads for a bucket named `amzn-s3-demo-bucket`:
+**To list the active multipart uploads for a bucket**
+The following `list-multipart-uploads` example lists all of the active multipart uploads for a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api list-multipart-uploads --bucket {{amzn-s3-demo-bucket}}
+aws s3api list-multipart-uploads \
+    --bucket {{amzn-s3-demo-bucket}}
 ```
 Output:
 
@@ -1905,6 +2121,7 @@ Output:
 }
 ```
 In progress multipart uploads incur storage costs in Amazon S3. Complete or abort an active multipart upload to remove its parts from your account.
+For more information, see [Uploading and copying objects using multipart upload in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListMultipartUploads](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-multipart-uploads.html) in *AWS CLI Command Reference*.
 
 ### `list-object-versions`
@@ -1913,10 +2130,13 @@ In progress multipart uploads incur storage costs in Amazon S3. Complete or abor
 The following code example shows how to use `list-object-versions`.
 
 **AWS CLI**
-The following command retrieves version information for an object in a bucket named `amzn-s3-demo-bucket`:
+**To retrieve version information for an object**
+The following `list-object-versions` example retrieves version information for an object in a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api list-object-versions --bucket {{amzn-s3-demo-bucket}} --prefix {{index.html}}
+aws s3api list-object-versions \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --prefix {{index.html}}
 ```
 Output:
 
@@ -1926,7 +2146,7 @@ Output:
         {
             "Owner": {
                 "DisplayName": "my-username",
-                "ID": "7009a8971cd660687538875e7c86c5b672fe116bd438f46db45460ddcd036c32"
+                "ID": "7009a8971cd6606875a8875e7c86c5b672fe116bd438f46db45460ddcd036c32"
             },
             "IsLatest": true,
             "VersionId": "B2VsEK5saUNNHKcOAJj7hIE86RozToyq",
@@ -1936,7 +2156,7 @@ Output:
         {
             "Owner": {
                 "DisplayName": "my-username",
-                "ID": "7009a8971cd660687538875e7c86c5b672fe116bd438f46db45460ddcd036c32"
+                "ID": "7009a8971cd6606875a8875e7c86c5b672fe116bd438f46db45460ddcd036c32"
             },
             "IsLatest": false,
             "VersionId": ".FLQEZscLIcfxSq.jsFJ.szUkmng2Yw6",
@@ -1953,7 +2173,7 @@ Output:
             "Key": "index.html",
             "Owner": {
                 "DisplayName": "my-username",
-                "ID": "7009a8971cd660687538875e7c86c5b672fe116bd438f46db45460ddcd036c32"
+                "ID": "7009a8971cd6606875a8875e7c86c5b672fe116bd438f46db45460ddcd036c32"
             },
             "IsLatest": false,
             "Size": 38
@@ -1966,7 +2186,7 @@ Output:
             "Key": "index.html",
             "Owner": {
                 "DisplayName": "my-username",
-                "ID": "7009a8971cd660687538875e7c86c5b672fe116bd438f46db45460ddcd036c32"
+                "ID": "7009a8971cd6606875a8875e7c86c5b672fe116bd438f46db45460ddcd036c32"
             },
             "IsLatest": false,
             "Size": 38
@@ -1979,7 +2199,7 @@ Output:
             "Key": "index.html",
             "Owner": {
                 "DisplayName": "my-username",
-                "ID": "7009a8971cd660687538875e7c86c5b672fe116bd438f46db45460ddcd036c32"
+                "ID": "7009a8971cd6606875a8875e7c86c5b672fe116bd438f46db45460ddcd036c32"
             },
             "IsLatest": false,
             "Size": 533823
@@ -1987,6 +2207,7 @@ Output:
     ]
 }
 ```
+For more information, see [Retaining multiple versions of objects with S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListObjectVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-object-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-objects-v2`
@@ -2030,7 +2251,7 @@ Output:
         },
         {
             "LastModified": "2019-11-05T23:11:50.000Z",
-            "ETag": "\"d1852dd683f404306569471af106988e\"",
+            "ETag": "\"d1852dd683f4043065a9471af106988e\"",
             "StorageClass": "STANDARD",
             "Key": "doc4.rtf",
             "Size": 6225
@@ -2038,6 +2259,7 @@ Output:
     ]
 }
 ```
+For more information, see [Listing object keys programmatically](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ListingKeysUsingAPIs.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListObjectsV2](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-objects-v2.html) in *AWS CLI Command Reference*.
 
 ### `list-objects`
@@ -2046,13 +2268,30 @@ Output:
 The following code example shows how to use `list-objects`.
 
 **AWS CLI**
-The following example uses the `list-objects` command to display the names of all the objects in the specified bucket:
+**To list the objects in a bucket**
+The following `list-objects` example displays the names of all the objects in the specified bucket.
 
 ```
-aws s3api list-objects --bucket {{text-content}} --query '{{Contents[].{Key: Key, Size: Size}}}'
+aws s3api list-objects \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --query '{{Contents[].{Key: Key, Size: Size}}}'
+```
+Output:
+
+```
+[
+    {
+        "Key": "dir/my_data",
+        "Size": 20000
+    },
+    {
+        "Key": "dir/my_images.tar.bz2",
+        "Size": 3191
+    }
+]
 ```
 The example uses the `--query` argument to filter the output of `list-objects` down to the key value and size for each object
-For more information about objects, see Working with Amazon S3 Objects in the *Amazon S3 Developer Guide*.
+For more information, see [Listing object keys programmatically](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ListingKeysUsingAPIs.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListObjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-objects.html) in *AWS CLI Command Reference*.
 
 ### `list-parts`
@@ -2061,10 +2300,14 @@ For more information about objects, see Working with Amazon S3 Objects in the *A
 The following code example shows how to use `list-parts`.
 
 **AWS CLI**
-The following command lists all of the parts that have been uploaded for a multipart upload with key `multipart/01` in the bucket `amzn-s3-demo-bucket`:
+**To list the uploaded parts of a multipart upload**
+The following `list-parts` example lists all of the parts that have been uploaded for a multipart upload with key `multipart/01` in the bucket `amzn-s3-demo-bucket`.
 
 ```
-aws s3api list-parts --bucket {{amzn-s3-demo-bucket}} --key '{{multipart/01}}' --upload-id {{dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R}}
+aws s3api list-parts \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key '{{multipart/01}}' \
+    --upload-id {{dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R}}
 ```
 Output:
 
@@ -2101,6 +2344,7 @@ Output:
     "StorageClass": "STANDARD"
 }
 ```
+For more information, see [Uploading and copying objects using multipart upload in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListParts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-parts.html) in *AWS CLI Command Reference*.
 
 ### `ls`
@@ -2109,8 +2353,8 @@ Output:
 The following code example shows how to use `ls`.
 
 **AWS CLI**
-**Example 1: Listing all user owned buckets**
-The following `ls` command lists all of the buckets owned by the user. In this example, the user owns the buckets `amzn-s3-demo-bucket` and `amzn-s3-demo-bucket2`. The timestamp is the date the bucket was created, shown in your machine's time zone. This date can change when making changes to your bucket, such as editing its bucket policy. Note if `s3://` is used for the path argument `<S3Uri>`, it will list all of the buckets as well.
+**Example 1: To list all user owned buckets**
+The following `ls` example lists all of the buckets owned by the user. In this example, the user owns the buckets `amzn-s3-demo-bucket` and `amzn-s3-demo-bucket2`. The timestamp is the date the bucket was created, shown in your machine's time zone. This date can change when making changes to your bucket, such as editing its bucket policy. Note if `s3://` is used for the path argument `<S3Uri>`, it will list all of the buckets as well.
 
 ```
 aws s3 ls
@@ -2121,8 +2365,8 @@ Output:
 2013-07-11 17:08:50 amzn-s3-demo-bucket
 2013-07-24 14:55:44 amzn-s3-demo-bucket2
 ```
-**Example 2: Listing all prefixes and objects in a bucket**
-The following `ls` command lists objects and common prefixes under a specified bucket and prefix. In this example, the user owns the bucket `amzn-s3-demo-bucket` with the objects `test.txt` and `somePrefix/test.txt`. The `LastWriteTime` and `Length` are arbitrary. Note that since the `ls` command has no interaction with the local filesystem, the `s3://` URI scheme is not required to resolve ambiguity and may be omitted.
+**Example 2: To list all prefixes and objects in a bucket**
+The following `ls` example lists objects and common prefixes under a specified bucket and prefix. In this example, the user owns the bucket `amzn-s3-demo-bucket` with the objects `test.txt` and `somePrefix/test.txt`. The `LastWriteTime` and `Length` are arbitrary. Note that since the `ls` command has no interaction with the local filesystem, the `s3://` URI scheme is not required to resolve ambiguity and may be omitted.
 
 ```
 aws s3 ls {{s3://amzn-s3-demo-bucket}}
@@ -2133,8 +2377,8 @@ Output:
                            PRE somePrefix/
 2013-07-25 17:06:27         88 test.txt
 ```
-**Example 3: Listing all prefixes and objects in a specific bucket and prefix**
-The following `ls` command lists objects and common prefixes under a specified bucket and prefix. However, there are no objects nor common prefixes under the specified bucket and prefix.
+**Example 3: To list all prefixes and objects in a specific bucket and prefix**
+The following `ls` example lists objects and common prefixes under a specified bucket and prefix. However, there are no objects nor common prefixes under the specified bucket and prefix.
 
 ```
 aws s3 ls {{s3://amzn-s3-demo-bucket/noExistPrefix}}
@@ -2144,8 +2388,8 @@ Output:
 ```
 None
 ```
-**Example 4: Recursively listing all prefixes and objects in a bucket**
-The following `ls` command will recursively list objects in a bucket. Rather than showing `PRE dirname/` in the output, all the content in a bucket will be listed in order.
+**Example 4: To recursively list all prefixes and objects in a bucket**
+The following `ls` example recursively lists objects in a bucket. Rather than showing `PRE dirname/` in the output, all the content in a bucket will be listed in order.
 
 ```
 aws s3 ls {{s3://amzn-s3-demo-bucket}} \
@@ -2165,8 +2409,8 @@ Output:
 2013-09-02 21:32:57        189 foo/bar/.baz/hooks/foo
 2013-09-02 21:32:57        398 z.txt
 ```
-**Example 5: Summarizing all prefixes and objects in a bucket**
-The following `ls` command demonstrates the same command using the --human-readable and --summarize options. --human-readable displays file size in Bytes/MiB/KiB/GiB/TiB/PiB/EiB. --summarize displays the total number of objects and total size at the end of the result listing:
+**Example 5: To summarize all prefixes and objects in a bucket**
+The following `ls` example runs the same command as the previous example with the `--human-readable` and `--summarize` options. `--human-readable` displays file size in Bytes/MiB/KiB/GiB/TiB/PiB/EiB. `--summarize` displays the total number of objects and total size at the end of the result listing.
 
 ```
 aws s3 ls {{s3://amzn-s3-demo-bucket}} \
@@ -2191,8 +2435,8 @@ Output:
 Total Objects: 10
    Total Size: 2.9 MiB
 ```
-**Example 6: Listing from an S3 access point**
-The following `ls` command lists objects from access point (`myaccesspoint`):
+**Example 6: To list objects in an S3 access point**
+The following `ls` example lists objects from access point (`myaccesspoint`).
 
 ```
 aws s3 ls {{s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/}}
@@ -2203,6 +2447,7 @@ Output:
                            PRE somePrefix/
 2013-07-25 17:06:27         88 test.txt
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-listing-buckets) in the *AWS CLI User Guide*.
 +  For API details, see [Ls](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/ls.html) in *AWS CLI Command Reference*.
 
 ### `mb`
@@ -2211,8 +2456,8 @@ Output:
 The following code example shows how to use `mb`.
 
 **AWS CLI**
-**Example 1: Create a bucket**
-The following `mb` command creates a bucket. In this example, the user makes the bucket `amzn-s3-demo-bucket`. The bucket is created in the region specified in the user's configuration file:
+**Example 1: To create a bucket**
+The following `mb` example creates a bucket. In this example, the user makes the bucket `amzn-s3-demo-bucket`. The bucket is created in the region specified in the user's configuration file.
 
 ```
 aws s3 mb {{s3://amzn-s3-demo-bucket}}
@@ -2222,20 +2467,20 @@ Output:
 ```
 make_bucket: s3://amzn-s3-demo-bucket
 ```
-**Example 2: Create a bucket in the specified region**
-The following `mb` command creates a bucket in a region specified by the `--region` parameter. In this example, the user makes the bucket `amzn-s3-demo-bucket` in the region `us-west-1`:
+**Example 2: To create a bucket in the specified region**
+The following `mb` example creates a bucket in a region specified by the `--region` parameter. In this example, the user makes the bucket `amzn-s3-demo-bucket` in the region `us-west-2`.
 
 ```
 aws s3 mb {{s3://amzn-s3-demo-bucket}} \
-    --region {{us-west-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
 ```
 make_bucket: s3://amzn-s3-demo-bucket
 ```
-**Example 3: Create a bucket with specified tags**
-The following `mb` command creates a bucket with specified tags using the `--tags` parameter. In this example, the user makes the bucket `amzn-s3-demo-bucket` with two tags with keys `Key1` and `Key2`, respectively.
+**Example 3: To create a bucket with specified tags**
+The following `mb` example creates a bucket with specified tags using the `--tags` parameter. In this example, the user makes the bucket `amzn-s3-demo-bucket` with two tags with keys `Key1` and `Key2`, respectively.
 
 ```
 aws s3 mb {{s3://amzn-s3-demo-bucket}} \
@@ -2247,6 +2492,7 @@ Output:
 ```
 make_bucket: s3://amzn-s3-demo-bucket
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-buckets-creating) in the *AWS CLI User Guide*.
 +  For API details, see [Mb](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/mb.html) in *AWS CLI Command Reference*.
 
 ### `mv`
@@ -2255,8 +2501,8 @@ make_bucket: s3://amzn-s3-demo-bucket
 The following code example shows how to use `mv`.
 
 **AWS CLI**
-**Example 1: Move a local file to the specified bucket**
-The following `mv` command moves a single file to a specified bucket and key.
+**Example 1: To move a local file to the specified bucket**
+The following `mv` example moves a single file to a specified bucket and key.
 
 ```
 aws s3 mv {{test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}}
@@ -2266,8 +2512,8 @@ Output:
 ```
 move: test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 2: Move an object to the specified bucket and key**
-The following `mv` command moves a single S3 object to a specified bucket and key.
+**Example 2: To move an object to the specified bucket and key**
+The following `mv` example moves a single S3 object to a specified bucket and key.
 
 ```
 aws s3 mv {{s3://amzn-s3-demo-bucket/test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}}
@@ -2277,8 +2523,8 @@ Output:
 ```
 move: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 3: Move an S3 object to the local directory**
-The following `mv` command moves a single object to a specified file locally.
+**Example 3: To move an S3 object to the local directory**
+The following `mv` example moves a single object to a specified file locally.
 
 ```
 aws s3 mv {{s3://amzn-s3-demo-bucket/test.txt}} {{test2.txt}}
@@ -2288,8 +2534,8 @@ Output:
 ```
 move: s3://amzn-s3-demo-bucket/test.txt to test2.txt
 ```
-**Example 4: Move an object with its original name to the specified bucket**
-The following `mv` command moves a single object to a specified bucket while retaining its original name:
+**Example 4: To move an object with its original name to the specified bucket**
+The following `mv` example moves a single object to a specified bucket while retaining its original name.
 
 ```
 aws s3 mv {{s3://amzn-s3-demo-bucket/test.txt}} {{s3://amzn-s3-demo-bucket2/}}
@@ -2299,8 +2545,8 @@ Output:
 ```
 move: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket2/test.txt
 ```
-**Example 5: Move all objects and prefixes in a bucket to the local directory**
-When passed with the parameter `--recursive`, the following `mv` command recursively moves all objects under a specified prefix and bucket to a specified directory. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `test2.txt`.
+**Example 5: To move all objects and prefixes in a bucket to the local directory**
+The following `mv` example recursively moves all objects under a specified prefix and bucket to a specified directory when passed with the parameter `--recursive`. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `test2.txt`.
 
 ```
 aws s3 mv {{s3://amzn-s3-demo-bucket}} {{.}} \
@@ -2312,8 +2558,8 @@ Output:
 move: s3://amzn-s3-demo-bucket/test1.txt to test1.txt
 move: s3://amzn-s3-demo-bucket/test2.txt to test2.txt
 ```
-**Example 6: Move all objects and prefixes in a bucket to the local directory, except ``.jpg`` files**
-When passed with the parameter `--recursive`, the following `mv` command recursively moves all files under a specified directory to a specified bucket and prefix while excluding some files by using an `--exclude` parameter. In this example, the directory `myDir` has the files `test1.txt` and `test2.jpg`.
+**Example 6: To move all files in a local directory to a bucket, except ``.jpg`` files**
+The following `mv` example recursively moves all files under a specified directory to a specified bucket and prefix when passed with the parameter `--recursive`, while excluding some files by using an `--exclude` parameter. In this example, the directory `myDir` has the files `test1.txt` and `test2.jpg`.
 
 ```
 aws s3 mv {{myDir}} {{s3://amzn-s3-demo-bucket/}} \
@@ -2325,8 +2571,8 @@ Output:
 ```
 move: myDir/test1.txt to s3://amzn-s3-demo-bucket2/test1.txt
 ```
-**Example 7: Move all objects and prefixes in a bucket to the local directory, except specified prefix**
-When passed with the parameter `--recursive`, the following `mv` command recursively moves all objects under a specified bucket to another bucket while excluding some objects by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `another/test1.txt`.
+**Example 7: To move all objects in a bucket to another bucket, except objects under a specified prefix**
+The following `mv` example recursively moves all objects under a specified bucket to another bucket when passed with the parameter `--recursive`, while excluding some objects by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `another/test1.txt`.
 
 ```
 aws s3 mv {{s3://amzn-s3-demo-bucket/}} {{s3://amzn-s3-demo-bucket2/}} \
@@ -2338,8 +2584,8 @@ Output:
 ```
 move: s3://amzn-s3-demo-bucket/test1.txt to s3://amzn-s3-demo-bucket2/test1.txt
 ```
-**Example 8: Move an object to the specified bucket and set the ACL**
-The following `mv` command moves a single object to a specified bucket and key while setting the ACL to `public-read-write`.
+**Example 8: To move an object to the specified bucket and set the ACL**
+The following `mv` example moves a single object to a specified bucket and key while setting the ACL to `public-read-write`.
 
 ```
 aws s3 mv {{s3://amzn-s3-demo-bucket/test.txt}} {{s3://amzn-s3-demo-bucket/test2.txt}} \
@@ -2350,8 +2596,8 @@ Output:
 ```
 move: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 9: Move a local file to the specified bucket and grant permissions**
-The following `mv` command illustrates the use of the `--grants` option to grant read access to all users and full control to a specific user identified by their email address.
+**Example 9: To move a local file to the specified bucket and grant permissions**
+The following `mv` example uses the `--grants` option to grant read access to all users and full control to a specific user identified by their email address.
 
 ```
 aws s3 mv {{file.txt}} {{s3://amzn-s3-demo-bucket/}} \
@@ -2362,8 +2608,8 @@ Output:
 ```
 move: file.txt to s3://amzn-s3-demo-bucket/file.txt
 ```
-**Example 10: Move a file to an S3 access point**
-The following `mv` command moves a single file named `mydoc.txt` to the access point named `myaccesspoint` at the key named `mykey`.
+**Example 10: To move a file to an S3 access point**
+The following `mv` example moves a single file named `mydoc.txt` to the access point named `myaccesspoint` at the key named `mykey`.
 
 ```
 aws s3 mv {{mydoc.txt}} {{s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey}}
@@ -2373,6 +2619,7 @@ Output:
 ```
 move: mydoc.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-move) in the *AWS CLI User Guide*.
 +  For API details, see [Mv](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/mv.html) in *AWS CLI Command Reference*.
 
 ### `presign`
@@ -2382,7 +2629,7 @@ The following code example shows how to use `presign`.
 
 **AWS CLI**
 **Example 1: To create a pre-signed URL with the default one hour lifetime that links to an object in an S3 bucket**
-The following `presign` command generates a pre-signed URL for a specified bucket and key that is valid for one hour.
+The following `presign` example generates a pre-signed URL for a specified bucket and key that is valid for one hour.
 
 ```
 aws s3 presign {{s3://amzn-s3-demo-bucket/test2.txt}}
@@ -2393,7 +2640,7 @@ Output:
 https://amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com/key?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAEXAMPLE123456789%2F20210621%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210621T041609Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=EXAMPLE1234494d5fba3fed607f98018e1dfc62e2529ae96d844123456
 ```
 **Example 2: To create a pre-signed URL with a custom lifetime that links to an object in an S3 bucket**
-The following `presign` command generates a pre-signed URL for a specified bucket and key that is valid for one week.
+The following `presign` example generates a pre-signed URL for a specified bucket and key that is valid for one week.
 
 ```
 aws s3 presign {{s3://amzn-s3-demo-bucket/test2.txt}} \
@@ -2422,6 +2669,7 @@ aws s3api put-bucket-accelerate-configuration \
     --accelerate-configuration {{Status=Enabled}}
 ```
 This command produces no output.
+For more information, see [Configuring fast, secure file transfers using Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketAccelerateConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-accelerate-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-acl`
@@ -2430,12 +2678,17 @@ This command produces no output.
 The following code example shows how to use `put-bucket-acl`.
 
 **AWS CLI**
-This example grants `full control` to two AWS users (*user1@example.com* and *user2@example.com*) and `read` permission to everyone:
+**To set the access control list for a bucket**
+The following `put-bucket-acl` example grants `full control` to two AWS users (*user1@example.com* and *user2@example.com*) and `read` permission to everyone.
 
 ```
-aws s3api put-bucket-acl --bucket {{amzn-s3-demo-bucket}} --grant-full-control {{emailaddress=user1@example.com,emailaddress=user2@example.com}} --grant-read {{uri=http://acs.amazonaws.com/groups/global/AllUsers}}
+aws s3api put-bucket-acl \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --grant-full-control {{emailaddress=user1@example.com,emailaddress=user2@example.com}} \
+    --grant-read {{uri=http://acs.amazonaws.com/groups/global/AllUsers}}
 ```
-See http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTacl.html for details on custom ACLs (the s3api ACL commands, such as `put-bucket-acl`, use the same shorthand argument notation).
+This command produces no output.
+For more information, see [Configuring ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/managing-acls.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketAcl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-acl.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-analytics-configuration`
@@ -2449,10 +2702,12 @@ The following `put-bucket-analytics-configuration` example configures analytics 
 
 ```
 aws s3api put-bucket-analytics-configuration \
-    --bucket {{amzn-s3-demo-bucket}} --id {{1}} \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --id {{1}} \
     --analytics-configuration '{{{"Id": "1","StorageClassAnalysis": {}}}}'
 ```
 This command produces no output.
+For more information, see [Amazon S3 analytics - Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketAnalyticsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-analytics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-cors`
@@ -2461,30 +2716,53 @@ This command produces no output.
 The following code example shows how to use `put-bucket-cors`.
 
 **AWS CLI**
-The following example enables `PUT`, `POST`, and `DELETE` requests from *www.example.com*, and enables `GET` requests from any domain:
+**To configure CORS for a bucket**
+The following `put-bucket-cors` example enables `PUT`, `POST`, and `DELETE` requests from *www.example.com*, and enables `GET` requests from any domain.
 
 ```
-aws s3api put-bucket-cors --bucket {{amzn-s3-demo-bucket}} --cors-configuration {{file://cors.json}}
-
-{{cors.json:}}
-{{{}}
-  "CORSRules": {{[}}
-    {{{}}
-      "AllowedOrigins": ["http://www.example.com"],
-      "AllowedHeaders": ["*"],
-      "AllowedMethods": ["PUT", "POST", "DELETE"],
-      "MaxAgeSeconds": {{3000,}}
-      "ExposeHeaders": ["x-amz-server-side-encryption"]
-    {{},}}
-    {{{}}
-      "AllowedOrigins": ["*"],
-      "AllowedHeaders": ["Authorization"],
-      "AllowedMethods": ["GET"],
-      "MaxAgeSeconds": {{3000}}
-    {{}}}
-  {{]}}
-{{}}}
+aws s3api put-bucket-cors \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --cors-configuration {{file://cors.json}}
 ```
+Contents of `cors.json`:
+
+```
+{
+    "CORSRules": [
+        {
+            "AllowedOrigins": [
+                "http://www.example.com"
+            ],
+            "AllowedHeaders": [
+                "*"
+            ],
+            "AllowedMethods": [
+                "PUT",
+                "POST",
+                "DELETE"
+            ],
+            "MaxAgeSeconds": 3000,
+            "ExposeHeaders": [
+                "x-amz-server-side-encryption"
+            ]
+        },
+        {
+            "AllowedOrigins": [
+                "*"
+            ],
+            "AllowedHeaders": [
+                "Authorization"
+            ],
+            "AllowedMethods": [
+                "GET"
+            ],
+            "MaxAgeSeconds": 3000
+        }
+    ]
+}
+```
+This command produces no output.
+For more information, see [Using cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketCors](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-cors.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-encryption`
@@ -2502,6 +2780,7 @@ aws s3api put-bucket-encryption \
     --server-side-encryption-configuration '{{{"Rules": [{"ApplyServerSideEncryptionByDefault": {"SSEAlgorithm": "AES256"}}]}}}'
 ```
 This command produces no output.
+For more information, see [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketEncryption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-encryption.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-intelligent-tiering-configuration`
@@ -2560,6 +2839,7 @@ aws s3api put-bucket-inventory-configuration \
     --inventory-configuration '{{{"Destination": { "S3BucketDestination": { "AccountId": "123456789012", "Bucket": "arn:aws:s3:::amzn-s3-demo-bucket", "Format": "ORC" }}, "IsEnabled": true, "Id": "1", "IncludedObjectVersions": "Current", "Schedule": { "Frequency": "Weekly" }}}}'
 ```
 This command produces no output.
+For more information, see [Cataloging and analyzing your data with S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) in the *Amazon S3 User Guide*.
 **Example 2: To set an inventory configuration for a bucket**
 The following `put-bucket-inventory-configuration` example sets a daily CSV-formatted inventory report for the bucket `amzn-s3-demo-bucket`.
 
@@ -2570,6 +2850,7 @@ aws s3api put-bucket-inventory-configuration \
     --inventory-configuration '{{{"Destination": { "S3BucketDestination": { "AccountId": "123456789012", "Bucket": "arn:aws:s3:::amzn-s3-demo-bucket", "Format": "CSV" }}, "IsEnabled": true, "Id": "2", "IncludedObjectVersions": "Current", "Schedule": { "Frequency": "Daily" }}}}'
 ```
 This command produces no output.
+For more information, see [Cataloging and analyzing your data with S3 Inventory](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketInventoryConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-inventory-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-lifecycle-configuration`
@@ -2578,12 +2859,16 @@ This command produces no output.
 The following code example shows how to use `put-bucket-lifecycle-configuration`.
 
 **AWS CLI**
-The following command applies a lifecycle configuration to a bucket named `amzn-s3-demo-bucket`:
+**To apply a lifecycle configuration to a bucket**
+The following `put-bucket-lifecycle-configuration` example applies a lifecycle configuration to a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api put-bucket-lifecycle-configuration --bucket {{amzn-s3-demo-bucket}} --lifecycle-configuration  {{file://lifecycle.json}}
+aws s3api put-bucket-lifecycle-configuration \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --lifecycle-configuration {{file://lifecycle.json}}
 ```
-The file `lifecycle.json` is a JSON document in the current folder that specifies two rules:
+The file `lifecycle.json` is a JSON document in the current folder that specifies two rules.
+Contents of `lifecycle.json`:
 
 ```
 {
@@ -2613,7 +2898,15 @@ The file `lifecycle.json` is a JSON document in the current folder that specifie
     ]
 }
 ```
-The first rule moves files with the prefix `rotated` to Glacier on the specified date. The second rule moves old object versions to Glacier when they are no longer current. For information on acceptable timestamp formats, see Specifying Parameter Values in the *AWS CLI User Guide*.
+Output:
+
+```
+{
+    "TransitionDefaultMinimumObjectSize": "all_storage_classes_128K"
+}
+```
+The first rule moves files with the prefix `rotated` to Glacier on the specified date. The second rule moves old object versions to Glacier when they are no longer current. For information on acceptable timestamp formats, see [Specifying parameter values in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters.html) in the *AWS CLI User Guide*.
+For more information, see [Managing the lifecycle of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketLifecycleConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-lifecycle-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-lifecycle`
@@ -2622,54 +2915,60 @@ The first rule moves files with the prefix `rotated` to Glacier on the specified
 The following code example shows how to use `put-bucket-lifecycle`.
 
 **AWS CLI**
-The following command applies a lifecycle configuration to the bucket `amzn-s3-demo-bucket`:
+**To apply a lifecycle configuration to a bucket**
+The following `put-bucket-lifecycle` example applies a lifecycle configuration to the bucket `amzn-s3-demo-bucket`.
 
 ```
-aws s3api put-bucket-lifecycle --bucket {{amzn-s3-demo-bucket}} --lifecycle-configuration {{file://lifecycle.json}}
+aws s3api put-bucket-lifecycle \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --lifecycle-configuration {{file://lifecycle.json}}
 ```
-The file `lifecycle.json` is a JSON document in the current folder that specifies two rules:
+This command produces no output.
+The file `lifecycle.json` is a JSON document in the current folder that specifies two rules.
+Contents of `lifecycle.json`:
 
 ```
 {
-  "Rules": [
-    {
-      "ID": "Move to Glacier after sixty days (objects in logs/2015/)",
-      "Prefix": "logs/2015/",
-      "Status": "Enabled",
-      "Transition": {
-        "Days": 60,
-        "StorageClass": "GLACIER"
-      }
-    },
-    {
-      "Expiration": {
-        "Date": "2016-01-01T00:00:00.000Z"
-      },
-      "ID": "Delete 2014 logs in 2016.",
-      "Prefix": "logs/2014/",
-      "Status": "Enabled"
-    }
-  ]
+    "Rules": [
+        {
+            "ID": "Move to Glacier after sixty days (objects in logs/2015/)",
+            "Prefix": "logs/2015/",
+            "Status": "Enabled",
+            "Transition": {
+                "Days": 60,
+                "StorageClass": "GLACIER"
+            }
+        },
+        {
+            "Expiration": {
+                "Date": "2016-01-01T00:00:00.000Z"
+            },
+            "ID": "Delete 2014 logs in 2016.",
+            "Prefix": "logs/2014/",
+            "Status": "Enabled"
+        }
+    ]
 }
 ```
-The first rule moves files to Amazon Glacier after sixty days. The second rule deletes files from Amazon S3 on the specified date. For information on acceptable timestamp formats, see Specifying Parameter Values in the *AWS CLI User Guide*.
+The first rule moves files to Amazon Glacier after sixty days. The second rule deletes files from Amazon S3 on the specified date. For information on acceptable timestamp formats, see [Specifying parameter values in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters.html) in the *AWS CLI User Guide*.
 Each rule in the above example specifies a policy (`Transition` or `Expiration`) and file prefix (folder name) to which it applies. You can also create a rule that applies to an entire bucket by specifying a blank prefix:
 
 ```
 {
-  "Rules": [
-    {
-      "ID": "Move to Glacier after sixty days (all objects in bucket)",
-      "Prefix": "",
-      "Status": "Enabled",
-      "Transition": {
-        "Days": 60,
-        "StorageClass": "GLACIER"
-      }
-    }
-  ]
+    "Rules": [
+        {
+            "ID": "Move to Glacier after sixty days (all objects in bucket)",
+            "Prefix": "",
+            "Status": "Enabled",
+            "Transition": {
+                "Days": 60,
+                "StorageClass": "GLACIER"
+            }
+        }
+    ]
 }
 ```
+For more information, see [Managing the lifecycle of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketLifecycle](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-lifecycle.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-logging`
@@ -2717,12 +3016,13 @@ Contents of `logging.json`:
 
 ```
 {
-     "LoggingEnabled": {
-         "TargetBucket": "amzn-s3-demo-bucket",
-         "TargetPrefix": "Logs/"
-     }
- }
+    "LoggingEnabled": {
+        "TargetBucket": "amzn-s3-demo-bucket",
+        "TargetPrefix": "Logs/"
+    }
+}
 ```
+This command produces no output.
 The `put-bucket-policy` command is required to grant `s3:PutObject` permissions to the logging service principal.
 For more information, see [Amazon S3 Server Access Logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) in the *Amazon S3 User Guide*.
 **Example 2: To set a bucket policy for logging access to only a single user**
@@ -2760,6 +3060,7 @@ Contents of `logging.json`:
     }
 }
 ```
+This command produces no output.
 the `put-bucket-acl` command is required to grant S3's log delivery system the necessary permissions (write and read-acp permissions).
 For more information, see [Amazon S3 Server Access Logging](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html) in the *Amazon S3 Developer Guide*.
 +  For API details, see [PutBucketLogging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-logging.html) in *AWS CLI Command Reference*.
@@ -2780,6 +3081,7 @@ aws s3api put-bucket-metrics-configuration \
     --metrics-configuration '{{{"Id": "123", "Filter": {"Prefix": "logs"}}}}'
 ```
 This command produces no output.
+For more information, see [CloudWatch metrics configurations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-configurations.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketMetricsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-metrics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-notification-configuration`
@@ -2810,6 +3112,7 @@ Contents of `notification.json`:
     ]
 }
 ```
+This command produces no output.
 The SNS topic must have an IAM policy attached to it that allows Amazon S3 to publish to it.
 
 ```
@@ -2836,6 +3139,7 @@ The SNS topic must have an IAM policy attached to it that allows Amazon S3 to pu
     ]
 }
 ```
+For more information, see [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketNotificationConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-notification-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-notification`
@@ -2844,47 +3148,53 @@ The SNS topic must have an IAM policy attached to it that allows Amazon S3 to pu
 The following code example shows how to use `put-bucket-notification`.
 
 **AWS CLI**
-The applies a notification configuration to a bucket named `amzn-s3-demo-bucket`:
+**To apply a notification configuration to a bucket**
+The following `put-bucket-notification` example applies a notification configuration to a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api put-bucket-notification --bucket {{amzn-s3-demo-bucket}} --notification-configuration {{file://notification.json}}
+aws s3api put-bucket-notification \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --notification-configuration {{file://notification.json}}
 ```
-The file `notification.json` is a JSON document in the current folder that specifies an SNS topic and an event type to monitor:
+This command produces no output.
+The file `notification.json` is a JSON document in the current folder that specifies an SNS topic and an event type to monitor.
+Contents of `notification.json`:
 
 ```
 {
-  "TopicConfiguration": {
-    "Event": "s3:ObjectCreated:*",
-    "Topic": "arn:aws:sns:us-west-2:123456789012:s3-notification-topic"
-  }
+    "TopicConfiguration": {
+        "Event": "s3:ObjectCreated:*",
+        "Topic": "arn:aws:sns:us-west-2:123456789012:s3-notification-topic"
+    }
 }
 ```
 The SNS topic must have an IAM policy attached to it that allows Amazon S3 to publish to it:
 
 ```
 {
- "Version":"2012-10-17",
- "Id": "example-ID",
- "Statement": [
-  {
-   "Sid": "example-statement-ID",
-   "Effect": "Allow",
-   "Principal": {
-     "Service": "s3.amazonaws.com"
-   },
-   "Action": [
-    "SNS:Publish"
-   ],
-   "Resource": "arn:aws:sns:us-west-2:123456789012:amzn-s3-demo-bucket",
-   "Condition": {
-      "ArnLike": {
-      "aws:SourceArn": "arn:aws:s3:*:*:amzn-s3-demo-bucket"
-    }
-   }
-  }
- ]
+    "Version":"2012-10-17",
+    "Id": "example-ID",
+    "Statement": [
+        {
+            "Sid": "example-statement-ID",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "s3.amazonaws.com"
+            },
+            "Action": [
+                "SNS:Publish"
+            ],
+            "Resource": "arn:aws:sns:us-west-2:123456789012:amzn-s3-demo-bucket",
+            "Condition": {
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:s3:*:*:amzn-s3-demo-bucket"
+                }
+            }
+        }
+    ]
 }
 ```
+For more information, see [Amazon S3 Event Notifications](https://docs.aws.amazon.com/AmazonS3/latest/userguide/EventNotifications.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketNotification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-notification.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-ownership-controls`
@@ -2911,40 +3221,47 @@ For more information, see [Setting Object Ownership on an existing bucket](https
 The following code example shows how to use `put-bucket-policy`.
 
 **AWS CLI**
-This example allows all users to retrieve any object in *amzn-s3-demo-bucket* except those in the *MySecretFolder*. It also grants `put` and `delete` permission to the root user of the AWS account `1234-5678-9012`:
+**To apply a policy to a bucket**
+The following `put-bucket-policy` example allows all users to retrieve any object in *amzn-s3-demo-bucket* except those in the *MySecretFolder*. It also grants `put` and `delete` permission to the root user of the AWS account `1234-5678-9012`.
 
 ```
-aws s3api put-bucket-policy --bucket {{amzn-s3-demo-bucket}} --policy {{file://policy.json}}
-
-{{policy.json:}}
-{{{}}
-   "Statement": {{[}}
-      {{{}}
-         "Effect": "Allow",
-         "Principal": "*",
-         "Action": "s3:GetObject",
-         "Resource": {{"arn:aws:s3:::amzn-s3-demo-bucket/*"}}
-      {{},}}
-      {{{}}
-         "Effect": "Deny",
-         "Principal": "*",
-         "Action": "s3:GetObject",
-         "Resource": {{"arn:aws:s3:::amzn-s3-demo-bucket/MySecretFolder/*"}}
-      {{},}}
-      {{{}}
-         "Effect": "Allow",
-         "Principal": {{{}}
-            "AWS": {{"arn:aws:iam::123456789012:root"}}
-         {{},}}
-         "Action": {{[}}
-            "s3:DeleteObject",
-            {{"s3:PutObject"}}
-         {{],}}
-         "Resource": {{"arn:aws:s3:::amzn-s3-demo-bucket/*"}}
-      {{}}}
-   {{]}}
-{{}}}
+aws s3api put-bucket-policy \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --policy {{file://policy.json}}
 ```
+Contents of `policy.json`:
+
+```
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/*"
+        },
+        {
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/MySecretFolder/*"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": [
+                "s3:DeleteObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::amzn-s3-demo-bucket/*"
+        }
+    ]
+}
+```
+This command produces no output.
+For more information, see [Bucket policies for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-policy.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-replication`
@@ -3054,6 +3371,7 @@ aws s3api put-bucket-request-payment \
     --request-payment-configuration '{{{"Payer":"Requester"}}}'
 ```
 This command produces no output.
+For more information, see [Using Requester Pays general purpose buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon S3 User Guide*.
 **Example 2: To disable ``requester pays`` configuration for a bucket**
 The following `put-bucket-request-payment` example disables `requester pays` for the specified bucket.
 
@@ -3063,6 +3381,7 @@ aws s3api put-bucket-request-payment \
     --request-payment-configuration '{{{"Payer":"BucketOwner"}}}'
 ```
 This command produces no output.
+For more information, see [Using Requester Pays general purpose buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketRequestPayment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-request-payment.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-tagging`
@@ -3071,28 +3390,37 @@ This command produces no output.
 The following code example shows how to use `put-bucket-tagging`.
 
 **AWS CLI**
-The following command applies a tagging configuration to a bucket named `amzn-s3-demo-bucket`:
+**To apply a tagging configuration to a bucket**
+The following `put-bucket-tagging` example applies a tagging configuration to a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api put-bucket-tagging --bucket {{amzn-s3-demo-bucket}} --tagging {{file://tagging.json}}
+aws s3api put-bucket-tagging \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --tagging {{file://tagging.json}}
 ```
-The file `tagging.json` is a JSON document in the current folder that specifies tags:
+This command produces no output.
+The file `tagging.json` is a JSON document in the current folder that specifies tags.
+Contents of `tagging.json`:
 
 ```
 {
-   "TagSet": [
-     {
-       "Key": "organization",
-       "Value": "marketing"
-     }
-   ]
+    "TagSet": [
+        {
+            "Key": "organization",
+            "Value": "marketing"
+        }
+    ]
 }
 ```
-Or apply a tagging configuration to `amzn-s3-demo-bucket` directly from the command line:
+Alternatively, apply a tagging configuration to `amzn-s3-demo-bucket` directly from the command line.
 
 ```
-aws s3api put-bucket-tagging --bucket {{amzn-s3-demo-bucket}} --tagging '{{TagSet=[{Key=organization,Value=marketing}]}}'
+aws s3api put-bucket-tagging \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --tagging '{{TagSet=[{Key=organization,Value=marketing}]}}'
 ```
+This command produces no output.
+For more information, see [Using cost allocation S3 bucket tags](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-tagging.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-versioning`
@@ -3101,16 +3429,25 @@ aws s3api put-bucket-tagging --bucket {{amzn-s3-demo-bucket}} --tagging '{{TagSe
 The following code example shows how to use `put-bucket-versioning`.
 
 **AWS CLI**
-The following command enables versioning on a bucket named `amzn-s3-demo-bucket`:
+**To enable versioning on a bucket**
+The following `put-bucket-versioning` example enables versioning on a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api put-bucket-versioning --bucket {{amzn-s3-demo-bucket}} --versioning-configuration {{Status=Enabled}}
+aws s3api put-bucket-versioning \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --versioning-configuration {{Status=Enabled}}
 ```
-The following command enables versioning, and uses an mfa code
+This command produces no output.
+The following command enables versioning and uses an MFA code.
 
 ```
-aws s3api put-bucket-versioning --bucket {{amzn-s3-demo-bucket}} --versioning-configuration {{Status=Enabled}} --mfa {{"SERIAL 123456"}}
+aws s3api put-bucket-versioning \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --versioning-configuration {{Status=Enabled}} \
+    --mfa {{"SERIAL 123456"}}
 ```
+This command produces no output.
+For more information, see [Retaining multiple versions of objects with S3 Versioning](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketVersioning](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-versioning.html) in *AWS CLI Command Reference*.
 
 ### `put-bucket-website`
@@ -3119,12 +3456,17 @@ aws s3api put-bucket-versioning --bucket {{amzn-s3-demo-bucket}} --versioning-co
 The following code example shows how to use `put-bucket-website`.
 
 **AWS CLI**
-The applies a static website configuration to a bucket named `amzn-s3-demo-bucket`:
+**To apply a static website configuration to a bucket**
+The following `put-bucket-website` example applies a static website configuration to a bucket named `amzn-s3-demo-bucket`.
 
 ```
-aws s3api put-bucket-website --bucket {{amzn-s3-demo-bucket}} --website-configuration {{file://website.json}}
+aws s3api put-bucket-website \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --website-configuration {{file://website.json}}
 ```
-The file `website.json` is a JSON document in the current folder that specifies index and error pages for the website:
+This command produces no output.
+The file `website.json` is a JSON document in the current folder that specifies index and error pages for the website.
+Contents of `website.json`:
 
 ```
 {
@@ -3136,6 +3478,7 @@ The file `website.json` is a JSON document in the current folder that specifies 
     }
 }
 ```
+For more information, see [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutBucketWebsite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-bucket-website.html) in *AWS CLI Command Reference*.
 
 ### `put-object-acl`
@@ -3144,12 +3487,18 @@ The file `website.json` is a JSON document in the current folder that specifies 
 The following code example shows how to use `put-object-acl`.
 
 **AWS CLI**
-The following command grants `full control` to two AWS users (*user1@example.com* and *user2@example.com*) and `read` permission to everyone:
+**To set the access control list for an object**
+The following `put-object-acl` example grants `full control` to two AWS users (*user1@example.com* and *user2@example.com*) and `read` permission to everyone.
 
 ```
-aws s3api put-object-acl --bucket {{amzn-s3-demo-bucket}} --key {{file.txt}} --grant-full-control {{emailaddress=user1@example.com,emailaddress=user2@example.com}} --grant-read {{uri=http://acs.amazonaws.com/groups/global/AllUsers}}
+aws s3api put-object-acl \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key {{file.txt}} \
+    --grant-full-control {{emailaddress=user1@example.com,emailaddress=user2@example.com}} \
+    --grant-read {{uri=http://acs.amazonaws.com/groups/global/AllUsers}}
 ```
-See http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUTacl.html for details on custom ACLs (the s3api ACL commands, such as `put-object-acl`, use the same shorthand argument notation).
+This command produces no output.
+For more information, see [Access control list (ACL) overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutObjectAcl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-acl.html) in *AWS CLI Command Reference*.
 
 ### `put-object-legal-hold`
@@ -3163,11 +3512,12 @@ The following `put-object-legal-hold` example sets a Legal Hold on the object `d
 
 ```
 aws s3api put-object-legal-hold \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --key {{doc1.rtf}} \
     --legal-hold {{Status=ON}}
 ```
 This command produces no output.
+For more information, see [Locking objects with Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutObjectLegalHold](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-legal-hold.html) in *AWS CLI Command Reference*.
 
 ### `put-object-lock-configuration`
@@ -3181,10 +3531,11 @@ The following `put-object-lock-configuration` example sets a 50-day object lock 
 
 ```
 aws s3api put-object-lock-configuration \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --object-lock-configuration '{{{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "COMPLIANCE", "Days": 50 }}}}}'
 ```
 This command produces no output.
+For more information, see [Locking objects with Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutObjectLockConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-lock-configuration.html) in *AWS CLI Command Reference*.
 
 ### `put-object-retention`
@@ -3198,11 +3549,12 @@ The following `put-object-retention` example sets an object retention configurat
 
 ```
 aws s3api put-object-retention \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --key {{doc1.rtf}} \
     --retention '{{{ "Mode": "GOVERNANCE", "RetainUntilDate": "2025-01-01T00:00:00" }}}'
 ```
 This command produces no output.
+For more information, see [Locking objects with Object Lock](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutObjectRetention](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-retention.html) in *AWS CLI Command Reference*.
 
 ### `put-object-tagging`
@@ -3221,15 +3573,17 @@ aws s3api put-object-tagging \
     --tagging '{{{"TagSet": [{ "Key": "designation", "Value": "confidential" }]}}}'
 ```
 This command produces no output.
+For more information, see [Tagging your objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) in the *Amazon S3 User Guide*.
 The following `put-object-tagging` example sets multiple tags sets on the specified object.
 
 ```
 aws s3api put-object-tagging \
-    --bucket {{amzn-s3-demo-bucket-example}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --key {{doc3.rtf}} \
     --tagging '{{{"TagSet": [{ "Key": "designation", "Value": "confidential" }, { "Key": "department", "Value": "finance" }, { "Key": "team", "Value": "payroll" } ]}}}'
 ```
 This command produces no output.
+For more information, see [Tagging your objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-tagging.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutObjectTagging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object-tagging.html) in *AWS CLI Command Reference*.
 
 ### `put-object`
@@ -3238,8 +3592,8 @@ This command produces no output.
 The following code example shows how to use `put-object`.
 
 **AWS CLI**
-**Example 1: Upload an object to Amazon S3**
-The following `put-object` command example uploads an object to Amazon S3.
+**Example 1: To upload an object to Amazon S3**
+The following `put-object` example uploads an object to Amazon S3.
 
 ```
 aws s3api put-object \
@@ -3247,9 +3601,19 @@ aws s3api put-object \
     --key {{my-dir/MySampleImage.png}} \
     --body {{MySampleImage.png}}
 ```
-For more information about uploading objects, see Uploading Objects < http://docs.aws.amazon.com/AmazonS3/latest/dev/UploadingObjects.html> in the *Amazon S3 Developer Guide*.
-**Example 2: Upload a video file to Amazon S3**
-The following `put-object` command example uploads a video file.
+Output:
+
+```
+{
+    "ETag": "\"6805f2cfc46c0f04559748bb039d69ae\"",
+    "ChecksumCRC64NVME": "Kd3SA7ZjkPE=",
+    "ChecksumType": "FULL_OBJECT",
+    "ServerSideEncryption": "AES256"
+}
+```
+For more information, see [Uploading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html) in the *Amazon S3 User Guide*.
+**Example 2: To upload a video file to Amazon S3**
+The following `put-object` example uploads a video file.
 
 ```
 aws s3api put-object \
@@ -3257,7 +3621,17 @@ aws s3api put-object \
     --key {{my-dir/big-video-file.mp4}} \
     --body {{/media/videos/f-sharp-3-data-services.mp4}}
 ```
-For more information about uploading objects, see Uploading Objects < http://docs.aws.amazon.com/AmazonS3/latest/dev/UploadingObjects.html> in the *Amazon S3 Developer Guide*.
+Output:
+
+```
+{
+    "ETag": "\"9c8b9f2a5e4d3c2b1a0f9e8d7c6b5a49\"",
+    "ChecksumCRC64NVME": "bS5l2pLqN0A=",
+    "ChecksumType": "FULL_OBJECT",
+    "ServerSideEncryption": "AES256"
+}
+```
+For more information, see [Uploading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-object.html) in *AWS CLI Command Reference*.
 
 ### `put-public-access-block`
@@ -3275,6 +3649,7 @@ aws s3api put-public-access-block \
     --public-access-block-configuration {{"BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true"}}
 ```
 This command produces no output.
+For more information, see [Blocking public access to your Amazon S3 storage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html) in the *Amazon S3 User Guide*.
 +  For API details, see [PutPublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/put-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `rb`
@@ -3283,8 +3658,8 @@ This command produces no output.
 The following code example shows how to use `rb`.
 
 **AWS CLI**
-**Example 1: Delete a bucket**
-The following `rb` command removes a bucket. In this example, the user's bucket is `amzn-s3-demo-bucket`. Note that the bucket must be empty in order to remove:
+**Example 1: To delete a bucket**
+The following `rb` example removes a bucket. In this example, the user's bucket is `amzn-s3-demo-bucket`. Note that the bucket must be empty in order to remove it.
 
 ```
 aws s3 rb {{s3://amzn-s3-demo-bucket}}
@@ -3294,8 +3669,8 @@ Output:
 ```
 remove_bucket: amzn-s3-demo-bucket
 ```
-**Example 2: Force delete a bucket**
-The following `rb` command uses the `--force` parameter to first remove all of the objects in the bucket and then remove the bucket itself. In this example, the user's bucket is `amzn-s3-demo-bucket` and the objects in `amzn-s3-demo-bucket` are `test1.txt` and `test2.txt`:
+**Example 2: To force delete a bucket**
+The following `rb` example uses the `--force` parameter to first remove all of the objects in the bucket and then remove the bucket itself. In this example, the user's bucket is `amzn-s3-demo-bucket` and the objects in `amzn-s3-demo-bucket` are `test1.txt` and `test2.txt`.
 
 ```
 aws s3 rb {{s3://amzn-s3-demo-bucket}} \
@@ -3308,6 +3683,7 @@ delete: s3://amzn-s3-demo-bucket/test1.txt
 delete: s3://amzn-s3-demo-bucket/test2.txt
 remove_bucket: amzn-s3-demo-bucket
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-delete-buckets) in the *AWS CLI User Guide*.
 +  For API details, see [Rb](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/rb.html) in *AWS CLI Command Reference*.
 
 ### `restore-object`
@@ -3317,15 +3693,16 @@ The following code example shows how to use `restore-object`.
 
 **AWS CLI**
 **To create a restore request for an object**
-The following `restore-object` example restores the specified Amazon S3 Glacier object for the bucket `my-glacier-bucket` for 10 days.
+The following `restore-object` example restores the specified Amazon S3 Glacier object for the bucket `amzn-s3-demo-bucket` for 10 days.
 
 ```
 aws s3api restore-object \
-    --bucket {{my-glacier-bucket}} \
+    --bucket {{amzn-s3-demo-bucket}} \
     --key {{doc1.rtf}} \
     --restore-request {{Days=10}}
 ```
 This command produces no output.
+For more information, see [Restoring an archived object](https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [RestoreObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/restore-object.html) in *AWS CLI Command Reference*.
 
 ### `rm`
@@ -3334,8 +3711,8 @@ This command produces no output.
 The following code example shows how to use `rm`.
 
 **AWS CLI**
-**Example 1: Delete an S3 object**
-The following `rm` command deletes a single S3 object:
+**Example 1: To delete an S3 object**
+The following `rm` example deletes a single S3 object.
 
 ```
 aws s3 rm {{s3://amzn-s3-demo-bucket/test2.txt}}
@@ -3345,8 +3722,8 @@ Output:
 ```
 delete: s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 2: Delete all contents in a bucket**
-The following `rm` command recursively deletes all objects under a specified bucket and prefix when passed with the parameter `--recursive`. In this example, the bucket `amzn-s3-demo-bucket` contains the objects `test1.txt` and `test2.txt`:
+**Example 2: To delete all contents in a bucket**
+The following `rm` example recursively deletes all objects under a specified bucket and prefix when passed with the parameter `--recursive`. In this example, the bucket `amzn-s3-demo-bucket` contains the objects `test1.txt` and `test2.txt`.
 
 ```
 aws s3 rm {{s3://amzn-s3-demo-bucket}} \
@@ -3358,8 +3735,8 @@ Output:
 delete: s3://amzn-s3-demo-bucket/test1.txt
 delete: s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 3: Delete all contents in a bucket, except ``.jpg`` files**
-The following `rm` command recursively deletes all objects under a specified bucket and prefix when passed with the parameter `--recursive` while excluding some objects by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `test2.jpg`:
+**Example 3: To delete all contents in a bucket, except ``.jpg`` files**
+The following `rm` example recursively deletes all objects under a specified bucket and prefix when passed with the parameter `--recursive` while excluding some objects by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `test2.jpg`.
 
 ```
 aws s3 rm {{s3://amzn-s3-demo-bucket/}} \
@@ -3371,8 +3748,8 @@ Output:
 ```
 delete: s3://amzn-s3-demo-bucket/test1.txt
 ```
-**Example 4: Delete all contents in a bucket, except objects under the specified prefix**
-The following `rm` command recursively deletes all objects under a specified bucket and prefix when passed with the parameter `--recursive` while excluding all objects under a particular prefix by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `another/test.txt`:
+**Example 4: To delete all contents in a bucket, except objects under the specified prefix**
+The following `rm` example recursively deletes all objects under a specified bucket and prefix when passed with the parameter `--recursive` while excluding all objects under a particular prefix by using an `--exclude` parameter. In this example, the bucket `amzn-s3-demo-bucket` has the objects `test1.txt` and `another/test.txt`.
 
 ```
 aws s3 rm {{s3://amzn-s3-demo-bucket/}} \
@@ -3384,8 +3761,8 @@ Output:
 ```
 delete: s3://amzn-s3-demo-bucket/test1.txt
 ```
-**Example 5: Delete an object from an S3 access point**
-The following `rm` command deletes a single object (`mykey`) from the access point (`myaccesspoint`).
+**Example 5: To delete an object from an S3 access point**
+The following `rm` example deletes a single object (`mykey`) from the access point (`myaccesspoint`).
 
 ```
 aws s3 rm {{s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey}}
@@ -3395,6 +3772,7 @@ Output:
 ```
 delete: s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/mykey
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-delete-objects) in the *AWS CLI User Guide*.
 +  For API details, see [Rm](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/rm.html) in *AWS CLI Command Reference*.
 
 ### `select-object-content`
@@ -3416,6 +3794,7 @@ aws s3api select-object-content \
     --output-serialization '{{{"CSV": {}}}}' {{"output.csv"}}
 ```
 This command produces no output.
+For more information, see [Querying data in place with Amazon S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html) in the *Amazon S3 User Guide*.
 +  For API details, see [SelectObjectContent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/select-object-content.html) in *AWS CLI Command Reference*.
 
 ### `sync`
@@ -3424,8 +3803,8 @@ This command produces no output.
 The following code example shows how to use `sync`.
 
 **AWS CLI**
-**Example 1: Sync all local objects to the specified bucket**
-The following `sync` command syncs objects from a local directory to the specified prefix and bucket by uploading the local files to S3. A local file will require uploading if the size of the local file is different than the size of the S3 object, the last modified time of the local file is newer than the last modified time of the S3 object, or the local file does not exist under the specified bucket and prefix. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the local current directory. The local current directory contains the files `test.txt` and `test2.txt`. The bucket `amzn-s3-demo-bucket` contains no objects.
+**Example 1: To sync all local objects to the specified bucket**
+The following `sync` example syncs objects from a local directory to the specified prefix and bucket by uploading the local files to S3. A local file will require uploading if the size of the local file is different than the size of the S3 object, the last modified time of the local file is newer than the last modified time of the S3 object, or the local file does not exist under the specified bucket and prefix. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the local current directory. The local current directory contains the files `test.txt` and `test2.txt`. The bucket `amzn-s3-demo-bucket` contains no objects.
 
 ```
 aws s3 sync {{.}} {{s3://amzn-s3-demo-bucket}}
@@ -3436,9 +3815,9 @@ Output:
 upload: test.txt to s3://amzn-s3-demo-bucket/test.txt
 upload: test2.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 2: Sync all S3 objects from the specified S3 bucket to another bucket**
-The following `sync` command syncs objects under a specified prefix and bucket to objects under another specified prefix and bucket by copying S3 objects. An S3 object will require copying if the sizes of the two S3 objects differ, the last modified time of the source is newer than the last modified time of the destination, or the S3 object does not exist under the specified bucket and prefix destination.
-In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the bucket `amzn-s3-demo-bucket2`. The bucket `amzn-s3-demo-bucket` contains the objects `test.txt` and `test2.txt`. The bucket `amzn-s3-demo-bucket2` contains no objects:
+**Example 2: To sync all S3 objects from the specified S3 bucket to another bucket**
+The following `sync` example syncs objects under a specified prefix and bucket to objects under another specified prefix and bucket by copying S3 objects. An S3 object will require copying if the sizes of the two S3 objects differ, the last modified time of the source is newer than the last modified time of the destination, or the S3 object does not exist under the specified bucket and prefix destination.
+In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the bucket `amzn-s3-demo-bucket2`. The bucket `amzn-s3-demo-bucket` contains the objects `test.txt` and `test2.txt`. The bucket `amzn-s3-demo-bucket2` contains no objects.
 
 ```
 aws s3 sync {{s3://amzn-s3-demo-bucket}} {{s3://amzn-s3-demo-bucket2}}
@@ -3449,8 +3828,8 @@ Output:
 copy: s3://amzn-s3-demo-bucket/test.txt to s3://amzn-s3-demo-bucket2/test.txt
 copy: s3://amzn-s3-demo-bucket/test2.txt to s3://amzn-s3-demo-bucket2/test2.txt
 ```
-**Example 3: Sync all S3 objects from the specified S3 bucket to the local directory**
-The following `sync` command syncs files from the specified S3 bucket to the local directory by downloading S3 objects. An S3 object will require downloading if the size of the S3 object differs from the size of the local file, the last modified time of the S3 object is newer than the last modified time of the local file, or the S3 object does not exist in the local directory. Take note that when objects are downloaded from S3, the last modified time of the local file is changed to the last modified time of the S3 object. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the current local directory. The bucket `amzn-s3-demo-bucket` contains the objects `test.txt` and `test2.txt`. The current local directory has no files:
+**Example 3: To sync all S3 objects from the specified S3 bucket to the local directory**
+The following `sync` example syncs files from the specified S3 bucket to the local directory by downloading S3 objects. An S3 object will require downloading if the size of the S3 object differs from the size of the local file, the last modified time of the S3 object is newer than the last modified time of the local file, or the S3 object does not exist in the local directory. Take note that when objects are downloaded from S3, the last modified time of the local file is changed to the last modified time of the S3 object. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the current local directory. The bucket `amzn-s3-demo-bucket` contains the objects `test.txt` and `test2.txt`. The current local directory has no files.
 
 ```
 aws s3 sync {{s3://amzn-s3-demo-bucket}} {{.}}
@@ -3461,8 +3840,8 @@ Output:
 download: s3://amzn-s3-demo-bucket/test.txt to test.txt
 download: s3://amzn-s3-demo-bucket/test2.txt to test2.txt
 ```
-**Example 4: Sync all local objects to the specified bucket and delete all files that do not match**
-The following `sync` command syncs objects under a specified prefix and bucket to files in a local directory by uploading the local files to S3. Because of the `--delete` parameter, any files existing under the specified prefix and bucket but not existing in the local directory will be deleted. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the local current directory. The local current directory contains the files `test.txt` and `test2.txt`. The bucket `amzn-s3-demo-bucket` contains the object `test3.txt`:
+**Example 4: To sync all local objects to the specified bucket and delete all files that do not match**
+The following `sync` example syncs objects under a specified prefix and bucket to files in a local directory by uploading the local files to S3. Because of the `--delete` parameter, any files existing under the specified prefix and bucket but not existing in the local directory will be deleted. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the local current directory. The local current directory contains the files `test.txt` and `test2.txt`. The bucket `amzn-s3-demo-bucket` contains the object `test3.txt`.
 
 ```
 aws s3 sync {{.}} {{s3://amzn-s3-demo-bucket}} \
@@ -3475,8 +3854,8 @@ upload: test.txt to s3://amzn-s3-demo-bucket/test.txt
 upload: test2.txt to s3://amzn-s3-demo-bucket/test2.txt
 delete: s3://amzn-s3-demo-bucket/test3.txt
 ```
-**Example 5: Sync all local objects to the specified bucket except ``.jpg`` files**
-The following `sync` command syncs objects under a specified prefix and bucket to files in a local directory by uploading the local files to S3. Because of the `--exclude` parameter, all files matching the pattern existing both in S3 and locally will be excluded from the sync. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the local current directory. The local current directory contains the files `test.jpg` and `test2.txt`. The bucket `amzn-s3-demo-bucket` contains the object `test.jpg` of a different size than the local `test.jpg`:
+**Example 5: To sync all local objects to the specified bucket except ``.jpg`` files**
+The following `sync` example syncs objects under a specified prefix and bucket to files in a local directory by uploading the local files to S3. Because of the `--exclude` parameter, all files matching the pattern existing both in S3 and locally will be excluded from the sync. In this example, the user syncs the bucket `amzn-s3-demo-bucket` to the local current directory. The local current directory contains the files `test.jpg` and `test2.txt`. The bucket `amzn-s3-demo-bucket` contains the object `test.jpg` of a different size than the local `test.jpg`.
 
 ```
 aws s3 sync {{.}} {{s3://amzn-s3-demo-bucket}} \
@@ -3487,8 +3866,8 @@ Output:
 ```
 upload: test2.txt to s3://amzn-s3-demo-bucket/test2.txt
 ```
-**Example 6: Sync all local objects to the specified bucket except specified directory files**
-The following `sync` command syncs files under a local directory to objects under a specified prefix and bucket by downloading S3 objects. This example uses the `--exclude` parameter flag to exclude a specified directory and S3 prefix from the `sync` command. In this example, the user syncs the local current directory to the bucket `amzn-s3-demo-bucket`. The local current directory contains the files `test.txt` and `another/test2.txt`. The bucket `amzn-s3-demo-bucket` contains the objects `another/test5.txt` and `test1.txt`:
+**Example 6: To sync all local objects to the specified bucket except specified directory files**
+The following `sync` example syncs files under a local directory to objects under a specified prefix and bucket by downloading S3 objects. This example uses the `--exclude` parameter flag to exclude a specified directory and S3 prefix from the `sync` command. In this example, the user syncs the local current directory to the bucket `amzn-s3-demo-bucket`. The local current directory contains the files `test.txt` and `another/test2.txt`. The bucket `amzn-s3-demo-bucket` contains the objects `another/test5.txt` and `test1.txt`.
 
 ```
 aws s3 sync {{s3://amzn-s3-demo-bucket/}} {{.}} \
@@ -3499,21 +3878,21 @@ Output:
 ```
 download: s3://amzn-s3-demo-bucket/test1.txt to test1.txt
 ```
-**Example 7: Sync all objects between buckets in different regions**
-The following `sync` command syncs files between two buckets in different regions:
+**Example 7: To sync all objects between buckets in different regions**
+The following `sync` example syncs files between two buckets in different regions.
 
 ```
-aws s3 sync {{s3://my-us-west-2-bucket}} {{s3://my-us-east-1-bucket}} \
+aws s3 sync {{s3://amzn-s3-demo-bucket1}} {{s3://amzn-s3-demo-bucket2}} \
     --source-region {{us-west-2}} \
     --region {{us-east-1}}
 ```
 Output:
 
 ```
-download: s3://my-us-west-2-bucket/test1.txt to s3://my-us-east-1-bucket/test1.txt
+download: s3://amzn-s3-demo-bucket1/test1.txt to s3://amzn-s3-demo-bucket2/test1.txt
 ```
-**Example 8: Sync to an S3 access point**
-The following `sync` command syncs the current directory to the access point (`myaccesspoint`):
+**Example 8: To sync to an S3 access point**
+The following `sync` example syncs the current directory to the access point (`myaccesspoint`).
 
 ```
 aws s3 sync {{.}} {{s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/}}
@@ -3524,6 +3903,7 @@ Output:
 upload: test.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/test.txt
 upload: test2.txt to s3://arn:aws:s3:us-west-2:123456789012:accesspoint/myaccesspoint/test2.txt
 ```
+For more information, see [Using high-level (s3) commands in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-managing-objects-sync) in the *AWS CLI User Guide*.
 +  For API details, see [Sync](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/sync.html) in *AWS CLI Command Reference*.
 
 ### `upload-part-copy`
@@ -3553,6 +3933,7 @@ Output:
     }
 }
 ```
+For more information, see [Copying an object using multipart upload](https://docs.aws.amazon.com/AmazonS3/latest/userguide/CopyingObjectsMPUapi.html) in the *Amazon S3 User Guide*.
 +  For API details, see [UploadPartCopy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/upload-part-copy.html) in *AWS CLI Command Reference*.
 
 ### `upload-part`
@@ -3561,10 +3942,16 @@ Output:
 The following code example shows how to use `upload-part`.
 
 **AWS CLI**
-The following command uploads the first part in a multipart upload initiated with the `create-multipart-upload` command:
+**To upload a part of a multipart upload**
+The following `upload-part` example uploads the first part in a multipart upload initiated with the `create-multipart-upload` command.
 
 ```
-aws s3api upload-part --bucket {{amzn-s3-demo-bucket}} --key '{{multipart/01}}' --part-number {{1}} --body {{part01}} --upload-id  {{"dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R"}}
+aws s3api upload-part \
+    --bucket {{amzn-s3-demo-bucket}} \
+    --key '{{multipart/01}}' \
+    --part-number {{1}} \
+    --body {{part01}} \
+    --upload-id {{"dfRtDYU0WWCCcH43C3WFbkRONycyCpTJJvxu2i5GYkZljF.Yxwh6XG7WfS2vC4to6HiV6Yjlx.cph0gtNBtJ8P3URCSbB7rjxI5iEwVDmgaXZOGgkk5nVTW16HOQ5l0R"}}
 ```
 The `body` option takes the name or path of a local file for upload (do not use the file:// prefix). The minimum part size is 5 MB. Upload ID is returned by `create-multipart-upload` and can also be retrieved with `list-multipart-uploads`. Bucket and key are specified when you create the multipart upload.
 Output:
@@ -3575,6 +3962,7 @@ Output:
 }
 ```
 Save the ETag value of each part for later. They are required to complete the multipart upload.
+For more information, see [Uploading and copying objects using multipart upload in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html) in the *Amazon S3 User Guide*.
 +  For API details, see [UploadPart](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/upload-part.html) in *AWS CLI Command Reference*.
 
 ### `website`
@@ -3583,8 +3971,8 @@ Save the ETag value of each part for later. They are required to complete the mu
 The following code example shows how to use `website`.
 
 **AWS CLI**
-**Configure an S3 bucket as a static website**
-The following command configures a bucket named `amzn-s3-demo-bucket` as a static website. The index document option specifies the file in `amzn-s3-demo-bucket` that visitors will be directed to when they navigate to the website URL. In this case, the bucket is in the us-west-2 region, so the site would appear at `http://amzn-s3-demo-bucket.s3-website-us-west-2.amazonaws.com`.
+**To configure an S3 bucket as a static website**
+The following `website` example configures a bucket named `amzn-s3-demo-bucket` as a static website. The index document option specifies the file in `amzn-s3-demo-bucket` that visitors will be directed to when they navigate to the website URL. In this case, the bucket is in the us-west-2 region, so the site would appear at `http://amzn-s3-demo-bucket.s3-website-us-west-2.amazonaws.com`.
 All files in the bucket that appear on the static site must be configured to allow visitors to open them. File permissions are configured separately from the bucket website configuration.
 
 ```
@@ -3592,5 +3980,6 @@ aws s3 website {{s3://amzn-s3-demo-bucket/}} \
     --index-document {{index.html}} \
     --error-document {{error.html}}
 ```
+This command produces no output.
 For information on hosting a static website in Amazon S3, see [Hosting a Static Website](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html) in the *Amazon Simple Storage Service Developer Guide*.
 +  For API details, see [Website](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/website.html) in *AWS CLI Command Reference*.

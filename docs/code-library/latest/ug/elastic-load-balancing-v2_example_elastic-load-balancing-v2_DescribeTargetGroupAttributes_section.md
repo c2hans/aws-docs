@@ -21,6 +21,7 @@ aws elbv2 describe-target-group-attributes \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
 The output includes the attributes if the protocol is HTTP or HTTPS and the target type is `instance` or `ip`.
+Output:
 
 ```
 {
@@ -49,6 +50,7 @@ The output includes the attributes if the protocol is HTTP or HTTPS and the targ
 }
 ```
 The following output includes the attributes if the protocol is HTTP or HTTPS and the target type is `lambda`.
+Output:
 
 ```
 {
@@ -61,6 +63,7 @@ The following output includes the attributes if the protocol is HTTP or HTTPS an
 }
 ```
 The following output includes the attributes if the protocol is TCP, TLS, UDP, or TCP\_UDP.
+Output:
 
 ```
 {
@@ -76,6 +79,7 @@ The following output includes the attributes if the protocol is TCP, TLS, UDP, o
     ]
 }
 ```
+For more information, see [Edit target group attributes for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-target-group-attributes.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeTargetGroupAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-target-group-attributes.html) in *AWS CLI Command Reference*.
 
 ------

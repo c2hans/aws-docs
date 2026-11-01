@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-api-tokens.html
 ---
 
-# API Tokens
+# API tokens
 <a name="acxd-api-tokens"></a>
 
 Manage ACXD SDK API tokens for programmatic users. Tokens are the credentials used to authenticate with the ACXD SDK.

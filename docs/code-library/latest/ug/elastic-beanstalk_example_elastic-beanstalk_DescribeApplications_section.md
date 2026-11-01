@@ -14,7 +14,7 @@ The following code examples show how to use `DescribeApplications`.
 
 **AWS CLI**
 **To view a list of applications**
-The following command retrieves information about applications in the current region:
+The following `describe-applications` example retrieves information about applications in the current region.
 
 ```
 aws elasticbeanstalk describe-applications
@@ -56,6 +56,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Elastic Beanstalk applications](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications.html) in the *AWS Elastic Beanstalk Developer Guide*.
 +  For API details, see [DescribeApplications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticbeanstalk/describe-applications.html) in *AWS CLI Command Reference*.
 
 ------

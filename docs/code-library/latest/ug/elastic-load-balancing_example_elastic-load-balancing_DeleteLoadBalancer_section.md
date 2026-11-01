@@ -14,12 +14,14 @@ The following code examples show how to use `DeleteLoadBalancer`.
 
 **AWS CLI**
 **To delete a load balancer**
-This example deletes the specified load balancer.
-Command:
+The following `delete-load-balancer` example deletes the specified load balancer.
 
 ```
-aws elb delete-load-balancer --load-balancer-name {{my-load-balancer}}
+aws elb delete-load-balancer \
+    --load-balancer-name {{my-load-balancer}}
 ```
+This command produces no output.
+For more information, see [Create an internet-facing Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-getting-started.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [DeleteLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/delete-load-balancer.html) in *AWS CLI Command Reference*.
 
 ------

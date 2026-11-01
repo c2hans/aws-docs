@@ -14,10 +14,11 @@ The following code examples show how to use `GetTemplate`.
 
 **AWS CLI**
 **To view the template body for an AWS CloudFormation stack**
-The following `get-template` command shows the template for the `myteststack` stack:
+The following `get-template` example shows the template for the `myteststack` stack.
 
 ```
-aws cloudformation get-template --stack-name {{myteststack}}
+aws cloudformation get-template \
+    --stack-name {{myteststack}}
 ```
 Output:
 
@@ -45,6 +46,7 @@ Output:
     }
 }
 ```
+For more information, see [Working with CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [GetTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/get-template.html) in *AWS CLI Command Reference*.
 
 ------

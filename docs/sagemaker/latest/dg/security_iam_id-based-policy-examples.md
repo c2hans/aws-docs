@@ -841,7 +841,7 @@ The following example uses the `sagemaker:WorkteamType` condition key with the `
             "Resource": "*",
             "Condition": {
                 "StringEquals": {
-                    "sagemaker:WorkteamType": "{{public-crowd}}"
+                    "sagemaker:WorkteamType": "{{private-crowd}}"
                 }
             }
         }
@@ -869,7 +869,7 @@ The following policies show how to restrict access to a work team using the `sag
             "Resource": "*",
             "Condition": {
                 "ArnLike": {
-                    "sagemaker:WorkteamArn": "arn:aws:sagemaker:*:*:workteam/public-crowd/*"
+                    "sagemaker:WorkteamArn": "arn:aws:sagemaker:*:*:workteam/private-crowd/*"
                 }
             }
         }
@@ -895,7 +895,7 @@ The following policies show how to restrict access to a work team using the `sag
             "Resource": "*",
             "Condition": {
                 "ArnEquals": {
-                    "sagemaker:WorkteamArn": "{{arn:aws:sagemaker:us-west-2:394669845002:workteam/public-crowd/default}}"
+                    "sagemaker:WorkteamArn": "arn:aws:sagemaker:{{us-east-1}}:{{123456789012}}:workteam/private-crowd/{{private-workteam-name}}"
                 }
             }
         }

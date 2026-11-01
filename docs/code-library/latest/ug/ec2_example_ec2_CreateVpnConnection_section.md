@@ -19,7 +19,7 @@ The following `create-vpn-connection` example creates a VPN connection between t
 ```
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
     --tag-specification '{{ResourceType=vpn-connection,Tags=[{Key=Name,Value=BGP-VPN}]}}'
 ```
@@ -29,10 +29,10 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "...configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
-        "VpnConnectionId": "vpn-123123123123abcab",
+        "VpnConnectionId": "vpn-1a2b3c4d5e6f7a8b9",
         "VpnGatewayId": "vgw-1a1a1a1a1a1a2b2b2",
         "Options": {
             "EnableAcceleration": false,
@@ -47,7 +47,7 @@ Output:
         },
         "Routes": [],
         "Tags": [
-             {
+            {
                 "Key": "Name",
                 "Value": "BGP-VPN"
             }
@@ -62,7 +62,7 @@ The following `create-vpn-connection` example creates a VPN connection between t
 ```
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
     --options "{\"StaticRoutesOnly\":true}"
 ```
@@ -72,10 +72,10 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "..configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
-        "VpnConnectionId": "vpn-123123123123abcab",
+        "VpnConnectionId": "vpn-1a2b3c4d5e6f7a8b9",
         "VpnGatewayId": "vgw-1a1a1a1a1a1a2b2b2",
         "Options": {
             "EnableAcceleration": false,
@@ -100,7 +100,7 @@ The following `create-vpn-connection` example creates a VPN connection and speci
 ```
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --vpn-gateway-id {{vgw-1a1a1a1a1a1a2b2b2}} \
     --options TunnelOptions='[{TunnelInsideCidr=169.254.12.0/30,PreSharedKey=ExamplePreSharedKey1},{TunnelInsideCidr=169.254.13.0/30,PreSharedKey=ExamplePreSharedKey2}]'
 ```
@@ -110,10 +110,10 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "..configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
-        "VpnConnectionId": "vpn-123123123123abcab",
+        "VpnConnectionId": "vpn-1a2b3c4d5e6f7a8b9",
         "VpnGatewayId": "vgw-1a1a1a1a1a1a2b2b2",
         "Options": {
             "EnableAcceleration": false,
@@ -147,7 +147,7 @@ The following `create-vpn-connection` example creates a VPN connection that supp
 aws ec2 create-vpn-connection \
     --type {{ipsec.1}} \
     --transit-gateway-id {{tgw-12312312312312312}} \
-    --customer-gateway-id {{cgw-001122334455aabbc}} \
+    --customer-gateway-id {{cgw-0abc1234def567890}} \
     --options {{TunnelInsideIpVersion=ipv6,TunnelOptions=[{StartupAction=start},{StartupAction=start}]}}
 ```
 Output:
@@ -156,7 +156,7 @@ Output:
 {
     "VpnConnection": {
         "CustomerGatewayConfiguration": "..configuration information...",
-        "CustomerGatewayId": "cgw-001122334455aabbc",
+        "CustomerGatewayId": "cgw-0abc1234def567890",
         "Category": "VPN",
         "State": "pending",
         "VpnConnectionId": "vpn-11111111122222222",

@@ -14,22 +14,24 @@ The following code examples show how to use `AttachLoadBalancerToSubnets`.
 
 **AWS CLI**
 **To attach subnets to a load balancer**
-This example adds the specified subnet to the set of configured subnets for the specified load balancer.
-Command:
+The following `attach-load-balancer-to-subnets` example adds the specified subnet to the set of configured subnets for the specified load balancer.
 
 ```
-aws elb attach-load-balancer-to-subnets --load-balancer-name {{my-load-balancer}} --subnets {{subnet-0ecac448}}
+aws elb attach-load-balancer-to-subnets \
+    --load-balancer-name {{my-load-balancer}} \
+    --subnets {{subnet-0ecac448}}
 ```
 Output:
 
 ```
 {
-   "Subnets": [
-       "subnet-15aaab61",
-       "subnet-0ecac448"
-   ]
+    "Subnets": [
+        "subnet-15aaab61",
+        "subnet-0ecac448"
+    ]
 }
 ```
+For more information, see [Configure subnets for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-manage-subnets.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [AttachLoadBalancerToSubnets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/attach-load-balancer-to-subnets.html) in *AWS CLI Command Reference*.
 
 ------

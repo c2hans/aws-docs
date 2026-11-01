@@ -14,8 +14,7 @@ The following code examples show how to use `ListRepositories`.
 
 **AWS CLI**
 **To view a list of repositories**
-This example lists all AWS CodeCommit repositories associated with the user's AWS account.
-Command:
+The following `list-repositories` example lists all AWS CodeCommit repositories associated with the user's AWS account.
 
 ```
 aws codecommit list-repositories
@@ -24,18 +23,19 @@ Output:
 
 ```
 {
-  "repositories": [
-      {
-         "repositoryName": "MyDemoRepo"
-         "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE",
-      },
-      {
-         "repositoryName": "MyOtherDemoRepo"
-         "repositoryId": "cfc29ac4-b0cb-44dc-9990-f6f51EXAMPLE"
-      }
-  ]
+    "repositories": [
+        {
+            "repositoryName": "MyDemoRepo",
+            "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        },
+        {
+            "repositoryName": "MyOtherDemoRepo",
+            "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+        }
+    ]
 }
 ```
+For more information, see [View CodeCommit repository details](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-repository-details.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [ListRepositories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/list-repositories.html) in *AWS CLI Command Reference*.
 
 ------

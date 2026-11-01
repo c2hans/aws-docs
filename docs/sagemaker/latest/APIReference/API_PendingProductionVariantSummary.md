@@ -17,6 +17,12 @@ Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: Yes
 
+ ** AcceleratorPartitionLayouts **   <a name="sagemaker-Type-PendingProductionVariantSummary-AcceleratorPartitionLayouts"></a>
+The accelerator partition layout that SageMaker is applying to this production variant. On NVIDIA GPUs, the profiles are Multi-Instance GPU (MIG) profiles. SageMaker returns the accelerator partition layout as you provided it in the pending deployment configuration, without normalization.
+Type: Array of [AcceleratorPartitionLayout](API_AcceleratorPartitionLayout.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 32 items.
+Required: No
+
  ** AcceleratorType **   <a name="sagemaker-Type-PendingProductionVariantSummary-AcceleratorType"></a>
 This parameter is no longer supported. Elastic Inference (EI) is no longer available.
 This parameter was used to specify the size of the EI instance to use for the production variant.

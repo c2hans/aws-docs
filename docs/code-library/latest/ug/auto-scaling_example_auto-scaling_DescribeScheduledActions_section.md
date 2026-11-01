@@ -14,7 +14,7 @@ The following code examples show how to use `DescribeScheduledActions`.
 
 **AWS CLI**
 **Example 1: To describe all scheduled actions**
-This example describes all your scheduled actions.
+The following `describe-scheduled-actions` example describes all your scheduled actions.
 
 ```
 aws autoscaling describe-scheduled-actions
@@ -28,7 +28,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -41,7 +41,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To describe scheduled actions for the specified group**
-To describe the scheduled actions for a specific Auto Scaling group, use the `--auto-scaling-group-name` option.
+The following `describe-scheduled-actions` example uses the `--auto-scaling-group-name` option to describe the scheduled actions for a specific Auto Scaling group.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -56,7 +56,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -69,7 +69,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To describe the specified scheduled action**
-To describe a specific scheduled action, use the `--scheduled-action-names` option.
+The following `describe-scheduled-actions` example uses the `--scheduled-action-names` option to describe a specific scheduled action.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -84,7 +84,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -97,7 +97,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 4: To describe scheduled actions with a specified start time**
-To describe the scheduled actions that start at a specific time, use the `--start-time` option.
+The following `describe-scheduled-actions` example uses the `--start-time` option to describe the scheduled actions that start at a specific time.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -112,7 +112,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -125,7 +125,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 5: To describe scheduled actions that end at a specified time**
-To describe the scheduled actions that end at a specific time, use the `--end-time` option.
+The following `describe-scheduled-actions` example uses the `--end-time` option to describe the scheduled actions that end at a specific time.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -140,7 +140,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -153,7 +153,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 6: To describe a specified number of scheduled actions**
-To return a specific number of scheduled actions, use the `--max-items` option.
+The following `describe-scheduled-actions` example uses the `--max-items` option to return a specific number of scheduled actions.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -169,7 +169,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,

@@ -33,7 +33,7 @@ aws autoscaling-plans create-scaling-plan \
     --scaling-plan-name {{my-scaling-plan}} \
     --cli-input-json {{file://~/config.json}}
 ```
-Contents of `config.json` file:
+Contents of `config.json`:
 
 ```
 {
@@ -80,7 +80,7 @@ Output:
 "ScalingPlanVersion": 1
 }
 ```
-For more information, see the [AWS Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html).
+For more information, see [What is a scaling plan?](https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-a-scaling-plan.html) in the *AWS Auto Scaling User Guide*.
 +  For API details, see [CreateScalingPlan](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling-plans/create-scaling-plan.html) in *AWS CLI Command Reference*.
 
 ### `delete-scaling-plan`
@@ -98,7 +98,7 @@ aws autoscaling-plans delete-scaling-plan \
     --scaling-plan-version {{1}}
 ```
 This command produces no output.
-For more information, see the [AWS Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html).
+For more information, see [Step 5: Clean up](https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-delete-scaling-plan.html) in the *AWS Auto Scaling User Guide*.
 +  For API details, see [DeleteScalingPlan](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling-plans/delete-scaling-plan.html) in *AWS CLI Command Reference*.
 
 ### `describe-scaling-plan-resources`
@@ -167,7 +167,6 @@ Output:
 {
     "ScalingPlans": [
         {
-            "LastMutatingRequestTime": 1565388443.963,
             "ScalingPlanVersion": 1,
             "CreationTime": 1565388443.963,
             "ScalingInstructions": [
@@ -259,7 +258,7 @@ The following code example shows how to use `get-scaling-plan-resource-forecast-
 
 **AWS CLI**
 **To retrieve load forecast data**
-This example retrieves load forecast data for a scalable resource (an Auto Scaling group) that is associated with the specified scaling plan.
+The following `get-scaling-plan-resource-forecast-data` example retrieves load forecast data for a scalable resource (an Auto Scaling group) that is associated with the specified scaling plan.
 
 ```
 aws autoscaling-plans get-scaling-plan-resource-forecast-data \
@@ -276,7 +275,20 @@ Output:
 
 ```
 {
-    "Datapoints": [...]
+    "Datapoints": [
+        {
+            "Timestamp": "2019-08-30T00:00:00+00:00",
+            "Value": 400.0
+        },
+        {
+            "Timestamp": "2019-08-30T01:00:00+00:00",
+            "Value": 420.0
+        },
+        {
+            "Timestamp": "2019-08-30T02:00:00+00:00",
+            "Value": 435.0
+        }
+    ]
 }
 ```
 For more information, see [What Is AWS Auto Scaling](https://docs.aws.amazon.com/autoscaling/plans/userguide/what-is-aws-auto-scaling.html) in the *AWS Auto Scaling User Guide*.

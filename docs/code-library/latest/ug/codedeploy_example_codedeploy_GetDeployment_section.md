@@ -17,7 +17,8 @@ The following code examples show how to use `GetDeployment`.
 The following `get-deployment` example displays information about a deployment that is associated with the user's AWS account.
 
 ```
-aws deploy get-deployment --deployment-id {{d-A1B2C3123}}
+aws deploy get-deployment \
+    --deployment-id {{d-A1B2C3123}}
 ```
 Output:
 
@@ -53,6 +54,7 @@ Output:
     }
 }
 ```
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-deployment.html) in *AWS CLI Command Reference*.
 
 ------

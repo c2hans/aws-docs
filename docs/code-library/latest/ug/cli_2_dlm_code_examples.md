@@ -26,7 +26,7 @@ The following code example shows how to use `create-default-role`.
 
 **AWS CLI**
 **To create the required IAM role for Amazon DLM**
-The following `dlm create-default-role` example creates the AWSDataLifecycleManagerDefaultRole default role for managing snapshots.
+The following `create-default-role` example creates the AWSDataLifecycleManagerDefaultRole default role for managing snapshots.
 
 ```
 aws dlm create-default-role \
@@ -72,7 +72,7 @@ Contents of `policyDetails.json`:
             "TagsToAdd": [
                 {
                     "Key": "type",
-                     "Value": "myDailySnapshot"
+                    "Value": "myDailySnapshot"
                 }
             ],
             "CreateRule": {
@@ -96,6 +96,7 @@ Output:
     "PolicyId": "policy-0123456789abcdef0"
 }
 ```
+For more information, see [Create Amazon Data Lifecycle Manager custom policy for EBS snapshots](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-ami-policy.html) in the *Amazon EBS User Guide*.
 +  For API details, see [CreateLifecyclePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dlm/create-lifecycle-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-lifecycle-policy`
@@ -105,11 +106,14 @@ The following code example shows how to use `delete-lifecycle-policy`.
 
 **AWS CLI**
 **To delete a lifecycle policy**
-The following example deletes the specified lifecycle policy.:
+The following `delete-lifecycle-policy` example deletes the specified lifecycle policy.
 
 ```
-aws dlm delete-lifecycle-policy --policy-id {{policy-0123456789abcdef0}}
+aws dlm delete-lifecycle-policy \
+    --policy-id {{policy-0123456789abcdef0}}
 ```
+This command produces no output.
+For more information, see [Delete Amazon Data Lifecycle Manager policies](https://docs.aws.amazon.com/ebs/latest/userguide/delete.html) in the *Amazon EBS User Guide*.
 +  For API details, see [DeleteLifecyclePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dlm/delete-lifecycle-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-lifecycle-policies`
@@ -137,6 +141,7 @@ Output:
     ]
 }
 ```
+For more information, see [Automate backups with Amazon Data Lifecycle Manager](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html) in the *Amazon EBS User Guide*.
 +  For API details, see [GetLifecyclePolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dlm/get-lifecycle-policies.html) in *AWS CLI Command Reference*.
 
 ### `get-lifecycle-policy`
@@ -169,37 +174,38 @@ Output:
                 "VOLUME"
             ],
             "TargetTags": [
-              {
-                  "Key": "costCenter",
-                  "Value": "115"
-              }
+                {
+                    "Key": "costCenter",
+                    "Value": "115"
+                }
             ],
             "Schedules": [
-              {
-                  "Name": "DailySnapshots",
-                  "CopyTags": true,
-                  "TagsToAdd": [
-                    {
-                        "Key": "type",
-                        "Value": "myDailySnapshot"
+                {
+                    "Name": "DailySnapshots",
+                    "CopyTags": true,
+                    "TagsToAdd": [
+                        {
+                            "Key": "type",
+                            "Value": "myDailySnapshot"
+                        }
+                    ],
+                    "CreateRule": {
+                        "Interval": 24,
+                        "IntervalUnit": "HOURS",
+                        "Times": [
+                            "03:00"
+                        ]
+                    },
+                    "RetainRule": {
+                        "Count": 5
                     }
-                  ],
-                  "CreateRule": {
-                    "Interval": 24,
-                    "IntervalUnit": "HOURS",
-                    "Times": [
-                        "03:00"
-                    ]
-                  },
-                  "RetainRule": {
-                    "Count": 5
-                  }
-              }
+                }
             ]
         }
     }
 }
 ```
+For more information, see [Automate backups with Amazon Data Lifecycle Manager](https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-lifecycle.html) in the *Amazon EBS User Guide*.
 +  For API details, see [GetLifecyclePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dlm/get-lifecycle-policy.html) in *AWS CLI Command Reference*.
 
 ### `update-lifecycle-policy`
@@ -216,6 +222,8 @@ aws dlm update-lifecycle-policy \
     --policy-id {{policy-0123456789abcdef0}} \
     --state {{ENABLED}}
 ```
+This command produces no output.
+For more information, see [Modify Amazon Data Lifecycle Manager policies](https://docs.aws.amazon.com/ebs/latest/userguide/modify.html) in the *Amazon EBS User Guide*.
 **Example 2: To disable a lifecycle policy**
 The following `update-lifecycle-policy` example disables the specified lifecycle policy.
 
@@ -224,15 +232,19 @@ aws dlm update-lifecycle-policy \
     --policy-id {{policy-0123456789abcdef0}} \
     --state {{DISABLED}}
 ```
+This command produces no output.
+For more information, see [Modify Amazon Data Lifecycle Manager policies](https://docs.aws.amazon.com/ebs/latest/userguide/modify.html) in the *Amazon EBS User Guide*.
 **Example 3: To update the details for lifecycle policy**
 The following `update-lifecycle-policy` example updates the target tags for the specified lifecycle policy.
 
 ```
 aws dlm update-lifecycle-policy \
-    --policy-id {{policy-0123456789abcdef0}}
+    --policy-id {{policy-0123456789abcdef0}} \
     --policy-details {{file://policyDetails.json}}
 ```
-Contents of `policyDetails.json`. Other details not referenced in this file are not changed by the command.
+This command produces no output.
+Other details not referenced in the file are not changed by the command.
+Contents of `policyDetails.json`:
 
 ```
 {
@@ -248,4 +260,5 @@ Contents of `policyDetails.json`. Other details not referenced in this file are 
     ]
 }
 ```
+For more information, see [Modify Amazon Data Lifecycle Manager policies](https://docs.aws.amazon.com/ebs/latest/userguide/modify.html) in the *Amazon EBS User Guide*.
 +  For API details, see [UpdateLifecyclePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dlm/update-lifecycle-policy.html) in *AWS CLI Command Reference*.

@@ -40,7 +40,7 @@ Output:
     "Quota": {
         "ServiceCode": "ec2",
         "ServiceName": "Amazon Elastic Compute Cloud (Amazon EC2)",
-        "QuotaArn": "arn:aws:servicequotas:us-east-2::ec2/L-1216C47A",
+        "QuotaArn": "arn:aws:servicequotas:us-west-2::ec2/L-1216C47A",
         "QuotaCode": "L-1216C47A",
         "QuotaName": "Running On-Demand Standard (A, C, D, H, I, M, R, T, Z) instances",
         "Value": 5.0,
@@ -61,6 +61,7 @@ Output:
     }
 }
 ```
+For more information, see [Viewing service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) in the *Service Quotas User Guide*.
 +  For API details, see [GetAwsDefaultServiceQuota](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/get-aws-default-service-quota.html) in *AWS CLI Command Reference*.
 
 ### `get-requested-service-quota-change`
@@ -92,12 +93,13 @@ Output:
         "Created": 1580446904.067,
         "LastUpdated": 1580446953.265,
         "Requester": "{\"accountId\":\"123456789012\",\"callerArn\":\"arn:aws:iam::123456789012:root\"}",
-        "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:ec2/L-20F13EBD",
+        "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:ec2/L-20F13EBD",
         "GlobalQuota": false,
         "Unit": "None"
     }
 }
 ```
+For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 +  For API details, see [GetRequestedServiceQuotaChange](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/get-requested-service-quota-change.html) in *AWS CLI Command Reference*.
 
 ### `get-service-quota`
@@ -121,7 +123,7 @@ Output:
     "Quota": {
         "ServiceCode": "ec2",
         "ServiceName": "Amazon Elastic Compute Cloud (Amazon EC2)",
-        "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:ec2/L-1216C47A",
+        "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:ec2/L-1216C47A",
         "QuotaCode": "L-1216C47A",
         "QuotaName": "Running On-Demand Standard (A, C, D, H, I, M, R, T, Z) instances",
         "Value": 1920.0,
@@ -142,6 +144,7 @@ Output:
     }
 }
 ```
+For more information, see [Viewing service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) in the *Service Quotas User Guide*.
 +  For API details, see [GetServiceQuota](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/get-service-quota.html) in *AWS CLI Command Reference*.
 
 ### `list-aws-default-service-quotas`
@@ -198,6 +201,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) in the *Service Quotas User Guide*.
 +  For API details, see [ListAwsDefaultServiceQuotas](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/list-aws-default-service-quotas.html) in *AWS CLI Command Reference*.
 
 ### `list-requested-service-quota-change-history-by-quota`
@@ -231,13 +235,14 @@ Output:
             "Created": 1580446904.067,
             "LastUpdated": 1580446953.265,
             "Requester": "{\"accountId\":\"123456789012\",\"callerArn\":\"arn:aws:iam::123456789012:root\"}",
-            "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:ec2/L-20F13EBD",
+            "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:ec2/L-20F13EBD",
             "GlobalQuota": false,
             "Unit": "None"
         }
     ]
 }
 ```
+For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 +  For API details, see [ListRequestedServiceQuotaChangeHistoryByQuota](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/list-requested-service-quota-change-history-by-quota.html) in *AWS CLI Command Reference*.
 
 ### `list-requested-service-quota-change-history`
@@ -270,13 +275,14 @@ Output:
             "Created": 1580446904.067,
             "LastUpdated": 1580446953.265,
             "Requester": "{\"accountId\":\"123456789012\",\"callerArn\":\"arn:aws:iam::123456789012:root\"}",
-            "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:ec2/L-20F13EBD",
+            "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:ec2/L-20F13EBD",
             "GlobalQuota": false,
             "Unit": "None"
         }
     ]
 }
 ```
+For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 +  For API details, see [ListRequestedServiceQuotaChangeHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/list-requested-service-quota-change-history.html) in *AWS CLI Command Reference*.
 
 ### `list-service-quotas`
@@ -300,7 +306,7 @@ Output:
         {
             "ServiceCode": "cloudformation",
             "ServiceName": "AWS CloudFormation",
-            "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:cloudformation/L-87D14FB7",
+            "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:cloudformation/L-87D14FB7",
             "QuotaCode": "L-87D14FB7",
             "QuotaName": "Output count in CloudFormation template",
             "Value": 60.0,
@@ -311,7 +317,7 @@ Output:
         {
             "ServiceCode": "cloudformation",
             "ServiceName": "AWS CloudFormation",
-            "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:cloudformation/L-0485CB21",
+            "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:cloudformation/L-0485CB21",
             "QuotaCode": "L-0485CB21",
             "QuotaName": "Stack count",
             "Value": 200.0,
@@ -322,6 +328,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) in the *Service Quotas User Guide*.
 +  For API details, see [ListServiceQuotas](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/list-service-quotas.html) in *AWS CLI Command Reference*.
 
 ### `list-services`
@@ -331,7 +338,7 @@ The following code example shows how to use `list-services`.
 
 **AWS CLI**
 **To list the available services**
-The following command lists the services that are available in Service Quotas.
+The following `list-services` example lists the services that are available in Service Quotas.
 
 ```
 aws service-quotas list-services
@@ -353,9 +360,6 @@ Output:
             "ServiceCode": "acm",
             "ServiceName": "AWS Certificate Manager (ACM)"
         },
-
-        ...truncated...
-
         {
             "ServiceCode": "xray",
             "ServiceName": "AWS X-Ray"
@@ -380,10 +384,10 @@ Output:
     "amplify",
     "apigateway",
     "application-autoscaling",
-        ...truncated...
     "xray"
 ]
 ```
+For more information, see [Viewing service quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/gs-request-quota.html) in the *Service Quotas User Guide*.
 +  For API details, see [ListServices](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/list-services.html) in *AWS CLI Command Reference*.
 
 ### `request-service-quota-increase`
@@ -415,10 +419,11 @@ Output:
         "Status": "PENDING",
         "Created": 1580446904.067,
         "Requester": "{\"accountId\":\"123456789012\",\"callerArn\":\"arn:aws:iam::123456789012:root\"}",
-        "QuotaArn": "arn:aws:servicequotas:us-east-2:123456789012:ec2/L-20F13EBD",
+        "QuotaArn": "arn:aws:servicequotas:us-west-2:123456789012:ec2/L-20F13EBD",
         "GlobalQuota": false,
         "Unit": "None"
     }
 }
 ```
+For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 +  For API details, see [RequestServiceQuotaIncrease](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/service-quotas/request-service-quota-increase.html) in *AWS CLI Command Reference*.

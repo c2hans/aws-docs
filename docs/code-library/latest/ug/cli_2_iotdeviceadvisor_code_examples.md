@@ -32,7 +32,7 @@ The following `create-suite-definition` example creates a device advisor test su
 aws iotdeviceadvisor create-suite-definition \
     --suite-definition-configuration '{{{ \
         "suiteDefinitionName": "TestSuiteName", \
-        "devices": [{"thingArn":"arn:aws:iot:us-east-1:123456789012:thing/MyIotThing"}], \
+        "devices": [{"thingArn":"arn:aws:iot:us-west-2:123456789012:thing/MyIotThing"}], \
         "intendedForQualification": false, \
         "rootGroup": "{\"configuration\":{},\"tests\":[{\"name\":\"MQTT Connect\",\"configuration\":{\"EXECUTION_TIMEOUT\":120},\"tests\":[{\"name\":\"MQTT_Connect\",\"configuration\":{},\"test\":{\"id\":\"MQTT_Connect\",\"testCase\":null,\"version\":\"0.0.0\"}}]}]}", \
         "devicePermissionRoleArn": "arn:aws:iam::123456789012:role/Myrole"}}}'
@@ -42,7 +42,7 @@ Output:
 ```
 {
     "suiteDefinitionId": "0jtsgio7yenu",
-    "suiteDefinitionArn": "arn:aws:iotdeviceadvisor:us-east-1:123456789012:suitedefinition/0jtsgio7yenu",
+    "suiteDefinitionArn": "arn:aws:iotdeviceadvisor:us-west-2:123456789012:suitedefinition/0jtsgio7yenu",
     "suiteDefinitionName": "TestSuiteName",
     "createdAt": "2022-12-02T11:38:13.263000-05:00"
 }
@@ -55,7 +55,7 @@ The following `create-suite-definition` example creates a device advisor qualifi
 aws iotdeviceadvisor create-suite-definition \
     --suite-definition-configuration '{{{ \
         "suiteDefinitionName": "TestSuiteName", \
-        "devices": [{"thingArn":"arn:aws:iot:us-east-1:123456789012:thing/MyIotThing"}], \
+        "devices": [{"thingArn":"arn:aws:iot:us-west-2:123456789012:thing/MyIotThing"}], \
         "intendedForQualification": true, \
         "rootGroup": "", \
         "devicePermissionRoleArn": "arn:aws:iam::123456789012:role/Myrole"}}}'
@@ -65,7 +65,7 @@ Output:
 ```
 {
     "suiteDefinitionId": "txgsuolk2myj",
-    "suiteDefinitionArn": "arn:aws:iotdeviceadvisor:us-east-1:123456789012:suitedefinition/txgsuolk2myj",
+    "suiteDefinitionArn": "arn:aws:iotdeviceadvisor:us-west-2:123456789012:suitedefinition/txgsuolk2myj",
     "suiteDefinitionName": "TestSuiteName",
     "createdAt": "2022-12-02T11:38:13.263000-05:00"
 }
@@ -87,7 +87,7 @@ aws iotdeviceadvisor delete-suite-definition \
     --suite-definition-id {{0jtsgio7yenu}}
 ```
 This command produces no output.
-For more information, see [DeleteSuiteDefinition](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_DeleteSuiteDefinition.html) in the *AWS IoT API Reference*.
+For more information, see [Device Advisor workflow](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [DeleteSuiteDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/delete-suite-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-endpoint`
@@ -106,7 +106,7 @@ Output:
 
 ```
 {
-    "endpoint": "t6y4c143x9sfo.deviceadvisor.iot.us-east-1.amazonaws.com"
+    "endpoint": "t6y4c143x9sfo.deviceadvisor.iot.us-west-2.amazonaws.com"
 }
 ```
 **Example 2: To get the information about an IoT Device Advisor Device-level endpoint**
@@ -114,13 +114,13 @@ The following `get-endpoint` example gets the information about a device advisor
 
 ```
 aws iotdeviceadvisor get-endpoint \
-    --thing-arn {{arn:aws:iot:us-east-1:123456789012:thing/MyIotThing}}
+    --thing-arn {{arn:aws:iot:us-west-2:123456789012:thing/MyIotThing}}
 ```
 Output:
 
 ```
 {
-    "endpoint": "tdb7719be5t6y4c143x9sfo.deviceadvisor.iot.us-east-1.amazonaws.com"
+    "endpoint": "tdb7719be5t6y4c143x9sfo.deviceadvisor.iot.us-west-2.amazonaws.com"
 }
 ```
 For more information, see [Get a test endpoint](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html#device-advisor-workflow-get-test-endpoint) in the *AWS IoT Core Developer Guide*.
@@ -144,7 +144,7 @@ Output:
 ```
 {
     "suiteDefinitionId": "qqcsmtyyjabl",
-    "suiteDefinitionArn": "arn:aws:iotdeviceadvisor:us-east-1:123456789012:suitedefinition/qqcsmtyyjabl",
+    "suiteDefinitionArn": "arn:aws:iotdeviceadvisor:us-west-2:123456789012:suitedefinition/qqcsmtyyjabl",
     "suiteDefinitionVersion": "v1",
     "latestVersion": "v1",
     "suiteDefinitionConfiguration": {
@@ -209,11 +209,11 @@ Output:
     "suiteDefinitionId": "qqcsmtyyjabl",
     "suiteDefinitionVersion": "v1",
     "suiteRunId": "nzlfyhaa18oa",
-    "suiteRunArn": "arn:aws:iotdeviceadvisor:us-east-1:123456789012:suiterun/qqcsmtyyjabl/nzlfyhaa18oa",
+    "suiteRunArn": "arn:aws:iotdeviceadvisor:us-west-2:123456789012:suiterun/qqcsmtyyjabl/nzlfyhaa18oa",
     "suiteRunConfiguration": {
         "primaryDevice": {
-            "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/MyIotThing",
-            "certificateArn": "arn:aws:iot:us-east-1:123456789012:cert/certFile"
+            "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyIotThing",
+            "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/certFile"
         },
         "parallelRun": false
     },
@@ -230,7 +230,7 @@ Output:
                         "status": "PASS",
                         "startTime": "2022-11-12T00:01:53.693000-05:00",
                         "endTime": "2022-11-12T00:02:15.443000-05:00",
-                        "logUrl": "https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logEventViewer:group=/aws/iot/deviceadvisor/qqcsmtyyjabl;stream=nzlfyhaa18oa_2ve2twrqyr0s",
+                        "logUrl": "https://console.aws.amazon.com/cloudwatch/home?region=us-west-2#logEventViewer:group=/aws/iot/deviceadvisor/qqcsmtyyjabl;stream=nzlfyhaa18oa_2ve2twrqyr0s",
                         "warnings": "null",
                         "failure": "null"
                     }
@@ -269,16 +269,13 @@ Output:
             "suiteDefinitionName": "TestSuite1",
             "defaultDevices": [
                 {
-                    "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/MyIotThing"
+                    "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyIotThing"
                 }
             ],
             "intendedForQualification": false,
             "isLongDurationTest": false,
             "protocol": "MqttV3_1_1",
             "createdAt": "2022-11-17T14:15:56.830000-05:00"
-        },
-        {
-            ......
         }
     ],
     "nextToken": "nextTokenValue"
@@ -310,7 +307,7 @@ Output:
     "nextToken": "nextTokenValue"
 }
 ```
-For more information, see [ListSuiteDefinitions](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_ListSuiteDefinitions.html) in the *AWS IoT API Reference*.
+For more information, see [Device Advisor workflow](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListSuiteDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/list-suite-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-suite-runs`
@@ -376,7 +373,7 @@ Output:
     "nextToken": "nextTokenValue"
 }
 ```
-For more information, see [ListSuiteRuns](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_ListSuiteRuns.html) in the *AWS IoT API Reference*.
+For more information, see [Device Advisor workflow](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html#device-advisor-workflow-describe-suite) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListSuiteRuns](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/list-suite-runs.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -390,7 +387,7 @@ The following `list-tags-for-resource` example lists the tags attached to a devi
 
 ```
 aws iotdeviceadvisor list-tags-for-resource \
-    --resource-arn {{arn:aws:iotdeviceadvisor:us-east-1:123456789012:suitedefinition/ba0uyjpg38ny}}
+    --resource-arn {{arn:aws:iotdeviceadvisor:us-west-2:123456789012:suitedefinition/ba0uyjpg38ny}}
 ```
 Output:
 
@@ -401,7 +398,7 @@ Output:
     }
 }
 ```
-For more information, see [ListTagsForResource](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_ListTagsForResource.html) in the *AWS IoT API Reference* and [Resource types defined by AWS IoT Core Device Advisor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotcoredeviceadvisor.html#awsiotcoredeviceadvisor-resources-for-iam-policies) in the *Service Authorization Reference*.
+For more information, see [Resource types defined by AWS IoT Core Device Advisor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_iotdeviceadvisor.html#list_iotdeviceadvisor-resources-for-iam-policies) in the *Service Authorization Reference* and [Tagging your AWS IoT resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `start-suite-run`
@@ -417,14 +414,14 @@ The following `start-suite-run` example lists the available widgets in your AWS 
 aws iotdeviceadvisor start-suite-run \
     --suite-definition-id {{qqcsmtyyjabl}} \
     --suite-definition-version {{v1}} \
-    --suite-run-configuration '{{{"primaryDevice":{"thingArn": "arn:aws:iot:us-east-1:123456789012:thing/MyIotThing","certificateArn":"arn:aws:iot:us-east-1:123456789012:cert/certFile"}}}}'
+    --suite-run-configuration '{{{"primaryDevice":{"thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyIotThing","certificateArn":"arn:aws:iot:us-west-2:123456789012:cert/certFile"}}}}'
 ```
 Output:
 
 ```
 {
     "suiteRunId": "pwmucgw7lt9s",
-    "suiteRunArn": "arn:aws:iotdeviceadvisor:us-east-1:123456789012:suiterun/qqcsmtyyjabl/pwmucgw7lk9s",
+    "suiteRunArn": "arn:aws:iotdeviceadvisor:us-west-2:123456789012:suiterun/qqcsmtyyjabl/pwmucgw7lk9s",
     "createdAt": "2022-12-02T15:43:05.581000-05:00"
 }
 ```
@@ -460,11 +457,11 @@ The following `tag-resource` example adds to and modifies the existing tags of a
 
 ```
 aws iotdeviceadvisor tag-resource \
-    --resource-arn {{arn:aws:iotdeviceadvisor:us-east-1:123456789012:suitedefinition/ba0uyjpg38ny}} \
+    --resource-arn {{arn:aws:iotdeviceadvisor:us-west-2:123456789012:suitedefinition/ba0uyjpg38ny}} \
     --tags '{{{"TagKey": "TagValue"}}}'
 ```
 This command produces no output.
-For more information, see [TagResource](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_TagResource.html) in the *AWS IoT API Reference* and [Resource types defined by AWS IoT Core Device Advisor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotcoredeviceadvisor.html#awsiotcoredeviceadvisor-resources-for-iam-policies) in the *Service Authorization Reference*.
+For more information, see [Resource types defined by AWS IoT Core Device Advisor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_iotdeviceadvisor.html#list_iotdeviceadvisor-resources-for-iam-policies) in the *Service Authorization Reference* and [Tagging your AWS IoT resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -478,11 +475,11 @@ The following `untag-resource` example removes the existing tags from a device a
 
 ```
 aws iotdeviceadvisor untag-resource \
-    --resource-arn {{arn:aws:iotdeviceadvisor:us-east-1:123456789012:suitedefinition/ba0uyjpg38ny}} \
+    --resource-arn {{arn:aws:iotdeviceadvisor:us-west-2:123456789012:suitedefinition/ba0uyjpg38ny}} \
     --tag-keys {{"TagKey"}}
 ```
 This command produces no output.
-For more information, see [UntagResource](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_UntagResource.html) in the *AWS IoT API Reference* and [Resource types defined by AWS IoT Core Device Advisor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotcoredeviceadvisor.html#awsiotcoredeviceadvisor-resources-for-iam-policies) in the *Service Authorization Reference*.
+For more information, see [Resource types defined by AWS IoT Core Device Advisor](https://docs.aws.amazon.com/service-authorization/latest/reference/list_iotdeviceadvisor.html#list_iotdeviceadvisor-resources-for-iam-policies) in the *Service Authorization Reference* and [Tagging your AWS IoT resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-suite-definition`
@@ -499,7 +496,7 @@ aws iotdeviceadvisor update-suite-definition \
     --suite-definition-id {{3hsn88h4p2g5}} \
     --suite-definition-configuration '{{{ \
         "suiteDefinitionName": "TestSuiteName", \
-        "devices": [{"thingArn":"arn:aws:iot:us-east-1:123456789012:thing/MyIotThing"}], \
+        "devices": [{"thingArn":"arn:aws:iot:us-west-2:123456789012:thing/MyIotThing"}], \
         "intendedForQualification": false, \
         "rootGroup": "{\"configuration\":{},\"tests\":[{\"name\":\"MQTT Connect\",\"configuration\":{\"EXECUTION_TIMEOUT\":120},\"tests\":[{\"name\":\"MQTT_Connect\",\"configuration\":{},\"test\":{\"id\":\"MQTT_Connect\",\"testCase\":null,\"version\":\"0.0.0\"}}]}]}", \
         "devicePermissionRoleArn": "arn:aws:iam::123456789012:role/Myrole"}}}'
@@ -523,7 +520,7 @@ aws iotdeviceadvisor update-suite-definition \
     --suite-definition-id {{txgsuolk2myj}} \
     --suite-definition-configuration '{{{
         "suiteDefinitionName": "TestSuiteName", \
-        "devices": [{"thingArn":"arn:aws:iot:us-east-1:123456789012:thing/MyIotThing"}], \
+        "devices": [{"thingArn":"arn:aws:iot:us-west-2:123456789012:thing/MyIotThing"}], \
         "intendedForQualification": true, \
         "rootGroup": "", \
         "devicePermissionRoleArn": "arn:aws:iam::123456789012:role/Myrole"}}}'
@@ -539,5 +536,5 @@ Output:
     "lastUpdatedAt": "2022-12-02T16:02:45.857000-05:00"
 }
 ```
-For more information, see [UpdateSuiteDefinition](https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadvisor_UpdateSuiteDefinition.html) in the *AWS IoT API Reference*.
+For more information, see [Device Advisor workflow](https://docs.aws.amazon.com/iot/latest/developerguide/device-advisor-workflow.html#device-advisor-workflow-create-suite-definition) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateSuiteDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotdeviceadvisor/update-suite-definition.html) in *AWS CLI Command Reference*.

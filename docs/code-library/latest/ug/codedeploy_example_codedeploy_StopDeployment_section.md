@@ -24,6 +24,7 @@ Output:
     "statusMessage": "No more commands will be scheduled for execution in the deployment instances"
 }
 ```
+For more information, see [Stop a deployment with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-stop.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [StopDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/stop-deployment.html) in *AWS CLI Command Reference*.
 
 ------

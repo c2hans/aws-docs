@@ -26,35 +26,38 @@ The following code example shows how to use `accept-direct-connect-gateway-assoc
 
 **AWS CLI**
 **To accept a gateway association proposal**
-The following `accept-direct-connect-gateway-association-proposal` accepts the specified proposal.
+The following `accept-direct-connect-gateway-association-proposal` example accepts the specified proposal.
 
 ```
-aws directconnect  accept-direct-connect-gateway-association-proposal \
-    --direct-connect-gateway-id {{11460968-4ac1-4fd3-bdb2-00599EXAMPLE}} \
-    --proposal-id {{cb7f41cb-8128-43a5-93b1-dcaedEXAMPLE}} \
-    --associated-gateway-owner-account {{111122223333}}
+aws directconnect accept-direct-connect-gateway-association-proposal \
+    --direct-connect-gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --proposal-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --associated-gateway-owner-account {{123456789012}}
+```
+Output:
 
-{{{}}
-    "directConnectGatewayAssociation": {{{}}
-        "directConnectGatewayId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
-        "directConnectGatewayOwnerAccount": "111122223333",
+```
+{
+    "directConnectGatewayAssociation": {
+        "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "directConnectGatewayOwnerAccount": "123456789012",
         "associationState": "associating",
-        "associatedGateway": {{{}}
+        "associatedGateway": {
             "id": "tgw-02f776b1a7EXAMPLE",
             "type": "transitGateway",
-            "ownerAccount": "111122223333",
-            "region": {{"us-east-1"}}
-        {{},}}
-        "associationId": "6441f8bf-5917-4279-ade1-9708bEXAMPLE",
-        "allowedPrefixesToDirectConnectGateway": {{[}}
-            {{{}}
-                "cidr": {{"192.168.1.0/30"}}
-            {{}}}
-        {{]}}
-    {{}}}
-{{}}}
+            "ownerAccount": "123456789012",
+            "region": "us-west-2"
+        },
+        "associationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "allowedPrefixesToDirectConnectGateway": [
+            {
+                "cidr": "192.168.1.0/30"
+            }
+        ]
+    }
+}
 ```
-For more information, see [Accepting or Rejecting a Transit Gateway Association Proposal](https://docs.aws.amazon.com/directconnect/latest/UserGuide/multi-account-associate-tgw.html#multi-account-tgw-accept-reject-proposal) in the *AWS Direct Connect User Guide*.
+For more information, see [Accept or reject a Transit Gateway and Direct Connect association proposal](https://docs.aws.amazon.com/directconnect/latest/UserGuide/multi-account-tgw-accept-reject-proposal.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AcceptDirectConnectGatewayAssociationProposal](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/accept-direct-connect-gateway-association-proposal.html) in *AWS CLI Command Reference*.
 
 ### `allocate-connection-on-interconnect`
@@ -64,10 +67,15 @@ The following code example shows how to use `allocate-connection-on-interconnect
 
 **AWS CLI**
 **To create a hosted connection on an interconnect**
-The following `allocate-connection-on-interconnect` command creates a hosted connection on an interconnect:
+The following `allocate-connection-on-interconnect` example creates a hosted connection on an interconnect.
 
 ```
-aws directconnect allocate-connection-on-interconnect --bandwidth {{500Mbps}} --connection-name {{mydcinterconnect}} --owner-account {{123456789012}} --interconnect-id {{dxcon-fgktov66}} --vlan {{101}}
+aws directconnect allocate-connection-on-interconnect \
+    --bandwidth {{500Mbps}} \
+    --connection-name {{mydcinterconnect}} \
+    --owner-account {{123456789012}} \
+    --interconnect-id {{dxcon-fgktov66}} \
+    --vlan {{101}}
 ```
 Output:
 
@@ -81,9 +89,10 @@ Output:
     "bandwidth": "500Mbps",
     "location": "TIVIT",
     "connectionName": "mydcinterconnect",
-    "region": "sa-east-1"
+    "region": "us-west-2"
 }
 ```
+For more information, see [Hosted Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted_connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AllocateConnectionOnInterconnect](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/allocate-connection-on-interconnect.html) in *AWS CLI Command Reference*.
 
 ### `allocate-hosted-connection`
@@ -115,9 +124,10 @@ Output:
     "bandwidth": "500Mbps",
     "location": "TIVIT",
     "connectionName": "mydcinterconnect",
-    "region": "sa-east-1"
+    "region": "us-west-2"
 }
 ```
+For more information, see [Hosted Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted_connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AllocateHostedConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/allocate-hosted-connection.html) in *AWS CLI Command Reference*.
 
 ### `allocate-private-virtual-interface`
@@ -127,10 +137,13 @@ The following code example shows how to use `allocate-private-virtual-interface`
 
 **AWS CLI**
 **To provision a private virtual interface**
-The following `allocate-private-virtual-interface` command provisions a private virtual interface to be owned by a different customer:
+The following `allocate-private-virtual-interface` example provisions a private virtual interface to be owned by a different customer.
 
 ```
-aws directconnect allocate-private-virtual-interface --connection-id {{dxcon-ffjrkx17}} --owner-account {{123456789012}} --new-private-virtual-interface-allocation {{virtualInterfaceName=PrivateVirtualInterface,vlan=1000,asn=65000,authKey=asdf34example,amazonAddress=192.168.1.1/30,customerAddress=192.168.1.2/30}}
+aws directconnect allocate-private-virtual-interface \
+    --connection-id {{dxcon-ffjrkx17}} \
+    --owner-account {{123456789012}} \
+    --new-private-virtual-interface-allocation {{virtualInterfaceName=PrivateVirtualInterface,vlan=1000,asn=65000,authKey=asdf34example,amazonAddress=192.168.1.1/30,customerAddress=192.168.1.2/30}}
 ```
 Output:
 
@@ -152,6 +165,7 @@ Output:
     "virtualInterfaceName": "PrivateVirtualInterface"
 }
 ```
+For more information, see [Direct Connect virtual interfaces and hosted virtual interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AllocatePrivateVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/allocate-private-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `allocate-public-virtual-interface`
@@ -161,10 +175,13 @@ The following code example shows how to use `allocate-public-virtual-interface`.
 
 **AWS CLI**
 **To provision a public virtual interface**
-The following `allocate-public-virtual-interface` command provisions a public virtual interface to be owned by a different customer:
+The following `allocate-public-virtual-interface` example provisions a public virtual interface to be owned by a different customer.
 
 ```
-aws directconnect allocate-public-virtual-interface --connection-id {{dxcon-ffjrkx17}} --owner-account {{123456789012}} --new-public-virtual-interface-allocation {{virtualInterfaceName=PublicVirtualInterface,vlan=2000,asn=65000,authKey=asdf34example,amazonAddress=203.0.113.1/30,customerAddress=203.0.113.2/30,routeFilterPrefixes=[{cidr=203.0.113.0/30},{cidr=203.0.113.4/30}]}}
+aws directconnect allocate-public-virtual-interface \
+    --connection-id {{dxcon-ffjrkx17}} \
+    --owner-account {{123456789012}} \
+    --new-public-virtual-interface-allocation {{virtualInterfaceName=PublicVirtualInterface,vlan=2000,asn=65000,authKey=asdf34example,amazonAddress=203.0.113.1/30,customerAddress=203.0.113.2/30,routeFilterPrefixes=[{cidr=203.0.113.0/30},{cidr=203.0.113.4/30}]}}
 ```
 Output:
 
@@ -193,6 +210,7 @@ Output:
     "virtualInterfaceName": "PublicVirtualInterface"
 }
 ```
+For more information, see [Direct Connect virtual interfaces and hosted virtual interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AllocatePublicVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/allocate-public-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `allocate-transit-virtual-interface`
@@ -248,7 +266,7 @@ Output:
                 "awsDeviceV2": "loc1-26wz6vEXAMPLE"
             }
         ],
-        "region": "sa-east-1",
+        "region": "us-west-2",
         "awsDeviceV2": "loc1-26wz6vEXAMPLE",
         "tags": [
             {
@@ -259,7 +277,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a Hosted Transit Virtual Interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/createhostedvirtualinterface.html#create-hosted-transit-vif) in the *AWS Direct Connect User Guide*.
+For more information, see [Create a Direct Connect hosted transit virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-hosted-transit-vif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AllocateTransitVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/allocate-transit-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `associate-connection-with-lag`
@@ -269,26 +287,28 @@ The following code example shows how to use `associate-connection-with-lag`.
 
 **AWS CLI**
 **To associate a connection with a LAG**
-The following example associates the specified connection with the specified LAG.
-Command:
+The following `associate-connection-with-lag` example associates the specified connection with the specified LAG.
 
 ```
-aws directconnect associate-connection-with-lag --lag-id {{dxlag-fhccu14t}} --connection-id {{dxcon-fg9607vm}}
+aws directconnect associate-connection-with-lag \
+    --lag-id {{dxlag-fhccu14t}} \
+    --connection-id {{dxcon-fg9607vm}}
 ```
 Output:
 
 ```
 {
-  "ownerAccount": "123456789012",
-  "connectionId": "dxcon-fg9607vm",
-  "lagId": "dxlag-fhccu14t",
-  "connectionState": "requested",
-  "bandwidth": "1Gbps",
-  "location": "EqDC2",
-  "connectionName": "Con2ForLag",
-  "region": "us-east-1"
+    "ownerAccount": "123456789012",
+    "connectionId": "dxcon-fg9607vm",
+    "lagId": "dxlag-fhccu14t",
+    "connectionState": "requested",
+    "bandwidth": "1Gbps",
+    "location": "EqDC2",
+    "connectionName": "Con2ForLag",
+    "region": "us-west-2"
 }
 ```
+For more information, see [Associate a connection with a LAG at a Direct Connect endpoint](https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate-connection-with-lag.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AssociateConnectionWithLag](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/associate-connection-with-lag.html) in *AWS CLI Command Reference*.
 
 ### `associate-hosted-connection`
@@ -298,28 +318,30 @@ The following code example shows how to use `associate-hosted-connection`.
 
 **AWS CLI**
 **To associate a hosted connection with a LAG**
-The following example associates the specified hosted connection with the specified LAG.
-Command:
+The following `associate-hosted-connection` example associates the specified hosted connection with the specified LAG.
 
 ```
-aws directconnect associate-hosted-connection --parent-connection-id {{dxlag-fhccu14t}} --connection-id {{dxcon-fg9607vm}}
+aws directconnect associate-hosted-connection \
+    --parent-connection-id {{dxlag-fhccu14t}} \
+    --connection-id {{dxcon-fg9607vm}}
 ```
 Output:
 
 ```
 {
-  "partnerName": "TIVIT",
-  "vlan": 101,
-  "ownerAccount": "123456789012",
-  "connectionId": "dxcon-fg9607vm",
-  "lagId": "dxlag-fhccu14t",
-  "connectionState": "ordering",
-  "bandwidth": "500Mbps",
-  "location": "TIVIT",
-  "connectionName": "mydcinterconnect",
-  "region": "sa-east-1"
+    "partnerName": "TIVIT",
+    "vlan": 101,
+    "ownerAccount": "123456789012",
+    "connectionId": "dxcon-fg9607vm",
+    "lagId": "dxlag-fhccu14t",
+    "connectionState": "ordering",
+    "bandwidth": "500Mbps",
+    "location": "TIVIT",
+    "connectionName": "mydcinterconnect",
+    "region": "us-west-2"
 }
 ```
+For more information, see [Direct Connect link aggregation groups (LAGs)](https://docs.aws.amazon.com/directconnect/latest/UserGuide/lags.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AssociateHostedConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/associate-hosted-connection.html) in *AWS CLI Command Reference*.
 
 ### `associate-virtual-interface`
@@ -329,54 +351,56 @@ The following code example shows how to use `associate-virtual-interface`.
 
 **AWS CLI**
 **To associate a virtual interface with a connection**
-The following example associates the specified virtual interface with the specified LAG. Alternatively, to associate the virtual interface with a connection, specify the ID of an AWS Direct Connect connection for `--connection-id`; for example, `dxcon-ffnikghc`.
-Command:
+The following `associate-virtual-interface` example associates the specified virtual interface with the specified LAG. Alternatively, to associate the virtual interface with a connection, specify the ID of an AWS Direct Connect connection for `--connection-id`; for example, `dxcon-ffnikghc`.
 
 ```
-aws directconnect associate-virtual-interface --connection-id {{dxlag-ffjhj9lx}} --virtual-interface-id {{dxvif-fgputw0j}}
+aws directconnect associate-virtual-interface \
+    --connection-id {{dxlag-ffjhj9lx}} \
+    --virtual-interface-id {{dxvif-fgputw0j}}
 ```
 Output:
 
 ```
 {
-  "virtualInterfaceState": "pending",
-  "asn": 65000,
-  "vlan": 123,
-  "customerAddress": "169.254.255.2/30",
-  "ownerAccount": "123456789012",
-  "connectionId": "dxlag-ffjhj9lx",
-  "addressFamily": "ipv4",
-  "virtualGatewayId": "vgw-38e90b51",
-  "virtualInterfaceId": "dxvif-fgputw0j",
-  "authKey": "0x123pK5_VBqv.UQ3kJ4123_",
-  "routeFilterPrefixes": [],
-  "location": "CSVA1",
-  "bgpPeers": [
-      {
-          "bgpStatus": "down",
-          "customerAddress": "169.254.255.2/30",
-          "addressFamily": "ipv4",
-          "authKey": "0x123pK5_VBqv.UQ3kJ4123_",
-          "bgpPeerState": "deleting",
-          "amazonAddress": "169.254.255.1/30",
-          "asn": 65000
-      },
-      {
-          "bgpStatus": "down",
-          "customerAddress": "169.254.255.2/30",
-          "addressFamily": "ipv4",
-          "authKey": "0x123pK5_VBqv.UQ3kJ4123_",
-          "bgpPeerState": "pending",
-          "amazonAddress": "169.254.255.1/30",
-          "asn": 65000
-      }
-  ],
-  "customerRouterConfig": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<logical_connection id=\"dxvif-fgputw0j\">\n  <vlan>123</vlan>\n  <customer_address>169.254.255.2/30</customer_address>\n  <amazon_address>169.254.255.1/30</amazon_address>\n  <bgp_asn>65000</bgp_asn>\n  <bgp_auth_key>0x123pK5_VBqv.UQ3kJ4123_</bgp_auth_key>\n  <amazon_bgp_asn>7224</amazon_bgp_asn>\n  <connection_type>private</connection_type>\n</logical_connection>\n",
-  "amazonAddress": "169.254.255.1/30",
-  "virtualInterfaceType": "private",
-  "virtualInterfaceName": "VIF1A"
+    "virtualInterfaceState": "pending",
+    "asn": 65000,
+    "vlan": 123,
+    "customerAddress": "169.254.255.2/30",
+    "ownerAccount": "123456789012",
+    "connectionId": "dxlag-ffjhj9lx",
+    "addressFamily": "ipv4",
+    "virtualGatewayId": "vgw-38e90b51",
+    "virtualInterfaceId": "dxvif-fgputw0j",
+    "authKey": "0x123pK5_VBqv.UQ3kJ4123_",
+    "routeFilterPrefixes": [],
+    "location": "CSVA1",
+    "bgpPeers": [
+        {
+            "bgpStatus": "down",
+            "customerAddress": "169.254.255.2/30",
+            "addressFamily": "ipv4",
+            "authKey": "0x123pK5_VBqv.UQ3kJ4123_",
+            "bgpPeerState": "deleting",
+            "amazonAddress": "169.254.255.1/30",
+            "asn": 65000
+        },
+        {
+            "bgpStatus": "down",
+            "customerAddress": "169.254.255.2/30",
+            "addressFamily": "ipv4",
+            "authKey": "0x123pK5_VBqv.UQ3kJ4123_",
+            "bgpPeerState": "pending",
+            "amazonAddress": "169.254.255.1/30",
+            "asn": 65000
+        }
+    ],
+    "customerRouterConfig": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<logical_connection id=\"dxvif-fgputw0j\">\n  <vlan>123</vlan>\n  <customer_address>169.254.255.2/30</customer_address>\n  <amazon_address>169.254.255.1/30</amazon_address>\n  <bgp_asn>65000</bgp_asn>\n  <bgp_auth_key>0x123pK5_VBqv.UQ3kJ4123_</bgp_auth_key>\n  <amazon_bgp_asn>7224</amazon_bgp_asn>\n  <connection_type>private</connection_type>\n</logical_connection>\n",
+    "amazonAddress": "169.254.255.1/30",
+    "virtualInterfaceType": "private",
+    "virtualInterfaceName": "VIF1A"
 }
 ```
+For more information, see [Direct Connect virtual interfaces and hosted virtual interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [AssociateVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/associate-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `confirm-connection`
@@ -386,10 +410,11 @@ The following code example shows how to use `confirm-connection`.
 
 **AWS CLI**
 **To confirm the creation of a hosted connection on an interconnect**
-The following `confirm-connection` command confirms the creation of a hosted connection on an interconnect:
+The following `confirm-connection` example confirms the creation of a hosted connection on an interconnect.
 
 ```
-aws directconnect confirm-connection --connection-id {{dxcon-fg2wi7hy}}
+aws directconnect confirm-connection \
+    --connection-id {{dxcon-fg2wi7hy}}
 ```
 Output:
 
@@ -398,6 +423,7 @@ Output:
     "connectionState": "pending"
 }
 ```
+For more information, see [Accept a Direct Connect hosted connection](https://docs.aws.amazon.com/directconnect/latest/UserGuide/accept-hosted-connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [ConfirmConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/confirm-connection.html) in *AWS CLI Command Reference*.
 
 ### `confirm-private-virtual-interface`
@@ -407,10 +433,12 @@ The following code example shows how to use `confirm-private-virtual-interface`.
 
 **AWS CLI**
 **To accept ownership of a private virtual interface**
-The following `confirm-private-virtual-interface` command accepts ownership of a private virtual interface created by another customer:
+The following `confirm-private-virtual-interface` example accepts ownership of a private virtual interface created by another customer.
 
 ```
-aws directconnect confirm-private-virtual-interface --virtual-interface-id {{dxvif-fgy8orxu}} --virtual-gateway-id {{vgw-e4a47df9}}
+aws directconnect confirm-private-virtual-interface \
+    --virtual-interface-id {{dxvif-fgy8orxu}} \
+    --virtual-gateway-id {{vgw-e4a47df9}}
 ```
 Output:
 
@@ -419,6 +447,7 @@ Output:
     "virtualInterfaceState": "pending"
 }
 ```
+For more information, see [Accept a hosted Direct Connect virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/accepthostedvirtualinterface.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [ConfirmPrivateVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/confirm-private-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `confirm-public-virtual-interface`
@@ -428,10 +457,11 @@ The following code example shows how to use `confirm-public-virtual-interface`.
 
 **AWS CLI**
 **To accept ownership of a public virtual interface**
-The following `confirm-public-virtual-interface` command accepts ownership of a public virtual interface created by another customer:
+The following `confirm-public-virtual-interface` example accepts ownership of a public virtual interface created by another customer.
 
 ```
-aws directconnect confirm-public-virtual-interface --virtual-interface-id {{dxvif-fg9xo9vp}}
+aws directconnect confirm-public-virtual-interface \
+    --virtual-interface-id {{dxvif-fg9xo9vp}}
 ```
 Output:
 
@@ -440,6 +470,7 @@ Output:
     "virtualInterfaceState": "verifying"
 }
 ```
+For more information, see [Accept a hosted Direct Connect virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/accepthostedvirtualinterface.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [ConfirmPublicVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/confirm-public-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `confirm-transit-virtual-interface`
@@ -449,12 +480,12 @@ The following code example shows how to use `confirm-transit-virtual-interface`.
 
 **AWS CLI**
 **To accept ownership of a transit virtual interface**
-The following `confirm-transit-virtual-interface` accepts ownership of a transit virtual interface created by another customer.
+The following `confirm-transit-virtual-interface` example accepts ownership of a transit virtual interface created by another customer.
 
 ```
 aws directconnect confirm-transit-virtual-interface \
     --virtual-interface-id {{dxvif-fEXAMPLE}} \
-    --direct-connect-gateway-id {{4112ccf9-25e9-4111-8237-b6c5dEXAMPLE}}
+    --direct-connect-gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -473,56 +504,58 @@ The following code example shows how to use `create-bgp-peer`.
 
 **AWS CLI**
 **To create an IPv6 BGP peering session**
-The following example creates an IPv6 BGP peering session on private virtual interface `dxvif-fg1vuj3d`. The peer IPv6 addresses are automatically allocated by Amazon.
-Command:
+The following `create-bgp-peer` example creates an IPv6 BGP peering session on private virtual interface `dxvif-fg1vuj3d`. The peer IPv6 addresses are automatically allocated by Amazon.
 
 ```
-aws directconnect create-bgp-peer --virtual-interface-id {{dxvif-fg1vuj3d}} --new-bgp-peer {{asn=64600,addressFamily=ipv6}}
+aws directconnect create-bgp-peer \
+    --virtual-interface-id {{dxvif-fg1vuj3d}} \
+    --new-bgp-peer {{asn=64600,addressFamily=ipv6}}
 ```
 Output:
 
 ```
 {
-  "virtualInterface": {
-      "virtualInterfaceState": "available",
-      "asn": 65000,
-      "vlan": 125,
-      "customerAddress": "169.254.255.2/30",
-      "ownerAccount": "123456789012",
-      "connectionId": "dxcon-fguhmqlc",
-      "addressFamily": "ipv4",
-      "virtualGatewayId": "vgw-f9eb0c90",
-      "virtualInterfaceId": "dxvif-fg1vuj3d",
-      "authKey": "0xC_ukbCerl6EYA0example",
-      "routeFilterPrefixes": [],
-      "location": "EqDC2",
-      "bgpPeers": [
-          {
-              "bgpStatus": "down",
-              "customerAddress": "169.254.255.2/30",
-              "addressFamily": "ipv4",
-              "authKey": "0xC_ukbCerl6EYA0uexample",
-              "bgpPeerState": "available",
-              "amazonAddress": "169.254.255.1/30",
-              "asn": 65000
-          },
-          {
-              "bgpStatus": "down",
-              "customerAddress": "2001:db8:1100:2f0:0:1:9cb4:4216/125",
-              "addressFamily": "ipv6",
-              "authKey": "0xS27kAIU_VHPjjAexample",
-              "bgpPeerState": "pending",
-              "amazonAddress": "2001:db8:1100:2f0:0:1:9cb4:4211/125",
-              "asn": 64600
-          }
-      ],
-      "customerRouterConfig": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<logical_connection id=\"dxvif-fg1vuj3d\">\n  <vlan>125</vlan>\n  <customer_address>169.254.255.2/30</customer_address>\n  <amazon_address>169.254.255.1/30</amazon_address>\n  <bgp_asn>65000</bgp_asn>\n  <bgp_auth_key>0xC_ukbCerl6EYA0uexample</bgp_auth_key>\n  <ipv6_customer_address>2001:db8:1100:2f0:0:1:9cb4:4216/125</ipv6_customer_address>\n  <ipv6_amazon_address>2001:db8:1100:2f0:0:1:9cb4:4211/125</ipv6_amazon_address>\n  <ipv6_bgp_asn>64600</ipv6_bgp_asn>\n  <ipv6_bgp_auth_key>0xS27kAIU_VHPjjAexample</ipv6_bgp_auth_key>\n  <amazon_bgp_asn>7224</amazon_bgp_asn>\n  <connection_type>private</connection_type>\n</logical_connection>\n",
-      "amazonAddress": "169.254.255.1/30",
-      "virtualInterfaceType": "private",
-      "virtualInterfaceName": "Test"
-  }
+    "virtualInterface": {
+        "virtualInterfaceState": "available",
+        "asn": 65000,
+        "vlan": 125,
+        "customerAddress": "169.254.255.2/30",
+        "ownerAccount": "123456789012",
+        "connectionId": "dxcon-fguhmqlc",
+        "addressFamily": "ipv4",
+        "virtualGatewayId": "vgw-f9eb0c90",
+        "virtualInterfaceId": "dxvif-fg1vuj3d",
+        "authKey": "0xC_ukbCerl6EYA0example",
+        "routeFilterPrefixes": [],
+        "location": "EqDC2",
+        "bgpPeers": [
+            {
+                "bgpStatus": "down",
+                "customerAddress": "169.254.255.2/30",
+                "addressFamily": "ipv4",
+                "authKey": "0xC_ukbCerl6EYA0uexample",
+                "bgpPeerState": "available",
+                "amazonAddress": "169.254.255.1/30",
+                "asn": 65000
+            },
+            {
+                "bgpStatus": "down",
+                "customerAddress": "2001:db8:1100:2f0:0:1:9cb4:4216/125",
+                "addressFamily": "ipv6",
+                "authKey": "0xS27kAIU_VHPjjAexample",
+                "bgpPeerState": "pending",
+                "amazonAddress": "2001:db8:1100:2f0:0:1:9cb4:4211/125",
+                "asn": 64600
+            }
+        ],
+        "customerRouterConfig": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<logical_connection id=\"dxvif-fg1vuj3d\">\n  <vlan>125</vlan>\n  <customer_address>169.254.255.2/30</customer_address>\n  <amazon_address>169.254.255.1/30</amazon_address>\n  <bgp_asn>65000</bgp_asn>\n  <bgp_auth_key>0xC_ukbCerl6EYA0uexample</bgp_auth_key>\n  <ipv6_customer_address>2001:db8:1100:2f0:0:1:9cb4:4216/125</ipv6_customer_address>\n  <ipv6_amazon_address>2001:db8:1100:2f0:0:1:9cb4:4211/125</ipv6_amazon_address>\n  <ipv6_bgp_asn>64600</ipv6_bgp_asn>\n  <ipv6_bgp_auth_key>0xS27kAIU_VHPjjAexample</ipv6_bgp_auth_key>\n  <amazon_bgp_asn>7224</amazon_bgp_asn>\n  <connection_type>private</connection_type>\n</logical_connection>\n",
+        "amazonAddress": "169.254.255.1/30",
+        "virtualInterfaceType": "private",
+        "virtualInterfaceName": "Test"
+    }
 }
 ```
+For more information, see [Add a BGP peer to a Direct Connect virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/add-peer-to-vif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateBgpPeer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-bgp-peer.html) in *AWS CLI Command Reference*.
 
 ### `create-connection`
@@ -532,10 +565,13 @@ The following code example shows how to use `create-connection`.
 
 **AWS CLI**
 **To create a connection from your network to an AWS Direct Connect location**
-The following `create-connection` command creates a connection from your network to an AWS Direct Connect location:
+The following `create-connection` example creates a connection from your network to an AWS Direct Connect location.
 
 ```
-aws directconnect create-connection --location {{TIVIT}} --bandwidth {{1Gbps}} --connection-name {{"Connection to AWS"}}
+aws directconnect create-connection \
+    --location {{TIVIT}} \
+    --bandwidth {{1Gbps}} \
+    --connection-name {{"Connection to AWS"}}
 ```
 Output:
 
@@ -547,9 +583,10 @@ Output:
     "bandwidth": "1Gbps",
     "location": "TIVIT",
     "connectionName": "Connection to AWS",
-    "region": "sa-east-1"
+    "region": "us-west-2"
 }
 ```
+For more information, see [Dedicated Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/dedicated_connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-connection.html) in *AWS CLI Command Reference*.
 
 ### `create-direct-connect-gateway-association-proposal`
@@ -563,8 +600,8 @@ The following `create-direct-connect-gateway-association-proposal` example creat
 
 ```
 aws directconnect create-direct-connect-gateway-association-proposal \
-    --direct-connect-gateway-id {{11460968-4ac1-4fd3-bdb2-00599EXAMPLE}} \
-    --direct-connect-gateway-owner-account {{111122223333}} \
+    --direct-connect-gateway-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --direct-connect-gateway-owner-account {{123456789012}} \
     --gateway-id {{tgw-02f776b1a7EXAMPLE}} \
     --add-allowed-prefixes-to-direct-connect-gateway {{cidr=192.168.1.0/30}}
 ```
@@ -573,15 +610,15 @@ Output:
 ```
 {
     "directConnectGatewayAssociationProposal": {
-        "proposalId": "cb7f41cb-8128-43a5-93b1-dcaedEXAMPLE",
-        "directConnectGatewayId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
-        "directConnectGatewayOwnerAccount": "111122223333",
+        "proposalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "directConnectGatewayOwnerAccount": "123456789012",
         "proposalState": "requested",
         "associatedGateway": {
             "id": "tgw-02f776b1a7EXAMPLE",
             "type": "transitGateway",
-            "ownerAccount": "111122223333",
-            "region": "us-east-1"
+            "ownerAccount": "123456789012",
+            "region": "us-west-2"
         },
         "requestedAllowedPrefixesToDirectConnectGateway": [
             {
@@ -591,7 +628,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a Transit Gateway Association Proposal](https://docs.aws.amazon.com/directconnect/latest/UserGuide/multi-account-associate-tgw.html#multi-account-tgw-create-proposal) in the *AWS Direct Connect User Guide*.
+For more information, see [Create a Transit Gateway and Direct Connect association proposal](https://docs.aws.amazon.com/directconnect/latest/UserGuide/multi-account-tgw-create-proposal.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateDirectConnectGatewayAssociationProposal](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-direct-connect-gateway-association-proposal.html) in *AWS CLI Command Reference*.
 
 ### `create-direct-connect-gateway-association`
@@ -601,25 +638,27 @@ The following code example shows how to use `create-direct-connect-gateway-assoc
 
 **AWS CLI**
 **To associate a virtual private gateway with a Direct Connect gateway**
-The following example associates virtual private gateway `vgw-6efe725e` with Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`. You must run the command in the region in which the virtual private gateway is located.
-Command:
+The following `create-direct-connect-gateway-association` example associates virtual private gateway `vgw-6efe725e` with Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`. You must run the command in the region in which the virtual private gateway is located.
 
 ```
-aws directconnect create-direct-connect-gateway-association --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}} --virtual-gateway-id {{vgw-6efe725e}}
+aws directconnect create-direct-connect-gateway-association \
+    --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}} \
+    --virtual-gateway-id {{vgw-6efe725e}}
 ```
 Output:
 
 ```
 {
-  "directConnectGatewayAssociation": {
-      "associationState": "associating",
-      "virtualGatewayOwnerAccount": "123456789012",
-      "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
-      "virtualGatewayId": "vgw-6efe725e",
-      "virtualGatewayRegion": "us-east-2"
-  }
+    "directConnectGatewayAssociation": {
+        "associationState": "associating",
+        "virtualGatewayOwnerAccount": "123456789012",
+        "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
+        "virtualGatewayId": "vgw-6efe725e",
+        "virtualGatewayRegion": "us-west-2"
+    }
 }
 ```
+For more information, see [Associate or disassociate Direct Connect virtual private gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate-vgw-with-direct-connect-gateway.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateDirectConnectGatewayAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-direct-connect-gateway-association.html) in *AWS CLI Command Reference*.
 
 ### `create-direct-connect-gateway`
@@ -629,25 +668,26 @@ The following code example shows how to use `create-direct-connect-gateway`.
 
 **AWS CLI**
 **To create a Direct Connect gateway**
-The following example creates a Direct Connect gateway with the name `DxGateway1`.
-Command:
+The following `create-direct-connect-gateway` example creates a Direct Connect gateway with the name `DxGateway1`.
 
 ```
-aws directconnect create-direct-connect-gateway --direct-connect-gateway-name {{"DxGateway1"}}
+aws directconnect create-direct-connect-gateway \
+    --direct-connect-gateway-name {{"DxGateway1"}}
 ```
 Output:
 
 ```
 {
-  "directConnectGateway": {
-      "amazonSideAsn": 64512,
-      "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bdexample",
-      "ownerAccount": "123456789012",
-      "directConnectGatewayName": "DxGateway1",
-      "directConnectGatewayState": "available"
-  }
+    "directConnectGateway": {
+        "amazonSideAsn": 64512,
+        "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "ownerAccount": "123456789012",
+        "directConnectGatewayName": "DxGateway1",
+        "directConnectGatewayState": "available"
+    }
 }
 ```
+For more information, see [Create a Direct Connect gateway](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-direct-connect-gateway.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateDirectConnectGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-direct-connect-gateway.html) in *AWS CLI Command Reference*.
 
 ### `create-interconnect`
@@ -657,16 +697,19 @@ The following code example shows how to use `create-interconnect`.
 
 **AWS CLI**
 **To create an interconnect between a partner's network and AWS**
-The following `create-interconnect` command creates an interconnect between an AWS Direct Connect partner's network and a specific AWS Direct Connect location:
+The following `create-interconnect` example creates an interconnect between an AWS Direct Connect partner's network and a specific AWS Direct Connect location.
 
 ```
-aws directconnect create-interconnect --interconnect-name {{"1G Interconnect to AWS"}} --bandwidth {{1Gbps}} --location {{TIVIT}}
+aws directconnect create-interconnect \
+    --interconnect-name {{"1G Interconnect to AWS"}} \
+    --bandwidth {{1Gbps}} \
+    --location {{TIVIT}}
 ```
 Output:
 
 ```
 {
-    "region": "sa-east-1",
+    "region": "us-west-2",
     "bandwidth": "1Gbps",
     "location": "TIVIT",
     "interconnectName": "1G Interconnect to AWS",
@@ -674,6 +717,7 @@ Output:
     "interconnectState": "requested"
 }
 ```
+For more information, see [Hosted Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted_connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateInterconnect](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-interconnect.html) in *AWS CLI Command Reference*.
 
 ### `create-lag`
@@ -682,96 +726,105 @@ Output:
 The following code example shows how to use `create-lag`.
 
 **AWS CLI**
-**To create a LAG with new connections**
-The following example creates a LAG and requests two new AWS Direct Connect connections for the LAG with a bandwidth of 1 Gbps.
-Command:
+**Example 1: To create a LAG with new connections**
+The following `create-lag` example creates a LAG and requests two new AWS Direct Connect connections for the LAG with a bandwidth of 1 Gbps.
 
 ```
-aws directconnect create-lag --location {{CSVA1}} --number-of-connections {{2}} --connections-bandwidth {{1Gbps}} --lag-name {{1GBLag}}
+aws directconnect create-lag \
+    --location {{CSVA1}} \
+    --number-of-connections {{2}} \
+    --connections-bandwidth {{1Gbps}} \
+    --lag-name {{1GBLag}}
 ```
 Output:
 
 ```
 {
-  "awsDevice": "CSVA1-23u8tlpaz8iks",
-  "numberOfConnections": 2,
-  "lagState": "pending",
-  "ownerAccount": "123456789012",
-  "lagName": "1GBLag",
-  "connections": [
-      {
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-ffqr6x5q",
-          "lagId": "dxlag-ffjhj9lx",
-          "connectionState": "requested",
-          "bandwidth": "1Gbps",
-          "location": "CSVA1",
-          "connectionName": "Requested Connection 1 for Lag dxlag-ffjhj9lx",
-          "region": "us-east-1"
-      },
-      {
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-fflqyj95",
-          "lagId": "dxlag-ffjhj9lx",
-          "connectionState": "requested",
-          "bandwidth": "1Gbps",
-          "location": "CSVA1",
-          "connectionName": "Requested Connection 2 for Lag dxlag-ffjhj9lx",
-          "region": "us-east-1"
-      }
-  ],
-  "lagId": "dxlag-ffjhj9lx",
-  "minimumLinks": 0,
-  "connectionsBandwidth": "1Gbps",
-  "region": "us-east-1",
-  "location": "CSVA1"
+    "awsDevice": "CSVA1-23u8tlpaz8iks",
+    "numberOfConnections": 2,
+    "lagState": "pending",
+    "ownerAccount": "123456789012",
+    "lagName": "1GBLag",
+    "connections": [
+        {
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-ffqr6x5q",
+            "lagId": "dxlag-ffjhj9lx",
+            "connectionState": "requested",
+            "bandwidth": "1Gbps",
+            "location": "CSVA1",
+            "connectionName": "Requested Connection 1 for Lag dxlag-ffjhj9lx",
+            "region": "us-west-2"
+        },
+        {
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-fflqyj95",
+            "lagId": "dxlag-ffjhj9lx",
+            "connectionState": "requested",
+            "bandwidth": "1Gbps",
+            "location": "CSVA1",
+            "connectionName": "Requested Connection 2 for Lag dxlag-ffjhj9lx",
+            "region": "us-west-2"
+        }
+    ],
+    "lagId": "dxlag-ffjhj9lx",
+    "minimumLinks": 0,
+    "connectionsBandwidth": "1Gbps",
+    "region": "us-west-2",
+    "location": "CSVA1"
 }
 ```
-**To create a LAG using an existing connection**
-The following example creates a LAG from an existing connection in your account, and requests a second new connection for the LAG with the same bandwidth and location as the existing connection.
-Command:
+For more information, see [Create a LAG at a Direct Connect endpoint](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-lag.html) in the *AWS Direct Connect User Guide*.
+**Example 2: To create a LAG using an existing connection**
+The following `create-lag` example creates a LAG from an existing connection in your account, and requests a second new connection for the LAG with the same bandwidth and location as the existing connection.
 
 ```
-aws directconnect create-lag --location {{EqDC2}} --number-of-connections {{2}} --connections-bandwidth {{1Gbps}} --lag-name {{2ConnLAG}} --connection-id {{dxcon-fgk145dr}}
+aws directconnect create-lag \
+    --location {{EqDC2}} \
+    --number-of-connections {{2}} \
+    --connections-bandwidth {{1Gbps}} \
+    --lag-name {{2ConnLAG}} \
+    --connection-id {{dxcon-fgk145dr}}
 ```
 Output:
 
 ```
 {
-  "awsDevice": "EqDC2-4h6ce2r1bes6",
-  "numberOfConnections": 2,
-  "lagState": "pending",
-  "ownerAccount": "123456789012",
-  "lagName": "2ConnLAG",
-  "connections": [
-      {
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-fh6ljcvo",
-          "lagId": "dxlag-fhccu14t",
-          "connectionState": "requested",
-          "bandwidth": "1Gbps",
-          "location": "EqDC2",
-          "connectionName": "Requested Connection 1 for Lag dxlag-fhccu14t",
-          "region": "us-east-1"
-      },
-      {
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-fgk145dr",
-          "lagId": "dxlag-fhccu14t",
-          "connectionState": "down",
-          "bandwidth": "1Gbps",
-          "location": "EqDC2",
-          "connectionName": "VAConn1",
-          "region": "us-east-1"
-      }
-  ],
-  "lagId": "dxlag-fhccu14t",
-  "minimumLinks": 0,
-  "connectionsBandwidth": "1Gbps",
-  "region": "us-east-1",
-  "location": "EqDC2"
+    "awsDevice": "EqDC2-4h6ce2r1bes6",
+    "numberOfConnections": 2,
+    "lagState": "pending",
+    "ownerAccount": "123456789012",
+    "lagName": "2ConnLAG",
+    "connections": [
+        {
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-fh6ljcvo",
+            "lagId": "dxlag-fhccu14t",
+            "connectionState": "requested",
+            "bandwidth": "1Gbps",
+            "location": "EqDC2",
+            "connectionName": "Requested Connection 1 for Lag dxlag-fhccu14t",
+            "region": "us-west-2"
+        },
+        {
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-fgk145dr",
+            "lagId": "dxlag-fhccu14t",
+            "connectionState": "down",
+            "bandwidth": "1Gbps",
+            "location": "EqDC2",
+            "connectionName": "VAConn1",
+            "region": "us-west-2"
+        }
+    ],
+    "lagId": "dxlag-fhccu14t",
+    "minimumLinks": 0,
+    "connectionsBandwidth": "1Gbps",
+    "region": "us-west-2",
+    "location": "EqDC2"
 }
 ```
+For more information, see [Create a LAG at a Direct Connect endpoint](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-lag.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateLag](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-lag.html) in *AWS CLI Command Reference*.
 
 ### `create-private-virtual-interface`
@@ -781,10 +834,12 @@ The following code example shows how to use `create-private-virtual-interface`.
 
 **AWS CLI**
 **To create a private virtual interface**
-The following `create-private-virtual-interface` command creates a private virtual interface:
+The following `create-private-virtual-interface` example creates a private virtual interface.
 
 ```
-aws directconnect create-private-virtual-interface --connection-id {{dxcon-ffjrkx17}} --new-private-virtual-interface {{virtualInterfaceName=PrivateVirtualInterface,vlan=101,asn=65000,authKey=asdf34example,amazonAddress=192.168.1.1/30,customerAddress=192.168.1.2/30,virtualGatewayId=vgw-aba37db6}}
+aws directconnect create-private-virtual-interface \
+    --connection-id {{dxcon-ffjrkx17}} \
+    --new-private-virtual-interface {{virtualInterfaceName=PrivateVirtualInterface,vlan=101,asn=65000,authKey=asdf34example,amazonAddress=192.168.1.1/30,customerAddress=192.168.1.2/30,virtualGatewayId=vgw-aba37db6}}
 ```
 Output:
 
@@ -807,6 +862,7 @@ Output:
     "virtualInterfaceName": "PrivateVirtualInterface"
 }
 ```
+For more information, see [Create a Direct Connect private virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-private-vif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreatePrivateVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-private-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `create-public-virtual-interface`
@@ -816,10 +872,12 @@ The following code example shows how to use `create-public-virtual-interface`.
 
 **AWS CLI**
 **To create a public virtual interface**
-The following `create-public-virtual-interface` command creates a public virtual interface:
+The following `create-public-virtual-interface` example creates a public virtual interface.
 
 ```
-aws directconnect create-public-virtual-interface --connection-id {{dxcon-ffjrkx17}} --new-public-virtual-interface {{virtualInterfaceName=PublicVirtualInterface,vlan=2000,asn=65000,authKey=asdf34example,amazonAddress=203.0.113.1/30,customerAddress=203.0.113.2/30,routeFilterPrefixes=[{cidr=203.0.113.0/30},{cidr=203.0.113.4/30}]}}
+aws directconnect create-public-virtual-interface \
+    --connection-id {{dxcon-ffjrkx17}} \
+    --new-public-virtual-interface {{virtualInterfaceName=PublicVirtualInterface,vlan=2000,asn=65000,authKey=asdf34example,amazonAddress=203.0.113.1/30,customerAddress=203.0.113.2/30,routeFilterPrefixes=[{cidr=203.0.113.0/30},{cidr=203.0.113.4/30}]}}
 ```
 Output:
 
@@ -848,6 +906,7 @@ Output:
     "virtualInterfaceName": "PublicVirtualInterface"
 }
 ```
+For more information, see [Create a Direct Connect public virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-public-vif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreatePublicVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-public-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `create-transit-virtual-interface`
@@ -862,7 +921,7 @@ The following `create-transit-virtual-interface` example creates a transit virtu
 ```
 aws directconnect create-transit-virtual-interface \
     --connection-id {{dxlag-fEXAMPLE}} \
-    --new-transit-virtual-interface {{"virtualInterfaceName=Example Transit Virtual Interface,vlan=126,asn=65110,mtu=1500,authKey=0xzxgA9YoW9h58u8SvEXAMPLE,amazonAddress=192.168.1.1/30,customerAddress=192.168.1.2/30,addressFamily=ipv4,directConnectGatewayId=8384da05-13ce-4a91-aada-5a1baEXAMPLE,tags=[{key=Tag,value=Example}]"}}
+    --new-transit-virtual-interface {{"virtualInterfaceName=Example Transit Virtual Interface,vlan=126,asn=65110,mtu=1500,authKey=0xzxgA9YoW9h58u8SvEXAMPLE,amazonAddress=192.168.1.1/30,customerAddress=192.168.1.2/30,addressFamily=ipv4,directConnectGatewayId=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,tags=[{key=Tag,value=Example}]"}}
 ```
 Output:
 
@@ -887,7 +946,7 @@ Output:
         "mtu": 1500,
         "jumboFrameCapable": true,
         "virtualGatewayId": "",
-        "directConnectGatewayId": "8384da05-13ce-4a91-aada-5a1baEXAMPLE",
+        "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "routeFilterPrefixes": [],
         "bgpPeers": [
             {
@@ -902,7 +961,7 @@ Output:
                 "awsDeviceV2": "loc1-26wz6vEXAMPLE"
             }
         ],
-        "region": "sa-east-1",
+        "region": "us-west-2",
         "awsDeviceV2": "loc1-26wz6vEXAMPLE",
         "tags": [
             {
@@ -913,7 +972,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a Transit Virtual Interface to the Direct Connect Gateway](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-vif.html#create-transit-vif) in the *AWS Direct Connect User Guide*.
+For more information, see [Creating a Transit Virtual Interface to the Direct Connect Gateway](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-vif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [CreateTransitVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/create-transit-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `delete-bgp-peer`
@@ -923,56 +982,59 @@ The following code example shows how to use `delete-bgp-peer`.
 
 **AWS CLI**
 **To delete a BGP peer from a virtual interface**
-The following example deletes the IPv6 BGP peer from virtual interface `dxvif-fg1vuj3d`.
-Command:
+The following `delete-bgp-peer` example deletes the IPv6 BGP peer from virtual interface `dxvif-fg1vuj3d`.
 
 ```
-aws directconnect delete-bgp-peer --virtual-interface-id {{dxvif-fg1vuj3d}} --asn {{64600}} --customer-address {{2001:db8:1100:2f0:0:1:9cb4:4216/125}}
+aws directconnect delete-bgp-peer \
+    --virtual-interface-id {{dxvif-fg1vuj3d}} \
+    --asn {{64600}} \
+    --customer-address {{2001:db8:1100:2f0:0:1:9cb4:4216/125}}
 ```
 Output:
 
 ```
 {
-  "virtualInterface": {
-      "virtualInterfaceState": "available",
-      "asn": 65000,
-      "vlan": 125,
-      "customerAddress": "169.254.255.2/30",
-      "ownerAccount": "123456789012",
-      "connectionId": "dxcon-fguhmqlc",
-      "addressFamily": "ipv4",
-      "virtualGatewayId": "vgw-f9eb0c90",
-      "virtualInterfaceId": "dxvif-fg1vuj3d",
-      "authKey": "0xC_ukbCerl6EYA0example",
-      "routeFilterPrefixes": [],
-      "location": "EqDC2",
-      "bgpPeers": [
-          {
-              "bgpStatus": "down",
-              "customerAddress": "169.254.255.2/30",
-              "addressFamily": "ipv4",
-              "authKey": "0xC_ukbCerl6EYA0uexample",
-              "bgpPeerState": "available",
-              "amazonAddress": "169.254.255.1/30",
-              "asn": 65000
-          },
-          {
-              "bgpStatus": "down",
-              "customerAddress": "2001:db8:1100:2f0:0:1:9cb4:4216/125",
-              "addressFamily": "ipv6",
-              "authKey": "0xS27kAIU_VHPjjAexample",
-              "bgpPeerState": "deleting",
-              "amazonAddress": "2001:db8:1100:2f0:0:1:9cb4:4211/125",
-              "asn": 64600
-          }
-      ],
-      "customerRouterConfig": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<logical_connection id=\"dxvif-fg1vuj3d\">\n  <vlan>125</vlan>\n  <customer_address>169.254.255.2/30</customer_address>\n  <amazon_address>169.254.255.1/30</amazon_address>\n  <bgp_asn>65000</bgp_asn>\n  <bgp_auth_key>0xC_ukbCerl6EYA0example</bgp_auth_key>\n  <amazon_bgp_asn>7224</amazon_bgp_asn>\n  <connection_type>private</connection_type>\n</logical_connection>\n",
-      "amazonAddress": "169.254.255.1/30",
-      "virtualInterfaceType": "private",
-      "virtualInterfaceName": "Test"
-  }
+    "virtualInterface": {
+        "virtualInterfaceState": "available",
+        "asn": 65000,
+        "vlan": 125,
+        "customerAddress": "169.254.255.2/30",
+        "ownerAccount": "123456789012",
+        "connectionId": "dxcon-fguhmqlc",
+        "addressFamily": "ipv4",
+        "virtualGatewayId": "vgw-f9eb0c90",
+        "virtualInterfaceId": "dxvif-fg1vuj3d",
+        "authKey": "0xC_ukbCerl6EYA0example",
+        "routeFilterPrefixes": [],
+        "location": "EqDC2",
+        "bgpPeers": [
+            {
+                "bgpStatus": "down",
+                "customerAddress": "169.254.255.2/30",
+                "addressFamily": "ipv4",
+                "authKey": "0xC_ukbCerl6EYA0uexample",
+                "bgpPeerState": "available",
+                "amazonAddress": "169.254.255.1/30",
+                "asn": 65000
+            },
+            {
+                "bgpStatus": "down",
+                "customerAddress": "2001:db8:1100:2f0:0:1:9cb4:4216/125",
+                "addressFamily": "ipv6",
+                "authKey": "0xS27kAIU_VHPjjAexample",
+                "bgpPeerState": "deleting",
+                "amazonAddress": "2001:db8:1100:2f0:0:1:9cb4:4211/125",
+                "asn": 64600
+            }
+        ],
+        "customerRouterConfig": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<logical_connection id=\"dxvif-fg1vuj3d\">\n  <vlan>125</vlan>\n  <customer_address>169.254.255.2/30</customer_address>\n  <amazon_address>169.254.255.1/30</amazon_address>\n  <bgp_asn>65000</bgp_asn>\n  <bgp_auth_key>0xC_ukbCerl6EYA0example</bgp_auth_key>\n  <amazon_bgp_asn>7224</amazon_bgp_asn>\n  <connection_type>private</connection_type>\n</logical_connection>\n",
+        "amazonAddress": "169.254.255.1/30",
+        "virtualInterfaceType": "private",
+        "virtualInterfaceName": "Test"
+    }
 }
 ```
+For more information, see [Delete a Direct Connect virtual interface BGP peer](https://docs.aws.amazon.com/directconnect/latest/UserGuide/delete-bgp-peer-vif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteBgpPeer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-bgp-peer.html) in *AWS CLI Command Reference*.
 
 ### `delete-connection`
@@ -982,10 +1044,11 @@ The following code example shows how to use `delete-connection`.
 
 **AWS CLI**
 **To delete a connection**
-The following `delete-connection` command deletes the specified connection:
+The following `delete-connection` example deletes the specified connection.
 
 ```
-aws directconnect delete-connection --connection-id {{dxcon-fg31dyv6}}
+aws directconnect delete-connection \
+    --connection-id {{dxcon-fg31dyv6}}
 ```
 Output:
 
@@ -997,9 +1060,10 @@ Output:
     "bandwidth": "1Gbps",
     "location": "TIVIT",
     "connectionName": "Connection to AWS",
-    "region": "sa-east-1"
+    "region": "us-west-2"
 }
 ```
+For more information, see [Delete a Direct Connect connection](https://docs.aws.amazon.com/directconnect/latest/UserGuide/deleteconnection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-connection.html) in *AWS CLI Command Reference*.
 
 ### `delete-direct-connect-gateway-association`
@@ -1012,22 +1076,23 @@ The following code example shows how to use `delete-direct-connect-gateway-assoc
 The following `delete-direct-connect-gateway-association` example deletes the Direct Connect gateway association with a transit gateway that has the specified association ID.
 
 ```
-aws directconnect delete-direct-connect-gateway-association --association-id  {{be85116d-46eb-4b43-a27a-da0c2ad648de}}
+aws directconnect delete-direct-connect-gateway-association \
+    --association-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "directConnectGatewayAssociation": {
-        "directConnectGatewayId": "11460968-4ac1-4fd3-bdb2-00599EXAMPlE",
+        "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "directConnectGatewayOwnerAccount": "123456789012",
         "associationState": "disassociating",
         "associatedGateway": {
             "id": "tgw-095b3b0b54EXAMPLE",
             "type": "transitGateway",
             "ownerAccount": "123456789012",
-            "region": "us-east-1"
-       },
+            "region": "us-west-2"
+        },
         "associationId": " be85116d-46eb-4b43-a27a-da0c2ad648deEXAMPLE ",
         "allowedPrefixesToDirectConnectGateway": [
             {
@@ -1037,7 +1102,7 @@ Output:
     }
 }
 ```
-For more information, see [Associating and Disassociating Transit Gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-transit-gateways.html#associate-tgw-with-direct-connect-gateway) in the *AWS Direct Connect User Guide*.
+For more information, see [Associate or disassociate Direct Connect with a Transit Gateway](https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate-tgw-with-direct-connect-gateway.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteDirectConnectGatewayAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-direct-connect-gateway-association.html) in *AWS CLI Command Reference*.
 
 ### `delete-direct-connect-gateway`
@@ -1047,25 +1112,26 @@ The following code example shows how to use `delete-direct-connect-gateway`.
 
 **AWS CLI**
 **To delete a Direct Connect gateway**
-The following example deletes Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`.
-Command:
+The following `delete-direct-connect-gateway` example deletes Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`.
 
 ```
-aws directconnect delete-direct-connect-gateway --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}}
+aws directconnect delete-direct-connect-gateway \
+    --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}}
 ```
 Output:
 
 ```
 {
-  "directConnectGateway": {
-      "amazonSideAsn": 64512,
-      "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
-      "ownerAccount": "123456789012",
-      "directConnectGatewayName": "DxGateway1",
-      "directConnectGatewayState": "deleting"
-  }
+    "directConnectGateway": {
+        "amazonSideAsn": 64512,
+        "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
+        "ownerAccount": "123456789012",
+        "directConnectGatewayName": "DxGateway1",
+        "directConnectGatewayState": "deleting"
+    }
 }
 ```
+For more information, see [Delete a Direct Connect gateway](https://docs.aws.amazon.com/directconnect/latest/UserGuide/delete-direct-connect-gateway.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteDirectConnectGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-direct-connect-gateway.html) in *AWS CLI Command Reference*.
 
 ### `delete-interconnect`
@@ -1075,10 +1141,11 @@ The following code example shows how to use `delete-interconnect`.
 
 **AWS CLI**
 **To delete an interconnect**
-The following `delete-interconnect` command deletes the specified interconnect:
+The following `delete-interconnect` example deletes the specified interconnect.
 
 ```
-aws directconnect delete-interconnect --interconnect-id {{dxcon-fgktov66}}
+aws directconnect delete-interconnect \
+    --interconnect-id {{dxcon-fgktov66}}
 ```
 Output:
 
@@ -1087,6 +1154,7 @@ Output:
     "interconnectState": "deleted"
 }
 ```
+For more information, see [Direct Connect dedicated and hosted connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteInterconnect](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-interconnect.html) in *AWS CLI Command Reference*.
 
 ### `delete-lag`
@@ -1096,29 +1164,30 @@ The following code example shows how to use `delete-lag`.
 
 **AWS CLI**
 **To delete a LAG**
-The following example deletes the specified LAG.
-Command:
+The following `delete-lag` example deletes the specified LAG.
 
 ```
-aws directconnect delete-lag --lag-id {{dxlag-ffrhowd9}}
+aws directconnect delete-lag \
+    --lag-id {{dxlag-ffrhowd9}}
 ```
 Output:
 
 ```
 {
-  "awsDevice": "EqDC2-4h6ce2r1bes6",
-  "numberOfConnections": 0,
-  "lagState": "deleted",
-  "ownerAccount": "123456789012",
-  "lagName": "TestLAG",
-  "connections": [],
-  "lagId": "dxlag-ffrhowd9",
-  "minimumLinks": 0,
-  "connectionsBandwidth": "1Gbps",
-  "region": "us-east-1",
-  "location": "EqDC2"
+    "awsDevice": "EqDC2-4h6ce2r1bes6",
+    "numberOfConnections": 0,
+    "lagState": "deleted",
+    "ownerAccount": "123456789012",
+    "lagName": "TestLAG",
+    "connections": [],
+    "lagId": "dxlag-ffrhowd9",
+    "minimumLinks": 0,
+    "connectionsBandwidth": "1Gbps",
+    "region": "us-west-2",
+    "location": "EqDC2"
 }
 ```
+For more information, see [Delete a Direct Connect endpoint LAG](https://docs.aws.amazon.com/directconnect/latest/UserGuide/delete-lag.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteLag](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-lag.html) in *AWS CLI Command Reference*.
 
 ### `delete-virtual-interface`
@@ -1128,10 +1197,11 @@ The following code example shows how to use `delete-virtual-interface`.
 
 **AWS CLI**
 **To delete a virtual interface**
-The following `delete-virtual-interface` command deletes the specified virtual interface:
+The following `delete-virtual-interface` example deletes the specified virtual interface.
 
 ```
-aws directconnect delete-virtual-interface --virtual-interface-id {{dxvif-ffhhk74f}}
+aws directconnect delete-virtual-interface \
+    --virtual-interface-id {{dxvif-ffhhk74f}}
 ```
 Output:
 
@@ -1140,6 +1210,7 @@ Output:
     "virtualInterfaceState": "deleting"
 }
 ```
+For more information, see [Delete a Direct Connect virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/deletevif.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DeleteVirtualInterface](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/delete-virtual-interface.html) in *AWS CLI Command Reference*.
 
 ### `describe-connection-loa`
@@ -1148,23 +1219,34 @@ Output:
 The following code example shows how to use `describe-connection-loa`.
 
 **AWS CLI**
-**To describe your LOA-CFA for a connection using Linux or Mac OS X**
-The following example describes your LOA-CFA for connection `dxcon-fh6ayh1d`. The contents of the LOA-CFA are base64-encoded. This command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure. The final part of the command decodes the content using the `base64` utility, and sends the output to a PDF file.
+**Example 1: To describe your LOA-CFA for a connection (Linux and macOS)**
+The following `describe-connection-loa` example describes your LOA-CFA for connection `dxcon-fh6ayh1d`. The contents of the LOA-CFA are base64-encoded. This command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure. The final part of the command decodes the content using the `base64` utility, and sends the output to a PDF file.
 
 ```
-aws directconnect describe-connection-loa --connection-id {{dxcon-fh6ayh1d}} --output {{text}} --query {{loa.loaContent|base64}} --decode {{>}} {{myLoaCfa.pdf}}
+aws directconnect describe-connection-loa \
+    --connection-id {{dxcon-fh6ayh1d}} \
+    --query {{loa.loaContent}} \
+    --output {{text}} {{|}} {{base64}} --decode {{>}} {{myLoaCfa.pdf}}
 ```
-**To describe your LOA-CFA for a connection using Windows**
-The previous example requires the use of the `base64` utility to decode the output. On a Windows computer, you can use `certutil` instead. In the following example, the first command describes your LOA-CFA for connection `dxcon-fh6ayh1d` and uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure to a file called `myLoaCfa.base64`. The second command uses the `certutil` utility to decode the file and send the output to a PDF file.
+This command produces no output. The decoded content is written to `myLoaCfa.pdf`.
+For more information, see [Download the Direct Connect LOA-CFA](https://docs.aws.amazon.com/directconnect/latest/UserGuide/download-loa-cfa.html) in the *AWS Direct Connect User Guide*.
+**Example 2: To describe your LOA-CFA for a connection (Windows)**
+The following `describe-connection-loa` example describes your LOA-CFA for connection `dxcon-fh6ayh1d` on a Windows computer. The previous example requires the use of the `base64` utility to decode the output, but on Windows you can use `certutil` instead. The first command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure to a file called `myLoaCfa.base64`.
 
 ```
-aws directconnect describe-connection-loa --connection-id {{dxcon-fh6ayh1d}} --output {{text}} --query {{loa.loaContent}} {{>}} {{myLoaCfa.base64}}
+aws directconnect describe-connection-loa {{^}}
+    --connection-id {{dxcon-fh6ayh1d}} {{^}}
+    --query {{loa.loaContent}} {{^}}
+    --output {{text}} {{>}} {{myLoaCfa.base64}}
 ```
+This command produces no output. Its output is redirected to `myLoaCfa.base64`.
+The second command uses the `certutil` utility to decode the file and send the output to a PDF file.
 
 ```
 certutil -decode myLoaCfa.base64 myLoaCfa.pdf
 ```
-For more information about controlling AWS CLI output, see [Controlling Command Output from the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html) in the *AWS Command Line Interface User Guide*.
+For more information, see [Download the Direct Connect LOA-CFA](https://docs.aws.amazon.com/directconnect/latest/UserGuide/download-loa-cfa.html) in the *AWS Direct Connect User Guide*.
+For more information about controlling AWS CLI output, see [Controlling command output in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [DescribeConnectionLoa](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-connection-loa.html) in *AWS CLI Command Reference*.
 
 ### `describe-connections-on-interconnect`
@@ -1174,10 +1256,11 @@ The following code example shows how to use `describe-connections-on-interconnec
 
 **AWS CLI**
 **To list connections on an interconnect**
-The following `describe-connections-on-interconnect` command lists connections that have been provisioned on the given interconnect:
+The following `describe-connections-on-interconnect` example lists connections that have been provisioned on the given interconnect.
 
 ```
-aws directconnect describe-connections-on-interconnect --interconnect-id {{dxcon-fgktov66}}
+aws directconnect describe-connections-on-interconnect \
+    --interconnect-id {{dxcon-fgktov66}}
 ```
 Output:
 
@@ -1193,11 +1276,12 @@ Output:
             "bandwidth": "500Mbps",
             "location": "TIVIT",
             "connectionName": "mydcinterconnect",
-            "region": "sa-east-1"
+            "region": "us-west-2"
         }
     ]
 }
 ```
+For more information, see [Hosted Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted_connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeConnectionsOnInterconnect](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-connections-on-interconnect.html) in *AWS CLI Command Reference*.
 
 ### `describe-connections`
@@ -1207,7 +1291,7 @@ The following code example shows how to use `describe-connections`.
 
 **AWS CLI**
 **To list all connections in the current region**
-The following `describe-connections` command lists all connections in the current region:
+The following `describe-connections` example lists all connections in the current region.
 
 ```
 aws directconnect describe-connections
@@ -1216,22 +1300,23 @@ Output:
 
 ```
 {
-  "connections": [
-      {
-          "awsDevice": "EqDC2-123h49s71dabc",
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-fguhmqlc",
-          "lagId": "dxlag-ffrz71kw",
-          "connectionState": "down",
-          "bandwidth": "1Gbps",
-          "location": "EqDC2",
-          "connectionName": "My_Connection",
-          "loaIssueTime": 1491568964.0,
-          "region": "us-east-1"
-      }
-  ]
+    "connections": [
+        {
+            "awsDevice": "EqDC2-123h49s71dabc",
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-fguhmqlc",
+            "lagId": "dxlag-ffrz71kw",
+            "connectionState": "down",
+            "bandwidth": "1Gbps",
+            "location": "EqDC2",
+            "connectionName": "My_Connection",
+            "loaIssueTime": 1491568964.0,
+            "region": "us-west-2"
+        }
+    ]
 }
 ```
+For more information, see [View Direct Connect connection details](https://docs.aws.amazon.com/directconnect/latest/UserGuide/viewdetails.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-connections.html) in *AWS CLI Command Reference*.
 
 ### `describe-direct-connect-gateway-association-proposals`
@@ -1252,15 +1337,15 @@ Output:
 {
     "directConnectGatewayAssociationProposals": [
         {
-            "proposalId": "c2ede9b4-bbc6-4d33-923c-bc4feEXAMPLE",
-            "directConnectGatewayId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
-            "directConnectGatewayOwnerAccount": "111122223333",
+            "proposalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "directConnectGatewayOwnerAccount": "123456789012",
             "proposalState": "requested",
             "associatedGateway": {
                 "id": "tgw-02f776b1a7EXAMPLE",
                 "type": "transitGateway",
-                "ownerAccount": "111122223333",
-                "region": "us-east-1"
+                "ownerAccount": "123456789012",
+                "region": "us-west-2"
             },
             "existingAllowedPrefixesToDirectConnectGateway": [
                 {
@@ -1277,15 +1362,15 @@ Output:
             ]
         },
         {
-            "proposalId": "cb7f41cb-8128-43a5-93b1-dcaedEXAMPLE",
-            "directConnectGatewayId": "11560968-4ac1-4fd3-bcb2-00599EXAMPLE",
-            "directConnectGatewayOwnerAccount": "111122223333",
+            "proposalId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "directConnectGatewayOwnerAccount": "123456789012",
             "proposalState": "accepted",
             "associatedGateway": {
                 "id": "tgw-045776b1a7EXAMPLE",
                 "type": "transitGateway",
-                "ownerAccount": "111122223333",
-                "region": "us-east-1"
+                "ownerAccount": "123456789012",
+                "region": "us-west-2"
             },
             "existingAllowedPrefixesToDirectConnectGateway": [
                 {
@@ -1304,7 +1389,7 @@ Output:
     ]
 }
 ```
-For more information, see [Associating and Disassociating Transit Gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-transit-gateways.html#associate-tgw-with-direct-connect-gateway) in the *AWS Direct Connect User Guide*.
+For more information, see [Associating and Disassociating Transit Gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate-tgw-with-direct-connect-gateway.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeDirectConnectGatewayAssociationProposals](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-direct-connect-gateway-association-proposals.html) in *AWS CLI Command Reference*.
 
 ### `describe-direct-connect-gateway-associations`
@@ -1314,35 +1399,36 @@ The following code example shows how to use `describe-direct-connect-gateway-ass
 
 **AWS CLI**
 **To describe Direct Connect gateway associations**
-The following example describes all the associations with Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`.
-Command:
+The following `describe-direct-connect-gateway-associations` example describes all the associations with Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`.
 
 ```
-aws directconnect describe-direct-connect-gateway-associations --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}}
+aws directconnect describe-direct-connect-gateway-associations \
+    --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}}
 ```
 Output:
 
 ```
 {
-  "nextToken": "eyJ2IjoxLCJzIjoxLCJpIjoiOU83OTFodzdycnZCbkN4MExHeHVwQT09IiwiYyI6InIxTEN0UEVHV0I1UFlkaWFnNlUxanJkRWF6eW1iOElHM0FRVW1MdHRJK0dxcnN1RWtvcFBKWFE2ZjRNRGdGTkhCa0tDZmVINEtZOEYwZ0dEYWZpbmU0ZnZMYVhKRjdXRVdENmdQZ1Y4d2w0PSJ9",
-  "directConnectGatewayAssociations": [
-      {
-          "associationState": "associating",
-          "virtualGatewayOwnerAccount": "123456789012",
-          "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
-          "virtualGatewayId": "vgw-6efe725e",
-          "virtualGatewayRegion": "us-east-2"
-      },
-      {
-          "associationState": "disassociating",
-          "virtualGatewayOwnerAccount": "123456789012",
-          "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
-          "virtualGatewayId": "vgw-ebaa27db",
-          "virtualGatewayRegion": "us-east-2"
-      }
-  ]
+    "nextToken": "eyJ2IjoxLCJzIjoxLCJpIjoiOU83OTFodzdycnZCbkN4MExHeHVwQT09IiwiYyI6InIxTEN0UEVHV0I1UFlkaWFnNlUxanJkRWF6eW1iOElHM0FRVW1MdHRJK0dxcnN1RWtvcFBKWFE2ZjRNRGdGTkhCa0tDZmVINEtZOEYwZ0dEYWZpbmU0ZnZMYVhKRjdXRVdENmdQZ1Y4d2w0PSJ9",
+    "directConnectGatewayAssociations": [
+        {
+            "associationState": "associating",
+            "virtualGatewayOwnerAccount": "123456789012",
+            "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
+            "virtualGatewayId": "vgw-6efe725e",
+            "virtualGatewayRegion": "us-west-2"
+        },
+        {
+            "associationState": "disassociating",
+            "virtualGatewayOwnerAccount": "123456789012",
+            "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
+            "virtualGatewayId": "vgw-ebaa27db",
+            "virtualGatewayRegion": "us-west-2"
+        }
+    ]
 }
 ```
+For more information, see [Associate or disassociate Direct Connect virtual private gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate-vgw-with-direct-connect-gateway.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeDirectConnectGatewayAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-direct-connect-gateway-associations.html) in *AWS CLI Command Reference*.
 
 ### `describe-direct-connect-gateway-attachments`
@@ -1352,28 +1438,29 @@ The following code example shows how to use `describe-direct-connect-gateway-att
 
 **AWS CLI**
 **To describe Direct Connect gateway attachments**
-The following example describes the virtual interfaces that are attached to Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`.
-Command:
+The following `describe-direct-connect-gateway-attachments` example describes the virtual interfaces that are attached to Direct Connect gateway `5f294f92-bafb-4011-916d-9b0bexample`.
 
 ```
-aws directconnect describe-direct-connect-gateway-attachments --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}}
+aws directconnect describe-direct-connect-gateway-attachments \
+    --direct-connect-gateway-id {{5f294f92-bafb-4011-916d-9b0bexample}}
 ```
 Output:
 
 ```
 {
-  "directConnectGatewayAttachments": [
-      {
-          "virtualInterfaceOwnerAccount": "123456789012",
-          "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
-          "virtualInterfaceRegion": "us-east-2",
-          "attachmentState": "attaching",
-          "virtualInterfaceId": "dxvif-fg9zyabc"
-      }
-  ],
-  "nextToken": "eyJ2IjoxLCJzIjoxLCJpIjoibEhXdlNpUXF5RzhoL1JyUW52SlV2QT09IiwiYyI6Im5wQjFHQ0RyQUdRS3puNnNXcUlINCtkTTA4dTk3KzBiU0xtb05JQmlaczZ6NXRIYmk3c3VESUxFTTd6a2FzVHM0VTFwaGJkZGNxTytqWmQ3QzMzOGRQaTVrTThrOG1zelRsV3gyMWV3VTNFPSJ9"
+    "directConnectGatewayAttachments": [
+        {
+            "virtualInterfaceOwnerAccount": "123456789012",
+            "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bexample",
+            "virtualInterfaceRegion": "us-west-2",
+            "attachmentState": "attaching",
+            "virtualInterfaceId": "dxvif-fg9zyabc"
+        }
+    ],
+    "nextToken": "eyJ2IjoxLCJzIjoxLCJpIjoibEhXdlNpUXF5RzhoL1JyUW52SlV2QT09IiwiYyI6Im5wQjFHQ0RyQUdRS3puNnNXcUlINCtkTTA4dTk3KzBiU0xtb05JQmlaczZ6NXRIYmk3c3VESUxFTTd6a2FzVHM0VTFwaGJkZGNxTytqWmQ3QzMzOGRQaTVrTThrOG1zelRsV3gyMWV3VTNFPSJ9"
 }
 ```
+For more information, see [Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeDirectConnectGatewayAttachments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-direct-connect-gateway-attachments.html) in *AWS CLI Command Reference*.
 
 ### `describe-direct-connect-gateways`
@@ -1383,8 +1470,7 @@ The following code example shows how to use `describe-direct-connect-gateways`.
 
 **AWS CLI**
 **To describe your Direct Connect gateways**
-The following example describe all of your Direct Connect gateways.
-Command:
+The following `describe-direct-connect-gateways` example describes all of your Direct Connect gateways.
 
 ```
 aws directconnect describe-direct-connect-gateways
@@ -1393,24 +1479,25 @@ Output:
 
 ```
 {
-  "directConnectGateways": [
-      {
-          "amazonSideAsn": 64512,
-          "directConnectGatewayId": "cf68415c-f4ae-48f2-87a7-3b52cexample",
-          "ownerAccount": "123456789012",
-          "directConnectGatewayName": "DxGateway2",
-          "directConnectGatewayState": "available"
-      },
-      {
-          "amazonSideAsn": 64512,
-          "directConnectGatewayId": "5f294f92-bafb-4011-916d-9b0bdexample",
-          "ownerAccount": "123456789012",
-          "directConnectGatewayName": "DxGateway1",
-          "directConnectGatewayState": "available"
-      }
-  ]
+    "directConnectGateways": [
+        {
+            "amazonSideAsn": 64512,
+            "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ownerAccount": "123456789012",
+            "directConnectGatewayName": "DxGateway2",
+            "directConnectGatewayState": "available"
+        },
+        {
+            "amazonSideAsn": 64512,
+            "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "ownerAccount": "123456789012",
+            "directConnectGatewayName": "DxGateway1",
+            "directConnectGatewayState": "available"
+        }
+    ]
 }
 ```
+For more information, see [Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeDirectConnectGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-direct-connect-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-hosted-connections`
@@ -1420,11 +1507,11 @@ The following code example shows how to use `describe-hosted-connections`.
 
 **AWS CLI**
 **To list connections on an interconnect**
-The following example lists connections that have been provisioned on the given interconnect.
-Command:
+The following `describe-hosted-connections` example lists connections that have been provisioned on the given interconnect.
 
 ```
-aws directconnect describe-hosted-connections --connection-id {{dxcon-fgktov66}}
+aws directconnect describe-hosted-connections \
+    --connection-id {{dxcon-fgktov66}}
 ```
 Output:
 
@@ -1440,11 +1527,12 @@ Output:
             "bandwidth": "500Mbps",
             "location": "TIVIT",
             "connectionName": "mydcinterconnect",
-            "region": "sa-east-1"
+            "region": "us-west-2"
         }
     ]
 }
 ```
+For more information, see [Hosted Direct Connect connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/hosted_connection.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeHostedConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-hosted-connections.html) in *AWS CLI Command Reference*.
 
 ### `describe-interconnect-loa`
@@ -1453,23 +1541,34 @@ Output:
 The following code example shows how to use `describe-interconnect-loa`.
 
 **AWS CLI**
-**To describe your LOA-CFA for an interconnect using Linux or Mac OS X**
-The following example describes your LOA-CFA for interconnect `dxcon-fh6ayh1d`. The contents of the LOA-CFA are base64-encoded. This command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure. The final part of the command decodes the content using the `base64` utility, and sends the output to a PDF file.
+**Example 1: To describe your LOA-CFA for an interconnect (Linux and macOS)**
+The following `describe-interconnect-loa` example describes your LOA-CFA for interconnect `dxcon-fh6ayh1d`. The contents of the LOA-CFA are base64-encoded. This command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure. The final part of the command decodes the content using the `base64` utility, and sends the output to a PDF file.
 
 ```
-aws directconnect describe-interconnect-loa --interconnect-id {{dxcon-fh6ayh1d}} --output {{text}} --query {{loa.loaContent|base64}} --decode {{>}} {{myLoaCfa.pdf}}
+aws directconnect describe-interconnect-loa \
+    --interconnect-id {{dxcon-fh6ayh1d}} \
+    --query {{loa.loaContent}} \
+    --output {{text}} {{|}} {{base64}} --decode {{>}} {{myLoaCfa.pdf}}
 ```
-**To describe your LOA-CFA for an interconnect using Windows**
-The previous example requires the use of the `base64` utility to decode the output. On a Windows computer, you can use `certutil` instead. In the following example, the first command describes your LOA-CFA for interconnect `dxcon-fh6ayh1d` and uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure to a file called `myLoaCfa.base64`. The second command uses the `certutil` utility to decode the file and send the output to a PDF file.
+This command produces no output. The decoded content is written to the file.
+For more information, see [Download the Direct Connect LOA-CFA](https://docs.aws.amazon.com/directconnect/latest/UserGuide/download-loa-cfa.html) in the *AWS Direct Connect User Guide*.
+**Example 2: To describe your LOA-CFA for an interconnect (Windows)**
+The following `describe-interconnect-loa` example describes your LOA-CFA for interconnect `dxcon-fh6ayh1d` on a Windows computer. The previous example requires the use of the `base64` utility to decode the output, but on Windows you can use `certutil` instead. The first command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure to a file called `myLoaCfa.base64`.
 
 ```
-aws directconnect describe-interconnect-loa --interconnect-id {{dxcon-fh6ayh1d}} --output {{text}} --query {{loa.loaContent}} {{>}} {{myLoaCfa.base64}}
+aws directconnect describe-interconnect-loa {{^}}
+    --interconnect-id {{dxcon-fh6ayh1d}} {{^}}
+    --query {{loa.loaContent}} {{^}}
+    --output {{text}} {{>}} {{myLoaCfa.base64}}
 ```
+This command produces no output. Its output is redirected to `myLoaCfa.base64`.
+The second command uses the `certutil` utility to decode the file and send the output to a PDF file.
 
 ```
 certutil -decode myLoaCfa.base64 myLoaCfa.pdf
 ```
-For more information about controlling AWS CLI output, see [Controlling Command Output from the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html) in the *AWS Command Line Interface User Guide*.
+For more information, see [Download the Direct Connect LOA-CFA](https://docs.aws.amazon.com/directconnect/latest/UserGuide/download-loa-cfa.html) in the *AWS Direct Connect User Guide*.
+For more information about controlling AWS CLI output, see [Controlling command output in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [DescribeInterconnectLoa](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-interconnect-loa.html) in *AWS CLI Command Reference*.
 
 ### `describe-interconnects`
@@ -1479,7 +1578,7 @@ The following code example shows how to use `describe-interconnects`.
 
 **AWS CLI**
 **To list interconnects**
-The following `describe-interconnects` command lists the interconnects owned by your AWS account:
+The following `describe-interconnects` example lists the interconnects owned by your AWS account.
 
 ```
 aws directconnect describe-interconnects
@@ -1490,7 +1589,7 @@ Output:
 {
     "interconnects": [
         {
-            "region": "sa-east-1",
+            "region": "us-west-2",
             "bandwidth": "1Gbps",
             "location": "TIVIT",
             "interconnectName": "1G Interconnect to AWS",
@@ -1500,6 +1599,7 @@ Output:
     ]
 }
 ```
+For more information, see [Direct Connect dedicated and hosted connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeInterconnects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-interconnects.html) in *AWS CLI Command Reference*.
 
 ### `describe-lags`
@@ -1509,8 +1609,7 @@ The following code example shows how to use `describe-lags`.
 
 **AWS CLI**
 **To describe your LAGs**
-The following command describes all of your LAGs for the current region.
-Command:
+The following `describe-lags` example describes all of your LAGs for the current region.
 
 ```
 aws directconnect describe-lags
@@ -1519,44 +1618,45 @@ Output:
 
 ```
 {
-  "lags": [
-      {
-          "awsDevice": "EqDC2-19y7z3m17xpuz",
-          "numberOfConnections": 2,
-          "lagState": "down",
-          "ownerAccount": "123456789012",
-          "lagName": "DA-LAG",
-          "connections": [
-              {
-                  "ownerAccount": "123456789012",
-                  "connectionId": "dxcon-ffnikghc",
-                  "lagId": "dxlag-fgsu9erb",
-                  "connectionState": "requested",
-                  "bandwidth": "10Gbps",
-                  "location": "EqDC2",
-                  "connectionName": "Requested Connection 1 for Lag dxlag-fgsu9erb",
-                  "region": "us-east-1"
-              },
-              {
-                  "ownerAccount": "123456789012",
-                  "connectionId": "dxcon-fglgbdea",
-                  "lagId": "dxlag-fgsu9erb",
-                  "connectionState": "requested",
-                  "bandwidth": "10Gbps",
-                  "location": "EqDC2",
-                  "connectionName": "Requested Connection 2 for Lag dxlag-fgsu9erb",
-                  "region": "us-east-1"
-              }
-          ],
-          "lagId": "dxlag-fgsu9erb",
-          "minimumLinks": 0,
-          "connectionsBandwidth": "10Gbps",
-          "region": "us-east-1",
-          "location": "EqDC2"
-      }
-  ]
+    "lags": [
+        {
+            "awsDevice": "EqDC2-19y7z3m17xpuz",
+            "numberOfConnections": 2,
+            "lagState": "down",
+            "ownerAccount": "123456789012",
+            "lagName": "DA-LAG",
+            "connections": [
+                {
+                    "ownerAccount": "123456789012",
+                    "connectionId": "dxcon-ffnikghc",
+                    "lagId": "dxlag-fgsu9erb",
+                    "connectionState": "requested",
+                    "bandwidth": "10Gbps",
+                    "location": "EqDC2",
+                    "connectionName": "Requested Connection 1 for Lag dxlag-fgsu9erb",
+                    "region": "us-west-2"
+                },
+                {
+                    "ownerAccount": "123456789012",
+                    "connectionId": "dxcon-fglgbdea",
+                    "lagId": "dxlag-fgsu9erb",
+                    "connectionState": "requested",
+                    "bandwidth": "10Gbps",
+                    "location": "EqDC2",
+                    "connectionName": "Requested Connection 2 for Lag dxlag-fgsu9erb",
+                    "region": "us-west-2"
+                }
+            ],
+            "lagId": "dxlag-fgsu9erb",
+            "minimumLinks": 0,
+            "connectionsBandwidth": "10Gbps",
+            "region": "us-west-2",
+            "location": "EqDC2"
+        }
+    ]
 }
 ```
+For more information, see [View LAG details at a Direct Connect endpoint](https://docs.aws.amazon.com/directconnect/latest/UserGuide/view-lag.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeLags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-lags.html) in *AWS CLI Command Reference*.
 
 ### `describe-loa`
@@ -1565,23 +1665,34 @@ Output:
 The following code example shows how to use `describe-loa`.
 
 **AWS CLI**
-**To describe your LOA-CFA for a connection using Linux or Mac OS X**
-The following example describes your LOA-CFA for connection `dxcon-fh6ayh1d`. The contents of the LOA-CFA are base64-encoded. This command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure. The final part of the command decodes the content using the `base64` utility, and sends the output to a PDF file.
+**Example 1: To describe your LOA-CFA for a connection (Linux and macOS)**
+The following `describe-loa` example describes your LOA-CFA for connection `dxcon-fh6ayh1d`. The contents of the LOA-CFA are base64-encoded. This command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure. The final part of the command decodes the content using the `base64` utility, and sends the output to a PDF file.
 
 ```
-aws directconnect describe-loa --connection-id {{dxcon-fh6ayh1d}} --output {{text}} --query {{loa.loaContent|base64}} --decode {{>}} {{myLoaCfa.pdf}}
+aws directconnect describe-loa \
+    --connection-id {{dxcon-fh6ayh1d}} \
+    --query {{loa.loaContent}} \
+    --output {{text}} {{|}} {{base64}} --decode {{>}} {{myLoaCfa.pdf}}
 ```
-**To describe your LOA-CFA for a connection using Windows**
-The previous example requires the use of the `base64` utility to decode the output. On a Windows computer, you can use `certutil` instead. In the following example, the first command describes your LOA-CFA for connection `dxcon-fh6ayh1d` and uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure to a file called `myLoaCfa.base64`. The second command uses the `certutil` utility to decode the file and send the output to a PDF file.
+This command produces no output. The decoded content is written to the file `myLoaCfa.pdf`.
+For more information, see [Download the Direct Connect LOA-CFA](https://docs.aws.amazon.com/directconnect/latest/UserGuide/download-loa-cfa.html) in the *AWS Direct Connect User Guide*.
+**Example 2: To describe your LOA-CFA for a connection (Windows)**
+The following `describe-loa` example describes your LOA-CFA for connection `dxcon-fh6ayh1d` on a Windows computer. The previous example requires the use of the `base64` utility to decode the output, but on Windows you can use `certutil` instead. The first command uses the `--output` and `--query` parameters to control the output and extract the contents of the `loaContent` structure to a file called `myLoaCfa.base64`.
 
 ```
-aws directconnect describe-loa --connection-id {{dxcon-fh6ayh1d}} --output {{text}} --query {{loa.loaContent}} {{>}} {{myLoaCfa.base64}}
+aws directconnect describe-loa {{^}}
+    --connection-id {{dxcon-fh6ayh1d}} {{^}}
+    --query {{loa.loaContent}} {{^}}
+    --output {{text}} {{>}} {{myLoaCfa.base64}}
 ```
+This command produces no output. The output is redirected to `myLoaCfa.base64`.
+The second command uses the `certutil` utility to decode the file and send the output to a PDF file.
 
 ```
 certutil -decode myLoaCfa.base64 myLoaCfa.pdf
 ```
-For more information about controlling AWS CLI output, see [Controlling Command Output from the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html) in the *AWS Command Line Interface User Guide*.
+For more information, see [Download the Direct Connect LOA-CFA](https://docs.aws.amazon.com/directconnect/latest/UserGuide/download-loa-cfa.html) in the *AWS Direct Connect User Guide*.
+For more information about controlling AWS CLI output, see [Controlling command output in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-output.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [DescribeLoa](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-loa.html) in *AWS CLI Command Reference*.
 
 ### `describe-locations`
@@ -1591,7 +1702,7 @@ The following code example shows how to use `describe-locations`.
 
 **AWS CLI**
 **To list AWS Direct Connect partners and locations**
-The following `describe-locations` command lists AWS Direct Connect partners and locations in the current region:
+The following `describe-locations` example lists AWS Direct Connect partners and locations in the current region.
 
 ```
 aws directconnect describe-locations
@@ -1612,6 +1723,7 @@ Output:
     ]
 }
 ```
+For more information, see [Requesting cross connects at Direct Connect locations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/Colocation.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeLocations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-locations.html) in *AWS CLI Command Reference*.
 
 ### `describe-tags`
@@ -1621,29 +1733,30 @@ The following code example shows how to use `describe-tags`.
 
 **AWS CLI**
 **To describe tags for your AWS Direct Connect resources**
-The following command describes the tags for the connection `dxcon-abcabc12`.
-Command:
+The following `describe-tags` example describes the tags for the connection `dxcon-abcabc12`.
 
 ```
-aws directconnect describe-tags --resource-arns {{arn:aws:directconnect:us-east-1:123456789012:dxcon/dxcon-abcabc12}}
+aws directconnect describe-tags \
+    --resource-arns {{arn:aws:directconnect:us-west-2:123456789012:dxcon/dxcon-abcabc12}}
 ```
 Output:
 
 ```
 {
-  "resourceTags": [
-      {
-          "resourceArn": "arn:aws:directconnect:us-east-1:123456789012:dxcon/dxcon-abcabc12",
-          "tags": [
-              {
-                  "value": "VAConnection",
-                  "key": "Name"
-              }
-          ]
-      }
-  ]
+    "resourceTags": [
+        {
+            "resourceArn": "arn:aws:directconnect:us-west-2:123456789012:dxcon/dxcon-abcabc12",
+            "tags": [
+                {
+                    "value": "VAConnection",
+                    "key": "Name"
+                }
+            ]
+        }
+    ]
 }
 ```
+For more information, see [Tag AWS Direct Connect resources](https://docs.aws.amazon.com/directconnect/latest/UserGuide/using-tags.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-tags.html) in *AWS CLI Command Reference*.
 
 ### `describe-virtual-gateways`
@@ -1653,7 +1766,7 @@ The following code example shows how to use `describe-virtual-gateways`.
 
 **AWS CLI**
 **To list virtual private gateways**
-The following `describe-virtual-gateways` command lists virtual private gateways owned by your AWS account:
+The following `describe-virtual-gateways` example lists virtual private gateways owned by your AWS account.
 
 ```
 aws directconnect describe-virtual-gateways
@@ -1670,6 +1783,7 @@ Output:
     ]
 }
 ```
+For more information, see [Direct Connect virtual private gateway associations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/virtualgateways.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeVirtualGateways](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-virtual-gateways.html) in *AWS CLI Command Reference*.
 
 ### `describe-virtual-interfaces`
@@ -1679,10 +1793,11 @@ The following code example shows how to use `describe-virtual-interfaces`.
 
 **AWS CLI**
 **To list all virtual interfaces**
-The following `describe-virtual-interfaces` command lists the information about all virtual interfaces associated with your AWS account:
+The following `describe-virtual-interfaces` example lists the information about all virtual interfaces associated with your AWS account.
 
 ```
-aws directconnect describe-virtual-interfaces --connection-id {{dxcon-ffjrkx17}}
+aws directconnect describe-virtual-interfaces \
+    --connection-id {{dxcon-ffjrkx17}}
 ```
 Output:
 
@@ -1733,6 +1848,7 @@ Output:
     ]
 }
 ```
+For more information, see [View Direct Connect virtual interface details](https://docs.aws.amazon.com/directconnect/latest/UserGuide/viewvifdetails.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DescribeVirtualInterfaces](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/describe-virtual-interfaces.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-connection-from-lag`
@@ -1742,25 +1858,27 @@ The following code example shows how to use `disassociate-connection-from-lag`.
 
 **AWS CLI**
 **To disassociate a connection from a LAG**
-The following example disassociates the specified connection from the specified LAG.
-Command:
+The following `disassociate-connection-from-lag` example disassociates the specified connection from the specified LAG.
 
 ```
-aws directconnect disassociate-connection-from-lag --lag-id {{dxlag-fhccu14t}} --connection-id  {{dxcon-fg9607vm}}
+aws directconnect disassociate-connection-from-lag \
+    --lag-id {{dxlag-fhccu14t}} \
+    --connection-id {{dxcon-fg9607vm}}
 ```
 Output:
 
 ```
 {
-  "ownerAccount": "123456789012",
-  "connectionId": "dxcon-fg9607vm",
-  "connectionState": "requested",
-  "bandwidth": "1Gbps",
-  "location": "EqDC2",
-  "connectionName": "Con2ForLag",
-  "region": "us-east-1"
+    "ownerAccount": "123456789012",
+    "connectionId": "dxcon-fg9607vm",
+    "connectionState": "requested",
+    "bandwidth": "1Gbps",
+    "location": "EqDC2",
+    "connectionName": "Con2ForLag",
+    "region": "us-west-2"
 }
 ```
+For more information, see [Disassociate a connection from a LAG at a Direct Connect endpoint](https://docs.aws.amazon.com/directconnect/latest/UserGuide/disassociate-connection-from-lag.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [DisassociateConnectionFromLag](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/disassociate-connection-from-lag.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -1770,12 +1888,15 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To add a tag to an AWS Direct Connect resource**
-The following command adds a tag with a key of `Name` and a value of `VAConnection` to the connection `dxcon-abcabc12`. If the command succeeds, no output is returned.
-Command:
+The following `tag-resource` example adds a tag with a key of `Name` and a value of `VAConnection` to the connection `dxcon-abcabc12`.
 
 ```
-aws directconnect tag-resource --resource-arn {{arn:aws:directconnect:us-east-1:123456789012:dxcon/dxcon-abcabc12}} --tags {{"key=Name,value=VAConnection"}}
+aws directconnect tag-resource \
+    --resource-arn {{arn:aws:directconnect:us-west-2:123456789012:dxcon/dxcon-abcabc12}} \
+    --tags {{"key=Name,value=VAConnection"}}
 ```
+This command produces no output.
+For more information, see [Tag AWS Direct Connect resources](https://docs.aws.amazon.com/directconnect/latest/UserGuide/using-tags.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1785,12 +1906,15 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To remove a tag from an AWS Direct Connect resource**
-The following command removes the tag with the key `Name` from connection `dxcon-abcabc12`. If the command succeeds, no output is returned.
-Command:
+The following `untag-resource` example removes the tag with the key `Name` from connection `dxcon-abcabc12`.
 
 ```
-aws directconnect untag-resource --resource-arn {{arn:aws:directconnect:us-east-1:123456789012:dxcon/dxcon-abcabc12}} --tag-keys {{Name}}
+aws directconnect untag-resource \
+    --resource-arn {{arn:aws:directconnect:us-west-2:123456789012:dxcon/dxcon-abcabc12}} \
+    --tag-keys {{Name}}
 ```
+This command produces no output.
+For more information, see [Tag AWS Direct Connect resources](https://docs.aws.amazon.com/directconnect/latest/UserGuide/using-tags.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-direct-connect-gateway-association`
@@ -1804,7 +1928,7 @@ The following `update-direct-connect-gateway-association` example adds the speci
 
 ```
 aws directconnect update-direct-connect-gateway-association \
-    --association-id {{820a6e4f-5374-4004-8317-3f64bEXAMPLE}} \
+    --association-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --add-allowed-prefixes-to-direct-connect-gateway {{cidr=192.168.2.0/30}}
 ```
 Output:
@@ -1812,16 +1936,16 @@ Output:
 ```
 {
     "directConnectGatewayAssociation": {
-        "directConnectGatewayId": "11460968-4ac1-4fd3-bdb2-00599EXAMPLE",
-        "directConnectGatewayOwnerAccount": "111122223333",
+        "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "directConnectGatewayOwnerAccount": "123456789012",
         "associationState": "updating",
         "associatedGateway": {
             "id": "tgw-02f776b1a7EXAMPLE",
             "type": "transitGateway",
-            "ownerAccount": "111122223333",
-            "region": "us-east-1"
+            "ownerAccount": "123456789012",
+            "region": "us-west-2"
         },
-        "associationId": "820a6e4f-5374-4004-8317-3f64bEXAMPLE",
+        "associationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "allowedPrefixesToDirectConnectGateway": [
             {
                 "cidr": "192.168.2.0/30"
@@ -1843,50 +1967,52 @@ The following code example shows how to use `update-lag`.
 
 **AWS CLI**
 **To update a LAG**
-The following example changes the name of the specified LAG.
-Command:
+The following `update-lag` example changes the name of the specified LAG.
 
 ```
-aws directconnect update-lag --lag-id {{dxlag-ffjhj9lx}} --lag-name {{2ConnLag}}
+aws directconnect update-lag \
+    --lag-id {{dxlag-ffjhj9lx}} \
+    --lag-name {{2ConnLag}}
 ```
 Output:
 
 ```
 {
-  "awsDevice": "CSVA1-23u8tlpaz8iks",
-  "numberOfConnections": 2,
-  "lagState": "down",
-  "ownerAccount": "123456789012",
-  "lagName": "2ConnLag",
-  "connections": [
-      {
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-fflqyj95",
-          "lagId": "dxlag-ffjhj9lx",
-          "connectionState": "requested",
-          "bandwidth": "1Gbps",
-          "location": "CSVA1",
-          "connectionName": "Requested Connection 2 for Lag dxlag-ffjhj9lx",
-          "region": "us-east-1"
-      },
-      {
-          "ownerAccount": "123456789012",
-          "connectionId": "dxcon-ffqr6x5q",
-          "lagId": "dxlag-ffjhj9lx",
-          "connectionState": "requested",
-          "bandwidth": "1Gbps",
-          "location": "CSVA1",
-          "connectionName": "Requested Connection 1 for Lag dxlag-ffjhj9lx",
-          "region": "us-east-1"
-      }
-  ],
-  "lagId": "dxlag-ffjhj9lx",
-  "minimumLinks": 0,
-  "connectionsBandwidth": "1Gbps",
-  "region": "us-east-1",
-  "location": "CSVA1"
+    "awsDevice": "CSVA1-23u8tlpaz8iks",
+    "numberOfConnections": 2,
+    "lagState": "down",
+    "ownerAccount": "123456789012",
+    "lagName": "2ConnLag",
+    "connections": [
+        {
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-fflqyj95",
+            "lagId": "dxlag-ffjhj9lx",
+            "connectionState": "requested",
+            "bandwidth": "1Gbps",
+            "location": "CSVA1",
+            "connectionName": "Requested Connection 2 for Lag dxlag-ffjhj9lx",
+            "region": "us-west-2"
+        },
+        {
+            "ownerAccount": "123456789012",
+            "connectionId": "dxcon-ffqr6x5q",
+            "lagId": "dxlag-ffjhj9lx",
+            "connectionState": "requested",
+            "bandwidth": "1Gbps",
+            "location": "CSVA1",
+            "connectionName": "Requested Connection 1 for Lag dxlag-ffjhj9lx",
+            "region": "us-west-2"
+        }
+    ],
+    "lagId": "dxlag-ffjhj9lx",
+    "minimumLinks": 0,
+    "connectionsBandwidth": "1Gbps",
+    "region": "us-west-2",
+    "location": "CSVA1"
 }
 ```
+For more information, see [Update a LAG at a Direct Connect endpoint](https://docs.aws.amazon.com/directconnect/latest/UserGuide/update-lag.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [UpdateLag](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/update-lag.html) in *AWS CLI Command Reference*.
 
 ### `update-virtual-interface-attributes`
@@ -1925,7 +2051,7 @@ Output:
     "mtu": 1500,
     "jumboFrameCapable": true,
     "virtualGatewayId": "",
-    "directConnectGatewayId": "879b76a1-403d-4700-8b53-4a56ed85436e",
+    "directConnectGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "routeFilterPrefixes": [],
     "bgpPeers": [
         {
@@ -1940,10 +2066,10 @@ Output:
             "awsDeviceV2": "loc1-26wz6vEXAMPLE"
         }
     ],
-    "region": "sa-east-1",
+    "region": "us-west-2",
     "awsDeviceV2": "loc1-26wz6vEXAMPLE",
     "tags": []
 }
 ```
-For more information, see [Setting Network MTU for Private Virtual Interfaces or Transit Virtual Interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/set-jumbo-frames-vif.html) in the *AWS Direct Connect User Guide*.
+For more information, see [Direct Connect virtual interfaces and hosted virtual interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) in the *AWS Direct Connect User Guide*.
 +  For API details, see [UpdateVirtualInterfaceAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/directconnect/update-virtual-interface-attributes.html) in *AWS CLI Command Reference*.

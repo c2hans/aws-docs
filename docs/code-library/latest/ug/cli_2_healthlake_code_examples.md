@@ -25,7 +25,7 @@ Each example includes a link to the complete source code, where you can find ins
 The following code example shows how to use `create-fhir-datastore`.
 
 **AWS CLI**
-**Example 1: Create a SigV4-enabled HealthLake data store**
+**Example 1: To create a SigV4-enabled HealthLake data store**
 The following `create-fhir-datastore` example demonstrates how to create a new data store in AWS HealthLake.
 
 ```
@@ -37,13 +37,13 @@ Output:
 
 ```
 {
-    "DatastoreEndpoint": "https://healthlake.us-east-1.amazonaws.com/datastore/(Data store ID)/r4/",
-    "DatastoreArn": "arn:aws:healthlake:us-east-1:(AWS Account ID):datastore/(Data store ID)",
+    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/(Data store ID)/r4/",
+    "DatastoreArn": "arn:aws:healthlake:us-west-2:(AWS Account ID):datastore/(Data store ID)",
     "DatastoreStatus": "CREATING",
     "DatastoreId": "(Data store ID)"
 }
 ```
-**Example 2: Create a SMART on FHIR-enabled HealthLake data store**
+**Example 2: To create a SMART on FHIR-enabled HealthLake data store**
 The following `create-fhir-datastore` example demonstrates how to create a new SMART on FHIR-enabled data store in AWS HealthLake.
 
 ```
@@ -51,7 +51,7 @@ aws healthlake create-fhir-datastore \
     --datastore-name {{"your-data-store-name"}} \
     --datastore-type-version {{R4}} \
     --preload-data-config PreloadDataType="SYNTHEA" \
-    --sse-configuration '{{{ "KmsEncryptionConfig": {  "CmkType": "CUSTOMER_MANAGED_KMS_KEY", "KmsKeyId": "arn:aws:kms:us-east-1:your-account-id:key/your-key-id" } }}}' \
+    --sse-configuration '{{{ "KmsEncryptionConfig": {  "CmkType": "CUSTOMER_MANAGED_KMS_KEY", "KmsKeyId": "arn:aws:kms:us-west-2:your-account-id:key/your-key-id" } }}}' \
     --identity-provider-configuration  {{file://identity_provider_configuration.json}}
 ```
 Contents of `identity_provider_configuration.json`:
@@ -68,13 +68,13 @@ Output:
 
 ```
 {
-    "DatastoreEndpoint": "https://healthlake.us-east-1.amazonaws.com/datastore/(Data store ID)/r4/",
-    "DatastoreArn": "arn:aws:healthlake:us-east-1:(AWS Account ID):datastore/(Data store ID)",
+    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/(Data store ID)/r4/",
+    "DatastoreArn": "arn:aws:healthlake:us-west-2:(AWS Account ID):datastore/(Data store ID)",
     "DatastoreStatus": "CREATING",
     "DatastoreId": "(Data store ID)"
 }
 ```
-For more information, see [Creating and monitoring a FHIR data store](https://docs.aws.amazon.com/healthlake/latest/devguide/working-with-FHIR-healthlake.html) in the *AWS HealthLake Developer Guide*.
+For more information, see [Creating a HealthLake data store](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-create.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [CreateFHIRDatastore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/create-fhir-datastore.html) in *AWS CLI Command Reference*.
 
 ### `delete-fhir-datastore`
@@ -94,13 +94,13 @@ Output:
 
 ```
 {
-    "DatastoreEndpoint": "https://healthlake.us-east-1.amazonaws.com/datastore/(Data store ID)/r4/",
-    "DatastoreArn": "arn:aws:healthlake:us-east-1:(AWS Account ID):datastore/(Data store ID)",
+    "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/(Data store ID)/r4/",
+    "DatastoreArn": "arn:aws:healthlake:us-west-2:(AWS Account ID):datastore/(Data store ID)",
     "DatastoreStatus": "DELETING",
     "DatastoreId": "(Data store ID)"
 }
 ```
-For more information, see Creating and monitoring a FHIR data store <https://docs.aws.amazon.com/healthlake/latest/devguide/working-with-FHIR-healthlake.html> in the *AWS HealthLake Developer Guide*.
+For more information, see [Deleting a HealthLake data store](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-delete.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [DeleteFHIRDatastore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/delete-fhir-datastore.html) in *AWS CLI Command Reference*.
 
 ### `describe-fhir-datastore`
@@ -127,12 +127,12 @@ Output:
         "SseConfiguration": {
             "KmsEncryptionConfig": {
                 "CmkType": "CUSTOMER_MANAGED_KMS_KEY",
-                "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         },
         "DatastoreName": "Demo",
-        "DatastoreArn": "arn:aws:healthlake:us-east-1:<AWS Account ID>:datastore/<Data store ID>",
-        "DatastoreEndpoint": "https://healthlake.us-east-1.amazonaws.com/datastore/<Data store ID>/r4/",
+        "DatastoreArn": "arn:aws:healthlake:us-west-2:<AWS Account ID>:datastore/<Data store ID>",
+        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/<Data store ID>/r4/",
         "DatastoreStatus": "ACTIVE",
         "DatastoreTypeVersion": "R4",
         "CreatedAt": 1603761064.881,
@@ -144,7 +144,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating and monitoring a FHIR data stores](https://docs.aws.amazon.com/healthlake/latest/devguide/working-with-FHIR-healthlake.html) in the *AWS HealthLake Developer Guide*.
+For more information, see [Getting HealthLake data store properties](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-describe.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [DescribeFHIRDatastore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/describe-fhir-datastore.html) in *AWS CLI Command Reference*.
 
 ### `describe-fhir-export-job`
@@ -174,7 +174,7 @@ Output:
         "OutputDataConfig": {
             "S3Configuration": {
             "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
-            "KmsKeyId": "arn:aws:kms:us-east-1:012345678910:key/d330e7fc-b56c-4216-a250-f4c43ef46e83"
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
 
         },
@@ -206,7 +206,6 @@ Output:
     "ImportJobProperties": {
     "InputDataConfig": {
         "S3Uri": "s3://(Bucket Name)/(Prefix Name)/"
-        { "arrayitem2": 2 }
     },
     "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
     "JobStatus": "COMPLETED",
@@ -245,12 +244,12 @@ Output:
         "SseConfiguration": {
             "KmsEncryptionConfig": {
                 "CmkType": "CUSTOMER_MANAGED_KMS_KEY",
-                "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         },
         "DatastoreName": "Demo",
-        "DatastoreArn": "arn:aws:healthlake:us-east-1:<AWS Account ID>:datastore/<Data store ID>",
-        "DatastoreEndpoint": "https://healthlake.us-east-1.amazonaws.com/datastore/<Data store ID>/r4/",
+        "DatastoreArn": "arn:aws:healthlake:us-west-2:<AWS Account ID>:datastore/<Data store ID>",
+        "DatastoreEndpoint": "https://healthlake.us-west-2.amazonaws.com/datastore/<Data store ID>/r4/",
         "DatastoreStatus": "ACTIVE",
         "DatastoreTypeVersion": "R4",
         "CreatedAt": 1603761064.881,
@@ -263,7 +262,7 @@ Output:
     ]
 }
 ```
-For more information, see [Creating and monitoring a FHIR data store](https://docs.aws.amazon.com/healthlake/latest/devguide/working-with-FHIR-healthlake.html) in the *AWS HealthLake Developer Guide*.
+For more information, see [Listing HealthLake data stores](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-list.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [ListFHIRDatastores](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-fhir-datastores.html) in *AWS CLI Command Reference*.
 
 ### `list-fhir-export-jobs`
@@ -278,10 +277,10 @@ The following `list-fhir-export-jobs` example shows how to use the command to vi
 ```
 aws healthlake list-fhir-export-jobs \
     --datastore-id {{(Data}} {{store}} {{ID)}} \
-    --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}}\
-    --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}}\
+    --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}} \
+    --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}} \
     --job-name {{"FHIR-EXPORT"}} \
-    --job-status {{SUBMITTED}}  \
+    --job-status {{SUBMITTED}} \
     --max-results {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
 ```
 Output:
@@ -290,27 +289,24 @@ Output:
 {
     "ExportJobPropertiesList": [
         {
-            "ExportJobProperties": {
-                "OutputDataConfig": {
+            "OutputDataConfig": {
+                "S3Configuration": {
                     "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
-                    "S3Configuration": {
-                        "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
-                        "KmsKeyId": "(KmsKey Id)"
-                    }
-                },
-                "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
-                "JobStatus": "COMPLETED",
-                "JobId": "c145fbb27b192af392f8ce6e7838e34f",
-                "JobName": "FHIR-EXPORT",
-                "SubmitTime": "2024-11-20T11:31:46.672000-05:00",
-                "EndTime": "2024-11-20T11:34:01.636000-05:00",
-                "DatastoreId": "(Data store ID)"
-            }
+                    "KmsKeyId": "(KmsKey Id)"
+                }
+            },
+            "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
+            "JobStatus": "COMPLETED",
+            "JobId": "c145fbb27b192af392f8ce6e7838e34f",
+            "JobName": "FHIR-EXPORT",
+            "SubmitTime": "2024-11-20T11:31:46.672000-05:00",
+            "EndTime": "2024-11-20T11:34:01.636000-05:00",
+            "DatastoreId": "(Data store ID)"
         }
     ]
 }
 ```
-For more information, see [Exporting files from a FHIR data store](https://docs.aws.amazon.com/healthlake/latest/devguide/export-datastore.html) in the AWS HealthLake Developer Guide.
+For more information, see [Listing FHIR export jobs](https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhir-data-list.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [ListFHIRExportJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-fhir-export-jobs.html) in *AWS CLI Command Reference*.
 
 ### `list-fhir-import-jobs`
@@ -328,8 +324,8 @@ aws healthlake list-fhir-import-jobs \
     --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}} \
     --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}} \
     --job-name {{"FHIR-IMPORT"}} \
-    --job-status {{SUBMITTED}}  \
-    {{-max-results}} {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
+    --job-status {{SUBMITTED}} \
+    --max-results {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
 ```
 Output:
 
@@ -348,7 +344,7 @@ Output:
             "JobOutputDataConfig": {
                 "S3Configuration": {
                     "S3Uri": "s3://(Bucket Name)/import/6407b9ae4c2def3cb6f1a46a0c599ec0-FHIR_IMPORT-c0fddbf76f238297632d4aebdbfc9ddf/",
-                    "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/b7f645cb-e564-4981-8672-9e012d1ff1a0"
+                    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 }
             },
             "JobProgressReport": {
@@ -366,7 +362,7 @@ Output:
     ]
 }
 ```
-For more information, see [Importing files to FHIR data store](https://docs.aws.amazon.com/healthlake/latest/devguide/import-examples.html) in the AWS HealthLake Developer Guide.
+For more information, see [Listing FHIR import jobs](https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhir-data-list.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [ListFHIRImportJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-fhir-import-jobs.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -376,23 +372,29 @@ The following code example shows how to use `list-tags-for-resource`.
 
 **AWS CLI**
 **To list tags for a data store**
-The following `list-tags-for-resource` example lists the tags associated with the specified data store.:
+The following `list-tags-for-resource` example lists the tags associated with the specified data store.
 
 ```
 aws healthlake list-tags-for-resource \
-    --resource-arn {{"arn:aws:healthlake:us-east-1:123456789012:datastore/fhir/0725c83f4307f263e16fd56b6d8ebdbe"}}
+    --resource-arn {{"arn:aws:healthlake:us-west-2:123456789012:datastore/fhir/0725c83f4307f263e16fd56b6d8ebdbe"}}
 ```
 Output:
 
 ```
 {
-    "tags": {
-        "key": "value",
-        "key1": "value1"
-    }
+    "Tags": [
+        {
+            "Key": "key",
+            "Value": "value"
+        },
+        {
+            "Key": "key1",
+            "Value": "value1"
+        }
+    ]
 }
 ```
-For more information, see [Tagging resources in AWS HealthLake](https://docs.aws.amazon.com/healthlake/latest/devguide/tagging.html) in the AWS HealthLake Developer Guide.
+For more information, see [Tagging HealthLake data stores](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-tagging.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `start-fhir-export-job`
@@ -406,7 +408,7 @@ The following `start-fhir-export-job` example shows how to start a FHIR export j
 
 ```
 aws healthlake start-fhir-export-job \
-    --output-data-config '{{{"S3Configuration": {"S3Uri":"s3://(Bucket Name)/(Prefix Name)/","KmsKeyId":"arn:aws:kms:us-east-1:012345678910:key/d330e7fc-b56c-4216-a250-f4c43ef46e83"}}}}' \
+    --output-data-config '{{{"S3Configuration": {"S3Uri":"s3://(Bucket Name)/(Prefix Name)/","KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}' \
     --datastore-id {{(Data}} {{store}} {{ID)}} \
     --data-access-role-arn {{arn:aws:iam::(AWS}} {{Account}} {{ID):role/(Role}} {{Name)}}
 ```
@@ -434,7 +436,7 @@ The following `start-fhir-import-job` example shows how to start a FHIR import j
 ```
 aws healthlake start-fhir-import-job \
     --input-data-config S3Uri="s3://(Bucket Name)/(Prefix Name)/" \
-    --job-output-data-config '{{{"S3Configuration": {"S3Uri":"s3://(Bucket Name)/(Prefix Name)/","KmsKeyId":"arn:aws:kms:us-east-1:012345678910:key/d330e7fc-b56c-4216-a250-f4c43ef46e83"}}}}' \
+    --job-output-data-config '{{{"S3Configuration": {"S3Uri":"s3://(Bucket Name)/(Prefix Name)/","KmsKeyId":"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}}}' \
     --datastore-id {{(Data}} {{store}} {{ID)}} \
     --data-access-role-arn {{"arn:aws:iam::(AWS Account ID):role/(Role Name)"}}
 ```
@@ -461,11 +463,11 @@ The following `tag-resource` example shows how to add a tag to a data store.
 
 ```
 aws healthlake tag-resource \
-    --resource-arn {{"arn:aws:healthlake:us-east-1:123456789012:datastore/fhir/0725c83f4307f263e16fd56b6d8ebdbe"}} \
+    --resource-arn {{"arn:aws:healthlake:us-west-2:123456789012:datastore/fhir/0725c83f4307f263e16fd56b6d8ebdbe"}} \
     --tags '{{[{"Key": "key1", "Value": "value1"}]}}'
 ```
 This command produces no output.
-For more information, see [Adding a tag to a data store](https://docs.aws.amazon.com/healthlake/latest/devguide/add-a-tag.html) in the *AWS HealthLake Developer Guide.*.
+For more information, see [Tagging HealthLake data stores](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-tagging.html#tagresource) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -479,7 +481,7 @@ The following `untag-resource` example shows how to remove tags from a data stor
 
 ```
 aws healthlake untag-resource \
-    --resource-arn {{"arn:aws:healthlake:us-east-1:123456789012:datastore/fhir/b91723d65c6fdeb1d26543a49d2ed1fa"}} \
+    --resource-arn {{"arn:aws:healthlake:us-west-2:123456789012:datastore/fhir/b91723d65c6fdeb1d26543a49d2ed1fa"}} \
     --tag-keys '{{["key1"]}}'
 ```
 This command produces no output.

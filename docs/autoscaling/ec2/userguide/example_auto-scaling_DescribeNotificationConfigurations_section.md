@@ -12,7 +12,7 @@ The following code examples show how to use `DescribeNotificationConfigurations`
 
 **AWS CLI**
 **Example 1: To describe the notification configurations of a specified group**
-This example describes the notification configurations for the specified Auto Scaling group.
+The following `describe-notification-configurations` example describes the notification configurations for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-notification-configurations \
@@ -37,8 +37,8 @@ Output:
 }
 ```
 For more information, see [Getting Amazon SNS notifications when your Auto Scaling group scales](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ASGettingNotifications.html) in the *Amazon EC2 Auto Scaling User Guide*.
-**Example 1: To describe a specified number of notification configurations**
-To return a specific number of notification configurations, use the `max-items` parameter.
+**Example 2: To describe a specified number of notification configurations**
+The following `describe-notification-configurations` example uses the `--max-items` option to return a specific number of notification configurations.
 
 ```
 aws autoscaling describe-notification-configurations \

@@ -26,7 +26,7 @@ The following code example shows how to use `batch-get-item`.
 
 **AWS CLI**
 **To retrieve multiple items from a table**
-The following `batch-get-items` example reads multiple items from the `MusicCollection` table using a batch of three `GetItem` requests, and requests the number of read capacity units consumed by the operation. The command returns only the `AlbumTitle` attribute.
+The following `batch-get-item` example reads multiple items from the `MusicCollection` table using a batch of three `GetItem` requests, and requests the number of read capacity units consumed by the operation. The command returns only the `AlbumTitle` attribute.
 
 ```
 aws dynamodb batch-get-item \
@@ -219,7 +219,7 @@ Output:
     }
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [CreateBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/create-backup.html) in *AWS CLI Command Reference*.
 
 ### `create-global-table`
@@ -319,7 +319,7 @@ Output:
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To create a table in On-Demand Mode**
-The following example creates a table called `MusicCollection` using on-demand mode, rather than provisioned throughput mode. This is useful for tables with unpredictable workloads.
+The following `create-table` example creates a table called `MusicCollection` using on-demand mode, rather than provisioned throughput mode. This is useful for tables with unpredictable workloads.
 
 ```
 aws dynamodb create-table \
@@ -373,7 +373,7 @@ Output:
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To create a table and encrypt it with a Customer Managed CMK**
-The following example creates a table named `MusicCollection` and encrypts it using a customer managed CMK.
+The following `create-table` example creates a table named `MusicCollection` and encrypts it using a customer managed CMK.
 
 ```
 aws dynamodb create-table \
@@ -381,7 +381,7 @@ aws dynamodb create-table \
     --attribute-definitions {{AttributeName=Artist,AttributeType=S}} {{AttributeName=SongTitle,AttributeType=S}} \
     --key-schema {{AttributeName=Artist,KeyType=HASH}} {{AttributeName=SongTitle,KeyType=RANGE}} \
     --provisioned-throughput {{ReadCapacityUnits=5,WriteCapacityUnits=5}} \
-    --sse-specification {{Enabled=true,SSEType=KMS,KMSMasterKeyId=abcd1234-abcd-1234-a123-ab1234a1b234}}
+    --sse-specification {{Enabled=true,SSEType=KMS,KMSMasterKeyId=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -423,14 +423,14 @@ Output:
         "SSEDescription": {
             "Status": "ENABLED",
             "SSEType": "KMS",
-            "KMSMasterKeyArn": "arn:aws:kms:us-west-2:123456789012:key/abcd1234-abcd-1234-a123-ab1234a1b234"
+            "KMSMasterKeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     }
 }
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To create a table with a Local Secondary Index**
-The following example uses the specified attributes and key schema to create a table named `MusicCollection` with a Local Secondary Index named `AlbumTitleIndex`.
+The following `create-table` example uses the specified attributes and key schema to create a table named `MusicCollection` with a Local Secondary Index named `AlbumTitleIndex`.
 
 ```
 aws dynamodb create-table \
@@ -438,8 +438,7 @@ aws dynamodb create-table \
     --attribute-definitions {{AttributeName=Artist,AttributeType=S}} {{AttributeName=SongTitle,AttributeType=S}} {{AttributeName=AlbumTitle,AttributeType=S}} \
     --key-schema {{AttributeName=Artist,KeyType=HASH}} {{AttributeName=SongTitle,KeyType=RANGE}} \
     --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
-    --local-secondary-indexes \
-        "[
+    --local-secondary-indexes "[
             {
                 \"IndexName\": \"AlbumTitleIndex\",
                 \"KeySchema\": [
@@ -524,17 +523,15 @@ Output:
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 5: To create a table with a Global Secondary Index**
-The following example creates a table named `GameScores` with a Global Secondary Index called `GameTitleIndex`. The base table has a partition key of `UserId` and a sort key of `GameTitle`, allowing you to find an individual user's best score for a specific game efficiently, whereas the GSI has a partition key of `GameTitle` and a sort key of `TopScore`, allowing you to quickly find the overall highest score for a particular game.
+The following `create-table` example creates a table named `GameScores` with a Global Secondary Index called `GameTitleIndex`. The base table has a partition key of `UserId` and a sort key of `GameTitle`, allowing you to find an individual user's best score for a specific game efficiently, whereas the GSI has a partition key of `GameTitle` and a sort key of `TopScore`, allowing you to quickly find the overall highest score for a particular game.
 
 ```
 aws dynamodb create-table \
     --table-name {{GameScores}} \
     --attribute-definitions {{AttributeName=UserId,AttributeType=S}} {{AttributeName=GameTitle,AttributeType=S}} {{AttributeName=TopScore,AttributeType=N}} \
-    --key-schema {{AttributeName=UserId,KeyType=HASH}} \
-                {{AttributeName=GameTitle,KeyType=RANGE}} \
+    --key-schema {{AttributeName=UserId,KeyType=HASH}} {{AttributeName=GameTitle,KeyType=RANGE}} \
     --provisioned-throughput {{ReadCapacityUnits=10,WriteCapacityUnits=5}} \
-    --global-secondary-indexes \
-        "[
+    --global-secondary-indexes "[
             {
                 \"IndexName\": \"GameTitleIndex\",
                 \"KeySchema\": [
@@ -628,7 +625,7 @@ Output:
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 6: To create a table with multiple Global Secondary Indexes at once**
-The following example creates a table named `GameScores` with two Global Secondary Indexes. The GSI schemas are passed via a file, rather than on the command line.
+The following `create-table` example creates a table named `GameScores` with two Global Secondary Indexes. The GSI schemas are passed via a file, rather than on the command line.
 
 ```
 aws dynamodb create-table \
@@ -786,7 +783,7 @@ Output:
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 7: To create a table with Streams enabled**
-The following example creates a table called `GameScores` with DynamoDB Streams enabled. Both new and old images of each item will be written to the stream.
+The following `create-table` example creates a table called `GameScores` with DynamoDB Streams enabled. Both new and old images of each item will be written to the stream.
 
 ```
 aws dynamodb create-table \
@@ -844,7 +841,7 @@ Output:
 ```
 For more information, see [Basic Operations for Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 8: To create a table with Keys-Only Stream enabled**
-The following example creates a table called `GameScores` with DynamoDB Streams enabled. Only the key attributes of modified items are written to the stream.
+The following `create-table` example creates a table called `GameScores` with DynamoDB Streams enabled. Only the key attributes of modified items are written to the stream.
 
 ```
 aws dynamodb create-table \
@@ -903,7 +900,7 @@ Output:
 ```
 For more information, see [Change data capture for DynamoDB Streams](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 9: To create a table with the Standard Infrequent Access class**
-The following example creates a table called `GameScores` and assigns the Standard-Infrequent Access (DynamoDB Standard-IA) table class. This table class is optimized for storage being the dominant cost.
+The following `create-table` example creates a table called `GameScores` and assigns the Standard-Infrequent Access (DynamoDB Standard-IA) table class. This table class is optimized for storage being the dominant cost.
 
 ```
 aws dynamodb create-table \
@@ -959,7 +956,7 @@ Output:
 ```
 For more information, see [Table classes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.TableClasses.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 10: To Create a table with Delete Protection enabled**
-The following example creates a table called `GameScores` and enables deletion protection.
+The following `create-table` example creates a table called `GameScores` and enables deletion protection.
 
 ```
 aws dynamodb create-table \
@@ -1041,7 +1038,7 @@ Output:
         },
         "SourceTableDetails": {
             "TableName": "MusicCollection",
-            "TableId": "b0c04bcc-309b-4352-b2ae-9088af169fe2",
+            "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection",
             "TableSizeBytes": 0,
             "KeySchema": [
@@ -1066,7 +1063,7 @@ Output:
     }
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [DeleteBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/delete-backup.html) in *AWS CLI Command Reference*.
 
 ### `delete-item`
@@ -1128,7 +1125,7 @@ Output:
 ```
 For more information, see [Writing an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.WritingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To delete an item conditionally**
-The following example deletes an item from the `ProductCatalog` table only if its `ProductCategory` is either `Sporting Goods` or `Gardening Supplies` and its price is between 500 and 600. It returns details about the item that was deleted.
+The following `delete-item` example deletes an item from the `ProductCatalog` table only if its `ProductCategory` is either `Sporting Goods` or `Gardening Supplies` and its price is between 500 and 600. It returns details about the item that was deleted.
 
 ```
 aws dynamodb delete-item \
@@ -1237,7 +1234,7 @@ Output:
         },
         "SourceTableDetails": {
             "TableName": "MusicCollection",
-            "TableId": "b0c04bcc-309b-4352-b2ae-9088af169fe2",
+            "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection",
             "TableSizeBytes": 0,
             "KeySchema": [
@@ -1262,7 +1259,7 @@ Output:
     }
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [DescribeBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/describe-backup.html) in *AWS CLI Command Reference*.
 
 ### `describe-continuous-backups`
@@ -1290,7 +1287,7 @@ Output:
     }
 }
 ```
-For more information, see [Point-in-Time Recovery for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Point-in-time backups for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Point-in-time-recovery.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [DescribeContinuousBackups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/describe-continuous-backups.html) in *AWS CLI Command Reference*.
 
 ### `describe-contributor-insights`
@@ -1350,7 +1347,7 @@ Output:
     ]
 }
 ```
-For more information, see [Amazon DynamoDB Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/ddb.html) in the *AWS General Reference*.
+For more information, see [Amazon DynamoDB endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ddb.html) in the *AWS General Reference* and [Endpoint discovery](https://docs.aws.amazon.com/sdkref/latest/guide/feature-endpoint-discovery.html) in the *AWS SDKs and Tools Reference Guide*.
 +  For API details, see [DescribeEndpoints](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/describe-endpoints.html) in *AWS CLI Command Reference*.
 
 ### `describe-global-table-settings`
@@ -1679,7 +1676,7 @@ Output:
 ```
 For more information, see [Reading an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ReadingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To read an item using a consistent read**
-The following example retrieves an item from the `MusicCollection` table using strongly consistent reads.
+The following `get-item` example retrieves an item from the `MusicCollection` table using strongly consistent reads.
 
 ```
 aws dynamodb get-item \
@@ -1719,7 +1716,7 @@ Output:
 ```
 For more information, see [Reading an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ReadingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To retrieve specific attributes of an item**
-The following example uses a projection expression to retrieve only three attributes of the desired item.
+The following `get-item` example uses a projection expression to retrieve only three attributes of the desired item.
 
 ```
 aws dynamodb get-item \
@@ -1799,9 +1796,9 @@ Output:
     ]
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To list user-created backups in a specific time range**
-The following example lists only backups of the `MusicCollection` table that were created by the user (not those automatically created by DynamoDB) with a creation date between January 1, 2020 and March 1, 2020.
+The following `list-backups` example lists only backups of the `MusicCollection` table that were created by the user (not those automatically created by DynamoDB) with a creation date between January 1, 2020 and March 1, 2020.
 
 ```
 aws dynamodb list-backups \
@@ -1829,9 +1826,9 @@ Output:
     ]
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To limit page size**
-The following example returns a list of all existing backups, but retrieves only one item in each call, performing multiple calls if necessary to get the entire list. Limiting the page size is useful when running list commands on a large number of resources, which can result in a "timed out" error when using the default page size of 1000.
+The following `list-backups` example returns a list of all existing backups, but retrieves only one item in each call, performing multiple calls if necessary to get the entire list. Limiting the page size is useful when running list commands on a large number of resources, which can result in a "timed out" error when using the default page size of 1000.
 
 ```
 aws dynamodb list-backups \
@@ -1867,9 +1864,9 @@ Output:
     ]
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To limit the number of items returned**
-The following example limits the number of items returned to 1. The response includes a `NextToken` value with which to retrieve the next page of results.
+The following `list-backups` example limits the number of items returned to 1. The response includes a `NextToken` value with which to retrieve the next page of results.
 
 ```
 aws dynamodb list-backups \
@@ -1895,15 +1892,15 @@ Output:
     "NextToken": "abCDeFGhiJKlmnOPqrSTuvwxYZ1aBCdEFghijK7LM51nOpqRSTuv3WxY3ZabC5dEFGhI2Jk3LmnoPQ6RST9"
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 5: To retrieve the next page of results**
-The following command uses the `NextToken` value from a previous call to the `list-backups` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
+The following `list-backups` example uses the `NextToken` value from a previous call to the `list-backups` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
 
 ```
 aws dynamodb list-backups \
     --starting-token {{abCDeFGhiJKlmnOPqrSTuvwxYZ1aBCdEFghijK7LM51nOpqRSTuv3WxY3ZabC5dEFGhI2Jk3LmnoPQ6RST9}}
 ```
-Output
+Output:
 
 ```
 {
@@ -1922,7 +1919,7 @@ Output
     ]
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [ListBackups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/list-backups.html) in *AWS CLI Command Reference*.
 
 ### `list-contributor-insights`
@@ -1968,7 +1965,7 @@ Output:
 ```
 For more information, see [Analyzing Data Access Using CloudWatch Contributor Insights for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To limit the number of items returned**
-The following example limits the number of items returned to 4. The response includes a `NextToken` value with which to retrieve the next page of results.
+The following `list-contributor-insights` example limits the number of items returned to 4. The response includes a `NextToken` value with which to retrieve the next page of results.
 
 ```
 aws dynamodb list-contributor-insights \
@@ -1998,7 +1995,7 @@ Output:
 ```
 For more information, see [Analyzing Data Access Using CloudWatch Contributor Insights for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To retrieve the next page of results**
-The following command uses the `NextToken` value from a previous call to the `list-contributor-insights` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
+The following `list-contributor-insights` example uses the `NextToken` value from a previous call to the `list-contributor-insights` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
 
 ```
 aws dynamodb list-contributor-insights \
@@ -2084,7 +2081,7 @@ Output:
 ```
 For more information, see [Listing Table Names](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.ListTables) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To limit page size**
-The following example returns a list of all existing tables, but retrieves only one item in each call, performing multiple calls if necessary to get the entire list. Limiting the page size is useful when running list commands on a large number of resources, which can result in a "timed out" error when using the default page size of 1000.
+The following `list-tables` example returns a list of all existing tables, but retrieves only one item in each call, performing multiple calls if necessary to get the entire list. Limiting the page size is useful when running list commands on a large number of resources, which can result in a "timed out" error when using the default page size of 1000.
 
 ```
 aws dynamodb list-tables \
@@ -2104,7 +2101,7 @@ Output:
 ```
 For more information, see [Listing Table Names](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.ListTables) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To limit the number of items returned**
-The following example limits the number of items returned to 2. The response includes a `NextToken` value with which to retrieve the next page of results.
+The following `list-tables` example limits the number of items returned to 2. The response includes a `NextToken` value with which to retrieve the next page of results.
 
 ```
 aws dynamodb list-tables \
@@ -2123,7 +2120,7 @@ Output:
 ```
 For more information, see [Listing Table Names](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.ListTables) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To retrieve the next page of results**
-The following command uses the `NextToken` value from a previous call to the `list-tables` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
+The following `list-tables` example uses the `NextToken` value from a previous call to the `list-tables` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
 
 ```
 aws dynamodb list-tables \
@@ -2173,7 +2170,7 @@ Output:
 ```
 For more information, see [Tagging for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To limit the number of tags returned**
-The following example limits the number of tags returned to 1. The response includes a `NextToken` value with which to retrieve the next page of results.
+The following `list-tags-of-resource` example limits the number of tags returned to 1. The response includes a `NextToken` value with which to retrieve the next page of results.
 
 ```
 aws dynamodb list-tags-of-resource \
@@ -2195,7 +2192,7 @@ Output:
 ```
 For more information, see [Tagging for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To retrieve the next page of results**
-The following command uses the `NextToken` value from a previous call to the `list-tags-of-resource` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
+The following `list-tags-of-resource` example uses the `NextToken` value from a previous call to the `list-tags-of-resource` command to retrieve another page of results. Since the response in this case does not include a `NextToken` value, we know that we have reached the end of the results.
 
 ```
 aws dynamodb list-tags-of-resource \
@@ -2356,7 +2353,9 @@ Output:
         {
             "SongTitle": {
                 "S": "Call Me Today"
-            },
+            }
+        },
+        {
             "SongTitle": {
                 "S": "Scared of My Shadow"
             }
@@ -2372,7 +2371,7 @@ Output:
 ```
 For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To query a table using strongly consistent reads and traverse the index in descending order**
-The following example performs the same query as the first example, but returns results in reverse order and uses strongly consistent reads.
+The following `query` example performs the same query as the first example, but returns results in reverse order and uses strongly consistent reads.
 
 ```
 aws dynamodb query \
@@ -2417,7 +2416,7 @@ Output:
 ```
 For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To filter out specific results**
-The following example queries the `MusicCollection` but excludes results with specific values in the `AlbumTitle` attribute. Note that this does not affect the `ScannedCount` or `ConsumedCapacity`, because the filter is applied after the items have been read.
+The following `query` example queries the `MusicCollection` but excludes results with specific values in the `AlbumTitle` attribute. Note that this does not affect the `ScannedCount` or `ConsumedCapacity`, because the filter is applied after the items have been read.
 
 ```
 aws dynamodb query \
@@ -2472,7 +2471,7 @@ Output:
 ```
 For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To retrieve only an item count**
-The following example retrieves a count of items matching the query, but does not retrieve any of the items themselves.
+The following `query` example retrieves a count of items matching the query, but does not retrieve any of the items themselves.
 
 ```
 aws dynamodb query \
@@ -2499,7 +2498,7 @@ Output:
 ```
 For more information, see [Working with Queries in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 5: To query an index**
-The following example queries the local secondary index `AlbumTitleIndex`. The query returns all attributes from the base table that have been projected into the local secondary index. Note that when querying a local secondary index or global secondary index, you must also provide the name of the base table using the `table-name` parameter.
+The following `query` example queries the local secondary index `AlbumTitleIndex`. The query returns all attributes from the base table that have been projected into the local secondary index. Note that when querying a local secondary index or global secondary index, you must also provide the name of the base table using the `table-name` parameter.
 
 ```
 aws dynamodb query \
@@ -2614,7 +2613,7 @@ Output:
         "TableSizeBytes": 0,
         "ItemCount": 0,
         "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection2",
-        "TableId": "114865c9-5ef3-496c-b4d1-c4cbdd2d44fb",
+        "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "BillingModeSummary": {
             "BillingMode": "PROVISIONED"
         },
@@ -2627,7 +2626,7 @@ Output:
     }
 }
 ```
-For more information, see [On-Demand Backup and Restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Backup and restore for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [RestoreTableFromBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/restore-table-from-backup.html) in *AWS CLI Command Reference*.
 
 ### `restore-table-to-point-in-time`
@@ -2681,7 +2680,7 @@ Output:
         "TableSizeBytes": 0,
         "ItemCount": 0,
         "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollectionRestore",
-        "TableId": "befd9e0e-1843-4dc6-a147-d6d00e85cb1f",
+        "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "BillingModeSummary": {
             "BillingMode": "PROVISIONED"
         },
@@ -2693,7 +2692,7 @@ Output:
     }
 }
 ```
-For more information, see [Point-in-Time Recovery for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Point-in-time backups for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Point-in-time-recovery.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [RestoreTableToPointInTime](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/restore-table-to-point-in-time.html) in *AWS CLI Command Reference*.
 
 ### `scan`
@@ -2873,7 +2872,7 @@ aws dynamodb transact-write-items \
     --return-consumed-capacity {{TOTAL}} \
     --return-item-collection-metrics {{SIZE}}
 ```
-Contents of the `transact-items.json` file:
+Contents of `transact-items.json`:
 
 ```
 [
@@ -2944,14 +2943,14 @@ Output:
 ```
 For more information, see [Managing Complex Workflows with DynamoDB Transactions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To write items atomically using a client request token**
-The following command uses a client request token to make the call to `transact-write-items` idempotent, meaning that multiple calls have the same effect as one single call.
+The following `transact-write-items` example uses a client request token to make the call to `transact-write-items` idempotent, meaning that multiple calls have the same effect as one single call.
 
 ```
 aws dynamodb transact-write-items \
     --transact-items {{file://transact-items.json}} \
     --client-request-token {{abc123}}
 ```
-Contents of the `transact-items.json` file:
+Contents of `transact-items.json`:
 
 ```
 [
@@ -3031,7 +3030,7 @@ Output:
     }
 }
 ```
-For more information, see [Point-in-Time Recovery for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery.html) in the *Amazon DynamoDB Developer Guide*.
+For more information, see [Point-in-time backups for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Point-in-time-recovery.html) in the *Amazon DynamoDB Developer Guide*.
 +  For API details, see [UpdateContinuousBackups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/update-continuous-backups.html) in *AWS CLI Command Reference*.
 
 ### `update-contributor-insights`
@@ -3246,7 +3245,7 @@ Output:
 ```
 For more information, see [Writing an Item](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.WritingData) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To update an item conditionally**
-The following example updates an item in the `MusicCollection` table, but only if the existing item does not already have a `Year` attribute.
+The following `update-item` example updates an item in the `MusicCollection` table, but only if the existing item does not already have a `Year` attribute.
 
 ```
 aws dynamodb update-item \
@@ -3281,7 +3280,7 @@ Contents of `expression-attribute-values.json`:
     ":t":{"S": "Louder Than Ever"}
 }
 ```
-If the item already has a `Year` attribute, DynamoDB returns the following output.
+This command produces no output. DynamoDB updates the item only if it does not already have a `Year` attribute. If the item already has a `Year` attribute, the command fails with the following error.
 
 ```
 An error occurred (ConditionalCheckFailedException) when calling the UpdateItem operation: The conditional request failed
@@ -3482,7 +3481,7 @@ Output:
         "TableSizeBytes": 182,
         "ItemCount": 2,
         "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection",
-        "TableId": "abcd0123-01ab-23cd-0123-abcdef123456",
+        "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "BillingModeSummary": {
             "BillingMode": "PROVISIONED",
             "LastUpdateToPayPerRequestDateTime": "2020-07-28T13:14:48.366000-07:00"
@@ -3492,7 +3491,7 @@ Output:
 ```
 For more information, see [Updating a Table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.UpdateTable) in the *Amazon DynamoDB Developer Guide*.
 **Example 2: To create a global secondary index**
-The following example adds a global secondary index to the `MusicCollection` table.
+The following `update-table` example adds a global secondary index to the `MusicCollection` table.
 
 ```
 aws dynamodb update-table \
@@ -3565,7 +3564,7 @@ Output:
         "TableSizeBytes": 182,
         "ItemCount": 2,
         "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection",
-        "TableId": "abcd0123-01ab-23cd-0123-abcdef123456",
+        "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "BillingModeSummary": {
             "BillingMode": "PROVISIONED",
             "LastUpdateToPayPerRequestDateTime": "2020-07-28T13:14:48.366000-07:00"
@@ -3599,7 +3598,7 @@ Output:
 ```
 For more information, see [Updating a Table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.UpdateTable) in the *Amazon DynamoDB Developer Guide*.
 **Example 3: To enable DynamoDB Streams on a table**
-The following command enables DynamoDB Streams on the `MusicCollection` table.
+The following `update-table` example enables DynamoDB Streams on the `MusicCollection` table.
 
 ```
 aws dynamodb update-table \
@@ -3647,7 +3646,7 @@ Output:
         "TableSizeBytes": 182,
         "ItemCount": 2,
         "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection",
-        "TableId": "abcd0123-01ab-23cd-0123-abcdef123456",
+        "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "BillingModeSummary": {
             "BillingMode": "PROVISIONED",
             "LastUpdateToPayPerRequestDateTime": "2020-07-28T13:14:48.366000-07:00"
@@ -3711,7 +3710,7 @@ Output:
 ```
 For more information, see [Updating a Table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html#WorkingWithTables.Basics.UpdateTable) in the *Amazon DynamoDB Developer Guide*.
 **Example 4: To enable server-side encryption**
-The following example enables server-side encryption on the `MusicCollection` table.
+The following `update-table` example enables server-side encryption on the `MusicCollection` table.
 
 ```
 aws dynamodb update-table \
@@ -3759,7 +3758,7 @@ Output:
         "TableSizeBytes": 182,
         "ItemCount": 2,
         "TableArn": "arn:aws:dynamodb:us-west-2:123456789012:table/MusicCollection",
-        "TableId": "abcd0123-01ab-23cd-0123-abcdef123456",
+        "TableId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "BillingModeSummary": {
             "BillingMode": "PROVISIONED",
             "LastUpdateToPayPerRequestDateTime": "2020-07-28T13:14:48.366000-07:00"

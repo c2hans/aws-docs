@@ -13,20 +13,26 @@ The following code examples show how to use `CreateLoadBalancerListeners`.
 #### [ CLI ]
 
 **AWS CLI**
-**To create HTTP listeners for a load balancer**
-This example creates a listener for your load balancer at port 80 using the HTTP protocol.
-Command:
+**Example 1: To create HTTP listeners for a load balancer**
+The following `create-load-balancer-listeners` example creates a listener for your load balancer at port 80 using the HTTP protocol.
 
 ```
-aws elb create-load-balancer-listeners --load-balancer-name {{my-load-balancer}} --listeners {{"Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=80"}}
+aws elb create-load-balancer-listeners \
+    --load-balancer-name {{my-load-balancer}} \
+    --listeners {{"Protocol=HTTP,LoadBalancerPort=80,InstanceProtocol=HTTP,InstancePort=80"}}
 ```
-**To create HTTPS listeners for a load balancer**
-This example creates a listener for your load balancer at port 443 using the HTTPS protocol.
-Command:
+This command produces no output.
+For more information, see [Listeners for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html) in the *Classic Load Balancers User Guide*.
+**Example 2: To create HTTPS listeners for a load balancer**
+The following `create-load-balancer-listeners` example creates a listener for your load balancer at port 443 using the HTTPS protocol.
 
 ```
-aws elb create-load-balancer-listeners --load-balancer-name {{my-load-balancer}} --listeners {{"Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=80"}}
+aws elb create-load-balancer-listeners \
+    --load-balancer-name {{my-load-balancer}} \
+    --listeners {{"Protocol=HTTPS,LoadBalancerPort=443,InstanceProtocol=HTTP,InstancePort=80"}}
 ```
+This command produces no output.
+For more information, see [Configure an HTTPS listener for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-add-or-delete-listeners.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [CreateLoadBalancerListeners](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/create-load-balancer-listeners.html) in *AWS CLI Command Reference*.
 
 ------

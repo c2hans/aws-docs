@@ -12,7 +12,7 @@ The following code examples show how to use `DeleteScheduledAction`.
 
 **AWS CLI**
 **To delete a scheduled action**
-The following `delete-scheduled-action` example deletes the specified scheduled action from the specified Amazon AppStream 2.0 fleet:
+The following `delete-scheduled-action` example deletes the specified scheduled action from the specified Amazon AppStream 2.0 fleet.
 
 ```
 aws application-autoscaling delete-scheduled-action \

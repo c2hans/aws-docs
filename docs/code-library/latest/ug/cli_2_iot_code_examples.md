@@ -32,7 +32,7 @@ The following `accept-certificate-transfer` example accepts a device certificate
 aws iot accept-certificate-transfer \
     --certificate-id {{488b6a7f2acdeb00a77384e63c4e40b18bEXAMPLEe57b7272ba44c45e3448142}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Transfer a certificate to another account](https://docs.aws.amazon.com/iot/latest/developerguide/transfer-cert.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [AcceptCertificateTransfer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/accept-certificate-transfer.html) in *AWS CLI Command Reference*.
 
@@ -121,7 +121,7 @@ aws iot attach-policy \
     --target {{"arn:aws:iot:us-west-2:123456789012:thinggroup/LightBulbs"}} \
     --policy-name {{"UpdateDeviceCertPolicy"}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Thing Groups](https://docs.aws.amazon.com/iot/latest/developerguide/thing-groups.html) in the *AWS IoT Developers Guide*.
 **Example 2: To attach a policy to a certificate**
 The following `attach-policy` example attaches the policy `UpdateDeviceCertPolicy` to the principal specified by a certificate.
@@ -131,7 +131,7 @@ aws iot attach-policy \
     --policy-name {{UpdateDeviceCertPolicy}} \
     --target {{"arn:aws:iot:us-west-2:123456789012:cert/4f0ba725787aa94d67d2fca420eca022242532e8b3c58e7465c7778b443fd65e"}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Attach an AWS IoT Policy to a Device Certificate](https://docs.aws.amazon.com/iot/latest/developerguide/attach-policy-to-certificate.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [AttachPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/attach-policy.html) in *AWS CLI Command Reference*.
 
@@ -178,14 +178,14 @@ The following code example shows how to use `cancel-audit-mitigation-actions-tas
 
 **AWS CLI**
 **To cancel an audit mitigation actions task**
-The following `cancel-audit-mitigations-action-task` example cancels the application of mitigation actions for the specified task. You cannot cancel tasks that are already completed.
+The following `cancel-audit-mitigation-actions-task` example cancels the application of mitigation actions for the specified task. You cannot cancel tasks that are already completed.
 
 ```
-aws iot cancel-audit-mitigation-actions-task
+aws iot cancel-audit-mitigation-actions-task \
     --task-id {{"myActionsTaskId"}}
 ```
 This command produces no output.
-For more information, see [CancelAuditMitigationActionsTask (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-CancelAuditMitigationActionsTask) in the *AWS IoT Developer Guide*.
+For more information, see [CancelAuditMitigationActionsTask (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CancelAuditMitigationActionsTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/cancel-audit-mitigation-actions-task.html) in *AWS CLI Command Reference*.
 
 ### `cancel-audit-task`
@@ -278,7 +278,7 @@ The following `clear-default-authorizer` example clears the currently configured
 aws iot clear-default-authorizer
 ```
 This command produces no output.
-For more information, see [ClearDefaultAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_ClearDefaultAuthorizer.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [ClearDefaultAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/clear-default-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `confirm-topic-rule-destination`
@@ -295,7 +295,7 @@ aws iot confirm-topic-rule-destination \
     --confirmation-token {{"AYADeIcmtq-ZkxfpiWIQqHWM5ucAXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREFxY1E0UmlGeDg0V21BZWZ1VjZtZWFRVUJJUktUYXJaN09OZlJOczJhRENSZmZYL3JHZC9PR3NNcis5T3ZlSitnQT09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo5ODc5NTE4NTI0OTk6a2V5L2U4YmU3ODViLTU5NWMtNDcxYi1iOWJmLWQ2Y2I4ZjQxODlmNwC4AQIBAHhwz48UWTGWE1ua0P8U1hj27nsFzEaAdf6Hs2K_7wBheAF62zwMuk_A4dPiC6eyPGuMAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM9vtRMpf9D3CiZ8sMAgEQgDuFd0Txy-aywpPqg8YEsa1lD4B40aJ2s1wEHKMybiF1RoOZzYisI0IvslzQY5UmCkqq3tV-3f7-nKfosgIAAAAADAAAEAAAAAAAAAAAAAAAAAAi9RMgy-V19V9m6Iw2xfbw_____wAAAAEAAAAAAAAAAAAAAAEAAAB1hw4SokgUcxiJ3gTO6n50NLJVpzyQR1UmPIj5sShqXEQGcOsWmXzpYOOx_PWyPVNsIFHApyK7Cc3g4bW8VaLVwOLkC83g6YaZAh7dFEl2-iufgrzTePl8RZYOWr0O6Aj9DiVzJZx-1iD6Pu-G6PUw1kaO7Knzs2B4AD0qfrHUF4pYRTvyUgBnMGUCMQC8ZRmhKqntd_c6Kgrow3bMUDBvNqo2qZr8Z8Jm2rzgseROlAnLgFLGpGShr99oSZkCMEd1v62NBRKX9HQXnybyF3fkg__-PIetJ803Z4IlIlF8xXlcdPGP-PV1dOXFemyL8g"}}
 ```
 This command produces no output.
-For more information, see [Confirming a topic rule destination](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html#confirm-destination) in the *AWS IoT Developer Guide*.
+For more information, see [Confirming HTTP action destinations](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html#http-action-destination-confirming) in the *AWS IoT Developer Guide*.
 +  For API details, see [ConfirmTopicRuleDestination](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/confirm-topic-rule-destination.html) in *AWS CLI Command Reference*.
 
 ### `create-audit-suppression`
@@ -351,7 +351,7 @@ Output:
     "authorizerArn": "arn:aws:iot:us-west-2:123456789012:authorizer/CustomAuthorizer2"
 }
 ```
-For more information, see [CreateAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateAuthorizer.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `create-billing-group`
@@ -373,7 +373,7 @@ Output:
 {
     "billingGroupName": "GroupOne",
     "billingGroupArn": "arn:aws:iot:us-west-2:123456789012:billinggroup/GroupOne",
-    "billingGroupId": "103de383-114b-4f51-8266-18f209ef5562"
+    "billingGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Billing Groups](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot-billing-groups.html) in the *AWS IoT Developers Guide*.
@@ -392,6 +392,13 @@ The following `create-certificate-from-csr` example creates a device certificate
 aws iot create-certificate-from-csr \
     --certificate-signing-request=file://certificate.csr
 ```
+Contents of `certificate.csr`:
+
+```
+-----BEGIN CERTIFICATE REQUEST-----
+MIICvDCCAaQCAQAwdzELMAkGA1UEBhMCVVMxEXAMPLE...
+-----END CERTIFICATE REQUEST-----
+```
 Output:
 
 ```
@@ -401,7 +408,7 @@ Output:
         "certificatePem": "<certificate-text>"
 }
 ```
-For more information, see [CreateCertificateFromCSR](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html) in the *AWS IoT API Reference*.
+For more information, see [Create AWS IoT client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-create.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateCertificateFromCsr](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-certificate-from-csr.html) in *AWS CLI Command Reference*.
 
 ### `create-custom-metric`
@@ -418,15 +425,14 @@ aws iot create-custom-metric \
     --metric-name {{"batteryPercentage"}} \
     --metric-type {{"number"}} \
     --display-name {{"Remaining battery percentage."}} \
-    --region {{us-east-1}} \
-    --client-request-token {{"02ccb92b-33e8-4dfa-a0c1-35b181ed26b0"}}
+    --client-request-token {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
     "metricName": "batteryPercentage",
-    "metricArn": "arn:aws:iot:us-east-1:1234564789012:custommetric/batteryPercentage"
+    "metricArn": "arn:aws:iot:us-west-2:1234564789012:custommetric/batteryPercentage"
 }
 ```
 For more information, see [Custom metrics](https://docs.aws.amazon.com/iot/latest/developerguide/dd-detect-custom-metrics.html) in the *AWS IoT Core Developer Guide*.
@@ -439,7 +445,7 @@ The following code example shows how to use `create-dimension`.
 
 **AWS CLI**
 **To create a dimension**
-The following `create-dimension` creates a dimension with a single topic filter called `TopicFilterForAuthMessages`.
+The following `create-dimension` example creates a dimension with a single topic filter called `TopicFilterForAuthMessages`.
 
 ```
 aws iot create-dimension \
@@ -452,7 +458,7 @@ Output:
 ```
 {
     "name": "TopicFilterForAuthMessages",
-    "arn": "arn:aws:iot:eu-west-2:123456789012:dimension/TopicFilterForAuthMessages"
+    "arn": "arn:aws:iot:us-west-2:123456789012:dimension/TopicFilterForAuthMessages"
 }
 ```
 For more information, see [Detect Commands](https://docs.aws.amazon.com/iot/latest/developerguide/DetectCommands.html) in the *AWS IoT Developer Guide*.
@@ -503,7 +509,7 @@ Output:
 {
     "thingGroupName": "RoomTooWarm",
     "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/RoomTooWarm",
-    "thingGroupId": "9d52492a-fc87-43f4-b6e2-e571d2ffcad1",
+    "thingGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "indexName": "AWS_Things",
     "queryString": "attributes.temperature>60",
     "queryVersion": "2017-09-30"
@@ -528,6 +534,14 @@ aws iot create-job \
     --document {{file://example-job.json}} \
     --description {{"example job test"}} \
     --target-selection {{SNAPSHOT}}
+```
+Contents of `example-job.json`:
+
+```
+{
+    "operation": "customJob",
+    "otherInfo": "someValue"
+}
 ```
 Output:
 
@@ -560,7 +574,7 @@ The following code example shows how to use `create-keys-and-certificate`.
 
 **AWS CLI**
 **To create an RSA key pair and issue an X.509 certificate**
-The following `create-keys-and-certificate` creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key. Because this is the only time that AWS IoT provides the private key for this certificate, be sure to keep it in a secure location.
+The following `create-keys-and-certificate` example creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key. Because this is the only time that AWS IoT provides the private key for this certificate, be sure to keep it in a secure location.
 
 ```
 aws iot create-keys-and-certificate \
@@ -574,30 +588,14 @@ Output:
 {
     "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/9894ba17925e663f1d29c23af4582b8e3b7619c31f3fbd93adcb51ae54b83dc2",
     "certificateId": "9894ba17925e663f1d29c23af4582b8e3b7619c31f3fbd93adcb51ae54b83dc2",
-    "certificatePem": "
------BEGIN CERTIFICATE-----
-MIICiTCCEXAMPLE6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-VVMxCzAJBgNVBAgEXAMPLEAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAsTC0lBTSEXAMPLE2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYEXAMPLEb20wHhcNMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCEXAMPLEJBgNVBAgTAldBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDAEXAMPLEsTC0lBTSBDb25z
-b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEXAMPLE25lQGFt
-YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+aEXAMPLE
-EXAMPLEfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZEXAMPLELG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE
-Ibb3OhjZnzcvQAEXAMPLEWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-nUhVVxYUntneD9+h8Mg9qEXAMPLEyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GuoEDEXAMPLEBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----\n",
+    "certificatePem": "-----BEGIN CERTIFICATE-----\nMIICiTCCEXAMPLE6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgEXAMPLEAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSEXAMPLE2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYEXAMPLEb20wHhcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCEXAMPLEJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDAEXAMPLEsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEXAMPLE25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+aEXAMPLE\nEXAMPLEfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZEXAMPLELG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE\nIbb3OhjZnzcvQAEXAMPLEWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9qEXAMPLEyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDEXAMPLEBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n",
     "keyPair": {
-        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkEXAMPLEQEFAAOCAQ8AMIIBCgKCAQEAEXAMPLE1nnyJwKSMHw4h\nMMEXAMPLEuuN/dMAS3fyce8DW/4+EXAMPLEyjmoF/YVF/gHr99VEEXAMPLE5VF13\n59VK7cEXAMPLE67GK+y+jikqXOgHh/xJTwo+sGpWEXAMPLEDz18xOd2ka4tCzuWEXAMPLEahJbYkCPUBSU8opVkR7qkEXAMPLE1DR6sx2HocliOOLtu6Fkw91swQWEXAMPLE\GB3ZPrNh0PzQYvjUStZeccyNCx2EXAMPLEvp9mQOUXP6plfgxwKRX2fEXAMPLEDa\nhJLXkX3rHU2xbxJSq7D+XEXAMPLEcw+LyFhI5mgFRl88eGdsAEXAMPLElnI9EesG\nFQIDAQAB\n-----END PUBLIC KEY-----\n",
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkEXAMPLEQEFAAOCAQ8AMIIBCgKCAQEAEXAMPLE1nnyJwKSMHw4h\nMMEXAMPLEuuN/dMAS3fyce8DW/4+EXAMPLEyjmoF/YVF/gHr99VEEXAMPLE5VF13\n59VK7cEXAMPLE67GK+y+jikqXOgHh/xJTwo+sGpWEXAMPLEDz18xOd2ka4tCzuWEXAMPLEahJbYkCPUBSU8opVkR7qkEXAMPLE1DR6sx2HocliOOLtu6Fkw91swQWEXAMPLE\nGB3ZPrNh0PzQYvjUStZeccyNCx2EXAMPLEvp9mQOUXP6plfgxwKRX2fEXAMPLEDa\nhJLXkX3rHU2xbxJSq7D+XEXAMPLEcw+LyFhI5mgFRl88eGdsAEXAMPLElnI9EesG\nFQIDAQAB\n-----END PUBLIC KEY-----\n",
         "PrivateKey": "-----BEGIN RSA PRIVATE KEY-----\nkey omittted for security reasons\n-----END RSA PRIVATE KEY-----\n"
     }
 }
 ```
-For more information, see [Create and Register an AWS IoT Device Certificate](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-create.html) in the **AWS IoT Developer Guide**.
+For more information, see [Create AWS IoT client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-create.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateKeysAndCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-keys-and-certificate.html) in *AWS CLI Command Reference*.
 
 ### `create-mitigation-action`
@@ -610,7 +608,8 @@ The following code example shows how to use `create-mitigation-action`.
 The following `create-mitigation-action` example defines a mitigation action named `AddThingsToQuarantineGroup1Action` that, when applied, moves things into the thing group named `QuarantineGroup1`. This action overrides dynamic thing groups.
 
 ```
-aws iot create-mitigation-action --cli-input-json {{file::params.json}}
+aws iot create-mitigation-action \
+    --cli-input-json {{file::params.json}}
 ```
 Contents of `params.json`:
 
@@ -633,10 +632,10 @@ Output:
 ```
 {
     "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/AddThingsToQuarantineGroup1Action",
-    "actionId": "992e9a63-a899-439a-aa50-4e20c52367e1"
+    "actionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [CreateMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/iot/latest/developerguide/iot/latest/developerguide/mitigation-action-commands.html.html#dd-api-iot-CreateMitigationAction) in the *AWS IoT Developer Guide*.
+For more information, see [CreateMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateMitigationAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-mitigation-action.html) in *AWS CLI Command Reference*.
 
 ### `create-ota-update`
@@ -678,7 +677,7 @@ Contents of `create-ota-update.json`:
             }
           },
           "codeSigning": {
-            "awsSignerJobId": "48c67f3c-63bb-4f92-a98a-4ee0fbc2bef6"
+            "awsSignerJobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
           }
         }
     ]
@@ -689,14 +688,14 @@ Output:
 
 ```
 {
-     "otaUpdateId": "ota12345",
-     "awsIotJobId": "job54321",
-     "otaUpdateArn": "arn:aws:iot:us-west-2:123456789012:otaupdate/itsaupdate",
-     "awsIotJobArn": "arn:aws:iot:us-west-2:123456789012:job/itsajob",
-     "otaUpdateStatus": "CREATE_IN_PROGRESS"
+    "otaUpdateId": "ota12345",
+    "awsIotJobId": "job54321",
+    "otaUpdateArn": "arn:aws:iot:us-west-2:123456789012:otaupdate/itsaupdate",
+    "awsIotJobArn": "arn:aws:iot:us-west-2:123456789012:job/itsajob",
+    "otaUpdateStatus": "CREATE_IN_PROGRESS"
 }
 ```
-For more information, see [CreateOTAUpdate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateOTAUpdate.html) in the *AWS IoT API Reference*.
+For more information, see [Creating an OTA update with the AWS CLI](https://docs.aws.amazon.com/freertos/latest/userguide/ota-cli-workflow.html) in the *FreeRTOS User Guide*.
 +  For API details, see [CreateOtaUpdate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-ota-update.html) in *AWS CLI Command Reference*.
 
 ### `create-policy-version`
@@ -800,41 +799,7 @@ Output:
 {
     "policyName": "TemperatureSensorPolicy",
     "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/TemperatureSensorPolicy",
-    "policyDocument": "{
-        \"Version\": \"2012-10-17\",
-        \"Statement\": [
-            {
-                \"Effect\": \"Allow\",
-                \"Action\": [
-                    \"iot:Publish\",
-                    \"iot:Receive\"
-                ],
-                \"Resource\": [
-                    \"arn:aws:iot:us-west-2:123456789012:topic/topic_1\",
-                    \"arn:aws:iot:us-west-2:123456789012:topic/topic_2\"
-                ]
-            },
-            {
-                \"Effect\": \"Allow\",
-                \"Action\": [
-                    \"iot:Subscribe\"
-                ],
-                \"Resource\": [
-                    \"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_1\",
-                    \"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_2\"
-                ]
-            },
-            {
-                \"Effect\": \"Allow\",
-                \"Action\": [
-                    \"iot:Connect\"
-                ],
-                \"Resource\": [
-                    \"arn:aws:iot:us-west-2:123456789012:client/basicPubSub\"
-                ]
-            }
-        ]
-    }",
+    "policyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"iot:Publish\",\"iot:Receive\"],\"Resource\":[\"arn:aws:iot:us-west-2:123456789012:topic/topic_1\",\"arn:aws:iot:us-west-2:123456789012:topic/topic_2\"]},{\"Effect\":\"Allow\",\"Action\":[\"iot:Subscribe\"],\"Resource\":[\"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_1\",\"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_2\"]},{\"Effect\":\"Allow\",\"Action\":[\"iot:Connect\"],\"Resource\":[\"arn:aws:iot:us-west-2:123456789012:client/basicPubSub\"]}]}",
     "policyVersionId": "1"
 }
 ```
@@ -859,48 +824,10 @@ Output:
 ```
 {
     "certificateId": "78de02184b2ce80cf8fb709bda59e62b19fb83513590483eb0434589476ab09f",
-    "certificatePem": "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIUXSZhEBLztMLZ2fHG
-14gV0NymYY0wDQYJKoZIhvcNAQEL\nBQAwfjELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAOBg
-VBAcM\nB1NlYXR0bGUxGDAWBgNVBAoMD0FtYXpvbi5jb20gSW5jLjEgMB4GA1UECwwXQW1h\nem9uIElvVCBQcm9
-2aXNpb25pbmcxDDAKBgNVBAUTAzEuMDAeFw0yMDA3MjgxNjQ0\nMDZaFw0yMDA3MjgxNjUxMDZaMEsxSTBHBgNVB
-AMMQDFhNDEyM2VkNmIxYjU3MzE3\nZTgzMTJmY2MzN2FiNTdhY2MzYTZkZGVjOGQ5OGY3NzUwMWRlMjc0YjhmYTQ
-xN2Iw\nggEiMA0GCSqGSIb3EXAMPLEAA4IBDwAwggEKAoIBAQDBhKI94ktKLqTwnj+ayOq1\nTAJt/N6s6IJDZvl
-rYjkC0E7wzaeY3TprWk03S29vUzVuEOXHXQXZbihgpg2m6fza\nkWm9/wpjzE9ny5+xkPGVH4Wnwz7yK5m8S0agL
-T96cRBSWnWmonOWdY0GKVzni0CA\n+iyGudgrFKm7Eae/v18oXrf82KtOAGO4xG0KE2WKYHsT1fx3c9xZhlXP/eX
-Lhv00\n+lGp0WVw9PbhKfrxliKJ5q6sL5nVUaUHq6hlQPYwsATeOvAp3u0ak5zgTyL0fg7Y\nPyKk6VYwLW62r+V
-YBSForEMOAhkq3LsP/rjxpEKmi2W4lPVS6oFZRKcD+H1Kyil5\nAgMBAAGjIDAeMAwGA1UdEwEB/wQCMAAwDgYDV
-R0PAQH/BAQDAgeAMA0GCSqGSIb3\nDQEBCwUAA4IBAQAGgix2k6nVqbZFKq97/fZBzLGS0dyz5rT/E41cDIRX+1j
-EPW41\nw0D+2sXheCZLZZnSkvIiP74IToNeXDrjdcaodeGFVHIElRjhMIq+4ZebPbRLtidF\nRc2hfcTAlqq9Z6v
-5Vk6BeM1tu0RqH1wPoVUccLPya8EjNCbnJZUmGdOfrN/Y9pho\n5ikV+HPeZhG/k6dhE2GsQJyKFVHL/uBgKSily
-1bRyWU1r6qcpWBNBHjUoD7HgOwD\nnzMh4XRb2FQDsqFalkCSYmeL8IVC49sgPD9Otyp5uteGMTy62usAAUQdq/f
-ZvrWg\nOkFpwMVnGKVKT7Kg0kKOLzKWOBB2Jm4/gmrJ\n-----END CERTIFICATE-----\n",
+    "certificatePem": "-----BEGIN CERTIFICATE-----\nMIIDdzCCAl+gAwIBAgIUXSZhEBLztMLZ2fHG14gV0NymYY0wDQYJKoZIhvcNAQEL\nBQAwfjELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAOBgVBAcM\nB1NlYXR0bGUxGDAWBgNVBAoMD0FtYXpvbi5jb20gSW5jLjEgMB4GA1UECwwXQW1h\nem9uIElvVCBQcm92aXNpb25pbmcxDDAKBgNVBAUTAzEuMDAeFw0yMDA3MjgxNjQ0\nMDZaFw0yMDA3MjgxNjUxMDZaMEsxSTBHBgNVBAMMQDFhNDEyM2VkNmIxYjU3MzE3\nZTgzMTJmY2MzN2FiNTdhY2MzYTZkZGVjOGQ5OGY3NzUwMWRlMjc0YjhmYTQxN2Iw\nggEiMA0GCSqGSIb3EXAMPLEAA4IBDwAwggEKAoIBAQDBhKI94ktKLqTwnj+ayOq1\nTAJt/N6s6IJDZvlrYjkC0E7wzaeY3TprWk03S29vUzVuEOXHXQXZbihgpg2m6fza\nkWm9/wpjzE9ny5+xkPGVH4Wnwz7yK5m8S0agLT96cRBSWnWmonOWdY0GKVzni0CA\n+iyGudgrFKm7Eae/v18oXrf82KtOAGO4xG0KE2WKYHsT1fx3c9xZhlXP/eXLhv00\n+lGp0WVw9PbhKfrxliKJ5q6sL5nVUaUHq6hlQPYwsATeOvAp3u0ak5zgTyL0fg7Y\nPyKk6VYwLW62r+VYBSForEMOAhkq3LsP/rjxpEKmi2W4lPVS6oFZRKcD+H1Kyil5\nAgMBAAGjIDAeMAwGA1UdEwEB/wQCMAAwDgYDVR0PAQH/BAQDAgeAMA0GCSqGSIb3\nDQEBCwUAA4IBAQAGgix2k6nVqbZFKq97/fZBzLGS0dyz5rT/E41cDIRX+1jEPW41\nw0D+2sXheCZLZZnSkvIiP74IToNeXDrjdcaodeGFVHIElRjhMIq+4ZebPbRLtidF\nRc2hfcTAlqq9Z6v5Vk6BeM1tu0RqH1wPoVUccLPya8EjNCbnJZUmGdOfrN/Y9pho\n5ikV+HPeZhG/k6dhE2GsQJyKFVHL/uBgKSily1bRyWU1r6qcpWBNBHjUoD7HgOwD\nnzMh4XRb2FQDsqFalkCSYmeL8IVC49sgPD9Otyp5uteGMTy62usAAUQdq/fZvrWg\nOkFpwMVnGKVKT7Kg0kKOLzKWOBB2Jm4/gmrJ\n-----END CERTIFICATE-----\n",
     "keyPair": {
-        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCg
-KCAQEAwYSiPeJLSi6k8J4/msjq\ntUwCbfzerOiCQ2b5a2I5AtBO8M2nmN06a1pNN0tvb1M1bhDlx10F2W4oYKYN
-pun8\n2pFpvf8KY8xPZ8ufsZDxlR+Fp8M+8iuZvEtGoC0/enEQUlp1pqJzlnWNBilc54tA\ngPoshrnYKxSpuxGn
-v79fKF63/NirTgBjuMRtChNlimEXAMPLE3PcWYZVz/3ly4b9\nNPpRqdFlcPT24Sn68ZYiieaurC+Z1VGlB6uoZU
-D2MLAE3jrwKd7tGpOc4E8i9H4O\n2D8ipOlWMC1utq/lWAUhaKxDDgIZKty7D/648aRCpotluJT1UuqBWUSnA/h9
-Ssop\neQIDAQAB\n-----END PUBLIC KEY-----\n",
-        "PrivateKey": "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAwYSiPeJLSi6k8J4/
-msjqtUwCbfzerOiCQ2b5a2I5AtBO8M2n\nmN06a1pNN0tvb1M1bhDlx10F2W4oYKYNpun82pFpvf8KY8xPZ8ufsZ
-DxlR+Fp8M+\n8iuZvEtGoC0/enEQUlp1pqJzlnWNBilc54tAgPoshrnYKxSpuxGnv79fKF63/Nir\nTgBjuMRtCh
-NlimB7E9X8d3PcWYZVz/3ly4b9NPpRqdFlcPT24Sn68ZYiieaurC+Z\n1VGlB6uoZUD2MLAE3jrwKd7tGpOc4E8i
-9H4O2D8ipOlWMC1utq/lWAUhaKxDDgIZ\nKty7D/648aRCpotluJT1UuqBWUSnA/h9SsopeQIDAQABAoIBAEAybN
-QUtx9T2/nK\ntZT2pA4iugecxI4dz+DmT0XVXs5VJmrx/nBSq6ejXExEpSIMO4RY7LE3ZdJcnd56\nF7tQkkY7yR
-VzfxHeXFU1krOIPuxWebNOrRoPZr+1RSer+wv2aBC525+88pVuR6tM\nm3pgkrR2ycCj9FdOUoQxdjHBHaM5PDmJ
-9aSxCKdg3nReepeGwsR2TQA+m2vVxWk7\nou0+91eTOP+/QfP7P8ZjOIkO2XivlRcVDyN/E4QXPKuIkM/8vS8VK+
-E9pATQ0MtB\n2lw8R/YU5AJd6jlEXAMPLEGU2UzRzInNWiLtkPPPqgqXXhxOf+mxByjcMalVJk0L\nhOG2ROUCgY
-EA+ROcHNHy/XbsP7FihOhEh+6Q2QxQ2ncBUPYbBazrR8Hn+7SCICQK\nVyYfd8Ajfq3e7RsKVL5SlMBp7Slidxak
-bIn28fKfPn62DaemGCIoyDgLpF+eUxBx\ngzbCiBZga8brfurza43UZjKZLpg3hq721+FeAiXi1Nma4Yr9YWEHEN
-8CgYEAxuWt\npzdWWmsiFzfsAw0sy9ySDA/xr5WRWzJyAqUsjsks6rxNzWebpufnYHcmtW7pLdqM\nkboHwN2pXa
-kmZvrk2nKkEMq5brBYGDXuxDe+V369Bianx8aZFyIsckA7OwXW1w1h\ngRC5rQ4XOgp3+Jmw7eAO8LRYDjaN846+
-QbtO2KcCgYAWS0UL51bijQR0ZwI0dz27\nFQVuCAYsp748aurcRTACCj8jbnK/QbqTNlxWsaH7ssBjZKo2D5sAqY
-BRtASWODab\naHXsDhVm2Jye+ESLoHMaCLoyCkT3ll8yqXIcEDStMO7fO1Ryag164EiJvSIrMfny\nNL/fXVjCSH
-/udCxdzPt+7QKBgQC+LAD7rxdr4J9538hTqpc4XK9vxRbrMXEH55XH\nHbMa2xONZXpmeTgEQBukyohCVceyRhK9
-i0e6irZTjVXghOeoTpC8VXkzcnzouTiQ\neFQQSGfnp7Ioe6UIz23715pKduzSNkMSKrG924ktv7CyDBF1gBQI5g
-aDoHnddJBJ\nPRTIZQKBgA8MASXtTxQntRwXXzR92U0vAighiuRkB/mx9jQpUcK1qiqHbkAMqgNF\nPFCBYIUbFT
-iYKKKeJNbyJQvjfsJCkAnaFJ+RnTxk0Q6Wjm20peJ/ii4QiDdnigoE\nvdlc5cFQewWb4/zqAtPdinkPlN94ileI
-79XQdc7RlJ0jpgTimL+V\n-----END RSA PRIVATE KEY-----\n"
+        "PublicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwYSiPeJLSi6k8J4/msjq\ntUwCbfzerOiCQ2b5a2I5AtBO8M2nmN06a1pNN0tvb1M1bhDlx10F2W4oYKYNpun8\n2pFpvf8KY8xPZ8ufsZDxlR+Fp8M+8iuZvEtGoC0/enEQUlp1pqJzlnWNBilc54tA\ngPoshrnYKxSpuxGnv79fKF63/NirTgBjuMRtChNlimEXAMPLE3PcWYZVz/3ly4b9\nNPpRqdFlcPT24Sn68ZYiieaurC+Z1VGlB6uoZUD2MLAE3jrwKd7tGpOc4E8i9H4O\n2D8ipOlWMC1utq/lWAUhaKxDDgIZKty7D/648aRCpotluJT1UuqBWUSnA/h9Ssop\neQIDAQAB\n-----END PUBLIC KEY-----\n",
+        "PrivateKey": "-----BEGIN RSA PRIVATE KEY-----\nMIIEowIBAAKCAQEAwYSiPeJLSi6k8J4/msjqtUwCbfzerOiCQ2b5a2I5AtBO8M2n\nmN06a1pNN0tvb1M1bhDlx10F2W4oYKYNpun82pFpvf8KY8xPZ8ufsZDxlR+Fp8M+\n8iuZvEtGoC0/enEQUlp1pqJzlnWNBilc54tAgPoshrnYKxSpuxGnv79fKF63/Nir\nTgBjuMRtChNlimB7E9X8d3PcWYZVz/3ly4b9NPpRqdFlcPT24Sn68ZYiieaurC+Z\n1VGlB6uoZUD2MLAE3jrwKd7tGpOc4E8i9H4O2D8ipOlWMC1utq/lWAUhaKxDDgIZ\nKty7D/648aRCpotluJT1UuqBWUSnA/h9SsopeQIDAQABAoIBAEAybNQUtx9T2/nK\ntZT2pA4iugecxI4dz+DmT0XVXs5VJmrx/nBSq6ejXExEpSIMO4RY7LE3ZdJcnd56\nF7tQkkY7yRVzfxHeXFU1krOIPuxWebNOrRoPZr+1RSer+wv2aBC525+88pVuR6tM\nm3pgkrR2ycCj9FdOUoQxdjHBHaM5PDmJ9aSxCKdg3nReepeGwsR2TQA+m2vVxWk7\nou0+91eTOP+/QfP7P8ZjOIkO2XivlRcVDyN/E4QXPKuIkM/8vS8VK+E9pATQ0MtB\n2lw8R/YU5AJd6jlEXAMPLEGU2UzRzInNWiLtkPPPqgqXXhxOf+mxByjcMalVJk0L\nhOG2ROUCgYEA+ROcHNHy/XbsP7FihOhEh+6Q2QxQ2ncBUPYbBazrR8Hn+7SCICQK\nVyYfd8Ajfq3e7RsKVL5SlMBp7SlidxakbIn28fKfPn62DaemGCIoyDgLpF+eUxBx\ngzbCiBZga8brfurza43UZjKZLpg3hq721+FeAiXi1Nma4Yr9YWEHEN8CgYEAxuWt\npzdWWmsiFzfsAw0sy9ySDA/xr5WRWzJyAqUsjsks6rxNzWebpufnYHcmtW7pLdqM\nkboHwN2pXakmZvrk2nKkEMq5brBYGDXuxDe+V369Bianx8aZFyIsckA7OwXW1w1h\ngRC5rQ4XOgp3+Jmw7eAO8LRYDjaN846+QbtO2KcCgYAWS0UL51bijQR0ZwI0dz27\nFQVuCAYsp748aurcRTACCj8jbnK/QbqTNlxWsaH7ssBjZKo2D5sAqYBRtASWODab\naHXsDhVm2Jye+ESLoHMaCLoyCkT3ll8yqXIcEDStMO7fO1Ryag164EiJvSIrMfny\nNL/fXVjCSH/udCxdzPt+7QKBgQC+LAD7rxdr4J9538hTqpc4XK9vxRbrMXEH55XH\nHbMa2xONZXpmeTgEQBukyohCVceyRhK9i0e6irZTjVXghOeoTpC8VXkzcnzouTiQ\neFQQSGfnp7Ioe6UIz23715pKduzSNkMSKrG924ktv7CyDBF1gBQI5gaDoHnddJBJ\nPRTIZQKBgA8MASXtTxQntRwXXzR92U0vAighiuRkB/mx9jQpUcK1qiqHbkAMqgNF\nPFCBYIUbFTiYKKKeJNbyJQvjfsJCkAnaFJ+RnTxk0Q6Wjm20peJ/ii4QiDdnigoE\nvdlc5cFQewWb4/zqAtPdinkPlN94ileI79XQdc7RlJ0jpgTimL+V\n-----END RSA PRIVATE KEY-----\n"
     },
     "expiration": 1595955066.0
 }
@@ -915,7 +842,7 @@ The following code example shows how to use `create-provisioning-template-versio
 
 **AWS CLI**
 **To create a provisioning template version**
-The following example creates a version for the specified provisioning template. The body of the new version is supplied in the file `template.json`.
+The following `create-provisioning-template-version` example creates a version for the specified provisioning template. The body of the new version is supplied in the file `template.json`.
 
 ```
 aws iot create-provisioning-template-version \
@@ -972,7 +899,7 @@ Contents of `template.json`:
                     "Statement": [{
                         "Effect": "Allow",
                         "Action":["iot:Publish"],
-                        "Resource": ["arn:aws:iot:us-east-1:123456789012:topic/foo/bar"]
+                        "Resource": ["arn:aws:iot:us-west-2:123456789012:topic/foo/bar"]
                     }]
                 }
             }
@@ -990,7 +917,7 @@ Output:
 
 ```
 {
-    "templateArn": "arn:aws:iot:us-east-1:123456789012:provisioningtemplate/widget-template",
+    "templateArn": "arn:aws:iot:us-west-2:123456789012:provisioningtemplate/widget-template",
     "templateName": "widget-template",
     "versionId": 2,
     "isDefaultVersion": false
@@ -1065,7 +992,7 @@ Contents of `template.json`:
                     "Statement": [{
                         "Effect": "Allow",
                         "Action":["iot:Publish"],
-                        "Resource": ["arn:aws:iot:us-east-1:504350838278:topic/foo/bar"]
+                        "Resource": ["arn:aws:iot:us-west-2:123456789012:topic/foo/bar"]
                     }]
                 }
             }
@@ -1083,7 +1010,7 @@ Output:
 
 ```
 {
-    "templateArn": "arn:aws:iot:us-east-1:123456789012:provisioningtemplate/widget-template",
+    "templateArn": "arn:aws:iot:us-west-2:123456789012:provisioningtemplate/widget-template",
     "templateName": "widget-template",
     "defaultVersionId": 1
 }
@@ -1113,7 +1040,7 @@ Output:
     "roleAliasArn": "arn:aws:iot:us-west-2:123456789012:rolealias/LightBulbRole"
 }
 ```
-For more information, see [CreateRoleAlias](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateRoleAlias.html) in the *AWS IoT API Reference*.
+For more information, see [Authorizing direct calls to AWS services using AWS IoT Core credential provider](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateRoleAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-role-alias.html) in *AWS CLI Command Reference*.
 
 ### `create-scheduled-audit`
@@ -1192,7 +1119,7 @@ Contents of `create-stream.json`:
             "fileId": 123,
             "s3Location": {
                 "bucket":"codesign-ota-bucket",
-                "key":"48c67f3c-63bb-4f92-a98a-4ee0fbc2bef6"
+                "key":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         }
     ],
@@ -1203,13 +1130,13 @@ Output:
 
 ```
 {
-     "streamId": "stream12345",
-     "streamArn": "arn:aws:iot:us-west-2:123456789012:stream/stream12345",
-     "description": "This stream is used for Amazon FreeRTOS OTA Update 12345.",
-     "streamVersion": "1"
+    "streamId": "stream12345",
+    "streamArn": "arn:aws:iot:us-west-2:123456789012:stream/stream12345",
+    "description": "This stream is used for Amazon FreeRTOS OTA Update 12345.",
+    "streamVersion": 1
 }
 ```
-For more information, see [CreateStream](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateStream.html) in the *AWS IoT API Reference*.
+For more information, see [MQTT-based file delivery](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-stream.html) in *AWS CLI Command Reference*.
 
 ### `create-thing-group`
@@ -1232,11 +1159,11 @@ Output:
 {
     "thingGroupName": "LightBulbs",
     "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/LightBulbs",
-    "thingGroupId": "9198bf9f-1e76-4a88-8e8c-e7140142c331"
+    "thingGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To create a thing group that's part of a parent group**
-The following `create-thing-group` creates a thing group named `HalogenBulbs` that has a parent thing group named `LightBulbs`.
+The following `create-thing-group` example creates a thing group named `HalogenBulbs` that has a parent thing group named `LightBulbs`.
 
 ```
 aws iot create-thing-group \
@@ -1249,7 +1176,7 @@ Output:
 {
     "thingGroupName": "HalogenBulbs",
     "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/HalogenBulbs",
-    "thingGroupId": "f4ec6b84-b42b-499d-9ce1-4dbd4d4f6f6e"
+    "thingGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Thing Groups](https://docs.aws.amazon.com/iot/latest/developerguide/thing-groups.html) in the *AWS IoT Developers Guide*.
@@ -1275,7 +1202,7 @@ Output:
 {
     "thingTypeName": "LightBulb",
     "thingTypeArn": "arn:aws:iot:us-west-2:123456789012:thingtype/LightBulb",
-    "thingTypeId": "ce3573b0-0a3c-45a7-ac93-4e0ce14cd190"
+    "thingTypeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Thing Types](https://docs.aws.amazon.com/iot/latest/developerguide/thing-types.html) in the *AWS IoT Developers Guide*.
@@ -1300,7 +1227,7 @@ Output:
 {
     "thingName": "SampleIoTThing",
     "thingArn": "arn:aws:iot:us-west-2: 123456789012:thing/SampleIoTThing",
-    "thingId": " EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE "
+    "thingId": " a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 "
 }
 ```
 **Example 2: To define a thing that is associated with a thing type**
@@ -1318,7 +1245,7 @@ Output:
 {
     "thingName": "MyLightBulb",
     "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyLightBulb",
-    "thingId": "40da2e73-c6af-406e-b415-15acae538797"
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [How to Manage Things with the Registry](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html) and [Thing Types](https://docs.aws.amazon.com/iot/latest/developerguide/thing-types.html) in the *AWS IoT Developers Guide*.
@@ -1342,7 +1269,7 @@ Output:
 ```
 {
     "topicRuleDestination": {
-        "arn": "arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "arn": "arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "IN_PROGRESS",
         "statusReason": "Awaiting confirmation. Confirmation message sent on 2020-07-09T22:47:54.154Z; no response received from the endpoint.",
         "httpUrlProperties": {
@@ -1351,7 +1278,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating a topic rule destination](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html#create-destination) in the *AWS IoT Developer Guide*.
+For more information, see [Creating HTTP action destinations](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html#http-action-destination-creating) in the *AWS IoT Developer Guide*.
 +  For API details, see [CreateTopicRuleDestination](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/create-topic-rule-destination.html) in *AWS CLI Command Reference*.
 
 ### `create-topic-rule`
@@ -1368,7 +1295,7 @@ aws iot create-topic-rule \
     --rule-name {{"LowMoistureRule"}} \
     --topic-rule-payload {{file://plant-rule.json}}
 ```
-The example requires the following JSON code to be saved to a file named `plant-rule.json`:
+Contents of `plant-rule.json`:
 
 ```
 {
@@ -1376,13 +1303,15 @@ The example requires the following JSON code to be saved to a file named `plant-
     "description": "Sends an alert whenever soil moisture level readings are too low.",
     "ruleDisabled": false,
     "awsIotSqlVersion": "2016-03-23",
-    "actions": [{
+    "actions": [
+        {
             "sns": {
                 "targetArn": "arn:aws:sns:us-west-2:123456789012:MyRPiLowMoistureTopic",
                 "roleArn": "arn:aws:iam::123456789012:role/service-role/MyRPiLowMoistureTopicRole",
                 "messageFormat": "RAW"
             }
-    }]
+        }
+    ]
 }
 ```
 This command produces no output.
@@ -1396,7 +1325,7 @@ The following code example shows how to use `delete-account-audit-configuration`
 
 **AWS CLI**
 **To disable all audit checks for your AWS account**
-The following `delete-account-audit-configuration` example restores the default settings for AWS IoT Device Defender for this account, disabling all audit checks and clearing configuration data. It also deletes any scheduled audits for this account. **Use this command with caution.**
+The following `delete-account-audit-configuration` example restores the default settings for AWS IoT Device Defender for this account, disabling all audit checks and clearing configuration data. It also deletes any scheduled audits for this account. **Use this command with caution**.
 
 ```
 aws iot delete-account-audit-configuration \
@@ -1438,7 +1367,7 @@ aws iot delete-authorizer \
     --authorizer-name {{CustomAuthorizer}}
 ```
 This command produces no output.
-For more information, see [DeleteAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteAuthorizer.html) in the *AWS IoT Developer Guide*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [DeleteAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `delete-billing-group`
@@ -1454,7 +1383,7 @@ The following `delete-billing-group` example deletes the specified billing group
 aws iot delete-billing-group \
     --billing-group-name {{BillingGroupTwo}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Billing Groups](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot-billing-groups.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [DeleteBillingGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-billing-group.html) in *AWS CLI Command Reference*.
 
@@ -1472,7 +1401,7 @@ aws iot delete-ca-certificate \
     --certificate-id {{f4efed62c0142f16af278166f61962501165c4f0536295207426460058cd1467}}
 ```
 This command produces no output.
-For more information, see [DeleteCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCACertificate.html) in the *AWS IoT API Reference*.
+For more information, see [Manage your CA certificates](https://docs.aws.amazon.com/iot/latest/developerguide/manage-your-CA-certs.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DeleteCaCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-ca-certificate.html) in *AWS CLI Command Reference*.
 
 ### `delete-certificate`
@@ -1489,7 +1418,7 @@ aws iot delete-certificate \
     --certificate-id {{c0c57bbc8baaf4631a9a0345c957657f5e710473e3ddbee1428d216d54d53ac9}}
 ```
 This command produces no output.
-For more information, see [DeleteCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteCertificate.html) in the *AWS IoT API Reference*.
+For more information, see [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DeleteCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-certificate.html) in *AWS CLI Command Reference*.
 
 ### `delete-custom-metric`
@@ -1503,14 +1432,9 @@ The following `delete-custom-metric` example deletes a custom metric.
 
 ```
 aws iot delete-custom-metric \
-    --metric-name {{batteryPercentage}} \
-    --region {{us-east-1}}
+    --metric-name {{batteryPercentage}}
 ```
-Output:
-
-```
-HTTP 200
-```
+This command produces no output.
 For more information, see [Custom metrics](https://docs.aws.amazon.com/iot/latest/developerguide/dd-detect-custom-metrics.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [DeleteCustomMetric](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-custom-metric.html) in *AWS CLI Command Reference*.
 
@@ -1576,9 +1500,9 @@ The following code example shows how to use `delete-job-execution`.
 The following `delete-job-execution` example deletes the job execution of the specified job on a device. Use `describe-job-execution` to get the execution number.
 
 ```
-aws iot delete-job-execution
-    --job-id {{"example-job-02"}}
-    --thing-name {{"MyRaspberryPi"}}
+aws iot delete-job-execution \
+    --job-id {{"example-job-02"}} \
+    --thing-name {{"MyRaspberryPi"}} \
     --execution-number {{1}}
 ```
 This command produces no output.
@@ -1617,7 +1541,7 @@ aws iot delete-mitigation-action \
     --action-name {{AddThingsToQuarantineGroup1Action}}
 ```
 This command produces no output.
-For more information, see [DeleteMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-DeleteMitigationAction) in the *AWS IoT Developer Guide*.
+For more information, see [DeleteMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DeleteMitigationAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-mitigation-action.html) in *AWS CLI Command Reference*.
 
 ### `delete-ota-update`
@@ -1636,7 +1560,7 @@ aws iot delete-ota-update \
     --force-delete-aws-job
 ```
 This command produces no output.
-For more information, see [DeleteOTAUpdate](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteOTAUpdate.html) in the *AWS IoT API Reference*.
+For more information, see [Creating an OTA update with the AWS CLI](https://docs.aws.amazon.com/freertos/latest/userguide/ota-cli-workflow.html) in the *FreeRTOS User Guide*.
 +  For API details, see [DeleteOtaUpdate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-ota-update.html) in *AWS CLI Command Reference*.
 
 ### `delete-policy-version`
@@ -1667,7 +1591,8 @@ The following code example shows how to use `delete-policy`.
 The following `delete-policy` example deletes the specified policy from your AWS account.
 
 ```
-aws iot delete-policy --policy-name {{UpdateDeviceCertPolicy}}
+aws iot delete-policy \
+    --policy-name {{UpdateDeviceCertPolicy}}
 ```
 This command produces no output.
 For more information, see [AWS IoT Policies](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) in the *AWS IoT Developers Guide*.
@@ -1789,7 +1714,7 @@ aws iot delete-stream \
     --stream-id {{stream12345}}
 ```
 This command produces no output.
-For more information, see [DeleteStream](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteStream.html) in the *AWS IoT API Reference*.
+For more information, see [MQTT-based file delivery](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DeleteStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-stream.html) in *AWS CLI Command Reference*.
 
 ### `delete-thing-group`
@@ -1834,7 +1759,11 @@ The following code example shows how to use `delete-thing`.
 **AWS CLI**
 **To display detailed information about a thing**
 The following `delete-thing` example deletes a thing from the AWS IoT registry for your AWS account.
-aws iot delete-thing --thing-name "FourthBulb"
+
+```
+aws iot delete-thing \
+    --thing-name {{"FourthBulb"}}
+```
 This command produces no output.
 For more information, see [How to Manage Things with the Registry](https://docs.aws.amazon.com/iot/latest/developerguide/thing-registry.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [DeleteThing](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-thing.html) in *AWS CLI Command Reference*.
@@ -1850,10 +1779,10 @@ The following `delete-topic-rule-destination` example deletes the specified topi
 
 ```
 aws iot delete-topic-rule-destination \
-    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}}
+    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
-For more information, see [Deleting a topic rule destination](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html#delete-destination) in the *AWS IoT Developer Guide*.
+For more information, see [Disabling and deleting an HTTP action destination](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html#http-action-destination-deleting) in the *AWS IoT Developer Guide*.
 +  For API details, see [DeleteTopicRuleDestination](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-topic-rule-destination.html) in *AWS CLI Command Reference*.
 
 ### `delete-topic-rule`
@@ -1870,7 +1799,7 @@ aws iot delete-topic-rule \
     --rule-name {{"LowMoistureRule"}}
 ```
 This command produces no output.
-For more information, see [Deleting a Rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-delete-rule.html) in the *AWS IoT Developers Guide*.
+For more information, see [Deleting a rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-delete-rule) in the *AWS IoT Developers Guide*.
 +  For API details, see [DeleteTopicRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-topic-rule.html) in *AWS CLI Command Reference*.
 
 ### `delete-v2-logging-level`
@@ -1888,6 +1817,7 @@ aws iot delete-v2-logging-level \
     --target-name {{LightBulbs}}
 ```
 This command produces no output.
+For more information, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DeleteV2LoggingLevel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/delete-v2-logging-level.html) in *AWS CLI Command Reference*.
 
 ### `deprecate-thing-type`
@@ -1988,14 +1918,14 @@ The following `describe-audit-finding` example lists the details for the specifi
 
 ```
 aws iot describe-audit-finding \
-    --finding-id {{"ef4826b8-e55a-44b9-b460-5c485355371b"}}
+    --finding-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
     "finding": {
-        "findingId": "ef4826b8-e55a-44b9-b460-5c485355371b",
+        "findingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "taskId": "873ed69c74a9ec8fa9b8e88e9abc4661",
         "checkName": "IOT_POLICY_OVERLY_PERMISSIVE_CHECK",
         "taskStartTime": 1576012045.745,
@@ -2009,7 +1939,7 @@ Output:
                     "policyVersionId": "1"
                 }
             }
-         },
+        },
         "reasonForNonCompliance": "Policy allows broad access to IoT data plane actions: [iot:Subscribe, iot:Connect, iot:GetThingShadow, iot:DeleteThingShadow, iot:UpdateThingShadow, iot:Publish].",
         "reasonForNonComplianceCode": "ALLOWS_BROAD_ACCESS_TO_IOT_DATA_PLANE_ACTIONS"
     }
@@ -2049,7 +1979,7 @@ Output:
     },
     "target": {
         "findingIds": [
-            "ef4826b8-e55a-44b9-b460-5c485355371b"
+            "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         ]
     },
     "auditCheckToActionsMapping": {
@@ -2060,7 +1990,7 @@ Output:
     "actionsDefinition": [
         {
             "name": "ResetPolicyVersionAction",
-            "id": "1ea0b415-bef1-4a01-bd13-72fb63c59afb",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "roleArn": "arn:aws:iam::123456789012:role/service-role/ReplacePolicyVersionRole",
             "actionParams": {
                 "replaceDefaultPolicyVersionParams": {
@@ -2071,7 +2001,7 @@ Output:
     ]
 }
 ```
-For more information, see [DescribeAuditMitigationActionsTask (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-DescribeAuditMitigationActionsTask) in the *AWS IoT Developer Guide*.
+For more information, see [DescribeAuditMitigationActionsTask (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DescribeAuditMitigationActionsTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-audit-mitigation-actions-task.html) in *AWS CLI Command Reference*.
 
 ### `describe-audit-suppression`
@@ -2133,7 +2063,7 @@ aws iot describe-audit-task \
 Output:
 
 ```
- {
+{
     "taskStatus": "COMPLETED",
     "taskType": "ON_DEMAND_AUDIT_TASK",
     "taskStartTime": 1560356923.434,
@@ -2202,7 +2132,7 @@ Output:
     }
 }
 ```
-For more information, see [DescribeAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuthorizer.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DescribeAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `describe-billing-group`
@@ -2215,14 +2145,15 @@ The following code example shows how to use `describe-billing-group`.
 The following `describe-billing-group` example gets information for the specified billing group.
 
 ```
-aws iot describe-billing-group --billing-group-name {{GroupOne}}
+aws iot describe-billing-group \
+    --billing-group-name {{GroupOne}}
 ```
 Output:
 
 ```
 {
     "billingGroupName": "GroupOne",
-    "billingGroupId": "103de383-114b-4f51-8266-18f209ef5562",
+    "billingGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "billingGroupArn": "arn:aws:iot:us-west-2:123456789012:billinggroup/GroupOne",
     "version": 1,
     "billingGroupProperties": {},
@@ -2261,7 +2192,7 @@ Output:
         "autoRegistrationStatus": "DISABLE",
         "lastModifiedDate": 1569365372.053,
         "customerVersion": 1,
-        "generationId": "c5c2eb95-140b-4f49-9393-6aaac85b2a90",
+        "generationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "validity": {
             "notBefore": 1569360675.0,
             "notAfter": 1884720675.0
@@ -2269,7 +2200,7 @@ Output:
     }
 }
 ```
-For more information, see [DescribeCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCACertificate.html) in the *AWS IoT API Reference*.
+For more information, see [Manage your CA certificates](https://docs.aws.amazon.com/iot/latest/developerguide/manage-your-CA-certs.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DescribeCaCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-ca-certificate.html) in *AWS CLI Command Reference*.
 
 ### `describe-certificate`
@@ -2293,28 +2224,13 @@ Output:
         "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/4f0ba725787aa94d67d2fca420eca022242532e8b3c58e7465c7778b443fd65e",
         "certificateId": "4f0ba725787aa94d67d2fca420eca022242532e8b3c58e7465c7778b443fd65e",
         "status": "ACTIVE",
-        "certificatePem": "-----BEGIN CERTIFICATE-----
-MIICiTEXAMPLEQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-VVMxCzAJBgNVBEXAMPLEMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAsTC0lBTSBDEXAMPLElMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5EXAMPLEcNMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNEXAMPLEdBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBEXAMPLEz
-b2xEXAMPLEYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-YXpvbi5jb20wgZ8EXAMPLEZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-21uUSfwfEvySWtC2XADZ4nB+BLYEXAMPLEpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7EXAMPLEGBzZswY6786m86gpE
-Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFEXAMPLEAtCu4
-nUhVVxYUnEXAMPLE8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GEXAMPLEl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----",
+        "certificatePem": "-----BEGIN CERTIFICATE-----\nMIICiTEXAMPLEQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBEXAMPLEMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDEXAMPLElMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5EXAMPLEcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNEXAMPLEdBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBEXAMPLEz\nb2xEXAMPLEYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8EXAMPLEZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYEXAMPLEpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7EXAMPLEGBzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFEXAMPLEAtCu4\nnUhVVxYUnEXAMPLE8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GEXAMPLEl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----",
         "ownedBy": "123456789012",
         "creationDate": 1541022751.983,
         "lastModifiedDate": 1541022751.983,
         "customerVersion": 1,
         "transferData": {},
-        "generationId": "6974fbed-2e61-4114-bc5e-4204cc79b045",
+        "generationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "validity": {
             "notBefore": 1541022631.0,
             "notAfter": 2524607999.0
@@ -2322,7 +2238,7 @@ NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
     }
 }
 ```
-For more information, see [DescribeCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeCertificate.html) in the *AWS IoT API Reference*.
+For more information, see [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DescribeCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-certificate.html) in *AWS CLI Command Reference*.
 
 ### `describe-custom-metric`
@@ -2343,11 +2259,11 @@ Output:
 ```
 {
     "metricName": "myCustomMetric",
-    "metricArn": "arn:aws:iot:us-east-1:1234564789012:custommetric/myCustomMetric",
+    "metricArn": "arn:aws:iot:us-west-2:1234564789012:custommetric/myCustomMetric",
     "metricType": "number",
     "displayName": "My custom metric",
-    "creationDate": 2020-11-17T23:02:12.879000-09:00,
-    "lastModifiedDate": 2020-11-17T23:02:12.879000-09:00
+    "creationDate": "2020-11-17T23:02:12.879000-09:00",
+    "lastModifiedDate": "2020-11-17T23:02:12.879000-09:00"
 }
 ```
 For more information, see [Custom metrics](https://docs.aws.amazon.com/iot/latest/developerguide/dd-detect-custom-metrics.html) in the *AWS IoT Core Developer Guide*.
@@ -2369,11 +2285,13 @@ Output:
 
 ```
 {
-    "authorizerName": "CustomAuthorizer",
-    "authorizerArn": "arn:aws:iot:us-west-2:123456789012:authorizer/CustomAuthorizer"
+    "authorizerDescription": {
+        "authorizerName": "CustomAuthorizer",
+        "authorizerArn": "arn:aws:iot:us-west-2:123456789012:authorizer/CustomAuthorizer"
+    }
 }
 ```
-For more information, see [DescribeDefaultAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeDefautAuthorizer.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DescribeDefaultAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-default-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `describe-dimension`
@@ -2394,7 +2312,7 @@ Output:
 ```
 {
     "name": "TopicFilterForAuthMessages",
-    "arn": "arn:aws:iot:eu-west-2:123456789012:dimension/TopicFilterForAuthMessages",
+    "arn": "arn:aws:iot:us-west-2:123456789012:dimension/TopicFilterForAuthMessages",
     "type": "TOPIC_FILTER",
     "stringValues": [
         "device/+/auth"
@@ -2424,8 +2342,8 @@ Output:
 ```
 {
     "domainConfigurationName": "additionalDataDomain",
-    "domainConfigurationArn": "arn:aws:iot:us-east-1:758EXAMPLE143:domainconfiguration/additionalDataDomain/norpw",
-    "domainName": "d055exampleed74y71zfd-ats.beta.us-east-1.iot.amazonaws.com",
+    "domainConfigurationArn": "arn:aws:iot:us-west-2:758EXAMPLE143:domainconfiguration/additionalDataDomain/norpw",
+    "domainName": "d055exampleed74y71zfd-ats.beta.us-west-2.iot.amazonaws.com",
     "serverCertificates": [],
     "domainConfigurationStatus": "ENABLED",
     "serviceType": "DATA",
@@ -2455,7 +2373,7 @@ Output:
     "endpointAddress": "abc123defghijk.iot.us-west-2.amazonaws.com"
 }
 ```
-For more information, see [DescribeEndpoint](https://docs.aws.amazon.com/iot/latest/developerguide/iot-commands.html#api-iot-DescribeEndpoint) in the *AWS IoT Developer Guide*.
+For more information, see [DescribeEndpoint](https://docs.aws.amazon.com/iot/latest/developerguide/iot-commands.html) in the *AWS IoT Developer Guide*.
 **Example 2: To get your ATS endpoint**
 The following `describe-endpoint` example retrieves the Amazon Trust Services (ATS) endpoint.
 
@@ -2654,7 +2572,7 @@ Output:
     "actionName": "AddThingsToQuarantineGroupAction",
     "actionType": "ADD_THINGS_TO_THING_GROUP",
     "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/AddThingsToQuarantineGroupAction",
-    "actionId": "2fd2726d-98e1-4abf-b10f-09465ccd6bfa",
+    "actionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "roleArn": "arn:aws:iam::123456789012:role/service-role/MoveThingsToQuarantineGroupRole",
     "actionParams": {
         "addThingsToThingGroupParams": {
@@ -2668,7 +2586,7 @@ Output:
     "lastModifiedDate": "2019-12-10T11:09:35.999000-08:00"
 }
 ```
-For more information, see [DescribeMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-DescribeMitigationAction) in the *AWS IoT Developer Guide*.
+For more information, see [DescribeMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [DescribeMitigationAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-mitigation-action.html) in *AWS CLI Command Reference*.
 
 ### `describe-provisioning-template-version`
@@ -2691,55 +2609,7 @@ Output:
 {
     "versionId": 1,
     "creationDate": 1589308310.574,
-    "templateBody": "{
-        \"Parameters\":{
-            \"SerialNumber\":{
-                \"Type\":\"String\"
-            },
-            \"AWS::IoT::Certificate::Id\":{
-                \"Type\":\"String\"
-            }
-        },
-        \"Resources\":{
-            \"certificate\":{
-                \"Properties\":{
-                    \"CertificateId\":{
-                        \"Ref\":\"AWS::IoT::Certificate::Id\"
-                    },
-                    \"Status\":\"Active\"
-                },
-                \"Type\":\"AWS::IoT::Certificate\"
-            },
-            \"policy\":{
-                \"Properties\":{
-                    \"PolicyName\":\"MyIotPolicy\"
-                },
-                \"Type\":\"AWS::IoT::Policy\"
-            },
-            \"thing\":{
-                \"OverrideSettings\":{
-                    \"AttributePayload\":\"MERGE\",
-                    \"ThingGroups\":\"DO_NOTHING\",
-                    \"ThingTypeName\":\"REPLACE\"
-                },
-                \"Properties\":{
-                    \"AttributePayload\":{},
-                    \"ThingGroups\":[],
-                    \"ThingName\":{
-                        \"Fn::Join\":[
-                            \"\",
-                            [
-                                \"DemoGroup_\",
-                                {\"Ref\":\"SerialNumber\"}
-                            ]
-                        ]
-                    },
-                    \"ThingTypeName\":\"VirtualThings\"
-                },
-                \"Type\":\"AWS::IoT::Thing\"
-            }
-        }
-    }",
+    "templateBody": "{\"Parameters\":{\"SerialNumber\":{\"Type\":\"String\"},\"AWS::IoT::Certificate::Id\":{\"Type\":\"String\"}},\"Resources\":{\"certificate\":{\"Properties\":{\"CertificateId\":{\"Ref\":\"AWS::IoT::Certificate::Id\"},\"Status\":\"Active\"},\"Type\":\"AWS::IoT::Certificate\"},\"policy\":{\"Properties\":{\"PolicyName\":\"MyIotPolicy\"},\"Type\":\"AWS::IoT::Policy\"},\"thing\":{\"OverrideSettings\":{\"AttributePayload\":\"MERGE\",\"ThingGroups\":\"DO_NOTHING\",\"ThingTypeName\":\"REPLACE\"},\"Properties\":{\"AttributePayload\":{},\"ThingGroups\":[],\"ThingName\":{\"Fn::Join\":[\"\",[\"DemoGroup_\",{\"Ref\":\"SerialNumber\"}]]},\"ThingTypeName\":\"VirtualThings\"},\"Type\":\"AWS::IoT::Thing\"}}}",
     "isDefaultVersion": true
 }
 ```
@@ -2768,57 +2638,9 @@ Output:
     "creationDate": 1589308310.574,
     "lastModifiedDate": 1589308345.539,
     "defaultVersionId": 1,
-    "templateBody": "{
-        \"Parameters\":{
-            \"SerialNumber\":{
-                \"Type\":\"String\"
-            },
-            \"AWS::IoT::Certificate::Id\":{
-                \"Type\":\"String\"
-            }
-        },
-        \"Resources\":{
-            \"certificate\":{
-                \"Properties\":{
-                    \"CertificateId\":{
-                        \"Ref\":\"AWS::IoT::Certificate::Id\"
-                    },
-                    \"Status\":\"Active\"
-                },
-                \"Type\":\"AWS::IoT::Certificate\"
-            },
-            \"policy\":{
-                \"Properties\":{
-                    \"PolicyName\":\"MyIotPolicy\"
-                },
-                \"Type\":\"AWS::IoT::Policy\"
-            },
-            \"thing\":{
-                \"OverrideSettings\":{
-                    \"AttributePayload\":\"MERGE\",
-                    \"ThingGroups\":\"DO_NOTHING\",
-                    \"ThingTypeName\":\"REPLACE\"
-                },
-                \"Properties\":{
-                    \"AttributePayload\":{},
-                    \"ThingGroups\":[],
-                    \"ThingName\":{
-                        \"Fn::Join\":[
-                            \"\",
-                            [
-                                \"DemoGroup_\",
-                                {\"Ref\":\"SerialNumber\"}
-                            ]
-                        ]
-                    },
-                    \"ThingTypeName\":\"VirtualThings\"
-                },
-                \"Type\":\"AWS::IoT::Thing\"
-            }
-        }
-    }",
+    "templateBody": "{\"Parameters\":{\"SerialNumber\":{\"Type\":\"String\"},\"AWS::IoT::Certificate::Id\":{\"Type\":\"String\"}},\"Resources\":{\"certificate\":{\"Properties\":{\"CertificateId\":{\"Ref\":\"AWS::IoT::Certificate::Id\"},\"Status\":\"Active\"},\"Type\":\"AWS::IoT::Certificate\"},\"policy\":{\"Properties\":{\"PolicyName\":\"MyIotPolicy\"},\"Type\":\"AWS::IoT::Policy\"},\"thing\":{\"OverrideSettings\":{\"AttributePayload\":\"MERGE\",\"ThingGroups\":\"DO_NOTHING\",\"ThingTypeName\":\"REPLACE\"},\"Properties\":{\"AttributePayload\":{},\"ThingGroups\":[],\"ThingName\":{\"Fn::Join\":[\"\",[\"DemoGroup_\",{\"Ref\":\"SerialNumber\"}]]},\"ThingTypeName\":\"VirtualThings\"},\"Type\":\"AWS::IoT::Thing\"}}}",
     "enabled": true,
-    "provisioningRoleArn": "arn:aws:iam::571032923833:role/service-role/IoT_access"
+    "provisioningRoleArn": "arn:aws:iam::123456789012:role/service-role/IoT_access"
 }
 ```
 For more information, see [Provisioning devices that don't have device certificates using fleet provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/provision-wo-cert.html) in the *AWS IoT Core Developers Guide*.
@@ -2852,7 +2674,7 @@ Output:
     }
 }
 ```
-For more information, see [DescribeRoleAlias](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeRoleAlias.html) in the *AWS IoT API Reference*.
+For more information, see [Authorizing direct calls to AWS services using AWS IoT Core credential provider](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [DescribeRoleAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-role-alias.html) in *AWS CLI Command Reference*.
 
 ### `describe-scheduled-audit`
@@ -2895,7 +2717,7 @@ The following code example shows how to use `describe-security-profile`.
 
 **AWS CLI**
 **To get information about a security profile**
-The following `describe-security-profile` example gets information about the AWS IoT Device Defender security profile named `PossibleIssue.`
+The following `describe-security-profile` example gets information about the AWS IoT Device Defender security profile named `PossibleIssue`.
 
 ```
 aws iot describe-security-profile \
@@ -2967,10 +2789,10 @@ Output:
         "description": "This stream is used for Amazon FreeRTOS OTA Update 12345.",
         "files": [
             {
-                "fileId": "123",
+                "fileId": 123,
                 "s3Location": {
                     "bucket":"codesign-ota-bucket",
-                    "key":"48c67f3c-63bb-4f92-a98a-4ee0fbc2bef6"
+                    "key":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 }
             }
         ],
@@ -2980,7 +2802,7 @@ Output:
     }
 }
 ```
-For more information, see [DescribeStream](https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeStream.html) in the *AWS IoT API Reference*.
+For more information, see [MQTT-based file delivery](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [DescribeStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-stream.html) in *AWS CLI Command Reference*.
 
 ### `describe-thing-group`
@@ -3001,7 +2823,7 @@ Output:
 ```
 {
     "thingGroupName": "HalogenBulbs",
-    "thingGroupId": "f4ec6b84-b42b-499d-9ce1-4dbd4d4f6f6e",
+    "thingGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "thingGroupArn": "arn:aws:iot:us-west-2:123456789012:thinggroup/HalogenBulbs",
     "version": 1,
     "thingGroupProperties": {},
@@ -3038,7 +2860,7 @@ Output:
 ```
 {
     "thingTypeName": "LightBulb",
-    "thingTypeId": "ce3573b0-0a3c-45a7-ac93-4e0ce14cd190",
+    "thingTypeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "thingTypeArn": "arn:aws:iot:us-west-2:123456789012:thingtype/LightBulb",
     "thingTypeProperties": {
         "thingTypeDescription": "light bulb type",
@@ -3071,7 +2893,7 @@ Output:
 {
     "defaultClientId": "MyLightBulb",
     "thingName": "MyLightBulb",
-    "thingId": "40da2e73-c6af-406e-b415-15acae538797",
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyLightBulb",
     "thingTypeName": "LightBulb",
     "attributes": {
@@ -3161,7 +2983,7 @@ aws iot disable-topic-rule \
     --rule-name {{"MyPlantPiMoistureAlertRule"}}
 ```
 This command produces no output.
-For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-view-rules.html) in the *AWS IoT Developer Guide*.
+For more information, see [Viewing a rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-view-rules) in the *AWS IoT Developer Guide*.
 +  For API details, see [DisableTopicRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/disable-topic-rule.html) in *AWS CLI Command Reference*.
 
 ### `enable-topic-rule`
@@ -3178,7 +3000,7 @@ aws iot enable-topic-rule \
     --rule-name {{"MyPlantPiMoistureAlertRule"}}
 ```
 This command produces no output.
-For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-view-rules.html) in the *AWS IoT Developer Guide*.
+For more information, see [Viewing a rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-view-rules) in the *AWS IoT Developer Guide*.
 +  For API details, see [EnableTopicRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/enable-topic-rule.html) in *AWS CLI Command Reference*.
 
 ### `get-behavior-model-training-summaries`
@@ -3248,7 +3070,7 @@ The following code example shows how to use `get-cardinality`.
 
 **AWS CLI**
 **To return the approximate count of unique values that match the query**
-You can use the following setup script to create 10 things representing 10 temperature sensors. Each new thing has 3 attributes.
+The following `get-cardinality` example returns the number of racks that have temperature sensors reporting abnormal temperature values. To set up the example, you can use the following setup script to create 10 things representing 10 temperature sensors. Each new thing has 3 attributes.
 
 ```
 # Bash script. If in other shells, type `bash` before running
@@ -3273,8 +3095,8 @@ Example output of the setup script:
         "stateNormal": "true",
         "temperature": "70"
     },
-    "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/TempSensor0",
-    "thingId": "example1-90ab-cdef-fedc-ba987example"
+    "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/TempSensor0",
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 The following `get-cardinality` example queries the 10 sensors created by the setup script and returns the number of racks that have temperature sensors reporting abnormal temperature values. If the temperature value is below 60 or above 80, the temperature sensor is in an abnormal state.
@@ -3291,7 +3113,7 @@ Output:
     "cardinality": 2
 }
 ```
-For more information, see Querying for Aggregate Data<https://docs.aws.amazon.com/iot/latest/developerguide/index-aggregate.html> in the *AWS IoT Developer Guide*.
+For more information, see [Querying for aggregate data](https://docs.aws.amazon.com/iot/latest/developerguide/index-aggregate.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [GetCardinality](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-cardinality.html) in *AWS CLI Command Reference*.
 
 ### `get-effective-policies`
@@ -3316,41 +3138,7 @@ Output:
         {
             "policyName": "TemperatureSensorPolicy",
             "policyArn": "arn:aws:iot:us-west-2:123456789012:policy/TemperatureSensorPolicy",
-            "policyDocument": "{
-                \"Version\": \"2012-10-17\",
-                \"Statement\": [
-                    {
-                        \"Effect\": \"Allow\",
-                        \"Action\": [
-                            \"iot:Publish\",
-                            \"iot:Receive\"
-                        ],
-                        \"Resource\": [
-                            \"arn:aws:iot:us-west-2:123456789012:topic/topic_1\",
-                            \"arn:aws:iot:us-west-2:123456789012:topic/topic_2\"
-                        ]
-                    },
-                    {
-                        \"Effect\": \"Allow\",
-                        \"Action\": [
-                            \"iot:Subscribe\"
-                        ],
-                        \"Resource\": [
-                            \"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_1\",
-                            \"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_2\"
-                        ]
-                    },
-                    {
-                        \"Effect\": \"Allow\",
-                        \"Action\": [
-                            \"iot:Connect\"
-                        ],
-                        \"Resource\": [
-                            \"arn:aws:iot:us-west-2:123456789012:client/basicPubSub\"
-                        ]
-                    }
-                ]
-            }"
+            "policyDocument": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"iot:Publish\",\"iot:Receive\"],\"Resource\":[\"arn:aws:iot:us-west-2:123456789012:topic/topic_1\",\"arn:aws:iot:us-west-2:123456789012:topic/topic_2\"]},{\"Effect\":\"Allow\",\"Action\":[\"iot:Subscribe\"],\"Resource\":[\"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_1\",\"arn:aws:iot:us-west-2:123456789012:topicfilter/topic_2\"]},{\"Effect\":\"Allow\",\"Action\":[\"iot:Connect\"],\"Resource\":[\"arn:aws:iot:us-west-2:123456789012:client/basicPubSub\"]}]}"
         }
     ]
 }
@@ -3429,7 +3217,7 @@ Output:
     "logLevel": "ERROR"
 }
 ```
-For more information, see title in the *AWS IoT Developer Guide*.
+For more information, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [GetLoggingOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-logging-options.html) in *AWS CLI Command Reference*.
 
 ### `get-ota-update`
@@ -3452,19 +3240,19 @@ Output:
     "otaUpdateInfo": {
         "otaUpdateId": "ota12345",
         "otaUpdateArn": "arn:aws:iot:us-west-2:123456789012:otaupdate/itsaupdate",
-        "creationDate": 1557863215.995,
-        "lastModifiedDate": 1557863215.995,
+        "creationDate": "2019-05-14T19:46:55.995000+00:00",
+        "lastModifiedDate": "2019-05-14T19:46:55.995000+00:00",
         "description": "A critical update needed right away.",
         "targets": [
-           "device1",
-           "device2",
-           "device3",
-           "device4"
+            "device1",
+            "device2",
+            "device3",
+            "device4"
         ],
         "targetSelection": "SNAPSHOT",
         "protocols": ["HTTP"],
         "awsJobExecutionsRolloutConfig": {
-           "maximumPerMinute": 10
+            "maximumPerMinute": 10
         },
         "otaUpdateFiles": [
             {
@@ -3472,15 +3260,14 @@ Output:
                 "fileLocation": {
                     "stream": {
                         "streamId": "004",
-                        "fileId":123
+                        "fileId": 123
                     }
                 },
                 "codeSigning": {
-                    "awsSignerJobId": "48c67f3c-63bb-4f92-a98a-4ee0fbc2bef6"
+                    "awsSignerJobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 }
             }
         ],
-        "roleArn": "arn:aws:iam:123456789012:role/service-role/my_ota_role"
         "otaUpdateStatus": "CREATE_COMPLETE",
         "awsIotJobId": "job54321",
         "awsIotJobArn": "arn:aws:iot:us-west-2:123456789012:job/job54321",
@@ -3489,7 +3276,7 @@ Output:
     }
 }
 ```
-For more information, see [GetOTAUpdate](https://docs.aws.amazon.com/iot/latest/apireference/API_GetOTAUpdate.html) in the *AWS IoT API Reference*.
+For more information, see [FreeRTOS Over-the-Air Updates](https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-dev.html) in the *FreeRTOS User Guide*.
 +  For API details, see [GetOtaUpdate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-ota-update.html) in *AWS CLI Command Reference*.
 
 ### `get-percentiles`
@@ -3499,7 +3286,7 @@ The following code example shows how to use `get-percentiles`.
 
 **AWS CLI**
 **To group the aggregated values that match the query into percentile groupings**
-You can use the following setup script to create 10 things representing 10 temperature sensors. Each new thing has 1 attribute.
+The following `get-percentiles` example groups the temperature values reported by temperature sensors into percentile groupings. To set up the example, you can use the following setup script to create 10 things representing 10 temperature sensors. Each new thing has 1 attribute.
 
 ```
 # Bash script. If in other shells, type `bash` before running
@@ -3520,8 +3307,8 @@ Example output of the setup script:
     "attributes": {
         "temperature": "70"
     },
-    "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/TempSensor0",
-    "thingId": "example1-90ab-cdef-fedc-ba987example"
+    "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/TempSensor0",
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 The following `get-percentiles` example queries the 10 sensors created by the setup script and returns a value for each percentile group specified. The percentile group "10" contains the aggregated field value that occurs in approximately 10 percent of the values that match the query. In the following output, {"percent": 10.0, "value": 67.7} means approximately 10.0% of the temperature values are below 67.7.
@@ -3573,8 +3360,8 @@ The following code example shows how to use `get-policy-version`.
 The following `get-policy-version` example gets information about the first version of the specified policy.
 
 ```
-aws iot get-policy \
-    --policy-name {{UpdateDeviceCertPolicy}}
+aws iot get-policy-version \
+    --policy-name {{UpdateDeviceCertPolicy}} \
     --policy-version-id {{"1"}}
 ```
 Output:
@@ -3682,14 +3469,14 @@ The following `get-topic-rule-destination` example gets information about a topi
 
 ```
 aws iot get-topic-rule-destination \
-    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}}
+    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
     "topicRuleDestination": {
-        "arn": "arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "arn": "arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "DISABLED",
         "httpUrlProperties": {
             "confirmationUrl": "https://example.com"
@@ -3697,7 +3484,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with topic rule destinations](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html) in the *AWS IoT Developer Guide*.
+For more information, see [HTTP action destinations](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [GetTopicRuleDestination](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-topic-rule-destination.html) in *AWS CLI Command Reference*.
 
 ### `get-topic-rule`
@@ -3737,7 +3524,7 @@ Output:
     }
 }
 ```
-For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-view-rules.htmlget-topic-rule) in the *AWS IoT Developers Guide*.
+For more information, see [Viewing a rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-view-rules) in the *AWS IoT Developers Guide*.
 +  For API details, see [GetTopicRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-topic-rule.html) in *AWS CLI Command Reference*.
 
 ### `get-v2-logging-options`
@@ -3756,12 +3543,12 @@ Output:
 
 ```
 {
-    "roleArn": "arn:aws:iam::094249569039:role/service-role/iotLoggingRole",
+    "roleArn": "arn:aws:iam::123456789012:role/service-role/iotLoggingRole",
     "defaultLogLevel": "WARN",
     "disableAllLogs": false
 }
 ```
-For more information, see title in the *AWS IoT Developer Guide*.
+For more information, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [GetV2LoggingOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/get-v2-logging-options.html) in *AWS CLI Command Reference*.
 
 ### `list-active-violations`
@@ -3876,6 +3663,7 @@ Output:
     ]
 }
 ```
+For more information, see [Detect](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/device-defender-detect.html) in the *AWS IoT Device Defender Developer Guide*.
 +  For API details, see [ListActiveViolations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-active-violations.html) in *AWS CLI Command Reference*.
 
 ### `list-attached-policies`
@@ -4091,12 +3879,12 @@ The following code example shows how to use `list-audit-mitigation-actions-execu
 
 **AWS CLI**
 **To list the details of an audit mitigation action execution**
-An audit mitigation action task applies a mitigation action to one or more findings from an AWS IoT Device Defender audit. The following `list-audit-mitigation-actions-executions` example lists the details for the mitigation action task with the specified `taskId` and for the specified finding.
+The following `list-audit-mitigation-actions-executions` example lists the details for the mitigation action task with the specified `taskId` and for the specified finding. An audit mitigation action task applies a mitigation action to one or more findings from an AWS IoT Device Defender audit.
 
 ```
 aws iot list-audit-mitigation-actions-executions \
     --task-id {{myActionsTaskId}} \
-    --finding-id {{0edbaaec-2fe1-4cf5-abc9-d4c3e51f7464}}
+    --finding-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -4105,9 +3893,9 @@ Output:
     "actionsExecutions": [
         {
             "taskId": "myActionsTaskId",
-            "findingId": "0edbaaec-2fe1-4cf5-abc9-d4c3e51f7464",
+            "findingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "actionName": "ResetPolicyVersionAction",
-            "actionId": "1ea0b415-bef1-4a01-bd13-72fb63c59afb",
+            "actionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "status": "COMPLETED",
             "startTime": "2019-12-10T15:19:13.279000-08:00",
             "endTime": "2019-12-10T15:19:13.337000-08:00"
@@ -4115,7 +3903,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListAuditMitigationActionsExecutions (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-ListAuditMitigationActionsExecutions) in the *AWS IoT Developer Guide*.
+For more information, see [ListAuditMitigationActionsExecutions (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [ListAuditMitigationActionsExecutions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-audit-mitigation-actions-executions.html) in *AWS CLI Command Reference*.
 
 ### `list-audit-mitigation-actions-tasks`
@@ -4138,14 +3926,14 @@ Output:
 {
     "tasks": [
         {
-                "taskId": "0062f2d6-3999-488f-88c7-bef005414103",
+                "taskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "startTime": "2020-07-07T14:30:15.172000-07:00",
             "taskStatus": "COMPLETED"
         }
     ]
 }
 ```
-For more information, see [ListAuditMitigationActionsTasks (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-ListAuditMitigationActionsTasks) in the *AWS IoT Developer Guide*.
+For more information, see [ListAuditMitigationActionsTasks (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [ListAuditMitigationActionsTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-audit-mitigation-actions-tasks.html) in *AWS CLI Command Reference*.
 
 ### `list-audit-suppressions`
@@ -4281,7 +4069,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListAuthorizers](https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuthorizers.html) in the *AWS IoT API Reference*.
+For more information, see [Custom authentication and authorization](https://docs.aws.amazon.com/iot/latest/developerguide/custom-authentication.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListAuthorizers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-authorizers.html) in *AWS CLI Command Reference*.
 
 ### `list-billing-groups`
@@ -4367,7 +4155,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListCertificatesByCA](https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertificatesByCA.html) in the *AWS IoT API Reference*.
+For more information, see [Manage your CA certificates](https://docs.aws.amazon.com/iot/latest/developerguide/manage-your-CA-certs.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListCertificatesByCa](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-certificates-by-ca.html) in *AWS CLI Command Reference*.
 
 ### `list-certificates`
@@ -4426,6 +4214,7 @@ Output:
     ]
 }
 ```
+For more information, see [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-certificates.html) in *AWS CLI Command Reference*.
 
 ### `list-custom-metrics`
@@ -4438,8 +4227,7 @@ The following code example shows how to use `list-custom-metrics`.
 The following `list-custom-metrics` example lists all of your custom metrics.
 
 ```
-aws iot list-custom-metrics \
-    --region {{us-east-1}}
+aws iot list-custom-metrics
 ```
 Output:
 
@@ -4565,19 +4353,19 @@ Output:
 
 ```
 {
-     "executionSummaries": [
-         {
-             "thingArn": "arn:aws:iot:us-east-1:123456789012:thing/my_thing",
-             "jobExecutionSummary": {
-                 "status": "QUEUED",
-                 "queuedAt": "2022-03-07T15:58:42.195000-08:00",
-                 "lastUpdatedAt": "2022-03-07T15:58:42.195000-08:00",
-                 "executionNumber": 1,
-                 "retryAttempt": 0
-             }
-         }
-     ]
- }
+    "executionSummaries": [
+        {
+            "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/my_thing",
+            "jobExecutionSummary": {
+                "status": "QUEUED",
+                "queuedAt": "2022-03-07T15:58:42.195000-08:00",
+                "lastUpdatedAt": "2022-03-07T15:58:42.195000-08:00",
+                "executionNumber": 1,
+                "retryAttempt": 0
+            }
+        }
+    ]
+}
 ```
 For more information, see [Creating and Managing Jobs (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/manage-job-cli.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [ListJobExecutionsForJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-job-executions-for-job.html) in *AWS CLI Command Reference*.
@@ -4696,61 +4484,8 @@ Output:
     ]
 }
 ```
-For more information, see [ListMitigationActions (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-ListMitigationActions) in the *AWS IoT Developer Guide*.
+For more information, see [ListMitigationActions (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [ListMitigationActions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-mitigation-actions.html) in *AWS CLI Command Reference*.
-
-### `list-mitigations-actions`
-<a name="iot_ListMitigationsActions_cli_2_topic"></a>
-
-The following code example shows how to use `list-mitigations-actions`.
-
-**AWS CLI**
-**To list all defined mitigation actions**
-The following `list-mitigations-actions` example lists all defined mitigation actions for your AWS account and Region. For each action, the name, ARN, and creation date are listed.
-
-```
-aws iot list-mitigation-actions
-```
-Output:
-
-```
-{
-    "actionIdentifiers": [
-        {
-            "actionName": "DeactivateCACertAction",
-            "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/DeactivateCACertAction",
-            "creationDate": "2019-12-10T11:12:47.574000-08:00"
-        },
-        {
-            "actionName": "ResetPolicyVersionAction",
-            "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/ResetPolicyVersionAction",
-            "creationDate": "2019-12-10T11:11:48.920000-08:00"
-        },
-        {
-            "actionName": "PublishFindingToSNSAction",
-            "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/PublishFindingToSNSAction",
-            "creationDate": "2019-12-10T11:10:49.546000-08:00"
-        },
-        {
-            "actionName": "AddThingsToQuarantineGroupAction",
-            "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/AddThingsToQuarantineGroupAction",
-            "creationDate": "2019-12-10T11:09:35.999000-08:00"
-        },
-        {
-            "actionName": "UpdateDeviceCertAction",
-            "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/UpdateDeviceCertAction",
-            "creationDate": "2019-12-10T11:08:44.263000-08:00"
-        },
-        {
-            "actionName": "SampleMitigationAction",
-            "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/SampleMitigationAction",
-            "creationDate": "2019-12-10T11:03:41.840000-08:00"
-        }
-    ]
-}
-```
-For more information, see [ListMitigationActions (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-ListMitigationActions) in the *AWS IoT Developer Guide*.
-+  For API details, see [ListMitigationsActions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-mitigations-actions.html) in *AWS CLI Command Reference*.
 
 ### `list-ota-updates`
 <a name="iot_ListOtaUpdates_cli_2_topic"></a>
@@ -4777,7 +4512,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListOTAUpdates](https://docs.aws.amazon.com/iot/latest/apireference/API_ListOTAUpdates.html) in the *AWS IoT API Reference*.
+For more information, see [FreeRTOS Over-the-Air Updates](https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-dev.html) in the *FreeRTOS User Guide*.
 +  For API details, see [ListOtaUpdates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-ota-updates.html) in *AWS CLI Command Reference*.
 
 ### `list-outgoing-certificates`
@@ -4798,16 +4533,16 @@ Output:
 {
     "outgoingCertificates": [
         {
-            "certificateArn": "arn:aws:iot:us-west-2:030714055129:cert/488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142",
+            "certificateArn": "arn:aws:iot:us-west-2:123456789111:cert/488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142",
             "certificateId": "488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142",
-            "transferredTo": "030714055129",
+            "transferredTo": "123456789111",
             "transferDate": 1569427780.441,
             "creationDate": 1569363250.557
         }
     ]
 }
 ```
-For more information, see [ListOutgoingCertificates](https://docs.aws.amazon.com/iot/latest/apireference/API_ListOutgoingCertificates.html) in the *AWS IoT API Reference*.
+For more information, see [Transfer a certificate to another account](https://docs.aws.amazon.com/iot/latest/developerguide/transfer-cert.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListOutgoingCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-outgoing-certificates.html) in *AWS CLI Command Reference*.
 
 ### `list-policies`
@@ -4902,7 +4637,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListPrincipalThings](https://docs.aws.amazon.com/iot/latest/apireference/API_ListPrincipleThings.html) in the *AWS IoT API Reference*.
+For more information, see [Attach a thing or policy to a client certificate](https://docs.aws.amazon.com/iot/latest/developerguide/attach-to-cert.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListPrincipalThings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-principal-things.html) in *AWS CLI Command Reference*.
 
 ### `list-provisioning-template-versions`
@@ -4957,7 +4692,7 @@ Output:
 {
     "templates": [
         {
-            "templateArn": "arn:aws:iot:us-east-1:123456789012:provisioningtemplate/widget-template",
+            "templateArn": "arn:aws:iot:us-west-2:123456789012:provisioningtemplate/widget-template",
             "templateName": "widget-template",
             "description": "A provisioning template for widgets",
             "creationDate": 1574800471.367,
@@ -4992,7 +4727,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListRoleAliases](https://docs.aws.amazon.com/iot/latest/apireference/API_ListRoleAliases.html) in the *AWS IoT API Reference*.
+For more information, see [Authorizing direct calls to AWS services using AWS IoT Core credential provider](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListRoleAliases](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-role-aliases.html) in *AWS CLI Command Reference*.
 
 ### `list-scheduled-audits`
@@ -5121,7 +4856,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListStreams](https://docs.aws.amazon.com/iot/latest/apireference/API_ListStreams.html) in the *AWS IoT API Reference*.
+For more information, see [MQTT-based file delivery](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListStreams](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-streams.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -5135,7 +4870,7 @@ The following `list-tags-for-resource` example displays the tags and values asso
 
 ```
 aws iot list-tags-for-resource \
-    --resource-arn {{"arn:aws:iot:us-west-2:094249569039:thinggroup/LightBulbs"}}
+    --resource-arn {{"arn:aws:iot:us-west-2:123456789012:thinggroup/LightBulbs"}}
 ```
 Output:
 
@@ -5251,7 +4986,7 @@ The following code example shows how to use `list-thing-groups`.
 
 **AWS CLI**
 **To list the thing groups defined in your AWS account**
-The following `describe-thing-group` example lists all thing groups defined in your AWS account.
+The following `list-thing-groups` example lists all thing groups defined in your AWS account.
 
 ```
 aws iot list-thing-groups
@@ -5297,7 +5032,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListThingPrincipals](https://docs.aws.amazon.com/iot/latest/apireference/API_ListThingPrincipals.html) in the *AWS IoT API Reference*.
+For more information, see [Attach a thing or policy to a client certificate](https://docs.aws.amazon.com/iot/latest/developerguide/attach-to-cert.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListThingPrincipals](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-thing-principals.html) in *AWS CLI Command Reference*.
 
 ### `list-thing-types`
@@ -5501,7 +5236,7 @@ Output:
 {
     "destinationSummaries": [
         {
-            "arn": "arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "arn": "arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "status": "ENABLED",
             "httpUrlSummary": {
                 "confirmationUrl": "https://example.com"
@@ -5510,7 +5245,7 @@ Output:
     ]
 }
 ```
-For more information, see [Working with topic rule destinations](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html) in the *AWS IoT Developer Guide*.
+For more information, see [HTTP action destinations](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [ListTopicRuleDestinations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-topic-rule-destinations.html) in *AWS CLI Command Reference*.
 
 ### `list-topic-rules`
@@ -5547,7 +5282,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing Your Rules](https://docs.aws.amazon.com/iot/latest/developerguide/iot-view-rules.htmlget-topic-rule) in the *AWS IoT Developers Guide*.
+For more information, see [Viewing a rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-managae-rule.html#iot-view-rules) in the *AWS IoT Developers Guide*.
 +  For API details, see [ListTopicRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-topic-rules.html) in *AWS CLI Command Reference*.
 
 ### `list-v2-logging-levels`
@@ -5576,6 +5311,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [ListV2LoggingLevels](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-v2-logging-levels.html) in *AWS CLI Command Reference*.
 
 ### `list-violation-events`
@@ -5708,15 +5444,35 @@ aws iot register-ca-certificate \
     --ca-certificate {{file://rootCA.pem}} \
     --verification-cert {{file://verificationCert.pem}}
 ```
+Contents of `rootCA.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEwDQYJKoZI
+hvcNAQELBQAwTDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAO
+...
+EXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLE==
+-----END CERTIFICATE-----
+```
+Contents of `verificationCert.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEwDQYJKoZI
+hvcNAQELBQAwTDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAO
+...
+EXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLE==
+-----END CERTIFICATE-----
+```
 Output:
 
 ```
 {
     "certificateArn": "arn:aws:iot:us-west-2:123456789012:cacert/f4efed62c0142f16af278166f61962501165c4f0536295207426460058cd1467",
     "certificateId": "f4efed62c0142f16af278166f61962501165c4f0536295207426460058cd1467"
- }
+}
 ```
-For more information, see [RegisterCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCACertificate.html) in the *AWS IoT API Reference*.
+For more information, see [Register your CA certificate](https://docs.aws.amazon.com/iot/latest/developerguide/manage-your-CA-certs.html#register-CA-cert) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [RegisterCaCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/register-ca-certificate.html) in *AWS CLI Command Reference*.
 
 ### `register-certificate`
@@ -5733,15 +5489,35 @@ aws iot register-certificate \
     --certificate-pem {{file://deviceCert.pem}} \
     --ca-certificate-pem {{file://rootCA.pem}}
 ```
+Contents of `deviceCert.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEwDQYJKoZI
+hvcNAQELBQAwTDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAO
+...
+EXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLE==
+-----END CERTIFICATE-----
+```
+Contents of `rootCA.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEwDQYJKoZI
+hvcNAQELBQAwTDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAO
+...
+EXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLE==
+-----END CERTIFICATE-----
+```
 Output:
 
 ```
 {
     "certificateArn": "arn:aws:iot:us-west-2:123456789012:cert/488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142",
     "certificateId": "488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142"
- }
+}
 ```
-For more information, see [RegisterCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificate.html) in the *AWS IoT API Reference*.
+For more information, see [Register a client certificate manually](https://docs.aws.amazon.com/iot/latest/developerguide/manual-cert-registration.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [RegisterCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/register-certificate.html) in *AWS CLI Command Reference*.
 
 ### `register-thing`
@@ -5762,24 +5538,10 @@ Output:
 
 ```
 {
-    "certificatePem": "-----BEGIN CERTIFICATE-----\nMIIDWTCCAkGgAwIBAgIUYLk81I35cIppobpw
-HiOJ2jNjboIwDQYJKoZIhvcNAQEL\nBQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi
-5jb20g\nSW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTIwMDcyMzE2NDUw\nOVoXDTQ5MTIzMT
-IzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0\nZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
-AQoCggEBAO71uADhdBajqTmgrMV5\nmCFfBZQRMo1MdtVoZr2X+M4MzL+RARrtUzH9a2SMAckeX8KeblIOTKzORI
-RDXnyE\n6lVOwjgAsd0ku22rFxex4eG2ikha7pYYkvuToqA7L3TxItRvfKrxRI4ZfJoFPip4\nKqiuBJVNOGKTcQ
-Hd1RNOrddwwu6kFJLeKDmEXAMPLEdUF0N+qfR9yKnZQkm+g6Q2\nGXu7u0W3hn6nlRN8qVoka0uW12p53xM7oHVz
-Gf+cxKBxlbOhGkp6yCfTSkUBm3Sp\n9zLw35kiHXVm4EVpwgNlnk6XcIGIkw8a/iy4pzmvuGAANY1/uU/zgCjymw
-ZT5S30\nBV0CAwEAAaNgMF4wHwYDVR0jBBgwFoAUGx0tCcU3q2n1WXAuUCv6hugXjKswHQYD\nVR0OBBYEFOVtvZ
-9Aj2RYFnkX7Iu01XTRUdxgMAwGA1UdEwEB/wQCMAAwDgYDVR0P\nAQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IB
-AQCXCQcpOtubS5ftOsDMTcpP/jNX\nDHyArxmjpSc2aCdmm7WX59lTKWyAdxGAvqaDVWqTo0oXI7tZ8w7aINlGi5
-pXnifx\n3SBebMUoBbTktrC97yUaeL025mCFv8emDnTR/fE7PTsBKjW0g/rrfpwBxZLXDFwN\nnqkQjy3EDfifj2
-6j0xYIqqWMPogyn4srOCKynS5wMJuQZlHQOnabVwnwK4Y0Mflp\np9+4susFUR9aT3BT1AcIwqSpzhlKhh4Iz7ND
-kRn4amsUT210jg/zOO1Ow+BTHcVQ\nJly8XDu0CWSu04q6SnaBzHmlySIajxuRTP/AdfRouP1OXe+qlbPOBcvVvF
-8o\n-----END CERTIFICATE-----\n",
+    "certificatePem": "-----BEGIN CERTIFICATE-----\nMIIDWTCCAkGgAwIBAgIUYLk81I35cIppobpwHiOJ2jNjboIwDQYJKoZIhvcNAQEL\nBQAwTTFLMEkGA1UECwxCQW1hem9uIFdlYiBTZXJ2aWNlcyBPPUFtYXpvbi5jb20g\nSW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTIwMDcyMzE2NDUw\nOVoXDTQ5MTIzMTIzNTk1OVowHjEcMBoGA1UEAwwTQVdTIElvVCBDZXJ0aWZpY2F0\nZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAO71uADhdBajqTmgrMV5\nmCFfBZQRMo1MdtVoZr2X+M4MzL+RARrtUzH9a2SMAckeX8KeblIOTKzORIRDXnyE\n6lVOwjgAsd0ku22rFxex4eG2ikha7pYYkvuToqA7L3TxItRvfKrxRI4ZfJoFPip4\nKqiuBJVNOGKTcQHd1RNOrddwwu6kFJLeKDmEXAMPLEdUF0N+qfR9yKnZQkm+g6Q2\nGXu7u0W3hn6nlRN8qVoka0uW12p53xM7oHVzGf+cxKBxlbOhGkp6yCfTSkUBm3Sp\n9zLw35kiHXVm4EVpwgNlnk6XcIGIkw8a/iy4pzmvuGAANY1/uU/zgCjymwZT5S30\nBV0CAwEAAaNgMF4wHwYDVR0jBBgwFoAUGx0tCcU3q2n1WXAuUCv6hugXjKswHQYD\nVR0OBBYEFOVtvZ9Aj2RYFnkX7Iu01XTRUdxgMAwGA1UdEwEB/wQCMAAwDgYDVR0P\nAQH/BAQDAgeAMA0GCSqGSIb3DQEBCwUAA4IBAQCXCQcpOtubS5ftOsDMTcpP/jNX\nDHyArxmjpSc2aCdmm7WX59lTKWyAdxGAvqaDVWqTo0oXI7tZ8w7aINlGi5pXnifx\n3SBebMUoBbTktrC97yUaeL025mCFv8emDnTR/fE7PTsBKjW0g/rrfpwBxZLXDFwN\nnqkQjy3EDfifj26j0xYIqqWMPogyn4srOCKynS5wMJuQZlHQOnabVwnwK4Y0Mflp\np9+4susFUR9aT3BT1AcIwqSpzhlKhh4Iz7NDkRn4amsUT210jg/zOO1Ow+BTHcVQ\nJly8XDu0CWSu04q6SnaBzHmlySIajxuRTP/AdfRouP1OXe+qlbPOBcvVvF8o\n-----END CERTIFICATE-----\n",
     "resourceArns": {
-        "certificate": "arn:aws:iot:us-west-2:571032923833:cert/799a9ea048a1e6aea42b55EXAMPLEf8697b4bafcd77a318a3068e30404b9233c",
-        "thing": "arn:aws:iot:us-west-2:571032923833:thing/Register-thing-trial-1"
+        "certificate": "arn:aws:iot:us-west-2:123456789012:cert/799a9ea048a1e6aea42b55EXAMPLEf8697b4bafcd77a318a3068e30404b9233c",
+        "thing": "arn:aws:iot:us-west-2:123456789012:thing/Register-thing-trial-1"
     }
 }
 ```
@@ -5836,7 +5598,7 @@ aws iot remove-thing-from-thing-group \
     --thing-group-name {{DeadBulbs}}
 ```
 This command produces no output.
-For more information, see Thing Groups <https://docs.aws.amazon.com/iot/latest/developerguide/thing-groups.html > in the *AWS IoT Developer Guide*.
+For more information, see [Static thing groups](https://docs.aws.amazon.com/iot/latest/developerguide/thing-groups.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [RemoveThingFromThingGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/remove-thing-from-thing-group.html) in *AWS CLI Command Reference*.
 
 ### `replace-topic-rule`
@@ -5878,7 +5640,7 @@ Output:
     "things": [
         {
             "thingName": "MyLightBulb",
-            "thingId": "40da2e73-c6af-406e-b415-15acae538797",
+            "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "thingTypeName": "LightBulb",
             "thingGroupNames": [
                 "LightBulbs",
@@ -5894,7 +5656,7 @@ Output:
         },
         {
             "thingName": "ThirdBulb",
-            "thingId": "615c8455-33d5-40e8-95fd-3ee8b24490af",
+            "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "thingTypeName": "LightBulb",
             "attributes": {
                 "model": "123",
@@ -5906,7 +5668,7 @@ Output:
         },
         {
             "thingName": "MyOtherLightBulb",
-            "thingId": "6dae0d3f-40c1-476a-80c4-1ed24ba6aa11",
+            "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "thingTypeName": "LightBulb",
             "attributes": {
                 "model": "123",
@@ -5943,7 +5705,7 @@ Output:
     "authorizerArn": "arn:aws:iot:us-west-2:123456789012:authorizer/CustomAuthorizer"
 }
 ```
-For more information, see [CreateDefaultAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDefaultAuthorizer.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [SetDefaultAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/set-default-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `set-default-policy-version`
@@ -5961,6 +5723,7 @@ aws iot set-default-policy-version \
     --policy-version-id {{2}}
 ```
 This command produces no output.
+For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [SetDefaultPolicyVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/set-default-policy-version.html) in *AWS CLI Command Reference*.
 
 ### `set-v2-logging-level`
@@ -5978,6 +5741,7 @@ aws iot set-v2-logging-level \
     --log-level {{WARN}}
 ```
 This command produces no output.
+For more information, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html#fine-logging-cli) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [SetV2LoggingLevel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/set-v2-logging-level.html) in *AWS CLI Command Reference*.
 
 ### `set-v2-logging-options`
@@ -5992,9 +5756,10 @@ The following `set-v2-logging-options` example sets the default logging verbosit
 ```
 aws iot set-v2-logging-options \
     --default-log-level {{ERROR}} \
-    --role-arn {{"arn:aws:iam::094249569039:role/service-role/iotLoggingRole"}}
+    --role-arn {{"arn:aws:iam::123456789012:role/service-role/iotLoggingRole"}}
 ```
 This command produces no output.
+For more information, see [Configure AWS IoT logging](https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html#global-logging-cli) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [SetV2LoggingOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/set-v2-logging-options.html) in *AWS CLI Command Reference*.
 
 ### `start-audit-mitigation-actions-task`
@@ -6009,7 +5774,7 @@ The following `start-audit-mitigation-actions-task` example applies the `ResetPo
 ```
 aws iot start-audit-mitigation-actions-task \
     --task-id {{"myActionsTaskId"}} \
-    --target "findingIds=[\"0edbaaec-2fe1-4cf5-abc9-d4c3e51f7464\"]" \
+    --target "findingIds=[\"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111\"]" \
     --audit-check-to-actions-mapping "IOT_POLICY_OVERLY_PERMISSIVE_CHECK=[\"ResetPolicyVersionAction\"]" \
     --client-request-token {{"adhadhahda"}}
 ```
@@ -6020,7 +5785,7 @@ Output:
     "taskId": "myActionsTaskId"
 }
 ```
-For more information, see [StartAuditMitigationActionsTask (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-StartAuditMitigationActionsTask) in the *AWS IoT Developer Guide*.
+For more information, see [StartAuditMitigationActionsTask (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [StartAuditMitigationActionsTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/start-audit-mitigation-actions-task.html) in *AWS CLI Command Reference*.
 
 ### `start-on-demand-audit-task`
@@ -6058,7 +5823,7 @@ The following `tag-resource` example applies the tag with a key `Assembly` and t
 ```
 aws iot tag-resource \
     --tags Key=Assembly,Value="Fact1NW" \
-    --resource-arn {{"arn:aws:iot:us-west-2:094249569039:thinggroup/LightBulbs"}}
+    --resource-arn {{"arn:aws:iot:us-west-2:123456789012:thinggroup/LightBulbs"}}
 ```
 This command produces no output.
 For more information, see [Tagging Your AWS IoT Resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Developer Guide*.
@@ -6075,7 +5840,7 @@ The following `test-authorization` example tests the AWS IoT policies associated
 
 ```
 aws iot test-authorization \
-    --auth-infos {{actionType=CONNECT,resources=arn:aws:iot:us-east-1:123456789012:client/client1}} \
+    --auth-infos {{actionType=CONNECT,resources=arn:aws:iot:us-west-2:123456789012:client/client1}} \
     --principal {{arn:aws:iot:us-west-2:123456789012:cert/aab1068f7f43ac3e3cae4b3a8aa3f308d2a750e6350507962e32c1eb465d9775}}
 ```
 Output:
@@ -6087,7 +5852,7 @@ Output:
             "authInfo": {
                 "actionType": "CONNECT",
                 "resources": [
-                    "arn:aws:iot:us-east-1:123456789012:client/client1"
+                    "arn:aws:iot:us-west-2:123456789012:client/client1"
                 ]
             },
             "allowed": {
@@ -6122,7 +5887,7 @@ Output:
     ]
 }
 ```
-For more information, see [TestAuthorization](https://docs.aws.amazon.com/iot/latest/apireference/API_TestAuthorization.html) in the *AWS IoT API Reference*.
+For more information, see [AWS IoT Core policies](https://docs.aws.amazon.com/iot/latest/developerguide/iot-policies.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [TestAuthorization](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/test-authorization.html) in *AWS CLI Command Reference*.
 
 ### `test-invoke-authorizer`
@@ -6147,13 +5912,13 @@ Output:
     "isAuthenticated": true,
     "principalId": "principalId",
     "policyDocuments": [
-        "{"Version":"2012-10-17",		 	 	 "Statement":[{"Action":"iot:Publish","Effect":"Allow","Resource":"arn:aws:iot:us-west-2:123456789012:topic/customauthtesting"}]}"
+        "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Action\":\"iot:Publish\",\"Effect\":\"Allow\",\"Resource\":\"arn:aws:iot:us-west-2:123456789012:topic/customauthtesting\"}]}"
     ],
     "refreshAfterInSeconds": 600,
     "disconnectAfterInSeconds": 3600
 }
 ```
-For more information, see [TestInvokeAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_TestInvokeAuthorizers.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [TestInvokeAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/test-invoke-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `transfer-certificate`
@@ -6168,13 +5933,13 @@ The following `transfer-certificate` example transfers a device certificate to a
 ```
 aws iot transfer-certificate \
     --certificate-id {{488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142}} \
-    --target-aws-account {{030714055129}}
+    --target-aws-account {{123456789111}}
 ```
 Output:
 
 ```
 {
-    "transferredCertificateArn": "arn:aws:iot:us-west-2:030714055129:cert/488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142"
+    "transferredCertificateArn": "arn:aws:iot:us-west-2:123456789111:cert/488b6a7f2acdeb00a77384e63c4e40b18b1b3caaae57b7272ba44c45e3448142"
 }
 ```
 For more information, see [Transfer a certificate to another account](https://docs.aws.amazon.com/iot/latest/developerguide/transfer-cert.html) in the *AWS IoT Core Developer Guide*.
@@ -6190,7 +5955,9 @@ The following code example shows how to use `untag-resource`.
 The following `untag-resource` example removes the tag `MyTag` and its value from the thing group `LightBulbs`.
 
 ```
-command
+aws iot untag-resource \
+    --resource-arn {{"arn:aws:iot:us-west-2:123456789012:thinggroup/LightBulbs"}} \
+    --tag-keys {{MyTag}}
 ```
 This command produces no output.
 For more information, see [Tagging Your AWS IoT Resources](https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.html) in the *AWS IoT Developer Guide*.
@@ -6263,7 +6030,7 @@ Output:
     "authorizerArn": "arn:aws:iot:us-west-2:123456789012:authorizer/CustomAuthorizer2"
 }
 ```
-For more information, see [UpdateAuthorizer](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateAuthorizer.html) in the *AWS IoT API Reference*.
+For more information, see [Creating and managing custom authorizers (CLI)](https://docs.aws.amazon.com/iot/latest/developerguide/config-custom-auth.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateAuthorizer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-authorizer.html) in *AWS CLI Command Reference*.
 
 ### `update-billing-group`
@@ -6305,7 +6072,7 @@ aws iot update-ca-certificate \
     --new-status {{ACTIVE}}
 ```
 This command produces no output.
-For more information, see [UpdateCACertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCACertificate.html) in the *AWS IoT API Reference*.
+For more information, see [Manage your CA certificates](https://docs.aws.amazon.com/iot/latest/developerguide/manage-your-CA-certs.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateCaCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-ca-certificate.html) in *AWS CLI Command Reference*.
 
 ### `update-certificate`
@@ -6323,7 +6090,7 @@ aws iot update-certificate \
     --new-status {{INACTIVE}}
 ```
 This command produces no output.
-For more information, see [UpdateCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertificate.html) in the *AWS IoT API Reference*.
+For more information, see [Activate or deactivate a client certificate](https://docs.aws.amazon.com/iot/latest/developerguide/activate-or-deactivate-device-cert.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html) in *AWS CLI Command Reference*.
 
 ### `update-custom-metric`
@@ -6338,15 +6105,14 @@ The following `update-custom-metric` example updates a custom metric to have a n
 ```
 aws iot update-custom-metric \
     --metric-name {{batteryPercentage}} \
-    --display-name '{{remaining battery percentage on device}}' \
-    --region {{us-east-1}}
+    --display-name '{{remaining battery percentage on device}}'
 ```
 Output:
 
 ```
 {
     "metricName": "batteryPercentage",
-    "metricArn": "arn:aws:iot:us-east-1:1234564789012:custommetric/batteryPercentage",
+    "metricArn": "arn:aws:iot:us-west-2:1234564789012:custommetric/batteryPercentage",
     "metricType": "number",
     "displayName": "remaining battery percentage on device",
     "creationDate": "2020-11-17T23:01:35.110000-08:00",
@@ -6384,7 +6150,7 @@ Output:
     "arn": "arn:aws:iot:us-west-2:1234564789012:dimension/TopicFilterForAuthMessages"
 }
 ```
-For more information, see [Scoping metrics in security profiles using dimensions](https://docs.aws.amazon.com/iot/latest/developerguide/scoping-security-behavior.html) in the *AWS IoT Core Developer Guide*.
+For more information, see [Scoping metrics in security profiles using dimensions](https://docs.aws.amazon.com/iot-device-defender/latest/devguide/scoping-security-behavior.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateDimension](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-dimension.html) in *AWS CLI Command Reference*.
 
 ### `update-domain-configuration`
@@ -6423,7 +6189,7 @@ The following `update-dynamic-thing-group` example updates the specified dynamic
 
 ```
 aws iot update-dynamic-thing-group \
-    --thing-group-name {{"RoomTooWarm"}}
+    --thing-group-name {{"RoomTooWarm"}} \
     --thing-group-properties "thingGroupDescription=\"This thing group contains rooms warmer than 65F.\"" \
     --query-string {{"attributes.temperature>65"}}
 ```
@@ -6464,7 +6230,7 @@ The following code example shows how to use `update-indexing-configuration`.
 The following `update-indexing-configuration` example enables thing indexing to support searching registry data, shadow data, and thing connectivity status using the AWS\_Things index.
 
 ```
-aws iot update-indexing-configuration
+aws iot update-indexing-configuration \
     --thing-indexing-configuration {{thingIndexingMode=REGISTRY_AND_SHADOW,thingConnectivityIndexingMode=STATUS}}
 ```
 This command produces no output.
@@ -6536,10 +6302,10 @@ Output:
 ```
 {
     "actionArn": "arn:aws:iot:us-west-2:123456789012:mitigationaction/AddThingsToQuarantineGroupAction",
-    "actionId": "2fd2726d-98e1-4abf-b10f-09465ccd6bfa"
+    "actionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [UpdateMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html#dd-api-iot-UpdateMitigationAction) in the *AWS IoT Developer Guide*.
+For more information, see [UpdateMitigationAction (Mitigation Action Commands)](https://docs.aws.amazon.com/iot/latest/developerguide/mitigation-action-commands.html) in the *AWS IoT Developer Guide*.
 +  For API details, see [UpdateMitigationAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-mitigation-action.html) in *AWS CLI Command Reference*.
 
 ### `update-provisioning-template`
@@ -6556,7 +6322,7 @@ aws iot update-provisioning-template \
     --template-name {{widget-template}} \
     --enabled \
     --description {{"An updated provisioning template for widgets"}} \
-    --provisioning-role-arn {{arn:aws:iam::504350838278:role/Provision_role}}
+    --provisioning-role-arn {{arn:aws:iam::123456789012:role/Provision_role}}
 ```
 This command produces no output.
 For more information, see [AWS IoT Secure Tunneling](https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html) in the *AWS IoT Core Developer Guide*.
@@ -6584,7 +6350,7 @@ Output:
     "roleAliasArn": "arn:aws:iot:us-west-2:123456789012:rolealias/LightBulbRole"
 }
 ```
-For more information, see [UpdateRoleAlias](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateRoleAlias.html) in the *AWS IoT API Reference*.
+For more information, see [Authorizing direct calls to AWS services using AWS IoT Core credential provider](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateRoleAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-role-alias.html) in *AWS CLI Command Reference*.
 
 ### `update-scheduled-audit`
@@ -6692,7 +6458,7 @@ Contents of `update-stream.json`:
             "fileId": 123,
             "s3Location": {
                 "bucket":"codesign-ota-bucket",
-                "key":"48c67f3c-63bb-4f92-a98a-4ee0fbc2bef6"
+                "key":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         }
     ]
@@ -6709,7 +6475,7 @@ Output:
     "streamVersion": 2
 }
 ```
-For more information, see [UpdateStream](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateStream.html) in the *AWS IoT API Reference*.
+For more information, see [MQTT-based file delivery](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt-based-file-delivery.html) in the *AWS IoT Core Developer Guide*.
 +  For API details, see [UpdateStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-stream.html) in *AWS CLI Command Reference*.
 
 ### `update-thing-group`
@@ -6770,7 +6536,7 @@ aws iot update-thing \
     --thing-type-name {{"LightBulb"}} \
     --attribute-payload "{"attributes": {"wattage":"75", "model":"123"}}"
 ```
-This command does not produce output. Use the `describe-thing` command to see the result.
+This command produces no output. Use the `describe-thing` command to see the result.
 For more information, see [Thing Types](https://docs.aws.amazon.com/iot/latest/developerguide/thing-types.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [UpdateThing](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-thing.html) in *AWS CLI Command Reference*.
 
@@ -6785,31 +6551,31 @@ The following `update-topic-rule-destination` example enables traffic to a topic
 
 ```
 aws iot update-topic-rule-destination \
-    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}} \
+    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --status {{ENABLED}}
 ```
 This command produces no output.
-For more information, see [Enabling a topic rule destination](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html#enable-destination) in the *AWS IoT Developer Guide*.
+For more information, see [Confirming HTTP action destinations](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html#http-action-destination-confirming) in the *AWS IoT Developer Guide*.
 **Example 2: To disable a topic rule destination**
 The following `update-topic-rule-destination` example disables traffic to a topic rule destination.
 
 ```
 aws iot update-topic-rule-destination \
-    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}} \
+    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --status {{DISABLED}}
 ```
 This command produces no output.
-For more information, see [Disabling a topic rule destination](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html#disable-destination) in the *AWS IoT Developer Guide*.
+For more information, see [Disabling and deleting an HTTP action destination](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html#http-action-destination-deleting) in the *AWS IoT Developer Guide*.
 **Example 3: To send a new confirmation message**
 The following `update-topic-rule-destination` example sends a new confirmation message for a topic rule destination.
 
 ```
 aws iot update-topic-rule-destination \
-    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}} \
+    --arn {{"arn:aws:iot:us-west-2:123456789012:ruledestination/http/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --status {{IN_PROGRESS}}
 ```
 This command produces no output.
-For more information, see [Sending a new confirmation message](https://docs.aws.amazon.com/iot/latest/developerguide/rule-destination.html#trigger-confirm) in the *AWS IoT Developer Guide*.
+For more information, see [Sending a new confirmation request](https://docs.aws.amazon.com/iot/latest/developerguide/http-action-destination.html#trigger-confirm) in the *AWS IoT Developer Guide*.
 +  For API details, see [UpdateTopicRuleDestination](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-topic-rule-destination.html) in *AWS CLI Command Reference*.
 
 ### `validate-security-profile-behaviors`

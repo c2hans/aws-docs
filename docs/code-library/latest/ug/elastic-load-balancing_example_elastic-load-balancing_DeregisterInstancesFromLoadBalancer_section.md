@@ -14,11 +14,12 @@ The following code examples show how to use `DeregisterInstancesFromLoadBalancer
 
 **AWS CLI**
 **To deregister instances from a load balancer**
-This example deregisters the specified instance from the specified load balancer.
-Command:
+The following `deregister-instances-from-load-balancer` example deregisters the specified instance from the specified load balancer.
 
 ```
-aws elb deregister-instances-from-load-balancer --load-balancer-name {{my-load-balancer}} --instances {{i-d6f6fae3}}
+aws elb deregister-instances-from-load-balancer \
+    --load-balancer-name {{my-load-balancer}} \
+    --instances {{i-d6f6fae3}}
 ```
 Output:
 
@@ -34,6 +35,7 @@ Output:
     ]
 }
 ```
+For more information, see [Register instances with your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-deregister-register-instances.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [DeregisterInstancesFromLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/deregister-instances-from-load-balancer.html) in *AWS CLI Command Reference*.
 
 ------

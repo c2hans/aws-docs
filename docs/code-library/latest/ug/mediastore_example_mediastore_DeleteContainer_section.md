@@ -21,7 +21,6 @@ aws mediastore delete-container \
     --container-name=ExampleLiveDemo
 ```
 This command produces no output.
-For more information, see [Deleting a Container](https://docs.aws.amazon.com/mediastore/latest/ug/containers-delete.html) in the *AWS Elemental MediaStore User Guide*.
 +  For API details, see [DeleteContainer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediastore/delete-container.html) in *AWS CLI Command Reference*.
 
 ------

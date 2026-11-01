@@ -30,17 +30,17 @@ The following `cancel-key-deletion` example cancels the scheduled deletion of a 
 
 ```
 aws kms cancel-key-deletion \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab"
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 When the `cancel-key-deletion` command succeeds, the scheduled deletion is canceled. However, the key state of the KMS key is `Disabled`, so you can't use the KMS key in cryptographic operations. To restore its functionality, use the `enable-key` command .
-For more information, see [Scheduling and canceling key deletion](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys.html#deleting-keys-scheduling-key-deletion) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Scheduling and canceling key deletion](https://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys-scheduling-key-deletion.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [CancelKeyDeletion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/cancel-key-deletion.html) in *AWS CLI Command Reference*.
 
 ### `connect-custom-key-store`
@@ -57,7 +57,7 @@ You can use this command to connect an AWS CloudHSM key store or an external key
 aws kms connect-custom-key-store \
     --custom-key-store-id {{cks-1234567890abcdef0}}
 ```
-This command does not return any output. To verify that the command was effective, use the `describe-custom-key-stores` command.
+This command produces no output. To verify that the command was effective, use the `describe-custom-key-stores` command.
 For information about connecting an AWS CloudHSM key store, see [Connecting and disconnecting an AWS CloudHSM key store](https://docs.aws.amazon.com/kms/latest/developerguide/disconnect-keystore.html) in the *AWS Key Management Service Developer Guide*.
 For information about connecting an external key store, see [Connecting and disconnecting an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/xks-connect-disconnect.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [ConnectCustomKeyStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/connect-custom-key-store.html) in *AWS CLI Command Reference*.
@@ -69,15 +69,15 @@ The following code example shows how to use `create-alias`.
 
 **AWS CLI**
 **To create an alias for a KMS key**
-The following `create-alias` command creates an alias named `example-alias` for the KMS key identified by key ID `1234abcd-12ab-34cd-56ef-1234567890ab`.
+The following `create-alias` example creates an alias named `example-alias` for the KMS key identified by key ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 Alias names must begin with `alias/`. Do not use alias names that begin with `alias/aws`; these are reserved for use by AWS.
 
 ```
 aws kms create-alias \
     --alias-name {{alias/example-alias}} \
-    --target-key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --target-key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-This command doesn't return any output. To see the new alias, use the `list-aliases` command.
+This command produces no output. To see the new alias, use the `list-aliases` command.
 For more information, see [Using aliases](https://docs.aws.amazon.com/kms/latest/developerguide/kms-alias.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [CreateAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/create-alias.html) in *AWS CLI Command Reference*.
 
@@ -98,11 +98,21 @@ aws kms create-custom-key-store \
     --key-store-password {{kmsPswd}} \
     --trust-anchor-certificate {{file://customerCA.crt}}
 ```
+Contents of `customerCA.crt`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIDWTCCAkGgAwIBAgIUEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEwDQYJKoZI
+hvcNAQELBQAwTDELMAkGA1UEBhMCVVMxEzARBgNVBAgMCldhc2hpbmd0b24xEDAO
+...
+EXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLEEXAMPLE==
+-----END CERTIFICATE-----
+```
 Output:
 
 ```
 {
-    "CustomKeyStoreId": cks-1234567890abcdef0
+    "CustomKeyStoreId": "cks-1234567890abcdef0"
 }
 ```
 For more information, see [Creating an AWS CloudHSM key store](https://docs.aws.amazon.com/kms/latest/developerguide/create-keystore.html) in the *AWS Key Management Service Developer Guide*.
@@ -129,10 +139,10 @@ Output:
 
 ```
 {
-    "CustomKeyStoreId": cks-2234567890abcdef0
+    "CustomKeyStoreId": "cks-2234567890abcdef0"
 }
 ```
-For more information, see [Creating an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/create-keystorecreate-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Create an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/create-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 3: To create an external key store with VPC endpoint service connectivity**
 The following `create-custom-key-store` example creates an external key store (XKS) that uses an Amazon VPC endpoint service to communicate with AWS KMS.
 NOTE: If you use AWS CLI version 1.0, run the following command before specifying a parameter with an HTTP or HTTPS value, such as the XksProxyUriEndpoint parameter.
@@ -149,17 +159,17 @@ aws kms create-custom-key-store \
     --xks-proxy-connectivity {{VPC_ENDPOINT_SERVICE}} \
     --xks-proxy-uri-endpoint {{"https://myproxy-private.xks.example.com"}} \
     --xks-proxy-uri-path {{"/kms/xks/v1"}} \
-    --xks-proxy-vpc-endpoint-service-name {{"com.amazonaws.vpce.us-east-1.vpce-svc-example1"}} \
+    --xks-proxy-vpc-endpoint-service-name {{"com.amazonaws.vpce.us-west-2.vpce-svc-example1"}} \
     --xks-proxy-authentication-credential {{"AccessKeyId=ABCDE12345670EXAMPLE, RawSecretAccessKey=DXjSUawnel2fr6SKC7G25CNxTyWKE5PF9XX6H/u9pSo="}}
 ```
 Output:
 
 ```
 {
-    "CustomKeyStoreId": cks-3234567890abcdef0
+    "CustomKeyStoreId": "cks-3234567890abcdef0"
 }
 ```
-For more information, see [Creating an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/create-keystorecreate-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Create an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/create-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [CreateCustomKeyStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/create-custom-key-store.html) in *AWS CLI Command Reference*.
 
 ### `create-grant`
@@ -169,11 +179,11 @@ The following code example shows how to use `create-grant`.
 
 **AWS CLI**
 **To create a grant**
-The following `create-grant` example creates a grant that allows the `exampleUser` user to use the `decrypt` command on the `1234abcd-12ab-34cd-56ef-1234567890ab` example KMS key. The retiring principal is the `adminRole` role. The grant uses the `EncryptionContextSubset` grant constraint to allow this permission only when the encryption context in the `decrypt` request includes the `"Department": "IT"` key-value pair.
+The following `create-grant` example creates a grant that allows the `exampleUser` user to use the `decrypt` command on the `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111` example KMS key. The retiring principal is the `adminRole` role. The grant uses the `EncryptionContextSubset` grant constraint to allow this permission only when the encryption context in the `decrypt` request includes the `"Department": "IT"` key-value pair.
 
 ```
 aws kms create-grant \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --grantee-principal {{arn:aws:iam::123456789012:user/exampleUser}} \
     --operations {{Decrypt}} \
     --constraints {{EncryptionContextSubset={Department=IT}}} \
@@ -200,7 +210,7 @@ The following code example shows how to use `create-key`.
 **Example 1: To create a customer managed KMS key in AWS KMS**
 The following `create-key` example creates a symmetric encryption KMS key.
 To create the basic KMS key, a symmetric encryption key, you do not need to specify any parameters. The default values for those parameters create a symmetric encryption key.
-Because this command doesn't specify a key policy, the KMS key gets the [default key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html#key-policy-default) for programmatically created KMS keys. To view the key policy, use the `get-key-policy` command. To change the key policy, use the `put-key-policy` command.
+Because this command doesn't specify a key policy, the KMS key gets the [default key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-default.html) for programmatically created KMS keys. To view the key policy, use the `get-key-policy` command. To change the key policy, use the `put-key-policy` command.
 
 ```
 aws kms create-key
@@ -211,20 +221,20 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "AWSAccountId": "111122223333",
-        "Arn": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+        "AWSAccountId": "123456789012",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationDate": "2017-07-05T14:04:55-07:00",
         "CurrentKeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
         "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
         "Description": "",
         "Enabled": true,
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "SYMMETRIC_DEFAULT",
         "KeyState": "Enabled",
         "KeyUsage": "ENCRYPT_DECRYPT",
         "MultiRegion": false,
-        "Origin": "AWS_KMS"
+        "Origin": "AWS_KMS",
         "EncryptionAlgorithms": [
             "SYMMETRIC_DEFAULT"
         ]
@@ -234,20 +244,20 @@ Output:
 Note: The `create-key` command does not let you specify an alias, To create an alias for the new KMS key, use the `create-alias` command.
 For more information, see [Creating keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html) in the *AWS Key Management Service Developer Guide*.
 **Example 2: To create an asymmetric RSA KMS key for encryption and decryption**
-The following `create-key` example creates a KMS key that contains an asymmetric RSA key pair for encryption and decryption. The key spec and key usage can't be changed after the key is created.:
+The following `create-key` example creates a KMS key that contains an asymmetric RSA key pair for encryption and decryption. The key spec and key usage can't be changed after the key is created.
 
 ```
 aws kms create-key \
-   --key-spec {{RSA_4096}} \
-   --key-usage {{ENCRYPT_DECRYPT}}
+    --key-spec {{RSA_4096}} \
+    --key-usage {{ENCRYPT_DECRYPT}}
 ```
 Output:
 
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
         "CreationDate": "2021-04-05T14:04:55-07:00",
         "CustomerMasterKeySpec": "RSA_4096",
         "Description": "",
@@ -256,7 +266,7 @@ Output:
             "RSAES_OAEP_SHA_1",
             "RSAES_OAEP_SHA_256"
         ],
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "RSA_4096",
         "KeyState": "Enabled",
@@ -268,7 +278,7 @@ Output:
 ```
 For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
 **Example 3: To create an asymmetric elliptic curve KMS key for signing and verification**
-To create an asymmetric KMS key that contains an asymmetric elliptic curve (ECC) key pair for signing and verification. The `--key-usage` parameter is required even though `SIGN_VERIFY` is the only valid value for ECC KMS keys. The key spec and key usage can't be changed after the key is created.:
+The following `create-key` example creates an asymmetric KMS key that contains an asymmetric elliptic curve (ECC) key pair for signing and verification. The `--key-usage` parameter is required even though `SIGN_VERIFY` is the only valid value for ECC KMS keys. The key spec and key usage can't be changed after the key is created.
 
 ```
 aws kms create-key \
@@ -280,13 +290,13 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
         "CreationDate": "2019-12-02T07:48:55-07:00",
         "CustomerMasterKeySpec": "ECC_NIST_P521",
         "Description": "",
         "Enabled": true,
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "ECC_NIST_P521",
         "KeyState": "Enabled",
@@ -301,7 +311,7 @@ Output:
 ```
 For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
 **Example 4: To create an asymmetric ML-DSA KMS key for signing and verification**
-This example creates a module-lattice digital signature algorithm (ML-DSA) key for signing and verification. The key-usage parameter is required even though `SIGN_VERIFY` is the only valid value for ML-DSA keys.
+The following `create-key` example creates a module-lattice digital signature algorithm (ML-DSA) key for signing and verification. The key-usage parameter is required even though `SIGN_VERIFY` is the only valid value for ML-DSA keys.
 
 ```
 aws kms create-key \
@@ -313,12 +323,12 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
         "CreationDate": "2019-12-02T07:48:55-07:00",
         "Description": "",
         "Enabled": true,
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "ML_DSA_65",
         "KeyState": "Enabled",
@@ -345,13 +355,13 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
         "CreationDate": "2022-04-05T14:04:55-07:00",
         "CustomerMasterKeySpec": "HMAC_384",
         "Description": "",
         "Enabled": true,
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "HMAC_384",
         "KeyState": "Enabled",
@@ -377,15 +387,15 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-west-2:111122223333:key/mrk-1234abcd12ab34cd56ef12345678990ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/mrk-1234abcd12ab34cd56ef12345678990ab",
+        "AWSAccountId": "123456789012",
         "CreationDate": "2021-09-02T016:15:21-09:00",
         "CurrentKeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
         "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
         "Description": "",
         "Enabled": true,
         "EncryptionAlgorithms": [
-          "SYMMETRIC_DEFAULT"
+            "SYMMETRIC_DEFAULT"
         ],
         "KeyId": "mrk-1234abcd12ab34cd56ef12345678990ab",
         "KeyManager": "CUSTOMER",
@@ -396,7 +406,7 @@ Output:
         "MultiRegionConfiguration": {
             "MultiRegionKeyType": "PRIMARY",
             "PrimaryKey": {
-                "Arn": "arn:aws:kms:us-west-2:111122223333:key/mrk-1234abcd12ab34cd56ef12345678990ab",
+                "Arn": "arn:aws:kms:us-west-2:123456789012:key/mrk-1234abcd12ab34cd56ef12345678990ab",
                 "Region": "us-west-2"
             },
             "ReplicaKeys": []
@@ -417,28 +427,28 @@ Output:
 
 ```
 {
-     "KeyMetadata": {
-         "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-         "AWSAccountId": "111122223333",
-         "CreationDate": "2019-12-02T07:48:55-07:00",
-         "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
-         "Description": "",
-         "Enabled": false,
-         "EncryptionAlgorithms": [
-             "SYMMETRIC_DEFAULT"
-         ],
-         "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
-         "KeyManager": "CUSTOMER",
-         "KeySpec": "SYMMETRIC_DEFAULT",
-         "KeyState": "PendingImport",
-         "KeyUsage": "ENCRYPT_DECRYPT",
-         "MultiRegion": false,
-         "Origin": "EXTERNAL"
-     }
- }
+    "KeyMetadata": {
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
+        "CreationDate": "2019-12-02T07:48:55-07:00",
+        "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
+        "Description": "",
+        "Enabled": false,
+        "EncryptionAlgorithms": [
+            "SYMMETRIC_DEFAULT"
+        ],
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "KeyManager": "CUSTOMER",
+        "KeySpec": "SYMMETRIC_DEFAULT",
+        "KeyState": "PendingImport",
+        "KeyUsage": "ENCRYPT_DECRYPT",
+        "MultiRegion": false,
+        "Origin": "EXTERNAL"
+    }
+}
 ```
 For more information, see [Importing key material in AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys.html) in the *AWS Key Management Service Developer Guide*.
-**Example 6: To create a KMS key in an AWS CloudHSM key store**
+**Example 8: To create a KMS key in an AWS CloudHSM key store**
 The following `create-key` example creates a creates a KMS key in the specified AWS CloudHSM key store. The operation creates the KMS key and its metadata in AWS KMS and creates the key material in the AWS CloudHSM cluster associated with the custom key store. The `--custom-key-store-id` and `--origin` parameters are required.
 
 ```
@@ -451,8 +461,8 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
         "CloudHsmClusterId": "cluster-1a23b4cdefg",
         "CreationDate": "2019-12-02T07:48:55-07:00",
         "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
@@ -462,7 +472,7 @@ Output:
         "EncryptionAlgorithms": [
             "SYMMETRIC_DEFAULT"
         ],
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "SYMMETRIC_DEFAULT",
         "KeyState": "Enabled",
@@ -473,7 +483,7 @@ Output:
 }
 ```
 For more information, see [AWS CloudHSM key stores](https://docs.aws.amazon.com/kms/latest/developerguide/keystore-cloudhsm.html) in the *AWS Key Management Service Developer Guide*.
-**Example 8: To create a KMS key in an external key store**
+**Example 9: To create a KMS key in an external key store**
 The following `create-key` example creates a creates a KMS key in the specified external key store. The `--custom-key-store-id`, `--origin`, and `--xks-key-id` parameters are required in this command.
 The `--xks-key-id` parameter specifies the ID of an existing symmetric encryption key in your external key manager. This key serves as the external key material for the KMS key.The value of the `--origin` parameter must be `EXTERNAL_KEY_STORE`.The `custom-key-store-id` parameter must identify an external key store that is connected to its external key store proxy.
 
@@ -488,8 +498,8 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "Arn": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-        "AWSAccountId": "111122223333",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "AWSAccountId": "123456789012",
         "CreationDate": "2022-12-02T07:48:55-07:00",
         "CustomerMasterKeySpec": "SYMMETRIC_DEFAULT",
         "CustomKeyStoreId": "cks-9876543210fedcba9",
@@ -498,7 +508,7 @@ Output:
         "EncryptionAlgorithms": [
             "SYMMETRIC_DEFAULT"
         ],
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "KeyManager": "CUSTOMER",
         "KeySpec": "SYMMETRIC_DEFAULT",
         "KeyState": "Enabled",
@@ -521,28 +531,27 @@ The following code example shows how to use `decrypt`.
 
 **AWS CLI**
 **Example 1: To decrypt an encrypted message with a symmetric KMS key (Linux and macOS)**
-The following `decrypt` command example demonstrates the recommended way to decrypt data with the AWS CLI. This version shows how to decrypt data under a symmetric KMS key.
+The following `decrypt` example demonstrates the recommended way to decrypt data with the AWS CLI. This version shows how to decrypt data under a symmetric KMS key.
 Provide the ciphertext in a file.In the value of the `--ciphertext-blob` parameter, use the `fileb://` prefix, which tells the CLI to read the data from a binary file. If the file is not in the current directory, type the full path to file. For more information about reading AWS CLI parameter values from a file, see Loading AWS CLI parameters from a file <https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html> in the *AWS Command Line Interface User Guide* and Best Practices for Local File Parameters<https://aws.amazon.com/blogs/developer/best-practices-for-local-file-parameters/> in the *AWS Command Line Tool Blog*.Specify the KMS key to decrypt the ciphertext.The `--key-id` parameter is not required when decrypting with a symmetric KMS key. AWS KMS can get the key ID of the KMS key that was used to encrypt the data from the metadata in the ciphertext. But it's always a best practice to specify the KMS key you are using. This practice ensures that you use the KMS key that you intend, and prevents you from inadvertently decrypting a ciphertext using a KMS key you do not trust.Request the plaintext output as a text value.The `--query` parameter tells the CLI to get only the value of the `Plaintext` field from the output. The `--output` parameter returns the output as text.Base64-decode the plaintext and save it in a file.The following example pipes (\|) the value of the `Plaintext` parameter to the Base64 utility, which decodes it. Then, it redirects (>) the decoded output to the `ExamplePlaintext` file.
 Before running this command, replace the example key ID with a valid key ID from your AWS account.
 
 ```
 aws kms decrypt \
     --ciphertext-blob {{fileb://ExampleEncryptedFile}} \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --output {{text}} \
-    --query {{Plaintext}} {{|}} {{base64}} \
-    --decode {{>}} {{ExamplePlaintextFile}}
+    --query {{Plaintext}} {{|}} {{base64}} --decode {{>}} {{ExamplePlaintextFile}}
 ```
 This command produces no output. The output from the `decrypt` command is base64-decoded and saved in a file.
-For more information, see [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) in the *AWS Key Management Service API Reference*.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#symmetric-key-0ps) in the *AWS Key Management Service Developer Guide*.
 **Example 2: To decrypt an encrypted message with a symmetric KMS key (Windows command prompt)**
-The following example is the same as the previous one except that it uses the `certutil` utility to Base64-decode the plaintext data. This procedure requires two commands, as shown in the following examples.
+The following `decrypt` example is the same as the previous one except that it uses the `certutil` utility to Base64-decode the plaintext data. This procedure requires two commands, as shown in the following examples.
 Before running this command, replace the example key ID with a valid key ID from your AWS account.
 
 ```
 aws kms decrypt {{^}}
     --ciphertext-blob {{fileb://ExampleEncryptedFile}} {{^}}
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} {{^}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} {{^}}
     --output {{text}} {{^}}
     --query {{Plaintext}} {{>}} {{ExamplePlaintextFile.base64}}
 ```
@@ -558,20 +567,19 @@ Input Length = 18
 Output Length = 12
 CertUtil: -decode command completed successfully.
 ```
-For more information, see [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) in the *AWS Key Management Service API Reference*.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#symmetric-key-0ps) in the *AWS Key Management Service Developer Guide*.
 **Example 3: To decrypt an encrypted message with an asymmetric KMS key (Linux and macOS)**
-The following `decrypt` command example shows how to decrypt data encrypted under an RSA asymmetric KMS key.
+The following `decrypt` example shows how to decrypt data encrypted under an RSA asymmetric KMS key.
 When using an asymmetric KMS key, the `encryption-algorithm` parameter, which specifies the algorithm used to encrypt the plaintext, is required.
 Before running this command, replace the example key ID with a valid key ID from your AWS account.
 
 ```
 aws kms decrypt \
     --ciphertext-blob {{fileb://ExampleEncryptedFile}} \
-    --key-id {{0987dcba-09fe-87dc-65ba-ab0987654321}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --encryption-algorithm {{RSAES_OAEP_SHA_256}} \
     --output {{text}} \
-    --query {{Plaintext}} {{|}} {{base64}} \
-    --decode {{>}} {{ExamplePlaintextFile}}
+    --query {{Plaintext}} {{|}} {{base64}} --decode {{>}} {{ExamplePlaintextFile}}
 ```
 This command produces no output. The output from the `decrypt` command is base64-decoded and saved in a file.
 For more information, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
@@ -591,7 +599,7 @@ aws kms delete-alias \
     --alias-name {{alias/example-alias}}
 ```
 This command produces no output. To find the alias, use the `list-aliases` command.
-For more information, see [Deleting an alias](https://docs.aws.amazon.com/kms/latest/developerguide/alias-manage.html#alias-delete) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Deleting an alias](https://docs.aws.amazon.com/kms/latest/developerguide/alias-delete.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [DeleteAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/delete-alias.html) in *AWS CLI Command Reference*.
 
 ### `delete-custom-key-store`
@@ -625,13 +633,13 @@ The following `delete-imported-key-material` example deletes key material that h
 
 ```
 aws kms delete-imported-key-material \
-   --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6"
 }
 ```
@@ -650,7 +658,7 @@ You must use an asymmetric NIST-recommended elliptic curve (ECC) or SM2 (China R
 
 ```
 aws kms derive-shared-secret \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --key-agreement-algorithm {{ECDH}} \
     --public-key {{"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvH3Yj0wbkLEpUl95Cv1cJVjsVNSjwGq3tCLnzXfhVwVvmzGN8pYj3U8nKwgouaHbBWNJYjP5VutbbkKS4Kv4GojwZBJyHN17kmxo8yTjRmjR15SKIQ8cqRA2uaERMLnpztIXdZp232PQPbWGxDyXYJ0aJ5EFSag"}}
 ```
@@ -658,13 +666,13 @@ Output:
 
 ```
 {
-    "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "SharedSecret": "MEYCIQCKZLWyTk5runarx6XiAkU9gv3lbwPO/pHa+DXFehzdDwIhANwpsIV2g/9SPWLLsF6p/hiSskuIXMTRwqrMdVKWTMHG",
     "KeyAgreementAlgorithm": "ECDH",
     "KeyOrigin": "AWS_KMS"
 }
 ```
-For more information, see [DeriveSharedSecret](https://docs.aws.amazon.com/kms/latest/APIReference/API_DeriveSharedSecret.html) in the *AWS Key Management Service API Reference*.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#asymmetric-key-ops) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [DeriveSharedSecret](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/derive-shared-secret.html) in *AWS CLI Command Reference*.
 
 ### `describe-custom-key-stores`
@@ -674,7 +682,7 @@ The following code example shows how to use `describe-custom-key-stores`.
 
 **AWS CLI**
 **Example 1: To get details about an AWS CloudHSM key store**
-The following `describe-custom-key-store` example displays details about the specified AWS CloudHSM key store. The command is the same for all types of custom key stores, but the output differs with the key store type and, for an external key store, its connectivity option.
+The following `describe-custom-key-stores` example displays details about the specified AWS CloudHSM key store. The command is the same for all types of custom key stores, but the output differs with the key store type and, for an external key store, its connectivity option.
 By default, this command displays information about all custom key stores in the account and Region. To display information about a particular custom key store, use the `custom-key-store-name` or `custom-key-store-id` parameter.
 
 ```
@@ -700,7 +708,7 @@ Output:
 ```
 For more information, see [Viewing an AWS CloudHSM key store](https://docs.aws.amazon.com/kms/latest/developerguide/view-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 2: To get details about an external key store with public endpoint connectivity**
-The following `describe-custom-key-store` example displays details about the specified external key store. The command is the same for all types of custom key stores, but the output differs with the key store type and, for an external key store, its connectivity option.
+The following `describe-custom-key-stores` example displays details about the specified external key store. The command is the same for all types of custom key stores, but the output differs with the key store type and, for an external key store, its connectivity option.
 By default, this command displays information about all custom key stores in the account and Region. To display information about a particular custom key store, use the `custom-key-store-name` or `custom-key-store-id` parameter.
 
 ```
@@ -731,7 +739,7 @@ Output:
 ```
 For more information, see [Viewing an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/view-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 3: To get details about an external key store with VPC endpoint service connectivity**
-The following `describe-custom-key-store` example displays details about the specified external key store. The command is the same for all types of custom key stores, but the output differs with the key store type and, for an external key store, its connectivity option.
+The following `describe-custom-key-stores` example displays details about the specified external key store. The command is the same for all types of custom key stores, but the output differs with the key store type and, for an external key store, its connectivity option.
 By default, this command displays information about all custom key stores in the account and Region. To display information about a particular custom key store, use the `custom-key-store-name` or `custom-key-store-id` parameter.
 
 ```
@@ -755,7 +763,7 @@ Output:
                 "Connectivity": "VPC_ENDPOINT_SERVICE",
                 "UriEndpoint": "https://myproxy-private.xks.example.com",
                 "UriPath": "/kms/xks/v1",
-                "VpcEndpointServiceName": "com.amazonaws.vpce.us-east-1.vpce-svc-example1"
+                "VpcEndpointServiceName": "com.amazonaws.vpce.us-west-2.vpce-svc-example1"
             }
         }
     ]
@@ -783,11 +791,11 @@ Output:
 ```
 {
     "KeyMetadata": {
-        "AWSAccountId": "846764612917",
-        "KeyId": "b8a9477d-836c-491f-857e-07937918959b",
-        "Arn": "arn:aws:kms:us-west-2:846764612917:key/b8a9477d-836c-491f-857e-07937918959b",
+        "AWSAccountId": "123456789012",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CurrentKeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
-        "CreationDate": 2017-06-30T21:44:32.140000+00:00,
+        "CreationDate": "2017-06-30T21:44:32.140000+00:00",
         "Enabled": true,
         "Description": "Default KMS key that protects my S3 objects when no other key is defined",
         "KeyUsage": "ENCRYPT_DECRYPT",
@@ -807,16 +815,16 @@ The following `describe-key` example gets detailed information about an asymmetr
 
 ```
 aws kms describe-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "KeyMetadata": {
-        "AWSAccountId": "111122223333",
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
-        "Arn": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+        "AWSAccountId": "123456789012",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "CreationDate": "2019-12-02T19:47:14.861000+00:00",
         "CustomerMasterKeySpec": "RSA_2048",
         "Enabled": false,
@@ -843,7 +851,7 @@ The following `describe-key` example gets metadata for a multi-Region replica ke
 
 ```
 aws kms describe-key \
-    --key-id {{arn:aws:kms:ap-northeast-1:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab}}
+    --key-id {{arn:aws:kms:ap-northeast-1:123456789012:key/mrk-1234abcd12ab34cd56ef1234567890ab}}
 ```
 Output:
 
@@ -851,8 +859,8 @@ Output:
 {
     "KeyMetadata": {
         "MultiRegion": true,
-        "AWSAccountId": "111122223333",
-        "Arn": "arn:aws:kms:ap-northeast-1:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab",
+        "AWSAccountId": "123456789012",
+        "Arn": "arn:aws:kms:ap-northeast-1:123456789012:key/mrk-1234abcd12ab34cd56ef1234567890ab",
         "CreationDate": "2021-06-28T21:09:16.114000+00:00",
         "CurrentKeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
         "Description": "",
@@ -869,20 +877,20 @@ Output:
         "MultiRegionConfiguration": {
             "MultiRegionKeyType": "PRIMARY",
             "PrimaryKey": {
-                "Arn": "arn:aws:kms:us-west-2:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab",
+                "Arn": "arn:aws:kms:us-west-2:123456789012:key/mrk-1234abcd12ab34cd56ef1234567890ab",
                 "Region": "us-west-2"
             },
             "ReplicaKeys": [
                 {
-                    "Arn": "arn:aws:kms:eu-west-1:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab",
+                    "Arn": "arn:aws:kms:eu-west-1:123456789012:key/mrk-1234abcd12ab34cd56ef1234567890ab",
                     "Region": "eu-west-1"
                 },
                 {
-                    "Arn": "arn:aws:kms:ap-northeast-1:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab",
+                    "Arn": "arn:aws:kms:ap-northeast-1:123456789012:key/mrk-1234abcd12ab34cd56ef1234567890ab",
                     "Region": "ap-northeast-1"
                 },
                 {
-                    "Arn": "arn:aws:kms:sa-east-1:111122223333:key/mrk-1234abcd12ab34cd56ef1234567890ab",
+                    "Arn": "arn:aws:kms:sa-east-1:123456789012:key/mrk-1234abcd12ab34cd56ef1234567890ab",
                     "Region": "sa-east-1"
                 }
             ]
@@ -895,7 +903,7 @@ The following `describe-key` example gets detailed information about an HMAC KMS
 
 ```
 aws kms describe-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -903,8 +911,8 @@ Output:
 {
     "KeyMetadata": {
         "AWSAccountId": "123456789012",
-        "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
-        "Arn": "arn:aws:kms:us-west-2:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "Arn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "CreationDate": "2022-04-03T22:23:10.194000+00:00",
         "Enabled": true,
         "Description": "Test key",
@@ -933,7 +941,7 @@ The following `disable-key-rotation` example disables automatic rotation of a cu
 
 ```
 aws kms disable-key-rotation \
-    --key-id {{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output. To verify that automatic rotation is disable for the KMS key, use the `get-key-rotation-status` command.
 For more information, see [Rotating keys](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html) in the *AWS Key Management Service Developer Guide*.
@@ -946,11 +954,11 @@ The following code example shows how to use `disable-key`.
 
 **AWS CLI**
 **To temporarily disable a KMS key**
-The following `disable-key` command disables a customer managed KMS key. To re-enable the KMS key, use the `enable-key` command.
+The following `disable-key` example disables a customer managed KMS key. To re-enable the KMS key, use the `enable-key` command.
 
 ```
 aws kms disable-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Enabling and Disabling Keys](https://docs.aws.amazon.com/kms/latest/developerguide/enabling-keys.html) in the *AWS Key Management Service Developer Guide*.
@@ -968,10 +976,10 @@ This command is the same for all custom key stores, including AWS CloudHSM key s
 Before running this command, replace the example custom key store ID with a valid one.
 
 ```
-$ aws kms disconnect-custom-key-store \
-    --custom-key-store-id cks-1234567890abcdef0
+aws kms disconnect-custom-key-store \
+    --custom-key-store-id {{cks-1234567890abcdef0}}
 ```
-This command produces no output. verify that the command was effective, use the `describe-custom-key-stores` command.
+This command produces no output. To verify that the command was effective, use the `describe-custom-key-stores` command.
 For more information about disconnecting an AWS CloudHSM key store, see [Connecting and disconnecting an AWS CloudHSM key store](https://docs.aws.amazon.com/kms/latest/developerguide/disconnect-keystore.html) in the *AWS Key Management Service Developer Guide*.
 For more information about disconnecting an external key store, see [Connecting and disconnecting an external key store](https://docs.aws.amazon.com/kms/latest/developerguide/xks-connect-disconnect.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [DisconnectCustomKeyStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/disconnect-custom-key-store.html) in *AWS CLI Command Reference*.
@@ -988,8 +996,8 @@ The `--key-id` parameter identifies the KMS key. This example uses a key ARN val
 
 ```
 aws kms enable-key-rotation \
-    --key-id {{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}} \
-    --rotation-period-in-days {{180}}
+    --key-id arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
+    --rotation-period-in-days 180
 ```
 This command produces no output. To verify that the KMS key is enabled, use the `get-key-rotation-status` command.
 For more information, see [Rotating keys](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html) in the *AWS Key Management Service Developer Guide*.
@@ -1008,7 +1016,7 @@ Before running this command, replace the example key ID with a valid one.
 
 ```
 aws kms enable-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output. To verify that the KMS key is enabled, use the `describe-key` command. See the values of the `KeyState` and `Enabled` fields in the `describe-key` output.
 For more information, see [Enabling and Disabling Keys](https://docs.aws.amazon.com/kms/latest/developerguide/enabling-keys.html) in the *AWS Key Management Service Developer Guide*.
@@ -1020,42 +1028,46 @@ For more information, see [Enabling and Disabling Keys](https://docs.aws.amazon.
 The following code example shows how to use `encrypt`.
 
 **AWS CLI**
-**Example 1: To encrypt the contents of a file on Linux or MacOS**
-The following `encrypt` command demonstrates the recommended way to encrypt data with the AWS CLI.
+**Example 1: To encrypt the contents of a file (Linux and macOS)**
+The following `encrypt` example demonstrates the recommended way to encrypt data with the AWS CLI.
 
 ```
 aws kms encrypt \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --plaintext {{fileb://ExamplePlaintextFile}} \
     --output {{text}} \
-    --query {{CiphertextBlob}} {{|}} {{base64}} \
-    --decode {{>}} {{ExampleEncryptedFile}}
+    --query {{CiphertextBlob}} {{|}} {{base64}} --decode {{>}} {{ExampleEncryptedFile}}
 ```
 The command does several things:
-Uses the `--plaintext` parameter to indicate the data to encrypt. This parameter value must be base64-encoded.The value of the `plaintext` parameter must be base64-encoded, or you must use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.If the file is not in the current directory, type the full path to file. For example: `fileb:///var/tmp/ExamplePlaintextFile` or `fileb://C:\Temp\ExamplePlaintextFile`. For more information about reading AWS CLI parameter values from a file, see [Loading Parameters from a File](https://docs.aws.amazon.com/cli/latest/userguide/cli-using-param.html#cli-using-param-file) in the *AWS Command Line Interface User Guide* and [Best Practices for Local File Parameters](https://blogs.aws.amazon.com/cli/post/TxLWWN1O25V1HE/Best-Practices-for-Local-File-Parameters) on the AWS Command Line Tool Blog.Uses the `--output` and `--query` parameters to control the command's output.These parameters extract the encrypted data, called the *ciphertext*, from the command's output.For more information about controlling output, see [Controlling Command Output](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html) in the *AWS Command Line Interface User Guide*.Uses the `base64` utility to decode the extracted output into binary data.The ciphertext that is returned by a successful `encrypt` command is base64-encoded text. You must decode this text before you can use the AWS CLI to decrypt it.Saves the binary ciphertext to a file.The final part of the command (`> ExampleEncryptedFile`) saves the binary ciphertext to a file to make decryption easier. For an example command that uses the AWS CLI to decrypt data, see the decrypt examples.
-**Example 2: Using the AWS CLI to encrypt data on Windows**
-This example is the same as the previous one, except that it uses the `certutil` tool instead of `base64`. This procedure requires two commands, as shown in the following example.
+Uses the `--plaintext` parameter to indicate the data to encrypt. This parameter value must be base64-encoded.The value of the `plaintext` parameter must be base64-encoded, or you must use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.If the file is not in the current directory, type the full path to file. For example: `fileb:///var/tmp/ExamplePlaintextFile` or `fileb://C:\Temp\ExamplePlaintextFile`. For more information about reading AWS CLI parameter values from a file, see [Loading Parameters from a File](https://docs.aws.amazon.com/cli/latest/userguide/cli-using-param.html) in the *AWS Command Line Interface User Guide*.Uses the `--output` and `--query` parameters to control the command's output.These parameters extract the encrypted data, called the *ciphertext*, from the command's output.For more information about controlling output, see [Controlling Command Output](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html) in the *AWS Command Line Interface User Guide*.Uses the `base64` utility to decode the extracted output into binary data.The ciphertext that is returned by a successful `encrypt` command is base64-encoded text. You must decode this text before you can use the AWS CLI to decrypt it.Saves the binary ciphertext to a file.The final part of the command (`> ExampleEncryptedFile`) saves the binary ciphertext to a file to make decryption easier. For an example command that uses the AWS CLI to decrypt data, see the decrypt examples.
+This command produces no output.
+**Example 2: To encrypt the contents of a file (Windows)**
+The following `encrypt` example is the same as the previous one, except that it uses the `certutil` tool instead of `base64`. This procedure requires two commands, as shown in the following example.
 
 ```
-aws kms encrypt \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
-    --plaintext {{fileb://ExamplePlaintextFile}} \
-    --output {{text}} \
+aws kms encrypt {{^}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} {{^}}
+    --plaintext {{fileb://ExamplePlaintextFile}} {{^}}
+    --output {{text}} {{^}}
     --query {{CiphertextBlob}} {{>}} C:\Temp\ExampleEncryptedFile.base64
-
-{{certutil}} {{-decode}} C:\Temp\ExampleEncryptedFile.base64 C:\Temp\ExampleEncryptedFile
 ```
-**Example 3: Encrypting with an asymmetric KMS key**
-The following `encrypt` command shows how to encrypt plaintext with an asymmetric KMS key. The `--encryption-algorithm` parameter is required. As in all `encrypt` CLI commands, the `plaintext` parameter must be base64-encoded, or you must use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.
+This command produces no output. The base64-encoded ciphertext is saved to `C:\Temp\ExampleEncryptedFile.base64`.
+Run the `certutil` command.
+
+```
+certutil -decode C:\Temp\ExampleEncryptedFile.base64 C:\Temp\ExampleEncryptedFile
+```
+The ciphertext is saved to `C:\Temp\ExampleEncryptedFile`.
+**Example 3: To encrypt the contents of a file with an asymmetric KMS key**
+The following `encrypt` example shows how to encrypt plaintext with an asymmetric KMS key. The `--encryption-algorithm` parameter is required. As in all `encrypt` CLI commands, the `plaintext` parameter must be base64-encoded, or you must use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.
 
 ```
 aws kms encrypt \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --encryption-algorithm {{RSAES_OAEP_SHA_256}} \
     --plaintext {{fileb://ExamplePlaintextFile}} \
     --output {{text}} \
-    --query {{CiphertextBlob}} {{|}} {{base64}} \
-    --decode {{>}} {{ExampleEncryptedFile}}
+    --query {{CiphertextBlob}} {{|}} {{base64}} --decode {{>}} {{ExampleEncryptedFile}}
 ```
 This command produces no output.
 +  For API details, see [Encrypt](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/encrypt.html) in *AWS CLI Command Reference*.
@@ -1075,7 +1087,7 @@ NOTE: The values in the output of this example are truncated for display.
 
 ```
 aws kms generate-data-key-pair-without-plaintext \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --key-pair-spec {{ECC_NIST_P384}}
 ```
 Output:
@@ -1084,13 +1096,13 @@ Output:
 {
     "PrivateKeyCiphertextBlob": "AQIDAHi6LtupRpdKl2aJTzkK6FbhOtQkMlQJJH3PdtHvS/y+hAFFxmiD134doUDzMGmfCEtcAAAHaTCCB2UGCSqGSIb3DQEHBqCCB1...",
     "PublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA3A3eGMyPrvSn7+LdlJE1oUoQV5HpEuHAVbdOyND+NmYDH/mL1OSIEuLrcdZ5hrMH4pk83r40l...",
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
     "KeyPairSpec": "ECC_NIST_P384"
 }
 ```
 The `PublicKey` and `PrivateKeyCiphertextBlob` are returned in base64-encoded format.
-For more information, see [Data key pairs](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-key-pairs) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Data key pairs](https://docs.aws.amazon.com/kms/latest/developerguide/data-key-pairs.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [GenerateDataKeyPairWithoutPlaintext](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/generate-data-key-pair-without-plaintext.html) in *AWS CLI Command Reference*.
 
 ### `generate-data-key-pair`
@@ -1107,7 +1119,7 @@ NOTE: The values in the output of this example are truncated for display.
 
 ```
 aws kms generate-data-key-pair \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --key-pair-spec {{RSA_2048}}
 ```
 Output:
@@ -1117,13 +1129,13 @@ Output:
     "PrivateKeyCiphertextBlob": "AQIDAHi6LtupRpdKl2aJTzkK6FbhOtQkMlQJJH3PdtHvS/y+hAFFxmiD134doUDzMGmfCEtcAAAHaTCCB2UGCSqGSIb3DQEHBqCCB1...",
     "PrivateKeyPlaintext": "MIIG/QIBADANBgkqhkiG9w0BAQEFAASCBucwggbjAgEAAoIBgQDcDd4YzI+u9Kfv4t2UkTWhShBXkekS4cBVt07I0P42ZgMf+YvU5IgS4ut...",
     "PublicKey": "MIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA3A3eGMyPrvSn7+LdlJE1oUoQV5HpEuHAVbdOyND+NmYDH/mL1OSIEuLrcdZ5hrMH4pk83r40l...",
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-    "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6"
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
     "KeyPairSpec": "RSA_2048"
 }
 ```
 The `PublicKey`, `PrivateKeyPlaintext`, and `PrivateKeyCiphertextBlob` are returned in base64-encoded format.
-For more information, see [Data key pairs](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-key-pairs) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Data key pairs](https://docs.aws.amazon.com/kms/latest/developerguide/data-key-pairs.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [GenerateDataKeyPair](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/generate-data-key-pair.html) in *AWS CLI Command Reference*.
 
 ### `generate-data-key-without-plaintext`
@@ -1139,7 +1151,7 @@ The KMS key you specify must be a symmetric encryption KMS key, that is, a KMS k
 
 ```
 aws kms generate-data-key-without-plaintext \
-    --key-id {{"arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"}} \
+    --key-id {{"arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --key-spec {{AES_256}}
 ```
 Output:
@@ -1147,12 +1159,12 @@ Output:
 ```
 {
     "CiphertextBlob": "AQEDAHjRYf5WytIc0C857tFSnBaPn2F8DgfmThbJlGfR8P3WlwAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDEFogL",
-    "KeyId": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6"
 }
 ```
 The `CiphertextBlob` (encrypted data key) is returned in base64-encoded format.
-For more information, see [Data keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#data-keys) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Data keys](https://docs.aws.amazon.com/kms/latest/developerguide/data-keys.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [GenerateDataKeyWithoutPlaintext](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/generate-data-key-without-plaintext.html) in *AWS CLI Command Reference*.
 
 ### `generate-data-key`
@@ -1176,7 +1188,7 @@ Output:
 ```
 {
     "Plaintext": "VdzKNHGzUAzJeRBVY+uUmofUGGiDzyB3+i9fVkh3piw=",
-    "KeyId": "arn:aws:kms:us-east-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6",
     "CiphertextBlob": "AQEDAHjRYf5WytIc0C857tFSnBaPn2F8DgfmThbJlGfR8P3WlwAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDEFogLqPWZconQhwHAIBEIA7d9AC7GeJJM34njQvg4Wf1d5sw0NIo1MrBqZa+YdhV8MrkBQPeac0ReRVNDt9qleAt+SHgIRF8P0H+7U="
 }
@@ -1190,7 +1202,7 @@ NOTE: The values in the output of this example are truncated for display.
 
 ```
 aws kms generate-data-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --number-of-bytes {{64}}
 ```
 Output:
@@ -1199,7 +1211,7 @@ Output:
 {
     "CiphertextBlob": "AQIBAHi6LtupRpdKl2aJTzkK6FbhOtQkMlQJJH3PdtHvS/y+hAEnX/QQNmMwDfg2korNMEc8AAACaDCCAmQGCSqGSIb3DQEHBqCCAlUwggJRAgEAMIICSgYJKoZ...",
     "Plaintext": "ty8Lr0Bk6OF07M2BWt6qbFdNB+G00ZLtf5MSEb4al3R2UKWGOp06njAwy2n72VRm2m7z/Pm9Wpbvttz6a4lSo9hgPvKhZ5y6RTm4OovEXiVfBveyX3DQxDzRSwbKDPk/...",
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6"
 }
 ```
@@ -1214,7 +1226,7 @@ The following code example shows how to use `generate-mac`.
 
 **AWS CLI**
 **Example 1: To generate an HMAC for a message**
-The following `generate-mac` command generates an HMAC for a message, an HMAC KMS key, and a MAC algorithm. The algorithm must be supported by the specified HMAC KMS key.
+The following `generate-mac` example generates an HMAC for a message, an HMAC KMS key, and a MAC algorithm. The algorithm must be supported by the specified HMAC KMS key.
 In AWS CLI v2, the value of the `message` parameter must be Base64-encoded. Or, you can save the message in a file and use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.
 Before running this command, replace the example key ID with a valid key ID from your AWS account. The key ID must represent a HMAC KMS key with a key usage of `GENERATE_VERIFY_MAC`.
 
@@ -1222,7 +1234,7 @@ Before running this command, replace the example key ID with a valid key ID from
 msg=(echo 'Hello World' | base64)
 
 aws kms generate-mac \
-    --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
+    --key-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --message fileb://Message \
     --mac-algorithm HMAC_SHA_384
 ```
@@ -1230,7 +1242,7 @@ Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Mac": "<HMAC_TAG>",
     "MacAlgorithm": "HMAC_SHA_384"
 }
@@ -1240,16 +1252,20 @@ For more information about using HMAC KMS keys in AWS KMS, see [HMAC keys in AWS
 The following `generate-mac` example generates an HMAC for a short message stored in a local file. The command also gets the `Mac` property from the response, Base64-decodes it and saves it in the ExampleMac file. You can use the MAC file in a `verify-mac` command that verifies the MAC.
 The `generate-mac` command requires a Base64-encoded message and a MAC algorithm that your HMAC KMS key supports. To get the MAC algorithms that your KMS key supports, use the `describe-key` command.
 Before running this command, replace the example key ID with a valid key ID from your AWS account. The key ID must represent an asymmetric KMS key with a key usage of GENERATE\_VERIFY\_MAC.
+First, Base64-encode the message and save it in the `EncodedMessage` file.
 
 ```
 echo 'hello world' | base64 > EncodedMessage
+```
+Then, generate the HMAC for the encoded message.
 
+```
 aws kms generate-mac \
-    --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
-    --message fileb://EncodedMessage \
-    --mac-algorithm HMAC_SHA_384 \
-    --output text \
-    --query Mac | base64 --decode > ExampleMac
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --message {{fileb://EncodedMessage}} \
+    --mac-algorithm {{HMAC_SHA_384}} \
+    --output {{text}} \
+    --query {{Mac}} {{|}} {{base64}} --decode {{>}} {{ExampleMac}}
 ```
 This command produces no output. This example extracts the `Mac` property of the output and saves it in a file.
 For more information about using HMAC KMS keys in AWS KMS, see [HMAC keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/hmac.html) in the *AWS Key Management Service Developer Guide*.
@@ -1265,7 +1281,7 @@ The following code example shows how to use `generate-random`.
 The following `generate-random` example generates a 256-bit (32-byte), base64-encoded random byte string. The example decodes the byte string and saves it in the random file.
 When you run this command, you must use the `number-of-bytes` parameter to specify the length of the random value in bytes.
 You don't specify a KMS key when you run this command. The random byte string is unrelated to any KMS key.
-By default, AWS KMS generates the random number. However, if you specify a [custom key store](https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store-overview.html), the random byte string is generated in the AWS CloudHSM cluster associated with the custom key store.
+By default, AWS KMS generates the random number. However, if you specify a [custom key store](https://docs.aws.amazon.com/kms/latest/developerguide/keystore-cloudhsm.html), the random byte string is generated in the AWS CloudHSM cluster associated with the custom key store.
 This example uses the following parameters and values:
 It uses the required `--number-of-bytes` parameter with a value of `32` to request a 32-byte (256-bit) string.It uses the `--output` parameter with a value of `text` to direct the AWS CLI to return the output as text, instead of JSON.It uses the `--query parameter` to extract the value of the `Plaintext` property from the response.It pipes ( \| ) the output of the command to the `base64` utility, which decodes the extracted output.It uses the redirection operator ( > ) to save decoded byte string to the `ExampleRandom` file.It uses the redirection operator ( > ) to save the binary ciphertext to a file.
 
@@ -1276,9 +1292,9 @@ aws kms generate-random \
     --query Plaintext | base64 --decode > ExampleRandom
 ```
 This command produces no output.
-For more information, see [GenerateRandom](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateRandom.html) in the *AWS Key Management Service API Reference*.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#entropy-and-random-numbers) in the *AWS Key Management Service Developer Guide*.
 **Example 2: To generate a 256-bit random number (Windows Command Prompt)**
-The following example uses the `generate-random` command to generate a 256-bit (32-byte), base64-encoded random byte string. The example decodes the byte string and saves it in the random file. This example is the same as the previous example, except that it uses the `certutil` utility in Windows to base64-decode the random byte string before saving it in a file.
+The following `generate-random` example generates a 256-bit (32-byte), base64-encoded random byte string. The example decodes the byte string and saves it in the random file. This example is the same as the previous example, except that it uses the `certutil` utility in Windows to base64-decode the random byte string before saving it in a file.
 First, generate a base64-encoded random byte string and saves it in a temporary file, `ExampleRandom.base64`.
 
 ```
@@ -1287,7 +1303,7 @@ aws kms generate-random \
     --output {{text}} \
     --query {{Plaintext}} {{>}} {{ExampleRandom.base64}}
 ```
-Because the output of the `generate-random` command is saved in a file, this example produces no output.
+This command produces no output. The output of the `generate-random` command is saved in a file.
 Now use the `certutil -decode` command to decode the base64-encoded byte string in the `ExampleRandom.base64` file. Then, it saves the decoded byte string in the `ExampleRandom` file.
 
 ```
@@ -1300,7 +1316,7 @@ Input Length = 18
 Output Length = 12
 CertUtil: -decode command completed successfully.
 ```
-For more information, see [GenerateRandom](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateRandom.html) in the *AWS Key Management Service API Reference*.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#entropy-and-random-numbers) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [GenerateRandom](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/generate-random.html) in *AWS CLI Command Reference*.
 
 ### `get-key-policy`
@@ -1316,17 +1332,39 @@ Because the `--policy` parameter of `put-key-policy` requires a string, you must
 ```
 aws kms get-key-policy \
     --policy-name {{default}} \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --query {{Policy}} \
     --output {{text}} {{>}} {{policy.txt}}
+```
+The following `put-key-policy` example uses the `policy.txt` file to replace the key policy of the other KMS key.
 
-{{aws}} {{kms}} {{put-key-policy}} \
+```
+aws kms put-key-policy \
     --policy-name {{default}} \
-    --key-id {{0987dcba-09fe-87dc-65ba-ab0987654321}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --policy {{file://policy.txt}}
 ```
+Contents of `policy.txt`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Id": "key-default-1",
+    "Statement": [
+        {
+            "Sid": "Enable IAM User Permissions",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": "kms:*",
+            "Resource": "*"
+        }
+    ]
+}
+```
 This command produces no output.
-For more information, see [PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) in the *AWS KMS API Reference*.
+For more information, see [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [GetKeyPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/get-key-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-key-rotation-status`
@@ -1340,13 +1378,13 @@ The following `get-key-rotation-status` example returns information about the ro
 
 ```
 aws kms get-key-rotation-status \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyRotationEnabled": true,
     "NextRotationDate": "2024-02-14T18:14:33.587000+00:00",
     "RotationPeriodInDays": 365
@@ -1367,7 +1405,7 @@ To specify the KMS key, use the `key-id` parameter. This example uses an key ID,
 
 ```
 aws kms get-parameters-for-import \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --wrapping-algorithm {{RSAES_OAEP_SHA_256}} \
     --wrapping-key-spec {{RSA_2048}}
 ```
@@ -1375,7 +1413,7 @@ Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "PublicKey": "<public key base64 encoded data>",
     "ImportToken": "<import token base64 encoded data>",
     "ParametersValidTo": 1593893322.32
@@ -1396,13 +1434,13 @@ In addition to returning the public key, the output includes information that yo
 
 ```
 aws kms get-public-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "PublicKey": "jANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAl5epvg1/QtJhxSi2g9SDEVg8QV/...",
     "CustomerMasterKeySpec": "RSA_4096",
     "KeyUsage": "ENCRYPT_DECRYPT",
@@ -1419,7 +1457,7 @@ Before running this command, replace the example key ID with a valid key ID from
 
 ```
 aws kms get-public-key \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --output {{text}} \
     --query {{PublicKey}} {{|}} {{base64}} --decode {{>}} {{public_key.der}}
 ```
@@ -1441,7 +1479,7 @@ Before running this command, replace the example key ID with a valid key ID or k
 
 ```
 aws kms import-key-material \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --encrypted-key-material {{fileb://EncryptedKeyMaterial.bin}} \
     --import-token {{fileb://ImportToken.bin}} \
     --expiration-model {{KEY_MATERIAL_EXPIRES}} \
@@ -1451,7 +1489,7 @@ Output:
 
 ```
 {
-    "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KeyMaterialId": "0b7fd7ddbac6eef27907413567cad8c810e2883dc8a7534067a82ee1142fc1e6"
 }
 ```
@@ -1465,7 +1503,7 @@ The following code example shows how to use `list-aliases`.
 
 **AWS CLI**
 **Example 1: To list all aliases in an AWS account and Region**
-The following example uses the `list-aliases` command to list all aliases in the default Region of the AWS account. The output includes aliases associated with AWS managed KMS keys and customer managed KMS keys.
+The following `list-aliases` example lists all aliases in the default Region of the AWS account. The output includes aliases associated with AWS managed KMS keys and customer managed KMS keys.
 
 ```
 aws kms list-aliases
@@ -1476,36 +1514,36 @@ Output:
 {
     "Aliases": [
         {
-            "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/testKey",
+            "AliasArn": "arn:aws:kms:us-west-2:123456789012:alias/testKey",
             "AliasName": "alias/testKey",
-            "TargetKeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"
+            "TargetKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/FinanceDept",
+            "AliasArn": "arn:aws:kms:us-west-2:123456789012:alias/FinanceDept",
             "AliasName": "alias/FinanceDept",
-            "TargetKeyId": "0987dcba-09fe-87dc-65ba-ab0987654321"
+            "TargetKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/aws/dynamodb",
+            "AliasArn": "arn:aws:kms:us-west-2:123456789012:alias/aws/dynamodb",
             "AliasName": "alias/aws/dynamodb",
-            "TargetKeyId": "1a2b3c4d-5e6f-1a2b-3c4d-5e6f1a2b3c4d"
+            "TargetKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         },
         {
-            "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/aws/ebs",
+            "AliasArn": "arn:aws:kms:us-west-2:123456789012:alias/aws/ebs",
             "AliasName": "alias/aws/ebs",
-            "TargetKeyId": "0987ab65-43cd-21ef-09ab-87654321cdef"
-        },
-        ...
+            "TargetKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
+        }
     ]
 }
 ```
 **Example 2: To list all aliases for a particular KMS key**
-The following example uses the `list-aliases` command and its `key-id` parameter to list all aliases that are associated with a particular KMS key.
+The following `list-aliases` example uses the `key-id` parameter to list all aliases that are associated with a particular KMS key.
 Each alias is associated with only one KMS key, but a KMS key can have multiple aliases. This command is very useful because the AWS KMS console lists only one alias for each KMS key. To find all aliases for a KMS key, you must use the `list-aliases` command.
 This example uses the key ID of the KMS key for the `--key-id` parameter, but you can use a key ID, key ARN, alias name, or alias ARN in this command.
 
 ```
-aws kms list-aliases --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+aws kms list-aliases \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1513,19 +1551,19 @@ Output:
 {
     "Aliases": [
         {
-            "TargetKeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
-            "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/oregon-test-key",
+            "TargetKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "AliasArn": "arn:aws:kms:us-west-2:123456789012:alias/oregon-test-key",
             "AliasName": "alias/oregon-test-key"
         },
         {
-            "TargetKeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
-            "AliasArn": "arn:aws:kms:us-west-2:111122223333:alias/project121-test",
+            "TargetKeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "AliasArn": "arn:aws:kms:us-west-2:123456789012:alias/project121-test",
             "AliasName": "alias/project121-test"
         }
     ]
 }
 ```
-For more information, see [Working with Aliases](https://docs.aws.amazon.com/kms/latest/developerguide/programming-aliases.html) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Aliases in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/kms-alias.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [ListAliases](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/list-aliases.html) in *AWS CLI Command Reference*.
 
 ### `list-grants`
@@ -1540,9 +1578,10 @@ This command uses the `key-id` parameter with a key ID to identify the KMS key. 
 
 ```
 aws kms list-grants \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 The output shows that the grant gives Amazon DynamoDB permission to use the KMS key for cryptographic operations, and gives it permission to view details about the KMS key (`DescribeKey`) and to retire grants (`RetireGrant`). The `EncryptionContextSubset` constraint limits these permission to requests that include the specified encryption context pairs. As a result, the permissions in the grant are effective only on specified account and DynamoDB table.
+Output:
 
 ```
 {
@@ -1555,7 +1594,7 @@ The output shows that the grant gives Amazon DynamoDB permission to use the KMS 
                 }
             },
             "IssuingAccount": "arn:aws:iam::123456789012:root",
-            "Name": "8276b9a6-6cf0-46f1-b2f0-7993a7f8c89a",
+            "Name": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Operations": [
                 "Decrypt",
                 "Encrypt",
@@ -1566,7 +1605,7 @@ The output shows that the grant gives Amazon DynamoDB permission to use the KMS 
                 "DescribeKey"
             ],
             "GrantId": "1667b97d27cf748cf05b487217dd4179526c949d14fb3903858e25193253fe59",
-            "KeyId": "arn:aws:kms:us-west-2:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+            "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "RetiringPrincipal": "dynamodb.us-west-2.amazonaws.com",
             "GranteePrincipal": "dynamodb.us-west-2.amazonaws.com",
             "CreationDate": "2021-05-13T18:32:45.144000+00:00"
@@ -1590,7 +1629,7 @@ To specify the KMS key, use the `key-id` parameter. This example uses a key ID v
 
 ```
 aws kms list-key-policies \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1615,7 +1654,7 @@ The following `list-key-rotations` example lists information about all completed
 
 ```
 aws kms list-key-rotations \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1623,12 +1662,12 @@ Output:
 {
     "Rotations": [
         {
-            "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+            "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "RotationDate": "2024-03-02T10:11:36.564000+00:00",
             "RotationType": "AUTOMATIC"
         },
         {
-            "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab",
+            "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "RotationDate": "2024-04-05T15:14:47.757000+00:00",
             "RotationType": "ON_DEMAND"
         }
@@ -1657,16 +1696,16 @@ Output:
 {
     "Keys": [
         {
-            "KeyArn": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
-            "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"
+            "KeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "KeyArn": "arn:aws:kms:us-west-2:111122223333:key/0987dcba-09fe-87dc-65ba-ab0987654321",
-            "KeyId": "0987dcba-09fe-87dc-65ba-ab0987654321"
+            "KeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "KeyArn": "arn:aws:kms:us-east-2:111122223333:key/1a2b3c4d-5e6f-1a2b-3c4d-5e6f1a2b3c4d",
-            "KeyId": "1a2b3c4d-5e6f-1a2b-3c4d-5e6f1a2b3c4d"
+            "KeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     ]
 }
@@ -1686,7 +1725,7 @@ To specify the KMS key, use the `key-id` parameter. This example uses a key ID v
 
 ```
 aws kms list-resource-tags \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1722,7 +1761,7 @@ The output shows that `ExampleAdmin` user has permission to retire grants on two
 
 ```
 aws kms list-retirable-grants \
-    --retiring-principal {{arn:aws:iam::111122223333:user/ExampleAdmin}}
+    --retiring-principal {{arn:aws:iam::123456789012:user/ExampleAdmin}}
 ```
 Output:
 
@@ -1730,13 +1769,13 @@ Output:
 {
     "Grants": [
         {
-            "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+            "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "GrantId": "156b69c63cb154aa21f59929ff19760717be8d9d82b99df53e18b94a15a5e88e",
             "Name": "",
-            "CreationDate": 2021-01-14T20:17:36.419000+00:00,
-            "GranteePrincipal": "arn:aws:iam::111122223333:user/ExampleUser",
-            "RetiringPrincipal": "arn:aws:iam::111122223333:user/ExampleAdmin",
-            "IssuingAccount": "arn:aws:iam::111122223333:root",
+            "CreationDate": "2021-01-14T20:17:36.419000+00:00",
+            "GranteePrincipal": "arn:aws:iam::123456789012:user/ExampleUser",
+            "RetiringPrincipal": "arn:aws:iam::123456789012:user/ExampleAdmin",
+            "IssuingAccount": "arn:aws:iam::123456789012:root",
             "Operations": [
                 "Encrypt"
             ],
@@ -1747,13 +1786,13 @@ Output:
             }
         },
         {
-            "KeyId": "arn:aws:kms:us-west-2:111122223333:key/0987dcba-09fe-87dc-65ba-ab0987654321",
+            "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "GrantId": "8c94d1f12f5e69f440bae30eaec9570bb1fb7358824f9ddfa1aa5a0dab1a59b2",
             "Name": "",
             "CreationDate": "2021-02-02T19:49:49.638000+00:00",
-            "GranteePrincipal": "arn:aws:iam::111122223333:role/ExampleRole",
-            "RetiringPrincipal": "arn:aws:iam::111122223333:user/ExampleAdmin",
-            "IssuingAccount": "arn:aws:iam::111122223333:root",
+            "GranteePrincipal": "arn:aws:iam::123456789012:role/ExampleRole",
+            "RetiringPrincipal": "arn:aws:iam::123456789012:user/ExampleAdmin",
+            "IssuingAccount": "arn:aws:iam::123456789012:root",
             "Operations": [
                 "Decrypt"
             ],
@@ -1791,7 +1830,7 @@ Contents of `key_policy.json`:
             "Sid" : "Enable IAM User Permissions",
             "Effect" : "Allow",
             "Principal" : {
-                "AWS" : "arn:aws:iam::111122223333:root"
+                "AWS" : "arn:aws:iam::123456789012:root"
             },
             "Action" : "kms:*",
             "Resource" : "*"
@@ -1800,7 +1839,7 @@ Contents of `key_policy.json`:
             "Sid" : "Allow Use of Key",
             "Effect" : "Allow",
             "Principal" : {
-                "AWS" : "arn:aws:iam::111122223333:user/test-user"
+                "AWS" : "arn:aws:iam::123456789012:user/test-user"
             },
             "Action" : [
                 "kms:DescribeKey",
@@ -1816,7 +1855,7 @@ To identify the KMS key, this example uses the key ID, but you can also use a ke
 ```
 aws kms put-key-policy \
     --policy-name {{default}} \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --policy {{file://key_policy.json}}
 ```
 This command does not produce any output. To verify that the command was effective, use the `get-key-policy` command. The following example command gets the key policy for the same KMS key. The `output` parameter with a value of `text` returns a text format that is easy to read.
@@ -1824,7 +1863,7 @@ This command does not produce any output. To verify that the command was effecti
 ```
 aws kms get-key-policy \
     --policy-name {{default}} \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --output {{text}}
 ```
 Output:
@@ -1838,7 +1877,7 @@ Output:
             "Sid" : "Enable IAM User Permissions",
             "Effect" : "Allow",
             "Principal" : {
-                "AWS" : "arn:aws:iam::111122223333:root"
+                "AWS" : "arn:aws:iam::123456789012:root"
             },
             "Action" : "kms:*",
             "Resource" : "*"
@@ -1847,7 +1886,7 @@ Output:
             "Sid" : "Allow Use of Key",
             "Effect" : "Allow",
             "Principal" : {
-                "AWS" : "arn:aws:iam::111122223333:user/test-user"
+                "AWS" : "arn:aws:iam::123456789012:user/test-user"
             },
             "Action" : [ "kms:Describe", "kms:List" ],
             "Resource" : "*"
@@ -1864,34 +1903,34 @@ For more information, see [Changing a Key Policy](https://docs.aws.amazon.com/km
 The following code example shows how to use `re-encrypt`.
 
 **AWS CLI**
-**Example 1: To re-encrypt an encrypted message under a different symmetric KMS key (Linux and macOS).**
-The following `re-encrypt` command example demonstrates the recommended way to re-encrypt data with the AWS CLI.
+**Example 1: To re-encrypt an encrypted message under a different symmetric KMS key (Linux and macOS)**
+The following `re-encrypt` example demonstrates the recommended way to re-encrypt data with the AWS CLI.
 Provide the ciphertext in a file.In the value of the `--ciphertext-blob` parameter, use the `fileb://` prefix, which tells the CLI to read the data from a binary file. If the file is not in the current directory, type the full path to file. For more information about reading AWS CLI parameter values from a file, see [Loading AWS CLI parameters from a file](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-file.html) in the *AWS Command Line Interface User Guide* and [Best Practices for Local File Parameters](https://aws.amazon.com/blogs/developer/best-practices-for-local-file-parameters/) in the *AWS Command Line Tool Blog*.Specify the source KMS key, which decrypts the ciphertext.The `--source-key-id` parameter is not required when decrypting with symmetric encryption KMS keys. AWS KMS can get the KMS key that was used to encrypt the data from the metadata in the ciphertext blob. But it's always a best practice to specify the KMS key you are using. This practice ensures that you use the KMS key that you intend, and prevents you from inadvertently decrypting a ciphertext using a KMS key you do not trust.Specify the destination KMS key, which re-encrypts the data.The `--destination-key-id` parameter is always required. This example uses a key ARN, but you can use any valid key identifier.Request the plaintext output as a text value.The `--query` parameter tells the CLI to get only the value of the `Plaintext` field from the output. The `--output` parameter returns the output as text.Base64-decode the plaintext and save it in a file.The following example pipes (\|) the value of the `Plaintext` parameter to the Base64 utility, which decodes it. Then, it redirects (>) the decoded output to the `ExamplePlaintext` file.
 Before running this command, replace the example key IDs with valid key identifiers from your AWS account.
 
 ```
 aws kms re-encrypt \
     --ciphertext-blob {{fileb://ExampleEncryptedFile}} \
-    --source-key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
-    --destination-key-id {{0987dcba-09fe-87dc-65ba-ab0987654321}} \
+    --source-key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --destination-key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --query {{CiphertextBlob}} \
     --output {{text}} {{|}} {{base64}} --decode {{>}} {{ExampleReEncryptedFile}}
 ```
 This command produces no output. The output from the `re-encrypt` command is base64-decoded and saved in a file.
-For more information, see [ReEncrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html) in the *AWS Key Management Service API Reference*.
-**Example 2: To re-encrypt an encrypted message under a different symmetric KMS key (Windows command prompt).**
-The following `re-encrypt` command example is the same as the previous one except that it uses the `certutil` utility to Base64-decode the plaintext data. This procedure requires two commands, as shown in the following examples.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#symmetric-key-0ps) in the *AWS Key Management Service Developer Guide*.
+**Example 2: To re-encrypt an encrypted message under a different symmetric KMS key (Windows command prompt)**
+The following `re-encrypt` example is the same as the previous one except that it uses the `certutil` utility to Base64-decode the plaintext data. This procedure requires two commands, as shown in the following examples.
 Before running this command, replace the example key ID with a valid key ID from your AWS account.
 
 ```
 aws kms re-encrypt {{^}}
     --ciphertext-blob {{fileb://ExampleEncryptedFile}} {{^}}
-    --source-key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} {{^}}
-    --destination-key-id {{0987dcba-09fe-87dc-65ba-ab0987654321}} {{^}}
+    --source-key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} {{^}}
+    --destination-key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} {{^}}
     --query {{CiphertextBlob}} {{^}}
     --output {{text}} {{>}} {{ExampleReEncryptedFile.base64}}
 ```
-Then use the `certutil` utility
+Then use the `certutil` utility.
 
 ```
 certutil -decode ExamplePlaintextFile.base64 ExamplePlaintextFile
@@ -1903,7 +1942,7 @@ Input Length = 18
 Output Length = 12
 CertUtil: -decode command completed successfully.
 ```
-For more information, see [ReEncrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html) in the *AWS Key Management Service API Reference*.
+For more information, see [AWS KMS cryptography essentials](https://docs.aws.amazon.com/kms/latest/developerguide/kms-cryptography.html#symmetric-key-0ps) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [ReEncrypt](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/re-encrypt.html) in *AWS CLI Command Reference*.
 
 ### `retire-grant`
@@ -1919,10 +1958,10 @@ The following example command specifies the `grant-id` and the `key-id` paramete
 ```
 aws kms retire-grant \
     --grant-id {{1234a2345b8a4e350500d432bccf8ecd6506710e1391880c4f7f7140160c9af3}} \
-    --key-id {{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output. To confirm that the grant was retired, use the `list-grants` command.
-For more information, see [Retiring and revoking grants](https://docs.aws.amazon.com/kms/latest/developerguide/grant-manage.html#grant-delete) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Retiring and revoking grants](https://docs.aws.amazon.com/kms/latest/developerguide/grant-delete.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [RetireGrant](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/retire-grant.html) in *AWS CLI Command Reference*.
 
 ### `revoke-grant`
@@ -1937,10 +1976,10 @@ The following `revoke-grant` example deletes a grant from a KMS key. The followi
 ```
 aws kms revoke-grant \
     --grant-id {{1234a2345b8a4e350500d432bccf8ecd6506710e1391880c4f7f7140160c9af3}} \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output. To confirm that the grant was revoked, use the `list-grants` command.
-For more information, see [Retiring and revoking grants](https://docs.aws.amazon.com/kms/latest/developerguide/grant-manage.html#grant-delete) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Retiring and revoking grants](https://docs.aws.amazon.com/kms/latest/developerguide/grant-delete.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [RevokeGrant](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/revoke-grant.html) in *AWS CLI Command Reference*.
 
 ### `rotate-key-on-demand`
@@ -1954,16 +1993,16 @@ The following `rotate-key-on-demand` example immediately initiates rotation of t
 
 ```
 aws kms rotate-key-on-demand \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "KeyId": "1234abcd-12ab-34cd-56ef-1234567890ab"
+    "KeyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [How to perform on-demand key rotation](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html#rotating-keys-on-demand) in the *AWS Key Management Service Developer Guide*.
+For more information, see [How to perform on-demand key rotation](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-on-demand.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [RotateKeyOnDemand](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/rotate-key-on-demand.html) in *AWS CLI Command Reference*.
 
 ### `schedule-key-deletion`
@@ -1978,14 +2017,15 @@ The `--key-id` parameter identifies the KMS key. This example uses a key ARN val
 
 ```
 aws kms schedule-key-deletion \
-    --key-id arn:aws:kms:us-west-2:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab \
+    --key-id arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --pending-window-in-days 15
 ```
 The response includes the key ARN, key state, waiting period (`PendingWindowInDays`), and the deletion date in Unix time. To view the deletion date in local time, use the AWS KMS console. KMS keys in the `PendingDeletion` key state cannot be used in cryptographic operations.
+Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "DeletionDate": "2022-06-18T23:43:51.272000+00:00",
     "KeyState": "PendingDeletion",
     "PendingWindowInDays": 15
@@ -2010,7 +2050,7 @@ Before running this command, replace the example key ID with a valid key ID from
 msg=(echo 'Hello World' | base64)
 
 aws kms sign \
-    --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
+    --key-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --message fileb://UnsignedMessage \
     --message-type RAW \
     --signing-algorithm RSASSA_PKCS1_V1_5_SHA_256
@@ -2019,7 +2059,7 @@ Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Signature": "ABCDEFhpyVYyTxbafE74ccSvEJLJr3zuoV1Hfymz4qv+/fxmxNLA7SE1SiF8lHw80fKZZ3bJ...",
     "SigningAlgorithm": "RSASSA_PKCS1_V1_5_SHA_256"
 }
@@ -2029,17 +2069,21 @@ For more information about using asymmetric KMS keys in AWS KMS, see [Asymmetric
 The following `sign` example generates a cryptographic signature for a short message stored in a local file. The command also gets the `Signature` property from the response, Base64-decodes it and saves it in the ExampleSignature file. You can use the signature file in a `verify` command that verifies the signature.
 The `sign` command requires a Base64-encoded message and a signing algorithm that your asymmetric KMS key supports. To get the signing algorithms that your KMS key supports, use the `describe-key` command.
 Before running this command, replace the example key ID with a valid key ID from your AWS account. The key ID must represent an asymmetric KMS key with a key usage of SIGN\_VERIFY.
+First, Base64-encode the message and save it in the `EncodedMessage` file.
 
 ```
 echo 'hello world' | base64 > EncodedMessage
+```
+Then, sign the encoded message.
 
+```
 aws kms sign \
-    --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
-    --message fileb://EncodedMessage \
-    --message-type RAW \
-    --signing-algorithm RSASSA_PKCS1_V1_5_SHA_256 \
-    --output text \
-    --query Signature | base64 --decode > ExampleSignature
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --message {{fileb://EncodedMessage}} \
+    --message-type {{RAW}} \
+    --signing-algorithm {{RSASSA_PKCS1_V1_5_SHA_256}} \
+    --output {{text}} \
+    --query {{Signature}} {{|}} {{base64}} --decode {{>}} {{ExampleSignature}}
 ```
 This command produces no output. This example extracts the `Signature` property of the output and saves it in a file.
 For more information about using asymmetric KMS keys in AWS KMS, see [Asymmetric keys in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
@@ -2057,7 +2101,7 @@ To specify the KMS key, use the `key-id` parameter. This example uses a key ID v
 
 ```
 aws kms tag-resource \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tags TagKey='Purpose',TagValue='Test' TagKey='Dept',TagValue='IT'
 ```
 This command produces no output. To view the tags on an AWS KMS KMS key, use the `list-resource-tags` command.
@@ -2076,7 +2120,7 @@ To specify the KMS key, use the `key-id` parameter. This example uses a key ID v
 
 ```
 aws kms untag-resource \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag-key '{{Purpose}}'
 ```
 This command produces no output. To view the tags on an AWS KMS KMS key, use the `list-resource-tags` command.
@@ -2096,10 +2140,10 @@ The `--alias-name` parameter specifies the alias. The alias name value must begi
 ```
 aws kms update-alias \
     --alias-name alias/test-key \
-    --target-key-id 1234abcd-12ab-34cd-56ef-1234567890ab
+    --target-key-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
 This command produces no output. To find the alias, use the `list-aliases` command.
-For more information, see [Updating aliases](https://docs.aws.amazon.com/kms/latest/developerguide/alias-manage.html#alias-update) in the *AWS Key Management Service Developer Guide*.
+For more information, see [Updating aliases](https://docs.aws.amazon.com/kms/latest/developerguide/alias-update.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [UpdateAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/update-alias.html) in *AWS CLI Command Reference*.
 
 ### `update-custom-key-store`
@@ -2118,7 +2162,7 @@ aws kms update-custom-key-store \
     --custom-key-store-id {{cks-1234567890abcdef0}} \
     --new-custom-key-store-name {{ExampleKeyStore}}
 ```
-This command does not return any data. To verify that the command worked, use a `describe-custom-key-stores` command.
+This command produces no output. To verify that the command worked, use a `describe-custom-key-stores` command.
 For more information about updating an AWS CloudHSM key store, see [Editing AWS CloudHSM key store settings](https://docs.aws.amazon.com/kms/latest/developerguide/update-keystore.html) in the *AWS Key Management Service Developer Guide*.
 For more information about updating an external key store, see [Editing external key store properties](https://docs.aws.amazon.com/kms/latest/developerguide/update-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 2: To edit the kmsuser password of an AWS CloudHSM key store**
@@ -2130,10 +2174,10 @@ aws kms update-custom-key-store \
     --custom-key-store-id {{cks-1234567890abcdef0}} \
     --key-store-password {{ExamplePassword}}
 ```
-This command does not return any output. To verify that the change was effective, use a `describe-custom-key-stores` command.
+This command produces no output. To verify that the change was effective, use a `describe-custom-key-stores` command.
 For more information about updating an AWS CloudHSM key store, see [Editing AWS CloudHSM key store settings](https://docs.aws.amazon.com/kms/latest/developerguide/update-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 3: To edit the AWS CloudHSM cluster of an AWS CloudHSM key store**
-The following example changes the AWS CloudHSM cluster that is associated with an AWS CloudHSM key store to a related cluster, such as a different backup of the same cluster.
+The following `update-custom-key-store` example changes the AWS CloudHSM cluster that is associated with an AWS CloudHSM key store to a related cluster, such as a different backup of the same cluster.
 **NOTE:** Before updating an AWS CloudHSM key store, you must disconnect it. Use the `disconnect-custom-key-store` command. After the command completes, you can reconnect the AWS CloudHSM key store. Use the `connect-custom-key-store` command.
 
 ```
@@ -2141,10 +2185,10 @@ aws kms update-custom-key-store \
     --custom-key-store-id {{cks-1234567890abcdef0}} \
     --cloud-hsm-cluster-id {{cluster-1a23b4cdefg}}
 ```
-This command does not return any output. To verify that the change was effective, use a `describe-custom-key-stores` command.
+This command produces no output. To verify that the change was effective, use a `describe-custom-key-stores` command.
 For more information about updating an AWS CloudHSM key store, see [Editing AWS CloudHSM key store settings](https://docs.aws.amazon.com/kms/latest/developerguide/update-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 4: To edit the proxy authentication credential of an external key store**
-The following example updates the proxy authentication credential for your external key store. You must specify both the `raw-secret-access-key` and the `access-key-id`, even if you are changing only one of the values. You can use this feature to fix an invalid credential or to change the credential when the external key store proxy rotates it.
+The following `update-custom-key-store` example updates the proxy authentication credential for your external key store. You must specify both the `raw-secret-access-key` and the `access-key-id`, even if you are changing only one of the values. You can use this feature to fix an invalid credential or to change the credential when the external key store proxy rotates it.
 Establish the proxy authentication credential for AWS KMS on your external key store. Then use this command to provide the credential to AWS KMS. AWS KMS uses this credential to sign its requests to your external key store proxy.
 You can update the proxy authentication credential while the external key store is connected or disconnected. To find the connection state of your custom key store, use the `describe-custom-key-store` command.
 
@@ -2153,10 +2197,10 @@ aws kms update-custom-key-store \
     --custom-key-store-id {{cks-1234567890abcdef0}} \
     --xks-proxy-authentication-credential {{"AccessKeyId=ABCDE12345670EXAMPLE, RawSecretAccessKey=DXjSUawnel2fr6SKC7G25CNxTyWKE5PF9XX6H/u9pSo="}}
 ```
-This command does not return any output. To verify that the change was effective, use a `describe-custom-key-stores` command.
+This command produces no output. To verify that the change was effective, use a `describe-custom-key-stores` command.
 For more information about updating an external key store, see [Editing external key store properties](https://docs.aws.amazon.com/kms/latest/developerguide/update-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
 **Example 5: To edit the proxy connectivity of an external key store**
-The following example changes the external key store proxy connectivity option from public endpoint connectivity to VPC endpoint service connectivity. In addition to changing the `xks-proxy-connectivity` value, you must change the `xks-proxy-uri-endpoint` value to reflect the private DNS name associated with the VPC endpoint service. You must also add an `xks-proxy-vpc-endpoint-service-name` value.
+The following `update-custom-key-store` example changes the external key store proxy connectivity option from public endpoint connectivity to VPC endpoint service connectivity. In addition to changing the `xks-proxy-connectivity` value, you must change the `xks-proxy-uri-endpoint` value to reflect the private DNS name associated with the VPC endpoint service. You must also add an `xks-proxy-vpc-endpoint-service-name` value.
 **NOTE:** Before updating the proxy connectivity of an external store, you must disconnect it. Use the `disconnect-custom-key-store` command. After the command completes, you can reconnect the external key store by using the `connect-custom-key-store` command.
 
 ```
@@ -2164,9 +2208,9 @@ aws kms update-custom-key-store \
     --custom-key-store-id {{cks-1234567890abcdef0}} \
     --xks-proxy-connectivity {{VPC_ENDPOINT_SERVICE}} \
     --xks-proxy-uri-endpoint {{"https://myproxy-private.xks.example.com"}} \
-    --xks-proxy-vpc-endpoint-service-name {{"com.amazonaws.vpce.us-east-1.vpce-svc-example"}}
+    --xks-proxy-vpc-endpoint-service-name {{"com.amazonaws.vpce.us-west-2.vpce-svc-example"}}
 ```
-This command does not return any output. To verify that the change was effective, use a `describe-custom-key-stores` command.
+This command produces no output. To verify that the change was effective, use a `describe-custom-key-stores` command.
 For more information about updating an external key store, see [Editing external key store properties](https://docs.aws.amazon.com/kms/latest/developerguide/update-xks-keystore.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [UpdateCustomKeyStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/update-custom-key-store.html) in *AWS CLI Command Reference*.
 
@@ -2182,22 +2226,22 @@ The `--key-id` parameter identifies the KMS key in the command. This example use
 
 ```
 aws kms update-key-description \
-    --key-id arn:aws:kms:us-west-2:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab \
+    --key-id arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --description "IT Department test key"
 ```
 This command produces no output. To view the description of a KMS key, use the `describe-key` command.
-For more information, see [UpdateKeyDescription](https://docs.aws.amazon.com/cli/latest/reference/kms/update-key-description.html) in the *AWS Key Management Service API Reference*.
+For more information, see [Access and list KMS key details](https://docs.aws.amazon.com/kms/latest/developerguide/finding-keys.html) in the *AWS Key Management Service Developer Guide*.
 **Example 2: To delete the description of a customer managed KMS key**
 The following `update-key-description` example deletes the description to a customer managed KMS key.
 The `--key-id` parameter identifies the KMS key in the command. This example uses a key ID value, but you can use either the key ID or the key ARN of the KMS key.The `--description` parameter with an empty string value ('') deletes the existing description.
 
 ```
 aws kms update-key-description \
-    --key-id 0987dcba-09fe-87dc-65ba-ab0987654321 \
+    --key-id a1b2c3d4-5678-90ab-cdef-EXAMPLE22222 \
     --description ''
 ```
 This command produces no output. To view the description of a KMS key, use the the describe-key command.
-For more information, see [UpdateKeyDescription](https://docs.aws.amazon.com/cli/latest/reference/kms/update-key-description.html) in the *AWS Key Management Service API Reference*.
+For more information, see [Access and list KMS key details](https://docs.aws.amazon.com/kms/latest/developerguide/finding-keys.html) in the *AWS Key Management Service Developer Guide*.
 +  For API details, see [UpdateKeyDescription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/update-key-description.html) in *AWS CLI Command Reference*.
 
 ### `verify-mac`
@@ -2207,7 +2251,7 @@ The following code example shows how to use `verify-mac`.
 
 **AWS CLI**
 **Example 1: To verify an HMAC**
-The following `verify-mac` command verifies an HMAC for a particular message, HMAC KMS keys, and MAC algorithm. A value of 'true' in the MacValid value in the response indicates that the HMAC is valid.
+The following `verify-mac` example verifies an HMAC for a particular message, HMAC KMS keys, and MAC algorithm. A value of 'true' in the MacValid value in the response indicates that the HMAC is valid.
 In AWS CLI v2, the value of the `message` parameter must be Base64-encoded. Or, you can save the message in a file and use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.
 The MAC that you specify cannot be base64-encoded. For help decoding the MAC that the `generate-mac` command returns, see the `generate-mac` command examples.
 Before running this command, replace the example key ID with a valid key ID from your AWS account. The key ID must represent a HMAC KMS key with a key usage of `GENERATE_VERIFY_MAC`.
@@ -2216,7 +2260,7 @@ Before running this command, replace the example key ID with a valid key ID from
 msg=(echo 'Hello World' | base64)
 
 aws kms verify-mac \
-    --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
+    --key-id a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --message fileb://Message \
     --mac-algorithm HMAC_SHA_384 \
     --mac fileb://ExampleMac
@@ -2225,7 +2269,7 @@ Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "MacValid": true,
     "MacAlgorithm": "HMAC_SHA_384"
 }
@@ -2240,7 +2284,7 @@ The following code example shows how to use `verify`.
 
 **AWS CLI**
 **To verify a digital signature**
-The following `verify` command verifies a cryptographic signature for a short, Base64-encoded message. The key ID, message, message type, and signing algorithm must be same ones that were used to sign the message.
+The following `verify` example verifies a cryptographic signature for a short, Base64-encoded message. The key ID, message, message type, and signing algorithm must be same ones that were used to sign the message.
 In AWS CLI v2, the value of the `message` parameter must be Base64-encoded. Or, you can save the message in a file and use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.
 The signature that you specify cannot be base64-encoded. For help decoding the signature that the `sign` command returns, see the `sign` command examples.
 The output of the command includes a Boolean `SignatureValid` field that indicates that the signature was verified. If the signature validation fails, the `verify` command fails, too.
@@ -2248,7 +2292,7 @@ Before running this command, replace the example key ID with a valid key ID from
 
 ```
 aws kms verify \
-    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --key-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --message {{fileb://EncodedMessage}} \
     --message-type {{RAW}} \
     --signing-algorithm {{RSASSA_PKCS1_V1_5_SHA_256}} \
@@ -2258,7 +2302,7 @@ Output:
 
 ```
 {
-    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "SignatureValid": true,
     "SigningAlgorithm": "RSASSA_PKCS1_V1_5_SHA_256"
 }

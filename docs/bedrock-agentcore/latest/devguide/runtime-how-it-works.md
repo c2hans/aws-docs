@@ -202,9 +202,6 @@ def wait_until_ready(client, agent_runtime_id):
         time.sleep(5)
 ```
 
-**Note**
-V2 limits the total size of your agent’s environment variables to 1.5 KB for direct code deployments and 2.5 KB for container agents, compared to 4 KB on V1. If your configuration exceeds this limit, the request fails with a `ValidationException`. AgentCore Runtime will raise this limit to match V1.
-
 ### Snapshot lifecycle
 <a name="runtime-v2-snapshot-lifecycle"></a>
 

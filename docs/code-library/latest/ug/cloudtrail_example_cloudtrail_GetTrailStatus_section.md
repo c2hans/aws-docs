@@ -14,29 +14,31 @@ The following code examples show how to use `GetTrailStatus`.
 
 **AWS CLI**
 **To get the status of a trail**
-The following `get-trail-status` command returns the delivery and logging details for `Trail1`:
+The following `get-trail-status` example returns the delivery and logging details for `Trail1`.
 
 ```
-aws cloudtrail get-trail-status --name {{Trail1}}
+aws cloudtrail get-trail-status \
+    --name {{Trail1}}
 ```
 Output:
 
 ```
 {
-  "LatestNotificationTime": 1454022144.869,
-  "LatestNotificationAttemptSucceeded": "2016-01-28T23:02:24Z",
-  "LatestDeliveryAttemptTime": "2016-01-28T23:02:24Z",
-  "LatestDeliveryTime": 1454022144.869,
-  "TimeLoggingStarted": "2015-11-06T18:36:38Z",
-  "LatestDeliveryAttemptSucceeded": "2016-01-28T23:02:24Z",
-  "IsLogging": true,
-  "LatestCloudWatchLogsDeliveryTime": 1454022144.918,
-  "StartLoggingTime": 1446834998.695,
-  "StopLoggingTime": 1446834996.933,
-  "LatestNotificationAttemptTime": "2016-01-28T23:02:24Z",
-  "TimeLoggingStopped": "2015-11-06T18:36:36Z"
+    "LatestNotificationTime": 1454022144.869,
+    "LatestNotificationAttemptSucceeded": "2016-01-28T23:02:24Z",
+    "LatestDeliveryAttemptTime": "2016-01-28T23:02:24Z",
+    "LatestDeliveryTime": 1454022144.869,
+    "TimeLoggingStarted": "2015-11-06T18:36:38Z",
+    "LatestDeliveryAttemptSucceeded": "2016-01-28T23:02:24Z",
+    "IsLogging": true,
+    "LatestCloudWatchLogsDeliveryTime": 1454022144.918,
+    "StartLoggingTime": 1446834998.695,
+    "StopLoggingTime": 1446834996.933,
+    "LatestNotificationAttemptTime": "2016-01-28T23:02:24Z",
+    "TimeLoggingStopped": "2015-11-06T18:36:36Z"
 }
 ```
+For more information, see [Managing trails with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-additional-cli-commands.html) in the *AWS CloudTrail User Guide*.
 +  For API details, see [GetTrailStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/get-trail-status.html) in *AWS CLI Command Reference*.
 
 ------

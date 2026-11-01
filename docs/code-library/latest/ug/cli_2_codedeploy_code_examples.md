@@ -34,6 +34,7 @@ aws deploy add-tags-to-on-premises-instances \
     --tags {{Key=Name,Value=CodeDeployDemo-OnPrem}}
 ```
 This command produces no output.
+For more information, see [Tagging instances for deployment groups in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-tagging.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [AddTagsToOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/add-tags-to-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-application-revisions`
@@ -76,7 +77,7 @@ Output:
     "errorMessage": ""
 }
 ```
-For more information, see [BatchGetApplicationRevisions](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetApplicationRevisions.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [View application revision details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetApplicationRevisions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-application-revisions.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-applications`
@@ -89,7 +90,8 @@ The following code example shows how to use `batch-get-applications`.
 The following `batch-get-applications` example displays information about multiple applications that are associated with the user's AWS account.
 
 ```
-aws deploy batch-get-applications --application-names {{WordPress_App}} {{MyOther_App}}
+aws deploy batch-get-applications \
+    --application-names {{WordPress_App}} {{MyOther_App}}
 ```
 Output:
 
@@ -98,19 +100,20 @@ Output:
     "applicationsInfo": [
         {
             "applicationName": "WordPress_App",
-            "applicationId": "d9dd6993-f171-44fa-a811-211e4EXAMPLE",
+            "applicationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "createTime": 1407878168.078,
             "linkedToGitHub": false
         },
         {
             "applicationName": "MyOther_App",
-            "applicationId": "8ca57519-31da-42b2-9194-8bb16EXAMPLE",
+            "applicationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "createTime": 1407453571.63,
             "linkedToGitHub": false
         }
     ]
 }
 ```
+For more information, see [View application details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetApplications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-applications.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-deployment-groups`
@@ -163,7 +166,7 @@ Output:
                     ]
                 ]
             },
-            "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-11111example",
+            "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "triggerConfigurations": [],
             "applicationName": "my-codedeploy-application",
             "computePlatform": "Server",
@@ -194,7 +197,7 @@ Output:
                     ]
                 ]
             },
-            "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-22222example",
+            "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "triggerConfigurations": [],
             "applicationName": "my-codedeploy-application",
             "computePlatform": "Server",
@@ -204,7 +207,7 @@ Output:
     "errorMessage": ""
 }
 ```
-For more information, see [BatchGetDeploymentGroups](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetDeploymentGroups.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [View deployment group details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetDeploymentGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-deployment-groups.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-deployment-targets`
@@ -277,7 +280,7 @@ Output:
     ]
 }
 ```
-For more information, see [BatchGetDeploymentTargets](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_BatchGetDeploymentTargets.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetDeploymentTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-deployment-targets.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-deployments`
@@ -290,7 +293,8 @@ The following code example shows how to use `batch-get-deployments`.
 The following `batch-get-deployments` example displays information about multiple deployments that are associated with the user's AWS account.
 
 ```
-aws deploy batch-get-deployments --deployment-ids {{d-A1B2C3111}} {{d-A1B2C3222}}
+aws deploy batch-get-deployments \
+    --deployment-ids {{d-A1B2C3111}} {{d-A1B2C3222}}
 ```
 Output:
 
@@ -356,6 +360,7 @@ Output:
     ]
 }
 ```
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-deployments.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-on-premises-instances`
@@ -368,7 +373,8 @@ The following code example shows how to use `batch-get-on-premises-instances`.
 The following `batch-get-on-premises-instances` example gets information about two on-premises instances.
 
 ```
-aws deploy batch-get-on-premises-instances --instance-names {{AssetTag12010298EX}} {{AssetTag23121309EX}}
+aws deploy batch-get-on-premises-instances \
+    --instance-names {{AssetTag12010298EX}} {{AssetTag23121309EX}}
 ```
 Output:
 
@@ -402,6 +408,7 @@ Output:
     ]
 }
 ```
+For more information, see [Get information about multiple on-premises instances](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-view-details-multiple.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [BatchGetOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/batch-get-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ### `continue-deployment`
@@ -419,7 +426,7 @@ aws deploy continue-deployment \
     --deployment-wait-type {{"READY_WAIT"}}
 ```
 This command produces no output.
-For more information, see [ContinueDeployment](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ContinueDeployment.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [Create a deployment group for an EC2/On-Premises blue/green deployment (console)](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-create-blue-green.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ContinueDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/continue-deployment.html) in *AWS CLI Command Reference*.
 
 ### `create-application`
@@ -432,15 +439,17 @@ The following code example shows how to use `create-application`.
 The following `create-application` example creates an application and associates it with the user's AWS account.
 
 ```
-aws deploy create-application --application-name {{MyOther_App}}
+aws deploy create-application \
+    --application-name {{MyOther_App}}
 ```
 Output:
 
 ```
 {
-    "applicationId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+    "applicationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Create an application with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-create.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [CreateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/create-application.html) in *AWS CLI Command Reference*.
 
 ### `create-deployment-config`
@@ -461,9 +470,10 @@ Output:
 
 ```
 {
-    "deploymentConfigId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+    "deploymentConfigId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Create a deployment configuration with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations-create.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [CreateDeploymentConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/create-deployment-config.html) in *AWS CLI Command Reference*.
 
 ### `create-deployment-group`
@@ -488,9 +498,10 @@ Output:
 
 ```
 {
-    "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+    "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Create a deployment group with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-create.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [CreateDeploymentGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/create-deployment-group.html) in *AWS CLI Command Reference*.
 
 ### `create-deployment`
@@ -517,9 +528,15 @@ Output:
     "deploymentId": "d-A1B2C3111"
 }
 ```
+For more information, see [Create an EC2/On-Premises Compute Platform deployment (CLI)](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-create-cli.html) in the *AWS CodeDeploy User Guide*.
 **Example 2: To create a CodeDeploy deployment using the Amazon ECS compute platform**
-The following `create-deployment` example uses the following two files to deploy an Amazon ECS service.
-Contents of `create-deployment.json` file:
+The following `create-deployment` example deploys an Amazon ECS service by using the settings in the file `create-deployment.json`.
+
+```
+aws deploy create-deployment \
+    --cli-input-json {{file://create-deployment.json}}
+```
+Contents of `create-deployment.json`:
 
 ```
 {
@@ -549,13 +566,6 @@ Resources:
           ContainerPort: 80
         PlatformVersion: "LATEST"
 ```
-Command:
-
-```
-aws deploy create-deployment \
-    --cli-input-json {{file://create-deployment.json}} \
-    --region {{us-east-1}}
-```
 Output:
 
 ```
@@ -563,7 +573,7 @@ Output:
     "deploymentId": "d-1234ABCDE"
 }
 ```
-For more information, see [CreateDeployment](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_CreateDeployment.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [Create an Amazon ECS Compute Platform deployment (CLI)](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-create-ecs-cli.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [CreateDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/create-deployment.html) in *AWS CLI Command Reference*.
 
 ### `delete-application`
@@ -576,9 +586,11 @@ The following code example shows how to use `delete-application`.
 The following `delete-application` example deletes the specified application that is associated with the user's AWS account.
 
 ```
-aws deploy delete-application --application-name {{WordPress_App}}
+aws deploy delete-application \
+    --application-name {{WordPress_App}}
 ```
 This command produces no output.
+For more information, see [Delete an application in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-delete.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeleteApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/delete-application.html) in *AWS CLI Command Reference*.
 
 ### `delete-deployment-config`
@@ -591,9 +603,11 @@ The following code example shows how to use `delete-deployment-config`.
 The following `delete-deployment-config` example deletes a custom deployment configuration that is associated with the user's AWS account.
 
 ```
-aws deploy delete-deployment-config --deployment-config-name {{ThreeQuartersHealthy}}
+aws deploy delete-deployment-config \
+    --deployment-config-name {{ThreeQuartersHealthy}}
 ```
 This command produces no output.
+For more information, see [Delete a deployment configuration with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations-delete.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeleteDeploymentConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/delete-deployment-config.html) in *AWS CLI Command Reference*.
 
 ### `delete-deployment-group`
@@ -617,6 +631,7 @@ Output:
     "hooksNotCleanedUp": []
 }
 ```
+For more information, see [Delete a deployment group with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-delete.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeleteDeploymentGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/delete-deployment-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-git-hub-account-token`
@@ -629,7 +644,8 @@ The following code example shows how to use `delete-git-hub-account-token`.
 The following `delete-git-hub-account-token` example deletes the connection of the specified GitHub account.
 
 ```
-aws deploy delete-git-hub-account-token --token-name {{my-github-account}}
+aws deploy delete-git-hub-account-token \
+    --token-name {{my-github-account}}
 ```
 Output:
 
@@ -638,7 +654,7 @@ Output:
     "tokenName": "my-github-account"
 }
 ```
-For more information, see [DeleteGitHubAccountToken](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_DeleteGitHubAccountToken.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [Integrating CodeDeploy with GitHub](https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeleteGitHubAccountToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/delete-git-hub-account-token.html) in *AWS CLI Command Reference*.
 
 ### `deregister-on-premises-instance`
@@ -651,9 +667,11 @@ The following code example shows how to use `deregister-on-premises-instance`.
 The following `deregister-on-premises-instance` example deregisters an on-premises instance with AWS CodeDeploy, but it does not delete the IAM user associated with the instance, nor does it disassociate in AWS CodeDeploy the on-premises instance tags from the instance. It also does not uninstall the AWS CodeDeploy Agent from the instance nor remove the on-premises configuration file from the instance.
 
 ```
-aws deploy deregister-on-premises-instance --instance-name {{AssetTag12010298EX}}
+aws deploy deregister-on-premises-instance \
+    --instance-name {{AssetTag12010298EX}}
 ```
 This command produces no output.
+For more information, see [Manually deregister an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-deregister-manually.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeregisterOnPremisesInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/deregister-on-premises-instance.html) in *AWS CLI Command Reference*.
 
 ### `deregister`
@@ -668,8 +686,7 @@ The following `deregister` example deregisters an on-premises instance with AWS 
 ```
 aws deploy deregister \
     --instance-name {{AssetTag12010298EX}} \
-    --no-delete-iam-user \
-    --region {{us-west-2}}
+    --no-delete-iam-user
 ```
 Output:
 
@@ -682,6 +699,7 @@ Deregistering the on-premises instance... DONE
 Run the following command on the on-premises instance to uninstall the codedeploy-agent:
 aws deploy uninstall
 ```
+For more information, see [Automatically deregister an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-deregister-automatically.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [Deregister](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/deregister.html) in *AWS CLI Command Reference*.
 
 ### `get-application-revision`
@@ -706,7 +724,9 @@ Output:
     "revisionInfo": {
         "description": "Application revision registered by Deployment ID: d-A1B2C3111",
         "registerTime": 1411076520.009,
-        "deploymentGroups": "WordPress_DG",
+        "deploymentGroups": [
+            "WordPress_DG"
+        ],
         "lastUsedTime": 1411076520.009,
         "firstUsedTime": 1411076520.009
     },
@@ -721,6 +741,7 @@ Output:
     }
 }
 ```
+For more information, see [View application revision details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetApplicationRevision](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-application-revision.html) in *AWS CLI Command Reference*.
 
 ### `get-application`
@@ -733,7 +754,8 @@ The following code example shows how to use `get-application`.
 The following `get-application` example displays information about an application that is associated with the user's AWS account.
 
 ```
-aws deploy get-application --application-name {{WordPress_App}}
+aws deploy get-application \
+    --application-name {{WordPress_App}}
 ```
 Output:
 
@@ -741,12 +763,13 @@ Output:
 {
     "application": {
         "applicationName": "WordPress_App",
-        "applicationId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "applicationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createTime": 1407878168.078,
         "linkedToGitHub": false
     }
 }
 ```
+For more information, see [View application details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-application.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment-config`
@@ -759,14 +782,15 @@ The following code example shows how to use `get-deployment-config`.
 The following `get-deployment-config` example displays information about a deployment configuration that is associated with the user's AWS account.
 
 ```
-aws deploy get-deployment-config --deployment-config-name {{ThreeQuartersHealthy}}
+aws deploy get-deployment-config \
+    --deployment-config-name {{ThreeQuartersHealthy}}
 ```
 Output:
 
 ```
 {
     "deploymentConfigInfo": {
-        "deploymentConfigId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "deploymentConfigId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "minimumHealthyHosts": {
             "type": "FLEET_PERCENT",
             "value": 75
@@ -776,6 +800,7 @@ Output:
     }
 }
 ```
+For more information, see [View deployment configuration details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetDeploymentConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-deployment-config.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment-group`
@@ -799,7 +824,9 @@ Output:
     "deploymentGroupInfo": {
         "applicationName": "WordPress_App",
         "autoScalingGroups": [
-            "CodeDeployDemo-ASG"
+            {
+                "name": "CodeDeployDemo-ASG"
+            }
         ],
         "deploymentConfigName": "CodeDeployDefault.OneAtATime",
         "ec2TagFilters": [
@@ -809,12 +836,13 @@ Output:
                 "Key": "Name"
             }
         ],
-        "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+        "deploymentGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "serviceRoleArn": "arn:aws:iam::123456789012:role/CodeDeployDemoRole",
         "deploymentGroupName": "WordPress_DG"
     }
 }
 ```
+For more information, see [View deployment group details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetDeploymentGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-deployment-group.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment-instance`
@@ -827,14 +855,16 @@ The following code example shows how to use `get-deployment-instance`.
 The following `get-deployment-instance` example displays information about a deployment instance that is associated with the specified deployment.
 
 ```
-aws deploy get-deployment-instance --deployment-id {{d-QA4G4F9EX}} --instance-id {{i-902e9fEX}}
+aws deploy get-deployment-instance \
+    --deployment-id {{d-QA4G4F9EX}} \
+    --instance-id {{i-902e9fEX}}
 ```
 Output:
 
 ```
 {
     "instanceSummary": {
-        "instanceId": "arn:aws:ec2:us-east-1:80398EXAMPLE:instance/i-902e9fEX",
+        "instanceId": "arn:aws:ec2:us-west-2:80398EXAMPLE:instance/i-902e9fEX",
         "lifecycleEvents": [
             {
                 "status": "Succeeded",
@@ -883,6 +913,7 @@ Output:
     }
 }
 ```
+For more information, see [View instance details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetDeploymentInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-deployment-instance.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment-target`
@@ -1001,7 +1032,7 @@ Output:
     }
 }
 ```
-For more information, see [GetDeploymentTarget](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetDeploymentTarget.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [View instance details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetDeploymentTarget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-deployment-target.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment`
@@ -1014,7 +1045,8 @@ The following code example shows how to use `get-deployment`.
 The following `get-deployment` example displays information about a deployment that is associated with the user's AWS account.
 
 ```
-aws deploy get-deployment --deployment-id {{d-A1B2C3123}}
+aws deploy get-deployment \
+    --deployment-id {{d-A1B2C3123}}
 ```
 Output:
 
@@ -1050,6 +1082,7 @@ Output:
     }
 }
 ```
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-deployment.html) in *AWS CLI Command Reference*.
 
 ### `get-on-premises-instance`
@@ -1062,7 +1095,8 @@ The following code example shows how to use `get-on-premises-instance`.
 The following `get-on-premises-instance` example retrieves information about the specified on-premises instance.
 
 ```
-aws deploy get-on-premises-instance --instance-name {{AssetTag12010298EX}}
+aws deploy get-on-premises-instance \
+    --instance-name {{AssetTag12010298EX}}
 ```
 Output:
 
@@ -1078,10 +1112,11 @@ Output:
         ],
         "instanceName": "AssetTag12010298EX",
         "registerTime": 1425579465.228,
-        "instanceArn": "arn:aws:codedeploy:us-east-1:123456789012:instance/AssetTag12010298EX_4IwLNI2Alh"
+        "instanceArn": "arn:aws:codedeploy:us-west-2:123456789012:instance/AssetTag12010298EX_4IwLNI2Alh"
     }
 }
 ```
+For more information, see [Get information about a single on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-view-details-single.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [GetOnPremisesInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/get-on-premises-instance.html) in *AWS CLI Command Reference*.
 
 ### `install`
@@ -1097,7 +1132,6 @@ The following `install` example copies the on-premises configuration file from t
 aws deploy install \
     --override-config \
     --config-file C:\temp\codedeploy.onpremises.yml \
-    --region {{us-west-2}} \
     --agent-installer {{s3://aws-codedeploy-us-west-2/latest/codedeploy-agent.msi}}
 ```
 Output:
@@ -1106,6 +1140,7 @@ Output:
 Creating the on-premises instance configuration file... DONE
 Installing the AWS CodeDeploy Agent... DONE
 ```
+For more information, see [Use the register command (IAM user ARN) to register an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on-premises-register-instance.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [Install](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/install.html) in *AWS CLI Command Reference*.
 
 ### `list-application-revisions`
@@ -1152,6 +1187,7 @@ Output:
     ]
 }
 ```
+For more information, see [View application revision details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListApplicationRevisions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-application-revisions.html) in *AWS CLI Command Reference*.
 
 ### `list-applications`
@@ -1176,6 +1212,7 @@ Output:
     ]
 }
 ```
+For more information, see [View application details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListApplications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-applications.html) in *AWS CLI Command Reference*.
 
 ### `list-deployment-configs`
@@ -1202,6 +1239,7 @@ Output:
     ]
 }
 ```
+For more information, see [View deployment configuration details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeploymentConfigs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployment-configs.html) in *AWS CLI Command Reference*.
 
 ### `list-deployment-groups`
@@ -1214,7 +1252,8 @@ The following code example shows how to use `list-deployment-groups`.
 The following `list-deployment-groups` example displays information about all deployment groups that are associated with the specified application.
 
 ```
-aws deploy list-deployment-groups --application-name {{WordPress_App}}
+aws deploy list-deployment-groups \
+    --application-name {{WordPress_App}}
 ```
 Output:
 
@@ -1227,6 +1266,7 @@ Output:
     ]
 }
 ```
+For more information, see [View deployment group details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeploymentGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployment-groups.html) in *AWS CLI Command Reference*.
 
 ### `list-deployment-instances`
@@ -1253,6 +1293,7 @@ Output:
     ]
 }
 ```
+For more information, see [View instance details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeploymentInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployment-instances.html) in *AWS CLI Command Reference*.
 
 ### `list-deployment-targets`
@@ -1262,7 +1303,7 @@ The following code example shows how to use `list-deployment-targets`.
 
 **AWS CLI**
 **To retrieve a list of target IDs that are associated with a deployment**
-The following `list-deployment-targets` example retrieves a list of target IDs associated with deployments that have a status of "Failed" or "InProgress."
+The following `list-deployment-targets` example retrieves a list of target IDs associated with deployments that have a status of "Failed" or "InProgress".
 
 ```
 aws deploy list-deployment-targets \
@@ -1278,7 +1319,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListDeploymentTargets](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListDeploymentTargets.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [View instance details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeploymentTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployment-targets.html) in *AWS CLI Command Reference*.
 
 ### `list-deployments`
@@ -1308,6 +1349,7 @@ Output:
     ]
 }
 ```
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployments.html) in *AWS CLI Command Reference*.
 
 ### `list-git-hub-account-token-names`
@@ -1333,7 +1375,7 @@ Output:
     ]
 }
 ```
-For more information, see [ListGitHubAccountTokenNames](https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListGitHubAccountTokenNames.html) in the *AWS CodeDeploy API Reference*.
+For more information, see [Integrating CodeDeploy with GitHub](https://docs.aws.amazon.com/codedeploy/latest/userguide/integrations-partners-github.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListGitHubAccountTokenNames](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-git-hub-account-token-names.html) in *AWS CLI Command Reference*.
 
 ### `list-on-premises-instances`
@@ -1359,6 +1401,7 @@ Output:
     ]
 }
 ```
+For more information, see [Get information about multiple on-premises instances](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-view-details-multiple.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1372,7 +1415,7 @@ The following `list-tags-for-resource` example lists the tags applied to an appl
 
 ```
 aws deploy list-tags-for-resource \
-    --resource-arn {{arn:aws:codedeploy:us-west-2:111122223333:application:testApp}}
+    --resource-arn {{arn:aws:codedeploy:us-west-2:123456789012:application:testApp}}
 ```
 Output:
 
@@ -1411,11 +1454,13 @@ aws deploy push \
     --source {{/tmp/MyLocalDeploymentFolder/}}
 ```
 The output describes how to use the `create-deployment` command to create a deployment that uses the uploaded application revision.
+Output:
 
 ```
 To deploy with this revision, run:
 aws deploy create-deployment --application-name WordPress_App --deployment-config-name <deployment-config-name> --deployment-group-name <deployment-group-name> --s3-location bucket=CodeDeployDemoBucket,key=WordPressApp.zip,bundleType=zip,eTag="cecc9b8EXAMPLE50a6e71fdb88EXAMPLE",version=LFsJAUdEXAMPLEfvKtvi79L8EXAMPLE
 ```
+For more information, see [Push a revision for CodeDeploy to Amazon S3 (EC2/On-Premises deployments only)](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-push.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [Push](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/push.html) in *AWS CLI Command Reference*.
 
 ### `register-application-revision`
@@ -1434,6 +1479,7 @@ aws deploy register-application-revision \
     --s3-location {{bucket=CodeDeployDemoBucket,key=RevisedWordPressApp.zip,bundleType=zip,eTag=cecc9b8a08eac650a6e71fdb88EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Register an application revision in Amazon S3 with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-register.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [RegisterApplicationRevision](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register-application-revision.html) in *AWS CLI Command Reference*.
 
 ### `register-on-premises-instance`
@@ -1451,6 +1497,7 @@ aws deploy register-on-premises-instance \
     --iam-user-arn {{arn:aws:iam::80398EXAMPLE:user/CodeDeployDemoUser-OnPrem}}
 ```
 This command produces no output.
+For more information, see [Use the register-on-premises-instance command (IAM user ARN) to register an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/register-on-premises-instance-iam-user-arn.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [RegisterOnPremisesInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register-on-premises-instance.html) in *AWS CLI Command Reference*.
 
 ### `register`
@@ -1466,8 +1513,7 @@ The following `register` example registers an on-premises instance with AWS Code
 aws deploy register \
     --instance-name {{AssetTag12010298EX}} \
     --iam-user-arn {{arn:aws:iam::80398EXAMPLE:user/CodeDeployUser-OnPrem}} \
-    --tags {{Key=Name,Value=CodeDeployDemo-OnPrem}} \
-    --region {{us-west-2}}
+    --tags {{Key=Name,Value=CodeDeployDemo-OnPrem}}
 ```
 Output:
 
@@ -1477,6 +1523,7 @@ Adding tags to the on-premises instance... DONE
 Copy the on-premises configuration file named codedeploy.onpremises.yml to the on-premises instance, and run the following command on the on-premises instance to install and configure the AWS CodeDeploy Agent:
 aws deploy install --config-file codedeploy.onpremises.yml
 ```
+For more information, see [Use the register command (IAM user ARN) to register an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-on-premises-register-instance.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [Register](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags-from-on-premises-instances`
@@ -1494,6 +1541,7 @@ aws deploy remove-tags-from-on-premises-instances \
     --tags {{Key=Name,Value=CodeDeployDemo-OnPrem}}
 ```
 This command produces no output.
+For more information, see [Manually remove on-premises instance tags from an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-remove-tags.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [RemoveTagsFromOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/remove-tags-from-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ### `stop-deployment`
@@ -1513,6 +1561,7 @@ Output:
     "statusMessage": "No more commands will be scheduled for execution in the deployment instances"
 }
 ```
+For more information, see [Stop a deployment with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-stop.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [StopDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/stop-deployment.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -1522,14 +1571,14 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To tag a resource (application)**
-The following `tag-resource` example adds two tags with keys Name and Type, and values testName and testType to an application named testApp in CodeDeploy.:
+The following `tag-resource` example adds two tags with keys Name and Type, and values testName and testType to an application named testApp in CodeDeploy.
 
 ```
 aws deploy tag-resource \
-    --resource-arn  {{arn:aws:codedeploy:us-west-2:111122223333:application:testApp}} \
+    --resource-arn  {{arn:aws:codedeploy:us-west-2:123456789012:application:testApp}} \
     --tags {{Key=Name,Value=testName}} {{Key=Type,Value=testType}}
 ```
-If successful, this command produces no output.
+This command produces no output.
 For more information, see [Tagging instances for deployment groups in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-tagging.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/tag-resource.html) in *AWS CLI Command Reference*.
 
@@ -1546,6 +1595,7 @@ The following `uninstall` example uninstalls the AWS CodeDeploy Agent from the o
 aws deploy uninstall
 ```
 This command produces no output.
+For more information, see [Automatically uninstall the CodeDeploy agent and remove the configuration file from an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-uninstall-agent.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [Uninstall](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/uninstall.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1559,10 +1609,10 @@ The following `untag-resource` example removes two tags with keys Name and Type 
 
 ```
 aws deploy untag-resource \
-    --resource-arn  {{arn:aws:codedeploy:us-west-2:111122223333:application:testApp}} \
+    --resource-arn  {{arn:aws:codedeploy:us-west-2:123456789012:application:testApp}} \
     --tag-keys {{Name}} {{Type}}
 ```
-If successful, this command produces no output.
+This command produces no output.
 For more information, see [Tagging instances for deployment groups in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-tagging.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/untag-resource.html) in *AWS CLI Command Reference*.
 
@@ -1581,6 +1631,7 @@ aws deploy update-application \
     --new-application-name {{My_WordPress_App}}
 ```
 This command produces no output.
+For more information, see [Rename a CodeDeploy application](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-rename.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [UpdateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/update-application.html) in *AWS CLI Command Reference*.
 
 ### `update-deployment-group`
@@ -1603,4 +1654,5 @@ aws deploy update-deployment-group \
     --service-role-arn {{arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo-2}}
 ```
 This command produces no output.
+For more information, see [Change deployment group settings with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-edit.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [UpdateDeploymentGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/update-deployment-group.html) in *AWS CLI Command Reference*.

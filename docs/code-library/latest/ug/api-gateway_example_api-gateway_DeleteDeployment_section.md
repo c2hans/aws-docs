@@ -14,11 +14,15 @@ The following code examples show how to use `DeleteDeployment`.
 
 **AWS CLI**
 **To delete a deployment in an API**
-Command:
+The following `delete-deployment` example deletes a deployment in an API.
 
 ```
-aws apigateway delete-deployment --rest-api-id {{1234123412}} --deployment-id {{a1b2c3}}
+aws apigateway delete-deployment \
+    --rest-api-id {{1234123412}} \
+    --deployment-id {{a1b2c3}}
 ```
+This command produces no output.
+For more information, see [Deploy REST APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-deploy-api.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [DeleteDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/delete-deployment.html) in *AWS CLI Command Reference*.
 
 ------

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-data-requests.html
 ---
 
-# Data Requests
+# Data requests
 <a name="acxd-data-requests"></a>
 
 Configure webhook integrations for retrieving or sending data during conversations.
@@ -14,7 +14,7 @@ Configure webhook integrations for retrieving or sending data during conversatio
 + [UpdateDataRequest](#acxd-data-requests-updatedatarequest)
 + [DeleteDataRequest](#acxd-data-requests-deletedatarequest)
 + [Request Parameters](#acxd-data-requests-request-parameters)
-+ [Webhook Config](#acxd-data-requests-webhook-config)
++ [Webhook config](#acxd-data-requests-webhook-config)
 
 ## ListDataRequests
 <a name="acxd-data-requests-listdatarequests"></a>
@@ -427,7 +427,7 @@ Type: Integer
 
 Max items per page (1–500). See Common Types.
 
-## Webhook Config
+## Webhook config
 <a name="acxd-data-requests-webhook-config"></a>
 
 | Field | Type | Required |

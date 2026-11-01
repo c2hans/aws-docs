@@ -582,6 +582,7 @@ The following actions are supported:
 +  [GetHostReservationPurchasePreview](API_GetHostReservationPurchasePreview.md)
 +  [GetImageAncestry](API_GetImageAncestry.md)
 +  [GetImageBlockPublicAccessState](API_GetImageBlockPublicAccessState.md)
++  [GetImageFindings](API_GetImageFindings.md)
 +  [GetInstanceMetadataDefaults](API_GetInstanceMetadataDefaults.md)
 +  [GetInstanceTpmEkPub](API_GetInstanceTpmEkPub.md)
 +  [GetInstanceTypesFromInstanceRequirements](API_GetInstanceTypesFromInstanceRequirements.md)

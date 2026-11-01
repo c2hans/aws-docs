@@ -128,12 +128,13 @@ Output:
 ```
 {
     "PolicyComplianceDetail": {
-    "EvaluationLimitExceeded": false,
-    "IssueInfoMap": {},
-    "MemberAccount": "123456789012",
-    "PolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-    "PolicyOwner": "123456789012",
-    "Violators": []
+        "EvaluationLimitExceeded": false,
+        "IssueInfoMap": {},
+        "MemberAccount": "123456789012",
+        "PolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "PolicyOwner": "123456789012",
+        "Violators": []
+    }
 }
 ```
 For more information, see [Viewing Resource Compliance with a Policy](https://docs.aws.amazon.com/waf/latest/developerguide/fms-compliance.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -192,7 +193,7 @@ Output:
         "ExcludeResourceTags": false,
         "RemediationEnabled": false
     },
-    "PolicyArn": "arn:aws:fms:us-west-2:123456789012:policy/d1ac59b8-938e-42b3-b2e0-7c620422ddc2"
+    "PolicyArn": "arn:aws:fms:us-west-2:123456789012:policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Working with AWS Firewall Manager Policies](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-policies.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -259,9 +260,9 @@ Output:
 ```
 {
     "MemberAccounts": [
-        "222222222222",
-        "333333333333",
-        "444444444444"
+        "123456789111",
+        "123456789222",
+        "123456789333"
     ]
 }
 ```
@@ -296,7 +297,7 @@ Output:
         },
         {
             "PolicyArn": "arn:aws:fms:us-west-2:123456789012:policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "PolicyId": "457c9b21-fc94-406c-ae63-21217395ba72",
+            "PolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "PolicyName": "test",
             "ResourceType": "AWS::EC2::Instance",
             "SecurityServiceType": "SECURITY_GROUPS_COMMON",

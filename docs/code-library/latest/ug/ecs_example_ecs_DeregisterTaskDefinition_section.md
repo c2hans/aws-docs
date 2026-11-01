@@ -20,12 +20,13 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To deregister a task definition**
-The following `deregister-task-definition` example deregisters the first revision of the `curler` task definition in your default region.
+The following `deregister-task-definition` example deregisters the first revision of the `curler` task definition in your default region. In the output, the task definition status shows `INACTIVE`.
 
 ```
-aws ecs deregister-task-definition --task-definition {{curler:1}}
+aws ecs deregister-task-definition \
+    --task-definition {{curler:1}}
 ```
-Note that in the resulting output, the task definition status shows `INACTIVE`:
+Output:
 
 ```
 {
@@ -55,7 +56,7 @@ Note that in the resulting output, the task definition status shows `INACTIVE`:
     }
 }
 ```
-For more information, see [Amazon ECS Task Definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS task definitions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeregisterTaskDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/deregister-task-definition.html) in *AWS CLI Command Reference*.
 
 ------

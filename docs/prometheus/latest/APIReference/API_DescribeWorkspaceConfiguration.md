@@ -49,7 +49,9 @@ Content-type: application/json
             }
          }
       ],
+      "outOfOrderTimeWindowInSeconds": number,
       "retentionPeriodInDays": number,
+      "ruleQueryOffsetInSeconds": number,
       "status": {
          "statusCode": "string",
          "statusReason": "string"

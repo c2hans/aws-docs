@@ -23,7 +23,8 @@ Action examples are code excerpts from larger programs and must be run in contex
 The following `delete-cluster` example deletes the specified empty cluster.
 
 ```
-aws ecs delete-cluster --cluster {{MyCluster}}
+aws ecs delete-cluster \
+    --cluster {{MyCluster}}
 ```
 Output:
 
@@ -36,13 +37,13 @@ Output:
         "registeredContainerInstancesCount": 0,
         "pendingTasksCount": 0,
         "runningTasksCount": 0,
-        "activeServicesCount": 0
+        "activeServicesCount": 0,
         "statistics": [],
         "tags": []
     }
 }
 ```
-For more information, see [Deleting a Cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete_cluster.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Deleting an Amazon ECS cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete_cluster-new-console.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [DeleteCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/delete-cluster.html) in *AWS CLI Command Reference*.
 
 ------

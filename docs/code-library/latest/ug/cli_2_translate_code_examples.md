@@ -26,7 +26,7 @@ The following code example shows how to use `import-terminology`.
 
 **AWS CLI**
 **To import a custom terminology from a file**
-The following `import-terminology` example creates a terminology called `MyTestTerminology` from the `test-terminology.csv` file:
+The following `import-terminology` example creates a terminology called `MyTestTerminology` from the `test-terminology.csv` file.
 
 ```
 aws translate import-terminology \
@@ -59,4 +59,5 @@ Output:
     }
 }
 ```
+For more information, see [Customizing your translations with custom terminology](https://docs.aws.amazon.com/translate/latest/dg/how-custom-terminology.html) in the *Amazon Translate Developer Guide*.
 +  For API details, see [ImportTerminology](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/translate/import-terminology.html) in *AWS CLI Command Reference*.

@@ -16,6 +16,13 @@ Type: Integer
 Valid Range: Minimum value of 128.
 Required: Yes
 
+ ** AcceleratorPartitionType **   <a name="sagemaker-Type-InferenceComponentComputeResourceRequirements-AcceleratorPartitionType"></a>
+The accelerator partition profile this inference component occupies; on NVIDIA GPUs this is a Multi-Instance GPU (MIG) profile such as `mig-3g.40gb`. It must be one of the partition profiles declared in the target endpoint's accelerator partition layout, and when set, `NumberOfAcceleratorDevicesRequired` must be `1`. This field is required when the endpoint's production variant has an accelerator partition layout. For endpoints without a layout, omit this field to place the inference component on a whole accelerator.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 32.
+Pattern: `mig-[0-9]+g\.[0-9]+gb([+-][a-z0-9.]+)*`
+Required: No
+
  ** MaxMemoryRequiredInMb **   <a name="sagemaker-Type-InferenceComponentComputeResourceRequirements-MaxMemoryRequiredInMb"></a>
 The maximum MB of memory to allocate to run a model that you assign to an inference component.
 Type: Integer

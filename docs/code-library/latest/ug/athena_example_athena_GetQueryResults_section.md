@@ -262,8 +262,6 @@ Output:
                     "Label": "location",
                     "Type": "varchar",
                     "Precision": 2147483647,
-                "Data": [
-
                     "Scale": 0,
                     "Nullable": "UNKNOWN",
                     "CaseSensitive": true

@@ -37,6 +37,7 @@ Output:
     ]
 }
 ```
+For more information, see [Finding services and products using AWS Price List Query API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/using-price-list-query-api.html) in the *AWS Billing User Guide*.
 +  For API details, see [GetAttributeValues](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pricing/get-attribute-values.html) in *AWS CLI Command Reference*.
 
 ------

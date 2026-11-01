@@ -14,17 +14,15 @@ The following code examples show how to use `UpdateDefaultBranch`.
 
 **AWS CLI**
 **To change the default branch for a repository**
-This example changes the default branch for an AWS CodeCommit repository. This command produces output only if there are errors.
-Command:
+The following `update-default-branch` example changes the default branch for an AWS CodeCommit repository.
 
 ```
-aws codecommit update-default-branch --repository-name {{MyDemoRepo}} --default-branch-name {{MyNewBranch}}
+aws codecommit update-default-branch \
+    --repository-name {{MyDemoRepo}} \
+    --default-branch-name {{MyNewBranch}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Change branch settings in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-change-branch.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdateDefaultBranch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-default-branch.html) in *AWS CLI Command Reference*.
 
 ------

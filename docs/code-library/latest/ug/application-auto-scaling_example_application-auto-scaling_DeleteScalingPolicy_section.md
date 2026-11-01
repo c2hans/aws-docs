@@ -14,12 +14,17 @@ The following code examples show how to use `DeleteScalingPolicy`.
 
 **AWS CLI**
 **To delete a scaling policy**
-This example deletes a scaling policy for the Amazon ECS service web-app running in the default cluster.
-Command:
+The following `delete-scaling-policy` example deletes a scaling policy for the Amazon ECS service web-app running in the default cluster.
 
 ```
-aws application-autoscaling delete-scaling-policy --policy-name {{web-app-cpu-lt-25}} --scalable-dimension {{ecs:service:DesiredCount}} --resource-id {{service/default/web-app}} --service-namespace {{ecs}}
+aws application-autoscaling delete-scaling-policy \
+    --policy-name {{web-app-cpu-lt-25}} \
+    --scalable-dimension {{ecs:service:DesiredCount}} \
+    --resource-id {{service/default/web-app}} \
+    --service-namespace {{ecs}}
 ```
+This command produces no output.
+For more information, see [Delete a step scaling policy for Application Auto Scaling using the AWS CLI](https://docs.aws.amazon.com/autoscaling/application/userguide/delete-step-scaling-policy.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [DeleteScalingPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/delete-scaling-policy.html) in *AWS CLI Command Reference*.
 
 ------

@@ -22,6 +22,7 @@ Although AWS Identity and Access Management (IAM) is not a service that is inclu
 | **Machine role policies for applications**  (role attached to infrastructure deployed by developers) | Grant and restrict | Delegated to developers [8] | Permission for the application or workload [9] | Single account | A principal in this account | Member accounts |
 | **Resource policies** | Grant and restrict | Delegated to developers [8,10] | Permissions to resources | Single account | A principal in an account [11] | Member accounts |
 | **Central root user management** | Grant and restrict | Central team, such as platform, security, or IAM team [1] | Centrally manage member account root users at scale | Organization | All root users in member accounts | Org management account, delegated administrator account |
+| **IAM Account Access Manager** | Grant | Central team, such as platform, security, or IAM team [1] | Central assignment of IAM roles to workforce users, Central user awareness | Organization | Workforce Users | Shared Services account |
 
 Notes from the table:
 
@@ -37,7 +38,7 @@ Notes from the table:
 
 1. Use identity federation (instead of local IAM users) whenever possible.
 
-1. Permissions boundaries are used by delegated administrators. This IAM policy defines the maximum permissions and overrides other policies (including `"*:*"` policies that allow all actions on resources). Permissions boundaries should be required in baseline human policies as a condition to create roles (such as workload performance roles) and to attach policies. Additional configurations such as SCPs enforce the attachment of the permissions boundary.
+1. Permissions boundaries are used by delegated administrators. This IAM policy defines the maximum permissions* t*hat an identity-based policy can grant to an IAM entity (including `"*:*"` policies that allow all actions on resources). Permissions boundaries should be required in baseline human policies as a condition to create roles (such as workload performance roles) and to attach policies. Additional configurations such as SCPs enforce the attachment of the permissions boundary.
 
 1. This assumes that sufficient guardrails (for example, SCPs and permissions boundaries) have been deployed.
 
@@ -49,12 +50,12 @@ Notes from the table:
 
 1. RCPs apply to resources for a subset of AWS services. For more information, see [List of AWS services that support RCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html#rcp-supported-services) in the AWS Organizations documentation.
 
-Ensuring that IAM identities have only those permissions that are necessary for a well-delineated set of tasks is critical for reducing the risk of malicious or unintentional abuse of permissions. Establishing and maintaining a [least privilege model](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) requires a deliberate plan to continually update, evaluate, and mitigate excess privilege. Here are some additional recommendations for that plan:
+Ensuring that IAM identities have only those permissions that are necessary for a well-delineated set of tasks is critical for reducing the risk of malicious or unintentional abuse of permissions. Establishing and maintaining a [least privilege model](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) requires a deliberate plan to continually update, evaluate, and mitigate excess privilege. The following are some additional recommendations for that plan:
 + Use your organization's governance model and established risk appetite to establish specific guardrails and permissions boundaries.
 + Implement least privilege through a *continually iterative process*. This is not a one-time exercise.
 + Use SCPs to reduce actionable risk. These are intended to be broad guardrails, not narrowly targeted controls.
 + Use permissions boundaries to delegate IAM administration in a safer way.
-  + Make sure that the delegated administrators attach the appropriate IAM boundary policy to the roles and users they create.
+  + Make sure that the delegated administrators attach the appropriate IAM permissions boundary policy to the roles and users they create.
 + As a defense-in-depth approach (in conjunction with identity-based policies), use resource-based IAM policies to deny broad access to resources.
 + Use IAM access advisor, AWS CloudTrail, IAM Access Analyzer, and related tooling to regularly analyze historical usage and permissions granted. Immediately remediate obvious over-permissions.
 + Scope broad actions to specific resources where applicable instead of using an asterisk as a wildcard to indicate all resources.

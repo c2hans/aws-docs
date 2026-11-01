@@ -25,6 +25,7 @@ aws cloudformation delete-stack \
     --stack-name {{my-stack}}
 ```
 This command produces no output.
+For more information, see [Managing AWS resources as a single unit with CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [DeleteStack](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/delete-stack.html) in *AWS CLI Command Reference*.
 
 ------

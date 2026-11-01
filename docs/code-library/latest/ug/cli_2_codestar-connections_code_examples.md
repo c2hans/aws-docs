@@ -38,7 +38,7 @@ Output:
 
 ```
 {
-    "ConnectionArn": "arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f"
+    "ConnectionArn": "arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Create a connection](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create.html) in the *Developer Tools console User Guide*.
@@ -64,7 +64,7 @@ Output:
 
 ```
 {
-    "HostArn": "arn:aws:codestar-connections:us-east-1:123456789012:host/My-Host-28aef605"
+    "HostArn": "arn:aws:codestar-connections:us-west-2:123456789012:host/My-Host-28aef605"
 }
 ```
 For more information, see [Create a host (CLI)](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-create.html) in the *Developer Tools console User Guide*.
@@ -81,7 +81,7 @@ The following `delete-connection` example shows how to delete a connection.
 
 ```
 aws codestar-connections delete-connection \
-    --connection-arn {{arn:aws:codestar-connections:us-west-2:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f}}
+    --connection-arn {{arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Delete a connection (CLI)](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-delete.html#connections-delete-cli) in the *Developer Tools console User Guide*.
@@ -98,7 +98,7 @@ The following `delete-host` example shows how to delete a host. Before you can d
 
 ```
 aws codestar-connections delete-host \
-    --host-arn {{"arn:aws:codestar-connections:us-east-1 :123456789012:host/My-Host-28aef605"}}
+    --host-arn {{"arn:aws:codestar-connections:us-west-2 :123456789012:host/My-Host-28aef605"}}
 ```
 This command produces no output.
 For more information, see [Delete a host (CLI)](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-delete.html#connections-host-delete-cli) in the *Developer Tools console User Guide*.
@@ -115,7 +115,7 @@ The following `get-connection` example shows details about a connection.
 
 ```
 aws codestar-connections get-connection \
-    --connection-arn {{arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f}}
+    --connection-arn {{arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -123,7 +123,7 @@ Output:
 {
     "Connection": {
         "ConnectionName": "MyConnection",
-        "ConnectionArn": "arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f",
+        "ConnectionArn": "arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "ProviderType": "Bitbucket",
         "OwnerAccountId": "123456789012",
         "ConnectionStatus": "AVAILABLE"
@@ -140,11 +140,11 @@ The following code example shows how to use `get-host`.
 
 **AWS CLI**
 **To get information about a host**
-The following `get-host` example shows details about a host:
+The following `get-host` example shows details about a host.
 
 ```
 aws codestar-connections get-host \
-    --host-arn {{arn:aws:codestar-connections:us-east-1:123456789012:host/MyHost-28aef605}}
+    --host-arn {{arn:aws:codestar-connections:us-west-2:123456789012:host/MyHost-28aef605}}
 ```
 Output:
 
@@ -156,7 +156,7 @@ Output:
     "ProviderEndpoint": "https://test-instance-1.dev/"
 }
 ```
-For more information, see [View host details (CLI)](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-view.html#connections-host-view-cli) in the *Developer Tools console User Guide*.
+For more information, see [View host details (CLI)](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-view.html) in the *Developer Tools console User Guide*.
 +  For API details, see [GetHost](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codestar-connections/get-host.html) in *AWS CLI Command Reference*.
 
 ### `list-connections`
@@ -166,13 +166,13 @@ The following code example shows how to use `list-connections`.
 
 **AWS CLI**
 **To list connections**
-The following `list-connections` example retrieves a list of all connections in your account for the Bitbucket provider type.:
+The following `list-connections` example retrieves a list of all connections in your account for the Bitbucket provider type.
 
 ```
 aws codestar-connections list-connections \
---provider-type {{Bitbucket}} \
---max-results {{5}} \
---{{next-token}}: next-token
+    --provider-type {{Bitbucket}} \
+    --max-results {{5}} \
+    --{{next-token}} next-token
 ```
 Output:
 
@@ -182,17 +182,17 @@ Output:
         {
             "ConnectionName": "my-connection",
             "ProviderType": "Bitbucket",
-            "Status": "PENDING",
-            "ARN": "arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f",
+            "ConnectionStatus": "PENDING",
+            "ConnectionArn": "arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "OwnerAccountId": "123456789012"
         },
         {
             "ConnectionName": "my-other-connection",
             "ProviderType": "Bitbucket",
-            "Status": "AVAILABLE",
-            "ARN": "arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f",
+            "ConnectionStatus": "AVAILABLE",
+            "ConnectionArn": "arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "OwnerAccountId": "123456789012"
-        },
+        }
     ],
     "NextToken": "next-token"
 }
@@ -219,7 +219,7 @@ Output:
     "Hosts": [
         {
             "Name": "My-Host",
-            "HostArn": "arn:aws:codestar-connections:us-east-1:123456789012:host/My-Host-28aef605",
+            "HostArn": "arn:aws:codestar-connections:us-west-2:123456789012:host/My-Host-28aef605",
             "ProviderType": "GitHubEnterpriseServer",
             "ProviderEndpoint": "https://my-instance.test.dev",
             "Status": "AVAILABLE"
@@ -241,7 +241,7 @@ The following `list-tags-for-resource` example retrieves a list of all tags atta
 
 ```
 aws codestar-connections list-tags-for-resource \
-    --resource-arn {{arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f}}
+    --resource-arn {{arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -273,7 +273,7 @@ The following `tag-resource` example associates a set of provided tags with a co
 
 ```
 aws codestar-connections tag-resource \
-    --resource-arn {{arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f}} \
+    --resource-arn {{arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tags {{Key=Project,Value=ProjectA}} {{Key=IscontainerBased,Value=true}}
 ```
 This command produces no output.
@@ -287,19 +287,13 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To remove AWS tags from a connections resource**
-The following `untag-resource` removes a tag from the specified resource.
+The following `untag-resource` example removes a tag from the specified resource.
 
 ```
 aws codestar-connections untag-resource \
-    --resource-arn {{arn:aws:codestar-connections:us-east-1:123456789012:connection/aEXAMPLE-8aad-4d5d-8878-dfcab0bc441f}} \
+    --resource-arn {{arn:aws:codestar-connections:us-west-2:123456789012:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag-keys {{Project}} {{ReadOnly}}
 ```
-Output:
-
-```
-{
-    "Tags": []
-}
-```
+This command produces no output.
 For more information, see [Remove tags from a connections resource](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-tag.html#connections-tag-delete) in the *Developer Tools console User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codestar-connections/untag-resource.html) in *AWS CLI Command Reference*.

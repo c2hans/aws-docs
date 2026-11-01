@@ -26,7 +26,7 @@ The following code example shows how to use `create-role-associations`.
 
 **AWS CLI**
 **To create role associations of an IAM Role with EMR service accounts to be used with Amazon EMR on EKS**
-The following `create-role-associations` example command creates EKS pod identity associations of a role named **example\_iam\_role** with EMR service accounts such that it can be used with Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.:
+The following `create-role-associations` example creates EKS pod identity associations of a role named **example\_iam\_role** with EMR service accounts such that it can be used with Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.
 
 ```
 aws emr-containers create-role-associations \
@@ -42,8 +42,8 @@ Output:
         "clusterName": "example_cluster",
         "namespace": "example_namespace",
         "serviceAccount": "emr-spark-client-service-account-example",
-        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
-        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/a-bgyr1umgdmrk1kdtq",
+        "roleArn": "arn:aws:iam::123456789012:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/example_cluster/a-bgyr1umgdmrk1kdtq",
         "associationId": "a-bgyr1umgdmrk1kdtq",
         "tags": {},
         "createdAt": "2022-11-15T10:49:00+00:00",
@@ -53,8 +53,8 @@ Output:
         "clusterName": "example_cluster",
         "namespace": "example_namespace",
         "serviceAccount": "emr-spark-driver-service-account-example",
-        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
-        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/b-bgyr1umgdmrk1kdtq",
+        "roleArn": "arn:aws:iam::123456789012:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/example_cluster/b-bgyr1umgdmrk1kdtq",
         "associationId": "b-bgyr1umgdmrk1kdtq",
         "tags": {},
         "createdAt": "2022-11-15T10:49:00+00:00",
@@ -64,8 +64,8 @@ Output:
         "clusterName": "example_cluster",
         "namespace": "example_namespace",
         "serviceAccount": "emr-spark-executor-service-account-example",
-        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
-        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/c-bgyr1umgdmrk1kdtq",
+        "roleArn": "arn:aws:iam::123456789012:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/example_cluster/c-bgyr1umgdmrk1kdtq",
         "associationId": "c-bgyr1umgdmrk1kdtq",
         "tags": {},
         "createdAt": "2022-11-15T10:49:00+00:00",
@@ -73,6 +73,7 @@ Output:
     }
 ]
 ```
+For more information, see [Option 1: Enable EKS Pod Identity on the EKS Cluster](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-enable-IAM.html) in the *Amazon EMR on EKS Development Guide*.
 +  For API details, see [CreateRoleAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr-containers/create-role-associations.html) in *AWS CLI Command Reference*.
 
 ### `delete-role-associations`
@@ -82,8 +83,8 @@ The following code example shows how to use `delete-role-associations`.
 
 **AWS CLI**
 **To delete role associations of an IAM Role with EMR service accounts**
+The following `delete-role-associations` example deletes EKS pod identity associations of a role named **example\_iam\_role** with EMR service accounts such that it can be removed from Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.
 EKS allows associations with non existing resources (namespace, service account), so EMR on EKS suggest to delete the associations if the namespace is deleted or the role is not in use to release the space for other associations.
-The following `delete-role-associations` example command deletes EKS pod identity associations of a role named **example\_iam\_role** with EMR service accounts such that it can be removed from Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.:
 
 ```
 aws emr-containers delete-role-associations \
@@ -99,8 +100,8 @@ Output:
         "clusterName": "example_cluster",
         "namespace": "example_namespace",
         "serviceAccount": "emr-spark-client-service-account-example",
-        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
-        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/a-bgyr1umgdmrk1kdtq",
+        "roleArn": "arn:aws:iam::123456789012:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/example_cluster/a-bgyr1umgdmrk1kdtq",
         "associationId": "a-bgyr1umgdmrk1kdtq",
         "tags": {},
         "createdAt": "2022-11-15T10:49:00+00:00",
@@ -110,8 +111,8 @@ Output:
         "clusterName": "example_cluster",
         "namespace": "example_namespace",
         "serviceAccount": "emr-spark-driver-service-account-example",
-        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
-        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/b-bgyr1umgdmrk1kdtq",
+        "roleArn": "arn:aws:iam::123456789012:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/example_cluster/b-bgyr1umgdmrk1kdtq",
         "associationId": "b-bgyr1umgdmrk1kdtq",
         "tags": {},
         "createdAt": "2022-11-15T10:49:00+00:00",
@@ -121,8 +122,8 @@ Output:
         "clusterName": "example_cluster",
         "namespace": "example_namespace",
         "serviceAccount": "emr-spark-executor-service-account-example",
-        "roleArn": "arn:aws:iam::111111111111:role/example_iam_role",
-        "associationArn": "arn:aws:eks:us-east-1:111111111111:podidentityassociation/example_cluster/c-bgyr1umgdmrk1kdtq",
+        "roleArn": "arn:aws:iam::123456789012:role/example_iam_role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/example_cluster/c-bgyr1umgdmrk1kdtq",
         "associationId": "c-bgyr1umgdmrk1kdtq",
         "tags": {},
         "createdAt": "2022-11-15T10:49:00+00:00",
@@ -130,6 +131,7 @@ Output:
     }
 ]
 ```
+For more information, see [Option 1: Enable EKS Pod Identity on the EKS Cluster](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-enable-IAM.html) in the *Amazon EMR on EKS Development Guide*.
 +  For API details, see [DeleteRoleAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr-containers/delete-role-associations.html) in *AWS CLI Command Reference*.
 
 ### `update-role-trust-policy`
@@ -139,23 +141,25 @@ The following code example shows how to use `update-role-trust-policy`.
 
 **AWS CLI**
 **To update the trust policy of an IAM Role to be used with Amazon EMR on EKS**
-This example command updates the trust policy of a role named **example\_iam\_role** such that it can be used with Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.
-Command:
+The following `update-role-trust-policy` example updates the trust policy of a role named **example\_iam\_role** such that it can be used with Amazon EMR on EKS with **example\_namespace** namespace from an EKS cluster named **example\_cluster**.
 
 ```
 aws emr-containers update-role-trust-policy \
-    --cluster example_cluster \
-    --namespace example_namespace \
-    --role-name example_iam_role
+    --cluster {{example_cluster}} \
+    --namespace {{example_namespace}} \
+    --role-name {{example_iam_role}}
 ```
+If the trust policy has already been updated, the command displays the following output.
 Output:
 
 ```
-If the trust policy has already been updated, then the output will be:
-Trust policy statement already exists for role example_iam_role. No
-changes were made!
+Trust policy statement already exists for role example_iam_role. No changes were made!
+```
+If the trust policy has not been updated yet, the command displays the following output.
+Output:
 
-If the trust policy has not been updated yet, then the output will be:
+```
 Successfully updated trust policy of role example_iam_role.
 ```
+For more information, see [Update the trust policy of the job execution role](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-trust-policy.html) in the *Amazon EMR on EKS Development Guide*.
 +  For API details, see [UpdateRoleTrustPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr-containers/update-role-trust-policy.html) in *AWS CLI Command Reference*.

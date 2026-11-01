@@ -30,23 +30,24 @@ The following `accept-resource-share-invitation` example accepts the specified r
 
 ```
 aws ram accept-resource-share-invitation \
-    --resource-share-invitation-arn {{arn:aws:ram:us-west-2:111111111111:resource-share-invitation/1e3477be-4a95-46b4-bbe0-c4001EXAMPLE}}
+    --resource-share-invitation-arn {{arn:aws:ram:us-west-2:123456789111:resource-share-invitation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "resourceShareInvitation": {
-        "resourceShareInvitationArn": "arn:aws:ram:us-west-2:111111111111:resource-share-invitation/1e3477be-4a95-46b4-bbe0-c4001EXAMPLE",
+        "resourceShareInvitationArn": "arn:aws:ram:us-west-2:123456789111:resource-share-invitation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "resourceShareName": "MyLicenseShare",
-        "resourceShareArn": "arn:aws:ram:us-west-2:111111111111:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE",
-        "senderAccountId": "111111111111",
-        "receiverAccountId": "222222222222",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789111:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "senderAccountId": "123456789111",
+        "receiverAccountId": "123456789222",
         "invitationTimestamp": "2021-09-22T15:07:35.620000-07:00",
         "status": "ACCEPTED"
     }
 }
 ```
+For more information, see [Accepting and rejecting resource share invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) in the *AWS RAM User Guide*.
 +  For API details, see [AcceptResourceShareInvitation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/accept-resource-share-invitation.html) in *AWS CLI Command Reference*.
 
 ### `associate-resource-share-permission`
@@ -62,7 +63,7 @@ The following `associate-resource-share-permission` example replaces the existin
 aws ram associate-resource-share-permission \
     --permission-arn {{arn:aws:ram::aws:permission/AWSRAMPermissionGlueDatabaseReadWrite}} \
     --replace \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -71,6 +72,7 @@ Output:
     "returnValue": true
 }
 ```
+For more information, see [Managing permissions in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/security-ram-permissions.html) in the *AWS RAM User Guide*.
 +  For API details, see [AssociateResourceSharePermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/associate-resource-share-permission.html) in *AWS CLI Command Reference*.
 
 ### `associate-resource-share`
@@ -84,7 +86,7 @@ The following `associate-resource-share` example adds a license configuration to
 
 ```
 aws ram associate-resource-share \
-    --resource-share {{arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE}} \
+    --resource-share {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --resource-arns {{arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-36be0485f5ae379cc74cf8e92EXAMPLE}}
 ```
 Output:
@@ -93,21 +95,22 @@ Output:
 {
     "resourceShareAssociations": [
         {
-           "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE",
-           "associatedEntity": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-36be0485f5ae379cc74cf8e92EXAMPLE",
-           "associationType": "RESOURCE",
-           "status": "ASSOCIATING",
-           "external": false
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "associatedEntity": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-36be0485f5ae379cc74cf8e92EXAMPLE",
+            "associationType": "RESOURCE",
+            "status": "ASSOCIATING",
+            "external": false
         }
     ]
 }
 ```
+For more information, see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 **Example 2: To associate a principal with a resource share**
 The following `associate-resource-share` example grants access for the specified resource share to all accounts in the specified organizational unit.
 
 ```
 aws ram associate-resource-share \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE}} \
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --principals {{arn:aws:organizations::123456789012:ou/o-63bEXAMPLE/ou-46xi-rEXAMPLE}}
 ```
 Output:
@@ -120,11 +123,12 @@ Output:
             "associationType": "PRINCIPAL",
             "associatedEntity": "arn:aws:organizations::123456789012:ou/o-63bEXAMPLE/ou-46xi-rEXAMPLE",
             "external": false,
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE"
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
 ```
+For more information, see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 +  For API details, see [AssociateResourceShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/associate-resource-share.html) in *AWS CLI Command Reference*.
 
 ### `create-resource-share`
@@ -145,7 +149,7 @@ Output:
 ```
 {
     "resourceShare": {
-        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/4476c27d-8feb-4b21-afe9-7de23EXAMPLE",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "MyNewResourceShare",
         "owningAccountId": "123456789012",
         "allowExternalPrincipals": true,
@@ -155,14 +159,31 @@ Output:
     }
 }
 ```
+For more information, see [Creating a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-create.html) in the *AWS RAM User Guide*.
 **Example 2: To create a resource share with AWS accounts as principals**
-The following `create-resource-share` example creates a resource share and grants access to the specified AWS account (222222222222). If the specified principals are not part of the same AWS Organization, then invitations are sent and must be accepted before access is granted.
+The following `create-resource-share` example creates a resource share and grants access to the specified AWS account (123456789111). If the specified principals are not part of the same AWS Organization, then invitations are sent and must be accepted before access is granted.
 
 ```
 aws ram create-resource-share \
     --name {{MyNewResourceShare}} \
-    --principals {{222222222222}}
+    --principals {{123456789111}}
 ```
+Output:
+
+```
+{
+    "resourceShare": {
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "name": "MyNewResourceShare",
+        "owningAccountId": "123456789012",
+        "allowExternalPrincipals": true,
+        "status": "ACTIVE",
+        "creationTime": 1634586751.437,
+        "lastUpdatedTime": 1634586751.437
+    }
+}
+```
+For more information, see [Creating a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-create.html) in the *AWS RAM User Guide*.
 **Example 3: To create a resource share restricted to your AWS Organization**
 The following `create-resource-share` example creates a resource share that is restricted to accounts in the AWS Organization that your account is a member of, and adds the specified OU as a principal. All accounts in that OU can use the resources in the resource share.
 
@@ -177,7 +198,7 @@ Output:
 ```
 {
     "resourceShare": {
-        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7be8694e-095c-41ca-9ce8-7be4aEXAMPLE",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "name": "MyNewResourceShare",
         "owningAccountId": "123456789012",
         "allowExternalPrincipals": false,
@@ -187,6 +208,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-create.html) in the *AWS RAM User Guide*.
 +  For API details, see [CreateResourceShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/create-resource-share.html) in *AWS CLI Command Reference*.
 
 ### `delete-resource-share`
@@ -200,15 +222,16 @@ The following `delete-resource-share` example deletes the specified resource sha
 
 ```
 aws ram delete-resource-share \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-The following output indicates success:
+Output:
 
 ```
 {
     "returnValue": true
 }
 ```
+For more information, see [Deleting a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-delete.html) in the *AWS RAM User Guide*.
 +  For API details, see [DeleteResourceShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/delete-resource-share.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-resource-share-permission`
@@ -222,7 +245,7 @@ The following `disassociate-resource-share-permission` example removes the RAM m
 
 ```
 aws ram disassociate-resource-share-permission \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE}} \
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --permission-arn {{arn:aws:ram::aws:permission/AWSRAMPermissionGlueDatabaseReadWrite}}
 ```
 Output:
@@ -232,6 +255,7 @@ Output:
     "returnValue": true
 }
 ```
+For more information, see [Managing permissions in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/security-ram-permissions.html) in the *AWS RAM User Guide*.
 +  For API details, see [DisassociateResourceSharePermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/disassociate-resource-share-permission.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-resource-share`
@@ -246,21 +270,24 @@ The following `disassociate-resource-share` example removes the specified resour
 ```
 aws ram disassociate-resource-share \
     --resource-arns {{arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1fEXAMPLE}} \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "resourceShareAssociations": [
-        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
-        "associatedEntity": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1fEXAMPLE",
-        "associationType": "RESOURCE",
-        "status": "DISASSOCIATING",
-        "external": false
+        {
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "associatedEntity": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1fEXAMPLE",
+            "associationType": "RESOURCE",
+            "status": "DISASSOCIATING",
+            "external": false
+        }
     ]
 }
 ```
+For more information, see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 +  For API details, see [DisassociateResourceShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/disassociate-resource-share.html) in *AWS CLI Command Reference*.
 
 ### `enable-sharing-with-aws-organization`
@@ -275,13 +302,14 @@ The following `enable-sharing-with-aws-organization` example enables resource sh
 ```
 aws ram enable-sharing-with-aws-organization
 ```
-The following output indicates success.
+Output:
 
 ```
 {
     "returnValue": true
 }
 ```
+For more information, see [Sharing your AWS resources](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html) in the *AWS RAM User Guide*.
 +  For API details, see [EnableSharingWithAwsOrganization](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/enable-sharing-with-aws-organization.html) in *AWS CLI Command Reference*.
 
 ### `get-permission`
@@ -314,6 +342,7 @@ Output:
     }
 }
 ```
+For more information, see [Viewing managed permissions](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-permissions.html) in the *AWS RAM User Guide*.
 +  For API details, see [GetPermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-permission.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-policies`
@@ -334,10 +363,11 @@ Output:
 ```
 {
     "policies": [
-         "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"RamStatement1\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[]},\"Action\":[\"ec2:RunInstances\",\"ec2:CreateNetworkInterface\",\"ec2:DescribeSubnets\"],\"Resource\":\"arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1fEXAMPLE\"}]}"
+        "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"RamStatement1\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[]},\"Action\":[\"ec2:RunInstances\",\"ec2:CreateNetworkInterface\",\"ec2:DescribeSubnets\"],\"Resource\":\"arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1fEXAMPLE\"}]}"
     ]
 }
 ```
+For more information, see [Viewing resource shares you created in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-rs.html) in the *AWS RAM User Guide*.
 +  For API details, see [GetResourcePolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-policies.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-share-associations`
@@ -359,7 +389,7 @@ Output:
 {
     "resourceShareAssociations": [
         {
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "associatedEntity": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1fEXAMPLE",
             "resourceShareName": "MySubnetShare",
             "associationType": "RESOURCE",
@@ -369,7 +399,7 @@ Output:
             "external": false
         },
         {
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/8167bdfe-4480-4a01-8632-315e0EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "associatedEntity": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-36be0485f5ae379cc74cf8e92EXAMPLE",
             "resourceShareName": "MyLicenseShare",
             "associationType": "RESOURCE",
@@ -381,13 +411,14 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing resource shares you created in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-rs.html) in the *AWS RAM User Guide*.
 **Example 2: To list principal associations for a resource share**
 The following `get-resource-share-associations` example lists only the principal associations for only the specified resource share.
 
 ```
 aws ram get-resource-share-associations \
-   --resource-share-arns {{arn:aws:ram:us-west-2:123456789012:resource-share/7be8694e-095c-41ca-9ce8-7be4aEXAMPLE}} \
-   --association-type {{PRINCIPAL}}
+    --resource-share-arns {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
+    --association-type {{PRINCIPAL}}
 ```
 Output:
 
@@ -395,7 +426,7 @@ Output:
 {
     "resourceShareAssociations": [
         {
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7be8694e-095c-41ca-9ce8-7be4aEXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "resourceShareName": "MyNewResourceShare",
             "associatedEntity": "arn:aws:organizations::123456789012:ou/o-63bEXAMPLE/ou-46xi-rEXAMPLE",
             "associationType": "PRINCIPAL",
@@ -407,6 +438,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing resource shares you created in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-rs.html) in the *AWS RAM User Guide*.
 +  For API details, see [GetResourceShareAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-share-associations.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-share-invitations`
@@ -427,17 +459,18 @@ Output:
 {
     "resourceShareInvitations": [
         {
-            "resourceShareInvitationArn": "arn:aws:ram:us-west2-1:111111111111:resource-share-invitation/32b639f0-14b8-7e8f-55ea-e6117EXAMPLE",
+            "resourceShareInvitationArn": "arn:aws:ram:us-west2-1:123456789111:resource-share-invitation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "resourceShareName": "project-resource-share",
-            "resourceShareArn": "arn:aws:ram:us-west-2:111111111111:resource-share/fcb639f0-1449-4744-35bc-a983fEXAMPLE",
-            "senderAccountId": "111111111111",
-            "receiverAccountId": "222222222222",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789111:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "senderAccountId": "123456789111",
+            "receiverAccountId": "123456789222",
             "invitationTimestamp": 1565312166.258,
             "status": "PENDING"
         }
     ]
 }
 ```
+For more information, see [Accepting and rejecting resource share invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) in the *AWS RAM User Guide*.
 +  For API details, see [GetResourceShareInvitations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-share-invitations.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-shares`
@@ -459,7 +492,7 @@ Output:
 {
     "resourceShares": [
         {
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/3ab63985-99d9-1cd2-7d24-75e93EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "name": "my-resource-share",
             "owningAccountId": "123456789012",
             "allowExternalPrincipals": false,
@@ -469,12 +502,12 @@ Output:
                     "key": "project",
                     "value": "lima"
                 }
-            ]
+            ],
             "creationTime": 1565295733.282,
             "lastUpdatedTime": 1565295733.282
         },
         {
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "my-resource-share",
             "owningAccountId": "123456789012",
             "allowExternalPrincipals": true,
@@ -485,6 +518,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing resource shares you created in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-rs.html) in the *AWS RAM User Guide*.
 **Example 2: To list resource shares owned by others and shared with you**
 The following `get-resource-shares` example lists the resource shares that others created and shared with you. In this example, there are none.
 
@@ -499,6 +533,7 @@ Output:
     "resourceShares": []
 }
 ```
+For more information, see [Viewing resource shares shared with you](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-view-rs.html) in the *AWS RAM User Guide*.
 +  For API details, see [GetResourceShares](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/get-resource-shares.html) in *AWS CLI Command Reference*.
 
 ### `list-pending-invitation-resources`
@@ -512,16 +547,16 @@ The following `list-pending-invitation-resources` example lists all of the resou
 
 ```
 aws ram list-pending-invitation-resources \
-    --resource-share-invitation-arn {{arn:aws:ram:us-west-2:123456789012:resource-share-invitation/1e3477be-4a95-46b4-bbe0-c4001EXAMPLE}}
+    --resource-share-invitation-arn {{arn:aws:ram:us-west-2:123456789012:resource-share-invitation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-   "resources": [
+    "resources": [
         {
             "arn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-04a555b0e6EXAMPLE",
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7be8694e-095c-41ca-9ce8-7be4aEXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "creationTime": 1634676051.269,
             "lastUpdatedTime": 1634676052.07,
             "status": "AVAILABLE",
@@ -529,15 +564,16 @@ Output:
         },
         {
             "arn": "arn:aws:license-manager:us-west-2:123456789012:license-configuration:lic-36be0485f5ae379cc74cf8e92EXAMPLE",
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "creationTime": 1624912434.431,
             "lastUpdatedTime": 1624912434.431,
             "status": "AVAILABLE",
             "type": "license-manager:LicenseConfiguration"
-      }
-   ]
+        }
+    ]
 }
 ```
+For more information, see [Viewing resources shared with you](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-view-sr.html) in the *AWS RAM User Guide*.
 +  For API details, see [ListPendingInvitationResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/list-pending-invitation-resources.html) in *AWS CLI Command Reference*.
 
 ### `list-permissions`
@@ -631,7 +667,6 @@ Output:
             "lastUpdatedTime": 1589307188.584,
             "isResourceTypeDefault": true
         },
-        ...TRUNCATED FOR BREVITY...
         {
             "arn": "arn:aws:ram::aws:permission/AWSRAMSubordinateCACertificatePathLen0IssuanceCertificateAuthority",
             "version": "1",
@@ -645,6 +680,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing managed permissions](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-permissions.html) in the *AWS RAM User Guide*.
 +  For API details, see [ListPermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/list-permissions.html) in *AWS CLI Command Reference*.
 
 ### `list-principals`
@@ -668,7 +704,7 @@ Output:
     "principals": [
         {
             "id": "arn:aws:organizations::123456789012:ou/o-gx7EXAMPLE/ou-29c5-zEXAMPLE",
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "creationTime": 1565298209.737,
             "lastUpdatedTime": 1565298211.019,
             "external": false
@@ -676,6 +712,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing the principals you share resources with in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-principals.html) in the *AWS RAM User Guide*.
 +  For API details, see [ListPrincipals](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/list-principals.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-share-permissions`
@@ -689,7 +726,7 @@ The following `list-resource-share-permissions` example lists all of the RAM man
 
 ```
 aws ram list-resource-share-permissions \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/27d09b4b-5e12-41d1-a4f2-19dedEXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -713,6 +750,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing permissions in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/security-ram-permissions.html) in the *AWS RAM User Guide*.
 +  For API details, see [ListResourceSharePermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/list-resource-share-permissions.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-types`
@@ -740,7 +778,6 @@ Output:
             "resourceType": "ec2:LocalGatewayRouteTable",
             "serviceName": "ec2"
         },
-        ...OUTPUT TRUNCATED FOR BREVITY...
         {
             "resourceType": "ec2:Subnet",
             "serviceName": "ec2"
@@ -752,6 +789,7 @@ Output:
     ]
 }
 ```
+For more information, see [Shareable AWS resources](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html) in the *AWS RAM User Guide*.
 +  For API details, see [ListResourceTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/list-resource-types.html) in *AWS CLI Command Reference*.
 
 ### `list-resources`
@@ -767,7 +805,7 @@ The following `list-resources` example lists all resources in the specified reso
 aws ram list-resources \
     --resource-type {{ec2:Subnet}} \
     --resource-owner {{SELF}} \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -777,13 +815,14 @@ Output:
         {
             "arn": "aarn:aws:ec2:us-west-2:123456789012:subnet/subnet-0250c25a1f4e15235",
             "type": "ec2:Subnet",
-            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
+            "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "creationTime": 1565301545.023,
             "lastUpdatedTime": 1565301545.947
         }
     ]
 }
 ```
+For more information, see [Viewing your shared resources in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-view-sr.html) in the *AWS RAM User Guide*.
 +  For API details, see [ListResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/list-resources.html) in *AWS CLI Command Reference*.
 
 ### `promote-resource-share-created-from-policy`
@@ -797,7 +836,7 @@ The following `promote-resource-share-created-from-policy` example takes a resou
 
 ```
 aws ram promote-resource-share-created-from-policy \
-    --resource-share-arn {{arn:aws:ram:us-east-1:123456789012:resource-share/91fa8429-2d06-4032-909a-90909EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -806,6 +845,7 @@ Output:
     "returnValue": true
 }
 ```
+For more information, see [What about cross-account access with resource-based policies?](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html#what-is-about-res-pol-sharing) in the *AWS RAM User Guide*.
 +  For API details, see [PromoteResourceShareCreatedFromPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/promote-resource-share-created-from-policy.html) in *AWS CLI Command Reference*.
 
 ### `reject-resource-share-invitation`
@@ -819,23 +859,24 @@ The following `reject-resource-share-invitation` example rejects the specified r
 
 ```
 aws ram reject-resource-share-invitation \
-    --resource-share-invitation-arn {{arn:aws:ram:us-west-2:111111111111:resource-share-invitation/32b639f0-14b8-7e8f-55ea-e6117EXAMPLE}}
+    --resource-share-invitation-arn {{arn:aws:ram:us-west-2:123456789111:resource-share-invitation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
-"resourceShareInvitations": [
-    {
-        "resourceShareInvitationArn": "arn:aws:ram:us-west2-1:111111111111:resource-share-invitation/32b639f0-14b8-7e8f-55ea-e6117EXAMPLE",
+{
+    "resourceShareInvitation": {
+        "resourceShareInvitationArn": "arn:aws:ram:us-west-2:123456789111:resource-share-invitation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "resourceShareName": "project-resource-share",
-        "resourceShareArn": "arn:aws:ram:us-west-2:111111111111:resource-share/fcb639f0-1449-4744-35bc-a983fEXAMPLE",
-        "senderAccountId": "111111111111",
-        "receiverAccountId": "222222222222",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789111:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "senderAccountId": "123456789111",
+        "receiverAccountId": "123456789222",
         "invitationTimestamp": 1565319592.463,
         "status": "REJECTED"
     }
-]
+}
 ```
+For more information, see [Accepting and rejecting resource share invitations](https://docs.aws.amazon.com/ram/latest/userguide/working-with-shared-invitations.html) in the *AWS RAM User Guide*.
 +  For API details, see [RejectResourceShareInvitation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/reject-resource-share-invitation.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -850,9 +891,10 @@ The following `tag-resource` example adds a tag key `project` and associated val
 ```
 aws ram tag-resource \
     --tags {{key=project,value=lima}} \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
+For more information, see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -867,9 +909,10 @@ The following `untag-resource` example removes the `project` tag key and associa
 ```
 aws ram untag-resource \
     --tag-keys {{project}} \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
+For more information, see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-resource-share`
@@ -884,14 +927,14 @@ The following `update-resource-share` example changes the specified resource sha
 ```
 aws ram update-resource-share \
     --allow-external-principals \
-    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE}}
+    --resource-share-arn {{arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "resourceShare": {
-        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/7ab63972-b505-7e2a-420d-6f5d3EXAMPLE",
+        "resourceShareArn": "arn:aws:ram:us-west-2:123456789012:resource-share/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "my-resource-share",
         "owningAccountId": "123456789012",
         "allowExternalPrincipals": true,
@@ -901,4 +944,5 @@ Output:
     }
 }
 ```
+For more information, see [Update a resource share in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/working-with-sharing-update.html) in the *AWS RAM User Guide*.
 +  For API details, see [UpdateResourceShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ram/update-resource-share.html) in *AWS CLI Command Reference*.

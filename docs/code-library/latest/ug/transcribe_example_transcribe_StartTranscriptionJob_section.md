@@ -75,6 +75,22 @@ Contents of `myfile.json`:
     }
 }
 ```
+Output:
+
+```
+{
+    "TranscriptionJob": {
+        "TranscriptionJobName": "cli-simple-transcription-job",
+        "TranscriptionJobStatus": "IN_PROGRESS",
+        "LanguageCode": "the-language-of-your-transcription-job",
+        "Media": {
+            "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
+        },
+        "StartTime": "2020-09-17T16:01:42.912000+00:00",
+        "CreationTime": "2020-09-17T16:01:42.886000+00:00"
+    }
+}
+```
 For more information, see [Getting Started (AWS Command Line Interface)](https://docs.aws.amazon.com/transcribe/latest/dg/getting-started-cli.html) in the *Amazon Transcribe Developer Guide*.
 **Example 2: To transcribe a multi-channel audio file**
 The following `start-transcription-job` example transcribes your multi-channel audio file.
@@ -134,8 +150,8 @@ Contents of `mythirdfile.json`:
         "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
     },
     "Settings":{
-    "ShowSpeakerLabels": true,
-    "MaxSpeakerLabels": 2
+        "ShowSpeakerLabels": true,
+        "MaxSpeakerLabels": 2
     }
 }
 ```
@@ -174,7 +190,7 @@ Contents of `myfourthfile.json`:
     "TranscriptionJobName": "cli-filter-mask-job",
     "LanguageCode": "the-language-of-your-transcription-job",
     "Media": {
-          "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
+        "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
     },
     "Settings":{
         "VocabularyFilterName": "your-vocabulary-filter",
@@ -202,7 +218,7 @@ Output:
     }
 }
 ```
-For more information, see [Filtering Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/filter-transcriptions.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 **Example 5: To transcribe an audio file and remove any unwanted words in the transcription output**
 The following `start-transcription-job` example transcribes your audio file and uses a vocabulary filter you've previously created to mask any unwanted words.
 
@@ -245,7 +261,7 @@ Output:
     }
 }
 ```
-For more information, see [Filtering Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/filter-transcriptions.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 **Example 6: To transcribe an audio file with increased accuracy using a custom vocabulary**
 The following `start-transcription-job` example transcribes your audio file and uses a vocabulary filter you've previously created to mask any unwanted words.
 
@@ -286,7 +302,7 @@ Output:
     }
 }
 ```
-For more information, see [Filtering Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/filter-transcriptions.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 **Example 7: To identify the language of an audio file and transcribe it**
 The following `start-transcription-job` example transcribes your audio file and uses a vocabulary filter you've previously created to mask any unwanted words.
 
@@ -329,7 +345,7 @@ The following `start-transcription-job` example transcribes your audio file and 
 aws transcribe start-transcription-job \
     --cli-input-json {{file://myeighthfile.json}}
 ```
-Contents of `myeigthfile.json`:
+Contents of `myeighthfile.json`:
 
 ```
 {
@@ -379,8 +395,8 @@ Contents of `myninthfile.json`:
     "TranscriptionJobName": "cli-redaction-job-with-unredacted-transcript",
     "LanguageCode": "language-code",
     "Media": {
-          "MediaFileUri": "s3://Amazon-S3-Prefix/your-media-file.file-extension"
-        },
+        "MediaFileUri": "s3://Amazon-S3-Prefix/your-media-file.file-extension"
+    },
     "ContentRedaction": {
         "RedactionOutput":"redacted_and_unredacted",
         "RedactionType":"PII"

@@ -17,12 +17,14 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To deregister a job definition**
-This example deregisters a job definition called sleep10.
-Command:
+The following `deregister-job-definition` example deregisters a job definition called sleep10.
 
 ```
-aws batch deregister-job-definition --job-definition {{sleep10}}
+aws batch deregister-job-definition \
+    --job-definition {{sleep10}}
 ```
+This command produces no output.
+For more information, see [Job definitions](https://docs.aws.amazon.com/batch/latest/userguide/job_definitions.html) in the *AWS Batch User Guide*.
 +  For API details, see [DeregisterJobDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/deregister-job-definition.html) in *AWS CLI Command Reference*.
 
 ------

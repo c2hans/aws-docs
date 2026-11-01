@@ -4,57 +4,10 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/mediastore_exampl
 
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
-# Use `GetObject` with an AWS SDK or CLI
+# Use `GetObject` with an AWS SDK
 <a name="mediastore_example_mediastore_GetObject_section"></a>
 
-The following code examples show how to use `GetObject`.
-
-------
-#### [ CLI ]
-
-**AWS CLI**
-**To download an object**
-The following `get-object` example download an object to the specified endpoint.
-
-```
-aws mediastore-data get-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
-    --path=/folder_name/{{README.md}} README.md
-```
-Output:
-
-```
-{
-    "ContentLength": "2307346",
-    "ContentType": "image/jpeg",
-    "LastModified": "Fri, 19 Jul 2019 21:32:20 GMT",
-    "ETag": "2aa333bbcc8d8d22d777e999c88d4aa9eeeeee4dd89ff7f555555555555da6d3",
-    "StatusCode": 200
-}
-```
-**To download part of an object**
-The following `get-object` example downloads a portion an object to the specified endpoint.
-
-```
-aws mediastore-data get-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
-    --path {{/folder_name/README.md}} \
-    --range="bytes=0-100" {{README2.md}}
-```
-Output:
-
-```
-{
-    "StatusCode": 206,
-    "ContentRange": "bytes 0-100/2307346",
-    "ContentLength": "101",
-    "LastModified": "Fri, 19 Jul 2019 21:32:20 GMT",
-    "ContentType": "image/jpeg",
-    "ETag": "2aa333bbcc8d8d22d777e999c88d4aa9eeeeee4dd89ff7f555555555555da6d3"
-}
-```
-For more information, see [Downloading an Object](https://docs.aws.amazon.com/mediastore/latest/ug/objects-download.html) in the *AWS Elemental MediaStore User Guide*.
-+  For API details, see [GetObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediastore/get-object.html) in *AWS CLI Command Reference*.
+The following code example shows how to use `GetObject`.
 
 ------
 #### [ Java ]

@@ -42,7 +42,7 @@ Output:
     "AnalysisReportId": "report-0234d3ed98e28fb17"
 }
 ```
-For more information about creating performance analysis reports, see [Creating a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.UsingDashboard.CreatingPerfAnlysisReport.html) in the *Amazon RDS User Guide* and [Creating a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.UsingDashboard.CreatingPerfAnlysisReport.html) in the *Amazon Aurora User Guide*.
+For more information about creating performance analysis reports, see [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon RDS User Guide* and [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreatePerformanceAnalysisReport](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pi/create-performance-analysis-report.html) in *AWS CLI Command Reference*.
 
 ### `delete-performance-analysis-report`
@@ -61,7 +61,7 @@ aws pi delete-performance-analysis-report \
     --analysis-report-id {{report-0d99cc91c4422ee61}}
 ```
 This command produces no output.
-For more information about deleting performance analysis reports, see [Deleting a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.UsingDashboard.DeletePerfAnalysisReport.html) in the *Amazon RDS User Guide* and [Deleting a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.UsingDashboard.DeletePerfAnalysisReport.html) in the *Amazon Aurora User Guide*.
+For more information about deleting performance analysis reports, see [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon RDS User Guide* and [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeletePerformanceAnalysisReport](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pi/delete-performance-analysis-report.html) in *AWS CLI Command Reference*.
 
 ### `describe-dimension-keys`
@@ -71,11 +71,16 @@ The following code example shows how to use `describe-dimension-keys`.
 
 **AWS CLI**
 **Example 1: To describe dimension keys**
-This example requests the names of all wait events. The data is summarized by event name, and the aggregate values of those events over the specified time period.
-Command:
+The following `describe-dimension-keys` example requests the names of all wait events. The data is summarized by event name, and the aggregate values of those events over the specified time period.
 
 ```
-aws pi describe-dimension-keys --service-type {{RDS}} --identifier {{db-LKCGOBK26374TPTDFXOIWVCPPM}} --start-time {{1527026400}} --end-time {{1527080400}} --metric {{db.load.avg}} --group-by '{{{"Group":"db.wait_event"}}}'
+aws pi describe-dimension-keys \
+    --service-type {{RDS}} \
+    --identifier {{db-LKCGOBK26374TPTDFXOIWVCPPM}} \
+    --start-time {{1527026400}} \
+    --end-time {{1527080400}} \
+    --metric {{db.load.avg}} \
+    --group-by '{{{"Group":"db.wait_event"}}}'
 ```
 Output:
 
@@ -128,7 +133,7 @@ Output:
 }
 ```
 **Example 2: To find the SQL ID for statements contributing the most to DB load**
-The following `describe-dimension-keys` requests the SQL statement and SQL ID for the 10 statements that contributed the most to DB load.
+The following `describe-dimension-keys` example requests the SQL statement and SQL ID for the 10 statements that contributed the most to DB load.
 
 ```
 aws pi describe-dimension-keys \
@@ -145,15 +150,10 @@ Output:
 {
     "AlignedEndTime": 1.5270804E9,
     "AlignedStartTime": 1.5270264E9,
-    "Identifier": "db-abcdefg123456789",
-    "MetricList": [
+    "Keys": [
         {
-            "Keys": [
-                {
-                    "Dimensions": {"db.sql.id": "AKIAIOSFODNN7EXAMPLE", "db.sql.statement": "SELECT * FROM customers WHERE customer_id = 123"},
-                    "Total": 25.5,"Partitions": [12.3, 13.2]
-                }
-            ]
+            "Dimensions": {"db.sql.id": "AKIAIOSFODNN7EXAMPLE", "db.sql.statement": "SELECT * FROM customers WHERE customer_id = 123"},
+            "Total": 25.5,"Partitions": [12.3, 13.2]
         }
     ]
 }
@@ -187,8 +187,7 @@ Output:
             "Value": "SELECT e.last_name, d.department_name FROM employees e, departments d WHERE e.department_id=d.department_id",
             "Dimension": "db.sql.statement",
             "Status": "AVAILABLE"
-        },
-    ...
+        }
     ]
 }
 ```
@@ -223,8 +222,16 @@ Output:
         "EndTime": 1680587086.584,
         "CreateTime": 1680587087.139,
         "Insights": [
-            ... (Condensed for space)
-       ]
+            {
+                "InsightId": "insight-12345678901234567",
+                "InsightType": "HighDBLoad",
+                "Context": "CAUSAL",
+                "StartTime": 1680583486.584,
+                "EndTime": 1680587086.584,
+                "Severity": "HIGH",
+                "Description": "A high severity Insight found between 04:44 to 05:44, where there was an unusually high DB load 600x above baseline. Likely performance impact."
+            }
+        ]
     }
 }
 ```
@@ -267,20 +274,27 @@ The following code example shows how to use `get-resource-metrics`.
 
 **AWS CLI**
 **To get resource metrics**
-This example requests data points for the *db.wait\_event* dimension group, and for the *db.wait\_event.name* dimension within that group. In the response, the relevant data points are grouped by the requested dimension (*db.wait\_event.name*).
-Command:
+The following `get-resource-metrics` example requests data points for the *db.wait\_event* dimension group, and for the *db.wait\_event.name* dimension within that group. In the response, the relevant data points are grouped by the requested dimension (*db.wait\_event.name*).
 
 ```
-aws pi get-resource-metrics --service-type {{RDS}} --identifier {{db-LKCGOBK26374TPTDFXOIWVCPPM}} --start-time {{1527026400}} --end-time {{1527080400}} --period-in-seconds {{300}} --metric {{db.load.avg}} --metric-queries {{file://metric-queries.json}}
+aws pi get-resource-metrics \
+    --service-type {{RDS}} \
+    --identifier {{db-LKCGOBK26374TPTDFXOIWVCPPM}} \
+    --start-time {{1527026400}} \
+    --end-time {{1527080400}} \
+    --period-in-seconds {{300}} \
+    --metric {{db.load.avg}} \
+    --metric-queries {{file://metric-queries.json}}
 ```
-The arguments for `--metric-queries` are stored in a JSON file, `metric-queries.json`. Here are the contents of that file:
+The arguments for `--metric-queries` are stored in a JSON file, `metric-queries.json`.
+Contents of `metric-queries.json`:
 
 ```
 [
     {
         "Metric": "db.load.avg",
         "GroupBy": {
-            "Group":"db.wait_event"
+            "Group": "db.wait_event"
         }
     }
 ]
@@ -305,8 +319,7 @@ Output:
                 {
                     "Timestamp": 1527027000.0,
                     "Value": 0.88
-                },
-                <...remaining output omitted...>
+                }
             ]
         },
         {
@@ -324,14 +337,13 @@ Output:
                 {
                     "Timestamp": 1527027000.0,
                     "Value": 0.8633333333333333
-                },
-                <...remaining output omitted...>
-            ],
-        },
-            <...remaining output omitted...>
+                }
+            ]
+        }
     ]
 }
 ```
+For more information, see [Retrieving metrics with the Performance Insights API for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.API.html) in the *Amazon RDS User Guide*.
 +  For API details, see [GetResourceMetrics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pi/get-resource-metrics.html) in *AWS CLI Command Reference*.
 
 ### `list-available-resource-dimensions`
@@ -381,8 +393,7 @@ Output:
                             "Identifier": "db.sql_tokenized.statement"
                         }
                     ]
-                },
-                ...
+                }
             ]
         }
     ]
@@ -416,13 +427,11 @@ Output:
             "Metric": "os.general.numVCPUs",
             "Unit": "vCPUs"
         },
-        ......,
         {
             "Description": "Time spent reading data file blocks by backends in this instance",
             "Metric": "db.IO.read_latency",
             "Unit": "Milliseconds per block"
-        },
-        ......
+        }
     ]
 }
 ```
@@ -508,7 +517,7 @@ Output:
     ]
 }
 ```
-For more information about tagging performance analysis reports, see [Adding tags to a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.UsingDashboard.ManagePerfAnalysisReportTags.html) in the *Amazon RDS User Guide* and [Adding tags to a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.UsingDashboard.ManagePerfAnalysisReportTags.html) in the *Amazon Aurora User Guide*.
+For more information about tagging performance analysis reports, see [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon RDS User Guide* and [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pi/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -527,7 +536,7 @@ aws pi tag-resource \
     --tags {{Key=name,Value=test-tag}}
 ```
 This command produces no output.
-For more information about tagging performance analysis reports, see [Adding tags to a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.UsingDashboard.ManagePerfAnalysisReportTags.html) in the *Amazon RDS User Guide* and [Adding tags to a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.UsingDashboard.ManagePerfAnalysisReportTags.html) in the *Amazon Aurora User Guide*.
+For more information about tagging performance analysis reports, see [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon RDS User Guide* and [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pi/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -546,5 +555,5 @@ aws pi untag-resource \
     --tag-keys {{name}}
 ```
 This command produces no output.
-For more information about tagging performance analysis reports, see [Adding tags to a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.UsingDashboard.ManagePerfAnalysisReportTags.html) in the *Amazon RDS User Guide* and [Adding tags to a performance analysis report in Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.UsingDashboard.ManagePerfAnalysisReportTags.html) in the *Amazon Aurora User Guide*.
+For more information about tagging performance analysis reports, see [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon RDS User Guide* and [AWS CLI examples for Performance Insights](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.API.Examples.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pi/untag-resource.html) in *AWS CLI Command Reference*.

@@ -42,7 +42,7 @@ Output:
     "Name": "example-application"
 }
 ```
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [CreateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/create-application.html) in *AWS CLI Command Reference*.
 
 ### `create-configuration-profile`
@@ -59,7 +59,7 @@ aws appconfig create-configuration-profile \
     --application-id {{"339ohji"}} \
     --name {{"Example-Configuration-Profile"}} \
     --location-uri {{"ssm-parameter://Example-Parameter"}} \
-    --retrieval-role-arn {{"arn:aws:iam::111122223333:role/Example-App-Config-Role"}}
+    --retrieval-role-arn {{"arn:aws:iam::123456789012:role/Example-App-Config-Role"}}
 ```
 Output:
 
@@ -70,7 +70,7 @@ Output:
     "Id": "ur8hx2f",
     "LocationUri": "ssm-parameter://Example-Parameter",
     "Name": "Example-Configuration-Profile",
-    "RetrievalRoleArn": "arn:aws:iam::111122223333:role/Example-App-Config-Role",
+    "RetrievalRoleArn": "arn:aws:iam::123456789012:role/Example-App-Config-Role",
     "Type": null,
     "Validators": null
 }
@@ -118,7 +118,6 @@ The following `create-extension-association` example creates a new extension ass
 
 ```
 aws appconfig create-extension-association \
-    --region {{us-west-2}} \
     --extension-identifier {{S3-backup-extension}} \
     --resource-identifier {{"arn:aws:appconfig:us-west-2:123456789012:application/Finance"}} \
     --parameters {{S3bucket=FinanceConfigurationBackup}}
@@ -127,13 +126,13 @@ Output:
 
 ```
 {
-  "Id": "a1b2c3d4",
-  "ExtensionArn": "arn:aws:appconfig:us-west-2:123456789012:extension/S3-backup-extension/1",
-  "ResourceArn": "arn:aws:appconfig:us-west-2:123456789012:application/Finance",
-  "Parameters": {
-    "S3bucket": "FinanceConfigurationBackup"
-  },
-  "ExtensionVersionNumber": 1
+    "Id": "a1b2c3d4",
+    "ExtensionArn": "arn:aws:appconfig:us-west-2:123456789012:extension/S3-backup-extension/1",
+    "ResourceArn": "arn:aws:appconfig:us-west-2:123456789012:application/Finance",
+    "Parameters": {
+        "S3bucket": "FinanceConfigurationBackup"
+    },
+    "ExtensionVersionNumber": 1
 }
 ```
 For more information, see [Working with AWS AppConfig extensions](https://docs.aws.amazon.com/appconfig/latest/userguide/working-with-appconfig-extensions.html) in the *AWS AppConfig User Guide*.
@@ -150,7 +149,6 @@ The following `create-extension` example creates a new extension in AWS AppConfi
 
 ```
 aws appconfig create-extension \
-    --region {{us-west-2}} \
     --name {{S3-backup-extension}} \
     --actions {{PRE_CREATE_HOSTED_CONFIGURATION_VERSION=[{Name=S3backup,Uri=arn:aws:lambda:us-west-2:123456789012:function:s3backupfunction,RoleArn=arn:aws:iam::123456789012:role/appconfigextensionrole}]}} \
     --parameters {{S3bucket={Required=true}}}
@@ -192,12 +190,11 @@ The following code example shows how to use `create-hosted-configuration-version
 The following `create-hosted-configuration-version` example creates a new configuration in the AWS AppConfig hosted configuration store. The configuration content must first be converted to base64.
 
 ```
-aws appconfig create-hosted-configuration-version \
+aws appconfig create-hosted-configuration-version {{configuration_version_output_file}} \
     --application-id {{"339ohji"}} \
     --configuration-profile-id {{"ur8hx2f"}} \
     --content {{eyAiTmFtZSI6ICJFeGFtcGxlQXBwbGljYXRpb24iLCAiSWQiOiBFeGFtcGxlSUQsICJSYW5rIjogNyB9}} \
-    --content-type {{"application/json"}} \
-    {{configuration_version_output_file}}
+    --content-type {{"application/json"}}
 ```
 Contents of `configuration_version_output_file`:
 
@@ -210,11 +207,11 @@ Output:
 {
     "ApplicationId": "339ohji",
     "ConfigurationProfileId": "ur8hx2f",
-    "VersionNumber": "1",
+    "VersionNumber": 1,
     "ContentType": "application/json"
 }
 ```
-For more information, see [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html#appconfig-creating-configuration-and-profile-about-hosted-store) in the *AWS Appconfig User Guide*.
+For more information, see [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile-about-hosted-store.html) in the *AWS Appconfig User Guide*.
 +  For API details, see [CreateHostedConfigurationVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/create-hosted-configuration-version.html) in *AWS CLI Command Reference*.
 
 ### `delete-application`
@@ -228,10 +225,10 @@ The following `delete-application` example deletes the specified application.
 
 ```
 aws appconfig delete-application \
---application-id {{339ohji}}
+    --application-id {{339ohji}}
 ```
 This command produces no output.
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [DeleteApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/delete-application.html) in *AWS CLI Command Reference*.
 
 ### `delete-configuration-profile`
@@ -298,7 +295,6 @@ The following `delete-extension-association` example deletes an extension associ
 
 ```
 aws appconfig delete-extension-association \
-    --region {{us-west-2}} \
     --extension-association-id {{a1b2c3d4}}
 ```
 This command produces no output.
@@ -316,7 +312,6 @@ The following `delete-extension` example deletes an extension from AWS AppConfig
 
 ```
 aws appconfig delete-extension \
-    --region {{us-west-2}} \
     --extension-identifier {{S3-backup-extension}}
 ```
 This command produces no output.
@@ -338,7 +333,7 @@ aws appconfig delete-hosted-configuration-version \
     --configuration-profile-id {{ur8hx2f}} \
     --version-number {{1}}
 ```
-Output:: This command produces no output.
+This command produces no output.
 For more information, see [Step 3: Creating a configuration and a configuration profile](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [DeleteHostedConfigurationVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/delete-hosted-configuration-version.html) in *AWS CLI Command Reference*.
 
@@ -364,7 +359,7 @@ Output:
     "Name": "example-application"
 }
 ```
-For more information, see [How AWS AppConfig works](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html#learn-more-appconfig-how-it-works) in the *AWS AppConfig User Guide*.
+For more information, see [How AWS AppConfig works](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [GetApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/get-application.html) in *AWS CLI Command Reference*.
 
 ### `get-configuration-profile`
@@ -389,7 +384,7 @@ Output:
     "Id": "ur8hx2f",
     "Name": "Example-Configuration-Profile",
     "LocationUri": "ssm-parameter://Example-Parameter",
-    "RetrievalRoleArn": "arn:aws:iam::111122223333:role/Example-App-Config-Role"
+    "RetrievalRoleArn": "arn:aws:iam::123456789012:role/Example-App-Config-Role"
 }
 ```
 For more information, see [Step 3: Creating a configuration and a configuration profile](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html) in the *AWS AppConfig User Guide*.
@@ -405,12 +400,11 @@ The following code example shows how to use `get-configuration`.
 The following `get-configuration` example returns the configuration details of the example application. On subsequent calls to get-configuration use the `client-configuration-version` parameter to only update the configuration of your application if the version has changed. Only updating the configuration when the version has changed avoids excess charges incurred by calling get-configuration.
 
 ```
-aws appconfig get-configuration \
+aws appconfig get-configuration {{configuration-output-file}} \
     --application {{"example-application"}} \
     --environment {{"Example-Environment"}} \
     --configuration {{"Example-Configuration-Profile"}} \
-    --client-id {{"test-id"}} \
-    {{configuration-output-file}}
+    --client-id {{"test-id"}}
 ```
 Contents of `configuration-output-file`:
 
@@ -425,7 +419,7 @@ Output:
     "ContentType": "application/json"
 }
 ```
-For more information, see [Step 6: Receiving the configuration](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-retrieving-the-configuration.html) in the *AWS AppConfig User Guide*.
+For more information, see [Retrieving feature flags and configuration data in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/retrieving-feature-flags.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [GetConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/get-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment-strategy`
@@ -579,7 +573,6 @@ The following `get-extension-association` example displays information about an 
 
 ```
 aws appconfig get-extension-association \
-    --region {{us-west-2}} \
     --extension-association-id {{a1b2c3d4}}
 ```
 Output:
@@ -609,7 +602,6 @@ The following `get-extension` example displays information about an extension.
 
 ```
 aws appconfig get-extension \
-    --region {{us-west-2}} \
     --extension-identifier {{S3-backup-extension}}
 ```
 Output:
@@ -649,11 +641,10 @@ The following code example shows how to use `get-hosted-configuration-version`.
 The following `get-hosted-configuration-version` example retrieves the configuration details of the AWS AppConfig hosted configuration.
 
 ```
-aws appconfig get-hosted-configuration-version \
+aws appconfig get-hosted-configuration-version {{hosted-configuration-version-output}} \
     --application-id {{339ohji}} \
     --configuration-profile-id {{ur8hx2f}} \
-    --version-number {{1}} \
-    {{hosted-configuration-version-output}}
+    --version-number {{1}}
 ```
 Contents of `hosted-configuration-version-output`:
 
@@ -666,11 +657,11 @@ Output:
 {
     "ApplicationId": "339ohji",
     "ConfigurationProfileId": "ur8hx2f",
-    "VersionNumber": "1",
+    "VersionNumber": 1,
     "ContentType": "application/json"
 }
 ```
-For more information, see [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html#appconfig-creating-configuration-and-profile-about-hosted-store) in the *AWS AppConfig User Guide*.
+For more information, see [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile-about-hosted-store.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [GetHostedConfigurationVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/get-hosted-configuration-version.html) in *AWS CLI Command Reference*.
 
 ### `list-applications`
@@ -702,7 +693,7 @@ Output:
     ]
 }
 ```
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [ListApplications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/list-applications.html) in *AWS CLI Command Reference*.
 
 ### `list-configuration-profiles`
@@ -872,11 +863,10 @@ The following code example shows how to use `list-extension-associations`.
 
 **AWS CLI**
 **To list all AWS AppConfig extension associations in your AWS account for an AWS Region**
-The following `list-extension-associations` example lists all AWS AppConfig extension associations for the current AWS account in a specific AWS Region.
+The following `list-extension-associations` example lists all AWS AppConfig extension associations for the current AWS account in the current AWS Region.
 
 ```
-aws appconfig list-extension-associations \
-    --region {{us-west-2}}
+aws appconfig list-extension-associations
 ```
 Output:
 
@@ -901,11 +891,10 @@ The following code example shows how to use `list-extensions`.
 
 **AWS CLI**
 **To list all AWS AppConfig extensions in your AWS account for an AWS Region**
-The following `list-extensions` example lists all AWS AppConfig extensions for the current AWS account in a specific AWS Region. The command returns custom and AWS authored extensions.
+The following `list-extensions` example lists all AWS AppConfig extensions for the current AWS account in the current AWS Region. The command returns custom and AWS authored extensions.
 
 ```
-aws appconfig list-extensions \
-    --region {{us-west-2}}
+aws appconfig list-extensions
 ```
 Output:
 
@@ -986,7 +975,7 @@ Output:
     ]
 }
 ```
-For more information, see [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html#appconfig-creating-configuration-and-profile-about-hosted-store) in the *AWS AppConfig User Guide*.
+For more information, see [About the AWS AppConfig hosted configuration store](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile-about-hosted-store.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [ListHostedConfigurationVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/list-hosted-configuration-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1000,7 +989,7 @@ The following `list-tags-for-resource` example lists the tags of a specified app
 
 ```
 aws appconfig list-tags-for-resource \
-    --resource-arn {{arn:aws:appconfig:us-east-1:682428703967:application/339ohji}}
+    --resource-arn {{arn:aws:appconfig:us-west-2:123456789012:application/339ohji}}
 ```
 Output:
 
@@ -1011,7 +1000,7 @@ Output:
     }
 }
 ```
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `start-deployment`
@@ -1103,11 +1092,11 @@ The following `tag-resource` example tags an application resource.
 
 ```
 aws appconfig tag-resource \
-    --resource-arn {{arn:aws:appconfig:us-east-1:682428703967:application/339ohji}} \
+    --resource-arn {{arn:aws:appconfig:us-west-2:123456789012:application/339ohji}} \
     --tags '{{{"group1" : "1"}}}'
 ```
 This command produces no output.
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1121,11 +1110,11 @@ The following `untag-resource` example removes the group1 tag from the specified
 
 ```
 aws appconfig untag-resource \
-    --resource-arn {{arn:aws:appconfig:us-east-1:111122223333:application/339ohji}} \
+    --resource-arn {{arn:aws:appconfig:us-west-2:123456789012:application/339ohji}} \
     --tag-keys '{{["group1"]}}'
 ```
 This command produces no output.
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-application`
@@ -1151,7 +1140,7 @@ Output:
     "Description": "An application used for creating an example."
 }
 ```
-For more information, see [Step 1: Creating an AWS AppConfig application](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-application.html) in the *AWS AppConfig User Guide*.
+For more information, see [Creating a namespace for your application in AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-namespace.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [UpdateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/update-application.html) in *AWS CLI Command Reference*.
 
 ### `update-configuration-profile`
@@ -1178,7 +1167,7 @@ Output:
     "Name": "Example-Configuration-Profile",
     "Description": "Configuration profile used for examples.",
     "LocationUri": "ssm-parameter://Example-Parameter",
-    "RetrievalRoleArn": "arn:aws:iam::111122223333:role/Example-App-Config-Role"
+    "RetrievalRoleArn": "arn:aws:iam::123456789012:role/Example-App-Config-Role"
 }
 ```
 For more information, see [Step 3: Creating a configuration and a configuration profile](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html) in the *AWS AppConfig User Guide*.
@@ -1254,7 +1243,6 @@ The following `update-extension-association` example adds a new parameter value 
 
 ```
 aws appconfig update-extension-association \
-    --region {{us-west-2}} \
     --extension-association-id {{a1b2c3d4}} \
     --parameters {{S3bucket=FinanceMobileApp}}
 ```
@@ -1285,7 +1273,6 @@ The following `update-extension` example adds an additional parameter Key to an 
 
 ```
 aws appconfig update-extension \
-    --region {{us-west-2}} \
     --extension-identifier {{S3-backup-extension}} \
     --parameters {{S3bucket={Required=true},CampaignID={Required=false}}}
 ```
@@ -1334,6 +1321,6 @@ aws appconfig validate-configuration \
     --configuration-profile-id {{ur8hx2f}} \
     --configuration-version {{1}}
 ```
-The command produces no output.
+This command produces no output.
 For more information, see [Step 3: Creating a configuration and a configuration profile](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-creating-configuration-and-profile.html) in the *AWS AppConfig User Guide*.
 +  For API details, see [ValidateConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appconfig/validate-configuration.html) in *AWS CLI Command Reference*.

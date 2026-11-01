@@ -26,7 +26,7 @@ The following code example shows how to use `create-elasticsearch-domain`.
 
 **AWS CLI**
 **To create an Amazon Elasticsearch Service domain**
-The following `create-elasticsearch-domain` command creates a new Amazon Elasticsearch Service domain within a VPC and restricts access to a single user. Amazon ES infers the VPC ID from the specified subnet and security group IDs.
+The following `create-elasticsearch-domain` example creates a new Amazon Elasticsearch Service domain within a VPC and restricts access to a single user. Amazon ES infers the VPC ID from the specified subnet and security group IDs.
 
 ```
 aws es create-elasticsearch-domain \
@@ -34,7 +34,7 @@ aws es create-elasticsearch-domain \
     --elasticsearch-version {{6.2}} \
     --elasticsearch-cluster-config {{InstanceType=m4.large.elasticsearch,InstanceCount=1}} \
     --ebs-options {{EBSEnabled=true,VolumeType=standard,VolumeSize=10}} \
-    --access-policies '{{{"Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Principal": {"AWS": "arn:aws:iam::123456789012:root" }, "Action":"es:*", "Resource": "arn:aws:es:us-west-1:123456789012:domain/vpc-cli-example/*" } ] }}}' \
+    --access-policies '{{{"Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Principal": {"AWS": "arn:aws:iam::123456789012:root" }, "Action":"es:*", "Resource": "arn:aws:es:us-west-2:123456789012:domain/vpc-cli-example/*" } ] }}}' \
     --vpc-options {{SubnetIds=subnet-1a2a3a4a,SecurityGroupIds=sg-2a3a4a5a}}
 ```
 Output:
@@ -61,7 +61,7 @@ Output:
                 "sg-2a3a4a5a"
             ],
             "AvailabilityZones": [
-                "us-west-1c"
+                "us-west-2c"
             ]
         },
         "Created": true,
@@ -77,14 +77,14 @@ Output:
             "AutomatedSnapshotStartHour": 0
         },
         "ElasticsearchVersion": "6.2",
-        "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-1:123456789012:domain/vpc-cli-example/*\"}]}",
+        "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-2:123456789012:domain/vpc-cli-example/*\"}]}",
         "AdvancedOptions": {
             "rest.action.multi.allow_explicit_index": "true"
         },
         "EncryptionAtRestOptions": {
             "Enabled": false
         },
-        "ARN": "arn:aws:es:us-west-1:123456789012:domain/vpc-cli-example"
+        "ARN": "arn:aws:es:us-west-2:123456789012:domain/vpc-cli-example"
     }
 }
 ```
@@ -154,7 +154,7 @@ Output:
             }
         },
         "AccessPolicies": {
-            "Options": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-east-1:123456789012:domain/cli-example/*\"}]}",
+            "Options": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-2:123456789012:domain/cli-example/*\"}]}",
             "Status": {
                 "CreationDate": 1589395034.946,
                 "UpdateDate": 1589395827.325,
@@ -200,7 +200,7 @@ Output:
         "EncryptionAtRestOptions": {
             "Options": {
                 "Enabled": true,
-                "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1a2a3a4a-1a2a-1a2a-1a2a-1a2a3a4a5a6a"
+                "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "Status": {
                 "CreationDate": 1589395034.946,
@@ -296,10 +296,10 @@ Output:
     "DomainStatus": {
         "DomainId": "123456789012/cli-example",
         "DomainName": "cli-example",
-        "ARN": "arn:aws:es:us-east-1:123456789012:domain/cli-example",
+        "ARN": "arn:aws:es:us-west-2:123456789012:domain/cli-example",
         "Created": true,
         "Deleted": false,
-        "Endpoint": "search-cli-example-1a2a3a4a5a6a7a8a9a0a.us-east-1.es.amazonaws.com",
+        "Endpoint": "search-cli-example-1a2a3a4a5a6a7a8a9a0a.us-west-2.es.amazonaws.com",
         "Processing": false,
         "UpgradeProcessing": false,
         "ElasticsearchVersion": "7.4",
@@ -319,7 +319,7 @@ Output:
             "VolumeType": "gp2",
             "VolumeSize": 10
         },
-        "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-east-1:123456789012:domain/cli-example/*\"}]}",
+        "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-2:123456789012:domain/cli-example/*\"}]}",
         "SnapshotOptions": {
             "AutomatedSnapshotStartHour": 0
         },
@@ -328,7 +328,7 @@ Output:
         },
         "EncryptionAtRestOptions": {
             "Enabled": true,
-            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1a2a3a4a-1a2a-1a2a-1a2a-1a2a3a4a5a6a"
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         "NodeToNodeEncryptionOptions": {
             "Enabled": true
@@ -379,17 +379,17 @@ Output:
     "DomainStatusList": [{
             "DomainId": "123456789012/cli-example-1",
             "DomainName": "cli-example-1",
-            "ARN": "arn:aws:es:us-east-1:123456789012:domain/cli-example-1",
+            "ARN": "arn:aws:es:us-west-2:123456789012:domain/cli-example-1",
             "Created": true,
             "Deleted": false,
-            "Endpoint": "search-cli-example-1-1a2a3a4a5a6a7a8a9a0a.us-east-1.es.amazonaws.com",
+            "Endpoint": "search-cli-example-1-1a2a3a4a5a6a7a8a9a0a.us-west-2.es.amazonaws.com",
             "Processing": false,
             "UpgradeProcessing": false,
             "ElasticsearchVersion": "7.4",
             "ElasticsearchClusterConfig": {
                 "InstanceType": "c5.large.elasticsearch",
                 "InstanceCount": 1,
-                 "DedicatedMasterEnabled": true,
+                "DedicatedMasterEnabled": true,
                 "ZoneAwarenessEnabled": false,
                 "DedicatedMasterType": "c5.large.elasticsearch",
                 "DedicatedMasterCount": 3,
@@ -402,7 +402,7 @@ Output:
                 "VolumeType": "gp2",
                 "VolumeSize": 10
             },
-            "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-east-1:123456789012:domain/cli-example-1/*\"}]}",
+            "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-2:123456789012:domain/cli-example-1/*\"}]}",
             "SnapshotOptions": {
                 "AutomatedSnapshotStartHour": 0
             },
@@ -411,7 +411,7 @@ Output:
             },
             "EncryptionAtRestOptions": {
                 "Enabled": true,
-                "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1a2a3a4a-1a2a-1a2a-1a2a-1a2a3a4a5a6a"
+                "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "NodeToNodeEncryptionOptions": {
                 "Enabled": true
@@ -440,7 +440,7 @@ Output:
         {
             "DomainId": "123456789012/cli-example-2",
             "DomainName": "cli-example-2",
-            "ARN": "arn:aws:es:us-east-1:123456789012:domain/cli-example-2",
+            "ARN": "arn:aws:es:us-west-2:123456789012:domain/cli-example-2",
             "Created": true,
             "Deleted": false,
             "Processing": true,
@@ -458,7 +458,7 @@ Output:
                 "VolumeType": "gp2",
                 "VolumeSize": 10
             },
-            "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Deny\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-east-1:123456789012:domain/cli-example-2/*\"}]}",
+            "AccessPolicies": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Deny\",\"Principal\":{\"AWS\":\"*\"},\"Action\":\"es:*\",\"Resource\":\"arn:aws:es:us-west-2:123456789012:domain/cli-example-2/*\"}]}",
             "SnapshotOptions": {
                 "AutomatedSnapshotStartHour": 0
             },
@@ -505,7 +505,7 @@ The following code example shows how to use `describe-reserved-elasticsearch-ins
 
 **AWS CLI**
 **To view all reserved instances**
-The following `describe-elasticsearch-domains` example provides a summary of all instances you have reserved in a region.
+The following `describe-reserved-elasticsearch-instances` example provides a summary of all instances you have reserved in a region.
 
 ```
 aws es describe-reserved-elasticsearch-instances
@@ -520,7 +520,7 @@ Output:
         "ReservationName": "my-reservation",
         "PaymentOption": "PARTIAL_UPFRONT",
         "UsagePrice": 0.0,
-        "ReservedElasticsearchInstanceId": "9a8a7a6a-5a4a-3a2a-1a0a-9a8a7a6a5a4a",
+        "ReservedElasticsearchInstanceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "RecurringCharges": [{
             "RecurringChargeAmount": 0.603,
             "RecurringChargeFrequency": "Hourly"

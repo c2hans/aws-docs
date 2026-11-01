@@ -30,8 +30,7 @@ The following `batch-get-channel` example lists information about the specified 
 
 ```
 aws ivs batch-get-channel \
-    --arns {{arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh}} \
-        {{arn:aws:ivs:us-west-2:123456789012:channel/efghEFGHijkl}}
+    --arns {{arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh}} {{arn:aws:ivs:us-west-2:123456789012:channel/efghEFGHijkl}}
 ```
 Output:
 
@@ -77,7 +76,7 @@ Output:
             "name": "channel-2",
             "playbackUrl": "https://a1b2c3d4e5f6.us-west-2.playback.live-video.net/api/video/v1/us-west-2.123456789012.channel-2.abcdEFGH.m3u8",
             "preset": "",
-            "playbackRestrictionPolicyArn": "arn:aws:ivs:us-west-2:123456789012:playback-restriction-policy/ABcdef34ghIJ"",
+            "playbackRestrictionPolicyArn": "arn:aws:ivs:us-west-2:123456789012:playback-restriction-policy/ABcdef34ghIJ",
             "recordingConfigurationArn": "",
             "srt": {
                 "endpoint": "a1b2c3d4e5f6.srt.live-video.net",
@@ -103,8 +102,7 @@ The following `batch-get-stream-key` example gets information about the specifie
 
 ```
 aws ivs batch-get-stream-key \
-    --arns {{arn:aws:ivs:us-west-2:123456789012:stream-key/skSKABCDefgh}} \
-       {{arn:aws:ivs:us-west-2:123456789012:stream-key/skSKIJKLmnop}}
+    --arns {{arn:aws:ivs:us-west-2:123456789012:stream-key/skSKABCDefgh}} {{arn:aws:ivs:us-west-2:123456789012:stream-key/skSKIJKLmnop}}
 ```
 Output:
 
@@ -123,7 +121,7 @@ Output:
             "channelArn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh",
             "tags": {}
         }
-     ]
+    ]
 }
 ```
 For more information, see [Create a Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-create-channel.html) in the *IVS Low-Latency User Guide*.
@@ -152,13 +150,13 @@ Output:
             "channelArn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh1",
             "viewerId": "abcdefg1",
             "code": "403",
-            "message": "not authorized",
+            "message": "not authorized"
         },
         {
             "channelArn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh2",
             "viewerId": "abcdefg2",
             "code": "403",
-            "message": "not authorized",
+            "message": "not authorized"
         }
     ]
 }
@@ -218,7 +216,7 @@ Output:
 ```
 For more information, see [Create a Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-create-channel.html) in the *IVS Low-Latency User Guide*.
 **Example 2: To create a channel with recording enabled, using the RecordingConfiguration resource specified by its ARN**
-The following `create-channel` example creates a new channel and an associated stream key to start streaming, and sets up recording for the channel:
+The following `create-channel` example creates a new channel and an associated stream key to start streaming, and sets up recording for the channel.
 
 ```
 aws ivs create-channel \
@@ -240,7 +238,6 @@ Output:
             "maximumResolution": "FULL_HD",
             "policy": "ALLOW"
         },
-        "type": "STANDARD",
         "playbackRestrictionPolicyArn": "",
         "recordingConfigurationArn": "arn:aws:ivs:us-west-2:123456789012:recording-configuration/ABCD12cdEFgh",
         "srt": {
@@ -265,11 +262,11 @@ Output:
 ```
 For more information, see [Record to Amazon S3](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/record-to-s3.html) in the *IVS Low-Latency User Guide*.
 **Example 3: To create a channel with a playback restriction policy specified by its ARN**
-The following `create-channel` example creates a new channel and an associated stream key to start streaming, and sets up a playback restriction policy for the channel:
+The following `create-channel` example creates a new channel and an associated stream key to start streaming, and sets up a playback restriction policy for the channel.
 
 ```
 aws ivs create-channel \
-    --name {{test-channel-with-playback-restriction-policy}}\
+    --name {{test-channel-with-playback-restriction-policy}} \
     --insecure-ingest \
     --playback-restriction-policy-arn '{{arn:aws:ivs:us-west-2:123456789012:playback-restriction-policy/ABcdef34ghIJ}}'
 ```
@@ -287,7 +284,6 @@ Output:
             "maximumResolution": "FULL_HD",
             "policy": "ALLOW"
         },
-        "type": "STANDARD",
         "playbackRestrictionPolicyArn": "arn:aws:ivs:us-west-2:123456789012:playback-restriction-policy/ABcdef34ghIJ",
         "recordingConfigurationArn": "",
         "srt": {
@@ -610,8 +606,8 @@ Output:
             "endpoint": "a1b2c3d4e5f6.srt.live-video.net",
             "passphrase": "AB1C2defGHijkLMNo3PqQRstUvwxyzaBCDEfghh4ijklMN5opqrStuVWxyzAbCDEfghIJ"
         },
-        "tags": {}
-        "type": "STANDARD",
+        "tags": {},
+        "type": "STANDARD"
     }
 }
 ```
@@ -747,7 +743,7 @@ The following `get-stream-key` example gets information about the specified stre
 
 ```
 aws ivs get-stream-key \
-    --arn {{arn:aws:ivs:us-west-2:123456789012:stream-key/skSKABCDefgh}} --region=us-west-2
+    --arn {{arn:aws:ivs:us-west-2:123456789012:stream-key/skSKABCDefgh}}
 ```
 Output:
 
@@ -1241,7 +1237,6 @@ Output:
             "hasErrorEvent": false,
             "streamId": "mystream"
         }
-        ...
     ]
 }
 ```
@@ -1264,7 +1259,7 @@ Output:
 
 ```
 {
-   "streams": [
+    "streams": [
         {
             "channelArn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh",
             "state": "LIVE",
@@ -1302,7 +1297,7 @@ Output:
     }
 }
 ```
-For more information, see [Tagging](https://docs.aws.amazon.com/ivs/latest/APIReference/Welcome.html) in the *Amazon Interactive Video Service API Reference*.
+For more information, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ivs/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `put-metadata`
@@ -1374,7 +1369,7 @@ aws ivs tag-resource \
     --tags {{"tagkey1=tagvalue1, tagkey2=tagvalue2"}}
 ```
 This command produces no output.
-For more information, see [Tagging](https://docs.aws.amazon.com/ivs/latest/APIReference/Welcome.html) in the *Amazon Interactive Video Service API Reference*.
+For more information, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ivs/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1392,7 +1387,7 @@ aws ivs untag-resource \
     --tag-keys {{"tagkey1, tagkey2"}}
 ```
 This command produces no output.
-For more information, see [Tagging](https://docs.aws.amazon.com/ivs/latest/APIReference/Welcome.html) in the *Amazon Interactive Video Service API Reference*.
+For more information, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ivs/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-channel`
@@ -1437,6 +1432,7 @@ Output:
         "preset": "",
         "authorized": false,
         "tags": {}
+    }
 }
 ```
 For more information, see [Create a Channel](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started-create-channel.html) in the *IVS Low-Latency User Guide*.
@@ -1652,7 +1648,7 @@ Output:
 ```
 {
     "channel": {
-        ""arn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh",
+        "arn": "arn:aws:ivs:us-west-2:123456789012:channel/abcdABCDefgh",
         "containerFormat": "TS",
         "name": "test-channel-with-multitrack",
         "latencyMode": "LOW",

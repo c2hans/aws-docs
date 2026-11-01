@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteNotificationConfiguration`.
 
 **AWS CLI**
 **To delete an Auto Scaling notification**
-This example deletes the specified notification from the specified Auto Scaling group.
+The following `delete-notification-configuration` example deletes the specified notification from the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-notification-configuration \

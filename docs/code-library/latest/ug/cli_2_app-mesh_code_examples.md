@@ -39,10 +39,10 @@ Output:
     "mesh":{
         "meshName":"app1",
         "metadata":{
-            "arn":"arn:aws:appmesh:us-east-1:123456789012:mesh/app1",
+            "arn":"arn:aws:appmesh:us-west-2:123456789012:mesh/app1",
             "createdAt":1563809909.282,
             "lastUpdatedAt":1563809909.282,
-            "uid":"a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version":1
         },
         "spec":{},
@@ -67,10 +67,10 @@ Output:
     "mesh":{
         "meshName":"app2",
         "metadata":{
-            "arn":"arn:aws:appmesh:us-east-1:123456789012:mesh/app2",
+            "arn":"arn:aws:appmesh:us-west-2:123456789012:mesh/app2",
             "createdAt":1563822121.877,
             "lastUpdatedAt":1563822121.877,
-            "uid":"a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version":1
         },
         "spec":{},
@@ -89,7 +89,7 @@ For more information, see [Service Meshes](https://docs.aws.amazon.com/app-mesh/
 The following code example shows how to use `create-route`.
 
 **AWS CLI**
-**To create a new gRPC route**
+**Example 1: To create a new gRPC route**
 The following `create-route` example uses a JSON input file to create a gRPC route. GRPC traffic that has metadata that starts with 123 is routed to a virtual node named serviceBgrpc. If there are specific gRPC, HTTP, or TCP failures when attempting to communicate with the target of the route, the route is retried three times. There is a 15 second delay between each retry attempt.
 
 ```
@@ -103,40 +103,40 @@ Contents of `create-route-grpc.json`:
     "meshName" : "apps",
     "routeName" : "grpcRoute",
     "spec" : {
-       "grpcRoute" : {
-          "action" : {
-             "weightedTargets" : [
-                {
-                   "virtualNode" : "serviceBgrpc",
-                   "weight" : 100
-                }
-             ]
-          },
-          "match" : {
-             "metadata" : [
-                {
-                   "invert" : false,
-                   "match" : {
-                      "prefix" : "123"
-                   },
-                   "name" : "myMetadata"
-                }
-             ],
-             "methodName" : "GetColor",
-             "serviceName" : "com.amazonaws.services.ColorService"
-          },
-          "retryPolicy" : {
-             "grpcRetryEvents" : [ "deadline-exceeded" ],
-             "httpRetryEvents" : [ "server-error", "gateway-error" ],
-             "maxRetries" : 3,
-             "perRetryTimeout" : {
-                "unit" : "s",
-                "value" : 15
-             },
-             "tcpRetryEvents" : [ "connection-error" ]
-          }
-       },
-       "priority" : 100
+        "grpcRoute" : {
+            "action" : {
+                "weightedTargets" : [
+                    {
+                        "virtualNode" : "serviceBgrpc",
+                        "weight" : 100
+                    }
+                ]
+            },
+            "match" : {
+                "metadata" : [
+                    {
+                        "invert" : false,
+                        "match" : {
+                            "prefix" : "123"
+                        },
+                        "name" : "myMetadata"
+                    }
+                ],
+                "methodName" : "GetColor",
+                "serviceName" : "com.amazonaws.services.ColorService"
+            },
+            "retryPolicy" : {
+                "grpcRetryEvents" : [ "deadline-exceeded" ],
+                "httpRetryEvents" : [ "server-error", "gateway-error" ],
+                "maxRetries" : 3,
+                "perRetryTimeout" : {
+                    "unit" : "s",
+                    "value" : 15
+                },
+                "tcpRetryEvents" : [ "connection-error" ]
+            }
+        },
+        "priority" : 100
     },
     "virtualRouterName" : "serviceBgrpc"
 }
@@ -151,7 +151,7 @@ Output:
             "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/apps/virtualRouter/serviceBgrpc/route/grpcRoute",
             "createdAt": 1572010806.008,
             "lastUpdatedAt": 1572010806.008,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "routeName": "grpcRoute",
@@ -205,7 +205,7 @@ Output:
     }
 }
 ```
-**To create a new HTTP or HTTP/2 route**
+**Example 2: To create a new HTTP or HTTP/2 route**
 The following `create-route` example uses a JSON input file to create an HTTP/2 route. To create an HTTP route, replace http2Route with httpRoute under spec. All HTTP/2 traffic addressed to any URL prefix that has a header value that starts with 123 is routed to a virtual node named serviceBhttp2. If there are specific HTTP or TCP failures when attempting to communicate with the target of the route, the route is retried three times. There is a 15 second delay between each retry attempt.
 
 ```
@@ -272,7 +272,7 @@ Output:
             "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/apps/virtualRouter/serviceBhttp2/route/http2Route",
             "createdAt": 1572011008.352,
             "lastUpdatedAt": 1572011008.352,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "routeName": "http2Route",
@@ -324,14 +324,14 @@ Output:
     }
 }
 ```
-**To create a new TCP route**
+**Example 3: To create a new TCP route**
 The following `create-route` example uses a JSON input file to create a TCP route. 75 percent of traffic is routed to a virtual node named serviceBtcp, and 25 percent of traffic is routed to a virtual node named serviceBv2tcp. Specifying different weightings for different targets is an effective way to do a deployment of a new version of an application. You can adjust the weights so that eventually, 100 percent of all traffic is routed to a target that has the new version of an application.
 
 ```
 aws appmesh create-route \
     --cli-input-json {{file://create-route-tcp.json}}
 ```
-Contents of create-route-tcp.json:
+Contents of `create-route-tcp.json`:
 
 ```
 {
@@ -367,7 +367,7 @@ Output:
             "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/apps/virtualRouter/serviceBtcp/route/tcpRoute",
             "createdAt": 1572011436.26,
             "lastUpdatedAt": 1572011436.26,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "routeName": "tcpRoute",
@@ -418,14 +418,14 @@ Contents of `create-virtual-gateway.json`:
 ```
 {
     "spec": {
-      "listeners": [
-        {
-          "portMapping": {
-            "port": 9080,
-            "protocol": "http"
-          }
-        }
-      ]
+        "listeners": [
+            {
+                "portMapping": {
+                    "port": 9080,
+                    "protocol": "http"
+                }
+            }
+        ]
     }
 }
 ```
@@ -441,7 +441,7 @@ Output:
             "lastUpdatedAt": "2022-04-06T10:42:42.015000-05:00",
             "meshOwner": "123456789012",
             "resourceOwner": "123456789012",
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -507,10 +507,10 @@ Output:
     "virtualNode": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceBv1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceBv1",
             "createdAt": 1563810019.874,
             "lastUpdatedAt": 1563810019.874,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -586,10 +586,10 @@ Output:
     "virtualNode": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceA",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceA",
             "createdAt": 1563810859.465,
             "lastUpdatedAt": 1563810859.465,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -669,10 +669,10 @@ Output:
     "virtualRouter": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB",
             "createdAt": 1563810546.59,
             "lastUpdatedAt": 1563810546.59,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -730,10 +730,10 @@ Output:
     "virtualService": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceA.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceA.svc.cluster.local",
             "createdAt": 1563810859.474,
             "lastUpdatedAt": 1563810967.179,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "spec": {
@@ -780,10 +780,10 @@ Output:
     "virtualService": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
             "createdAt": 1563908363.999,
             "lastUpdatedAt": 1563908363.999,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -823,10 +823,10 @@ Output:
     "mesh": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1",
             "createdAt": 1563809909.282,
             "lastUpdatedAt": 1563824981.248,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "spec": {
@@ -865,10 +865,10 @@ Output:
     "route": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB-weighted",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB-weighted",
             "createdAt": 1563811384.015,
             "lastUpdatedAt": 1563823915.936,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 3
         },
         "routeName": "toVnServiceB-weighted",
@@ -922,10 +922,10 @@ Output:
     "virtualNode": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceBv2",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceBv2",
             "createdAt": 1563810117.297,
             "lastUpdatedAt": 1563824700.678,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "spec": {
@@ -975,10 +975,10 @@ Output:
     "virtualRouter": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB",
             "createdAt": 1563810546.59,
             "lastUpdatedAt": 1563824253.467,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 3
         },
         "spec": {
@@ -1022,10 +1022,10 @@ Output:
     "virtualService": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
             "createdAt": 1563908363.999,
             "lastUpdatedAt": 1563913940.866,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 3
         },
         "spec": {},
@@ -1059,10 +1059,10 @@ Output:
     "mesh": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1",
             "createdAt": 1563809909.282,
             "lastUpdatedAt": 1563809909.282,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {},
@@ -1097,10 +1097,10 @@ Output:
     "route": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB-weighted",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB-weighted",
             "createdAt": 1563811384.015,
             "lastUpdatedAt": 1563811384.015,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "routeName": "toVnServiceB-weighted",
@@ -1154,10 +1154,10 @@ Output:
     "virtualNode": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceBv1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceBv1",
             "createdAt": 1563810019.874,
             "lastUpdatedAt": 1563810019.874,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -1207,10 +1207,10 @@ Output:
     "virtualRouter": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB",
             "createdAt": 1563810546.59,
             "lastUpdatedAt": 1563810546.59,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -1254,10 +1254,10 @@ Output:
     "virtualService": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
             "createdAt": 1563908363.999,
             "lastUpdatedAt": 1563908363.999,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 1
         },
         "spec": {
@@ -1295,7 +1295,7 @@ Output:
 {
     "meshes": [
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1",
             "meshName": "app1"
         }
     ]
@@ -1324,7 +1324,7 @@ Output:
 {
     "routes": [
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB",
             "meshName": "app1",
             "routeName": "toVnServiceB-weighted",
             "virtualRouterName": "vrServiceB"
@@ -1346,7 +1346,7 @@ The following `list-tags-for-resource` example lists all of the tags assigned to
 
 ```
 aws appmesh list-tags-for-resource \
-    --resource-arn {{arn:aws:appmesh:us-east-1:123456789012:mesh/app1}}
+    --resource-arn {{arn:aws:appmesh:us-west-2:123456789012:mesh/app1}}
 ```
 Output:
 
@@ -1368,6 +1368,7 @@ Output:
     ]
 }
 ```
+For more information, see [Service Meshes](https://docs.aws.amazon.com/app-mesh/latest/userguide/meshes.html) in the *AWS App Mesh User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appmesh/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-virtual-nodes`
@@ -1389,12 +1390,12 @@ Output:
 {
     "virtualNodes": [
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceBv1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceBv1",
             "meshName": "app1",
             "virtualNodeName": "vnServiceBv1"
         },
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceBv2",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceBv2",
             "meshName": "app1",
             "virtualNodeName": "vnServiceBv2"
         }
@@ -1423,7 +1424,7 @@ Output:
 {
     "virtualRouters": [
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB",
             "meshName": "app1",
             "virtualRouterName": "vrServiceB"
         }
@@ -1452,12 +1453,12 @@ Output:
 {
     "virtualServices": [
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceA.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceA.svc.cluster.local",
             "meshName": "app1",
             "virtualServiceName": "serviceA.svc.cluster.local"
         },
         {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceB.svc.cluster.local",
             "meshName": "app1",
             "virtualServiceName": "serviceB.svc.cluster.local"
         }
@@ -1478,10 +1479,11 @@ The following `tag-resource` example adds the tag `key1` with the value `value1`
 
 ```
 aws appmesh tag-resource \
-    --resource-arn {{arn:aws:appmesh:us-east-1:123456789012:mesh/app1}} \
+    --resource-arn {{arn:aws:appmesh:us-west-2:123456789012:mesh/app1}} \
     --tags {{key=key1,value=value1}}
 ```
 This command produces no output.
+For more information, see [Service Meshes](https://docs.aws.amazon.com/app-mesh/latest/userguide/meshes.html) in the *AWS App Mesh User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appmesh/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1495,10 +1497,11 @@ The following `untag-resource` example removes a tag with the key `key1` from th
 
 ```
 aws appmesh untag-resource \
-    --resource-arn {{arn:aws:appmesh:us-east-1:123456789012:mesh/app1}} \
+    --resource-arn {{arn:aws:appmesh:us-west-2:123456789012:mesh/app1}} \
     --tag-keys {{key1}}
 ```
 This command produces no output.
+For more information, see [Service Meshes](https://docs.aws.amazon.com/app-mesh/latest/userguide/meshes.html) in the *AWS App Mesh User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/appmesh/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-mesh`
@@ -1533,10 +1536,10 @@ Output:
     "mesh": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1",
             "createdAt": 1563809909.282,
             "lastUpdatedAt": 1563812829.687,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "spec": {
@@ -1601,10 +1604,10 @@ Output:
     "route": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB-weighted",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB/route/toVnServiceB-weighted",
             "createdAt": 1563811384.015,
             "lastUpdatedAt": 1563819600.022,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "routeName": "toVnServiceB-weighted",
@@ -1690,10 +1693,10 @@ Output:
     "virtualNode": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualNode/vnServiceBv1",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualNode/vnServiceBv1",
             "createdAt": 1563810019.874,
             "lastUpdatedAt": 1563819234.825,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "spec": {
@@ -1768,10 +1771,10 @@ Output:
     "virtualRouter": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualRouter/vrServiceB",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualRouter/vrServiceB",
             "createdAt": 1563810546.59,
             "lastUpdatedAt": 1563819431.352,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 2
         },
         "spec": {
@@ -1829,10 +1832,10 @@ Output:
     "virtualService": {
         "meshName": "app1",
         "metadata": {
-            "arn": "arn:aws:appmesh:us-east-1:123456789012:mesh/app1/virtualService/serviceA.svc.cluster.local",
+            "arn": "arn:aws:appmesh:us-west-2:123456789012:mesh/app1/virtualService/serviceA.svc.cluster.local",
             "createdAt": 1563810859.474,
             "lastUpdatedAt": 1563820257.411,
-            "uid": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "uid": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "version": 3
         },
         "spec": {

@@ -102,7 +102,7 @@ Output:
     "VocabularyState": "PENDING"
 }
 ```
-For more information, see [Medical Custom Vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/how-vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Improving transcription accuracy with medical custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [CreateMedicalVocabulary](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/create-medical-vocabulary.html) in *AWS CLI Command Reference*.
 
 ### `create-vocabulary-filter`
@@ -128,7 +128,7 @@ Output:
     "LanguageCode": "language-code"
 }
 ```
-For more information, see [Filtering Unwanted Words](https://docs.aws.amazon.com/transcribe/latest/dg/filter-unwanted-words.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [CreateVocabularyFilter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/create-vocabulary-filter.html) in *AWS CLI Command Reference*.
 
 ### `create-vocabulary`
@@ -206,7 +206,7 @@ aws transcribe delete-vocabulary \
     --vocabulary-name {{medical-custom-vocabulary-name}}
 ```
 This command produces no output.
-For more information, see [Medical Custom Vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/how-vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Improving transcription accuracy with medical custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [DeleteMedicalVocabulary](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/delete-medical-vocabulary.html) in *AWS CLI Command Reference*.
 
 ### `delete-transcription-job`
@@ -240,7 +240,7 @@ aws transcribe delete-vocabulary-filter \
     --{{vocabulary-filter-name}} vocabulary-filter-name
 ```
 This command produces no output.
-For more information, see [Filtering Unwanted Words](https://docs.aws.amazon.com/transcribe/latest/dg/filter-unwanted-words.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [DeleteVocabularyFilter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/delete-vocabulary-filter.html) in *AWS CLI Command Reference*.
 
 ### `delete-vocabulary`
@@ -338,7 +338,7 @@ Output:
     }
 }
 ```
-For more information, see [Batch Transcription](https://docs.aws.amazon.com/transcribe/latest/dg/batch-med-transcription.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Transcribing an audio file of a medical conversation](https://docs.aws.amazon.com/transcribe/latest/dg/batch-medical-conversation.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [GetMedicalTranscriptionJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/get-medical-transcription-job.html) in *AWS CLI Command Reference*.
 
 ### `get-medical-vocabulary`
@@ -348,7 +348,7 @@ The following code example shows how to use `get-medical-vocabulary`.
 
 **AWS CLI**
 **To get information about a medical custom vocabulary**
-The following `get-medical-vocabulary` example gets information on a medical custom vocabulary. You can use the VocabularyState parameter to see the processing state of the vocabulary. If it's READY, you can use it in the StartMedicalTranscriptionJob operation.:
+The following `get-medical-vocabulary` example gets information on a medical custom vocabulary. You can use the VocabularyState parameter to see the processing state of the vocabulary. If it's READY, you can use it in the StartMedicalTranscriptionJob operation.
 
 ```
 aws transcribe get-medical-vocabulary \
@@ -604,7 +604,7 @@ Output:
     ]
 }
 ```
-For more information, see https://docs.aws.amazon.com/transcribe/latest/dg/batch-med-transcription.html> in the *Amazon Transcribe Developer Guide*.
+For more information, see [Amazon Transcribe Medical](https://docs.aws.amazon.com/transcribe/latest/dg/transcribe-medical.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [ListMedicalTranscriptionJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/list-medical-transcription-jobs.html) in *AWS CLI Command Reference*.
 
 ### `list-medical-vocabularies`
@@ -639,7 +639,7 @@ Output:
     ]
 }
 ```
-For more information, see [Medical Custom Vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/how-vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Improving transcription accuracy with medical custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [ListMedicalVocabularies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/list-medical-vocabularies.html) in *AWS CLI Command Reference*.
 
 ### `list-transcription-jobs`
@@ -781,7 +781,7 @@ Output:
 
 ```
 {
-    "NextToken": "NextToken": [
+    "VocabularyFilters": [
         {
             "VocabularyFilterName": "testFilter",
             "LanguageCode": "language-code",
@@ -810,7 +810,7 @@ Output:
     ]
 }
 ```
-For more information, see [Filtering Unwanted Words](https://docs.aws.amazon.com/transcribe/latest/dg/filter-unwanted-words.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [ListVocabularyFilters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/list-vocabulary-filters.html) in *AWS CLI Command Reference*.
 
 ### `start-medical-transcription-job`
@@ -858,7 +858,7 @@ Output:
     }
 }
 ```
-For more information, see [Batch Transcription Overview](https://docs.aws.amazon.com/transcribe/latest/dg/batch-med-transcription.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Transcribing an audio file of a medical conversation](https://docs.aws.amazon.com/transcribe/latest/dg/batch-medical-conversation.html) in the *Amazon Transcribe Developer Guide*.
 **Example 2: To transcribe a clinician-patient dialogue stored as an audio file**
 The following `start-medical-transcription-job` example transcribes an audio file containing a clinician-patient dialogue. You specify the location of the transcription output in the OutputBucketName parameter.
 
@@ -898,7 +898,7 @@ Output:
     }
 }
 ```
-For more information, see [Batch Transcription Overview](https://docs.aws.amazon.com/transcribe/latest/dg/batch-med-transcription.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Transcribing an audio file of a medical conversation](https://docs.aws.amazon.com/transcribe/latest/dg/batch-medical-conversation.html) in the *Amazon Transcribe Developer Guide*.
 **Example 3: To transcribe a multichannel audio file of a clinician-patient dialogue**
 The following `start-medical-transcription-job` example transcribes the audio from each channel in the audio file and merges the separate transcriptions from each channel into a single transcription output. You specify the location of the transcription output in the `OutputBucketName` parameter.
 
@@ -915,12 +915,12 @@ Contents of `mythirdfile.json`:
     "Specialty": "PRIMARYCARE",
     "Type": "CONVERSATION",
     "OutputBucketName":"amzn-s3-demo-bucket",
-        "Media": {
-          "MediaFileUri": "s3://amzn-s3-demo-bucket/your-audio-file.extension"
-        },
-        "Settings":{
-          "ChannelIdentification": true
-        }
+    "Media": {
+        "MediaFileUri": "s3://amzn-s3-demo-bucket/your-audio-file.extension"
+    },
+    "Settings":{
+        "ChannelIdentification": true
+    }
 }
 ```
 Output:
@@ -944,7 +944,7 @@ Output:
     }
 }
 ```
-For more information, see [Channel Identification](https://docs.aws.amazon.com/transcribe/latest/dg/how-channel-id-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Transcribing multi-channel audio](https://docs.aws.amazon.com/transcribe/latest/dg/channel-id.html) in the *Amazon Transcribe Developer Guide*.
 **Example 4: To transcribe an audio file of a clinician-patient dialogue and identify the speakers in the transcription output**
 The following `start-medical-transcription-job` example transcribes an audio file and labels the speech of each speaker in the transcription output. You specify the location of the transcription output in the `OutputBucketName` parameter.
 
@@ -963,11 +963,11 @@ Contents of `myfourthfile.json`:
     "OutputBucketName":"amzn-s3-demo-bucket",
     "Media": {
         "MediaFileUri": "s3://amzn-s3-demo-bucket/your-audio-file.extension"
-        },
+    },
     "Settings":{
         "ShowSpeakerLabels": true,
         "MaxSpeakerLabels": 2
-        }
+    }
 }
 ```
 Output:
@@ -992,7 +992,7 @@ Output:
     }
 }
 ```
-For more information, see [Identifying Speakers](https://docs.aws.amazon.com/transcribe/latest/dg/diarization-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Enabling speaker partitioning](https://docs.aws.amazon.com/transcribe/latest/dg/conversation-diarization-med.html) in the *Amazon Transcribe Developer Guide*.
 **Example 5: To transcribe a medical conversation stored as an audio file with up to two transcription alternatives**
 The following `start-medical-transcription-job` example creates up to two alternative transcriptions from a single audio file. Every transcriptions has a level of confidence associated with it. By default, Amazon Transcribe returns the transcription with the highest confidence level. You can specify that Amazon Transcribe return additional transcriptions with lower confidence levels. You specify the location of the transcription output in the `OutputBucketName` parameter.
 
@@ -1040,7 +1040,7 @@ Output:
     }
 }
 ```
-For more information, see [Alternative Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/how-alternatives-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Alternative transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/alternatives.html) in the *Amazon Transcribe Developer Guide*.
 **Example 6: To transcribe an audio file of a medical dictation with up to two alternative transcriptions**
 The following `start-medical-transcription-job` example transcribes an audio file and uses a vocabulary filter to mask any unwanted words. You specify the location of the transcription output in the OutputBucketName parameter.
 
@@ -1061,8 +1061,8 @@ Contents of `mysixthfile.json`:
         "MediaFileUri": "s3://amzn-s3-demo-bucket/your-audio-file.extension"
     },
     "Settings":{
-          "ShowAlternatives": true,
-          "MaxAlternatives": 2
+        "ShowAlternatives": true,
+        "MaxAlternatives": 2
     }
 }
 ```
@@ -1088,15 +1088,15 @@ Output:
     }
 }
 ```
-For more information, see [Alternative Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/how-alternatives-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Alternative transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/alternatives.html) in the *Amazon Transcribe Developer Guide*.
 **Example 7: To transcribe an audio file of a medical dictation with increased accuracy by using a custom vocabulary**
 The following `start-medical-transcription-job` example transcribes an audio file and uses a medical custom vocabulary you've previously created to increase the transcription accuracy. You specify the location of the transcription output in the `OutputBucketName` parameter.
 
 ```
-aws transcribe start-transcription-job \
+aws transcribe start-medical-transcription-job \
     --cli-input-json {{file://myseventhfile.json}}
 ```
-Contents of `mysixthfile.json`:
+Contents of `myseventhfile.json`:
 
 ```
 {
@@ -1134,7 +1134,7 @@ Output:
     }
 }
 ```
-For more information, see [Medical Custom Vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/how-vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Improving transcription accuracy with medical custom vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-med.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [StartMedicalTranscriptionJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/start-medical-transcription-job.html) in *AWS CLI Command Reference*.
 
 ### `start-transcription-job`
@@ -1158,6 +1158,22 @@ Contents of `myfile.json`:
     "LanguageCode": "the-language-of-your-transcription-job",
     "Media": {
         "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
+    }
+}
+```
+Output:
+
+```
+{
+    "TranscriptionJob": {
+        "TranscriptionJobName": "cli-simple-transcription-job",
+        "TranscriptionJobStatus": "IN_PROGRESS",
+        "LanguageCode": "the-language-of-your-transcription-job",
+        "Media": {
+            "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
+        },
+        "StartTime": "2020-09-17T16:01:42.912000+00:00",
+        "CreationTime": "2020-09-17T16:01:42.886000+00:00"
     }
 }
 ```
@@ -1220,8 +1236,8 @@ Contents of `mythirdfile.json`:
         "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
     },
     "Settings":{
-    "ShowSpeakerLabels": true,
-    "MaxSpeakerLabels": 2
+        "ShowSpeakerLabels": true,
+        "MaxSpeakerLabels": 2
     }
 }
 ```
@@ -1260,7 +1276,7 @@ Contents of `myfourthfile.json`:
     "TranscriptionJobName": "cli-filter-mask-job",
     "LanguageCode": "the-language-of-your-transcription-job",
     "Media": {
-          "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
+        "MediaFileUri": "s3://amzn-s3-demo-bucket/Amazon-S3-prefix/your-media-file-name.file-extension"
     },
     "Settings":{
         "VocabularyFilterName": "your-vocabulary-filter",
@@ -1288,7 +1304,7 @@ Output:
     }
 }
 ```
-For more information, see [Filtering Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/filter-transcriptions.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 **Example 5: To transcribe an audio file and remove any unwanted words in the transcription output**
 The following `start-transcription-job` example transcribes your audio file and uses a vocabulary filter you've previously created to mask any unwanted words.
 
@@ -1331,7 +1347,7 @@ Output:
     }
 }
 ```
-For more information, see [Filtering Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/filter-transcriptions.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 **Example 6: To transcribe an audio file with increased accuracy using a custom vocabulary**
 The following `start-transcription-job` example transcribes your audio file and uses a vocabulary filter you've previously created to mask any unwanted words.
 
@@ -1372,7 +1388,7 @@ Output:
     }
 }
 ```
-For more information, see [Filtering Transcriptions](https://docs.aws.amazon.com/transcribe/latest/dg/filter-transcriptions.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 **Example 7: To identify the language of an audio file and transcribe it**
 The following `start-transcription-job` example transcribes your audio file and uses a vocabulary filter you've previously created to mask any unwanted words.
 
@@ -1415,7 +1431,7 @@ The following `start-transcription-job` example transcribes your audio file and 
 aws transcribe start-transcription-job \
     --cli-input-json {{file://myeighthfile.json}}
 ```
-Contents of `myeigthfile.json`:
+Contents of `myeighthfile.json`:
 
 ```
 {
@@ -1465,8 +1481,8 @@ Contents of `myninthfile.json`:
     "TranscriptionJobName": "cli-redaction-job-with-unredacted-transcript",
     "LanguageCode": "language-code",
     "Media": {
-          "MediaFileUri": "s3://Amazon-S3-Prefix/your-media-file.file-extension"
-        },
+        "MediaFileUri": "s3://Amazon-S3-Prefix/your-media-file.file-extension"
+    },
     "ContentRedaction": {
         "RedactionOutput":"redacted_and_unredacted",
         "RedactionType":"PII"
@@ -1587,7 +1603,7 @@ Output:
     "LastModifiedTime": "2020-09-23T18:40:35.139000+00:00"
 }
 ```
-For more information, see [Filtering Unwanted Words](https://docs.aws.amazon.com/transcribe/latest/dg/filter-unwanted-words.html) in the *Amazon Transcribe Developer Guide*.
+For more information, see [Using custom vocabulary filters to delete, mask, or flag words](https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filtering.html) in the *Amazon Transcribe Developer Guide*.
 +  For API details, see [UpdateVocabularyFilter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/update-vocabulary-filter.html) in *AWS CLI Command Reference*.
 
 ### `update-vocabulary`

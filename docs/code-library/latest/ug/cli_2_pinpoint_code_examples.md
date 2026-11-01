@@ -65,6 +65,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing Amazon Pinpoint projects](https://docs.aws.amazon.com/pinpoint/latest/userguide/projects-manage.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [CreateApp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/create-app.html) in *AWS CLI Command Reference*.
 
 ### `create-sms-template`
@@ -73,14 +74,13 @@ Output:
 The following code example shows how to use `create-sms-template`.
 
 **AWS CLI**
-**Creates a message template for messages that are sent through the SMS channel**
+**To create a message template for messages that are sent through the SMS channel**
 The following `create-sms-template` example creates a SMS message template.
 
 ```
 aws pinpoint create-sms-template \
     --template-name {{TestTemplate}} \
-    --sms-template-request {{file://myfile.json}} \
-    --region {{us-east-1}}
+    --sms-template-request {{file://myfile.json}}
 ```
 Contents of `myfile.json`:
 
@@ -95,9 +95,9 @@ Output:
 ```
 {
     "CreateTemplateMessageBody": {
-        "Arn": "arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:templates/TestTemplate/SMS",
+        "Arn": "arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:templates/TestTemplate/SMS",
         "Message": "Created",
-        "RequestID": "8c36b17f-a0b0-400f-ac21-29e9b62a975d"
+        "RequestID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -129,6 +129,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing Amazon Pinpoint projects](https://docs.aws.amazon.com/pinpoint/latest/userguide/projects-manage.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [DeleteApp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/delete-app.html) in *AWS CLI Command Reference*.
 
 ### `get-apns-channel`
@@ -142,8 +143,7 @@ The following `get-apns-channel` example retrieves information about the status 
 
 ```
 aws pinpoint get-apns-channel \
-    --application-id {{9ab1068eb0a6461c86cce7f27ce0efd7}} \
-    --region {{us-east-1}}
+    --application-id {{9ab1068eb0a6461c86cce7f27ce0efd7}}
 ```
 Output:
 
@@ -164,6 +164,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Pinpoint push notifications](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-push.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetApnsChannel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-apns-channel.html) in *AWS CLI Command Reference*.
 
 ### `get-app`
@@ -177,15 +178,14 @@ The following `get-app` example retrieves information about an application (proj
 
 ```
 aws pinpoint get-app \
-    --application-id {{810c7aab86d42fb2b56c8c966example}} \
-    --region {{us-east-1}}
+    --application-id {{810c7aab86d42fb2b56c8c966example}}
 ```
 Output:
 
 ```
 {
     "ApplicationResponse": {
-        "Arn": "arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:apps/810c7aab86d42fb2b56c8c966example",
+        "Arn": "arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:apps/810c7aab86d42fb2b56c8c966example",
         "Id": "810c7aab86d42fb2b56c8c966example",
         "Name": "ExampleCorp",
         "tags": {
@@ -195,6 +195,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing Amazon Pinpoint projects](https://docs.aws.amazon.com/pinpoint/latest/userguide/projects-manage.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetApp](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-app.html) in *AWS CLI Command Reference*.
 
 ### `get-apps`
@@ -245,6 +246,7 @@ Output:
 }
 ```
 The presence of the `NextToken` response value indicates that there is more output available. Call the command again and supply that value as the `NextToken` input parameter.
+For more information, see [Managing Amazon Pinpoint projects](https://docs.aws.amazon.com/pinpoint/latest/userguide/projects-manage.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetApps](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-apps.html) in *AWS CLI Command Reference*.
 
 ### `get-campaign`
@@ -259,8 +261,7 @@ The following `get-campaign` example retrieves information about the status, con
 ```
 aws pinpoint get-campaign \
     --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --campaign-id {{a1e63c6cc0eb43ed826ffcc3cc90b30d}} \
-    --region {{us-east-1}}
+    --campaign-id {{a1e63c6cc0eb43ed826ffcc3cc90b30d}}
 ```
 Output:
 
@@ -269,7 +270,7 @@ Output:
     "CampaignResponse": {
         "AdditionalTreatments": [],
         "ApplicationId": "6e0b7591a90841d2b5d93fa11143e5a7",
-        "Arn": "arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:apps/6e0b7591a90841d2b5d93fa11143e5a7/campaigns/a1e63c6cc0eb43ed826ffcc3cc90b30d",
+        "Arn": "arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:apps/6e0b7591a90841d2b5d93fa11143e5a7/campaigns/a1e63c6cc0eb43ed826ffcc3cc90b30d",
         "CreationDate": "2019-10-08T18:40:16.581Z",
         "Description": " ",
         "HoldoutPercent": 0,
@@ -306,6 +307,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Pinpoint campaigns](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetCampaign](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-campaign.html) in *AWS CLI Command Reference*.
 
 ### `get-campaigns`
@@ -319,8 +321,7 @@ The following `get-campaigns` example retrieves information about the status, co
 
 ```
 aws pinpoint get-campaigns \
-    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --region {{us-east-1}}
+    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}}
 ```
 Output:
 
@@ -331,7 +332,7 @@ Output:
             {
                 "AdditionalTreatments": [],
                 "ApplicationId": "6e0b7591a90841d2b5d93fa11143e5a7",
-                "Arn": "arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:apps/6e0b7591a90841d2b5d93fa11143e5a7/campaigns/7e1280344c8f4a9aa40a00b006fe44f1",
+                "Arn": "arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:apps/6e0b7591a90841d2b5d93fa11143e5a7/campaigns/7e1280344c8f4a9aa40a00b006fe44f1",
                 "CreationDate": "2019-10-08T18:40:22.905Z",
                 "Description": " ",
                 "HoldoutPercent": 0,
@@ -365,7 +366,7 @@ Output:
             {
                 "AdditionalTreatments": [],
                 "ApplicationId": "6e0b7591a90841d2b5d93fa11143e5a7",
-                "Arn": "arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:apps/6e0b7591a90841d2b5d93fa11143e5a7/campaigns/a1e63c6cc0eb43ed826ffcc3cc90b30d",
+                "Arn": "arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:apps/6e0b7591a90841d2b5d93fa11143e5a7/campaigns/a1e63c6cc0eb43ed826ffcc3cc90b30d",
                 "CreationDate": "2019-10-08T18:40:16.581Z",
                 "Description": " ",
                 "HoldoutPercent": 0,
@@ -404,6 +405,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Pinpoint campaigns](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetCampaigns](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-campaigns.html) in *AWS CLI Command Reference*.
 
 ### `get-channels`
@@ -417,8 +419,7 @@ The following `get-channels` example retrieves information about the history and
 
 ```
 aws pinpoint get-channels \
-    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --region {{us-east-1}}
+    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}}
 ```
 Output:
 
@@ -463,6 +464,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Pinpoint channels](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetChannels](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-channels.html) in *AWS CLI Command Reference*.
 
 ### `get-email-channel`
@@ -476,8 +478,7 @@ The following `get-email-channel` example retrieves status and settings of the E
 
 ```
 aws pinpoint get-email-channel \
-    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --region {{us-east-1}}
+    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}}
 ```
 Output:
 
@@ -489,7 +490,7 @@ Output:
         "Enabled": true,
         "FromAddress": "sender@example.com",
         "Id": "email",
-        "Identity": "arn:aws:ses:us-east-1:AIDACKCEVSQ6C2EXAMPLE:identity/sender@example.com",
+        "Identity": "arn:aws:ses:us-west-2:AIDACKCEVSQ6C2EXAMPLE:identity/sender@example.com",
         "IsArchived": false,
         "LastModifiedDate": "2019-10-08T18:27:23.990Z",
         "MessagesPerSecond": 1,
@@ -499,6 +500,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Pinpoint email channel](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-email.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetEmailChannel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-email-channel.html) in *AWS CLI Command Reference*.
 
 ### `get-endpoint`
@@ -513,8 +515,7 @@ The following `get-endpoint` example retrieves information about the settings an
 ```
 aws pinpoint get-endpoint \
     --application-id {{611e3e3cdd47474c9c1399a505665b91}} \
-    --endpoint-id {{testendpoint}} \
-    --region {{us-east-1}}
+    --endpoint-id {{testendpoint}}
 ```
 Output:
 
@@ -537,7 +538,7 @@ Output:
             "SmsDelivered": 1.0
         },
         "OptOut": "ALL",
-        "RequestId": "a204b1f2-7e26-48a7-9c80-b49a2143489d",
+        "RequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "User": {
             "UserAttributes": {
                 "Age": [
@@ -549,6 +550,7 @@ Output:
     }
 }
 ```
+For more information, see [Add endpoints to Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/audience-define-endpoints.html) in the *Amazon Pinpoint Developer Guide*.
 +  For API details, see [GetEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `get-gcm-channel`
@@ -562,8 +564,7 @@ The following `get-gcm-channel` example retrieves information about the status a
 
 ```
 aws pinpoint get-gcm-channel \
-    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --region {{us-east-1}}
+    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}}
 ```
 Output:
 
@@ -582,6 +583,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Pinpoint push notifications](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-push.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetGcmChannel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-gcm-channel.html) in *AWS CLI Command Reference*.
 
 ### `get-sms-channel`
@@ -595,8 +597,7 @@ The following `get-sms-channel` example retrieves status and settings of the sms
 
 ```
 aws pinpoint get-sms-channel \
-    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --region {{us-east-1}}
+    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}}
 ```
 Output:
 
@@ -616,6 +617,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing the Amazon Pinpoint SMS channel](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-sms-manage.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetSmsChannel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-sms-channel.html) in *AWS CLI Command Reference*.
 
 ### `get-sms-template`
@@ -624,20 +626,19 @@ Output:
 The following code example shows how to use `get-sms-template`.
 
 **AWS CLI**
-**Retrieves the content and settings of a message template for messages that are sent through the SMS channel**
+**To retrieve the content and settings of a message template for messages that are sent through the SMS channel**
 The following `get-sms-template` example retrieves the content and settings of a SMS message template.
 
 ```
 aws pinpoint get-sms-template \
-    --template-name {{TestTemplate}} \
-    --region {{us-east-1}}
+    --template-name {{TestTemplate}}
 ```
 Output:
 
 ```
 {
     "SMSTemplateResponse": {
-        "Arn": "arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:templates/TestTemplate/SMS",
+        "Arn": "arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:templates/TestTemplate/SMS",
         "Body": "hello\n how are you?\n food is good",
         "CreationDate": "2023-06-20T21:37:30.124Z",
         "LastModifiedDate": "2023-06-20T21:37:30.124Z",
@@ -663,8 +664,7 @@ The following `get-voice-channel` example retrieves status and settings of the v
 
 ```
 aws pinpoint get-voice-channel \
-    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}} \
-    --region {{us-east-1}}
+    --application-id {{6e0b7591a90841d2b5d93fa11143e5a7}}
 ```
 Output:
 
@@ -682,6 +682,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing the Amazon Pinpoint voice channel](https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-voice-manage.html) in the *Amazon Pinpoint User Guide*.
 +  For API details, see [GetVoiceChannel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/get-voice-channel.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -709,7 +710,7 @@ Output:
     }
 }
 ```
-For more information, see 'Tagging Amazon Pinpoint Resources <https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html>'\_\_ in the *Amazon Pinpoint Developer Guide*.
+For more information, see [Manage Amazon Pinpoint resource tags](https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html) in the *Amazon Pinpoint Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `phone-number-validate`
@@ -718,13 +719,12 @@ For more information, see 'Tagging Amazon Pinpoint Resources <https://docs.aws.a
 The following code example shows how to use `phone-number-validate`.
 
 **AWS CLI**
-**Retrieves information about a phone number**
-The following `phone-number-validate` retrieves information about a phone number.
+**To retrieve information about a phone number**
+The following `phone-number-validate` example retrieves information about a phone number.
 
 ```
 aws pinpoint phone-number-validate \
-    --number-validate-request PhoneNumber="+12065550142" \
-    --region {{us-east-1}}
+    --number-validate-request PhoneNumber="+12065550142"
 ```
 Output:
 
@@ -761,8 +761,7 @@ The following `send-messages` example sends a direct message for an application 
 ```
 aws pinpoint send-messages \
     --application-id {{611e3e3cdd47474c9c1399a505665b91}} \
-    --message-request {{file://myfile.json}} \
-    --region {{us-west-2}}
+    --message-request {{file://myfile.json}}
 ```
 Contents of `myfile.json`:
 
@@ -793,7 +792,7 @@ Output:
                 "StatusMessage": "MessageId: itnuqhai5alf1n6ahv3udc05n7hhddr6gb3lq6g0"
             }
         },
-        "RequestId": "c7e23264-04b2-4a46-b800-d24923f74753"
+        "RequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -812,8 +811,7 @@ The following `send-users-messages` example sends a direct message for an user o
 ```
 aws pinpoint send-users-messages \
     --application-id {{611e3e3cdd47474c9c1399a505665b91}} \
-    --send-users-message-request {{file://myfile.json}} \
-    --region {{us-west-2}}
+    --send-users-message-request {{file://myfile.json}}
 ```
 Contents of `myfile.json`:
 
@@ -835,7 +833,7 @@ Output:
 {
     "SendUsersMessageResponse": {
         "ApplicationId": "611e3e3cdd47474c9c1399a505665b91",
-        "RequestId": "e0b12cf5-2359-11e9-bb0b-d5fb91876b25",
+        "RequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Result": {
             "testuser": {
                 "testuserendpoint": {
@@ -860,15 +858,15 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To add tags to a resource**
-The following example adds two tags (key names and values) to a resource.
+The following `tag-resource` example adds two tags (key names and values) to a resource.
 
 ```
-aws pinpoint list-tags-for-resource \
-    --resource-arn {{arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:apps/810c7aab86d42fb2b56c8c966example}} \
+aws pinpoint tag-resource \
+    --resource-arn {{arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:apps/810c7aab86d42fb2b56c8c966example}} \
     --tags-model {{tags={Stack=Production,Year=2019}}}
 ```
 This command produces no output.
-For more information, see 'Tagging Amazon Pinpoint Resources <https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html>'\_\_ in the *Amazon Pinpoint Developer Guide*.
+For more information, see [Manage Amazon Pinpoint resource tags](https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html) in the *Amazon Pinpoint Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -886,16 +884,17 @@ aws pinpoint untag-resource \
     --tag-keys {{Year}}
 ```
 This command produces no output.
+For more information, see [Manage Amazon Pinpoint resource tags](https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html) in the *Amazon Pinpoint Developer Guide*.
 **Example 2: To remove multiple tags from a resource**
 The following `untag-resource` example removes the specified tags (key names and values) from a resource.
 
 ```
 aws pinpoint untag-resource \
-    --resource-arn {{arn:aws:mobiletargeting:us-east-1:AIDACKCEVSQ6C2EXAMPLE:apps/810c7aab86d42fb2b56c8c966example}} \
+    --resource-arn {{arn:aws:mobiletargeting:us-west-2:AIDACKCEVSQ6C2EXAMPLE:apps/810c7aab86d42fb2b56c8c966example}} \
     --tag-keys {{Year}} {{Stack}}
 ```
 This command produces no output.
-For more information, see 'Tagging Amazon Pinpoint Resources <https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html>'\_\_ in the *Amazon Pinpoint Developer Guide*.
+For more information, see [Manage Amazon Pinpoint resource tags](https://docs.aws.amazon.com/pinpoint/latest/developerguide/tagging-resources.html) in the *Amazon Pinpoint Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pinpoint/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-sms-channel`
@@ -910,8 +909,7 @@ The following `update-sms-channel` example enables SMS channel for an SMS channe
 ```
 aws pinpoint update-sms-channel \
     --application-id {{611e3e3cdd47474c9c1399a505665b91}} \
-    --sms-channel-request {{Enabled=true}} \
-    --region {{us-west-2}}
+    --sms-channel-request {{Enabled=true}}
 ```
 Output:
 

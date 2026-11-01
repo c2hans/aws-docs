@@ -30,14 +30,14 @@ The following `create-backup-plan` example creates the specified backup plan wit
 
 ```
 aws backup create-backup-plan \
---backup-plan "{\"BackupPlanName\":\"Example-Backup-Plan\",\"Rules\":[{\"RuleName\":\"DailyBackups\",\"ScheduleExpression\":\"cron(0 5 ? * * *)\",\"StartWindowMinutes\":480,\"TargetBackupVaultName\":\"Default\",\"Lifecycle\":{\"DeleteAfterDays\":35}}]}"
+    --backup-plan "{\"BackupPlanName\":\"Example-Backup-Plan\",\"Rules\":[{\"RuleName\":\"DailyBackups\",\"ScheduleExpression\":\"cron(0 5 ? * * *)\",\"StartWindowMinutes\":480,\"TargetBackupVaultName\":\"Default\",\"Lifecycle\":{\"DeleteAfterDays\":35}}]}"
 ```
 Output:
 
 ```
 {
-    "BackupPlanId": "1fa3895c-a7f5-484a-a371-2dd6a1a9f729",
-    "BackupPlanArn": "arn:aws:backup:us-west-2:123456789012:backup-plan:1fa3895c-a7f5-484a-a371-2dd6a1a9f729",
+    "BackupPlanId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "BackupPlanArn": "arn:aws:backup:us-west-2:123456789012:backup-plan:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationDate": 1568928754.747,
     "VersionId": "ZjQ2ZTI5YWQtZDg5Yi00MzYzLWJmZTAtMDI1MzhlMDhjYjEz"
 }
@@ -55,7 +55,7 @@ The following code example shows how to use `create-backup-vault`.
 The following `create-backup-vault` example creates a backup vault with the specified name.
 
 ```
-aws backup create-backup-vault
+aws backup create-backup-vault \
     --backup-vault-name {{sample-vault}}
 ```
 This command produces no output. Output:
@@ -67,7 +67,7 @@ This command produces no output. Output:
     "CreationDate": 1568928338.385
 }
 ```
-For more information, see [Creating a Backup Vault](https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-vault.html) in the *AWS Backup Developer Guide*.
+For more information, see [Backup vault creation and deletion](https://docs.aws.amazon.com/aws-backup/latest/devguide/create-a-vault.html) in the *AWS Backup Developer Guide*.
 +  For API details, see [CreateBackupVault](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/create-backup-vault.html) in *AWS CLI Command Reference*.
 
 ### `get-backup-plan-from-template`
@@ -81,7 +81,7 @@ The following `get-backup-plan-from-template` example gets an existing backup pl
 
 ```
 aws backup get-backup-plan-from-template \
-    --backup-plan-template-id {{"87c0c1ef-254d-4180-8fef-2e76a2c38aaa"}}
+    --backup-plan-template-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -115,7 +115,7 @@ The following `get-backup-plan` example displays the details of the specified ba
 
 ```
 aws backup get-backup-plan \
-    --backup-plan-id {{"fcbf5d8f-bd77-4f3a-9c97-f24fb3d373a5"}}
+    --backup-plan-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -133,12 +133,12 @@ Output:
                 "Lifecycle": {
                     "DeleteAfterDays": 35
                 },
-                "RuleId": "70e0ccdc-e9df-4e83-82ad-c1e5a9471cc3"
+                "RuleId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             }
         ]
     },
-    "BackupPlanId": "fcbf5d8f-bd77-4f3a-9c97-f24fb3d373a5",
-    "BackupPlanArn": "arn:aws:backup:us-west-2:123456789012:backup-plan:fcbf5d8f-bd77-4f3a-9c97-f24fb3d373a5",
+    "BackupPlanId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "BackupPlanArn": "arn:aws:backup:us-west-2:123456789012:backup-plan:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "VersionId": "NjQ2ZTZkODktMGVhNy00MmQ0LWE4YjktZTkwNTQ3OTkyYTcw",
     "CreationDate": 1568926091.57
 }
@@ -193,7 +193,7 @@ Output:
     ]
 }
 ```
-For more information, see [Creating a Backup](https://https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-backup.html) in the *AWS Backup Developer Guide*.
+For more information, see [Monitoring AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/monitoring.html) in the *AWS Backup Developer Guide*.
 **Example 2: To list completed backup jobs**
 The following `list-backup-jobs` example returns metadata about your completed backup jobs in your AWS account.
 
@@ -224,5 +224,5 @@ Output:
     ]
 }
 ```
-For more information, see [Creating a Backup](https://https://docs.aws.amazon.com/aws-backup/latest/devguide/creating-a-backup.html) in the *AWS Backup Developer Guide*.
+For more information, see [Monitoring AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/monitoring.html) in the *AWS Backup Developer Guide*.
 +  For API details, see [ListBackupJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/backup/list-backup-jobs.html) in *AWS CLI Command Reference*.

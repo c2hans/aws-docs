@@ -22,7 +22,7 @@ aws medical-imaging update-image-set-metadata \
     --cli-binary-format {{raw-in-base64-out}} \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -55,7 +55,7 @@ aws medical-imaging update-image-set-metadata \
     --cli-binary-format {{raw-in-base64-out}} \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -89,7 +89,7 @@ aws medical-imaging update-image-set-metadata \
     --update-image-set-metadata-updates {{file://metadata-updates.json}} \
     --force
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -147,7 +147,7 @@ aws medical-imaging update-image-set-metadata \
     --force \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -181,7 +181,7 @@ aws medical-imaging update-image-set-metadata \
     --force \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -208,14 +208,14 @@ The following `update-image-set-metadata` example shows how to update a SOPInsta
 
 ```
 aws medical-imaging update-image-set-metadata \
-        --datastore-id {{12345678901234567890123456789012}} \
-        --image-set-id {{53d5fdb05ca4d46ac7ca64b06545c66e}} \
-        --latest-version-id {{1}} \
-        --cli-binary-format {{raw-in-base64-out}} \
-        --force \
-        --update-image-set-metadata-updates {{file://metadata-updates.json}}
+    --datastore-id {{12345678901234567890123456789012}} \
+    --image-set-id {{53d5fdb05ca4d46ac7ca64b06545c66e}} \
+    --latest-version-id {{1}} \
+    --cli-binary-format {{raw-in-base64-out}} \
+    --force \
+    --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {

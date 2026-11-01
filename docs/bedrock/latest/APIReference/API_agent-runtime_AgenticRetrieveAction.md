@@ -10,6 +10,11 @@ An action taken during agentic retrieval.
 ## Contents
 <a name="API_agent-runtime_AgenticRetrieveAction_Contents"></a>
 
+ ** codeExecution **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveAction-codeExecution"></a>
+The details of code that the agent chose to run.
+Type: [AgenticRetrieveCodeExecutionDetails](API_agent-runtime_AgenticRetrieveCodeExecutionDetails.md) object
+Required: No
+
  ** fullDocumentExpansion **   <a name="bedrock-Type-agent-runtime_AgenticRetrieveAction-fullDocumentExpansion"></a>
 Details of a full document expansion action.
 Type: [AgenticRetrieveFullDocExpansionDetails](API_agent-runtime_AgenticRetrieveFullDocExpansionDetails.md) object

@@ -14,10 +14,12 @@ The following code examples show how to use `UpdateApplication`.
 
 **AWS CLI**
 **To change an application's description**
-The following command updates the description of an application named `my-app`:
+The following `update-application` example updates the description of an application named `my-app`.
 
 ```
-aws elasticbeanstalk update-application --application-name {{my-app}} --description {{"my Elastic Beanstalk application"}}
+aws elasticbeanstalk update-application \
+    --application-name {{my-app}} \
+    --description {{"my Elastic Beanstalk application"}}
 ```
 Output:
 
@@ -39,6 +41,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing Elastic Beanstalk applications](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications.html) in the *AWS Elastic Beanstalk Developer Guide*.
 +  For API details, see [UpdateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticbeanstalk/update-application.html) in *AWS CLI Command Reference*.
 
 ------

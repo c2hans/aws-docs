@@ -26,28 +26,31 @@ The following code example shows how to use `create-identity-pool`.
 
 **AWS CLI**
 **To create an identity pool with Cognito identity pool provider**
-This example creates an identity pool named MyIdentityPool. It has a Cognito identity pool provider. Unauthenticated identities are not allowed.
-Command:
+The following `create-identity-pool` example creates an identity pool named MyIdentityPool. It has a Cognito identity pool provider. Unauthenticated identities are not allowed.
 
 ```
-aws cognito-identity create-identity-pool --identity-pool-name {{MyIdentityPool}} --no-allow-unauthenticated-identities --cognito-identity-providers ProviderName="cognito-idp.us-west-2.amazonaws.com/us-west-2_aaaaaaaaa",ClientId="3n4b5urk1ft4fl3mg5e62d9ado",ServerSideTokenCheck=false
+aws cognito-identity create-identity-pool \
+    --identity-pool-name {{MyIdentityPool}} \
+    --no-allow-unauthenticated-identities \
+    --cognito-identity-providers ProviderName="cognito-idp.us-west-2.amazonaws.com/us-west-2_aaaaaaaaa",ClientId="3n4b5urk1ft4fl3mg5e62d9ado",ServerSideTokenCheck=false
 ```
 Output:
 
 ```
 {
-  "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-  "IdentityPoolName": "MyIdentityPool",
-  "AllowUnauthenticatedIdentities": false,
-  "CognitoIdentityProviders": [
-      {
-          "ProviderName": "cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",
-          "ClientId": "3n4b5urk1ft4fl3mg5e62d9ado",
-          "ServerSideTokenCheck": false
-      }
-  ]
+    "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "IdentityPoolName": "MyIdentityPool",
+    "AllowUnauthenticatedIdentities": false,
+    "CognitoIdentityProviders": [
+        {
+            "ProviderName": "cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",
+            "ClientId": "3n4b5urk1ft4fl3mg5e62d9ado",
+            "ServerSideTokenCheck": false
+        }
+    ]
 }
 ```
+For more information, see [Getting started with Amazon Cognito identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/getting-started-with-identity-pools.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [CreateIdentityPool](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/create-identity-pool.html) in *AWS CLI Command Reference*.
 
 ### `delete-identities`
@@ -57,19 +60,20 @@ The following code example shows how to use `delete-identities`.
 
 **AWS CLI**
 **To delete identity pool**
-This example deletes an identity pool.
-Command:
+The following `delete-identities` example deletes the specified identity.
 
 ```
-aws cognito-identity delete-identities --identity-ids-to-delete {{"us-west-2:11111111-1111-1111-1111-111111111111"}}
+aws cognito-identity delete-identities \
+    --identity-ids-to-delete {{"us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-  "UnprocessedIdentityIds": []
+    "UnprocessedIdentityIds": []
 }
 ```
+For more information, see [Amazon Cognito identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [DeleteIdentities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/delete-identities.html) in *AWS CLI Command Reference*.
 
 ### `delete-identity-pool`
@@ -80,13 +84,13 @@ The following code example shows how to use `delete-identity-pool`.
 **AWS CLI**
 **To delete identity pool**
 The following `delete-identity-pool` example deletes the specified identity pool.
-Command:
 
 ```
 aws cognito-identity delete-identity-pool \
-    --identity-pool-id {{"us-west-2:11111111-1111-1111-1111-111111111111"}}
+    --identity-pool-id {{"us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Amazon Cognito identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [DeleteIdentityPool](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/delete-identity-pool.html) in *AWS CLI Command Reference*.
 
 ### `describe-identity-pool`
@@ -96,28 +100,29 @@ The following code example shows how to use `describe-identity-pool`.
 
 **AWS CLI**
 **To describe an identity pool**
-This example describes an identity pool.
-Command:
+The following `describe-identity-pool` example describes the specified identity pool.
 
 ```
-aws cognito-identity describe-identity-pool --identity-pool-id {{"us-west-2:11111111-1111-1111-1111-111111111111"}}
+aws cognito-identity describe-identity-pool \
+    --identity-pool-id {{"us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-  "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-  "IdentityPoolName": "MyIdentityPool",
-  "AllowUnauthenticatedIdentities": false,
-  "CognitoIdentityProviders": [
-      {
-          "ProviderName": "cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",
-          "ClientId": "3n4b5urk1ft4fl3mg5e62d9ado",
-          "ServerSideTokenCheck": false
-      }
-  ]
+    "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "IdentityPoolName": "MyIdentityPool",
+    "AllowUnauthenticatedIdentities": false,
+    "CognitoIdentityProviders": [
+        {
+            "ProviderName": "cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",
+            "ClientId": "3n4b5urk1ft4fl3mg5e62d9ado",
+            "ServerSideTokenCheck": false
+        }
+    ]
 }
 ```
+For more information, see [Amazon Cognito identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [DescribeIdentityPool](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/describe-identity-pool.html) in *AWS CLI Command Reference*.
 
 ### `get-identity-pool-roles`
@@ -127,23 +132,24 @@ The following code example shows how to use `get-identity-pool-roles`.
 
 **AWS CLI**
 **To get identity pool roles**
-This example gets identity pool roles.
-Command:
+The following `get-identity-pool-roles` example gets the roles for the specified identity pool.
 
 ```
-aws cognito-identity get-identity-pool-roles --identity-pool-id {{"us-west-2:11111111-1111-1111-1111-111111111111"}}
+aws cognito-identity get-identity-pool-roles \
+    --identity-pool-id {{"us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-  "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-  "Roles": {
-      "authenticated": "arn:aws:iam::111111111111:role/Cognito_MyIdentityPoolAuth_Role",
-      "unauthenticated": "arn:aws:iam::111111111111:role/Cognito_MyIdentityPoolUnauth_Role"
-  }
+    "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Roles": {
+        "authenticated": "arn:aws:iam::123456789012:role/Cognito_MyIdentityPoolAuth_Role",
+        "unauthenticated": "arn:aws:iam::123456789012:role/Cognito_MyIdentityPoolUnauth_Role"
+    }
 }
 ```
+For more information, see [IAM roles](https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [GetIdentityPoolRoles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/get-identity-pool-roles.html) in *AWS CLI Command Reference*.
 
 ### `list-identity-pools`
@@ -153,32 +159,33 @@ The following code example shows how to use `list-identity-pools`.
 
 **AWS CLI**
 **To list identity pools**
-This example lists identity pools. There s a maximum of 20 identities listed.
-Command:
+The following `list-identity-pools` example lists identity pools. A maximum of 20 identity pools are listed.
 
 ```
-aws cognito-identity list-identity-pools --max-results {{20}}
+aws cognito-identity list-identity-pools \
+    --max-results {{20}}
 ```
 Output:
 
 ```
 {
-  "IdentityPools": [
-      {
-          "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-          "IdentityPoolName": "MyIdentityPool"
-      },
-      {
-          "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-          "IdentityPoolName": "AnotherIdentityPool"
-      },
-      {
-          "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-          "IdentityPoolName": "IdentityPoolRegionA"
-      }
-  ]
+    "IdentityPools": [
+        {
+            "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "IdentityPoolName": "MyIdentityPool"
+        },
+        {
+            "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "IdentityPoolName": "AnotherIdentityPool"
+        },
+        {
+            "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "IdentityPoolName": "IdentityPoolRegionA"
+        }
+    ]
 }
 ```
+For more information, see [Amazon Cognito identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [ListIdentityPools](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/list-identity-pools.html) in *AWS CLI Command Reference*.
 
 ### `set-identity-pool-roles`
@@ -192,9 +199,11 @@ The following `set-identity-pool-roles` example sets an identity pool role.
 
 ```
 aws cognito-identity set-identity-pool-roles \
-    --identity-pool-id {{"us-west-2:11111111-1111-1111-1111-111111111111"}} \
-    --roles authenticated="arn:aws:iam::111111111111:role/Cognito_MyIdentityPoolAuth_Role"
+    --identity-pool-id {{"us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --roles authenticated="arn:aws:iam::123456789012:role/Cognito_MyIdentityPoolAuth_Role"
 ```
+This command produces no output.
+For more information, see [IAM roles](https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [SetIdentityPoolRoles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/set-identity-pool-roles.html) in *AWS CLI Command Reference*.
 
 ### `update-identity-pool`
@@ -204,26 +213,30 @@ The following code example shows how to use `update-identity-pool`.
 
 **AWS CLI**
 **To update an identity pool**
-This example updates an identity pool. It sets the name to MyIdentityPool. It adds Cognito as an identity provider. It disallows unauthenticated identities.
-Command:
+The following `update-identity-pool` example updates an identity pool. It sets the name to MyIdentityPool. It adds Cognito as an identity provider. It disallows unauthenticated identities.
 
 ```
-aws cognito-identity update-identity-pool --identity-pool-id {{"us-west-2:11111111-1111-1111-1111-111111111111"}} --identity-pool-name {{"MyIdentityPool"}} --no-allow-unauthenticated-identities --cognito-identity-providers ProviderName="cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",ClientId="3n4b5urk1ft4fl3mg5e62d9ado",ServerSideTokenCheck=false
+aws cognito-identity update-identity-pool \
+    --identity-pool-id {{"us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --identity-pool-name {{"MyIdentityPool"}} \
+    --no-allow-unauthenticated-identities \
+    --cognito-identity-providers ProviderName="cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",ClientId="3n4b5urk1ft4fl3mg5e62d9ado",ServerSideTokenCheck=false
 ```
 Output:
 
 ```
 {
-  "IdentityPoolId": "us-west-2:11111111-1111-1111-1111-111111111111",
-  "IdentityPoolName": "MyIdentityPool",
-  "AllowUnauthenticatedIdentities": false,
-  "CognitoIdentityProviders": [
-      {
-          "ProviderName": "cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",
-          "ClientId": "3n4b5urk1ft4fl3mg5e62d9ado",
-          "ServerSideTokenCheck": false
-      }
-  ]
+    "IdentityPoolId": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "IdentityPoolName": "MyIdentityPool",
+    "AllowUnauthenticatedIdentities": false,
+    "CognitoIdentityProviders": [
+        {
+            "ProviderName": "cognito-idp.us-west-2.amazonaws.com/us-west-2_111111111",
+            "ClientId": "3n4b5urk1ft4fl3mg5e62d9ado",
+            "ServerSideTokenCheck": false
+        }
+    ]
 }
 ```
+For more information, see [Amazon Cognito identity pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) in the *Amazon Cognito Developer Guide*.
 +  For API details, see [UpdateIdentityPool](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cognito-identity/update-identity-pool.html) in *AWS CLI Command Reference*.

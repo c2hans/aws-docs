@@ -53,6 +53,7 @@ The following table describes the resource allocation limits for AgentCore Runti
 | Maximum size for a direct code deployment package (compressed) | 250 MB | No | ZIP file size limit for direct code deployment |
 | Maximum size for a direct code deployment package (uncompressed) | 750 MB | No | Unzipped package size limit for direct code deployment |
 | Maximum hardware allocation per session | 2vCPU/8GB | No | The maximum memory/CPU usage and allocation per Runtime session |
+| Maximum total size of environment variables per agent | 4 KB | No | Applies to agents on platform versions V1 and V2, for both container and direct code deployments |
 | Capacity providers per account | 1,000 | No | Applies to the Instances compute type in your account. Counts all capacity providers that you have not deleted, including those being created or deleted. |
 | Agents per capacity provider session | 20 | No | Applies to the Instances compute type. The maximum number of agents that you can run on a single capacity provider session. |
 

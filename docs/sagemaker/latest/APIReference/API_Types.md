@@ -7,6 +7,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Types.
 
 The following data types are supported by Amazon SageMaker Service:
 +  [AcceleratorPartitionConfig](API_AcceleratorPartitionConfig.md)
++  [AcceleratorPartitionLayout](API_AcceleratorPartitionLayout.md)
 +  [ActionSource](API_ActionSource.md)
 +  [ActionSummary](API_ActionSummary.md)
 +  [AddClusterNodeSpecification](API_AddClusterNodeSpecification.md)

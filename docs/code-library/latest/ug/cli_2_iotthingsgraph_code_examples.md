@@ -34,7 +34,6 @@ aws iotthingsgraph associate-entity-to-thing \
     --entity-id {{"urn:tdm:aws/examples:Device:HCSR501MotionSensor"}}
 ```
 This command produces no output.
-For more information, see [Creating and Uploading Models](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-models-gs.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [AssociateEntityToThing](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/associate-entity-to-thing.html) in *AWS CLI Command Reference*.
 
 ### `create-flow-template`
@@ -61,7 +60,6 @@ Output:
     }
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [CreateFlowTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/create-flow-template.html) in *AWS CLI Command Reference*.
 
 ### `create-system-instance`
@@ -93,7 +91,6 @@ Output:
     }
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [CreateSystemInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/create-system-instance.html) in *AWS CLI Command Reference*.
 
 ### `create-system-template`
@@ -121,7 +118,6 @@ Output:
     }
 }
 ```
-For more information, see [Creating Systems](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy-systems.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [CreateSystemTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/create-system-template.html) in *AWS CLI Command Reference*.
 
 ### `delete-flow-template`
@@ -138,7 +134,6 @@ aws iotthingsgraph delete-flow-template \
     --id {{"urn:tdm:us-west-2/123456789012/default:Workflow:MyFlow"}}
 ```
 This command produces no output.
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeleteFlowTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/delete-flow-template.html) in *AWS CLI Command Reference*.
 
 ### `delete-namespace`
@@ -157,11 +152,10 @@ Output:
 
 ```
 {
-   "namespaceArn": "arn:aws:iotthingsgraph:us-west-2:123456789012",
-   "namespaceName": "us-west-2/123456789012/default"
+    "namespaceArn": "arn:aws:iotthingsgraph:us-west-2:123456789012",
+    "namespaceName": "us-west-2/123456789012/default"
 }
 ```
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeleteNamespace](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/delete-namespace.html) in *AWS CLI Command Reference*.
 
 ### `delete-system-instance`
@@ -178,7 +172,6 @@ aws iotthingsgraph delete-system-instance \
     --id {{"urn:tdm:us-west-2/123456789012/default:Deployment:Room218"}}
 ```
 This command produces no output.
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeleteSystemInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/delete-system-instance.html) in *AWS CLI Command Reference*.
 
 ### `delete-system-template`
@@ -195,7 +188,6 @@ aws iotthingsgraph delete-system-template \
     --id {{"urn:tdm:us-west-2/123456789012/default:System:MySystem"}}
 ```
 This command produces no output.
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeleteSystemTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/delete-system-template.html) in *AWS CLI Command Reference*.
 
 ### `deploy-system-instance`
@@ -205,7 +197,7 @@ The following code example shows how to use `deploy-system-instance`.
 
 **AWS CLI**
 **To deploy a system instance**
-The following `delete-system-template` example deploys a system instance.
+The following `deploy-system-instance` example deploys a system instance.
 
 ```
 aws iotthingsgraph deploy-system-instance \
@@ -215,17 +207,16 @@ Output:
 
 ```
 {
-   "summary": {
-      "arn": "arn:aws:iotthingsgraph:us-west-2:123456789012:Deployment:Room218",
-      "createdAt": 1559249776.254,
-      "id": "urn:tdm:us-west-2/123456789012/default:Deployment:Room218",
-      "status": "DEPLOYED_IN_TARGET",
-      "target": "CLOUD",
-      "updatedAt": 1559249776.254
-   }
+    "summary": {
+        "arn": "arn:aws:iotthingsgraph:us-west-2:123456789012:Deployment:Room218",
+        "createdAt": 1559249776.254,
+        "id": "urn:tdm:us-west-2/123456789012/default:Deployment:Room218",
+        "status": "DEPLOYED_IN_TARGET",
+        "target": "CLOUD",
+        "updatedAt": 1559249776.254
+    }
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeploySystemInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/deploy-system-instance.html) in *AWS CLI Command Reference*.
 
 ### `deprecate-flow-template`
@@ -242,7 +233,6 @@ aws iotthingsgraph deprecate-flow-template \
     --id {{"urn:tdm:us-west-2/123456789012/default:Workflow:MyFlow"}}
 ```
 This command produces no output.
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeprecateFlowTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/deprecate-flow-template.html) in *AWS CLI Command Reference*.
 
 ### `deprecate-system-template`
@@ -259,7 +249,6 @@ aws iotthingsgraph deprecate-system-template \
     --id {{"urn:tdm:us-west-2/123456789012/default:System:MySystem"}}
 ```
 This command produces no output.
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DeprecateSystemTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/deprecate-system-template.html) in *AWS CLI Command Reference*.
 
 ### `describe-namespace`
@@ -284,7 +273,6 @@ Output:
     "namespaceVersion": 5
 }
 ```
-For more information, see [Namespaces](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-whatis-namespace.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DescribeNamespace](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/describe-namespace.html) in *AWS CLI Command Reference*.
 
 ### `dissociate-entity-from-thing`
@@ -302,7 +290,6 @@ aws iotthingsgraph dissociate-entity-from-thing \
     --entity-type {{"DEVICE"}}
 ```
 This command produces no output.
-For more information, see [Creating and Uploading Models](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-models-gs.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [DissociateEntityFromThing](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/dissociate-entity-from-thing.html) in *AWS CLI Command Reference*.
 
 ### `get-entities`
@@ -335,7 +322,6 @@ Output:
     ]
 }
 ```
-For more information, see [Creating and Uploading Models](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-models-gs.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetEntities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-entities.html) in *AWS CLI Command Reference*.
 
 ### `get-flow-template-revisions`
@@ -364,7 +350,6 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetFlowTemplateRevisions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-flow-template-revisions.html) in *AWS CLI Command Reference*.
 
 ### `get-flow-template`
@@ -398,7 +383,6 @@ Output:
     }
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetFlowTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-flow-template.html) in *AWS CLI Command Reference*.
 
 ### `get-namespace-deletion-status`
@@ -417,12 +401,11 @@ Output:
 
 ```
 {
-   "namespaceArn": "arn:aws:iotthingsgraph:us-west-2:123456789012",
-   "namespaceName": "us-west-2/123456789012/default"
-   "status": "SUCCEEDED "
+    "namespaceArn": "arn:aws:iotthingsgraph:us-west-2:123456789012",
+    "namespaceName": "us-west-2/123456789012/default",
+    "status": "SUCCEEDED"
 }
 ```
-For more information, see [Namespaces](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-whatis-namespace.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetNamespaceDeletionStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-namespace-deletion-status.html) in *AWS CLI Command Reference*.
 
 ### `get-system-instance`
@@ -463,7 +446,6 @@ Output:
     }
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetSystemInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-system-instance.html) in *AWS CLI Command Reference*.
 
 ### `get-system-template-revisions`
@@ -493,7 +475,6 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetSystemTemplateRevisions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-system-template-revisions.html) in *AWS CLI Command Reference*.
 
 ### `get-system-template`
@@ -528,7 +509,6 @@ Output:
     }
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetSystemTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-system-template.html) in *AWS CLI Command Reference*.
 
 ### `get-upload-status`
@@ -550,11 +530,10 @@ Output:
 {
     "namespaceName": "us-west-2/123456789012/default",
     "namespaceVersion": 5,
-    "uploadId": "f6294f1e-b109-4bbe-9073-f451a2dda2da",
+    "uploadId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "uploadStatus": "SUCCEEDED"
 }
 ```
-For more information, see [Modeling Entities](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-modelmanagement.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [GetUploadStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/get-upload-status.html) in *AWS CLI Command Reference*.
 
 ### `list-flow-execution-messages`
@@ -576,15 +555,14 @@ Output:
 {
     "messages": [
         {
-         "eventType": "EXECUTION_STARTED",
-         "messageId": "f6294f1e-b109-4bbe-9073-f451a2dda2da",
-         "payload": "Flow execution started",
-         "timestamp": 1559247540.656
+            "eventType": "EXECUTION_STARTED",
+            "messageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "payload": "Flow execution started",
+            "timestamp": 1559247540.656
         }
     ]
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [ListFlowExecutionMessages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/list-flow-execution-messages.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -604,15 +582,14 @@ Output:
 
 ```
 {
-   "tags": [
-      {
-         "key": "Type",
-         "value": "Residential"
-      }
-   ]
+    "tags": [
+        {
+            "key": "Type",
+            "value": "Residential"
+        }
+    ]
 }
 ```
-For more information, see [Tagging Your AWS IoT Things Graph Resources](https://docs.aws.amazon.com/thingsgraph/latest/ug/tagging-tg.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `search-entities`
@@ -661,7 +638,6 @@ Output:
     "nextToken": "urn:tdm:us-west-2/123456789012/default:Event:MotionSensorEventV2"
 }
 ```
-For more information, see [AWS IoT Things Graph Data Model Reference](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-models.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [SearchEntities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/search-entities.html) in *AWS CLI Command Reference*.
 
 ### `search-flow-executions`
@@ -681,19 +657,18 @@ Output:
 
 ```
 {
-   "summaries": [
-      {
-         "createdAt": 1559247540.656,
-         "flowExecutionId": "f6294f1e-b109-4bbe-9073-f451a2dda2da",
-         "flowTemplateId": "urn:tdm:us-west-2/123456789012/default:Workflow:MyFlow",
-         "status": "RUNNING ",
-         "systemInstanceId": "urn:tdm:us-west-2/123456789012/default:System:MySystem",
-         "updatedAt": 1559247540.656
-      }
-   ]
+    "summaries": [
+        {
+            "createdAt": 1559247540.656,
+            "flowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "flowTemplateId": "urn:tdm:us-west-2/123456789012/default:Workflow:MyFlow",
+            "status": "RUNNING ",
+            "systemInstanceId": "urn:tdm:us-west-2/123456789012/default:System:MySystem",
+            "updatedAt": 1559247540.656
+        }
+    ]
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [SearchFlowExecutions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/search-flow-executions.html) in *AWS CLI Command Reference*.
 
 ### `search-flow-templates`
@@ -727,7 +702,6 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [SearchFlowTemplates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/search-flow-templates.html) in *AWS CLI Command Reference*.
 
 ### `search-system-instances`
@@ -765,8 +739,8 @@ Output:
             "greengrassGroupName": "ThingsGraphGrnGr",
             "createdAt": 1549416462.049,
             "updatedAt": 1549416722.361,
-            "greengrassGroupId": "01d04b07-2a51-467f-9d03-0c90b3cdcaaf",
-            "greengrassGroupVersionId": "7365aed7-2d3e-4d13-aad8-75443d45eb05"
+            "greengrassGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "greengrassGroupVersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
             "id": "urn:tdm:us-west-2/123456789012/default:Deployment:MockDeployment2",
@@ -776,8 +750,8 @@ Output:
             "greengrassGroupName": "ThingsGraphGrnGr",
             "createdAt": 1549572385.774,
             "updatedAt": 1549572418.408,
-            "greengrassGroupId": "01d04b07-2a51-467f-9d03-0c90b3cdcaaf",
-            "greengrassGroupVersionId": "bfa70ab3-2bf7-409c-a4d4-bc8328ae5b86"
+            "greengrassGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "greengrassGroupVersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         },
         {
             "id": "urn:tdm:us-west-2/123456789012/default:Deployment:Room215",
@@ -799,7 +773,6 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Systems and Flow Configurations](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [SearchSystemInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/search-system-instances.html) in *AWS CLI Command Reference*.
 
 ### `search-system-templates`
@@ -829,7 +802,6 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [SearchSystemTemplates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/search-system-templates.html) in *AWS CLI Command Reference*.
 
 ### `search-things`
@@ -861,7 +833,6 @@ Output:
     ]
 }
 ```
-For more information, see [Creating and Uploading Models](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-models-gs.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [SearchThings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/search-things.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -879,7 +850,6 @@ aws iotthingsgraph tag-resource \
     --tags key="Type",value="Residential"
 ```
 This command produces no output.
-For more information, see [Tagging Your AWS IoT Things Graph Resources](https://docs.aws.amazon.com/thingsgraph/latest/ug/tagging-tg.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `undeploy-system-instance`
@@ -907,12 +877,11 @@ Output:
         "greengrassGroupName": "ThingsGraphGrnGr",
         "createdAt": 1553189694.255,
         "updatedAt": 1559344549.601,
-        "greengrassGroupId": "01d04b07-2a51-467f-9d03-0c90b3cdcaaf",
-        "greengrassGroupVersionId": "731b371d-d644-4b67-ac64-3934e99b75d7"
+        "greengrassGroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "greengrassGroupVersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     }
 }
 ```
-For more information, see [Lifecycle Management for AWS IoT Things Graph Entities, Flows, Systems, and Deployments](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-lifecycle.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [UndeploySystemInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/undeploy-system-instance.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -930,7 +899,6 @@ aws iotthingsgraph untag-resource \
     --tag-keys {{"Type"}}
 ```
 This command produces no output.
-For more information, see [Tagging Your AWS IoT Things Graph Resources](https://docs.aws.amazon.com/thingsgraph/latest/ug/tagging-tg.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-flow-template`
@@ -958,7 +926,6 @@ Output:
     }
 }
 ```
-For more information, see [Working with Flows](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-workflows.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [UpdateFlowTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/update-flow-template.html) in *AWS CLI Command Reference*.
 
 ### `update-system-template`
@@ -987,7 +954,6 @@ Output:
     }
 }
 ```
-For more information, see [Creating Systems](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-sysdeploy-systems.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [UpdateSystemTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/update-system-template.html) in *AWS CLI Command Reference*.
 
 ### `upload-entity-definitions`
@@ -1007,8 +973,7 @@ Output:
 
 ```
 {
-    "uploadId": "f6294f1e-b109-4bbe-9073-f451a2dda2da"
+    "uploadId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Modeling Entities](https://docs.aws.amazon.com/thingsgraph/latest/ug/iot-tg-modelmanagement.html) in the *AWS IoT Things Graph User Guide*.
 +  For API details, see [UploadEntityDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotthingsgraph/upload-entity-definitions.html) in *AWS CLI Command Reference*.

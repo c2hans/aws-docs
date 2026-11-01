@@ -30,10 +30,9 @@ The following `associate-customer-gateway` example associates customer gateway `
 
 ```
 aws networkmanager associate-customer-gateway \
-    --customer-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:customer-gateway/cgw-11223344556677889}}  \
+    --customer-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:customer-gateway/cgw-11223344556677889}} \
     --global-network-id {{global-network-01231231231231231}} \
-    --device-id {{device-07f6fd08867abc123}} \
-    --region {{us-west-2}}
+    --device-id {{device-07f6fd08867abc123}}
 ```
 Output:
 
@@ -47,7 +46,7 @@ Output:
     }
 }
 ```
-For more information, see [Customer Gateway Associations](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#cgw-association) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Gateway associations in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/gw-association.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [AssociateCustomerGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/associate-customer-gateway.html) in *AWS CLI Command Reference*.
 
 ### `associate-link`
@@ -63,8 +62,7 @@ The following `associate-link` example associates link `link-11112222aaaabbbb1` 
 aws networkmanager associate-link \
     --global-network-id {{global-network-01231231231231231}} \
     --device-id {{device-07f6fd08867abc123}} \
-    --link-id {{link-11112222aaaabbbb1}} \
-    --region {{us-west-2}}
+    --link-id {{link-11112222aaaabbbb1}}
 ```
 Output:
 
@@ -78,7 +76,7 @@ Output:
     }
 }
 ```
-For more information, see [Device and Link Associations](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#device-link-association) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Associate or disassociate a device link using AWS Network Manager](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-device-link-associate.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [AssociateLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/associate-link.html) in *AWS CLI Command Reference*.
 
 ### `create-core-network`
@@ -92,8 +90,8 @@ The following `create-core-network` example creates a core network using an opti
 
 ```
 aws networkmanager create-core-network \
-    --global-network-id {{global-network-0d59060f16a73bc41}}\
-    --description {{"Main headquarters location"}}\
+    --global-network-id {{global-network-0d59060f16a73bc41}} \
+    --description {{"Main headquarters location"}} \
     --tags Key=Name,Value="New York City office"
 ```
 Output:
@@ -103,7 +101,7 @@ Output:
     "CoreNetwork": {
         "GlobalNetworkId": "global-network-0d59060f16a73bc41",
         "CoreNetworkId": "core-network-0fab62fe438d94db6",
-        "CoreNetworkArn": "arn:aws:networkmanager::987654321012:core-network/core-network-0fab62fe438d94db6",
+        "CoreNetworkArn": "arn:aws:networkmanager::123456789012:core-network/core-network-0fab62fe438d94db6",
         "Description": "Main headquarters location",
         "CreatedAt": "2022-01-10T19:53:59+00:00",
         "State": "AVAILABLE",
@@ -116,7 +114,7 @@ Output:
     }
 }
 ```
-For more information, see [Core networks](https://docs.aws.amazon.com/AWSEC2vpc/latest/cloudwan/cloudwan-networks-working-with.html#cloudwan-core-networks) in the *AWS Cloud WAN User Guide*.
+For more information, see [Global and core networks in AWS Cloud WAN](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-networks-working-with.html) in the *AWS Cloud WAN User Guide*.
 +  For API details, see [CreateCoreNetwork](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-core-network.html) in *AWS CLI Command Reference*.
 
 ### `create-device`
@@ -129,14 +127,13 @@ The following code example shows how to use `create-device`.
 The following `create-device` example creates a device in the specified global network. The device details include a description, the type, vendor, model, and serial number.
 
 ```
-aws networkmanager create-device
+aws networkmanager create-device \
     --global-network-id {{global-network-01231231231231231}} \
     --description {{"New York office device"}} \
     --type {{"office device"}} \
     --vendor {{"anycompany"}} \
     --model {{"abcabc"}} \
-    --serial-number {{"1234"}} \
-    --region {{us-west-2}}
+    --serial-number {{"1234"}}
 ```
 Output:
 
@@ -156,7 +153,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Devices](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-devices) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Devices in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [CreateDevice](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-device.html) in *AWS CLI Command Reference*.
 
 ### `create-global-network`
@@ -177,12 +174,13 @@ Output:
 {
     "GlobalNetwork": {
         "GlobalNetworkId": "global-network-00a77fc0f722dae74",
-        "GlobalNetworkArn": "arn:aws:networkmanager::987654321012:global-network/global-network-00a77fc0f722dae74",
+        "GlobalNetworkArn": "arn:aws:networkmanager::123456789012:global-network/global-network-00a77fc0f722dae74",
         "CreatedAt": "2022-03-14T20:31:56+00:00",
         "State": "PENDING"
     }
 }
 ```
+For more information, see [Global networks in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/global-networks.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [CreateGlobalNetwork](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-global-network.html) in *AWS CLI Command Reference*.
 
 ### `create-link`
@@ -201,8 +199,7 @@ aws networkmanager create-link \
     --type {{"broadband"}} \
     --bandwidth {{UploadSpeed=10,DownloadSpeed=20}} \
     --provider {{"AnyCompany"}} \
-    --site-id {{site-444555aaabbb11223}} \
-    --region {{us-west-2}}
+    --site-id {{site-444555aaabbb11223}}
 ```
 Output:
 
@@ -225,7 +222,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Links](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-links) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [CreateLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-link.html) in *AWS CLI Command Reference*.
 
 ### `create-site`
@@ -240,9 +237,8 @@ The following `create-site` example creates a site in the specified global netwo
 ```
 aws networkmanager create-site \
     --global-network-id {{global-network-01231231231231231}} \
-    --description  {{"New York head office"}} \
-    --location {{Latitude=40.7128,Longitude=-74.0060}} \
-    --region {{us-west-2}}
+    --description {{"New York head office"}} \
+    --location {{Latitude=40.7128,Longitude=-74.0060}}
 ```
 Output:
 
@@ -262,7 +258,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Sites](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-sites) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [CreateSite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-site.html) in *AWS CLI Command Reference*.
 
 ### `create-vpc-attachment`
@@ -277,8 +273,8 @@ The following `create-vpc-attachment` example creates a VPC attachment with IPv6
 ```
 aws networkmanager create-vpc-attachment \
     --core-network-id {{core-network-0fab62fe438d94db6}} \
-    --vpc-arn {{arn:aws:ec2:us-east-1:987654321012:vpc/vpc-09f37f69e2786eeb8}}  \
-    --subnet-arns {{arn:aws:ec2:us-east-1:987654321012:subnet/subnet-04ca4e010857e7bb7}} \
+    --vpc-arn {{arn:aws:ec2:us-west-2:123456789012:vpc/vpc-09f37f69e2786eeb8}}  \
+    --subnet-arns {{arn:aws:ec2:us-west-2:123456789012:subnet/subnet-04ca4e010857e7bb7}} \
     --Ipv6Support=true
 ```
 Output:
@@ -289,17 +285,17 @@ Output:
         "Attachment": {
             "CoreNetworkId": "core-network-0fab62fe438d94db6",
             "AttachmentId": "attachment-05e1da6eba87a06e6",
-            "OwnerAccountId": "987654321012",
+            "OwnerAccountId": "123456789012",
             "AttachmentType": "VPC",
             "State": "CREATING",
-            "EdgeLocation": "us-east-1",
-            "ResourceArn": "arn:aws:ec2:us-east-1:987654321012:vpc/vpc-09f37f69e2786eeb8",
+            "EdgeLocation": "us-west-2",
+            "ResourceArn": "arn:aws:ec2:us-west-2:123456789012:vpc/vpc-09f37f69e2786eeb8",
             "Tags": [],
             "CreatedAt": "2022-03-10T20:59:14+00:00",
             "UpdatedAt": "2022-03-10T20:59:14+00:00"
         },
         "SubnetArns": [
-            "arn:aws:ec2:us-east-1:987654321012:subnet/subnet-04ca4e010857e7bb7"
+            "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-04ca4e010857e7bb7"
         ],
         "Options": {
             "Ipv6Support": true
@@ -330,52 +326,18 @@ Output:
     "Attachment": {
         "CoreNetworkId": "core-network-0f4b0a9d5ee7761d1",
         "AttachmentId": "attachment-01feddaeae26ab68c",
-        "OwnerAccountId": "987654321012",
+        "OwnerAccountId": "123456789012",
         "AttachmentType": "CONNECT",
         "State": "DELETING",
-        "EdgeLocation": "us-east-1",
-        "ResourceArn": "arn:aws:networkmanager::987654321012:attachment/attachment-02c3964448fedf5aa",
+        "EdgeLocation": "us-west-2",
+        "ResourceArn": "arn:aws:networkmanager::123456789012:attachment/attachment-02c3964448fedf5aa",
         "CreatedAt": "2022-03-15T19:18:41+00:00",
         "UpdatedAt": "2022-03-15T19:28:59+00:00"
     }
 }
 ```
-For more information, see [Delete attachments](https://docs.aws.amazon.com/vpc/latest/cloudwan/cloudwan-attachments-working-with.html#cloudwan-attachments-deleting) in the *Cloud WAN User Guide*.
+For more information, see [Delete an AWS Cloud WAN core network attachment](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-attachments-deleting.html) in the *Cloud WAN User Guide*.
 +  For API details, see [DeleteAttachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-attachment.html) in *AWS CLI Command Reference*.
-
-### `delete-bucket-analytics-configuration`
-<a name="networkmanager_DeleteBucketAnalyticsConfiguration_cli_2_topic"></a>
-
-The following code example shows how to use `delete-bucket-analytics-configuration`.
-
-**AWS CLI**
-**To delete an analytics configuration for a bucket**
-The following `delete-bucket-analytics-configuration` example removes the analytics configuration for the specified bucket and ID.
-
-```
-aws s3api delete-bucket-analytics-configuration \
-    --bucket {{amzn-s3-demo-bucket}} \
-    --id {{1}}
-```
-This command produces no output.
-+  For API details, see [DeleteBucketAnalyticsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-bucket-analytics-configuration.html) in *AWS CLI Command Reference*.
-
-### `delete-bucket-metrics-configuration`
-<a name="networkmanager_DeleteBucketMetricsConfiguration_cli_2_topic"></a>
-
-The following code example shows how to use `delete-bucket-metrics-configuration`.
-
-**AWS CLI**
-**To delete a metrics configuration for a bucket**
-The following `delete-bucket-metrics-configuration` example removes the metrics configuration for the specified bucket and ID.
-
-```
-aws s3api delete-bucket-metrics-configuration \
-    --bucket {{amzn-s3-demo-bucket}} \
-    --id {{123}}
-```
-This command produces no output.
-+  For API details, see [DeleteBucketMetricsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-bucket-metrics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-core-network`
 <a name="networkmanager_DeleteCoreNetwork_cli_2_topic"></a>
@@ -404,14 +366,14 @@ Output:
             {
                 "Name": "dev",
                 "EdgeLocations": [
-                    "us-east-1"
+                    "us-west-2"
                 ],
                 "SharedSegments": []
             }
         ],
         "Edges": [
             {
-                "EdgeLocation": "us-east-1",
+                "EdgeLocation": "us-west-2",
                 "Asn": 64512,
                 "InsideCidrBlocks": []
             }
@@ -419,7 +381,7 @@ Output:
     }
 }
 ```
-For more information, see [Core networks](https://docs.aws.amazon.com/vpc/latest/cloudwan/cloudwan-networks-working-with.html#cloudwan-core-networks) in the *Cloud WAN User Guide*.
+For more information, see [Core networks](https://docs.aws.amazon.com/vpc/latest/cloudwan/cloudwan-networks-working-with.html) in the *Cloud WAN User Guide*.
 +  For API details, see [DeleteCoreNetwork](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-core-network.html) in *AWS CLI Command Reference*.
 
 ### `delete-device`
@@ -434,8 +396,7 @@ The following `delete-device` example deletes the specified device from the spec
 ```
 aws networkmanager delete-device \
     --global-network-id {{global-network-01231231231231231}} \
-    --device-id {{device-07f6fd08867abc123}} \
-    --region {{us-west-2}}
+    --device-id {{device-07f6fd08867abc123}}
 ```
 Output:
 
@@ -456,7 +417,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Devices](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-devices) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Devices in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [DeleteDevice](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-device.html) in *AWS CLI Command Reference*.
 
 ### `delete-global-network`
@@ -478,12 +439,13 @@ Output:
 {
     "GlobalNetwork": {
         "GlobalNetworkId": "global-network-052bedddccb193b6b",
-        "GlobalNetworkArn": "arn:aws:networkmanager::987654321012:global-network/global-network-052bedddccb193b6b",
+        "GlobalNetworkArn": "arn:aws:networkmanager::123456789012:global-network/global-network-052bedddccb193b6b",
         "CreatedAt": "2021-12-09T18:19:12+00:00",
         "State": "DELETING"
     }
 }
 ```
+For more information, see [Global networks in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/global-networks.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [DeleteGlobalNetwork](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-global-network.html) in *AWS CLI Command Reference*.
 
 ### `delete-link`
@@ -497,9 +459,8 @@ The following `delete-link` example deletes the specified link from the specifie
 
 ```
 aws networkmanager delete-link \
-    --global-network-id {{global-network-01231231231231231}}  \
-    --link-id {{link-11112222aaaabbbb1}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}} \
+    --link-id {{link-11112222aaaabbbb1}}
 ```
 Output:
 
@@ -522,24 +483,8 @@ Output:
     }
 }
 ```
-For more information, see [Working with Links](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-links) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [DeleteLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-link.html) in *AWS CLI Command Reference*.
-
-### `delete-public-access-block`
-<a name="networkmanager_DeletePublicAccessBlock_cli_2_topic"></a>
-
-The following code example shows how to use `delete-public-access-block`.
-
-**AWS CLI**
-**To delete the block public access configuration for a bucket**
-The following `delete-public-access-block` example removes the block public access configuration on the specified bucket.
-
-```
-aws s3api delete-public-access-block \
-    --bucket {{amzn-s3-demo-bucket}}
-```
-This command produces no output.
-+  For API details, see [DeletePublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `delete-site`
 <a name="networkmanager_DeleteSite_cli_2_topic"></a>
@@ -552,9 +497,8 @@ The following `delete-site` example deletes the specified site (`site-444555aaab
 
 ```
 aws networkmanager delete-site \
-    --global-network-id {{global-network-01231231231231231}}  \
-    --site-id {{site-444555aaabbb11223}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}} \
+    --site-id {{site-444555aaabbb11223}}
 ```
 Output:
 
@@ -574,7 +518,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Sites](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-sites) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [DeleteSite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/delete-site.html) in *AWS CLI Command Reference*.
 
 ### `deregister-transit-gateway`
@@ -589,8 +533,7 @@ The following `deregister-transit-gateway` example deregisters the specified tra
 ```
 aws networkmanager deregister-transit-gateway \
     --global-network-id {{global-network-01231231231231231}} \
-    --transit-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-123abc05e04123abc}} \
-    --region {{us-west-2}}
+    --transit-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-123abc05e04123abc}}
 ```
 Output:
 
@@ -618,8 +561,7 @@ The following code example shows how to use `describe-global-networks`.
 The following `describe-global-networks` example describes all of your global networks in your account.
 
 ```
-aws networkmanager describe-global-networks \
-    --region {{us-west-2}}
+aws networkmanager describe-global-networks
 ```
 Output:
 
@@ -636,6 +578,7 @@ Output:
     ]
 }
 ```
+For more information, see [Global networks in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/global-networks.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [DescribeGlobalNetworks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/describe-global-networks.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-customer-gateway`
@@ -650,8 +593,7 @@ The following `disassociate-customer-gateway` example disassociates the specifie
 ```
 aws networkmanager disassociate-customer-gateway \
     --global-network-id {{global-network-01231231231231231}} \
-    --customer-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:customer-gateway/cgw-11223344556677889}} \
-    --region {{us-west-2}}
+    --customer-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:customer-gateway/cgw-11223344556677889}}
 ```
 Output:
 
@@ -665,7 +607,7 @@ Output:
     }
 }
 ```
-For more information, see [Customer Gateway Associations](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#cgw-association) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Gateway associations in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/gw-association.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [DisassociateCustomerGateway](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/disassociate-customer-gateway.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-link`
@@ -681,8 +623,7 @@ The following `disassociate-link` example disassociates the specified link from 
 aws networkmanager disassociate-link \
     --global-network-id {{global-network-01231231231231231}} \
     --device-id {{device-07f6fd08867abc123}} \
-    --link-id {{link-11112222aaaabbbb1}} \
-    --region {{us-west-2}}
+    --link-id {{link-11112222aaaabbbb1}}
 ```
 Output:
 
@@ -696,62 +637,8 @@ Output:
     }
 }
 ```
-For more information, see [Device and Link Associations](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#device-link-association) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Associate or disassociate a device link using AWS Network Manager](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-device-link-associate.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [DisassociateLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/disassociate-link.html) in *AWS CLI Command Reference*.
-
-### `get-bucket-analytics-configuration`
-<a name="networkmanager_GetBucketAnalyticsConfiguration_cli_2_topic"></a>
-
-The following code example shows how to use `get-bucket-analytics-configuration`.
-
-**AWS CLI**
-**To retrieve the analytics configuration for a bucket with a specific ID**
-The following `get-bucket-analytics-configuration` example displays the analytics configuration for the specified bucket and ID.
-
-```
-aws s3api get-bucket-analytics-configuration \
-    --bucket {{amzn-s3-demo-bucket}} \
-    --id {{1}}
-```
-Output:
-
-```
-{
-    "AnalyticsConfiguration": {
-        "StorageClassAnalysis": {},
-        "Id": "1"
-    }
-}
-```
-+  For API details, see [GetBucketAnalyticsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-bucket-analytics-configuration.html) in *AWS CLI Command Reference*.
-
-### `get-bucket-metrics-configuration`
-<a name="networkmanager_GetBucketMetricsConfiguration_cli_2_topic"></a>
-
-The following code example shows how to use `get-bucket-metrics-configuration`.
-
-**AWS CLI**
-**To retrieve the metrics configuration for a bucket with a specific ID**
-The following `get-bucket-metrics-configuration` example displays the metrics configuration for the specified bucket and ID.
-
-```
-aws s3api get-bucket-metrics-configuration \
-    --bucket {{amzn-s3-demo-bucket}} \
-    --id {{123}}
-```
-Output:
-
-```
-{
-    "MetricsConfiguration": {
-        "Filter": {
-            "Prefix": "logs"
-        },
-        "Id": "123"
-    }
-}
-```
-+  For API details, see [GetBucketMetricsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-bucket-metrics-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-customer-gateway-associations`
 <a name="networkmanager_GetCustomerGatewayAssociations_cli_2_topic"></a>
@@ -764,8 +651,7 @@ The following `get-customer-gateway-associations` example gets the customer gate
 
 ```
 aws networkmanager get-customer-gateway-associations \
-    --global-network-id {{global-network-01231231231231231}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}}
 ```
 Output:
 
@@ -781,6 +667,7 @@ Output:
     ]
 }
 ```
+For more information, see [Associate a customer gateway using AWS Network Manager](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-cgw-associate.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [GetCustomerGatewayAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-customer-gateway-associations.html) in *AWS CLI Command Reference*.
 
 ### `get-devices`
@@ -794,8 +681,7 @@ The following `get-devices` example gets the devices in the specified global net
 
 ```
 aws networkmanager get-devices \
-    --global-network-id {{global-network-01231231231231231}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}}
 ```
 Output:
 
@@ -817,6 +703,7 @@ Output:
     ]
 }
 ```
+For more information, see [Devices in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [GetDevices](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-devices.html) in *AWS CLI Command Reference*.
 
 ### `get-link-associations`
@@ -830,8 +717,7 @@ The following `get-link-associations` example gets the link associations in the 
 
 ```
 aws networkmanager get-link-associations \
-    --global-network-id {{global-network-01231231231231231}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}}
 ```
 Output:
 
@@ -847,6 +733,7 @@ Output:
     ]
 }
 ```
+For more information, see [Associate or disassociate a device link using AWS Network Manager](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-device-link-associate.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [GetLinkAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-link-associations.html) in *AWS CLI Command Reference*.
 
 ### `get-links`
@@ -860,8 +747,7 @@ The following `get-links` example gets the links in the specified global network
 
 ```
 aws networkmanager get-links \
-    --global-network-id {{global-network-01231231231231231}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}}
 ```
 Output:
 
@@ -886,59 +772,8 @@ Output:
     ]
 }
 ```
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [GetLinks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-links.html) in *AWS CLI Command Reference*.
-
-### `get-object-retention`
-<a name="networkmanager_GetObjectRetention_cli_2_topic"></a>
-
-The following code example shows how to use `get-object-retention`.
-
-**AWS CLI**
-**To retrieve the object retention configuration for an object**
-The following `get-object-retention` example retrieves the object retention configuration for the specified object.
-
-```
-aws s3api get-object-retention \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
-    --key {{doc1.rtf}}
-```
-Output:
-
-```
-{
-    "Retention": {
-        "Mode": "GOVERNANCE",
-        "RetainUntilDate": "2025-01-01T00:00:00.000Z"
-    }
-}
-```
-+  For API details, see [GetObjectRetention](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-object-retention.html) in *AWS CLI Command Reference*.
-
-### `get-public-access-block`
-<a name="networkmanager_GetPublicAccessBlock_cli_2_topic"></a>
-
-The following code example shows how to use `get-public-access-block`.
-
-**AWS CLI**
-**To set or modify the block public access configuration for a bucket**
-The following `get-public-access-block` example displays the block public access configuration for the specified bucket.
-
-```
-aws s3api get-public-access-block --bucket {{amzn-s3-demo-bucket}}
-```
-Output:
-
-```
-{
-    "PublicAccessBlockConfiguration": {
-        "IgnorePublicAcls": true,
-        "BlockPublicPolicy": true,
-        "BlockPublicAcls": true,
-        "RestrictPublicBuckets": true
-    }
-}
-```
-+  For API details, see [GetPublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `get-sites`
 <a name="networkmanager_GetSites_cli_2_topic"></a>
@@ -951,8 +786,7 @@ The following `get-sites` example gets the sites in the specified global network
 
 ```
 aws networkmanager get-sites \
-    --global-network-id {{global-network-01231231231231231}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}}
 ```
 Output:
 
@@ -974,6 +808,7 @@ Output:
     ]
 }
 ```
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [GetSites](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-sites.html) in *AWS CLI Command Reference*.
 
 ### `get-transit-gateway-registrations`
@@ -987,8 +822,7 @@ The following `get-transit-gateway-registrations` example gets the transit gatew
 
 ```
 aws networkmanager get-transit-gateway-registrations \
-    --global-network-id {{global-network-01231231231231231}} \
-    --region {{us-west-2}}
+    --global-network-id {{global-network-01231231231231231}}
 ```
 Output:
 
@@ -1005,6 +839,7 @@ Output:
     ]
 }
 ```
+For more information, see [Transit gateway registrations in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/tgw-registrations.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [GetTransitGatewayRegistrations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-transit-gateway-registrations.html) in *AWS CLI Command Reference*.
 
 ### `get-vpc-attachment`
@@ -1028,11 +863,11 @@ Output:
         "Attachment": {
             "CoreNetworkId": "core-network-0522de1b226a5d7b3",
             "AttachmentId": "attachment-03b7ea450134787da",
-            "OwnerAccountId": "987654321012",
+            "OwnerAccountId": "123456789012",
             "AttachmentType": "VPC",
             "State": "CREATING",
-            "EdgeLocation": "us-east-1",
-            "ResourceArn": "arn:aws:ec2:us-east-1:987654321012:vpc/vpc-a7c4bbda",
+            "EdgeLocation": "us-west-2",
+            "ResourceArn": "arn:aws:ec2:us-west-2:123456789012:vpc/vpc-a7c4bbda",
             "Tags": [
                 {
                     "Key": "Name",
@@ -1043,10 +878,10 @@ Output:
             "UpdatedAt": "2022-03-11T17:48:58+00:00"
         },
         "SubnetArns": [
-            "arn:aws:ec2:us-east-1:987654321012:subnet/subnet-202cde6c",
-            "arn:aws:ec2:us-east-1:987654321012:subnet/subnet-e5022dba",
-            "arn:aws:ec2:us-east-1:987654321012:subnet/subnet-2387ae02",
-            "arn:aws:ec2:us-east-1:987654321012:subnet/subnet-cda9dffc"
+            "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-202cde6c",
+            "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-e5022dba",
+            "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-2387ae02",
+            "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-cda9dffc"
         ],
         "Options": {
             "Ipv6Support": false
@@ -1054,72 +889,8 @@ Output:
     }
 }
 ```
-For more information, see [Attachments](https://docs.aws.amazon.com/vpc/latest/cloudwan/cloudwan-attachments-working-with.html) in the *Cloud WAN User Guide*.
+For more information, see [Attachments in AWS Cloud WAN](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-create-attachment.html) in the *Cloud WAN User Guide*.
 +  For API details, see [GetVpcAttachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/get-vpc-attachment.html) in *AWS CLI Command Reference*.
-
-### `list-bucket-analytics-configurations`
-<a name="networkmanager_ListBucketAnalyticsConfigurations_cli_2_topic"></a>
-
-The following code example shows how to use `list-bucket-analytics-configurations`.
-
-**AWS CLI**
-**To retrieve a list of analytics configurations for a bucket**
-The following `list-bucket-analytics-configurations` retrieves a list of analytics configurations for the specified bucket.
-
-```
-aws s3api list-bucket-analytics-configurations \
-    --bucket {{amzn-s3-demo-bucket}}
-```
-Output:
-
-```
-{
-    "AnalyticsConfigurationList": [
-        {
-            "StorageClassAnalysis": {},
-            "Id": "1"
-        }
-    ],
-    "IsTruncated": false
-}
-```
-+  For API details, see [ListBucketAnalyticsConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/list-bucket-analytics-configurations.html) in *AWS CLI Command Reference*.
-
-### `list-bucket-metrics-configurations`
-<a name="networkmanager_ListBucketMetricsConfigurations_cli_2_topic"></a>
-
-The following code example shows how to use `list-bucket-metrics-configurations`.
-
-**AWS CLI**
-**To retrieve a list of metrics configurations for a bucket**
-The following `list-bucket-metrics-configurations` example retrieves a list of metrics configurations for the specified bucket.
-
-```
-aws s3api list-bucket-metrics-configurations \
-    --bucket {{amzn-s3-demo-bucket}}
-```
-Output:
-
-```
-{
-    "IsTruncated": false,
-    "MetricsConfigurationList": [
-        {
-            "Filter": {
-                "Prefix": "logs"
-            },
-            "Id": "123"
-        },
-        {
-            "Filter": {
-                "Prefix": "tmp"
-            },
-            "Id": "234"
-        }
-    ]
-}
-```
-+  For API details, see [ListBucketMetricsConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/list-bucket-metrics-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
 <a name="networkmanager_ListTagsForResource_cli_2_topic"></a>
@@ -1132,8 +903,7 @@ The following `list-tags-for-resource` example lists the tags for the specified 
 
 ```
 aws networkmanager list-tags-for-resource \
-    --resource-arn {{arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123}} \
-    --region {{us-west-2}}
+    --resource-arn {{arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123}}
 ```
 Output:
 
@@ -1147,60 +917,8 @@ Output:
     ]
 }
 ```
+For more information, see [Resource tags in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/gnw-tagging.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/list-tags-for-resource.html) in *AWS CLI Command Reference*.
-
-### `put-bucket-metrics-configuration`
-<a name="networkmanager_PutBucketMetricsConfiguration_cli_2_topic"></a>
-
-The following code example shows how to use `put-bucket-metrics-configuration`.
-
-**AWS CLI**
-**To set a metrics configuration for a bucket**
-The following `put-bucket-metrics-configuration` example sets a metric configuration with ID 123 for the specified bucket.
-
-```
-aws s3api put-bucket-metrics-configuration \
-    --bucket {{amzn-s3-demo-bucket}} \
-    --id {{123}} \
-    --metrics-configuration '{{{"Id": "123", "Filter": {"Prefix": "logs"}}}}'
-```
-This command produces no output.
-+  For API details, see [PutBucketMetricsConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/put-bucket-metrics-configuration.html) in *AWS CLI Command Reference*.
-
-### `put-object-retention`
-<a name="networkmanager_PutObjectRetention_cli_2_topic"></a>
-
-The following code example shows how to use `put-object-retention`.
-
-**AWS CLI**
-**To set an object retention configuration for an object**
-The following `put-object-retention` example sets an object retention configuration for the specified object until 2025-01-01.
-
-```
-aws s3api put-object-retention \
-    --bucket {{amzn-s3-demo-bucket-with-object-lock}} \
-    --key {{doc1.rtf}} \
-    --retention '{{{ "Mode": "GOVERNANCE", "RetainUntilDate": "2025-01-01T00:00:00" }}}'
-```
-This command produces no output.
-+  For API details, see [PutObjectRetention](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/put-object-retention.html) in *AWS CLI Command Reference*.
-
-### `put-public-access-block`
-<a name="networkmanager_PutPublicAccessBlock_cli_2_topic"></a>
-
-The following code example shows how to use `put-public-access-block`.
-
-**AWS CLI**
-**To set the block public access configuration for a bucket**
-The following `put-public-access-block` example sets a restrictive block public access configuration for the specified bucket.
-
-```
-aws s3api put-public-access-block \
-    --bucket {{amzn-s3-demo-bucket}} \
-    --public-access-block-configuration {{"BlockPublicAcls=true,IgnorePublicAcls=true,BlockPublicPolicy=true,RestrictPublicBuckets=true"}}
-```
-This command produces no output.
-+  For API details, see [PutPublicAccessBlock](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/put-public-access-block.html) in *AWS CLI Command Reference*.
 
 ### `register-transit-gateway`
 <a name="networkmanager_RegisterTransitGateway_cli_2_topic"></a>
@@ -1214,8 +932,7 @@ The following `register-transit-gateway` example registers transit gateway `tgw-
 ```
 aws networkmanager register-transit-gateway \
     --global-network-id {{global-network-01231231231231231}} \
-    --transit-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-123abc05e04123abc}} \
-    --region {{us-west-2}}
+    --transit-gateway-arn {{arn:aws:ec2:us-west-2:123456789012:transit-gateway/tgw-123abc05e04123abc}}
 ```
 Output:
 
@@ -1253,17 +970,17 @@ Output:
     "Attachment": {
         "CoreNetworkId": "core-network-0522de1b226a5d7b3",
         "AttachmentId": "attachment-03b7ea450134787da",
-        "OwnerAccountId": "987654321012",
+        "OwnerAccountId": "123456789012",
         "AttachmentType": "VPC",
         "State": "AVAILABLE",
-        "EdgeLocation": "us-east-1",
-        "ResourceArn": "arn:aws:ec2:us-east-1:987654321012:vpc/vpc-a7c4bbda",
+        "EdgeLocation": "us-west-2",
+        "ResourceArn": "arn:aws:ec2:us-west-2:123456789012:vpc/vpc-a7c4bbda",
         "CreatedAt": "2022-03-11T17:48:58+00:00",
         "UpdatedAt": "2022-03-11T17:51:25+00:00"
     }
 }
 ```
-For more information, see [Attachment acceptance](https://docs.aws.amazon.com/vpc/latest/cloudwan/cloudwan-attachments-working-with.html#cloudwan-attachments-acceptance) in the *Cloud WAN User Guide*.
+For more information, see [Accept or reject an AWS Cloud WAN core network attachment](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-attachments-acceptance.html) in the *Cloud WAN User Guide*.
 +  For API details, see [RejectAttachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/reject-attachment.html) in *AWS CLI Command Reference*.
 
 ### `start-route-analysis`
@@ -1278,8 +995,8 @@ The following `start-route-analysis` example starts the analysis between a sourc
 ```
 aws networkmanager start-route-analysis \
     --global-network-id {{global-network-00aa0aaa0b0aaa000}} \
-    --source {{TransitGatewayAttachmentArn=arn:aws:ec2:us-east-1:503089527312:transit-gateway-attachment/tgw-attach-0d4a2d491bf68c093,IpAddress=10.0.0.0}} \
-    --destination {{TransitGatewayAttachmentArn=arn:aws:ec2:us-west-1:503089527312:transit-gateway-attachment/tgw-attach-002577f30bb181742,IpAddress=11.0.0.0}} \
+    --source {{TransitGatewayAttachmentArn=arn:aws:ec2:us-east-1:123456789012:transit-gateway-attachment/tgw-attach-0d4a2d491bf68c093,IpAddress=10.0.0.0}} \
+    --destination {{TransitGatewayAttachmentArn=arn:aws:ec2:us-west-1:123456789012:transit-gateway-attachment/tgw-attach-002577f30bb181742,IpAddress=11.0.0.0}} \
     --include-return-path
 ```
 Output:
@@ -1287,19 +1004,19 @@ Output:
 ```
 {
     "RouteAnalysis": {
-        "GlobalNetworkId": "global-network-00aa0aaa0b0aaa000
+        "GlobalNetworkId": "global-network-00aa0aaa0b0aaa000",
         "OwnerAccountId": "1111222233333",
         "RouteAnalysisId": "a1873de1-273c-470c-1a2bc2345678",
         "StartTimestamp": 1695760154.0,
         "Status": "RUNNING",
         "Source": {
-            "TransitGatewayAttachmentArn": "arn:aws:ec2:us-east-1:111122223333:transit-gateway-attachment/tgw-attach-1234567890abcdef0,
-            "TransitGatewayArn": "arn:aws:ec2:us-east-1:111122223333:transit-gateway/tgw-abcdef01234567890",
+            "TransitGatewayAttachmentArn": "arn:aws:ec2:us-east-1:123456789012:transit-gateway-attachment/tgw-attach-1234567890abcdef0",
+            "TransitGatewayArn": "arn:aws:ec2:us-east-1:123456789012:transit-gateway/tgw-abcdef01234567890",
             "IpAddress": "10.0.0.0"
         },
         "Destination": {
-            "TransitGatewayAttachmentArn": "arn:aws:ec2:us-west-1:555555555555:transit-gateway-attachment/tgw-attach-021345abcdef6789",
-            "TransitGatewayArn": "arn:aws:ec2:us-west-1:111122223333:transit-gateway/tgw-09876543210fedcba0",
+            "TransitGatewayAttachmentArn": "arn:aws:ec2:us-west-1:123456789111:transit-gateway-attachment/tgw-attach-021345abcdef6789",
+            "TransitGatewayArn": "arn:aws:ec2:us-west-1:123456789012:transit-gateway/tgw-09876543210fedcba0",
             "IpAddress": "11.0.0.0"
         },
         "IncludeReturnPath": true,
@@ -1322,10 +1039,10 @@ The following `tag-resource` example applies the tag `Network=Northeast` to the 
 ```
 aws networkmanager tag-resource \
     --resource-arn {{arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123}} \
-    --tags {{Key=Network,Value=Northeast}} \
-    --region {{us-west-2}}
+    --tags {{Key=Network,Value=Northeast}}
 ```
 This command produces no output.
+For more information, see [Resource tags in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/gnw-tagging.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1339,11 +1056,11 @@ The following `untag-resource` example removes the tag with the key `Network` fr
 
 ```
 aws networkmanager untag-resource \
-    --resource-arn {{arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123}} {{]}}
-    --tag-keys {{Network}} \
-    --region {{us-west-2}}
+    --resource-arn {{arn:aws:networkmanager::123456789012:device/global-network-01231231231231231/device-07f6fd08867abc123}} \
+    --tag-keys {{Network}}
 ```
 This command produces no output.
+For more information, see [Resource tags in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/gnw-tagging.html) in the *AWS Global Networks for Transit Gateways User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-device`
@@ -1359,8 +1076,7 @@ The following `update-device` example updates device `device-07f6fd08867abc123` 
 aws networkmanager update-device \
     --global-network-id {{global-network-01231231231231231}} \
     --device-id {{device-07f6fd08867abc123}} \
-    --site-id {{site-444555aaabbb11223}} \
-    --region {{us-west-2}}
+    --site-id {{site-444555aaabbb11223}}
 ```
 Output:
 
@@ -1381,7 +1097,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Devices](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-devices) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Devices in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [UpdateDevice](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/update-device.html) in *AWS CLI Command Reference*.
 
 ### `update-global-network`
@@ -1396,8 +1112,7 @@ The following `update-global-network` example updates the description for global
 ```
 aws networkmanager update-global-network \
     --global-network-id {{global-network-01231231231231231}} \
-    --description {{"Head offices"}} \
-    --region {{us-west-2}}
+    --description {{"Head offices"}}
 ```
 Output:
 
@@ -1428,8 +1143,7 @@ The following `update-link` example updates the bandwidth information for link `
 aws networkmanager update-link \
     --global-network-id {{global-network-01231231231231231}} \
     --link-id {{link-11112222aaaabbbb1}} \
-    --bandwidth  {{UploadSpeed=20,DownloadSpeed=20}} \
-    --region {{us-west-2}}
+    --bandwidth {{UploadSpeed=20,DownloadSpeed=20}}
 ```
 Output:
 
@@ -1452,7 +1166,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with Links](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-links) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [UpdateLink](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/update-link.html) in *AWS CLI Command Reference*.
 
 ### `update-site`
@@ -1468,8 +1182,7 @@ The following `update-site` example updates the description for site `site-44455
 aws networkmanager update-site \
     --global-network-id {{global-network-01231231231231231}} \
     --site-id {{site-444555aaabbb11223}} \
-    --description {{"New York Office site"}} \
-    --region {{us-west-2}}
+    --description {{"New York Office site"}}
 ```
 Output:
 
@@ -1489,5 +1202,5 @@ Output:
     }
 }
 ```
-For more information, see [Working with Sites](https://docs.aws.amazon.com/vpc/latest/tgw/on-premises-networks.html#working-with-sites) in the *Transit Gateway Network Manager Guide*.
+For more information, see [Sites and links in AWS Global Networks for Transit Gateways](https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-sites.html) in the *Transit Gateway Network Manager Guide*.
 +  For API details, see [UpdateSite](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/update-site.html) in *AWS CLI Command Reference*.

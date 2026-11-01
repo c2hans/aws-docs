@@ -14,56 +14,57 @@ The following code examples show how to use `GetPipelineState`.
 
 **AWS CLI**
 **To get information about the state of a pipeline**
-This example returns the most recent state of a pipeline named MyFirstPipeline.
-Command:
+The following `get-pipeline-state` example returns the most recent state of a pipeline named MyFirstPipeline.
 
 ```
-aws codepipeline get-pipeline-state --name {{MyFirstPipeline}}
+aws codepipeline get-pipeline-state \
+    --name {{MyFirstPipeline}}
 ```
 Output:
 
 ```
 {
- "created": 1446137312.204,
- "pipelineName": "MyFirstPipeline",
- "pipelineVersion": 1,
- "stageStates": [
-  {
-    "actionStates": [
-      {
-        "actionName": "Source",
-        "entityUrl": "https://console.aws.amazon.com/s3/home?#",
-        "latestExecution": {
-          "lastStatusChange": 1446137358.328,
-          "status": "Succeeded"
+    "created": 1446137312.204,
+    "pipelineName": "MyFirstPipeline",
+    "pipelineVersion": 1,
+    "stageStates": [
+        {
+            "actionStates": [
+                {
+                    "actionName": "Source",
+                    "entityUrl": "https://console.aws.amazon.com/s3/home?#",
+                    "latestExecution": {
+                        "lastStatusChange": 1446137358.328,
+                        "status": "Succeeded"
+                    }
+                }
+            ],
+            "stageName": "Source"
+        },
+        {
+            "actionStates": [
+                {
+                    "actionName": "CodePipelineDemoFleet",
+                    "entityUrl": "https://console.aws.amazon.com/codedeploy/home?#/applications/CodePipelineDemoApplication/deployment-groups/CodePipelineDemoFleet",
+                    "latestExecution": {
+                        "externalExecutionId": "d-EXAMPLE",
+                        "externalExecutionUrl": "https://console.aws.amazon.com/codedeploy/home?#/deployments/d-EXAMPLE",
+                        "lastStatusChange": 1446137493.131,
+                        "status": "Succeeded",
+                        "summary": "Deployment Succeeded"
+                    }
+                }
+            ],
+            "inboundTransitionState": {
+                "enabled": true
+            },
+            "stageName": "Beta"
         }
-      }
     ],
-    "stageName": "Source"
-  },
-  {
-    "actionStates": [
-      {
-        "actionName": "CodePipelineDemoFleet",
-        "entityUrl": "https://console.aws.amazon.com/codedeploy/home?#/applications/CodePipelineDemoApplication/deployment-groups/CodePipelineDemoFleet",
-        "latestExecution": {
-          "externalExecutionId": "d-EXAMPLE",
-          "externalExecutionUrl": "https://console.aws.amazon.com/codedeploy/home?#/deployments/d-EXAMPLE",
-          "lastStatusChange": 1446137493.131,
-          "status": "Succeeded",
-          "summary": "Deployment Succeeded"
-        }
-      }
-    ],
-    "inboundTransitionState": {
-      "enabled": true
-    },
-    "stageName": "Beta"
-  }
- ],
- "updated": 1446137312.204
+    "updated": 1446137312.204
 }
 ```
+For more information, see [View pipeline details and history (CLI)](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view-cli.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [GetPipelineState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/get-pipeline-state.html) in *AWS CLI Command Reference*.
 
 ------

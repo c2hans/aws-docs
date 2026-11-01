@@ -56,8 +56,8 @@ The following `associate-wireless-device-with-thing` example associates a thing 
 
 ```
 aws iotwireless associate-wireless-device-with-thing \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}} \
-    --thing-arn {{"arn:aws:iot:us-east-1:123456789012:thing/MyIoTWirelessThing"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --thing-arn {{"arn:aws:iot:us-west-2:123456789012:thing/MyIoTWirelessThing"}}
 ```
 This command produces no output.
 For more information, see [Add your gateways and wireless devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-devices.html) in the *AWS IoT Developers Guide*.
@@ -70,11 +70,11 @@ The following code example shows how to use `associate-wireless-gateway-with-cer
 
 **AWS CLI**
 **To associate the certificate with the wireless gateway**
-The following `associate-wireless-gateway-with-certificate` associates a wireless gateway with a certificate.
+The following `associate-wireless-gateway-with-certificate` example associates a wireless gateway with a certificate.
 
 ```
 aws iotwireless associate-wireless-gateway-with-certificate \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}} \
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --iot-certificate-id {{"a123b45c6d78e9f012a34cd5e6a7890b12c3d45e6f78a1b234c56d7e890a1234"}}
 ```
 Output:
@@ -98,8 +98,8 @@ The following `associate-wireless-gateway-with-thing` example associates a thing
 
 ```
 aws iotwireless associate-wireless-gateway-with-thing \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}} \
-    --thing-arn {{"arn:aws:iot:us-east-1:123456789012:thing/MyIoTWirelessThing"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --thing-arn {{"arn:aws:iot:us-west-2:123456789012:thing/MyIoTWirelessThing"}}
 ```
 This command produces no output.
 For more information, see [Add your gateways and wireless devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-devices.html) in the *AWS IoT Developers Guide*.
@@ -125,7 +125,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:Destination/IoTWirelessDestination",
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination",
     "Name": "IoTWirelessDestination"
 }
 ```
@@ -148,8 +148,8 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:DeviceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-    "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d"
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:DeviceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Add profiles to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-define-profiles.html) in the *AWS IoT Developers Guide*.
@@ -171,8 +171,8 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:ServiceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-    "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d"
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:ServiceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Add profiles to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-define-profiles.html) in the *AWS IoT Developers Guide*.
@@ -198,8 +198,8 @@ Contents of `input.json`:
     "Description": "My LoRaWAN wireless device"
     "DestinationName": "IoTWirelessDestination"
     "LoRaWAN": {
-        "DeviceProfileId": "ab0c23d3-b001-45ef-6a01-2bc3de4f5333",
-        "ServiceProfileId": "fe98dc76-cd12-001e-2d34-5550432da100",
+        "DeviceProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "ServiceProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "OtaaV1_1": {
             "AppKey": "3f4ca100e2fc675ea123f4eb12c4a012",
             "JoinEui": "b4c231a359bc2e3d",
@@ -215,8 +215,8 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessDevice/1ffd32c8-8130-4194-96df-622f072a315f",
-    "Id": "1ffd32c8-8130-4194-96df-622f072a315f"
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessDevice/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -229,7 +229,7 @@ The following code example shows how to use `create-wireless-gateway-task-defini
 
 **AWS CLI**
 **To create a wireless gateway task definition**
-The following `create-wireless-gateway-task-definition` automatically creates tasks using this task definition for all gateways with the specified current version.
+The following `create-wireless-gateway-task-definition` example automatically creates tasks using this task definition for all gateways with the specified current version.
 
 ```
 aws iotwireless create-wireless-gateway-task-definition \
@@ -242,8 +242,8 @@ Contents of `input.json`:
     "AutoCreateTasks": true,
     "Name": "TestAutoUpdate",
     "Update":{
-        "UpdateDataSource" : "s3://cupsalphagafirmwarebin/station",
-        "UpdateDataRole" : "arn:aws:iam::001234567890:role/SDK_Test_Role",
+        "UpdateDataSource" : "s3://amzn-s3-demo-bucket/station",
+        "UpdateDataRole" : "arn:aws:iam::123456789012:role/SDK_Test_Role",
         "LoRaWAN" :{
             "CurrentVersion" :{
                 "PackageVersion" : "1.0.0",
@@ -263,7 +263,7 @@ Output:
 
 ```
 {
-    "Id": "b7d3baad-25c7-35e7-a4e1-1683a0d61da9"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -280,14 +280,14 @@ The following `create-wireless-gateway-task` example creates a task for a wirele
 
 ```
 aws iotwireless create-wireless-gateway-task \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}} \
-    --wireless-gateway-task-definition-id {{"aa000102-0304-b0cd-ef56-a1b23cde456a"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --wireless-gateway-task-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "WirelessGatewayTaskDefinitionId": "aa204003-0604-30fb-ac82-a4f95aaf450a",
+    "WirelessGatewayTaskDefinitionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Status": "Success"
 }
 ```
@@ -313,8 +313,8 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessGateway/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-    "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d"
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessGateway/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -348,7 +348,7 @@ The following `delete-device-profile` example deletes a device profile with the 
 
 ```
 aws iotwireless delete-device-profile \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Add profiles to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-define-profiles.html) in the *AWS IoT Developers Guide*.
@@ -365,7 +365,7 @@ The following `delete-service-profile` example deletes a service profile with th
 
 ```
 aws iotwireless delete-service-profile \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Add profiles to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-define-profiles.html) in the *AWS IoT Developers Guide*.
@@ -382,7 +382,7 @@ The following `delete-wireless-device` example deletes a wireless device that ha
 
 ```
 aws iotwireless delete-wireless-device \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -399,7 +399,7 @@ The following `delete-wireless-gateway-task-definition` example deletes the wire
 
 ```
 aws iotwireless delete-wireless-gateway-task-definition \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -416,7 +416,7 @@ The following `delete-wireless-gateway-task` example deletes the wireless gatewa
 
 ```
 aws iotwireless delete-wireless-gateway-task \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -433,7 +433,7 @@ The following `delete-wireless-gateway` example deletes a wireless gateway that 
 
 ```
 aws iotwireless delete-wireless-gateway \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -468,7 +468,7 @@ The following `disassociate-wireless-device-from-thing` example disassociates a 
 
 ```
 aws iotwireless disassociate-wireless-device-from-thing \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Add your gateways and wireless devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-devices.html) in the *AWS IoT Developers Guide*.
@@ -481,11 +481,11 @@ The following code example shows how to use `disassociate-wireless-gateway-from-
 
 **AWS CLI**
 **To disassociate the certificate from the wireless gateway**
-The following `disassociate-wireless-gateway-from-certificate` disassociates a wireless gateway from its currently associated certificate.
+The following `disassociate-wireless-gateway-from-certificate` example disassociates a wireless gateway from its currently associated certificate.
 
 ```
 aws iotwireless disassociate-wireless-gateway-from-certificate \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Add your gateways and wireless devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-devices.html) in the *AWS IoT Developers Guide*.
@@ -502,7 +502,7 @@ The following `disassociate-wireless-gateway-from-thing` example disassociates a
 
 ```
 aws iotwireless disassociate-wireless-gateway-from-thing \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Add your gateways and wireless devices to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-onboard-devices.html) in the *AWS IoT Developers Guide*.
@@ -525,7 +525,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:Destination/IoTWirelessDestination",
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination",
     "Name": "IoTWirelessDestination",
     "Expression": "IoTWirelessRule",
     "ExpressionType": "RuleName",
@@ -546,14 +546,14 @@ The following `get-device-profile` example gets information about the device pro
 
 ```
 aws iotwireless get-device-profile \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:DeviceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-    "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d",
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:DeviceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LoRaWAN": {
     "MacVersion": "1.0.3",
     "MaxDutyCycle": 10,
@@ -615,32 +615,8 @@ Output:
 ```
 {
     "ServiceType": "CUPS",
-    "ServiceEndpoint": "https://A1RMKZ37ACAGOT.cups.lorawan.us-east-1.amazonaws.com:443",
-    "ServerTrust": "-----BEGIN CERTIFICATE-----\n
-    MIIESTCCAzGgAwIBAgITBn+UV4WH6Kx33rJTMlu8mYtWDTANBgkqhkiG9w0BAQsF\n
-    ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\n
-    b24gUm9vdCBDQSAxMB4XDTE1MTAyMjAwMDAwMFoXDTI1MTAxOTAwMDAwMFowRjEL\n
-    MAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEVMBMGA1UECxMMU2VydmVyIENB\n
-    IDFCMQ8wDQYDVQQDEwZBbWF6b24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\n
-    AoIBAQDCThZn3c68asg3Wuw6MLAd5tES6BIoSMzoKcG5blPVo+sDORrMd4f2AbnZ\n
-    cMzPa43j4wNxhplty6aUKk4T1qe9BOwKFjwK6zmxxLVYo7bHViXsPlJ6qOMpFge5\n
-    blDP+18x+B26A0piiQOuPkfyDyeR4xQghfj66Yo19V+emU3nazfvpFA+ROz6WoVm\n
-    B5x+F2pV8xeKNR7u6azDdU5YVX1TawprmxRC1+WsAYmz6qP+z8ArDITC2FMVy2fw\n
-    0IjKOtEXc/VfmtTFch5+AfGYMGMqqvJ6LcXiAhqG5TI+Dr0RtM88k+8XUBCeQ8IG\n
-    KuANaL7TiItKZYxK1MMuTJtV9IblAgMBAAGjggE7MIIBNzASBgNVHRMBAf8ECDAG\n
-    AQH/AgEAMA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUWaRmBlKge5WSPKOUByeW\n
-    dFv5PdAwHwYDVR0jBBgwFoAUhBjMhTTsvAyUlC4IWZzHshBOCggwewYIKwYBBQUH\n
-    AQEEbzBtMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5yb290Y2ExLmFtYXpvbnRy\n
-    dXN0LmNvbTA6BggrBgEFBQcwAoYuaHR0cDovL2NydC5yb290Y2ExLmFtYXpvbnRy\n
-    dXN0LmNvbS9yb290Y2ExLmNlcjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3Js\n
-    LnJvb3RjYTEuYW1hem9udHJ1c3QuY29tL3Jvb3RjYTEuY3JsMBMGA1UdIAQMMAow\n
-    CAYGZ4EMAQIBMA0GCSqGSIb3DQEBCwUAA4IBAQCFkr41u3nPo4FCHOTjY3NTOVI1\n
-    59Gt/a6ZiqyJEi+752+a1U5y6iAwYfmXss2lJwJFqMp2PphKg5625kXg8kP2CN5t\n
-    6G7bMQcT8C8xDZNtYTd7WPD8UZiRKAJPBXa30/AbwuZe0GaFEQ8ugcYQgSn+IGBI\n
-    8/LwhBNTZTUVEWuCUUBVV18YtbAiPq3yXqMB48Oz+ctBWuZSkbvkNodPLamkB2g1\n
-    upRyzQ7qDn1X8nn8N8V7YJ6y68AtkHcNSRAnpTitxBKjtKPISLMVCx7i4hncxHZS\n
-    yLyKQXhw2W2Xs0qLeC1etA+jTGDK4UfLeC0SF7FSi8o5LL21L8IzApar2pR/\n
-    -----END CERTIFICATE-----\n"
+    "ServiceEndpoint": "https://A1RMKZ37ACAGOT.cups.lorawan.us-west-2.amazonaws.com:443",
+    "ServerTrust": "-----BEGIN CERTIFICATE-----\nMIIESTCCAzGgAwIBAgITBn+UV4WH6Kx33rJTMlu8mYtWDTANBgkqhkiG9w0BAQsF\nADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\nb24gUm9vdCBDQSAxMB4XDTE1MTAyMjAwMDAwMFoXDTI1MTAxOTAwMDAwMFowRjEL\nMAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEVMBMGA1UECxMMU2VydmVyIENB\nIDFCMQ8wDQYDVQQDEwZBbWF6b24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK\nAoIBAQDCThZn3c68asg3Wuw6MLAd5tES6BIoSMzoKcG5blPVo+sDORrMd4f2AbnZ\ncMzPa43j4wNxhplty6aUKk4T1qe9BOwKFjwK6zmxxLVYo7bHViXsPlJ6qOMpFge5\nblDP+18x+B26A0piiQOuPkfyDyeR4xQghfj66Yo19V+emU3nazfvpFA+ROz6WoVm\nB5x+F2pV8xeKNR7u6azDdU5YVX1TawprmxRC1+WsAYmz6qP+z8ArDITC2FMVy2fw\n0IjKOtEXc/VfmtTFch5+AfGYMGMqqvJ6LcXiAhqG5TI+Dr0RtM88k+8XUBCeQ8IG\nKuANaL7TiItKZYxK1MMuTJtV9IblAgMBAAGjggE7MIIBNzASBgNVHRMBAf8ECDAG\nAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUWaRmBlKge5WSPKOUByeW\ndFv5PdAwHwYDVR0jBBgwFoAUhBjMhTTsvAyUlC4IWZzHshBOCggwewYIKwYBBQUH\nAQEEbzBtMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5yb290Y2ExLmFtYXpvbnRy\ndXN0LmNvbTA6BggrBgEFBQcwAoYuaHR0cDovL2NydC5yb290Y2ExLmFtYXpvbnRy\ndXN0LmNvbS9yb290Y2ExLmNlcjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3Js\nLnJvb3RjYTEuYW1hem9udHJ1c3QuY29tL3Jvb3RjYTEuY3JsMBMGA1UdIAQMMAow\nCAYGZ4EMAQIBMA0GCSqGSIb3DQEBCwUAA4IBAQCFkr41u3nPo4FCHOTjY3NTOVI1\n59Gt/a6ZiqyJEi+752+a1U5y6iAwYfmXss2lJwJFqMp2PphKg5625kXg8kP2CN5t\n6G7bMQcT8C8xDZNtYTd7WPD8UZiRKAJPBXa30/AbwuZe0GaFEQ8ugcYQgSn+IGBI\n8/LwhBNTZTUVEWuCUUBVV18YtbAiPq3yXqMB48Oz+ctBWuZSkbvkNodPLamkB2g1\nupRyzQ7qDn1X8nn8N8V7YJ6y68AtkHcNSRAnpTitxBKjtKPISLMVCx7i4hncxHZS\nyLyKQXhw2W2Xs0qLeC1etA+jTGDK4UfLeC0SF7FSi8o5LL21L8IzApar2pR/\n-----END CERTIFICATE-----\n"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -657,14 +633,14 @@ The following `get-service-profile` example gets information about the service p
 
 ```
 aws iotwireless get-service-profile \
-    --id {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:iotwireless:us-east-1:651419225604:ServiceProfile/538185bb-d7e7-4b95-96a0-c51aa4a5b9a0",
-    "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d",
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:ServiceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LoRaWAN": {
         "HrAllowed": false,
         "NwkGeoLoc": false,
@@ -699,13 +675,13 @@ The following `get-wireless-device-statistics` example gets operating informatio
 
 ```
 aws iotwireless get-wireless-device-statistics \
-    --wireless-device-id {{"1ffd32c8-8130-4194-96df-622f072a315f"}}
+    --wireless-device-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "WirelessDeviceId": "1ffd32c8-8130-4194-96df-622f072a315f"
+    "WirelessDeviceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -722,7 +698,7 @@ The following `get-wireless-device` example lists the available widgets in your 
 
 ```
 aws iotwireless get-wireless-device \
-    --identifier {{"1ffd32c8-8130-4194-96df-622f072a315f"}} \
+    --identifier {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --identifier-type {{WirelessDeviceID}}
 ```
 Output:
@@ -730,14 +706,14 @@ Output:
 ```
 {
     "Name": "myLoRaWANDevice",
-    "ThingArn": "arn:aws:iot:us-east-1:123456789012:thing/44b87eb4-9bce-423d-b5fc-973f5ecc358b",
+    "ThingArn": "arn:aws:iot:us-west-2:123456789012:thing/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "DestinationName": "IoTWirelessDestination",
-    "Id": "1ffd32c8-8130-4194-96df-622f072a315f",
-    "ThingName": "44b87eb4-9bce-423d-b5fc-973f5ecc358b",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "ThingName": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Type": "LoRaWAN",
     "LoRaWAN": {
-        "DeviceProfileId": "ab0c23d3-b001-45ef-6a01-2bc3de4f5333",
-        "ServiceProfileId": "fe98dc76-cd12-001e-2d34-5550432da100",
+        "DeviceProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "ServiceProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
         "OtaaV1_1": {
             "AppKey": "3f4ca100e2fc675ea123f4eb12c4a012",
             "JoinEui": "b4c231a359bc2e3d",
@@ -745,7 +721,7 @@ Output:
         },
         "DevEui": "ac12efc654d23fc2"
     },
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessDevice/1ffd32c8-8130-4194-96df-622f072a315f",
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessDevice/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Description": "My LoRaWAN wireless device"
 }
 ```
@@ -763,7 +739,7 @@ The following `get-wireless-gateway-certificate` example gets the certificate ID
 
 ```
 aws iotwireless get-wireless-gateway-certificate \
-    --id {{"6c44ab31-8b4d-407a-bed3-19b6c7cda551"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -786,7 +762,7 @@ The following `get-wireless-gateway-firmware-information` example gets firmware 
 
 ```
 aws iotwireless get-wireless-gateway-firmware-information \
-    --id {{"3039b406-5cc9-4307-925b-9948c63da25b"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -815,13 +791,13 @@ The following `get-wireless-gateway-statistics` example gets operating informati
 
 ```
 aws iotwireless get-wireless-gateway-statistics \
-    --wireless-gateway-id {{"3039b406-5cc9-4307-925b-9948c63da25b"}}
+    --wireless-gateway-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "WirelessGatewayId": "3039b406-5cc9-4307-925b-9948c63da25b"
+    "WirelessGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -838,7 +814,7 @@ The following `get-wireless-gateway-task-definition` example gets information ab
 
 ```
 aws iotwireless get-wireless-gateway-task-definition \
-    --id {{"b7d3baad-25c7-35e7-a4e1-1683a0d61da9"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -847,8 +823,8 @@ Output:
     "AutoCreateTasks": true,
     "Name": "TestAutoUpdate",
     "Update":{
-        "UpdateDataSource" : "s3://cupsalphagafirmwarebin/station",
-        "UpdateDataRole" : "arn:aws:iam::001234567890:role/SDK_Test_Role",
+        "UpdateDataSource" : "s3://amzn-s3-demo-bucket/station",
+        "UpdateDataRole" : "arn:aws:iam::123456789012:role/SDK_Test_Role",
         "LoRaWAN" :{
             "CurrentVersion" :{
                 "PackageVersion" : "1.0.0",
@@ -878,14 +854,14 @@ The following `get-wireless-gateway-task` example gets information about the wir
 
 ```
 aws iotwireless get-wireless-gateway-task \
-    --id {{"11693a46-6866-47c3-a031-c9a616e7644b"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "WirelessGatewayId": "6c44ab31-8b4d-407a-bed3-19b6c7cda551",
-    "WirelessGatewayTaskDefinitionId": "b7d3baad-25c7-35e7-a4e1-1683a0d61da9",
+    "WirelessGatewayId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "WirelessGatewayTaskDefinitionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "Status": "Success"
 }
 ```
@@ -903,7 +879,7 @@ The following `get-wireless-gateway` example gets information about the wireless
 
 ```
 aws iotwireless get-wireless-gateway \
-    --identifier {{"12345678-a1b2-3c45-67d8-e90fa1b2c34d"}} \
+    --identifier {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --identifier-type {{WirelessGatewayId}}
 ```
 Output:
@@ -911,14 +887,14 @@ Output:
 ```
 {
     "Description": "My first LoRaWAN gateway",
-    "ThingArn": "arn:aws:iot:us-east-1:123456789012:thing/a1b2c3d4-5678-90ab-cdef-12ab345c67de",
+    "ThingArn": "arn:aws:iot:us-west-2:123456789012:thing/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "LoRaWAN": {
         "RfRegion": "US915",
         "GatewayEui": "a1b2c3d4567890ab"
     },
-    "ThingName": "a1b2c3d4-5678-90ab-cdef-12ab345c67de",
-    "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-    "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessGateway/6c44ab31-8b4d-407a-bed3-19b6c7cda551",
+    "ThingName": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessGateway/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Name": "myFirstLoRaWANGateway"
 }
 ```
@@ -943,14 +919,14 @@ Output:
 {
     "DestinationList": [
         {
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:Destination/IoTWirelessDestination",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination",
             "Name": "IoTWirelessDestination",
             "Expression": "IoTWirelessRule",
             "Description": "Destination for messages processed using IoTWirelessRule",
             "RoleArn": "arn:aws:iam::123456789012:role/IoTWirelessDestinationRole"
         },
         {
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:Destination/IoTWirelessDestination2",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination2",
             "Name": "IoTWirelessDestination2",
             "Expression": "IoTWirelessRule2",
             "RoleArn": "arn:aws:iam::123456789012:role/IoTWirelessDestinationRole"
@@ -979,12 +955,12 @@ Output:
 {
     "DeviceProfileList": [
         {
-            "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:DeviceProfile/12345678-a1b2-3c45-67d8-e90fa1b2c34d"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:DeviceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "Id": "a1b2c3d4-5678-90ab-cdef-12ab345c67de",
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:DeviceProfile/a1b2c3d4-5678-90ab-cdef-12ab345c67de"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:DeviceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
@@ -1041,12 +1017,12 @@ Output:
 {
     "ServiceProfileList": [
         {
-            "Id": "12345678-a1b2-3c45-67d8-e90fa1b2c34d",
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:ServiceProfile/538185bb-d7e7-4b95-96a0-c51aa4a5b9a0"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:ServiceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "Id": "a1b2c3d4-5678-90ab-cdef-12ab345c67de",
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:ServiceProfile/ea8bc823-5d13-472e-8d26-9550737d8100"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:ServiceProfile/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
@@ -1065,7 +1041,7 @@ The following `list-tags-for-resource` example lists the tags assigned to a wire
 
 ```
 aws iotwireless list-tags-for-resource \
-    --resource-arn {{"arn:aws:iotwireless:us-east-1:123456789012:Destination/IoTWirelessDestination"}}
+    --resource-arn {{"arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination"}}
 ```
 Output:
 
@@ -1079,7 +1055,7 @@ Output:
     ]
 }
 ```
-For more information, see [Describe your AWS IoT Core for LoRaWAN resources](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-describe-resource.html) in the *AWS IoT Developers Guide*.
+For more information, see [Tagging your AWS IoT Wireless resources](https://docs.aws.amazon.com/iot-wireless/latest/developerguide/tagging-iotwireless.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-wireless-devices`
@@ -1102,12 +1078,12 @@ Output:
         {
             "Name": "myLoRaWANDevice",
             "DestinationName": "IoTWirelessDestination",
-            "Id": "1ffd32c8-8130-4194-96df-622f072a315f",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Type": "LoRaWAN",
             "LoRaWAN": {
                 "DevEui": "ac12efc654d23fc2"
             },
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessDevice/1ffd32c8-8130-4194-96df-622f072a315f"
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessDevice/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
@@ -1133,7 +1109,7 @@ Output:
 {
     "TaskDefinitions": [
         {
-            "Id": "b7d3baad-25c7-35e7-a4e1-1683a0d61da9",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LoRaWAN" :
                 {
                 "CurrentVersion" :{
@@ -1177,8 +1153,8 @@ Output:
                 "RfRegion": "US915",
                 "GatewayEui": "dac632ebc01d23e4"
             },
-            "Id": "3039b406-5cc9-4307-925b-9948c63da25b",
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessGateway/3039b406-5cc9-4307-925b-9948c63da25b",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessGateway/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "myFirstLoRaWANGateway"
         },
         {
@@ -1187,8 +1163,8 @@ Output:
                 "RfRegion": "US915",
                 "GatewayEui": "cda123fffe92ecd2"
             },
-            "Id": "3285bdc7-5a12-4991-84ed-dadca65e342e",
-            "Arn": "arn:aws:iotwireless:us-east-1:123456789012:WirelessGateway/3285bdc7-5a12-4991-84ed-dadca65e342e",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:iotwireless:us-west-2:123456789012:WirelessGateway/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "mySecondLoRaWANGateway"
         }
     ]
@@ -1208,7 +1184,7 @@ The following `send-data-to-wireless-device` example sends a decrypted applicati
 
 ```
 aws iotwireless send-data-to-wireless-device \
-    --id {{"11aa5eae-2f56-4b8e-a023-b28d98494e49"}} \
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --transmit-mode {{"1"}} \
     --payload-data {{"SGVsbG8gVG8gRGV2c2lt"}} \
     --wireless-metadata {{LoRaWAN={FPort=1}}}
@@ -1217,7 +1193,7 @@ Output:
 
 ```
 {
-    MessageId: "6011dd36-0043d6eb-0072-0008"
+    "MessageId": "6011dd36-0043d6eb-0072-0008"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -1234,11 +1210,11 @@ The following `tag-resource` example tags the wireless destination `IoTWirelessD
 
 ```
 aws iotwireless tag-resource \
-    --resource-arn {{"arn:aws:iotwireless:us-east-1:651419225604:Destination/IoTWirelessDestination"}} \
+    --resource-arn {{"arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination"}} \
     --tags Key="MyTag",Value="MyValue"
 ```
 This command produces no output.
-For more information, see [Describe your AWS IoT Core for LoRaWAN resources](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-describe-resource.html) in the *AWS IoT Developers Guide*.
+For more information, see [Tagging your AWS IoT Wireless resources](https://docs.aws.amazon.com/iot-wireless/latest/developerguide/tagging-iotwireless.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `test-wireless-device`
@@ -1252,13 +1228,13 @@ The following `test-wireless-device` example sends uplink data of `Hello` to a d
 
 ```
 aws iotwireless test-wireless-device \
-    --id {{"11aa5eae-2f56-4b8e-a023-b28d98494e49"}}
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    Result: "Test succeeded. one message is sent with payload: hello"
+    "Result": "Test succeeded. one message is sent with payload: hello"
 }
 ```
 For more information, see [Connecting devices and gateways to AWS IoT Core for LoRaWAN](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan.html) in the *AWS IoT Developers Guide*.
@@ -1275,11 +1251,11 @@ The following `untag-resource` example removes the tag `MyTag` and its value fro
 
 ```
 aws iotwireless untag-resource \
-    --resource-arn {{"arn:aws:iotwireless:us-east-1:123456789012:Destination/IoTWirelessDestination"}} \
+    --resource-arn {{"arn:aws:iotwireless:us-west-2:123456789012:Destination/IoTWirelessDestination"}} \
     --tag-keys {{"MyTag"}}
 ```
 This command produces no output.
-For more information, see [Describe your AWS IoT Core for LoRaWAN resources](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-describe-resource.html) in the *AWS IoT Developers Guide*.
+For more information, see [Tagging your AWS IoT Wireless resources](https://docs.aws.amazon.com/iot-wireless/latest/developerguide/tagging-iotwireless.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iotwireless/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-destination`
@@ -1307,7 +1283,7 @@ The following code example shows how to use `update-partner-account`.
 
 **AWS CLI**
 **To update the properties of a partner account**
-The following `update-partner-account` updates the `AppServerPrivateKey` for the account that has the specified ID.
+The following `update-partner-account` example updates the `AppServerPrivateKey` for the account that has the specified ID.
 
 ```
 aws iotwireless update-partner-account \
@@ -1330,7 +1306,7 @@ The following `update-wireless-device` example updates the properties of a wirel
 
 ```
 aws iotwireless update-wireless-device \
-    --id {{"1ffd32c8-8130-4194-96df-622f072a315f"}} \
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --destination-name {{IoTWirelessDestination2}} \
     --description {{"Using my first LoRaWAN device"}}
 ```
@@ -1349,7 +1325,7 @@ The following `update-wireless-gateway` example updates the description of your 
 
 ```
 aws iotwireless update-wireless-gateway \
-    --id {{"3285bdc7-5a12-4991-84ed-dadca65e342e"}} \
+    --id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --description {{"Using my LoRaWAN gateway"}}
 ```
 This command produces no output.

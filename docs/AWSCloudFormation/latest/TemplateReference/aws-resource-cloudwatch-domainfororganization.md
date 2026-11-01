@@ -59,7 +59,7 @@ The ARN of an IAM role in the management account that CloudWatch Omni assumes fo
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `IdentityProviderConfiguration`  <a name="cfn-cloudwatch-domainfororganization-identityproviderconfiguration"></a>
-Property description not available.
+Identity provider configuration for the domain.
 *Required*: No
 *Type*: [IdentityProviderConfiguration](aws-properties-cloudwatch-domainfororganization-identityproviderconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

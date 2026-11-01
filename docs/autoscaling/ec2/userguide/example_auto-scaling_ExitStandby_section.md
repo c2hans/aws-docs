@@ -12,7 +12,7 @@ The following code examples show how to use `ExitStandby`.
 
 **AWS CLI**
 **To move instances out of standby mode**
-This example moves the specified instance out of standby mode.
+The following `exit-standby` example moves the specified instance out of standby mode.
 
 ```
 aws autoscaling exit-standby \
@@ -25,7 +25,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "142928e1-a2dc-453a-9b24-b85ad6735928",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Description": "Moving EC2 instance out of Standby: i-061c63c5eb45f0416",
             "Cause": "At 2020-10-31T20:32:50Z instance i-061c63c5eb45f0416 was moved out of standby in response to a user request, increasing the capacity from 0 to 1.",

@@ -26,7 +26,7 @@ The following code example shows how to use `check-domain-availability`.
 
 **AWS CLI**
 **To determine whether you can register a domain name with Route 53**
-The following `check-domain-availability` command returns information about whether the domain name `example.com` is available to be registered using Route 53.
+The following `check-domain-availability` example returns information about whether the domain name `example.com` is available to be registered using Route 53.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -56,7 +56,7 @@ The following code example shows how to use `check-domain-transferability`.
 
 **AWS CLI**
 **To determine whether a domain can be transferred to Route 53**
-The following `check-domain-transferability` command returns information about whether you can transfer the domain name `example.com` to Route 53.
+The following `check-domain-transferability` example returns information about whether you can transfer the domain name `example.com` to Route 53.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -83,7 +83,7 @@ The following code example shows how to use `delete-tags-for-domain`.
 
 **AWS CLI**
 **To delete tags for a domain**
-The following `delete-tags-for-domain` command deletes three tags from the specified domain. Note that you specify only the tag key, not the tag value.
+The following `delete-tags-for-domain` example deletes three tags from the specified domain. Note that you specify only the tag key, not the tag value.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -103,7 +103,7 @@ The following code example shows how to use `disable-domain-auto-renew`.
 
 **AWS CLI**
 **To disable automatic renewal of a domain**
-The following `disable-domain-auto-renew` command configures Route 53 to *not* automatically renew the domain `example.com` before registration for the domain expires.
+The following `disable-domain-auto-renew` example configures Route 53 to *not* automatically renew the domain `example.com` before registration for the domain expires.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -112,7 +112,8 @@ aws route53domains disable-domain-auto-renew \
     --domain-name {{example.com}}
 ```
 This command produces no output.
-To confirm that the setting was changed, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) . If automatic renewal is disabled, the value of `AutoRenew` is `False`. For more information about automatic renewal, see Renewing Registration for a Domain <https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-renew.html in the *Amazon Route 53 Developer Guide*.
+To confirm that the setting was changed, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) . If automatic renewal is disabled, the value of `AutoRenew` is `False`.
+For more information, see [Renewing registration for a domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-renew.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [DisableDomainAutoRenew](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/disable-domain-auto-renew.html) in *AWS CLI Command Reference*.
 
 ### `disable-domain-transfer-lock`
@@ -122,7 +123,7 @@ The following code example shows how to use `disable-domain-transfer-lock`.
 
 **AWS CLI**
 **To disable the transfer lock on a domain**
-The following `disable-domain-transfer-lock` command removes the transfer lock on the domain `example.com` so that the domain can be transferred to another registrar. This command changes the `clientTransferProhibited` status.
+The following `disable-domain-transfer-lock` example removes the transfer lock on the domain `example.com` so that the domain can be transferred to another registrar. This command changes the `clientTransferProhibited` status.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -134,7 +135,7 @@ Output:
 
 ```
 {
-    "OperationId": "3f28e0ac-126a-4113-9048-cc930example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the transfer lock has been changed, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) . When the transfer lock is disabled, the value of `StatusList` does *not* include `clientTransferProhibited`.
@@ -148,7 +149,7 @@ The following code example shows how to use `enable-domain-auto-renew`.
 
 **AWS CLI**
 **To enable automatic renewal of a domain**
-The following `enable-domain-auto-renew` command configures Route 53 to automatically renew the domain `example.com` before registration for the domain expires.
+The following `enable-domain-auto-renew` example configures Route 53 to automatically renew the domain `example.com` before registration for the domain expires.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -157,7 +158,7 @@ aws route53domains enable-domain-auto-renew \
     --domain-name {{example.com}}
 ```
 This command produces no output. To confirm that the setting was changed, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) . If automatic renewal is enabled, the value of `AutoRenew` is `True`.
-For more information about automatic renewal, see Renewing Registration for a Domain <https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-renew.html in the *Amazon Route 53 Developer Guide*.
+For more information, see [Renewing registration for a domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-renew.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [EnableDomainAutoRenew](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/enable-domain-auto-renew.html) in *AWS CLI Command Reference*.
 
 ### `enable-domain-transfer-lock`
@@ -167,7 +168,7 @@ The following code example shows how to use `enable-domain-transfer-lock`.
 
 **AWS CLI**
 **To enable the transfer lock on a domain**
-The following `enable-domain-transfer-lock` command locks the specified domain so that it can't be transferred to another registrar. This command changes the `clientTransferProhibited` status.
+The following `enable-domain-transfer-lock` example locks the specified domain so that it can't be transferred to another registrar. This command changes the `clientTransferProhibited` status.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -179,7 +180,7 @@ Output:
 
 ```
 {
-    "OperationId": "3f28e0ac-126a-4113-9048-cc930example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the transfer lock has been changed, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) . When the transfer lock is enabled, the value of `StatusList` includes `clientTransferProhibited`.
@@ -193,7 +194,7 @@ The following code example shows how to use `get-contact-reachability-status`.
 
 **AWS CLI**
 **To determine whether the registrant contact has responded to a confirmation email**
-The following `get-contact-reachability-status` command returns information about whether the registrant contact for the specified domain has responded to a confirmation email.
+The following `get-contact-reachability-status` example returns information about whether the registrant contact for the specified domain has responded to a confirmation email.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -219,7 +220,7 @@ The following code example shows how to use `get-domain-detail`.
 
 **AWS CLI**
 **To get detailed information about a specified domain**
-The following `get-domain-detail` command displays detailed information about the specified domain.
+The following `get-domain-detail` example displays detailed information about the specified domain.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -308,6 +309,7 @@ Output:
     ]
 }
 ```
+For more information, see [Registering and managing domains using Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [GetDomainDetail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/get-domain-detail.html) in *AWS CLI Command Reference*.
 
 ### `get-domain-suggestions`
@@ -317,7 +319,7 @@ The following code example shows how to use `get-domain-suggestions`.
 
 **AWS CLI**
 **To get a list of suggested domain names**
-The following `get-domain-suggestions` command displays a list of suggested domain names based on the domain name `example.com`. The response includes only domain names that are available. This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
+The following `get-domain-suggestions` example displays a list of suggested domain names based on the domain name `example.com`. The response includes only domain names that are available. This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
 aws route53domains get-domain-suggestions \
@@ -350,7 +352,7 @@ Output:
         {
             "DomainName": "examplelist.com",
             "Availability": "AVAILABLE"
-       },
+        },
         {
             "DomainName": "examplenews.net",
             "Availability": "AVAILABLE"
@@ -370,6 +372,7 @@ Output:
     ]
 }
 ```
+For more information, see [Registering a new domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [GetDomainSuggestions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/get-domain-suggestions.html) in *AWS CLI Command Reference*.
 
 ### `get-operation-detail`
@@ -379,25 +382,26 @@ The following code example shows how to use `get-operation-detail`.
 
 **AWS CLI**
 **To get the current status of an operation**
-Some domain registration operations operate asynchronously and return a response before they finish. These operations return an operation ID that you can use to get the current status. The following `get-operation-detail` command returns the status of the specified operation.
+The following `get-operation-detail` example returns the status of the specified operation. Some domain registration operations operate asynchronously and return a response before they finish. These operations return an operation ID that you can use to get the current status.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
 aws route53domains get-operation-detail \
     --region {{us-east-1}} \
-    --operation-id {{edbd8d63-7fe7-4343-9bc5-54033example}}
+    --operation-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "OperationId": "edbd8d63-7fe7-4343-9bc5-54033example",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Status": "SUCCESSFUL",
     "DomainName": "example.com",
     "Type": "DOMAIN_LOCK",
     "SubmittedDate": 1573749367.864
 }
 ```
+For more information, see [Viewing the status of a domain registration](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-view-status.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [GetOperationDetail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/get-operation-detail.html) in *AWS CLI Command Reference*.
 
 ### `list-domains`
@@ -407,11 +411,11 @@ The following code example shows how to use `list-domains`.
 
 **AWS CLI**
 **To list the domains that are registered with the current AWS account**
-The following `list-domains` command lists summary information about the domains that are registered with the current AWS account.
+The following `list-domains` example lists summary information about the domains that are registered with the current AWS account.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
-aws route53domains list-domains
+aws route53domains list-domains \
     --region {{us-east-1}}
 ```
 Output:
@@ -440,6 +444,7 @@ Output:
     ]
 }
 ```
+For more information, see [Registering and managing domains using Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ListDomains](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/list-domains.html) in *AWS CLI Command Reference*.
 
 ### `list-operations`
@@ -449,11 +454,11 @@ The following code example shows how to use `list-operations`.
 
 **AWS CLI**
 **To list the status of operations that return an operation ID**
-Some domain registration operations run asynchronously and return a response before they finish. These operations return an operation ID that you can use to get the current status. The following `list-operations` command lists summary information, including the status, about the current domain-registration operations.
+The following `list-operations` example lists summary information, including the status, about the current domain-registration operations. Some domain registration operations run asynchronously and return a response before they finish. These operations return an operation ID that you can use to get the current status.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
-aws route53domains list-operations
+aws route53domains list-operations \
     --region {{us-east-1}}
 ```
 Output:
@@ -462,25 +467,25 @@ Output:
 {
     "Operations": [
         {
-            "OperationId": "aab9822f-1da0-4bf3-8a15-fd4e0example",
+            "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "SUCCESSFUL",
             "Type": "DOMAIN_LOCK",
             "SubmittedDate": 1455321739.986
         },
         {
-            "OperationId": "c24379ed-76be-42f8-bdad-9379bexample",
+            "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Status": "SUCCESSFUL",
             "Type": "UPDATE_NAMESERVER",
             "SubmittedDate": 1468960475.109
         },
         {
-            "OperationId": "f47e1297-ef9e-4c2b-ae1e-a5fcbexample",
+            "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "SUCCESSFUL",
             "Type": "RENEW_DOMAIN",
             "SubmittedDate": 1473561835.943
         },
         {
-            "OperationId": "75584f23-b15f-459e-aed7-dc6f5example",
+            "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Status": "SUCCESSFUL",
             "Type": "UPDATE_DOMAIN_CONTACT",
             "SubmittedDate": 1547501003.41
@@ -494,6 +499,7 @@ The output includes all the operations that return an operation ID and that you 
 aws route53domains list-operations \
     --submitted-since {{1577836800}}
 ```
+For more information, see [Viewing the status of a domain registration](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-view-status.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ListOperations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/list-operations.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-domain`
@@ -503,7 +509,7 @@ The following code example shows how to use `list-tags-for-domain`.
 
 **AWS CLI**
 **To list tags for a domain**
-The following `list-tags-for-domain` command lists the tags that are currently associated with the specified domain.
+The following `list-tags-for-domain` example lists the tags that are currently associated with the specified domain.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -537,7 +543,7 @@ The following code example shows how to use `register-domain`.
 
 **AWS CLI**
 **To register a domain**
-The following `register-domain` command registers a domain, retrieving all parameter values from a JSON-formatted file.
+The following `register-domain` example registers a domain, retrieving all parameter values from a JSON-formatted file.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -600,12 +606,12 @@ Output:
 
 ```
 {
-    "OperationId": "b114c44a-9330-47d1-a6e8-a0b11example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation-detail`. For more information, see [get-operation-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-operation-detail.html) .
+For information about which top-level domains (TLDs) require values for `ExtraParams` and what the valid values are, see [Domains that you can register with Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-tld-list.html) in the *Amazon Route 53 Developer Guide*.
 For more information, see [Registering a New Domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) in the *Amazon Route 53 Developer Guide*.
-For information about which top-level domains (TLDs) require values for `ExtraParams` and what the valid values are, see [ExtraParam](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ExtraParam.html) in the *Amazon Route 53 API Reference*.
 +  For API details, see [RegisterDomain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/register-domain.html) in *AWS CLI Command Reference*.
 
 ### `renew-domain`
@@ -615,7 +621,7 @@ The following code example shows how to use `renew-domain`.
 
 **AWS CLI**
 **To renew a domain**
-The following `renew-domain` command renews the specified domain for five years. To get the value for `current-expiry-year`, use the `get-domain-detail` command, and convert the value of `ExpirationDate` from Unix format.
+The following `renew-domain` example renews the specified domain for five years. To get the value for `current-expiry-year`, use the `get-domain-detail` command, and convert the value of `ExpirationDate` from Unix format.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -629,7 +635,7 @@ Output:
 
 ```
 {
-    "OperationId": "3f28e0ac-126a-4113-9048-cc930example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation-detail`. For more information, see [get-operation-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-operation-detail.html).
@@ -644,7 +650,7 @@ The following code example shows how to use `resend-contact-reachability-email`.
 
 **AWS CLI**
 **To resend the confirmation email to the current email address for the registrant contact**
-The following `resend-contact-reachability-email` command resends the confirmation email to the current email address for the registrant contact for the example.com domain.
+The following `resend-contact-reachability-email` example resends the confirmation email to the current email address for the registrant contact for the example.com domain.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -672,7 +678,7 @@ The following code example shows how to use `retrieve-domain-auth-code`.
 
 **AWS CLI**
 **To get the authorization code for a domain so you can transfer the domain to another registrar**
-The following `retrieve-domain-auth-code` command gets the current authorization code for the example.com domain. You give this value to another domain registrar when you want to transfer the domain to that registrar.
+The following `retrieve-domain-auth-code` example gets the current authorization code for the example.com domain. You give this value to another domain registrar when you want to transfer the domain to that registrar.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -697,7 +703,7 @@ The following code example shows how to use `transfer-domain`.
 
 **AWS CLI**
 **To transfer a domain to Amazon Route 53**
-The following `transfer-domain` command transfers a domain to Route 53, with the parameters provided by the JSON-formatted file `C:\temp\transfer-domain.json`.
+The following `transfer-domain` example transfers a domain to Route 53, with the parameters provided by the JSON-formatted file `C:\temp\transfer-domain.json`.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -705,7 +711,7 @@ aws route53domains transfer-domain \
     --region {{us-east-1}} \
     --cli-input-json file://C:\temp\transfer-domain.json
 ```
-Contents of `transfer-domain.json`:
+Contents of `C:\temp\transfer-domain.json`:
 
 ```
 {
@@ -775,7 +781,7 @@ Output:
 
 ```
 {
-    "OperationId": "b114c44a-9330-47d1-a6e8-a0b11example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation-detail`. For more information, see [get-operation-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-operation-detail.html) .
@@ -789,7 +795,7 @@ The following code example shows how to use `update-domain-contact-privacy`.
 
 **AWS CLI**
 **To update the privacy settings for the contacts for a domain**
-The following `update-domain-contact-privacy` command turns off privacy protection for the administrative contact for the example.com domain. This command runs only in the `us-east-1` Region.
+The following `update-domain-contact-privacy` example turns off privacy protection for the administrative contact for the example.com domain. This command runs only in the `us-east-1` Region.
 If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -802,7 +808,7 @@ Output:
 
 ```
 {
-    "OperationId": "b3a219e9-d801-4244-b533-b7256example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run `get-operation-detail`. For more information, see [get-operation-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-operation-detail.html) .
@@ -816,7 +822,7 @@ The following code example shows how to use `update-domain-contact`.
 
 **AWS CLI**
 **To update the contact information for a domain**
-The following `update-domain-contact` command updates the contact information for a domain, getting the parameters from the JSON-formatted file `C:\temp\update-domain-contact.json`.
+The following `update-domain-contact` example updates the contact information for a domain, getting the parameters from the JSON-formatted file `C:\temp\update-domain-contact.json`.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -824,7 +830,7 @@ aws route53domains update-domain-contact \
     --region {{us-east-1}} \
     --cli-input-json file://C:\temp\update-domain-contact.json
 ```
-Contents of `update-domain-contact.json`:
+Contents of `C:\temp\update-domain-contact.json`:
 
 ```
 {
@@ -877,7 +883,7 @@ Output:
 
 ```
 {
-    "OperationId": "b3a219e9-d801-4244-b533-b7256example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) . For more information, see [Updating Contact Information for a Domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-update-contacts.html#domain-update-contacts-basic) in the *Amazon Route 53 Developer Guide*.
@@ -890,7 +896,7 @@ The following code example shows how to use `update-domain-nameservers`.
 
 **AWS CLI**
 **To update the name servers for a domain**
-The following `update-domain-nameservers` command updates the name servers for a domain.
+The following `update-domain-nameservers` example updates the name servers for a domain.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -903,7 +909,7 @@ Output:
 
 ```
 {
-    "OperationId": "f1691ec4-0e7a-489e-82e0-b19d3example"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 To confirm that the operation succeeded, you can run [get-domain-detail](https://docs.aws.amazon.com/cli/latest/reference/route53domains/get-domain-detail.html) .
@@ -917,7 +923,7 @@ The following code example shows how to use `update-tags-for-domain`.
 
 **AWS CLI**
 **To add or update tags for a domain**
-The following `update-tags-for-domain` command adds or updates two keys and the corresponding values for the example.com domain. To update the value for a key, just include the key and the new value. You can add or update tags in only one domain at a time.
+The following `update-tags-for-domain` example adds or updates two keys and the corresponding values for the example.com domain. To update the value for a key, just include the key and the new value. You can add or update tags in only one domain at a time.
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -937,7 +943,7 @@ The following code example shows how to use `view-billing`.
 
 **AWS CLI**
 **To get billing information for domain registration charges for the current AWS account**
-The following `view-billing` command returns all the domain-related billing records for the current account for the period from January 1, 2018 (1514764800 in Unix time) and midnight on December 31, 2019 (1577836800 in Unix time).
+The following `view-billing` example returns all the domain-related billing records for the current account for the period from January 1, 2018 (1514764800 in Unix time) and midnight on December 31, 2019 (1577836800 in Unix time).
 This command runs only in the `us-east-1` Region. If your default region is set to `us-east-1`, you can omit the `region` parameter.
 
 ```
@@ -968,5 +974,5 @@ Output:
     ]
 }
 ```
-For more information, see [ViewBilling](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ViewBilling.html) in the *Amazon Route 53 API Reference*.
+For more information, see [Downloading a domain billing report](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-billing-report.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ViewBilling](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53domains/view-billing.html) in *AWS CLI Command Reference*.

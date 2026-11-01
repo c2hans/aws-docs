@@ -87,7 +87,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To terminate an instance in an Auto Scaling group**
-This example terminates the specified instance from the specified Auto Scaling group without updating the size of the group. Amazon EC2 Auto Scaling launches a replacement instance after the specified instance terminates.
+The following `terminate-instance-in-auto-scaling-group` example terminates the specified instance from the specified Auto Scaling group without updating the size of the group. Amazon EC2 Auto Scaling launches a replacement instance after the specified instance terminates.
 
 ```
 aws autoscaling terminate-instance-in-auto-scaling-group \
@@ -100,7 +100,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "8c35d601-793c-400c-fcd0-f64a27530df7",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Description": "Terminating EC2 instance: i-061c63c5eb45f0416",
             "Cause": "",
@@ -112,6 +112,7 @@ Output:
     ]
 }
 ```
+For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-manually.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [TerminateInstanceInAutoScalingGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/terminate-instance-in-auto-scaling-group.html) in *AWS CLI Command Reference*.
 
 ------

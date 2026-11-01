@@ -30,7 +30,7 @@ The following `associate-role-to-group` example associates the specified IAM rol
 
 ```
 aws greengrass associate-role-to-group \
-    --group-id {{2494ee3f-7f8a-4e92-a78b-d205f808b84b}} \
+    --group-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --role-arn {{arn:aws:iam::123456789012:role/GG-Group-Role}}
 ```
 Output:
@@ -40,7 +40,7 @@ Output:
     "AssociatedAt": "2019-09-10T20:03:30Z"
 }
 ```
-For more information, see [Configure the Group Role](https://docs.aws.amazon.com/greengrass/latest/developerguide/config-iam-roles.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configure the group role](https://docs.aws.amazon.com/greengrass/v1/developerguide/config-iam-roles.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [AssociateRoleToGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/associate-role-to-group.html) in *AWS CLI Command Reference*.
 
 ### `associate-service-role-to-account`
@@ -63,7 +63,7 @@ Output:
     "AssociatedAt": "2019-06-25T18:12:45Z"
 }
 ```
-For more information, see [Greengrass Service Role](https://docs.aws.amazon.com/greengrass/latest/developerguide/service-role.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Greengrass service role](https://docs.aws.amazon.com/greengrass/v1/developerguide/service-role.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [AssociateServiceRoleToAccount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/associate-service-role-to-account.html) in *AWS CLI Command Reference*.
 
 ### `create-connector-definition-version`
@@ -77,19 +77,20 @@ The following `create-connector-definition-version` example creates a connector 
 
 ```
 aws greengrass create-connector-definition-version \
-    --connector-definition-id {{"55d0052b-0d7d-44d6-b56f-21867215e118"}} \
+    --connector-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --connectors "[{\"Id\": \"MyTwilioNotificationsConnector\", \"ConnectorArn\": \"arn:aws:greengrass:us-west-2::/connectors/TwilioNotifications/versions/2\", \"Parameters\": {\"TWILIO_ACCOUNT_SID\": \"AC1a8d4204890840d7fc482aab38090d57\", \"TwilioAuthTokenSecretArn\": \"arn:aws:secretsmanager:us-west-2:123456789012:secret:greengrass-TwilioAuthToken-ntSlp6\", \"TwilioAuthTokenSecretArn-ResourceId\": \"TwilioAuthToken\", \"DefaultFromPhoneNumber\": \"4254492999\"}}]"
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/55d0052b-0d7d-44d6-b56f-21867215e118/versions/33f709a0-c825-49cb-9eea-dc8964fbd635",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-24T20:46:30.134Z",
-    "Id": "55d0052b-0d7d-44d6-b56f-21867215e118",
-    "Version": "33f709a0-c825-49cb-9eea-dc8964fbd635"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Getting started with Greengrass connectors (CLI)](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateConnectorDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-connector-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-connector-definition`
@@ -110,16 +111,16 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-19T19:30:01.300Z",
-    "Id": "b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-19T19:30:01.300Z",
-    "LatestVersion": "63c57963-c7c2-4a26-a7e2-7bf478ea2623",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8/versions/63c57963-c7c2-4a26-a7e2-7bf478ea2623",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "MySNSConnector"
 }
 ```
-For more information, see [Getting Started with Greengrass Connectors (CLI)](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors-cli.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Getting started with Greengrass connectors (CLI)](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateConnectorDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-connector-definition.html) in *AWS CLI Command Reference*.
 
 ### `create-core-definition-version`
@@ -130,7 +131,7 @@ The following code example shows how to use `create-core-definition-version`.
 **AWS CLI**
 **To create a core definition version**
 The following `create-core-definition-version` example creates a core definition version and associates it with the specified core definition. The version can contain one core only. Before you can create a core, you must first create and provision the corresponding AWS IoT thing. This process includes the following `iot` commands, which return the `ThingArn` and `CertificateArn` required for the `create-core-definition-version` command.
-Create the AWS IoT thing that corresponds to the core device:
+Create the AWS IoT thing that corresponds to the core device.
 
 ```
 aws iot create-thing \
@@ -142,7 +143,7 @@ Output:
 {
     "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyCoreDevice",
     "thingName": "MyCoreDevice",
-    "thingId": "cb419a19-9099-4515-9cec-e9b0e760608a"
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 Create public and private keys and the core device certificate for the thing. This example uses the `create-keys-and-certificate` command and requires write permissions to the current directory. Alternatively, you can use the `create-certificate-from-csr` command.
@@ -184,7 +185,7 @@ Output:
     "policyVersionId": "1"
 }
 ```
-Attach the policy to the certificate:
+Attach the policy to the certificate.
 
 ```
 aws iot attach-policy \
@@ -192,7 +193,7 @@ aws iot attach-policy \
     --target "arn:aws:iot:us-west-2:123456789012:cert/123a15ec415668c2349a76170b64ac0878231c1e21ec83c10e92a1EXAMPLExyz"
 ```
 This command produces no output.
-Attach the thing to the certificate:
+Attach the thing to the certificate.
 
 ```
 aws iot attach-thing-principal \
@@ -200,24 +201,24 @@ aws iot attach-thing-principal \
     --principal "arn:aws:iot:us-west-2:123456789012:cert/123a15ec415668c2349a76170b64ac0878231c1e21ec83c10e92a1EXAMPLExyz"
 ```
 This command produces no output.
-Create the core definition version:
+Create the core definition version.
 
 ```
 aws greengrass create-core-definition-version \
-    --core-definition-id "582efe12-b05a-409e-9a24-a2ba1bcc4a12" \
+    --core-definition-id "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222" \
     --cores "[{\"Id\":\"MyCoreDevice\",\"ThingArn\":\"arn:aws:iot:us-west-2:123456789012:thing/MyCoreDevice\",\"CertificateArn\":\"arn:aws:iot:us-west-2:123456789012:cert/123a15ec415668c2349a76170b64ac0878231c1e21ec83c10e92a1EXAMPLExyz\",\"SyncShadow\":true}]"
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/582efe12-b05a-409e-9a24-a2ba1bcc4a12/versions/3fdc1190-2ce5-44de-b98b-eec8f9571014",
-    "Version": "3fdc1190-2ce5-44de-b98b-eec8f9571014",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "CreationTimestamp": "2019-09-18T00:15:09.838Z",
-    "Id": "582efe12-b05a-409e-9a24-a2ba1bcc4a12"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Configure the AWS IoT Greengrass Core](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateCoreDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-core-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-core-definition`
@@ -237,16 +238,16 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/b5c08008-54cb-44bd-9eec-c121b04283b5",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-25T18:23:22.106Z",
-    "Id": "b5c08008-54cb-44bd-9eec-c121b04283b5",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-25T18:23:22.106Z",
     "Name": "cliGroup_Core"
 }
 ```
 **Example 2: To create a core definition with an initial version**
 The following `create-core-definition` example creates a core definition that contains an initial core definition version. The version can contain one core only. Before you can create a core, you must first create and provision the corresponding AWS IoT thing. This process includes the following `iot` commands, which return the `ThingArn` and `CertificateArn` required for the `create-core-definition` command.
-Create the AWS IoT thing that corresponds to the core device:
+Create the AWS IoT thing that corresponds to the core device.
 
 ```
 aws iot create-thing \
@@ -258,7 +259,7 @@ Output:
 {
     "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/MyCoreDevice",
     "thingName": "MyCoreDevice",
-    "thingId": "cb419a19-9099-4515-9cec-e9b0e760608a"
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 Create public and private keys and the core device certificate for the thing. This example uses the `create-keys-and-certificate` command and requires write permissions to the current directory. Alternatively, you can use the `create-certificate-from-csr` command.
@@ -300,7 +301,7 @@ Output:
     "policyVersionId": "1"
 }
 ```
-Attach the policy to the certificate:
+Attach the policy to the certificate.
 
 ```
 aws iot attach-policy \
@@ -308,7 +309,7 @@ aws iot attach-policy \
     --target "arn:aws:iot:us-west-2:123456789012:cert/123a15ec415668c2349a76170b64ac0878231c1e21ec83c10e92a1EXAMPLExyz"
 ```
 This command produces no output.
-Attach the thing to the certificate:
+Attach the thing to the certificate.
 
 ```
 aws iot attach-thing-principal \
@@ -316,7 +317,7 @@ aws iot attach-thing-principal \
     --principal "arn:aws:iot:us-west-2:123456789012:cert/123a15ec415668c2349a76170b64ac0878231c1e21ec83c10e92a1EXAMPLExyz"
 ```
 This command produces no output.
-Create the core definition:
+Create the core definition.
 
 ```
 aws greengrass create-core-definition \
@@ -327,16 +328,16 @@ Output:
 
 ```
 {
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/582efe12-b05a-409e-9a24-a2ba1bcc4a12/versions/cc87b5b3-8f4b-465d-944c-1d6de5dbfcdb",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
     "Name": "MyCores",
     "LastUpdatedTimestamp": "2019-09-18T00:11:06.197Z",
-    "LatestVersion": "cc87b5b3-8f4b-465d-944c-1d6de5dbfcdb",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
     "CreationTimestamp": "2019-09-18T00:11:06.197Z",
-    "Id": "582efe12-b05a-409e-9a24-a2ba1bcc4a12",
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/582efe12-b05a-409e-9a24-a2ba1bcc4a12"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
-For more information, see [Configure the AWS IoT Greengrass Core](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateCoreDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-core-definition.html) in *AWS CLI Command Reference*.
 
 ### `create-deployment`
@@ -351,18 +352,18 @@ The following `create-deployment` example deploys the specified version of a Gre
 ```
 aws greengrass create-deployment \
     --deployment-type {{NewDeployment}} \
-    --group-id {{"ce2e7d01-3240-4c24-b8e6-f6f6e7a9eeca"}} \
-    --group-version-id {{"dc40c1e9-e8c8-4d28-a84d-a9cad5f599c9"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --group-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "DeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/ce2e7d01-3240-4c24-b8e6-f6f6e7a9eeca/deployments/bfceb608-4e97-45bc-af5c-460144270308",
-    "DeploymentId": "bfceb608-4e97-45bc-af5c-460144270308"
+    "DeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/deployments/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "DeploymentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
-For more information, see [Getting Started with Connectors (CLI)](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Getting started with Greengrass connectors (CLI)](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-deployment.html) in *AWS CLI Command Reference*.
 
 ### `create-device-definition-version`
@@ -373,7 +374,7 @@ The following code example shows how to use `create-device-definition-version`.
 **AWS CLI**
 **To create a device definition version**
 The following `create-device-definition-version` example creates a device definition version and associates it with the specified device definition. The version defines two devices. Before you can create a Greengrass device, you must first create and provision the corresponding AWS IoT thing. This process includes the following `iot` commands that you must run to get the required information for the Greengrass command:
-Create the AWS IoT thing that corresponds to the device:
+Create the AWS IoT thing that corresponds to the device.
 
 ```
 aws iot create-thing \
@@ -385,10 +386,10 @@ Output:
 {
     "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/InteriorTherm",
     "thingName": "InteriorTherm",
-    "thingId": "01d4763c-78a6-46c6-92be-7add080394bf"
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-Create public and private keys and the device certificate for the thing. This example uses the `create-keys-and-certificate` command and requires write permissions to the current directory. Alternatively, you can use the `create-certificate-from-csr` command:
+Create public and private keys and the device certificate for the thing. This example uses the `create-keys-and-certificate` command and requires write permissions to the current directory. Alternatively, you can use the `create-certificate-from-csr` command.
 
 ```
 aws iot create-keys-and-certificate \
@@ -410,7 +411,7 @@ Output:
     "certificateId": "66a415ec415668c2349a76170b64ac0878231c1e21ec83c10e92a18bd568eb92"
 }
 ```
-Create an AWS IoT policy that allows `iot` and `greengrass` actions. For simplicity, the following policy allows actions on all resources, but your policy can be more restrictive:
+Create an AWS IoT policy that allows `iot` and `greengrass` actions. For simplicity, the following policy allows actions on all resources, but your policy can be more restrictive.
 
 ```
 aws iot create-policy \
@@ -427,14 +428,14 @@ Output:
     "policyVersionId": "1"
 }
 ```
-Attach the policy to the certificate:
+Attach the policy to the certificate.
 
 ```
 aws iot attach-policy \
     --policy-name "GG_Devices" \
     --target "arn:aws:iot:us-west-2:123456789012:cert/66a415ec415668c2349a76170b64ac0878231c1e21ec83c10e92a18bd568eb92"
 ```
-Attach the thing to the certificate
+Attach the thing to the certificate.
 
 ```
 aws iot attach-thing-principal \
@@ -445,19 +446,20 @@ After you create and configure the IoT thing as shown above, use the `ThingArn` 
 
 ```
 aws greengrass create-device-definition-version \
-    --device-definition-id {{"f9ba083d-5ad4-4534-9f86-026a45df1ccd"}} \
+    --device-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} \
     --devices "[{\"Id\":\"InteriorTherm\",\"ThingArn\":\"arn:aws:iot:us-west-2:123456789012:thing/InteriorTherm\",\"CertificateArn\":\"arn:aws:iot:us-west-2:123456789012:cert/66a415ec415668c2349a76170b64ac0878231c1e21ec83c10e92a18bd568eb92\",\"SyncShadow\":true},{\"Id\":\"ExteriorTherm\",\"ThingArn\":\"arn:aws:iot:us-west-2:123456789012:thing/ExteriorTherm\",\"CertificateArn\":\"arn:aws:iot:us-west-2:123456789012:cert/6c52ce1b47bde88a637e9ccdd45fe4e4c2c0a75a6866f8f63d980ee22fa51e02\",\"SyncShadow\":true}]"
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/83c13984-6fed-447e-84d5-5b8aa45d5f71",
-    "Version": "83c13984-6fed-447e-84d5-5b8aa45d5f71",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "CreationTimestamp": "2019-09-11T00:15:09.838Z",
-    "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateDeviceDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-device-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-device-definition`
@@ -468,7 +470,7 @@ The following code example shows how to use `create-device-definition`.
 **AWS CLI**
 **To create a device definition**
 The following `create-device-definition` example creates a device definition that contains an initial device definition version. The initial version defines two devices. Before you can create a Greengrass device, you must first create and provision the corresponding AWS IoT thing. This process includes the following `iot` commands that you must run to get the required information for the Greengrass command:
-Create the AWS IoT thing that corresponds to the device:
+Create the AWS IoT thing that corresponds to the device.
 
 ```
 aws iot create-thing \
@@ -480,10 +482,10 @@ Output:
 {
     "thingArn": "arn:aws:iot:us-west-2:123456789012:thing/InteriorTherm",
     "thingName": "InteriorTherm",
-    "thingId": "01d4763c-78a6-46c6-92be-7add080394bf"
+    "thingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-Create public and private keys and the device certificate for the thing. This example uses the `create-keys-and-certificate` command and requires write permissions to the current directory. Alternatively, you can use the `create-certificate-from-csr` command:
+Create public and private keys and the device certificate for the thing. This example uses the `create-keys-and-certificate` command and requires write permissions to the current directory. Alternatively, you can use the `create-certificate-from-csr` command.
 
 ```
 aws iot create-keys-and-certificate \
@@ -505,7 +507,7 @@ Output:
     "certificateId": "66a415ec415668c2349a76170b64ac0878231c1e21ec83c10e92a18bd568eb92"
 }
 ```
-Create an AWS IoT policy that allows `iot` and `greengrass` actions. For simplicity, the following policy allows actions on all resources, but your policy can be more restrictive:
+Create an AWS IoT policy that allows `iot` and `greengrass` actions. For simplicity, the following policy allows actions on all resources, but your policy can be more restrictive.
 
 ```
 aws iot create-policy \
@@ -522,14 +524,14 @@ Output:
     "policyVersionId": "1"
 }
 ```
-Attach the policy to the certificate:
+Attach the policy to the certificate.
 
 ```
 aws iot attach-policy \
     --policy-name "GG_Devices" \
     --target "arn:aws:iot:us-west-2:123456789012:cert/66a415ec415668c2349a76170b64ac0878231c1e21ec83c10e92a18bd568eb92"
 ```
-Attach the thing to the certificate
+Attach the thing to the certificate.
 
 ```
 aws iot attach-thing-principal \
@@ -547,15 +549,16 @@ Output:
 
 ```
 {
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/3b5cc510-58c1-44b5-9d98-4ad858ffa795",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "Name": "Sensors",
     "LastUpdatedTimestamp": "2019-09-11T00:11:06.197Z",
-    "LatestVersion": "3b5cc510-58c1-44b5-9d98-4ad858ffa795",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "CreationTimestamp": "2019-09-11T00:11:06.197Z",
-    "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd",
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateDeviceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-device-definition.html) in *AWS CLI Command Reference*.
 
 ### `create-function-definition-version`
@@ -569,18 +572,19 @@ The following `create-function-definition-version` example creates a new version
 
 ```
 aws greengrass create-function-definition-version \
-    --cli-input-json "{\"FunctionDefinitionId\": \"e626e8c9-3b8f-4bf3-9cdc-d26ecdeb9fa3\",\"Functions\": [{\"Id\": \"Hello-World-function\", \"FunctionArn\": \""arn:aws:lambda:us-west-2:123456789012:function:Greengrass_HelloWorld_Counter:gghw-alias"\",\"FunctionConfiguration\": {\"Environment\": {\"AccessSysfs\": true},\"Executable\": \"greengrassHelloWorldCounter.function_handler\",\"MemorySize\": 16000,\"Pinned\": false,\"Timeout\": 25}}]}"
+    --cli-input-json "{\"FunctionDefinitionId\": \"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111\",\"Functions\": [{\"Id\": \"Hello-World-function\", \"FunctionArn\": \""arn:aws:lambda:us-west-2:123456789012:function:Greengrass_HelloWorld_Counter:gghw-alias"\",\"FunctionConfiguration\": {\"Environment\": {\"AccessSysfs\": true},\"Executable\": \"greengrassHelloWorldCounter.function_handler\",\"MemorySize\": 16000,\"Pinned\": false,\"Timeout\": 25}}]}"
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/e626e8c9-3b8f-4bf3-9cdc-d26ecdeb9fa3/versions/74abd1cc-637e-4abe-8684-9a67890f4043",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-25T22:03:43.376Z",
-    "Id": "e626e8c9-3b8f-4bf3-9cdc-d26ecdeb9fa3",
-    "Version": "74abd1cc-637e-4abe-8684-9a67890f4043"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateFunctionDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-function-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-function-definition`
@@ -601,16 +605,16 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/3b0d0080-87e7-48c6-b182-503ec743a08b",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-19T22:24:44.585Z",
-    "Id": "3b0d0080-87e7-48c6-b182-503ec743a08b",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-19T22:24:44.585Z",
-    "LatestVersion": "67f918b9-efb4-40b0-b87c-de8c9faf085b",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/3b0d0080-87e7-48c6-b182-503ec743a08b/versions/67f918b9-efb4-40b0-b87c-de8c9faf085b",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "MyGreengrassFunctions"
 }
 ```
-For more information, see [How to Configure Local Resource Access Using the AWS Command Line Interface](https://docs.aws.amazon.com/greengrass/latest/developerguide/lra-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [How to configure local resource access using the AWS command line interface](https://docs.aws.amazon.com/greengrass/v1/developerguide/lra-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateFunctionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-function-definition.html) in *AWS CLI Command Reference*.
 
 ### `create-group-certificate-authority`
@@ -624,16 +628,16 @@ The following `create-group-certificate-authority` example creates or rotates a 
 
 ```
 aws greengrass create-group-certificate-authority \
-    --group-id {{"8eaadd72-ce4b-4f15-892a-0cc4f3a343f1"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "GroupCertificateAuthorityArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/8eaadd72-ce4b-4f15-892a-0cc4f3a343f1/certificateauthorities/d31630d674c4437f6c5dbc0dca56312a902171ce2d086c38e509c8EXAMPLEcc5"
+    "GroupCertificateAuthorityArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/certificateauthorities/d31630d674c4437f6c5dbc0dca56312a902171ce2d086c38e509c8EXAMPLEcc5"
 }
 ```
-For more information, see [AWS IoT Greengrass Security](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-sec.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Overview of AWS IoT Greengrass security](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateGroupCertificateAuthority](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-group-certificate-authority.html) in *AWS CLI Command Reference*.
 
 ### `create-group-version`
@@ -665,7 +669,7 @@ Output:
     "Version": "e10b0459-4345-4a09-88a4-1af1f5d34638"
 }
 ```
-For more information, see [Overview of the AWS IoT Greengrass Group Object Model](https://docs.aws.amazon.com/greengrass/latest/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateGroupVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-group-version.html) in *AWS CLI Command Reference*.
 
 ### `create-group`
@@ -685,14 +689,14 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/4e22bd92-898c-436b-ade5-434d883ff749",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-25T18:07:17.688Z",
-    "Id": "4e22bd92-898c-436b-ade5-434d883ff749",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-25T18:07:17.688Z",
     "Name": "cli-created-group"
 }
 ```
-For more information, see [Overview of the AWS IoT Greengrass Group Object Model](https://docs.aws.amazon.com/greengrass/latest/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-group.html) in *AWS CLI Command Reference*.
 
 ### `create-logger-definition-version`
@@ -706,20 +710,20 @@ The following `create-logger-definition-version` example creates a logger defini
 
 ```
 aws greengrass create-logger-definition-version \
-    --logger-definition-id {{"a454b62a-5d56-4ca9-bdc4-8254e1662cb0"}} \
+    --logger-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --loggers "[{\"Id\":\"1\",\"Component\":\"GreengrassSystem\",\"Level\":\"ERROR\",\"Space\":10240,\"Type\":\"FileSystem\"},{\"Id\":\"2\",\"Component\":\"Lambda\",\"Level\":\"INFO\",\"Space\":10240,\"Type\":\"FileSystem\"},{\"Id\":\"3\",\"Component\":\"GreengrassSystem\",\"Level\":\"WARN\",\"Type\":\"AWSCloudWatch\"},{\"Id\":\"4\",\"Component\":\"Lambda\",\"Level\":\"INFO\",\"Type\":\"AWSCloudWatch\"}]"
 ```
 Output:
 
 ```
 {
- "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a454b62a-5d56-4ca9-bdc4-8254e1662cb0/versions/49aedb1e-01a3-4d39-9871-3a052573f1ea",
- "Version": "49aedb1e-01a3-4d39-9871-3a052573f1ea",
- "CreationTimestamp": "2019-07-24T00:04:48.523Z",
- "Id": "a454b62a-5d56-4ca9-bdc4-8254e1662cb0"
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "CreationTimestamp": "2019-07-24T00:04:48.523Z",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Monitoring with AWS IoT Greengrass Logs](https://docs.aws.amazon.com/greengrass/latest/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateLoggerDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-logger-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-logger-definition`
@@ -740,16 +744,16 @@ Output:
 
 ```
 {
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a454b62a-5d56-4ca9-bdc4-8254e1662cb0/versions/de1d9854-1588-4525-b25e-b378f60f2322",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "LoggingConfigs",
     "LastUpdatedTimestamp": "2019-07-23T23:52:17.165Z",
-    "LatestVersion": "de1d9854-1588-4525-b25e-b378f60f2322",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-07-23T23:52:17.165Z",
-    "Id": "a454b62a-5d56-4ca9-bdc4-8254e1662cb0",
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a454b62a-5d56-4ca9-bdc4-8254e1662cb0"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Monitoring with AWS IoT Greengrass Logs](https://docs.aws.amazon.com/greengrass/latest/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateLoggerDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-logger-definition.html) in *AWS CLI Command Reference*.
 
 ### `create-resource-definition-version`
@@ -763,19 +767,20 @@ The following `create-resource-definition-version` example creates a new version
 
 ```
 aws greengrass create-resource-definition-version \
-    --resource-definition-id {{"c8bb9ebc-c3fd-40a4-9c6a-568d75569d38"}} \
+    --resource-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --resources "[{\"Id\": \"TwilioAuthToken\",\"Name\": \"MyTwilioAuthToken\",\"ResourceDataContainer\": {\"SecretsManagerSecretResourceData\": {\"ARN\": \"arn:aws:secretsmanager:us-west-2:123456789012:secret:greengrass-TwilioAuthToken-ntSlp6\"}}}]"
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/c8bb9ebc-c3fd-40a4-9c6a-568d75569d38/versions/b3bcada0-5fb6-42df-bf0b-1ee4f15e769e",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-24T21:17:25.623Z",
-    "Id": "c8bb9ebc-c3fd-40a4-9c6a-568d75569d38",
-    "Version": "b3bcada0-5fb6-42df-bf0b-1ee4f15e769e"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Deploy secrets to the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/secrets.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateResourceDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-resource-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-resource-definition`
@@ -796,16 +801,16 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/c8bb9ebc-c3fd-40a4-9c6a-568d75569d38",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-19T21:51:28.212Z",
-    "Id": "c8bb9ebc-c3fd-40a4-9c6a-568d75569d38",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-19T21:51:28.212Z",
-    "LatestVersion": "a5f94d0b-f6bc-40f4-bb78-7a1c5fe13ba1",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/c8bb9ebc-c3fd-40a4-9c6a-568d75569d38/versions/a5f94d0b-f6bc-40f4-bb78-7a1c5fe13ba1",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "MyGreengrassResources"
 }
 ```
-For more information, see [How to Configure Local Resource Access Using the AWS Command Line Interface](https://docs.aws.amazon.com/greengrass/latest/developerguide/lra-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [How to configure local resource access using the AWS command line interface](https://docs.aws.amazon.com/greengrass/v1/developerguide/lra-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateResourceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-resource-definition.html) in *AWS CLI Command Reference*.
 
 ### `create-software-update-job`
@@ -835,7 +840,7 @@ Output:
     "PlatformSoftwareVersion": "1.9.3"
 }
 ```
-For more information, see [OTA Updates of AWS IoT Greengrass Core Software](https://docs.aws.amazon.com/greengrass/latest/developerguide/core-ota-update.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [OTA updates of AWS IoT Greengrass Core software](https://docs.aws.amazon.com/greengrass/v1/developerguide/core-ota-update.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateSoftwareUpdateJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-software-update-job.html) in *AWS CLI Command Reference*.
 
 ### `create-subscription-definition-version`
@@ -849,19 +854,20 @@ The following `create-subscription-definition-version` example creates a new ver
 
 ```
 aws greengrass create-subscription-definition-version \
-    --subscription-definition-id {{"9d611d57-5d5d-44bd-a3b4-feccbdd69112"}} \
+    --subscription-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --subscriptions "[{\"Id\": \"TriggerNotification\", \"Source\": \"arn:aws:lambda:us-west-2:123456789012:function:TempMonitor:GG_TempMonitor\", \"Subject\": \"twilio/txt\", \"Target\": \"arn:aws:greengrass:us-west-2::/connectors/TwilioNotifications/versions/1\"},{\"Id\": \"TemperatureInput\", \"Source\": \"cloud\", \"Subject\": \"temperature/input\", \"Target\": \"arn:aws:lambda:us-west-2:123456789012:function:TempMonitor:GG_TempMonitor\"},{\"Id\": \"OutputStatus\", \"Source\": \"arn:aws:greengrass:us-west-2::/connectors/TwilioNotifications/versions/1\", \"Subject\": \"twilio/message/status\", \"Target\": \"cloud\"}]"
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/9d611d57-5d5d-44bd-a3b4-feccbdd69112/versions/7b65dfae-50b6-4d0f-b3e0-27728bfb0620",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-24T21:21:33.837Z",
-    "Id": "9d611d57-5d5d-44bd-a3b4-feccbdd69112",
-    "Version": "7b65dfae-50b6-4d0f-b3e0-27728bfb0620"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Configure subscriptions](https://docs.aws.amazon.com/greengrass/v1/developerguide/config_subs.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateSubscriptionDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-subscription-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `create-subscription-definition`
@@ -881,15 +887,15 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/9d611d57-5d5d-44bd-a3b4-feccbdd69112",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-19T22:34:26.677Z",
-    "Id": "9d611d57-5d5d-44bd-a3b4-feccbdd69112",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-19T22:34:26.677Z",
-    "LatestVersion": "aa645c47-ac90-420d-9091-8c7ffa4f103f",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/9d611d57-5d5d-44bd-a3b4-feccbdd69112/versions/aa645c47-ac90-420d-9091-8c7ffa4f103f"
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Getting Started with Connectors (CLI)](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Getting started with Greengrass connectors (CLI)](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [CreateSubscriptionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/create-subscription-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-connector-definition`
@@ -903,9 +909,10 @@ The following `delete-connector-definition` example deletes the specified Greeng
 
 ```
 aws greengrass delete-connector-definition \
-    --connector-definition-id {{"b5c4ebfd-f672-49a3-83cd-31c7216a7bb8"}}
+    --connector-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Integrate with services and protocols using Greengrass connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteConnectorDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-connector-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-core-definition`
@@ -919,9 +926,10 @@ The following `delete-core-definition` example deletes the specified Greengrass 
 
 ```
 aws greengrass delete-core-definition \
-    --core-definition-id {{"ff36cc5f-9f98-4994-b468-9d9b6dc52abd"}}
+    --core-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteCoreDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-core-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-device-definition`
@@ -935,9 +943,10 @@ The following `delete-device-definition` example deletes the specified device de
 
 ```
 aws greengrass delete-device-definition \
-    --device-definition-id {{"f9ba083d-5ad4-4534-9f86-026a45df1ccd"}}
+    --device-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteDeviceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-device-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-function-definition`
@@ -951,9 +960,10 @@ The following `delete-function-definition` example deletes the specified Greengr
 
 ```
 aws greengrass delete-function-definition \
-    --function-definition-id {{"fd4b906a-dff3-4c1b-96eb-52ebfcfac06a"}}
+    --function-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteFunctionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-function-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-group`
@@ -967,9 +977,10 @@ The following `delete-group` example deletes the specified Greengrass group.
 
 ```
 aws greengrass delete-group \
-    --group-id {{"4e22bd92-898c-436b-ade5-434d883ff749"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-logger-definition`
@@ -983,10 +994,10 @@ The following `delete-logger-definition` example deletes the specified logger de
 
 ```
 aws greengrass delete-logger-definition \
-    --logger-definition-id {{"a454b62a-5d56-4ca9-bdc4-8254e1662cb0"}}
+    --logger-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
-For more information, see [Monitoring with AWS IoT Greengrass Logs](https://docs.aws.amazon.com/greengrass/latest/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteLoggerDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-logger-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-resource-definition`
@@ -1000,9 +1011,10 @@ The following `delete-resource-definition` example deletes the specified resourc
 
 ```
 aws greengrass delete-resource-definition \
-    --resource-definition-id {{"ad8c101d-8109-4b0e-b97d-9cc5802ab658"}}
+    --resource-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Access local resources with Lambda functions and connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteResourceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-resource-definition.html) in *AWS CLI Command Reference*.
 
 ### `delete-subscription-definition`
@@ -1016,9 +1028,10 @@ The following `delete-subscription-definition` example deletes the specified Gre
 
 ```
 aws greengrass delete-subscription-definition \
-    --subscription-definition-id {{"cd6f1c37-d9a4-4e90-be94-01a7404f5967"}}
+    --subscription-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
+For more information, see [Configure subscriptions](https://docs.aws.amazon.com/greengrass/v1/developerguide/config_subs.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DeleteSubscriptionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/delete-subscription-definition.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-role-from-group`
@@ -1032,7 +1045,7 @@ The following `disassociate-role-from-group` example disassociates the IAM role 
 
 ```
 aws greengrass disassociate-role-from-group \
-    --group-id {{2494ee3f-7f8a-4e92-a78b-d205f808b84b}}
+    --group-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1041,7 +1054,7 @@ Output:
     "DisassociatedAt": "2019-09-10T20:05:49Z"
 }
 ```
-For more information, see [Configure the Group Role](https://docs.aws.amazon.com/greengrass/latest/developerguide/config-iam-roles.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configure the group role](https://docs.aws.amazon.com/greengrass/v1/developerguide/config-iam-roles.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DisassociateRoleFromGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/disassociate-role-from-group.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-service-role-from-account`
@@ -1063,7 +1076,7 @@ Output:
     "DisassociatedAt": "2019-06-25T22:12:55Z"
 }
 ```
-For more information, see [Greengrass Service Role](https://docs.aws.amazon.com/greengrass/latest/developerguide/service-role.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Greengrass service role](https://docs.aws.amazon.com/greengrass/v1/developerguide/service-role.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [DisassociateServiceRoleFromAccount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/disassociate-service-role-from-account.html) in *AWS CLI Command Reference*.
 
 ### `get-associated-role`
@@ -1077,7 +1090,7 @@ The following `get-associated-role` example gets the IAM role that's associated 
 
 ```
 aws greengrass get-associated-role \
-    --group-id {{2494ee3f-7f8a-4e92-a78b-d205f808b84b}}
+    --group-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1087,7 +1100,7 @@ Output:
     "AssociatedAt": "2019-09-10T20:03:30Z"
 }
 ```
-For more information, see [Configure the Group Role](https://docs.aws.amazon.com/greengrass/latest/developerguide/config-iam-roles.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configure the group role](https://docs.aws.amazon.com/greengrass/v1/developerguide/config-iam-roles.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetAssociatedRole](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-associated-role.html) in *AWS CLI Command Reference*.
 
 ### `get-bulk-deployment-status`
@@ -1101,7 +1114,7 @@ The following `get-bulk-deployment-status` example retrieves status information 
 
 ```
 aws greengrass get-bulk-deployment-status \
-    --bulk-deployment-id {{"870fb41b-6288-4e0c-bc76-a7ba4b4d3267"}}
+    --bulk-deployment-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1117,7 +1130,7 @@ Output:
     "tags": {}
 }
 ```
-For more information, see [Create Bulk Deployments for Groups](https://docs.aws.amazon.com/greengrass/latest/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Create bulk deployments for groups](https://docs.aws.amazon.com/greengrass/v1/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetBulkDeploymentStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-bulk-deployment-status.html) in *AWS CLI Command Reference*.
 
 ### `get-connectivity-info`
@@ -1165,6 +1178,7 @@ Output:
     ]
 }
 ```
+For more information, see [Activate automatic IP detection](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html#ip-auto-detect) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetConnectivityInfo](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-connectivity-info.html) in *AWS CLI Command Reference*.
 
 ### `get-connector-definition-version`
@@ -1178,14 +1192,14 @@ The following `get-connector-definition-version` example retrieves information a
 
 ```
 aws greengrass get-connector-definition-version \
-    --connector-definition-id {{"b5c4ebfd-f672-49a3-83cd-31c7216a7bb8"}} \
-    --connector-definition-version-id {{"63c57963-c7c2-4a26-a7e2-7bf478ea2623"}}
+    --connector-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --connector-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8/versions/63c57963-c7c2-4a26-a7e2-7bf478ea2623",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-19T19:30:01.300Z",
     "Definition": {
         "Connectors": [
@@ -1198,11 +1212,11 @@ Output:
             }
         ]
     },
-    "Id": "b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
-    "Version": "63c57963-c7c2-4a26-a7e2-7bf478ea2623"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Integrate with Services and Protocols Using Greengrass Connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Integrate with services and protocols using Greengrass connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetConnectorDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-connector-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-connector-definition`
@@ -1216,23 +1230,23 @@ The following `get-connector-definition` example retrieves information about the
 
 ```
 aws greengrass get-connector-definition \
-    --connector-definition-id {{"b5c4ebfd-f672-49a3-83cd-31c7216a7bb8"}}
+    --connector-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-19T19:30:01.300Z",
-    "Id": "b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-19T19:30:01.300Z",
-    "LatestVersion": "63c57963-c7c2-4a26-a7e2-7bf478ea2623",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8/versions/63c57963-c7c2-4a26-a7e2-7bf478ea2623",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "MySNSConnector",
     "tags": {}
 }
 ```
-For more information, see [Integrate with Services and Protocols Using Greengrass Connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Integrate with services and protocols using Greengrass connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetConnectorDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-connector-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-core-definition-version`
@@ -1246,29 +1260,30 @@ The following `get-core-definition-version` example retrieves information about 
 
 ```
 aws greengrass get-core-definition-version \
-    --core-definition-id {{"c906ed39-a1e3-4822-a981-7b9bd57b4b46"}}  \
-    --core-definition-version-id {{"42aeeac3-fd9d-4312-a8fd-ffa9404a20e0"}}
+    --core-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}  \
+    --core-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/c906ed39-a1e3-4822-a981-7b9bd57b4b46/versions/42aeeac3-fd9d-4312-a8fd-ffa9404a20e0",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-18T16:21:21.351Z",
     "Definition": {
         "Cores": [
             {
                 "CertificateArn": "arn:aws:iot:us-west-2:123456789012:cert/928dea7b82331b47c3ff77b0e763fc5e64e2f7c884e6ef391baed9b6b8e21b45",
-                "Id": "1a39aac7-0885-4417-91f6-23e4cea6c511",
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "SyncShadow": false,
                 "ThingArn": "arn:aws:iot:us-west-2:123456789012:thing/GGGroup4Pi3_Core"
             }
         ]
     },
-    "Id": "c906ed39-a1e3-4822-a981-7b9bd57b4b46",
-    "Version": "42aeeac3-fd9d-4312-a8fd-ffa9404a20e0"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetCoreDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-core-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-core-definition`
@@ -1282,21 +1297,22 @@ The following `get-core-definition` example retrieves information about the spec
 
 ```
 aws greengrass get-core-definition \
-    --core-definition-id {{"c906ed39-a1e3-4822-a981-7b9bd57b4b46"}}
+    --core-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/237d6916-27cf-457f-ba0c-e86cfb5d25cd",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2018-10-18T04:47:06.721Z",
-    "Id": "237d6916-27cf-457f-ba0c-e86cfb5d25cd",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2018-10-18T04:47:06.721Z",
-    "LatestVersion": "bd2cd6d4-2bc5-468a-8962-39e071e34b68",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/237d6916-27cf-457f-ba0c-e86cfb5d25cd/versions/bd2cd6d4-2bc5-468a-8962-39e071e34b68",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "tags": {}
 }
 ```
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetCoreDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-core-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-deployment-status`
@@ -1310,8 +1326,8 @@ The following `get-deployment-status` example retrieves the status for the speci
 
 ```
 aws greengrass get-deployment-status \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}} \
-    --deployment-id {{"1065b8a0-812b-4f21-9d5d-e89b232a530f"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --deployment-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
@@ -1322,6 +1338,7 @@ Output:
     "UpdatedAt": "2019-06-18T17:04:44.761Z"
 }
 ```
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetDeploymentStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-deployment-status.html) in *AWS CLI Command Reference*.
 
 ### `get-device-definition-version`
@@ -1335,8 +1352,8 @@ The following `get-device-definition-version` example retrieves information abou
 
 ```
 aws greengrass get-device-definition-version \
-    --device-definition-id {{"f9ba083d-5ad4-4534-9f86-026a45df1ccd"}} \
-    --device-definition-version-id {{"83c13984-6fed-447e-84d5-5b8aa45d5f71"}}
+    --device-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --device-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
@@ -1358,12 +1375,13 @@ Output:
             }
         ]
     },
-    "Version": "83c13984-6fed-447e-84d5-5b8aa45d5f71",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-09-11T00:15:09.838Z",
-    "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd",
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/83c13984-6fed-447e-84d5-5b8aa45d5f71"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Create client devices in an AWS IoT Greengrass group](https://docs.aws.amazon.com/greengrass/v1/developerguide/device-group.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetDeviceDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-device-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-device-definition`
@@ -1377,22 +1395,23 @@ The following `get-device-definition` example retrieves information about the sp
 
 ```
 aws greengrass get-device-definition \
-    --device-definition-id {{"f9ba083d-5ad4-4534-9f86-026a45df1ccd"}}
+    --device-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/83c13984-6fed-447e-84d5-5b8aa45d5f71",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "TemperatureSensors",
     "tags": {},
     "LastUpdatedTimestamp": "2019-09-11T00:19:03.698Z",
-    "LatestVersion": "83c13984-6fed-447e-84d5-5b8aa45d5f71",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-09-11T00:11:06.197Z",
-    "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd",
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Create client devices in an AWS IoT Greengrass group](https://docs.aws.amazon.com/greengrass/v1/developerguide/device-group.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetDeviceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-device-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-function-definition-version`
@@ -1402,18 +1421,18 @@ The following code example shows how to use `get-function-definition-version`.
 
 **AWS CLI**
 **To retrieve details about a specific version of a Lambda function**
-The following `get-function-definition-version` retrieves information about the specified version of the specified function definition. To retrieve the IDs of all versions of the function definition, use the `list-function-definition-versions` command. To retrieve the ID of the last version added to the function definition, use the `get-function-definition` command and check the `LatestVersion` property.
+The following `get-function-definition-version` example retrieves information about the specified version of the specified function definition. To retrieve the IDs of all versions of the function definition, use the `list-function-definition-versions` command. To retrieve the ID of the last version added to the function definition, use the `get-function-definition` command and check the `LatestVersion` property.
 
 ```
 aws greengrass get-function-definition-version \
-    --function-definition-id {{"063f5d1a-1dd1-40b4-9b51-56f8993d0f85"}} \
-    --function-definition-version-id {{"9748fda7-1589-4fcc-ac94-f5559e88678b"}}
+    --function-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --function-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/9748fda7-1589-4fcc-ac94-f5559e88678b",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-18T17:04:30.776Z",
     "Definition": {
         "Functions": [
@@ -1425,7 +1444,7 @@ Output:
                     "Pinned": true,
                     "Timeout": 3
                 },
-                "Id": "26b69bdb-e547-46bc-9812-84ec04b6cc8c"
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
             },
             {
                 "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:Greengrass_HelloWorld:GG_HelloWorld",
@@ -1438,14 +1457,15 @@ Output:
                     "Pinned": true,
                     "Timeout": 25
                 },
-                "Id": "384465a8-eedf-48c6-b793-4c35f7bfae9b"
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
             }
         ]
     },
-    "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
-    "Version": "9748fda7-1589-4fcc-ac94-f5559e88678b"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetFunctionDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-function-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-function-definition`
@@ -1459,21 +1479,22 @@ The following `get-function-definition` example displays details for the specifi
 
 ```
 aws greengrass get-function-definition \
-    --function-definition-id {{"063f5d1a-1dd1-40b4-9b51-56f8993d0f85"}}
+    --function-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-18T16:21:21.431Z",
-    "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-18T16:21:21.431Z",
-    "LatestVersion": "9748fda7-1589-4fcc-ac94-f5559e88678b",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/9748fda7-1589-4fcc-ac94-f5559e88678b",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "tags": {}
 }
 ```
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetFunctionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-function-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-group-certificate-authority`
@@ -1487,33 +1508,19 @@ The following `get-group-certificate-authority` example retrieves the certificat
 
 ```
 aws greengrass get-group-certificate-authority \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}} \
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --certificate-authority-id {{"f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6"}}
 ```
 Output:
 
 ```
 {
-    "GroupCertificateAuthorityArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/certificateauthorities/f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6",
+    "GroupCertificateAuthorityArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/certificateauthorities/f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6",
     "GroupCertificateAuthorityId": "f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6",
-    "PemEncodedCertificate": "-----BEGIN CERTIFICATE-----
-MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBWEXAMPLEGA1UEBhMC
-VVMxCzAJBgNVBAgTAldBMRAwDEXAMPLEEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAEXAMPLESBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jEXAMPLENMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0EXAMPLEBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWEXAMPLEDASBgNVBAsTC0lBTSBDb25z
-b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWEXAMPLEgkqhkiG9w0BCQEWEG5vb25lQGFt
-YXpvbi5EXAMPLE8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CEXAMPLE93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswYEXAMPLEgpE
-Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKEXAMPLEAQEFBQADgYEAtCu4
-nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----\n"
+    "PemEncodedCertificate": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBWEXAMPLEGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDEXAMPLEEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAEXAMPLESBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jEXAMPLENMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0EXAMPLEBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWEXAMPLEDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWEXAMPLEgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5EXAMPLE8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CEXAMPLE93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswYEXAMPLEgpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKEXAMPLEAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n"
 }
 ```
+For more information, see [Overview of AWS IoT Greengrass security](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetGroupCertificateAuthority](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-group-certificate-authority.html) in *AWS CLI Command Reference*.
 
 ### `get-group-certificate-configuration`
@@ -1527,17 +1534,18 @@ The following `get-group-certificate-configuration` example retrieves the config
 
 ```
 aws greengrass get-group-certificate-configuration \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "CertificateAuthorityExpiryInMilliseconds": 2524607999000,
-    "CertificateExpiryInMilliseconds": 604800000,
-    "GroupId": "1013db12-8b58-45ff-acc7-704248f66731"
+    "CertificateAuthorityExpiryInMilliseconds": "2524607999000",
+    "CertificateExpiryInMilliseconds": "604800000",
+    "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Overview of AWS IoT Greengrass security](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetGroupCertificateConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-group-certificate-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-group-version`
@@ -1551,24 +1559,25 @@ The following `get-group-version` example retrieves information about the specif
 
 ```
 aws greengrass get-group-version \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}}  \
-    --group-version-id {{"115136b3-cfd7-4462-b77f-8741a4b00e5e"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}  \
+    --group-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/115136b3-cfd7-4462-b77f-8741a4b00e5e",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-18T17:04:30.915Z",
     "Definition": {
-        "CoreDefinitionVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/c906ed39-a1e3-4822-a981-7b9bd57b4b46/versions/42aeeac3-fd9d-4312-a8fd-ffa9404a20e0",
-        "FunctionDefinitionVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/9748fda7-1589-4fcc-ac94-f5559e88678b",
-        "SubscriptionDefinitionVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152/versions/88ae8699-12ac-4663-ba3f-4d7f0519140b"
+        "CoreDefinitionVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+        "FunctionDefinitionVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+        "SubscriptionDefinitionVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE77777/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE88888"
     },
-    "Id": "1013db12-8b58-45ff-acc7-704248f66731",
-    "Version": "115136b3-cfd7-4462-b77f-8741a4b00e5e"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetGroupVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-group-version.html) in *AWS CLI Command Reference*.
 
 ### `get-group`
@@ -1582,22 +1591,23 @@ The following `get-group` example retrieves information about the specified Gree
 
 ```
 aws greengrass get-group \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-18T16:21:21.457Z",
-    "Id": "1013db12-8b58-45ff-acc7-704248f66731",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-18T16:21:21.457Z",
-    "LatestVersion": "115136b3-cfd7-4462-b77f-8741a4b00e5e",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/115136b3-cfd7-4462-b77f-8741a4b00e5e",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Name": "GGGroup4Pi3",
     "tags": {}
 }
 ```
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-group.html) in *AWS CLI Command Reference*.
 
 ### `get-logger-definition-version`
@@ -1611,22 +1621,23 @@ The following `get-logger-definition-version` example retrieves information abou
 
 ```
 aws greengrass get-logger-definition-version \
-    --logger-definition-id {{"49eeeb66-f1d3-4e34-86e3-3617262abf23"}} \
-    --logger-definition-version-id {{"5e3f6f64-a565-491e-8de0-3c0d8e0f2073"}}
+    --logger-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --logger-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23/versions/5e3f6f64-a565-491e-8de0-3c0d8e0f2073",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-05-08T16:10:13.866Z",
     "Definition": {
         "Loggers": []
     },
-    "Id": "49eeeb66-f1d3-4e34-86e3-3617262abf23",
-    "Version": "5e3f6f64-a565-491e-8de0-3c0d8e0f2073"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetLoggerDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-logger-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-logger-definition`
@@ -1640,21 +1651,22 @@ The following `get-logger-definition` example retrieves information about the sp
 
 ```
 aws greengrass get-logger-definition \
-    --logger-definition-id {{"49eeeb66-f1d3-4e34-86e3-3617262abf23"}}
+    --logger-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-05-08T16:10:13.809Z",
-    "Id": "49eeeb66-f1d3-4e34-86e3-3617262abf23",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-05-08T16:10:13.809Z",
-    "LatestVersion": "5e3f6f64-a565-491e-8de0-3c0d8e0f2073",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23/versions/5e3f6f64-a565-491e-8de0-3c0d8e0f2073",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "tags": {}
 }
 ```
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetLoggerDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-logger-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-definition-version`
@@ -1668,19 +1680,19 @@ The following `get-resource-definition-version` example retrieves information ab
 
 ```
 aws greengrass get-resource-definition-version \
-    --resource-definition-id {{"ad8c101d-8109-4b0e-b97d-9cc5802ab658"}} \
-    --resource-definition-version-id {{"26e8829a-491a-464d-9c87-664bf6f6f2be"}}
+    --resource-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --resource-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658/versions/26e8829a-491a-464d-9c87-664bf6f6f2be",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-19T16:40:59.392Z",
     "Definition": {
         "Resources": [
             {
-                "Id": "26ff3f7b-839a-4217-9fdc-a218308b3963",
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "Name": "usb-port",
                 "ResourceDataContainer": {
                     "LocalDeviceResourceData": {
@@ -1693,10 +1705,11 @@ Output:
             }
         ]
     },
-    "Id": "ad8c101d-8109-4b0e-b97d-9cc5802ab658",
-    "Version": "26e8829a-491a-464d-9c87-664bf6f6f2be"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Access local resources with Lambda functions and connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetResourceDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-resource-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-resource-definition`
@@ -1710,21 +1723,22 @@ The following `get-resource-definition` example retrieves information about the 
 
 ```
 aws greengrass get-resource-definition \
-    --resource-definition-id {{"ad8c101d-8109-4b0e-b97d-9cc5802ab658"}}
+    --resource-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-19T16:40:59.261Z",
-    "Id": "ad8c101d-8109-4b0e-b97d-9cc5802ab658",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-19T16:40:59.261Z",
-    "LatestVersion": "26e8829a-491a-464d-9c87-664bf6f6f2be",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658/versions/26e8829a-491a-464d-9c87-664bf6f6f2be",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "tags": {}
 }
 ```
+For more information, see [Access local resources with Lambda functions and connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetResourceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-resource-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-service-role-for-account`
@@ -1747,7 +1761,7 @@ Output:
     "RoleArn": "arn:aws:iam::123456789012:role/service-role/Greengrass_ServiceRole"
 }
 ```
-For more information, see [Greengrass Service Role](https://docs.aws.amazon.com/greengrass/latest/developerguide/service-role.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Greengrass service role](https://docs.aws.amazon.com/greengrass/v1/developerguide/service-role.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetServiceRoleForAccount](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-service-role-for-account.html) in *AWS CLI Command Reference*.
 
 ### `get-subscription-definition-version`
@@ -1761,29 +1775,30 @@ The following `get-subscription-definition-version` example retrieves retrieves 
 
 ```
 aws greengrass get-subscription-definition-version \
-    --subscription-definition-id {{"70e49321-83d5-45d2-bc09-81f4917ae152"}} \
-    --subscription-definition-version-id {{"88ae8699-12ac-4663-ba3f-4d7f0519140b"}}
+    --subscription-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --subscription-definition-version-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152/versions/88ae8699-12ac-4663-ba3f-4d7f0519140b",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreationTimestamp": "2019-06-18T17:03:52.499Z",
     "Definition": {
         "Subscriptions": [
             {
-                "Id": "692c4484-d89f-4f64-8edd-1a041a65e5b6",
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "Source": "arn:aws:lambda:us-west-2:123456789012:function:Greengrass_HelloWorld:GG_HelloWorld",
                 "Subject": "hello/world",
                 "Target": "cloud"
             }
         ]
     },
-    "Id": "70e49321-83d5-45d2-bc09-81f4917ae152",
-    "Version": "88ae8699-12ac-4663-ba3f-4d7f0519140b"
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetSubscriptionDefinitionVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-subscription-definition-version.html) in *AWS CLI Command Reference*.
 
 ### `get-subscription-definition`
@@ -1797,21 +1812,22 @@ The following `get-subscription-definition` example retrieves information about 
 
 ```
 aws greengrass get-subscription-definition \
-    --subscription-definition-id {{"70e49321-83d5-45d2-bc09-81f4917ae152"}}
+    --subscription-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152",
+    "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreationTimestamp": "2019-06-18T17:03:52.392Z",
-    "Id": "70e49321-83d5-45d2-bc09-81f4917ae152",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedTimestamp": "2019-06-18T17:03:52.392Z",
-    "LatestVersion": "88ae8699-12ac-4663-ba3f-4d7f0519140b",
-    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152/versions/88ae8699-12ac-4663-ba3f-4d7f0519140b",
+    "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "tags": {}
 }
 ```
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetSubscriptionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-subscription-definition.html) in *AWS CLI Command Reference*.
 
 ### `get-thing-runtime-configuration`
@@ -1839,7 +1855,7 @@ Output:
     }
 }
 ```
-For more information, see [Configuring telemetry settings](https://docs.aws.amazon.com/greengrass/latest/developerguide/telemetry.html#configure-telemetry-settings) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configuring telemetry settings](https://docs.aws.amazon.com/greengrass/latest/developerguide/telemetry.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [GetThingRuntimeConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/get-thing-runtime-configuration.html) in *AWS CLI Command Reference*.
 
 ### `list-bulk-deployment-detailed-reports`
@@ -1853,7 +1869,7 @@ The following `list-bulk-deployment-detailed-reports` example displays informati
 
 ```
 aws greengrass list-bulk-deployment-detailed-reports \
-    --bulk-deployment-id {{42ce9c42-489b-4ed4-b905-8996aa50ef9d}}
+    --bulk-deployment-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE77777}}
 ```
 Output:
 
@@ -1875,12 +1891,11 @@ Output:
             "DeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/deployments/123456789012:123456789012:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "GroupArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "CreatedAt": "2020-01-21T21:34:16.486Z"
-        },
-        ...
+        }
     ]
 }
 ```
-For more information, see [Create Bulk Deployments for Groups](https://docs.aws.amazon.com/greengrass/latest/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Create bulk deployments for groups](https://docs.aws.amazon.com/greengrass/v1/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ListBulkDeploymentDetailedReports](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-bulk-deployment-detailed-reports.html) in *AWS CLI Command Reference*.
 
 ### `list-bulk-deployments`
@@ -1901,14 +1916,14 @@ Output:
 {
     "BulkDeployments": [
         {
-            "BulkDeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/bulk/deployments/870fb41b-6288-4e0c-bc76-a7ba4b4d3267",
-            "BulkDeploymentId": "870fb41b-6288-4e0c-bc76-a7ba4b4d3267",
+            "BulkDeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/bulk/deployments/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "BulkDeploymentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreatedAt": "2019-06-25T16:11:33.265Z"
         }
     ]
 }
 ```
-For more information, see [Create Bulk Deployments for Groups](https://docs.aws.amazon.com/greengrass/latest/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Create bulk deployments for groups](https://docs.aws.amazon.com/greengrass/v1/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ListBulkDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-bulk-deployments.html) in *AWS CLI Command Reference*.
 
 ### `list-connector-definition-versions`
@@ -1922,7 +1937,7 @@ The following `list-connector-definition-versions` example lists the versions th
 
 ```
 aws greengrass list-connector-definition-versions \
-    --connector-definition-id {{"b5c4ebfd-f672-49a3-83cd-31c7216a7bb8"}}
+    --connector-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1930,15 +1945,15 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8/versions/63c57963-c7c2-4a26-a7e2-7bf478ea2623",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-19T19:30:01.300Z",
-            "Id": "b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
-            "Version": "63c57963-c7c2-4a26-a7e2-7bf478ea2623"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
 ```
-For more information, see [Integrate with Services and Protocols Using Greengrass Connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Integrate with services and protocols using Greengrass connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ListConnectorDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-connector-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-connector-definitions`
@@ -1959,18 +1974,18 @@ Output:
 {
     "Definitions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2019-06-19T19:30:01.300Z",
-            "Id": "b5c4ebfd-f672-49a3-83cd-31c7216a7bb8",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2019-06-19T19:30:01.300Z",
-            "LatestVersion": "63c57963-c7c2-4a26-a7e2-7bf478ea2623",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/b5c4ebfd-f672-49a3-83cd-31c7216a7bb8/versions/63c57963-c7c2-4a26-a7e2-7bf478ea2623",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/connectors/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "MySNSConnector"
         }
     ]
 }
 ```
-For more information, see [Integrate with Services and Protocols Using Greengrass Connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Integrate with services and protocols using Greengrass connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ListConnectorDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-connector-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-core-definition-versions`
@@ -1980,11 +1995,11 @@ The following code example shows how to use `list-core-definition-versions`.
 
 **AWS CLI**
 **To list the versions of a Greengrass core definition**
-The following `list-core-definitions` example lists all versions of the specified Greengrass core definition. You can use the `list-core-definitions` command to get the version ID.
+The following `list-core-definition-versions` example lists all versions of the specified Greengrass core definition. You can use the `list-core-definitions` command to get the version ID.
 
 ```
 aws greengrass list-core-definition-versions \
-    --core-definition-id {{"eaf280cb-138c-4d15-af36-6f681a1348f7"}}
+    --core-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1992,14 +2007,15 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/eaf280cb-138c-4d15-af36-6f681a1348f7/versions/467c36e4-c5da-440c-a97b-084e62593b4c",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-18T16:14:17.709Z",
-            "Id": "eaf280cb-138c-4d15-af36-6f681a1348f7",
-            "Version": "467c36e4-c5da-440c-a97b-084e62593b4c"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
 ```
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ListCoreDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-core-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-core-definitions`
@@ -2020,40 +2036,41 @@ Output:
 {
     "Definitions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/0507843c-c1ef-4f06-b051-817030df7e7d",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2018-10-17T04:30:32.786Z",
-            "Id": "0507843c-c1ef-4f06-b051-817030df7e7d",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2018-10-17T04:30:32.786Z",
-            "LatestVersion": "bcdf9e86-3793-491e-93af-3cdfbf4e22b7",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/0507843c-c1ef-4f06-b051-817030df7e7d/versions/bcdf9e86-3793-491e-93af-3cdfbf4e22b7"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/31c22500-3509-4271-bafd-cf0655cda438",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-18T16:24:16.064Z",
-            "Id": "31c22500-3509-4271-bafd-cf0655cda438",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "LastUpdatedTimestamp": "2019-06-18T16:24:16.064Z",
-            "LatestVersion": "2f350395-6d09-4c8a-8336-9ae5b57ace84",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/31c22500-3509-4271-bafd-cf0655cda438/versions/2f350395-6d09-4c8a-8336-9ae5b57ace84"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/c906ed39-a1e3-4822-a981-7b9bd57b4b46",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "CreationTimestamp": "2019-06-18T16:21:21.351Z",
-            "Id": "c906ed39-a1e3-4822-a981-7b9bd57b4b46",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "LastUpdatedTimestamp": "2019-06-18T16:21:21.351Z",
-            "LatestVersion": "42aeeac3-fd9d-4312-a8fd-ffa9404a20e0",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/c906ed39-a1e3-4822-a981-7b9bd57b4b46/versions/42aeeac3-fd9d-4312-a8fd-ffa9404a20e0"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/eaf280cb-138c-4d15-af36-6f681a1348f7",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "CreationTimestamp": "2019-06-18T16:14:17.709Z",
-            "Id": "eaf280cb-138c-4d15-af36-6f681a1348f7",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "LastUpdatedTimestamp": "2019-06-18T16:14:17.709Z",
-            "LatestVersion": "467c36e4-c5da-440c-a97b-084e62593b4c",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/eaf280cb-138c-4d15-af36-6f681a1348f7/versions/467c36e4-c5da-440c-a97b-084e62593b4c"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/cores/a1b2c3d4-5678-90ab-cdef-EXAMPLE77777/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE88888"
         }
     ]
 }
 ```
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ListCoreDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-core-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-deployments`
@@ -2067,7 +2084,7 @@ The following `list-deployments` example lists the deployments for the specified
 
 ```
 aws greengrass list-deployments \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2076,13 +2093,14 @@ Output:
     "Deployments": [
         {
             "CreatedAt": "2019-06-18T17:04:32.702Z",
-            "DeploymentId": "1065b8a0-812b-4f21-9d5d-e89b232a530f",
+            "DeploymentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "DeploymentType": "NewDeployment",
-            "GroupArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/115136b3-cfd7-4462-b77f-8741a4b00e5e"
+            "GroupArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     ]
 }
 ```
+For more information, see [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-deployments.html) in *AWS CLI Command Reference*.
 
 ### `list-device-definition-versions`
@@ -2096,7 +2114,7 @@ The following `list-device-definition-versions` example displays the device defi
 
 ```
 aws greengrass list-device-definition-versions \
-    --device-definition-id {{"f9ba083d-5ad4-4534-9f86-026a45df1ccd"}}
+    --device-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2104,20 +2122,21 @@ Output:
 {
     "Versions": [
         {
-            "Version": "83c13984-6fed-447e-84d5-5b8aa45d5f71",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-09-11T00:15:09.838Z",
-            "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd",
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/83c13984-6fed-447e-84d5-5b8aa45d5f71"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Version": "3b5cc510-58c1-44b5-9d98-4ad858ffa795",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-09-11T00:11:06.197Z",
-            "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd",
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/3b5cc510-58c1-44b5-9d98-4ad858ffa795"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     ]
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListDeviceDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-device-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-device-definitions`
@@ -2127,11 +2146,10 @@ The following code example shows how to use `list-device-definitions`.
 
 **AWS CLI**
 **To list your device definitions**
-The following `list-device-definitions` example displays details about the device definitions in your AWS account in the specified AWS Region.
+The following `list-device-definitions` example displays details about the device definitions in your AWS account in the current AWS Region.
 
 ```
-aws greengrass list-device-definitions \
-    --region {{us-west-2}}
+aws greengrass list-device-definitions
 ```
 Output:
 
@@ -2139,34 +2157,35 @@ Output:
 {
     "Definitions": [
         {
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/50f3274c-3f0a-4f57-b114-6f46085281ab/versions/c777b0f5-1059-449b-beaa-f003ebc56c34",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "LastUpdatedTimestamp": "2019-06-14T15:42:09.059Z",
-            "LatestVersion": "c777b0f5-1059-449b-beaa-f003ebc56c34",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-14T15:42:09.059Z",
-            "Id": "50f3274c-3f0a-4f57-b114-6f46085281ab",
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/50f3274c-3f0a-4f57-b114-6f46085281ab"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/e01951c9-6134-479a-969a-1a15cac11c40/versions/514d57aa-4ee6-401c-9fac-938a9f7a51e5",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Name": "TestDeviceDefinition",
             "LastUpdatedTimestamp": "2019-04-16T23:17:43.245Z",
-            "LatestVersion": "514d57aa-4ee6-401c-9fac-938a9f7a51e5",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "CreationTimestamp": "2019-04-16T23:17:43.245Z",
-            "Id": "e01951c9-6134-479a-969a-1a15cac11c40",
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/e01951c9-6134-479a-969a-1a15cac11c40"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         },
         {
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd/versions/83c13984-6fed-447e-84d5-5b8aa45d5f71",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "Name": "TemperatureSensors",
             "LastUpdatedTimestamp": "2019-09-10T00:19:03.698Z",
-            "LatestVersion": "83c13984-6fed-447e-84d5-5b8aa45d5f71",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "CreationTimestamp": "2019-09-11T00:11:06.197Z",
-            "Id": "f9ba083d-5ad4-4534-9f86-026a45df1ccd",
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/f9ba083d-5ad4-4534-9f86-026a45df1ccd"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/devices/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
         }
     ]
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListDeviceDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-device-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-function-definition-versions`
@@ -2180,7 +2199,7 @@ The following `list-function-definition-versions` example lists all of the versi
 
 ```
 aws greengrass list-function-definition-versions \
-    --function-definition-id {{"063f5d1a-1dd1-40b4-9b51-56f8993d0f85"}}
+    --function-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2188,32 +2207,33 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/9748fda7-1589-4fcc-ac94-f5559e88678b",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-18T17:04:30.776Z",
-            "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
-            "Version": "9748fda7-1589-4fcc-ac94-f5559e88678b"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/9b08df77-26f2-4c29-93d2-769715edcfec",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-18T17:02:44.087Z",
-            "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
-            "Version": "9b08df77-26f2-4c29-93d2-769715edcfec"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/4236239f-94f7-4b90-a2f8-2a24c829d21e",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "CreationTimestamp": "2019-06-18T17:01:42.284Z",
-            "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
-            "Version": "4236239f-94f7-4b90-a2f8-2a24c829d21e"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/343408bb-549a-4fbe-b043-853643179a39",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "CreationTimestamp": "2019-06-18T16:21:21.431Z",
-            "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
-            "Version": "343408bb-549a-4fbe-b043-853643179a39"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
         }
     ]
 }
 ```
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListFunctionDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-function-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-function-definitions`
@@ -2234,40 +2254,41 @@ Output:
 {
     "Definitions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/017970a5-8952-46dd-b1c1-020b3ae8e960",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2018-10-17T04:30:32.884Z",
-            "Id": "017970a5-8952-46dd-b1c1-020b3ae8e960",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2018-10-17T04:30:32.884Z",
-            "LatestVersion": "4380b302-790d-4ed8-92bf-02e88afecb15",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/017970a5-8952-46dd-b1c1-020b3ae8e960/versions/4380b302-790d-4ed8-92bf-02e88afecb15"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-18T16:21:21.431Z",
-            "Id": "063f5d1a-1dd1-40b4-9b51-56f8993d0f85",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "LastUpdatedTimestamp": "2019-06-18T16:21:21.431Z",
-            "LatestVersion": "9748fda7-1589-4fcc-ac94-f5559e88678b",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/063f5d1a-1dd1-40b4-9b51-56f8993d0f85/versions/9748fda7-1589-4fcc-ac94-f5559e88678b"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/6598e653-a262-440c-9967-e2697f64da7b",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "CreationTimestamp": "2019-06-18T16:24:16.123Z",
-            "Id": "6598e653-a262-440c-9967-e2697f64da7b",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "LastUpdatedTimestamp": "2019-06-18T16:24:16.123Z",
-            "LatestVersion": "38bc6ccd-98a2-4ce7-997e-16c84748fae4",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/6598e653-a262-440c-9967-e2697f64da7b/versions/38bc6ccd-98a2-4ce7-997e-16c84748fae4"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/c668df84-fad2-491b-95f4-655d2cad7885",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "CreationTimestamp": "2019-06-18T16:14:17.784Z",
-            "Id": "c668df84-fad2-491b-95f4-655d2cad7885",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "LastUpdatedTimestamp": "2019-06-18T16:14:17.784Z",
-            "LatestVersion": "37dd68c4-a64f-40ba-aa13-71fecc3ebded",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/c668df84-fad2-491b-95f4-655d2cad7885/versions/37dd68c4-a64f-40ba-aa13-71fecc3ebded"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/functions/a1b2c3d4-5678-90ab-cdef-EXAMPLE77777/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE88888"
         }
     ]
 }
 ```
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListFunctionDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-function-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-group-certificate-authorities`
@@ -2281,7 +2302,7 @@ The following `list-group-certificate-authorities` example lists the current cer
 
 ```
 aws greengrass list-group-certificate-authorities \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2289,12 +2310,13 @@ Output:
 {
     "GroupCertificateAuthorities": [
         {
-            "GroupCertificateAuthorityArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/certificateauthorities/f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6",
+            "GroupCertificateAuthorityArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/certificateauthorities/f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6",
             "GroupCertificateAuthorityId": "f0430e1736ea8ed30cc5d5de9af67a7e3586bad9ae4d89c2a44163f65fdd8cf6"
         }
     ]
 }
 ```
+For more information, see [Certificate authority (CA) certificates](https://docs.aws.amazon.com/greengrass/v1/developerguide/device-auth.html#ca-certificates) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListGroupCertificateAuthorities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-group-certificate-authorities.html) in *AWS CLI Command Reference*.
 
 ### `list-group-versions`
@@ -2308,7 +2330,7 @@ The following `list-group-versions` example lists the versions of the specified 
 
 ```
 aws greengrass list-group-versions \
-    --group-id {{"1013db12-8b58-45ff-acc7-704248f66731"}}
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2316,38 +2338,39 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/115136b3-cfd7-4462-b77f-8741a4b00e5e",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-18T17:04:30.915Z",
-            "Id": "1013db12-8b58-45ff-acc7-704248f66731",
-            "Version": "115136b3-cfd7-4462-b77f-8741a4b00e5e"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/4340669d-d14d-44e3-920c-46c928750750",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-18T17:03:52.663Z",
-            "Id": "1013db12-8b58-45ff-acc7-704248f66731",
-            "Version": "4340669d-d14d-44e3-920c-46c928750750"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/1b06e099-2d5b-4f10-91b9-78c4e060f5da",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "CreationTimestamp": "2019-06-18T17:02:44.189Z",
-            "Id": "1013db12-8b58-45ff-acc7-704248f66731",
-            "Version": "1b06e099-2d5b-4f10-91b9-78c4e060f5da"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/2d3f27f1-3b43-4554-ab7a-73ec30477efe",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "CreationTimestamp": "2019-06-18T17:01:42.401Z",
-            "Id": "1013db12-8b58-45ff-acc7-704248f66731",
-            "Version": "2d3f27f1-3b43-4554-ab7a-73ec30477efe"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/d20f7ae9-3444-4c1c-b025-e2ede23cdd31",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "CreationTimestamp": "2019-06-18T16:21:21.457Z",
-            "Id": "1013db12-8b58-45ff-acc7-704248f66731",
-            "Version": "d20f7ae9-3444-4c1c-b025-e2ede23cdd31"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
         }
     ]
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListGroupVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-group-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-groups`
@@ -2368,35 +2391,36 @@ Output:
 {
     "Groups": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2019-06-18T16:21:21.457Z",
-            "Id": "1013db12-8b58-45ff-acc7-704248f66731",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2019-06-18T16:21:21.457Z",
-            "LatestVersion": "115136b3-cfd7-4462-b77f-8741a4b00e5e",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731/versions/115136b3-cfd7-4462-b77f-8741a4b00e5e",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "GGGroup4Pi3"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1402daf9-71cf-4cfe-8be0-d5e80526d0d8",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2018-10-31T21:52:46.603Z",
-            "Id": "1402daf9-71cf-4cfe-8be0-d5e80526d0d8",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "LastUpdatedTimestamp": "2018-10-31T21:52:46.603Z",
-            "LatestVersion": "749af901-60ab-456f-a096-91b12d983c29",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1402daf9-71cf-4cfe-8be0-d5e80526d0d8/versions/749af901-60ab-456f-a096-91b12d983c29",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Name": "MyTestGroup"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/504b5c8d-bbed-4635-aff1-48ec5b586db5",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "CreationTimestamp": "2018-12-31T21:39:36.771Z",
-            "Id": "504b5c8d-bbed-4635-aff1-48ec5b586db5",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "LastUpdatedTimestamp": "2018-12-31T21:39:36.771Z",
-            "LatestVersion": "46911e8e-f9bc-4898-8b63-59c7653636ec",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/504b5c8d-bbed-4635-aff1-48ec5b586db5/versions/46911e8e-f9bc-4898-8b63-59c7653636ec",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "Name": "smp-ggrass-group"
         }
     ]
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-groups.html) in *AWS CLI Command Reference*.
 
 ### `list-logger-definition-versions`
@@ -2410,7 +2434,7 @@ The following `list-logger-definition-versions` example gets a list of all versi
 
 ```
 aws greengrass list-logger-definition-versions \
-    --logger-definition-id {{"49eeeb66-f1d3-4e34-86e3-3617262abf23"}}
+    --logger-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2418,20 +2442,21 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23/versions/5e3f6f64-a565-491e-8de0-3c0d8e0f2073",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-05-08T16:10:13.866Z",
-            "Id": "49eeeb66-f1d3-4e34-86e3-3617262abf23",
-            "Version": "5e3f6f64-a565-491e-8de0-3c0d8e0f2073"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23/versions/3ec6d3af-eb85-48f9-a16d-1c795fe696d7",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-05-08T16:10:13.809Z",
-            "Id": "49eeeb66-f1d3-4e34-86e3-3617262abf23",
-            "Version": "3ec6d3af-eb85-48f9-a16d-1c795fe696d7"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     ]
 }
 ```
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListLoggerDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-logger-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-logger-definitions`
@@ -2452,16 +2477,17 @@ Output:
 {
     "Definitions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2019-05-08T16:10:13.809Z",
-            "Id": "49eeeb66-f1d3-4e34-86e3-3617262abf23",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2019-05-08T16:10:13.809Z",
-            "LatestVersion": "5e3f6f64-a565-491e-8de0-3c0d8e0f2073",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/49eeeb66-f1d3-4e34-86e3-3617262abf23/versions/5e3f6f64-a565-491e-8de0-3c0d8e0f2073"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/loggers/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
 ```
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListLoggerDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-logger-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-definition-versions`
@@ -2475,7 +2501,7 @@ The following `list-resource-definition-versions` example lists the versions for
 
 ```
 aws greengrass list-resource-definition-versions \
-    --resource-definition-id {{"ad8c101d-8109-4b0e-b97d-9cc5802ab658"}}
+    --resource-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2483,20 +2509,21 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658/versions/26e8829a-491a-464d-9c87-664bf6f6f2be",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-19T16:40:59.392Z",
-            "Id": "ad8c101d-8109-4b0e-b97d-9cc5802ab658",
-            "Version": "26e8829a-491a-464d-9c87-664bf6f6f2be"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658/versions/432d92f6-12de-4ec9-a704-619a942a62aa",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-19T16:40:59.261Z",
-            "Id": "ad8c101d-8109-4b0e-b97d-9cc5802ab658",
-            "Version": "432d92f6-12de-4ec9-a704-619a942a62aa"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     ]
 }
 ```
+For more information, see [Access local resources with Lambda functions and connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListResourceDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-resource-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-definitions`
@@ -2517,25 +2544,26 @@ Output:
 {
     "Definitions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2019-06-19T16:40:59.261Z",
-            "Id": "ad8c101d-8109-4b0e-b97d-9cc5802ab658",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2019-06-19T16:40:59.261Z",
-            "LatestVersion": "26e8829a-491a-464d-9c87-664bf6f6f2be",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658/versions/26e8829a-491a-464d-9c87-664bf6f6f2be"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/c8bb9ebc-c3fd-40a4-9c6a-568d75569d38",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-19T21:51:28.212Z",
-            "Id": "c8bb9ebc-c3fd-40a4-9c6a-568d75569d38",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "LastUpdatedTimestamp": "2019-06-19T21:51:28.212Z",
-            "LatestVersion": "a5f94d0b-f6bc-40f4-bb78-7a1c5fe13ba1",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/c8bb9ebc-c3fd-40a4-9c6a-568d75569d38/versions/a5f94d0b-f6bc-40f4-bb78-7a1c5fe13ba1",
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Name": "MyGreengrassResources"
         }
     ]
 }
 ```
+For more information, see [Access local resources with Lambda functions and connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListResourceDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-resource-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-subscription-definition-versions`
@@ -2549,7 +2577,7 @@ The following `list-subscription-definition-versions` example lists all versions
 
 ```
 aws greengrass list-subscription-definition-versions \
-    --subscription-definition-id {{"70e49321-83d5-45d2-bc09-81f4917ae152"}}
+    --subscription-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2557,20 +2585,21 @@ Output:
 {
     "Versions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152/versions/88ae8699-12ac-4663-ba3f-4d7f0519140b",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreationTimestamp": "2019-06-18T17:03:52.499Z",
-            "Id": "70e49321-83d5-45d2-bc09-81f4917ae152",
-            "Version": "88ae8699-12ac-4663-ba3f-4d7f0519140b"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152/versions/7e320ba3-c369-4069-a2f0-90acb7f219d6",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2019-06-18T17:03:52.392Z",
-            "Id": "70e49321-83d5-45d2-bc09-81f4917ae152",
-            "Version": "7e320ba3-c369-4069-a2f0-90acb7f219d6"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
         }
     ]
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListSubscriptionDefinitionVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-subscription-definition-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-subscription-definitions`
@@ -2591,32 +2620,33 @@ Output:
 {
     "Definitions": [
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTimestamp": "2019-06-18T17:03:52.392Z",
-            "Id": "70e49321-83d5-45d2-bc09-81f4917ae152",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "LastUpdatedTimestamp": "2019-06-18T17:03:52.392Z",
-            "LatestVersion": "88ae8699-12ac-4663-ba3f-4d7f0519140b",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/70e49321-83d5-45d2-bc09-81f4917ae152/versions/88ae8699-12ac-4663-ba3f-4d7f0519140b"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/cd6f1c37-d9a4-4e90-be94-01a7404f5967",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CreationTimestamp": "2018-10-18T15:45:34.024Z",
-            "Id": "cd6f1c37-d9a4-4e90-be94-01a7404f5967",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "LastUpdatedTimestamp": "2018-10-18T15:45:34.024Z",
-            "LatestVersion": "d1cf8fac-284f-4f6a-98fe-a2d36d089373",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/cd6f1c37-d9a4-4e90-be94-01a7404f5967/versions/d1cf8fac-284f-4f6a-98fe-a2d36d089373"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
-            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/fa81bc84-3f59-4377-a84b-5d0134da359b",
+            "Arn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "CreationTimestamp": "2018-10-22T17:09:31.429Z",
-            "Id": "fa81bc84-3f59-4377-a84b-5d0134da359b",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "LastUpdatedTimestamp": "2018-10-22T17:09:31.429Z",
-            "LatestVersion": "086d1b08-b25a-477c-a16f-6f9b3a9c295a",
-            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/fa81bc84-3f59-4377-a84b-5d0134da359b/versions/086d1b08-b25a-477c-a16f-6f9b3a9c295a"
+            "LatestVersion": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+            "LatestVersionArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/subscriptions/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555/versions/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
         }
     ]
 }
 ```
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListSubscriptionDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-subscription-definitions.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -2630,7 +2660,7 @@ The following `list-tags-for-resource` example lists the tags and their values t
 
 ```
 aws greengrass list-tags-for-resource \
-    --resource-arn {{"arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658"}}
+    --resource-arn {{"arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2642,7 +2672,7 @@ Output:
     }
 }
 ```
-For more information, see [Tagging Your Greengrass Resources](https://docs.aws.amazon.com/greengrass/latest/developerguide/tagging.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Tagging your AWS IoT Greengrass resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `reset-deployments`
@@ -2656,18 +2686,18 @@ The following `reset-deployments` example cleans up deployment information for t
 
 ```
 aws greengrass reset-deployments \
-    --group-id {{"1402daf9-71cf-4cfe-8be0-d5e80526d0d8"}} \
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --force
 ```
 Output:
 
 ```
 {
-    "DeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1402daf9-71cf-4cfe-8be0-d5e80526d0d8/deployments/7dd4e356-9882-46a3-9e28-6d21900c011a",
-    "DeploymentId": "7dd4e356-9882-46a3-9e28-6d21900c011a"
+    "DeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/deployments/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "DeploymentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Reset Deployments](https://docs.aws.amazon.com/greengrass/latest/developerguide/reset-deployments-scenario.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Reset deployments](https://docs.aws.amazon.com/greengrass/v1/developerguide/reset-deployments-scenario.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [ResetDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/reset-deployments.html) in *AWS CLI Command Reference*.
 
 ### `start-bulk-deployment`
@@ -2687,11 +2717,11 @@ Output:
 
 ```
 {
-    "BulkDeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/bulk/deployments/870fb41b-6288-4e0c-bc76-a7ba4b4d3267",
-    "BulkDeploymentId": "870fb41b-6288-4e0c-bc76-a7ba4b4d3267"
+    "BulkDeploymentArn": "arn:aws:greengrass:us-west-2:123456789012:/greengrass/bulk/deployments/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "BulkDeploymentId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Create Bulk Deployments for Groups](https://docs.aws.amazon.com/greengrass/latest/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Create bulk deployments for groups](https://docs.aws.amazon.com/greengrass/v1/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [StartBulkDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/start-bulk-deployment.html) in *AWS CLI Command Reference*.
 
 ### `stop-bulk-deployment`
@@ -2701,14 +2731,14 @@ The following code example shows how to use `stop-bulk-deployment`.
 
 **AWS CLI**
 **To stop a bulk deployment**
-The following `stop-bulk-deployment` example stops the specified bulk deployment. If you try to stop a bulk deployment that is complete, you receive an error: `InvalidInputException: Cannot change state of finished execution.`
+The following `stop-bulk-deployment` example stops the specified bulk deployment. If you try to stop a bulk deployment that is complete, you receive the `InvalidInputException: Cannot change state of finished execution.` error.
 
 ```
 aws greengrass stop-bulk-deployment \
-    --bulk-deployment-id {{"870fb41b-6288-4e0c-bc76-a7ba4b4d3267"}}
+    --bulk-deployment-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
-For more information, see [Create Bulk Deployments for Groups](https://docs.aws.amazon.com/greengrass/latest/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Create bulk deployments for groups](https://docs.aws.amazon.com/greengrass/v1/developerguide/bulk-deploy-cli.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [StopBulkDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/stop-bulk-deployment.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -2722,11 +2752,11 @@ The following `tag-resource` example applies two tags, `ResourceType` and `Resou
 
 ```
 aws greengrass tag-resource \
-    --resource-arn {{"arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/ad8c101d-8109-4b0e-b97d-9cc5802ab658"}} \
+    --resource-arn {{"arn:aws:greengrass:us-west-2:123456789012:/greengrass/definition/resources/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --tags {{"ResourceType=Device,ResourceSubType=USB"}}
 ```
 This command produces no output.
-For more information, see [Tagging Your Greengrass Resources](https://docs.aws.amazon.com/greengrass/latest/developerguide/tagging.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Tagging your AWS IoT Greengrass resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -2740,11 +2770,11 @@ The following `untag-resource` example removes the tag whose key is `Category` f
 
 ```
 aws greengrass untag-resource \
-    --resource-arn {{"arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/1013db12-8b58-45ff-acc7-704248f66731"}} \
+    --resource-arn {{"arn:aws:greengrass:us-west-2:123456789012:/greengrass/groups/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --tag-keys {{"Category"}}
 ```
 This command produces no output.
-For more information, see [Tagging Your Greengrass Resources](https://docs.aws.amazon.com/greengrass/latest/developerguide/tagging.html) in the **AWS IoT Greengrass Developer Guide**.
+For more information, see [Tagging your AWS IoT Greengrass resources](https://docs.aws.amazon.com/greengrass/v1/developerguide/tagging.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-connectivity-info`
@@ -2765,9 +2795,10 @@ Output:
 
 ```
 {
-    "Version": "312de337-59af-4cf9-a278-2a23bd39c300"
+    "Version": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Configure the MQTT port for local messaging](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html#config-local-mqtt-port) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [UpdateConnectivityInfo](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-connectivity-info.html) in *AWS CLI Command Reference*.
 
 ### `update-connector-definition`
@@ -2781,10 +2812,11 @@ The following `update-connector-definition` example updates the name for the spe
 
 ```
 aws greengrass update-connector-definition \
-    --connector-definition-id {{"55d0052b-0d7d-44d6-b56f-21867215e118"}} \
+    --connector-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"GreengrassConnectors2019"}}
 ```
-For more information, see [Integrate with Services and Protocols Using Connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
+This command produces no output.
+For more information, see [Integrate with services and protocols using Greengrass connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/connectors.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateConnectorDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-connector-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-core-definition`
@@ -2798,11 +2830,11 @@ The following `update-core-definition` example changes the name of the specified
 
 ```
 aws greengrass update-core-definition \
-    --core-definition-id {{"582efe12-b05a-409e-9a24-a2ba1bcc4a12"}} \
+    --core-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"MyCoreDevices"}}
 ```
 This command produces no output.
-For more information, see [Configure the AWS IoT Greengrass Core](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configure the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateCoreDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-core-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-device-definition`
@@ -2816,10 +2848,11 @@ The following `update-device-definition` example changes the name of the specifi
 
 ```
 aws greengrass update-device-definition \
-    --device-definition-id {{"f9ba083d-5ad4-4534-9f86-026a45df1ccd"}} \
+    --device-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"TemperatureSensors"}}
 ```
 This command produces no output.
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [UpdateDeviceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-device-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-function-definition`
@@ -2833,11 +2866,11 @@ The following `update-function-definition` example updates the name for the spec
 
 ```
 aws greengrass update-function-definition \
-    --function-definition-id {{"e47952bd-dea9-4e2c-a7e1-37bbe8807f46"}} \
+    --function-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{ObsoleteFunction}}
 ```
 This command produces no output.
-For more information, see [Run Local Lambda Functions](https://docs.aws.amazon.com/greengrass/latest/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Run Lambda functions on the AWS IoT Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/lambda-functions.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateFunctionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-function-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-group-certificate-configuration`
@@ -2851,19 +2884,19 @@ The following `update-group-certificate-configuration` example sets a 10-day exp
 
 ```
 aws greengrass update-group-certificate-configuration \
-    --group-id {{"8eaadd72-ce4b-4f15-892a-0cc4f3a343f1"}} \
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --certificate-expiry-in-milliseconds {{864000000}}
 ```
 Output:
 
 ```
 {
-    "CertificateExpiryInMilliseconds": 864000000,
-    "CertificateAuthorityExpiryInMilliseconds": 2524607999000,
-    "GroupId": "8eaadd72-ce4b-4f15-892a-0cc4f3a343f1"
+    "CertificateExpiryInMilliseconds": "864000000",
+    "CertificateAuthorityExpiryInMilliseconds": "2524607999000",
+    "GroupId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [AWS IoT Greengrass Security](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-sec.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Overview of AWS IoT Greengrass security](https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-sec.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateGroupCertificateConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-group-certificate-configuration.html) in *AWS CLI Command Reference*.
 
 ### `update-group`
@@ -2877,10 +2910,11 @@ The following `update-group` example updates the name of the specified Greengras
 
 ```
 aws greengrass update-group \
-    --group-id {{"1402daf9-71cf-4cfe-8be0-d5e80526d0d8"}} \
+    --group-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{TestGroup4of6}}
 ```
-For more information, see [Configure AWS IoT Greengrass on AWS IoT](https://docs.aws.amazon.com/greengrass/latest/developerguide/gg-config.html) in the *AWS IoT Greengrass Developer Guide*.
+This command produces no output.
+For more information, see [Provision an AWS IoT thing to use as a Greengrass core](https://docs.aws.amazon.com/greengrass/v1/developerguide/provision-core.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-group.html) in *AWS CLI Command Reference*.
 
 ### `update-logger-definition`
@@ -2894,11 +2928,11 @@ The following `update-logger-definition` example changes the name of the specifi
 
 ```
 aws greengrass update-logger-definition \
-    --logger-definition-id {{"a454b62a-5d56-4ca9-bdc4-8254e1662cb0"}} \
+    --logger-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"LoggingConfigsForSensors"}}
 ```
 This command produces no output.
-For more information, see [Monitoring with AWS IoT Greengrass Logs](https://docs.aws.amazon.com/greengrass/latest/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Monitoring with AWS IoT Greengrass logs](https://docs.aws.amazon.com/greengrass/v1/developerguide/greengrass-logs-overview.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateLoggerDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-logger-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-resource-definition`
@@ -2912,11 +2946,11 @@ The following `update-resource-definition` example updates the name for the spec
 
 ```
 aws greengrass update-resource-definition \
-    --resource-definition-id {{"c8bb9ebc-c3fd-40a4-9c6a-568d75569d38"}} \
+    --resource-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{GreengrassConnectorResources}}
 ```
 This command produces no output.
-For more information, see [Access Local Resources with Lambda Functions and Connectors](https://docs.aws.amazon.com/greengrass/latest/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Access local resources with Lambda functions and connectors](https://docs.aws.amazon.com/greengrass/v1/developerguide/access-local-resources.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateResourceDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-resource-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-subscription-definition`
@@ -2930,11 +2964,11 @@ The following `update-subscription-definition` example updates the name for the 
 
 ```
 aws greengrass update-subscription-definition \
-    --subscription-definition-id {{"fa81bc84-3f59-4377-a84b-5d0134da359b"}} \
+    --subscription-definition-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"ObsoleteSubscription"}}
 ```
 This command produces no output.
-For more information, see title in the *guide*.
+For more information, see [Overview of the AWS IoT Greengrass group object model](https://docs.aws.amazon.com/greengrass/v1/developerguide/deployments.html#api-overview) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 +  For API details, see [UpdateSubscriptionDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-subscription-definition.html) in *AWS CLI Command Reference*.
 
 ### `update-thing-runtime-configuration`
@@ -2952,5 +2986,5 @@ aws greengrass update-thing-runtime-configuration \
     --telemetry-configuration {\"Telemetry\":\"On\"}
 ```
 This command produces no output.
-For more information, see [Configuring telemetry settings](https://docs.aws.amazon.com/greengrass/latest/developerguide/telemetry.html#configure-telemetry-settings) in the *AWS IoT Greengrass Developer Guide*.
+For more information, see [Configuring telemetry settings](https://docs.aws.amazon.com/greengrass/latest/developerguide/telemetry.html) in the *AWS IoT Greengrass Developer Guide*.
 +  For API details, see [UpdateThingRuntimeConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrass/update-thing-runtime-configuration.html) in *AWS CLI Command Reference*.

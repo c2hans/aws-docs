@@ -21,6 +21,8 @@ aws elbv2 deregister-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} \
     --targets {{Id=i-1234567890abcdef0}}
 ```
+This command produces no output.
+For more information, see [Register targets with your Application Load Balancer target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-register-targets.html) in the *Application Load Balancers Guide*.
 **Example 2: To deregister a target registered using port overrides**
 The following `deregister-targets` example removes an instance from a target group that was registered using port overrides.
 
@@ -29,6 +31,8 @@ aws elbv2 deregister-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-internal-targets/3bb63f11dfb0faf9}} \
     --targets {{Id=i-1234567890abcdef0,Port=80}} {{Id=i-1234567890abcdef0,Port=766}}
 ```
+This command produces no output.
+For more information, see [Register targets with your Application Load Balancer target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-register-targets.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DeregisterTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/deregister-targets.html) in *AWS CLI Command Reference*.
 
 ------

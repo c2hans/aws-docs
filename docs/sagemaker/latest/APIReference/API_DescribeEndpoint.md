@@ -142,6 +142,11 @@ Required: Yes
       "EndpointConfigName": "string",
       "ProductionVariants": [
          {
+            "AcceleratorPartitionLayouts": [
+               {
+                  "AcceleratorPartitionTypes": [ "string" ]
+               }
+            ],
             "AcceleratorType": "string",
             "CurrentInstanceCount": number,
             "CurrentServerlessConfig": {
@@ -200,6 +205,11 @@ Required: Yes
       ],
       "ShadowProductionVariants": [
          {
+            "AcceleratorPartitionLayouts": [
+               {
+                  "AcceleratorPartitionTypes": [ "string" ]
+               }
+            ],
             "AcceleratorType": "string",
             "CurrentInstanceCount": number,
             "CurrentServerlessConfig": {
@@ -260,6 +270,11 @@ Required: Yes
    },
    "ProductionVariants": [
       {
+         "AcceleratorPartitionLayouts": [
+            {
+               "AcceleratorPartitionTypes": [ "string" ]
+            }
+         ],
          "CapacityReservationConfig": {
             "AvailableInstanceCount": number,
             "CapacityReservationPreference": "string",
@@ -331,6 +346,11 @@ Required: Yes
    ],
    "ShadowProductionVariants": [
       {
+         "AcceleratorPartitionLayouts": [
+            {
+               "AcceleratorPartitionTypes": [ "string" ]
+            }
+         ],
          "CapacityReservationConfig": {
             "AvailableInstanceCount": number,
             "CapacityReservationPreference": "string",

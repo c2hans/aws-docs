@@ -76,7 +76,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To set the desired capacity for an Auto Scaling group**
-This example sets the desired capacity for the specified Auto Scaling group.
+The following `set-desired-capacity` example sets the desired capacity for the specified Auto Scaling group.
 
 ```
 aws autoscaling set-desired-capacity \
@@ -84,7 +84,9 @@ aws autoscaling set-desired-capacity \
     --desired-capacity {{2}} \
     --honor-cooldown
 ```
+This command produces no output.
 This command returns to the prompt if successful.
+For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-manually.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [SetDesiredCapacity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-desired-capacity.html) in *AWS CLI Command Reference*.
 
 ------

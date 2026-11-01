@@ -32,18 +32,18 @@ The following `create-asset` example creates an asset named `Chicken_Asset` in t
 aws mediapackage-vod create-asset \
     --id {{chicken_asset}} \
     --packaging-group-id {{hls_chicken_gp}} \
-    --source-role-arn {{arn:aws:iam::111122223333:role/EMP_Vod}} \
-    --source-arn {{arn:aws:s3::111122223333:video-bucket/A/30sec_chicken.smil}}
+    --source-role-arn {{arn:aws:iam::123456789012:role/EMP_Vod}} \
+    --source-arn {{arn:aws:s3::123456789012:video-bucket/A/30sec_chicken.smil}}
 ```
 Output:
 
 ```
 {
-    "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:assets/chicken_asset",
+    "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:assets/chicken_asset",
     "Id":"chicken_asset",
     "PackagingGroupId":"hls_chicken_gp",
-    "SourceArn":"arn:aws:s3::111122223333:video-bucket/A/30sec_chicken.smil",
-    "SourceRoleArn":"arn:aws:iam::111122223333:role/EMP_Vod",
+    "SourceArn":"arn:aws:s3::123456789012:video-bucket/A/30sec_chicken.smil",
+    "SourceRoleArn":"arn:aws:iam::123456789012:role/EMP_Vod",
     "EgressEndpoints":[
         {
             "PackagingConfigurationId":"New_config_1",
@@ -100,13 +100,13 @@ Output:
 
 ```
 {
-    "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-configurations/new_hls",
+    "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-configurations/new_hls",
     "Id":"new_hls",
     "PackagingGroupId":"hls_chicken",
-    "HlsManifests":{
+    "HlsPackage":{
         "SegmentDurationSeconds":6,
         "UseAudioRenditionGroup":false,
-        "HlsMarkers":[
+        "HlsManifests":[
             {
                 "AdMarkers":"NONE",
                 "IncludeIframeOnlyStream":false,
@@ -143,7 +143,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-groups/hls_chicken",
+    "Arn": "arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-groups/hls_chicken",
     "Id": "hls_chicken"
 }
 ```
@@ -218,11 +218,11 @@ Output:
 
 ```
 {
-    "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:assets/30sec_chicken",
+    "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:assets/30sec_chicken",
     "Id":"30sec_chicken",
     "PackagingGroupId":"Packaging_group_1",
-    "SourceArn":"arn:aws:s3::111122223333:video-bucket/A/30sec_chicken.smil",
-    "SourceRoleArn":"arn:aws:iam::111122223333:role/EMP_Vod",
+    "SourceArn":"arn:aws:s3::123456789012:video-bucket/A/30sec_chicken.smil",
+    "SourceRoleArn":"arn:aws:iam::123456789012:role/EMP_Vod",
     "EgressEndpoints":[
         {
             "PackagingConfigurationId":"DASH",
@@ -234,7 +234,7 @@ Output:
         },
         {
             "PackagingConfigurationId":"CMAF",
-            "Url":"https://a5f46a44118ba3e3724ef39ef532e701.egress.mediapackage-vod.us-west-2.amazonaws.com/out/v1/aad7962c569946119c2d5a691be5663c/628fb5d8d89e4702958b020af27fde0e/05eb062214064238ad6330a443aff7f7/index.m3u8"
+            "Url":"https://a5f46a44118ba3e3724ef39ef532e701.egress.mediapackage-vod.us-west-2.amazonaws.com/out/v1/aad7962c569946119c2d5a691be5663c/628fb5d8d89e4702958b020af27fde0e/05eb0622a4064238ad6330a443aff7f7/index.m3u8"
         }
     ]
 }
@@ -259,21 +259,19 @@ Output:
 
 ```
 {
-    "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-configurations/DASH",
+    "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-configurations/DASH",
     "Id":"DASH",
     "PackagingGroupId":"Packaging_group_1",
-    "DashPackage":[
-        {
-            "SegmentDurationSeconds":"2"
-        },
-        {
-            "DashManifests":{
+    "DashPackage":{
+        "SegmentDurationSeconds":2,
+        "DashManifests":[
+            {
                 "ManifestName":"index",
-                "MinBufferTimeSeconds":"30",
+                "MinBufferTimeSeconds":30,
                 "Profile":"NONE"
             }
-        }
-    ]
+        ]
+    }
 }
 ```
 For more information, see [Viewing Packaging Configuration Details](https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-view.html) in the *AWS Elemental MediaPackage User Guide*.
@@ -296,7 +294,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-groups/Packaging_group_1",
+    "Arn": "arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-groups/Packaging_group_1",
     "Id": "Packaging_group_1"
 }
 ```
@@ -320,11 +318,13 @@ Output:
 ```
 {
     "Assets": [
-        "Arn": "arn:aws:mediapackage-vod:us-west-2:111122223333:assets/30sec_chicken",
-        "Id": "30sec_chicken",
-        "PackagingGroupId": "Packaging_group_1",
-        "SourceArn": "arn:aws:s3::111122223333:video-bucket/A/30sec_chicken.smil",
-        "SourceRoleArn": "arn:aws:iam::111122223333:role/EMP_Vod"
+        {
+            "Arn": "arn:aws:mediapackage-vod:us-west-2:123456789012:assets/30sec_chicken",
+            "Id": "30sec_chicken",
+            "PackagingGroupId": "Packaging_group_1",
+            "SourceArn": "arn:aws:s3::123456789012:video-bucket/A/30sec_chicken.smil",
+            "SourceRoleArn": "arn:aws:iam::123456789012:role/EMP_Vod"
+        }
     ]
 }
 ```
@@ -350,92 +350,82 @@ Output:
 {
     "PackagingConfigurations":[
         {
-            "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-configurations/CMAF",
+            "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-configurations/CMAF",
             "Id":"CMAF",
             "PackagingGroupId":"Packaging_group_1",
-            "CmafPackage":[
-                {
-                    "SegmentDurationSeconds":"2"
-                },
-                {
-                    "HlsManifests":{
+            "CmafPackage":{
+                "SegmentDurationSeconds":2,
+                "HlsManifests":[
+                    {
                         "AdMarkers":"NONE",
-                        "RepeatExtXKey":"False",
+                        "RepeatExtXKey":false,
                         "ManifestName":"index",
-                        "ProgramDateTimeIntervalSeconds":"0",
-                        "IncludeIframeOnlyStream":"False"
+                        "ProgramDateTimeIntervalSeconds":0,
+                        "IncludeIframeOnlyStream":false
                     }
-                }
-            ]
+                ]
+            }
         },
         {
-            "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-configurations/DASH",
+            "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-configurations/DASH",
             "Id":"DASH",
             "PackagingGroupId":"Packaging_group_1",
-            "DashPackage":[
-                {
-                    "SegmentDurationSeconds":"2"
-                },
-                {
-                    "DashManifests":{
+            "DashPackage":{
+                "SegmentDurationSeconds":2,
+                "DashManifests":[
+                    {
                         "ManifestName":"index",
-                        "MinBufferTimeSeconds":"30",
+                        "MinBufferTimeSeconds":30,
                         "Profile":"NONE"
                     }
-                }
-            ]
+                ]
+            }
         },
         {
-            "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-configurations/HLS",
+            "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-configurations/HLS",
             "Id":"HLS",
             "PackagingGroupId":"Packaging_group_1",
-            "HlsPackage":[
-                {
-                    "SegmentDurationSeconds":"6",
-                    "UseAudioRenditionGroup":"False"
-                },
-                {
-                    "HlsManifests":{
+            "HlsPackage":{
+                "SegmentDurationSeconds":6,
+                "UseAudioRenditionGroup":false,
+                "HlsManifests":[
+                    {
                         "AdMarkers":"NONE",
-                        "RepeatExtXKey":"False",
+                        "RepeatExtXKey":false,
                         "ManifestName":"index",
-                        "ProgramDateTimeIntervalSeconds":"0",
-                        "IncludeIframeOnlyStream":"False"
+                        "ProgramDateTimeIntervalSeconds":0,
+                        "IncludeIframeOnlyStream":false
                     }
-                }
-            ]
+                ]
+            }
         },
         {
-            "Arn":"arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-configurations/New_config_0_copy",
+            "Arn":"arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-configurations/New_config_0_copy",
             "Id":"New_config_0_copy",
             "PackagingGroupId":"Packaging_group_1",
-            "HlsPackage":[
-                {
-                    "SegmentDurationSeconds":"6",
-                    "UseAudioRenditionGroup":"False"
-                },
-                {
-                    "Encryption":{
-                        "EncryptionMethod":"AWS_128",
-                        "SpekeKeyProvider":{
-                           "RoleArn":"arn:aws:iam:111122223333::role/SPEKERole",
-                            "Url":"https://lfgubdvs97.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection/",
-                            "SystemIds":[
-                                "81376844-f976-481e-a84e-cc25d39b0b33"
-                            ]
-                        }
+            "HlsPackage":{
+                "SegmentDurationSeconds":6,
+                "UseAudioRenditionGroup":false,
+                "Encryption":{
+                    "EncryptionMethod":"AWS_128",
+                    "SpekeKeyProvider":{
+                        "RoleArn":"arn:aws:iam:123456789012::role/SPEKERole",
+                        "Url":"https://lfgubdvs97.execute-api.us-west-2.amazonaws.com/EkeStage/copyProtection/",
+                        "SystemIds":[
+                            "81376844-f976-481e-a84e-cc25d39b0b33"
+                        ]
                     }
                 },
-                {
-                    "HlsManifests":{
+                "HlsManifests":[
+                    {
                         "AdMarkers":"NONE",
-                        "RepeatExtXKey":"False",
+                        "RepeatExtXKey":false,
                         "ManifestName":"index",
-                        "ProgramDateTimeIntervalSeconds":"0",
-                        "IncludeIframeOnlyStream":"False"
+                        "ProgramDateTimeIntervalSeconds":0,
+                        "IncludeIframeOnlyStream":false
                     }
-                }
-            ]
+                ]
+            }
         }
     ]
 }
@@ -461,15 +451,15 @@ Output:
 {
     "PackagingGroups": [
         {
-            "Arn": "arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-groups/Dash_widevine",
+            "Arn": "arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-groups/Dash_widevine",
             "Id": "Dash_widevine"
         },
         {
-            "Arn": "arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-groups/Encrypted_HLS",
+            "Arn": "arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-groups/Encrypted_HLS",
             "Id": "Encrypted_HLS"
         },
         {
-            "Arn": "arn:aws:mediapackage-vod:us-west-2:111122223333:packaging-groups/Packaging_group_1",
+            "Arn": "arn:aws:mediapackage-vod:us-west-2:123456789012:packaging-groups/Packaging_group_1",
             "Id": "Packaging_group_1"
         }
     ]

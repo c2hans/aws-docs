@@ -22,6 +22,8 @@ The following data types are supported by Agents for Amazon Bedrock Runtime:
 +  [AgenticRetrieveBedrockRerankingModelConfiguration](API_agent-runtime_AgenticRetrieveBedrockRerankingModelConfiguration.md)
 +  [AgenticRetrieveCitation](API_agent-runtime_AgenticRetrieveCitation.md)
 +  [AgenticRetrieveCitationReference](API_agent-runtime_AgenticRetrieveCitationReference.md)
++  [AgenticRetrieveCodeExecutionDetails](API_agent-runtime_AgenticRetrieveCodeExecutionDetails.md)
++  [AgenticRetrieveCodeExecutionDocument](API_agent-runtime_AgenticRetrieveCodeExecutionDocument.md)
 +  [AgenticRetrieveConfiguration](API_agent-runtime_AgenticRetrieveConfiguration.md)
 +  [AgenticRetrieveFailure](API_agent-runtime_AgenticRetrieveFailure.md)
 +  [AgenticRetrieveFullDocExpansionDetails](API_agent-runtime_AgenticRetrieveFullDocExpansionDetails.md)

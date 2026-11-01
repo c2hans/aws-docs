@@ -28,7 +28,7 @@ For more information, see [Comparing faces in images](https://docs.aws.amazon.co
 
 **AWS CLI**
 **To compare faces in two images**
-The following `compare-faces` command compares faces in two images stored in an Amazon S3 bucket.
+The following `compare-faces` example compares faces in two images stored in an Amazon S3 bucket.
 
 ```
 aws rekognition compare-faces \
@@ -113,7 +113,7 @@ For more information, see [Creating a collection](https://docs.aws.amazon.com/re
 
 **AWS CLI**
 **To create a collection**
-The following `create-collection` command creates a collection with the specified name.
+The following `create-collection` example creates a collection with the specified name.
 
 ```
 aws rekognition create-collection \
@@ -141,10 +141,11 @@ The following code example shows how to use `create-stream-processor`.
 The following `create-stream-processor` example creates a new stream processor with the specified configuration.
 
 ```
-aws rekognition create-stream-processor --name {{my-stream-processor}}\
-    --input '{{{"KinesisVideoStream":{"Arn":"arn:aws:kinesisvideo:us-west-2:123456789012:stream/macwebcam/1530559711205"}}}}'\
-    --stream-processor-output '{{{"KinesisDataStream":{"Arn":"arn:aws:kinesis:us-west-2:123456789012:stream/AmazonRekognitionRekStream"}}}}'\
-    --role-arn {{arn:aws:iam::123456789012:role/AmazonRekognitionDetect}}\
+aws rekognition create-stream-processor \
+    --name {{my-stream-processor}} \
+    --input '{{{"KinesisVideoStream":{"Arn":"arn:aws:kinesisvideo:us-west-2:123456789012:stream/macwebcam/1530559711205"}}}}' \
+    --stream-processor-output '{{{"KinesisDataStream":{"Arn":"arn:aws:kinesis:us-west-2:123456789012:stream/AmazonRekognitionRekStream"}}}}' \
+    --role-arn {{arn:aws:iam::123456789012:role/AmazonRekognitionDetect}} \
     --settings '{{{"FaceSearch":{"CollectionId":"MyCollection","FaceMatchThreshold":85.5}}}}'
 ```
 Output:
@@ -166,7 +167,7 @@ For more information, see [Deleting a collection](https://docs.aws.amazon.com/re
 
 **AWS CLI**
 **To delete a collection**
-The following `delete-collection` command deletes the specified collection.
+The following `delete-collection` example deletes the specified collection.
 
 ```
 aws rekognition delete-collection \
@@ -191,19 +192,19 @@ For more information, see [Deleting faces from a collection](https://docs.aws.am
 
 **AWS CLI**
 **To delete faces from a collection**
-The following `delete-faces` command deletes the specified face from a collection.
+The following `delete-faces` example deletes the specified face from a collection.
 
 ```
 aws rekognition delete-faces \
-    --collection-id {{MyCollection}}
-    --face-ids '{{["0040279c-0178-436e-b70a-e61b074e96b0"]}}'
+    --collection-id {{MyCollection}} \
+    --face-ids '{{["a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"]}}'
 ```
 Output:
 
 ```
 {
     "DeletedFaces": [
-        "0040279c-0178-436e-b70a-e61b074e96b0"
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     ]
 }
 ```
@@ -217,7 +218,7 @@ The following code example shows how to use `delete-stream-processor`.
 
 **AWS CLI**
 **To delete a stream processor**
-The following `delete-stream-processor` command deletes the specified stream processor.
+The following `delete-stream-processor` example deletes the specified stream processor.
 
 ```
 aws rekognition delete-stream-processor \
@@ -262,7 +263,7 @@ The following code example shows how to use `describe-stream-processor`.
 
 **AWS CLI**
 **To get information about a stream processor**
-The following `describe-stream-processor` command displays details about the specified stream processor.
+The following `describe-stream-processor` example displays details about the specified stream processor.
 
 ```
 aws rekognition describe-stream-processor \
@@ -308,7 +309,7 @@ For more information, see [Detecting faces in an image](https://docs.aws.amazon.
 
 **AWS CLI**
 **To detect faces in an image**
-The following `detect-faces` command detects faces in the specified image stored in an Amazon S3 bucket.
+The following `detect-faces` example detects faces in the specified image stored in an Amazon S3 bucket.
 
 ```
 aws rekognition detect-faces \
@@ -579,7 +580,7 @@ The following `detect-labels` example detects scenes and objects in an image sto
 
 ```
 aws rekognition detect-labels \
-    --image '{{{"S3Object":{"Bucket":"bucket","Name":"image"}}}}'
+    --image '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"image"}}}}'
 ```
 Output:
 
@@ -1150,7 +1151,7 @@ For more information, see [Detecting inappropriate images](https://docs.aws.amaz
 
 **AWS CLI**
 **To detect unsafe content in an image**
-The following `detect-moderation-labels` command detects unsafe content in the specified image stored in an Amazon S3 bucket.
+The following `detect-moderation-labels` example detects unsafe content in the specified image stored in an Amazon S3 bucket.
 
 ```
 aws rekognition detect-moderation-labels \
@@ -1187,7 +1188,7 @@ For more information, see [Detecting text in an image](https://docs.aws.amazon.c
 
 **AWS CLI**
 **To detect text in an image**
-The following `detect-text` command detects text in the specified image.
+The following `detect-text` example detects text in the specified image.
 
 ```
 aws rekognition detect-text \
@@ -1364,6 +1365,7 @@ Output:
     ]
 }
 ```
+For more information, see [Detecting text in an image](https://docs.aws.amazon.com/rekognition/latest/dg/text-detecting-text-procedure.html) in the *Amazon Rekognition Developer Guide*.
 +  For API details, see [DetectText](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rekognition/detect-text.html) in *AWS CLI Command Reference*.
 
 ### `get-celebrity-info`
@@ -1373,10 +1375,11 @@ The following code example shows how to use `get-celebrity-info`.
 
 **AWS CLI**
 **To get information about a celebrity**
-The following `get-celebrity-info` command displays information about the specified celebrity. The `id` parameter comes from a previous call to `recognize-celebrities`.
+The following `get-celebrity-info` example displays information about the specified celebrity. The `id` parameter comes from a previous call to `recognize-celebrities`.
 
 ```
-aws rekognition get-celebrity-info --id {{nnnnnnn}}
+aws rekognition get-celebrity-info \
+    --id {{nnnnnnn}}
 ```
 Output:
 
@@ -1398,7 +1401,7 @@ The following code example shows how to use `get-celebrity-recognition`.
 
 **AWS CLI**
 **To get the results of a celebrity recognition operation**
-The following `get-celebrity-recognition` command displays the results of a celebrity recognition operation that you started previously by calling `start-celebrity-recognition`.
+The following `get-celebrity-recognition` example displays the results of a celebrity recognition operation that you started previously by calling `start-celebrity-recognition`.
 
 ```
 aws rekognition get-celebrity-recognition  \
@@ -1544,7 +1547,7 @@ The following code example shows how to use `get-content-moderation`.
 
 **AWS CLI**
 **To get the results of an unsafe content operation**
-The following `get-content-moderation` command displays the results of an unsafe content operation that you started previously by calling `start-content-moderation`.
+The following `get-content-moderation` example displays the results of an unsafe content operation that you started previously by calling `start-content-moderation`.
 
 ```
 aws rekognition get-content-moderation \
@@ -1594,7 +1597,7 @@ The following code example shows how to use `get-face-detection`.
 
 **AWS CLI**
 **To get the results of a face detection operation**
-The following `get-face-detection` command displays the results of a face detection operation that you started previously by calling `start-face-detection`.
+The following `get-face-detection` example displays the results of a face detection operation that you started previously by calling `start-face-detection`.
 
 ```
 aws rekognition get-face-detection \
@@ -1724,7 +1727,7 @@ The following code example shows how to use `get-face-search`.
 
 **AWS CLI**
 **To get the results of a face search operation**
-The following `get-face-search` command displays the results of a face search operation that you started previously by calling `start-face-search`.
+The following `get-face-search` example displays the results of a face search operation that you started previously by calling `start-face-search`.
 
 ```
 aws rekognition get-face-search  \
@@ -1798,10 +1801,10 @@ Output:
                             "Left": 0.5901259779930115,
                             "Height": 0.2514039874076843
                         },
-                        "FaceId": "056a95fa-2060-4159-9cab-7ed4daa030fa",
+                        "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                         "ExternalImageId": "image3.jpg",
                         "Confidence": 100.0,
-                        "ImageId": "08f8a078-8929-37fd-8e8f-aadf690e8232"
+                        "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     },
                     "Similarity": 98.44476318359375
                 }
@@ -1878,7 +1881,7 @@ The following code example shows how to use `get-label-detection`.
 
 **AWS CLI**
 **To get the results of an objects and scenes detection operation**
-The following `get-label-detection` command displays the results of an objects and scenes detection operation that you started previously by calling `start-label-detection`.
+The following `get-label-detection` example displays the results of an objects and scenes detection operation that you started previously by calling `start-label-detection`.
 
 ```
 aws rekognition get-label-detection  \
@@ -1948,7 +1951,7 @@ The following code example shows how to use `get-person-tracking`.
 
 **AWS CLI**
 **To get the results of a people pathing operation**
-The following `get-person-tracking` command displays the results of a people pathing operation that you started previously by calling `start-person-tracking`.
+The following `get-person-tracking` example displays the results of a people pathing operation that you started previously by calling `start-person-tracking`.
 
 ```
 aws rekognition get-person-tracking  \
@@ -2008,7 +2011,7 @@ For more information, see [Adding faces to a collection](https://docs.aws.amazon
 
 **AWS CLI**
 **To add faces to a collection**
-The following `index-faces` command adds the faces found in an image to the specified collection.
+The following `index-faces` example adds the faces found in an image to the specified collection.
 
 ```
 aws rekognition index-faces \
@@ -2227,10 +2230,10 @@ Output:
                     "Left": 0.5575000047683716,
                     "Height": 0.24770642817020416
                 },
-                "FaceId": "ce7ed422-2132-4a11-ab14-06c5c410f29f",
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "ExternalImageId": "example-image.jpg",
                 "Confidence": 99.993408203125,
-                "ImageId": "8d67061e-90d2-598f-9fbd-29c8497039c0"
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             }
         }
     ],
@@ -2251,7 +2254,7 @@ For more information, see [Listing collections](https://docs.aws.amazon.com/reko
 
 **AWS CLI**
 **To list the available collections**
-The following `list-collections` command lists the available collections in the AWS account.
+The following `list-collections` example lists the available collections in the AWS account.
 
 ```
 aws rekognition list-collections
@@ -2298,7 +2301,7 @@ For more information, see [Listing faces in a collection](https://docs.aws.amazo
 
 **AWS CLI**
 **To list the faces in a collection**
-The following `list-faces` command lists the faces in the specified collection.
+The following `list-faces` example lists the faces in the specified collection.
 
 ```
 aws rekognition list-faces \
@@ -2317,10 +2320,10 @@ Output:
                 "Left": 0.13394300639629364,
                 "Height": 0.3918749988079071
             },
-            "FaceId": "0040279c-0178-436e-b70a-e61b074e96b0",
+            "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ExternalImageId": "image1.jpg",
             "Confidence": 100.0,
-            "ImageId": "f976e487-3719-5e2d-be8b-ea2724c26991"
+            "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
             "BoundingBox": {
@@ -2329,10 +2332,10 @@ Output:
                 "Left": 0.18302799761295319,
                 "Height": 0.3812499940395355
             },
-            "FaceId": "086261e8-6deb-4bc0-ac73-ab22323cc38d",
+            "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "ExternalImageId": "image2.jpg",
             "Confidence": 99.99930572509766,
-            "ImageId": "ae1593b0-a8f6-5e24-a306-abf529e276fa"
+            "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
             "BoundingBox": {
@@ -2341,10 +2344,10 @@ Output:
                 "Left": 0.14559100568294525,
                 "Height": 0.4181250035762787
             },
-            "FaceId": "11c4bd3c-19c5-4eb8-aecc-24feb93a26e1",
+            "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "ExternalImageId": "image3.jpg",
             "Confidence": 99.99960327148438,
-            "ImageId": "80739b4d-883f-5b78-97cf-5124038e26b9"
+            "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
         },
         {
             "BoundingBox": {
@@ -2353,82 +2356,10 @@ Output:
                 "Left": 0.5575000047683716,
                 "Height": 0.24770599603652954
             },
-            "FaceId": "13692fe4-990a-4679-b14a-5ac23d135eab",
+            "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
             "ExternalImageId": "image4.jpg",
             "Confidence": 99.99340057373047,
-            "ImageId": "8df18239-9ad1-5acd-a46a-6581ff98f51b"
-        },
-        {
-            "BoundingBox": {
-                "Width": 0.5307819843292236,
-                "Top": 0.2862499952316284,
-                "Left": 0.1564060002565384,
-                "Height": 0.3987500071525574
-            },
-            "FaceId": "2eb5f3fd-e2a9-4b1c-a89f-afa0a518fe06",
-            "ExternalImageId": "image5.jpg",
-            "Confidence": 99.99970245361328,
-            "ImageId": "3c314792-197d-528d-bbb6-798ed012c150"
-        },
-        {
-            "BoundingBox": {
-                "Width": 0.5773710012435913,
-                "Top": 0.34437501430511475,
-                "Left": 0.12396000325679779,
-                "Height": 0.4337500035762787
-            },
-            "FaceId": "57189455-42b0-4839-a86c-abda48b13174",
-            "ExternalImageId": "image6.jpg",
-            "Confidence": 100.0,
-            "ImageId": "0aff2f37-e7a2-5dbc-a3a3-4ef6ec18eaa0"
-        },
-        {
-            "BoundingBox": {
-                "Width": 0.5349419713020325,
-                "Top": 0.29124999046325684,
-                "Left": 0.16389399766921997,
-                "Height": 0.40187498927116394
-            },
-            "FaceId": "745f7509-b1fa-44e0-8b95-367b1359638a",
-            "ExternalImageId": "image7.jpg",
-            "Confidence": 99.99979400634766,
-            "ImageId": "67a34327-48d1-5179-b042-01e52ccfeada"
-        },
-        {
-            "BoundingBox": {
-                "Width": 0.41499999165534973,
-                "Top": 0.09187500178813934,
-                "Left": 0.28083300590515137,
-                "Height": 0.3112500011920929
-            },
-            "FaceId": "8d3cfc70-4ba8-4b36-9644-90fba29c2dac",
-            "ExternalImageId": "image8.jpg",
-            "Confidence": 99.99769592285156,
-            "ImageId": "a294da46-2cb1-5cc4-9045-61d7ca567662"
-        },
-        {
-            "BoundingBox": {
-                "Width": 0.48166701197624207,
-                "Top": 0.20999999344348907,
-                "Left": 0.21250000596046448,
-                "Height": 0.36125001311302185
-            },
-            "FaceId": "bd4ceb4d-9acc-4ab7-8ef8-1c2d2ba0a66a",
-            "ExternalImageId": "image9.jpg",
-            "Confidence": 99.99949645996094,
-            "ImageId": "5e1a7588-e5a0-5ee3-bd00-c642518dfe3a"
-        },
-        {
-            "BoundingBox": {
-                "Width": 0.18562500178813934,
-                "Top": 0.1618019938468933,
-                "Left": 0.5575000047683716,
-                "Height": 0.24770599603652954
-            },
-            "FaceId": "ce7ed422-2132-4a11-ab14-06c5c410f29f",
-            "ExternalImageId": "image10.jpg",
-            "Confidence": 99.99340057373047,
-            "ImageId": "8d67061e-90d2-598f-9fbd-29c8497039c0"
+            "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888"
         }
     ]
 }
@@ -2443,7 +2374,7 @@ The following code example shows how to use `list-stream-processors`.
 
 **AWS CLI**
 **To list the stream processors in your account**
-The following `list-stream-processors` command lists the stream processors in your account and the state of each.
+The following `list-stream-processors` example lists the stream processors in your account and the state of each.
 
 ```
 aws rekognition list-stream-processors
@@ -2472,7 +2403,7 @@ For more information, see [Recognizing celebrities in an image](https://docs.aws
 
 **AWS CLI**
 **To recognize celebrities in an image**
-The following `recognize-celebrities` command recognizes celebrities in the specified image stored in an Amazon S3 bucket.:
+The following `recognize-celebrities` example recognizes celebrities in the specified image stored in an Amazon S3 bucket.
 
 ```
 aws rekognition recognize-celebrities \
@@ -2757,160 +2688,88 @@ For more information, see [Searching for a face (image)](https://docs.aws.amazon
 
 **AWS CLI**
 **To search for faces in a collection that match the largest face in an image.**
-The following `search-faces-by-image` command searches for faces in a collection that match the largest face in the specified image.:
+The following `search-faces-by-image` example searches for faces in a collection that match the largest face in the specified image.
 
 ```
 aws rekognition search-faces-by-image \
-    --image '{{{"S3Object":{"Bucket":"MyImageS3Bucket","Name":"ExamplePerson.jpg"}}}}' \
+    --image '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"ExamplePerson.jpg"}}}}' \
     --collection-id {{MyFaceImageCollection}}
+```
+Output:
 
-{{{}}
-    "SearchedFaceBoundingBox": {{{}}
-        "Width": {{0.18562500178813934,}}
-        "Top": {{0.1618015021085739,}}
-        "Left": {{0.5575000047683716,}}
-        "Height": {{0.24770642817020416}}
-    {{},}}
-    "SearchedFaceConfidence": {{99.993408203125,}}
-    "FaceMatches": {{[}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.18562500178813934,}}
-                    "Top": {{0.1618019938468933,}}
-                    "Left": {{0.5575000047683716,}}
-                    "Height": {{0.24770599603652954}}
-                {{},}}
-                "FaceId": "ce7ed422-2132-4a11-ab14-06c5c410f29f",
+```
+{
+    "SearchedFaceBoundingBox": {
+        "Width": 0.18562500178813934,
+        "Top": 0.1618015021085739,
+        "Left": 0.5575000047683716,
+        "Height": 0.24770642817020416
+    },
+    "SearchedFaceConfidence": 99.993408203125,
+    "FaceMatches": [
+        {
+            "Face": {
+                "BoundingBox": {
+                    "Width": 0.18562500178813934,
+                    "Top": 0.1618019938468933,
+                    "Left": 0.5575000047683716,
+                    "Height": 0.24770599603652954
+                },
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "ExternalImageId": "example-image.jpg",
-                "Confidence": {{99.99340057373047,}}
-                "ImageId": {{"8d67061e-90d2-598f-9fbd-29c8497039c0"}}
-            {{},}}
-            "Similarity": {{99.97913360595703}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.18562500178813934,}}
-                    "Top": {{0.1618019938468933,}}
-                    "Left": {{0.5575000047683716,}}
-                    "Height": {{0.24770599603652954}}
-                {{},}}
-                "FaceId": "13692fe4-990a-4679-b14a-5ac23d135eab",
+                "Confidence": 99.99340057373047,
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+            },
+            "Similarity": 99.97913360595703
+        },
+        {
+            "Face": {
+                "BoundingBox": {
+                    "Width": 0.18562500178813934,
+                    "Top": 0.1618019938468933,
+                    "Left": 0.5575000047683716,
+                    "Height": 0.24770599603652954
+                },
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "ExternalImageId": "image3.jpg",
-                "Confidence": {{99.99340057373047,}}
-                "ImageId": {{"8df18239-9ad1-5acd-a46a-6581ff98f51b"}}
-            {{},}}
-            "Similarity": {{99.97913360595703}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.41499999165534973,}}
-                    "Top": {{0.09187500178813934,}}
-                    "Left": {{0.28083300590515137,}}
-                    "Height": {{0.3112500011920929}}
-                {{},}}
-                "FaceId": "8d3cfc70-4ba8-4b36-9644-90fba29c2dac",
+                "Confidence": 99.99340057373047,
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
+            },
+            "Similarity": 99.97913360595703
+        },
+        {
+            "Face": {
+                "BoundingBox": {
+                    "Width": 0.41499999165534973,
+                    "Top": 0.09187500178813934,
+                    "Left": 0.28083300590515137,
+                    "Height": 0.3112500011920929
+                },
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
                 "ExternalImageId": "image2.jpg",
-                "Confidence": {{99.99769592285156,}}
-                "ImageId": {{"a294da46-2cb1-5cc4-9045-61d7ca567662"}}
-            {{},}}
-            "Similarity": {{99.18069458007812}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.48166701197624207,}}
-                    "Top": {{0.20999999344348907,}}
-                    "Left": {{0.21250000596046448,}}
-                    "Height": {{0.36125001311302185}}
-                {{},}}
-                "FaceId": "bd4ceb4d-9acc-4ab7-8ef8-1c2d2ba0a66a",
+                "Confidence": 99.99769592285156,
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
+            },
+            "Similarity": 99.18069458007812
+        },
+        {
+            "Face": {
+                "BoundingBox": {
+                    "Width": 0.48166701197624207,
+                    "Top": 0.20999999344348907,
+                    "Left": 0.21250000596046448,
+                    "Height": 0.36125001311302185
+                },
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
                 "ExternalImageId": "image1.jpg",
-                "Confidence": {{99.99949645996094,}}
-                "ImageId": {{"5e1a7588-e5a0-5ee3-bd00-c642518dfe3a"}}
-            {{},}}
-            "Similarity": {{98.66607666015625}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.5349419713020325,}}
-                    "Top": {{0.29124999046325684,}}
-                    "Left": {{0.16389399766921997,}}
-                    "Height": {{0.40187498927116394}}
-                {{},}}
-                "FaceId": "745f7509-b1fa-44e0-8b95-367b1359638a",
-                "ExternalImageId": "image9.jpg",
-                "Confidence": {{99.99979400634766,}}
-                "ImageId": {{"67a34327-48d1-5179-b042-01e52ccfeada"}}
-            {{},}}
-            "Similarity": {{98.24278259277344}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.5307819843292236,}}
-                    "Top": {{0.2862499952316284,}}
-                    "Left": {{0.1564060002565384,}}
-                    "Height": {{0.3987500071525574}}
-                {{},}}
-                "FaceId": "2eb5f3fd-e2a9-4b1c-a89f-afa0a518fe06",
-                "ExternalImageId": "image10.jpg",
-                "Confidence": {{99.99970245361328,}}
-                "ImageId": {{"3c314792-197d-528d-bbb6-798ed012c150"}}
-            {{},}}
-            "Similarity": {{98.10665893554688}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.5074880123138428,}}
-                    "Top": {{0.3774999976158142,}}
-                    "Left": {{0.18302799761295319,}}
-                    "Height": {{0.3812499940395355}}
-                {{},}}
-                "FaceId": "086261e8-6deb-4bc0-ac73-ab22323cc38d",
-                "ExternalImageId": "image6.jpg",
-                "Confidence": {{99.99930572509766,}}
-                "ImageId": {{"ae1593b0-a8f6-5e24-a306-abf529e276fa"}}
-            {{},}}
-            "Similarity": {{98.10526275634766}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.5574039816856384,}}
-                    "Top": {{0.37187498807907104,}}
-                    "Left": {{0.14559100568294525,}}
-                    "Height": {{0.4181250035762787}}
-                {{},}}
-                "FaceId": "11c4bd3c-19c5-4eb8-aecc-24feb93a26e1",
-                "ExternalImageId": "image5.jpg",
-                "Confidence": {{99.99960327148438,}}
-                "ImageId": {{"80739b4d-883f-5b78-97cf-5124038e26b9"}}
-            {{},}}
-            "Similarity": {{97.94659423828125}}
-        {{},}}
-        {{{}}
-            "Face": {{{}}
-                "BoundingBox": {{{}}
-                    "Width": {{0.5773710012435913,}}
-                    "Top": {{0.34437501430511475,}}
-                    "Left": {{0.12396000325679779,}}
-                    "Height": {{0.4337500035762787}}
-                {{},}}
-                "FaceId": "57189455-42b0-4839-a86c-abda48b13174",
-                "ExternalImageId": "image8.jpg",
-                "Confidence": {{100.0,}}
-                "ImageId": {{"0aff2f37-e7a2-5dbc-a3a3-4ef6ec18eaa0"}}
-            {{},}}
-            "Similarity": {{97.93476867675781}}
-        {{}}}
-    {{],}}
-    "FaceModelVersion": {{"3.0"}}
-{{}}}
+                "Confidence": 99.99949645996094,
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888"
+            },
+            "Similarity": 98.66607666015625
+        }
+    ],
+    "FaceModelVersion": "3.0"
+}
 ```
 For more information, see [Searching for a Face Using an Image](https://docs.aws.amazon.com/rekognition/latest/dg/search-face-with-image-procedure.html) in the *Amazon Rekognition Developer Guide*.
 +  For API details, see [SearchFacesByImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rekognition/search-faces-by-image.html) in *AWS CLI Command Reference*.
@@ -2924,18 +2783,18 @@ For more information, see [Searching for a face (face ID)](https://docs.aws.amaz
 
 **AWS CLI**
 **To search for faces in a collection that match a face ID.**
-The following `search-faces` command searches for faces in a collection that match the specified face ID.
+The following `search-faces` example searches for faces in a collection that match the specified face ID.
 
 ```
 aws rekognition search-faces \
-    --face-id {{8d3cfc70-4ba8-4b36-9644-90fba29c2dac}} \
+    --face-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --collection-id {{MyCollection}}
 ```
 Output:
 
 ```
 {
-    "SearchedFaceId": "8d3cfc70-4ba8-4b36-9644-90fba29c2dac",
+    "SearchedFaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "FaceModelVersion": "3.0",
     "FaceMatches": [
         {
@@ -2946,10 +2805,10 @@ Output:
                     "Left": 0.21250000596046448,
                     "Height": 0.36125001311302185
                 },
-                "FaceId": "bd4ceb4d-9acc-4ab7-8ef8-1c2d2ba0a66a",
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "ExternalImageId": "image1.jpg",
                 "Confidence": 99.99949645996094,
-                "ImageId": "5e1a7588-e5a0-5ee3-bd00-c642518dfe3a"
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
             },
             "Similarity": 99.30997467041016
         },
@@ -2961,10 +2820,10 @@ Output:
                     "Left": 0.5575000047683716,
                     "Height": 0.24770599603652954
                 },
-                "FaceId": "ce7ed422-2132-4a11-ab14-06c5c410f29f",
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
                 "ExternalImageId": "example-image.jpg",
                 "Confidence": 99.99340057373047,
-                "ImageId": "8d67061e-90d2-598f-9fbd-29c8497039c0"
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555"
             },
             "Similarity": 99.24862670898438
         },
@@ -2976,10 +2835,10 @@ Output:
                     "Left": 0.5575000047683716,
                     "Height": 0.24770599603652954
                 },
-                "FaceId": "13692fe4-990a-4679-b14a-5ac23d135eab",
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
                 "ExternalImageId": "image3.jpg",
                 "Confidence": 99.99340057373047,
-                "ImageId": "8df18239-9ad1-5acd-a46a-6581ff98f51b"
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777"
             },
             "Similarity": 99.24862670898438
         },
@@ -2991,72 +2850,12 @@ Output:
                     "Left": 0.16389399766921997,
                     "Height": 0.40187498927116394
                 },
-                "FaceId": "745f7509-b1fa-44e0-8b95-367b1359638a",
+                "FaceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
                 "ExternalImageId": "image9.jpg",
                 "Confidence": 99.99979400634766,
-                "ImageId": "67a34327-48d1-5179-b042-01e52ccfeada"
+                "ImageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999"
             },
             "Similarity": 96.73158264160156
-        },
-        {
-            "Face": {
-                "BoundingBox": {
-                    "Width": 0.5307819843292236,
-                    "Top": 0.2862499952316284,
-                    "Left": 0.1564060002565384,
-                    "Height": 0.3987500071525574
-                },
-                "FaceId": "2eb5f3fd-e2a9-4b1c-a89f-afa0a518fe06",
-                "ExternalImageId": "image10.jpg",
-                "Confidence": 99.99970245361328,
-                "ImageId": "3c314792-197d-528d-bbb6-798ed012c150"
-            },
-            "Similarity": 96.48291015625
-        },
-        {
-            "Face": {
-                "BoundingBox": {
-                    "Width": 0.5074880123138428,
-                    "Top": 0.3774999976158142,
-                    "Left": 0.18302799761295319,
-                    "Height": 0.3812499940395355
-                },
-                "FaceId": "086261e8-6deb-4bc0-ac73-ab22323cc38d",
-                "ExternalImageId": "image6.jpg",
-                "Confidence": 99.99930572509766,
-                "ImageId": "ae1593b0-a8f6-5e24-a306-abf529e276fa"
-            },
-            "Similarity": 96.43287658691406
-        },
-        {
-            "Face": {
-                "BoundingBox": {
-                    "Width": 0.5574039816856384,
-                    "Top": 0.37187498807907104,
-                    "Left": 0.14559100568294525,
-                    "Height": 0.4181250035762787
-                },
-                "FaceId": "11c4bd3c-19c5-4eb8-aecc-24feb93a26e1",
-                "ExternalImageId": "image5.jpg",
-                "Confidence": 99.99960327148438,
-                "ImageId": "80739b4d-883f-5b78-97cf-5124038e26b9"
-            },
-            "Similarity": 95.25305938720703
-        },
-        {
-            "Face": {
-                "BoundingBox": {
-                    "Width": 0.5773710012435913,
-                    "Top": 0.34437501430511475,
-                    "Left": 0.12396000325679779,
-                    "Height": 0.4337500035762787
-                },
-                "FaceId": "57189455-42b0-4839-a86c-abda48b13174",
-                "ExternalImageId": "image8.jpg",
-                "Confidence": 100.0,
-                "ImageId": "0aff2f37-e7a2-5dbc-a3a3-4ef6ec18eaa0"
-            },
-            "Similarity": 95.22837829589844
         }
     ]
 }
@@ -3071,7 +2870,7 @@ The following code example shows how to use `start-celebrity-recognition`.
 
 **AWS CLI**
 **To start the recognition of celebrities in a stored video**
-The following `start-celebrity-recognition` command starts a job to look for celebrities in the specified video file stored in an Amazon S3 bucket.
+The following `start-celebrity-recognition` example starts a job to look for celebrities in the specified video file stored in an Amazon S3 bucket.
 
 ```
 aws rekognition start-celebrity-recognition \
@@ -3094,7 +2893,7 @@ The following code example shows how to use `start-content-moderation`.
 
 **AWS CLI**
 **To start the recognition of unsafe content in a stored video**
-The following `start-content-moderation` command starts a job to detect unsafe content in the specified video file stored in an Amazon S3 bucket.
+The following `start-content-moderation` example starts a job to detect unsafe content in the specified video file stored in an Amazon S3 bucket.
 
 ```
 aws rekognition start-content-moderation \
@@ -3117,10 +2916,10 @@ The following code example shows how to use `start-face-detection`.
 
 **AWS CLI**
 **To detect faces in a video**
-The following `start-face-detection` command starts a job to detect faces in the specified video file stored in an Amazon S3 bucket.
+The following `start-face-detection` example starts a job to detect faces in the specified video file stored in an Amazon S3 bucket.
 
 ```
-aws rekognition start-face-detection
+aws rekognition start-face-detection \
     --video {{"S3Object={Bucket=MyVideoS3Bucket,Name=MyVideoFile.mpg}"}}
 ```
 Output:
@@ -3140,7 +2939,7 @@ The following code example shows how to use `start-face-search`.
 
 **AWS CLI**
 **To search for faces in a collection that match faces detected in a video**
-The following `start-face-search` command starts a job to search for faces in a collection that match faces detected in the specified video file in an Amazon S3 bucket.
+The following `start-face-search` example starts a job to search for faces in a collection that match faces detected in the specified video file in an Amazon S3 bucket.
 
 ```
 aws rekognition start-face-search \
@@ -3164,7 +2963,7 @@ The following code example shows how to use `start-label-detection`.
 
 **AWS CLI**
 **To detect objects and scenes in a video**
-The following `start-label-detection` command starts a job to detect objects and scenes in the specified video file stored in an Amazon S3 bucket.
+The following `start-label-detection` example starts a job to detect objects and scenes in the specified video file stored in an Amazon S3 bucket.
 
 ```
 aws rekognition start-label-detection \
@@ -3187,7 +2986,7 @@ The following code example shows how to use `start-person-tracking`.
 
 **AWS CLI**
 **To start the pathing of people in a stored video**
-The following `start-person-tracking` command starts a job to track the paths that people take in the specified video fiel stored in an Amazon S3 bucket.:
+The following `start-person-tracking` example starts a job to track the paths that people take in the specified video file stored in an Amazon S3 bucket.
 
 ```
 aws rekognition start-person-tracking \
@@ -3210,7 +3009,7 @@ The following code example shows how to use `start-stream-processor`.
 
 **AWS CLI**
 **To start a stream processor**
-The following `start-stream-processor` command starts the specified video stream processor.
+The following `start-stream-processor` example starts the specified video stream processor.
 
 ```
 aws rekognition start-stream-processor \
@@ -3227,7 +3026,7 @@ The following code example shows how to use `stop-stream-processor`.
 
 **AWS CLI**
 **To stop a running stream processor**
-The following `stop-stream-processor` command stops the specified running stream processor.
+The following `stop-stream-processor` example stops the specified running stream processor.
 
 ```
 aws rekognition stop-stream-processor \

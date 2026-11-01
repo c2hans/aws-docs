@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Creat
 # CreateScraper
 <a name="API_CreateScraper"></a>
 
-The `CreateScraper` operation creates a scraper to collect metrics. A scraper pulls metrics from Prometheus-compatible sources and sends them to your Amazon Managed Service for Prometheus workspace. You can configure scrapers to collect metrics from Amazon EKS clusters, Amazon MSK clusters, or from VPC-based sources that support DNS-based service discovery. Scrapers are flexible, and can be configured to control what metrics are collected, the frequency of collection, what transformations are applied to the metrics, and more.
+Creates a scraper to collect metrics from Prometheus-compatible sources. The scraper sends the collected metrics to Amazon Managed Service for Prometheus workspaces or CloudWatch datasets. You can configure scrapers to collect metrics from Amazon EKS clusters, Amazon MSK clusters, or from VPC-based sources that support DNS-based service discovery. Scrapers are flexible. You can configure a scraper to control which metrics to collect, the frequency of collection, which transformations to apply to the metrics, and more.
 
-An IAM role will be created for you that Amazon Managed Service for Prometheus uses to access the metrics in your source. You must configure this role with a policy that allows it to scrape metrics from your source. For Amazon EKS sources, see [Configuring your Amazon EKS cluster](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-how-to.html#AMP-collector-eks-setup) in the *Amazon Managed Service for Prometheus User Guide*.
+An IAM role will be created for you that Amazon Managed Service for Prometheus uses to access the metrics in your source. You must configure this role with a policy that allows it to scrape metrics from your source. For Amazon EKS sources, see [Configuring your Amazon EKS cluster](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-collector-how-to.html#AMP-collector-eks-setup) in the *Amazon Managed Service for Prometheus User Guide*. For a Kafka exporter, grant this role access with a cluster policy on the Amazon MSK cluster instead. For details, see `KafkaExporterConfiguration`.
 
 The `scrapeConfiguration` parameter contains the base-64 encoded YAML configuration for the scraper.
 
@@ -27,6 +27,9 @@ Content-type: application/json
    "alias": "{{string}}",
    "clientToken": "{{string}}",
    "destination": { ... },
+   "exporters": [
+      { ... }
+   ],
    "roleConfiguration": {
       "sourceRoleArn": "{{string}}",
       "targetRoleArn": "{{string}}"
@@ -64,10 +67,16 @@ Pattern: `[!-~]+`
 Required: No
 
  ** [destination](#API_CreateScraper_RequestSyntax) **   <a name="prometheus-CreateScraper-request-destination"></a>
-The Amazon Managed Service for Prometheus workspace to send metrics to.
+The destination where the scraper sends the collected metrics. Valid destinations are Amazon Managed Service for Prometheus workspaces and CloudWatch datasets.
 Type: [Destination](API_Destination.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [exporters](#API_CreateScraper_RequestSyntax) **   <a name="prometheus-CreateScraper-request-exporters"></a>
+The exporter configurations for the scraper. You can configure at most one exporter, for either an Amazon OpenSearch Service domain or an Amazon MSK cluster. If you don't specify a value, the scraper is created without an exporter configuration.
+Type: Array of [ExporterConfiguration](API_ExporterConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Required: No
 
  ** [roleConfiguration](#API_CreateScraper_RequestSyntax) **   <a name="prometheus-CreateScraper-request-roleConfiguration"></a>
 Use this structure to enable cross-account access, so that you can use a target account to access Prometheus metrics from source accounts.

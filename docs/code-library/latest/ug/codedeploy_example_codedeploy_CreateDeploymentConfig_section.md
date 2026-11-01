@@ -25,9 +25,10 @@ Output:
 
 ```
 {
-    "deploymentConfigId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+    "deploymentConfigId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Create a deployment configuration with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations-create.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [CreateDeploymentConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/create-deployment-config.html) in *AWS CLI Command Reference*.
 
 ------

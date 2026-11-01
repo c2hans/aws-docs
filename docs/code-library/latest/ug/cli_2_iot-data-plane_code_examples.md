@@ -29,11 +29,10 @@ The following code example shows how to use `delete-thing-shadow`.
 The following `delete-thing-shadow` example deletes the entire shadow document for the device named `MyRPi`.
 
 ```
-aws iot-data delete-thing-shadow \
-    --thing-name {{MyRPi}} \
-    {{"output.txt"}}
+aws iot-data delete-thing-shadow {{"output.txt"}} \
+    --thing-name {{MyRPi}}
 ```
-The command produces no output on the display, but `output.txt` contains information that confirms the version and timestamp of the shadow document that you deleted.
+This command produces no output. The `output.txt` file contains information that confirms the version and timestamp of the shadow document that you deleted.
 
 ```
 {"version":2,"timestamp":1560270384}
@@ -51,29 +50,29 @@ The following code example shows how to use `get-thing-shadow`.
 The following `get-thing-shadow` example gets the thing shadow document for the specified IoT thing.
 
 ```
-aws iot-data get-thing-shadow \
-    --thing-name {{MyRPi}} \
-    {{output.txt}}
+aws iot-data get-thing-shadow {{output.txt}} \
+    --thing-name {{MyRPi}}
 ```
-The command produces no output on the display, but the following shows the contents of `output.txt`:
+Contents of `output.txt`:
 
 ```
 {
-  "state":{
-    "reported":{
-    "moisture":"low"
-    }
-  },
-  "metadata":{
-    "reported":{
-      "moisture":{
-        "timestamp":1560269319
-      }
-    }
-  },
-  "version":1,"timestamp":1560269405
+    "state":{
+        "reported":{
+            "moisture":"low"
+        }
+    },
+    "metadata":{
+        "reported":{
+            "moisture":{
+                "timestamp":1560269319
+            }
+        }
+    },
+    "version":1,"timestamp":1560269405
 }
 ```
+This command produces no output.
 For more information, see [Device Shadow Service Data Flow](https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-data-flow.html) in the *AWS IoT Developers Guide*.
 +  For API details, see [GetThingShadow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot-data/get-thing-shadow.html) in *AWS CLI Command Reference*.
 
@@ -87,13 +86,13 @@ The following code example shows how to use `update-thing-shadow`.
 The following `update-thing-shadow` example modifies the current state of the device shadow for the specified thing and saves it to the file `output.txt`.
 
 ```
-aws iot-data update-thing-shadow \
+aws iot-data update-thing-shadow {{"output.txt"}} \
     --cli-binary-format {{raw-in-base64-out}} \
     --thing-name {{MyRPi}} \
-    --payload '{{{"state":{"reported":{"moisture":"okay"}}}}}' \
-    {{"output.txt"}}
+    --payload '{{{"state":{"reported":{"moisture":"okay"}}}}}'
 ```
-The command produces no output on the display, but the following shows the contents of `output.txt`:
+This command produces no output. The response payload is saved to `output.txt`.
+Contents of `output.txt`:
 
 ```
 {

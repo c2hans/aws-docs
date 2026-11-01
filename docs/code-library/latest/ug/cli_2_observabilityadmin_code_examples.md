@@ -82,7 +82,7 @@ Output:
 {
     "TelemetryConfigurations": [
         {
-            "AccountIdentifier": "111111111111",
+            "AccountIdentifier": "123456789111",
             "TelemetryConfigurationState": {
                 "Logs": "NotApplicable",
                 "Metrics": "Disabled",
@@ -96,7 +96,7 @@ Output:
             "LastUpdateTimeStamp": 1733168548521
         },
         {
-            "AccountIdentifier": "222222222222",
+            "AccountIdentifier": "123456789222",
             "TelemetryConfigurationState": {
                 "Logs": "NotApplicable",
                 "Metrics": "Disabled",
@@ -134,7 +134,7 @@ Output:
 {
     "TelemetryConfigurations": [
         {
-            "AccountIdentifier": "111111111111",
+            "AccountIdentifier": "123456789012",
             "TelemetryConfigurationState": {
                 "Logs": "NotApplicable",
                 "Metrics": "Disabled",

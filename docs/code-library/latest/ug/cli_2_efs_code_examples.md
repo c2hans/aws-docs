@@ -54,7 +54,7 @@ Output:
     },
     "PerformanceMode": "generalPurpose",
     "Encrypted": true,
-    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a59b3472-e62c-42e4-adcf-30d92example",
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "ThroughputMode": "bursting",
     "Tags": [
         {
@@ -94,7 +94,7 @@ Output:
     "IpAddress": "10.0.1.24",
     "NetworkInterfaceId": "eni-02d542216aexample",
     "AvailabilityZoneId": "use2-az2",
-    "AvailabilityZoneName": "us-east-2b",
+    "AvailabilityZoneName": "us-west-2b",
     "VpcId": "vpc-0123456789abcdef0"
 }
 ```
@@ -170,7 +170,7 @@ Output:
             },
             "PerformanceMode": "generalPurpose",
             "Encrypted": true,
-            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a59b3472-e62c-42e4-adcf-30d92example",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ThroughputMode": "bursting",
             "Tags": [
                 {
@@ -212,7 +212,7 @@ Output:
             "IpAddress": "10.0.1.24",
             "NetworkInterfaceId": "eni-02d542216aexample",
             "AvailabilityZoneId": "use2-az2",
-            "AvailabilityZoneName": "us-east-2b",
+            "AvailabilityZoneName": "us-west-2b",
             "VpcId": "vpc-0123456789abcdef0"
         }
     ]

@@ -44,7 +44,7 @@ The Amazon Managed Service for Prometheus workspace to send metrics to.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CloudWatchConfiguration`  <a name="cfn-aps-scraper-destination-cloudwatchconfiguration"></a>
-Property description not available.
+The CloudWatch dataset to send metrics to.
 *Required*: No
 *Type*: [CloudWatchConfiguration](aws-properties-aps-scraper-cloudwatchconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

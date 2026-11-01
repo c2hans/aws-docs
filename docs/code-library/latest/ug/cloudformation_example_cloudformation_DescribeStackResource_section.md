@@ -27,7 +27,7 @@ Output:
 {
     "StackResourceDetail": {
         "StackName": "MyStack",
-        "StackId": "arn:aws:cloudformation:us-east-2:123456789012:stack/MyStack/d0a825a0-e4cd-xmpl-b9fb-061c69e99204",
+        "StackId": "arn:aws:cloudformation:us-west-2:123456789012:stack/MyStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "LogicalResourceId": "MyFunction",
         "PhysicalResourceId": "my-function-SEZV4XMPL4S5",
         "ResourceType": "AWS::Lambda::Function",
@@ -40,6 +40,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing AWS resources as a single unit with CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [DescribeStackResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/describe-stack-resource.html) in *AWS CLI Command Reference*.
 
 ------

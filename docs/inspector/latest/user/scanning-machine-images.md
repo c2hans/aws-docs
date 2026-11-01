@@ -20,6 +20,9 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning-machine-i
 **Note**
  Amazon Inspector only scans machine images that your account owns. Amazon Inspector doesn't scan a machine image that is not owned by you. To scan a shared or public machine image, copy it into your own account first. Copying an image creates new snapshots in your account, and Amazon Inspector scans the copy.
 
+**Note**
+ Machine image scanning is available in the commercial AWS Regions. Continuous machine image scanning and on-demand machine image scans aren't available in the AWS GovCloud (US) Regions or the China Regions. For more information, see [Region-specific feature availability](inspector_regions.md#ins-regional-feature-availability).
+
 **Topics**
 + [Eligible machine images](#machine-image-eligible)
 + [Scan behaviors for machine image scanning](#machine-image-scan-behavior)

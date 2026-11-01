@@ -14,19 +14,20 @@ The following code examples show how to use `StartPipelineExecution`.
 
 **AWS CLI**
 **To run the latest revision through a pipeline**
-This example runs the latest revision present in the source stage of a pipeline through the pipeline named "MyFirstPipeline".
-Command:
+The following `start-pipeline-execution` example runs the latest revision present in the source stage of a pipeline through the pipeline named "MyFirstPipeline".
 
 ```
-aws codepipeline start-pipeline-execution --name {{MyFirstPipeline}}
+aws codepipeline start-pipeline-execution \
+    --name {{MyFirstPipeline}}
 ```
 Output:
 
 ```
 {
-  "pipelineExecutionId": "3137f7cb-7cf7-EXAMPLE"
+    "pipelineExecutionId": "3137f7cb-7cf7-EXAMPLE"
 }
 ```
+For more information, see [Start a pipeline manually](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-rerun-manually.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [StartPipelineExecution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/start-pipeline-execution.html) in *AWS CLI Command Reference*.
 
 ------

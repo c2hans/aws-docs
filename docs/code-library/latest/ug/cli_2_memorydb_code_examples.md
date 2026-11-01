@@ -33,7 +33,7 @@ aws memorydb copy-snapshot \
     --source-snapshot-name {{my-cluster-snapshot}} \
     --target-snapshot-name {{my-cluster-snapshot-copy}}
 ```
-Output
+Output:
 
 ```
 {
@@ -41,7 +41,7 @@ Output
         "Name": "my-cluster-snapshot-copy",
         "Status": "creating",
         "Source": "manual",
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:snapshot/my-cluster-snapshot-copy",
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:snapshot/my-cluster-snapshot-copy",
         "ClusterConfiguration": {
             "Name": "my-cluster",
             "Description": " ",
@@ -88,7 +88,7 @@ Output:
         ],
         "MinimumEngineVersion": "6.2",
         "Clusters": [],
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:acl/new-acl-1"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:acl/new-acl-1"
     }
 }
 ```
@@ -130,7 +130,7 @@ Output:
         "ParameterGroupStatus": "in-sync",
         "SubnetGroupName": "my-sg",
         "TLSEnabled": true,
-        "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:cluster/my-new-cluster",
+        "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:cluster/my-new-cluster",
         "SnapshotRetentionLimit": 0,
         "MaintenanceWindow": "sat:10:00-sat:11:00",
         "SnapshotWindow": "07:30-08:30",
@@ -165,7 +165,7 @@ Output:
         "Name": "myredis6x",
         "Family": "memorydb_redis6",
         "Description": "my-parameter-group",
-        "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:parametergroup/myredis6x"
+        "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:parametergroup/myredis6x"
     }
 }
 ```
@@ -194,7 +194,7 @@ Output:
         "Name": "my-cluster-snapshot1",
         "Status": "creating",
         "Source": "manual",
-        "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:snapshot/my-cluster-snapshot",
+        "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:snapshot/my-cluster-snapshot",
         "ClusterConfiguration": {
             "Name": "my-cluster",
             "Description": "",
@@ -242,11 +242,11 @@ Output:
             {
                 "Identifier": "subnet-5623xxxx",
                 "AvailabilityZone": {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 }
             }
         ],
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:subnetgroup/mysubnetgroup"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:subnetgroup/mysubnetgroup"
     }
 }
 ```
@@ -266,8 +266,7 @@ The following `create-user` example creates a new user.
 aws memorydb create-user \
     --user-name {{user-name-1}} \
     --access-string {{"~objects:* ~items:* ~public:*"}} \
-     --authentication-mode \
-         Passwords="enterapasswordhere",Type=password
+    --authentication-mode Passwords="enterapasswordhere",Type=password
 ```
 Output:
 
@@ -315,7 +314,7 @@ Output:
         ],
         "MinimumEngineVersion": "6.2",
         "Clusters": [],
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:acl/new-acl-1"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:acl/new-acl-1"
     }
 }
 ```
@@ -344,7 +343,7 @@ Output:
         "Status": "deleting",
         "NumberOfShards": 1,
         "ClusterEndpoint": {
-            "Address": "clustercfg.my-new-cluster.xxxxx.memorydb.us-east-1.amazonaws.com",
+            "Address": "clustercfg.my-new-cluster.xxxxx.memorydb.us-west-2.amazonaws.com",
             "Port": 6379
         },
         "NodeType": "db.r6g.large",
@@ -354,7 +353,7 @@ Output:
         "ParameterGroupStatus": "in-sync",
         "SubnetGroupName": "my-sg",
         "TLSEnabled": true,
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:cluster/my-new-cluster",
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:cluster/my-new-cluster",
         "SnapshotRetentionLimit": 0,
         "MaintenanceWindow": "sat:10:00-sat:11:00",
         "SnapshotWindow": "07:30-08:30",
@@ -362,7 +361,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting a cluster](https://docs.aws.amazon.com/memorydb/latest/devguide/clusters.delete.html) in the *MemoryDB User Guide*.
+For more information, see [Getting started with MemoryDB](https://docs.aws.amazon.com/memorydb/latest/devguide/getting-started.html) in the *MemoryDB User Guide*.
 +  For API details, see [DeleteCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/memorydb/delete-cluster.html) in *AWS CLI Command Reference*.
 
 ### `delete-parameter-group`
@@ -386,7 +385,7 @@ Output:
         "Name": "myredis6x",
         "Family": "memorydb_redis6",
         "Description": "my-parameter-group",
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:parametergroup/myredis6x"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:parametergroup/myredis6x"
     }
 }
 ```
@@ -414,7 +413,7 @@ Output:
         "Name": "my-cluster-snapshot",
         "Status": "deleting",
         "Source": "manual",
-        "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:snapshot/my-cluster-snapshot",
+        "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:snapshot/my-cluster-snapshot",
         "ClusterConfiguration": {
             "Name": "my-cluster",
             "Description": "",
@@ -460,11 +459,11 @@ Output:
             {
                 "Identifier": "subnet-56xxx61b",
                 "AvailabilityZone": {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 }
             }
         ],
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:subnetgroup/mysubnetgroup"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:subnetgroup/mysubnetgroup"
     }
 }
 ```
@@ -500,7 +499,7 @@ Output:
             "Type": "password",
             "PasswordCount": 1
         },
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:user/my-user"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:user/my-user"
     }
 }
 ```
@@ -514,7 +513,7 @@ The following code example shows how to use `describe-acls`.
 
 **AWS CLI**
 **To return a list of ACLs**
-The following describe-acls` returns a list of ACLs.
+The following `describe-acls` example returns a list of ACLs.
 
 ```
 aws memorydb describe-acls
@@ -532,17 +531,17 @@ Output:
             ],
             "MinimumEngineVersion": "6.2",
             "Clusters": [],
-            "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:acl/open-access"
+            "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:acl/open-access"
         },
         {
-            "Name": my-acl",
+            "Name": "my-acl",
             "Status": "active",
             "UserNames": [],
             "MinimumEngineVersion": "6.2",
             "Clusters": [
                 "my-cluster"
             ],
-            "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxxx:acl/my-acl"
+            "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxxx:acl/my-acl"
         }
     ]
 }
@@ -557,7 +556,7 @@ The following code example shows how to use `describe-clusters`.
 
 **AWS CLI**
 **To return a list of clusters**
-The following describe-clusters` returns a list of clusters.
+The following `describe-clusters` example returns a list of clusters.
 
 ```
 aws memorydb describe-clusters
@@ -572,7 +571,7 @@ Output:
                 "Status": "available",
                 "NumberOfShards": 2,
                 "ClusterEndpoint": {
-                    "Address": "clustercfg.my-cluster.llru6f.memorydb.us-east-1.amazonaws.com",
+                    "Address": "clustercfg.my-cluster.llru6f.memorydb.us-west-2.amazonaws.com",
                     "Port": 6379
                 },
                 "NodeType": "db.r6g.large",
@@ -588,7 +587,7 @@ Output:
                 ],
                 "SubnetGroupName": "pat-sg",
                 "TLSEnabled": true,
-                "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:cluster/my-cluster",
+                "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:cluster/my-cluster",
                 "SnapshotRetentionLimit": 0,
                 "MaintenanceWindow": "wed:03:00-wed:04:00",
                 "SnapshotWindow": "04:30-05:30",
@@ -608,7 +607,7 @@ The following code example shows how to use `describe-engine-versions`.
 
 **AWS CLI**
 **To return a list of engine versions**
-The following describe-engine-versions` returns a list of engine versions.
+The following `describe-engine-versions` example returns a list of engine versions.
 
 ```
 aws memorydb describe-engine-versions
@@ -626,7 +625,7 @@ Output:
     ]
 }
 ```
-For more information, see [Engine versions and upgrading](https://docs.aws.amazon.com/memorydb/latest/devguide/engine-versions.htmll) in the *MemoryDB User Guide*.
+For more information, see [Engine versions](https://docs.aws.amazon.com/memorydb/latest/devguide/engine-versions.html) in the *MemoryDB User Guide*.
 +  For API details, see [DescribeEngineVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/memorydb/describe-engine-versions.html) in *AWS CLI Command Reference*.
 
 ### `describe-events`
@@ -636,7 +635,7 @@ The following code example shows how to use `describe-events`.
 
 **AWS CLI**
 **To return a list of events**
-The following describe-events` returns a list of events.
+The following `describe-events` example returns a list of events.
 
 ```
 aws memorydb describe-events
@@ -671,7 +670,7 @@ The following code example shows how to use `describe-parameter-groups`.
 
 **AWS CLI**
 **To return a list of parameter groups**
-The following describe-parameter-groups` returns a list of parameter groups.
+The following `describe-parameter-groups` example returns a list of parameter groups.
 
 ```
 aws memorydb describe-parameter-groups
@@ -685,7 +684,7 @@ Output:
             "Name": "default.memorydb-redis6",
             "Family": "memorydb_redis6",
             "Description": "Default parameter group for memorydb_redis6",
-            "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:parametergroup/default.memorydb-redis6"
+            "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:parametergroup/default.memorydb-redis6"
         }
     ]
 }
@@ -700,7 +699,7 @@ The following code example shows how to use `describe-parameters`.
 
 **AWS CLI**
 **To return a list of parameters**
-The following `describe-parameters` returns a list of parameters.
+The following `describe-parameters` example returns a list of parameters.
 
 ```
 aws memorydb describe-parameters \
@@ -1034,7 +1033,7 @@ The following code example shows how to use `describe-snapshots`.
 
 **AWS CLI**
 **To return a list of snapshots**
-The following describe-snapshots` returns a list of snapshots.
+The following `describe-snapshots` example returns a list of snapshots.
 
 ```
 aws memorydb describe-snapshots
@@ -1043,27 +1042,28 @@ Output:
 
 ```
 {
-"Snapshots": [
-    {
-        "Name": "my-cluster-snapshot",
-        "Status": "available",
-        "Source": "manual",
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx2:snapshot/my-cluster-snapshot",
-        "ClusterConfiguration": {
-            "Name": "my-cluster",
-            "Description": " ",
-            "NodeType": "db.r6g.large",
-            "EngineVersion": "6.2",
-            "MaintenanceWindow": "wed:03:00-wed:04:00",
-            "Port": 6379,
-            "ParameterGroupName": "default.memorydb-redis6",
-            "SubnetGroupName": "my-sg",
-            "VpcId": "vpc-862574fc",
-            "SnapshotRetentionLimit": 0,
-            "SnapshotWindow": "04:30-05:30",
-            "NumShards": 2
+    "Snapshots": [
+        {
+            "Name": "my-cluster-snapshot",
+            "Status": "available",
+            "Source": "manual",
+            "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx2:snapshot/my-cluster-snapshot",
+            "ClusterConfiguration": {
+                "Name": "my-cluster",
+                "Description": " ",
+                "NodeType": "db.r6g.large",
+                "EngineVersion": "6.2",
+                "MaintenanceWindow": "wed:03:00-wed:04:00",
+                "Port": 6379,
+                "ParameterGroupName": "default.memorydb-redis6",
+                "SubnetGroupName": "my-sg",
+                "VpcId": "vpc-862574fc",
+                "SnapshotRetentionLimit": 0,
+                "SnapshotWindow": "04:30-05:30",
+                "NumShards": 2
+            }
         }
-    }
+    ]
 }
 ```
 For more information, see [Snapshot and restore](https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots.html) in the *MemoryDB User Guide*.
@@ -1076,12 +1076,12 @@ The following code example shows how to use `describe-subnet-groups`.
 
 **AWS CLI**
 **To return a list of subnet groups**
-The following describe-subnet-groups` returns a list of subnet groups.
+The following `describe-subnet-groups` example returns a list of subnet groups.
 
 ```
 aws memorydb describe-subnet-groups
 ```
-Output
+Output:
 
 ```
 {
@@ -1094,17 +1094,17 @@ Output
                 {
                     "Identifier": "subnet-faxx84a6",
                     "AvailabilityZone": {
-                        "Name": "us-east-1b"
+                        "Name": "us-west-2b"
                     }
                 },
                 {
                     "Identifier": "subnet-56xxf61b",
                     "AvailabilityZone": {
-                        "Name": "us-east-1a"
+                        "Name": "us-west-2a"
                     }
                 }
             ],
-            "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:subnetgroup/my-sg"
+            "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:subnetgroup/my-sg"
         }
     ]
 }
@@ -1119,12 +1119,12 @@ The following code example shows how to use `describe-users`.
 
 **AWS CLI**
 **To return a list of users**
-The following describe-users` returns a list of users.
+The following `describe-users` example returns a list of users.
 
 ```
 aws memorydb describe-users
 ```
-Output
+Output:
 
 ```
 {
@@ -1140,7 +1140,7 @@ Output
             "Authentication": {
                 "Type": "no-password"
             },
-            "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:user/default"
+            "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:user/default"
         },
         {
             "Name": "my-user",
@@ -1152,7 +1152,7 @@ Output
                 "Type": "password",
                 "PasswordCount": 2
             },
-            "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:user/my-user"
+            "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:user/my-user"
         }
     ]
 }
@@ -1167,11 +1167,12 @@ The following code example shows how to use `failover-shard`.
 
 **AWS CLI**
 **To fail over a shard**
-The following failover-shard` fails over a shard.
+The following `failover-shard` example fails over a shard.
 
 ```
 aws memorydb failover-shard \
-    --cluster-name {{my-cluster}} --shard-name {{0001}}
+    --cluster-name {{my-cluster}} \
+    --shard-name {{0001}}
 ```
 Output:
 
@@ -1182,7 +1183,7 @@ Output:
         "Status": "available",
         "NumberOfShards": 2,
         "ClusterEndpoint": {
-            "Address": "clustercfg.my-cluster.xxxxxx.memorydb.us-east-1.amazonaws.com",
+            "Address": "clustercfg.my-cluster.xxxxxx.memorydb.us-west-2.amazonaws.com",
             "Port": 6379
         },
         "NodeType": "db.r6g.large",
@@ -1198,7 +1199,7 @@ Output:
         ],
         "SubnetGroupName": "my-sg",
         "TLSEnabled": true,
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:cluster/my-cluster",
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:cluster/my-cluster",
         "SnapshotRetentionLimit": 0,
         "MaintenanceWindow": "wed:03:00-wed:04:00",
         "SnapshotWindow": "04:30-05:30",
@@ -1216,7 +1217,7 @@ The following code example shows how to use `list-allowed-node-type-updates`.
 
 **AWS CLI**
 **To return a list of allowed node type updates**
-The following `list-allowed-node-type-updates` returns a list of available node type updates.
+The following `list-allowed-node-type-updates` example returns a list of available node type updates.
 
 ```
 aws memorydb list-allowed-node-type-updates \
@@ -1226,33 +1227,14 @@ Output:
 
 ```
 {
-    "Cluster": {
-        "Name": "my-cluster",
-        "Status": "available",
-        "NumberOfShards": 2,
-        "ClusterEndpoint": {
-            "Address": "clustercfg.my-cluster.xxxxxx.memorydb.us-east-1.amazonaws.com",
-            "Port": 6379
-        },
-        "NodeType": "db.r6g.large",
-        "EngineVersion": "6.2",
-        "EnginePatchVersion": "6.2.6",
-        "ParameterGroupName": "default.memorydb-redis6",
-        "ParameterGroupStatus": "in-sync",
-        "SecurityGroups": [
-            {
-                "SecurityGroupId": "sg-0a143xxxx45c9fae",
-                "Status": "active"
-            }
-        ],
-        "SubnetGroupName": "my-sg",
-        "TLSEnabled": true,
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:cluster/my-cluster",
-        "SnapshotRetentionLimit": 0,
-        "MaintenanceWindow": "wed:03:00-wed:04:00",
-        "SnapshotWindow": "04:30-05:30",
-        "AutoMinorVersionUpgrade": true
-    }
+    "ScaleUpNodeTypes": [
+        "db.r6g.xlarge",
+        "db.r6g.2xlarge",
+        "db.r6g.4xlarge"
+    ],
+    "ScaleDownNodeTypes": [
+        "db.t4g.medium"
+    ]
 }
 ```
 For more information, see [Scaling](https://docs.aws.amazon.com/memorydb/latest/devguide/scaling.html) in the *MemoryDB User Guide*.
@@ -1265,11 +1247,11 @@ The following code example shows how to use `list-tags`.
 
 **AWS CLI**
 **To return a list of tags**
-The following list-tags returns a list of tags.
+The following `list-tags` example returns a list of tags.
 
 ```
 aws memorydb list-tags \
-    --resource-arn {{arn:aws:memorydb:us-east-1:491658xxxxxx:cluster/my-cluster}}
+    --resource-arn {{arn:aws:memorydb:us-west-2:491658xxxxxx:cluster/my-cluster}}
 ```
 Output:
 
@@ -1293,7 +1275,7 @@ The following code example shows how to use `reset-parameter-group`.
 
 **AWS CLI**
 **To reset a parameter group**
-The following reset-parameter-group` resets a parameter group.
+The following `reset-parameter-group` example resets a parameter group.
 
 ```
 aws memorydb reset-parameter-group \
@@ -1308,7 +1290,7 @@ Output:
         "Name": "my-parameter-group",
         "Family": "memorydb_redis6",
         "Description": "my parameter group",
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:parametergroup/my-parameter-group"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:parametergroup/my-parameter-group"
     }
 }
 ```
@@ -1322,11 +1304,11 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To tag a resource**
-The following tag-resource` adds a tag to a resource.
+The following `tag-resource` example adds a tag to a resource.
 
 ```
 aws memorydb tag-resource \
-    --resource-arn {{arn:aws:memorydb:us-east-1:491658xxxxxx:cluster/my-cluster}} \
+    --resource-arn {{arn:aws:memorydb:us-west-2:491658xxxxxx:cluster/my-cluster}} \
     --tags Key="mykey",Value="myvalue"
 ```
 Output:
@@ -1354,12 +1336,12 @@ For more information, see [Tagging resources](https://docs.aws.amazon.com/memory
 The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
-**To update an ACL**
-The following update-acl` updates an ACL by adding a user.
+**To remove a tag from a resource**
+The following `untag-resource` example removes a tag from a resource.
 
 ```
 aws memorydb untag-resource \
-    --resource-arn {{arn:aws:memorydb:us-east-1:491658xxxxx:cluster/my-cluster}} \
+    --resource-arn {{arn:aws:memorydb:us-west-2:491658xxxxx:cluster/my-cluster}} \
     --tag-keys {{mykey}}
 ```
 Output:
@@ -1384,7 +1366,7 @@ The following code example shows how to use `update-cluster`.
 
 **AWS CLI**
 **To update a cluster**
-The following update-cluster`` updates the parameter group of a cluster to my-parameter-group.
+The following `update-cluster` example updates the parameter group of a cluster to my-parameter-group.
 
 ```
 aws memorydb update-cluster \
@@ -1401,7 +1383,7 @@ Output:
         "NumberOfShards": 2,
         "AvailabilityMode": "MultiAZ",
         "ClusterEndpoint": {
-            "Address": "clustercfg.my-cluster.llru6f.memorydb.us-east-1.amazonaws.com",
+            "Address": "clustercfg.my-cluster.llru6f.memorydb.us-west-2.amazonaws.com",
             "Port": 6379
         },
         "NodeType": "db.r6g.large",
@@ -1417,7 +1399,7 @@ Output:
         ],
         "SubnetGroupName": "pat-sg",
         "TLSEnabled": true,
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:cluster/my-cluster",
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:cluster/my-cluster",
         "SnapshotRetentionLimit": 0,
         "MaintenanceWindow": "wed:03:00-wed:04:00",
         "SnapshotWindow": "04:30-05:30",
@@ -1436,7 +1418,7 @@ The following code example shows how to use `update-parameter-group`.
 
 **AWS CLI**
 **To update a parameter group**
-The following update-parameter-group`` updates a parameter group.
+The following `update-parameter-group` example updates a parameter group.
 
 ```
 aws memorydb update-parameter-group \
@@ -1451,7 +1433,7 @@ Output:
         "Name": "my-parameter-group",
         "Family": "memorydb_redis6",
         "Description": "my parameter group",
-        "ARN": "arn:aws:memorydb:us-east-1:49165xxxxxx:parametergroup/my-parameter-group"
+        "ARN": "arn:aws:memorydb:us-west-2:49165xxxxxx:parametergroup/my-parameter-group"
     }
 }
 ```
@@ -1465,7 +1447,7 @@ The following code example shows how to use `update-subnet-group`.
 
 **AWS CLI**
 **To update a subnet group**
-The following update-subnet-group` updates a subnet group's subnet ID.
+The following `update-subnet-group` example updates a subnet group's subnet ID.
 
 ```
 aws memorydb update-subnet-group \
@@ -1484,11 +1466,11 @@ Output:
             {
                 "Identifier": "subnet-01f29d458fxxxxxx",
                 "AvailabilityZone": {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 }
             }
         ],
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:subnetgroup/my-sg"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:subnetgroup/my-sg"
     }
 }
 ```
@@ -1502,7 +1484,7 @@ The following code example shows how to use `update-user`.
 
 **AWS CLI**
 **To update a user**
-The following `update-user` modifies a user's access string.
+The following `update-user` example modifies a user's access string.
 
 ```
 aws memorydb update-user \
@@ -1525,7 +1507,7 @@ Output:
             "Type": "password",
             "PasswordCount": 2
         },
-        "ARN": "arn:aws:memorydb:us-east-1:491658xxxxxx:user/my-user"
+        "ARN": "arn:aws:memorydb:us-west-2:491658xxxxxx:user/my-user"
     }
 }
 ```

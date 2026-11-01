@@ -14,11 +14,12 @@ The following code examples show how to use `DisableAvailabilityZonesForLoadBala
 
 **AWS CLI**
 **To disable Availability Zones for a load balancer**
-This example removes the specified Availability Zone from the set of Availability Zones for the specified load balancer.
-Command:
+The following `disable-availability-zones-for-load-balancer` example removes the specified Availability Zone from the set of Availability Zones for the specified load balancer.
 
 ```
-aws elb disable-availability-zones-for-load-balancer --load-balancer-name {{my-load-balancer}} --availability-zones {{us-west-2a}}
+aws elb disable-availability-zones-for-load-balancer \
+    --load-balancer-name {{my-load-balancer}} \
+    --availability-zones {{us-west-2a}}
 ```
 Output:
 
@@ -29,6 +30,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure subnets for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-manage-subnets.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [DisableAvailabilityZonesForLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/disable-availability-zones-for-load-balancer.html) in *AWS CLI Command Reference*.
 
 ------

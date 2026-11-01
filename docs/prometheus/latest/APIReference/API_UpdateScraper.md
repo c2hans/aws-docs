@@ -20,6 +20,9 @@ Content-type: application/json
    "alias": "{{string}}",
    "clientToken": "{{string}}",
    "destination": { ... },
+   "exporters": [
+      { ... }
+   ],
    "roleConfiguration": {
       "sourceRoleArn": "{{string}}",
       "targetRoleArn": "{{string}}"
@@ -59,9 +62,15 @@ Pattern: `[!-~]+`
 Required: No
 
  ** [destination](#API_UpdateScraper_RequestSyntax) **   <a name="prometheus-UpdateScraper-request-destination"></a>
-The new Amazon Managed Service for Prometheus workspace to send metrics to.
+The new destination where the scraper sends metrics. Valid destinations are Amazon Managed Service for Prometheus workspaces and CloudWatch datasets.
 Type: [Destination](API_Destination.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+ ** [exporters](#API_UpdateScraper_RequestSyntax) **   <a name="prometheus-UpdateScraper-request-exporters"></a>
+The exporter configurations for the scraper. You can configure at most one exporter, for either an Amazon OpenSearch Service domain or an Amazon MSK cluster. If you don't specify a value, the existing exporter configuration remains unchanged. Specify an empty list to remove the exporter.
+Type: Array of [ExporterConfiguration](API_ExporterConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** [roleConfiguration](#API_UpdateScraper_RequestSyntax) **   <a name="prometheus-UpdateScraper-request-roleConfiguration"></a>

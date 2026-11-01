@@ -40,7 +40,7 @@ Output:
         {
             "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret1-a1b2c3",
             "Name": "MySecret1",
-            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa",
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "SecretString": "{\"username\":\"diego_ramirez\",\"password\":\"EXAMPLE-PASSWORD\",\"engine\":\"mysql\",\"host\":\"secretsmanagertutorial.cluster.us-west-2.rds.amazonaws.com\",\"port\":3306,\"dbClusterIdentifier\":\"secretsmanagertutorial\"}",
             "VersionStages": [
                 "AWSCURRENT"
@@ -50,7 +50,7 @@ Output:
         {
             "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret2-a1b2c3",
             "Name": "MySecret2",
-            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLEbbbbb",
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "SecretString": "{\"username\":\"akua_mansa\",\"password\":\"EXAMPLE-PASSWORD\"",
             "VersionStages": [
                 "AWSCURRENT"
@@ -60,7 +60,7 @@ Output:
         {
             "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret3-a1b2c3",
             "Name": "MySecret3",
-            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLEccccc",
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "SecretString": "{\"username\":\"jie_liu\",\"password\":\"EXAMPLE-PASSWORD\"",
             "VersionStages": [
                 "AWSCURRENT"
@@ -71,7 +71,7 @@ Output:
     "Errors": []
 }
 ```
-For more information, see [Retrieve a group of secrets in a batch](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets_batch.html) in the *AWS Secrets Manager User Guide*.
+For more information, see [Get a secret value using the AWS CLI](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets_cli.html) in the *AWS Secrets Manager User Guide*.
 **Example 2: To retrieve the secret value for a group of secrets selected by filter**
 The following `batch-get-secret-value` example gets the secret value secrets in your account that have `MySecret` in the name. Filtering by name is case sensitive.
 
@@ -87,7 +87,7 @@ Output:
         {
             "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret1-a1b2c3",
             "Name": "MySecret1",
-            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa",
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "SecretString": "{\"username\":\"diego_ramirez\",\"password\":\"EXAMPLE-PASSWORD\",\"engine\":\"mysql\",\"host\":\"secretsmanagertutorial.cluster.us-west-2.rds.amazonaws.com\",\"port\":3306,\"dbClusterIdentifier\":\"secretsmanagertutorial\"}",
             "VersionStages": [
                 "AWSCURRENT"
@@ -97,7 +97,7 @@ Output:
         {
             "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret2-a1b2c3",
             "Name": "MySecret2",
-            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLEbbbbb",
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "SecretString": "{\"username\":\"akua_mansa\",\"password\":\"EXAMPLE-PASSWORD\"",
             "VersionStages": [
                 "AWSCURRENT"
@@ -107,7 +107,7 @@ Output:
         {
             "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MySecret3-a1b2c3",
             "Name": "MySecret3",
-            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLEccccc",
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "SecretString": "{\"username\":\"jie_liu\",\"password\":\"EXAMPLE-PASSWORD\"",
             "VersionStages": [
                 "AWSCURRENT"
@@ -118,7 +118,7 @@ Output:
     "Errors": []
 }
 ```
-For more information, see [Retrieve a group of secrets in a batch](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets_batch.html) in the *AWS Secrets Manager User Guide*.
+For more information, see [Get a secret value using the AWS CLI](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets_cli.html) in the *AWS Secrets Manager User Guide*.
 +  For API details, see [BatchGetSecretValue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/batch-get-secret-value.html) in *AWS CLI Command Reference*.
 
 ### `cancel-rotate-secret`
@@ -138,8 +138,8 @@ Output:
 
 ```
 {
-  "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
-  "Name": "MyTestSecret"
+    "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
+    "Name": "MyTestSecret"
 }
 ```
 For more information, see [Rotate a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html) in the *Secrets Manager User Guide*.
@@ -163,21 +163,21 @@ Contents of `mycreds.json`:
 
 ```
 {
-  "engine": "mysql",
-  "username": "saanvis",
-  "password": "EXAMPLE-PASSWORD",
-  "host": "my-database-endpoint.us-west-2.rds.amazonaws.com",
-  "dbname": "myDatabase",
-  "port": "3306"
+    "engine": "mysql",
+    "username": "saanvis",
+    "password": "EXAMPLE-PASSWORD",
+    "host": "my-database-endpoint.us-west-2.rds.amazonaws.com",
+    "dbname": "myDatabase",
+    "port": "3306"
 }
 ```
 Output:
 
 ```
 {
-  "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
-  "Name": "MyTestSecret",
-  "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
+    "Name": "MyTestSecret",
+    "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Create a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_create-basic-secret.html) in the *Secrets Manager User Guide*.
@@ -194,9 +194,9 @@ Output:
 
 ```
 {
-  "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
-  "Name": "MyTestSecret",
-  "VersionId": "EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE"
+    "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
+    "Name": "MyTestSecret",
+    "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Create a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_create-basic-secret.html) in the *Secrets Manager User Guide*.
@@ -290,7 +290,7 @@ Output:
     "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-Ca8JGt",
     "Name": "MyTestSecret",
     "Description": "My test secret",
-    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE",
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
     "RotationEnabled": true,
     "RotationLambdaARN": "arn:aws:lambda:us-west-2:123456789012:function:MyTestRotationLambda",
     "RotationRules": {
@@ -334,7 +334,7 @@ Output:
     ]
 }
 ```
-For more information, see [Secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_secret) in the *Secrets Manager User Guide*.
+For more information, see [What's in a Secrets Manager secret?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html) in the *Secrets Manager User Guide*.
 +  For API details, see [DescribeSecret](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/describe-secret.html) in *AWS CLI Command Reference*.
 
 ### `get-random-password`
@@ -380,9 +380,7 @@ Output:
 {
     "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
     "Name": "MyTestSecret",
-    "ResourcePolicy": "{\n\"Version\":\"2012-10-17\",\n\"Statement\":[{\n\"Effect\":\"Allow\",\n
-    \"Principal\":{\n\"AWS\":\"arn:aws:iam::123456789012:root\"\n},\n\"Action\":
-    \"secretsmanager:GetSecretValue\",\n\"Resource\":\"*\"\n}]\n}"
+    "ResourcePolicy": "{\n\"Version\":\"2012-10-17\",\n\"Statement\":[{\n\"Effect\":\"Allow\",\n\"Principal\":{\n\"AWS\":\"arn:aws:iam::123456789012:root\"\n},\n\"Action\":\"secretsmanager:GetSecretValue\",\n\"Resource\":\"*\"\n}]\n}"
 }
 ```
 For more information, see [Authentication and access control](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html) in the *Secrets Manager User Guide*.
@@ -417,11 +415,11 @@ Output:
 ```
 For more information, see [Retrieve a secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets.html) in the *Secrets Manager User Guide*.
 **Example 2: To retrieve the previous secret value**
-The following `get-secret-value` example gets the previous secret value.:
+The following `get-secret-value` example gets the previous secret value.
 
 ```
 aws secretsmanager get-secret-value \
-    --secret-id {{MyTestSecret}}
+    --secret-id {{MyTestSecret}} \
     --version-stage {{AWSPREVIOUS}}
 ```
 Output:
@@ -458,33 +456,33 @@ Output:
 
 ```
 {
-  "Versions": [
-    {
-        "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-        "VersionStages": [
-            "AWSPREVIOUS"
-        ],
-        "LastAccessedDate": 1523477145.713,
-        "CreatedDate": 1523477145.713
-    },
-    {
-        "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-        "VersionStages": [
-            "AWSCURRENT"
-        ],
-        "LastAccessedDate": 1523477145.713,
-        "CreatedDate": 1523486221.391
-    },
-    {
-        "CreatedDate": 1.51197446236E9,
-        "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333;"
-    }
+    "Versions": [
+        {
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "VersionStages": [
+                "AWSPREVIOUS"
+            ],
+            "LastAccessedDate": 1523477145.713,
+            "CreatedDate": 1523477145.713
+        },
+        {
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "VersionStages": [
+                "AWSCURRENT"
+            ],
+            "LastAccessedDate": 1523477145.713,
+            "CreatedDate": 1523486221.391
+        },
+        {
+            "CreatedDate": 1.51197446236E9,
+            "VersionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333;"
+        }
     ],
     "ARN": "arn:aws:secretsmanager:us-west-2:123456789012:secret:MyTestSecret-a1b2c3",
     "Name": "MyTestSecret"
 }
 ```
-For more information, see [Version](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_version) in the *Secrets Manager User Guide*.
+For more information, see [What's in a Secrets Manager secret?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html) in the *Secrets Manager User Guide*.
 +  For API details, see [ListSecretVersionIds](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/list-secret-version-ids.html) in *AWS CLI Command Reference*.
 
 ### `list-secrets`
@@ -584,10 +582,10 @@ Output:
             "LastChangedDate": 1673477781.275,
             "LastRotatedDate": 1673477781.26,
             "SecretVersionsToStages": {
-                "a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa": [
+                "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333": [
                     "AWSPREVIOUS"
                 ],
-                "a1b2c3d4-5678-90ab-cdef-EXAMPLEbbbbb": [
+                "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444": [
                     "AWSCURRENT",
                     "AWSPENDING"
                 ]
@@ -687,12 +685,12 @@ Contents of `mycreds.json`:
 
 ```
 {
-  "engine": "mysql",
-  "username": "saanvis",
-  "password": "EXAMPLE-PASSWORD",
-  "host": "my-database-endpoint.us-west-2.rds.amazonaws.com",
-  "dbname": "myDatabase",
-  "port": "3306"
+    "engine": "mysql",
+    "username": "saanvis",
+    "password": "EXAMPLE-PASSWORD",
+    "host": "my-database-endpoint.us-west-2.rds.amazonaws.com",
+    "dbname": "myDatabase",
+    "port": "3306"
 }
 ```
 Output:
@@ -732,7 +730,7 @@ Output:
     "ReplicationStatus": []
 }
 ```
-For more information, see [Delete a replica secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/delete-replica.html) in the *Secrets Manager User Guide*.
+For more information, see [Replicate AWS Secrets Manager secrets across Regions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/replicate-secrets.html) in the *Secrets Manager User Guide*.
 +  For API details, see [RemoveRegionsFromReplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/remove-regions-from-replication.html) in *AWS CLI Command Reference*.
 
 ### `replicate-secret-to-regions`
@@ -883,7 +881,7 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **Example 1: To add a tag to a secret**
-The following example shows how to attach a tag with shorthand syntax.
+The following `tag-resource` example attaches a tag to a secret by using shorthand syntax.
 
 ```
 aws secretsmanager tag-resource \
@@ -946,7 +944,7 @@ Output:
     "Name": "MyTestSecret"
 }
 ```
-For more information, see [Version](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_version) in the *Secrets Manager User Guide*.
+For more information, see [What's in a Secrets Manager secret?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html) in the *Secrets Manager User Guide*.
 **Example 2: To add a staging label attached to a version of a secret**
 The following `update-secret-version-stage` example adds a staging label to a version of a secret. You can review the results by running `list-secret-version-ids` and viewing the `VersionStages` response field for the affected version.
 
@@ -954,7 +952,7 @@ The following `update-secret-version-stage` example adds a staging label to a ve
 aws secretsmanager update-secret-version-stage \
     --secret-id {{MyTestSecret}} \
     --version-stage {{STAGINGLABEL1}} \
-    --move-to-version-id {{EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE}}
+    --move-to-version-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
 
@@ -964,7 +962,7 @@ Output:
     "Name": "MyTestSecret"
 }
 ```
-For more information, see [Version](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_version) in the *Secrets Manager User Guide*.
+For more information, see [What's in a Secrets Manager secret?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html) in the *Secrets Manager User Guide*.
 **Example 3: To delete a staging label attached to a version of a secret**
 The following `update-secret-version-stage` example deletes a staging label that is attached to a version of a secret. You can review the results by running `list-secret-version-ids` and viewing the `VersionStages` response field for the affected version.
 
@@ -982,7 +980,7 @@ Output:
     "Name": "MyTestSecret"
 }
 ```
-For more information, see [Version](https://docs.aws.amazon.com/secretsmanager/latest/userguide/getting-started.html#term_version) in the *Secrets Manager User Guide*.
+For more information, see [What's in a Secrets Manager secret?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html) in the *Secrets Manager User Guide*.
 +  For API details, see [UpdateSecretVersionStage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/update-secret-version-stage.html) in *AWS CLI Command Reference*.
 
 ### `update-secret`
@@ -1014,7 +1012,7 @@ The following `update-secret` example updates the KMS key used to encrypt the se
 ```
 aws secretsmanager update-secret \
     --secret-id {{MyTestSecret}} \
-    --kms-key-id {{arn:aws:kms:us-west-2:123456789012:key/EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE}}
+    --kms-key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1065,5 +1063,5 @@ Output:
     "ValidationErrors": []
 }
 ```
-For more information, see [Permissions reference for Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_iam-permissions.html) in the *Secrets Manager User Guide*.
+For more information, see [Resource-based policies](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_resource-policies.html) in the *Secrets Manager User Guide*.
 +  For API details, see [ValidateResourcePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/secretsmanager/validate-resource-policy.html) in *AWS CLI Command Reference*.

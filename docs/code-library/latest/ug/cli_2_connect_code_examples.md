@@ -34,16 +34,16 @@ aws connect create-user \
     --password {{Pass@Word1}} \
     --identity-info {{FirstName=Mary,LastName=Major}} \
     --phone-config {{PhoneType=DESK_PHONE,AutoAccept=true,AfterContactWorkTimeLimit=60,DeskPhoneNumber=+15555551212}} \
-    --security-profile-id {{12345678-1111-2222-aaaa-a1b2c3d4f5g7}} \
-    --routing-profile-id {{87654321-9999-3434-abcd-x1y2z3a1b2c3}} \
+    --security-profile-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --routing-profile-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "UserId": "87654321-2222-1234-1234-111234567891",
-    "UserArn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/87654321-2222-1234-1234-111234567891"
+    "UserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+    "UserArn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
 }
 ```
 For more information, see [Add Users](https://docs.aws.amazon.com/connect/latest/adminguide/user-management.html) in the *Amazon Connect Administrator Guide*.
@@ -61,7 +61,7 @@ The following `delete-user` example deletes the specified user from the specifie
 ```
 aws connect delete-user \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --user-id {{87654321-2222-1234-1234-111234567891}}
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Manage Users](https://docs.aws.amazon.com/connect/latest/adminguide/manage-users.html) in the *Amazon Connect Administrator Guide*.
@@ -85,20 +85,20 @@ Output:
 
 ```
 {
-     "HierarchyGroup": {
-         "Id": "12345678-1111-2222-800e-a2b3c4d5f6g7",
-         "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group/12345678-1111-2222-800e-a2b3c4d5f6g7",
-         "Name": "Example Corporation",
-         "LevelId": "1",
-         "HierarchyPath": {
-             "LevelOne": {
-                 "Id": "abcdefgh-3333-4444-8af3-201123456789",
-                 "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group/abcdefgh-3333-4444-8af3-201123456789",
-                 "Name": "Example Corporation"
-             }
-         }
-     }
- }
+    "HierarchyGroup": {
+        "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "Name": "Example Corporation",
+        "LevelId": "1",
+        "HierarchyPath": {
+            "LevelOne": {
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+                "Name": "Example Corporation"
+            }
+        }
+    }
+}
 ```
 For more information, see [Set Up Agent Hierarchies](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html) in the *Amazon Connect Administrator Guide*.
 +  For API details, see [DescribeUserHierarchyGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/describe-user-hierarchy-group.html) in *AWS CLI Command Reference*.
@@ -120,24 +120,24 @@ Output:
 
 ```
 {
-     "HierarchyStructure": {
-         "LevelOne": {
-             "Id": "12345678-1111-2222-800e-aaabbb555gg",
-             "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group-level/1",
-             "Name": "Corporation"
-         },
-         "LevelTwo": {
-             "Id": "87654321-2222-3333-ac99-123456789102",
-             "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group-level/2",
-             "Name": "Services Division"
-         },
-         "LevelThree": {
-             "Id": "abcdefgh-3333-4444-8af3-201123456789",
-             "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group-level/3",
-             "Name": "EU Site"
-         }
-     }
- }
+    "HierarchyStructure": {
+        "LevelOne": {
+            "Id": "12345678-1111-2222-800e-aaabbb555gg",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group-level/1",
+            "Name": "Corporation"
+        },
+        "LevelTwo": {
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group-level/2",
+            "Name": "Services Division"
+        },
+        "LevelThree": {
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group-level/3",
+            "Name": "EU Site"
+        }
+    }
+}
 ```
 For more information, see [Set Up Agent Hierarchies](https://docs.aws.amazon.com/connect/latest/adminguide/agent-hierarchy.html) in the *Amazon Connect Administrator Guide*.
 +  For API details, see [DescribeUserHierarchyStructure](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/describe-user-hierarchy-structure.html) in *AWS CLI Command Reference*.
@@ -153,16 +153,16 @@ The following `describe-user` example displays the details for the specified Ama
 
 ```
 aws connect describe-user \
-    --user-id {{0c245dc0-0cf5-4e37-800e-2a7481cc8a60}}
-    --instance-id {{40c83b68-ea62-414c-97bb-d018e39e158e}}
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "User": {
-        "Id": "0c245dc0-0cf5-4e37-800e-2a7481cc8a60",
-        "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/agent/0c245dc0-0cf5-4e37-800e-2a7481cc8a60",
+        "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Username": "Jane",
         "IdentityInfo": {
             "FirstName": "Jane",
@@ -175,11 +175,11 @@ Output:
             "AfterContactWorkTimeLimit": 0,
             "DeskPhoneNumber": ""
         },
-        "DirectoryUserId": "8b444cf6-b368-4f29-ba18-07af27405658",
+        "DirectoryUserId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "SecurityProfileIds": [
-            "b6f85a42-1dc5-443b-b621-de0abf70c9cf"
+            "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         ],
-        "RoutingProfileId": "0be36ee9-2b5f-4ef4-bcf7-87738e5be0e5",
+        "RoutingProfileId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
         "Tags": {}
     }
 }
@@ -199,7 +199,7 @@ The following `get-contact-attributes` example retrieves the attributes that wer
 ```
 aws connect get-contact-attributes \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --initial-contact-id {{12345678-1111-2222-800e-a2b3c4d5f6g7}}
+    --initial-contact-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -230,27 +230,27 @@ Output:
 
 ```
 {
-     "ContactFlowSummaryList": [
-         {
-             "Id": "12345678-1111-2222-800e-a2b3c4d5f6g7",
-             "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/contact-flow/12345678-1111-2222-800e-a2b3c4d5f6g7",
-             "Name": "Default queue transfer",
-             "ContactFlowType": "QUEUE_TRANSFER"
-         },
-         {
-             "Id": "87654321-2222-3333-ac99-123456789102",
-             "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/contact-flow/87654321-2222-3333-ac99-123456789102",
-             "Name": "Default agent hold",
-             "ContactFlowType": "AGENT_HOLD"
-         },
-         {
-             "Id": "abcdefgh-3333-4444-8af3-201123456789",
-                 "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/contact-flow/abcdefgh-3333-4444-8af3-201123456789",
-             "Name": "Default customer hold",
-             "ContactFlowType": "CUSTOMER_HOLD"
-         },
-     ]
- }
+    "ContactFlowSummaryList": [
+        {
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/contact-flow/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Name": "Default queue transfer",
+            "ContactFlowType": "QUEUE_TRANSFER"
+        },
+        {
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/contact-flow/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Name": "Default agent hold",
+            "ContactFlowType": "AGENT_HOLD"
+        },
+        {
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/contact-flow/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "Name": "Default customer hold",
+            "ContactFlowType": "CUSTOMER_HOLD"
+        }
+    ]
+}
 ```
 For more information, see [Create Amazon Connect Contact Flows](https://docs.aws.amazon.com/connect/latest/adminguide/connect-contact-flows.html) in the *Amazon Connect Administrator Guide*.
 +  For API details, see [ListContactFlows](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/connect/list-contact-flows.html) in *AWS CLI Command Reference*.
@@ -266,7 +266,7 @@ The following `list-hours-of-operations` example lists the hours of operations f
 
 ```
 aws connect list-hours-of-operations \
-    --instance-id {{40c83b68-ea62-414c-97bb-d018e39e158e}}
+    --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -274,8 +274,8 @@ Output:
 {
     "HoursOfOperationSummaryList": [
         {
-            "Id": "d69f1f84-7457-4924-8fbe-e64875546259",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/operating-hours/d69f1f84-7457-4924-8fbe-e64875546259",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/operating-hours/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "Basic Hours"
         }
     ]
@@ -303,15 +303,15 @@ Output:
 {
     "PhoneNumberSummaryList": [
         {
-            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/phone-number/xyz80zxy-xyz1-80zx-zx80-11111EXAMPLE",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/phone-number/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "PhoneNumber": "+17065551212",
             "PhoneNumberType": "DID",
             "PhoneNumberCountryCode": "US"
         },
         {
-            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/phone-number/ccc0ccc-xyz1-80zx-zx80-22222EXAMPLE",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/phone-number/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "PhoneNumber": "+18555551212",
             "PhoneNumberType": "TOLL_FREE",
             "PhoneNumberCountryCode": "US"
@@ -341,26 +341,26 @@ Output:
 {
     "QueueSummaryList": [
         {
-            "Id": "12345678-1111-2222-800e-a2b3c4d5f6g7",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/agent/12345678-1111-2222-800e-a2b3c4d5f6g7",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "QueueType": "AGENT"
         },
         {
-            "Id": "87654321-2222-3333-ac99-123456789102",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/agent/87654321-2222-3333-ac99-123456789102",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "QueueType": "AGENT"
         },
         {
-            "Id": "abcdefgh-3333-4444-8af3-201123456789",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/agent/abcdefgh-3333-4444-8af3-201123456789",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "QueueType": "AGENT"
         },
         {
-            "Id": "hgfedcba-4444-5555-a31f-123456789102",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/hgfedcba-4444-5555-a31f-123456789102",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/queue/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "Name": "BasicQueue",
             "QueueType": "STANDARD"
-        },
+        }
     ]
 }
 ```
@@ -386,10 +386,10 @@ Output:
 {
     "RoutingProfileSummaryList": [
         {
-            "Id": "12345678-1111-2222-800e-a2b3c4d5f6g7",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/routing-profile/12345678-1111-2222-800e-a2b3c4d5f6g7",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/routing-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "Basic Routing Profile"
-        },
+        }
     ]
 }
 ```
@@ -415,18 +415,18 @@ Output:
 {
     "SecurityProfileSummaryList": [
         {
-            "Id": "12345678-1111-2222-800e-a2b3c4d5f6g7",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/security-profile/12345678-1111-2222-800e-a2b3c4d5f6g7",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/security-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "CallCenterManager"
         },
         {
-            "Id": "87654321-2222-3333-ac99-123456789102",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/security-profile/87654321-2222-3333-ac99-123456789102",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/security-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Name": "QualityAnalyst"
         },
         {
-            "Id": "abcdefgh-3333-4444-8af3-201123456789",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/security-profile/abcdefgh-3333-4444-8af3-201123456789",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/security-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Name": "Agent"
         },
         {
@@ -451,7 +451,7 @@ The following `list-user-hierarchy-groups` example lists the user hierarchy grou
 
 ```
 aws connect list-user-hierarchy-groups \
-    --instance-id {{40c83b68-ea62-414c-97bb-d018e39e158e}}
+    --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -459,10 +459,10 @@ Output:
 {
     "UserHierarchyGroupSummaryList": [
         {
-            "Id": "0e2f6d1d-b3ca-494b-8dbc-ba81d9f8182a",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/agent-group/0e2f6d1d-b3ca-494b-8dbc-ba81d9f8182a",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "Example Corporation"
-        },
+        }
     ]
 }
 ```
@@ -480,7 +480,7 @@ The following `list-users` example lists the users in the specified Amazon Conne
 
 ```
 aws connect list-users \
-    --instance-id {{40c83b68-ea62-414c-97bb-d018e39e158e}}
+    --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -488,23 +488,23 @@ Output:
 {
     "UserSummaryList": [
         {
-            "Id": "0c245dc0-0cf5-4e37-800e-2a7481cc8a60",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/agent/0c245dc0-0cf5-4e37-800e-2a7481cc8a60",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Username": "Jane"
         },
         {
-            "Id": "46f0c67c-3fc7-4806-ac99-403798788c14",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/agent/46f0c67c-3fc7-4806-ac99-403798788c14",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Username": "Paulo"
         },
         {
-            "Id": "55a83578-95e1-4710-8af3-2b7afe310e48",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/agent/55a83578-95e1-4710-8af3-2b7afe310e48",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Username": "JohnD"
         },
         {
-            "Id": "703e27b5-c9f0-4f1f-a239-64ccbb160125",
-            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/40c83b68-ea62-414c-97bb-d018e39e158e/agent/703e27b5-c9f0-4f1f-a239-64ccbb160125",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+            "Arn": "arn:aws:connect:us-west-2:123456789012:instance/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/agent/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "Username": "JohnS"
         }
     ]
@@ -543,8 +543,8 @@ The following `update-user-hierarchy` example updates the agent hierarchy for th
 
 ```
 aws connect update-user-hierarchy \
-    --hierarchy-group-id {{12345678-a1b2-c3d4-e5f6-123456789abc}} \
-    --user-id {{87654321-2222-1234-1234-111234567891}} \
+    --hierarchy-group-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
@@ -563,7 +563,7 @@ The following `update-user-identity-info` example updates the identity informati
 ```
 aws connect update-user-identity-info \
     --identity-info {{FirstName=Mary,LastName=Major,Email=marym@example.com}} \
-    --user-id {{87654321-2222-1234-1234-111234567891}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
@@ -582,7 +582,7 @@ The following `update-user-phone-config` example updates the phone configuration
 ```
 aws connect update-user-phone-config \
     --phone-config {{PhoneType=SOFT_PHONE,AutoAccept=false,AfterContactWorkTimeLimit=60,DeskPhoneNumber=+18005551212}} \
-    --user-id {{12345678-4444-3333-2222-111122223333}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
@@ -601,7 +601,7 @@ The following `update-user-routing-profile` example updates the routing profile 
 ```
 aws connect update-user-routing-profile \
     --routing-profile-id {{12345678-1111-3333-2222-4444EXAMPLE}} \
-    --user-id {{87654321-2222-1234-1234-111234567891}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
@@ -620,7 +620,7 @@ The following `update-user-security-profiles` example updates the security profi
 ```
 aws connect update-user-security-profiles \
     --security-profile-ids {{12345678-1234-1234-1234-1234567892111}} \
-    --user-id {{87654321-2222-1234-1234-111234567891}} \
+    --user-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}} \
     --instance-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.

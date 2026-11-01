@@ -33,6 +33,7 @@ aws servicecatalog accept-portfolio-share \
     --portfolio-id {{port-2s6wuabcdefghijk}}
 ```
 This command produces no output.
+For more information, see [Sharing and Importing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [AcceptPortfolioShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/accept-portfolio-share.html) in *AWS CLI Command Reference*.
 
 ### `associate-principal-with-portfolio`
@@ -51,6 +52,7 @@ aws servicecatalog associate-principal-with-portfolio \
     --principal-type {{IAM}}
 ```
 This command produces no output.
+For more information, see [Granting Access to Users](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_users.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [AssociatePrincipalWithPortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/associate-principal-with-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `associate-product-with-portfolio`
@@ -63,11 +65,12 @@ The following code example shows how to use `associate-product-with-portfolio`.
 The following `associate-product-with-portfolio` example associates the given product with the specified portfolio.
 
 ```
-aws servicecatalog associate-product-with-portfolio
-     --product-id {{prod-3p5abcdef3oyk}}
-     --portfolio-id {{port-2s6abcdef5wdh4}}
+aws servicecatalog associate-product-with-portfolio \
+    --product-id {{prod-3p5abcdef3oyk}} \
+    --portfolio-id {{port-2s6abcdef5wdh4}}
 ```
 This command produces no output.
+For more information, see [Adding products to portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_adding-products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [AssociateProductWithPortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/associate-product-with-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `associate-tag-option-with-resource`
@@ -85,6 +88,7 @@ aws servicecatalog associate-tag-option-with-resource \
     --tag-option-id {{tag-p3abc2pkpz5qc}}
 ```
 This command produces no output.
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [AssociateTagOptionWithResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/associate-tag-option-with-resource.html) in *AWS CLI Command Reference*.
 
 ### `copy-product`
@@ -97,7 +101,8 @@ The following code example shows how to use `copy-product`.
 The following `copy-product` example makes a copy of the specified product, using a JSON file to pass parameters.
 
 ```
-aws servicecatalog copy-product --cli-input-json {{file://copy-product-input.json}}
+aws servicecatalog copy-product \
+    --cli-input-json {{file://copy-product-input.json}}
 ```
 Contents of `copy-product-input.json`:
 
@@ -117,6 +122,7 @@ Output:
     "CopyProductToken": "copyproduct-abc5defgjkdji"
 }
 ```
+For more information, see [Managing Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [CopyProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/copy-product.html) in *AWS CLI Command Reference*.
 
 ### `create-constraint`
@@ -165,9 +171,10 @@ The following `create-portfolio-share` example shares the specified portfolio wi
 ```
 aws servicecatalog create-portfolio-share \
     --portfolio-id {{port-2s6abcdef5wdh4}} \
-    --account-id {{794123456789}}
+    --account-id {{123456789012}}
 ```
-This command produceds no output.
+This command produces no output.
+For more information, see [Sharing a Portfolio](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing_how-to-share.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [CreatePortfolioShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/create-portfolio-share.html) in *AWS CLI Command Reference*.
 
 ### `create-portfolio`
@@ -192,11 +199,12 @@ Output:
         "ProviderName": "my-provider",
         "DisplayName": "my-portfolio",
         "CreatedTime": 1571337221.555,
-        "ARN": "arn:aws:catalog:us-east-2:123456789012:portfolio/port-2s6xmplq5wdh4",
+        "ARN": "arn:aws:catalog:us-west-2:123456789012:portfolio/port-2s6xmplq5wdh4",
         "Id": "port-2s6xmplq5wdh4"
     }
 }
 ```
+For more information, see [Creating and Deleting Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/portfoliomgmt-create.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [CreatePortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/create-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `create-product`
@@ -228,7 +236,7 @@ Contents of `create-product-input.json`:
     "Tags": [
         {
             "Key": "region",
-            "Value": "us-east-1"
+            "Value": "us-west-2"
         }
     ],
     "ProvisioningArtifactParameters": {
@@ -248,7 +256,7 @@ Output:
     "Tags": [
         {
             "Key": "region",
-            "Value": "us-east-1"
+            "Value": "us-west-2"
         }
     ],
     "ProductViewDetail": {
@@ -279,6 +287,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-cloudresource.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [CreateProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/create-product.html) in *AWS CLI Command Reference*.
 
 ### `create-provisioned-product-plan`
@@ -323,7 +332,7 @@ The following `create-provisioning-artifact` example creates a provisioning arti
 
 ```
 aws servicecatalog create-provisioning-artifact \
-   --cli-input-json {{file://create-provisioning-artifact-input.json}}
+    --cli-input-json {{file://create-provisioning-artifact-input.json}}
 ```
 Contents of `create-provisioning-artifact-input.json`:
 
@@ -358,6 +367,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing Versions](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managing-versions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [CreateProvisioningArtifact](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/create-provisioning-artifact.html) in *AWS CLI Command Reference*.
 
 ### `create-tag-option`
@@ -370,8 +380,8 @@ The following code example shows how to use `create-tag-option`.
 The following `create-tag-option` example creates a TagOption.
 
 ```
-aws servicecatalog create-tag-option
-    --key {{1234}}
+aws servicecatalog create-tag-option \
+    --key {{1234}} \
     --value {{name}}
 ```
 Output:
@@ -386,6 +396,7 @@ Output:
     }
 }
 ```
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [CreateTagOption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/create-tag-option.html) in *AWS CLI Command Reference*.
 
 ### `delete-constraint`
@@ -420,6 +431,7 @@ aws servicecatalog delete-portfolio-share \
     --account-id {{123456789012}}
 ```
 This command produces no output.
+For more information, see [Sharing and Importing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DeletePortfolioShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/delete-portfolio-share.html) in *AWS CLI Command Reference*.
 
 ### `delete-portfolio`
@@ -436,6 +448,7 @@ aws servicecatalog delete-portfolio \
     --id {{port-abcdlx4gox4do}}
 ```
 This command produces no output.
+For more information, see [Creating and Deleting Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/portfoliomgmt-create.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DeletePortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/delete-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `delete-product`
@@ -452,6 +465,7 @@ aws servicecatalog delete-product \
     --id {{prod-abcdcek6yhbxi}}
 ```
 This command produces no output.
+For more information, see [Deleting products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-delete.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DeleteProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/delete-product.html) in *AWS CLI Command Reference*.
 
 ### `delete-provisioned-product-plan`
@@ -486,6 +500,7 @@ aws servicecatalog delete-provisioning-artifact \
     --provisioning-artifact-id {{pa-pqabcddii7ouc}}
 ```
 This command produces no output.
+For more information, see [Managing Versions](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managing-versions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DeleteProvisioningArtifact](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/delete-provisioning-artifact.html) in *AWS CLI Command Reference*.
 
 ### `delete-tag-option`
@@ -502,6 +517,7 @@ aws servicecatalog delete-tag-option \
     --id {{tag-iabcdn4fzjjms}}
 ```
 This command produces no output.
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DeleteTagOption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/delete-tag-option.html) in *AWS CLI Command Reference*.
 
 ### `describe-constraint`
@@ -556,6 +572,7 @@ Output:
     "TargetProductId": "prod-os6hog7abcdt2"
 }
 ```
+For more information, see [Managing Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DescribeCopyProductStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/describe-copy-product-status.html) in *AWS CLI Command Reference*.
 
 ### `describe-portfolio-share-status`
@@ -581,7 +598,7 @@ Output:
     "Status": "COMPLETED",
     "ShareDetails": {
         "SuccessfulShares": [
-            "012345678901"
+            "123456789111"
         ],
         "ShareErrors": []
     }
@@ -648,7 +665,7 @@ Output:
 {
     "TagOptions": [],
     "PortfolioDetail": {
-        "ARN": "arn:aws:catalog:us-west-2:687558541234:portfolio/port-2s6abcdq5wdh4",
+        "ARN": "arn:aws:catalog:us-west-2:123456789012:portfolio/port-2s6abcdq5wdh4",
         "Id": "port-2s6wuzyq5wdh4",
         "CreatedTime": 1571337221.555,
         "DisplayName": "my-portfolio",
@@ -657,6 +674,7 @@ Output:
     "Tags": []
 }
 ```
+For more information, see [Managing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DescribePortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/describe-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `describe-product-as-admin`
@@ -678,7 +696,7 @@ Output:
 {
     "TagOptions": [],
     "ProductViewDetail": {
-        "ProductARN": "arn:aws:catalog:us-west-2:687558542028:product/prod-abcdcek6yhbxi",
+        "ProductARN": "arn:aws:catalog:us-west-2:123456789012:product/prod-abcdcek6yhbxi",
         "ProductViewSummary": {
             "SupportEmail": "test@amazon.com",
             "Type": "CLOUD_FORMATION_TEMPLATE",
@@ -714,6 +732,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DescribeProductAsAdmin](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/describe-product-as-admin.html) in *AWS CLI Command Reference*.
 
 ### `describe-product`
@@ -837,8 +856,8 @@ Output:
         "CreatedTime": 1577222793.358,
         "Arn": "arn:aws:servicecatalog:us-west-2:123456789012:stack/mytestppname3/pp-dpom27bm4abcd",
         "Id": "pp-dpom27bm4abcd",
-        "StatusMessage": "AmazonCloudFormationException  Parameters: [KeyName] must have values (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: 5528602a-a9ef-427c-825c-f82c31b814f5)",
-        "IdempotencyToken": "527c5358-2a1a-4b9e-b1b9-7293b0ddff42",
+        "StatusMessage": "AmazonCloudFormationException  Parameters: [KeyName] must have values (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: a1b2c3d4-5678-90ab-cdef-EXAMPLE11111)",
+        "IdempotencyToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "LastRecordId": "rec-tfuawdjovzxge",
         "Type": "CFN_STACK",
         "Name": "mytestppname3"
@@ -846,6 +865,7 @@ Output:
     "CloudWatchDashboards": []
 }
 ```
+For more information, see [Managing Provisioned Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/provisioned-products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DescribeProvisionedProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/describe-provisioned-product.html) in *AWS CLI Command Reference*.
 
 ### `describe-provisioning-artifact`
@@ -880,6 +900,7 @@ Output:
     "Status": "AVAILABLE"
 }
 ```
+For more information, see [Managing Versions](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managing-versions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DescribeProvisioningArtifact](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/describe-provisioning-artifact.html) in *AWS CLI Command Reference*.
 
 ### `describe-provisioning-parameters`
@@ -981,6 +1002,7 @@ Output:
     }
 }
 ```
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DescribeTagOption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/describe-tag-option.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-principal-from-portfolio`
@@ -998,6 +1020,7 @@ aws servicecatalog disassociate-principal-from-portfolio \
     --principal-arn {{arn:aws:iam::123456789012:group/myendusers}}
 ```
 This command produces no output.
+For more information, see [Granting Access to Users](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_users.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DisassociatePrincipalFromPortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/disassociate-principal-from-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-product-from-portfolio`
@@ -1015,6 +1038,7 @@ aws servicecatalog disassociate-product-from-portfolio \
     --portfolio-id {{port-2s6abcdq5wdh4}}
 ```
 This command produces no output.
+For more information, see [Adding products to portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_adding-products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DisassociateProductFromPortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/disassociate-product-from-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-tag-option-from-resource`
@@ -1028,10 +1052,11 @@ The following `disassociate-tag-option-from-resource` example disassociates the 
 
 ```
 aws servicecatalog disassociate-tag-option-from-resource \
-     --resource-id {{port-2s6abcdq5wdh4}} \
-     --tag-option-id {{tag-p3abc2pkpz5qc}}
+    --resource-id {{port-2s6abcdq5wdh4}} \
+    --tag-option-id {{tag-p3abc2pkpz5qc}}
 ```
 This command produces no output.
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [DisassociateTagOptionFromResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/disassociate-tag-option-from-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-accepted-portfolio-shares`
@@ -1071,6 +1096,7 @@ Output:
     ]
 }
 ```
+For more information, see [Sharing and Importing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListAcceptedPortfolioShares](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-accepted-portfolio-shares.html) in *AWS CLI Command Reference*.
 
 ### `list-constraints-for-portfolio`
@@ -1192,6 +1218,7 @@ Output:
     ]
 }
 ```
+For more information, see [Sharing a Portfolio](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing_how-to-share.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListPortfolioAccess](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-portfolio-access.html) in *AWS CLI Command Reference*.
 
 ### `list-portfolios-for-product`
@@ -1229,6 +1256,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListPortfoliosForProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-portfolios-for-product.html) in *AWS CLI Command Reference*.
 
 ### `list-portfolios`
@@ -1249,15 +1277,16 @@ Output:
 {
     "PortfolioDetails": [
         {
-           "CreatedTime": 1559665256.348,
-           "ARN": "arn:aws:catalog:us-east-2:123456789012:portfolio/port-5pzcxmplst4ei",
-           "DisplayName": "my-portfolio",
-           "Id": "port-5pzcxmplst4ei",
-           "ProviderName": "my-user"
+            "CreatedTime": 1559665256.348,
+            "ARN": "arn:aws:catalog:us-west-2:123456789012:portfolio/port-5pzcxmplst4ei",
+            "DisplayName": "my-portfolio",
+            "Id": "port-5pzcxmplst4ei",
+            "ProviderName": "my-user"
         }
     ]
 }
 ```
+For more information, see [Managing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListPortfolios](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-portfolios.html) in *AWS CLI Command Reference*.
 
 ### `list-principals-for-portfolio`
@@ -1285,6 +1314,7 @@ Output:
     ]
 }
 ```
+For more information, see [Granting Access to Users](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_users.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListPrincipalsForPortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-principals-for-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `list-provisioning-artifacts`
@@ -1324,6 +1354,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Versions](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managing-versions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListProvisioningArtifacts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-provisioning-artifacts.html) in *AWS CLI Command Reference*.
 
 ### `list-resources-for-tag-option`
@@ -1354,6 +1385,7 @@ Output:
     ]
 }
 ```
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListResourcesForTagOption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-resources-for-tag-option.html) in *AWS CLI Command Reference*.
 
 ### `list-tag-options`
@@ -1362,6 +1394,7 @@ Output:
 The following code example shows how to use `list-tag-options`.
 
 **AWS CLI**
+**To list all TagOptions**
 The following `list-tag-options` example lists all values for `TagOptions`.
 
 ```
@@ -1387,6 +1420,7 @@ Output:
     ]
 }
 ```
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ListTagOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/list-tag-options.html) in *AWS CLI Command Reference*.
 
 ### `provision-product`
@@ -1425,6 +1459,7 @@ Output:
     }
 }
 ```
+For more information, see [Launching a product](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-launch.html) in the *AWS Service Catalog User Guide*.
 +  For API details, see [ProvisionProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/provision-product.html) in *AWS CLI Command Reference*.
 
 ### `reject-portfolio-share`
@@ -1441,6 +1476,7 @@ aws servicecatalog reject-portfolio-share \
     --portfolio-id {{port-2s6wuabcdefghijk}}
 ```
 This command produces no output.
+For more information, see [Sharing and Importing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [RejectPortfolioShare](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/reject-portfolio-share.html) in *AWS CLI Command Reference*.
 
 ### `scan-provisioned-products`
@@ -1463,10 +1499,10 @@ Output:
         {
             "Status": "ERROR",
             "Arn": "arn:aws:servicecatalog:us-west-2:123456789012:stack/mytestppname3/pp-abcd27bm4mldq",
-            "StatusMessage": "AmazonCloudFormationException  Parameters: [KeyName] must have values (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: 5528602a-a9ef-427c-825c-f82c31b814f5)",
+            "StatusMessage": "AmazonCloudFormationException  Parameters: [KeyName] must have values (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: a1b2c3d4-5678-90ab-cdef-EXAMPLE11111)",
             "Id": "pp-abcd27bm4mldq",
             "Type": "CFN_STACK",
-            "IdempotencyToken": "527c5358-2a1a-4b9e-b1b9-7293b0ddff42",
+            "IdempotencyToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreatedTime": 1577222793.358,
             "Name": "mytestppname3",
             "LastRecordId": "rec-tfuawdabcdxge"
@@ -1474,6 +1510,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Provisioned Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/provisioned-products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [ScanProvisionedProducts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/scan-provisioned-products.html) in *AWS CLI Command Reference*.
 
 ### `search-products-as-admin`
@@ -1511,6 +1548,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [SearchProductsAsAdmin](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/search-products-as-admin.html) in *AWS CLI Command Reference*.
 
 ### `search-products`
@@ -1598,7 +1636,7 @@ Output:
             "Id": "pp-abcd27bm4mldq",
             "Status": "ERROR",
             "UserArn": "arn:aws:iam::123456789012:user/cliuser",
-            "StatusMessage": "AmazonCloudFormationException  Parameters: [KeyName] must have values (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: 5528602a-a9ef-427c-825c-f82c31b814f5)",
+            "StatusMessage": "AmazonCloudFormationException  Parameters: [KeyName] must have values (Service: AmazonCloudFormation; Status Code: 400; Error Code: ValidationError; Request ID: a1b2c3d4-5678-90ab-cdef-EXAMPLE11111)",
             "Arn": "arn:aws:servicecatalog:us-west-2:123456789012:stack/mytestppname3/pp-abcd27bm4mldq",
             "Tags": [
                 {
@@ -1626,7 +1664,7 @@ Output:
                     "Key": "aws:servicecatalog:provisionedProductArn"
                 }
             ],
-            "IdempotencyToken": "527c5358-2a1a-4b9e-b1b9-7293b0ddff42",
+            "IdempotencyToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "UserArnSession": "arn:aws:iam::123456789012:user/cliuser",
             "Type": "CFN_STACK",
             "LastRecordId": "rec-tfuawdabcdxge",
@@ -1636,6 +1674,7 @@ Output:
     "TotalResultsCount": 1
 }
 ```
+For more information, see [Managing Provisioned Products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/provisioned-products.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [SearchProvisionedProducts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/search-provisioned-products.html) in *AWS CLI Command Reference*.
 
 ### `terminate-provisioned-product`
@@ -1737,6 +1776,7 @@ Output:
     "Tags": []
 }
 ```
+For more information, see [Managing Portfolios](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [UpdatePortfolio](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/update-portfolio.html) in *AWS CLI Command Reference*.
 
 ### `update-product`
@@ -1784,6 +1824,7 @@ Output:
     }
 }
 ```
+For more information, see [Updating products](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/productmgmt-update.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [UpdateProduct](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/update-product.html) in *AWS CLI Command Reference*.
 
 ### `update-provisioning-artifact`
@@ -1827,6 +1868,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing Versions](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/managing-versions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [UpdateProvisioningArtifact](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/update-provisioning-artifact.html) in *AWS CLI Command Reference*.
 
 ### `update-tag-option`
@@ -1839,7 +1881,8 @@ The following code example shows how to use `update-tag-option`.
 The following `update-tag-option` example updates the value of a `TagOption`, using the specified JSON file.
 
 ```
-aws servicecatalog update-tag-option --cli-input-json {{file://update-tag-option-input.json}}
+aws servicecatalog update-tag-option \
+    --cli-input-json {{file://update-tag-option-input.json}}
 ```
 Contents of `update-tag-option-input.json`:
 
@@ -1862,4 +1905,5 @@ Output:
     }
 }
 ```
+For more information, see [AWS Service Catalog TagOption Library](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/tagoptions.html) in the *AWS Service Catalog Administrator Guide*.
 +  For API details, see [UpdateTagOption](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog/update-tag-option.html) in *AWS CLI Command Reference*.

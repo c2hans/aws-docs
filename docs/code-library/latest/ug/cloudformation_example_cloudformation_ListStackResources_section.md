@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To list resources in a stack**
-The following command displays the list of resources in the specified stack.
+The following `list-stack-resources` example displays the list of resources in the specified stack.
 
 ```
 aws cloudformation list-stack-resources \
@@ -61,6 +61,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing AWS resources as a single unit with CloudFormation stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [ListStackResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/list-stack-resources.html) in *AWS CLI Command Reference*.
 
 ------

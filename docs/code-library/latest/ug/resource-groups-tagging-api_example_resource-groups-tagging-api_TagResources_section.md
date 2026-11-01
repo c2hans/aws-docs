@@ -28,7 +28,7 @@ Output:
     "FailedResourcesMap": {}
 }
 ```
-For more information, see [TagResources](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_TagResources.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [Managing tags with Tag Editor](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging-resources.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [TagResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/tag-resources.html) in *AWS CLI Command Reference*.
 
 ------

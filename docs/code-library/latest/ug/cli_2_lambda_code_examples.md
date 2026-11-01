@@ -33,24 +33,15 @@ aws lambda add-layer-version-permission \
     --layer-name {{my-layer}} \
     --statement-id {{xaccount}} \
     --action {{lambda:GetLayerVersion}}  \
-    --principal {{123456789012}} \
+    --principal {{123456789111}} \
     --version-number {{1}}
 ```
 Output:
 
 ```
 {
-    "RevisionId": "35d87451-f796-4a3f-a618-95a3671b0a0c",
-    "Statement":
-    {
-        "Sid":"xaccount",
-        "Effect":"Allow",
-        "Principal":{
-            "AWS":"arn:aws:iam::210987654321:root"
-        },
-        "Action":"lambda:GetLayerVersion",
-        "Resource":"arn:aws:lambda:us-east-2:123456789012:layer:my-layer:1"
-    }
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Statement": "{\"Sid\":\"xaccount\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789111:root\"},\"Action\":\"lambda:GetLayerVersion\",\"Resource\":\"arn:aws:lambda:us-west-2:123456789012:layer:my-layer:1\"}"
 }
 ```
 For more information, see [AWS Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html) in the *AWS Lambda Developer Guide*.
@@ -76,16 +67,7 @@ Output:
 
 ```
 {
-    "Statement":
-    {
-        "Sid":"sns",
-        "Effect":"Allow",
-        "Principal":{
-            "Service":"sns.amazonaws.com"
-        },
-        "Action":"lambda:InvokeFunction",
-        "Resource":"arn:aws:lambda:us-east-2:123456789012:function:my-function"
-    }
+    "Statement": "{\"Sid\":\"sns\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"sns.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-west-2:123456789012:function:my-function\"}"
 }
 ```
 For more information, see [Using Resource-based Policies for AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) in the *AWS Lambda Developer Guide*.
@@ -114,7 +96,7 @@ Output:
     "FunctionVersion": "1",
     "Name": "LIVE",
     "AliasArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:LIVE",
-    "RevisionId": "873282ed-4cd3-4dc8-a069-d0c647e470c6",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Description": "alias for live version of function"
 }
 ```
@@ -140,7 +122,7 @@ Output:
 
 ```
 {
-    "UUID": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+    "UUID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "StateTransitionReason": "USER_INITIATED",
     "LastModified": 1569284520.333,
     "BatchSize": 5,
@@ -184,7 +166,7 @@ Output:
     "CodeSha256": "PFn4S+er27qk+UuZSTKEQfNKG/XNn7QJs90mJgq6oH8=",
     "FunctionName": "my-function",
     "CodeSize": 308,
-    "RevisionId": "873282ed-4cd3-4dc8-a069-d0c647e470c6",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "MemorySize": 128,
     "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function",
     "Version": "$LATEST",
@@ -228,13 +210,13 @@ The following `delete-event-source-mapping` example deletes the mapping between 
 
 ```
 aws lambda delete-event-source-mapping \
-    --uuid  {{a1b2c3d4-5678-90ab-cdef-11111EXAMPLE}}
+    --uuid  {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "UUID": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+    "UUID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "StateTransitionReason": "USER_INITIATED",
     "LastModified": 1569285870.271,
     "BatchSize": 5,
@@ -273,8 +255,11 @@ The following code example shows how to use `delete-function-event-invoke-config
 The following `delete-function-event-invoke-config` example deletes the asynchronous invocation configuration for the `GREEN` alias of the specified function.
 
 ```
-aws lambda delete-function-event-invoke-config --function-name {{my-function:GREEN}}
+aws lambda delete-function-event-invoke-config \
+    --function-name {{my-function:GREEN}}
 ```
+This command produces no output.
+For more information, see [Configuring error handling settings for Lambda asynchronous invocations](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-configuring.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [DeleteFunctionEventInvokeConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/delete-function-event-invoke-config.html) in *AWS CLI Command Reference*.
 
 ### `delete-function`
@@ -342,6 +327,8 @@ aws lambda delete-provisioned-concurrency-config \
     --function-name {{my-function}} \
     --qualifier {{GREEN}}
 ```
+This command produces no output.
+For more information, see [Configuring provisioned concurrency for an Event Function](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [DeleteProvisionedConcurrencyConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/delete-provisioned-concurrency-config.html) in *AWS CLI Command Reference*.
 
 ### `get-account-settings`
@@ -361,15 +348,15 @@ Output:
 ```
 {
     "AccountLimit": {
-       "CodeSizeUnzipped": 262144000,
-       "UnreservedConcurrentExecutions": 1000,
-       "ConcurrentExecutions": 1000,
-       "CodeSizeZipped": 52428800,
-       "TotalCodeSize": 80530636800
+        "CodeSizeUnzipped": 262144000,
+        "UnreservedConcurrentExecutions": 1000,
+        "ConcurrentExecutions": 1000,
+        "CodeSizeZipped": 52428800,
+        "TotalCodeSize": 80530636800
     },
     "AccountUsage": {
-       "FunctionCount": 4,
-       "TotalCodeSize": 9426
+        "FunctionCount": 4,
+        "TotalCodeSize": 9426
     }
 }
 ```
@@ -397,7 +384,7 @@ Output:
     "FunctionVersion": "3",
     "Name": "LIVE",
     "AliasArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:LIVE",
-    "RevisionId": "594f41fb-b85f-4c20-95c7-6ca5f2a92c93",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Description": "alias for live version of function"
 }
 ```
@@ -415,13 +402,13 @@ The following `get-event-source-mapping` example displays the details for the ma
 
 ```
 aws lambda get-event-source-mapping \
-    --uuid {{"a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}}
+    --uuid {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "UUID": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+    "UUID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "StateTransitionReason": "USER_INITIATED",
     "LastModified": 1569284520.333,
     "BatchSize": 5,
@@ -453,6 +440,7 @@ Output:
     "ReservedConcurrentExecutions": 250
 }
 ```
+For more information, see [Configuring reserved concurrency for an Event Function](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [GetFunctionConcurrency](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-function-concurrency.html) in *AWS CLI Command Reference*.
 
 ### `get-function-configuration`
@@ -474,7 +462,7 @@ Output:
 {
     "FunctionName": "my-function",
     "LastModified": "2019-09-26T20:28:40.438+0000",
-    "RevisionId": "e52502d4-9320-4688-9cd6-152a6ab7490d",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "MemorySize": 256,
     "Version": "2",
     "Role": "arn:aws:iam::123456789012:role/service-role/my-function-role-uy3l9qyq",
@@ -516,17 +504,18 @@ Output:
 ```
 {
     "LastModified": 1577824396.653,
-    "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:BLUE",
+    "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:BLUE",
     "MaximumRetryAttempts": 0,
     "MaximumEventAgeInSeconds": 3600,
     "DestinationConfig": {
         "OnSuccess": {},
         "OnFailure": {
-            "Destination": "arn:aws:sqs:us-east-2:123456789012:failed-invocations"
+            "Destination": "arn:aws:sqs:us-west-2:123456789012:failed-invocations"
         }
     }
 }
 ```
+For more information, see [Configuring error handling settings for Lambda asynchronous invocations](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-configuring.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [GetFunctionEventInvokeConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-function-event-invoke-config.html) in *AWS CLI Command Reference*.
 
 ### `get-function`
@@ -566,7 +555,7 @@ Output:
             "SecurityGroupIds": []
         },
         "MemorySize": 128,
-        "RevisionId": "28f0fb31-5c5c-43d3-8955-03e76c5c1075",
+        "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CodeSize": 304,
         "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function",
         "Handler": "index.handler",
@@ -635,21 +624,8 @@ Output:
 
 ```
 {
-    "Policy": {
-        "Version":"2012-10-17",
-        "Id":"default",
-        "Statement":
-        [
-            {
-                "Sid":"xaccount",
-                "Effect":"Allow",
-                "Principal": {"AWS":"arn:aws:iam::123456789012:root"},
-                "Action":"lambda:GetLayerVersion",
-                "Resource":"arn:aws:lambda:us-west-2:123456789012:layer:my-layer:1"
-            }
-        ]
-    },
-    "RevisionId": "c68f21d2-cbf0-4026-90f6-1375ee465cd0"
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"xaccount\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"},\"Action\":\"lambda:GetLayerVersion\",\"Resource\":\"arn:aws:lambda:us-west-2:123456789012:layer:my-layer:1\"}]}",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [AWS Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html) in the *AWS Lambda Developer Guide*.
@@ -674,12 +650,12 @@ Output:
 ```
 {
     "Content": {
-        "Location": "https://awslambda-us-east-2-layers.s3.us-east-2.amazonaws.com/snapshots/123456789012/my-layer-4aaa2fbb-ff77-4b0a-ad92-5b78a716a96a?versionId=27iWyA73cCAYqyH...",
+        "Location": "https://awslambda-us-west-2-layers.s3.us-west-2.amazonaws.com/snapshots/123456789012/my-layer-4aaa2fbb-ff77-4b0a-ad92-5b78a716a96a?versionId=27iWyA73cCAYqyH...",
         "CodeSha256": "tv9jJO+rPbXUUXuRKi7CwHzKtLDkDRJLB3cC3Z/ouXo=",
         "CodeSize": 169
     },
-    "LayerArn": "arn:aws:lambda:us-east-2:123456789012:layer:my-layer",
-    "LayerVersionArn": "arn:aws:lambda:us-east-2:123456789012:layer:my-layer:1",
+    "LayerArn": "arn:aws:lambda:us-west-2:123456789012:layer:my-layer",
+    "LayerVersionArn": "arn:aws:lambda:us-west-2:123456789012:layer:my-layer:1",
     "Description": "My Python layer",
     "CreatedDate": "2018-11-14T23:03:52.894+0000",
     "Version": 1,
@@ -710,21 +686,8 @@ Output:
 
 ```
 {
-    "Policy": {
-        "Version":"2012-10-17",
-        "Id":"default",
-        "Statement":
-        [
-            {
-                "Sid":"iot-events",
-                "Effect":"Allow",
-                "Principal": {"Service":"iotevents.amazonaws.com"},
-                "Action":"lambda:InvokeFunction",
-                "Resource":"arn:aws:lambda:us-west-2:123456789012:function:my-function"
-            }
-        ]
-    },
-    "RevisionId": "93017fc9-59cb-41dc-901b-4845ce4bf668"
+    "Policy": "{\"Version\":\"2012-10-17\",\"Id\":\"default\",\"Statement\":[{\"Sid\":\"iot-events\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"iotevents.amazonaws.com\"},\"Action\":\"lambda:InvokeFunction\",\"Resource\":\"arn:aws:lambda:us-west-2:123456789012:function:my-function\"}]}",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Using Resource-based Policies for AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) in the *AWS Lambda Developer Guide*.
@@ -755,6 +718,7 @@ Output:
     "LastModified": "2019-12-31T20:28:49+0000"
 }
 ```
+For more information, see [Configuring provisioned concurrency for an Event Function](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [GetProvisionedConcurrencyConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/get-provisioned-concurrency-config.html) in *AWS CLI Command Reference*.
 
 ### `invoke`
@@ -767,11 +731,10 @@ The following code example shows how to use `invoke`.
 The following `invoke` example invokes the `my-function` function synchronously. The `cli-binary-format` option is required if you're using AWS CLI version 2. For more information, see [AWS CLI supported global command line options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html#cli-configure-options-list) in the *AWS Command Line Interface User Guide*.
 
 ```
-aws lambda invoke \
+aws lambda invoke {{response.json}} \
     --function-name {{my-function}} \
     --cli-binary-format {{raw-in-base64-out}} \
-    --payload '{{{ "name": "Bob" }}}' \
-    {{response.json}}
+    --payload '{{{ "name": "Bob" }}}'
 ```
 Output:
 
@@ -786,12 +749,11 @@ For more information, see [Invoke a Lambda function synchronously](https://docs.
 The following `invoke` example invokes the `my-function` function asynchronously. The `cli-binary-format` option is required if you're using AWS CLI version 2. For more information, see [AWS CLI supported global command line options](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html#cli-configure-options-list) in the *AWS Command Line Interface User Guide*.
 
 ```
-aws lambda invoke \
+aws lambda invoke {{response.json}} \
     --function-name {{my-function}} \
     --invocation-type {{Event}} \
     --cli-binary-format {{raw-in-base64-out}} \
-    --payload '{{{ "name": "Bob" }}}' \
-    {{response.json}}
+    --payload '{{{ "name": "Bob" }}}'
 ```
 Output:
 
@@ -823,14 +785,14 @@ Output:
     "Aliases": [
         {
             "AliasArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:BETA",
-            "RevisionId": "a410117f-ab16-494e-8035-7e204bb7933b",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "FunctionVersion": "2",
             "Name": "BETA",
             "Description": "alias for beta version of function"
         },
         {
             "AliasArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:LIVE",
-            "RevisionId": "21d40116-f8b1-40ba-9360-3ea284da1bb5",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "FunctionVersion": "1",
             "Name": "LIVE",
             "Description": "alias for live version of function"
@@ -860,7 +822,7 @@ Output:
 {
     "EventSourceMappings": [
         {
-            "UUID": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+            "UUID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "StateTransitionReason": "USER_INITIATED",
             "LastModified": 1569284520.333,
             "BatchSize": 5,
@@ -894,19 +856,20 @@ Output:
     "FunctionEventInvokeConfigs": [
         {
             "LastModified": 1577824406.719,
-            "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:GREEN",
+            "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:GREEN",
             "MaximumRetryAttempts": 2,
             "MaximumEventAgeInSeconds": 1800
         },
         {
             "LastModified": 1577824396.653,
-            "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:BLUE",
+            "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:BLUE",
             "MaximumRetryAttempts": 0,
             "MaximumEventAgeInSeconds": 3600
         }
     ]
 }
 ```
+For more information, see [Configuring error handling settings for Lambda asynchronous invocations](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-configuring.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [ListFunctionEventInvokeConfigs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/list-function-event-invoke-configs.html) in *AWS CLI Command Reference*.
 
 ### `list-functions`
@@ -934,7 +897,7 @@ Output:
             "CodeSha256": "dBG9m8SGdmlEjw/JYXlhhvCrAv5TxvXsbL/RMr0fT/I=",
             "FunctionName": "helloworld",
             "MemorySize": 128,
-            "RevisionId": "1718e831-badf-4253-9518-d0644210af7b",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CodeSize": 294,
             "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:helloworld",
             "Handler": "helloworld.handler",
@@ -957,7 +920,7 @@ Output:
                 "SecurityGroupIds": []
             },
             "MemorySize": 256,
-            "RevisionId": "93017fc9-59cb-41dc-901b-4845ce4bf668",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CodeSize": 266,
             "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function",
             "Handler": "index.handler",
@@ -990,7 +953,7 @@ Output:
                 "SecurityGroupIds": []
             },
             "MemorySize": 128,
-            "RevisionId": "80b4eabc-acf7-4ea8-919a-e874c213707d",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CodeSize": 299,
             "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-python-function",
             "Handler": "lambda_function.lambda_handler",
@@ -1013,7 +976,7 @@ The following code example shows how to use `list-layer-versions`.
 
 **AWS CLI**
 **To list the versions of an AWS Lambda layer**
-The following `list-layers-versions` example displays information about the versions for the layer named `my-layer`.
+The following `list-layer-versions` example displays information about the versions for the layer named `my-layer`.
 
 ```
 aws lambda list-layer-versions \
@@ -1023,9 +986,9 @@ Output:
 
 ```
 {
-    "Layers": [
+    "LayerVersions": [
         {
-            "LayerVersionArn": "arn:aws:lambda:us-east-2:123456789012:layer:my-layer:2",
+            "LayerVersionArn": "arn:aws:lambda:us-west-2:123456789012:layer:my-layer:2",
             "Version": 2,
             "Description": "My layer",
             "CreatedDate": "2023-11-15T00:37:46.592+0000",
@@ -1060,9 +1023,9 @@ Output:
     "Layers": [
         {
             "LayerName": "my-layer",
-            "LayerArn": "arn:aws:lambda:us-east-2:123456789012:layer:my-layer",
+            "LayerArn": "arn:aws:lambda:us-west-2:123456789012:layer:my-layer",
             "LatestMatchingVersion": {
-                "LayerVersionArn": "arn:aws:lambda:us-east-2:123456789012:layer:my-layer:2",
+                "LayerVersionArn": "arn:aws:lambda:us-west-2:123456789012:layer:my-layer:2",
                 "Version": 2,
                 "Description": "My layer",
                 "CreatedDate": "2023-11-15T00:37:46.592+0000",
@@ -1097,7 +1060,7 @@ Output:
 {
     "ProvisionedConcurrencyConfigs": [
         {
-            "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:GREEN",
+            "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:GREEN",
             "RequestedProvisionedConcurrentExecutions": 100,
             "AvailableProvisionedConcurrentExecutions": 100,
             "AllocatedProvisionedConcurrentExecutions": 100,
@@ -1105,7 +1068,7 @@ Output:
             "LastModified": "2019-12-31T20:29:00+0000"
         },
         {
-            "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:BLUE",
+            "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:BLUE",
             "RequestedProvisionedConcurrentExecutions": 100,
             "AvailableProvisionedConcurrentExecutions": 100,
             "AllocatedProvisionedConcurrentExecutions": 100,
@@ -1115,6 +1078,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configuring provisioned concurrency for an Event Function](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [ListProvisionedConcurrencyConfigs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/list-provisioned-concurrency-configs.html) in *AWS CLI Command Reference*.
 
 ### `list-tags`
@@ -1174,7 +1138,7 @@ Output:
                 "SecurityGroupIds": []
             },
             "MemorySize": 256,
-            "RevisionId": "93017fc9-59cb-41dc-901b-4845ce4bf668",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CodeSize": 266,
             "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:$LATEST",
             "Handler": "index.handler",
@@ -1197,7 +1161,7 @@ Output:
                 "SecurityGroupIds": []
             },
             "MemorySize": 256,
-            "RevisionId": "949c8914-012e-4795-998c-e467121951b1",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CodeSize": 304,
             "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:1",
             "Handler": "index.handler",
@@ -1220,7 +1184,7 @@ Output:
                 "SecurityGroupIds": []
             },
             "MemorySize": 256,
-            "RevisionId": "cd669f21-0f3d-4e1c-9566-948837f2e2ea",
+            "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "CodeSize": 266,
             "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:2",
             "Handler": "index.handler",
@@ -1300,7 +1264,7 @@ Output:
     "CodeSha256": "dBG9m8SGdmlEjw/JYXlhhvCrAv5TxvXsbL/RMr0fT/I=",
     "FunctionName": "my-function",
     "CodeSize": 294,
-    "RevisionId": "f31d3d39-cc63-4520-97d4-43cd44c94c20",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "MemorySize": 128,
     "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:3",
     "Version": "2",
@@ -1359,7 +1323,7 @@ Output:
 ```
 {
     "LastModified": 1573686021.479,
-    "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:$LATEST",
+    "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:$LATEST",
     "MaximumRetryAttempts": 0,
     "MaximumEventAgeInSeconds": 3600,
     "DestinationConfig": {
@@ -1368,6 +1332,7 @@ Output:
     }
 }
 ```
+For more information, see [Configuring error handling settings for Lambda asynchronous invocations](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-configuring.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [PutFunctionEventInvokeConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/put-function-event-invoke-config.html) in *AWS CLI Command Reference*.
 
 ### `put-provisioned-concurrency-config`
@@ -1389,12 +1354,13 @@ Output:
 
 ```
 {
-    "Requested ProvisionedConcurrentExecutions": 100,
-    "Allocated ProvisionedConcurrentExecutions": 0,
+    "RequestedProvisionedConcurrentExecutions": 100,
+    "AllocatedProvisionedConcurrentExecutions": 0,
     "Status": "IN_PROGRESS",
     "LastModified": "2019-11-21T19:32:12+0000"
 }
 ```
+For more information, see [Configuring provisioned concurrency for an Event Function](https://docs.aws.amazon.com/lambda/latest/dg/provisioned-concurrency.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [PutProvisionedConcurrencyConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/put-provisioned-concurrency-config.html) in *AWS CLI Command Reference*.
 
 ### `remove-layer-version-permission`
@@ -1492,7 +1458,7 @@ Output:
     "FunctionVersion": "3",
     "Name": "LIVE",
     "AliasArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:LIVE",
-    "RevisionId": "594f41fb-b85f-4c20-95c7-6ca5f2a92c93",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Description": "alias for live version of function"
 }
 ```
@@ -1510,14 +1476,14 @@ The following `update-event-source-mapping` example updates the batch size to 8 
 
 ```
 aws lambda update-event-source-mapping \
-    --uuid  {{"a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"}} \
+    --uuid  {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --batch-size {{8}}
 ```
 Output:
 
 ```
 {
-    "UUID": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE",
+    "UUID": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "StateTransitionReason": "USER_INITIATED",
     "LastModified": 1569284520.333,
     "BatchSize": 8,
@@ -1549,7 +1515,7 @@ Output:
 {
     "FunctionName": "my-function",
     "LastModified": "2019-09-26T20:28:40.438+0000",
-    "RevisionId": "e52502d4-9320-4688-9cd6-152a6ab7490d",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "MemorySize": 256,
     "Version": "$LATEST",
     "Role": "arn:aws:iam::123456789012:role/service-role/my-function-role-uy3l9qyq",
@@ -1593,7 +1559,7 @@ Output:
 {
     "FunctionName": "my-function",
     "LastModified": "2019-09-26T20:28:40.438+0000",
-    "RevisionId": "e52502d4-9320-4688-9cd6-152a6ab7490d",
+    "RevisionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "MemorySize": 256,
     "Version": "$LATEST",
     "Role": "arn:aws:iam::123456789012:role/service-role/my-function-role-uy3l9qyq",
@@ -1629,22 +1595,23 @@ The following `update-function-event-invoke-config` example adds an on-failure d
 ```
 aws lambda update-function-event-invoke-config \
     --function-name {{my-function}} \
-    --destination-config '{{{"OnFailure":{"Destination": "arn:aws:sqs:us-east-2:123456789012:destination"}}}}'
+    --destination-config '{{{"OnFailure":{"Destination": "arn:aws:sqs:us-west-2:123456789012:destination"}}}}'
 ```
 Output:
 
 ```
 {
     "LastModified": 1573687896.493,
-    "FunctionArn": "arn:aws:lambda:us-east-2:123456789012:function:my-function:$LATEST",
+    "FunctionArn": "arn:aws:lambda:us-west-2:123456789012:function:my-function:$LATEST",
     "MaximumRetryAttempts": 0,
     "MaximumEventAgeInSeconds": 3600,
     "DestinationConfig": {
         "OnSuccess": {},
         "OnFailure": {
-            "Destination": "arn:aws:sqs:us-east-2:123456789012:destination"
+            "Destination": "arn:aws:sqs:us-west-2:123456789012:destination"
         }
     }
 }
 ```
+For more information, see [Invoking a Lambda Event Function asynchronously](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html) in the *AWS Lambda Developer Guide*.
 +  For API details, see [UpdateFunctionEventInvokeConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-function-event-invoke-config.html) in *AWS CLI Command Reference*.

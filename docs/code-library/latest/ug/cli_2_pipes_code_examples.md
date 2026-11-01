@@ -33,14 +33,14 @@ aws pipes create-pipe \
     --name {{Demo_Pipe}} \
     --desired-state {{RUNNING}} \
     --role-arn {{arn:aws:iam::123456789012:role/service-role/Amazon_EventBridge_Pipe_Demo_Pipe_28b3aa4f}} \
-    --source {{arn:aws:sqs:us-east-1:123456789012:Demo_Queue}} \
-    --target {{arn:aws:logs:us-east-1:123456789012:log-group:/aws/pipes/Demo_LogGroup}}
+    --source {{arn:aws:sqs:us-west-2:123456789012:Demo_Queue}} \
+    --target {{arn:aws:logs:us-west-2:123456789012:log-group:/aws/pipes/Demo_LogGroup}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+    "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
     "Name": "Demo_Pipe",
     "DesiredState": "RUNNING",
     "CurrentState": "CREATING",
@@ -68,7 +68,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+    "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
     "Name": "Demo_Pipe",
     "DesiredState": "STOPPED",
     "CurrentState": "DELETING",
@@ -96,19 +96,19 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+    "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
     "Name": "Demo_Pipe",
     "DesiredState": "RUNNING",
     "CurrentState": "RUNNING",
     "StateReason": "User initiated",
-    "Source": "arn:aws:sqs:us-east-1:123456789012:Demo_Queue",
+    "Source": "arn:aws:sqs:us-west-2:123456789012:Demo_Queue",
     "SourceParameters": {
         "SqsQueueParameters": {
             "BatchSize": 1
         }
     },
     "EnrichmentParameters": {},
-    "Target": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/pipes/Demo_LogGroup",
+    "Target": "arn:aws:logs:us-west-2:123456789012:log-group:/aws/pipes/Demo_LogGroup",
     "TargetParameters": {},
     "RoleArn": "arn:aws:iam::123456789012:role/service-role/Amazon_EventBridge_Pipe_Demo_Pipe_28b3aa4f",
     "Tags": {},
@@ -116,7 +116,7 @@ Output:
     "LastModifiedTime": "2024-10-08T10:23:47-05:00",
     "LogConfiguration": {
         "CloudwatchLogsLogDestination": {
-            "LogGroupArn": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/vendedlogs/pipes/Demo_Pipe"
+            "LogGroupArn": "arn:aws:logs:us-west-2:123456789012:log-group:/aws/vendedlogs/pipes/Demo_Pipe"
         },
         "Level": "ERROR"
     }
@@ -144,14 +144,14 @@ Output:
     "Pipes": [
         {
             "Name": "Demo_Pipe",
-            "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+            "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
             "DesiredState": "RUNNING",
             "CurrentState": "RUNNING",
             "StateReason": "User initiated",
             "CreationTime": "2024-10-08T09:29:10-05:00",
             "LastModifiedTime": "2024-10-08T10:23:47-05:00",
-            "Source": "arn:aws:sqs:us-east-1:123456789012:Demo_Queue",
-            "Target": "arn:aws:logs:us-east-1:123456789012:log-group:/aws/pipes/Demo_LogGroup"
+            "Source": "arn:aws:sqs:us-west-2:123456789012:Demo_Queue",
+            "Target": "arn:aws:logs:us-west-2:123456789012:log-group:/aws/pipes/Demo_LogGroup"
         }
     ]
 }
@@ -170,7 +170,7 @@ The following `list-tags-for-resource` example lists all the tags associated wit
 
 ```
 aws pipes list-tags-for-resource \
-    --resource-arn {{arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe}}
+    --resource-arn {{arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe}}
 ```
 Output:
 
@@ -202,7 +202,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+    "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
     "Name": "Demo_Pipe",
     "DesiredState": "RUNNING",
     "CurrentState": "STARTING",
@@ -230,7 +230,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+    "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
     "Name": "Demo_Pipe",
     "DesiredState": "STOPPED",
     "CurrentState": "STOPPING",
@@ -248,13 +248,14 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To Tag an existing pipe**
-The following `tag-resource` example tags a Pipe named `Demo_Pipe`. If the command succeeds, no output is returned.
+The following `tag-resource` example tags a Pipe named `Demo_Pipe`.
 
 ```
 aws pipes tag-resource \
-    --resource-arn {{arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe}} \
+    --resource-arn {{arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe}} \
     --tags {{stack=Production}}
 ```
+This command produces no output.
 For more information, see [Amazon EventBridge Pipes concepts](https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-concepts.html) in the *Amazon EventBridge User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pipes/tag-resource.html) in *AWS CLI Command Reference*.
 
@@ -265,13 +266,14 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To remove a Tag from an existing pipe**
-The following `untag-resource` example removes a tag with the key `stack` from the Pipe named `Demo_Pipe`. If the command succeeds, no output is returned.
+The following `untag-resource` example removes a tag with the key `stack` from the Pipe named `Demo_Pipe`.
 
 ```
 aws pipes untag-resource \
-    --resource-arn {{arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe}} \
+    --resource-arn {{arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe}} \
     --tag-keys {{stack}}
 ```
+This command produces no output.
 For more information, see [Amazon EventBridge Pipes concepts](https://docs.aws.amazon.com/eventbridge/latest/userguide/pipes-concepts.html) in the *Amazon EventBridge User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/pipes/untag-resource.html) in *AWS CLI Command Reference*.
 
@@ -288,14 +290,14 @@ The following `update-pipe` example updates the Pipe named `Demo_Pipe` by adding
 aws pipes update-pipe \
     --name {{Demo_Pipe}} \
     --desired-state {{RUNNING}} \
-    --log-configuration {{CloudwatchLogsLogDestination={LogGroupArn=arn:aws:logs:us-east-1:123456789012:log-group:/aws/vendedlogs/pipes/Demo_Pipe},Level=TRACE}} \
+    --log-configuration {{CloudwatchLogsLogDestination={LogGroupArn=arn:aws:logs:us-west-2:123456789012:log-group:/aws/vendedlogs/pipes/Demo_Pipe},Level=TRACE}} \
     --role-arn {{arn:aws:iam::123456789012:role/service-role/Amazon_EventBridge_Pipe_Demo_Pipe_28b3aa4f}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:pipes:us-east-1:123456789012:pipe/Demo_Pipe",
+    "Arn": "arn:aws:pipes:us-west-2:123456789012:pipe/Demo_Pipe",
     "Name": "Demo_Pipe",
     "DesiredState": "RUNNING",
     "CurrentState": "UPDATING",

@@ -216,8 +216,7 @@ Output:
     [
         "Graphics with Windows 10 (Server 2019 based)",
         "wsb-03gyjnfyy"
-    ],
-    ...
+    ]
 ]
 ```
 For more information, see [WorkSpaces bundles and images](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-bundles.html) in the *Amazon WorkSpaces Administration Guide*.
@@ -400,7 +399,7 @@ aws workspaces modify-workspace-creation-properties \
     --workspace-creation-properties {{EnableInternetAccess=true}}
 ```
 This command produces no output.
-For more information, see [Update directory details for your WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/update-directory-details.html) in the *Amazon WorkSpaces Administration Guide*.
+For more information, see [Manage directories for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/manage-workspaces-directory.html) in the *Amazon WorkSpaces Administration Guide*.
 +  For API details, see [ModifyWorkspaceCreationProperties](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workspaces/modify-workspace-creation-properties.html) in *AWS CLI Command Reference*.
 
 ### `modify-workspace-properties`

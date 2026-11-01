@@ -26,17 +26,17 @@ The following code example shows how to use `add-permission`.
 
 **AWS CLI**
 **To add a permission to a queue**
-This example enables the specified AWS account to send messages to the specified queue.
-Command:
+The following `add-permission` example enables the specified AWS account to send messages to the specified queue.
 
 ```
-aws sqs add-permission --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --label {{SendMessagesFromMyQueue}} --aws-account-ids {{12345EXAMPLE}} --actions {{SendMessage}}
+aws sqs add-permission \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --label {{SendMessagesFromMyQueue}} \
+    --aws-account-ids {{12345EXAMPLE}} \
+    --actions {{SendMessage}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Overview of managing access in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-overview-of-managing-access.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [AddPermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/add-permission.html) in *AWS CLI Command Reference*.
 
 ### `cancel-message-move-task`
@@ -69,42 +69,44 @@ The following code example shows how to use `change-message-visibility-batch`.
 
 **AWS CLI**
 **To change multiple messages' timeout visibilities as a batch**
-This example changes the 2 specified messages' timeout visibilities to 10 hours (10 hours \* 60 minutes \* 60 seconds).
-Command:
+The following `change-message-visibility-batch` example changes the 2 specified messages' timeout visibilities to 10 hours (10 hours \* 60 minutes \* 60 seconds).
 
 ```
-aws sqs change-message-visibility-batch --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --entries {{file://change-message-visibility-batch.json}}
+aws sqs change-message-visibility-batch \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --entries {{file://change-message-visibility-batch.json}}
 ```
-Input file (change-message-visibility-batch.json):
+Contents of `change-message-visibility-batch.json`:
 
 ```
 [
-  {
-    "Id": "FirstMessage",
+    {
+        "Id": "FirstMessage",
         "ReceiptHandle": "AQEBhz2q...Jf3kaw==",
         "VisibilityTimeout": 36000
-  },
-  {
-    "Id": "SecondMessage",
+    },
+    {
+        "Id": "SecondMessage",
         "ReceiptHandle": "AQEBkTUH...HifSnw==",
         "VisibilityTimeout": 36000
-  }
+    }
 ]
 ```
 Output:
 
 ```
 {
-  "Successful": [
-    {
-      "Id": "SecondMessage"
-    },
-    {
-      "Id": "FirstMessage"
-    }
-  ]
+    "Successful": [
+        {
+            "Id": "SecondMessage"
+        },
+        {
+            "Id": "FirstMessage"
+        }
+    ]
 }
 ```
+For more information, see [Amazon SQS visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [ChangeMessageVisibilityBatch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/change-message-visibility-batch.html) in *AWS CLI Command Reference*.
 
 ### `change-message-visibility`
@@ -114,17 +116,16 @@ The following code example shows how to use `change-message-visibility`.
 
 **AWS CLI**
 **To change a message's timeout visibility**
-This example changes the specified message's timeout visibility to 10 hours (10 hours \* 60 minutes \* 60 seconds).
-Command:
+The following `change-message-visibility` example changes the specified message's timeout visibility to 10 hours (10 hours \* 60 minutes \* 60 seconds).
 
 ```
-aws sqs change-message-visibility --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --receipt-handle {{AQEBTpyI...t6HyQg==}} --visibility-timeout {{36000}}
+aws sqs change-message-visibility \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --receipt-handle {{AQEBTpyI...t6HyQg==}} \
+    --visibility-timeout {{36000}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Amazon SQS visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [ChangeMessageVisibility](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/change-message-visibility.html) in *AWS CLI Command Reference*.
 
 ### `create-queue`
@@ -134,27 +135,29 @@ The following code example shows how to use `create-queue`.
 
 **AWS CLI**
 **To create a queue**
-This example creates a queue with the specified name, sets the message retention period to 3 days (3 days \* 24 hours \* 60 minutes \* 60 seconds), and sets the queue's dead letter queue to the specified queue with a maximum receive count of 1,000 messages.
-Command:
+The following `create-queue` example creates a queue with the specified name, sets the message retention period to 3 days (3 days \* 24 hours \* 60 minutes \* 60 seconds), and sets the queue's dead letter queue to the specified queue with a maximum receive count of 1,000 messages.
 
 ```
-aws sqs create-queue --queue-name {{MyQueue}} --attributes {{file://create-queue.json}}
+aws sqs create-queue \
+    --queue-name {{MyQueue}} \
+    --attributes {{file://create-queue.json}}
 ```
-Input file (create-queue.json):
+Contents of `create-queue.json`:
 
 ```
 {
-  "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":\"1000\"}",
-  "MessageRetentionPeriod": "259200"
+    "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-west-2:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":\"1000\"}",
+    "MessageRetentionPeriod": "259200"
 }
 ```
 Output:
 
 ```
 {
-  "QueueUrl": "https://queue.amazonaws.com/80398EXAMPLE/MyQueue"
+    "QueueUrl": "https://queue.amazonaws.com/80398EXAMPLE/MyQueue"
 }
 ```
+For more information, see [Using dead-letter queues in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [CreateQueue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/create-queue.html) in *AWS CLI Command Reference*.
 
 ### `delete-message-batch`
@@ -164,40 +167,42 @@ The following code example shows how to use `delete-message-batch`.
 
 **AWS CLI**
 **To delete multiple messages as a batch**
-This example deletes the specified messages.
-Command:
+The following `delete-message-batch` example deletes the specified messages.
 
 ```
-aws sqs delete-message-batch --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --entries {{file://delete-message-batch.json}}
+aws sqs delete-message-batch \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --entries {{file://delete-message-batch.json}}
 ```
-Input file (delete-message-batch.json):
+Contents of `delete-message-batch.json`:
 
 ```
 [
-  {
+    {
         "Id": "FirstMessage",
         "ReceiptHandle": "AQEB1mgl...Z4GuLw=="
-  },
-  {
-    "Id": "SecondMessage",
+    },
+    {
+        "Id": "SecondMessage",
         "ReceiptHandle": "AQEBLsYM...VQubAA=="
-  }
+    }
 ]
 ```
 Output:
 
 ```
 {
-  "Successful": [
-    {
-      "Id": "FirstMessage"
-    },
-    {
-      "Id": "SecondMessage"
-    }
-  ]
+    "Successful": [
+        {
+            "Id": "FirstMessage"
+        },
+        {
+            "Id": "SecondMessage"
+        }
+    ]
 }
 ```
+For more information, see [Amazon SQS batch actions](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-batch-api-actions.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [DeleteMessageBatch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/delete-message-batch.html) in *AWS CLI Command Reference*.
 
 ### `delete-message`
@@ -207,17 +212,15 @@ The following code example shows how to use `delete-message`.
 
 **AWS CLI**
 **To delete a message**
-This example deletes the specified message.
-Command:
+The following `delete-message` example deletes the specified message.
 
 ```
-aws sqs delete-message --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --receipt-handle {{AQEBRXTo...q2doVA==}}
+aws sqs delete-message \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --receipt-handle {{AQEBRXTo...q2doVA==}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Receiving and deleting a message in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/step-receive-delete-message.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [DeleteMessage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/delete-message.html) in *AWS CLI Command Reference*.
 
 ### `delete-queue`
@@ -227,17 +230,14 @@ The following code example shows how to use `delete-queue`.
 
 **AWS CLI**
 **To delete a queue**
-This example deletes the specified queue.
-Command:
+The following `delete-queue` example deletes the specified queue.
 
 ```
-aws sqs delete-queue --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyNewerQueue}}
+aws sqs delete-queue \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyNewerQueue}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Deleting an Amazon SQS queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/step-delete-queue.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [DeleteQueue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/delete-queue.html) in *AWS CLI Command Reference*.
 
 ### `get-queue-attributes`
@@ -247,48 +247,52 @@ The following code example shows how to use `get-queue-attributes`.
 
 **AWS CLI**
 **To get a queue's attributes**
-This example gets all of the specified queue's attributes.
-Command:
+The following `get-queue-attributes` example gets all of the specified queue's attributes.
 
 ```
-aws sqs get-queue-attributes --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --attribute-names {{All}}
+aws sqs get-queue-attributes \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --attribute-names {{All}}
 ```
 Output:
 
 ```
 {
-  "Attributes": {
-    "ApproximateNumberOfMessagesNotVisible": "0",
-    "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":1000}",
-    "MessageRetentionPeriod": "345600",
-    "ApproximateNumberOfMessagesDelayed": "0",
-    "MaximumMessageSize": "262144",
-    "CreatedTimestamp": "1442426968",
-    "ApproximateNumberOfMessages": "0",
-    "ReceiveMessageWaitTimeSeconds": "0",
-    "DelaySeconds": "0",
-    "VisibilityTimeout": "30",
-    "LastModifiedTimestamp": "1442426968",
-    "QueueArn": "arn:aws:sqs:us-east-1:80398EXAMPLE:MyNewQueue"
-  }
+    "Attributes": {
+        "ApproximateNumberOfMessagesNotVisible": "0",
+        "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-west-2:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":1000}",
+        "MessageRetentionPeriod": "345600",
+        "ApproximateNumberOfMessagesDelayed": "0",
+        "MaximumMessageSize": "262144",
+        "CreatedTimestamp": "1442426968",
+        "ApproximateNumberOfMessages": "0",
+        "ReceiveMessageWaitTimeSeconds": "0",
+        "DelaySeconds": "0",
+        "VisibilityTimeout": "30",
+        "LastModifiedTimestamp": "1442426968",
+        "QueueArn": "arn:aws:sqs:us-west-2:80398EXAMPLE:MyNewQueue"
+    }
 }
 ```
-This example gets only the specified queue's maximum message size and visibility timeout attributes.
-Command:
+For more information, see [Configuring queue parameters using the Amazon SQS console](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-queue-parameters.html) in the *Amazon Simple Queue Service Developer Guide*.
+The following `get-queue-attributes` example gets only the specified queue's maximum message size and visibility timeout attributes.
 
 ```
-aws sqs get-queue-attributes --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyNewQueue}} --attribute-names {{MaximumMessageSize}} {{VisibilityTimeout}}
+aws sqs get-queue-attributes \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyNewQueue}} \
+    --attribute-names {{MaximumMessageSize}} {{VisibilityTimeout}}
 ```
 Output:
 
 ```
 {
-  "Attributes": {
-    "VisibilityTimeout": "30",
-    "MaximumMessageSize": "262144"
-  }
+    "Attributes": {
+        "VisibilityTimeout": "30",
+        "MaximumMessageSize": "262144"
+    }
 }
 ```
+For more information, see [Configuring queue parameters using the Amazon SQS console](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-queue-parameters.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [GetQueueAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/get-queue-attributes.html) in *AWS CLI Command Reference*.
 
 ### `get-queue-url`
@@ -298,19 +302,20 @@ The following code example shows how to use `get-queue-url`.
 
 **AWS CLI**
 **To get a queue URL**
-This example gets the specified queue's URL.
-Command:
+The following `get-queue-url` example gets the specified queue's URL.
 
 ```
-aws sqs get-queue-url --queue-name {{MyQueue}}
+aws sqs get-queue-url \
+    --queue-name {{MyQueue}}
 ```
 Output:
 
 ```
 {
-  "QueueUrl": "https://queue.amazonaws.com/80398EXAMPLE/MyQueue"
+    "QueueUrl": "https://queue.amazonaws.com/80398EXAMPLE/MyQueue"
 }
 ```
+For more information, see [Amazon SQS queue and message identifiers](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-queue-message-identifiers.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [GetQueueUrl](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/get-queue-url.html) in *AWS CLI Command Reference*.
 
 ### `list-dead-letter-source-queues`
@@ -320,22 +325,23 @@ The following code example shows how to use `list-dead-letter-source-queues`.
 
 **AWS CLI**
 **To list dead letter source queues**
-This example lists the queues that are associated with the specified dead letter source queue.
-Command:
+The following `list-dead-letter-source-queues` example lists the queues that are associated with the specified dead letter source queue.
 
 ```
-aws sqs list-dead-letter-source-queues --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue}}
+aws sqs list-dead-letter-source-queues \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue}}
 ```
 Output:
 
 ```
 {
-  "queueUrls": [
-    "https://queue.amazonaws.com/80398EXAMPLE/MyQueue",
-    "https://queue.amazonaws.com/80398EXAMPLE/MyOtherQueue"
-  ]
+    "queueUrls": [
+        "https://queue.amazonaws.com/80398EXAMPLE/MyQueue",
+        "https://queue.amazonaws.com/80398EXAMPLE/MyOtherQueue"
+    ]
 }
 ```
+For more information, see [Using dead-letter queues in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [ListDeadLetterSourceQueues](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/list-dead-letter-source-queues.html) in *AWS CLI Command Reference*.
 
 ### `list-message-move-tasks`
@@ -366,16 +372,16 @@ Output:
             "ApproximateNumberOfMessagesMoved": 203,
             "ApproximateNumberOfMessagesToMove": 30,
             "StartedTimestamp": 1442428276921
-         },
+        },
 
-         {
+        {
             "Status": "COMPLETED",
             "SourceArn": "arn:aws:sqs:us-west-2:80398EXAMPLE:MyQueue1",
             "DestinationArn": "arn:aws:sqs:us-west-2:80398EXAMPLE:MyQueue2",
             "ApproximateNumberOfMessagesMoved": 29,
             "ApproximateNumberOfMessagesToMove": 0,
             "StartedTimestamp": 1342428272093
-         }
+        }
     ]
 }
 ```
@@ -414,8 +420,7 @@ The following code example shows how to use `list-queues`.
 
 **AWS CLI**
 **To list queues**
-This example lists all queues.
-Command:
+The following `list-queues` example lists all queues.
 
 ```
 aws sqs list-queues
@@ -424,32 +429,34 @@ Output:
 
 ```
 {
-  "QueueUrls": [
-    "https://queue.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue",
-    "https://queue.amazonaws.com/80398EXAMPLE/MyQueue",
-    "https://queue.amazonaws.com/80398EXAMPLE/MyOtherQueue",
-    "https://queue.amazonaws.com/80398EXAMPLE/TestQueue1",
+    "QueueUrls": [
+        "https://queue.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue",
+        "https://queue.amazonaws.com/80398EXAMPLE/MyQueue",
+        "https://queue.amazonaws.com/80398EXAMPLE/MyOtherQueue",
+        "https://queue.amazonaws.com/80398EXAMPLE/TestQueue1",
         "https://queue.amazonaws.com/80398EXAMPLE/TestQueue2"
-  ]
+    ]
 }
 ```
-This example lists only queues that start with "My".
-Command:
+For more information, see [Amazon SQS list queue pagination](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/list-all-queues-pagination.html) in the *Amazon Simple Queue Service Developer Guide*.
+The following `list-queues` example lists only queues that start with "My".
 
 ```
-aws sqs list-queues --queue-name-prefix {{My}}
+aws sqs list-queues \
+    --queue-name-prefix {{My}}
 ```
 Output:
 
 ```
 {
-  "QueueUrls": [
-    "https://queue.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue",
-    "https://queue.amazonaws.com/80398EXAMPLE/MyQueue",
-    "https://queue.amazonaws.com/80398EXAMPLE/MyOtherQueue"
-  ]
+    "QueueUrls": [
+        "https://queue.amazonaws.com/80398EXAMPLE/MyDeadLetterQueue",
+        "https://queue.amazonaws.com/80398EXAMPLE/MyQueue",
+        "https://queue.amazonaws.com/80398EXAMPLE/MyOtherQueue"
+    ]
 }
 ```
+For more information, see [Amazon SQS list queue pagination](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/list-all-queues-pagination.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [ListQueues](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/list-queues.html) in *AWS CLI Command Reference*.
 
 ### `purge-queue`
@@ -459,17 +466,14 @@ The following code example shows how to use `purge-queue`.
 
 **AWS CLI**
 **To purge a queue**
-This example deletes all messages in the specified queue.
-Command:
+The following `purge-queue` example deletes all messages in the specified queue.
 
 ```
-aws sqs purge-queue --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyNewQueue}}
+aws sqs purge-queue \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyNewQueue}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Purging messages from an queue using the Amazon SQS console](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-using-purge-queue.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [PurgeQueue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/purge-queue.html) in *AWS CLI Command Reference*.
 
 ### `receive-message`
@@ -479,74 +483,81 @@ The following code example shows how to use `receive-message`.
 
 **AWS CLI**
 **To receive a message**
-This example receives up to 10 available messages, returning all available attributes.
-Command:
+The following `receive-message` example receives up to 10 available messages, returning all available attributes.
 
 ```
-aws sqs receive-message --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --attribute-names {{All}} --message-attribute-names {{All}} --max-number-of-messages {{10}}
+aws sqs receive-message \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --attribute-names {{All}} \
+    --message-attribute-names {{All}} \
+    --max-number-of-messages {{10}}
 ```
 Output:
 
 ```
 {
-  "Messages": [
-    {
-      "Body": "My first message.",
-      "ReceiptHandle": "AQEBzbVv...fqNzFw==",
-      "MD5OfBody": "1000f835...a35411fa",
-      "MD5OfMessageAttributes": "9424c491...26bc3ae7",
-      "MessageId": "d6790f8d-d575-4f01-bc51-40122EXAMPLE",
-      "Attributes": {
-        "ApproximateFirstReceiveTimestamp": "1442428276921",
-        "SenderId": "AIDAIAZKMSNQ7TEXAMPLE",
-        "ApproximateReceiveCount": "5",
-        "SentTimestamp": "1442428276921"
-      },
-      "MessageAttributes": {
-        "PostalCode": {
-          "DataType": "String",
-          "StringValue": "ABC123"
-        },
-        "City": {
-          "DataType": "String",
-          "StringValue": "Any City"
+    "Messages": [
+        {
+            "Body": "My first message.",
+            "ReceiptHandle": "AQEBzbVv...fqNzFw==",
+            "MD5OfBody": "1000f835...a35411fa",
+            "MD5OfMessageAttributes": "9424c491...26bc3ae7",
+            "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Attributes": {
+                "ApproximateFirstReceiveTimestamp": "1442428276921",
+                "SenderId": "AIDAIAZKMSNQ7TEXAMPLE",
+                "ApproximateReceiveCount": "5",
+                "SentTimestamp": "1442428276921"
+            },
+            "MessageAttributes": {
+                "PostalCode": {
+                    "DataType": "String",
+                    "StringValue": "ABC123"
+                },
+                "City": {
+                    "DataType": "String",
+                    "StringValue": "Any City"
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }
 ```
-This example receives the next available message, returning only the SenderId and SentTimestamp attributes as well as the PostalCode message attribute.
-Command:
+The following `receive-message` example receives the next available message, returning only the SenderId and SentTimestamp attributes as well as the PostalCode message attribute.
 
 ```
-aws sqs receive-message --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --attribute-names {{SenderId}} {{SentTimestamp}} --message-attribute-names {{PostalCode}}
+aws sqs receive-message \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --attribute-names {{SenderId}} {{SentTimestamp}} \
+    --message-attribute-names {{PostalCode}}
 ```
 Output:
 
 ```
 {
-  "Messages": [
-    {
-      "Body": "My first message.",
-      "ReceiptHandle": "AQEB6nR4...HzlvZQ==",
-      "MD5OfBody": "1000f835...a35411fa",
-      "MD5OfMessageAttributes": "b8e89563...e088e74f",
-      "MessageId": "d6790f8d-d575-4f01-bc51-40122EXAMPLE",
-      "Attributes": {
-        "SenderId": "AIDAIAZKMSNQ7TEXAMPLE",
-        "SentTimestamp": "1442428276921"
-      },
-      "MessageAttributes": {
-        "PostalCode": {
-          "DataType": "String",
-          "StringValue": "ABC123"
+    "Messages": [
+        {
+            "Body": "My first message.",
+            "ReceiptHandle": "AQEB6nR4...HzlvZQ==",
+            "MD5OfBody": "1000f835...a35411fa",
+            "MD5OfMessageAttributes": "b8e89563...e088e74f",
+            "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Attributes": {
+                "SenderId": "AIDAIAZKMSNQ7TEXAMPLE",
+                "SentTimestamp": "1442428276921"
+            },
+            "MessageAttributes": {
+                "PostalCode": {
+                    "DataType": "String",
+                    "StringValue": "ABC123"
+                }
+            }
         }
-      }
-    }
-  ]
+    ]
 }
 ```
+For more information, see [Receiving and deleting a message in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/step-receive-delete-message.html) in the *Amazon Simple Queue Service Developer Guide*.
+For more information, see [Receiving and deleting a message in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/step-receive-delete-message.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [ReceiveMessage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/receive-message.html) in *AWS CLI Command Reference*.
 
 ### `remove-permission`
@@ -556,17 +567,15 @@ The following code example shows how to use `remove-permission`.
 
 **AWS CLI**
 **To remove a permission**
-This example removes the permission with the specified label from the specified queue.
-Command:
+The following `remove-permission` example removes the permission with the specified label from the specified queue.
 
 ```
-aws sqs remove-permission --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --label {{SendMessagesFromMyQueue}}
+aws sqs remove-permission \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --label {{SendMessagesFromMyQueue}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Overview of managing access in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-overview-of-managing-access.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [RemovePermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/remove-permission.html) in *AWS CLI Command Reference*.
 
 ### `send-message-batch`
@@ -576,92 +585,94 @@ The following code example shows how to use `send-message-batch`.
 
 **AWS CLI**
 **To send multiple messages as a batch**
-This example sends 2 messages with the specified message bodies, delay periods, and message attributes, to the specified queue.
-Command:
+The following `send-message-batch` example sends 2 messages with the specified message bodies, delay periods, and message attributes, to the specified queue.
 
 ```
-aws sqs send-message-batch --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --entries {{file://send-message-batch.json}}
+aws sqs send-message-batch \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --entries {{file://send-message-batch.json}}
 ```
-Input file (send-message-batch.json):
+Contents of `send-message-batch.json`:
 
 ```
 [
-  {
-    "Id": "FuelReport-0001-2015-09-16T140731Z",
+    {
+        "Id": "FuelReport-0001-2015-09-16T140731Z",
         "MessageBody": "Fuel report for account 0001 on 2015-09-16 at 02:07:31 PM.",
         "DelaySeconds": 10,
         "MessageAttributes": {
-          "SellerName": {
-            "DataType": "String",
+            "SellerName": {
+                "DataType": "String",
                 "StringValue": "Example Store"
-      },
-          "City": {
-        "DataType": "String",
-        "StringValue": "Any City"
-      },
-          "Region": {
-            "DataType": "String",
+            },
+            "City": {
+                "DataType": "String",
+                "StringValue": "Any City"
+            },
+            "Region": {
+                "DataType": "String",
                 "StringValue": "WA"
-      },
-          "PostalCode": {
-            "DataType": "String",
+            },
+            "PostalCode": {
+                "DataType": "String",
                 "StringValue": "99065"
-          },
-          "PricePerGallon": {
-            "DataType": "Number",
+            },
+            "PricePerGallon": {
+                "DataType": "Number",
                 "StringValue": "1.99"
-      }
+            }
         }
-  },
-  {
-    "Id": "FuelReport-0002-2015-09-16T140930Z",
+    },
+    {
+        "Id": "FuelReport-0002-2015-09-16T140930Z",
         "MessageBody": "Fuel report for account 0002 on 2015-09-16 at 02:09:30 PM.",
         "DelaySeconds": 10,
         "MessageAttributes": {
-          "SellerName": {
-            "DataType": "String",
+            "SellerName": {
+                "DataType": "String",
                 "StringValue": "Example Fuels"
-      },
-          "City": {
-        "DataType": "String",
-        "StringValue": "North Town"
-      },
-          "Region": {
-            "DataType": "String",
+            },
+            "City": {
+                "DataType": "String",
+                "StringValue": "North Town"
+            },
+            "Region": {
+                "DataType": "String",
                 "StringValue": "WA"
-      },
-          "PostalCode": {
-            "DataType": "String",
+            },
+            "PostalCode": {
+                "DataType": "String",
                 "StringValue": "99123"
-          },
-          "PricePerGallon": {
-            "DataType": "Number",
+            },
+            "PricePerGallon": {
+                "DataType": "Number",
                 "StringValue": "1.87"
-      }
+            }
         }
-  }
+    }
 ]
 ```
 Output:
 
 ```
 {
-  "Successful": [
-    {
-      "MD5OfMessageBody": "203c4a38...7943237e",
-      "MD5OfMessageAttributes": "10809b55...baf283ef",
-      "Id": "FuelReport-0001-2015-09-16T140731Z",
-      "MessageId": "d175070c-d6b8-4101-861d-adeb3EXAMPLE"
-    },
-    {
-      "MD5OfMessageBody": "2cf0159a...c1980595",
-      "MD5OfMessageAttributes": "55623928...ae354a25",
-      "Id": "FuelReport-0002-2015-09-16T140930Z",
-      "MessageId": "f9b7d55d-0570-413e-b9c5-a9264EXAMPLE"
-    }
-  ]
+    "Successful": [
+        {
+            "MD5OfMessageBody": "203c4a38...7943237e",
+            "MD5OfMessageAttributes": "10809b55...baf283ef",
+            "Id": "FuelReport-0001-2015-09-16T140731Z",
+            "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        },
+        {
+            "MD5OfMessageBody": "2cf0159a...c1980595",
+            "MD5OfMessageAttributes": "55623928...ae354a25",
+            "Id": "FuelReport-0002-2015-09-16T140930Z",
+            "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+        }
+    ]
 }
 ```
+For more information, see [Amazon SQS batch actions](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-batch-api-actions.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [SendMessageBatch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/send-message-batch.html) in *AWS CLI Command Reference*.
 
 ### `send-message`
@@ -671,39 +682,43 @@ The following code example shows how to use `send-message`.
 
 **AWS CLI**
 **To send a message**
-This example sends a message with the specified message body, delay period, and message attributes, to the specified queue.
-Command:
+The following `send-message` example sends a message with the specified message body, delay period, and message attributes, to the specified queue.
 
 ```
-aws sqs send-message --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyQueue}} --message-body {{"Information about the largest city in Any Region."}} --delay-seconds {{10}} --message-attributes {{file://send-message.json}}
+aws sqs send-message \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyQueue}} \
+    --message-body {{"Information about the largest city in Any Region."}} \
+    --delay-seconds {{10}} \
+    --message-attributes {{file://send-message.json}}
 ```
-Input file (send-message.json):
+Contents of `send-message.json`:
 
 ```
 {
-  "City": {
-    "DataType": "String",
-    "StringValue": "Any City"
-  },
-  "Greeting": {
-    "DataType": "Binary",
-    "BinaryValue": "Hello, World!"
-  },
-  "Population": {
-    "DataType": "Number",
-    "StringValue": "1250800"
-  }
+    "City": {
+        "DataType": "String",
+        "StringValue": "Any City"
+    },
+    "Greeting": {
+        "DataType": "Binary",
+        "BinaryValue": "Hello, World!"
+    },
+    "Population": {
+        "DataType": "Number",
+        "StringValue": "1250800"
+    }
 }
 ```
 Output:
 
 ```
 {
-  "MD5OfMessageBody": "51b0a325...39163aa0",
-  "MD5OfMessageAttributes": "00484c68...59e48f06",
-  "MessageId": "da68f62c-0c07-4bee-bf5f-7e856EXAMPLE"
+    "MD5OfMessageBody": "51b0a325...39163aa0",
+    "MD5OfMessageAttributes": "00484c68...59e48f06",
+    "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Sending a message with attributes using Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-using-send-message-with-attributes.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [SendMessage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/send-message.html) in *AWS CLI Command Reference*.
 
 ### `set-queue-attributes`
@@ -713,29 +728,27 @@ The following code example shows how to use `set-queue-attributes`.
 
 **AWS CLI**
 **To set queue attributes**
-This example sets the specified queue to a delivery delay of 10 seconds, a maximum message size of 128 KB (128 KB \* 1,024 bytes), a message retention period of 3 days (3 days \* 24 hours \* 60 minutes \* 60 seconds), a receive message wait time of 20 seconds, and a default visibility timeout of 60 seconds. This example also associates the specified dead letter queue with a maximum receive count of 1,000 messages.
-Command:
+The following `set-queue-attributes` example sets the specified queue to a delivery delay of 10 seconds, a maximum message size of 128 KB (128 KB \* 1,024 bytes), a message retention period of 3 days (3 days \* 24 hours \* 60 minutes \* 60 seconds), a receive message wait time of 20 seconds, and a default visibility timeout of 60 seconds. This example also associates the specified dead letter queue with a maximum receive count of 1,000 messages.
 
 ```
-aws sqs set-queue-attributes --queue-url {{https://sqs.us-east-1.amazonaws.com/80398EXAMPLE/MyNewQueue}} --attributes {{file://set-queue-attributes.json}}
+aws sqs set-queue-attributes \
+    --queue-url {{https://sqs.us-west-2.amazonaws.com/80398EXAMPLE/MyNewQueue}} \
+    --attributes {{file://set-queue-attributes.json}}
 ```
-Input file (set-queue-attributes.json):
+Contents of `set-queue-attributes.json`:
 
 ```
 {
-  "DelaySeconds": "10",
-  "MaximumMessageSize": "131072",
-  "MessageRetentionPeriod": "259200",
-  "ReceiveMessageWaitTimeSeconds": "20",
-  "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":\"1000\"}",
-  "VisibilityTimeout": "60"
+    "DelaySeconds": "10",
+    "MaximumMessageSize": "131072",
+    "MessageRetentionPeriod": "259200",
+    "ReceiveMessageWaitTimeSeconds": "20",
+    "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-west-2:80398EXAMPLE:MyDeadLetterQueue\",\"maxReceiveCount\":\"1000\"}",
+    "VisibilityTimeout": "60"
 }
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Configuring queue parameters using the Amazon SQS console](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-queue-parameters.html) in the *Amazon Simple Queue Service Developer Guide*.
 +  For API details, see [SetQueueAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sqs/set-queue-attributes.html) in *AWS CLI Command Reference*.
 
 ### `start-message-move-task`
@@ -744,7 +757,7 @@ None.
 The following code example shows how to use `start-message-move-task`.
 
 **AWS CLI**
-*Example 1: \*To start a message move task\**
+**Example 1: To start a message move task**
 The following `start-message-move-task` example starts a message move task to redrive messages from the specified dead-letter queue to the source queue.
 
 ```
@@ -758,8 +771,8 @@ Output:
     "TaskHandle": "AQEB6nR4...HzlvZQ=="
 }
 ```
-For more information, see [This is the topic title](https://link.to.the/topic/page) in the *Name of your guide*.
-*Example 2: \*To start a message move task with a maximum rate\**
+For more information, see [Learn how to configure a dead-letter queue redrive in Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-dead-letter-queue-redrive.html) in the *Amazon SQS Developer Guide*.
+**Example 2: To start a message move task with a maximum rate**
 The following `start-message-move-task` example starts a message move task to redrive messages from the specified dead-letter queue to the specified destination queue at a maximum rate of 50 messages per second.
 
 ```

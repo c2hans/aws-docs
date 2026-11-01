@@ -76,7 +76,7 @@ The identifier of the domain the space belongs to.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `EncryptionConfiguration`  <a name="cfn-cloudwatch-space-encryptionconfiguration"></a>
-Property description not available.
+The encryption configuration for the space.
 *Required*: No
 *Type*: [EncryptionConfiguration](aws-properties-cloudwatch-space-encryptionconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

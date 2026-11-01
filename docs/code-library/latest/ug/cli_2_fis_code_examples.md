@@ -104,7 +104,7 @@ Output:
     }
 }
 ```
-For more information, see [Create an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/working-with-templates.html#create-template) in the *AWS Fault Injection Simulator User Guide*.
+For more information, see [Create an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/create-template.html) in the *AWS Fault Injection Simulator User Guide*.
 +  For API details, see [CreateExperimentTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/create-experiment-template.html) in *AWS CLI Command Reference*.
 
 ### `delete-experiment-template`
@@ -156,7 +156,7 @@ Output:
     }
 }
 ```
-For more information, see [Delete an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/working-with-templates.html#delete-template) in the *AWS Fault Injection Simulator User Guide*.
+For more information, see [Delete an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/delete-template.html) in the *AWS Fault Injection Simulator User Guide*.
 +  For API details, see [DeleteExperimentTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/delete-experiment-template.html) in *AWS CLI Command Reference*.
 
 ### `get-action`
@@ -194,7 +194,7 @@ Output:
     }
 }
 ```
-For more information, see [Actions](https://docs.aws.amazon.com/fis/latest/userguide/actions.html) in the *AWS Fault Injection Simulator User Guide*.
+For more information, see [AWS FIS Actions reference](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html) in the *AWS Fault Injection Simulator User Guide*.
 +  For API details, see [GetAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/get-action.html) in *AWS CLI Command Reference*.
 
 ### `get-experiment-template`
@@ -244,7 +244,7 @@ Output:
         "lastUpdateTime": 1616017331.51,
         "roleArn": "arn:aws:iam::123456789012:role/FISRole",
         "tags": {
-        "key: "value"
+            "key": "value"
         }
     }
 }
@@ -449,7 +449,7 @@ Output:
     ]
 }
 ```
-For more information, see [Actions](https://docs.aws.amazon.com/fis/latest/userguide/actions.html) in the *AWS Fault Injection Simulator User Guide*.
+For more information, see [AWS FIS Actions reference](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html) in the *AWS Fault Injection Simulator User Guide*.
 +  For API details, see [ListActions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/list-actions.html) in *AWS CLI Command Reference*.
 
 ### `list-experiment-templates`
@@ -768,5 +768,5 @@ Output:
     }
 }
 ```
-For more information, see [Update an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/working-with-templates.html#update-template) in the *AWS Fault Injection Simulator User Guide*.
+For more information, see [Update an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/update-template.html) in the *AWS Fault Injection Simulator User Guide*.
 +  For API details, see [UpdateExperimentTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/update-experiment-template.html) in *AWS CLI Command Reference*.

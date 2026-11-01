@@ -14,6 +14,8 @@ Amazon Bedrock AgentCore Runtime lets you isolate each user session and safely r
 **Note**
 Use a unique session ID for each user. AgentCore does not enforce session-to-user mappings - your client backend should maintain the relationship between users and their session IDs. Additionally, your client backend should implement logic for user to session lifecycle management like maximum number of sessions per user. For complete session isolation guidance, see [Security best practices for AgentCore Runtime](runtime-security-best-practices.md).
 
+You can also access application servers in a session through an authenticated session endpoint. Configure `allowedPorts` to select the ports clients can reach. For more information, see [Connect to runtime sessions through a session endpoint](runtime-session-endpoints.md).
+
 **Topics**
 + [Understanding ephemeral context](#ephemeral-context)
 + [Extended conversations and multi-step workflows](#extended-conversations)

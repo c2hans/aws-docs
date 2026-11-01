@@ -29,16 +29,17 @@ The following code example shows how to use `add-permission`.
 
 **AWS CLI**
 **To add a permission to a topic**
-The following `add-permission` example adds the permission for AWS account `987654321098` to use the `Publish` action with the specified topic under AWS account `123456789012`.
+The following `add-permission` example adds the permission for AWS account `123456789111` to use the `Publish` action with the specified topic under AWS account `123456789012`.
 
 ```
 aws sns add-permission \
     --topic-arn {{arn:aws:sns:us-west-2:123456789012:MyTopic}} \
     --label {{Publish-Permission}} \
-    --aws-account-id {{987654321098}} \
+    --aws-account-id {{123456789111}} \
     --action-name {{Publish}}
 ```
 This command produces no output.
+For more information, see [Example cases for Amazon SNS access control](https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [AddPermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/add-permission.html) in *AWS CLI Command Reference*.
 
 ### `check-if-phone-number-is-opted-out`
@@ -61,6 +62,7 @@ Output:
     "isOptedOut": false
 }
 ```
+For more information, see [Managing Amazon SNS phone numbers and subscriptions](https://docs.aws.amazon.com/sns/latest/dg/sms_manage.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [CheckIfPhoneNumberIsOptedOut](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/check-if-phone-number-is-opted-out.html) in *AWS CLI Command Reference*.
 
 ### `confirm-subscription`
@@ -70,7 +72,7 @@ The following code example shows how to use `confirm-subscription`.
 
 **AWS CLI**
 **To confirm a subscription**
-The following `confirm-subscription` command completes the confirmation process started when you subscribed to an SNS topic named `my-topic`. The --token parameter comes from the confirmation message sent to the notification endpoint specified in the subscribe call.
+The following `confirm-subscription` example completes the confirmation process started when you subscribed to an SNS topic named `my-topic`. The --token parameter comes from the confirmation message sent to the notification endpoint specified in the subscribe call.
 
 ```
 aws sns confirm-subscription \
@@ -81,9 +83,10 @@ Output:
 
 ```
 {
-    "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:8a21d249-4329-4871-acc6-7be709c6ea7f"
+    "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Creating a subscription to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ConfirmSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/confirm-subscription.html) in *AWS CLI Command Reference*.
 
 ### `create-platform-application`
@@ -108,6 +111,7 @@ Output:
     "PlatformApplicationArn": "arn:aws:sns:us-west-2:123456789012:app/GCM/MyApplication"
 }
 ```
+For more information, see [Creating an Amazon SNS platform application](https://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [CreatePlatformApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/create-platform-application.html) in *AWS CLI Command Reference*.
 
 ### `create-topic`
@@ -127,9 +131,6 @@ Output:
 
 ```
 {
-    "ResponseMetadata": {
-        "RequestId": "1469e8d7-1642-564e-b85d-a19b4b341f83"
-    },
     "TopicArn": "arn:aws:sns:us-west-2:123456789012:my-topic"
 }
 ```
@@ -147,9 +148,10 @@ The following `delete-endpoint` example deletes the specified platform applicati
 
 ```
 aws sns delete-endpoint \
-    --endpoint-arn {{arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/12345678-abcd-9012-efgh-345678901234}}
+    --endpoint-arn {{arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
+For more information, see [Setting up an Amazon SNS platform endpoint for mobile notifications](https://docs.aws.amazon.com/sns/latest/dg/mobile-platform-endpoint.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [DeleteEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/delete-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `delete-platform-application`
@@ -166,6 +168,7 @@ aws sns delete-platform-application \
     --platform-application-arn {{arn:aws:sns:us-west-2:123456789012:app/ADM/MyApplication}}
 ```
 This command produces no output.
+For more information, see [Creating an Amazon SNS platform application](https://docs.aws.amazon.com/sns/latest/dg/mobile-push-send-register.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [DeletePlatformApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/delete-platform-application.html) in *AWS CLI Command Reference*.
 
 ### `delete-topic`
@@ -182,6 +185,7 @@ aws sns delete-topic \
     --topic-arn {{"arn:aws:sns:us-west-2:123456789012:my-topic"}}
 ```
 This command produces no output.
+For more information, see [Deleting an Amazon SNS topic and subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-delete-subscription-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [DeleteTopic](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/delete-topic.html) in *AWS CLI Command Reference*.
 
 ### `get-endpoint-attributes`
@@ -195,7 +199,7 @@ The following `get-endpoint-attributes` example lists the attributes for the spe
 
 ```
 aws sns get-endpoint-attributes \
-    --endpoint-arn {{arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/12345678-abcd-9012-efgh-345678901234}}
+    --endpoint-arn {{arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -207,6 +211,7 @@ Output:
     }
 }
 ```
+For more information, see [Setting up an Amazon SNS platform endpoint for mobile notifications](https://docs.aws.amazon.com/sns/latest/dg/mobile-platform-endpoint.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [GetEndpointAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/get-endpoint-attributes.html) in *AWS CLI Command Reference*.
 
 ### `get-platform-application-attributes`
@@ -232,6 +237,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon SNS mobile app attributes](https://docs.aws.amazon.com/sns/latest/dg/sns-msg-status.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [GetPlatformApplicationAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/get-platform-application-attributes.html) in *AWS CLI Command Reference*.
 
 ### `get-sms-attributes`
@@ -255,6 +261,7 @@ Output:
     }
 }
 ```
+For more information, see [Setting SMS messaging preferences in Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sms_preferences.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [GetSMSAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/get-sms-attributes.html) in *AWS CLI Command Reference*.
 
 ### `get-subscription-attributes`
@@ -264,11 +271,11 @@ The following code example shows how to use `get-subscription-attributes`.
 
 **AWS CLI**
 **To retrieve subscription attributes for a topic**
-The following `get-subscription-attributes` displays the attributes of the specified subscription. You can get the `subscription-arn` from the output of the `list-subscriptions` command.
+The following `get-subscription-attributes` example displays the attributes of the specified subscription. You can get the `subscription-arn` from the output of the `list-subscriptions` command.
 
 ```
 aws sns get-subscription-attributes \
-    --subscription-arn {{"arn:aws:sns:us-west-2:123456789012:my-topic:8a21d249-4329-4871-acc6-7be709c6ea7f"}}
+    --subscription-arn {{"arn:aws:sns:us-west-2:123456789012:my-topic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -280,11 +287,12 @@ Output:
         "RawMessageDelivery": "false",
         "ConfirmationWasAuthenticated": "false",
         "Owner": "123456789012",
-        "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:8a21d249-4329-4871-acc6-7be709c6ea7f",
+        "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "TopicArn": "arn:aws:sns:us-west-2:123456789012:my-topic"
     }
 }
 ```
+For more information, see [Creating a subscription to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [GetSubscriptionAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/get-subscription-attributes.html) in *AWS CLI Command Reference*.
 
 ### `get-topic-attributes`
@@ -316,6 +324,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [GetTopicAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/get-topic-attributes.html) in *AWS CLI Command Reference*.
 
 ### `list-endpoints-by-platform-application`
@@ -338,14 +347,15 @@ Output:
     "Endpoints": [
         {
             "Attributes": {
-                "Token": "EXAMPLE12345...,
+                "Token": "EXAMPLE12345",
                 "Enabled": "true"
             },
-            "EndpointArn": "arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/12345678-abcd-9012-efgh-345678901234"
+            "EndpointArn": "arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
 ```
+For more information, see [Setting up an Amazon SNS platform endpoint for mobile notifications](https://docs.aws.amazon.com/sns/latest/dg/mobile-platform-endpoint.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListEndpointsByPlatformApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-endpoints-by-platform-application.html) in *AWS CLI Command Reference*.
 
 ### `list-phone-numbers-opted-out`
@@ -369,6 +379,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing Amazon SNS phone numbers and subscriptions](https://docs.aws.amazon.com/sns/latest/dg/sms_manage.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListPhoneNumbersOptedOut](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-phone-numbers-opted-out.html) in *AWS CLI Command Reference*.
 
 ### `list-platform-applications`
@@ -405,6 +416,7 @@ Output:
     ]
 }
 ```
+For more information, see [Sending mobile push notifications with Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-application-as-subscriber.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListPlatformApplications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-platform-applications.html) in *AWS CLI Command Reference*.
 
 ### `list-subscriptions-by-topic`
@@ -414,7 +426,7 @@ The following code example shows how to use `list-subscriptions-by-topic`.
 
 **AWS CLI**
 **To list the subscriptions associated with a topic**
-The following `list-subscriptions-by-topic` retrieves a list of SNS subscriptions associated with the specified topic.
+The following `list-subscriptions-by-topic` example retrieves a list of SNS subscriptions associated with the specified topic.
 
 ```
 aws sns list-subscriptions-by-topic \
@@ -430,11 +442,12 @@ Output:
             "Endpoint": "my-email@example.com",
             "Protocol": "email",
             "TopicArn": "arn:aws:sns:us-west-2:123456789012:my-topic",
-            "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:8a21d249-4329-4871-acc6-7be709c6ea7f"
+            "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
 ```
+For more information, see [Creating a subscription to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListSubscriptionsByTopic](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-subscriptions-by-topic.html) in *AWS CLI Command Reference*.
 
 ### `list-subscriptions`
@@ -459,11 +472,12 @@ Output:
             "Endpoint": "my-email@example.com",
             "Protocol": "email",
             "TopicArn": "arn:aws:sns:us-west-2:123456789012:my-topic",
-            "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:8a21d249-4329-4871-acc6-7be709c6ea7f"
+            "SubscriptionArn": "arn:aws:sns:us-west-2:123456789012:my-topic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
 ```
+For more information, see [Creating a subscription to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListSubscriptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-subscriptions.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -491,6 +505,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon SNS topic tagging](https://docs.aws.amazon.com/sns/latest/dg/sns-tags.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-topics`
@@ -516,6 +531,7 @@ Output:
     ]
 }
 ```
+For more information, see [Creating an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [ListTopics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/list-topics.html) in *AWS CLI Command Reference*.
 
 ### `opt-in-phone-number`
@@ -532,6 +548,7 @@ aws sns opt-in-phone-number \
     --phone-number {{+15555550100}}
 ```
 This command produces no output.
+For more information, see [Managing Amazon SNS phone numbers and subscriptions](https://docs.aws.amazon.com/sns/latest/dg/sms_manage.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [OptInPhoneNumber](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/opt-in-phone-number.html) in *AWS CLI Command Reference*.
 
 ### `publish`
@@ -558,9 +575,10 @@ Output:
 
 ```
 {
-    "MessageId": "123a45b6-7890-12c3-45d6-111122223333"
+    "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Publishing an Amazon SNS message](https://docs.aws.amazon.com/sns/latest/dg/sns-publishing.html) in the *Amazon Simple Notification Service Developer Guide*.
 **Example 2: To publish an SMS message to a phone number**
 The following `publish` example publishes the message `Hello world!` to the phone number `+1-555-555-0100`.
 
@@ -573,9 +591,10 @@ Output:
 
 ```
 {
-    "MessageId": "123a45b6-7890-12c3-45d6-333322221111"
+    "MessageId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
+For more information, see [Sending SMS messages using Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sms_sending-overview.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [Publish](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/publish.html) in *AWS CLI Command Reference*.
 
 ### `put-data-protection-policy`
@@ -584,25 +603,49 @@ Output:
 The following code example shows how to use `put-data-protection-policy`.
 
 **AWS CLI**
-**To set data protection policy**
 **Example 1: To deny publishers from publishing messages with CreditCardNumber**
 The following `put-data-protection-policy` example denies publishers from publishing messages with CreditCardNumber.
 
 ```
 aws sns put-data-protection-policy \
-    --resource-arn {{arn:aws:sns:us-east-1:123456789012:mytopic}} \
+    --resource-arn {{arn:aws:sns:us-west-2:123456789012:mytopic}} \
     --data-protection-policy "{\"Name\":\"data_protection_policy\",\"Description\":\"Example data protection policy\",\"Version\":\"2021-06-01\",\"Statement\":[{\"DataDirection\":\"Inbound\",\"Principal\":[\"*\"],\"DataIdentifier\":[\"arn:aws:dataprotection::aws:data-identifier/CreditCardNumber\"],\"Operation\":{\"Deny\":{}}}]}"
 ```
 This command produces no output.
+For more information, see [Understanding Amazon SNS data protection policies](https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protection-policies.html) in the *Amazon Simple Notification Service Developer Guide*.
 **Example 2: To load parameters from a file**
-The following `put-data-protection-policy` loads parameters from a file.
+The following `put-data-protection-policy` example loads parameters from a file.
 
 ```
 aws sns put-data-protection-policy \
     --resource-arn {{arn:aws:sns:us-west-2:123456789012:MyTopic}} \
     --data-protection-policy {{file://policy.json}}
 ```
+Contents of `policy.json`:
+
+```
+{
+    "Name": "data_protection_policy",
+    "Description": "Example data protection policy",
+    "Version": "2021-06-01",
+    "Statement": [
+        {
+            "DataDirection": "Inbound",
+            "Principal": [
+                "*"
+            ],
+            "DataIdentifier": [
+                "arn:aws:dataprotection::aws:data-identifier/CreditCardNumber"
+            ],
+            "Operation": {
+                "Deny": {}
+            }
+        }
+    ]
+}
+```
 This command produces no output.
+For more information, see [Understanding Amazon SNS data protection policies](https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protection-policies.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [PutDataProtectionPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/put-data-protection-policy.html) in *AWS CLI Command Reference*.
 
 ### `remove-permission`
@@ -620,6 +663,7 @@ aws sns remove-permission \
     --label {{Publish-Permission}}
 ```
 This command produces no output.
+For more information, see [Example cases for Amazon SNS access control](https://docs.aws.amazon.com/sns/latest/dg/sns-access-policy-use-cases.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [RemovePermission](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/remove-permission.html) in *AWS CLI Command Reference*.
 
 ### `set-endpoint-attributes`
@@ -633,19 +677,11 @@ The following `set-endpoint-attributes` example disables the specified platform 
 
 ```
 aws sns set-endpoint-attributes \
-    --endpoint-arn {{arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/12345678-abcd-9012-efgh-345678901234}} \
+    --endpoint-arn {{arn:aws:sns:us-west-2:123456789012:endpoint/GCM/MyApplication/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --attributes {{Enabled=false}}
 ```
-Output:
-
-```
-{
-    "Attributes": {
-        "Enabled": "false",
-        "Token": "EXAMPLE12345..."
-    }
-}
-```
+This command produces no output.
+For more information, see [Setting up an Amazon SNS platform endpoint for mobile notifications](https://docs.aws.amazon.com/sns/latest/dg/mobile-platform-endpoint.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [SetEndpointAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/set-endpoint-attributes.html) in *AWS CLI Command Reference*.
 
 ### `set-platform-application-attributes`
@@ -663,6 +699,7 @@ aws sns set-platform-application-attributes \
     --attributes {{EventDeliveryFailure=arn:aws:sns:us-west-2:123456789012:AnotherTopic}}
 ```
 This command produces no output.
+For more information, see [Amazon SNS mobile app attributes](https://docs.aws.amazon.com/sns/latest/dg/sns-msg-status.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [SetPlatformApplicationAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/set-platform-application-attributes.html) in *AWS CLI Command Reference*.
 
 ### `set-sms-attributes`
@@ -679,6 +716,7 @@ aws sns set-sms-attributes \
     --attributes {{DefaultSenderID=MyName}}
 ```
 This command produces no output.
+For more information, see [Setting SMS messaging preferences in Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sms_preferences.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [SetSMSAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/set-sms-attributes.html) in *AWS CLI Command Reference*.
 
 ### `set-subscription-attributes`
@@ -692,29 +730,32 @@ The following `set-subscription-attributes` example sets the `RawMessageDelivery
 
 ```
 aws sns set-subscription-attributes \
-    --subscription-arn {{arn:aws:sns:us-east-1:123456789012:mytopic:f248de18-2cf6-578c-8592-b6f1eaa877dc}} \
+    --subscription-arn {{arn:aws:sns:us-west-2:123456789012:mytopic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --attribute-name {{RawMessageDelivery}} \
     --attribute-value {{true}}
 ```
 This command produces no output.
+For more information, see [Amazon SNS raw message delivery](https://docs.aws.amazon.com/sns/latest/dg/sns-large-payload-raw-message-delivery.html) in the *Amazon Simple Notification Service Developer Guide*.
 The following `set-subscription-attributes` example sets a `FilterPolicy` attribute to an SQS subscription.
 
 ```
 aws sns set-subscription-attributes \
-    --subscription-arn {{arn:aws:sns:us-east-1:123456789012:mytopic:f248de18-2cf6-578c-8592-b6f1eaa877dc}} \
+    --subscription-arn {{arn:aws:sns:us-west-2:123456789012:mytopic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --attribute-name {{FilterPolicy}} \
     --attribute-value "{ \"anyMandatoryKey\": [\"any\", \"of\", \"these\"] }"
 ```
 This command produces no output.
+For more information, see [Amazon SNS subscription filter policies](https://docs.aws.amazon.com/sns/latest/dg/sns-subscription-filter-policies.html) in the *Amazon Simple Notification Service Developer Guide*.
 The following `set-subscription-attributes` example removes the `FilterPolicy` attribute from an SQS subscription.
 
 ```
 aws sns set-subscription-attributes \
-    --subscription-arn {{arn:aws:sns:us-east-1:123456789012:mytopic:f248de18-2cf6-578c-8592-b6f1eaa877dc}} \
+    --subscription-arn {{arn:aws:sns:us-west-2:123456789012:mytopic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --attribute-name {{FilterPolicy}} \
     --attribute-value {{"{}"}}
 ```
 This command produces no output.
+For more information, see [Amazon SNS subscription filter policies](https://docs.aws.amazon.com/sns/latest/dg/sns-subscription-filter-policies.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [SetSubscriptionAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/set-subscription-attributes.html) in *AWS CLI Command Reference*.
 
 ### `set-topic-attributes`
@@ -733,6 +774,7 @@ aws sns set-topic-attributes \
     --attribute-value {{MyTopicDisplayName}}
 ```
 This command produces no output.
+For more information, see [Creating an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [SetTopicAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/set-topic-attributes.html) in *AWS CLI Command Reference*.
 
 ### `subscribe`
@@ -742,7 +784,7 @@ The following code example shows how to use `subscribe`.
 
 **AWS CLI**
 **To subscribe to a topic**
-The following `subscribe` command subscribes an email address to the specified topic.
+The following `subscribe` example subscribes an email address to the specified topic.
 
 ```
 aws sns subscribe \
@@ -757,6 +799,7 @@ Output:
     "SubscriptionArn": "pending confirmation"
 }
 ```
+For more information, see [Amazon SNS email subscription setup and management](https://docs.aws.amazon.com/sns/latest/dg/sns-email-notifications.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [Subscribe](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/subscribe.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -774,6 +817,7 @@ aws sns tag-resource \
     --tags {{Key=Team,Value=Alpha}}
 ```
 This command produces no output.
+For more information, see [Amazon SNS topic tagging](https://docs.aws.amazon.com/sns/latest/dg/sns-tags.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `unsubscribe`
@@ -787,9 +831,10 @@ The following `unsubscribe` example deletes the specified subscription from a to
 
 ```
 aws sns unsubscribe \
-    --subscription-arn {{arn:aws:sns:us-west-2:0123456789012:my-topic:8a21d249-4329-4871-acc6-7be709c6ea7f}}
+    --subscription-arn {{arn:aws:sns:us-west-2:0123456789012:my-topic:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
+For more information, see [Deleting an Amazon SNS topic and subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-delete-subscription-topic.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [Unsubscribe](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/unsubscribe.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -807,6 +852,7 @@ aws sns untag-resource \
     --tag-keys {{Team}}
 ```
 This command produces no output.
+For more information, see [Amazon SNS topic tagging](https://docs.aws.amazon.com/sns/latest/dg/sns-tags.html) in the *Amazon Simple Notification Service Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sns/untag-resource.html) in *AWS CLI Command Reference*.
 
 ## Scenarios
@@ -830,6 +876,7 @@ Output:
 
 ```
 {
-      "EndpointArn": "arn:aws:sns:us-west-2:1234567890:endpoint/GCM/MyApplication/12345678-abcd-9012-efgh-345678901234"
+    "EndpointArn": "arn:aws:sns:us-west-2:1234567890:endpoint/GCM/MyApplication/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Setting up an Amazon SNS platform endpoint for mobile notifications](https://docs.aws.amazon.com/sns/latest/dg/mobile-platform-endpoint.html) in the *Amazon Simple Notification Service Developer Guide*.

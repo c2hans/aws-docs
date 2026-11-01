@@ -12,7 +12,7 @@ The following code examples show how to use `SetInstanceHealth`.
 
 **AWS CLI**
 **To set the health status of an instance**
-This example sets the health status of the specified instance to `Unhealthy`.
+The following `set-instance-health` example sets the health status of the specified instance to `Unhealthy`.
 
 ```
 aws autoscaling set-instance-health \
@@ -20,6 +20,7 @@ aws autoscaling set-instance-health \
     --health-status {{Unhealthy}}
 ```
 This command produces no output.
+For more information, see [Set up a custom health check for your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-up-a-custom-health-check.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [SetInstanceHealth](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-instance-health.html) in *AWS CLI Command Reference*.
 
 ------

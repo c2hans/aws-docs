@@ -40,8 +40,7 @@ Output:
 ```
 {
     "token": "ACEGmnoq#1rstu2...BDFH3vxwy!4hlm!#5",
-    "sessionExpirationTime": "2022-03-16T04:44:09+00:00"
-    "state": "CREATING",
+    "sessionExpirationTime": "2022-03-16T04:44:09+00:00",
     "tokenExpirationTime": "2022-03-16T03:45:09+00:00"
 }
 ```
@@ -111,7 +110,7 @@ Output:
     "maximumMessageLength": 256,
     "maximumMessageRatePerSecond": 5,
     "name": "test-room-1",
-    "tags": {}
+    "tags": {},
     "updateTime": "2022-03-16T07:22:09+00:00"
 }
 ```
@@ -295,7 +294,6 @@ Output:
             "tags": { "key1" : "value1", "key2" : "value2" },
             "updateTime": "2022-09-14T17:48:01.104000+00:00"
         }
-        ...
     ]
 }
 ```
@@ -324,7 +322,7 @@ Output:
     "nextToken": "page3",
     "rooms": [
         {
-            "arn:aws:ivschat:us-west-2:12345689012:room/g1H2I3j4k5L6",
+            "arn": "arn:aws:ivschat:us-west-2:12345689012:room/g1H2I3j4k5L6",
             "createTime": "2022-03-16T04:44:09+00:00",
             "id": "g1H2I3j4k5L6",
             "loggingConfigurationIdentifiers": ["arn:aws:ivschat:us-west-2:123456789012:logging-configuration/ABcdef34ghIJ"],
@@ -362,7 +360,7 @@ Output:
     }
 }
 ```
-For more information, see [Tagging](https://docs.aws.amazon.com/ivs/latest/APIReference/Welcome.html) in the *Amazon Interactive Video Service API Reference*.
+For more information, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ivschat/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `send-event`
@@ -378,9 +376,7 @@ The following `send-event` example sends the given event to the specified room.
 aws ivschat send-event \
     --room-identifier {{"arn:aws:ivschat:us-west-2:12345689012:room/g1H2I3j4k5L6"}} \
     --event-name {{"SystemMessage"}} \
-    --attributes \
-        "msgType"="user-notification", \
-        "msgText"="This chat room will close in 15 minutes."
+    --attributes "msgType"="user-notification","msgText"="This chat room will close in 15 minutes."
 ```
 Output:
 
@@ -407,7 +403,7 @@ aws ivschat tag-resource \
     --tags {{"tagkey1=tagkeyvalue1, tagkey2=tagkeyvalue2"}}
 ```
 This command produces no output.
-For more information, see [Tagging](https://docs.aws.amazon.com/ivs/latest/APIReference/Welcome.html) in the *Amazon Interactive Video Service API Reference*.
+For more information, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ivschat/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -425,7 +421,7 @@ aws ivschat untag-resource \
     --tag-keys {{"tagkey1, tagkey2"}}
 ```
 This command produces no output.
-For more information, see [Tagging](https://docs.aws.amazon.com/ivs/latest/APIReference/Welcome.html) in the *Amazon Interactive Video Service API Reference*.
+For more information, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/best-practices-and-strats.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ivschat/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-logging-configuration`

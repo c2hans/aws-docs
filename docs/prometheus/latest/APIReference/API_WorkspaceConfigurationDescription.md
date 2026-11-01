@@ -20,10 +20,22 @@ This is an array of structures, where each structure displays one label sets for
 Type: Array of [LimitsPerLabelSet](API_LimitsPerLabelSet.md) objects
 Required: No
 
+ ** outOfOrderTimeWindowInSeconds **   <a name="prometheus-Type-WorkspaceConfigurationDescription-outOfOrderTimeWindowInSeconds"></a>
+This field displays the out of order time window in seconds for accepting out of order samples.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
  ** retentionPeriodInDays **   <a name="prometheus-Type-WorkspaceConfigurationDescription-retentionPeriodInDays"></a>
 This field displays how many days that metrics are retained in the workspace.
 Type: Integer
 Valid Range: Minimum value of 1.
+Required: No
+
+ ** ruleQueryOffsetInSeconds **   <a name="prometheus-Type-WorkspaceConfigurationDescription-ruleQueryOffsetInSeconds"></a>
+This field displays the duration in seconds that rule evaluation queries are offset into the past.
+Type: Integer
+Valid Range: Minimum value of 0.
 Required: No
 
 ## See Also

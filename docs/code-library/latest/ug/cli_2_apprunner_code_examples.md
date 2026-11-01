@@ -36,7 +36,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
     "DomainName": "example.com",
     "EnableWWWSubdomain": true
 }
@@ -64,10 +64,11 @@ Output:
         "EnableWWWSubdomain": true,
         "Status": "CREATING"
     },
-    "DNSTarget": "psbqam834h.us-east-1.awsapprunner.com",
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "DNSTarget": "psbqam834h.us-west-2.awsapprunner.com",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
+For more information, see [Managing custom domain names for an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-custom-domains.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [AssociateCustomDomain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/associate-custom-domain.html) in *AWS CLI Command Reference*.
 
 ### `create-auto-scaling-configuration`
@@ -97,7 +98,7 @@ Output:
 ```
 {
     "AutoScalingConfiguration": {
-        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
+        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
         "AutoScalingConfigurationName": "high-availability",
         "AutoScalingConfigurationRevision": 1,
         "CreatedAt": "2020-11-03T00:29:17Z",
@@ -109,6 +110,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing App Runner automatic scaling](https://docs.aws.amazon.com/apprunner/latest/dg/manage-autoscaling.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [CreateAutoScalingConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/create-auto-scaling-configuration.html) in *AWS CLI Command Reference*.
 
 ### `create-connection`
@@ -137,7 +139,7 @@ Output:
 ```
 {
     "Connection": {
-        "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection",
+        "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection",
         "ConnectionName": "my-github-connection",
         "Status": "PENDING_HANDSHAKE",
         "CreatedAt": "2020-11-03T00:32:51Z",
@@ -168,7 +170,7 @@ Contents of `input.json`:
     "ServiceName": "python-app",
     "SourceConfiguration": {
         "AuthenticationConfiguration": {
-            "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+            "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
         },
         "AutoDeploymentsEnabled": true,
         "CodeRepository": {
@@ -184,11 +186,9 @@ Contents of `input.json`:
                     "BuildCommand": "pip install -r requirements.txt",
                     "StartCommand": "python server.py",
                     "Port": "8080",
-                    "RuntimeEnvironmentVariables": [
-                        {
-                            "NAME": "Jane"
-                        }
-                    ]
+                    "RuntimeEnvironmentVariables": {
+                        "NAME": "Jane"
+                    }
                 }
             }
         }
@@ -203,17 +203,17 @@ Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-20T19:05:25Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -222,11 +222,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -246,6 +244,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-create.html) in the *AWS App Runner Developer Guide*.
 **Example 2: To create a source code repository service**
 The following `create-service` example creates an App Runner service based on a Python source code repository.
 
@@ -260,7 +259,7 @@ Contents of `input.json`:
     "ServiceName": "python-app",
     "SourceConfiguration": {
         "AuthenticationConfiguration": {
-            "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+            "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
         },
         "AutoDeploymentsEnabled": true,
         "CodeRepository": {
@@ -276,11 +275,9 @@ Contents of `input.json`:
                     "BuildCommand": "pip install -r requirements.txt",
                     "StartCommand": "python server.py",
                     "Port": "8080",
-                    "RuntimeEnvironmentVariables": [
-                        {
-                            "NAME": "Jane"
-                        }
-                    ]
+                    "RuntimeEnvironmentVariables": {
+                        "NAME": "Jane"
+                    }
                 }
             }
         }
@@ -295,17 +292,17 @@ Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-20T19:05:25Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -314,11 +311,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -338,6 +333,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-create.html) in the *AWS App Runner Developer Guide*.
 **Example 3: To create a source image repository service**
 The following `create-service` example creates an App Runner service based on an image stored in Elastic Container Registry (ECR).
 
@@ -356,14 +352,12 @@ Contents of `input.json`:
         },
         "AutoDeploymentsEnabled": true,
         "ImageRepository": {
-            "ImageIdentifier": "123456789012.dkr.ecr.us-east-1.amazonaws.com/golang-app:latest",
+            "ImageIdentifier": "123456789012.dkr.ecr.us-west-2.amazonaws.com/golang-app:latest",
             "ImageConfiguration": {
                 "Port": "8080",
-                "RuntimeEnvironmentVariables": [
-                    {
-                        "NAME": "Jane"
-                    }
-                ]
+                "RuntimeEnvironmentVariables": {
+                    "NAME": "Jane"
+                }
             },
             "ImageRepositoryType": "ECR"
         }
@@ -378,28 +372,26 @@ Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-06T23:15:30Z",
         "UpdatedAt": "2020-11-06T23:15:30Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/golang-container-app/51728f8a20ce46d39b25398a6c8e9d1a",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/golang-container-app/51728f8a20ce46d39b25398a6c8e9d1a",
         "ServiceId": "51728f8a20ce46d39b25398a6c8e9d1a",
         "ServiceName": "golang-container-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
                 "AccessRoleArn": "arn:aws:iam::123456789012:role/my-ecr-role"
             },
             "AutoDeploymentsEnabled": true,
             "ImageRepository": {
-                "ImageIdentifier": "123456789012.dkr.ecr.us-east-1.amazonaws.com/golang-app:latest",
+                "ImageIdentifier": "123456789012.dkr.ecr.us-west-2.amazonaws.com/golang-app:latest",
                 "ImageConfiguration": {
                     "Port": "8080",
-                    "RuntimeEnvironmentVariables": [
-                        {
-                            "NAME": "Jane"
-                        }
-                    ]
+                    "RuntimeEnvironmentVariables": {
+                        "NAME": "Jane"
+                    }
                 },
                 "ImageRepositoryType": "ECR"
             }
@@ -412,6 +404,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-create.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [CreateService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/create-service.html) in *AWS CLI Command Reference*.
 
 ### `delete-auto-scaling-configuration`
@@ -432,7 +425,7 @@ Contents of `input.json`:
 
 ```
 {
-    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability"
+    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability"
 }
 ```
 Output:
@@ -440,7 +433,7 @@ Output:
 ```
 {
     "AutoScalingConfiguration": {
-        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
+        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
         "AutoScalingConfigurationName": "high-availability",
         "AutoScalingConfigurationRevision": 2,
         "CreatedAt": "2021-02-25T17:42:59Z",
@@ -453,6 +446,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing App Runner automatic scaling](https://docs.aws.amazon.com/apprunner/latest/dg/manage-autoscaling.html) in the *AWS App Runner Developer Guide*.
 **Example 2: To delete a specific revision of an auto scaling configuration**
 The following `delete-auto-scaling-configuration` example deletes a specific revision of an App Runner auto scaling configuration. To delete a specific revision, specify an ARN that includes the revision number.
 In the example, several revisions exist before this action. The action deletes revision `1`.
@@ -465,7 +459,7 @@ Contents of `input.json`:
 
 ```
 {
-    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1"
+    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/1"
 }
 ```
 Output:
@@ -473,7 +467,7 @@ Output:
 ```
 {
     "AutoScalingConfiguration": {
-        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
+        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
         "AutoScalingConfigurationName": "high-availability",
         "AutoScalingConfigurationRevision": 1,
         "CreatedAt": "2020-11-03T00:29:17Z",
@@ -486,6 +480,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing App Runner automatic scaling](https://docs.aws.amazon.com/apprunner/latest/dg/manage-autoscaling.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DeleteAutoScalingConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/delete-auto-scaling-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-connection`
@@ -505,7 +500,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection"
+    "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection"
 }
 ```
 Output:
@@ -513,7 +508,7 @@ Output:
 ```
 {
     "Connection": {
-        "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection",
+        "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection",
         "ConnectionName": "my-github-connection",
         "Status": "DELETED",
         "CreatedAt": "2020-11-03T00:32:51Z",
@@ -521,6 +516,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing App Runner connections](https://docs.aws.amazon.com/apprunner/latest/dg/manage-connections.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DeleteConnection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/delete-connection.html) in *AWS CLI Command Reference*.
 
 ### `delete-service`
@@ -540,24 +536,24 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-20T19:05:25Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -566,11 +562,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -590,6 +584,7 @@ Output:
     }
 }
 ```
+For more information, see [Deleting an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-delete.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DeleteService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/delete-service.html) in *AWS CLI Command Reference*.
 
 ### `describe-auto-scaling-configuration`
@@ -610,7 +605,7 @@ Contents of `input.json`:
 
 ```
 {
-    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability"
+    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability"
 }
 ```
 Output:
@@ -618,7 +613,7 @@ Output:
 ```
 {
     "AutoScalingConfiguration": {
-        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
+        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
         "AutoScalingConfigurationName": "high-availability",
         "AutoScalingConfigurationRevision": 2,
         "CreatedAt": "2021-02-25T17:42:59Z",
@@ -630,6 +625,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing App Runner automatic scaling](https://docs.aws.amazon.com/apprunner/latest/dg/manage-autoscaling.html) in the *AWS App Runner Developer Guide*.
 **Example 2: To describe a specific revision of an auto scaling configuration**
 The following `describe-auto-scaling-configuration` example get a description of a specific revision of an App Runner auto scaling configuration. To describe a specific revision, specify an ARN that includes the revision number.
 In the example, several revisions exist and revision `1` is queried. The resulting object shows `"Latest": false`.
@@ -642,7 +638,7 @@ Contents of `input.json`:
 
 ```
 {
-    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1"
+    "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/1"
 }
 ```
 Output:
@@ -650,7 +646,7 @@ Output:
 ```
 {
     "AutoScalingConfiguration": {
-        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
+        "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/1/2f50e7656d7819fead0f59672e68042e",
         "AutoScalingConfigurationName": "high-availability",
         "AutoScalingConfigurationRevision": 1,
         "CreatedAt": "2020-11-03T00:29:17Z",
@@ -662,6 +658,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing App Runner automatic scaling](https://docs.aws.amazon.com/apprunner/latest/dg/manage-autoscaling.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DescribeAutoScalingConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/describe-auto-scaling-configuration.html) in *AWS CLI Command Reference*.
 
 ### `describe-custom-domains`
@@ -681,7 +678,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
     "DomainName": "example.com",
     "EnableWWWSubdomain": true
 }
@@ -724,10 +721,11 @@ Output:
             "Status": "ACTIVE"
         }
     ],
-    "DNSTarget": "psbqam834h.us-east-1.awsapprunner.com",
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "DNSTarget": "psbqam834h.us-west-2.awsapprunner.com",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
+For more information, see [Managing custom domain names for an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-custom-domains.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DescribeCustomDomains](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/describe-custom-domains.html) in *AWS CLI Command Reference*.
 
 ### `describe-service`
@@ -747,7 +745,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
@@ -757,13 +755,13 @@ Output:
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-20T19:05:25Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -772,11 +770,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -796,6 +792,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing your App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DescribeService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/describe-service.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-custom-domain`
@@ -815,7 +812,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
     "DomainName": "example.com"
 }
 ```
@@ -842,10 +839,11 @@ Output:
         "EnableWWWSubdomain": true,
         "Status": "DELETING"
     },
-    "DNSTarget": "psbqam834h.us-east-1.awsapprunner.com",
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "DNSTarget": "psbqam834h.us-west-2.awsapprunner.com",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
+For more information, see [Managing custom domain names for an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-custom-domains.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [DisassociateCustomDomain](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/disassociate-custom-domain.html) in *AWS CLI Command Reference*.
 
 ### `list-auto-scaling-configurations`
@@ -875,18 +873,19 @@ Output:
 {
     "AutoScalingConfigurationSummaryList": [
         {
-            "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
+            "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/high-availability/2/e76562f50d78042e819fead0f59672e6",
             "AutoScalingConfigurationName": "high-availability",
             "AutoScalingConfigurationRevision": 2
         },
         {
-            "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:123456789012:autoscalingconfiguration/low-cost/1/50d7804e7656fead0f59672e62f2e819",
+            "AutoScalingConfigurationArn": "arn:aws:apprunner:us-west-2:123456789012:autoscalingconfiguration/low-cost/1/50d7804e7656fead0f59672e62f2e819",
             "AutoScalingConfigurationName": "low-cost",
             "AutoScalingConfigurationRevision": 1
         }
     ]
 }
 ```
+For more information, see [Managing App Runner automatic scaling](https://docs.aws.amazon.com/apprunner/latest/dg/manage-autoscaling.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [ListAutoScalingConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/list-auto-scaling-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-connections`
@@ -907,14 +906,14 @@ Output:
 {
     "ConnectionSummaryList": [
         {
-            "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection",
+            "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection",
             "ConnectionName": "my-github-connection",
             "Status": "AVAILABLE",
             "CreatedAt": "2020-11-03T00:32:51Z",
             "ProviderType": "GITHUB"
         },
         {
-            "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-org-connection",
+            "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-org-connection",
             "ConnectionName": "my-github-org-connection",
             "Status": "AVAILABLE",
             "CreatedAt": "2020-11-03T02:54:17Z",
@@ -923,6 +922,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing App Runner connections](https://docs.aws.amazon.com/apprunner/latest/dg/manage-connections.html) in the *AWS App Runner Developer Guide*.
 **Example 2: To list a connection by name**
 The following `list-connections` example lists a connection by its name.
 
@@ -943,7 +943,7 @@ Output:
 {
     "ConnectionSummaryList": [
         {
-            "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-org-connection",
+            "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-org-connection",
             "ConnectionName": "my-github-org-connection",
             "Status": "AVAILABLE",
             "CreatedAt": "2020-11-03T02:54:17Z",
@@ -952,6 +952,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing App Runner connections](https://docs.aws.amazon.com/apprunner/latest/dg/manage-connections.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [ListConnections](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/list-connections.html) in *AWS CLI Command Reference*.
 
 ### `list-operations`
@@ -971,7 +972,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
@@ -981,16 +982,17 @@ Output:
     "OperationSummaryList": [
         {
             "EndedAt": 1606156217,
-            "Id": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "StartedAt": 1606156014,
             "Status": "SUCCEEDED",
-            "TargetArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+            "TargetArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
             "Type": "CREATE_SERVICE",
             "UpdatedAt": 1606156217
         }
     ]
 }
 ```
+For more information, see [Tracking App Runner service activity](https://docs.aws.amazon.com/apprunner/latest/dg/monitor-activity.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [ListOperations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/list-operations.html) in *AWS CLI Command Reference*.
 
 ### `list-services`
@@ -1022,24 +1024,25 @@ Output:
         {
             "CreatedAt": "2020-11-20T19:05:25Z",
             "UpdatedAt": "2020-11-23T12:41:37Z",
-            "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+            "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
             "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
             "ServiceName": "python-app",
-            "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+            "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
             "Status": "RUNNING"
         },
         {
             "CreatedAt": "2020-11-06T23:15:30Z",
             "UpdatedAt": "2020-11-23T13:21:22Z",
-            "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/golang-container-app/ab8f94cfe29a460fb8760afd2ee87555",
+            "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/golang-container-app/ab8f94cfe29a460fb8760afd2ee87555",
             "ServiceId": "ab8f94cfe29a460fb8760afd2ee87555",
             "ServiceName": "golang-container-app",
-            "ServiceUrl": "e2m8rrrx33.us-east-1.awsapprunner.com",
+            "ServiceUrl": "e2m8rrrx33.us-west-2.awsapprunner.com",
             "Status": "RUNNING"
         }
     ]
 }
 ```
+For more information, see [Managing your App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [ListServices](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/list-services.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1059,7 +1062,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ResourceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ResourceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
@@ -1078,6 +1081,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configuring an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-configure.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `pause-service`
@@ -1097,24 +1101,24 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-23T12:41:37Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -1123,11 +1127,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -1147,6 +1149,7 @@ Output:
     }
 }
 ```
+For more information, see [Pausing and resuming an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-pause.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [PauseService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/pause-service.html) in *AWS CLI Command Reference*.
 
 ### `resume-service`
@@ -1166,24 +1169,24 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-23T12:41:37Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -1192,11 +1195,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -1216,6 +1217,7 @@ Output:
     }
 }
 ```
+For more information, see [Pausing and resuming an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-pause.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [ResumeService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/resume-service.html) in *AWS CLI Command Reference*.
 
 ### `start-deployment`
@@ -1235,16 +1237,17 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa"
 }
 ```
 Output:
 
 ```
 {
-    "OperationId": "853a7d5b-fc9f-4730-831b-fd8037ab832a"
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Deploying a new application version to App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/manage-deploy.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [StartDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/start-deployment.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -1264,7 +1267,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ResourceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+    "ResourceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
     "Tags": [
         {
             "Key": "Department",
@@ -1278,6 +1281,7 @@ Contents of `input.json`:
 }
 ```
 This command produces no output.
+For more information, see [Authorization based on App Runner tags](https://docs.aws.amazon.com/apprunner/latest/dg/security_iam_service-with-iam.html#security_iam_service-with-iam-tags) in the *AWS App Runner Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1297,7 +1301,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ResourceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+    "ResourceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
     "TagKeys": [
         "Department",
         "CustomerId"
@@ -1305,6 +1309,7 @@ Contents of `input.json`:
 }
 ```
 This command produces no output.
+For more information, see [Authorization based on App Runner tags](https://docs.aws.amazon.com/apprunner/latest/dg/security_iam_service-with-iam.html#security_iam_service-with-iam-tags) in the *AWS App Runner Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-service`
@@ -1314,7 +1319,7 @@ The following code example shows how to use `update-service`.
 
 **AWS CLI**
 **To update memory size**
-The following `update-service` example updates the memory size of instances (scaling units) of an App Runner service to 2048 MiB.
+The following `update-service` example updates the memory size of instances (scaling units) of an App Runner service to 4 GB.
 When the call succeeds, App Runner starts an asynchronous update process. The `Service` structure that's returned by the call reflects the new memory value that's being applied by this call.
 
 ```
@@ -1325,7 +1330,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+    "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
     "InstanceConfiguration": {
         "Memory": "4 GB"
     }
@@ -1335,17 +1340,17 @@ Output:
 
 ```
 {
-    "OperationId": "17fe9f55-7e91-4097-b243-fcabbb69a4cf",
+    "OperationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Service": {
         "CreatedAt": "2020-11-20T19:05:25Z",
         "UpdatedAt": "2020-11-23T12:41:37Z",
-        "ServiceArn": "arn:aws:apprunner:us-east-1:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
+        "ServiceArn": "arn:aws:apprunner:us-west-2:123456789012:service/python-app/8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceId": "8fe1e10304f84fd2b0df550fe98a71fa",
         "ServiceName": "python-app",
-        "ServiceUrl": "psbqam834h.us-east-1.awsapprunner.com",
+        "ServiceUrl": "psbqam834h.us-west-2.awsapprunner.com",
         "SourceConfiguration": {
             "AuthenticationConfiguration": {
-                "ConnectionArn": "arn:aws:apprunner:us-east-1:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
+                "ConnectionArn": "arn:aws:apprunner:us-west-2:123456789012:connection/my-github-connection/e7656250f67242d7819feade6800f59e"
             },
             "AutoDeploymentsEnabled": true,
             "CodeRepository": {
@@ -1354,11 +1359,9 @@ Output:
                         "BuildCommand": "pip install -r requirements.txt",
                         "Port": "8080",
                         "Runtime": "PYTHON_3",
-                        "RuntimeEnvironmentVariables": [
-                            {
-                                "NAME": "Jane"
-                            }
-                        ],
+                        "RuntimeEnvironmentVariables": {
+                            "NAME": "Jane"
+                        },
                         "StartCommand": "python server.py"
                     },
                     "ConfigurationSource": "Api"
@@ -1378,4 +1381,5 @@ Output:
     }
 }
 ```
+For more information, see [Configuring an App Runner service](https://docs.aws.amazon.com/apprunner/latest/dg/manage-configure.html) in the *AWS App Runner Developer Guide*.
 +  For API details, see [UpdateService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apprunner/update-service.html) in *AWS CLI Command Reference*.

@@ -18,11 +18,14 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To delete an API**
-Command:
+The following `delete-rest-api` example deletes the specified API.
 
 ```
-aws apigateway delete-rest-api --rest-api-id {{1234123412}}
+aws apigateway delete-rest-api \
+    --rest-api-id {{1234123412}}
 ```
+This command produces no output.
+For more information, see [Develop REST APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-develop.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [DeleteRestApi](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/delete-rest-api.html) in *AWS CLI Command Reference*.
 
 ------

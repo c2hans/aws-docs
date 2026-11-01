@@ -30,7 +30,7 @@ Output:
     ]
 }
 ```
-For more information, see [GetTagKeys](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetTagKeys.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [What is Tag Editor?](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [GetTagKeys](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/get-tag-keys.html) in *AWS CLI Command Reference*.
 
 ------

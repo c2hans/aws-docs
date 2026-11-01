@@ -26,17 +26,18 @@ The following code example shows how to use `create-channel`.
 
 **AWS CLI**
 **To create a channel**
-The following `create-channel` command creates a channel named `sportschannel` in the current account.
+The following `create-channel` example creates a channel named `sportschannel` in the current account.
 
 ```
-aws mediapackage create-channel --id {{sportschannel}}
+aws mediapackage create-channel \
+    --id {{sportschannel}}
 ```
 Output:
 
 ```
 {
-   "Arn": "arn:aws:mediapackage:us-west-2:111222333:channels/6d345804ec3f46c9b454a91d4a80d0e0",
-   "HlsIngest": {
+    "Arn": "arn:aws:mediapackage:us-west-2:111222333:channels/6d345804ec3f46c9b454a91d4a80d0e0",
+    "HlsIngest": {
         "IngestEndpoints": [
             {
                 "Id": "6d345804ec3f46c9b454a91d4a80d0e0",
@@ -68,18 +69,38 @@ The following code example shows how to use `create-origin-endpoint`.
 
 **AWS CLI**
 **To create an origin endpoint**
-The following `create-origin-endpoint` command creates an origin endpoint named `cmafsports` with the package settings provided in a JSON file and specified endpoint settings.
+The following `create-origin-endpoint` example creates an origin endpoint named `cmafsports` with the package settings provided in a JSON file and specified endpoint settings.
 
 ```
 aws mediapackage create-origin-endpoint \
     --channel-id {{sportschannel}} \
     --id {{cmafsports}} \
-    --cmaf-package {{file://file/path/cmafpkg.json}} --description {{"cmaf output of sports"}} \
+    --cmaf-package {{file://file/path/cmafpkg.json}} \
+    --description {{"cmaf output of sports"}} \
     --id {{cmaf_sports}} \
     --manifest-name {{sports_channel}} \
     --startover-window-seconds {{300}} \
     --tags {{region=west,media=sports}} \
     --time-delay-seconds {{10}}
+```
+Contents of `cmafpkg.json`:
+
+```
+{
+    "HlsManifests": [
+        {
+            "AdMarkers": "PASSTHROUGH",
+            "Id": "cmaf_sports_endpoint",
+            "IncludeIframeOnlyStream": true,
+            "ManifestName": "index",
+            "PlaylistType": "EVENT",
+            "PlaylistWindowSeconds": 300,
+            "ProgramDateTimeIntervalSeconds": 300
+        }
+    ],
+    "SegmentDurationSeconds": 2,
+    "SegmentPrefix": "sportschannel"
+}
 ```
 Output:
 
@@ -126,7 +147,7 @@ The following code example shows how to use `delete-channel`.
 
 **AWS CLI**
 **To delete a channel**
-The following `delete-channel` command deletes the channel named `test`.
+The following `delete-channel` example deletes the channel named `test`.
 
 ```
 aws mediapackage delete-channel \
@@ -143,12 +164,13 @@ The following code example shows how to use `delete-origin-endpoint`.
 
 **AWS CLI**
 **To delete an origin endpoint**
-The following `delete-origin-endpoint` command deletes the origin endpoint named `tester2`.
+The following `delete-origin-endpoint` example deletes the origin endpoint named `tester2`.
 
 ```
 aws mediapackage delete-origin-endpoint \
     --id {{tester2}}
 ```
+This command produces no output.
 For more information, see [Deleting an Endpoint](https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-delete.html) in the *AWS Elemental MediaPackage User Guide*.
 +  For API details, see [DeleteOriginEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediapackage/delete-origin-endpoint.html) in *AWS CLI Command Reference*.
 
@@ -159,7 +181,7 @@ The following code example shows how to use `describe-channel`.
 
 **AWS CLI**
 **To describe a channel**
-The following `describe-channel` command displays all of the details of the channel named `test`.
+The following `describe-channel` example displays all of the details of the channel named `test`.
 
 ```
 aws mediapackage describe-channel \
@@ -190,7 +212,7 @@ Output:
     "Tags": {}
 }
 ```
-For more information, see Viewing Channel Details<https://docs.aws.amazon.com/mediapackage/latest/ug/channels-view.html> in the *AWS Elemental MediaPackage User Guide*
+For more information, see [Viewing channel details](https://docs.aws.amazon.com/mediapackage/latest/ug/channels-view.html) in the *AWS Elemental MediaPackage User Guide*.
 +  For API details, see [DescribeChannel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediapackage/describe-channel.html) in *AWS CLI Command Reference*.
 
 ### `describe-origin-endpoint`
@@ -200,7 +222,7 @@ The following code example shows how to use `describe-origin-endpoint`.
 
 **AWS CLI**
 **To describe an origin endpoint**
-The following `describe-origin-endpoint` command displays all of the details of the origin endpoint named `cmaf_sports`.
+The following `describe-origin-endpoint` example displays all of the details of the origin endpoint named `cmaf_sports`.
 
 ```
 aws mediapackage describe-origin-endpoint \
@@ -249,7 +271,7 @@ The following code example shows how to use `list-channels`.
 
 **AWS CLI**
 **To list all channels**
-The following `list-channels` command lists all of the channels that are configured on the current AWS account.
+The following `list-channels` example lists all of the channels that are configured on the current AWS account.
 
 ```
 aws mediapackage list-channels
@@ -293,7 +315,7 @@ The following code example shows how to use `list-origin-endpoints`.
 
 **AWS CLI**
 **To list all origin-endpoints on a channel**
-The following `list-origin-endpoints` command lists all of the origin endpoints that are configured on the channel named `test`.
+The following `list-origin-endpoints` example lists all of the origin endpoints that are configured on the channel named `test`.
 
 ```
 aws mediapackage list-origin-endpoints \
@@ -369,7 +391,7 @@ The following code example shows how to use `list-tags-for-resource`.
 
 **AWS CLI**
 **To list the tags assigned to a resource**
-The following `list-tags-for-resource` command lists the tags that are assigned to the specified resource.
+The following `list-tags-for-resource` example lists the tags that are assigned to the specified resource.
 
 ```
 aws mediapackage list-tags-for-resource \
@@ -394,7 +416,7 @@ The following code example shows how to use `rotate-ingest-endpoint-credentials`
 
 **AWS CLI**
 **To rotate ingest credentials**
-The following `rotate-ingest-endpoint-credentials` command rotates the WebDAV username and password for the specified ingest endpoint.
+The following `rotate-ingest-endpoint-credentials` example rotates the WebDAV username and password for the specified ingest endpoint.
 
 ```
 aws mediapackage rotate-ingest-endpoint-credentials \
@@ -436,7 +458,7 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To add a tag to a resource**
-The following `tag-resource` commands adds a `region=west` key and value pair to the specified resource.
+The following `tag-resource` example adds a `region=west` key and value pair to the specified resource.
 
 ```
 aws mediapackage tag-resource \
@@ -454,13 +476,14 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To remove a tag from a resource**
-The following `untag-resource` command removes the tag with the key `region` from the specified channel.
+The following `untag-resource` example removes the tag with the key `region` from the specified channel.
 
 ```
 aws mediapackage untag-resource \
     --resource-arn {{arn:aws:mediapackage:us-west-2:111222333:channels/6d345804ec3f46c9b454a91d4a80d0e0}} \
     --tag-keys {{region}}
 ```
+This command produces no output.
 For more information, see [Tagging Resources in AWS Elemental MediaPackage](https://docs.aws.amazon.com/mediapackage/latest/ug/tagging.html) in the *AWS Elemental MediaPackage User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediapackage/untag-resource.html) in *AWS CLI Command Reference*.
 
@@ -471,7 +494,7 @@ The following code example shows how to use `update-channel`.
 
 **AWS CLI**
 **To update a channel**
-The following `update-channel` command updates the channel named `sportschannel` to include the description `24x7 sports`.
+The following `update-channel` example updates the channel named `sportschannel` to include the description `24x7 sports`.
 
 ```
 aws mediapackage update-channel \
@@ -514,7 +537,7 @@ The following code example shows how to use `update-origin-endpoint`.
 
 **AWS CLI**
 **To update an origin endpoint**
-The following `update-origin-endpoint` command updates the origin endpoint named `cmaf_sports`. It changes the time delay to `0` seconds.
+The following `update-origin-endpoint` example updates the origin endpoint named `cmaf_sports`. It changes the time delay to `0` seconds.
 
 ```
 aws mediapackage update-origin-endpoint \

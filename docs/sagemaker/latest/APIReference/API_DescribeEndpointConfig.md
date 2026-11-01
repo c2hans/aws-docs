@@ -110,6 +110,11 @@ Required: Yes
    },
    "ProductionVariants": [
       {
+         "AcceleratorPartitionLayouts": [
+            {
+               "AcceleratorPartitionTypes": [ "string" ]
+            }
+         ],
          "AcceleratorType": "string",
          "CapacityReservationConfig": {
             "CapacityReservationPreference": "string",
@@ -163,6 +168,11 @@ Required: Yes
    ],
    "ShadowProductionVariants": [
       {
+         "AcceleratorPartitionLayouts": [
+            {
+               "AcceleratorPartitionTypes": [ "string" ]
+            }
+         ],
          "AcceleratorType": "string",
          "CapacityReservationConfig": {
             "CapacityReservationPreference": "string",

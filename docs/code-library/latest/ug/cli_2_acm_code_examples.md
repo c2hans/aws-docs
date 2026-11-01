@@ -26,11 +26,15 @@ The following code example shows how to use `add-tags-to-certificate`.
 
 **AWS CLI**
 **To add tags to an existing ACM Certificate**
-The following `add-tags-to-certificate` command adds two tags to the specified certificate. Use a space to separate multiple tags:
+The following `add-tags-to-certificate` example adds two tags to the specified certificate. Use a space to separate multiple tags.
 
 ```
-aws acm add-tags-to-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}} --tags {{Key=Admin,Value=Alice}} {{Key=Purpose,Value=Website}}
+aws acm add-tags-to-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --tags {{Key=Admin,Value=Alice}} {{Key=Purpose,Value=Website}}
 ```
+This command produces no output.
+For more information, see [Tag AWS Certificate Manager resources](https://docs.aws.amazon.com/acm/latest/userguide/tags.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [AddTagsToCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/add-tags-to-certificate.html) in *AWS CLI Command Reference*.
 
 ### `delete-certificate`
@@ -40,11 +44,14 @@ The following code example shows how to use `delete-certificate`.
 
 **AWS CLI**
 **To delete an ACM certificate from your account**
-The following `delete-certificate` command deletes the certificate with the specified ARN:
+The following `delete-certificate` example deletes the certificate with the specified ARN.
 
 ```
-aws acm delete-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}}
+aws acm delete-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
+This command produces no output.
+For more information, see [Delete certificates managed by AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-delete.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [DeleteCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/delete-certificate.html) in *AWS CLI Command Reference*.
 
 ### `describe-certificate`
@@ -54,66 +61,68 @@ The following code example shows how to use `describe-certificate`.
 
 **AWS CLI**
 **To retrieve the fields contained in an ACM certificate**
-The following `describe-certificate` command retrieves all of the fields for the certificate with the specified ARN:
+The following `describe-certificate` example retrieves all of the fields for the certificate with the specified ARN.
 
 ```
-aws acm describe-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}}
+aws acm describe-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-Output similar to the following is displayed:
+Output:
 
 ```
 {
-  "Certificate": {
-    "CertificateArn": "arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012",
-    "CreatedAt": 1446835267.0,
-    "DomainName": "www.example.com",
-    "DomainValidationOptions": [
-      {
+    "Certificate": {
+        "CertificateArn": "arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "CreatedAt": 1446835267.0,
         "DomainName": "www.example.com",
-        "ValidationDomain": "www.example.com",
-        "ValidationEmails": [
-          "hostmaster@example.com",
-          "admin@example.com",
-          "owner@example.com.whoisprivacyservice.org",
-          "tech@example.com.whoisprivacyservice.org",
-          "admin@example.com.whoisprivacyservice.org",
-          "postmaster@example.com",
-          "webmaster@example.com",
-          "administrator@example.com"
+        "DomainValidationOptions": [
+            {
+                "DomainName": "www.example.com",
+                "ValidationDomain": "www.example.com",
+                "ValidationEmails": [
+                    "hostmaster@example.com",
+                    "admin@example.com",
+                    "owner@example.com.whoisprivacyservice.org",
+                    "tech@example.com.whoisprivacyservice.org",
+                    "admin@example.com.whoisprivacyservice.org",
+                    "postmaster@example.com",
+                    "webmaster@example.com",
+                    "administrator@example.com"
+                ]
+            },
+            {
+                "DomainName": "www.example.net",
+                "ValidationDomain": "www.example.net",
+                "ValidationEmails": [
+                    "postmaster@example.net",
+                    "admin@example.net",
+                    "owner@example.net.whoisprivacyservice.org",
+                    "tech@example.net.whoisprivacyservice.org",
+                    "admin@example.net.whoisprivacyservice.org",
+                    "hostmaster@example.net",
+                    "administrator@example.net",
+                    "webmaster@example.net"
+                ]
+            }
+        ],
+        "InUseBy": [],
+        "IssuedAt": 1446835815.0,
+        "Issuer": "Amazon",
+        "KeyAlgorithm": "RSA-2048",
+        "NotAfter": 1478433600.0,
+        "NotBefore": 1446768000.0,
+        "Serial": "0f:ac:b0:a3:8d:ea:65:52:2d:7d:01:3a:39:36:db:d6",
+        "SignatureAlgorithm": "SHA256WITHRSA",
+        "Status": "ISSUED",
+        "Subject": "CN=www.example.com",
+        "SubjectAlternativeNames": [
+            "www.example.com",
+            "www.example.net"
         ]
-      },
-      {
-        "DomainName": "www.example.net",
-        "ValidationDomain": "www.example.net",
-        "ValidationEmails": [
-          "postmaster@example.net",
-          "admin@example.net",
-          "owner@example.net.whoisprivacyservice.org",
-          "tech@example.net.whoisprivacyservice.org",
-          "admin@example.net.whoisprivacyservice.org",
-          "hostmaster@example.net",
-          "administrator@example.net",
-          "webmaster@example.net"
-        ]
-      }
-    ],
-    "InUseBy": [],
-    "IssuedAt": 1446835815.0,
-    "Issuer": "Amazon",
-    "KeyAlgorithm": "RSA-2048",
-    "NotAfter": 1478433600.0,
-    "NotBefore": 1446768000.0,
-    "Serial": "0f:ac:b0:a3:8d:ea:65:52:2d:7d:01:3a:39:36:db:d6",
-    "SignatureAlgorithm": "SHA256WITHRSA",
-    "Status": "ISSUED",
-    "Subject": "CN=www.example.com",
-    "SubjectAlternativeNames": [
-      "www.example.com",
-      "www.example.net"
-    ]
-  }
+    }
 }
 ```
+For more information, see [View AWS Certificate Manager certificate details](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-describe.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [DescribeCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/describe-certificate.html) in *AWS CLI Command Reference*.
 
 ### `export-certificate`
@@ -123,16 +132,35 @@ The following code example shows how to use `export-certificate`.
 
 **AWS CLI**
 **To export a private certificate issued by a private CA.**
-The following `export-certificate` command exports a private certificate, certificate chain, and private key to your display:
+The following `export-certificate` example exports a private certificate, certificate chain, and private key to your display.
 
 ```
-aws acm export-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}} --passphrase {{file://path-to-passphrase-file}}
+aws acm export-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --passphrase {{file://path-to-passphrase-file}}
 ```
-To export the certificate, chain, and private key to a local file, use the following command:
+Contents of `path-to-passphrase-file`:
 
 ```
-aws acm export-certificate --certificate-arn {{arn:aws:acm:region:sccount:certificate/12345678-1234-1234-1234-123456789012}} --passphrase {{file://path-to-passphrase-file}} {{>}} c:\temp\export.txt
+examplePassphrase123
 ```
+Output:
+
+```
+{
+    "Certificate": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n",
+    "CertificateChain": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nb24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n",
+    "PrivateKey": "-----BEGIN ENCRYPTED PRIVATE KEY-----\nMIIFHzBJBgkqhkiG9w0BBQ0wPDAbBgkqhkiG9w0BBQwwDgQIEXAMPLEKEYAgIIADAd\nBglghkgBZQMEASoEEEXAMPLEPRIVATEKEYEXAMPLEEXAMPLE=\n-----END ENCRYPTED PRIVATE KEY-----\n"
+}
+```
+To export the certificate, chain, and private key to a local file, use the following command.
+
+```
+aws acm export-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --passphrase {{file://path-to-passphrase-file}} {{>}} c:\temp\export.txt
+```
+For more information, see [Export an AWS Certificate Manager private certificate](https://docs.aws.amazon.com/acm/latest/userguide/export-private.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [ExportCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/export-certificate.html) in *AWS CLI Command Reference*.
 
 ### `get-certificate`
@@ -142,82 +170,21 @@ The following code example shows how to use `get-certificate`.
 
 **AWS CLI**
 **To retrieve an ACM certificate**
-The following `get-certificate` command retrieves the certificate for the specified ARN and the certificate chain:
+The following `get-certificate` example retrieves the certificate for the specified ARN and the certificate chain.
 
 ```
-aws acm get-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}}
+aws acm get-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-Output similar to the following is displayed:
+Output:
 
 ```
 {
-  "Certificate": "-----BEGIN CERTIFICATE-----
-MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE
-Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----",
-
-  "CertificateChain": "-----BEGIN CERTIFICATE-----
-MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE
-Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----",
-"-----BEGIN CERTIFICATE-----
-MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE
-Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----",
-"-----BEGIN CERTIFICATE-----
-MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN
-MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE
-Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-NYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=
------END CERTIFICATE-----"
+    "Certificate": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n",
+    "CertificateChain": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEXAMPLE=\n-----END CERTIFICATE-----\n"
 }
 ```
+For more information, see [View AWS Certificate Manager certificate details](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-describe.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [GetCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/get-certificate.html) in *AWS CLI Command Reference*.
 
 ### `import-certificate`
@@ -227,11 +194,46 @@ The following code example shows how to use `import-certificate`.
 
 **AWS CLI**
 **To import a certificate into ACM.**
-The following `import-certificate` command imports a certificate into ACM. Replace the file names with your own:
+The following `import-certificate` example imports a certificate into ACM. Replace the file names with your own.
 
 ```
-aws acm import-certificate --certificate {{file://Certificate.pem}} --certificate-chain {{file://CertificateChain.pem}} --private-key {{file://PrivateKey.pem}}
+aws acm import-certificate \
+    --certificate {{file://Certificate.pem}} \
+    --certificate-chain {{file://CertificateChain.pem}} \
+    --private-key {{file://PrivateKey.pem}}
 ```
+Contents of `Certificate.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+EXAMPLECERTIFICATEDATA...
+-----END CERTIFICATE-----
+```
+Contents of `CertificateChain.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+EXAMPLEINTERMEDIATECERTIFICATEDATA...
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+EXAMPLEROOTCERTIFICATEDATA...
+-----END CERTIFICATE-----
+```
+Contents of `PrivateKey.pem`:
+
+```
+-----BEGIN PRIVATE KEY-----
+EXAMPLEPRIVATEKEYDATA...
+-----END PRIVATE KEY-----
+```
+Output:
+
+```
+{
+    "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+}
+```
+For more information, see [Import certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [ImportCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/import-certificate.html) in *AWS CLI Command Reference*.
 
 ### `list-certificates`
@@ -241,68 +243,74 @@ The following code example shows how to use `list-certificates`.
 
 **AWS CLI**
 **To list the ACM certificates for an AWS account**
-The following `list-certificates` command lists the ARNs of the certificates in your account:
+The following `list-certificates` example lists the ARNs of the certificates in your account.
 
 ```
 aws acm list-certificates
 ```
-The preceding command produces output similar to the following:
+Output:
 
 ```
 {
     "CertificateSummaryList": [
         {
-            "CertificateArn": "arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012",
+            "CertificateArn": "arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "DomainName": "www.example.com"
         },
         {
-            "CertificateArn": "arn:aws:acm:region:account:certificate/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+            "CertificateArn": "arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "DomainName": "www.example.net"
         }
     ]
 }
 ```
-You can decide how many certificates you want to display each time you call `list-certificates`. For example, if you have four certificates and you want to display no more than two at a time, set the `max-items` argument to 2 as in the following example:
+You can decide how many certificates you want to display each time you call `list-certificates`. For example, if you have four certificates and you want to display no more than two at a time, set the `max-items` argument to 2 as in the following example.
 
 ```
-aws acm list-certificates --max-items {{2}}
+aws acm list-certificates \
+    --max-items {{2}}
 ```
-Two certificate ARNs and a `NextToken` value will be displayed:
+Two certificate ARNs and a `NextToken` value are displayed.
+Output:
 
 ```
-"CertificateSummaryList": [
-  {
-    "CertificateArn": "arn:aws:acm:region:account: \
-            certificate/12345678-1234-1234-1234-123456789012",
-    "DomainName": "www.example.com"
-  },
-  {
-    "CertificateArn": "arn:aws:acm:region:account: \
-             certificate/aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
-    "DomainName": "www.example.net"
-  }
-  ],
-    "NextToken": "9f4d9f69-275a-41fe-b58e-2b837bd9ba48"
+{
+    "CertificateSummaryList": [
+        {
+            "CertificateArn": "arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "DomainName": "www.example.com"
+        },
+        {
+            "CertificateArn": "arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "DomainName": "www.example.net"
+        }
+    ],
+    "NextToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
+}
 ```
-To display the next two certificates in your account, set this `NextToken` value in your next call:
+To display the next two certificates in your account, set this `NextToken` value in your next call.
 
 ```
-aws acm list-certificates --max-items {{2}} --next-token {{9f4d9f69-275a-41fe-b58e-2b837bd9ba48}}
+aws acm list-certificates \
+    --max-items {{2}} \
+    --next-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
-You can filter your output by using the `certificate-statuses` argument. The following command displays certificates that have a PENDING\_VALIDATION status:
+You can filter your output by using the `certificate-statuses` argument. The following command displays certificates that have a PENDING\_VALIDATION status.
 
 ```
-aws acm list-certificates --certificate-statuses {{PENDING_VALIDATION}}
+aws acm list-certificates \
+    --certificate-statuses {{PENDING_VALIDATION}}
 ```
 You can also filter your output by using the `includes` argument. The following command displays certificates filtered on the following properties. The certificates to be displayed:
+Specify that the RSA algorithm and a 2048 bit key are used to generate key pairs.Contain a Key Usage extension that specifies that the certificates can be used to create digital signatures.Contain an Extended Key Usage extension that specifies that the certificates can be used for code signing.
+To display the certificates that have these properties, use the following command.
 
 ```
-- Specify that the RSA algorithm and a 2048 bit key are used to generate key pairs.
-- Contain a Key Usage extension that specifies that the certificates can be used to create digital signatures.
-- Contain an Extended Key Usage extension that specifies that the certificates can be used for code signing.
-
-aws acm list-certificates --max-items 10 --includes extendedKeyUsage=CODE_SIGNING,keyUsage=DIGITAL_SIGNATURE,keyTypes=RSA_2048
+aws acm list-certificates \
+    --max-items {{10}} \
+    --includes {{extendedKeyUsage=CODE_SIGNING,keyUsage=DIGITAL_SIGNATURE,keyTypes=RSA_2048}}
 ```
+For more information, see [Search certificates managed by AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-list.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [ListCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-certificates.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-certificate`
@@ -312,27 +320,29 @@ The following code example shows how to use `list-tags-for-certificate`.
 
 **AWS CLI**
 **To list the tags applied to an ACM Certificate**
-The following `list-tags-for-certificate` command lists the tags applied to a certificate in your account:
+The following `list-tags-for-certificate` example lists the tags applied to a certificate in your account.
 
 ```
-aws acm list-tags-for-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}}
+aws acm list-tags-for-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-The preceding command produces output similar to the following:
+Output:
 
 ```
 {
-  "Tags": [
-      {
-          "Value": "Website",
-          "Key": "Purpose"
-      },
-      {
-          "Value": "Alice",
-          "Key": "Admin"
-      }
-  ]
+    "Tags": [
+        {
+            "Value": "Website",
+            "Key": "Purpose"
+        },
+        {
+            "Value": "Alice",
+            "Key": "Admin"
+        }
+    ]
 }
 ```
+For more information, see [Tag AWS Certificate Manager resources](https://docs.aws.amazon.com/acm/latest/userguide/tags.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [ListTagsForCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/list-tags-for-certificate.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags-from-certificate`
@@ -342,11 +352,15 @@ The following code example shows how to use `remove-tags-from-certificate`.
 
 **AWS CLI**
 **To remove a tag from an ACM Certificate**
-The following `remove-tags-from-certificate` command removes two tags from the specified certificate. Use a space to separate multiple tags:
+The following `remove-tags-from-certificate` example removes two tags from the specified certificate. Use a space to separate multiple tags.
 
 ```
-aws acm remove-tags-from-certificate --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}} --tags {{Key=Admin,Value=Alice}} {{Key=Purpose,Value=Website}}
+aws acm remove-tags-from-certificate \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --tags {{Key=Admin,Value=Alice}} {{Key=Purpose,Value=Website}}
 ```
+This command produces no output.
+For more information, see [Tag AWS Certificate Manager resources](https://docs.aws.amazon.com/acm/latest/userguide/tags.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [RemoveTagsFromCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/remove-tags-from-certificate.html) in *AWS CLI Command Reference*.
 
 ### `request-certificate`
@@ -356,46 +370,82 @@ The following code example shows how to use `request-certificate`.
 
 **AWS CLI**
 **To request a new ACM certificate**
-The following `request-certificate` command requests a new certificate for the www.example.com domain using DNS validation:
+The following `request-certificate` example requests a new certificate for the www.example.com domain using DNS validation.
 
 ```
-aws acm request-certificate --domain-name {{www.example.com}} --validation-method {{DNS}}
+aws acm request-certificate \
+    --domain-name {{www.example.com}} \
+    --validation-method {{DNS}}
 ```
-You can enter an idempotency token to distinguish between calls to `request-certificate`:
+Output:
 
 ```
-aws acm request-certificate --domain-name {{www.example.com}} --validation-method {{DNS}} --idempotency-token {{91adc45q}}
+{
+    "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+}
 ```
-You can enter one or more subject alternative names to request a certificate that will protect more than one apex domain:
+You can enter an idempotency token to distinguish between calls to `request-certificate`.
 
 ```
-aws acm request-certificate --domain-name {{example.com}} --validation-method {{DNS}} --idempotency-token {{91adc45q}} --subject-alternative-names {{www.example.net}}
+aws acm request-certificate \
+    --domain-name {{www.example.com}} \
+    --validation-method {{DNS}} \
+    --idempotency-token {{91adc45q}}
 ```
-You can enter an alternative name that can also be used to reach your website:
+You can enter one or more subject alternative names to request a certificate that will protect more than one apex domain.
 
 ```
-aws acm request-certificate --domain-name {{example.com}} --validation-method {{DNS}} --idempotency-token {{91adc45q}} --subject-alternative-names {{www.example.com}}
+aws acm request-certificate \
+    --domain-name {{example.com}} \
+    --validation-method {{DNS}} \
+    --idempotency-token {{91adc45q}} \
+    --subject-alternative-names {{www.example.net}}
 ```
-You can use an asterisk (\*) as a wildcard to create a certificate for several subdomains in the same domain:
+You can enter an alternative name that can also be used to reach your website.
 
 ```
-aws acm request-certificate --domain-name {{example.com}} --validation-method {{DNS}} --idempotency-token {{91adc45q}} --subject-alternative-names {{*.example.com}}
+aws acm request-certificate \
+    --domain-name {{example.com}} \
+    --validation-method {{DNS}} \
+    --idempotency-token {{91adc45q}} \
+    --subject-alternative-names {{www.example.com}}
 ```
-You can also enter multiple alternative names:
+You can use an asterisk (\*) as a wildcard to create a certificate for several subdomains in the same domain.
 
 ```
-aws acm request-certificate --domain-name {{example.com}} --validation-method {{DNS}} --subject-alternative-names {{b.example.com}} {{c.example.com}} {{d.example.com}}
+aws acm request-certificate \
+    --domain-name {{example.com}} \
+    --validation-method {{DNS}} \
+    --idempotency-token {{91adc45q}} \
+    --subject-alternative-names {{*.example.com}}
 ```
-If you are using email for validation, you can enter domain validation options to specify the domain to which the validation email will be sent:
+You can also enter multiple alternative names.
 
 ```
-aws acm request-certificate --domain-name {{example.com}} --validation-method {{EMAIL}} --subject-alternative-names {{www.example.com}} --domain-validation-options {{DomainName=example.com,ValidationDomain=example.com}}
+aws acm request-certificate \
+    --domain-name {{example.com}} \
+    --validation-method {{DNS}} \
+    --subject-alternative-names {{b.example.com}} {{c.example.com}} {{d.example.com}}
 ```
-The following command opts out of certificate transparency logging when you request a new certificate:
+If you are using email for validation, you can enter domain validation options to specify the domain to which the validation email will be sent.
 
 ```
-aws acm request-certificate --domain-name {{www.example.com}} --validation-method {{DNS}} --options {{CertificateTransparencyLoggingPreference=DISABLED}} --idempotency-token {{184627}}
+aws acm request-certificate \
+    --domain-name {{example.com}} \
+    --validation-method {{EMAIL}} \
+    --subject-alternative-names {{www.example.com}} \
+    --domain-validation-options {{DomainName=example.com,ValidationDomain=example.com}}
 ```
+The following command opts out of certificate transparency logging when you request a new certificate.
+
+```
+aws acm request-certificate \
+    --domain-name {{www.example.com}} \
+    --validation-method {{DNS}} \
+    --options {{CertificateTransparencyLoggingPreference=DISABLED}} \
+    --idempotency-token {{184627}}
+```
+For more information, see [AWS Certificate Manager public certificates](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request-public.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [RequestCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/request-certificate.html) in *AWS CLI Command Reference*.
 
 ### `resend-validation-email`
@@ -405,11 +455,16 @@ The following code example shows how to use `resend-validation-email`.
 
 **AWS CLI**
 **To resend validation email for your ACM certificate request**
-The following `resend-validation-email` command tells the Amazon certificate authority to send validation email to the appropriate addresses:
+The following `resend-validation-email` example tells the Amazon certificate authority to send validation email to the appropriate addresses.
 
 ```
-aws acm resend-validation-email --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}} --domain {{www.example.com}} --validation-domain {{example.com}}
+aws acm resend-validation-email \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --domain {{www.example.com}} \
+    --validation-domain {{example.com}}
 ```
+This command produces no output.
+For more information, see [AWS Certificate Manager email validation](https://docs.aws.amazon.com/acm/latest/userguide/email-validation.html) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [ResendValidationEmail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/resend-validation-email.html) in *AWS CLI Command Reference*.
 
 ### `update-certificate-options`
@@ -419,9 +474,13 @@ The following code example shows how to use `update-certificate-options`.
 
 **AWS CLI**
 **To update the certificate options**
-The following `update-certificate-options` command opts out of certificate transparency logging:
+The following `update-certificate-options` example opts out of certificate transparency logging.
 
 ```
-aws acm update-certificate-options --certificate-arn {{arn:aws:acm:region:account:certificate/12345678-1234-1234-1234-123456789012}} --options {{CertificateTransparencyLoggingPreference=DISABLED}}
+aws acm update-certificate-options \
+    --certificate-arn {{arn:aws:acm:region:account:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --options {{CertificateTransparencyLoggingPreference=DISABLED}}
 ```
+This command produces no output.
+For more information, see [Certificate Transparency Logging](https://docs.aws.amazon.com/acm/latest/userguide/acm-concepts.html#concept-transparency) in the *AWS Certificate Manager User Guide*.
 +  For API details, see [UpdateCertificateOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/acm/update-certificate-options.html) in *AWS CLI Command Reference*.

@@ -43,6 +43,9 @@ Content-type: application/json
       "arn": "string",
       "createdAt": number,
       "destination": { ... },
+      "exporters": [
+         { ... }
+      ],
       "lastModifiedAt": number,
       "roleArn": "string",
       "roleConfiguration": {

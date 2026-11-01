@@ -175,6 +175,7 @@ The following advanced event selector fields are required to log network activit
   + `monitoring.amazonaws.com`
   + `partnercentral-prm.amazonaws.com`
   + `personalize.amazonaws.com`
+  + `pricelist.amazonaws.com`
   + `qbusiness.amazonaws.com`
   + `quicksight.amazonaws.com`
   + `rds.amazonaws.com`

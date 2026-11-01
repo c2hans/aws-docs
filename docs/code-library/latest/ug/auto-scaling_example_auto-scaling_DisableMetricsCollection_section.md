@@ -75,7 +75,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To disable metrics collection for an Auto Scaling group**
-This example disables collection of the `GroupDesiredCapacity` metric for the specified Auto Scaling group.
+The following `disable-metrics-collection` example disables collection of the `GroupDesiredCapacity` metric for the specified Auto Scaling group.
 
 ```
 aws autoscaling disable-metrics-collection \
@@ -83,7 +83,7 @@ aws autoscaling disable-metrics-collection \
     --metrics {{GroupDesiredCapacity}}
 ```
 This command produces no output.
-For more information, see [Monitoring CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
+For more information, see [Monitor CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-cloudwatch-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DisableMetricsCollection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/disable-metrics-collection.html) in *AWS CLI Command Reference*.
 
 ------

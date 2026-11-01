@@ -93,6 +93,7 @@ Output:
     ]
 }
 ```
+For more information, see [Check the health of your Application Load Balancer targets](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/check-target-health.html) in the *Application Load Balancers Guide*.
 **Example 2: To describe the health of a target**
 The following `describe-target-health` example displays health details for the specified target. This target is healthy.
 
@@ -198,6 +199,7 @@ The following example output is for a target that is a Lambda function and healt
     ]
 }
 ```
+For more information, see [Check the health of your Application Load Balancer targets](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/check-target-health.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeTargetHealth](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-target-health.html) in *AWS CLI Command Reference*.
 
 ------

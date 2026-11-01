@@ -14,10 +14,12 @@ The following code examples show how to use `GetBasePathMapping`.
 
 **AWS CLI**
 **To get the base path mapping for a custom domain name**
-Command:
+The following `get-base-path-mapping` example gets the base path mapping for a custom domain name.
 
 ```
-aws apigateway get-base-path-mapping --domain-name {{subdomain.domain.tld}} --base-path {{v1}}
+aws apigateway get-base-path-mapping \
+    --domain-name {{subdomain.domain.tld}} \
+    --base-path {{v1}}
 ```
 Output:
 
@@ -28,6 +30,7 @@ Output:
     "stage": "api"
 }
 ```
+For more information, see [Use API mappings to connect API stages to a custom domain name for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mappings.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [GetBasePathMapping](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/get-base-path-mapping.html) in *AWS CLI Command Reference*.
 
 ------

@@ -32,20 +32,20 @@ The following `create-link` example creates a link between a source account and 
 aws oam create-link \
     --label-template {{sourceAccount}} \
     --resource-types {{AWS::CloudWatch::Metric}} \
-    --sink-identifier {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --sink-identifier {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111",
-    "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+    "Arn": "arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Label": "sourceAccount",
     "LabelTemplate": "sourceAccount",
     "ResourceTypes": [
         "AWS::CloudWatch::Metric"
     ],
-    "SinkArn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
+    "SinkArn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Tags": {}
 }
 ```
@@ -69,8 +69,8 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
-    "Id": "a1b2c3d4-5678-90ab-cdef-example12345",
+    "Arn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Name": "DemoSink",
     "Tags": {}
 }
@@ -89,7 +89,7 @@ The following `delete-link` example deletes a link between a monitoring account 
 
 ```
 aws oam delete-link \
-    --identifier {{arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111}}
+    --identifier {{arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html) in the *Amazon CloudWatch User Guide*.
@@ -106,7 +106,7 @@ The following `delete-sink` example deletes a sink. You must delete all links to
 
 ```
 aws oam delete-sink \
-    --identifier {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --identifier {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html) in the *Amazon CloudWatch User Guide*.
@@ -123,20 +123,20 @@ The following `get-link` example returns complete information about a link.
 
 ```
 aws oam get-link \
-    --identifier {{arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111}}
+    --identifier {{arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111",
-    "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+    "Arn": "arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Label": "sourceAccount",
     "LabelTemplate": "sourceAccount",
     "ResourceTypes": [
         "AWS::CloudWatch::Metric"
     ],
-    "SinkArn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
+    "SinkArn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Tags": {}
 }
 ```
@@ -154,14 +154,14 @@ The following `get-sink-policy` example returns the current sink policy attached
 
 ```
 aws oam get-sink-policy \
-    --sink-identifier {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --sink-identifier {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "SinkArn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
-    "SinkId": "a1b2c3d4-5678-90ab-cdef-example12345",
+    "SinkArn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "SinkId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789111:root\"},\"Action\":[\"oam:CreateLink\",\"oam:UpdateLink\"],\"Resource\":\"*\",\"Condition\":{\"ForAllValues:StringEquals\":{\"oam:ResourceTypes\":[\"AWS::Logs::LogGroup\",\"AWS::CloudWatch::Metric\",\"AWS::XRay::Trace\",\"AWS::ApplicationInsights::Application\"]}}}]}"
 }
 ```
@@ -179,14 +179,14 @@ The following `get-sink` example returns complete information about a monitoring
 
 ```
 aws oam get-sink \
-    --identifier {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --identifier {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
-    "Id": "a1b2c3d4-5678-90ab-cdef-example12345",
+    "Arn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Name": "DemoSink",
     "Tags": {}
 }
@@ -205,7 +205,7 @@ The following `list-attached-links` example returns a list of source account lin
 
 ```
 aws oam list-attached-links \
-    --sink-identifier {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --sink-identifier {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -213,7 +213,7 @@ Output:
 {
     "Items": [{
         "Label": "Monitoring account",
-        "LinkArn": "arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111",
+        "LinkArn": "arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "ResourceTypes": [
             "AWS::ApplicationInsights::Application",
             "AWS::Logs::LogGroup",
@@ -243,13 +243,13 @@ Output:
 ```
 {
     "Items": [{
-        "Arn": "arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111",
-        "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+        "Arn": "arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Label": "sourceAccount",
         "ResourceTypes": [
             "AWS::CloudWatch::Metric"
         ],
-        "SinkArn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345"
+        "SinkArn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }]
 }
 ```
@@ -274,8 +274,8 @@ Output:
 {
     "Items": [
         {
-            "Arn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
-            "Id": "a1b2c3d4-5678-90ab-cdef-example12345",
+            "Arn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "DemoSink"
         }
     ]
@@ -295,7 +295,7 @@ The following `list-tags-for-resource` example displays the tags associated with
 
 ```
 aws oam list-tags-for-resource \
-    --resource-arn {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --resource-arn {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -321,14 +321,14 @@ The following `put-sink-policy` example creates the resource policy that grants 
 ```
 aws oam put-sink-policy \
     --policy '{{{"Version":"2012-10-17",		 	 	 "Statement":[{"Effect":"Allow","Principal":{"AWS":"arn:aws:iam::123456789111:root"},"Action":["oam:CreateLink","oam:UpdateLink"],"Resource":"*","Condition":{"ForAllValues:StringEquals":{"oam:ResourceTypes":["AWS::Logs::LogGroup","AWS::CloudWatch::Metric","AWS::XRay::Trace","AWS::ApplicationInsights::Application"]}}}]}}}' \
-    --sink-identifier {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}}
+    --sink-identifier {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "SinkArn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
-    "SinkId": "a1b2c3d4-5678-90ab-cdef-example12345",
+    "SinkArn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "SinkId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789111:root\"},\"Action\":[\"oam:CreateLink\",\"oam:UpdateLink\"],\"Resource\":\"*\",\"Condition\":{\"ForAllValues:StringEquals\":{\"oam:ResourceTypes\":[\"AWS::Logs::LogGroup\",\"AWS::CloudWatch::Metric\",\"AWS::XRay::Trace\",\"AWS::ApplicationInsights::Application\"]}}}]}"
 }
 ```
@@ -342,11 +342,11 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **To assign one or more tags to the specified resource**
-The following `tag-resource` example tags a sink `arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345`.
+The following `tag-resource` example tags a sink `arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 ```
 aws oam tag-resource \
-    --resource-arn {{arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345}} \
+    --resource-arn {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tags {{team=Devops}}
 ```
 This command produces no output.
@@ -360,11 +360,11 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **To remove one or more tags from the specified resource.**
-The following `untag-resource` example removes a tag with the key `team` from sink `arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345`.
+The following `untag-resource` example removes a tag with the key `team` from sink `arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 ```
 aws oam untag-resource \
-    --resource-arn {{arn:aws:oam:us-east-2:123456789012:sink/f3f42f60-f0f2-425c-1234-12347bdd821f}} \
+    --resource-arn {{arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag-keys {{team}}
 ```
 This command produces no output.
@@ -378,26 +378,26 @@ The following code example shows how to use `update-link`.
 
 **AWS CLI**
 **To change what types of data are shared from a source account to its linked monitoring account sink**
-The following `update-link` example updates the link `arn:aws:oam:us-east-2:123456789111:link/0123e691-e7ef-43fa-1234-c57c837fced0` with resource types `AWS::CloudWatch::Metric` and `AWS::Logs::LogGroup`.
+The following `update-link` example updates the link `arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222` with resource types `AWS::CloudWatch::Metric` and `AWS::Logs::LogGroup`.
 
 ```
 aws oam update-link \
-    --identifier {{arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111}} \
+    --identifier {{arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --resource-types {{"AWS::CloudWatch::Metric"}} {{"AWS::Logs::LogGroup"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:oam:us-east-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-example11111",
-    "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+    "Arn": "arn:aws:oam:us-west-2:123456789111:link/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "Label": "sourceAccount",
     "LabelTemplate": "sourceAccount",
     "ResourceTypes": [
         "AWS::CloudWatch::Metric",
         "AWS::Logs::LogGroup"
     ],
-    "SinkArn": "arn:aws:oam:us-east-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-example12345",
+    "SinkArn": "arn:aws:oam:us-west-2:123456789012:sink/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Tags": {}
 }
 ```

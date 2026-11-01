@@ -98,6 +98,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 You can specify the following actions in the `Action` element of an IAM policy statement. For each action, the table lists the resource types and condition keys supported by that action. Use policies to grant permissions to perform an operation in AWS. When you use an action in a policy, you usually allow or deny access to the API operation or CLI command with the same name. However, in some cases, a single action controls access to more than one operation. Alternatively, some operations require several different actions.
 
+- **   [AccessAirflowResource](https://docs.aws.amazon.com/mwaa/latest/API/API_CheckAuthorization.html)  **
+  - **Description:** Grants permission to check whether a user is authorized to perform an action on an Airflow resource within an Amazon MWAA environment
+  - **Resource types (\*required):** [environment\*](#list_mwaa-resource-environment)
+  - **Condition keys:** [airflow:DagAccessEntity](#list_mwaa-airflow_DagAccessEntity)<br />[airflow:ResourceAction](#list_mwaa-airflow_ResourceAction)<br />[airflow:ResourceId](#list_mwaa-airflow_ResourceId)<br />[airflow:ResourceType](#list_mwaa-airflow_ResourceType)<br />[airflow:TeamNames](#list_mwaa-airflow_TeamNames)<br />[aws:ResourceTag/${TagKey}](#list_mwaa-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [CreateCliToken](https://docs.aws.amazon.com/mwaa/latest/API/API_CreateCliToken.html)  **
   - **Description:** Grants permission to create a short-lived token that allows a user to invoke Airflow CLI via an endpoint on the Apache Airflow Webserver
   - **Resource types (\*required):** [environment\*](#list_mwaa-resource-environment)

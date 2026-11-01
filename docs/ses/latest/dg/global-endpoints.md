@@ -86,11 +86,14 @@ The creation process may take a few seconds. Once completed, the status of your 
 Using the AWS CLI:
 
 ```
-aws sesv2 create-multi-region-endpoint --primary-region {{us-west-2}} --secondary-region {{us-east-1}} --endpoint-name {{MyGlobalEndpoint}}
+aws sesv2 create-multi-region-endpoint \
+    --region {{us-west-2}} \
+    --endpoint-name {{MyGlobalEndpoint}} \
+    --details '{"RoutesDetails":[{"Region":"{{us-east-1}}"}]}'
 ```
 
 In the preceding example:
-+ Replace {{us-west-2}} with the primary region for your Global endpoint.
++ Replace {{us-west-2}} with the primary region for your Global endpoint. The primary region is the region that you specify with `--region`, or your default AWS CLI region if you omit it. You manage the Global endpoint from this region.
 + Replace {{us-east-1}} with the secondary region for your Global endpoint.
 + Replace {{MyGlobalEndpoint}} with the friendly name to give your Global endpoint.
 
@@ -229,10 +232,10 @@ Once you've obtained the Endpoint ID of your Global endpoint, you can update you
 
 ```
 aws sesv2 send-email \
-                --from-email-address "sender@example.com" \
-                --destination "ToAddresses=recipient@example.com" \
-                --content "Subject={Data=Test email,Charset=UTF-8},Body={Text={Data=This is a test email sent using Amazon SES Global endpoints.,Charset=UTF-8}}" \
-                --endpoint-id "{{abcdef12.g3h}}"
+    --from-email-address "sender@example.com" \
+    --destination "ToAddresses=recipient@example.com" \
+    --content "Simple={Subject={Data=Test email,Charset=UTF-8},Body={Text={Data=This is a test email sent using Amazon SES Global endpoints.,Charset=UTF-8}}}" \
+    --endpoint-id "{{abcdef12.g3h}}"
 ```
 
 Replace {{abcdef12.g3h}} with the actual Endpoint ID you obtained either through the console or API.
@@ -252,12 +255,13 @@ Using the AWS CLI:
 
 ```
 aws cloudwatch get-metric-statistics \
-                --namespace AWS/SES \
-                --metric-name SendCount \
-                --dimensions Name=ses:multi-region-endpoint-id,Value={{abcdef12.g3h}} \
-                --start-time 2024-10-01T00:00:00Z \ --end-time 2024-10-31T23:59:59Z \
-                --period 86400 \
-                --statistics Sum
+    --namespace AWS/SES \
+    --metric-name SendCount \
+    --dimensions Name=ses:multi-region-endpoint-id,Value={{abcdef12.g3h}} \
+    --start-time 2024-10-01T00:00:00Z \
+    --end-time 2024-10-31T23:59:59Z \
+    --period 86400 \
+    --statistics Sum
 ```
 
 Replace {{abcdef12.g3h}} with your actual Endpoint ID.

@@ -14,11 +14,12 @@ The following code examples show how to use `EnableAvailabilityZonesForLoadBalan
 
 **AWS CLI**
 **To enable Availability Zones for a load balancer**
-This example adds the specified Availability Zone to the specified load balancer.
-Command:
+The following `enable-availability-zones-for-load-balancer` example adds the specified Availability Zone to the specified load balancer.
 
 ```
-aws elb enable-availability-zones-for-load-balancer --load-balancer-name {{my-load-balancer}} --availability-zones {{us-west-2b}}
+aws elb enable-availability-zones-for-load-balancer \
+    --load-balancer-name {{my-load-balancer}} \
+    --availability-zones {{us-west-2b}}
 ```
 Output:
 
@@ -30,6 +31,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure subnets for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-manage-subnets.html) in the *Classic Load Balancers Guide*.
 +  For API details, see [EnableAvailabilityZonesForLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/enable-availability-zones-for-load-balancer.html) in *AWS CLI Command Reference*.
 
 ------

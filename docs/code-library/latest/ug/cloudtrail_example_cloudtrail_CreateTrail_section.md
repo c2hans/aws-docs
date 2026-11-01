@@ -71,6 +71,7 @@ Output:
     "S3BucketName": "amzn-s3-demo-bucket"
 }
 ```
+For more information, see [Using the create-trail command to create a trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-and-update-a-trail-by-using-the-aws-cli-create-trail.html) in the *AWS CloudTrail User Guide*.
 +  For API details, see [CreateTrail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/create-trail.html) in *AWS CLI Command Reference*.
 
 ------

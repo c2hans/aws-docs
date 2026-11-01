@@ -53,8 +53,8 @@ The following `batch-associate-client-device-with-core-device` example associate
 
 ```
 aws greengrassv2 batch-associate-client-device-with-core-device \
-  --core-device-thing-name {{MyGreengrassCore}} \
-  --entries {{thingName=MyClientDevice1}} {{thingName=MyClientDevice2}}
+    --core-device-thing-name {{MyGreengrassCore}} \
+    --entries {{thingName=MyClientDevice1}} {{thingName=MyClientDevice2}}
 ```
 Output:
 
@@ -77,8 +77,8 @@ The following `batch-disassociate-client-device-from-core-device` example disass
 
 ```
 aws greengrassv2 batch-disassociate-client-device-from-core-device \
-  --core-device-thing-name {{MyGreengrassCore}} \
-  --entries {{thingName=MyClientDevice1}} {{thingName=MyClientDevice2}}
+    --core-device-thing-name {{MyGreengrassCore}} \
+    --entries {{thingName=MyClientDevice1}} {{thingName=MyClientDevice2}}
 ```
 Output:
 
@@ -260,6 +260,7 @@ For more information, see [Create deployments](https://docs.aws.amazon.com/green
 **Example 2: To create a deployment that updates component configurations**
 The following `create-deployment` example deploys the AWS IoT Greengrass nucleus component to a group of core devices. This deployment applies the following configuration updates for the nucleus component:
 Reset the target devices' proxy settings to their default no proxy settings.Reset the target devices' MQTT settings to their defaults.Sets the JVM options for the nucleus' JVM.Sets the logging level for the nucleus.
+The following command deploys the component to the group of core devices.
 
 ```
 aws greengrassv2 create-deployment \
@@ -339,7 +340,7 @@ aws greengrassv2 delete-core-device \
     --core-device-thing-name {{MyGreengrassCore}}
 ```
 This command produces no output.
-For more information, see [Uninstall the AWS IoT Greengrass Core software](https://docs.aws.amazon.com/greengrass/v2/developerguide/configure-greengrass-core-v2.html#uninstall-greengrass-core-v2) in the *AWS IoT Greengrass V2 Developer Guide*.
+For more information, see [Uninstall the AWS IoT Greengrass Core software](https://docs.aws.amazon.com/greengrass/v2/developerguide/uninstall-greengrass-core-v2.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 +  For API details, see [DeleteCoreDevice](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrassv2/delete-core-device.html) in *AWS CLI Command Reference*.
 
 ### `describe-component`
@@ -437,6 +438,7 @@ The following code example shows how to use `get-component`.
 **Example 1: To download a component's recipe in YAML format (Linux, macOS, or Unix)**
 The following `get-component` example downloads a Hello World component's recipe to a file in YAML format. This command does the following:
 Uses the `--output` and `--query` parameters to control the command's output. These parameters extract the recipe blob from the command's output. For more information about controlling output, see [Controlling Command Output](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html) in the *AWS Command Line Interface User Guide*.Uses the `base64` utility. This utility decodes the extracted blob to the original text. The blob that is returned by a successful `get-component` command is base64-encoded text. You must decode this blob to obtain the original text.Saves the decoded text to a file. The final section of the command (`> com.example.HelloWorld-1.0.0.json`) saves the decoded text to a file.
+The following command downloads the recipe.
 
 ```
 aws greengrassv2 get-component \
@@ -445,18 +447,23 @@ aws greengrassv2 get-component \
     --query {{recipe}} \
     --output {{text}} {{|}} {{base64}} --decode {{>}} {{com.example.HelloWorld-1.0.0.json}}
 ```
+This command produces no output.
 For more information, see [Manage components](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-components.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 **Example 2: To download a component's recipe in YAML format (Windows CMD)**
 The following `get-component` example downloads a Hello World component's recipe to a file in YAML format. This command uses the `certutil` utility.
 
 ```
 aws greengrassv2 get-component {{^}}
-    --arn {{arn:aws:greengrass:us-west-2:675946970638:components:com.example.HelloWorld:versions:1.0.0}} {{^}}
+    --arn {{arn:aws:greengrass:us-west-2:123456789012:components:com.example.HelloWorld:versions:1.0.0}} {{^}}
     --recipe-output-format {{YAML}} {{^}}
     --query {{recipe}} {{^}}
     --output {{text}} {{>}} {{com.example.HelloWorld-1.0.0.yaml.b64}}
+```
+This command produces no output.
+Then, use the `certutil` utility to decode the file.
 
-{{certutil}} {{-decode}} {{com.example.HelloWorld-1.0.0.yaml.b64}} {{com.example.HelloWorld-1.0.0.yaml}}
+```
+certutil -decode com.example.HelloWorld-1.0.0.yaml.b64 com.example.HelloWorld-1.0.0.yaml
 ```
 For more information, see [Manage components](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-components.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 **Example 3: To download a component's recipe in YAML format (Windows PowerShell)**
@@ -464,12 +471,16 @@ The following `get-component` example downloads a Hello World component's recipe
 
 ```
 aws greengrassv2 get-component {{`}}
-    --arn {{arn:aws:greengrass:us-west-2:675946970638:components:com.example.HelloWorld:versions:1.0.0}} {{`}}
+    --arn {{arn:aws:greengrass:us-west-2:123456789012:components:com.example.HelloWorld:versions:1.0.0}} {{`}}
     --recipe-output-format {{YAML}} {{`}}
     --query {{recipe}} {{`}}
     --output {{text}} {{>}} {{com.example.HelloWorld-1.0.0.yaml.b64}}
+```
+This command produces no output.
+Then, use the `certutil` utility to decode the file.
 
-{{certutil}} {{-decode}} {{com.example.HelloWorld-1.0.0.yaml.b64}} {{com.example.HelloWorld-1.0.0.yaml}}
+```
+certutil -decode com.example.HelloWorld-1.0.0.yaml.b64 com.example.HelloWorld-1.0.0.yaml
 ```
 For more information, see [Manage components](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-components.html) in the *AWS IoT Greengrass V2 Developer Guide*.
 +  For API details, see [GetComponent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/greengrassv2/get-component.html) in *AWS CLI Command Reference*.
@@ -621,7 +632,7 @@ The following `list-client-devices-associated-with-core-device` example lists al
 
 ```
 aws greengrassv2 list-client-devices-associated-with-core-device \
-  --core-device-thing-name {{MyTestGreengrassCore}}
+    --core-device-thing-name {{MyTestGreengrassCore}}
 ```
 Output:
 

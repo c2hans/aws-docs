@@ -55,7 +55,7 @@ aws ssm add-tags-to-resource \
     --tags {{"Key=Quarter,Value=Q322"}}
 ```
 This command produces no output.
-For more information, see [Tagging Systems Manager resources](https://docs.aws.amazon.com/systems-manager/latest/userguide/tagging-resources.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Managing tags with Tag Editor](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging-resources.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [AddTagsToResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/add-tags-to-resource.html) in *AWS CLI Command Reference*.
 
 ### `associate-ops-item-related-item`
@@ -72,16 +72,16 @@ aws ssm associate-ops-item-related-item \
     --ops-item-id {{"oi-649fExample"}} \
     --association-type {{"RelatesTo"}} \
     --resource-type {{"AWS::SSMIncidents::IncidentRecord"}} \
-    --resource-uri {{"arn:aws:ssm-incidents::111122223333:incident-record/Example-Response-Plan/c2bde883-f7d5-343a-b13a-bf5fe9ea689f"}}
+    --resource-uri {{"arn:aws:ssm-incidents::123456789012:incident-record/Example-Response-Plan/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "AssociationId": "61d7178d-a30d-4bc5-9b4e-a9e74EXAMPLE"
+    "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
-For more information, see [Working with Incident Manager incidents in OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-create-OpsItems-for-Incident-Manager.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Creating an incident for an OpsItem](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-working-with-OpsItems-create-an-incident.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [AssociateOpsItemRelatedItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/associate-ops-item-related-item.html) in *AWS CLI Command Reference*.
 
 ### `cancel-command`
@@ -95,7 +95,7 @@ The following `cancel-command` example attempts to cancel the specified command 
 
 ```
 aws ssm cancel-command \
-    --command-id {{"662add3d-5831-4a10-b64a-f2ff3EXAMPLE"}}
+    --command-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 **Example 2: To cancel a command for specific instances**
@@ -103,11 +103,11 @@ The following `cancel-command` example attempts to cancel a command for the spec
 
 ```
 aws ssm cancel-command \
-    --command-id {{"662add3d-5831-4a10-b64a-f2ff3EXAMPLE"}}
+    --command-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --instance-ids {{"i-02573cafcfEXAMPLE"}}
 ```
 This command produces no output.
-For more information, see [Tagging Systems Manager Parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-su-tag.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Canceling a command](https://docs.aws.amazon.com/systems-manager/latest/userguide/cancel-run-command.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CancelCommand](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/cancel-command.html) in *AWS CLI Command Reference*.
 
 ### `cancel-maintenance-window-execution`
@@ -117,7 +117,7 @@ The following code example shows how to use `cancel-maintenance-window-execution
 
 **AWS CLI**
 **To cancel a maintenance window execution**
-This `cancel-maintenance-window-execution` example stops the specified maintenance window execution that is already in progress.
+The following `cancel-maintenance-window-execution` example stops the specified maintenance window execution that is already in progress.
 
 ```
 aws ssm cancel-maintenance-window-execution \
@@ -152,7 +152,7 @@ Output:
 
 ```
 {
-    "ActivationId": "5743558d-563b-4457-8682-d16c3EXAMPLE",
+    "ActivationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "ActivationCode": "dRmgnYaFv567vEXAMPLE"
 }
 ```
@@ -166,73 +166,74 @@ The following code example shows how to use `create-association-batch`.
 
 **AWS CLI**
 **To create multiple associations**
-This example associates a configuration document with multiple instances. The output returns a list of successful and failed operations, if applicable.
-Command:
+The following `create-association-batch` example associates a configuration document with multiple instances. The output returns a list of successful and failed operations, if applicable.
 
 ```
-aws ssm create-association-batch --entries {{"Name=AWS-UpdateSSMAgent,InstanceId=i-1234567890abcdef0"}} {{"Name=AWS-UpdateSSMAgent,InstanceId=i-9876543210abcdef0"}}
+aws ssm create-association-batch \
+    --entries {{"Name=AWS-UpdateSSMAgent,InstanceId=i-1234567890abcdef0"}} {{"Name=AWS-UpdateSSMAgent,InstanceId=i-9876543210abcdef0"}}
 ```
 Output:
 
 ```
 {
-  "Successful": [
-      {
-          "Name": "AWS-UpdateSSMAgent",
-          "InstanceId": "i-1234567890abcdef0",
-          "AssociationVersion": "1",
-          "Date": 1550504725.007,
-          "LastUpdateAssociationDate": 1550504725.007,
-          "Status": {
-              "Date": 1550504725.007,
-              "Name": "Associated",
-              "Message": "Associated with AWS-UpdateSSMAgent"
-          },
-          "Overview": {
-              "Status": "Pending",
-              "DetailedStatus": "Creating"
-          },
-          "DocumentVersion": "$DEFAULT",
-          "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
-          "Targets": [
-              {
-                  "Key": "InstanceIds",
-                  "Values": [
-                      "i-1234567890abcdef0"
-                  ]
-              }
-          ]
-      },
-      {
-          "Name": "AWS-UpdateSSMAgent",
-          "InstanceId": "i-9876543210abcdef0",
-          "AssociationVersion": "1",
-          "Date": 1550504725.057,
-          "LastUpdateAssociationDate": 1550504725.057,
-          "Status": {
-              "Date": 1550504725.057,
-              "Name": "Associated",
-              "Message": "Associated with AWS-UpdateSSMAgent"
-          },
-          "Overview": {
-              "Status": "Pending",
-              "DetailedStatus": "Creating"
-          },
-          "DocumentVersion": "$DEFAULT",
-          "AssociationId": "9c9f7f20-5154-4fed-a83e-0123456789ab",
-          "Targets": [
-              {
-                  "Key": "InstanceIds",
-                  "Values": [
-                      "i-9876543210abcdef0"
-                  ]
-              }
-          ]
-      }
-  ],
-  "Failed": []
+    "Successful": [
+        {
+            "Name": "AWS-UpdateSSMAgent",
+            "InstanceId": "i-1234567890abcdef0",
+            "AssociationVersion": "1",
+            "Date": 1550504725.007,
+            "LastUpdateAssociationDate": 1550504725.007,
+            "Status": {
+                "Date": 1550504725.007,
+                "Name": "Associated",
+                "Message": "Associated with AWS-UpdateSSMAgent"
+            },
+            "Overview": {
+                "Status": "Pending",
+                "DetailedStatus": "Creating"
+            },
+            "DocumentVersion": "$DEFAULT",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Targets": [
+                {
+                    "Key": "InstanceIds",
+                    "Values": [
+                        "i-1234567890abcdef0"
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "AWS-UpdateSSMAgent",
+            "InstanceId": "i-9876543210abcdef0",
+            "AssociationVersion": "1",
+            "Date": 1550504725.057,
+            "LastUpdateAssociationDate": 1550504725.057,
+            "Status": {
+                "Date": 1550504725.057,
+                "Name": "Associated",
+                "Message": "Associated with AWS-UpdateSSMAgent"
+            },
+            "Overview": {
+                "Status": "Pending",
+                "DetailedStatus": "Creating"
+            },
+            "DocumentVersion": "$DEFAULT",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Targets": [
+                {
+                    "Key": "InstanceIds",
+                    "Values": [
+                        "i-9876543210abcdef0"
+                    ]
+                }
+            ]
+        }
+    ],
+    "Failed": []
 }
 ```
+For more information, see [Creating associations](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations-creating.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CreateAssociationBatch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/create-association-batch.html) in *AWS CLI Command Reference*.
 
 ### `create-association`
@@ -242,7 +243,7 @@ The following code example shows how to use `create-association`.
 
 **AWS CLI**
 **Example 1: To associate a document using instance IDs**
-This example associates a configuration document with an instance, using instance IDs.
+The following `create-association` example associates a configuration document with an instance, using instance IDs.
 
 ```
 aws ssm create-association \
@@ -265,7 +266,7 @@ Output:
             "Status": "Pending",
             "DetailedStatus": "Creating"
         },
-        "AssociationId": "b7c3266e-a544-44db-877e-b20d3a108189",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DocumentVersion": "$DEFAULT",
         "LastUpdateAssociationDate": 1487875500.33,
         "Date": 1487875500.33,
@@ -280,9 +281,9 @@ Output:
     }
 }
 ```
-For more information, see [CreateAssociation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociation.html) in the *AWS Systems Manager API Reference*.
+For more information, see [Creating associations](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations-creating.html) in the *AWS Systems Manager User Guide*.
 **Example 2: To associate a document using targets**
-This example associates a configuration document with an instance, using targets.
+The following `create-association` example associates a configuration document with an instance, using targets.
 
 ```
 aws ssm create-association \
@@ -305,7 +306,7 @@ Output:
             "Status": "Pending",
             "DetailedStatus": "Creating"
         },
-        "AssociationId": "b7c3266e-a544-44db-877e-b20d3a108189",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DocumentVersion": "$DEFAULT",
         "LastUpdateAssociationDate": 1487875500.33,
         "Date": 1487875500.33,
@@ -320,9 +321,9 @@ Output:
     }
 }
 ```
-For more information, see [CreateAssociation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociation.html) in the *AWS Systems Manager API Reference*.
+For more information, see [Creating associations](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations-creating.html) in the *AWS Systems Manager User Guide*.
 **Example 3: To create an association that runs only once**
-This example creates a new association that only runs once on the specified date and time. Associations created with a date in the past or present (by the time it is processed the date is in the past) run immediately.
+The following `create-association` example creates a new association that only runs once on the specified date and time. Associations created with a date in the past or present (by the time it is processed the date is in the past) run immediately.
 
 ```
 aws ssm create-association \
@@ -347,7 +348,7 @@ Output:
             "Status": "Pending",
             "DetailedStatus": "Creating"
         },
-        "AssociationId": "b7c3266e-a544-44db-877e-b20d3a108189",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DocumentVersion": "$DEFAULT",
         "LastUpdateAssociationDate": 1487875500.33,
         "Date": 1487875500.33,
@@ -362,7 +363,7 @@ Output:
     }
 }
 ```
-For more information, see [CreateAssociation](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateAssociation.html) in the *AWS Systems Manager API Reference* or [Reference: Cron and rate expressions for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/reference-cron-and-rate-expressions.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Creating associations](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations-creating.html) and [Reference: Cron and rate expressions for Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/reference-cron-and-rate-expressions.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CreateAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/create-association.html) in *AWS CLI Command Reference*.
 
 ### `create-document`
@@ -380,6 +381,30 @@ aws ssm create-document \
     --name {{"Example"}} \
     --document-type {{"Automation"}} \
     --document-format {{YAML}}
+```
+Contents of `exampleDocument.yml`:
+
+```
+description: Document Example
+schemaVersion: '0.3'
+assumeRole: '{{ AutomationAssumeRole }}'
+parameters:
+    AutomationAssumeRole:
+        type: String
+        description: (Required) The ARN of the role that allows Automation to perform the actions on your behalf. If no role is specified, Systems Manager Automation uses your IAM permissions to execute this document.
+        default: ''
+    InstanceId:
+        type: String
+        description: (Required) The ID of the Amazon EC2 instance.
+        default: ''
+mainSteps:
+    - name: rebootInstance
+      action: 'aws:executeAwsApi'
+      inputs:
+          Service: ec2
+          Api: RebootInstances
+          InstanceIds:
+              - '{{ InstanceId }}'
 ```
 Output:
 
@@ -437,7 +462,8 @@ The following `create-maintenance-window` example creates a new maintenance wind
 aws ssm create-maintenance-window \
     --name {{"My-Tutorial-Maintenance-Window"}} \
     --schedule {{"rate(5 minutes)"}} \
-    --duration {{2}} --cutoff {{1}} \
+    --duration {{2}} \
+    --cutoff {{1}} \
     --allow-unassociated-targets \
     --tags {{"Key=Purpose,Value=Tutorial"}}
 ```
@@ -448,6 +474,7 @@ Output:
     "WindowId": "mw-0c50858d01EXAMPLE"
 }
 ```
+For more information, see [Tutorial: Create and configure a maintenance window using the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-windows-cli-tutorials-create.html) in the *AWS Systems Manager User Guide*.
 **Example 2: To create a maintenance window that runs only once**
 The following `create-maintenance-window` example creates a new maintenance window that only runs one time on the specified date and time.
 
@@ -467,7 +494,7 @@ Output:
     "WindowId": "mw-01234567890abcdef"
 }
 ```
-For more information, see [Maintenance Windows](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-maintenance.html) in the *AWS Systems Manager User Guide*.
+For more information, see [AWS Systems Manager Maintenance Windows](https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-windows.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CreateMaintenanceWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/create-maintenance-window.html) in *AWS CLI Command Reference*.
 
 ### `create-ops-item`
@@ -495,7 +522,7 @@ Output:
     "OpsItemId": "oi-1a2b3c4d5e6f"
 }
 ```
-For more information, see [Creating OpsItems](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-creating-OpsItems.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Creating OpsItems manually (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-creating-OpsItems-CLI.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CreateOpsItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/create-ops-item.html) in *AWS CLI Command Reference*.
 
 ### `create-patch-baseline`
@@ -601,6 +628,13 @@ Contents of `my-amazon-linux-approval-rules-and-repo.json`:
     ]
 }
 ```
+Output:
+
+```
+{
+    "BaselineId": "pb-045f10b4f3EXAMPLE"
+}
+```
 **Example 4: To create a patch baseline that specifies approved and rejected patches**
 The following `create-patch-baseline` example explicitly specifies patches to approve and reject as exception to the default approval rules.
 
@@ -614,6 +648,13 @@ aws ssm create-patch-baseline \
     --approved-patches-enable-non-security \
     --tags {{"Key=Environment,Value=Alpha"}}
 ```
+Output:
+
+```
+{
+    "BaselineId": "pb-045f10b4f3EXAMPLE"
+}
+```
 For more information, see [Create a Custom Patch Baseline](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-baseline-console.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CreatePatchBaseline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/create-patch-baseline.html) in *AWS CLI Command Reference*.
 
@@ -624,12 +665,15 @@ The following code example shows how to use `create-resource-data-sync`.
 
 **AWS CLI**
 **To create a resource data sync**
-This example creates a resource data sync. There is no output if the command succeeds.
-Command:
+The following `create-resource-data-sync` example creates a resource data sync.
 
 ```
-aws ssm create-resource-data-sync --sync-name {{"ssm-resource-data-sync"}} --s3-destination {{"BucketName=ssm-bucket,Prefix=inventory,SyncFormat=JsonSerDe,Region=us-east-1"}}
+aws ssm create-resource-data-sync \
+    --sync-name {{"ssm-resource-data-sync"}} \
+    --s3-destination {{"BucketName=ssm-bucket,Prefix=inventory,SyncFormat=JsonSerDe,Region=us-west-2"}}
 ```
+This command produces no output.
+For more information, see [Creating a resource data sync for Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-create-resource-data-sync.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [CreateResourceDataSync](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/create-resource-data-sync.html) in *AWS CLI Command Reference*.
 
 ### `delete-activation`
@@ -643,7 +687,7 @@ The following `delete-activation` example deletes a managed instance activation.
 
 ```
 aws ssm delete-activation \
-    --activation-id {{"aa673477-d926-42c1-8757-1358cEXAMPLE"}}
+    --activation-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Setting Up AWS Systems Manager for Hybrid Environments](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-managedinstances.html) in the *AWS Systems Manager User Guide*.
@@ -660,7 +704,7 @@ The following `delete-association` example deletes the association for the speci
 
 ```
 aws ssm delete-association \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Editing and creating a new version of an association](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-state-assoc-edit.html) in the *AWS Systems Manager User Guide*.
@@ -673,7 +717,7 @@ aws ssm delete-association \
     --name {{"AWS-UpdateSSMAgent"}}
 ```
 This command produces no output.
-For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-associations.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DeleteAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/delete-association.html) in *AWS CLI Command Reference*.
 
 ### `delete-document`
@@ -699,52 +743,56 @@ For more information, see [Creating Systems Manager Documents](https://docs.aws.
 The following code example shows how to use `delete-inventory`.
 
 **AWS CLI**
-**To delete a custom inventory type**
-This example deletes a custom inventory schema.
-Command:
+**Example 1: To delete a custom inventory type**
+The following `delete-inventory` example deletes a custom inventory schema.
 
 ```
-aws ssm delete-inventory --type-name {{"Custom:RackInfo"}} --schema-delete-option {{"DeleteSchema"}}
+aws ssm delete-inventory \
+    --type-name {{"Custom:RackInfo"}} \
+    --schema-delete-option {{"DeleteSchema"}}
 ```
 Output:
 
 ```
 {
-  "DeletionId": "d72ac9e8-1f60-4d40-b1c6-bf8c78c68c4d",
-  "TypeName": "Custom:RackInfo",
-  "DeletionSummary": {
-      "TotalCount": 1,
-      "RemainingCount": 1,
-      "SummaryItems": [
-          {
-              "Version": "1.0",
-              "Count": 1,
-              "RemainingCount": 1
-          }
-      ]
-  }
+    "DeletionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "TypeName": "Custom:RackInfo",
+    "DeletionSummary": {
+        "TotalCount": 1,
+        "RemainingCount": 1,
+        "SummaryItems": [
+            {
+                "Version": "1.0",
+                "Count": 1,
+                "RemainingCount": 1
+            }
+        ]
+    }
 }
 ```
-**To disable a custom inventory type**
-This example disables a custom inventory schema.
-Command:
+For more information, see [Working with custom inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-custom.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To disable a custom inventory type**
+The following `delete-inventory` example disables a custom inventory schema.
 
 ```
-aws ssm delete-inventory --type-name {{"Custom:RackInfo"}} --schema-delete-option {{"DisableSchema"}}
+aws ssm delete-inventory \
+    --type-name {{"Custom:RackInfo"}} \
+    --schema-delete-option {{"DisableSchema"}}
 ```
 Output:
 
 ```
 {
-  "DeletionId": "6961492a-8163-44ec-aa1e-923364dd0850",
-  "TypeName": "Custom:RackInformation",
-  "DeletionSummary": {
-      "TotalCount": 0,
-      "RemainingCount": 0,
-      "SummaryItems": []
-  }
+    "DeletionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+    "TypeName": "Custom:RackInformation",
+    "DeletionSummary": {
+        "TotalCount": 0,
+        "RemainingCount": 0,
+        "SummaryItems": []
+    }
 }
 ```
+For more information, see [Working with custom inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-custom.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DeleteInventory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/delete-inventory.html) in *AWS CLI Command Reference*.
 
 ### `delete-maintenance-window`
@@ -754,7 +802,7 @@ The following code example shows how to use `delete-maintenance-window`.
 
 **AWS CLI**
 **To delete a maintenance window**
-This `delete-maintenance-window` example removes the specified maintenance window.
+The following `delete-maintenance-window` example removes the specified maintenance window.
 
 ```
 aws ssm delete-maintenance-window \
@@ -846,12 +894,14 @@ The following code example shows how to use `delete-resource-data-sync`.
 
 **AWS CLI**
 **To delete a resource data sync**
-This example deletes a resource data sync. There is no output if the command succeeds.
-Command:
+The following `delete-resource-data-sync` example deletes a resource data sync.
 
 ```
-aws ssm delete-resource-data-sync --sync-name {{"ssm-resource-data-sync"}}
+aws ssm delete-resource-data-sync \
+    --sync-name {{"ssm-resource-data-sync"}}
 ```
+This command produces no output.
+For more information, see [Creating a resource data sync for Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-create-resource-data-sync.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DeleteResourceDataSync](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/delete-resource-data-sync.html) in *AWS CLI Command Reference*.
 
 ### `deregister-managed-instance`
@@ -889,8 +939,8 @@ Output:
 
 ```
 {
-  "PatchGroup":"Production",
-  "BaselineId":"pb-0ca44a362fEXAMPLE"
+    "PatchGroup":"Production",
+    "BaselineId":"pb-0ca44a362fEXAMPLE"
 }
 ```
 For more information, see [Add a Patch Group to a Patch Baseline](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-group-patchbaseline.html) in the *AWS Systems Manager User Guide*.
@@ -933,13 +983,13 @@ The following `deregister-task-from-maintenance-window` example removes the spec
 ```
 aws ssm deregister-task-from-maintenance-window \
     --window-id {{"mw-ab12cd34ef56gh78"}} \
-    --window-task-id {{"1a2b3c4d-1a2b-1a2b-1a2b-1a2b3c4d5e6c"}}
+    --window-task-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "WindowTaskId":"1a2b3c4d-1a2b-1a2b-1a2b-1a2b3c4d5e6c",
+    "WindowTaskId":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "WindowId":"mw-ab12cd34ef56gh78"
 }
 ```
@@ -964,9 +1014,9 @@ Output:
 {
     "ActivationList": [
         {
-            "ActivationId": "5743558d-563b-4457-8682-d16c3EXAMPLE",
+            "ActivationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description": "Example1",
-            "IamRole": "HybridWebServersRole,
+            "IamRole": "HybridWebServersRole",
             "RegistrationLimit": 5,
             "RegistrationsCount": 5,
             "ExpirationDate": 1584316800.0,
@@ -974,7 +1024,7 @@ Output:
             "CreatedDate": 1581954699.792
         },
         {
-            "ActivationId": "3ee0322b-f62d-40eb-b672-13ebfEXAMPLE",
+            "ActivationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Description": "Example2",
             "IamRole": "HybridDatabaseServersRole",
             "RegistrationLimit": 5,
@@ -982,7 +1032,7 @@ Output:
             "ExpirationDate": 1580515200.0,
             "Expired": true,
             "CreatedDate": 1578064132.002
-        },
+        }
     ]
 }
 ```
@@ -1000,8 +1050,8 @@ The following `describe-association-execution-targets` example describes the spe
 
 ```
 aws ssm describe-association-execution-targets \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}} \
-    --execution-id {{"7abb6378-a4a5-4f10-8312-0123456789ab"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
@@ -1009,16 +1059,16 @@ Output:
 {
     "AssociationExecutionTargets": [
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
-            "ExecutionId": "7abb6378-a4a5-4f10-8312-0123456789ab",
+            "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "ResourceId": "i-1234567890abcdef0",
             "ResourceType": "ManagedInstance",
             "Status": "Success",
             "DetailedStatus": "Success",
             "LastExecutionDate": 1550505538.497,
             "OutputSource": {
-                "OutputSourceId": "97fff367-fc5a-4299-aed8-0123456789ab",
+                "OutputSourceId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
                 "OutputSourceType": "RunCommand"
             }
         }
@@ -1039,7 +1089,7 @@ The following `describe-association-executions` example describes all executions
 
 ```
 aws ssm describe-association-executions \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1047,24 +1097,23 @@ Output:
 {
     "AssociationExecutions": [
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
-            "ExecutionId": "474925ef-1249-45a2-b93d-0123456789ab",
+            "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Status": "Success",
             "DetailedStatus": "Success",
             "CreatedTime": 1550505827.119,
             "ResourceCountByStatus": "{Success=1}"
         },
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
-            "ExecutionId": "7abb6378-a4a5-4f10-8312-0123456789ab",
+            "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "Success",
             "DetailedStatus": "Success",
             "CreatedTime": 1550505536.843,
             "ResourceCountByStatus": "{Success=1}"
-        },
-        ...
+        }
     ]
 }
 ```
@@ -1074,7 +1123,7 @@ The following `describe-association-executions` example describes all executions
 
 ```
 aws ssm describe-association-executions \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}} \
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --filters {{"Key=CreatedTime,Value=2019-02-18T16:00:00Z,Type=GREATER_THAN"}}
 ```
 Output:
@@ -1083,24 +1132,23 @@ Output:
 {
     "AssociationExecutions": [
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
-            "ExecutionId": "474925ef-1249-45a2-b93d-0123456789ab",
+            "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Status": "Success",
             "DetailedStatus": "Success",
             "CreatedTime": 1550505827.119,
             "ResourceCountByStatus": "{Success=1}"
         },
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
-            "ExecutionId": "7abb6378-a4a5-4f10-8312-0123456789ab",
+            "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "Success",
             "DetailedStatus": "Success",
             "CreatedTime": 1550505536.843,
             "ResourceCountByStatus": "{Success=1}"
-        },
-        ...
+        }
     ]
 }
 ```
@@ -1118,7 +1166,7 @@ The following `describe-association` example describes the association for the s
 
 ```
 aws ssm describe-association \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1168,7 +1216,7 @@ Output:
                 "Enabled"
             ]
         },
-        "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Targets": [
             {
                 "Key": "InstanceIds",
@@ -1212,7 +1260,7 @@ Output:
                 "Pending": 1
             }
         },
-        "AssociationId": "d8617c07-2079-4c18-9847-1234567890ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "DocumentVersion": "$DEFAULT",
         "LastUpdateAssociationDate": 1487876122.564,
         "Date": 1487876122.564,
@@ -1241,7 +1289,7 @@ The following `describe-automation-executions` example displays details about an
 
 ```
 aws ssm describe-automation-executions \
-    --filters {{Key=ExecutionId,Values=73c8eef8-f4ee-4a05-820c-e354fEXAMPLE}}
+    --filters {{Key=ExecutionId,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1249,7 +1297,7 @@ Output:
 {
     "AutomationExecutionMetadataList": [
         {
-            "AutomationExecutionId": "73c8eef8-f4ee-4a05-820c-e354fEXAMPLE",
+            "AutomationExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "DocumentName": "AWS-StartEC2Instance",
             "DocumentVersion": "1",
             "AutomationExecutionStatus": "Success",
@@ -1283,7 +1331,7 @@ The following `describe-automation-step-executions` example displays details abo
 
 ```
 aws ssm describe-automation-step-executions \
-    --automation-execution-id {{73c8eef8-f4ee-4a05-820c-e354fEXAMPLE}}
+    --automation-execution-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1305,7 +1353,7 @@ Output:
                     "running"
                 ]
             },
-            "StepExecutionId": "95e70479-cf20-4d80-8018-7e4e2EXAMPLE",
+            "StepExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "OverriddenParameters": {}
         }
     ]
@@ -1316,8 +1364,34 @@ The following `describe-automation-step-executions` example displays details abo
 
 ```
 aws ssm describe-automation-step-executions \
-    --automation-execution-id {{73c8eef8-f4ee-4a05-820c-e354fEXAMPLE}} \
-    --filters {{Key=StepExecutionId,Values=95e70479-cf20-4d80-8018-7e4e2EXAMPLE}}
+    --automation-execution-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --filters {{Key=StepExecutionId,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
+```
+Output:
+
+```
+{
+    "StepExecutions": [
+        {
+            "StepName": "startInstances",
+            "Action": "aws:changeInstanceState",
+            "ExecutionStartTime": 1583737234.134,
+            "ExecutionEndTime": 1583737234.672,
+            "StepStatus": "Success",
+            "Inputs": {
+                "DesiredState": "\"running\"",
+                "InstanceIds": "[\"i-0cb99161f6EXAMPLE\"]"
+            },
+            "Outputs": {
+                "InstanceStates": [
+                    "running"
+                ]
+            },
+            "StepExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "OverriddenParameters": {}
+        }
+    ]
+}
 ```
 For more information, see [Running an Automation Workflow Step by Step (Command Line)](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing-manually.html#automation-working-executing-manually-commandline) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeAutomationStepExecutions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-automation-step-executions.html) in *AWS CLI Command Reference*.
@@ -1328,7 +1402,7 @@ For more information, see [Running an Automation Workflow Step by Step (Command 
 The following code example shows how to use `describe-available-patches`.
 
 **AWS CLI**
-**To get available patches**
+**Example 1: To get available patches**
 The following `describe-available-patches` example retrieves details about all available patches for Windows Server 2019 that have a MSRC severity of Critical.
 
 ```
@@ -1341,7 +1415,7 @@ Output:
 {
     "Patches": [
         {
-            "Id": "fe6bd8c2-3752-4c8b-ab3e-1a7ed08767ba",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ReleaseDate": 1544047205.0,
             "Title": "2018-11 Update for Windows Server 2019 for x64-based Systems (KB4470788)",
             "Description": "Install this update to resolve issues in Windows. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article for more information. After you install this item, you may have to restart your computer.",
@@ -1356,7 +1430,7 @@ Output:
             "Language": "All"
         },
         {
-            "Id": "c96115e1-5587-4115-b851-22baa46a3f11",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "ReleaseDate": 1549994410.0,
             "Title": "2019-02 Security Update for Adobe Flash Player for Windows Server 2019 for x64-based Systems (KB4487038)",
             "Description": "A security issue has been identified in a Microsoft software product that could affect your system. You can help protect your system by installing this update from Microsoft. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article. After you install this update, you may have to restart your system.",
@@ -1369,12 +1443,11 @@ Output:
             "KbNumber": "KB4487038",
             "MsrcNumber": "",
             "Language": "All"
-        },
-        ...
+        }
     ]
 }
 ```
-**To get details of a specific patch**
+**Example 2: To get details of a specific patch**
 The following `describe-available-patches` example retrieves details about the specified patch.
 
 ```
@@ -1387,7 +1460,7 @@ Output:
 {
     "Patches": [
         {
-            "Id": "680861e3-fb75-432e-818e-d72e5f2be719",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "ReleaseDate": 1546970408.0,
             "Title": "2019-01 Security Update for Adobe Flash Player for Windows Server 2016 for x64-based Systems (KB4480979)",
             "Description": "A security issue has been identified in a Microsoft software product that could affect your system. You can help protect your system by installing this update from Microsoft. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article. After you install this update, you may have to restart your system.",
@@ -1503,10 +1576,10 @@ The following code example shows how to use `describe-effective-instance-associa
 **AWS CLI**
 **To get details of the effective associations for an instance**
 The following `describe-effective-instance-associations` example retrieves details about the effective associations for an instance.
-Command:
 
 ```
-aws ssm describe-effective-instance-associations --instance-id {{"i-1234567890abcdef0"}}
+aws ssm describe-effective-instance-associations \
+    --instance-id {{"i-1234567890abcdef0"}}
 ```
 Output:
 
@@ -1514,7 +1587,7 @@ Output:
 {
     "Associations": [
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "InstanceId": "i-1234567890abcdef0",
             "Content": "{\n    \"schemaVersion\": \"1.2\",\n    \"description\": \"Update the Amazon SSM Agent to the latest version or specified version.\",\n    \"parameters\": {\n        \"version\": {\n            \"default\": \"\",\n            \"description\": \"(Optional) A specific version of the Amazon SSM Agent to install. If not specified, the agent will be updated to the latest version.\",\n            \"type\": \"String\"\n        },\n        \"allowDowngrade\": {\n            \"default\": \"false\",\n            \"description\": \"(Optional) Allow the Amazon SSM Agent service to be downgraded to an earlier version. If set to false, the service can be upgraded to newer versions only (default). If set to true, specify the earlier version.\",\n            \"type\": \"String\",\n            \"allowedValues\": [\n                \"true\",\n                \"false\"\n            ]\n        }\n    },\n    \"runtimeConfig\": {\n        \"aws:updateSsmAgent\": {\n            \"properties\": [\n                {\n                \"agentName\": \"amazon-ssm-agent\",\n                \"source\": \"https://s3.{Region}.amazonaws.com/amazon-ssm-{Region}/ssm-agent-manifest.json\",\n                \"allowDowngrade\": \"{{ allowDowngrade }}\",\n                \"targetVersion\": \"{{ version }}\"\n                }\n            ]\n        }\n    }\n}\n",
             "AssociationVersion": "1"
@@ -1522,6 +1595,7 @@ Output:
     ]
 }
 ```
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeEffectiveInstanceAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-effective-instance-associations.html) in *AWS CLI Command Reference*.
 
 ### `describe-effective-patches-for-patch-baseline`
@@ -1585,20 +1659,49 @@ Output:
                 "ComplianceLevel": "CRITICAL",
                 "ApprovalDate": 1549994400.0
             }
-        },
-        ...
+        }
     ],
     "NextToken": "--token string truncated--"
 }
 ```
 **Example 2: To get all patches defined by an AWS managed patch baseline**
-The following `describe-effective-patches-for-patch-baseline` example returns the patches defined by an AWS managed patch baseline. Note that for an AWS managed baseline, the complete baseline ARN is required for `--baseline-id`
+The following `describe-effective-patches-for-patch-baseline` example returns the patches defined by an AWS managed patch baseline. Note that for an AWS managed baseline, the complete baseline ARN is required for `--baseline-id`.
 
 ```
 aws ssm describe-effective-patches-for-patch-baseline \
     --baseline-id {{"arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-020d361a05defe4ed"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "EffectivePatches": [
+        {
+            "Patch": {
+                "Id": "fe6bd8c2-3752-4c8b-ab3e-1a7ed08767ba",
+                "ReleaseDate": 1544047205.0,
+                "Title": "2018-11 Update for Windows Server 2019 for x64-based Systems (KB4470788)",
+                "Description": "Install this update to resolve issues in Windows. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article for more information. After you install this item, you may have to restart your computer.",
+                "ContentUrl": "https://support.microsoft.com/en-us/kb/4470788",
+                "Vendor": "Microsoft",
+                "ProductFamily": "Windows",
+                "Product": "WindowsServer2019",
+                "Classification": "SecurityUpdates",
+                "MsrcSeverity": "Critical",
+                "KbNumber": "KB4470788",
+                "MsrcNumber": "",
+                "Language": "All"
+            },
+            "PatchStatus": {
+                "DeploymentStatus": "APPROVED",
+                "ComplianceLevel": "UNSPECIFIED",
+                "ApprovalDate": 1544652005.0
+            }
+        }
+    ],
+    "NextToken": "--token string truncated--"
+}
+```
 For more information, see [How Security Patches Are Selected](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-how-it-works-selection.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeEffectivePatchesForPatchBaseline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-effective-patches-for-patch-baseline.html) in *AWS CLI Command Reference*.
 
@@ -1609,42 +1712,43 @@ The following code example shows how to use `describe-instance-associations-stat
 
 **AWS CLI**
 **To describe the status of an instance's associations**
-This example shows details of the associations for an instance.
-Command:
+The following `describe-instance-associations-status` example shows details of the associations for an instance.
 
 ```
-aws ssm describe-instance-associations-status --instance-id {{"i-1234567890abcdef0"}}
+aws ssm describe-instance-associations-status \
+    --instance-id {{"i-1234567890abcdef0"}}
 ```
 Output:
 
 ```
 {
-  "InstanceAssociationStatusInfos": [
-      {
-          "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
-          "Name": "AWS-GatherSoftwareInventory",
-          "DocumentVersion": "1",
-          "AssociationVersion": "1",
-          "InstanceId": "i-1234567890abcdef0",
-          "ExecutionDate": 1550501886.0,
-          "Status": "Success",
-          "ExecutionSummary": "1 out of 1 plugin processed, 1 success, 0 failed, 0 timedout, 0 skipped. ",
-          "AssociationName": "Inventory-Association"
-      },
-      {
-          "AssociationId": "5c5a31f6-6dae-46f9-944c-0123456789ab",
-          "Name": "AWS-UpdateSSMAgent",
-          "DocumentVersion": "1",
-          "AssociationVersion": "1",
-          "InstanceId": "i-1234567890abcdef0",
-          "ExecutionDate": 1550505828.548,
-          "Status": "Success",
-          "DetailedStatus": "Success",
-          "AssociationName": "UpdateSSMAgent"
-      }
-  ]
+    "InstanceAssociationStatusInfos": [
+        {
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Name": "AWS-GatherSoftwareInventory",
+            "DocumentVersion": "1",
+            "AssociationVersion": "1",
+            "InstanceId": "i-1234567890abcdef0",
+            "ExecutionDate": 1550501886.0,
+            "Status": "Success",
+            "ExecutionSummary": "1 out of 1 plugin processed, 1 success, 0 failed, 0 timedout, 0 skipped. ",
+            "AssociationName": "Inventory-Association"
+        },
+        {
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Name": "AWS-UpdateSSMAgent",
+            "DocumentVersion": "1",
+            "AssociationVersion": "1",
+            "InstanceId": "i-1234567890abcdef0",
+            "ExecutionDate": 1550505828.548,
+            "Status": "Success",
+            "DetailedStatus": "Success",
+            "AssociationName": "UpdateSSMAgent"
+        }
+    ]
 }
 ```
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeInstanceAssociationsStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-instance-associations-status.html) in *AWS CLI Command Reference*.
 
 ### `describe-instance-information`
@@ -1659,12 +1763,94 @@ The following `describe-instance-information` example retrieves details of each 
 ```
 aws ssm describe-instance-information
 ```
+Output:
+
+```
+{
+    "InstanceInformationList": [
+        {
+            "InstanceId": "i-028ea792daEXAMPLE",
+            "PingStatus": "Online",
+            "LastPingDateTime": 1582221233.421,
+            "AgentVersion": "2.3.842.0",
+            "IsLatestVersion": true,
+            "PlatformType": "Linux",
+            "PlatformName": "SLES",
+            "PlatformVersion": "15.1",
+            "ResourceType": "EC2Instance",
+            "IPAddress": "192.0.2.0",
+            "ComputerName": "ip-198.51.100.0.us-west-2.compute.internal",
+            "AssociationStatus": "Success",
+            "LastAssociationExecutionDate": 1582220806.0,
+            "LastSuccessfulAssociationExecutionDate": 1582220806.0,
+            "AssociationOverview": {
+                "DetailedStatus": "Success",
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 2
+                }
+            }
+        },
+        {
+            "InstanceId": "i-0cb99161f6EXAMPLE",
+            "PingStatus": "Online",
+            "LastPingDateTime": 1582221158.297,
+            "AgentVersion": "2.3.842.0",
+            "IsLatestVersion": true,
+            "PlatformType": "Windows",
+            "PlatformName": "Microsoft Windows Server 2019 Datacenter",
+            "PlatformVersion": "10.0.17763",
+            "ResourceType": "EC2Instance",
+            "IPAddress": "192.0.2.1",
+            "ComputerName": "EC2AMAZ-EXAMPLE.WORKGROUP",
+            "AssociationStatus": "Success",
+            "LastAssociationExecutionDate": 1582220806.0,
+            "LastSuccessfulAssociationExecutionDate": 1582220806.0,
+            "AssociationOverview": {
+                "DetailedStatus": "Success",
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 1
+                }
+            }
+        }
+    ]
+}
+```
 **Example 2: To describe information about a specific managed instance**
 The following `describe-instance-information` example shows details of the managed instance `i-028ea792daEXAMPLE`.
 
 ```
 aws ssm describe-instance-information \
     --filters {{"Key=InstanceIds,Values=i-028ea792daEXAMPLE"}}
+```
+Output:
+
+```
+{
+    "InstanceInformationList": [
+        {
+            "InstanceId": "i-028ea792daEXAMPLE",
+            "PingStatus": "Online",
+            "LastPingDateTime": 1582221233.421,
+            "AgentVersion": "2.3.842.0",
+            "IsLatestVersion": true,
+            "PlatformType": "Linux",
+            "PlatformName": "SLES",
+            "PlatformVersion": "15.1",
+            "ResourceType": "EC2Instance",
+            "IPAddress": "192.0.2.0",
+            "ComputerName": "ip-198.51.100.0.us-west-2.compute.internal",
+            "AssociationStatus": "Success",
+            "LastAssociationExecutionDate": 1582220806.0,
+            "LastSuccessfulAssociationExecutionDate": 1582220806.0,
+            "AssociationOverview": {
+                "DetailedStatus": "Success",
+                "InstanceAssociationStatusAggregatedCount": {
+                    "Success": 2
+                }
+            }
+        }
+    ]
+}
 ```
 **Example 3: To describe information about managed instances with a specific tag key**
 The following `describe-instance-information` example shows details for managed instances that have the tag key `DEV`.
@@ -1689,7 +1875,7 @@ Output:
             "PlatformVersion": "15.1",
             "ResourceType": "EC2Instance",
             "IPAddress": "192.0.2.0",
-            "ComputerName": "ip-198.51.100.0.us-east-2.compute.internal",
+            "ComputerName": "ip-198.51.100.0.us-west-2.compute.internal",
             "AssociationStatus": "Success",
             "LastAssociationExecutionDate": 1582220806.0,
             "LastSuccessfulAssociationExecutionDate": 1582220806.0,
@@ -1728,7 +1914,7 @@ Output:
             "InstanceId": "i-02573cafcfEXAMPLE",
             "PatchGroup": "Production",
             "BaselineId": "pb-0c10e65780EXAMPLE",
-            "SnapshotId": "a3f5ff34-9bc4-4d2c-a665-4d1c1EXAMPLE",
+            "SnapshotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "OwnerInformation": "",
             "InstalledCount": 32,
             "InstalledOtherCount": 1,
@@ -1750,7 +1936,7 @@ Output:
             "InstanceId": "i-0471e04240EXAMPLE",
             "PatchGroup": "Production",
             "BaselineId": "pb-09ca3fb51fEXAMPLE",
-            "SnapshotId": "05d8ffb0-1bbe-4812-ba2d-d9b7bEXAMPLE",
+            "SnapshotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "OwnerInformation": "",
             "InstalledCount": 32,
             "InstalledOtherCount": 1,
@@ -1788,7 +1974,7 @@ Output:
             "InstanceId": "i-02573cafcfEXAMPLE",
             "PatchGroup": "Production",
             "BaselineId": "pb-0c10e65780EXAMPLE",
-            "SnapshotId": "a3f5ff34-9bc4-4d2c-a665-4d1c1EXAMPLE",
+            "SnapshotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "OwnerInformation": "",
             "InstalledCount": 46,
             "InstalledOtherCount": 4,
@@ -1825,7 +2011,7 @@ Output:
         {
             "InstanceId": "i-02573cafcfEXAMPLE",
             "BaselineId": "pb-0c10e65780EXAMPLE",
-            "SnapshotId": "a3f5ff34-9bc4-4d2c-a665-4d1c1EXAMPLE",
+            "SnapshotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "PatchGroup": "Production",
             "OwnerInformation": "",
             "InstalledCount": 32,
@@ -1836,7 +2022,7 @@ Output:
             "FailedCount": 0,
             "UnreportedNotApplicableCount": 846,
             "NotApplicableCount": 212,
-            "OperationStartTime": "2021-08-046T11:03:50.590000-07:00",
+            "OperationStartTime": "2021-08-06T11:03:50.590000-07:00",
             "OperationEndTime": "2021-08-06T11:04:21.555000-07:00",
             "Operation": "Scan",
             "RebootOption": "NoReboot",
@@ -1857,7 +2043,7 @@ The following code example shows how to use `describe-instance-patch-states`.
 
 **AWS CLI**
 **To get the patch summary states for instances**
-This `describe-instance-patch-states` example gets the patch summary states for an instance.
+The following `describe-instance-patch-states` example gets the patch summary states for an instance.
 
 ```
 aws ssm describe-instance-patch-states \
@@ -1872,7 +2058,7 @@ Output:
             "InstanceId": "i-1234567890abcdef0",
             "PatchGroup": "my-patch-group",
             "BaselineId": "pb-0713accee01234567",
-            "SnapshotId": "521c3536-930c-4aa9-950e-01234567abcd",
+            "SnapshotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CriticalNonCompliantCount": 2,
             "SecurityNonCompliantCount": 2,
             "OtherNonCompliantCount": 1,
@@ -1929,8 +2115,7 @@ Output:
             "Severity": "",
             "State": "InstalledOther",
             "InstalledTime": "2019-02-08T00:00:00+00:00"
-        },
-        ...
+        }
     ],
     "NextToken": "--token string truncated--"
 }
@@ -1955,8 +2140,7 @@ Output:
             "Severity": "Unspecified",
             "State": "Missing",
             "InstalledTime": "1970-01-01T00:00:00+00:00"
-        },
-        ...
+        }
     ],
     "NextToken": "--token string truncated--"
 }
@@ -1974,20 +2158,16 @@ aws ssm describe-instance-patches \
 Output:
 
 ```
-{
-    "Patches": [
-        {
-            "Title": "2023-03 Cumulative Update for Windows Server 2019 (1809) for x64-based Systems (KB5023702)",
-            "KBId": "KB5023702",
-            "Classification": "SecurityUpdates",
-            "Severity": "Critical",
-            "State": "Installed",
-            "InstalledTime": "2023-03-16T11:00:00+00:00"
-        },
-        ...
-    ],
-    "NextToken": "--token string truncated--"
-}
+[
+    {
+        "Title": "2023-03 Cumulative Update for Windows Server 2019 (1809) for x64-based Systems (KB5023702)",
+        "KBId": "KB5023702",
+        "Classification": "SecurityUpdates",
+        "Severity": "Critical",
+        "State": "Installed",
+        "InstalledTime": "2023-03-16T11:00:00+00:00"
+    }
+]
 ```
 +  For API details, see [DescribeInstancePatches](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-instance-patches.html) in *AWS CLI Command Reference*.
 
@@ -1997,9 +2177,8 @@ Output:
 The following code example shows how to use `describe-inventory-deletions`.
 
 **AWS CLI**
-**To get inventory deletions**
-This example retrieves details for inventory deletion operations.
-Command:
+**Example 1: To get inventory deletions**
+The following `describe-inventory-deletions` example retrieves details for inventory deletion operations.
 
 ```
 aws ssm describe-inventory-deletions
@@ -2008,76 +2187,78 @@ Output:
 
 ```
 {
-  "InventoryDeletions": [
-      {
-          "DeletionId": "6961492a-8163-44ec-aa1e-01234567850",
-          "TypeName": "Custom:RackInformation",
-          "DeletionStartTime": 1550254911.0,
-          "LastStatus": "InProgress",
-          "LastStatusMessage": "The Delete is in progress",
-          "DeletionSummary": {
-              "TotalCount": 0,
-              "RemainingCount": 0,
-              "SummaryItems": []
-          },
-          "LastStatusUpdateTime": 1550254911.0
-      },
-      {
-          "DeletionId": "d72ac9e8-1f60-4d40-b1c6-987654321c4d",
-          "TypeName": "Custom:RackInfo",
-          "DeletionStartTime": 1550254859.0,
-          "LastStatus": "InProgress",
-          "LastStatusMessage": "The Delete is in progress",
-          "DeletionSummary": {
-              "TotalCount": 1,
-              "RemainingCount": 1,
-              "SummaryItems": [
-                  {
-                      "Version": "1.0",
-                      "Count": 1,
-                      "RemainingCount": 1
-                  }
-              ]
-          },
-          "LastStatusUpdateTime": 1550254859.0
-      }
-  ]
+    "InventoryDeletions": [
+        {
+            "DeletionId": "6961492a-8163-44ec-aa1e-01234567850",
+            "TypeName": "Custom:RackInformation",
+            "DeletionStartTime": 1550254911.0,
+            "LastStatus": "InProgress",
+            "LastStatusMessage": "The Delete is in progress",
+            "DeletionSummary": {
+                "TotalCount": 0,
+                "RemainingCount": 0,
+                "SummaryItems": []
+            },
+            "LastStatusUpdateTime": 1550254911.0
+        },
+        {
+            "DeletionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "TypeName": "Custom:RackInfo",
+            "DeletionStartTime": 1550254859.0,
+            "LastStatus": "InProgress",
+            "LastStatusMessage": "The Delete is in progress",
+            "DeletionSummary": {
+                "TotalCount": 1,
+                "RemainingCount": 1,
+                "SummaryItems": [
+                    {
+                        "Version": "1.0",
+                        "Count": 1,
+                        "RemainingCount": 1
+                    }
+                ]
+            },
+            "LastStatusUpdateTime": 1550254859.0
+        }
+    ]
 }
 ```
-**To get details of a specific inventory deletion**
-This example retrieves details for a specific inventory deletion operation.
-Command:
+For more information, see [Working with custom inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-custom.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To get details of a specific inventory deletion**
+The following `describe-inventory-deletions` example retrieves details for a specific inventory deletion operation.
 
 ```
-aws ssm describe-inventory-deletions --deletion-id {{"d72ac9e8-1f60-4d40-b1c6-987654321c4d"}}
+aws ssm describe-inventory-deletions \
+    --deletion-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-  "InventoryDeletions": [
-      {
-          "DeletionId": "d72ac9e8-1f60-4d40-b1c6-987654321c4d",
-          "TypeName": "Custom:RackInfo",
-          "DeletionStartTime": 1550254859.0,
-          "LastStatus": "InProgress",
-          "LastStatusMessage": "The Delete is in progress",
-          "DeletionSummary": {
-              "TotalCount": 1,
-              "RemainingCount": 1,
-              "SummaryItems": [
-                  {
-                      "Version": "1.0",
-                      "Count": 1,
-                      "RemainingCount": 1
-                  }
-              ]
-          },
-          "LastStatusUpdateTime": 1550254859.0
-      }
-  ]
+    "InventoryDeletions": [
+        {
+            "DeletionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "TypeName": "Custom:RackInfo",
+            "DeletionStartTime": 1550254859.0,
+            "LastStatus": "InProgress",
+            "LastStatusMessage": "The Delete is in progress",
+            "DeletionSummary": {
+                "TotalCount": 1,
+                "RemainingCount": 1,
+                "SummaryItems": [
+                    {
+                        "Version": "1.0",
+                        "Count": 1,
+                        "RemainingCount": 1
+                    }
+                ]
+            },
+            "LastStatusUpdateTime": 1550254859.0
+        }
+    ]
 }
 ```
+For more information, see [Working with custom inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-custom.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeInventoryDeletions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-inventory-deletions.html) in *AWS CLI Command Reference*.
 
 ### `describe-maintenance-window-execution-task-invocations`
@@ -2091,8 +2272,8 @@ The following `describe-maintenance-window-execution-task-invocations` example l
 
 ```
 aws ssm describe-maintenance-window-execution-task-invocations \
-    --window-execution-id {{"518d5565-5969-4cca-8f0e-da3b2a638355"}} \
-    --task-id {{"ac0c6ae1-daa3-4a89-832e-d384503b6586"}}
+    --window-execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --task-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
@@ -2102,11 +2283,11 @@ Output:
         {
             "Status": "SUCCESS",
             "Parameters": "{\"documentName\":\"AWS-RunShellScript\",\"instanceIds\":[\"i-0000293ffd8c57862\"],\"parameters\":{\"commands\":[\"df\"]},\"maxConcurrency\":\"1\",\"maxErrors\":\"1\"}",
-            "InvocationId": "e274b6e1-fe56-4e32-bd2a-8073c6381d8b",
+            "InvocationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "StartTime": 1487692834.723,
             "EndTime": 1487692834.871,
-            "WindowExecutionId": "518d5565-5969-4cca-8f0e-da3b2a638355",
-            "TaskExecutionId": "ac0c6ae1-daa3-4a89-832e-d384503b6586"
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "TaskExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
@@ -2121,11 +2302,11 @@ The following code example shows how to use `describe-maintenance-window-executi
 
 **AWS CLI**
 **To list all tasks associated with a maintenance window execution**
-The following `ssm describe-maintenance-window-execution-tasks` example lists the tasks associated with the specified maintenance window execution.
+The following `describe-maintenance-window-execution-tasks` example lists the tasks associated with the specified maintenance window execution.
 
 ```
 aws ssm describe-maintenance-window-execution-tasks \
-    --window-execution-id {{"518d5565-5969-4cca-8f0e-da3b2EXAMPLE"}}
+    --window-execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -2138,8 +2319,8 @@ Output:
             "StartTime": 1487692834.684,
             "TaskType": "RUN_COMMAND",
             "EndTime": 1487692835.005,
-            "WindowExecutionId": "518d5565-5969-4cca-8f0e-da3b2EXAMPLE",
-            "TaskExecutionId": "ac0c6ae1-daa3-4a89-832e-d3845EXAMPLE"
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "TaskExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
@@ -2167,21 +2348,21 @@ Output:
     "WindowExecutions": [
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowExecutionId": "6027b513-64fe-4cf0-be7d-1191aEXAMPLE",
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "IN_PROGRESS",
             "StartTime": "2021-08-04T11:00:00.000000-07:00"
 
         },
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowExecutionId": "ff75b750-4834-4377-8f61-b3cadEXAMPLE",
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Status": "SUCCESS",
             "StartTime": "2021-08-03T11:00:00.000000-07:00",
             "EndTime": "2021-08-03T11:37:21.450000-07:00"
         },
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowExecutionId": "9fac7dd9-ff21-42a5-96ad-bbc4bEXAMPLE",
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Status": "FAILED",
             "StatusDetails": "One or more tasks in the orchestration failed.",
             "StartTime": "2021-08-02T11:00:00.000000-07:00",
@@ -2204,13 +2385,13 @@ Output:
 {
     "WindowExecutions": [
         {
-        "WindowId": "mw-ab12cd34eEXAMPLE",
-        "WindowExecutionId": "9fac7dd9-ff21-42a5-96ad-bbc4bEXAMPLE",
-        "Status": "FAILED",
-        "StatusDetails": "One or more tasks in the orchestration failed.",
-        "StartTime": "2021-08-02T11:00:00.000000-07:00",
-        "EndTime": "2021-08-02T11:22:36.190000-07:00"
-    }
+            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Status": "FAILED",
+            "StatusDetails": "One or more tasks in the orchestration failed.",
+            "StartTime": "2021-08-02T11:00:00.000000-07:00",
+            "EndTime": "2021-08-02T11:22:36.190000-07:00"
+        }
     ]
 }
 ```
@@ -2228,10 +2409,10 @@ Output:
 {
     "WindowExecutions": [
         {
-        "WindowId": "mw-ab12cd34eEXAMPLE",
-        "WindowExecutionId": "6027b513-64fe-4cf0-be7d-1191aEXAMPLE",
-        "Status": "IN_PROGRESS",
-        "StartTime": "2021-08-04T11:00:00.000000-07:00"
+            "WindowId": "mw-ab12cd34eEXAMPLE",
+            "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Status": "IN_PROGRESS",
+            "StartTime": "2021-08-04T11:00:00.000000-07:00"
         }
     ]
 }
@@ -2266,8 +2447,7 @@ Output:
             "WindowId": "mw-ab12cd34eEXAMPLE",
             "Name": "My-First-Maintenance-Window",
             "ExecutionTime": "2020-02-26T16:00Z"
-        },
-        ...
+        }
     ]
 }
 ```
@@ -2279,6 +2459,24 @@ aws ssm describe-maintenance-window-schedule \
     --window-id {{mw-0ecb1226dd7b2e9a6}} \
     --filters {{"Key=ScheduledBefore,Values=2020-02-15T06:00:00Z"}}
 ```
+Output:
+
+```
+{
+    "ScheduledWindowExecutions": [
+        {
+            "WindowId": "mw-0ecb1226dd7b2e9a6",
+            "Name": "My-Maintenance-Window",
+            "ExecutionTime": "2020-02-13T16:00Z"
+        },
+        {
+            "WindowId": "mw-0ecb1226dd7b2e9a6",
+            "Name": "My-Maintenance-Window",
+            "ExecutionTime": "2020-02-14T16:00Z"
+        }
+    ]
+}
+```
 **Example 3: To list all upcoming executions for a maintenance window after a specified date**
 The following `describe-maintenance-window-schedule` example lists all upcoming executions for the specified maintenance window that occur after the specified date.
 
@@ -2286,6 +2484,24 @@ The following `describe-maintenance-window-schedule` example lists all upcoming 
 aws ssm describe-maintenance-window-schedule \
     --window-id {{mw-0ecb1226dd7b2e9a6}} \
     --filters {{"Key=ScheduledAfter,Values=2020-02-15T06:00:00Z"}}
+```
+Output:
+
+```
+{
+    "ScheduledWindowExecutions": [
+        {
+            "WindowId": "mw-0ecb1226dd7b2e9a6",
+            "Name": "My-Maintenance-Window",
+            "ExecutionTime": "2020-02-15T16:00Z"
+        },
+        {
+            "WindowId": "mw-0ecb1226dd7b2e9a6",
+            "Name": "My-Maintenance-Window",
+            "ExecutionTime": "2020-02-16T16:00Z"
+        }
+    ]
+}
 ```
 For more information, see [View Information About Maintenance Windows (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-windows-cli-tutorials-describe.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeMaintenanceWindowSchedule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-maintenance-window-schedule.html) in *AWS CLI Command Reference*.
@@ -2320,7 +2536,7 @@ Output:
                     "Key": "InstanceIds"
                 }
             ],
-            "WindowTargetId": "350d44e6-28cc-44e2-951f-4b2c9EXAMPLE"
+            "WindowTargetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
             "ResourceType": "INSTANCE",
@@ -2335,13 +2551,13 @@ Output:
                     "Key": "InstanceIds"
                 }
             ],
-            "WindowTargetId": "e078a987-2866-47be-bedd-d9cf4EXAMPLE"
+            "WindowTargetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
 ```
 **Example 2: To list all targets for a maintenance window matching a specific owner information value**
-This `describe-maintenance-window-targets` example lists all of the targets for a maintenance window with a specific value.
+The following `describe-maintenance-window-targets` example lists all of the targets for a maintenance window with a specific value.
 
 ```
 aws ssm describe-maintenance-window-targets \
@@ -2355,7 +2571,7 @@ Output:
     "Targets": [
         {
             "WindowId": "mw-0ecb1226ddEXAMPLE",
-            "WindowTargetId": "da89dcc3-7f9c-481d-ba2b-edcb7d0057f9",
+            "WindowTargetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "ResourceType": "INSTANCE",
             "Targets": [
                 {
@@ -2394,7 +2610,7 @@ Output:
     "Tasks": [
         {
             "WindowId": "mw-06cf17cbefEXAMPLE",
-            "WindowTaskId": "018b31c3-2d77-4b9e-bd48-c91edEXAMPLE",
+            "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TaskArn": "AWS-RestartEC2Instance",
             "TaskParameters": {},
             "Type": "AUTOMATION",
@@ -2403,19 +2619,19 @@ Output:
             "MaxErrors": "1",
             "Name": "My-Automation-Example-Task",
             "Priority": 0,
-            "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "Targets": [
                 {
                     "Key": "WindowTargetIds",
                     "Values": [
-                        "da89dcc3-7f9c-481d-ba2b-edcb7EXAMPLE"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     ]
                 }
             ]
         },
         {
             "WindowId": "mw-06cf17cbefEXAMPLE",
-            "WindowTaskId": "1943dee0-0a17-4978-9bf4-3cc2fEXAMPLE",
+            "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "TaskArn": "AWS-DisableS3BucketPublicReadWrite",
             "TaskParameters": {},
             "Type": "AUTOMATION",
@@ -2424,12 +2640,12 @@ Output:
             "MaxErrors": "5",
             "Name": "My-Disable-S3-Public-Read-Write-Access-Automation-Task",
             "Priority": 0,
-            "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "Targets": [
                 {
                     "Key": "WindowTargetIds",
                     "Values": [
-                        "da89dcc3-7f9c-481d-ba2b-edcb7EXAMPLE"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     ]
                 }
             ]
@@ -2452,20 +2668,20 @@ Output:
     "Tasks": [
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowTaskId": "0d36e6b4-3a4f-411e-adcb-3558eEXAMPLE",
+            "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
             "Targets": [
                 {
                     "Key": "WindowTargetIds",
                     "Values": [
-                        "da89dcc3-7f9c-481d-ba2b-edcb7EXAMPLE"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     ]
                 }
             ],
             "TaskParameters": {},
             "Priority": 1,
-            "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "MaxConcurrency": "1",
             "MaxErrors": "1",
             "Name": "MyTask"
@@ -2488,40 +2704,40 @@ Output:
     "Tasks": [
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowTaskId": "0d36e6b4-3a4f-411e-adcb-3558eEXAMPLE",
+            "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
             "Targets": [
                 {
                     "Key": "WindowTargetIds",
                     "Values": [
-                        "da89dcc3-7f9c-481d-ba2b-edcb7EXAMPLE"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     ]
                 }
             ],
             "TaskParameters": {},
             "Priority": 3,
-            "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "MaxConcurrency": "1",
             "MaxErrors": "1",
             "Name": "MyRunCommandTask"
         },
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowTaskId": "ee45feff-ad65-4a6c-b478-5cab8EXAMPLE",
+            "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "TaskArn": "AWS-RestartEC2Instance",
             "Type": "AUTOMATION",
             "Targets": [
                 {
                     "Key": "WindowTargetIds",
                     "Values": [
-                        "da89dcc3-7f9c-481d-ba2b-edcb7EXAMPLE"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     ]
                 }
             ],
             "TaskParameters": {},
             "Priority": 3,
-            "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "MaxConcurrency": "10",
             "MaxErrors": "5",
             "Name": "My-Automation-Task",
@@ -2531,7 +2747,7 @@ Output:
 }
 ```
 **Example 4: To list all tasks for a maintenance window that have a Priority of 1 and use Run Command**
-This `describe-maintenance-window-tasks` example lists all of the tasks for the specified maintenance window that have a `Priority` of `1` and use `Run Command`.
+The following `describe-maintenance-window-tasks` example lists all of the tasks for the specified maintenance window that have a `Priority` of `1` and use `Run Command`.
 
 ```
 aws ssm describe-maintenance-window-tasks \
@@ -2545,20 +2761,20 @@ Output:
     "Tasks": [
         {
             "WindowId": "mw-ab12cd34eEXAMPLE",
-            "WindowTaskId": "0d36e6b4-3a4f-411e-adcb-3558eEXAMPLE",
+            "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "TaskArn": "AWS-RunPowerShellScript",
             "Type": "RUN_COMMAND",
             "Targets": [
                 {
                     "Key": "WindowTargetIds",
                     "Values": [
-                        "da89dcc3-7f9c-481d-ba2b-edcb7EXAMPLE"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                     ]
                 }
             ],
             "TaskParameters": {},
             "Priority": 1,
-            "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "MaxConcurrency": "1",
             "MaxErrors": "1",
             "Name": "MyRunCommandTask"
@@ -2633,6 +2849,14 @@ Output:
             "Schedule": "rate(7 days)",
             "NextExecutionTime": "2020-02-17T23:22:00.956Z"
         },
+        {
+            "WindowId": "mw-1a2b3c4d5eEXAMPLE",
+            "Name": "MyMaintenanceWindow",
+            "Enabled": false,
+            "Duration": 2,
+            "Cutoff": 0,
+            "Schedule": "cron(0 16 ? * TUE *)"
+        }
     ]
 }
 ```
@@ -2643,12 +2867,54 @@ The following `describe-maintenance-windows` example lists all enabled maintenan
 aws ssm describe-maintenance-windows \
     --filters {{"Key=Enabled,Values=true"}}
 ```
+Output:
+
+```
+{
+    "WindowIdentities": [
+        {
+            "WindowId": "mw-0ecb1226ddEXAMPLE",
+            "Name": "MyMaintenanceWindow-1",
+            "Enabled": true,
+            "Duration": 2,
+            "Cutoff": 1,
+            "Schedule": "rate(180 minutes)",
+            "NextExecutionTime": "2020-02-12T23:19:20.596Z"
+        },
+        {
+            "WindowId": "mw-03eb9db428EXAMPLE",
+            "Name": "MyMaintenanceWindow-2",
+            "Enabled": true,
+            "Duration": 3,
+            "Cutoff": 1,
+            "Schedule": "rate(7 days)",
+            "NextExecutionTime": "2020-02-17T23:22:00.956Z"
+        }
+    ]
+}
+```
 **Example 3: To list maintenance windows matching a specific name**
-This `describe-maintenance-windows` example lists all maintenance windows with the specified name.
+The following `describe-maintenance-windows` example lists all maintenance windows with the specified name.
 
 ```
 aws ssm describe-maintenance-windows \
     --filters {{"Key=Name,Values=MyMaintenanceWindow"}}
+```
+Output:
+
+```
+{
+    "WindowIdentities": [
+        {
+            "WindowId": "mw-1a2b3c4d5eEXAMPLE",
+            "Name": "MyMaintenanceWindow",
+            "Enabled": false,
+            "Duration": 2,
+            "Cutoff": 0,
+            "Schedule": "cron(0 16 ? * TUE *)"
+        }
+    ]
+}
 ```
 For more information, see [View Information About Maintenance Windows (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-windows-cli-tutorials-describe.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeMaintenanceWindows](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-maintenance-windows.html) in *AWS CLI Command Reference*.
@@ -2672,9 +2938,9 @@ Output:
 {
     "OpsItemSummaries": [
         {
-            "CreatedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+            "CreatedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
             "CreatedTime": "2020-03-14T17:02:46.375000-07:00",
-            "LastModifiedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+            "LastModifiedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
             "LastModifiedTime": "2020-03-14T17:02:46.375000-07:00",
             "Source": "SSM",
             "Status": "Open",
@@ -2686,7 +2952,7 @@ Output:
                     "Type": "SearchableString"
                 },
                 "/aws/resources": {
-                    "Value": "[{\"arn\":\"arn:aws:ssm:us-east-2:111222333444:maintenancewindow/mw-034093d322EXAMPLE\"}]",
+                    "Value": "[{\"arn\":\"arn:aws:ssm:us-west-2:123456789012:maintenancewindow/mw-034093d322EXAMPLE\"}]",
                     "Type": "SearchableString"
                 }
             },
@@ -2696,7 +2962,7 @@ Output:
         {
             "CreatedBy": "arn:aws:sts::1112223233444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
             "CreatedTime": "2020-02-26T11:43:15.426000-08:00",
-            "LastModifiedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+            "LastModifiedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
             "LastModifiedTime": "2020-02-26T11:43:15.426000-08:00",
             "Source": "EC2",
             "Status": "Open",
@@ -2712,7 +2978,7 @@ Output:
                     "Type": "SearchableString"
                 },
                 "/aws/resources": {
-                    "Value": "[{\"arn\":\"arn:aws:ec2:us-east-2:111222333444:instance/i-0beccfbc02EXAMPLE\"}]",
+                    "Value": "[{\"arn\":\"arn:aws:ec2:us-west-2:123456789012:instance/i-0beccfbc02EXAMPLE\"}]",
                     "Type": "SearchableString"
                 }
             },
@@ -2747,7 +3013,7 @@ Output:
             "Type": "SecureString",
             "KeyId": "alias/aws/ssm",
             "LastModifiedDate": 1582155479.205,
-            "LastModifiedUser": "arn:aws:sts::111222333444:assumed-role/Admin/Richard-Roe-Managed",
+            "LastModifiedUser": "arn:aws:sts::123456789012:assumed-role/Admin/Richard-Roe-Managed",
             "Description": "This is a SecureString parameter",
             "Version": 2,
             "Tier": "Advanced",
@@ -2768,7 +3034,7 @@ Output:
             "Name": "MyStringListParameter",
             "Type": "StringList",
             "LastModifiedDate": 1582154764.222,
-            "LastModifiedUser": "arn:aws:iam::111222333444:user/Mary-Major",
+            "LastModifiedUser": "arn:aws:iam::123456789012:user/Mary-Major",
             "Description": "This is a StringList parameter",
             "Version": 1,
             "Tier": "Standard",
@@ -2778,7 +3044,7 @@ Output:
             "Name": "MyStringParameter",
             "Type": "String",
             "LastModifiedDate": 1582154711.976,
-            "LastModifiedUser": "arn:aws:iam::111222333444:user/Alejandro-Rosalez",
+            "LastModifiedUser": "arn:aws:iam::123456789012:user/Alejandro-Rosalez",
             "Description": "This is a String parameter",
             "Version": 1,
             "Tier": "Standard",
@@ -2788,7 +3054,7 @@ Output:
             "Name": "latestAmi",
             "Type": "String",
             "LastModifiedDate": 1580862415.521,
-            "LastModifiedUser": "arn:aws:sts::111222333444:assumed-role/lambda-ssm-role/Automation-UpdateSSM-Param",
+            "LastModifiedUser": "arn:aws:sts::123456789012:assumed-role/lambda-ssm-role/Automation-UpdateSSM-Param",
             "Version": 3,
             "Tier": "Standard",
             "Policies": []
@@ -2797,8 +3063,12 @@ Output:
 }
 ```
 **Example 2: To list all parameters matching specific metadata**
-This `describe-parameters` example lists all parameters matching a filter.
-aws ssm describe-parameters --filters "Key=Type,Values=StringList"
+The following `describe-parameters` example lists all parameters matching a filter.
+
+```
+aws ssm describe-parameters \
+    --filters {{"Key=Type,Values=StringList"}}
+```
 Output:
 
 ```
@@ -2808,7 +3078,7 @@ Output:
             "Name": "MyStringListParameter",
             "Type": "StringList",
             "LastModifiedDate": 1582154764.222,
-            "LastModifiedUser": "arn:aws:iam::111222333444:user/Mary-Major",
+            "LastModifiedUser": "arn:aws:iam::123456789012:user/Mary-Major",
             "Description": "This is a StringList parameter",
             "Version": 1,
             "Tier": "Standard",
@@ -2817,7 +3087,7 @@ Output:
     ]
 }
 ```
-For more information, see [Searching for Systems Manager Parameters](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-search.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Searching for Parameter Store parameters in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-search.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribeParameters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-parameters.html) in *AWS CLI Command Reference*.
 
 ### `describe-patch-baselines`
@@ -2851,7 +3121,6 @@ Output:
             "BaselineId": "arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-020d361a05defe4ed",
             "OperatingSystem": "WINDOWS"
         },
-        ...
         {
             "BaselineName": "MyWindowsPatchBaseline",
             "DefaultBaseline": true,
@@ -2869,12 +3138,49 @@ The following `describe-patch-baselines` example lists all patch baselines provi
 aws ssm describe-patch-baselines \
     --filters {{"Key=OWNER,Values=[AWS]"}}
 ```
+Output:
+
+```
+{
+    "BaselineIdentities": [
+        {
+            "BaselineName": "AWS-SuseDefaultPatchBaseline",
+            "DefaultBaseline": true,
+            "BaselineDescription": "Default Patch Baseline for Suse Provided by AWS.",
+            "BaselineId": "arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-0123fdb36e334a3b2",
+            "OperatingSystem": "SUSE"
+        },
+        {
+            "BaselineName": "AWS-DefaultPatchBaseline",
+            "DefaultBaseline": false,
+            "BaselineDescription": "Default Patch Baseline Provided by AWS.",
+            "BaselineId": "arn:aws:ssm:us-east-2:733109147000:patchbaseline/pb-020d361a05defe4ed",
+            "OperatingSystem": "WINDOWS"
+        }
+    ]
+}
+```
 **Example 3: To list all patch baselines that you own**
 The following `describe-patch-baselines` example lists all custom patch baselines created in your account in the current Region.
 
 ```
 aws ssm describe-patch-baselines \
     --filters {{"Key=OWNER,Values=[Self]"}}
+```
+Output:
+
+```
+{
+    "BaselineIdentities": [
+        {
+            "BaselineName": "MyWindowsPatchBaseline",
+            "DefaultBaseline": true,
+            "BaselineDescription": "My patch baseline for EC2 instances for Windows Server",
+            "BaselineId": "pb-0ad00e0dd7EXAMPLE",
+            "OperatingSystem": "WINDOWS"
+        }
+    ]
+}
 ```
 For more information, see [About Predefined and Custom Patch Baselines](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-baselines.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DescribePatchBaselines](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-patch-baselines.html) in *AWS CLI Command Reference*.
@@ -2949,8 +3255,7 @@ Output:
                 "BaselineDescription": "Patches for Development",
                 "DefaultBaseline": true
             }
-        },
-        ...
+        }
     ]
 }
 ```
@@ -3028,7 +3333,7 @@ The following code example shows how to use `describe-sessions`.
 
 **AWS CLI**
 **Example 1: To list all active Session Manager sessions**
-This `describe-sessions` example retrieves a list of the active sessions created most recently (both connected and disconnected sessions) over the past 30 days that were started by the specified user. This command returns only results for connections to targets initiated using Session Manager. It does not list connections made through other means, such as Remote Desktop Connections or SSH.
+The following `describe-sessions` example retrieves a list of the active sessions created most recently (both connected and disconnected sessions) over the past 30 days that were started by the specified user. This command returns only results for connections to targets initiated using Session Manager. It does not list connections made through other means, such as Remote Desktop Connections or SSH.
 
 ```
 aws ssm describe-sessions \
@@ -3060,7 +3365,7 @@ Output:
 }
 ```
 **Example 2: To list all terminated Session Manager sessions**
-This `describe-sessions` example retrieves a list of the most recently terminated sessions from the past 30 days for all users.
+The following `describe-sessions` example retrieves a list of the most recently terminated sessions from the past 30 days for all users.
 
 ```
 aws ssm describe-sessions \
@@ -3086,8 +3391,7 @@ Output:
             "StartDate": 1550161369.149,
             "EndDate": 1550162580.329,
             "Owner": "arn:aws:sts::123456789012:assumed-role/Administrator/Jane-Roe"
-        },
-        ...
+        }
     ],
     "NextToken": "--token string truncated--"
 }
@@ -3107,10 +3411,10 @@ The following `disassociate-ops-item-related-item` example deletes the associati
 ```
 aws ssm disassociate-ops-item-related-item \
     --ops-item-id {{"oi-f99f2EXAMPLE"}} \
-    --association-id {{"e2036148-cccb-490e-ac2a-390e5EXAMPLE"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
-For more information, see [Working with Incident Manager incidents in OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-create-OpsItems-for-Incident-Manager.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Creating an incident for an OpsItem](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-working-with-OpsItems-create-an-incident.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [DisassociateOpsItemRelatedItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/disassociate-ops-item-related-item.html) in *AWS CLI Command Reference*.
 
 ### `get-automation-execution`
@@ -3124,14 +3428,14 @@ The following `get-automation-execution` example displays detailed information a
 
 ```
 aws ssm get-automation-execution \
-    --automation-execution-id {{73c8eef8-f4ee-4a05-820c-e354fEXAMPLE}}
+    --automation-execution-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "AutomationExecution": {
-        "AutomationExecutionId": "73c8eef8-f4ee-4a05-820c-e354fEXAMPLE",
+        "AutomationExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DocumentName": "AWS-StartEC2Instance",
         "DocumentVersion": "1",
         "ExecutionStartTime": 1583737233.748,
@@ -3153,7 +3457,7 @@ Output:
                         "running"
                     ]
                 },
-                "StepExecutionId": "95e70479-cf20-4d80-8018-7e4e2EXAMPLE",
+                "StepExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
                 "OverriddenParameters": {}
             }
         ],
@@ -3187,7 +3491,7 @@ The following code example shows how to use `get-calendar-state`.
 
 **AWS CLI**
 **Example 1: To get the current state of a change calendar**
-This `get-calendar-state` example returns the state of a calendar at the current time. Because the example doesn't specify a time, the current state of the calendar is reported.
+The following `get-calendar-state` example returns the state of a calendar at the current time. Because the example doesn't specify a time, the current state of the calendar is reported.
 
 ```
 aws ssm get-calendar-state \
@@ -3203,7 +3507,7 @@ Output:
 }
 ```
 **Example 2: To get the state of a change calendar at a specified time**
-This `get-calendar-state` example returns the state of a calendar at the specified time.
+The following `get-calendar-state` example returns the state of a calendar at the specified time.
 
 ```
 aws ssm get-calendar-state \
@@ -3218,7 +3522,7 @@ Output:
     "AtTime": "2020-07-19T21:15:19Z"
 }
 ```
-For more information, see [Get the State of the Change Calendar](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-calendar-getstate.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Getting the state of a change calendar](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-calendar-getstate.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [GetCalendarState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-calendar-state.html) in *AWS CLI Command Reference*.
 
 ### `get-command-invocation`
@@ -3232,16 +3536,16 @@ The following `get-command-invocation` example lists all the invocations of the 
 
 ```
 aws ssm get-command-invocation \
-    --command-id {{"ef7fdfd8-9b57-4151-a15c-db9a12345678"}} \
+    --command-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --instance-id {{"i-1234567890abcdef0"}}
 ```
 Output:
 
 ```
 {
-    "CommandId": "ef7fdfd8-9b57-4151-a15c-db9a12345678",
+    "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "InstanceId": "i-1234567890abcdef0",
-    "Comment": "b48291dd-ba76-43e0-b9df-13e11ddaac26:6960febb-2907-4b59-8e1a-d6ce8EXAMPLE",
+    "Comment": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "DocumentName": "AWS-UpdateSSMAgent",
     "DocumentVersion": "",
     "PluginName": "aws:updateSsmAgent",
@@ -3251,7 +3555,7 @@ Output:
     "ExecutionEndDateTime": "2020-02-19T18:18:03.419Z",
     "Status": "Success",
     "StatusDetails": "Success",
-    "StandardOutputContent": "Updating amazon-ssm-agent from 2.3.842.0 to latest\nSuccessfully downloaded https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/ssm-agent-manifest.json\namazon-ssm-agent 2.3.842.0 has already been installed, update skipped\n",
+    "StandardOutputContent": "Updating amazon-ssm-agent from 2.3.842.0 to latest\nSuccessfully downloaded https://s3.us-west-2.amazonaws.com/amazon-ssm-us-east-2/ssm-agent-manifest.json\namazon-ssm-agent 2.3.842.0 has already been installed, update skipped\n",
     "StandardOutputUrl": "",
     "StandardErrorContent": "",
     "StandardErrorUrl": "",
@@ -3271,7 +3575,7 @@ The following code example shows how to use `get-connection-status`.
 
 **AWS CLI**
 **To display the connection status of a managed instance**
-This `get-connection-status` example returns the connection status of the specified managed instance.
+The following `get-connection-status` example returns the connection status of the specified managed instance.
 
 ```
 aws ssm get-connection-status \
@@ -3285,6 +3589,7 @@ Output:
     "Status": "connected"
 }
 ```
+For more information, see [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [GetConnectionStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-connection-status.html) in *AWS CLI Command Reference*.
 
 ### `get-default-patch-baseline`
@@ -3303,8 +3608,8 @@ Output:
 
 ```
 {
-  "BaselineId": "pb-0713accee01612345",
-  "OperatingSystem": "WINDOWS"
+    "BaselineId": "pb-0713accee01612345",
+    "OperatingSystem": "WINDOWS"
 }
 ```
 **Example 2: To display the default patch baseline for Amazon Linux**
@@ -3338,19 +3643,19 @@ Tip: Use `uuidgen` to generate a `snapshot-id`.
 ```
 aws ssm get-deployable-patch-snapshot-for-instance \
     --instance-id {{"i-1234567890abcdef0"}} \
-    --snapshot-id {{"521c3536-930c-4aa9-950e-01234567abcd"}}
+    --snapshot-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
     "InstanceId": "i-1234567890abcdef0",
-    "SnapshotId": "521c3536-930c-4aa9-950e-01234567abcd",
+    "SnapshotId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Product": "AmazonLinux2018.03",
-    "SnapshotDownloadUrl": "https://patch-baseline-snapshot-us-east-1.s3.amazonaws.com/ed85194ef27214f5984f28b4d664d14f7313568fea7d4b6ac6c10ad1f729d7e7-773304212436/AMAZON_LINUX-521c3536-930c-4aa9-950e-01234567abcd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190215T164031Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJ5C56P35AEBRX2QQ%2F20190215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=efaaaf6e3878e77f48a6697e015efdbda9c426b09c5822055075c062f6ad2149"
+    "SnapshotDownloadUrl": "https://patch-baseline-snapshot-us-east-1.s3.amazonaws.com/ed85194ef27214f5984f28b4d664d14f7313568fea7d4b6ac6c10ad1f729d7e7-123456789012/AMAZON_LINUX-521c3536-930c-4aa9-950e-01234567abcd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190215T164031Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJ5C56P35AEBRX2QQ%2F20190215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=efaaaf6e3878e77f48a6697e015efdbda9c426b09c5822055075c062f6ad2149"
 }
 ```
-For more information, see [Parameter name: Snapshot ID](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-about-aws-runpatchbaseline.html#patch-manager-about-aws-runpatchbaseline-parameters-snapshot-id) in the *AWS Systems Manager User Guide*.
+For more information, see [Parameter name: Snapshot ID](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-about-aws-runpatchbaseline.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [GetDeployablePatchSnapshotForInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-deployable-patch-snapshot-for-instance.html) in *AWS CLI Command Reference*.
 
 ### `get-document`
@@ -3387,9 +3692,8 @@ For more information, see [AWS Systems Manager Documents](https://docs.aws.amazo
 The following code example shows how to use `get-inventory-schema`.
 
 **AWS CLI**
-**To view your inventory schema**
-This example returns a list of inventory type names for the account.
-Command:
+**Example 1: To view your inventory schema**
+The following `get-inventory-schema` example returns a list of inventory type names for the account.
 
 ```
 aws ssm get-inventory-schema
@@ -3398,53 +3702,96 @@ Output:
 
 ```
 {
-  "Schemas": [
-      {
-          "TypeName": "AWS:AWSComponent",
-          "Version": "1.0",
-          "Attributes": [
-              {
-                  "Name": "Name",
-                  "DataType": "STRING"
-              },
-              {
-                  "Name": "ApplicationType",
-                  "DataType": "STRING"
-              },
-              {
-                  "Name": "Publisher",
-                  "DataType": "STRING"
-              },
-              {
-                  "Name": "Version",
-                  "DataType": "STRING"
-              },
-              {
-                  "Name": "InstalledTime",
-                  "DataType": "STRING"
-              },
-              {
-                  "Name": "Architecture",
-                  "DataType": "STRING"
-              },
-              {
-                  "Name": "URL",
-                  "DataType": "STRING"
-              }
-          ]
-      },
-      ...
-  ],
-  "NextToken": "--token string truncated--"
+    "Schemas": [
+        {
+            "TypeName": "AWS:AWSComponent",
+            "Version": "1.0",
+            "Attributes": [
+                {
+                    "Name": "Name",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "ApplicationType",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "Publisher",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "Version",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "InstalledTime",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "Architecture",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "URL",
+                    "DataType": "STRING"
+                }
+            ]
+    }
+    ],
+    "NextToken": "--token string truncated--"
 }
 ```
-**To view the inventory schema for a specific inventory type**
-This example return the inventory schema for a the AWS:AWSComponent inventory type.
-Command:
+For more information, see [Metadata collected by Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-schema.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To view the inventory schema for a specific inventory type**
+The following `get-inventory-schema` example returns the inventory schema for the `AWS:AWSComponent` inventory type.
 
 ```
-aws ssm get-inventory-schema --type-name {{"AWS:AWSComponent"}}
+aws ssm get-inventory-schema \
+    --type-name {{"AWS:AWSComponent"}}
 ```
+Output:
+
+```
+{
+    "Schemas": [
+        {
+            "TypeName": "AWS:AWSComponent",
+            "Version": "1.0",
+            "Attributes": [
+                {
+                    "Name": "Name",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "ApplicationType",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "Publisher",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "Version",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "InstalledTime",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "Architecture",
+                    "DataType": "STRING"
+                },
+                {
+                    "Name": "URL",
+                    "DataType": "STRING"
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Metadata collected by Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-schema.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [GetInventorySchema](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-inventory-schema.html) in *AWS CLI Command Reference*.
 
 ### `get-inventory`
@@ -3454,8 +3801,7 @@ The following code example shows how to use `get-inventory`.
 
 **AWS CLI**
 **To view your inventory**
-This example gets the custom metadata for your inventory.
-Command:
+The following `get-inventory` example gets the custom metadata for your inventory.
 
 ```
 aws ssm get-inventory
@@ -3464,33 +3810,34 @@ Output:
 
 ```
 {
-  "Entities": [
-      {
-          "Data": {
-              "AWS:InstanceInformation": {
-                  "Content": [
-                      {
-                          "ComputerName": "ip-172-31-44-222.us-west-2.compute.internal",
-                          "InstanceId": "i-0cb2b964d3e14fd9f",
-                          "IpAddress": "172.31.44.222",
-                          "AgentType": "amazon-ssm-agent",
-                          "ResourceType": "EC2Instance",
-                          "AgentVersion": "2.0.672.0",
-                          "PlatformVersion": "2016.09",
-                          "PlatformName": "Amazon Linux AMI",
-                          "PlatformType": "Linux"
-                      }
-                  ],
-                  "TypeName": "AWS:InstanceInformation",
-                  "SchemaVersion": "1.0",
-                  "CaptureTime": "2017-02-20T18:03:58Z"
-              }
-          },
-          "Id": "i-0cb2b964d3e14fd9f"
-      }
-  ]
+    "Entities": [
+        {
+            "Data": {
+                "AWS:InstanceInformation": {
+                    "Content": [
+                        {
+                            "ComputerName": "ip-172-31-44-222.us-west-2.compute.internal",
+                            "InstanceId": "i-0cb2b964d3e14fd9f",
+                            "IpAddress": "172.31.44.222",
+                            "AgentType": "amazon-ssm-agent",
+                            "ResourceType": "EC2Instance",
+                            "AgentVersion": "2.0.672.0",
+                            "PlatformVersion": "2016.09",
+                            "PlatformName": "Amazon Linux AMI",
+                            "PlatformType": "Linux"
+                        }
+                    ],
+                    "TypeName": "AWS:InstanceInformation",
+                    "SchemaVersion": "1.0",
+                    "CaptureTime": "2017-02-20T18:03:58Z"
+                }
+            },
+            "Id": "i-0cb2b964d3e14fd9f"
+        }
+    ]
 }
 ```
+For more information, see [AWS Systems Manager Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [GetInventory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-inventory.html) in *AWS CLI Command Reference*.
 
 ### `get-maintenance-window-execution-task-invocation`
@@ -3504,9 +3851,9 @@ The following `get-maintenance-window-execution-task-invocation` example lists i
 
 ```
 aws ssm get-maintenance-window-execution-task-invocation \
-    --window-execution-id {{"bc494bfa-e63b-49f6-8ad1-aa9f2EXAMPLE"}} \
-    --task-id {{"96f2ad59-97e3-461d-a63d-40c8aEXAMPLE"}} \
-    --invocation-id {{"a5273e2c-d2c6-4880-b3e1-5e550EXAMPLE"}}
+    --window-execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --task-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} \
+    --invocation-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}}
 ```
 Output:
 
@@ -3514,14 +3861,14 @@ Output:
 {
     "Status": "SUCCESS",
     "Parameters": "{\"comment\":\"\",\"documentName\":\"AWS-RunPowerShellScript\",\"instanceIds\":[\"i-1234567890EXAMPLE\"],\"maxConcurrency\":\"1\",\"maxErrors\":\"1\",\"parameters\":{\"executionTimeout\":[\"3600\"],\"workingDirectory\":[\"\"],\"commands\":[\"echo Hello\"]},\"timeoutSeconds\":600}",
-    "ExecutionId": "03b6baa0-5460-4e15-83f2-ea685EXAMPLE",
-    "InvocationId": "a5273e2c-d2c6-4880-b3e1-5e550EXAMPLE",
+    "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+    "InvocationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
     "StartTime": 1549998326.421,
     "TaskType": "RUN_COMMAND",
     "EndTime": 1550001931.784,
-    "WindowExecutionId": "bc494bfa-e63b-49f6-8ad1-aa9f2EXAMPLE",
+    "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "StatusDetails": "Failed",
-    "TaskExecutionId": "96f2ad59-97e3-461d-a63d-40c8aEXAMPLE"
+    "TaskExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [View Information About Tasks and Task Executions (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-tutorial-task-info.html) in the *AWS Systems Manager User Guide*.
@@ -3538,17 +3885,17 @@ The following `get-maintenance-window-execution-task` example lists information 
 
 ```
 aws ssm get-maintenance-window-execution-task \
-    --window-execution-id {{"518d5565-5969-4cca-8f0e-da3b2EXAMPLE"}} \
-    --task-id {{"ac0c6ae1-daa3-4a89-832e-d3845EXAMPLE"}}
+    --window-execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --task-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}}
 ```
 Output:
 
 ```
 {
-    "WindowExecutionId": "518d5565-5969-4cca-8f0e-da3b2EXAMPLE",
-    "TaskExecutionId": "ac0c6ae1-daa3-4a89-832e-d3845EXAMPLE",
+    "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "TaskExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "TaskArn": "AWS-RunPatchBaseline",
-    "ServiceRole": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+    "ServiceRole": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
     "Type": "RUN_COMMAND",
     "TaskParameters": [
         {
@@ -3608,7 +3955,7 @@ The following `get-maintenance-window-execution` example lists information about
 
 ```
 aws ssm get-maintenance-window-execution \
-    --window-execution-id {{"518d5565-5969-4cca-8f0e-da3b2EXAMPLE"}}
+    --window-execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -3616,11 +3963,11 @@ Output:
 {
     "Status": "SUCCESS",
     "TaskIds": [
-        "ac0c6ae1-daa3-4a89-832e-d3845EXAMPLE"
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     ],
     "StartTime": 1487692834.595,
     "EndTime": 1487692835.051,
-    "WindowExecutionId": "518d5565-5969-4cca-8f0e-da3b2EXAMPLE",
+    "WindowExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [View Information About Tasks and Task Executions (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-tutorial-task-info.html) in the *AWS Systems Manager User Guide*.
@@ -3638,17 +3985,17 @@ The following `get-maintenance-window-task` example retrieves details about the 
 ```
 aws ssm get-maintenance-window-task \
     --window-id {{mw-0c5ed765acEXAMPLE}} \
-    --window-task-id {{0e842a8d-2d44-4886-bb62-af8dcEXAMPLE}}
+    --window-task-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+    "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
     "MaxErrors": "1",
     "TaskArn": "AWS-RunPowerShellScript",
     "MaxConcurrency": "1",
-    "WindowTaskId": "0e842a8d-2d44-4886-bb62-af8dcEXAMPLE",
+    "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "TaskParameters": {},
     "Priority": 1,
     "TaskInvocationParameters": {
@@ -3673,7 +4020,7 @@ Output:
     "Targets": [
         {
             "Values": [
-                "84c818da-b619-4d3d-9651-946f3EXAMPLE"
+                "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             ],
             "Key": "WindowTargetIds"
         }
@@ -3706,7 +4053,7 @@ Output:
     "Cutoff": 1,
     "Duration": 6,
     "Enabled": true,
-    "ModifiedDate": 2020-01-01T10:04:04.099Z,
+    "ModifiedDate": "2020-01-01T10:04:04.099Z",
     "Name": "My-Maintenance-Window",
     "Schedule": "rate(3 days)",
     "WindowId": "mw-03eb9db428EXAMPLE",
@@ -3734,10 +4081,10 @@ Output:
 ```
 {
     "OpsItem": {
-        "CreatedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+        "CreatedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
         "CreatedTime": "2019-12-04T15:52:16.793000-08:00",
         "Description": "CloudWatch Event Rule SSMOpsItems-EC2-instance-terminated was triggered. Your EC2 instance has terminated. See below for more details.",
-        "LastModifiedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+        "LastModifiedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
         "LastModifiedTime": "2019-12-04T15:52:16.793000-08:00",
         "Notifications": [],
         "RelatedOpsItems": [],
@@ -3755,7 +4102,7 @@ Output:
                 "Type": "SearchableString"
             },
             "/aws/resources": {
-                "Value": "[{\"arn\":\"arn:aws:ec2:us-east-2:111222333444:instance/i-05adec7e97EXAMPLE\"}]",
+                "Value": "[{\"arn\":\"arn:aws:ec2:us-west-2:123456789012:instance/i-05adec7e97EXAMPLE\"}]",
                 "Type": "SearchableString"
             },
             "event-time": {
@@ -3799,15 +4146,15 @@ Output:
                     "CaptureTime": "2020-02-26T18:58:32.918Z",
                     "Content": [
                         {
-                            "AccountId": "111222333444",
+                            "AccountId": "123456789012",
                             "Category": "Availability",
-                            "CreatedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+                            "CreatedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
                             "CreatedTime": "2020-02-26T19:10:44.149Z",
                             "Description": "CloudWatch Event Rule SSMOpsItems-EC2-instance-terminated was triggered. Your EC2 instance has terminated. See below for more details.",
-                            "LastModifiedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+                            "LastModifiedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
                             "LastModifiedTime": "2020-02-26T19:10:44.149Z",
                             "Notifications": "",
-                            "OperationalData": "{\"/aws/automations\":{\"type\":\"SearchableString\",\"value\":\"[ { \\\"automationType\\\": \\\"AWS:SSM:Automation\\\", \\\"automationId\\\": \\\"AWS-CreateManagedWindowsInstance\\\" }, { \\\"automationType\\\": \\\"AWS:SSM:Automation\\\", \\\"automationId\\\": \\\"AWS-CreateManagedLinuxInstance\\\" } ]\"},\"/aws/resources\":{\"type\":\"SearchableString\",\"value\":\"[{\\\"arn\\\":\\\"arn:aws:ec2:us-east-2:111222333444:instance/i-0acbd0800fEXAMPLE\\\"}]\"},\"/aws/dedup\":{\"type\":\"SearchableString\",\"value\":\"{\\\"dedupString\\\":\\\"SSMOpsItems-EC2-instance-terminated\\\"}\"}}",
+                            "OperationalData": "{\"/aws/automations\":{\"type\":\"SearchableString\",\"value\":\"[ { \\\"automationType\\\": \\\"AWS:SSM:Automation\\\", \\\"automationId\\\": \\\"AWS-CreateManagedWindowsInstance\\\" }, { \\\"automationType\\\": \\\"AWS:SSM:Automation\\\", \\\"automationId\\\": \\\"AWS-CreateManagedLinuxInstance\\\" } ]\"},\"/aws/resources\":{\"type\":\"SearchableString\",\"value\":\"[{\\\"arn\\\":\\\"arn:aws:ec2:us-west-2:123456789012:instance/i-0acbd0800fEXAMPLE\\\"}]\"},\"/aws/dedup\":{\"type\":\"SearchableString\",\"value\":\"{\\\"dedupString\\\":\\\"SSMOpsItems-EC2-instance-terminated\\\"}\"}}",
                             "OpsItemId": "oi-4309fEXAMPLE",
                             "RelatedItems": "",
                             "Severity": "3",
@@ -3826,15 +4173,15 @@ Output:
                     "CaptureTime": "2019-11-26T19:20:06.161Z",
                     "Content": [
                         {
-                            "AccountId": "111222333444",
+                            "AccountId": "123456789012",
                             "Category": "Availability",
-                            "CreatedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+                            "CreatedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
                             "CreatedTime": "2019-11-26T20:00:07.237Z",
                             "Description": "CloudWatch Event Rule SSMOpsItems-SSM-maintenance-window-execution-failed was triggered. Your SSM Maintenance Window execution has failed. See below for more details.",
-                            "LastModifiedBy": "arn:aws:sts::111222333444:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
+                            "LastModifiedBy": "arn:aws:sts::123456789012:assumed-role/OpsItem-CWE-Role/fbf77cbe264a33509569f23e4EXAMPLE",
                             "LastModifiedTime": "2019-11-26T20:00:07.237Z",
                             "Notifications": "",
-                            "OperationalData": "{\"/aws/resources\":{\"type\":\"SearchableString\",\"value\":\"[{\\\"arn\\\":\\\"arn:aws:ssm:us-east-2:111222333444:maintenancewindow/mw-0e83ba440dEXAMPLE\\\"}]\"},\"/aws/dedup\":{\"type\":\"SearchableString\",\"value\":\"{\\\"dedupString\\\":\\\"SSMOpsItems-SSM-maintenance-window-execution-failed\\\"}\"}}",
+                            "OperationalData": "{\"/aws/resources\":{\"type\":\"SearchableString\",\"value\":\"[{\\\"arn\\\":\\\"arn:aws:ssm:us-west-2:123456789012:maintenancewindow/mw-0e83ba440dEXAMPLE\\\"}]\"},\"/aws/dedup\":{\"type\":\"SearchableString\",\"value\":\"{\\\"dedupString\\\":\\\"SSMOpsItems-SSM-maintenance-window-execution-failed\\\"}\"}}",
                             "OpsItemId": "oi-bb2a0EXAMPLE",
                             "RelatedItems": "",
                             "Severity": "3",
@@ -3874,7 +4221,7 @@ Output:
             "Name": "MyStringParameter",
             "Type": "String",
             "LastModifiedDate": 1582154711.976,
-            "LastModifiedUser": "arn:aws:iam::111222333444:user/Mary-Major",
+            "LastModifiedUser": "arn:aws:iam::123456789012:user/Mary-Major",
             "Description": "This is the first version of my String parameter",
             "Value": "Veni",
             "Version": 1,
@@ -3886,7 +4233,7 @@ Output:
             "Name": "MyStringParameter",
             "Type": "String",
             "LastModifiedDate": 1582156093.471,
-            "LastModifiedUser": "arn:aws:iam::111222333444:user/Mary-Major",
+            "LastModifiedUser": "arn:aws:iam::123456789012:user/Mary-Major",
             "Description": "This is the second version of my String parameter",
             "Value": "Vidi",
             "Version": 2,
@@ -3898,7 +4245,7 @@ Output:
             "Name": "MyStringParameter",
             "Type": "String",
             "LastModifiedDate": 1582156117.545,
-            "LastModifiedUser": "arn:aws:iam::111222333444:user/Mary-Major",
+            "LastModifiedUser": "arn:aws:iam::123456789012:user/Mary-Major",
             "Description": "This is the third version of my String parameter",
             "Value": "Vici",
             "Version": 3,
@@ -3935,7 +4282,7 @@ Output:
         "Value": "Veni",
         "Version": 1,
         "LastModifiedDate": 1530018761.888,
-        "ARN": "arn:aws:ssm:us-east-2:111222333444:parameter/MyStringParameter"
+        "ARN": "arn:aws:ssm:us-west-2:123456789012:parameter/MyStringParameter",
         "DataType": "text"
     }
 }
@@ -3956,10 +4303,10 @@ Output:
     "Parameter": {
         "Name": "MySecureStringParameter",
         "Type": "SecureString",
-        "Value": "16679b88-310b-4895-a943-e0764EXAMPLE",
+        "Value": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Version": 2,
         "LastModifiedDate": 1582155479.205,
-        "ARN": "arn:aws:ssm:us-east-2:111222333444:parameter/MySecureStringParameter"
+        "ARN": "arn:aws:ssm:us-west-2:123456789012:parameter/MySecureStringParameter",
         "DataType": "text"
     }
 }
@@ -3983,7 +4330,7 @@ Output:
         "Version": 2,
         "Selector": ":label",
         "LastModifiedDate": "2021-07-12T09:49:15.865000-07:00",
-        "ARN": "arn:aws:ssm:us-west-2:786973925828:parameter/MyParameter",
+        "ARN": "arn:aws:ssm:us-west-2:123456789111:parameter/MyParameter",
         "DataType": "text"
     }
 }
@@ -4007,7 +4354,7 @@ Output:
         "Version": 2,
         "Selector": ":2",
         "LastModifiedDate": "2021-07-12T09:49:15.865000-07:00",
-        "ARN": "arn:aws:ssm:us-west-2:786973925828:parameter/MyParameter",
+        "ARN": "arn:aws:ssm:us-west-2:123456789111:parameter/MyParameter",
         "DataType": "text"
     }
 }
@@ -4039,7 +4386,7 @@ Output:
             "Value": "Floor 2",
             "Version": 1,
             "LastModifiedDate": 1530018761.888,
-            "ARN": "arn:aws:ssm:us-east-1:111222333444:parameter/site/newyork/department/marketing"
+            "ARN": "arn:aws:ssm:us-west-2:123456789012:parameter/site/newyork/department/marketing"
         },
         {
             "Name": "/site/newyork/department/infotech",
@@ -4047,9 +4394,8 @@ Output:
             "Value": "Floor 3",
             "Version": 1,
             "LastModifiedDate": 1530018823.429,
-            "ARN": "arn:aws:ssm:us-east-1:111222333444:parameter/site/newyork/department/infotech"
-        },
-        ...
+            "ARN": "arn:aws:ssm:us-west-2:123456789012:parameter/site/newyork/department/infotech"
+        }
     ]
 }
 ```
@@ -4080,7 +4426,7 @@ Output:
             "Value": "alpha,beta,gamma",
             "Version": 1,
             "LastModifiedDate": 1582154764.222,
-            "ARN": "arn:aws:ssm:us-east-2:111222333444:parameter/MyStringListParameter"
+            "ARN": "arn:aws:ssm:us-west-2:123456789012:parameter/MyStringListParameter",
             "DataType": "text"
         },
         {
@@ -4089,7 +4435,7 @@ Output:
             "Value": "Vici",
             "Version": 3,
             "LastModifiedDate": 1582156117.545,
-            "ARN": "arn:aws:ssm:us-east-2:111222333444:parameter/MyStringParameter"
+            "ARN": "arn:aws:ssm:us-west-2:123456789012:parameter/MyStringParameter",
             "DataType": "text"
         }
     ],
@@ -4123,11 +4469,11 @@ Output:
 ```
 For more information, see [Working with Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html) in the *AWS Systems Manager User Guide*.
 **Example 3: To display the value of a parameter using labels**
-The following `get-parameter` example lists the value for the specified single parameter with a specified label.
+The following `get-parameters` example lists the values for the specified parameters, one specified by label and one specified by version.
 
 ```
-aws ssm get-parameter \
-    --name {{"MyParameter:label"}}
+aws ssm get-parameters \
+    --names {{"MyLabelParameter:label"}} {{"MyVersionParameter:2"}}
 ```
 Output:
 
@@ -4141,7 +4487,7 @@ Output:
             "Version": 1,
             "Selector": ":label",
             "LastModifiedDate": "2021-07-12T09:49:15.865000-07:00",
-            "ARN": "arn:aws:ssm:us-west-2:786973925828:parameter/MyParameter",
+            "ARN": "arn:aws:ssm:us-west-2:123456789111:parameter/MyLabelParameter",
             "DataType": "text"
         },
         {
@@ -4151,7 +4497,7 @@ Output:
             "Version": 2,
             "Selector": ":2",
             "LastModifiedDate": "2021-03-24T16:20:28.236000-07:00",
-            "ARN": "arn:aws:ssm:us-west-2:786973925828:parameter/unlabel-param",
+            "ARN": "arn:aws:ssm:us-west-2:123456789111:parameter/MyVersionParameter",
             "DataType": "text"
         }
     ],
@@ -4253,11 +4599,11 @@ The following code example shows how to use `get-service-setting`.
 
 **AWS CLI**
 **To retrieve the service setting for Parameter Store throughput**
-The following `get-service-setting` This example retrieves the current service setting for Parameter Store throughput in the specified region.
+The following `get-service-setting` example retrieves the current service setting for Parameter Store throughput in the specified region.
 
 ```
 aws ssm get-service-setting \
-    --setting-id {{arn:aws:ssm:us-east-1:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled}}
+    --setting-id {{arn:aws:ssm:us-west-2:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled}}
 ```
 Output:
 
@@ -4268,12 +4614,12 @@ Output:
         "SettingValue": "false",
         "LastModifiedDate": 1555532818.578,
         "LastModifiedUser": "System",
-        "ARN": "arn:aws:ssm:us-east-1:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled",
+        "ARN": "arn:aws:ssm:us-west-2:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled",
         "Status": "Default"
     }
 }
 ```
-For more information, see [Increasing Parameter Store Throughput](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-throughput.html) in the *AWS Systems Manager Users Guide*.
+For more information, see [Managing Parameter Store throughput](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-throughput.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [GetServiceSetting](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-service-setting.html) in *AWS CLI Command Reference*.
 
 ### `label-parameter-version`
@@ -4306,7 +4652,16 @@ The following `label-parameter-version` example adds a label to the specified ve
 aws ssm label-parameter-version \
     --name {{"MyStringParameter"}} \
     --labels {{"ProductionReady"}} \
-    --parameter-version {{"2"}} --labels {{"DevelopmentReady"}}
+    --parameter-version {{"2"}} \
+    --labels {{"DevelopmentReady"}}
+```
+Output:
+
+```
+{
+    "InvalidLabels": [],
+    "ParameterVersion": 2
+}
 ```
 For more information, see [Working with parameter labels](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-labels.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [LabelParameterVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/label-parameter-version.html) in *AWS CLI Command Reference*.
@@ -4322,7 +4677,7 @@ The following `list-association-versions` example lists all versions of the spec
 
 ```
 aws ssm list-association-versions \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -4330,7 +4685,7 @@ Output:
 {
 "AssociationVersions": [
         {
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
             "CreatedDate": 1550505536.726,
             "Name": "AWS-UpdateSSMAgent",
@@ -4356,7 +4711,7 @@ Output:
     ]
 }
 ```
-For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-associations.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListAssociationVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-association-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-associations`
@@ -4366,10 +4721,10 @@ The following code example shows how to use `list-associations`.
 
 **AWS CLI**
 **Example 1: To list your associations for a specific instance**
-The following list-associations example lists all associations with the AssociationName, UpdateSSMAgent.
+The following `list-associations` example lists all associations with the AssociationName, UpdateSSMAgent.
 
 ```
-aws ssm list-associations {{/}}
+aws ssm list-associations \
     --association-filter-list {{"key=AssociationName,value=UpdateSSMAgent"}}
 ```
 Output:
@@ -4380,7 +4735,7 @@ Output:
         {
             "Name": "AWS-UpdateSSMAgent",
             "InstanceId": "i-1234567890abcdef0",
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
             "Targets": [
                 {
@@ -4403,12 +4758,12 @@ Output:
     ]
 }
 ```
-For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-associations.html) in the *Systems Manager User Guide*.
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *Systems Manager User Guide*.
 **Example 2: To list your associations for a specific document**
-The following list-associations example lists all associations for the specified document.
+The following `list-associations` example lists all associations for the specified document.
 
 ```
-aws ssm list-associations {{/}}
+aws ssm list-associations \
     --association-filter-list {{"key=Name,value=AWS-UpdateSSMAgent"}}
 ```
 Output:
@@ -4419,7 +4774,7 @@ Output:
         {
             "Name": "AWS-UpdateSSMAgent",
             "InstanceId": "i-1234567890abcdef0",
-            "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AssociationVersion": "1",
             "Targets": [
                 {
@@ -4443,7 +4798,7 @@ Output:
     {
             "Name": "AWS-UpdateSSMAgent",
             "InstanceId": "i-9876543210abcdef0",
-            "AssociationId": "fbc07ef7-b985-4684-b82b-0123456789ab",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "AssociationVersion": "1",
             "Targets": [
                 {
@@ -4464,7 +4819,7 @@ Output:
     ]
 }
 ```
-For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-associations.html) in the *Systems Manager User Guide*.
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *Systems Manager User Guide*.
 +  For API details, see [ListAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-associations.html) in *AWS CLI Command Reference*.
 
 ### `list-command-invocations`
@@ -4478,7 +4833,7 @@ The following `list-command-invocations` example lists all the invocations of a 
 
 ```
 aws ssm list-command-invocations \
-    --command-id {{"ef7fdfd8-9b57-4151-a15c-db9a12345678"}} \
+    --command-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --details
 ```
 Output:
@@ -4487,10 +4842,10 @@ Output:
 {
     "CommandInvocations": [
         {
-            "CommandId": "ef7fdfd8-9b57-4151-a15c-db9a12345678",
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "InstanceId": "i-02573cafcfEXAMPLE",
             "InstanceName": "",
-            "Comment": "b48291dd-ba76-43e0-b9df-13e11ddaac26:6960febb-2907-4b59-8e1a-d6ce8EXAMPLE",
+            "Comment": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "DocumentName": "AWS-UpdateSSMAgent",
             "DocumentVersion": "",
             "RequestedDateTime": 1582136283.089,
@@ -4506,10 +4861,10 @@ Output:
                     "ResponseCode": 0,
                     "ResponseStartDateTime": 1582136283.419,
                     "ResponseFinishDateTime": 1582136283.51,
-                    "Output": "Updating amazon-ssm-agent from 2.3.842.0 to latest\nSuccessfully downloaded https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/ssm-agent-manifest.json\namazon-ssm-agent 2.3.842.0 has already been installed, update skipped\n",
+                    "Output": "Updating amazon-ssm-agent from 2.3.842.0 to latest\nSuccessfully downloaded https://s3.us-west-2.amazonaws.com/amazon-ssm-us-east-2/ssm-agent-manifest.json\namazon-ssm-agent 2.3.842.0 has already been installed, update skipped\n",
                     "StandardOutputUrl": "",
                     "StandardErrorUrl": "",
-                    "OutputS3Region": "us-east-2",
+                    "OutputS3Region": "us-west-2",
                     "OutputS3BucketName": "",
                     "OutputS3KeyPrefix": ""
                 }
@@ -4526,10 +4881,10 @@ Output:
             }
         },
         {
-            "CommandId": "ef7fdfd8-9b57-4151-a15c-db9a12345678",
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "InstanceId": "i-0471e04240EXAMPLE",
             "InstanceName": "",
-            "Comment": "b48291dd-ba76-43e0-b9df-13e11ddaac26:6960febb-2907-4b59-8e1a-d6ce8EXAMPLE",
+            "Comment": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "DocumentName": "AWS-UpdateSSMAgent",
             "DocumentVersion": "",
             "RequestedDateTime": 1582136283.02,
@@ -4545,12 +4900,12 @@ Output:
                     "ResponseCode": 0,
                     "ResponseStartDateTime": 1582136283.812,
                     "ResponseFinishDateTime": 1582136295.031,
-                    "Output": "Updating amazon-ssm-agent from 2.3.672.0 to latest\nSuccessfully downloaded https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/ssm-agent-manifest.json\nSuccessfully downloaded https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/amazon-ssm-agent-updater/2.3.842.0/amazon-ssm-agent-updater-snap-amd64.tar.gz\nSuccessfully downloaded https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/amazon-ssm-agent/2.3.672.0/amazon-ssm-agent-snap-amd64.tar.gz\nSuccessfully downloaded https://s3.us-east-2.amazonaws.com/amazon-ssm-us-east-2/amazon-ssm-agent/2.3.842.0/amazon-ssm-agent-snap-amd64.tar.gz\nInitiating amazon-ssm-agent update to 2.3.842.0\namazon-ssm-agent updated successfully to 2.3.842.0",
+                    "Output": "Updating amazon-ssm-agent from 2.3.672.0 to latest\nSuccessfully downloaded https://s3.us-west-2.amazonaws.com/amazon-ssm-us-east-2/ssm-agent-manifest.json\nSuccessfully downloaded https://s3.us-west-2.amazonaws.com/amazon-ssm-us-east-2/amazon-ssm-agent-updater/2.3.842.0/amazon-ssm-agent-updater-snap-amd64.tar.gz\nSuccessfully downloaded https://s3.us-west-2.amazonaws.com/amazon-ssm-us-east-2/amazon-ssm-agent/2.3.672.0/amazon-ssm-agent-snap-amd64.tar.gz\nSuccessfully downloaded https://s3.us-west-2.amazonaws.com/amazon-ssm-us-east-2/amazon-ssm-agent/2.3.842.0/amazon-ssm-agent-snap-amd64.tar.gz\nInitiating amazon-ssm-agent update to 2.3.842.0\namazon-ssm-agent updated successfully to 2.3.842.0",
                     "StandardOutputUrl": "",
                     "StandardErrorUrl": "",
-                    "OutputS3Region": "us-east-2",
+                    "OutputS3Region": "us-west-2",
                     "OutputS3BucketName": "",
-                    "OutputS3KeyPrefix": "8bee3135-398c-4d31-99b6-e42d2EXAMPLE/i-0471e04240EXAMPLE/awsupdateSsmAgent"
+                    "OutputS3KeyPrefix": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444/i-0471e04240EXAMPLE/awsupdateSsmAgent"
                 }
             ],
             "ServiceRole": "",
@@ -4581,7 +4936,53 @@ The following `list-commands` example retrieves and displays the status of the s
 
 ```
 aws ssm list-commands \
-    --command-id {{"0831e1a8-a1ac-4257-a1fd-c831bEXAMPLE"}}
+    --command-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+```
+Output:
+
+```
+{
+    "Commands": [
+        {
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "DocumentName": "AWS-RunShellScript",
+            "DocumentVersion": "1",
+            "Comment": "",
+            "ExpiresAfter": "2020-02-19T12:28:02.500000-08:00",
+            "Parameters": {
+                "commands": [
+                    "ifconfig"
+                ]
+            },
+            "InstanceIds": [
+                "i-028ea792daEXAMPLE"
+            ],
+            "Targets": [],
+            "RequestedDateTime": "2020-02-19T11:18:02.500000-08:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "OutputS3BucketName": "",
+            "OutputS3KeyPrefix": "",
+            "MaxConcurrency": "50",
+            "MaxErrors": "0",
+            "TargetCount": 1,
+            "CompletedCount": 1,
+            "ErrorCount": 0,
+            "DeliveryTimedOutCount": 0,
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            },
+            "TimeoutSeconds": 3600
+        }
+    ]
+}
 ```
 **Example 2: To get the status of commands requested after a specific date**
 The following `list-commands` example retrieves the details of commands requested after the specified date.
@@ -4590,22 +4991,16 @@ The following `list-commands` example retrieves the details of commands requeste
 aws ssm list-commands \
     --filter {{"key=InvokedAfter,value=2020-02-01T00:00:00Z"}}
 ```
-**Example 3: To list all commands requested in an AWS account**
-The following `list-commands` example lists all commands requested by users in the current AWS account and Region.
-
-```
-aws ssm list-commands
-```
 Output:
 
 ```
 {
     "Commands": [
         {
-            "CommandId": "8bee3135-398c-4d31-99b6-e42d2EXAMPLE",
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "DocumentName": "AWS-UpdateSSMAgent",
             "DocumentVersion": "",
-            "Comment": "b48291dd-ba76-43e0-b9df-13e11ddaac26:6960febb-2907-4b59-8e1a-d6ce8EXAMPLE",
+            "Comment": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333:a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "ExpiresAfter": "2020-02-19T11:28:02.500000-08:00",
             "Parameters": {},
             "InstanceIds": [
@@ -4639,8 +5034,60 @@ Output:
                 "CloudWatchOutputEnabled": false
             }
         }
+    ]
+}
+```
+**Example 3: To list all commands requested in an AWS account**
+The following `list-commands` example lists all commands requested by users in the current AWS account and Region.
+
+```
+aws ssm list-commands
+```
+Output:
+
+```
+{
+    "Commands": [
         {
-            "CommandId": "e9ade581-c03d-476b-9b07-26667EXAMPLE",
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "DocumentName": "AWS-UpdateSSMAgent",
+            "DocumentVersion": "",
+            "Comment": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333:a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+            "ExpiresAfter": "2020-02-19T11:28:02.500000-08:00",
+            "Parameters": {},
+            "InstanceIds": [
+                "i-028ea792daEXAMPLE",
+                "i-02feef8c46EXAMPLE",
+                "i-038613f3f0EXAMPLE",
+                "i-03a530a2d4EXAMPLE",
+                "i-083b678d37EXAMPLE",
+                "i-0dee81debaEXAMPLE"
+            ],
+            "Targets": [],
+            "RequestedDateTime": "2020-02-19T10:18:02.500000-08:00",
+            "Status": "Success",
+            "StatusDetails": "Success",
+            "OutputS3BucketName": "",
+            "OutputS3KeyPrefix": "",
+            "MaxConcurrency": "50",
+            "MaxErrors": "100%",
+            "TargetCount": 6,
+            "CompletedCount": 6,
+            "ErrorCount": 0,
+            "DeliveryTimedOutCount": 0,
+            "ServiceRole": "",
+            "NotificationConfig": {
+                "NotificationArn": "",
+                "NotificationEvents": [],
+                "NotificationType": ""
+            },
+            "CloudWatchOutputConfig": {
+                "CloudWatchLogGroupName": "",
+                "CloudWatchOutputEnabled": false
+            }
+        },
+        {
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
             "DocumentName": "AWS-FindWindowsUpdates",
             "DocumentVersion": "1",
             "Comment": "",
@@ -4674,9 +5121,9 @@ Output:
             "CompletedCount": 2,
             "ErrorCount": 0,
             "DeliveryTimedOutCount": 0,
-            "ServiceRole": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRole": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "NotificationConfig": {
-                "NotificationArn": "arn:aws:sns:us-east-2:111222333444:my-us-east-2-notification-arn",
+                "NotificationArn": "arn:aws:sns:us-west-2:123456789012:my-us-east-2-notification-arn",
                 "NotificationEvents": [
                     "All"
                 ],
@@ -4686,9 +5133,9 @@ Output:
                 "CloudWatchLogGroupName": "",
                 "CloudWatchOutputEnabled": false
             }
-        }
+        },
         {
-            "CommandId": "d539b6c3-70e8-4853-80e5-0ce4fEXAMPLE",
+            "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
             "DocumentName": "AWS-RunPatchBaseline",
             "DocumentVersion": "1",
             "Comment": "",
@@ -4728,9 +5175,9 @@ Output:
             "CompletedCount": 2,
             "ErrorCount": 0,
             "DeliveryTimedOutCount": 0,
-            "ServiceRole": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+            "ServiceRole": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
             "NotificationConfig": {
-                "NotificationArn": "arn:aws:sns:us-east-2:111222333444:my-us-east-2-notification-arn",
+                "NotificationArn": "arn:aws:sns:us-west-2:123456789012:my-us-east-2-notification-arn",
                 "NotificationEvents": [
                     "All"
                 ],
@@ -4753,69 +5200,124 @@ For more information, see [Running Commands Using Systems Manager Run Command](h
 The following code example shows how to use `list-compliance-items`.
 
 **AWS CLI**
-**To list compliance items for a specific instance**
-This example lists all compliance items for the specified instance.
-Command:
+**Example 1: To list compliance items for a specific instance**
+The following `list-compliance-items` example lists all compliance items for the specified instance.
 
 ```
-aws ssm list-compliance-items --resource-ids {{"i-1234567890abcdef0"}} --resource-types {{"ManagedInstance"}}
+aws ssm list-compliance-items \
+    --resource-ids {{"i-1234567890abcdef0"}} \
+    --resource-types {{"ManagedInstance"}}
 ```
 Output:
 
 ```
 {
-  "ComplianceItems": [
-      {
-          "ComplianceType": "Association",
-          "ResourceType": "ManagedInstance",
-          "ResourceId": "i-1234567890abcdef0",
-          "Id": "8dfe3659-4309-493a-8755-0123456789ab",
-          "Title": "",
-          "Status": "COMPLIANT",
-          "Severity": "UNSPECIFIED",
-          "ExecutionSummary": {
-              "ExecutionTime": 1550408470.0
-          },
-          "Details": {
-              "DocumentName": "AWS-GatherSoftwareInventory",
-              "DocumentVersion": "1"
-          }
-      },
-      {
-          "ComplianceType": "Association",
-          "ResourceType": "ManagedInstance",
-          "ResourceId": "i-1234567890abcdef0",
-          "Id": "e4c2ed6d-516f-41aa-aa2a-0123456789ab",
-          "Title": "",
-          "Status": "COMPLIANT",
-          "Severity": "UNSPECIFIED",
-          "ExecutionSummary": {
-              "ExecutionTime": 1550508475.0
-          },
-          "Details": {
-              "DocumentName": "AWS-UpdateSSMAgent",
-              "DocumentVersion": "1"
-          }
-      },
-              ...
-  ],
-  "NextToken": "--token string truncated--"
+    "ComplianceItems": [
+        {
+            "ComplianceType": "Association",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-1234567890abcdef0",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Title": "",
+            "Status": "COMPLIANT",
+            "Severity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550408470.0
+            },
+            "Details": {
+                "DocumentName": "AWS-GatherSoftwareInventory",
+                "DocumentVersion": "1"
+            }
+        },
+        {
+            "ComplianceType": "Association",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-1234567890abcdef0",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Title": "",
+            "Status": "COMPLIANT",
+            "Severity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550508475.0
+            },
+            "Details": {
+                "DocumentName": "AWS-UpdateSSMAgent",
+                "DocumentVersion": "1"
+            }
+    }
+    ],
+    "NextToken": "--token string truncated--"
 }
 ```
-**To list compliance items for a specific instance and association ID**
-This example lists all compliance items for the specified instance and association ID.
-Command:
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To list compliance items for a specific instance and association ID**
+The following `list-compliance-items` example lists all compliance items for the specified instance and association ID.
 
 ```
-aws ssm list-compliance-items --resource-ids {{"i-1234567890abcdef0"}} --resource-types {{"ManagedInstance"}} --filters {{"Key=ComplianceType,Values=Association,Type=EQUAL"}} {{"Key=Id,Values=e4c2ed6d-516f-41aa-aa2a-0123456789ab,Type=EQUAL"}}
+aws ssm list-compliance-items \
+    --resource-ids {{"i-1234567890abcdef0"}} \
+    --resource-types {{"ManagedInstance"}} \
+    --filters {{"Key=ComplianceType,Values=Association,Type=EQUAL"}} {{"Key=Id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,Type=EQUAL"}}
 ```
-**To list compliance items for a instance after a specific date and time**
-This example lists all compliance items for an instance after the specified date and time.
-Command:
+Output:
 
 ```
-aws ssm list-compliance-items --resource-ids {{"i-1234567890abcdef0"}} --resource-types {{"ManagedInstance"}} --filters {{"Key=ExecutionTime,Values=2019-02-18T16:00:00Z,Type=GREATER_THAN"}}
+{
+    "ComplianceItems": [
+        {
+            "ComplianceType": "Association",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-1234567890abcdef0",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Title": "",
+            "Status": "COMPLIANT",
+            "Severity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550508475.0
+            },
+            "Details": {
+                "DocumentName": "AWS-UpdateSSMAgent",
+                "DocumentVersion": "1"
+            }
+        }
+    ]
+}
 ```
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
+**Example 3: To list compliance items for an instance after a specific date and time**
+The following `list-compliance-items` example lists all compliance items for an instance after the specified date and time.
+
+```
+aws ssm list-compliance-items \
+    --resource-ids {{"i-1234567890abcdef0"}} \
+    --resource-types {{"ManagedInstance"}} \
+    --filters {{"Key=ExecutionTime,Values=2019-02-18T16:00:00Z,Type=GREATER_THAN"}}
+```
+Output:
+
+```
+{
+    "ComplianceItems": [
+        {
+            "ComplianceType": "Association",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-1234567890abcdef0",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Title": "",
+            "Status": "COMPLIANT",
+            "Severity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550508475.0
+            },
+            "Details": {
+                "DocumentName": "AWS-UpdateSSMAgent",
+                "DocumentVersion": "1"
+            }
+        }
+    ]
+}
+```
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListComplianceItems](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-compliance-items.html) in *AWS CLI Command Reference*.
 
 ### `list-compliance-summaries`
@@ -4824,9 +5326,8 @@ aws ssm list-compliance-items --resource-ids {{"i-1234567890abcdef0"}} --resourc
 The following code example shows how to use `list-compliance-summaries`.
 
 **AWS CLI**
-**To list compliance summaries for all compliance types**
-This example lists compliance summaries for all compliance types in your account.
-Command:
+**Example 1: To list compliance summaries for all compliance types**
+The following `list-compliance-summaries` example lists compliance summaries for all compliance types in your account.
 
 ```
 aws ssm list-compliance-summaries
@@ -4835,69 +5336,103 @@ Output:
 
 ```
 {
-  "ComplianceSummaryItems": [
-      {
-          "ComplianceType": "Association",
-          "CompliantSummary": {
-              "CompliantCount": 2,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 2
-              }
-          },
-          "NonCompliantSummary": {
-              "NonCompliantCount": 0,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 0
-              }
-          }
-      },
-      {
-          "ComplianceType": "Patch",
-          "CompliantSummary": {
-              "CompliantCount": 1,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 1
-              }
-          },
-          "NonCompliantSummary": {
-              "NonCompliantCount": 1,
-              "SeveritySummary": {
-                  "CriticalCount": 1,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 0
-              }
-          }
-      },
-              ...
-  ],
-  "NextToken": "eyJOZXh0VG9rZW4iOiBudWxsLCAiYm90b190cnVuY2F0ZV9hbW91bnQiOiAyfQ=="
+    "ComplianceSummaryItems": [
+        {
+            "ComplianceType": "Association",
+            "CompliantSummary": {
+                "CompliantCount": 2,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 2
+                }
+            },
+            "NonCompliantSummary": {
+                "NonCompliantCount": 0,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 0
+                }
+            }
+        },
+        {
+            "ComplianceType": "Patch",
+            "CompliantSummary": {
+                "CompliantCount": 1,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 1
+                }
+            },
+            "NonCompliantSummary": {
+                "NonCompliantCount": 1,
+                "SeveritySummary": {
+                    "CriticalCount": 1,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 0
+                }
+            }
+    }
+    ],
+    "NextToken": "eyJOZXh0VG9rZW4iOiBudWxsLCAiYm90b190cnVuY2F0ZV9hbW91bnQiOiAyfQ=="
 }
 ```
-**To list compliance summaries for a specific compliance type**
-This example lists the compliance summary for the Patch compliance type.
-Command:
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To list compliance summaries for a specific compliance type**
+The following `list-compliance-summaries` example lists the compliance summary for the Patch compliance type.
 
 ```
-aws ssm list-compliance-summaries --filters {{"Key=ComplianceType,Values=Patch,Type=EQUAL"}}
+aws ssm list-compliance-summaries \
+    --filters {{"Key=ComplianceType,Values=Patch,Type=EQUAL"}}
 ```
+Output:
+
+```
+{
+    "ComplianceSummaryItems": [
+        {
+            "ComplianceType": "Patch",
+            "CompliantSummary": {
+                "CompliantCount": 1,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 1
+                }
+            },
+            "NonCompliantSummary": {
+                "NonCompliantCount": 1,
+                "SeveritySummary": {
+                    "CriticalCount": 1,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 0
+                }
+            }
+        }
+    ]
+}
+```
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListComplianceSummaries](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-compliance-summaries.html) in *AWS CLI Command Reference*.
 
 ### `list-document-metadata-history`
@@ -4906,7 +5441,7 @@ aws ssm list-compliance-summaries --filters {{"Key=ComplianceType,Values=Patch,T
 The following code example shows how to use `list-document-metadata-history`.
 
 **AWS CLI**
-**Example: To view approval history and status for a change template**
+**To view approval history and status for a change template**
 The following `list-document-metadata-history` example returns the approval history for the specified Change Manager change template.
 
 ```
@@ -4920,7 +5455,7 @@ Output:
 {
     "Name": "MyChangeManagerTemplate",
     "DocumentVersion": "1",
-    "Author": "arn:aws:iam::111222333444;:user/JohnDoe",
+    "Author": "arn:aws:iam::123456789012;:user/JohnDoe",
     "Metadata": {
         "ReviewerResponse": [
             {
@@ -4933,7 +5468,7 @@ Output:
                         "Content": "I approve this template version"
                     }
                 ],
-                "Reviewer": "arn:aws:iam::111222333444;:user/ShirleyRodriguez"
+                "Reviewer": "arn:aws:iam::123456789012;:user/ShirleyRodriguez"
             },
             {
                 "CreateTime": "2021-07-30T11:58:28.025000-07:00",
@@ -5057,7 +5592,7 @@ The following code example shows how to use `list-inventory-entries`.
 
 **AWS CLI**
 **Example 1: To view specific inventory type entries for an instance**
-This following `list-inventory-entries` example lists the inventory entries for the AWS:Application inventory type on a specific instance.
+The following `list-inventory-entries` example lists the inventory entries for the AWS:Application inventory type on a specific instance.
 
 ```
 aws ssm list-inventory-entries \
@@ -5068,28 +5603,29 @@ Output:
 
 ```
 {
-  "TypeName": "AWS:Application",
-  "InstanceId": "i-1234567890abcdef0",
-  "SchemaVersion": "1.1",
-  "CaptureTime": "2019-02-15T12:17:55Z",
-  "Entries": [
-    {
-      "Architecture": "i386",
-      "Name": "Amazon SSM Agent",
-      "PackageId": "{88a60be2-89a1-4df8-812a-80863c2a2b68}",
-      "Publisher": "Amazon Web Services",
-      "Version": "2.3.274.0"
-    },
-    {
-      "Architecture": "x86_64",
-      "InstalledTime": "2018-05-03T13:42:34Z",
-      "Name": "AmazonCloudWatchAgent",
-      "Publisher": "",
-      "Version": "1.200442.0"
-    }
-  ]
+    "TypeName": "AWS:Application",
+    "InstanceId": "i-1234567890abcdef0",
+    "SchemaVersion": "1.1",
+    "CaptureTime": "2019-02-15T12:17:55Z",
+    "Entries": [
+        {
+            "Architecture": "i386",
+            "Name": "Amazon SSM Agent",
+            "PackageId": "{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}",
+            "Publisher": "Amazon Web Services",
+            "Version": "2.3.274.0"
+        },
+        {
+            "Architecture": "x86_64",
+            "InstalledTime": "2018-05-03T13:42:34Z",
+            "Name": "AmazonCloudWatchAgent",
+            "Publisher": "",
+            "Version": "1.200442.0"
+        }
+    ]
 }
 ```
+For more information, see [AWS Systems Manager Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-inventory.html) in the *AWS Systems Manager User Guide*.
 **Example 2: To view custom inventory entries assigned to an instance**
 The following `list-inventory-entries` example lists a custom inventory entry assigned to an instance.
 
@@ -5102,17 +5638,18 @@ Output:
 
 ```
 {
-  "TypeName": "Custom:RackInfo",
-  "InstanceId": "i-1234567890abcdef0",
-  "SchemaVersion": "1.0",
-  "CaptureTime": "2021-05-22T10:01:01Z",
-  "Entries": [
-    {
-      "RackLocation": "Bay B/Row C/Rack D/Shelf E"
-    }
-  ]
+    "TypeName": "Custom:RackInfo",
+    "InstanceId": "i-1234567890abcdef0",
+    "SchemaVersion": "1.0",
+    "CaptureTime": "2021-05-22T10:01:01Z",
+    "Entries": [
+        {
+            "RackLocation": "Bay B/Row C/Rack D/Shelf E"
+        }
+    ]
 }
 ```
+For more information, see [Assigning custom inventory metadata to a managed node](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-custom-metadata.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListInventoryEntries](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-inventory-entries.html) in *AWS CLI Command Reference*.
 
 ### `list-ops-item-related-items`
@@ -5135,23 +5672,23 @@ Output:
     "Summaries": [
         {
             "OpsItemId": "oi-f99f2EXAMPLE",
-            "AssociationId": "e2036148-cccb-490e-ac2a-390e5EXAMPLE",
+            "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ResourceType": "AWS::SSMIncidents::IncidentRecord",
             "AssociationType": "IsParentOf",
-            "ResourceUri": "arn:aws:ssm-incidents::111122223333:incident-record/example-response/64bd9b45-1d0e-2622-840d-03a87a1451fa",
+            "ResourceUri": "arn:aws:ssm-incidents::123456789012:incident-record/example-response/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "CreatedBy": {
-                "Arn": "arn:aws:sts::111122223333:assumed-role/AWSServiceRoleForIncidentManager/IncidentResponse"
+                "Arn": "arn:aws:sts::123456789012:assumed-role/AWSServiceRoleForIncidentManager/IncidentResponse"
             },
             "CreatedTime": "2021-08-11T18:47:14.994000+00:00",
             "LastModifiedBy": {
-                "Arn": "arn:aws:sts::111122223333:assumed-role/AWSServiceRoleForIncidentManager/IncidentResponse"
+                "Arn": "arn:aws:sts::123456789012:assumed-role/AWSServiceRoleForIncidentManager/IncidentResponse"
             },
             "LastModifiedTime": "2021-08-11T18:47:14.994000+00:00"
         }
     ]
 }
 ```
-For more information, see [Working with Incident Manager incidents in OpsCenter](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-create-OpsItems-for-Incident-Manager.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Creating an incident for an OpsItem](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-working-with-OpsItems-create-an-incident.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListOpsItemRelatedItems](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-ops-item-related-items.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-compliance-summaries`
@@ -5160,9 +5697,8 @@ For more information, see [Working with Incident Manager incidents in OpsCenter]
 The following code example shows how to use `list-resource-compliance-summaries`.
 
 **AWS CLI**
-**To list resource-level compliance summary counts**
-This example lists resource-level compliance summary counts.
-Command:
+**Example 1: To list resource-level compliance summary counts**
+The following `list-resource-compliance-summaries` example lists resource-level compliance summary counts.
 
 ```
 aws ssm list-resource-compliance-summaries
@@ -5171,84 +5707,128 @@ Output:
 
 ```
 {
-  "ResourceComplianceSummaryItems": [
-      {
-          "ComplianceType": "Association",
-          "ResourceType": "ManagedInstance",
-          "ResourceId": "i-1234567890abcdef0",
-          "Status": "COMPLIANT",
-          "OverallSeverity": "UNSPECIFIED",
-          "ExecutionSummary": {
-              "ExecutionTime": 1550509273.0
-          },
-          "CompliantSummary": {
-              "CompliantCount": 2,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 2
-              }
-          },
-          "NonCompliantSummary": {
-              "NonCompliantCount": 0,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 0
-              }
-          }
-      },
-      {
-          "ComplianceType": "Patch",
-          "ResourceType": "ManagedInstance",
-          "ResourceId": "i-9876543210abcdef0",
-          "Status": "COMPLIANT",
-          "OverallSeverity": "UNSPECIFIED",
-          "ExecutionSummary": {
-              "ExecutionTime": 1550248550.0,
-              "ExecutionId": "7abb6378-a4a5-4f10-8312-0123456789ab",
-              "ExecutionType": "Command"
-          },
-          "CompliantSummary": {
-              "CompliantCount": 397,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 397
-              }
-          },
-          "NonCompliantSummary": {
-              "NonCompliantCount": 0,
-              "SeveritySummary": {
-                  "CriticalCount": 0,
-                  "HighCount": 0,
-                  "MediumCount": 0,
-                  "LowCount": 0,
-                  "InformationalCount": 0,
-                  "UnspecifiedCount": 0
-              }
-          }
-      }
-  ],
-  "NextToken": "--token string truncated--"
+    "ResourceComplianceSummaryItems": [
+        {
+            "ComplianceType": "Association",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-1234567890abcdef0",
+            "Status": "COMPLIANT",
+            "OverallSeverity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550509273.0
+            },
+            "CompliantSummary": {
+                "CompliantCount": 2,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 2
+                }
+            },
+            "NonCompliantSummary": {
+                "NonCompliantCount": 0,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 0
+                }
+            }
+        },
+        {
+            "ComplianceType": "Patch",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-9876543210abcdef0",
+            "Status": "COMPLIANT",
+            "OverallSeverity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550248550.0,
+                "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "ExecutionType": "Command"
+            },
+            "CompliantSummary": {
+                "CompliantCount": 397,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 397
+                }
+            },
+            "NonCompliantSummary": {
+                "NonCompliantCount": 0,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 0
+                }
+            }
+        }
+    ],
+    "NextToken": "--token string truncated--"
 }
 ```
-**To list resource-level compliance summaries for a specific compliance type**
-This example lists resource-level compliance summaries for the Patch compliance type.
-Command:
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To list resource-level compliance summaries for a specific compliance type**
+The following `list-resource-compliance-summaries` example lists resource-level compliance summaries for the Patch compliance type.
 
 ```
-aws ssm list-resource-compliance-summaries --filters {{"Key=ComplianceType,Values=Patch,Type=EQUAL"}}
+aws ssm list-resource-compliance-summaries \
+    --filters {{"Key=ComplianceType,Values=Patch,Type=EQUAL"}}
 ```
+Output:
+
+```
+{
+    "ResourceComplianceSummaryItems": [
+        {
+            "ComplianceType": "Patch",
+            "ResourceType": "ManagedInstance",
+            "ResourceId": "i-9876543210abcdef0",
+            "Status": "COMPLIANT",
+            "OverallSeverity": "UNSPECIFIED",
+            "ExecutionSummary": {
+                "ExecutionTime": 1550248550.0,
+                "ExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "ExecutionType": "Command"
+            },
+            "CompliantSummary": {
+                "CompliantCount": 397,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 397
+                }
+            },
+            "NonCompliantSummary": {
+                "NonCompliantCount": 0,
+                "SeveritySummary": {
+                    "CriticalCount": 0,
+                    "HighCount": 0,
+                    "MediumCount": 0,
+                    "LowCount": 0,
+                    "InformationalCount": 0,
+                    "UnspecifiedCount": 0
+                }
+            }
+        }
+    ]
+}
+```
+For more information, see [Learn details about Compliance](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-about.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListResourceComplianceSummaries](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-resource-compliance-summaries.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-data-sync`
@@ -5258,7 +5838,7 @@ The following code example shows how to use `list-resource-data-sync`.
 
 **AWS CLI**
 **To list your resource data sync configurations**
-This example retrieves information about your resource data sync configurations.
+The following `list-resource-data-sync` example retrieves information about your resource data sync configurations.
 
 ```
 aws ssm list-resource-data-sync
@@ -5271,9 +5851,9 @@ Output:
         {
             "SyncName": "MyResourceDataSync",
             "S3Destination": {
-                "BucketName": "ssm-resource-data-sync",
+                "BucketName": "amzn-s3-demo-bucket",
                 "SyncFormat": "JsonSerDe",
-                "Region": "us-east-1"
+                "Region": "us-west-2"
             },
             "LastSyncTime": 1550261472.003,
             "LastSuccessfulSyncTime": 1550261472.003,
@@ -5284,6 +5864,7 @@ Output:
     ]
 }
 ```
+For more information, see [Creating a resource data sync for Inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-create-resource-data-sync.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListResourceDataSync](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-resource-data-sync.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -5316,7 +5897,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+For more information, see [Working with Patch Manager resources using the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-cli-commands.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `modify-document-permission`
@@ -5345,12 +5926,18 @@ The following code example shows how to use `put-compliance-items`.
 
 **AWS CLI**
 **To register a compliance type and compliance details to a designated instance**
-This example registers the compliance type `Custom:AVCheck` to the specified managed instance. There is no output if the command succeeds.
-Command:
+The following `put-compliance-items` example registers the compliance type `Custom:AVCheck` to the specified managed instance.
 
 ```
-aws ssm put-compliance-items --resource-id {{"i-1234567890abcdef0"}} --resource-type {{"ManagedInstance"}} --compliance-type {{"Custom:AVCheck"}} --execution-summary {{"ExecutionTime=2019-02-18T16:00:00Z"}} --items {{"Id=Version2.0,Title=ScanHost,Severity=CRITICAL,Status=COMPLIANT"}}
+aws ssm put-compliance-items \
+    --resource-id {{"i-1234567890abcdef0"}} \
+    --resource-type {{"ManagedInstance"}} \
+    --compliance-type {{"Custom:AVCheck"}} \
+    --execution-summary {{"ExecutionTime=2019-02-18T16:00:00Z"}} \
+    --items {{"Id=Version2.0,Title=ScanHost,Severity=CRITICAL,Status=COMPLIANT"}}
 ```
+This command produces no output.
+For more information, see [Assign custom compliance metadata using the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/compliance-custom-metadata-cli.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [PutComplianceItems](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/put-compliance-items.html) in *AWS CLI Command Reference*.
 
 ### `put-inventory`
@@ -5360,17 +5947,23 @@ The following code example shows how to use `put-inventory`.
 
 **AWS CLI**
 **To assign customer metadata to an instance**
-This example assigns rack location information to an instance. There is no output if the command succeeds.
-Command (Linux):
+The following `put-inventory` example assigns rack location information to an instance.
+Linux version.
 
 ```
-aws ssm put-inventory --instance-id {{"i-016648b75dd622dab"}} --items '{{[{"TypeName": "Custom:RackInfo","SchemaVersion": "1.0","CaptureTime": "2019-01-22T10:01:01Z","Content":[{"RackLocation": "Bay B/Row C/Rack D/Shelf E"}]}]}}'
+aws ssm put-inventory \
+    --instance-id {{"i-016648b75dd622dab"}} \
+    --items '{{[{"TypeName": "Custom:RackInfo","SchemaVersion": "1.0","CaptureTime": "2019-01-22T10:01:01Z","Content":[{"RackLocation": "Bay B/Row C/Rack D/Shelf E"}]}]}}'
 ```
-Command (Windows):
+Windows version.
 
 ```
-aws ssm put-inventory --instance-id {{"i-016648b75dd622dab"}} --items {{"TypeName=Custom:RackInfo,SchemaVersion=1.0,CaptureTime=2019-01-22T10:01:01Z,Content=[{RackLocation='Bay B/Row C/Rack D/Shelf F'}]"}}
+aws ssm put-inventory {{^}}
+    --instance-id {{"i-016648b75dd622dab"}} {{^}}
+    --items {{"TypeName=Custom:RackInfo,SchemaVersion=1.0,CaptureTime=2019-01-22T10:01:01Z,Content=[{RackLocation='Bay B/Row C/Rack D/Shelf F'}]"}}
 ```
+This command produces no output.
+For more information, see [Working with custom inventory](https://docs.aws.amazon.com/systems-manager/latest/userguide/inventory-custom.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [PutInventory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/put-inventory.html) in *AWS CLI Command Reference*.
 
 ### `put-parameter`
@@ -5467,7 +6060,7 @@ aws ssm put-parameter \
     --value {{"N3wP@sSwW)rd"}} \
     --type {{"SecureString"}} \
     --tier {{Advanced}} \
-    --policies "[{\"Type\":\"Expiration\",\"Version\":\"1.0\",\"Attributes\":{\"Timestamp\":\"2020-06-30T00:00:00.000Z\"}},{\"Type\":\"ExpirationNotification\",\"Version\":\"1.0\",\"Attributes\":{\"Before\":\"5\",\"Unit\":\"Days\"}},{\"Type\":\"NoChangeNotification\",\"Version\":\"1.0\",\"Attributes\":{\"After\":\"60\",\"Unit\":\"Days\"}}]"
+    --policies "[{\"Type\":\"Expiration\",\"Version\":\"1.0\",\"Attributes\":{\"Timestamp\":\"2020-06-30T00:00:00.000Z\"}},{\"Type\":\"ExpirationNotification\",\"Version\":\"1.0\",\"Attributes\":{\"Before\":\"5\",\"Unit\":\"Days\"}},{\"Type\":\"NoChangeNotification\",\"Version\":\"1.0\",\"Attributes\":{\"After\":\"60\",\"Unit\":\"Days\"}}]" \
     --overwrite
 ```
 Output:
@@ -5649,7 +6242,8 @@ aws ssm register-task-with-maintenance-window \
     --window-id {{"mw-082dcd7649EXAMPLE"}} \
     --targets {{Key=InstanceIds,Values=i-1234520122EXAMPLE}} \
     --task-arn {{AWS-RestartEC2Instance}} \
-    --service-role-arn {{arn:aws:iam::111222333444:role/SSM}} --task-type {{AUTOMATION}} \
+    --service-role-arn {{arn:aws:iam::123456789012:role/SSM}} \
+    --task-type {{AUTOMATION}} \
     --task-invocation-parameters "{\"Automation\":{\"DocumentVersion\":\"\$LATEST\",\"Parameters\":{\"InstanceId\":[\"{{RESOURCE_ID}}\"]}}}" \
     --priority {{0}} \
     --max-concurrency {{1}} \
@@ -5673,8 +6267,8 @@ aws ssm register-task-with-maintenance-window \
     --cli-binary-format {{raw-in-base64-out}} \
     --window-id {{"mw-082dcd7649dee04e4"}} \
     --targets {{Key=InstanceIds,Values=i-12344d305eEXAMPLE}} \
-    --task-arn {{arn:aws:lambda:us-east-1:111222333444:function:SSMTestLAMBDA}} \
-    --service-role-arn {{arn:aws:iam::111222333444:role/SSM}} \
+    --task-arn {{arn:aws:lambda:us-west-2:123456789012:function:SSMTestLAMBDA}} \
+    --service-role-arn {{arn:aws:iam::123456789012:role/SSM}} \
     --task-type {{LAMBDA}} \
     --task-invocation-parameters '{{{"Lambda":{"Payload":"{\"InstanceId\":\"{{RESOURCE_ID}}\",\"targetType\":\"{{TARGET_TYPE}}\"}","Qualifier":"$LATEST"}}}}' \
     --priority {{0}} \
@@ -5699,7 +6293,7 @@ aws ssm register-task-with-maintenance-window \
     --cli-binary-format {{raw-in-base64-out}} \
     --window-id {{"mw-082dcd7649dee04e4"}} \
     --targets {{"Key=InstanceIds,Values=i-12344d305eEXAMPLE"}} \
-    --service-role-arn {{"arn:aws:iam::111222333444:role/SSM"}} \
+    --service-role-arn {{"arn:aws:iam::123456789012:role/SSM"}} \
     --task-type {{"RUN_COMMAND"}} \
     --name {{"SSMInstallPowerShellModule"}} \
     --task-arn {{"AWS-InstallPowerShellModule"}} \
@@ -5723,9 +6317,9 @@ The following `register-task-with-maintenance-window` example registers a Step F
 aws ssm register-task-with-maintenance-window \
     --cli-binary-format {{raw-in-base64-out}} \
     --window-id {{"mw-1234d787d6EXAMPLE"}} \
-    --targets {{Key=WindowTargetIds,Values=12347414-69c3-49f8-95b8-ed2dcEXAMPLE}} \
-    --task-arn {{arn:aws:states:us-east-1:111222333444:stateMachine:SSMTestStateMachine}} \
-    --service-role-arn {{arn:aws:iam::111222333444:role/MaintenanceWindows}} \
+    --targets {{Key=WindowTargetIds,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --task-arn {{arn:aws:states:us-west-2:123456789012:stateMachine:SSMTestStateMachine}} \
+    --service-role-arn {{arn:aws:iam::123456789012:role/MaintenanceWindows}} \
     --task-type {{STEP_FUNCTIONS}} \
     --task-invocation-parameters '{{{"StepFunctions":{"Input":"{\"InstanceId\":\"{{RESOURCE_ID}}\"}"}}}}' \
     --priority {{0}} \
@@ -5748,9 +6342,9 @@ The following `register-task-with-maintenance-window` example registers a task u
 ```
 aws ssm register-task-with-maintenance-window \
     --cli-binary-format {{raw-in-base64-out}} \
-    --targets {{"Key=WindowTargetIds,Values=350d44e6-28cc-44e2-951f-4b2c9EXAMPLE"}} \
+    --targets {{"Key=WindowTargetIds,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"}} \
     --task-arn {{"AWS-RunShellScript"}} \
-    --service-role-arn {{"arn:aws:iam::111222333444:role/MaintenanceWindowsRole"}} \
+    --service-role-arn {{"arn:aws:iam::123456789012:role/MaintenanceWindowsRole"}} \
     --window-id {{"mw-ab12cd34eEXAMPLE"}} \
     --task-type {{"RUN_COMMAND"}} \
     --task-parameters  "{\"commands\":{\"Values\":[\"df\"]}}" \
@@ -5784,7 +6378,7 @@ aws ssm remove-tags-from-resource \
     --tag-keys {{"Region"}}
 ```
 This command produces no output.
-For more information, see [Tagging AWS Resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference*.
+For more information, see [Working with Patch Manager resources using the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-cli-commands.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [RemoveTagsFromResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/remove-tags-from-resource.html) in *AWS CLI Command Reference*.
 
 ### `reset-service-setting`
@@ -5798,7 +6392,7 @@ The following `reset-service-setting` example resets the service setting for Par
 
 ```
 aws ssm reset-service-setting \
-    --setting-id {{arn:aws:ssm:us-east-1:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled}}
+    --setting-id {{arn:aws:ssm:us-west-2:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled}}
 ```
 Output:
 
@@ -5809,12 +6403,12 @@ Output:
         "SettingValue": "false",
         "LastModifiedDate": 1555532818.578,
         "LastModifiedUser": "System",
-        "ARN": "arn:aws:ssm:us-east-1:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled",
+        "ARN": "arn:aws:ssm:us-west-2:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled",
         "Status": "Default"
     }
 }
 ```
-For more information, see [Increasing Parameter Store Throughput](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-throughput.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Managing Parameter Store throughput](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-throughput.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [ResetServiceSetting](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/reset-service-setting.html) in *AWS CLI Command Reference*.
 
 ### `resume-session`
@@ -5824,7 +6418,7 @@ The following code example shows how to use `resume-session`.
 
 **AWS CLI**
 **To resume a Session Manager session**
-This `resume-session` example resumes a Session Manager session with an instance after it has been disconnected. Note that this interactive command requires the Session Manager plugin to be installed on the client machine making the call.
+The following `resume-session` example resumes a Session Manager session with an instance after it has been disconnected. Note that this interactive command requires the Session Manager plugin to be installed on the client machine making the call.
 
 ```
 aws ssm resume-session \
@@ -5836,7 +6430,7 @@ Output:
 {
     "SessionId": "Mary-Major-07a16060613c408b5",
     "TokenValue": "AAEAAVbTGsaOnyvcUoNGqifbv5r/8lgxuQljCuY8qVcvOnoBAAAAAFxtd3jIXAFUUXGTJ7zF/AWJPwDviOlF5p3dlAgrqVIVO6IEXhkHLz0/1gXKRKEME71E6TLOplLDJAMZ+kREejkZu4c5AxMkrQjMF+gtHP1bYJKTwtHQd1wjulPLexO8SHl7g5R/wekrj6WsDUpnEegFBfGftpAIz2GXQVfTJXKfkc5qepQ11C11DOIT2dozOqXgHwfQHfAKLErM5dWDZqKwyT1Z3iw7unQdm3p5qsbrugiOZ7CRANTE+ihfGa6MEJJ97Jmat/a2TspEnOjNn9Mvu5iwXIW2yCvWZrGUj+/QI5Xr7s1XJBEnSKR54o4fN0GV9RWl0RZsZm1m1ki0JJtiwwgZ",
-    "StreamUrl": "wss://ssmmessages.us-east-2.amazonaws.com/v1/data-channel/Mary-Major-07a16060613c408b5?role=publish_subscribe"
+    "StreamUrl": "wss://ssmmessages.us-west-2.amazonaws.com/v1/data-channel/Mary-Major-07a16060613c408b5?role=publish_subscribe"
 }
 ```
 For more information, see [Install the Session Manager Plugin for the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html) in the *AWS Systems Manager User Guide*.
@@ -5853,7 +6447,7 @@ The following `send-automation-signal` example sends an Approve signal to an Aut
 
 ```
 aws ssm send-automation-signal \
-    --automation-execution-id {{73c8eef8-f4ee-4a05-820c-e354fEXAMPLE}} \
+    --automation-execution-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --signal-type {{"Approve"}}
 ```
 This command produces no output.
@@ -5881,7 +6475,7 @@ Output:
 ```
 {
     "Command": {
-        "CommandId": "92853adf-ba41-4cd6-9a88-142d1EXAMPLE",
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DocumentName": "AWS-RunShellScript",
         "DocumentVersion": "",
         "Comment": "echo HelloWorld",
@@ -5930,7 +6524,49 @@ aws ssm send-command \
     --comment {{"IP config"}} \
     --parameters {{"commands=ifconfig"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "",
+        "Comment": "IP config",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {
+            "commands": [
+                "ifconfig"
+            ]
+        },
+        "InstanceIds": [
+            "i-1234567890abcdef0"
+        ],
+        "Targets": [],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        }
+    }
+}
+```
 For more information, see [Running Commands Using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 **Example 3: To run a command on instances with specific tags**
 The following `send-command` example runs a command on instances that have the tag key "ENV" and the value "Dev".
@@ -5941,7 +6577,54 @@ aws ssm send-command \
     --document-name {{"AWS-RunShellScript"}} \
     --parameters {{"commands=ifconfig"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "",
+        "Comment": "",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {
+            "commands": [
+                "ifconfig"
+            ]
+        },
+        "InstanceIds": [],
+        "Targets": [
+            {
+                "Key": "tag:ENV",
+                "Values": [
+                    "Dev"
+                ]
+            }
+        ],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 0,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        }
+    }
+}
+```
 For more information, see [Running Commands Using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 **Example 4: To run a command that sends SNS notifications**
 The following `send-command` example runs a command that sends SNS notifications for all notification events and the `Command` notification type.
@@ -5953,9 +6636,53 @@ aws ssm send-command \
     --comment {{"IP config"}} \
     --parameters {{"commands=ifconfig"}} \
     --service-role-arn {{"arn:aws:iam::123456789012:role/SNS_Role"}} \
-    --notification-config {{"NotificationArn=arn:aws:sns:us-east-1:123456789012:SNSTopicName,NotificationEvents=All,NotificationType=Command"}}
+    --notification-config {{"NotificationArn=arn:aws:sns:us-west-2:123456789012:SNSTopicName,NotificationEvents=All,NotificationType=Command"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "",
+        "Comment": "IP config",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {
+            "commands": [
+                "ifconfig"
+            ]
+        },
+        "InstanceIds": [
+            "i-1234567890abcdef0"
+        ],
+        "Targets": [],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "arn:aws:iam::123456789012:role/SNS_Role",
+        "NotificationConfig": {
+            "NotificationArn": "arn:aws:sns:us-west-2:123456789012:SNSTopicName",
+            "NotificationEvents": [
+                "All"
+            ],
+            "NotificationType": "Command"
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        }
+    }
+}
+```
 For more information, see [Running Commands Using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 **Example 5: To run a command that outputs to S3 and CloudWatch**
 The following `send-command` example runs a command that outputs command details to an S3 bucket and to a CloudWatch Logs log group.
@@ -5970,7 +6697,49 @@ aws ssm send-command \
     --output-s3-key-prefix {{"runcommand"}} \
     --cloud-watch-output-config {{"CloudWatchOutputEnabled=true,CloudWatchLogGroupName=CWLGroupName"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+        "DocumentName": "AWS-RunShellScript",
+        "DocumentVersion": "",
+        "Comment": "IP config",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {
+            "commands": [
+                "ifconfig"
+            ]
+        },
+        "InstanceIds": [
+            "i-1234567890abcdef0"
+        ],
+        "Targets": [],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "s3-bucket-name",
+        "OutputS3KeyPrefix": "runcommand",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 1,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "CWLGroupName",
+            "CloudWatchOutputEnabled": true
+        }
+    }
+}
+```
 For more information, see [Running Commands Using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 **Example 6: To run commands on multiple instances with different tags**
 The following `send-command` example runs a command on instances with two different tag keys and values.
@@ -5981,7 +6750,60 @@ aws ssm send-command \
     --parameters commands=["echo helloWorld"] \
     --targets {{Key=tag:Env,Values=Dev}} {{Key=tag:Role,Values=WebServers}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+        "DocumentName": "AWS-RunPowerShellScript",
+        "DocumentVersion": "",
+        "Comment": "",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {
+            "commands": [
+                "echo helloWorld"
+            ]
+        },
+        "InstanceIds": [],
+        "Targets": [
+            {
+                "Key": "tag:Env",
+                "Values": [
+                    "Dev"
+                ]
+            },
+            {
+                "Key": "tag:Role",
+                "Values": [
+                    "WebServers"
+                ]
+            }
+        ],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 0,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        }
+    }
+}
+```
 For more information, see [Running Commands Using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 **Example 7: To target multiple instances with the same tag key**
 The following `send-command` example runs a command on instances that have the same tag key but with different values.
@@ -5992,17 +6814,108 @@ aws ssm send-command \
     --parameters commands=["echo helloWorld"] \
     --targets {{Key=tag:Env,Values=Dev,Test}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
+        "DocumentName": "AWS-RunPowerShellScript",
+        "DocumentVersion": "",
+        "Comment": "",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {
+            "commands": [
+                "echo helloWorld"
+            ]
+        },
+        "InstanceIds": [],
+        "Targets": [
+            {
+                "Key": "tag:Env",
+                "Values": [
+                    "Dev",
+                    "Test"
+                ]
+            }
+        ],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 0,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        }
+    }
+}
+```
 For more information, see [Running Commands Using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html) in the *AWS Systems Manager User Guide*.
 **Example 8: To run a command that uses a shared document**
 The following `send-command` example runs a shared document on a target instance.
 
 ```
 aws ssm send-command \
-    --document-name {{"arn:aws:ssm:us-east-1:123456789012:document/ExampleDocument"}} \
+    --document-name {{"arn:aws:ssm:us-west-2:123456789012:document/ExampleDocument"}} \
     --targets {{"Key=instanceids,Values=i-1234567890abcdef0"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "Command": {
+        "CommandId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
+        "DocumentName": "arn:aws:ssm:us-west-2:123456789012:document/ExampleDocument",
+        "DocumentVersion": "",
+        "Comment": "",
+        "ExpiresAfter": 1550181014.717,
+        "Parameters": {},
+        "InstanceIds": [],
+        "Targets": [
+            {
+                "Key": "instanceids",
+                "Values": [
+                    "i-1234567890abcdef0"
+                ]
+            }
+        ],
+        "RequestedDateTime": 1550173814.717,
+        "Status": "Pending",
+        "StatusDetails": "Pending",
+        "OutputS3BucketName": "",
+        "OutputS3KeyPrefix": "",
+        "MaxConcurrency": "50",
+        "MaxErrors": "0",
+        "TargetCount": 0,
+        "CompletedCount": 0,
+        "ErrorCount": 0,
+        "DeliveryTimedOutCount": 0,
+        "ServiceRole": "",
+        "NotificationConfig": {
+            "NotificationArn": "",
+            "NotificationEvents": [],
+            "NotificationType": ""
+        },
+        "CloudWatchOutputConfig": {
+            "CloudWatchLogGroupName": "",
+            "CloudWatchOutputEnabled": false
+        }
+    }
+}
+```
 For more information, see [Using shared SSM documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-using-shared.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [SendCommand](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/send-command.html) in *AWS CLI Command Reference*.
 
@@ -6017,7 +6930,7 @@ The following `start-associations-once` example run the specified association im
 
 ```
 aws ssm start-associations-once \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}}
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Viewing association histories](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-state-assoc-history.html) in the *AWS Systems Manager User Guide*.
@@ -6041,7 +6954,7 @@ Output:
 
 ```
 {
-  "AutomationExecutionId": "4105a4fc-f944-11e6-9d32-0a1b2EXAMPLE"
+    "AutomationExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Running an Automation Workflow Manually](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing-manually.html) in the *AWS Systems Manager User Guide*.
@@ -6050,13 +6963,13 @@ The following `start-automation-execution` example runs a shared Automation docu
 
 ```
 aws ssm start-automation-execution \
-    --document-name {{"arn:aws:ssm:us-east-1:123456789012:document/ExampleDocument"}}
+    --document-name {{"arn:aws:ssm:us-west-2:123456789012:document/ExampleDocument"}}
 ```
 Output:
 
 ```
 {
-  "AutomationExecutionId": "4105a4fc-f944-11e6-9d32-0a1b2EXAMPLE"
+    "AutomationExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Using shared SSM documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-using-shared.html) in the *AWS Systems Manager User Guide*.
@@ -6075,18 +6988,18 @@ The following `start-change-request-execution` example starts a change request w
 aws ssm start-change-request-execution \
     --change-request-name {{MyChangeRequest}} \
     --document-name {{AWS-HelloWorldChangeTemplate}} \
-    --runbooks '{{[{"DocumentName": "AWS-HelloWorld","Parameters": {"AutomationAssumeRole": ["arn:aws:iam:us-east-2:1112223233444:role/MyChangeManagerAssumeRole"]}}]}}' \
-    --parameters Approver="JohnDoe",ApproverType="IamUser",ApproverSnsTopicArn="arn:aws:sns:us-east-2:1112223233444:MyNotificationTopic"
+    --runbooks '{{[{"DocumentName": "AWS-HelloWorld","Parameters": {"AutomationAssumeRole": ["arn:aws:iam:us-west-2:1112223233444:role/MyChangeManagerAssumeRole"]}}]}}' \
+    --parameters Approver="JohnDoe",ApproverType="IamUser",ApproverSnsTopicArn="arn:aws:sns:us-west-2:1112223233444:MyNotificationTopic"
 ```
 Output:
 
 ```
 {
-  "AutomationExecutionId": "9d32a4fc-f944-11e6-4105-0a1b2EXAMPLE"
+    "AutomationExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To start a change request using an external JSON file**
-The following `start-automation-execution` example starts a change request with multiple options specified in a JSON file.
+The following `start-change-request-execution` example starts a change request with multiple options specified in a JSON file.
 
 ```
 aws ssm start-change-request-execution \
@@ -6115,7 +7028,7 @@ Contents of `MyChangeRequest.json`:
             "IamUser"
         ],
         "ApproverSnsTopicArn": [
-            "arn:aws:sns:us-east-2:111222333444;:MyNotificationTopic
+            "arn:aws:sns:us-west-2:123456789012;:MyNotificationTopic
         ]
     },
     "Runbooks": [
@@ -6126,7 +7039,7 @@ Contents of `MyChangeRequest.json`:
             "MaxErrors": "1",
             "Parameters": {
                 "AutomationAssumeRole": [
-                    "arn:aws:iam::111222333444:role/MyChangeManagerAssumeRole"
+                    "arn:aws:iam::123456789012:role/MyChangeManagerAssumeRole"
                 ]
             }
         }
@@ -6138,7 +7051,7 @@ Output:
 
 ```
 {
-  "AutomationExecutionId": "9d32a4fc-f944-11e6-4105-0a1b2EXAMPLE"
+    "AutomationExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Creating change requests](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-requests-create.html) in the *AWS Systems Manager User Guide*.
@@ -6151,7 +7064,7 @@ The following code example shows how to use `start-session`.
 
 **AWS CLI**
 **Example 1: To start a Session Manager session**
-This `start-session` example establishes a connection with an instance for a Session Manager session. Note that this interactive command requires the Session Manager plugin to be installed on the client machine making the call.
+The following `start-session` example establishes a connection with an instance for a Session Manager session. Note that this interactive command requires the Session Manager plugin to be installed on the client machine making the call.
 
 ```
 aws ssm start-session \
@@ -6163,7 +7076,7 @@ Output:
 Starting session with SessionId: Jane-Roe-07a16060613c408b5
 ```
 **Example 2: To start a Session Manager session using SSH**
-This `start-session` example establishes a connection with an instance for a Session Manager session using SSH. Note that this interactive command requires the Session Manager plugin to be installed on the client machine making the call, and that the command uses the default user on the instance, such as `ec2-user` for EC2 instances for Linux.
+The following `start-session` example establishes a connection with an instance for a Session Manager session using SSH. Note that this interactive command requires the Session Manager plugin to be installed on the client machine making the call, and that the command uses the default user on the instance, such as `ec2-user` for EC2 instances for Linux.
 
 ```
 ssh -i /path/my-key-pair.pem ec2-user@i-02573cafcfEXAMPLE
@@ -6186,8 +7099,8 @@ The following code example shows how to use `stop-automation-execution`.
 The following `stop-automation-execution` example stops an Automation document.
 
 ```
-aws ssm stop-automation-execution
-    --automation-execution-id {{"4105a4fc-f944-11e6-9d32-0a1b2EXAMPLE"}}
+aws ssm stop-automation-execution \
+    --automation-execution-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Running an Automation Workflow Manually](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-working-executing-manually.html) in the *AWS Systems Manager User Guide*.
@@ -6200,7 +7113,7 @@ The following code example shows how to use `terminate-session`.
 
 **AWS CLI**
 **To end a Session Manager session**
-This `terminate-session` example permanently ends a session that was created by the user "Shirley-Rodriguez" and closes the data connection between the Session Manager client and SSM Agent on the instance.
+The following `terminate-session` example permanently ends a session that was created by the user "Shirley-Rodriguez" and closes the data connection between the Session Manager client and SSM Agent on the instance.
 
 ```
 aws ssm terminate-session \
@@ -6236,8 +7149,8 @@ Output:
 ```
 {
     "RemovedLabels": [
-        "label_1"
-        "label_2"
+        "label_1",
+        "label_2",
         "label_3"
     ],
     "InvalidLabels": []
@@ -6284,7 +7197,7 @@ Output:
             }
         },
         "DocumentVersion": "$DEFAULT",
-        "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Targets": [
             {
                 "Key": "InstanceIds",
@@ -6298,7 +7211,7 @@ Output:
     }
 }
 ```
-For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-associations.html) in the *AWS Systems Manager User Guide*.
+For more information, see [Working with associations in Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-associations.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [UpdateAssociationStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/update-association-status.html) in *AWS CLI Command Reference*.
 
 ### `update-association`
@@ -6312,7 +7225,7 @@ The following `update-association` example updates an association with a new doc
 
 ```
 aws ssm update-association \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}} \
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --document-version {{"\$LATEST"}}
 ```
 Output:
@@ -6329,7 +7242,7 @@ Output:
             "DetailedStatus": "Creating"
         },
         "DocumentVersion": "$LATEST",
-        "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Targets": [
             {
                 "Key": "tag:Name",
@@ -6349,7 +7262,7 @@ The following `update-association` example updates the schedule expression for t
 
 ```
 aws ssm update-association \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}} \
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --schedule-expression {{"cron(0 0 0/4 1/1 * ? *)"}}
 ```
 Output:
@@ -6366,7 +7279,7 @@ Output:
             "DetailedStatus": "Creating"
         },
         "DocumentVersion": "$DEFAULT",
-        "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Targets": [
             {
                 "Key": "aws:NoOpAutomationTag",
@@ -6417,8 +7330,8 @@ For more information, see [Writing SSM Document Content](https://docs.aws.amazon
 The following code example shows how to use `update-document-metadata`.
 
 **AWS CLI**
-**Example: To approve the latest version of a change template**
-The following `update-document-metadata` provides an approval for the latest version of a change template that has been submitted for review.
+**To approve the latest version of a change template**
+The following `update-document-metadata` example provides an approval for the latest version of a change template that has been submitted for review.
 
 ```
 aws ssm update-document-metadata \
@@ -6437,7 +7350,7 @@ The following code example shows how to use `update-document`.
 **AWS CLI**
 **To create a new version of a document**
 The following `update-document` example creates a new version of a document when run on a Windows computer. The document specified by `--document` must be in JSON format. Note that `file://` must be referenced followed by the path of the content file. Because of the `$` at the beginning of the `--document-version` parameter, On Windows you must surround the value with double quotes. On Linux, MacOS, or at a PowerShell prompt, you must surround the value with single quotes.
-**Windows version**:
+Windows version.
 
 ```
 aws ssm update-document \
@@ -6445,7 +7358,7 @@ aws ssm update-document \
     --content {{"file://RunShellScript.json"}} \
     --document-version {{"$LATEST"}}
 ```
-**Linux/Mac version**:
+Linux/Mac version.
 
 ```
 aws ssm update-document \
@@ -6453,36 +7366,60 @@ aws ssm update-document \
     --content {{"file://RunShellScript.json"}} \
     --document-version '{{$LATEST}}'
 ```
+Contents of `RunShellScript.json`:
+
+```
+{
+    "schemaVersion": "2.0",
+    "description": "Run an updated script",
+    "parameters": {
+        "commands": {
+            "type": "StringList",
+            "description": "(Required) Specify a shell script or a command to run."
+        }
+    },
+    "mainSteps": [
+        {
+            "action": "aws:runShellScript",
+            "name": "runShellScript",
+            "inputs": {
+                "runCommand": "{{ commands }}"
+            }
+        }
+    ]
+}
+```
 Output:
 
 ```
 {
-  "DocumentDescription": {
-      "Status": "Updating",
-      "Hash": "f775e5df4904c6fa46686c4722fae9de1950dace25cd9608ff8d622046b68d9b",
-      "Name": "RunShellScript",
-      "Parameters": [
-          {
-              "Type": "StringList",
-              "Name": "commands",
-              "Description": "(Required) Specify a shell script or a command to run."
-          }
-      ],
-      "DocumentType": "Command",
-      "PlatformTypes": [
-          "Linux"
-      ],
-      "DocumentVersion": "2",
-      "HashType": "Sha256",
-      "CreatedDate": 1487899655.152,
-      "Owner": "809632081692",
-      "SchemaVersion": "2.0",
-      "DefaultVersion": "1",
-      "LatestVersion": "2",
-      "Description": "Run an updated script"
-  }
+    "DocumentDescription": {
+        "Status": "Updating",
+        "Hash": "f775e5df4904c6fa46686c4722fae9de1950dace25cd9608ff8d622046b68d9b",
+        "Name": "RunShellScript",
+        "Parameters": [
+            {
+                "Type": "StringList",
+                "Name": "commands",
+                "Description": "(Required) Specify a shell script or a command to run."
+            }
+        ],
+        "DocumentType": "Command",
+        "PlatformTypes": [
+            "Linux"
+        ],
+        "DocumentVersion": "2",
+        "HashType": "Sha256",
+        "CreatedDate": 1487899655.152,
+        "Owner": "123456789012",
+        "SchemaVersion": "2.0",
+        "DefaultVersion": "1",
+        "LatestVersion": "2",
+        "Description": "Run an updated script"
+    }
 }
 ```
+For more information, see [AWS Systems Manager Documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [UpdateDocument](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/update-document.html) in *AWS CLI Command Reference*.
 
 ### `update-maintenance-window-target`
@@ -6497,7 +7434,7 @@ The following `update-maintenance-window-target` example updates only the name o
 ```
 aws ssm update-maintenance-window-target \
     --window-id {{"mw-0c5ed765acEXAMPLE"}} \
-    --window-target-id {{"57e8344e-fe64-4023-8191-6bf05EXAMPLE"}} \
+    --window-target-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"NewName"}} \
     --no-replace
 ```
@@ -6507,7 +7444,7 @@ Output:
 {
     "Description": "",
     "OwnerInformation": "",
-    "WindowTargetId": "57e8344e-fe64-4023-8191-6bf05EXAMPLE",
+    "WindowTargetId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "WindowId": "mw-0c5ed765acEXAMPLE",
     "Targets": [
         {
@@ -6535,18 +7472,18 @@ The following `update-maintenance-window-task` example updates the service role 
 ```
 aws ssm update-maintenance-window-task \
     --window-id {{"mw-0c5ed765acEXAMPLE"}} \
-    --window-task-id {{"23d3809e-9fbe-4ddf-b41a-b49d7EXAMPLE"}} \
-    --service-role-arn {{"arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM"}}
+    --window-task-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --service-role-arn {{"arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM"}}
 ```
 Output:
 
 ```
 {
-    "ServiceRoleArn": "arn:aws:iam::111222333444:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
+    "ServiceRoleArn": "arn:aws:iam::123456789012:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM",
     "MaxErrors": "1",
     "TaskArn": "AWS-UpdateEC2Config",
     "MaxConcurrency": "1",
-    "WindowTaskId": "23d3809e-9fbe-4ddf-b41a-b49d7EXAMPLE",
+    "WindowTaskId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "TaskParameters": {},
     "Priority": 1,
     "TaskInvocationParameters": {
@@ -6564,7 +7501,7 @@ Output:
     "Targets": [
         {
             "Values": [
-                "57e8344e-fe64-4023-8191-6bf05EXAMPLE"
+                "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             ],
             "Key": "WindowTargetIds"
         }
@@ -6610,6 +7547,19 @@ aws ssm update-maintenance-window \
     --window-id {{"mw-1a2b3c4d5e6f7g8h9"}} \
     --no-enabled
 ```
+Output:
+
+```
+{
+    "Cutoff": 1,
+    "Name": "My-Renamed-MW",
+    "Schedule": "cron(0 16 ? * TUE *)",
+    "Enabled": false,
+    "AllowUnassociatedTargets": true,
+    "WindowId": "mw-1a2b3c4d5e6f7g8h9",
+    "Duration": 4
+}
+```
 **Example 3: To enable a maintenance window**
 The following `update-maintenance-window` example enables a maintenance window.
 
@@ -6617,6 +7567,19 @@ The following `update-maintenance-window` example enables a maintenance window.
 aws ssm update-maintenance-window \
     --window-id {{"mw-1a2b3c4d5e6f7g8h9"}} \
     --enabled
+```
+Output:
+
+```
+{
+    "Cutoff": 1,
+    "Name": "My-Renamed-MW",
+    "Schedule": "cron(0 16 ? * TUE *)",
+    "Enabled": true,
+    "AllowUnassociatedTargets": true,
+    "WindowId": "mw-1a2b3c4d5e6f7g8h9",
+    "Duration": 4
+}
 ```
 For more information, see [Update a Maintenance Window (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-windows-cli-tutorials-update.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [UpdateMaintenanceWindow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/update-maintenance-window.html) in *AWS CLI Command Reference*.
@@ -6654,13 +7617,9 @@ aws ssm update-ops-item \
     --description {{"Primary OpsItem for failover event 2020-01-01-fh398yf"}} \
     --priority {{2}} \
     --category {{"Security"}} \
-    --notifications {{"Arn=arn:aws:sns:us-east-2:111222333444:my-us-east-2-topic"}}
-```
-Output:
-
+    --notifications {{"Arn=arn:aws:sns:us-west-2:123456789012:my-us-east-2-topic"}}
 ```
 This command produces no output.
-```
 For more information, see [Working with OpsItems](https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCenter-working-with-OpsItems.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [UpdateOpsItem](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/update-ops-item.html) in *AWS CLI Command Reference*.
 
@@ -6675,9 +7634,9 @@ The following `update-patch-baseline` example adds the specified two patches as 
 
 ```
 aws ssm update-patch-baseline \
-        --baseline-id {{"pb-0123456789abcdef0"}} \
-        --rejected-patches {{"KB2032276"}} {{"MS10-048"}} \
-        --approved-patches {{"KB2124261"}}
+    --baseline-id {{"pb-0123456789abcdef0"}} \
+    --rejected-patches {{"KB2032276"}} {{"MS10-048"}} \
+    --approved-patches {{"KB2124261"}}
 ```
 Output:
 
@@ -6724,6 +7683,7 @@ Output:
     "Sources": []
 }
 ```
+For more information, see [Updating or deleting a custom patch baseline](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-update-or-delete-a-patch-baseline.html) in the *AWS Systems Manager User Guide*.
 **Example 2: To rename a patch baseline**
 The following `update-patch-baseline` example renames the specified patch baseline.
 
@@ -6732,7 +7692,68 @@ aws ssm update-patch-baseline \
     --baseline-id {{"pb-0713accee01234567"}} \
     --name {{"Windows-Server-2012-R2-Important-and-Critical-Security-Updates"}}
 ```
-For more information, see Update or Delete a Patch Baseline <https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-baseline-update-or-delete.html>`\_\_ in the *AWS Systems Manager User Guide*.
+Output:
+
+```
+{
+    "BaselineId": "pb-0713accee01234567",
+    "Name": "Windows-Server-2012-R2-Important-and-Critical-Security-Updates",
+    "OperatingSystem": "WINDOWS",
+    "GlobalFilters": {
+        "PatchFilters": [
+            {
+                "Key": "PRODUCT",
+                "Values": [
+                    "WindowsServer2012R2"
+                ]
+            },
+            {
+                "Key": "MSRC_SEVERITY",
+                "Values": [
+                    "Critical",
+                    "Important"
+                ]
+            },
+            {
+                "Key": "CLASSIFICATION",
+                "Values": [
+                    "SecurityUpdates"
+                ]
+            }
+        ]
+    },
+    "ApprovalRules": {
+        "PatchRules": [
+            {
+                "PatchFilterGroup": {
+                    "PatchFilters": [
+                        {
+                            "Key": "MSRC_SEVERITY",
+                            "Values": [
+                                "Critical",
+                                "Important"
+                            ]
+                        }
+                    ]
+                },
+                "ComplianceLevel": "CRITICAL",
+                "ApproveAfterDays": 3,
+                "EnableNonSecurity": false
+            }
+        ]
+    },
+    "ApprovedPatches": [],
+    "ApprovedPatchesComplianceLevel": "UNSPECIFIED",
+    "ApprovedPatchesEnableNonSecurity": false,
+    "RejectedPatches": [],
+    "RejectedPatchesAction": "ALLOW_AS_DEPENDENCY",
+    "CreatedDate": 1551822528.783,
+    "ModifiedDate": 1551822546.296,
+    "Description": "Windows Server 2012 R2, Important and Critical security updates",
+    "Sources": []
+}
+```
+For more information, see [Updating or deleting a custom patch baseline](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-update-or-delete-a-patch-baseline.html) in the *AWS Systems Manager User Guide*.
 +  For API details, see [UpdatePatchBaseline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/update-patch-baseline.html) in *AWS CLI Command Reference*.
 
 ### `update-resource-data-sync`
@@ -6765,7 +7786,7 @@ The following `update-service-setting` example updates the current service setti
 
 ```
 aws ssm update-service-setting \
-    --setting-id {{arn:aws:ssm:us-east-1:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled}} \
+    --setting-id {{arn:aws:ssm:us-west-2:123456789012:servicesetting/ssm/parameter-store/high-throughput-enabled}} \
     --setting-value {{true}}
 ```
 This command produces no output.

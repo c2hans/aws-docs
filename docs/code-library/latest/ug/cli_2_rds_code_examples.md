@@ -82,7 +82,7 @@ Output:
             }
         ],
         "AllowsVpcAndNonVpcInstanceMemberships": false,
-        "OptionGroupArn": "arn:aws:rds:us-east-1:123456789012:og:myoptiongroup"
+        "OptionGroupArn": "arn:aws:rds:us-west-2:123456789012:og:myoptiongroup"
     }
 }
 ```
@@ -120,10 +120,10 @@ The following `add-role-to-db-instance` example adds the role to an Oracle DB in
 aws rds add-role-to-db-instance \
     --db-instance-identifier {{test-instance}} \
     --feature-name {{S3_INTEGRATION}} \
-    --role-arn {{arn:aws:iam::111122223333:role/rds-s3-integration-role}}
+    --role-arn {{arn:aws:iam::123456789012:role/rds-s3-integration-role}}
 ```
 This command produces no output.
-For more information, see [Prerequisites for Amazon RDS Oracle Integration with Amazon S3](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-integration.html#oracle-s3-integration.preparing) in the *Amazon RDS User Guide*.
+For more information, see [Prerequisites for Amazon RDS Oracle Integration with Amazon S3](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-integration.preparing.html) in the *Amazon RDS User Guide*.
 +  For API details, see [AddRoleToDbInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/add-role-to-db-instance.html) in *AWS CLI Command Reference*.
 
 ### `add-source-identifier-to-subscription`
@@ -133,7 +133,7 @@ The following code example shows how to use `add-source-identifier-to-subscripti
 
 **AWS CLI**
 **To add a source identifier to a subscription**
-The following `add-source-identifier` example adds another source identifier to an existing subscription.
+The following `add-source-identifier-to-subscription` example adds another source identifier to an existing subscription.
 
 ```
 aws rds add-source-identifier-to-subscription \
@@ -147,7 +147,7 @@ Output:
     "EventSubscription": {
         "SubscriptionCreationTime": "Tue Jul 31 23:22:01 UTC 2018",
         "CustSubscriptionId": "my-instance-events",
-        "EventSubscriptionArn": "arn:aws:rds:us-east-1:123456789012:es:my-instance-events",
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:my-instance-events",
         "Enabled": false,
         "Status": "modifying",
         "EventCategoriesList": [
@@ -155,7 +155,7 @@ Output:
             "recovery"
         ],
         "CustomerAwsId": "123456789012",
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:interesting-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:interesting-events",
         "SourceType": "db-instance",
         "SourceIdsList": [
             "test-instance",
@@ -164,6 +164,7 @@ Output:
     }
 }
 ```
+For more information, see [Adding a source identifier to an Amazon RDS event notification subscription](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.AddingSource.html) in the *Amazon RDS User Guide*.
 +  For API details, see [AddSourceIdentifierToSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/add-source-identifier-to-subscription.html) in *AWS CLI Command Reference*.
 
 ### `add-tags-to-resource`
@@ -177,7 +178,7 @@ The following `add-tags-to-resource` example add tags to an RDS database.
 
 ```
 aws rds add-tags-to-resource \
-    --resource-name {{arn:aws:rds:us-east-1:123456789012:db:database-mysql}} \
+    --resource-name {{arn:aws:rds:us-west-2:123456789012:db:database-mysql}} \
     --tags "[{\"Key\": \"Name\",\"Value\": \"MyDatabase\"},{\"Key\": \"Environment\",\"Value\": \"test\"}]"
 ```
 This command produces no output.
@@ -195,7 +196,7 @@ The following `apply-pending-maintenance-action` example applies the pending mai
 
 ```
 aws rds apply-pending-maintenance-action \
-    --resource-identifier {{arn:aws:rds:us-east-1:123456789012:cluster:my-db-cluster}} \
+    --resource-identifier {{arn:aws:rds:us-west-2:123456789012:cluster:my-db-cluster}} \
     --apply-action {{system-update}} \
     --opt-in-type {{immediate}}
 ```
@@ -204,7 +205,7 @@ Output:
 ```
 {
     "ResourcePendingMaintenanceActions": {
-        "ResourceIdentifier": "arn:aws:rds:us-east-1:123456789012:cluster:my-db-cluster",
+        "ResourceIdentifier": "arn:aws:rds:us-west-2:123456789012:cluster:my-db-cluster",
         "PendingMaintenanceActionDetails": [
             {
                 "Action": "system-update",
@@ -248,11 +249,11 @@ Output:
                 "CIDRIP": "192.0.2.0/24"
             }
         ],
-        "DBSecurityGroupArn": "arn:aws:rds:us-east-1:111122223333:secgrp:default"
+        "DBSecurityGroupArn": "arn:aws:rds:us-west-2:123456789012:secgrp:default"
     }
 }
 ```
-For more information, see [Authorizing Network Access to a DB Security Group from an IP Range](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithSecurityGroups.html#USER_WorkingWithSecurityGroups.Authorizing) in the *Amazon RDS User Guide*.
+For more information, see [Authorizing Network Access to a DB Security Group from an IP Range](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html) in the *Amazon RDS User Guide*.
 +  For API details, see [AuthorizeDbSecurityGroupIngress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/authorize-db-security-group-ingress.html) in *AWS CLI Command Reference*.
 
 ### `backtrack-db-cluster`
@@ -265,9 +266,23 @@ The following code example shows how to use `backtrack-db-cluster`.
 The following `backtrack-db-cluster` example backtracks the specified DB cluster sample-cluster to March 19, 2018, at 10 a.m.
 
 ```
-aws rds backtrack-db-cluster --db-cluster-identifier {{sample-cluster}} --backtrack-to {{2018-03-19T10:00:00+00:00}}
+aws rds backtrack-db-cluster \
+    --db-cluster-identifier {{sample-cluster}} \
+    --backtrack-to {{2018-03-19T10:00:00+00:00}}
 ```
-This command outputs a JSON block that acknowledges the change to the RDS resource.
+Output:
+
+```
+{
+    "DBClusterIdentifier": "sample-cluster",
+    "BacktrackIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "BacktrackTo": "2018-03-19T10:00:00+00:00",
+    "BacktrackedFrom": "2018-03-19T11:30:00.123000+00:00",
+    "BacktrackRequestCreationTime": "2018-03-19T11:30:00.123000+00:00",
+    "Status": "PENDING"
+}
+```
+For more information, see [Backtracking an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Managing.Backtrack.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [BacktrackDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/backtrack-db-cluster.html) in *AWS CLI Command Reference*.
 
 ### `cancel-export-task`
@@ -288,18 +303,18 @@ Output:
 ```
 {
     "ExportTaskIdentifier": "my-s3-export-1",
-    "SourceArn": "arn:aws:rds:us-east-1:123456789012:snapshot:publisher-final-snapshot",
+    "SourceArn": "arn:aws:rds:us-west-2:123456789012:snapshot:publisher-final-snapshot",
     "SnapshotTime": "2019-03-24T20:01:09.815Z",
     "S3Bucket": "amzn-s3-demo-bucket",
     "S3Prefix": "",
     "IamRoleArn": "arn:aws:iam::123456789012:role/service-role/export-snap-S3-role",
-    "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/abcd0000-7bfd-4594-af38-aabbccddeeff",
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Status": "CANCELING",
     "PercentProgress": 0,
     "TotalExtractedDataInGB": 0
 }
 ```
-For more information, see [Canceling a snapshot export task](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html#USER_ExportSnapshot.Canceling) in the *Amazon RDS User Guide* or [Canceling a snapshot export task](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_ExportSnapshot.html#USER_ExportSnapshot.Canceling) in the *Amazon Aurora User Guide*.
+For more information, see [Canceling a snapshot export task](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.Canceling.html) in the *Amazon RDS User Guide* or [Canceling a snapshot export task](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_ExportSnapshot.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CancelExportTask](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/cancel-export-task.html) in *AWS CLI Command Reference*.
 
 ### `copy-db-cluster-parameter-group`
@@ -323,13 +338,13 @@ Output:
 {
     "DBClusterParameterGroup": {
         "DBClusterParameterGroupName": "mydbclusterpgcopy",
-        "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:mydbclusterpgcopy",
+        "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:mydbclusterpgcopy",
         "DBParameterGroupFamily": "aurora-mysql5.7",
         "Description": "Copy of mydbclusterpg parameter group"
     }
 }
 ```
-For more information, see [Copying a DB Cluster Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithParamGroups.html#USER_WorkingWithParamGroups.CopyingCluster) in the *Amazon Aurora Users Guide*.
+For more information, see [Copying a DB Cluster Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithParamGroups.CopyingCluster.html) in the *Amazon Aurora Users Guide*.
 +  For API details, see [CopyDbClusterParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/copy-db-cluster-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `copy-db-cluster-snapshot`
@@ -343,7 +358,7 @@ The following `copy-db-cluster-snapshot` example creates a copy of a DB cluster 
 
 ```
 aws rds copy-db-cluster-snapshot \
-    --source-db-cluster-snapshot-identifier {{arn:aws:rds:us-east-1:123456789012:cluster-snapshot:rds:myaurora-2019-06-04-09-16}}
+    --source-db-cluster-snapshot-identifier {{arn:aws:rds:us-west-2:123456789012:cluster-snapshot:rds:myaurora-2019-06-04-09-16}} \
     --target-db-cluster-snapshot-identifier {{myclustersnapshotcopy}} \
     --copy-tags
 ```
@@ -353,9 +368,9 @@ Output:
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1b",
-            "us-east-1e"
+            "us-west-2a",
+            "us-west-2b",
+            "us-west-2c"
         ],
         "DBClusterSnapshotIdentifier": "myclustersnapshotcopy",
         "DBClusterIdentifier": "myaurora",
@@ -372,8 +387,8 @@ Output:
         "SnapshotType": "manual",
         "PercentProgress": 100,
         "StorageEncrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
-        "DBClusterSnapshotArn": "arn:aws:rds:us-east-1:123456789012:cluster-snapshot:myclustersnapshotcopy",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+        "DBClusterSnapshotArn": "arn:aws:rds:us-west-2:123456789012:cluster-snapshot:myclustersnapshotcopy",
         "IAMDatabaseAuthenticationEnabled": false
     }
 }
@@ -402,13 +417,13 @@ Output:
 {
     "DBParameterGroup": {
         "DBParameterGroupName": "mydbpgcopy",
-        "DBParameterGroupArn": "arn:aws:rds:us-east-1:814387698303:pg:mydbpgcopy",
+        "DBParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:pg:mydbpgcopy",
         "DBParameterGroupFamily": "mysql5.7",
         "Description": "Copy of mydbpg parameter group"
     }
 }
 ```
-For more information, see [Copying a DB Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html#USER_WorkingWithParamGroups.Copying) in the *Amazon RDS Users Guide*.
+For more information, see [Copying a DB Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.Copying.html) in the *Amazon RDS Users Guide*.
 +  For API details, see [CopyDbParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/copy-db-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `copy-db-snapshot`
@@ -422,7 +437,7 @@ The following `copy-db-snapshot` example creates a copy of a DB snapshot.
 
 ```
 aws rds copy-db-snapshot \
-    --source-db-snapshot-identifier {{rds:database-mysql-2019-06-06-08-38}}
+    --source-db-snapshot-identifier {{rds:database-mysql-2019-06-06-08-38}} \
     --target-db-snapshot-identifier {{mydbsnapshotcopy}}
 ```
 Output:
@@ -433,25 +448,25 @@ Output:
         "VpcId": "vpc-6594f31c",
         "Status": "creating",
         "Encrypted": true,
-        "SourceDBSnapshotIdentifier": "arn:aws:rds:us-east-1:123456789012:snapshot:rds:database-mysql-2019-06-06-08-38",
+        "SourceDBSnapshotIdentifier": "arn:aws:rds:us-west-2:123456789012:snapshot:rds:database-mysql-2019-06-06-08-38",
         "MasterUsername": "admin",
         "Iops": 1000,
         "Port": 3306,
         "LicenseModel": "general-public-license",
-        "DBSnapshotArn": "arn:aws:rds:us-east-1:123456789012:snapshot:mydbsnapshotcopy",
+        "DBSnapshotArn": "arn:aws:rds:us-west-2:123456789012:snapshot:mydbsnapshotcopy",
         "EngineVersion": "5.6.40",
         "OptionGroupName": "default:mysql-5-6",
         "ProcessorFeatures": [],
         "Engine": "mysql",
         "StorageType": "io1",
         "DbiResourceId": "db-ZI7UJ5BLKMBYFGX7FDENCKADC4",
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
         "SnapshotType": "manual",
         "IAMDatabaseAuthenticationEnabled": false,
-        "SourceRegion": "us-east-1",
+        "SourceRegion": "us-west-2",
         "DBInstanceIdentifier": "database-mysql",
         "InstanceCreateTime": "2019-04-30T15:45:53.663Z",
-        "AvailabilityZone": "us-east-1f",
+        "AvailabilityZone": "us-west-2c",
         "PercentProgress": 0,
         "AllocatedStorage": 100,
         "DBSnapshotIdentifier": "mydbsnapshotcopy"
@@ -487,7 +502,7 @@ Output:
         "OptionGroupDescription": "My option group copy",
         "AllowsVpcAndNonVpcInstanceMemberships": true,
         "EngineName": "oracle-ee",
-        "OptionGroupArn": "arn:aws:rds:us-east-1:123456789012:og:new-option-group"
+        "OptionGroupArn": "arn:aws:rds:us-west-2:123456789012:og:new-option-group"
     }
 }
 ```
@@ -506,7 +521,7 @@ The following `create-blue-green-deployment` example creates a blue/green deploy
 ```
 aws rds create-blue-green-deployment \
     --blue-green-deployment-name {{bgd-cli-test-instance}} \
-    --source {{arn:aws:rds:us-east-1:123456789012:db:my-db-instance}} \
+    --source {{arn:aws:rds:us-west-2:123456789012:db:my-db-instance}} \
     --target-engine-version {{8.0}} \
     --target-db-parameter-group-name {{mysql-80-group}}
 ```
@@ -517,19 +532,19 @@ Output:
     "BlueGreenDeployment": {
         "BlueGreenDeploymentIdentifier": "bgd-v53303651eexfake",
         "BlueGreenDeploymentName": "bgd-cli-test-instance",
-        "Source": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
+        "Source": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
         "SwitchoverDetails": [
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance"
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1"
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2"
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3"
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3"
             }
         ],
         "Tasks": [
@@ -562,7 +577,7 @@ The following `create-blue-green-deployment` example creates a blue/green deploy
 ```
 aws rds create-blue-green-deployment \
     --blue-green-deployment-name {{my-blue-green-deployment}} \
-    --source {{arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster}} \
+    --source {{arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster}} \
     --target-engine-version {{8.0}} \
     --target-db-cluster-parameter-group-name {{ams-80-binlog-enabled}} \
     --target-db-parameter-group-name {{mysql-80-cluster-group}}
@@ -571,57 +586,57 @@ Output:
 
 ```
 {
-      "BlueGreenDeployment": {
+    "BlueGreenDeployment": {
         "BlueGreenDeploymentIdentifier": "bgd-wi89nwzglccsfake",
         "BlueGreenDeploymentName": "my-blue-green-deployment",
-        "Source": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
+        "Source": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
         "SwitchoverDetails": [
-          {
-            "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-            "Status": "PROVISIONING"
-          },
-          {
-            "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1",
-            "Status": "PROVISIONING"
-          },
-          {
-            "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2",
-            "Status": "PROVISIONING"
-          },
-          {
-            "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3",
-            "Status": "PROVISIONING"
-          },
-          {
-            "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint",
-            "Status": "PROVISIONING"
-          },
-          {
-            "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint",
-            "Status": "PROVISIONING"
-          }
+            {
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+                "Status": "PROVISIONING"
+            },
+            {
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1",
+                "Status": "PROVISIONING"
+            },
+            {
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2",
+                "Status": "PROVISIONING"
+            },
+            {
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3",
+                "Status": "PROVISIONING"
+            },
+            {
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint",
+                "Status": "PROVISIONING"
+            },
+            {
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint",
+                "Status": "PROVISIONING"
+            }
         ],
         "Tasks": [
-          {
-            "Name": "CREATING_READ_REPLICA_OF_SOURCE",
-            "Status": "PENDING"
-          },
-          {
-            "Name": "DB_ENGINE_VERSION_UPGRADE",
-            "Status": "PENDING"
-          },
-          {
-            "Name": "CREATE_DB_INSTANCES_FOR_CLUSTER",
-            "Status": "PENDING"
-          },
-          {
-            "Name": "CREATE_CUSTOM_ENDPOINTS",
-            "Status": "PENDING"
-          }
+            {
+                "Name": "CREATING_READ_REPLICA_OF_SOURCE",
+                "Status": "PENDING"
+            },
+            {
+                "Name": "DB_ENGINE_VERSION_UPGRADE",
+                "Status": "PENDING"
+            },
+            {
+                "Name": "CREATE_DB_INSTANCES_FOR_CLUSTER",
+                "Status": "PENDING"
+            },
+            {
+                "Name": "CREATE_CUSTOM_ENDPOINTS",
+                "Status": "PENDING"
+            }
         ],
         "Status": "PROVISIONING",
         "CreateTime": "2022-02-25T21:12:00.288000+00:00"
-      }
+    }
 }
 ```
 For more information, see [Creating a blue/green deployment](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments-creating.html) in the *Amazon Aurora User Guide*.
@@ -650,7 +665,7 @@ Output:
     "DBClusterEndpointIdentifier": "mycustomendpoint",
     "DBClusterIdentifier": "mydbcluster",
     "DBClusterEndpointResourceIdentifier": "cluster-endpoint-ANPAJ4AE5446DAEXAMPLE",
-    "Endpoint": "mycustomendpoint.cluster-custom-cnpexample.us-east-1.rds.amazonaws.com",
+    "Endpoint": "mycustomendpoint.cluster-custom-cnpexample.us-west-2.rds.amazonaws.com",
     "Status": "creating",
     "EndpointType": "CUSTOM",
     "CustomEndpointType": "READER",
@@ -659,7 +674,7 @@ Output:
         "dbinstance2"
     ],
     "ExcludedMembers": [],
-    "DBClusterEndpointArn": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:mycustomendpoint"
+    "DBClusterEndpointArn": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:mycustomendpoint"
 }
 ```
 For more information, see [Amazon Aurora Connection Management](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html) in the *Amazon Aurora User Guide*.
@@ -688,11 +703,11 @@ Output:
         "DBClusterParameterGroupName": "mydbclusterparametergroup",
         "DBParameterGroupFamily": "aurora5.6",
         "Description": "My new cluster parameter group",
-        "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:mydbclusterparametergroup"
+        "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:mydbclusterparametergroup"
     }
 }
 ```
-For more information, see [Creating a DB Cluster Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithParamGroups.html#USER_WorkingWithParamGroups.CreatingCluster) in the *Amazon Aurora User Guide*.
+For more information, see [Creating a DB Cluster Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_WorkingWithParamGroups.CreatingCluster.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreateDbClusterParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-cluster-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `create-db-cluster-snapshot`
@@ -715,9 +730,9 @@ Output:
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1b",
-            "us-east-1e"
+            "us-west-2a",
+            "us-west-2b",
+            "us-west-2d"
         ],
         "DBClusterSnapshotIdentifier": "mydbclustersnapshot",
         "DBClusterIdentifier": "mydbcluster",
@@ -734,8 +749,8 @@ Output:
         "SnapshotType": "manual",
         "PercentProgress": 0,
         "StorageEncrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
-        "DBClusterSnapshotArn": "arn:aws:rds:us-east-1:123456789012:cluster-snapshot:mydbclustersnapshot",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+        "DBClusterSnapshotArn": "arn:aws:rds:us-west-2:123456789012:cluster-snapshot:mydbclustersnapshot",
         "IAMDatabaseAuthenticationEnabled": false
     }
 }
@@ -791,20 +806,20 @@ Output:
         "DbClusterResourceId": "cluster-ANPAJ4AE5446DAEXAMPLE",
         "DBClusterIdentifier": "sample-cluster",
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1b",
-            "us-east-1e"
+            "us-west-2a",
+            "us-west-2b",
+            "us-west-2d"
         ],
         "MasterUsername": "master",
         "EngineVersion": "5.7.mysql_aurora.2.11.1",
-        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:sample-cluster",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster",
         "DBClusterMembers": [],
         "Port": 3306,
         "Status": "creating",
-        "Endpoint": "sample-cluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "sample-cluster.cluster-cnpexample.us-west-2.rds.amazonaws.com",
         "DBClusterParameterGroup": "default.aurora-mysql5.7",
         "HostedZoneId": "Z2R2ITUGPM61AM",
-        "ReaderEndpoint": "sample-cluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "ReaderEndpoint": "sample-cluster.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "CopyTagsToSnapshot": false
     }
 }
@@ -826,7 +841,7 @@ Output:
 ```
 {
     "DBCluster": {
-        "Endpoint": "sample-pg-cluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "sample-pg-cluster.cluster-cnpexample.us-west-2.rds.amazonaws.com",
         "HttpEndpointEnabled": false,
         "DBClusterMembers": [],
         "EngineMode": "provisioned",
@@ -852,16 +867,16 @@ Output:
         "DBClusterIdentifier": "sample-pg-cluster",
         "MultiAZ": false,
         "Port": 5432,
-        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:sample-pg-cluster",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:sample-pg-cluster",
         "AssociatedRoles": [],
         "DbClusterResourceId": "cluster-ANPAJ4AE5446DAEXAMPLE",
         "PreferredMaintenanceWindow": "wed:03:33-wed:04:03",
-        "ReaderEndpoint": "sample-pg-cluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "ReaderEndpoint": "sample-pg-cluster.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "MasterUsername": "master",
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1b",
-            "us-east-1c"
+            "us-west-2a",
+            "us-west-2b",
+            "us-west-2c"
         ],
         "ReadReplicaIdentifiers": [],
         "DBSubnetGroup": "default"
@@ -884,9 +899,9 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "us-east-1c",
-            "us-east-1a",
-            "us-east-1b"
+            "us-west-2c",
+            "us-west-2a",
+            "us-west-2b"
         ],
         "BackupRetentionPeriod": 7,
         "DBClusterIdentifier": "sample-cluster",
@@ -911,7 +926,7 @@ Output:
         "VpcSecurityGroups": [],
         "StorageEncrypted": false,
         "DbClusterResourceId": "cluster-EXAMPLE4RESOURCE",
-        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:sample-cluster",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster",
         "AssociatedRoles": [],
         "IAMDatabaseAuthenticationEnabled": true,
         "ClusterCreateTime": "2026-01-10T22:14:02Z",
@@ -946,7 +961,7 @@ The following code example shows how to use `create-db-instance-read-replica`.
 
 **AWS CLI**
 **To create a DB instance read replica**
-This example creates a read replica of an existing DB instance named `test-instance`. The read replica is named `test-instance-repl`.
+The following `create-db-instance-read-replica` example creates a read replica of an existing DB instance named `test-instance`. The read replica is named `test-instance-repl`.
 
 ```
 aws rds create-db-instance-read-replica \
@@ -960,13 +975,13 @@ Output:
     "DBInstance": {
         "IAMDatabaseAuthenticationEnabled": false,
         "MonitoringInterval": 0,
-        "DBInstanceArn": "arn:aws:rds:us-east-1:123456789012:db:test-instance-repl",
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:test-instance-repl",
         "ReadReplicaSourceDBInstanceIdentifier": "test-instance",
-        "DBInstanceIdentifier": "test-instance-repl",
-        ...some output truncated...
+        "DBInstanceIdentifier": "test-instance-repl"
     }
 }
 ```
+For more information, see [Creating a read replica](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.Create.html) in the *Amazon RDS User Guide*.
 +  For API details, see [CreateDbInstanceReadReplica](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-instance-read-replica.html) in *AWS CLI Command Reference*.
 
 ### `create-db-instance`
@@ -1107,11 +1122,11 @@ Output:
         "DBParameterGroupName": "mydbparametergroup",
         "DBParameterGroupFamily": "mysql5.6",
         "Description": "My new parameter group",
-        "DBParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:pg:mydbparametergroup"
+        "DBParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:pg:mydbparametergroup"
     }
 }
 ```
-For more information, see [Creating a DB Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html#USER_WorkingWithParamGroups.Creating) in the *Amazon RDS User Guide*.
+For more information, see [Creating a DB Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.Creating.html) in the *Amazon RDS User Guide*.
 +  For API details, see [CreateDBParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `create-db-proxy-endpoint`
@@ -1133,9 +1148,9 @@ Output:
 
 ```
 {
-"DBProxyEndpoint": {
+    "DBProxyEndpoint": {
         "DBProxyEndpointName": "proxyep1",
-        "DBProxyEndpointArn": "arn:aws:rds:us-east-1:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
+        "DBProxyEndpointArn": "arn:aws:rds:us-west-2:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
         "DBProxyName": "proxyExample",
         "Status": "creating",
         "VpcId": "vpc-1234567",
@@ -1147,14 +1162,14 @@ Output:
             "subnetgroup1",
             "subnetgroup2"
         ],
-        "Endpoint": "proxyep1.endpoint.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+        "Endpoint": "proxyep1.endpoint.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
         "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
         "TargetRole": "READ_WRITE",
         "IsDefault": false
     }
 }
 ```
-For more information, see [Creating a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.CreatingEndpoint) in the *Amazon RDS User Guide* and [Creating a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.CreatingEndpoint) in the *Amazon Aurora User Guide*.
+For more information, see [Creating a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.CreatingEndpoint.html) in the *Amazon RDS User Guide* and [Creating a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.CreatingEndpoint.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreateDbProxyEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-proxy-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `create-db-proxy`
@@ -1170,20 +1185,20 @@ The following `create-db-proxy` example creates a DB proxy.
 aws rds create-db-proxy \
     --db-proxy-name {{proxyExample}} \
     --engine-family {{MYSQL}} \
-    --auth Description="proxydescription1",AuthScheme="SECRETS",SecretArn="arn:aws:secretsmanager:us-west-2:123456789123:secret:secretName-1234f",IAMAuth="DISABLED",ClientPasswordAuthType="MYSQL_NATIVE_PASSWORD" \
-    --role-arn {{arn:aws:iam::123456789123:role/ProxyRole}} \
+    --auth Description="proxydescription1",AuthScheme="SECRETS",SecretArn="arn:aws:secretsmanager:us-west-2:123456789012:secret:secretName-1234f",IAMAuth="DISABLED",ClientPasswordAuthType="MYSQL_NATIVE_PASSWORD" \
+    --role-arn {{arn:aws:iam::123456789012:role/ProxyRole}} \
     --vpc-subnet-ids {{subnetgroup1}} {{subnetgroup2}}
 ```
 Output:
 
 ```
 {
-"DBProxy": {
+    "DBProxy": {
         "DBProxyName": "proxyExample",
-        "DBProxyArn": "arn:aws:rds:us-east-1:123456789012:db-proxy:prx-0123a01b12345c0ab",
+        "DBProxyArn": "arn:aws:rds:us-west-2:123456789012:db-proxy:prx-0123a01b12345c0ab",
         "EngineFamily": "MYSQL",
         "VpcId": "vpc-1234567",
-        "VpcSecuritytGroupIds": [
+        "VpcSecurityGroupIds": [
             "sg-1234",
             "sg-5678",
             "sg-9101"
@@ -1192,25 +1207,25 @@ Output:
             "subnetgroup1",
             "subnetgroup2"
         ],
-        "Auth": "[
+        "Auth": [
             {
                 "Description": "proxydescription1",
                 "AuthScheme": "SECRETS",
-                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789123:secret:proxysecret1-Abcd1e",
+                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:proxysecret1-Abcd1e",
                 "IAMAuth": "DISABLED"
             }
-        ]",
+        ],
         "RoleArn": "arn:aws:iam::12345678912:role/ProxyRole",
-        "Endpoint": "proxyExample.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+        "Endpoint": "proxyExample.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
         "RequireTLS": false,
         "IdleClientTimeout": 1800,
-        "DebuggingLogging": false,
+        "DebugLogging": false,
         "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
         "UpdatedDate": "2023-04-13T01:49:38.568000+00:00"
     }
 }
 ```
-For more information, see [Creating an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-setup.html#rds-proxy-creating) in the *Amazon RDS User Guide* and [Creating an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-setup.html#rds-proxy-creating) in the *Amazon Aurora User Guide*.
+For more information, see [Creating an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-creating.html) in the *Amazon RDS User Guide* and [Creating an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-creating.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreateDbProxy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-proxy.html) in *AWS CLI Command Reference*.
 
 ### `create-db-security-group`
@@ -1220,10 +1235,12 @@ The following code example shows how to use `create-db-security-group`.
 
 **AWS CLI**
 **To create an Amazon RDS DB security group**
-The following `create-db-security-group` command creates a new Amazon RDS DB security group:
+The following `create-db-security-group` example creates a new Amazon RDS DB security group.
 
 ```
-aws rds create-db-security-group --db-security-group-name {{mysecgroup}} --db-security-group-description {{"My Test Security Group"}}
+aws rds create-db-security-group \
+    --db-security-group-name {{mysecgroup}} \
+    --db-security-group-description {{"My Test Security Group"}}
 ```
 In the example, the new DB security group is named `mysecgroup` and has a description.
 Output:
@@ -1241,6 +1258,7 @@ Output:
     }
 }
 ```
+For more information, see [Controlling access with security groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html) in the *Amazon RDS User Guide*.
 +  For API details, see [CreateDbSecurityGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-db-security-group.html) in *AWS CLI Command Reference*.
 
 ### `create-db-shard-group`
@@ -1250,7 +1268,7 @@ The following code example shows how to use `create-db-shard-group`.
 
 **AWS CLI**
 **Example 1: To create an Aurora PostgreSQL primary DB cluster**
-The following `create-db-cluster` example creates an Aurora PostgreSQL SQL primary DB cluster that's compatible with Aurora Serverless v2 and Aurora Limitless Database.
+The following `create-db-shard-group` example starts by using the `create-db-cluster` command to create an Aurora PostgreSQL SQL primary DB cluster that's compatible with Aurora Serverless v2 and Aurora Limitless Database.
 
 ```
 aws rds create-db-cluster \
@@ -1271,17 +1289,17 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "us-east-2b",
-            "us-east-2c",
-            "us-east-2a"
+            "us-west-2b",
+            "us-west-2c",
+            "us-west-2a"
         ],
         "BackupRetentionPeriod": 1,
         "DBClusterIdentifier": "my-sv2-cluster",
         "DBClusterParameterGroup": "default.aurora-postgresql15",
         "DBSubnetGroup": "default",
         "Status": "creating",
-        "Endpoint": "my-sv2-cluster.cluster-cekycexample.us-east-2.rds.amazonaws.com",
-        "ReaderEndpoint": "my-sv2-cluster.cluster-ro-cekycexample.us-east-2.rds.amazonaws.com",
+        "Endpoint": "my-sv2-cluster.cluster-cekycexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "my-sv2-cluster.cluster-ro-cekycexample.us-west-2.rds.amazonaws.com",
         "MultiAZ": false,
         "Engine": "aurora-postgresql",
         "EngineVersion": "15.2-limitless",
@@ -1300,7 +1318,7 @@ Output:
         "HostedZoneId": "Z2XHWR1EXAMPLE",
         "StorageEncrypted": false,
         "DbClusterResourceId": "cluster-XYEDT6ML6FHIXH4Q2J1EXAMPLE",
-        "DBClusterArn": "arn:aws:rds:us-east-2:123456789012:cluster:my-sv2-cluster",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:my-sv2-cluster",
         "AssociatedRoles": [],
         "IAMDatabaseAuthenticationEnabled": false,
         "ClusterCreateTime": "2024-02-19T16:24:07.771000+00:00",
@@ -1330,7 +1348,7 @@ Output:
 }
 ```
 **Example 2: To create the primary (writer) DB instance**
-The following `create-db-instance` example creates an Aurora Serverless v2 primary (writer) DB instance. When you use the console to create a DB cluster, Amazon RDS automatically creates the writer DB instance for your DB cluster. However, when you use the AWS CLI to create a DB cluster, you must explicitly create the writer DB instance for your DB cluster using the `create-db-instance` AWS CLI command.
+The following `create-db-shard-group` example continues by using the `create-db-instance` command to create an Aurora Serverless v2 primary (writer) DB instance. When you use the console to create a DB cluster, Amazon RDS automatically creates the writer DB instance for your DB cluster. However, when you use the AWS CLI to create a DB cluster, you must explicitly create the writer DB instance for your DB cluster using the `create-db-instance` AWS CLI command.
 
 ```
 aws rds create-db-instance \
@@ -1374,7 +1392,7 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-########",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-2c"
+                        "Name": "us-west-2c"
                     },
                     "SubnetOutpost": {},
                     "SubnetStatus": "Active"
@@ -1382,7 +1400,7 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-########",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-2a"
+                        "Name": "us-west-2a"
                     },
                     "SubnetOutpost": {},
                     "SubnetStatus": "Active"
@@ -1390,7 +1408,7 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-########",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-2b"
+                        "Name": "us-west-2b"
                     },
                     "SubnetOutpost": {},
                     "SubnetStatus": "Active"
@@ -1427,7 +1445,7 @@ Output:
         "CopyTagsToSnapshot": false,
         "MonitoringInterval": 0,
         "PromotionTier": 1,
-        "DBInstanceArn": "arn:aws:rds:us-east-2:123456789012:db:my-sv2-instance",
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:my-sv2-instance",
         "IAMDatabaseAuthenticationEnabled": false,
         "PerformanceInsightsEnabled": false,
         "DeletionProtection": false,
@@ -1464,7 +1482,7 @@ Output:
     "ComputeRedundancy": 0,
     "Status": "creating",
     "PubliclyAccessible": false,
-    "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+    "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
 }
 ```
 For more information, see [Using Aurora Serverless v2](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.html) in the *Amazon Aurora User Guide*.
@@ -1495,7 +1513,7 @@ Output:
         "AllocatedStorage": 100,
         "Status": "creating",
         "Port": 3306,
-        "AvailabilityZone": "us-east-1b",
+        "AvailabilityZone": "us-west-2b",
         "VpcId": "vpc-6594f31c",
         "InstanceCreateTime": "2019-04-30T15:45:53.663Z",
         "MasterUsername": "admin",
@@ -1507,8 +1525,8 @@ Output:
         "PercentProgress": 0,
         "StorageType": "io1",
         "Encrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
-        "DBSnapshotArn": "arn:aws:rds:us-east-1:123456789012:snapshot:mydbsnapshot",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+        "DBSnapshotArn": "arn:aws:rds:us-west-2:123456789012:snapshot:mydbsnapshot",
         "IAMDatabaseAuthenticationEnabled": false,
         "ProcessorFeatures": [],
         "DbiResourceId": "db-AKIAIOSFODNN7EXAMPLE"
@@ -1586,7 +1604,7 @@ aws rds create-event-subscription \
     --subscription-name {{my-instance-events}} \
     --source-type {{db-instance}} \
     --event-categories '{{["backup","recovery"]}}' \
-    --sns-topic-arn {{arn:aws:sns:us-east-1:123456789012:interesting-events}}
+    --sns-topic-arn {{arn:aws:sns:us-west-2:123456789012:interesting-events}}
 ```
 Output:
 
@@ -1600,14 +1618,15 @@ Output:
             "backup",
             "recovery"
         ],
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:interesting-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:interesting-events",
         "CustomerAwsId": "123456789012",
-        "EventSubscriptionArn": "arn:aws:rds:us-east-1:123456789012:es:my-instance-events",
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:my-instance-events",
         "SourceType": "db-instance",
         "Enabled": true
     }
 }
 ```
+For more information, see [Subscribing to Amazon RDS event notification](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Subscribing.html) in the *Amazon RDS User Guide*.
 +  For API details, see [CreateEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-event-subscription.html) in *AWS CLI Command Reference*.
 
 ### `create-global-cluster`
@@ -1641,7 +1660,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating an Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-getting-started.html#aurora-global-database-creating) in the *Amazon Aurora User Guide*.
+For more information, see [Creating an Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-creating.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [CreateGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-global-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-option-group`
@@ -1651,7 +1670,7 @@ The following code example shows how to use `create-option-group`.
 
 **AWS CLI**
 **To Create an Amazon RDS option group**
-The following `create-option-group` command creates a new Amazon RDS option group for `Oracle Enterprise Edition` version `11.2`, is named ``MyOptionGroup` and includes a description.
+The following `create-option-group` example creates a new Amazon RDS option group named `MyOptionGroup` with a description for `Oracle Enterprise Edition` version `11.2`.
 
 ```
 aws rds create-option-group \
@@ -1675,6 +1694,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating an option group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html#USER_WorkingWithOptionGroups.Create) in the *Amazon RDS User Guide*.
 +  For API details, see [CreateOptionGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/create-option-group.html) in *AWS CLI Command Reference*.
 
 ### `create-tenant-database`
@@ -1693,6 +1713,11 @@ aws rds create-tenant-database \
     --master-username {{tenantadmin}} \
     --master-user-password {{file://master_user_password.txt}}
 ```
+Contents of `master_user_password.txt`:
+
+```
+Example-Passw0rd
+```
 Output:
 
 ```
@@ -1705,7 +1730,7 @@ Output:
         "MasterUsername": "tenantadmin",
         "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
         "TenantDatabaseResourceId": "tdb-ABCD1234EFGH5678IJKL90MNOPQRST1234UVWX5678YZAEXAMPLE",
-        "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
+        "TenantDatabaseARN": "arn:aws:rds:us-west-2:123456789012:tenant-database:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
         "CharacterSetName": "AL32UTF8",
         "NcharCharacterSetName": "AL16UTF16",
         "DeletionProtection": true,
@@ -1740,27 +1765,27 @@ Output:
     "BlueGreenDeployment": {
         "BlueGreenDeploymentIdentifier": "bgd-v53303651eexfake",
         "BlueGreenDeploymentName": "bgd-cli-test-instance",
-        "Source": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
-        "Target": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-green-rkfbpe",
+        "Source": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
+        "Target": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-green-rkfbpe",
         "SwitchoverDetails": [
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-green-rkfbpe",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-green-rkfbpe",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1-green-j382ha",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1-green-j382ha",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2-green-ejv4ao",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2-green-ejv4ao",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3-green-vlpz3t",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3-green-vlpz3t",
                 "Status": "AVAILABLE"
             }
         ],
@@ -1804,37 +1829,37 @@ Output:
     "BlueGreenDeployment": {
         "BlueGreenDeploymentIdentifier": "bgd-wi89nwzglccsfake",
         "BlueGreenDeploymentName": "my-blue-green-deployment",
-        "Source": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-        "Target": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
+        "Source": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+        "Target": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
         "SwitchoverDetails": [
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1-green-gpmaxf",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1-green-gpmaxf",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2-green-j2oajq",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2-green-j2oajq",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3-green-mkxies",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3-green-mkxies",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-4sqjrq",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-4sqjrq",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint-green-gwwzlg",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint-green-gwwzlg",
                 "Status": "AVAILABLE"
             }
         ],
@@ -1884,12 +1909,12 @@ Output:
 {
     "DBClusterAutomatedBackup": {
         "Engine": "aurora-postgresql",
-        "DBClusterAutomatedBackupsArn": "arn:aws:rds:us-east-1:123456789012:cluster-auto-backup:cab-abcd1234efgh5678ijkl90mnopqrst5678uvwx1234yzab56cdef7890abcd1234",
+        "DBClusterAutomatedBackupsArn": "arn:aws:rds:us-west-2:123456789012:cluster-auto-backup:cab-abcd1234efgh5678ijkl90mnopqrst5678uvwx1234yzab56cdef7890abcd1234",
         "DBClusterIdentifier": "test-aurora-cluster",
         "RestoreWindow": {},
         "MasterUsername": "postgres",
         "DbClusterResourceId": "cluster-ABCD1234EFGH5678IJKL90MNOP",
-        "Region": "us-east-1",
+        "Region": "us-west-2",
         "Status": "deleted",
         "IAMDatabaseAuthenticationEnabled": false,
         "ClusterCreateTime": "2026-09-12T11:38:04+00:00",
@@ -1897,17 +1922,17 @@ Output:
         "StorageEncryptionType": "sse-kms",
         "AllocatedStorage": 1,
         "EngineVersion": "17.7",
-        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-cluster",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:test-aurora-cluster",
         "BackupRetentionPeriod": 7,
         "PreferredBackupWindow": "04:30-05:00",
         "EngineMode": "provisioned",
         "AvailabilityZones": [
-            "us-east-1b",
-            "us-east-1d",
-            "us-east-1c"
+            "us-west-2b",
+            "us-west-2d",
+            "us-west-2c"
         ],
         "Port": 5432,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "TagList": []
     }
 }
@@ -1935,7 +1960,7 @@ Output:
     "DBClusterEndpointIdentifier": "mycustomendpoint",
     "DBClusterIdentifier": "mydbcluster",
     "DBClusterEndpointResourceIdentifier": "cluster-endpoint-ANPAJ4AE5446DAEXAMPLE",
-    "Endpoint": "mycustomendpoint.cluster-custom-cnpexample.us-east-1.rds.amazonaws.com",
+    "Endpoint": "mycustomendpoint.cluster-custom-cnpexample.us-west-2.rds.amazonaws.com",
     "Status": "deleting",
     "EndpointType": "CUSTOM",
     "CustomEndpointType": "READER",
@@ -1945,7 +1970,7 @@ Output:
         "dbinstance3"
     ],
     "ExcludedMembers": [],
-    "DBClusterEndpointArn": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:mycustomendpoint"
+    "DBClusterEndpointArn": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:mycustomendpoint"
 }
 ```
 For more information, see [Amazon Aurora Connection Management](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html) in the *Amazon Aurora User Guide*.
@@ -1987,9 +2012,9 @@ Output:
 {
     "DBClusterSnapshot": {
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1b",
-            "us-east-1e"
+            "us-west-2a",
+            "us-west-2b",
+            "us-west-2d"
         ],
         "DBClusterSnapshotIdentifier": "mydbclustersnapshot",
         "DBClusterIdentifier": "mydbcluster",
@@ -2006,8 +2031,8 @@ Output:
         "SnapshotType": "manual",
         "PercentProgress": 100,
         "StorageEncrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
-        "DBClusterSnapshotArn": "arn:aws:rds:us-east-1:123456789012:cluster-snapshot:mydbclustersnapshot",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+        "DBClusterSnapshotArn": "arn:aws:rds:us-west-2:123456789012:cluster-snapshot:mydbclustersnapshot",
         "IAMDatabaseAuthenticationEnabled": false
     }
 }
@@ -2022,7 +2047,7 @@ The following code example shows how to use `delete-db-cluster`.
 
 **AWS CLI**
 **Example 1: To delete a DB instance in a DB cluster**
-The following `delete-db-instance` example deletes the final DB instance in a DB cluster. You can't delete a DB cluster if it contains DB instances that aren't in the **deleting** state. You can't take a final snapshot when deleting a DB instance in a DB cluster.
+The following `delete-db-cluster` example starts by using the `delete-db-instance` command to delete the final DB instance in a DB cluster. You can't delete a DB cluster if it contains DB instances that aren't in the **deleting** state. You can't take a final snapshot when deleting a DB instance in a DB cluster.
 
 ```
 aws rds delete-db-instance \
@@ -2036,10 +2061,7 @@ Output:
         "DBInstanceIdentifier": "database-3",
         "DBInstanceClass": "db.r4.large",
         "Engine": "aurora-postgresql",
-        "DBInstanceStatus": "deleting",
-
-    ...output omitted...
-
+        "DBInstanceStatus": "deleting"
     }
 }
 ```
@@ -2060,22 +2082,19 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 20,
         "AvailabilityZones": [
-            "eu-central-1b",
-            "eu-central-1c",
-            "eu-central-1a"
+            "us-west-2b",
+            "us-west-2c",
+            "us-west-2a"
         ],
         "BackupRetentionPeriod": 7,
         "DBClusterIdentifier": "mycluster",
         "DBClusterParameterGroup": "default.aurora-postgresql10",
         "DBSubnetGroup": "default-vpc-aa11bb22",
-        "Status": "available",
-
-    ...output omitted...
-
+        "Status": "available"
     }
 }
 ```
-For more information, see [Aurora Clusters with a Single DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DeleteInstance.html#USER_DeleteInstance.LastInstance) in the *Amazon Aurora User Guide*.
+For more information, see [Aurora Clusters with a Single DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DeleteInstance.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeleteDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-cluster.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-instance-automated-backup`
@@ -2120,7 +2139,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.Delete) in the *Amazon RDS User Guide*.
+For more information, see [Deleting replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBackups.Delete.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DeleteDbInstanceAutomatedBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-instance-automated-backup.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-instance`
@@ -2143,11 +2162,11 @@ Output:
 {
     "DBInstance": {
         "DBInstanceIdentifier": "test-instance",
-        "DBInstanceStatus": "deleting",
-        ...some output truncated...
+        "DBInstanceStatus": "deleting"
     }
 }
 ```
+For more information, see [Deleting a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteInstance.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DeleteDBInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-instance.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-parameter-group`
@@ -2157,7 +2176,7 @@ The following code example shows how to use `delete-db-parameter-group`.
 
 **AWS CLI**
 **To delete a DB parameter group**
-The following `command` example deletes a DB parameter group.
+The following `delete-db-parameter-group` example deletes a DB parameter group.
 
 ```
 aws rds delete-db-parameter-group \
@@ -2184,10 +2203,10 @@ Output:
 
 ```
 {
-"DBProxyEndpoint":
+    "DBProxyEndpoint":
     {
         "DBProxyEndpointName": "proxyEP1",
-        "DBProxyEndpointArn": "arn:aws:rds:us-east-1:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
+        "DBProxyEndpointArn": "arn:aws:rds:us-west-2:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
         "DBProxyName": "proxyExample",
         "Status": "deleting",
         "VpcId": "vpc-1234567",
@@ -2199,14 +2218,14 @@ Output:
             "subnetgroup1",
             "subnetgroup2"
         ],
-        "Endpoint": "proxyEP1.endpoint.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+        "Endpoint": "proxyEP1.endpoint.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
         "CreatedDate": "2023-04-13T01:49:38.568000+00:00",
         "TargetRole": "READ_ONLY",
         "IsDefault": false
     }
 }
 ```
-For more information, see [Deleting a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.DeletingEndpoint) in the *Amazon RDS User Guide* and [Deleting a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.DeletingEndpoint) in the *Amazon Aurora User Guide*.
+For more information, see [Deleting a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.DeletingEndpoint.html) in the *Amazon RDS User Guide* and [Deleting a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.DeletingEndpoint.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeleteDbProxyEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-proxy-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-proxy`
@@ -2226,39 +2245,39 @@ Output:
 
 ```
 {
-        "DBProxy":
-        {
-            "DBProxyName": "proxyExample",
-            "DBProxyArn": "arn:aws:rds:us-east-1:123456789012:db-proxy:prx-0123a01b12345c0ab",
-            "Status": "deleting",
-            "EngineFamily": "PostgreSQL",
-            "VpcId": "vpc-1234567",
-            "VpcSecurityGroupIds": [
-                "sg-1234",
-                "sg-5678"
-            ],
-            "VpcSubnetIds": [
-                "subnetgroup1",
-                "subnetgroup2"
-            ],
-            "Auth": "[
-                {
-                "Description": "proxydescription`"
+    "DBProxy": {
+        "DBProxyName": "proxyExample",
+        "DBProxyArn": "arn:aws:rds:us-west-2:123456789012:db-proxy:prx-0123a01b12345c0ab",
+        "Status": "deleting",
+        "EngineFamily": "PostgreSQL",
+        "VpcId": "vpc-1234567",
+        "VpcSecurityGroupIds": [
+            "sg-1234",
+            "sg-5678"
+        ],
+        "VpcSubnetIds": [
+            "subnetgroup1",
+            "subnetgroup2"
+        ],
+        "Auth": [
+            {
+                "Description": "proxydescription",
                 "AuthScheme": "SECRETS",
-                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789123:secret:proxysecret1-Abcd1e",
+                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:proxysecret1-Abcd1e",
                 "IAMAuth": "DISABLED"
-                } ],
-            "RoleArn": "arn:aws:iam::12345678912:role/ProxyPostgreSQLRole",
-            "Endpoint": "proxyExample.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
-            "RequireTLS": false,
-            "IdleClientTimeout": 1800,
-            "DebuggingLogging": false,
+            }
+        ],
+        "RoleArn": "arn:aws:iam::12345678912:role/ProxyPostgreSQLRole",
+        "Endpoint": "proxyExample.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
+        "RequireTLS": false,
+        "IdleClientTimeout": 1800,
+        "DebugLogging": false,
         "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
         "UpdatedDate": "2023-04-13T01:49:38.568000+00:00"
     }
 }
 ```
-For more information, see [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-managing.html#rds-proxy-deleting) in the *Amazon RDS User Guide* and [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-managing.html#rds-proxy-deleting) in the *Amazon Aurora User Guide*.
+For more information, see [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-deleting.html) in the *Amazon RDS User Guide* and [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-deleting.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeleteDbProxy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-db-proxy.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-security-group`
@@ -2291,7 +2310,7 @@ The following `delete-db-shard-group` example shows the error that occurs when y
 aws rds delete-db-shard-group \
     --db-shard-group-identifier {{limitless-test-shard-grp}}
 ```
-Output:
+This command produces no output. Instead, the command fails and returns the following error message.
 
 ```
 An error occurred (InvalidDBShardGroupState) when calling the DeleteDBShardGroup operation: Unable to delete the DB shard group limitless-test-db-shard-group.
@@ -2315,7 +2334,7 @@ Output:
     "ComputeRedundancy": 0,
     "Status": "deleting",
     "PubliclyAccessible": true,
-    "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+    "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
 }
 ```
 For more information, see [Deleting Aurora DB clusters and DB instances](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DeleteCluster.html) in the *Amazon Aurora User Guide*.
@@ -2346,7 +2365,7 @@ Output:
         "AllocatedStorage": 100,
         "Status": "deleted",
         "Port": 3306,
-        "AvailabilityZone": "us-east-1b",
+        "AvailabilityZone": "us-west-2b",
         "VpcId": "vpc-6594f31c",
         "InstanceCreateTime": "2019-04-30T15:45:53.663Z",
         "MasterUsername": "admin",
@@ -2358,8 +2377,8 @@ Output:
         "PercentProgress": 100,
         "StorageType": "io1",
         "Encrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
-        "DBSnapshotArn": "arn:aws:rds:us-east-1:123456789012:snapshot:mydbsnapshot",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+        "DBSnapshotArn": "arn:aws:rds:us-west-2:123456789012:snapshot:mydbsnapshot",
         "IAMDatabaseAuthenticationEnabled": false,
         "ProcessorFeatures": [],
         "DbiResourceId": "db-AKIAIOSFODNN7EXAMPLE"
@@ -2379,7 +2398,8 @@ The following code example shows how to use `delete-db-subnet-group`.
 The following `delete-db-subnet-group` example deletes the DB subnet group called `mysubnetgroup`.
 
 ```
-aws rds delete-db-subnet-group --db-subnet-group-name {{mysubnetgroup}}
+aws rds delete-db-subnet-group \
+    --db-subnet-group-name {{mysubnetgroup}}
 ```
 This command produces no output.
 For more information, see [Working with a DB Instance in a VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html) in the *Amazon RDS User Guide*.
@@ -2395,14 +2415,15 @@ The following code example shows how to use `delete-event-subscription`.
 The following `delete-event-subscription` example deletes the specified event subscription.
 
 ```
-aws rds delete-event-subscription --subscription-name {{my-instance-events}}
+aws rds delete-event-subscription \
+    --subscription-name {{my-instance-events}}
 ```
 Output:
 
 ```
 {
     "EventSubscription": {
-        "EventSubscriptionArn": "arn:aws:rds:us-east-1:123456789012:es:my-instance-events",
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:my-instance-events",
         "CustomerAwsId": "123456789012",
         "Enabled": false,
         "SourceIdsList": [
@@ -2415,11 +2436,12 @@ Output:
         ],
         "SubscriptionCreationTime": "2018-07-31 23:22:01.893",
         "CustSubscriptionId": "my-instance-events",
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:interesting-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:interesting-events",
         "Status": "deleting"
     }
 }
 ```
+For more information, see [Deleting an Amazon RDS event notification subscription](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Deleting.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DeleteEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-event-subscription.html) in *AWS CLI Command Reference*.
 
 ### `delete-global-cluster`
@@ -2452,7 +2474,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting an Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-managing.html#aurora-global-database-deleting) in the *Amazon Aurora User Guide*.
+For more information, see [Deleting an Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-deleting.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeleteGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/delete-global-cluster.html) in *AWS CLI Command Reference*.
 
 ### `delete-option-group`
@@ -2499,7 +2521,7 @@ Output:
         "MasterUsername": "tenantadmin",
         "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
         "TenantDatabaseResourceId": "tdb-ABCD1234EFGH5678IJKL90MNOPQRST1234UVWX5678YZAEXAMPLE",
-        "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
+        "TenantDatabaseARN": "arn:aws:rds:us-west-2:123456789012:tenant-database:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
         "CharacterSetName": "AL32UTF8",
         "NcharCharacterSetName": "AL16UTF16",
         "DeletionProtection": false,
@@ -2526,7 +2548,7 @@ aws rds deregister-db-proxy-targets \
     --db-instance-identifiers {{database-1}}
 ```
 This command produces no output.
-For more information, see [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-managing.html#rds-proxy-deleting) in the *Amazon RDS User Guide* and [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-managing.html#rds-proxy-deleting) in the *Amazon Aurora User Guide*.
+For more information, see [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-deleting.html) in the *Amazon RDS User Guide* and [Deleting an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-deleting.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DeregisterDbProxyTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/deregister-db-proxy-targets.html) in *AWS CLI Command Reference*.
 
 ### `describe-account-attributes`
@@ -2624,6 +2646,7 @@ Output:
     ]
 }
 ```
+For more information, see [Quotas and constraints for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeAccountAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-account-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-blue-green-deployments`
@@ -2633,7 +2656,7 @@ The following code example shows how to use `describe-blue-green-deployments`.
 
 **AWS CLI**
 **Example 1: To describe a blue/green deployment of an RDS DB instance after creation completes**
-The following `describe-blue-green-deployment` example retrieves the details of a blue/green deployment after creation completes.
+The following `describe-blue-green-deployments` example retrieves the details of a blue/green deployment after creation completes.
 
 ```
 aws rds describe-blue-green-deployments \
@@ -2647,27 +2670,27 @@ Output:
         {
             "BlueGreenDeploymentIdentifier": "bgd-v53303651eexfake",
             "BlueGreenDeploymentName": "bgd-cli-test-instance",
-            "Source": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
-            "Target": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-green-rkfbpe",
+            "Source": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
+            "Target": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-green-rkfbpe",
             "SwitchoverDetails": [
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-green-rkfbpe",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-green-rkfbpe",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1-green-j382ha",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1-green-j382ha",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2-green-ejv4ao",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2-green-ejv4ao",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3-green-vlpz3t",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3-green-vlpz3t",
                     "Status": "AVAILABLE"
                 }
             ],
@@ -2697,7 +2720,7 @@ Output:
 ```
 For more information, see [Viewing a blue/green deployment](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-viewing.html) in the *Amazon RDS User Guide*.
 **Example 2: To describe a blue/green deployment for an Aurora MySQL DB cluster**
-The following `describe-blue-green-deployment` example retrieves the details of a blue/green deployment.
+The following `describe-blue-green-deployments` example retrieves the details of a blue/green deployment.
 
 ```
 aws rds describe-blue-green-deployments \
@@ -2711,37 +2734,37 @@ Output:
         {
             "BlueGreenDeploymentIdentifier": "bgd-wi89nwzglccsfake",
             "BlueGreenDeploymentName": "my-blue-green-deployment",
-            "Source": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-            "Target": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
+            "Source": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+            "Target": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
             "SwitchoverDetails": [
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1-green-gpmaxf",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1-green-gpmaxf",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2-green-j2oajq",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2-green-j2oajq",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3-green-mkxies",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3-green-mkxies",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-4sqjrq",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-4sqjrq",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint-green-gwwzlg",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint-green-gwwzlg",
                     "Status": "AVAILABLE"
                 }
             ],
@@ -2771,7 +2794,7 @@ Output:
 ```
 For more information, see [Viewing a blue/green deployment](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments-viewing.html) in the *Amazon Aurora User Guide*.
 **Example 3: To describe a blue/green deployment for an Aurora MySQL cluster after switchover**
-The following `describe-blue-green-deployment` example retrieves the details about a blue/green deployment after the green environment is promoted to be the production environment.
+The following `describe-blue-green-deployments` example retrieves the details about a blue/green deployment after the green environment is promoted to be the production environment.
 
 ```
 aws rds describe-blue-green-deployments \
@@ -2785,37 +2808,37 @@ Output:
         {
             "BlueGreenDeploymentIdentifier": "bgd-wi89nwzglccsfake",
             "BlueGreenDeploymentName": "my-blue-green-deployment",
-            "Source": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-old1",
-            "Target": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
+            "Source": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-old1",
+            "Target": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
             "SwitchoverDetails": [
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint",
                     "Status": "SWITCHOVER_COMPLETED"
                 }
             ],
@@ -2845,7 +2868,7 @@ Output:
 ```
 For more information, see [Viewing a blue/green deployment](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments-viewing.html) in the *Amazon Aurora User Guide*.
 **Example 4: To describe a combined blue/green deployment**
-The following `describe-blue-green-deployment` example retrieves the details of a combined blue/green deployment.
+The following `describe-blue-green-deployments` example retrieves the details of a combined blue/green deployment.
 
 ```
 aws rds describe-blue-green-deployments
@@ -2858,37 +2881,37 @@ Output:
         {
             "BlueGreenDeploymentIdentifier": "bgd-wi89nwzgfakelccs",
             "BlueGreenDeploymentName": "my-blue-green-deployment",
-            "Source": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-            "Target": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
+            "Source": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+            "Target": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
             "SwitchoverDetails": [
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3rnukl",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1-green-gpmaxf",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1-green-gpmaxf",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2-green-j2oajq",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2-green-j2oajq",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3-green-mkxies",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3-green-mkxies",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-4sqjrq",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-4sqjrq",
                     "Status": "AVAILABLE"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint-green-gwwzlg",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint-green-gwwzlg",
                     "Status": "AVAILABLE"
                 }
             ],
@@ -2916,27 +2939,27 @@ Output:
         {
             "BlueGreenDeploymentIdentifier": "bgd-v5330365fake1eex",
             "BlueGreenDeploymentName": "bgd-cli-test-instance",
-            "Source": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-old1",
-            "Target": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
+            "Source": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-old1",
+            "Target": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
             "SwitchoverDetails": [
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2",
                     "Status": "SWITCHOVER_COMPLETED"
                 },
                 {
-                    "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3-old1",
-                    "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3",
+                    "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3-old1",
+                    "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3",
                     "Status": "SWITCHOVER_COMPLETED"
                 }
             ],
@@ -3048,7 +3071,7 @@ Output:
     "DBClusterAutomatedBackups": [
         {
             "Engine": "aurora-postgresql",
-            "DBClusterAutomatedBackupsArn": "arn:aws:rds:us-east-1:123456789012:cluster-auto-backup:cab-abcd1234efgh5678ijkl90mnopqrst5678uvwx1234yzab56cdef7890abcd1234",
+            "DBClusterAutomatedBackupsArn": "arn:aws:rds:us-west-2:123456789012:cluster-auto-backup:cab-abcd1234efgh5678ijkl90mnopqrst5678uvwx1234yzab56cdef7890abcd1234",
             "DBClusterIdentifier": "test-aurora-cluster",
             "RestoreWindow": {
                 "EarliestTime": "2026-09-12T11:38:22.795000+00:00",
@@ -3056,7 +3079,7 @@ Output:
             },
             "MasterUsername": "postgres",
             "DbClusterResourceId": "cluster-ABCD1234EFGH5678IJKL90MNOP",
-            "Region": "us-east-1",
+            "Region": "us-west-2",
             "Status": "active",
             "IAMDatabaseAuthenticationEnabled": false,
             "ClusterCreateTime": "2026-09-12T11:38:04+00:00",
@@ -3064,17 +3087,17 @@ Output:
             "StorageEncryptionType": "sse-kms",
             "AllocatedStorage": 1,
             "EngineVersion": "17.7",
-            "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-cluster",
+            "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:test-aurora-cluster",
             "BackupRetentionPeriod": 7,
             "PreferredBackupWindow": "04:30-05:00",
             "EngineMode": "provisioned",
             "AvailabilityZones": [
-                "us-east-1b",
-                "us-east-1d",
-                "us-east-1c"
+                "us-west-2b",
+                "us-west-2d",
+                "us-west-2c"
             ],
             "Port": 5432,
-            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TagList": []
         }
     ]
@@ -3142,25 +3165,25 @@ Output:
     "DBClusterEndpoints": [
         {
             "DBClusterIdentifier": "my-database-1",
-            "Endpoint": "my-database-1.cluster-cnpexample.us-east-1.rds.amazonaws.com",
+            "Endpoint": "my-database-1.cluster-cnpexample.us-west-2.rds.amazonaws.com",
             "Status": "creating",
             "EndpointType": "WRITER"
         },
         {
             "DBClusterIdentifier": "my-database-1",
-            "Endpoint": "my-database-1.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+            "Endpoint": "my-database-1.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
             "Status": "creating",
             "EndpointType": "READER"
         },
         {
             "DBClusterIdentifier": "mydbcluster",
-            "Endpoint": "mydbcluster.cluster-cnpexamle.us-east-1.rds.amazonaws.com",
+            "Endpoint": "mydbcluster.cluster-cnpexamle.us-west-2.rds.amazonaws.com",
             "Status": "available",
             "EndpointType": "WRITER"
         },
         {
             "DBClusterIdentifier": "mydbcluster",
-            "Endpoint": "mydbcluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+            "Endpoint": "mydbcluster.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
             "Status": "available",
             "EndpointType": "READER"
         }
@@ -3181,7 +3204,7 @@ Output:
     "DBClusterEndpoints": [
         {
             "Status": "available",
-            "Endpoint": "serverless-cluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
+            "Endpoint": "serverless-cluster.cluster-cnpexample.us-west-2.rds.amazonaws.com",
             "DBClusterIdentifier": "serverless-cluster",
             "EndpointType": "WRITER"
         }
@@ -3212,31 +3235,31 @@ Output:
             "DBClusterParameterGroupName": "default.aurora-mysql5.7",
             "DBParameterGroupFamily": "aurora-mysql5.7",
             "Description": "Default cluster parameter group for aurora-mysql5.7",
-            "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:default.aurora-mysql5.7"
+            "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:default.aurora-mysql5.7"
         },
         {
             "DBClusterParameterGroupName": "default.aurora-postgresql9.6",
             "DBParameterGroupFamily": "aurora-postgresql9.6",
             "Description": "Default cluster parameter group for aurora-postgresql9.6",
-            "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:default.aurora-postgresql9.6"
+            "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:default.aurora-postgresql9.6"
         },
         {
             "DBClusterParameterGroupName": "default.aurora5.6",
             "DBParameterGroupFamily": "aurora5.6",
             "Description": "Default cluster parameter group for aurora5.6",
-            "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:default.aurora5.6"
+            "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:default.aurora5.6"
         },
         {
             "DBClusterParameterGroupName": "mydbclusterpg",
             "DBParameterGroupFamily": "aurora-mysql5.7",
             "Description": "My DB cluster parameter group",
-            "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:mydbclusterpg"
+            "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:mydbclusterpg"
         },
         {
             "DBClusterParameterGroupName": "mydbclusterpgcopy",
             "DBParameterGroupFamily": "aurora-mysql5.7",
             "Description": "Copy of mydbclusterpg parameter group",
-            "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:mydbclusterpgcopy"
+            "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:mydbclusterpgcopy"
         }
     ]
 }
@@ -3288,8 +3311,7 @@ Output:
             "SupportedEngineModes": [
                 "provisioned"
             ]
-        },
-        ...some output truncated...
+        }
     ]
 }
 ```
@@ -3319,9 +3341,6 @@ Output:
     },
     {
         "ParameterName": "aurora_lab_mode"
-    },
-
-    ...some output truncated...
     }
 ]
 ```
@@ -3352,9 +3371,6 @@ Output:
     {
         "ParameterName": "aurora_lab_mode",
         "IsModifiable": true
-    },
-
-    ...some output truncated...
     }
 ]
 ```
@@ -3389,8 +3405,6 @@ Output:
         "DataType": "boolean",
         "ParameterName": "automatic_sp_privileges",
         "IsModifiable": true
-    },
-    ...some output truncated...
     }
 ]
 ```
@@ -3450,9 +3464,9 @@ Output:
     "DBClusterSnapshots": [
         {
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1e"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2d"
             ],
             "DBClusterSnapshotIdentifier": "myclustersnapshotcopy",
             "DBClusterIdentifier": "mydbcluster",
@@ -3469,15 +3483,15 @@ Output:
             "SnapshotType": "manual",
             "PercentProgress": 100,
             "StorageEncrypted": true,
-            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/AKIAIOSFODNN7EXAMPLE",
-            "DBClusterSnapshotArn": "arn:aws:rds:us-east-1:814387698303:cluster-snapshot:myclustersnapshotcopy",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+            "DBClusterSnapshotArn": "arn:aws:rds:us-west-2:123456789012:cluster-snapshot:myclustersnapshotcopy",
             "IAMDatabaseAuthenticationEnabled": false
         },
         {
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1e"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2d"
             ],
             "DBClusterSnapshotIdentifier": "rds:mydbcluster-2019-06-20-09-16",
             "DBClusterIdentifier": "mydbcluster",
@@ -3494,8 +3508,8 @@ Output:
             "SnapshotType": "automated",
             "PercentProgress": 100,
             "StorageEncrypted": true,
-            "KmsKeyId": "arn:aws:kms:us-east-1:814387698303:key/AKIAIOSFODNN7EXAMPLE",
-            "DBClusterSnapshotArn": "arn:aws:rds:us-east-1:123456789012:cluster-snapshot:rds:mydbcluster-2019-06-20-09-16",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
+            "DBClusterSnapshotArn": "arn:aws:rds:us-west-2:123456789012:cluster-snapshot:rds:mydbcluster-2019-06-20-09-16",
             "IAMDatabaseAuthenticationEnabled": false
         }
     ]
@@ -3525,9 +3539,9 @@ Output:
         {
             "AllocatedStorage": 1,
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1e"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2d"
             ],
             "BackupRetentionPeriod": 1,
             "DatabaseName": "mydbcluster",
@@ -3536,8 +3550,8 @@ Output:
             "DBSubnetGroup": "default",
             "Status": "available",
             "EarliestRestorableTime": "2019-06-19T09:16:28.210Z",
-            "Endpoint": "mydbcluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
-            "ReaderEndpoint": "mydbcluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+            "Endpoint": "mydbcluster.cluster-cnpexample.us-west-2.rds.amazonaws.com",
+            "ReaderEndpoint": "mydbcluster.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
             "MultiAZ": true,
             "Engine": "aurora-mysql",
             "EngineVersion": "5.7.mysql_aurora.2.04.2",
@@ -3593,9 +3607,9 @@ Output:
             ],
             "HostedZoneId": "Z2R2ITUGPM61AM",
             "StorageEncrypted": true,
-            "KmsKeyId": "arn:aws:kms:us-east-1:814387698303:key/AKIAIOSFODNN7EXAMPLE",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/AKIAIOSFODNN7EXAMPLE",
             "DbClusterResourceId": "cluster-AKIAIOSFODNN7EXAMPLE",
-            "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:mydbcluster",
+            "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:mydbcluster",
             "AssociatedRoles": [],
             "IAMDatabaseAuthenticationEnabled": false,
             "ClusterCreateTime": "2019-04-15T14:18:42.785Z",
@@ -3618,21 +3632,19 @@ Output:
 ```
 [
     {
-        "Endpoint": "cluster-57-2020-05-01-2270.cluster-cnpexample.us-east-1.rds.amazonaws.com",
-        "ReaderEndpoint": "cluster-57-2020-05-01-2270.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "cluster-57-2020-05-01-2270.cluster-cnpexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "cluster-57-2020-05-01-2270.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "DBClusterIdentifier": "cluster-57-2020-05-01-2270"
     },
     {
-        "Endpoint": "cluster-57-2020-05-01-4615.cluster-cnpexample.us-east-1.rds.amazonaws.com",
-        "ReaderEndpoint": "cluster-57-2020-05-01-4615.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "cluster-57-2020-05-01-4615.cluster-cnpexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "cluster-57-2020-05-01-4615.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "DBClusterIdentifier": "cluster-57-2020-05-01-4615"
     },
     {
-        "Endpoint": "pg2-cluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
-        "ReaderEndpoint": "pg2-cluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "pg2-cluster.cluster-cnpexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "pg2-cluster.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "DBClusterIdentifier": "pg2-cluster"
-    },
-    ...output omitted...
     }
 ]
 ```
@@ -3701,10 +3713,11 @@ Output:
                     "Description": "MySQL 5.5.57",
                     "AutoUpgrade": false,
                     "IsMajorVersionUpgrade": false
-                },
-                ...some output truncated...
+                }
             ]
         }
+    ]
+}
 ```
 For more information, see [What Is Amazon Relational Database Service (Amazon RDS)?](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeDBEngineVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-engine-versions.html) in *AWS CLI Command Reference*.
@@ -3754,7 +3767,7 @@ Output:
     ]
 }
 ```
-For more information, see [Finding information about replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.Replicating.Describe) in the *Amazon RDS User Guide*.
+For more information, see [Finding information about replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBackups.Replicating.Describe.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeDbInstanceAutomatedBackups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-instance-automated-backups.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-instances`
@@ -3782,15 +3795,15 @@ Output:
             "DBInstanceStatus": "available",
             "MasterUsername": "masterawsuser",
             "Endpoint": {
-                "Address": "mydbinstancecf.abcexample.us-east-1.rds.amazonaws.com",
+                "Address": "mydbinstancecf.abcexample.us-west-2.rds.amazonaws.com",
                 "Port": 3306,
                 "HostedZoneId": "Z2R2ITUGPM61AM"
-            },
-            ...some output truncated...
+            }
         }
     ]
 }
 ```
+For more information, see [Amazon RDS DB instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeDBInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-instances.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-log-files`
@@ -3844,6 +3857,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing and listing database log files](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Procedural.Viewing.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeDbLogFiles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-log-files.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-major-engine-versions`
@@ -3908,27 +3922,26 @@ Output:
             "DBParameterGroupName": "default.aurora-mysql5.7",
             "DBParameterGroupFamily": "aurora-mysql5.7",
             "Description": "Default parameter group for aurora-mysql5.7",
-            "DBParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:pg:default.aurora-mysql5.7"
+            "DBParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:pg:default.aurora-mysql5.7"
         },
         {
             "DBParameterGroupName": "default.aurora-postgresql9.6",
             "DBParameterGroupFamily": "aurora-postgresql9.6",
             "Description": "Default parameter group for aurora-postgresql9.6",
-            "DBParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:pg:default.aurora-postgresql9.6"
+            "DBParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:pg:default.aurora-postgresql9.6"
         },
         {
             "DBParameterGroupName": "default.aurora5.6",
             "DBParameterGroupFamily": "aurora5.6",
             "Description": "Default parameter group for aurora5.6",
-            "DBParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:pg:default.aurora5.6"
+            "DBParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:pg:default.aurora5.6"
         },
         {
             "DBParameterGroupName": "default.mariadb10.1",
             "DBParameterGroupFamily": "mariadb10.1",
             "Description": "Default parameter group for mariadb10.1",
-            "DBParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:pg:default.mariadb10.1"
-        },
-        ...some output truncated...
+            "DBParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:pg:default.mariadb10.1"
+        }
     ]
 }
 ```
@@ -3972,8 +3985,7 @@ Output:
             "AllowedValues": "0,1",
             "IsModifiable": false,
             "ApplyMethod": "pending-reboot"
-        },
-        ...some output truncated...
+        }
     ]
 }
 ```
@@ -3999,7 +4011,7 @@ Output:
     "DBProxies": [
         {
             "DBProxyName": "proxyExample1",
-            "DBProxyArn": "arn:aws:rds:us-east-1:123456789012:db-proxy:prx-0123a01b12345c0ab",
+            "DBProxyArn": "arn:aws:rds:us-west-2:123456789012:db-proxy:prx-0123a01b12345c0ab",
             "Status": "available",
             "EngineFamily": "PostgreSQL",
             "VpcId": "vpc-1234567",
@@ -4010,25 +4022,25 @@ Output:
                 "subnetgroup1",
                 "subnetgroup2"
             ],
-            "Auth": "[
+            "Auth": [
                 {
-                    "Description": "proxydescription1"
+                    "Description": "proxydescription1",
                     "AuthScheme": "SECRETS",
-                    "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789123:secret:secretName-1234f",
+                    "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:secretName-1234f",
                     "IAMAuth": "DISABLED"
                 }
-            ]",
-            "RoleArn": "arn:aws:iam::12345678912??:role/ProxyPostgreSQLRole",
-            "Endpoint": "proxyExample1.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+            ],
+            "RoleArn": "arn:aws:iam::12345678912:role/ProxyPostgreSQLRole",
+            "Endpoint": "proxyExample1.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
             "RequireTLS": false,
             "IdleClientTimeout": 1800,
-            "DebuggingLogging": false,
+            "DebugLogging": false,
             "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
             "UpdatedDate": "2023-04-13T01:49:38.568000+00:00"
         },
         {
             "DBProxyName": "proxyExample2",
-            "DBProxyArn": "arn:aws:rds:us-east-1:123456789012:db-proxy:prx-1234a12b23456c1ab",
+            "DBProxyArn": "arn:aws:rds:us-west-2:123456789012:db-proxy:prx-1234a12b23456c1ab",
             "Status": "available",
             "EngineFamily": "PostgreSQL",
             "VpcId": "sg-1234567",
@@ -4039,26 +4051,26 @@ Output:
                 "subnetgroup1",
                 "subnetgroup2"
             ],
-            "Auth": "[
+            "Auth": [
                 {
-                    "Description": "proxydescription2"
+                    "Description": "proxydescription2",
                     "AuthScheme": "SECRETS",
-                    "SecretArn": "aarn:aws:secretsmanager:us-west-2:123456789123:secret:secretName-1234f",
+                    "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:secretName-1234f",
                     "IAMAuth": "DISABLED"
                 }
-            ]",
+            ],
             "RoleArn": "arn:aws:iam::12345678912:role/ProxyPostgreSQLRole",
-            "Endpoint": "proxyExample2.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+            "Endpoint": "proxyExample2.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
             "RequireTLS": false,
             "IdleClientTimeout": 1800,
-            "DebuggingLogging": false,
+            "DebugLogging": false,
             "CreatedDate": "2022-01-05T16:19:33.452000+00:00",
             "UpdatedDate": "2023-04-13T01:49:38.568000+00:00"
         }
     ]
 }
 ```
-For more information, see [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-setup.html#rds-proxy-viewing) in the *Amazon RDS User Guide* and [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-setup.html#rds-proxy-viewing) in the *Amazon Aurora User Guide*.
+For more information, see [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-viewing.html) in the *Amazon RDS User Guide* and [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-viewing.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DescribeDbProxies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-proxies.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-proxy-endpoints`
@@ -4080,7 +4092,7 @@ Output:
     "DBProxyEndpoints": [
         {
             "DBProxyEndpointName": "proxyEndpoint1",
-            "DBProxyEndpointArn": "arn:aws:rds:us-east-1:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
+            "DBProxyEndpointArn": "arn:aws:rds:us-west-2:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
             "DBProxyName": "proxyExample",
             "Status": "available",
             "VpcId": "vpc-1234567",
@@ -4091,14 +4103,14 @@ Output:
                 "subnetgroup1",
                 "subnetgroup2"
             ],
-            "Endpoint": "proxyEndpoint1.endpoint.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+            "Endpoint": "proxyEndpoint1.endpoint.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
             "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
             "TargetRole": "READ_WRITE",
             "IsDefault": false
         },
         {
             "DBProxyEndpointName": "proxyEndpoint2",
-            "DBProxyEndpointArn": "arn:aws:rds:us-east-1:123456789012:db-proxy-endpoint:prx-endpoint-4567a01b12345c0ab",
+            "DBProxyEndpointArn": "arn:aws:rds:us-west-2:123456789012:db-proxy-endpoint:prx-endpoint-4567a01b12345c0ab",
             "DBProxyName": "proxyExample2",
             "Status": "available",
             "VpcId": "vpc1234567",
@@ -4109,7 +4121,7 @@ Output:
                 "subnetgroup1",
                 "subnetgroup2"
             ],
-            "Endpoint": "proxyEndpoint2.endpoint.proxy-cd1ef2klmnop.us-east-1.rds.amazonaws.com",
+            "Endpoint": "proxyEndpoint2.endpoint.proxy-cd1ef2klmnop.us-west-2.rds.amazonaws.com",
             "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
             "TargetRole": "READ_WRITE",
             "IsDefault": false
@@ -4117,7 +4129,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.DescribingEndpoint) in the *Amazon RDS User Guide* and [Creating a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.DescribingEndpoint) in the *Amazon Aurora User Guide*.
+For more information, see [Viewing a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.DescribingEndpoint.html) in the *Amazon RDS User Guide* and [Creating a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.DescribingEndpoint.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DescribeDbProxyEndpoints](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-proxy-endpoints.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-proxy-target-groups`
@@ -4137,25 +4149,26 @@ Output:
 
 ```
 {
-"TargetGroups":
-    {
-        "DBProxyName": "proxyExample",
-        "TargetGroupName": "default",
-        "TargetGroupArn": "arn:aws:rds:us-east-1:123456789012:target-group:prx-tg-0123a01b12345c0ab",
-        "IsDefault": true,
-        "Status": "available",
-        "ConnectionPoolConfig": {
-            "MaxConnectionsPercent": 100,
-            "MaxIdleConnectionsPercent": 50,
-            "ConnectionBorrowTimeout": 120,
-            "SessionPinningFilters": []
-        },
-        "CreatedDate": "2023-05-02T18:41:19.495000+00:00",
-        "UpdatedDate": "2023-05-02T18:41:21.762000+00:00"
-    }
+    "TargetGroups": [
+        {
+            "DBProxyName": "proxyExample",
+            "TargetGroupName": "default",
+            "TargetGroupArn": "arn:aws:rds:us-west-2:123456789012:target-group:prx-tg-0123a01b12345c0ab",
+            "IsDefault": true,
+            "Status": "available",
+            "ConnectionPoolConfig": {
+                "MaxConnectionsPercent": 100,
+                "MaxIdleConnectionsPercent": 50,
+                "ConnectionBorrowTimeout": 120,
+                "SessionPinningFilters": []
+            },
+            "CreatedDate": "2023-05-02T18:41:19.495000+00:00",
+            "UpdatedDate": "2023-05-02T18:41:21.762000+00:00"
+        }
+    ]
 }
 ```
-For more information, see [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-setup.html#rds-proxy-viewing) in the *Amazon RDS User Guide* and [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-setup.html#rds-proxy-viewing) in the *Amazon Aurora User Guide*.
+For more information, see [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-viewing.html) in the *Amazon RDS User Guide* and [Viewing an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-viewing.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DescribeDbProxyTargetGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-proxy-target-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-proxy-targets`
@@ -4177,7 +4190,7 @@ Output:
 {
     "Targets": [
         {
-            "Endpoint": "database1.ab0cd1efghij.us-east-1.rds.amazonaws.com",
+            "Endpoint": "database1.ab0cd1efghij.us-west-2.rds.amazonaws.com",
             "TrackedClusterId": "database1",
             "RdsResourceId": "database1-instance-1",
             "Port": 3306,
@@ -4192,7 +4205,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-setup.html#rds-proxy-viewing) in the *Amazon RDS User Guide* and [Viewing an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-setup.html#rds-proxy-viewing) in the *Amazon Aurora User Guide*.
+For more information, see [Viewing an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-viewing.html) in the *Amazon RDS User Guide* and [Viewing an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-viewing.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [DescribeDbProxyTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-proxy-targets.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-recommendations`
@@ -4213,10 +4226,10 @@ Output:
 {
     "DBRecommendations": [
         {
-            "RecommendationId": "12ab3cde-f456-7g8h-9012-i3j45678k9lm",
+            "RecommendationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TypeId": "config_recommendation::old_minor_version",
             "Severity": "informational",
-            "ResourceArn": "arn:aws:rds:us-west-2:111122223333:db:database-1",
+            "ResourceArn": "arn:aws:rds:us-west-2:123456789012:db:database-1",
             "Status": "active",
             "CreatedTime": "2024-02-21T23:14:19.292000+00:00",
             "UpdatedTime": "2024-02-21T23:14:19+00:00",
@@ -4292,10 +4305,10 @@ Output:
 {
     "DBRecommendations": [
         {
-            "RecommendationId": "12ab3cde-f456-7g8h-9012-i3j45678k9lm",
+            "RecommendationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TypeId": "config_recommendation::rds_extended_support",
             "Severity": "high",
-            "ResourceArn": "arn:aws:rds:us-west-2:111122223333:db:database-1",
+            "ResourceArn": "arn:aws:rds:us-west-2:123456789012:db:database-1",
             "Status": "active",
             "CreatedTime": "2024-02-21T23:14:19.392000+00:00",
             "UpdatedTime": "2024-02-21T23:14:19+00:00",
@@ -4359,10 +4372,10 @@ Output:
 {
     "DBRecommendations": [
         {
-            "RecommendationId": "12ab3cde-f456-7g8h-9012-i3j45678k9lm",
+            "RecommendationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TypeId": "config_recommendation::old_minor_version",
             "Severity": "informational",
-            "ResourceArn": "arn:aws:rds:us-west-2:111122223333:db:database-1",
+            "ResourceArn": "arn:aws:rds:us-west-2:123456789012:db:database-1",
             "Status": "active",
             "CreatedTime": "2024-02-21T23:14:19.292000+00:00",
             "UpdatedTime": "2024-02-21T23:14:19+00:00",
@@ -4438,10 +4451,10 @@ Output:
 {
     "DBRecommendations": [
         {
-            "RecommendationId": "12ab3cde-f456-7g8h-9012-i3j45678k9lm",
+            "RecommendationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "TypeId": "config_recommendation::old_minor_version",
             "Severity": "informational",
-            "ResourceArn": "arn:aws:rds:us-west-2:111122223333:db:database-1",
+            "ResourceArn": "arn:aws:rds:us-west-2:123456789012:db:database-1",
             "Status": "active",
             "CreatedTime": "2024-02-21T23:14:19.292000+00:00",
             "UpdatedTime": "2024-02-21T23:14:19+00:00",
@@ -4529,7 +4542,7 @@ Output:
             "DBSecurityGroupDescription": "default",
             "EC2SecurityGroups": [],
             "IPRanges": [],
-            "DBSecurityGroupArn": "arn:aws:rds:us-west-1:111122223333:secgrp:default"
+            "DBSecurityGroupArn": "arn:aws:rds:us-west-2:123456789012:secgrp:default"
         },
         {
             "OwnerId": "123456789012",
@@ -4538,12 +4551,12 @@ Output:
             "VpcId": "vpc-1234567f",
             "EC2SecurityGroups": [],
             "IPRanges": [],
-            "DBSecurityGroupArn": "arn:aws:rds:us-west-1:111122223333:secgrp:mysecgroup"
+            "DBSecurityGroupArn": "arn:aws:rds:us-west-2:123456789012:secgrp:mysecgroup"
         }
     ]
 }
 ```
-For more information, see [Listing Available DB Security Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithSecurityGroups.html#USER_WorkingWithSecurityGroups.Listing) in the *Amazon RDS User Guide*.
+For more information, see [Listing Available DB Security Groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeDbSecurityGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-db-security-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-shard-groups`
@@ -4571,7 +4584,7 @@ Output:
             "ComputeRedundancy": 0,
             "Status": "available",
             "PubliclyAccessible": true,
-            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
         },
         {
             "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
@@ -4581,7 +4594,7 @@ Output:
             "ComputeRedundancy": 0,
             "Status": "available",
             "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
         }
     ]
 }
@@ -4612,8 +4625,8 @@ Output:
             {
                 "AttributeName": "restore",
                 "AttributeValues": [
-                    "123456789012",
-                    "210987654321"
+                    "123456789111",
+                    "123456789222"
                 ]
             }
         ]
@@ -4651,7 +4664,7 @@ Output:
             "MasterUsername": "admin",
             "TenantDatabaseResourceId": "tdb-QRST5678UVWX1234YZAB90CDEFGHIJ5678KLMN1234OPQEXAMPLE",
             "CharacterSetName": "AL16UTF16",
-            "DBSnapshotTenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:snapshot-tenant-database:final-snap-test:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
+            "DBSnapshotTenantDatabaseARN": "arn:aws:rds:us-west-2:123456789012:snapshot-tenant-database:final-snap-test:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
             "TagList": []
         },
         {
@@ -4664,7 +4677,7 @@ Output:
             "MasterUsername": "tenantadmin",
             "TenantDatabaseResourceId": "tdb-ABCD1234EFGH5678IJKL90MNOPQRST1234UVWX5678YZAEXAMPLE",
             "CharacterSetName": "AL16UTF16",
-            "DBSnapshotTenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:snapshot-tenant-database:final-snap-test:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
+            "DBSnapshotTenantDatabaseARN": "arn:aws:rds:us-west-2:123456789012:snapshot-tenant-database:final-snap-test:tdb-abcd1234efgh5678ijkl90mnopqrst1234uvwx5678yzaexample",
             "TagList": []
         }
     ]
@@ -4699,7 +4712,7 @@ Output:
             "AllocatedStorage": 20,
             "Status": "available",
             "Port": 3306,
-            "AvailabilityZone": "us-east-1f",
+            "AvailabilityZone": "us-west-2d",
             "VpcId": "vpc-6594f31c",
             "InstanceCreateTime": "2018-02-08T22:24:55.973Z",
             "MasterUsername": "mysqladmin",
@@ -4710,7 +4723,7 @@ Output:
             "PercentProgress": 100,
             "StorageType": "gp2",
             "Encrypted": false,
-            "DBSnapshotArn": "arn:aws:rds:us-east-1:123456789012:snapshot:mydbsnapshot",
+            "DBSnapshotArn": "arn:aws:rds:us-west-2:123456789012:snapshot:mydbsnapshot",
             "IAMDatabaseAuthenticationEnabled": false,
             "ProcessorFeatures": [],
             "DbiResourceId": "db-AKIAIOSFODNN7EXAMPLE"
@@ -4720,13 +4733,12 @@ Output:
 ```
 For more information, see [Creating a DB Snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateSnapshot.html) in the *Amazon RDS User Guide*.
 **Example 2: To find the number of manual snapshots taken**
-The following `describe-db-snapshots` example uses the `length` operator in the `--query` option to return the number of manual snapshots that have been taken in a particular AWS Region.
+The following `describe-db-snapshots` example uses the `length` operator in the `--query` option to return the number of manual snapshots that have been taken in the current AWS Region.
 
 ```
 aws rds describe-db-snapshots \
     --snapshot-type {{manual}} \
-    --query {{"length(*[].{DBSnapshots:SnapshotType})"}} \
-    --region {{eu-central-1}}
+    --query {{"length(*[].{DBSnapshots:SnapshotType})"}}
 ```
 Output:
 
@@ -4762,33 +4774,33 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-d8c8e7f4",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1a"
+                        "Name": "us-west-2a"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-718fdc7d",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1f"
+                        "Name": "us-west-2d"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-cbc8e7e7",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1a"
+                        "Name": "us-west-2a"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-0ccde220",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1a"
+                        "Name": "us-west-2a"
                     },
                     "SubnetStatus": "Active"
                 }
             ],
-            "DBSubnetGroupArn": "arn:aws:rds:us-east-1:123456789012:subgrp:mydbsubnetgroup"
+            "DBSubnetGroupArn": "arn:aws:rds:us-west-2:123456789012:subgrp:mydbsubnetgroup"
         }
     ]
 }
@@ -4825,8 +4837,7 @@ Output:
                 "SupportedEngineModes": [
                     "provisioned"
                 ]
-            },
-            ...some output truncated...
+            }
         ]
     }
 }
@@ -4861,8 +4872,7 @@ Output:
                 "DataType": "boolean",
                 "AllowedValues": "0,1",
                 "IsModifiable": false
-            },
-            ...some output truncated...
+            }
         ]
     }
 }
@@ -4945,6 +4955,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon RDS event categories and event messages](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Messages.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeEventCategories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-event-categories.html) in *AWS CLI Command Reference*.
 
 ### `describe-event-subscriptions`
@@ -4954,7 +4965,7 @@ The following code example shows how to use `describe-event-subscriptions`.
 
 **AWS CLI**
 **To describe event subscriptions**
-This example describes all of the Amazon RDS event subscriptions for the current AWS account.
+The following `describe-event-subscriptions` example describes all of the Amazon RDS event subscriptions for the current AWS account.
 
 ```
 aws rds describe-event-subscriptions
@@ -4970,18 +4981,18 @@ Output:
                 "recovery"
             ],
             "Enabled": true,
-            "EventSubscriptionArn": "arn:aws:rds:us-east-1:123456789012:es:my-instance-events",
+            "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:my-instance-events",
             "Status": "creating",
             "SourceType": "db-instance",
             "CustomerAwsId": "123456789012",
             "SubscriptionCreationTime": "2018-07-31 23:22:01.893",
             "CustSubscriptionId": "my-instance-events",
-            "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:interesting-events"
-        },
-        ...some output truncated...
+            "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:interesting-events"
+        }
     ]
 }
 ```
+For more information, see [Listing Amazon RDS event notification subscriptions](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.ListSubscription.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeEventSubscriptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-event-subscriptions.html) in *AWS CLI Command Reference*.
 
 ### `describe-events`
@@ -5011,7 +5022,7 @@ Output:
             ],
             "Message": "Backing up DB instance",
             "Date": "2018-07-31T23:09:23.983Z",
-            "SourceArn": "arn:aws:rds:us-east-1:123456789012:db:test-instance"
+            "SourceArn": "arn:aws:rds:us-west-2:123456789012:db:test-instance"
         },
         {
             "SourceType": "db-instance",
@@ -5021,11 +5032,12 @@ Output:
             ],
             "Message": "Finished DB Instance backup",
             "Date": "2018-07-31T23:15:13.049Z",
-            "SourceArn": "arn:aws:rds:us-east-1:123456789012:db:test-instance"
+            "SourceArn": "arn:aws:rds:us-west-2:123456789012:db:test-instance"
         }
     ]
 }
 ```
+For more information, see [Viewing Amazon RDS events](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ListEvents.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-events.html) in *AWS CLI Command Reference*.
 
 ### `describe-export-tasks`
@@ -5054,7 +5066,7 @@ Output:
             "S3Bucket": "amzn-s3-demo-bucket",
             "S3Prefix": "",
             "IamRoleArn": "arn:aws:iam::123456789012:role/service-role/ExportRole",
-            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/abcd0000-7fca-4128-82f2-aabbccddeeff",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "COMPLETE",
             "PercentProgress": 100,
             "TotalExtractedDataInGB": 0
@@ -5066,7 +5078,7 @@ Output:
             "S3Bucket": "amzn-s3-demo-bucket",
             "S3Prefix": "",
             "IamRoleArn": "arn:aws:iam::123456789012:role/service-role/ExportRole",
-            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/abcd0000-7fca-4128-82f2-aabbccddeeff",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "STARTING",
             "PercentProgress": 0,
             "TotalExtractedDataInGB": 0
@@ -5074,7 +5086,7 @@ Output:
     ]
 }
 ```
-For more information, see [Monitoring Snapshot Exports](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.html#USER_ExportSnapshot.Monitoring) in the *Amazon RDS User Guide*.
+For more information, see [Monitoring Snapshot Exports](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ExportSnapshot.Monitoring.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeExportTasks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-export-tasks.html) in *AWS CLI Command Reference*.
 
 ### `describe-global-clusters`
@@ -5207,7 +5219,7 @@ Output:
             "MajorEngineVersion": "19",
             "Options": [],
             "AllowsVpcAndNonVpcInstanceMemberships": true,
-            "OptionGroupArn": "arn:aws:rds:us-west-1:111122223333:og:default:oracle-ee-19"
+            "OptionGroupArn": "arn:aws:rds:us-west-2:123456789012:og:default:oracle-ee-19"
         }
     ]
 }
@@ -5239,16 +5251,16 @@ Output:
             "MaxStorageSize": 6144,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
+                    "Name": "us-west-2d"
                 }
             ],
             "SupportsIops": false,
@@ -5266,9 +5278,9 @@ Output:
             "SupportsPerformanceInsights": false
         }
     ]
-    ...some output truncated...
 }
 ```
+For more information, see [DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeOrderableDBInstanceOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-orderable-db-instance-options.html) in *AWS CLI Command Reference*.
 
 ### `describe-pending-maintenance-actions`
@@ -5325,7 +5337,7 @@ Output:
             "CurrencyCode": "USD",
             "UsagePrice": 0.0,
             "ProductDescription": "oracle-se2(li)",
-            "ReservedDBInstancesOfferingId": "005bdee3-9ef4-4182-aa0c-58ef7cb6c2f8",
+            "ReservedDBInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "MultiAZ": true,
             "DBInstanceClass": "db.m4.xlarge",
             "OfferingType": "Partial Upfront",
@@ -5337,10 +5349,11 @@ Output:
             ],
             "FixedPrice": 4089.0,
             "Duration": 31536000
-        },
-    ...some output truncated...
+        }
+    ]
 }
 ```
+For more information, see [Reserved DB instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeReservedDbInstancesOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-reserved-db-instances-offerings.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-db-instances`
@@ -5362,7 +5375,7 @@ Output:
     "ReservedDBInstances": [
         {
             "ReservedDBInstanceId": "myreservedinstance",
-            "ReservedDBInstancesOfferingId": "12ab34cd-59af-4b2c-a660-1abcdef23456",
+            "ReservedDBInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "DBInstanceClass": "db.t3.micro",
             "StartTime": "2020-06-01T13:44:21.436Z",
             "Duration": 31536000,
@@ -5381,7 +5394,7 @@ Output:
                 }
             ],
             "ReservedDBInstanceArn": "arn:aws:rds:us-west-2:123456789012:ri:myreservedinstance",
-            "LeaseId": "a1b2c3d4-6b69-4a59-be89-5e11aa446666"
+            "LeaseId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
@@ -5535,9 +5548,9 @@ Output:
         },
         {
             "RegionName": "me-central-1",
-             "Endpoint": "https://rds.me-central-1.amazonaws.com",
-             "Status": "available",
-             "SupportsDBInstanceAutomatedBackupsReplication": false
+            "Endpoint": "https://rds.me-central-1.amazonaws.com",
+            "Status": "available",
+            "SupportsDBInstanceAutomatedBackupsReplication": false
         },
         {
             "RegionName": "me-south-1",
@@ -5565,14 +5578,14 @@ Output:
         },
         {
             "RegionName": "us-west-2",
-           "Endpoint": "https://rds.us-west-2.amazonaws.com",
+            "Endpoint": "https://rds.us-west-2.amazonaws.com",
             "Status": "available",
             "SupportsDBInstanceAutomatedBackupsReplication": true
         }
     ]
 }
 ```
-For more information, see [Finding information about replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.Replicating.Describe) in the *Amazon RDS User Guide*.
+For more information, see [Finding information about replicated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBackups.Replicating.Describe.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeSourceRegions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-source-regions.html) in *AWS CLI Command Reference*.
 
 ### `describe-tenant-databases`
@@ -5601,7 +5614,7 @@ Output:
             "MasterUsername": "admin",
             "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
             "TenantDatabaseResourceId": "tdb-QRST5678UVWX1234YZAB90CDEFGHIJ5678KLMN1234OPQEXAMPLE",
-            "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
+            "TenantDatabaseARN": "arn:aws:rds:us-west-2:123456789012:tenant-database:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
             "CharacterSetName": "AL32UTF8",
             "NcharCharacterSetName": "AL16UTF16",
             "DeletionProtection": false,
@@ -5717,6 +5730,7 @@ Output:
     }
 }
 ```
+For more information, see [Modifying an Amazon RDS DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DescribeValidDbInstanceModifications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/describe-valid-db-instance-modifications.html) in *AWS CLI Command Reference*.
 
 ### `disable-http-endpoint`
@@ -5730,13 +5744,13 @@ The following `disable-http-endpoint` example disables the RDS Data API for the 
 
 ```
 aws rds disable-http-endpoint \
-    --resource-arn {{arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster}}
+    --resource-arn {{arn:aws:rds:us-west-2:123456789012:cluster:test-aurora-pg-cluster}}
 ```
 Output:
 
 ```
 {
-    "ResourceArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster",
+    "ResourceArn": "arn:aws:rds:us-west-2:123456789012:cluster:test-aurora-pg-cluster",
     "HttpEndpointEnabled": false
 }
 ```
@@ -5758,7 +5772,9 @@ aws rds download-db-log-file-portion \
     --log-file-name {{log.txt}} \
     --output {{text}} {{>}} {{tail.txt}}
 ```
+This command produces no output.
 The saved file might contain blank lines. They appear at the end of each part of the log file while being downloaded.
+For more information, see [Downloading a database log file](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Procedural.Downloading.html) in the *Amazon RDS User Guide*.
 **Example 2: To download an entire DB log file**
 The following `download-db-log-file-portion` example downloads the entire log file, using the `--starting-token 0` parameter, and saves the output to a local file named `full.txt`.
 
@@ -5769,7 +5785,9 @@ aws rds download-db-log-file-portion \
     --starting-token {{0}} \
     --output {{text}} {{>}} {{full.txt}}
 ```
+This command produces no output.
 The saved file might contain blank lines. They appear at the end of each part of the log file while being downloaded.
+For more information, see [Downloading a database log file](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Procedural.Downloading.html) in the *Amazon RDS User Guide*.
 +  For API details, see [DownloadDbLogFilePortion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/download-db-log-file-portion.html) in *AWS CLI Command Reference*.
 
 ### `enable-http-endpoint`
@@ -5783,13 +5801,13 @@ The following `enable-http-endpoint` example enables the RDS Data API for the sp
 
 ```
 aws rds enable-http-endpoint \
-    --resource-arn {{arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster}}
+    --resource-arn {{arn:aws:rds:us-west-2:123456789012:cluster:test-aurora-pg-cluster}}
 ```
 Output:
 
 ```
 {
-    "ResourceArn": "arn:aws:rds:us-east-1:123456789012:cluster:test-aurora-pg-cluster",
+    "ResourceArn": "arn:aws:rds:us-west-2:123456789012:cluster:test-aurora-pg-cluster",
     "HttpEndpointEnabled": true
 }
 ```
@@ -5817,23 +5835,22 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "us-east-1d",
-            "us-east-1c",
-            "us-east-1a"
+            "us-west-2d",
+            "us-west-2c",
+            "us-west-2a"
         ],
         "BackupRetentionPeriod": 7,
         "DBClusterIdentifier": "test-aurora-cluster-failover",
         "DBClusterParameterGroup": "default.aurora-postgresql17",
         "DBSubnetGroup": "default",
         "Status": "available",
-        "Endpoint": "test-aurora-cluster-failover.cluster-cnpexample.us-east-1.rds.amazonaws.com",
-        "ReaderEndpoint": "test-aurora-cluster-failover.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "test-aurora-cluster-failover.cluster-cnpexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "test-aurora-cluster-failover.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "MultiAZ": true,
         "Engine": "aurora-postgresql",
         "EngineVersion": "17.7",
         "Port": 5432,
-        "MasterUsername": "postgres",
-        ...some output truncated...
+        "MasterUsername": "postgres"
     }
 }
 ```
@@ -5902,29 +5919,6 @@ Output:
 For more information, see [Using switchover or failover in Amazon Aurora Global Database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [FailoverGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/failover-global-cluster.html) in *AWS CLI Command Reference*.
 
-### `generate-auth-token`
-<a name="rds_GenerateAuthToken_cli_2_topic"></a>
-
-The following code example shows how to use `generate-auth-token`.
-
-**AWS CLI**
-**To generate an authentication token**
-The following `generate-db-auth-token` example generates an authentication token for use with IAM database authentication.
-
-```
-aws rds generate-db-auth-token \
-    --hostname {{aurmysql-test.cdgmuqiadpid.us-west-2.rds.amazonaws.com}} \
-    --port {{3306}} \
-    --region {{us-east-1}} \
-    --username {{jane_doe}}
-```
-Output:
-
-```
-aurmysql-test.cdgmuqiadpid.us-west-2.rds.amazonaws.com:3306/?Action=connect&DBUser=jane_doe&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIESZCNJ3OEXAMPLE%2F20180731%2Fus-east-1%2Frds-db%2Faws4_request&X-Amz-Date=20180731T235209Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=5a8753ebEXAMPLEa2c724e5667797EXAMPLE9d6ec6e3f427191fa41aeEXAMPLE
-```
-+  For API details, see [GenerateAuthToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/generate-auth-token.html) in *AWS CLI Command Reference*.
-
 ### `generate-db-auth-token`
 <a name="rds_GenerateDbAuthToken_cli_2_topic"></a>
 
@@ -5936,15 +5930,15 @@ The following `generate-db-auth-token` example generates IAM authentication toke
 
 ```
 aws rds generate-db-auth-token \
-    --hostname {{mydb.123456789012.us-east-1.rds.amazonaws.com}} \
+    --hostname {{mydb.123456789012.us-west-2.rds.amazonaws.com}} \
     --port {{3306}} \
-    --region {{us-east-1}} \
+    --region {{us-west-2}} \
     --username {{db_user}}
 ```
 Output:
 
 ```
-mydb.123456789012.us-east-1.rds.amazonaws.com:3306/?Action=connect&DBUser=db_user&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIEXAMPLE%2Fus-east-1%2Frds-db%2Faws4_request&X-Amz-Date=20210123T011543Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=88987EXAMPLE1EXAMPLE2EXAMPLE3EXAMPLE4EXAMPLE5EXAMPLE6
+mydb.123456789012.us-west-2.rds.amazonaws.com:3306/?Action=connect&DBUser=db_user&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIEXAMPLE%2Fus-east-1%2Frds-db%2Faws4_request&X-Amz-Date=20210123T011543Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=88987EXAMPLE1EXAMPLE2EXAMPLE3EXAMPLE4EXAMPLE5EXAMPLE6
 ```
 For more information, see [Connecting to your DB instance using IAM authentication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.Connecting.html) in the *Amazon RDS User Guide* and [Connecting to your DB cluster using IAM authentication](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.IAMDBAuth.Connecting.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [GenerateDbAuthToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/generate-db-auth-token.html) in *AWS CLI Command Reference*.
@@ -5960,7 +5954,7 @@ The following `list-tags-for-resource` example lists all tags on a DB instance.
 
 ```
 aws rds list-tags-for-resource \
-    --resource-name {{arn:aws:rds:us-east-1:123456789012:db:orcl1}}
+    --resource-name {{arn:aws:rds:us-west-2:123456789012:db:orcl1}}
 ```
 Output:
 
@@ -6004,7 +5998,7 @@ Output:
         "Thumbprint": "EXAMPLE123456789012",
         "ValidFrom": "2019-09-19T18:16:53Z",
         "ValidTill": "2024-08-22T17:08:50Z",
-        "CertificateArn": "arn:aws:rds:us-east-1::cert:rds-ca-2019",
+        "CertificateArn": "arn:aws:rds:us-west-2::cert:rds-ca-2019",
         "CustomerOverride": true,
         "CustomerOverrideValidTill": "2024-08-22T17:08:50Z"
     }
@@ -6038,7 +6032,6 @@ Output:
     "TimeoutAction": "ForceApplyCapacityChange"
 }
 ```
-For more information, see [Scaling Aurora Serverless v1 DB cluster capacity manually](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.setting-capacity.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [ModifyCurrentDbClusterCapacity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-current-db-cluster-capacity.html) in *AWS CLI Command Reference*.
 
 ### `modify-db-cluster-endpoint`
@@ -6062,7 +6055,7 @@ Output:
     "DBClusterEndpointIdentifier": "mycustomendpoint",
     "DBClusterIdentifier": "mydbcluster",
     "DBClusterEndpointResourceIdentifier": "cluster-endpoint-ANPAJ4AE5446DAEXAMPLE",
-    "Endpoint": "mycustomendpoint.cluster-custom-cnpexample.us-east-1.rds.amazonaws.com",
+    "Endpoint": "mycustomendpoint.cluster-custom-cnpexample.us-west-2.rds.amazonaws.com",
     "Status": "modifying",
     "EndpointType": "CUSTOM",
     "CustomEndpointType": "READER",
@@ -6072,7 +6065,7 @@ Output:
         "dbinstance3"
     ],
     "ExcludedMembers": [],
-    "DBClusterEndpointArn": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:mycustomendpoint"
+    "DBClusterEndpointArn": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:mycustomendpoint"
 }
 ```
 For more information, see [Amazon Aurora Connection Management](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.Endpoints.html) in the *Amazon Aurora User Guide*.
@@ -6090,8 +6083,7 @@ The following `modify-db-cluster-parameter-group` example modifies the values of
 ```
 aws rds modify-db-cluster-parameter-group \
     --db-cluster-parameter-group-name {{mydbclusterpg}} \
-    --parameters {{"ParameterName=server_audit_logging,ParameterValue=1,ApplyMethod=immediate"}} \
-                 {{"ParameterName=server_audit_logs_upload,ParameterValue=1,ApplyMethod=immediate"}}
+    --parameters {{"ParameterName=server_audit_logging,ParameterValue=1,ApplyMethod=immediate"}} {{"ParameterName=server_audit_logs_upload,ParameterValue=1,ApplyMethod=immediate"}}
 ```
 Output:
 
@@ -6161,9 +6153,9 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "eu-central-1b",
-            "eu-central-1c",
-            "eu-central-1a"
+            "us-west-2b",
+            "us-west-2c",
+            "us-west-2a"
         ],
         "BackupRetentionPeriod": 14,
         "DatabaseName": "",
@@ -6172,8 +6164,8 @@ Output:
         "DBSubnetGroup": "default-vpc-2305ca49",
         "Status": "available",
         "EarliestRestorableTime": "2020-06-03T02:07:29.637Z",
-        "Endpoint": "cluster-2.cluster-############.eu-central-1.rds.amazonaws.com",
-        "ReaderEndpoint": "cluster-2.cluster-ro-############.eu-central-1.rds.amazonaws.com",
+        "Endpoint": "cluster-2.cluster-############.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "cluster-2.cluster-ro-############.us-west-2.rds.amazonaws.com",
         "MultiAZ": false,
         "Engine": "aurora",
         "EngineVersion": "5.6.10a",
@@ -6199,9 +6191,9 @@ Output:
         ],
         "HostedZoneId": "Z1RLNU0EXAMPLE",
         "StorageEncrypted": true,
-        "KmsKeyId": "arn:aws:kms:eu-central-1:123456789012:key/d1bd7c8f-5cdb-49ca-8a62-a1b2c3d4e5f6",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DbClusterResourceId": "cluster-AGJ7XI77XVIS6FUXHU1EXAMPLE",
-        "DBClusterArn": "arn:aws:rds:eu-central-1:123456789012:cluster:cluster-2",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:cluster-2",
         "AssociatedRoles": [],
         "IAMDatabaseAuthenticationEnabled": false,
         "ClusterCreateTime": "2020-04-03T14:44:02.764Z",
@@ -6216,7 +6208,7 @@ Output:
 ```
 For more information, see [Modifying an Amazon Aurora DB Cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Modifying.html) in the *Amazon Aurora User Guide*.
 **Example 2: To associate VPC security group with a DB cluster**
-The following `modify-db-instance` example associates a specific VPC security group and removes DB security groups from a DB cluster.
+The following `modify-db-cluster` example associates a specific VPC security group and removes DB security groups from a DB cluster.
 
 ```
 aws rds modify-db-cluster \
@@ -6264,8 +6256,7 @@ Output:
                 "VpcSecurityGroupId": "sg-ID",
                 "Status": "active"
             }
-        ],
-        ...output omitted...
+        ]
     }
 }
 ```
@@ -6297,9 +6288,6 @@ Output:
         "DBInstanceClass": "db.r4.large",
         "Engine": "sqlserver-se",
         "DBInstanceStatus": "available",
-
-        ...output omitted...
-
         "DBParameterGroups": [
             {
                 "DBParameterGroupName": "test-sqlserver-se-2017",
@@ -6307,9 +6295,6 @@ Output:
             }
         ],
         "AvailabilityZone": "us-west-2d",
-
-        ...output omitted...
-
         "MultiAZ": true,
         "EngineVersion": "14.00.3281.6.v1",
         "AutoMinorVersionUpgrade": false,
@@ -6325,9 +6310,6 @@ Output:
         "SecondaryAvailabilityZone": "us-west-2c",
         "PubliclyAccessible": true,
         "StorageType": "gp2",
-
-        ...output omitted...
-
         "DeletionProtection": false,
         "AssociatedRoles": [],
         "MaxAllocatedStorage": 1000
@@ -6336,7 +6318,7 @@ Output:
 ```
 For more information, see [Modifying an Amazon RDS DB Instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html) in the *Amazon RDS User Guide*.
 **Example 2: To associate VPC security group with a DB instance**
-The following `modify-db-instance` example associates a specific VPC security group and removes DB security groups from a DB instance:
+The following `modify-db-instance` example associates a specific VPC security group and removes DB security groups from a DB instance.
 
 ```
 aws rds modify-db-instance \
@@ -6347,36 +6329,33 @@ Output:
 
 ```
 {
-"DBInstance": {
-    "DBInstanceIdentifier": "dbName",
-    "DBInstanceClass": "db.t3.micro",
-    "Engine": "mysql",
-    "DBInstanceStatus": "available",
-    "MasterUsername": "admin",
-    "Endpoint": {
-        "Address": "dbName.abcdefghijk.us-west-2.rds.amazonaws.com",
-        "Port": 3306,
-        "HostedZoneId": "ABCDEFGHIJK1234"
-    },
-    "AllocatedStorage": 20,
-    "InstanceCreateTime": "2024-02-15T00:37:58.793000+00:00",
-    "PreferredBackupWindow": "11:57-12:27",
-    "BackupRetentionPeriod": 7,
-    "DBSecurityGroups": [],
-    "VpcSecurityGroups": [
-        {
-            "VpcSecurityGroupId": "sg-ID",
-            "Status": "active"
-        }
-    ],
-    ... output omitted ...
-    "MultiAZ": false,
-    "EngineVersion": "8.0.35",
-    "AutoMinorVersionUpgrade": true,
-    "ReadReplicaDBInstanceIdentifiers": [],
-    "LicenseModel": "general-public-license",
-
-    ... output omitted ...
+    "DBInstance": {
+        "DBInstanceIdentifier": "dbName",
+        "DBInstanceClass": "db.t3.micro",
+        "Engine": "mysql",
+        "DBInstanceStatus": "available",
+        "MasterUsername": "admin",
+        "Endpoint": {
+            "Address": "dbName.abcdefghijk.us-west-2.rds.amazonaws.com",
+            "Port": 3306,
+            "HostedZoneId": "ABCDEFGHIJK1234"
+        },
+        "AllocatedStorage": 20,
+        "InstanceCreateTime": "2024-02-15T00:37:58.793000+00:00",
+        "PreferredBackupWindow": "11:57-12:27",
+        "BackupRetentionPeriod": 7,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-ID",
+                "Status": "active"
+            }
+        ],
+        "MultiAZ": false,
+        "EngineVersion": "8.0.35",
+        "AutoMinorVersionUpgrade": true,
+        "ReadReplicaDBInstanceIdentifiers": [],
+        "LicenseModel": "general-public-license"
     }
 }
 ```
@@ -6404,7 +6383,7 @@ Output:
     "DBParameterGroupName": "test-sqlserver-se-2017"
 }
 ```
-For more information, see [Modifying Parameters in a DB Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.html#USER_WorkingWithParamGroups.Modifying) in the *Amazon RDS User Guide*.
+For more information, see [Modifying Parameters in a DB Parameter Group](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.Modifying.html) in the *Amazon RDS User Guide*.
 +  For API details, see [ModifyDBParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-db-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `modify-db-proxy-endpoint`
@@ -6425,10 +6404,10 @@ Output:
 
 ```
 {
-"DBProxyEndpoint":
+    "DBProxyEndpoint":
     {
         "DBProxyEndpointName": "proxyEndpoint",
-        "DBProxyEndpointArn": "arn:aws:rds:us-east-1:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
+        "DBProxyEndpointArn": "arn:aws:rds:us-west-2:123456789012:db-proxy-endpoint:prx-endpoint-0123a01b12345c0ab",
         "DBProxyName": "proxyExample",
         "Status": "available",
         "VpcId": "vpc-1234567",
@@ -6439,14 +6418,14 @@ Output:
             "subnetgroup1",
             "subnetgroup2"
         ],
-        "Endpoint": "proxyEndpoint.endpoint.proxyExample-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+        "Endpoint": "proxyEndpoint.endpoint.proxyExample-ab0cd1efghij.us-west-2.rds.amazonaws.com",
         "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
         "TargetRole": "READ_WRITE",
-        "IsDefault": "false"
+        "IsDefault": false
     }
 }
 ```
-For more information, see [Modifying a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.ModifyingEndpoint) in the *Amazon RDS User Guide* and [Modifying a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.html#rds-proxy-endpoints.ModifyingEndpoint) in the *Amazon Aurora User Guide*.
+For more information, see [Modifying a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-endpoints.ModifyingEndpoint.html) in the *Amazon RDS User Guide* and [Modifying a proxy endpoint](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-endpoints.ModifyingEndpoint.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [ModifyDbProxyEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-db-proxy-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `modify-db-proxy-target-group`
@@ -6468,11 +6447,11 @@ Output:
 
 ```
 {
-"DBProxyTargetGroup":
+    "DBProxyTargetGroup":
     {
         "DBProxyName": "proxyExample",
         "TargetGroupName": "default",
-        "TargetGroupArn": "arn:aws:rds:us-east-1:123456789012:target-group:prx-tg-0123a01b12345c0ab",
+        "TargetGroupArn": "arn:aws:rds:us-west-2:123456789012:target-group:prx-tg-0123a01b12345c0ab",
         "IsDefault": true,
         "Status": "available",
         "ConnectionPoolConfig": {
@@ -6486,7 +6465,7 @@ Output:
     }
 }
 ```
-For more information, see [Modifying an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-managing.html#rds-proxy-modifying-proxy) in the *Amazon RDS User Guide* and [Modifying an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-managing.html#rds-proxy-modifying-proxy) in the *Amazon Aurora User Guide*.
+For more information, see [Modifying an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-modifying-proxy.html) in the *Amazon RDS User Guide* and [Modifying an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-modifying-proxy.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [ModifyDbProxyTargetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-db-proxy-target-group.html) in *AWS CLI Command Reference*.
 
 ### `modify-db-proxy`
@@ -6507,11 +6486,10 @@ Output:
 
 ```
 {
-"DBProxy":
-    {
+    "DBProxy": {
         "DBProxyName": "proxyExample",
-        "DBProxyArn": "arn:aws:rds:us-east-1:123456789012:db-proxy:prx-0123a01b12345c0ab",
-        "Status": "modifying"
+        "DBProxyArn": "arn:aws:rds:us-west-2:123456789012:db-proxy:prx-0123a01b12345c0ab",
+        "Status": "modifying",
         "EngineFamily": "PostgreSQL",
         "VpcId": "sg-1234567",
         "VpcSecurityGroupIds": [
@@ -6521,25 +6499,25 @@ Output:
             "subnetgroup1",
             "subnetgroup2"
         ],
-        "Auth": "[
+        "Auth": [
             {
                 "Description": "proxydescription1",
                 "AuthScheme": "SECRETS",
-                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789123:secret:proxysecret1-Abcd1e",
+                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:proxysecret1-Abcd1e",
                 "IAMAuth": "DISABLED"
             }
-        ]",
+        ],
         "RoleArn": "arn:aws:iam::12345678912:role/ProxyPostgreSQLRole",
-        "Endpoint": "proxyExample.proxy-ab0cd1efghij.us-east-1.rds.amazonaws.com",
+        "Endpoint": "proxyExample.proxy-ab0cd1efghij.us-west-2.rds.amazonaws.com",
         "RequireTLS": true,
         "IdleClientTimeout": 1800,
-        "DebuggingLogging": false,
+        "DebugLogging": false,
         "CreatedDate": "2023-04-05T16:09:33.452000+00:00",
         "UpdatedDate": "2023-04-13T01:49:38.568000+00:00"
     }
 }
 ```
-For more information, see [Modify an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-managing.html#rds-proxy-modifying-proxy) in the *Amazon RDS User Guide* and [Creating an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-managing.html#rds-proxy-modifying-proxy) in the *Amazon Aurora User Guide*.
+For more information, see [Modify an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-modifying-proxy.html) in the *Amazon RDS User Guide* and [Creating an RDS Proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-modifying-proxy.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [ModifyDbProxy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-db-proxy.html) in *AWS CLI Command Reference*.
 
 ### `modify-db-shard-group`
@@ -6560,23 +6538,19 @@ Output:
 
 ```
 {
-    "DBShardGroups": [
-        {
-            "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
-            "DBShardGroupIdentifier": "my-db-shard-group",
-            "DBClusterIdentifier": "my-sv2-cluster",
-            "MaxACU": 768.0,
-            "ComputeRedundancy": 0,
-            "Status": "available",
-            "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
-        }
-    ]
+    "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
+    "DBShardGroupIdentifier": "my-db-shard-group",
+    "DBClusterIdentifier": "my-sv2-cluster",
+    "MaxACU": 768.0,
+    "ComputeRedundancy": 0,
+    "Status": "available",
+    "PubliclyAccessible": false,
+    "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
 }
 ```
 For more information, see [Amazon Aurora DB Clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Overview.html) in the *Amazon Aurora User Guide*.
 **Example 2: To describe your DB shard groups**
-The following `describe-db-shard-groups` example retrieves the details of your DB shard groups after you run the `modify-db-shard-group` command. The maximum capacity of the DB shard group `my-db-shard-group` is now 1000 Aurora capacity units (ACUs).
+The following `modify-db-shard-group` example continues by using the `describe-db-shard-groups` command to retrieve the details of your DB shard groups after you run the `modify-db-shard-group` command. The maximum capacity of the DB shard group `my-db-shard-group` is now 1000 Aurora capacity units (ACUs).
 
 ```
 aws rds describe-db-shard-groups
@@ -6594,7 +6568,7 @@ Output:
             "ComputeRedundancy": 0,
             "Status": "available",
             "PubliclyAccessible": true,
-            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
         },
         {
             "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
@@ -6604,7 +6578,7 @@ Output:
             "ComputeRedundancy": 0,
             "Status": "available",
             "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
         }
     ]
 }
@@ -6619,13 +6593,13 @@ The following code example shows how to use `modify-db-snapshot-attribute`.
 
 **AWS CLI**
 **Example 1: To enable two AWS accounts to restore a DB snapshot**
-The following `modify-db-snapshot-attribute` example grants permission to two AWS accounts, with the identifiers `111122223333` and `444455556666`, to restore the DB snapshot named `mydbsnapshot`.
+The following `modify-db-snapshot-attribute` example grants permission to two AWS accounts, with the identifiers `123456789111` and `123456789222`, to restore the DB snapshot named `mydbsnapshot`.
 
 ```
 aws rds modify-db-snapshot-attribute \
     --db-snapshot-identifier {{mydbsnapshot}} \
     --attribute-name {{restore}} \
-    --values-to-add {"111122223333","444455556666"}
+    --values-to-add {"123456789111","123456789222"}
 ```
 Output:
 
@@ -6637,8 +6611,8 @@ Output:
             {
                 "AttributeName": "restore",
                 "AttributeValues": [
-                    "111122223333",
-                    "444455556666"
+                    "123456789111",
+                    "123456789222"
                 ]
             }
         ]
@@ -6653,7 +6627,7 @@ The following `modify-db-snapshot-attribute` example removes permission from a p
 aws rds modify-db-snapshot-attribute \
     --db-snapshot-identifier {{mydbsnapshot}} \
     --attribute-name {{restore}} \
-    --values-to-remove {{444455556666}}
+    --values-to-remove {{123456789222}}
 ```
 Output:
 
@@ -6665,7 +6639,7 @@ Output:
             {
                 "AttributeName": "restore",
                 "AttributeValues": [
-                    "111122223333"
+                    "123456789111"
                 ]
             }
         ]
@@ -6674,42 +6648,6 @@ Output:
 ```
 For more information, see [Sharing a Snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html#USER_ShareSnapshot.Sharing) in the *Amazon RDS User Guide*.
 +  For API details, see [ModifyDbSnapshotAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-db-snapshot-attribute.html) in *AWS CLI Command Reference*.
-
-### `modify-db-snapshot-attributes`
-<a name="rds_ModifyDbSnapshotAttributes_cli_2_topic"></a>
-
-The following code example shows how to use `modify-db-snapshot-attributes`.
-
-**AWS CLI**
-**To modify a DB snapshot attribute**
-The following `modify-db-snapshot-attribute` example permits two AWS account identifiers, `111122223333` and `444455556666`, to restore the DB snapshot named `mydbsnapshot`.
-
-```
-aws rds modify-db-snapshot-attribute \
-    --db-snapshot-identifier {{mydbsnapshot}} \
-    --attribute-name {{restore}} \
-    --values-to-add '{{["111122223333","444455556666"]}}'
-```
-Output:
-
-```
-{
-    "DBSnapshotAttributesResult": {
-        "DBSnapshotIdentifier": "mydbsnapshot",
-        "DBSnapshotAttributes": [
-            {
-                "AttributeName": "restore",
-                "AttributeValues": [
-                    "111122223333",
-                    "444455556666"
-                ]
-            }
-        ]
-    }
-}
-```
-For more information, see [Sharing a Snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html#USER_ShareSnapshot.Sharing) in the *Amazon RDS User Guide*.
-+  For API details, see [ModifyDbSnapshotAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-db-snapshot-attributes.html) in *AWS CLI Command Reference*.
 
 ### `modify-db-snapshot`
 <a name="rds_ModifyDbSnapshot_cli_2_topic"></a>
@@ -6811,7 +6749,7 @@ Output:
                 "SubnetStatus": "Active"
             }
         ],
-        "DBSubnetGroupArn": "arn:aws:rds:us-west-2:534026745191:subgrp:mysubnetgroup"
+        "DBSubnetGroupArn": "arn:aws:rds:us-west-2:123456789012:subgrp:mysubnetgroup"
     }
 }
 ```
@@ -6844,14 +6782,15 @@ Output:
         "CustomerAwsId": "123456789012",
         "SourceType": "db-instance",
         "SubscriptionCreationTime": "Tue Jul 31 23:22:01 UTC 2018",
-        "EventSubscriptionArn": "arn:aws:rds:us-east-1:123456789012:es:my-instance-events",
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:interesting-events",
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:my-instance-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:interesting-events",
         "CustSubscriptionId": "my-instance-events",
         "Status": "modifying",
         "Enabled": false
     }
 }
 ```
+For more information, see [Modifying an Amazon RDS event notification subscription](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Modifying.html) in the *Amazon RDS User Guide*.
 +  For API details, see [ModifyEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/modify-event-subscription.html) in *AWS CLI Command Reference*.
 
 ### `modify-global-cluster`
@@ -6915,7 +6854,7 @@ Output:
         "MasterUsername": "admin",
         "DbiResourceId": "db-ABCD1234EFGH5678IJKEXAMPLE",
         "TenantDatabaseResourceId": "tdb-QRST5678UVWX1234YZAB90CDEFGHIJ5678KLMN1234OPQEXAMPLE",
-        "TenantDatabaseARN": "arn:aws:rds:us-east-1:123456789012:tenant-database:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
+        "TenantDatabaseARN": "arn:aws:rds:us-west-2:123456789012:tenant-database:tdb-qrst5678uvwx1234yzab90cdefghij5678klmn1234opqexample",
         "CharacterSetName": "AL32UTF8",
         "NcharCharacterSetName": "AL16UTF16",
         "DeletionProtection": false,
@@ -6949,18 +6888,17 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1b",
-            "us-east-1c"
+            "us-west-2a",
+            "us-west-2b",
+            "us-west-2c"
         ],
         "BackupRetentionPeriod": 1,
         "DatabaseName": "",
-        "DBClusterIdentifier": "mydbcluster-1",
-        ...some output truncated...
+        "DBClusterIdentifier": "mydbcluster-1"
     }
 }
 ```
-For more information, see [Promoting a read replica to be a DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.CrossRegion.html#AuroraMySQL.Replication.CrossRegion.Promote) in the *Amazon Aurora User Guide*.
+For more information, see [Promoting a read replica to be a DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.CrossRegion.Promote.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [PromoteReadReplicaDbCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/promote-read-replica-db-cluster.html) in *AWS CLI Command Reference*.
 
 ### `promote-read-replica`
@@ -6981,35 +6919,24 @@ Output:
 ```
 {
     "DBInstance": {
-        "DBInstanceArn": "arn:aws:rds:us-east-1:123456789012:db:test-instance-repl",
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:test-instance-repl",
         "StorageType": "standard",
         "ReadReplicaSourceDBInstanceIdentifier": "test-instance",
-        "DBInstanceStatus": "modifying",
-        ...some output truncated...
+        "DBInstanceStatus": "modifying"
     }
 }
 ```
+For more information, see [Promoting a read replica to be a standalone DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.Promote.html) in the *Amazon RDS User Guide*.
 +  For API details, see [PromoteReadReplica](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/promote-read-replica.html) in *AWS CLI Command Reference*.
 
-### `purchase-reserved-db-instance`
-<a name="rds_PurchaseReservedDbInstance_cli_2_topic"></a>
+### `purchase-reserved-db-instances-offering`
+<a name="rds_PurchaseReservedDbInstancesOffering_cli_2_topic"></a>
 
-The following code example shows how to use `purchase-reserved-db-instance`.
-
-**AWS CLI**
-**To purchase a reserved DB instance offering**
-The following `purchase-reserved-db-instances-offering` example purchases a reserved DB instance offering. The `reserved-db-instances-offering-id` must be a valid offering ID, as returned by the `describe-reserved-db-instances-offering` command.
-aws rds purchase-reserved-db-instances-offering --reserved-db-instances-offering-id 438012d3-4a52-4cc7-b2e3-8dff72e0e706
-+  For API details, see [PurchaseReservedDbInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/purchase-reserved-db-instance.html) in *AWS CLI Command Reference*.
-
-### `purchase-reserved-db-instances-offerings`
-<a name="rds_PurchaseReservedDbInstancesOfferings_cli_2_topic"></a>
-
-The following code example shows how to use `purchase-reserved-db-instances-offerings`.
+The following code example shows how to use `purchase-reserved-db-instances-offering`.
 
 **AWS CLI**
 **Example 1: To find a reserved DB instance to purchase**
-The following `describe-reserved-db-instances-offerings` example lists the available reserved MySQL DB instances with the db.t2.micro instance class and a duration of one year. The offering ID is required for purchasing a reserved DB instance.
+The following `purchase-reserved-db-instances-offering` example starts by using the `describe-reserved-db-instances-offerings` command to list the available reserved MySQL DB instances with the db.t2.micro instance class and a duration of one year. The offering ID is required for purchasing a reserved DB instance.
 
 ```
 aws rds describe-reserved-db-instances-offerings \
@@ -7023,7 +6950,7 @@ Output:
 {
     "ReservedDBInstancesOfferings": [
         {
-            "ReservedDBInstancesOfferingId": "8ba30be1-b9ec-447f-8f23-6114e3f4c7b4",
+            "ReservedDBInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "DBInstanceClass": "db.t2.micro",
             "Duration": 31536000,
             "FixedPrice": 51.0,
@@ -7038,22 +6965,25 @@ Output:
                     "RecurringChargeFrequency": "Hourly"
                 }
             ]
-        },
-    ... some output truncated ...
+        }
     ]
 }
 ```
 For more information, see [Reserved DB Instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*.
 **Example 2: To purchase a reserved DB instance**
 The following `purchase-reserved-db-instances-offering` example shows how to buy the reserved DB instance offering from the previous example.
-aws rds purchase-reserved-db-instances-offering --reserved-db-instances-offering-id 8ba30be1-b9ec-447f-8f23-6114e3f4c7b4
+
+```
+aws rds purchase-reserved-db-instances-offering \
+    --reserved-db-instances-offering-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
+```
 Output:
 
 ```
 {
     "ReservedDBInstance": {
         "ReservedDBInstanceId": "ri-2020-06-29-16-54-57-670",
-        "ReservedDBInstancesOfferingId": "8ba30be1-b9ec-447f-8f23-6114e3f4c7b4",
+        "ReservedDBInstancesOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DBInstanceClass": "db.t2.micro",
         "StartTime": "2020-06-29T16:54:57.670Z",
         "Duration": 31536000,
@@ -7076,7 +7006,7 @@ Output:
 }
 ```
 For more information, see [Reserved DB Instances for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*.
-+  For API details, see [PurchaseReservedDbInstancesOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/purchase-reserved-db-instances-offerings.html) in *AWS CLI Command Reference*.
++  For API details, see [PurchaseReservedDbInstancesOffering](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/purchase-reserved-db-instances-offering.html) in *AWS CLI Command Reference*.
 
 ### `reboot-db-cluster`
 <a name="rds_RebootDbCluster_cli_2_topic"></a>
@@ -7098,21 +7028,20 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 20,
         "AvailabilityZones": [
-            "us-east-1b",
-            "us-east-1c",
-            "us-east-1f"
+            "us-west-2b",
+            "us-west-2c",
+            "us-west-2d"
         ],
         "BackupRetentionPeriod": 7,
         "DBClusterIdentifier": "test-pg-multiaz-cluster",
         "DBClusterParameterGroup": "default.postgres17",
         "DBSubnetGroup": "default",
         "Status": "available",
-        "Endpoint": "test-pg-multiaz-cluster.cluster-cnpexample.us-east-1.rds.amazonaws.com",
-        "ReaderEndpoint": "test-pg-multiaz-cluster.cluster-ro-cnpexample.us-east-1.rds.amazonaws.com",
+        "Endpoint": "test-pg-multiaz-cluster.cluster-cnpexample.us-west-2.rds.amazonaws.com",
+        "ReaderEndpoint": "test-pg-multiaz-cluster.cluster-ro-cnpexample.us-west-2.rds.amazonaws.com",
         "MultiAZ": true,
         "Engine": "postgres",
-        "EngineVersion": "17.5",
-        ...some output truncated...
+        "EngineVersion": "17.5"
     }
 }
 ```
@@ -7146,10 +7075,7 @@ Output:
             "Address": "test-mysql-instance.############.us-west-2.rds.amazonaws.com",
             "Port": 3306,
             "HostedZoneId": "Z1PVIF0EXAMPLE"
-        },
-
-    ... output omitted...
-
+        }
     }
 }
 ```
@@ -7173,23 +7099,19 @@ Output:
 
 ```
 {
-    "DBShardGroups": [
-        {
-            "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
-            "DBShardGroupIdentifier": "my-db-shard-group",
-            "DBClusterIdentifier": "my-sv2-cluster",
-            "MaxACU": 1000.0,
-            "ComputeRedundancy": 0,
-            "Status": "available",
-            "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
-        }
-    ]
+    "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
+    "DBShardGroupIdentifier": "my-db-shard-group",
+    "DBClusterIdentifier": "my-sv2-cluster",
+    "MaxACU": 1000.0,
+    "ComputeRedundancy": 0,
+    "Status": "available",
+    "PubliclyAccessible": false,
+    "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
 }
 ```
 For more information, see [Rebooting an Amazon Aurora DB cluster or Amazon Aurora DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_RebootCluster.html) in the *Amazon Aurora User Guide*.
 **Example 2: To describe your DB shard groups**
-The following `describe-db-shard-groups` example retrieves the details of your DB shard groups after you run the `reboot-db-shard-group` command. The DB shard group `my-db-shard-group` is now rebooting.
+The following `reboot-db-shard-group` example continues by using the `describe-db-shard-groups` command to retrieve the details of your DB shard groups after you run the `reboot-db-shard-group` command. The DB shard group `my-db-shard-group` is now rebooting.
 
 ```
 aws rds describe-db-shard-groups
@@ -7207,7 +7129,7 @@ Output:
             "ComputeRedundancy": 0,
             "Status": "available",
             "PubliclyAccessible": true,
-            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+            "Endpoint": "limitless-test-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
         },
         {
             "DBShardGroupResourceId": "shardgroup-a6e3a0226aa243e2ac6c7a1234567890",
@@ -7217,7 +7139,7 @@ Output:
             "ComputeRedundancy": 0,
             "Status": "rebooting",
             "PubliclyAccessible": false,
-            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-east-2.rds.amazonaws.com"
+            "Endpoint": "my-sv2-cluster.limitless-cekycexample.us-west-2.rds.amazonaws.com"
         }
     ]
 }
@@ -7253,7 +7175,7 @@ Output:
             }
         },
         {
-            "Endpoint": "database-5instance-1.ab0cd1efghij.us-east-1.rds.amazonaws.com",
+            "Endpoint": "database-5instance-1.ab0cd1efghij.us-west-2.rds.amazonaws.com",
             "RdsResourceId": "database-5",
             "Port": 3306,
             "Type": "RDS_INSTANCE",
@@ -7264,7 +7186,7 @@ Output:
     ]
 }
 ```
-For more information, see [Creating an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-setup.html#rds-proxy-creating) in the *Amazon RDS User Guide* and [Creating an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-setup.html#rds-proxy-creating) in the *Amazon Aurora User Guide*.
+For more information, see [Creating an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-creating.html) in the *Amazon RDS User Guide* and [Creating an RDS proxy](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-creating.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [RegisterDbProxyTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/register-db-proxy-targets.html) in *AWS CLI Command Reference*.
 
 ### `remove-from-global-cluster`
@@ -7313,7 +7235,7 @@ Output:
     }
 }
 ```
-For more information, see [Removing a cluster from an Amazon Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-managing.html#aurora-global-database-detaching) in the *Amazon Aurora User Guide*.
+For more information, see [Removing a cluster from an Amazon Aurora global database](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-detaching.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [RemoveFromGlobalCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/remove-from-global-cluster.html) in *AWS CLI Command Reference*.
 
 ### `remove-option-from-option-group`
@@ -7342,7 +7264,7 @@ Output:
         "MajorEngineVersion": "19",
         "Options": [],
         "AllowsVpcAndNonVpcInstanceMemberships": true,
-        "OptionGroupArn": "arn:aws:rds:us-east-1:123456789012:og:myoptiongroup"
+        "OptionGroupArn": "arn:aws:rds:us-west-2:123456789012:og:myoptiongroup"
     }
 }
 ```
@@ -7380,10 +7302,10 @@ The following `remove-role-from-db-instance` example removes the role named `rds
 aws rds remove-role-from-db-instance \
     --db-instance-identifier {{test-instance}} \
     --feature-name {{S3_INTEGRATION}} \
-    --role-arn {{arn:aws:iam::111122223333:role/rds-s3-integration-role}}
+    --role-arn {{arn:aws:iam::123456789012:role/rds-s3-integration-role}}
 ```
 This command produces no output.
-For more information, see [Disabling RDS SQL Server Integration with S3](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/User.SQLServer.Options.S3-integration.html#Appendix.SQLServer.Options.S3-integration.disabling) in the *Amazon RDS User Guide*.
+For more information, see [Disabling RDS SQL Server Integration with S3](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.S3-integration.disabling.html) in the *Amazon RDS User Guide*.
 +  For API details, see [RemoveRoleFromDbInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/remove-role-from-db-instance.html) in *AWS CLI Command Reference*.
 
 ### `remove-source-identifier-from-subscription`
@@ -7393,7 +7315,7 @@ The following code example shows how to use `remove-source-identifier-from-subsc
 
 **AWS CLI**
 **To remove a source identifier from a subscription**
-The following `remove-source-identifier` example removes the specified source identifier from an existing subscription.
+The following `remove-source-identifier-from-subscription` example removes the specified source identifier from an existing subscription.
 
 ```
 aws rds remove-source-identifier-from-subscription \
@@ -7405,13 +7327,13 @@ Output:
 ```
 {
     "EventSubscription": {
-        "EventSubscriptionArn": "arn:aws:rds:us-east-1:123456789012:es:my-instance-events",
+        "EventSubscriptionArn": "arn:aws:rds:us-west-2:123456789012:es:my-instance-events",
         "SubscriptionCreationTime": "Tue Jul 31 23:22:01 UTC 2018",
         "EventCategoriesList": [
             "backup",
             "recovery"
         ],
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:interesting-events",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:interesting-events",
         "Status": "modifying",
         "CustSubscriptionId": "my-instance-events",
         "CustomerAwsId": "123456789012",
@@ -7423,6 +7345,7 @@ Output:
     }
 }
 ```
+For more information, see [Modifying an Amazon RDS event notification subscription](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Modifying.html) in the *Amazon RDS User Guide*.
 +  For API details, see [RemoveSourceIdentifierFromSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/remove-source-identifier-from-subscription.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags-from-resource`
@@ -7436,7 +7359,7 @@ The following `remove-tags-from-resource` example removes tags from a resource.
 
 ```
 aws rds remove-tags-from-resource \
-    --resource-name {{arn:aws:rds:us-east-1:123456789012:db:mydbinstance}} \
+    --resource-name {{arn:aws:rds:us-west-2:123456789012:db:mydbinstance}} \
     --tag-keys {{Name}} {{Environment}}
 ```
 This command produces no output.
@@ -7471,8 +7394,7 @@ The following `reset-db-cluster-parameter-group` example resets the parameter va
 ```
 aws rds reset-db-cluster-parameter-group \
     --db-cluster-parameter-group-name {{mydbclpgy}} \
-    --parameters {{"ParameterName=max_connections,ApplyMethod=immediate"}} \
-                 {{"ParameterName=max_allowed_packet,ApplyMethod=immediate"}}
+    --parameters {{"ParameterName=max_connections,ApplyMethod=immediate"}} {{"ParameterName=max_allowed_packet,ApplyMethod=immediate"}}
 ```
 Output:
 
@@ -7512,8 +7434,7 @@ The following `reset-db-parameter-group` example resets the parameter values for
 ```
 aws rds reset-db-parameter-group \
     --db-parameter-group-name {{mypg}} \
-    --parameters {{"ParameterName=max_connections,ApplyMethod=immediate"}} \
-                 {{"ParameterName=max_allowed_packet,ApplyMethod=immediate"}}
+    --parameters {{"ParameterName=max_connections,ApplyMethod=immediate"}} {{"ParameterName=max_allowed_packet,ApplyMethod=immediate"}}
 ```
 Output:
 
@@ -7595,7 +7516,7 @@ Output:
     }
 }
 ```
-For more information, see [Migrating Data from MySQL by Using an Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Migrating.ExtMySQL.html#AuroraMySQL.Migrating.ExtMySQL.S3) in the *Amazon Aurora User Guide*.
+For more information, see [Migrating Data from MySQL by Using an Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Migrating.ExtMySQL.S3.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [RestoreDbClusterFromS3](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/restore-db-cluster-from-s3.html) in *AWS CLI Command Reference*.
 
 ### `restore-db-cluster-from-snapshot`
@@ -7605,7 +7526,7 @@ The following code example shows how to use `restore-db-cluster-from-snapshot`.
 
 **AWS CLI**
 **To restore a DB cluster from a snapshot**
-The following `restore-db-cluster-from-snapshot` restores an Aurora PostgreSQL DB cluster compatible with PostgreSQL version 10.7 from a DB cluster snapshot named `test-instance-snapshot`.
+The following `restore-db-cluster-from-snapshot` example restores an Aurora PostgreSQL DB cluster compatible with PostgreSQL version 10.7 from a DB cluster snapshot named `test-instance-snapshot`.
 
 ```
 aws rds restore-db-cluster-from-snapshot \
@@ -7650,7 +7571,7 @@ Output:
         ],
         "HostedZoneId": "Z1PVIF0EXAMPLE",
         "StorageEncrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/287364e4-33e3-4755-a3b0-a1b2c3d4e5f6",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DbClusterResourceId": "cluster-5DSB5IFQDDUVAWOUWM1EXAMPLE",
         "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:newdbcluster",
         "AssociatedRoles": [],
@@ -7720,7 +7641,7 @@ Output:
         ],
         "HostedZoneId": "Z1PVIF0EXAMPLE",
         "StorageEncrypted": true,
-        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/287364e4-33e3-4755-a3b0-a1b2c3d4e5f6",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "DbClusterResourceId": "cluster-BIZ77GDSA2XBSTNPFW1EXAMPLE",
         "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster-clone",
         "AssociatedRoles": [],
@@ -7762,9 +7683,6 @@ Output:
         "DBInstanceClass": "db.t3.small",
         "Engine": "mysql",
         "DBInstanceStatus": "creating",
-
-        ...output omitted...
-
         "PreferredMaintenanceWindow": "mon:07:37-mon:08:07",
         "PendingModifiedValues": {},
         "MultiAZ": false,
@@ -7772,9 +7690,6 @@ Output:
         "AutoMinorVersionUpgrade": true,
         "ReadReplicaDBInstanceIdentifiers": [],
         "LicenseModel": "general-public-license",
-
-        ...output omitted...
-
         "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:db7-new-instance",
         "IAMDatabaseAuthenticationEnabled": false,
         "PerformanceInsightsEnabled": false,
@@ -7798,11 +7713,75 @@ The following `restore-db-instance-from-s3` example creates a new DB instance na
 ```
 aws rds restore-db-instance-from-s3 \
     --db-instance-identifier {{restored-test-instance}} \
-    --allocated-storage {{250}} --db-instance-class {{db.m4.large}} --engine {{mysql}} \
-    --{{master}}-username master --master-user-password {{secret99}} \
-    --s3-bucket-name {{my-backups}} --s3-ingestion-role-arn {{arn:aws:iam::123456789012:role/my-role}} \
-    --source-engine {{mysql}} --source-engine-version {{5.6.27}}
+    --allocated-storage {{250}} \
+    --db-instance-class {{db.m4.large}} \
+    --engine {{mysql}} \
+    --{{master}}-username master \
+    --master-user-password {{secret99}} \
+    --s3-bucket-name {{my-backups}} \
+    --s3-ingestion-role-arn {{arn:aws:iam::123456789012:role/my-role}} \
+    --source-engine {{mysql}} \
+    --source-engine-version {{5.6.27}}
 ```
+Output:
+
+```
+{
+    "DBInstance": {
+        "DBInstanceIdentifier": "restored-test-instance",
+        "DBInstanceClass": "db.m4.large",
+        "Engine": "mysql",
+        "DBInstanceStatus": "creating",
+        "MasterUsername": "master",
+        "AllocatedStorage": 250,
+        "PreferredBackupWindow": "08:20-08:50",
+        "BackupRetentionPeriod": 1,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-0123456789abcdef0",
+                "Status": "active"
+            }
+        ],
+        "DBParameterGroups": [
+            {
+                "DBParameterGroupName": "default.mysql5.6",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "PreferredMaintenanceWindow": "tue:10:16-tue:10:46",
+        "PendingModifiedValues": {
+            "MasterUserPassword": "****"
+        },
+        "MultiAZ": false,
+        "AutoMinorVersionUpgrade": true,
+        "ReadReplicaDBInstanceIdentifiers": [],
+        "LicenseModel": "general-public-license",
+        "OptionGroupMemberships": [
+            {
+                "OptionGroupName": "default:mysql-5-6",
+                "Status": "in-sync"
+            }
+        ],
+        "PubliclyAccessible": false,
+        "StorageType": "gp2",
+        "StorageEncrypted": false,
+        "DbiResourceId": "db-ABCDEFGHIJKLMNOPQRSTUEXAMPLE",
+        "CACertificateIdentifier": "rds-ca-rsa2048-g1",
+        "DomainMemberships": [],
+        "CopyTagsToSnapshot": false,
+        "MonitoringInterval": 0,
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:restored-test-instance",
+        "IAMDatabaseAuthenticationEnabled": false,
+        "PerformanceInsightsEnabled": false,
+        "DeletionProtection": false,
+        "AssociatedRoles": [],
+        "TagList": []
+    }
+}
+```
+For more information, see [Restoring a backup into an Amazon RDS for MySQL DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html) in the *Amazon RDS User Guide*.
+For more information, see [Restoring a backup into an Amazon RDS for MySQL DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html) in the *Amazon RDS User Guide*.
 +  For API details, see [RestoreDbInstanceFromS3](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/restore-db-instance-from-s3.html) in *AWS CLI Command Reference*.
 
 ### `restore-db-instance-to-point-in-time`
@@ -7826,10 +7805,9 @@ Output:
 {
     "DBInstance": {
         "AllocatedStorage": 20,
-        "DBInstanceArn": "arn:aws:rds:us-east-1:123456789012:db:restored-test-instance",
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:restored-test-instance",
         "DBInstanceStatus": "creating",
-        "DBInstanceIdentifier": "restored-test-instance",
-        ...some output omitted...
+        "DBInstanceIdentifier": "restored-test-instance"
     }
 }
 ```
@@ -7857,7 +7835,6 @@ Output:
         "AllocatedStorage": 20,
         "PreferredBackupWindow": "07:45-08:15",
         "BackupRetentionPeriod": 14,
-        ... some output omitted ...
         "DbiResourceId": "db-KGLXG75BGVIWKQT7NQ4EXAMPLE",
         "CACertificateIdentifier": "rds-ca-2019",
         "DomainMemberships": [],
@@ -7872,7 +7849,7 @@ Output:
     }
 }
 ```
-For more information, see [Restoring to a specified time from a replicated backup](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.PiTR) in the *Amazon RDS User Guide*.
+For more information, see [Restoring to a specified time from a replicated backup](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBackups.PiTR.html) in the *Amazon RDS User Guide*.
 +  For API details, see [RestoreDbInstanceToPointInTime](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/restore-db-instance-to-point-in-time.html) in *AWS CLI Command Reference*.
 
 ### `start-activity-stream`
@@ -7886,24 +7863,23 @@ The following `start-activity-stream` example starts an asynchronous activity st
 
 ```
 aws rds start-activity-stream \
-    --region {{us-east-1}} \
     --mode {{async}} \
-    --kms-key-id {{arn:aws:kms:us-east-1:1234567890123:key/a12c345d-6ef7-890g-h123-456i789jk0l1}} \
-    --resource-arn {{arn:aws:rds:us-east-1:1234567890123:cluster:my-pg-cluster}} \
+    --kms-key-id {{arn:aws:kms:us-west-2:1234567890123:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --resource-arn {{arn:aws:rds:us-west-2:1234567890123:cluster:my-pg-cluster}} \
     --apply-immediately
 ```
 Output:
 
 ```
 {
-    "KmsKeyId": "arn:aws:kms:us-east-1:1234567890123:key/a12c345d-6ef7-890g-h123-456i789jk0l1",
+    "KmsKeyId": "arn:aws:kms:us-west-2:1234567890123:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KinesisStreamName": "aws-rds-das-cluster-0ABCDEFGHI1JKLM2NOPQ3R4S",
     "Status": "starting",
     "Mode": "async",
     "ApplyImmediately": true
 }
 ```
-For more information, see [Starting a database activity stream](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html#DBActivityStreams.Enabling) in the *Amazon Aurora User Guide*.
+For more information, see [Starting a database activity stream](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.Enabling.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [StartActivityStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/start-activity-stream.html) in *AWS CLI Command Reference*.
 
 ### `start-db-cluster`
@@ -7926,14 +7902,13 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1e",
-            "us-east-1b"
+            "us-west-2a",
+            "us-west-2d",
+            "us-west-2b"
         ],
         "BackupRetentionPeriod": 1,
         "DatabaseName": "mydb",
-        "DBClusterIdentifier": "mydbcluster",
-        ...some output truncated...
+        "DBClusterIdentifier": "mydbcluster"
     }
 }
 ```
@@ -7982,7 +7957,7 @@ Output:
     }
 }
 ```
-For more information, see [Enabling cross-Region automated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.Replicating.Enable) in the *Amazon RDS User Guide*.
+For more information, see [Enabling cross-Region automated backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBackups.Replicating.Enable.html) in the *Amazon RDS User Guide*.
 +  For API details, see [StartDbInstanceAutomatedBackupsReplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/start-db-instance-automated-backups-replication.html) in *AWS CLI Command Reference*.
 
 ### `start-db-instance`
@@ -8003,11 +7978,12 @@ Output:
 ```
 {
     "DBInstance": {
-        "DBInstanceStatus": "starting",
-        ...some output truncated...
+        "DBInstanceIdentifier": "test-instance",
+        "DBInstanceStatus": "starting"
     }
 }
 ```
+For more information, see [Starting an Amazon RDS DB instance that was previously stopped](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StartInstance.html) in the *Amazon RDS User Guide*.
 +  For API details, see [StartDbInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/start-db-instance.html) in *AWS CLI Command Reference*.
 
 ### `start-export-task`
@@ -8025,7 +8001,7 @@ aws rds start-export-task \
     --source-arn {{arn:aws:rds:us-west-2:123456789012:snapshot:db5-snapshot-test}} \
     --s3-bucket-name {{amzn-s3-demo-bucket}} \
     --iam-role-arn {{arn:aws:iam::123456789012:role/service-role/ExportRole}} \
-    --kms-key-id {{arn:aws:kms:us-west-2:123456789012:key/abcd0000-7fca-4128-82f2-aabbccddeeff}}
+    --kms-key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -8036,7 +8012,7 @@ Output:
     "SnapshotTime": "2020-03-27T20:48:42.023Z",
     "S3Bucket": "amzn-s3-demo-bucket",
     "IamRoleArn": "arn:aws:iam::123456789012:role/service-role/ExportRole",
-    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/abcd0000-7fca-4128-82f2-aabbccddeeff",
+    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Status": "STARTING",
     "PercentProgress": 0,
     "TotalExtractedDataInGB": 0
@@ -8056,20 +8032,19 @@ The following `stop-activity-stream` example stops an activity stream in an Auro
 
 ```
 aws rds stop-activity-stream \
-    --region {{us-east-1}} \
-    --resource-arn {{arn:aws:rds:us-east-1:1234567890123:cluster:my-pg-cluster}} \
+    --resource-arn {{arn:aws:rds:us-west-2:1234567890123:cluster:my-pg-cluster}} \
     --apply-immediately
 ```
 Output:
 
 ```
 {
-    "KmsKeyId": "arn:aws:kms:us-east-1:1234567890123:key/a12c345d-6ef7-890g-h123-456i789jk0l1",
+    "KmsKeyId": "arn:aws:kms:us-west-2:1234567890123:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "KinesisStreamName": "aws-rds-das-cluster-0ABCDEFGHI1JKLM2NOPQ3R4S",
     "Status": "stopping"
 }
 ```
-For more information, see [Stopping an activity stream](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.html#DBActivityStreams.Disabling) in the *Amazon Aurora User Guide*.
+For more information, see [Stopping an activity stream](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.Disabling.html) in the *Amazon Aurora User Guide*.
 +  For API details, see [StopActivityStream](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/stop-activity-stream.html) in *AWS CLI Command Reference*.
 
 ### `stop-db-cluster`
@@ -8092,14 +8067,14 @@ Output:
     "DBCluster": {
         "AllocatedStorage": 1,
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1e",
-            "us-east-1b"
+            "us-west-2a",
+            "us-west-2d",
+            "us-west-2b"
         ],
         "BackupRetentionPeriod": 1,
         "DatabaseName": "mydb",
         "DBClusterIdentifier": "mydbcluster",
-        ...some output truncated...
+        "Status": "stopping"
     }
 }
 ```
@@ -8113,7 +8088,7 @@ The following code example shows how to use `stop-db-instance-automated-backups-
 
 **AWS CLI**
 **To stop replicating automated backups**
-The following `stop-db-instance-automated-backups-replication` ends replication of automated backups to the US West (Oregon) Region. Replicated backups are retained according to the set backup retention period.
+The following `stop-db-instance-automated-backups-replication` example ends replication of automated backups to the US West (Oregon) Region. Replicated backups are retained according to the set backup retention period.
 
 ```
 aws rds stop-db-instance-automated-backups-replication \
@@ -8150,7 +8125,7 @@ Output:
     }
 }
 ```
-For more information, see [Stopping automated backup replication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html#AutomatedBackups.StopReplicating) in the *Amazon RDS User Guide*.
+For more information, see [Stopping automated backup replication](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AutomatedBackups.StopReplicating.html) in the *Amazon RDS User Guide*.
 +  For API details, see [StopDbInstanceAutomatedBackupsReplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/stop-db-instance-automated-backups-replication.html) in *AWS CLI Command Reference*.
 
 ### `stop-db-instance`
@@ -8171,11 +8146,12 @@ Output:
 ```
 {
     "DBInstance": {
-        "DBInstanceStatus": "stopping",
-        ...some output truncated...
+        "DBInstanceIdentifier": "test-instance",
+        "DBInstanceStatus": "stopping"
     }
 }
 ```
+For more information, see [Stopping an Amazon RDS DB instance temporarily](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_StopInstance.html) in the *Amazon RDS User Guide*.
 +  For API details, see [StopDbInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rds/stop-db-instance.html) in *AWS CLI Command Reference*.
 
 ### `switchover-blue-green-deployment`
@@ -8199,27 +8175,27 @@ Output:
     "BlueGreenDeployment": {
         "BlueGreenDeploymentIdentifier": "bgd-v53303651eexfake",
         "BlueGreenDeploymentName": "bgd-cli-test-instance",
-        "Source": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
-        "Target": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-green-blhi1e",
+        "Source": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
+        "Target": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-green-blhi1e",
         "SwitchoverDetails": [
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-green-blhi1e",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-green-blhi1e",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-1-green-k5fv7u",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-1-green-k5fv7u",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-2-green-ggsh8m",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-2-green-ggsh8m",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-db-instance-replica-3-green-o2vwm0",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-db-instance-replica-3-green-o2vwm0",
                 "Status": "AVAILABLE"
             }
         ],
@@ -8262,37 +8238,37 @@ Output:
     "BlueGreenDeployment": {
         "BlueGreenDeploymentIdentifier": "bgd-wi89nwzglccsfake",
         "BlueGreenDeploymentName": "my-blue-green-deployment",
-        "Source": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-        "Target": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3ud8z6",
+        "Source": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+        "Target": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3ud8z6",
         "SwitchoverDetails": [
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster:my-aurora-mysql-cluster-green-3ud8z6",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster:my-aurora-mysql-cluster-green-3ud8z6",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-1-green-bvxc73",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-1-green-bvxc73",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-2-green-7wc4ie",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-2-green-7wc4ie",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:db:my-aurora-mysql-cluster-3-green-p4xxkz",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:db:my-aurora-mysql-cluster-3-green-p4xxkz",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-np1ikl",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-excluded-member-endpoint-green-np1ikl",
                 "Status": "AVAILABLE"
             },
             {
-                "SourceMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint",
-                "TargetMember": "arn:aws:rds:us-east-1:123456789012:cluster-endpoint:my-reader-endpoint-green-miszlf",
+                "SourceMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint",
+                "TargetMember": "arn:aws:rds:us-west-2:123456789012:cluster-endpoint:my-reader-endpoint-green-miszlf",
                 "Status": "AVAILABLE"
             }
         ],
@@ -8413,8 +8389,7 @@ Output:
                 "Status": "replicating"
             }
         ],
-        "DBInstanceArn": "arn:aws:rds:us-east-1:123456789012:db:rds-oracle-reader",
-        ...some output truncated...
+        "DBInstanceArn": "arn:aws:rds:us-west-2:123456789012:db:rds-oracle-reader"
     }
 }
 ```

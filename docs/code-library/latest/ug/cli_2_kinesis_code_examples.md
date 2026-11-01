@@ -142,7 +142,7 @@ The following `describe-stream-consumer` example returns the description of the 
 
 ```
 aws kinesis describe-stream-consumer \
-    --stream-arn {{arn:aws:kinesis:us-west-2:012345678912:stream/samplestream}} \
+    --stream-arn {{arn:aws:kinesis:us-west-2:123456789012:stream/samplestream}} \
     --consumer-name {{KinesisConsumerApplication}}
 ```
 Output:
@@ -277,7 +277,8 @@ The following `disable-enhanced-monitoring` example disables enhanced Kinesis da
 
 ```
 aws kinesis disable-enhanced-monitoring \
-    --stream-name {{samplestream}} --shard-level-metrics {{ALL}}
+    --stream-name {{samplestream}} \
+    --shard-level-metrics {{ALL}}
 ```
 Output:
 
@@ -591,7 +592,7 @@ The following `register-stream-consumer` example registers a consumer called `Ki
 
 ```
 aws kinesis register-stream-consumer \
-    --stream-arn {{arn:aws:kinesis:us-west-2:012345678912:stream/samplestream}} \
+    --stream-arn {{arn:aws:kinesis:us-west-2:123456789012:stream/samplestream}} \
     --consumer-name {{KinesisConsumerApplication}}
 ```
 Output:
@@ -658,7 +659,7 @@ The following `start-stream-encryption` example enables server-side encryption f
 ```
 aws kinesis start-stream-encryption \
     --encryption-type {{KMS}} \
-    --key-id {{arn:aws:kms:us-west-2:012345678912:key/a3c4a7cd-728b-45dd-b334-4d3eb496e452}} \
+    --key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --stream-name {{samplestream}}
 ```
 This command produces no output.
@@ -677,7 +678,7 @@ The following `stop-stream-encryption` example disables server-side encryption f
 ```
 aws kinesis start-stream-encryption \
     --encryption-type {{KMS}} \
-    --key-id {{arn:aws:kms:us-west-2:012345678912:key/a3c4a7cd-728b-45dd-b334-4d3eb496e452}} \
+    --key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --stream-name {{samplestream}}
 ```
 This command produces no output.

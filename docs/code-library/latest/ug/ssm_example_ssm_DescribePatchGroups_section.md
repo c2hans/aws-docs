@@ -43,8 +43,7 @@ Output:
                 "BaselineDescription": "Patches for Development",
                 "DefaultBaseline": true
             }
-        },
-        ...
+        }
     ]
 }
 ```

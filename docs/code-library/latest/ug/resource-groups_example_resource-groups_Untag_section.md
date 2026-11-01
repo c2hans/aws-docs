@@ -14,7 +14,7 @@ The following code examples show how to use `Untag`.
 
 **AWS CLI**
 **To remove tags from a resource group**
-The following `untags` example removes any tag with the specified key from the resource group itself, not its members.
+The following `untag` example removes any tag with the specified key from the resource group itself, not its members.
 
 ```
 aws resource-groups untag \

@@ -18,10 +18,11 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To get a list of resources for a REST API**
-Command:
+The following `get-resources` example gets a list of resources for the specified REST API.
 
 ```
-aws apigateway get-resources --rest-api-id {{1234123412}}
+aws apigateway get-resources \
+    --rest-api-id {{1234123412}}
 ```
 Output:
 
@@ -40,6 +41,7 @@ Output:
     ]
 }
 ```
+For more information, see [Develop REST APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-develop.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [GetResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/get-resources.html) in *AWS CLI Command Reference*.
 
 ------

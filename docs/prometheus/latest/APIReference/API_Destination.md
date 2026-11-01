@@ -18,6 +18,11 @@ The Amazon Managed Service for Prometheus workspace to send metrics to.
 Type: [AmpConfiguration](API_AmpConfiguration.md) object
 Required: No
 
+ ** cloudWatchConfiguration **   <a name="prometheus-Type-Destination-cloudWatchConfiguration"></a>
+The CloudWatch dataset to send metrics to.
+Type: [CloudWatchConfiguration](API_CloudWatchConfiguration.md) object
+Required: No
+
 ## See Also
 <a name="API_Destination_SeeAlso"></a>
 

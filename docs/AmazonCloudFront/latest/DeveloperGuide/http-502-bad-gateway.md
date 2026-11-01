@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/h
 # HTTP 502 status code (Bad Gateway)
 <a name="http-502-bad-gateway"></a>
 
-CloudFront returns a HTTP 502 status code (Bad Gateway) when CloudFront wasn't able to serve the requested object because it couldn't connect to the origin server.
+CloudFront returns an HTTP 502 status code (Bad Gateway) when CloudFront wasn't able to serve the requested object because it couldn't connect to the origin server.
 
 If you're using Lambda@Edge, the issue might be a Lambda validation error. If you receive an HTTP 502 error with the `NonS3OriginDnsError` error code, there's likely a DNS configuration problem that's preventing CloudFront from connecting to the origin.
 

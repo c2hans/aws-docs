@@ -18,7 +18,7 @@ The following `describe-directories` example displays details about the specifie
 
 ```
 aws ds describe-directories \
-   --directory-id {{d-a1b2c3d4e5}}
+    --directory-id {{d-a1b2c3d4e5}}
 ```
 Output:
 
@@ -65,6 +65,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing AWS Managed Microsoft AD directory information](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_view_directory_info.html) in the *AWS Directory Service Administration Guide*.
 +  For API details, see [DescribeDirectories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ds/describe-directories.html) in *AWS CLI Command Reference*.
 
 ------

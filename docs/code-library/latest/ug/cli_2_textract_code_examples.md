@@ -27,20 +27,19 @@ The following code example shows how to use `analyze-document`.
 **AWS CLI**
 **To analyze text in a document**
 The following `analyze-document` example shows how to analyze text in a document.
-Linux/macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws textract analyze-document \
-    --document '{{{"S3Object":{"Bucket":"bucket","Name":"document"}}}}' \
+    --document '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}' \
     --feature-types '{{["TABLES","FORMS"]}}'
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws textract analyze-document \
-    --document "{\"S3Object\":{\"Bucket\":\"bucket\",\"Name\":\"document\"}}" \
-    --feature-types "[\"TABLES\",\"FORMS\"]" \
-    --region {{region-name}}
+    --document "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}" \
+    --feature-types "[\"TABLES\",\"FORMS\"]"
 ```
 Output:
 
@@ -78,14 +77,14 @@ Output:
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "87586964-d50d-43e2-ace5-8a890657b9a0",
-                        "a1e72126-21d9-44f4-a8d6-5c385f9002ba",
-                        "e889d012-8a6b-4d2e-b7cd-7a8b327d876a"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
                     ]
                 }
             ],
             "BlockType": "PAGE",
-            "Id": "c2227f12-b25d-4e1f-baea-1ee180d926b2"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         }
     ],
     "DocumentMetadata": {
@@ -93,7 +92,7 @@ Output:
     }
 }
 ```
-For more information, see Analyzing Document Text with Amazon Textract in the *Amazon Textract Developers Guide*
+For more information, see [Analyzing Document Text with Amazon Textract](https://docs.aws.amazon.com/textract/latest/dg/analyzing-document-text.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [AnalyzeDocument](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/analyze-document.html) in *AWS CLI Command Reference*.
 
 ### `detect-document-text`
@@ -103,19 +102,18 @@ The following code example shows how to use `detect-document-text`.
 
 **AWS CLI**
 **To detect text in a document**
-The following `detect-document-text` The following example shows how to detect text in a document.
-Linux/macOS:
+The following `detect-document-text` example shows how to detect text in a document.
+For Linux and macOS, use the following command.
 
 ```
 aws textract detect-document-text \
-    --document '{{{"S3Object":{"Bucket":"bucket","Name":"document"}}}}'
+    --document '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}'
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws textract detect-document-text \
-    --document "{\"S3Object\":{\"Bucket\":\"bucket\",\"Name\":\"document\"}}" \
-    --region {{region-name}}
+    --document "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}"
 ```
 Output:
 
@@ -153,22 +151,22 @@ Output:
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "896a9f10-9e70-4412-81ce-49ead73ed881",
-                        "0da18623-dc4c-463d-a3d1-9ac050e9e720",
-                        "167338d7-d38c-4760-91f1-79a8ec457bb2"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
                     ]
                 }
             ],
             "BlockType": "PAGE",
-            "Id": "21f0535e-60d5-4bc7-adf2-c05dd851fa25"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444"
         },
         {
             "Relationships": [
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "62490c26-37ea-49fa-8034-7a9ff9369c9c",
-                        "1e4f3f21-05bd-4da9-ba10-15d01e66604c"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666"
                     ]
                 }
             ],
@@ -201,14 +199,14 @@ Output:
             },
             "Text": "He llo,",
             "BlockType": "LINE",
-            "Id": "896a9f10-9e70-4412-81ce-49ead73ed881"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
             "Relationships": [
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "19b28058-9516-4352-b929-64d7cef29daf"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777"
                     ]
                 }
             ],
@@ -241,7 +239,7 @@ Output:
             },
             "Text": "worlc",
             "BlockType": "LINE",
-            "Id": "0da18623-dc4c-463d-a3d1-9ac050e9e720"
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ],
     "DocumentMetadata": {
@@ -249,7 +247,7 @@ Output:
     }
 }
 ```
-For more information, see Detecting Document Text with Amazon Textract in the *Amazon Textract Developers Guide*
+For more information, see [Detecting Document Text with Amazon Textract](https://docs.aws.amazon.com/textract/latest/dg/detecting-document-text.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [DetectDocumentText](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/detect-document-text.html) in *AWS CLI Command Reference*.
 
 ### `get-document-analysis`
@@ -302,14 +300,14 @@ Output:
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "75966e64-81c2-4540-9649-d66ec341cd8f",
-                        "bb099c24-8282-464c-a179-8a9fa0a057f0",
-                        "5ebf522d-f9e4-4dc7-bfae-a288dc094595"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
                     ]
                 }
             ],
             "BlockType": "PAGE",
-            "Id": "247c28ee-b63d-4aeb-9af0-5f7ea8ba109e",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Page": 1
         }
     ],
@@ -320,7 +318,7 @@ Output:
     "JobStatus": "SUCCEEDED"
 }
 ```
-For more information, see Detecting and Analyzing Text in Multi-Page Documents in the *Amazon Textract Developers Guide*
+For more information, see [Processing Documents Asynchronously](https://docs.aws.amazon.com/textract/latest/dg/async.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [GetDocumentAnalysis](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/get-document-analysis.html) in *AWS CLI Command Reference*.
 
 ### `get-document-text-detection`
@@ -337,7 +335,7 @@ aws textract get-document-text-detection \
     --job-id {{57849a3dc627d4df74123dca269d69f7b89329c870c65bb16c9fd63409d200b9}} \
     --max-results {{1000}}
 ```
-Output
+Output:
 
 ```
 {
@@ -373,14 +371,14 @@ Output
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "1b926a34-0357-407b-ac8f-ec473160c6a9",
-                        "0c35dc17-3605-4c9d-af1a-d9451059df51",
-                        "dea3db8a-52c2-41c0-b50c-81f66f4aa758"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
                     ]
                 }
             ],
             "BlockType": "PAGE",
-            "Id": "84671a5e-8c99-43be-a9d1-6838965da33e",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Page": 1
         }
     ],
@@ -391,7 +389,7 @@ Output
     "JobStatus": "SUCCEEDED"
 }
 ```
-For more information, see Detecting and Analyzing Text in Multi-Page Documents in the *Amazon Textract Developers Guide*
+For more information, see [Processing Documents Asynchronously](https://docs.aws.amazon.com/textract/latest/dg/async.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [GetDocumentTextDetection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/get-document-text-detection.html) in *AWS CLI Command Reference*.
 
 ### `start-document-analysis`
@@ -402,21 +400,20 @@ The following code example shows how to use `start-document-analysis`.
 **AWS CLI**
 **To start analyzing text in a multi-page document**
 The following `start-document-analysis` example shows how to start asynchronous analysis of text in a multi-page document.
-Linux/macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws textract start-document-analysis \
-    --document-location '{{{"S3Object":{"Bucket":"bucket","Name":"document"}}}}' \
+    --document-location '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}' \
     --feature-types '{{["TABLES","FORMS"]}}' \
     --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws textract start-document-analysis \
-    --document-location "{\"S3Object\":{\"Bucket\":\"bucket\",\"Name\":\"document\"}}" \
+    --document-location "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}" \
     --feature-types "[\"TABLES\", \"FORMS\"]" \
-    --region {{region-name}} \
     --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
 ```
 Output:
@@ -426,7 +423,7 @@ Output:
     "JobId": "df7cf32ebbd2a5de113535fcf4d921926a701b09b4e7d089f3aebadb41e0712b"
 }
 ```
-For more information, see Detecting and Analyzing Text in Multi-Page Documents in the *Amazon Textract Developers Guide*
+For more information, see [Processing Documents Asynchronously](https://docs.aws.amazon.com/textract/latest/dg/async.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [StartDocumentAnalysis](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/start-document-analysis.html) in *AWS CLI Command Reference*.
 
 ### `start-document-text-detection`
@@ -437,19 +434,18 @@ The following code example shows how to use `start-document-text-detection`.
 **AWS CLI**
 **To start detecting text in a multi-page document**
 The following `start-document-text-detection` example shows how to start asynchronous detection of text in a multi-page document.
-Linux/macOS:
+For Linux and macOS, use the following command.
 
 ```
 aws textract start-document-text-detection \
-        --document-location '{{{"S3Object":{"Bucket":"bucket","Name":"document"}}}}' \
-        --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleARN"}}
+    --document-location '{{{"S3Object":{"Bucket":"amzn-s3-demo-bucket","Name":"document"}}}}' \
+    --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleARN"}}
 ```
-Windows:
+For Windows, use the following command.
 
 ```
 aws textract start-document-text-detection \
-    --document-location "{\"S3Object\":{\"Bucket\":\"bucket\",\"Name\":\"document\"}}" \
-    --region {{region-name}} \
+    --document-location "{\"S3Object\":{\"Bucket\":\"amzn-s3-demo-bucket\",\"Name\":\"document\"}}" \
     --notification-channel {{"SNSTopicArn=arn:snsTopic,RoleArn=roleArn"}}
 ```
 Output:
@@ -459,5 +455,5 @@ Output:
     "JobId": "57849a3dc627d4df74123dca269d69f7b89329c870c65bb16c9fd63409d200b9"
 }
 ```
-For more information, see Detecting and Analyzing Text in Multi-Page Documents in the *Amazon Textract Developers Guide*
+For more information, see [Processing Documents Asynchronously](https://docs.aws.amazon.com/textract/latest/dg/async.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [StartDocumentTextDetection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/start-document-text-detection.html) in *AWS CLI Command Reference*.

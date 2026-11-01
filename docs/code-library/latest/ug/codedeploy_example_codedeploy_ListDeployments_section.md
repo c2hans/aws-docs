@@ -34,6 +34,7 @@ Output:
     ]
 }
 ```
+For more information, see [View CodeDeploy deployment details](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeployments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployments.html) in *AWS CLI Command Reference*.
 
 ------

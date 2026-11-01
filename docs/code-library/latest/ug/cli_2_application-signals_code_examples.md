@@ -30,8 +30,8 @@ The following `batch-get-service-level-objective-budget-report` example retrieve
 
 ```
 aws application-signals batch-get-service-level-objective-budget-report \
---timestamp {{1735059869}} \
---slo-ids {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName1"}} {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName2"}}
+    --timestamp {{1735059869}} \
+    --slo-ids {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName1"}} {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName2"}}
 ```
 Output:
 
@@ -39,7 +39,7 @@ Output:
 {
     "Timestamp": "2024-12-24T22:34:29+05:30",
     "Reports": [{
-            "Arn": "arn:aws:application-signals:us-east-1:123456789101:slo/SLOName1",
+            "Arn": "arn:aws:application-signals:us-west-2:123456789012:slo/SLOName1",
             "Name": "Your SLO Name",
             "EvaluationType": "PeriodBased",
             "BudgetStatus": "OK",
@@ -56,7 +56,7 @@ Output:
                                 "MetricName": "CPUUtilization",
                                 "Dimensions": [{
                                     "Name": "InstanceId",
-                                    "Value": "i-0e098765432522"
+                                    "Value": "i-1234567890abcdef0"
                                 }]
                             },
                             "Period": 60,
@@ -80,7 +80,7 @@ Output:
             }
         },
         {
-            "Arn": "arn:aws:application-signals:us-east-1:123456789101:slo/SLOName2",
+            "Arn": "arn:aws:application-signals:us-west-2:123456789012:slo/SLOName2",
             "Name": "test",
             "EvaluationType": "PeriodBased",
             "BudgetStatus": "BREACHED",
@@ -177,48 +177,48 @@ Output:
 ```
 {
     "Slo": {
-    "Arn": "arn:aws:application-signals:us-east-1:123456789101:slo/SLOName",
-    "Name": "SLOName",
-    "Description": "Description of your SLO",
-    "CreatedTime": "2024-12-27T08:16:09.032000+05:30",
-    "LastUpdatedTime": "2024-12-27T08:16:09.032000+05:30",
-    "Sli": {
-        "SliMetric": {
-            "MetricDataQueries": [
-                {
-                    "Id": "m1",
-                    "MetricStat": {
-                        "Metric": {
-                            "Namespace": "AWS/EC2",
-                            "MetricName": "CPUUtilization",
-                            "Dimensions": [
-                                {
-                                    "Name": "InstanceId",
-                                    "Value": "i-0e59876543234522"
-                                }
-                            ]
+        "Arn": "arn:aws:application-signals:us-west-2:123456789012:slo/SLOName",
+        "Name": "SLOName",
+        "Description": "Description of your SLO",
+        "CreatedTime": "2024-12-27T08:16:09.032000+05:30",
+        "LastUpdatedTime": "2024-12-27T08:16:09.032000+05:30",
+        "Sli": {
+            "SliMetric": {
+                "MetricDataQueries": [
+                    {
+                        "Id": "m1",
+                        "MetricStat": {
+                            "Metric": {
+                                "Namespace": "AWS/EC2",
+                                "MetricName": "CPUUtilization",
+                                "Dimensions": [
+                                    {
+                                        "Name": "InstanceId",
+                                        "Value": "i-0e59876543234522"
+                                    }
+                                ]
+                            },
+                            "Period": 60,
+                            "Stat": "Average"
                         },
-                        "Period": 60,
-                        "Stat": "Average"
-                    },
-                    "ReturnData": true
+                        "ReturnData": true
+                    }
+                ]
+            },
+            "MetricThreshold": 200.0,
+            "ComparisonOperator": "LessThanOrEqualTo"
+        },
+        "EvaluationType": "PeriodBased",
+        "Goal": {
+            "Interval": {
+                "RollingInterval": {
+                    "DurationUnit": "DAY",
+                    "Duration": 7
                 }
-            ]
-        },
-        "MetricThreshold": 200.0,
-        "ComparisonOperator": "LessThanOrEqualTo"
-    },
-    "EvaluationType": "PeriodBased",
-    "Goal": {
-        "Interval": {
-            "RollingInterval": {
-                "DurationUnit": "DAY",
-                "Duration": 7
-            }
-        },
-        "AttainmentGoal": 99.0,
-        "WarningThreshold": 50.0
-      }
+            },
+            "AttainmentGoal": 99.0,
+            "WarningThreshold": 50.0
+        }
     }
 }
 ```
@@ -236,7 +236,7 @@ The following `delete-service-level-objective` example deletes the specified ser
 
 ```
 aws application-signals delete-service-level-objective \
-    --id {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName"}}
+    --id {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName"}}
 ```
 This command produces no output.
 For more information, see [Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) in the *Amazon CloudWatch User Guide*.
@@ -253,14 +253,14 @@ The following `get-service-level-objective` example returns information about on
 
 ```
 aws application-signals get-service-level-objective \
-    --id {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName"}}
+    --id {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName"}}
 ```
 Output:
 
 ```
 {
     "Slo": {
-        "Arn": "arn:aws:application-signals:us-east-1:123456789101:slo/SLOName",
+        "Arn": "arn:aws:application-signals:us-west-2:123456789012:slo/SLOName",
         "Name": "SLOName",
         "Description": "Description of your SLO",
         "CreatedTime": "2024-12-24T22:19:18.624000+05:30",
@@ -552,7 +552,7 @@ Output:
 ```
 {
     "SloSummaries": [{
-        "Arn": "arn:aws:application-signals:us-east-1:123456789101:slo/test",
+        "Arn": "arn:aws:application-signals:us-west-2:123456789012:slo/test",
         "Name": "test",
         "CreatedTime": "2024-12-24T22:01:21.116000+05:30"
     }]
@@ -714,7 +714,7 @@ The following `list-tags-for-resource` example displays the tags associated with
 
 ```
 aws application-signals list-tags-for-resource \
-    --resource-arn {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName"}}
+    --resource-arn {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName"}}
 ```
 Output:
 
@@ -756,7 +756,7 @@ The following `tag-resource` example assigns one or more tags (key-value pairs) 
 
 ```
 aws application-signals tag-resource \
-    --resource-arn {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName"}} \
+    --resource-arn {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName"}} \
     --tags '{{{"Key":"test","Value":"value"}}}'
 ```
 This command produces no output.
@@ -774,7 +774,7 @@ The following `untag-resource` example removes one or more tags from the specifi
 
 ```
 aws application-signals untag-resource \
-    --resource-arn {{"arn:aws:application-signals:us-east-1:123456789101:slo/SLOName"}} \
+    --resource-arn {{"arn:aws:application-signals:us-west-2:123456789012:slo/SLOName"}} \
     --tag-keys {{"test"}}
 ```
 This command produces no output.
@@ -792,13 +792,13 @@ The following `update-service-level-objective` example updates an existing servi
 
 ```
 aws application-signals update-service-level-objective \
---cli-input-json {{file://update-slo.json}}
+    --cli-input-json {{file://update-slo.json}}
 ```
 Contents of `update-slo.json`:
 
 ```
 {
-    "id": "arn:aws:application-signals:us-east-1:123456789101:slo/SLOName",
+    "id": "arn:aws:application-signals:us-west-2:123456789012:slo/SLOName",
     "goal": {
         "Interval": {
             "RollingInterval": {
@@ -816,7 +816,7 @@ Output:
 ```
 {
     "Slo": {
-        "Arn": "arn:aws:application-signals:us-east-1:123456789101:slo/SLOName",
+        "Arn": "arn:aws:application-signals:us-west-2:123456789012:slo/SLOName",
         "Name": "SLOName",
         "Description": "Description of your SLO",
         "CreatedTime": "2024-12-24T22:19:18.624000+05:30",

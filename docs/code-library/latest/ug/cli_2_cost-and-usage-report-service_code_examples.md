@@ -26,12 +26,21 @@ The following code example shows how to use `delete-report-definition`.
 
 **AWS CLI**
 **To delete an AWS Cost and Usage Report**
-This example deletes an AWS Cost and Usage Report.
-Command:
+The following `delete-report-definition` example deletes an AWS Cost and Usage Report.
 
 ```
-aws cur --region {{us-east-1}} {{delete-report-definition}} --report-name {{"ExampleReport"}}
+aws cur delete-report-definition \
+    --region {{us-east-1}} \
+    --report-name {{"ExampleReport"}}
 ```
+Output:
+
+```
+{
+    "ResponseMessage": "Report ExampleReport deleted successfully."
+}
+```
+For more information, see [What are AWS Cost and Usage Reports?](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) in the *AWS Data Exports User Guide*.
 +  For API details, see [DeleteReportDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cur/delete-report-definition.html) in *AWS CLI Command Reference*.
 
 ### `describe-report-definitions`
@@ -41,36 +50,38 @@ The following code example shows how to use `describe-report-definitions`.
 
 **AWS CLI**
 **To retrieve a list of AWS Cost and Usage Reports**
-This example describes a list of AWS Cost and Usage Reports owned by an account.
-Command:
+The following `describe-report-definitions` example describes a list of AWS Cost and Usage Reports owned by an account.
 
 ```
-aws cur --region {{us-east-1}} {{describe-report-definitions}} --max-items {{5}}
+aws cur describe-report-definitions \
+    --region {{us-east-1}} \
+    --max-items {{5}}
 ```
 Output:
 
 ```
-  {
-"ReportDefinitions": [
-  {
-      "ReportName": "ExampleReport",
-      "Compression": "ZIP",
-      "S3Region": "us-east-1",
-      "Format": "textORcsv",
-      "S3Prefix": "exampleprefix",
-      "S3Bucket": "example-s3-bucket",
-      "TimeUnit": "DAILY",
-      "AdditionalArtifacts": [
-          "REDSHIFT",
-          "QUICKSIGHT"
-      ],
-      "AdditionalSchemaElements": [
-          "RESOURCES"
-      ]
-  }
-]
-  }
+{
+    "ReportDefinitions": [
+        {
+            "ReportName": "ExampleReport",
+            "Compression": "ZIP",
+            "S3Region": "us-east-1",
+            "Format": "textORcsv",
+            "S3Prefix": "exampleprefix",
+            "S3Bucket": "example-s3-bucket",
+            "TimeUnit": "DAILY",
+            "AdditionalArtifacts": [
+                "REDSHIFT",
+                "QUICKSIGHT"
+            ],
+            "AdditionalSchemaElements": [
+                "RESOURCES"
+            ]
+        }
+    ]
+}
 ```
+For more information, see [What are AWS Cost and Usage Reports?](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) in the *AWS Data Exports User Guide*.
 +  For API details, see [DescribeReportDefinitions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cur/describe-report-definitions.html) in *AWS CLI Command Reference*.
 
 ### `put-report-definition`
@@ -83,7 +94,8 @@ The following code example shows how to use `put-report-definition`.
 The following `put-report-definition` example creates a daily AWS Cost and Usage Report that you can upload into Amazon Redshift or Amazon QuickSight.
 
 ```
-aws cur put-report-definition --report-definition {{file://report-definition.json}}
+aws cur put-report-definition \
+    --report-definition {{file://report-definition.json}}
 ```
 Contents of `report-definition.json`:
 
@@ -98,11 +110,13 @@ Contents of `report-definition.json`:
     ],
     "S3Bucket": "example-s3-bucket",
     "S3Prefix": "exampleprefix",
-    "S3Region": "us-east-1",
+    "S3Region": "us-west-2",
     "AdditionalArtifacts": [
         "REDSHIFT",
         "QUICKSIGHT"
     ]
 }
 ```
+This command produces no output.
+For more information, see [Creating a Legacy CUR export](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-create-legacy.html) in the *AWS Data Exports User Guide*.
 +  For API details, see [PutReportDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cur/put-report-definition.html) in *AWS CLI Command Reference*.

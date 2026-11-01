@@ -14,10 +14,13 @@ The following code examples show how to use `UpdateBasePathMapping`.
 
 **AWS CLI**
 **To change the base path for a custom domain name**
-Command:
+The following `update-base-path-mapping` example changes the base path for a custom domain name.
 
 ```
-aws apigateway update-base-path-mapping --domain-name {{api.domain.tld}} --base-path {{prod}} --patch-operations op='replace',path='/basePath',value='v1'
+aws apigateway update-base-path-mapping \
+    --domain-name {{api.domain.tld}} \
+    --base-path {{prod}} \
+    --patch-operations op='replace',path='/basePath',value='v1'
 ```
 Output:
 
@@ -28,6 +31,7 @@ Output:
     "stage": "api"
 }
 ```
+For more information, see [Use API mappings to connect API stages to a custom domain name for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mappings.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [UpdateBasePathMapping](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/update-base-path-mapping.html) in *AWS CLI Command Reference*.
 
 ------

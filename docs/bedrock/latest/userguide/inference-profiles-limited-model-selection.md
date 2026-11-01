@@ -16,8 +16,6 @@ Review the following considerations as you take dependencies on an inference pro
 | --- | --- | --- |
 | Canada (Central) | ca-central-1 | Canada cross-Region inference |
 | Canada West (Calgary) | ca-west-1 | Canada cross-Region inference |
-| Asia Pacific (Tokyo) | ap-northeast-1 | Japan cross-Region inference |
-| Asia Pacific (Osaka) | ap-northeast-3 | Japan cross-Region inference |
 | Asia Pacific (Seoul) | ap-northeast-2 | In-Region inference |
 | Asia Pacific (Singapore) | ap-southeast-1 | In-Region inference |
 | Europe (London) | eu-west-2 | In-Region inference |

@@ -12,7 +12,7 @@ The following Amazon Location services use data providers.
 + ****Places**** – Choose a data provider when you [create a place index resource](https://docs.aws.amazon.com/location/previous/developerguide/places-prerequisites.html#create-place-index-resource) to support queries for geocoding, reverse geocoding, and searches.
 + ****Routes**** – Choose a data provider to support queries for route calculations in different geographies and applications when you [create a route calculator resource](https://docs.aws.amazon.com/location/previous/developerguide/routes-prerequisites.html#create-route-calculator-resource). With your chosen data provider, Amazon Location Service enables you to calculate routes based on up-to-date road network data, live traffic data, planned closures, and historic traffic patterns.
 
-Each provider gathers and curates their data using different means. They may also have varying expertise in different regions of the world. This section provides details about our data providers. You may select any data provider based on your preference.
+Each provider gathers and curates their data using different means. They may also have varying expertise in different regions of the world. This section provides details about our data providers. You may select a data provider supported in your AWS Region based on your preference.
 
 Make sure you read the terms of conditions when using Amazon Location Service data providers. For more information, see the [AWS Service Terms](https://aws.amazon.com/service-terms/). Also see the [Data privacy](data-privacy.md) section for more information about how Amazon Location protects your privacy.
 

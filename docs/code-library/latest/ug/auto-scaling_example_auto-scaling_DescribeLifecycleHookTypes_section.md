@@ -14,7 +14,7 @@ The following code examples show how to use `DescribeLifecycleHookTypes`.
 
 **AWS CLI**
 **To describe the available lifecycle hook types**
-This example describes the available lifecycle hook types.
+The following `describe-lifecycle-hook-types` example describes the available lifecycle hook types.
 
 ```
 aws autoscaling describe-lifecycle-hook-types
@@ -29,6 +29,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLifecycleHookTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-lifecycle-hook-types.html) in *AWS CLI Command Reference*.
 
 ------

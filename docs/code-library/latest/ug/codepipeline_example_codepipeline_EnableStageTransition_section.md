@@ -14,17 +14,16 @@ The following code examples show how to use `EnableStageTransition`.
 
 **AWS CLI**
 **To enable a transition to a stage in a pipeline**
-This example enables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
-Command:
+The following `enable-stage-transition` example enables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
 
 ```
-aws codepipeline enable-stage-transition --pipeline-name {{MyFirstPipeline}} --stage-name {{Beta}}  --transition-type {{Inbound}}
+aws codepipeline enable-stage-transition \
+    --pipeline-name {{MyFirstPipeline}} \
+    --stage-name {{Beta}} \
+    --transition-type {{Inbound}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Working with stage transitions in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/transitions.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [EnableStageTransition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/enable-stage-transition.html) in *AWS CLI Command Reference*.
 
 ------

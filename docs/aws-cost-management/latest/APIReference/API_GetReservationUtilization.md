@@ -71,17 +71,18 @@ The request accepts the following data in JSON format.
  ** [Filter](#API_GetReservationUtilization_RequestSyntax) **   <a name="awscostmanagement-GetReservationUtilization-request-Filter"></a>
 Filters utilization data by dimensions. You can filter by the following dimensions:
 + AZ
-+ CACHE\_ENGINE
-+ DEPLOYMENT\_OPTION
 + INSTANCE\_TYPE
++ INSTANCE\_TYPE\_FAMILY
 + LINKED\_ACCOUNT
-+ OPERATING\_SYSTEM
 + PLATFORM
 + REGION
 + SERVICE
 **Note**
-If not specified, the `SERVICE` filter defaults to Amazon Elastic Compute Cloud - Compute. Supported values for `SERVICE` are Amazon Elastic Compute Cloud - Compute, Amazon Relational Database Service, Amazon ElastiCache, Amazon Redshift, and Amazon Elasticsearch Service. The value for the `SERVICE` filter should not exceed "1".
+If not specified, the `SERVICE` filter defaults to Amazon Elastic Compute Cloud - Compute. Supported values for `SERVICE` are Amazon Elastic Compute Cloud - Compute, Amazon Relational Database Service, Amazon ElastiCache, Amazon MemoryDB, Amazon Redshift, Amazon Elasticsearch Service, and Amazon OpenSearch Service.
 + SCOPE
++ SUBSCRIPTION\_ID
+**Note**
+Values for `SUBSCRIPTION_ID` must contain only digits.
 + TENANCY
  `GetReservationUtilization` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension, and nesting is supported up to only one level deep. If there are multiple values for a dimension, they are OR'd together.
 Type: [Expression](API_Expression.md) object
@@ -298,7 +299,7 @@ X-Amz-Target: AWSInsightsIndexService.GetReservationUtilization
   },
   "GroupBy":[
     {
-      "Type":"Dimension",
+      "Type":"DIMENSION",
       "Key":"SUBSCRIPTION_ID"
     }
   ]

@@ -26,7 +26,7 @@ The following code example shows how to use `batch-delete-image`.
 
 **AWS CLI**
 **Example 1: To delete an image by using image digest ids, the image and all of its tags are deleted within a repository in a public registry**
-The following `batch-delete-image` example deletes an image by specifying the image digest.:
+The following `batch-delete-image` example deletes an image by specifying the image digest.
 
 ```
 aws ecr-public batch-delete-image \
@@ -37,13 +37,13 @@ Output:
 
 ```
 {
-"imageIds": [
-    {
-        "imageDigest": "sha256:b1f9deb5fe3711a3278379ebbcaefbc5d70a2263135db86bd27a0dae150546c2",
-        "imageTag": "latest"
-    }
-],
-"failures": []
+    "imageIds": [
+        {
+            "imageDigest": "sha256:b1f9deb5fe3711a3278379ebbcaefbc5d70a2263135db86bd27a0dae150546c2",
+            "imageTag": "latest"
+        }
+    ],
+    "failures": []
 }
 ```
 For more information, see [Deleting an image in a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/public-image-delete.html) in the *Amazon ECR Public User Guide*.
@@ -70,7 +70,7 @@ Output:
 ```
 For more information, see [Deleting an image in a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/public-image-delete.html) in the *Amazon ECR Public User Guide*.
 **Example 3: To delete multiple images, you can specify multiple image tags or image digests in the request for a repository in a public registry.**
-The following `batch-delete-image` example delete multiple images from a repository named project-a/nginx-web-app by specifying multiple image tags or image digests in the request.
+The following `batch-delete-image` example deletes multiple images from a repository named `project-a/nginx-web-app` by specifying multiple image tags or image digests in the request.
 
 ```
 aws ecr-public batch-delete-image \
@@ -81,25 +81,25 @@ Output:
 
 ```
 {
-     "imageIds": [
-         {
-             "imageDigest": "sha256:47ba980bc055353d9c0af89b1894f68faa43ca93856917b8406316be86f01278"
-         },
-         {
-             "imageDigest": "sha256:f7a86a0760e2f8d7eff07e515fc87bf4bac45c35376c06f9a280f15ecad6d7e0",
-             "imageTag": "temp2.0"
-         }
-     ],
-     "failures": []
- }
+    "imageIds": [
+        {
+            "imageDigest": "sha256:47ba980bc055353d9c0af89b1894f68faa43ca93856917b8406316be86f01278"
+        },
+        {
+            "imageDigest": "sha256:f7a86a0760e2f8d7eff07e515fc87bf4bac45c35376c06f9a280f15ecad6d7e0",
+            "imageTag": "temp2.0"
+        }
+    ],
+    "failures": []
+}
 ```
 For more information, see [Deleting an image in a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/public-image-delete.html) in the *Amazon ECR Public User Guide*.
 **Example 4: To delete an image in cross AWS Account using registry-id and imagedigest ids, the image and all of its tags are deleted within a repository in a public registry**
-The following `batch-delete-image` example deletes an image by specifying the image digest in the cross AWS Account.:
+The following `batch-delete-image` example deletes an image by specifying the image digest in the cross AWS Account.
 
 ```
 aws ecr-public batch-delete-image \
-    --registry-id {{123456789098}} \
+    --registry-id {{123456789012}} \
     --repository-name {{project-a/nginx-web-app}} \
     --image-ids {{imageDigest=sha256:b1f9deb5fe3711a3278379ebbcaefbc5d70a2263135db86bd27a0dae150546c2}} \
     --region {{us-east-1}}
@@ -243,7 +243,7 @@ Output:
         "operatingSystems": [
             "Linux"
         ],
-        "logoUrl": "https://d3g9o9u8re44ak.cloudfront.net/logo/23861450-4b9b-403c-9a4c-7aa0ef140bb8/2f9bf5a7-a32f-45b4-b5cd-c5770a35e6d7.png",
+        "logoUrl": "https://d3g9o9u8re44ak.cloudfront.net/logo/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222.png",
         "aboutText": "## Quick reference\n\nMaintained by: [the Amazon Linux Team](https://github.com/aws/amazon-linux-docker-images)\n\nWhere to get help: [the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)\n\n## Supported tags and respective `dockerfile` links\n\n* [`2.0.20200722.0`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/03d54f8c4d522bf712cffd6c8f9aafba0a875e78/Dockerfile)\n* [`2.0.20200722.0-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/1e7349845e029a2e6afe6dc473ef17d052e3546f/Dockerfile)\n* [`2018.03.0.20200602.1`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/f10932e08c75457eeb372bf1cc47ea2a4b8e98c8/Dockerfile)\n* [`2018.03.0.20200602.1-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/8c9ee491689d901aa72719be0ec12087a5fa8faf/Dockerfile)\n\n## What is Amazon Linux?\n\nAmazon Linux is provided by Amazon Web Services (AWS). It is designed to provide a stable, secure, and high-performance execution environment for applications running on Amazon EC2. The full distribution includes packages that enable easy integration with AWS, including launch configuration tools and many popular AWS libraries and tools. AWS provides ongoing security and maintenance updates to all instances running Amazon Linux.\n\nThe Amazon Linux container image contains a minimal set of packages. To install additional packages, [use `yum`](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-software.html).\n\nAWS provides two versions of Amazon Linux: [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/) and [Amazon Linux AMI](https://aws.amazon.com/amazon-linux-ami/).\n\nFor information on security updates for Amazon Linux, please refer to [Amazon Linux 2 Security Advisories](https://alas.aws.amazon.com/alas2.html) and [Amazon Linux AMI Security Advisories](https://alas.aws.amazon.com/). Note that Docker Hub's vulnerability scanning for Amazon Linux is currently based on RPM versions, which does not reflect the state of backported patches for vulnerabilities.\n\n## Where can I run Amazon Linux container images?\n\nYou can run Amazon Linux container images in any Docker based environment. Examples include, your laptop, in Amazon EC2 instances, and Amazon ECS clusters.\n\n## License\n\nAmazon Linux is available under the [GNU General Public License, version 2.0](https://github.com/aws/amazon-linux-docker-images/blob/master/LICENSE). Individual software packages are available under their own licenses; run `rpm -qi [package name]` or check `/usr/share/doc/[package name]-*` and `/usr/share/licenses/[package name]-*` for details.\n\nAs with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).\n\nSome additional license information which was able to be auto-detected might be found in [the `repo-info` repository's `amazonlinux/` directory](https://github.com/docker-library/repo-info/tree/master/repos/amazonlinux).\n\n## Security\n\nFor information on security updates for Amazon Linux, please refer to [Amazon Linux 2 Security Advisories](https://alas.aws.amazon.com/alas2.html) and [Amazon Linux AMI Security Advisories](https://alas.aws.amazon.com/). Note that Docker Hub's vulnerability scanning for Amazon Linux is currently based on RPM versions, which does not reflect the state of backported patches for vulnerabilities.",
         "usageText": "## Supported architectures\n\namd64, arm64v8\n\n## Where can I run Amazon Linux container images?\n\nYou can run Amazon Linux container images in any Docker based environment. Examples include, your laptop, in Amazon EC2 instances, and ECS clusters.\n\n## How do I install a software package from Extras repository in Amazon Linux 2?\n\nAvailable packages can be listed with the `amazon-linux-extras` command. Packages can be installed with the `amazon-linux-extras install <package>` command. Example: `amazon-linux-extras install rust1`\n\n## Will updates be available for Amazon Linux containers?\n\nSimilar to the Amazon Linux images for Amazon EC2 and on-premises use, Amazon Linux container images will get ongoing updates from Amazon in the form of security updates, bug fix updates, and other enhancements. Security bulletins for Amazon Linux are available at https://alas.aws.amazon.com/\n\n## Will AWS Support the current version of Amazon Linux going forward?\n\nYes; in order to avoid any disruption to your existing applications and to facilitate migration to Amazon Linux 2, AWS will provide regular security updates for Amazon Linux 2018.03 AMI and container image for 2 years after the final LTS build is announced. You can also use all your existing support channels such as AWS Support and Amazon Linux Discussion Forum to continue to submit support requests."
     }
@@ -263,8 +263,8 @@ The following `delete-repository-policy` example delete repository policy for th
 
 ```
 aws ecr-public delete-repository-policy \
-     --repository-name {{project-a/nginx-web-app}} \
-     --region {{us-east-1}}
+    --repository-name {{project-a/nginx-web-app}} \
+    --region {{us-east-1}}
 ```
 Output:
 
@@ -272,7 +272,7 @@ Output:
 {
     "registryId": "123456789012",
     "repositoryName": "project-a/nginx-web-app",
-    "policyText": "{\n  \"Version\" : \"2008-10-17\",\n  \"Statement\" : [ {\n    \"Sid\" : \"AllowPush\",\n    \"Effect\" : \"Allow\",\n    \"Principal\" : {\n      \"AWS\" : [ \"arn:aws:iam:"123456789012":user/eksuser1\", \"arn:aws:iam:"123456789012":user/admin\" ]\n    },\n    \"Action\" : [ \"ecr-public:BatchCheckLayerAvailability\", \"ecr-public:PutImage\", \"ecr-public:InitiateLayerUpload\", \"ecr-public:UploadLayerPart\", \"ecr-public:CompleteLayerUpload\" ]\n  } ]\n}"
+    "policyText": "{\n  \"Version\" : \"2008-10-17\",\n  \"Statement\" : [ {\n    \"Sid\" : \"AllowPush\",\n    \"Effect\" : \"Allow\",\n    \"Principal\" : {\n      \"AWS\" : [ \"arn:aws:iam::123456789012:user/eksuser1\", \"arn:aws:iam::123456789012:user/admin\" ]\n    },\n    \"Action\" : [ \"ecr-public:BatchCheckLayerAvailability\", \"ecr-public:PutImage\", \"ecr-public:InitiateLayerUpload\", \"ecr-public:UploadLayerPart\", \"ecr-public:CompleteLayerUpload\" ]\n  } ]\n}"
 }
 ```
 For more information, see [Deleting a public repository policy statement](https://docs.aws.amazon.com/AmazonECR/latest/public/delete-public-repository-policy.html) in the *Amazon ECR Public User Guide*.
@@ -304,7 +304,7 @@ Output:
     }
 }
 ```
-For more information, see [Deleting a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-delete.html) in the *Amazon ECR Public*.
+For more information, see [Deleting a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-delete.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [DeleteRepository](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/delete-repository.html) in *AWS CLI Command Reference*.
 
 ### `describe-image-tags`
@@ -340,6 +340,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon ECR Public images](https://docs.aws.amazon.com/AmazonECR/latest/public/public-images.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [DescribeImageTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/describe-image-tags.html) in *AWS CLI Command Reference*.
 
 ### `describe-images`
@@ -401,7 +402,7 @@ Output:
     ]
 }
 ```
-For more information, see [Describe an image in a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/docker-push-multi-architecture-image.html) in the *Amazon ECR Public*.
+For more information, see [Amazon ECR Public images](https://docs.aws.amazon.com/AmazonECR/latest/public/public-images.html) in the *Amazon ECR Public User Guide*.
 **Example 2: To describe images from the repository by sort imageTags & imagePushedAt**
 The following `describe-images` example describe images within repository named project-a/nginx-web-app in a public registry.
 
@@ -418,6 +419,7 @@ temp3.0 latest
 temp1.0
 temp2.0
 ```
+For more information, see [Amazon ECR Public images](https://docs.aws.amazon.com/AmazonECR/latest/public/public-images.html) in the *Amazon ECR Public User Guide*.
 **Example 3: To describe images from the repository to generate the last 2 image tags pushed in the repository**
 The following `describe-images` example gets imagetags details from the repository named `project-a/nginx-web-app` in a public registry and queries the result to display only the first two records.
 
@@ -433,6 +435,7 @@ Output:
 temp3.0 latest
 temp1.0
 ```
+For more information, see [Amazon ECR Public images](https://docs.aws.amazon.com/AmazonECR/latest/public/public-images.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [DescribeImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/describe-images.html) in *AWS CLI Command Reference*.
 
 ### `describe-registries`
@@ -451,30 +454,31 @@ Output:
 
 ```
 {
- "registries": [
-     {
-         "registryId": "123456789012",
-         "registryArn": "arn:aws:ecr-public::123456789012:registry/123456789012",
-         "registryUri": "public.ecr.aws/publicregistrycustomalias",
-         "verified": false,
-         "aliases": [
-             {
-                 "name": "publicregistrycustomalias",
-                 "status": "ACTIVE",
-                 "primaryRegistryAlias": true,
-                 "defaultRegistryAlias": true
-             }
-         ]
-     }
-     ]
- }
+    "registries": [
+        {
+            "registryId": "123456789012",
+            "registryArn": "arn:aws:ecr-public::123456789012:registry/123456789012",
+            "registryUri": "public.ecr.aws/publicregistrycustomalias",
+            "verified": false,
+            "aliases": [
+                {
+                    "name": "publicregistrycustomalias",
+                    "status": "ACTIVE",
+                    "primaryRegistryAlias": true,
+                    "defaultRegistryAlias": true
+                }
+            ]
+        }
+    ]
+}
 ```
+For more information, see [Amazon ECR public registries](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [DescribeRegistries](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/describe-registries.html) in *AWS CLI Command Reference*.
 
-### `describe-repository`
-<a name="ecr-public_DescribeRepository_cli_2_topic"></a>
+### `describe-repositories`
+<a name="ecr-public_DescribeRepositories_cli_2_topic"></a>
 
-The following code example shows how to use `describe-repository`.
+The following code example shows how to use `describe-repositories`.
 
 **AWS CLI**
 **Example 1: To describe a repository in a public registry**
@@ -499,6 +503,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing the contents and details of a repository in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-info.html) in the *Amazon ECR Public User Guide*.
 **Example 2: To describe all repositories in a public registry in a table**
 The following `describe-repositories` example describes all repositories in a public registry and then outputs the repository names into a table format.
 
@@ -523,7 +528,8 @@ Output:
 |  sample-repo              |
 +---------------------------+
 ```
-+  For API details, see [DescribeRepository](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/describe-repository.html) in *AWS CLI Command Reference*.
+For more information, see [Viewing the contents and details of a repository in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-info.html) in the *Amazon ECR Public User Guide*.
++  For API details, see [DescribeRepositories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/describe-repositories.html) in *AWS CLI Command Reference*.
 
 ### `get-authorization-token`
 <a name="ecr-public_GetAuthorizationToken_cli_2_topic"></a>
@@ -548,7 +554,7 @@ Output:
     }
 }
 ```
-For more information, see [Amazon ECR public registries](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html#registry_auth_http) in the *Amazon ECR Public*.
+For more information, see [Registry authentication in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-auth.html) in the *Amazon ECR Public User Guide*.
 **Example 2: To retrieve an authorization token for any Amazon ECR public registry that the IAM principal has access**
 The following `get-authorization-token` example gets an authorization token with the AWS CLI and sets it to an environment variable.
 
@@ -563,7 +569,7 @@ Output:
 ```
 QVdTOmV5SndZWGxzYjJKJFHDSFKJHERWUY65IOU36TRYEGFNSDLRIUOTUYTHJKLDFGOcmFUQk9OSFV2UVV4a0x6Sm1ZV0Z6TDFndlZtUjJSVmgxVEVObU9IZEdTWEZxU210c1JUQm5RWGxOUVV4NlNFUnROWG92ZWtGbWJFUjRkbWMyV0U5amFpczRNWGxTVkM5Tk5qWkVUM2RDYm05TVJqSkxjV3BsUVZvMmFYSm5iV1ZvVFdGSVRqVlFMMHN4VnpsTGVXbDFRWGRoTmpsbWFuQllhbVl6TkdGaGMwUjJha2xsYUhscWRscHZTRUpFVkVnNVQwNUdOVFpPY2xZclVFNVFVWGRSVFZvd04xUkhjVGxZZFVkQ1ZFZHBPRUptUzBVclYxQldMMjVMVkRsd2VFVlNSa1EzTWpWSlIxRkVWakJGZFZOVWEzaFBSVk5FWWpSc1lWZHZWMHBSYmxaMlJYWmhZekpaWVVOeFppdFlUa2xKU1RCdFUwdElVbXRJYlhGRk1WaFhNVTVRTkdwc1FYRlVNVWxZZUhkV05Xa3ZXWGd3ZUVZMWIyeE5VRU5QZEdSaWRHOU9lakZOZVdwTVZEUkNRVzlvYzNKSlpsRXhhR2cwWjJwRVJFVjNWalEzYjNCUmRIcEZUR1pYU1Rsc1kxSlNNbU5hUW5wRE1tOUpRMHR5Y1hkeGNXNDVMMmx4Um5GUlVGQnhjMVpQZG5WYUswOW9SQ3RPY0hwSlRsUk5lVXQyY0c1b1FsQjVZVEprVmtSdmJsQklOM05RU3pkNmQydERhMkZ5VmxSRmFVUndWVlE1ZGtsVWFXUkJWMFZEWVhoSFdXTk5VMXBTYTFreVRHZEVlVVZ0ZFRWRk4xTTVjRXBDUjBRMlYyTkdPVWhGWkVweVVGcEVaRFJxZUVablkwNXFaamh5YkVKWmJGSTNOVzFXSzFjdllXSTVTMWx2YUZacksxSnJWSFJ0Wml0T1NFSnpWVFZvV204eVFYbzFWRU5SYjNaR01Va3hPR3h2TWxkNVJsSmpUbTVSTjNjemJsUkdVRlZKVDBjeE9VeHlXVEpGVFRSS2NWbFdkVEJrV0VreFVsSktXbkpCVGtsMFdVZEJOMjltWjFFNGVHRktNbGRuWlVoUlNXNXdZV3A0VjI5M2FYZGljbE5tZGpkQ1ZYTmhOVFUyTDBzeVpteDBka0pUTVdkNGJ6TkxkSEJDYml0cE0waGhTbVpEZEZkQ00yOU1TM1pXTDNSVFlWaFpWelZXVWxjNFRXNXdhR3BhUmpoU1FuWnFkRlJMVW5abGRYRlNjVVJKZDBaSFpXUTRabEZUTUdOTVQwcFFkVXAyYjA5Tk9UaFlZMjEwVnpFMlpXdE9hMnBWV0hST1owUkpVV3R1VFU1dGJXWjNNVGc0VTAxUlNHZE9TbXRMY2tWYWJVeFljVVk0ZWpsTFdWWlRNbEZMVDJkMk1FaFBTMDl5YzJSM1NqTlplRGhUWVVOQlJGWnRlbkU1WTBKVFdqTktSR05WTkd0RGNEVjZNalJHVXpkVk9HTnVSa2xLUVd4SVJDODJXbGcyYldGemJVczJPRVp6TDBoNFMwWkRUMmdyYldGa1QwWjVhMlZQTm5SQ1l6QkpNbFpyVUhSaGVIbFVOR296VjFGVlQyMHpNeTlPWVVoSk1FdDBWalZFU2pneU5rcHNLemQxZDNwcVp6RlNja3AwVm10VU0yRnRWWGMzZDJnMFduSnFjVXczWTBjclNXeHFUVlUyVkZwWGNWY3ZSV0V6WW1oT2JIRklZVlJHU1RrMGEyOVJiMHBPVUhORk9FdERjbFJZY0daS2VVdHRZa2x5YjFORE4zSkJaWEJPZUU5eGR6WnhZMlY1WXprM1JtSkZhVFZFYkVFck5EUk9ZMWRyVEVNd1dqa2lMQ0prWVhSaGEyVjVJam9pWlhsS1VWSkdaMmxQYVVwV1ZXeENhVk5YVm14WFdFWk5VMjFrV21SRE9YaGFhWFF4VkhwS1MyTkljSHBVUms0MFlWaHNTbUpIYUhsWFZHdDZZVWhqZDFKRmFETldNbFYyWTJ0cmVVMUlTbHBWUjJONFRURlJNMDlHYUd4U01uaHVWRVJzUWxaV1pGZFJibkJLV1RCYU5HTXpUakpXTUhoWFRrWndhRTVyTVVwVFZFSkdWV3RzTUZaVVpEQlRSVGxyVkVkb2FGUlVVWHBaTVhCSFQxWmFOVlJxU20xaVZXUnVTM3BaTlZaV2NIcFdWMlJGVkcwMVRHSXdSakpXUnpoNlVsUm5kbUpzUmpGT2FUazFWVzFTY0dWR1FtOVdiVEZoVmpKc1NWRllhRmRTUkZwc1V6SkdSbUpWYkhCVlNFbDJWVzB4Ym1OVk1IWmFhelZ3WkZoa1FtVnFUa3BpTTJoTVRWVk9jMVo2V2t4aWJFWnJWRVUxVW1ONlp6QldWVFZPWW14c01sZFlZekprUjFwVFkxaE9kRnBXWkhaVFZWcGhWa2MxU2xWRlVtdFRiWE16WWpOVmVrNXFSa2RVTTJSd1QwaGtXbVJIVVhsbGJYQkRaRlp2ZGxvd1ZqWmlNbEl4Vkc1T2FtSldjRU5VU0ZVd1kwZDRjbU14WkhaVVYwNTRaRzV2TWxSVlVsQmpiSEJPVkc1VmVsZEZPVzVYYkVwWlUyNWtVbGRZWkZWaVdFWlNUVzF3VFZSSVFraE9XRnBwWVZoak0xUnJXak5OYm04eFpEQk9XbEZzYkhSTmEyaHpaRmRTUTJORVFUQlpWMk01VUZOSmMwbHJiRUpTUTBrMlNXNUZlbHA2U1RGVVZXeFVZekIwYVU5RWFEVmtiRVpzVVZWc2QxbHJWbmxOYW13MVZWaG9UazVzVWpWbFJHaDZZMjFHVkZVeFFubFZXRTVLVGpCMGFXSlZNWGhpUjBwTVlUSTVNRTVVYXpCTE0wVnlWakF4VG1WSE5VcGtSa0pRVld4V1UwOVdVWGhqTVc4eVZraFdlVnA2VGsxV01tUnhVV3Q0ZEdGcVRsUk5hMnN5V2tSV2FtUkdVakZqVm5CUFVrUlNjR0pHUm1GbGFscDRXV2x6Y2xFd1VYcGhSRnBZVmtaU2FVNXVSVFZYYlVaVFpXdHdkVmRZVGpaVGEyaDBWMnhDVlU0elZrWlRSRUpIVlVWa2MwNVlhRFZsUkVwelQwWkNSbE5WY0ZGWFNFWXhaVmMxVEZsVE9VeFdhMGt4V1ROS1Rrd3pXazFpYkhCdFVrUldWRlJHVlhaTmJVazBZbFZzUkV3d2N6UldSV2MxVDBWa05tSXpiM2hXVms1V1ZtMDFiRkZUT1hoUFJVcHpUMGRzU2xaSVJrTkxNVTVFWWtaa05WWnViRmRYVjJRd1RXcG5kMVJWUmpCa1JYQkdZVlYwZFZNeU1VVlpWVTVQV25wa1ExZHFVbE5sUjBaRVlWVTFXbVZwY3pSTE1HTTFVbFZGTlZwRll6UlRSMVoxVFcxb05XTnJkRUpWZWxsM1RETmplbUV4WkdGU1JsWm9ZVVpzZEdWR2JFTlVNblJYVkRCNE5HUXlkRXhaTWxKTlYxZDBWRTB5YUZwaFJsazFVMGR3Y0ZGVk9YaGxhekV6VVZRd09VbHVNRDBpTENKMlpYSnphVzl1SWpvaU15SXNJblI1Y0dVaU9pSkVRVlJCWDB0RldTSXNJbVY0Y0dseVlYUnBiMjRpT2pFM01qRTVOVGMzTmpKOQ
 ```
-For more information, see [Amazon ECR public registries](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html#registry_auth_http) in the *Amazon ECR Public*.
+For more information, see [Registry authentication in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-auth.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [GetAuthorizationToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/get-authorization-token.html) in *AWS CLI Command Reference*.
 
 ### `get-login-password`
@@ -577,25 +583,25 @@ The following `get-login-password` example retrieves and displays an authenticat
 
 ```
 aws ecr-public get-login-password \
-    --region {{us-east-1}}
+    --region {{us-east-1}} \
 {{|}} {{docker}} {{login}} \
     --username {{AWS}} \
     --password-stdin {{public.ecr.aws}}
 ```
-This command produces no output in the terminal but instead pipes the output to Docker.
-For more information, see [Authenticate to the public registry](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html#public-registry-auth) in the *Amazon ECR Public*.
+This command produces no output. The authentication token is piped to Docker.
+For more information, see [Registry authentication in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-auth.html) in the *Amazon ECR Public User Guide*.
 **Example 2: To authenticate docker to your own custom AmazonECR public registry**
 The following `get-login-password` example retrieves and displays an authentication token using the GetAuthorizationToken API that you can use to authenticate to your own custom Amazon ECR public registry.
 
 ```
- aws ecr-public get-login-password \
-    --region us-east-1 \
-| docker login \
-    --username AWS \
-    --password-stdin public.ecr.aws/<your-public-registry-custom-alias>
+aws ecr-public get-login-password \
+    --region {{us-east-1}} \
+{{|}} {{docker}} {{login}} \
+    --username {{AWS}} \
+    --password-stdin {{public.ecr.aws/<your-public-registry-custom-alias>}}
 ```
-This command produces no output in the terminal but insteads pipes the output to Docker.
-For more information, see [Authenticate to your own Amazon ECR Public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html#public-registry-auth) in the *Amazon ECR Public*.
+This command produces no output. The authentication token is piped to Docker.
+For more information, see [Registry authentication in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-auth.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [GetLoginPassword](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/get-login-password.html) in *AWS CLI Command Reference*.
 
 ### `get-registry-catalog-data`
@@ -605,7 +611,7 @@ The following code example shows how to use `get-registry-catalog-data`.
 
 **AWS CLI**
 **To retrieve catalog metadata for a public ECR registry**
-The following `get-registry-catalog-data` retrieves catalog metadata for an ECR public registry.
+The following `get-registry-catalog-data` example retrieves catalog metadata for an ECR public registry.
 
 ```
 aws ecr-public get-registry-catalog-data \
@@ -620,6 +626,7 @@ Output:
     }
 }
 ```
+For more information, see [Updating registry settings in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-settings.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [GetRegistryCatalogData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/get-registry-catalog-data.html) in *AWS CLI Command Reference*.
 
 ### `get-repository-catalog-data`
@@ -651,13 +658,13 @@ Output:
         "operatingSystems": [
             "Linux"
         ],
-        "logoUrl": "https://d3g9o9u8re44ak.cloudfront.net/logo/491d3846-8f33-4d8b-a10c-c2ce271e6c0d/4f09d87c-2569-4916-a932-5c296bf6f88a.png",
+        "logoUrl": "https://d3g9o9u8re44ak.cloudfront.net/logo/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222.png",
         "aboutText": "## Quick reference\n\nMaintained <truncated>",
         "usageText": "## Supported architectures\n\namd64, arm64v8\n\n## <truncated>"
     }
 }
 ```
-For more information, see [Repository catalog data](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-catalog-data.html) in the *Amazon ECR Public*.
+For more information, see [Specifying the repository catalog data in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-catalog-data.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [GetRepositoryCatalogData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/get-repository-catalog-data.html) in *AWS CLI Command Reference*.
 
 ### `get-repository-policy`
@@ -720,7 +727,7 @@ Output:
     ]
 }
 ```
-For more information, see [List tags for a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public*.
+For more information, see [Tag an Amazon ECR Public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `put-registry-catalog-data`
@@ -730,7 +737,7 @@ The following code example shows how to use `put-registry-catalog-data`.
 
 **AWS CLI**
 **To create or update catalog metadata for a public ECR registry**
-The following `put-registry-catalog-data` creates or updates catalog metadata for an ECR public registry. Only accounts that have the verified account badge can have a registry display name.
+The following `put-registry-catalog-data` example creates or updates catalog metadata for an ECR public registry. Only accounts that have the verified account badge can have a registry display name.
 
 ```
 aws ecr-public put-registry-catalog-data \
@@ -746,6 +753,7 @@ Output:
     }
 }
 ```
+For more information, see [Updating registry settings in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registry-settings.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [PutRegistryCatalogData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/put-registry-catalog-data.html) in *AWS CLI Command Reference*.
 
 ### `put-repository-catalog-data`
@@ -800,13 +808,13 @@ Output:
         "operatingSystems": [
             "Linux"
         ],
-        "logoUrl": "https://d3g9o9u8re44ak.cloudfront.net/logo/df86cf58-ee60-4061-b804-0be24d97ccb1/4a9ed9b2-69e4-4ede-b924-461462d20ef0.png",
+        "logoUrl": "https://d3g9o9u8re44ak.cloudfront.net/logo/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222.png",
         "aboutText": "## Quick reference.",
         "usageText": "## Supported architectures are as follows."
     }
 }
 ```
-For more information, see [Repository catalog data](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-catalog-data.html) in the *Amazon ECR Public*.
+For more information, see [Specifying the repository catalog data in Amazon ECR public](https://docs.aws.amazon.com/AmazonECR/latest/public/public-repository-catalog-data.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [PutRepositoryCatalogData](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/put-repository-catalog-data.html) in *AWS CLI Command Reference*.
 
 ### `set-repository-policy`
@@ -907,24 +915,24 @@ aws ecr-public set-repository-policy \
 Contents of `my-repository-policy.json`:
 
 ```
- {
-     "Version":"2012-10-17",
-     "Statement": [
-         {
-             "Sid": "AllowCrossAccountPush",
-             "Effect": "Allow",
-             "Principal": {
-                 "AWS": "arn:aws:iam::other-or-same-account-id:role/RoleName"
-             },
-             "Action": [
-                 "ecr-public:BatchCheckLayerAvailability",
-                 "ecr-public:PutImage",
-                 "ecr-public:InitiateLayerUpload",
-                 "ecr-public:UploadLayerPart",
-                 "ecr-public:CompleteLayerUpload"
-             ]
-         }
-     ]
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCrossAccountPush",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::other-or-same-account-id:role/RoleName"
+            },
+            "Action": [
+                "ecr-public:BatchCheckLayerAvailability",
+                "ecr-public:PutImage",
+                "ecr-public:InitiateLayerUpload",
+                "ecr-public:UploadLayerPart",
+                "ecr-public:CompleteLayerUpload"
+            ]
+        }
+    ]
 }
 ```
 Output:
@@ -952,19 +960,21 @@ The following `tag-resource` example tags a repository named `project-a/nginx-we
 aws ecr-public tag-resource \
     --resource-arn {{arn:aws:ecr-public::123456789012:repository/project-a/nginx-web-app}} \
     --tags {{Key=stack,Value=dev}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
-For more information, see [Using Tags for a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public*.
+This command produces no output.
+For more information, see [Tag an Amazon ECR Public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public User Guide*.
 **Example 2: To tag an existing public repository with multiple tags in a public registry.**
 The following `tag-resource` example tags an existing repository with multiple tags.
 
 ```
 aws ecr-public tag-resource \
-    --resource-arn {{arn:aws:ecr-public::890517186334:repository/project-a/nginx-web-app}}  \
+    --resource-arn {{arn:aws:ecr-public::123456789012:repository/project-a/nginx-web-app}}  \
     --tags {{Key=key1,Value=value1}} {{Key=key2,Value=value2}} {{Key=key3,Value=value3}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
-For more information, see [Using Tags for a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public*.
+This command produces no output.
+For more information, see [Tag an Amazon ECR Public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -980,8 +990,8 @@ The following `untag-resource` example tags a repository named `project-a/nginx-
 aws ecr-public untag-resource \
     --resource-arn {{arn:aws:ecr-public::123456789012:repository/project-a/nginx-web-app}} \
     --tag-keys {{stack}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 This command produces no output.
-For more information, see [Using Tags for a public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public*.
+For more information, see [Tag an Amazon ECR Public repository](https://docs.aws.amazon.com/AmazonECR/latest/public/ecr-public-using-tags.html) in the *Amazon ECR Public User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr-public/untag-resource.html) in *AWS CLI Command Reference*.

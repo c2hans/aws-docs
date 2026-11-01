@@ -21,6 +21,7 @@ aws cloudformation continue-update-rollback \
     --stack-name {{my-stack}}
 ```
 This command produces no output.
+For more information, see [Continue rolling back an update](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [ContinueUpdateRollback](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/continue-update-rollback.html) in *AWS CLI Command Reference*.
 
 ------

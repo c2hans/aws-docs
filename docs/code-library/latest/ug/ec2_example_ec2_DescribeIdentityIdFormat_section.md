@@ -13,7 +13,7 @@ The following code examples show how to use `DescribeIdentityIdFormat`.
 #### [ CLI ]
 
 **AWS CLI**
-**To describe the ID format for an IAM role**
+**Example 1: To describe the ID format for an IAM role**
 The following `describe-identity-id-format` example describes the ID format received by instances created by the IAM role `EC2Role` in your AWS account.
 
 ```
@@ -22,6 +22,7 @@ aws ec2 describe-identity-id-format \
     --resource {{instance}}
 ```
 The following output indicates that instances created by this role receive IDs in long ID format.
+Output:
 
 ```
 {
@@ -34,7 +35,8 @@ The following output indicates that instances created by this role receive IDs i
     ]
 }
 ```
-**To describe the ID format for an IAM user**
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
+**Example 2: To describe the ID format for an IAM user**
 The following `describe-identity-id-format` example describes the ID format received by snapshots created by the IAM user `AdminUser` in your AWS account.
 
 ```
@@ -43,6 +45,7 @@ aws ec2 describe-identity-id-format \
     --resource {{snapshot}}
 ```
 The output indicates that snapshots created by this user receive IDs in long ID format.
+Output:
 
 ```
 {
@@ -55,6 +58,7 @@ The output indicates that snapshots created by this user receive IDs in long ID 
     ]
 }
 ```
+For more information, see [Manage your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resources.html) in the *Amazon EC2 User Guide*.
 +  For API details, see [DescribeIdentityIdFormat](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-identity-id-format.html) in *AWS CLI Command Reference*.
 
 ------

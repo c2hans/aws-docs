@@ -60,6 +60,11 @@ Maximum: 50 values
 Type: Array of strings
 Required: No
 
+ ** scanResultCondition **
+The Amazon Inspector scan-result criteria that an AMI must meet to be allowed. The criteria can limit the highest finding severity, the number of days since Amazon Inspector last scanned the AMI, and the number of days since Amazon Inspector reported a fix as available.
+Type: [ScanResultCondition](API_ScanResultCondition.md) object
+Required: No
+
 ## See Also
 <a name="API_ImageCriterion_SeeAlso"></a>
 

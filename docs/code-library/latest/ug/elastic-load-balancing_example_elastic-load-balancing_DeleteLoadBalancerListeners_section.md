@@ -14,12 +14,15 @@ The following code examples show how to use `DeleteLoadBalancerListeners`.
 
 **AWS CLI**
 **To delete a listener from your load balancer**
-This example deletes the listener for the specified port from the specified load balancer.
-Command:
+The following `delete-load-balancer-listeners` example deletes the listener for the specified port from the specified load balancer.
 
 ```
-aws elb delete-load-balancer-listeners --load-balancer-name {{my-load-balancer}} --load-balancer-ports {{80}}
+aws elb delete-load-balancer-listeners \
+    --load-balancer-name {{my-load-balancer}} \
+    --load-balancer-ports {{80}}
 ```
+This command produces no output.
+For more information, see [Listeners for your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-listener-config.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [DeleteLoadBalancerListeners](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/delete-load-balancer-listeners.html) in *AWS CLI Command Reference*.
 
 ------

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/healthlake/index.html
 title: 'AWS HealthLake Documentation'
 canonical_url: https://docs.aws.amazon.com/healthlake/
 source: aws-documentation
-generated_on: 2026-10-29
+generated_on: 2026-10-30
 ---
 
 # AWS HealthLake Documentation

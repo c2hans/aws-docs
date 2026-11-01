@@ -204,14 +204,14 @@ Aws::String AwsDoc::IAM::BuildSamplePolicyDocument(const Aws::String &rsrc_arn) 
 
 **AWS CLI**
 **Example 1: To create a customer managed policy**
-The following command creates a customer managed policy named `my-policy`. The file `policy.json` is a JSON document in the current folder that grants read only access to the `shared` folder in an Amazon S3 bucket named `amzn-s3-demo-bucket`.
+The following `create-policy` example creates a customer managed policy named `my-policy`. The file `policy.json` is a JSON document in the current folder that grants read only access to the `shared` folder in an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 
 ```
 aws iam create-policy \
     --policy-name {{my-policy}} \
     --policy-document {{file://policy.json}}
 ```
-Contents of policy.json:
+Contents of `policy.json`:
 
 ```
 {
@@ -249,7 +249,7 @@ Output:
 ```
 For more information on using files as input for string parameters, see [Specify parameter values for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters.html) in the *AWS CLI User Guide*.
 **Example 2: To create a customer managed policy with a description**
-The following command creates a customer managed policy named `my-policy` with an immutable description.
+The following `create-policy` example creates a customer managed policy named `my-policy` with an immutable description.
 The file `policy.json` is a JSON document in the current folder that grants access to all Put, List, and Get actions for an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 
 ```
@@ -258,15 +258,15 @@ aws iam create-policy \
     --policy-document {{file://policy.json}} \
     --description {{"This policy grants access to all Put, Get, and List actions for amzn-s3-demo-bucket"}}
 ```
-Contents of policy.json:
+Contents of `policy.json`:
 
 ```
 {
-   "Version":"2012-10-17",
-   "Statement": [
-       {
-           "Effect": "Allow",
-           "Action": [
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
                 "s3:ListBucket*",
                 "s3:PutBucket*",
                 "s3:GetBucket*"
@@ -298,7 +298,7 @@ Output:
 ```
 For more information on Idenity-based Policies, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the *AWS IAM User Guide*.
 **Example 3: To create a customer managed policy with tags**
-The following command creates a customer managed policy named `my-policy` with tags. This example uses the `--tags` parameter with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` parameter can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
+The following `create-policy` example creates a customer managed policy named `my-policy` with tags. This example uses the `--tags` parameter with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` parameter can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
 The file `policy.json` is a JSON document in the current folder that grants access to all Put, List, and Get actions for an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 
 ```
@@ -307,7 +307,7 @@ aws iam create-policy \
     --policy-document {{file://policy.json}} \
     --tags '{{{"Key": "Department", "Value": "Accounting"}}}' '{{{"Key": "Location", "Value": "Seattle"}}}'
 ```
-Contents of policy.json:
+Contents of `policy.json`:
 
 ```
 {
@@ -347,9 +347,10 @@ Output:
                 "Key": "Department",
                 "Value": "Accounting"
             },
+            {
                 "Key": "Location",
                 "Value": "Seattle"
-            {
+            }
         ]
     }
 }

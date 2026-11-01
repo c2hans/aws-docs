@@ -26,7 +26,7 @@ The following code example shows how to use `assume-role-with-saml`.
 
 **AWS CLI**
 **To get short-term credentials for a role authenticated with SAML**
-The following `assume-role-with-saml` command retrieves a set of short-term credentials for the IAM role `TestSaml`. The request in this example is authenticated by using the SAML assertion supplied by your identity provider when you authenticate to it.
+The following `assume-role-with-saml` example retrieves a set of short-term credentials for the IAM role `TestSaml`. The request in this example is authenticated by using the SAML assertion supplied by your identity provider when you authenticate to it.
 
 ```
 aws sts assume-role-with-saml \
@@ -51,7 +51,7 @@ Output:
     },
     "Audience": "https://signin.aws.amazon.com/saml",
     "SubjectType": "transient",
-    "PackedPolicySize": "6",
+    "PackedPolicySize": 6,
     "NameQualifier": "SbdGOnUkh1i4+EXAMPLExL/jEvs=",
     "Subject": "SamlExample"
 }
@@ -66,7 +66,7 @@ The following code example shows how to use `assume-role-with-web-identity`.
 
 **AWS CLI**
 **To get short-term credentials for a role authenticated with Web Identity (OAuth 2."0)**
-The following `assume-role-with-web-identity` command retrieves a set of short-term credentials for the IAM role `app1`. The request is authenticated by using the web identity token supplied by the specified web identity provider. Two additional policies are applied to the session to further restrict what the user can do. The returned credentials expire one hour after they are generated.
+The following `assume-role-with-web-identity` example retrieves a set of short-term credentials for the IAM role `app1`. The request is authenticated by using the web identity token supplied by the specified web identity provider. Two additional policies are applied to the session to further restrict what the user can do. The returned credentials expire one hour after they are generated.
 
 ```
 aws sts assume-role-with-web-identity \
@@ -106,7 +106,7 @@ The following code example shows how to use `assume-role`.
 
 **AWS CLI**
 **To assume a role**
-The following `assume-role` command retrieves a set of short-term credentials for the IAM role `s3-access-example`.
+The following `assume-role` example retrieves a set of short-term credentials for the IAM role `s3-access-example`.
 
 ```
 aws sts assume-role \
@@ -140,12 +140,12 @@ The following code example shows how to use `assume-root`.
 
 **AWS CLI**
 **To launch a privileged session**
-The following `assume-root` command retrieves a set of short-term credentials you can use to remove a misconfigured Amazon S3 bucket policy for a member account in your organization.
+The following `assume-root` example retrieves a set of short-term credentials you can use to remove a misconfigured Amazon S3 bucket policy for a member account in your organization.
 
 ```
 aws sts assume-root \
     --duration-seconds {{900}} \
-    --target-principal {{111122223333}} \
+    --target-principal {{123456789012}} \
     --task-policy-arn {{arn=arn:aws:iam::aws:policy/root-task/S3UnlockBucketPolicy}}
 ```
 Output:
@@ -158,7 +158,7 @@ Output:
         "Expiration": "2024-11-15T00:05:07Z",
         "AccessKeyId": "ASIAJEXAMPLEXEG2JICEA"
     },
-    "SourceIdentity": "Alice",
+    "SourceIdentity": "Alice"
 }
 ```
 The output of the command contains an access key, secret key, and session token that you can use to to perform privileged actions in the member account. For more information, see [Perform a privileged task on an AWS Organizations member account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user-privileged-task.html) in the *AWS IAM User Guide*.
@@ -181,7 +181,7 @@ Output:
 
 ```
 {
-    "DecodedMessage": "{\"allowed\":false,\"explicitDeny\":true,\"matchedStatements\":{\"items\":[{\"statementId\":\"VisualEditor0\",\"effect\":\"DENY\",\"principals\":{\"items\":[{\"value\":\"AROA123456789EXAMPLE\"}]},\"principalGroups\":{\"items\":[]},\"actions\":{\"items\":[{\"value\":\"ec2:RunInstances\"}]},\"resources\":{\"items\":[{\"value\":\"*\"}]},\"conditions\":{\"items\":[]}}]},\"failures\":{\"items\":[]},\"context\":{\"principal\":{\"id\":\"AROA123456789EXAMPLE:Ana\",\"arn\":\"arn:aws:sts::111122223333:assumed-role/Developer/Ana\"},\"action\":\"RunInstances\",\"resource\":\"arn:aws:ec2:us-east-1:111122223333:instance/*\",\"conditions\":{\"items\":[{\"key\":\"ec2:MetadataHttpPutResponseHopLimit\",\"values\":{\"items\":[{\"value\":\"2\"}]}},{\"key\":\"ec2:InstanceMarketType\",\"values\":{\"items\":[{\"value\":\"on-demand\"}]}},{\"key\":\"aws:Resource\",\"values\":{\"items\":[{\"value\":\"instance/*\"}]}},{\"key\":\"aws:Account\",\"values\":{\"items\":[{\"value\":\"111122223333\"}]}},{\"key\":\"ec2:AvailabilityZone\",\"values\":{\"items\":[{\"value\":\"us-east-1f\"}]}},{\"key\":\"ec2:ebsOptimized\",\"values\":{\"items\":[{\"value\":\"false\"}]}},{\"key\":\"ec2:IsLaunchTemplateResource\",\"values\":{\"items\":[{\"value\":\"false\"}]}},{\"key\":\"ec2:InstanceType\",\"values\":{\"items\":[{\"value\":\"t2.micro\"}]}},{\"key\":\"ec2:RootDeviceType\",\"values\":{\"items\":[{\"value\":\"ebs\"}]}},{\"key\":\"aws:Region\",\"values\":{\"items\":[{\"value\":\"us-east-1\"}]}},{\"key\":\"ec2:MetadataHttpEndpoint\",\"values\":{\"items\":[{\"value\":\"enabled\"}]}},{\"key\":\"aws:Service\",\"values\":{\"items\":[{\"value\":\"ec2\"}]}},{\"key\":\"ec2:InstanceID\",\"values\":{\"items\":[{\"value\":\"*\"}]}},{\"key\":\"ec2:MetadataHttpTokens\",\"values\":{\"items\":[{\"value\":\"required\"}]}},{\"key\":\"aws:Type\",\"values\":{\"items\":[{\"value\":\"instance\"}]}},{\"key\":\"ec2:Tenancy\",\"values\":{\"items\":[{\"value\":\"default\"}]}},{\"key\":\"ec2:Region\",\"values\":{\"items\":[{\"value\":\"us-east-1\"}]}},{\"key\":\"aws:ARN\",\"values\":{\"items\":[{\"value\":\"arn:aws:ec2:us-east-1:111122223333:instance/*\"}]}}]}}}"
+    "DecodedMessage": "{\"allowed\":false,\"explicitDeny\":true,\"matchedStatements\":{\"items\":[{\"statementId\":\"VisualEditor0\",\"effect\":\"DENY\",\"principals\":{\"items\":[{\"value\":\"AROA123456789EXAMPLE\"}]},\"principalGroups\":{\"items\":[]},\"actions\":{\"items\":[{\"value\":\"ec2:RunInstances\"}]},\"resources\":{\"items\":[{\"value\":\"*\"}]},\"conditions\":{\"items\":[]}}]},\"failures\":{\"items\":[]},\"context\":{\"principal\":{\"id\":\"AROA123456789EXAMPLE:Ana\",\"arn\":\"arn:aws:sts::123456789012:assumed-role/Developer/Ana\"},\"action\":\"RunInstances\",\"resource\":\"arn:aws:ec2:us-west-2:123456789012:instance/*\",\"conditions\":{\"items\":[{\"key\":\"ec2:MetadataHttpPutResponseHopLimit\",\"values\":{\"items\":[{\"value\":\"2\"}]}},{\"key\":\"ec2:InstanceMarketType\",\"values\":{\"items\":[{\"value\":\"on-demand\"}]}},{\"key\":\"aws:Resource\",\"values\":{\"items\":[{\"value\":\"instance/*\"}]}},{\"key\":\"aws:Account\",\"values\":{\"items\":[{\"value\":\"123456789012\"}]}},{\"key\":\"ec2:AvailabilityZone\",\"values\":{\"items\":[{\"value\":\"us-west-2a\"}]}},{\"key\":\"ec2:ebsOptimized\",\"values\":{\"items\":[{\"value\":\"false\"}]}},{\"key\":\"ec2:IsLaunchTemplateResource\",\"values\":{\"items\":[{\"value\":\"false\"}]}},{\"key\":\"ec2:InstanceType\",\"values\":{\"items\":[{\"value\":\"t2.micro\"}]}},{\"key\":\"ec2:RootDeviceType\",\"values\":{\"items\":[{\"value\":\"ebs\"}]}},{\"key\":\"aws:Region\",\"values\":{\"items\":[{\"value\":\"us-west-2\"}]}},{\"key\":\"ec2:MetadataHttpEndpoint\",\"values\":{\"items\":[{\"value\":\"enabled\"}]}},{\"key\":\"aws:Service\",\"values\":{\"items\":[{\"value\":\"ec2\"}]}},{\"key\":\"ec2:InstanceID\",\"values\":{\"items\":[{\"value\":\"*\"}]}},{\"key\":\"ec2:MetadataHttpTokens\",\"values\":{\"items\":[{\"value\":\"required\"}]}},{\"key\":\"aws:Type\",\"values\":{\"items\":[{\"value\":\"instance\"}]}},{\"key\":\"ec2:Tenancy\",\"values\":{\"items\":[{\"value\":\"default\"}]}},{\"key\":\"ec2:Region\",\"values\":{\"items\":[{\"value\":\"us-west-2\"}]}},{\"key\":\"aws:ARN\",\"values\":{\"items\":[{\"value\":\"arn:aws:ec2:us-west-2:123456789012:instance/*\"}]}}]}}}"
 }
 ```
 For more information, see [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html) in the *AWS IAM User Guide*.
@@ -194,7 +194,7 @@ The following code example shows how to use `get-caller-identity`.
 
 **AWS CLI**
 **To get details about the current IAM identity**
-The following `get-caller-identity` command displays information about the IAM identity used to authenticate the request. The caller is an IAM user.
+The following `get-caller-identity` example displays information about the IAM identity used to authenticate the request. The caller is an IAM user.
 
 ```
 aws sts get-caller-identity
@@ -208,6 +208,7 @@ Output:
     "Arn": "arn:aws:iam::123456789012:user/DevAdmin"
 }
 ```
+For more information, see [View AWS account identifiers](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-identifiers.html) in the *AWS Account Management Reference Guide*.
 +  For API details, see [GetCallerIdentity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sts/get-caller-identity.html) in *AWS CLI Command Reference*.
 
 ### `get-federation-token`
@@ -270,8 +271,8 @@ Output:
         "Expiration": "2023-12-20T02:06:07+00:00"
     },
     "FederatedUser": {
-        "FederatedUserId": "111122223333:Bob",
-        "Arn": "arn:aws:sts::111122223333:federated-user/Bob"
+        "FederatedUserId": "123456789012:Bob",
+        "Arn": "arn:aws:sts::123456789012:federated-user/Bob"
     },
     "PackedPolicySize": 36
 }
@@ -286,7 +287,7 @@ The following code example shows how to use `get-session-token`.
 
 **AWS CLI**
 **To get a set of short term credentials for an IAM identity**
-The following `get-session-token` command retrieves a set of short-term credentials for the IAM identity making the call. The resulting credentials can be used for requests where multi-factor authentication (MFA) is required by policy. The credentials expire 15 minutes after they are generated.
+The following `get-session-token` example retrieves a set of short-term credentials for the IAM identity making the call. The resulting credentials can be used for requests where multi-factor authentication (MFA) is required by policy. The credentials expire 15 minutes after they are generated.
 
 ```
 aws sts get-session-token \

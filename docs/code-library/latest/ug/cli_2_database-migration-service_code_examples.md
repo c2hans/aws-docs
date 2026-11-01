@@ -30,7 +30,7 @@ The following `add-tags-to-resource` example adds tags to a replication instance
 
 ```
 aws dms add-tags-to-resource \
-    --resource-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
+    --resource-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
     --tags {{Key=Environment,Value=PROD}} {{Key=Project,Value=dbMigration}}
 ```
 This command produces no output.
@@ -48,7 +48,7 @@ The following `cancel-metadata-model-conversion` example cancels a metadata mode
 
 ```
 aws dms cancel-metadata-model-conversion \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --request-identifier {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
@@ -58,7 +58,7 @@ Output:
     "Request": {
         "Status": "CANCELING",
         "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-        "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+        "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
     }
 }
 ```
@@ -76,7 +76,7 @@ The following `cancel-metadata-model-creation` example cancels a metadata model 
 
 ```
 aws dms cancel-metadata-model-creation \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --request-identifier {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
@@ -86,7 +86,7 @@ Output:
     "Request": {
         "Status": "CANCELING",
         "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-        "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+        "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
     }
 }
 ```
@@ -107,7 +107,7 @@ aws dms create-data-provider \
     --data-provider-name {{example-data-provider}} \
     --engine {{sqlserver}} \
     --description {{"Example data provider for documentation"}} \
-    --settings {{MicrosoftSqlServerSettings={ServerName=example-source-server.us-east-1.rds.amazonaws.com,Port=1433,DatabaseName=ExampleDatabase,SslMode=verify-full,CertificateArn=arn:aws:dms:us-east-1:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS}}}
+    --settings {{MicrosoftSqlServerSettings={ServerName=example-source-server.us-west-2.rds.amazonaws.com,Port=1433,DatabaseName=ExampleDatabase,SslMode=verify-full,CertificateArn=arn:aws:dms:us-west-2:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS}}}
 ```
 Output:
 
@@ -115,17 +115,17 @@ Output:
 {
     "DataProvider": {
         "DataProviderName": "example-data-provider",
-        "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "DataProviderCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "Description": "Example data provider for documentation",
         "Engine": "sqlserver",
         "Settings": {
             "MicrosoftSqlServerSettings": {
-                "ServerName": "example-source-server.us-east-1.rds.amazonaws.com",
+                "ServerName": "example-source-server.us-west-2.rds.amazonaws.com",
                 "Port": 1433,
                 "DatabaseName": "ExampleDatabase",
                 "SslMode": "verify-full",
-                "CertificateArn": "arn:aws:dms:us-east-1:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "CertificateArn": "arn:aws:dms:us-west-2:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         }
     }
@@ -149,7 +149,7 @@ Output:
 {
     "DataProvider": {
         "DataProviderName": "example-virtual-data-provider",
-        "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "DataProviderCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "Description": "Example data provider for documentation",
         "Engine": "aurora-postgresql",
@@ -188,7 +188,7 @@ Contents of `s3-settings.json`:
 
 ```
 {
-    "BucketName":"my-corp-data",
+    "BucketName":"amzn-s3-demo-bucket",
     "BucketFolder":"sourcedata",
     "ServiceAccessRoleArn":"arn:aws:iam::123456789012:role/my-s3-access-role"
 }
@@ -202,9 +202,9 @@ Output:
         "EndpointType": "SOURCE",
         "EngineName": "s3",
         "EngineDisplayName": "Amazon S3",
-        "ExtraConnectionAttributes": "bucketFolder=sourcedata;bucketName=my-corp-data;compressionType=NONE;csvDelimiter=,;csvRowDelimiter=\\n;",
+        "ExtraConnectionAttributes": "bucketFolder=sourcedata;bucketName=amzn-s3-demo-bucket;compressionType=NONE;csvDelimiter=,;csvRowDelimiter=\\n;",
         "Status": "active",
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:GUVAFG34EECUOJ6QVZ56DAHT3U",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:GUVAFG34EECUOJ6QVZ56DAHT3U",
         "SslMode": "none",
         "ServiceAccessRoleArn": "arn:aws:iam::123456789012:role/my-s3-access-role",
         "S3Settings": {
@@ -212,7 +212,7 @@ Output:
             "CsvRowDelimiter": "\\n",
             "CsvDelimiter": ",",
             "BucketFolder": "sourcedata",
-            "BucketName": "my-corp-data",
+            "BucketName": "amzn-s3-demo-bucket",
             "CompressionType": "NONE",
             "EnableStatistics": true
         }
@@ -234,7 +234,7 @@ The following `create-event-subscription` example creates an event subscription 
 ```
 aws dms create-event-subscription \
     --subscription-name {{my-dms-events}} \
-    --sns-topic-arn {{arn:aws:sns:us-east-1:123456789012:my-sns-topic}}
+    --sns-topic-arn {{arn:aws:sns:us-west-2:123456789012:my-sns-topic}}
 ```
 Output:
 
@@ -243,7 +243,7 @@ Output:
     "EventSubscription": {
         "CustomerAwsId": "123456789012",
         "CustSubscriptionId": "my-dms-events",
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:my-sns-topic",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:my-sns-topic",
         "Status": "creating",
         "SubscriptionCreationTime": "2020-05-21 21:58:38.598",
         "Enabled": true
@@ -268,7 +268,7 @@ aws dms create-instance-profile \
     --description {{"Example instance profile for documentation"}} \
     --subnet-group-identifier {{example-replication-subnet-group}} \
     --vpc-security-groups {{"sg-0123456789abcdef0"}} \
-    --kms-key-arn {{arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --kms-key-arn {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --network-type {{IPV4}} \
     --no-publicly-accessible
 ```
@@ -277,8 +277,8 @@ Output:
 ```
 {
     "InstanceProfile": {
-        "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
-        "KmsKeyArn": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "KmsKeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "PubliclyAccessible": false,
         "NetworkType": "IPV4",
         "InstanceProfileName": "example-instance-profile",
@@ -307,9 +307,9 @@ The following `create-migration-project` example creates a migration project.
 aws dms create-migration-project \
     --migration-project-name {{example-migration-project}} \
     --description {{"Example migration project for documentation"}} \
-    --source-data-provider-descriptors {{DataProviderIdentifier=arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS,SecretsManagerSecretId=arn:aws:secretsmanager:us-east-1:123456789012:secret:example-source-secret-A1B2C3,SecretsManagerAccessRoleArn=arn:aws:iam::123456789012:role/example-secrets-manager-role}} \
-    --target-data-provider-descriptors {{DataProviderIdentifier=arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS,SecretsManagerSecretId=arn:aws:secretsmanager:us-east-1:123456789012:secret:example-target-secret-A1B2C3,SecretsManagerAccessRoleArn=arn:aws:iam::123456789012:role/example-secrets-manager-role}} \
-    --instance-profile-identifier {{arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --source-data-provider-descriptors {{DataProviderIdentifier=arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS,SecretsManagerSecretId=arn:aws:secretsmanager:us-west-2:123456789012:secret:example-source-secret-A1B2C3,SecretsManagerAccessRoleArn=arn:aws:iam::123456789012:role/example-secrets-manager-role}} \
+    --target-data-provider-descriptors {{DataProviderIdentifier=arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS,SecretsManagerSecretId=arn:aws:secretsmanager:us-west-2:123456789012:secret:example-target-secret-A1B2C3,SecretsManagerAccessRoleArn=arn:aws:iam::123456789012:role/example-secrets-manager-role}} \
+    --instance-profile-identifier {{arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --transformation-rules '{{{"rules":[{"rule-type":"transformation","rule-id":"1","rule-name":"1","rule-target":"schema","rule-action":"rename","object-locator":{"schema-name":"ExampleSchema"},"value":"TargetSchema"}]}}}' \
     --schema-conversion-application-attributes {{S3BucketPath=s3://amzn-s3-demo-bucket,S3BucketRoleArn=arn:aws:iam::123456789012:role/example-s3-access-role}}
 ```
@@ -319,25 +319,25 @@ Output:
 {
     "MigrationProject": {
         "MigrationProjectName": "example-migration-project",
-        "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "MigrationProjectCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "SourceDataProviderDescriptors": [
             {
-                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-source-secret-A1B2C3",
+                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-source-secret-A1B2C3",
                 "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                 "DataProviderName": "example-data-provider",
-                "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         ],
         "TargetDataProviderDescriptors": [
             {
-                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-target-secret-A1B2C3",
+                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-target-secret-A1B2C3",
                 "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                 "DataProviderName": "example-data-provider",
-                "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         ],
-        "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "InstanceProfileName": "example-instance-profile",
         "TransformationRules": "{\"rules\":[{\"rule-type\":\"transformation\",\"rule-id\":\"1\",\"rule-name\":\"1\",\"rule-target\":\"schema\",\"rule-action\":\"rename\",\"object-locator\":{\"schema-name\":\"ExampleSchema\"},\"value\":\"TargetSchema\"}]}",
         "Description": "Example migration project for documentation",
@@ -390,42 +390,28 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-da327bf6",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1a"
-                    },
-                    "SubnetStatus": "Active"
-                },
-                {
-                    "SubnetIdentifier": "subnet-42599426",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-east-1d"
+                        "Name": "us-west-2a"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-bac383e0",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1c"
-                    },
-                    "SubnetStatus": "Active"
-                },
-                {
-                    "SubnetIdentifier": "subnet-6746046b",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-east-1f"
+                        "Name": "us-west-2c"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-d7c825e8",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1e"
+                        "Name": "us-west-2d"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-cbfff283",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1b"
+                        "Name": "us-west-2b"
                     },
                     "SubnetStatus": "Active"
                 }
@@ -436,8 +422,8 @@ Output:
         "MultiAZ": false,
         "EngineVersion": "3.3.2",
         "AutoMinorVersionUpgrade": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/f7bc0f8e-1a3a-4ace-9faa-e8494fa3921a",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:ZK2VQBUWFDBAWHIXHAYG5G2PKY",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:ZK2VQBUWFDBAWHIXHAYG5G2PKY",
         "PubliclyAccessible": true
     }
 }
@@ -473,21 +459,21 @@ Output:
             {
                 "SubnetIdentifier": "subnet-da327bf6",
                 "SubnetAvailabilityZone": {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 "SubnetStatus": "Active"
             },
             {
                 "SubnetIdentifier": "subnet-bac383e0",
                 "SubnetAvailabilityZone": {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 "SubnetStatus": "Active"
             },
             {
                 "SubnetIdentifier": "subnet-d7c825e8",
                 "SubnetAvailabilityZone": {
-                    "Name": "us-east-1e"
+                    "Name": "us-west-2d"
                 },
                 "SubnetStatus": "Active"
             }
@@ -510,8 +496,8 @@ The following `create-replication-task` example creates a replication task.
 ```
 aws dms create-replication-task \
     --replication-task-identifier {{movedata}} \
-    --source-endpoint-arn {{arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}} \
-    --target-endpoint-arn {{arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U}} \
+    --source-endpoint-arn {{arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}} \
+    --target-endpoint-arn {{arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U}} \
     --replication-instance-arn {{$RI_ARN}} \
     --migration-type {{full-load}} \
     --table-mappings {{file://table-mappings.json}}
@@ -540,16 +526,14 @@ Output:
 ```
 {
     "ReplicationTask": {
-        "ReplicationTaskIdentifier": "moveit2",
-        "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "ReplicationTaskIdentifier": "movedata",
+        "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "MigrationType": "full-load",
-        "TableMappings": ...output omitted... ,
-        "ReplicationTaskSettings": ...output omitted... ,
         "Status": "creating",
         "ReplicationTaskCreationDate": 1590524772.505,
-        "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+        "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
     }
 }
 ```
@@ -567,16 +551,16 @@ The following `delete-connection` example disassociates an endpoint from a repli
 
 ```
 aws dms delete-connection \
-    --endpoint-arn {{arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}} \
-    --replication-instance-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
+    --endpoint-arn {{arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}} \
+    --replication-instance-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
 ```
 Output:
 
 ```
 {
     "Connection": {
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
         "Status": "deleting",
         "EndpointIdentifier": "src-database-1",
         "ReplicationInstanceIdentifier": "my-repl-instance"
@@ -597,7 +581,7 @@ The following `delete-data-provider` example deletes a data provider identified 
 
 ```
 aws dms delete-data-provider \
-    --data-provider-identifier {{arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --data-provider-identifier {{arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -605,17 +589,17 @@ Output:
 {
     "DataProvider": {
         "DataProviderName": "example-data-provider",
-        "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "DataProviderCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "Description": "Example data provider for documentation",
         "Engine": "sqlserver",
         "Settings": {
             "MicrosoftSqlServerSettings": {
-                "ServerName": "example-source-server.us-east-1.rds.amazonaws.com",
+                "ServerName": "example-source-server.us-west-2.rds.amazonaws.com",
                 "Port": 1433,
                 "DatabaseName": "ExampleDatabase",
                 "SslMode": "verify-full",
-                "CertificateArn": "arn:aws:dms:us-east-1:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "CertificateArn": "arn:aws:dms:us-west-2:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         }
     }
@@ -635,7 +619,7 @@ The following `delete-endpoint` example deletes an endpoint.
 
 ```
 aws dms delete-endpoint \
-    --endpoint-arn {{arn:aws:dms:us-east-1:123456789012:endpoint:OUJJVXO4XZ4CYTSEG5XGMN2R3Y}}
+    --endpoint-arn {{arn:aws:dms:us-west-2:123456789012:endpoint:OUJJVXO4XZ4CYTSEG5XGMN2R3Y}}
 ```
 Output:
 
@@ -646,9 +630,9 @@ Output:
         "EndpointType": "SOURCE",
         "EngineName": "s3",
         "EngineDisplayName": "Amazon S3",
-        "ExtraConnectionAttributes": "bucketFolder=sourcedata;bucketName=my-corp-data;compressionType=NONE;csvDelimiter=,;csvRowDelimiter=\\n;",
+        "ExtraConnectionAttributes": "bucketFolder=sourcedata;bucketName=amzn-s3-demo-bucket;compressionType=NONE;csvDelimiter=,;csvRowDelimiter=\\n;",
         "Status": "deleting",
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:OUJJVXO4XZ4CYTSEG5XGMN2R3Y",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:OUJJVXO4XZ4CYTSEG5XGMN2R3Y",
         "SslMode": "none",
         "ServiceAccessRoleArn": "arn:aws:iam::123456789012:role/my-s3-access-role",
         "S3Settings": {
@@ -656,7 +640,7 @@ Output:
             "CsvRowDelimiter": "\\n",
             "CsvDelimiter": ",",
             "BucketFolder": "sourcedata",
-            "BucketName": "my-corp-data",
+            "BucketName": "amzn-s3-demo-bucket",
             "CompressionType": "NONE",
             "EnableStatistics": true
         }
@@ -686,7 +670,7 @@ Output:
     "EventSubscription": {
         "CustomerAwsId": "123456789012",
         "CustSubscriptionId": "my-dms-events",
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:my-sns-topic",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:my-sns-topic",
         "Status": "deleting",
         "SubscriptionCreationTime": "2020-05-21 21:58:38.598",
         "Enabled": true
@@ -707,15 +691,15 @@ The following `delete-instance-profile` example deletes an instance profile iden
 
 ```
 aws dms delete-instance-profile \
-    --instance-profile-identifier {{arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --instance-profile-identifier {{arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
 ```
 {
     "InstanceProfile": {
-        "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
-        "KmsKeyArn": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "KmsKeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "PubliclyAccessible": false,
         "NetworkType": "IPV4",
         "InstanceProfileName": "example-instance-profile",
@@ -742,7 +726,7 @@ The following `delete-migration-project` example deletes a migration project ide
 
 ```
 aws dms delete-migration-project \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -750,25 +734,25 @@ Output:
 {
     "MigrationProject": {
         "MigrationProjectName": "example-migration-project",
-        "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "MigrationProjectCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "SourceDataProviderDescriptors": [
             {
-                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-source-secret-A1B2C3",
+                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-source-secret-A1B2C3",
                 "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                 "DataProviderName": "example-data-provider",
-                "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         ],
         "TargetDataProviderDescriptors": [
             {
-                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-target-secret-A1B2C3",
+                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-target-secret-A1B2C3",
                 "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                 "DataProviderName": "example-data-provider",
-                "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         ],
-        "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "InstanceProfileName": "example-instance-profile",
         "TransformationRules": "{\"rules\":[{\"rule-type\":\"transformation\",\"rule-id\":\"1\",\"rule-name\":\"1\",\"rule-target\":\"schema\",\"rule-action\":\"rename\",\"object-locator\":{\"schema-name\":\"ExampleSchema\"},\"value\":\"TargetSchema\"}]}",
         "Description": "Example migration project for documentation",
@@ -793,7 +777,7 @@ The following `delete-replication-instance` example deletes a replication instan
 
 ```
 aws dms delete-replication-instance \
-    --replication-instance-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
+    --replication-instance-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
 ```
 Output:
 
@@ -811,7 +795,7 @@ Output:
                 "Status": "active"
             }
         ],
-        "AvailabilityZone": "us-east-1e",
+        "AvailabilityZone": "us-west-2d",
         "ReplicationSubnetGroup": {
             "ReplicationSubnetGroupIdentifier": "default",
             "ReplicationSubnetGroupDescription": "default",
@@ -821,42 +805,28 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-da327bf6",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1a"
-                    },
-                    "SubnetStatus": "Active"
-                },
-                {
-                    "SubnetIdentifier": "subnet-42599426",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-east-1d"
+                        "Name": "us-west-2a"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-bac383e0",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1c"
-                    },
-                    "SubnetStatus": "Active"
-                },
-                {
-                    "SubnetIdentifier": "subnet-6746046b",
-                    "SubnetAvailabilityZone": {
-                        "Name": "us-east-1f"
+                        "Name": "us-west-2c"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-d7c825e8",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1e"
+                        "Name": "us-west-2d"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-cbfff283",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1b"
+                        "Name": "us-west-2b"
                     },
                     "SubnetStatus": "Active"
                 }
@@ -867,8 +837,8 @@ Output:
         "MultiAZ": true,
         "EngineVersion": "3.3.2",
         "AutoMinorVersionUpgrade": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/f7bc0f8e-1a3a-4ace-9faa-e8494fa3921a",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "ReplicationInstancePublicIpAddress": "54.225.120.92",
         "ReplicationInstancePrivateIpAddress": "172.31.30.121",
         "ReplicationInstancePublicIpAddresses": [
@@ -880,7 +850,7 @@ Output:
             "172.31.75.90"
         ],
         "PubliclyAccessible": true,
-        "SecondaryAvailabilityZone": "us-east-1b"
+        "SecondaryAvailabilityZone": "us-west-2b"
     }
 }
 ```
@@ -898,13 +868,9 @@ The following `delete-replication-subnet-group` example deletes a subnet group.
 
 ```
 aws dms delete-replication-subnet-group \
---replication-subnet-group-identifier {{my-subnet-group}}
+    --replication-subnet-group-identifier {{my-subnet-group}}
 ```
-Output:
-
-```
-(none)
-```
+This command produces no output.
 For more information, see [Setting Up a Network for a Replication Instance](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationInstance.VPC.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DeleteReplicationSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/delete-replication-subnet-group.html) in *AWS CLI Command Reference*.
 
@@ -919,7 +885,7 @@ The following `delete-replication-task` example deletes a replication task.
 
 ```
 aws dms delete-replication-task \
-    --replication-task-arn {{arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}}
+    --replication-task-arn {{arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}}
 ```
 Output:
 
@@ -927,17 +893,15 @@ Output:
 {
     "ReplicationTask": {
         "ReplicationTaskIdentifier": "moveit2",
-        "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "MigrationType": "full-load",
-        "TableMappings": ...output omitted...,
-        "ReplicationTaskSettings": ...output omitted...,
         "Status": "deleting",
         "StopReason": "Stop Reason FULL_LOAD_ONLY_FINISHED",
         "ReplicationTaskCreationDate": 1590524772.505,
         "ReplicationTaskStartDate": 1590789988.677,
-        "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+        "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
     }
 }
 ```
@@ -970,14 +934,12 @@ Output:
             "AccountQuotaName": "AllocatedStorage",
             "Used": 5,
             "Max": 10000
-        },
-
-        ...remaining output omitted...
-
+        }
     ],
     "UniqueAccountIdentifier": "cqahfbfy5xee"
 }
 ```
+For more information, see [Quotas for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Limits.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DescribeAccountAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/describe-account-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-certificates`
@@ -1001,14 +963,11 @@ Output:
             "CertificateIdentifier": "my-cert",
             "CertificateCreationDate": 1543259542.506,
             "CertificatePem": "-----BEGIN CERTIFICATE-----\nMIID9DCCAtygAwIBAgIBQjANBgkqhkiG9w0BAQ ...U"
-
-            ... remaining output omittted ...
-
         }
     ]
 }
 ```
-For more information, see [Using SSL](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.html#CHAP_Security.SSL) in the *AWS Database Migration Service User Guide*.
+For more information, see [Using SSL](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Security.SSL.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DescribeCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/describe-certificates.html) in *AWS CLI Command Reference*.
 
 ### `describe-connections`
@@ -1031,9 +990,9 @@ Output:
         {
             "Status": "successful",
             "ReplicationInstanceIdentifier": "test",
-            "EndpointArn": "arn:aws:dms:us-east-arn:aws:dms:us-east-1:123456789012:endpoint:ZW5UAN6P4E77EC7YWHK4RZZ3BE",
+            "EndpointArn": "arn:aws:dms:us-east-arn:aws:dms:us-west-2:123456789012:endpoint:ZW5UAN6P4E77EC7YWHK4RZZ3BE",
             "EndpointIdentifier": "testsrc1",
-            "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:6UTDJGBOUS3VI3SUWA66XFJCJQ"
+            "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:6UTDJGBOUS3VI3SUWA66XFJCJQ"
         }
     ]
 }
@@ -1052,13 +1011,13 @@ The following `describe-conversion-configuration` example retrieves the conversi
 
 ```
 aws dms describe-conversion-configuration \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
 ```
 {
-    "MigrationProjectIdentifier": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+    "MigrationProjectIdentifier": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
     "ConversionConfiguration": "{\"Common project settings\":{\"ShowSeverityLevelInSql\":\"CRITICAL\",\"EnableGenAiConversion\":false},\"MSSQL_TO_AURORA_POSTGRESQL\":{\"ConvertProceduresToFunction\":true,\"UniqueIndexGeneration\":true,\"CaseSensitivityNames\":false},\"Conversion version\":{\"MSSQL_TO_AURORA_POSTGRESQL_target_engine_version\":\"15\"}}"
 }
 ```
@@ -1076,7 +1035,7 @@ The following `describe-data-providers` example retrieves the details of a data 
 
 ```
 aws dms describe-data-providers \
-    --filters {{Name=data-provider-identifier,Values=arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --filters {{Name=data-provider-identifier,Values=arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -1085,17 +1044,17 @@ Output:
     "DataProviders": [
         {
             "DataProviderName": "example-data-provider",
-            "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "DataProviderCreationTime": "2026-01-09T12:30:00.000000+00:00",
             "Description": "Example data provider for documentation",
             "Engine": "sqlserver",
             "Settings": {
                 "MicrosoftSqlServerSettings": {
-                    "ServerName": "example-source-server.us-east-1.rds.amazonaws.com",
+                    "ServerName": "example-source-server.us-west-2.rds.amazonaws.com",
                     "Port": 1433,
                     "DatabaseName": "ExampleDatabase",
                     "SslMode": "verify-full",
-                    "CertificateArn": "arn:aws:dms:us-east-1:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                    "CertificateArn": "arn:aws:dms:us-west-2:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
                 }
             }
         }
@@ -1138,7 +1097,7 @@ Output:
     ]
 }
 ```
-For more information, see Working with AWS DMS Endpoints <https://docs.aws.amazon.com/dms/latest/userguide/CHAP\_Endpoints.html>`\_\_ in the *AWS Database Migration Service User Guide*.
+For more information, see [Working with AWS DMS endpoints](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Endpoints.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DescribeEndpointTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/describe-endpoint-types.html) in *AWS CLI Command Reference*.
 
 ### `describe-endpoints`
@@ -1161,10 +1120,10 @@ Output:
         {
             "Username": "dms",
             "Status": "active",
-            "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:SF2WOFLWYWKVEOHID2EKLP3SJI",
+            "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:SF2WOFLWYWKVEOHID2EKLP3SJI",
             "ServerName": "ec2-52-32-48-61.us-west-2.compute.amazonaws.com",
             "EndpointType": "SOURCE",
-            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/94d5c4e7-4e4c-44be-b58a-c8da7adf57cd",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "DatabaseName": "test",
             "EngineName": "mysql",
             "EndpointIdentifier": "pri100",
@@ -1173,10 +1132,10 @@ Output:
         {
             "Username": "admin",
             "Status": "active",
-            "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:TJJZCIH3CJ24TJRU4VC32WEWFR",
+            "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:TJJZCIH3CJ24TJRU4VC32WEWFR",
             "ServerName": "test.example.com",
             "EndpointType": "SOURCE",
-            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/2431021b-1cf2-a2d4-77b2-59a9e4bce323",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "DatabaseName": "EMPL",
             "EngineName": "oracle",
             "EndpointIdentifier": "test",
@@ -1253,7 +1212,7 @@ Output:
         {
             "CustomerAwsId": "123456789012",
             "CustSubscriptionId": "my-dms-events",
-            "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:my-sns-topic",
+            "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:my-sns-topic",
             "Status": "deleting",
             "SubscriptionCreationTime": "2020-05-21 22:28:51.924",
             "Enabled": true
@@ -1306,7 +1265,7 @@ The following `describe-extension-pack-associations` example retrieves the statu
 
 ```
 aws dms describe-extension-pack-associations \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1317,12 +1276,12 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Progress": {
                 "ProgressPercent": 50.0,
                 "ProgressStep": "IN_PROGRESS"
@@ -1331,7 +1290,7 @@ Output:
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "The database user in your target secret does not have sufficient privileges. Grant the required privileges and try again."
@@ -1355,7 +1314,7 @@ The following `describe-instance-profiles` example retrieves the details of an i
 
 ```
 aws dms describe-instance-profiles \
-    --filters {{Name=instance-profile-identifier,Values=arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --filters {{Name=instance-profile-identifier,Values=arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -1363,8 +1322,8 @@ Output:
 {
     "InstanceProfiles": [
         {
-            "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
-            "KmsKeyArn": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "KmsKeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "PubliclyAccessible": false,
             "NetworkType": "IPV4",
             "InstanceProfileName": "example-instance-profile",
@@ -1392,7 +1351,7 @@ The following `describe-metadata-model-assessments` example retrieves the status
 
 ```
 aws dms describe-metadata-model-assessments \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1403,12 +1362,12 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Progress": {
                 "ProgressPercent": 50.0,
                 "TotalObjects": 100,
@@ -1423,7 +1382,7 @@ Output:
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "No objects were found according to the specified selection rules. Please review your selection rules and try again."
@@ -1447,8 +1406,8 @@ The following `describe-metadata-model-children` example retrieves the child met
 
 ```
 aws dms describe-metadata-model-children \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"}, "rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"}, "rule-action": "explicit"}]}}}' \
     --origin {{SOURCE}}
 ```
 Output:
@@ -1458,19 +1417,19 @@ Output:
     "MetadataModelChildren": [
         {
             "MetadataModelName": "Tables",
-            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"1\", \"rule-name\": \"1\", \"object-locator\": {\"server-name\": \"example-source-server.us-east-1.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Tables\"}, \"rule-action\": \"explicit\"}]}"
+            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"1\", \"rule-name\": \"1\", \"object-locator\": {\"server-name\": \"example-source-server.us-west-2.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Tables\"}, \"rule-action\": \"explicit\"}]}"
         },
         {
             "MetadataModelName": "Views",
-            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"2\", \"rule-name\": \"2\", \"object-locator\": {\"server-name\": \"example-source-server.us-east-1.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Views\"}, \"rule-action\": \"explicit\"}]}"
+            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"2\", \"rule-name\": \"2\", \"object-locator\": {\"server-name\": \"example-source-server.us-west-2.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Views\"}, \"rule-action\": \"explicit\"}]}"
         },
         {
             "MetadataModelName": "Functions",
-            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"3\", \"rule-name\": \"3\", \"object-locator\": {\"server-name\": \"example-source-server.us-east-1.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Functions\"}, \"rule-action\": \"explicit\"}]}"
+            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"3\", \"rule-name\": \"3\", \"object-locator\": {\"server-name\": \"example-source-server.us-west-2.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Functions\"}, \"rule-action\": \"explicit\"}]}"
         },
         {
             "MetadataModelName": "Sequences",
-            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"4\", \"rule-name\": \"4\", \"object-locator\": {\"server-name\": \"example-source-server.us-east-1.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Sequences\"}, \"rule-action\": \"explicit\"}]}"
+            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"4\", \"rule-name\": \"4\", \"object-locator\": {\"server-name\": \"example-source-server.us-west-2.rds.amazonaws.com\", \"schema-name\": \"ExampleSchema\", \"category-name\": \"Sequences\"}, \"rule-action\": \"explicit\"}]}"
         }
     ]
 }
@@ -1489,7 +1448,7 @@ The following `describe-metadata-model-conversions` example retrieves the status
 
 ```
 aws dms describe-metadata-model-conversions \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1500,12 +1459,12 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Progress": {
                 "ProgressPercent": 50.0,
                 "TotalObjects": 100,
@@ -1520,7 +1479,7 @@ Output:
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "No objects were found according to the specified selection rules. Please review your selection rules and try again."
@@ -1544,7 +1503,7 @@ The following `describe-metadata-model-creations` example retrieves the status o
 
 ```
 aws dms describe-metadata-model-creations \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1555,17 +1514,17 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "No objects were found according to the specified selection rules. Please review your selection rules and try again."
@@ -1589,7 +1548,7 @@ The following `describe-metadata-model-exports-as-script` example retrieves the 
 
 ```
 aws dms describe-metadata-model-exports-as-script \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1600,16 +1559,16 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "ExportSqlDetails": {
                 "S3ObjectKey": "s3://amzn-s3-demo-bucket/example-migration-project/ExampleScript.zip",
-                "ObjectURL": "https://amzn-s3-demo-bucket.s3.us-east-1.amazonaws.com/example-migration-project/ExampleScript.zip"
+                "ObjectURL": "https://amzn-s3-demo-bucket.s3.us-west-2.amazonaws.com/example-migration-project/ExampleScript.zip"
             }
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Progress": {
                 "ProgressPercent": 50.0,
                 "TotalObjects": 100,
@@ -1622,7 +1581,7 @@ Output:
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "No objects were found according to the specified selection rules. Please review your selection rules and try again."
@@ -1646,7 +1605,7 @@ The following `describe-metadata-model-exports-to-target` example retrieves the 
 
 ```
 aws dms describe-metadata-model-exports-to-target \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1657,12 +1616,12 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Progress": {
                 "ProgressPercent": 50.0,
                 "TotalObjects": 100,
@@ -1675,7 +1634,7 @@ Output:
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "No objects were found according to the specified selection rules. Please review your selection rules and try again."
@@ -1699,7 +1658,7 @@ The following `describe-metadata-model-imports` example retrieves the status of 
 
 ```
 aws dms describe-metadata-model-imports \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --filters {{Name=request-id,Values=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,a1b2c3d4-5678-90ab-cdef-EXAMPLE22222,a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
@@ -1710,12 +1669,12 @@ Output:
         {
             "Status": "SUCCESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
         },
         {
             "Status": "IN_PROGRESS",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Progress": {
                 "ProgressPercent": 50.0,
                 "TotalObjects": 100,
@@ -1728,7 +1687,7 @@ Output:
         {
             "Status": "FAILED",
             "RequestIdentifier": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "Error": {
                 "defaultErrorDetails": {
                     "Message": "No objects were found according to the specified selection rules. Please review your selection rules and try again."
@@ -1752,8 +1711,8 @@ The following `describe-metadata-model` example retrieves detailed information a
 
 ```
 aws dms describe-metadata-model \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema", "table-name": "ExampleTable"}, "rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema", "table-name": "ExampleTable"}, "rule-action": "explicit"}]}}}' \
     --origin {{SOURCE}}
 ```
 Output:
@@ -1765,7 +1724,7 @@ Output:
     "TargetMetadataModels": [
         {
             "MetadataModelName": "exampletable",
-            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"1\", \"rule-name\": \"1\", \"object-locator\": {\"server-name\": \"example-target-server.us-east-1.rds.amazonaws.com\", \"schema-name\": \"exampleschema\", \"table-name\": \"exampletable\"}, \"rule-action\": \"explicit\"}]}"
+            "SelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"1\", \"rule-name\": \"1\", \"object-locator\": {\"server-name\": \"example-target-server.us-west-2.rds.amazonaws.com\", \"schema-name\": \"exampleschema\", \"table-name\": \"exampletable\"}, \"rule-action\": \"explicit\"}]}"
         }
     ],
     "Definition": "CREATE TABLE ExampleTable (ExampleColumn INTEGER NOT NULL);"
@@ -1785,7 +1744,7 @@ The following `describe-migration-projects` example retrieves the details of a m
 
 ```
 aws dms describe-migration-projects \
-    --filters {{Name=migration-project-identifier,Values=arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --filters {{Name=migration-project-identifier,Values=arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -1794,25 +1753,25 @@ Output:
     "MigrationProjects": [
         {
             "MigrationProjectName": "example-migration-project",
-            "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "MigrationProjectCreationTime": "2026-01-09T12:30:00.000000+00:00",
             "SourceDataProviderDescriptors": [
                 {
-                    "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-source-secret-A1B2C3",
+                    "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-source-secret-A1B2C3",
                     "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                     "DataProviderName": "example-data-provider",
-                    "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                    "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
                 }
             ],
             "TargetDataProviderDescriptors": [
                 {
-                    "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-target-secret-A1B2C3",
+                    "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-target-secret-A1B2C3",
                     "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                     "DataProviderName": "example-data-provider",
-                    "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                    "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
                 }
             ],
-            "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+            "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
             "InstanceProfileName": "example-instance-profile",
             "TransformationRules": "{\"rules\":[{\"rule-type\":\"transformation\",\"rule-id\":\"1\",\"rule-name\":\"1\",\"rule-target\":\"schema\",\"rule-action\":\"rename\",\"object-locator\":{\"schema-name\":\"ExampleSchema\"},\"value\":\"TargetSchema\"}]}",
             "Description": "Example migration project for documentation",
@@ -1853,12 +1812,10 @@ Output:
             "DefaultAllocatedStorage": 100,
             "IncludedAllocatedStorage": 100,
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1c",
-                "us-east-1d",
-                "us-east-1e",
-                "us-east-1f"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c",
+                "us-west-2d"
             ]
         },
         {
@@ -1870,18 +1827,14 @@ Output:
             "DefaultAllocatedStorage": 100,
             "IncludedAllocatedStorage": 100,
             "AvailabilityZones": [
-                "us-east-1a",
-                "us-east-1b",
-                "us-east-1c",
-                "us-east-1d",
-                "us-east-1e",
-                "us-east-1f"
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c",
+                "us-west-2d"
             ]
-        },
-
-        ...remaining output omitted...
-
-    }
+        }
+    ]
+}
 ```
 For more information, see [Working with an AWS DMS Replication Instance](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationInstance.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DescribeOrderableReplicationInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/describe-orderable-replication-instances.html) in *AWS CLI Command Reference*.
@@ -1897,20 +1850,21 @@ The following `describe-refresh-schemas-status` example returns the status of a 
 
 ```
 aws dms describe-refresh-schemas-status \
-    --endpoint-arn {{arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}}
+    --endpoint-arn {{arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}}
 ```
 Output:
 
 ```
 {
     "RefreshSchemasStatus": {
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "Status": "successful",
         "LastRefreshDate": 1590786544.605
     }
 }
 ```
+For more information, see [Working with AWS DMS endpoints](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Endpoints.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DescribeRefreshSchemasStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/describe-refresh-schemas-status.html) in *AWS CLI Command Reference*.
 
 ### `describe-replication-instances`
@@ -1942,7 +1896,7 @@ Output:
                     "Status": "active"
                 }
             ],
-            "AvailabilityZone": "us-east-1e",
+            "AvailabilityZone": "us-west-2d",
             "ReplicationSubnetGroup": {
                 "ReplicationSubnetGroupIdentifier": "default",
                 "ReplicationSubnetGroupDescription": "default",
@@ -1952,42 +1906,28 @@ Output:
                     {
                         "SubnetIdentifier": "subnet-da327bf6",
                         "SubnetAvailabilityZone": {
-                            "Name": "us-east-1a"
-                        },
-                        "SubnetStatus": "Active"
-                    },
-                    {
-                        "SubnetIdentifier": "subnet-42599426",
-                        "SubnetAvailabilityZone": {
-                            "Name": "us-east-1d"
+                            "Name": "us-west-2a"
                         },
                         "SubnetStatus": "Active"
                     },
                     {
                         "SubnetIdentifier": "subnet-bac383e0",
                         "SubnetAvailabilityZone": {
-                            "Name": "us-east-1c"
-                        },
-                        "SubnetStatus": "Active"
-                    },
-                    {
-                        "SubnetIdentifier": "subnet-6746046b",
-                        "SubnetAvailabilityZone": {
-                            "Name": "us-east-1f"
+                            "Name": "us-west-2c"
                         },
                         "SubnetStatus": "Active"
                     },
                     {
                         "SubnetIdentifier": "subnet-d7c825e8",
                         "SubnetAvailabilityZone": {
-                            "Name": "us-east-1e"
+                            "Name": "us-west-2d"
                         },
                         "SubnetStatus": "Active"
                     },
                     {
                         "SubnetIdentifier": "subnet-cbfff283",
                         "SubnetAvailabilityZone": {
-                            "Name": "us-east-1b"
+                            "Name": "us-west-2b"
                         },
                         "SubnetStatus": "Active"
                     }
@@ -2000,8 +1940,8 @@ Output:
             "MultiAZ": false,
             "EngineVersion": "3.3.2",
             "AutoMinorVersionUpgrade": true,
-            "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/f7bc0f8e-1a3a-4ace-9faa-e8494fa3921a",
-            "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+            "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
             "ReplicationInstancePublicIpAddress": "3.230.18.248",
             "ReplicationInstancePrivateIpAddress": "172.31.75.90",
             "ReplicationInstancePublicIpAddresses": [
@@ -2046,21 +1986,21 @@ Output:
                 {
                     "SubnetIdentifier": "subnet-da327bf6",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1a"
+                        "Name": "us-west-2a"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-bac383e0",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1c"
+                        "Name": "us-west-2c"
                     },
                     "SubnetStatus": "Active"
                 },
                 {
                     "SubnetIdentifier": "subnet-d7c825e8",
                     "SubnetAvailabilityZone": {
-                        "Name": "us-east-1e"
+                        "Name": "us-west-2d"
                     },
                     "SubnetStatus": "Active"
                 }
@@ -2091,7 +2031,7 @@ Output:
     "ReplicationTaskAssessmentResults": [
         {
             "ReplicationTaskIdentifier": "moveit2",
-            "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII",
+            "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII",
             "ReplicationTaskLastAssessmentDate": 1590790230.0,
             "AssessmentStatus": "No issues found",
             "AssessmentResultsFile": "moveit2/2020-05-29-22-10"
@@ -2121,17 +2061,15 @@ Output:
     "ReplicationTasks": [
         {
             "ReplicationTaskIdentifier": "moveit2",
-            "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-            "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-            "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+            "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+            "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+            "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
             "MigrationType": "full-load",
-            "TableMappings": ...output omitted... ,
-            "ReplicationTaskSettings": ...output omitted... ,
             "Status": "stopped",
             "StopReason": "Stop Reason FULL_LOAD_ONLY_FINISHED",
             "ReplicationTaskCreationDate": 1590524772.505,
             "ReplicationTaskStartDate": 1590619805.212,
-            "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII",
+            "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII",
             "ReplicationTaskStats": {
                 "FullLoadProgressPercent": 100,
                 "ElapsedTimeMillis": 0,
@@ -2161,7 +2099,7 @@ The following `describe-schemas` example lists the available tables at an endpoi
 
 ```
 aws dms describe-schemas \
-    --endpoint-arn {{"arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA"}}
+    --endpoint-arn {{"arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA"}}
 ```
 Output:
 
@@ -2172,7 +2110,7 @@ Output:
     ]
 }
 ```
-For more information, see [This is the topic title](https://link.to.the/topic/page) in the *AWS Database Migration Service User Guide*.
+For more information, see [Working with AWS DMS endpoints](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Endpoints.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [DescribeSchemas](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/describe-schemas.html) in *AWS CLI Command Reference*.
 
 ### `export-metadata-model-assessment`
@@ -2186,8 +2124,8 @@ The following `export-metadata-model-assessment` example exports a conversion as
 
 ```
 aws dms export-metadata-model-assessment \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"}, "rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"}, "rule-action": "explicit"}]}}}' \
     --file-name {{example-assessment-report}} \
     --assessment-report-types {{pdf}} {{csv}}
 ```
@@ -2219,14 +2157,14 @@ The following `get-target-selection-rules` example converts source selection rul
 
 ```
 aws dms get-target-selection-rules \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "database-name": "ExampleDatabase", "schema-name": "ExampleSchema", "table-name": "ExampleTable"}, "rule-action": "explicit"}]}}}'
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "database-name": "ExampleDatabase", "schema-name": "ExampleSchema", "table-name": "ExampleTable"}, "rule-action": "explicit"}]}}}'
 ```
 Output:
 
 ```
 {
-    "TargetSelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"1\", \"rule-name\": \"1\", \"object-locator\": {\"server-name\": \"example-target-server.us-east-1.rds.amazonaws.com\", \"schema-name\": \"exampledatabase_exampleschema\", \"table-name\": \"exampletable\"}, \"rule-action\": \"explicit\"}]}"
+    "TargetSelectionRules": "{\"rules\": [{\"rule-type\": \"selection\", \"rule-id\": \"1\", \"rule-name\": \"1\", \"object-locator\": {\"server-name\": \"example-target-server.us-west-2.rds.amazonaws.com\", \"schema-name\": \"exampledatabase_exampleschema\", \"table-name\": \"exampletable\"}, \"rule-action\": \"explicit\"}]}"
 }
 ```
 For more information, see [Using selection rules](https://docs.aws.amazon.com/dms/latest/userguide/sc-selection-rules.html) in the *AWS Database Migration Service User Guide*.
@@ -2243,7 +2181,7 @@ The following `list-tags-for-resource` example lists the tags for a replication 
 
 ```
 aws dms list-tags-for-resource \
-    --resource-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
+    --resource-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
 ```
 Output:
 
@@ -2275,14 +2213,14 @@ The following `modify-conversion-configuration` example enables generative AI as
 
 ```
 aws dms modify-conversion-configuration \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --conversion-configuration '{{{"Common project settings":{"EnableGenAiConversion":true},"MSSQL_TO_AURORA_POSTGRESQL":{"ConvertProceduresToFunction":false}}}}'
 ```
 Output:
 
 ```
 {
-    "MigrationProjectIdentifier": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
+    "MigrationProjectIdentifier": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS"
 }
 ```
 For more information, see [Specifying schema conversion settings](https://docs.aws.amazon.com/dms/latest/userguide/schema-conversion-settings.html) in the *AWS Database Migration Service User Guide*.
@@ -2299,10 +2237,10 @@ The following `modify-data-provider` example updates the description and server 
 
 ```
 aws dms modify-data-provider \
-    --data-provider-identifier {{arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --data-provider-identifier {{arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --description {{"Updated data provider description"}} \
     --engine {{sqlserver}} \
-    --settings {{MicrosoftSqlServerSettings={ServerName=new-source-server.us-east-1.rds.amazonaws.com}}}
+    --settings {{MicrosoftSqlServerSettings={ServerName=new-source-server.us-west-2.rds.amazonaws.com}}}
 ```
 Output:
 
@@ -2310,17 +2248,17 @@ Output:
 {
     "DataProvider": {
         "DataProviderName": "example-data-provider",
-        "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "DataProviderCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "Description": "Updated data provider description",
         "Engine": "sqlserver",
         "Settings": {
             "MicrosoftSqlServerSettings": {
-                "ServerName": "new-source-server.us-east-1.rds.amazonaws.com",
+                "ServerName": "new-source-server.us-west-2.rds.amazonaws.com",
                 "Port": 1433,
                 "DatabaseName": "ExampleDatabase",
                 "SslMode": "verify-full",
-                "CertificateArn": "arn:aws:dms:us-east-1:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "CertificateArn": "arn:aws:dms:us-west-2:123456789012:cert:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         }
     }
@@ -2340,7 +2278,7 @@ The following `modify-endpoint` example adds an extra connection attribute to an
 
 ```
 aws dms modify-endpoint \
-    --endpoint-arn {{"arn:aws:dms:us-east-1:123456789012:endpoint:GUVAFG34EECUOJ6QVZ56DAHT3U"}} \
+    --endpoint-arn {{"arn:aws:dms:us-west-2:123456789012:endpoint:GUVAFG34EECUOJ6QVZ56DAHT3U"}} \
     --extra-connection-attributes {{"compressionType=GZIP"}}
 ```
 Output:
@@ -2354,7 +2292,7 @@ Output:
         "EngineDisplayName": "Amazon S3",
         "ExtraConnectionAttributes": "compressionType=GZIP;csvDelimiter=,;csvRowDelimiter=\\n;",
         "Status": "active",
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:GUVAFG34EECUOJ6QVZ56DAHT3U",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:GUVAFG34EECUOJ6QVZ56DAHT3U",
         "SslMode": "none",
         "ServiceAccessRoleArn": "arn:aws:iam::123456789012:role/my-s3-access-role",
         "S3Settings": {
@@ -2369,7 +2307,7 @@ Output:
     }
 }
 ```
-For more information, see Working with AWS DMS Endpoints <https://docs.aws.amazon.com/dms/latest/userguide/CHAP\_Endpoints.html>`\_\_ in the *AWS Database Migration Service User Guide*.
+For more information, see [Working with AWS DMS endpoints](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Endpoints.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [ModifyEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/modify-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `modify-event-subscription`
@@ -2393,7 +2331,7 @@ Output:
     "EventSubscription": {
         "CustomerAwsId": "123456789012",
         "CustSubscriptionId": "my-dms-events",
-        "SnsTopicArn": "arn:aws:sns:us-east-1:123456789012:my-sns-topic",
+        "SnsTopicArn": "arn:aws:sns:us-west-2:123456789012:my-sns-topic",
         "Status": "modifying",
         "SubscriptionCreationTime": "2020-05-29 17:04:40.262",
         "SourceType": "replication-task",
@@ -2415,7 +2353,7 @@ The following `modify-instance-profile` example updates the description and netw
 
 ```
 aws dms modify-instance-profile \
-    --instance-profile-identifier {{arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --instance-profile-identifier {{arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --description {{"Updated instance profile description"}} \
     --network-type {{DUAL}}
 ```
@@ -2424,8 +2362,8 @@ Output:
 ```
 {
     "InstanceProfile": {
-        "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
-        "KmsKeyArn": "arn:aws:kms:us-east-1:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "KmsKeyArn": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "PubliclyAccessible": false,
         "NetworkType": "DUAL",
         "InstanceProfileName": "example-instance-profile",
@@ -2452,9 +2390,9 @@ The following `modify-migration-project` example updates the source data provide
 
 ```
 aws dms modify-migration-project \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
     --description {{"Updated migration project description"}} \
-    --source-data-provider-descriptors {{DataProviderIdentifier=arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --source-data-provider-descriptors {{DataProviderIdentifier=arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -2462,25 +2400,25 @@ Output:
 {
     "MigrationProject": {
         "MigrationProjectName": "example-migration-project",
-        "MigrationProjectArn": "arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "MigrationProjectArn": "arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "MigrationProjectCreationTime": "2026-01-09T12:30:00.000000+00:00",
         "SourceDataProviderDescriptors": [
             {
-                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-source-secret-A1B2C3",
+                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-source-secret-A1B2C3",
                 "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                 "DataProviderName": "example-data-provider",
-                "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         ],
         "TargetDataProviderDescriptors": [
             {
-                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-east-1:123456789012:secret:example-target-secret-A1B2C3",
+                "SecretsManagerSecretId": "arn:aws:secretsmanager:us-west-2:123456789012:secret:example-target-secret-A1B2C3",
                 "SecretsManagerAccessRoleArn": "arn:aws:iam::123456789012:role/example-secrets-manager-role",
                 "DataProviderName": "example-data-provider",
-                "DataProviderArn": "arn:aws:dms:us-east-1:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
+                "DataProviderArn": "arn:aws:dms:us-west-2:123456789012:data-provider:EXAMPLEABCDEFGHIJKLMNOPQRS"
             }
         ],
-        "InstanceProfileArn": "arn:aws:dms:us-east-1:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
+        "InstanceProfileArn": "arn:aws:dms:us-west-2:123456789012:instance-profile:EXAMPLEABCDEFGHIJKLMNOPQRS",
         "InstanceProfileName": "example-instance-profile",
         "TransformationRules": "{\"rules\":[{\"rule-type\":\"transformation\",\"rule-id\":\"1\",\"rule-name\":\"1\",\"rule-target\":\"schema\",\"rule-action\":\"rename\",\"object-locator\":{\"schema-name\":\"ExampleSchema\"},\"value\":\"TargetSchema\"}]}",
         "Description": "Updated migration project description",
@@ -2505,8 +2443,8 @@ The following `modify-replication-instance` example modifies a replication insta
 
 ```
 aws dms modify-replication-instance \
-     --replication-instance-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
-     --multi-az
+    --replication-instance-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
+    --multi-az
 ```
 Output:
 
@@ -2518,19 +2456,14 @@ Output:
         "ReplicationInstanceStatus": "available",
         "AllocatedStorage": 5,
         "InstanceCreateTime": 1590011235.952,
-
-        ...output omitted...
-
         "PendingModifiedValues": {
             "MultiAZ": true
         },
         "MultiAZ": false,
         "EngineVersion": "3.3.2",
         "AutoMinorVersionUpgrade": true,
-        "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/f7bc0f8e-1a3a-4ace-9faa-e8494fa3921a",
-
-        ...output omitted...
-
+        "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE"
     }
 }
 ```
@@ -2564,14 +2497,14 @@ Output:
             {
                 "SubnetIdentifier": "subnet-da327bf6",
                 "SubnetAvailabilityZone": {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 "SubnetStatus": "Active"
             },
             {
                 "SubnetIdentifier": "subnet-bac383e0",
                 "SubnetAvailabilityZone": {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 "SubnetStatus": "Active"
             }
@@ -2593,7 +2526,7 @@ The following `modify-replication-task` example changes the table mappings for a
 
 ```
 aws dms modify-replication-task \
-    --replication-task-arn {{"arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"}} \
+    --replication-task-arn {{"arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"}} \
     --table-mappings {{file://table-mappings.json}}
 ```
 Contents of `table-mappings.json`:
@@ -2621,17 +2554,15 @@ Output:
 {
     "ReplicationTask": {
         "ReplicationTaskIdentifier": "moveit2",
-        "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "MigrationType": "full-load",
-        "TableMappings": ...output omitted...,
-        "ReplicationTaskSettings": ...output omitted...,
         "Status": "modifying",
         "StopReason": "Stop Reason FULL_LOAD_ONLY_FINISHED",
         "ReplicationTaskCreationDate": 1590524772.505,
         "ReplicationTaskStartDate": 1590789424.653,
-        "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+        "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
     }
 }
 ```
@@ -2649,7 +2580,7 @@ The following `reboot-replication-instance` example reboots a replication instan
 
 ```
 aws dms reboot-replication-instance \
-    --replication-instance-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
+    --replication-instance-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}}
 ```
 Output:
 
@@ -2661,7 +2592,7 @@ Output:
         "ReplicationInstanceStatus": "rebooting",
         "AllocatedStorage": 5,
         "InstanceCreateTime": 1590011235.952,
-    ... output omitted ...
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE"
     }
 }
 ```
@@ -2679,21 +2610,22 @@ The following `refresh-schemas` example requests that AWS DMS refresh the list o
 
 ```
 aws dms refresh-schemas \
-    --replication-instance-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
-    --endpoint-arn {{"arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA"}}
+    --replication-instance-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
+    --endpoint-arn {{"arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA"}}
 ```
 Output:
 
 ```
 {
     "RefreshSchemasStatus": {
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "Status": "refreshing",
         "LastRefreshDate": 1590019949.103
     }
 }
 ```
+For more information, see [Working with AWS DMS endpoints](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Endpoints.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [RefreshSchemas](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/refresh-schemas.html) in *AWS CLI Command Reference*.
 
 ### `reload-tables`
@@ -2707,16 +2639,17 @@ The following `reload-tables` example reloads the list of available tables at an
 
 ```
 aws dms reload-tables \
-    --replication-task-arn {{"arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"}} \
+    --replication-task-arn {{"arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"}} \
     --tables-to-reload {{"SchemaName=prodrep,TableName=ACCT_BAL"}}
 ```
 Output:
 
 ```
 {
-    "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+    "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
 }
 ```
+For more information, see [Reloading tables during a task](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.ReloadTables.html) in the *AWS Database Migration Service User Guide*.
 +  For API details, see [ReloadTables](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/reload-tables.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags-from-resource`
@@ -2730,7 +2663,7 @@ The following `remove-tags-from-resource` example removes tags from a replicatio
 
 ```
 aws dms remove-tags-from-resource \
-    --resource-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
+    --resource-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
     --tag-keys {{Environment}} {{Project}}
 ```
 This command produces no output.
@@ -2748,7 +2681,7 @@ The following `start-extension-pack-association` example queues the application 
 
 ```
 aws dms start-extension-pack-association \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}}
 ```
 Output:
 
@@ -2771,8 +2704,8 @@ The following `start-metadata-model-assessment` example queues an assessment of 
 
 ```
 aws dms start-metadata-model-assessment \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}'
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}'
 ```
 Output:
 
@@ -2795,8 +2728,8 @@ The following `start-metadata-model-conversion` example queues a conversion of a
 
 ```
 aws dms start-metadata-model-conversion \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}'
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}'
 ```
 Output:
 
@@ -2819,8 +2752,8 @@ The following `start-metadata-model-creation` example queues the creation of a m
 
 ```
 aws dms start-metadata-model-creation \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "database-name": "ExampleDatabase", "schema-name": "ExampleSchema"}, "rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection", "rule-id": "1", "rule-name": "1", "object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "database-name": "ExampleDatabase", "schema-name": "ExampleSchema"}, "rule-action": "explicit"}]}}}' \
     --metadata-model-name {{ExampleStatement}} \
     --properties StatementProperties={Definition="SELECT * FROM ExampleTable;"}
 ```
@@ -2845,8 +2778,8 @@ The following `start-metadata-model-export-as-script` example queues an export o
 
 ```
 aws dms start-metadata-model-export-as-script \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-target-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-target-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}' \
     --origin {{TARGET}} \
     --file-name {{ExampleScript}}
 ```
@@ -2871,8 +2804,8 @@ The following `start-metadata-model-export-to-target` example queues an export o
 
 ```
 aws dms start-metadata-model-export-to-target \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-target-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-target-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}' \
     --overwrite-extension-pack
 ```
 Output:
@@ -2896,8 +2829,8 @@ The following `start-metadata-model-import` example queues a metadata import for
 
 ```
 aws dms start-metadata-model-import \
-    --migration-project-identifier {{arn:aws:dms:us-east-1:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
-    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-source-server.us-east-1.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}' \
+    --migration-project-identifier {{arn:aws:dms:us-west-2:123456789012:migration-project:EXAMPLEABCDEFGHIJKLMNOPQRS}} \
+    --selection-rules '{{{"rules": [{"rule-type": "selection","rule-id": "1","rule-name": "1","object-locator": {"server-name": "example-source-server.us-west-2.rds.amazonaws.com", "schema-name": "ExampleSchema"},"rule-action": "explicit"}]}}}' \
     --origin {{SOURCE}} \
     --no-refresh
 ```
@@ -2922,7 +2855,7 @@ The following `start-replication-task-assessment` example starts a replication t
 
 ```
 aws dms start-replication-task-assessment \
-    --replication-task-arn {{arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}}
+    --replication-task-arn {{arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}}
 ```
 Output:
 
@@ -2930,17 +2863,15 @@ Output:
 {
     "ReplicationTask": {
         "ReplicationTaskIdentifier": "moveit2",
-        "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "MigrationType": "full-load",
-        "TableMappings": ...output omitted...,
-        "ReplicationTaskSettings": ...output omitted...,
         "Status": "testing",
         "StopReason": "Stop Reason FULL_LOAD_ONLY_FINISHED",
         "ReplicationTaskCreationDate": 1590524772.505,
         "ReplicationTaskStartDate": 1590789988.677,
-        "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+        "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
     }
 }
 ```
@@ -2954,11 +2885,11 @@ The following code example shows how to use `start-replication-task`.
 
 **AWS CLI**
 **To start a replication task**
-The following `command-name` example lists the available widgets in your AWS account.
+The following `start-replication-task` example starts the specified replication task with the `reload-target` start type.
 
 ```
 aws dms start-replication-task \
-    --replication-task-arn {{arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}} \
+    --replication-task-arn {{arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}} \
     --start-replication-task-type {{reload-target}}
 ```
 Output:
@@ -2967,16 +2898,14 @@ Output:
 {
     "ReplicationTask": {
         "ReplicationTaskIdentifier": "moveit2",
-        "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "MigrationType": "full-load",
-        "TableMappings": ...output omitted... ,
-        "ReplicationTaskSettings": ...output omitted... ,
         "Status": "starting",
         "ReplicationTaskCreationDate": 1590524772.505,
         "ReplicationTaskStartDate": 1590619805.212,
-        "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+        "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
     }
 }
 ```
@@ -2994,7 +2923,7 @@ The following `stop-replication-task` example stops a task.
 
 ```
 aws dms stop-replication-task \
-    --replication-task-arn {{arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}}
+    --replication-task-arn {{arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII}}
 ```
 Output:
 
@@ -3002,16 +2931,14 @@ Output:
 {
     "ReplicationTask": {
         "ReplicationTaskIdentifier": "moveit2",
-        "SourceEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
-        "TargetEndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "SourceEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "TargetEndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:EOM4SFKCZEYHZBFGAGZT3QEC5U",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
         "MigrationType": "full-load",
-        "TableMappings": ...output omitted...,
-        "ReplicationTaskSettings": ...output omitted...,
         "Status": "stopping",
         "ReplicationTaskCreationDate": 1590524772.505,
         "ReplicationTaskStartDate": 1590789424.653,
-        "ReplicationTaskArn": "arn:aws:dms:us-east-1:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
+        "ReplicationTaskArn": "arn:aws:dms:us-west-2:123456789012:task:K55IUCGBASJS5VHZJIINA45FII"
     }
 }
 ```
@@ -3029,16 +2956,16 @@ The following `test-connection` example tests whether an endpoint can be accesse
 
 ```
 aws dms test-connection \
-    --replication-instance-arn {{arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
-    --endpoint-arn {{arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}}
+    --replication-instance-arn {{arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE}} \
+    --endpoint-arn {{arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA}}
 ```
 Output:
 
 ```
 {
     "Connection": {
-        "ReplicationInstanceArn": "arn:aws:dms:us-east-1:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
-        "EndpointArn": "arn:aws:dms:us-east-1:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
+        "ReplicationInstanceArn": "arn:aws:dms:us-west-2:123456789012:rep:T3OM7OUB5NM2LCVZF7JPGJRNUE",
+        "EndpointArn": "arn:aws:dms:us-west-2:123456789012:endpoint:6GGI6YPWWGAYUVLKIB732KEVWA",
         "Status": "testing",
         "EndpointIdentifier": "src-database-1",
         "ReplicationInstanceIdentifier": "my-repl-instance"

@@ -18,7 +18,7 @@ The following `update-association` example updates an association with a new doc
 
 ```
 aws ssm update-association \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}} \
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --document-version {{"\$LATEST"}}
 ```
 Output:
@@ -35,7 +35,7 @@ Output:
             "DetailedStatus": "Creating"
         },
         "DocumentVersion": "$LATEST",
-        "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Targets": [
             {
                 "Key": "tag:Name",
@@ -55,7 +55,7 @@ The following `update-association` example updates the schedule expression for t
 
 ```
 aws ssm update-association \
-    --association-id {{"8dfe3659-4309-493a-8755-0123456789ab"}} \
+    --association-id {{"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --schedule-expression {{"cron(0 0 0/4 1/1 * ? *)"}}
 ```
 Output:
@@ -72,7 +72,7 @@ Output:
             "DetailedStatus": "Creating"
         },
         "DocumentVersion": "$DEFAULT",
-        "AssociationId": "8dfe3659-4309-493a-8755-0123456789ab",
+        "AssociationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Targets": [
             {
                 "Key": "aws:NoOpAutomationTag",

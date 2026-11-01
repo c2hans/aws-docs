@@ -14,33 +14,34 @@ The following code examples show how to use `DescribeLoadBalancerAttributes`.
 
 **AWS CLI**
 **To describe the attributes of a load balancer**
-This example describes the attributes of the specified load balancer.
-Command:
+The following `describe-load-balancer-attributes` example describes the attributes of the specified load balancer.
 
 ```
-aws elb describe-load-balancer-attributes --load-balancer-name {{my-load-balancer}}
+aws elb describe-load-balancer-attributes \
+    --load-balancer-name {{my-load-balancer}}
 ```
 Output:
 
 ```
 {
-  "LoadBalancerAttributes": {
-      "ConnectionDraining": {
-          "Enabled": false,
-          "Timeout": 300
-      },
-      "CrossZoneLoadBalancing": {
-          "Enabled": true
-      },
-      "ConnectionSettings": {
-          "IdleTimeout": 30
-      },
-      "AccessLog": {
-          "Enabled": false
+    "LoadBalancerAttributes": {
+        "ConnectionDraining": {
+            "Enabled": false,
+            "Timeout": 300
+        },
+        "CrossZoneLoadBalancing": {
+            "Enabled": true
+        },
+        "ConnectionSettings": {
+            "IdleTimeout": 30
+        },
+        "AccessLog": {
+            "Enabled": false
+        }
     }
-  }
 }
 ```
+For more information, see [Configure your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-configure-load-balancer.html) in the *Classic Load Balancers User Guide*.
 +  For API details, see [DescribeLoadBalancerAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/describe-load-balancer-attributes.html) in *AWS CLI Command Reference*.
 
 ------

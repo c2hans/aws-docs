@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## October 2026
 <a name="_october_2026"></a>
 
+### Runtime: Increased environment variable limit for V2 agents
+<a name="_runtime_increased_environment_variable_limit_for_v2_agents_2"></a>
+
+Amazon Bedrock AgentCore Runtime now supports up to 4 KB of environment variables for agents on platform version V2, the same limit as V1. Previously, V2 limited environment variables to 1.5 KB for direct code deployments and 2.5 KB for container agents.
+
+For more information, see [Resource allocation limits](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/bedrock-agentcore-limits.html#resource-allocation-limits) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ### Runtime: Scope access to a session or runtime
 <a name="_runtime_scope_access_to_a_session_or_runtime_2"></a>
 
@@ -56,6 +63,17 @@ The connector works with Standard and Express workflows. Long-running Standard w
 
 For more information, see [AWS Step Functions as Connector Target](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-step-functions.html) and [Add a Connector target with AWS Step Functions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-add-target-api-target-config.html#gateway-add-target-api-connector-step-functions).
 
+### Runtime: Session endpoints
+<a name="_runtime_session_endpoints_2"></a>
+
+Amazon Bedrock AgentCore Runtime is the managed environment that hosts your agent containers. It now gives you more control over where invocations reach your agent, and lets you connect to the applications that your agent runs in a session.
+
+With these capabilities, you can:
++  **Customize invocations**: Configure the serving port and POST path for `InvokeAgentRuntime`. These settings work without session endpoints.
++  **Connect to session servers**: Configure `allowedPorts` with individual ports or inclusive ranges. Use an authenticated session endpoint URL for HTTP routes, streaming responses, gRPC, and WebSocket connections. The allowed-port policy covers every destination port and excludes reserved platform ports.
+
+For invocation examples, see [Configure the serving port and invocation path](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-configure-invocation.html). For port rules, authentication, and troubleshooting, see [Session endpoints](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-session-endpoints.html).
+
 ### AgentCore CLI: Version 1.0 is now available
 <a name="_agentcore_cli_version_1_0_is_now_available_2"></a>
 
@@ -90,7 +108,11 @@ For more information, see [Configure record retention (time-to-live)](https://do
 
 Amazon Bedrock AgentCore Memory now bills short-term memory based on consumption instead of a flat rate per event, with charges calculated separately for ingestion, retrieval, and storage. This change applies automatically to short-term memory usage; no configuration is required.
 
-For more information, see [Amazon Bedrock AgentCore pricing](https://aws.amazon.com/bedrock/agentcore/pricing/) page.
+For more information, see [Amazon Bedrock AgentCore pricing](https://aws.amazon.com/bedrock/agentcore/pricing/) page. === Gateway: MCP task support for long-running tool calls
+
+Amazon Bedrock AgentCore Gateway now supports the MCP Tasks extension (`io.modelcontextprotocol/tasks`) on protocol version `2026-07-28`. A tool on an MCP server target can return a task ID immediately instead of holding the connection open, so long-running operations such as batch jobs, CI pipelines, or report compilation can run asynchronously. Clients poll `tasks/get` for status and the final result, answer mid-task input requests with `tasks/update`, and stop a task with `tasks/cancel`. The gateway issues its own task ID and routes each follow-up from that ID. On gateways that use JWT or IAM inbound authorization, each task is bound to the caller that created it. Tasks do not require MCP sessions or response streaming.
+
+For more information, see [Use tasks with your AgentCore gateway](gateway-mcp-tasks.md).
 
 ### Gateway: Private certificate authority support for targets
 <a name="_gateway_private_certificate_authority_support_for_targets_2"></a>

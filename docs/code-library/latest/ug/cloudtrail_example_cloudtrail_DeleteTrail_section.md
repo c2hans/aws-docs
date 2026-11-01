@@ -48,11 +48,14 @@ bool AwsDoc::CloudTrail::deleteTrail(const Aws::String trailName,
 
 **AWS CLI**
 **To delete a trail**
-The following `delete-trail` command deletes a trail named `Trail1`:
+The following `delete-trail` example deletes a trail named `Trail1`.
 
 ```
-aws cloudtrail delete-trail --name {{Trail1}}
+aws cloudtrail delete-trail \
+    --name {{Trail1}}
 ```
+This command produces no output.
+For more information, see [Managing trails with the AWS CLI](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-additional-cli-commands.html#cloudtrail-delete-trail-cli) in the *AWS CloudTrail User Guide*.
 +  For API details, see [DeleteTrail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/delete-trail.html) in *AWS CLI Command Reference*.
 
 ------

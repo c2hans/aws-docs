@@ -39,6 +39,8 @@ AWS offers a growing number of database options (15\+) with diverse data models 
 
 ![AWS vector databases and vector search.](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/images/vector-db-new.png)
 
+For help choosing among these vector database options for a generative AI workload, see [Choosing a vector database for your generative AI applications](https://docs.aws.amazon.com/decision-guides/latest/decision-guides/vector-database-guide.html).
+
 **Note**
 This guide focuses on databases that are suitable for online transaction processing (OLTP) applications. If you need to store and analyze massive amounts of data quickly and efficiently (a requirement that is typically met by an OLAP application), AWS offers [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html). Amazon Redshift is a fully managed, cloud-based data warehousing service that is designed to handle large-scale analytics workloads.
 

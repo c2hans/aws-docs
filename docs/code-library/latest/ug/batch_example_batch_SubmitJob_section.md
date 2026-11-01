@@ -18,20 +18,23 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To submit a job**
-This example submits a simple container job called example to the HighPriority job queue.
-Command:
+The following `submit-job` example submits a simple container job called example to the HighPriority job queue.
 
 ```
-aws batch submit-job --job-name {{example}} --job-queue {{HighPriority}}  --job-definition {{sleep60}}
+aws batch submit-job \
+    --job-name {{example}} \
+    --job-queue {{HighPriority}} \
+    --job-definition {{sleep60}}
 ```
 Output:
 
 ```
 {
     "jobName": "example",
-    "jobId": "876da822-4198-45f2-a252-6cea32512ea8"
+    "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Tutorial: submit a job](https://docs.aws.amazon.com/batch/latest/userguide/submit_job.html) in the *AWS Batch User Guide*.
 +  For API details, see [SubmitJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/submit-job.html) in *AWS CLI Command Reference*.
 
 ------

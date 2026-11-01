@@ -14,12 +14,12 @@ The following code examples show how to use `ListAvailableSolutionStacks`.
 
 **AWS CLI**
 **To view solution stacks**
-The following command lists solution stacks for all currently available platform configurations and any that you have used in the past:
+The following `list-available-solution-stacks` example lists solution stacks for all currently available platform configurations and any that you have used in the past.
 
 ```
 aws elasticbeanstalk list-available-solution-stacks
 ```
-Output (abbreviated):
+Output:
 
 ```
 {
@@ -51,7 +51,7 @@ Output (abbreviated):
         "64bit Debian jessie v2.0.0 running GlassFish 4.0 Java 7 (Preconfigured - Docker)",
         "64bit Debian jessie v2.0.0 running Go 1.4 (Preconfigured - Docker)",
         "64bit Debian jessie v2.0.0 running Go 1.3 (Preconfigured - Docker)",
-        "64bit Debian jessie v2.0.0 running Python 3.4 (Preconfigured - Docker)",
+        "64bit Debian jessie v2.0.0 running Python 3.4 (Preconfigured - Docker)"
     ],
     "SolutionStackDetails": [
         {
@@ -59,11 +59,11 @@ Output (abbreviated):
                 "zip"
             ],
             "SolutionStackName": "64bit Amazon Linux 2015.03 v2.0.0 running Node.js"
-        },
-        ...
+        }
     ]
 }
 ```
+For more information, see [Elastic Beanstalk supported platforms](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html) in the *AWS Elastic Beanstalk Developer Guide*.
 +  For API details, see [ListAvailableSolutionStacks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elasticbeanstalk/list-available-solution-stacks.html) in *AWS CLI Command Reference*.
 
 ------

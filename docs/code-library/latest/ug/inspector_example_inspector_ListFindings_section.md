@@ -17,7 +17,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To list findings**
-The following `list-findings` command lists all of the generated findings:
+The following `list-findings` example lists all of the generated findings.
 
 ```
 aws inspector list-findings
@@ -26,13 +26,12 @@ Output:
 
 ```
 {
-        "findingArns": [
+    "findingArns": [
         "arn:aws:inspector:us-west-2:123456789012:target/0-0kFIPusq/template/0-4r1V2mAw/run/0-MKkpXXPE/finding/0-HwPnsDm4",
         "arn:aws:inspector:us-west-2:123456789012:target/0-0kFIPusq/template/0-4r1V2mAw/run/0-v5D6fI3v/finding/0-tyvmqBLy"
-      ]
+    ]
 }
 ```
-For more information, see Amazon Inspector Findings in the *Amazon Inspector* guide.
 +  For API details, see [ListFindings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/inspector/list-findings.html) in *AWS CLI Command Reference*.
 
 ------

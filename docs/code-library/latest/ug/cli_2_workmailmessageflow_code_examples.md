@@ -26,14 +26,13 @@ The following code example shows how to use `get-raw-message-content`.
 
 **AWS CLI**
 **To get the raw content of an email message**
-The following `get-raw-message-content` example gets the raw content of an in-transit email message and sends it to a text file named `test`.
+The following `get-raw-message-content` example gets the raw content of an in-transit email message and sends it to a text file named `test`. The contents of `test` after the command runs are shown below.
 
 ```
-aws workmailmessageflow get-raw-message-content \
-    --message-id {{a1b2cd34-ef5g-6h7j-kl8m-npq9012345rs}} \
-    {{test}}
+aws workmailmessageflow get-raw-message-content {{test}} \
+    --message-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-Contents of file `test` after command runs:
+Contents of `test`:
 
 ```
 Subject: Hello World
@@ -76,5 +75,6 @@ f; font-size: small;">hello world</p>
 </html>
 --=_EXAMPLE+--
 ```
+This command produces no output.
 For more information, see [Retrieving Message Content with AWS Lambda](https://docs.aws.amazon.com/workmail/latest/adminguide/lambda-content.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [GetRawMessageContent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmailmessageflow/get-raw-message-content.html) in *AWS CLI Command Reference*.

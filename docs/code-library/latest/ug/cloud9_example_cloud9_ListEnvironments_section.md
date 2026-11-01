@@ -14,8 +14,7 @@ The following code examples show how to use `ListEnvironments`.
 
 **AWS CLI**
 **To get a list of available AWS Cloud9 development environment identifiers**
-This example gets a list of available AWS Cloud9 development environment identifiers.
-Command:
+The following `list-environments` example gets a list of available AWS Cloud9 development environment identifiers.
 
 ```
 aws cloud9 list-environments
@@ -24,12 +23,13 @@ Output:
 
 ```
 {
-  "environmentIds": [
-    "685f892f431b45c2b28cb69eadcdb0EX",
-    "1980b80e5f584920801c09086667f0EX"
-  ]
+    "environmentIds": [
+        "685f892f431b45c2b28cb69eadcdb0EX",
+        "1980b80e5f584920801c09086667f0EX"
+    ]
 }
 ```
+For more information, see [Working with environments in AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/environments.html) in the *AWS Cloud9 User Guide*.
 +  For API details, see [ListEnvironments](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloud9/list-environments.html) in *AWS CLI Command Reference*.
 
 ------

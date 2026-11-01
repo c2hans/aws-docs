@@ -30,6 +30,7 @@ Output:
     ]
 }
 ```
+For more information, see [Get information about multiple on-premises instances](https://docs.aws.amazon.com/codedeploy/latest/userguide/on-premises-instances-operations-view-details-multiple.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListOnPremisesInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-on-premises-instances.html) in *AWS CLI Command Reference*.
 
 ------

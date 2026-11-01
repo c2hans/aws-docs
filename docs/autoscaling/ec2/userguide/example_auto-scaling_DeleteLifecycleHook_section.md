@@ -12,7 +12,7 @@ The following code examples show how to use `DeleteLifecycleHook`.
 
 **AWS CLI**
 **To delete a lifecycle hook**
-This example deletes the specified lifecycle hook.
+The following `delete-lifecycle-hook` example deletes the specified lifecycle hook.
 
 ```
 aws autoscaling delete-lifecycle-hook \
@@ -20,6 +20,7 @@ aws autoscaling delete-lifecycle-hook \
     --auto-scaling-group-name {{my-asg}}
 ```
 This command produces no output.
+For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DeleteLifecycleHook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/delete-lifecycle-hook.html) in *AWS CLI Command Reference*.
 
 ------

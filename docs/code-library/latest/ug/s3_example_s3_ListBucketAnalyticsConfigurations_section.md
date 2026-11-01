@@ -14,7 +14,7 @@ The following code examples show how to use `ListBucketAnalyticsConfigurations`.
 
 **AWS CLI**
 **To retrieve a list of analytics configurations for a bucket**
-The following `list-bucket-analytics-configurations` retrieves a list of analytics configurations for the specified bucket.
+The following `list-bucket-analytics-configurations` example retrieves a list of analytics configurations for the specified bucket.
 
 ```
 aws s3api list-bucket-analytics-configurations \
@@ -33,6 +33,7 @@ Output:
     "IsTruncated": false
 }
 ```
+For more information, see [Amazon S3 analytics - Storage Class Analysis](https://docs.aws.amazon.com/AmazonS3/latest/userguide/analytics-storage-class.html) in the *Amazon S3 User Guide*.
 +  For API details, see [ListBucketAnalyticsConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/list-bucket-analytics-configurations.html) in *AWS CLI Command Reference*.
 
 ------

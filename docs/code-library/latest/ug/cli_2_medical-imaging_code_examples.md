@@ -132,7 +132,7 @@ The following code example shows how to use `create-datastore`.
 
 **AWS CLI**
 **Example 1: To create a data store**
-The following `create-datastore` code example creates a data store with the name `my-datastore`. When you create a datastore without specifying a `--lossless-storage-format`, AWS HealthImaging defaults to HTJ2K (High Throughput JPEG 2000).
+The following `create-datastore` example creates a data store with the name `my-datastore`. When you create a datastore without specifying a `--lossless-storage-format`, AWS HealthImaging defaults to HTJ2K (High Throughput JPEG 2000).
 
 ```
 aws medical-imaging create-datastore \
@@ -147,7 +147,7 @@ Output:
 }
 ```
 **Example 2: To create a data store with JPEG 2000 Lossless storage format**
-A data store configured with JPEG 2000 Lossless storage format will transcode and persist lossless image frames in JPEG 2000 format. Image frames can then be retrieved in JPEG 2000 Lossless without transcoding. The following `create-datastore` code example creates a data store configured for JPEG 2000 Lossless storage format with the name `my-datastore`.
+The following `create-datastore` example creates a data store configured for JPEG 2000 Lossless storage format with the name `my-datastore`. A data store configured with JPEG 2000 Lossless storage format will transcode and persist lossless image frames in JPEG 2000 format. Image frames can then be retrieved in JPEG 2000 Lossless without transcoding.
 
 ```
 aws medical-imaging create-datastore \
@@ -172,7 +172,7 @@ The following code example shows how to use `delete-datastore`.
 
 **AWS CLI**
 **To delete a data store**
-The following `delete-datastore` code example deletes a data store.
+The following `delete-datastore` example deletes a data store.
 
 ```
 aws medical-imaging delete-datastore \
@@ -196,7 +196,7 @@ The following code example shows how to use `delete-image-set`.
 
 **AWS CLI**
 **To delete an image set**
-The following `delete-image-set` code example deletes an image set.
+The following `delete-image-set` example deletes an image set.
 
 ```
 aws medical-imaging delete-image-set \
@@ -223,7 +223,7 @@ The following code example shows how to use `get-datastore`.
 
 **AWS CLI**
 **Example 1: To get a data store's properties**
-The following `get-datastore` code example gets a data store's properties.
+The following `get-datastore` example gets a data store's properties.
 
 ```
 aws medical-imaging get-datastore \
@@ -237,15 +237,15 @@ Output:
         "datastoreId": "12345678901234567890123456789012",
         "datastoreName": "TestDatastore123",
         "datastoreStatus": "ACTIVE",
-        "losslessStorageFormat": "HTJ2K"
-        "datastoreArn": "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012",
+        "losslessStorageFormat": "HTJ2K",
+        "datastoreArn": "arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012",
         "createdAt": "2022-11-15T23:33:09.643000+00:00",
         "updatedAt": "2022-11-15T23:33:09.643000+00:00"
     }
 }
 ```
 **Example 2: To get data store's properties configured for JPEG2000**
-The following `get-datastore` code example gets a data store's properties for a data store configured for JPEG 2000 Lossless storage format.
+The following `get-datastore` example gets a data store's properties for a data store configured for JPEG 2000 Lossless storage format.
 
 ```
 aws medical-imaging get-datastore \
@@ -260,7 +260,7 @@ Output:
         "datastoreName": "TestDatastore123",
         "datastoreStatus": "ACTIVE",
         "losslessStorageFormat": "JPEG_2000_LOSSLESS",
-        "datastoreArn": "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012",
+        "datastoreArn": "arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012",
         "createdAt": "2022-11-15T23:33:09.643000+00:00",
         "updatedAt": "2022-11-15T23:33:09.643000+00:00"
     }
@@ -276,7 +276,7 @@ The following code example shows how to use `get-dicom-import-job`.
 
 **AWS CLI**
 **To get a dicom import job's properties**
-The following `get-dicom-import-job` code example gets a dicom import job's properties.
+The following `get-dicom-import-job` example gets a dicom import job's properties.
 
 ```
 aws medical-imaging get-dicom-import-job \
@@ -295,8 +295,8 @@ Output:
         "dataAccessRoleArn": "arn:aws:iam::123456789012:role/ImportJobDataAccessRole",
         "endedAt": "2022-08-12T11:29:42.285000+00:00",
         "submittedAt": "2022-08-12T11:28:11.152000+00:00",
-        "inputS3Uri": "s3://medical-imaging-dicom-input/dicom_input/",
-        "outputS3Uri": "s3://medical-imaging-output/job_output/12345678901234567890123456789012-DicomImport-09876543210987654321098765432109/"
+        "inputS3Uri": "s3://amzn-s3-demo-bucket1/dicom_input/",
+        "outputS3Uri": "s3://amzn-s3-demo-bucket2/job_output/12345678901234567890123456789012-DicomImport-09876543210987654321098765432109/"
     }
 }
 ```
@@ -310,16 +310,22 @@ The following code example shows how to use `get-image-frame`.
 
 **AWS CLI**
 **To get image set pixel data**
-The following `get-image-frame` code example gets an image frame.
+The following `get-image-frame` example gets an image frame.
 
 ```
-aws medical-imaging get-image-frame \
+aws medical-imaging get-image-frame {{imageframe.jph}} \
     --datastore-id {{"12345678901234567890123456789012"}} \
     --image-set-id {{"98765412345612345678907890789012"}} \
-    --image-frame-information {{imageFrameId=3abf5d5d7ae72f80a0ec81b2c0de3ef4}} \
-    {{imageframe.jph}}
+    --image-frame-information {{imageFrameId=3abf5d5d7ae72f80a0ec81b2c0de3ef4}}
 ```
-Note: This code example does not include output because the GetImageFrame action returns a stream of pixel data to the imageframe.jph file. For information about decoding and viewing image frames, see HTJ2K decoding libraries.
+Output:
+
+```
+{
+    "contentType": "application/octet-stream"
+}
+```
+The `GetImageFrame` action writes the stream of pixel data to the `imageframe.jph` file. For information about decoding and viewing image frames, see HTJ2K decoding libraries.
 For more information, see [Getting image set pixel data](https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-frame.html) in the *AWS HealthImaging Developer Guide*.
 +  For API details, see [GetImageFrame](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/medical-imaging/get-image-frame.html) in *AWS CLI Command Reference*.
 
@@ -330,14 +336,13 @@ The following code example shows how to use `get-image-set-metadata`.
 
 **AWS CLI**
 **Example 1: To get image set metadata without version**
-The following `get-image-set-metadata` code example gets metadata for an image set without specifying a version.
-Note: `outfile` is a required parameter
+The following `get-image-set-metadata` example gets metadata for an image set without specifying a version.
+Note: `outfile` is a required parameter.
 
 ```
-aws medical-imaging get-image-set-metadata \
+aws medical-imaging get-image-set-metadata {{studymetadata.json.gz}} \
     --datastore-id {{12345678901234567890123456789012}} \
-    --image-set-id {{ea92b0d8838c72a3f25d00d13616f87e}} \
-    {{studymetadata.json.gz}}
+    --image-set-id {{ea92b0d8838c72a3f25d00d13616f87e}}
 ```
 The returned metadata is compressed with gzip and stored in the studymetadata.json.gz file. To view the contents of the returned JSON object, you must first decompress it.
 Output:
@@ -349,15 +354,14 @@ Output:
 }
 ```
 **Example 2: To get image set metadata with version**
-The following `get-image-set-metadata` code example gets metadata for an image set with a specified version.
-Note: `outfile` is a required parameter
+The following `get-image-set-metadata` example gets metadata for an image set with a specified version.
+Note: `outfile` is a required parameter.
 
 ```
-aws medical-imaging get-image-set-metadata \
+aws medical-imaging get-image-set-metadata {{studymetadata.json.gz}} \
     --datastore-id {{12345678901234567890123456789012}} \
     --image-set-id {{ea92b0d8838c72a3f25d00d13616f87e}} \
-    --version-id {{1}} \
-    {{studymetadata.json.gz}}
+    --version-id {{1}}
 ```
 The returned metadata is compressed with gzip and stored in the studymetadata.json.gz file. To view the contents of the returned JSON object, you must first decompress it.
 Output:
@@ -378,7 +382,7 @@ The following code example shows how to use `get-image-set`.
 
 **AWS CLI**
 **To get image set properties**
-The following `get-image-set` code example gets the properties for an image set.
+The following `get-image-set` example gets the properties for an image set.
 
 ```
 aws medical-imaging get-image-set \
@@ -409,7 +413,7 @@ The following code example shows how to use `list-datastores`.
 
 **AWS CLI**
 **To list data stores**
-The following `list-datastores` code example lists available data stores.
+The following `list-datastores` example lists available data stores.
 
 ```
 aws medical-imaging list-datastores
@@ -423,7 +427,7 @@ Output:
             "datastoreId": "12345678901234567890123456789012",
             "datastoreName": "TestDatastore123",
             "datastoreStatus": "ACTIVE",
-            "datastoreArn": "arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012",
+            "datastoreArn": "arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012",
             "createdAt": "2022-11-15T23:33:09.643000+00:00",
             "updatedAt": "2022-11-15T23:33:09.643000+00:00"
         }
@@ -440,7 +444,7 @@ The following code example shows how to use `list-dicom-import-jobs`.
 
 **AWS CLI**
 **To list dicom import jobs**
-The following `list-dicom-import-jobs` code example lists dicom import jobs.
+The following `list-dicom-import-jobs` example lists dicom import jobs.
 
 ```
 aws medical-imaging list-dicom-import-jobs \
@@ -473,7 +477,7 @@ The following code example shows how to use `list-image-set-versions`.
 
 **AWS CLI**
 **To list image set versions**
-The following `list-image-set-versions` code example lists the version history for an image set.
+The following `list-image-set-versions` example lists the version history for an image set.
 
 ```
 aws medical-imaging list-image-set-versions \
@@ -530,11 +534,11 @@ The following code example shows how to use `list-tags-for-resource`.
 
 **AWS CLI**
 **Example 1: To list resource tags for a data store**
-The following `list-tags-for-resource` code example lists tags for a data store.
+The following `list-tags-for-resource` example lists tags for a data store.
 
 ```
 aws medical-imaging list-tags-for-resource \
-    --resource-arn {{"arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"}}
+    --resource-arn {{"arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012"}}
 ```
 Output:
 
@@ -546,11 +550,11 @@ Output:
 }
 ```
 **Example 2: To list resource tags for an image set**
-The following `list-tags-for-resource` code example lists tags for an image set.
+The following `list-tags-for-resource` example lists tags for an image set.
 
 ```
 aws medical-imaging list-tags-for-resource \
-    --resource-arn {{"arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/18f88ac7870584f58d56256646b4d92b"}}
+    --resource-arn {{"arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012/imageset/18f88ac7870584f58d56256646b4d92b"}}
 ```
 Output:
 
@@ -571,14 +575,14 @@ The following code example shows how to use `search-image-sets`.
 
 **AWS CLI**
 **Example 1: To search image sets with an EQUAL operator**
-The following `search-image-sets` code example uses the EQUAL operator to search image sets based on a specific value.
+The following `search-image-sets` example uses the EQUAL operator to search image sets based on a specific value.
 
 ```
 aws medical-imaging search-image-sets \
     --datastore-id {{12345678901234567890123456789012}} \
     --search-criteria {{file://search-criteria.json}}
 ```
-Contents of `search-criteria.json`
+Contents of `search-criteria.json`:
 
 ```
 {
@@ -599,22 +603,22 @@ Output:
         "DICOMTags": {
             "DICOMStudyId": "2011201407",
             "DICOMStudyDate": "19991122",
-             "DICOMPatientSex": "F",
-             "DICOMStudyInstanceUID": "1.2.840.99999999.84710745.943275268089",
-             "DICOMPatientBirthDate": "19201120",
-             "DICOMStudyDescription": "UNKNOWN",
-             "DICOMPatientId": "SUBJECT08701",
-             "DICOMPatientName": "Melissa844 Huel628",
-             "DICOMNumberOfStudyRelatedInstances": 1,
-             "DICOMStudyTime": "140728",
-             "DICOMNumberOfStudyRelatedSeries": 1
-            },
+            "DICOMPatientSex": "F",
+            "DICOMStudyInstanceUID": "1.2.840.99999999.84710745.943275268089",
+            "DICOMPatientBirthDate": "19201120",
+            "DICOMStudyDescription": "UNKNOWN",
+            "DICOMPatientId": "SUBJECT08701",
+            "DICOMPatientName": "Melissa844 Huel628",
+            "DICOMNumberOfStudyRelatedInstances": 1,
+            "DICOMStudyTime": "140728",
+            "DICOMNumberOfStudyRelatedSeries": 1
+        },
         "updatedAt": "2022-12-06T21:40:59.429000+00:00"
     }]
 }
 ```
 **Example 2: To search image sets with a BETWEEN operator using DICOMStudyDate and DICOMStudyTime**
-The following `search-image-sets` code example searches for image sets with DICOM Studies generated between January 1, 1990 (12:00 AM) and January 1, 2023 (12:00 AM).
+The following `search-image-sets` example searches for image sets with DICOM Studies generated between January 1, 1990 (12:00 AM) and January 1, 2023 (12:00 AM).
 Note: DICOMStudyTime is optional. If it is not present, 12:00 AM (start of the day) is the time value for the dates provided for filtering.
 
 ```
@@ -622,7 +626,7 @@ aws medical-imaging search-image-sets \
     --datastore-id {{12345678901234567890123456789012}} \
     --search-criteria {{file://search-criteria.json}}
 ```
-Contents of `search-criteria.json`
+Contents of `search-criteria.json`:
 
 ```
 {
@@ -669,7 +673,7 @@ Output:
 }
 ```
 **Example 3: To search image sets with a BETWEEN operator using createdAt (time studies were previously persisted)**
-The following `search-image-sets` code example searches for image sets with DICOM Studies persisted in HealthImaging between the time ranges in UTC time zone.
+The following `search-image-sets` example searches for image sets with DICOM Studies persisted in HealthImaging between the time ranges in UTC time zone.
 Note: Provide createdAt in example format ("1985-04-12T23:20:50.52Z").
 
 ```
@@ -677,7 +681,7 @@ aws medical-imaging search-image-sets \
     --datastore-id {{12345678901234567890123456789012}} \
     --search-criteria  {{file://search-criteria.json}}
 ```
-Contents of `search-criteria.json`
+Contents of `search-criteria.json`:
 
 ```
 {
@@ -713,12 +717,12 @@ Output:
             "DICOMStudyTime": "140728",
             "DICOMNumberOfStudyRelatedSeries": 1
         },
-        "lastUpdatedAt": "2022-12-06T21:40:59.429000+00:00"
+        "updatedAt": "2022-12-06T21:40:59.429000+00:00"
     }]
 }
 ```
 **Example 4: To search image sets with an EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field**
-The following `search-image-sets` code example searches for image sets with an EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sort response in ASC order on updatedAt field.
+The following `search-image-sets` example searches for image sets with an EQUAL operator on DICOMSeriesInstanceUID and BETWEEN on updatedAt and sorts the response in ASC order on the updatedAt field.
 Note: Provide updatedAt in example format ("1985-04-12T23:20:50.52Z").
 
 ```
@@ -726,7 +730,7 @@ aws medical-imaging search-image-sets \
     --datastore-id {{12345678901234567890123456789012}} \
     --search-criteria  {{file://search-criteria.json}}
 ```
-Contents of `search-criteria.json`
+Contents of `search-criteria.json`:
 
 ```
 {
@@ -770,7 +774,7 @@ Output:
             "DICOMStudyTime": "140728",
             "DICOMNumberOfStudyRelatedSeries": 1
         },
-        "lastUpdatedAt": "2022-12-06T21:40:59.429000+00:00"
+        "updatedAt": "2022-12-06T21:40:59.429000+00:00"
     }]
 }
 ```
@@ -784,14 +788,14 @@ The following code example shows how to use `start-dicom-import-job`.
 
 **AWS CLI**
 **To start a dicom import job**
-The following `start-dicom-import-job` code example starts a dicom import job.
+The following `start-dicom-import-job` example starts a dicom import job.
 
 ```
 aws medical-imaging start-dicom-import-job \
     --job-name {{"my-job"}} \
     --datastore-id {{"12345678901234567890123456789012"}} \
-    --input-s3-uri {{"s3://medical-imaging-dicom-input/dicom_input/"}} \
-    --output-s3-uri {{"s3://medical-imaging-output/job_output/"}} \
+    --input-s3-uri {{"s3://amzn-s3-demo-bucket1/dicom_input/"}} \
+    --output-s3-uri {{"s3://amzn-s3-demo-bucket2/job_output/"}} \
     --data-access-role-arn {{"arn:aws:iam::123456789012:role/ImportJobDataAccessRole"}}
 ```
 Output:
@@ -814,20 +818,20 @@ The following code example shows how to use `tag-resource`.
 
 **AWS CLI**
 **Example 1: To tag a data store**
-The following `tag-resource` code examples tags a data store.
+The following `tag-resource` example tags a data store.
 
 ```
 aws medical-imaging tag-resource \
-  --resource-arn {{"arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"}} \
-  --tags '{{{"Deployment":"Development"}}}'
+    --resource-arn {{"arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012"}} \
+    --tags '{{{"Deployment":"Development"}}}'
 ```
 This command produces no output.
 **Example 2: To tag an image set**
-The following `tag-resource` code examples tags an image set.
+The following `tag-resource` example tags an image set.
 
 ```
 aws medical-imaging tag-resource \
-    --resource-arn {{"arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/18f88ac7870584f58d56256646b4d92b"}} \
+    --resource-arn {{"arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012/imageset/18f88ac7870584f58d56256646b4d92b"}} \
     --tags '{{{"Deployment":"Development"}}}'
 ```
 This command produces no output.
@@ -841,20 +845,20 @@ The following code example shows how to use `untag-resource`.
 
 **AWS CLI**
 **Example 1: To untag a data store**
-The following `untag-resource` code example untags a data store.
+The following `untag-resource` example untags a data store.
 
 ```
 aws medical-imaging untag-resource \
-    --resource-arn {{"arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012"}} \
+    --resource-arn {{"arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012"}} \
     --tag-keys '{{["Deployment"]}}'
 ```
 This command produces no output.
 **Example 2: To untag an image set**
-The following `untag-resource` code example untags an image set.
+The following `untag-resource` example untags an image set.
 
 ```
 aws medical-imaging untag-resource \
-    --resource-arn {{"arn:aws:medical-imaging:us-east-1:123456789012:datastore/12345678901234567890123456789012/imageset/18f88ac7870584f58d56256646b4d92b"}} \
+    --resource-arn {{"arn:aws:medical-imaging:us-west-2:123456789012:datastore/12345678901234567890123456789012/imageset/18f88ac7870584f58d56256646b4d92b"}} \
     --tag-keys '{{["Deployment"]}}'
 ```
 This command produces no output.
@@ -878,7 +882,7 @@ aws medical-imaging update-image-set-metadata \
     --cli-binary-format {{raw-in-base64-out}} \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -911,7 +915,7 @@ aws medical-imaging update-image-set-metadata \
     --cli-binary-format {{raw-in-base64-out}} \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -945,7 +949,7 @@ aws medical-imaging update-image-set-metadata \
     --update-image-set-metadata-updates {{file://metadata-updates.json}} \
     --force
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -1003,7 +1007,7 @@ aws medical-imaging update-image-set-metadata \
     --force \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -1037,7 +1041,7 @@ aws medical-imaging update-image-set-metadata \
     --force \
     --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {
@@ -1064,14 +1068,14 @@ The following `update-image-set-metadata` example shows how to update a SOPInsta
 
 ```
 aws medical-imaging update-image-set-metadata \
-        --datastore-id {{12345678901234567890123456789012}} \
-        --image-set-id {{53d5fdb05ca4d46ac7ca64b06545c66e}} \
-        --latest-version-id {{1}} \
-        --cli-binary-format {{raw-in-base64-out}} \
-        --force \
-        --update-image-set-metadata-updates {{file://metadata-updates.json}}
+    --datastore-id {{12345678901234567890123456789012}} \
+    --image-set-id {{53d5fdb05ca4d46ac7ca64b06545c66e}} \
+    --latest-version-id {{1}} \
+    --cli-binary-format {{raw-in-base64-out}} \
+    --force \
+    --update-image-set-metadata-updates {{file://metadata-updates.json}}
 ```
-Contents of `metadata-updates.json`
+Contents of `metadata-updates.json`:
 
 ```
 {

@@ -40,7 +40,7 @@ Output:
     "service": {
         "serviceArn": "arn:aws:ecs:us-west-2:123456789012:service/MyCluster/MyService",
         "serviceName": "MyService",
-          "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
+        "clusterArn": "arn:aws:ecs:us-west-2:123456789012:cluster/MyCluster",
         "loadBalancers": [],
         "serviceRegistries": [],
         "status": "ACTIVE",
@@ -228,7 +228,7 @@ aws ecs create-service \
 Contents of `ecs-simple-service-elb.json`:
 
 ```
- {
+{
     "serviceName": "ecs-simple-service-elb",
     "taskDefinition": "ecs-demo",
     "loadBalancers": [
@@ -315,7 +315,7 @@ Contents of `ecs-simple-service-ebs.json`:
                 "filesystemType": "ext4"
             }
         }
-   ]
+    ]
 }
 ```
 Output:

@@ -22,6 +22,7 @@ aws deploy register-on-premises-instance \
     --iam-user-arn {{arn:aws:iam::80398EXAMPLE:user/CodeDeployDemoUser-OnPrem}}
 ```
 This command produces no output.
+For more information, see [Use the register-on-premises-instance command (IAM user ARN) to register an on-premises instance](https://docs.aws.amazon.com/codedeploy/latest/userguide/register-on-premises-instance-iam-user-arn.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [RegisterOnPremisesInstance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register-on-premises-instance.html) in *AWS CLI Command Reference*.
 
 ------

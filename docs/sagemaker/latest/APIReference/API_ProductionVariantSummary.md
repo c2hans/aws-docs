@@ -17,6 +17,12 @@ Length Constraints: Minimum length of 0. Maximum length of 63.
 Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 Required: Yes
 
+ ** AcceleratorPartitionLayouts **   <a name="sagemaker-Type-ProductionVariantSummary-AcceleratorPartitionLayouts"></a>
+The accelerator partition layout that SageMaker applies to this production variant. On NVIDIA GPUs, the profiles are Multi-Instance GPU (MIG) profiles. SageMaker returns the accelerator partition layout as you provided it when you created the variant, without normalization.
+Type: Array of [AcceleratorPartitionLayout](API_AcceleratorPartitionLayout.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 32 items.
+Required: No
+
  ** CapacityReservationConfig **   <a name="sagemaker-Type-ProductionVariantSummary-CapacityReservationConfig"></a>
 Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint.
 Type: [ProductionVariantCapacityReservationSummary](API_ProductionVariantCapacityReservationSummary.md) object

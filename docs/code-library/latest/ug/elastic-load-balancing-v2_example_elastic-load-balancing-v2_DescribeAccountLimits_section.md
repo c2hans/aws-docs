@@ -119,7 +119,7 @@ Output:
     ]
 }
 ```
-For more information, see [Quotas](https://docs.aws.amazon.com/general/latest/gr/elb.html#limits_elastic_load_balancer) in the *AWS General Reference*.
+For more information, see [Quotas for your Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-limits.html) in the *Application Load Balancers Guide* and [Quotas for your Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-limits.html) in the *Network Load Balancers Guide*.
 +  For API details, see [DescribeAccountLimits](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-account-limits.html) in *AWS CLI Command Reference*.
 
 ------

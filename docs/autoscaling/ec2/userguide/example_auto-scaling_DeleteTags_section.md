@@ -12,7 +12,7 @@ The following code examples show how to use `DeleteTags`.
 
 **AWS CLI**
 **To delete a tag from an Auto Scaling group**
-This example deletes the specified tag from the specified Auto Scaling group.
+The following `delete-tags` example deletes the specified tag from the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-tags \

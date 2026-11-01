@@ -14,11 +14,14 @@ The following code examples show how to use `CancelUpdateStack`.
 
 **AWS CLI**
 **To cancel a stack update that is in progress**
-The following `cancel-update-stack` command cancels a stack update on the `myteststack` stack:
+The following `cancel-update-stack` example cancels a stack update on the `myteststack` stack.
 
 ```
-aws cloudformation cancel-update-stack --stack-name {{myteststack}}
+aws cloudformation cancel-update-stack \
+    --stack-name {{myteststack}}
 ```
+This command produces no output.
+For more information, see [Cancel a stack update](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-update-cancel.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [CancelUpdateStack](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/cancel-update-stack.html) in *AWS CLI Command Reference*.
 
 ------

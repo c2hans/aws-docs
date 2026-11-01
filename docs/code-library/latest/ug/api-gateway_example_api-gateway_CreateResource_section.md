@@ -18,11 +18,25 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To create a resource in an API**
-Command:
+The following `create-resource` example creates a resource with the path part `new-resource` under the specified parent resource in an API.
 
 ```
-aws apigateway create-resource --rest-api-id {{1234123412}} --parent-id {{a1b2c3}} --path-part '{{new-resource}}'
+aws apigateway create-resource \
+    --rest-api-id {{1234123412}} \
+    --parent-id {{a1b2c3}} \
+    --path-part '{{new-resource}}'
 ```
+Output:
+
+```
+{
+    "id": "b2c3d4",
+    "parentId": "a1b2c3",
+    "pathPart": "new-resource",
+    "path": "/new-resource"
+}
+```
+For more information, see [Develop REST APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-develop.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [CreateResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/create-resource.html) in *AWS CLI Command Reference*.
 
 ------

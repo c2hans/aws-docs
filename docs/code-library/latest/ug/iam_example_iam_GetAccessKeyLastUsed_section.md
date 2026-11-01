@@ -53,7 +53,7 @@ bool AwsDoc::IAM::accessKeyLastUsed(const Aws::String &secretKeyID,
 
 **AWS CLI**
 **To retrieve information about when the specified access key was last used**
-The following example retrieves information about when the access key `ABCDEXAMPLE` was last used.
+The following `get-access-key-last-used` example retrieves information about when the access key `ABCDEXAMPLE` was last used.
 
 ```
 aws iam get-access-key-last-used \
@@ -65,7 +65,7 @@ Output:
 {
     "UserName":  "Bob",
     "AccessKeyLastUsed": {
-        "Region": "us-east-1",
+        "Region": "us-west-2",
         "ServiceName": "iam",
         "LastUsedDate": "2015-06-16T22:45:00Z"
     }

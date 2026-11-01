@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::APS::Scraper CloudWatchConfiguration
 <a name="aws-properties-aps-scraper-cloudwatchconfiguration"></a>
 
-<a name="aws-properties-aps-scraper-cloudwatchconfiguration-description"></a>The `CloudWatchConfiguration` property type specifies Property description not available. for an [AWS::APS::Scraper](aws-resource-aps-scraper.md).
+The configuration identifies the CloudWatch dataset used as a scraper destination.
 
 ## Syntax
 <a name="aws-properties-aps-scraper-cloudwatchconfiguration-syntax"></a>
@@ -34,7 +34,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-aps-scraper-cloudwatchconfiguration-properties"></a>
 
 `DatasetArn`  <a name="cfn-aps-scraper-cloudwatchconfiguration-datasetarn"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the CloudWatch dataset. To use the default dataset, specify `arn:aws:cloudwatch:<region>:<account-id>:dataset/default`.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^arn:aws[-a-z]*:cloudwatch:[-a-z0-9]+:[0-9]{12}:dataset\/.+$`

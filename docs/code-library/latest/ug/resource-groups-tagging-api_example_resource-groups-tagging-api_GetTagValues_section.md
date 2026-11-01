@@ -14,7 +14,7 @@ The following code examples show how to use `GetTagValues`.
 
 **AWS CLI**
 **To get a list of all tag values**
-The following `get-tag-values` example displays all of the values used for the specified key for all resources in the
+The following `get-tag-values` example displays all of the values used for the specified key for all resources in the current AWS Region.
 
 ```
 aws resourcegroupstaggingapi get-tag-values \
@@ -31,7 +31,7 @@ Output:
     ]
 }
 ```
-For more information, see [GetTagValues](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetTagValues.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [What is Tag Editor?](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [GetTagValues](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/get-tag-values.html) in *AWS CLI Command Reference*.
 
 ------

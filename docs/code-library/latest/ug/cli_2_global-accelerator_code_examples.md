@@ -30,7 +30,7 @@ The following `add-custom-routing-endpoints` example adds a VPC subnet endpoint 
 
 ```
 aws globalaccelerator add-custom-routing-endpoints \
-    --endpoint-group-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/4321abcd}} \
+    --endpoint-group-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/4321abcd}} \
     --endpoint-configurations {{"EndpointId=subnet-1234567890abcdef0"}}
 ```
 Output:
@@ -42,7 +42,7 @@ Output:
             "EndpointId": "subnet-1234567890abcdef0"
         }
     ],
-    "EndpointGroupArn":"arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/4321abcd"
+    "EndpointGroupArn":"arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/4321abcd"
 }
 ```
 For more information, see [VPC subnet endpoints for custom routing accelerators in AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custom-routing-endpoints.html) in the *AWS Global Accelerator Developer Guide*.
@@ -85,7 +85,7 @@ The following `allow-custom-routing-traffic` example specifies that traffic is a
 
 ```
 aws globalaccelerator allow-custom-routing-traffic \
-    --endpoint-group-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/ab88888example}} \
+    --endpoint-group-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/ab88888example}} \
     --endpoint-id {{subnet-abcd123example}} \
     --destination-addresses {{"172.31.200.6"}} {{"172.31.200.7"}} \
     --destination-ports {{80}} {{81}}
@@ -114,7 +114,7 @@ Output:
 ```
 {
     "Accelerator": {
-        "AcceleratorArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",
+        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "IpAddressType": "IPV4",
         "Name": "ExampleAccelerator",
         "Enabled": true,
@@ -157,7 +157,7 @@ Output:
 ```
 {
     "Accelerator": {
-        "AcceleratorArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",
+        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "IpAddressType": "IPV4",
         "Name": "ExampleCustomRoutingAccelerator",
         "Enabled": true,
@@ -191,8 +191,8 @@ The following `create-custom-routing-endpoint-group` example creates an endpoint
 
 ```
 aws globalaccelerator create-custom-routing-endpoint-group \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz}} \
-    --endpoint-group-region {{us-east-2}} \
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz}} \
+    --endpoint-group-region {{us-west-2}} \
     --destination-configurations {{"FromPort=80,ToPort=81,Protocols=TCP,UDP"}}
 ```
 Output:
@@ -200,8 +200,8 @@ Output:
 ```
 {
     "EndpointGroup": {
-        "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/4321abcd",
-        "EndpointGroupRegion": "us-east-2",
+        "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/4321abcd",
+        "EndpointGroupRegion": "us-west-2",
         "DestinationDescriptions": [
             {
                 "FromPort": 80,
@@ -230,7 +230,7 @@ The following `create-custom-routing-listener` example creates a listener with a
 
 ```
 aws globalaccelerator create-custom-routing-listener \
-    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --port-ranges {{FromPort=5000,ToPort=10000}}
 ```
 Output:
@@ -238,11 +238,13 @@ Output:
 ```
 {
     "Listener": {
-        "PortRange": [
-            "FromPort": 5000,
-            "ToPort": 10000
+        "PortRanges": [
+            {
+                "FromPort": 5000,
+                "ToPort": 10000
+            }
         ],
-        "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz"
+        "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz"
     }
 }
 ```
@@ -260,8 +262,8 @@ The following `create-endpoint-group` example creates an endpoint group with one
 
 ```
 aws globalaccelerator create-endpoint-group \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz}} \
-    --endpoint-group-region {{us-east-1}} \
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz}} \
+    --endpoint-group-region {{us-west-2}} \
     --endpoint-configurations {{EndpointId=i-1234567890abcdef0,Weight=128}}
 ```
 Output:
@@ -276,8 +278,8 @@ Output:
                 "EndpointId": "i-1234567890abcdef0"
             }
         ],
-        "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu",
-        "EndpointGroupRegion": "us-east-1"
+        "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/098765zyxwvu",
+        "EndpointGroupRegion": "us-west-2"
     }
 }
 ```
@@ -295,7 +297,7 @@ The following `create-listener` example creates a listener with two ports.
 
 ```
 aws globalaccelerator create-listener \
-    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --port-ranges {{FromPort=80,ToPort=80}} {{FromPort=81,ToPort=81}} \
     --protocol {{TCP}}
 ```
@@ -316,7 +318,7 @@ Output:
         ],
         "ClientAffinity": "NONE",
         "Protocol": "TCP",
-        "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz"
+        "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz"
     }
 }
 ```
@@ -334,7 +336,7 @@ The following `deny-custom-routing-traffic` example specifies destination addres
 
 ```
 aws globalaccelerator deny-custom-routing-traffic \
-    --endpoint-group-arn {{"arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/ab88888example"}} \
+    --endpoint-group-arn {{"arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/ab88888example"}} \
     --endpoint-id {{"subnet-abcd123example"}} \
     --destination-addresses {{"198.51.100.52"}}
 ```
@@ -379,16 +381,16 @@ The following `describe-accelerator-attributes` example retrieves the attribute 
 
 ```
 aws globalaccelerator describe-accelerator-attributes \
-    --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "AcceleratorAttributes": {
-        "FlowLogsEnabled": true
-        "FlowLogsS3Bucket": flowlogs-abc
-        "FlowLogsS3Prefix": bucketprefix-abc
+        "FlowLogsEnabled": true,
+        "FlowLogsS3Bucket": "flowlogs-abc",
+        "FlowLogsS3Prefix": "bucketprefix-abc"
     }
 }
 ```
@@ -406,14 +408,14 @@ The following `describe-accelerator` example retrieves the details about the spe
 
 ```
 aws globalaccelerator describe-accelerator \
-    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "Accelerator": {
-        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",
+        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "IpAddressType": "IPV4",
         "Name": "ExampleAccelerator",
         "Enabled": true,
@@ -447,7 +449,7 @@ The following `describe-custom-routing-accelerator-attributes` example describes
 
 ```
 aws globalaccelerator describe-custom-routing-accelerator-attributes \
-   --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -472,14 +474,14 @@ The following `describe-custom-routing-accelerator` example retrieves the detail
 
 ```
 aws globalaccelerator describe-custom-routing-accelerator \
-    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "Accelerator": {
-        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",
+        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "IpAddressType": "IPV4",
         "Name": "ExampleCustomRoutingAccelerator",
         "Enabled": true,
@@ -513,15 +515,15 @@ The following `describe-custom-routing-endpoint-group` example describes an endp
 
 ```
 aws globalaccelerator describe-custom-routing-endpoint-group \
-    --endpoint-group-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz/endpoint-group/ab88888example}}
+    --endpoint-group-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/6789vxyz/endpoint-group/ab88888example}}
 ```
 Output:
 
 ```
 {
     "EndpointGroup": {
-        "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz/endpoint-group/ab88888example",
-        "EndpointGroupRegion": "us-east-2",
+        "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/6789vxyz/endpoint-group/ab88888example",
+        "EndpointGroupRegion": "us-west-2",
         "DestinationDescriptions": [
             {
                 "FromPort": 5000,
@@ -553,7 +555,7 @@ The following `describe-custom-routing-listener` example describes a listener fo
 
 ```
 aws globalaccelerator describe-custom-routing-listener \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234}}
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234}}
 ```
 Output:
 
@@ -561,10 +563,12 @@ Output:
 {
     "Listener": {
         "PortRanges": [
-            "FromPort": 5000,
-            "ToPort": 10000
+            {
+                "FromPort": 5000,
+                "ToPort": 10000
+            }
         ],
-        "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234"
+        "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234"
     }
 }
 ```
@@ -582,7 +586,7 @@ The following `describe-endpoint-group` example retrieves details about an endpo
 
 ```
 aws globalaccelerator describe-endpoint-group \
-    --endpoint-group-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz-vxyz-6789-vxyz-6789lmnopqrs/endpoint-group/ab88888example}}
+    --endpoint-group-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/endpoint-group/ab88888example}}
 ```
 Output:
 
@@ -597,15 +601,15 @@ Output:
         },
         {
             "Weight": 128,
-            "EndpointId": "arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/app/ALBTesting/alb01234567890xyz"
+            "EndpointId": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/ALBTesting/alb01234567890xyz"
         },
         {
             "Weight": 128,
-            "EndpointId": "arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/net/NLBTesting/alb01234567890qrs"
+            "EndpointId": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLBTesting/alb01234567890qrs"
         }
         ],
-        "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz-vxyz-6789-vxyz-6789lmnopqrs/endpoint-group/4321abcd-abcd-4321-abcd-4321abcdefg",
-        "EndpointGroupRegion": "us-east-1"
+        "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/endpoint-group/4321abcd-abcd-4321-abcd-4321abcdefg",
+        "EndpointGroupRegion": "us-west-2"
     }
 }
 ```
@@ -623,14 +627,14 @@ The following `describe-listener` example describes a listener.
 
 ```
 aws globalaccelerator describe-listener \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234}}
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234}}
 ```
 Output:
 
 ```
 {
     "Listener": {
-        "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234",
+        "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234",
         "PortRanges": [
             {
                 "FromPort": 80,
@@ -663,7 +667,7 @@ Output:
 {
     "Accelerators": [
         {
-            "AcceleratorArn": "arn:aws:globalaccelerator::012345678901:accelerator/5555abcd-abcd-5555-abcd-5555EXAMPLE1",
+            "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "TestAccelerator",
             "IpAddressType": "IPV4",
             "Enabled": true,
@@ -682,7 +686,7 @@ Output:
             "LastModifiedTime": 1569375641.0
         },
         {
-            "AcceleratorArn": "arn:aws:globalaccelerator::888888888888:accelerator/8888abcd-abcd-8888-abcd-8888EXAMPLE2",
+            "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "ExampleAccelerator",
             "IpAddressType": "IPV4",
             "Enabled": true,
@@ -699,21 +703,21 @@ Output:
             "Status": "DEPLOYED",
             "CreatedTime": 1575585564.0,
             "LastModifiedTime": 1579809243.0
-        },
+        }
     ]
 }
 ```
 For more information, see [Accelerators in AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/about-accelerators.html) in the *AWS Global Accelerator Developer Guide*.
 +  For API details, see [ListAccelerators](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/globalaccelerator/list-accelerators.html) in *AWS CLI Command Reference*.
 
-### `list-byoip-cidr`
-<a name="global-accelerator_ListByoipCidr_cli_2_topic"></a>
+### `list-byoip-cidrs`
+<a name="global-accelerator_ListByoipCidrs_cli_2_topic"></a>
 
-The following code example shows how to use `list-byoip-cidr`.
+The following code example shows how to use `list-byoip-cidrs`.
 
 **AWS CLI**
 **To list your address ranges**
-The following `list-byoip-cidr` example list the bring your own IP address (BYOIP) address ranges that you've provisioned for use with Global Accelerator.
+The following `list-byoip-cidrs` example list the bring your own IP address (BYOIP) address ranges that you've provisioned for use with Global Accelerator.
 
 ```
 aws globalaccelerator list-byoip-cidrs
@@ -726,7 +730,7 @@ Output:
         {
             "Cidr": "198.51.100.0/24",
             "State": "READY"
-        }
+        },
         {
             "Cidr": "203.0.113.25/24",
             "State": "READY"
@@ -735,7 +739,7 @@ Output:
 }
 ```
 For more information, see [Bring your own IP address in AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip.html) in the *AWS Global Accelerator Developer Guide*.
-+  For API details, see [ListByoipCidr](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/globalaccelerator/list-byoip-cidr.html) in *AWS CLI Command Reference*.
++  For API details, see [ListByoipCidrs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/globalaccelerator/list-byoip-cidrs.html) in *AWS CLI Command Reference*.
 
 ### `list-custom-routing-accelerators`
 <a name="global-accelerator_ListCustomRoutingAccelerators_cli_2_topic"></a>
@@ -755,7 +759,7 @@ Output:
 {
     "Accelerators": [
         {
-            "AcceleratorArn": "arn:aws:globalaccelerator::012345678901:accelerator/5555abcd-abcd-5555-abcd-5555EXAMPLE1",
+            "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "TestCustomRoutingAccelerator",
             "IpAddressType": "IPV4",
             "Enabled": true,
@@ -774,7 +778,7 @@ Output:
             "LastModifiedTime": 1569375641.0
         },
         {
-            "AcceleratorArn": "arn:aws:globalaccelerator::888888888888:accelerator/8888abcd-abcd-8888-abcd-8888EXAMPLE2",
+            "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "ExampleCustomRoutingAccelerator",
             "IpAddressType": "IPV4",
             "Enabled": true,
@@ -791,7 +795,7 @@ Output:
             "Status": "DEPLOYED",
             "CreatedTime": 1575585564.0,
             "LastModifiedTime": 1579809243.0
-        },
+        }
     ]
 }
 ```
@@ -809,7 +813,7 @@ The following `list-custom-routing-endpoint-groups` example lists the endpoint g
 
 ```
 aws globalaccelerator list-custom-routing-endpoint-groups \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234}}
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234}}
 ```
 Output:
 
@@ -817,8 +821,8 @@ Output:
 {
     "EndpointGroups": [
         {
-            "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234/endpoint-group/ab88888example",
-            "EndpointGroupRegion": "eu-central-1",
+            "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234/endpoint-group/ab88888example",
+            "EndpointGroupRegion": "us-west-2",
             "DestinationDescriptions": [
                 {
                     "FromPort": 80,
@@ -828,7 +832,7 @@ Output:
                         "UDP"
                     ]
                 }
-            ]
+            ],
             "EndpointDescriptions": [
                 {
                     "EndpointId": "subnet-abcd123example"
@@ -852,7 +856,7 @@ The following `list-custom-routing-listeners` example lists the listeners for a 
 
 ```
 aws globalaccelerator list-custom-routing-listeners \
-    --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -860,14 +864,13 @@ Output:
 {
     "Listeners": [
         {
-            "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234",
+            "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234",
             "PortRanges": [
                 {
                     "FromPort": 5000,
                     "ToPort": 10000
                 }
-            ],
-            "Protocol": "TCP"
+            ]
         }
     ]
 }
@@ -895,7 +898,7 @@ Output:
 {
     "DestinationPortMappings": [
         {
-            "AcceleratorArn": "arn:aws:globalaccelerator::402092451327:accelerator/24ea29b8-d750-4489-8919-3095f3c4b0a7",
+            "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "AcceleratorSocketAddresses": [
                     {
                         "IpAddress": "192.0.2.250",
@@ -906,7 +909,7 @@ Output:
                         "Port": 65514
                     }
                 ],
-                "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/ab88888example",
+                "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/ab88888example",
                 "EndpointId": "subnet-abcd123example",
                 "EndpointGroupRegion": "us-west-2",
                 "DestinationSocketAddress": {
@@ -933,7 +936,7 @@ The following `list-custom-routing-port-mappings` example provides a partial lis
 
 ```
 aws globalaccelerator list-custom-routing-port-mappings \
-    --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -942,7 +945,7 @@ Output:
     "PortMappings": [
         {
             "AcceleratorPort": 40480,
-            "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu",
+            "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/098765zyxwvu",
             "EndpointId": "subnet-1234567890abcdef0",
             "DestinationSocketAddress": {
                 "IpAddress": "192.0.2.250",
@@ -953,14 +956,14 @@ Output:
                 "UDP"
             ],
             "DestinationTrafficState": "ALLOW"
-        }
+        },
         {
             "AcceleratorPort": 40481,
-            "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz/endpoint-group/098765zyxwvu",
+            "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz/endpoint-group/098765zyxwvu",
             "EndpointId": "subnet-1234567890abcdef0",
             "DestinationSocketAddress": {
-               "IpAddress": "192.0.2.251",
-              "Port": 80
+                "IpAddress": "192.0.2.251",
+                "Port": 80
             },
             "Protocols": [
                 "TCP",
@@ -984,8 +987,8 @@ The following code example shows how to use `list-endpoint-groups`.
 The following `list-endpoint-groups` example lists the endpoint groups for a listener. This listener has two endpoint groups.
 
 ```
-aws globalaccelerator --region {{us-west-2}} {{list-endpoint-groups}} \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234}}
+aws globalaccelerator list-endpoint-groups \
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234}}
 ```
 Output:
 
@@ -993,7 +996,7 @@ Output:
 {
     "EndpointGroups": [
         {
-            "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234/endpoint-group/ab88888example",
+            "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234/endpoint-group/ab88888example",
             "EndpointGroupRegion": "eu-central-1",
             "EndpointDescriptions": [],
             "TrafficDialPercentage": 100.0,
@@ -1001,10 +1004,10 @@ Output:
             "HealthCheckProtocol": "TCP",
             "HealthCheckIntervalSeconds": 30,
             "ThresholdCount": 3
-        }
+        },
         {
-            "EndpointGroupArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234/endpoint-group/ab99999example",
-            "EndpointGroupRegion": "us-east-1",
+            "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234/endpoint-group/ab99999example",
+            "EndpointGroupRegion": "us-west-2",
             "EndpointDescriptions": [],
             "TrafficDialPercentage": 50.0,
             "HealthCheckPort": 80,
@@ -1029,7 +1032,7 @@ The following `list-listeners` example lists the listeners for an accelerator.
 
 ```
 aws globalaccelerator list-listeners \
-    --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1037,7 +1040,7 @@ Output:
 {
     "Listeners": [
         {
-            "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/abcdef1234",
+            "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/abcdef1234",
             "PortRanges": [
                 {
                     "FromPort": 80,
@@ -1064,7 +1067,7 @@ The following `list-tags-for-resource` example lists the tags for a specific acc
 
 ```
 aws globalaccelerator list-tags-for-resource \
-    --resource-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}}
+    --resource-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -1119,7 +1122,7 @@ The following `tag-resource` example adds tags Name and Project to an accelerato
 
 ```
 aws globalaccelerator tag-resource \
-    --resource-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --resource-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tags Key="Name",Value="Example Name" Key="Project",Value="Example Project"
 ```
 This command produces no output.
@@ -1137,7 +1140,7 @@ The following `untag-resource` example removes the tags Name and Project from an
 
 ```
 aws globalaccelerator untag-resource \
-    --resource-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --resource-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag-keys Key="Name" Key="Project"
 ```
 This command produces no output.
@@ -1155,7 +1158,7 @@ The following `update-accelerator-attributes` example updates an accelerator to 
 
 ```
 aws globalaccelerator update-accelerator-attributes \
-    --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --flow-logs-enabled \
     --flow-logs-s3-bucket {{flowlogs-abc}} \
     --flow-logs-s3-prefix {{bucketprefix-abc}}
@@ -1165,9 +1168,9 @@ Output:
 ```
 {
     "AcceleratorAttributes": {
-        "FlowLogsEnabled": true
-        "FlowLogsS3Bucket": flowlogs-abc
-        "FlowLogsS3Prefix": bucketprefix-abc
+        "FlowLogsEnabled": true,
+        "FlowLogsS3Bucket": "flowlogs-abc",
+        "FlowLogsS3Prefix": "bucketprefix-abc"
     }
 }
 ```
@@ -1185,7 +1188,7 @@ The following `update-accelerator` example modifies an accelerator to change the
 
 ```
 aws globalaccelerator update-accelerator \
-    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --name {{ExampleAcceleratorNew}}
 ```
 Output:
@@ -1193,7 +1196,7 @@ Output:
 ```
 {
     "Accelerator": {
-        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",
+        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "IpAddressType": "IPV4",
         "Name": "ExampleAcceleratorNew",
         "Enabled": true,
@@ -1227,7 +1230,7 @@ The following `update-custom-routing-accelerator-attributes` example updates a c
 
 ```
 aws globalaccelerator update-custom-routing-accelerator-attributes \
-    --accelerator-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --flow-logs-enabled \
     --flow-logs-s3-bucket {{flowlogs-abc}} \
     --flow-logs-s3-prefix {{bucketprefix-abc}}
@@ -1237,9 +1240,9 @@ Output:
 ```
 {
     "AcceleratorAttributes": {
-        "FlowLogsEnabled": true
-        "FlowLogsS3Bucket": flowlogs-abc
-        "FlowLogsS3Prefix": bucketprefix-abc
+        "FlowLogsEnabled": true,
+        "FlowLogsS3Bucket": "flowlogs-abc",
+        "FlowLogsS3Prefix": "bucketprefix-abc"
     }
 }
 ```
@@ -1256,8 +1259,8 @@ The following code example shows how to use `update-custom-routing-accelerator`.
 The following `update-custom-routing-accelerator` example modifies a custom routing accelerator to change the accelerator name.
 
 ```
-aws globalaccelerator --region {{us-west-2}} {{update-custom-routing-accelerator}} \
-    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh}} \
+aws globalaccelerator update-custom-routing-accelerator \
+    --accelerator-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --name {{ExampleCustomRoutingAcceleratorNew}}
 ```
 Output:
@@ -1265,7 +1268,7 @@ Output:
 ```
 {
     "Accelerator": {
-        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh",
+        "AcceleratorArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "IpAddressType": "IPV4",
         "Name": "ExampleCustomRoutingAcceleratorNew",
         "Enabled": true,
@@ -1299,7 +1302,7 @@ The following `update-custom-routing-listener` example updates a listener to cha
 
 ```
 aws globalaccelerator update-custom-routing-listener \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz}} \
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz}} \
     --port-ranges {{FromPort=10000,ToPort=20000}}
 ```
 Output:
@@ -1307,14 +1310,13 @@ Output:
 ```
 {
     "Listener": {
-        "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz
+        "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz",
         "PortRanges": [
             {
                 "FromPort": 10000,
                 "ToPort": 20000
             }
-        ],
-        "Protocol": "TCP"
+        ]
     }
 }
 ```
@@ -1332,11 +1334,8 @@ The following `update-endpoint-group` example adds three endpoints to an endpoin
 
 ```
 aws globalaccelerator update-endpoint-group \
-    --endpoint-group-arn {{arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz-vxyz-6789-vxyz-6789lmnopqrs/endpoint-group/ab88888example}} \
-    --endpoint-configurations \
-        {{EndpointId=eipalloc-eip01234567890abc,Weight=128}} \
-        {{EndpointId=arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/app/ALBTesting/alb01234567890xyz,Weight=128}} \
-        {{EndpointId=arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/net/NLBTesting/alb01234567890qrs,Weight=128}}
+    --endpoint-group-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/endpoint-group/ab88888example}} \
+    --endpoint-configurations {{EndpointId=eipalloc-eip01234567890abc,Weight=128}} {{EndpointId=arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/ALBTesting/alb01234567890xyz,Weight=128}} {{EndpointId=arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLBTesting/alb01234567890qrs,Weight=128}}
 ```
 Output:
 
@@ -1351,15 +1350,15 @@ Output:
             },
             {
                 "Weight": 128,
-                "EndpointId": "arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/app/ALBTesting/alb01234567890xyz"
+                "EndpointId": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/ALBTesting/alb01234567890xyz"
             },
             {
                 "Weight": 128,
-                "EndpointId": "arn:aws:elasticloadbalancing:us-east-1:000123456789:loadbalancer/net/NLBTesting/alb01234567890qrs"
+                "EndpointId": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/NLBTesting/alb01234567890qrs"
             }
         ],
-        "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/6789vxyz-vxyz-6789-vxyz-6789lmnopqrs/endpoint-group/4321abcd-abcd-4321-abcd-4321abcdefg",
-        "EndpointGroupRegion": "us-east-1"
+        "EndpointGroupArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/endpoint-group/4321abcd-abcd-4321-abcd-4321abcdefg",
+        "EndpointGroupRegion": "us-west-2"
     }
 }
 ```
@@ -1377,7 +1376,7 @@ The following `update-listener` example updates a listener to change the port to
 
 ```
 aws globalaccelerator update-listener \
-    --listener-arn {{arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz}} \
+    --listener-arn {{arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz}} \
     --port-ranges {{FromPort=100,ToPort=100}}
 ```
 Output:
@@ -1385,7 +1384,7 @@ Output:
 ```
 {
     "Listener": {
-        "ListenerArn": "arn:aws:globalaccelerator::012345678901:accelerator/1234abcd-abcd-1234-abcd-1234abcdefgh/listener/0123vxyz
+        "ListenerArn": "arn:aws:globalaccelerator::123456789012:accelerator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/listener/0123vxyz",
         "PortRanges": [
             {
                 "FromPort": 100,

@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[PassiveIp](#cfn-transfer-server-protocoldetails-passiveip)" : {{String}},
   "[ProxyConfig](#cfn-transfer-server-protocoldetails-proxyconfig)" : {{ProxyConfig}},
   "[SetStatOption](#cfn-transfer-server-protocoldetails-setstatoption)" : {{String}},
+  "[SftpPorts](#cfn-transfer-server-protocoldetails-sftpports)" : {{[ SftpPortWithOptions, ... ]}},
   "[TlsSessionResumptionMode](#cfn-transfer-server-protocoldetails-tlssessionresumptionmode)" : {{String}}
 }
 ```
@@ -45,6 +46,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ProxyConfig](#cfn-transfer-server-protocoldetails-proxyconfig): {{
     ProxyConfig}}
   [SetStatOption](#cfn-transfer-server-protocoldetails-setstatoption): {{String}}
+  [SftpPorts](#cfn-transfer-server-protocoldetails-sftpports): {{
+    - SftpPortWithOptions}}
   [TlsSessionResumptionMode](#cfn-transfer-server-protocoldetails-tlssessionresumptionmode): {{String}}
 ```
 
@@ -88,6 +91,20 @@ If you want to preserve the original timestamp for your file, and modify other f
 *Type*: String
 *Allowed values*: `DEFAULT | ENABLE_NO_OP`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SftpPorts`  <a name="cfn-transfer-server-protocoldetails-sftpports"></a>
+A property used with Transfer Family servers that use the SFTP protocol and have `PUBLIC` endpoints. This property accepts a list of up to three port configurations that the service opens on the server endpoint.
+Each entry in the list consists of two parameters, the `SftpPort` and the `CommunicationMode`. The `SftpPort` takes any integer from 2000 to 65535, or 22. `CommunicationMode` can be one of the following options:
++ `SERVER_TALK_FIRST`: The server responds to initial TCP connections first. Many older clients expect that an SFTP server responds with its server string before starting SSH negotiations.
++ `CLIENT_TALK_FIRST`: The server responds to the initial TCP connection only after receiving a data packet. Most modern clients support this behavior and send their client string along with the initial data packets for SSH negotiation. Additionally, this mode is more resilient to TCP retransmissions that can occur during the initial TCP connection.
+The following is an `SftpPorts` example for port 2222 with `CLIENT_TALK_FIRST`.
+ `[ { "SftpPort": 2222, "CommunicationMode": "CLIENT_TALK_FIRST" } ]`
+If you don't specify any configurations during `CreateServer`, the service uses port 22 with `SERVER_TALK_FIRST` by default.
+*Required*: No
+*Type*: Array of [SftpPortWithOptions](aws-properties-transfer-server-sftpportwithoptions.md)
+*Minimum*: `1`
+*Maximum*: `3`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `TlsSessionResumptionMode`  <a name="cfn-transfer-server-protocoldetails-tlssessionresumptionmode"></a>
 A property used with Transfer Family servers that use the FTPS protocol. TLS Session Resumption provides a mechanism to resume or share a negotiated secret key between the control and data connection for an FTPS session. `TlsSessionResumptionMode` determines whether or not the server resumes recent, negotiated sessions through a unique session ID. This property is available during `CreateServer` and `UpdateServer` calls. If a `TlsSessionResumptionMode` value is not specified during `CreateServer`, it is set to `ENFORCED` by default.

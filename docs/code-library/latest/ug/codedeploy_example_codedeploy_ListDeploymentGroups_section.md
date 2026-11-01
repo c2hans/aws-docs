@@ -17,7 +17,8 @@ The following code examples show how to use `ListDeploymentGroups`.
 The following `list-deployment-groups` example displays information about all deployment groups that are associated with the specified application.
 
 ```
-aws deploy list-deployment-groups --application-name {{WordPress_App}}
+aws deploy list-deployment-groups \
+    --application-name {{WordPress_App}}
 ```
 Output:
 
@@ -30,6 +31,7 @@ Output:
     ]
 }
 ```
+For more information, see [View deployment group details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeploymentGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployment-groups.html) in *AWS CLI Command Reference*.
 
 ------

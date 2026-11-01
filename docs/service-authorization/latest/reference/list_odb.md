@@ -135,12 +135,6 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
-- **   DisassociateVirtualMachinesFromExadbVmCluster  **
-  - **IAM action:**  [odb:DisassociateVirtualMachinesFromExadbVmCluster](#list_odb-action-DisassociateVirtualMachinesFromExadbVmCluster)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
-
 - **   FailoverAutonomousDatabase  **
   - **IAM action:**  [odb:FailoverAutonomousDatabase](#list_odb-action-FailoverAutonomousDatabase)
   - **Condition key:**

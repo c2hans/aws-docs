@@ -21,6 +21,8 @@ aws elbv2 add-tags \
     --resource-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
     --tags {{"Key=project,Value=lima"}} {{"Key=department,Value=digital-media"}}
 ```
+This command produces no output.
+For more information, see [Tag an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-tags.html) in the *Application Load Balancers Guide*.
 +  For API details, see [AddTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/add-tags.html) in *AWS CLI Command Reference*.
 
 ------

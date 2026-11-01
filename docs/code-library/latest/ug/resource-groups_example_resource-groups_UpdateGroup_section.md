@@ -27,7 +27,7 @@ Output:
 {
     "Group": {
         "GroupArn": "arn:aws:resource-groups:us-west-2:123456789012:group/tbq-WebServer",
-        "Name": "tbq-WebServer"
+        "Name": "tbq-WebServer",
         "Description": "Resource group for all web server resources."
     }
 }

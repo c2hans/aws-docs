@@ -14,21 +14,17 @@ The following code examples show how to use `DisableStageTransition`.
 
 **AWS CLI**
 **To disable a transition to a stage in a pipeline**
-This example disables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
-Command:
+The following `disable-stage-transition` example disables transitions into the Beta stage of the MyFirstPipeline pipeline in AWS CodePipeline.
 
 ```
 aws codepipeline disable-stage-transition \
---pipeline-name {{MyFirstPipeline}} \
---stage-name {{Beta}}  \
---transition-type {{Inbound}} \
---reason {{"An example reason"}}
+    --pipeline-name {{MyFirstPipeline}} \
+    --stage-name {{Beta}}  \
+    --transition-type {{Inbound}} \
+    --reason {{"An example reason"}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Working with stage transitions in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/transitions.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DisableStageTransition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/disable-stage-transition.html) in *AWS CLI Command Reference*.
 
 ------

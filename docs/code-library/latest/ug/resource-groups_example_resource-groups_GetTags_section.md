@@ -31,6 +31,7 @@ Output:
     }
 }
 ```
+For more information, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [GetTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/get-tags.html) in *AWS CLI Command Reference*.
 
 ------

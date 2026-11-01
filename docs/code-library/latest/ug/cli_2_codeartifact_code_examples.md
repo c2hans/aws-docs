@@ -40,10 +40,10 @@ Output:
 {
     "repository": {
         "name": "test-repo",
-        "administratorAccount": "111122223333",
+        "administratorAccount": "123456789012",
         "domainName": "test-domain",
-        "domainOwner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+        "domainOwner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
         "upstreams": [],
         "externalConnections": [
             {
@@ -65,7 +65,7 @@ The following code example shows how to use `copy-package-versions`.
 
 **AWS CLI**
 **To copy package versions from one repository to another**
-The following `copy-package-versions` moves versions 4.0.0 and 5.0.0 of a package named test-package from my-repo to test-repo.
+The following `copy-package-versions` example copies versions 4.0.0 and 5.0.0 of a package named test-package from my-repo to test-repo.
 
 ```
 aws codeartifact copy-package-versions \
@@ -80,20 +80,17 @@ Output:
 
 ```
 {
-    "format": "npm",
-    "package": "test-package",
-    "versions": [
-        {
-        "version": "5.0.0",
-        "revision": "REVISION-1-SAMPLE-6C81EFF7DA55CC",
-        "status": "Published"
+    "successfulVersions": {
+        "5.0.0": {
+            "revision": "REVISION-1-SAMPLE-6C81EFF7DA55CC",
+            "status": "Published"
         },
-        {
-        "version": "4.0.0",
-        "revision": "REVISION-2-SAMPLE-55C752BEE772FC",
-        "status": "Published"
+        "4.0.0": {
+            "revision": "REVISION-2-SAMPLE-55C752BEE772FC",
+            "status": "Published"
         }
-    ]
+    },
+    "failedVersions": {}
 }
 ```
 For more information, see [Copy packages between repositories](https://docs.aws.amazon.com/codeartifact/latest/ug/copy-package.html) in the *AWS CodeArtifact User Guide*.
@@ -118,11 +115,11 @@ Output:
 {
     "domain": {
         "name": "test-domain",
-        "owner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:domain/test-domain",
+        "owner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:domain/test-domain",
         "status": "Active",
         "createdTime": "2020-10-20T13:16:48.559000-04:00",
-        "encryptionKey": "arn:aws:kms:us-west-2:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "encryptionKey": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "repositoryCount": 0,
         "assetSizeBytes": 0
     }
@@ -143,7 +140,7 @@ The following `create-repository` example creates a repository named test-repo i
 ```
 aws codeartifact create-repository \
     --domain {{test-domain}} \
-    --domain-owner {{111122223333}} \
+    --domain-owner {{123456789012}} \
     --repository {{test-repo}} \
     --description {{"This is a test repository."}}
 ```
@@ -153,10 +150,10 @@ Output:
 {
     "repository": {
         "name": "test-repo",
-        "administratorAccount": "111122223333",
+        "administratorAccount": "123456789012",
         "domainName": "test-domain",
-        "domainOwner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+        "domainOwner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
         "description": "This is a test repository.",
         "upstreams": [],
         "externalConnections": []
@@ -183,23 +180,10 @@ Output:
 
 ```
 {
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Sid": "BasicDomainPolicy",
-            "Action": [
-                "codeartifact:GetDomainPermissionsPolicy",
-                "codeartifact:ListRepositoriesInDomain",
-                "codeartifact:GetAuthorizationToken",
-                "codeartifact:CreateRepository"
-            ],
-            "Effect": "Allow",
-            "Resource": "*",
-            "Principal": {
-                "AWS": "arn:aws:iam::111122223333:root"
-            }
-        }
-    ]
+    "policy": {
+        "resourceArn": "arn:aws:codeartifact:us-west-2:123456789012:domain/test-domain",
+        "document": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"BasicDomainPolicy\",\"Action\":[\"codeartifact:GetDomainPermissionsPolicy\",\"codeartifact:ListRepositoriesInDomain\",\"codeartifact:GetAuthorizationToken\",\"codeartifact:CreateRepository\"],\"Effect\":\"Allow\",\"Resource\":\"*\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"}}]}"
+    }
 }
 ```
 For more information, see [Delete a domain policy](https://docs.aws.amazon.com/codeartifact/latest/ug/domain-policies.html#deleting-a-domain-policy) in the *AWS CodeArtifact User Guide*.
@@ -224,11 +208,11 @@ Output:
 {
     "domain": {
         "name": "test-domain",
-        "owner": "417498243647",
-        "arn": "arn:aws:codeartifact:us-west-2:417498243647:domain/test-domain",
+        "owner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:domain/test-domain",
         "status": "Deleted",
         "createdTime": "2020-10-20T13:16:48.559000-04:00",
-        "encryptionKey": "arn:aws:kms:us-west-2:417498243647:key/c9fe2447-0795-4fda-afbe-8464574ae162",
+        "encryptionKey": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "repositoryCount": 0,
         "assetSizeBytes": 0
     }
@@ -288,27 +272,10 @@ Output:
 
 ```
 {
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::111122223333:root"
-            },
-            "Action": [
-                "codeartifact:DescribePackageVersion",
-                "codeartifact:DescribeRepository",
-                "codeartifact:GetPackageVersionReadme",
-                "codeartifact:GetRepositoryEndpoint",
-                "codeartifact:ListPackages",
-                "codeartifact:ListPackageVersions",
-                "codeartifact:ListPackageVersionAssets",
-                "codeartifact:ListPackageVersionDependencies",
-                "codeartifact:ReadFromRepository"
-            ],
-            "Resource": "*"
-        }
-    ]
+    "policy": {
+        "resourceArn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
+        "document": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"},\"Action\":[\"codeartifact:DescribePackageVersion\",\"codeartifact:DescribeRepository\",\"codeartifact:GetPackageVersionReadme\",\"codeartifact:GetRepositoryEndpoint\",\"codeartifact:ListPackages\",\"codeartifact:ListPackageVersions\",\"codeartifact:ListPackageVersionAssets\",\"codeartifact:ListPackageVersionDependencies\",\"codeartifact:ReadFromRepository\"],\"Resource\":\"*\"}]}"
+    }
 }
 ```
 For more information, see [Delete a policy](https://docs.aws.amazon.com/codeartifact/latest/ug/repo-policies.html#deleting-a-policy) in the *AWS CodeArtifact User Guide*.
@@ -334,10 +301,10 @@ Output:
 {
     "repository": {
         "name": "test-repo",
-        "administratorAccount": "111122223333",
+        "administratorAccount": "123456789012",
         "domainName": "test-domain",
-        "domainOwner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+        "domainOwner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
         "description": "This is a test repository",
         "upstreams": [],
         "externalConnections": []
@@ -366,14 +333,14 @@ Output:
 {
     "domain": {
         "name": "test-domain",
-        "owner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:domain/test-domain",
+        "owner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:domain/test-domain",
         "status": "Active",
         "createdTime": "2020-10-20T13:16:48.559000-04:00",
-        "encryptionKey": "arn:aws:kms:us-west-2:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "encryptionKey": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "repositoryCount": 2,
         "assetSizeBytes": 0,
-        "s3BucketArn": "arn:aws:s3:::assets-111122223333-us-west-2"
+        "s3BucketArn": "arn:aws:s3:::amzn-s3-demo-bucket"
     }
 }
 ```
@@ -400,10 +367,10 @@ Output:
 {
     "repository": {
         "name": "test-repo",
-        "administratorAccount": "111122223333",
+        "administratorAccount": "123456789012",
         "domainName": "test-domain",
-        "domainOwner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+        "domainOwner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
         "description": "This is a test repository.",
         "upstreams": [],
         "externalConnections": []
@@ -434,10 +401,10 @@ Output:
 {
     "repository": {
         "name": "test-repo",
-        "administratorAccount": "111122223333",
+        "administratorAccount": "123456789012",
         "domainName": "test-domain",
-        "domainOwner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+        "domainOwner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
         "upstreams": [],
         "externalConnections": []
     }
@@ -499,7 +466,7 @@ Output:
 ```
 This command will return the authorization token. You can store the output in an environment variable when calling the command.
 ```
-For more information, see [Configure pip without the login command](https://docs.aws.amazon.com/codeartifact/latest/ug/python-configure-without-pip.html) in the *AWS CodeArtifact User Guide*.
+For more information, see [Configure and use pip with CodeArtifact](https://docs.aws.amazon.com/codeartifact/latest/ug/python-configure-pip.html) in the *AWS CodeArtifact User Guide*.
 +  For API details, see [GetAuthorizationToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeartifact/get-authorization-token.html) in *AWS CLI Command Reference*.
 
 ### `get-domain-permissions-policy`
@@ -519,23 +486,10 @@ Output:
 
 ```
 {
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Sid": "BasicDomainPolicy",
-            "Action": [
-                "codeartifact:GetDomainPermissionsPolicy",
-                "codeartifact:ListRepositoriesInDomain",
-                "codeartifact:GetAuthorizationToken",
-                "codeartifact:CreateRepository"
-            ],
-            "Effect": "Allow",
-            "Resource": "*",
-            "Principal": {
-                "AWS": "arn:aws:iam::111122223333:root"
-            }
-        }
-    ]
+    "policy": {
+        "resourceArn": "arn:aws:codeartifact:us-west-2:123456789012:domain/test-domain",
+        "document": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"BasicDomainPolicy\",\"Action\":[\"codeartifact:GetDomainPermissionsPolicy\",\"codeartifact:ListRepositoriesInDomain\",\"codeartifact:GetAuthorizationToken\",\"codeartifact:CreateRepository\"],\"Effect\":\"Allow\",\"Resource\":\"*\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"}}]}"
+    }
 }
 ```
 For more information, see [Read a domain policy](https://docs.aws.amazon.com/codeartifact/latest/ug/domain-policies.html#reading-a-domain-policy) in the *AWS CodeArtifact User Guide*.
@@ -551,20 +505,18 @@ The following code example shows how to use `get-package-version-asset`.
 The following `get-package-version-asset` example retrieves the `package.tgz` asset for version 4.0.0 of an npm package named test-package.
 
 ```
-aws codeartifact get-package-version-asset \
+aws codeartifact get-package-version-asset {{outfileName}} \
     --domain {{test-domain}} \
     --repository {{test-repo}} \
     --format {{npm}} \
     --package {{test-package}} \
     --package-version {{4.0.0}} \
-    --asset '{{package.tgz}}' \
-    {{outfileName}}
+    --asset '{{package.tgz}}'
 ```
+The command also stores the raw asset in the file provided in place of `outfileName`.
 Output:
 
 ```
-The output for this command will also store the raw asset in the file provided in place of outfileName.
-
 {
     "assetName": "package.tgz",
     "packageVersion": "4.0.0",
@@ -598,7 +550,7 @@ Output:
     "format": "npm",
     "package": "test-package",
     "version": "4.0.0",
-    "readme": "<div align=\"center\">\n   <a href=\https://github.com/test-package/testpack\"> ... more content ... \n",
+    "readme": "<div align=\"center\">\n   <a href=\"https://github.com/test-package/testpack\">\n   </a>\n</div>\n",
     "versionRevision": "Ciqe5/9yicvkJT13b5/LdLpCyE6fqA7poa9qp+FilPs="
 }
 ```
@@ -648,27 +600,10 @@ Output:
 
 ```
 {
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::111122223333:root"
-            },
-            "Action": [
-                "codeartifact:DescribePackageVersion",
-                "codeartifact:DescribeRepository",
-                "codeartifact:GetPackageVersionReadme",
-                "codeartifact:GetRepositoryEndpoint",
-                "codeartifact:ListPackages",
-                "codeartifact:ListPackageVersions",
-                "codeartifact:ListPackageVersionAssets",
-                "codeartifact:ListPackageVersionDependencies",
-                "codeartifact:ReadFromRepository"
-            ],
-            "Resource": "*"
-        }
-    ]
+    "policy": {
+        "resourceArn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
+        "document": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:root\"},\"Action\":[\"codeartifact:DescribePackageVersion\",\"codeartifact:DescribeRepository\",\"codeartifact:GetPackageVersionReadme\",\"codeartifact:GetRepositoryEndpoint\",\"codeartifact:ListPackages\",\"codeartifact:ListPackageVersions\",\"codeartifact:ListPackageVersionAssets\",\"codeartifact:ListPackageVersionDependencies\",\"codeartifact:ReadFromRepository\"],\"Resource\":\"*\"}]}"
+    }
 }
 ```
 For more information, see [Read a policy](https://docs.aws.amazon.com/codeartifact/latest/ug/repo-policies.html#setting-a-policy) in the *AWS CodeArtifact User Guide*.
@@ -693,15 +628,15 @@ Output:
     "domains": [
         {
             "name": "my-domain",
-            "owner": "111122223333",
+            "owner": "123456789012",
             "status": "Active",
-            "encryptionKey": "arn:aws:kms:us-west-2:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+            "encryptionKey": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
             "name": "test-domain",
-            "owner": "111122223333",
+            "owner": "123456789012",
             "status": "Active",
-            "encryptionKey": "arn:aws:kms:us-west-2:111122223333:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+            "encryptionKey": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
@@ -836,7 +771,7 @@ Output:
         },
         {
             "version": "0.1.1",
-            "revision": "REVISION-SAMPLE-1-C7F4S5E9B772FC"",
+            "revision": "REVISION-SAMPLE-1-C7F4S5E9B772FC",
             "status": "Published"
         },
         {
@@ -872,7 +807,7 @@ Output:
         {
             "format": "npm",
             "package": "lodash"
-        }
+        },
         {
             "format": "python",
             "package": "test-package"
@@ -903,18 +838,18 @@ Output:
     "repositories": [
         {
             "name": "test-repo",
-            "administratorAccount": "111122223333",
+            "administratorAccount": "123456789012",
             "domainName": "test-domain",
-            "domainOwner": "111122223333",
-            "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+            "domainOwner": "123456789012",
+            "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
             "description": "This is a test repository."
         },
         {
             "name": "test-repo2",
-            "administratorAccount": "111122223333",
+            "administratorAccount": "123456789012",
             "domainName": "test-domain",
-            "domainOwner": "111122223333",
-            "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo2",
+            "domainOwner": "123456789012",
+            "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo2",
             "description": "This is a test repository."
         }
     ]
@@ -942,26 +877,26 @@ Output:
     "repositories": [
         {
             "name": "npm-store",
-            "administratorAccount": "111122223333",
+            "administratorAccount": "123456789012",
             "domainName": "my-domain",
-            "domainOwner": "111122223333",
-            "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/my-domain/npm-store",
+            "domainOwner": "123456789012",
+            "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/my-domain/npm-store",
             "description": "Provides npm artifacts from npm, Inc."
         },
         {
             "name": "target-repo",
-            "administratorAccount": "111122223333",
+            "administratorAccount": "123456789012",
             "domainName": "my-domain",
-            "domainOwner": "111122223333",
-            "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/my-domain/target-repo",
+            "domainOwner": "123456789012",
+            "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/my-domain/target-repo",
             "description": "test target repo"
         },
         {
             "name": "test-repo2",
-            "administratorAccount": "111122223333",
+            "administratorAccount": "123456789012",
             "domainName": "test-domain",
-            "domainOwner": "111122223333",
-            "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo2",
+            "domainOwner": "123456789012",
+            "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo2",
             "description": "This is a test repository."
         }
     ]
@@ -1008,12 +943,37 @@ aws codeartifact put-domain-permissions-policy \
     --domain {{test-domain}} \
     --policy-document {{file://PATH/TO/policy.json}}
 ```
+Contents of `policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ContributorPolicy",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": [
+                "codeartifact:CreateRepository",
+                "codeartifact:DescribeDomain",
+                "codeartifact:GetAuthorizationToken",
+                "codeartifact:GetDomainPermissionsPolicy",
+                "codeartifact:ListRepositoriesInDomain",
+                "sts:GetServiceBearerToken"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
 Output:
 
 ```
 {
     "policy": {
-        "resourceArn": "arn:aws:codeartifact:region-id:111122223333:domain/test-domain",
+        "resourceArn": "arn:aws:codeartifact:region-id:123456789012:domain/test-domain",
         "document": "{ ...policy document content...}",
         "revision": "MQlyyTQRASRU3HB58gBtSDHXG7Q3hvxxxxxxx="
     }
@@ -1037,12 +997,39 @@ aws codeartifact put-repository-permissions-policy \
     --repository {{test-repo}} \
     --policy-document {{file://PATH/TO/policy.json}}
 ```
+Contents of `policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": [
+                "codeartifact:DescribePackageVersion",
+                "codeartifact:DescribeRepository",
+                "codeartifact:GetPackageVersionReadme",
+                "codeartifact:GetRepositoryEndpoint",
+                "codeartifact:ListPackages",
+                "codeartifact:ListPackageVersions",
+                "codeartifact:ListPackageVersionAssets",
+                "codeartifact:ListPackageVersionDependencies",
+                "codeartifact:ReadFromRepository"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
 Output:
 
 ```
 {
     "policy": {
-        "resourceArn": "arn:aws:codeartifact:region-id:111122223333:repository/test-domain/test-repo",
+        "resourceArn": "arn:aws:codeartifact:region-id:123456789012:repository/test-domain/test-repo",
         "document": "{ ...policy document content...}",
         "revision": "MQlyyTQRASRU3HB58gBtSDHXG7Q3hvxxxxxxx="
     }
@@ -1082,7 +1069,7 @@ Output:
     "failedVersions": {}
 }
 ```
-For more information, see [Update package version status](https://docs.aws.amazon.com/codeartifact/latest/ug/describe-package-version.html#update-package-version-status) in the *AWS CodeArtifact User Guide*.
+For more information, see [Update package version status](https://docs.aws.amazon.com/codeartifact/latest/ug/update-package-version-status.html) in the *AWS CodeArtifact User Guide*.
 +  For API details, see [UpdatePackageVersionsStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codeartifact/update-package-versions-status.html) in *AWS CLI Command Reference*.
 
 ### `update-repository`
@@ -1106,10 +1093,10 @@ Output:
 {
     "repository": {
         "name": "test-repo",
-        "administratorAccount": "111122223333",
+        "administratorAccount": "123456789012",
         "domainName": "test-domain",
-        "domainOwner": "111122223333",
-        "arn": "arn:aws:codeartifact:us-west-2:111122223333:repository/test-domain/test-repo",
+        "domainOwner": "123456789012",
+        "arn": "arn:aws:codeartifact:us-west-2:123456789012:repository/test-domain/test-repo",
         "description": "this is an updated description",
         "upstreams": [],
         "externalConnections": []

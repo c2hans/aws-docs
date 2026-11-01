@@ -57,7 +57,7 @@ Output:
     "State": "CREATING"
 }
 ```
-For more information, see [Create an Amazon MSK Cluster](https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-cluster.html) in the *Amazon Managed Streaming for Apache Kafka*.
+For more information, see [Create an MSK Provisioned cluster](https://docs.aws.amazon.com/msk/latest/developerguide/msk-create-cluster.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
 +  For API details, see [CreateCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kafka/create-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-configuration`
@@ -112,7 +112,7 @@ The following `describe-cluster` example describes an Amazon MSK cluster.
 
 ```
 aws kafka describe-cluster \
-    --cluster-arn {{arn:aws:kafka:us-east-1:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5}}
+    --cluster-arn {{arn:aws:kafka:us-west-2:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5}}
 ```
 Output:
 
@@ -135,7 +135,7 @@ Output:
                 }
             }
         },
-        "ClusterArn": "arn:aws:kafka:us-east-1:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5",
+        "ClusterArn": "arn:aws:kafka:us-west-2:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5",
         "ClusterName": "demo-cluster-1",
         "CreationTime": "2020-07-09T02:31:36.223000+00:00",
         "CurrentBrokerSoftwareInfo": {
@@ -144,7 +144,7 @@ Output:
         "CurrentVersion": "K3AEGXETSR30VB",
         "EncryptionInfo": {
             "EncryptionAtRest": {
-                "DataVolumeKMSKeyId": "arn:aws:kms:us-east-1:123456789012:key/a7ca56d5-0768-4b64-a670-339a9fbef81c"
+                "DataVolumeKMSKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "EncryptionInTransit": {
                 "ClientBroker": "TLS_PLAINTEXT",
@@ -165,7 +165,7 @@ Output:
         "NumberOfBrokerNodes": 2,
         "State": "ACTIVE",
         "Tags": {},
-        "ZookeeperConnectString": "z-2.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:2181,z-1.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:2181,z-3.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:2181"
+        "ZookeeperConnectString": "z-2.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:2181,z-1.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:2181,z-3.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:2181"
     }
 }
 ```
@@ -183,14 +183,14 @@ The following `get-bootstrap-brokers` example retrieves the bootstrap broker inf
 
 ```
 aws kafka get-bootstrap-brokers \
-    --cluster-arn {{arn:aws:kafka:us-east-1:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5}}
+    --cluster-arn {{arn:aws:kafka:us-west-2:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5}}
 ```
 Output:
 
 ```
 {
-    "BootstrapBrokerString": "b-1.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:9092,b-2.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:9092",
-    "BootstrapBrokerStringTls": "b-1.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:9094,b-2.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:9094"
+    "BootstrapBrokerString": "b-1.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:9092,b-2.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:9092",
+    "BootstrapBrokerStringTls": "b-1.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:9094,b-2.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:9094"
 }
 ```
 For more information, see [Getting the Bootstrap Brokers](https://docs.aws.amazon.com/msk/latest/developerguide/msk-get-bootstrap-brokers.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
@@ -230,7 +230,7 @@ Output:
                     }
                 }
             },
-            "ClusterArn": "arn:aws:kafka:us-east-1:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5",
+            "ClusterArn": "arn:aws:kafka:us-west-2:123456789012:cluster/demo-cluster-1/6357e0b2-0e6a-4b86-a0b4-70df934c2e31-5",
             "ClusterName": "demo-cluster-1",
             "CreationTime": "2020-07-09T02:31:36.223000+00:00",
             "CurrentBrokerSoftwareInfo": {
@@ -239,7 +239,7 @@ Output:
             "CurrentVersion": "K3AEGXETSR30VB",
             "EncryptionInfo": {
                 "EncryptionAtRest": {
-                    "DataVolumeKMSKeyId": "arn:aws:kms:us-east-1:123456789012:key/a7ca56d5-0768-4b64-a670-339a9fbef81c"
+                    "DataVolumeKMSKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 },
                 "EncryptionInTransit": {
                     "ClientBroker": "TLS_PLAINTEXT",
@@ -260,7 +260,7 @@ Output:
             "NumberOfBrokerNodes": 2,
             "State": "ACTIVE",
             "Tags": {},
-            "ZookeeperConnectString": "z-2.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:2181,z-1.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:2181,z-3.demo-cluster-1.xuy0sb.c5.kafka.us-east-1.amazonaws.com:2181"
+            "ZookeeperConnectString": "z-2.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:2181,z-1.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:2181,z-3.demo-cluster-1.xuy0sb.c5.kafka.us-west-2.amazonaws.com:2181"
         }
     ]
 }
@@ -283,14 +283,15 @@ aws kafka update-broker-storage \
     --current-version {{"K21V3IB1VIZYYH"}} \
     --target-broker-ebs-volume-info {{"KafkaBrokerNodeId=ALL,VolumeSizeGB=1100"}}
 ```
-The output returns an ARN for this `update-broker-storage` operation. To determine if this operation is complete, use the `describe-cluster-operation` command with this ARN as input.
+Output:
 
 ```
 {
     "ClusterArn": "arn:aws:kafka:us-west-2:123456789012:cluster/MessagingCluster/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE-2",
-    "ClusterOperationArn": "arn:aws:kafka:us-west-2:123456789012:cluster-operation/V123450123/a1b2c3d4-1234-abcd-cdef-22222EXAMPLE-2/a1b2c3d4-abcd-1234-bcde-33333EXAMPLE"
+    "ClusterOperationArn": "arn:aws:kafka:us-west-2:123456789012:cluster-operation/V123450123/a1b2c3d4-1234-abcd-cdef-22222EXAMPLE-2/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
+The output returns an ARN for this `update-broker-storage` operation. To determine if this operation is complete, use the `describe-cluster-operation` command with this ARN as input.
 For more information, see [Update the EBS Storage for Brokers](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-storage.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
 +  For API details, see [UpdateBrokerStorage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kafka/update-broker-storage.html) in *AWS CLI Command Reference*.
 
@@ -317,13 +318,14 @@ Contents of `configuration-info.json`:
     "Revision": 1
 }
 ```
-The output returns an ARN for this `update-cluster-configuration` operation. To determine if this operation is complete, use the `describe-cluster-operation` command with this ARN as input.
+Output:
 
 ```
 {
     "ClusterArn": "arn:aws:kafka:us-west-2:123456789012:cluster/MessagingCluster/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE-2",
-    "ClusterOperationArn": "arn:aws:kafka:us-west-2:123456789012:cluster-operation/V123450123/a1b2c3d4-1234-abcd-cdef-22222EXAMPLE-2/a1b2c3d4-abcd-1234-bcde-33333EXAMPLE"
+    "ClusterOperationArn": "arn:aws:kafka:us-west-2:123456789012:cluster-operation/V123450123/a1b2c3d4-1234-abcd-cdef-22222EXAMPLE-2/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
-For more information, see [Update the Configuration of an Amazon MSK Cluster](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-cluster-cofig.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
+The output returns an ARN for this `update-cluster-configuration` operation. To determine if this operation is complete, use the `describe-cluster-operation` command with this ARN as input.
+For more information, see [Update the configuration of an Amazon MSK cluster](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-cluster-config.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
 +  For API details, see [UpdateClusterConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kafka/update-cluster-configuration.html) in *AWS CLI Command Reference*.

@@ -26,7 +26,7 @@ The following code example shows how to use `delete-playback-configuration`.
 
 **AWS CLI**
 **To delete a configuration**
-The following `delete-playback-configuration` deletes a configuration named `campaign_short`.
+The following `delete-playback-configuration` example deletes a configuration named `campaign_short`.
 
 ```
 aws mediatailor delete-playback-configuration \
@@ -43,7 +43,7 @@ The following code example shows how to use `get-playback-configuration`.
 
 **AWS CLI**
 **To describe a configuration**
-The following `get-playback-configuration` displays all of the details of the configuration named `west_campaign`.
+The following `get-playback-configuration` example displays all of the details of the configuration named `west_campaign`.
 
 ```
 aws mediatailor get-playback-configuration \
@@ -53,22 +53,22 @@ Output:
 
 ```
 {
-     "AdDecisionServerUrl": "http://your.ads.url",
-     "CdnConfiguration": {},
-     "DashConfiguration": {
-         "ManifestEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com/v1/dash/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/west_campaign/",
-         "MpdLocation": "EMT_DEFAULT",
-         "OriginManifestType": "MULTI_PERIOD"
-     },
-     "HlsConfiguration": {
-         "ManifestEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com/v1/master/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/west_campaign/"
-     },
-     "Name": "west_campaign",
-     "PlaybackConfigurationArn": "arn:aws:mediatailor:us-west-2:123456789012:playbackConfiguration/west_campaign",
-     "PlaybackEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com",
-     "SessionInitializationEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com/v1/session/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/west_campaign/",
-     "Tags": {},
-     "VideoContentSourceUrl": "https://8343f7014c0ea438.mediapackage.us-west-2.amazonaws.com/out/v1/683f0f2ff7cd43a48902e6dcd5e16dcf/index.m3u8"
+    "AdDecisionServerUrl": "http://your.ads.url",
+    "CdnConfiguration": {},
+    "DashConfiguration": {
+        "ManifestEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com/v1/dash/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/west_campaign/",
+        "MpdLocation": "EMT_DEFAULT",
+        "OriginManifestType": "MULTI_PERIOD"
+    },
+    "HlsConfiguration": {
+        "ManifestEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com/v1/master/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/west_campaign/"
+    },
+    "Name": "west_campaign",
+    "PlaybackConfigurationArn": "arn:aws:mediatailor:us-west-2:123456789012:playbackConfiguration/west_campaign",
+    "PlaybackEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com",
+    "SessionInitializationEndpointPrefix": "https://170c14299689462897d0cc45fc2000bb.mediatailor.us-west-2.amazonaws.com/v1/session/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/west_campaign/",
+    "Tags": {},
+    "VideoContentSourceUrl": "https://8343f7014c0ea438.mediapackage.us-west-2.amazonaws.com/out/v1/683f0f2ff7cd43a48902e6dcd5e16dcf/index.m3u8"
 }
 ```
 For more information, see [Viewing a Configuration](https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-view.html) in the *AWS Elemental MediaTailor User Guide*.
@@ -81,7 +81,7 @@ The following code example shows how to use `list-playback-configurations`.
 
 **AWS CLI**
 **To list all configurations**
-The following `list-playback-configurations` displays all of the details of the configuration on the current AWS account.
+The following `list-playback-configurations` example displays all of the details of the configuration on the current AWS account.
 
 ```
 aws mediatailor list-playback-configurations
@@ -131,7 +131,7 @@ Output:
     ]
 }
 ```
-For more information, see Viewing a Configuration<https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-view.html> in the *AWS Elemental MediaTailor User Guide*.
+For more information, see [Viewing MediaTailor configuration details](https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-view.html) in the *AWS Elemental MediaTailor User Guide*.
 +  For API details, see [ListPlaybackConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediatailor/list-playback-configurations.html) in *AWS CLI Command Reference*.
 
 ### `put-playback-configuration`
@@ -141,7 +141,7 @@ The following code example shows how to use `put-playback-configuration`.
 
 **AWS CLI**
 **To create a configuration**
-The following `put-playback-configuration` creates a configuration named `campaign_short`.
+The following `put-playback-configuration` example creates a configuration named `campaign_short`.
 
 ```
 aws mediatailor put-playback-configuration \
@@ -156,9 +156,9 @@ Output:
     "AdDecisionServerUrl": "http://your.ads.url",
     "CdnConfiguration": {},
     "DashConfiguration": {
-         "ManifestEndpointPrefix": "https://13484114d38f4383bc0d6a7cb879bd00.mediatailor.us-west-2.amazonaws.com/v1/dash/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/campaign_short/",
-         "MpdLocation": "EMT_DEFAULT",
-         "OriginManifestType": "MULTI_PERIOD"
+        "ManifestEndpointPrefix": "https://13484114d38f4383bc0d6a7cb879bd00.mediatailor.us-west-2.amazonaws.com/v1/dash/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/campaign_short/",
+        "MpdLocation": "EMT_DEFAULT",
+        "OriginManifestType": "MULTI_PERIOD"
     },
     "HlsConfiguration": {
         "ManifestEndpointPrefix": "https://13484114d38f4383bc0d6a7cb879bd00.mediatailor.us-west-2.amazonaws.com/v1/master/1cbfeaaecb69778e0c167d0505a2bc57da2b1754/campaign_short/"

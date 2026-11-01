@@ -29,13 +29,13 @@ The following code example shows how to use `accept-invitation`.
 The following `accept-invitation` example shows how to accept an invitation to become a GuardDuty member account in the current region.
 
 ```
-aws guardduty accept-invitation  \
+aws guardduty accept-invitation \
     --detector-id {{12abc34d567e8fa901bc2d34eexample}} \
     --master-id {{123456789111}} \
     --invitation-id {{d6b94fb03a66ff665f7db8764example}}
 ```
 This command produces no output.
-For more information, see [Managing GuardDuty accounts by invitation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_invitations.html) in the GuardDuty User Guide.
+For more information, see [Managing GuardDuty accounts by invitation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_invitations.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [AcceptInvitation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/accept-invitation.html) in *AWS CLI Command Reference*.
 
 ### `archive-findings`
@@ -45,7 +45,7 @@ The following code example shows how to use `archive-findings`.
 
 **AWS CLI**
 **To archive findings in the current region**
-This `archive-findings` example shows how to archive findings in the current region.
+The following `archive-findings` example archives findings in the current region.
 
 ```
 aws guardduty archive-findings \
@@ -53,7 +53,7 @@ aws guardduty archive-findings \
     --finding-ids {{d6b94fb03a66ff665f7db8764example}} {{3eb970e0de00c16ec14e6910fexample}}
 ```
 This command produces no output.
-For more information, see [Creating suppression rules](https://docs.aws.amazon.com/guardduty/latest/ug/findings_suppression-rules-console.html) in the *GuardDuty User Guide*.
+For more information, see [Creating suppression rules in GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/create-suppression-rules-guardduty.html) in the *GuardDuty User Guide*.
 +  For API details, see [ArchiveFindings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/archive-findings.html) in *AWS CLI Command Reference*.
 
 ### `create-detector`
@@ -63,7 +63,7 @@ The following code example shows how to use `create-detector`.
 
 **AWS CLI**
 **To enable GuardDuty in the current region**
-This example shows how to create a new detector, which enables GuardDuty, in the current region.:
+The following `create-detector` example creates a new detector, which enables GuardDuty, in the current region.
 
 ```
 aws guardduty create-detector \
@@ -156,21 +156,21 @@ The following code example shows how to use `create-members`.
 
 **AWS CLI**
 **To associate a new member with your GuardDuty master account in the current region.**
-This example shows how to associate member accounts to be managed by the current account as the GuardDuty master.
+The following `create-members` example associates member accounts to be managed by the current account as the GuardDuty master.
 
 ```
-aws guardduty create-members
+aws guardduty create-members \
     --detector-id {{b6b992d6d2f48e64bc59180bfexample}} \
-    --account-details {{AccountId=111122223333,Email=first+member@example.com}} {{AccountId=111111111111}} {{,Email=another+member@example.com}}
+    --account-details {{AccountId=123456789111,Email=first+member@example.com}} {{AccountId=123456789222}} {{,Email=another+member@example.com}}
 ```
 Output:
 
 ```
 {
-   "UnprocessedAccounts": []
+    "UnprocessedAccounts": []
 }
 ```
-For more information, see [Managing multiple accounts](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_accounts.html) in the GuardDuty User Guide.
+For more information, see [Managing multiple accounts in Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_accounts.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [CreateMembers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/create-members.html) in *AWS CLI Command Reference*.
 
 ### `create-publishing-destination`
@@ -186,7 +186,7 @@ The following `create-publishing-destination` example shows how to set up a publ
 aws guardduty create-publishing-destination \
     --detector-id {{b6b992d6d2f48e64bc59180bfexample}} \
     --destination-type {{S3}} \
-    --destination-properties '{{DestinationArn=arn:aws:s3:::amzn-s3-demo-bucket,KmsKeyArn=arn:aws:kms:us-west-1:111122223333:key/84cee9c5-dea1-401a-ab6d-e1de7example}}'
+    --destination-properties '{{DestinationArn=arn:aws:s3:::amzn-s3-demo-bucket,KmsKeyArn=arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}'
 ```
 Output:
 
@@ -205,7 +205,7 @@ The following code example shows how to use `create-sample-findings`.
 
 **AWS CLI**
 **To create sample GuardDuty findings in the current region.**
-This example shows how to create a sample finding of the provided types.
+The following `create-sample-findings` example creates a sample finding of the provided types.
 
 ```
 aws guardduty create-sample-findings \
@@ -250,11 +250,11 @@ The following code example shows how to use `decline-invitations`.
 
 **AWS CLI**
 **To decline an invitation to have Guardduty managed by another account in the current region.**
-This example shows how to decline a membership invitation.
+The following `decline-invitations` example declines a membership invitation.
 
 ```
 aws guardduty decline-invitations \
-    --account-ids {{111122223333}}
+    --account-ids {{123456789012}}
 ```
 Output:
 
@@ -263,7 +263,7 @@ Output:
     "UnprocessedAccounts": []
 }
 ```
-For more information, see [Managing GuardDuty accounts by invitation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_invitations.html) in the GuardDuty User Guide.
+For more information, see [Managing GuardDuty accounts by invitation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_invitations.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [DeclineInvitations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/decline-invitations.html) in *AWS CLI Command Reference*.
 
 ### `delete-detector`
@@ -273,7 +273,7 @@ The following code example shows how to use `delete-detector`.
 
 **AWS CLI**
 **To delete a detector, and disable GuardDuty, in the current region.**
-This example shows how to delete a detector, if successful, this will disable GuardDuty in the region associated with that detector.
+The following `delete-detector` example deletes a detector. If successful, this disables GuardDuty in the region associated with that detector.
 
 ```
 aws guardduty delete-detector \
@@ -290,7 +290,7 @@ The following code example shows how to use `delete-filter`.
 
 **AWS CLI**
 **To delete an existing filter in the current region**
-This example shows how to create delete a filter.
+The following `delete-filter` example deletes a filter.
 
 ```
 aws guardduty delete-filter \
@@ -298,7 +298,7 @@ aws guardduty delete-filter \
     --filter-name {{byebyeFilter}}
 ```
 This command produces no output.
-For more information, see [Filtering findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filter-findings.html) in the GuardDuty User Guide.
+For more information, see [Filtering findings in GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_filter-findings.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [DeleteFilter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/delete-filter.html) in *AWS CLI Command Reference*.
 
 ### `disable-organization-admin-account`
@@ -308,11 +308,11 @@ The following code example shows how to use `disable-organization-admin-account`
 
 **AWS CLI**
 **To remove an account as the delegated administrator for GuardDuty within your organization**
-This example shows how to remove an account as the delegated administrator for GuardDuty.
+The following `disable-organization-admin-account` example removes an account as the delegated administrator for GuardDuty.
 
 ```
 aws guardduty disable-organization-admin-account \
-    --admin-account-id {{111122223333}}
+    --admin-account-id {{123456789012}}
 ```
 This command produces no output.
 For more information, see [Managing accounts with AWS organizations](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_organizations.html) in the *GuardDuty User Guide*.
@@ -353,14 +353,14 @@ Output:
 ```
 {
     "Status": "ENABLED",
-    "ServiceRole": "arn:aws:iam::111122223333:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
+    "ServiceRole": "arn:aws:iam::123456789012:role/aws-service-role/guardduty.amazonaws.com/AWSServiceRoleForAmazonGuardDuty",
     "Tags": {},
     "FindingPublishingFrequency": "SIX_HOURS",
     "UpdatedAt": "2018-11-07T03:24:22.938Z",
     "CreatedAt": "2017-12-22T22:51:31.940Z"
 }
 ```
-For more information, see [Concepts and Terminology](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_concepts.html) in the GuardDuty User Guide.
+For more information, see [Concepts and key terms in Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_concepts.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [GetDetector](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/get-detector.html) in *AWS CLI Command Reference*.
 
 ### `get-findings`
@@ -431,20 +431,20 @@ Output:
             },
             "Title": "Unusual user permission reconnaissance activity by testuser.",
             "Type": "Recon:IAMUser/UserPermissions",
-            "Region": "us-east-1",
+            "Region": "us-west-2",
             "Partition": "aws",
-            "Arn": "arn:aws:guardduty:us-east-1:111122223333:detector/d4b040365221be2b54a6264dcexample/finding/1ab92989eaf0e742df4a014d5example",
+            "Arn": "arn:aws:guardduty:us-west-2:123456789012:detector/d4b040365221be2b54a6264dcexample/finding/1ab92989eaf0e742df4a014d5example",
             "UpdatedAt": "2020-05-26T22:55:21.703Z",
             "SchemaVersion": "2.0",
             "Severity": 5,
             "Id": "1ab92989eaf0e742df4a014d5example",
             "CreatedAt": "2020-05-26T22:21:48.385Z",
-            "AccountId": "111122223333"
+            "AccountId": "123456789012"
         }
     ]
 }
 ```
-For more information, see [Findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the GuardDuty User Guide.
+For more information, see [Understanding and generating Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [GetFindings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/get-findings.html) in *AWS CLI Command Reference*.
 
 ### `get-ip-set`
@@ -466,7 +466,7 @@ Output:
 ```
 {
     "Status": "ACTIVE",
-    "Location": "s3://amzn-s3-demo-bucket.s3-us-west-2.amazonaws.com/customlist.csv",
+    "Location": "s3://amzn-s3-demo-bucket/customlist.csv",
     "Tags": {},
     "Format": "TXT",
     "Name": "test-ip-set-example"
@@ -496,7 +496,7 @@ Output:
         "InvitationId": "04b94d9704854a73f94e061e8example",
         "InvitedAt": "2020-06-09T22:23:04.970Z",
         "RelationshipStatus": "Enabled",
-        "AccountId": "111122223333"
+        "AccountId": "123456789012"
     }
 }
 ```
@@ -524,7 +524,7 @@ Output:
     ]
 }
 ```
-For more information, see [Concepts and Terminology](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_concepts.html) in the GuardDuty User Guide.
+For more information, see [Concepts and key terms in Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_concepts.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [ListDetectors](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/list-detectors.html) in *AWS CLI Command Reference*.
 
 ### `list-findings`
@@ -548,19 +548,18 @@ Output:
     "FindingIds": [
         "04b8ab50fd29c64fc771b232dexample",
         "5ab8ab50fd21373735c826d3aexample",
-        "90b93de7aba69107f05bbe60bexample",
-        ...
+        "90b93de7aba69107f05bbe60bexample"
     ]
 }
 ```
-For more information, see [Findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the GuardDuty User Guide.
+For more information, see [Understanding and generating Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the *Amazon GuardDuty User Guide*.
 **Example 2: To list findings for the current region matching a specific finding criteria**
 The following `list-findings` example displays a list of all findingIds that match a specified finding type.
 
 ```
 aws guardduty list-findings \
     --detector-id {{12abc34d567e8fa901bc2d34eexample}} \
-    --finding-criteria  '{{{"Criterion":{"type": {"Eq":["UnauthorizedAccess:EC2/SSHBruteForce"]}}}}}'
+    --finding-criteria '{{{"Criterion":{"type": {"Eq":["UnauthorizedAccess:EC2/SSHBruteForce"]}}}}}'
 ```
 Output:
 
@@ -576,14 +575,14 @@ Output:
     ]
 }
 ```
-For more information, see [Findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the GuardDuty User Guide.
+For more information, see [Understanding and generating Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the *Amazon GuardDuty User Guide*.
 **Example 3: To list findings for the current region matching a specific set of finding criteria defined within a JSON file**
 The following `list-findings` example displays a list of all findingIds that are not archived, and involve the IAM user named "testuser", as specified in a JSON file.
 
 ```
 aws guardduty list-findings \
     --detector-id {{12abc34d567e8fa901bc2d34eexample}} \
-    --finding-criteria  {{file://myfile.json}}
+    --finding-criteria {{file://myfile.json}}
 ```
 Contents of `myfile.json`:
 
@@ -611,7 +610,7 @@ Output:
     ]
 }
 ```
-For more information, see [Findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the GuardDuty User Guide.
+For more information, see [Understanding and generating Amazon GuardDuty findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [ListFindings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/list-findings.html) in *AWS CLI Command Reference*.
 
 ### `list-invitations`
@@ -640,7 +639,7 @@ Output:
     ]
 }
 ```
-For more information, see [Managing GuardDuty Accounts by Invitation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_invitations.html) in the GuardDuty User Guide.
+For more information, see [Managing GuardDuty accounts by invitation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_invitations.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [ListInvitations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/list-invitations.html) in *AWS CLI Command Reference*.
 
 ### `list-ip-sets`
@@ -665,7 +664,7 @@ Output:
     ]
 }
 ```
-For more information, see [Working with Trusted IP Lists and Threat Lists](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_upload_lists.html) in the GuardDuty User Guide.
+For more information, see [Customizing threat detection with entity lists and IP address lists](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_upload-lists.html) in the *Amazon GuardDuty User Guide*.
 +  For API details, see [ListIpSets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/list-ip-sets.html) in *AWS CLI Command Reference*.
 
 ### `list-members`
@@ -690,7 +689,7 @@ Output:
         {
             "RelationshipStatus": "Enabled",
             "InvitedAt": "2020-06-09T22:49:00.910Z",
-            "MasterId": "111122223333",
+            "MasterId": "123456789111",
             "DetectorId": "7ab8b2f61b256c87f793f6a86example",
             "UpdatedAt": "2020-06-09T23:08:22.512Z",
             "Email": "your+member@example.com",
@@ -716,11 +715,11 @@ Output:
         {
             "RelationshipStatus": "Enabled",
             "InvitedAt": "2020-06-09T22:49:00.910Z",
-            "MasterId": "111122223333",
+            "MasterId": "123456789111",
             "DetectorId": "7ab8b2f61b256c87f793f6a86example",
             "UpdatedAt": "2020-06-09T23:08:22.512Z",
             "Email": "your+other+member@example.com",
-            "AccountId": "555555555555"
+            "AccountId": "123456789222"
         }
     ]
 }

@@ -26,7 +26,7 @@ The following code example shows how to use `associate-delegate-to-resource`.
 
 **AWS CLI**
 **To add a delegate to a resource**
-The following `associate-delegate-to-resource` command adds a delegate to a resource.
+The following `associate-delegate-to-resource` example adds a delegate to a resource.
 
 ```
 aws workmail associate-delegate-to-resource \
@@ -35,6 +35,7 @@ aws workmail associate-delegate-to-resource \
     --entity-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Editing resource details](https://docs.aws.amazon.com/workmail/latest/adminguide/edit_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [AssociateDelegateToResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/associate-delegate-to-resource.html) in *AWS CLI Command Reference*.
 
 ### `associate-member-to-group`
@@ -44,7 +45,7 @@ The following code example shows how to use `associate-member-to-group`.
 
 **AWS CLI**
 **To add a member to a group**
-The following `associate-member-to-group` command adds the specified member to a group.
+The following `associate-member-to-group` example adds the specified member to a group.
 
 ```
 aws workmail associate-member-to-group \
@@ -53,6 +54,7 @@ aws workmail associate-member-to-group \
     --member-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Adding members to a group](https://docs.aws.amazon.com/workmail/latest/adminguide/add-group-users.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [AssociateMemberToGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/associate-member-to-group.html) in *AWS CLI Command Reference*.
 
 ### `create-alias`
@@ -62,7 +64,7 @@ The following code example shows how to use `create-alias`.
 
 **AWS CLI**
 **To create an alias**
-The following `create-alias` command creates an alias for the specified entity (user or group).
+The following `create-alias` example creates an alias for the specified entity (user or group).
 
 ```
 aws workmail create-alias \
@@ -71,6 +73,7 @@ aws workmail create-alias \
     --alias {{exampleAlias@site.awsapps.com}}
 ```
 This command produces no output.
+For more information, see [Managing group aliases](https://docs.aws.amazon.com/workmail/latest/adminguide/managing_groups.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [CreateAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/create-alias.html) in *AWS CLI Command Reference*.
 
 ### `create-group`
@@ -80,7 +83,7 @@ The following code example shows how to use `create-group`.
 
 **AWS CLI**
 **To create a new group**
-The following `create-group` command creates a new group for the specified organization.
+The following `create-group` example creates a new group for the specified organization.
 
 ```
 aws workmail create-group \
@@ -94,6 +97,7 @@ Output:
     "GroupId": "S-1-1-11-1122222222-2222233333-3333334444-4444"
 }
 ```
+For more information, see [Adding a group](https://docs.aws.amazon.com/workmail/latest/adminguide/add_new_group.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [CreateGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/create-group.html) in *AWS CLI Command Reference*.
 
 ### `create-resource`
@@ -103,7 +107,7 @@ The following code example shows how to use `create-resource`.
 
 **AWS CLI**
 **To create a new resource**
-The following `create-resource` command creates a new resource (meeting room) for the specified organization.
+The following `create-resource` example creates a new resource (meeting room) for the specified organization.
 
 ```
 aws workmail create-resource \
@@ -118,6 +122,7 @@ Output:
     "ResourceId": "r-7afe0efbade843a58cdc10251fce992c"
 }
 ```
+For more information, see [Adding a resource](https://docs.aws.amazon.com/workmail/latest/adminguide/create_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [CreateResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/create-resource.html) in *AWS CLI Command Reference*.
 
 ### `create-user`
@@ -127,7 +132,7 @@ The following code example shows how to use `create-user`.
 
 **AWS CLI**
 **To create a new user**
-The following `create-user` command creates a new user.
+The following `create-user` example creates a new user.
 
 ```
 aws workmail create-user \
@@ -143,6 +148,7 @@ Output:
     "UserId": "S-1-1-11-1111111111-2222222222-3333333333-3333"
 }
 ```
+For more information, see [Adding a user](https://docs.aws.amazon.com/workmail/latest/adminguide/add_user.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [CreateUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/create-user.html) in *AWS CLI Command Reference*.
 
 ### `delete-access-control-rule`
@@ -170,7 +176,7 @@ The following code example shows how to use `delete-alias`.
 
 **AWS CLI**
 **To delete an alias**
-The following `delete-alias` command deletes the alias for the specified entity (user or group).
+The following `delete-alias` example deletes the alias for the specified entity (user or group).
 
 ```
 aws workmail delete-alias \
@@ -179,6 +185,7 @@ aws workmail delete-alias \
     --alias {{exampleAlias@site.awsapps.com}}
 ```
 This command produces no output.
+For more information, see [Managing user aliases](https://docs.aws.amazon.com/workmail/latest/adminguide/managing_users.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DeleteAlias](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/delete-alias.html) in *AWS CLI Command Reference*.
 
 ### `delete-group`
@@ -188,7 +195,7 @@ The following code example shows how to use `delete-group`.
 
 **AWS CLI**
 **To delete an existing group**
-The following `delete-group` command deletes an existing group from Amazon WorkMail.
+The following `delete-group` example deletes an existing group from Amazon WorkMail.
 
 ```
 aws workmail delete-group \
@@ -196,6 +203,7 @@ aws workmail delete-group \
     --group-id {{S-1-1-11-1122222222-2222233333-3333334444-4444}}
 ```
 This command produces no output.
+For more information, see [Deleting a group](https://docs.aws.amazon.com/workmail/latest/adminguide/delete-group.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DeleteGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/delete-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-mailbox-permissions`
@@ -205,7 +213,7 @@ The following code example shows how to use `delete-mailbox-permissions`.
 
 **AWS CLI**
 **To delete mailbox permissions**
-The following `delete-mailbox-permissions` command deletes mailbox permissions that were previously granted to a user or group. The entity represents the user that owns the mailbox, and the grantee represents the user or group for whom to delete permissions.
+The following `delete-mailbox-permissions` example deletes mailbox permissions that were previously granted to a user or group. The entity represents the user that owns the mailbox, and the grantee represents the user or group for whom to delete permissions.
 
 ```
 aws workmail delete-mailbox-permissions \
@@ -214,6 +222,7 @@ aws workmail delete-mailbox-permissions \
     --grantee-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Managing mailbox permissions for users](https://docs.aws.amazon.com/workmail/latest/adminguide/enable_mail_perms.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DeleteMailboxPermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/delete-mailbox-permissions.html) in *AWS CLI Command Reference*.
 
 ### `delete-resource`
@@ -223,7 +232,7 @@ The following code example shows how to use `delete-resource`.
 
 **AWS CLI**
 **To delete an existing resource**
-The following `delete-resource` command deletes an existing resource from Amazon WorkMail.
+The following `delete-resource` example deletes an existing resource from Amazon WorkMail.
 
 ```
 aws workmail delete-resource \
@@ -231,6 +240,7 @@ aws workmail delete-resource \
     --resource-id {{r-7afe0efbade843a58cdc10251fce992c}}
 ```
 This command produces no output.
+For more information, see [Deleting a resource](https://docs.aws.amazon.com/workmail/latest/adminguide/remove_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DeleteResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/delete-resource.html) in *AWS CLI Command Reference*.
 
 ### `delete-user`
@@ -240,7 +250,7 @@ The following code example shows how to use `delete-user`.
 
 **AWS CLI**
 **To delete a user**
-The following `delete-user` command deletes the specified user from Amazon WorkMail and all subsequent systems.
+The following `delete-user` example deletes the specified user from Amazon WorkMail and all subsequent systems.
 
 ```
 aws workmail delete-user \
@@ -248,6 +258,7 @@ aws workmail delete-user \
     --user-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Working with users](https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DeleteUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/delete-user.html) in *AWS CLI Command Reference*.
 
 ### `deregister-from-work-mail`
@@ -257,7 +268,7 @@ The following code example shows how to use `deregister-from-work-mail`.
 
 **AWS CLI**
 **To disable an existing entity**
-The following `deregister-from-work-mail` command disables an existing entity (user, group, or resource) from using Amazon WorkMail.
+The following `deregister-from-work-mail` example disables an existing entity (user, group, or resource) from using Amazon WorkMail.
 
 ```
 aws workmail deregister-from-work-mail \
@@ -265,6 +276,7 @@ aws workmail deregister-from-work-mail \
     --entity-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Disabling users](https://docs.aws.amazon.com/workmail/latest/adminguide/disable-users.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DeregisterFromWorkMail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/deregister-from-work-mail.html) in *AWS CLI Command Reference*.
 
 ### `describe-group`
@@ -274,7 +286,7 @@ The following code example shows how to use `describe-group`.
 
 **AWS CLI**
 **To retrieve information for a group**
-The following `describe-group` command retrieves information about the specified group.
+The following `describe-group` example retrieves information about the specified group.
 
 ```
 aws workmail describe-group \
@@ -290,6 +302,7 @@ Output:
     "State": "ENABLED"
 }
 ```
+For more information, see [Working with groups](https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DescribeGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/describe-group.html) in *AWS CLI Command Reference*.
 
 ### `describe-organization`
@@ -299,7 +312,7 @@ The following code example shows how to use `describe-organization`.
 
 **AWS CLI**
 **To retrieve information for an organization**
-The following `describe-organization` command retrieves information for the specified Amazon WorkMail organization.
+The following `describe-organization` example retrieves information for the specified Amazon WorkMail organization.
 
 ```
 aws workmail describe-organization \
@@ -316,7 +329,7 @@ Output:
     "DirectoryType": "VpcDirectory",
     "DefaultMailDomain": "site.awsapps.com",
     "CompletedDate": 1522693605.468,
-    "ARN": "arn:aws:workmail:us-west-2:111122223333:organization/m-n1pq2345678r901st2u3vx45x6789yza"
+    "ARN": "arn:aws:workmail:us-west-2:123456789012:organization/m-n1pq2345678r901st2u3vx45x6789yza"
 }
 ```
 For more information, see [Working with Organizations](https://docs.aws.amazon.com/workmail/latest/adminguide/organizations_overview.html) in the *Amazon WorkMail Administrator Guide*.
@@ -329,7 +342,7 @@ The following code example shows how to use `describe-resource`.
 
 **AWS CLI**
 **To retrieve information for a resource**
-The following `describe-resource` command retrieves information about the specified resource.
+The following `describe-resource` example retrieves information about the specified resource.
 
 ```
 aws workmail describe-resource \
@@ -351,6 +364,7 @@ Output:
     "State": "ENABLED"
 }
 ```
+For more information, see [Working with resources](https://docs.aws.amazon.com/workmail/latest/adminguide/resources_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DescribeResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/describe-resource.html) in *AWS CLI Command Reference*.
 
 ### `describe-user`
@@ -360,7 +374,7 @@ The following code example shows how to use `describe-user`.
 
 **AWS CLI**
 **To retrieve user information**
-The following `describe-user` command retrieves information about the specified user.
+The following `describe-user` example retrieves information about the specified user.
 
 ```
 aws workmail describe-user \
@@ -380,6 +394,7 @@ Output:
     "EnabledDate": 1532459261.827
 }
 ```
+For more information, see [Working with users](https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DescribeUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/describe-user.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-delegate-from-resource`
@@ -389,15 +404,16 @@ The following code example shows how to use `disassociate-delegate-from-resource
 
 **AWS CLI**
 **To remove a member from a resource**
-The following `disassociate-delegate-from-resource` command removes the specified member from a resource.
+The following `disassociate-delegate-from-resource` example removes the specified member from a resource.
 
 ```
-ws workmail disassociate-delegate-from-resource \
-    --organization-id m-d281d0a2fd824be5b6cd3d3ce909fd27 \
-    --resource-id r-68bf2d3b1c0244aab7264c24b9217443 \
-    --entity-id S-1-1-11-1111111111-2222222222-3333333333-3333
+aws workmail disassociate-delegate-from-resource \
+    --organization-id {{m-d281d0a2fd824be5b6cd3d3ce909fd27}} \
+    --resource-id {{r-68bf2d3b1c0244aab7264c24b9217443}} \
+    --entity-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Editing resource details](https://docs.aws.amazon.com/workmail/latest/adminguide/edit_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DisassociateDelegateFromResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/disassociate-delegate-from-resource.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-member-from-group`
@@ -407,7 +423,7 @@ The following code example shows how to use `disassociate-member-from-group`.
 
 **AWS CLI**
 **To remove a member from a group**
-The following `disassociate-member-from-group` command removes the specified member from a group.
+The following `disassociate-member-from-group` example removes the specified member from a group.
 
 ```
 aws workmail disassociate-member-from-group \
@@ -416,6 +432,7 @@ aws workmail disassociate-member-from-group \
     --member-id {{S-1-1-11-1111111111-2222222222-3333333333-3333}}
 ```
 This command produces no output.
+For more information, see [Removing members from a group](https://docs.aws.amazon.com/workmail/latest/adminguide/remove-group-users.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [DisassociateMemberFromGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/disassociate-member-from-group.html) in *AWS CLI Command Reference*.
 
 ### `get-access-control-effect`
@@ -454,7 +471,7 @@ The following code example shows how to use `get-mailbox-details`.
 
 **AWS CLI**
 **To get a user's mailbox details**
-The following `get-mailbox-details` command retrieves details about the specified user's mailbox.
+The following `get-mailbox-details` example retrieves details about the specified user's mailbox.
 
 ```
 aws workmail get-mailbox-details \
@@ -469,7 +486,7 @@ Output:
     "MailboxSize": 0.03890800476074219
 }
 ```
-For more information, see [Managing User Accounts](https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html) in the *Amazon WorkMail Administrator Guide*.
+For more information, see [Working with users](https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [GetMailboxDetails](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/get-mailbox-details.html) in *AWS CLI Command Reference*.
 
 ### `list-access-control-rules`
@@ -520,7 +537,7 @@ The following code example shows how to use `list-aliases`.
 
 **AWS CLI**
 **To list aliases for a member**
-The following `list-aliases` command lists aliases for the specified member (user or group).
+The following `list-aliases` example lists aliases for the specified member (user or group).
 
 ```
 aws workmail list-aliases \
@@ -537,6 +554,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing user aliases](https://docs.aws.amazon.com/workmail/latest/adminguide/managing_users.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListAliases](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-aliases.html) in *AWS CLI Command Reference*.
 
 ### `list-group-members`
@@ -546,7 +564,7 @@ The following code example shows how to use `list-group-members`.
 
 **AWS CLI**
 **To list group members**
-The following `list-group-members` command lists the members of the specified group.
+The following `list-group-members` example lists the members of the specified group.
 
 ```
 aws workmail list-group-members \
@@ -568,6 +586,7 @@ Output:
     ]
 }
 ```
+For more information, see [Working with groups](https://docs.aws.amazon.com/workmail/latest/adminguide/groups_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListGroupMembers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-group-members.html) in *AWS CLI Command Reference*.
 
 ### `list-groups`
@@ -577,7 +596,7 @@ The following code example shows how to use `list-groups`.
 
 **AWS CLI**
 **To retrieve a list of groups**
-The following `list-groups` command retrieves summaries of the groups in the specified organization.
+The following `list-groups` example retrieves summaries of the groups in the specified organization.
 
 ```
 aws workmail list-groups \
@@ -601,6 +620,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing a list of groups](https://docs.aws.amazon.com/workmail/latest/adminguide/display_groups.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-groups.html) in *AWS CLI Command Reference*.
 
 ### `list-mailbox-permissions`
@@ -610,7 +630,7 @@ The following code example shows how to use `list-mailbox-permissions`.
 
 **AWS CLI**
 **To retrieve mailbox permissions**
-The following `list-mailbox-permissions` command retrieves the mailbox permissions associated with the specified entity's mailbox.
+The following `list-mailbox-permissions` example retrieves the mailbox permissions associated with the specified entity's mailbox.
 
 ```
 aws workmail list-mailbox-permissions \
@@ -632,6 +652,7 @@ Output:
     ]
 }
 ```
+For more information, see [Working with mailbox permissions](https://docs.aws.amazon.com/workmail/latest/adminguide/mail_perms_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListMailboxPermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-mailbox-permissions.html) in *AWS CLI Command Reference*.
 
 ### `list-organizations`
@@ -641,7 +662,7 @@ The following code example shows how to use `list-organizations`.
 
 **AWS CLI**
 **To retrieve a list of organizations**
-The following `list-organizations` command retrieves summaries of the customer's organizations.
+The following `list-organizations` example retrieves summaries of the customer's organizations.
 
 ```
 aws workmail list-organizations
@@ -659,6 +680,7 @@ Output:
     ]
 }
 ```
+For more information, see [Working with organizations](https://docs.aws.amazon.com/workmail/latest/adminguide/organizations_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListOrganizations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-organizations.html) in *AWS CLI Command Reference*.
 
 ### `list-resource-delegates`
@@ -668,7 +690,7 @@ The following code example shows how to use `list-resource-delegates`.
 
 **AWS CLI**
 **To list the delegates for a resource**
-The following `list-resource-delegates` command retrieves the delegates associated with the specified resource.
+The following `list-resource-delegates` example retrieves the delegates associated with the specified resource.
 
 ```
 aws workmail list-resource-delegates \
@@ -687,6 +709,7 @@ Output:
     ]
 }
 ```
+For more information, see [Editing resource details](https://docs.aws.amazon.com/workmail/latest/adminguide/edit_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListResourceDelegates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-resource-delegates.html) in *AWS CLI Command Reference*.
 
 ### `list-resources`
@@ -696,7 +719,7 @@ The following code example shows how to use `list-resources`.
 
 **AWS CLI**
 **To retrieve a list of resources**
-The following `list-resources` command retrieves summaries of the resources for the specified organization.
+The following `list-resources` example retrieves summaries of the resources for the specified organization.
 
 ```
 aws workmail list-resources \
@@ -716,6 +739,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing a list of resources](https://docs.aws.amazon.com/workmail/latest/adminguide/display_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-resources.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -729,7 +753,7 @@ The following `list-tags-for-resource` example lists the tags for the specified 
 
 ```
 aws workmail list-tags-for-resource \
-    --resource-arn {{arn:aws:workmail:us-west-2:111122223333:organization/m-n1pq2345678r901st2u3vx45x6789yza}}
+    --resource-arn {{arn:aws:workmail:us-west-2:123456789012:organization/m-n1pq2345678r901st2u3vx45x6789yza}}
 ```
 Output:
 
@@ -753,7 +777,7 @@ The following code example shows how to use `list-users`.
 
 **AWS CLI**
 **To retrieve a list of users**
-The following `list-users` command retrieves summaries of the users in the specified organization.
+The following `list-users` example retrieves summaries of the users in the specified organization.
 
 ```
 aws workmail list-users \
@@ -781,6 +805,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing a list of users](https://docs.aws.amazon.com/workmail/latest/adminguide/display_users.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ListUsers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/list-users.html) in *AWS CLI Command Reference*.
 
 ### `put-access-control-rule`
@@ -811,7 +836,7 @@ The following code example shows how to use `put-mailbox-permissions`.
 
 **AWS CLI**
 **To set mailbox permissions**
-The following `put-mailbox-permissions` command sets full access permissions for the specified grantee (user or group). The entity represents the owner of the mailbox.
+The following `put-mailbox-permissions` example sets full access permissions for the specified grantee (user or group). The entity represents the owner of the mailbox.
 
 ```
 aws workmail put-mailbox-permissions \
@@ -821,6 +846,7 @@ aws workmail put-mailbox-permissions \
     --permission-values {{FULL_ACCESS}}
 ```
 This command produces no output.
+For more information, see [Managing mailbox permissions for users](https://docs.aws.amazon.com/workmail/latest/adminguide/enable_mail_perms.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [PutMailboxPermissions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/put-mailbox-permissions.html) in *AWS CLI Command Reference*.
 
 ### `register-to-work-mail`
@@ -830,7 +856,7 @@ The following code example shows how to use `register-to-work-mail`.
 
 **AWS CLI**
 **To register an existing or disabled entity**
-The following `register-to-work-mail` command enables the specified existing entity (user, group, or resource) to use Amazon WorkMail.
+The following `register-to-work-mail` example enables the specified existing entity (user, group, or resource) to use Amazon WorkMail.
 
 ```
 aws workmail register-to-work-mail \
@@ -839,6 +865,7 @@ aws workmail register-to-work-mail \
     --email {{exampleGroup1@site.awsapps.com}}
 ```
 This command produces no output.
+For more information, see [Enabling groups](https://docs.aws.amazon.com/workmail/latest/adminguide/enable_existing_group.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [RegisterToWorkMail](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/register-to-work-mail.html) in *AWS CLI Command Reference*.
 
 ### `reset-password`
@@ -848,7 +875,7 @@ The following code example shows how to use `reset-password`.
 
 **AWS CLI**
 **To reset a user's password**
-The following `reset-password` command resets the password for the specified user.
+The following `reset-password` example resets the password for the specified user.
 
 ```
 aws workmail reset-password \
@@ -857,6 +884,7 @@ aws workmail reset-password \
     --password {{examplePa$$w0rd}}
 ```
 This command produces no output.
+For more information, see [Resetting user password](https://docs.aws.amazon.com/workmail/latest/adminguide/reset_password.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [ResetPassword](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/reset-password.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -870,7 +898,7 @@ The following `tag-resource` example applies a tag with key "priority" and value
 
 ```
 aws workmail tag-resource \
-    --resource-arn {{arn:aws:workmail:us-west-2:111122223333:organization/m-n1pq2345678r901st2u3vx45x6789yza}} \
+    --resource-arn {{arn:aws:workmail:us-west-2:123456789012:organization/m-n1pq2345678r901st2u3vx45x6789yza}} \
     --tags {{"Key=priority,Value=1"}}
 ```
 This command produces no output.
@@ -888,7 +916,7 @@ The following `untag-resource` example removes the specified tag from the specif
 
 ```
 aws workmail untag-resource \
-    --resource-arn {{arn:aws:workmail:us-west-2:111122223333:organization/m-n1pq2345678r901st2u3vx45x6789yza}} \
+    --resource-arn {{arn:aws:workmail:us-west-2:123456789012:organization/m-n1pq2345678r901st2u3vx45x6789yza}} \
     --tag-keys {{"priority"}}
 ```
 This command produces no output.
@@ -902,7 +930,7 @@ The following code example shows how to use `update-mailbox-quota`.
 
 **AWS CLI**
 **To update a user's mailbox quota**
-The following `update-mailbox-quota` command changes the specified user's mailbox quota.
+The following `update-mailbox-quota` example changes the specified user's mailbox quota.
 
 ```
 aws workmail update-mailbox-quota \
@@ -911,7 +939,7 @@ aws workmail update-mailbox-quota \
     --mailbox-quota {{40000}}
 ```
 This command produces no output.
-For more information, see [Managing User Accounts](https://docs.aws.amazon.com/workmail/latest/adminguide/manage-users.html) in the *Amazon WorkMail Administrator Guide*.
+For more information, see [Working with users](https://docs.aws.amazon.com/workmail/latest/adminguide/users_overview.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [UpdateMailboxQuota](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/update-mailbox-quota.html) in *AWS CLI Command Reference*.
 
 ### `update-primary-email-address`
@@ -921,7 +949,7 @@ The following code example shows how to use `update-primary-email-address`.
 
 **AWS CLI**
 **To update a primary email address**
-The following `update-primary-email-address` command updates the primary email address of the specified entity (user, group, or resource).
+The following `update-primary-email-address` example updates the primary email address of the specified entity (user, group, or resource).
 
 ```
 aws workmail update-primary-email-address \
@@ -930,6 +958,7 @@ aws workmail update-primary-email-address \
     --email {{exampleUser2@site.awsapps.com}}
 ```
 This command produces no output.
+For more information, see [Editing user details](https://docs.aws.amazon.com/workmail/latest/adminguide/edit_user.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [UpdatePrimaryEmailAddress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/update-primary-email-address.html) in *AWS CLI Command Reference*.
 
 ### `update-resource`
@@ -939,7 +968,7 @@ The following code example shows how to use `update-resource`.
 
 **AWS CLI**
 **To update a resource**
-The following `update-resource` command updates the name of the specified resource.
+The following `update-resource` example updates the name of the specified resource.
 
 ```
 aws workmail update-resource \
@@ -948,4 +977,5 @@ aws workmail update-resource \
     --name {{exampleRoom2}}
 ```
 This command produces no output.
+For more information, see [Editing resource details](https://docs.aws.amazon.com/workmail/latest/adminguide/edit_resource.html) in the *Amazon WorkMail Administrator Guide*.
 +  For API details, see [UpdateResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/workmail/update-resource.html) in *AWS CLI Command Reference*.

@@ -66,19 +66,19 @@ The following `batch-delete-automation-rules` example deletes the specified auto
 
 ```
 aws securityhub batch-delete-automation-rules \
-    --automation-rules-arns '{{["arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"]}}'
+    --automation-rules-arns '{{["arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"]}}'
 ```
 Output:
 
 ```
 {
     "ProcessedAutomationRules": [
-        "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     ],
     "UnprocessedAutomationRules": []
 }
 ```
-For more information, see [Deleting automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html#delete-automation-rules) in the *AWS Security Hub User Guide*.
+For more information, see [Deleting automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/delete-automation-rules.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [BatchDeleteAutomationRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/batch-delete-automation-rules.html) in *AWS CLI Command Reference*.
 
 ### `batch-disable-standards`
@@ -92,7 +92,7 @@ The following `batch-disable-standards` example disables the standard associated
 
 ```
 aws securityhub batch-disable-standards \
-    --standards-subscription-arns {{"arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1"}}
+    --standards-subscription-arns {{"arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"}}
 ```
 Output:
 
@@ -100,15 +100,15 @@ Output:
 {
     "StandardsSubscriptions": [
         {
-            "StandardsArn": "arn:aws:securityhub:eu-central-1::standards/pci-dss/v/3.2.1",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/pci-dss/v/3.2.1",
             "StandardsInput": { },
             "StandardsStatus": "DELETING",
-            "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1"
+            "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"
         }
     ]
 }
 ```
-For more information, see [Disabling or enabling a security standard](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-enable-disable.html) in the *AWS Security Hub User Guide*.
+For more information, see [Disabling a security standard](https://docs.aws.amazon.com/securityhub/latest/userguide/disable-standards.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [BatchDisableStandards](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/batch-disable-standards.html) in *AWS CLI Command Reference*.
 
 ### `batch-enable-standards`
@@ -122,7 +122,7 @@ The following `batch-enable-standards` example enables the PCI DSS standard for 
 
 ```
 aws securityhub batch-enable-standards \
-    --standards-subscription-requests '{{{"StandardsArn":"arn:aws:securityhub:us-west-1::standards/pci-dss/v/3.2.1"}}}'
+    --standards-subscription-requests '{{{"StandardsArn":"arn:aws:securityhub:us-west-2::standards/pci-dss/v/3.2.1"}}}'
 ```
 Output:
 
@@ -130,15 +130,15 @@ Output:
 {
     "StandardsSubscriptions": [
         {
-            "StandardsArn": "arn:aws:securityhub:us-west-1::standards/pci-dss/v/3.2.1",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/pci-dss/v/3.2.1",
             "StandardsInput": { },
             "StandardsStatus": "PENDING",
-            "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1"
+            "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"
         }
     ]
 }
 ```
-For more information, see [Disabling or enabling a security standard](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-enable-disable.html) in the *AWS Security Hub User Guide*.
+For more information, see [Enabling a security standard](https://docs.aws.amazon.com/securityhub/latest/userguide/enable-standards.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [BatchEnableStandards](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/batch-enable-standards.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-automation-rules`
@@ -152,7 +152,7 @@ The following `batch-get-automation-rules` example gets details for the specifie
 
 ```
 aws securityhub batch-get-automation-rules \
-    --automation-rules-arns '{{["arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"]}}'
+    --automation-rules-arns '{{["arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"]}}'
 ```
 Output:
 
@@ -160,7 +160,7 @@ Output:
 {
     "Rules": [
         {
-            "RuleArn": "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "RuleStatus": "ENABLED",
             "RuleOrder": 1,
             "RuleName": "Suppress informational findings",
@@ -214,7 +214,7 @@ Output:
     "UnprocessedAutomationRules": []
 }
 ```
-For more information, see [Viewing automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html#view-automation-rules) in the *AWS Security Hub User Guide*.
+For more information, see [Viewing automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/view-automation-rules.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [BatchGetAutomationRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/batch-get-automation-rules.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-configuration-policy-associations`
@@ -234,13 +234,17 @@ Output:
 
 ```
 {
-    "ConfigurationPolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-    "TargetId": "ou-6hi7-8j91kl2m",
-    "TargetType": "ORGANIZATIONAL_UNIT",
-    "AssociationType": "APPLIED",
-    "UpdatedAt": "2023-09-26T21:13:01.816000+00:00",
-    "AssociationStatus": "SUCCESS",
-    "AssociationStatusMessage": "Association applied successfully on this target."
+    "ConfigurationPolicyAssociations": [
+        {
+            "ConfigurationPolicyId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "TargetId": "ou-6hi7-8j91kl2m",
+            "TargetType": "ORGANIZATIONAL_UNIT",
+            "AssociationType": "APPLIED",
+            "UpdatedAt": "2023-09-26T21:13:01.816000+00:00",
+            "AssociationStatus": "SUCCESS",
+            "AssociationStatusMessage": "Association applied successfully on this target."
+        }
+    ]
 }
 ```
 For more information, see [Viewing Security Hub configuration policies](https://docs.aws.amazon.com/securityhub/latest/userguide/view-policy.html) in the *AWS Security Hub User Guide*.
@@ -266,16 +270,16 @@ Output:
     "SecurityControls": [
         {
             "SecurityControlId": "ACM.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-2:123456789012:security-control/ACM.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/ACM.1",
             "Title": "Imported and ACM-issued certificates should be renewed after a specified time period",
             "Description": "This control checks whether an AWS Certificate Manager (ACM) certificate is renewed within the specified time period. It checks both imported certificates and certificates provided by ACM. The control fails if the certificate isn't renewed within the specified time period. Unless you provide a custom parameter value for the renewal period, Security Hub uses a default value of 30 days.",
             "RemediationUrl": "https://docs.aws.amazon.com/console/securityhub/ACM.1/remediation",
             "SeverityRating": "MEDIUM",
-            "SecurityControlStatus": "ENABLED"
+            "SecurityControlStatus": "ENABLED",
             "UpdateStatus": "READY",
             "Parameters": {
                 "daysToExpiration": {
-                    "ValueType": CUSTOM,
+                    "ValueType": "CUSTOM",
                     "Value": {
                         "Integer": 15
                     }
@@ -285,12 +289,12 @@ Output:
         },
         {
             "SecurityControlId": "IAM.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-2:123456789012:security-control/IAM.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/IAM.1",
             "Title": "IAM policies should not allow full \"*\" administrative privileges",
             "Description": "This AWS control checks whether the default version of AWS Identity and Access Management (IAM) policies (also known as customer managed policies) do not have administrator access with a statement that has \"Effect\": \"Allow\" with \"Action\": \"*\" over \"Resource\": \"*\". It only checks for the Customer Managed Policies that you created, but not inline and AWS Managed Policies.",
             "RemediationUrl": "https://docs.aws.amazon.com/console/securityhub/IAM.1/remediation",
             "SeverityRating": "HIGH",
-            "SecurityControlStatus": "ENABLED"
+            "SecurityControlStatus": "ENABLED",
             "UpdateStatus": "READY",
             "Parameters": {}
         }
@@ -311,7 +315,7 @@ The following `batch-get-standards-control-associations` example identifies whet
 
 ```
 aws securityhub batch-get-standards-control-associations \
-    --standards-control-association-ids '{{[{"SecurityControlId": "Config.1","StandardsArn": "arn:aws:securityhub:us-east-1:123456789012:ruleset/cis-aws-foundations-benchmark/v/1.2.0"}, {"SecurityControlId": "IAM.6","StandardsArn": "arn:aws:securityhub:us-east-1:123456789012:standards/aws-foundational-security-best-practices/v/1.0.0"}]}}'
+    --standards-control-association-ids '{{[{"SecurityControlId": "Config.1","StandardsArn": "arn:aws:securityhub:us-west-2:123456789012:ruleset/cis-aws-foundations-benchmark/v/1.2.0"}, {"SecurityControlId": "IAM.6","StandardsArn": "arn:aws:securityhub:us-west-2:123456789012:standards/aws-foundational-security-best-practices/v/1.0.0"}]}}'
 ```
 Output:
 
@@ -321,7 +325,7 @@ Output:
         {
             "StandardsArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
             "SecurityControlId": "Config.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-1:068873283051:security-control/Config.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/Config.1",
             "AssociationStatus": "ENABLED",
             "RelatedRequirements": [
                 "CIS AWS Foundations 2.5"
@@ -330,13 +334,13 @@ Output:
             "StandardsControlTitle": "Ensure AWS Config is enabled",
             "StandardsControlDescription": "AWS Config is a web service that performs configuration management of supported AWS resources within your account and delivers log files to you. The recorded information includes the configuration item (AWS resource), relationships between configuration items (AWS resources), and any configuration changes between resources. It is recommended to enable AWS Config in all regions.",
             "StandardsControlArns": [
-                "arn:aws:securityhub:us-east-1:068873283051:control/cis-aws-foundations-benchmark/v/1.2.0/2.5"
+                "arn:aws:securityhub:us-west-2:123456789012:control/cis-aws-foundations-benchmark/v/1.2.0/2.5"
             ]
         },
         {
-            "StandardsArn": "arn:aws:securityhub:us-east-1::standards/aws-foundational-security-best-practices/v/1.0.0",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0",
             "SecurityControlId": "IAM.6",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-1:068873283051:security-control/IAM.6",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/IAM.6",
             "AssociationStatus": "DISABLED",
             "RelatedRequirements": [],
             "UpdatedAt": "2022-11-22T21:30:35.080000+00:00",
@@ -344,7 +348,7 @@ Output:
             "StandardsControlTitle": "Hardware MFA should be enabled for the root user",
             "StandardsControlDescription": "This AWS control checks whether your AWS account is enabled to use a hardware multi-factor authentication (MFA) device to sign in with root user credentials.",
             "StandardsControlArns": [
-                "arn:aws:securityhub:us-east-1:068873283051:control/aws-foundational-security-best-practices/v/1.0.0/IAM.6"
+                "arn:aws:securityhub:us-west-2:123456789012:control/aws-foundational-security-best-practices/v/1.0.0/IAM.6"
             ]
         }
     ]
@@ -364,7 +368,7 @@ The following `batch-import-findings` example updates a finding.
 
 ```
 aws securityhub batch-import-findings \
-     --findings '
+    --findings '
         {{[{
             "AwsAccountId": "123456789012",
             "CreatedAt": "2020-05-27T17:05:54.832Z",
@@ -380,12 +384,12 @@ aws securityhub batch-import-findings \
             },
             "GeneratorId": "TestGeneratorId",
             "Id": "Id1",
-            "ProductArn": "arn:aws:securityhub:us-west-1:123456789012:product/123456789012/default",
+            "ProductArn": "arn:aws:securityhub:us-west-2:123456789012:product/123456789012/default",
             "Resources": [
                 {
-                    "Id": "arn:aws:cloudtrail:us-west-1:123456789012:trail/TrailName",
+                    "Id": "arn:aws:cloudtrail:us-west-2:123456789012:trail/TrailName",
                     "Partition": "aws",
-                    "Region": "us-west-1",
+                    "Region": "us-west-2",
                     "Type": "AwsCloudTrailTrail"
                 }
             ],
@@ -437,7 +441,7 @@ aws securityhub batch-update-automation-rules \
                     "Comparison": "EQUALS" \
                 }] \
             }, \
-            "RuleArn": "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111", \
+            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111", \
             "RuleOrder": 1, \
             "RuleStatus": "DISABLED" \
         } \
@@ -448,12 +452,12 @@ Output:
 ```
 {
     "ProcessedAutomationRules": [
-        "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     ],
     "UnprocessedAutomationRules": []
 }
 ```
-For more information, see [Editing automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html#edit-automation-rules) in the *AWS Security Hub User Guide*.
+For more information, see [Editing automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/edit-automation-rules.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [BatchUpdateAutomationRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/batch-update-automation-rules.html) in *AWS CLI Command Reference*.
 
 ### `batch-update-findings`
@@ -467,7 +471,7 @@ The following `batch-update-findings` example updates two findings to add a note
 
 ```
 aws securityhub batch-update-findings \
-    --finding-identifiers '{{[{"Id": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111", "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub"}, {"Id": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222", "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub"}]}}' \
+    --finding-identifiers '{{[{"Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111", "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"}, {"Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222", "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"}]}}' \
     --note '{{{"Text": "Known issue that is not a risk.", "UpdatedBy": "user1"}}}' \
     --severity '{{{"Label": "LOW"}}}' \
     --workflow '{{{"Status": "RESOLVED"}}}'
@@ -478,12 +482,12 @@ Output:
 {
     "ProcessedFindings": [
         {
-            "Id": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub"
+            "Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
         },
         {
-            "Id": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub"
+            "Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
         }
     ],
     "UnprocessedFindings": []
@@ -495,7 +499,7 @@ The following `batch-update-findings` example updates two findings to add a note
 
 ```
 aws securityhub batch-update-findings \
-    --finding-identifiers Id="arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",ProductArn="arn:aws:securityhub:us-west-1::product/aws/securityhub" Id="arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",ProductArn="arn:aws:securityhub:us-west-1::product/aws/securityhub" \
+    --finding-identifiers Id="arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",ProductArn="arn:aws:securityhub:us-west-2::product/aws/securityhub" Id="arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",ProductArn="arn:aws:securityhub:us-west-2::product/aws/securityhub" \
     --note Text="Known issue that is not a risk.",UpdatedBy="user1" \
     --severity Label="LOW" \
     --workflow Status="RESOLVED"
@@ -506,12 +510,12 @@ Output:
 {
     "ProcessedFindings": [
         {
-            "Id": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub"
+            "Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
         },
         {
-            "Id": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
-            "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub"
+            "Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
         }
     ],
     "UnprocessedFindings": []
@@ -533,7 +537,13 @@ The following `batch-update-standards-control-associations` example disables Clo
 aws securityhub batch-update-standards-control-associations \
     --standards-control-association-updates '{{[{"SecurityControlId": "CloudTrail.1", "StandardsArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0", "AssociationStatus": "DISABLED", "UpdatedReason": "Not applicable to environment"}, {"SecurityControlId": "CloudTrail.1", "StandardsArn": "arn:aws:securityhub:::standards/cis-aws-foundations-benchmark/v/1.4.0", "AssociationStatus": "DISABLED", "UpdatedReason": "Not applicable to environment"}]}}'
 ```
-This command produces no output when successful.
+Output:
+
+```
+{
+    "UnprocessedAssociationUpdates": []
+}
+```
 For more information, see [Enabling and disabling controls in specific standards](https://docs.aws.amazon.com/securityhub/latest/userguide/controls-configure.html) and [Enabling and disabling controls in all standards](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-enable-disable-controls.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [BatchUpdateStandardsControlAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/batch-update-standards-control-associations.html) in *AWS CLI Command Reference*.
 
@@ -556,10 +566,10 @@ Output:
 
 ```
 {
-    "ActionTargetArn": "arn:aws:securityhub:us-west-1:123456789012:action/custom/Remediation"
+    "ActionTargetArn": "arn:aws:securityhub:us-west-2:123456789012:action/custom/Remediation"
 }
 ```
-For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html#securityhub-cwe-configure) in the *AWS Security Hub User Guide*.
+For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cwe-configure.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [CreateActionTarget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/create-action-target.html) in *AWS CLI Command Reference*.
 
 ### `create-automation-rule`
@@ -601,10 +611,10 @@ Output:
 
 ```
 {
-    "RuleArn": "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Creating automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html#create-automation-rules) in the *AWS Security Hub User Guide*.
+For more information, see [Creating automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/create-automation-rules.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [CreateAutomationRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/create-automation-rule.html) in *AWS CLI Command Reference*.
 
 ### `create-configuration-policy`
@@ -620,14 +630,14 @@ The following `create-configuration-policy` example creates a configuration poli
 aws securityhub create-configuration-policy \
     --name {{"SampleConfigurationPolicy"}} \
     --description {{"SampleDescription"}} \
-    --configuration-policy '{{{"SecurityHub": {"ServiceEnabled": true, "EnabledStandardIdentifiers": ["arn:aws:securityhub:eu-central-1::standards/aws-foundational-security-best-practices/v/1.0.0","arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"],"SecurityControlsConfiguration":{"DisabledSecurityControlIdentifiers": ["CloudTrail.2"], "SecurityControlCustomParameters": [{"SecurityControlId": "ACM.1", "Parameters": {"daysToExpiration": {"ValueType": "CUSTOM", "Value": {"Integer": 15}}}}]}}}}}' \
+    --configuration-policy '{{{"SecurityHub": {"ServiceEnabled": true, "EnabledStandardIdentifiers": ["arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0","arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"],"SecurityControlsConfiguration":{"DisabledSecurityControlIdentifiers": ["CloudTrail.2"], "SecurityControlCustomParameters": [{"SecurityControlId": "ACM.1", "Parameters": {"daysToExpiration": {"ValueType": "CUSTOM", "Value": {"Integer": 15}}}}]}}}}}' \
     --tags '{{{"Environment": "Prod"}}}'
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Arn": "arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Name": "SampleConfigurationPolicy",
     "Description": "SampleDescription",
@@ -637,7 +647,7 @@ Output:
         "SecurityHub": {
             "ServiceEnabled": true,
             "EnabledStandardIdentifiers": [
-                "arn:aws:securityhub:eu-central-1::standards/aws-foundational-security-best-practices/v/1.0.0",
+                "arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0",
                 "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"
             ],
             "SecurityControlsConfiguration": {
@@ -684,10 +694,13 @@ Output:
 
 ```
 {
-    "FindingAggregatorArn": "arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000",
+    "FindingAggregatorArn": "arn:aws:securityhub:us-east-1:123456789012:finding-aggregator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "FindingAggregationRegion": "us-east-1",
     "RegionLinkingMode": "SPECIFIED_REGIONS",
-    "Regions": "us-west-1,us-west-2"
+    "Regions": [
+        "us-west-1",
+        "us-west-2"
+    ]
 }
 ```
 For more information, see [Enabling finding aggregation](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-enable.html) in the *AWS Security Hub User Guide*.
@@ -712,7 +725,7 @@ Output:
 
 ```
 {
-    "InsightArn": "arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    "InsightArn": "arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Managing custom insights](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-custom-insights.html) in the *AWS Security Hub User Guide*.
@@ -775,16 +788,16 @@ The following `delete-action-target` example deletes the custom action identifie
 
 ```
 aws securityhub delete-action-target \
-    --action-target-arn {{"arn:aws:securityhub:us-west-1:123456789012:action/custom/Remediation"}}
+    --action-target-arn {{"arn:aws:securityhub:us-west-2:123456789012:action/custom/Remediation"}}
 ```
 Output:
 
 ```
 {
-    "ActionTargetArn": "arn:aws:securityhub:us-west-1:123456789012:action/custom/Remediation"
+    "ActionTargetArn": "arn:aws:securityhub:us-west-2:123456789012:action/custom/Remediation"
 }
 ```
-For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html#securityhub-cwe-configure) in the *AWS Security Hub User Guide*.
+For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cwe-configure.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [DeleteActionTarget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/delete-action-target.html) in *AWS CLI Command Reference*.
 
 ### `delete-configuration-policy`
@@ -798,7 +811,7 @@ The following `delete-configuration-policy` example deletes the specified config
 
 ```
 aws securityhub delete-configuration-policy \
-    --identifier {{"arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+    --identifier {{"arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 This command produces no output.
 For more information, see [Deleting and disassociating Security Hub configuration policies](https://docs.aws.amazon.com/securityhub/latest/userguide/delete-disassociate-policy.html) in the *AWS Security Hub User Guide*.
@@ -815,8 +828,8 @@ The following `delete-finding-aggregator` example stops finding aggregation. It 
 
 ```
 aws securityhub delete-finding-aggregator \
-    --region {{us-east-1}} \
-    --finding-aggregator-arn {{arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000}}
+    --region {{us-west-2}} \
+    --finding-aggregator-arn {{arn:aws:securityhub:us-west-2:123456789012:finding-aggregator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Stopping finding aggregation](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-stop.html) in the *AWS Security Hub User Guide*.
@@ -833,13 +846,13 @@ The following `delete-insight` example deletes the custom insight with the speci
 
 ```
 aws securityhub delete-insight \
-    --insight-arn {{"arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+    --insight-arn {{"arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-   "InsightArn": "arn:aws:securityhub:eu-central-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    "InsightArn": "arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Managing custom insights](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-custom-insights.html) in the *AWS Security Hub User Guide*.
@@ -902,7 +915,7 @@ The following `describe-action-targets` example retrieves information about the 
 
 ```
 aws securityhub describe-action-targets \
-    --action-target-arns {{"arn:aws:securityhub:us-west-1:123456789012:action/custom/Remediation"}}
+    --action-target-arns {{"arn:aws:securityhub:us-west-2:123456789012:action/custom/Remediation"}}
 ```
 Output:
 
@@ -910,14 +923,14 @@ Output:
 {
     "ActionTargets": [
         {
-            "ActionTargetArn": "arn:aws:securityhub:us-west-1:123456789012:action/custom/Remediation",
+            "ActionTargetArn": "arn:aws:securityhub:us-west-2:123456789012:action/custom/Remediation",
             "Description": "Action to send the finding for remediation tracking",
             "Name": "Send to remediation"
         }
     ]
 }
 ```
-For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html#securityhub-cwe-configure) in the *AWS Security Hub User Guide*.
+For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cwe-configure.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [DescribeActionTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/describe-action-targets.html) in *AWS CLI Command Reference*.
 
 ### `describe-hub`
@@ -931,13 +944,13 @@ The following `describe-hub` example returns the subscription date and other con
 
 ```
 aws securityhub describe-hub \
-    --hub-arn {{"arn:aws:securityhub:us-west-1:123456789012:hub/default"}}
+    --hub-arn {{"arn:aws:securityhub:us-west-2:123456789012:hub/default"}}
 ```
 Output:
 
 ```
 {
-    "HubArn": "arn:aws:securityhub:us-west-1:123456789012:hub/default",
+    "HubArn": "arn:aws:securityhub:us-west-2:123456789012:hub/default",
     "SubscribedAt": "2019-11-19T23:15:10.046Z",
     "AutoEnableControls": true,
     "ControlFindingGenerator": "SECURITY_CONTROL"
@@ -995,7 +1008,7 @@ Output:
     "NextToken": "U2FsdGVkX18vvPlOqb7RDrWRWVFBJI46MOIAb+nZmRJmR15NoRi2gm13sdQEn3O/pq/78dGs+bKpgA+7HMPHO0qX33/zoRI+uIG/F9yLNhcOrOWzFUdy36JcXLQji3Rpnn/cD1SVkGA98qI3zPOSDg==",
     "Products": [
         {
-            "ProductArn": "arn:aws:securityhub:us-west-1:123456789333:product/crowdstrike/crowdstrike-falcon",
+            "ProductArn": "arn:aws:securityhub:us-west-2:123456789333:product/crowdstrike/crowdstrike-falcon",
             "ProductName": "CrowdStrike Falcon",
             "CompanyName": "CrowdStrike",
             "Description": "CrowdStrike Falcon's single lightweight sensor unifies next-gen antivirus, endpoint detection and response, and 24/7 managed hunting, via the cloud.",
@@ -1011,9 +1024,9 @@ Output:
             ],
             "MarketplaceUrl": "https://aws.amazon.com/marketplace/seller-profile?id=a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ActivationUrl": "https://falcon.crowdstrike.com/support/documentation",
-            "ProductSubscriptionResourcePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"123456789333\"},\"Action\":[\"securityhub:BatchImportFindings\"],\"Resource\":\"arn:aws:securityhub:us-west-1:123456789012:product-subscription/crowdstrike/crowdstrike-falcon\",\"Condition\":{\"StringEquals\":{\"securityhub:TargetAccount\":\"123456789012\"}}},{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"123456789012\"},\"Action\":[\"securityhub:BatchImportFindings\"],\"Resource\":\"arn:aws:securityhub:us-west-1:123456789333:product/crowdstrike/crowdstrike-falcon\",\"Condition\":{\"StringEquals\":{\"securityhub:TargetAccount\":\"123456789012\"}}}]}"
+            "ProductSubscriptionResourcePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"123456789333\"},\"Action\":[\"securityhub:BatchImportFindings\"],\"Resource\":\"arn:aws:securityhub:us-west-2:123456789012:product-subscription/crowdstrike/crowdstrike-falcon\",\"Condition\":{\"StringEquals\":{\"securityhub:TargetAccount\":\"123456789012\"}}},{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"123456789012\"},\"Action\":[\"securityhub:BatchImportFindings\"],\"Resource\":\"arn:aws:securityhub:us-west-2:123456789333:product/crowdstrike/crowdstrike-falcon\",\"Condition\":{\"StringEquals\":{\"securityhub:TargetAccount\":\"123456789012\"}}}]}"
         }
-   ]
+    ]
 }
 ```
 For more information, see [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
@@ -1030,7 +1043,7 @@ The following `describe-standards-controls` example requests the list of control
 
 ```
 aws securityhub describe-standards-controls \
-    --standards-subscription-arn {{"arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1"}} \
+    --standards-subscription-arn {{"arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"}} \
     --max-results {{2}}
 ```
 Output:
@@ -1039,7 +1052,7 @@ Output:
 {
     "Controls": [
         {
-            "StandardsControlArn": "arn:aws:securityhub:us-west-1:123456789012:control/pci-dss/v/3.2.1/PCI.AutoScaling.1",
+            "StandardsControlArn": "arn:aws:securityhub:us-west-2:123456789012:control/pci-dss/v/3.2.1/PCI.AutoScaling.1",
             "ControlStatus": "ENABLED",
             "ControlStatusUpdatedAt": "2020-05-15T18:49:04.473000+00:00",
             "ControlId": "PCI.AutoScaling.1",
@@ -1052,7 +1065,7 @@ Output:
             ]
         },
         {
-            "StandardsControlArn": "arn:aws:securityhub:us-west-1:123456789012:control/pci-dss/v/3.2.1/PCI.CW.1",
+            "StandardsControlArn": "arn:aws:securityhub:us-west-2:123456789012:control/pci-dss/v/3.2.1/PCI.CW.1",
             "ControlStatus": "ENABLED",
             "ControlStatusUpdatedAt": "2020-05-15T18:49:04.498000+00:00",
             "ControlId": "PCI.CW.1",
@@ -1089,7 +1102,7 @@ Output:
 {
     "Standards": [
         {
-            "StandardsArn": "arn:aws:securityhub:us-west-1::standards/aws-foundational-security-best-practices/v/1.0.0",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0",
             "Name": "AWS Foundational Security Best Practices v1.0.0",
             "Description": "The AWS Foundational Security Best Practices standard is a set of automated security checks that detect when AWS accounts and deployed resources do not align to security best practices. The standard is defined by AWS security experts. This curated set of controls helps improve your security posture in AWS, and cover AWS's most popular and foundational services.",
             "EnabledByDefault": true
@@ -1101,7 +1114,7 @@ Output:
             "EnabledByDefault": true
         },
         {
-            "StandardsArn": "arn:aws:securityhub:us-west-1::standards/pci-dss/v/3.2.1",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/pci-dss/v/3.2.1",
             "Name": "PCI DSS v3.2.1",
             "Description": "The Payment Card Industry Data Security Standard (PCI DSS) v3.2.1 is an information security standard for entities that store, process, and/or transmit cardholder data. This Security Hub standard automatically checks for your compliance readiness against a subset of PCI DSS requirements.",
             "EnabledByDefault": false
@@ -1123,7 +1136,7 @@ The following `disable-import-findings-for-product` example disables the flow of
 
 ```
 aws securityhub disable-import-findings-for-product \
-    --product-subscription-arn {{"arn:aws:securityhub:us-west-1:123456789012:product-subscription/crowdstrike/crowdstrike-falcon"}}
+    --product-subscription-arn {{"arn:aws:securityhub:us-west-2:123456789012:product-subscription/crowdstrike/crowdstrike-falcon"}}
 ```
 This command produces no output.
 For more information, see [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
@@ -1140,7 +1153,7 @@ The following `disable-organization-admin-account` example revokes the specified
 
 ```
 aws securityhub disable-organization-admin-account \
-    --admin-account-id {{777788889999}}
+    --admin-account-id {{123456789012}}
 ```
 This command produces no output.
 For more information, see [Designating a Security Hub administrator account](https://docs.aws.amazon.com/securityhub/latest/userguide/designate-orgs-admin-account.html) in the *AWS Security Hub User Guide*.
@@ -1222,13 +1235,13 @@ The following `enable-import-findings-for-product` example enables the flow of f
 
 ```
 aws securityhub enable-import-findings-for-product \
-    --product-arn {{"arn:aws:securityhub:us-east-1:123456789333:product/crowdstrike/crowdstrike-falcon"}}
+    --product-arn {{"arn:aws:securityhub:us-west-2:123456789333:product/crowdstrike/crowdstrike-falcon"}}
 ```
 Output:
 
 ```
 {
-    "ProductSubscriptionArn": "arn:aws:securityhub:us-east-1:123456789012:product-subscription/crowdstrike/crowdstrike-falcon"
+    "ProductSubscriptionArn": "arn:aws:securityhub:us-west-2:123456789012:product-subscription/crowdstrike/crowdstrike-falcon"
 }
 ```
 For more information, see [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
@@ -1245,7 +1258,7 @@ The following `enable-organization-admin-account` example designates the specifi
 
 ```
 aws securityhub enable-organization-admin-account \
-    --admin-account-id {{777788889999}}
+    --admin-account-id {{123456789012}}
 ```
 This command produces no output.
 For more information, see [Designating a Security Hub administrator account](https://docs.aws.amazon.com/securityhub/latest/userguide/designate-orgs-admin-account.html) in the *AWS Security Hub User Guide*.
@@ -1266,7 +1279,7 @@ aws securityhub enable-security-hub \
     --tags '{{{"Department": "Security"}}}'
 ```
 This command produces no output.
-For more information, see [Enabling Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html#securityhub-enable) in the *AWS Security Hub User Guide*.
+For more information, see [Enabling Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [EnableSecurityHub](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/enable-security-hub.html) in *AWS CLI Command Reference*.
 
 ### `get-administrator-account`
@@ -1285,12 +1298,12 @@ Output:
 
 ```
 {
-   "Master": {
-      "AccountId": "123456789012",
-      "InvitationId": "7ab938c5d52d7904ad09f9e7c20cc4eb",
-      "InvitedAt": 2020-06-01T20:21:18.042000+00:00,
-      "MemberStatus": "ASSOCIATED"
-   }
+    "Administrator": {
+        "AccountId": "123456789012",
+        "InvitationId": "7ab938c5d52d7904ad09f9e7c20cc4eb",
+        "InvitedAt": "2020-06-01T20:21:18.042000+00:00",
+        "MemberStatus": "ASSOCIATED"
+    }
 }
 ```
 For more information, see [Managing administrator and member accounts](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html) in the *AWS Security Hub User Guide*.
@@ -1336,14 +1349,14 @@ The following `get-configuration-policy` example retrieves details about the spe
 
 ```
 aws securityhub get-configuration-policy \
-   --identifier {{"arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+    --identifier {{"arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-    "Id": "ce5ed1e7-9639-4e2f-9313-fa87fcef944b",
+    "Arn": "arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Name": "SampleConfigurationPolicy",
     "Description": "SampleDescription",
     "UpdatedAt": "2023-11-28T20:28:04.494000+00:00",
@@ -1352,7 +1365,7 @@ Output:
         "SecurityHub": {
             "ServiceEnabled": true,
             "EnabledStandardIdentifiers": [
-                "arn:aws:securityhub:eu-central-1::standards/aws-foundational-security-best-practices/v/1.0.0",
+                "arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0",
                 "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"
             ],
             "SecurityControlsConfiguration": {
@@ -1391,7 +1404,7 @@ The following `get-enabled-standards` example retrieves information about the PC
 
 ```
 aws securityhub get-enabled-standards \
-    --standards-subscription-arn {{"arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1"}}
+    --standards-subscription-arn {{"arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"}}
 ```
 Output:
 
@@ -1399,10 +1412,10 @@ Output:
 {
     "StandardsSubscriptions": [
         {
-            "StandardsArn": "arn:aws:securityhub:us-west-1::standards/pci-dss/v/3.2.1",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/pci-dss/v/3.2.1",
             "StandardsInput": { },
             "StandardsStatus": "READY",
-            "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1"
+            "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1"
         }
     ]
 }
@@ -1421,16 +1434,19 @@ The following `get-finding-aggregator` example retrieves the current finding agg
 
 ```
 aws securityhub get-finding-aggregator \
-    --finding-aggregator-arn {{arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000}}
+    --finding-aggregator-arn {{arn:aws:securityhub:us-east-1:123456789012:finding-aggregator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "FindingAggregatorArn": "arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000",
+    "FindingAggregatorArn": "arn:aws:securityhub:us-east-1:123456789012:finding-aggregator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "FindingAggregationRegion": "us-east-1",
     "RegionLinkingMode": "SPECIFIED_REGIONS",
-    "Regions": "us-west-1,us-west-2"
+    "Regions": [
+        "us-west-1",
+        "us-west-2"
+    ]
 }
 ```
 For more information, see [Viewing the current finding aggregation configuration](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-view-config.html) in the *AWS Security Hub User Guide*.
@@ -1447,7 +1463,7 @@ The following `get-finding-history` example gets up to the last 90 days of histo
 
 ```
 aws securityhub get-finding-history \
-    --finding-identifier Id="arn:aws:securityhub:us-east-1:123456789012:security-control/S3.17/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",ProductArn="arn:aws:securityhub:us-east-1::product/aws/securityhub"
+    --finding-identifier Id="arn:aws:securityhub:us-west-2:123456789012:security-control/S3.17/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",ProductArn="arn:aws:securityhub:us-west-2::product/aws/securityhub"
 ```
 Output:
 
@@ -1456,14 +1472,14 @@ Output:
     "Records": [
         {
             "FindingIdentifier": {
-                "Id": "arn:aws:securityhub:us-east-1:123456789012:security-control/S3.17/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-                "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub"
+                "Id": "arn:aws:securityhub:us-west-2:123456789012:security-control/S3.17/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
             },
             "UpdateTime": "2023-06-02T03:15:25.685000+00:00",
             "FindingCreated": false,
             "UpdateSource": {
                 "Type": "BATCH_IMPORT_FINDINGS",
-                "Identity": "arn:aws:securityhub:us-east-1::product/aws/securityhub"
+                "Identity": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
             },
             "Updates": [
                 {
@@ -1490,21 +1506,21 @@ Output:
         },
         {
             "FindingIdentifier": {
-                "Id": "arn:aws:securityhub:us-east-1:123456789012:security-control/S3.17/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-                "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub"
+                "Id": "arn:aws:securityhub:us-west-2:123456789012:security-control/S3.17/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
             },
             "UpdateTime": "2023-05-23T02:06:51.518000+00:00",
-            "FindingCreated": "true",
+            "FindingCreated": true,
             "UpdateSource": {
                 "Type": "BATCH_IMPORT_FINDINGS",
-                "Identity": "arn:aws:securityhub:us-east-1::product/aws/securityhub"
+                "Identity": "arn:aws:securityhub:us-west-2::product/aws/securityhub"
             },
             "Updates": []
         }
     ]
 }
 ```
-For more information, see [Finding history](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-view-details.html#finding-history) in the *AWS Security Hub User Guide*.
+For more information, see [Reviewing finding details and history in Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-viewing.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [GetFindingHistory](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/get-finding-history.html) in *AWS CLI Command Reference*.
 
 ### `get-findings`
@@ -1528,8 +1544,8 @@ Output:
     "Findings": [
         {
             "SchemaVersion": "2018-10-08",
-            "Id": "arn:aws:securityhub:eu-central-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "ProductArn": "arn:aws:securityhub:us-west-1::product/aws/securityhub",
+            "Id": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub",
             "GeneratorId": "pci-dss/v/3.2.1/PCI.Lambda.2",
             "AwsAccountId": "123456789012",
             "Types": [
@@ -1537,7 +1553,7 @@ Output:
             ],
             "FindingProviderFields": {
                 "Severity": {
-                    "Original": 0,
+                    "Original": "0",
                     "Label": "INFORMATIONAL"
                 },
                 "Types": [
@@ -1549,7 +1565,7 @@ Output:
             "CreatedAt": "2020-06-02T14:02:49.159Z",
             "UpdatedAt": "2020-06-02T14:02:52.397Z",
             "Severity": {
-                "Original": 0,
+                "Original": "0",
                 "Label": "INFORMATIONAL",
                 "Normalized": 0
             },
@@ -1563,23 +1579,23 @@ Output:
             },
             "ProductFields": {
                 "StandardsArn": "arn:aws:securityhub:::standards/pci-dss/v/3.2.1",
-                "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-1:123456789012:subscription/pci-dss/v/3.2.1",
+                "StandardsSubscriptionArn": "arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1",
                 "ControlId": "PCI.Lambda.2",
                 "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/PCI.Lambda.2/remediation",
                 "RelatedAWSResources:0/name": "securityhub-lambda-inside-vpc-0e904a3b",
                 "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
-                "StandardsControlArn": "arn:aws:securityhub:us-west-1:123456789012:control/pci-dss/v/3.2.1/PCI.Lambda.2",
+                "StandardsControlArn": "arn:aws:securityhub:us-west-2:123456789012:control/pci-dss/v/3.2.1/PCI.Lambda.2",
                 "aws/securityhub/SeverityLabel": "INFORMATIONAL",
                 "aws/securityhub/ProductName": "Security Hub",
                 "aws/securityhub/CompanyName": "AWS",
-                "aws/securityhub/FindingId": "arn:aws:securityhub:eu-central-1::product/aws/securityhub/arn:aws:securityhub:eu-central-1:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-west-2::product/aws/securityhub/arn:aws:securityhub:us-west-2:123456789012:subscription/pci-dss/v/3.2.1/PCI.Lambda.2/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
             "Resources": [
                 {
                     "Type": "AwsAccount",
                     "Id": "AWS::::Account:123456789012",
                     "Partition": "aws",
-                    "Region": "us-west-1"
+                    "Region": "us-west-2"
                 }
             ],
             "Compliance": {
@@ -1617,16 +1633,16 @@ Output:
     "Findings": [
         {
             "SchemaVersion": "2018-10-08",
-            "Id": "arn:aws:securityhub:us-west-1: 123456789012:subscription/cis-aws-foundations-benchmark/v/1.2.0/1.13/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Id": "arn:aws:securityhub:us-west-2: 123456789012:subscription/cis-aws-foundations-benchmark/v/1.2.0/1.13/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "ProductArn": "arn:aws:securityhub:us-west-2::product/aws/securityhub",
             "GeneratorId": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0/rule/1.13",
             "AwsAccountId": "123456789012",
             "Types": [
                 "Software and Configuration Checks/Industry and Regulatory Standards/CIS AWS Foundations Benchmark"
             ],
-            "FindingProviderFields" {
+            "FindingProviderFields": {
                 "Severity": {
-                    "Original": 90,
+                    "Original": "90",
                     "Label": "CRITICAL"
                 },
                 "Types": [
@@ -1638,7 +1654,7 @@ Output:
             "CreatedAt": "2020-05-21T20:16:34.752Z",
             "UpdatedAt": "2020-06-09T08:16:36.430Z",
             "Severity": {
-                "Original": 90,
+                "Original": "90",
                 "Label": "CRITICAL",
                 "Normalized": 90
             },
@@ -1652,23 +1668,23 @@ Output:
             },
             "ProductFields": {
                 "StandardsGuideArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
-                "StandardsGuideSubscriptionArn": "arn:aws:securityhub:us-west-1:123456789012:subscription/cis-aws-foundations-benchmark/v/1.2.0",
+                "StandardsGuideSubscriptionArn": "arn:aws:securityhub:us-west-2:123456789012:subscription/cis-aws-foundations-benchmark/v/1.2.0",
                 "RuleId": "1.13",
                 "RecommendationUrl": "https://docs.aws.amazon.com/console/securityhub/standards-cis-1.13/remediation",
                 "RelatedAWSResources:0/name": "securityhub-root-account-mfa-enabled-5pftha",
                 "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
-                "StandardsControlArn": "arn:aws:securityhub:us-west-1:123456789012:control/cis-aws-foundations-benchmark/v/1.2.0/1.13",
+                "StandardsControlArn": "arn:aws:securityhub:us-west-2:123456789012:control/cis-aws-foundations-benchmark/v/1.2.0/1.13",
                 "aws/securityhub/SeverityLabel": "CRITICAL",
                 "aws/securityhub/ProductName": "Security Hub",
                 "aws/securityhub/CompanyName": "AWS",
-                "aws/securityhub/FindingId": "arn:aws:securityhub:us-west-1::product/aws/securityhub/arn:aws:securityhub:us-west-1:123456789012:subscription/cis-aws-foundations-benchmark/v/1.2.0/1.13/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                "aws/securityhub/FindingId": "arn:aws:securityhub:us-west-2::product/aws/securityhub/arn:aws:securityhub:us-west-2:123456789012:subscription/cis-aws-foundations-benchmark/v/1.2.0/1.13/finding/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             },
             "Resources": [
                 {
                     "Type": "AwsAccount",
                     "Id": "AWS::::Account:123456789012",
                     "Partition": "aws",
-                    "Region": "us-west-1"
+                    "Region": "us-west-2"
                 }
             ],
             "Compliance": {
@@ -1683,7 +1699,7 @@ Output:
     ]
 }
 ```
-For more information, see [Filtering and grouping findings](https://docs.aws.amazon.com/securityhub/latest/userguide/findings-filtering-grouping.html) in the *AWS Security Hub User Guide*.
+For more information, see [Filtering findings in Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-manage.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [GetFindings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/get-findings.html) in *AWS CLI Command Reference*.
 
 ### `get-insight-results`
@@ -1697,7 +1713,7 @@ The following `get-insight-results` example returns the list of insight results 
 
 ```
 aws securityhub get-insight-results \
-    --insight-arn {{"arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+    --insight-arn {{"arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1705,7 +1721,7 @@ Output:
 {
     "InsightResults": {
         "GroupByAttribute": "ResourceId",
-        "InsightArn": "arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "InsightArn": "arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "ResultValues": [
             {
                 "Count": 10,
@@ -1733,7 +1749,7 @@ The following `get-insights` example retrieves the configuration details for the
 
 ```
 aws securityhub get-insights \
-    --insight-arns {{"arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
+    --insight-arns {{"arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}}
 ```
 Output:
 
@@ -1742,7 +1758,7 @@ Output:
     "Insights": [
         {
             "Filters": {
-               "ResourceType": [
+                "ResourceType": [
                     {
                         "Comparison": "EQUALS",
                         "Value": "AwsIamRole"
@@ -1753,10 +1769,10 @@ Output:
                         "Comparison": "EQUALS",
                         "Value": "CRITICAL"
                     }
-                ],
+                ]
             },
             "GroupByAttribute": "ResourceId",
-            "InsightArn": "arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "InsightArn": "arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "Critical role findings"
         }
     ]
@@ -1781,7 +1797,7 @@ Output:
 
 ```
 {
-  "InvitationsCount": 3
+    "InvitationsCount": 3
 }
 ```
 For more information, see [Managing administrator and member accounts](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html) in the *AWS Security Hub User Guide*.
@@ -1803,12 +1819,12 @@ Output:
 
 ```
 {
-   "Master": {
-      "AccountId": "123456789012",
-      "InvitationId": "7ab938c5d52d7904ad09f9e7c20cc4eb",
-      "InvitedAt": 2020-06-01T20:21:18.042000+00:00,
-      "MemberStatus": "ASSOCIATED"
-   }
+    "Master": {
+        "AccountId": "123456789012",
+        "InvitationId": "7ab938c5d52d7904ad09f9e7c20cc4eb",
+        "InvitedAt": "2020-06-01T20:21:18.042000+00:00",
+        "MemberStatus": "ASSOCIATED"
+    }
 }
 ```
 For more information, see [Managing administrator and member accounts](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html) in the *AWS Security Hub User Guide*.
@@ -1825,7 +1841,7 @@ The following `get-members` example retrieves information about the specified me
 
 ```
 aws securityhub get-members \
-    --account-ids {{"444455556666"}} {{"777788889999"}}
+    --account-ids {{"123456789111"}} {{"123456789222"}}
 ```
 Output:
 
@@ -1835,18 +1851,18 @@ Output:
         {
             "AccountId": "123456789111",
             "AdministratorId": "123456789012",
-            "InvitedAt": 2020-06-01T20:15:15.289000+00:00,
+            "InvitedAt": "2020-06-01T20:15:15.289000+00:00",
             "MasterId": "123456789012",
             "MemberStatus": "ASSOCIATED",
-            "UpdatedAt": 2020-06-01T20:15:15.289000+00:00
+            "UpdatedAt": "2020-06-01T20:15:15.289000+00:00"
         },
         {
             "AccountId": "123456789222",
             "AdministratorId": "123456789012",
-            "InvitedAt": 2020-06-01T20:15:15.289000+00:00,
+            "InvitedAt": "2020-06-01T20:15:15.289000+00:00",
             "MasterId": "123456789012",
             "MemberStatus": "ASSOCIATED",
-            "UpdatedAt": 2020-06-01T20:15:15.289000+00:00
+            "UpdatedAt": "2020-06-01T20:15:15.289000+00:00"
         }
     ],
     "UnprocessedAccounts": [ ]
@@ -1940,7 +1956,7 @@ Output:
 {
     "AutomationRulesMetadata": [
         {
-            "RuleArn": "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "RuleStatus": "ENABLED",
             "RuleOrder": 1,
             "RuleName": "Suppress informational findings",
@@ -1951,7 +1967,7 @@ Output:
             "CreatedBy": "arn:aws:iam::123456789012:role/Admin"
         },
         {
-            "RuleArn": "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "RuleStatus": "ENABLED",
             "RuleOrder": 1,
             "RuleName": "sample rule",
@@ -1962,7 +1978,7 @@ Output:
             "CreatedBy": "arn:aws:iam::123456789012:role/Admin"
         },
         {
-            "RuleArn": "arn:aws:securityhub:us-east-1:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "RuleArn": "arn:aws:securityhub:us-west-2:123456789012:automation-rule/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "RuleStatus": "ENABLED",
             "RuleOrder": 1,
             "RuleName": "sample rule",
@@ -1975,7 +1991,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html#view-automation-rules) in the *AWS Security Hub User Guide*.
+For more information, see [Viewing automation rules](https://docs.aws.amazon.com/securityhub/latest/userguide/view-automation-rules.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [ListAutomationRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/list-automation-rules.html) in *AWS CLI Command Reference*.
 
 ### `list-configuration-policies`
@@ -1997,7 +2013,7 @@ Output:
 {
     "ConfigurationPolicySummaries": [
         {
-            "Arn": "arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "SampleConfigurationPolicy1",
             "Description": "SampleDescription1",
@@ -2005,21 +2021,22 @@ Output:
             "ServiceEnabled": true
         },
         {
-            "Arn": "arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Name": "SampleConfigurationPolicy2",
-            "Description": "SampleDescription2"
+            "Description": "SampleDescription2",
             "UpdatedAt": "2023-11-28T19:26:25.207000+00:00",
             "ServiceEnabled": true
         },
         {
-            "Arn": "arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "Arn": "arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Name": "SampleConfigurationPolicy3",
             "Description": "SampleDescription3",
             "UpdatedAt": "2023-11-28T20:28:04.494000+00:00",
             "ServiceEnabled": true
         }
+    ]
 }
 ```
 For more information, see [Viewing Security Hub configuration policies](https://docs.aws.amazon.com/securityhub/latest/userguide/view-policy.html) in the *AWS Security Hub User Guide*.
@@ -2073,12 +2090,13 @@ Output:
         },
         {
             "ConfigurationPolicyId": "SELF_MANAGED_SECURITY_HUB",
-            "TargetId": "111122223333",
+            "TargetId": "123456789012",
             "TargetType": "ACCOUNT",
             "AssociationType": "APPLIED",
             "UpdatedAt": "2023-11-28T22:01:26.409000+00:00",
             "AssociationStatus": "SUCCESS"
-    }
+        }
+    ]
 }
 ```
 For more information, see [Viewing configuration policy status and details](https://docs.aws.amazon.com/securityhub/latest/userguide/view-policy.html) in the *AWS Security Hub User Guide*.
@@ -2100,7 +2118,7 @@ Output:
 
 ```
 {
-    "ProductSubscriptions": [ "arn:aws:securityhub:us-west-1:123456789012:product-subscription/crowdstrike/crowdstrike-falcon", "arn:aws:securityhub:us-west-1:123456789012:product-subscription/aws/securityhub" ]
+    "ProductSubscriptions": [ "arn:aws:securityhub:us-west-2:123456789012:product-subscription/crowdstrike/crowdstrike-falcon", "arn:aws:securityhub:us-west-2:123456789012:product-subscription/aws/securityhub" ]
 }
 ```
 For more information, see [Managing product integrations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integrations-managing.html) in the *AWS Security Hub User Guide*.
@@ -2122,7 +2140,11 @@ Output:
 
 ```
 {
-    "FindingAggregatorArn": "arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000"
+    "FindingAggregators": [
+        {
+            "FindingAggregatorArn": "arn:aws:securityhub:us-west-2:123456789012:finding-aggregator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        }
+    ]
 }
 ```
 For more information, see [Viewing the current finding aggregation configuration](https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-view-config.html) in the *AWS Security Hub User Guide*.
@@ -2148,10 +2170,10 @@ Output:
         {
             "AccountId": "123456789012",
             "InvitationId": "7ab938c5d52d7904ad09f9e7c20cc4eb",
-            "InvitedAt": 2020-06-01T20:21:18.042000+00:00,
+            "InvitedAt": "2020-06-01T20:21:18.042000+00:00",
             "MemberStatus": "ASSOCIATED"
         }
-    ],
+    ]
 }
 ```
 For more information, see [Managing administrator and member accounts](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html) in the *AWS Security Hub User Guide*.
@@ -2177,20 +2199,20 @@ Output:
         {
             "AccountId": "123456789111",
             "AdministratorId": "123456789012",
-            "InvitedAt": 2020-06-01T20:15:15.289000+00:00,
+            "InvitedAt": "2020-06-01T20:15:15.289000+00:00",
             "MasterId": "123456789012",
             "MemberStatus": "ASSOCIATED",
-            "UpdatedAt": 2020-06-01T20:15:15.289000+00:00
+            "UpdatedAt": "2020-06-01T20:15:15.289000+00:00"
         },
         {
             "AccountId": "123456789222",
             "AdministratorId": "123456789012",
-            "InvitedAt": 2020-06-01T20:15:15.289000+00:00,
+            "InvitedAt": "2020-06-01T20:15:15.289000+00:00",
             "MasterId": "123456789012",
             "MemberStatus": "ASSOCIATED",
-            "UpdatedAt": 2020-06-01T20:15:15.289000+00:00
+            "UpdatedAt": "2020-06-01T20:15:15.289000+00:00"
         }
-    ],
+    ]
 }
 ```
 For more information, see [Managing administrator and member accounts](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts.html) in the *AWS Security Hub User Guide*.
@@ -2212,9 +2234,11 @@ Output:
 
 ```
 {
-    AdminAccounts": [
-        { "AccountId": "777788889999" },
-        { "Status": "ENABLED" }
+    "AdminAccounts": [
+        {
+            "AccountId": "123456789012",
+            "Status": "ENABLED"
+        }
     ]
 }
 ```
@@ -2280,7 +2304,7 @@ The following `list-security-control-definitions` example lists the available se
 
 ```
 aws securityhub list-security-control-definitions \
-    --standards-arn {{"arn:aws:securityhub:us-east-1::standards/cis-aws-foundations-benchmark/v/1.4.0"}} \
+    --standards-arn {{"arn:aws:securityhub:us-west-2::standards/cis-aws-foundations-benchmark/v/1.4.0"}} \
     --max-items {{3}}
 ```
 Output:
@@ -2341,9 +2365,9 @@ Output:
 {
     "StandardsControlAssociationSummaries": [
         {
-            "StandardsArn": "arn:aws:securityhub:us-east-2::standards/nist-800-53/v/5.0.0",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/nist-800-53/v/5.0.0",
             "SecurityControlId": "CloudTrail.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-2:123456789012:security-control/CloudTrail.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/CloudTrail.1",
             "AssociationStatus": "ENABLED",
             "RelatedRequirements": [
                 "NIST.800-53.r5 AC-2(4)",
@@ -2370,7 +2394,7 @@ Output:
         {
             "StandardsArn": "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0",
             "SecurityControlId": "CloudTrail.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-2:123456789012:security-control/CloudTrail.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/CloudTrail.1",
             "AssociationStatus": "ENABLED",
             "RelatedRequirements": [
                 "CIS AWS Foundations 2.1"
@@ -2380,9 +2404,9 @@ Output:
             "StandardsControlDescription": "AWS CloudTrail is a web service that records AWS API calls for your account and delivers log files to you. The recorded information includes the identity of the API caller, the time of the API call, the source IP address of the API caller, the request parameters, and the response elements returned by the AWS service."
         },
         {
-            "StandardsArn": "arn:aws:securityhub:us-east-2::standards/aws-foundational-security-best-practices/v/1.0.0",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0",
             "SecurityControlId": "CloudTrail.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-2:123456789012:security-control/CloudTrail.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/CloudTrail.1",
             "AssociationStatus": "DISABLED",
             "RelatedRequirements": [],
             "UpdatedAt": "2023-05-15T19:31:52.671000+00:00",
@@ -2391,9 +2415,9 @@ Output:
             "StandardsControlDescription": "This AWS control checks that there is at least one multi-region AWS CloudTrail trail includes read and write management events."
         },
         {
-            "StandardsArn": "arn:aws:securityhub:us-east-2::standards/cis-aws-foundations-benchmark/v/1.4.0",
+            "StandardsArn": "arn:aws:securityhub:us-west-2::standards/cis-aws-foundations-benchmark/v/1.4.0",
             "SecurityControlId": "CloudTrail.1",
-            "SecurityControlArn": "arn:aws:securityhub:us-east-2:123456789012:security-control/CloudTrail.1",
+            "SecurityControlArn": "arn:aws:securityhub:us-west-2:123456789012:security-control/CloudTrail.1",
             "AssociationStatus": "ENABLED",
             "RelatedRequirements": [
                 "CIS AWS Foundations Benchmark v1.4.0/3.1"
@@ -2419,7 +2443,7 @@ The following `list-tags-for-resource` example returns the tags assigned to the 
 
 ```
 aws securityhub list-tags-for-resource \
-    --resource-arn {{"arn:aws:securityhub:us-west-1:123456789012:hub/default"}}
+    --resource-arn {{"arn:aws:securityhub:us-west-2:123456789012:hub/default"}}
 ```
 Output:
 
@@ -2445,7 +2469,7 @@ The following `start-configuration-policy-association` example associates the sp
 
 ```
 aws securityhub start-configuration-policy-association \
-    --configuration-policy-identifier {{"arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} \
+    --configuration-policy-identifier {{"arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} \
     --target '{{{"OrganizationalUnitId": "ou-6hi7-8j91kl2m"}}}'
 ```
 Output:
@@ -2495,11 +2519,11 @@ The following `start-configuration-policy-disassociation` example disassociates 
 
 ```
 aws securityhub start-configuration-policy-disassociation \
-    --configuration-policy-identifier {{"arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} \
+    --configuration-policy-identifier {{"arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"}} \
     --target '{{{"OrganizationalUnitId": "ou-6hi7-8j91kl2m"}}}'
 ```
 This command produces no output.
-For more information, see [Disassociating a configuration from accounts and OUs](https://docs.aws.amazon.com/securityhub/latest/userguide/delete-disassociate-policy.html#disassociate-policy) in the *AWS Security Hub User Guide*.
+For more information, see [Disassociating a configuration from accounts and OUs](https://docs.aws.amazon.com/securityhub/latest/userguide/disassociate-policy.html) in the *AWS Security Hub User Guide*.
 **Example 2: To disassociate a self-managed configuration**
 The following `start-configuration-policy-disassociation` example disassociates a self-managed configuration from the specified account.
 
@@ -2509,7 +2533,7 @@ aws securityhub start-configuration-policy-disassociation \
     --target '{{{"AccountId": "123456789012"}}}'
 ```
 This command produces no output.
-For more information, see [Disassociating a configuration from accounts and OUs](https://docs.aws.amazon.com/securityhub/latest/userguide/delete-disassociate-policy.html#disassociate-policy) in the *AWS Security Hub User Guide*.
+For more information, see [Disassociating a configuration from accounts and OUs](https://docs.aws.amazon.com/securityhub/latest/userguide/disassociate-policy.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [StartConfigurationPolicyDisassociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/start-configuration-policy-disassociation.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -2523,7 +2547,7 @@ The following `tag-resource` example assigns values for the Department and Area 
 
 ```
 aws securityhub tag-resource \
-    --resource-arn {{"arn:aws:securityhub:us-west-1:123456789012:hub/default"}} \
+    --resource-arn {{"arn:aws:securityhub:us-west-2:123456789012:hub/default"}} \
     --tags '{{{"Department":"Operations", "Area":"USMidwest"}}}'
 ```
 This command produces no output.
@@ -2541,7 +2565,7 @@ The following `untag-resource` example removes the Department tag from the speci
 
 ```
 aws securityhub untag-resource \
-    --resource-arn {{"arn:aws:securityhub:us-west-1:123456789012:hub/default"}} \
+    --resource-arn {{"arn:aws:securityhub:us-west-2:123456789012:hub/default"}} \
     --tag-keys {{"Department"}}
 ```
 This command produces no output.
@@ -2559,11 +2583,11 @@ The following `update-action-target` example updates the name of the custom acti
 
 ```
 aws securityhub update-action-target \
-    --action-target-arn {{"arn:aws:securityhub:us-west-1:123456789012:action/custom/Remediation"}} \
+    --action-target-arn {{"arn:aws:securityhub:us-west-2:123456789012:action/custom/Remediation"}} \
     --name {{"Send to remediation"}}
 ```
 This command produces no output.
-For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cloudwatch-events.html#securityhub-cwe-configure) in the *AWS Security Hub User Guide*.
+For more information, see [Creating a custom action and associating it with a CloudWatch Events rule](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-cwe-configure.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [UpdateActionTarget](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/update-action-target.html) in *AWS CLI Command Reference*.
 
 ### `update-configuration-policy`
@@ -2577,17 +2601,17 @@ The following `update-configuration-policy` example updates an existing configur
 
 ```
 aws securityhub update-configuration-policy \
-    --identifier {{"arn:aws:securityhub:eu-central-1:508236694226:configuration-policy/09f37766-57d8-4ede-9d33-5d8b0fecf70e"}} \
+    --identifier {{"arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --name {{"SampleConfigurationPolicyUpdated"}} \
     --description {{"SampleDescriptionUpdated"}} \
-    --configuration-policy '{{{"SecurityHub": {"ServiceEnabled": true, "EnabledStandardIdentifiers": ["arn:aws:securityhub:eu-central-1::standards/aws-foundational-security-best-practices/v/1.0.0","arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"],"SecurityControlsConfiguration":{"DisabledSecurityControlIdentifiers": ["CloudWatch.1"], "SecurityControlCustomParameters": [{"SecurityControlId": "ACM.1", "Parameters": {"daysToExpiration": {"ValueType": "CUSTOM", "Value": {"Integer": 21}}}}]}}}}}' \
+    --configuration-policy '{{{"SecurityHub": {"ServiceEnabled": true, "EnabledStandardIdentifiers": ["arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0","arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"],"SecurityControlsConfiguration":{"DisabledSecurityControlIdentifiers": ["CloudWatch.1"], "SecurityControlCustomParameters": [{"SecurityControlId": "ACM.1", "Parameters": {"daysToExpiration": {"ValueType": "CUSTOM", "Value": {"Integer": 21}}}}]}}}}}' \
     --updated-reason {{"Disabling CloudWatch.1 and changing parameter value"}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:securityhub:eu-central-1:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "Arn": "arn:aws:securityhub:us-west-2:123456789012:configuration-policy/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "Name": "SampleConfigurationPolicyUpdated",
     "Description": "SampleDescriptionUpdated",
@@ -2597,7 +2621,7 @@ Output:
         "SecurityHub": {
             "ServiceEnabled": true,
             "EnabledStandardIdentifiers": [
-                "arn:aws:securityhub:eu-central-1::standards/aws-foundational-security-best-practices/v/1.0.0",
+                "arn:aws:securityhub:us-west-2::standards/aws-foundational-security-best-practices/v/1.0.0",
                 "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"
             ],
             "SecurityControlsConfiguration": {
@@ -2637,7 +2661,7 @@ The following `update-finding-aggregator` example changes the finding aggregatio
 ```
 aws securityhub update-finding-aggregator \
     --region {{us-east-1}} \
-    --finding-aggregator-arn {{arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000}} \
+    --finding-aggregator-arn {{arn:aws:securityhub:us-east-1:123456789012:finding-aggregator/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --region-linking-mode {{SPECIFIED_REGIONS}} \
     --regions {{us-west-1,us-west-2}}
 ```
@@ -2656,46 +2680,21 @@ The following `update-insight` example changes the filters for a custom insight.
 
 ```
 aws securityhub update-insight \
-    --insight-arn {{"arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --insight-arn {{"arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --filters '{{{"ResourceType": [{ "Comparison": "EQUALS", "Value": "AwsIamRole"}], "SeverityLabel": [{"Comparison": "EQUALS", "Value": "HIGH"}]}}}' \
     --name {{"High severity role findings"}}
 ```
+This command produces no output.
 **Example 2: To change the grouping attribute for a custom insight**
 The following `update-insight` example changes the grouping attribute for the custom insight with the specified ARN. The new grouping attribute is the resource ID.
 
 ```
 aws securityhub update-insight \
-    --insight-arn {{"arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
+    --insight-arn {{"arn:aws:securityhub:us-west-2:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"}} \
     --group-by-attribute {{"ResourceId"}} \
     --name {{"Critical role findings"}}
 ```
-Output:
-
-```
-{
-    "Insights": [
-        {
-            "InsightArn": "arn:aws:securityhub:us-west-1:123456789012:insight/123456789012/custom/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-            "Name": "Critical role findings",
-            "Filters": {
-                "SeverityLabel": [
-                    {
-                        "Value": "CRITICAL",
-                        "Comparison": "EQUALS"
-                    }
-                ],
-                "ResourceType": [
-                    {
-                        "Value": "AwsIamRole",
-                        "Comparison": "EQUALS"
-                    }
-                ]
-            },
-            "GroupByAttribute": "ResourceId"
-        }
-    ]
-}
-```
+This command produces no output.
 For more information, see [Managing custom insights](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-custom-insights.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [UpdateInsight](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/update-insight.html) in *AWS CLI Command Reference*.
 
@@ -2750,7 +2749,7 @@ aws securityhub update-security-hub-configuration \
     --auto-enable-controls
 ```
 This command produces no output.
-For more information, see [Enabling new controls automatically](https://docs.aws.amazon.com/securityhub/latest/userguide/controls-auto-enable.html) in the *AWS Security Hub User Guide*.
+For more information, see [Enabling new controls in enabled standards automatically](https://docs.aws.amazon.com/securityhub/latest/userguide/controls-auto-enable.html) in the *AWS Security Hub User Guide*.
 +  For API details, see [UpdateSecurityHubConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securityhub/update-security-hub-configuration.html) in *AWS CLI Command Reference*.
 
 ### `update-standards-control`
@@ -2764,7 +2763,7 @@ The following `update-standards-control` example disables the PCI.AutoScaling.1 
 
 ```
 aws securityhub update-standards-control \
-    --standards-control-arn {{"arn:aws:securityhub:us-west-1:123456789012:control/pci-dss/v/3.2.1/PCI.AutoScaling.1"}} \
+    --standards-control-arn {{"arn:aws:securityhub:us-west-2:123456789012:control/pci-dss/v/3.2.1/PCI.AutoScaling.1"}} \
     --control-status {{"DISABLED"}} \
     --disabled-reason {{"Not applicable for my service"}}
 ```
@@ -2774,7 +2773,7 @@ The following `update-standards-control` example enables the PCI.AutoScaling.1 c
 
 ```
 aws securityhub update-standards-control \
-    --standards-control-arn {{"arn:aws:securityhub:us-west-1:123456789012:control/pci-dss/v/3.2.1/PCI.AutoScaling.1"}} \
+    --standards-control-arn {{"arn:aws:securityhub:us-west-2:123456789012:control/pci-dss/v/3.2.1/PCI.AutoScaling.1"}} \
     --control-status {{"ENABLED"}}
 ```
 This command produces no output.

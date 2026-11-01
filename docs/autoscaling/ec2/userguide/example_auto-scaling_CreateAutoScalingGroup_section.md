@@ -129,7 +129,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To attach an Application Load Balancer, Network Load Balancer, or Gateway Load Balancer**
-This example specifies the ARN of a target group for a load balancer that supports the expected traffic. The health check type specifies `ELB` so that when Elastic Load Balancing reports an instance as unhealthy, the Auto Scaling group replaces it. The command also defines a health check grace period of `600` seconds. The grace period helps prevent premature termination of newly launched instances.
+The following `create-auto-scaling-group` example specifies the ARN of a target group for a load balancer that supports the expected traffic. The health check type specifies `ELB` so that when Elastic Load Balancing reports an instance as unhealthy, the Auto Scaling group replaces it. The command also defines a health check grace period of `600` seconds. The grace period helps prevent premature termination of newly launched instances.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -145,7 +145,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Elastic Load Balancing and Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To specify a placement group and use the latest version of the launch template**
-This example launches instances into a placement group within a single Availability Zone. This can be useful for low-latency groups with HPC workloads. This example also specifies the minimum size, maximum size, and desired capacity of the group.
+The following `create-auto-scaling-group` example launches instances into a placement group within a single Availability Zone. This can be useful for low-latency groups with HPC workloads. This example also specifies the minimum size, maximum size, and desired capacity of the group.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -160,7 +160,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide for Linux Instances*.
 **Example 4: To specify a single instance Auto Scaling group and use a specific version of the launch template**
-This example creates an Auto Scaling group with minimum and maximum capacity set to `1` to enforce that one instance will be running. The command also specifies v1 of a launch template in which the ID of an existing ENI is specified. When you use a launch template that specifies an existing ENI for eth0, you must specify an Availability Zone for the Auto Scaling group that matches the network interface, without also specifying a subnet ID in the request.
+The following `create-auto-scaling-group` example creates an Auto Scaling group with minimum and maximum capacity set to `1` to enforce that one instance will be running. The command also specifies v1 of a launch template in which the ID of an existing ENI is specified. When you use a launch template that specifies an existing ENI for eth0, you must specify an Availability Zone for the Auto Scaling group that matches the network interface, without also specifying a subnet ID in the request.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -173,7 +173,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 5: To specify a different termination policy**
-This example creates an Auto Scaling group using a launch configuration and sets the termination policy to terminate the oldest instances first. The command also applies a tag to the group and its instances, with a key of `Role` and a value of `WebServer`.
+The following `create-auto-scaling-group` example creates an Auto Scaling group using a launch configuration and sets the termination policy to terminate the oldest instances first. The command also applies a tag to the group and its instances, with a key of `Role` and a value of `WebServer`.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -188,13 +188,13 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Working with Amazon EC2 Auto Scaling termination policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-termination-policies.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 6: To specify a launch lifecycle hook**
-This example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance launch.
+The following `create-auto-scaling-group` example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance launch.
 
 ```
 aws autoscaling create-auto-scaling-group \
     --cli-input-json {{file://~/config.json}}
 ```
-Contents of `config.json` file:
+Contents of `config.json`:
 
 ```
 {
@@ -226,7 +226,7 @@ Contents of `config.json` file:
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 7: To specify a termination lifecycle hook**
-This example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance termination.
+The following `create-auto-scaling-group` example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance termination.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -257,7 +257,7 @@ Contents of `config.json`:
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 8: To specify a custom termination policy**
-This example creates an Auto Scaling group that specifies a custom Lambda function termination policy that tells Amazon EC2 Auto Scaling which instances are safe to terminate on scale in.
+The following `create-auto-scaling-group` example creates an Auto Scaling group that specifies a custom Lambda function termination policy that tells Amazon EC2 Auto Scaling which instances are safe to terminate on scale in.
 
 ```
 aws autoscaling create-auto-scaling-group \

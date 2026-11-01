@@ -18,20 +18,22 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To update a compute environment**
-This example disables the P2OnDemand compute environment so it can be deleted.
-Command:
+The following `update-compute-environment` example disables the P2OnDemand compute environment so it can be deleted.
 
 ```
-aws batch update-compute-environment --compute-environment {{P2OnDemand}} --state {{DISABLED}}
+aws batch update-compute-environment \
+    --compute-environment {{P2OnDemand}} \
+    --state {{DISABLED}}
 ```
 Output:
 
 ```
 {
     "computeEnvironmentName": "P2OnDemand",
-    "computeEnvironmentArn": "arn:aws:batch:us-east-1:012345678910:compute-environment/P2OnDemand"
+    "computeEnvironmentArn": "arn:aws:batch:us-west-2:123456789012:compute-environment/P2OnDemand"
 }
 ```
+For more information, see [Update a compute environment in AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/updating-compute-environments.html) in the *AWS Batch User Guide*.
 +  For API details, see [UpdateComputeEnvironment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/update-compute-environment.html) in *AWS CLI Command Reference*.
 
 ------

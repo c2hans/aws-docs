@@ -68,7 +68,7 @@ Contents of `query.json`:
 ```
 {
     "Type": "CLOUDFORMATION_STACK_1_0",
-    "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/1415z9z0-z39z-11z8-97z5-500z212zz6fz\"}"
+    "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111\"}"
 }
 ```
 Output:
@@ -81,7 +81,7 @@ Output:
     },
     "ResourceQuery": {
         "Type": "CLOUDFORMATION_STACK_1_0",
-        "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-east-2:123456789012:stack/MyCFNStack/1415z9z0-z39z-11z8-97z5-500z212zz6fz\"}"}'
+        "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111\"}"
     }
 }
 ```
@@ -140,6 +140,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating query-based groups in AWS Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-query.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [GetGroupQuery](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/get-group-query.html) in *AWS CLI Command Reference*.
 
 ### `get-group`
@@ -166,6 +167,7 @@ Output:
     }
 }
 ```
+For more information, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [GetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/get-group.html) in *AWS CLI Command Reference*.
 
 ### `get-tags`
@@ -192,6 +194,7 @@ Output:
     }
 }
 ```
+For more information, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [GetTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/get-tags.html) in *AWS CLI Command Reference*.
 
 ### `list-group-resources`
@@ -200,8 +203,8 @@ Output:
 The following code example shows how to use `list-group-resources`.
 
 **AWS CLI**
-**To list all of the resources in a resource group**
-Example 1: The following `list-resource-groups` example lists all of the resources that are part of the specified resource group.
+**Example 1: To list all of the resources in a resource group**
+The following `list-group-resources` example lists all of the resources that are part of the specified resource group.
 
 ```
 aws resource-groups list-group-resources \
@@ -219,8 +222,27 @@ Output:
     ]
 }
 ```
-Example 2: The following example lists all of the resources in the group that also have a 'resource-type' of the 'AWS::EC2::Instance'. :
-aws resource-groups list-group-resources --group-name tbq-WebServer --filters Name=resource-type,Values=AWS::EC2::Instance
+**Example 2: To list the resources of a specific type in a resource group**
+The following `list-group-resources` example lists all of the resources in the group that also have a `resource-type` of `AWS::EC2::Instance`.
+
+```
+aws resource-groups list-group-resources \
+    --group-name {{tbq-WebServer}} \
+    --filters {{Name=resource-type,Values=AWS::EC2::Instance}}
+```
+Output:
+
+```
+{
+    "ResourceIdentifiers": [
+        {
+            "ResourceArn": "arn:aws:ec2:us-west-2:123456789012:instance/i-09f77fa38c12345ab",
+            "ResourceType": "AWS::EC2::Instance"
+        }
+    ]
+}
+```
+For more information, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [ListGroupResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/list-group-resources.html) in *AWS CLI Command Reference*.
 
 ### `list-groups`
@@ -261,34 +283,8 @@ Output:
     ]
 }
 ```
+For more information, see [What are resource groups?](https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [ListGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/list-groups.html) in *AWS CLI Command Reference*.
-
-### `list-resource-groups`
-<a name="resource-groups_ListResourceGroups_cli_2_topic"></a>
-
-The following code example shows how to use `list-resource-groups`.
-
-**AWS CLI**
-**To list all of the resources in a resource group**
-The following `list-resource-groups` example lists all of the resources that are part of the specified resource group.
-
-```
-aws resource-groups list-group-resources \
-    --group-name {{tbq-WebServer}}
-```
-Output:
-
-```
-{
-    "ResourceIdentifiers": [
-        {
-            "ResourceArn": "arn:aws:ec2:us-west-2:123456789012:instance/i-09f77fa38c12345ab",
-            "ResourceType": "AWS::EC2::Instance"
-        }
-    ]
-}
-```
-+  For API details, see [ListResourceGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/list-resource-groups.html) in *AWS CLI Command Reference*.
 
 ### `put-group-configuration`
 <a name="resource-groups_PutGroupConfiguration_cli_2_topic"></a>
@@ -297,7 +293,7 @@ The following code example shows how to use `put-group-configuration`.
 
 **AWS CLI**
 **To attach a service configuration to a resource group**
-Example 1: The following `put-group-configuration` example specifies that the resource group is to contain only Amazon EC2 capacity reservations for instances in the `C5` or `M5` families.
+The following `put-group-configuration` example specifies that the resource group is to contain only Amazon EC2 capacity reservations for instances in the `C5` or `M5` families.
 
 ```
 aws resource-groups put-group-configuration \
@@ -336,8 +332,8 @@ Contents of `config.json`:
     }
 ]
 ```
-This command produces no output if successful.
-For more information, see [Service configurations for resource groups](https://docs.aws.amazon.com/ARG/latest/APIReference/about-slg.html) in the *Resource Groups API Reference Guide*.
+This command produces no output.
+For more information, see [Service configurations for resource groups](https://docs.aws.amazon.com/ARG/latest/userguide/about-slg.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [PutGroupConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/put-group-configuration.html) in *AWS CLI Command Reference*.
 
 ### `search-resources`
@@ -373,6 +369,7 @@ Output:
     ]
 }
 ```
+For more information, see [Creating query-based groups in AWS Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-query.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [SearchResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/search-resources.html) in *AWS CLI Command Reference*.
 
 ### `tag`
@@ -387,13 +384,13 @@ The following `tag` example attaches the specified tag key and value pairs to th
 ```
 aws resource-groups tag \
     --tags {{QueryType=tags,QueryResources=ec2-instances}} \
-    --arn {{arn:aws:resource-groups:us-west-2:128716708097:group/tbq-WebServer}}
+    --arn {{arn:aws:resource-groups:us-west-2:123456789012:group/tbq-WebServer}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:resource-groups:us-west-2:128716708097:group/tbq-WebServer",
+    "Arn": "arn:aws:resource-groups:us-west-2:123456789012:group/tbq-WebServer",
     "Tags": {
         "QueryType": "tags",
         "QueryResources": "ec2-instances"
@@ -410,7 +407,7 @@ The following code example shows how to use `untag`.
 
 **AWS CLI**
 **To remove tags from a resource group**
-The following `untags` example removes any tag with the specified key from the resource group itself, not its members.
+The following `untag` example removes any tag with the specified key from the resource group itself, not its members.
 
 ```
 aws resource-groups untag \
@@ -448,13 +445,12 @@ Output:
 
 ```
 {
-    "Group": {
-        "GroupArn": "arn:aws:resource-groups:us-east-2:123456789012:group/tbq-WebServer",
-        "Name": "tbq-WebServer"
-    },
-    "ResourceQuery": {
-        "Type": "TAG_FILTERS_1_0",
-        "Query": "{\"ResourceTypeFilters\":[\"AWS::EC2::Instance\"],\"TagFilters\":[{\"Key\":\"Name\", \"Values\":[\"WebServers\"]}]}"
+    "GroupQuery": {
+        "GroupName": "tbq-WebServer",
+        "ResourceQuery": {
+            "Type": "TAG_FILTERS_1_0",
+            "Query": "{\"ResourceTypeFilters\":[\"AWS::EC2::Instance\"],\"TagFilters\":[{\"Key\":\"Name\", \"Values\":[\"WebServers\"]}]}"
+        }
     }
 }
 ```
@@ -465,19 +461,18 @@ The following `update-group-query` example updates the query attached to the spe
 ```
 aws resource-groups update-group-query \
     --group-name {{cbq-CFNstackgroup}} \
-    --resource-query '{{{"Type": "CLOUDFORMATION_STACK_1_0", "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/1415z9z0-z39z-11z8-97z5-500z212zz6fz\"}"}}}'
+    --resource-query '{{{"Type": "CLOUDFORMATION_STACK_1_0", "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111\"}"}}}'
 ```
 Output:
 
 ```
 {
-    "Group": {
-        "GroupArn": "arn:aws:resource-groups:us-west-2:123456789012:group/cbq-CFNstackgroup",
-        "Name": "cbq-CFNstackgroup"
-    },
-    "ResourceQuery": {
-        "Type": "CLOUDFORMATION_STACK_1_0",
-        "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/1415z9z0-z39z-11z8-97z5-500z212zz6fz\"}"
+    "GroupQuery": {
+        "GroupName": "cbq-CFNstackgroup",
+        "ResourceQuery": {
+            "Type": "CLOUDFORMATION_STACK_1_0",
+            "Query": "{\"ResourceTypeFilters\":[\"AWS::AllSupported\"],\"StackIdentifier\":\"arn:aws:cloudformation:us-west-2:123456789012:stack/MyCFNStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111\"}"
+        }
     }
 }
 ```
@@ -504,7 +499,7 @@ Output:
 {
     "Group": {
         "GroupArn": "arn:aws:resource-groups:us-west-2:123456789012:group/tbq-WebServer",
-        "Name": "tbq-WebServer"
+        "Name": "tbq-WebServer",
         "Description": "Resource group for all web server resources."
     }
 }

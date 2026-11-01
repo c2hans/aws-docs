@@ -14,7 +14,7 @@ The following code examples show how to use `DeleteLaunchConfiguration`.
 
 **AWS CLI**
 **To delete a launch configuration**
-This example deletes the specified launch configuration.
+The following `delete-launch-configuration` example deletes the specified launch configuration.
 
 ```
 aws autoscaling delete-launch-configuration \

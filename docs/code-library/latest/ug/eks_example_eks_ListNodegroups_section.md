@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 #### [ CLI ]
 
 **AWS CLI**
-**List all the node groups in an Amazon EKS cluster**
+**To list all the node groups in an Amazon EKS cluster**
 The following `list-nodegroups` example list all the node groups in an Amazon EKS cluster.
 
 ```
@@ -33,6 +33,7 @@ Output:
     ]
 }
 ```
+For more information, see [Simplify node lifecycle with managed node groups](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListNodegroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-nodegroups.html) in *AWS CLI Command Reference*.
 
 ------

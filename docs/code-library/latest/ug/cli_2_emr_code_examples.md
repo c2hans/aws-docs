@@ -26,20 +26,22 @@ The following code example shows how to use `add-instance-fleet`.
 
 **AWS CLI**
 **To add a task instance fleet to a cluster**
-This example adds a new task instance fleet to the cluster specified.
-Command:
+The following `add-instance-fleet` example adds a new task instance fleet to the cluster specified.
 
 ```
-aws emr add-instance-fleet --cluster-id '{{j-12ABCDEFGHI34JK}}' --instance-fleet  InstanceFleetType=TASK,TargetSpotCapacity=1,LaunchSpecifications={SpotSpecification='{TimeoutDurationMinutes=20,TimeoutAction=TERMINATE_CLUSTER}'},InstanceTypeConfigs=['{InstanceType=m3.xlarge,BidPrice=0.5}']
+aws emr add-instance-fleet \
+    --cluster-id '{{j-12ABCDEFGHI34JK}}' \
+    --instance-fleet InstanceFleetType=TASK,TargetSpotCapacity=1,LaunchSpecifications={SpotSpecification='{TimeoutDurationMinutes=20,TimeoutAction=TERMINATE_CLUSTER}'},InstanceTypeConfigs=['{InstanceType=m3.xlarge,BidPrice=0.5}']
 ```
 Output:
 
 ```
 {
-   "ClusterId": "j-12ABCDEFGHI34JK",
-   "InstanceFleetId": "if-23ABCDEFGHI45JJ"
+    "ClusterId": "j-12ABCDEFGHI34JK",
+    "InstanceFleetId": "if-23ABCDEFGHI45JJ"
 }
 ```
+For more information, see [Planning and configuring instance fleets for your Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [AddInstanceFleet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/add-instance-fleet.html) in *AWS CLI Command Reference*.
 
 ### `add-steps`
@@ -48,11 +50,13 @@ Output:
 The following code example shows how to use `add-steps`.
 
 **AWS CLI**
-**1. To add Custom JAR steps to a cluster**
-Command:
+**Example 1: To add Custom JAR steps to a cluster**
+The following `add-steps` example adds two Custom JAR steps to the specified cluster.
 
 ```
-aws emr add-steps --cluster-id j-XXXXXXXX --steps Type=CUSTOM_JAR,Name=CustomJAR,ActionOnFailure=CONTINUE,Jar=s3://amzn-s3-demo-bucket/mytest.jar,Args=arg1,arg2,arg3 Type=CUSTOM_JAR,Name=CustomJAR,ActionOnFailure=CONTINUE,Jar=s3://amzn-s3-demo-bucket/mytest.jar,MainClass=mymainclass,Args=arg1,arg2,arg3
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps {{Type=CUSTOM_JAR,Name=CustomJAR,ActionOnFailure=CONTINUE,Jar=s3://amzn-s3-demo-bucket/mytest.jar,Args=arg1,arg2,arg3}} {{Type=CUSTOM_JAR,Name=CustomJAR,ActionOnFailure=CONTINUE,Jar=s3://amzn-s3-demo-bucket/mytest.jar,MainClass=mymainclass,Args=arg1,arg2,arg3}}
 ```
 Required parameters:
 
@@ -74,11 +78,13 @@ Output:
     ]
 }
 ```
-**2. To add Streaming steps to a cluster**
-Command:
+**Example 2: To add Streaming steps to a cluster**
+The following `add-steps` example adds a Streaming step to the specified cluster.
 
 ```
-aws emr add-steps --cluster-id j-XXXXXXXX --steps Type=STREAMING,Name='Streaming Program',ActionOnFailure=CONTINUE,Args=[-files,s3://elasticmapreduce/samples/wordcount/wordSplitter.py,-mapper,wordSplitter.py,-reducer,aggregate,-input,s3://elasticmapreduce/samples/wordcount/input,-output,s3://amzn-s3-demo-bucket/wordcount/output]
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps Type=STREAMING,Name='Streaming Program',ActionOnFailure=CONTINUE,Args=[-files,s3://elasticmapreduce/samples/wordcount/wordSplitter.py,-mapper,wordSplitter.py,-reducer,aggregate,-input,s3://elasticmapreduce/samples/wordcount/input,-output,s3://amzn-s3-demo-bucket/wordcount/output]
 ```
 Required parameters:
 
@@ -90,61 +96,67 @@ Optional parameters:
 ```
 Name, ActionOnFailure
 ```
-JSON equivalent (contents of step.json):
+The following `add-steps` example adds the Streaming step that is defined in the `step.json` file.
 
 ```
- [
-  {
-    "Name": "JSON Streaming Step",
-    "Args": ["-files","s3://elasticmapreduce/samples/wordcount/wordSplitter.py","-mapper","wordSplitter.py","-reducer","aggregate","-input","s3://elasticmapreduce/samples/wordcount/input","-output","s3://amzn-s3-demo-bucket/wordcount/output"],
-    "ActionOnFailure": "CONTINUE",
-    "Type": "STREAMING"
-  }
-]
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps {{file://./step.json}}
 ```
-NOTE: JSON arguments must include options and values as their own items in the list.
-Command (using step.json):
-
-```
-aws emr add-steps --cluster-id j-XXXXXXXX --steps file://./step.json
-```
-Output:
-
-```
-{
-    "StepIds":[
-        "s-XXXXXXXX",
-        "s-YYYYYYYY"
-    ]
-}
-```
-**3. To add a Streaming step with multiple files to a cluster (JSON only)**
-JSON (multiplefiles.json):
+Contents of `step.json`:
 
 ```
 [
-  {
-     "Name": "JSON Streaming Step",
-     "Type": "STREAMING",
-     "ActionOnFailure": "CONTINUE",
-     "Args": [
-         "-files",
-         "s3://amzn-s3-demo-bucket/mapper.py,s3://amzn-s3-demo-bucket/reducer.py",
-         "-mapper",
-         "mapper.py",
-         "-reducer",
-         "reducer.py",
-         "-input",
-         "s3://amzn-s3-demo-bucket/input",
-         "-output",
-         "s3://amzn-s3-demo-bucket/output"]
-  }
+    {
+        "Name": "JSON Streaming Step",
+        "Args": ["-files","s3://elasticmapreduce/samples/wordcount/wordSplitter.py","-mapper","wordSplitter.py","-reducer","aggregate","-input","s3://elasticmapreduce/samples/wordcount/input","-output","s3://amzn-s3-demo-bucket/wordcount/output"],
+        "ActionOnFailure": "CONTINUE",
+        "Type": "STREAMING"
+    }
 ]
 ```
-Command:
+NOTE: JSON arguments must include options and values as their own items in the list.
+Output:
 
 ```
-aws emr add-steps --cluster-id j-XXXXXXXX  --steps file://./multiplefiles.json
+{
+    "StepIds":[
+        "s-XXXXXXXX",
+        "s-YYYYYYYY"
+    ]
+}
+```
+**Example 3: To add a Streaming step with multiple files to a cluster (JSON only)**
+The following `add-steps` example adds a Streaming step with multiple files to the specified cluster. The step is defined in the `multiplefiles.json` file.
+The following command adds the step that is defined in the `multiplefiles.json` file.
+
+```
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps {{file://./multiplefiles.json}}
+```
+Contents of `multiplefiles.json`:
+
+```
+[
+    {
+        "Name": "JSON Streaming Step",
+        "Type": "STREAMING",
+        "ActionOnFailure": "CONTINUE",
+        "Args": [
+            "-files",
+            "s3://amzn-s3-demo-bucket/mapper.py,s3://amzn-s3-demo-bucket/reducer.py",
+            "-mapper",
+            "mapper.py",
+            "-reducer",
+            "reducer.py",
+            "-input",
+            "s3://amzn-s3-demo-bucket/input",
+            "-output",
+            "s3://amzn-s3-demo-bucket/output"
+        ]
+    }
+]
 ```
 Required parameters:
 
@@ -161,15 +173,17 @@ Output:
 ```
 {
     "StepIds":[
-        "s-XXXXXXXX",
+        "s-XXXXXXXX"
     ]
 }
 ```
-**4. To add Hive steps to a cluster**
-Command:
+**Example 4: To add Hive steps to a cluster**
+The following `add-steps` example adds two Hive steps to the specified cluster.
 
 ```
-aws emr add-steps --cluster-id j-XXXXXXXX --steps Type=HIVE,Name='Hive program',ActionOnFailure=CONTINUE,Args=[-f,s3://amzn-s3-demo-bucket/myhivescript.q,-d,INPUT=s3://amzn-s3-demo-bucket/myhiveinput,-d,OUTPUT=s3://amzn-s3-demo-bucket/myhiveoutput,arg1,arg2] Type=HIVE,Name='Hive steps',ActionOnFailure=TERMINATE_CLUSTER,Args=[-f,s3://elasticmapreduce/samples/hive-ads/libs/model-build.q,-d,INPUT=s3://elasticmapreduce/samples/hive-ads/tables,-d,OUTPUT=s3://amzn-s3-demo-bucket/hive-ads/output/2014-04-18/11-07-32,-d,LIBS=s3://elasticmapreduce/samples/hive-ads/libs]
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps Type=HIVE,Name='Hive program',ActionOnFailure=CONTINUE,Args=[-f,s3://amzn-s3-demo-bucket/myhivescript.q,-d,INPUT=s3://amzn-s3-demo-bucket/myhiveinput,-d,OUTPUT=s3://amzn-s3-demo-bucket/myhiveoutput,arg1,arg2] Type=HIVE,Name='Hive steps',ActionOnFailure=TERMINATE_CLUSTER,Args=[-f,s3://elasticmapreduce/samples/hive-ads/libs/model-build.q,-d,INPUT=s3://elasticmapreduce/samples/hive-ads/tables,-d,OUTPUT=s3://amzn-s3-demo-bucket/hive-ads/output/2014-04-18/11-07-32,-d,LIBS=s3://elasticmapreduce/samples/hive-ads/libs]
 ```
 Required parameters:
 
@@ -191,11 +205,13 @@ Output:
     ]
 }
 ```
-**5. To add Pig steps to a cluster**
-Command:
+**Example 5: To add Pig steps to a cluster**
+The following `add-steps` example adds two Pig steps to the specified cluster.
 
 ```
-aws emr add-steps --cluster-id j-XXXXXXXX --steps Type=PIG,Name='Pig program',ActionOnFailure=CONTINUE,Args=[-f,s3://amzn-s3-demo-bucket/mypigscript.pig,-p,INPUT=s3://amzn-s3-demo-bucket/mypiginput,-p,OUTPUT=s3://amzn-s3-demo-bucket/mypigoutput,arg1,arg2] Type=PIG,Name='Pig program',Args=[-f,s3://elasticmapreduce/samples/pig-apache/do-reports2.pig,-p,INPUT=s3://elasticmapreduce/samples/pig-apache/input,-p,OUTPUT=s3://amzn-s3-demo-bucket/pig-apache/output,arg1,arg2]
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps Type=PIG,Name='Pig program',ActionOnFailure=CONTINUE,Args=[-f,s3://amzn-s3-demo-bucket/mypigscript.pig,-p,INPUT=s3://amzn-s3-demo-bucket/mypiginput,-p,OUTPUT=s3://amzn-s3-demo-bucket/mypigoutput,arg1,arg2] Type=PIG,Name='Pig program',Args=[-f,s3://elasticmapreduce/samples/pig-apache/do-reports2.pig,-p,INPUT=s3://elasticmapreduce/samples/pig-apache/input,-p,OUTPUT=s3://amzn-s3-demo-bucket/pig-apache/output,arg1,arg2]
 ```
 Required parameters:
 
@@ -217,11 +233,13 @@ Output:
     ]
 }
 ```
-**6. To add Impala steps to a cluster**
-Command:
+**Example 6: To add Impala steps to a cluster**
+The following `add-steps` example adds an Impala step to the specified cluster.
 
 ```
-aws emr add-steps --cluster-id j-XXXXXXXX --steps Type=IMPALA,Name='Impala program',ActionOnFailure=CONTINUE,Args=--impala-script,s3://myimpala/input,--console-output-path,s3://myimpala/output
+aws emr add-steps \
+    --cluster-id {{j-XXXXXXXX}} \
+    --steps Type=IMPALA,Name='Impala program',ActionOnFailure=CONTINUE,Args=--impala-script,s3://amzn-s3-demo-bucket/input,--console-output-path,s3://amzn-s3-demo-bucket/output
 ```
 Required parameters:
 
@@ -243,6 +261,7 @@ Output:
     ]
 }
 ```
+For more information, see [Submit work to an Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-work-with-steps.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [AddSteps](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/add-steps.html) in *AWS CLI Command Reference*.
 
 ### `add-tags`
@@ -251,22 +270,21 @@ Output:
 The following code example shows how to use `add-tags`.
 
 **AWS CLI**
-**1. To add tags to a cluster**
-Command:
+**To add tags to a cluster**
+The following `add-tags` example adds tags to the specified cluster.
 
 ```
-aws emr add-tags --resource-id j-xxxxxxx --tags name="John Doe" age=29 sex=male address="123 East NW Seattle"
+aws emr add-tags \
+    --resource-id {{j-xxxxxxx}} \
+    --tags name="John Doe" {{age=29}} {{sex=male}} address="123 East NW Seattle"
 ```
-Output:
+This command produces no output.
+To list the tags of the cluster, run the following `describe-cluster` command.
 
 ```
-None
-```
-**2. To list tags of a cluster**
---Command:
-
-```
-aws emr describe-cluster --cluster-id {{j-XXXXXXYY}} --query {{Cluster.Tags}}
+aws emr describe-cluster \
+    --cluster-id {{j-xxxxxxx}} \
+    --query {{Cluster.Tags}}
 ```
 Output:
 
@@ -290,15 +308,15 @@ Output:
     }
 ]
 ```
+For more information, see [Tag and categorize Amazon EMR cluster resources](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-tags.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [AddTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/add-tags.html) in *AWS CLI Command Reference*.
 
-### `create-cluster-examples`
-<a name="emr_CreateClusterExamples_cli_2_topic"></a>
+### `create-cluster`
+<a name="emr_CreateCluster_cli_2_topic"></a>
 
-The following code example shows how to use `create-cluster-examples`.
+The following code example shows how to use `create-cluster`.
 
 **AWS CLI**
-Most of the following examples assume that you specified your Amazon EMR service role and Amazon EC2 instance profile. If you have not done this, you must specify each required IAM role or use the `--use-default-roles` parameter when creating your cluster. For more information about specifying IAM roles, see [Configure IAM Roles for Amazon EMR Permissions to AWS Services](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles.html) in the *Amazon EMR Management Guide*.
 **Example 1: To create a cluster**
 The following `create-cluster` example creates a simple EMR cluster.
 
@@ -308,7 +326,15 @@ aws emr create-cluster \
     --instance-type {{m4.large}} \
     --instance-count {{2}}
 ```
-This command produces no output.
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
+This example and most of the following examples assume that you specified your Amazon EMR service role and Amazon EC2 instance profile. If you have not done this, you must specify each required IAM role or use the `--use-default-roles` parameter when creating your cluster. For more information about specifying IAM roles, see [Configure IAM Roles for Amazon EMR Permissions to AWS Services](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles.html) in the *Amazon EMR Management Guide*.
 **Example 2: To create an Amazon EMR cluster with default ServiceRole and InstanceProfile roles**
 The following `create-cluster` example creates an Amazon EMR cluster that uses the `--instance-groups` configuration.
 
@@ -318,6 +344,14 @@ aws emr create-cluster \
     --service-role {{EMR_DefaultRole}} \
     --ec2-attributes {{InstanceProfile=EMR_EC2_DefaultRole}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 3: To create an Amazon EMR cluster that uses an instance fleet**
 The following `create-cluster` example creates an Amazon EMR cluster that uses the `--instance-fleets` configuration, specifying two instance types for each fleet and two EC2 Subnets.
@@ -329,6 +363,14 @@ aws emr create-cluster \
     --ec2-attributes InstanceProfile=EMR_EC2_DefaultRole,SubnetIds=['subnet-ab12345c','subnet-de67890f'] \
     --instance-fleets InstanceFleetType=MASTER,TargetOnDemandCapacity=1,InstanceTypeConfigs=['{InstanceType=m4.large}'] InstanceFleetType=CORE,TargetSpotCapacity=11,InstanceTypeConfigs=['{InstanceType=m4.large,BidPrice=0.5,WeightedCapacity=3}','{InstanceType=m4.2xlarge,BidPrice=0.9,WeightedCapacity=5}'],LaunchSpecifications={SpotSpecification='{TimeoutDurationMinutes=120,TimeoutAction=SWITCH_TO_ON_DEMAND}'}
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 4: To create a cluster with default roles**
 The following `create-cluster` example uses the `--use-default-roles` parameter to specify the default service role and instance profile.
 
@@ -338,6 +380,14 @@ aws emr create-cluster \
     --use-default-roles \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 5: To create a cluster and specify the applications to install**
 The following `create-cluster` example uses the `--applications` parameter to specify the applications that Amazon EMR installs. This example installs Hadoop, Hive and Pig.
@@ -349,8 +399,16 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 6: To create a cluster that includes Spark**
-The following example installs Spark.
+The following `create-cluster` example installs Spark.
 
 ```
 aws emr create-cluster \
@@ -359,6 +417,14 @@ aws emr create-cluster \
     --ec2-attributes {{KeyName=myKey}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 7: To specify a custom AMI to use for cluster instances**
 The following `create-cluster` example creates a cluster instance based on the Amazon Linux AMI with ID `ami-a518e6df`.
@@ -373,17 +439,25 @@ aws emr create-cluster \
     --instance-count {{2}} \
     --instance-type {{m4.large}}
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 8: To customize application configurations**
-The following examples use the `--configurations` parameter to specify a JSON configuration file that contains application customizations for Hadoop. For more information, see [Configuring Applications](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-apps.html) in the *Amazon EMR Release Guide*.
+The following `create-cluster` examples use the `--configurations` parameter to specify a JSON configuration file that contains application customizations for Hadoop. For more information, see [Configuring Applications](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-apps.html) in the *Amazon EMR Release Guide*.
 Contents of `configurations.json`:
 
 ```
 [
     {
-       "Classification": "mapred-site",
-       "Properties": {
-           "mapred.tasktracker.map.tasks.maximum": 2
-       }
+        "Classification": "mapred-site",
+        "Properties": {
+            "mapred.tasktracker.map.tasks.maximum": 2
+        }
     },
     {
         "Classification": "hadoop-env",
@@ -409,6 +483,14 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 The following example references `configurations.json` as a file in Amazon S3.
 
 ```
@@ -418,6 +500,14 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 9: To create a cluster with master, core, and task instance groups**
 The following `create-cluster` example uses `--instance-groups` to specify the type and number of EC2 instances to use for master, core, and task instance groups.
 
@@ -425,6 +515,14 @@ The following `create-cluster` example uses `--instance-groups` to specify the t
 aws emr create-cluster \
     --release-label {{emr-5.9.0}} \
     --instance-groups {{Name=Master,InstanceGroupType=MASTER,InstanceType=m4.large,InstanceCount=1}} {{Name=Core,InstanceGroupType=CORE,InstanceType=m4.large,InstanceCount=2}} {{Name=Task,InstanceGroupType=TASK,InstanceType=m4.large,InstanceCount=2}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 10: To specify that a cluster should terminate after completing all steps**
 The following `create-cluster` example uses `--auto-terminate` to specify that the cluster should shut down automatically after completing all steps.
@@ -434,6 +532,14 @@ aws emr create-cluster \
     --release-label {{emr-5.9.0}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}}  {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 11: To specify cluster configuration details such as the Amazon EC2 key pair, network configuration, and security groups**
 The following `create-cluster` example creates a cluster with the Amazon EC2 key pair named `myKey` and a customized instance profile named `myProfile`. Key pairs are used to authorize SSH connections to cluster nodes, most often the master node. For more information, see [Use an Amazon EC2 Key Pair for SSH Credentials](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-ssh.html) in the *Amazon EMR Management Guide*.
@@ -445,6 +551,14 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 The following example creates a cluster in an Amazon VPC subnet.
 
 ```
@@ -454,13 +568,29 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
-The following example creates a cluster in the `us-east-1b` availability zone.
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
+The following example creates a cluster in the `us-west-2b` availability zone.
 
 ```
 aws emr create-cluster \
-    --ec2-attributes {{AvailabilityZone=us-east-1b}} \
+    --ec2-attributes {{AvailabilityZone=us-west-2b}} \
     --release-label {{emr-5.9.0}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example creates a cluster and specifies only the Amazon EMR-managed security groups.
 
@@ -471,6 +601,14 @@ aws emr create-cluster \
     --ec2-attributes {{InstanceProfile=myRole,EmrManagedMasterSecurityGroup=sg-master1,EmrManagedSlaveSecurityGroup=sg-slave1}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 The following example creates a cluster and specifies only additional Amazon EC2 security groups.
 
 ```
@@ -479,6 +617,14 @@ aws emr create-cluster \
     --service-role {{myServiceRole}} \
     --ec2-attributes {{InstanceProfile=myRole,AdditionalMasterSecurityGroups=[sg-addMaster1,sg-addMaster2,sg-addMaster3,sg-addMaster4],AdditionalSlaveSecurityGroups=[sg-addSlave1,sg-addSlave2,sg-addSlave3,sg-addSlave4]}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example creates a cluster and specifies the EMR-Managed security groups, as well as additional security groups.
 
@@ -489,6 +635,14 @@ aws emr create-cluster \
     --ec2-attributes {{InstanceProfile=myRole,EmrManagedMasterSecurityGroup=sg-master1,EmrManagedSlaveSecurityGroup=sg-slave1,AdditionalMasterSecurityGroups=[sg-addMaster1,sg-addMaster2,sg-addMaster3,sg-addMaster4],AdditionalSlaveSecurityGroups=[sg-addSlave1,sg-addSlave2,sg-addSlave3,sg-addSlave4]}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 The following example creates a cluster in a VPC private subnet and use a specific Amazon EC2 security group to enable Amazon EMR service access, which is required for clusters in private subnets.
 
 ```
@@ -497,6 +651,14 @@ aws emr create-cluster \
     --service-role {{myServiceRole}} \
     --ec2-attributes {{InstanceProfile=myRole,ServiceAccessSecurityGroup=sg-service-access,EmrManagedMasterSecurityGroup=sg-master,EmrManagedSlaveSecurityGroup=sg-slave}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example specifies security group configuration parameters using a JSON file named `ec2_attributes.json` that is stored locally. NOTE: JSON arguments must include options and values as their own items in the list.
 
@@ -523,6 +685,14 @@ Contents of `ec2_attributes.json`:
     }
 ]
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 12: To enable debugging and specify a log URI**
 The following `create-cluster` example uses the `--enable-debugging` parameter, which allows you to view log files more easily using the debugging tool in the Amazon EMR console. The `--log-uri` parameter is required with `--enable-debugging`.
 
@@ -534,8 +704,16 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 13: To add tags when creating a cluster**
-Tags are key-value pairs that help you identify and manage clusters. The following `create-cluster` example uses the `--tags` parameter to create three tags for a cluster, one with the key name `name` and the value `Shirley Rodriguez`, a second with the key name `age` and the value `29`, and a third tag with the key name `department` and the value `Analytics`.
+The following `create-cluster` example uses the `--tags` parameter to create three tags for a cluster, one with the key name `name` and the value `Shirley Rodriguez`, a second with the key name `age` and the value `29`, and a third tag with the key name `department` and the value `Analytics`. Tags are key-value pairs that help you identify and manage clusters.
 
 ```
 aws emr create-cluster \
@@ -545,12 +723,38 @@ aws emr create-cluster \
     --instance-count {{3}} \
     --use-default-roles
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-XXXXXXYY",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-XXXXXXYY"
+}
+```
 The following example lists the tags applied to a cluster.
 
 ```
 aws emr describe-cluster \
     --cluster-id {{j-XXXXXXYY}} \
     --query {{Cluster.Tags}}
+```
+Output:
+
+```
+[
+    {
+        "Key": "name",
+        "Value": "Shirley Rodriguez"
+    },
+    {
+        "Key": "age",
+        "Value": "29"
+    },
+    {
+        "Key": "department",
+        "Value": "Analytics"
+    }
+]
 ```
 **Example 14: To use a security configuration that enables encryption and other security features**
 The following `create-cluster` example uses the `--security-configuration` parameter to specify a security configuration for an EMR cluster. You can use security configurations with Amazon EMR version 4.8.0 or later.
@@ -561,9 +765,16 @@ aws emr create-cluster \
     --release-label {{emr-5.9.0}} \
     --security-configuration {{mySecurityConfiguration}}
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 15: To create a cluster with additional EBS storage volumes configured for the instance groups**
-When specifying additional EBS volumes, the following arguments are required: `VolumeType`, `SizeInGB` if `EbsBlockDeviceConfigs` is specified.
-The following `create-cluster` example creates a cluster with multiple EBS volumes attached to EC2 instances in the core instance group.
+The following `create-cluster` example creates a cluster with multiple EBS volumes attached to EC2 instances in the core instance group. When specifying additional EBS volumes, the following arguments are required: `VolumeType`, `SizeInGB` if `EbsBlockDeviceConfigs` is specified.
 
 ```
 aws emr create-cluster \
@@ -571,6 +782,14 @@ aws emr create-cluster \
     --use-default-roles \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=d2.xlarge}} '{{InstanceGroupType=CORE,InstanceCount=2,InstanceType=d2.xlarge,EbsConfiguration={EbsOptimized=true,EbsBlockDeviceConfigs=[{VolumeSpecification={VolumeType=gp2,SizeInGB=100}},{VolumeSpecification={VolumeType=io1,SizeInGB=100,Iops=100},VolumesPerInstance=4}]}}}' \
     --auto-terminate
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example creates a cluster with multiple EBS volumes attached to EC2 instances in the master instance group.
 
@@ -581,16 +800,33 @@ aws emr create-cluster \
     --instance-groups '{{InstanceGroupType=MASTER, InstanceCount=1, InstanceType=d2.xlarge, EbsConfiguration={EbsOptimized=true, EbsBlockDeviceConfigs=[{VolumeSpecification={VolumeType=io1, SizeInGB=100, Iops=100}},{VolumeSpecification={VolumeType=standard,SizeInGB=50},VolumesPerInstance=3}]}}}' {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=d2.xlarge}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 16: To create a cluster with an automatic scaling policy**
-You can attach automatic scaling policies to core and task instance groups using Amazon EMR version 4.0 and later. The automatic scaling policy dynamically adds and removes EC2 instances in response to an Amazon CloudWatch metric. For more information, see Using Automatic Scaling in Amazon EMR <https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html>`\_ in the *Amazon EMR Management Guide*.
+The following `create-cluster` example creates a cluster with an automatic scaling policy. You can attach automatic scaling policies to core and task instance groups using Amazon EMR version 4.0 and later. The automatic scaling policy dynamically adds and removes EC2 instances in response to an Amazon CloudWatch metric. For more information, see Using Automatic Scaling in Amazon EMR <https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html>`\_ in the *Amazon EMR Management Guide*.
 When attaching an automatic scaling policy, you must also specify the default role for automatic scaling using `--auto-scaling-role EMR_AutoScaling_DefaultRole`.
 The following `create-cluster` example specifies the automatic scaling policy for the `CORE` instance group using the `AutoScalingPolicy` argument with an embedded JSON structure, which specifies the scaling policy configuration. Instance groups with an embedded JSON structure must have the entire collection of arguments enclosed in single quotes. Using single quotes is optional for instance groups without an embedded JSON structure.
 
 ```
-aws emr create-cluster
+aws emr create-cluster \
     --release-label {{emr-5.9.0}} \
-    --use-default-roles --auto-scaling-role {{EMR_AutoScaling_DefaultRole}} \
+    --use-default-roles \
+    --auto-scaling-role {{EMR_AutoScaling_DefaultRole}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceType=d2.xlarge,InstanceCount=1}} '{{InstanceGroupType=CORE,InstanceType=d2.xlarge,InstanceCount=2,AutoScalingPolicy={Constraints={MinCapacity=1,MaxCapacity=5},Rules=[{Name=TestRule,Description=TestDescription,Action={Market=ON_DEMAND,SimpleScalingPolicyConfiguration={AdjustmentType=EXACT_CAPACITY,ScalingAdjustment=2}},Trigger={CloudWatchAlarmDefinition={ComparisonOperator=GREATER_THAN,EvaluationPeriods=5,MetricName=TestMetric,Namespace=EMR,Period=3,Statistic=MAXIMUM,Threshold=4.5,Unit=NONE,Dimensions=[{Key=TestKey,Value=TestValue}]}}}]}}}'
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example uses a JSON file, `instancegroupconfig.json`, to specify the configuration of all instance groups in a cluster. The JSON file specifies the automatic scaling policy configuration for the core instance group.
 
@@ -657,7 +893,15 @@ Contents of `instancegroupconfig.json`:
     }
 ]
 ```
-**Example 17: Add custom JAR steps when creating a cluster**
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
+**Example 17: To add custom JAR steps when creating a cluster**
 The following `create-cluster` example adds steps by specifying a JAR file stored in Amazon S3. Steps submit work to a cluster. The main function defined in the JAR file executes after EC2 instances are provisioned, any bootstrap actions have executed, and applications are installed. The steps are specified using `Type=CUSTOM_JAR`.
 Custom JAR steps require the `Jar=` parameter, which specifies the path and file name of the JAR. Optional parameters are `Type`, `Name`, `ActionOnFailure`, `Args`, and `MainClass`. If main class is not specified, the JAR file should specify `Main-Class` in its manifest file.
 
@@ -667,6 +911,14 @@ aws emr create-cluster \
     --release-label {{emr-5.3.1}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 18: To add streaming steps when creating a cluster**
 The following `create-cluster` examples add a streaming step to a cluster that terminates after all steps run. Streaming steps require parameters `Type` and `Args`. Streaming steps optional parameters are `Name` and `ActionOnFailure`.
@@ -678,6 +930,14 @@ aws emr create-cluster \
     --release-label {{emr-5.3.1}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example uses a locally stored JSON configuration file named `multiplefiles.json`. The JSON configuration specifies multiple files. To specify multiple files within a step, you must use a JSON configuration file to specify the step. JSON arguments must include options and values as their own items in the list.
 
@@ -711,8 +971,16 @@ Contents of `multiplefiles.json`:
     }
 ]
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 19: To add Hive steps when creating a cluster**
-The following example add Hive steps when creating a cluster. Hive steps require parameters `Type` and `Args`. Hive steps optional parameters are `Name` and `ActionOnFailure`.
+The following `create-cluster` example adds Hive steps when creating a cluster. Hive steps require parameters `Type` and `Args`. Hive steps optional parameters are `Name` and `ActionOnFailure`.
 
 ```
 aws emr create-cluster \
@@ -721,8 +989,16 @@ aws emr create-cluster \
     --release-label {{emr-5.3.1}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 20: To add Pig steps when creating a cluster**
-The following example adds Pig steps when creating a cluster. Pig steps required parameters are `Type` and `Args`. Pig steps optional parameters are `Name` and `ActionOnFailure`.
+The following `create-cluster` example adds Pig steps when creating a cluster. Pig steps required parameters are `Type` and `Args`. Pig steps optional parameters are `Name` and `ActionOnFailure`.
 
 ```
 aws emr create-cluster \
@@ -730,6 +1006,14 @@ aws emr create-cluster \
     --applications {{Name=Pig}} \
     --release-label {{emr-5.3.1}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 21: To add bootstrap actions**
 The following `create-cluster` example runs two bootstrap actions defined as scripts that are stored in Amazon S3.
@@ -741,6 +1025,14 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --auto-terminate
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 22: To enable EMRFS consistent view and customize the RetryCount and RetryPeriod settings**
 The following `create-cluster` example specifies the retry count and retry period for EMRFS consistent view. The `Consistent=true` argument is required.
 
@@ -749,6 +1041,14 @@ aws emr create-cluster \
     --instance-type {{m4.large}} \
     --release-label {{emr-5.9.0}} \
     --emrfs {{Consistent=true,RetryCount=6,RetryPeriod=30}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following example specifies the same EMRFS configuration as the previous example, using a locally stored JSON configuration file named `emrfsconfig.json`.
 
@@ -767,6 +1067,14 @@ Contents of `emrfsconfig.json`:
     "RetryPeriod": 30
 }
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 **Example 23: To create a cluster with Kerberos configured**
 The following `create-cluster` examples create a cluster using a security configuration with Kerberos enabled, and establishes Kerberos parameters for the cluster using `--kerberos-attributes`.
 The following command specifies Kerberos attributes for the cluster inline.
@@ -779,6 +1087,14 @@ aws emr create-cluster \
     --ec2-attributes {{InstanceProfile=EMR_EC2_DefaultRole}} \
     --security-configuration {{mySecurityConfiguration}} \
     --kerberos-attributes {{Realm=EC2.INTERNAL,KdcAdminPassword=123,CrossRealmTrustPrincipalPassword=123}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following command specifies the same attributes, but references a locally stored JSON file named `kerberos_attributes.json`. In this example, the file is saved in the same directory where you run the command. You can also reference a configuration file saved in Amazon S3.
 
@@ -800,6 +1116,14 @@ Contents of `kerberos_attributes.json`:
     "CrossRealmTrustPrincipalPassword": "123",
 }
 ```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
 The following `create-cluster` example creates an Amazon EMR cluster that uses the `--instance-groups` configuration and has a managed scaling policy.
 
 ```
@@ -807,8 +1131,16 @@ aws emr create-cluster \
     --release-label {{emr-5.30.0}} \
     --service-role {{EMR_DefaultRole}} \
     --ec2-attributes {{InstanceProfile=EMR_EC2_DefaultRole}} \
-    --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+    --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}} \
     --managed-scaling-policy ComputeLimits='{MinimumCapacityUnits=2,MaximumCapacityUnits=4,UnitType=Instances}'
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following `create-cluster` example creates an Amazon EMR cluster that uses the "--log-encryption-kms-key-id" to define KMS key ID utilized for Log encryption.
 
@@ -816,8 +1148,16 @@ The following `create-cluster` example creates an Amazon EMR cluster that uses t
 aws emr create-cluster \
     --release-label {{emr-5.30.0}} \
     --log-uri {{s3://amzn-s3-demo-bucket/myLog}} \
-    --log-encryption-kms-key-id {{arn:aws:kms:us-east-1:110302272565:key/dd559181-283e-45d7-99d1-66da348c4d33}} \
+    --log-encryption-kms-key-id {{arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=2,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following `create-cluster` example creates an Amazon EMR cluster that uses the "--placement-group-configs" configuration to place master nodes in a high-availability (HA) cluster within an EC2 placement group using `SPREAD` placement strategy.
 
@@ -826,8 +1166,16 @@ aws emr create-cluster \
     --release-label {{emr-5.30.0}} \
     --service-role {{EMR_DefaultRole}} \
     --ec2-attributes {{InstanceProfile=EMR_EC2_DefaultRole}} \
-    --instance-groups {{InstanceGroupType=MASTER,InstanceCount=3,InstanceType=m4.largeInstanceGroupType=CORE,InstanceCount=1,InstanceType=m4.large}} \
+    --instance-groups {{InstanceGroupType=MASTER,InstanceCount=3,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=1,InstanceType=m4.large}} \
     --placement-group-configs {{InstanceRole=MASTER}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 The following `create-cluster` example creates an Amazon EMR cluster that uses the "--auto-termination-policy" configuration to place an automatic idle termination threshold for the cluster.
 
@@ -839,7 +1187,15 @@ aws emr create-cluster \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=1,InstanceType=m4.large}} \
     --auto-termination-policy {{IdleTimeout=100}}
 ```
-The following `create-cluster` example creates an Amazon EMR cluster that uses the "--os-release-label" to define an Amazon Linux release for cluster launch
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
+The following `create-cluster` example creates an Amazon EMR cluster that uses the "--os-release-label" to define an Amazon Linux release for cluster launch.
 
 ```
 aws emr create-cluster \
@@ -848,6 +1204,14 @@ aws emr create-cluster \
     --service-role {{EMR_DefaultRole}} \
     --ec2-attributes {{InstanceProfile=EMR_EC2_DefaultRole}} \
     --instance-groups {{InstanceGroupType=MASTER,InstanceCount=1,InstanceType=m4.large}} {{InstanceGroupType=CORE,InstanceCount=1,InstanceType=m4.large}}
+```
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
 ```
 **Example 24: To specify an EBS root volume attributes: size, iops and throughput for cluster instances created with EMR releases 6.15.0 and later**
 The following `create-cluster` example creates an Amazon EMR cluster that uses root volume attributes to configure root volumes specifications for the EC2 instances.
@@ -864,7 +1228,15 @@ aws emr create-cluster \
     --instance-count {{2}} \
     --instance-type {{m4.large}}
 ```
-+  For API details, see [CreateClusterExamples](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/create-cluster-examples.html) in *AWS CLI Command Reference*.
+Output:
+
+```
+{
+    "ClusterId": "j-1K48XXXXXXHCB",
+    "ClusterArn": "arn:aws:elasticmapreduce:us-west-2:123456789012:cluster/j-1K48XXXXXXHCB"
+}
+```
++  For API details, see [CreateCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/create-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-default-roles`
 <a name="emr_CreateDefaultRoles_cli_2_topic"></a>
@@ -872,8 +1244,8 @@ aws emr create-cluster \
 The following code example shows how to use `create-default-roles`.
 
 **AWS CLI**
-**1. To create the default IAM role for EC2**
-Command:
+**To create the default IAM role for EC2**
+The following `create-default-roles` example creates the default IAM role for EC2. If the role already exists, the command returns nothing.
 
 ```
 aws emr create-default-roles
@@ -881,10 +1253,6 @@ aws emr create-default-roles
 Output:
 
 ```
-If the role already exists then the command returns nothing.
-
-If the role does not exist then the output will be:
-
 [
     {
         "RolePolicy": {
@@ -938,7 +1306,7 @@ If the role does not exist then the output will be:
             "CreateDate": "2015-06-09T17:09:04.602Z",
             "RoleName": "EMR_EC2_DefaultRole",
             "Path": "/",
-            "Arn": "arn:aws:iam::176430881729:role/EMR_EC2_DefaultRole"
+            "Arn": "arn:aws:iam::123456789012:role/EMR_EC2_DefaultRole"
         }
     },
     {
@@ -1010,11 +1378,12 @@ If the role does not exist then the output will be:
             "CreateDate": "2015-06-09T17:09:10.401Z",
             "RoleName": "EMR_DefaultRole",
             "Path": "/",
-            "Arn": "arn:aws:iam::176430881729:role/EMR_DefaultRole"
+            "Arn": "arn:aws:iam::123456789012:role/EMR_DefaultRole"
         }
     }
 ]
 ```
+For more information, see [Configure IAM service roles for Amazon EMR permissions to AWS services and resources](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [CreateDefaultRoles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/create-default-roles.html) in *AWS CLI Command Reference*.
 
 ### `create-security-configuration`
@@ -1023,41 +1392,50 @@ If the role does not exist then the output will be:
 The following code example shows how to use `create-security-configuration`.
 
 **AWS CLI**
-**1. To create a security configuration with in-transit encryption enabled with PEM for certificate provider, and at-rest encryption enabled with SSE-S3 for S3 encryption and AWS-KMS for local disk key provider**
-Command:
+**Example 1: To create a security configuration with in-transit encryption enabled with PEM for certificate provider, and at-rest encryption enabled with SSE-S3 for S3 encryption and AWS-KMS for local disk key provider**
+The following `create-security-configuration` example creates a security configuration named `MySecurityConfig` with in-transit encryption enabled with PEM for certificate provider, and at-rest encryption enabled with SSE-S3 for S3 encryption and AWS-KMS for local disk key provider.
 
 ```
- aws emr create-security-configuration --name MySecurityConfig --security-configuration '{
+aws emr create-security-configuration \
+    --name {{MySecurityConfig}} \
+    --security-configuration '{{{
         "EncryptionConfiguration": {
-                "EnableInTransitEncryption" : true,
-                "EnableAtRestEncryption" : true,
-                "InTransitEncryptionConfiguration" : {
-                        "TLSCertificateConfiguration" : {
-                                "CertificateProviderType" : "PEM",
-                                "S3Object" : "s3://mycertstore/artifacts/MyCerts.zip"
-                        }
-                },
-                "AtRestEncryptionConfiguration" : {
-                        "S3EncryptionConfiguration" : {
-                                "EncryptionMode" : "SSE-S3"
-                        },
-                        "LocalDiskEncryptionConfiguration" : {
-                                "EncryptionKeyProviderType" : "AwsKms",
-                                "AwsKmsKey" : "arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012"
-                        }
+            "EnableInTransitEncryption" : true,
+            "EnableAtRestEncryption" : true,
+            "InTransitEncryptionConfiguration" : {
+                "TLSCertificateConfiguration" : {
+                    "CertificateProviderType" : "PEM",
+                    "S3Object" : "s3://amzn-s3-demo-bucket/artifacts/MyCerts.zip"
                 }
+            },
+            "AtRestEncryptionConfiguration" : {
+                "S3EncryptionConfiguration" : {
+                    "EncryptionMode" : "SSE-S3"
+                },
+                "LocalDiskEncryptionConfiguration" : {
+                    "EncryptionKeyProviderType" : "AwsKms",
+                    "AwsKmsKey" : "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                }
+            }
         }
-}'
+    }}}'
 ```
 Output:
 
 ```
 {
-"CreationDateTime": "2016-09-16T20:08:09.129000-0400",
-"Name": "MySecurityConfig"
+    "CreationDateTime": "2016-09-16T20:08:09.129000-0400",
+    "Name": "MySecurityConfig"
 }
 ```
-JSON equivalent (contents of security\_configuration.json):
+The following `create-security-configuration` example creates the same security configuration by using the `security_configuration.json` file.
+
+```
+aws emr create-security-configuration \
+    --name {{"MySecurityConfig"}} \
+    --security-configuration {{file://./security_configuration.json}}
+```
+Contents of `security_configuration.json`:
 
 ```
 {
@@ -1067,7 +1445,7 @@ JSON equivalent (contents of security\_configuration.json):
         "InTransitEncryptionConfiguration": {
             "TLSCertificateConfiguration": {
                 "CertificateProviderType": "PEM",
-                "S3Object": "s3://mycertstore/artifacts/MyCerts.zip"
+                "S3Object": "s3://amzn-s3-demo-bucket/artifacts/MyCerts.zip"
             }
         },
         "AtRestEncryptionConfiguration": {
@@ -1076,55 +1454,59 @@ JSON equivalent (contents of security\_configuration.json):
             },
             "LocalDiskEncryptionConfiguration": {
                 "EncryptionKeyProviderType": "AwsKms",
-                "AwsKmsKey": "arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012"
+                "AwsKmsKey": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
             }
         }
     }
 }
 ```
-Command (using security\_configuration.json):
+Output:
 
 ```
-aws emr create-security-configuration --name "MySecurityConfig" --security-configuration file://./security_configuration.json
+{
+    "CreationDateTime": "2016-09-16T20:08:09.129000-0400",
+    "Name": "MySecurityConfig"
+}
+```
+**Example 2: To create a security configuration with Kerberos enabled using cluster-dedicated KDC and cross-realm trust**
+The following `create-security-configuration` example creates a security configuration named `MySecurityConfig` with Kerberos enabled using cluster-dedicated KDC and cross-realm trust.
+
+```
+aws emr create-security-configuration \
+    --name {{MySecurityConfig}} \
+    --security-configuration '{{{
+        "AuthenticationConfiguration": {
+            "KerberosConfiguration": {
+                "Provider": "ClusterDedicatedKdc",
+                "ClusterDedicatedKdcConfiguration": {
+                    "TicketLifetimeInHours": 24,
+                    "CrossRealmTrustConfiguration": {
+                        "Realm": "AD.DOMAIN.COM",
+                        "Domain": "ad.domain.com",
+                        "AdminServer": "ad.domain.com",
+                        "KdcServer": "ad.domain.com"
+                    }
+                }
+            }
+        }
+    }}}'
 ```
 Output:
 
 ```
 {
-"CreationDateTime": "2016-09-16T20:08:09.129000-0400",
-"Name": "MySecurityConfig"
+    "CreationDateTime": "2017-03-22T19:32:38.982000-0400",
+    "Name": "MySecurityConfig"
 }
 ```
-**2. To create a security configuration with Kerberos enabled using cluster-dedicated KDC and cross-realm trust**
-Command:
+The following `create-security-configuration` example creates the same security configuration by using the `security_configuration.json` file.
 
 ```
- aws emr create-security-configuration --name MySecurityConfig --security-configuration '{
-     "AuthenticationConfiguration": {
-         "KerberosConfiguration": {
-             "Provider": "ClusterDedicatedKdc",
-             "ClusterDedicatedKdcConfiguration": {
-                 "TicketLifetimeInHours": 24,
-                 "CrossRealmTrustConfiguration": {
-                   "Realm": "AD.DOMAIN.COM",
-                   "Domain": "ad.domain.com",
-                   "AdminServer": "ad.domain.com",
-                   "KdcServer": "ad.domain.com"
-                 }
-             }
-         }
-     }
-}'
+aws emr create-security-configuration \
+    --name {{"MySecurityConfig"}} \
+    --security-configuration {{file://./security_configuration.json}}
 ```
-Output:
-
-```
-{
-"CreationDateTime": "2017-03-22T19:32:38.982000-0400",
-"Name": "MySecurityConfig"
-}
-```
-JSON equivalent (contents of security\_configuration.json):
+Contents of `security_configuration.json`:
 
 ```
 {
@@ -1144,19 +1526,15 @@ JSON equivalent (contents of security\_configuration.json):
     }
 }
 ```
-Command (using security\_configuration.json):
-
-```
-aws emr create-security-configuration --name "MySecurityConfig" --security-configuration file://./security_configuration.json
-```
 Output:
 
 ```
 {
-"CreationDateTime": "2017-03-22T19:32:38.982000-0400",
-"Name": "MySecurityConfig"
+    "CreationDateTime": "2017-03-22T19:32:38.982000-0400",
+    "Name": "MySecurityConfig"
 }
 ```
+For more information, see [Create a security configuration with the Amazon EMR console or with the AWS CLI](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-create-security-configuration.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [CreateSecurityConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/create-security-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-security-configuration`
@@ -1166,16 +1544,14 @@ The following code example shows how to use `delete-security-configuration`.
 
 **AWS CLI**
 **To delete a security configuration in the current region**
-Command:
+The following `delete-security-configuration` example deletes the security configuration named `MySecurityConfig` in the current region.
 
 ```
-aws emr delete-security-configuration --name MySecurityConfig
+aws emr delete-security-configuration \
+    --name {{MySecurityConfig}}
 ```
-Output:
-
-```
-None
-```
+This command produces no output.
+For more information, see [Use security configurations to set up Amazon EMR cluster security](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-security-configurations.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [DeleteSecurityConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/delete-security-configuration.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster`
@@ -1184,112 +1560,116 @@ None
 The following code example shows how to use `describe-cluster`.
 
 **AWS CLI**
-Command:
+**To describe a cluster**
+The following `describe-cluster` example describes the specified cluster.
 
 ```
-aws emr describe-cluster --cluster-id j-XXXXXXXX
+aws emr describe-cluster \
+    --cluster-id {{j-XXXXXXXX}}
 ```
+For a release-label based uniform instance groups cluster, the output looks like the following.
 Output:
 
 ```
-For release-label based uniform instance groups cluster:
-
-        {
-            "Cluster": {
+{
+    "Cluster": {
+        "Status": {
+            "Timeline": {
+                "ReadyDateTime": "2015-07-09T16:51:15.199000-0400",
+                "CreationDateTime": "2015-07-09T16:44:16.563000-0400"
+            },
+            "State": "WAITING",
+            "StateChangeReason": {
+                "Message": "Waiting for steps to run"
+            }
+        },
+        "Ec2InstanceAttributes": {
+            "ServiceAccessSecurityGroup": "sg-xxxxxxxx",
+            "EmrManagedMasterSecurityGroup": "sg-xxxxxxxx",
+            "IamInstanceProfile": "EMR_EC2_DefaultRole",
+            "Ec2KeyName": "myKey",
+            "Ec2AvailabilityZone": "us-west-2c",
+            "EmrManagedSlaveSecurityGroup": "sg-yyyyyyyyy"
+        },
+        "Name": "My Cluster",
+        "ServiceRole": "EMR_DefaultRole",
+        "Tags": [],
+        "TerminationProtected": true,
+        "UnhealthyNodeReplacement": true,
+        "ReleaseLabel": "emr-4.0.0",
+        "NormalizedInstanceHours": 96,
+        "InstanceGroups": [
+            {
+                "RequestedInstanceCount": 2,
                 "Status": {
                     "Timeline": {
-                        "ReadyDateTime": "2015-07-09T16:51:15.199000-0400",
-                        "CreationDateTime": "2015-07-09T16:44:16.563000-0400"
+                        "ReadyDateTime": "2015-07-09T16:51:14.245000-0400",
+                        "CreationDateTime": "2015-07-09T16:44:16.564000-0400",
+                        "EndDateTime": "2015-07-11T14:09:18.387000-0400"
                     },
-                    "State": "WAITING",
+                    "State": "RUNNING",
                     "StateChangeReason": {
-                        "Message": "Waiting for steps to run"
+                        "Message": ""
                     }
                 },
-                "Ec2InstanceAttributes": {
-                    "ServiceAccessSecurityGroup": "sg-xxxxxxxx",
-                    "EmrManagedMasterSecurityGroup": "sg-xxxxxxxx",
-                    "IamInstanceProfile": "EMR_EC2_DefaultRole",
-                    "Ec2KeyName": "myKey",
-                    "Ec2AvailabilityZone": "us-east-1c",
-                    "EmrManagedSlaveSecurityGroup": "sg-yyyyyyyyy"
-                },
-                "Name": "My Cluster",
-                "ServiceRole": "EMR_DefaultRole",
-                "Tags": [],
-                "TerminationProtected": true,
-                "UnhealthyNodeReplacement": true,
-                "ReleaseLabel": "emr-4.0.0",
-                "NormalizedInstanceHours": 96,
-                "InstanceGroups": [
-                    {
-                        "RequestedInstanceCount": 2,
-                        "Status": {
-                            "Timeline": {
-                                "ReadyDateTime": "2015-07-09T16:51:14.245000-0400",
-                                "CreationDateTime": "2015-07-09T16:44:16.564000-0400",
-                                "EndDateTime": "2015-07-11T14:09:18.387000-0400"
-                            },
-                            "State": "RUNNING",
-                            "StateChangeReason": {
-                                "Message": "",
-                            }
-                        },
-                        "Name": "CORE",
-                        "InstanceGroupType": "CORE",
-                        "Id": "ig-YYYYYYY",
-                        "Configurations": [],
-                        "InstanceType": "m3.large",
-                        "Market": "ON_DEMAND",
-                        "RunningInstanceCount": 2
+                "Name": "CORE",
+                "InstanceGroupType": "CORE",
+                "Id": "ig-YYYYYYY",
+                "Configurations": [],
+                "InstanceType": "m3.large",
+                "Market": "ON_DEMAND",
+                "RunningInstanceCount": 2
+            },
+            {
+                "RequestedInstanceCount": 1,
+                "Status": {
+                    "Timeline": {
+                        "ReadyDateTime": "2015-07-09T16:51:14.245000-0400",
+                        "CreationDateTime": "2015-07-09T16:44:16.564000-0400",
+                        "EndDateTime": "2015-07-11T14:09:18.387000-0400"
                     },
-                    {
-                        "RequestedInstanceCount": 1,
-                        "Status": {
-                            "Timeline": {
-                                "ReadyDateTime": "2015-07-09T16:51:14.245000-0400",
-                                "CreationDateTime": "2015-07-09T16:44:16.564000-0400",
-                                "EndDateTime": "2015-07-11T14:09:18.387000-0400"
-                            },
-                            "State": "RUNNING",
-                            "StateChangeReason": {
-                                "Message": "",
-                            }
-                        },
-                        "Name": "MASTER",
-                        "InstanceGroupType": "MASTER",
-                        "Id": "ig-XXXXXXXXX",
-                        "Configurations": [],
-                        "InstanceType": "m3.large",
-                        "Market": "ON_DEMAND",
-                        "RunningInstanceCount": 1
+                    "State": "RUNNING",
+                    "StateChangeReason": {
+                        "Message": ""
                     }
-                ],
-                "Applications": [
-                    {
-                        "Name": "Hadoop"
-                    }
-                ],
-                "VisibleToAllUsers": true,
-                "BootstrapActions": [],
-                "MasterPublicDnsName": "ec2-54-147-144-78.compute-1.amazonaws.com",
-                "AutoTerminate": false,
-                "Id": "j-XXXXXXXX",
-                "Configurations": [
-                    {
-                        "Properties": {
-                            "fs.s3.consistent.retryPeriodSeconds": "20",
-                            "fs.s3.enableServerSideEncryption": "true",
-                            "fs.s3.consistent": "false",
-                            "fs.s3.consistent.retryCount": "2"
-                        },
-                        "Classification": "emrfs-site"
-                    }
-                ]
+                },
+                "Name": "MASTER",
+                "InstanceGroupType": "MASTER",
+                "Id": "ig-XXXXXXXXX",
+                "Configurations": [],
+                "InstanceType": "m3.large",
+                "Market": "ON_DEMAND",
+                "RunningInstanceCount": 1
             }
-        }
+        ],
+        "Applications": [
+            {
+                "Name": "Hadoop"
+            }
+        ],
+        "VisibleToAllUsers": true,
+        "BootstrapActions": [],
+        "MasterPublicDnsName": "ec2-54-147-144-78.compute-1.amazonaws.com",
+        "AutoTerminate": false,
+        "Id": "j-XXXXXXXX",
+        "Configurations": [
+            {
+                "Properties": {
+                    "fs.s3.consistent.retryPeriodSeconds": "20",
+                    "fs.s3.enableServerSideEncryption": "true",
+                    "fs.s3.consistent": "false",
+                    "fs.s3.consistent.retryCount": "2"
+                },
+                "Classification": "emrfs-site"
+            }
+        ]
+    }
+}
+```
+For a release-label based instance fleet cluster, the output looks like the following.
+Output:
 
-For release-label based instance fleet cluster:
+```
 {
     "Cluster": {
         "Status": {
@@ -1307,7 +1687,7 @@ For release-label based instance fleet cluster:
             "RequestedEc2AvailabilityZones": [],
             "RequestedEc2SubnetIds": [],
             "IamInstanceProfile": "EMR_EC2_DefaultRole",
-            "Ec2AvailabilityZone": "us-east-1a",
+            "Ec2AvailabilityZone": "us-west-2a",
             "EmrManagedSlaveSecurityGroup": "sg-xxxxx"
         },
         "Name": "My Cluster",
@@ -1367,85 +1747,88 @@ For release-label based instance fleet cluster:
         "Configurations": []
     }
 }
-
-For ami based uniform instance group cluster:
-
-    {
-        "Cluster": {
-            "Status": {
-                "Timeline": {
-                    "ReadyDateTime": "2014-05-06T14:22:44.432000-0400",
-                    "CreationDateTime": "2014-05-06T14:17:48.62000-0400"
-                },
-                "State": "WAITING",
-                "StateChangeReason": {
-                    "Message": "Waiting for steps to run"
-                }
-            },
-            "Ec2InstanceAttributes": {
-                "IamInstanceProfile": "EMR_EC2_DefaultRole",
-                "Ec2AvailabilityZone": "us-east-1c"
-            },
-            "Name": "My Cluster",
-            "Tags": [],
-            "TerminationProtected": true,
-            "UnhealthyNodeReplacement": true,
-            "RunningAmiVersion": "2.5.4",
-            "InstanceGroups": [
-                {
-                    "RequestedInstanceCount": 1,
-                    "Status": {
-                        "Timeline": {
-                            "ReadyDateTime": "2014-05-06T14:22:38.848000-0400",
-                            "CreationDateTime": "2014-05-06T14:17:48.621000-0400"
-                        },
-                        "State": "RUNNING",
-                        "StateChangeReason": {
-                            "Message": ""
-                        }
-                    },
-                    "Name": "Master instance group",
-                    "InstanceGroupType": "MASTER",
-                    "InstanceType": "m1.small",
-                    "Id": "ig-ABCD",
-                    "Market": "ON_DEMAND",
-                    "RunningInstanceCount": 1
-                },
-                {
-                    "RequestedInstanceCount": 2,
-                    "Status": {
-                        "Timeline": {
-                            "ReadyDateTime": "2014-05-06T14:22:44.439000-0400",
-                            "CreationDateTime": "2014-05-06T14:17:48.621000-0400"
-                        },
-                        "State": "RUNNING",
-                        "StateChangeReason": {
-                            "Message": ""
-                        }
-                    },
-                    "Name": "Core instance group",
-                    "InstanceGroupType": "CORE",
-                    "InstanceType": "m1.small",
-                    "Id": "ig-DEF",
-                    "Market": "ON_DEMAND",
-                    "RunningInstanceCount": 2
-                }
-            ],
-            "Applications": [
-                {
-                    "Version": "1.0.3",
-                    "Name": "hadoop"
-                }
-            ],
-            "BootstrapActions": [],
-            "VisibleToAllUsers": false,
-            "RequestedAmiVersion": "2.4.2",
-            "LogUri": "s3://myLogUri/",
-            "AutoTerminate": false,
-            "Id": "j-XXXXXXXX"
-        }
-    }
 ```
+For an AMI based uniform instance group cluster, the output looks like the following.
+Output:
+
+```
+{
+    "Cluster": {
+        "Status": {
+            "Timeline": {
+                "ReadyDateTime": "2014-05-06T14:22:44.432000-0400",
+                "CreationDateTime": "2014-05-06T14:17:48.62000-0400"
+            },
+            "State": "WAITING",
+            "StateChangeReason": {
+                "Message": "Waiting for steps to run"
+            }
+        },
+        "Ec2InstanceAttributes": {
+            "IamInstanceProfile": "EMR_EC2_DefaultRole",
+            "Ec2AvailabilityZone": "us-west-2c"
+        },
+        "Name": "My Cluster",
+        "Tags": [],
+        "TerminationProtected": true,
+        "UnhealthyNodeReplacement": true,
+        "RunningAmiVersion": "2.5.4",
+        "InstanceGroups": [
+            {
+                "RequestedInstanceCount": 1,
+                "Status": {
+                    "Timeline": {
+                        "ReadyDateTime": "2014-05-06T14:22:38.848000-0400",
+                        "CreationDateTime": "2014-05-06T14:17:48.621000-0400"
+                    },
+                    "State": "RUNNING",
+                    "StateChangeReason": {
+                        "Message": ""
+                    }
+                },
+                "Name": "Master instance group",
+                "InstanceGroupType": "MASTER",
+                "InstanceType": "m1.small",
+                "Id": "ig-ABCD",
+                "Market": "ON_DEMAND",
+                "RunningInstanceCount": 1
+            },
+            {
+                "RequestedInstanceCount": 2,
+                "Status": {
+                    "Timeline": {
+                        "ReadyDateTime": "2014-05-06T14:22:44.439000-0400",
+                        "CreationDateTime": "2014-05-06T14:17:48.621000-0400"
+                    },
+                    "State": "RUNNING",
+                    "StateChangeReason": {
+                        "Message": ""
+                    }
+                },
+                "Name": "Core instance group",
+                "InstanceGroupType": "CORE",
+                "InstanceType": "m1.small",
+                "Id": "ig-DEF",
+                "Market": "ON_DEMAND",
+                "RunningInstanceCount": 2
+            }
+        ],
+        "Applications": [
+            {
+                "Version": "1.0.3",
+                "Name": "hadoop"
+            }
+        ],
+        "BootstrapActions": [],
+        "VisibleToAllUsers": false,
+        "RequestedAmiVersion": "2.4.2",
+        "LogUri": "s3://amzn-s3-demo-bucketLogUri/",
+        "AutoTerminate": false,
+        "Id": "j-XXXXXXXX"
+    }
+}
+```
+For more information, see [View Amazon EMR cluster status and details](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-view-clusters.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [DescribeCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/describe-cluster.html) in *AWS CLI Command Reference*.
 
 ### `describe-step`
@@ -1454,10 +1837,13 @@ For ami based uniform instance group cluster:
 The following code example shows how to use `describe-step`.
 
 **AWS CLI**
-The following command describes a step with the step ID `s-3LZC0QUT43AM` in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To describe a step**
+The following `describe-step` example describes a step with the step ID `s-3LZC0QUT43AM` in a cluster with the cluster ID `j-3SD91U2E1L2QX`.
 
 ```
-aws emr describe-step --cluster-id {{j-3SD91U2E1L2QX}} --step-id {{s-3LZC0QUT43AM}}
+aws emr describe-step \
+    --cluster-id {{j-3SD91U2E1L2QX}} \
+    --step-id {{s-3LZC0QUT43AM}}
 ```
 Output:
 
@@ -1491,6 +1877,7 @@ Output:
     }
 }
 ```
+For more information, see [Submit work to an Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-work-with-steps.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [DescribeStep](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/describe-step.html) in *AWS CLI Command Reference*.
 
 ### `get`
@@ -1499,11 +1886,22 @@ Output:
 The following code example shows how to use `get`.
 
 **AWS CLI**
-The following downloads the `hadoop-examples.jar` archive from the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To download a file from the primary node of a cluster**
+The following `get` example downloads the `hadoop-examples.jar` archive from the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`. The command displays the `scp` command that it runs, followed by any output from `scp`.
 
 ```
-aws emr get --cluster-id {{j-3SD91U2E1L2QX}} --key-pair-file {{~/.ssh/mykey.pem}} --src {{/home/hadoop-examples.jar}} --dest {{~}}
+aws emr get \
+    --cluster-id {{j-3SD91U2E1L2QX}} \
+    --key-pair-file {{~/.ssh/mykey.pem}} \
+    --src {{/home/hadoop-examples.jar}} \
+    --dest {{~}}
 ```
+Output:
+
+```
+scp -r -o StrictHostKeyChecking=accept-new -i /home/local/user/.ssh/mykey.pem hadoop@ec2-52-52-41-150.us-west-2.compute.amazonaws.com:/home/hadoop-examples.jar /home/local/user
+```
+For more information, see [Connect to the Amazon EMR cluster primary node using SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [Get](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/get.html) in *AWS CLI Command Reference*.
 
 ### `list-clusters`
@@ -1512,10 +1910,12 @@ aws emr get --cluster-id {{j-3SD91U2E1L2QX}} --key-pair-file {{~/.ssh/mykey.pem}
 The following code example shows how to use `list-clusters`.
 
 **AWS CLI**
-The following command lists all active EMR clusters in the current region:
+**To list the active clusters**
+The following `list-clusters` example lists all active EMR clusters in the current region.
 
 ```
-aws emr list-clusters --active
+aws emr list-clusters \
+    --active
 ```
 Output:
 
@@ -1540,6 +1940,7 @@ Output:
     ]
 }
 ```
+For more information, see [View Amazon EMR cluster status and details](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-view-clusters.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ListClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/list-clusters.html) in *AWS CLI Command Reference*.
 
 ### `list-instance-fleets`
@@ -1549,8 +1950,7 @@ The following code example shows how to use `list-instance-fleets`.
 
 **AWS CLI**
 **To get configuration details of instance fleets in a cluster**
-This example lists the details of instance fleets in the cluster specified.
-Command:
+The following `list-instance-fleets` example lists the details of instance fleets in the cluster specified.
 
 ```
 list-instance-fleets --cluster-id 'j-12ABCDEFGHI34JK'
@@ -1559,64 +1959,65 @@ Output:
 
 ```
 {
-  "InstanceFleets": [
-      {
-          "Status": {
-              "Timeline": {
-                  "ReadyDateTime": "2017-03-05T19:11:34.637000-0500",
-                  "CreationDateTime": "2017-03-05T19:05:19.817000-0500"
-              },
-              "State": "RUNNING",
-              "StateChangeReason": {
-                  "Message": ""
-              }
-          },
-          "ProvisionedSpotCapacity": 6,
-          "Name": "CORE",
-          "InstanceFleetType": "CORE",
-          "LaunchSpecifications": {
-              "SpotSpecification": {
-                  "TimeoutDurationMinutes": 60,
-                  "TimeoutAction": "TERMINATE_CLUSTER"
-              }
-          },
-          "ProvisionedOnDemandCapacity": 2,
-          "InstanceTypeSpecifications": [
-              {
-                  "BidPrice": "0.5",
-                  "InstanceType": "m3.xlarge",
-                  "WeightedCapacity": 2
-              }
-          ],
-          "Id": "if-1ABC2DEFGHIJ3"
-      },
-      {
-          "Status": {
-              "Timeline": {
-                  "ReadyDateTime": "2017-03-05T19:10:58.598000-0500",
-                  "CreationDateTime": "2017-03-05T19:05:19.811000-0500"
-              },
-              "State": "RUNNING",
-              "StateChangeReason": {
-                  "Message": ""
-              }
-          },
-          "ProvisionedSpotCapacity": 0,
-          "Name": "MASTER",
-          "InstanceFleetType": "MASTER",
-          "ProvisionedOnDemandCapacity": 1,
-          "InstanceTypeSpecifications": [
-              {
-                  "BidPriceAsPercentageOfOnDemandPrice": 100.0,
-                  "InstanceType": "m3.xlarge",
-                  "WeightedCapacity": 1
-              }
-          ],
-         "Id": "if-2ABC4DEFGHIJ4"
-      }
-  ]
+    "InstanceFleets": [
+        {
+            "Status": {
+                "Timeline": {
+                    "ReadyDateTime": "2017-03-05T19:11:34.637000-0500",
+                    "CreationDateTime": "2017-03-05T19:05:19.817000-0500"
+                },
+                "State": "RUNNING",
+                "StateChangeReason": {
+                    "Message": ""
+                }
+            },
+            "ProvisionedSpotCapacity": 6,
+            "Name": "CORE",
+            "InstanceFleetType": "CORE",
+            "LaunchSpecifications": {
+                "SpotSpecification": {
+                    "TimeoutDurationMinutes": 60,
+                    "TimeoutAction": "TERMINATE_CLUSTER"
+                }
+            },
+            "ProvisionedOnDemandCapacity": 2,
+            "InstanceTypeSpecifications": [
+                {
+                    "BidPrice": "0.5",
+                    "InstanceType": "m3.xlarge",
+                    "WeightedCapacity": 2
+                }
+            ],
+            "Id": "if-1ABC2DEFGHIJ3"
+        },
+        {
+            "Status": {
+                "Timeline": {
+                    "ReadyDateTime": "2017-03-05T19:10:58.598000-0500",
+                    "CreationDateTime": "2017-03-05T19:05:19.811000-0500"
+                },
+                "State": "RUNNING",
+                "StateChangeReason": {
+                    "Message": ""
+                }
+            },
+            "ProvisionedSpotCapacity": 0,
+            "Name": "MASTER",
+            "InstanceFleetType": "MASTER",
+            "ProvisionedOnDemandCapacity": 1,
+            "InstanceTypeSpecifications": [
+                {
+                    "BidPriceAsPercentageOfOnDemandPrice": 100.0,
+                    "InstanceType": "m3.xlarge",
+                    "WeightedCapacity": 1
+                }
+            ],
+            "Id": "if-2ABC4DEFGHIJ4"
+        }
+    ]
 }
 ```
+For more information, see [Planning and configuring instance fleets for your Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ListInstanceFleets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/list-instance-fleets.html) in *AWS CLI Command Reference*.
 
 ### `list-instances`
@@ -1625,18 +2026,20 @@ Output:
 The following code example shows how to use `list-instances`.
 
 **AWS CLI**
-The following command lists all of the instances in a cluster with the cluster ID `j-3C6XNQ39VR9WL`:
+**To list the instances in a cluster**
+The following `list-instances` example lists all of the instances in a cluster with the cluster ID `j-3C6XNQ39VR9WL`.
 
 ```
-aws emr list-instances --cluster-id {{j-3C6XNQ39VR9WL}}
+aws emr list-instances \
+    --cluster-id {{j-3C6XNQ39VR9WL}}
 ```
+For a uniform instance group based cluster, the output looks like the following.
 Output:
 
 ```
-For a uniform instance group based cluster
-  {
+{
     "Instances": [
-         {
+        {
             "Status": {
                 "Timeline": {
                     "ReadyDateTime": "2015-06-01T19:13:20.431000-0400",
@@ -1685,37 +2088,41 @@ For a uniform instance group based cluster
             "PrivateIpAddress": "172.21.11.214"
         }
     ]
-  }
-
-For a fleet based cluster:
-   {
-      "Instances": [
-          {
-              "Status": {
-                  "Timeline": {
-                      "ReadyDateTime": "2017-02-22T19:46:50.878000-0500",
-                      "CreationDateTime": "2017-02-22T19:43:08.878000-0500",
-                      "EndDateTime": "2017-02-25T06:43:10.924000-0500"
-                  },
-                  "State": "TERMINATED",
-                  "StateChangeReason": {
-                      "Message": "Instance was terminated."
-                  }
-              },
-              "Ec2InstanceId": "i-xxxxx",
-              "InstanceFleetId": "if-xxxxx",
-              "EbsVolumes": [],
-              "PublicDnsName": "ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com",
-              "InstanceType": "m3.xlarge",
-              "PrivateDnsName": "ip-xx-xx-xxx-xx.ec2.internal",
-              "Market": "SPOT",
-              "PublicIpAddress": "xx.xx.xxx.xxx",
-              "Id": "ci-xxxxx",
-              "PrivateIpAddress": "10.47.191.80"
-          }
-      ]
-  }
+}
 ```
+For an instance fleet based cluster, the output looks like the following.
+Output:
+
+```
+{
+    "Instances": [
+        {
+            "Status": {
+                "Timeline": {
+                    "ReadyDateTime": "2017-02-22T19:46:50.878000-0500",
+                    "CreationDateTime": "2017-02-22T19:43:08.878000-0500",
+                    "EndDateTime": "2017-02-25T06:43:10.924000-0500"
+                },
+                "State": "TERMINATED",
+                "StateChangeReason": {
+                    "Message": "Instance was terminated."
+                }
+            },
+            "Ec2InstanceId": "i-xxxxx",
+            "InstanceFleetId": "if-xxxxx",
+            "EbsVolumes": [],
+            "PublicDnsName": "ec2-xx-xxx-xxx-xxx.compute-1.amazonaws.com",
+            "InstanceType": "m3.xlarge",
+            "PrivateDnsName": "ip-xx-xx-xxx-xx.ec2.internal",
+            "Market": "SPOT",
+            "PublicIpAddress": "xx.xx.xxx.xxx",
+            "Id": "ci-xxxxx",
+            "PrivateIpAddress": "10.47.191.80"
+        }
+    ]
+}
+```
+For more information, see [View Amazon EMR cluster status and details](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-view-clusters.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ListInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/list-instances.html) in *AWS CLI Command Reference*.
 
 ### `list-security-configurations`
@@ -1725,7 +2132,7 @@ The following code example shows how to use `list-security-configurations`.
 
 **AWS CLI**
 **To list security configurations in the current region**
-Command:
+The following `list-security-configurations` example lists the security configurations in the current region.
 
 ```
 aws emr list-security-configurations
@@ -1746,6 +2153,7 @@ Output:
     ]
 }
 ```
+For more information, see [Use security configurations to set up Amazon EMR cluster security](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-security-configurations.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ListSecurityConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/list-security-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-steps`
@@ -1754,11 +2162,66 @@ Output:
 The following code example shows how to use `list-steps`.
 
 **AWS CLI**
-The following command lists all of the steps in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To list the steps in a cluster**
+The following `list-steps` example lists all of the steps in a cluster with the cluster ID `j-3SD91U2E1L2QX`.
 
 ```
-aws emr list-steps --cluster-id {{j-3SD91U2E1L2QX}}
+aws emr list-steps \
+    --cluster-id {{j-3SD91U2E1L2QX}}
 ```
+Output:
+
+```
+{
+    "Steps": [
+        {
+            "Id": "s-2BRWVHXA3EXBT",
+            "Name": "Custom JAR",
+            "Config": {
+                "Jar": "s3://amzn-s3-demo-bucket/mytest.jar",
+                "Properties": {},
+                "MainClass": "mymainclass",
+                "Args": [
+                    "arg1",
+                    "arg2"
+                ]
+            },
+            "ActionOnFailure": "CONTINUE",
+            "Status": {
+                "State": "COMPLETED",
+                "StateChangeReason": {},
+                "Timeline": {
+                    "CreationDateTime": "2024-05-14T18:07:31.123000+00:00",
+                    "StartDateTime": "2024-05-14T18:10:45.456000+00:00",
+                    "EndDateTime": "2024-05-14T18:12:20.789000+00:00"
+                }
+            }
+        },
+        {
+            "Id": "s-1AXF2SNQKPLZR",
+            "Name": "Setup Hadoop Debugging",
+            "Config": {
+                "Jar": "command-runner.jar",
+                "Properties": {},
+                "Args": [
+                    "state-pusher-script"
+                ]
+            },
+            "ActionOnFailure": "TERMINATE_CLUSTER",
+            "Status": {
+                "State": "COMPLETED",
+                "StateChangeReason": {},
+                "Timeline": {
+                    "CreationDateTime": "2024-05-14T18:01:02.345000+00:00",
+                    "StartDateTime": "2024-05-14T18:09:30.678000+00:00",
+                    "EndDateTime": "2024-05-14T18:10:40.901000+00:00"
+                }
+            }
+        }
+    ]
+}
+```
+For more information, see [Submit work to an Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-work-with-steps.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ListSteps](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/list-steps.html) in *AWS CLI Command Reference*.
 
 ### `list-studios`
@@ -1768,7 +2231,7 @@ The following code example shows how to use `list-studios`.
 
 **AWS CLI**
 **To list available EMR Studios**
-The following `list-studios` example lists the EMR Studios in the AWS account.:
+The following `list-studios` example lists the EMR Studios in the AWS account.
 
 ```
 aws emr list-studios
@@ -1781,7 +2244,7 @@ Output:
         {
             "StudioId": "es-XXXXXXX132E0X7R0W7GAS1MVB",
             "Name": "My_EMR_Studio",
-            "Url": "https://es-XXXXXXX132E0X7R0W7GAS1MVB.emrstudio-prod.us-east-1.amazonaws.com",
+            "Url": "https://es-XXXXXXX132E0X7R0W7GAS1MVB.emrstudio-prod.us-west-2.amazonaws.com",
             "AuthMode": "IAM",
             "CreationTime": "2025-10-28T11:09:33.624000-04:00"
         }
@@ -1797,11 +2260,16 @@ For more information, see [Monitor, update and delete Amazon EMR Studio resource
 The following code example shows how to use `modify-cluster-attributes`.
 
 **AWS CLI**
-The following command sets the visibility of an EMR cluster with the ID `j-301CDNY0J5XM4` to all users:
+**To make a cluster visible to all users**
+The following `modify-cluster-attributes` example sets the visibility of an EMR cluster with the ID `j-301CDNY0J5XM4` to all users.
 
 ```
-aws emr modify-cluster-attributes --cluster-id {{j-301CDNY0J5XM4}} --visible-to-all-users
+aws emr modify-cluster-attributes \
+    --cluster-id {{j-301CDNY0J5XM4}} \
+    --visible-to-all-users
 ```
+This command produces no output.
+For more information, see [AWS Identity and Access Management for Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ModifyClusterAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/modify-cluster-attributes.html) in *AWS CLI Command Reference*.
 
 ### `modify-instance-fleet`
@@ -1810,13 +2278,16 @@ aws emr modify-cluster-attributes --cluster-id {{j-301CDNY0J5XM4}} --visible-to-
 The following code example shows how to use `modify-instance-fleet`.
 
 **AWS CLI**
-**To change the target capacites of an instance fleet**
-This example changes the On-Demand and Spot target capacities to 1 for the instance fleet specified.
-Command:
+**To change the target capacities of an instance fleet**
+The following `modify-instance-fleet` example changes the On-Demand and Spot target capacities to 1 for the specified instance fleet.
 
 ```
-aws emr modify-instance-fleet --cluster-id '{{j-12ABCDEFGHI34JK}}' --instance-fleet InstanceFleetId='if-2ABC4DEFGHIJ4',TargetOnDemandCapacity=1,TargetSpotCapacity=1
+aws emr modify-instance-fleet \
+    --cluster-id '{{j-12ABCDEFGHI34JK}}' \
+    --instance-fleet InstanceFleetId='if-2ABC4DEFGHIJ4',TargetOnDemandCapacity=1,TargetSpotCapacity=1
 ```
+This command produces no output.
+For more information, see [Planning and configuring instance fleets for your Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [ModifyInstanceFleet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/modify-instance-fleet.html) in *AWS CLI Command Reference*.
 
 ### `put`
@@ -1825,11 +2296,22 @@ aws emr modify-instance-fleet --cluster-id '{{j-12ABCDEFGHI34JK}}' --instance-fl
 The following code example shows how to use `put`.
 
 **AWS CLI**
-The following command uploads a file named `healthcheck.sh` to the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To upload a file to the primary node of a cluster**
+The following `put` example uploads a file named `healthcheck.sh` to the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`. The command displays the `scp` command that it runs, followed by any output from `scp`.
 
 ```
-aws emr put --cluster-id {{j-3SD91U2E1L2QX}} --key-pair-file {{~/.ssh/mykey.pem}} --src {{~/scripts/healthcheck.sh}} --dest {{/home/hadoop/bin/healthcheck.sh}}
+aws emr put \
+    --cluster-id {{j-3SD91U2E1L2QX}} \
+    --key-pair-file {{~/.ssh/mykey.pem}} \
+    --src {{~/scripts/healthcheck.sh}} \
+    --dest {{/home/hadoop/bin/healthcheck.sh}}
 ```
+Output:
+
+```
+scp -r -o StrictHostKeyChecking=accept-new -i /home/local/user/.ssh/mykey.pem /home/local/user/scripts/healthcheck.sh hadoop@ec2-52-52-41-150.us-west-2.compute.amazonaws.com:/home/hadoop/bin/healthcheck.sh
+```
+For more information, see [Connect to an Amazon EMR cluster](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [Put](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/put.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags`
@@ -1838,11 +2320,16 @@ aws emr put --cluster-id {{j-3SD91U2E1L2QX}} --key-pair-file {{~/.ssh/mykey.pem}
 The following code example shows how to use `remove-tags`.
 
 **AWS CLI**
-The following command removes a tag with the key `prod` from a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To remove a tag from a cluster**
+The following `remove-tags` example removes a tag with the key `prod` from a cluster with the cluster ID `j-3SD91U2E1L2QX`.
 
 ```
-aws emr remove-tags --resource-id {{j-3SD91U2E1L2QX}} --tag-keys {{prod}}
+aws emr remove-tags \
+    --resource-id {{j-3SD91U2E1L2QX}} \
+    --tag-keys {{prod}}
 ```
+This command produces no output.
+For more information, see [Tag and categorize Amazon EMR cluster resources](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-tags.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [RemoveTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/remove-tags.html) in *AWS CLI Command Reference*.
 
 ### `schedule-hbase-backup`
@@ -1851,33 +2338,51 @@ aws emr remove-tags --resource-id {{j-3SD91U2E1L2QX}} --tag-keys {{prod}}
 The following code example shows how to use `schedule-hbase-backup`.
 
 **AWS CLI**
-**Note: This command can only be used with HBase on AMI version 2.x and 3.x**
-**1. To schedule a full HBase backup** >>>>>>> 06ab6d6e13564b5733d75abaf3b599f93cf39a23
-Command:
+**Example 1: To schedule a full HBase backup**
+The following `schedule-hbase-backup` example schedules a full, consistent HBase backup to Amazon S3 every 10 hours. This command can only be used with HBase on AMI version 2.x and 3.x. The command adds an HBase backup step to the cluster and returns the ID of the step.
 
 ```
-aws emr schedule-hbase-backup --cluster-id j-XXXXXXYY --type full --dir
-s3://amzn-s3-demo-bucket/backup --interval 10 --unit hours --start-time
-2014-04-21T05:26:10Z --consistent
+aws emr schedule-hbase-backup \
+    --cluster-id {{j-XXXXXXYY}} \
+    --type {{full}} \
+    --dir {{s3://amzn-s3-demo-bucket/backup}} \
+    --interval {{10}} \
+    --unit {{hours}} \
+    --start-time {{2014-04-21T05:26:10Z}} \
+    --consistent
 ```
 Output:
 
 ```
-None
+{
+    "StepIds": [
+        "s-1A2B3C4D5E6F7"
+    ]
+}
 ```
-**2. To schedule an incremental HBase backup**
-Command:
+**Example 2: To schedule an incremental HBase backup**
+The following `schedule-hbase-backup` example schedules an incremental, consistent HBase backup to Amazon S3 every 30 minutes. This command can only be used with HBase on AMI version 2.x and 3.x. The command adds an HBase backup step to the cluster and returns the ID of the step.
 
 ```
-aws emr schedule-hbase-backup --cluster-id j-XXXXXXYY --type incremental
- --dir s3://amzn-s3-demo-bucket/backup --interval 30 --unit minutes --start-time
-2014-04-21T05:26:10Z --consistent
+aws emr schedule-hbase-backup \
+    --cluster-id {{j-XXXXXXYY}} \
+    --type {{incremental}} \
+    --dir {{s3://amzn-s3-demo-bucket/backup}} \
+    --interval {{30}} \
+    --unit {{minutes}} \
+    --start-time {{2014-04-21T05:26:10Z}} \
+    --consistent
 ```
 Output:
 
 ```
-None
+{
+    "StepIds": [
+        "s-2B3C4D5E6F7G8"
+    ]
+}
 ```
+For more information, see [HBase application specifics for earlier AMI versions of Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hbase.html) in the *Amazon EMR Release Guide*.
 +  For API details, see [ScheduleHbaseBackup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/schedule-hbase-backup.html) in *AWS CLI Command Reference*.
 
 ### `socks`
@@ -1886,12 +2391,22 @@ None
 The following code example shows how to use `socks`.
 
 **AWS CLI**
-The following command opens a socks connection with the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To open a SOCKS connection to the primary node of a cluster**
+The following `socks` example opens a socks connection with the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`.
 
 ```
-aws emr socks --cluster-id {{j-3SD91U2E1L2QX}} --key-pair-file {{~/.ssh/mykey.pem}}
+aws emr socks \
+    --cluster-id {{j-3SD91U2E1L2QX}} \
+    --key-pair-file {{~/.ssh/mykey.pem}}
 ```
-The key pair file option takes a local path to a private key file.
+The key pair file option takes a local path to a private key file. The command displays the `ssh` command that it runs and keeps the tunnel open on local port 8157 until you press Ctrl\+C.
+Output:
+
+```
+ssh -o StrictHostKeyChecking=accept-new -o ServerAliveInterval=10 -ND 8157 -i /home/local/user/.ssh/mykey.pem hadoop@ec2-52-52-41-150.us-west-2.compute.amazonaws.com
+Disabling Socks Tunnel.
+```
+For more information, see [Option 2, part 1: Set up an SSH tunnel to the primary node using dynamic port forwarding](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-ssh-tunnel.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [Socks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/socks.html) in *AWS CLI Command Reference*.
 
 ### `ssh`
@@ -1900,10 +2415,13 @@ The key pair file option takes a local path to a private key file.
 The following code example shows how to use `ssh`.
 
 **AWS CLI**
-The following command opens an ssh connection with the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`:
+**To open an SSH connection to the primary node of a cluster**
+The following `ssh` example opens an ssh connection with the master instance in a cluster with the cluster ID `j-3SD91U2E1L2QX`.
 
 ```
-aws emr ssh --cluster-id {{j-3SD91U2E1L2QX}} --key-pair-file {{~/.ssh/mykey.pem}}
+aws emr ssh \
+    --cluster-id {{j-3SD91U2E1L2QX}} \
+    --key-pair-file {{~/.ssh/mykey.pem}}
 ```
 The key pair file option takes a local path to a private key file.
 Output:
@@ -1937,4 +2455,5 @@ The Hadoop UI can be accessed via the following commands:
 
 [hadoop@ip-172-31-16-216 ~]$
 ```
+For more information, see [Connect to the Amazon EMR cluster primary node using SSH](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-connect-master-node-ssh.html) in the *Amazon EMR Management Guide*.
 +  For API details, see [Ssh](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/emr/ssh.html) in *AWS CLI Command Reference*.

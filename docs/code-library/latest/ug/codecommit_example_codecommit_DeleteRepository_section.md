@@ -14,19 +14,20 @@ The following code examples show how to use `DeleteRepository`.
 
 **AWS CLI**
 **To delete a repository**
-This example shows how to delete an AWS CodeCommit repository.
-Command:
+The following `delete-repository` example deletes an AWS CodeCommit repository.
 
 ```
-aws codecommit delete-repository --repository-name {{MyDemoRepo}}
+aws codecommit delete-repository \
+    --repository-name {{MyDemoRepo}}
 ```
 Output:
 
 ```
 {
-  "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE"
+    "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Delete an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-repository.html#how-to-delete-repository-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [DeleteRepository](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/delete-repository.html) in *AWS CLI Command Reference*.
 
 ------

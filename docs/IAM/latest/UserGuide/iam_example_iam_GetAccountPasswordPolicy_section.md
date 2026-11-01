@@ -31,7 +31,7 @@ The following code examples show how to use `GetAccountPasswordPolicy`.
 
 **AWS CLI**
 **To see the current account password policy**
-The following `get-account-password-policy` command displays details about the password policy for the current account.
+The following `get-account-password-policy` example displays details about the password policy for the current account.
 
 ```
 aws iam get-account-password-policy

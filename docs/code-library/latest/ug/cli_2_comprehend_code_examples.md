@@ -793,7 +793,7 @@ The following `classify-document` example classifies a document with an endpoint
 
 ```
 aws comprehend classify-document \
-    --endpoint-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint}} \
+    --endpoint-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint}} \
     --text {{"CONGRATULATIONS! TXT 1235550100 to win $5000"}}
 ```
 Output:
@@ -857,6 +857,7 @@ Output:
             "Name": "CREDIT_DEBIT_NUMBER",
             "Score": 1.0
         }
+    ]
 }
 ```
 For more information, see [Personally Identifiable Information (PII)](https://docs.aws.amazon.com/comprehend/latest/dg/pii.html) in the *Amazon Comprehend Developer Guide*.
@@ -873,7 +874,7 @@ The following `create-dataset` example creates a dataset for a flywheel. This da
 
 ```
 aws comprehend create-dataset \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity}} \
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity}} \
     --dataset-name {{example-dataset}} \
     --dataset-type {{"TRAIN"}} \
     --input-data-config {{file://inputConfig.json}}
@@ -892,10 +893,10 @@ Output:
 
 ```
 {
-    "DatasetArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity/dataset/example-dataset"
+    "DatasetArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity/dataset/example-dataset"
 }
 ```
-For more information, see [Flywheel Overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in *Amazon Comprehend Developer Guide*.
+For more information, see [Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [CreateDataset](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/create-dataset.html) in *AWS CLI Command Reference*.
 
 ### `create-document-classifier`
@@ -910,7 +911,7 @@ The following `create-document-classifier` example begins the training process f
 ```
 aws comprehend create-document-classifier \
     --document-classifier-name {{example-classifier}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
     --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/"}} \
     --language-code {{en}}
 ```
@@ -918,7 +919,7 @@ Output:
 
 ```
 {
-    "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier"
+    "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier"
 }
 ```
 For more information, see [Custom Classification](https://docs.aws.amazon.com/comprehend/latest/dg/how-document-classification.html) in the *Amazon Comprehend Developer Guide*.
@@ -936,14 +937,14 @@ The following `create-endpoint` example creates an endpoint for synchronous infe
 ```
 aws comprehend create-endpoint \
     --endpoint-name {{example-classifier-endpoint-1}} \
-    --model-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier}} \
+    --model-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier}} \
     --desired-inference-units {{1}}
 ```
 Output:
 
 ```
 {
-    "EndpointArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint-1"
+    "EndpointArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint-1"
 }
 ```
 For more information, see [Managing Amazon Comprehend endpoints](https://docs.aws.amazon.com/comprehend/latest/dg/manage-endpoints.html) in the *Amazon Comprehend Developer Guide*.
@@ -960,16 +961,16 @@ The following `create-entity-recognizer` example begins the training process for
 
 ```
 aws comprehend create-entity-recognizer \
-    --recognizer-name {{example-entity-recognizer}}
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
-    --input-data-config {{"EntityTypes=[{Type=DEVICE}],Documents={S3Uri=s3://amzn-s3-demo-bucket/trainingdata/raw_text.csv},EntityList={S3Uri=s3://amzn-s3-demo-bucket/trainingdata/entity_list.csv}"}}
+    --recognizer-name {{example-entity-recognizer}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --input-data-config {{"EntityTypes=[{Type=DEVICE}],Documents={S3Uri=s3://amzn-s3-demo-bucket/trainingdata/raw_text.csv},EntityList={S3Uri=s3://amzn-s3-demo-bucket/trainingdata/entity_list.csv}"}} \
     --language-code {{en}}
 ```
 Output:
 
 ```
 {
-    "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:111122223333:example-entity-recognizer/entityrecognizer1"
+    "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:123456789012:example-entity-recognizer/entityrecognizer1"
 }
 ```
 For more information, see [Custom entity recognition](https://docs.aws.amazon.com/comprehend/latest/dg/custom-entity-recognition.html) in the *Amazon Comprehend Developer Guide*.
@@ -987,18 +988,18 @@ The following `create-flywheel` example creates a flywheel to orchestrate the on
 ```
 aws comprehend create-flywheel \
     --flywheel-name {{example-flywheel}} \
-    --active-model-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-model/version/1}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --active-model-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-model/version/1}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
     --data-lake-s3-uri {{"s3://amzn-s3-demo-bucket"}}
 ```
 Output:
 
 ```
 {
-    "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel"
+    "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel"
 }
 ```
-For more information, see [Flywheel Overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in *Amazon Comprehend Developer Guide*.
+For more information, see [Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [CreateFlywheel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/create-flywheel.html) in *AWS CLI Command Reference*.
 
 ### `delete-document-classifier`
@@ -1012,7 +1013,7 @@ The following `delete-document-classifier` example deletes a custom document cla
 
 ```
 aws comprehend delete-document-classifier \
-    --document-classifier-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier-1}}
+    --document-classifier-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-1}}
 ```
 This command produces no output.
 For more information, see [Managing Amazon Comprehend endpoints](https://docs.aws.amazon.com/comprehend/latest/dg/manage-endpoints.html) in the *Amazon Comprehend Developer Guide*.
@@ -1029,7 +1030,7 @@ The following `delete-endpoint` example deletes a model-specific endpoint. All e
 
 ```
 aws comprehend delete-endpoint \
-    --endpoint-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint-1}}
+    --endpoint-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint-1}}
 ```
 This command produces no output.
 For more information, see [Managing Amazon Comprehend endpoints](https://docs.aws.amazon.com/comprehend/latest/dg/manage-endpoints.html) in the *Amazon Comprehend Developer Guide*.
@@ -1046,7 +1047,7 @@ The following `delete-entity-recognizer` example deletes a custom entity recogni
 
 ```
 aws comprehend delete-entity-recognizer \
-    --entity-recognizer-arn {{arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/example-entity-recognizer-1}}
+    --entity-recognizer-arn {{arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/example-entity-recognizer-1}}
 ```
 This command produces no output.
 For more information, see [Managing Amazon Comprehend endpoints](https://docs.aws.amazon.com/comprehend/latest/dg/manage-endpoints.html) in the *Amazon Comprehend Developer Guide*.
@@ -1063,7 +1064,7 @@ The following `delete-flywheel` example deletes a flywheel. The data lake or the
 
 ```
 aws comprehend delete-flywheel \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel-1}}
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel-1}}
 ```
 This command produces no output.
 For more information, see [Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
@@ -1080,7 +1081,7 @@ The following `delete-resource-policy` example deletes a resource-based policy f
 
 ```
 aws comprehend delete-resource-policy \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier-1/version/1}}
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-1/version/1}}
 ```
 This command produces no output.
 For more information, see [Copying custom models between AWS accounts](https://docs.aws.amazon.com/comprehend/latest/dg/custom-copy.html) in the *Amazon Comprehend Developer Guide*.
@@ -1097,14 +1098,14 @@ The following `describe-dataset` example gets the properties of a flywheel datas
 
 ```
 aws comprehend describe-dataset \
-    --dataset-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity/dataset/example-dataset}}
+    --dataset-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity/dataset/example-dataset}}
 ```
 Output:
 
 ```
 {
     "DatasetProperties": {
-        "DatasetArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity/dataset/example-dataset",
+        "DatasetArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity/dataset/example-dataset",
         "DatasetName": "example-dataset",
         "DatasetType": "TRAIN",
         "DatasetS3Uri": "s3://amzn-s3-demo-bucket/flywheel-entity/schemaVersion=1/12345678A123456Z/datasets/example-dataset/20230616T203710Z/",
@@ -1113,7 +1114,7 @@ Output:
     }
 }
 ```
-For more information, see [Flywheel Overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in *Amazon Comprehend Developer Guide*.
+For more information, see [Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [DescribeDataset](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/describe-dataset.html) in *AWS CLI Command Reference*.
 
 ### `describe-document-classification-job`
@@ -1135,20 +1136,20 @@ Output:
 {
     "DocumentClassificationJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:document-classification-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:document-classification-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "exampleclassificationjob",
         "JobStatus": "COMPLETED",
         "SubmitTime": "2023-06-14T17:09:51.788000+00:00",
         "EndTime": "2023-06-14T17:15:58.582000+00:00",
-        "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/mymodel/version/1",
+        "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/mymodel/version/1",
         "InputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket/jobdata/",
+            "S3Uri": "s3://amzn-s3-demo-bucket1/jobdata/",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-CLN-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-CLN-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole"
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-servicerole"
     }
 }
 ```
@@ -1166,14 +1167,14 @@ The following `describe-document-classifier` example gets the properties of a cu
 
 ```
 aws comprehend describe-document-classifier \
-    --document-classifier-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier-1}}
+    --document-classifier-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-1}}
 ```
 Output:
 
 ```
 {
     "DocumentClassifierProperties": {
-        "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier-1",
+        "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-1",
         "LanguageCode": "en",
         "Status": "TRAINED",
         "SubmitTime": "2023-06-13T19:04:15.735000+00:00",
@@ -1200,7 +1201,7 @@ Output:
                 "HammingLoss": 0.0144
             }
         },
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
         "Mode": "MULTI_CLASS"
     }
 }
@@ -1227,18 +1228,18 @@ Output:
 {
     "DominantLanguageDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "languageanalysis1",
         "JobStatus": "IN_PROGRESS",
         "SubmitTime": "2023-06-09T18:10:38.037000+00:00",
         "InputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket",
+            "S3Uri": "s3://amzn-s3-demo-bucket1",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-LANGUAGE-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-LANGUAGE-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
     }
 }
 ```
@@ -1256,17 +1257,17 @@ The following `describe-endpoint` example gets the properties of a model-specifi
 
 ```
 aws comprehend describe-endpoint \
-    --endpoint-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint}}
+    --endpoint-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint}}
 ```
 Output:
 
 ```
 {
     "EndpointProperties": {
-        "EndpointArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint,
+        "EndpointArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint",
         "Status": "IN_SERVICE",
-        "ModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier1",
-        "DesiredModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier1",
+        "ModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier1",
+        "DesiredModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier1",
         "DesiredInferenceUnits": 1,
         "CurrentInferenceUnits": 1,
         "CreationTime": "2023-06-13T20:32:54.526000+00:00",
@@ -1296,7 +1297,7 @@ Output:
 {
     "EntitiesDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "example-entity-detector",
         "JobStatus": "COMPLETED",
         "SubmitTime": "2023-06-08T21:30:15.323000+00:00",
@@ -1306,7 +1307,7 @@ Output:
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket/thefolder/111122223333-NER-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket/thefolder/123456789012-NER-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
         "LanguageCode": "en",
         "DataAccessRoleArn": "arn:aws:iam::12345678012:role/service-role/AmazonComprehendServiceRole-example-role"
@@ -1327,14 +1328,14 @@ The following `describe-entity-recognizer` example gets the properties of a cust
 
 ```
 aws comprehend describe-entity-recognizer \
-    --entity-recognizer-arn {{arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/business-recongizer-1/version/1}}
+    --entity-recognizer-arn {{arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/business-recongizer-1/version/1}}
 ```
 Output:
 
 ```
 {
     "EntityRecognizerProperties": {
-        "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/business-recongizer-1/version/1",
+        "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/business-recongizer-1/version/1",
         "LanguageCode": "en",
         "Status": "TRAINED",
         "SubmitTime": "2023-06-14T20:44:59.631000+00:00",
@@ -1376,7 +1377,7 @@ Output:
                 }
             ]
         },
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
         "VersionName": "1"
     }
 }
@@ -1403,19 +1404,19 @@ Output:
 {
     "EventsDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:events-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:events-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "events_job_1",
         "JobStatus": "IN_PROGRESS",
         "SubmitTime": "2023-06-12T18:45:56.054000+00:00",
         "InputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket/EventsData",
+            "S3Uri": "s3://amzn-s3-demo-bucket1/EventsData",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-EVENTS-123456abcdeb0e11022f22a11EXAMPLE/output/"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-EVENTS-123456abcdeb0e11022f22a11EXAMPLE/output/"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
         "TargetEventTypes": [
             "BANKRUPTCY",
             "EMPLOYMENT",
@@ -1440,7 +1441,7 @@ The following `describe-flywheel-iteration` example gets the properties of a fly
 
 ```
 aws comprehend describe-flywheel-iteration \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel}} \
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel}} \
     --flywheel-iteration-id {{20232222AEXAMPLE}}
 ```
 Output:
@@ -1448,27 +1449,27 @@ Output:
 ```
 {
     "FlywheelIterationProperties": {
-        "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity",
+        "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity",
         "FlywheelIterationId": "20232222AEXAMPLE",
         "CreationTime": "2023-06-16T21:10:26.385000+00:00",
         "EndTime": "2023-06-16T23:33:16.827000+00:00",
         "Status": "COMPLETED",
         "Message": "FULL_ITERATION: Flywheel iteration performed all functions successfully.",
-        "EvaluatedModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1",
+        "EvaluatedModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1",
         "EvaluatedModelMetrics": {
             "AverageF1Score": 0.7742663922375772,
             "AveragePrecision": 0.8287636394041166,
             "AverageRecall": 0.7427084833645399,
             "AverageAccuracy": 0.8795394154118689
         },
-        "TrainedModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/Comprehend-Generated-v1-bb52d585",
+        "TrainedModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/Comprehend-Generated-v1-bb52d585",
         "TrainedModelMetrics": {
             "AverageF1Score": 0.9767700253081214,
             "AveragePrecision": 0.9767700253081214,
             "AverageRecall": 0.9767700253081214,
             "AverageAccuracy": 0.9858281665190434
         },
-        "EvaluationManifestS3Prefix": "s3://amzn-s3-demo-destination-bucket/flywheel-entity/schemaVersion=1/20230616T200543Z/evaluation/20230616T211026Z/"
+        "EvaluationManifestS3Prefix": "s3://amzn-s3-demo-bucket/flywheel-entity/schemaVersion=1/20230616T200543Z/evaluation/20230616T211026Z/"
     }
 }
 ```
@@ -1486,16 +1487,16 @@ The following `describe-flywheel` example gets the properties of a flywheel. In 
 
 ```
 aws comprehend describe-flywheel \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel}}
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel}}
 ```
 Output:
 
 ```
 {
     "FlywheelProperties": {
-        "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel",
-        "ActiveModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-model/version/1",
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+        "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel",
+        "ActiveModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-model/version/1",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
         "TaskConfig": {
             "LanguageCode": "en",
             "DocumentClassificationConfig": {
@@ -1515,7 +1516,7 @@ Output:
     }
 }
 ```
-For more information, see [Flywheel Overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in *Amazon Comprehend Developer Guide*.
+For more information, see [Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [DescribeFlywheel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/describe-flywheel.html) in *AWS CLI Command Reference*.
 
 ### `describe-key-phrases-detection-job`
@@ -1537,20 +1538,20 @@ Output:
 {
     "KeyPhrasesDetectionJobProperties": {
         "JobId": "69aa080c00fc68934a6a98f10EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:key-phrases-detection-job/69aa080c00fc68934a6a98f10EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:key-phrases-detection-job/69aa080c00fc68934a6a98f10EXAMPLE",
         "JobName": "example-key-phrases-detection-job",
         "JobStatus": "COMPLETED",
         "SubmitTime": 1686606439.177,
         "EndTime": 1686606806.157,
         "InputDataConfig": {
-            "S3Uri": "s3://dereksbucket1001/EventsData/",
+            "S3Uri": "s3://amzn-s3-demo-bucket1/EventsData/",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://dereksbucket1002/testfolder/111122223333-KP-69aa080c00fc68934a6a98f10EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-KP-69aa080c00fc68934a6a98f10EXAMPLE/output/output.tar.gz"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-testrole"
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-testrole"
     }
 }
 ```
@@ -1576,7 +1577,7 @@ Output:
 {
     "PiiEntitiesDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:pii-entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:pii-entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "example-pii-entities-job",
         "JobStatus": "IN_PROGRESS",
         "SubmitTime": "2023-06-08T21:30:15.323000+00:00",
@@ -1586,7 +1587,7 @@ Output:
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket/thefolder/111122223333-NER-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket/thefolder/123456789012-NER-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
         "LanguageCode": "en",
         "DataAccessRoleArn": "arn:aws:iam::12345678012:role/service-role/AmazonComprehendServiceRole-example-role"
@@ -1607,13 +1608,13 @@ The following `describe-resource-policy` example gets the properties of a resour
 
 ```
 aws comprehend describe-resource-policy \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1}}
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789111:document-classifier/example-classifier/version/1}}
 ```
 Output:
 
 ```
 {
-    "ResourcePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::444455556666:root\"},\"Action\":\"comprehend:ImportModel\",\"Resource\":\"*\"}]}",
+    "ResourcePolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789222:root\"},\"Action\":\"comprehend:ImportModel\",\"Resource\":\"*\"}]}",
     "CreationTime": "2023-06-19T18:44:26.028000+00:00",
     "LastModifiedTime": "2023-06-19T18:53:02.002000+00:00",
     "PolicyRevisionId": "baa675d069d07afaa2aa3106ae280f61"
@@ -1641,19 +1642,19 @@ Output:
 {
     "SentimentDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "movie_review_analysis",
         "JobStatus": "IN_PROGRESS",
         "SubmitTime": "2023-06-09T23:16:15.956000+00:00",
         "InputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket/MovieData",
+            "S3Uri": "s3://amzn-s3-demo-bucket1/MovieData",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole"
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-servicerole"
     }
 }
 ```
@@ -1679,19 +1680,19 @@ Output:
 {
     "TargetedSentimentDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:targeted-sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:targeted-sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "movie_review_analysis",
         "JobStatus": "IN_PROGRESS",
         "SubmitTime": "2023-06-09T23:16:15.956000+00:00",
         "InputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket/MovieData",
+            "S3Uri": "s3://amzn-s3-demo-bucket1/MovieData",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole"
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-servicerole"
     }
 }
 ```
@@ -1717,19 +1718,19 @@ Output:
 {
     "TopicsDetectionJobProperties": {
         "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:topics-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:123456789012:topics-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
         "JobName": "example_topics_detection",
         "JobStatus": "IN_PROGRESS",
         "SubmitTime": "2023-06-09T18:44:43.414000+00:00",
         "InputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-bucket",
+            "S3Uri": "s3://amzn-s3-demo-bucket1",
             "InputFormat": "ONE_DOC_PER_LINE"
         },
         "OutputDataConfig": {
-            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TOPICS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+            "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TOPICS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
         },
         "NumberOfTopics": 10,
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-examplerole"
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-examplerole"
     }
 }
 ```
@@ -1743,7 +1744,7 @@ The following code example shows how to use `detect-dominant-language`.
 
 **AWS CLI**
 **To detect the dominant language of input text**
-The following `detect-dominant-language` analyzes the input text and identifies the dominant language. The pre-trained model's confidence score is also output.
+The following `detect-dominant-language` example analyzes the input text and identifies the dominant language. The pre-trained model's confidence score is also output.
 
 ```
 aws comprehend detect-dominant-language \
@@ -2115,7 +2116,7 @@ Output:
     }
 }
 ```
-For more information, see [Sentiment](https://docs.aws.amazon.com/comprehend/latest/dg/how-sentiment.html) in the *Amazon Comprehend Developer Guide*
+For more information, see [Sentiment](https://docs.aws.amazon.com/comprehend/latest/dg/how-sentiment.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [DetectSentiment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/detect-sentiment.html) in *AWS CLI Command Reference*.
 
 ### `detect-syntax`
@@ -2286,7 +2287,6 @@ Output:
             ],
             "Mentions": [
                 {
-                {
                     "Score": 0.9664419889450073,
                     "GroupScore": 1.0,
                     "Text": "August",
@@ -2342,17 +2342,17 @@ The following code example shows how to use `import-model`.
 
 **AWS CLI**
 **To import a model**
-The following `import-model` example imports a model from a different AWS account. The document classifier model in account `444455556666` has a resource-based policy allowing account `111122223333` to import the model.
+The following `import-model` example imports a model from a different AWS account. The document classifier model in account `123456789222` has a resource-based policy allowing account `123456789111` to import the model.
 
 ```
 aws comprehend import-model \
-    --source-model-arn {{arn:aws:comprehend:us-west-2:444455556666:document-classifier/example-classifier}}
+    --source-model-arn {{arn:aws:comprehend:us-west-2:123456789222:document-classifier/example-classifier}}
 ```
 Output:
 
 ```
 {
-    "ModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier"
+    "ModelArn": "arn:aws:comprehend:us-west-2:123456789111:document-classifier/example-classifier"
 }
 ```
 For more information, see [Copying custom models between AWS accounts](https://docs.aws.amazon.com/comprehend/latest/dg/custom-copy.html) in the *Amazon Comprehend Developer Guide*.
@@ -2369,7 +2369,7 @@ The following `list-datasets` example lists all datasets associated with a flywh
 
 ```
 aws comprehend list-datasets \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity}}
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity}}
 ```
 Output:
 
@@ -2377,7 +2377,7 @@ Output:
 {
     "DatasetPropertiesList": [
         {
-            "DatasetArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity/dataset/example-dataset-1",
+            "DatasetArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity/dataset/example-dataset-1",
             "DatasetName": "example-dataset-1",
             "DatasetType": "TRAIN",
             "DatasetS3Uri": "s3://amzn-s3-demo-bucket/flywheel-entity/schemaVersion=1/20230616T200543Z/datasets/example-dataset-1/20230616T203710Z/",
@@ -2385,7 +2385,7 @@ Output:
             "CreationTime": "2023-06-16T20:37:10.400000+00:00"
         },
         {
-            "DatasetArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity/dataset/example-dataset-2",
+            "DatasetArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity/dataset/example-dataset-2",
             "DatasetName": "example-dataset-2",
             "DatasetType": "TRAIN",
             "DatasetS3Uri": "s3://amzn-s3-demo-bucket/flywheel-entity/schemaVersion=1/20230616T200543Z/datasets/example-dataset-2/20230616T200607Z/",
@@ -2397,7 +2397,7 @@ Output:
     ]
 }
 ```
-For more information, see [Flywheel Overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in *Amazon Comprehend Developer Guide*.
+For more information, see [Flywheel overview](https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [ListDatasets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/list-datasets.html) in *AWS CLI Command Reference*.
 
 ### `list-document-classification-jobs`
@@ -2426,11 +2426,11 @@ Output:
             "EndTime": "2023-06-14T17:15:58.582000+00:00",
             "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:1234567890101:document-classifier/mymodel/version/12",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/jobdata/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/jobdata/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/1234567890101-CLN-e758dd56b824aa717ceab551f11749fb/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/1234567890101-CLN-e758dd56b824aa717ceab551f11749fb/output/output.tar.gz"
             },
             "DataAccessRoleArn": "arn:aws:iam::1234567890101:role/service-role/AmazonComprehendServiceRole-example-role"
         },
@@ -2443,11 +2443,11 @@ Output:
             "EndTime": "2023-06-14T17:28:46.107000+00:00",
             "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:1234567890101:document-classifier/mymodel/version/12",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/jobdata/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/jobdata/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/1234567890101-CLN-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/1234567890101-CLN-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
             },
             "DataAccessRoleArn": "arn:aws:iam::1234567890101:role/service-role/AmazonComprehendServiceRole-example-role"
         }
@@ -2512,7 +2512,7 @@ Output:
 {
     "DocumentClassifierPropertiesList": [
         {
-            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier1",
+            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier1",
             "LanguageCode": "en",
             "Status": "TRAINED",
             "SubmitTime": "2023-06-13T19:04:15.735000+00:00",
@@ -2539,11 +2539,11 @@ Output:
                     "HammingLoss": 0.0144
                 }
             },
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-testorle",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-testorle",
             "Mode": "MULTI_CLASS"
         },
         {
-            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier2",
+            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier2",
             "LanguageCode": "en",
             "Status": "TRAINING",
             "SubmitTime": "2023-06-13T21:20:28.690000+00:00",
@@ -2552,7 +2552,7 @@ Output:
                 "S3Uri": "s3://amzn-s3-demo-bucket/trainingdata"
             },
             "OutputDataConfig": {},
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-testorle",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-testorle",
             "Mode": "MULTI_CLASS"
         }
     ]
@@ -2580,35 +2580,35 @@ Output:
     "DominantLanguageDetectionJobPropertiesList": [
         {
             "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
             "JobName": "languageanalysis1",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T18:10:38.037000+00:00",
             "EndTime": "2023-06-09T18:18:45.498000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket",
+                "S3Uri": "s3://amzn-s3-demo-bucket1",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-LANGUAGE-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-LANGUAGE-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
             },
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
             "JobName": "languageanalysis2",
             "JobStatus": "STOPPED",
             "SubmitTime": "2023-06-09T18:16:33.690000+00:00",
             "EndTime": "2023-06-09T18:24:40.608000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket",
+                "S3Uri": "s3://amzn-s3-demo-bucket1",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-LANGUAGE-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-LANGUAGE-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
             },
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         }
     ]
 }
@@ -2634,20 +2634,20 @@ Output:
 {
     "EndpointPropertiesList": [
         {
-            "EndpointArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/ExampleClassifierEndpoint",
+            "EndpointArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/ExampleClassifierEndpoint",
             "Status": "IN_SERVICE",
-            "ModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier1",
-            "DesiredModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier1",
+            "ModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier1",
+            "DesiredModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier1",
             "DesiredInferenceUnits": 1,
             "CurrentInferenceUnits": 1,
             "CreationTime": "2023-06-13T20:32:54.526000+00:00",
             "LastModifiedTime": "2023-06-13T20:32:54.526000+00:00"
         },
         {
-            "EndpointArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/ExampleClassifierEndpoint2",
+            "EndpointArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/ExampleClassifierEndpoint2",
             "Status": "IN_SERVICE",
-            "ModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier2",
-            "DesiredModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier2",
+            "ModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier2",
+            "DesiredModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier2",
             "DesiredInferenceUnits": 1,
             "CurrentInferenceUnits": 1,
             "CreationTime": "2023-06-13T20:32:54.526000+00:00",
@@ -2678,54 +2678,54 @@ Output:
     "EntitiesDetectionJobPropertiesList": [
         {
             "JobId": "468af39c28ab45b83eb0c4ab9EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/468af39c28ab45b83eb0c4ab9EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:entities-detection-job/468af39c28ab45b83eb0c4ab9EXAMPLE",
             "JobName": "example-entities-detection",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-08T20:57:46.476000+00:00",
             "EndTime": "2023-06-08T21:05:53.718000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-NER-468af39c28ab45b83eb0c4ab9EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/123456789012-NER-468af39c28ab45b83eb0c4ab9EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "809691caeaab0e71406f80a28EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/809691caeaab0e71406f80a28EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:entities-detection-job/809691caeaab0e71406f80a28EXAMPLE",
             "JobName": "example-entities-detection-2",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-08T21:30:15.323000+00:00",
             "EndTime": "2023-06-08T21:40:23.509000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-NER-809691caeaab0e71406f80a28EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/123456789012-NER-809691caeaab0e71406f80a28EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "e00597c36b448b91d70dea165EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/e00597c36b448b91d70dea165EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:entities-detection-job/e00597c36b448b91d70dea165EXAMPLE",
             "JobName": "example-entities-detection-3",
             "JobStatus": "STOPPED",
             "SubmitTime": "2023-06-08T22:19:28.528000+00:00",
             "EndTime": "2023-06-08T22:27:33.991000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-NER-e00597c36b448b91d70dea165EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/123456789012-NER-e00597c36b448b91d70dea165EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         }
     ]
 }
@@ -2761,7 +2761,7 @@ Output:
             "RecognizerName": "entity-recognizer-2",
             "NumberOfVersions": 1,
             "LatestVersionCreatedAt": "2023-06-14T22:55:27.805000+00:00",
-            "LatestVersionName": "2"
+            "LatestVersionName": "2",
             "LatestVersionStatus": "TRAINED"
         },
         {
@@ -2795,7 +2795,7 @@ Output:
 {
     "EntityRecognizerPropertiesList": [
         {
-            "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/EntityRecognizer/version/1",
+            "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/EntityRecognizer/version/1",
             "LanguageCode": "en",
             "Status": "TRAINED",
             "SubmitTime": "2023-06-14T20:44:59.631000+00:00",
@@ -2837,11 +2837,11 @@ Output:
                     }
                 ]
             },
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-servicerole",
             "VersionName": "1"
         },
         {
-            "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/entityrecognizer3",
+            "EntityRecognizerArn": "arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/entityrecognizer3",
             "LanguageCode": "en",
             "Status": "TRAINED",
             "SubmitTime": "2023-06-14T22:57:51.056000+00:00",
@@ -2883,7 +2883,7 @@ Output:
                     }
                 ]
             },
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-servicerole"
         }
     ]
 }
@@ -2916,11 +2916,11 @@ Output:
             "SubmitTime": "2023-06-12T19:14:57.751000+00:00",
             "EndTime": "2023-06-12T19:21:04.962000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-source-bucket/EventsData/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/EventsData/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/1111222233333-EVENTS-aa9593f9203e84f3ef032ce18EXAMPLE/output/"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/1111222233333-EVENTS-aa9593f9203e84f3ef032ce18EXAMPLE/output/"
             },
             "LanguageCode": "en",
             "DataAccessRoleArn": "arn:aws:iam::1111222233333:role/service-role/AmazonComprehendServiceRole-example-role",
@@ -2940,11 +2940,11 @@ Output:
             "SubmitTime": "2023-06-12T19:55:43.702000+00:00",
             "EndTime": "2023-06-12T20:03:49.893000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-source-bucket/EventsData/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/EventsData/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/1111222233333-EVENTS-4a990a2f7e82adfca6e171135EXAMPLE/output/"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/1111222233333-EVENTS-4a990a2f7e82adfca6e171135EXAMPLE/output/"
             },
             "LanguageCode": "en",
             "DataAccessRoleArn": "arn:aws:iam::1111222233333:role/service-role/AmazonComprehendServiceRole-example-role",
@@ -2972,8 +2972,8 @@ The following code example shows how to use `list-flywheel-iteration-history`.
 The following `list-flywheel-iteration-history` example lists all iterations of a flywheel.
 
 ```
-aws comprehend list-flywheel-iteration-history
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel}}
+aws comprehend list-flywheel-iteration-history \
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel}}
 ```
 Output:
 
@@ -2981,15 +2981,14 @@ Output:
 {
     "FlywheelIterationPropertiesList": [
         {
-            "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel",
+            "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel",
             "FlywheelIterationId": "20230619TEXAMPLE",
             "CreationTime": "2023-06-19T04:00:32.594000+00:00",
             "EndTime": "2023-06-19T04:00:49.248000+00:00",
             "Status": "COMPLETED",
             "Message": "FULL_ITERATION: Flywheel iteration performed all functions successfully.",
-            "EvaluatedModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1",
+            "EvaluatedModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1",
             "EvaluatedModelMetrics": {
-                "AverageF1Score": 0.7742663922375772,
                 "AverageF1Score": 0.9876464664646313,
                 "AveragePrecision": 0.9800000253081214,
                 "AverageRecall": 0.9445600253081214,
@@ -2998,15 +2997,14 @@ Output:
             "EvaluationManifestS3Prefix": "s3://amzn-s3-demo-bucket/example-flywheel/schemaVersion=1/20230619TEXAMPLE/evaluation/20230619TEXAMPLE/"
         },
         {
-            "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel-2",
+            "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel-2",
             "FlywheelIterationId": "20230616TEXAMPLE",
             "CreationTime": "2023-06-16T21:10:26.385000+00:00",
             "EndTime": "2023-06-16T23:33:16.827000+00:00",
             "Status": "COMPLETED",
             "Message": "FULL_ITERATION: Flywheel iteration performed all functions successfully.",
-            "EvaluatedModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/spamvshamclassify/version/1",
+            "EvaluatedModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/spamvshamclassify/version/1",
             "EvaluatedModelMetrics": {
-                "AverageF1Score": 0.7742663922375772,
                 "AverageF1Score": 0.9767700253081214,
                 "AveragePrecision": 0.9767700253081214,
                 "AverageRecall": 0.9767700253081214,
@@ -3038,8 +3036,8 @@ Output:
 {
     "FlywheelSummaryList": [
         {
-            "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel-1",
-            "ActiveModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier/version/1",
+            "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel-1",
+            "ActiveModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier/version/1",
             "DataLakeS3Uri": "s3://amzn-s3-demo-bucket/example-flywheel-1/schemaVersion=1/20230616T200543Z/",
             "Status": "ACTIVE",
             "ModelType": "DOCUMENT_CLASSIFIER",
@@ -3048,8 +3046,8 @@ Output:
             "LatestFlywheelIteration": "20230619T040032Z"
         },
         {
-            "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel-2",
-            "ActiveModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier2/version/1",
+            "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel-2",
+            "ActiveModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier2/version/1",
             "DataLakeS3Uri": "s3://amzn-s3-demo-bucket/example-flywheel-2/schemaVersion=1/20220616T200543Z/",
             "Status": "ACTIVE",
             "ModelType": "DOCUMENT_CLASSIFIER",
@@ -3082,55 +3080,55 @@ Output:
     "KeyPhrasesDetectionJobPropertiesList": [
         {
             "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:key-phrases-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:key-phrases-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
             "JobName": "keyphrasesanalysis1",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-08T22:31:43.767000+00:00",
             "EndTime": "2023-06-08T22:39:52.565000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-source-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket2/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-KP-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket3/testfolder/123456789012-KP-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "123456abcdeb0e11022f22a33EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:key-phrases-detection-job/123456abcdeb0e11022f22a33EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:key-phrases-detection-job/123456abcdeb0e11022f22a33EXAMPLE",
             "JobName": "keyphrasesanalysis2",
             "JobStatus": "STOPPED",
             "SubmitTime": "2023-06-08T22:57:52.154000+00:00",
             "EndTime": "2023-06-08T23:05:48.385000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-KP-123456abcdeb0e11022f22a33EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket3/testfolder/123456789012-KP-123456abcdeb0e11022f22a33EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "123456abcdeb0e11022f22a44EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:key-phrases-detection-job/123456abcdeb0e11022f22a44EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:key-phrases-detection-job/123456abcdeb0e11022f22a44EXAMPLE",
             "JobName": "keyphrasesanalysis3",
             "JobStatus": "FAILED",
             "Message": "NO_READ_ACCESS_TO_INPUT: The provided data access role does not have proper access to the input data.",
             "SubmitTime": "2023-06-09T16:47:04.029000+00:00",
             "EndTime": "2023-06-09T16:47:18.413000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket",
+                "S3Uri": "s3://amzn-s3-demo-bucket1",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-KP-123456abcdeb0e11022f22a44EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket3/testfolder/123456789012-KP-123456abcdeb0e11022f22a44EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         }
     ]
 }
@@ -3157,38 +3155,38 @@ Output:
     "PiiEntitiesDetectionJobPropertiesList": [
         {
             "JobId": "6f9db0c42d0c810e814670ee4EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:pii-entities-detection-job/6f9db0c42d0c810e814670ee4EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:pii-entities-detection-job/6f9db0c42d0c810e814670ee4EXAMPLE",
             "JobName": "example-pii-detection-job",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T21:02:46.241000+00:00",
             "EndTime": "2023-06-09T21:12:52.602000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-source-bucket/111122223333-PII-6f9db0c42d0c810e814670ee4EXAMPLE/output/"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/123456789012-PII-6f9db0c42d0c810e814670ee4EXAMPLE/output/"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
             "Mode": "ONLY_OFFSETS"
         },
         {
             "JobId": "d927562638cfa739331a99b3cEXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:pii-entities-detection-job/d927562638cfa739331a99b3cEXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:pii-entities-detection-job/d927562638cfa739331a99b3cEXAMPLE",
             "JobName": "example-pii-detection-job-2",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T21:20:58.211000+00:00",
             "EndTime": "2023-06-09T21:31:06.027000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/AsyncBatchJobs/",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/AsyncBatchJobs/",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-PII-d927562638cfa739331a99b3cEXAMPLE/output/"
+                "S3Uri": "s3://amzn-s3-demo-bucket3/thefolder/123456789012-PII-d927562638cfa739331a99b3cEXAMPLE/output/"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
             "Mode": "ONLY_OFFSETS"
         }
     ]
@@ -3216,37 +3214,37 @@ Output:
     "SentimentDetectionJobPropertiesList": [
         {
             "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
             "JobName": "example-sentiment-detection-job",
             "JobStatus": "IN_PROGRESS",
             "SubmitTime": "2023-06-09T22:42:20.545000+00:00",
             "EndTime": "2023-06-09T22:52:27.416000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/MovieData",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/MovieData",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "123456abcdeb0e11022f22a1EXAMPLE2",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:sentiment-detection-job/123456abcdeb0e11022f22a1EXAMPLE2",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:sentiment-detection-job/123456abcdeb0e11022f22a1EXAMPLE2",
             "JobName": "example-sentiment-detection-job-2",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T23:16:15.956000+00:00",
             "EndTime": "2023-06-09T23:26:00.168000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/MovieData2",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/MovieData2",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TS-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TS-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         }
     ]
 }
@@ -3265,13 +3263,13 @@ The following `list-tags-for-resource` example lists the tags for an Amazon Comp
 
 ```
 aws comprehend list-tags-for-resource \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1}}
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1}}
 ```
 Output:
 
 ```
 {
-    "ResourceArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1",
+    "ResourceArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1",
     "Tags": [
         {
             "Key": "Department",
@@ -3306,37 +3304,37 @@ Output:
     "TargetedSentimentDetectionJobPropertiesList": [
         {
             "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:targeted-sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:targeted-sentiment-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
             "JobName": "example-targeted-sentiment-detection-job",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T22:42:20.545000+00:00",
             "EndTime": "2023-06-09T22:52:27.416000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/MovieData",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/MovieData",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-IOrole"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-IOrole"
         },
         {
             "JobId": "123456abcdeb0e11022f22a1EXAMPLE2",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:targeted-sentiment-detection-job/123456abcdeb0e11022f22a1EXAMPLE2",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:targeted-sentiment-detection-job/123456abcdeb0e11022f22a1EXAMPLE2",
             "JobName": "example-targeted-sentiment-detection-job-2",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T23:16:15.956000+00:00",
             "EndTime": "2023-06-09T23:26:00.168000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket/MovieData2",
+                "S3Uri": "s3://amzn-s3-demo-bucket1/MovieData2",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-TS-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/testfolder/123456789012-TS-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         }
     ]
 }
@@ -3363,53 +3361,53 @@ Output:
     "TopicsDetectionJobPropertiesList": [
         {
             "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:topics-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
-            "JobName" "topic-analysis-1"
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:topics-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+            "JobName": "topic-analysis-1",
             "JobStatus": "IN_PROGRESS",
             "SubmitTime": "2023-06-09T18:40:35.384000+00:00",
             "EndTime": "2023-06-09T18:46:41.936000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket",
+                "S3Uri": "s3://amzn-s3-demo-bucket1",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-TOPICS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/123456789012-TOPICS-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
             },
             "NumberOfTopics": 10,
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "123456abcdeb0e11022f22a1EXAMPLE2",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:topics-detection-job/123456abcdeb0e11022f22a1EXAMPLE2",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:topics-detection-job/123456abcdeb0e11022f22a1EXAMPLE2",
             "JobName": "topic-analysis-2",
             "JobStatus": "COMPLETED",
             "SubmitTime": "2023-06-09T18:44:43.414000+00:00",
             "EndTime": "2023-06-09T18:50:50.872000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket",
+                "S3Uri": "s3://amzn-s3-demo-bucket1",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-TOPICS-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/123456789012-TOPICS-123456abcdeb0e11022f22a1EXAMPLE2/output/output.tar.gz"
             },
             "NumberOfTopics": 10,
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         },
         {
             "JobId": "123456abcdeb0e11022f22a1EXAMPLE3",
-            "JobArn": "arn:aws:comprehend:us-west-2:111122223333:topics-detection-job/123456abcdeb0e11022f22a1EXAMPLE3",
+            "JobArn": "arn:aws:comprehend:us-west-2:123456789012:topics-detection-job/123456abcdeb0e11022f22a1EXAMPLE3",
             "JobName": "topic-analysis-2",
             "JobStatus": "IN_PROGRESS",
             "SubmitTime": "2023-06-09T18:50:56.737000+00:00",
             "InputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-bucket",
+                "S3Uri": "s3://amzn-s3-demo-bucket1",
                 "InputFormat": "ONE_DOC_PER_LINE"
             },
             "OutputDataConfig": {
-                "S3Uri": "s3://amzn-s3-demo-destination-bucket/thefolder/111122223333-TOPICS-123456abcdeb0e11022f22a1EXAMPLE3/output/output.tar.gz"
+                "S3Uri": "s3://amzn-s3-demo-bucket2/thefolder/123456789012-TOPICS-123456abcdeb0e11022f22a1EXAMPLE3/output/output.tar.gz"
             },
             "NumberOfTopics": 10,
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"
         }
     ]
 }
@@ -3424,12 +3422,12 @@ The following code example shows how to use `put-resource-policy`.
 
 **AWS CLI**
 **To attach a resource-based policy**
-The following `put-resource-policy` example attaches a resource-based policy to a model so that can be imported by another AWS account. The policy is attached to the model in account `111122223333` and allows account `444455556666` import the model.
+The following `put-resource-policy` example attaches a resource-based policy to a model so that can be imported by another AWS account. The policy is attached to the model in account `123456789111` and allows account `123456789222` import the model.
 
 ```
 aws comprehend put-resource-policy \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1}} \
-    --resource-policy '{{{"Version":"2012-10-17",		 	 	 "Statement":[{"Effect":"Allow","Action":"comprehend:ImportModel","Resource":"*","Principal":{"AWS":["arn:aws:iam::444455556666:root"]}}]}}}'
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789111:document-classifier/example-classifier/version/1}} \
+    --resource-policy '{{{"Version":"2012-10-17",		 	 	 "Statement":[{"Effect":"Allow","Action":"comprehend:ImportModel","Resource":"*","Principal":{"AWS":["arn:aws:iam::123456789222:root"]}}]}}}'
 ```
 Output:
 
@@ -3453,10 +3451,10 @@ The following `start-document-classification-job` example starts a document clas
 ```
 aws comprehend start-document-classification-job \
     --job-name {{exampleclassificationjob}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket-INPUT/jobdata/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
-    --document-classifier-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/mymodel/version/12}}
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1INPUT/jobdata/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --document-classifier-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/mymodel/version/12}}
 ```
 Contents of `SampleSMStext1.txt`:
 
@@ -3478,7 +3476,7 @@ Output:
 ```
 {
     "JobId": "e758dd56b824aa717ceab551fEXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:document-classification-job/e758dd56b824aa717ceab551fEXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:document-classification-job/e758dd56b824aa717ceab551fEXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
@@ -3505,12 +3503,12 @@ The following `start-dominant-language-detection-job` example starts an asynchro
 aws comprehend start-dominant-language-detection-job \
     --job-name {{example_language_analysis_job}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
     --language-code {{en}}
 ```
-Contents of Sampletext1.txt:
+Contents of `Sampletext1.txt`:
 
 ```
 "Physics is the natural science that involves the study of matter and its motion and behavior through space and time, along with related concepts such as energy and force."
@@ -3520,7 +3518,7 @@ Output:
 ```
 {
     "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:dominant-language-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
@@ -3545,9 +3543,9 @@ The following `start-entities-detection-job` example starts an asynchronous enti
 aws comprehend start-entities-detection-job \
     --job-name {{entitiestest}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
     --language-code {{en}}
 ```
 Contents of `Sampletext1.txt`:
@@ -3570,11 +3568,11 @@ Output:
 ```
 {
     "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `output.txt` with line indents for readability:
+Contents of `output.txt`:
 
 ```
 {
@@ -3708,11 +3706,11 @@ The following `start-entities-detection-job` example starts an asynchronous cust
 ```
 aws comprehend start-entities-detection-job \
     --job-name {{customentitiestest}} \
-    --entity-recognizer-arn {{"arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/entityrecognizer"}} \
+    --entity-recognizer-arn {{"arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/entityrecognizer"}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/jobdata/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{"arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-IOrole"}}
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/jobdata/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{"arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-IOrole"}}
 ```
 Contents of `SampleFeedback1.txt`:
 
@@ -3734,11 +3732,11 @@ Output:
 ```
 {
     "JobId": "019ea9edac758806850fa8a79ff83021",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:entities-detection-job/019ea9edac758806850fa8a79ff83021",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:entities-detection-job/019ea9edac758806850fa8a79ff83021",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `output.txt` with line indents for readability:
+Contents of `output.txt`:
 
 ```
 {
@@ -3796,9 +3794,9 @@ The following `start-events-detection-job` example starts an asynchronous events
 ```
 aws comprehend start-events-detection-job \
     --job-name {{events-detection-1}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/EventsData"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole}} \
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/EventsData"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-servicerole}} \
     --language-code {{en}} \
     --target-event-types {{"BANKRUPTCY"}} {{"EMPLOYMENT"}} {{"CORPORATE_ACQUISITION"}} {{"CORPORATE_MERGER"}} {{"INVESTMENT_GENERAL"}}
 ```
@@ -3822,11 +3820,11 @@ Output:
 ```
 {
     "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:events-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:events-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `SampleText1.txt.out` with line indents for readability:
+Contents of `SampleText1.txt.out`:
 
 ```
 {
@@ -4130,13 +4128,13 @@ The following `start-flywheel-iteration` example starts a flywheel iteration. Th
 
 ```
 aws comprehend start-flywheel-iteration \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel}}
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel}}
 ```
 Output:
 
 ```
 {
-    "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel",
+    "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel",
     "FlywheelIterationId": "12345123TEXAMPLE"
 }
 ```
@@ -4156,9 +4154,9 @@ The following `start-key-phrases-detection-job` example starts an asynchronous k
 aws comprehend start-key-phrases-detection-job \
     --job-name {{keyphrasesanalysistest1}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{"arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role"}} \
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{"arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role"}} \
     --language-code {{en}}
 ```
 Contents of `Sampletext1.txt`:
@@ -4181,11 +4179,11 @@ Output:
 ```
 {
     "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:key-phrases-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:key-phrases-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `output.txt` with line indents for readability:
+Contents of `output.txt`:
 
 ```
 {
@@ -4355,9 +4353,9 @@ The following `start-pii-entities-detection-job` example starts an asynchronous 
 aws comprehend start-pii-entities-detection-job \
     --job-name {{entities_test}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
     --language-code {{en}} \
     --mode {{ONLY_OFFSETS}}
 ```
@@ -4381,11 +4379,11 @@ Output:
 ```
 {
     "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:pii-entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:pii-entities-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `SampleText1.txt.out` with line indents for readability:
+Contents of `SampleText1.txt.out`:
 
 ```
 {
@@ -4419,7 +4417,7 @@ Contents of `SampleText1.txt.out` with line indents for readability:
     "Line": 0
 }
 ```
-Contents of `SampleText2.txt.out` with line indents for readability:
+Contents of `SampleText2.txt.out`:
 
 ```
 {
@@ -4453,7 +4451,7 @@ Contents of `SampleText2.txt.out` with line indents for readability:
     "Line": 0
 }
 ```
-Contents of `SampleText3.txt.out` with line indents for readability:
+Contents of `SampleText3.txt.out`:
 
 ```
 {
@@ -4503,9 +4501,9 @@ The following `start-sentiment-detection-job` example starts an asynchronous sen
 aws comprehend start-sentiment-detection-job \
     --job-name {{example-sentiment-detection-job}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/MovieData"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}}
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/MovieData"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}}
 ```
 Contents of `SampleMovieReview1.txt`:
 
@@ -4527,11 +4525,11 @@ Output:
 ```
 {
     "JobId": "0b5001e25f62ebb40631a9a1a7fde7b3",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:sentiment-detection-job/0b5001e25f62ebb40631a9a1a7fde7b3",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:sentiment-detection-job/0b5001e25f62ebb40631a9a1a7fde7b3",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `output.txt` with line of indents for readability:
+Contents of `output.txt`:
 
 ```
 {
@@ -4585,9 +4583,9 @@ The following `start-targeted-sentiment-detection-job` example starts an asynchr
 aws comprehend start-targeted-sentiment-detection-job \
     --job-name {{targeted_movie_review_analysis1}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/MovieData"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}}
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/MovieData"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}}
 ```
 Contents of `SampleMovieReview1.txt`:
 
@@ -4609,11 +4607,11 @@ Output:
 ```
 {
     "JobId": "0b5001e25f62ebb40631a9a1a7fde7b3",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:targeted-sentiment-detection-job/0b5001e25f62ebb40631a9a1a7fde7b3",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:targeted-sentiment-detection-job/0b5001e25f62ebb40631a9a1a7fde7b3",
     "JobStatus": "SUBMITTED"
 }
 ```
-Contents of `SampleMovieReview1.txt.out` with line indents for readability:
+Contents of `SampleMovieReview1.txt.out`:
 
 ```
 {
@@ -4671,7 +4669,7 @@ Contents of `SampleMovieReview1.txt.out` with line indents for readability:
     "Line": 0
 }
 ```
-Contents of `SampleMovieReview2.txt.out` line indents for readability:
+Contents of `SampleMovieReview2.txt.out`:
 
 ```
 {
@@ -4823,7 +4821,7 @@ Contents of `SampleMovieReview2.txt.out` line indents for readability:
     "Line": 0
 }
 ```
-Contents of `SampleMovieReview3.txt.out` with line indents for readability:
+Contents of `SampleMovieReview3.txt.out`:
 
 ```
 {
@@ -4938,9 +4936,9 @@ The following `start-topics-detection-job` example starts an asynchronous topics
 aws comprehend start-topics-detection-job \
     --job-name {{example_topics_detection_job}} \
     --language-code {{en}} \
-    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket/"}} \
-    --output-data-config {{"S3Uri=s3://amzn-s3-demo-destination-bucket/testfolder/"}} \
-    --data-access-role-arn {{arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role}} \
+    --input-data-config {{"S3Uri=s3://amzn-s3-demo-bucket1/"}} \
+    --output-data-config {{"S3Uri=s3://amzn-s3-demo-bucket2/testfolder/"}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role}} \
     --language-code {{en}}
 ```
 Output:
@@ -4948,7 +4946,7 @@ Output:
 ```
 {
     "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
-    "JobArn": "arn:aws:comprehend:us-west-2:111122223333:key-phrases-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
+    "JobArn": "arn:aws:comprehend:us-west-2:123456789012:key-phrases-detection-job/123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "SUBMITTED"
 }
 ```
@@ -4972,7 +4970,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -4996,7 +4994,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -5020,7 +5018,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -5044,7 +5042,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -5068,7 +5066,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -5092,7 +5090,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -5116,7 +5114,7 @@ Output:
 
 ```
 {
-    "JobId": "123456abcdeb0e11022f22a11EXAMPLE,
+    "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
     "JobStatus": "STOP_REQUESTED"
 }
 ```
@@ -5133,8 +5131,8 @@ The following code example shows how to use `stop-training-document-classifier`.
 The following `stop-training-document-classifier` example stops the training of a document classifier model while in-progress.
 
 ```
-aws comprehend stop-training-document-classifier
-    --document-classifier-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier}}
+aws comprehend stop-training-document-classifier \
+    --document-classifier-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier}}
 ```
 This command produces no output.
 For more information, see [Creating and managing custom models](https://docs.aws.amazon.com/comprehend/latest/dg/manage-models.html) in the *Amazon Comprehend Developer Guide*.
@@ -5150,8 +5148,8 @@ The following code example shows how to use `stop-training-entity-recognizer`.
 The following `stop-training-entity-recognizer` example stops the training of an entity recognizer model while in-progress.
 
 ```
-aws comprehend stop-training-entity-recognizer
-    --entity-recognizer-arn {{"arn:aws:comprehend:us-west-2:111122223333:entity-recognizer/examplerecognizer1"}}
+aws comprehend stop-training-entity-recognizer \
+    --entity-recognizer-arn {{"arn:aws:comprehend:us-west-2:123456789012:entity-recognizer/examplerecognizer1"}}
 ```
 This command produces no output.
 For more information, see [Creating and managing custom models](https://docs.aws.amazon.com/comprehend/latest/dg/manage-models.html) in the *Amazon Comprehend Developer Guide*.
@@ -5168,20 +5166,20 @@ The following `tag-resource` example adds a single tag to an Amazon Comprehend r
 
 ```
 aws comprehend tag-resource \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1}} \
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1}} \
     --tags {{Key=Location,Value=Seattle}}
 ```
-This command has no output.
+This command produces no output.
 For more information, see [Tagging your resources](https://docs.aws.amazon.com/comprehend/latest/dg/tagging.html) in the *Amazon Comprehend Developer Guide*.
 **Example 2: To add multiple tags to a resource**
 The following `tag-resource` example adds multiple tags to an Amazon Comprehend resource.
 
 ```
 aws comprehend tag-resource \
-    --resource-arn {{"arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1"}} \
+    --resource-arn {{"arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1"}} \
     --tags {{Key=location,Value=Seattle}} {{Key=Department,Value=Finance}}
 ```
-This command has no output.
+This command produces no output.
 For more information, see [Tagging your resources](https://docs.aws.amazon.com/comprehend/latest/dg/tagging.html) in the *Amazon Comprehend Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/tag-resource.html) in *AWS CLI Command Reference*.
 
@@ -5196,7 +5194,7 @@ The following `untag-resource` example removes a single tag from an Amazon Compr
 
 ```
 aws comprehend untag-resource \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1}}
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1}} \
     --tag-keys {{Location}}
 ```
 This command produces no output.
@@ -5206,7 +5204,7 @@ The following `untag-resource` example removes multiple tags from an Amazon Comp
 
 ```
 aws comprehend untag-resource \
-    --resource-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/1}}
+    --resource-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/1}} \
     --tag-keys {{Location}} {{Department}}
 ```
 This command produces no output.
@@ -5224,7 +5222,7 @@ The following `update-endpoint` example updates information about an endpoint. I
 
 ```
 aws comprehend update-endpoint \
-    --endpoint-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint}}
+    --endpoint-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint}} \
     --desired-inference-units {{2}}
 ```
 This command produces no output.
@@ -5234,8 +5232,8 @@ The following `update-endpoint` example updates information about an endpoint. I
 
 ```
 aws comprehend update-endpoint \
-    --endpoint-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier-endpoint/example-classifier-endpoint}}
-    --active-model-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier-new}}
+    --endpoint-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier-endpoint/example-classifier-endpoint}} \
+    --active-model-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier-new}}
 ```
 This command produces no output.
 For more information, see [Managing Amazon Comprehend endpoints](https://docs.aws.amazon.com/comprehend/latest/dg/manage-endpoints.html) in the *Amazon Comprehend Developer Guide*.
@@ -5252,17 +5250,17 @@ The following `update-flywheel` example updates a flywheel configuration. In thi
 
 ```
 aws comprehend update-flywheel \
-    --flywheel-arn {{arn:aws:comprehend:us-west-2:111122223333:flywheel/example-flywheel-1}} \
-    --active-model-arn {{arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/new-example-classifier-model}}
+    --flywheel-arn {{arn:aws:comprehend:us-west-2:123456789012:flywheel/example-flywheel-1}} \
+    --active-model-arn {{arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/new-example-classifier-model}}
 ```
 Output:
 
 ```
 {
     "FlywheelProperties": {
-        "FlywheelArn": "arn:aws:comprehend:us-west-2:111122223333:flywheel/flywheel-entity",
-        "ActiveModelArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/example-classifier/version/new-example-classifier-model",
-        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-example-role",
+        "FlywheelArn": "arn:aws:comprehend:us-west-2:123456789012:flywheel/flywheel-entity",
+        "ActiveModelArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/example-classifier/version/new-example-classifier-model",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-example-role",
         "TaskConfig": {
             "LanguageCode": "en",
             "DocumentClassificationConfig": {

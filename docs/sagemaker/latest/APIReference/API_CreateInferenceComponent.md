@@ -20,6 +20,7 @@ Creates an inference component, which is a SageMaker AI hosting object that you 
    "Specification": {
       "BaseInferenceComponentName": "{{string}}",
       "ComputeResourceRequirements": {
+         "AcceleratorPartitionType": "{{string}}",
          "MaxMemoryRequiredInMb": {{number}},
          "MinMemoryRequiredInMb": {{number}},
          "NumberOfAcceleratorDevicesRequired": {{number}},
@@ -61,6 +62,7 @@ Creates an inference component, which is a SageMaker AI hosting object that you 
       {
          "BaseInferenceComponentName": "{{string}}",
          "ComputeResourceRequirements": {
+            "AcceleratorPartitionType": "{{string}}",
             "MaxMemoryRequiredInMb": {{number}},
             "MinMemoryRequiredInMb": {{number}},
             "NumberOfAcceleratorDevicesRequired": {{number}},

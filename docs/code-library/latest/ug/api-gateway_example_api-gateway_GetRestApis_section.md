@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To get a list of REST APIs**
-Command:
+The following `get-rest-apis` example gets a list of REST APIs.
 
 ```
 aws apigateway get-rest-apis
@@ -36,6 +36,7 @@ Output:
     ]
 }
 ```
+For more information, see [API Gateway REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [GetRestApis](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigateway/get-rest-apis.html) in *AWS CLI Command Reference*.
 
 ------

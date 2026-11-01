@@ -41,7 +41,7 @@ Output:
 {
     "ApiId": "a1b2c3d4",
     "ApiMappingId": "0qzs2sy7bh",
-    "ApiMappingKey": "myApi"
+    "ApiMappingKey": "myApi",
     "Stage": "test"
 }
 ```
@@ -54,7 +54,7 @@ For more information, see [Setting up a regional custom domain name in API Gatew
 The following code example shows how to use `create-api`.
 
 **AWS CLI**
-**To create an HTTP API**
+**Example 1: To create an HTTP API**
 The following `create-api` example creates an HTTP API by using quick create. You can use quick create to create an API with an AWS Lambda or HTTP integration, a default catch-all route, and a default stage that is configured to automatically deploy changes. The following command uses quick create to create an HTTP API that integrates with a Lambda function.
 
 ```
@@ -77,7 +77,7 @@ Output:
 }
 ```
 For more information, see [Developing an HTTP API in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop.html) in the *Amazon API Gateway Developer Guide*.
-**To create a WebSocket API**
+**Example 2: To create a WebSocket API**
 The following `create-api` example creates a WebSocket API with the specified name.
 
 ```
@@ -207,7 +207,7 @@ For more information, see [Setting up a regional custom domain name in API Gatew
 The following code example shows how to use `create-integration`.
 
 **AWS CLI**
-**To create a WebSocket API integration**
+**Example 1: To create a WebSocket API integration**
 The following `create-integration` example creates a mock integration for a WebSocket API.
 
 ```
@@ -232,7 +232,7 @@ Output:
 }
 ```
 For more information, see [Set up a WebSocket API integration request in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-integration-requests.html) in the *Amazon API Gateway Developer Guide*.
-**To create an HTTP API integration**
+**Example 2: To create an HTTP API integration**
 The following `create-integration` example creates an AWS Lambda integration for an HTTP API.
 
 ```
@@ -264,7 +264,7 @@ For more information, see [Configuring integrations for HTTP APIs](https://docs.
 The following code example shows how to use `create-route`.
 
 **AWS CLI**
-**To create a $default route for a WebSocket or HTTP API**
+**Example 1: To create a $default route for a WebSocket or HTTP API**
 The following `create-route` example creates a `$default` route for a WebSocket or HTTP API.
 
 ```
@@ -282,8 +282,8 @@ Output:
     "RouteId": "1122334"
 }
 ```
-For more information, see [Working with routes for WebSocket APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-add-route.html) in the *Amazon API Gateway Developer Guide*
-**To create a route for an HTTP API**
+For more information, see [Create routes for WebSocket APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/websocket-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*.
+**Example 2: To create a route for an HTTP API**
 The following `create-route` example creates a route named `signup` that accepts POST requests.
 
 ```
@@ -301,7 +301,7 @@ Output:
     "RouteId": "1122334"
 }
 ```
-For more information, see [Working with routes for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*
+For more information, see [Create routes for HTTP APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [CreateRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigatewayv2/create-route.html) in *AWS CLI Command Reference*.
 
 ### `create-routing-rule`
@@ -358,7 +358,7 @@ Output:
         }
     ],
     "Priority": 50,
-    "RoutingRuleArn": "arn:aws:apigateway:us-east-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
+    "RoutingRuleArn": "arn:aws:apigateway:us-west-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
     "RoutingRuleId": "aaa111"
 }
 ```
@@ -677,12 +677,11 @@ The following code example shows how to use `export-api`.
 The following `export-api` example exports an OpenAPI 3.0 definition of an API stage named `prod` to a YAML file named `stage-definition.yaml`. The exported definition file includes API Gateway extensions by default.
 
 ```
-aws apigatewayv2 export-api \
+aws apigatewayv2 export-api {{stage-definition.yaml}} \
     --api-id {{a1b2c3d4}} \
     --output-type {{YAML}} \
     --specification {{OAS30}} \
-    --stage-name {{prod}} \
-    {{stage-definition.yaml}}
+    --stage-name {{prod}}
 ```
 This command produces no output.
 For more information, see [Exporting an HTTP API from API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-export.html) in the *Amazon API Gateway Developer Guide*.
@@ -708,7 +707,7 @@ Output:
 {
     "ApiId": "a1b2c3d4",
     "ApiMappingId": "a1b2c3d5",
-    "ApiMappingKey": "myTestApi"
+    "ApiMappingKey": "myTestApi",
     "Stage": "test"
 }
 ```
@@ -736,15 +735,15 @@ Output:
         {
             "ApiId": "a1b2c3d4",
             "ApiMappingId": "a1b2c3d5",
-            "ApiMappingKey": "myTestApi"
+            "ApiMappingKey": "myTestApi",
             "Stage": "test"
         },
         {
             "ApiId": "a5b6c7d8",
             "ApiMappingId": "a1b2c3d6",
-            "ApiMappingKey": "myDevApi"
+            "ApiMappingKey": "myDevApi",
             "Stage": "dev"
-        },
+        }
     ]
 }
 ```
@@ -780,6 +779,7 @@ Output:
     }
 }
 ```
+For more information, see [Develop HTTP APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [GetApi](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigatewayv2/get-api.html) in *AWS CLI Command Reference*.
 
 ### `get-apis`
@@ -1163,7 +1163,7 @@ Output:
     "Target": "integrations/a1b2c3"
 }
 ```
-For more information, see [Working with routes for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*
+For more information, see [Create routes for HTTP APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [GetRoute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigatewayv2/get-route.html) in *AWS CLI Command Reference*.
 
 ### `get-routes`
@@ -1202,7 +1202,7 @@ Output:
     ]
 }
 ```
-For more information, see [Working with routes for HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*
+For more information, see [Create routes for HTTP APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html) in the *Amazon API Gateway Developer Guide*.
 +  For API details, see [GetRoutes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/apigatewayv2/get-routes.html) in *AWS CLI Command Reference*.
 
 ### `get-routing-rule`
@@ -1242,7 +1242,7 @@ Output:
         }
     ],
     "Priority": 50,
-    "RoutingRuleArn": "arn:aws:apigateway:us-east-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
+    "RoutingRuleArn": "arn:aws:apigateway:us-west-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
     "RoutingRuleId": "aaa111"
 }
 ```
@@ -1447,7 +1447,7 @@ Output:
             "VpcLinkStatus": "AVAILABLE",
             "VpcLinkStatusMessage": "VPC link is ready to route traffic",
             "VpcLinkVersion": "V2"
-        }
+        },
         {
             "CreatedDate": "2020-04-07T00:27:47Z",
             "Name": "MyOtherVpcLink",
@@ -1557,7 +1557,7 @@ Output:
                 }
             ],
             "Priority": 150,
-            "RoutingRuleArn": "arn:aws:apigateway:us-east-1:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
+            "RoutingRuleArn": "arn:aws:apigateway:us-west-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
             "RoutingRuleId": "aaa111"
         }
     ]
@@ -1621,7 +1621,7 @@ Output:
         }
     ],
     "Priority": 150,
-    "RoutingRuleArn": "arn:aws:apigateway:us-east-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
+    "RoutingRuleArn": "arn:aws:apigateway:us-west-2:123456789012:/domainnames/regional.example.com/routingrules/aaa111",
     "RoutingRuleId": "aaa111"
 }
 ```
@@ -1736,7 +1736,7 @@ Output:
 {
     "ApiId": "a1b2c3d4",
     "ApiMappingId": "0qzs2sy7bh",
-    "ApiMappingKey": "dev"
+    "ApiMappingKey": "dev",
     "Stage": "dev"
 }
 ```

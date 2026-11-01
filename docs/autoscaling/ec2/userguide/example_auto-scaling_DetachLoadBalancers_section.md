@@ -12,7 +12,7 @@ The following code examples show how to use `DetachLoadBalancers`.
 
 **AWS CLI**
 **To detach a Classic Load Balancer from an Auto Scaling group**
-This example detaches the specified Classic Load Balancer from the specified Auto Scaling group.
+The following `detach-load-balancers` example detaches the specified Classic Load Balancer from the specified Auto Scaling group.
 
 ```
 aws autoscaling detach-load-balancers \

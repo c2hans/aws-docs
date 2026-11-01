@@ -26,7 +26,7 @@ The following code example shows how to use `create-data-source`.
 
 **AWS CLI**
 **To create an Amazon Kendra data source connector**
-The following `create-data-source` creates and configures an Amazon Kendra data source connector. You can use `describe-data-source` to view the status of a data source connector, and read any error messages if the status shows a data source connector "FAILED" to completely create.
+The following `create-data-source` example creates and configures an Amazon Kendra data source connector. You can use `describe-data-source` to view the status of a data source connector, and read any error messages if the status shows a data source connector "FAILED" to completely create.
 
 ```
 aws kendra create-data-source \
@@ -37,10 +37,49 @@ aws kendra create-data-source \
     --index-id {{exampleindex1}} \
     --language-code {{"es"}} \
     --schedule {{"0 0 18 ? * TUE,MON,WED,THU,FRI,SAT *"}} \
-    --configuration '{{{"TemplateConfiguration": {"Template": file://s3schemaconfig.json}}}}' \
+    --configuration {{file://s3schemaconfig.json}} \
     --type {{"TEMPLATE"}} \
     --custom-document-enrichment-configuration '{{{"PostExtractionHookConfiguration": {"LambdaArn": "arn:aws:iam::my-account-id:function/my-function-ocr-docs", "S3Bucket": "s3://amzn-s3-demo-bucket/scanned-image-text-example-docs"}, "RoleArn": "arn:aws:iam:my-account-id:role/KendraRoleForCDE"}}}' \
     --vpc-configuration '{{{"SecurityGroupIds": ["sg-1234567890abcdef0"], "SubnetIds": ["subnet-1c234","subnet-2b134"]}}}'
+```
+Contents of `s3schemaconfig.json`:
+
+```
+{
+    "TemplateConfiguration": {
+        "Template": {
+            "connectionConfiguration": {
+                "repositoryEndpointMetadata": {
+                    "BucketName": "amzn-s3-demo-bucket"
+                }
+            },
+            "repositoryConfigurations": {
+                "document": {
+                    "fieldMappings": [
+                        {
+                            "indexFieldName": "_document_title",
+                            "indexFieldType": "STRING",
+                            "dataSourceFieldName": "title"
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": {
+                "inclusionPatterns": [
+                    "*.txt",
+                    "*.doc",
+                    "*.docx"
+                ],
+                "inclusionPrefixes": [
+                    "PublicExampleDocsFolder"
+                ]
+            },
+            "syncMode": "FULL_CRAWL",
+            "type": "S3",
+            "version": "1.0.0"
+        }
+    }
+}
 ```
 Output:
 
@@ -59,7 +98,7 @@ The following code example shows how to use `create-index`.
 
 **AWS CLI**
 **To create an Amazon Kendra index**
-The following `create-index` creates and configures an Amazon Kendra index. You can use `describe-index` to view the status of an index, and read any error messages if the status shows an index "FAILED" to completely create.
+The following `create-index` example creates and configures an Amazon Kendra index. You can use `describe-index` to view the status of an index, and read any error messages if the status shows an index "FAILED" to completely create.
 
 ```
 aws kendra create-index \
@@ -76,7 +115,7 @@ Output:
 
 ```
 {
-   "Id": index1
+    "Id": "index1"
 }
 ```
 For more information, see [Getting started with an Amazon Kendra index and data source connector](https://docs.aws.amazon.com/kendra/latest/dg/getting-started.html) in the *Amazon Kendra Developer Guide*.
@@ -89,7 +128,7 @@ The following code example shows how to use `describe-data-source`.
 
 **AWS CLI**
 **To get information about an Amazon Kendra data source connector**
-The following `describe-data-source` gets information about an Amazon Kendra data source connector. You can view the configuration of a data source connector, and read any error messages if the status shows a data source connector "FAILED" to completely create.
+The following `describe-data-source` example gets information about an Amazon Kendra data source connector. You can view the configuration of a data source connector, and read any error messages if the status shows a data source connector "FAILED" to completely create.
 
 ```
 aws kendra describe-data-source \
@@ -148,17 +187,17 @@ Output:
             }
         }
     },
-    "CreatedAt": 2024-02-25T13:30:10+00:00,
+    "CreatedAt": "2024-02-25T13:30:10+00:00",
     "CustomDocumentEnrichmentConfiguration": {
         "PostExtractionHookConfiguration": {
             "LambdaArn": "arn:aws:iam::my-account-id:function/my-function-ocr-docs",
             "S3Bucket": "s3://amzn-s3-demo-bucket/scanned-image-text-example-docs/function"
         },
         "RoleArn": "arn:aws:iam:my-account-id:role/KendraRoleForCDE"
-    }
+    },
     "Description": "Example data source 1 for example index 1 contains the first set of example documents",
-    "Id": exampledatasource1,
-    "IndexId": exampleindex1,
+    "Id": "exampledatasource1",
+    "IndexId": "exampleindex1",
     "LanguageCode": "en",
     "Name": "example data source 1",
     "RoleArn": "arn:aws:iam::my-account-id:role/KendraRoleForS3TemplateConfigDataSource",
@@ -182,7 +221,7 @@ The following code example shows how to use `describe-index`.
 
 **AWS CLI**
 **To get information about an Amazon Kendra index**
-The following `describe-index` gets information about an Amazon Kendra index. You can view the configuration of an index, and read any error messages if the status shows an index "FAILED" to completely create.
+The following `describe-index` example gets information about an Amazon Kendra index. You can view the configuration of an index, and read any error messages if the status shows an index "FAILED" to completely create.
 
 ```
 aws kendra describe-index \
@@ -196,7 +235,7 @@ Output:
         "QueryCapacityUnits": 0,
         "StorageCapacityUnits": 0
     },
-    "CreatedAt": 2024-02-25T12:30:10+00:00,
+    "CreatedAt": "2024-02-25T12:30:10+00:00",
     "Description": "Example index 1 contains the first set of example documents",
     "DocumentMetadataConfigurations": [
         {
@@ -299,7 +338,7 @@ The following code example shows how to use `update-data-source`.
 
 **AWS CLI**
 **To update an Amazon Kendra data source connector**
-The following `update-data-source` updates the configuration of an Amazon Kendra data source connector. If the action is successful, the service either sends back no output, the HTTP status code 200, or the AWS CLI return code 0. You can use `describe-data-source` to view the configuration and status of a data source connector.
+The following `update-data-source` example updates the configuration of an Amazon Kendra data source connector. If the action is successful, the service either sends back no output, the HTTP status code 200, or the AWS CLI return code 0. You can use `describe-data-source` to view the configuration and status of a data source connector.
 
 ```
 aws kendra update-data-source \
@@ -308,11 +347,50 @@ aws kendra update-data-source \
     --name {{"new name for example data source 1"}} \
     --description {{"new description for example data source 1"}} \
     --role-arn {{arn:aws:iam::my-account-id:role/KendraNewRoleForExampleDataSource}} \
-    --configuration '{{{"TemplateConfiguration": {"Template": file://s3schemanewconfig.json}}}}' \
+    --configuration {{file://s3schemanewconfig.json}} \
     --custom-document-enrichment-configuration '{{{"PostExtractionHookConfiguration": {"LambdaArn": "arn:aws:iam::my-account-id:function/my-function-ocr-docs", "S3Bucket": "s3://amzn-s3-demo-bucket/scanned-image-text-example-docs"}, "RoleArn": "arn:aws:iam:my-account-id:role/KendraNewRoleForCDE"}}}' \
     --language-code {{"es"}} \
     --schedule {{"0 0 18 ? * MON,WED,FRI *"}} \
     --vpc-configuration '{{{"SecurityGroupIds": ["sg-1234567890abcdef0"], "SubnetIds": ["subnet-1c234","subnet-2b134"]}}}'
+```
+Contents of `s3schemanewconfig.json`:
+
+```
+{
+    "TemplateConfiguration": {
+        "Template": {
+            "connectionConfiguration": {
+                "repositoryEndpointMetadata": {
+                    "BucketName": "amzn-s3-demo-bucket"
+                }
+            },
+            "repositoryConfigurations": {
+                "document": {
+                    "fieldMappings": [
+                        {
+                            "indexFieldName": "_document_title",
+                            "indexFieldType": "STRING",
+                            "dataSourceFieldName": "title"
+                        }
+                    ]
+                }
+            },
+            "additionalProperties": {
+                "inclusionPatterns": [
+                    "*.txt",
+                    "*.doc",
+                    "*.docx"
+                ],
+                "inclusionPrefixes": [
+                    "NewPublicExampleDocsFolder"
+                ]
+            },
+            "syncMode": "FULL_CRAWL",
+            "type": "S3",
+            "version": "1.0.0"
+        }
+    }
+}
 ```
 This command produces no output.
 For more information, see [Getting started with an Amazon Kendra index and data source connector](https://docs.aws.amazon.com/kendra/latest/dg/getting-started.html) in the *Amazon Kendra Developer Guide*.
@@ -325,7 +403,7 @@ The following code example shows how to use `update-index`.
 
 **AWS CLI**
 **To update an Amazon Kendra index**
-The following `update-index` updates the configuration of an Amazon Kendra index. If the action is successful, the service either sends back no output, the HTTP status code 200, or the AWS CLI return code 0. You can use `describe-index` to view the configuration and status of an index.
+The following `update-index` example updates the configuration of an Amazon Kendra index. If the action is successful, the service either sends back no output, the HTTP status code 200, or the AWS CLI return code 0. You can use `describe-index` to view the configuration and status of an index.
 
 ```
 aws kendra update-index \

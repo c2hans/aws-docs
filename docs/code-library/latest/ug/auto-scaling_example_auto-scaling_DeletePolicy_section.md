@@ -14,7 +14,7 @@ The following code examples show how to use `DeletePolicy`.
 
 **AWS CLI**
 **To delete a scaling policy**
-This example deletes the specified scaling policy.
+The following `delete-policy` example deletes the specified scaling policy.
 
 ```
 aws autoscaling delete-policy \
@@ -22,6 +22,7 @@ aws autoscaling delete-policy \
     --policy-name {{alb1000-target-tracking-scaling-policy}}
 ```
 This command produces no output.
+For more information, see [Delete a scaling policy for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/deleting-scaling-policy.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DeletePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/delete-policy.html) in *AWS CLI Command Reference*.
 
 ------

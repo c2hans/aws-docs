@@ -26,7 +26,7 @@ The following code example shows how to use `attach-instances`.
 
 **AWS CLI**
 **To attach an instance to an Auto Scaling group**
-This example attaches the specified instance to the specified Auto Scaling group.
+The following `attach-instances` example attaches the specified instance to the specified Auto Scaling group.
 
 ```
 aws autoscaling attach-instances \
@@ -34,6 +34,7 @@ aws autoscaling attach-instances \
     --auto-scaling-group-name {{my-asg}}
 ```
 This command produces no output.
+For more information, see [Detach or attach instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-detach-attach-instances.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [AttachInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/attach-instances.html) in *AWS CLI Command Reference*.
 
 ### `attach-load-balancer-target-groups`
@@ -43,7 +44,7 @@ The following code example shows how to use `attach-load-balancer-target-groups`
 
 **AWS CLI**
 **To attach a target group to an Auto Scaling group**
-This example attaches the specified target group to the specified Auto Scaling group.
+The following `attach-load-balancer-target-groups` example attaches the specified target group to the specified Auto Scaling group.
 
 ```
 aws autoscaling attach-load-balancer-target-groups \
@@ -61,7 +62,7 @@ The following code example shows how to use `attach-load-balancers`.
 
 **AWS CLI**
 **To attach a Classic Load Balancer to an Auto Scaling group**
-This example attaches the specified Classic Load Balancer to the specified Auto Scaling group.
+The following `attach-load-balancers` example attaches the specified Classic Load Balancer to the specified Auto Scaling group.
 
 ```
 aws autoscaling attach-load-balancers \
@@ -89,7 +90,7 @@ Output:
 
 ```
 {
-    "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
+    "InstanceRefreshId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Cancel an instance refresh](https://docs.aws.amazon.com/autoscaling/ec2/userguide/cancel-instance-refresh.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -102,14 +103,14 @@ The following code example shows how to use `complete-lifecycle-action`.
 
 **AWS CLI**
 **To complete the lifecycle action**
-This example notifies Amazon EC2 Auto Scaling that the specified lifecycle action is complete so that it can finish launching or terminating the instance.
+The following `complete-lifecycle-action` example notifies Amazon EC2 Auto Scaling that the specified lifecycle action is complete so that it can finish launching or terminating the instance.
 
 ```
 aws autoscaling complete-lifecycle-action \
     --lifecycle-hook-name {{my-launch-hook}} \
     --auto-scaling-group-name {{my-asg}} \
     --lifecycle-action-result {{CONTINUE}} \
-    --lifecycle-action-token {{bcd2f1b8-9a78-44d3-8a7a-4dd07d7cf635}}
+    --lifecycle-action-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -135,7 +136,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To attach an Application Load Balancer, Network Load Balancer, or Gateway Load Balancer**
-This example specifies the ARN of a target group for a load balancer that supports the expected traffic. The health check type specifies `ELB` so that when Elastic Load Balancing reports an instance as unhealthy, the Auto Scaling group replaces it. The command also defines a health check grace period of `600` seconds. The grace period helps prevent premature termination of newly launched instances.
+The following `create-auto-scaling-group` example specifies the ARN of a target group for a load balancer that supports the expected traffic. The health check type specifies `ELB` so that when Elastic Load Balancing reports an instance as unhealthy, the Auto Scaling group replaces it. The command also defines a health check grace period of `600` seconds. The grace period helps prevent premature termination of newly launched instances.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -151,7 +152,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Elastic Load Balancing and Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To specify a placement group and use the latest version of the launch template**
-This example launches instances into a placement group within a single Availability Zone. This can be useful for low-latency groups with HPC workloads. This example also specifies the minimum size, maximum size, and desired capacity of the group.
+The following `create-auto-scaling-group` example launches instances into a placement group within a single Availability Zone. This can be useful for low-latency groups with HPC workloads. This example also specifies the minimum size, maximum size, and desired capacity of the group.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -166,7 +167,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Placement groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the *Amazon EC2 User Guide for Linux Instances*.
 **Example 4: To specify a single instance Auto Scaling group and use a specific version of the launch template**
-This example creates an Auto Scaling group with minimum and maximum capacity set to `1` to enforce that one instance will be running. The command also specifies v1 of a launch template in which the ID of an existing ENI is specified. When you use a launch template that specifies an existing ENI for eth0, you must specify an Availability Zone for the Auto Scaling group that matches the network interface, without also specifying a subnet ID in the request.
+The following `create-auto-scaling-group` example creates an Auto Scaling group with minimum and maximum capacity set to `1` to enforce that one instance will be running. The command also specifies v1 of a launch template in which the ID of an existing ENI is specified. When you use a launch template that specifies an existing ENI for eth0, you must specify an Availability Zone for the Auto Scaling group that matches the network interface, without also specifying a subnet ID in the request.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -179,7 +180,7 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 5: To specify a different termination policy**
-This example creates an Auto Scaling group using a launch configuration and sets the termination policy to terminate the oldest instances first. The command also applies a tag to the group and its instances, with a key of `Role` and a value of `WebServer`.
+The following `create-auto-scaling-group` example creates an Auto Scaling group using a launch configuration and sets the termination policy to terminate the oldest instances first. The command also applies a tag to the group and its instances, with a key of `Role` and a value of `WebServer`.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -194,13 +195,13 @@ aws autoscaling create-auto-scaling-group \
 This command produces no output.
 For more information, see [Working with Amazon EC2 Auto Scaling termination policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-termination-policies.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 6: To specify a launch lifecycle hook**
-This example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance launch.
+The following `create-auto-scaling-group` example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance launch.
 
 ```
 aws autoscaling create-auto-scaling-group \
     --cli-input-json {{file://~/config.json}}
 ```
-Contents of `config.json` file:
+Contents of `config.json`:
 
 ```
 {
@@ -232,7 +233,7 @@ Contents of `config.json` file:
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 7: To specify a termination lifecycle hook**
-This example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance termination.
+The following `create-auto-scaling-group` example creates an Auto Scaling group with a lifecycle hook that supports a custom action at instance termination.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -263,7 +264,7 @@ Contents of `config.json`:
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 8: To specify a custom termination policy**
-This example creates an Auto Scaling group that specifies a custom Lambda function termination policy that tells Amazon EC2 Auto Scaling which instances are safe to terminate on scale in.
+The following `create-auto-scaling-group` example creates an Auto Scaling group that specifies a custom Lambda function termination policy that tells Amazon EC2 Auto Scaling which instances are safe to terminate on scale in.
 
 ```
 aws autoscaling create-auto-scaling-group \
@@ -285,7 +286,7 @@ The following code example shows how to use `create-launch-configuration`.
 
 **AWS CLI**
 **Example 1: To create a launch configuration**
-This example creates a simple launch configuration.
+The following `create-launch-configuration` example creates a simple launch configuration.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -296,7 +297,7 @@ aws autoscaling create-launch-configuration \
 This command produces no output.
 For more information, see [Creating a launch configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-config.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To create a launch configuration with a security group, key pair, and bootstrapping script**
-This example creates a launch configuration with a security group, a key pair, and a bootstrapping script contained in the user data.
+The following `create-launch-configuration` example creates a launch configuration with a security group, a key pair, and a bootstrapping script contained in the user data.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -307,10 +308,19 @@ aws autoscaling create-launch-configuration \
     --key-name {{my-key-pair}} \
     --user-data {{file://myuserdata.txt}}
 ```
+Contents of `myuserdata.txt`:
+
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+```
 This command produces no output.
 For more information, see [Creating a launch configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-config.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To create a launch configuration with an IAM role**
-This example creates a launch configuration with the instance profile name of an IAM role.
+The following `create-launch-configuration` example creates a launch configuration with the instance profile name of an IAM role.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -322,7 +332,7 @@ aws autoscaling create-launch-configuration \
 This command produces no output.
 For more information, see [IAM role for applications that run on Amazon EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/us-iam-role.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 4: To create a launch configuration with detailed monitoring enabled**
-This example creates a launch configuration with EC2 detailed monitoring enabled, which sends EC2 metrics to CloudWatch in 1-minute periods.
+The following `create-launch-configuration` example creates a launch configuration with EC2 detailed monitoring enabled, which sends EC2 metrics to CloudWatch in 1-minute periods.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -334,7 +344,7 @@ aws autoscaling create-launch-configuration \
 This command produces no output.
 For more information, see [Configuring monitoring for Auto Scaling instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/enable-as-instance-metrics.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 5: To create a launch configuration that launches Spot Instances**
-This example creates a launch configuration that uses Spot Instances as the only purchase option.
+The following `create-launch-configuration` example creates a launch configuration that uses Spot Instances as the only purchase option.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -346,12 +356,12 @@ aws autoscaling create-launch-configuration \
 This command produces no output.
 For more information, see [Requesting Spot Instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-launch-spot-instances.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 6: To create a launch configuration using an EC2 instance**
-This example creates a launch configuration based on the attributes of an existing instance. It overrides the placement tenancy and whether a public IP address is set by including the `--placement-tenancy` and `--no-associate-public-ip-address` options.
+The following `create-launch-configuration` example creates a launch configuration based on the attributes of an existing instance. It overrides the placement tenancy and whether a public IP address is set by including the `--placement-tenancy` and `--no-associate-public-ip-address` options.
 
 ```
 aws autoscaling create-launch-configuration \
     --launch-configuration-name {{my-lc-from-instance}} \
-    --instance-id {{i-0123a456700123456}} \
+    --instance-id {{i-1234567890abcdef0}} \
     --instance-type {{m5.large}} \
     --no-associate-public-ip-address \
     --placement-tenancy {{dedicated}}
@@ -359,7 +369,7 @@ aws autoscaling create-launch-configuration \
 This command produces no output.
 For more information, see [Creating a launch configuration using an EC2 instance](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-lc-with-instanceID.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 7: To create a launch configuration with a block device mapping for an Amazon EBS volume**
-This example creates a launch configuration with a block device mapping for an Amazon EBS `gp3` volume with the device name `/dev/sdh` and a volume size of 20.
+The following `create-launch-configuration` example creates a launch configuration with a block device mapping for an Amazon EBS `gp3` volume with the device name `/dev/sdh` and a volume size of 20.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -369,10 +379,10 @@ aws autoscaling create-launch-configuration \
     --block-device-mappings '{{[{"DeviceName":"/dev/sdh","Ebs":{"VolumeSize":20,"VolumeType":"gp3"}}]}}'
 ```
 This command produces no output.
-For more information, see [EBS](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Ebs.html) in the *Amazon EC2 Auto Scaling API Reference*.
+For more information, see [Block device mappings for volumes on Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
 For information about the syntax for quoting JSON-formatted parameter values, see [Using quotation marks with strings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-quoting-strings.html) in the *AWS Command Line Interface User Guide*.
 **Example 8: To create a launch configuration with a block device mapping for an instance store volume**
-This example creates a launch configuration with `ephemeral1` as an instance store volume with the device name `/dev/sdc`.
+The following `create-launch-configuration` example creates a launch configuration with `ephemeral1` as an instance store volume with the device name `/dev/sdc`.
 
 ```
 aws autoscaling create-launch-configuration \
@@ -382,10 +392,10 @@ aws autoscaling create-launch-configuration \
     --block-device-mappings '{{[{"DeviceName":"/dev/sdc","VirtualName":"ephemeral1"}]}}'
 ```
 This command produces no output.
-For more information, see [BlockDeviceMapping](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BlockDeviceMapping.html) in the *Amazon EC2 Auto Scaling API Reference*.
+For more information, see [Instance store temporary block storage for EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) in the *Amazon EC2 User Guide*.
 For information about the syntax for quoting JSON-formatted parameter values, see [Using quotation marks with strings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-quoting-strings.html) in the *AWS Command Line Interface User Guide*.
 **Example 9: To create a launch configuration and suppress a block device from attaching at launch time**
-This example creates a launch configuration that suppresses a block device specified by the block device mapping of the AMI (for example, `/dev/sdf`).
+The following `create-launch-configuration` example creates a launch configuration that suppresses a block device specified by the block device mapping of the AMI (for example, `/dev/sdf`).
 
 ```
 aws autoscaling create-launch-configuration \
@@ -395,7 +405,7 @@ aws autoscaling create-launch-configuration \
     --block-device-mappings '{{[{"DeviceName":"/dev/sdf","NoDevice":""}]}}'
 ```
 This command produces no output.
-For more information, see [BlockDeviceMapping](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BlockDeviceMapping.html) in the *Amazon EC2 Auto Scaling API Reference*.
+For more information, see [Block device mappings for volumes on Amazon EC2 instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/block-device-mapping-concepts.html) in the *Amazon EC2 User Guide*.
 For information about the syntax for quoting JSON-formatted parameter values, see [Using quotation marks with strings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters-quoting-strings.html) in the *AWS Command Line Interface User Guide*.
 +  For API details, see [CreateLaunchConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/create-launch-configuration.html) in *AWS CLI Command Reference*.
 
@@ -406,7 +416,7 @@ The following code example shows how to use `create-or-update-tags`.
 
 **AWS CLI**
 **To create or update tags for an Auto Scaling group**
-This example adds two tags to the specified Auto Scaling group.
+The following `create-or-update-tags` example adds two tags to the specified Auto Scaling group.
 
 ```
 aws autoscaling create-or-update-tags \
@@ -423,7 +433,7 @@ The following code example shows how to use `delete-auto-scaling-group`.
 
 **AWS CLI**
 **Example 1: To delete the specified Auto Scaling group**
-This example deletes the specified Auto Scaling group.
+The following `delete-auto-scaling-group` example deletes the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-auto-scaling-group \
@@ -432,7 +442,7 @@ aws autoscaling delete-auto-scaling-group \
 This command produces no output.
 For more information, see [Deleting your Auto Scaling infrastructure](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-process-shutdown.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To force delete the specified Auto Scaling group**
-To delete the Auto Scaling group without waiting for the instances in the group to terminate, use the `--force-delete` option.
+The following `delete-auto-scaling-group` example deletes the specified Auto Scaling group without waiting for the instances in the group to terminate by using the `--force-delete` option.
 
 ```
 aws autoscaling delete-auto-scaling-group \
@@ -450,7 +460,7 @@ The following code example shows how to use `delete-launch-configuration`.
 
 **AWS CLI**
 **To delete a launch configuration**
-This example deletes the specified launch configuration.
+The following `delete-launch-configuration` example deletes the specified launch configuration.
 
 ```
 aws autoscaling delete-launch-configuration \
@@ -467,7 +477,7 @@ The following code example shows how to use `delete-lifecycle-hook`.
 
 **AWS CLI**
 **To delete a lifecycle hook**
-This example deletes the specified lifecycle hook.
+The following `delete-lifecycle-hook` example deletes the specified lifecycle hook.
 
 ```
 aws autoscaling delete-lifecycle-hook \
@@ -475,6 +485,7 @@ aws autoscaling delete-lifecycle-hook \
     --auto-scaling-group-name {{my-asg}}
 ```
 This command produces no output.
+For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DeleteLifecycleHook](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/delete-lifecycle-hook.html) in *AWS CLI Command Reference*.
 
 ### `delete-notification-configuration`
@@ -484,7 +495,7 @@ The following code example shows how to use `delete-notification-configuration`.
 
 **AWS CLI**
 **To delete an Auto Scaling notification**
-This example deletes the specified notification from the specified Auto Scaling group.
+The following `delete-notification-configuration` example deletes the specified notification from the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-notification-configuration \
@@ -502,7 +513,7 @@ The following code example shows how to use `delete-policy`.
 
 **AWS CLI**
 **To delete a scaling policy**
-This example deletes the specified scaling policy.
+The following `delete-policy` example deletes the specified scaling policy.
 
 ```
 aws autoscaling delete-policy \
@@ -510,6 +521,7 @@ aws autoscaling delete-policy \
     --policy-name {{alb1000-target-tracking-scaling-policy}}
 ```
 This command produces no output.
+For more information, see [Delete a scaling policy for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/deleting-scaling-policy.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DeletePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/delete-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-scheduled-action`
@@ -519,7 +531,7 @@ The following code example shows how to use `delete-scheduled-action`.
 
 **AWS CLI**
 **To delete a scheduled action from an Auto Scaling group**
-This example deletes the specified scheduled action from the specified Auto Scaling group.
+The following `delete-scheduled-action` example deletes the specified scheduled action from the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-scheduled-action \
@@ -527,6 +539,7 @@ aws autoscaling delete-scheduled-action \
     --scheduled-action-name {{my-scheduled-action}}
 ```
 This command produces no output.
+For more information, see [Scheduled scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DeleteScheduledAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/delete-scheduled-action.html) in *AWS CLI Command Reference*.
 
 ### `delete-tags`
@@ -536,7 +549,7 @@ The following code example shows how to use `delete-tags`.
 
 **AWS CLI**
 **To delete a tag from an Auto Scaling group**
-This example deletes the specified tag from the specified Auto Scaling group.
+The following `delete-tags` example deletes the specified tag from the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-tags \
@@ -553,7 +566,7 @@ The following code example shows how to use `delete-warm-pool`.
 
 **AWS CLI**
 **Example 1: To delete a warm pool**
-The following example deletes the warm pool for the specified Auto Scaling group.
+The following `delete-warm-pool` example deletes the warm pool for the specified Auto Scaling group.
 
 ```
 aws autoscaling delete-warm-pool \
@@ -562,7 +575,7 @@ aws autoscaling delete-warm-pool \
 This command produces no output.
 For more information, see [Warm pools for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To force delete a warm pool**
-To delete the warm pool without waiting for its instances to terminate, use the `--force-delete` option.
+The following `delete-warm-pool` example deletes the warm pool for the specified Auto Scaling group without waiting for its instances to terminate by using the `--force-delete` option.
 
 ```
 aws autoscaling delete-warm-pool \
@@ -580,7 +593,7 @@ The following code example shows how to use `describe-account-limits`.
 
 **AWS CLI**
 **To describe your Amazon EC2 Auto Scaling account limits**
-This example describes the Amazon EC2 Auto Scaling limits for your AWS account.
+The following `describe-account-limits` example describes the Amazon EC2 Auto Scaling limits for your AWS account.
 
 ```
 aws autoscaling describe-account-limits
@@ -605,7 +618,7 @@ The following code example shows how to use `describe-adjustment-types`.
 
 **AWS CLI**
 **To describe the available scaling adjustment types**
-This example describes the available adjustment types.
+The following `describe-adjustment-types` example describes the available adjustment types.
 
 ```
 aws autoscaling describe-adjustment-types
@@ -637,7 +650,7 @@ The following code example shows how to use `describe-auto-scaling-groups`.
 
 **AWS CLI**
 **Example 1: To describe the specified Auto Scaling group**
-This example describes the specified Auto Scaling group.
+The following `describe-auto-scaling-groups` example describes the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-auto-scaling-groups \
@@ -650,7 +663,7 @@ Output:
     "AutoScalingGroups": [
         {
             "AutoScalingGroupName": "my-asg",
-            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:930d940e-891e-4781-a11a-7b0acd480f03:autoScalingGroupName/my-asg",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg",
             "LaunchTemplate": {
                 "LaunchTemplateName": "my-launch-template",
                 "Version": "1",
@@ -693,38 +706,292 @@ Output:
                 "Default"
             ],
             "NewInstancesProtectedFromScaleIn": false,
-            "ServiceLinkedRoleARN":"arn",
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
             "TrafficSources": []
         }
     ]
 }
 ```
 **Example 2: To describe the first 100 specified Auto Scaling group**
-This example describes the specified Auto Scaling groups. It allows you to specify up to 100 group names.
+The following `describe-auto-scaling-groups` example describes the specified Auto Scaling groups. It allows you to specify up to 100 group names.
 
 ```
 aws autoscaling describe-auto-scaling-groups \
     --max-items {{100}} \
     --auto-scaling-group-names {{"group1"}} {{"group2"}} {{"group3"}} {{"group4"}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "AutoScalingGroups": [
+        {
+            "AutoScalingGroupName": "group1",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/group1",
+            "LaunchTemplate": {
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1",
+                "LaunchTemplateId": "lt-1234567890abcde12"
+            },
+            "MinSize": 0,
+            "MaxSize": 1,
+            "DesiredCapacity": 0,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [],
+            "CreatedTime": "2023-10-28T02:39:22.152Z",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-5ea0c127,subnet-6194ea3b,subnet-c934b782",
+            "EnabledMetrics": [],
+            "Tags": [],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": []
+        },
+        {
+            "AutoScalingGroupName": "group2",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:autoScalingGroupName/group2",
+            "LaunchTemplate": {
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1",
+                "LaunchTemplateId": "lt-1234567890abcde12"
+            },
+            "MinSize": 0,
+            "MaxSize": 1,
+            "DesiredCapacity": 0,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [],
+            "CreatedTime": "2023-10-28T02:39:22.152Z",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-5ea0c127,subnet-6194ea3b,subnet-c934b782",
+            "EnabledMetrics": [],
+            "Tags": [],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": []
+        },
+        {
+            "AutoScalingGroupName": "group3",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333:autoScalingGroupName/group3",
+            "LaunchTemplate": {
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1",
+                "LaunchTemplateId": "lt-1234567890abcde12"
+            },
+            "MinSize": 0,
+            "MaxSize": 1,
+            "DesiredCapacity": 0,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [],
+            "CreatedTime": "2023-10-28T02:39:22.152Z",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-5ea0c127,subnet-6194ea3b,subnet-c934b782",
+            "EnabledMetrics": [],
+            "Tags": [],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": []
+        },
+        {
+            "AutoScalingGroupName": "group4",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE44444:autoScalingGroupName/group4",
+            "LaunchTemplate": {
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1",
+                "LaunchTemplateId": "lt-1234567890abcde12"
+            },
+            "MinSize": 0,
+            "MaxSize": 1,
+            "DesiredCapacity": 0,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [],
+            "CreatedTime": "2023-10-28T02:39:22.152Z",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-5ea0c127,subnet-6194ea3b,subnet-c934b782",
+            "EnabledMetrics": [],
+            "Tags": [],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": []
+        }
+    ]
+}
+```
 **Example 3: To describe an Auto Scaling group in the specified region**
-This example describes the Auto Scaling groups in the specified region, up to a maximum of 75 groups.
+The following `describe-auto-scaling-groups` example describes the Auto Scaling groups in the specified region, up to a maximum of 75 groups.
 
 ```
 aws autoscaling describe-auto-scaling-groups \
     --max-items {{75}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "AutoScalingGroups": [
+        {
+            "AutoScalingGroupName": "my-asg",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE55555:autoScalingGroupName/my-asg",
+            "LaunchTemplate": {
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1",
+                "LaunchTemplateId": "lt-0123456789abcdef0"
+            },
+            "MinSize": 0,
+            "MaxSize": 1,
+            "DesiredCapacity": 1,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [
+                {
+                    "InstanceId": "i-0123456789abcdef0",
+                    "InstanceType": "t2.micro",
+                    "AvailabilityZone": "us-west-2a",
+                    "HealthStatus": "Healthy",
+                    "LifecycleState": "InService",
+                    "ProtectedFromScaleIn": false,
+                    "LaunchTemplate": {
+                        "LaunchTemplateName": "my-launch-template",
+                        "Version": "1",
+                        "LaunchTemplateId": "lt-0123456789abcdef0"
+                    }
+                }
+            ],
+            "CreatedTime": "2023-10-28T02:39:22.152Z",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-0a1b2c3d4e5f60001,subnet-0a1b2c3d4e5f60002,subnet-0a1b2c3d4e5f60003",
+            "EnabledMetrics": [],
+            "Tags": [],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": []
+        }
+    ]
+}
+```
 **Example 4: To describe the specified number of Auto Scaling group**
-To return a specific number of Auto Scaling groups, use the `--max-items` option.
+The following `describe-auto-scaling-groups` example uses the `--max-items` option to return a specific number of Auto Scaling groups.
 
 ```
 aws autoscaling describe-auto-scaling-groups \
     --max-items {{1}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "AutoScalingGroups": [
+        {
+            "AutoScalingGroupName": "my-asg",
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg",
+            "LaunchTemplate": {
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1",
+                "LaunchTemplateId": "lt-1234567890abcde12"
+            },
+            "MinSize": 0,
+            "MaxSize": 1,
+            "DesiredCapacity": 1,
+            "DefaultCooldown": 300,
+            "AvailabilityZones": [
+                "us-west-2a",
+                "us-west-2b",
+                "us-west-2c"
+            ],
+            "LoadBalancerNames": [],
+            "TargetGroupARNs": [],
+            "HealthCheckType": "EC2",
+            "HealthCheckGracePeriod": 0,
+            "Instances": [
+                {
+                    "InstanceId": "i-06905f55584de02da",
+                    "InstanceType": "t2.micro",
+                    "AvailabilityZone": "us-west-2a",
+                    "HealthStatus": "Healthy",
+                    "LifecycleState": "InService",
+                    "ProtectedFromScaleIn": false,
+                    "LaunchTemplate": {
+                        "LaunchTemplateName": "my-launch-template",
+                        "Version": "1",
+                        "LaunchTemplateId": "lt-1234567890abcde12"
+                    }
+                }
+            ],
+            "CreatedTime": "2023-10-28T02:39:22.152Z",
+            "SuspendedProcesses": [],
+            "VPCZoneIdentifier": "subnet-5ea0c127,subnet-6194ea3b,subnet-c934b782",
+            "EnabledMetrics": [],
+            "Tags": [],
+            "TerminationPolicies": [
+                "Default"
+            ],
+            "NewInstancesProtectedFromScaleIn": false,
+            "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
+            "TrafficSources": []
+        }
+    ],
+    "NextToken": "Z3M3LMPEXAMPLE"
+}
+```
 If the output includes a `NextToken` field, there are more groups. To get the additional groups, use the value of this field with the `--starting-token` option in a subsequent call as follows.
 
 ```
@@ -733,7 +1000,7 @@ aws autoscaling describe-auto-scaling-groups \
 ```
 See example 1 for sample output.
 **Example 5: To describe Auto Scaling groups that use launch configurations**
-This example uses the `--query` option to describe Auto Scaling groups that use launch configurations.
+The following `describe-auto-scaling-groups` example uses the `--query` option to describe Auto Scaling groups that use launch configurations.
 
 ```
 aws autoscaling describe-auto-scaling-groups \
@@ -745,7 +1012,7 @@ Output:
 [
     {
         "AutoScalingGroupName": "my-asg",
-        "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:930d940e-891e-4781-a11a-7b0acd480f03:autoScalingGroupName/my-asg",
+        "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg",
         "LaunchConfigurationName": "my-lc",
         "MinSize": 0,
         "MaxSize": 1,
@@ -780,7 +1047,7 @@ Output:
             "Default"
         ],
         "NewInstancesProtectedFromScaleIn": false,
-        "ServiceLinkedRoleARN":"arn",
+        "ServiceLinkedRoleARN": "arn:aws:iam::123456789012:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling",
         "TrafficSources": []
     }
 ]
@@ -795,7 +1062,7 @@ The following code example shows how to use `describe-auto-scaling-instances`.
 
 **AWS CLI**
 **Example 1: To describe one or more instances**
-This example describes the specified instance.
+The following `describe-auto-scaling-instances` example describes the specified instance.
 
 ```
 aws autoscaling describe-auto-scaling-instances \
@@ -824,11 +1091,34 @@ Output:
 }
 ```
 **Example 2: To describe one or more instances**
-This example uses the `--max-items` option to specify how many instances to return with this call.
+The following `describe-auto-scaling-instances` example uses the `--max-items` option to specify how many instances to return with this call.
 
 ```
 aws autoscaling describe-auto-scaling-instances \
     --max-items {{1}}
+```
+Output:
+
+```
+{
+    "AutoScalingInstances": [
+        {
+            "InstanceId": "i-06905f55584de02da",
+            "InstanceType": "t2.micro",
+            "AutoScalingGroupName": "my-asg",
+            "AvailabilityZone": "us-west-2b",
+            "LifecycleState": "InService",
+            "HealthStatus": "HEALTHY",
+            "ProtectedFromScaleIn": false,
+            "LaunchTemplate": {
+                "LaunchTemplateId": "lt-1234567890abcde12",
+                "LaunchTemplateName": "my-launch-template",
+                "Version": "1"
+            }
+        }
+    ],
+    "NextToken": "Z3M3LMPEXAMPLE"
+}
 ```
 If the output includes a `NextToken` field, there are more instances. To get the additional instances, use the value of this field with the `--starting-token` option in a subsequent call as follows.
 
@@ -838,7 +1128,7 @@ aws autoscaling describe-auto-scaling-instances \
 ```
 See example 1 for sample output.
 **Example 3: To describe instances that use launch configurations**
-This example uses the `--query` option to describe instances that use launch configurations.
+The following `describe-auto-scaling-instances` example uses the `--query` option to describe instances that use launch configurations.
 
 ```
 aws autoscaling describe-auto-scaling-instances \
@@ -870,7 +1160,7 @@ The following code example shows how to use `describe-auto-scaling-notification-
 
 **AWS CLI**
 **To describe the available notification types**
-This example describes the available notification types.
+The following `describe-auto-scaling-notification-types` example describes the available notification types.
 
 ```
 aws autoscaling describe-auto-scaling-notification-types
@@ -910,14 +1200,14 @@ Output:
 {
     "InstanceRefreshes": [
         {
-            "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b",
+            "InstanceRefreshId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Status": "InProgress",
             "StatusReason": "Waiting for instances to warm up before continuing. For example: 0e69cc3f05f825f4f is warming up.",
             "EndTime": "2023-03-23T16:42:55Z",
             "PercentageComplete": 0,
             "InstancesToUpdate": 0,
-    "Preferences": {
+            "Preferences": {
                 "MinHealthyPercentage": 100,
                 "InstanceWarmup": 300,
                 "CheckpointPercentages": [
@@ -931,13 +1221,13 @@ Output:
             }
         },
         {
-            "InstanceRefreshId": "dd7728d0-5bc4-4575-96a3-1b2c52bf8bb1",
+            "InstanceRefreshId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "AutoScalingGroupName": "my-asg",
             "Status": "Successful",
             "EndTime": "2022-06-02T16:53:37Z",
             "PercentageComplete": 100,
             "InstancesToUpdate": 0,
-    "Preferences": {
+            "Preferences": {
                 "MinHealthyPercentage": 90,
                 "InstanceWarmup": 300,
                 "SkipMatching": true,
@@ -959,7 +1249,7 @@ The following code example shows how to use `describe-launch-configurations`.
 
 **AWS CLI**
 **Example 1: To describe the specified launch configuration**
-This example describes the specified launch configuration.
+The following `describe-launch-configurations` example describes the specified launch configuration.
 
 ```
 aws autoscaling describe-launch-configurations \
@@ -972,7 +1262,7 @@ Output:
     "LaunchConfigurations": [
         {
             "LaunchConfigurationName": "my-launch-config",
-            "LaunchConfigurationARN": "arn:aws:autoscaling:us-west-2:123456789012:launchConfiguration:98d3b196-4cf9-4e88-8ca1-8547c24ced8b:launchConfigurationName/my-launch-config",
+            "LaunchConfigurationARN": "arn:aws:autoscaling:us-west-2:123456789012:launchConfiguration:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:launchConfigurationName/my-launch-config",
             "ImageId": "ami-0528a5175983e7f28",
             "KeyName": "my-key-pair-uswest2",
             "SecurityGroups": [
@@ -1011,11 +1301,57 @@ Output:
 }
 ```
 **Example 2: To describe a specified number of launch configurations**
-To return a specific number of launch configurations, use the `--max-items` option.
+The following `describe-launch-configurations` example uses the `--max-items` option to return a specific number of launch configurations.
 
 ```
 aws autoscaling describe-launch-configurations \
     --max-items {{1}}
+```
+Output:
+
+```
+{
+    "LaunchConfigurations": [
+        {
+            "LaunchConfigurationName": "my-launch-config",
+            "LaunchConfigurationARN": "arn:aws:autoscaling:us-west-2:123456789012:launchConfiguration:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:launchConfigurationName/my-launch-config",
+            "ImageId": "ami-0528a5175983e7f28",
+            "KeyName": "my-key-pair-uswest2",
+            "SecurityGroups": [
+                "sg-05eaec502fcdadc2e"
+            ],
+            "ClassicLinkVPCSecurityGroups": [],
+            "UserData": "",
+            "InstanceType": "t2.micro",
+            "KernelId": "",
+            "RamdiskId": "",
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/xvda",
+                    "Ebs": {
+                        "SnapshotId": "snap-06c1606ba5ca274b1",
+                        "VolumeSize": 8,
+                        "VolumeType": "gp2",
+                        "DeleteOnTermination": true,
+                        "Encrypted": false
+                    }
+                }
+            ],
+            "InstanceMonitoring": {
+                "Enabled": true
+            },
+            "CreatedTime": "2020-10-28T02:39:22.321Z",
+            "EbsOptimized": false,
+            "AssociatePublicIpAddress": true,
+            "MetadataOptions": {
+                "HttpTokens": "required",
+                "HttpPutResponseHopLimit": 1,
+                "HttpEndpoint": "disabled"
+            }
+        }
+    ],
+    "NextToken": "Z3M3LMPEXAMPLE"
+}
 ```
 If the output includes a `NextToken` field, there are more launch configurations. To get the additional launch configurations, use the value of this field with the `--starting-token` option in a subsequent call as follows.
 
@@ -1023,6 +1359,7 @@ If the output includes a `NextToken` field, there are more launch configurations
 aws autoscaling describe-launch-configurations \
     --starting-token {{Z3M3LMPEXAMPLE}}
 ```
+For more information, see [Auto Scaling launch configurations](https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-configurations.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLaunchConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-launch-configurations.html) in *AWS CLI Command Reference*.
 
 ### `describe-lifecycle-hook-types`
@@ -1032,7 +1369,7 @@ The following code example shows how to use `describe-lifecycle-hook-types`.
 
 **AWS CLI**
 **To describe the available lifecycle hook types**
-This example describes the available lifecycle hook types.
+The following `describe-lifecycle-hook-types` example describes the available lifecycle hook types.
 
 ```
 aws autoscaling describe-lifecycle-hook-types
@@ -1047,6 +1384,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLifecycleHookTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-lifecycle-hook-types.html) in *AWS CLI Command Reference*.
 
 ### `describe-lifecycle-hooks`
@@ -1056,7 +1394,7 @@ The following code example shows how to use `describe-lifecycle-hooks`.
 
 **AWS CLI**
 **To describe your lifecycle hooks**
-This example describes the lifecycle hooks for the specified Auto Scaling group.
+The following `describe-lifecycle-hooks` example describes the lifecycle hooks for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-lifecycle-hooks \
@@ -1086,6 +1424,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLifecycleHooks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-lifecycle-hooks.html) in *AWS CLI Command Reference*.
 
 ### `describe-load-balancer-target-groups`
@@ -1095,7 +1434,7 @@ The following code example shows how to use `describe-load-balancer-target-group
 
 **AWS CLI**
 **To describe the load balancer target groups for an Auto Scaling group**
-This example describes the load balancer target groups attached to the specified Auto Scaling group.
+The following `describe-load-balancer-target-groups` example describes the load balancer target groups attached to the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-load-balancer-target-groups \
@@ -1113,6 +1452,7 @@ Output:
     ]
 }
 ```
+For more information, see [Use Elastic Load Balancing to distribute incoming application traffic in your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLoadBalancerTargetGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-load-balancer-target-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-load-balancers`
@@ -1122,7 +1462,7 @@ The following code example shows how to use `describe-load-balancers`.
 
 **AWS CLI**
 **To describe the Classic Load Balancers for an Auto Scaling group**
-This example describes the Classic Load Balancers for the specified Auto Scaling group.
+The following `describe-load-balancers` example describes the Classic Load Balancers for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-load-balancers \
@@ -1140,6 +1480,7 @@ Output:
     ]
 }
 ```
+For more information, see [Use Elastic Load Balancing to distribute incoming application traffic in your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeLoadBalancers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-load-balancers.html) in *AWS CLI Command Reference*.
 
 ### `describe-metric-collection-types`
@@ -1149,7 +1490,7 @@ The following code example shows how to use `describe-metric-collection-types`.
 
 **AWS CLI**
 **To describe the available metric collection types**
-This example describes the available metric collection types.
+The following `describe-metric-collection-types` example describes the available metric collection types.
 
 ```
 aws autoscaling describe-metric-collection-types
@@ -1206,7 +1547,7 @@ Output:
     ]
 }
 ```
-For more information, see [Auto Scaling group metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html#as-group-metrics) in the *Amazon EC2 Auto Scaling User Guide*.
+For more information, see [Auto Scaling group metrics](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribeMetricCollectionTypes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-metric-collection-types.html) in *AWS CLI Command Reference*.
 
 ### `describe-notification-configurations`
@@ -1216,7 +1557,7 @@ The following code example shows how to use `describe-notification-configuration
 
 **AWS CLI**
 **Example 1: To describe the notification configurations of a specified group**
-This example describes the notification configurations for the specified Auto Scaling group.
+The following `describe-notification-configurations` example describes the notification configurations for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-notification-configurations \
@@ -1241,8 +1582,8 @@ Output:
 }
 ```
 For more information, see [Getting Amazon SNS notifications when your Auto Scaling group scales](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ASGettingNotifications.html) in the *Amazon EC2 Auto Scaling User Guide*.
-**Example 1: To describe a specified number of notification configurations**
-To return a specific number of notification configurations, use the `max-items` parameter.
+**Example 2: To describe a specified number of notification configurations**
+The following `describe-notification-configurations` example uses the `--max-items` option to return a specific number of notification configurations.
 
 ```
 aws autoscaling describe-notification-configurations \
@@ -1284,7 +1625,7 @@ The following code example shows how to use `describe-policies`.
 
 **AWS CLI**
 **Example 1: To describe the scaling policies of a specified group**
-This example describes the scaling policies for the specified Auto Scaling group.
+The following `describe-policies` example describes the scaling policies for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-policies \
@@ -1298,7 +1639,7 @@ Output:
         {
             "AutoScalingGroupName": "my-asg",
             "PolicyName": "alb1000-target-tracking-scaling-policy",
-            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:3065d9c8-9969-4bec-bb6a-3fbe5550fde6:autoScalingGroupName/my-asg:policyName/alb1000-target-tracking-scaling-policy",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:policyName/alb1000-target-tracking-scaling-policy",
             "PolicyType": "TargetTrackingScaling",
             "StepAdjustments": [],
             "Alarms": [
@@ -1324,7 +1665,7 @@ Output:
         {
             "AutoScalingGroupName": "my-asg",
             "PolicyName": "cpu40-target-tracking-scaling-policy",
-            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:5fd26f71-39d4-4690-82a9-b8515c45cdde:autoScalingGroupName/my-asg:policyName/cpu40-target-tracking-scaling-policy",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:autoScalingGroupName/my-asg:policyName/cpu40-target-tracking-scaling-policy",
             "PolicyType": "TargetTrackingScaling",
             "StepAdjustments": [],
             "Alarms": [
@@ -1351,28 +1692,96 @@ Output:
 ```
 For more information, see [Dynamic scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To describe the scaling policies of a specified name**
-To return specific scaling policies, use the `--policy-names` option.
+The following `describe-policies` example uses the `--policy-names` option to return specific scaling policies.
 
 ```
 aws autoscaling describe-policies \
     --auto-scaling-group-name {{my-asg}} \
     --policy-names {{cpu40-target-tracking-scaling-policy}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "ScalingPolicies": [
+        {
+            "AutoScalingGroupName": "my-asg",
+            "PolicyName": "cpu40-target-tracking-scaling-policy",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222:autoScalingGroupName/my-asg:policyName/cpu40-target-tracking-scaling-policy",
+            "PolicyType": "TargetTrackingScaling",
+            "StepAdjustments": [],
+            "Alarms": [
+                {
+                    "AlarmName": "TargetTracking-my-asg-AlarmHigh-139f9789-37b9-42ad-bea5-b5b147d7f473",
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-my-asg-AlarmHigh-139f9789-37b9-42ad-bea5-b5b147d7f473"
+                },
+                {
+                    "AlarmName": "TargetTracking-my-asg-AlarmLow-bd681c67-fc18-4c56-8468-fb8e413009c9",
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-my-asg-AlarmLow-bd681c67-fc18-4c56-8468-fb8e413009c9"
+                }
+            ],
+            "TargetTrackingConfiguration": {
+                "PredefinedMetricSpecification": {
+                    "PredefinedMetricType": "ASGAverageCPUUtilization"
+                },
+                "TargetValue": 40.0,
+                "DisableScaleIn": false
+            },
+            "Enabled": true
+        }
+    ]
+}
+```
 For more information, see [Dynamic scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To describe a number of scaling policies**
-To return a specific number of policies, use the `--max-items` option.
+The following `describe-policies` example uses the `--max-items` option to return a specific number of policies.
 
 ```
 aws autoscaling describe-policies \
     --auto-scaling-group-name {{my-asg}} \
     --max-items {{1}}
 ```
-See example 1 for sample output.
+Output:
+
+```
+{
+    "ScalingPolicies": [
+        {
+            "AutoScalingGroupName": "my-asg",
+            "PolicyName": "alb1000-target-tracking-scaling-policy",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:policyName/alb1000-target-tracking-scaling-policy",
+            "PolicyType": "TargetTrackingScaling",
+            "StepAdjustments": [],
+            "Alarms": [
+                {
+                    "AlarmName": "TargetTracking-my-asg-AlarmHigh-924887a9-12d7-4e01-8686-6f844d13a196",
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-my-asg-AlarmHigh-924887a9-12d7-4e01-8686-6f844d13a196"
+                },
+                {
+                    "AlarmName": "TargetTracking-my-asg-AlarmLow-f96f899d-b8e7-4d09-a010-c1aaa35da296",
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:TargetTracking-my-asg-AlarmLow-f96f899d-b8e7-4d09-a010-c1aaa35da296"
+                }
+            ],
+            "TargetTrackingConfiguration": {
+                "PredefinedMetricSpecification": {
+                    "PredefinedMetricType": "ALBRequestCountPerTarget",
+                    "ResourceLabel": "app/my-alb/778d41231b141a0f/targetgroup/my-alb-target-group/943f017f100becff"
+                },
+                "TargetValue": 1000.0,
+                "DisableScaleIn": false
+            },
+            "Enabled": true
+        }
+    ],
+    "NextToken": "Z3M3LMPEXAMPLE"
+}
+```
 If the output includes a `NextToken` field, use the value of this field with the `--starting-token` option in a subsequent call to get the additional policies.
 
 ```
-aws autoscaling describe-policies --auto-scaling-group-name {{my-asg}} --starting-token {{Z3M3LMPEXAMPLE}}
+aws autoscaling describe-policies \
+    --auto-scaling-group-name {{my-asg}} \
+    --starting-token {{Z3M3LMPEXAMPLE}}
 ```
 For more information, see [Dynamic scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DescribePolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/describe-policies.html) in *AWS CLI Command Reference*.
@@ -1384,7 +1793,7 @@ The following code example shows how to use `describe-scaling-activities`.
 
 **AWS CLI**
 **Example 1: To describe scaling activities for the specified group**
-This example describes the scaling activities for the specified Auto Scaling group.
+The following `describe-scaling-activities` example describes the scaling activities for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-scaling-activities \
@@ -1396,7 +1805,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "f9f2d65b-f1f2-43e7-b46d-d86756459699",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description": "Launching a new EC2 instance: i-0d44425630326060f",
             "AutoScalingGroupName": "my-asg",
             "Cause": "At 2020-10-30T19:35:51Z a user request update of AutoScalingGroup constraints to min: 0, max: 16, desired: 16 changing the desired capacity from 0 to 16.  At 2020-10-30T19:36:07Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 16.",
@@ -1411,7 +1820,7 @@ Output:
 ```
 For more information, see [Verify a scaling activity for an Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-verify-scaling-activity.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To describe the scaling activities for a deleted group**
-To describe scaling activities after the Auto Scaling group has been deleted, add the `--include-deleted-groups` option.
+The following `describe-scaling-activities` example uses the `--include-deleted-groups` option to describe scaling activities after the Auto Scaling group has been deleted.
 
 ```
 aws autoscaling describe-scaling-activities \
@@ -1424,7 +1833,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "e1f5de0e-f93e-1417-34ac-092a76fba220",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Description": "Launching a new EC2 instance.  Status Reason: Your Spot request price of 0.001 is lower than the minimum required Spot request fulfillment price of 0.0031. Launching EC2 instance failed.",
             "AutoScalingGroupName": "my-asg",
             "Cause": "At 2021-01-13T20:47:24Z a user request update of AutoScalingGroup constraints to min: 1, max: 5, desired: 3 changing the desired capacity from 0 to 3.  At 2021-01-13T20:47:27Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 3.",
@@ -1435,14 +1844,14 @@ Output:
             "Progress": 100,
             "Details": "{\"Subnet ID\":\"subnet-5ea0c127\",\"Availability Zone\":\"us-west-2b\"}",
             "AutoScalingGroupState": "Deleted",
-            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:283179a2-f3ce-423d-93f6-66bb518232f7:autoScalingGroupName/my-asg"
+            "AutoScalingGroupARN": "arn:aws:autoscaling:us-west-2:123456789012:autoScalingGroup:a1b2c3d4-5678-90ab-cdef-EXAMPLE33333:autoScalingGroupName/my-asg"
         }
     ]
 }
 ```
 For more information, see [Troubleshoot Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/CHAP_Troubleshooting.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To describe a specified number of scaling activities**
-To return a specific number of activities, use the `--max-items` option.
+The following `describe-scaling-activities` example uses the `--max-items` option to return a specific number of activities.
 
 ```
 aws autoscaling describe-scaling-activities \
@@ -1454,7 +1863,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "f9f2d65b-f1f2-43e7-b46d-d86756459699",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description": "Launching a new EC2 instance: i-0d44425630326060f",
             "AutoScalingGroupName": "my-asg",
             "Cause": "At 2020-10-30T19:35:51Z a user request update of AutoScalingGroup constraints to min: 0, max: 16, desired: 16 changing the desired capacity from 0 to 16.  At 2020-10-30T19:36:07Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 16.",
@@ -1483,7 +1892,7 @@ The following code example shows how to use `describe-scaling-process-types`.
 
 **AWS CLI**
 **To describe the available process types**
-This example describes the available process types.
+The following `describe-scaling-process-types` example describes the available process types.
 
 ```
 aws autoscaling describe-scaling-process-types
@@ -1533,7 +1942,7 @@ The following code example shows how to use `describe-scheduled-actions`.
 
 **AWS CLI**
 **Example 1: To describe all scheduled actions**
-This example describes all your scheduled actions.
+The following `describe-scheduled-actions` example describes all your scheduled actions.
 
 ```
 aws autoscaling describe-scheduled-actions
@@ -1547,7 +1956,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -1560,7 +1969,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To describe scheduled actions for the specified group**
-To describe the scheduled actions for a specific Auto Scaling group, use the `--auto-scaling-group-name` option.
+The following `describe-scheduled-actions` example uses the `--auto-scaling-group-name` option to describe the scheduled actions for a specific Auto Scaling group.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -1575,7 +1984,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -1588,7 +1997,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To describe the specified scheduled action**
-To describe a specific scheduled action, use the `--scheduled-action-names` option.
+The following `describe-scheduled-actions` example uses the `--scheduled-action-names` option to describe a specific scheduled action.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -1603,7 +2012,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -1616,7 +2025,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 4: To describe scheduled actions with a specified start time**
-To describe the scheduled actions that start at a specific time, use the `--start-time` option.
+The following `describe-scheduled-actions` example uses the `--start-time` option to describe the scheduled actions that start at a specific time.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -1631,7 +2040,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -1644,7 +2053,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 5: To describe scheduled actions that end at a specified time**
-To describe the scheduled actions that end at a specific time, use the `--end-time` option.
+The following `describe-scheduled-actions` example uses the `--end-time` option to describe the scheduled actions that end at a specific time.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -1659,7 +2068,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -1672,7 +2081,7 @@ Output:
 ```
 For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 6: To describe a specified number of scheduled actions**
-To return a specific number of scheduled actions, use the `--max-items` option.
+The following `describe-scheduled-actions` example uses the `--max-items` option to return a specific number of scheduled actions.
 
 ```
 aws autoscaling describe-scheduled-actions \
@@ -1688,7 +2097,7 @@ Output:
             "AutoScalingGroupName": "my-asg",
             "ScheduledActionName": "my-recurring-action",
             "Recurrence": "30 0 1 1,6,12 *",
-            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:8e86b655-b2e6-4410-8f29-b4f094d6871c:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
+            "ScheduledActionARN": "arn:aws:autoscaling:us-west-2:123456789012:scheduledUpdateGroupAction:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:scheduledActionName/my-recurring-action",
             "StartTime": "2023-12-01T04:00:00Z",
             "Time": "2023-12-01T04:00:00Z",
             "MinSize": 1,
@@ -1715,8 +2124,8 @@ For more information, see [Scheduled scaling](https://docs.aws.amazon.com/autosc
 The following code example shows how to use `describe-tags`.
 
 **AWS CLI**
-**To describe all tags**
-This example describes all your tags.
+**Example 1: To describe all tags**
+The following `describe-tags` example describes all your tags.
 
 ```
 aws autoscaling describe-tags
@@ -1745,18 +2154,57 @@ Output:
 ```
 For more information, see [Tagging Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-tagging.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To describe tags for a specified group**
-To describe tags for a specific Auto Scaling group, use the `--filters` option.
+The following `describe-tags` example uses the `--filters` option to describe tags for a specific Auto Scaling group.
 
 ```
-aws autoscaling describe-tags --filters {{Name=auto-scaling-group,Values=my-asg}}
+aws autoscaling describe-tags \
+    --filters {{Name=auto-scaling-group,Values=my-asg}}
+```
+Output:
+
+```
+{
+    "Tags": [
+        {
+            "ResourceType": "auto-scaling-group",
+            "ResourceId": "my-asg",
+            "PropagateAtLaunch": true,
+            "Value": "Research",
+            "Key": "Dept"
+        },
+        {
+            "ResourceType": "auto-scaling-group",
+            "ResourceId": "my-asg",
+            "PropagateAtLaunch": true,
+            "Value": "WebServer",
+            "Key": "Role"
+        }
+    ]
+}
 ```
 For more information, see [Tagging Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-tagging.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To describe the specified number of tags**
-To return a specific number of tags, use the `--max-items` option.
+The following `describe-tags` example uses the `--max-items` option to return a specific number of tags.
 
 ```
 aws autoscaling describe-tags \
     --max-items {{1}}
+```
+Output:
+
+```
+{
+    "Tags": [
+        {
+            "ResourceType": "auto-scaling-group",
+            "ResourceId": "my-asg",
+            "PropagateAtLaunch": true,
+            "Value": "Research",
+            "Key": "Dept"
+        }
+    ],
+    "NextToken": "Z3M3LMPEXAMPLE"
+}
 ```
 If the output includes a `NextToken` field, there are more tags. To get the additional tags, use the value of this field with the `--starting-token` option in a subsequent call as follows.
 
@@ -1775,7 +2223,7 @@ The following code example shows how to use `describe-termination-policy-types`.
 
 **AWS CLI**
 **To describe available termination policy types**
-This example describes the available termination policy types.
+The following `describe-termination-policy-types` example describes the available termination policy types.
 
 ```
 aws autoscaling describe-termination-policy-types
@@ -1805,7 +2253,7 @@ The following code example shows how to use `describe-warm-pool`.
 
 **AWS CLI**
 **To describe a warm pool**
-This example describes the warm pool for the specified Auto Scaling group.
+The following `describe-warm-pool` example describes the warm pool for the specified Auto Scaling group.
 
 ```
 aws autoscaling describe-warm-pool \
@@ -1857,7 +2305,7 @@ The following code example shows how to use `detach-instances`.
 
 **AWS CLI**
 **To detach an instance from an Auto Scaling group**
-This example detaches the specified instance from the specified Auto Scaling group.
+The following `detach-instances` example detaches the specified instance from the specified Auto Scaling group.
 
 ```
 aws autoscaling detach-instances \
@@ -1871,7 +2319,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "5091cb52-547a-47ce-a236-c9ccbc2cb2c9",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Description": "Detaching EC2 instance: i-030017cfa84b20135",
             "Cause": "At 2020-10-31T17:35:04Z instance i-030017cfa84b20135 was detached in response to a user request, shrinking the capacity from 2 to 1.",
@@ -1883,6 +2331,7 @@ Output:
     ]
 }
 ```
+For more information, see [Detach or attach instances from your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-detach-attach-instances.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DetachInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/detach-instances.html) in *AWS CLI Command Reference*.
 
 ### `detach-load-balancer-target-groups`
@@ -1892,14 +2341,14 @@ The following code example shows how to use `detach-load-balancer-target-groups`
 
 **AWS CLI**
 **To detach a load balancer target group from an Auto Scaling group**
-This example detaches the specified load balancer target group from the specified Auto Scaling group.
+The following `detach-load-balancer-target-groups` example detaches the specified load balancer target group from the specified Auto Scaling group.
 
 ```
 aws autoscaling detach-load-balancer-target-groups \
     --auto-scaling-group-name {{my-asg}} \
     --target-group-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
-This command produces no output
+This command produces no output.
 For more information, see [Attaching a load balancer to your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DetachLoadBalancerTargetGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/detach-load-balancer-target-groups.html) in *AWS CLI Command Reference*.
 
@@ -1910,7 +2359,7 @@ The following code example shows how to use `detach-load-balancers`.
 
 **AWS CLI**
 **To detach a Classic Load Balancer from an Auto Scaling group**
-This example detaches the specified Classic Load Balancer from the specified Auto Scaling group.
+The following `detach-load-balancers` example detaches the specified Classic Load Balancer from the specified Auto Scaling group.
 
 ```
 aws autoscaling detach-load-balancers \
@@ -1928,7 +2377,7 @@ The following code example shows how to use `disable-metrics-collection`.
 
 **AWS CLI**
 **To disable metrics collection for an Auto Scaling group**
-This example disables collection of the `GroupDesiredCapacity` metric for the specified Auto Scaling group.
+The following `disable-metrics-collection` example disables collection of the `GroupDesiredCapacity` metric for the specified Auto Scaling group.
 
 ```
 aws autoscaling disable-metrics-collection \
@@ -1936,7 +2385,7 @@ aws autoscaling disable-metrics-collection \
     --metrics {{GroupDesiredCapacity}}
 ```
 This command produces no output.
-For more information, see [Monitoring CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
+For more information, see [Monitor CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-cloudwatch-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [DisableMetricsCollection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/disable-metrics-collection.html) in *AWS CLI Command Reference*.
 
 ### `enable-metrics-collection`
@@ -1946,7 +2395,7 @@ The following code example shows how to use `enable-metrics-collection`.
 
 **AWS CLI**
 **Example 1: To enable metrics collection for an Auto Scaling group**
-This example enables data collection for the specified Auto Scaling group.
+The following `enable-metrics-collection` example enables data collection for the specified Auto Scaling group.
 
 ```
 aws autoscaling enable-metrics-collection \
@@ -1956,12 +2405,13 @@ aws autoscaling enable-metrics-collection \
 This command produces no output.
 For more information, see [Monitoring CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To collect data for the specified metric for an Auto Scaling group**
-To collect data for a specific metric, use the `--metrics` option.
+The following `enable-metrics-collection` example collects data for the `GroupDesiredCapacity` metric for the specified Auto Scaling group by using the `--metrics` option.
 
 ```
 aws autoscaling enable-metrics-collection \
     --auto-scaling-group-name {{my-asg}} \
-    --metrics {{GroupDesiredCapacity}} --granularity {{"1Minute"}}
+    --metrics {{GroupDesiredCapacity}} \
+    --granularity {{"1Minute"}}
 ```
 This command produces no output.
 For more information, see [Monitoring CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -1974,7 +2424,7 @@ The following code example shows how to use `enter-standby`.
 
 **AWS CLI**
 **To move instances into standby mode**
-This example puts the specified instance into standby mode. This is useful for updating or troubleshooting an instance that is currently in service.
+The following `enter-standby` example puts the specified instance into standby mode. This is useful for updating or troubleshooting an instance that is currently in service.
 
 ```
 aws autoscaling enter-standby \
@@ -1988,7 +2438,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "ffa056b4-6ed3-41ba-ae7c-249dfae6eba1",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Description": "Moving EC2 instance to Standby: i-061c63c5eb45f0416",
             "Cause": "At 2020-10-31T20:31:00Z instance i-061c63c5eb45f0416 was moved to standby in response to a user request, shrinking the capacity from 1 to 0.",
@@ -2010,7 +2460,7 @@ The following code example shows how to use `execute-policy`.
 
 **AWS CLI**
 **To execute a scaling policy**
-This example executes the scaling policy named `my-step-scale-out-policy` for the specified Auto Scaling group.
+The following `execute-policy` example executes the scaling policy named `my-step-scale-out-policy` for the specified Auto Scaling group.
 
 ```
 aws autoscaling execute-policy \
@@ -2020,7 +2470,7 @@ aws autoscaling execute-policy \
     --breach-threshold {{80}}
 ```
 This command produces no output.
-For more information, see [Step and simple scaling policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html) in the *Amazon EC2 Auto Scaling User Guide*.
+For more information, see [Step and simple scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [ExecutePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/execute-policy.html) in *AWS CLI Command Reference*.
 
 ### `exit-standby`
@@ -2030,7 +2480,7 @@ The following code example shows how to use `exit-standby`.
 
 **AWS CLI**
 **To move instances out of standby mode**
-This example moves the specified instance out of standby mode.
+The following `exit-standby` example moves the specified instance out of standby mode.
 
 ```
 aws autoscaling exit-standby \
@@ -2043,7 +2493,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "142928e1-a2dc-453a-9b24-b85ad6735928",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Description": "Moving EC2 instance out of Standby: i-061c63c5eb45f0416",
             "Cause": "At 2020-10-31T20:32:50Z instance i-061c63c5eb45f0416 was moved out of standby in response to a user request, increasing the capacity from 0 to 1.",
@@ -2065,7 +2515,7 @@ The following code example shows how to use `put-lifecycle-hook`.
 
 **AWS CLI**
 **Example 1: To create a lifecycle hook**
-This example creates a lifecycle hook that will invoke on any newly launched instances, with a timeout of 4800 seconds. This is useful for keeping the instances in a wait state until the user data scripts have finished, or for invoking an AWS Lambda function using EventBridge.
+The following `put-lifecycle-hook` example creates a lifecycle hook that will invoke on any newly launched instances, with a timeout of 4800 seconds. This is useful for keeping the instances in a wait state until the user data scripts have finished, or for invoking an AWS Lambda function using EventBridge.
 
 ```
 aws autoscaling put-lifecycle-hook \
@@ -2077,7 +2527,7 @@ aws autoscaling put-lifecycle-hook \
 This command produces no output. If a lifecycle hook with the same name already exists, it will be overwritten by the new lifecycle hook.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To send an Amazon SNS email message to notify you of instance state transitions**
-This example creates a lifecycle hook with the Amazon SNS topic and IAM role to use to receive notification at instance launch.
+The following `put-lifecycle-hook` example creates a lifecycle hook with the Amazon SNS topic and IAM role to use to receive notification at instance launch.
 
 ```
 aws autoscaling put-lifecycle-hook \
@@ -2090,7 +2540,7 @@ aws autoscaling put-lifecycle-hook \
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To publish a message to an Amazon SQS queue**
-This example creates a lifecycle hook that publishes a message with metadata to the specified Amazon SQS queue.
+The following `put-lifecycle-hook` example creates a lifecycle hook that publishes a message with metadata to the specified Amazon SQS queue.
 
 ```
 aws autoscaling put-lifecycle-hook \
@@ -2112,7 +2562,7 @@ The following code example shows how to use `put-notification-configuration`.
 
 **AWS CLI**
 **To add a notification**
-This example adds the specified notification to the specified Auto Scaling group.
+The following `put-notification-configuration` example adds the specified notification to the specified Auto Scaling group.
 
 ```
 aws autoscaling put-notification-configuration \
@@ -2134,38 +2584,39 @@ The following code example shows how to use `put-scaling-policy`.
 The following `put-scaling-policy` example applies a target tracking scaling policy to the specified Auto Scaling group. The output contains the ARNs and names of the two CloudWatch alarms created on your behalf. If a scaling policy with the same name already exists, it will be overwritten by the new scaling policy.
 
 ```
-aws autoscaling put-scaling-policy --auto-scaling-group-name {{my-asg}} \
-  --policy-name {{alb1000-target-tracking-scaling-policy}} \
-  --policy-type {{TargetTrackingScaling}} \
-  --target-tracking-configuration {{file://config.json}}
+aws autoscaling put-scaling-policy \
+    --auto-scaling-group-name {{my-asg}} \
+    --policy-name {{alb1000-target-tracking-scaling-policy}} \
+    --policy-type {{TargetTrackingScaling}} \
+    --target-tracking-configuration {{file://config.json}}
 ```
 Contents of `config.json`:
 
 ```
 {
-     "TargetValue": 1000.0,
-     "PredefinedMetricSpecification": {
-          "PredefinedMetricType": "ALBRequestCountPerTarget",
-          "ResourceLabel": "app/my-alb/778d41231b141a0f/targetgroup/my-alb-target-group/943f017f100becff"
-     }
+    "TargetValue": 1000.0,
+    "PredefinedMetricSpecification": {
+        "PredefinedMetricType": "ALBRequestCountPerTarget",
+        "ResourceLabel": "app/my-alb/778d41231b141a0f/targetgroup/my-alb-target-group/943f017f100becff"
+    }
 }
 ```
 Output:
 
 ```
 {
-     "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:228f02c2-c665-4bfd-aaac-8b04080bea3c:autoScalingGroupName/my-asg:policyName/alb1000-target-tracking-scaling-policy",
-     "Alarms": [
-         {
-             "AlarmARN": "arn:aws:cloudwatch:region:account-id:alarm:TargetTracking-my-asg-AlarmHigh-fc0e4183-23ac-497e-9992-691c9980c38e",
-             "AlarmName": "TargetTracking-my-asg-AlarmHigh-fc0e4183-23ac-497e-9992-691c9980c38e"
-         },
-         {
-             "AlarmARN": "arn:aws:cloudwatch:region:account-id:alarm:TargetTracking-my-asg-AlarmLow-61a39305-ed0c-47af-bd9e-471a352ee1a2",
-             "AlarmName": "TargetTracking-my-asg-AlarmLow-61a39305-ed0c-47af-bd9e-471a352ee1a2"
-         }
-     ]
- }
+    "PolicyARN": "arn:aws:autoscaling:region:account-id:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:autoScalingGroupName/my-asg:policyName/alb1000-target-tracking-scaling-policy",
+    "Alarms": [
+        {
+            "AlarmARN": "arn:aws:cloudwatch:region:account-id:alarm:TargetTracking-my-asg-AlarmHigh-fc0e4183-23ac-497e-9992-691c9980c38e",
+            "AlarmName": "TargetTracking-my-asg-AlarmHigh-fc0e4183-23ac-497e-9992-691c9980c38e"
+        },
+        {
+            "AlarmARN": "arn:aws:cloudwatch:region:account-id:alarm:TargetTracking-my-asg-AlarmLow-61a39305-ed0c-47af-bd9e-471a352ee1a2",
+            "AlarmName": "TargetTracking-my-asg-AlarmLow-61a39305-ed0c-47af-bd9e-471a352ee1a2"
+        }
+    ]
+}
 ```
 For more examples, see [Example scaling policies for the AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/autoscaling/ec2/userguide/examples-scaling-policies.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [PutScalingPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/put-scaling-policy.html) in *AWS CLI Command Reference*.
@@ -2177,7 +2628,7 @@ The following code example shows how to use `put-scheduled-update-group-action`.
 
 **AWS CLI**
 **Example 1: To add a scheduled action to an Auto Scaling group**
-This example adds the specified scheduled action to the specified Auto Scaling group.
+The following `put-scheduled-update-group-action` example adds the specified scheduled action to the specified Auto Scaling group.
 
 ```
 aws autoscaling put-scheduled-update-group-action \
@@ -2191,7 +2642,7 @@ aws autoscaling put-scheduled-update-group-action \
 This command produces no output. If a scheduled action with the same name already exists, it will be overwritten by the new scheduled action.
 For more examples, see [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To specify a recurring schedule**
-This example creates a scheduled action to scale on a recurring schedule that is scheduled to execute at 00:30 hours on the first of January, June, and December every year.
+The following `put-scheduled-update-group-action` example creates a scheduled action to scale on a recurring schedule that is scheduled to execute at 00:30 hours on the first of January, June, and December every year.
 
 ```
 aws autoscaling put-scheduled-update-group-action \
@@ -2213,7 +2664,7 @@ The following code example shows how to use `put-warm-pool`.
 
 **AWS CLI**
 **To create a warm pool**
-The following example creates a warm pool for the specified Auto Scaling group.
+The following `put-warm-pool` example creates a warm pool for the specified Auto Scaling group.
 
 ```
 aws autoscaling put-warm-pool \
@@ -2231,13 +2682,13 @@ The following code example shows how to use `record-lifecycle-action-heartbeat`.
 
 **AWS CLI**
 **To record a lifecycle action heartbeat**
-This example records a lifecycle action heartbeat to keep the instance in a pending state.
+The following `record-lifecycle-action-heartbeat` example records a lifecycle action heartbeat to keep the instance in a pending state.
 
 ```
 aws autoscaling record-lifecycle-action-heartbeat \
     --lifecycle-hook-name {{my-launch-hook}} \
     --auto-scaling-group-name {{my-asg}} \
-    --lifecycle-action-token {{bcd2f1b8-9a78-44d3-8a7a-4dd07d7cf635}}
+    --lifecycle-action-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -2250,7 +2701,7 @@ The following code example shows how to use `resume-processes`.
 
 **AWS CLI**
 **To resume suspended processes**
-This example resumes the specified suspended scaling process for the specified Auto Scaling group.
+The following `resume-processes` example resumes the specified suspended scaling process for the specified Auto Scaling group.
 
 ```
 aws autoscaling resume-processes \
@@ -2278,7 +2729,7 @@ Output:
 
 ```
 {
-    "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
+    "InstanceRefreshId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Undo changes with a rollback](https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-refresh-rollback.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -2291,7 +2742,7 @@ The following code example shows how to use `set-desired-capacity`.
 
 **AWS CLI**
 **To set the desired capacity for an Auto Scaling group**
-This example sets the desired capacity for the specified Auto Scaling group.
+The following `set-desired-capacity` example sets the desired capacity for the specified Auto Scaling group.
 
 ```
 aws autoscaling set-desired-capacity \
@@ -2299,7 +2750,9 @@ aws autoscaling set-desired-capacity \
     --desired-capacity {{2}} \
     --honor-cooldown
 ```
+This command produces no output.
 This command returns to the prompt if successful.
+For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-manually.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [SetDesiredCapacity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-desired-capacity.html) in *AWS CLI Command Reference*.
 
 ### `set-instance-health`
@@ -2309,7 +2762,7 @@ The following code example shows how to use `set-instance-health`.
 
 **AWS CLI**
 **To set the health status of an instance**
-This example sets the health status of the specified instance to `Unhealthy`.
+The following `set-instance-health` example sets the health status of the specified instance to `Unhealthy`.
 
 ```
 aws autoscaling set-instance-health \
@@ -2317,6 +2770,7 @@ aws autoscaling set-instance-health \
     --health-status {{Unhealthy}}
 ```
 This command produces no output.
+For more information, see [Set up a custom health check for your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/set-up-a-custom-health-check.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [SetInstanceHealth](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-instance-health.html) in *AWS CLI Command Reference*.
 
 ### `set-instance-protection`
@@ -2326,16 +2780,18 @@ The following code example shows how to use `set-instance-protection`.
 
 **AWS CLI**
 **Example 1: To enable the instance protection setting for an instance**
-This example enables instance protection for the specified instance.
+The following `set-instance-protection` example enables instance protection for the specified instance.
 
 ```
 aws autoscaling set-instance-protection \
     --instance-ids {{i-061c63c5eb45f0416}} \
-    --auto-scaling-group-name {{my-asg}} --protected-from-scale-in
+    --auto-scaling-group-name {{my-asg}} \
+    --protected-from-scale-in
 ```
 This command produces no output.
+For more information, see [Use instance scale-in protection to control instance termination](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-instance-protection.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To disable the instance protection setting for an instance**
-This example disables instance protection for the specified instance.
+The following `set-instance-protection` example disables instance protection for the specified instance.
 
 ```
 aws autoscaling set-instance-protection \
@@ -2344,6 +2800,7 @@ aws autoscaling set-instance-protection \
     --no-protected-from-scale-in
 ```
 This command produces no output.
+For more information, see [Use instance scale-in protection to control instance termination](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-instance-protection.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [SetInstanceProtection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-instance-protection.html) in *AWS CLI Command Reference*.
 
 ### `start-instance-refresh`
@@ -2364,7 +2821,7 @@ Output:
 
 ```
 {
-    "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
+    "InstanceRefreshId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Start an instance refresh](https://docs.aws.amazon.com/en_us/autoscaling/ec2/userguide/start-instance-refresh.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -2399,7 +2856,7 @@ Output:
 
 ```
 {
-    "InstanceRefreshId": "08b91cf7-8fa6-48af-b6a6-d227f40f1b9b"
+    "InstanceRefreshId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Start an instance refresh](https://docs.aws.amazon.com/en_us/autoscaling/ec2/userguide/start-instance-refresh.html) in the *Amazon EC2 Auto Scaling User Guide*.
@@ -2412,7 +2869,7 @@ The following code example shows how to use `suspend-processes`.
 
 **AWS CLI**
 **To suspend Auto Scaling processes**
-This example suspends the specified scaling process for the specified Auto Scaling group.
+The following `suspend-processes` example suspends the specified scaling process for the specified Auto Scaling group.
 
 ```
 aws autoscaling suspend-processes \
@@ -2430,7 +2887,7 @@ The following code example shows how to use `terminate-instance-in-auto-scaling-
 
 **AWS CLI**
 **To terminate an instance in an Auto Scaling group**
-This example terminates the specified instance from the specified Auto Scaling group without updating the size of the group. Amazon EC2 Auto Scaling launches a replacement instance after the specified instance terminates.
+The following `terminate-instance-in-auto-scaling-group` example terminates the specified instance from the specified Auto Scaling group without updating the size of the group. Amazon EC2 Auto Scaling launches a replacement instance after the specified instance terminates.
 
 ```
 aws autoscaling terminate-instance-in-auto-scaling-group \
@@ -2443,7 +2900,7 @@ Output:
 {
     "Activities": [
         {
-            "ActivityId": "8c35d601-793c-400c-fcd0-f64a27530df7",
+            "ActivityId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "AutoScalingGroupName": "my-asg",
             "Description": "Terminating EC2 instance: i-061c63c5eb45f0416",
             "Cause": "",
@@ -2455,6 +2912,7 @@ Output:
     ]
 }
 ```
+For more information, see [Manual scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-manually.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [TerminateInstanceInAutoScalingGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/terminate-instance-in-auto-scaling-group.html) in *AWS CLI Command Reference*.
 
 ### `update-auto-scaling-group`
@@ -2464,7 +2922,7 @@ The following code example shows how to use `update-auto-scaling-group`.
 
 **AWS CLI**
 **Example 1: To update the size limits of an Auto Scaling group**
-This example updates the specified Auto Scaling group with a minimum size of 2 and a maximum size of 10.
+The following `update-auto-scaling-group` example updates the specified Auto Scaling group with a minimum size of 2 and a maximum size of 10.
 
 ```
 aws autoscaling update-auto-scaling-group \
@@ -2475,7 +2933,7 @@ aws autoscaling update-auto-scaling-group \
 This command produces no output.
 For more information, see [Setting capacity limits for your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/asg-capacity-limits.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 2: To add Elastic Load Balancing health checks and specify which Availability Zones and subnets to use**
-This example updates the specified Auto Scaling group to add Elastic Load Balancing health checks. This command also updates the value of `--vpc-zone-identifier` with a list of subnet IDs in multiple Availability Zones.
+The following `update-auto-scaling-group` example updates the specified Auto Scaling group to add Elastic Load Balancing health checks. This command also updates the value of `--vpc-zone-identifier` with a list of subnet IDs in multiple Availability Zones.
 
 ```
 aws autoscaling update-auto-scaling-group \
@@ -2487,7 +2945,7 @@ aws autoscaling update-auto-scaling-group \
 This command produces no output.
 For more information, see [Elastic Load Balancing and Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 3: To update the placement group and termination policy**
-This example updates the placement group and termination policy to use.
+The following `update-auto-scaling-group` example updates the placement group and termination policy to use.
 
 ```
 aws autoscaling update-auto-scaling-group \
@@ -2498,7 +2956,7 @@ aws autoscaling update-auto-scaling-group \
 This command produces no output.
 For more information, see [Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 4: To use the latest version of the launch template**
-This example updates the specified Auto Scaling group to use the latest version of the specified launch template.
+The following `update-auto-scaling-group` example updates the specified Auto Scaling group to use the latest version of the specified launch template.
 
 ```
 aws autoscaling update-auto-scaling-group \
@@ -2508,7 +2966,7 @@ aws autoscaling update-auto-scaling-group \
 This command produces no output.
 For more information, see [Launch templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchTemplates.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 5: To use a specific version of the launch template**
-This example updates the specified Auto Scaling group to use a specific version of a launch template instead of the latest or default version.
+The following `update-auto-scaling-group` example updates the specified Auto Scaling group to use a specific version of a launch template instead of the latest or default version.
 
 ```
 aws autoscaling update-auto-scaling-group \
@@ -2518,7 +2976,7 @@ aws autoscaling update-auto-scaling-group \
 This command produces no output.
 For more information, see [Launch templates](https://docs.aws.amazon.com/autoscaling/ec2/userguide/LaunchTemplates.html) in the *Amazon EC2 Auto Scaling User Guide*.
 **Example 6: To define a mixed instances policy and enable capacity rebalancing**
-This example updates the specified Auto Scaling group to use a mixed instances policy and enables capacity rebalancing. This structure lets you specify groups with Spot and On-Demand capacities and use different launch templates for different architectures.
+The following `update-auto-scaling-group` example updates the specified Auto Scaling group to use a mixed instances policy and enables capacity rebalancing. This structure lets you specify groups with Spot and On-Demand capacities and use different launch templates for different architectures.
 
 ```
 aws autoscaling update-auto-scaling-group \

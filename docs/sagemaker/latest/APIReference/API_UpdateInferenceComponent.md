@@ -40,6 +40,7 @@ Updates an inference component.
    "Specification": {
       "BaseInferenceComponentName": "{{string}}",
       "ComputeResourceRequirements": {
+         "AcceleratorPartitionType": "{{string}}",
          "MaxMemoryRequiredInMb": {{number}},
          "MinMemoryRequiredInMb": {{number}},
          "NumberOfAcceleratorDevicesRequired": {{number}},
@@ -81,6 +82,7 @@ Updates an inference component.
       {
          "BaseInferenceComponentName": "{{string}}",
          "ComputeResourceRequirements": {
+            "AcceleratorPartitionType": "{{string}}",
             "MaxMemoryRequiredInMb": {{number}},
             "MinMemoryRequiredInMb": {{number}},
             "NumberOfAcceleratorDevicesRequired": {{number}},

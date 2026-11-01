@@ -41,7 +41,7 @@ Contents of `create-component.json`:
     "description": "An example component that builds, validates and tests an image",
     "changeDescription": "Initial version.",
     "platform": "Windows",
-    "uri": "s3://s3-bucket-name/s3-bucket-path/component.yaml"
+    "uri": "s3://amzn-s3-demo-bucket/s3-bucket-path/component.yaml"
 }
 ```
 Output:
@@ -53,7 +53,7 @@ Output:
     "componentBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:component/examplecomponent/2019.12.02/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [CreateComponent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/create-component.html) in *AWS CLI Command Reference*.
 
 ### `create-distribution-configuration`
@@ -117,7 +117,7 @@ Output:
     "distributionConfigurationArn": "arn:aws:imagebuilder:us-west-2:123456789012:distribution-configuration/myexampledistribution"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [CreateDistributionConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/create-distribution-configuration.html) in *AWS CLI Command Reference*.
 
 ### `create-image-pipeline`
@@ -162,7 +162,7 @@ Output:
     "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-pipeline/mywindows2016pipeline"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [CreateImagePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/create-image-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `create-image-recipe`
@@ -206,7 +206,7 @@ Output:
     "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/mybasicrecipe/2019.12.03"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [CreateImageRecipe](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/create-image-recipe.html) in *AWS CLI Command Reference*.
 
 ### `create-image`
@@ -232,7 +232,7 @@ Output:
     "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:image/mybasicrecipe/2019.12.03/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [CreateImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/create-image.html) in *AWS CLI Command Reference*.
 
 ### `create-infrastructure-configuration`
@@ -282,7 +282,7 @@ Output:
     "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:123456789012:infrastructure-configuration/myexampleinfrastructure"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [CreateInfrastructureConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/create-infrastructure-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-component`
@@ -306,7 +306,7 @@ Output:
     "componentBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:component/myexamplecomponent/2019.12.02/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [DeleteComponent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/delete-component.html) in *AWS CLI Command Reference*.
 
 ### `delete-image-pipeline`
@@ -330,7 +330,7 @@ Output:
     "imagePipelineArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-pipeline/mywindows2016pipeline"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [DeleteImagePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/delete-image-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `delete-image-recipe`
@@ -344,7 +344,7 @@ The following `delete-image-recipe` example deletes an image recipe by specifyin
 
 ```
 aws imagebuilder delete-image-recipe \
-    --image-recipe-arn {{arn:aws:imagebuilder:us-east-1:123456789012:image-recipe/mybasicrecipe/2019.12.03}}
+    --image-recipe-arn {{arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/mybasicrecipe/2019.12.03}}
 ```
 Output:
 
@@ -354,7 +354,7 @@ Output:
     "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/mybasicrecipe/2019.12.03"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [DeleteImageRecipe](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/delete-image-recipe.html) in *AWS CLI Command Reference*.
 
 ### `delete-image`
@@ -378,7 +378,7 @@ Output:
     "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:image/mybasicrecipe/2019.12.03/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [DeleteImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/delete-image.html) in *AWS CLI Command Reference*.
 
 ### `delete-infrastructure-configuration`
@@ -392,7 +392,7 @@ The following `delete-infrastructure-configuration` example deletes an image pip
 
 ```
 aws imagebuilder delete-infrastructure-configuration \
-    --infrastructure-configuration-arn {{arn:aws:imagebuilder:us-east-1:123456789012:infrastructure-configuration/myexampleinfrastructure}}
+    --infrastructure-configuration-arn {{arn:aws:imagebuilder:us-west-2:123456789012:infrastructure-configuration/myexampleinfrastructure}}
 ```
 Output:
 
@@ -402,7 +402,7 @@ Output:
     "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:123456789012:infrastructure-configuration/myexampleinfrastructure"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [DeleteInfrastructureConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/delete-infrastructure-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-component-policy`
@@ -422,10 +422,11 @@ Output:
 
 ```
 {
-    "Policy": "{ "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Principal": { "AWS": [ "123456789012" ] }, "Action": [ "imagebuilder:GetComponent", "imagebuilder:ListComponents" ], "Resource": [ "arn:aws:imagebuilder:us-west-2:123456789012:component/my-example-component/2019.12.03/1" ] } ] }"
+    "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "policy": "{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Effect\": \"Allow\", \"Principal\": { \"AWS\": [ \"123456789012\" ] }, \"Action\": [ \"imagebuilder:GetComponent\", \"imagebuilder:ListComponents\" ], \"Resource\": [ \"arn:aws:imagebuilder:us-west-2:123456789012:component/my-example-component/2019.12.03/1\" ] } ] }"
 }
 ```
-For more information, see Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI <https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html>`\_\_ in the *EC2 Image Builder Users Guide*.
+For more information, see [Share Image Builder resources with AWS RAM](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-shared-resources.html) in the *EC2 Image Builder User Guide*.
 +  For API details, see [GetComponentPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-component-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-component`
@@ -460,7 +461,7 @@ Output:
     }
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetComponent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-component.html) in *AWS CLI Command Reference*.
 
 ### `get-distribution-configuration`
@@ -521,7 +522,7 @@ Output:
     }
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetDistributionConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-distribution-configuration.html) in *AWS CLI Command Reference*.
 
 ### `get-image-pipeline`
@@ -565,7 +566,7 @@ Output:
     }
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetImagePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-image-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `get-image-policy`
@@ -585,10 +586,11 @@ Output:
 
 ```
 {
-    "Policy": "{ "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Principal": { "AWS": [ "123456789012" ] }, "Action": [ "imagebuilder:GetImage", "imagebuilder:ListImages" ], "Resource": [ "arn:aws:imagebuilder:us-west-2:123456789012:image/my-example-image/2019.12.03/1" ] } ] }"
+    "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "policy": "{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Effect\": \"Allow\", \"Principal\": { \"AWS\": [ \"123456789012\" ] }, \"Action\": [ \"imagebuilder:GetImage\", \"imagebuilder:ListImages\" ], \"Resource\": [ \"arn:aws:imagebuilder:us-west-2:123456789012:image/my-example-image/2019.12.03/1\" ] } ] }"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetImagePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-image-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-image-recipe-policy`
@@ -608,10 +610,10 @@ Output:
 
 ```
 {
-    "Policy": "{ "Version":"2012-10-17",		 	 	  "Statement": [ { "Effect": "Allow", "Principal": { "AWS": [ "123456789012" ] }, "Action": [ "imagebuilder:GetImageRecipe", "imagebuilder:ListImageRecipes" ], "Resource": [ "arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/my-example-image-recipe/2019.12.03/1" ] } ] }"
+    "policy": "{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Effect\": \"Allow\", \"Principal\": { \"AWS\": [ \"123456789012\" ] }, \"Action\": [ \"imagebuilder:GetImageRecipe\", \"imagebuilder:ListImageRecipes\" ], \"Resource\": [ \"arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/my-example-image-recipe/2019.12.03/1\" ] } ] }"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetImageRecipePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-image-recipe-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-image`
@@ -695,7 +697,7 @@ Output:
     }
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-image.html) in *AWS CLI Command Reference*.
 
 ### `get-infrastructure-configuration`
@@ -743,7 +745,7 @@ Output:
     }
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [GetInfrastructureConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-infrastructure-configuration.html) in *AWS CLI Command Reference*.
 
 ### `import-component`
@@ -770,7 +772,7 @@ Contents of `import-component.json`:
     "format": "SHELL",
     "platform": "Windows",
     "type": "BUILD",
-    "uri": "s3://s3-bucket-name/s3-bucket-path/component.yaml"
+    "uri": "s3://amzn-s3-demo-bucket/s3-bucket-path/component.yaml"
 }
 ```
 Output:
@@ -782,7 +784,7 @@ Output:
     "componentBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:component/myimportedcomponent/1.0.0/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ImportComponent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/import-component.html) in *AWS CLI Command Reference*.
 
 ### `list-component-build-versions`
@@ -795,7 +797,8 @@ The following code example shows how to use `list-component-build-versions`.
 The following `list-component-build-versions` example lists the component build versions with a specific semantic version.
 
 ```
-aws imagebuilder list-component-build-versions --component-version-arn {{arn:aws:imagebuilder:us-west-2:123456789012:component/myexamplecomponent/2019.12.02}}
+aws imagebuilder list-component-build-versions \
+    --component-version-arn {{arn:aws:imagebuilder:us-west-2:123456789012:component/myexamplecomponent/2019.12.02}}
 ```
 Output:
 
@@ -820,7 +823,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListComponentBuildVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-component-build-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-components`
@@ -853,7 +856,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListComponents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-components.html) in *AWS CLI Command Reference*.
 
 ### `list-distribution-configurations`
@@ -886,7 +889,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListDistributionConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-distribution-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-image-build-versions`
@@ -1044,7 +1047,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListImageBuildVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-image-build-versions.html) in *AWS CLI Command Reference*.
 
 ### `list-image-pipeline-images`
@@ -1065,43 +1068,27 @@ Output:
 ```
 {
     "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-    "imagePipelineList": [
+    "imageSummaryList": [
         {
-            "arn": "arn:aws:imagebuilder:us-west-2:123456789012:image-pipeline/mywindows2016pipeline",
-            "name": "MyWindows2016Pipeline",
-            "description": "Builds Windows 2016 Images",
+            "arn": "arn:aws:imagebuilder:us-west-2:123456789012:image/mybasicrecipe/2019.12.03/1",
+            "name": "MyBasicRecipe",
+            "version": "2019.12.03/1",
             "platform": "Windows",
-            "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/mybasicrecipe/2019.12.03",
-            "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:123456789012:infrastructure-configuration/myexampleinfrastructure",
-            "distributionConfigurationArn": "arn:aws:imagebuilder:us-west-2:123456789012:distribution-configuration/myexampledistribution",
-            "imageTestsConfiguration": {
-                "imageTestsEnabled": true,
-                "timeoutMinutes": 60
+            "state": {
+                "status": "AVAILABLE"
             },
-            "schedule": {
-                "scheduleExpression": "cron(0 0 * * SUN)",
-                "pipelineExecutionStartCondition": "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE"
-            },
-            "status": "ENABLED",
+            "owner": "123456789012",
             "dateCreated": "2020-02-19T19:04:01.253Z",
-            "dateUpdated": "2020-02-19T19:04:01.253Z",
-            "tags": {
-                "KeyName": "KeyValue"
-            }
-        },
-        {
-            "arn": "arn:aws:imagebuilder:us-west-2:123456789012:image-pipeline/sam",
-            "name": "PipelineName",
-            "platform": "Linux",
-            "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/recipe-name-a1b2c3d45678/1.0.0",
-            "infrastructureConfigurationArn": "arn:aws:imagebuilder:us-west-2:123456789012:infrastructure-configuration/infrastructureconfiguration-name-a1b2c3d45678",
-            "imageTestsConfiguration": {
-                "imageTestsEnabled": true,
-                "timeoutMinutes": 720
+            "outputResources": {
+                "amis": [
+                    {
+                        "region": "us-west-2",
+                        "image": "ami-a1b2c3d4567890ab",
+                        "name": "MyBasicRecipe 2020-02-19T19-04-01.253Z",
+                        "description": "Builds Windows 2016 Images"
+                    }
+                ]
             },
-            "status": "ENABLED",
-            "dateCreated": "2019-12-16T18:19:02.068Z",
-            "dateUpdated": "2019-12-16T18:19:02.068Z",
             "tags": {
                 "KeyName": "KeyValue"
             }
@@ -1109,7 +1096,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListImagePipelineImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-image-pipeline-images.html) in *AWS CLI Command Reference*.
 
 ### `list-image-recipes`
@@ -1155,7 +1142,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListImageRecipes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-image-recipes.html) in *AWS CLI Command Reference*.
 
 ### `list-images`
@@ -1187,7 +1174,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-images.html) in *AWS CLI Command Reference*.
 
 ### `list-infrastructure-configurations`
@@ -1226,7 +1213,7 @@ Output:
     ]
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListInfrastructureConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-infrastructure-configurations.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1251,7 +1238,7 @@ Output:
     }
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `put-component-policy`
@@ -1261,7 +1248,7 @@ The following code example shows how to use `put-component-policy`.
 
 **AWS CLI**
 **To apply a resource policy to a component**
-The following `put-component-policy` command applies a resource policy to a build component to enable cross-account sharing of build components. We recommend you use the RAM CLI command `create-resource-share`. If you use the EC2 Image Builder CLI command `put-component-policy`, you must also use the RAM CLI command `promote-resource-share-create-from-policy` in order for the resource to be visible to all principals with whom the resource is shared.
+The following `put-component-policy` example applies a resource policy to a build component to enable cross-account sharing of build components. We recommend you use the RAM CLI command `create-resource-share`. If you use the EC2 Image Builder CLI command `put-component-policy`, you must also use the RAM CLI command `promote-resource-share-create-from-policy` in order for the resource to be visible to all principals with whom the resource is shared.
 
 ```
 aws imagebuilder put-component-policy \
@@ -1276,7 +1263,7 @@ Output:
     "componentArn": "arn:aws:imagebuilder:us-west-2:123456789012:component/examplecomponent/2019.12.02/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [PutComponentPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/put-component-policy.html) in *AWS CLI Command Reference*.
 
 ### `put-image-policy`
@@ -1286,7 +1273,7 @@ The following code example shows how to use `put-image-policy`.
 
 **AWS CLI**
 **To apply a resource policy to an image**
-The following `put-image-policy` command applies a resource policy to an image to enable cross-account sharing of images. We recommend you use the RAM CLI command create-resource-share. If you use the EC2 Image Builder CLI command put-image-policy, you must also use the RAM CLI command promote-resource-share-create-from-policy in order for the resource to be visible to all principals with whom the resource is shared.
+The following `put-image-policy` example applies a resource policy to an image to enable cross-account sharing of images. We recommend you use the RAM CLI command create-resource-share. If you use the EC2 Image Builder CLI command put-image-policy, you must also use the RAM CLI command promote-resource-share-create-from-policy in order for the resource to be visible to all principals with whom the resource is shared.
 
 ```
 aws imagebuilder put-image-policy \
@@ -1301,7 +1288,7 @@ Output:
     "imageArn": "arn:aws:imagebuilder:us-west-2:123456789012:image/example-image/2019.12.02/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [PutImagePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/put-image-policy.html) in *AWS CLI Command Reference*.
 
 ### `put-image-recipe-policy`
@@ -1311,7 +1298,7 @@ The following code example shows how to use `put-image-recipe-policy`.
 
 **AWS CLI**
 **To apply a resource policy to an image recipe**
-The following `put-image-recipe-policy` command applies a resource policy to an image recipe to enable cross-account sharing of image recipes. We recommend that you use the RAM CLI command `create-resource-share`. If you use the EC2 Image Builder CLI command `put-image-recipe-policy`, you must also use the RAM CLI command `promote-resource-share-create-from-policy` in order for the resource to be visible to all principals with whom the resource is shared.
+The following `put-image-recipe-policy` example applies a resource policy to an image recipe to enable cross-account sharing of image recipes. We recommend that you use the RAM CLI command `create-resource-share`. If you use the EC2 Image Builder CLI command `put-image-recipe-policy`, you must also use the RAM CLI command `promote-resource-share-create-from-policy` in order for the resource to be visible to all principals with whom the resource is shared.
 
 ```
 aws imagebuilder put-image-recipe-policy \
@@ -1326,7 +1313,7 @@ Output:
     "imageRecipeArn": "arn:aws:imagebuilder:us-west-2:123456789012:image-recipe/example-image-recipe/2019.12.02/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [PutImageRecipePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/put-image-recipe-policy.html) in *AWS CLI Command Reference*.
 
 ### `start-image-pipeline-execution`
@@ -1351,7 +1338,7 @@ Output:
     "imageBuildVersionArn": "arn:aws:imagebuilder:us-west-2:123456789012:image/mybasicrecipe/2019.12.03/1"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [StartImagePipelineExecution](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/start-image-pipeline-execution.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -1378,7 +1365,7 @@ Contents of `tag-resource.json`:
 }
 ```
 This command produces no output.
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1392,7 +1379,7 @@ The following `untag-resource` example removes a tag from a resource using a JSO
 
 ```
 aws imagebuilder untag-resource \
-    --cli-input-json {{file://tag-resource.json}}
+    --cli-input-json {{file://untag-resource.json}}
 ```
 Contents of `untag-resource.json`:
 
@@ -1405,7 +1392,7 @@ Contents of `untag-resource.json`:
 }
 ```
 This command produces no output.
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-distribution-configuration`
@@ -1451,7 +1438,7 @@ Output:
     "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [UpdateDistributionConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/update-distribution-configuration.html) in *AWS CLI Command Reference*.
 
 ### `update-image-pipeline`
@@ -1493,7 +1480,7 @@ Output:
     "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [UpdateImagePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/update-image-pipeline.html) in *AWS CLI Command Reference*.
 
 ### `update-infrastructure-configuration`
@@ -1540,5 +1527,5 @@ Output:
     "requestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Setting Up and Managing an EC2 Image Builder Image Pipeline Using the AWS CLI](https://docs.aws.amazon.com/imagebuilder/latest/userguide/managing-image-builder-cli.html) in the *EC2 Image Builder Users Guide*.
+For more information, see [Manage custom image creation in Image Builder through a repeatable pipeline process](https://docs.aws.amazon.com/imagebuilder/latest/userguide/manage-pipelines.html) in the *EC2 Image Builder Users Guide*.
 +  For API details, see [UpdateInfrastructureConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/update-infrastructure-configuration.html) in *AWS CLI Command Reference*.

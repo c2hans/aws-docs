@@ -13,29 +13,29 @@ For an introduction or a refresher, see [Security, identity, and compliance on A
 + [AWS CloudHSM](https://aws.amazon.com/cloudhsm/)– Manage your hardware security modules (HSMs) in the AWS Cloud.
 + [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) – Provision, manage, and deploy SSL/TLS certificates for use with AWS services.
 + [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) – Rotate, manage, and retrieve database credentials, API keys, and other secrets through their lifecycle.
-+ AWS Private CA - Create private certificate authority (CA) hierarchies, including root and subordinate CAs.
++ AWS Private CA – Create private certificate authority (CA) hierarchies, including root and subordinate CAs.
 
 **Identity & access management** – AWS identity services enable you to securely manage identities, resources, and permissions at scale.
 + [IAM](https://aws.amazon.com/iam/) – Securely control access to AWS services and resources.
 + IAM Access Analyzer – Use [provable security](https://aws.amazon.com/security/provable-security/) to implement least privilege by providing capabilities to set, verify, and refine permissions.
-+ [IAM Identity Center](https://aws.amazon.com/single-sign-on/) – Centrally manage SSO access to multiple AWS accounts and business applications.
++ [IAM Identity Center](https://aws.amazon.com/iam/identity-center/) – Centrally manage SSO access to multiple AWS accounts and business applications.
 + [Amazon Cognito](https://aws.amazon.com/cognito/) – Add user sign-up, sign-in, and access control to your web and mobile applications.
 + [AWS Directory Service](https://aws.amazon.com/directoryservice/) – Use managed Microsoft Active Directory in the AWS Cloud.
-+ [AWS RAM](https://aws.amazon.com/ram/) – Share AWS resources simply and securely.
++ [AWS RAM](https://aws.amazon.com/ram/) – Share AWS resources securely across accounts and within your organization.
 + [AWS Organizations](https://aws.amazon.com/organizations/) – Implement policy-based management for multiple AWS accounts.
 + [Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html) – Manage scalable, fine-grained permissions and authorization in your custom applications.
 
-**Network & application protection** – These categories of services enable you to enforce fine-grained security policy at network control points across your organization. AWS services help you inspect and filter traffic to help prevent unauthorized resource access at the host-level, network-level, and application-level boundaries.
-+ [AWS Shield](https://aws.amazon.com/shield/) – Safeguard your web applications that run on AWS with managed DDoS protection.
-+ [AWS WAF](https://aws.amazon.com/waf/) – Protect your web applications from common web exploits, and ensure availability and security.
+**Network & application protection – These services enable you to enforce fine-grained security policy at network control points across your organization.** AWS services help you inspect and filter traffic to help prevent unauthorized resource access at the host-level, network-level, and application-level boundaries.
++ [AWS Shield](https://aws.amazon.com/shield/) –* *Safeguard your web applications that run on AWS with managed DDoS protection.
++ [AWS WAF](https://aws.amazon.com/waf/) –* *Protect your web applications from common web exploits, and ensure availability and security.
 + [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) – Configure and manage AWS WAF rules across AWS accounts and applications from a central location.
 + [AWS Systems Manager](https://aws.amazon.com/systems-manager/) – Configure and manage Amazon EC2 and on-premises systems to apply OS patches, create secure system images, and configure secure operating systems.
-+ [Amazon VPC](https://aws.amazon.com/vpc/) – Provision a logically isolated section of AWS where you can launch AWS resources in a virtual network that you define.
++ [Amazon VPC](https://aws.amazon.com/vpc/) –* *Provision a logically isolated section of AWS where you can launch AWS resources in a virtual network that you define.
 + [AWS Network Firewall](https://aws.amazon.com/network-firewall/) – Deploy essential network protections for your VPCs.
 + [Amazon Route 53 DNS Firewall](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-dns-firewall.html) – Protect your outbound DNS requests from your VPCs.** **
 + [AWS Verified Access](https://docs.aws.amazon.com/verified-access/latest/ug/what-is-verified-access.html) – Provide secure access to your applications without requiring virtual private networks (VPNs).
 + [Amazon VPC Lattice](https://aws.amazon.com/vpc/lattice/) – Simplify service-to-service connectivity, security, and monitoring.
-+ AWS Transit Gateway - Connect VPCs, AWS accounts, and on-premises networks to a single gateway
++ AWS Transit Gateway - Connect VPCs, AWS accounts, and on-premises networks to a single gateway.
 + Network Access Analyzer - Identify unintended network access to your resources on AWS.
 
 **Threat detection & continuous monitoring** – AWS monitoring and detection services provide guidance to help identify potential security incidents within your AWS environment.

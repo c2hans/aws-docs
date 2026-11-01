@@ -26,24 +26,26 @@ The following code example shows how to use `add-listener-certificates`.
 
 **AWS CLI**
 **To add a certificate to a secure listener**
-This example adds the specified certificate to the specified secure listener.
-Command:
+The following `add-listener-certificates` example adds the specified certificate to the specified secure listener.
 
 ```
-aws elbv2 add-listener-certificates --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}} --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/5cc54884-f4a3-4072-80be-05b9ba72f705}}
+aws elbv2 add-listener-certificates \
+    --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}} \
+    --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-  "Certificates": [
-      {
-          "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/5cc54884-f4a3-4072-80be-05b9ba72f705",
-          "IsDefault": false
-      }
-  ]
+    "Certificates": [
+        {
+            "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "IsDefault": false
+        }
+    ]
 }
 ```
+For more information, see [SSL certificates for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/https-listener-certificates.html) in the *Application Load Balancers Guide*.
 +  For API details, see [AddListenerCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/add-listener-certificates.html) in *AWS CLI Command Reference*.
 
 ### `add-tags`
@@ -60,6 +62,8 @@ aws elbv2 add-tags \
     --resource-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
     --tags {{"Key=project,Value=lima"}} {{"Key=department,Value=digital-media"}}
 ```
+This command produces no output.
+For more information, see [Tag an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-tags.html) in the *Application Load Balancers Guide*.
 +  For API details, see [AddTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/add-tags.html) in *AWS CLI Command Reference*.
 
 ### `create-listener`
@@ -78,7 +82,38 @@ aws elbv2 create-listener \
     --port {{80}} \
     --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
-For more information, see [Tutorial: Create an Application Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-application-load-balancer-cli.html#create-load-balancer-aws-cli) in the *User Guide for Application Load Balancers*.
+Output:
+
+```
+{
+    "Listeners": [
+        {
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "Port": 80,
+            "Protocol": "HTTP",
+            "DefaultActions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Create an HTTP listener for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-listener.html) in the *Application Load Balancers Guide*.
 **Example 2: To create an HTTPS listener**
 The following `create-listener` example creates an HTTPS listener for the specified Application Load Balancer that forwards requests to the specified target group. You must specify an SSL certificate for an HTTPS listener. You can create and manage certificates using AWS Certificate Manager (ACM). Alternatively, you can create a certificate using SSL/TLS tools, get the certificate signed by a certificate authority (CA), and upload the certificate to AWS Identity and Access Management (IAM).
 
@@ -87,11 +122,48 @@ aws elbv2 create-listener \
     --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
     --protocol {{HTTPS}} \
     --port {{443}} \
-    --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/3dcb0a41-bd72-4774-9ad9-756919c40557}} \
+    --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --ssl-policy {{ELBSecurityPolicy-2016-08}} \
     --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
-For more information, see [Add an HTTPS listener](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-application-load-balancer-cli.html#https-listener-aws-cli) in the *User Guide for Application Load Balancers*.
+Output:
+
+```
+{
+    "Listeners": [
+        {
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/0467ef3c8400ae65",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "Port": 443,
+            "Protocol": "HTTPS",
+            "Certificates": [
+                {
+                    "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                }
+            ],
+            "SslPolicy": "ELBSecurityPolicy-2016-08",
+            "DefaultActions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Create an HTTPS listener for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html) in the *Application Load Balancers Guide*.
 **Example 3: To create a TCP listener**
 The following `create-listener` example creates a TCP listener for the specified Network Load Balancer that forwards requests to the specified target group.
 
@@ -102,7 +174,38 @@ aws elbv2 create-listener \
     --port {{80}} \
     --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-targets/b6bba954d1361c78}}
 ```
-For more information, see [Tutorial: Create a Network Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-cli.html#create-load-balancer-aws-cli) in the *User Guide for Network Load Balancers*.
+Output:
+
+```
+{
+    "Listeners": [
+        {
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/net/my-network-load-balancer/5d1b75f4f1cee11e/1a2b3c4d5e6f7a8b",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/my-network-load-balancer/5d1b75f4f1cee11e",
+            "Port": 80,
+            "Protocol": "TCP",
+            "DefaultActions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-targets/b6bba954d1361c78",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-targets/b6bba954d1361c78",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Create a listener for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-listener.html) in the *Network Load Balancers Guide*.
 **Example 4: To create a TLS listener**
 The following `create-listener` example creates a TLS listener for the specified Network Load Balancer that forwards requests to the specified target group. You must specify an SSL certificate for a TLS listener.
 
@@ -111,11 +214,48 @@ aws elbv2 create-listener \
     --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
     --protocol {{TLS}} \
     --port {{443}} \
-    --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/3dcb0a41-bd72-4774-9ad9-756919c40557}} \
+    --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --ssl-policy {{ELBSecurityPolicy-2016-08}} \
     --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
-For more information, see [TLS listeners for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-tls-listener.html) in the *User Guide for Network Load Balancers*.
+Output:
+
+```
+{
+    "Listeners": [
+        {
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/2b3c4d5e6f7a8b9c",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "Port": 443,
+            "Protocol": "TLS",
+            "Certificates": [
+                {
+                    "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+                }
+            ],
+            "SslPolicy": "ELBSecurityPolicy-2016-08",
+            "DefaultActions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Server certificates for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/tls-listener-certificates.html) in the *Network Load Balancers Guide*.
 **Example 5: To create a UDP listener**
 The following `create-listener` example creates a UDP listener for the specified Network Load Balancer that forwards requests to the specified target group.
 
@@ -126,14 +266,45 @@ aws elbv2 create-listener \
     --port {{53}} \
     --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-targets/b6bba954d1361c78}}
 ```
-For more information, see [Tutorial: Create a Network Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-cli.html#create-load-balancer-aws-cli) in the *User Guide for Network Load Balancers*.
+Output:
+
+```
+{
+    "Listeners": [
+        {
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/net/my-network-load-balancer/5d1b75f4f1cee11e/3c4d5e6f7a8b9c0d",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/my-network-load-balancer/5d1b75f4f1cee11e",
+            "Port": 53,
+            "Protocol": "UDP",
+            "DefaultActions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-targets/b6bba954d1361c78",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-targets/b6bba954d1361c78",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+For more information, see [Create a listener for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-listener.html) in the *Network Load Balancers Guide*.
 **Example 6: To create a listener for the specified gateway and forwarding**
 The following `create-listener` example creates a listener for the specified Gateway Load Balancer that forwards requests to the specified target group.
 
 ```
 aws elbv2 create-listener \
-    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-east-1:850631746142:loadbalancer/gwy/my-gateway-load-balancer/e0f9b3d5c7f7d3d6}} \
-    --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-east-1:850631746142:targetgroup/my-glb-targets/007ca469fae3bb1615}}
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/my-gateway-load-balancer/e0f9b3d5c7f7d3d6}} \
+    --default-actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-glb-targets/007ca469fae3bb1615}}
 ```
 Output:
 
@@ -141,16 +312,16 @@ Output:
 {
     "Listeners": [
         {
-            "ListenerArn": "arn:aws:elasticloadbalancing:us-east-1:850631746142:listener/gwy/my-agw-lb-example2/e0f9b3d5c7f7d3d6/afc127db15f925de",
-            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:850631746142:loadbalancer/gwy/my-agw-lb-example2/e0f9b3d5c7f7d3d6",
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/gwy/my-agw-lb-example2/e0f9b3d5c7f7d3d6/afc127db15f925de",
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/my-agw-lb-example2/e0f9b3d5c7f7d3d6",
             "DefaultActions": [
                 {
                     "Type": "forward",
-                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:850631746142:targetgroup/test-tg-agw-2/007ca469fae3bb1615",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/test-tg-agw-2/007ca469fae3bb1615",
                     "ForwardConfig": {
                         "TargetGroups": [
                             {
-                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:850631746142:targetgroup/test-tg-agw-2/007ca469fae3bb1615"
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/test-tg-agw-2/007ca469fae3bb1615"
                             }
                         ]
                     }
@@ -160,7 +331,7 @@ Output:
     ]
 }
 ```
-For more information, see [Getting started with Gateway Load Balancers using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/getting-started-cli.html) in the *User Guide for Gateway Load Balancers*.
+For more information, see [Getting started with Gateway Load Balancers using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/getting-started-cli.html) in the *Gateway Load Balancers Guide*.
 +  For API details, see [CreateListener](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/create-listener.html) in *AWS CLI Command Reference*.
 
 ### `create-load-balancer`
@@ -212,7 +383,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tutorial: Create an Application Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-application-load-balancer-cli.html) in the *User Guide for Application Load Balancers*.
+For more information, see [Create an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html) in the *Application Load Balancers Guide*.
 **Example 2: To create an internal load balancer**
 The following `create-load-balancer` example creates an internal Application Load Balancer and enables the Availability Zones for the specified subnets.
 
@@ -257,7 +428,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tutorial: Create an Application Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-application-load-balancer-cli.html) in the *User Guide for Application Load Balancers*.
+For more information, see [Create an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html) in the *Application Load Balancers Guide*.
 **Example 3: To create a Network Load Balancer**
 The following `create-load-balancer` example creates an Internet-facing Network Load Balancer and enables the Availability Zone for the specified subnet. It uses a subnet mapping to associate the specified Elastic IP address with the network interface used by the load balancer nodes for the Availability Zone.
 
@@ -301,7 +472,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tutorial: Create a Network Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-cli.html) in the *User Guide for Network Load Balancers*.
+For more information, see [Create a Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-network-load-balancer.html) in the *Network Load Balancers Guide*.
 **Example 4: To create a Gateway Load Balancer**
 The following `create-load-balancer` example creates a Gateway Load Balancer and enables the Availability Zones for the specified subnets.
 
@@ -321,11 +492,11 @@ Output:
             "VpcId": "vpc-838475fe",
             "AvailabilityZones": [
                 {
-                    "ZoneName": "us-east-1b",
+                    "ZoneName": "us-west-2b",
                     "SubnetId": "subnet-a62583f9"
                 },
             {
-                    "ZoneName": "us-east-1a",
+                    "ZoneName": "us-west-2a",
                     "SubnetId": "subnet-dc83f691"
                 }
             ],
@@ -334,12 +505,12 @@ Output:
             "State": {
                 "Code": "provisioning"
             },
-            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:850631746142:loadbalancer/gwy/my-gateway-load-balancer/dfbb5a7d32cdee79"
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/my-gateway-load-balancer/dfbb5a7d32cdee79"
         }
     ]
 }
 ```
-For more information, see [Getting started with Gateway Load Balancers using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/getting-started-cli.html) in the *User Guide for Gateway Load Balancers*.
+For more information, see [Getting started with Gateway Load Balancers using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/getting-started-cli.html) in the *Gateway Load Balancers Guide*.
 +  For API details, see [CreateLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/create-load-balancer.html) in *AWS CLI Command Reference*.
 
 ### `create-rule`
@@ -355,7 +526,7 @@ The following `create-rule` example creates a rule that forwards requests to the
 aws elbv2 create-rule \
     --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}} \
     --priority {{5}} \
-    --conditions {{file://conditions-pattern.json}}
+    --conditions {{file://conditions-pattern.json}} \
     --actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
 Contents of `conditions-pattern.json`:
@@ -370,6 +541,50 @@ Contents of `conditions-pattern.json`:
     }
 ]
 ```
+Output:
+
+```
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/1291d13826f405c3",
+            "Priority": "5",
+            "Conditions": [
+                {
+                    "Field": "path-pattern",
+                    "Values": [
+                        "/images/*"
+                    ],
+                    "PathPatternConfig": {
+                        "Values": [
+                            "/images/*"
+                        ]
+                    }
+                }
+            ],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ],
+            "IsDefault": false
+        }
+    ]
+}
+```
+For more information, see [Add a listener rule for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/add-rule.html) in the *Application Load Balancers Guide*.
 **Example 2: To create a rule using a host condition and a fixed response**
 The following `create-rule` example creates a rule that provides a fixed response if the hostname in the host header matches the specified hostname.
 
@@ -380,19 +595,19 @@ aws elbv2 create-rule \
     --conditions {{file://conditions-host.json}} \
     --actions {{file://actions-fixed-response.json}}
 ```
-Contents of `conditions-host.json`
+Contents of `conditions-host.json`:
 
 ```
 [
-  {
-      "Field": "host-header",
-      "HostHeaderConfig": {
-          "Values": ["*.example.com"]
-      }
-  }
+    {
+        "Field": "host-header",
+        "HostHeaderConfig": {
+            "Values": ["*.example.com"]
+        }
+    }
 ]
 ```
-Contents of `actions-fixed-response.json`
+Contents of `actions-fixed-response.json`:
 
 ```
 [
@@ -406,6 +621,43 @@ Contents of `actions-fixed-response.json`
     }
 ]
 ```
+Output:
+
+```
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/a7e3b2c1d4f56789",
+            "Priority": "10",
+            "Conditions": [
+                {
+                    "Field": "host-header",
+                    "Values": [
+                        "*.example.com"
+                    ],
+                    "HostHeaderConfig": {
+                        "Values": [
+                            "*.example.com"
+                        ]
+                    }
+                }
+            ],
+            "Actions": [
+                {
+                    "Type": "fixed-response",
+                    "FixedResponseConfig": {
+                        "MessageBody": "Hello world",
+                        "StatusCode": "200",
+                        "ContentType": "text/plain"
+                    }
+                }
+            ],
+            "IsDefault": false
+        }
+    ]
+}
+```
+For more information, see [Add a listener rule for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/add-rule.html) in the *Application Load Balancers Guide*.
 **Example 3: To create a rule using a source IP address condition, an authenticate action, and a forward action**
 The following `create-rule` example creates a rule that authenticates the user if the source IP address matches the specified IP address, and forwards the request to the specified target group if authentication is successful.
 
@@ -416,7 +668,7 @@ aws elbv2 create-rule \
     --conditions {{file://conditions-source-ip.json}} \
     --actions {{file://actions-authenticate.json}}
 ```
-Contents of `conditions-source-ip.json`
+Contents of `conditions-source-ip.json`:
 
 ```
 [
@@ -428,7 +680,7 @@ Contents of `conditions-source-ip.json`
     }
 ]
 ```
-Contents of `actions-authenticate.json`
+Contents of `actions-authenticate.json`:
 
 ```
 [
@@ -454,11 +706,73 @@ Contents of `actions-authenticate.json`
     },
     {
         "Type": "forward",
-        "TargetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:880185128111:targetgroup/cli-test/642a97ecb0e0f26b",
+        "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
         "Order": 2
     }
 ]
 ```
+Output:
+
+```
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/b8f4c3d2e5a67890",
+            "Priority": "20",
+            "Conditions": [
+                {
+                    "Field": "source-ip",
+                    "SourceIpConfig": {
+                        "Values": [
+                            "192.0.2.0/24",
+                            "198.51.100.10/32"
+                        ]
+                    }
+                }
+            ],
+            "Actions": [
+                {
+                    "Type": "authenticate-oidc",
+                    "AuthenticateOidcConfig": {
+                        "Issuer": "https://idp-issuer.com",
+                        "AuthorizationEndpoint": "https://authorization-endpoint.com",
+                        "TokenEndpoint": "https://token-endpoint.com",
+                        "UserInfoEndpoint": "https://user-info-endpoint.com",
+                        "ClientId": "abcdefghijklmnopqrstuvwxyz123456789",
+                        "SessionCookieName": "my-cookie",
+                        "Scope": "email",
+                        "SessionTimeout": 3600,
+                        "AuthenticationRequestExtraParams": {
+                            "display": "page",
+                            "prompt": "login"
+                        },
+                        "OnUnauthenticatedRequest": "deny"
+                    },
+                    "Order": 1
+                },
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "Order": 2,
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ],
+            "IsDefault": false
+        }
+    ]
+}
+```
+For more information, see [Add a listener rule for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/add-rule.html) in the *Application Load Balancers Guide*.
 +  For API details, see [CreateRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/create-rule.html) in *AWS CLI Command Reference*.
 
 ### `create-target-group`
@@ -656,8 +970,10 @@ The following `delete-listener` example deletes the specified listener.
 
 ```
 aws elbv2 delete-listener \
-    --listener-arn {{arn:aws:elasticloadbalancing:ua-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
+    --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
 ```
+This command produces no output.
+For more information, see [Delete a listener for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/delete-listener.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DeleteListener](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/delete-listener.html) in *AWS CLI Command Reference*.
 
 ### `delete-load-balancer`
@@ -673,6 +989,8 @@ The following `delete-load-balancer` example deletes the specified load balancer
 aws elbv2 delete-load-balancer \
     --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
 ```
+This command produces no output.
+For more information, see [Delete an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-delete.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DeleteLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/delete-load-balancer.html) in *AWS CLI Command Reference*.
 
 ### `delete-rule`
@@ -688,6 +1006,8 @@ The following `delete-rule` example deletes the specified rule.
 aws elbv2 delete-rule \
     --rule-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/1291d13826f405c3}}
 ```
+This command produces no output.
+For more information, see [Delete a listener rule for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/delete-rule.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DeleteRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/delete-rule.html) in *AWS CLI Command Reference*.
 
 ### `delete-target-group`
@@ -721,6 +1041,8 @@ aws elbv2 deregister-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} \
     --targets {{Id=i-1234567890abcdef0}}
 ```
+This command produces no output.
+For more information, see [Register targets with your Application Load Balancer target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-register-targets.html) in the *Application Load Balancers Guide*.
 **Example 2: To deregister a target registered using port overrides**
 The following `deregister-targets` example removes an instance from a target group that was registered using port overrides.
 
@@ -729,6 +1051,8 @@ aws elbv2 deregister-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-internal-targets/3bb63f11dfb0faf9}} \
     --targets {{Id=i-1234567890abcdef0,Port=80}} {{Id=i-1234567890abcdef0,Port=766}}
 ```
+This command produces no output.
+For more information, see [Register targets with your Application Load Balancer target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-register-targets.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DeregisterTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/deregister-targets.html) in *AWS CLI Command Reference*.
 
 ### `describe-account-limits`
@@ -843,7 +1167,7 @@ Output:
     ]
 }
 ```
-For more information, see [Quotas](https://docs.aws.amazon.com/general/latest/gr/elb.html#limits_elastic_load_balancer) in the *AWS General Reference*.
+For more information, see [Quotas for your Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-limits.html) in the *Application Load Balancers Guide* and [Quotas for your Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-limits.html) in the *Network Load Balancers Guide*.
 +  For API details, see [DescribeAccountLimits](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-account-limits.html) in *AWS CLI Command Reference*.
 
 ### `describe-listener-certificates`
@@ -853,32 +1177,33 @@ The following code example shows how to use `describe-listener-certificates`.
 
 **AWS CLI**
 **To describe the certificates for a secure listener**
-This example describes the certificates for the specified secure listener.
-Command:
+The following `describe-listener-certificates` example describes the certificates for the specified secure listener.
 
 ```
-aws elbv2 describe-listener-certificates --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
+aws elbv2 describe-listener-certificates \
+    --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
 ```
 Output:
 
 ```
 {
-  "Certificates": [
-      {
-          "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/5cc54884-f4a3-4072-80be-05b9ba72f705",
-          "IsDefault": false
-      },
-      {
-          "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/3dcb0a41-bd72-4774-9ad9-756919c40557",
-          "IsDefault": false
-      },
-      {
-          "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/fe59da96-6f58-4a22-8eed-6d0d50477e1d",
-          "IsDefault": true
-      }
-  ]
+    "Certificates": [
+        {
+            "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "IsDefault": false
+        },
+        {
+            "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "IsDefault": false
+        },
+        {
+            "CertificateArn": "arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "IsDefault": true
+        }
+    ]
 }
 ```
+For more information, see [SSL certificates for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/https-listener-certificates.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeListenerCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-listener-certificates.html) in *AWS CLI Command Reference*.
 
 ### `describe-listeners`
@@ -887,78 +1212,79 @@ Output:
 The following code example shows how to use `describe-listeners`.
 
 **AWS CLI**
-**To describe a listener**
-This example describes the specified listener.
-Command:
+**Example 1: To describe a listener**
+The following `describe-listeners` example describes the specified listener.
 
 ```
-aws elbv2 describe-listeners --listener-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
+aws elbv2 describe-listeners \
+    --listener-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
 ```
 Output:
 
 ```
 {
-  "Listeners": [
-      {
-          "Port": 80,
-          "Protocol": "HTTP",
-          "DefaultActions": [
-              {
-                  "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
-                  "Type": "forward"
-              }
-          ],
-          "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
-          "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2"
-      }
-  ]
+    "Listeners": [
+        {
+            "Port": 80,
+            "Protocol": "HTTP",
+            "DefaultActions": [
+                {
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "Type": "forward"
+                }
+            ],
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2"
+        }
+    ]
 }
 ```
-**To describe the listeners for a load balancer**
-This example describe the listeners for the specified load balancer.
-Command:
+**Example 2: To describe the listeners for a load balancer**
+The following `describe-listeners` example describes the listeners for the specified load balancer.
 
 ```
-aws elbv2 describe-listeners --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
+aws elbv2 describe-listeners \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
 ```
 Output:
 
 ```
 {
-  "Listeners": [
-      {
-          "Port": 443,
-          "Protocol": "HTTPS",
-          "DefaultActions": [
-              {
-                  "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
-                  "Type": "forward"
-              }
-          ],
-          "SslPolicy": "ELBSecurityPolicy-2015-05",
-          "Certificates": [
-              {
-                  "CertificateArn": "arn:aws:iam::123456789012:server-certificate/my-server-cert"
-              }
-          ],
-          "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
-          "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/0467ef3c8400ae65"
-      },
-      {
-          "Port": 80,
-          "Protocol": "HTTP",
-          "DefaultActions": [
-              {
-                  "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
-                  "Type": "forward"
-              }
-          ],
-          "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
-          "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2"
-      }
-  ]
+    "Listeners": [
+        {
+            "Port": 443,
+            "Protocol": "HTTPS",
+            "DefaultActions": [
+                {
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "Type": "forward"
+                }
+            ],
+            "SslPolicy": "ELBSecurityPolicy-2015-05",
+            "Certificates": [
+                {
+                    "CertificateArn": "arn:aws:iam::123456789012:server-certificate/my-server-cert"
+                }
+            ],
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/0467ef3c8400ae65"
+        },
+        {
+            "Port": 80,
+            "Protocol": "HTTP",
+            "DefaultActions": [
+                {
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "Type": "forward"
+                }
+            ],
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "ListenerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2"
+        }
+    ]
 }
 ```
+For more information, see [Listeners for your Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeListeners](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-listeners.html) in *AWS CLI Command Reference*.
 
 ### `describe-load-balancer-attributes`
@@ -974,7 +1300,8 @@ The following `describe-load-balancer-attributes` example displays the attribute
 aws elbv2 describe-load-balancer-attributes \
     --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
 ```
-The following example output show the attributes for an Application Load Balancer.
+The following example output shows the attributes for an Application Load Balancer.
+Output:
 
 ```
 {
@@ -1007,6 +1334,7 @@ The following example output show the attributes for an Application Load Balance
 }
 ```
 The following example output includes the attributes for a Network Load Balancer.
+Output:
 
 ```
 {
@@ -1034,6 +1362,7 @@ The following example output includes the attributes for a Network Load Balancer
     ]
 }
 ```
+For more information, see [Edit attributes for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-load-balancer-attributes.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeLoadBalancerAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-load-balancer-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-load-balancers`
@@ -1042,55 +1371,110 @@ The following example output includes the attributes for a Network Load Balancer
 The following code example shows how to use `describe-load-balancers`.
 
 **AWS CLI**
-**To describe a load balancer**
-This example describes the specified load balancer.
-Command:
+**Example 1: To describe a load balancer**
+The following `describe-load-balancers` example describes the specified load balancer.
 
 ```
-aws elbv2 describe-load-balancers --load-balancer-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
+aws elbv2 describe-load-balancers \
+    --load-balancer-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
 ```
 Output:
 
 ```
 {
-  "LoadBalancers": [
-      {
-          "Type": "application",
-          "Scheme": "internet-facing",
-          "IpAddressType": "ipv4",
-          "VpcId": "vpc-3ac0fb5f",
-          "AvailabilityZones": [
-              {
-                  "ZoneName": "us-west-2a",
-                  "SubnetId": "subnet-8360a9e7"
-              },
-              {
-                  "ZoneName": "us-west-2b",
-                  "SubnetId": "subnet-b7d581c0"
-              }
-          ],
-          "CreatedTime": "2016-03-25T21:26:12.920Z",
-          "CanonicalHostedZoneId": "Z2P70J7EXAMPLE",
-          "DNSName": "my-load-balancer-424835706.us-west-2.elb.amazonaws.com",
-          "SecurityGroups": [
-              "sg-5943793c"
-          ],
-          "LoadBalancerName": "my-load-balancer",
-          "State": {
-              "Code": "active"
-          },
-          "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188"
-      }
-  ]
+    "LoadBalancers": [
+        {
+            "Type": "application",
+            "Scheme": "internet-facing",
+            "IpAddressType": "ipv4",
+            "VpcId": "vpc-3ac0fb5f",
+            "AvailabilityZones": [
+                {
+                    "ZoneName": "us-west-2a",
+                    "SubnetId": "subnet-8360a9e7"
+                },
+                {
+                    "ZoneName": "us-west-2b",
+                    "SubnetId": "subnet-b7d581c0"
+                }
+            ],
+            "CreatedTime": "2016-03-25T21:26:12.920Z",
+            "CanonicalHostedZoneId": "Z2P70J7EXAMPLE",
+            "DNSName": "my-load-balancer-424835706.us-west-2.elb.amazonaws.com",
+            "SecurityGroups": [
+                "sg-5943793c"
+            ],
+            "LoadBalancerName": "my-load-balancer",
+            "State": {
+                "Code": "active"
+            },
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188"
+        }
+    ]
 }
 ```
-**To describe all load balancers**
-This example describes all of your load balancers.
-Command:
+**Example 2: To describe all load balancers**
+The following `describe-load-balancers` example describes all of your load balancers.
 
 ```
 aws elbv2 describe-load-balancers
 ```
+Output:
+
+```
+{
+    "LoadBalancers": [
+        {
+            "Type": "application",
+            "Scheme": "internet-facing",
+            "IpAddressType": "ipv4",
+            "VpcId": "vpc-3ac0fb5f",
+            "AvailabilityZones": [
+                {
+                    "ZoneName": "us-west-2a",
+                    "SubnetId": "subnet-8360a9e7"
+                },
+                {
+                    "ZoneName": "us-west-2b",
+                    "SubnetId": "subnet-b7d581c0"
+                }
+            ],
+            "CreatedTime": "2016-03-25T21:26:12.920Z",
+            "CanonicalHostedZoneId": "Z2P70J7EXAMPLE",
+            "DNSName": "my-load-balancer-424835706.us-west-2.elb.amazonaws.com",
+            "SecurityGroups": [
+                "sg-5943793c"
+            ],
+            "LoadBalancerName": "my-load-balancer",
+            "State": {
+                "Code": "active"
+            },
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188"
+        },
+        {
+            "Type": "network",
+            "Scheme": "internet-facing",
+            "IpAddressType": "ipv4",
+            "VpcId": "vpc-3ac0fb5f",
+            "AvailabilityZones": [
+                {
+                    "ZoneName": "us-west-2a",
+                    "SubnetId": "subnet-8360a9e7"
+                }
+            ],
+            "CreatedTime": "2017-10-15T22:41:25.657Z",
+            "CanonicalHostedZoneId": "Z18D5FSEXAMPLE",
+            "DNSName": "my-network-load-balancer-5d1b75f4f1cee11e.elb.us-west-2.amazonaws.com",
+            "LoadBalancerName": "my-network-load-balancer",
+            "State": {
+                "Code": "active"
+            },
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/net/my-network-load-balancer/5d1b75f4f1cee11e"
+        }
+    ]
+}
+```
+For more information, see [Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancers.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeLoadBalancers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-load-balancers.html) in *AWS CLI Command Reference*.
 
 ### `describe-rules`
@@ -1106,6 +1490,50 @@ The following `describe-rules` example displays details for the specified rule.
 aws elbv2 describe-rules \
     --rule-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/9683b2d02a6cabee}}
 ```
+Output:
+
+```
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/9683b2d02a6cabee",
+            "Priority": "10",
+            "Conditions": [
+                {
+                    "Field": "path-pattern",
+                    "Values": [
+                        "/img/*"
+                    ],
+                    "PathPatternConfig": {
+                        "Values": [
+                            "/img/*"
+                        ]
+                    }
+                }
+            ],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ],
+            "IsDefault": false
+        }
+    ]
+}
+```
+For more information, see [Listener rules for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-rules.html) in the *Application Load Balancers Guide*.
 **Example 2: To describe the rules for a listener**
 The following `describe-rules` example displays details for the rules for the specified listener. The output includes the default rule and any other rules that you've added.
 
@@ -1113,6 +1541,73 @@ The following `describe-rules` example displays details for the rules for the sp
 aws elbv2 describe-rules \
     --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}}
 ```
+Output:
+
+```
+{
+    "Rules": [
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/9683b2d02a6cabee",
+            "Priority": "10",
+            "Conditions": [
+                {
+                    "Field": "path-pattern",
+                    "Values": [
+                        "/img/*"
+                    ],
+                    "PathPatternConfig": {
+                        "Values": [
+                            "/img/*"
+                        ]
+                    }
+                }
+            ],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ],
+            "IsDefault": false
+        },
+        {
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/d8a7a5fbe2f8d8d4",
+            "Priority": "default",
+            "Conditions": [],
+            "Actions": [
+                {
+                    "Type": "forward",
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "ForwardConfig": {
+                        "TargetGroups": [
+                            {
+                                "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                                "Weight": 1
+                            }
+                        ],
+                        "TargetGroupStickinessConfig": {
+                            "Enabled": false
+                        }
+                    }
+                }
+            ],
+            "IsDefault": true
+        }
+    ]
+}
+```
+For more information, see [Listener rules for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-rules.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-rules.html) in *AWS CLI Command Reference*.
 
 ### `describe-ssl-policies`
@@ -1199,7 +1694,7 @@ Output:
     "ECDHE-RSA-AES256-SHA384"
 ]
 ```
-For more information, see [Security policies](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#describe-ssl-policies) in the *User Guide for Application Load Balancers*.
+For more information, see [Security policies for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeSslPolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-ssl-policies.html) in *AWS CLI Command Reference*.
 
 ### `describe-tags`
@@ -1209,33 +1704,34 @@ The following code example shows how to use `describe-tags`.
 
 **AWS CLI**
 **To describe the tags assigned to a load balancer**
-This example describes the tags assigned to the specified load balancer.
-Command:
+The following `describe-tags` example describes the tags assigned to the specified load balancer.
 
 ```
-aws elbv2 describe-tags --resource-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
+aws elbv2 describe-tags \
+    --resource-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}}
 ```
 Output:
 
 ```
 {
-  "TagDescriptions": [
-      {
-          "ResourceArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
-          "Tags": [
-              {
-                  "Value": "lima",
-                  "Key": "project"
-              },
-              {
-                  "Value": "digital-media",
-                  "Key": "department"
-              }
-          ]
-      }
-  ]
+    "TagDescriptions": [
+        {
+            "ResourceArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188",
+            "Tags": [
+                {
+                    "Value": "lima",
+                    "Key": "project"
+                },
+                {
+                    "Value": "digital-media",
+                    "Key": "department"
+                }
+            ]
+        }
+    ]
 }
 ```
+For more information, see [Tag an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-tags.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-tags.html) in *AWS CLI Command Reference*.
 
 ### `describe-target-group-attributes`
@@ -1252,6 +1748,7 @@ aws elbv2 describe-target-group-attributes \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}}
 ```
 The output includes the attributes if the protocol is HTTP or HTTPS and the target type is `instance` or `ip`.
+Output:
 
 ```
 {
@@ -1280,6 +1777,7 @@ The output includes the attributes if the protocol is HTTP or HTTPS and the targ
 }
 ```
 The following output includes the attributes if the protocol is HTTP or HTTPS and the target type is `lambda`.
+Output:
 
 ```
 {
@@ -1292,6 +1790,7 @@ The following output includes the attributes if the protocol is HTTP or HTTPS an
 }
 ```
 The following output includes the attributes if the protocol is TCP, TLS, UDP, or TCP\_UDP.
+Output:
 
 ```
 {
@@ -1307,6 +1806,7 @@ The following output includes the attributes if the protocol is TCP, TLS, UDP, o
     ]
 }
 ```
+For more information, see [Edit target group attributes for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-target-group-attributes.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeTargetGroupAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-target-group-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-target-groups`
@@ -1415,6 +1915,7 @@ Output:
     ]
 }
 ```
+For more information, see [Check the health of your Application Load Balancer targets](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/check-target-health.html) in the *Application Load Balancers Guide*.
 **Example 2: To describe the health of a target**
 The following `describe-target-health` example displays health details for the specified target. This target is healthy.
 
@@ -1520,6 +2021,7 @@ The following example output is for a target that is a Lambda function and healt
     ]
 }
 ```
+For more information, see [Check the health of your Application Load Balancer targets](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/check-target-health.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeTargetHealth](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-target-health.html) in *AWS CLI Command Reference*.
 
 ### `modify-listener`
@@ -1583,7 +2085,7 @@ Output:
                         "Host": "#{host}",
                         "Path": "/#{path}",
                         "Query": "#{query}",
-                        "StatusCode": "HTTP_302",
+                        "StatusCode": "HTTP_302"
                     }
                 }
             ]
@@ -1620,12 +2122,12 @@ Output:
                 {
                     "CertificateArn": "arn:aws:iam::123456789012:server-certificate/my-new-server-cert"
                 }
-            ],
+            ]
         }
     ]
 }
 ```
-For more information, see [Listener rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#listener-rules) in the *Application Load Balancers User Guide*.
+For more information, see [Listener rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/listener-rules.html) in the *Application Load Balancers User Guide*.
 +  For API details, see [ModifyListener](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/modify-listener.html) in *AWS CLI Command Reference*.
 
 ### `modify-load-balancer-attributes`
@@ -1634,111 +2136,117 @@ For more information, see [Listener rules](https://docs.aws.amazon.com/elasticlo
 The following code example shows how to use `modify-load-balancer-attributes`.
 
 **AWS CLI**
-**To enable deletion protection**
-This example enables deletion protection for the specified load balancer.
-Command:
+**Example 1: To enable deletion protection**
+The following `modify-load-balancer-attributes` example enables deletion protection for the specified load balancer.
 
 ```
-aws elbv2 modify-load-balancer-attributes --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} --attributes {{Key=deletion_protection.enabled,Value=true}}
+aws elbv2 modify-load-balancer-attributes \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
+    --attributes {{Key=deletion_protection.enabled,Value=true}}
 ```
 Output:
 
 ```
 {
-  "Attributes": [
-      {
-          "Value": "true",
-          "Key": "deletion_protection.enabled"
-      },
-      {
-          "Value": "false",
-          "Key": "access_logs.s3.enabled"
-      },
-      {
-          "Value": "60",
-          "Key": "idle_timeout.timeout_seconds"
-      },
-      {
-          "Value": "",
-          "Key": "access_logs.s3.prefix"
-      },
-      {
-          "Value": "",
-          "Key": "access_logs.s3.bucket"
-      }
-  ]
+    "Attributes": [
+        {
+            "Value": "true",
+            "Key": "deletion_protection.enabled"
+        },
+        {
+            "Value": "false",
+            "Key": "access_logs.s3.enabled"
+        },
+        {
+            "Value": "60",
+            "Key": "idle_timeout.timeout_seconds"
+        },
+        {
+            "Value": "",
+            "Key": "access_logs.s3.prefix"
+        },
+        {
+            "Value": "",
+            "Key": "access_logs.s3.bucket"
+        }
+    ]
 }
 ```
-**To change the idle timeout**
-This example changes the idle timeout value for the specified load balancer.
-Command:
+For more information, see [Edit attributes for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-load-balancer-attributes.html#deletion-protection) in the *Application Load Balancers Guide*.
+**Example 2: To change the idle timeout**
+The following `modify-load-balancer-attributes` example changes the idle timeout value for the specified load balancer.
 
 ```
-aws elbv2 modify-load-balancer-attributes --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} --attributes {{Key=idle_timeout.timeout_seconds,Value=30}}
+aws elbv2 modify-load-balancer-attributes \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
+    --attributes {{Key=idle_timeout.timeout_seconds,Value=30}}
 ```
 Output:
 
 ```
 {
-  "Attributes": [
-      {
-          "Value": "30",
-          "Key": "idle_timeout.timeout_seconds"
-      },
-      {
-          "Value": "false",
-          "Key": "access_logs.s3.enabled"
-      },
-      {
-          "Value": "",
-          "Key": "access_logs.s3.prefix"
-      },
-      {
-          "Value": "true",
-          "Key": "deletion_protection.enabled"
-      },
-      {
-          "Value": "",
-          "Key": "access_logs.s3.bucket"
-      }
-  ]
+    "Attributes": [
+        {
+            "Value": "30",
+            "Key": "idle_timeout.timeout_seconds"
+        },
+        {
+            "Value": "false",
+            "Key": "access_logs.s3.enabled"
+        },
+        {
+            "Value": "",
+            "Key": "access_logs.s3.prefix"
+        },
+        {
+            "Value": "true",
+            "Key": "deletion_protection.enabled"
+        },
+        {
+            "Value": "",
+            "Key": "access_logs.s3.bucket"
+        }
+    ]
 }
 ```
-**To enable access logs**
-This example enables access logs for the specified load balancer. Note that the S3 bucket must exist in the same region as the load balancer and must have a policy attached that grants access to the Elastic Load Balancing service.
-Command:
+For more information, see [Edit attributes for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-load-balancer-attributes.html#connection-idle-timeout) in the *Application Load Balancers Guide*.
+**Example 3: To enable access logs**
+The following `modify-load-balancer-attributes` example enables access logs for the specified load balancer. Note that the S3 bucket must exist in the same region as the load balancer and must have a policy attached that grants access to the Elastic Load Balancing service.
 
 ```
-aws elbv2 modify-load-balancer-attributes --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} --attributes {{Key=access_logs.s3.enabled,Value=true}} {{Key=access_logs.s3.bucket,Value=my-loadbalancer-logs}} {{Key=access_logs.s3.prefix,Value=myapp}}
+aws elbv2 modify-load-balancer-attributes \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
+    --attributes {{Key=access_logs.s3.enabled,Value=true}} {{Key=access_logs.s3.bucket,Value=my-loadbalancer-logs}} {{Key=access_logs.s3.prefix,Value=myapp}}
 ```
 Output:
 
 ```
 {
-  "Attributes": [
-      {
-          "Value": "true",
-          "Key": "access_logs.s3.enabled"
-      },
-      {
-          "Value": "my-load-balancer-logs",
-          "Key": "access_logs.s3.bucket"
-      },
-      {
-          "Value": "myapp",
-          "Key": "access_logs.s3.prefix"
-      },
-      {
-          "Value": "60",
-          "Key": "idle_timeout.timeout_seconds"
-      },
-      {
-          "Value": "false",
-          "Key": "deletion_protection.enabled"
-      }
-  ]
+    "Attributes": [
+        {
+            "Value": "true",
+            "Key": "access_logs.s3.enabled"
+        },
+        {
+            "Value": "my-load-balancer-logs",
+            "Key": "access_logs.s3.bucket"
+        },
+        {
+            "Value": "myapp",
+            "Key": "access_logs.s3.prefix"
+        },
+        {
+            "Value": "60",
+            "Key": "idle_timeout.timeout_seconds"
+        },
+        {
+            "Value": "false",
+            "Key": "deletion_protection.enabled"
+        }
+    ]
 }
 ```
+For more information, see [Access logs for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html) in the *Application Load Balancers Guide*.
 +  For API details, see [ModifyLoadBalancerAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/modify-load-balancer-attributes.html) in *AWS CLI Command Reference*.
 
 ### `modify-rule`
@@ -1752,9 +2260,9 @@ The following `modify-rule` example updates the actions and conditions for the s
 
 ```
 aws elbv2 modify-rule \
-  --actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} \
-  --conditions Field=path-pattern,Values='/images/*'
-  --rule-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/9683b2d02a6cabee}}
+    --actions {{Type=forward,TargetGroupArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} \
+    --conditions Field=path-pattern,Values='/images/*' \
+    --rule-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/9683b2d02a6cabee}}
 ```
 Output:
 
@@ -1783,6 +2291,7 @@ Output:
     ]
 }
 ```
+For more information, see [Edit a listener rule for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-rule.html) in the *Application Load Balancers Guide*.
 +  For API details, see [ModifyRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/modify-rule.html) in *AWS CLI Command Reference*.
 
 ### `modify-target-group-attributes`
@@ -1792,36 +2301,38 @@ The following code example shows how to use `modify-target-group-attributes`.
 
 **AWS CLI**
 **To modify the deregistration delay timeout**
-This example sets the deregistration delay timeout to the specified value for the specified target group.
-Command:
+The following `modify-target-group-attributes` example sets the deregistration delay timeout to the specified value for the specified target group.
 
 ```
-aws elbv2 modify-target-group-attributes --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} --attributes {{Key=deregistration_delay.timeout_seconds,Value=600}}
+aws elbv2 modify-target-group-attributes \
+    --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} \
+    --attributes {{Key=deregistration_delay.timeout_seconds,Value=600}}
 ```
 Output:
 
 ```
 {
-  "Attributes": [
-      {
-          "Value": "false",
-          "Key": "stickiness.enabled"
-      },
-      {
-          "Value": "600",
-          "Key": "deregistration_delay.timeout_seconds"
-      },
-      {
-          "Value": "lb_cookie",
-          "Key": "stickiness.type"
-      },
-      {
-          "Value": "86400",
-          "Key": "stickiness.lb_cookie.duration_seconds"
-      }
-  ]
+    "Attributes": [
+        {
+            "Value": "false",
+            "Key": "stickiness.enabled"
+        },
+        {
+            "Value": "600",
+            "Key": "deregistration_delay.timeout_seconds"
+        },
+        {
+            "Value": "lb_cookie",
+            "Key": "stickiness.type"
+        },
+        {
+            "Value": "86400",
+            "Key": "stickiness.lb_cookie.duration_seconds"
+        }
+    ]
 }
 ```
+For more information, see [Edit target group attributes for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-target-group-attributes.html#deregistration-delay) in the *Application Load Balancers Guide*.
 +  For API details, see [ModifyTargetGroupAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/modify-target-group-attributes.html) in *AWS CLI Command Reference*.
 
 ### `modify-target-group`
@@ -1888,6 +2399,8 @@ aws elbv2 register-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067}} \
     --targets {{Id=i-1234567890abcdef0}} {{Id=i-0abcdef1234567890}}
 ```
+This command produces no output.
+For more information, see [Register targets with your Application Load Balancer target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-register-targets.html) in the *Application Load Balancers Guide*.
 **Example 2: To register targets with a target group using port overrides**
 The following `register-targets` example registers the specified instance with a target group using multiple ports. This enables you to register containers on the same instance as targets in the target group.
 
@@ -1896,6 +2409,8 @@ aws elbv2 register-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-internal-targets/3bb63f11dfb0faf9}} \
     --targets {{Id=i-0598c7d356eba48d7,Port=80}} {{Id=i-0598c7d356eba48d7,Port=766}}
 ```
+This command produces no output.
+For more information, see [Register targets with your Application Load Balancer target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-register-targets.html) in the *Application Load Balancers Guide*.
 **Example 3: To register targets with a target group by IP address**
 The following `register-targets` example registers the specified IP addresses with a target group. The target group must have a target type of `ip`.
 
@@ -1904,6 +2419,8 @@ aws elbv2 register-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-ip-targets/8518e899d173178f}} \
     --targets {{Id=10.0.1.15}} {{Id=10.0.1.23}}
 ```
+This command produces no output.
+For more information, see [Register targets for your Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/target-group-register-targets.html) in the *Network Load Balancers Guide*.
 **Example 4: To register a Lambda function as a target**
 The following `register-targets` example registers the specified IP addresses with a target group. The target group must have a target type of `lambda`. You must grant Elastic Load Balancing permission to invoke the Lambda function.
 
@@ -1912,6 +2429,8 @@ aws elbv2 register-targets \
     --target-group-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-tcp-ip-targets/8518e899d173178f}} \
     --targets {{Id=arn:aws:lambda:us-west-2:123456789012:function:my-function}}
 ```
+This command produces no output.
+For more information, see [Use Lambda functions as targets of an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/lambda-functions.html) in the *Application Load Balancers Guide*.
 +  For API details, see [RegisterTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/register-targets.html) in *AWS CLI Command Reference*.
 
 ### `remove-listener-certificates`
@@ -1921,12 +2440,15 @@ The following code example shows how to use `remove-listener-certificates`.
 
 **AWS CLI**
 **To remove a certificate from a secure listener**
-This example removes the specified certificate from the specified secure listener.
-Command:
+The following `remove-listener-certificates` example removes the specified certificate from the specified secure listener.
 
 ```
-aws elbv2 remove-listener-certificates --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}} --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/5cc54884-f4a3-4072-80be-05b9ba72f705}}
+aws elbv2 remove-listener-certificates \
+    --listener-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:listener/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2}} \
+    --certificates {{CertificateArn=arn:aws:acm:us-west-2:123456789012:certificate/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
+This command produces no output.
+For more information, see [SSL certificates for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/https-listener-certificates.html) in the *Application Load Balancers Guide*.
 +  For API details, see [RemoveListenerCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/remove-listener-certificates.html) in *AWS CLI Command Reference*.
 
 ### `remove-tags`
@@ -1943,6 +2465,8 @@ aws elbv2 remove-tags \
     --resource-arns {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
     --tag-keys {{project}} {{department}}
 ```
+This command produces no output.
+For more information, see [Tag an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-tags.html) in the *Application Load Balancers Guide*.
 +  For API details, see [RemoveTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/remove-tags.html) in *AWS CLI Command Reference*.
 
 ### `set-ip-address-type`
@@ -1952,11 +2476,12 @@ The following code example shows how to use `set-ip-address-type`.
 
 **AWS CLI**
 **To set the address type of a load balancer**
-This example sets the address type of the specified load balancer to `dualstack`. The load balancer subnets must have associated IPv6 CIDR blocks.
-Command:
+The following `set-ip-address-type` example sets the address type of the specified load balancer to `dualstack`. The load balancer subnets must have associated IPv6 CIDR blocks.
 
 ```
-aws elbv2 set-ip-address-type --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} --ip-address-type {{dualstack}}
+aws elbv2 set-ip-address-type \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
+    --ip-address-type {{dualstack}}
 ```
 Output:
 
@@ -1965,6 +2490,7 @@ Output:
     "IpAddressType": "dualstack"
 }
 ```
+For more information, see [Update the IP address types for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-ip-address-type.html) in the *Application Load Balancers Guide*.
 +  For API details, see [SetIpAddressType](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/set-ip-address-type.html) in *AWS CLI Command Reference*.
 
 ### `set-rule-priorities`
@@ -1974,39 +2500,40 @@ The following code example shows how to use `set-rule-priorities`.
 
 **AWS CLI**
 **To set the rule priority**
-This example sets the priority of the specified rule.
-Command:
+The following `set-rule-priorities` example sets the priority of the specified rule.
 
 ```
-aws elbv2 set-rule-priorities --rule-priorities {{RuleArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/1291d13826f405c3,Priority=5}}
+aws elbv2 set-rule-priorities \
+    --rule-priorities {{RuleArn=arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/1291d13826f405c3,Priority=5}}
 ```
 Output:
 
 ```
 {
-  "Rules": [
-      {
-          "Priority": "5",
-          "Conditions": [
-              {
-                  "Field": "path-pattern",
-                  "Values": [
-                      "/img/*"
-                  ]
-              }
-          ],
-          "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/1291d13826f405c3",
-          "IsDefault": false,
-          "Actions": [
-              {
-                  "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
-                  "Type": "forward"
-              }
-          ]
-      }
-  ]
+    "Rules": [
+        {
+            "Priority": "5",
+            "Conditions": [
+                {
+                    "Field": "path-pattern",
+                    "Values": [
+                        "/img/*"
+                    ]
+                }
+            ],
+            "RuleArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:listener-rule/app/my-load-balancer/50dc6c495c0c9188/f2f7dc8efc522ab2/1291d13826f405c3",
+            "IsDefault": false,
+            "Actions": [
+                {
+                    "TargetGroupArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:targetgroup/my-targets/73e2d6bc24d8a067",
+                    "Type": "forward"
+                }
+            ]
+        }
+    ]
 }
 ```
+For more information, see [Edit a listener rule for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/edit-rule.html) in the *Application Load Balancers Guide*.
 +  For API details, see [SetRulePriorities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/set-rule-priorities.html) in *AWS CLI Command Reference*.
 
 ### `set-security-groups`
@@ -2016,21 +2543,23 @@ The following code example shows how to use `set-security-groups`.
 
 **AWS CLI**
 **To associate a security group with a load balancer**
-This example associates the specified security group with the specified load balancer.
-Command:
+The following `set-security-groups` example associates the specified security group with the specified load balancer.
 
 ```
-aws elbv2 set-security-groups --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} --security-groups {{sg-5943793c}}
+aws elbv2 set-security-groups \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
+    --security-groups {{sg-5943793c}}
 ```
 Output:
 
 ```
 {
-  "SecurityGroupIds": [
-      "sg-5943793c"
-  ]
+    "SecurityGroupIds": [
+        "sg-5943793c"
+    ]
 }
 ```
+For more information, see [Security groups for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-update-security-groups.html) in the *Application Load Balancers Guide*.
 +  For API details, see [SetSecurityGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/set-security-groups.html) in *AWS CLI Command Reference*.
 
 ### `set-subnets`
@@ -2040,26 +2569,28 @@ The following code example shows how to use `set-subnets`.
 
 **AWS CLI**
 **To enable Availability Zones for a load balancer**
-This example enables the Availability Zone for the specified subnet for the specified load balancer.
-Command:
+The following `set-subnets` example enables the Availability Zone for the specified subnet for the specified load balancer.
 
 ```
-aws elbv2 set-subnets --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} --subnets {{subnet-8360a9e7}} {{subnet-b7d581c0}}
+aws elbv2 set-subnets \
+    --load-balancer-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188}} \
+    --subnets {{subnet-8360a9e7}} {{subnet-b7d581c0}}
 ```
 Output:
 
 ```
 {
-  "AvailabilityZones": [
-      {
-          "SubnetId": "subnet-8360a9e7",
-          "ZoneName": "us-west-2a"
-      },
-      {
-          "SubnetId": "subnet-b7d581c0",
-          "ZoneName": "us-west-2b"
-      }
-  ]
+    "AvailabilityZones": [
+        {
+            "SubnetId": "subnet-8360a9e7",
+            "ZoneName": "us-west-2a"
+        },
+        {
+            "SubnetId": "subnet-b7d581c0",
+            "ZoneName": "us-west-2b"
+        }
+    ]
 }
 ```
+For more information, see [Update the Availability Zones for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-subnets.html) in the *Application Load Balancers Guide*.
 +  For API details, see [SetSubnets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/set-subnets.html) in *AWS CLI Command Reference*.

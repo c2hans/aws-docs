@@ -43,19 +43,7 @@ Output:
             "JobRunId": "jr_852f1de1f29fb62e0ba4166c33970803935d87f14f96cfdee5089d5274a61d3f"
         }
     ],
-    "Errors": [],
-    "ResponseMetadata": {
-        "RequestId": "66bd6b90-01db-44ab-95b9-6aeff0e73d88",
-        "HTTPStatusCode": 200,
-        "HTTPHeaders": {
-            "date": "Fri, 16 Oct 2020 20:54:51 GMT",
-            "content-type": "application/x-amz-json-1.1",
-            "content-length": "148",
-            "connection": "keep-alive",
-            "x-amzn-requestid": "66bd6b90-01db-44ab-95b9-6aeff0e73d88"
-        },
-        "RetryAttempts": 0
-    }
+    "Errors": []
 }
 ```
 For more information, see [Job Runs](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-runs.html) in the *AWS Glue Developer Guide*.
@@ -79,15 +67,13 @@ aws glue create-connection \
         "ConnectionProperties":{  \
             "KAFKA_BOOTSTRAP_SERVERS":"<Kafka-broker-server-url>:<SSL-Port>", \
             "KAFKA_SSL_ENABLED":"true", \
-            "KAFKA_CUSTOM_CERT": "s3://bucket/prefix/cert-file.pem" \
+            "KAFKA_CUSTOM_CERT": "s3://amzn-s3-demo-bucket/prefix/cert-file.pem" \
         }, \
         "PhysicalConnectionRequirements":{ \
             "SubnetId":"subnet-1234", \
             "SecurityGroupIdList":["sg-1234"], \
-            "AvailabilityZone":"us-east-1a"} \
-    }}}' \
-    --region {{us-east-1}}
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+            "AvailabilityZone":"us-west-2a"} \
+    }}}'
 ```
 This command produces no output.
 For more information, see [Defining Connections in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/populate-add-connection.html) in the *AWS Glue Developer Guide*.
@@ -106,7 +92,7 @@ The following `create-database` example creates a database in the AWS Glue Data 
 aws glue create-database \
     --database-input "{\"Name\":\"tempdb\"}" \
     --profile {{my_profile}} \
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+    --endpoint {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining a Database in Your Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/define-database.html) in the *AWS Glue Developer Guide*.
@@ -129,14 +115,11 @@ aws glue create-job \
         "Name": "gluestreaming", \
         "ScriptLocation": "s3://amzn-s3-demo-bucket/folder/" \
     }}}' \
-    --region {{us-east-1}} \
-    --output {{json}} \
     --default-arguments '{{{ \
         "--job-language":"scala", \
         "--class":"GlueApp" \
     }}}' \
-    --profile {{my-profile}} \
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+    --profile {{my-profile}}
 ```
 Contents of `test_script.scala`:
 
@@ -195,7 +178,7 @@ Output:
     "Name": "my-testing-job"
 }
 ```
-For more information, see [Authoring Jobs in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/author-job.html) in the *AWS Glue Developer Guide*.
+For more information, see [Working with jobs in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/author-glue-job.html) in the *AWS Glue Developer Guide*.
 +  For API details, see [CreateJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/create-job.html) in *AWS CLI Command Reference*.
 
 ### `create-table`
@@ -219,7 +202,7 @@ aws glue create-table \
             "Location":"my-testing-stream", \
             "Parameters":{ \
                 "typeOfData":"kinesis","streamName":"my-testing-stream", \
-                "kinesisUrl":"https://kinesis.us-east-1.amazonaws.com" \
+                "kinesisUrl":"https://kinesis.us-west-2.amazonaws.com" \
             }, \
             "SerdeInfo":{ \
                 "SerializationLibrary":"org.openx.data.jsonserde.JsonSerDe"} \
@@ -228,7 +211,7 @@ aws glue create-table \
             "classification":"json"} \
         }}}' \
     --profile {{my-profile}} \
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+    --endpoint {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining Tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) in the *AWS Glue Developer Guide*.
@@ -256,7 +239,7 @@ aws glue create-table \
             "separatorChar":","} \
         }}}' \
     --profile {{my-profile}} \
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+    --endpoint {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining Tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) in the *AWS Glue Developer Guide*.
@@ -272,7 +255,7 @@ aws glue create-table \
                 {"Name":"s2", "Type":"int"}, \
                 {"Name":"s3", "Type":"string"}
             ], \
-            "Location":"s3://bucket-path/", \
+            "Location":"s3://amzn-s3-demo-bucket/", \
             "SerdeInfo":{ \
                 "SerializationLibrary":"org.openx.data.jsonserde.JsonSerDe"} \
         }, \
@@ -280,7 +263,7 @@ aws glue create-table \
             "classification":"json"} \
         }}}' \
     --profile {{my-profile}} \
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+    --endpoint {{https://glue.us-west-2.amazonaws.com}}
 ```
 This command produces no output.
 For more information, see [Defining Tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) in the *AWS Glue Developer Guide*.
@@ -306,7 +289,7 @@ Output:
     "JobName": "my-testing-job"
 }
 ```
-For more information, see [Working with Jobs on the AWS Glue Console](https://docs.aws.amazon.com/glue/latest/dg/console-jobs.html) in the *AWS Glue Developer Guide*.
+For more information, see [Managing ETL jobs with AWS Glue Studio](https://docs.aws.amazon.com/glue/latest/dg/managing-jobs-chapter.html) in the *AWS Glue Developer Guide*.
 +  For API details, see [DeleteJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/delete-job.html) in *AWS CLI Command Reference*.
 
 ### `get-databases`
@@ -341,7 +324,7 @@ Output:
                     ]
                 }
             ],
-            "CatalogId": "111122223333"
+            "CatalogId": "123456789012"
         },
         {
             "Name": "flights-db",
@@ -356,7 +339,7 @@ Output:
                     ]
                 }
             ],
-            "CatalogId": "111122223333"
+            "CatalogId": "123456789012"
         },
         {
             "Name": "legislators",
@@ -371,7 +354,7 @@ Output:
                     ]
                 }
             ],
-            "CatalogId": "111122223333"
+            "CatalogId": "123456789012"
         },
         {
             "Name": "tempdb",
@@ -386,7 +369,7 @@ Output:
                     ]
                 }
             ],
-            "CatalogId": "111122223333"
+            "CatalogId": "123456789012"
         }
     ]
 }
@@ -406,14 +389,14 @@ The following `get-job-run` example retrieves information about a job run.
 ```
 aws glue get-job-run \
     --job-name {{"Combine legistators data"}} \
-    --run-id {{jr_012e176506505074d94d761755e5c62538ee1aad6f17d39f527e9140cf0c9a5e}}
+    --run-id {{jr_012e1765065050a4d94d761755e5c62538ee1aad6f17d39f527e9140cf0c9a5e}}
 ```
 Output:
 
 ```
 {
     "JobRun": {
-        "Id": "jr_012e176506505074d94d761755e5c62538ee1aad6f17d39f527e9140cf0c9a5e",
+        "Id": "jr_012e1765065050a4d94d761755e5c62538ee1aad6f17d39f527e9140cf0c9a5e",
         "Attempt": 0,
         "JobName": "Combine legistators data",
         "StartedOn": 1602873931.255,
@@ -425,7 +408,7 @@ Output:
             "--enable-metrics": "",
             "--enable-spark-ui": "true",
             "--job-bookmark-option": "job-bookmark-enable",
-            "--spark-event-logs-path": "s3://aws-glue-assets-111122223333-us-east-1/sparkHistoryLogs/"
+            "--spark-event-logs-path": "s3://amzn-s3-demo-bucket/sparkHistoryLogs/"
         },
         "PredecessorRuns": [],
         "AllocatedCapacity": 10,
@@ -461,7 +444,7 @@ Output:
 {
     "JobRuns": [
         {
-            "Id": "jr_012e176506505074d94d761755e5c62538ee1aad6f17d39f527e9140cf0c9a5e",
+            "Id": "jr_012e1765065050a4d94d761755e5c62538ee1aad6f17d39f527e9140cf0c9a5e",
             "Attempt": 0,
             "JobName": "my-testing-job",
             "StartedOn": 1602873931.255,
@@ -473,7 +456,7 @@ Output:
                 "--enable-metrics": "",
                 "--enable-spark-ui": "true",
                 "--job-bookmark-option": "job-bookmark-enable",
-                "--spark-event-logs-path": "s3://aws-glue-assets-111122223333-us-east-1/sparkHistoryLogs/"
+                "--spark-event-logs-path": "s3://amzn-s3-demo-bucket/sparkHistoryLogs/"
             },
             "PredecessorRuns": [],
             "AllocatedCapacity": 10,
@@ -494,10 +477,7 @@ Output:
             "LastModifiedOn": 1602811282.39,
             "CompletedOn": 1602811282.39,
             "JobRunState": "FAILED",
-            "ErrorMessage": "An error occurred while calling o122.pyWriteDynamicFrame.
-                Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied;
-                Request ID: 021AAB703DB20A2D;
-                S3 Extended Request ID: teZk24Y09TkXzBvMPG502L5VJBhe9DJuWA9/TXtuGOqfByajkfL/Tlqt5JBGdEGpigAqzdMDM/U=)",
+            "ErrorMessage": "An error occurred while calling o122.pyWriteDynamicFrame. Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 021AAB703DB20A2D; S3 Extended Request ID: teZk24Y09TkXzBvMPG502L5VJBhe9DJuWA9/TXtuGOqfByajkfL/Tlqt5JBGdEGpigAqzdMDM/U=)",
             "PredecessorRuns": [],
             "AllocatedCapacity": 10,
             "ExecutionTime": 110,
@@ -517,10 +497,7 @@ Output:
             "LastModifiedOn": 1602811138.364,
             "CompletedOn": 1602811138.364,
             "JobRunState": "FAILED",
-            "ErrorMessage": "An error occurred while calling o122.pyWriteDynamicFrame.
-                 Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied;
-                 Request ID: 2671D37856AE7ABB;
-                 S3 Extended Request ID: RLJCJw20brV+PpC6GpORahyF2fp9flB5SSb2bTGPnUSPVizLXRl1PN3QZldb+v1o9qRVktNYbW8=)",
+            "ErrorMessage": "An error occurred while calling o122.pyWriteDynamicFrame. Access Denied (Service: Amazon S3; Status Code: 403; Error Code: AccessDenied; Request ID: 2671D37856AE7ABB; S3 Extended Request ID: RLJCJw20brV+PpC6GpORahyF2fp9flB5SSb2bTGPnUSPVizLXRl1PN3QZldb+v1o9qRVktNYbW8=)",
             "PredecessorRuns": [],
             "AllocatedCapacity": 10,
             "ExecutionTime": 113,
@@ -564,7 +541,7 @@ Output:
         },
         "Command": {
             "Name": "gluestreaming",
-            "ScriptLocation": "s3://janetst-bucket-01/Scripts/test_script.scala",
+            "ScriptLocation": "s3://amzn-s3-demo-bucket/Scripts/test_script.scala",
             "PythonVersion": "2"
         },
         "DefaultArguments": {
@@ -588,34 +565,35 @@ The following code example shows how to use `get-plan`.
 
 **AWS CLI**
 **To get the generated code for mapping data from source tables to target tables**
-The following `get-plan` retrieves the generated code for mapping columns from the data source to the data target.
+The following `get-plan` example retrieves the generated code for mapping columns from the data source to the data target.
 
 ```
-aws glue get-plan --mapping '{{[ \
-    { \
-        "SourcePath":"sensorid", \
-        "SourceTable":"anything", \
-        "SourceType":"int", \
-        "TargetPath":"sensorid", \
-        "TargetTable":"anything", \
-        "TargetType":"int" \
-    }, \
-    { \
-        "SourcePath":"currenttemperature", \
-        "SourceTable":"anything", \
-        "SourceType":"int", \
-        "TargetPath":"currenttemperature", \
-        "TargetTable":"anything", \
-        "TargetType":"int" \
-    }, \
-    { \
-        "SourcePath":"status", \
-        "SourceTable":"anything", \
-        "SourceType":"string", \
-        "TargetPath":"status", \
-        "TargetTable":"anything", \
-        "TargetType":"string" \
-    }]}}' \
+aws glue get-plan \
+    --mapping '{{[ \
+        { \
+            "SourcePath":"sensorid", \
+            "SourceTable":"anything", \
+            "SourceType":"int", \
+            "TargetPath":"sensorid", \
+            "TargetTable":"anything", \
+            "TargetType":"int" \
+        }, \
+        { \
+            "SourcePath":"currenttemperature", \
+            "SourceTable":"anything", \
+            "SourceType":"int", \
+            "TargetPath":"currenttemperature", \
+            "TargetTable":"anything", \
+            "TargetType":"int" \
+        }, \
+        { \
+            "SourcePath":"status", \
+            "SourceTable":"anything", \
+            "SourceType":"string", \
+            "TargetPath":"status", \
+            "TargetTable":"anything", \
+            "TargetType":"string" \
+        }]}}' \
     --source '{{{ \
         "DatabaseName":"tempdb", \
         "TableName":"s3-source" \
@@ -624,9 +602,8 @@ aws glue get-plan --mapping '{{[ \
         { \
             "DatabaseName":"tempdb", \
             "TableName":"my-s3-sink" \
-        }]}}'
-    --language {{"scala"}}
-    --endpoint {{https://glue.us-east-1.amazonaws.com}}
+        }]}}' \
+    --language {{"scala"}} \
     --output {{"text"}}
 ```
 Output:
@@ -692,7 +669,8 @@ The following code example shows how to use `get-tables`.
 The following `get-tables` example returns information about the tables in the specified database.
 
 ```
-aws glue get-tables --database-name '{{tempdb}}'
+aws glue get-tables \
+    --database-name '{{tempdb}}'
 ```
 Output:
 
@@ -720,7 +698,7 @@ Output:
                         "Type": "string"
                     }
                 ],
-                "Location": "s3://janetst-bucket-01/test-s3-output/",
+                "Location": "s3://amzn-s3-demo-bucket/test-s3-output/",
                 "Compressed": false,
                 "NumberOfBuckets": 0,
                 "SerdeInfo": {
@@ -732,9 +710,9 @@ Output:
             "Parameters": {
                 "classification": "json"
             },
-            "CreatedBy": "arn:aws:iam::007436865787:user/JRSTERN",
+            "CreatedBy": "arn:aws:iam::123456789012:user/JRSTERN",
             "IsRegisteredWithLakeFormation": false,
-            "CatalogId": "007436865787"
+            "CatalogId": "123456789012"
         },
         {
             "Name": "s3-source",
@@ -757,7 +735,7 @@ Output:
                         "Type": "string"
                     }
                 ],
-                "Location": "s3://janetst-bucket-01/",
+                "Location": "s3://amzn-s3-demo-bucket/",
                 "Compressed": false,
                 "NumberOfBuckets": 0,
                 "SortColumns": [],
@@ -766,9 +744,9 @@ Output:
             "Parameters": {
                 "classification": "json"
             },
-            "CreatedBy": "arn:aws:iam::007436865787:user/JRSTERN",
+            "CreatedBy": "arn:aws:iam::123456789012:user/JRSTERN",
             "IsRegisteredWithLakeFormation": false,
-            "CatalogId": "007436865787"
+            "CatalogId": "123456789012"
         },
         {
             "Name": "test-kinesis-input",
@@ -799,7 +777,7 @@ Output:
                 },
                 "SortColumns": [],
                 "Parameters": {
-                    "kinesisUrl": "https://kinesis.us-east-1.amazonaws.com",
+                    "kinesisUrl": "https://kinesis.us-west-2.amazonaws.com",
                     "streamName": "my-testing-stream",
                     "typeOfData": "kinesis"
                 },
@@ -808,9 +786,9 @@ Output:
             "Parameters": {
                 "classification": "json"
             },
-            "CreatedBy": "arn:aws:iam::007436865787:user/JRSTERN",
+            "CreatedBy": "arn:aws:iam::123456789012:user/JRSTERN",
             "IsRegisteredWithLakeFormation": false,
-            "CatalogId": "007436865787"
+            "CatalogId": "123456789012"
         }
     ]
 }
@@ -828,13 +806,10 @@ The following code example shows how to use `start-crawler`.
 The following `start-crawler` example starts a crawler.
 
 ```
-aws glue start-crawler --name {{my-crawler}}
+aws glue start-crawler \
+    --name {{my-crawler}}
 ```
-Output:
-
-```
-None
-```
+This command produces no output.
 For more information, see [Defining Crawlers](https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html) in the *AWS Glue Developer Guide*.
 +  For API details, see [StartCrawler](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/start-crawler.html) in *AWS CLI Command Reference*.
 
@@ -858,5 +833,5 @@ Output:
     "JobRunId": "jr_22208b1f44eb5376a60569d4b21dd20fcb8621e1a366b4e7b2494af764b82ded"
 }
 ```
-For more information, see [Authoring Jobs](https://docs.aws.amazon.com/glue/latest/dg/author-job.html) in the *AWS Glue Developer Guide*.
+For more information, see [Working with jobs in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/author-glue-job.html) in the *AWS Glue Developer Guide*.
 +  For API details, see [StartJobRun](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/start-job-run.html) in *AWS CLI Command Reference*.

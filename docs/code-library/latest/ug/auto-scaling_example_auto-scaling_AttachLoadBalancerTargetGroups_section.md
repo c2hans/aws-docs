@@ -43,7 +43,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To attach a target group to an Auto Scaling group**
-This example attaches the specified target group to the specified Auto Scaling group.
+The following `attach-load-balancer-target-groups` example attaches the specified target group to the specified Auto Scaling group.
 
 ```
 aws autoscaling attach-load-balancer-target-groups \

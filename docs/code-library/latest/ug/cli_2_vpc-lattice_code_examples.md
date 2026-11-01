@@ -53,7 +53,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE/listener/listener-07cc7fb0abEXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE/listener/listener-07cc7fb0abEXAMPLE",
     "defaultAction": {
         "forward": {
             "targetGroups": [
@@ -68,7 +68,7 @@ Output:
     "name": "my-service-listener",
     "port": 443,
     "protocol": "HTTPS",
-    "serviceArn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE",
+    "serviceArn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE",
     "serviceId": "svc-0285b53b2eEXAMPLE"
 }
 ```
@@ -96,7 +96,7 @@ Output:
 ```
 {
     "allowAssociationToShareableServiceNetwork": true,
-    "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
     "id": "rcfg-07129f3acded87625",
     "name": "my-resource-config",
     "portRanges": [
@@ -135,7 +135,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourcegateway/rgw-0bba03f3d56060135",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourcegateway/rgw-0bba03f3d56060135",
     "id": "rgw-0bba03f3d56060135",
     "ipAddressType": "IPV4",
     "name": "my-resource-gateway",
@@ -170,10 +170,10 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetworkserviceassociation/snsa-0e16955a8cEXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetworkserviceassociation/snsa-0e16955a8cEXAMPLE",
     "createdBy": "123456789012",
     "dnsEntry": {
-        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.7d67968.vpc-lattice-svcs.us-east-2.on.aws",
+        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.7d67968.vpc-lattice-svcs.us-west-2.on.aws",
         "hostedZoneId": "Z09127221KTH2CEXAMPLE"
     },
     "id": "snsa-0e16955a8cEXAMPLE",
@@ -202,7 +202,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetworkvpcassociation/snva-0821fc8631EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetworkvpcassociation/snva-0821fc8631EXAMPLE",
     "createdBy": "123456789012",
     "id": "snva-0821fc8631EXAMPLE",
     "securityGroupIds": [
@@ -231,7 +231,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
     "authType": "NONE",
     "id": "sn-080ec7dc93EXAMPLE",
     "name": "my-service-network"
@@ -257,10 +257,10 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE",
     "authType": "NONE",
     "dnsEntry": {
-        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.1a2b3c4.vpc-lattice-svcs.us-east-2.on.aws",
+        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.1a2b3c4.vpc-lattice-svcs.us-west-2.on.aws",
         "hostedZoneId": "Z09127221KTH2CEXAMPLE"
     },
     "id": "svc-0285b53b2eEXAMPLE",
@@ -300,7 +300,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
     "config": {
         "healthCheck": {
             "enabled": true,
@@ -350,7 +350,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
     "config": {
         "healthCheck": {
             "enabled": true,
@@ -389,7 +389,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
     "id": "tg-0eaa4b9ab4EXAMPLE",
     "name": "my-lattice-target-group-lambda",
     "status": "CREATE_IN_PROGRESS",
@@ -419,7 +419,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
     "config": {
         "port": 443,
         "protocol": "HTTPS",
@@ -504,7 +504,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourcegateway/rgw-0bba03f3d56060135",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourcegateway/rgw-0bba03f3d56060135",
     "id": "rgw-0bba03f3d56060135",
     "name": "my-resource-gateway",
     "status": "DELETE_IN_PROGRESS"
@@ -530,7 +530,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetworkserviceassociation/snsa-031fabb4d8EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetworkserviceassociation/snsa-031fabb4d8EXAMPLE",
     "id": "snsa-031fabb4d8EXAMPLE",
     "status": "DELETE_IN_PROGRESS"
 }
@@ -555,7 +555,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetworkvpcassociation/snva-0821fc8631EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetworkvpcassociation/snva-0821fc8631EXAMPLE",
     "id": "snva-0821fc8631EXAMPLE",
     "status": "DELETE_IN_PROGRESS"
 }
@@ -623,7 +623,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
     "id": "tg-0eaa4b9ab4EXAMPLE",
     "status": "DELETE_IN_PROGRESS"
 }
@@ -680,7 +680,7 @@ Output:
 {
     "createdAt": "2023-06-07T03:51:20.266Z",
     "lastUpdatedAt": "2023-06-07T04:39:27.082Z",
-    "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:role/my-clients\"},\"Action\":\"vpc-lattice-svcs:Invoke\",\"Resource\":\"arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE\"}]}",
+    "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:role/my-clients\"},\"Action\":\"vpc-lattice-svcs:Invoke\",\"Resource\":\"arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE\"}]}",
     "state": "Active"
 }
 ```
@@ -705,7 +705,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE/listener/listener-0ccf55918cEXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE/listener/listener-0ccf55918cEXAMPLE",
     "createdAt": "2023-05-07T05:08:45.192Z",
     "defaultAction": {
         "forward": {
@@ -722,7 +722,7 @@ Output:
     "name": "http-80",
     "port": 80,
     "protocol": "HTTP",
-    "serviceArn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE",
+    "serviceArn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE",
     "serviceId": "svc-0285b53b2eEXAMPLE"
 }
 ```
@@ -748,7 +748,7 @@ Output:
 {
     "allowAssociationToShareableServiceNetwork": true,
     "amazonManaged": false,
-    "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
     "createdAt": "2025-02-01T00:57:35.871000+00:00",
     "id": "rcfg-07129f3acded87625",
     "lastUpdatedAt": "2025-02-01T00:57:46.874000+00:00",
@@ -787,7 +787,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourcegateway/rgw-0bba03f3d56060135",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourcegateway/rgw-0bba03f3d56060135",
     "createdAt": "2025-02-01T00:57:33.241000+00:00",
     "id": "rgw-0bba03f3d56060135",
     "ipAddressType": "IPV4",
@@ -823,18 +823,18 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetworkserviceassociation/snsa-031fabb4d8EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetworkserviceassociation/snsa-031fabb4d8EXAMPLE",
     "createdAt": "2023-05-05T21:48:16.076Z",
     "createdBy": "123456789012",
     "dnsEntry": {
-        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.7d67968.vpc-lattice-svcs.us-east-2.on.aws",
+        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.7d67968.vpc-lattice-svcs.us-west-2.on.aws",
         "hostedZoneId": "Z09127221KTH2CEXAMPLE"
     },
     "id": "snsa-031fabb4d8EXAMPLE",
-    "serviceArn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE",
+    "serviceArn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE",
     "serviceId": "svc-0285b53b2eEXAMPLE",
     "serviceName": "my-lattice-service",
-    "serviceNetworkArn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
+    "serviceNetworkArn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
     "serviceNetworkId": "sn-080ec7dc93EXAMPLE",
     "serviceNetworkName": "my-service-network",
     "status": "ACTIVE"
@@ -860,7 +860,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetworkvpcassociation/snva-0821fc8631EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetworkvpcassociation/snva-0821fc8631EXAMPLE",
     "createdAt": "2023-06-06T23:41:08.421Z",
     "createdBy": "123456789012",
     "id": "snva-0c5dcb60d6EXAMPLE",
@@ -868,7 +868,7 @@ Output:
     "securityGroupIds": [
         "sg-0aee16bc6cEXAMPLE"
     ],
-    "serviceNetworkArn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
+    "serviceNetworkArn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
     "serviceNetworkId": "sn-080ec7dc93EXAMPLE",
     "serviceNetworkName": "my-service-network",
     "status": "ACTIVE",
@@ -895,14 +895,14 @@ Output:
 
 ```
 {
-   "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
-   "authType": "AWS_IAM",
-   "createdAt": "2023-05-05T15:26:08.417Z",
-   "id": "sn-080ec7dc93EXAMPLE",
-   "lastUpdatedAt": "2023-05-05T15:26:08.417Z",
-   "name": "my-service-network",
-   "numberOfAssociatedServices": 2,
-   "numberOfAssociatedVPCs": 3
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
+    "authType": "AWS_IAM",
+    "createdAt": "2023-05-05T15:26:08.417Z",
+    "id": "sn-080ec7dc93EXAMPLE",
+    "lastUpdatedAt": "2023-05-05T15:26:08.417Z",
+    "name": "my-service-network",
+    "numberOfAssociatedServices": 2,
+    "numberOfAssociatedVPCs": 3
 }
 ```
 For more information, see [Service networks](https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-networks.html) in the *Amazon VPC Lattice User Guide*.
@@ -925,11 +925,11 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE",
     "authType": "AWS_IAM",
     "createdAt": "2023-05-05T21:35:29.339Z",
     "dnsEntry": {
-        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.7d67968.vpc-lattice-svcs.us-east-2.on.aws",
+        "domainName": "my-lattice-service-0285b53b2eEXAMPLE.7d67968.vpc-lattice-svcs.us-west-2.on.aws",
         "hostedZoneId": "Z09127221KTH2CFUOHIZH"
     },
     "id": "svc-0285b53b2eEXAMPLE",
@@ -958,7 +958,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
+    "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-0eaa4b9ab4EXAMPLE",
     "config": {
         "healthCheck": {
             "enabled": true,
@@ -983,7 +983,7 @@ Output:
     "lastUpdatedAt": "2023-05-06T04:41:04.122Z",
     "name": "my-target-group",
     "serviceArns": [
-        "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE"
+        "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE"
     ],
     "status": "ACTIVE",
     "type": "INSTANCE"
@@ -1011,7 +1011,7 @@ Output:
 {
     "items": [
         {
-            "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE/listener/listener-0ccf55918cEXAMPLE",
+            "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE/listener/listener-0ccf55918cEXAMPLE",
             "createdAt": "2023-05-07T05:08:45.192Z",
             "id": "listener-0ccf55918cEXAMPLE",
             "lastUpdatedAt": "2023-05-07T05:08:45.192Z",
@@ -1044,7 +1044,7 @@ Output:
     "items": [
         {
             "amazonManaged": false,
-            "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
+            "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
             "createdAt": "2025-02-01T00:57:35.871000+00:00",
             "id": "rcfg-07129f3acded87625",
             "lastUpdatedAt": "2025-02-01T00:57:46.874000+00:00",
@@ -1078,10 +1078,10 @@ Output:
 {
     "items": [
         {
-            "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceendpointassociation/rea-0956a7435baf89326",
+            "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceendpointassociation/rea-0956a7435baf89326",
             "createdAt": "2025-02-01T00:57:38.998000+00:00",
             "id": "rea-0956a7435baf89326",
-            "resourceConfigurationArn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
+            "resourceConfigurationArn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourceconfiguration/rcfg-07129f3acded87625",
             "resourceConfigurationId": "rcfg-07129f3acded87625",
             "vpcEndpointId": "vpce-019b90d6f16d4f958",
             "vpcEndpointOwner": "123456789012"
@@ -1110,13 +1110,13 @@ Output:
 {
     "items": [
         {
-            "arn": "arn:aws:vpc-lattice:us-east-1:123456789012:resourcegateway/rgw-0bba03f3d56060135",
+            "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:resourcegateway/rgw-0bba03f3d56060135",
             "createdAt": "2025-02-01T00:57:33.241000+00:00",
             "id": "rgw-0bba03f3d56060135",
             "ipAddressType": "IPV4",
             "lastUpdatedAt": "2025-02-01T00:57:44.351000+00:00",
             "name": "my-resource-gateway",
-            "seurityGroupIds": [
+            "securityGroupIds": [
                 "sg-087ffd596c5fe962c"
             ],
             "status": "ACTIVE",
@@ -1201,7 +1201,7 @@ Output:
     "items": [
         {
             "createdAt": "2025-02-01T01:21:36.667000+00:00",
-            "serviceNetworkArn": "arn:aws:vpc-lattice:us-east-1:123456789012:servicenetwork/sn-0808d1748faee0c1e",
+            "serviceNetworkArn": "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-0808d1748faee0c1e",
             "state": "ACTIVE",
             "vpcEndpointId": "vpce-0cc199f605eaeace7",
             "vpcEndpointOwnerId": "123456789012"
@@ -1229,8 +1229,8 @@ Output:
 
 ```
 [
-    "arn:aws:vpc-lattice:us-east-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
-    "arn:aws:vpc-lattice:us-east-2:111122223333:servicenetwork/sn-0ec4d436cfEXAMPLE"
+    "arn:aws:vpc-lattice:us-west-2:123456789012:servicenetwork/sn-080ec7dc93EXAMPLE",
+    "arn:aws:vpc-lattice:us-west-2:123456789111:servicenetwork/sn-0ec4d436cfEXAMPLE"
 ]
 ```
 For more information, see [Service networks](https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-networks.html) in the *Amazon VPC Lattice User Guide*.
@@ -1253,8 +1253,8 @@ Output:
 
 ```
 [
-    "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE",
-    "arn:aws:vpc-lattice:us-east-2:111122223333:service/svc-0b8ac96550EXAMPLE"
+    "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE",
+    "arn:aws:vpc-lattice:us-west-2:123456789111:service/svc-0b8ac96550EXAMPLE"
 ]
 ```
 For more information, see [Services](https://docs.aws.amazon.com/vpc-lattice/latest/ug/services.html) in the *Amazon VPC Lattice User Guide*.
@@ -1279,13 +1279,13 @@ Output:
 {
     "items": [
         {
-            "arn": "arn:aws:vpc-lattice:us-east-2:123456789012:targetgroup/tg-045c1b7d9dEXAMPLE",
+            "arn": "arn:aws:vpc-lattice:us-west-2:123456789012:targetgroup/tg-045c1b7d9dEXAMPLE",
             "createdAt": "2023-05-06T05:22:16.637Z",
             "id": "tg-045c1b7d9dEXAMPLE",
             "lastUpdatedAt": "2023-05-06T05:22:16.637Z",
             "name": "my-target-group-lam",
             "serviceArns": [
-                "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE"
+                "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE"
             ],
             "status": "ACTIVE",
             "type": "LAMBDA"
@@ -1357,7 +1357,7 @@ Contents of `auth-policy.json`:
                 "AWS": "arn:aws:iam::123456789012:role/my-clients"
             },
             "Action": "vpc-lattice-svcs:Invoke",
-            "Resource": "arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE"
+            "Resource": "arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE"
         }
     ]
 }
@@ -1366,7 +1366,7 @@ Output:
 
 ```
 {
-    "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:role/my-clients\"},\"Action\":\"vpc-lattice-svcs:Invoke\",\"Resource\":\"arn:aws:vpc-lattice:us-east-2:123456789012:service/svc-0285b53b2eEXAMPLE\"}]}",
+    "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::123456789012:role/my-clients\"},\"Action\":\"vpc-lattice-svcs:Invoke\",\"Resource\":\"arn:aws:vpc-lattice:us-west-2:123456789012:service/svc-0285b53b2eEXAMPLE\"}]}",
     "state": "Active"
 }
 ```

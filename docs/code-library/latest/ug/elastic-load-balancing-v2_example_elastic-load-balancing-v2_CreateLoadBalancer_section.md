@@ -129,7 +129,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tutorial: Create an Application Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-application-load-balancer-cli.html) in the *User Guide for Application Load Balancers*.
+For more information, see [Create an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html) in the *Application Load Balancers Guide*.
 **Example 2: To create an internal load balancer**
 The following `create-load-balancer` example creates an internal Application Load Balancer and enables the Availability Zones for the specified subnets.
 
@@ -174,7 +174,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tutorial: Create an Application Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/tutorial-application-load-balancer-cli.html) in the *User Guide for Application Load Balancers*.
+For more information, see [Create an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html) in the *Application Load Balancers Guide*.
 **Example 3: To create a Network Load Balancer**
 The following `create-load-balancer` example creates an Internet-facing Network Load Balancer and enables the Availability Zone for the specified subnet. It uses a subnet mapping to associate the specified Elastic IP address with the network interface used by the load balancer nodes for the Availability Zone.
 
@@ -218,7 +218,7 @@ Output:
     ]
 }
 ```
-For more information, see [Tutorial: Create a Network Load Balancer using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-cli.html) in the *User Guide for Network Load Balancers*.
+For more information, see [Create a Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/create-network-load-balancer.html) in the *Network Load Balancers Guide*.
 **Example 4: To create a Gateway Load Balancer**
 The following `create-load-balancer` example creates a Gateway Load Balancer and enables the Availability Zones for the specified subnets.
 
@@ -238,11 +238,11 @@ Output:
             "VpcId": "vpc-838475fe",
             "AvailabilityZones": [
                 {
-                    "ZoneName": "us-east-1b",
+                    "ZoneName": "us-west-2b",
                     "SubnetId": "subnet-a62583f9"
                 },
             {
-                    "ZoneName": "us-east-1a",
+                    "ZoneName": "us-west-2a",
                     "SubnetId": "subnet-dc83f691"
                 }
             ],
@@ -251,12 +251,12 @@ Output:
             "State": {
                 "Code": "provisioning"
             },
-            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:850631746142:loadbalancer/gwy/my-gateway-load-balancer/dfbb5a7d32cdee79"
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/gwy/my-gateway-load-balancer/dfbb5a7d32cdee79"
         }
     ]
 }
 ```
-For more information, see [Getting started with Gateway Load Balancers using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/getting-started-cli.html) in the *User Guide for Gateway Load Balancers*.
+For more information, see [Getting started with Gateway Load Balancers using the AWS CLI](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/getting-started-cli.html) in the *Gateway Load Balancers Guide*.
 +  For API details, see [CreateLoadBalancer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/create-load-balancer.html) in *AWS CLI Command Reference*.
 
 ------

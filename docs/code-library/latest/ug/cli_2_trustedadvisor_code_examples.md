@@ -30,21 +30,21 @@ The following `get-organization-recommendation` example gets an organization rec
 
 ```
 aws trustedadvisor get-organization-recommendation \
-    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5}}
+    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "organizationRecommendation": {
-        "arn": "arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+        "arn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "Lambda Runtime Deprecation Warning",
         "description": "One or more lambdas are using a deprecated runtime",
         "awsServices": [
             "lambda"
         ],
         "checkArn": "arn:aws:trustedadvisor:::check/L4dfs2Q4C5",
-        "id": "9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "lifecycleStage": "resolved",
         "pillars": [
             "security"
@@ -74,21 +74,21 @@ The following `get-recommendation` example gets a recommendation by its identifi
 
 ```
 aws trustedadvisor get-recommendation \
-    --recommendation-identifier {{arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578}}
+    --recommendation-identifier {{arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "recommendation": {
-        "arn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
+        "arn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "MFA Recommendation",
         "description": "Enable multi-factor authentication",
         "awsServices": [
             "iam"
         ],
         "checkArn": "arn:aws:trustedadvisor:::check/7DAFEmoDos",
-        "id": "55fa4d2e-bbb7-491a-833b-5773e9589578",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "lastUpdatedAt": "2023-11-01T15:57:58.673Z",
         "pillarSpecificAggregates": {
             "costOptimizing": {
@@ -169,7 +169,7 @@ Output:
                 "6": "Deployment Option",
                 "7": "Recommended number of Reserved Instances to purchase",
                 "8": "Expected Average Reserved Instance Utilization",
-                "9": "Estimated Savings with Recommendation (monthly)"
+                "9": "Estimated Savings with Recommendation (monthly)",
                 "10": "Upfront Cost of Reserved Instances",
                 "11": "Estimated cost of Reserved Instances (monthly)",
                 "12": "Estimated On-Demand Cost Post Recommended Reserved Instance Purchase (monthly)",
@@ -202,14 +202,14 @@ Output:
                 "8": "Estimated On-Demand Cost Post Recommended Reserved Nodes Purchase (monthly)",
                 "9": "Estimated Break Even (months)",
                 "10": "Lookback Period (days)",
-                "11": "Term (years)",
+                "11": "Term (years)"
             },
             "name": "Amazon Redshift Reserved Node Optimization",
             "pillars": [
                 "cost_optimizing"
             ],
             "source": "ta_check"
-        },
+        }
     ],
     "nextToken": "REDACTED"
 }
@@ -228,15 +228,15 @@ The following `list-organization-recommendation-accounts` example lists all acco
 
 ```
 aws trustedadvisor list-organization-recommendation-accounts \
-    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5}}
+    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "accountRecommendationLifecycleSummaries": [{
-        "accountId": "000000000000",
-        "accountRecommendationArn": "arn:aws:trustedadvisor::000000000000:recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+        "accountId": "123456789012",
+        "accountRecommendationArn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "lifecycleStage": "resolved",
         "updateReason": "Resolved issue",
         "updateReasonCode": "valid_business_case",
@@ -259,7 +259,7 @@ The following `list-organization-recommendation-resources` example lists all res
 
 ```
 aws trustedadvisor list-organization-recommendation-resources \
-    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/5a694939-2e54-45a2-ae72-730598fa89d0}}
+    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -267,7 +267,7 @@ Output:
 {
     "organizationRecommendationResourceSummaries": [
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation-resource/5a694939-2e54-45a2-ae72-730598fa89d0/bb38affc0ce0681d9a6cd13f30238ba03a8f63dfe7a379dc403c619119d86af",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation-resource/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/bb38affc0ce0681d9a6cd13f30238ba03a8f63dfe7a379dc403c619119d86af",
             "awsResourceId": "database-1-instance-1",
             "id": "bb38affc0ce0681d9a6cd13f302383ba03a8f63dfe7a379dc403c619119d86af",
             "lastUpdatedAt": "2023-11-01T15:09:51.891Z",
@@ -278,15 +278,15 @@ Output:
                 "3": "db.r5.large",
                 "4": "false",
                 "5": "us-west-2",
-                "6": "arn:aws:rds:us-west-2:000000000000:db:database-1-instance-1",
+                "6": "arn:aws:rds:us-west-2:123456789012:db:database-1-instance-1",
                 "7": "1"
             },
-            "recommendationArn": "arn:aws:trustedadvisor:::organization-recommendation/5a694939-2e54-45a2-ae72-730598fa89d0",
+            "recommendationArn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "regionCode": "us-west-2",
             "status": "warning"
         },
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation-resource/5a694939-2e54-45a2-ae72-730598fa89d0/51fded4d7a3278818df9cfe344ff5762cec46c095a6763d1ba1ba53bd0e1b0e6",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation-resource/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/51fded4d7a3278818df9cfe344ff5762cec46c095a6763d1ba1ba53bd0e1b0e6",
             "awsResourceId": "database-1",
             "id": "51fded4d7a3278818df9cfe344ff5762cec46c095a6763d1ba1ba53bd0e1b0e6",
             "lastUpdatedAt": "2023-11-01T15:09:51.891Z",
@@ -297,15 +297,15 @@ Output:
                 "3": "db.t3.small",
                 "4": "false",
                 "5": "us-west-2",
-                "6": "arn:aws:rds:us-west-2:000000000000:db:database-1",
+                "6": "arn:aws:rds:us-west-2:123456789012:db:database-1",
                 "7": "20"
             },
-            "recommendationArn": "arn:aws:trustedadvisor:::organization-recommendation/5a694939-2e54-45a2-ae72-730598fa89d0",
+            "recommendationArn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "regionCode": "us-west-2",
             "status": "warning"
         },
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation-resource/5a694939-2e54-45a2-ae72-730598fa89d0/f4d01bd20f4cd5372062aafc8786c489e48f0ead7cdab121463bf9f89e40a36b",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation-resource/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/f4d01bd20f4cd5372062aafc8786c489e48f0ead7cdab121463bf9f89e40a36b",
             "awsResourceId": "database-2-instance-1-us-west-2a",
             "id": "f4d01bd20f4cd5372062aafc8786c489e48f0ead7cdab121463bf9f89e40a36b",
             "lastUpdatedAt": "2023-11-01T15:09:51.891Z",
@@ -316,13 +316,13 @@ Output:
                 "3": "db.r6g.large",
                 "4": "true",
                 "5": "us-west-2",
-                "6": "arn:aws:rds:us-west-2:000000000000:db:database-2-instance-1-us-west-2a",
+                "6": "arn:aws:rds:us-west-2:123456789012:db:database-2-instance-1-us-west-2a",
                 "7": "1"
             },
-            "recommendationArn": "arn:aws:trustedadvisor:::organization-recommendation/5a694939-2e54-45a2-ae72-730598fa89d0",
+            "recommendationArn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "regionCode": "us-west-2",
             "status": "warning"
-        },
+        }
     ],
     "nextToken": "REDACTED"
 }
@@ -348,13 +348,13 @@ Output:
 {
     "organizationRecommendationSummaries": [
         {
-            "arn": "arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+            "arn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "name": "Lambda Runtime Deprecation Warning",
             "awsServices": [
                 "lambda"
             ],
             "checkArn": "arn:aws:trustedadvisor:::check/L4dfs2Q4C5",
-            "id": "9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "lifecycleStage": "resolved",
             "pillars": [
                 "security"
@@ -369,13 +369,13 @@ Output:
             "type": "priority"
         },
         {
-            "arn": "arn:aws:trustedadvisor:::organization-recommendation/4ecff4d4-1bc1-4c99-a5b8-0fff9ee500d6",
+            "arn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "Lambda Runtime Deprecation Warning",
             "awsServices": [
                 "lambda"
             ],
             "checkArn": "arn:aws:trustedadvisor:::check/L4dfs2Q4C5",
-            "id": "4ecff4d4-1bc1-4c99-a5b8-0fff9ee500d6",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "lifecycleStage": "resolved",
             "pillars": [
                 "security"
@@ -388,7 +388,7 @@ Output:
             "source": "ta_check",
             "status": "warning",
             "type": "priority"
-        },
+        }
     ],
     "nextToken": "REDACTED"
 }
@@ -407,13 +407,13 @@ Output:
 ```
 {
     "organizationRecommendationSummaries": [{
-        "arn": "arn:aws:trustedadvisor:::organization-recommendation/9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+        "arn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "Lambda Runtime Deprecation Warning",
         "awsServices": [
             "lambda"
         ],
         "checkArn": "arn:aws:trustedadvisor:::check/L4dfs2Q4C5",
-        "id": "9534ec9b-bf3a-44e8-8213-2ed68b39d9d5",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "lifecycleStage": "resolved",
         "pillars": [
             "security"
@@ -445,13 +445,13 @@ Output:
 ```
 {
     "organizationRecommendationSummaries": [{
-        "arn": "arn:aws:trustedadvisor:::organization-recommendation/4ecff4d4-1bc1-4c99-a5b8-0fff9ee500d6",
+        "arn": "arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "name": "Lambda Runtime Deprecation Warning",
         "awsServices": [
             "lambda"
         ],
         "checkArn": "arn:aws:trustedadvisor:::check/L4dfs2Q4C5",
-        "id": "4ecff4d4-1bc1-4c99-a5b8-0fff9ee500d6",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "lifecycleStage": "resolved",
         "pillars": [
             "security"
@@ -481,7 +481,7 @@ The following `list-recommendation-resources` example lists all resources for a 
 
 ```
 aws trustedadvisor list-recommendation-resources \
-    --recommendation-identifier {{arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578}}
+    --recommendation-identifier {{arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -489,7 +489,7 @@ Output:
 {
     "recommendationResourceSummaries": [
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation-resource/55fa4d2e-bbb7-491a-833b-5773e9589578/18959a1f1973cff8e706e9d9bde28bba36cd602a6b2cb86c8b61252835236010",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation-resource/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/18959a1f1973cff8e706e9d9bde28bba36cd602a6b2cb86c8b61252835236010",
             "id": "18959a1f1973cff8e706e9d9bde28bba36cd602a6b2cb86c8b61252835236010",
             "awsResourceId": "webcms-dev-01",
             "lastUpdatedAt": "2023-11-01T15:09:51.891Z",
@@ -499,16 +499,16 @@ Output:
                 "2": "webcms-dev-01",
                 "3": "db.m6i.large",
                 "4": "false",
-                "5": "us-east-1",
-                "6": "arn:aws:rds:us-east-1:000000000000:db:webcms-dev-01",
+                "5": "us-west-2",
+                "6": "arn:aws:rds:us-west-2:123456789012:db:webcms-dev-01",
                 "7": "20"
             },
-            "recommendationArn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
-            "regionCode": "us-east-1",
+            "recommendationArn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "regionCode": "us-west-2",
             "status": "warning"
         },
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation-resource/55fa4d2e-bbb7-491a-833b-5773e9589578/e6367ff500ac90db8e4adeb4892e39ee9c36bbf812dcbce4b9e4fefcec9eb63e",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation-resource/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/e6367ff500ac90db8e4adeb4892e39ee9c36bbf812dcbce4b9e4fefcec9eb63e",
             "id": "e6367ff500ac90db8e4adeb4892e39ee9c36bbf812dcbce4b9e4fefcec9eb63e",
             "awsResourceId": "aws-dev-db-stack-instance-1",
             "lastUpdatedAt": "2023-11-01T15:09:51.891Z",
@@ -518,16 +518,16 @@ Output:
                 "2": "aws-dev-db-stack-instance-1",
                 "3": "db.t2.small",
                 "4": "false",
-                "5": "us-east-1",
-                "6": "arn:aws:rds:us-east-1:000000000000:db:aws-dev-db-stack-instance-1",
+                "5": "us-west-2",
+                "6": "arn:aws:rds:us-west-2:123456789012:db:aws-dev-db-stack-instance-1",
                 "7": "1"
             },
-            "recommendationArn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
-            "regionCode": "us-east-1",
+            "recommendationArn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "regionCode": "us-west-2",
             "status": "warning"
         },
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation-resource/55fa4d2e-bbb7-491a-833b-5773e9589578/31aa78ba050a5015d2d38cca7f5f1ce88f70857c4e1c3ad03f8f9fd95dad7459",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation-resource/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111/31aa78ba050a5015d2d38cca7f5f1ce88f70857c4e1c3ad03f8f9fd95dad7459",
             "id": "31aa78ba050a5015d2d38cca7f5f1ce88f70857c4e1c3ad03f8f9fd95dad7459",
             "awsResourceId": "aws-awesome-apps-stack-db",
             "lastUpdatedAt": "2023-11-01T15:09:51.891Z",
@@ -537,12 +537,12 @@ Output:
                 "2": "aws-awesome-apps-stack-db",
                 "3": "db.m6g.large",
                 "4": "false",
-                "5": "us-east-1",
-                "6": "arn:aws:rds:us-east-1:000000000000:db:aws-awesome-apps-stack-db",
+                "5": "us-west-2",
+                "6": "arn:aws:rds:us-west-2:123456789012:db:aws-awesome-apps-stack-db",
                 "7": "100"
             },
-            "recommendationArn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
-            "regionCode": "us-east-1",
+            "recommendationArn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "regionCode": "us-west-2",
             "status": "warning"
         }
     ],
@@ -570,13 +570,13 @@ Output:
 {
     "recommendationSummaries": [
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "name": "MFA Recommendation",
             "awsServices": [
                 "iam"
             ],
             "checkArn": "arn:aws:trustedadvisor:::check/7DAFEmoDos",
-            "id": "55fa4d2e-bbb7-491a-833b-5773e9589578",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "lastUpdatedAt": "2023-11-01T15:57:58.673Z",
             "pillarSpecificAggregates": {
                 "costOptimizing": {
@@ -597,13 +597,13 @@ Output:
             "type": "standard"
         },
         {
-            "arn": "arn:aws:trustedadvisor::000000000000:recommendation/8b602b6f-452d-4cb2-8a9e-c7650955d9cd",
+            "arn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "RDS clusters quota warning",
             "awsServices": [
                 "rds"
             ],
             "checkArn": "arn:aws:trustedadvisor:::check/gjqMBn6pjz",
-            "id": "8b602b6f-452d-4cb2-8a9e-c7650955d9cd",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "lastUpdatedAt": "2023-11-01T15:58:17.397Z",
             "pillarSpecificAggregates": {
                 "costOptimizing": {
@@ -641,13 +641,13 @@ Output:
 ```
 {
     "recommendationSummaries": [{
-        "arn": "arn:aws:trustedadvisor::000000000000:recommendation/55fa4d2e-bbb7-491a-833b-5773e9589578",
+        "arn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "MFA Recommendation",
         "awsServices": [
             "iam"
         ],
         "checkArn": "arn:aws:trustedadvisor:::check/7DAFEmoDos",
-        "id": "55fa4d2e-bbb7-491a-833b-5773e9589578",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "lastUpdatedAt": "2023-11-01T15:57:58.673Z",
         "pillarSpecificAggregates": {
             "costOptimizing": {
@@ -685,13 +685,13 @@ Output:
 ```
 {
     "recommendationSummaries": [{
-        "arn": "arn:aws:trustedadvisor::000000000000:recommendation/8b602b6f-452d-4cb2-8a9e-c7650955d9cd",
+        "arn": "arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "name": "RDS clusters quota warning",
         "awsServices": [
             "rds"
         ],
         "checkArn": "arn:aws:trustedadvisor:::check/gjqMBn6pjz",
-        "id": "8b602b6f-452d-4cb2-8a9e-c7650955d9cd",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "lastUpdatedAt": "2023-11-01T15:58:17.397Z",
         "pillarSpecificAggregates": {
             "costOptimizing": {
@@ -727,7 +727,7 @@ The following `update-organization-recommendation-lifecycle` example updates the
 
 ```
 aws trustedadvisor update-organization-recommendation-lifecycle \
-    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/96b5e5ca-7930-444c-90c6-06d386128100}} \
+    --organization-recommendation-identifier {{arn:aws:trustedadvisor:::organization-recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --lifecycle-stage {{dismissed}} \
     --update-reason-code {{not_applicable}}
 ```
@@ -746,7 +746,7 @@ The following `update-recommendation-lifecycle` example updates the lifecycle of
 
 ```
 aws trustedadvisor update-recommendation-lifecycle \
-    --recommendation-identifier {{arn:aws:trustedadvisor::000000000000:recommendation/861c9c6e-f169-405a-8b59-537a8caccd7a}} \
+    --recommendation-identifier {{arn:aws:trustedadvisor::123456789012:recommendation/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --lifecycle-stage {{resolved}} \
     --update-reason-code {{valid_business_case}}
 ```

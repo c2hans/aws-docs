@@ -75,6 +75,7 @@ aws omics batch-delete-read-set \
     --ids {{1234567890}} {{0123456789}}
 ```
 If there is an error deleting any of the specified read sets, the service returns an error list.
+Output:
 
 ```
 {
@@ -97,12 +98,13 @@ The following code example shows how to use `cancel-annotation-import-job`.
 
 **AWS CLI**
 **To cancel an annotation import job**
-The following `cancel-annotation-import-job` example cancels an annotation import job with ID `04f57618-xmpl-4fd0-9349-e5a85aefb997`.
+The following `cancel-annotation-import-job` example cancels an annotation import job with ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 ```
 aws omics cancel-annotation-import-job \
-    --job-id {{04f57618-xmpl-4fd0-9349-e5a85aefb997}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
+This command produces no output.
 For more information, see [Omics Analytics](https://docs.aws.amazon.com/omics/latest/dev/omics-analytics.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [CancelAnnotationImportJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/cancel-annotation-import-job.html) in *AWS CLI Command Reference*.
 
@@ -119,6 +121,7 @@ The following `cancel-run` example cancels a run with ID `1234567`.
 aws omics cancel-run \
     --id {{1234567}}
 ```
+This command produces no output.
 For more information, see [Run lifecycle in a workflow](https://docs.aws.amazon.com/omics/latest/dev/monitoring-runs.html) in the *AWS HealthOmics User Guide*.
 +  For API details, see [CancelRun](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/cancel-run.html) in *AWS CLI Command Reference*.
 
@@ -129,12 +132,13 @@ The following code example shows how to use `cancel-variant-import-job`.
 
 **AWS CLI**
 **To cancel a variant import job**
-The following `cancel-variant-import-job` example cancels a variant import job with ID `69cb65d6-xmpl-4a4a-9025-4565794b684e`.
+The following `cancel-variant-import-job` example cancels a variant import job with ID `a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`.
 
 ```
 aws omics cancel-variant-import-job \
-    --job-id {{69cb65d6-xmpl-4a4a-9025-4565794b684e}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
+This command produces no output.
 For more information, see [Omics Analytics](https://docs.aws.amazon.com/omics/latest/dev/omics-analytics.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [CancelVariantImportJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/cancel-variant-import-job.html) in *AWS CLI Command Reference*.
 
@@ -158,8 +162,6 @@ Output:
 ```
 {
     "readSetId": "0000000001"
-    "readSetId": "0000000002"
-    "readSetId": "0000000003"
 }
 ```
 For more information, see [Direct upload to a sequence store](https://docs.aws.amazon.com/omics/latest/dev/synchronous-uploads.html) in the *AWS HealthOmics User Guide*.
@@ -186,9 +188,6 @@ Output:
     "creationTime": "2023-07-21T17:15:49.251040+00:00",
     "id": "3b93cdef69d2",
     "name": "my_annotation_store",
-    "reference": {
-        "referenceArn": "arn:aws:omics:us-west-2:555555555555:referenceStore/6505293348/reference/5987565360"
-    },
     "status": "CREATING",
     "versionName": "my_version"
 }
@@ -225,6 +224,7 @@ Output:
     "storeFormat": "VCF"
 }
 ```
+For more information, see [Creating HealthOmics annotation stores](https://docs.aws.amazon.com/omics/latest/dev/creating-and-managing-annotation-store.html) in the *AWS HealthOmics User Guide*.
 **Example 2: To create a TSV annotation store**
 The following `create-annotation-store` example creates a TSV format annotation store.
 
@@ -235,7 +235,8 @@ aws omics create-annotation-store \
     --reference {{referenceArn=arn:aws:omics:us-west-2:123456789012:referenceStore/1234567890/reference/1234567890}} \
     --store-options {{file://tsv-store-options.json}}
 ```
-`tsv-store-options.json` configures format options for annotations.
+The `tsv-store-options.json` file configures format options for annotations.
+Contents of `tsv-store-options.json`:
 
 ```
 {
@@ -301,7 +302,7 @@ Output:
     }
 }
 ```
-For more information, see [Omics Analytics](https://docs.aws.amazon.com/omics/latest/dev/omics-analytics.html) in the Amazon Omics Developer Guide.
+For more information, see [Creating HealthOmics annotation stores](https://docs.aws.amazon.com/omics/latest/dev/creating-and-managing-annotation-store.html) in the *AWS HealthOmics User Guide*.
 +  For API details, see [CreateAnnotationStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/create-annotation-store.html) in *AWS CLI Command Reference*.
 
 ### `create-multipart-read-set-upload`
@@ -318,9 +319,9 @@ aws omics create-multipart-read-set-upload \
     --sequence-store-id {{0123456789}} \
     --name {{HG00146}} \
     --source-file-type {{FASTQ}} \
-    --subject-id {{mySubject}}\
-    --sample-id {{mySample}}\
-    --description {{"FASTQ for HG00146"}}\
+    --subject-id {{mySubject}} \
+    --sample-id {{mySample}} \
+    --description {{"FASTQ for HG00146"}} \
     --generated-from {{"1000 Genomes"}}
 ```
 Output:
@@ -433,7 +434,7 @@ The following `create-share` example shows how to create a share of a HealthOmic
 
 ```
 aws omics create-share \
-    --resource-arn {{"arn:aws:omics:us-west-2:555555555555:variantStore/omics_dev_var_store"}} \
+    --resource-arn {{"arn:aws:omics:us-west-2:123456789111:variantStore/omics_dev_var_store"}} \
     --principal-subscriber {{"123456789012"}} \
     --name {{"my_Share-123"}}
 ```
@@ -442,7 +443,7 @@ Output:
 ```
 {
     "shareId": "495c21bedc889d07d0ab69d710a6841e-dd75ab7a1a9c384fa848b5bd8e5a7e0a",
-    "name": "my_Share-123",
+    "shareName": "my_Share-123",
     "status": "PENDING"
 }
 ```
@@ -496,26 +497,27 @@ aws omics create-workflow \
     --parameter-template {{file://workflow-params.json}}
 ```
 `workflow-crambam.zip` is a ZIP archive containing a workflow definition. `workflow-params.json` defines runtime parameters for the workflow.
+Contents of `workflow-params.json`:
 
 ```
 {
-    "ref_fasta" : {
+    "ref_fasta": {
         "description": "Reference genome fasta file",
         "optional": false
     },
-    "ref_fasta_index" : {
+    "ref_fasta_index": {
         "description": "Index of the reference genome fasta file",
         "optional": false
     },
-    "ref_dict" : {
+    "ref_dict": {
         "description": "dictionary file for 'ref_fasta'",
         "optional": false
     },
-    "input_cram" : {
+    "input_cram": {
         "description": "The Cram file to convert to BAM",
         "optional": false
     },
-    "sample_name" : {
+    "sample_name": {
         "description": "The name of the input sample, used to name the output BAM",
         "optional": false
     }
@@ -594,6 +596,7 @@ The following `delete-reference-store` example deletes a reference store with ID
 aws omics delete-reference-store \
     --id {{1234567890}}
 ```
+This command produces no output.
 For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/latest/dev/sequence-stores.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [DeleteReferenceStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/delete-reference-store.html) in *AWS CLI Command Reference*.
 
@@ -611,6 +614,7 @@ aws omics delete-reference \
     --reference-store-id {{1234567890}} \
     --id {{1234567890}}
 ```
+This command produces no output.
 For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/latest/dev/sequence-stores.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [DeleteReference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/delete-reference.html) in *AWS CLI Command Reference*.
 
@@ -627,7 +631,8 @@ The following `delete-run-group` example deletes a run group with ID `1234567`.
 aws omics delete-run-group \
     --id {{1234567}}
 ```
-For more information, see [Deleting runs and run groups](https://docs.aws.amazon.com/omics/latest/dev/deleting-workflows-and-runs.html) in the *AWS HealthOmics User Guide*.
+This command produces no output.
+For more information, see [Using HealthOmics run groups](https://docs.aws.amazon.com/omics/latest/dev/creating-run-groups.html) in the *AWS HealthOmics User Guide*.
 +  For API details, see [DeleteRunGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/delete-run-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-run`
@@ -643,7 +648,8 @@ The following `delete-run` example deletes a run with ID `1234567`.
 aws omics delete-run \
     --id {{1234567}}
 ```
-For more information, see [Deleting runs and run groups](https://docs.aws.amazon.com/omics/latest/dev/deleting-workflows-and-runs.html) in the *AWS HealthOmics User Guide*.
+This command produces no output.
+For more information, see [Delete a run in HealthOmics](https://docs.aws.amazon.com/omics/latest/dev/deleting-runs.html) in the *AWS HealthOmics User Guide*.
 +  For API details, see [DeleteRun](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/delete-run.html) in *AWS CLI Command Reference*.
 
 ### `delete-sequence-store`
@@ -659,6 +665,7 @@ The following `delete-sequence-store` example deletes a sequence store with ID `
 aws omics delete-sequence-store \
     --id {{1234567890}}
 ```
+This command produces no output.
 For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/latest/dev/sequence-stores.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [DeleteSequenceStore](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/delete-sequence-store.html) in *AWS CLI Command Reference*.
 
@@ -721,6 +728,7 @@ The following `delete-workflow` example deletes a workflow with ID `1234567`.
 aws omics delete-workflow \
     --id {{1234567}}
 ```
+This command produces no output.
 For more information, see [Delete a private workflow](https://docs.aws.amazon.com/omics/latest/dev/delete-private-workflow.html) in the *AWS HealthOmics User Guide*.
 +  For API details, see [DeleteWorkflow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/delete-workflow.html) in *AWS CLI Command Reference*.
 
@@ -735,7 +743,7 @@ The following `get-annotation-import-job` example gets details about an annotati
 
 ```
 aws omics get-annotation-import-job \
-    --job-id {{984162c7-xmpl-4d23-ab47-286f7950bfbf}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -743,11 +751,11 @@ Output:
 {
     "creationTime": "2022-11-30T01:40:11.017746Z",
     "destinationName": "tsv_ann_store",
-    "id": "984162c7-xmpl-4d23-ab47-286f7950bfbf",
+    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "items": [
         {
             "jobStatus": "COMPLETED",
-            "source": "s3://omics-artifacts-01d6xmpl4e72dd32/targetedregions.bed.gz"
+            "source": "s3://amzn-s3-demo-bucket/targetedregions.bed.gz"
         }
     ],
     "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
@@ -780,7 +788,7 @@ Output:
     "storeId": "4934045d1c6d",
     "id": "2a3f4a44aa7b",
     "status": "ACTIVE",
-    "versionArn": "arn:aws:omics:us-west-2:555555555555:annotationStore/my_annotation_store/version/my_version",
+    "versionArn": "arn:aws:omics:us-west-2:123456789012:annotationStore/my_annotation_store/version/my_version",
     "name": "my_annotation_store",
     "versionName": "my_version",
     "creationTime": "2023-07-21T17:15:49.251040+00:00",
@@ -881,7 +889,7 @@ Output:
 {
     "completionTime": "2022-12-06T22:39:14.491Z",
     "creationTime": "2022-12-06T22:37:18.612Z",
-    "destination": "s3://omics-artifacts-01d6xmpl4e72dd32/read-set-export/",
+    "destination": "s3://amzn-s3-demo-bucket/read-set-export/",
     "id": "1234567890",
     "sequenceStoreId": "1234567890",
     "status": "COMPLETED",
@@ -920,7 +928,7 @@ Output:
             "sampleId": "bam-sample",
             "sourceFileType": "BAM",
             "sourceFiles": {
-                "source1": "s3://omics-artifacts-01d6xmpl4e72dd32/HG00100.chrom20.ILLUMINA.bwa.GBR.low_coverage.20101123.bam",
+                "source1": "s3://amzn-s3-demo-bucket/HG00100.chrom20.ILLUMINA.bwa.GBR.low_coverage.20101123.bam",
                 "source2": ""
             },
             "status": "IN_PROGRESS",
@@ -937,8 +945,8 @@ Output:
             "sampleId": "fastq-sample",
             "sourceFileType": "FASTQ",
             "sourceFiles": {
-                "source1": "s3://omics-artifacts-01d6xmpl4e72dd32/SRR233106_1.filt.fastq.gz",
-                "source2": "s3://omics-artifacts-01d6xmpl4e72dd32/SRR233106_2.filt.fastq.gz"
+                "source1": "s3://amzn-s3-demo-bucket/SRR233106_1.filt.fastq.gz",
+                "source2": "s3://amzn-s3-demo-bucket/SRR233106_2.filt.fastq.gz"
             },
             "status": "IN_PROGRESS",
             "statusMessage": "The source job is currently in progress.",
@@ -954,7 +962,7 @@ Output:
             "sampleId": "cram-sample",
             "sourceFileType": "CRAM",
             "sourceFiles": {
-                "source1": "s3://omics-artifacts-01d6xmpl4e72dd32/HG00096.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram",
+                "source1": "s3://amzn-s3-demo-bucket/HG00096.alt_bwamem_GRCh38DH.20150718.GBR.low_coverage.cram",
                 "source2": ""
             },
             "status": "IN_PROGRESS",
@@ -1038,6 +1046,7 @@ aws omics get-read-set \
     --id {{1234567890}} \
     --part-number {{3}}  {{1234567890.3.bam}}
 ```
+This command produces no output.
 For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/latest/dev/sequence-stores.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [GetReadSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/get-read-set.html) in *AWS CLI Command Reference*.
 
@@ -1066,7 +1075,7 @@ Output:
     "sources": [
         {
             "name": "assembly-38",
-            "sourceFile": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta",
+            "sourceFile": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta",
             "status": "IN_PROGRESS",
             "statusMessage": "The source job is currently in progress."
         }
@@ -1162,6 +1171,7 @@ aws omics get-reference \
     --id {{1234567890}} \
     --part-number {{1}} {{hg38.1.fa}}
 ```
+This command produces no output.
 For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/latest/dev/sequence-stores.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [GetReference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/get-reference.html) in *AWS CLI Command Reference*.
 
@@ -1248,19 +1258,19 @@ Output:
     "digest": "sha256:c54bxmpl742dcc26f7fa1f10e37550ddd8f251f418277c0a58e895b801ed28cf",
     "id": "1234567",
     "name": "cram-to-bam",
-    "outputUri": "s3://omics-artifacts-01d6xmpl4e72dd32/workflow-output/",
+    "outputUri": "s3://amzn-s3-demo-bucket/workflow-output/",
     "parameters": {
-        "ref_dict": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.dict",
-        "ref_fasta_index": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta.fai",
-        "ref_fasta": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta",
+        "ref_dict": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.dict",
+        "ref_fasta_index": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta.fai",
+        "ref_fasta": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta",
         "sample_name": "NA12878",
-        "input_cram": "s3://omics-artifacts-01d6xmpl4e72dd32/NA12878.cram"
+        "input_cram": "s3://amzn-s3-demo-bucket/NA12878.cram"
     },
     "resourceDigests": {
-        "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta.fai": "etag:f76371b113734a56cde236bc0372de0a",
-        "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.dict": "etag:3884c62eb0e53fa92459ed9bff133ae6",
-        "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta": "etag:e307d81c605fb91b7720a08f00276842-388",
-        "s3://omics-artifacts-01d6xmpl4e72dd32/NA12878.cram": "etag:a9f52976381286c6143b5cc681671ec6"
+        "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta.fai": "etag:f76371b113734a56cde236bc0372de0a",
+        "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.dict": "etag:3884c62eb0e53fa92459ed9bff133ae6",
+        "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta": "etag:e307d81c605fb91b7720a08f00276842-388",
+        "s3://amzn-s3-demo-bucket/NA12878.cram": "etag:a9f52976381286c6143b5cc681671ec6"
     },
     "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
     "startedBy": "arn:aws:iam::123456789012:user/laptop-2020",
@@ -1290,7 +1300,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:omics:us-east-1:123456789012:sequenceStore/1234567890",
+    "arn": "arn:aws:omics:us-west-2:123456789012:sequenceStore/1234567890",
     "creationTime": "2022-11-23T19:55:48.376Z",
     "id": "1234567890",
     "name": "my-seq-store"
@@ -1318,10 +1328,10 @@ Output:
 {
     "share": {
         "shareId": "495c21bedc889d07d0ab69d710a6841e-dd75ab7a1a9c384fa848b5bd8e5a7e0a",
-        "name": "my_Share-123",
-        "resourceArn": "arn:aws:omics:us-west-2:555555555555:variantStore/omics_dev_var_store",
+        "shareName": "my_Share-123",
+        "resourceArn": "arn:aws:omics:us-west-2:123456789111:variantStore/omics_dev_var_store",
         "principalSubscriber": "123456789012",
-        "ownerId": "555555555555",
+        "ownerId": "123456789111",
         "status": "PENDING"
     }
 }
@@ -1340,7 +1350,7 @@ The following `get-variant-import-job` example gets details about a variant impo
 
 ```
 aws omics get-variant-import-job \
-    --job-id {{edd7b8ce-xmpl-47e2-bc99-258cac95a508}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -1348,11 +1358,11 @@ Output:
 {
     "creationTime": "2022-11-23T22:42:50.037812Z",
     "destinationName": "my_var_store",
-    "id": "edd7b8ce-xmpl-47e2-bc99-258cac95a508",
+    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "items": [
         {
             "jobStatus": "IN_PROGRESS",
-            "source": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.known_indels.vcf.gz"
+            "source": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.known_indels.vcf.gz"
         }
     ],
     "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
@@ -1454,7 +1464,7 @@ The following code example shows how to use `list-annotation-import-jobs`.
 
 **AWS CLI**
 **To get a list of annotation import jobs**
-The following `list-annotation-import-jobs` gets a list of annotation import jobs.
+The following `list-annotation-import-jobs` example gets a list of annotation import jobs.
 
 ```
 aws omics list-annotation-import-jobs
@@ -1467,7 +1477,7 @@ Output:
         {
             "creationTime": "2022-11-30T01:39:41.478294Z",
             "destinationName": "gff_ann_store",
-            "id": "18a9e792-xmpl-4869-a105-e5b602900444",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
             "runLeftNormalization": false,
             "status": "COMPLETED",
@@ -1476,7 +1486,7 @@ Output:
         {
             "creationTime": "2022-11-30T00:45:58.007838Z",
             "destinationName": "my_ann_store",
-            "id": "4e9eafc8-xmpl-431e-a0b2-3bda27cb600a",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
             "runLeftNormalization": false,
             "status": "FAILED",
@@ -1507,28 +1517,28 @@ Output:
 {
     "annotationStoreVersions": [
         {
-        "storeId": "4934045d1c6d",
-        "id": "2a3f4a44aa7b",
-        "status": "CREATING",
-        "versionArn": "arn:aws:omics:us-west-2:555555555555:annotationStore/my_annotation_store/version/my_version_2",
-        "name": "my_annotation_store",
-        "versionName": "my_version_2",
-        "creation Time": "2023-07-21T17:20:59.380043+00:00",
-        "versionSizeBytes": 0
-},
-{
-     "storeId": "4934045d1c6d",
-     "id": "4934045d1c6d",
-     "status": "ACTIVE",
-     "versionArn": "arn:aws:omics:us-west-2:555555555555:annotationStore/my_annotation_store/version/my_version_1",
-     "name": "my_annotation_store",
-     "versionName": "my_version_1",
-     "creationTime": "2023-07-21T17:15:49.251040+00:00",
-     "updateTime": "2023-07-21T17:15:56.434223+00:00",
-     "statusMessage": "",
-     "versionSizeBytes": 0
-     }
-
+            "storeId": "4934045d1c6d",
+            "id": "2a3f4a44aa7b",
+            "status": "CREATING",
+            "versionArn": "arn:aws:omics:us-west-2:123456789012:annotationStore/my_annotation_store/version/my_version_2",
+            "name": "my_annotation_store",
+            "versionName": "my_version_2",
+            "creationTime": "2023-07-21T17:20:59.380043+00:00",
+            "versionSizeBytes": 0
+        },
+        {
+            "storeId": "4934045d1c6d",
+            "id": "4934045d1c6d",
+            "status": "ACTIVE",
+            "versionArn": "arn:aws:omics:us-west-2:123456789012:annotationStore/my_annotation_store/version/my_version_1",
+            "name": "my_annotation_store",
+            "versionName": "my_version_1",
+            "creationTime": "2023-07-21T17:15:49.251040+00:00",
+            "updateTime": "2023-07-21T17:15:56.434223+00:00",
+            "statusMessage": "",
+            "versionSizeBytes": 0
+        }
+    ]
 }
 ```
 For more information, see [Creating new versions of annotation stores](https://docs.aws.amazon.com/omics/latest/dev/annotation-store-versioning.html) in the *AWS HealthOmics User Guide*.
@@ -1588,12 +1598,12 @@ Output:
 
 ```
 {
-"uploads":
+    "uploads":
     [
         {
-           "sequenceStoreId": "0123456789",
-           "uploadId": "8749584421",
-           "sourceFileType": "FASTQ",
+            "sequenceStoreId": "0123456789",
+            "uploadId": "8749584421",
+            "sourceFileType": "FASTQ",
             "subjectId": "mySubject",
             "sampleId": "mySample",
             "generatedFrom": "1000 Genomes",
@@ -1608,7 +1618,7 @@ Output:
             "subjectId": "mySubject",
             "sampleId": "mySample",
             "generatedFrom": "1000 Genomes",
-            "referenceArn": "arn:aws:omics:us-west-2:845448930428:referenceStore/8168613728/reference/2190697383",
+            "referenceArn": "arn:aws:omics:us-west-2:123456789012:referenceStore/8168613728/reference/2190697383",
             "name": "HG00146",
             "description": "BAM for HG00146",
             "creationTime": "2023-11-29T19:23:33.116516+00:00"
@@ -1620,7 +1630,7 @@ Output:
             "subjectId": "mySubject",
             "sampleId": "mySample",
             "generatedFrom": "1000 Genomes",
-            "referenceArn": "arn:aws:omics:us-west-2:845448930428:referenceStore/8168613728/reference/2190697383",
+            "referenceArn": "arn:aws:omics:us-west-2:123456789012:referenceStore/8168613728/reference/2190697383",
             "name": "HG00147",
             "description": "BAM for HG00147",
             "creationTime": "2023-11-29T19:23:47.007866+00:00"
@@ -1689,14 +1699,14 @@ Output:
         {
             "completionTime": "2022-12-06T22:39:14.491Z",
             "creationTime": "2022-12-06T22:37:18.612Z",
-            "destination": "s3://omics-artifacts-01d6xmpl4e72dd32/read-set-export/",
+            "destination": "s3://amzn-s3-demo-bucket/read-set-export/",
             "id": "1234567890",
             "sequenceStoreId": "1234567890",
             "status": "COMPLETED"
         },
         {
             "creationTime": "2022-12-06T22:38:04.871Z",
-            "destination": "s3://omics-artifacts-01d6xmpl4e72dd32/read-set-export/",
+            "destination": "s3://amzn-s3-demo-bucket/read-set-export/",
             "id": "1234567890",
             "sequenceStoreId": "1234567890",
             "status": "IN_PROGRESS"
@@ -1770,19 +1780,18 @@ Output:
         {
             "partNumber": 1,
             "partSize": 94371840,
-            "file": "SOURCE1",
+            "partSource": "SOURCE1",
             "checksum": "984979b9928ae8d8622286c4a9cd8e99d964a22d59ed0f5722e1733eb280e635",
             "lastUpdatedTime": "2023-02-02T20:14:47.533000+00:00"
-        }
+        },
         {
             "partNumber": 2,
             "partSize": 10471840,
-            "file": "SOURCE1",
+            "partSource": "SOURCE1",
             "checksum": "984979b9928ae8d8622286c4a9cd8e99d964a22d59ed0f5722e1733eb280e635",
             "lastUpdatedTime": "2023-02-02T20:14:47.533000+00:00"
         }
-      ]
-
+    ]
 }
 ```
 For more information, see [Direct upload to a sequence store](https://docs.aws.amazon.com/omics/latest/dev/synchronous-uploads.html) in the *AWS HealthOmics User Guide*.
@@ -2104,27 +2113,27 @@ Output:
 {
     "shares": [
         {
-            "shareId": "595c1cbd-a008-4eca-a887-954d30c91c6e",
-            "name": "myShare",
-            "resourceArn": "arn:aws:omics:us-west-2:555555555555:variantStore/store_1",
+            "shareId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "shareName": "myShare",
+            "resourceArn": "arn:aws:omics:us-west-2:123456789111:variantStore/store_1",
             "principalSubscriber": "123456789012",
-            "ownerId": "555555555555",
+            "ownerId": "123456789111",
             "status": "PENDING"
-        }
+        },
         {
-            "shareId": "39b65d0d-4368-4a19-9814-b0e31d73c10a",
-            "name": "myShare3456",
-            "resourceArn": "arn:aws:omics:us-west-2:555555555555:variantStore/store_2",
+            "shareId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "shareName": "myShare3456",
+            "resourceArn": "arn:aws:omics:us-west-2:123456789111:variantStore/store_2",
             "principalSubscriber": "123456789012",
-            "ownerId": "555555555555",
+            "ownerId": "123456789111",
             "status": "ACTIVE"
         },
         {
-            "shareId": "203152f5-eef9-459d-a4e0-a691668d44ef",
-            "name": "myShare4",
-            "resourceArn": "arn:aws:omics:us-west-2:555555555555:variantStore/store_3",
+            "shareId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
+            "shareName": "myShare4",
+            "resourceArn": "arn:aws:omics:us-west-2:123456789111:variantStore/store_3",
             "principalSubscriber": "123456789012",
-            "ownerId": "555555555555",
+            "ownerId": "123456789111",
             "status": "ACTIVE"
         }
     ]
@@ -2155,7 +2164,7 @@ Output:
     }
 }
 ```
-For more information, see [Tagging resources in Amazon Omics](https://docs.aws.amazon.com/omics/latest/dev/workflows.html) in the *Amazon Omics Developer Guide*.
+For more information, see [Tagging resources in HealthOmics](https://docs.aws.amazon.com/omics/latest/dev/tagging.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-variant-import-jobs`
@@ -2178,7 +2187,7 @@ Output:
         {
             "creationTime": "2022-11-23T22:47:02.514002Z",
             "destinationName": "my_var_store",
-            "id": "69cb65d6-xmpl-4a4a-9025-4565794b684e",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
             "runLeftNormalization": false,
             "status": "COMPLETED",
@@ -2187,7 +2196,7 @@ Output:
         {
             "creationTime": "2022-11-23T22:42:50.037812Z",
             "destinationName": "my_var_store",
-            "id": "edd7b8ce-xmpl-47e2-bc99-258cac95a508",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "roleArn": "arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ",
             "runLeftNormalization": false,
             "status": "COMPLETED",
@@ -2298,13 +2307,13 @@ aws omics start-annotation-import-job \
     --destination-name {{tsv_ann_store}} \
     --no-run-left-normalization \
     --role-arn {{arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ}} \
-    --items {{source=s3://omics-artifacts-01d6xmpl4e72dd32/targetedregions.bed.gz}}
+    --items {{source=s3://amzn-s3-demo-bucket/targetedregions.bed.gz}}
 ```
 Output:
 
 ```
 {
-    "jobId": "984162c7-xmpl-4d23-ab47-286f7950bfbf"
+    "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Omics Analytics](https://docs.aws.amazon.com/omics/latest/dev/omics-analytics.html) in the *Amazon Omics Developer Guide*.
@@ -2347,19 +2356,18 @@ The following code example shows how to use `start-read-set-export-job`.
 The following `start-read-set-export-job` example exports two read sets to Amazon S3.
 
 ```
-   aws omics start-read-set-export-job \
-       --sequence-store-id 1234567890 \
-       --sources readSetId=1234567890 readSetId=1234567890 \
-       --role-arn arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ
-\
-       --destination s3://omics-artifacts-01d6xmpl4e72dd32/read-set-export/
+aws omics start-read-set-export-job \
+    --sequence-store-id {{1234567890}} \
+    --sources {{readSetId=1234567890}} {{readSetId=1234567890}} \
+    --role-arn {{arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ}} \
+    --destination {{s3://amzn-s3-demo-bucket/read-set-export/}}
 ```
 Output:
 
 ```
 {
     "creationTime": "2022-12-06T22:37:18.612Z",
-    "destination": "s3://omics-artifacts-01d6xmpl4e72dd32/read-set-export/",
+    "destination": "s3://amzn-s3-demo-bucket/read-set-export/",
     "id": "1234567890",
     "sequenceStoreId": "1234567890",
     "status": "SUBMITTED"
@@ -2383,14 +2391,14 @@ aws omics start-read-set-import-job \
     --role-arn {{arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ}} \
     --sources {{file://readset-sources.json}}
 ```
-readset-sources.json is a JSON document with the following content.
+Contents of `readset-sources.json`:
 
 ```
 [
     {
         "sourceFiles":
         {
-            "source1": "s3://omics-artifacts-01d6xmpl4e72dd32/HG00100.chrom20.ILLUMINA.bwa.GBR.low_coverage.20101123.bam"
+            "source1": "s3://amzn-s3-demo-bucket/HG00100.chrom20.ILLUMINA.bwa.GBR.low_coverage.20101123.bam"
         },
         "sourceFileType": "BAM",
         "subjectId": "bam-subject",
@@ -2427,7 +2435,7 @@ The following `start-reference-import-job` example imports a reference genome fr
 aws omics start-reference-import-job \
     --reference-store-id {{1234567890}} \
     --role-arn {{arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ}} \
-    --sources {{sourceFile=s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta,name=assembly-38}}
+    --sources {{sourceFile=s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta,name=assembly-38}}
 ```
 Output:
 
@@ -2449,7 +2457,7 @@ For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/late
 The following code example shows how to use `start-run`.
 
 **AWS CLI**
-**To run a workflow**
+**Example 1: To run a workflow**
 The following `start-run` example runs a workflow with ID `1234567`.
 
 ```
@@ -2457,22 +2465,22 @@ aws omics start-run \
     --workflow-id {{1234567}} \
     --role-arn {{arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ}} \
     --name '{{cram-to-bam}}' \
-    --output-uri {{s3://omics-artifacts-01d6xmpl4e72dd32/workflow-output/}} \
+    --output-uri {{s3://amzn-s3-demo-bucket/workflow-output/}} \
     --run-group-id {{1234567}} \
     --priority {{1}} \
     --storage-capacity {{10}} \
     --log-level {{ALL}} \
     --parameters {{file://workflow-inputs.json}}
 ```
-workflow-inputs.json is a JSON document with the following content.
+Contents of `workflow-inputs.json`:
 
 ```
 {
     "sample_name": "NA12878",
-    "input_cram": "s3://omics-artifacts-01d6xmpl4e72dd32/NA12878.cram",
-    "ref_dict": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.dict",
-    "ref_fasta": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta",
-    "ref_fasta_index": "omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.fasta.fai"
+    "input_cram": "s3://amzn-s3-demo-bucket/NA12878.cram",
+    "ref_dict": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.dict",
+    "ref_fasta": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta",
+    "ref_fasta_index": "amzn-s3-demo-bucket/Homo_sapiens_assembly38.fasta.fai"
 }
 ```
 Output:
@@ -2486,14 +2494,14 @@ Output:
 }
 ```
 For more information, see [Starting a run](https://docs.aws.amazon.com/omics/latest/dev/starting-a-run.html) in the *AWS HealthOmics User Guide*.
-**To load source files from Amazon Omics**
-You can also load source files from Amazon Omics storage, by using service-specific URIs. The following example workflow-inputs.json file uses Amazon Omics URIs for read set and reference genome sources.
+**Example 2: To load source files from Amazon Omics**
+The following `start-run` example loads source files from Amazon Omics storage by using service-specific URIs. The `workflow-inputs.json` file for this example uses Amazon Omics URIs for read set and reference genome sources.
 
 ```
 {
     "sample_name": "NA12878",
     "input_cram": "omics://123456789012.storage.us-west-2.amazonaws.com/1234567890/readSet/1234567890/source1",
-    "ref_dict": "s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.dict",
+    "ref_dict": "s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.dict",
     "ref_fasta": "omics://123456789012.storage.us-west-2.amazonaws.com/1234567890/reference/1234567890",
     "ref_fasta_index": "omics://123456789012.storage.us-west-2.amazonaws.com/1234567890/reference/1234567890/index"
 }
@@ -2514,13 +2522,13 @@ aws omics start-variant-import-job \
     --destination-name {{my_var_store}} \
     --no-run-left-normalization  \
     --role-arn {{arn:aws:iam::123456789012:role/omics-service-role-serviceRole-W8O1XMPL7QZ}} \
-    --items {{source=s3://omics-artifacts-01d6xmpl4e72dd32/Homo_sapiens_assembly38.known_indels.vcf.gz}}
+    --items {{source=s3://amzn-s3-demo-bucket/Homo_sapiens_assembly38.known_indels.vcf.gz}}
 ```
 Output:
 
 ```
 {
-    "jobId": "edd7b8ce-xmpl-47e2-bc99-258cac95a508"
+    "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Omics Analytics](https://docs.aws.amazon.com/omics/latest/dev/omics-analytics.html) in the *Amazon Omics Developer Guide*.
@@ -2540,7 +2548,8 @@ aws omics tag-resource \
     --resource-arn {{arn:aws:omics:us-west-2:123456789012:workflow/1234567}} \
     --tags {{department=analytics}}
 ```
-For more information, see [Tagging resources in Amazon Omics](https://docs.aws.amazon.com/omics/latest/dev/workflows.html) in the *Amazon Omics Developer Guide*.
+This command produces no output.
+For more information, see [Tagging resources in HealthOmics](https://docs.aws.amazon.com/omics/latest/dev/tagging.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -2557,6 +2566,7 @@ aws omics untag-resource \
     --resource-arn {{arn:aws:omics:us-west-2:123456789012:workflow/1234567}} \
     --tag-keys {{department}}
 ```
+This command produces no output.
 For more information, see [Omics Storage](https://docs.aws.amazon.com/omics/latest/dev/tagging.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/untag-resource.html) in *AWS CLI Command Reference*.
 
@@ -2607,20 +2617,8 @@ aws omics update-run-group \
     --id {{1234567}} \
     --max-cpus {{10}}
 ```
-Output:
-
-```
-{
-    "arn": "arn:aws:omics:us-west-2:123456789012:runGroup/1234567",
-    "creationTime": "2022-12-01T00:58:42.915219Z",
-    "id": "1234567",
-    "maxCpus": 10,
-    "maxDuration": 600,
-    "name": "cram-convert",
-    "tags": {}
-}
-```
-For more information, see [Omics Workflows](https://docs.aws.amazon.com/omics/latest/dev/workflows.html) in the *Amazon Omics Developer Guide*.
+This command produces no output.
+For more information, see [Using HealthOmics run groups](https://docs.aws.amazon.com/omics/latest/dev/creating-run-groups.html) in the *Amazon Omics Developer Guide*.
 +  For API details, see [UpdateRunGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/update-run-group.html) in *AWS CLI Command Reference*.
 
 ### `update-variant-store`
@@ -2669,6 +2667,7 @@ aws omics update-workflow \
     --id {{1234567}} \
     --description {{"copy workflow"}}
 ```
+This command produces no output.
 For more information, see [Creating or updating a workflow](https://docs.aws.amazon.com/omics/latest/dev/creating-private-workflows.html) in the *AWS HealthOmics User Guide*.
 +  For API details, see [UpdateWorkflow](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/omics/update-workflow.html) in *AWS CLI Command Reference*.
 

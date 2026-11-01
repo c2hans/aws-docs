@@ -31,8 +31,7 @@ The following `associate-web-acl` example associates the specified web ACL with 
 ```
 aws wafv2 associate-web-acl \
     --web-acl-arn {{arn:aws:wafv2:us-west-2:123456789012:regional/webacl/test-cli/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --resource-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/waf-cli-alb/1ea17125f8b25a2a}} \
-    --region {{us-west-2}}
+    --resource-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/waf-cli-alb/1ea17125f8b25a2a}}
 ```
 This command produces no output.
 For more information, see [Associating or Disassociating a Web ACL with an AWS Resource](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-associating-aws-resource.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -45,15 +44,14 @@ The following code example shows how to use `check-capacity`.
 
 **AWS CLI**
 **To obtain the capacity used by a set of rules**
-The following `check-capacity` retrieves the capacity requirements for a rule set that contains a rate-based rule statement, and an AND rule statement that contains nested rules.
+The following `check-capacity` example retrieves the capacity requirements for a rule set that contains a rate-based rule statement, and an AND rule statement that contains nested rules.
 
 ```
 aws wafv2 check-capacity \
     --scope {{REGIONAL}} \
-    --rules {{file://waf-rule-list.json}} \
-    --region {{us-west-2}}
+    --rules {{file://waf-rule-list.json}}
 ```
-Contents of file://waf-rule-list.json:
+Contents of `waf-rule-list.json`:
 
 ```
 [
@@ -131,7 +129,7 @@ Output:
     "Capacity":15
 }
 ```
-For more information, see [AWS WAF Web ACL Capacity Units (WCU)](https://docs.aws.amazon.com/waf/latest/developerguide/how-aws-waf-works.html#aws-waf-capacity-units) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
+For more information, see [AWS WAF Web ACL Capacity Units (WCU)](https://docs.aws.amazon.com/waf/latest/developerguide/aws-waf-capacity-units.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [CheckCapacity](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/wafv2/check-capacity.html) in *AWS CLI Command Reference*.
 
 ### `create-ip-set`
@@ -141,7 +139,7 @@ The following code example shows how to use `create-ip-set`.
 
 **AWS CLI**
 **To create an IP set for use in your web ACLs and rule groups**
-The following `create-ip-set` command creates an IP set with a single address range specification.
+The following `create-ip-set` example creates an IP set with a single address range specification.
 
 ```
 aws wafv2 create-ip-set \
@@ -158,7 +156,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/ipset/testip/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Description":"",
         "Name":"testip",
-        "LockToken":"447e55ac-0000-0000-0000-86b67c17f8b5",
+        "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
@@ -173,7 +171,7 @@ The following code example shows how to use `create-regex-pattern-set`.
 
 **AWS CLI**
 **To create a regex pattern set for use in your web ACLs and rule groups**
-The following `create-regex-pattern-set` command creates a regex pattern set with two regex patterns specified.
+The following `create-regex-pattern-set` example creates a regex pattern set with two regex patterns specified.
 
 ```
 aws wafv2 create-regex-pattern-set \
@@ -190,7 +188,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/regexpatternset/regexPatterSet01/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Description":"Test web-acl",
         "Name":"regexPatterSet01",
-        "LockToken":"0bc01e21-03c9-4b98-9433-6229cbf1ef1c",
+        "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
@@ -205,7 +203,7 @@ The following code example shows how to use `create-rule-group`.
 
 **AWS CLI**
 **To create a custom rule group for use in your web ACLs**
-The following `create-rule-group` command creates a custom rule group for regional use. The rule statements for the group are provided in a JSON-formatted file.
+The following `create-rule-group` example creates a custom rule group for regional use. The rule statements for the group are provided in a JSON-formatted file.
 
 ```
 aws wafv2 create-rule-group \
@@ -213,10 +211,9 @@ aws wafv2 create-rule-group \
     --scope {{REGIONAL}} \
     --capacity {{250}} \
     --rules {{file://waf-rule.json}} \
-    --visibility-config {{SampledRequestsEnabled=true,CloudWatchMetricsEnabled=true,MetricName=TestRuleGroupMetrics}} \
-    --region {{us-west-2}}
+    --visibility-config {{SampledRequestsEnabled=true,CloudWatchMetricsEnabled=true,MetricName=TestRuleGroupMetrics}}
 ```
-Contents of file://waf-rule.json:
+Contents of `waf-rule.json`:
 
 ```
 [
@@ -275,7 +272,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/rulegroup/TestRuleGroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Description":"",
         "Name":"TestRuleGroup",
-        "LockToken":"7b3bcec2-374e-4c5a-b2b9-563bf47249f0",
+        "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
@@ -290,7 +287,7 @@ The following code example shows how to use `create-web-acl`.
 
 **AWS CLI**
 **To create a web ACL**
-The following `create-web-acl` command creates a web ACL for regional use. The rule statements for the web ACL are provided in a JSON-formatted file.
+The following `create-web-acl` example creates a web ACL for regional use. The rule statements for the web ACL are provided in a JSON-formatted file.
 
 ```
 aws wafv2 create-web-acl \
@@ -298,10 +295,9 @@ aws wafv2 create-web-acl \
     --scope {{REGIONAL}} \
     --default-action {{Allow={}}} \
     --visibility-config {{SampledRequestsEnabled=true,CloudWatchMetricsEnabled=true,MetricName=TestWebAclMetrics}} \
-    --rules {{file://waf-rule.json}} \
-    --region {{us-west-2}}
+    --rules {{file://waf-rule.json}}
 ```
-Contents of file://waf-rule.json:
+Contents of `waf-rule.json`:
 
 ```
 [
@@ -360,7 +356,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/webacl/TestWebAcl/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Description":"",
         "Name":"TestWebAcl",
-        "LockToken":"2294b3a1-eb60-4aa0-a86f-a3ae04329de9",
+        "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
@@ -375,14 +371,14 @@ The following code example shows how to use `delete-ip-set`.
 
 **AWS CLI**
 **To delete an IP set**
-The following `delete-ip-set` deletes the specified IP set. This call requires an ID, which you can obtain from the call, `list-ip-sets`, and a lock token, which you can obtain from the calls, `list-ip-sets` and `get-ip-set`.
+The following `delete-ip-set` example deletes the specified IP set. This call requires an ID, which you can obtain from the call, `list-ip-sets`, and a lock token, which you can obtain from the calls, `list-ip-sets` and `get-ip-set`.
 
 ```
 aws wafv2 delete-ip-set \
     --name {{test1}} \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --lock-token {{46851772-db6f-459d-9385-49428812e357}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [IP Sets and Regex Pattern Sets](https://docs.aws.amazon.com/waf/latest/developerguide/waf-referenced-set-managing.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -395,7 +391,7 @@ The following code example shows how to use `delete-logging-configuration`.
 
 **AWS CLI**
 **To disable logging for a web ACL**
-The following `delete-logging-configuration` removes any logging configuration from the specified web ACL.
+The following `delete-logging-configuration` example removes any logging configuration from the specified web ACL.
 
 ```
 aws wafv2 delete-logging-configuration \
@@ -412,14 +408,14 @@ The following code example shows how to use `delete-regex-pattern-set`.
 
 **AWS CLI**
 **To delete a regex pattern set**
-The following `delete-regex-pattern-set` updates the settings for the specified regex pattern set. This call requires an ID, which you can obtain from the call, `list-regex-pattern-sets`, and a lock token, which you can obtain from the call `list-regex-pattern-sets` or the call `get-regex-pattern-set`.
+The following `delete-regex-pattern-set` example deletes the specified regex pattern set. This call requires an ID, which you can obtain from the call, `list-regex-pattern-sets`, and a lock token, which you can obtain from the call `list-regex-pattern-sets` or the call `get-regex-pattern-set`.
 
 ```
 aws wafv2 delete-regex-pattern-set \
     --name {{regexPatterSet01}} \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --lock-token {{0bc01e21-03c9-4b98-9433-6229cbf1ef1c}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [IP Sets and Regex Pattern Sets](https://docs.aws.amazon.com/waf/latest/developerguide/waf-referenced-set-managing.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -432,14 +428,14 @@ The following code example shows how to use `delete-rule-group`.
 
 **AWS CLI**
 **To delete a custom rule group**
-The following `delete-rule-group` deletes the specified custom rule group. This call requires an ID, which you can obtain from the call, `list-rule-groups`, and a lock token, which you can obtain from the call `list-rule-groups` or the call `get-rule-group`.
+The following `delete-rule-group` example deletes the specified custom rule group. This call requires an ID, which you can obtain from the call, `list-rule-groups`, and a lock token, which you can obtain from the call `list-rule-groups` or the call `get-rule-group`.
 
 ```
 aws wafv2 delete-rule-group \
     --name {{TestRuleGroup}} \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --lock-token {{7b3bcec2-0000-0000-0000-563bf47249f0}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Managing Your Own Rule Groups](https://docs.aws.amazon.com/waf/latest/developerguide/waf-user-created-rule-groups.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -452,14 +448,14 @@ The following code example shows how to use `delete-web-acl`.
 
 **AWS CLI**
 **To delete a web ACL**
-The following `delete-web-acl` deletes the specified web ACL from your account. A web ACL can only be deleted when it's not associated with any resources. This call requires an ID, which you can obtain from the call, `list-web-acls`, and a lock token, which you can obtain from the call `list-web-acls` or the call `get-web-acl`.
+The following `delete-web-acl` example deletes the specified web ACL from your account. A web ACL can only be deleted when it's not associated with any resources. This call requires an ID, which you can obtain from the call, `list-web-acls`, and a lock token, which you can obtain from the call `list-web-acls` or the call `get-web-acl`.
 
 ```
 aws wafv2 delete-web-acl \
     --name {{test}} \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --lock-token {{ebab4ed2-155e-4c9a-9efb-e4c45665b1f5}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 This command produces no output.
 For more information, see [Managing and Using a Web Access Control List (Web ACL)](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -472,7 +468,7 @@ The following code example shows how to use `describe-managed-rule-group`.
 
 **AWS CLI**
 **To retrieve the description for a managed rule group**
-The following `describe-managed-rule-group` retrieves the description for an AWS managed rule group.
+The following `describe-managed-rule-group` example retrieves the description for an AWS managed rule group.
 
 ```
 aws wafv2 describe-managed-rule-group \
@@ -553,7 +549,6 @@ Output:
             }
         },
         {
-            }
             "Name": "GenericLFI_URIPATH",
             "Action": {
                 "Block": {}
@@ -636,8 +631,7 @@ The following `disassociate-web-acl` example removes any existing web ACL associ
 
 ```
 aws wafv2 disassociate-web-acl \
-    --resource-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/waf-cli-alb/1ea17125f8b25a2a}} \
-    --region {{us-west-2}}
+    --resource-arn {{arn:aws:elasticloadbalancing:us-west-2:123456789012:loadbalancer/app/waf-cli-alb/1ea17125f8b25a2a}}
 ```
 This command produces no output.
 For more information, see [Associating or Disassociating a Web ACL with an AWS Resource](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-associating-aws-resource.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -650,7 +644,7 @@ The following code example shows how to use `get-ip-set`.
 
 **AWS CLI**
 **To retrieve a specific IP set**
-The following `get-ip-set` retrieves the IP set with the specified name, scope, and ID. You can get the ID for an IP set from the commands `create-ip-set` and `list-ip-sets`.
+The following `get-ip-set` example retrieves the IP set with the specified name, scope, and ID. You can get the ID for an IP set from the commands `create-ip-set` and `list-ip-sets`.
 
 ```
 aws wafv2 get-ip-set \
@@ -672,7 +666,7 @@ Output:
             "192.0.2.0/16"
         ]
     },
-    "LockToken":"447e55ac-2396-4c6d-b9f9-86b67c17f8b5"
+    "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [IP Sets and Regex Pattern Sets](https://docs.aws.amazon.com/waf/latest/developerguide/waf-referenced-set-managing.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -685,12 +679,11 @@ The following code example shows how to use `get-logging-configuration`.
 
 **AWS CLI**
 **To retrieve the logging configurations for a web ACL**
-The following `get-logging-configuration` retrieves the logging configuration for the specified web ACL.
+The following `get-logging-configuration` example retrieves the logging configuration for the specified web ACL.
 
 ```
 aws wafv2 get-logging-configuration \
-    --resource-arn {{arn:aws:wafv2:us-west-2:123456789012:regional/webacl/test/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
-    --region {{us-west-2}}
+    --resource-arn {{arn:aws:wafv2:us-west-2:123456789012:regional/webacl/test/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -721,7 +714,7 @@ The following code example shows how to use `get-rate-based-statement-managed-ke
 
 **AWS CLI**
 **To retrieve a list of IP addresses that are blocked by a rate-based rule**
-The following `get-rate-based-statement-managed-keys` retrieves the IP addresses currently blocked by a rate-based rule that's being used for a regional application.
+The following `get-rate-based-statement-managed-keys` example retrieves the IP addresses currently blocked by a rate-based rule that's being used for a regional application.
 
 ```
 aws wafv2 get-rate-based-statement-managed-keys \
@@ -758,14 +751,13 @@ The following code example shows how to use `get-regex-pattern-set`.
 
 **AWS CLI**
 **To retrieve a specific regex pattern set**
-The following `get-regex-pattern-set` retrieves the regex pattern set with the specified name, scope, region, and ID. You can get the ID for a regex pattern set from the commands `create-regex-pattern-set` and `list-regex-pattern-sets`.
+The following `get-regex-pattern-set` example retrieves the regex pattern set with the specified name, scope, and ID. You can get the ID for a regex pattern set from the commands `create-regex-pattern-set` and `list-regex-pattern-sets`.
 
 ```
 aws wafv2 get-regex-pattern-set \
     --name {{regexPatterSet01}} \
     --scope {{REGIONAL}} \
-    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --region {{us-west-2}}
+    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -785,7 +777,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/regexpatternset/regexPatterSet01/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     },
-    "LockToken":"c8abf33f-b6fc-46ae-846e-42f994d57b29"
+    "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [IP Sets and Regex Pattern Sets](https://docs.aws.amazon.com/waf/latest/developerguide/waf-referenced-set-managing.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -798,7 +790,7 @@ The following code example shows how to use `get-rule-group`.
 
 **AWS CLI**
 **To retrieve a specific custom rule group**
-The following `get-rule-group` retrieves the custom rule group with the specified name, scope, and ID. You can get the ID for a rule group from the commands `create-rule-group` and `list-rule-groups`.
+The following `get-rule-group` example retrieves the custom rule group with the specified name, scope, and ID. You can get the ID for a rule group from the commands `create-rule-group` and `list-rule-groups`.
 
 ```
 aws wafv2 get-rule-group \
@@ -855,7 +847,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/rulegroup/ff/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name":"ff"
     },
-    "LockToken":"485458c9-1830-4234-af31-ec4d52ced1b3"
+    "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Managing Your Own Rule Groups](https://docs.aws.amazon.com/waf/latest/developerguide/waf-user-created-rule-groups.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -868,7 +860,7 @@ The following code example shows how to use `get-sampled-requests`.
 
 **AWS CLI**
 **To retrieve a sample of web requests for a web ACL**
-The following `get-sampled-requests` retrieves the sampled web requests for the specified web ACL, rule metric, and time frame.
+The following `get-sampled-requests` example retrieves the sampled web requests for the specified web ACL, rule metric, and time frame.
 
 ```
 aws wafv2 get-sampled-requests \
@@ -883,8 +875,8 @@ Output:
 ```
 {
     "TimeWindow": {
-    "EndTime": 1581541800.0,
-    "StartTime": 1581537600.0
+        "EndTime": 1581541800.0,
+        "StartTime": 1581537600.0
     },
     "SampledRequests": [
         {
@@ -897,7 +889,7 @@ Output:
                 "Headers": [
                     {
                         "Name": "Host",
-                        "Value": "alb-test-1EXAMPLE1.us-east-1.elb.amazonaws.com"
+                        "Value": "alb-test-1EXAMPLE1.us-west-2.elb.amazonaws.com"
                     },
                     {
                         "Name": "Content-Length",
@@ -932,7 +924,7 @@ Output:
                 "Headers": [
                     {
                         "Name": "Host",
-                        "Value": "alb-test-1EXAMPLE1.us-east-1.elb.amazonaws.com"
+                        "Value": "alb-test-1EXAMPLE1.us-west-2.elb.amazonaws.com"
                     },
                     {
                         "Name": "Content-Length",
@@ -967,7 +959,7 @@ Output:
                 "Headers": [
                     {
                         "Name": "Host",
-                        "Value": "alb-test-1EXAMPLE1.us-east-1.elb.amazonaws.com"
+                        "Value": "alb-test-1EXAMPLE1.us-west-2.elb.amazonaws.com"
                     },
                     {
                         "Name": "Content-Length",
@@ -1002,7 +994,7 @@ Output:
                 "Headers": [
                     {
                         "Name": "Host",
-                        "Value": "alb-test-1EXAMPLE1.us-east-1.elb.amazonaws.com"
+                        "Value": "alb-test-1EXAMPLE1.us-west-2.elb.amazonaws.com"
                     },
                     {
                         "Name": "Content-Length",
@@ -1031,7 +1023,7 @@ Output:
     "PopulationSize": 4
 }
 ```
-For more information, see [Viewing a Sample of Web Requests](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-testing.html#web-acl-testing-view-sample) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
+For more information, see [Viewing a Sample of Web Requests](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-testing-view-sample.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [GetSampledRequests](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/wafv2/get-sampled-requests.html) in *AWS CLI Command Reference*.
 
 ### `get-web-acl-for-resource`
@@ -1041,7 +1033,7 @@ The following code example shows how to use `get-web-acl-for-resource`.
 
 **AWS CLI**
 **To retrieve the web ACL that's associated with an AWS resource**
-The following `get-web-acl-for-resource` retrieves the JSON for the web ACL that's associated with the specified resource.
+The following `get-web-acl-for-resource` example retrieves the JSON for the web ACL that's associated with the specified resource.
 
 ```
 aws wafv2 get-web-acl-for-resource \
@@ -1100,7 +1092,7 @@ Output:
                                     "FieldToMatch":{
                                         "QueryString":{
 
-                                       }
+                                        }
                                     },
                                     "Size":0
                                 }
@@ -1136,7 +1128,7 @@ The following code example shows how to use `get-web-acl`.
 
 **AWS CLI**
 **To retrieve a web ACL**
-The following `get-web-acl` retrieves the web ACL with the specified name, scope, and ID. You can get the ID for a web ACL from the commands `create-web-acl` and `list-web-acls`.
+The following `get-web-acl` example retrieves the web ACL with the specified name, scope, and ID. You can get the ID for a web ACL from the commands `create-web-acl` and `list-web-acls`.
 
 ```
 aws wafv2 get-web-acl \
@@ -1160,7 +1152,7 @@ Output:
                     }
                 },
                 "VisibilityConfig":{
-                   "SampledRequestsEnabled":true,
+                    "SampledRequestsEnabled":true,
                     "CloudWatchMetricsEnabled":true,
                     "MetricName":"testrule01"
                 },
@@ -1221,7 +1213,7 @@ Output:
         "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/webacl/test01/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name":"test01"
     },
-    "LockToken":"e3db7e2c-d58b-4ee6-8346-6aec5511c6fb"
+    "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Managing and Using a Web Access Control List (Web ACL)](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -1234,7 +1226,7 @@ The following code example shows how to use `list-available-managed-rule-groups`
 
 **AWS CLI**
 **To retrieve the managed rule groups**
-The following `list-available-managed-rule-groups` returns the list of all managed rule groups that are currently available for use in your web ACLs.
+The following `list-available-managed-rule-groups` example returns the list of all managed rule groups that are currently available for use in your web ACLs.
 
 ```
 aws wafv2 list-available-managed-rule-groups \
@@ -1243,7 +1235,7 @@ aws wafv2 list-available-managed-rule-groups \
 Output:
 
 ```
- {
+{
     "ManagedRuleGroups": [
         {
             "VendorName": "AWS",
@@ -1308,7 +1300,7 @@ The following code example shows how to use `list-ip-sets`.
 
 **AWS CLI**
 **To retrieve a list of IP sets**
-The following `list-ip-sets` retrieves all IP sets for the account that have regional scope.
+The following `list-ip-sets` example retrieves all IP sets for the account that have regional scope.
 
 ```
 aws wafv2 list-ip-sets \
@@ -1323,7 +1315,7 @@ Output:
             "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/ipset/testip/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description":"",
             "Name":"testip",
-            "LockToken":"0674c84b-0304-47fe-8728-c6bff46af8fc",
+            "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111  "
         }
     ],
@@ -1340,12 +1332,11 @@ The following code example shows how to use `list-logging-configurations`.
 
 **AWS CLI**
 **To retrieve a list of all logging configurations for a region**
-The following `list-logging-configurations` retrieves the all logging configurations for web ACLs that are scoped for regional use in the `us-west-2` region.
+The following `list-logging-configurations` example retrieves all logging configurations for web ACLs that are scoped for regional use in the `us-west-2` region.
 
 ```
 aws wafv2 list-logging-configurations \
-    --scope {{REGIONAL}} \
-    --region {{us-west-2}}
+    --scope {{REGIONAL}}
 ```
 Output:
 
@@ -1391,12 +1382,11 @@ The following code example shows how to use `list-regex-pattern-sets`.
 
 **AWS CLI**
 **To retrieve a list of regex pattern sets**
-The following `list-regex-pattern-sets` retrieves all regex pattern sets for the account that are defined in the region `us-west-2`.
+The following `list-regex-pattern-sets` example retrieves all regex pattern sets for the account that are defined in the region `us-west-2`.
 
 ```
 aws wafv2 list-regex-pattern-sets \
---scope {{REGIONAL}} \
---region {{us-west-2}}
+    --scope {{REGIONAL}}
 ```
 Output:
 
@@ -1408,7 +1398,7 @@ Output:
             "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/regexpatternset/regexPatterSet01/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description":"Test web-acl",
             "Name":"regexPatterSet01",
-            "LockToken":"f17743f7-0000-0000-0000-19a8b93bfb01",
+            "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
@@ -1424,13 +1414,12 @@ The following code example shows how to use `list-resources-for-web-acl`.
 
 **AWS CLI**
 **To retrieve the resources associated with a web ACL**
-The following `list-resources-for-web-acl` retrieves the API Gateway REST API resources that are currently associated with the specified web ACL in the region `us-west-2`.
+The following `list-resources-for-web-acl` example retrieves the API Gateway REST API resources that are currently associated with the specified web ACL in the region `us-west-2`.
 
 ```
 aws wafv2 list-resources-for-web-acl \
     --web-acl-arn {{arn:aws:wafv2:us-west-2:123456789012:regional/webacl/TestWebAcl/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --resource-type {{API_GATEWAY}} \
-    --region {{us-west-2}}
+    --resource-type {{API_GATEWAY}}
 ```
 Output:
 
@@ -1451,12 +1440,11 @@ The following code example shows how to use `list-rule-groups`.
 
 **AWS CLI**
 **To retrieve a list of custom rule groups**
-The following `list-rule-groups` retrieves all custom rule groups that are defined for the account for the specified scope and region location.
+The following `list-rule-groups` example retrieves all custom rule groups that are defined for the account for the specified scope.
 
 ```
 aws wafv2 list-rule-groups \
-    --scope {{REGIONAL}} \
-    --region {{us-west-2}}
+    --scope {{REGIONAL}}
 ```
 Output:
 
@@ -1467,14 +1455,14 @@ Output:
             "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/rulegroup/TestRuleGroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description":"",
             "Name":"TestRuleGroup",
-            "LockToken":"1eb5ec48-0000-0000-0000-ee9b906c541e",
+            "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         },
         {
             "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/rulegroup/test/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Description":"",
             "Name":"test",
-            "LockToken":"b0f4583e-998b-4880-9069-3fbe45738b43",
+            "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ],
@@ -1491,7 +1479,7 @@ The following code example shows how to use `list-tags-for-resource`.
 
 **AWS CLI**
 **To retrieve all tags for an AWS WAF resource**
-The following `list-tags-for-resource` retrieves the list of all tag key, value pairs for the specified web ACL.
+The following `list-tags-for-resource` example retrieves the list of all tag key, value pairs for the specified web ACL.
 
 ```
 aws wafv2 list-tags-for-resource \
@@ -1520,7 +1508,7 @@ The following code example shows how to use `list-web-acls`.
 
 **AWS CLI**
 **To retrieve the web ACLs for a scope**
-The following `list-web-acls` retrieves all web ACLs that are defined for the account for the specified scope.
+The following `list-web-acls` example retrieves all web ACLs that are defined for the account for the specified scope.
 
 ```
 aws wafv2 list-web-acls \
@@ -1536,7 +1524,7 @@ Output:
             "ARN":"arn:aws:wafv2:us-west-2:123456789012:regional/webacl/Testt/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Description":"sssss",
             "Name":"Testt",
-            "LockToken":"7f36cb30-74ef-4cff-8cd4-a77e1aba1746",
+            "LockToken":"a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Id":"a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
@@ -1552,12 +1540,11 @@ The following code example shows how to use `put-logging-configuration`.
 
 **AWS CLI**
 **To add a logging configuration to a web ACL**
-The following `put-logging-configuration` adds the Amazon Kinesis Data Firehose logging configuration `aws-waf-logs-custom-transformation` to the specified web ACL, with no fields redacted from the logs.
+The following `put-logging-configuration` example adds the Amazon Kinesis Data Firehose logging configuration `aws-waf-logs-custom-transformation` to the specified web ACL, with no fields redacted from the logs.
 
 ```
 aws wafv2 put-logging-configuration \
-    --logging-configuration {{ResourceArn=arn:aws:wafv2:us-west-2:123456789012:regional/webacl/test-cli/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,LogDestinationConfigs=arn:aws:firehose:us-west-2:123456789012:deliverystream/aws-waf-logs-custom-transformation}} \
-            --region {{us-west-2}}
+    --logging-configuration {{ResourceArn=arn:aws:wafv2:us-west-2:123456789012:regional/webacl/test-cli/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,LogDestinationConfigs=arn:aws:firehose:us-west-2:123456789012:deliverystream/aws-waf-logs-custom-transformation}}
 ```
 Output:
 
@@ -1617,7 +1604,7 @@ The following code example shows how to use `update-ip-set`.
 
 **AWS CLI**
 **To modify the settings for an existing IP set**
-The following `update-ip-set` updates the settings for the specified IP set. This call requires an ID, which you can obtain from the call, `list-ip-sets`, and a lock token which you can obtain from the calls, `list-ip-sets` and `get-ip-set`. This call also returns a lock token that you can use for a subsequent update.
+The following `update-ip-set` example updates the settings for the specified IP set. This call requires an ID, which you can obtain from the call, `list-ip-sets`, and a lock token which you can obtain from the calls, `list-ip-sets` and `get-ip-set`. This call also returns a lock token that you can use for a subsequent update.
 
 ```
 aws wafv2 update-ip-set \
@@ -1625,13 +1612,13 @@ aws wafv2 update-ip-set \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --addresses {{198.51.100.0/16}} \
-    --lock-token {{447e55ac-2396-4c6d-b9f9-86b67c17f8b5}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
-    "NextLockToken": "0674c84b-0304-47fe-8728-c6bff46af8fc"
+    "NextLockToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 For more information, see [IP Sets and Regex Pattern Sets](https://docs.aws.amazon.com/waf/latest/developerguide/waf-referenced-set-managing.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -1644,7 +1631,7 @@ The following code example shows how to use `update-regex-pattern-set`.
 
 **AWS CLI**
 **To modify the settings for an existing regex pattern set**
-The following `update-regex-pattern-set` updates the settings for the specified regex pattern set. This call requires an ID, which you can obtain from the call, `list-regex-pattern-sets`, and a lock token which you can obtain from the calls, `list-regex-pattern-sets` and `get-regex-pattern-set`. This call also returns a lock token that you can use for a subsequent update.
+The following `update-regex-pattern-set` example updates the settings for the specified regex pattern set. This call requires an ID, which you can obtain from the call, `list-regex-pattern-sets`, and a lock token which you can obtain from the calls, `list-regex-pattern-sets` and `get-regex-pattern-set`. This call also returns a lock token that you can use for a subsequent update.
 
 ```
 aws wafv2 update-regex-pattern-set \
@@ -1652,13 +1639,13 @@ aws wafv2 update-regex-pattern-set \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --regular-expression-list RegexString="^.+$"  \
-    --lock-token {{ed207e9c-82e9-4a77-aadd-81e6173ab7eb}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
-    "NextLockToken": "12ebc73e-fa68-417d-a9b8-2bdd761a4fa5"
+    "NextLockToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 For more information, see [IP Sets and Regex Pattern Sets](https://docs.aws.amazon.com/waf/latest/developerguide/waf-referenced-set-managing.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -1671,22 +1658,21 @@ The following code example shows how to use `update-rule-group`.
 
 **AWS CLI**
 **To update a custom rule group**
-The following `update-rule-group` changes the visibility configuration for an existing custom rule group. This call requires an ID, which you can obtain from the call, `list-rule-groups`, and a lock token which you can obtain from the calls, `list-rule-groups` and `get-rule-group`. This call also returns a lock token that you can use for a subsequent update.
+The following `update-rule-group` example changes the visibility configuration for an existing custom rule group. This call requires an ID, which you can obtain from the call, `list-rule-groups`, and a lock token which you can obtain from the calls, `list-rule-groups` and `get-rule-group`. This call also returns a lock token that you can use for a subsequent update.
 
 ```
 aws wafv2 update-rule-group \
     --name {{TestRuleGroup}} \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --lock-token {{7b3bcec2-0000-0000-0000-563bf47249f0}} \
-    --visibility-config {{SampledRequestsEnabled=false,CloudWatchMetricsEnabled=false,MetricName=TestMetricsForRuleGroup}} \
-    --region {{us-west-2}}
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
+    --visibility-config {{SampledRequestsEnabled=false,CloudWatchMetricsEnabled=false,MetricName=TestMetricsForRuleGroup}}
 ```
 Output:
 
 ```
 {
-    "NextLockToken": "1eb5ec48-0000-0000-0000-ee9b906c541e"
+    "NextLockToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 For more information, see [Managing Your Own Rule Groups](https://docs.aws.amazon.com/waf/latest/developerguide/waf-user-created-rule-groups.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
@@ -1699,24 +1685,72 @@ The following code example shows how to use `update-web-acl`.
 
 **AWS CLI**
 **To update a web ACL**
-The following `update-web-acl` changes settings for an existing web ACL. This call requires an ID, which you can obtain from the call, `list-web-acls`, and a lock token and other settings, which you can obtain from the call `get-web-acl`. This call also returns a lock token that you can use for a subsequent update.
+The following `update-web-acl` example changes settings for an existing web ACL. This call requires an ID, which you can obtain from the call, `list-web-acls`, and a lock token and other settings, which you can obtain from the call `get-web-acl`. This call also returns a lock token that you can use for a subsequent update.
 
 ```
 aws wafv2 update-web-acl \
     --name {{TestWebAcl}} \
     --scope {{REGIONAL}} \
     --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
-    --lock-token {{2294b3a1-0000-0000-0000-a3ae04329de9}} \
+    --lock-token {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --default-action {{Block={}}} \
     --visibility-config {{SampledRequestsEnabled=false,CloudWatchMetricsEnabled=false,MetricName=NewMetricTestWebAcl}} \
-    --rules {{file://waf-rule.json}} \
-    --region {{us-west-2}}
+    --rules {{file://waf-rule.json}}
+```
+Contents of `waf-rule.json`:
+
+```
+[
+    {
+        "Name": "basic-rule",
+        "Priority": 0,
+        "Statement": {
+            "AndStatement": {
+                "Statements": [
+                    {
+                        "ByteMatchStatement": {
+                            "SearchString": "example.com",
+                            "FieldToMatch": {
+                                "SingleHeader": {
+                                    "Name": "host"
+                                }
+                            },
+                            "TextTransformations": [
+                                {
+                                    "Priority": 0,
+                                    "Type": "LOWERCASE"
+                                }
+                            ],
+                            "PositionalConstraint": "EXACTLY"
+                        }
+                    },
+                    {
+                        "GeoMatchStatement": {
+                            "CountryCodes": [
+                                "US",
+                                "IN"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "Action": {
+            "Allow": {}
+        },
+        "VisibilityConfig": {
+            "SampledRequestsEnabled": true,
+            "CloudWatchMetricsEnabled": true,
+            "MetricName": "basic-rule"
+        }
+    }
+]
 ```
 Output:
 
 ```
 {
-    "NextLockToken": "714a0cfb-0000-0000-0000-2959c8b9a684"
+    "NextLockToken": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 For more information, see [Managing and Using a Web Access Control List (Web ACL)](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.

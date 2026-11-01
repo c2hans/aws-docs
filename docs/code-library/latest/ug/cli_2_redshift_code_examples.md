@@ -29,8 +29,8 @@ The following code example shows how to use `accept-reserved-node-exchange`.
 The following `accept-reserved-node-exchange` example accepts exchange of a DC1 reserved node for a DC2 reserved node.
 
 ```
-aws redshift accept-reserved-node-exchange {{/}}
-    --reserved-node-id {{12345678-12ab-12a1-1a2a-12ab-12a12EXAMPLE}} {{/}}
+aws redshift accept-reserved-node-exchange \
+    --reserved-node-id {{12345678-12ab-12a1-1a2a-12ab-12a12EXAMPLE}} \
     --target-reserved-node-offering-id {{12345678-12ab-12a1-1a2a-12ab-12a12EXAMPLE}}
 ```
 Output:
@@ -68,16 +68,64 @@ For more information, see [Upgrading Reserved Nodes With the AWS CLI](https://do
 The following code example shows how to use `authorize-cluster-security-group-ingress`.
 
 **AWS CLI**
-Authorizing Access to an EC2 Security GroupThis example authorizes access to a named Amazon EC2 security group.Command:
+**Example 1: To authorize access to an EC2 security group**
+The following `authorize-cluster-security-group-ingress` example authorizes access to a named Amazon EC2 security group.
 
 ```
-aws redshift authorize-cluster-security-group-ingress --cluster-security-group-name mysecuritygroup --ec2-security-group-name myec2securitygroup --ec2-security-group-owner-id 123445677890
+aws redshift authorize-cluster-security-group-ingress \
+    --cluster-security-group-name {{mysecuritygroup}} \
+    --ec2-security-group-name {{myec2securitygroup}} \
+    --ec2-security-group-owner-id {{123456789012}}
 ```
-Authorizing Access to a CIDR rangeThis example authorizes access to a CIDR range.Command:
+Output:
 
 ```
-aws redshift authorize-cluster-security-group-ingress --cluster-security-group-name mysecuritygroup --cidrip 192.168.100.100/32
+{
+    "ClusterSecurityGroup": {
+        "ClusterSecurityGroupName": "mysecuritygroup",
+        "Description": "This is my cluster security group",
+        "EC2SecurityGroups": [
+            {
+                "Status": "authorizing",
+                "EC2SecurityGroupName": "myec2securitygroup",
+                "EC2SecurityGroupOwnerId": "123456789012",
+                "Tags": []
+            }
+        ],
+        "IPRanges": [],
+        "Tags": []
+    }
+}
 ```
+For more information, see [Infrastructure security in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html) in the *Amazon Redshift Management Guide*.
+**Example 2: To authorize access to a CIDR range**
+The following `authorize-cluster-security-group-ingress` example authorizes access to a CIDR range.
+
+```
+aws redshift authorize-cluster-security-group-ingress \
+    --cluster-security-group-name {{mysecuritygroup}} \
+    --cidrip {{192.168.100.100/32}}
+```
+Output:
+
+```
+{
+    "ClusterSecurityGroup": {
+        "ClusterSecurityGroupName": "mysecuritygroup",
+        "Description": "This is my cluster security group",
+        "EC2SecurityGroups": [],
+        "IPRanges": [
+            {
+                "Status": "authorizing",
+                "CIDRIP": "192.168.100.100/32",
+                "Tags": []
+            }
+        ],
+        "Tags": []
+    }
+}
+```
+For more information, see [Infrastructure security in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [AuthorizeClusterSecurityGroupIngress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/authorize-cluster-security-group-ingress.html) in *AWS CLI Command Reference*.
 
 ### `authorize-snapshot-access`
@@ -86,40 +134,44 @@ aws redshift authorize-cluster-security-group-ingress --cluster-security-group-n
 The following code example shows how to use `authorize-snapshot-access`.
 
 **AWS CLI**
-Authorize an AWS Account to Restore a SnapshotThis example authorizes the AWS account `444455556666` to restore the snapshot `my-snapshot-id`. By default, the output is in JSON format.Command:
+**To authorize an AWS account to restore a snapshot**
+The following `authorize-snapshot-access` example authorizes the AWS account `123456789111` to restore the snapshot `my-snapshot-id`. By default, the output is in JSON format.
 
 ```
-aws redshift authorize-snapshot-access --snapshot-id my-snapshot-id --account-with-restore-access 444455556666
+aws redshift authorize-snapshot-access \
+    --snapshot-id {{my-snapshot-id}} \
+    --account-with-restore-access {{123456789111}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Snapshot": {
-      "Status": "available",
-      "SnapshotCreateTime": "2013-07-17T22:04:18.947Z",
-      "EstimatedSecondsToCompletion": 0,
-      "AvailabilityZone": "us-east-1a",
-      "ClusterVersion": "1.0",
-      "MasterUsername": "adminuser",
-      "Encrypted": false,
-      "OwnerAccount": "111122223333",
-      "BackupProgressInMegabytes": 11.0,
-      "ElapsedTimeInSeconds": 0,
-      "DBName": "dev",
-      "CurrentBackupRateInMegabytesPerSecond: 0.1534,
-      "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-      "ActualIncrementalBackupSizeInMegabytes"; 11.0,
-      "SnapshotType": "manual",
-      "NodeType": "dw.hs1.xlarge",
-      "ClusterIdentifier": "mycluster",
-      "TotalBackupSizeInMegabytes": 20.0,
-      "Port": 5439,
-      "NumberOfNodes": 2,
-      "SnapshotIdentifier": "my-snapshot-id"
-   }
+    "Snapshot": {
+        "Status": "available",
+        "SnapshotCreateTime": "2013-07-17T22:04:18.947Z",
+        "EstimatedSecondsToCompletion": 0,
+        "AvailabilityZone": "us-west-2a",
+        "ClusterVersion": "1.0",
+        "MasterUsername": "adminuser",
+        "Encrypted": false,
+        "OwnerAccount": "123456789012",
+        "BackupProgressInMegaBytes": 11.0,
+        "ElapsedTimeInSeconds": 0,
+        "DBName": "dev",
+        "CurrentBackupRateInMegaBytesPerSecond": 0.1534,
+        "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+        "ActualIncrementalBackupSizeInMegaBytes": 11.0,
+        "SnapshotType": "manual",
+        "NodeType": "dw.hs1.xlarge",
+        "ClusterIdentifier": "mycluster",
+        "TotalBackupSizeInMegaBytes": 20.0,
+        "Port": 5439,
+        "NumberOfNodes": 2,
+        "SnapshotIdentifier": "my-snapshot-id"
+    }
 }
 ```
+For more information, see [Sharing a snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshot-share-snapshot.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [AuthorizeSnapshotAccess](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/authorize-snapshot-access.html) in *AWS CLI Command Reference*.
 
 ### `batch-delete-cluster-snapshots`
@@ -133,7 +185,7 @@ The following `batch-delete-cluster-snapshots` example deletes a set of manual c
 
 ```
 aws redshift batch-delete-cluster-snapshots \
-        --identifiers {{SnapshotIdentifier=mycluster-2019-11-06-14-12}} {{SnapshotIdentifier=mycluster-2019-11-06-14-20}}
+    --identifiers {{SnapshotIdentifier=mycluster-2019-11-06-14-12}} {{SnapshotIdentifier=mycluster-2019-11-06-14-20}}
 ```
 Output:
 
@@ -170,19 +222,7 @@ Output:
         "mycluster-2019-11-06-16-31",
         "mycluster-2019-11-06-16-32"
     ],
-    "Errors": [],
-    "ResponseMetadata": {
-        "RequestId": "12345678-12ab-12a1-1a2a-12ab-12a12EXAMPLE",
-        "HTTPStatusCode": 200,
-        "HTTPHeaders": {
-                "x-amzn-requestid": "12345678-12ab-12a1-1a2a-12ab-12a12EXAMPLE,
-                "content-type": "text/xml",
-                "content-length": "480",
-                "date": "Sat, 07 Dec 2019 00:36:09 GMT",
-                "connection": "keep-alive"
-        },
-        "RetryAttempts": 0
-    }
+    "Errors": []
 }
 ```
 For more information, see [Amazon Redshift Snapshots](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html) in the *Amazon Redshift Cluster Management Guide*.
@@ -213,7 +253,7 @@ Output:
     "TargetEncryptionType": "NONE"
 }
 ```
-For more information, see [Resizing Clusters in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-resize-tutorial.html) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Resizing a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [CancelResize](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/cancel-resize.html) in *AWS CLI Command Reference*.
 
 ### `copy-cluster-snapshot`
@@ -222,35 +262,36 @@ For more information, see [Resizing Clusters in Amazon Redshift](https://docs.aw
 The following code example shows how to use `copy-cluster-snapshot`.
 
 **AWS CLI**
-Get a Description of All Cluster VersionsThis example returns a description of all cluster versions. By default, the output is in JSON format.Command:
+**To copy a cluster snapshot**
+The following `copy-cluster-snapshot` example creates a copy of the automated snapshot `cm:examplecluster-2013-01-22-19-27-58` named `my-saved-snapshot-copy`. By default, the output is in JSON format.
 
 ```
-aws redshift copy-cluster-snapshot --source-snapshot-identifier cm:examplecluster-2013-01-22-19-27-58 --target-snapshot-identifier my-saved-snapshot-copy
+aws redshift copy-cluster-snapshot \
+    --source-snapshot-identifier {{cm:examplecluster-2013-01-22-19-27-58}} \
+    --target-snapshot-identifier {{my-saved-snapshot-copy}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Snapshot": {
-      "Status": "available",
-      "SnapshotCreateTime": "2013-01-22T19:27:58.931Z",
-      "AvailabilityZone": "us-east-1c",
-      "ClusterVersion": "1.0",
-      "MasterUsername": "adminuser",
-      "DBName": "dev",
-      "ClusterCreateTime": "2013-01-22T19:23:59.368Z",
-      "SnapshotType": "manual",
-      "NodeType": "dw.hs1.xlarge",
-      "ClusterIdentifier": "examplecluster",
-      "Port": 5439,
-      "NumberOfNodes": "2",
-      "SnapshotIdentifier": "my-saved-snapshot-copy"
-   },
-   "ResponseMetadata": {
-      "RequestId": "3b279691-64e3-11e2-bec0-17624ad140dd"
-   }
+    "Snapshot": {
+        "Status": "available",
+        "SnapshotCreateTime": "2013-01-22T19:27:58.931Z",
+        "AvailabilityZone": "us-west-2c",
+        "ClusterVersion": "1.0",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "ClusterCreateTime": "2013-01-22T19:23:59.368Z",
+        "SnapshotType": "manual",
+        "NodeType": "dw.hs1.xlarge",
+        "ClusterIdentifier": "examplecluster",
+        "Port": 5439,
+        "NumberOfNodes": 2,
+        "SnapshotIdentifier": "my-saved-snapshot-copy"
+    }
 }
 ```
+For more information, see [Copying an automated snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/snapshot-copy.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CopyClusterSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/copy-cluster-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `create-cluster-parameter-group`
@@ -259,25 +300,27 @@ Result:
 The following code example shows how to use `create-cluster-parameter-group`.
 
 **AWS CLI**
-Create a Cluster Parameter GroupThis example creates a new cluster parameter group.Command:
+**To create a cluster parameter group**
+The following `create-cluster-parameter-group` example creates a new cluster parameter group.
 
 ```
-aws redshift create-cluster-parameter-group --parameter-group-name myclusterparametergroup --parameter-group-family redshift-1.0 --description "My first cluster parameter group"
+aws redshift create-cluster-parameter-group \
+    --parameter-group-name {{myclusterparametergroup}} \
+    --parameter-group-family {{redshift-1.0}} \
+    --description {{"My first cluster parameter group"}}
 ```
-Result:
+Output:
 
 ```
 {
-   "ClusterParameterGroup": {
-      "ParameterGroupFamily": "redshift-1.0",
-      "Description": "My first cluster parameter group",
-      "ParameterGroupName": "myclusterparametergroup"
-   },
-   "ResponseMetadata": {
-      "RequestId": "739448f0-64cc-11e2-8f7d-3b939af52818"
-   }
+    "ClusterParameterGroup": {
+        "ParameterGroupFamily": "redshift-1.0",
+        "Description": "My first cluster parameter group",
+        "ParameterGroupName": "myclusterparametergroup"
+    }
 }
 ```
+For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CreateClusterParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-cluster-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `create-cluster-security-group`
@@ -286,44 +329,41 @@ Result:
 The following code example shows how to use `create-cluster-security-group`.
 
 **AWS CLI**
-Creating a Cluster Security GroupThis example creates a new cluster security group. By default, the output is in JSON format.Command:
+**To create a cluster security group**
+The following `create-cluster-security-group` example creates a new cluster security group. By default, the output is in JSON format.
 
 ```
-aws redshift create-cluster-security-group --cluster-security-group-name mysecuritygroup --description "This is my cluster security group"
+aws redshift create-cluster-security-group \
+    --cluster-security-group-name {{mysecuritygroup}} \
+    --description {{"This is my cluster security group"}}
 ```
-Result:
+Output:
 
 ```
 {
-   "create_cluster_security_group_response": {
-      "create_cluster_security_group_result": {
-         "cluster_security_group": {
-            "description": "This is my cluster security group",
-            "owner_id": "300454760768",
-            "cluster_security_group_name": "mysecuritygroup",
-            "ec2_security_groups": \[],
-            "ip_ranges": \[]
-         }
-      },
-      "response_metadata": {
-         "request_id": "5df486a0-343a-11e2-b0d8-d15d0ef48549"
-      }
-   }
+    "ClusterSecurityGroup": {
+        "ClusterSecurityGroupName": "mysecuritygroup",
+        "Description": "This is my cluster security group",
+        "EC2SecurityGroups": [],
+        "IPRanges": [],
+        "Tags": []
+    }
 }
 ```
-You can also obtain the same information in text format using the `--output text` option.Command:
-`--output text` option.Command:
- option.Command:
+You can also obtain the same information in text format using the `--output text` option.
 
 ```
-aws redshift create-cluster-security-group --cluster-security-group-name mysecuritygroup --description "This is my cluster security group" --output text
+aws redshift create-cluster-security-group \
+    --cluster-security-group-name {{mysecuritygroup}} \
+    --description {{"This is my cluster security group"}} \
+    --output {{text}}
 ```
-Result:
+Output:
 
 ```
-This is my cluster security group   300454760768    mysecuritygroup
-a0c0bfab-343a-11e2-95d2-c3dc9fe8ab57
+This is my cluster security group   123456789012    mysecuritygroup
 ```
+For more information, see [Infrastructure security in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CreateClusterSecurityGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-cluster-security-group.html) in *AWS CLI Command Reference*.
 
 ### `create-cluster-snapshot`
@@ -332,35 +372,36 @@ a0c0bfab-343a-11e2-95d2-c3dc9fe8ab57
 The following code example shows how to use `create-cluster-snapshot`.
 
 **AWS CLI**
-Create a Cluster SnapshotThis example creates a new cluster snapshot. By default, the output is in JSON format.Command:
+**To create a cluster snapshot**
+The following `create-cluster-snapshot` example creates a new cluster snapshot. By default, the output is in JSON format.
 
 ```
-aws redshift create-cluster-snapshot --cluster-identifier mycluster --snapshot-identifier my-snapshot-id
+aws redshift create-cluster-snapshot \
+    --cluster-identifier {{mycluster}} \
+    --snapshot-identifier {{my-snapshot-id}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Snapshot": {
-      "Status": "creating",
-      "SnapshotCreateTime": "2013-01-22T22:20:33.548Z",
-      "AvailabilityZone": "us-east-1a",
-      "ClusterVersion": "1.0",
-      "MasterUsername": "adminuser",
-      "DBName": "dev",
-      "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-      "SnapshotType": "manual",
-      "NodeType": "dw.hs1.xlarge",
-      "ClusterIdentifier": "mycluster",
-      "Port": 5439,
-      "NumberOfNodes": "2",
-      "SnapshotIdentifier": "my-snapshot-id"
-   },
-   "ResponseMetadata": {
-      "RequestId": "f024d1a5-64e1-11e2-88c5-53eb05787dfb"
-   }
+    "Snapshot": {
+        "Status": "creating",
+        "SnapshotCreateTime": "2013-01-22T22:20:33.548Z",
+        "AvailabilityZone": "us-west-2a",
+        "ClusterVersion": "1.0",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+        "SnapshotType": "manual",
+        "NodeType": "dw.hs1.xlarge",
+        "ClusterIdentifier": "mycluster",
+        "Port": 5439,
+        "NumberOfNodes": 2,
+        "SnapshotIdentifier": "my-snapshot-id"
+    }
 }
 ```
+For more information, see [Creating a manual snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/snapshot-create.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CreateClusterSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-cluster-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `create-cluster-subnet-group`
@@ -369,34 +410,36 @@ Result:
 The following code example shows how to use `create-cluster-subnet-group`.
 
 **AWS CLI**
-Create a Cluster Subnet GroupThis example creates a new cluster subnet group.Command:
+**To create a cluster subnet group**
+The following `create-cluster-subnet-group` example creates a new cluster subnet group.
 
 ```
-aws redshift create-cluster-subnet-group --cluster-subnet-group-name mysubnetgroup  --description "My subnet group" --subnet-ids subnet-763fdd1c
+aws redshift create-cluster-subnet-group \
+    --cluster-subnet-group-name {{mysubnetgroup}} \
+    --description {{"My subnet group"}} \
+    --subnet-ids {{subnet-763fdd1c}}
 ```
-Result:
+Output:
 
 ```
 {
-   "ClusterSubnetGroup": {
-      "Subnets": [
-         {
-            "SubnetStatus": "Active",
-            "SubnetIdentifier": "subnet-763fdd1c",
-            "SubnetAvailabilityZone": {
-               "Name": "us-east-1a"
-            }
-         } ],
-      "VpcId": "vpc-7e3fdd14",
-      "SubnetGroupStatus": "Complete",
-      "Description": "My subnet group",
-      "ClusterSubnetGroupName": "mysubnetgroup"
-   },
-   "ResponseMetadata": {
-      "RequestId": "500b8ce2-698f-11e2-9790-fd67517fb6fd"
-   }
+    "ClusterSubnetGroup": {
+        "Subnets": [
+            {
+                "SubnetStatus": "Active",
+                "SubnetIdentifier": "subnet-763fdd1c",
+                "SubnetAvailabilityZone": {
+                    "Name": "us-west-2a"
+                }
+            } ],
+        "VpcId": "vpc-7e3fdd14",
+        "SubnetGroupStatus": "Complete",
+        "Description": "My subnet group",
+        "ClusterSubnetGroupName": "mysubnetgroup"
+    }
 }
 ```
+For more information, see [Subnets for Redshift resources](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-cluster-subnet-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CreateClusterSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-cluster-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `create-cluster`
@@ -405,47 +448,51 @@ Result:
 The following code example shows how to use `create-cluster`.
 
 **AWS CLI**
-Create a Cluster with Minimal ParametersThis example creates a cluster with the minimal set of parameters. By default, the output is in JSON format.Command:
+**To create a cluster with minimal parameters**
+The following `create-cluster` example creates a cluster with the minimal set of parameters. By default, the output is in JSON format.
 
 ```
-aws redshift create-cluster --node-type dw.hs1.xlarge --number-of-nodes 2 --master-username adminuser --master-user-password TopSecret1 --cluster-identifier mycluster
+aws redshift create-cluster \
+    --node-type {{dw.hs1.xlarge}} \
+    --number-of-nodes {{2}} \
+    --master-username {{adminuser}} \
+    --master-user-password {{TopSecret1}} \
+    --cluster-identifier {{mycluster}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Cluster": {
-      "NodeType": "dw.hs1.xlarge",
-      "ClusterVersion": "1.0",
-      "PubliclyAccessible": "true",
-      "MasterUsername": "adminuser",
-      "ClusterParameterGroups": [
-         {
-            "ParameterApplyStatus": "in-sync",
-            "ParameterGroupName": "default.redshift-1.0"
-         } ],
-      "ClusterSecurityGroups": [
-         {
-            "Status": "active",
-            "ClusterSecurityGroupName": "default"
-         } ],
-      "AllowVersionUpgrade": true,
-      "VpcSecurityGroups": \[],
-      "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
-      "AutomatedSnapshotRetentionPeriod": 1,
-      "ClusterStatus": "creating",
-      "ClusterIdentifier": "mycluster",
-      "DBName": "dev",
-      "NumberOfNodes": 2,
-      "PendingModifiedValues": {
-         "MasterUserPassword": "\****"
-      }
-   },
-   "ResponseMetadata": {
-      "RequestId": "7cf4bcfc-64dd-11e2-bea9-49e0ce183f07"
-   }
+    "Cluster": {
+        "NodeType": "dw.hs1.xlarge",
+        "ClusterVersion": "1.0",
+        "PubliclyAccessible": true,
+        "MasterUsername": "adminuser",
+        "ClusterParameterGroups": [
+            {
+                "ParameterApplyStatus": "in-sync",
+                "ParameterGroupName": "default.redshift-1.0"
+        } ],
+        "ClusterSecurityGroups": [
+            {
+                "Status": "active",
+                "ClusterSecurityGroupName": "default"
+        } ],
+        "AllowVersionUpgrade": true,
+        "VpcSecurityGroups": [],
+        "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ClusterStatus": "creating",
+        "ClusterIdentifier": "mycluster",
+        "DBName": "dev",
+        "NumberOfNodes": 2,
+        "PendingModifiedValues": {
+            "MasterUserPassword": "****"
+        }
+    }
 }
 ```
+For more information, see [Creating a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/create-cluster.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CreateCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-event-subscription`
@@ -507,22 +554,8 @@ Output:
 {
     "HsmClientCertificate": {
         "HsmClientCertificateIdentifier": "myhsmclientcert",
-        "HsmClientCertificatePublicKey": "-----BEGIN CERTIFICATE-----
-        MIICiEXAMPLECQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-        VVMxCzAJBgNVBAgTEXAMPLEwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-        b24xFDASBgNVBAsTC0lBTSBDb25EXAMPLEIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-        BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb2EXAMPLETEwNDI1MjA0NTIxWhcN
-        MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBEXAMPLEMRAwDgYD
-        EXAMPLETZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-        b2xlMRIwEAEXAMPLEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-        YXpvbi5jb20wgZ8wDQYJKEXAMPLEAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-        21uUSfwfEvySWtC2XADZ4nB+BLYgVIk6EXAMPLE3G93vUEIO3IyNoH/f0wYK8m9T
-        rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugEXAMPLEzZswY6786m86gpE
-        Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEEXAMPLEEAtCu4
-        nUhVVxYUEXAMPLEh8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-        FFBjvSfpJIlJ00zbhNYS5f6GEXAMPLEl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-        NYiytVbZPQUQ5Yaxu2jXnimvw3rEXAMPLE=-----END CERTIFICATE-----\n",
-    "Tags": []
+        "HsmClientCertificatePublicKey": "-----BEGIN CERTIFICATE-----\nMIICiEXAMPLECQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTEXAMPLEwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25EXAMPLEIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb2EXAMPLETEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBEXAMPLEMRAwDgYD\nEXAMPLETZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAEXAMPLEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKEXAMPLEAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk6EXAMPLE3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugEXAMPLEzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEEXAMPLEEAtCu4\nnUhVVxYUEXAMPLEh8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GEXAMPLEl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rEXAMPLE=\n-----END CERTIFICATE-----\n",
+        "Tags": []
     }
 }
 ```
@@ -539,12 +572,12 @@ The following code example shows how to use `create-hsm-configuration`.
 The following `create-hsm-configuration` example creates the specified HSM configuration that contains information required by a cluster to store and use database encryption keys in a hardware security module (HSM).
 
 ```
-aws redshift create-hsm-configuration {{/}}
-    --hsm-configuration-identifier {{myhsmconnection}}
-    --description {{"My HSM connection"}}
-    --hsm-ip-address {{192.0.2.09}}
-    --hsm-partition-name {{myhsmpartition}} {{/}}
-    --hsm-partition-password {{A1b2c3d4}} {{/}}
+aws redshift create-hsm-configuration \
+    --hsm-configuration-identifier {{myhsmconnection}} \
+    --description {{"My HSM connection"}} \
+    --hsm-ip-address {{192.0.2.09}} \
+    --hsm-partition-name {{myhsmpartition}} \
+    --hsm-partition-password {{A1b2c3d4}} \
     --hsm-server-public-certificate {{myhsmclientcert}}
 ```
 Output:
@@ -560,6 +593,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon Redshift database encryption](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [CreateHsmConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-hsm-configuration.html) in *AWS CLI Command Reference*.
 
 ### `create-snapshot-copy-grant`
@@ -633,7 +667,7 @@ aws redshift create-tags \
     --resource-name {{arn:aws:redshift:us-west-2:123456789012:cluster:mycluster}} \
     --tags "Key"="mytags","Value"="tag1"
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Tagging Resources in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/amazon-redshift-tagging.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [CreateTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/create-tags.html) in *AWS CLI Command Reference*.
 
@@ -643,11 +677,15 @@ For more information, see [Tagging Resources in Amazon Redshift](https://docs.aw
 The following code example shows how to use `delete-cluster-parameter-group`.
 
 **AWS CLI**
-Delete a Cluster Parameter GroupThis example deletes a cluster parameter group.Command:
+**To delete a cluster parameter group**
+The following `delete-cluster-parameter-group` example deletes a cluster parameter group.
 
 ```
-aws redshift delete-cluster-parameter-group --parameter-group-name myclusterparametergroup
+aws redshift delete-cluster-parameter-group \
+    --parameter-group-name {{myclusterparametergroup}}
 ```
+This command produces no output.
+For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteClusterParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-cluster-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-cluster-security-group`
@@ -656,11 +694,15 @@ aws redshift delete-cluster-parameter-group --parameter-group-name myclusterpara
 The following code example shows how to use `delete-cluster-security-group`.
 
 **AWS CLI**
-Delete a Cluster Security GroupThis example deletes a cluster security group.Command:
+**To delete a cluster security group**
+The following `delete-cluster-security-group` example deletes a cluster security group.
 
 ```
-aws redshift delete-cluster-security-group --cluster-security-group-name mysecuritygroup
+aws redshift delete-cluster-security-group \
+    --cluster-security-group-name {{mysecuritygroup}}
 ```
+This command produces no output.
+For more information, see [Infrastructure security in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteClusterSecurityGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-cluster-security-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-cluster-snapshot`
@@ -669,11 +711,48 @@ aws redshift delete-cluster-security-group --cluster-security-group-name mysecur
 The following code example shows how to use `delete-cluster-snapshot`.
 
 **AWS CLI**
-Delete a Cluster SnapshotThis example deletes a cluster snapshot.Command:
+**To delete a cluster snapshot**
+The following `delete-cluster-snapshot` example deletes a cluster snapshot.
 
 ```
-aws redshift delete-cluster-snapshot --snapshot-identifier my-snapshot-id
+aws redshift delete-cluster-snapshot \
+    --snapshot-identifier {{my-snapshot-id}}
 ```
+Output:
+
+```
+{
+    "Snapshot": {
+        "SnapshotIdentifier": "my-snapshot-id",
+        "ClusterIdentifier": "mycluster",
+        "SnapshotCreateTime": "2013-01-22T22:20:33.548Z",
+        "Status": "deleted",
+        "Port": 5439,
+        "AvailabilityZone": "us-west-2a",
+        "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+        "MasterUsername": "adminuser",
+        "ClusterVersion": "1.0",
+        "SnapshotType": "manual",
+        "NodeType": "dc2.large",
+        "NumberOfNodes": 2,
+        "DBName": "dev",
+        "Encrypted": false,
+        "EncryptedWithHSM": false,
+        "OwnerAccount": "123456789012",
+        "TotalBackupSizeInMegaBytes": 20.0,
+        "ActualIncrementalBackupSizeInMegaBytes": 20.0,
+        "BackupProgressInMegaBytes": 20.0,
+        "CurrentBackupRateInMegaBytesPerSecond": 0.0,
+        "EstimatedSecondsToCompletion": -1,
+        "ElapsedTimeInSeconds": 0,
+        "Tags": [],
+        "EnhancedVpcRouting": false,
+        "MaintenanceTrackName": "current",
+        "ManualSnapshotRetentionPeriod": -1
+    }
+}
+```
+For more information, see [Deleting a manual snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/snapshot-delete.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteClusterSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-cluster-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `delete-cluster-subnet-group`
@@ -682,20 +761,15 @@ aws redshift delete-cluster-snapshot --snapshot-identifier my-snapshot-id
 The following code example shows how to use `delete-cluster-subnet-group`.
 
 **AWS CLI**
-Delete a Cluster subnet GroupThis example deletes a cluster subnet group.Command:
+**To delete a cluster subnet group**
+The following `delete-cluster-subnet-group` example deletes a cluster subnet group.
 
 ```
-aws redshift delete-cluster-subnet-group --cluster-subnet-group-name mysubnetgroup
+aws redshift delete-cluster-subnet-group \
+    --cluster-subnet-group-name {{mysubnetgroup}}
 ```
-Result:
-
-```
-{
-   "ResponseMetadata": {
-      "RequestId": "253fbffd-6993-11e2-bc3a-47431073908a"
-   }
-}
-```
+This command produces no output.
+For more information, see [Subnets for Redshift resources](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-cluster-subnet-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteClusterSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-cluster-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-cluster`
@@ -704,16 +778,124 @@ Result:
 The following code example shows how to use `delete-cluster`.
 
 **AWS CLI**
-Delete a Cluster with No Final Cluster SnapshotThis example deletes a cluster, forcing data deletion so no final cluster snapshot is created.Command:
+**Example 1: To delete a cluster with no final cluster snapshot**
+The following `delete-cluster` example deletes a cluster, forcing data deletion so no final cluster snapshot is created.
 
 ```
-aws redshift delete-cluster --cluster-identifier mycluster --skip-final-cluster-snapshot
+aws redshift delete-cluster \
+    --cluster-identifier {{mycluster}} \
+    --skip-final-cluster-snapshot
 ```
-Delete a Cluster, Allowing a Final Cluster SnapshotThis example deletes a cluster, but specifies a final cluster snapshot.Command:
+Output:
 
 ```
-aws redshift delete-cluster --cluster-identifier mycluster --final-cluster-snapshot-identifier myfinalsnapshot
+{
+    "Cluster": {
+        "ClusterIdentifier": "mycluster",
+        "NodeType": "dc2.large",
+        "ClusterStatus": "deleting",
+        "ClusterAvailabilityStatus": "Modifying",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "Endpoint": {
+            "Address": "mycluster.c1a2b3c4d5e6.us-west-2.redshift.amazonaws.com",
+            "Port": 5439
+        },
+        "ClusterCreateTime": "2019-12-23T21:42:51.430Z",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ManualSnapshotRetentionPeriod": -1,
+        "ClusterSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-0a1b2c3d4e5f6a7b8",
+                "Status": "active"
+            }
+        ],
+        "ClusterParameterGroups": [
+            {
+                "ParameterGroupName": "default.redshift-1.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "ClusterSubnetGroupName": "default",
+        "VpcId": "vpc-0a1b2c3d4e5f6a7b8",
+        "AvailabilityZone": "us-west-2a",
+        "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
+        "PendingModifiedValues": {},
+        "ClusterVersion": "1.0",
+        "AllowVersionUpgrade": true,
+        "NumberOfNodes": 2,
+        "PubliclyAccessible": false,
+        "Encrypted": false,
+        "Tags": [],
+        "EnhancedVpcRouting": false,
+        "IamRoles": [],
+        "MaintenanceTrackName": "current",
+        "DeferredMaintenanceWindows": [],
+        "NextMaintenanceWindowStartTime": "2019-12-28T03:30:00Z"
+    }
+}
 ```
+For more information, see [Shutting down and deleting a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-mgmt-shutdown-delete-cluster.html) in the *Amazon Redshift Management Guide*.
+**Example 2: To delete a cluster, allowing a final cluster snapshot**
+The following `delete-cluster` example deletes a cluster, but specifies a final cluster snapshot.
+
+```
+aws redshift delete-cluster \
+    --cluster-identifier {{mycluster}} \
+    --final-cluster-snapshot-identifier {{myfinalsnapshot}}
+```
+Output:
+
+```
+{
+    "Cluster": {
+        "ClusterIdentifier": "mycluster",
+        "NodeType": "dc2.large",
+        "ClusterStatus": "deleting",
+        "ClusterAvailabilityStatus": "Modifying",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "Endpoint": {
+            "Address": "mycluster.c1a2b3c4d5e6.us-west-2.redshift.amazonaws.com",
+            "Port": 5439
+        },
+        "ClusterCreateTime": "2019-12-23T21:42:51.430Z",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ManualSnapshotRetentionPeriod": -1,
+        "ClusterSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-0a1b2c3d4e5f6a7b8",
+                "Status": "active"
+            }
+        ],
+        "ClusterParameterGroups": [
+            {
+                "ParameterGroupName": "default.redshift-1.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "ClusterSubnetGroupName": "default",
+        "VpcId": "vpc-0a1b2c3d4e5f6a7b8",
+        "AvailabilityZone": "us-west-2a",
+        "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
+        "PendingModifiedValues": {},
+        "ClusterVersion": "1.0",
+        "AllowVersionUpgrade": true,
+        "NumberOfNodes": 2,
+        "PubliclyAccessible": false,
+        "Encrypted": false,
+        "Tags": [],
+        "EnhancedVpcRouting": false,
+        "IamRoles": [],
+        "MaintenanceTrackName": "current",
+        "DeferredMaintenanceWindows": [],
+        "NextMaintenanceWindowStartTime": "2019-12-28T03:30:00Z"
+    }
+}
+```
+For more information, see [Shutting down and deleting a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-mgmt-shutdown-delete-cluster.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-cluster.html) in *AWS CLI Command Reference*.
 
 ### `delete-event-subscription`
@@ -729,7 +911,7 @@ The following `delete-event-subscription` example deletes the specified event no
 aws redshift delete-event-subscription \
     --subscription-name {{mysubscription}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Subscribing to Amazon Redshift Event Notifications](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-event-notifications.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DeleteEventSubscription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-event-subscription.html) in *AWS CLI Command Reference*.
 
@@ -746,7 +928,7 @@ The following `delete-hsm-client-certificate` example deletes an HSM client cert
 aws redshift delete-hsm-client-certificate \
     --hsm-client-certificate-identifier {{myhsmclientcert}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Amazon Redshift API Permissions Reference](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DeleteHsmClientCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-hsm-client-certificate.html) in *AWS CLI Command Reference*.
 
@@ -760,10 +942,11 @@ The following code example shows how to use `delete-hsm-configuration`.
 The following `delete-hsm-configuration` example deletes the specified HSM configuration from the current AWS account.
 
 ```
-aws redshift delete-hsm-configuration {{/}}
+aws redshift delete-hsm-configuration \
     --hsm-configuration-identifier {{myhsmconnection}}
 ```
-This command does not produce any output.
+This command produces no output.
+For more information, see [Amazon Redshift database encryption](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteHsmConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-hsm-configuration.html) in *AWS CLI Command Reference*.
 
 ### `delete-scheduled-action`
@@ -779,7 +962,8 @@ The following `delete-scheduled-action` example deletes the specified scheduled 
 aws redshift delete-scheduled-action \
     --scheduled-action-name {{myscheduledaction}}
 ```
-This command does not produce any output.
+This command produces no output.
+For more information, see [Scheduling a resize](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html#rs-restore-resize-overview-schedule) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DeleteScheduledAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-scheduled-action.html) in *AWS CLI Command Reference*.
 
 ### `delete-snapshot-copy-grant`
@@ -795,7 +979,7 @@ The following `delete-snapshot-copy-grant` example deletes the specified snapsho
 aws redshift delete-snapshot-copy-grant \
     --snapshot-copy-grant-name {{mysnapshotcopygrantname}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Amazon Redshift Database Encryption](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DeleteSnapshotCopyGrant](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-snapshot-copy-grant.html) in *AWS CLI Command Reference*.
 
@@ -812,7 +996,7 @@ The following `delete-snapshot-schedule` example deletes the specified snapshot 
 aws redshift delete-snapshot-schedule \
     --schedule-identifier {{mysnapshotschedule}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Automated Snapshot Schedules](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html#automated-snapshot-schedules) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DeleteSnapshotSchedule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-snapshot-schedule.html) in *AWS CLI Command Reference*.
 
@@ -830,7 +1014,7 @@ aws redshift delete-tags \
     --resource-name {{arn:aws:redshift:us-west-2:123456789012:cluster:mycluster}} \
     --tag-keys {{"clustertagkey"}} {{"clustertagvalue"}}
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Tagging Resources in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/amazon-redshift-tagging.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DeleteTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-tags.html) in *AWS CLI Command Reference*.
 
@@ -862,6 +1046,7 @@ Output:
     ]
 }
 ```
+For more information, see [Considerations for using Amazon Redshift provisioned clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-cluster-considerations.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeAccountAttributes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-account-attributes.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-db-revisions`
@@ -891,6 +1076,7 @@ Output:
     ]
 }
 ```
+For more information, see [Cluster versions for Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/cluster-versions.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterDbRevisions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-db-revisions.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-parameter-groups`
@@ -899,39 +1085,37 @@ Output:
 The following code example shows how to use `describe-cluster-parameter-groups`.
 
 **AWS CLI**
-Get a Description of All Cluster Parameter GroupsThis example returns a description of all cluster parameter groups for the account, with column headers. By default, the output is in JSON format.Command:
+**To get a description of all cluster parameter groups**
+The following `describe-cluster-parameter-groups` example returns a description of all cluster parameter groups for the account, with column headers. By default, the output is in JSON format.
 
 ```
 aws redshift describe-cluster-parameter-groups
 ```
-Result:
+Output:
 
 ```
 {
-   "ParameterGroups": [
-      {
-         "ParameterGroupFamily": "redshift-1.0",
-         "Description": "My first cluster parameter group",
-         "ParameterGroupName": "myclusterparametergroup"
-      } ],
-   "ResponseMetadata": {
-      "RequestId": "8ceb8f6f-64cc-11e2-bea9-49e0ce183f07"
-   }
+    "ParameterGroups": [
+        {
+            "ParameterGroupFamily": "redshift-1.0",
+            "Description": "My first cluster parameter group",
+            "ParameterGroupName": "myclusterparametergroup"
+        }
+    ]
 }
 ```
-You can also obtain the same information in text format using the `--output text` option.Command:
-`--output text` option.Command:
- option.Command:
+You can also obtain the same information in text format using the `--output text` option.
 
 ```
-aws redshift describe-cluster-parameter-groups --output text
+aws redshift describe-cluster-parameter-groups \
+    --output {{text}}
 ```
-Result:
+Output:
 
 ```
 redshift-1.0        My first cluster parameter group        myclusterparametergroup
-RESPONSEMETADATA    9e665a36-64cc-11e2-8f7d-3b939af52818
 ```
+For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterParameterGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-parameter-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-parameters`
@@ -940,48 +1124,49 @@ RESPONSEMETADATA    9e665a36-64cc-11e2-8f7d-3b939af52818
 The following code example shows how to use `describe-cluster-parameters`.
 
 **AWS CLI**
-Retrieve the Parameters for a Specified Cluster Parameter GroupThis example retrieves the parameters for the named parameter group. By default, the output is in JSON format.Command:
+**To retrieve the parameters for a specified cluster parameter group**
+The following `describe-cluster-parameters` example retrieves the parameters for the named parameter group. By default, the output is in JSON format.
 
 ```
-aws redshift describe-cluster-parameters --parameter-group-name myclusterparametergroup
+aws redshift describe-cluster-parameters \
+    --parameter-group-name {{myclusterparametergroup}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Parameters": [
-      {
-         "Description": "Sets the display format for date and time values.",
-         "DataType": "string",
-         "IsModifiable": true,
-         "Source": "engine-default",
-         "ParameterValue": "ISO, MDY",
-         "ParameterName": "datestyle"
-      },
-      {
-         "Description": "Sets the number of digits displayed for floating-point values",
-         "DataType": "integer",
-         "IsModifiable": true,
-         "AllowedValues": "-15-2",
-         "Source": "engine-default",
-         "ParameterValue": "0",
-         "ParameterName": "extra_float_digits"
-      },
-      (...remaining output omitted...)
-   ]
+    "Parameters": [
+        {
+            "Description": "Sets the display format for date and time values.",
+            "DataType": "string",
+            "IsModifiable": true,
+            "Source": "engine-default",
+            "ParameterValue": "ISO, MDY",
+            "ParameterName": "datestyle"
+        },
+        {
+            "Description": "Sets the number of digits displayed for floating-point values",
+            "DataType": "integer",
+            "IsModifiable": true,
+            "AllowedValues": "-15-2",
+            "Source": "engine-default",
+            "ParameterValue": "0",
+            "ParameterName": "extra_float_digits"
+        }
+    ]
 }
 ```
-You can also obtain the same information in text format using the `--output text` option.Command:
-`--output text` option.Command:
- option.Command:
+You can also obtain the same information in text format using the `--output text` option.
 
 ```
-aws redshift describe-cluster-parameters --parameter-group-name myclusterparametergroup --output text
+aws redshift describe-cluster-parameters \
+    --parameter-group-name {{myclusterparametergroup}} \
+    --output {{text}}
 ```
-Result:
+Output:
 
 ```
-RESPONSEMETADATA    cdac40aa-64cc-11e2-9e70-918437dd236d
+RESPONSEMETADATA    a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 Sets the display format for date and time values.   string  True    engine-default  ISO, MDY        datestyle
 Sets the number of digits displayed for floating-point values       integer True    -15-2   engine-default  0       extra_float_digits
 This parameter applies a user-defined label to a group of queries that are run during the same session..    string  True    engine-default  default query_group
@@ -990,6 +1175,7 @@ Sets the schema search order for names that are not schema-qualified.       stri
 Aborts any statement that takes over the specified number of milliseconds.  integer True    engine-default  0       statement_timeout
 wlm json configuration      string  True    engine-default  \[{"query_concurrency":5}]      wlm_json_configuration
 ```
+For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterParameters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-parameters.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-security-groups`
@@ -998,39 +1184,38 @@ wlm json configuration      string  True    engine-default  \[{"query_concurrenc
 The following code example shows how to use `describe-cluster-security-groups`.
 
 **AWS CLI**
-Get a Description of All Cluster Security GroupsThis example returns a description of all cluster security groups for the account. By default, the output is in JSON format.Command:
+**To get a description of all cluster security groups**
+The following `describe-cluster-security-groups` example returns a description of all cluster security groups for the account. By default, the output is in JSON format.
 
 ```
 aws redshift describe-cluster-security-groups
 ```
-Result:
+Output:
 
 ```
 {
-   "ClusterSecurityGroups": [
-      {
-         "OwnerId": "100447751468",
-         "Description": "default",
-         "ClusterSecurityGroupName": "default",
-         "EC2SecurityGroups": \[],
-         "IPRanges": [
-            {
-               "Status": "authorized",
-               "CIDRIP": "0.0.0.0/0"
-            }
-         ]
-      },
-      {
-         "OwnerId": "100447751468",
-         "Description": "This is my cluster security group",
-         "ClusterSecurityGroupName": "mysecuritygroup",
-         "EC2SecurityGroups": \[],
-         "IPRanges": \[]
-      },
-      (...remaining output omitted...)
-   ]
+    "ClusterSecurityGroups": [
+        {
+            "Description": "default",
+            "ClusterSecurityGroupName": "default",
+            "EC2SecurityGroups": [],
+            "IPRanges": [
+                {
+                    "Status": "authorized",
+                    "CIDRIP": "0.0.0.0/0"
+                }
+            ]
+        },
+        {
+            "Description": "This is my cluster security group",
+            "ClusterSecurityGroupName": "mysecuritygroup",
+            "EC2SecurityGroups": [],
+            "IPRanges": []
+        }
+    ]
 }
 ```
+For more information, see [Infrastructure security in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/security-network-isolation.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterSecurityGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-security-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-snapshots`
@@ -1039,69 +1224,70 @@ Result:
 The following code example shows how to use `describe-cluster-snapshots`.
 
 **AWS CLI**
-Get a Description of All Cluster SnapshotsThis example returns a description of all cluster snapshots for the account. By default, the output is in JSON format.Command:
+**To get a description of all cluster snapshots**
+The following `describe-cluster-snapshots` example returns a description of all cluster snapshots for the account. By default, the output is in JSON format.
 
 ```
 aws redshift describe-cluster-snapshots
 ```
-Result:
+Output:
 
 ```
 {
-   "Snapshots": [
-      {
-         "Status": "available",
-         "SnapshotCreateTime": "2013-07-17T22:02:22.852Z",
-         "EstimatedSecondsToCompletion": -1,
-         "AvailabilityZone": "us-east-1a",
-         "ClusterVersion": "1.0",
-         "MasterUsername": "adminuser",
-         "Encrypted": false,
-         "OwnerAccount": "111122223333",
-         "BackupProgressInMegabytes": 20.0,
-         "ElapsedTimeInSeconds": 0,
-         "DBName": "dev",
-         "CurrentBackupRateInMegabytesPerSecond: 0.0,
-         "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-         "ActualIncrementalBackupSizeInMegabytes"; 20.0
-         "SnapshotType": "automated",
-         "NodeType": "dw.hs1.xlarge",
-         "ClusterIdentifier": "mycluster",
-         "Port": 5439,
-         "TotalBackupSizeInMegabytes": 20.0,
-         "NumberOfNodes": "2",
-         "SnapshotIdentifier": "cm:mycluster-2013-01-22-22-04-18"
-      },
-      {
-         "EstimatedSecondsToCompletion": 0,
-         "OwnerAccount": "111122223333",
-         "CurrentBackupRateInMegabytesPerSecond: 0.1534,
-         "ActualIncrementalBackupSizeInMegabytes"; 11.0,
-         "NumberOfNodes": "2",
-         "Status": "available",
-         "ClusterVersion": "1.0",
-         "MasterUsername": "adminuser",
-         "AccountsWithRestoreAccess": [
-            {
-               "AccountID": "444455556666"
+    "Snapshots": [
+        {
+            "Status": "available",
+            "SnapshotCreateTime": "2013-07-17T22:02:22.852Z",
+            "EstimatedSecondsToCompletion": -1,
+            "AvailabilityZone": "us-west-2a",
+            "ClusterVersion": "1.0",
+            "MasterUsername": "adminuser",
+            "Encrypted": false,
+            "OwnerAccount": "123456789012",
+            "BackupProgressInMegaBytes": 20.0,
+            "ElapsedTimeInSeconds": 0,
+            "DBName": "dev",
+            "CurrentBackupRateInMegaBytesPerSecond": 0.0,
+            "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+            "ActualIncrementalBackupSizeInMegaBytes": 20.0,
+            "SnapshotType": "automated",
+            "NodeType": "dw.hs1.xlarge",
+            "ClusterIdentifier": "mycluster",
+            "Port": 5439,
+            "TotalBackupSizeInMegaBytes": 20.0,
+            "NumberOfNodes": 2,
+            "SnapshotIdentifier": "cm:mycluster-2013-01-22-22-04-18"
+        },
+        {
+            "EstimatedSecondsToCompletion": 0,
+            "OwnerAccount": "123456789012",
+            "CurrentBackupRateInMegaBytesPerSecond": 0.1534,
+            "ActualIncrementalBackupSizeInMegaBytes": 11.0,
+            "NumberOfNodes": 2,
+            "Status": "available",
+            "ClusterVersion": "1.0",
+            "MasterUsername": "adminuser",
+            "AccountsWithRestoreAccess": [
+                {
+                    "AccountId": "123456789111"
             } ],
-         "TotalBackupSizeInMegabytes": 20.0,
-         "DBName": "dev",
-         "BackupProgressInMegabytes": 11.0,
-         "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-         "ElapsedTimeInSeconds": 0,
-         "ClusterIdentifier": "mycluster",
-         "SnapshotCreateTime": "2013-07-17T22:04:18.947Z",
-         "AvailabilityZone": "us-east-1a",
-         "NodeType": "dw.hs1.xlarge",
-         "Encrypted": false,
-         "SnapshotType": "manual",
-         "Port": 5439,
-         "SnapshotIdentifier": "my-snapshot-id"
-      } ]
-   }
-   (...remaining output omitted...)
+            "TotalBackupSizeInMegaBytes": 20.0,
+            "DBName": "dev",
+            "BackupProgressInMegaBytes": 11.0,
+            "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+            "ElapsedTimeInSeconds": 0,
+            "ClusterIdentifier": "mycluster",
+            "SnapshotCreateTime": "2013-07-17T22:04:18.947Z",
+            "AvailabilityZone": "us-west-2a",
+            "NodeType": "dw.hs1.xlarge",
+            "Encrypted": false,
+            "SnapshotType": "manual",
+            "Port": 5439,
+            "SnapshotIdentifier": "my-snapshot-id"
+    } ]
+}
 ```
+For more information, see [Amazon Redshift snapshots and backups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterSnapshots](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-snapshots.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-subnet-groups`
@@ -1110,37 +1296,36 @@ Result:
 The following code example shows how to use `describe-cluster-subnet-groups`.
 
 **AWS CLI**
-Get a Description of All Cluster Subnet GroupsThis example returns a description of all cluster subnet groups. By default, the output is in JSON format.Command:
+**To get a description of all cluster subnet groups**
+The following `describe-cluster-subnet-groups` example returns a description of all cluster subnet groups. By default, the output is in JSON format.
 
 ```
 aws redshift describe-cluster-subnet-groups
 ```
-Result:
+Output:
 
 ```
 {
-   "ClusterSubnetGroups": [
-      {
-         "Subnets": [
-            {
-               "SubnetStatus": "Active",
-               "SubnetIdentifier": "subnet-763fdd1c",
-               "SubnetAvailabilityZone": {
-                  "Name": "us-east-1a"
-               }
-            }
-         ],
-         "VpcId": "vpc-7e3fdd14",
-         "SubnetGroupStatus": "Complete",
-         "Description": "My subnet group",
-         "ClusterSubnetGroupName": "mysubnetgroup"
-      }
-   ],
-   "ResponseMetadata": {
-      "RequestId": "37fa8c89-6990-11e2-8f75-ab4018764c77"
-   }
+    "ClusterSubnetGroups": [
+        {
+            "Subnets": [
+                {
+                    "SubnetStatus": "Active",
+                    "SubnetIdentifier": "subnet-763fdd1c",
+                    "SubnetAvailabilityZone": {
+                        "Name": "us-west-2a"
+                    }
+                }
+            ],
+            "VpcId": "vpc-7e3fdd14",
+            "SubnetGroupStatus": "Complete",
+            "Description": "My subnet group",
+            "ClusterSubnetGroupName": "mysubnetgroup"
+        }
+    ]
 }
 ```
+For more information, see [Subnets for Redshift resources](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-cluster-subnet-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterSubnetGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-subnet-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-tracks`
@@ -1191,7 +1376,7 @@ Output:
     ]
 }
 ```
-For more information, see [Choosing Cluster Maintenance Tracks](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#rs-mgmt-maintenance-tracks) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Choosing Cluster Maintenance Tracks](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DescribeClusterTracks](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-tracks.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster-versions`
@@ -1200,26 +1385,25 @@ For more information, see [Choosing Cluster Maintenance Tracks](https://docs.aws
 The following code example shows how to use `describe-cluster-versions`.
 
 **AWS CLI**
-Get a Description of All Cluster VersionsThis example returns a description of all cluster versions. By default, the output is in JSON format.Command:
+**To get a description of all cluster versions**
+The following `describe-cluster-versions` example returns a description of all cluster versions. By default, the output is in JSON format.
 
 ```
 aws redshift describe-cluster-versions
 ```
-Result:
+Output:
 
 ```
 {
-   "ClusterVersions": [
-      {
-      "ClusterVersion": "1.0",
-      "Description": "Initial release",
-      "ClusterParameterGroupFamily": "redshift-1.0"
-      } ],
-   "ResponseMetadata": {
-      "RequestId": "16a53de3-64cc-11e2-bec0-17624ad140dd"
-   }
+    "ClusterVersions": [
+        {
+            "ClusterVersion": "1.0",
+            "Description": "Initial release",
+            "ClusterParameterGroupFamily": "redshift-1.0"
+        } ]
 }
 ```
+For more information, see [Cluster versions for Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/cluster-versions.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusterVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-cluster-versions.html) in *AWS CLI Command Reference*.
 
 ### `describe-clusters`
@@ -1228,69 +1412,66 @@ Result:
 The following code example shows how to use `describe-clusters`.
 
 **AWS CLI**
-Get a Description of All ClustersThis example returns a description of all clusters for the account. By default, the output is in JSON format.Command:
+**To get a description of all clusters**
+The following `describe-clusters` example returns a description of all clusters for the account. By default, the output is in JSON format.
 
 ```
 aws redshift describe-clusters
 ```
-Result:
+Output:
 
 ```
 {
-   "Clusters": [
-   {
-      "NodeType": "dw.hs1.xlarge",
-      "Endpoint": {
-         "Port": 5439,
-         "Address": "mycluster.coqoarplqhsn.us-east-1.redshift.amazonaws.com"
-      },
-      "ClusterVersion": "1.0",
-      "PubliclyAccessible": "true",
-      "MasterUsername": "adminuser",
-      "ClusterParameterGroups": [
-         {
-            "ParameterApplyStatus": "in-sync",
-            "ParameterGroupName": "default.redshift-1.0"
-         } ],
-      "ClusterSecurityGroups": [
-         {
-            "Status": "active",
-            "ClusterSecurityGroupName": "default"
-         } ],
-      "AllowVersionUpgrade": true,
-      "VpcSecurityGroups": \[],
-      "AvailabilityZone": "us-east-1a",
-      "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-      "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
-      "AutomatedSnapshotRetentionPeriod": 1,
-      "ClusterStatus": "available",
-      "ClusterIdentifier": "mycluster",
-      "DBName": "dev",
-      "NumberOfNodes": 2,
-      "PendingModifiedValues": {}
-   } ],
-   "ResponseMetadata": {
-      "RequestId": "65b71cac-64df-11e2-8f5b-e90bd6c77476"
-   }
+    "Clusters": [
+        {
+            "NodeType": "dw.hs1.xlarge",
+            "Endpoint": {
+                "Port": 5439,
+                "Address": "mycluster.coqoarplqhsn.us-west-2.redshift.amazonaws.com"
+            },
+            "ClusterVersion": "1.0",
+            "PubliclyAccessible": true,
+            "MasterUsername": "adminuser",
+            "ClusterParameterGroups": [
+                {
+                    "ParameterApplyStatus": "in-sync",
+                    "ParameterGroupName": "default.redshift-1.0"
+            } ],
+            "ClusterSecurityGroups": [
+                {
+                    "Status": "active",
+                    "ClusterSecurityGroupName": "default"
+            } ],
+            "AllowVersionUpgrade": true,
+            "VpcSecurityGroups": [],
+            "AvailabilityZone": "us-west-2a",
+            "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+            "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
+            "AutomatedSnapshotRetentionPeriod": 1,
+            "ClusterStatus": "available",
+            "ClusterIdentifier": "mycluster",
+            "DBName": "dev",
+            "NumberOfNodes": 2,
+            "PendingModifiedValues": {}
+    } ]
 }
 ```
-You can also obtain the same information in text format using the `--output text` option.Command:
-`--output text` option.Command:
- option.Command:
+You can also obtain the same information in text format using the `--output text` option.
 
 ```
-aws redshift describe-clusters --output text
+aws redshift describe-clusters \
+    --output {{text}}
 ```
-Result:
+Output:
 
 ```
-dw.hs1.xlarge       1.0     true    adminuser       True    us-east-1a      2013-01-22T21:59:29.559Z        sat:03:30-sat:04:00     1       available       mycluster       dev     2
-ENDPOINT    5439    mycluster.coqoarplqhsn.us-east-1.redshift.amazonaws.com
+dw.hs1.xlarge       1.0     true    adminuser       True    us-west-2a      2013-01-22T21:59:29.559Z        sat:03:30-sat:04:00     1       available       mycluster       dev     2
+ENDPOINT    5439    mycluster.coqoarplqhsn.us-west-2.redshift.amazonaws.com
 in-sync     default.redshift-1.0
 active      default
 PENDINGMODIFIEDVALUES
-RESPONSEMETADATA    934281a8-64df-11e2-b07c-f7fbdd006c67
 ```
+For more information, see [Amazon Redshift provisioned clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-clusters.html) in *AWS CLI Command Reference*.
 
 ### `describe-default-cluster-parameters`
@@ -1299,43 +1480,43 @@ RESPONSEMETADATA    934281a8-64df-11e2-b07c-f7fbdd006c67
 The following code example shows how to use `describe-default-cluster-parameters`.
 
 **AWS CLI**
-Get a Description of Default Cluster ParametersThis example returns a description of the default cluster parameters for the `redshift-1.0` family. By default, the output is in JSON format.Command:
+**To get a description of default cluster parameters**
+The following `describe-default-cluster-parameters` example returns a description of the default cluster parameters for the `redshift-1.0` family. By default, the output is in JSON format.
 
 ```
-aws redshift describe-default-cluster-parameters --parameter-group-family redshift-1.0
+aws redshift describe-default-cluster-parameters \
+    --parameter-group-family {{redshift-1.0}}
 ```
-Result:
+Output:
 
 ```
 {
-   "DefaultClusterParameters": {
-   "ParameterGroupFamily": "redshift-1.0",
-   "Parameters": [
-      {
-         "Description": "Sets the display format for date and time values.",
-         "DataType": "string",
-         "IsModifiable": true,
-         "Source": "engine-default",
-         "ParameterValue": "ISO, MDY",
-         "ParameterName": "datestyle"
-      },
-      {
-         "Description": "Sets the number of digits displayed for floating-point values",
-         "DataType": "integer",
-         "IsModifiable": true,
-         "AllowedValues": "-15-2",
-         "Source": "engine-default",
-         "ParameterValue": "0",
-         "ParameterName": "extra_float_digits"
-      },
-      (...remaining output omitted...)
-      ]
-   }
+    "DefaultClusterParameters": {
+        "ParameterGroupFamily": "redshift-1.0",
+        "Parameters": [
+            {
+                "Description": "Sets the display format for date and time values.",
+                "DataType": "string",
+                "IsModifiable": true,
+                "Source": "engine-default",
+                "ParameterValue": "ISO, MDY",
+                "ParameterName": "datestyle"
+            },
+            {
+                "Description": "Sets the number of digits displayed for floating-point values",
+                "DataType": "integer",
+                "IsModifiable": true,
+                "AllowedValues": "-15-2",
+                "Source": "engine-default",
+                "ParameterValue": "0",
+                "ParameterName": "extra_float_digits"
+            }
+        ]
+    }
 }
 ```
 To see a list of valid parameter group families, use the `describe-cluster-parameter-groups` command.
-`describe-cluster-parameter-groups` command.
- command.
+For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeDefaultClusterParameters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-default-cluster-parameters.html) in *AWS CLI Command Reference*.
 
 ### `describe-event-categories`
@@ -1388,6 +1569,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon Redshift provisioned cluster event notifications](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-event-notifications.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeEventCategories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-event-categories.html) in *AWS CLI Command Reference*.
 
 ### `describe-event-subscriptions`
@@ -1434,40 +1616,38 @@ For more information, see [Subscribing to Amazon Redshift Event Notifications](h
 The following code example shows how to use `describe-events`.
 
 **AWS CLI**
-Describe All Eventsthis example returns all events. By default, the output is in JSON format.Command:
+**To describe all events**
+The following `describe-events` example returns all events. By default, the output is in JSON format.
 
 ```
 aws redshift describe-events
 ```
-Result:
+Output:
 
 ```
 {
-   "Events": [
-      {
-      "Date": "2013-01-22T19:17:03.640Z",
-      "SourceIdentifier": "myclusterparametergroup",
-      "Message": "Cluster parameter group myclusterparametergroup has been created.",
-      "SourceType": "cluster-parameter-group"
-      } ],
-   "ResponseMetadata": {
-      "RequestId": "9f056111-64c9-11e2-9390-ff04f2c1e638"
-   }
+    "Events": [
+        {
+            "Date": "2013-01-22T19:17:03.640Z",
+            "SourceIdentifier": "myclusterparametergroup",
+            "Message": "Cluster parameter group myclusterparametergroup has been created.",
+            "SourceType": "cluster-parameter-group"
+        }
+    ]
 }
 ```
-You can also obtain the same information in text format using the `--output text` option.Command:
-`--output text` option.Command:
- option.Command:
+You can also obtain the same information in text format using the `--output text` option.
 
 ```
-aws redshift describe-events --output text
+aws redshift describe-events \
+    --output {{text}}
 ```
-Result:
+Output:
 
 ```
 2013-01-22T19:17:03.640Z    myclusterparametergroup Cluster parameter group myclusterparametergroup has been created.       cluster-parameter-group
-RESPONSEMETADATA    8e5fe765-64c9-11e2-bce3-e56f52c50e17
 ```
+For more information, see [Amazon Redshift events](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-events.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-events.html) in *AWS CLI Command Reference*.
 
 ### `describe-hsm-client-certificates`
@@ -1490,21 +1670,7 @@ Output:
     "HsmClientCertificates": [
         {
         "HsmClientCertificateIdentifier": "myhsmclientcert",
-        "HsmClientCertificatePublicKey": "-----BEGIN CERTIFICATE-----\
-        EXAMPLECAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-        VVMxCzAJBgNVBAEXAMPLERAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-        b24xFDASBgNVBAsTC0lBTSBDb25zEXAMPLEwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-        BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhEXAMPLEDI1MjA0EXAMPLEN
-        EXAMPLE0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-        VQQHEwdTZWF0dGEXAMPLEQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-        b2xlMRIwEAYDVQQDEwlUZXN0Q2lsEXAMPLEdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-        YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIEXAMPLEMaK0dn+a4GmWIWJ
-        21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-        rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY67EXAMPLEE
-        EXAMPLEZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-        nUhVVxYUntneD9EXAMPLE6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-        FFBjvSfpJIlJ00zbhNYS5f6GuoEDEXAMPLEBHjJnyp378OD8uTs7fLvjx79LjSTb
-        NYiytVbZPQUQ5Yaxu2jXnimvw3rEXAMPLE=-----END CERTIFICATE-----\n",
+        "HsmClientCertificatePublicKey": "-----BEGIN CERTIFICATE-----\nEXAMPLECAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAEXAMPLERAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25zEXAMPLEwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhEXAMPLEDI1MjA0EXAMPLEN\nEXAMPLE0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGEXAMPLEQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsEXAMPLEdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIEXAMPLEMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY67EXAMPLEE\nEXAMPLEZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9EXAMPLE6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDEXAMPLEBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvw3rEXAMPLE=\n-----END CERTIFICATE-----\n",
         "Tags": []
         }
     ]
@@ -1523,7 +1689,7 @@ The following code example shows how to use `describe-hsm-configurations`.
 The following `describe-hsm-configurations` example displays details for the available HSM configurations for the calling AWS account.
 
 ```
-aws redshift describe-hsm-configurations {{/}}
+aws redshift describe-hsm-configurations \
     --hsm-configuration-identifier {{myhsmconnection}}
 ```
 Output:
@@ -1541,6 +1707,7 @@ Output:
     ]
 }
 ```
+For more information, see [Encryption using hardware security modules](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-db-encryption.html#working-with-HSM) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeHsmConfigurations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-hsm-configurations.html) in *AWS CLI Command Reference*.
 
 ### `describe-logging-status`
@@ -1617,72 +1784,69 @@ For more information, see [Purchasing Amazon Redshift Reserved Nodes](https://do
 The following code example shows how to use `describe-orderable-cluster-options`.
 
 **AWS CLI**
-Describing All Orderable Cluster OptionsThis example returns descriptions of all orderable cluster options. By default, the output is in JSON format.Command:
+**To describe all orderable cluster options**
+The following `describe-orderable-cluster-options` example returns descriptions of all orderable cluster options. By default, the output is in JSON format.
 
 ```
 aws redshift describe-orderable-cluster-options
 ```
-Result:
+Output:
 
 ```
 {
-   "OrderableClusterOptions": [
-      {
-         "NodeType": "dw.hs1.8xlarge",
-         "AvailabilityZones": [
-            { "Name": "us-east-1a" },
-            { "Name": "us-east-1b" },
-            { "Name": "us-east-1c" } ],
-         "ClusterVersion": "1.0",
-         "ClusterType": "multi-node"
-      },
-      {
-         "NodeType": "dw.hs1.xlarge",
-         "AvailabilityZones": [
-            { "Name": "us-east-1a" },
-            { "Name": "us-east-1b" },
-            { "Name": "us-east-1c" } ],
-         "ClusterVersion": "1.0",
-         "ClusterType": "multi-node"
-      },
-      {
-      "NodeType": "dw.hs1.xlarge",
-      "AvailabilityZones": [
-         { "Name": "us-east-1a" },
-         { "Name": "us-east-1b" },
-         { "Name": "us-east-1c" } ],
-      "ClusterVersion": "1.0",
-      "ClusterType": "single-node"
-      } ],
-   "ResponseMetadata": {
-      "RequestId": "f6000035-64cb-11e2-9135-ff82df53a51a"
-   }
+    "OrderableClusterOptions": [
+        {
+            "NodeType": "dw.hs1.8xlarge",
+            "AvailabilityZones": [
+                { "Name": "us-west-2a" },
+                { "Name": "us-west-2b" },
+                { "Name": "us-west-2c" } ],
+            "ClusterVersion": "1.0",
+            "ClusterType": "multi-node"
+        },
+        {
+            "NodeType": "dw.hs1.xlarge",
+            "AvailabilityZones": [
+                { "Name": "us-west-2a" },
+                { "Name": "us-west-2b" },
+                { "Name": "us-west-2c" } ],
+            "ClusterVersion": "1.0",
+            "ClusterType": "multi-node"
+        },
+        {
+            "NodeType": "dw.hs1.xlarge",
+            "AvailabilityZones": [
+                { "Name": "us-west-2a" },
+                { "Name": "us-west-2b" },
+                { "Name": "us-west-2c" } ],
+            "ClusterVersion": "1.0",
+            "ClusterType": "single-node"
+        } ]
 }
 ```
-You can also obtain the same information in text format using the `--output text` option.Command:
-`--output text` option.Command:
- option.Command:
+You can also obtain the same information in text format using the `--output text` option.
 
 ```
-aws redshift describe-orderable-cluster-options --output text
+aws redshift describe-orderable-cluster-options \
+    --output {{text}}
 ```
-Result:
+Output:
 
 ```
 dw.hs1.8xlarge      1.0     multi-node
-us-east-1a
-us-east-1b
-us-east-1c
+us-west-2a
+us-west-2b
+us-west-2c
 dw.hs1.xlarge       1.0     multi-node
-us-east-1a
-us-east-1b
-us-east-1c
+us-west-2a
+us-west-2b
+us-west-2c
 dw.hs1.xlarge       1.0     single-node
-us-east-1a
-us-east-1b
-us-east-1c
-RESPONSEMETADATA    e648696b-64cb-11e2-bec0-17624ad140dd
+us-west-2a
+us-west-2b
+us-west-2c
 ```
+For more information, see [Amazon Redshift provisioned clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeOrderableClusterOptions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-orderable-cluster-options.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-node-offerings`
@@ -1691,54 +1855,48 @@ RESPONSEMETADATA    e648696b-64cb-11e2-bec0-17624ad140dd
 The following code example shows how to use `describe-reserved-node-offerings`.
 
 **AWS CLI**
-Describe Reserved Node OfferingsThis example shows all of the reserved node offerings that are available for purchase.Command:
+**To describe reserved node offerings**
+The following `describe-reserved-node-offerings` example shows all of the reserved node offerings that are available for purchase.
 
 ```
 aws redshift describe-reserved-node-offerings
 ```
-Result:
+Output:
 
 ```
 {
-   "ReservedNodeOfferings": [
-      {
-         "OfferingType": "Heavy Utilization",
-         "FixedPrice": "",
-         "NodeType": "dw.hs1.xlarge",
-         "UsagePrice": "",
-         "RecurringCharges": [
-            {
-               "RecurringChargeAmount": "",
-               "RecurringChargeFrequency": "Hourly"
+    "ReservedNodeOfferings": [
+        {
+            "OfferingType": "Heavy Utilization",
+            "FixedPrice": 3000.0,
+            "NodeType": "dw.hs1.xlarge",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.114,
+                    "RecurringChargeFrequency": "Hourly"
             } ],
-         "Duration": 31536000,
-         "ReservedNodeOfferingId": "ceb6a579-cf4c-4343-be8b-d832c45ab51c"
-      },
-      {
-         "OfferingType": "Heavy Utilization",
-         "FixedPrice": "",
-         "NodeType": "dw.hs1.8xlarge",
-         "UsagePrice": "",
-         "RecurringCharges": [
-            {
-            "RecurringChargeAmount": "",
-            "RecurringChargeFrequency": "Hourly"
+            "Duration": 31536000,
+            "ReservedNodeOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        },
+        {
+            "OfferingType": "Heavy Utilization",
+            "FixedPrice": 24000.0,
+            "NodeType": "dw.hs1.8xlarge",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.912,
+                    "RecurringChargeFrequency": "Hourly"
             } ],
-         "Duration": 31536000,
-         "ReservedNodeOfferingId": "e5a2ff3b-352d-4a9c-ad7d-373c4cab5dd2"
-      },
-      ...remaining output omitted...
-   ],
-   "ResponseMetadata": {
-      "RequestId": "8b1a1a43-75ff-11e2-9666-e142fe91ddd1"
-   }
+            "Duration": 31536000,
+            "ReservedNodeOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+        }
+    ]
 }
 ```
 If you want to purchase a reserved node offering, you can call `purchase-reserved-node-offering` using a valid *ReservedNodeOfferingId*.
-`purchase-reserved-node-offering` using a valid *ReservedNodeOfferingId*.
- using a valid *ReservedNodeOfferingId*.
-*ReservedNodeOfferingId*.
-.
+For more information, see [Reserved nodes](https://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-instance.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeReservedNodeOfferings](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-reserved-node-offerings.html) in *AWS CLI Command Reference*.
 
 ### `describe-reserved-nodes`
@@ -1747,39 +1905,38 @@ If you want to purchase a reserved node offering, you can call `purchase-reserve
 The following code example shows how to use `describe-reserved-nodes`.
 
 **AWS CLI**
-Describe Reserved NodesThis example shows a reserved node offering that has been purchased.Command:
+**To describe reserved nodes**
+The following `describe-reserved-nodes` example shows a reserved node offering that has been purchased.
 
 ```
 aws redshift describe-reserved-nodes
 ```
-Result:
+Output:
 
 ```
 {
-   "ResponseMetadata": {
-      "RequestId": "bc29ce2e-7600-11e2-9949-4b361e7420b7"
-   },
-   "ReservedNodes": [
-      {
-         "OfferingType": "Heavy Utilization",
-         "FixedPrice": "",
-         "NodeType": "dw.hs1.xlarge",
-         "ReservedNodeId": "1ba8e2e3-bc01-4d65-b35d-a4a3e931547e",
-         "UsagePrice": "",
-         "RecurringCharges": [
-            {
-               "RecurringChargeAmount": "",
-               "RecurringChargeFrequency": "Hourly"
-            } ],
-         "NodeCount": 1,
-         "State": "payment-pending",
-         "StartTime": "2013-02-13T17:08:39.051Z",
-         "Duration": 31536000,
-         "ReservedNodeOfferingId": "ceb6a579-cf4c-4343-be8b-d832c45ab51c"
-      }
-   ]
+    "ReservedNodes": [
+        {
+            "OfferingType": "Heavy Utilization",
+            "FixedPrice": 3000.0,
+            "NodeType": "dw.hs1.xlarge",
+            "ReservedNodeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "UsagePrice": 0.0,
+            "RecurringCharges": [
+                {
+                    "RecurringChargeAmount": 0.21,
+                    "RecurringChargeFrequency": "Hourly"
+                } ],
+            "NodeCount": 1,
+            "State": "payment-pending",
+            "StartTime": "2013-02-13T17:08:39.051Z",
+            "Duration": 31536000,
+            "ReservedNodeOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
+        }
+    ]
 }
 ```
+For more information, see [Reserved nodes](https://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-instance.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeReservedNodes](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-reserved-nodes.html) in *AWS CLI Command Reference*.
 
 ### `describe-resize`
@@ -1788,24 +1945,24 @@ Result:
 The following code example shows how to use `describe-resize`.
 
 **AWS CLI**
-Describe ResizeThis example describes the latest resize of a cluster. The request was for 3 nodes of type `dw.hs1.8xlarge`.Command:
+**To describe a resize**
+The following `describe-resize` example describes the latest resize of a cluster. The request was for 3 nodes of type `dw.hs1.8xlarge`.
 
 ```
-aws redshift describe-resize --cluster-identifier mycluster
+aws redshift describe-resize \
+    --cluster-identifier {{mycluster}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Status": "NONE",
-   "TargetClusterType": "multi-node",
-   "TargetNodeType": "dw.hs1.8xlarge",
-   "ResponseMetadata": {
-      "RequestId": "9f52b0b4-7733-11e2-aa9b-318b2909bd27"
-   },
-   "TargetNumberOfNodes": "3"
+    "Status": "NONE",
+    "TargetClusterType": "multi-node",
+    "TargetNodeType": "dw.hs1.8xlarge",
+    "TargetNumberOfNodes": 3
 }
 ```
+For more information, see [Resizing a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeResize](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-resize.html) in *AWS CLI Command Reference*.
 
 ### `describe-scheduled-actions`
@@ -1844,6 +2001,7 @@ Output:
     ]
 }
 ```
+For more information, see [Scheduling a resize](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html#rs-restore-resize-overview-schedule) in the *Amazon Redshift Management Guide*.
 +  For API details, see [DescribeScheduledActions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-scheduled-actions.html) in *AWS CLI Command Reference*.
 
 ### `describe-snapshot-copy-grants`
@@ -1948,7 +2106,7 @@ The following code example shows how to use `describe-table-restore-status`.
 The following `describe-table-restore-status` example displays details for table restore requests made for the specified cluster.
 
 ```
-aws redshift describe-table-restore-status {{/}}
+aws redshift describe-table-restore-status \
     --cluster-identifier {{mycluster}}
 ```
 Output:
@@ -1957,7 +2115,7 @@ Output:
 {
     "TableRestoreStatusDetails": [
         {
-            "TableRestoreRequestId": "z1116630-0e80-46f4-ba86-bd9670411ebd",
+            "TableRestoreRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Status": "IN_PROGRESS",
             "RequestTime": "2019-12-27T18:22:12.257Z",
             "ClusterIdentifier": "mycluster",
@@ -1972,7 +2130,7 @@ Output:
     ]
 }
 ```
-For more information, see [Restoring a Table from a Snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html#working-with-snapshot-restore-table-from-snapshot) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Restoring a Table from a Snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshot-restore-table-from-snapshot.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DescribeTableRestoreStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/describe-table-restore-status.html) in *AWS CLI Command Reference*.
 
 ### `describe-tags`
@@ -1995,7 +2153,7 @@ Output:
 ```
 {
     "TaggedResources": [
-                    {
+        {
             "Tag": {
                 "Key": "clustertagkey",
                 "Value": "clustertagvalue"
@@ -2088,7 +2246,7 @@ Output:
     }
 }
 ```
-For more information, see [Copying Snapshots to Another AWS Region](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html#cross-region-snapshot-copy) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Copying Snapshots to Another AWS Region](https://docs.aws.amazon.com/redshift/latest/mgmt/cross-region-snapshot-copy.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [DisableSnapshotCopy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/disable-snapshot-copy.html) in *AWS CLI Command Reference*.
 
 ### `enable-snapshot-copy`
@@ -2176,7 +2334,7 @@ Output:
     }
 }
 ```
-For more information, see [Copying Snapshots to Another AWS Region](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html#cross-region-snapshot-copy) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Copying Snapshots to Another AWS Region](https://docs.aws.amazon.com/redshift/latest/mgmt/cross-region-snapshot-copy.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [EnableSnapshotCopy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/enable-snapshot-copy.html) in *AWS CLI Command Reference*.
 
 ### `get-cluster-credentials`
@@ -2190,7 +2348,8 @@ The following `get-cluster-credentials` example retrieves temporary credentials 
 
 ```
 aws redshift get-cluster-credentials \
-    --db-user {{adminuser}} --db-name {{dev}} \
+    --db-user {{adminuser}} \
+    --db-name {{dev}} \
     --cluster-identifier {{mycluster}}
 ```
 Output:
@@ -2304,11 +2463,6 @@ Output:
         "NumberOfNodes": 4,
         "PubliclyAccessible": false,
         "Encrypted": false,
-        "ClusterSnapshotCopyStatus": {
-            "DestinationRegion": "us-west-1",
-            "RetentionPeriod": 7,
-            "ManualSnapshotRetentionPeriod": -1
-        },
         "Tags": [
             {
                 "Key": "mytags",
@@ -2388,11 +2542,6 @@ Output:
         "NumberOfNodes": 4,
         "PubliclyAccessible": false,
         "Encrypted": false,
-        "ClusterSnapshotCopyStatus": {
-            "DestinationRegion": "us-west-1",
-            "RetentionPeriod": 7,
-            "ManualSnapshotRetentionPeriod": -1
-        },
         "Tags": [
             {
                 "Key": "mytags",
@@ -2415,7 +2564,7 @@ Output:
     }
 }
 ```
-For more information, see [Cluster Maintenance](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#rs-cluster-maintenance) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Cluster Maintenance](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [ModifyClusterMaintenance](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/modify-cluster-maintenance.html) in *AWS CLI Command Reference*.
 
 ### `modify-cluster-parameter-group`
@@ -2424,7 +2573,7 @@ For more information, see [Cluster Maintenance](https://docs.aws.amazon.com/reds
 The following code example shows how to use `modify-cluster-parameter-group`.
 
 **AWS CLI**
-**Modify a parameter in a parameter group**
+**To modify a parameter in a parameter group**
 The following `modify-cluster-parameter-group` example modifies the *wlm\_json\_configuration* parameter for workload management. It accepts the parameters from a file that contains the JSON contents shown below.
 
 ```
@@ -2446,13 +2595,11 @@ Output:
 
 ```
 {
-   "ParameterGroupStatus": "Your parameter group has been updated but changes won't get applied until you reboot the associated Clusters.",
-   "ParameterGroupName": "myclusterparametergroup",
-   "ResponseMetadata": {
-      "RequestId": "09974cc0-64cd-11e2-bea9-49e0ce183f07"
-   }
+    "ParameterGroupStatus": "Your parameter group has been updated but changes won't get applied until you reboot the associated Clusters.",
+    "ParameterGroupName": "myclusterparametergroup"
 }
 ```
+For more information, see [Modifying a parameter group](https://docs.aws.amazon.com/redshift/latest/mgmt/parameter-group-modify.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [ModifyClusterParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/modify-cluster-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `modify-cluster-snapshot-schedule`
@@ -2470,7 +2617,7 @@ aws redshift modify-cluster-snapshot-schedule \
     --schedule-identifier {{mysnapshotschedule}} \
     --disassociate-schedule
 ```
-This command does not produce any output.
+This command produces no output.
 For more information, see [Automated Snapshot Schedules](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html#automated-snapshot-schedules) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [ModifyClusterSnapshotSchedule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/modify-cluster-snapshot-schedule.html) in *AWS CLI Command Reference*.
 
@@ -2539,40 +2686,41 @@ For more information, see [Amazon Redshift Snapshots](https://docs.aws.amazon.co
 The following code example shows how to use `modify-cluster-subnet-group`.
 
 **AWS CLI**
-Modify the Subnets in a Cluster Subnet GroupThis example shows how to modify the list of subnets in a cache subnet group. By default, the output is in JSON format.Command:
+**To modify the subnets in a cluster subnet group**
+The following `modify-cluster-subnet-group` example modifies the list of subnets in a cluster subnet group. By default, the output is in JSON format.
 
 ```
-aws redshift modify-cluster-subnet-group --cluster-subnet-group-name mysubnetgroup --subnet-ids subnet-763fdd1 subnet-ac830e9
+aws redshift modify-cluster-subnet-group \
+    --cluster-subnet-group-name {{mysubnetgroup}} \
+    --subnet-ids {{subnet-763fdd1}} {{subnet-ac830e9}}
 ```
-Result:
+Output:
 
 ```
 {
-   "ClusterSubnetGroup":
-   {
-      "Subnets": [
-         {
-            "SubnetStatus": "Active",
-            "SubnetIdentifier": "subnet-763fdd1c",
-            "SubnetAvailabilityZone":
-               { "Name": "us-east-1a" }
-         },
-         {
-            "SubnetStatus": "Active",
-            "SubnetIdentifier": "subnet-ac830e9",
-            "SubnetAvailabilityZone":
-               { "Name": "us-east-1b" }
-         } ],
-      "VpcId": "vpc-7e3fdd14",
-      "SubnetGroupStatus": "Complete",
-      "Description": "My subnet group",
-      "ClusterSubnetGroupName": "mysubnetgroup"
-   },
-   "ResponseMetadata": {
-      "RequestId": "8da93e89-8372-f936-93a8-873918938197a"
-   }
+    "ClusterSubnetGroup":
+    {
+        "Subnets": [
+            {
+                "SubnetStatus": "Active",
+                "SubnetIdentifier": "subnet-763fdd1c",
+                "SubnetAvailabilityZone":
+                    { "Name": "us-west-2a" }
+            },
+            {
+                "SubnetStatus": "Active",
+                "SubnetIdentifier": "subnet-ac830e9",
+                "SubnetAvailabilityZone":
+                    { "Name": "us-west-2b" }
+            } ],
+        "VpcId": "vpc-7e3fdd14",
+        "SubnetGroupStatus": "Complete",
+        "Description": "My subnet group",
+        "ClusterSubnetGroupName": "mysubnetgroup"
+    }
 }
 ```
+For more information, see [Modifying a cluster subnet group](https://docs.aws.amazon.com/redshift/latest/mgmt/modify-cluster-subnet-group.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [ModifyClusterSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/modify-cluster-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `modify-cluster`
@@ -2581,21 +2729,177 @@ Result:
 The following code example shows how to use `modify-cluster`.
 
 **AWS CLI**
-Associate a Security Group with a ClusterThis example shows how to associate a cluster security group with the specified cluster.Command:
+**Example 1: To associate a security group with a cluster**
+The following `modify-cluster` example associates a cluster security group with the specified cluster.
 
 ```
-aws redshift modify-cluster --cluster-identifier mycluster --cluster-security-groups mysecuritygroup
+aws redshift modify-cluster \
+    --cluster-identifier {{mycluster}} \
+    --cluster-security-groups {{mysecuritygroup}}
 ```
-Modify the Maintenance Window for a ClusterThis shows how to change the weekly preferred maintenance window for a cluster to be the minimum four hour window starting Sundays at 11:15 PM, and ending Mondays at 3:15 AM.Command:
+Output:
 
 ```
-aws redshift modify-cluster --cluster-identifier mycluster --preferred-maintenance-window Sun:23:15-Mon:03:15
+{
+    "Cluster": {
+        "ClusterIdentifier": "mycluster",
+        "NodeType": "dc2.large",
+        "ClusterStatus": "available",
+        "ClusterAvailabilityStatus": "Available",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "Endpoint": {
+            "Address": "mycluster.cmeaswqeuae.us-west-2.redshift.amazonaws.com",
+            "Port": 5439
+        },
+        "ClusterCreateTime": "2019-12-02T22:45:07.890Z",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ManualSnapshotRetentionPeriod": -1,
+        "ClusterSecurityGroups": [
+            {
+                "ClusterSecurityGroupName": "default",
+                "Status": "removing"
+            },
+            {
+                "ClusterSecurityGroupName": "mysecuritygroup",
+                "Status": "adding"
+            }
+        ],
+        "VpcSecurityGroups": [],
+        "ClusterParameterGroups": [
+            {
+                "ParameterGroupName": "default.redshift-1.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "AvailabilityZone": "us-west-2a",
+        "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
+        "PendingModifiedValues": {},
+        "ClusterVersion": "1.0",
+        "AllowVersionUpgrade": true,
+        "NumberOfNodes": 2,
+        "PubliclyAccessible": true,
+        "Encrypted": false,
+        "Tags": [],
+        "EnhancedVpcRouting": false,
+        "IamRoles": [],
+        "MaintenanceTrackName": "current"
+    }
+}
 ```
-Change the Master Password for the ClusterThis example shows how to change the master password for a cluster.Command:
+For more information, see [Modifying a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/modify-cluster.html) in the *Amazon Redshift Management Guide*.
+**Example 2: To modify the maintenance window for a cluster**
+The following `modify-cluster` example changes the weekly preferred maintenance window for a cluster to be the minimum four hour window starting Sundays at 11:15 PM, and ending Mondays at 3:15 AM.
 
 ```
-aws redshift modify-cluster --cluster-identifier mycluster --master-user-password A1b2c3d4
+aws redshift modify-cluster \
+    --cluster-identifier {{mycluster}} \
+    --preferred-maintenance-window {{Sun:23:15-Mon:03:15}}
 ```
+Output:
+
+```
+{
+    "Cluster": {
+        "ClusterIdentifier": "mycluster",
+        "NodeType": "dc2.large",
+        "ClusterStatus": "available",
+        "ClusterAvailabilityStatus": "Available",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "Endpoint": {
+            "Address": "mycluster.cmeaswqeuae.us-west-2.redshift.amazonaws.com",
+            "Port": 5439
+        },
+        "ClusterCreateTime": "2019-12-02T22:45:07.890Z",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ManualSnapshotRetentionPeriod": -1,
+        "ClusterSecurityGroups": [
+            {
+                "ClusterSecurityGroupName": "default",
+                "Status": "active"
+            }
+        ],
+        "VpcSecurityGroups": [],
+        "ClusterParameterGroups": [
+            {
+                "ParameterGroupName": "default.redshift-1.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "AvailabilityZone": "us-west-2a",
+        "PreferredMaintenanceWindow": "sun:23:15-mon:03:15",
+        "PendingModifiedValues": {},
+        "ClusterVersion": "1.0",
+        "AllowVersionUpgrade": true,
+        "NumberOfNodes": 2,
+        "PubliclyAccessible": true,
+        "Encrypted": false,
+        "Tags": [],
+        "EnhancedVpcRouting": false,
+        "IamRoles": [],
+        "MaintenanceTrackName": "current"
+    }
+}
+```
+For more information, see [Maintenance windows](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-cluster-considerations.html#rs-maintenance-windows) in the *Amazon Redshift Management Guide*.
+**Example 3: To change the master password for the cluster**
+The following `modify-cluster` example changes the master password for a cluster.
+
+```
+aws redshift modify-cluster \
+    --cluster-identifier {{mycluster}} \
+    --master-user-password {{A1b2c3d4}}
+```
+Output:
+
+```
+{
+    "Cluster": {
+        "ClusterIdentifier": "mycluster",
+        "NodeType": "dc2.large",
+        "ClusterStatus": "available",
+        "ClusterAvailabilityStatus": "Available",
+        "MasterUsername": "adminuser",
+        "DBName": "dev",
+        "Endpoint": {
+            "Address": "mycluster.cmeaswqeuae.us-west-2.redshift.amazonaws.com",
+            "Port": 5439
+        },
+        "ClusterCreateTime": "2019-12-02T22:45:07.890Z",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ManualSnapshotRetentionPeriod": -1,
+        "ClusterSecurityGroups": [
+            {
+                "ClusterSecurityGroupName": "default",
+                "Status": "active"
+            }
+        ],
+        "VpcSecurityGroups": [],
+        "ClusterParameterGroups": [
+            {
+                "ParameterGroupName": "default.redshift-1.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "AvailabilityZone": "us-west-2a",
+        "PreferredMaintenanceWindow": "sat:03:30-sat:04:00",
+        "PendingModifiedValues": {
+            "MasterUserPassword": "****"
+        },
+        "ClusterVersion": "1.0",
+        "AllowVersionUpgrade": true,
+        "NumberOfNodes": 2,
+        "PubliclyAccessible": true,
+        "Encrypted": false,
+        "Tags": [],
+        "EnhancedVpcRouting": false,
+        "IamRoles": [],
+        "MaintenanceTrackName": "current"
+    }
+}
+```
+For more information, see [Modifying a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/modify-cluster.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [ModifyCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/modify-cluster.html) in *AWS CLI Command Reference*.
 
 ### `modify-event-subscription`
@@ -2670,6 +2974,7 @@ Output:
     ]
 }
 ```
+For more information, see [Scheduling a resize](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html#rs-restore-resize-overview-schedule) in the *Amazon Redshift Management Guide*.
 +  For API details, see [ModifyScheduledAction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/modify-scheduled-action.html) in *AWS CLI Command Reference*.
 
 ### `modify-snapshot-copy-retention-period`
@@ -2794,38 +3099,38 @@ For more information, see [Snapshot Schedule Format](https://docs.aws.amazon.com
 The following code example shows how to use `purchase-reserved-node-offering`.
 
 **AWS CLI**
-Purchase a Reserved NodeThis example shows how to purchase a reserved node offering. The `reserved-node-offering-id` is obtained by calling `describe-reserved-node-offerings`.Command:
+**To purchase a reserved node**
+The following `purchase-reserved-node-offering` example purchases a reserved node offering. The `reserved-node-offering-id` is obtained by calling `describe-reserved-node-offerings`.
 
 ```
-aws redshift purchase-reserved-node-offering --reserved-node-offering-id ceb6a579-cf4c-4343-be8b-d832c45ab51c
+aws redshift purchase-reserved-node-offering \
+    --reserved-node-offering-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
-Result:
+Output:
 
 ```
 {
-   "ReservedNode": {
-      "OfferingType": "Heavy Utilization",
-      "FixedPrice": "",
-      "NodeType": "dw.hs1.xlarge",
-      "ReservedNodeId": "1ba8e2e3-bc01-4d65-b35d-a4a3e931547e",
-      "UsagePrice": "",
-      "RecurringCharges": [
-         {
-            "RecurringChargeAmount": "",
-            "RecurringChargeFrequency": "Hourly"
-         }
-      ],
-      "NodeCount": 1,
-      "State": "payment-pending",
-      "StartTime": "2013-02-13T17:08:39.051Z",
-      "Duration": 31536000,
-      "ReservedNodeOfferingId": "ceb6a579-cf4c-4343-be8b-d832c45ab51c"
-   },
-   "ResponseMetadata": {
-      "RequestId": "01bda7bf-7600-11e2-b605-2568d7396e7f"
-   }
+    "ReservedNode": {
+        "OfferingType": "Heavy Utilization",
+        "FixedPrice": 3000.0,
+        "NodeType": "dw.hs1.xlarge",
+        "ReservedNodeId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "UsagePrice": 0.0,
+        "RecurringCharges": [
+            {
+                "RecurringChargeAmount": 0.114,
+                "RecurringChargeFrequency": "Hourly"
+            }
+        ],
+        "NodeCount": 1,
+        "State": "payment-pending",
+        "StartTime": "2013-02-13T17:08:39.051Z",
+        "Duration": 31536000,
+        "ReservedNodeOfferingId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    }
 }
 ```
+For more information, see [Purchasing a reserved node](https://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-offering-console.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [PurchaseReservedNodeOffering](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/purchase-reserved-node-offering.html) in *AWS CLI Command Reference*.
 
 ### `reboot-cluster`
@@ -2834,53 +3139,53 @@ Result:
 The following code example shows how to use `reboot-cluster`.
 
 **AWS CLI**
-Reboot a ClusterThis example reboots a cluster. By default, the output is in JSON format.Command:
+**To reboot a cluster**
+The following `reboot-cluster` example reboots a cluster. By default, the output is in JSON format.
 
 ```
-aws redshift reboot-cluster --cluster-identifier mycluster
+aws redshift reboot-cluster \
+    --cluster-identifier {{mycluster}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Cluster": {
-      "NodeType": "dw.hs1.xlarge",
-      "Endpoint": {
-         "Port": 5439,
-         "Address": "mycluster.coqoarplqhsn.us-east-1.redshift.amazonaws.com"
-      },
-      "ClusterVersion": "1.0",
-      "PubliclyAccessible": "true",
-      "MasterUsername": "adminuser",
-      "ClusterParameterGroups": [
-         {
-         "ParameterApplyStatus": "in-sync",
-         "ParameterGroupName": "default.redshift-1.0"
-         }
-      ],
-      "ClusterSecurityGroups": [
-         {
-         "Status": "active",
-         "ClusterSecurityGroupName": "default"
-         }
-      ],
-      "AllowVersionUpgrade": true,
-      "VpcSecurityGroups": \[],
-      "AvailabilityZone": "us-east-1a",
-      "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-      "PreferredMaintenanceWindow": "sun:23:15-mon:03:15",
-      "AutomatedSnapshotRetentionPeriod": 1,
-      "ClusterStatus": "rebooting",
-      "ClusterIdentifier": "mycluster",
-      "DBName": "dev",
-      "NumberOfNodes": 2,
-      "PendingModifiedValues": {}
-   },
-   "ResponseMetadata": {
-      "RequestId": "61c8b564-64e8-11e2-8f7d-3b939af52818"
-   }
+    "Cluster": {
+        "NodeType": "dw.hs1.xlarge",
+        "Endpoint": {
+            "Port": 5439,
+            "Address": "mycluster.coqoarplqhsn.us-west-2.redshift.amazonaws.com"
+        },
+        "ClusterVersion": "1.0",
+        "PubliclyAccessible": true,
+        "MasterUsername": "adminuser",
+        "ClusterParameterGroups": [
+            {
+                "ParameterApplyStatus": "in-sync",
+                "ParameterGroupName": "default.redshift-1.0"
+            }
+        ],
+        "ClusterSecurityGroups": [
+            {
+                "Status": "active",
+                "ClusterSecurityGroupName": "default"
+            }
+        ],
+        "AllowVersionUpgrade": true,
+        "VpcSecurityGroups": [],
+        "AvailabilityZone": "us-west-2a",
+        "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+        "PreferredMaintenanceWindow": "sun:23:15-mon:03:15",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ClusterStatus": "rebooting",
+        "ClusterIdentifier": "mycluster",
+        "DBName": "dev",
+        "NumberOfNodes": 2,
+        "PendingModifiedValues": {}
+    }
 }
 ```
+For more information, see [Rebooting a cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/reboot-cluster.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [RebootCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/reboot-cluster.html) in *AWS CLI Command Reference*.
 
 ### `reset-cluster-parameter-group`
@@ -2889,11 +3194,23 @@ Result:
 The following code example shows how to use `reset-cluster-parameter-group`.
 
 **AWS CLI**
-Reset Parameters in a Parameter GroupThis example shows how to reset all of the parameters in a parameter group.Command:
+**To reset parameters in a parameter group**
+The following `reset-cluster-parameter-group` example resets all of the parameters in a parameter group.
 
 ```
-aws redshift reset-cluster-parameter-group --parameter-group-name myclusterparametergroup --reset-all-parameters
+aws redshift reset-cluster-parameter-group \
+    --parameter-group-name {{myclusterparametergroup}} \
+    --reset-all-parameters
 ```
+Output:
+
+```
+{
+    "ParameterGroupName": "myclusterparametergroup",
+    "ParameterGroupStatus": "Your parameter group has been updated but changes won't get applied until you reboot the associated Clusters."
+}
+```
+For more information, see [Amazon Redshift parameter groups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-parameter-groups.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [ResetClusterParameterGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/reset-cluster-parameter-group.html) in *AWS CLI Command Reference*.
 
 ### `resize-cluster`
@@ -2958,11 +3275,6 @@ Output:
         "NumberOfNodes": 4,
         "PubliclyAccessible": false,
         "Encrypted": false,
-        "ClusterSnapshotCopyStatus": {
-            "DestinationRegion": "us-west-1",
-            "RetentionPeriod": 15,
-            "ManualSnapshotRetentionPeriod": -1
-        },
         "Tags": [
             {
                 "Key": "mytags",
@@ -2987,7 +3299,7 @@ Output:
     }
 }
 ```
-For more information, see [Resizing a Cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#cluster-resize-intro) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Resizing a Cluster](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [ResizeCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/resize-cluster.html) in *AWS CLI Command Reference*.
 
 ### `restore-from-cluster-snapshot`
@@ -2996,47 +3308,48 @@ For more information, see [Resizing a Cluster](https://docs.aws.amazon.com/redsh
 The following code example shows how to use `restore-from-cluster-snapshot`.
 
 **AWS CLI**
-Restore a Cluster From a SnapshotThis example restores a cluster from a snapshot.Command:
+**To restore a cluster from a snapshot**
+The following `restore-from-cluster-snapshot` example restores a cluster from a snapshot.
 
 ```
-aws redshift restore-from-cluster-snapshot --cluster-identifier mycluster-clone --snapshot-identifier my-snapshot-id
+aws redshift restore-from-cluster-snapshot \
+    --cluster-identifier {{mycluster-clone}} \
+    --snapshot-identifier {{my-snapshot-id}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Cluster": {
-      "NodeType": "dw.hs1.xlarge",
-      "ClusterVersion": "1.0",
-      "PubliclyAccessible": "true",
-      "MasterUsername": "adminuser",
-      "ClusterParameterGroups": [
-         {
-         "ParameterApplyStatus": "in-sync",
-         "ParameterGroupName": "default.redshift-1.0"
-         }
-      ],
-      "ClusterSecurityGroups": [
-         {
-         "Status": "active",
-         "ClusterSecurityGroupName": "default"
-         }
-      ],
-      "AllowVersionUpgrade": true,
-      "VpcSecurityGroups": \[],
-      "PreferredMaintenanceWindow": "sun:23:15-mon:03:15",
-      "AutomatedSnapshotRetentionPeriod": 1,
-      "ClusterStatus": "creating",
-      "ClusterIdentifier": "mycluster-clone",
-      "DBName": "dev",
-      "NumberOfNodes": 2,
-      "PendingModifiedValues": {}
-   },
-   "ResponseMetadata": {
-      "RequestId": "77fd512b-64e3-11e2-8f5b-e90bd6c77476"
-   }
+    "Cluster": {
+        "NodeType": "dw.hs1.xlarge",
+        "ClusterVersion": "1.0",
+        "PubliclyAccessible": true,
+        "MasterUsername": "adminuser",
+        "ClusterParameterGroups": [
+            {
+                "ParameterApplyStatus": "in-sync",
+                "ParameterGroupName": "default.redshift-1.0"
+            }
+        ],
+        "ClusterSecurityGroups": [
+            {
+                "Status": "active",
+                "ClusterSecurityGroupName": "default"
+            }
+        ],
+        "AllowVersionUpgrade": true,
+        "VpcSecurityGroups": [],
+        "PreferredMaintenanceWindow": "sun:23:15-mon:03:15",
+        "AutomatedSnapshotRetentionPeriod": 1,
+        "ClusterStatus": "creating",
+        "ClusterIdentifier": "mycluster-clone",
+        "DBName": "dev",
+        "NumberOfNodes": 2,
+        "PendingModifiedValues": {}
+    }
 }
 ```
+For more information, see [Restoring a cluster from a snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshot-restore-cluster-from-snapshot.html) in the *Amazon Redshift Management Guide*.
 +  For API details, see [RestoreFromClusterSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/restore-from-cluster-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `restore-table-from-cluster-snapshot`
@@ -3049,14 +3362,14 @@ The following code example shows how to use `restore-table-from-cluster-snapshot
 The following `restore-table-from-cluster-snapshot` example creates a new table from the specified table in the specified cluster snapshot.
 
 ```
-aws redshift restore-table-from-cluster-snapshot {{/}}
-    --cluster-identifier {{mycluster}} {{/}}
-    --snapshot-identifier {{mycluster-2019-11-19-16-17}} {{/}}
-    --source-database-name {{dev}} {{/}}
-    --source-schema-name {{public}} {{/}}
-    --source-table-name {{mytable}} {{/}}
-    --target-database-name {{dev}} {{/}}
-    --target-schema-name {{public}} {{/}}
+aws redshift restore-table-from-cluster-snapshot \
+    --cluster-identifier {{mycluster}} \
+    --snapshot-identifier {{mycluster-2019-11-19-16-17}} \
+    --source-database-name {{dev}} \
+    --source-schema-name {{public}} \
+    --source-table-name {{mytable}} \
+    --target-database-name {{dev}} \
+    --target-schema-name {{public}} \
     --new-table-name {{mytable-clone}}
 ```
 Output:
@@ -3064,7 +3377,7 @@ Output:
 ```
 {
     "TableRestoreStatus": {
-        "TableRestoreRequestId": "a123a12b-abc1-1a1a-a123-a1234ab12345",
+        "TableRestoreRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Status": "PENDING",
         "RequestTime": "2019-12-20T00:20:16.402Z",
         "ClusterIdentifier": "mycluster",
@@ -3078,7 +3391,7 @@ Output:
     }
 }
 ```
-For more information, see [Restoring a Table from a Snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html#working-with-snapshot-restore-table-from-snapshot) in the *Amazon Redshift Cluster Management Guide*.
+For more information, see [Restoring a Table from a Snapshot](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshot-restore-table-from-snapshot.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [RestoreTableFromClusterSnapshot](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/restore-table-from-cluster-snapshot.html) in *AWS CLI Command Reference*.
 
 ### `revoke-cluster-security-group-ingress`
@@ -3087,16 +3400,51 @@ For more information, see [Restoring a Table from a Snapshot](https://docs.aws.a
 The following code example shows how to use `revoke-cluster-security-group-ingress`.
 
 **AWS CLI**
-Revoke Access from an EC2 Security GroupThis example revokes access to a named Amazon EC2 security group.Command:
+**Example 1: To revoke access from an EC2 security group**
+The following `revoke-cluster-security-group-ingress` example revokes access to a named Amazon EC2 security group.
 
 ```
-aws redshift revoke-cluster-security-group-ingress --cluster-security-group-name mysecuritygroup --ec2-security-group-name myec2securitygroup --ec2-security-group-owner-id 123445677890
+aws redshift revoke-cluster-security-group-ingress \
+    --cluster-security-group-name {{mysecuritygroup}} \
+    --ec2-security-group-name {{myec2securitygroup}} \
+    --ec2-security-group-owner-id {{123456789012}}
 ```
-Revoking Access to a CIDR rangeThis example revokes access to a CIDR range.Command:
+Output:
 
 ```
-aws redshift revoke-cluster-security-group-ingress --cluster-security-group-name mysecuritygroup --cidrip 192.168.100.100/32
+{
+    "ClusterSecurityGroup": {
+        "ClusterSecurityGroupName": "mysecuritygroup",
+        "Description": "This is my cluster security group",
+        "EC2SecurityGroups": [],
+        "IPRanges": [],
+        "Tags": []
+    }
+}
 ```
+For more information, see [Configuring security group communication settings for an Amazon Redshift cluster or an Amazon Redshift Serverless workgroup](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-security-group-public-private.html) in the *Amazon Redshift Cluster Management Guide*.
+**Example 2: To revoke access to a CIDR range**
+The following `revoke-cluster-security-group-ingress` example revokes access to a CIDR range.
+
+```
+aws redshift revoke-cluster-security-group-ingress \
+    --cluster-security-group-name {{mysecuritygroup}} \
+    --cidrip {{192.168.100.100/32}}
+```
+Output:
+
+```
+{
+    "ClusterSecurityGroup": {
+        "ClusterSecurityGroupName": "mysecuritygroup",
+        "Description": "This is my cluster security group",
+        "EC2SecurityGroups": [],
+        "IPRanges": [],
+        "Tags": []
+    }
+}
+```
+For more information, see [Configuring security group communication settings for an Amazon Redshift cluster or an Amazon Redshift Serverless workgroup](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-security-group-public-private.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [RevokeClusterSecurityGroupIngress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/revoke-cluster-security-group-ingress.html) in *AWS CLI Command Reference*.
 
 ### `revoke-snapshot-access`
@@ -3105,40 +3453,44 @@ aws redshift revoke-cluster-security-group-ingress --cluster-security-group-name
 The following code example shows how to use `revoke-snapshot-access`.
 
 **AWS CLI**
-Revoke the Authorization of an AWS Account to Restore a SnapshotThis example revokes the authorization of the AWS account `444455556666` to restore the snapshot `my-snapshot-id`. By default, the output is in JSON format.Command:
+**To revoke the authorization of an AWS account to restore a snapshot**
+The following `revoke-snapshot-access` example revokes the authorization of the AWS account `123456789111` to restore the snapshot `my-snapshot-id`. By default, the output is in JSON format.
 
 ```
-aws redshift revoke-snapshot-access --snapshot-id my-snapshot-id --account-with-restore-access 444455556666
+aws redshift revoke-snapshot-access \
+    --snapshot-id {{my-snapshot-id}} \
+    --account-with-restore-access {{123456789111}}
 ```
-Result:
+Output:
 
 ```
 {
-   "Snapshot": {
-      "Status": "available",
-      "SnapshotCreateTime": "2013-07-17T22:04:18.947Z",
-      "EstimatedSecondsToCompletion": 0,
-      "AvailabilityZone": "us-east-1a",
-      "ClusterVersion": "1.0",
-      "MasterUsername": "adminuser",
-      "Encrypted": false,
-      "OwnerAccount": "111122223333",
-      "BackupProgressInMegabytes": 11.0,
-      "ElapsedTimeInSeconds": 0,
-      "DBName": "dev",
-      "CurrentBackupRateInMegabytesPerSecond: 0.1534,
-      "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
-      "ActualIncrementalBackupSizeInMegabytes"; 11.0,
-      "SnapshotType": "manual",
-      "NodeType": "dw.hs1.xlarge",
-      "ClusterIdentifier": "mycluster",
-      "TotalBackupSizeInMegabytes": 20.0,
-      "Port": 5439,
-      "NumberOfNodes": 2,
-      "SnapshotIdentifier": "my-snapshot-id"
-   }
+    "Snapshot": {
+        "Status": "available",
+        "SnapshotCreateTime": "2013-07-17T22:04:18.947Z",
+        "EstimatedSecondsToCompletion": 0,
+        "AvailabilityZone": "us-west-2a",
+        "ClusterVersion": "1.0",
+        "MasterUsername": "adminuser",
+        "Encrypted": false,
+        "OwnerAccount": "123456789012",
+        "BackupProgressInMegaBytes": 11.0,
+        "ElapsedTimeInSeconds": 0,
+        "DBName": "dev",
+        "CurrentBackupRateInMegaBytesPerSecond": 0.1534,
+        "ClusterCreateTime": "2013-01-22T21:59:29.559Z",
+        "ActualIncrementalBackupSizeInMegaBytes": 11.0,
+        "SnapshotType": "manual",
+        "NodeType": "dw.hs1.xlarge",
+        "ClusterIdentifier": "mycluster",
+        "TotalBackupSizeInMegaBytes": 20.0,
+        "Port": 5439,
+        "NumberOfNodes": 2,
+        "SnapshotIdentifier": "my-snapshot-id"
+    }
 }
 ```
+For more information, see [Amazon Redshift snapshots and backups](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-snapshots.html) in the *Amazon Redshift Cluster Management Guide*.
 +  For API details, see [RevokeSnapshotAccess](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/revoke-snapshot-access.html) in *AWS CLI Command Reference*.
 
 ### `rotate-encryption-key`

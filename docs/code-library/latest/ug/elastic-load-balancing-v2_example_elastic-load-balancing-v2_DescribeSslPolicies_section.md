@@ -91,7 +91,7 @@ Output:
     "ECDHE-RSA-AES256-SHA384"
 ]
 ```
-For more information, see [Security policies](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#describe-ssl-policies) in the *User Guide for Application Load Balancers*.
+For more information, see [Security policies for your Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html) in the *Application Load Balancers Guide*.
 +  For API details, see [DescribeSslPolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elbv2/describe-ssl-policies.html) in *AWS CLI Command Reference*.
 
 ------

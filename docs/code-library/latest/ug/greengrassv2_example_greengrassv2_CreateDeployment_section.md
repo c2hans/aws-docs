@@ -58,6 +58,7 @@ For more information, see [Create deployments](https://docs.aws.amazon.com/green
 **Example 2: To create a deployment that updates component configurations**
 The following `create-deployment` example deploys the AWS IoT Greengrass nucleus component to a group of core devices. This deployment applies the following configuration updates for the nucleus component:
 Reset the target devices' proxy settings to their default no proxy settings.Reset the target devices' MQTT settings to their defaults.Sets the JVM options for the nucleus' JVM.Sets the logging level for the nucleus.
+The following command deploys the component to the group of core devices.
 
 ```
 aws greengrassv2 create-deployment \

@@ -5,19 +5,21 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 # GetReservationCoverage
 <a name="API_GetReservationCoverage"></a>
 
-Retrieves the reservation coverage for your account, which you can use to see how much of your Amazon Elastic Compute Cloud, Amazon ElastiCache, Amazon Relational Database Service, or Amazon Redshift usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, cost categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:
+Retrieves the reservation coverage for your account, which you can use to see how much of your Amazon Elastic Compute Cloud, Amazon Relational Database Service, Amazon ElastiCache, Amazon MemoryDB, Amazon Redshift, Amazon Elasticsearch Service, or Amazon OpenSearch Service usage is covered by a reservation. An organization's management account can see the coverage of the associated member accounts. This supports dimensions, cost categories, and nested expressions. For any time period, you can filter data about reservation usage by the following dimensions:
 + AZ
 + CACHE\_ENGINE
 + DATABASE\_ENGINE
 + DEPLOYMENT\_OPTION
 + INSTANCE\_TYPE
++ INSTANCE\_TYPE\_FAMILY
 + LINKED\_ACCOUNT
-+ OPERATING\_SYSTEM
 + PLATFORM
 + REGION
 + SERVICE
 + TAG
 + TENANCY
+
+The dimensions that you can use depend on the service in the `SERVICE` filter. For details, see `Filter`.
 
 To determine valid values for a dimension, use the `GetDimensionValues` operation.
 
@@ -84,19 +86,22 @@ For information about the parameters that are common to all actions, see [Common
 The request accepts the following data in JSON format.
 
  ** [Filter](#API_GetReservationCoverage_RequestSyntax) **   <a name="awscostmanagement-GetReservationCoverage-request-Filter"></a>
-Filters utilization data by dimensions. You can filter by the following dimensions:
+Filters coverage data by dimensions. You can filter by the following dimensions:
 + AZ
 + CACHE\_ENGINE
 + DATABASE\_ENGINE
 + DEPLOYMENT\_OPTION
 + INSTANCE\_TYPE
++ INSTANCE\_TYPE\_FAMILY
 + LINKED\_ACCOUNT
-+ OPERATING\_SYSTEM
 + PLATFORM
 + REGION
 + SERVICE
+**Note**
+Supported values for `SERVICE` are Amazon Elastic Compute Cloud - Compute, Amazon Relational Database Service, Amazon ElastiCache, Amazon MemoryDB, Amazon Redshift, Amazon Elasticsearch Service, and Amazon OpenSearch Service. You can specify up to two `SERVICE` values.
 + TAG
 + TENANCY
+The dimensions that you can use depend on the service in the `SERVICE` filter. `CACHE_ENGINE` applies only to Amazon ElastiCache and Amazon MemoryDB. `DATABASE_ENGINE` and `DEPLOYMENT_OPTION` apply only to Amazon Relational Database Service. `INSTANCE_TYPE_FAMILY`, `PLATFORM`, and `TENANCY` apply only to Amazon Elastic Compute Cloud - Compute. If you specify two `SERVICE` values, use only dimensions that both services support.
  `GetReservationCoverage` uses the same [Expression](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Expression.html) object as the other operations, but only `AND` is supported among each dimension. You can nest only one level deep. If there are multiple values for a dimension, they are OR'd together.
 If you don't provide a `SERVICE` filter, Cost Explorer defaults to EC2.
 Cost category is also supported.
@@ -112,18 +117,12 @@ Valid Values: `DAILY | MONTHLY | HOURLY`
 Required: No
 
  ** [GroupBy](#API_GetReservationCoverage_RequestSyntax) **   <a name="awscostmanagement-GetReservationCoverage-request-GroupBy"></a>
-You can group the data by the following attributes:
-+ AZ
-+ CACHE\_ENGINE
-+ DATABASE\_ENGINE
-+ DEPLOYMENT\_OPTION
-+ INSTANCE\_TYPE
-+ INVOICING\_ENTITY
-+ LINKED\_ACCOUNT
-+ OPERATING\_SYSTEM
-+ PLATFORM
-+ REGION
-+ TENANCY
+You can group the data by the following attributes. The attributes that you can use depend on the service in the `SERVICE` filter. If you don't provide a `SERVICE` filter, Cost Explorer uses Amazon Elastic Compute Cloud - Compute.
++ Amazon Elastic Compute Cloud - Compute: `AZ`, `INSTANCE_TYPE`, `INSTANCE_TYPE_FAMILY`, `LINKED_ACCOUNT`, `PLATFORM`, `REGION`, and `TENANCY`
++ Amazon Relational Database Service: `AZ`, `DATABASE_ENGINE`, `DEPLOYMENT_OPTION`, `INSTANCE_TYPE`, `LINKED_ACCOUNT`, and `REGION`
++ Amazon ElastiCache and Amazon MemoryDB: `AZ`, `CACHE_ENGINE`, `INSTANCE_TYPE`, `LINKED_ACCOUNT`, and `REGION`
++ Amazon Redshift, Amazon Elasticsearch Service, and Amazon OpenSearch Service: `AZ`, `INSTANCE_TYPE`, `LINKED_ACCOUNT`, and `REGION`
+If you specify two `SERVICE` values, use only attributes that both services support. You can specify up to four attributes, and only the `DIMENSION` type is supported.
 Type: Array of [GroupDefinition](API_GroupDefinition.md) objects
 Required: No
 
@@ -135,7 +134,7 @@ Required: No
 
  ** [Metrics](#API_GetReservationCoverage_RequestSyntax) **   <a name="awscostmanagement-GetReservationCoverage-request-Metrics"></a>
 The measurement that you want your reservation coverage reported in.
-Valid values are `Hour`, `Unit`, and `Cost`. You can use multiple values in a request.
+Valid values are `Hour`, `Unit`, and `Cost`. You can use multiple values in a request. `Hour` returns `CoverageHours`, `Unit` returns `CoverageNormalizedUnits`, and `Cost` returns `CoverageCost`. `Unit` is supported only for Amazon Elastic Compute Cloud - Compute. If you don't specify `Metrics`, the response includes only `CoverageHours`.
 Type: Array of strings
 Length Constraints: Minimum length of 0. Maximum length of 1024.
 Pattern: `[\S\s]*`
@@ -316,7 +315,7 @@ X-Amz-Target: AWSInsightsIndexService.GetReservationCoverage
         "Values": [
           "t2.nano"
         ]
-      },
+      }},
       {"Dimensions": {
         "Key": "REGION",
         "Values": [
@@ -325,9 +324,12 @@ X-Amz-Target: AWSInsightsIndexService.GetReservationCoverage
       }}
     ]
   },
+  "Metrics":[
+    "Hour", "Unit"
+  ],
   "GroupBy":[
     {
-      "Type":"Dimension",
+      "Type":"DIMENSION",
       "Key":"REGION"
     }
   ]

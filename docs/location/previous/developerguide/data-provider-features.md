@@ -11,7 +11,7 @@ The following table provides a high-level overview of the features.
 
 | Data provider | Geographical coverage | Feature coverage | AWS Region |
 | --- | --- | --- | --- |
-| Esri | Global | Maps, Places, Routes | [All Regions](location-regions.md#available-regions) where Amazon Location is available. |
+| Esri | Global | Maps, Places, Routes | [Regions where Amazon Location is available](location-regions.md#available-regions), except the eusc-de-east-1 Region. |
 | Grab | [Southeast Asia](grab.md#grab-coverage-area) | Maps, Places, Routes | Asia Pacific (Singapore), ap-southeast-1, only. |
 | HERE | Global | Maps, Places, Routes | [All Regions](location-regions.md#available-regions) where Amazon Location is available. |
 | Open Data | Global | Maps | [All Regions](location-regions.md#available-regions) where Amazon Location is available. |

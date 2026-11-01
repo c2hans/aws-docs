@@ -23,22 +23,25 @@ When you enable PPv2, the client's source IP address becomes available in the fo
 ## SSH client compatibility with PROXY protocol v2
 <a name="nlb-sftp-client-compatibility"></a>
 
-After the TCP connection is established, both the client and the server send an SSH identification string as their first data. This string identifies their SSH protocol and software versions, for example `SSH-2.0-OpenSSH_10.3`. For more information, see the [SSH transport layer protocol (RFC 4253)](https://datatracker.ietf.org/doc/html/rfc4253#section-4.2). Some older SSH clients wait to receive the server's SSH identification string before they send their own. When PROXY protocol v2 is enabled on an NLB target group, the NLB doesn't deliver the server's identification string to the client until the client sends data. These clients connect and wait for the server's identification string, so they never send their own, and the connection stalls until it times out.
+After the TCP connection is established, both the client and the server send an SSH identification string as their first data. This string identifies their SSH protocol and software versions, for example `SSH-2.0-OpenSSH_10.3`. For more information, see [SSH transport layer protocol (RFC 4253)](https://datatracker.ietf.org/doc/html/rfc4253#section-4.2) on the IETF Datatracker website.
 
-SSH clients that wait to receive the server's SSH identification string before they send their own fail to complete the connection when PROXY protocol v2 is enabled. The following table lists common SSH clients and the minimum version of each that is known to be compatible with PROXY protocol v2. This list isn't comprehensive. If you use a client that isn't in this table, test its compatibility before you enable PROXY protocol v2.
+Some older SSH clients wait to receive the server's SSH identification string before they send their own. Clients that still support SSH protocol version 1 do this so that they can choose a protocol version based on the server's identification string. When PROXY protocol v2 is enabled on an NLB target group, the NLB doesn't deliver the server's identification string to the client until the client sends data. These clients connect and wait for the server's identification string, so they never send their own, and the connection stalls until it times out.
+
+The following table lists common SSH clients and the minimum version of each that is known to be compatible with PROXY protocol v2 in its default configuration. This list isn't comprehensive. An older version might also work if you configure it to use only SSH protocol version 2. If you use a client that isn't in this table, test its compatibility before you enable PROXY protocol v2.
 
 | Client | Minimum version |
 | --- | --- |
-| JSch | 0.1.28 |
-| OpenSSH | 6.2 |
-| Apache MINA SSHD | 2.3.0 |
 | WinSCP | 5.8.1 |
-| Rebex SSH | 2.0.4086 |
-| libssh2 | 1.2.2 |
-| Paramiko | 1.15.1 |
-| Maverick Legacy | 1.7.15 |
-| ssh2 (Node.js) | 0.0.23 |
-| SSHJ | 0.19.1 |
+| OpenSSH | 6.2 |
+| JSch | 0.1.34 |
+| Paramiko | All versions |
+| SSH.NET | 2020.0.0 |
+| FileZilla | 3.14.0 |
+| ssh2 (Node.js) | All versions |
+| Apache MINA SSHD | All versions |
+| libssh2 | 0.6 |
+| SSHJ | All versions |
+| Cyberduck | 2.2 |
 
 To find the SSH clients that connect to your server, enable structured logging for your server. The `client` field contains the client's identification string, for example `SSH-2.0-OpenSSH_10.3`. For more information, see [JSON structured logs for Transfer Family](cw-structure-logs.md#json-log-entries). If a client waits for the server's SSH identification string before sending its own, or doesn't appear in this table, ask those users to upgrade before you enable PROXY protocol v2 for your NLB.
 

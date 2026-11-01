@@ -14,11 +14,11 @@ The following code examples show how to use `DescribeScalingPolicies`.
 
 **AWS CLI**
 **To describe scaling policies**
-This example command describes the scaling policies for the ecs service namespace.
-Command:
+The following `describe-scaling-policies` example describes the scaling policies for the ecs service namespace.
 
 ```
-aws application-autoscaling describe-scaling-policies --service-namespace {{ecs}}
+aws application-autoscaling describe-scaling-policies \
+    --service-namespace {{ecs}}
 ```
 Output:
 
@@ -40,12 +40,12 @@ Output:
                 ],
                 "AdjustmentType": "PercentChangeInCapacity"
             },
-            "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy:6d8972f3-efc8-437c-92d1-6270f29a66e7:resource/ecs/service/default/web-app:policyName/web-app-cpu-gt-75",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/ecs/service/default/web-app:policyName/web-app-cpu-gt-75",
             "PolicyType": "StepScaling",
             "Alarms": [
                 {
                     "AlarmName": "web-app-cpu-gt-75",
-                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:web-app-cpu-gt-75"
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:web-app-cpu-gt-75"
                 }
             ],
             "ServiceNamespace": "ecs"
@@ -65,12 +65,12 @@ Output:
                 ],
                 "AdjustmentType": "PercentChangeInCapacity"
             },
-            "PolicyARN": "arn:aws:autoscaling:us-west-2:012345678910:scalingPolicy:6d8972f3-efc8-437c-92d1-6270f29a66e7:resource/ecs/service/default/web-app:policyName/web-app-cpu-lt-25",
+            "PolicyARN": "arn:aws:autoscaling:us-west-2:123456789012:scalingPolicy:a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:resource/ecs/service/default/web-app:policyName/web-app-cpu-lt-25",
             "PolicyType": "StepScaling",
             "Alarms": [
                 {
                     "AlarmName": "web-app-cpu-lt-25",
-                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:012345678910:alarm:web-app-cpu-lt-25"
+                    "AlarmARN": "arn:aws:cloudwatch:us-west-2:123456789012:alarm:web-app-cpu-lt-25"
                 }
             ],
             "ServiceNamespace": "ecs"
@@ -78,6 +78,7 @@ Output:
     ]
 }
 ```
+For more information, see [Describe step scaling policies for Application Auto Scaling using the AWS CLI](https://docs.aws.amazon.com/autoscaling/application/userguide/describe-step-scaling-policy.html) in the *Application Auto Scaling User Guide*.
 +  For API details, see [DescribeScalingPolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/application-autoscaling/describe-scaling-policies.html) in *AWS CLI Command Reference*.
 
 ------

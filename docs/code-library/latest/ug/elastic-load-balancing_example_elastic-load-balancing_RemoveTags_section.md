@@ -14,12 +14,15 @@ The following code examples show how to use `RemoveTags`.
 
 **AWS CLI**
 **To remove tags from a load balancer**
-This example removes a tag from the specified load balancer.
-Command:
+The following `remove-tags` example removes a tag from the specified load balancer.
 
 ```
-aws elb remove-tags --load-balancer-name {{my-load-balancer}} --tags {{project}}
+aws elb remove-tags \
+    --load-balancer-name {{my-load-balancer}} \
+    --tags {{project}}
 ```
+This command produces no output.
+For more information, see [Tag your Classic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/add-remove-tags.html) in the *Classic Load Balancers Guide*.
 +  For API details, see [RemoveTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/elb/remove-tags.html) in *AWS CLI Command Reference*.
 
 ------

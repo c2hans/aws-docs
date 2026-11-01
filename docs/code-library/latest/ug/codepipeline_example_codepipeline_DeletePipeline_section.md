@@ -14,17 +14,14 @@ The following code examples show how to use `DeletePipeline`.
 
 **AWS CLI**
 **To delete a pipeline**
-This example deletes a pipeline named MySecondPipeline from AWS CodePipeline. Use the list-pipelines command to view a list of pipelines associated with your AWS account.
-Command:
+The following `delete-pipeline` example deletes a pipeline named MySecondPipeline from AWS CodePipeline. Use the list-pipelines command to view a list of pipelines associated with your AWS account.
 
 ```
-aws codepipeline delete-pipeline --name {{MySecondPipeline}}
+aws codepipeline delete-pipeline \
+    --name {{MySecondPipeline}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Delete a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-delete.html) in the *AWS CodePipeline User Guide*.
 +  For API details, see [DeletePipeline](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codepipeline/delete-pipeline.html) in *AWS CLI Command Reference*.
 
 ------

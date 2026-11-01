@@ -30,20 +30,21 @@ The following `put-logging-configuration` example displays logging configuration
 
 ```
 aws waf put-logging-configuration \
-    --logging-configuration {{ResourceArn=arn:aws:waf::123456789012:webacl/3bffd3ed-fa2e-445e-869f-a6a7cf153fd3,LogDestinationConfigs=arn:aws:firehose:us-east-1:123456789012:deliverystream/aws-waf-logs-firehose-stream,RedactedFields=[]}}
+    --logging-configuration {{ResourceArn=arn:aws:waf::123456789012:webacl/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111,LogDestinationConfigs=arn:aws:firehose:us-east-1:123456789012:deliverystream/aws-waf-logs-firehose-stream,RedactedFields=[]}}
 ```
 Output:
 
 ```
 {
     "LoggingConfiguration": {
-        "ResourceArn": "arn:aws:waf::123456789012:webacl/3bffd3ed-fa2e-445e-869f-a6a7cf153fd3",
+        "ResourceArn": "arn:aws:waf::123456789012:webacl/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "LogDestinationConfigs": [
             "arn:aws:firehose:us-east-1:123456789012:deliverystream/aws-waf-logs-firehose-stream"
         ]
     }
 }
 ```
+For more information, see [Logging Web ACL traffic information](https://docs.aws.amazon.com/waf/latest/developerguide/classic-logging.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [PutLoggingConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/put-logging-configuration.html) in *AWS CLI Command Reference*.
 
 ### `update-byte-match-set`
@@ -53,12 +54,23 @@ The following code example shows how to use `update-byte-match-set`.
 
 **AWS CLI**
 **To update a byte match set**
-The following `update-byte-match-set` command deletes a ByteMatchTuple object (filter) in a ByteMatchSet:
+The following `update-byte-match-set` example deletes a ByteMatchTuple object (filter) in a ByteMatchSet.
 
 ```
-aws waf update-byte-match-set --cli-binary-format {{raw-in-base64-out}} --byte-match-set-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} --updates Action="DELETE",ByteMatchTuple={FieldToMatch={Type="HEADER",Data="referer"},TargetString="badrefer1",TextTransformation="NONE",PositionalConstraint="CONTAINS"}
+aws waf update-byte-match-set \
+    --cli-binary-format {{raw-in-base64-out}} \
+    --byte-match-set-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="DELETE",ByteMatchTuple={FieldToMatch={Type="HEADER",Data="referer"},TargetString="badrefer1",TextTransformation="NONE",PositionalConstraint="CONTAINS"}
 ```
-For more information, see Working with String Match Conditions in the *AWS WAF* developer guide.
+Output:
+
+```
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
+```
+For more information, see [Working with string match conditions](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-string-conditions.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [UpdateByteMatchSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/update-byte-match-set.html) in *AWS CLI Command Reference*.
 
 ### `update-ip-set`
@@ -68,39 +80,57 @@ The following code example shows how to use `update-ip-set`.
 
 **AWS CLI**
 **To update an IP set**
-The following `update-ip-set` command updates an IPSet with an IPv4 address and deletes an IPv6 address:
+The following `update-ip-set` example updates an IPSet with an IPv4 address and deletes an IPv6 address.
 
 ```
-aws waf update-ip-set --ip-set-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} --updates Action="INSERT",IPSetDescriptor={Type="IPV4",Value="12.34.56.78/16"},Action="DELETE",IPSetDescriptor={Type="IPV6",Value="1111:0000:0000:0000:0000:0000:0000:0111/128"}
+aws waf update-ip-set \
+    --ip-set-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="INSERT",IPSetDescriptor={Type="IPV4",Value="12.34.56.78/16"},Action="DELETE",IPSetDescriptor={Type="IPV6",Value="1111:0000:0000:0000:0000:0000:0000:0111/128"}
 ```
-Alternatively you can use a JSON file to specify the input. For example:
+Output:
 
 ```
-aws waf update-ip-set --ip-set-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}}  --updates {{file://change.json}}
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
 ```
-Where content of the JSON file is:
+Alternatively, you can use a JSON file to specify the input, as shown in the following example.
+
+```
+aws waf update-ip-set \
+    --ip-set-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates {{file://change.json}}
+```
+Contents of `change.json`:
 
 ```
 [
-{
-"Action": "INSERT",
-"IPSetDescriptor":
-{
-"Type": "IPV4",
-"Value": "12.34.56.78/16"
-}
-},
-{
-"Action": "DELETE",
-"IPSetDescriptor":
-{
-"Type": "IPV6",
-"Value": "1111:0000:0000:0000:0000:0000:0000:0111/128"
-}
-}
+    {
+        "Action": "INSERT",
+        "IPSetDescriptor": {
+            "Type": "IPV4",
+            "Value": "12.34.56.78/16"
+        }
+    },
+    {
+        "Action": "DELETE",
+        "IPSetDescriptor": {
+            "Type": "IPV6",
+            "Value": "1111:0000:0000:0000:0000:0000:0000:0111/128"
+        }
+    }
 ]
 ```
-For more information, see Working with IP Match Conditions in the *AWS WAF* developer guide.
+Output:
+
+```
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
+```
+For more information, see [Working with IP match conditions](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-ip-conditions.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [UpdateIpSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/update-ip-set.html) in *AWS CLI Command Reference*.
 
 ### `update-rule`
@@ -110,12 +140,22 @@ The following code example shows how to use `update-rule`.
 
 **AWS CLI**
 **To update a rule**
-The following `update-rule` command deletes a Predicate object in a rule:
+The following `update-rule` example deletes a Predicate object in a rule.
 
 ```
-aws waf update-rule --rule-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} --updates Action="DELETE",Predicate={Negated=false,Type="ByteMatch",DataId="MyByteMatchSetID"}
+aws waf update-rule \
+    --rule-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="DELETE",Predicate={Negated=false,Type="ByteMatch",DataId="MyByteMatchSetID"}
 ```
-For more information, see Working with Rules in the *AWS WAF* developer guide.
+Output:
+
+```
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
+```
+For more information, see [Working with rules](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-rules.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [UpdateRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/update-rule.html) in *AWS CLI Command Reference*.
 
 ### `update-size-constraint-set`
@@ -125,12 +165,22 @@ The following code example shows how to use `update-size-constraint-set`.
 
 **AWS CLI**
 **To update a size constraint set**
-The following `update-size-constraint-set` command deletes a SizeConstraint object (filters) in a size constraint set:
+The following `update-size-constraint-set` example deletes a SizeConstraint object (filters) in a size constraint set.
 
 ```
-aws waf update-size-constraint-set --size-constraint-set-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} --updates Action="DELETE",SizeConstraint={FieldToMatch={Type="QUERY_STRING"},TextTransformation="NONE",ComparisonOperator="GT",Size=0}
+aws waf update-size-constraint-set \
+    --size-constraint-set-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="DELETE",SizeConstraint={FieldToMatch={Type="QUERY_STRING"},TextTransformation="NONE",ComparisonOperator="GT",Size=0}
 ```
-For more information, see Working with Size Constraint Conditions in the *AWS WAF* developer guide.
+Output:
+
+```
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
+```
+For more information, see [Working with size constraint conditions](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-size-conditions.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [UpdateSizeConstraintSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/update-size-constraint-set.html) in *AWS CLI Command Reference*.
 
 ### `update-sql-injection-match-set`
@@ -140,12 +190,22 @@ The following code example shows how to use `update-sql-injection-match-set`.
 
 **AWS CLI**
 **To update a SQL Injection Match Set**
-The following `update-sql-injection-match-set` command deletes a SqlInjectionMatchTuple object (filters) in a SQL injection match set:
+The following `update-sql-injection-match-set` example deletes a SqlInjectionMatchTuple object (filters) in a SQL injection match set.
 
 ```
-aws waf update-sql-injection-match-set --sql-injection-match-set-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} --updates Action="DELETE",SqlInjectionMatchTuple={FieldToMatch={Type="QUERY_STRING"},TextTransformation="URL_DECODE"}
+aws waf update-sql-injection-match-set \
+    --sql-injection-match-set-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="DELETE",SqlInjectionMatchTuple={FieldToMatch={Type="QUERY_STRING"},TextTransformation="URL_DECODE"}
 ```
-For more information, see Working with SQL Injection Match Conditions in the *AWS WAF* developer guide.
+Output:
+
+```
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
+```
+For more information, see [Working with SQL injection match conditions](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-sql-conditions.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [UpdateSqlInjectionMatchSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/update-sql-injection-match-set.html) in *AWS CLI Command Reference*.
 
 ### `update-web-acl`
@@ -155,8 +215,14 @@ The following code example shows how to use `update-web-acl`.
 
 **AWS CLI**
 **To update a web ACL**
-The following `update-web-acl` command deletes an `ActivatedRule` object in a WebACL.
-aws waf update-web-acl --web-acl-id a123fae4-b567-8e90-1234-5ab67ac8ca90 --change-token 12cs345-67cd-890b-1cd2-c3a4567d89f1 --updates Action="DELETE",ActivatedRule='{Priority=1,RuleId="WAFRule-1-Example",Action={Type="ALLOW"},Type="REGULAR"}'
+The following `update-web-acl` example deletes an `ActivatedRule` object in a WebACL.
+
+```
+aws waf update-web-acl \
+    --web-acl-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="DELETE",ActivatedRule='{Priority=1,RuleId="WAFRule-1-Example",Action={Type="ALLOW"},Type="REGULAR"}'
+```
 Output:
 
 ```
@@ -174,10 +240,20 @@ The following code example shows how to use `update-xss-match-set`.
 
 **AWS CLI**
 **To update an XSSMatchSet**
-The following `update-xss-match-set` command deletes an XssMatchTuple object (filters) in an XssMatchSet:
+The following `update-xss-match-set` example deletes an XssMatchTuple object (filters) in an XssMatchSet.
 
 ```
-aws waf update-xss-match-set --xss-match-set-id {{a123fae4-b567-8e90-1234-5ab67ac8ca90}} --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} --updates Action="DELETE",XssMatchTuple={FieldToMatch={Type="QUERY_STRING"},TextTransformation="URL_DECODE"}
+aws waf update-xss-match-set \
+    --xss-match-set-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --change-token {{12cs345-67cd-890b-1cd2-c3a4567d89f1}} \
+    --updates Action="DELETE",XssMatchTuple={FieldToMatch={Type="QUERY_STRING"},TextTransformation="URL_DECODE"}
 ```
-For more information, see Working with Cross-site Scripting Match Conditions in the *AWS WAF* developer guide.
+Output:
+
+```
+{
+    "ChangeToken": "12cs345-67cd-890b-1cd2-c3a4567d89f1"
+}
+```
+For more information, see [Working with cross-site scripting match conditions](https://docs.aws.amazon.com/waf/latest/developerguide/classic-web-acl-xss-conditions.html) in the *AWS WAF, AWS Firewall Manager, and AWS Shield Advanced Developer Guide*.
 +  For API details, see [UpdateXssMatchSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/waf/update-xss-match-set.html) in *AWS CLI Command Reference*.

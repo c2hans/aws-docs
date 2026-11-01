@@ -22,7 +22,7 @@ The following `describe-jobs` example describes a job with the specified job ID.
 
 ```
 aws batch describe-jobs \
-    --jobs {{bcf0b186-a532-4122-842e-2ccab8d54efb}}
+    --jobs {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -45,9 +45,9 @@ Output:
                 "ulimits": []
             },
             "parameters": {},
-            "jobDefinition": "arn:aws:batch:us-east-1:012345678910:job-definition/sleep60:1",
-            "jobQueue": "arn:aws:batch:us-east-1:012345678910:job-queue/HighPriority",
-            "jobId": "bcf0b186-a532-4122-842e-2ccab8d54efb",
+            "jobDefinition": "arn:aws:batch:us-west-2:123456789012:job-definition/sleep60:1",
+            "jobQueue": "arn:aws:batch:us-west-2:123456789012:job-queue/HighPriority",
+            "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "dependsOn": [],
             "jobName": "example",
             "createdAt": 1480483387803
@@ -55,6 +55,7 @@ Output:
     ]
 }
 ```
+For more information, see [Jobs](https://docs.aws.amazon.com/batch/latest/userguide/jobs.html) in the *AWS Batch User Guide*.
 +  For API details, see [DescribeJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/describe-jobs.html) in *AWS CLI Command Reference*.
 
 ------

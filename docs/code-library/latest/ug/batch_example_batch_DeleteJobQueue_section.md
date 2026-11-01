@@ -18,12 +18,14 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To delete a job queue**
-This example deletes the GPGPU job queue.
-Command:
+The following `delete-job-queue` example deletes the GPGPU job queue.
 
 ```
-aws batch delete-job-queue --job-queue {{GPGPU}}
+aws batch delete-job-queue \
+    --job-queue {{GPGPU}}
 ```
+This command produces no output.
+For more information, see [Delete a job queue in AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/delete-job-queue.html) in the *AWS Batch User Guide*.
 +  For API details, see [DeleteJobQueue](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/delete-job-queue.html) in *AWS CLI Command Reference*.
 
 ------

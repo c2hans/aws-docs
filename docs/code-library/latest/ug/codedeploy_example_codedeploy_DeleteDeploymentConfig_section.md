@@ -17,9 +17,11 @@ The following code examples show how to use `DeleteDeploymentConfig`.
 The following `delete-deployment-config` example deletes a custom deployment configuration that is associated with the user's AWS account.
 
 ```
-aws deploy delete-deployment-config --deployment-config-name {{ThreeQuartersHealthy}}
+aws deploy delete-deployment-config \
+    --deployment-config-name {{ThreeQuartersHealthy}}
 ```
 This command produces no output.
+For more information, see [Delete a deployment configuration with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations-delete.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [DeleteDeploymentConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/delete-deployment-config.html) in *AWS CLI Command Reference*.
 
 ------

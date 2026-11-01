@@ -247,6 +247,7 @@ Ubuntu
 | Alpine Linux | 3.24 |
 | Amazon Linux 2023 (AL2023) | AL2023 |
 | Azure Linux | 3 |
+| Azure Linux | 4 |
 | Bottlerocket | – |
 | BusyBox | 1.36.0\+ |
 | Chainguard | – |

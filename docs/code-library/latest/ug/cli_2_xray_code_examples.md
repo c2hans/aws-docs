@@ -19,10 +19,10 @@ Each example includes a link to the complete source code, where you can find ins
 ## Actions
 <a name="actions"></a>
 
-### `batch-traces-get`
-<a name="xray_BatchTracesGet_cli_2_topic"></a>
+### `batch-get-traces`
+<a name="xray_BatchGetTraces_cli_2_topic"></a>
 
-The following code example shows how to use `batch-traces-get`.
+The following code example shows how to use `batch-get-traces`.
 
 **AWS CLI**
 **To get a list of traces**
@@ -43,7 +43,7 @@ Output:
             "Segments": [
                 {
                     "Id": "54aff5735b12dd28",
-                    "Document": "{\"id\":\"54aff5735b12dd28\",\"name\":\"Scorekeep\",\"start_time\":1.568835610432E9,\"end_time\":1.568835610664E9,\"http\":{\"request\":{\"url\":\"http://scorekeep-env-1.m4fg2pfzpv.us-east-2.elasticbeanstalk.com/api/user\",\"method\":\"POST\",\"user_agent\":\"curl/7.59.0\",\"client_ip\":\"52.95.4.28\",\"x_forwarded_for\":true},\"response\":{\"status\":200}},\"aws\":{\"elastic_beanstalk\":{\"version_label\":\"Sample Application-1\",\"deployment_id\":3,\"environment_name\":\"Scorekeep-env-1\"},\"ec2\":{\"availability_zone\":\"us-east-2b\",\"instance_id\":\"i-0e3cf4d2de0f3f37a\"},\"xray\":{\"sdk_version\":\"1.1.0\",\"sdk\":\"X-Ray for Java\"}},\"service\":{\"runtime\":\"OpenJDK 64-Bit Server VM\",\"runtime_version\":\"1.8.0_222\"},\"trace_id\":\"1-5d82881a-0a9126e92a73e971eed891b9\",\"origin\":\"AWS::ElasticBeanstalk::Environment\",\"subsegments\":[{\"id\":\"2d6900034ccfe558\",\"name\":\"DynamoDB\",\"start_time\":1.568835610658E9,\"end_time\":1.568835610664E9,\"http\":{\"response\":{\"status\":200,\"content_length\":61}},\"aws\":{\"table_name\":\"scorekeep-user\",\"operation\":\"UpdateItem\",\"request_id\":\"TPEIDNDUROMLPOV17U4A79555NVV4KQNSO5AEMVJF66Q9ASUAAJG\",\"resource_names\":[\"scorekeep-user\"]},\"namespace\":\"aws\"}]}"
+                    "Document": "{\"id\":\"54aff5735b12dd28\",\"name\":\"Scorekeep\",\"start_time\":1.568835610432E9,\"end_time\":1.568835610664E9,\"http\":{\"request\":{\"url\":\"http://scorekeep-env-1.m4fg2pfzpv.us-west-2.elasticbeanstalk.com/api/user\",\"method\":\"POST\",\"user_agent\":\"curl/7.59.0\",\"client_ip\":\"52.95.4.28\",\"x_forwarded_for\":true},\"response\":{\"status\":200}},\"aws\":{\"elastic_beanstalk\":{\"version_label\":\"Sample Application-1\",\"deployment_id\":3,\"environment_name\":\"Scorekeep-env-1\"},\"ec2\":{\"availability_zone\":\"us-west-2b\",\"instance_id\":\"i-0e3cf4d2de0f3f37a\"},\"xray\":{\"sdk_version\":\"1.1.0\",\"sdk\":\"X-Ray for Java\"}},\"service\":{\"runtime\":\"OpenJDK 64-Bit Server VM\",\"runtime_version\":\"1.8.0_222\"},\"trace_id\":\"1-5d82881a-0a9126e92a73e971eed891b9\",\"origin\":\"AWS::ElasticBeanstalk::Environment\",\"subsegments\":[{\"id\":\"2d6900034ccfe558\",\"name\":\"DynamoDB\",\"start_time\":1.568835610658E9,\"end_time\":1.568835610664E9,\"http\":{\"response\":{\"status\":200,\"content_length\":61}},\"aws\":{\"table_name\":\"scorekeep-user\",\"operation\":\"UpdateItem\",\"request_id\":\"TPEIDNDUROMLPOV17U4A79555NVV4KQNSO5AEMVJF66Q9ASUAAJG\",\"resource_names\":[\"scorekeep-user\"]},\"namespace\":\"aws\"}]}"
                 },
                 {
                     "Id": "0f278b6334c34e6b",
@@ -56,7 +56,7 @@ Output:
 }
 ```
 For more information, see [Using the AWS X-Ray API with the AWS CLI](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-tutorial.html) in the *AWS X-Ray Developer Guide*.
-+  For API details, see [BatchTracesGet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/xray/batch-traces-get.html) in *AWS CLI Command Reference*.
++  For API details, see [BatchGetTraces](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/xray/batch-get-traces.html) in *AWS CLI Command Reference*.
 
 ### `create-group`
 <a name="xray_CreateGroup_cli_2_topic"></a>
@@ -69,16 +69,18 @@ The following `create-group` example creates a group resource named `AdminGroup`
 
 ```
 aws xray create-group \
-   --group-name {{"AdminGroup"}} \
-   --filter-expression "service(\"mydomain.com\") {fault OR error}"
+    --group-name {{"AdminGroup"}} \
+    --filter-expression "service(\"mydomain.com\") {fault OR error}"
 ```
 Output:
 
 ```
 {
-    "GroupName": "AdminGroup",
-    "GroupARN": "arn:aws:xray:us-west-2:123456789012:group/AdminGroup/123456789",
-    "FilterExpression": "service(\"mydomain.com\") {fault OR error}"
+    "Group": {
+        "GroupName": "AdminGroup",
+        "GroupARN": "arn:aws:xray:us-west-2:123456789012:group/AdminGroup/123456789",
+        "FilterExpression": "service(\"mydomain.com\") {fault OR error}"
+    }
 }
 ```
 For more information, see [Configuring Sampling, Groups, and Encryption Settings with the AWS X-Ray API](https://docs.aws.amazon.com/en_pv/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-sampling) in the *AWS X-Ray Developer Guide*.
@@ -156,7 +158,7 @@ The following `delete-group` example deletes the specified group resource.
 ```
 aws xray delete-group \
     --group-name {{"AdminGroup"}} \
-    --group-arn {{"arn:aws:xray:us-east-2:123456789012:group/AdminGroup/123456789"}}
+    --group-arn {{"arn:aws:xray:us-west-2:123456789012:group/AdminGroup/123456789"}}
 ```
 This command produces no output.
 For more information, see [Configuring Sampling, Groups, and Encryption Settings with the AWS X-Ray API](https://docs.aws.amazon.com/en_pv/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-sampling) in the *AWS X-Ray Developer Guide*.
@@ -246,13 +248,11 @@ Output:
 
 ```
 {
-    "Group": [
-        {
-            "GroupName": "AdminGroup",
-            "GroupARN": "arn:aws:xray:us-west-2:123456789012:group/AdminGroup/123456789",
-            "FilterExpression": "service(\"mydomain.com\") {fault OR error}"
-        }
-    ]
+    "Group": {
+        "GroupName": "AdminGroup",
+        "GroupARN": "arn:aws:xray:us-west-2:123456789012:group/AdminGroup/123456789",
+        "FilterExpression": "service(\"mydomain.com\") {fault OR error}"
+    }
 }
 ```
 For more information, see [Configuring Sampling, Groups, and Encryption Settings with the AWS X-Ray API](https://docs.aws.amazon.com/en_pv/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-sampling) in the *AWS X-Ray Developer Guide*.
@@ -265,7 +265,7 @@ The following code example shows how to use `get-groups`.
 
 **AWS CLI**
 **To retrieve all groups**
-The following example displays details for all active group.
+The following `get-groups` example displays details for all active groups.
 
 ```
 aws xray get-groups
@@ -298,7 +298,7 @@ The following code example shows how to use `get-sampling-rules`.
 
 **AWS CLI**
 **To retrieve all sampling rules**
-The following `get-sampling-rules` example displays details for all available sampling rules.:
+The following `get-sampling-rules` example displays details for all available sampling rules.
 
 ```
 aws xray get-sampling-rules
@@ -311,7 +311,7 @@ Output:
         {
             "SamplingRule": {
                 "RuleName": "Default",
-                "RuleARN": "arn:aws:xray:us-east-1::sampling-rule/Default",
+                "RuleARN": "arn:aws:xray:us-west-2::sampling-rule/Default",
                 "ResourceARN": "*",
                 "Priority": 10000,
                 "FixedRate": 0.01,
@@ -330,7 +330,7 @@ Output:
         {
             "SamplingRule": {
                 "RuleName": "base-scorekeep",
-                "RuleARN": "arn:aws:xray:us-east-1::sampling-rule/base-scorekeep",
+                "RuleARN": "arn:aws:xray:us-west-2::sampling-rule/base-scorekeep",
                 "ResourceARN": "*",
                 "Priority": 9000,
                 "FixedRate": 0.1,
@@ -349,7 +349,7 @@ Output:
         {
             "SamplingRule": {
                 "RuleName": "polling-scorekeep",
-                "RuleARN": "arn:aws:xray:us-east-1::sampling-rule/polling-scorekeep",
+                "RuleARN": "arn:aws:xray:us-west-2::sampling-rule/polling-scorekeep",
                 "ResourceARN": "*",
                 "Priority": 5000,
                 "FixedRate": 0.003,
@@ -418,11 +418,11 @@ The following code example shows how to use `get-service-graph`.
 
 **AWS CLI**
 **To get a service graph**
-The following example displays a document within a specified time period that describes services processing incoming requests, and the downstream services that they call as a result.:
+The following `get-service-graph` example displays a document within a specified time period that describes services processing incoming requests, and the downstream services that they call as a result.
 
 ```
 aws xray get-service-graph \
-    --start-time {{1568835392.0}}
+    --start-time {{1568835392.0}} \
     --end-time {{1568835446.0}}
 ```
 Output:
@@ -491,10 +491,7 @@ Output:
                         }
                     ],
                     "Aliases": []
-                },
-
-                ... TRUNCATED FOR BREVITY ...
-
+                }
             ]
         }
     ],
@@ -523,12 +520,30 @@ aws xray get-trace-summaries \
 Output:
 
 ```
-[
-    "http://scorekeep-env-1.123456789.us-east-2.elasticbeanstalk.com/api/move/VSAE93HF/GSSD2NTB/DP0PCC09",
-    "http://scorekeep-env-1.123456789.us-east-2.elasticbeanstalk.com/api/move/GCQ2B35P/FREELDFT/4LRE643M",
-    "http://scorekeep-env-1.123456789.us-east-2.elasticbeanstalk.com/api/game/VSAE93HF/GSSD2NTB/starttime/1568835513",
-    "http://scorekeep-env-1.123456789.us-east-2.elasticbeanstalk.com/api/move/4MQNA5NN/L99KK2RF/null"
-]
+{
+    "TraceSummaries": [
+        {
+            "Http": {
+                "HttpURL": "http://scorekeep-env-1.123456789.us-west-2.elasticbeanstalk.com/api/move/VSAE93HF/GSSD2NTB/DP0PCC09"
+            }
+        },
+        {
+            "Http": {
+                "HttpURL": "http://scorekeep-env-1.123456789.us-west-2.elasticbeanstalk.com/api/move/GCQ2B35P/FREELDFT/4LRE643M"
+            }
+        },
+        {
+            "Http": {
+                "HttpURL": "http://scorekeep-env-1.123456789.us-west-2.elasticbeanstalk.com/api/game/VSAE93HF/GSSD2NTB/starttime/1568835513"
+            }
+        },
+        {
+            "Http": {
+                "HttpURL": "http://scorekeep-env-1.123456789.us-west-2.elasticbeanstalk.com/api/move/4MQNA5NN/L99KK2RF/null"
+            }
+        }
+    ]
+}
 ```
 For more information, see [Using the AWS X-Ray API with the AWS CLI](https://docs.aws.amazon.com/xray/latest/devguide/xray-api-tutorial.html) in the *AWS X-Ray Developer Guide*.
 +  For API details, see [GetTraceSummaries](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/xray/get-trace-summaries.html) in *AWS CLI Command Reference*.
@@ -540,7 +555,7 @@ The following code example shows how to use `put-encryption-config`.
 
 **AWS CLI**
 **To update the encryption configuration**
-The following `put-encryption-config``example updates the encryption configuration for AWS X-Ray data to use the default AWS managed KMS key ``aws/xray`.
+The following `put-encryption-config` example updates the encryption configuration for AWS X-Ray data to use the default AWS managed KMS key `aws/xray`.
 
 ```
 aws xray put-encryption-config \
@@ -552,7 +567,7 @@ Output:
 ```
 {
     "EncryptionConfig": {
-        "KeyId": "arn:aws:kms:us-west-2:123456789012:key/c234g4e8-39e9-4gb0-84e2-b0ea215cbba5",
+        "KeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Status": "UPDATING",
         "Type": "KMS"
     }
@@ -603,9 +618,11 @@ Output:
 
 ```
 {
-    "GroupName": "AdminGroup",
-    "GroupARN": "arn:aws:xray:us-east-2:123456789012:group/AdminGroup/123456789",
-    "FilterExpression": "service(\"mydomain.com\") {fault}"
+    "Group": {
+        "GroupName": "AdminGroup",
+        "GroupARN": "arn:aws:xray:us-west-2:123456789012:group/AdminGroup/123456789",
+        "FilterExpression": "service(\"mydomain.com\") {fault}"
+    }
 }
 ```
 For more information, see [Configuring Sampling, Groups, and Encryption Settings with the AWS X-Ray API](https://docs.aws.amazon.com/en_pv/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-sampling) in the *AWS X-Ray Developer Guide*.
@@ -622,7 +639,7 @@ The following `update-sampling-rule` example modifies a sampling rule's configur
 
 ```
 aws xray update-sampling-rule \
-   --cli-input-json {{file://1000-default.json}}
+    --cli-input-json {{file://1000-default.json}}
 ```
 Contents of `1000-default.json`:
 
@@ -639,27 +656,25 @@ Output:
 
 ```
 {
-    "SamplingRuleRecords": [
-        {
-            "SamplingRule": {
-                "RuleName": "Default",
-                "RuleARN": "arn:aws:xray:us-west-2:123456789012:sampling-rule/Default",
-                "ResourceARN": "*",
-                "Priority": 10000,
-                "FixedRate": 0.01,
-                "ReservoirSize": 0,
-                "ServiceName": "*",
-                "ServiceType": "*",
-                "Host": "*",
-                "HTTPMethod": "*",
-                "URLPath": "*",
-                "Version": 1,
-                "Attributes": {}
-            },
-            "CreatedAt": 0.0,
-            "ModifiedAt": 1529959993.0
-        }
-   ]
+    "SamplingRuleRecord": {
+        "SamplingRule": {
+            "RuleName": "Default",
+            "RuleARN": "arn:aws:xray:us-west-2:123456789012:sampling-rule/Default",
+            "ResourceARN": "*",
+            "Priority": 10000,
+            "FixedRate": 0.01,
+            "ReservoirSize": 0,
+            "ServiceName": "*",
+            "ServiceType": "*",
+            "Host": "*",
+            "HTTPMethod": "*",
+            "URLPath": "*",
+            "Version": 1,
+            "Attributes": {}
+        },
+        "CreatedAt": 0.0,
+        "ModifiedAt": 1529959993.0
+    }
 }
 ```
 For more information, see [Configuring Sampling, Groups, and Encryption Settings with the AWS X-Ray API](https://docs.aws.amazon.com/en_pv/xray/latest/devguide/xray-api-configuration.html#xray-api-configuration-sampling) in the *AWS X-Ray Developer Guide*.

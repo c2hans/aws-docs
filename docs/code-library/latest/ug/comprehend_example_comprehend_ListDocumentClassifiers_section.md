@@ -28,7 +28,7 @@ Output:
 {
     "DocumentClassifierPropertiesList": [
         {
-            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier1",
+            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier1",
             "LanguageCode": "en",
             "Status": "TRAINED",
             "SubmitTime": "2023-06-13T19:04:15.735000+00:00",
@@ -55,11 +55,11 @@ Output:
                     "HammingLoss": 0.0144
                 }
             },
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-testorle",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-testorle",
             "Mode": "MULTI_CLASS"
         },
         {
-            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/exampleclassifier2",
+            "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:123456789012:document-classifier/exampleclassifier2",
             "LanguageCode": "en",
             "Status": "TRAINING",
             "SubmitTime": "2023-06-13T21:20:28.690000+00:00",
@@ -68,7 +68,7 @@ Output:
                 "S3Uri": "s3://amzn-s3-demo-bucket/trainingdata"
             },
             "OutputDataConfig": {},
-            "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-testorle",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/service-role/AmazonComprehendServiceRole-testorle",
             "Mode": "MULTI_CLASS"
         }
     ]

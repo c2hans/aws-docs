@@ -13,12 +13,12 @@ The following code examples show how to use `ListJobs`.
 #### [ CLI ]
 
 **AWS CLI**
-**To list running jobs**
-This example lists the running jobs in the HighPriority job queue.
-Command:
+**Example 1: To list running jobs**
+The following `list-jobs` example lists the running jobs in the HighPriority job queue.
 
 ```
-aws batch list-jobs --job-queue {{HighPriority}}
+aws batch list-jobs \
+    --job-queue {{HighPriority}}
 ```
 Output:
 
@@ -27,17 +27,19 @@ Output:
     "jobSummaryList": [
         {
             "jobName": "example",
-            "jobId": "e66ff5fd-a1ff-4640-b1a2-0b0a142f49bb"
+            "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
     ]
 }
 ```
-**To list submitted jobs**
-This example lists jobs in the HighPriority job queue that are in the SUBMITTED job status.
-Command:
+For more information, see [Job states](https://docs.aws.amazon.com/batch/latest/userguide/job_states.html) in the *AWS Batch User Guide*.
+**Example 2: To list submitted jobs**
+The following `list-jobs` example lists jobs in the HighPriority job queue that are in the SUBMITTED job status.
 
 ```
-aws batch list-jobs --job-queue {{HighPriority}} --job-status {{SUBMITTED}}
+aws batch list-jobs \
+    --job-queue {{HighPriority}} \
+    --job-status {{SUBMITTED}}
 ```
 Output:
 
@@ -46,11 +48,12 @@ Output:
     "jobSummaryList": [
         {
             "jobName": "example",
-            "jobId": "68f0c163-fbd4-44e6-9fd1-25b14a434786"
+            "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         }
     ]
 }
 ```
+For more information, see [Job states](https://docs.aws.amazon.com/batch/latest/userguide/job_states.html) in the *AWS Batch User Guide*.
 +  For API details, see [ListJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/list-jobs.html) in *AWS CLI Command Reference*.
 
 ------

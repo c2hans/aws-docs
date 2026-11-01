@@ -48,6 +48,7 @@ Output:
     "failures": []
 }
 ```
+For more information, see [Pushing an image to an Amazon ECR private repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push.html) in the *Amazon ECR User Guide*.
 +  For API details, see [BatchCheckLayerAvailability](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/batch-check-layer-availability.html) in *AWS CLI Command Reference*.
 
 ### `batch-delete-image`
@@ -95,7 +96,7 @@ Output:
             "imageTag": "prod"
         },
         {
-            "imageDigest": "sha256:567890121234",
+            "imageDigest": "sha256:123456789111",
             "imageTag": "team1"
         }
     ],
@@ -125,7 +126,7 @@ Output:
 {
     "images": [
         {
-            "registryId": "012345678910",
+            "registryId": "123456789111",
             "repositoryName": "cluster-autoscaler",
             "imageId": {
                 "imageDigest": "sha256:4a1c6567c38904384ebc64e35b7eeddd8451110c299e3368d2210066487d97e5",
@@ -160,7 +161,7 @@ Output:
             "imageManifest": "manifestExample1"
         },
         {
-            "registryId": "567890121234",
+            "registryId": "123456789222",
             "repositoryName": "MyRepository",
             "imageId": {
                 "imageDigest": "sha256:123456789012",
@@ -187,19 +188,20 @@ The following `complete-layer-upload` example completes an image layer upload to
 ```
 aws ecr complete-layer-upload \
     --repository-name {{layer-test}} \
-    --upload-id {{6cb64b8a-9378-0e33-2ab1-b780fab8a9e9}} \
-    --layer-digests {{6cb64b8a-9378-0e33-2ab1-b780fab8a9e9:48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e}}
+    --upload-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --layer-digests {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111:48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e}}
 ```
 Output:
 
 ```
 {
-    "uploadId": "6cb64b8a-9378-0e33-2ab1-b780fab8a9e9",
+    "uploadId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "layerDigest": "sha256:9a77f85878aa1906f2020a0ecdf7a7e962d57e882250acd773383224b3fe9a02",
     "repositoryName": "layer-test",
-    "registryId": "130757420319"
+    "registryId": "123456789012"
 }
 ```
+For more information, see [Pushing an image to an Amazon ECR private repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push.html) in the *Amazon ECR User Guide*.
 +  For API details, see [CompleteLayerUpload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/complete-layer-upload.html) in *AWS CLI Command Reference*.
 
 ### `create-repository`
@@ -290,12 +292,13 @@ Output:
 
 ```
 {
-    "registryId": "012345678910",
+    "registryId": "123456789012",
     "repositoryName": "hello-world",
     "lifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"description\":\"Remove untagged images.\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"sinceImagePushed\",\"countUnit\":\"days\",\"countNumber\":10},\"action\":{\"type\":\"expire\"}}]}",
     "lastEvaluatedAt": 0.0
 }
 ```
+For more information, see [Automate the cleanup of images by using lifecycle policies in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html) in the *Amazon ECR User Guide*.
 +  For API details, see [DeleteLifecyclePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/delete-lifecycle-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-repository-policy`
@@ -315,11 +318,12 @@ Output:
 
 ```
 {
-    "registryId": "012345678910",
+    "registryId": "123456789012",
     "repositoryName": "cluster-autoscaler",
     "policyText": "{\n  \"Version\" : \"2008-10-17\",\n  \"Statement\" : [ {\n    \"Sid\" : \"allow public pull\",\n    \"Effect\" : \"Allow\",\n    \"Principal\" : \"*\",\n    \"Action\" : [ \"ecr:BatchCheckLayerAvailability\", \"ecr:BatchGetImage\", \"ecr:GetDownloadUrlForLayer\" ]\n  } ]\n}"
 }
 ```
+For more information, see [Private repository policies in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policies.html) in the *Amazon ECR User Guide*.
 +  For API details, see [DeleteRepositoryPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/delete-repository-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-repository`
@@ -369,47 +373,47 @@ Output:
 ```
 {
     "imageScanFindings": {
-      "findings": [
-          {
-              "name": "CVE-2019-5188",
-              "description": "A code execution vulnerability exists in the directory rehashing functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4 directory can cause an out-of-bounds write on the stack, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
-              "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-5188",
-              "severity": "MEDIUM",
-              "attributes": [
-                  {
-                      "key": "package_version",
-                      "value": "1.44.1-1ubuntu1.1"
-                  },
-                  {
-                      "key": "package_name",
-                      "value": "e2fsprogs"
-                  },
-                  {
-                      "key": "CVSS2_VECTOR",
-                      "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
-                  },
-                  {
-                      "key": "CVSS2_SCORE",
-                      "value": "4.6"
-                  }
-              ]
-          }
-      ],
-      "imageScanCompletedAt": 1579839105.0,
-      "vulnerabilitySourceUpdatedAt": 1579811117.0,
-      "findingSeverityCounts": {
-          "MEDIUM": 1
-      }
-  },
-  "registryId": "123456789012",
-  "repositoryName": "sample-repo",
-  "imageId": {
-      "imageDigest": "sha256:74b2c688c700ec95a93e478cdb959737c148df3fbf5ea706abe0318726e885e6"
-  },
-  "imageScanStatus": {
-      "status": "COMPLETE",
-      "description": "The scan was completed successfully."
-  }
+        "findings": [
+            {
+                "name": "CVE-2019-5188",
+                "description": "A code execution vulnerability exists in the directory rehashing functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4 directory can cause an out-of-bounds write on the stack, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
+                "uri": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-5188",
+                "severity": "MEDIUM",
+                "attributes": [
+                    {
+                        "key": "package_version",
+                        "value": "1.44.1-1ubuntu1.1"
+                    },
+                    {
+                        "key": "package_name",
+                        "value": "e2fsprogs"
+                    },
+                    {
+                        "key": "CVSS2_VECTOR",
+                        "value": "AV:L/AC:L/Au:N/C:P/I:P/A:P"
+                    },
+                    {
+                        "key": "CVSS2_SCORE",
+                        "value": "4.6"
+                    }
+                ]
+            }
+        ],
+        "imageScanCompletedAt": 1579839105.0,
+        "vulnerabilitySourceUpdatedAt": 1579811117.0,
+        "findingSeverityCounts": {
+            "MEDIUM": 1
+        }
+    },
+    "registryId": "123456789012",
+    "repositoryName": "sample-repo",
+    "imageId": {
+        "imageDigest": "sha256:74b2c688c700ec95a93e478cdb959737c148df3fbf5ea706abe0318726e885e6"
+    },
+    "imageScanStatus": {
+        "status": "COMPLETE",
+        "description": "The scan was completed successfully."
+    }
 }
 ```
 For more information, see [Image Scanning](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) in the *Amazon ECR User Guide*.
@@ -435,7 +439,7 @@ Output:
 {
     "imageDetails": [
         {
-            "registryId": "012345678910",
+            "registryId": "123456789012",
             "repositoryName": "cluster-autoscaler",
             "imageDigest": "sha256:4a1c6567c38904384ebc64e35b7eeddd8451110c299e3368d2210066487d97e5",
             "imageTags": [
@@ -447,6 +451,7 @@ Output:
     ]
 }
 ```
+For more information, see [Viewing image details in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-info.html) in the *Amazon ECR User Guide*.
 +  For API details, see [DescribeImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/describe-images.html) in *AWS CLI Command Reference*.
 
 ### `describe-repositories`
@@ -456,8 +461,7 @@ The following code example shows how to use `describe-repositories`.
 
 **AWS CLI**
 **To describe the repositories in a registry**
-This example describes the repositories in the default registry for an account.
-Command:
+The following `describe-repositories` example describes the repositories in the default registry for an account.
 
 ```
 aws ecr describe-repositories
@@ -468,18 +472,19 @@ Output:
 {
     "repositories": [
         {
-            "registryId": "012345678910",
+            "registryId": "123456789012",
             "repositoryName": "ubuntu",
-            "repositoryArn": "arn:aws:ecr:us-west-2:012345678910:repository/ubuntu"
+            "repositoryArn": "arn:aws:ecr:us-west-2:123456789012:repository/ubuntu"
         },
         {
-            "registryId": "012345678910",
+            "registryId": "123456789012",
             "repositoryName": "test",
-            "repositoryArn": "arn:aws:ecr:us-west-2:012345678910:repository/test"
+            "repositoryArn": "arn:aws:ecr:us-west-2:123456789012:repository/test"
         }
     ]
 }
 ```
+For more information, see [Viewing the contents and details of a private repository in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-info.html) in the *Amazon ECR User Guide*.
 +  For API details, see [DescribeRepositories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/describe-repositories.html) in *AWS CLI Command Reference*.
 
 ### `get-authorization-token`
@@ -507,6 +512,7 @@ Output:
     ]
 }
 ```
+For more information, see [Private registry authentication in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html) in the *Amazon ECR User Guide*.
 +  For API details, see [GetAuthorizationToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-authorization-token.html) in *AWS CLI Command Reference*.
 
 ### `get-download-url-for-layer`
@@ -527,10 +533,11 @@ Output:
 
 ```
 {
-    "downloadUrl": "https://prod-us-west-2-starport-layer-bucket.s3.us-west-2.amazonaws.com/e501-012345678910-9cb60dc0-7284-5643-3987-da6dac0465f0/04620aac-66a5-4167-8232-55ee7ef6d565?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190814T220617Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIA32P3D2JDNMVAJLGF%2F20190814%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=9161345894947a1672467a0da7a1550f2f7157318312fe4941b59976239c3337",
+    "downloadUrl": "https://prod-us-west-2-starport-layer-bucket.s3.us-west-2.amazonaws.com/e501-123456789012-a1b2c3d4-5678-90ab-cdef-EXAMPLE22222/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190814T220617Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIA32P3D2JDNMVAJLGF%2F20190814%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Signature=9161345894947a1672467a0da7a1550f2f7157318312fe4941b59976239c3337",
     "layerDigest": "sha256:6171c7451a50945f8ddd72f7732cc04d7a0d1f48138a426b2e64387fdeb834ed"
 }
 ```
+For more information, see [Pulling an image to your local environment from an Amazon ECR private repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-ecr-image.html) in the *Amazon ECR User Guide*.
 +  For API details, see [GetDownloadUrlForLayer](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-download-url-for-layer.html) in *AWS CLI Command Reference*.
 
 ### `get-lifecycle-policy-preview`
@@ -541,7 +548,6 @@ The following code example shows how to use `get-lifecycle-policy-preview`.
 **AWS CLI**
 **To retrieve details for a lifecycle policy preview**
 The following `get-lifecycle-policy-preview` example retrieves the result of a lifecycle policy preview for the specified repository in the default registry for an account.
-Command:
 
 ```
 aws ecr get-lifecycle-policy-preview \
@@ -551,7 +557,7 @@ Output:
 
 ```
 {
-    "registryId": "012345678910",
+    "registryId": "123456789012",
     "repositoryName": "project-a/amazon-ecs-sample",
     "lifecyclePolicyText": "{\n    \"rules\": [\n        {\n            \"rulePriority\": 1,\n            \"description\": \"Expire images older than 14 days\",\n            \"selection\": {\n                \"tagStatus\": \"untagged\",\n                \"countType\": \"sinceImagePushed\",\n                \"countUnit\": \"days\",\n                \"countNumber\": 14\n            },\n            \"action\": {\n                \"type\": \"expire\"\n            }\n        }\n    ]\n}\n",
     "status": "COMPLETE",
@@ -581,10 +587,10 @@ Output:
 
 ```
 {
-     "registryId": "123456789012",
-     "repositoryName": "project-a/amazon-ecs-sample",
-     "lifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"description\":\"Expire images older than 14 days\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"sinceImagePushed\",\"countUnit\":\"days\",\"countNumber\":14},\"action\":{\"type\":\"expire\"}}]}",
-     "lastEvaluatedAt": 1504295007.0
+    "registryId": "123456789012",
+    "repositoryName": "project-a/amazon-ecs-sample",
+    "lifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"description\":\"Expire images older than 14 days\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"sinceImagePushed\",\"countUnit\":\"days\",\"countNumber\":14},\"action\":{\"type\":\"expire\"}}]}",
+    "lastEvaluatedAt": 1504295007.0
 }
 ```
 For more information, see [Lifecycle Policies](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html) in the *Amazon ECR User Guide*.
@@ -597,7 +603,7 @@ The following code example shows how to use `get-login-password`.
 
 **AWS CLI**
 **To retrieve a password to authenticate to a registry**
-The following `get-login-password` displays a password that you can use with a container client of your choice to authenticate to any Amazon ECR registry that your IAM principal has access to.
+The following `get-login-password` example displays a password that you can use with a container client of your choice to authenticate to any Amazon ECR registry that your IAM principal has access to.
 
 ```
 aws ecr get-login-password
@@ -616,7 +622,7 @@ aws ecr get-login-password \
     --username {{AWS}} \
     --password-stdin {{<aws_account_id>.dkr.ecr.<region>.amazonaws.com}}
 ```
-For more information, see [Registry Authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/Registries#registry_auth) in the *Amazon ECR User Guide*.
+For more information, see [Registry Authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html) in the *Amazon ECR User Guide*.
 +  For API details, see [GetLoginPassword](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-login-password.html) in *AWS CLI Command Reference*.
 
 ### `get-repository-policy`
@@ -636,11 +642,12 @@ Output:
 
 ```
 {
-    "registryId": "012345678910",
+    "registryId": "123456789012",
     "repositoryName": "cluster-autoscaler",
     "policyText": "{\n  \"Version\" : \"2008-10-17\",\n  \"Statement\" : [ {\n    \"Sid\" : \"allow public pull\",\n    \"Effect\" : \"Allow\",\n    \"Principal\" : \"*\",\n    \"Action\" : [ \"ecr:BatchCheckLayerAvailability\", \"ecr:BatchGetImage\", \"ecr:GetDownloadUrlForLayer\" ]\n  } ]\n}"
 }
 ```
+For more information, see [Private repository policies in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/repository-policies.html) in the *Amazon ECR User Guide*.
 +  For API details, see [GetRepositoryPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/get-repository-policy.html) in *AWS CLI Command Reference*.
 
 ### `initiate-layer-upload`
@@ -661,9 +668,10 @@ Output:
 ```
 {
     "partSize": 10485760,
-    "uploadId": "6cb64b8a-9378-0e33-2ab1-b780fab8a9e9"
+    "uploadId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Pushing an image to an Amazon ECR private repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push.html) in the *Amazon ECR User Guide*.
 +  For API details, see [InitiateLayerUpload](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/initiate-layer-upload.html) in *AWS CLI Command Reference*.
 
 ### `list-images`
@@ -699,6 +707,7 @@ Output:
     ]
 }
 ```
+For more information, see [Private images in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/images.html) in the *Amazon ECR User Guide*.
 +  For API details, see [ListImages](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/list-images.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -712,7 +721,7 @@ The following `list-tags-for-resource` example displays a list of the tags assoc
 
 ```
 aws ecr list-tags-for-resource \
-    --resource-arn {{arn:aws:ecr:us-west-2:012345678910:repository/hello-world}}
+    --resource-arn {{arn:aws:ecr:us-west-2:123456789012:repository/hello-world}}
 ```
 Output:
 
@@ -726,6 +735,7 @@ Output:
     ]
 }
 ```
+For more information, see [Tagging a private repository in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr-using-tags.html) in the *Amazon ECR User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `put-image-scanning-configuration`
@@ -746,11 +756,11 @@ Output:
 
 ```
 {
-   "registryId": "012345678910",
-   "repositoryName": "sample-repo",
-   "imageScanningConfiguration": {
-     "scanOnPush": true
-   }
+    "registryId": "123456789012",
+    "repositoryName": "sample-repo",
+    "imageScanningConfiguration": {
+        "scanOnPush": true
+    }
 }
 ```
 For more information, see [Image Scanning](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) in the *Amazon ECR User Guide*.
@@ -774,9 +784,9 @@ Output:
 
 ```
 {
-   "registryId": "012345678910",
-   "repositoryName": "sample-repo",
-   "imageTagMutability": "IMMUTABLE"
+    "registryId": "123456789012",
+    "repositoryName": "sample-repo",
+    "imageTagMutability": "IMMUTABLE"
 }
 ```
 For more information, see [Image Tag Mutability](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-tag-mutability.html) in the *Amazon ECR User Guide*.
@@ -872,7 +882,7 @@ Output:
 ```
 {
     "image": {
-        "registryId": "130757420319",
+        "registryId": "123456789012",
         "repositoryName": "hello-world",
         "imageId": {
             "imageDigest": "sha256:8ece96b74f87652876199d83bd107d0435a196133af383ac54cb82b6cc5283ae",
@@ -882,6 +892,7 @@ Output:
     }
 }
 ```
+For more information, see [Retagging an image in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-retag.html) in the *Amazon ECR User Guide*.
 +  For API details, see [PutImage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/put-image.html) in *AWS CLI Command Reference*.
 
 ### `put-lifecycle-policy`
@@ -902,30 +913,30 @@ Contents of `policy.json`:
 
 ```
 {
-   "rules": [
-       {
-           "rulePriority": 1,
-           "description": "Expire images older than 14 days",
-           "selection": {
-               "tagStatus": "untagged",
-               "countType": "sinceImagePushed",
-               "countUnit": "days",
-               "countNumber": 14
-           },
-           "action": {
-               "type": "expire"
-           }
-       }
-   ]
+    "rules": [
+        {
+            "rulePriority": 1,
+            "description": "Expire images older than 14 days",
+            "selection": {
+                "tagStatus": "untagged",
+                "countType": "sinceImagePushed",
+                "countUnit": "days",
+                "countNumber": 14
+            },
+            "action": {
+                "type": "expire"
+            }
+        }
+    ]
 }
 ```
 Output:
 
 ```
 {
-   "registryId": "<aws_account_id>",
-   "repositoryName": "project-a/amazon-ecs-sample",
-   "lifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"description\":\"Expire images older than 14 days\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"sinceImagePushed\",\"countUnit\":\"days\",\"countNumber\":14},\"action\":{\"type\":\"expire\"}}]}"
+    "registryId": "<aws_account_id>",
+    "repositoryName": "project-a/amazon-ecs-sample",
+    "lifecyclePolicyText": "{\"rules\":[{\"rulePriority\":1,\"description\":\"Expire images older than 14 days\",\"selection\":{\"tagStatus\":\"untagged\",\"countType\":\"sinceImagePushed\",\"countUnit\":\"days\",\"countNumber\":14},\"action\":{\"type\":\"expire\"}}]}"
 }
 ```
 For more information, see [Lifecycle Policies](https://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html) in the *Amazon ECR User Guide*.
@@ -968,11 +979,12 @@ Output:
 
 ```
 {
-    "registryId": "012345678910",
+    "registryId": "123456789012",
     "repositoryName": "cluster-autoscaler",
     "policyText": "{\n  \"Version\" : \"2008-10-17\",\n  \"Statement\" : [ {\n    \"Sid\" : \"allow public pull\",\n    \"Effect\" : \"Allow\",\n    \"Principal\" : \"*\",\n    \"Action\" : [ \"ecr:BatchCheckLayerAvailability\", \"ecr:BatchGetImage\", \"ecr:GetDownloadUrlForLayer\" ]\n  } ]\n}"
 }
 ```
+For more information, see [Setting a private repository policy statement in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/set-repository-policy.html) in the *Amazon ECR User Guide*.
 +  For API details, see [SetRepositoryPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/set-repository-policy.html) in *AWS CLI Command Reference*.
 
 ### `start-image-scan`
@@ -993,14 +1005,14 @@ Output:
 
 ```
 {
-   "registryId": "012345678910",
-   "repositoryName": "sample-repo",
-   "imageId": {
-       "imageDigest": "sha256:74b2c688c700ec95a93e478cdb959737c148df3fbf5ea706abe0318726e885e6"
-   },
-   "imageScanStatus": {
-       "status": "IN_PROGRESS"
-   }
+    "registryId": "123456789012",
+    "repositoryName": "sample-repo",
+    "imageId": {
+        "imageDigest": "sha256:74b2c688c700ec95a93e478cdb959737c148df3fbf5ea706abe0318726e885e6"
+    },
+    "imageScanStatus": {
+        "status": "IN_PROGRESS"
+    }
 }
 ```
 For more information, see [Image Scanning](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scanning.html) in the *Amazon ECR User Guide*.
@@ -1024,33 +1036,34 @@ Contents of `policy.json`:
 
 ```
 {
-   "rules": [
-       {
-           "rulePriority": 1,
-           "description": "Expire images older than 14 days",
-           "selection": {
-               "tagStatus": "untagged",
-               "countType": "sinceImagePushed",
-               "countUnit": "days",
-               "countNumber": 14
-           },
-           "action": {
-               "type": "expire"
-           }
-       }
-   ]
+    "rules": [
+        {
+            "rulePriority": 1,
+            "description": "Expire images older than 14 days",
+            "selection": {
+                "tagStatus": "untagged",
+                "countType": "sinceImagePushed",
+                "countUnit": "days",
+                "countNumber": 14
+            },
+            "action": {
+                "type": "expire"
+            }
+        }
+    ]
 }
 ```
 Output:
 
 ```
 {
-   "registryId": "012345678910",
-   "repositoryName": "project-a/amazon-ecs-sample",
-   "lifecyclePolicyText": "{\n    \"rules\": [\n        {\n            \"rulePriority\": 1,\n            \"description\": \"Expire images older than 14 days\",\n            \"selection\": {\n                \"tagStatus\": \"untagged\",\n                \"countType\": \"sinceImagePushed\",\n                \"countUnit\": \"days\",\n                \"countNumber\": 14\n            },\n            \"action\": {\n                \"type\": \"expire\"\n            }\n        }\n    ]\n}\n",
-   "status": "IN_PROGRESS"
+    "registryId": "123456789012",
+    "repositoryName": "project-a/amazon-ecs-sample",
+    "lifecyclePolicyText": "{\n    \"rules\": [\n        {\n            \"rulePriority\": 1,\n            \"description\": \"Expire images older than 14 days\",\n            \"selection\": {\n                \"tagStatus\": \"untagged\",\n                \"countType\": \"sinceImagePushed\",\n                \"countUnit\": \"days\",\n                \"countNumber\": 14\n            },\n            \"action\": {\n                \"type\": \"expire\"\n            }\n        }\n    ]\n}\n",
+    "status": "IN_PROGRESS"
 }
 ```
+For more information, see [Creating a lifecycle policy preview in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/lpp_creation.html) in the *Amazon ECR User Guide*.
 +  For API details, see [StartLifecyclePolicyPreview](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/start-lifecycle-policy-preview.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -1064,10 +1077,11 @@ The following `tag-resource` example sets a tag with key `Stage` and value `Inte
 
 ```
 aws ecr tag-resource \
-    --resource-arn {{arn:aws:ecr:us-west-2:012345678910:repository/hello-world}} \
+    --resource-arn {{arn:aws:ecr:us-west-2:123456789012:repository/hello-world}} \
     --tags {{Key=Stage,Value=Integ}}
 ```
 This command produces no output.
+For more information, see [Tagging a private repository in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr-using-tags.html) in the *Amazon ECR User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -1081,10 +1095,11 @@ The following `untag-resource` example removes the tag with the key `Stage` from
 
 ```
 aws ecr untag-resource \
-    --resource-arn {{arn:aws:ecr:us-west-2:012345678910:repository/hello-world}} \
+    --resource-arn {{arn:aws:ecr:us-west-2:123456789012:repository/hello-world}} \
     --tag-keys {{Stage}}
 ```
 This command produces no output.
+For more information, see [Tagging a private repository in Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr-using-tags.html) in the *Amazon ECR User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `upload-layer-part`
@@ -1094,12 +1109,12 @@ The following code example shows how to use `upload-layer-part`.
 
 **AWS CLI**
 **To upload a layer part**
-This following `upload-layer-part` uploads an image layer part to the `layer-test` repository.
+The following `upload-layer-part` example uploads an image layer part to the `layer-test` repository.
 
 ```
 aws ecr upload-layer-part \
     --repository-name {{layer-test}} \
-    --upload-id {{6cb64b8a-9378-0e33-2ab1-b780fab8a9e9}} \
+    --upload-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --part-first-byte {{0}} \
     --part-last-byte {{8323314}} \
     --layer-part-blob {{fileb:///var/lib/docker/image/overlay2/layerdb/sha256/ff986b10a018b48074e6d3a68b39aad8ccc002cdad912d4148c0f92b3729323e/layer.b64}}
@@ -1108,10 +1123,11 @@ Output:
 
 ```
 {
-    "uploadId": "6cb64b8a-9378-0e33-2ab1-b780fab8a9e9",
-    "registryId": "012345678910",
+    "uploadId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+    "registryId": "123456789012",
     "lastByteReceived": 8323314,
     "repositoryName": "layer-test"
 }
 ```
+For more information, see [Pushing an image to an Amazon ECR private repository](https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-push.html) in the *Amazon ECR User Guide*.
 +  For API details, see [UploadLayerPart](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecr/upload-layer-part.html) in *AWS CLI Command Reference*.

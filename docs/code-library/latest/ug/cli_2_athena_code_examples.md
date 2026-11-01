@@ -103,8 +103,6 @@ Output:
                 "EngineExecutionTimeInMillis": 232,
                 "DataScannedInBytes": 0,
                 "TotalExecutionTimeInMillis": 310,
-            "ResultConfiguration": {
-
                 "QueryQueueTimeInMillis": 50,
                 "ServiceProcessingTimeInMillis": 28
             },
@@ -156,7 +154,7 @@ aws athena create-data-catalog \
     --name {{dynamo_db_catalog}} \
     --type {{LAMBDA}} \
     --description {{"DynamoDB Catalog"}} \
-    --parameters {{function=arn:aws:lambda:us-west-2:111122223333:function:dynamo_db_lambda}}
+    --parameters {{function=arn:aws:lambda:us-west-2:123456789012:function:dynamo_db_lambda}}
 ```
 This command produces no output. To see the result, use `aws athena get-data-catalog --name dynamo_db_catalog`.
 For more information, see [Registering a Catalog: create-data-catalog](https://docs.aws.amazon.com/athena/latest/ug/datastores-hive-cli.html#datastores-hive-cli-registering-a-catalog) in the *Amazon Athena User Guide*.
@@ -283,8 +281,8 @@ Output:
         "Type": "LAMBDA",
         "Parameters": {
             "catalog": "dynamo_db_catalog",
-            "metadata-function": "arn:aws:lambda:us-west-2:111122223333:function:dynamo_db_lambda",
-            "record-function": "arn:aws:lambda:us-west-2:111122223333:function:dynamo_db_lambda"
+            "metadata-function": "arn:aws:lambda:us-west-2:123456789012:function:dynamo_db_lambda",
+            "record-function": "arn:aws:lambda:us-west-2:123456789012:function:dynamo_db_lambda"
         }
     }
 }
@@ -372,8 +370,7 @@ Output:
 {
     "QueryExecution": {
         "QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
-        "Query": "select date, location, browser, uri, status from cloudfront_logs where method = 'GET
-' and status = 200 and location like 'SFO%' limit 10",
+        "Query": "select date, location, browser, uri, status from cloudfront_logs where method = 'GET' and status = 200 and location like 'SFO%' limit 10",
         "StatementType": "DML",
         "ResultConfiguration": {
             "OutputLocation": "s3://amzn-s3-demo-bucket/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111.csv"
@@ -652,8 +649,6 @@ Output:
                     "Label": "location",
                     "Type": "varchar",
                     "Precision": 2147483647,
-                "Data": [
-
                     "Scale": 0,
                     "Nullable": "UNKNOWN",
                     "CaseSensitive": true
@@ -926,18 +921,16 @@ Output:
 ```
 {
     "QueryExecutionIds": [
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11110",
         "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11114",
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11115",
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11116",
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11117",
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11118",
-        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11119"
-    ],
-    "NextToken": "eyJOZXh0VG9rZW4iOiBudWxsLCAiYm90b190cnVuY2F0ZV9hbW91bnQiOiAxMH0="
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE66666",
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE77777",
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE88888",
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE99999"
+    ]
 }
 ```
 For more information, see [Working with Query Results, Output Files, and Query History](https://docs.aws.amazon.com/athena/latest/ug/querying.html) in the *Amazon Athena User Guide*.
@@ -1025,8 +1018,6 @@ Output:
                     "Comment": "geo id"
                 },
                 {
-                    "Name": "country",
-
                     "Name": "id2",
                     "Type": "string",
                     "Comment": "geo id2"
@@ -1080,7 +1071,7 @@ The following `list-tags-for-resource` example lists the tags for the `Data_Anal
 
 ```
 aws athena list-tags-for-resource \
-    --resource-arn {{arn:aws:athena:us-west-2:111122223333:workgroup/Data_Analyst_Group}}
+    --resource-arn {{arn:aws:athena:us-west-2:123456789012:workgroup/Data_Analyst_Group}}
 ```
 Output:
 
@@ -1107,7 +1098,7 @@ The following `list-tags-for-resource` example lists the tags for the `dynamo_db
 
 ```
 aws athena list-tags-for-resource \
-    --resource-arn {{arn:aws:athena:us-west-2:111122223333:datacatalog/dynamo_db_catalog}}
+    --resource-arn {{arn:aws:athena:us-west-2:123456789012:datacatalog/dynamo_db_catalog}}
 ```
 Output:
 
@@ -1196,7 +1187,7 @@ Output:
 
 ```
 {
-"QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    "QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Running SQL Queries Using Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/querying-athena-tables.html) in the *Amazon Athena User Guide*.
@@ -1212,7 +1203,7 @@ Output:
 
 ```
 {
-"QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11112"
+    "QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Running SQL Queries Using Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/querying-athena-tables.html) in the *Amazon Athena User Guide*.
@@ -1228,7 +1219,7 @@ Output:
 
 ```
 {
-"QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11113"
+    "QueryExecutionId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 For more information, see [Running SQL Queries Using Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/querying-athena-tables.html) in the *Amazon Athena User Guide*.
@@ -1262,10 +1253,10 @@ The following `tag-resource` example adds three tags to the `dynamo_db_catalog` 
 
 ```
 aws athena tag-resource \
-    --resource-arn {{arn:aws:athena:us-west-2:111122223333:datacatalog/dynamo_db_catalog}} \
+    --resource-arn {{arn:aws:athena:us-west-2:123456789012:datacatalog/dynamo_db_catalog}} \
     --tags {{Key=Organization,Value=Retail}} {{Key=Division,Value=Mountain}} {{Key=Product_Line,Value=Shoes}} {{Key=Location,Value=Denver}}
 ```
-This command produces no output. To see the result, use `aws athena list-tags-for-resource --resource-arn arn:aws:athena:us-west-2:111122223333:datacatalog/dynamo_db_catalog`.
+This command produces no output. To see the result, use `aws athena list-tags-for-resource --resource-arn arn:aws:athena:us-west-2:123456789012:datacatalog/dynamo_db_catalog`.
 For more information, see [Adding tags to a resource: tag-resource](https://docs.aws.amazon.com/athena/latest/ug/tags-operations.html#tags-operations-examples-cli-tag-resource) in the *Amazon Athena User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/athena/tag-resource.html) in *AWS CLI Command Reference*.
 
@@ -1280,7 +1271,7 @@ The following `untag-resource` example removes the `Specialization` and `Focus` 
 
 ```
 aws athena untag-resource \
-    --resource-arn {{arn:aws:athena:us-west-2:111122223333:datacatalog/dynamo_db_catalog}} \
+    --resource-arn {{arn:aws:athena:us-west-2:123456789012:datacatalog/dynamo_db_catalog}} \
     --tag-keys {{Specialization}} {{Focus}}
 ```
 This command produces no output. To see the results, use the `list-tags-for-resource` command.
@@ -1301,7 +1292,7 @@ aws athena update-data-catalog \
     --name {{cw_logs_catalog}} \
     --type {{LAMBDA}} \
     --description {{"New CloudWatch Logs Catalog"}} \
-    --function=arn:aws:lambda:us-west-2:111122223333:function:new_cw_logs_lambda
+    --function=arn:aws:lambda:us-west-2:123456789012:function:new_cw_logs_lambda
 ```
 This command produces no output. To see the result, use `aws athena get-data-catalog --name cw_logs_catalog`.
 For more information, see [Updating a Catalog: update-data-catalog](https://docs.aws.amazon.com/athena/latest/ug/datastores-hive-cli.html#datastores-hive-cli-updating-a-catalog) in the *Amazon Athena User Guide*.

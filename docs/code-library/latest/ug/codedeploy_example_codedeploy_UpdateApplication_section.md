@@ -22,6 +22,7 @@ aws deploy update-application \
     --new-application-name {{My_WordPress_App}}
 ```
 This command produces no output.
+For more information, see [Rename a CodeDeploy application](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-rename.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [UpdateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/update-application.html) in *AWS CLI Command Reference*.
 
 ------

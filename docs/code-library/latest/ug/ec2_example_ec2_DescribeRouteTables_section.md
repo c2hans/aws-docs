@@ -18,7 +18,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To describe your route tables**
-The following `describe-route-tables` example retrieves the details about your route tables
+The following `describe-route-tables` example retrieves the details about your route tables.
 
 ```
 aws ec2 describe-route-tables
@@ -54,7 +54,7 @@ Output:
             ],
             "Tags": [],
             "VpcId": "vpc-0065acced4EXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         },
         {
             "Associations": [
@@ -82,7 +82,7 @@ Output:
             ],
             "Tags": [],
             "VpcId": "vpc-3EXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         },
         {
             "Associations": [
@@ -111,12 +111,12 @@ Output:
             ],
             "Tags": [],
             "VpcId": "vpc-0065acced4EXAMPLE",
-            "OwnerId": "111122223333"
+            "OwnerId": "123456789012"
         }
     ]
 }
 ```
-For more information, see [Working with Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html#WorkWithRouteTables) in the *AWS VPC User Guide*.
+For more information, see [Working with Route Tables](https://docs.aws.amazon.com/vpc/latest/userguide/WorkWithRouteTables.html) in the *AWS VPC User Guide*.
 +  For API details, see [DescribeRouteTables](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-route-tables.html) in *AWS CLI Command Reference*.
 
 ------

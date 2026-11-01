@@ -48,9 +48,9 @@ The following `apply-pending-maintenance-action` example causes all system-updat
 
 ```
 aws docdb apply-pending-maintenance-action \
---resource-identifier {{arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster}} \
---apply-action {{system-update}} \
---opt-in-type {{next-maintenance}}
+    --resource-identifier {{arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster}} \
+    --apply-action {{system-update}} \
+    --opt-in-type {{next-maintenance}}
 ```
 This command produces no output.
 For more information, see [Applying Amazon DocumentDB Updates](https://docs.aws.amazon.com/documentdb/latest/developerguide/db-instance-maintain.html#db-instance-updates-apply) in the *Amazon DocumentDB Developer Guide*.
@@ -78,7 +78,7 @@ Output:
 {
     "DBClusterParameterGroup": {
         "DBParameterGroupFamily": "docdb3.6",
-        "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:12345678901:cluster-pg:custom-docdb3-6-copy",
+        "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:12345678901:cluster-pg:custom-docdb3-6-copy",
         "DBClusterParameterGroupName": "custom-docdb3-6-copy",
         "Description": "Copy of custom-docdb3-6"
     }
@@ -148,8 +148,8 @@ The following `create-db-cluster-snapshot` example creates an Amazon DB cluster 
 
 ```
 aws docdb create-db-cluster-snapshot \
-   --db-cluster-identifier {{sample-cluster}} \
-   --db-cluster-snapshot-identifier {{sample-cluster-snapshot}}
+    --db-cluster-identifier {{sample-cluster}} \
+    --db-cluster-snapshot-identifier {{sample-cluster-snapshot}}
 ```
 Output:
 
@@ -385,7 +385,7 @@ Output:
     }
 }
 ```
-For more information, see [Creating an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/developerguide/document-db-subnet-groups.html#document-db-subnet-group-create) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Creating an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-create.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [CreateDbSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/create-db-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `delete-db-cluster-parameter-group`
@@ -614,7 +614,7 @@ aws docdb delete-db-subnet-group \
     --db-subnet-group-name {{sample-subnet-group}}
 ```
 This command produces no output.
-For more information, see [Deleting an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/developerguide/document-db-subnet-groups.html#document-db-subnet-group-delete) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Deleting an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-delete.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DeleteDbSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/delete-db-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-cluster-parameter-groups`
@@ -637,7 +637,7 @@ Output:
     "DBClusterParameterGroups": [
         {
             "DBParameterGroupFamily": "docdb3.6",
-            "DBClusterParameterGroupArn": "arn:aws:rds:us-east-1:123456789012:cluster-pg:custom3-6-param-grp",
+            "DBClusterParameterGroupArn": "arn:aws:rds:us-west-2:123456789012:cluster-pg:custom3-6-param-grp",
             "Description": "Custom docdb3.6 parameter group",
             "DBClusterParameterGroupName": "custom3-6-param-grp"
         }
@@ -658,7 +658,7 @@ The following `describe-db-cluster-parameters` example lists the parameters for 
 
 ```
 aws docdb describe-db-cluster-parameters \
-     --db-cluster-parameter-group-name {{custom3-6-param-grp}}
+    --db-cluster-parameter-group-name {{custom3-6-param-grp}}
 ```
 Output:
 
@@ -701,7 +701,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing Amazon DocumentDB Cluster Parameters](https://docs.aws.amazon.com/documentdb/latest/developerguide/db-cluster-parameters-describe.html) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Describing Amazon DocumentDB cluster parameter groups](https://docs.aws.amazon.com/documentdb/latest/devguide/cluster_parameter_groups-describe.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DescribeDbClusterParameters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-cluster-parameters.html) in *AWS CLI Command Reference*.
 
 ### `describe-db-cluster-snapshot-attributes`
@@ -791,7 +791,7 @@ The following code example shows how to use `describe-db-clusters`.
 The following `describe-db-clusters` example displays details for the Amazon DocumentDB cluster `sample-cluster`. By omitting the `--db-cluster-identifier` parameter you can get information of up to 100 clusters.
 
 ```
-aws docdb describe-db-clusters
+aws docdb describe-db-clusters \
     --db-cluster-identifier {{sample-cluster}}
 ```
 Output:
@@ -1045,7 +1045,7 @@ Output:
     ]
 }
 ```
-For more information, see [Describing Subnet Groups](https://docs.aws.amazon.com/documentdb/latest/developerguide/document-db-subnet-groups.html#document-db-subnet-groups-describe) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Describing an Amazon DocumentDB subnet group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-describe.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DescribeDbSubnetGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-db-subnet-groups.html) in *AWS CLI Command Reference*.
 
 ### `describe-engine-default-cluster-parameters`
@@ -1138,7 +1138,7 @@ Output:
     ]
 }
 ```
-For more information, see [Viewing Event Categories](https://docs.aws.amazon.com/documentdb/latest/developerguide/managing-events.html#viewing-event-categories) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Viewing Amazon DocumentDB event categories](https://docs.aws.amazon.com/documentdb/latest/devguide/managing-events.html#viewing-event-categories) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DescribeEventCategories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-event-categories.html) in *AWS CLI Command Reference*.
 
 ### `describe-events`
@@ -1297,7 +1297,7 @@ This command produces no output. Output:
     ]
 }
 ```
-For more information, see [Viewing Amazon DocumentDB Events](https://docs.aws.amazon.com/documentdb/latest/developerguide/managing-events.html#viewing-events) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Viewing Amazon DocumentDB events](https://docs.aws.amazon.com/documentdb/latest/devguide/managing-events.html#viewing-events) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [DescribeEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/describe-events.html) in *AWS CLI Command Reference*.
 
 ### `describe-orderable-db-instance-options`
@@ -1311,8 +1311,7 @@ The following `describe-orderable-db-instance-options` example lists all instanc
 
 ```
 aws {{docdb}} describe-orderable-db-instance-options \
-    --engine docdb \
-    --region {{us-east-1}}
+    --engine docdb
 ```
 Output:
 
@@ -1323,16 +1322,16 @@ Output:
             "Vpc": true,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
+                    "Name": "us-west-2d"
                 }
             ],
             "EngineVersion": "3.6.0",
@@ -1344,17 +1343,16 @@ Output:
             "Vpc": true,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
-                }
+                    "Name": "us-west-2d"
                 }
             ],
             "EngineVersion": "3.6.0",
@@ -1366,16 +1364,16 @@ Output:
             "Vpc": true,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
+                    "Name": "us-west-2d"
                 }
             ],
             "EngineVersion": "3.6.0",
@@ -1387,16 +1385,16 @@ Output:
             "Vpc": true,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
+                    "Name": "us-west-2d"
                 }
             ],
             "EngineVersion": "3.6.0",
@@ -1408,16 +1406,16 @@ Output:
             "Vpc": true,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
+                    "Name": "us-west-2d"
                 }
             ],
             "EngineVersion": "3.6.0",
@@ -1429,16 +1427,16 @@ Output:
             "Vpc": true,
             "AvailabilityZones": [
                 {
-                    "Name": "us-east-1a"
+                    "Name": "us-west-2a"
                 },
                 {
-                    "Name": "us-east-1b"
+                    "Name": "us-west-2b"
                 },
                 {
-                    "Name": "us-east-1c"
+                    "Name": "us-west-2c"
                 },
                 {
-                    "Name": "us-east-1d"
+                    "Name": "us-west-2d"
                 }
             ],
             "EngineVersion": "3.6.0",
@@ -1596,8 +1594,7 @@ The following `modify-db-cluster-parameter-group` example modifies the Amazon Do
 ```
 aws docdb modify-db-cluster-parameter-group \
     --db-cluster-parameter-group-name {{custom3-6-param-grp}} \
-    --parameters {{ParameterName=audit_logs,ParameterValue=enabled,ApplyMethod=pending-reboot}} \
-                 {{ParameterName=ttl_monitor,ParameterValue=enabled,ApplyMethod=pending-reboot}}
+    --parameters {{ParameterName=audit_logs,ParameterValue=enabled,ApplyMethod=pending-reboot}} {{ParameterName=ttl_monitor,ParameterValue=enabled,ApplyMethod=pending-reboot}}
 ```
 Output:
 
@@ -1622,7 +1619,7 @@ The following `modify-db-cluster-snapshot-attribute` example adds four attribute
 aws docdb modify-db-cluster-snapshot-attribute \
     --db-cluster-snapshot-identifier {{sample-cluster-snapshot}} \
     --attribute-name {{restore}} \
-    --values-to-add {{123456789011}} {{123456789012}} {{123456789013}}
+    --values-to-add {{123456789111}} {{123456789222}} {{123456789333}}
 ```
 Output:
 
@@ -1633,9 +1630,9 @@ Output:
             {
                 "AttributeName": "restore",
                 "AttributeValues": [
-                    "123456789011",
-                    "123456789012",
-                    "123456789013"
+                    "123456789111",
+                    "123456789222",
+                    "123456789333"
                 ]
             }
         ],
@@ -1650,7 +1647,7 @@ The following `modify-db-cluster-snapshot-attribute` example removes two attribu
 aws docdb modify-db-cluster-snapshot-attribute \
     --db-cluster-snapshot-identifier {{sample-cluster-snapshot}} \
     --attribute-name {{restore}} \
-    --values-to-remove {{123456789012}}
+    --values-to-remove {{123456789222}}
 ```
 Output:
 
@@ -1661,8 +1658,8 @@ Output:
             {
                 "AttributeName": "restore",
                 "AttributeValues": [
-                    "123456789011",
-                    "123456789013"
+                    "123456789111",
+                    "123456789333"
                 ]
             }
         ],
@@ -1899,7 +1896,7 @@ Output:
     }
 }
 ```
-For more information, see [Modifying an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/developerguide/document-db-subnet-groups.html#document-db-subnet-group-modify) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Modifying an Amazon DocumentDB Subnet Group](https://docs.aws.amazon.com/documentdb/latest/devguide/document-db-subnet-group-modify.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [ModifyDbSubnetGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/modify-db-subnet-group.html) in *AWS CLI Command Reference*.
 
 ### `reboot-db-instance`
@@ -2018,7 +2015,7 @@ For more information, see [Removing Tags from an Amazon DocumentDBResource](http
 The following code example shows how to use `reset-db-cluster-parameter-group`.
 
 **AWS CLI**
-**To reset the specified parameter value to its defaults in an Amazon DocumentDB parameter group**
+**Example 1: To reset the specified parameter value to its defaults in an Amazon DocumentDB parameter group**
 The following `reset-db-cluster-parameter-group` example resets the parameter `ttl_monitor` in the Amazon DocumentDB parameter group `custom3-6-param-grp` to its default value.
 
 ```
@@ -2034,7 +2031,7 @@ Output:
 }
 ```
 For more information, see title in the *Amazon DocumentDB Developer Guide*.
-**To reset specified or all parameter values to their defaults in an Amazon DocumentDB parameter group**
+**Example 2: To reset specified or all parameter values to their defaults in an Amazon DocumentDB parameter group**
 The following `reset-db-cluster-parameter-group` example resets all parameters in the Amazon DocumentDB parameter group `custom3-6-param-grp` to their default value.
 
 ```
@@ -2165,7 +2162,7 @@ Output:
     }
 }
 ```
-For more information, see [Restoring a Snapshot to a Point in Time](https://docs.aws.amazon.com/documentdb/latest/developerguide/backup-restore.point-in-time-recovery.html) in the *Amazon DocumentDB Developer Guide*.
+For more information, see [Restoring to a point in time](https://docs.aws.amazon.com/documentdb/latest/devguide/backup_restore-point_in_time_recovery.html) in the *Amazon DocumentDB Developer Guide*.
 +  For API details, see [RestoreDbClusterToPointInTime](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/restore-db-cluster-to-point-in-time.html) in *AWS CLI Command Reference*.
 
 ### `start-db-cluster`
@@ -2192,19 +2189,19 @@ Output:
         "DBClusterMembers": [],
         "MultiAZ": false,
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1c",
-            "us-east-1f"
+            "us-west-2a",
+            "us-west-2c",
+            "us-west-2d"
         ],
         "StorageEncrypted": false,
-        "ReaderEndpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-ro-corcjozrlsfc.us-east-1.docdb.amazonaws.com",
-        "Endpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-corcjozrlsfc.us-east-1.docdb.amazonaws.com",
+        "ReaderEndpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-ro-corcjozrlsfc.us-west-2.docdb.amazonaws.com",
+        "Endpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-corcjozrlsfc.us-west-2.docdb.amazonaws.com",
         "Port": 27017,
         "PreferredBackupWindow": "00:00-00:30",
         "DBSubnetGroup": "default",
         "DBClusterIdentifier": "sample-cluster-2019-03-16-00-01-restored",
         "PreferredMaintenanceWindow": "sat:04:30-sat:05:00",
-        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:sample-cluster-2019-03-16-00-01-restored",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster-2019-03-16-00-01-restored",
         "DBClusterParameterGroup": "default.docdb3.6",
         "DbClusterResourceId": "cluster-XOO46Q3RH4LWSYNH3NMZKXPISU",
         "MasterUsername": "master-user",
@@ -2248,19 +2245,19 @@ Output:
         "DBClusterMembers": [],
         "MultiAZ": false,
         "AvailabilityZones": [
-            "us-east-1a",
-            "us-east-1c",
-            "us-east-1f"
+            "us-west-2a",
+            "us-west-2c",
+            "us-west-2d"
         ],
         "StorageEncrypted": false,
-        "ReaderEndpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-ro-corcjozrlsfc.us-east-1.docdb.amazonaws.com",
-        "Endpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-corcjozrlsfc.us-east-1.docdb.amazonaws.com",
+        "ReaderEndpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-ro-corcjozrlsfc.us-west-2.docdb.amazonaws.com",
+        "Endpoint": "sample-cluster-2019-03-16-00-01-restored.cluster-corcjozrlsfc.us-west-2.docdb.amazonaws.com",
         "Port": 27017,
         "PreferredBackupWindow": "00:00-00:30",
         "DBSubnetGroup": "default",
         "DBClusterIdentifier": "sample-cluster-2019-03-16-00-01-restored",
         "PreferredMaintenanceWindow": "sat:04:30-sat:05:00",
-        "DBClusterArn": "arn:aws:rds:us-east-1:123456789012:cluster:sample-cluster-2019-03-16-00-01-restored",
+        "DBClusterArn": "arn:aws:rds:us-west-2:123456789012:cluster:sample-cluster-2019-03-16-00-01-restored",
         "DBClusterParameterGroup": "default.docdb3.6",
         "DbClusterResourceId": "cluster-XOO46Q3RH4LWSYNH3NMZKXPISU",
         "MasterUsername": "master-user",

@@ -26,12 +26,12 @@ The following code example shows how to use `associate-access-policy`.
 
 **AWS CLI**
 **To associate an access policy and its scope to the access entry of the cluster**
-The following `associate-access-policy` associates an access policy and its scope to the access entry of the specified cluster.
+The following `associate-access-policy` example associates an access policy and its scope to the access entry of the specified cluster.
 
 ```
 aws eks associate-access-policy \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:role/Admin}} \
+    --principal-arn {{arn:aws:iam::123456789012:role/Admin}} \
     --policy-arn {{arn:aws:eks::aws:cluster-access-policy/AmazonEKSEditPolicy}} \
     --access-scope {{type=namespace,namespaces=default}}
 ```
@@ -40,7 +40,7 @@ Output:
 ```
 {
     "clusterName": "eks-customer",
-    "principalArn": "arn:aws:iam::111122223333:role/Admin",
+    "principalArn": "arn:aws:iam::123456789012:role/Admin",
     "associatedAccessPolicy": {
         "policyArn": "arn:aws:eks::aws:cluster-access-policy/AmazonEKSEditPolicy",
         "accessScope": {
@@ -76,7 +76,7 @@ Output:
 ```
 {
     "update": {
-        "id": "3141b835-8103-423a-8e68-12c2521ffa4d",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "AssociateEncryptionConfig",
         "params": [
@@ -99,13 +99,13 @@ For more information, see [Enabling secret encryption on an existing cluster](ht
 The following code example shows how to use `associate-identity-provider-config`.
 
 **AWS CLI**
-**Associate identity provider to your Amazon EKS Cluster**
+**To associate an identity provider with your Amazon EKS cluster**
 The following `associate-identity-provider-config` example associates an identity provider to your Amazon EKS Cluster.
 
 ```
 aws eks associate-identity-provider-config \
     --cluster-name {{my-eks-cluster}} \
-    --oidc '{{identityProviderConfigName=my-identity-provider,issuerUrl=https://oidc.eks.us-east-2.amazonaws.com/id/38D6A4619A0A69E342B113ED7F1A7652,clientId=kubernetes,usernameClaim=email,usernamePrefix=my-username-prefix,groupsClaim=my-claim,groupsPrefix=my-groups-prefix,requiredClaims={Claim1=value1,Claim2=value2}}}' \
+    --oidc '{{identityProviderConfigName=my-identity-provider,issuerUrl=https://oidc.eks.us-west-2.amazonaws.com/id/38D6A4619A0A69E342B113ED7F1A7652,clientId=kubernetes,usernameClaim=email,usernamePrefix=my-username-prefix,groupsClaim=my-claim,groupsPrefix=my-groups-prefix,requiredClaims={Claim1=value1,Claim2=value2}}}' \
     --tags {{env=dev}}
 ```
 Output:
@@ -113,7 +113,7 @@ Output:
 ```
 {
     "update": {
-        "id": "8c6c1bef-61fe-42ac-a242-89412387b8e7",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "AssociateIdentityProviderConfig",
         "params": [
@@ -145,7 +145,7 @@ The following `create-access-entry` example creates an access entry that allows 
 ```
 aws eks create-access-entry \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:user/eks-user}}
+    --principal-arn {{arn:aws:iam::123456789012:user/eks-user}}
 ```
 Output:
 
@@ -153,13 +153,13 @@ Output:
 {
     "accessEntry": {
         "clusterName": "eks-customer",
-        "principalArn": "arn:aws:iam::111122223333:user/eks-user",
+        "principalArn": "arn:aws:iam::123456789012:user/eks-user",
         "kubernetesGroups": [],
-        "accessEntryArn": "arn:aws:eks:us-west-2:111122223333:access-entry/eks-customer/user/111122223333/eks-user/a1b2c3d4-5678-90ab-cdef-a6506e3d36p0",
+        "accessEntryArn": "arn:aws:eks:us-west-2:123456789012:access-entry/eks-customer/user/123456789012/eks-user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createdAt": "2025-04-14T22:45:48.097000-05:00",
         "modifiedAt": "2025-04-14T22:45:48.097000-05:00",
         "tags": {},
-        "username": "arn:aws:iam::111122223333:user/eks-user",
+        "username": "arn:aws:iam::123456789012:user/eks-user",
         "type": "STANDARD"
     }
 }
@@ -171,7 +171,7 @@ The following `create-access-entry` example creates an access entry of type `EC2
 ```
 aws eks create-access-entry \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:role/admin-test-ip}} \
+    --principal-arn {{arn:aws:iam::123456789012:role/admin-test-ip}} \
     --type {{EC2_LINUX}}
 ```
 Output:
@@ -180,11 +180,11 @@ Output:
 {
     "accessEntry": {
         "clusterName": "eks-customer",
-        "principalArn": "arn:aws:iam::111122223333:role/admin-test-ip",
+        "principalArn": "arn:aws:iam::123456789012:role/admin-test-ip",
         "kubernetesGroups": [
             "system:nodes"
         ],
-        "accessEntryArn": "arn:aws:eks:us-west-2:111122223333:access-entry/eks-customer/role/111122223333/admin-test-ip/accb5418-f493-f390-3e6e-c3f19f725fcp",
+        "accessEntryArn": "arn:aws:eks:us-west-2:123456789012:access-entry/eks-customer/role/123456789012/admin-test-ip/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "createdAt": "2025-05-06T19:42:45.453000-05:00",
         "modifiedAt": "2025-05-06T19:42:45.453000-05:00",
         "tags": {},
@@ -209,7 +209,7 @@ The following `create-addon` example command creates an Amazon EKS add-on with d
 aws eks create-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{my-eks-addon}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/role-name}}
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/role-name}}
 ```
 Output:
 
@@ -223,15 +223,15 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/1ec71ee1-b9c2-8915-4e17-e8be0a55a149",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createdAt": "2024-03-14T12:20:03.264000-04:00",
         "modifiedAt": "2024-03-14T12:20:03.283000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "tags": {}
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
 **Example 2: To create an Amazon EKS add-on with specific add-on version**
 The following `create-addon` example command creates an Amazon EKS add-on with specific add-on version.
 
@@ -239,7 +239,7 @@ The following `create-addon` example command creates an Amazon EKS add-on with s
 aws eks create-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{my-eks-addon}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --addon-version {{v1.16.4-eksbuild.2}}
 ```
 Output:
@@ -254,15 +254,15 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/34c71ee6-7738-6c8b-c6bd-3921a176b5ff",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "createdAt": "2024-03-14T12:30:24.507000-04:00",
         "modifiedAt": "2024-03-14T12:30:24.521000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "tags": {}
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
 **Example 3: To create an Amazon EKS add-on with custom configuration values and resolve conflicts details**
 The following `create-addon` example command creates an Amazon EKS add-on with custom configuration values and resolves conflicts details.
 
@@ -270,7 +270,7 @@ The following `create-addon` example command creates an Amazon EKS add-on with c
 aws eks create-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{my-eks-addon}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --addon-version {{v1.16.4-eksbuild.2}} \
     --configuration-values '{{{"resources":{"limits":{"cpu":"100m"}}}}}' \
     --resolve-conflicts {{OVERWRITE}}
@@ -287,16 +287,16 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/a6c71ee9-0304-9237-1be8-25af1b0f1ffb",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "createdAt": "2024-03-14T12:35:58.313000-04:00",
         "modifiedAt": "2024-03-14T12:35:58.327000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "tags": {},
         "configurationValues": "{\"resources\":{\"limits\":{\"cpu\":\"100m\"}}}"
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
 **Example 4: To create an Amazon EKS add-on with custom JSON configuration values file**
 The following `create-addon` example command creates an Amazon EKS add-on with custom configuration values and resolve conflicts details.
 
@@ -304,7 +304,7 @@ The following `create-addon` example command creates an Amazon EKS add-on with c
 aws eks create-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{my-eks-addon}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --addon-version {{v1.16.4-eksbuild.2}} \
     --configuration-values '{{file://configuration-values.json}}' \
     --resolve-conflicts {{OVERWRITE}} \
@@ -336,10 +336,10 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/d8c71ef8-fbd8-07d0-fb32-6a7be19ececd",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
         "createdAt": "2024-03-14T13:10:51.763000-04:00",
         "modifiedAt": "2024-03-14T13:10:51.777000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "tags": {
             "eks-addon-key-1": "value-1",
             "eks-addon-key-2": "value-2"
@@ -348,7 +348,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
 **Example 5: To create an Amazon EKS add-on with custom YAML configuration values file**
 The following `create-addon` example command creates an Amazon EKS add-on with custom configuration values and resolve conflicts details.
 
@@ -356,7 +356,7 @@ The following `create-addon` example command creates an Amazon EKS add-on with c
 aws eks create-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{my-eks-addon}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --addon-version {{v1.16.4-eksbuild.2}} \
     --configuration-values '{{file://configuration-values.yaml}}' \
     --resolve-conflicts {{OVERWRITE}} \
@@ -383,10 +383,10 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/d4c71efb-3909-6f36-a548-402cd4b5d59e",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
         "createdAt": "2024-03-14T13:15:45.220000-04:00",
         "modifiedAt": "2024-03-14T13:15:45.237000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "tags": {
             "eks-addon-key-3": "value-3",
             "eks-addon-key-4": "value-4"
@@ -395,7 +395,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
 +  For API details, see [CreateAddon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/create-addon.html) in *AWS CLI Command Reference*.
 
 ### `create-cluster`
@@ -404,14 +404,14 @@ For more information, see [Managing Amazon EKS add-ons - Creating an add-on](htt
 The following code example shows how to use `create-cluster`.
 
 **AWS CLI**
-**To create a new cluster**
-This example command creates a cluster named `prod` in your default region.
-Command:
+**Example 1: To create a new cluster**
+The following `create-cluster` example creates a cluster named `prod` in your default region.
 
 ```
-aws eks create-cluster --name {{prod}} \
---role-arn {{arn:aws:iam::012345678910:role/eks-service-role-AWSServiceRoleForAmazonEKS-J7ONKE3BQ4PI}} \
---resources-vpc-config {{subnetIds=subnet-6782e71e,subnet-e7e761ac,securityGroupIds=sg-6979fe18}}
+aws eks create-cluster \
+    --name {{prod}} \
+    --role-arn {{arn:aws:iam::123456789012:role/eks-service-role-AWSServiceRoleForAmazonEKS-J7ONKE3BQ4PI}} \
+    --resources-vpc-config {{subnetIds=subnet-6782e71e,subnet-e7e761ac,securityGroupIds=sg-6979fe18}}
 ```
 Output:
 
@@ -419,10 +419,10 @@ Output:
 {
     "cluster": {
         "name": "prod",
-        "arn": "arn:aws:eks:us-west-2:012345678910:cluster/prod",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/prod",
         "createdAt": 1527808069.147,
         "version": "1.10",
-        "roleArn": "arn:aws:iam::012345678910:role/eks-service-role-AWSServiceRoleForAmazonEKS-J7ONKE3BQ4PI",
+        "roleArn": "arn:aws:iam::123456789012:role/eks-service-role-AWSServiceRoleForAmazonEKS-J7ONKE3BQ4PI",
         "resourcesVpcConfig": {
             "subnetIds": [
                 "subnet-6782e71e",
@@ -438,15 +438,17 @@ Output:
     }
 }
 ```
-**To create a new cluster with private endpoint access and logging enabled**
-This example command creates a cluster named `example` in your default region with public endpoint access disabled, private endpoint access enabled, and all logging types enabled.
-Command:
+For more information, see [Create an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html) in the *Amazon EKS User Guide*.
+**Example 2: To create a new cluster with private endpoint access and logging enabled**
+The following `create-cluster` example creates a cluster named `example` in your default region with public endpoint access disabled, private endpoint access enabled, and all logging types enabled.
 
 ```
-aws eks create-cluster --name {{example}} --kubernetes-version {{1.12}} \
---role-arn {{arn:aws:iam::012345678910:role/example-cluster-ServiceRole-1XWBQWYSFRE2Q}} \
---resources-vpc-config {{subnetIds=subnet-0a188dccd2f9a632f,subnet-09290d93da4278664,subnet-0f21dd86e0e91134a,subnet-0173dead68481a583,subnet-051f70a57ed6fcab6,subnet-01322339c5c7de9b4,securityGroupIds=sg-0c5b580845a031c10,endpointPublicAccess=false,endpointPrivateAccess=true}} \
---logging '{{{"clusterLogging":[{"types":["api","audit","authenticator","controllerManager","scheduler"],"enabled":true}]}}}'
+aws eks create-cluster \
+    --name {{example}} \
+    --kubernetes-version {{1.12}} \
+    --role-arn {{arn:aws:iam::123456789012:role/example-cluster-ServiceRole-1XWBQWYSFRE2Q}} \
+    --resources-vpc-config {{subnetIds=subnet-0a188dccd2f9a632f,subnet-09290d93da4278664,subnet-0f21dd86e0e91134a,subnet-0173dead68481a583,subnet-051f70a57ed6fcab6,subnet-01322339c5c7de9b4,securityGroupIds=sg-0c5b580845a031c10,endpointPublicAccess=false,endpointPrivateAccess=true}} \
+    --logging '{{{"clusterLogging":[{"types":["api","audit","authenticator","controllerManager","scheduler"],"enabled":true}]}}}'
 ```
 Output:
 
@@ -454,10 +456,10 @@ Output:
 {
     "cluster": {
         "name": "example",
-        "arn": "arn:aws:eks:us-west-2:012345678910:cluster/example",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/example",
         "createdAt": 1565804921.901,
         "version": "1.12",
-        "roleArn": "arn:aws:iam::012345678910:role/example-cluster-ServiceRole-1XWBQWYSFRE2Q",
+        "roleArn": "arn:aws:iam::123456789012:role/example-cluster-ServiceRole-1XWBQWYSFRE2Q",
         "resourcesVpcConfig": {
             "subnetIds": [
                 "subnet-0a188dccd2f9a632f",
@@ -494,6 +496,7 @@ Output:
     }
 }
 ```
+For more information, see [Create an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html) in the *Amazon EKS User Guide*.
 +  For API details, see [CreateCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/create-cluster.html) in *AWS CLI Command Reference*.
 
 ### `create-fargate-profile`
@@ -502,13 +505,13 @@ Output:
 The following code example shows how to use `create-fargate-profile`.
 
 **AWS CLI**
-**Example 1: Create EKS Fargate Profile for a selector with a namespace**
+**Example 1: To create an EKS Fargate profile for a selector with a namespace**
 The following `create-fargate-profile` example creates an EKS Fargate Profile for a selector with a namespace.
 
 ```
 aws eks create-fargate-profile \
     --cluster-name {{my-eks-cluster}} \
-    --pod-execution-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --pod-execution-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --fargate-profile-name {{my-fargate-profile}} \
     --selectors '{{[{"namespace": "default"}]}}'
 ```
@@ -518,10 +521,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/a2c72bca-318e-abe8-8ed1-27c6d4892e9e",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-03-19T12:38:47.368000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -538,13 +541,13 @@ Output:
 }
 ```
 For more information, see [AWS Fargate profile - Creating a Fargate profile](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-fargate-profile) in the *Amazon EKS User Guide*.
-**Example 2: Create EKS Fargate Profile for a selector with a namespace and labels**
+**Example 2: To create an EKS Fargate profile for a selector with a namespace and labels**
 The following `create-fargate-profile` example creates an EKS Fargate Profile for a selector with a namespace and labels.
 
 ```
 aws eks create-fargate-profile \
     --cluster-name {{my-eks-cluster}} \
-    --pod-execution-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --pod-execution-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --fargate-profile-name {{my-fargate-profile}} \
     --selectors '{{[{"namespace": "default", "labels": {"labelname1": "labelvalue1"}}]}}'
 ```
@@ -554,10 +557,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/88c72bc7-e8a4-fa34-44e4-2f1397224bb3",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-03-19T12:33:48.125000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -577,13 +580,13 @@ Output:
 }
 ```
 For more information, see [AWS Fargate profile - Creating a Fargate profile](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-fargate-profile) in the *Amazon EKS User Guide*.
-**Example 3: Create EKS Fargate Profile for a selector with a namespace and labels, along with IDs of subnets to launch a Pod into.**
+**Example 3: To create an EKS Fargate profile for a selector with a namespace and labels, along with IDs of subnets to launch a Pod into**
 The following `create-fargate-profile` example create EKS Fargate Profile for a selector with a namespace and labels, along with IDs of subnets to launch a Pod into.
 
 ```
 aws eks create-fargate-profile \
     --cluster-name {{my-eks-cluster}} \
-    --pod-execution-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --pod-execution-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --fargate-profile-name {{my-fargate-profile}} \
     --selectors '{{[{"namespace": "default", "labels": {"labelname1": "labelvalue1"}}]}}' \
     --subnets '{{["subnet-09d912bb63ef21b9a", "subnet-04ad87f71c6e5ab4d", "subnet-0e2907431c9988b72"]}}'
@@ -594,10 +597,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/e8c72bc8-e87b-5eb6-57cb-ed4fe57577e3",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-03-19T12:35:58.640000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -617,13 +620,13 @@ Output:
 }
 ```
 For more information, see [AWS Fargate profile - Creating a Fargate profile](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-fargate-profile) in the *Amazon EKS User Guide*.
-**Example 4: Create EKS Fargate Profile for a selector with multiple namespace and labels, along with IDs of subnets to launch a Pod into**
+**Example 4: To create an EKS Fargate profile for a selector with multiple namespaces and labels, along with IDs of subnets to launch a Pod into**
 The following `create-fargate-profile` example creates an EKS Fargate Profile for a selector with multiple namespace and labels, along with IDs of subnets to launch a Pod into.
 
 ```
 aws eks create-fargate-profile \
     --cluster-name {{my-eks-cluster}} \
-    --pod-execution-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --pod-execution-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --fargate-profile-name {{my-fargate-profile}} \
     --selectors '{{[{"namespace": "default1", "labels": {"labelname1": "labelvalue1", "labelname2": "labelvalue2"}}, {"namespace": "default2", "labels": {"labelname1": "labelvalue1", "labelname2": "labelvalue2"}}]}}' \
     --subnets '{{["subnet-09d912bb63ef21b9a", "subnet-04ad87f71c6e5ab4d", "subnet-0e2907431c9988b72"]}}' \
@@ -635,10 +638,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/4cc72bbf-b766-8ee6-8d29-e62748feb3cd",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-03-19T12:15:55.271000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -669,13 +672,13 @@ Output:
 }
 ```
 For more information, see [AWS Fargate profile - Creating a Fargate profile](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#create-fargate-profile) in the *Amazon EKS User Guide*.
-**Example 5: Create EKS Fargate Profile with a wildcard selector for namespaces and labels, along with IDs of subnets to launch a Pod into**
+**Example 5: To create an EKS Fargate profile with a wildcard selector for namespaces and labels, along with IDs of subnets to launch a Pod into**
 The following `create-fargate-profile` example creates an EKS Fargate Profile for a selector with multiple namespace and labels, along with IDs of subnets to launch a Pod into.
 
 ```
 aws eks create-fargate-profile \
     --cluster-name {{my-eks-cluster}} \
-    --pod-execution-role-arn {{arn:aws:iam::111122223333:role/role-name}} \
+    --pod-execution-role-arn {{arn:aws:iam::123456789012:role/role-name}} \
     --fargate-profile-name {{my-fargate-profile}} \
     --selectors '{{[{"namespace": "prod*", "labels": {"labelname*?": "*value1"}}, {"namespace": "*dev*", "labels": {"labelname*?": "*value*"}}]}}' \
     --subnets '{{["subnet-09d912bb63ef21b9a", "subnet-04ad87f71c6e5ab4d", "subnet-0e2907431c9988b72"]}}' \
@@ -687,10 +690,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/e8c72bd6-5966-0bfe-b77b-1802893e5a6f",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-03-19T13:05:20.550000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -727,17 +730,16 @@ For more information, see [AWS Fargate profile - Creating a Fargate profile](htt
 The following code example shows how to use `create-nodegroup`.
 
 **AWS CLI**
-**Example 1: Creates a managed node group for an Amazon EKS cluster**
+**Example 1: To create a managed node group for an Amazon EKS cluster**
 The following `create-nodegroup` example creates a managed node group for an Amazon EKS cluster.
 
 ```
 aws eks create-nodegroup \
     --cluster-name {{my-eks-cluster}} \
     --nodegroup-name {{my-eks-nodegroup}} \
-    --node-role {{arn:aws:iam::111122223333:role/role-name}} \
+    --node-role {{arn:aws:iam::123456789012:role/role-name}} \
     --subnets {{"subnet-0e2907431c9988b72"}} {{"subnet-04ad87f71c6e5ab4d"}} {{"subnet-09d912bb63ef21b9a"}} \
-    --scaling-config {{minSize=1,maxSize=3,desiredSize=1}} \
-    --region {{us-east-2}}
+    --scaling-config {{minSize=1,maxSize=3,desiredSize=1}}
 ```
 Output:
 
@@ -745,7 +747,7 @@ Output:
 {
     "nodegroup": {
         "nodegroupName": "my-eks-nodegroup",
-        "nodegroupArn": "arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-nodegroup/bac7550f-b8b8-5fbb-4f3e-7502a931119e",
+        "nodegroupArn": "arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-nodegroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "version": "1.26",
         "releaseVersion": "1.26.12-20240329",
@@ -765,7 +767,7 @@ Output:
             "subnet-0e2907431c9988b72, subnet-04ad87f71c6e5ab4d, subnet-09d912bb63ef21b9a"
         ],
         "amiType": "AL2_x86_64",
-        "nodeRole": "arn:aws:iam::111122223333:role/role-name",
+        "nodeRole": "arn:aws:iam::123456789012:role/role-name",
         "diskSize": 20,
         "health": {
             "issues": []
@@ -778,20 +780,19 @@ Output:
 }
 ```
 For more information, see [Creating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html) in the *Amazon EKS User Guide*.
-**Example 2: Creates a managed node group for an Amazon EKS cluster with custom instance-types and disk-size**
+**Example 2: To create a managed node group for an Amazon EKS cluster with custom instance-types and disk-size**
 The following `create-nodegroup` example creates a managed node group for an Amazon EKS cluster with custom instance-types and disk-size.
 
 ```
 aws eks create-nodegroup \
     --cluster-name {{my-eks-cluster}} \
     --nodegroup-name {{my-eks-nodegroup}} \
-    --node-role {{arn:aws:iam::111122223333:role/role-name}} \
+    --node-role {{arn:aws:iam::123456789012:role/role-name}} \
     --subnets {{"subnet-0e2907431c9988b72"}} {{"subnet-04ad87f71c6e5ab4d"}} {{"subnet-09d912bb63ef21b9a"}} \
     --scaling-config {{minSize=1,maxSize=3,desiredSize=1}} \
     --capacity-type {{ON_DEMAND}} \
     --instance-types '{{m5.large}}' \
-    --disk-size {{50}} \
-    --region {{us-east-2}}
+    --disk-size {{50}}
 ```
 Output:
 
@@ -799,7 +800,7 @@ Output:
 {
     "nodegroup": {
         "nodegroupName": "my-eks-nodegroup",
-        "nodegroupArn": "arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-nodegroup/c0c7551b-e4f9-73d9-992c-a450fdb82322",
+        "nodegroupArn": "arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-nodegroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "clusterName": "my-eks-cluster",
         "version": "1.26",
         "releaseVersion": "1.26.12-20240329",
@@ -821,7 +822,7 @@ Output:
             "subnet-09d912bb63ef21b9a"
         ],
         "amiType": "AL2_x86_64",
-        "nodeRole": "arn:aws:iam::111122223333:role/role-name",
+        "nodeRole": "arn:aws:iam::123456789012:role/role-name",
         "diskSize": 50,
         "health": {
             "issues": []
@@ -834,14 +835,14 @@ Output:
 }
 ```
 For more information, see [Creating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/create-managed-node-group.html) in the *Amazon EKS User Guide*.
-**Example 3: Creates a managed node group for an Amazon EKS cluster with custom instance-types, disk-size, ami-type, capacity-type, update-config, labels, taints and tags.**
+**Example 3: To create a managed node group for an Amazon EKS cluster with custom instance-types, disk-size, ami-type, capacity-type, update-config, labels, taints and tags**
 The following `create-nodegroup` example creates a managed node group for an Amazon EKS cluster with custom instance-types, disk-size, ami-type, capacity-type, update-config, labels, taints and tags.
 
 ```
 aws eks create-nodegroup  \
     --cluster-name {{my-eks-cluster}} \
     --nodegroup-name {{my-eks-nodegroup}} \
-    --node-role {{arn:aws:iam::111122223333:role/role-name}} \
+    --node-role {{arn:aws:iam::123456789012:role/role-name}} \
     --subnets {{"subnet-0e2907431c9988b72"}} {{"subnet-04ad87f71c6e5ab4d"}} {{"subnet-09d912bb63ef21b9a"}} \
     --scaling-config {{minSize=1,maxSize=5,desiredSize=4}} \
     --instance-types '{{t3.large}}' \
@@ -859,7 +860,7 @@ Output:
 {
     "nodegroup": {
         "nodegroupName": "my-eks-nodegroup",
-        "nodegroupArn": "arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-nodegroup/88c75524-97af-0cb9-a9c5-7c0423ab5314",
+        "nodegroupArn": "arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-nodegroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "clusterName": "my-eks-cluster",
         "version": "1.26",
         "releaseVersion": "1.26.12-20240329",
@@ -881,7 +882,7 @@ Output:
             "subnet-09d912bb63ef21b9a"
         ],
         "amiType": "AL2_x86_64",
-        "nodeRole": "arn:aws:iam::111122223333:role/role-name",
+        "nodeRole": "arn:aws:iam::123456789012:role/role-name",
         "labels": {
             "my-eks-nodegroup-label-2": "value-2",
             "my-eks-nodegroup-label-1": "value-1"
@@ -924,7 +925,7 @@ aws eks create-pod-identity-association \
     --cluster-name {{eks-customer}} \
     --namespace {{default}} \
     --service-account {{default}} \
-    --role-arn {{arn:aws:iam::111122223333:role/my-role}}
+    --role-arn {{arn:aws:iam::123456789012:role/my-role}}
 ```
 Output:
 
@@ -934,8 +935,8 @@ Output:
         "clusterName": "eks-customer",
         "namespace": "default",
         "serviceAccount": "default",
-        "roleArn": "arn:aws:iam::111122223333:role/my-role",
-        "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-8mvwvh57cu74mgcst",
+        "roleArn": "arn:aws:iam::123456789012:role/my-role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-8mvwvh57cu74mgcst",
         "associationId": "a-8mvwvh57cu74mgcst",
         "tags": {},
         "createdAt": "2025-05-24T19:40:13.961000-05:00",
@@ -945,14 +946,14 @@ Output:
 ```
 For more information, see [Learn how EKS Pod Identity grants pods access to AWS services](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) in the *Amazon EKS User Guide*.
 **Example 2: To create an EKS Pod Identity association in EKS cluster with tags**
-The following `create-pod-identity-association` creates an EKS Pod Identity association between a service account and an IAM role in the EKS cluster with tags.
+The following `create-pod-identity-association` example creates an EKS Pod Identity association between a service account and an IAM role in the EKS cluster with tags.
 
 ```
 aws eks create-pod-identity-association \
     --cluster-name {{eks-customer}} \
     --namespace {{default}} \
     --service-account {{default}} \
-    --role-arn {{arn:aws:iam::111122223333:role/my-role}} \
+    --role-arn {{arn:aws:iam::123456789012:role/my-role}} \
     --tags {{Key1=value1,Key2=value2}}
 ```
 Output:
@@ -963,8 +964,8 @@ Output:
         "clusterName": "eks-customer",
         "namespace": "default",
         "serviceAccount": "default",
-        "roleArn": "arn:aws:iam::111122223333:role/my-role",
-        "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-9njjin9gfghecgoda",
+        "roleArn": "arn:aws:iam::123456789012:role/my-role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-9njjin9gfghecgoda",
         "associationId": "a-9njjin9gfghecgoda",
         "tags": {
             "Key2": "value2",
@@ -985,12 +986,12 @@ The following code example shows how to use `delete-access-entry`.
 
 **AWS CLI**
 **To delete an access entry associated with the cluster**
-The following `delete-access-entry` deletes an access entry associated with the EKS cluster named `eks-customer`.
+The following `delete-access-entry` example deletes an access entry associated with the EKS cluster named `eks-customer`.
 
 ```
 aws eks delete-access-entry \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:role/Admin}}
+    --principal-arn {{arn:aws:iam::123456789012:role/Admin}}
 ```
 This command produces no output.
 For more information, see [Delete access entries](https://docs.aws.amazon.com/eks/latest/userguide/deleting-access-entries.html) in the *Amazon EKS User Guide*.
@@ -1002,7 +1003,7 @@ For more information, see [Delete access entries](https://docs.aws.amazon.com/ek
 The following code example shows how to use `delete-addon`.
 
 **AWS CLI**
-**Example 1. To deletes an Amazon EKS add-on but preserve the add-on software on the EKS Cluster**
+**Example 1: To delete an Amazon EKS add-on but preserve the add-on software on the EKS cluster**
 The following `delete-addon` example command deletes an Amazon EKS add-on but preserve the add-on software on the EKS Cluster.
 
 ```
@@ -1023,15 +1024,15 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/a8c71ed3-944e-898b-9167-c763856af4b8",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createdAt": "2024-03-14T11:49:09.009000-04:00",
         "modifiedAt": "2024-03-14T12:03:49.776000-04:00",
         "tags": {}
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Deleting an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#removing-an-add-on) in the *Amazon EKS*.
-**Example 2. To deletes an Amazon EKS add-on and also delete the add-on software from the EKS Cluster**
+For more information, see [Remove an Amazon EKS add-on from a cluster](https://docs.aws.amazon.com/eks/latest/userguide/removing-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 2: To delete an Amazon EKS add-on and also delete the add-on software from the EKS cluster**
 The following `delete-addon` example command deletes an Amazon EKS add-on and also delete the add-on software from the EKS Cluster.
 
 ```
@@ -1051,15 +1052,15 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/my-eks-addon/bac71ed1-ec43-3bb6-88ea-f243cdb58954",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/my-eks-addon/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "createdAt": "2024-03-14T11:45:31.983000-04:00",
         "modifiedAt": "2024-03-14T11:58:40.136000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "tags": {}
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Deleting an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#removing-an-add-on) in the *Amazon EKS*.
+For more information, see [Remove an Amazon EKS add-on from a cluster](https://docs.aws.amazon.com/eks/latest/userguide/removing-an-add-on.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DeleteAddon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/delete-addon.html) in *AWS CLI Command Reference*.
 
 ### `delete-cluster`
@@ -1068,7 +1069,7 @@ For more information, see [Managing Amazon EKS add-ons - Deleting an add-on](htt
 The following code example shows how to use `delete-cluster`.
 
 **AWS CLI**
-**Delete an Amazon EKS cluster control plane**
+**To delete an Amazon EKS cluster control plane**
 The following `delete-cluster` example deletes an Amazon EKS cluster control plane.
 
 ```
@@ -1081,11 +1082,11 @@ Output:
 {
     "cluster": {
         "name": "my-eks-cluster",
-        "arn": "arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster",
         "createdAt": "2024-03-14T11:31:44.348000-04:00",
         "version": "1.27",
-        "endpoint": "https://DALSJ343KE23J3RN45653DSKJTT647TYD.yl4.us-east-2.eks.amazonaws.com",
-        "roleArn": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-cluster-ServiceRole-zMF6CBakwwbW",
+        "endpoint": "https://DALSJ343KE23J3RN45653DSKJTT647TYD.yl4.us-west-2.eks.amazonaws.com",
+        "roleArn": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-cluster-ServiceRole-zMF6CBakwwbW",
         "resourcesVpcConfig": {
             "subnetIds": [
                 "subnet-0fb75d2d8401716e7",
@@ -1126,7 +1127,7 @@ Output:
         },
         "identity": {
             "oidc": {
-                "issuer": "https://oidc.eks.us-east-2.amazonaws.com/id/DALSJ343KE23J3RN45653DSKJTT647TYD"
+                "issuer": "https://oidc.eks.us-west-2.amazonaws.com/id/DALSJ343KE23J3RN45653DSKJTT647TYD"
             }
         },
         "status": "DELETING",
@@ -1138,7 +1139,7 @@ Output:
             "aws:cloudformation:stack-name": "eksctl-my-eks-cluster-cluster",
             "alpha.eksctl.io/cluster-name": "my-eks-cluster",
             "karpenter.sh/discovery": "my-eks-cluster",
-            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-2:111122223333:stack/eksctl-my-eks-cluster-cluster/e752ea00-e217-11ee-beae-0a9599c8c7ed",
+            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-2:123456789012:stack/eksctl-my-eks-cluster-cluster/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "auto-delete": "no",
             "eksctl.cluster.k8s.io/v1alpha1/cluster-name": "my-eks-cluster",
             "EKS-Cluster-Name": "my-eks-cluster",
@@ -1162,7 +1163,7 @@ For more information, see [Deleting an Amazon EKS cluster](https://docs.aws.amaz
 The following code example shows how to use `delete-fargate-profile`.
 
 **AWS CLI**
-**Example 1: Create EKS Fargate Profile for a selector with a namespace**
+**To delete an EKS Fargate profile**
 The following `delete-fargate-profile` example creates an EKS Fargate Profile for a selector with a namespace.
 
 ```
@@ -1176,10 +1177,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/1ac72bb3-3fc6-2631-f1e1-98bff53bed62",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-03-19T11:48:39.975000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/role-name",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/role-name",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -1198,7 +1199,7 @@ Output:
     }
 }
 ```
-For more information, see [AWS Fargate profile - Deleting a Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html#delete-fargate-profile) in the *Amazon EKS User Guide*.
+For more information, see [AWS Fargate profile - Deleting a Fargate](https://docs.aws.amazon.com/eks/latest/userguide/delete-fargate-profile.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DeleteFargateProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/delete-fargate-profile.html) in *AWS CLI Command Reference*.
 
 ### `delete-nodegroup`
@@ -1207,7 +1208,7 @@ For more information, see [AWS Fargate profile - Deleting a Fargate](https://doc
 The following code example shows how to use `delete-nodegroup`.
 
 **AWS CLI**
-**Example 1: Delete a managed node group for an Amazon EKS cluster**
+**To delete a managed node group for an Amazon EKS cluster**
 The following `delete-nodegroup` example deletes a managed node group for an Amazon EKS cluster.
 
 ```
@@ -1221,7 +1222,7 @@ Output:
 {
     "nodegroup": {
         "nodegroupName": "my-eks-nodegroup",
-        "nodegroupArn": "arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-nodegroup/1ec75f5f-0e21-dcc0-b46e-f9c442685cd8",
+        "nodegroupArn": "arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-nodegroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "version": "1.26",
         "releaseVersion": "1.26.12-20240329",
@@ -1243,7 +1244,7 @@ Output:
             "subnet-09d912bb63ef21b9a"
         ],
         "amiType": "AL2_x86_64",
-        "nodeRole": "arn:aws:iam::111122223333:role/role-name",
+        "nodeRole": "arn:aws:iam::123456789012:role/role-name",
         "labels": {
             "my-eks-nodegroup-label-2": "value-2",
             "my-eks-nodegroup-label-1": "value-1"
@@ -1269,6 +1270,7 @@ Output:
     }
 }
 ```
+For more information, see [Delete a managed node group from your cluster](https://docs.aws.amazon.com/eks/latest/userguide/delete-managed-node-group.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DeleteNodegroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/delete-nodegroup.html) in *AWS CLI Command Reference*.
 
 ### `delete-pod-identity-association`
@@ -1293,8 +1295,8 @@ Output:
         "clusterName": "eks-customer",
         "namespace": "default",
         "serviceAccount": "default",
-        "roleArn": "arn:aws:iam::111122223333:role/s3-role",
-        "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
+        "roleArn": "arn:aws:iam::123456789012:role/s3-role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
         "associationId": "a-9njjin9gfghecgocd",
         "tags": {
             "Key2": "value2",
@@ -1327,15 +1329,15 @@ Output:
 {
     "cluster": {
         "name": "my-eks-anywhere-cluster",
-        "arn": "arn:aws:eks:us-east-2:111122223333:cluster/my-eks-anywhere-cluster",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/my-eks-anywhere-cluster",
         "createdAt": "2024-04-12T12:38:37.561000-04:00",
         "status": "DELETING",
         "tags": {},
         "connectorConfig": {
-            "activationId": "dfb5ad28-13c3-4e26-8a19-5b2457638c74",
+            "activationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "activationExpiry": "2024-04-15T12:38:37.082000-04:00",
             "provider": "EKS_ANYWHERE",
-            "roleArn": "arn:aws:iam::111122223333:role/AmazonEKSConnectorAgentRole"
+            "roleArn": "arn:aws:iam::123456789012:role/AmazonEKSConnectorAgentRole"
         }
     }
 }
@@ -1355,7 +1357,7 @@ The following `describe-access-entry` example describes an access entry for the 
 ```
 aws eks describe-access-entry \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:user/eks-admin-user}}
+    --principal-arn {{arn:aws:iam::123456789012:user/eks-admin-user}}
 ```
 Output:
 
@@ -1363,13 +1365,13 @@ Output:
 {
     "accessEntry": {
         "clusterName": "eks-customer",
-        "principalArn": "arn:aws:iam::111122223333:user/eks-admin-user",
+        "principalArn": "arn:aws:iam::123456789012:user/eks-admin-user",
         "kubernetesGroups": [],
-        "accessEntryArn": "arn:aws:eks:us-west-2:111122223333:access-entry/eks-customer/user/111122223333/eks-admin-user/0acb1bc6-cb0a-ede6-11ae-a6506e3d36p0",
+        "accessEntryArn": "arn:aws:eks:us-west-2:123456789012:access-entry/eks-customer/user/123456789012/eks-admin-user/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createdAt": "2025-04-14T22:45:48.097000-05:00",
         "modifiedAt": "2025-04-14T22:45:48.097000-05:00",
         "tags": {},
-        "username": "arn:aws:iam::111122223333:user/eks-admin-user",
+        "username": "arn:aws:iam::123456789012:user/eks-admin-user",
         "type": "STANDARD"
     }
 }
@@ -1383,7 +1385,7 @@ For more information, see [Grant IAM users access to Kubernetes with EKS access 
 The following code example shows how to use `describe-addon-configuration`.
 
 **AWS CLI**
-**Example 1: Configuration options available when creating or updating Amazon vpc-cni AddOns**
+**Example 1: To describe the configuration options available when creating or updating Amazon vpc-cni AddOns**
 The following `describe-addon-configuration` example returns the all the available configuration schema you use when an add-on is created or updated for vpc-cni add-on with respective version.
 
 ```
@@ -1400,7 +1402,8 @@ Output:
     "configurationSchema": "{\"$ref\":\"#/definitions/VpcCni\",\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"definitions\":{\"Affinity\":{\"type\":[\"object\",\"null\"]},\"EniConfig\":{\"additionalProperties\":false,\"properties\":{\"create\":{\"type\":\"boolean\"},\"region\":{\"type\":\"string\"},\"subnets\":{\"additionalProperties\":{\"additionalProperties\":false,\"properties\":{\"id\":{\"type\":\"string\"},\"securityGroups\":{\"items\":{\"type\":\"string\"},\"type\":\"array\"}},\"required\":[\"id\"],\"type\":\"object\"},\"minProperties\":1,\"type\":\"object\"}},\"required\":[\"create\",\"region\",\"subnets\"],\"type\":\"object\"},\"Env\":{\"additionalProperties\":false,\"properties\":{\"ADDITIONAL_ENI_TAGS\":{\"type\":\"string\"},\"ANNOTATE_POD_IP\":{\"format\":\"boolean\",\"type\":\"string\"},\"AWS_EC2_ENDPOINT\":{\"type\":\"string\"},\"AWS_EXTERNAL_SERVICE_CIDRS\":{\"type\":\"string\"},\"AWS_MANAGE_ENIS_NON_SCHEDULABLE\":{\"format\":\"boolean\",\"type\":\"string\"},\"AWS_VPC_CNI_NODE_PORT_SUPPORT\":{\"format\":\"boolean\",\"type\":\"string\"},\"AWS_VPC_ENI_MTU\":{\"format\":\"integer\",\"type\":\"string\"},\"AWS_VPC_K8S_CNI_CUSTOM_NETWORK_CFG\":{\"format\":\"boolean\",\"type\":\"string\"},\"AWS_VPC_K8S_CNI_EXCLUDE_SNAT_CIDRS\":{\"type\":\"string\"},\"AWS_VPC_K8S_CNI_EXTERNALSNAT\":{\"format\":\"boolean\",\"type\":\"string\"},\"AWS_VPC_K8S_CNI_LOGLEVEL\":{\"type\":\"string\"},\"AWS_VPC_K8S_CNI_LOG_FILE\":{\"type\":\"string\"},\"AWS_VPC_K8S_CNI_RANDOMIZESNAT\":{\"type\":\"string\"},\"AWS_VPC_K8S_CNI_VETHPREFIX\":{\"type\":\"string\"},\"AWS_VPC_K8S_PLUGIN_LOG_FILE\":{\"type\":\"string\"},\"AWS_VPC_K8S_PLUGIN_LOG_LEVEL\":{\"type\":\"string\"},\"CLUSTER_ENDPOINT\":{\"type\":\"string\"},\"DISABLE_INTROSPECTION\":{\"format\":\"boolean\",\"type\":\"string\"},\"DISABLE_LEAKED_ENI_CLEANUP\":{\"format\":\"boolean\",\"type\":\"string\"},\"DISABLE_METRICS\":{\"format\":\"boolean\",\"type\":\"string\"},\"DISABLE_NETWORK_RESOURCE_PROVISIONING\":{\"format\":\"boolean\",\"type\":\"string\"},\"DISABLE_POD_V6\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENABLE_BANDWIDTH_PLUGIN\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENABLE_POD_ENI\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENABLE_PREFIX_DELEGATION\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENABLE_V4_EGRESS\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENABLE_V6_EGRESS\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENI_CONFIG_ANNOTATION_DEF\":{\"type\":\"string\"},\"ENI_CONFIG_LABEL_DEF\":{\"type\":\"string\"},\"INTROSPECTION_BIND_ADDRESS\":{\"type\":\"string\"},\"IP_COOLDOWN_PERIOD\":{\"format\":\"integer\",\"type\":\"string\"},\"MAX_ENI\":{\"format\":\"integer\",\"type\":\"string\"},\"MINIMUM_IP_TARGET\":{\"format\":\"integer\",\"type\":\"string\"},\"POD_SECURITY_GROUP_ENFORCING_MODE\":{\"type\":\"string\"},\"WARM_ENI_TARGET\":{\"format\":\"integer\",\"type\":\"string\"},\"WARM_IP_TARGET\":{\"format\":\"integer\",\"type\":\"string\"},\"WARM_PREFIX_TARGET\":{\"format\":\"integer\",\"type\":\"string\"}},\"title\":\"Env\",\"type\":\"object\"},\"Init\":{\"additionalProperties\":false,\"properties\":{\"env\":{\"$ref\":\"#/definitions/InitEnv\"}},\"title\":\"Init\",\"type\":\"object\"},\"InitEnv\":{\"additionalProperties\":false,\"properties\":{\"DISABLE_TCP_EARLY_DEMUX\":{\"format\":\"boolean\",\"type\":\"string\"},\"ENABLE_V6_EGRESS\":{\"format\":\"boolean\",\"type\":\"string\"}},\"title\":\"InitEnv\",\"type\":\"object\"},\"Limits\":{\"additionalProperties\":false,\"properties\":{\"cpu\":{\"type\":\"string\"},\"memory\":{\"type\":\"string\"}},\"title\":\"Limits\",\"type\":\"object\"},\"NodeAgent\":{\"additionalProperties\":false,\"properties\":{\"enableCloudWatchLogs\":{\"format\":\"boolean\",\"type\":\"string\"},\"enablePolicyEventLogs\":{\"format\":\"boolean\",\"type\":\"string\"},\"healthProbeBindAddr\":{\"format\":\"integer\",\"type\":\"string\"},\"metricsBindAddr\":{\"format\":\"integer\",\"type\":\"string\"}},\"title\":\"NodeAgent\",\"type\":\"object\"},\"Resources\":{\"additionalProperties\":false,\"properties\":{\"limits\":{\"$ref\":\"#/definitions/Limits\"},\"requests\":{\"$ref\":\"#/definitions/Limits\"}},\"title\":\"Resources\",\"type\":\"object\"},\"Tolerations\":{\"additionalProperties\":false,\"items\":{\"type\":\"object\"},\"type\":\"array\"},\"VpcCni\":{\"additionalProperties\":false,\"properties\":{\"affinity\":{\"$ref\":\"#/definitions/Affinity\"},\"enableNetworkPolicy\":{\"format\":\"boolean\",\"type\":\"string\"},\"enableWindowsIpam\":{\"format\":\"boolean\",\"type\":\"string\"},\"eniConfig\":{\"$ref\":\"#/definitions/EniConfig\"},\"env\":{\"$ref\":\"#/definitions/Env\"},\"init\":{\"$ref\":\"#/definitions/Init\"},\"livenessProbeTimeoutSeconds\":{\"type\":\"integer\"},\"nodeAgent\":{\"$ref\":\"#/definitions/NodeAgent\"},\"readinessProbeTimeoutSeconds\":{\"type\":\"integer\"},\"resources\":{\"$ref\":\"#/definitions/Resources\"},\"tolerations\":{\"$ref\":\"#/definitions/Tolerations\"}},\"title\":\"VpcCni\",\"type\":\"object\"}},\"description\":\"vpc-cni\"}"
 }
 ```
-**Example 2: Configuration options available when creating or updating Amazon coredns AddOns**
+For more information, see [Determine fields you can customize for Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-field-management.html) in the *Amazon EKS User Guide*.
+**Example 2: To describe the configuration options available when creating or updating Amazon coredns AddOns**
 The following `describe-addon-configuration` example returns all the available configuration schema you use when an add-on is created or updated for coredns add-on with respective version.
 
 ```
@@ -1417,7 +1420,7 @@ Output:
     "configurationSchema": "{\"$ref\":\"#/definitions/Coredns\",\"$schema\":\"http://json-schema.org/draft-06/schema#\",\"definitions\":{\"Coredns\":{\"additionalProperties\":false,\"properties\":{\"computeType\":{\"type\":\"string\"},\"corefile\":{\"description\":\"Entire corefile contents to use with installation\",\"type\":\"string\"},\"nodeSelector\":{\"additionalProperties\":{\"type\":\"string\"},\"type\":\"object\"},\"replicaCount\":{\"type\":\"integer\"},\"resources\":{\"$ref\":\"#/definitions/Resources\"}},\"title\":\"Coredns\",\"type\":\"object\"},\"Limits\":{\"additionalProperties\":false,\"properties\":{\"cpu\":{\"type\":\"string\"},\"memory\":{\"type\":\"string\"}},\"title\":\"Limits\",\"type\":\"object\"},\"Resources\":{\"additionalProperties\":false,\"properties\":{\"limits\":{\"$ref\":\"#/definitions/Limits\"},\"requests\":{\"$ref\":\"#/definitions/Limits\"}},\"title\":\"Resources\",\"type\":\"object\"}}}"
 }
 ```
-For more information, see [Creating or updating a kubeconfig file for an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS*.
+For more information, see [Determine fields you can customize for Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-field-management.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DescribeAddonConfiguration](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-addon-configuration.html) in *AWS CLI Command Reference*.
 
 ### `describe-addon-versions`
@@ -1426,7 +1429,7 @@ For more information, see [Creating or updating a kubeconfig file for an Amazon 
 The following code example shows how to use `describe-addon-versions`.
 
 **AWS CLI**
-**Example 1: List all the available addons for EKS Cluster**
+**Example 1: To list all the available addons for EKS Cluster**
 The following `describe-addon-versions` example list all the available AWS addons.
 
 ```
@@ -1479,8 +1482,8 @@ Output:
 |  accuknox_kubearmor                         |  aws-marketplace |  AccuKnox             |  security               |
 +---------------------------------------------+------------------+-----------------------+-------------------------+
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
-**Example 2: List all the available addons for specified Kubernetes version supported for EKS**
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 2: To list all the available addons for specified Kubernetes version supported for EKS**
 The following `describe-addon-versions` example list all the available addons for specified Kubernetes version supported for EKS.
 
 ```
@@ -1529,8 +1532,8 @@ Output:
 |  accuknox_kubearmor                         |  aws-marketplace |  AccuKnox             |  security               |
 +---------------------------------------------+------------------+-----------------------+-------------------------+
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
-**Example 3: List all the available vpc-cni addons version for specified Kubernetes version supported for EKS**
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 3: To list all the available vpc-cni addons version for specified Kubernetes version supported for EKS**
 The following `describe-addon-versions` example list all the available vpc-cni addons version for specified Kubernetes version supported for EKS.
 
 ```
@@ -1566,7 +1569,7 @@ Output:
     "v1.12.0-eksbuild.2"
 ]
 ```
-For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#creating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Creating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/creating-an-add-on.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DescribeAddonVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-addon-versions.html) in *AWS CLI Command Reference*.
 
 ### `describe-addon`
@@ -1575,7 +1578,7 @@ For more information, see [Managing Amazon EKS add-ons - Creating an add-on](htt
 The following code example shows how to use `describe-addon`.
 
 **AWS CLI**
-**Describe actively running EKS addon in your Amazon EKS cluster**
+**To describe an actively running EKS addon in your Amazon EKS cluster**
 The following `describe-addon` example actively running EKS addon in your Amazon EKS cluster.
 
 ```
@@ -1595,10 +1598,10 @@ Output:
         "health": {
             "issues": []
         },
-        "addonArn": "arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/vpc-cni/0ec71efc-98dd-3203-60b0-4b939b2a5e5f",
+        "addonArn": "arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/vpc-cni/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createdAt": "2024-03-14T13:18:45.417000-04:00",
         "modifiedAt": "2024-03-14T13:18:49.557000-04:00",
-        "serviceAccountRoleArn": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm",
+        "serviceAccountRoleArn": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm",
         "tags": {
             "eks-addon-key-3": "value-3",
             "eks-addon-key-4": "value-4"
@@ -1607,6 +1610,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DescribeAddon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-addon.html) in *AWS CLI Command Reference*.
 
 ### `describe-cluster`
@@ -1615,7 +1619,7 @@ Output:
 The following code example shows how to use `describe-cluster`.
 
 **AWS CLI**
-**Describe actively running EKS addon in your Amazon EKS cluster**
+**To describe an Amazon EKS cluster**
 The following `describe-cluster` example actively running EKS addon in your Amazon EKS cluster.
 
 ```
@@ -1628,11 +1632,11 @@ Output:
 {
     "cluster": {
         "name": "my-eks-cluster",
-        "arn": "arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster",
         "createdAt": "2024-03-14T11:31:44.348000-04:00",
         "version": "1.26",
-        "endpoint": "https://JSA79429HJDASKJDJ8223829MNDNASW.yl4.us-east-2.eks.amazonaws.com",
-        "roleArn": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-cluster-ServiceRole-zMF6CBakwwbW",
+        "endpoint": "https://JSA79429HJDASKJDJ8223829MNDNASW.yl4.us-west-2.eks.amazonaws.com",
+        "roleArn": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-cluster-ServiceRole-zMF6CBakwwbW",
         "resourcesVpcConfig": {
             "subnetIds": [
                 "subnet-0fb75d2d8401716e7",
@@ -1673,7 +1677,7 @@ Output:
         },
         "identity": {
             "oidc": {
-                "issuer": "https://oidc.eks.us-east-2.amazonaws.com/id/JSA79429HJDASKJDJ8223829MNDNASW"
+                "issuer": "https://oidc.eks.us-west-2.amazonaws.com/id/JSA79429HJDASKJDJ8223829MNDNASW"
             }
         },
         "status": "ACTIVE",
@@ -1685,7 +1689,7 @@ Output:
             "aws:cloudformation:stack-name": "eksctl-my-eks-cluster-cluster",
             "alpha.eksctl.io/cluster-name": "my-eks-cluster",
             "karpenter.sh/discovery": "my-eks-cluster",
-            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-2:111122223333:stack/eksctl-my-eks-cluster-cluster/e752ea00-e217-11ee-beae-0a9599c8c7ed",
+            "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-2:123456789012:stack/eksctl-my-eks-cluster-cluster/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "auto-delete": "no",
             "eksctl.cluster.k8s.io/v1alpha1/cluster-name": "my-eks-cluster",
             "EKS-Cluster-Name": "my-eks-cluster",
@@ -1703,6 +1707,7 @@ Output:
     }
 }
 ```
+For more information, see [Amazon EKS cluster lifecycle and configuration](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DescribeCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-cluster.html) in *AWS CLI Command Reference*.
 
 ### `describe-fargate-profile`
@@ -1711,7 +1716,7 @@ Output:
 The following code example shows how to use `describe-fargate-profile`.
 
 **AWS CLI**
-**Describe a Fargate profile**
+**To describe a Fargate profile**
 The following `describe-fargate-profile` example describes a Fargate profile.
 
 ```
@@ -1725,10 +1730,10 @@ Output:
 {
     "fargateProfile": {
         "fargateProfileName": "my-fargate-profile",
-        "fargateProfileArn": "arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/96c766ce-43d2-f9c9-954c-647334391198",
+        "fargateProfileArn": "arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "createdAt": "2024-04-11T10:42:52.486000-04:00",
-        "podExecutionRoleArn": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-farga-FargatePodExecutionRole-1htfAaJdJUEO",
+        "podExecutionRoleArn": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-farga-FargatePodExecutionRole-1htfAaJdJUEO",
         "subnets": [
             "subnet-09d912bb63ef21b9a",
             "subnet-04ad87f71c6e5ab4d",
@@ -1756,6 +1761,7 @@ Output:
     }
 }
 ```
+For more information, see [Define which Pods use AWS Fargate when launched](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DescribeFargateProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-fargate-profile.html) in *AWS CLI Command Reference*.
 
 ### `describe-identity-provider-config`
@@ -1764,7 +1770,7 @@ Output:
 The following code example shows how to use `describe-identity-provider-config`.
 
 **AWS CLI**
-**Describe an identity provider configuration associated to your Amazon EKS Cluster**
+**To describe an identity provider configuration associated to your Amazon EKS Cluster**
 The following `describe-identity-provider-config` example describes an identity provider configuration associated to your Amazon EKS Cluster.
 
 ```
@@ -1779,9 +1785,9 @@ Output:
     "identityProviderConfig": {
         "oidc": {
             "identityProviderConfigName": "my-identity-provider",
-            "identityProviderConfigArn": "arn:aws:eks:us-east-2:111122223333:identityproviderconfig/my-eks-cluster/oidc/my-identity-provider/8ac76722-78e4-cec1-ed76-d49eea058622",
+            "identityProviderConfigArn": "arn:aws:eks:us-west-2:123456789012:identityproviderconfig/my-eks-cluster/oidc/my-identity-provider/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "clusterName": "my-eks-cluster",
-            "issuerUrl": "https://oidc.eks.us-east-2.amazonaws.com/id/38D6A4619A0A69E342B113ED7F1A7652",
+            "issuerUrl": "https://oidc.eks.us-west-2.amazonaws.com/id/38D6A4619A0A69E342B113ED7F1A7652",
             "clientId": "kubernetes",
             "usernameClaim": "email",
             "usernamePrefix": "my-username-prefix",
@@ -1814,14 +1820,14 @@ The following `describe-insight` example returns the details about the insight s
 ```
 aws eks describe-insight \
     --cluster-name {{eks-customer}} \
-    --id {{38ea7a64-a14f-4e0e-95c7-8dbcab3c3623}}
+    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "insight": {
-        "id": "38ea7a64-a14f-4e0e-95c7-8dbcab3c3623",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "name": "Kubelet version skew",
         "category": "UPGRADE_READINESS",
         "kubernetesVersion": "1.33",
@@ -1853,7 +1859,7 @@ For more information, see [View cluster insights](https://docs.aws.amazon.com/ek
 The following code example shows how to use `describe-nodegroup`.
 
 **AWS CLI**
-**Describe a managed node group for an Amazon EKS cluster**
+**To describe a managed node group for an Amazon EKS cluster**
 The following `describe-nodegroup` example describes a managed node group for an Amazon EKS cluster.
 
 ```
@@ -1867,7 +1873,7 @@ Output:
 {
     "nodegroup": {
         "nodegroupName": "my-eks-nodegroup",
-        "nodegroupArn": "arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-nodegroup/a8c75f2f-df78-a72f-4063-4b69af3de5b1",
+        "nodegroupArn": "arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-nodegroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "version": "1.26",
         "releaseVersion": "1.26.12-20240329",
@@ -1889,7 +1895,7 @@ Output:
             "subnet-09d912bb63ef21b9a"
         ],
         "amiType": "AL2_x86_64",
-        "nodeRole": "arn:aws:iam::111122223333:role/role-name",
+        "nodeRole": "arn:aws:iam::123456789012:role/role-name",
         "labels": {},
         "resources": {
             "autoScalingGroups": [
@@ -1909,6 +1915,7 @@ Output:
     }
 }
 ```
+For more information, see [Simplify node lifecycle with managed node groups](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DescribeNodegroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/describe-nodegroup.html) in *AWS CLI Command Reference*.
 
 ### `describe-pod-identity-association`
@@ -1933,8 +1940,8 @@ Output:
         "clusterName": "eks-customer",
         "namespace": "default",
         "serviceAccount": "default",
-        "roleArn": "arn:aws:iam::111122223333:role/my-role",
-        "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
+        "roleArn": "arn:aws:iam::123456789012:role/my-role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
         "associationId": "a-9njjin9gfghecgocd",
         "tags": {
             "Key2": "value2",
@@ -1960,14 +1967,14 @@ The following `describe-update` example describes an update for a cluster named.
 ```
 aws eks describe-update \
     --name {{my-eks-cluster}} \
-    --update-id {{10bddb13-a71b-425a-b0a6-71cd03e59161}}
+    --update-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "update": {
-        "id": "10bddb13-a71b-425a-b0a6-71cd03e59161",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "Successful",
         "type": "EndpointAccessUpdate",
         "params": [
@@ -1992,14 +1999,14 @@ The following `describe-update` example describes an update for a cluster named.
 ```
 aws eks describe-update \
     --name {{my-eks-cluster}} \
-    --update-id {{e4994991-4c0f-475a-a040-427e6da52966}}
+    --update-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
 {
     "update": {
-        "id": "e4994991-4c0f-475a-a040-427e6da52966",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "status": "Successful",
         "type": "AssociateEncryptionConfig",
         "params": [
@@ -2020,14 +2027,14 @@ The following `describe-update` example describes an update for a cluster named.
 ```
 aws eks describe-update \
     --name {{my-eks-cluster}} \
-    --update-id {{b5f0ba18-9a87-4450-b5a0-825e6e84496f}}
+    --update-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE33333}}
 ```
 Output:
 
 ```
 {
     "update": {
-        "id": "b5f0ba18-9a87-4450-b5a0-825e6e84496f",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "status": "Successful",
         "type": "VersionUpdate",
         "params": [
@@ -2055,12 +2062,12 @@ The following code example shows how to use `disassociate-access-policy`.
 
 **AWS CLI**
 **To disassociate the access policy from an access entry**
-The following `disassociate-access-policy` removes the access policy associated with the access entry.
+The following `disassociate-access-policy` example removes the access policy associated with the access entry.
 
 ```
 aws eks disassociate-access-policy \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:role/Admin}} \
+    --principal-arn {{arn:aws:iam::123456789012:role/Admin}} \
     --policy-arn {{arn:aws:eks::aws:cluster-access-policy/AmazonEKSEditPolicy}}
 ```
 This command produces no output.
@@ -2073,7 +2080,7 @@ For more information, see [Associate access policies with access entries](https:
 The following code example shows how to use `disassociate-identity-provider-config`.
 
 **AWS CLI**
-**Disassociate identity provider to your Amazon EKS Cluster**
+**To disassociate an identity provider from your Amazon EKS Cluster**
 The following `disassociate-identity-provider-config` example disassociates an identity provider to your Amazon EKS Cluster.
 
 ```
@@ -2086,7 +2093,7 @@ Output:
 ```
 {
     "update": {
-        "id": "5f78d14e-c57b-4857-a3e4-cf664ae20949",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "DisassociateIdentityProviderConfig",
         "params": [
@@ -2100,7 +2107,7 @@ Output:
     }
 }
 ```
-For more information, see [Authenticate users for your cluster from an OpenID Connect identity provider - Disassociate an OIDC identity provider from your cluster](https://docs.aws.amazon.com/eks/latest/userguide/authenticate-oidc-identity-provider.html#disassociate-oidc-identity-provider) in the *Amazon EKS User Guide*.
+For more information, see [Authenticate users for your cluster from an OpenID Connect identity provider - Disassociate an OIDC identity provider from your cluster](https://docs.aws.amazon.com/eks/latest/userguide/disassociate-oidc-identity-provider.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DisassociateIdentityProviderConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/disassociate-identity-provider-config.html) in *AWS CLI Command Reference*.
 
 ### `get-token`
@@ -2109,7 +2116,7 @@ For more information, see [Authenticate users for your cluster from an OpenID Co
 The following code example shows how to use `get-token`.
 
 **AWS CLI**
-**Example 1: Get an authentication token for an Amazon EKS Cluster named `my-eks-cluster`**
+**Example 1: To get an authentication token for an Amazon EKS Cluster named `my-eks-cluster`**
 The following `get-token` example gets an authentication token for an Amazon EKS Cluster named my-eks-cluster.
 
 ```
@@ -2129,13 +2136,14 @@ Output:
     }
 }
 ```
-**Example 2: Gets an authentication token for an Amazon EKS Cluster named `my-eks-cluster` by assuming this roleARN for credentials when signing the token**
+For more information, see [Connect kubectl to an EKS cluster by creating a kubeconfig file](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS User Guide*.
+**Example 2: To get an authentication token for an Amazon EKS Cluster named `my-eks-cluster` by assuming a role ARN for credentials when signing the token**
 The following `get-token` example gets an authentication token for an Amazon EKS Cluster named my-eks-cluster by assuming this roleARN for credentials when signing the token.
 
 ```
 aws eks get-token \
     --cluster-name {{my-eks-cluster}} \
-    --role-arn {{arn:aws:iam::111122223333:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}}
+    --role-arn {{arn:aws:iam::123456789012:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}}
 ```
 Output:
 
@@ -2150,6 +2158,7 @@ Output:
     }
 }
 ```
+For more information, see [Connect kubectl to an EKS cluster by creating a kubeconfig file](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS User Guide*.
 +  For API details, see [GetToken](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/get-token.html) in *AWS CLI Command Reference*.
 
 ### `list-access-entries`
@@ -2159,7 +2168,7 @@ The following code example shows how to use `list-access-entries`.
 
 **AWS CLI**
 **To list the access entries for an EKS cluster**
-The following `list-access-entries` returns the list of access entries associated with the EKS cluster `eks-customer`.
+The following `list-access-entries` example returns the list of access entries associated with the EKS cluster `eks-customer`.
 
 ```
 aws eks list-access-entries \
@@ -2170,10 +2179,10 @@ Output:
 ```
 {
     "accessEntries": [
-        "arn:aws:iam::111122223333:role/Admin",
-        "arn:aws:iam::111122223333:role/admin-test-ip",
-        "arn:aws:iam::111122223333:role/assume-worker-node-role",
-        "arn:aws:iam::111122223333:user/eks-admin-user"
+        "arn:aws:iam::123456789012:role/Admin",
+        "arn:aws:iam::123456789012:role/admin-test-ip",
+        "arn:aws:iam::123456789012:role/assume-worker-node-role",
+        "arn:aws:iam::123456789012:user/eks-admin-user"
     ]
 }
 ```
@@ -2187,7 +2196,7 @@ The following code example shows how to use `list-access-policies`.
 
 **AWS CLI**
 **To list all available access policies**
-This `list-access-policies` example returns the list of all available access policies.
+The following `list-access-policies` example returns the list of all available access policies.
 
 ```
 aws eks list-access-policies
@@ -2285,7 +2294,7 @@ For more information, see [Associate access policies with access entries](https:
 The following code example shows how to use `list-addons`.
 
 **AWS CLI**
-**List all the installed add-ons in your Amazon EKS cluster named `my-eks-cluster`**
+**To list all the installed add-ons in your Amazon EKS cluster named `my-eks-cluster`**
 The following `list-addons` example lists all the installed add-ons in your Amazon EKS cluster named my-eks-cluster.
 
 ```
@@ -2302,6 +2311,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListAddons](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-addons.html) in *AWS CLI Command Reference*.
 
 ### `list-associated-access-policies`
@@ -2316,7 +2326,7 @@ The following `list-associated-access-policies` example returns the list of acce
 ```
 aws eks list-associated-access-policies \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:role/Admin}}
+    --principal-arn {{arn:aws:iam::123456789012:role/Admin}}
 ```
 Output:
 
@@ -2334,7 +2344,7 @@ Output:
         }
     ],
     "clusterName": "eks-customer",
-    "principalArn": "arn:aws:iam::111122223333:role/Admin"
+    "principalArn": "arn:aws:iam::123456789012:role/Admin"
 }
 ```
 For more information, see [Grant IAM users access to Kubernetes with EKS access entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) in the *Amazon EKS User Guide*.
@@ -2364,6 +2374,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EKS cluster lifecycle and configuration](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-clusters.html) in *AWS CLI Command Reference*.
 
 ### `list-fargate-profiles`
@@ -2388,6 +2399,7 @@ Output:
     ]
 }
 ```
+For more information, see [Define which Pods use AWS Fargate when launched](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListFargateProfiles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-fargate-profiles.html) in *AWS CLI Command Reference*.
 
 ### `list-identity-provider-configs`
@@ -2396,7 +2408,7 @@ Output:
 The following code example shows how to use `list-identity-provider-configs`.
 
 **AWS CLI**
-**List identity providers associated to an Amazon EKS Cluster**
+**To list identity providers associated to an Amazon EKS Cluster**
 The following `list-identity-provider-configs` example lists identity provider associated to an Amazon EKS Cluster.
 
 ```
@@ -2429,7 +2441,7 @@ The following `list-insights` example returns the list of all insights checked a
 
 ```
 aws eks list-insights \
---cluster-name {{eks-customer}}
+    --cluster-name {{eks-customer}}
 ```
 Output:
 
@@ -2437,7 +2449,7 @@ Output:
 {
     "insights": [
         {
-            "id": "38ea7a64-a14f-4e0e-95c7-8dbcab3c3616",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "name": "Kubelet version skew",
             "category": "UPGRADE_READINESS",
             "kubernetesVersion": "1.33",
@@ -2450,7 +2462,7 @@ Output:
             }
         },
         {
-            "id": "9cd91472-f99c-45a9-b7d7-54d4900dee23",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "name": "EKS add-on version compatibility",
             "category": "UPGRADE_READINESS",
             "kubernetesVersion": "1.33",
@@ -2463,7 +2475,7 @@ Output:
             }
         },
         {
-            "id": "0deb269d-b1e1-458c-a2b4-7a57f940c875",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "name": "Cluster health issues",
             "category": "UPGRADE_READINESS",
             "kubernetesVersion": "1.33",
@@ -2476,7 +2488,7 @@ Output:
             }
         },
         {
-            "id": "214fa274-344f-420b-812a-5049ce72c9ww",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "name": "kube-proxy version skew",
             "category": "UPGRADE_READINESS",
             "kubernetesVersion": "1.33",
@@ -2500,7 +2512,7 @@ For more information, see [View cluster insights](https://docs.aws.amazon.com/ek
 The following code example shows how to use `list-nodegroups`.
 
 **AWS CLI**
-**List all the node groups in an Amazon EKS cluster**
+**To list all the node groups in an Amazon EKS cluster**
 The following `list-nodegroups` example list all the node groups in an Amazon EKS cluster.
 
 ```
@@ -2517,6 +2529,7 @@ Output:
     ]
 }
 ```
+For more information, see [Simplify node lifecycle with managed node groups](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListNodegroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-nodegroups.html) in *AWS CLI Command Reference*.
 
 ### `list-pod-identity-associations`
@@ -2526,7 +2539,7 @@ The following code example shows how to use `list-pod-identity-associations`.
 
 **AWS CLI**
 **Example 1: To list the Pod Identity associations in an EKS cluster**
-The following `list-pod-identity-associations` returns the list of Pod Identity associations associated with the EKS cluster named `eks-customer` in all namespaces and service accounts.
+The following `list-pod-identity-associations` example returns the list of Pod Identity associations associated with the EKS cluster named `eks-customer` in all namespaces and service accounts.
 
 ```
 aws eks list-pod-identity-associations \
@@ -2541,21 +2554,21 @@ Output:
             "clusterName": "eks-customer",
             "namespace": "default",
             "serviceAccount": "default",
-            "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
+            "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
             "associationId": "a-9njjin9gfghecgocd"
         },
         {
             "clusterName": "eks-customer",
             "namespace": "kube-system",
             "serviceAccount": "eks-customer",
-            "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-dvtacahdvjn01ffbc",
+            "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-dvtacahdvjn01ffbc",
             "associationId": "a-dvtacahdvjn01ffbc"
         },
         {
             "clusterName": "eks-customer",
             "namespace": "kube-system",
             "serviceAccount": "coredns",
-            "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-yrpsdroc4ei7k6xps",
+            "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-yrpsdroc4ei7k6xps",
             "associationId": "a-yrpsdroc4ei7k6xps"
         }
     ]
@@ -2563,7 +2576,7 @@ Output:
 ```
 For more information, see [Learn how EKS Pod Identity grants pods access to AWS services](https://docs.aws.amazon.com/eks/latest/userguide/pod-identities.html) in the *Amazon EKS User Guide*.
 **Example 2: To list the Pod Identity associations in an EKS cluster based on namespace and service account**
-The following `list-pod-identity-associations` returns the list of Pod Identity associations in the EKS cluster based on namespace and service account.
+The following `list-pod-identity-associations` example returns the list of Pod Identity associations in the EKS cluster based on namespace and service account.
 
 ```
 aws eks list-pod-identity-associations \
@@ -2580,7 +2593,7 @@ Output:
             "clusterName": "eks-customer",
             "namespace": "kube-system",
             "serviceAccount": "eks-customer",
-            "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-dvtacahdvjn01ffbc",
+            "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-dvtacahdvjn01ffbc",
             "associationId": "a-dvtacahdvjn01ffbc"
         }
     ]
@@ -2600,7 +2613,7 @@ The following `list-tags-for-resource` example lists all the tags for an Amazon 
 
 ```
 aws eks list-tags-for-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster}}
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster}}
 ```
 Output:
 
@@ -2610,7 +2623,7 @@ Output:
         "aws:cloudformation:stack-name": "eksctl-my-eks-cluster-cluster",
         "alpha.eksctl.io/cluster-name": "my-eks-cluster",
         "karpenter.sh/discovery": "my-eks-cluster",
-        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-2:111122223333:stack/eksctl-my-eks-cluster-cluster/e752ea00-e217-11ee-beae-0a9599c8c7ed",
+        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-2:123456789012:stack/eksctl-my-eks-cluster-cluster/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "auto-delete": "no",
         "eksctl.cluster.k8s.io/v1alpha1/cluster-name": "my-eks-cluster",
         "EKS-Cluster-Name": "my-eks-cluster",
@@ -2621,12 +2634,13 @@ Output:
     }
 }
 ```
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 **Example 2: To list all the tags for an Amazon EKS Node group ARN**
 The following `list-tags-for-resource` example lists all the tags for an Amazon EKS Node group ARN.
 
 ```
 aws eks list-tags-for-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-managed-node-group/60c71ed2-2cfb-020f-a5f4-ad32477f198c}}
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-managed-node-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -2634,7 +2648,7 @@ Output:
 {
     "tags": {
         "aws:cloudformation:stack-name": "eksctl-my-eks-cluster-nodegroup-my-eks-managed-node-group",
-        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-east-2:111122223333:stack/eksctl-my-eks-cluster-nodegroup-my-eks-managed-node-group/eaa20310-e219-11ee-b851-0ab9ad8228ff",
+        "aws:cloudformation:stack-id": "arn:aws:cloudformation:us-west-2:123456789012:stack/eksctl-my-eks-cluster-nodegroup-my-eks-managed-node-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "eksctl.cluster.k8s.io/v1alpha1/cluster-name": "my-eks-cluster",
         "EKS-Cluster-Name": "my-eks-cluster",
         "alpha.eksctl.io/nodegroup-type": "managed",
@@ -2652,12 +2666,13 @@ Output:
     }
 }
 ```
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 **Example 3: To list all the tags on an Amazon EKS Fargate profil ARNe**
 The following `list-tags-for-resource` example lists all the tags for an Amazon EKS Fargate profile ARN.
 
 ```
 aws eks list-tags-for-resource  \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:fargateprofile/my-eks-cluster/my-fargate-profile/d6c76780-e541-0725-c816-36754cab734b}}
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:fargateprofile/my-eks-cluster/my-fargate-profile/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444}}
 ```
 Output:
 
@@ -2669,12 +2684,13 @@ Output:
     }
 }
 ```
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 **Example 4: To list all the tags for an Amazon EKS Add-on ARN**
 The following `list-tags-for-resource` example lists all the tags for an Amazon EKS Add-on ARN.
 
 ```
 aws eks list-tags-for-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:addon/my-eks-cluster/vpc-cni/0ec71efc-98dd-3203-60b0-4b939b2a5e5f}}
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:addon/my-eks-cluster/vpc-cni/a1b2c3d4-5678-90ab-cdef-EXAMPLE55555}}
 ```
 Output:
 
@@ -2686,12 +2702,13 @@ Output:
     }
 }
 ```
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 **Example 5: To list all the tags for an Amazon EKS OIDC identity provider ARN**
 The following `list-tags-for-resource` example lists all the tags for an Amazon EKS OIDC identity provider ARN.
 
 ```
 aws eks list-tags-for-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:identityproviderconfig/my-eks-cluster/oidc/my-identity-provider/8ac76722-78e4-cec1-ed76-d49eea058622}}
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:identityproviderconfig/my-eks-cluster/oidc/my-identity-provider/a1b2c3d4-5678-90ab-cdef-EXAMPLE66666}}
 ```
 Output:
 
@@ -2702,30 +2719,28 @@ Output:
     }
 }
 ```
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
-### `list-update`
-<a name="eks_ListUpdate_cli_2_topic"></a>
+### `list-updates`
+<a name="eks_ListUpdates_cli_2_topic"></a>
 
-The following code example shows how to use `list-update`.
+The following code example shows how to use `list-updates`.
 
 **AWS CLI**
-**Example 1: To lists the updates associated with an Amazon EKS Cluster name**
-The following `list-updates` example lists all the update IDs for an Amazon EKS Cluster name.
+**Example 1: To list the updates for a cluster**
+The following `list-updates` example lists the current updates for a cluster named `example` in your default region.
 
 ```
 aws eks list-updates \
-    --name {{my-eks-cluster}}
+    --name {{example}}
 ```
 Output:
 
 ```
 {
     "updateIds": [
-        "5f78d14e-c57b-4857-a3e4-cf664ae20949",
-        "760e5a3f-adad-48c7-88d3-7ac283c09c26",
-        "cd4ec863-bc55-47d5-a377-3971502f529b",
-        "f12657ce-e869-4f17-b158-a82ab8b7d937"
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     ]
 }
 ```
@@ -2742,11 +2757,11 @@ Output:
 ```
 {
     "updateIds": [
-        "8c6c1bef-61fe-42ac-a242-89412387b8e7"
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     ]
 }
 ```
-**Example 3: To list all the update IDs on an Amazon EKS Add-one**
+**Example 3: To list all the update IDs for an Amazon EKS add-on**
 The following `list-updates` example lists all the update IDs for an Amazon EKS Add-on.
 
 ```
@@ -2759,34 +2774,11 @@ Output:
 ```
 {
     "updateIds": [
-        "9cdba8d4-79fb-3c83-afe8-00b508d33268"
+        "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
     ]
 }
 ```
-+  For API details, see [ListUpdate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-update.html) in *AWS CLI Command Reference*.
-
-### `list-updates`
-<a name="eks_ListUpdates_cli_2_topic"></a>
-
-The following code example shows how to use `list-updates`.
-
-**AWS CLI**
-**To list the updates for a cluster**
-This example command lists the current updates for a cluster named `example` in your default region.
-Command:
-
-```
-aws eks list-updates --name {{example}}
-```
-Output:
-
-```
-{
-    "updateIds": [
-        "10bddb13-a71b-425a-b0a6-71cd03e59161"
-    ]
-}
-```
+For more information, see [Update existing cluster to new Kubernetes version](https://docs.aws.amazon.com/eks/latest/userguide/update-cluster.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListUpdates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-updates.html) in *AWS CLI Command Reference*.
 
 ### `register-cluster`
@@ -2795,13 +2787,13 @@ Output:
 The following code example shows how to use `register-cluster`.
 
 **AWS CLI**
-**Example 1: Register an external EKS\_ANYWHERE Kubernetes cluster to Amazon EKS**
+**Example 1: To register an external EKS\_ANYWHERE Kubernetes cluster to Amazon EKS**
 The following `register-cluster` example registers an external EKS\_ANYWHERE Kubernetes cluster to Amazon EKS.
 
 ```
 aws eks register-cluster \
     --name {{my-eks-anywhere-cluster}} \
-    --connector-config '{{roleArn=arn:aws:iam::111122223333:role/AmazonEKSConnectorAgentRole,provider=EKS_ANYWHERE}}'
+    --connector-config '{{roleArn=arn:aws:iam::123456789012:role/AmazonEKSConnectorAgentRole,provider=EKS_ANYWHERE}}'
 ```
 Output:
 
@@ -2809,7 +2801,7 @@ Output:
 {
     "cluster": {
         "name": "my-eks-anywhere-cluster",
-        "arn": "arn:aws:eks:us-east-2:111122223333:cluster/my-eks-anywhere-cluster",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/my-eks-anywhere-cluster",
         "createdAt": "2024-04-12T12:38:37.561000-04:00",
         "status": "PENDING",
         "tags": {},
@@ -2818,19 +2810,19 @@ Output:
             "activationCode": "xxxxxxxxACTIVATION_CODExxxxxxxx",
             "activationExpiry": "2024-04-15T12:38:37.082000-04:00",
             "provider": "EKS_ANYWHERE",
-            "roleArn": "arn:aws:iam::111122223333:role/AmazonEKSConnectorAgentRole"
+            "roleArn": "arn:aws:iam::123456789012:role/AmazonEKSConnectorAgentRole"
         }
     }
 }
 ```
 For more information, see [Connecting an external cluster](https://docs.aws.amazon.com/eks/latest/userguide/connecting-cluster.html) in the *Amazon EKS User Guide*.
-**Example 2: Register any external Kubernetes cluster to Amazon EKS**
+**Example 2: To register any external Kubernetes cluster to Amazon EKS**
 The following `register-cluster` example registers an external EKS\_ANYWHERE Kubernetes cluster to Amazon EKS.
 
 ```
 aws eks register-cluster \
     --name {{my-eks-anywhere-cluster}} \
-    --connector-config '{{roleArn=arn:aws:iam::111122223333:role/AmazonEKSConnectorAgentRole,provider=OTHER}}'
+    --connector-config '{{roleArn=arn:aws:iam::123456789012:role/AmazonEKSConnectorAgentRole,provider=OTHER}}'
 ```
 Output:
 
@@ -2838,7 +2830,7 @@ Output:
 {
     "cluster": {
         "name": "my-onprem-k8s-cluster",
-        "arn": "arn:aws:eks:us-east-2:111122223333:cluster/my-onprem-k8s-cluster",
+        "arn": "arn:aws:eks:us-west-2:123456789012:cluster/my-onprem-k8s-cluster",
         "createdAt": "2024-04-12T12:42:10.861000-04:00",
         "status": "PENDING",
         "tags": {},
@@ -2847,7 +2839,7 @@ Output:
             "activationCode": "xxxxxxxxACTIVATION_CODExxxxxxxx",
             "activationExpiry": "2024-04-15T12:42:10.339000-04:00",
             "provider": "OTHER",
-            "roleArn": "arn:aws:iam::111122223333:role/AmazonEKSConnectorAgentRole"
+            "roleArn": "arn:aws:iam::123456789012:role/AmazonEKSConnectorAgentRole"
         }
     }
 }
@@ -2866,19 +2858,21 @@ The following `tag-resource` example adds the specified tags to an Amazon EKS Cl
 
 ```
 aws eks tag-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster}} \
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster}} \
     --tag '{{my-eks-cluster-test-1=test-value-1,my-eks-cluster-dev-1=dev-value-2}}'
 ```
 This command produces no output.
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 **Example 2: To add the specified tags to an Amazon EKS Node group**
 The following `tag-resource` example adds the specified tags to an Amazon EKS Node group.
 
 ```
 aws eks tag-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-managed-node-group/60c71ed2-2cfb-020f-a5f4-ad32477f198c}} \
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-managed-node-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag '{{my-eks-nodegroup-test-1=test-value-1,my-eks-nodegroup-dev-1=dev-value-2}}'
 ```
 This command produces no output.
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -2892,19 +2886,21 @@ The following `untag-resource` example deletes the specified tags from an Amazon
 
 ```
 aws eks untag-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster}} \
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster}} \
     --tag-keys {{"my-eks-cluster-test-1"}} {{"my-eks-cluster-dev-1"}}
 ```
 This command produces no output.
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 **Example 2: To deletes the specified tags from an Amazon EKS Node group**
 The following `untag-resource` example deletes the specified tags from an Amazon EKS Node group.
 
 ```
 aws eks untag-resource \
-    --resource-arn {{arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-managed-node-group/60c71ed2-2cfb-020f-a5f4-ad32477f198c}} \
+    --resource-arn {{arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-managed-node-group/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag-keys {{"my-eks-nodegroup-test-1"}} {{"my-eks-nodegroup-dev-1"}}
 ```
 This command produces no output.
+For more information, see [Organize Amazon EKS resources with tags](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the *Amazon EKS User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-access-entry`
@@ -2914,12 +2910,12 @@ The following code example shows how to use `update-access-entry`.
 
 **AWS CLI**
 **To update an access entry for an EKS cluster**
-The following `update-access-entry` updates an access entry for the EKS cluster by adding the Kubernetes group `tester`.
+The following `update-access-entry` example updates an access entry for the EKS cluster by adding the Kubernetes group `tester`.
 
 ```
 aws eks update-access-entry \
     --cluster-name {{eks-customer}} \
-    --principal-arn {{arn:aws:iam::111122223333:role/Admin}} \
+    --principal-arn {{arn:aws:iam::123456789012:role/Admin}} \
     --kubernetes-groups {{tester}}
 ```
 Output:
@@ -2928,15 +2924,15 @@ Output:
 {
     "accessEntry": {
         "clusterName": "eks-customer",
-        "principalArn": "arn:aws:iam::111122223333:role/Admin",
+        "principalArn": "arn:aws:iam::123456789012:role/Admin",
         "kubernetesGroups": [
             "tester"
         ],
-        "accessEntryArn": "arn:aws:eks:us-west-2:111122223333:access-entry/eks-customer/role/111122223333/Admin/d2cb8183-d6ec-b82a-d967-eca21902a4b4",
+        "accessEntryArn": "arn:aws:eks:us-west-2:123456789012:access-entry/eks-customer/role/123456789012/Admin/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "createdAt": "2025-05-24T11:02:04.432000-05:00",
         "modifiedAt": "2025-05-24T17:08:01.608000-05:00",
         "tags": {},
-        "username": "arn:aws:sts::111122223333:assumed-role/Admin/{{SessionName}}",
+        "username": "arn:aws:sts::123456789012:assumed-role/Admin/{{SessionName}}",
         "type": "STANDARD"
     }
 }
@@ -2950,43 +2946,43 @@ For more information, see [Update access entries](https://docs.aws.amazon.com/ek
 The following code example shows how to use `update-addon`.
 
 **AWS CLI**
-**Example 1. To update an Amazon EKS add-on with service account role ARN**
+**Example 1: To update an Amazon EKS add-on with service account role ARN**
 The following `update-addon` example command updates an Amazon EKS add-on with service account role ARN.
 
 ```
 aws eks update-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{vpc-cni}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}}
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}}
 ```
 Output:
 
 ```
 {
     "update": {
-        "id": "c00d2de2-c2e4-3d30-929e-46b8edec2ce4",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "AddonUpdate",
         "params": [
             {
                 "type": "ServiceAccountRoleArn",
-                "value": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
+                "value": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
             }
         ],
-        "updatedAt": "2024-04-12T16:04:55.614000-04:00",
+        "createdAt": "2024-04-12T16:04:55.614000-04:00",
         "errors": []
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#updating-an-add-on) in the *Amazon EKS User Guide*.
-**Example 2. To update an Amazon EKS add-on with specific add-on version**
+For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/updating-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 2: To update an Amazon EKS add-on with specific add-on version**
 The following `update-addon` example command updates an Amazon EKS add-on with specific add-on version.
 
 ```
 aws eks update-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{vpc-cni}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
     --addon-version {{v1.16.4-eksbuild.2}}
 ```
 Output:
@@ -2994,7 +2990,7 @@ Output:
 ```
 {
     "update": {
-        "id": "f58dc0b0-2b18-34bd-bc6a-e4abc0011f36",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "status": "InProgress",
         "type": "AddonUpdate",
         "params": [
@@ -3004,7 +3000,7 @@ Output:
             },
             {
                 "type": "ServiceAccountRoleArn",
-                "value": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
+                "value": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
             }
         ],
         "createdAt": "2024-04-12T16:07:16.550000-04:00",
@@ -3012,15 +3008,15 @@ Output:
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#updating-an-add-on) in the *Amazon EKS User Guide*.
-**Example 3. To update an Amazon EKS add-on with custom configuration values and resolve conflicts details**
+For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/updating-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 3: To update an Amazon EKS add-on with custom configuration values and resolve conflicts details**
 The following `update-addon` example command updates an Amazon EKS add-on with custom configuration values and resolve conflicts details.
 
 ```
 aws eks update-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{vpc-cni}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
     --addon-version {{v1.16.4-eksbuild.2}} \
     --configuration-values '{{{"resources": {"limits":{"cpu":"100m"}, "requests":{"cpu":"50m"}}}}}' \
     --resolve-conflicts {{PRESERVE}}
@@ -3030,7 +3026,7 @@ Output:
 ```
 {
     "update": {
-        "id": "cd9f2173-a8d8-3004-a90f-032f14326520",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "status": "InProgress",
         "type": "AddonUpdate",
         "params": [
@@ -3040,7 +3036,7 @@ Output:
             },
             {
                 "type": "ServiceAccountRoleArn",
-                "value": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
+                "value": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
             },
             {
                 "type": "ResolveConflicts",
@@ -3056,15 +3052,15 @@ Output:
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#updating-an-add-on) in the *Amazon EKS User Guide*.
-**Example 4. To update an Amazon EKS add-on with custom JSON configuration values file**
+For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/updating-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 4: To update an Amazon EKS add-on with custom JSON configuration values file**
 The following `update-addon` example command updates an Amazon EKS add-on with custom JSON configuration values and resolve conflicts details.
 
 ```
 aws eks update-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{vpc-cni}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
     --addon-version {{v1.17.1-eksbuild.1}} \
     --configuration-values '{{file://configuration-values.json}}' \
     --resolve-conflicts {{PRESERVE}}
@@ -3091,7 +3087,7 @@ Output:
 ```
 {
     "update": {
-        "id": "6881a437-174f-346b-9a63-6e91763507cc",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
         "status": "InProgress",
         "type": "AddonUpdate",
         "params": [
@@ -3101,7 +3097,7 @@ Output:
             },
             {
                 "type": "ServiceAccountRoleArn",
-                "value": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
+                "value": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
             },
             {
                 "type": "ResolveConflicts",
@@ -3117,15 +3113,15 @@ Output:
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#updating-an-add-on) in the *Amazon EKS User Guide*.
-**Example 5. To update an Amazon EKS add-on with custom YAML configuration values file**
+For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/updating-an-add-on.html) in the *Amazon EKS User Guide*.
+**Example 5: To update an Amazon EKS add-on with custom YAML configuration values file**
 The following `update-addon` example command updates an Amazon EKS add-on with custom YAML configuration values and resolve conflicts details.
 
 ```
 aws eks update-addon \
     --cluster-name {{my-eks-cluster}} \
     --addon-name {{vpc-cni}} \
-    --service-account-role-arn {{arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
+    --service-account-role-arn {{arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm}} \
     --addon-version {{v1.18.0-eksbuild.1}} \
     --configuration-values '{{file://configuration-values.yaml}}' \
     --resolve-conflicts {{PRESERVE}}
@@ -3146,7 +3142,7 @@ Output:
 ```
 {
     "update": {
-        "id": "a067a4c9-69d0-3769-ace9-d235c5b16701",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE55555",
         "status": "InProgress",
         "type": "AddonUpdate",
         "params": [
@@ -3156,7 +3152,7 @@ Output:
             },
             {
                 "type": "ServiceAccountRoleArn",
-                "value": "arn:aws:iam::111122223333:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
+                "value": "arn:aws:iam::123456789012:role/eksctl-my-eks-cluster-addon-vpc-cni-Role1-YfakrqOC1UTm"
             },
             {
                 "type": "ResolveConflicts",
@@ -3172,7 +3168,7 @@ Output:
     }
 }
 ```
-For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/managing-add-ons.html#updating-an-add-on) in the *Amazon EKS User Guide*.
+For more information, see [Managing Amazon EKS add-ons - Updating an add-on](https://docs.aws.amazon.com/eks/latest/userguide/updating-an-add-on.html) in the *Amazon EKS User Guide*.
 +  For API details, see [UpdateAddon](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/update-addon.html) in *AWS CLI Command Reference*.
 
 ### `update-cluster-config`
@@ -3181,20 +3177,20 @@ For more information, see [Managing Amazon EKS add-ons - Updating an add-on](htt
 The following code example shows how to use `update-cluster-config`.
 
 **AWS CLI**
-**To update cluster endpoint access**
-This example command updates a cluster to disable endpoint public access and enable private endpoint access.
-Command:
+**Example 1: To update cluster endpoint access**
+The following `update-cluster-config` example updates a cluster to disable endpoint public access and enable private endpoint access.
 
 ```
-aws eks update-cluster-config --name {{example}} \
---resources-vpc-config {{endpointPublicAccess=false,endpointPrivateAccess=true}}
+aws eks update-cluster-config \
+    --name {{example}} \
+    --resources-vpc-config {{endpointPublicAccess=false,endpointPrivateAccess=true}}
 ```
 Output:
 
 ```
 {
     "update": {
-        "id": "ec883c93-2e9e-407c-a22f-8f6fa6e67d4f",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "EndpointAccessUpdate",
         "params": [
@@ -3212,20 +3208,21 @@ Output:
     }
 }
 ```
-**To enable logging for a cluster**
-This example command enables all cluster control plane logging types for a cluster named `example`.
-Command:
+For more information, see [Cluster API server endpoint](https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html) in the *Amazon EKS User Guide*.
+**Example 2: To enable logging for a cluster**
+The following `update-cluster-config` example enables all cluster control plane logging types for a cluster named `example`.
 
 ```
-aws eks update-cluster-config --name {{example}} \
---logging '{{{"clusterLogging":[{"types":["api","audit","authenticator","controllerManager","scheduler"],"enabled":true}]}}}'
+aws eks update-cluster-config \
+    --name {{example}} \
+    --logging '{{{"clusterLogging":[{"types":["api","audit","authenticator","controllerManager","scheduler"],"enabled":true}]}}}'
 ```
 Output:
 
 ```
 {
     "update": {
-        "id": "7551c64b-1d27-4b1e-9f8e-c45f056eb6fd",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "status": "InProgress",
         "type": "LoggingUpdate",
         "params": [
@@ -3239,6 +3236,7 @@ Output:
     }
 }
 ```
+For more information, see [Send control plane logs to CloudWatch Logs](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html) in the *Amazon EKS User Guide*.
 +  For API details, see [UpdateClusterConfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/update-cluster-config.html) in *AWS CLI Command Reference*.
 
 ### `update-cluster-version`
@@ -3260,7 +3258,7 @@ Output:
 ```
 {
     "update": {
-        "id": "e4091a28-ea14-48fd-a8c7-975aeb469e8a",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "VersionUpdate",
         "params": [
@@ -3287,7 +3285,7 @@ For more information, see [Updating an Amazon EKS cluster Kubernetes version](ht
 The following code example shows how to use `update-kubeconfig`.
 
 **AWS CLI**
-**Example 1: Configures your kubectl by creating or updating the kubeconfig so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
+**Example 1: To configure your kubectl by creating or updating the kubeconfig so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
 The following `update-kubeconfig` example configures your kubectl by creating or updating the kubeconfig so that you can connect to an Amazon EKS Cluster named my-eks-cluster.
 
 ```
@@ -3297,30 +3295,30 @@ aws eks update-kubeconfig \
 Output:
 
 ```
-Updated context arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster in /Users/xxx/.kube/config
+Updated context arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster in /Users/xxx/.kube/config
 ```
 For more information, see [Creating or updating a kubeconfig file for an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS User Guide*.
-**Example 2: Configures your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication) so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
+**Example 2: To configure your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication) so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
 The following `update-kubeconfig` example configures your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication) so that you can connect to an Amazon EKS Cluster named my-eks-cluster.
 
 ```
 aws eks update-kubeconfig \
     --name {{my-eks-cluster}} \
-    --role-arn {{arn:aws:iam::111122223333:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}}
+    --role-arn {{arn:aws:iam::123456789012:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}}
 ```
 Output:
 
 ```
-Updated context arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster in /Users/xxx/.kube/config
+Updated context arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster in /Users/xxx/.kube/config
 ```
 For more information, see [Creating or updating a kubeconfig file for an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS User Guide*.
-**Example 3: Configures your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication along with custom cluster alias and user-alias) so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
+**Example 3: To configure your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication along with custom cluster alias and user-alias) so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
 The following `update-kubeconfig` example configures your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication along with custom cluster alias and user-alias) so that you can connect to an Amazon EKS Cluster named my-eks-cluster.
 
 ```
 aws eks update-kubeconfig \
     --name {{my-eks-cluster}} \
-    --role-arn {{arn:aws:iam::111122223333:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}} \
+    --role-arn {{arn:aws:iam::123456789012:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}} \
     --alias {{stage-eks-cluster}} \
     --user-alias {{john}}
 ```
@@ -3330,13 +3328,13 @@ Output:
 Updated context stage-eks-cluster in /Users/dubaria/.kube/config
 ```
 For more information, see [Creating or updating a kubeconfig file for an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS User Guide*.
-**Example 4: Print kubeconfig file entries for review and configures your kubectl so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
+**Example 4: To print kubeconfig file entries for review and configure your kubectl so that you can connect to an Amazon EKS Cluster named `my-eks-cluster`**
 The following `update-kubeconfig` example configures your kubectl by creating or updating the kubeconfig (with role-arn option to assume a role for cluster authentication along with custom cluster alias and user-alias) so that you can connect to an Amazon EKS Cluster named my-eks-cluster.
 
 ```
 aws eks update-kubeconfig \
     --name {{my-eks-cluster}} \
-    --role-arn {{arn:aws:iam::111122223333:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}} \
+    --role-arn {{arn:aws:iam::123456789012:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM}} \
     --alias {{stage-eks-cluster}} \
     --user-alias {{john}} \
     --verbose
@@ -3348,7 +3346,7 @@ Updated context stage-eks-cluster in /Users/dubaria/.kube/config
 Entries:
 
 context:
-cluster: arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster
+cluster: arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster
 user: john
 name: stage-eks-cluster
 
@@ -3358,7 +3356,7 @@ exec:
     apiVersion: client.authentication.k8s.io/v1beta1
     args:
     - --region
-    - us-east-2
+    - us-west-2
     - eks
     - get-token
     - --cluster-name
@@ -3366,13 +3364,13 @@ exec:
     - --output
     - json
     - --role
-    - arn:aws:iam::111122223333:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM
+    - arn:aws:iam::123456789012:role/eksctl-EKS-Linux-Cluster-v1-24-cluster-ServiceRole-j1k7AfTIQtnM
     command: aws
 
 cluster:
 certificate-authority-data: xxx_CA_DATA_xxx
-server: https://DALSJ343KE23J3RN45653DSKJTT647TYD.yl4.us-east-2.eks.amazonaws.com
-name: arn:aws:eks:us-east-2:111122223333:cluster/my-eks-cluster
+server: https://DALSJ343KE23J3RN45653DSKJTT647TYD.yl4.us-west-2.eks.amazonaws.com
+name: arn:aws:eks:us-west-2:123456789012:cluster/my-eks-cluster
 ```
 For more information, see [Creating or updating a kubeconfig file for an Amazon EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html) in the *Amazon EKS User Guide*.
 +  For API details, see [UpdateKubeconfig](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/update-kubeconfig.html) in *AWS CLI Command Reference*.
@@ -3383,7 +3381,7 @@ For more information, see [Creating or updating a kubeconfig file for an Amazon 
 The following code example shows how to use `update-nodegroup-config`.
 
 **AWS CLI**
-**Example 1: Update a managed node group to add new labels and taint to EKS worker node for an Amazon EKS cluster**
+**Example 1: To update a managed node group to add new labels and taint to EKS worker node for an Amazon EKS cluster**
 The following `update-nodegroup-config` example updates a managed node group to add new labels and taint to EKS worker node for an Amazon EKS cluster.
 
 ```
@@ -3398,7 +3396,7 @@ Output:
 ```
 {
     "update": {
-        "id": "e66d21d3-bd8b-3ad1-a5aa-b196dc08c7c1",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "ConfigUpdate",
         "params": [
@@ -3417,7 +3415,7 @@ Output:
 }
 ```
 For more information, see [Updating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html) in the *Amazon EKS User Guide*.
-**Example 2: Update a managed node group to remove labels and taint for the EKS worker node for an Amazon EKS cluster**
+**Example 2: To update a managed node group to remove labels and taint for the EKS worker node for an Amazon EKS cluster**
 The following `update-nodegroup-config` example updates a managed node group to remove labels and taint for the EKS worker node for an Amazon EKS cluster.
 
 ```
@@ -3432,7 +3430,7 @@ Output:
 ```
 {
     "update": {
-        "id": "67a08692-9e59-3ace-a916-13929f44cec3",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "status": "InProgress",
         "type": "ConfigUpdate",
         "params": [
@@ -3451,7 +3449,7 @@ Output:
 }
 ```
 For more information, see [Updating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html) in the *Amazon EKS User Guide*.
-**Example 3: Update a managed node group to remove and add labels and taint for the EKS worker node for an Amazon EKS cluster**
+**Example 3: To update a managed node group to remove and add labels and taint for the EKS worker node for an Amazon EKS cluster**
 The following `update-nodegroup-config` example updates a managed node group to remove and add labels and taint for the EKS worker node for an Amazon EKS cluster.
 
 ```
@@ -3466,7 +3464,7 @@ Output:
 ```
 {
     "update": {
-        "id": "4a9c8c45-6ac7-3115-be71-d6412a2339b7",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
         "status": "InProgress",
         "type": "ConfigUpdate",
         "params": [
@@ -3493,7 +3491,7 @@ Output:
 }
 ```
 For more information, see [Updating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html) in the *Amazon EKS User Guide*.
-**Example 4: Update a managed node group to update scaling-config and update-config for the EKS worker node for an Amazon EKS cluster**
+**Example 4: To update a managed node group to update scaling-config and update-config for the EKS worker node for an Amazon EKS cluster**
 The following `update-nodegroup-config` example updates a managed node group to update scaling-config and update-config for the EKS worker node for an Amazon EKS cluster.
 
 ```
@@ -3508,7 +3506,7 @@ Output:
 ```
 {
     "update": {
-        "id": "a977160f-59bf-3023-805d-c9826e460aea",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
         "status": "InProgress",
         "type": "ConfigUpdate",
         "params": [
@@ -3543,7 +3541,7 @@ For more information, see [Updating a managed node group](https://docs.aws.amazo
 The following code example shows how to use `update-nodegroup-version`.
 
 **AWS CLI**
-**Example 1: Update the Kubernetes version or AMI version of an Amazon EKS managed node group**
+**Example 1: To update the Kubernetes version or AMI version of an Amazon EKS managed node group to the latest available version**
 The following `update-nodegroup-version` example updates the Kubernetes version or AMI version of an Amazon EKS managed node group to the latest available version for your Kubernetes cluster.
 
 ```
@@ -3557,7 +3555,7 @@ Output:
 ```
 {
     "update": {
-        "id": "a94ebfc3-6bf8-307a-89e6-7dbaa36421f7",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "status": "InProgress",
         "type": "VersionUpdate",
         "params": [
@@ -3576,7 +3574,7 @@ Output:
 }
 ```
 For more information, see [Updating a managed node group](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html) in the *Amazon EKS User Guide*.
-**Example 2: Update the Kubernetes version or AMI version of an Amazon EKS managed node group**
+**Example 2: To update the Kubernetes version or AMI version of an Amazon EKS managed node group to a specified AMI release version**
 The following `update-nodegroup-version` example updates the Kubernetes version or AMI version of an Amazon EKS managed node group to the specified AMI release version.
 
 ```
@@ -3592,7 +3590,7 @@ Output:
 ```
 {
     "update": {
-        "id": "4db06fe1-088d-336b-bdcd-3fdb94995fb7",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
         "status": "InProgress",
         "type": "VersionUpdate",
         "params": [
@@ -3620,13 +3618,13 @@ The following code example shows how to use `update-pod-identity-association`.
 
 **AWS CLI**
 **To update the EKS Pod Identity association**
-The following `update-pod-identity-association` example updates an EKS Pod Identity association by changing the associated IAM role from `arn:aws:iam::111122223333:role/my-role` to `arn:aws:iam::111122223333:role/s3-role` for association ID `a-9njjin9gfghecgocd`. This API only allows updating the associated IAM role.
+The following `update-pod-identity-association` example updates an EKS Pod Identity association by changing the associated IAM role from `arn:aws:iam::123456789012:role/my-role` to `arn:aws:iam::123456789012:role/s3-role` for association ID `a-9njjin9gfghecgocd`. This API only allows updating the associated IAM role.
 
 ```
 aws eks update-pod-identity-association \
     --cluster-name {{eks-customer}} \
     --association-id {{a-9njjin9gfghecgocd}} \
-    --role-arn {{arn:aws:iam::111122223333:role/s3-role}}
+    --role-arn {{arn:aws:iam::123456789012:role/s3-role}}
 ```
 Output:
 
@@ -3636,8 +3634,8 @@ Output:
         "clusterName": "eks-customer",
         "namespace": "default",
         "serviceAccount": "default",
-        "roleArn": "arn:aws:iam::111122223333:role/s3-role",
-        "associationArn": "arn:aws:eks:us-west-2:111122223333:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
+        "roleArn": "arn:aws:iam::123456789012:role/s3-role",
+        "associationArn": "arn:aws:eks:us-west-2:123456789012:podidentityassociation/eks-customer/a-9njjin9gfghecgocd",
         "associationId": "a-9njjin9gfghecgocd",
         "tags": {
             "Key2": "value2",

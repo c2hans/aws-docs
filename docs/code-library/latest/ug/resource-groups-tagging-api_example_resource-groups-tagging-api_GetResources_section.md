@@ -38,7 +38,7 @@ Output:
     ]
 }
 ```
-For more information, see [GetResources](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetResources.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [Finding resources to tag](https://docs.aws.amazon.com/tag-editor/latest/userguide/find-resources-to-tag.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [GetResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/get-resources.html) in *AWS CLI Command Reference*.
 
 ------

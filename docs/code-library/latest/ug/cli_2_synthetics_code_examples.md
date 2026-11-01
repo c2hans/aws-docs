@@ -31,7 +31,7 @@ The following `associate-resource` example associates a canary with a group name
 ```
 aws synthetics associate-resource \
     --group-identifier {{demo_group}} \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary}}
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary}}
 ```
 This command produces no output.
 For more information, see [Synthetic monitoring (canaries)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html) in the *Amazon CloudWatch User Guide*.
@@ -50,7 +50,7 @@ The following `create-canary` example creates a canary named `demo_canary`.
 aws synthetics create-canary \
     --name {{demo_canary}} \
     --code '{{{"S3Bucket": "artifacts3bucket", "S3Key":"demo_canary.zip", "Handler": "index.lambda_handler"}}}' \
-    --artifact-s3-location {{s3://amzn-s3-demo-bucket/demo_canary.zip}} \
+    --artifact-s3-location {{s3://amzn-s3-demo-bucket2/demo_canary.zip}} \
     --execution-role-arn {{arn:aws:iam::123456789012:role/demo_canary_role}} \
     --schedule Expression="rate(10 minutes)" \
     --runtime-version {{syn-nodejs-puppeteer-9.1}}
@@ -60,7 +60,7 @@ Output:
 ```
 {
     "Canary": {
-        "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+        "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name": "demo_canary",
         "Code": {
             "Handler": "index.lambda_handler"
@@ -85,7 +85,7 @@ Output:
             "Created": "2024-10-15T19:03:08.826000+05:30",
             "LastModified": "2024-10-15T19:03:08.826000+05:30"
         },
-        "ArtifactS3Location": "amzn-s3-demo-bucket/demo_canary.zip",
+        "ArtifactS3Location": "amzn-s3-demo-bucket2/demo_canary.zip",
         "RuntimeVersion": "syn-nodejs-puppeteer-9.1",
         "Tags": {}
     }
@@ -114,7 +114,7 @@ Output:
     "Group": {
         "Id": "example123",
         "Name": "demo_group",
-        "Arn": "arn:aws:synthetics:us-east-1:123456789012:group:example123",
+        "Arn": "arn:aws:synthetics:us-west-2:123456789012:group:example123",
         "Tags": {},
         "CreatedTime": "2024-10-15T14:47:23.811000+05:30",
         "LastModifiedTime": "2024-10-15T14:47:23.811000+05:30"
@@ -178,7 +178,7 @@ Output:
         {
             "CanaryName": "demo_canary",
             "LastRun": {
-                "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+                "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
                 "Name": "demo_canary",
                 "Status": {
                     "State": "PASSED",
@@ -189,7 +189,7 @@ Output:
                     "Started": "2024-10-15T19:20:39.691000+05:30",
                     "Completed": "2024-10-15T19:20:58.211000+05:30"
                 },
-                "ArtifactS3Location": "cw-syn-results-123456789012-us-east-1/canary/us-east-1/demo_canary-abc-example1234/2024/10/15/13/50-39-690"
+                "ArtifactS3Location": "cw-syn-results-123456789012-us-west-2/canary/us-west-2/demo_canary-abc-example1234/2024/10/15/13/50-39-690"
             }
         }
     ]
@@ -216,10 +216,10 @@ Output:
 {
     "Canaries": [
         {
-            "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "demo_canary",
             "Code": {
-                "SourceLocationArn": "arn:aws:lambda:us-east-1:123456789012:layer:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example11111b8:1",
+                "SourceLocationArn": "arn:aws:lambda:us-west-2:123456789012:layer:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example11111b8:1",
                 "Handler": "pageLoadBlueprint.handler"
             },
             "ExecutionRoleArn": "arn:aws:iam::123456789012:role/service-role/CloudWatchSyntheticsRole-demo_canary-a12-a123bc456789",
@@ -242,8 +242,8 @@ Output:
                 "LastModified": "2024-10-15T18:55:40.540000+05:30",
                 "LastStarted": "2024-10-15T18:55:40.540000+05:30"
             },
-            "ArtifactS3Location": "cw-syn-results-123456789012-us-east-1/canary/us-east-1/demo_canary-a12-a123bc456789",
-            "EngineArn": "arn:aws:lambda:us-east-1:123456789012:function:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example111118:1",
+            "ArtifactS3Location": "cw-syn-results-123456789012-us-west-2/canary/us-west-2/demo_canary-a12-a123bc456789",
+            "EngineArn": "arn:aws:lambda:us-west-2:123456789012:function:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example111118:1",
             "RuntimeVersion": "syn-nodejs-puppeteer-9.1",
             "Tags": {
                 "blueprint": "heartbeat"
@@ -350,7 +350,7 @@ The following `disassociate-resource` example removes a canary from the group na
 ```
 aws synthetics disassociate-resource \
     --group-identifier {{demo_group}} \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary}}
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary}}
 ```
 This command produces no output.
 For more information, see [Synthetic monitoring (canaries)](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html) in the *Amazon CloudWatch User Guide*.
@@ -375,7 +375,7 @@ Output:
 {
     "CanaryRuns": [
         {
-            "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Name": "demo_canary",
             "Status": {
                 "State": "PASSED",
@@ -386,7 +386,7 @@ Output:
                 "Started": "2024-10-16T10:38:57.013000+05:30",
                 "Completed": "2024-10-16T10:39:25.793000+05:30"
             },
-            "ArtifactS3Location": "cw-syn-results-123456789012-us-east-1/canary/us-east-1/demo_canary-abc-example1234/2024/10/15/13/50-39-690"
+            "ArtifactS3Location": "cw-syn-results-123456789012-us-west-2/canary/us-west-2/demo_canary-abc-example1234/2024/10/15/13/50-39-690"
         }
     ]
 }
@@ -412,10 +412,10 @@ Output:
 ```
 {
     "Canary": {
-        "Id": "a1b2c3d4-5678-90ab-cdef-example11111",
+        "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "Name": "demo_canary",
         "Code": {
-            "SourceLocationArn": "arn:aws:lambda:us-east-1:123456789012:layer:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example111118:1",
+            "SourceLocationArn": "arn:aws:lambda:us-west-2:123456789012:layer:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example111118:1",
             "Handler": "pageLoadBlueprint.handler"
         },
         "ExecutionRoleArn": "arn:aws:iam::123456789012:role/demo_canary_role",
@@ -438,8 +438,8 @@ Output:
             "LastModified": "2024-10-15T18:55:40.540000+05:30",
             "LastStarted": "2024-10-15T18:55:40.540000+05:30"
         },
-        "ArtifactS3Location": "cw-syn-results-123456789012-us-east-1/canary/us-east-1/demo_canary-a12-a123bc456789",
-        "EngineArn": "arn:aws:lambda:us-east-1:123456789012:function:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example111118:1",
+        "ArtifactS3Location": "cw-syn-results-123456789012-us-west-2/canary/us-west-2/demo_canary-a12-a123bc456789",
+        "EngineArn": "arn:aws:lambda:us-west-2:123456789012:function:cwsyn-demo_canary-a1b2c3d4-5678-90ab-cdef-example111118:1",
         "RuntimeVersion": "syn-nodejs-puppeteer-9.1",
         "Tags": {
             "blueprint": "heartbeat"
@@ -470,7 +470,7 @@ Output:
     "Group": {
         "Id": "example123",
         "Name": "demo_group",
-        "Arn": "arn:aws:synthetics:us-east-1:123456789012:group:example123",
+        "Arn": "arn:aws:synthetics:us-west-2:123456789012:group:example123",
         "Tags": {},
         "CreatedTime": "2024-10-15T14:47:23.811000+05:30",
         "LastModifiedTime": "2024-10-15T14:47:23.811000+05:30"
@@ -491,7 +491,7 @@ The following `list-associated-groups` example returns a list of the groups asso
 
 ```
 aws synthetics list-associated-groups \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary}}
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary}}
 ```
 Output:
 
@@ -501,7 +501,7 @@ Output:
         {
             "Id": "example123",
             "Name": "demo_group",
-            "Arn": "arn:aws:synthetics:us-east-1:123456789012:group:example123"
+            "Arn": "arn:aws:synthetics:us-west-2:123456789012:group:example123"
         }
     ]
 }
@@ -527,7 +527,7 @@ Output:
 ```
 {
     "Resources": [
-        "arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary"
+        "arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary"
     ]
 }
 ```
@@ -554,7 +554,7 @@ Output:
         {
             "Id": "example123",
             "Name": "demo_group",
-            "Arn": "arn:aws:synthetics:us-east-1:123456789012:group:example123"
+            "Arn": "arn:aws:synthetics:us-west-2:123456789012:group:example123"
         }
     ]
 }
@@ -573,7 +573,7 @@ The following `list-tags-for-resource` example returns the tags associated with 
 
 ```
 aws synthetics list-tags-for-resource \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary}}
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary}}
 ```
 Output:
 
@@ -589,7 +589,7 @@ The following `list-tags-for-resource` example returns the tags associated with 
 
 ```
 aws  synthetics list-tags-for-resource \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:group:example123}}
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:group:example123}}
 ```
 Output:
 
@@ -648,7 +648,7 @@ The following `tag-resource` example assigns a tag to the canary named `demo_can
 
 ```
 aws synthetics tag-resource \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary}} \
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary}} \
     --tags {{blueprint=heartbeat}}
 ```
 This command produces no output.
@@ -657,7 +657,7 @@ The following `tag-resource` example assigns a tag to the group named `demo_grou
 
 ```
 aws synthetics tag-resource \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:group:example123}} \
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:group:example123}} \
     --tags {{team=Devops}}
 ```
 This command produces no output.
@@ -675,7 +675,7 @@ The following `untag-resource` example removes a tag from the canary named `demo
 
 ```
 aws synthetics untag-resource \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:canary:demo_canary}} \
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:canary:demo_canary}} \
     --tag-keys {{blueprint}}
 ```
 This command produces no output.
@@ -684,7 +684,7 @@ The following `untag-resource` example assigns a removes a tag from the group na
 
 ```
 aws synthetics untag-resource \
-    --resource-arn {{arn:aws:synthetics:us-east-1:123456789012:group:example123}} \
+    --resource-arn {{arn:aws:synthetics:us-west-2:123456789012:group:example123}} \
     --tag-keys {{team}}
 ```
 This command produces no output.

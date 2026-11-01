@@ -48,7 +48,7 @@ Output:
     ]
 }
 ```
-For more information, see [Event log](https://docs.aws.amazon.com/health/latest/ug/getting-started-phd.html#event-log) in the *AWS Health User Guide*.
+For more information, see [Event log](https://docs.aws.amazon.com/health/latest/ug/getting-started-phd.html) in the *AWS Health User Guide*.
 +  For API details, see [DescribeAffectedEntities](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/health/describe-affected-entities.html) in *AWS CLI Command Reference*.
 
 ### `describe-event-details`
@@ -90,7 +90,7 @@ Output:
     "failedSet": []
 }
 ```
-For more information, see [Event details pane](https://docs.aws.amazon.com/health/latest/ug/getting-started-phd.html#event-details) in the *AWS Health User Guide*.
+For more information, see [Event details pane](https://docs.aws.amazon.com/health/latest/ug/getting-started-phd.html) in the *AWS Health User Guide*.
 +  For API details, see [DescribeEventDetails](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/health/describe-event-details.html) in *AWS CLI Command Reference*.
 
 ### `describe-events`

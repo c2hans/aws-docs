@@ -18,11 +18,11 @@ The following `tag-resource` example shows how to add a tag to a data store.
 
 ```
 aws healthlake tag-resource \
-    --resource-arn {{"arn:aws:healthlake:us-east-1:123456789012:datastore/fhir/0725c83f4307f263e16fd56b6d8ebdbe"}} \
+    --resource-arn {{"arn:aws:healthlake:us-west-2:123456789012:datastore/fhir/0725c83f4307f263e16fd56b6d8ebdbe"}} \
     --tags '{{[{"Key": "key1", "Value": "value1"}]}}'
 ```
 This command produces no output.
-For more information, see [Adding a tag to a data store](https://docs.aws.amazon.com/healthlake/latest/devguide/add-a-tag.html) in the *AWS HealthLake Developer Guide.*.
+For more information, see [Tagging HealthLake data stores](https://docs.aws.amazon.com/healthlake/latest/devguide/managing-data-stores-tagging.html#tagresource) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/tag-resource.html) in *AWS CLI Command Reference*.
 
 ------

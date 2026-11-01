@@ -60,14 +60,14 @@ Output:
                 {
                     "Type": "CHILD",
                     "Ids": [
-                        "75966e64-81c2-4540-9649-d66ec341cd8f",
-                        "bb099c24-8282-464c-a179-8a9fa0a057f0",
-                        "5ebf522d-f9e4-4dc7-bfae-a288dc094595"
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+                        "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
                     ]
                 }
             ],
             "BlockType": "PAGE",
-            "Id": "247c28ee-b63d-4aeb-9af0-5f7ea8ba109e",
+            "Id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Page": 1
         }
     ],
@@ -78,7 +78,7 @@ Output:
     "JobStatus": "SUCCEEDED"
 }
 ```
-For more information, see Detecting and Analyzing Text in Multi-Page Documents in the *Amazon Textract Developers Guide*
+For more information, see [Processing Documents Asynchronously](https://docs.aws.amazon.com/textract/latest/dg/async.html) in the *Amazon Textract Developer Guide*.
 +  For API details, see [GetDocumentAnalysis](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/textract/get-document-analysis.html) in *AWS CLI Command Reference*.
 
 ------

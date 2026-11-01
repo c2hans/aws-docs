@@ -16,7 +16,7 @@ Action examples are code excerpts from larger programs and must be run in contex
 #### [ CLI ]
 
 **AWS CLI**
-**Example 1: Delete a managed node group for an Amazon EKS cluster**
+**To delete a managed node group for an Amazon EKS cluster**
 The following `delete-nodegroup` example deletes a managed node group for an Amazon EKS cluster.
 
 ```
@@ -30,7 +30,7 @@ Output:
 {
     "nodegroup": {
         "nodegroupName": "my-eks-nodegroup",
-        "nodegroupArn": "arn:aws:eks:us-east-2:111122223333:nodegroup/my-eks-cluster/my-eks-nodegroup/1ec75f5f-0e21-dcc0-b46e-f9c442685cd8",
+        "nodegroupArn": "arn:aws:eks:us-west-2:123456789012:nodegroup/my-eks-cluster/my-eks-nodegroup/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "clusterName": "my-eks-cluster",
         "version": "1.26",
         "releaseVersion": "1.26.12-20240329",
@@ -52,7 +52,7 @@ Output:
             "subnet-09d912bb63ef21b9a"
         ],
         "amiType": "AL2_x86_64",
-        "nodeRole": "arn:aws:iam::111122223333:role/role-name",
+        "nodeRole": "arn:aws:iam::123456789012:role/role-name",
         "labels": {
             "my-eks-nodegroup-label-2": "value-2",
             "my-eks-nodegroup-label-1": "value-1"
@@ -78,6 +78,7 @@ Output:
     }
 }
 ```
+For more information, see [Delete a managed node group from your cluster](https://docs.aws.amazon.com/eks/latest/userguide/delete-managed-node-group.html) in the *Amazon EKS User Guide*.
 +  For API details, see [DeleteNodegroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/delete-nodegroup.html) in *AWS CLI Command Reference*.
 
 ------

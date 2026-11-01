@@ -19,3 +19,4 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.h
 + [Online explainability with SageMaker Clarify](clarify-online-explainability.md)
 + [Deploy to multiple instance types with instance pools](realtime-endpoints-heterogeneous.md)
 + [Fine-tune models with adapter inference components](realtime-endpoints-adapt.md)
++ [Using GPU partitions on SageMaker AI real-time endpoints](inference-components-accelerator-partitioning.md)

@@ -88,7 +88,7 @@ Output:
             "DhcpOptionsId": "dopt-19edf471",
             "State": "available",
             "VpcId": "vpc-0e9801d129EXAMPLE",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -112,7 +112,7 @@ Output:
             "DhcpOptionsId": "dopt-19edf471",
             "State": "available",
             "VpcId": "vpc-06e4ab6c6cEXAMPLE",
-            "OwnerId": "222222222222",
+            "OwnerId": "123456789111",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -134,6 +134,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure a virtual private cloud](https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html) in the *Amazon VPC User Guide*.
 **Example 2: To describe a specified VPC**
 The following `describe-vpcs` example retrieves details for the specified VPC.
 
@@ -151,7 +152,7 @@ Output:
             "DhcpOptionsId": "dopt-19edf471",
             "State": "available",
             "VpcId": "vpc-06e4ab6c6cEXAMPLE",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -173,6 +174,7 @@ Output:
     ]
 }
 ```
+For more information, see [Configure a virtual private cloud](https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html) in the *Amazon VPC User Guide*.
 +  For API details, see [DescribeVpcs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-vpcs.html) in *AWS CLI Command Reference*.
 
 ------

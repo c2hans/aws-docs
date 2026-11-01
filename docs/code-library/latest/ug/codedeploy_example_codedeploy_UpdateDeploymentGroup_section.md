@@ -27,6 +27,7 @@ aws deploy update-deployment-group \
     --service-role-arn {{arn:aws:iam::80398EXAMPLE:role/CodeDeployDemo-2}}
 ```
 This command produces no output.
+For more information, see [Change deployment group settings with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-groups-edit.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [UpdateDeploymentGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/update-deployment-group.html) in *AWS CLI Command Reference*.
 
 ------

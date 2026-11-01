@@ -21,7 +21,7 @@ Type: Timestamp
 Required: Yes
 
  ** destination **   <a name="prometheus-Type-ScraperSummary-destination"></a>
-The Amazon Managed Service for Prometheus workspace the scraper sends metrics to.
+The destination where the scraper sends metrics. Valid destinations are Amazon Managed Service for Prometheus workspaces and CloudWatch datasets.
 Type: [Destination](API_Destination.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
@@ -60,6 +60,12 @@ Required: Yes
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 100.
 Pattern: `[0-9A-Za-z][-.0-9A-Z_a-z]*`
+Required: No
+
+ ** exporters **   <a name="prometheus-Type-ScraperSummary-exporters"></a>
+The exporter configurations for the scraper, if configured. The list contains at most one configuration, for either an Amazon OpenSearch Service domain or an Amazon MSK cluster.
+Type: Array of [ExporterConfiguration](API_ExporterConfiguration.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Required: No
 
  ** roleConfiguration **   <a name="prometheus-Type-ScraperSummary-roleConfiguration"></a>

@@ -31,6 +31,7 @@ Output:
     ]
 }
 ```
+For more information, see [Amazon EKS cluster lifecycle and configuration](https://docs.aws.amazon.com/eks/latest/userguide/clusters.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-clusters.html) in *AWS CLI Command Reference*.
 
 ------

@@ -72,7 +72,7 @@ The permission level the grant confers. Organization grants are administrative o
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Principal`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-principal"></a>
-Property description not available.
+The principal the grant is issued to.
 *Required*: Yes
 *Type*: [OrganizationAccessGrantPrincipal](aws-properties-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

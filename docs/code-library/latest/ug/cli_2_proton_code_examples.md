@@ -53,7 +53,7 @@ Output:
     }
 }
 ```
-For more information, see [Update a service instance](https://docs.aws.amazon.com/proton/latest/adminguide/ag-svc-instance-update.html) in the *The AWS Proton Administrator Guide* or [Update a service instance](https://docs.aws.amazon.com/proton/latest/userguide/ug-svc-instance-update.html) in the *The AWS Proton User Guide*.
+For more information, see [Update a service instance](https://docs.aws.amazon.com/proton/latest/adminguide/ag-svc-instance-update.html) in the *The AWS Proton Administrator Guide* or [Update a service instance](https://docs.aws.amazon.com/proton/latest/userguide/ag-svc-instance-update.html) in the *The AWS Proton User Guide*.
 +  For API details, see [CancelServiceInstanceDeployment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/proton/cancel-service-instance-deployment.html) in *AWS CLI Command Reference*.
 
 ### `cancel-service-pipeline-deployment`
@@ -279,7 +279,7 @@ Output:
             "arn": "arn:aws:proton:region-id:123456789012:service/simple-svc/service-instance/instance-one",
             "createdAt": "2020-11-28T22:40:50.512000+00:00",
             "deploymentStatus": "SUCCEEDED",
-            "environmentArn": "arn:aws:proton:region-id:123456789012:environment/simple-env",
+            "environmentName": "simple-env",
             "lastDeploymentAttemptedAt": "2020-11-28T22:40:50.512000+00:00",
             "lastDeploymentSucceededAt": "2020-11-28T22:40:50.512000+00:00",
             "name": "instance-one",
@@ -293,7 +293,7 @@ Output:
 ```
 For more information, see [View service instance data](https://docs.aws.amazon.com/proton/latest/adminguide/ag-svc-instance-view.html) in the *The AWS Proton Administrator Guide* or [View service instance data](https://docs.aws.amazon.com/proton/latest/userguide/ag-svc-instance-view.html) in the *The AWS Proton User Guide*.
 **Example 2: To list the specified service instance**
-The following `get-service-instance` example gets a service instance.
+The following `list-service-instances` example lists the specified service instance by using the `get-service-instance` command, which gets a service instance.
 
 ```
 aws proton get-service-instance \
@@ -397,6 +397,26 @@ aws proton update-service-pipeline \
     --template-major-version {{"1"}} \
     --template-minor-version {{"1"}} \
     --deployment-type {{"MINOR_VERSION"}}
+```
+Contents of `service-spec.yaml`:
+
+```
+proton: ServiceSpec
+
+pipeline:
+  my_sample_pipeline_optional_input: "abc"
+  my_sample_pipeline_required_input: "123"
+
+instances:
+  - name: "my-instance"
+    environment: "MySimpleEnv"
+    spec:
+      my_sample_service_instance_optional_input: "def"
+      my_sample_service_instance_required_input: "456"
+  - name: "my-other-instance"
+    environment: "MySimpleEnv"
+    spec:
+      my_sample_service_instance_required_input: "789"
 ```
 Output:
 

@@ -17,21 +17,44 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To validate an AWS CloudFormation template**
-The following `validate-template` command validates the `sampletemplate.json` template:
+The following `validate-template` example validates the `sampletemplate.json` template.
 
 ```
-aws cloudformation validate-template --template-body {{file://sampletemplate.json}}
+aws cloudformation validate-template \
+    --template-body {{file://sampletemplate.json}}
+```
+Contents of `sampletemplate.json`:
+
+```
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Sample Template S3_Bucket: Sample template showing how to create an S3 bucket. **WARNING** This template creates an S3 bucket. You will be billed for the AWS resources used if you create a stack from this template.",
+    "Resources": {
+        "S3Bucket": {
+            "Type": "AWS::S3::Bucket",
+            "DeletionPolicy": "Retain"
+        }
+    },
+    "Outputs": {
+        "BucketName": {
+            "Value": {
+                "Ref": "S3Bucket"
+            },
+            "Description": "Name of the sample Amazon S3 bucket."
+        }
+    }
+}
 ```
 Output:
 
 ```
 {
-    "Description": "AWS CloudFormation Sample Template S3_Bucket: Sample template showing how to create a publicly accessible S3 bucket. **WARNING** This template creates an S3 bucket. You will be billed for the AWS resources used if you create a stack from this template.",
+    "Description": "AWS CloudFormation Sample Template S3_Bucket: Sample template showing how to create an S3 bucket. **WARNING** This template creates an S3 bucket. You will be billed for the AWS resources used if you create a stack from this template.",
     "Parameters": [],
     "Capabilities": []
 }
 ```
-For more information, see Working with AWS CloudFormation Templates in the *AWS CloudFormation User Guide*.
+For more information, see [Working with CloudFormation templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-guide.html) in the *AWS CloudFormation User Guide*.
 +  For API details, see [ValidateTemplate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudformation/validate-template.html) in *AWS CLI Command Reference*.
 
 ------

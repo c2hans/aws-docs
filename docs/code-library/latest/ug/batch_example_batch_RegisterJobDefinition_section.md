@@ -18,21 +18,24 @@ Action examples are code excerpts from larger programs and must be run in contex
 
 **AWS CLI**
 **To register a job definition**
-This example registers a job definition for a simple container job.
-Command:
+The following `register-job-definition` example registers a job definition for a simple container job.
 
 ```
-aws batch register-job-definition --job-definition-name {{sleep30}} --type {{container}} --container-properties '{{{ "image": "busybox", "vcpus": 1, "memory": 128, "command": [ "sleep", "30"]}}}'
+aws batch register-job-definition \
+    --job-definition-name {{sleep30}} \
+    --type {{container}} \
+    --container-properties '{{{ "image": "busybox", "vcpus": 1, "memory": 128, "command": [ "sleep", "30"]}}}'
 ```
 Output:
 
 ```
 {
-    "jobDefinitionArn": "arn:aws:batch:us-east-1:012345678910:job-definition/sleep30:1",
+    "jobDefinitionArn": "arn:aws:batch:us-west-2:123456789012:job-definition/sleep30:1",
     "jobDefinitionName": "sleep30",
     "revision": 1
 }
 ```
+For more information, see [Create a single-node job definition](https://docs.aws.amazon.com/batch/latest/userguide/create-job-definition.html) in the *AWS Batch User Guide*.
 +  For API details, see [RegisterJobDefinition](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/batch/register-job-definition.html) in *AWS CLI Command Reference*.
 
 ------

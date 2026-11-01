@@ -50,7 +50,7 @@ Output:
     ]
 }
 ```
-For more information, see [GetResources](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetResources.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [Finding resources to tag](https://docs.aws.amazon.com/tag-editor/latest/userguide/find-resources-to-tag.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [GetResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/get-resources.html) in *AWS CLI Command Reference*.
 
 ### `get-tag-keys`
@@ -76,7 +76,7 @@ Output:
     ]
 }
 ```
-For more information, see [GetTagKeys](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetTagKeys.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [What is Tag Editor?](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [GetTagKeys](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/get-tag-keys.html) in *AWS CLI Command Reference*.
 
 ### `get-tag-values`
@@ -86,7 +86,7 @@ The following code example shows how to use `get-tag-values`.
 
 **AWS CLI**
 **To get a list of all tag values**
-The following `get-tag-values` example displays all of the values used for the specified key for all resources in the
+The following `get-tag-values` example displays all of the values used for the specified key for all resources in the current AWS Region.
 
 ```
 aws resourcegroupstaggingapi get-tag-values \
@@ -103,7 +103,7 @@ Output:
     ]
 }
 ```
-For more information, see [GetTagValues](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_GetTagValues.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [What is Tag Editor?](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [GetTagValues](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/get-tag-values.html) in *AWS CLI Command Reference*.
 
 ### `tag-resources`
@@ -127,7 +127,7 @@ Output:
     "FailedResourcesMap": {}
 }
 ```
-For more information, see [TagResources](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_TagResources.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [Managing tags with Tag Editor](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging-resources.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [TagResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/tag-resources.html) in *AWS CLI Command Reference*.
 
 ### `untag-resources`
@@ -151,5 +151,5 @@ Output:
     "FailedResourcesMap": {}
 }
 ```
-For more information, see [UntagResources](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/API_UntagResources.html) in the *Resource Groups Tagging API Reference*.
+For more information, see [Managing tags with Tag Editor](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging-resources.html) in the *Tagging AWS Resources and Tag Editor User Guide*.
 +  For API details, see [UntagResources](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resourcegroupstaggingapi/untag-resources.html) in *AWS CLI Command Reference*.

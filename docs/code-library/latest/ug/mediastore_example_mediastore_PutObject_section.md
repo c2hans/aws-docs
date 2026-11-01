@@ -4,37 +4,10 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/mediastore_exampl
 
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
-# Use `PutObject` with an AWS SDK or CLI
+# Use `PutObject` with an AWS SDK
 <a name="mediastore_example_mediastore_PutObject_section"></a>
 
-The following code examples show how to use `PutObject`.
-
-------
-#### [ CLI ]
-
-**AWS CLI**
-**To upload an object**
-The following `put-object` example uploads an object to the specified container. You can specify a folder path where the object will be saved within the container. If the folder already exists, AWS Elemental MediaStore stores the object in the folder. If the folder doesn't exist, the service creates it, and then stores the object in the folder.
-
-```
-aws mediastore-data put-object \
-    --endpoint {{https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com}} \
-    --body {{README.md}} \
-    --path {{/folder_name/README.md}} \
-    --cache-control {{"max-age=6, public"}} \
-    --content-type {{binary/octet-stream}}
-```
-Output:
-
-```
-{
-    "ContentSHA256": "74b5fdb517f423ed750ef214c44adfe2be36e37d861eafe9c842cbe1bf387a9d",
-    "StorageClass": "TEMPORAL",
-    "ETag": "af3e4731af032167a106015d1f2fe934e68b32ed1aa297a9e325f5c64979277b"
-}
-```
-For more information, see [Uploading an Object](https://docs.aws.amazon.com/mediastore/latest/ug/objects-upload.html) in the *AWS Elemental MediaStore User Guide*.
-+  For API details, see [PutObject](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediastore/put-object.html) in *AWS CLI Command Reference*.
+The following code example shows how to use `PutObject`.
 
 ------
 #### [ Java ]

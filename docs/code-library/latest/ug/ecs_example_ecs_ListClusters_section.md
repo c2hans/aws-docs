@@ -79,7 +79,7 @@ Output:
     ]
 }
 ```
-For more information, see [Amazon ECS Clusters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_clusters.html) in the *Amazon ECS Developer Guide*.
+For more information, see [Amazon ECS clusters](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html) in the *Amazon ECS Developer Guide*.
 +  For API details, see [ListClusters](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ecs/list-clusters.html) in *AWS CLI Command Reference*.
 
 ------

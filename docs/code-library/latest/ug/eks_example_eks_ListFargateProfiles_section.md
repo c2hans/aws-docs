@@ -29,6 +29,7 @@ Output:
     ]
 }
 ```
+For more information, see [Define which Pods use AWS Fargate when launched](https://docs.aws.amazon.com/eks/latest/userguide/fargate-profile.html) in the *Amazon EKS User Guide*.
 +  For API details, see [ListFargateProfiles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/eks/list-fargate-profiles.html) in *AWS CLI Command Reference*.
 
 ------

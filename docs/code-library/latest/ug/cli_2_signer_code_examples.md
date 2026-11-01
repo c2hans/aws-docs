@@ -33,6 +33,7 @@ aws signer cancel-signing-profile \
     --profile-name {{MyProfile1}}
 ```
 This command produces no output.
+For more information, see [Create a Signer signing profile](https://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [CancelSigningProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/cancel-signing-profile.html) in *AWS CLI Command Reference*.
 
 ### `describe-signing-job`
@@ -78,6 +79,7 @@ Output:
     "createdAt": 1568412036
 }
 ```
+For more information, see [Create a signing job for IoT in AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/signing-jobs-iot.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [DescribeSigningJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/describe-signing-job.html) in *AWS CLI Command Reference*.
 
 ### `get-signing-platform`
@@ -125,6 +127,7 @@ Output:
     }
 }
 ```
+For more information, see [Sign Internet of Things (IoT) objects](https://docs.aws.amazon.com/signer/latest/developerguide/iot-workflow.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [GetSigningPlatform](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/get-signing-platform.html) in *AWS CLI Command Reference*.
 
 ### `get-signing-profile`
@@ -152,6 +155,7 @@ Output:
     }
 }
 ```
+For more information, see [Create a Signer signing profile](https://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [GetSigningProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/get-signing-profile.html) in *AWS CLI Command Reference*.
 
 ### `list-signing-jobs`
@@ -161,12 +165,12 @@ The following code example shows how to use `list-signing-jobs`.
 
 **AWS CLI**
 **To list all signing jobs**
-The following `list-signing-jobs` example displays details about all signing jobs for the account.
+The following `list-signing-jobs` example displays details about all signing jobs for the account. In this example, two jobs are returned, one successful, and one failed.
 
 ```
 aws signer list-signing-jobs
 ```
-In this example, two jobs are returned, one successful, and one failed.
+Output:
 
 ```
 {
@@ -210,6 +214,7 @@ In this example, two jobs are returned, one successful, and one failed.
     ]
 }
 ```
+For more information, see [Create a signing job for IoT in AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/signing-jobs-iot.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [ListSigningJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/list-signing-jobs.html) in *AWS CLI Command Reference*.
 
 ### `list-signing-platforms`
@@ -316,6 +321,7 @@ Output:
     ]
 }
 ```
+For more information, see [Code signing workflows in Signer](https://docs.aws.amazon.com/signer/latest/developerguide/workflows.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [ListSigningPlatforms](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/list-signing-platforms.html) in *AWS CLI Command Reference*.
 
 ### `list-signing-profiles`
@@ -354,6 +360,7 @@ Output:
     ]
 }
 ```
+For more information, see [Create a Signer signing profile](https://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [ListSigningProfiles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/list-signing-profiles.html) in *AWS CLI Command Reference*.
 
 ### `put-signing-profile`
@@ -378,6 +385,7 @@ Output:
     "arn": "arn:aws:signer:us-west-2:123456789012:/signing-profiles/MyProfile6"
 }
 ```
+For more information, see [Create a Signer signing profile](https://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [PutSigningProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/put-signing-profile.html) in *AWS CLI Command Reference*.
 
 ### `start-signing-job`
@@ -387,7 +395,7 @@ The following code example shows how to use `start-signing-job`.
 
 **AWS CLI**
 **To start a signing job**
-The following `start-signing-job` example starts a signing job on the code found at the specified source. It uses the specified profile to do the signing and places the signed code in the specified destination.
+The following `start-signing-job` example starts a signing job on the code found at the specified source. It uses the specified profile to do the signing and places the signed code in the specified destination. The output is the ID of the signing job.
 
 ```
 aws signer start-signing-job \
@@ -395,11 +403,12 @@ aws signer start-signing-job \
     --destination '{{s3={bucketName=signer-destination,prefix=signed-}}}' \
     --profile-name {{MyProfile7}}
 ```
-The output is the ID of the signing job.
+Output:
 
 ```
 {
     "jobId": "2065c468-73e2-4385-a6c9-0123456789abc"
 }
 ```
+For more information, see [Create a signing job for IoT in AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/signing-jobs-iot.html) in the *AWS Signer Developer Guide*.
 +  For API details, see [StartSigningJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/signer/start-signing-job.html) in *AWS CLI Command Reference*.

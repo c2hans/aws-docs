@@ -30,8 +30,8 @@ The following `add-flow-outputs` example adds outputs to the specified flow.
 
 ```
 aws mediaconnect add-flow-outputs \
---flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
---outputs Description='NYC stream',Destination=192.0.2.12,Name=NYC,Port=3333,Protocol=rtp-fec,SmoothingLatency=100 Description='LA stream',Destination=203.0.113.9,Name=LA,Port=4444,Protocol=rtp-fec,SmoothingLatency=100
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
+    --outputs Description='NYC stream',Destination=192.0.2.12,Name=NYC,Port=3333,Protocol=rtp-fec,SmoothingLatency=100 Description='LA stream',Destination=203.0.113.9,Name=LA,Port=4444,Protocol=rtp-fec,SmoothingLatency=100
 ```
 Output:
 
@@ -40,7 +40,7 @@ Output:
     "Outputs": [
         {
             "Port": 3333,
-            "OutputArn": "arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC",
+            "OutputArn": "arn:aws:mediaconnect:us-west-2:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC",
             "Name": "NYC",
             "Description": "NYC stream",
             "Destination": "192.0.2.12",
@@ -51,7 +51,7 @@ Output:
         },
         {
             "Port": 4444,
-            "OutputArn": "arn:aws:mediaconnect:us-east-1:111122223333:output:2-987655dEF67hiJ89-c34de5fG678h:LA",
+            "OutputArn": "arn:aws:mediaconnect:us-west-2:123456789012:output:2-987655dEF67hiJ89-c34de5fG678h:LA",
             "Name": "LA",
             "Description": "LA stream",
             "Destination": "203.0.113.9",
@@ -61,7 +61,7 @@ Output:
             }
         }
     ],
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame"
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame"
 }
 ```
 For more information, see [Adding Outputs to a Flow](https://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-add.html) in the *AWS Elemental MediaConnect User Guide*.
@@ -87,12 +87,12 @@ Output:
 ```
 {
     "Flow": {
-        "FlowArn": "arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:ExampleFlow",
+        "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:ExampleFlow",
         "AvailabilityZone": "us-west-2c",
         "EgressIp": "54.245.71.21",
         "Source": {
             "IngestPort": 1055,
-            "SourceArn": "arn:aws:mediaconnect:us-east-1:123456789012:source:2-3aBC45dEF67hiJ89-c34de5fG678h:BackupSource",
+            "SourceArn": "arn:aws:mediaconnect:us-west-2:123456789012:source:2-3aBC45dEF67hiJ89-c34de5fG678h:BackupSource",
             "Transport": {
                 "Protocol": "rtp",
                 "MaxBitrate": 80000000
@@ -124,13 +124,13 @@ The following `delete-flow` example deletes the specified flow.
 
 ```
 aws mediaconnect delete-flow \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
 ```
 Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
     "Status": "DELETING"
 }
 ```
@@ -148,7 +148,7 @@ The following `describe-flow` example displays the specified flow's details, suc
 
 ```
 aws mediaconnect describe-flow \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
 ```
 Output:
 
@@ -158,14 +158,14 @@ Output:
         "EgressIp": "54.201.4.39",
         "AvailabilityZone": "us-west-2c",
         "Status": "ACTIVE",
-        "FlowArn": "arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
+        "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
         "Entitlements": [
             {
                 "EntitlementArn": "arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-AaBb11CcDd22EeFf-34DE5fG12AbC:MyEntitlement",
                 "Description": "Assign to this account",
                 "Name": "MyEntitlement",
                 "Subscribers": [
-                    "444455556666"
+                    "123456789111"
                 ]
             }
         ],
@@ -179,7 +179,7 @@ Output:
                     "SmoothingLatency": 0,
                     "Protocol": "rtp-fec"
                 },
-                "OutputArn": "arn:aws:mediaconnect:us-east-1:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC",
+                "OutputArn": "arn:aws:mediaconnect:us-west-2:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC",
                 "Destination": "192.0.2.0"
             },
             {
@@ -189,13 +189,13 @@ Output:
                     "SmoothingLatency": 0,
                     "Protocol": "rtp-fec"
                 },
-                "OutputArn": "arn:aws:mediaconnect:us-east-1:123456789012:output:2-987655dEF67hiJ89-c34de5fG678h:LA",
+                "OutputArn": "arn:aws:mediaconnect:us-west-2:123456789012:output:2-987655dEF67hiJ89-c34de5fG678h:LA",
                 "Destination": "192.0.2.0"
             }
         ],
         "Source": {
             "IngestIp": "54.201.4.39",
-            "SourceArn": "arn:aws:mediaconnect:us-east-1:123456789012:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:ShowSource",
+            "SourceArn": "arn:aws:mediaconnect:us-west-2:123456789012:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:ShowSource",
             "Transport": {
                 "MaxBitrate": 80000000,
                 "Protocol": "rtp"
@@ -222,8 +222,8 @@ The following `grant-flow-entitlements` example grants an entitlement to the spe
 
 ```
 aws mediaconnect grant-flow-entitlements \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
-    --entitlements Description='For AnyCompany',Encryption={"Algorithm=aes128,KeyType=static-key,RoleArn=arn:aws:iam::111122223333:role/MediaConnect-ASM,SecretArn=arn:aws:secretsmanager:us-west-2:111122223333:secret:mySecret1"},Name=AnyCompany_Entitlement,Subscribers=444455556666 Description='For Example Corp',Name=ExampleCorp,Subscribers=777788889999
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
+    --entitlements Description='For AnyCompany',Encryption={"Algorithm=aes128,KeyType=static-key,RoleArn=arn:aws:iam::123456789012:role/MediaConnect-ASM,SecretArn=arn:aws:secretsmanager:us-west-2:123456789012:secret:mySecret1"},Name=AnyCompany_Entitlement,Subscribers=123456789111 Description='For Example Corp',Name=ExampleCorp,Subscribers=123456789222
 ```
 Output:
 
@@ -232,28 +232,28 @@ Output:
     "Entitlements": [
         {
             "Name": "AnyCompany_Entitlement",
-            "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement",
+            "EntitlementArn": "arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement",
             "Subscribers": [
-                "444455556666"
+                "123456789111"
             ],
             "Description": "For AnyCompany",
             "Encryption": {
-                "SecretArn": "arn:aws:secretsmanager:us-west-2:111122223333:secret:mySecret1",
+                "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:mySecret1",
                 "Algorithm": "aes128",
-                "RoleArn": "arn:aws:iam::111122223333:role/MediaConnect-ASM",
+                "RoleArn": "arn:aws:iam::123456789012:role/MediaConnect-ASM",
                 "KeyType": "static-key"
             }
         },
         {
             "Name": "ExampleCorp",
-            "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-3333cccc4444dddd-1111aaaa2222:ExampleCorp",
+            "EntitlementArn": "arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-3333cccc4444dddd-1111aaaa2222:ExampleCorp",
             "Subscribers": [
-                "777788889999"
+                "123456789222"
             ],
             "Description": "For Example Corp"
         }
     ],
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame"
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame"
 }
 ```
 For more information, see [Granting an Entitlement on a Flow](https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements-grant.html) in the *AWS Elemental MediaConnect User Guide*.
@@ -277,13 +277,13 @@ Output:
 {
     "Entitlements": [
         {
-            "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:MyEntitlement",
+            "EntitlementArn": "arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-11aa22bb11aa22bb-3333cccc4444:MyEntitlement",
             "EntitlementName": "MyEntitlement"
         }
     ]
 }
 ```
-For more information, see [ListEntitlements](https://docs.aws.amazon.com/mediaconnect/latest/api/v1-entitlements.html) in the *AWS Elemental MediaConnect API Reference*.
+For more information, see [Managing entitlements in MediaConnect](https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements.html) in the *AWS Elemental MediaConnect User Guide*.
 +  For API details, see [ListEntitlements](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconnect/list-entitlements.html) in *AWS CLI Command Reference*.
 
 ### `list-flows`
@@ -309,7 +309,7 @@ Output:
             "AvailabilityZone": "us-west-2a",
             "Description": "NYC awards show",
             "Name": "AwardsShow",
-            "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow"
+            "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow"
         },
         {
             "Status": "STANDBY",
@@ -317,7 +317,7 @@ Output:
             "AvailabilityZone": "us-west-2c",
             "Description": "LA basketball game",
             "Name": "BasketballGame",
-            "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame"
+            "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame"
         }
     ]
 }
@@ -336,7 +336,7 @@ The following `list-tags-for-resource` example displays the tag keys and values 
 
 ```
 aws mediaconnect list-tags-for-resource \
-    --resource-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame}}
+    --resource-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame}}
 ```
 Output:
 
@@ -348,7 +348,7 @@ Output:
     }
 }
 ```
-For more information, see [ListTagsForResource, TagResource, UntagResource](https://docs.aws.amazon.com/mediaconnect/latest/api/tags-resourcearn.html) in the *AWS Elemental MediaConnect API Reference*.
+For more information, see [Tagging AWS Elemental MediaConnect resources](https://docs.aws.amazon.com/mediaconnect/latest/ug/tagging.html) in the *AWS Elemental MediaConnect User Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconnect/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `remove-flow-output`
@@ -362,15 +362,15 @@ The following `remove-flow-output` example removes an output from the specified 
 
 ```
 aws mediaconnect remove-flow-output \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
-    --output-arn {{arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC}}
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
+    --output-arn {{arn:aws:mediaconnect:us-west-2:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC}}
 ```
 Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
-    "OutputArn": "arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC"
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
+    "OutputArn": "arn:aws:mediaconnect:us-west-2:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC"
 }
 ```
 For more information, see [Removing Outputs from a Flow](https://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-remove.html) in the *AWS Elemental MediaConnect User Guide*.
@@ -387,15 +387,15 @@ The following `revoke-flow-entitlement` example revokes an entitlement on the sp
 
 ```
 aws mediaconnect revoke-flow-entitlement \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
-    --entitlement-arn {{arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement}}
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
+    --entitlement-arn {{arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement}}
 ```
 Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
-    "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement"
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
+    "EntitlementArn": "arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement"
 }
 ```
 For more information, see [Revoking an Entitlement](https://docs.aws.amazon.com/mediaconnect/latest/ug/entitlements-revoke.html) in the *AWS Elemental MediaConnect User Guide*.
@@ -412,13 +412,13 @@ The following `start-flow` example starts the specified flow.
 
 ```
 aws mediaconnect start-flow \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
 ```
 This command produces no output. Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
     "Status": "STARTING"
 }
 ```
@@ -436,14 +436,14 @@ The following `stop-flow` example stops the specified flow.
 
 ```
 aws mediaconnect stop-flow \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}}
 ```
 Output:
 
 ```
 {
     "Status": "STOPPING",
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow"
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow"
 }
 ```
 For more information, see [Stopping a Flow](https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-stop.html) in the *AWS Elemental MediaConnect User Guide*.
@@ -460,11 +460,11 @@ The following `tag-resource` example adds a tag with a key name and value to the
 
 ```
 aws mediaconnect tag-resource \
-    --resource-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame}}
+    --resource-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame}} \
     --tags {{region=west}}
 ```
 This command produces no output.
-For more information, see [ListTagsForResource, TagResource, UntagResource](https://docs.aws.amazon.com/mediaconnect/latest/api/tags-resourcearn.html) in the *AWS Elemental MediaConnect API Reference*.
+For more information, see [Tagging AWS Elemental MediaConnect resources](https://docs.aws.amazon.com/mediaconnect/latest/ug/tagging.html) in the *AWS Elemental MediaConnect User Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconnect/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -478,11 +478,11 @@ The following `untag-resource` example remove the tag with the specified key nam
 
 ```
 aws mediaconnect untag-resource \
-    --resource-arn {{arn:aws:mediaconnect:us-east-1:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame}} \
+    --resource-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame}} \
     --tag-keys {{region}}
 ```
 This command produces no output.
-For more information, see [ListTagsForResource, TagResource, UntagResource](https://docs.aws.amazon.com/mediaconnect/latest/api/tags-resourcearn.html) in the *AWS Elemental MediaConnect API Reference*.
+For more information, see [Tagging AWS Elemental MediaConnect resources](https://docs.aws.amazon.com/mediaconnect/latest/ug/tagging.html) in the *AWS Elemental MediaConnect User Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/mediaconnect/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-flow-entitlement`
@@ -496,28 +496,28 @@ The following `update-flow-entitlement` example updates the specified entitlemen
 
 ```
 aws mediaconnect update-flow-entitlement \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
-    --entitlement-arn {{arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement}} \
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
+    --entitlement-arn {{arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement}} \
     --description '{{For AnyCompany Affiliate}}' \
-    --subscribers {{777788889999}}
+    --subscribers {{123456789222}}
 ```
 Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
     "Entitlement": {
         "Name": "AnyCompany_Entitlement",
         "Description": "For AnyCompany Affiliate",
-        "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement",
+        "EntitlementArn": "arn:aws:mediaconnect:us-west-2:123456789012:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement",
         "Encryption": {
             "KeyType": "static-key",
             "Algorithm": "aes128",
-            "RoleArn": "arn:aws:iam::111122223333:role/MediaConnect-ASM",
-            "SecretArn": "arn:aws:secretsmanager:us-west-2:111122223333:secret:mySecret1"
+            "RoleArn": "arn:aws:iam::123456789012:role/MediaConnect-ASM",
+            "SecretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:mySecret1"
         },
         "Subscribers": [
-            "777788889999"
+            "123456789222"
         ]
     }
 }
@@ -536,15 +536,15 @@ The following `update-flow-output` example update an output on the specified flo
 
 ```
 aws mediaconnect update-flow-output \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
-    --output-arn {{arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC}} \
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame}} \
+    --output-arn {{arn:aws:mediaconnect:us-west-2:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC}} \
     --port {{3331}}
 ```
 Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
     "Output": {
         "Name": "NYC",
         "Port": 3331,
@@ -553,7 +553,7 @@ Output:
             "Protocol": "rtp-fec",
             "SmoothingLatency": 100
         },
-        "OutputArn": "arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC",
+        "OutputArn": "arn:aws:mediaconnect:us-west-2:123456789012:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYC",
         "Destination": "192.0.2.12"
     }
 }
@@ -572,8 +572,8 @@ The following `update-flow-source` example updates the source of an existing flo
 
 ```
 aws mediaconnect update-flow-source \
-    --flow-arn {{arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}} \
-    --source-arn {{arn:aws:mediaconnect:us-east-1:111122223333:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:ShowSource}} \
+    --flow-arn {{arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow}} \
+    --source-arn {{arn:aws:mediaconnect:us-west-2:123456789012:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:ShowSource}} \
     --description '{{Friday night show}}' \
     --ingest-port {{3344}} \
     --protocol {{rtp-fec}} \
@@ -583,7 +583,7 @@ Output:
 
 ```
 {
-    "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
+    "FlowArn": "arn:aws:mediaconnect:us-west-2:123456789012:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
     "Source": {
         "IngestIp": "34.210.136.56",
         "WhitelistCidr": "10.24.34.0/23",
@@ -593,7 +593,7 @@ Output:
         "IngestPort": 3344,
         "Name": "ShowSource",
         "Description": "Friday night show",
-        "SourceArn": "arn:aws:mediaconnect:us-east-1:111122223333:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:ShowSource"
+        "SourceArn": "arn:aws:mediaconnect:us-west-2:123456789012:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:ShowSource"
     }
 }
 ```

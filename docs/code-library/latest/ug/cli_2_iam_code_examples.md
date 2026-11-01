@@ -26,7 +26,7 @@ The following code example shows how to use `add-client-id-to-open-id-connect-pr
 
 **AWS CLI**
 **To add a client ID (audience) to an Open-ID Connect (OIDC) provider**
-The following `add-client-id-to-open-id-connect-provider` command adds the client ID `my-application-ID` to the OIDC provider named `server.example.com`.
+The following `add-client-id-to-open-id-connect-provider` example adds the client ID `my-application-ID` to the OIDC provider named `server.example.com`.
 
 ```
 aws iam add-client-id-to-open-id-connect-provider \
@@ -45,7 +45,7 @@ The following code example shows how to use `add-role-to-instance-profile`.
 
 **AWS CLI**
 **To add a role to an instance profile**
-The following `add-role-to-instance-profile` command adds the role named `S3Access` to the instance profile named `Webserver`.
+The following `add-role-to-instance-profile` example adds the role named `S3Access` to the instance profile named `Webserver`.
 
 ```
 aws iam add-role-to-instance-profile \
@@ -64,7 +64,7 @@ The following code example shows how to use `add-user-to-group`.
 
 **AWS CLI**
 **To add a user to an IAM group**
-The following `add-user-to-group` command adds an IAM user named `Bob` to the IAM group named `Admins`.
+The following `add-user-to-group` example adds an IAM user named `Bob` to the IAM group named `Admins`.
 
 ```
 aws iam add-user-to-group \
@@ -82,7 +82,7 @@ The following code example shows how to use `attach-group-policy`.
 
 **AWS CLI**
 **To attach a managed policy to an IAM group**
-The following `attach-group-policy` command attaches the AWS managed policy named `ReadOnlyAccess` to the IAM group named `Finance`.
+The following `attach-group-policy` example attaches the AWS managed policy named `ReadOnlyAccess` to the IAM group named `Finance`.
 
 ```
 aws iam attach-group-policy \
@@ -100,7 +100,7 @@ The following code example shows how to use `attach-role-policy`.
 
 **AWS CLI**
 **To attach a managed policy to an IAM role**
-The following `attach-role-policy` command attaches the AWS managed policy named `ReadOnlyAccess` to the IAM role named `ReadOnlyRole`.
+The following `attach-role-policy` example attaches the AWS managed policy named `ReadOnlyAccess` to the IAM role named `ReadOnlyRole`.
 
 ```
 aws iam attach-role-policy \
@@ -118,7 +118,7 @@ The following code example shows how to use `attach-user-policy`.
 
 **AWS CLI**
 **To attach a managed policy to an IAM user**
-The following `attach-user-policy` command attaches the AWS managed policy named `AdministratorAccess` to the IAM user named `Alice`.
+The following `attach-user-policy` example attaches the AWS managed policy named `AdministratorAccess` to the IAM user named `Alice`.
 
 ```
 aws iam attach-user-policy \
@@ -136,25 +136,26 @@ The following code example shows how to use `change-password`.
 
 **AWS CLI**
 **To change the password for your IAM user**
-To change the password for your IAM user, we recommend using the `--cli-input-json` parameter to pass a JSON file that contains your old and new passwords. Using this method, you can use strong passwords with non-alphanumeric characters. It can be difficult to use passwords with non-alphanumeric characters when you pass them as command line parameters. To use the `--cli-input-json` parameter, start by using the `change-password` command with the `--generate-cli-skeleton` parameter, as in the following example.
+The following `change-password` example changes the password for your IAM user. To change the password, we recommend using the `--cli-input-json` parameter to pass a JSON file that contains your old and new passwords. Using this method, you can use strong passwords with non-alphanumeric characters. It can be difficult to use passwords with non-alphanumeric characters when you pass them as command line parameters. To use the `--cli-input-json` parameter, start by using the `change-password` command with the `--generate-cli-skeleton` parameter, as in the following example.
 
 ```
 aws iam change-password \
     --generate-cli-skeleton {{>}} {{change-password.json}}
 ```
-The previous command creates a JSON file called change-password.json that you can use to fill in your old and new passwords. For example, the file might look like the following.
+The previous command creates a JSON file called change-password.json that you can use to fill in your old and new passwords.
+Next, to change your password, use the `change-password` command again, this time passing the `--cli-input-json` parameter to specify your JSON file. The following `change-password` command uses the `--cli-input-json` parameter with a JSON file called change-password.json.
+
+```
+aws iam change-password \
+    --cli-input-json {{file://change-password.json}}
+```
+Contents of `change-password.json`:
 
 ```
 {
     "OldPassword": "3s0K_;xh4~8XXI",
     "NewPassword": "]35d/{pB9Fo9wJ"
 }
-```
-Next, to change your password, use the `change-password` command again, this time passing the `--cli-input-json` parameter to specify your JSON file. The following `change-password` command uses the `--cli-input-json` parameter with a JSON file called change-password.json.
-
-```
-aws iam change-password \
-    --cli-input-json {{file://change-password.json}}
 ```
 This command produces no output.
 This command can be called by IAM users only. If this command is called using AWS account (root) credentials, the command returns an `InvalidUserType` error.
@@ -168,7 +169,7 @@ The following code example shows how to use `create-access-key`.
 
 **AWS CLI**
 **To create an access key for an IAM user**
-The following `create-access-key` command creates an access key (access key ID and secret access key) for the IAM user named `Bob`.
+The following `create-access-key` example creates an access key (access key ID and secret access key) for the IAM user named `Bob`.
 
 ```
 aws iam create-access-key \
@@ -198,7 +199,7 @@ The following code example shows how to use `create-account-alias`.
 
 **AWS CLI**
 **To create an account alias**
-The following `create-account-alias` command creates the alias `examplecorp` for your AWS account.
+The following `create-account-alias` example creates the alias `examplecorp` for your AWS account.
 
 ```
 aws iam create-account-alias \
@@ -215,7 +216,7 @@ The following code example shows how to use `create-group`.
 
 **AWS CLI**
 **To create an IAM group**
-The following `create-group` command creates an IAM group named `Admins`.
+The following `create-group` example creates an IAM group named `Admins`.
 
 ```
 aws iam create-group \
@@ -244,7 +245,7 @@ The following code example shows how to use `create-instance-profile`.
 
 **AWS CLI**
 **To create an instance profile**
-The following `create-instance-profile` command creates an instance profile named `Webserver`.
+The following `create-instance-profile` example creates an instance profile named `Webserver`.
 
 ```
 aws iam create-instance-profile \
@@ -275,14 +276,21 @@ The following code example shows how to use `create-login-profile`.
 
 **AWS CLI**
 **To create a password for an IAM user**
-To create a password for an IAM user, we recommend using the `--cli-input-json` parameter to pass a JSON file that contains the password. Using this method, you can create a strong password with non-alphanumeric characters. It can be difficult to create a password with non-alphanumeric characters when you pass it as a command line parameter.
+The following `create-login-profile` example creates a password for an IAM user. To create the password, we recommend using the `--cli-input-json` parameter to pass a JSON file that contains the password. Using this method, you can create a strong password with non-alphanumeric characters. It can be difficult to create a password with non-alphanumeric characters when you pass it as a command line parameter.
 To use the `--cli-input-json` parameter, start by using the `create-login-profile` command with the `--generate-cli-skeleton` parameter, as in the following example.
 
 ```
 aws iam create-login-profile \
     --generate-cli-skeleton {{>}} {{create-login-profile.json}}
 ```
-The previous command creates a JSON file called create-login-profile.json that you can use to fill in the information for a subsequent `create-login-profile` command. For example:
+The previous command creates a JSON file called create-login-profile.json that you can use to fill in the information for a subsequent `create-login-profile` command.
+Next, to create a password for an IAM user, use the `create-login-profile` command again, this time passing the `--cli-input-json` parameter to specify your JSON file. The following `create-login-profile` command uses the `--cli-input-json` parameter with a JSON file called create-login-profile.json.
+
+```
+aws iam create-login-profile \
+    --cli-input-json {{file://create-login-profile.json}}
+```
+Contents of `create-login-profile.json`:
 
 ```
 {
@@ -290,12 +298,6 @@ The previous command creates a JSON file called create-login-profile.json that y
     "Password": "&1-3a6u:RA0djs",
     "PasswordResetRequired": true
 }
-```
-Next, to create a password for an IAM user, use the `create-login-profile` command again, this time passing the `--cli-input-json` parameter to specify your JSON file. The following `create-login-profile` command uses the `--cli-input-json` parameter with a JSON file called create-login-profile.json.
-
-```
-aws iam create-login-profile \
-    --cli-input-json {{file://create-login-profile.json}}
 ```
 Output:
 
@@ -321,14 +323,21 @@ The following code example shows how to use `create-open-id-connect-provider`.
 
 **AWS CLI**
 **To create an OpenID Connect (OIDC) provider**
-To create an OpenID Connect (OIDC) provider, we recommend using the `--cli-input-json` parameter to pass a JSON file that contains the required parameters. When you create an OIDC provider, you must pass the URL of the provider, and the URL must begin with `https://`. It can be difficult to pass the URL as a command line parameter, because the colon (:) and forward slash (/) characters have special meaning in some command line environments. Using the `--cli-input-json` parameter gets around this limitation.
+The following `create-open-id-connect-provider` example creates an OpenID Connect (OIDC) provider. To create the provider, we recommend using the `--cli-input-json` parameter to pass a JSON file that contains the required parameters. When you create an OIDC provider, you must pass the URL of the provider, and the URL must begin with `https://`. It can be difficult to pass the URL as a command line parameter, because the colon (:) and forward slash (/) characters have special meaning in some command line environments. Using the `--cli-input-json` parameter gets around this limitation.
 To use the `--cli-input-json` parameter, start by using the `create-open-id-connect-provider` command with the `--generate-cli-skeleton` parameter, as in the following example.
 
 ```
 aws iam create-open-id-connect-provider \
     --generate-cli-skeleton {{>}} {{create-open-id-connect-provider.json}}
 ```
-The previous command creates a JSON file called create-open-id-connect-provider.json that you can use to fill in the information for a subsequent `create-open-id-connect-provider` command. For example:
+The previous command creates a JSON file called create-open-id-connect-provider.json that you can use to fill in the information for a subsequent `create-open-id-connect-provider` command.
+Next, to create the OpenID Connect (OIDC) provider, use the `create-open-id-connect-provider` command again, this time passing the `--cli-input-json` parameter to specify your JSON file. The following `create-open-id-connect-provider` command uses the `--cli-input-json` parameter with a JSON file called create-open-id-connect-provider.json.
+
+```
+aws iam create-open-id-connect-provider \
+    --cli-input-json {{file://create-open-id-connect-provider.json}}
+```
+Contents of `create-open-id-connect-provider.json`:
 
 ```
 {
@@ -342,12 +351,6 @@ The previous command creates a JSON file called create-open-id-connect-provider.
 }
 ```
 If your OIDC provider's discovery and JWKS endpoints use different certificates, include thumbprints for both endpoints in the `ThumbprintList`.
-Next, to create the OpenID Connect (OIDC) provider, use the `create-open-id-connect-provider` command again, this time passing the `--cli-input-json` parameter to specify your JSON file. The following `create-open-id-connect-provider` command uses the `--cli-input-json` parameter with a JSON file called create-open-id-connect-provider.json.
-
-```
-aws iam create-open-id-connect-provider \
-    --cli-input-json {{file://create-open-id-connect-provider.json}}
-```
 Output:
 
 ```
@@ -366,13 +369,33 @@ The following code example shows how to use `create-policy-version`.
 
 **AWS CLI**
 **To create a new version of a managed policy**
-This example creates a new `v2` version of the IAM policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy` and makes it the default version.
+The following `create-policy-version` example creates a new `v2` version of the IAM policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy` and makes it the default version.
 
 ```
 aws iam create-policy-version \
     --policy-arn {{arn:aws:iam::123456789012:policy/MyPolicy}} \
     --policy-document {{file://NewPolicyVersion.json}} \
     --set-as-default
+```
+Contents of `NewPolicyVersion.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::amzn-s3-demo-bucket",
+                "arn:aws:s3:::amzn-s3-demo-bucket/*"
+            ]
+        }
+    ]
+}
 ```
 Output:
 
@@ -395,14 +418,14 @@ The following code example shows how to use `create-policy`.
 
 **AWS CLI**
 **Example 1: To create a customer managed policy**
-The following command creates a customer managed policy named `my-policy`. The file `policy.json` is a JSON document in the current folder that grants read only access to the `shared` folder in an Amazon S3 bucket named `amzn-s3-demo-bucket`.
+The following `create-policy` example creates a customer managed policy named `my-policy`. The file `policy.json` is a JSON document in the current folder that grants read only access to the `shared` folder in an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 
 ```
 aws iam create-policy \
     --policy-name {{my-policy}} \
     --policy-document {{file://policy.json}}
 ```
-Contents of policy.json:
+Contents of `policy.json`:
 
 ```
 {
@@ -440,7 +463,7 @@ Output:
 ```
 For more information on using files as input for string parameters, see [Specify parameter values for the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-parameters.html) in the *AWS CLI User Guide*.
 **Example 2: To create a customer managed policy with a description**
-The following command creates a customer managed policy named `my-policy` with an immutable description.
+The following `create-policy` example creates a customer managed policy named `my-policy` with an immutable description.
 The file `policy.json` is a JSON document in the current folder that grants access to all Put, List, and Get actions for an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 
 ```
@@ -449,15 +472,15 @@ aws iam create-policy \
     --policy-document {{file://policy.json}} \
     --description {{"This policy grants access to all Put, Get, and List actions for amzn-s3-demo-bucket"}}
 ```
-Contents of policy.json:
+Contents of `policy.json`:
 
 ```
 {
-   "Version":"2012-10-17",
-   "Statement": [
-       {
-           "Effect": "Allow",
-           "Action": [
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
                 "s3:ListBucket*",
                 "s3:PutBucket*",
                 "s3:GetBucket*"
@@ -489,7 +512,7 @@ Output:
 ```
 For more information on Idenity-based Policies, see [Identity-based policies and resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) in the *AWS IAM User Guide*.
 **Example 3: To create a customer managed policy with tags**
-The following command creates a customer managed policy named `my-policy` with tags. This example uses the `--tags` parameter with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` parameter can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
+The following `create-policy` example creates a customer managed policy named `my-policy` with tags. This example uses the `--tags` parameter with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` parameter can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
 The file `policy.json` is a JSON document in the current folder that grants access to all Put, List, and Get actions for an Amazon S3 bucket named `amzn-s3-demo-bucket`.
 
 ```
@@ -498,7 +521,7 @@ aws iam create-policy \
     --policy-document {{file://policy.json}} \
     --tags '{{{"Key": "Department", "Value": "Accounting"}}}' '{{{"Key": "Location", "Value": "Seattle"}}}'
 ```
-Contents of policy.json:
+Contents of `policy.json`:
 
 ```
 {
@@ -538,9 +561,10 @@ Output:
                 "Key": "Department",
                 "Value": "Accounting"
             },
+            {
                 "Key": "Location",
                 "Value": "Seattle"
-            {
+            }
         ]
     }
 }
@@ -555,12 +579,29 @@ The following code example shows how to use `create-role`.
 
 **AWS CLI**
 **Example 1: To create an IAM role**
-The following `create-role` command creates a role named `Test-Role` and attaches a trust policy to it.
+The following `create-role` example creates a role named `Test-Role` and attaches a trust policy to it.
 
 ```
 aws iam create-role \
     --role-name {{Test-Role}} \
     --assume-role-policy-document {{file://Test-Role-Trust-Policy.json}}
+```
+Contents of `Test-Role-Trust-Policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
 ```
 Output:
 
@@ -580,13 +621,30 @@ The trust policy is defined as a JSON document in the *Test-Role-Trust-Policy.js
 To attach a permissions policy to a role, use the `put-role-policy` command.
 For more information, see [Creating IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *AWS IAM User Guide*.
 **Example 2: To create an IAM role with specified maximum session duration**
-The following `create-role` command creates a role named `Test-Role` and sets a maximum session duration of 7200 seconds (2 hours).
+The following `create-role` example creates a role named `Test-Role` and sets a maximum session duration of 7200 seconds (2 hours).
 
 ```
 aws iam create-role \
     --role-name {{Test-Role}} \
     --assume-role-policy-document {{file://Test-Role-Trust-Policy.json}} \
     --max-session-duration {{7200}}
+```
+Contents of `Test-Role-Trust-Policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
 ```
 Output:
 
@@ -596,7 +654,7 @@ Output:
         "Path": "/",
         "RoleName": "Test-Role",
         "RoleId": "AKIAIOSFODNN7EXAMPLE",
-        "Arn": "arn:aws:iam::12345678012:role/Test-Role",
+        "Arn": "arn:aws:iam::123456789012:role/Test-Role",
         "CreateDate": "2023-05-24T23:50:25+00:00",
         "AssumeRolePolicyDocument": {
             "Version":"2012-10-17",
@@ -605,7 +663,7 @@ Output:
                     "Sid": "Statement1",
                     "Effect": "Allow",
                     "Principal": {
-                        "AWS": "arn:aws:iam::12345678012:root"
+                        "AWS": "arn:aws:iam::123456789012:root"
                     },
                     "Action": "sts:AssumeRole"
                 }
@@ -614,15 +672,32 @@ Output:
     }
 }
 ```
-For more information, see [Modifying a role maximum session duration (AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-api.html#roles-modify_max-session-duration-api) in the *AWS IAM User Guide*.
+For more information, see [Modifying a role maximum session duration (AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-api.html) in the *AWS IAM User Guide*.
 **Example 3: To create an IAM Role with tags**
-The following command creates an IAM Role `Test-Role` with tags. This example uses the `--tags` parameter flag with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` flag can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
+The following `create-role` example creates an IAM role `Test-Role` with tags. This example uses the `--tags` parameter flag with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` flag can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
 
 ```
 aws iam create-role \
     --role-name {{Test-Role}} \
     --assume-role-policy-document {{file://Test-Role-Trust-Policy.json}} \
     --tags '{{{"Key": "Department", "Value": "Accounting"}}}' '{{{"Key": "Location", "Value": "Seattle"}}}'
+```
+Contents of `Test-Role-Trust-Policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
 ```
 Output:
 
@@ -670,12 +745,30 @@ The following code example shows how to use `create-saml-provider`.
 
 **AWS CLI**
 **To create a SAML provider**
-This example creates a new SAML provider in IAM named `MySAMLProvider`. It is described by the SAML metadata document found in the file `SAMLMetaData.xml`.
+The following `create-saml-provider` example creates a new SAML provider in IAM named `MySAMLProvider`. It is described by the SAML metadata document found in the file `SAMLMetaData.xml`.
 
 ```
 aws iam create-saml-provider \
     --saml-metadata-document {{file://SAMLMetaData.xml}} \
     --name {{MySAMLProvider}}
+```
+Contents of `SAMLMetaData.xml`:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://idp.example.com/saml/metadata">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC8DCCAdigAwIBAgIQEXAMPLE...</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.example.com/saml/sso"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>
 ```
 Output:
 
@@ -739,7 +832,7 @@ For more information, see [Using service-linked roles](https://docs.aws.amazon.c
 The following code example shows how to use `create-service-specific-credential`.
 
 **AWS CLI**
-**Create a set of service-specific credentials for a user**
+**To create a set of service-specific credentials for a user**
 The following `create-service-specific-credential` example creates a username and password that can be used to access only the configured service.
 
 ```
@@ -772,7 +865,7 @@ The following code example shows how to use `create-user`.
 
 **AWS CLI**
 **Example 1: To create an IAM user**
-The following `create-user` command creates an IAM user named `Bob` in the current account.
+The following `create-user` example creates an IAM user named `Bob` in the current account.
 
 ```
 aws iam create-user \
@@ -793,7 +886,7 @@ Output:
 ```
 For more information, see [Creating an IAM user in your AWS account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) in the *AWS IAM User Guide*.
 **Example 2: To create an IAM user at a specified path**
-The following `create-user` command creates an IAM user named `Bob` at the specified path.
+The following `create-user` example creates an IAM user named `Bob` at the specified path.
 
 ```
 aws iam create-user \
@@ -814,8 +907,8 @@ Output:
 }
 ```
 For more information, see [IAM identifiers](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html) in the *AWS IAM User Guide*.
-**Example 3: To Create an IAM User with tags**
-The following `create-user` command creates an IAM user named `Bob` with tags. This example uses the `--tags` parameter flag with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` flag can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
+**Example 3: To create an IAM user with tags**
+The following `create-user` example creates an IAM user named `Bob` with tags. This example uses the `--tags` parameter flag with the following JSON-formatted tags: `'{"Key": "Department", "Value": "Accounting"}' '{"Key": "Location", "Value": "Seattle"}'`. Alternatively, the `--tags` flag can be used with tags in the shorthand format: `'Key=Department,Value=Accounting Key=Location,Value=Seattle'`.
 
 ```
 aws iam create-user \
@@ -846,8 +939,8 @@ Output:
 }
 ```
 For more information, see [Tagging IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags_users.html) in the *AWS IAM User Guide*.
-**Example 3: To create an IAM user with a set permissions boundary**
-The following `create-user` command creates an IAM user named `Bob` with the permissions boundary of AmazonS3FullAccess.
+**Example 4: To create an IAM user with a set permissions boundary**
+The following `create-user` example creates an IAM user named `Bob` with the permissions boundary of AmazonS3FullAccess.
 
 ```
 aws iam create-user \
@@ -881,7 +974,7 @@ The following code example shows how to use `create-virtual-mfa-device`.
 
 **AWS CLI**
 **To create a virtual MFA device**
-This example creates a new virtual MFA device called `BobsMFADevice`. It creates a file that contains bootstrap information called `QRCode.png` and places it in the `C:/` directory. The bootstrap method used in this example is `QRCodePNG`.
+The following `create-virtual-mfa-device` example creates a new virtual MFA device called `BobsMFADevice`. It creates a file that contains bootstrap information called `QRCode.png` and places it in the `C:/` directory. The bootstrap method used in this example is `QRCodePNG`.
 
 ```
 aws iam create-virtual-mfa-device \
@@ -894,7 +987,8 @@ Output:
 ```
 {
     "VirtualMFADevice": {
-        "SerialNumber": "arn:aws:iam::210987654321:mfa/BobsMFADevice"
+        "SerialNumber": "arn:aws:iam::123456789012:mfa/BobsMFADevice"
+    }
 }
 ```
 For more information, see [Using multi-factor authentication (MFA) in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html) in the *AWS IAM User Guide*.
@@ -907,39 +1001,16 @@ The following code example shows how to use `deactivate-mfa-device`.
 
 **AWS CLI**
 **To deactivate an MFA device**
-This command deactivates the virtual MFA device with the ARN `arn:aws:iam::210987654321:mfa/BobsMFADevice` that is associated with the user `Bob`.
+The following `deactivate-mfa-device` example deactivates the virtual MFA device with the ARN `arn:aws:iam::123456789012:mfa/BobsMFADevice` that is associated with the user `Bob`.
 
 ```
 aws iam deactivate-mfa-device \
     --user-name {{Bob}} \
-    --serial-number {{arn:aws:iam::210987654321:mfa/BobsMFADevice}}
+    --serial-number {{arn:aws:iam::123456789012:mfa/BobsMFADevice}}
 ```
 This command produces no output.
 For more information, see [Using multi-factor authentication (MFA) in AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html) in the *AWS IAM User Guide*.
 +  For API details, see [DeactivateMfaDevice](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/deactivate-mfa-device.html) in *AWS CLI Command Reference*.
-
-### `decode-authorization-message`
-<a name="iam_DecodeAuthorizationMessage_cli_2_topic"></a>
-
-The following code example shows how to use `decode-authorization-message`.
-
-**AWS CLI**
-**To decode a authorization failure message**
-The following `decode-authorization-message` example decodes the message returned by the EC2 console when attempting to launch an instance without the required permissions.
-
-```
-aws sts decode-authorization-message \
-    --encoded-message {{lxzA8VEjEvu-s0TTt3PgYCXik9YakOqsrFJGRZR98xNcyWAxwRq14xIvd-npzbgTevuufCTbjeBAaDARg9cbTK1rJbg3awM33o-Vy3ebPErE2-mWR9hVYdvX-0zKgVOWF9pWjZaJSMqxB-aLXo-I_8TTvBq88x8IFPbMArNdpu0IjxDjzf22PF3SOE3XvIQ-_PEO0aUqHCCcsSrFtvxm6yQD1nbm6VTIVrfa0Bzy8lsoMo7SjIaJ2r5vph6SY5vCCwg6o2JKe3hIHTa8zRrDbZSFMkcXOT6EOPkQXmaBsAC6ciG7Pz1JnEOvuj5NSTlSMljrAXczWuRKAs5GsMYiU8KZXZhokVzdQCUZkS5aVHumZbadu0io53jpgZqhMqvS4fyfK4auK0yKRMtS6JCXPlhkolEs7ZMFA0RVkutqhQqpSDPB5SX5l00lYipWyFK0_AyAx60vumPuVh8P0AzXwdFsT0l4D0m42NFIKxbWXsoJdqaOqVFyFEd0-Xx9AYAAIr6bhcis7C__bZh4dlAAWooHFGKgfoJcWGwgdzgbu9hWyVvKTpeot5hsb8qANYjJRCPXTKpi6PZfdijIkwb6gDMEsJ9qMtr62qP_989mwmtNgnVvBa_ir6oxJxVe_kL9SH1j5nsGDxQFajvPQhxWOHvEQIg_H0bnKWk}}
-```
-The output is formatted as a single-line string of JSON text that you can parse with any JSON text processor.
-
-```
-{
-    "DecodedMessage": "{\"allowed\":false,\"explicitDeny\":false,\"matchedStatements\":{\"items\":[]},\"failures\":{\"items\":[]},\"context\":{\"principal\":{\"id\":\"AIDAV3ZUEFP6J7GY7O6LO\",\"name\":\"chain-user\",\"arn\":\"arn:aws:iam::403299380220:user/chain-user\"},\"action\":\"ec2:RunInstances\",\"resource\":\"arn:aws:ec2:us-east-2:403299380220:instance/*\",\"conditions\":{\"items\":[{\"key\":\"ec2:InstanceMarketType\",\"values\":{\"items\":[{\"value\":\"on-demand\"}]}},{\"key\":\"aws:Resource\",\"values\":{\"items\":[{\"value\":\"instance/*\"}]}},{\"key\":\"aws:Account\",\"values\":{\"items\":[{\"value\":\"403299380220\"}]}},{\"key\":\"ec2:AvailabilityZone\",\"values\":{\"items\":[{\"value\":\"us-east-2b\"}]}},{\"key\":\"ec2:ebsOptimized\",\"values\":{\"items\":[{\"value\":\"false\"}]}},{\"key\":\"ec2:IsLaunchTemplateResource\",\"values\":{\"items\":[{\"value\":\"false\"}]}},{\"key\":\"ec2:InstanceType\",\"values\":{\"items\":[{\"value\":\"t2.micro\"}]}},{\"key\":\"ec2:RootDeviceType\",\"values\":{\"items\":[{\"value\":\"ebs\"}]}},{\"key\":\"aws:Region\",\"values\":{\"items\":[{\"value\":\"us-east-2\"}]}},{\"key\":\"aws:Service\",\"values\":{\"items\":[{\"value\":\"ec2\"}]}},{\"key\":\"ec2:InstanceID\",\"values\":{\"items\":[{\"value\":\"*\"}]}},{\"key\":\"aws:Type\",\"values\":{\"items\":[{\"value\":\"instance\"}]}},{\"key\":\"ec2:Tenancy\",\"values\":{\"items\":[{\"value\":\"default\"}]}},{\"key\":\"ec2:Region\",\"values\":{\"items\":[{\"value\":\"us-east-2\"}]}},{\"key\":\"aws:ARN\",\"values\":{\"items\":[{\"value\":\"arn:aws:ec2:us-east-2:403299380220:instance/*\"}]}}]}}}"
-}
-```
-For more information, see [How can I decode an authorization failure message after receiving an "UnauthorizedOperation" error during an EC2 instance launch?](https://repost.aws/knowledge-center/ec2-not-auth-launch) in *AWS re:Post*.
-+  For API details, see [DecodeAuthorizationMessage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/decode-authorization-message.html) in *AWS CLI Command Reference*.
 
 ### `delete-access-key`
 <a name="iam_DeleteAccessKey_cli_2_topic"></a>
@@ -948,7 +1019,7 @@ The following code example shows how to use `delete-access-key`.
 
 **AWS CLI**
 **To delete an access key for an IAM user**
-The following `delete-access-key` command deletes the specified access key (access key ID and secret access key) for the IAM user named `Bob`.
+The following `delete-access-key` example deletes the specified access key (access key ID and secret access key) for the IAM user named `Bob`.
 
 ```
 aws iam delete-access-key \
@@ -967,7 +1038,7 @@ The following code example shows how to use `delete-account-alias`.
 
 **AWS CLI**
 **To delete an account alias**
-The following `delete-account-alias` command removes the alias `mycompany` for the current account.
+The following `delete-account-alias` example removes the alias `mycompany` for the current account.
 
 ```
 aws iam delete-account-alias \
@@ -984,7 +1055,7 @@ The following code example shows how to use `delete-account-password-policy`.
 
 **AWS CLI**
 **To delete the current account password policy**
-The following `delete-account-password-policy` command removes the password policy for the current account.
+The following `delete-account-password-policy` example removes the password policy for the current account.
 
 ```
 aws iam delete-account-password-policy
@@ -1000,7 +1071,7 @@ The following code example shows how to use `delete-group-policy`.
 
 **AWS CLI**
 **To delete a policy from an IAM group**
-The following `delete-group-policy` command deletes the policy named `ExamplePolicy` from the group named `Admins`.
+The following `delete-group-policy` example deletes the policy named `ExamplePolicy` from the group named `Admins`.
 
 ```
 aws iam delete-group-policy \
@@ -1019,7 +1090,7 @@ The following code example shows how to use `delete-group`.
 
 **AWS CLI**
 **To delete an IAM group**
-The following `delete-group` command deletes an IAM group named `MyTestGroup`.
+The following `delete-group` example deletes an IAM group named `MyTestGroup`.
 
 ```
 aws iam delete-group \
@@ -1036,7 +1107,7 @@ The following code example shows how to use `delete-instance-profile`.
 
 **AWS CLI**
 **To delete an instance profile**
-The following `delete-instance-profile` command deletes the instance profile named `ExampleInstanceProfile`.
+The following `delete-instance-profile` example deletes the instance profile named `ExampleInstanceProfile`.
 
 ```
 aws iam delete-instance-profile \
@@ -1053,7 +1124,7 @@ The following code example shows how to use `delete-login-profile`.
 
 **AWS CLI**
 **To delete a password for an IAM user**
-The following `delete-login-profile` command deletes the password for the IAM user named `Bob`.
+The following `delete-login-profile` example deletes the password for the IAM user named `Bob`.
 
 ```
 aws iam delete-login-profile \
@@ -1070,7 +1141,7 @@ The following code example shows how to use `delete-open-id-connect-provider`.
 
 **AWS CLI**
 **To delete an IAM OpenID Connect identity provider**
-This example deletes the IAM OIDC provider that connects to the provider `example.oidcprovider.com`.
+The following `delete-open-id-connect-provider` example deletes the IAM OIDC provider that connects to the provider `example.oidcprovider.com`.
 
 ```
 aws iam delete-open-id-connect-provider \
@@ -1087,7 +1158,7 @@ The following code example shows how to use `delete-policy-version`.
 
 **AWS CLI**
 **To delete a version of a managed policy**
-This example deletes the version identified as `v2` from the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
+The following `delete-policy-version` example deletes the version identified as `v2` from the policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy`.
 
 ```
 aws iam delete-policy-version \
@@ -1105,7 +1176,7 @@ The following code example shows how to use `delete-policy`.
 
 **AWS CLI**
 **To delete an IAM policy**
-This example deletes the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
+The following `delete-policy` example deletes the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
 
 ```
 aws iam delete-policy \
@@ -1139,7 +1210,7 @@ The following code example shows how to use `delete-role-policy`.
 
 **AWS CLI**
 **To remove a policy from an IAM role**
-The following `delete-role-policy` command removes the policy named `ExamplePolicy` from the role named `Test-Role`.
+The following `delete-role-policy` example removes the policy named `ExamplePolicy` from the role named `Test-Role`.
 
 ```
 aws iam delete-role-policy \
@@ -1147,7 +1218,7 @@ aws iam delete-role-policy \
     --policy-name {{ExamplePolicy}}
 ```
 This command produces no output.
-For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *AWS IAM User Guide*.
+For more information, see [IAM role management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [DeleteRolePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/delete-role-policy.html) in *AWS CLI Command Reference*.
 
 ### `delete-role`
@@ -1157,7 +1228,7 @@ The following code example shows how to use `delete-role`.
 
 **AWS CLI**
 **To delete an IAM role**
-The following `delete-role` command removes the role named `Test-Role`.
+The following `delete-role` example removes the role named `Test-Role`.
 
 ```
 aws iam delete-role \
@@ -1175,11 +1246,11 @@ The following code example shows how to use `delete-saml-provider`.
 
 **AWS CLI**
 **To delete a SAML provider**
-This example deletes the IAM SAML 2.0 provider whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFSProvider`.
+The following `delete-saml-provider` example deletes the IAM SAML 2.0 provider whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFSProvider`.
 
 ```
 aws iam delete-saml-provider \
---saml-provider-arn {{arn:aws:iam::123456789012:saml-provider/SAMLADFSProvider}}
+    --saml-provider-arn {{arn:aws:iam::123456789012:saml-provider/SAMLADFSProvider}}
 ```
 This command produces no output.
 For more information, see [Creating IAM SAML identity providers](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_saml.html) in the *AWS IAM User Guide*.
@@ -1192,7 +1263,7 @@ The following code example shows how to use `delete-server-certificate`.
 
 **AWS CLI**
 **To delete a server certificate from your AWS account**
-The following `delete-server-certificate` command removes the specified server certificate from your AWS account.
+The following `delete-server-certificate` example removes the specified server certificate from your AWS account.
 
 ```
 aws iam delete-server-certificate \
@@ -1220,7 +1291,7 @@ Output:
 
 ```
 {
-    "DeletionTaskId": "task/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots/1a2b3c4d-1234-abcd-7890-abcdeEXAMPLE"
+    "DeletionTaskId": "task/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Using service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html) in the *AWS IAM User Guide*.
@@ -1232,7 +1303,7 @@ For more information, see [Using service-linked roles](https://docs.aws.amazon.c
 The following code example shows how to use `delete-service-specific-credential`.
 
 **AWS CLI**
-**Example 1: Delete a service-specific credential for the requesting user**
+**Example 1: To delete a service-specific credential for the requesting user**
 The following `delete-service-specific-credential` example deletes the specified service-specific credential for the user making the request. The `service-specific-credential-id` is provided when you create the credential and you can retrieve it by using the `list-service-specific-credentials` command.
 
 ```
@@ -1240,7 +1311,7 @@ aws iam delete-service-specific-credential \
     --service-specific-credential-id {{ACCAEXAMPLE123EXAMPLE}}
 ```
 This command produces no output.
-**Example 2: Delete a service-specific credential for a specified user**
+**Example 2: To delete a service-specific credential for a specified user**
 The following `delete-service-specific-credential` example deletes the specified service-specific credential for the specified user. The `service-specific-credential-id` is provided when you create the credential and you can retrieve it by using the `list-service-specific-credentials` command.
 
 ```
@@ -1259,7 +1330,7 @@ The following code example shows how to use `delete-signing-certificate`.
 
 **AWS CLI**
 **To delete a signing certificate for an IAM user**
-The following `delete-signing-certificate` command deletes the specified signing certificate for the IAM user named `Bob`.
+The following `delete-signing-certificate` example deletes the specified signing certificate for the IAM user named `Bob`.
 
 ```
 aws iam delete-signing-certificate \
@@ -1278,7 +1349,7 @@ The following code example shows how to use `delete-ssh-public-key`.
 
 **AWS CLI**
 **To delete an SSH public keys attached to an IAM user**
-The following `delete-ssh-public-key` command deletes the specified SSH public key attached to the IAM user `sofia`.
+The following `delete-ssh-public-key` example deletes the specified SSH public key attached to the IAM user `sofia`.
 
 ```
 aws iam delete-ssh-public-key \
@@ -1313,7 +1384,7 @@ The following code example shows how to use `delete-user-policy`.
 
 **AWS CLI**
 **To remove a policy from an IAM user**
-The following `delete-user-policy` command removes the specified policy from the IAM user named `Bob`.
+The following `delete-user-policy` example removes the specified policy from the IAM user named `Bob`.
 
 ```
 aws iam delete-user-policy \
@@ -1332,14 +1403,14 @@ The following code example shows how to use `delete-user`.
 
 **AWS CLI**
 **To delete an IAM user**
-The following `delete-user` command removes the IAM user named `Bob` from the current account.
+The following `delete-user` example removes the IAM user named `Bob` from the current account.
 
 ```
 aws iam delete-user \
     --user-name {{Bob}}
 ```
 This command produces no output.
-For more information, see [Deleting an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html#id_users_deleting) in the *AWS IAM User Guide*.
+For more information, see [Deleting an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [DeleteUser](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/delete-user.html) in *AWS CLI Command Reference*.
 
 ### `delete-virtual-mfa-device`
@@ -1349,7 +1420,7 @@ The following code example shows how to use `delete-virtual-mfa-device`.
 
 **AWS CLI**
 **To remove a virtual MFA device**
-The following `delete-virtual-mfa-device` command removes the specified MFA device from the current account.
+The following `delete-virtual-mfa-device` example removes the specified MFA device from the current account.
 
 ```
 aws iam delete-virtual-mfa-device \
@@ -1366,7 +1437,7 @@ The following code example shows how to use `detach-group-policy`.
 
 **AWS CLI**
 **To detach a policy from a group**
-This example removes the managed policy with the ARN `arn:aws:iam::123456789012:policy/TesterAccessPolicy` from the group called `Testers`.
+The following `detach-group-policy` example removes the managed policy with the ARN `arn:aws:iam::123456789012:policy/TesterAccessPolicy` from the group called `Testers`.
 
 ```
 aws iam detach-group-policy \
@@ -1384,7 +1455,7 @@ The following code example shows how to use `detach-role-policy`.
 
 **AWS CLI**
 **To detach a policy from a role**
-This example removes the managed policy with the ARN `arn:aws:iam::123456789012:policy/FederatedTesterAccessPolicy` from the role called `FedTesterRole`.
+The following `detach-role-policy` example removes the managed policy with the ARN `arn:aws:iam::123456789012:policy/FederatedTesterAccessPolicy` from the role called `FedTesterRole`.
 
 ```
 aws iam detach-role-policy \
@@ -1392,7 +1463,7 @@ aws iam detach-role-policy \
     --policy-arn {{arn:aws:iam::123456789012:policy/FederatedTesterAccessPolicy}}
 ```
 This command produces no output.
-For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *AWS IAM User Guide*.
+For more information, see [IAM role management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [DetachRolePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/detach-role-policy.html) in *AWS CLI Command Reference*.
 
 ### `detach-user-policy`
@@ -1402,7 +1473,7 @@ The following code example shows how to use `detach-user-policy`.
 
 **AWS CLI**
 **To detach a policy from a user**
-This example removes the managed policy with the ARN `arn:aws:iam::123456789012:policy/TesterPolicy` from the user `Bob`.
+The following `detach-user-policy` example removes the managed policy with the ARN `arn:aws:iam::123456789012:policy/TesterPolicy` from the user `Bob`.
 
 ```
 aws iam detach-user-policy \
@@ -1420,7 +1491,7 @@ The following code example shows how to use `disable-organizations-root-credenti
 
 **AWS CLI**
 **To disable the RootCredentialsManagement feature in your organization**
-The following `disable-organizations-root-credentials-management` command disables the management of privileged root user credentials across member accounts in your organization.
+The following `disable-organizations-root-credentials-management` example disables the management of privileged root user credentials across member accounts in your organization.
 
 ```
 aws iam disable-organizations-root-credentials-management
@@ -1431,7 +1502,7 @@ Output:
 {
     "EnabledFeatures": [
         "RootSessions"
-    ]
+    ],
     "OrganizationId": "o-aa111bb222"
 }
 ```
@@ -1445,7 +1516,7 @@ The following code example shows how to use `disable-organizations-root-sessions
 
 **AWS CLI**
 **To disable the RootSessions feature in your organization**
-The following `disable-organizations-root-sessions` command disables root user sessions for privileged tasks across member accounts in your organization.
+The following `disable-organizations-root-sessions` example disables root user sessions for privileged tasks across member accounts in your organization.
 
 ```
 aws iam disable-organizations-root-sessions
@@ -1456,7 +1527,7 @@ Output:
 {
     "EnabledFeatures": [
         "RootCredentialsManagement"
-    ]
+    ],
     "OrganizationId": "o-aa111bb222"
 }
 ```
@@ -1470,12 +1541,12 @@ The following code example shows how to use `enable-mfa-device`.
 
 **AWS CLI**
 **To enable an MFA device**
-After you use the `create-virtual-mfa-device` command to create a new virtual MFA device, you can assign the MFA device to a user. The following `enable-mfa-device` example assigns the MFA device with the serial number `arn:aws:iam::210987654321:mfa/BobsMFADevice` to the user `Bob`. The command also synchronizes the device with AWS by including the first two codes in sequence from the virtual MFA device.
+The following `enable-mfa-device` example assigns the MFA device with the serial number `arn:aws:iam::123456789012:mfa/BobsMFADevice` to the user `Bob`. The command also synchronizes the device with AWS by including the first two codes in sequence from the virtual MFA device. Before you assign a virtual MFA device to a user, you create it by using the `create-virtual-mfa-device` command.
 
 ```
 aws iam enable-mfa-device \
     --user-name {{Bob}} \
-    --serial-number {{arn:aws:iam::210987654321:mfa/BobsMFADevice}} \
+    --serial-number {{arn:aws:iam::123456789012:mfa/BobsMFADevice}} \
     --authentication-code1 {{123456}} \
     --authentication-code2 {{789012}}
 ```
@@ -1490,7 +1561,7 @@ The following code example shows how to use `enable-organizations-root-credentia
 
 **AWS CLI**
 **To enable the RootCredentialsManagement feature in your organization**
-The following `enable-organizations-root-credentials-management` command enables the management of privileged root user credentials across member accounts in your organization.
+The following `enable-organizations-root-credentials-management` example enables the management of privileged root user credentials across member accounts in your organization.
 
 ```
 aws iam enable-organizations-root-credentials-management
@@ -1501,7 +1572,7 @@ Output:
 {
     "EnabledFeatures": [
         "RootCredentialsManagement"
-    ]
+    ],
     "OrganizationId": "o-aa111bb222"
 }
 ```
@@ -1515,7 +1586,7 @@ The following code example shows how to use `enable-organizations-root-sessions`
 
 **AWS CLI**
 **To enable the RootSessions feature in your organization**
-The following `enable-organizations-root-sessions` command allows the management account or delegated administrator to perform privileged tasks on member accounts in your organization.
+The following `enable-organizations-root-sessions` example allows the management account or delegated administrator to perform privileged tasks on member accounts in your organization.
 
 ```
 aws iam enable-organizations-root-sessions
@@ -1526,7 +1597,7 @@ Output:
 {
     "EnabledFeatures": [
         "RootSessions"
-    ]
+    ],
     "OrganizationId": "o-aa111bb222"
 }
 ```
@@ -1540,7 +1611,7 @@ The following code example shows how to use `generate-credential-report`.
 
 **AWS CLI**
 **To generate a credential report**
-The following example attempts to generate a credential report for the AWS account.
+The following `generate-credential-report` example attempts to generate a credential report for the AWS account.
 
 ```
 aws iam generate-credential-report
@@ -1573,7 +1644,7 @@ Output:
 
 ```
 {
-    "JobId": "a8b6c06f-aaa4-8xmp-28bc-81da71836359"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To generate an access report for an account in an organization**
@@ -1587,21 +1658,21 @@ Output:
 
 ```
 {
-    "JobId": "14b6c071-75f6-2xmp-fb77-faf6fb4201d2"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 **Example 3: To generate an access report for an account in an organizational unit in an organization**
-The following `generate-organizations-access-report` example starts a background job to create an access report for account ID `234567890123` in organizational unit `ou-c3xb-lmu7j2yg` in the organization `o-4fxmplt198`. You can display the report after it's created by running the `get-organizations-access-report` command.
+The following `generate-organizations-access-report` example starts a background job to create an access report for account ID `123456789111` in organizational unit `ou-c3xb-lmu7j2yg` in the organization `o-4fxmplt198`. You can display the report after it's created by running the `get-organizations-access-report` command.
 
 ```
 aws iam generate-organizations-access-report \
-    --entity-path {{o-4fxmplt198/r-c3xb/ou-c3xb-lmu7j2yg/234567890123}}
+    --entity-path {{o-4fxmplt198/r-c3xb/ou-c3xb-lmu7j2yg/123456789111}}
 ```
 Output:
 
 ```
 {
-    "JobId": "2eb6c2e6-0xmp-ec04-1425-c937916a64af"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
 }
 ```
 To get details about roots and organizational units in your organization, use the `organizations list-roots` and `organizations list-organizational-units-for-parent` commands.
@@ -1625,7 +1696,7 @@ Output:
 
 ```
 {
-    "JobId": "2eb6c2b8-7b4c-3xmp-3c13-03b72c8cdfdc"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To generate a service access report for the AWS managed AdministratorAccess policy**
@@ -1639,7 +1710,7 @@ Output:
 
 ```
 {
-    "JobId": "78b6c2ba-d09e-6xmp-7039-ecde30b26916"
+    "JobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
 }
 ```
 For more information, see [Refining permissions in AWS using last accessed information](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor.html) in the *AWS IAM User Guide*.
@@ -1652,7 +1723,7 @@ The following code example shows how to use `get-access-key-last-used`.
 
 **AWS CLI**
 **To retrieve information about when the specified access key was last used**
-The following example retrieves information about when the access key `ABCDEXAMPLE` was last used.
+The following `get-access-key-last-used` example retrieves information about when the access key `ABCDEXAMPLE` was last used.
 
 ```
 aws iam get-access-key-last-used \
@@ -1664,7 +1735,7 @@ Output:
 {
     "UserName":  "Bob",
     "AccessKeyLastUsed": {
-        "Region": "us-east-1",
+        "Region": "us-west-2",
         "ServiceName": "iam",
         "LastUsedDate": "2015-06-16T22:45:00Z"
     }
@@ -1680,7 +1751,7 @@ The following code example shows how to use `get-account-authorization-details`.
 
 **AWS CLI**
 **To list an AWS account's IAM users, groups, roles, and policies**
-The following `get-account-authorization-details` command returns information about all IAM users, groups, roles, and policies in the AWS account.
+The following `get-account-authorization-details` example returns information about all IAM users, groups, roles, and policies in the AWS account.
 
 ```
 aws iam get-account-authorization-details
@@ -1760,10 +1831,12 @@ Output:
     "GroupDetailList": [
         {
             "GroupId": "AIDA1234567890EXAMPLE",
-            "AttachedManagedPolicies": {
-                "PolicyName": "AdministratorAccess",
-                "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
-            },
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "AdministratorAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/AdministratorAccess"
+                }
+            ],
             "GroupName": "Admins",
             "Path": "/",
             "Arn": "arn:aws:iam::123456789012:group/Admins",
@@ -1772,10 +1845,12 @@ Output:
         },
         {
             "GroupId": "AIDA1234567890EXAMPLE",
-            "AttachedManagedPolicies": {
-                "PolicyName": "PowerUserAccess",
-                "PolicyArn": "arn:aws:iam::aws:policy/PowerUserAccess"
-            },
+            "AttachedManagedPolicies": [
+                {
+                    "PolicyName": "PowerUserAccess",
+                    "PolicyArn": "arn:aws:iam::aws:policy/PowerUserAccess"
+                }
+            ],
             "GroupName": "Dev",
             "Path": "/",
             "Arn": "arn:aws:iam::123456789012:group/Dev",
@@ -1791,7 +1866,7 @@ Output:
             "CreateDate": "2013-10-14T18:57:48Z",
             "GroupPolicyList": [
                 {
-                    "PolicyName": "policygen-201310141157",
+                    "PolicyName": "policygen-20131014",
                     "PolicyDocument": {
                         "Version":"2012-10-17",
                         "Statement": [
@@ -1989,7 +2064,7 @@ The following code example shows how to use `get-account-password-policy`.
 
 **AWS CLI**
 **To see the current account password policy**
-The following `get-account-password-policy` command displays details about the password policy for the current account.
+The following `get-account-password-policy` example displays details about the password policy for the current account.
 
 ```
 aws iam get-account-password-policy
@@ -2019,7 +2094,7 @@ The following code example shows how to use `get-account-summary`.
 
 **AWS CLI**
 **To get information about IAM entity usage and IAM quotas in the current account**
-The following `get-account-summary` command returns information about the current IAM entity usage and current IAM entity quotas in the account.
+The following `get-account-summary` example returns information about the current IAM entity usage and current IAM entity quotas in the account.
 
 ```
 aws iam get-account-summary
@@ -2065,7 +2140,7 @@ The following code example shows how to use `get-context-keys-for-custom-policy`
 
 **AWS CLI**
 **Example 1: To list the context keys referenced by one or more custom JSON policies provided as a parameter on the command line**
-The following `get-context-keys-for-custom-policy` command parses each supplied policy and lists the context keys used by those policies. Use this command to identify which context key values you must supply to successfully use the policy simulator commands `simulate-custom-policy` and `simulate-custom-policy`. You can also retrieve the list of context keys used by all policies associated by an IAM user or role by using the `get-context-keys-for-custom-policy` command. Parameter values that begin with `file://` instruct the command to read the file and use the contents as the value for the parameter instead of the file name itself.
+The following `get-context-keys-for-custom-policy` example parses each supplied policy and lists the context keys used by those policies. Use this command to identify which context key values you must supply to successfully use the policy simulator commands `simulate-custom-policy` and `simulate-custom-policy`. You can also retrieve the list of context keys used by all policies associated by an IAM user or role by using the `get-context-keys-for-custom-policy` command. Parameter values that begin with `file://` instruct the command to read the file and use the contents as the value for the parameter instead of the file name itself.
 
 ```
 aws iam get-context-keys-for-custom-policy \
@@ -2082,24 +2157,18 @@ Output:
 }
 ```
 **Example 2: To list the context keys referenced by one or more custom JSON policies provided as a file input**
-The following `get-context-keys-for-custom-policy` command is the same as the previous example, except that the policies are provided in a file instead of as a parameter. Because the command expects a JSON list of strings, and not a list of JSON structures, the file must be structured as follows, although you can collapse it into one one.
-
-```
-[
-    "Policy1",
-    "Policy2"
-]
-```
-So for example, a file that contains the policy from the previous example must look like the following. You must escape each embedded double-quote inside the policy string by preceding it with a backslash ''.
-
-```
-[ "{\"Version\": \"2012-10-17\", \"Statement\": {\"Effect\": \"Allow\", \"Action\": \"dynamodb:*\", \"Resource\": \"arn:aws:dynamodb:us-west-2:128716708097:table/${aws:username}\", \"Condition\": {\"DateGreaterThan\": {\"aws:CurrentTime\": \"2015-08-16T12:00:00Z\"}}}}" ]
-```
-This file can then be submitted to the following command.
+The following `get-context-keys-for-custom-policy` example lists the context keys in the same way as the previous example, except that the policies are provided in a file instead of as a parameter. Because the command expects a JSON list of strings, and not a list of JSON structures, the file must contain a JSON array in which each policy is a string. You must escape each embedded double-quote inside the policy string by preceding it with a backslash.
 
 ```
 aws iam get-context-keys-for-custom-policy \
     --policy-input-list {{file://policyfile.json}}
+```
+Contents of `policyfile.json`:
+
+```
+[
+    "{\"Version\": \"2012-10-17\", \"Statement\": {\"Effect\": \"Allow\", \"Action\": \"dynamodb:*\", \"Resource\": \"arn:aws:dynamodb:us-west-2:123456789012:table/${aws:username}\", \"Condition\": {\"DateGreaterThan\": {\"aws:CurrentTime\": \"2015-08-16T12:00:00Z\"}}}}"
+]
 ```
 Output:
 
@@ -2111,7 +2180,7 @@ Output:
     ]
 }
 ```
-For more information, see [Using the IAM Policy Simulator (AWS CLI and AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html#policies-simulator-using-api) in the *AWS IAM User Guide*.
+For more information, see [Using the IAM Policy Simulator (AWS CLI and AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html) in the *AWS IAM User Guide*.
 +  For API details, see [GetContextKeysForCustomPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/get-context-keys-for-custom-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-context-keys-for-principal-policy`
@@ -2121,11 +2190,11 @@ The following code example shows how to use `get-context-keys-for-principal-poli
 
 **AWS CLI**
 **To list the context keys referenced by all policies associated with an IAM principal**
-The following `get-context-keys-for-principal-policy` command retrieves all policies that are attached to the user `saanvi` and any groups she is a member of. It then parses each and lists the context keys used by those policies. Use this command to identify which context key values you must supply to successfully use the `simulate-custom-policy` and `simulate-principal-policy` commands. You can also retrieve the list of context keys used by an arbitrary JSON policy by using the `get-context-keys-for-custom-policy` command.
+The following `get-context-keys-for-principal-policy` example retrieves all policies that are attached to the user `saanvi` and any groups she is a member of. It then parses each and lists the context keys used by those policies. Use this command to identify which context key values you must supply to successfully use the `simulate-custom-policy` and `simulate-principal-policy` commands. You can also retrieve the list of context keys used by an arbitrary JSON policy by using the `get-context-keys-for-custom-policy` command.
 
 ```
 aws iam get-context-keys-for-principal-policy \
-   --policy-source-arn {{arn:aws:iam::123456789012:user/saanvi}}
+    --policy-source-arn {{arn:aws:iam::123456789012:user/saanvi}}
 ```
 Output:
 
@@ -2137,7 +2206,7 @@ Output:
     ]
 }
 ```
-For more information, see [Using the IAM Policy Simulator (AWS CLI and AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html#policies-simulator-using-api) in the *AWS IAM User Guide*.
+For more information, see [Using the IAM Policy Simulator (AWS CLI and AWS API)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html) in the *AWS IAM User Guide*.
 +  For API details, see [GetContextKeysForPrincipalPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/get-context-keys-for-principal-policy.html) in *AWS CLI Command Reference*.
 
 ### `get-credential-report`
@@ -2147,7 +2216,7 @@ The following code example shows how to use `get-credential-report`.
 
 **AWS CLI**
 **To get a credential report**
-This example opens the returned report and outputs it to the pipeline as an array of text lines.
+The following `get-credential-report` example opens the returned report and outputs it to the pipeline as an array of text lines.
 
 ```
 aws iam get-credential-report
@@ -2170,7 +2239,7 @@ The following code example shows how to use `get-group-policy`.
 
 **AWS CLI**
 **To get information about a policy attached to an IAM group**
-The following `get-group-policy` command gets information about the specified policy attached to the group named `Test-Group`.
+The following `get-group-policy` example gets information about the specified policy attached to the group named `Test-Group`.
 
 ```
 aws iam get-group-policy \
@@ -2207,7 +2276,7 @@ The following code example shows how to use `get-group`.
 
 **AWS CLI**
 **To get an IAM group**
-This example returns details about the IAM group `Admins`.
+The following `get-group` example returns details about the IAM group `Admins`.
 
 ```
 aws iam get-group \
@@ -2237,7 +2306,7 @@ The following code example shows how to use `get-instance-profile`.
 
 **AWS CLI**
 **To get information about an instance profile**
-The following `get-instance-profile` command gets information about the instance profile named `ExampleInstanceProfile`.
+The following `get-instance-profile` example gets information about the instance profile named `ExampleInstanceProfile`.
 
 ```
 aws iam get-instance-profile \
@@ -2256,13 +2325,13 @@ Output:
                 "CreateDate": "2013-01-09T06:33:26Z",
                 "RoleName": "Test-Role",
                 "Path": "/",
-                "Arn": "arn:aws:iam::336924118301:role/Test-Role"
+                "Arn": "arn:aws:iam::123456789012:role/Test-Role"
             }
         ],
         "CreateDate": "2013-06-12T23:52:02Z",
         "InstanceProfileName": "ExampleInstanceProfile",
         "Path": "/",
-        "Arn": "arn:aws:iam::336924118301:instance-profile/ExampleInstanceProfile"
+        "Arn": "arn:aws:iam::123456789012:instance-profile/ExampleInstanceProfile"
     }
 }
 ```
@@ -2276,7 +2345,7 @@ The following code example shows how to use `get-login-profile`.
 
 **AWS CLI**
 **To get password information for an IAM user**
-The following `get-login-profile` command gets information about the password for the IAM user named `Bob`.
+The following `get-login-profile` example gets information about the password for the IAM user named `Bob`.
 
 ```
 aws iam get-login-profile \
@@ -2304,7 +2373,7 @@ The following code example shows how to use `get-mfa-device`.
 
 **AWS CLI**
 **To retrieve information about a FIDO security key**
-The following `get-mfa-device` command example retrieves information about the specified FIDO security key.
+The following `get-mfa-device` example retrieves information about the specified FIDO security key.
 
 ```
 aws iam get-mfa-device \
@@ -2332,7 +2401,7 @@ The following code example shows how to use `get-open-id-connect-provider`.
 
 **AWS CLI**
 **To return information about the specified OpenID Connect provider**
-This example returns details about the OpenID Connect provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/server.example.com`.
+The following `get-open-id-connect-provider` example returns details about the OpenID Connect provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/server.example.com`.
 
 ```
 aws iam get-open-id-connect-provider \
@@ -2342,14 +2411,14 @@ Output:
 
 ```
 {
-    "Url": "server.example.com"
-        "CreateDate": "2015-06-16T19:41:48Z",
-        "ThumbprintList": [
+    "Url": "server.example.com",
+    "CreateDate": "2015-06-16T19:41:48Z",
+    "ThumbprintList": [
         "12345abcdefghijk67890lmnopqrst987example"
-        ],
-        "ClientIDList": [
+    ],
+    "ClientIDList": [
         "example-application-ID"
-        ]
+    ]
 }
 ```
 For more information, see [Creating OpenID Connect (OIDC) identity providers](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html) in the *AWS IAM User Guide*.
@@ -2366,7 +2435,7 @@ The following `get-organizations-access-report` example displays a previously ge
 
 ```
 aws iam get-organizations-access-report \
-    --job-id {{a8b6c06f-aaa4-8xmp-28bc-81da71836359}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -2382,8 +2451,9 @@ Output:
             "ServiceName": "Alexa for Business",
             "ServiceNamespace": "a4b",
             "TotalAuthenticatedEntities": 0
-        },
-        ...
+        }
+    ],
+    "IsTruncated": false
 }
 ```
 For more information, see [Refining permissions in AWS using last accessed information](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor.html) in the *AWS IAM User Guide*.
@@ -2396,7 +2466,7 @@ The following code example shows how to use `get-policy-version`.
 
 **AWS CLI**
 **To retrieve information about the specified version of the specified managed policy**
-This example returns the policy document for the v2 version of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyManagedPolicy`.
+The following `get-policy-version` example returns the policy document for the v2 version of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyManagedPolicy`.
 
 ```
 aws iam get-policy-version \
@@ -2434,7 +2504,7 @@ The following code example shows how to use `get-policy`.
 
 **AWS CLI**
 **To retrieve information about the specified managed policy**
-This example returns details about the managed policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
+The following `get-policy` example returns details about the managed policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
 
 ```
 aws iam get-policy \
@@ -2446,7 +2516,7 @@ Output:
 {
     "Policy": {
         "PolicyName": "MySamplePolicy",
-        "CreateDate": "2015-06-17T19:23;32Z",
+        "CreateDate": "2015-06-17T19:23:32Z",
         "AttachmentCount": 0,
         "IsAttachable": true,
         "PolicyId": "Z27SI6FQMGNQ2EXAMPLE1",
@@ -2467,7 +2537,7 @@ The following code example shows how to use `get-role-policy`.
 
 **AWS CLI**
 **To get information about a policy attached to an IAM role**
-The following `get-role-policy` command gets information about the specified policy attached to the role named `Test-Role`.
+The following `get-role-policy` example gets information about the specified policy attached to the role named `Test-Role`.
 
 ```
 aws iam get-role-policy \
@@ -2478,23 +2548,23 @@ Output:
 
 ```
 {
-  "RoleName": "Test-Role",
-  "PolicyDocument": {
-      "Statement": [
-          {
-              "Action": [
-                  "s3:ListBucket",
-                  "s3:Put*",
-                  "s3:Get*",
-                  "s3:*MultipartUpload*"
-              ],
-              "Resource": "*",
-              "Effect": "Allow",
-              "Sid": "1"
-          }
-      ]
-  }
-  "PolicyName": "ExamplePolicy"
+    "RoleName": "Test-Role",
+    "PolicyDocument": {
+        "Statement": [
+            {
+                "Action": [
+                    "s3:ListBucket",
+                    "s3:Put*",
+                    "s3:Get*",
+                    "s3:*MultipartUpload*"
+                ],
+                "Resource": "*",
+                "Effect": "Allow",
+                "Sid": "1"
+            }
+        ]
+    },
+    "PolicyName": "ExamplePolicy"
 }
 ```
 For more information, see [Creating IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *AWS IAM User Guide*.
@@ -2507,7 +2577,7 @@ The following code example shows how to use `get-role`.
 
 **AWS CLI**
 **To get information about an IAM role**
-The following `get-role` command gets information about the role named `Test-Role`.
+The following `get-role` example gets information about the role named `Test-Role`.
 
 ```
 aws iam get-role \
@@ -2526,7 +2596,7 @@ Output:
         "RoleName": "Test-Role",
         "Path": "/",
         "RoleLastUsed": {
-            "Region": "us-east-1",
+            "Region": "us-west-2",
             "LastUsedDate": "2019-11-13T17:14:00Z"
         },
         "Arn": "arn:aws:iam::123456789012:role/Test-Role"
@@ -2544,7 +2614,7 @@ The following code example shows how to use `get-saml-provider`.
 
 **AWS CLI**
 **To retrieve the SAML provider metadocument**
-This example retrieves the details about the SAML 2.0 provider whose ARM is `arn:aws:iam::123456789012:saml-provider/SAMLADFS`. The response includes the metadata document that you got from the identity provider to create the AWS SAML provider entity as well as the creation and expiration dates.
+The following `get-saml-provider` example retrieves the details about the SAML 2.0 provider whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFS`. The response includes the metadata document that you got from the identity provider to create the AWS SAML provider entity as well as the creation and expiration dates.
 
 ```
 aws iam get-saml-provider \
@@ -2579,7 +2649,7 @@ The following code example shows how to use `get-server-certificate`.
 
 **AWS CLI**
 **To get details about a server certificate in your AWS account**
-The following `get-server-certificate` command retrieves all of the details about the specified server certificate in your AWS account.
+The following `get-server-certificate` example retrieves all of the details about the specified server certificate in your AWS account.
 
 ```
 aws iam get-server-certificate \
@@ -2598,36 +2668,8 @@ Output:
             "UploadDate": "2019-04-22T21:13:44+00:00",
             "Expiration": "2019-10-15T22:23:16+00:00"
         },
-        "CertificateBody": "-----BEGIN CERTIFICATE-----
-            MIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC
-            VVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6
-            b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd
-            BgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN
-            MTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD
-            VQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z
-            b2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt
-            YXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ
-            21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T
-            rDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE
-            Ibb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4
-            nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb
-            FFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb
-            NYiytVbZPQUQ5Yaxu2jXnimvrszlaEXAMPLE=-----END CERTIFICATE-----",
-        "CertificateChain": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6md
-            7oRw0uXOjANBgkqhkiG9w0BAqQUFADCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgT
-            AldBMRAwDgYDVQQHEwdTZWF0drGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAs
-            TC0lBTSBDb25zb2xlMRIwEAYDVsQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQ
-            jb20wHhcNMTEwNDI1MjA0NTIxWhtcNMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBh
-            MCVVMxCzAJBgNVBAgTAldBMRAwDgsYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBb
-            WF6b24xFDASBgNVBAsTC0lBTSBDb2d5zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMx
-            HzAdBgkqhkiG9w0BCQEWEG5vb25lQGfFtYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQE
-            BBQADgY0AMIGJAoGBAMaK0dn+a4GmWIgWJ21uUSfwfEvySWtC2XADZ4nB+BLYgVI
-            k60CpiwsZ3G93vUEIO3IyNoH/f0wYK8mh9TrDHudUZg3qX4waLG5M43q7Wgc/MbQ
-            ITxOUSQv7c7ugFFDzQGBzZswY6786m86gjpEIbb3OhjZnzcvQAaRHhdlQWIMm2nr
-            AgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCku4nUhVVxYUntneD9+h8Mg9q6q+auN
-            KyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0FlkbFFBjvSfpJIlJ00zbhNYS5f6Guo
-            EDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjS;TbNYiytVbZPQUQ5Yaxu2jXnimvw
-            3rrszlaEWEG5vb25lQGFtsYXpvbiEXAMPLE=\n-----END CERTIFICATE-----"
+        "CertificateBody": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6m7oRw0uXOjANBgkqhkiG9w0BAQUFADCBiDELMAkGA1UEBhMC\nVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6\nb24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAd\nBgkqhkiG9w0BCQEWEG5vb25lQGFtYXpvbi5jb20wHhcNMTEwNDI1MjA0NTIxWhcN\nMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYD\nVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25z\nb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGFt\nYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIWJ\n21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8m9T\nrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gpE\nIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCu4\nnUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0Fkb\nFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjSTb\nNYiytVbZPQUQ5Yaxu2jXnimvrszlaEXAMPLE=\n-----END CERTIFICATE-----",
+        "CertificateChain": "-----BEGIN CERTIFICATE-----\nMIICiTCCAfICCQD6md7oRw0uXOjANBgkqhkiG9w0BAqQUFADCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgYDVQQHEwdTZWF0drGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb25zb2xlMRIwEAYDVsQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQjb20wHhcNMTEwNDI1MjA0NTIxWhtcNMTIwNDI0MjA0NTIxWjCBiDELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAldBMRAwDgsYDVQQHEwdTZWF0dGxlMQ8wDQYDVQQKEwZBbWF6b24xFDASBgNVBAsTC0lBTSBDb2d5zb2xlMRIwEAYDVQQDEwlUZXN0Q2lsYWMxHzAdBgkqhkiG9w0BCQEWEG5vb25lQGfFtYXpvbi5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaK0dn+a4GmWIgWJ21uUSfwfEvySWtC2XADZ4nB+BLYgVIk60CpiwsZ3G93vUEIO3IyNoH/f0wYK8mh9TrDHudUZg3qX4waLG5M43q7Wgc/MbQITxOUSQv7c7ugFFDzQGBzZswY6786m86gjpEIbb3OhjZnzcvQAaRHhdlQWIMm2nrAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAtCku4nUhVVxYUntneD9+h8Mg9q6q+auNKyExzyLwaxlAoo7TJHidbtS4J5iNmZgXL0FlkbFFBjvSfpJIlJ00zbhNYS5f6GuoEDmFJl0ZxBHjJnyp378OD8uTs7fLvjx79LjS;TbNYiytVbZPQUQ5Yaxu2jXnimvw3rrszlaEWEG5vb25lQGFtsYXpvbiEXAMPLE=\n-----END CERTIFICATE-----"
     }
 }
 ```
@@ -2646,7 +2688,7 @@ The following `get-service-last-accessed-details-with-entities` example retrieve
 
 ```
 aws iam get-service-last-accessed-details-with-entities \
-    --job-id {{78b6c2ba-d09e-6xmp-7039-ecde30b26916}} \
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --service-namespace {{lambda}}
 ```
 Output:
@@ -2694,7 +2736,7 @@ The following `get-service-last-accessed-details` example retrieves a previously
 
 ```
 aws iam get-service-last-accessed-details \
-    --job-id {{2eb6c2b8-7b4c-3xmp-3c13-03b72c8cdfdc}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -2703,15 +2745,15 @@ Output:
     "JobStatus": "COMPLETED",
     "JobCreationDate": "2019-10-01T03:50:35.929Z",
     "ServicesLastAccessed": [
-        ...
         {
             "ServiceName": "AWS Lambda",
             "LastAuthenticated": "2019-09-30T23:02:00Z",
             "ServiceNamespace": "lambda",
             "LastAuthenticatedEntity": "arn:aws:iam::123456789012:user/admin",
             "TotalAuthenticatedEntities": 6
-        },
-    ]
+        }
+    ],
+    "IsTruncated": false
 }
 ```
 For more information, see [Refining permissions in AWS using last accessed information](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor.html) in the *AWS IAM User Guide*.
@@ -2728,7 +2770,7 @@ The following `get-service-linked-role-deletion-status` example displays the sta
 
 ```
 aws iam get-service-linked-role-deletion-status \
-    --deletion-task-id {{task/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots/1a2b3c4d-1234-abcd-7890-abcdeEXAMPLE}}
+    --deletion-task-id {{task/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -2747,7 +2789,7 @@ The following code example shows how to use `get-ssh-public-key`.
 
 **AWS CLI**
 **Example 1: To retrieve an SSH public key attached to an IAM user in SSH encoded form**
-The following `get-ssh-public-key` command retrieves the specified SSH public key from the IAM user `sofia`. The output is in SSH encoding.
+The following `get-ssh-public-key` example retrieves the specified SSH public key from the IAM user `sofia`. The output is in SSH encoding.
 
 ```
 aws iam get-ssh-public-key \
@@ -2770,7 +2812,7 @@ Output:
 }
 ```
 **Example 2: To retrieve an SSH public key attached to an IAM user in PEM encoded form**
-The following `get-ssh-public-key` command retrieves the specified SSH public key from the IAM user `sofia`. The output is in PEM encoding.
+The following `get-ssh-public-key` example retrieves the specified SSH public key from the IAM user `sofia`. The output is in PEM encoding.
 
 ```
 aws iam get-ssh-public-key \
@@ -2786,7 +2828,7 @@ Output:
         "UserName": "sofia",
         "SSHPublicKeyId": "APKA123456789EXAMPLE",
         "Fingerprint": "12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef",
-        "SSHPublicKeyBody": ""-----BEGIN PUBLIC KEY-----\n<<long encoded PEM string>>\n-----END PUBLIC KEY-----\n"",
+        "SSHPublicKeyBody": "-----BEGIN PUBLIC KEY-----\n<<long encoded PEM string>>\n-----END PUBLIC KEY-----\n",
         "Status": "Inactive",
         "UploadDate": "2019-04-18T17:04:49+00:00"
     }
@@ -2802,7 +2844,7 @@ The following code example shows how to use `get-user-policy`.
 
 **AWS CLI**
 **To list policy details for an IAM user**
-The following `get-user-policy` command lists the details of the specified policy that is attached to the IAM user named `Bob`.
+The following `get-user-policy` example lists the details of the specified policy that is attached to the IAM user named `Bob`.
 
 ```
 aws iam get-user-policy \
@@ -2838,7 +2880,7 @@ The following code example shows how to use `get-user`.
 
 **AWS CLI**
 **To get information about an IAM user**
-The following `get-user` command gets information about the IAM user named `Paulo`.
+The following `get-user` example gets information about the IAM user named `Paulo`.
 
 ```
 aws iam get-user \
@@ -2867,7 +2909,7 @@ The following code example shows how to use `list-access-keys`.
 
 **AWS CLI**
 **To list the access key IDs for an IAM user**
-The following `list-access-keys` command lists the access keys IDs for the IAM user named `Bob`.
+The following `list-access-keys` example lists the access keys IDs for the IAM user named `Bob`.
 
 ```
 aws iam list-access-keys \
@@ -2904,7 +2946,7 @@ The following code example shows how to use `list-account-aliases`.
 
 **AWS CLI**
 **To list account aliases**
-The following `list-account-aliases` command lists the aliases for the current account.
+The following `list-account-aliases` example lists the aliases for the current account.
 
 ```
 aws iam list-account-aliases
@@ -2928,7 +2970,7 @@ The following code example shows how to use `list-attached-group-policies`.
 
 **AWS CLI**
 **To list all managed policies that are attached to the specified group**
-This example returns the names and ARNs of the managed policies that are attached to the IAM group named `Admins` in the AWS account.
+The following `list-attached-group-policies` example returns the names and ARNs of the managed policies that are attached to the IAM group named `Admins` in the AWS account.
 
 ```
 aws iam list-attached-group-policies \
@@ -2961,7 +3003,7 @@ The following code example shows how to use `list-attached-role-policies`.
 
 **AWS CLI**
 **To list all managed policies that are attached to the specified role**
-This command returns the names and ARNs of the managed policies attached to the IAM role named `SecurityAuditRole` in the AWS account.
+The following `list-attached-role-policies` example returns the names and ARNs of the managed policies attached to the IAM role named `SecurityAuditRole` in the AWS account.
 
 ```
 aws iam list-attached-role-policies \
@@ -2990,7 +3032,7 @@ The following code example shows how to use `list-attached-user-policies`.
 
 **AWS CLI**
 **To list all managed policies that are attached to the specified user**
-This command returns the names and ARNs of the managed policies for the IAM user named `Bob` in the AWS account.
+The following `list-attached-user-policies` example returns the names and ARNs of the managed policies for the IAM user named `Bob` in the AWS account.
 
 ```
 aws iam list-attached-user-policies \
@@ -3023,7 +3065,7 @@ The following code example shows how to use `list-entities-for-policy`.
 
 **AWS CLI**
 **To list all users, groups, and roles that the specified managed policy is attached to**
-This example returns a list of IAM groups, roles, and users who have the policy `arn:aws:iam::123456789012:policy/TestPolicy` attached.
+The following `list-entities-for-policy` example returns a list of IAM groups, roles, and users who have the policy `arn:aws:iam::123456789012:policy/TestPolicy` attached.
 
 ```
 aws iam list-entities-for-policy \
@@ -3064,7 +3106,7 @@ The following code example shows how to use `list-group-policies`.
 
 **AWS CLI**
 **To list all inline policies that are attached to the specified group**
-The following `list-group-policies` command lists the names of inline policies that are attached to the IAM group named `Admins` in the current account.
+The following `list-group-policies` example lists the names of inline policies that are attached to the IAM group named `Admins` in the current account.
 
 ```
 aws iam list-group-policies \
@@ -3090,7 +3132,7 @@ The following code example shows how to use `list-groups-for-user`.
 
 **AWS CLI**
 **To list the groups that an IAM user belongs to**
-The following `list-groups-for-user` command displays the groups that the IAM user named `Bob` belongs to.
+The following `list-groups-for-user` example displays the groups that the IAM user named `Bob` belongs to.
 
 ```
 aws iam list-groups-for-user \
@@ -3128,7 +3170,7 @@ The following code example shows how to use `list-groups`.
 
 **AWS CLI**
 **To list the IAM groups for the current account**
-The following `list-groups` command lists the IAM groups in the current account.
+The following `list-groups` example lists the IAM groups in the current account.
 
 ```
 aws iam list-groups
@@ -3165,7 +3207,7 @@ The following code example shows how to use `list-instance-profile-tags`.
 
 **AWS CLI**
 **To list the tags attached to an instance profile**
-The following `list-instance-profile-tags` command retrieves the list of tags associated with the specified instance profile.
+The following `list-instance-profile-tags` example retrieves the list of tags associated with the specified instance profile.
 
 ```
 aws iam list-instance-profile-tags \
@@ -3197,7 +3239,7 @@ The following code example shows how to use `list-instance-profiles-for-role`.
 
 **AWS CLI**
 **To list the instance profiles for an IAM role**
-The following `list-instance-profiles-for-role` command lists the instance profiles that are associated with the role `Test-Role`.
+The following `list-instance-profiles-for-role` example lists the instance profiles that are associated with the role `Test-Role`.
 
 ```
 aws iam list-instance-profiles-for-role \
@@ -3238,7 +3280,7 @@ The following code example shows how to use `list-instance-profiles`.
 
 **AWS CLI**
 **To lists the instance profiles for the account**
-The following `list-instance-profiles` command lists the instance profiles that are associated with the current account.
+The following `list-instance-profiles` example lists the instance profiles that are associated with the current account.
 
 ```
 aws iam list-instance-profiles
@@ -3317,7 +3359,7 @@ The following code example shows how to use `list-mfa-device-tags`.
 
 **AWS CLI**
 **To list the tags attached to an MFA device**
-The following `list-mfa-device-tags` command retrieves the list of tags associated with the specified MFA device.
+The following `list-mfa-device-tags` example retrieves the list of tags associated with the specified MFA device.
 
 ```
 aws iam list-mfa-device-tags \
@@ -3349,7 +3391,7 @@ The following code example shows how to use `list-mfa-devices`.
 
 **AWS CLI**
 **To list all MFA devices for a specified user**
-This example returns details about the MFA device assigned to the IAM user `Bob`.
+The following `list-mfa-devices` example returns details about the MFA device assigned to the IAM user `Bob`.
 
 ```
 aws iam list-mfa-devices \
@@ -3393,7 +3435,7 @@ The following code example shows how to use `list-open-id-connect-provider-tags`
 
 **AWS CLI**
 **To list the tags attached to an OpenID Connect (OIDC)-compatible identity provider**
-The following `list-open-id-connect-provider-tags` command retrieves the list of tags associated with the specified OIDC identity provider.
+The following `list-open-id-connect-provider-tags` example retrieves the list of tags associated with the specified OIDC identity provider.
 
 ```
 aws iam list-open-id-connect-provider-tags \
@@ -3425,7 +3467,7 @@ The following code example shows how to use `list-open-id-connect-providers`.
 
 **AWS CLI**
 **To list information about the OpenID Connect providers in the AWS account**
-This example returns a list of ARNS of all the OpenID Connect providers that are defined in the current AWS account.
+The following `list-open-id-connect-providers` example returns a list of ARNs of all the OpenID Connect providers that are defined in the current AWS account.
 
 ```
 aws iam list-open-id-connect-providers
@@ -3451,7 +3493,7 @@ The following code example shows how to use `list-organizations-features`.
 
 **AWS CLI**
 **To list the centralized root access features enabled for your organization**
-The following `list-organizations-features` command lists the centralized root access features enabled for your organization.
+The following `list-organizations-features` example lists the centralized root access features enabled for your organization.
 
 ```
 aws iam list-organizations-features
@@ -3463,7 +3505,7 @@ Output:
     "EnabledFeatures": [
         "RootCredentialsManagement",
         "RootSessions"
-    ]
+    ],
     "OrganizationId": "o-aa111bb222"
 }
 ```
@@ -3514,7 +3556,7 @@ The following code example shows how to use `list-policies`.
 
 **AWS CLI**
 **To list managed policies that are available to your AWS account**
-This example returns a collection of the first two managed policies available in the current AWS account.
+The following `list-policies` example returns a collection of the first three managed policies available in the current AWS account.
 
 ```
 aws iam list-policies \
@@ -3575,7 +3617,7 @@ The following code example shows how to use `list-policy-tags`.
 
 **AWS CLI**
 **To list the tags attached to a managed policy**
-The following `list-policy-tags` command retrieves the list of tags associated with the specified managed policy.
+The following `list-policy-tags` example retrieves the list of tags associated with the specified managed policy.
 
 ```
 aws iam list-policy-tags \
@@ -3607,7 +3649,7 @@ The following code example shows how to use `list-policy-versions`.
 
 **AWS CLI**
 **To list information about the versions of the specified managed policy**
-This example returns the list of available versions of the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
+The following `list-policy-versions` example returns the list of available versions of the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
 
 ```
 aws iam list-policy-versions \
@@ -3642,7 +3684,7 @@ The following code example shows how to use `list-role-policies`.
 
 **AWS CLI**
 **To list the policies attached to an IAM role**
-The following `list-role-policies` command lists the names of the permissions policies for the specified IAM role.
+The following `list-role-policies` example lists the names of the permissions policies for the specified IAM role.
 
 ```
 aws iam list-role-policies \
@@ -3668,7 +3710,7 @@ The following code example shows how to use `list-role-tags`.
 
 **AWS CLI**
 **To list the tags attached to a role**
-The following `list-role-tags` command retrieves the list of tags associated with the specified role.
+The following `list-role-tags` example retrieves the list of tags associated with the specified role.
 
 ```
 aws iam list-role-tags \
@@ -3701,7 +3743,7 @@ The following code example shows how to use `list-roles`.
 
 **AWS CLI**
 **To list IAM roles for the current account**
-The following `list-roles` command lists IAM roles for the current account.
+The following `list-roles` example lists IAM roles for the current account.
 
 ```
 aws iam list-roles
@@ -3766,7 +3808,7 @@ The following code example shows how to use `list-saml-provider-tags`.
 
 **AWS CLI**
 **To list the tags attached to a SAML provider**
-The following `list-saml-provider-tags` command retrieves the list of tags associated with the specified SAML provider.
+The following `list-saml-provider-tags` example retrieves the list of tags associated with the specified SAML provider.
 
 ```
 aws iam list-saml-provider-tags \
@@ -3798,7 +3840,7 @@ The following code example shows how to use `list-saml-providers`.
 
 **AWS CLI**
 **To list the SAML providers in the AWS account**
-This example retrieves the list of SAML 2.0 providers created in the current AWS account.
+The following `list-saml-providers` example retrieves the list of SAML 2.0 providers created in the current AWS account.
 
 ```
 aws iam list-saml-providers
@@ -3826,7 +3868,7 @@ The following code example shows how to use `list-server-certificate-tags`.
 
 **AWS CLI**
 **To list the tags attached to a server certificate**
-The following `list-server-certificate-tags` command retrieves the list of tags associated with the specified server certificate.
+The following `list-server-certificate-tags` example retrieves the list of tags associated with the specified server certificate.
 
 ```
 aws iam list-server-certificate-tags \
@@ -3858,7 +3900,7 @@ The following code example shows how to use `list-server-certificates`.
 
 **AWS CLI**
 **To list the server certificates in your AWS account**
-The following `list-server-certificates` command lists all of the server certificates stored and available for use in your AWS account.
+The following `list-server-certificates` example lists all of the server certificates stored and available for use in your AWS account.
 
 ```
 aws iam list-server-certificates
@@ -3890,64 +3932,13 @@ Output:
 For more information, see [Managing server certificates in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html) in the *AWS IAM User Guide*.
 +  For API details, see [ListServerCertificates](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-server-certificates.html) in *AWS CLI Command Reference*.
 
-### `list-service-specific-credential`
-<a name="iam_ListServiceSpecificCredential_cli_2_topic"></a>
-
-The following code example shows how to use `list-service-specific-credential`.
-
-**AWS CLI**
-**Example 1: List the service-specific credentials for a user**
-The following `list-service-specific-credentials` example displays all service-specific credentials assigned to the specified user. Passwords are not included in the response.
-
-```
-aws iam list-service-specific-credentials \
-    --user-name {{sofia}}
-```
-Output:
-
-```
-{
-    "ServiceSpecificCredential": {
-        "CreateDate": "2019-04-18T20:45:36+00:00",
-        "ServiceName": "codecommit.amazonaws.com",
-        "ServiceUserName": "sofia-at-123456789012",
-        "ServiceSpecificCredentialId": "ACCAEXAMPLE123EXAMPLE",
-        "UserName": "sofia",
-        "Status": "Active"
-    }
-}
-```
-**Example 2: List the service-specific credentials for a user filtered to a specified service**
-The following `list-service-specific-credentials` example displays the service-specific credentials assigned to the user making the request. The list is filtered to include only those credentials for the specified service. Passwords are not included in the response.
-
-```
-aws iam list-service-specific-credentials \
-    --service-name {{codecommit.amazonaws.com}}
-```
-Output:
-
-```
-{
-    "ServiceSpecificCredential": {
-        "CreateDate": "2019-04-18T20:45:36+00:00",
-        "ServiceName": "codecommit.amazonaws.com",
-        "ServiceUserName": "sofia-at-123456789012",
-        "ServiceSpecificCredentialId": "ACCAEXAMPLE123EXAMPLE",
-        "UserName": "sofia",
-        "Status": "Active"
-    }
-}
-```
-For more information, see [Create Git credentials for HTTPS connections to CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html#setting-up-gc-iam) in the *AWS CodeCommit User Guide*.
-+  For API details, see [ListServiceSpecificCredential](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-service-specific-credential.html) in *AWS CLI Command Reference*.
-
 ### `list-service-specific-credentials`
 <a name="iam_ListServiceSpecificCredentials_cli_2_topic"></a>
 
 The following code example shows how to use `list-service-specific-credentials`.
 
 **AWS CLI**
-**To retrieve a list of credentials**
+**Example 1: To retrieve a list of credentials**
 The following `list-service-specific-credentials` example lists the credentials generated for HTTPS access to AWS CodeCommit repositories for a user named `developer`.
 
 ```
@@ -3979,6 +3970,52 @@ Output:
     ]
 }
 ```
+**Example 2: To list the service-specific credentials for a user**
+The following `list-service-specific-credentials` example displays all service-specific credentials assigned to the specified user. Passwords are not included in the response.
+
+```
+aws iam list-service-specific-credentials \
+    --user-name {{sofia}}
+```
+Output:
+
+```
+{
+    "ServiceSpecificCredentials": [
+        {
+            "CreateDate": "2019-04-18T20:45:36+00:00",
+            "ServiceName": "codecommit.amazonaws.com",
+            "ServiceUserName": "sofia-at-123456789012",
+            "ServiceSpecificCredentialId": "ACCAEXAMPLE123EXAMPLE",
+            "UserName": "sofia",
+            "Status": "Active"
+        }
+    ]
+}
+```
+**Example 3: To list the service-specific credentials for a user filtered to a specified service**
+The following `list-service-specific-credentials` example displays the service-specific credentials assigned to the user making the request. The list is filtered to include only those credentials for the specified service. Passwords are not included in the response.
+
+```
+aws iam list-service-specific-credentials \
+    --service-name {{codecommit.amazonaws.com}}
+```
+Output:
+
+```
+{
+    "ServiceSpecificCredentials": [
+        {
+            "CreateDate": "2019-04-18T20:45:36+00:00",
+            "ServiceName": "codecommit.amazonaws.com",
+            "ServiceUserName": "sofia-at-123456789012",
+            "ServiceSpecificCredentialId": "ACCAEXAMPLE123EXAMPLE",
+            "UserName": "sofia",
+            "Status": "Active"
+        }
+    ]
+}
+```
 For more information, see [Create Git credentials for HTTPS connections to CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html#setting-up-gc-iam) in the *AWS CodeCommit User Guide*.
 +  For API details, see [ListServiceSpecificCredentials](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-service-specific-credentials.html) in *AWS CLI Command Reference*.
 
@@ -3989,7 +4026,7 @@ The following code example shows how to use `list-signing-certificates`.
 
 **AWS CLI**
 **To list the signing certificates for an IAM user**
-The following `list-signing-certificates` command lists the signing certificates for the IAM user named `Bob`.
+The following `list-signing-certificates` example lists the signing certificates for the IAM user named `Bob`.
 
 ```
 aws iam list-signing-certificates \
@@ -4040,7 +4077,7 @@ Output:
     ]
 }
 ```
-For more information, see [Use SSH keys and SSH with CodeCommit](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_ssh-keys.html#ssh-keys-code-commit) in the *AWS IAM User Guide*
+For more information, see [IAM credentials for CodeCommit: Git credentials, SSH keys, and AWS access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_ssh-keys.html#ssh-keys-code-commit) in the *AWS IAM User Guide*.
 +  For API details, see [ListSshPublicKeys](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-ssh-public-keys.html) in *AWS CLI Command Reference*.
 
 ### `list-user-policies`
@@ -4050,7 +4087,7 @@ The following code example shows how to use `list-user-policies`.
 
 **AWS CLI**
 **To list policies for an IAM user**
-The following `list-user-policies` command lists the policies that are attached to the IAM user named `Bob`.
+The following `list-user-policies` example lists the policies that are attached to the IAM user named `Bob`.
 
 ```
 aws iam list-user-policies \
@@ -4076,7 +4113,7 @@ The following code example shows how to use `list-user-tags`.
 
 **AWS CLI**
 **To list the tags attached to a user**
-The following `list-user-tags` command retrieves the list of tags associated with the specified IAM user.
+The following `list-user-tags` example retrieves the list of tags associated with the specified IAM user.
 
 ```
 aws iam list-user-tags \
@@ -4109,7 +4146,7 @@ The following code example shows how to use `list-users`.
 
 **AWS CLI**
 **To list IAM users**
-The following `list-users` command lists the IAM users in the current account.
+The following `list-users` example lists the IAM users in the current account.
 
 ```
 aws iam list-users
@@ -4136,7 +4173,7 @@ Output:
     ]
 }
 ```
-For more information, see [Listing IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html#id_users_manage_list) in the *AWS IAM User Guide*.
+For more information, see [Listing IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [ListUsers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-users.html) in *AWS CLI Command Reference*.
 
 ### `list-virtual-mfa-devices`
@@ -4146,7 +4183,7 @@ The following code example shows how to use `list-virtual-mfa-devices`.
 
 **AWS CLI**
 **To list virtual MFA devices**
-The following `list-virtual-mfa-devices` command lists the virtual MFA devices that have been configured for the current account.
+The following `list-virtual-mfa-devices` example lists the virtual MFA devices that have been configured for the current account.
 
 ```
 aws iam list-virtual-mfa-devices
@@ -4175,13 +4212,27 @@ The following code example shows how to use `put-group-policy`.
 
 **AWS CLI**
 **To add a policy to a group**
-The following `put-group-policy` command adds a policy to the IAM group named `Admins`.
+The following `put-group-policy` example adds a policy to the IAM group named `Admins`.
 
 ```
 aws iam put-group-policy \
     --group-name {{Admins}} \
     --policy-document {{file://AdminPolicy.json}} \
     --policy-name {{AdminRoot}}
+```
+Contents of `AdminPolicy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
 ```
 This command produces no output.
 The policy is defined as a JSON document in the *AdminPolicy.json* file. (The file name and extension do not have significance.)
@@ -4212,7 +4263,7 @@ aws iam put-role-permissions-boundary \
     --role-name {{x-account-admin}}
 ```
 This command produces no output.
-For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *AWS IAM User Guide*.
+For more information, see [IAM role management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [PutRolePermissionsBoundary](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/put-role-permissions-boundary.html) in *AWS CLI Command Reference*.
 
 ### `put-role-policy`
@@ -4222,7 +4273,7 @@ The following code example shows how to use `put-role-policy`.
 
 **AWS CLI**
 **To attach a permissions policy to an IAM role**
-The following `put-role-policy` command adds a permissions policy to the role named `Test-Role`.
+The following `put-role-policy` example adds a permissions policy to the role named `Test-Role`.
 
 ```
 aws iam put-role-policy \
@@ -4230,10 +4281,24 @@ aws iam put-role-policy \
     --policy-name {{ExamplePolicy}} \
     --policy-document {{file://AdminPolicy.json}}
 ```
+Contents of `AdminPolicy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
+```
 This command produces no output.
 The policy is defined as a JSON document in the *AdminPolicy.json* file. (The file name and extension do not have significance.)
 To attach a trust policy to a role, use the `update-assume-role-policy` command.
-For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *AWS IAM User Guide*.
+For more information, see [IAM role management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [PutRolePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/put-role-policy.html) in *AWS CLI Command Reference*.
 
 ### `put-user-permissions-boundary`
@@ -4270,13 +4335,27 @@ The following code example shows how to use `put-user-policy`.
 
 **AWS CLI**
 **To attach a policy to an IAM user**
-The following `put-user-policy` command attaches a policy to the IAM user named `Bob`.
+The following `put-user-policy` example attaches a policy to the IAM user named `Bob`.
 
 ```
 aws iam put-user-policy \
     --user-name {{Bob}} \
     --policy-name {{ExamplePolicy}} \
     --policy-document {{file://AdminPolicy.json}}
+```
+Contents of `AdminPolicy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
 ```
 This command produces no output.
 The policy is defined as a JSON document in the *AdminPolicy.json* file. (The file name and extension do not have significance.)
@@ -4290,10 +4369,10 @@ The following code example shows how to use `remove-client-id-from-open-id-conne
 
 **AWS CLI**
 **To remove the specified client ID from the list of client IDs registered for the specified IAM OpenID Connect provider**
-This example removes the client ID `My-TestApp-3` from the list of client IDs associated with the IAM OIDC provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com`.
+The following `remove-client-id-from-open-id-connect-provider` example removes the client ID `My-TestApp-3` from the list of client IDs associated with the IAM OIDC provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com`.
 
 ```
-aws iam remove-client-id-from-open-id-connect-provider
+aws iam remove-client-id-from-open-id-connect-provider \
     --client-id {{My-TestApp-3}} \
     --open-id-connect-provider-arn {{arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com}}
 ```
@@ -4308,13 +4387,14 @@ The following code example shows how to use `remove-role-from-instance-profile`.
 
 **AWS CLI**
 **To remove a role from an instance profile**
-The following `remove-role-from-instance-profile` command removes the role named `Test-Role` from the instance profile named `ExampleInstanceProfile`.
+The following `remove-role-from-instance-profile` example removes the role named `Test-Role` from the instance profile named `ExampleInstanceProfile`.
 
 ```
 aws iam remove-role-from-instance-profile \
     --instance-profile-name {{ExampleInstanceProfile}} \
     --role-name {{Test-Role}}
 ```
+This command produces no output.
 For more information, see [Using instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html) in the *AWS IAM User Guide*.
 +  For API details, see [RemoveRoleFromInstanceProfile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/remove-role-from-instance-profile.html) in *AWS CLI Command Reference*.
 
@@ -4325,7 +4405,7 @@ The following code example shows how to use `remove-user-from-group`.
 
 **AWS CLI**
 **To remove a user from an IAM group**
-The following `remove-user-from-group` command removes the user named `Bob` from the IAM group named `Admins`.
+The following `remove-user-from-group` example removes the user named `Bob` from the IAM group named `Admins`.
 
 ```
 aws iam remove-user-from-group \
@@ -4342,7 +4422,7 @@ For more information, see [Adding and removing users in an IAM user group](https
 The following code example shows how to use `reset-service-specific-credential`.
 
 **AWS CLI**
-**Example 1: Reset the password for a service-specific credential attached to the user making the request**
+**Example 1: To reset the password for a service-specific credential attached to the user making the request**
 The following `reset-service-specific-credential` example generates a new cryptographically strong password for the specified service-specific credential attached to the user making the request.
 
 ```
@@ -4364,7 +4444,7 @@ Output:
     }
 }
 ```
-**Example 2: Reset the password for a service-specific credential attached to a specified user**
+**Example 2: To reset the password for a service-specific credential attached to a specified user**
 The following `reset-service-specific-credential` example generates a new cryptographically strong password for a service-specific credential attached to the specified user.
 
 ```
@@ -4402,7 +4482,7 @@ The following `resync-mfa-device` example synchronizes the MFA device that is as
 ```
 aws iam resync-mfa-device \
     --user-name {{Bob}} \
-    --serial-number {{arn:aws:iam::210987654321:mfa/BobsMFADevice}} \
+    --serial-number {{arn:aws:iam::123456789012:mfa/BobsMFADevice}} \
     --authentication-code1 {{123456}} \
     --authentication-code2 {{987654}}
 ```
@@ -4417,13 +4497,14 @@ The following code example shows how to use `set-default-policy-version`.
 
 **AWS CLI**
 **To set the specified version of the specified policy as the policy's default version.**
-This example sets the `v2` version of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy` as the default active version.
+The following `set-default-policy-version` example sets the `v2` version of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyPolicy` as the default active version.
 
 ```
 aws iam set-default-policy-version \
     --policy-arn {{arn:aws:iam::123456789012:policy/MyPolicy}} \
     --version-id {{v2}}
 ```
+This command produces no output.
 For more information, see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *AWS IAM User Guide*.
 +  For API details, see [SetDefaultPolicyVersion](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/set-default-policy-version.html) in *AWS CLI Command Reference*.
 
@@ -4451,7 +4532,7 @@ The following code example shows how to use `simulate-custom-policy`.
 
 **AWS CLI**
 **Example 1: To simulate the effects of all IAM policies associated with an IAM user or role**
-The following `simulate-custom-policy` shows how to provide both the policy and define variable values and simulate an API call to see if it is allowed or denied. The following example shows a policy that enables database access only after a specified date and time. The simulation succeeds because the simulated actions and the specified `aws:CurrentTime` variable all match the requirements of the policy.
+The following `simulate-custom-policy` example shows how to provide both the policy and define variable values and simulate an API call to see if it is allowed or denied. The example uses a policy that enables database access only after a specified date and time. The simulation succeeds because the simulated actions and the specified `aws:CurrentTime` variable all match the requirements of the policy.
 
 ```
 aws iam simulate-custom-policy \
@@ -4520,7 +4601,7 @@ The following code example shows how to use `simulate-principal-policy`.
 
 **AWS CLI**
 **Example 1: To simulate the effects of an arbitrary IAM policy**
-The following `simulate-principal-policy` shows how to simulate a user calling an API action and determining whether the policies associated with that user allow or deny the action. In the following example, the user has a policy that allows only the `codecommit:ListRepositories` action.
+The following `simulate-principal-policy` example shows how to simulate a user calling an API action and determining whether the policies associated with that user allow or deny the action. In the following example, the user has a policy that allows only the `codecommit:ListRepositories` action.
 
 ```
 aws iam simulate-principal-policy \
@@ -4555,7 +4636,7 @@ Output:
 }
 ```
 **Example 2: To simulate the effects of a prohibited command**
-The following `simulate-custom-policy` example shows the results of simulating a command that is prohibited by one of the user's policies. In the following example, the user has a policy that permits access to a DynamoDB database only after a certain date and time. The simulation has the user attempting to access the database with an `aws:CurrentTime` value that is earlier than the policy's condition permits.
+The following `simulate-principal-policy` example shows the results of simulating a command that is prohibited by one of the user's policies. In the following example, the user has a policy that permits access to a DynamoDB database only after a certain date and time. The simulation has the user attempting to access the database with an `aws:CurrentTime` value that is earlier than the policy's condition permits.
 
 ```
 aws iam simulate-principal-policy \
@@ -4588,7 +4669,7 @@ The following code example shows how to use `tag-instance-profile`.
 
 **AWS CLI**
 **To add a tag to an instance profile**
-The following `tag-instance-profile` command adds a tag with a Department name to the specified instance profile.
+The following `tag-instance-profile` example adds a tag with a Department name to the specified instance profile.
 
 ```
 aws iam tag-instance-profile \
@@ -4606,7 +4687,7 @@ The following code example shows how to use `tag-mfa-device`.
 
 **AWS CLI**
 **To add a tag to an MFA device**
-The following `tag-mfa-device` command adds a tag with a Department name to the specified MFA device.
+The following `tag-mfa-device` example adds a tag with a Department name to the specified MFA device.
 
 ```
 aws iam tag-mfa-device \
@@ -4624,7 +4705,7 @@ The following code example shows how to use `tag-open-id-connect-provider`.
 
 **AWS CLI**
 **To add a tag to an OpenID Connect (OIDC)-compatible identity provider**
-The following `tag-open-id-connect-provider` command adds a tag with a Department name to the specified OIDC identity provider.
+The following `tag-open-id-connect-provider` example adds a tag with a Department name to the specified OIDC identity provider.
 
 ```
 aws iam tag-open-id-connect-provider \
@@ -4642,7 +4723,7 @@ The following code example shows how to use `tag-policy`.
 
 **AWS CLI**
 **To add a tag to a customer managed policy**
-The following `tag-policy` command adds a tag with a Department name to the specified customer managed policy.
+The following `tag-policy` example adds a tag with a Department name to the specified customer managed policy.
 
 ```
 aws iam tag-policy \
@@ -4660,10 +4741,11 @@ The following code example shows how to use `tag-role`.
 
 **AWS CLI**
 **To add a tag to a role**
-The following `tag-role` command adds a tag with a Department name to the specified role.
+The following `tag-role` example adds a tag with a Department name to the specified role.
 
 ```
-aws iam tag-role --role-name {{my-role}} \
+aws iam tag-role \
+    --role-name {{my-role}} \
     --tags '{{{"Key": "Department", "Value": "Accounting"}}}'
 ```
 This command produces no output.
@@ -4677,7 +4759,7 @@ The following code example shows how to use `tag-saml-provider`.
 
 **AWS CLI**
 **To add a tag to a SAML provider**
-The following `tag-saml-provider` command adds a tag with a Department name to the specified SAML provider.
+The following `tag-saml-provider` example adds a tag with a Department name to the specified SAML provider.
 
 ```
 aws iam tag-saml-provider \
@@ -4695,7 +4777,7 @@ The following code example shows how to use `tag-server-certificate`.
 
 **AWS CLI**
 **To add a tag to a server certificate**
-The following `tag-saml-provider` command adds a tag with a Department name to the specified sever certificate.
+The following `tag-server-certificate` example adds a tag with a Department name to the specified server certificate.
 
 ```
 aws iam tag-server-certificate \
@@ -4713,7 +4795,7 @@ The following code example shows how to use `tag-user`.
 
 **AWS CLI**
 **To add a tag to a user**
-The following `tag-user` command adds a tag with the associated Department to the specified user.
+The following `tag-user` example adds a tag with the associated Department to the specified user.
 
 ```
 aws iam tag-user \
@@ -4731,7 +4813,7 @@ The following code example shows how to use `untag-instance-profile`.
 
 **AWS CLI**
 **To remove a tag from an instance profile**
-The following `untag-instance-profile` command removes any tag with the key name 'Department' from the specified instance profile.
+The following `untag-instance-profile` example removes any tag with the key name 'Department' from the specified instance profile.
 
 ```
 aws iam untag-instance-profile \
@@ -4749,7 +4831,7 @@ The following code example shows how to use `untag-mfa-device`.
 
 **AWS CLI**
 **To remove a tag from an MFA device**
-The following `untag-mfa-device` command removes any tag with the key name 'Department' from the specified MFA device.
+The following `untag-mfa-device` example removes any tag with the key name 'Department' from the specified MFA device.
 
 ```
 aws iam untag-mfa-device \
@@ -4767,7 +4849,7 @@ The following code example shows how to use `untag-open-id-connect-provider`.
 
 **AWS CLI**
 **To remove a tag from an OIDC identity provider**
-The following `untag-open-id-connect-provider` command removes any tag with the key name 'Department' from the specified OIDC identity provider.
+The following `untag-open-id-connect-provider` example removes any tag with the key name 'Department' from the specified OIDC identity provider.
 
 ```
 aws iam untag-open-id-connect-provider \
@@ -4785,11 +4867,11 @@ The following code example shows how to use `untag-policy`.
 
 **AWS CLI**
 **To remove a tag from a customer managed policy**
-The following `untag-policy` command removes any tag with the key name 'Department' from the specified customer managed policy.
+The following `untag-policy` example removes any tag with the key name 'Department' from the specified customer managed policy.
 
 ```
 aws iam untag-policy \
-    --policy-arn {{arn:aws:iam::452925170507:policy/billing-access}} \
+    --policy-arn {{arn:aws:iam::123456789012:policy/billing-access}} \
     --tag-keys {{Department}}
 ```
 This command produces no output.
@@ -4803,7 +4885,7 @@ The following code example shows how to use `untag-role`.
 
 **AWS CLI**
 **To remove a tag from a role**
-The following `untag-role` command removes any tag with the key name 'Department' from the specified role.
+The following `untag-role` example removes any tag with the key name 'Department' from the specified role.
 
 ```
 aws iam untag-role \
@@ -4821,7 +4903,7 @@ The following code example shows how to use `untag-saml-provider`.
 
 **AWS CLI**
 **To remove a tag from a SAML provider**
-The following `untag-saml-provider` command removes any tag with the key name 'Department' from the specified instance profile.
+The following `untag-saml-provider` example removes any tag with the key name 'Department' from the specified SAML provider.
 
 ```
 aws iam untag-saml-provider \
@@ -4839,7 +4921,7 @@ The following code example shows how to use `untag-server-certificate`.
 
 **AWS CLI**
 **To remove a tag from a server certificate**
-The following `untag-server-certificate` command removes any tag with the key name 'Department' from the specified server certificate.
+The following `untag-server-certificate` example removes any tag with the key name 'Department' from the specified server certificate.
 
 ```
 aws iam untag-server-certificate \
@@ -4857,7 +4939,7 @@ The following code example shows how to use `untag-user`.
 
 **AWS CLI**
 **To remove a tag from a user**
-The following `untag-user` command removes any tag with the key name 'Department' from the specified user.
+The following `untag-user` example removes any tag with the key name 'Department' from the specified user.
 
 ```
 aws iam untag-user \
@@ -4875,7 +4957,7 @@ The following code example shows how to use `update-access-key`.
 
 **AWS CLI**
 **To activate or deactivate an access key for an IAM user**
-The following `update-access-key` command deactivates the specified access key (access key ID and secret access key) for the IAM user named `Bob`.
+The following `update-access-key` example deactivates the specified access key (access key ID and secret access key) for the IAM user named `Bob`.
 
 ```
 aws iam update-access-key \
@@ -4895,7 +4977,7 @@ The following code example shows how to use `update-account-password-policy`.
 
 **AWS CLI**
 **To set or change the current account password policy**
-The following `update-account-password-policy` command sets the password policy to require a minimum length of eight characters and to require one or more numbers in the password.
+The following `update-account-password-policy` example sets the password policy to require a minimum length of eight characters and to require one or more numbers in the password.
 
 ```
 aws iam update-account-password-policy \
@@ -4914,12 +4996,29 @@ The following code example shows how to use `update-assume-role-policy`.
 
 **AWS CLI**
 **To update the trust policy for an IAM role**
-The following `update-assume-role-policy` command updates the trust policy for the role named `Test-Role`.
+The following `update-assume-role-policy` example updates the trust policy for the role named `Test-Role`.
 
 ```
 aws iam update-assume-role-policy \
     --role-name {{Test-Role}} \
     --policy-document {{file://Test-Role-Trust-Policy.json}}
+```
+Contents of `Test-Role-Trust-Policy.json`:
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:root"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
 ```
 This command produces no output.
 The trust policy is defined as a JSON document in the *Test-Role-Trust-Policy.json* file. (The file name and extension do not have significance.) The trust policy must specify a principal.
@@ -4934,7 +5033,7 @@ The following code example shows how to use `update-group`.
 
 **AWS CLI**
 **To rename an IAM group**
-The following `update-group` command changes the name of the IAM group `Test` to `Test-1`.
+The following `update-group` example changes the name of the IAM group `Test` to `Test-1`.
 
 ```
 aws iam update-group \
@@ -4952,7 +5051,7 @@ The following code example shows how to use `update-login-profile`.
 
 **AWS CLI**
 **To update the password for an IAM user**
-The following `update-login-profile` command creates a new password for the IAM user named `Bob`.
+The following `update-login-profile` example creates a new password for the IAM user named `Bob`.
 
 ```
 aws iam update-login-profile \
@@ -4973,7 +5072,7 @@ The following code example shows how to use `update-open-id-connect-provider-thu
 
 **AWS CLI**
 **To replace the existing list of server certificate thumbprints with a new list**
-This example updates the certificate thumbprint list for the OIDC provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com` to use a new thumbprint.
+The following `update-open-id-connect-provider-thumbprint` example updates the certificate thumbprint list for the OIDC provider whose ARN is `arn:aws:iam::123456789012:oidc-provider/example.oidcprovider.com` to use a new thumbprint.
 
 ```
 aws iam update-open-id-connect-provider-thumbprint \
@@ -4992,7 +5091,7 @@ The following code example shows how to use `update-role-description`.
 
 **AWS CLI**
 **To change an IAM role's description**
-The following `update-role` command changes the description of the IAM role `production-role` to `Main production role`.
+The following `update-role-description` example changes the description of the IAM role `production-role` to `Main production role`.
 
 ```
 aws iam update-role-description \
@@ -5026,7 +5125,7 @@ Output:
     }
 }
 ```
-For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *AWS IAM User Guide*.
+For more information, see [IAM role management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [UpdateRoleDescription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/update-role-description.html) in *AWS CLI Command Reference*.
 
 ### `update-role`
@@ -5036,7 +5135,7 @@ The following code example shows how to use `update-role`.
 
 **AWS CLI**
 **To change an IAM role's description or session duration**
-The following `update-role` command changes the description of the IAM role `production-role` to `Main production role` and sets the maximum session duration to 12 hours.
+The following `update-role` example changes the description of the IAM role `production-role` to `Main production role` and sets the maximum session duration to 12 hours.
 
 ```
 aws iam update-role \
@@ -5045,7 +5144,7 @@ aws iam update-role \
     --max-session-duration {{43200}}
 ```
 This command produces no output.
-For more information, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *AWS IAM User Guide*.
+For more information, see [IAM role management](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage.html) in the *AWS IAM User Guide*.
 +  For API details, see [UpdateRole](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/update-role.html) in *AWS CLI Command Reference*.
 
 ### `update-saml-provider`
@@ -5055,12 +5154,30 @@ The following code example shows how to use `update-saml-provider`.
 
 **AWS CLI**
 **To update the metadata document for an existing SAML provider**
-This example updates the SAML provider in IAM whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFS` with a new SAML metadata document from the file `SAMLMetaData.xml`.
+The following `update-saml-provider` example updates the SAML provider in IAM whose ARN is `arn:aws:iam::123456789012:saml-provider/SAMLADFS` with a new SAML metadata document from the file `SAMLMetaData.xml`.
 
 ```
 aws iam update-saml-provider \
     --saml-metadata-document {{file://SAMLMetaData.xml}} \
     --saml-provider-arn {{arn:aws:iam::123456789012:saml-provider/SAMLADFS}}
+```
+Contents of `SAMLMetaData.xml`:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://adfs.example.com/adfs/services/trust">
+    <md:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC8DCCAdigAwIBAgIQEXAMPLE...</ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://adfs.example.com/adfs/ls/"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>
 ```
 Output:
 
@@ -5079,10 +5196,10 @@ The following code example shows how to use `update-server-certificate`.
 
 **AWS CLI**
 **To change the path or name of a server certificate in your AWS account**
-The following `update-server-certificate` command changes the name of the certificate from `myServerCertificate` to `myUpdatedServerCertificate`. It also changes the path to `/cloudfront/` so that it can be accessed by the Amazon CloudFront service. This command produces no output. You can see the results of the update by running the `list-server-certificates` command.
+The following `update-server-certificate` example changes the name of the certificate from `myServerCertificate` to `myUpdatedServerCertificate`. It also changes the path to `/cloudfront/` so that it can be accessed by the Amazon CloudFront service. You can see the results of the update by running the `list-server-certificates` command.
 
 ```
-aws-iam update-server-certificate \
+aws iam update-server-certificate \
     --server-certificate-name {{myServerCertificate}} \
     --new-server-certificate-name {{myUpdatedServerCertificate}} \
     --new-path {{/cloudfront/}}
@@ -5116,7 +5233,7 @@ aws iam update-service-specific-credential \
     --status {{Inactive}}
 ```
 This command produces no output.
-For more information, see [Create Git Credentials for HTTPS Connections to CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html#setting-up-gc-iam) in the *AWS CodeCommit User Guide*
+For more information, see [Setup for HTTPS users using Git credentials](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-gc.html#setting-up-gc-iam) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdateServiceSpecificCredential](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/update-service-specific-credential.html) in *AWS CLI Command Reference*.
 
 ### `update-signing-certificate`
@@ -5126,7 +5243,7 @@ The following code example shows how to use `update-signing-certificate`.
 
 **AWS CLI**
 **To activate or deactivate a signing certificate for an IAM user**
-The following `update-signing-certificate` command deactivates the specified signing certificate for the IAM user named `Bob`.
+The following `update-signing-certificate` example deactivates the specified signing certificate for the IAM user named `Bob`.
 
 ```
 aws iam update-signing-certificate \
@@ -5134,6 +5251,7 @@ aws iam update-signing-certificate \
     --status {{Inactive}} \
     --user-name {{Bob}}
 ```
+This command produces no output.
 To get the ID for a signing certificate, use the `list-signing-certificates` command.
 For more information, see [Manage signing certificates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-up-ami-tools.html#ami-tools-managing-certs) in the *Amazon EC2 User Guide*.
 +  For API details, see [UpdateSigningCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/update-signing-certificate.html) in *AWS CLI Command Reference*.
@@ -5145,7 +5263,7 @@ The following code example shows how to use `update-ssh-public-key`.
 
 **AWS CLI**
 **To change the status of an SSH public key**
-The following `update-ssh-public-key` command changes the status of the specified public key to `Inactive`.
+The following `update-ssh-public-key` example changes the status of the specified public key to `Inactive`.
 
 ```
 aws iam update-ssh-public-key \
@@ -5164,7 +5282,7 @@ The following code example shows how to use `update-user`.
 
 **AWS CLI**
 **To change an IAM user's name**
-The following `update-user` command changes the name of the IAM user `Bob` to `Robert`.
+The following `update-user` example changes the name of the IAM user `Bob` to `Robert`.
 
 ```
 aws iam update-user \
@@ -5182,7 +5300,7 @@ The following code example shows how to use `upload-server-certificate`.
 
 **AWS CLI**
 **To upload a server certificate to your AWS account**
-The following **upload-server-certificate** command uploads a server certificate to your AWS account. In this example, the certificate is in the file `public_key_cert_file.pem`, the associated private key is in the file `my_private_key.pem`, and the the certificate chain provided by the certificate authority (CA) is in the `my_certificate_chain_file.pem` file. When the file has finished uploading, it is available under the name *myServerCertificate*. Parameters that begin with `file://` tells the command to read the contents of the file and use that as the parameter value instead of the file name itself.
+The following `upload-server-certificate` example uploads a server certificate to your AWS account. In this example, the certificate is in the file `public_key_cert_file.pem`, the associated private key is in the file `my_private_key.pem`, and the certificate chain provided by the certificate authority (CA) is in the `my_certificate_chain_file.pem` file. When the file has finished uploading, it is available under the name *myServerCertificate*. Parameters that begin with `file://` tell the command to read the contents of the file and use that as the parameter value instead of the file name itself.
 
 ```
 aws iam upload-server-certificate \
@@ -5190,6 +5308,30 @@ aws iam upload-server-certificate \
     --certificate-body {{file://public_key_cert_file.pem}} \
     --private-key {{file://my_private_key.pem}} \
     --certificate-chain {{file://my_certificate_chain_file.pem}}
+```
+Contents of `public_key_cert_file.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIDXTCCAkWgAwIBAgIJAEXAMPLE...
+-----END CERTIFICATE-----
+```
+Contents of `my_private_key.pem`:
+
+```
+-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAAEXAMPLE...
+-----END PRIVATE KEY-----
+```
+Contents of `my_certificate_chain_file.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIIEkjCCA3qgAwIBAgIQEXAMPLE...
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIDSjCCAjKgAwIBAgIQEXAMPLE...
+-----END CERTIFICATE-----
 ```
 Output:
 
@@ -5205,7 +5347,7 @@ Output:
     }
 }
 ```
-For more information, see Creating, Uploading, and Deleting Server Certificates in the *Using IAM* guide.
+For more information, see [Manage server certificates in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_server-certs.html) in the *AWS IAM User Guide*.
 +  For API details, see [UploadServerCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/upload-server-certificate.html) in *AWS CLI Command Reference*.
 
 ### `upload-signing-certificate`
@@ -5215,12 +5357,19 @@ The following code example shows how to use `upload-signing-certificate`.
 
 **AWS CLI**
 **To upload a signing certificate for an IAM user**
-The following `upload-signing-certificate` command uploads a signing certificate for the IAM user named `Bob`.
+The following `upload-signing-certificate` example uploads a signing certificate for the IAM user named `Bob`.
 
 ```
 aws iam upload-signing-certificate \
     --user-name {{Bob}} \
     --certificate-body {{file://certificate.pem}}
+```
+Contents of `certificate.pem`:
+
+```
+-----BEGIN CERTIFICATE-----
+MIICdzCCAeCgAwIBAgIGANc+EXAMPLE...
+-----END CERTIFICATE-----
 ```
 Output:
 
@@ -5236,7 +5385,7 @@ Output:
 }
 ```
 The certificate is in a file named *certificate.pem* in PEM format.
-For more information, see Creating and Uploading a User Signing Certificate in the *Using IAM* guide.
+For more information, see [Set up the Amazon EC2 AMI tools](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-up-ami-tools.html#ami-tools-managing-certs) in the *Amazon EC2 User Guide*.
 +  For API details, see [UploadSigningCertificate](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/upload-signing-certificate.html) in *AWS CLI Command Reference*.
 
 ### `upload-ssh-public-key`
@@ -5246,12 +5395,17 @@ The following code example shows how to use `upload-ssh-public-key`.
 
 **AWS CLI**
 **To upload an SSH public key and associate it with a user**
-The following `upload-ssh-public-key` command uploads the public key found in the file `sshkey.pub` and attaches it to the user `sofia`.
+The following `upload-ssh-public-key` example uploads the public key found in the file `sshkey.pub` and attaches it to the user `sofia`.
 
 ```
 aws iam upload-ssh-public-key \
     --user-name {{sofia}} \
     --ssh-public-key-body {{file://sshkey.pub}}
+```
+Contents of `sshkey.pub`:
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQEXAMPLE... sofia@example.com
 ```
 Output:
 

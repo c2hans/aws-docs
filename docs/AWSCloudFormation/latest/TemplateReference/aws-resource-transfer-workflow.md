@@ -24,6 +24,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Description](#cfn-transfer-workflow-description)" : {{String}},
       "[OnExceptionSteps](#cfn-transfer-workflow-onexceptionsteps)" : {{[ WorkflowStep, ... ]}},
       "[Steps](#cfn-transfer-workflow-steps)" : {{[ WorkflowStep, ... ]}},
+      "[StructuredLogDestinations](#cfn-transfer-workflow-structuredlogdestinations)" : {{[ String, ... ]}},
       "[Tags](#cfn-transfer-workflow-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -40,6 +41,8 @@ Properties:
     - WorkflowStep}}
   [Steps](#cfn-transfer-workflow-steps): {{
     - WorkflowStep}}
+  [StructuredLogDestinations](#cfn-transfer-workflow-structuredlogdestinations): {{
+    - String}}
   [Tags](#cfn-transfer-workflow-tags): {{
     - Tag}}
 ```
@@ -68,6 +71,17 @@ Specifies the details for the steps that are in the specified workflow.
 *Required*: Yes
 *Type*: Array of [WorkflowStep](aws-properties-transfer-workflow-workflowstep.md)
 *Maximum*: `8`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`StructuredLogDestinations`  <a name="cfn-transfer-workflow-structuredlogdestinations"></a>
+Specifies the log groups to which your workflow logs are sent.
+To specify a log group, you must provide the ARN for an existing log group. In this case, the format of the log group is as follows:
+ `arn:partition:logs:region-name:amazon-account-id:log-group:log-group-name:*`
+For example, `arn:aws:logs:us-east-1:111122223333:log-group:mytestgroup:*`
+*Required*: No
+*Type*: Array of String
+*Minimum*: `20 | 0`
+*Maximum*: `1600 | 1`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-transfer-workflow-tags"></a>

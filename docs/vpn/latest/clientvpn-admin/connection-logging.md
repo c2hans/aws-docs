@@ -33,6 +33,7 @@ A connection log entry is a JSON-formatted blob of key-value pairs. The followin
     "client-ip": "10.0.1.2",
     "common-name": "client1",
     "device-type": "mac",
+    "aws-client-version": "6.2.1",
     "device-ip": "98.247.202.82",
     "port": "50096",
     "ingress-bytes": "0",
@@ -57,6 +58,7 @@ A connection log entry contains the following keys:
 + `client-ip` — The IP address of the client, which is allocated from the client IPv4 CIDR range for the Client VPN endpoint.
 + `common-name` — The common name of the certificate that's used for certificate-based authentication.
 + `device-type` — The type of device used for the connection by the end user.
++ `aws-client-version` — The AWS client version, if applicable.
 + `device-ip` — The public IP address of the device.
 + `port` — The port number for the connection.
 + `ingress-bytes` — The number of ingress (inbound) bytes for the connection. This value is periodically updated in the logs.
@@ -117,6 +119,7 @@ When an authorization policy is configured, connection log entries record the au
   "client-ip-v6": "NA",
   "common-name": "client1.domain.tld",
   "device-type": "linux",
+  "aws-client-version": "6.2.1",
   "device-ip": "72.21.198.66",
   "port": "5567",
   "ingress-bytes": "0",
@@ -154,6 +157,7 @@ The following example shows a connection that was denied by the authorization po
   "client-ip-v6": "NA",
   "common-name": "client1.domain.tld",
   "device-type": "linux",
+  "aws-client-version": "6.2.1",
   "device-ip": "72.21.198.66",
   "port": "28081",
   "ingress-bytes": "0",
@@ -193,6 +197,7 @@ The following example shows a session that was terminated when a periodic re-eva
   "client-ip-v6": "NA",
   "common-name": "client1.domain.tld",
   "device-type": "linux",
+  "aws-client-version": "6.2.1",
   "device-ip": "72.21.198.66",
   "port": "5567",
   "ingress-bytes": "21017",

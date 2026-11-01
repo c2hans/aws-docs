@@ -33,6 +33,7 @@ Output:
     }
 }
 ```
+For more information, see [Creating query-based groups in AWS Resource Groups](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-query.html) in the *AWS Resource Groups User Guide*.
 +  For API details, see [GetGroupQuery](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-groups/get-group-query.html) in *AWS CLI Command Reference*.
 
 ------

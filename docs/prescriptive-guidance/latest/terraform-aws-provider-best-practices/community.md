@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-a
 # Best practices for community modules
 <a name="community"></a>
 
-Using modules effectively is key to managing complex Terraform configurations and promoting reuse. This section provides best practices around community modules, dependencies, sources, abstraction, and contributions.
+Using modules effectively helps you manage complex Terraform configurations and promote reuse. This section covers recommended practices for community modules, dependencies, sources, abstraction, and contributions.
 
 ## Discover community modules
 <a name="discovery"></a>
 
-Search the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-aws-modules), [GitHub](https://github.com/terraform-aws-modules), and other sources for existing AWS modules that might solve your use case before you build a new module. Look for popular options that have recent updates and are actively maintained.
+Search the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-aws-modules), [GitHub](https://github.com/terraform-aws-modules), and other sources for existing AWS modules that might solve your use case before you build a new module. Look for modules that have recent updates and are actively maintained.
 
 ### Use variables for customization
-<a name="use-variables-for-customization.91930afe-06fe-5186-a4d7-40b8a1fe8b5c"></a>
+<a name="use-variables-for-customization.b987b7a0-bb46-5544-9cb3-e7b0d3cb1459"></a>
 
 When you use community modules, pass inputs through variables instead of forking or directly modifying the source code. Override defaults where required instead of changing the internals of the module.
 
-Forking should be limited to contributing fixes or features to the original module to benefit the broader community.
+Limit forking to contributing fixes or features back to the original module to benefit the broader community.
 
 ## Understand dependencies
 <a name="dependencies"></a>
@@ -27,26 +27,28 @@ Before you use the module, review its source code and documentation to identify 
 + **Nested modules**: Check for other modules used internally that introduce cascading dependencies.
 + **External data sources**: Note the APIs, custom plugins, or infrastructure dependencies that the module relies on.
 
-By mapping out the full tree of direct and indirect dependencies, you can avoid surprises when you use the module.
+By mapping out the full tree of direct and indirect dependencies, you can prevent unexpected issues when you use the module.
 
 ## Use trusted sources
 <a name="trusted-sources"></a>
 
-Sourcing Terraform modules from unverified or unknown publishers introduces significant risk. Use modules only from trusted sources.
-+ Favor certified modules from the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-aws-modules) that are published by verified creators such as AWS or HashiCorp partners.
+Sourcing Terraform modules from unverified or unknown publishers introduces significant risk. Use modules only from sources that you trust, and review them like any other third-party code.
++ On the Terraform Registry, modules with the verified badge are published by HashiCorp partners. AWS publishes verified modules in the [aws-ia](https://registry.terraform.io/namespaces/aws-ia) namespace.
++ Widely used community namespaces, such as [terraform-aws-modules](https://registry.terraform.io/namespaces/terraform-aws-modules), aren't verified. Review their maintainers, release history, and open issues before you adopt them.
 + For custom modules, review publisher history, support levels, and usage reputation, even if the module is from your own organization.
++ Pin each module to an exact version, and review the changes before you upgrade. For tighter supply chain control, pin a commit SHA, as described in [Use recommended module sources](https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-aws-provider-best-practices/structure.html#module-sources).
 
-By not allowing modules from unknown or unvetted sources, you can reduce the risk of injecting vulnerabilities or maintenance issues into your code.
+Restricting modules to trusted, vetted sources reduces the risk of introducing vulnerabilities or maintenance issues into your code.
 
 ### Subscribe to notifications
-<a name="subscribe-to-notifications.18e4fe26-5c3f-572c-8d32-45b1c40eda58"></a>
+<a name="subscribe-to-notifications.980b6f0e-caa1-5bee-9026-41a16cce4223"></a>
 
 Subscribe to notifications for new module releases from trusted publishers:
 + Watch GitHub module repositories to get alerts on new versions of the module.
 + Monitor publisher blogs and changelogs for updates.
-+ Get proactive notifications for new versions from verified, highly rated sources instead of implicitly pulling in updates.
++ Get proactive notifications for new versions from verified, well-maintained sources instead of automatically receiving updates.
 
-Consuming modules only from trusted sources and monitoring changes provide stability and security. Vetted modules enhance productivity while minimizing supply chain risk.
+Consuming modules only from trusted sources and monitoring changes helps maintain stability and reduce security risk across your supply chain.
 
 ## Contribute to community modules
 <a name="contribute-community"></a>

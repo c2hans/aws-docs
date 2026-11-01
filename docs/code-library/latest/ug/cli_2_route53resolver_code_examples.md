@@ -49,7 +49,7 @@ Output:
         "MutationProtection": "DISABLED",
         "Status": "UPDATING",
         "StatusMessage": "Creating Firewall Rule Group Association",
-        "CreatorRequestId": "2ca1a304-32b3-4f5f-bc4c-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:47:48.755768Z",
         "ModificationTime": "2021-05-25T21:47:48.755768Z"
     }
@@ -79,7 +79,7 @@ Output:
     "ResolverEndpoint": {
         "Id": "rslvr-in-497098ad5example",
         "CreatorRequestId": "AWSConsole.25.0123456789",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-in-497098ad5example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-in-497098ad5example",
         "Name": "my-inbound-endpoint",
         "SecurityGroupIds": [
             "sg-05cd7b25d6example"
@@ -94,7 +94,7 @@ Output:
     }
 }
 ```
-For more information, see [Values That You Specify When You Create or Edit Inbound Endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html#resolver-forwarding-inbound-queries-values) in the *Amazon Route 53 Developer Guide*.
+For more information, see [Values That You Specify When You Create or Edit Inbound Endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-values.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [AssociateResolverEndpointIpAddress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/associate-resolver-endpoint-ip-address.html) in *AWS CLI Command Reference*.
 
 ### `associate-resolver-rule`
@@ -226,7 +226,7 @@ Output:
         "Name": "allow-rule",
         "Priority": 101,
         "Action": "ALLOW",
-        "CreatorRequestId": "d81e3fb7-020b-415e-939f-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:44:00.346093Z",
         "ModificationTime": "2021-05-25T21:44:00.346093Z"
     }
@@ -241,7 +241,7 @@ For more information, see [Managing rule groups and rules in DNS Firewall](https
 The following code example shows how to use `create-resolver-endpoint`.
 
 **AWS CLI**
-**To create an inbound Resolver endpoint**
+**Example 1: To create an inbound Resolver endpoint**
 The following `create-resolver-endpoint` example creates an inbound Resolver endpoint. You can use the same command to create both inbound and outbound endpoints.
 aws route53resolver create-resolver-endpoint --name my-inbound-endpoint --creator-request-id 2020-01-01-18:47 --security-group-ids "sg-f62bexam" --direction INBOUND --ip-addresses SubnetId=subnet-ba47exam,Ip=192.0.2.255 SubnetId=subnet-12d8exam,Ip=192.0.2.254
 Output:
@@ -251,7 +251,7 @@ Output:
     "ResolverEndpoint": {
         "Id": "rslvr-in-f9ab8a03f1example",
         "CreatorRequestId": "2020-01-01-18:47",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-in-f9ab8a03f1example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-in-f9ab8a03f1example",
         "Name": "my-inbound-endpoint",
         "SecurityGroupIds": [
             "sg-f62bexam"
@@ -266,37 +266,61 @@ Output:
     }
 }
 ```
-**To create an outbound Resolver endpoint**
+**Example 2: To create an outbound Resolver endpoint**
 The following `create-resolver-endpoint` example creates an outbound resolver endpoint using the values in the JSON-formatted document `create-outbound-resolver-endpoint.json`.
 
 ```
 aws route53resolver create-resolver-endpoint \
     --cli-input-json file://c:\temp\create-outbound-resolver-endpoint.json
 ```
-Contents of `create-outbound-resolver-endpoint.json`:
+Contents of `c:\temp\create-outbound-resolver-endpoint.json`:
 
 ```
 {
-   "CreatorRequestId": "2020-01-01-18:47",
-   "Direction": "OUTBOUND",
-   "IpAddresses": [
-      {
-         "Ip": "192.0.2.255",
-         "SubnetId": "subnet-ba47exam"
-      },
-      {
-         "Ip": "192.0.2.254",
-         "SubnetId": "subnet-12d8exam"
-      }
-   ],
-   "Name": "my-outbound-endpoint",
-   "SecurityGroupIds": [ "sg-05cd7b25d6example" ],
-   "Tags": [
-      {
-         "Key": "my-key-name",
-         "Value": "my-key-value"
-      }
-   ]
+    "CreatorRequestId": "2020-01-01-18:47",
+    "Direction": "OUTBOUND",
+    "IpAddresses": [
+        {
+            "Ip": "192.0.2.255",
+            "SubnetId": "subnet-ba47exam"
+        },
+        {
+            "Ip": "192.0.2.254",
+            "SubnetId": "subnet-12d8exam"
+        }
+    ],
+    "Name": "my-outbound-endpoint",
+    "SecurityGroupIds": [
+        "sg-05cd7b25d6example"
+    ],
+    "Tags": [
+        {
+            "Key": "my-key-name",
+            "Value": "my-key-value"
+        }
+    ]
+}
+```
+Output:
+
+```
+{
+    "ResolverEndpoint": {
+        "Id": "rslvr-out-f9ab8a03f1example",
+        "CreatorRequestId": "2020-01-01-18:47",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-out-f9ab8a03f1example",
+        "Name": "my-outbound-endpoint",
+        "SecurityGroupIds": [
+            "sg-05cd7b25d6example"
+        ],
+        "Direction": "OUTBOUND",
+        "IpAddressCount": 2,
+        "HostVPCId": "vpc-304examp",
+        "Status": "CREATING",
+        "StatusMessage": "[Trace id: 1-5dc1ff84-f3477826e4a190025example] Creating the Resolver Endpoint",
+        "CreationTime": "2020-01-01T23:50:50.979Z",
+        "ModificationTime": "2020-01-01T23:50:50.979Z"
+    }
 }
 ```
 For more information, see [Resolving DNS Queries Between VPCs and Your Network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html) in the *Amazon Route 53 Developer Guide*.
@@ -344,13 +368,14 @@ Output:
         "CreatorRequestId": "2022-05-10-16:33",
         "ModificationTime": "2022-05-10T21:35:30.923187Z",
         "ShareStatus": "NOT_SHARED",
-        "Arn": "arn:aws:route53resolver:us-east-1:111117012054:resolver-rule/rslvr-rr-b1e0b905e93611111",
-        "OwnerId": "111111111111",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-b1e0b905e93611111",
+        "OwnerId": "123456789012",
         "Id": "rslvr-rr-rslvr-rr-b1e0b905e93611111",
         "StatusMessage": "[Trace id: 1-22222222-3e56afcc71a3724664f22e24] Successfully created Resolver Rule."
     }
 }
 ```
+For more information, see [Managing forwarding rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html#resolver-rules-managing-creating-rules) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [CreateResolverRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/create-resolver-rule.html) in *AWS CLI Command Reference*.
 
 ### `delete-firewall-domain-list`
@@ -445,7 +470,7 @@ Output:
         "Name": "allow-rule",
         "Priority": 102,
         "Action": "ALLOW",
-        "CreatorRequestId": "d81e3fb7-020b-415e-939f-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:44:00.346093Z",
         "ModificationTime": "2021-05-25T21:45:59.611600Z"
     }
@@ -475,7 +500,7 @@ Output:
     "ResolverEndpoint": {
         "Id": "rslvr-in-497098ad59example",
         "CreatorRequestId": "AWSConsole.25.157290example",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-in-497098ad59example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-in-497098ad59example",
         "Name": "my-inbound-endpoint",
         "SecurityGroupIds": [
             "sg-05cd7b25d6example"
@@ -490,6 +515,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing inbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-managing.html#resolver-forwarding-inbound-queries-managing-deleting) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [DeleteResolverEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/delete-resolver-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `delete-resolver-rule`
@@ -513,7 +539,7 @@ Output:
     "ResolverRule": {
         "Id": "rslvr-rr-5b3809426bexample",
         "CreatorRequestId": "2020-01-03-18:47",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-5b3809426bexample",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-5b3809426bexample",
         "DomainName": "zenith.example.com.",
         "Status": "DELETING",
         "StatusMessage": "[Trace id: 1-5dc5e05b-602e67b052cb74f05example] Deleting Resolver Rule.",
@@ -526,11 +552,12 @@ Output:
             }
         ],
         "ResolverEndpointId": "rslvr-out-d5e5920e3example",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "ShareStatus": "NOT_SHARED"
     }
 }
 ```
+For more information, see [Managing forwarding rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html#resolver-rules-managing-deleting) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [DeleteResolverRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/delete-resolver-rule.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-firewall-rule-group`
@@ -560,7 +587,7 @@ Output:
         "MutationProtection": "DISABLED",
         "Status": "DELETING",
         "StatusMessage": "Deleting the Firewall Rule Group Association",
-        "CreatorRequestId": "2ca1a304-32b3-4f5f-bc4c-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:47:48.755768Z",
         "ModificationTime": "2021-05-25T21:51:02.377887Z"
     }
@@ -591,7 +618,7 @@ Output:
     "ResolverEndpoint": {
         "Id": "rslvr-in-f9ab8a03f1example",
         "CreatorRequestId": "2020-01-01-18:47",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-in-f9ab8a03f1example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-in-f9ab8a03f1example",
         "Name": "my-inbound-endpoint",
         "SecurityGroupIds": [
             "sg-f62bexam"
@@ -606,6 +633,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing inbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-managing.html#resolver-forwarding-inbound-queries-managing-viewing) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [DisassociateResolverEndpointIpAddress](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/disassociate-resolver-endpoint-ip-address.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-resolver-rule`
@@ -637,6 +665,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing forwarding rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html#resolver-rules-managing-disassociating-rules) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [DisassociateResolverRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/disassociate-resolver-rule.html) in *AWS CLI Command Reference*.
 
 ### `get-firewall-config`
@@ -686,7 +715,7 @@ Output:
 {
     "FirewallDomainList": {
         "Id": "rslvr-fdl-9e956e9ffexample",
-        "Arn": "arn:aws:route53resolver:us-west-2:123457689012:firewall-domain-list/rslvr-fdl-42b60677cexample",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:firewall-domain-list/rslvr-fdl-42b60677cexample",
         "Name": "test",
         "DomainCount": 0,
         "Status": "COMPLETE",
@@ -727,7 +756,7 @@ Output:
         "MutationProtection": "DISABLED",
         "Status": "COMPLETE",
         "StatusMessage": "Finished rule group association update",
-        "CreatorRequestId": "2ca1a304-32b3-4f5f-bc4c-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:47:48.755768Z",
         "ModificationTime": "2021-05-25T21:47:48.755768Z"
     }
@@ -753,7 +782,7 @@ Output:
 
 ```
 {
-    "FirewallRuleGroupPolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"test\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::AWS_ACCOUNT_ID:root\"},\"Action\":[\"route53resolver:GetFirewallRuleGroup\",\"route53resolver:ListFirewallRuleGroups\"],\"Resource\":\"arn:aws:route53resolver:us-east-1:AWS_ACCOUNT_ID:firewall-rule-group/rslvr-frg-47f93271fexample\"}]}"
+    "FirewallRuleGroupPolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"test\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::AWS_ACCOUNT_ID:root\"},\"Action\":[\"route53resolver:GetFirewallRuleGroup\",\"route53resolver:ListFirewallRuleGroups\"],\"Resource\":\"arn:aws:route53resolver:us-west-2:AWS_ACCOUNT_ID:firewall-rule-group/rslvr-frg-47f93271fexample\"}]}"
 }
 ```
 For more information, see [Managing rule groups and rules in DNS Firewall](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-dns-firewall-rule-group-managing.html) in the *Amazon Route 53 Developer Guide*.
@@ -814,7 +843,7 @@ Output:
     "ResolverEndpoint": {
         "Id": "rslvr-out-d5e5920e37example",
         "CreatorRequestId": "2020-01-01-18:47",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-out-d5e5920e37example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-out-d5e5920e37example",
         "Name": "my-outbound-endpoint",
         "SecurityGroupIds": [
             "sg-05cd7b25d6example"
@@ -829,7 +858,7 @@ Output:
     }
 }
 ```
-For more information, see [Values That You Specify When You Create or Edit Inbound Endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html#resolver-forwarding-inbound-queries-values) in the *Amazon Route 53 Developer Guide*.
+For more information, see [Values That You Specify When You Create or Edit Inbound Endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-values.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [GetResolverEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/get-resolver-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `get-resolver-rule-association`
@@ -859,6 +888,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing forwarding rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [GetResolverRuleAssociation](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/get-resolver-rule-association.html) in *AWS CLI Command Reference*.
 
 ### `get-resolver-rule`
@@ -881,7 +911,7 @@ Output:
     "ResolverRule": {
         "Id": "rslvr-rr-42b60677c0example",
         "CreatorRequestId": "2020-01-01-18:47",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-42b60677c0example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-42b60677c0example",
         "DomainName": "example.com.",
         "Status": "COMPLETE",
         "StatusMessage": "[Trace id: 1-5dc4b177-ff1d9d001a0f80005example] Successfully created Resolver Rule.",
@@ -894,12 +924,12 @@ Output:
             }
         ],
         "ResolverEndpointId": "rslvr-out-d5e5920e37example",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "ShareStatus": "NOT_SHARED"
     }
 }
 ```
-For more information, see [Values That You Specify When You Create or Edit Rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries.html#resolver-forwarding-outbound-queries-rule-values) in the *Amazon Route 53 Developer Guide*.
+For more information, see [Values That You Specify When You Create or Edit Rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries-rule-values.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [GetResolverRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/get-resolver-rule.html) in *AWS CLI Command Reference*.
 
 ### `import-firewall-domains`
@@ -1056,7 +1086,7 @@ Output:
             "MutationProtection": "DISABLED",
             "Status": "UPDATING",
             "StatusMessage": "Creating Firewall Rule Group Association",
-            "CreatorRequestId": "2ca1a304-32b3-4f5f-bc4c-EXAMPLE11111",
+            "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTime": "2021-05-25T21:47:48.755768Z",
             "ModificationTime": "2021-05-25T21:47:48.755768Z"
         }
@@ -1121,7 +1151,7 @@ Output:
             "Name": "allow-rule",
             "Priority": 101,
             "Action": "ALLOW",
-            "CreatorRequestId": "d81e3fb7-020b-415e-939f-EXAMPLE11111",
+            "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "CreationTime": "2021-05-25T21:44:00.346093Z",
             "ModificationTime": "2021-05-25T21:44:00.346093Z"
         }
@@ -1171,7 +1201,7 @@ Output:
     ]
 }
 ```
-For more information about the values in the output, see [Values That You Specify When You Create or Edit Inbound Endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries.html#resolver-forwarding-inbound-queries-values), and [Values That You Specify When You Create or Edit Outbound Endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries.html#resolver-forwarding-outbound-queries-endpoint-values), both in the *Amazon Route 53 Developer Guide*.
+For more information about the values in the output, see [Values that you specify when you create or edit inbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-values.html) and [Values that you specify when you create or edit outbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries-endpoint-values.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ListResolverEndpointIpAddresses](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/list-resolver-endpoint-ip-addresses.html) in *AWS CLI Command Reference*.
 
 ### `list-resolver-endpoints`
@@ -1195,7 +1225,7 @@ Output:
         {
             "Id": "rslvr-in-497098ad59example",
             "CreatorRequestId": "2020-01-01-18:47",
-            "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-in-497098ad59example",
+            "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-in-497098ad59example",
             "Name": "my-inbound-endpoint",
             "SecurityGroupIds": [
                 "sg-05cd7b25d6example"
@@ -1211,7 +1241,7 @@ Output:
         {
             "Id": "rslvr-out-d5e5920e37example",
             "CreatorRequestId": "2020-01-01-18:48",
-            "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-out-d5e5920e37example",
+            "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-out-d5e5920e37example",
             "Name": "my-outbound-endpoint",
             "SecurityGroupIds": [
                 "sg-05cd7b25d6example"
@@ -1227,6 +1257,7 @@ Output:
     ]
 }
 ```
+For more information, see [Managing inbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-managing.html) and [Managing outbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries-managing.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ListResolverEndpoints](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/list-resolver-endpoints.html) in *AWS CLI Command Reference*.
 
 ### `list-resolver-rule-associations`
@@ -1266,7 +1297,7 @@ Output:
     ]
 }
 ```
-For more information, see [How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network) in the *Amazon Route 53 Developer Guide*.
+For more information, see [How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-overview-forward-vpc-to-network.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ListResolverRuleAssociations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/list-resolver-rule-associations.html) in *AWS CLI Command Reference*.
 
 ### `list-resolver-rules`
@@ -1301,7 +1332,7 @@ Output:
         {
             "Id": "rslvr-rr-42b60677c0example",
             "CreatorRequestId": "2020-01-01-18:47",
-            "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-42b60677c0bc4e299",
+            "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-42b60677c0bc4e299",
             "DomainName": "example.com.",
             "Status": "COMPLETE",
             "StatusMessage": "[Trace id: 1-5dc4b177-ff1d9d001a0f80005example] Successfully created Resolver Rule.",
@@ -1314,13 +1345,13 @@ Output:
                 }
             ],
             "ResolverEndpointId": "rslvr-out-d5e5920e37example",
-            "OwnerId": "111122223333",
+            "OwnerId": "123456789012",
             "ShareStatus": "NOT_SHARED"
         }
     ]
 }
 ```
-For more information, see [How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-vpc-to-network) in the *Amazon Route 53 Developer Guide*.
+For more information, see [How Route 53 Resolver Forwards DNS Queries from Your VPCs to Your Network](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-overview-forward-vpc-to-network.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [ListResolverRules](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/list-resolver-rules.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1334,7 +1365,7 @@ The following `list-tags-for-resource` example lists the tags that are assigned 
 
 ```
 aws route53resolver list-tags-for-resource \
-    --resource-arn {{"arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-42b60677c0example"}}
+    --resource-arn {{"arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-42b60677c0example"}}
 ```
 Output:
 
@@ -1366,8 +1397,8 @@ The following `put-firewall-rule-group-policy` example attaches an AWS Identity 
 
 ```
 aws route53resolver put-firewall-rule-group-policy \
-    --arn {{arn:aws:route53resolver:us-east-1:AWS_ACCOUNT_ID:firewall-rule-group/rslvr-frg-47f93271fexample}} \
-    --firewall-rule-group-policy "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"test\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::AWS_ACCOUNT_ID:root\"},\"Action\":[\"route53resolver:GetFirewallRuleGroup\",\"route53resolver:ListFirewallRuleGroups\"],\"Resource\":\"arn:aws:route53resolver:us-east-1:AWS_ACCOUNT_ID:firewall-rule-group/rslvr-frg-47f93271fexample\"}]}"
+    --arn {{arn:aws:route53resolver:us-west-2:AWS_ACCOUNT_ID:firewall-rule-group/rslvr-frg-47f93271fexample}} \
+    --firewall-rule-group-policy "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Sid\":\"test\",\"Effect\":\"Allow\",\"Principal\":{\"AWS\":\"arn:aws:iam::AWS_ACCOUNT_ID:root\"},\"Action\":[\"route53resolver:GetFirewallRuleGroup\",\"route53resolver:ListFirewallRuleGroups\"],\"Resource\":\"arn:aws:route53resolver:us-west-2:AWS_ACCOUNT_ID:firewall-rule-group/rslvr-frg-47f93271fexample\"}]}"
 ```
 Output:
 
@@ -1391,19 +1422,18 @@ The following `put-resolver-rule-policy` example specifies a Resolver rule that 
 
 ```
 aws route53resolver put-resolver-rule-policy \
-    --region {{us-east-1}} \
-    --arn {{"arn:aws:route53resolver:us-east-1:111122223333:resolver-rule/rslvr-rr-42b60677c0example"}} \
+    --arn {{"arn:aws:route53resolver:us-west-2:123456789111:resolver-rule/rslvr-rr-42b60677c0example"}} \
     --resolver-rule-policy "{\"Version\": \"2012-10-17\", \
         \"Statement\": [ { \
         \"Effect\" : \"Allow\", \
-        \"Principal\" : {\"AWS\" : \"444455556666\" }, \
+        \"Principal\" : {\"AWS\" : \"123456789222\" }, \
         \"Action\" : [ \
             \"route53resolver:GetResolverRule\", \
             \"route53resolver:AssociateResolverRule\", \
             \"route53resolver:DisassociateResolverRule\", \
             \"route53resolver:ListResolverRules\", \
             \"route53resolver:ListResolverRuleAssociations\" ], \
-        \"Resource\" : [ \"arn:aws:route53resolver:us-east-1:111122223333:resolver-rule/rslvr-rr-42b60677c0example\" ] } ] }"
+        \"Resource\" : [ \"arn:aws:route53resolver:us-west-2:123456789111:resolver-rule/rslvr-rr-42b60677c0example\" ] } ] }"
 ```
 Output:
 
@@ -1415,7 +1445,7 @@ Output:
 After you run `put-resolver-rule-policy`, you can run the following two Resource Access Manager (RAM) commands. You must use the account that you want to share the rule with:
 `get-resource-share-invitations` returns the value `resourceShareInvitationArn`. You need this value to accept the invitation to use the shared rule.`accept-resource-share-invitation` accepts the invitation to use the shared rule.
 For more information, see the following documentation:
-[get-resource-share-invitations](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html)[accept-resource-share-invitations](https://docs.aws.amazon.com/cli/latest/reference/ram/accept-resource-share-invitation.html)[Sharing Forwarding Rules with Other AWS Accounts and Using Shared Rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html#resolver-rules-managing-sharing) in the *Amazon Route 53 Developer Guide*
+[get-resource-share-invitations](https://docs.aws.amazon.com/cli/latest/reference/ram/get-resource-share-invitations.html)[accept-resource-share-invitations](https://docs.aws.amazon.com/cli/latest/reference/ram/accept-resource-share-invitation.html)[Sharing Forwarding Rules with Other AWS Accounts and Using Shared Rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-rules-managing.html#resolver-rules-managing-sharing) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [PutResolverRulePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/put-resolver-rule-policy.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -1429,7 +1459,7 @@ The following `tag-resource` example associates two tag key/value pairs with the
 
 ```
 aws route53resolver tag-resource \
-    --resource-arn {{"arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-42b60677c0example"}} \
+    --resource-arn {{"arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-42b60677c0example"}} \
     --tags {{"Key=my-key-1,Value=my-value-1"}} {{"Key=my-key-2,Value=my-value-2"}}
 ```
 This command produces no output.
@@ -1447,7 +1477,7 @@ The following `untag-resource` example removes two tags from the specified Resol
 
 ```
 aws route53resolver untag-resource \
-    --resource-arn {{"arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-42b60677c0example"}} \
+    --resource-arn {{"arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-42b60677c0example"}} \
     --tag-keys {{my-key-1}} {{my-key-2}}
 ```
 This command produces no output. To confirm that the tags were removed, you can use [list-tags-for-resource](https://docs.aws.amazon.com/cli/latest/reference/route53resolver/list-tags-for-resource.html).
@@ -1539,7 +1569,7 @@ Output:
         "MutationProtection": "DISABLED",
         "Status": "UPDATING",
         "StatusMessage": "Updating the Firewall Rule Group Association Attributes",
-        "CreatorRequestId": "2ca1a304-32b3-4f5f-bc4c-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:47:48.755768Z",
         "ModificationTime": "2021-05-25T21:50:09.272569Z"
     }
@@ -1573,7 +1603,7 @@ Output:
         "Name": "allow-rule",
         "Priority": 102,
         "Action": "ALLOW",
-        "CreatorRequestId": "d81e3fb7-020b-415e-939f-EXAMPLE11111",
+        "CreatorRequestId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "CreationTime": "2021-05-25T21:44:00.346093Z",
         "ModificationTime": "2021-05-25T21:45:59.611600Z"
     }
@@ -1603,7 +1633,7 @@ Output:
     "ResolverEndpoint": {
         "Id": "rslvr-in-b5d45e32bdexample",
         "CreatorRequestId": "2020-01-02-18:48",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-endpoint/rslvr-in-b5d45e32bdexample",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-endpoint/rslvr-in-b5d45e32bdexample",
         "Name": "my-renamed-inbound-endpoint",
         "SecurityGroupIds": [
             "sg-f62bexam"
@@ -1618,6 +1648,7 @@ Output:
     }
 }
 ```
+For more information, see [Managing inbound endpoints](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-inbound-queries-managing.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [UpdateResolverEndpoint](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/update-resolver-endpoint.html) in *AWS CLI Command Reference*.
 
 ### `update-resolver-rule`
@@ -1642,7 +1673,7 @@ Output:
     "ResolverRule": {
         "Id": "rslvr-rr-1247fa64f3example",
         "CreatorRequestId": "2020-01-02-18:47",
-        "Arn": "arn:aws:route53resolver:us-west-2:111122223333:resolver-rule/rslvr-rr-1247fa64f3example",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-1247fa64f3example",
         "DomainName": "www.example.com.",
         "Status": "COMPLETE",
         "StatusMessage": "[Trace id: 1-5dcc90b9-8a8ee860aba1ebd89example] Successfully updated Resolver Rule.",
@@ -1659,20 +1690,20 @@ Output:
             }
         ],
         "ResolverEndpointId": "rslvr-out-7b89ed0d25example",
-        "OwnerId": "111122223333",
+        "OwnerId": "123456789012",
         "ShareStatus": "NOT_SHARED"
     }
 }
 ```
 **Example 2: To update settings Resolver endpoint using a file for ``config`` settings**
-You can alternatively include the `config` settings in a JSON file and then specify that file when you call `update-resolver-rule`.
+The following `update-resolver-rule` example updates the same settings as Example 1. You can alternatively include the `config` settings in a JSON file and then specify that file when you call `update-resolver-rule`.
 
 ```
 aws route53resolver update-resolver-rule \
     --resolver-rule-id {{rslvr-rr-1247fa64f3example}} \
     --config file://c:\temp\update-resolver-rule.json
 ```
-Contents of `update-resolver-rule.json`.
+Contents of `c:\temp\update-resolver-rule.json`:
 
 ```
 {
@@ -1690,5 +1721,34 @@ Contents of `update-resolver-rule.json`.
     "ResolverEndpointId": "rslvr-out-7b89ed0d25example"
 }
 ```
-For more information, see [Values That You Specify When You Create or Edit Rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries.html#resolver-forwarding-outbound-queries-rule-values) in the *Amazon Route 53 Developer Guide*.
+Output:
+
+```
+{
+    "ResolverRule": {
+        "Id": "rslvr-rr-1247fa64f3example",
+        "CreatorRequestId": "2020-01-02-18:47",
+        "Arn": "arn:aws:route53resolver:us-west-2:123456789012:resolver-rule/rslvr-rr-1247fa64f3example",
+        "DomainName": "www.example.com.",
+        "Status": "COMPLETE",
+        "StatusMessage": "[Trace id: 1-5dcc90b9-8a8ee860aba1ebd89example] Successfully updated Resolver Rule.",
+        "RuleType": "FORWARD",
+        "Name": "my-2nd-rule",
+        "TargetIps": [
+            {
+                "Ip": "192.0.2.45",
+                "Port": 53
+            },
+            {
+                "Ip": "192.0.2.46",
+                "Port": 53
+            }
+        ],
+        "ResolverEndpointId": "rslvr-out-7b89ed0d25example",
+        "OwnerId": "123456789012",
+        "ShareStatus": "NOT_SHARED"
+    }
+}
+```
+For more information, see [Values That You Specify When You Create or Edit Rules](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-forwarding-outbound-queries-rule-values.html) in the *Amazon Route 53 Developer Guide*.
 +  For API details, see [UpdateResolverRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53resolver/update-resolver-rule.html) in *AWS CLI Command Reference*.

@@ -252,7 +252,6 @@ aws lakeformation cancel-transaction \
     --transaction-id='b014d972ca8347b89825e33c5774aec4'
 ```
 This command produces no output.
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [CancelTransaction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/cancel-transaction.html) in *AWS CLI Command Reference*.
 
 ### `commit-transaction`
@@ -275,7 +274,6 @@ Output:
     "TransactionStatus": "committed"
 }
 ```
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [CommitTransaction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/commit-transaction.html) in *AWS CLI Command Reference*.
 
 ### `create-data-cells-filter`
@@ -444,18 +442,17 @@ Contents of `input.json`:
 
 ```
 {
-    "CatalogId": "012345678901",
+    "CatalogId": "123456789012",
     "DatabaseName": "tpc",
     "TableName": "dl_tpc_household_demographics_gov",
     "TransactionId": "1234d972ca8347b89825e33c5774aec4",
     "Objects": [{
-        "Uri": "s3://lf-data-lake-012345678901/target/dl_tpc_household_demographics_gov/run-unnamed-1-part-block-0-r-00000-snappy-ff26b17504414fe88b302cd795eabd00.parquet",
+        "Uri": "s3://amzn-s3-demo-bucket/target/dl_tpc_household_demographics_gov/run-unnamed-1-part-block-0-r-00000-snappy-ff26b17504414fe88b302cd795eabd00.parquet",
         "ETag": "1234ab1fc50a316b149b4e1f21a73800"
     }]
 }
 ```
 This command produces no output.
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [DeleteObjectsOnCancel](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/delete-objects-on-cancel.html) in *AWS CLI Command Reference*.
 
 ### `deregister-resource`
@@ -475,7 +472,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ResourceArn": "arn:aws:s3:::lf-emr-athena-result-123"
+    "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket"
 }
 ```
 This command produces no output.
@@ -507,7 +504,6 @@ Output:
     }
 }
 ```
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [DescribeTransaction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/describe-transaction.html) in *AWS CLI Command Reference*.
 
 ### `extend-transaction`
@@ -524,7 +520,6 @@ aws lakeformation extend-transaction \
     --transaction-id='8cb4b1a7cc8d486fbaca9a64e7d9f5ce'
 ```
 This command produces no output.
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [ExtendTransaction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/extend-transaction.html) in *AWS CLI Command Reference*.
 
 ### `get-data-lake-settings`
@@ -598,7 +593,7 @@ Contents of `input.json`:
 ```
 {
     "CatalogId": "123456789111",
-    "ResourceArn": "arn:aws:s3:::lf-data-lake-123456789111"
+    "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket"
 }
 ```
 Output:
@@ -734,7 +729,7 @@ The following `get-query-state` example returns the state of a query previously 
 
 ```
 aws lakeformation get-query-state \
-    --query-id='1234273f-4a62-4cda-8d98-69615ee8be9b'
+    --query-id='a1b2c3d4-5678-90ab-cdef-EXAMPLE11111'
 ```
 Output:
 
@@ -743,7 +738,6 @@ Output:
     "State": "FINISHED"
 }
 ```
-For more information, see [Transactional data operations](https://docs.aws.amazon.com/lake-formation/latest/dg/transactions-data-operations.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [GetQueryState](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/get-query-state.html) in *AWS CLI Command Reference*.
 
 ### `get-query-statistics`
@@ -757,7 +751,7 @@ The following `get-query-statistics` example retrieves statistics on the plannin
 
 ```
 aws lakeformation get-query-statistics \
-    --query-id='1234273f-4a62-4cda-8d98-69615ee8be9b'
+    --query-id='a1b2c3d4-5678-90ab-cdef-EXAMPLE11111'
 ```
 Output:
 
@@ -777,7 +771,6 @@ Output:
     "QuerySubmissionTime": "2022-08-11T02:14:38.641870+00:00"
 }
 ```
-For more information, see [Transactional data operations](https://docs.aws.amazon.com/lake-formation/latest/dg/transactions-data-operations.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [GetQueryStatistics](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/get-query-statistics.html) in *AWS CLI Command Reference*.
 
 ### `get-table-objects`
@@ -797,7 +790,7 @@ Contents of `input.json`:
 
 ```
 {
-    "CatalogId": "012345678901",
+    "CatalogId": "123456789012",
     "DatabaseName": "tpc",
     "TableName": "dl_tpc_household_demographics_gov",
     "QueryAsOfTime": "2022-08-10T15:00:00"
@@ -810,14 +803,13 @@ Output:
     "Objects": [{
         "PartitionValues": [],
         "Objects": [{
-            "Uri": "s3://lf-data-lake-012345678901/target/dl_tpc_household_demographics_gov/run-unnamed-1-part-block-0-r-00000-snappy-ff26b17504414fe88b302cd795eabd00.parquet",
+            "Uri": "s3://amzn-s3-demo-bucket/target/dl_tpc_household_demographics_gov/run-unnamed-1-part-block-0-r-00000-snappy-ff26b17504414fe88b302cd795eabd00.parquet",
             "ETag": "12345b1fc50a316b149b4e1f21a73800",
             "Size": 43235
         }]
     }]
 }
 ```
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [GetTableObjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/get-table-objects.html) in *AWS CLI Command Reference*.
 
 ### `get-work-unit-results`
@@ -830,17 +822,12 @@ The following code example shows how to use `get-work-unit-results`.
 The following `get-work-unit-results` example returns the work units resulting from the query.
 
 ```
-aws lakeformation get-work-units \
-    --query-id='1234273f-4a62-4cda-8d98-69615ee8be9b' \
-    --work-unit-id '{{0}}' \
+aws lakeformation get-work-unit-results \
+    --query-id='a1b2c3d4-5678-9{{0}}ab-cdef-EXAMPLE11111' \
+    --work-unit-id '0' \
     --work-unit-token '{{B2fMSdmQXe9umX8Ux8XCo4=}}' {{outfile}}
 ```
-Output:
-
-```
-outfile with Blob content.
-```
-For more information, see [Transactional data operations](https://docs.aws.amazon.com/lake-formation/latest/dg/transactions-data-operations.html) in the *AWS Lake Formation Developer Guide*.
+This command produces no output. The results are saved to the file `outfile`.
 +  For API details, see [GetWorkUnitResults](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/get-work-unit-results.html) in *AWS CLI Command Reference*.
 
 ### `get-work-units`
@@ -854,7 +841,7 @@ The following `get-work-units` example retrieves the work units generated by the
 
 ```
 aws lakeformation get-work-units \
-    --query-id='1234273f-4a62-4cda-8d98-69615ee8be9b'
+    --query-id='a1b2c3d4-5678-90ab-cdef-EXAMPLE11111'
 ```
 Output:
 
@@ -865,10 +852,9 @@ Output:
         "WorkUnitIdMin": 0,
         "WorkUnitToken": "1234eMAk4kLO4umqEL4Z5WuxL04AXwABABVhd3MtY3J5cHRvLXB1YmxpYy1rZXkAREEwYm9QbkhINmFYTWphbmMxZW1PQmEyMGlUb0JFbXNlWmRYc0NmckRIR1dmQ0hjY2YzNFdMcmNXb2JGZmhEK0QvZz09AAEAB2F3cy1rbXMAS2Fybjphd3M6a21zOnVzLWVhc3QtMTo3MDkxNTAyNDkyNDk6a2V5L2VmYmI3NDUyLTY1MjYtNGJiOS1iNmZhLTEzYzJkMTM3MmU2OQC4AQIBAHg6eWNF2ZrQATTAuPDJVCEAQSyIF67vX+f88jzGrYq22gE6jkQlpOB+Oet2eqNUmFudAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMCOEWRdafowek3RUmAgEQgDsYZZE84nnnbNmvsqCBPLh19nLQ10mUWOg9IfiaOwefEn6L920V0x1LpJACo7MtIBLXnbGcz2dFDZjFygIAAAAADAAAEAAAAAAAAAAAAAAAAAAQSQf8XDSI5pvR4Fx4JsrS/////wAAAAEAAAAAAAAAAAAAAAEAAACX3/w5h75QAPomfKH+cyEKYU1yccUmBl+VSojiGOtdsUk7vcjYXUUboYm3dvqRqX2s4gROMOn+Ij8R0/8jYmnHkpvyAFNVRPyETyIKg7k5Z9+5I1c2d3446Jw/moWGGxjH8AEG9h27ytmOhozxDOEi/F2ZoXz6wlGDfGUo/2WxCkYOhTyNaw6TM+7drTM7yrW4iNVLUM0LX0xnFjIAhLhooWJek6vjQZUAZzBlAjBH8okRtYP8R7AY2Wls/hqFBhG0V4l42AC0LxsuZbMQrE2SzWZUZ0E9Uew7/n0cyX4CMQDR79INyv4ysMByW9kKGGKyba+cCNklExMR+btBQBmMuB2fMSdmQXe9umX8Ux8XCo4="
     }],
-    "QueryId": "1234273f-4a62-4cda-8d98-69615ee8be9b"
+    "QueryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Transactional data operations](https://docs.aws.amazon.com/lake-formation/latest/dg/transactions-data-operations.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [GetWorkUnits](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/get-work-units.html) in *AWS CLI Command Reference*.
 
 ### `grant-permissions`
@@ -1027,7 +1013,7 @@ Contents of `input.json`:
     "Resource": {
         "DataLocation": {
             "CatalogId": "123456789111",
-            "ResourceArn": "arn:aws:s3:::lf-data-lake-123456789111"
+            "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket"
         }
     },
     "Permissions": [
@@ -1408,12 +1394,12 @@ Output:
 ```
 {
     "ResourceInfoList": [{
-            "ResourceArn": "arn:aws:s3:::lf-data-lake-123456789111",
+            "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket1",
             "RoleArn": "arn:aws:iam::123456789111:role/LF-GlueServiceRole",
             "LastModified": "2022-07-21T02:12:46.669000+00:00"
         },
         {
-            "ResourceArn": "arn:aws:s3:::lf-emr-test-123456789111",
+            "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket2",
             "RoleArn": "arn:aws:iam::123456789111:role/EMRLFS3Role",
             "LastModified": "2022-07-29T16:22:03.211000+00:00"
         }
@@ -1471,7 +1457,6 @@ Output:
     "NextToken": "77X1ebypsI7os+X2lhHsZLGNCDK3nNGpwRdFpicSOHgcX1/QMoniUAKcpR3kj3ts3PVdMA=="
 }
 ```
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [ListTransactions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/list-transactions.html) in *AWS CLI Command Reference*.
 
 ### `put-data-lake-settings`
@@ -1528,7 +1513,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ResourceArn": "arn:aws:s3:::lf-emr-athena-result-123",
+    "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket",
     "UseServiceLinkedRole": true
 }
 ```
@@ -1545,7 +1530,7 @@ Contents of `input.json`:
 
 ```
 {
-    "ResourceArn": "arn:aws:s3:::lf-emr-athena-result-123",
+    "ResourceArn": "arn:aws:s3:::amzn-s3-demo-bucket",
     "UseServiceLinkedRole": false,
     "RoleArn": "arn:aws:iam::123456789111:role/LF-GlueServiceRole"
 }
@@ -1982,7 +1967,7 @@ Contents of `input.json`:
 ```
 {
     "QueryPlanningContext": {
-        "CatalogId": "012345678901",
+        "CatalogId": "123456789012",
         "DatabaseName": "tpc"
     },
     "QueryString": "select * from dl_tpc_household_demographics_gov where hd_income_band_sk=9"
@@ -1992,10 +1977,9 @@ Output:
 
 ```
 {
-    "QueryId": "772a273f-4a62-4cda-8d98-69615ee8be9b"
+    "QueryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [StartQueryPlanning](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/start-query-planning.html) in *AWS CLI Command Reference*.
 
 ### `start-transaction`
@@ -2018,7 +2002,6 @@ Output:
     "TransactionId": "b014d972ca8347b89825e33c5774aec4"
 }
 ```
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [StartTransaction](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/start-transaction.html) in *AWS CLI Command Reference*.
 
 ### `update-lf-tag`
@@ -2057,13 +2040,13 @@ Contents of `input.json`:
 
 ```
 {
-    "CatalogId": "012345678901",
+    "CatalogId": "123456789012",
     "DatabaseName": "tpc",
     "TableName": "dl_tpc_household_demographics_gov",
     "TransactionId": "12347a9f75424b9b915f6ff201d2a190",
     "WriteOperations": [{
         "AddObject": {
-            "Uri": "s3://lf-data-lake-012345678901/target/dl_tpc_household_demographics_gov/run-unnamed-1-part-block-0-r-00000-snappy-ff26b17504414fe88b302cd795eabd00.parquet",
+            "Uri": "s3://amzn-s3-demo-bucket/target/dl_tpc_household_demographics_gov/run-unnamed-1-part-block-0-r-00000-snappy-ff26b17504414fe88b302cd795eabd00.parquet",
             "ETag": "1234ab1fc50a316b149b4e1f21a73800",
             "Size": 42200
         }
@@ -2071,5 +2054,4 @@ Contents of `input.json`:
 }
 ```
 This command produces no output.
-For more information, see [Reading from and writing to the data lake within transactions](https://docs.aws.amazon.com/lake-formation/latest/dg/transaction-ops.html) in the *AWS Lake Formation Developer Guide*.
 +  For API details, see [UpdateTableObjects](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lakeformation/update-table-objects.html) in *AWS CLI Command Reference*.

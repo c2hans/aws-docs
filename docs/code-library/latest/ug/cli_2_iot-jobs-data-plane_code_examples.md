@@ -42,12 +42,12 @@ Output:
         "approximateSecondsBeforeTimedOut": 88,
         "executionNumber": 2939653338,
         "jobId": "SampleJob",
-        "lastUpdatedAt": 1567701875.743,
-        "queuedAt": 1567701902.444,
+        "lastUpdatedAt": 1567701875,
+        "queuedAt": 1567701902,
         "status": "QUEUED",
         "thingName": "MotionSensor1 ",
         "versionNumber": 3
-   }
+    }
 }
 ```
 For more information, see [Devices and Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/jobs-devices.html) in the *AWS IoT Developer Guide*.
@@ -64,7 +64,7 @@ The following `get-pending-job-executions` example displays a list of all jobs t
 
 ```
 aws iot-jobs-data get-pending-job-executions \
-    --thing-name {{MotionSensor1}}
+    --thing-name {{MotionSensor1}} \
     --endpoint-url {{https://1234567890abcd.jobs.iot.us-west-2.amazonaws.com}}
 ```
 Output:
@@ -77,10 +77,10 @@ Output:
         {
             "executionNumber": 2939653338,
             "jobId": "SampleJob",
-            "lastUpdatedAt": 1567701875.743,
-            "queuedAt": 1567701902.444,
+            "lastUpdatedAt": 1567701875,
+            "queuedAt": 1567701902,
             "versionNumber": 3
-      }
+        }
     ]
 }
 ```
@@ -98,7 +98,7 @@ The following `start-next-pending-job-execution` example retrieves and starts th
 
 ```
 aws iot-jobs-data start-next-pending-job-execution \
-    --thing-name {{MotionSensor1}}
+    --thing-name {{MotionSensor1}} \
     --endpoint-url {{https://1234567890abcd.jobs.iot.us-west-2.amazonaws.com}}
 ```
 Output:
@@ -109,13 +109,13 @@ Output:
         "approximateSecondsBeforeTimedOut": 88,
         "executionNumber": 2939653338,
         "jobId": "SampleJob",
-        "lastUpdatedAt": 1567714853.743,
-        "queuedAt": 1567701902.444,
-        "startedAt": 1567714871.690,
+        "lastUpdatedAt": 1567714853,
+        "queuedAt": 1567701902,
+        "startedAt": 1567714871,
         "status": "IN_PROGRESS",
         "thingName": "MotionSensor1 ",
         "versionNumber": 3
-   }
+    }
 }
 ```
 For more information, see [Devices and Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/jobs-devices.html) in the *AWS IoT Developer Guide*.
@@ -144,7 +144,7 @@ Output:
     "executionState": {
         "status": "REMOVED",
         "versionNumber": 3
-    },
+    }
 }
 ```
 For more information, see [Devices and Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/jobs-devices.html) in the *AWS IoT Developer Guide*.

@@ -48,10 +48,10 @@ Output:
         },
         "OutputDataConfig": {
             "S3Bucket": "comp-med-output",
-            "S3Key": "867139942017-EntitiesDetection-ab9887877365fe70299089371c043b96/"
+            "S3Key": "123456789012-EntitiesDetection-ab9887877365fe70299089371c043b96/"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
         "ModelVersion": "DetectEntitiesModelV20190930"
     }
 }
@@ -91,7 +91,7 @@ Output:
             "S3Key": "AKIAIOSFODNN7EXAMPLE"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
         "ModelVersion":  "0.1.0"
     }
 }
@@ -128,10 +128,10 @@ Output:
         },
         "OutputDataConfig": {
             "S3Bucket": "comp-med-output",
-            "S3Key": "867139942017-PHIDetection-4750034166536cdb52ffa3295a1b00a3/"
+            "S3Key": "123456789012-PHIDetection-4750034166536cdb52ffa3295a1b00a3/"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
         "ModelVersion": "PHIModelV20190903"
     }
 }
@@ -171,7 +171,7 @@ Output:
             "S3Key": "AKIAIOSFODNN7EXAMPLE"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
         "ModelVersion": "0.0.0"
     }
 }
@@ -211,7 +211,7 @@ Output:
             "S3Key": "AKIAIOSFODNN7EXAMPLE"
         },
         "LanguageCode": "en",
-        "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+        "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
         "ModelVersion":  "0.1.0"
     }
 }
@@ -236,14 +236,18 @@ Output:
 
 ```
 {
-    "Id": 0,
-    "BeginOffset": 38,
-    "EndOffset": 47,
-    "Score": 0.9942955374717712,
-    "Text": "Clonidine",
-    "Category": "MEDICATION",
-    "Type": "GENERIC_NAME",
-    "Traits": []
+    "Entities": [
+        {
+            "Id": 0,
+            "BeginOffset": 38,
+            "EndOffset": 47,
+            "Score": 0.9942955374717712,
+            "Text": "Clonidine",
+            "Category": "MEDICATION",
+            "Type": "GENERIC_NAME",
+            "Traits": []
+        }
+    ]
 }
 ```
 For more information, see [Detect Entities Version 2](https://docs.aws.amazon.com/comprehend/latest/dg/extracted-med-info-V2.html) in the *Amazon Comprehend Medical Developer Guide*.
@@ -265,14 +269,18 @@ Output:
 
 ```
 {
-    "Id": 0,
-    "BeginOffset": 38,
-    "EndOffset": 47,
-    "Score": 0.9942955374717712,
-    "Text": "Clonidine",
-    "Category": "MEDICATION",
-    "Type": "GENERIC_NAME",
-    "Traits": []
+    "Entities": [
+        {
+            "Id": 0,
+            "BeginOffset": 38,
+            "EndOffset": 47,
+            "Score": 0.9942955374717712,
+            "Text": "Clonidine",
+            "Category": "MEDICATION",
+            "Type": "GENERIC_NAME",
+            "Traits": []
+        }
+    ]
 }
 ```
 For more information, see [Detect Entities Version 2](https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalysis-entitiesv2.html) in the *Amazon Comprehend Medical Developer Guide*.
@@ -495,7 +503,7 @@ Output:
 ```
 For more information, see [Infer ICD10-CM](https://docs.aws.amazon.com/comprehend/latest/dg/ontology-linking-icd10.html) in the *Amazon Comprehend Medical Developer Guide*.
 **Example 2: To detect medical condition entities and link to the ICD-10-CM Ontology from a file pathway**
-The following `infer-icd-10-cm` example labels the detected medical condition entities and links those entities with codes in the 2019 edition of the International Classification of Diseases Clinical Modification (ICD-10-CM).
+The following `infer-icd10-cm` example labels the detected medical condition entities and links those entities with codes in the 2019 edition of the International Classification of Diseases Clinical Modification (ICD-10-CM).
 
 ```
 aws comprehendmedical infer-icd10-cm \
@@ -885,7 +893,7 @@ For more information, see [Infer RxNorm](https://docs.aws.amazon.com/comprehend-
 The following code example shows how to use `infer-snomedct`.
 
 **AWS CLI**
-**Example: To detect entities and link to the SNOMED CT Ontology directly from text**
+**To detect entities and link to the SNOMED CT Ontology directly from text**
 The following `infer-snomedct` example shows how to detect medical entities and link them to concepts from the 2021-03 version of the Systematized Nomenclature of Medicine, Clinical Terms (SNOMED CT).
 
 ```
@@ -952,7 +960,6 @@ Output:
             ]
         }
     ],
-    "UnmappedAttributes": [],
     "ModelVersion": "1.0.0"
 }
 ```
@@ -988,10 +995,10 @@ Output:
             },
             "OutputDataConfig": {
                 "S3Bucket": "comp-med-output",
-                "S3Key": "867139942017-EntitiesDetection-ab9887877365fe70299089371c043b96/"
+                "S3Key": "123456789012-EntitiesDetection-ab9887877365fe70299089371c043b96/"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
             "ModelVersion": "DetectEntitiesModelV20190930"
         }
     ]
@@ -1007,7 +1014,7 @@ The following code example shows how to use `list-icd10-cm-inference-jobs`.
 
 **AWS CLI**
 **To list all current ICD-10-CM inference jobs**
-The following example shows how the `list-icd10-cm-inference-jobs` operation returns a list of current asynchronous ICD-10-CM batch inference jobs.
+The following `list-icd10-cm-inference-jobs` example returns a list of current asynchronous ICD-10-CM batch inference jobs.
 
 ```
 aws comprehendmedical list-icd10-cm-inference-jobs
@@ -1032,7 +1039,7 @@ Output:
                 "S3Key": "AKIAIOSFODNN7EXAMPLE"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
             "ModelVersion":  "0.1.0"
         }
     ]
@@ -1048,7 +1055,7 @@ The following code example shows how to use `list-phi-detection-jobs`.
 
 **AWS CLI**
 **To list protected health information (PHI) detection jobs**
-The following `list-phi-detection-jobs` example lists current protected health information (PHI) detection jobs
+The following `list-phi-detection-jobs` example lists current protected health information (PHI) detection jobs.
 
 ```
 aws comprehendmedical list-phi-detection-jobs
@@ -1070,10 +1077,10 @@ Output:
             },
             "OutputDataConfig": {
                 "S3Bucket": "comp-med-output",
-                "S3Key": "867139942017-PHIDetection-4750034166536cdb52ffa3295a1b00a3/"
+                "S3Key": "123456789012-PHIDetection-4750034166536cdb52ffa3295a1b00a3/"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
             "ModelVersion": "PHIModelV20190903"
         }
     ]
@@ -1089,7 +1096,7 @@ The following code example shows how to use `list-rx-norm-inference-jobs`.
 
 **AWS CLI**
 **To list all current Rx-Norm inference jobs**
-The following example shows how `list-rx-norm-inference-jobs` returns a list of current asynchronous Rx-Norm batch inference jobs.
+The following `list-rx-norm-inference-jobs` example returns a list of current asynchronous Rx-Norm batch inference jobs.
 
 ```
 aws comprehendmedical list-rx-norm-inference-jobs
@@ -1114,7 +1121,7 @@ Output:
                 "S3Key": "AKIAIOSFODNN7EXAMPLE"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
             "ModelVersion": "0.0.0"
         }
     ]
@@ -1130,7 +1137,7 @@ The following code example shows how to use `list-snomedct-inference-jobs`.
 
 **AWS CLI**
 **To list all SNOMED CT inference jobs**
-The following example shows how the `list-snomedct-inference-jobs` operation returns a list of current asynchronous SNOMED CT batch inference jobs.
+The following `list-snomedct-inference-jobs` example returns a list of current asynchronous SNOMED CT batch inference jobs.
 
 ```
 aws comprehendmedical list-snomedct-inference-jobs
@@ -1155,7 +1162,7 @@ Output:
                 "S3Key": "AKIAIOSFODNN7EXAMPLE"
             },
             "LanguageCode": "en",
-            "DataAccessRoleArn": "arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole",
+            "DataAccessRoleArn": "arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole",
             "ModelVersion":  "0.1.0"
         }
     ]
@@ -1177,7 +1184,7 @@ The following `start-entities-detection-v2-job` example starts an asynchronous e
 aws comprehendmedical start-entities-detection-v2-job \
     --input-data-config {{"S3Bucket=comp-med-input"}} \
     --output-data-config {{"S3Bucket=comp-med-output"}} \
-    --data-access-role-arn {{arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole}} \
     --language-code {{en}}
 ```
 Output:
@@ -1203,7 +1210,7 @@ The following `start-icd10-cm-inference-job` example starts an ICD-10-CM inferen
 aws comprehendmedical start-icd10-cm-inference-job \
     --input-data-config {{"S3Bucket=comp-med-input"}} \
     --output-data-config {{"S3Bucket=comp-med-output"}} \
-    --data-access-role-arn {{arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole}} \
     --language-code {{en}}
 ```
 Output:
@@ -1229,7 +1236,7 @@ The following `start-phi-detection-job` example starts an asynchronous PHI entit
 aws comprehendmedical start-phi-detection-job \
     --input-data-config {{"S3Bucket=comp-med-input"}} \
     --output-data-config {{"S3Bucket=comp-med-output"}} \
-    --data-access-role-arn {{arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole}} \
     --language-code {{en}}
 ```
 Output:
@@ -1255,7 +1262,7 @@ The following `start-rx-norm-inference-job` example starts an RxNorm inference b
 aws comprehendmedical start-rx-norm-inference-job \
     --input-data-config {{"S3Bucket=comp-med-input"}} \
     --output-data-config {{"S3Bucket=comp-med-output"}} \
-    --data-access-role-arn {{arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole}} \
     --language-code {{en}}
 ```
 Output:
@@ -1281,7 +1288,7 @@ The following `start-snomedct-inference-job` example starts a SNOMED CT inferenc
 aws comprehendmedical start-snomedct-inference-job \
     --input-data-config {{"S3Bucket=comp-med-input"}} \
     --output-data-config {{"S3Bucket=comp-med-output"}} \
-    --data-access-role-arn {{arn:aws:iam::867139942017:role/ComprehendMedicalBatchProcessingRole}} \
+    --data-access-role-arn {{arn:aws:iam::123456789012:role/ComprehendMedicalBatchProcessingRole}} \
     --language-code {{en}}
 ```
 Output:
@@ -1334,7 +1341,7 @@ Output:
 
 ```
 {
-    "JobId": "ef7289877365fc70299089371c043b96",
+    "JobId": "4750034166536cdb52ffa3295a1b00a3"
 }
 ```
 For more information, see [Ontology linking batch analysis](https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontologies-batchapi.html) in the *Amazon Comprehend Medical Developer Guide*.
@@ -1380,7 +1387,7 @@ Output:
 
 ```
 {
-    "JobId": "eg8199877365fc70299089371c043b96",
+    "JobId": "eg8199877365fc70299089371c043b96"
 }
 ```
 For more information, see [Ontology linking batch analysis](https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontologies-batchapi.html) in the *Amazon Comprehend Medical Developer Guide*.
@@ -1403,7 +1410,7 @@ Output:
 
 ```
 {
-    "JobId": "8750034166436cdb52ffa3295a1b00a1",
+    "JobId": "8750034166436cdb52ffa3295a1b00a1"
 }
 ```
 For more information, see [Ontology linking batch analysis](https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontologies-batchapi.html) in the *Amazon Comprehend Medical Developer Guide*.

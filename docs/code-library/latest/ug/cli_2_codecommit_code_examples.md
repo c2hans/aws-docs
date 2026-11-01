@@ -192,44 +192,45 @@ Output:
 ```
 {
     "commits": [
-      {
-        "additionalData": "",
-        "committer": {
-            "date": "1508280564 -0800",
-            "name": "Mary Major",
-            "email": "mary_major@example.com"
+        {
+            "additionalData": "",
+            "committer": {
+                "date": "1508280564 -0800",
+                "name": "Mary Major",
+                "email": "mary_major@example.com"
+            },
+            "author": {
+                "date": "1508280564 -0800",
+                "name": "Mary Major",
+                "email": "mary_major@example.com"
+            },
+            "commitId": "317f8570EXAMPLE",
+            "treeId": "1f330709EXAMPLE",
+            "parents": [
+                "6e147360EXAMPLE"
+            ],
+            "message": "Change variable name and add new response element"
         },
-        "author": {
-            "date": "1508280564 -0800",
-            "name": "Mary Major",
-            "email": "mary_major@example.com"
-        },
-        "commitId": "317f8570EXAMPLE",
-        "treeId": "1f330709EXAMPLE",
-        "parents": [
-            "6e147360EXAMPLE"
-        ],
-        "message": "Change variable name and add new response element"
-    },
-    {
-        "additionalData": "",
-        "committer": {
-            "date": "1508280542 -0800",
-            "name": "Li Juan",
-            "email": "li_juan@example.com"
-        },
-        "author": {
-            "date": "1508280542 -0800",
-            "name": "Li Juan",
-            "email": "li_juan@example.com"
-        },
-        "commitId": "4c925148EXAMPLE",
-        "treeId": "1f330709EXAMPLE",
-        "parents": [
-            "317f8570EXAMPLE"
-        ],
-        "message": "Added new class"
-    }
+        {
+            "additionalData": "",
+            "committer": {
+                "date": "1508280542 -0800",
+                "name": "Li Juan",
+                "email": "li_juan@example.com"
+            },
+            "author": {
+                "date": "1508280542 -0800",
+                "name": "Li Juan",
+                "email": "li_juan@example.com"
+            },
+            "commitId": "4c925148EXAMPLE",
+            "treeId": "1f330709EXAMPLE",
+            "parents": [
+                "317f8570EXAMPLE"
+            ],
+            "message": "Added new class"
+        }
+    ]
 }
 ```
 For more information, see [View Commit Details](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-commit-details.html#how-to-view-commit-details-cli-batch-get-commits) in the *AWS CodeCommit User Guide*.
@@ -242,7 +243,7 @@ The following code example shows how to use `batch-get-repositories`.
 
 **AWS CLI**
 **To view details about multiple repositories**
-This example shows details about multiple AWS CodeCommit repositories.
+The following `batch-get-repositories` example shows details about multiple AWS CodeCommit repositories.
 
 ```
 aws codecommit batch-get-repositories \
@@ -252,36 +253,36 @@ Output:
 
 ```
 {
-    "repositoriesNotFound": [],
     "repositories": [
-         {
+        {
             "creationDate": 1429203623.625,
             "defaultBranch": "main",
             "repositoryName": "MyDemoRepo",
-            "cloneUrlSsh": "ssh://git-codecommit.us-east-2.amazonaws.com/v1/repos/MyDemoRepo",
+            "cloneUrlSsh": "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/MyDemoRepo",
             "lastModifiedDate": 1430783812.0869999,
             "repositoryDescription": "My demonstration repository",
-            "cloneUrlHttp": "https://codecommit.us-east-2.amazonaws.com/v1/repos/MyDemoRepo",
-            "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE",
-            "Arn": "arn:aws:codecommit:us-east-2:111111111111:MyDemoRepo"
-            "accountId": "111111111111"
+            "cloneUrlHttp": "https://codecommit.us-west-2.amazonaws.com/v1/repos/MyDemoRepo",
+            "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "Arn": "arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo",
+            "accountId": "123456789012"
         },
         {
             "creationDate": 1429203623.627,
             "defaultBranch": "main",
             "repositoryName": "MyOtherDemoRepo",
-            "cloneUrlSsh": "ssh://git-codecommit.us-east-2.amazonaws.com/v1/repos/MyOtherDemoRepo",
+            "cloneUrlSsh": "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/MyOtherDemoRepo",
             "lastModifiedDate": 1430783812.0889999,
             "repositoryDescription": "My other demonstration repository",
-            "cloneUrlHttp": "https://codecommit.us-east-2.amazonaws.com/v1/repos/MyOtherDemoRepo",
-            "repositoryId": "cfc29ac4-b0cb-44dc-9990-f6f51EXAMPLE",
-            "Arn": "arn:aws:codecommit:us-east-2:111111111111:MyOtherDemoRepo"
-            "accountId": "111111111111"
+            "cloneUrlHttp": "https://codecommit.us-west-2.amazonaws.com/v1/repos/MyOtherDemoRepo",
+            "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "Arn": "arn:aws:codecommit:us-west-2:123456789012:MyOtherDemoRepo",
+            "accountId": "123456789012"
         }
     ],
     "repositoriesNotFound": []
 }
 ```
+For more information, see [View CodeCommit repository details](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-repository-details.html#how-to-view-repository-details-with-names-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [BatchGetRepositories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/batch-get-repositories.html) in *AWS CLI Command Reference*.
 
 ### `create-approval-rule-template`
@@ -325,17 +326,16 @@ The following code example shows how to use `create-branch`.
 
 **AWS CLI**
 **To create a branch**
-This example creates a branch in an AWS CodeCommit repository. This command produces output only if there are errors.
-Command:
+The following `create-branch` example creates a branch in an AWS CodeCommit repository.
 
 ```
-aws codecommit create-branch --repository-name {{MyDemoRepo}} --branch-name {{MyNewBranch}} --commit-id {{317f8570EXAMPLE}}
+aws codecommit create-branch \
+    --repository-name {{MyDemoRepo}} \
+    --branch-name {{MyNewBranch}} \
+    --commit-id {{317f8570EXAMPLE}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Create a branch in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-branch.html#how-to-create-branch-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [CreateBranch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/create-branch.html) in *AWS CLI Command Reference*.
 
 ### `create-commit`
@@ -383,9 +383,9 @@ The following code example shows how to use `create-pull-request-approval-rule`.
 The following `create-pull-request-approval-rule` example creates an approval rule named `Require two approved approvers` for the specified pull request. The rule specifies that two approvals are required from an approval pool. The pool includes all users who access CodeCommit by assuming the role of `CodeCommitReview` in the `123456789012` AWS account. It also includes either an IAM user or federated user named `Nikhil_Jayashankar` from the same AWS account.
 
 ```
-aws codecommit create-pull-request-approval-rule  \
-    --pull-request-id {{42}}
-    --approval-rule-name {{"Require two approved approvers"}}  \
+aws codecommit create-pull-request-approval-rule \
+    --pull-request-id {{42}} \
+    --approval-rule-name {{"Require two approved approvers"}} \
     --approval-rule-content "{\"Version\": \"2018-11-08\",\"Statements\": [{\"Type\": \"Approvers\",\"NumberOfApprovalsNeeded\": 2,\"ApprovalPoolMembers\": [\"CodeCommitApprovers:123456789012:Nikhil_Jayashankar\", \"arn:aws:sts::123456789012:assumed-role/CodeCommitReview/*\"]}]}"
 ```
 Output:
@@ -442,7 +442,7 @@ Output:
                 "ruleContentSha256": "4711b576EXAMPLE"
             }
         ],
-        "authorArn": "arn:aws:iam::111111111111:user/Jane_Doe",
+        "authorArn": "arn:aws:iam::123456789111:user/Jane_Doe",
         "description": "Please review these changes by Tuesday",
         "title": "Pronunciation difficulty analyzer",
         "pullRequestTargets": [
@@ -465,6 +465,7 @@ Output:
     }
 }
 ```
+For more information, see [Create a pull request](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-pull-request.html#how-to-create-pull-request-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [CreatePullRequest](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/create-pull-request.html) in *AWS CLI Command Reference*.
 
 ### `create-repository`
@@ -474,11 +475,12 @@ The following code example shows how to use `create-repository`.
 
 **AWS CLI**
 **To create a repository**
-This example creates a repository and associates it with the user's AWS account.
-Command:
+The following `create-repository` example creates a repository and associates it with the user's AWS account.
 
 ```
-aws codecommit create-repository --repository-name {{MyDemoRepo}} --repository-description {{"My demonstration repository"}}
+aws codecommit create-repository \
+    --repository-name {{MyDemoRepo}} \
+    --repository-description {{"My demonstration repository"}}
 ```
 Output:
 
@@ -486,16 +488,17 @@ Output:
 {
     "repositoryMetadata": {
         "repositoryName": "MyDemoRepo",
-                "cloneUrlSsh": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyDemoRepo",
-                "lastModifiedDate": 1444766838.027,
+        "cloneUrlSsh": "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/MyDemoRepo",
+        "lastModifiedDate": 1444766838.027,
         "repositoryDescription": "My demonstration repository",
-                "cloneUrlHttp": "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/MyDemoRepo",
-        "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE",
-                "Arn": "arn:aws:codecommit:us-east-1:111111111111EXAMPLE:MyDemoRepo",
-        "accountId": "111111111111"
+        "cloneUrlHttp": "https://git-codecommit.us-west-2.amazonaws.com/v1/repos/MyDemoRepo",
+        "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "Arn": "arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo",
+        "accountId": "123456789012"
     }
 }
 ```
+For more information, see [Create an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-repository.html#how-to-create-repository-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [CreateRepository](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/create-repository.html) in *AWS CLI Command Reference*.
 
 ### `create-unreferenced-merge-commit`
@@ -535,7 +538,7 @@ The following code example shows how to use `credential-helper`.
 
 **AWS CLI**
 **To set up the credential helper included in the AWS CLI with AWS CodeCommit**
-The `credential-helper` utility is not designed to be called directly from the AWS CLI. Instead it is intended to be used as a parameter with the `git config` command to set up your local computer. It enables Git to use HTTPS and a cryptographically signed version of your IAM user credentials or Amazon EC2 instance role whenever Git needs to authenticate with AWS to interact with CodeCommit repositories.
+The following `credential-helper` example configures Git to use the credential helper included in the AWS CLI with AWS CodeCommit. The `credential-helper` utility is not designed to be called directly from the AWS CLI. Instead it is intended to be used as a parameter with the `git config` command to set up your local computer. It enables Git to use HTTPS and a cryptographically signed version of your IAM user credentials or Amazon EC2 instance role whenever Git needs to authenticate with AWS to interact with CodeCommit repositories.
 
 ```
 git config --global credential.helper '!aws codecommit credential-helper $@'
@@ -548,7 +551,7 @@ Output:
     helper = !aws codecommit credential-helper $@
     UseHttpPath = true
 ```
-For more information, see Setting up for AWS CodeCommit Using Other Methods in the *AWS CodeCommit User Guide*. Review the content carefully, and then follow the procedures in one of the following topics: For HTTPS Connections on Linux, macOS, or Unix or For HTTPS Connections on Windows in the *AWS CodeCommit User Guide*.
+For more information, see [Setting up for AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up.html) in the *AWS CodeCommit User Guide*. Review the content carefully, and then follow the procedures in one of the following topics: [Setup steps for HTTPS connections to AWS CodeCommit repositories on Linux, macOS, or Unix with the AWS CLI credential helper](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html) or [Setup steps for HTTPS connections to AWS CodeCommit repositories on Windows with the AWS CLI credential helper](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-windows.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [CredentialHelper](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/credential-helper.html) in *AWS CLI Command Reference*.
 
 ### `delete-approval-rule-template`
@@ -581,22 +584,24 @@ The following code example shows how to use `delete-branch`.
 
 **AWS CLI**
 **To delete a branch**
-This example shows how to delete a branch in an AWS CodeCommit repository.
-Command:
+The following `delete-branch` example deletes a branch in an AWS CodeCommit repository.
 
 ```
-aws codecommit delete-branch --repository-name {{MyDemoRepo}} --branch-name {{MyNewBranch}}
+aws codecommit delete-branch \
+    --repository-name {{MyDemoRepo}} \
+    --branch-name {{MyNewBranch}}
 ```
 Output:
 
 ```
 {
-  "branch": {
-      "commitId": "317f8570EXAMPLE",
-      "branchName": "MyNewBranch"
-  }
+    "deletedBranch": {
+        "commitId": "317f8570EXAMPLE",
+        "branchName": "MyNewBranch"
+    }
 }
 ```
+For more information, see [Delete a branch in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-branch.html#how-to-delete-branch-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [DeleteBranch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/delete-branch.html) in *AWS CLI Command Reference*.
 
 ### `delete-comment-content`
@@ -606,7 +611,7 @@ The following code example shows how to use `delete-comment-content`.
 
 **AWS CLI**
 **To delete the content of a comment**
-You can only delete the content of a comment if you created the comment. This example demonstrates how to delete the content of a comment with the system-generated ID of `ff30b348EXAMPLEb9aa670f`.
+The following `delete-comment-content` example deletes the content of a comment with the system-generated ID of `ff30b348EXAMPLEb9aa670f`. You can only delete the content of a comment if you created the comment.
 
 ```
 aws codecommit delete-comment-content \
@@ -622,7 +627,7 @@ Output:
         "lastModifiedDate": 1508369842.278,
         "clientRequestToken": "123Example",
         "commentId": "ff30b348EXAMPLEb9aa670f",
-        "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+        "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
         "callerReactions": [],
         "reactionCounts":
         {
@@ -631,6 +636,7 @@ Output:
     }
 }
 ```
+For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html#how-to-commit-comment-cli-commit-delete) in the *AWS CodeCommit User Guide*.
 +  For API details, see [DeleteCommentContent](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/delete-comment-content.html) in *AWS CLI Command Reference*.
 
 ### `delete-file`
@@ -659,7 +665,7 @@ Output:
     "treeId":"6bc824cEXAMPLE"
 }
 ```
-For more information, see [Edit or Delete a File in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-edit-file.html?shortFooter=true#how-to-edit-file-cli) in the *AWS CodeCommit API Reference* guide.
+For more information, see [Edit the contents of a file in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-edit-file.html#how-to-edit-file-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [DeleteFile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/delete-file.html) in *AWS CLI Command Reference*.
 
 ### `delete-pull-request-approval-rule`
@@ -693,19 +699,20 @@ The following code example shows how to use `delete-repository`.
 
 **AWS CLI**
 **To delete a repository**
-This example shows how to delete an AWS CodeCommit repository.
-Command:
+The following `delete-repository` example deletes an AWS CodeCommit repository.
 
 ```
-aws codecommit delete-repository --repository-name {{MyDemoRepo}}
+aws codecommit delete-repository \
+    --repository-name {{MyDemoRepo}}
 ```
 Output:
 
 ```
 {
-  "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE"
+    "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Delete an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-repository.html#how-to-delete-repository-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [DeleteRepository](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/delete-repository.html) in *AWS CLI Command Reference*.
 
 ### `describe-merge-conflicts`
@@ -793,7 +800,8 @@ The following code example shows how to use `describe-pull-request-events`.
 The following `describe-pull-request-events` example retrieves the events for a pull request with the ID of '8'.
 
 ```
-aws codecommit describe-pull-request-events --pull-request-id {{8}}
+aws codecommit describe-pull-request-events \
+    --pull-request-id {{8}}
 ```
 Output:
 
@@ -804,7 +812,7 @@ Output:
             "pullRequestId": "8",
             "pullRequestEventType": "PULL_REQUEST_CREATED",
             "eventDate": 1510341779.53,
-            "actor": "arn:aws:iam::111111111111:user/Zhang_Wei"
+            "actorArn": "arn:aws:iam::123456789012:user/Zhang_Wei"
         },
         {
             "pullRequestStatusChangedEventMetadata": {
@@ -813,11 +821,12 @@ Output:
             "pullRequestId": "8",
             "pullRequestEventType": "PULL_REQUEST_STATUS_CHANGED",
             "eventDate": 1510341930.72,
-            "actor": "arn:aws:iam::111111111111:user/Jane_Doe"
+            "actorArn": "arn:aws:iam::123456789012:user/Jane_Doe"
         }
     ]
 }
 ```
+For more information, see [View pull requests in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-pull-request.html#how-to-view-pull-request-cli) in the *AWS CodeCommit User Guide*.
 +  For API details, see [DescribePullRequestEvents](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/describe-pull-request-events.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-approval-rule-template-from-repository`
@@ -911,7 +920,9 @@ The following code example shows how to use `get-blob`.
 The following `get-blob` example retrieves information about a Git blob with the ID of '2eb4af3bEXAMPLE' in an AWS CodeCommit repository named 'MyDemoRepo'.
 
 ```
-aws codecommit get-blob  --repository-name {{MyDemoRepo}}  --blob-id {{2eb4af3bEXAMPLE}}
+aws codecommit get-blob \
+    --repository-name {{MyDemoRepo}} \
+    --blob-id {{2eb4af3bEXAMPLE}}
 ```
 Output:
 
@@ -920,6 +931,7 @@ Output:
     "content": "QSBCaW5hcnkgTGFyToEXAMPLE="
 }
 ```
+For more information, see [View commit details in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-commit-details.html#how-to-view-commit-details-cli-blob) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetBlob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-blob.html) in *AWS CLI Command Reference*.
 
 ### `get-branch`
@@ -929,22 +941,24 @@ The following code example shows how to use `get-branch`.
 
 **AWS CLI**
 **To get information about a branch**
-This example gets information about a branch in an AWS CodeCommit repository.
-Command:
+The following `get-branch` example gets information about a branch in an AWS CodeCommit repository.
 
 ```
-aws codecommit get-branch --repository-name {{MyDemoRepo}} --branch-name {{MyNewBranch}}
+aws codecommit get-branch \
+    --repository-name {{MyDemoRepo}} \
+    --branch-name {{MyNewBranch}}
 ```
 Output:
 
 ```
 {
-  "BranchInfo": {
-        "commitID": "317f8570EXAMPLE",
-                "branchName": "MyNewBranch"
-  }
+    "branch": {
+        "commitId": "317f8570EXAMPLE",
+        "branchName": "MyNewBranch"
+    }
 }
 ```
+For more information, see [View branch details in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-branch-details.html#how-to-view-branch-details-cli-details) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetBranch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-branch.html) in *AWS CLI Command Reference*.
 
 ### `get-comment-reactions`
@@ -964,42 +978,40 @@ Output:
 
 ```
 {
-    "reactionsForComment": {
-        [
-           {
-               "reaction": {
-                    "emoji:"??",
-                    "shortCode": "thumbsup",
-                    "unicode": "U+1F44D"
-                },
-                "users": [
-                    "arn:aws:iam::123456789012:user/Li_Juan",
-                    "arn:aws:iam::123456789012:user/Mary_Major",
-                    "arn:aws:iam::123456789012:user/Jorge_Souza"
-                ]
+    "reactionsForComment": [
+        {
+            "reaction": {
+                "emoji": "??",
+                "shortCode": "thumbsup",
+                "unicode": "U+1F44D"
             },
-            {
-                "reaction": {
-                    "emoji": "??",
-                    "shortCode": "thumbsdown",
-                    "unicode": "U+1F44E"
-                },
-                "users": [
-                    "arn:aws:iam::123456789012:user/Nikhil_Jayashankar"
-                ]
+            "reactionUsers": [
+                "arn:aws:iam::123456789012:user/Li_Juan",
+                "arn:aws:iam::123456789012:user/Mary_Major",
+                "arn:aws:iam::123456789012:user/Jorge_Souza"
+            ]
+        },
+        {
+            "reaction": {
+                "emoji": "??",
+                "shortCode": "thumbsdown",
+                "unicode": "U+1F44E"
             },
-            {
-                "reaction": {
-                    "emoji": "??",
-                    "shortCode": "confused",
-                    "unicode": "U+1F615"
-                },
-                "users": [
-                    "arn:aws:iam::123456789012:user/Saanvi_Sarkar"
-                ]
-            }
-        ]
-    }
+            "reactionUsers": [
+                "arn:aws:iam::123456789012:user/Nikhil_Jayashankar"
+            ]
+        },
+        {
+            "reaction": {
+                "emoji": "??",
+                "shortCode": "confused",
+                "unicode": "U+1F615"
+            },
+            "reactionUsers": [
+                "arn:aws:iam::123456789012:user/Saanvi_Sarkar"
+            ]
+        }
+    ]
 }
 ```
 For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html#how-to-commit-comment-cli-commit-emoji-view) in the *AWS CodeCommit User Guide*.
@@ -1012,7 +1024,7 @@ The following code example shows how to use `get-comment`.
 
 **AWS CLI**
 **To view details of a comment**
-This example demonstrates how to view details of a comment with the system-generated comment ID of `ff30b348EXAMPLEb9aa670f`.
+The following `get-comment` example displays details of a comment with the system-generated comment ID of `ff30b348EXAMPLEb9aa670f`.
 
 ```
 aws codecommit get-comment \
@@ -1023,13 +1035,13 @@ Output:
 ```
 {
     "comment": {
-        "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+        "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
         "clientRequestToken": "123Example",
         "commentId": "ff30b348EXAMPLEb9aa670f",
         "content": "Whoops - I meant to add this comment to the line, but I don't see how to delete it.",
         "creationDate": 1508369768.142,
         "deleted": false,
-        "commentId": "",
+        "inReplyTo": "",
         "lastModifiedDate": 1508369842.278,
         "callerReactions": [],
         "reactionCounts":
@@ -1040,6 +1052,7 @@ Output:
     }
 }
 ```
+For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html#how-to-commit-comment-cli-get-comment-info) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetComment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-comment.html) in *AWS CLI Command Reference*.
 
 ### `get-comments-for-compared-commit`
@@ -1049,7 +1062,7 @@ The following code example shows how to use `get-comments-for-compared-commit`.
 
 **AWS CLI**
 **To view comments on a commit**
-This example demonstrates how to view view comments made on the comparison between two commits in a repository named `MyDemoRepo`.
+The following `get-comments-for-compared-commit` example displays comments made on the comparison between two commits in a repository named `MyDemoRepo`.
 
 ```
 aws codecommit get-comments-for-compared-commit \
@@ -1069,13 +1082,13 @@ Output:
             "beforeCommitId": "6e147360EXAMPLE",
             "comments": [
                 {
-                    "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+                    "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
                     "clientRequestToken": "123Example",
                     "commentId": "ff30b348EXAMPLEb9aa670f",
                     "content": "Whoops - I meant to add this comment to the line, not the file, but I don't see how to delete it.",
                     "creationDate": 1508369768.142,
                     "deleted": false,
-                    "CommentId": "123abc-EXAMPLE",
+                    "inReplyTo": "123abc-EXAMPLE",
                     "lastModifiedDate": 1508369842.278,
                     "callerReactions": [],
                     "reactionCounts":
@@ -1085,13 +1098,13 @@ Output:
                     }
                 },
                 {
-                    "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+                    "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
                     "clientRequestToken": "123Example",
                     "commentId": "553b509bEXAMPLE56198325",
                     "content": "Can you add a test case for this?",
                     "creationDate": 1508369612.240,
                     "deleted": false,
-                    "commentId": "456def-EXAMPLE",
+                    "inReplyTo": "456def-EXAMPLE",
                     "lastModifiedDate": 1508369612.240,
                     "callerReactions": [],
                     "reactionCounts":
@@ -1111,6 +1124,7 @@ Output:
     "nextToken": "exampleToken"
 }
 ```
+For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html#how-to-commit-comment-cli-get-comments) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetCommentsForComparedCommit](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-comments-for-compared-commit.html) in *AWS CLI Command Reference*.
 
 ### `get-comments-for-pull-request`
@@ -1120,7 +1134,7 @@ The following code example shows how to use `get-comments-for-pull-request`.
 
 **AWS CLI**
 **To view comments for a pull request**
-This example demonstrates how to view comments for a pull request in a repository named `MyDemoRepo`.
+The following `get-comments-for-pull-request` example displays comments for a pull request in a repository named `MyDemoRepo`.
 
 ```
 aws codecommit get-comments-for-pull-request \
@@ -1141,7 +1155,7 @@ Output:
             "beforeCommitId": "317f8570EXAMPLE",
             "comments": [
                 {
-                    "authorArn": "arn:aws:iam::111111111111:user/Saanvi_Sarkar",
+                    "authorArn": "arn:aws:iam::123456789012:user/Saanvi_Sarkar",
                     "clientRequestToken": "",
                     "commentId": "abcd1234EXAMPLEb5678efgh",
                     "content": "These don't appear to be used anywhere. Can we remove them?",
@@ -1156,14 +1170,14 @@ Output:
                     }
                 },
                 {
-                    "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+                    "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
                     "clientRequestToken": "",
                     "commentId": "442b498bEXAMPLE5756813",
                     "content": "Good catch. I'll remove them.",
                     "creationDate": 1508369829.104,
                     "deleted": false,
                     "lastModifiedDate": 150836912.273,
-                    "callerReactions": ["THUMBSUP"]
+                    "callerReactions": ["THUMBSUP"],
                     "reactionCounts":
                     {
                         "THUMBSUP" : 14
@@ -1182,6 +1196,7 @@ Output:
     "nextToken": "exampleToken"
 }
 ```
+For more information, see [Review a pull request](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-review-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetCommentsForPullRequest](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-comments-for-pull-request.html) in *AWS CLI Command Reference*.
 
 ### `get-commit`
@@ -1191,36 +1206,38 @@ The following code example shows how to use `get-commit`.
 
 **AWS CLI**
 **To view information about a commit in a repository**
-This example shows details about a commit with the system-generated ID of '7e9fd3091thisisanexamplethisisanexample1' in an AWS CodeCommit repository named 'MyDemoRepo'.
-Command:
+The following `get-commit` example displays details about a commit with the system-generated ID of `7e9fd3091thisisanexamplethisisanexample1` in an AWS CodeCommit repository named `MyDemoRepo`.
 
 ```
-aws codecommit get-commit --repository-name {{MyDemoRepo}} --commit-id {{7e9fd3091thisisanexamplethisisanexample1}}
+aws codecommit get-commit \
+    --repository-name {{MyDemoRepo}} \
+    --commit-id {{7e9fd3091thisisanexamplethisisanexample1}}
 ```
 Output:
 
 ```
 {
-  "commit": {
-      "additionalData": "",
-      "committer": {
-          "date": "1484167798 -0800",
-          "name": "Mary Major",
-          "email": "mary_major@example.com"
-      },
-      "author": {
-          "date": "1484167798 -0800",
-          "name": "Mary Major",
-          "email": "mary_major@example.com"
-      },
-      "treeId": "347a3408thisisanexampletreeidexample",
-      "parents": [
-          "7aa87a031thisisanexamplethisisanexample1"
-      ],
-      "message": "Fix incorrect variable name"
-  }
+    "commit": {
+        "additionalData": "",
+        "committer": {
+            "date": "1484167798 -0800",
+            "name": "Mary Major",
+            "email": "mary_major@example.com"
+        },
+        "author": {
+            "date": "1484167798 -0800",
+            "name": "Mary Major",
+            "email": "mary_major@example.com"
+        },
+        "treeId": "347a3408thisisanexampletreeidexample",
+        "parents": [
+            "7aa87a031thisisanexamplethisisanexample1"
+        ],
+        "message": "Fix incorrect variable name"
+    }
 }
 ```
+For more information, see [View commit details in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-commit-details.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetCommit](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-commit.html) in *AWS CLI Command Reference*.
 
 ### `get-differences`
@@ -1230,33 +1247,38 @@ The following code example shows how to use `get-differences`.
 
 **AWS CLI**
 **To get information about differences for a commit specifier in a repository**
-This example shows view metadata information about changes between two commit specifiers (branch, tag, HEAD, or other fully qualified references, such as commit IDs) in a renamed folder in AWS CodeCommit repository named MyDemoRepo. The example includes several options that are not required, including --before-commit-specifier, --before-path, and --after-path, in order to more fully illustrate how you can use these options to limit the results. The response includes file mode permissions.
-Command:
+The following `get-differences` example displays metadata information about changes between two commit specifiers (branch, tag, HEAD, or other fully qualified references, such as commit IDs) in a renamed folder in AWS CodeCommit repository named MyDemoRepo. The example includes several options that are not required, including `--before-commit-specifier`, `--before-path`, and `--after-path`, in order to more fully illustrate how you can use these options to limit the results. The response includes file mode permissions.
 
 ```
-aws codecommit get-differences --repository-name {{MyDemoRepo}} --before-commit-specifier {{955bba12thisisanexamplethisisanexample}} --after-commit-specifier {{14a95463thisisanexamplethisisanexample}} --before-path {{tmp/example-folder}} --after-path {{tmp/renamed-folder}}
+aws codecommit get-differences \
+    --repository-name {{MyDemoRepo}} \
+    --before-commit-specifier {{955bba12thisisanexamplethisisanexample}} \
+    --after-commit-specifier {{14a95463thisisanexamplethisisanexample}} \
+    --before-path {{tmp/example-folder}} \
+    --after-path {{tmp/renamed-folder}}
 ```
 Output:
 
 ```
 {
-  "differences": [
-      {
-          "afterBlob": {
-              "path": "blob.txt",
-              "blobId": "2eb4af3b1thisisanexamplethisisanexample1",
-              "mode": "100644"
-          },
-          "changeType": "M",
-          "beforeBlob": {
-              "path": "blob.txt",
-              "blobId": "bf7fcf281thisisanexamplethisisanexample1",
-              "mode": "100644"
-          }
-      }
-  ]
+    "differences": [
+        {
+            "afterBlob": {
+                "path": "blob.txt",
+                "blobId": "2eb4af3b1thisisanexamplethisisanexample1",
+                "mode": "100644"
+            },
+            "changeType": "M",
+            "beforeBlob": {
+                "path": "blob.txt",
+                "blobId": "bf7fcf281thisisanexamplethisisanexample1",
+                "mode": "100644"
+            }
+        }
+    ]
 }
 ```
+For more information, see [Compare commits in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-compare-commits.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetDifferences](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-differences.html) in *AWS CLI Command Reference*.
 
 ### `get-file`
@@ -1286,7 +1308,7 @@ Output:
     "fileSize":1563
 }
 ```
-For more information, see [GetFile](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetFile.html) in the *AWS CodeCommit API Reference* guide.
+For more information, see [Browse files in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-browse.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetFile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-file.html) in *AWS CLI Command Reference*.
 
 ### `get-folder`
@@ -1299,7 +1321,9 @@ The following code example shows how to use `get-folder`.
 The following `get-folder` example demonstrates how to get the contents of a top-level folder from a repository named `MyDemoRepo`.
 
 ```
-aws codecommit get-folder --repository-name {{MyDemoRepo}} --folder-path ""
+aws codecommit get-folder \
+    --repository-name {{MyDemoRepo}} \
+    --folder-path ""
 ```
 Output:
 
@@ -1356,7 +1380,7 @@ Output:
     "treeId":"7b3c4dadEXAMPLE"
 }
 ```
-For more information, see GetFolder in the *AWS CodeCommit API Reference* guide.
+For more information, see [Browse files in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-browse.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetFolder](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-folder.html) in *AWS CLI Command Reference*.
 
 ### `get-merge-commit`
@@ -1381,7 +1405,7 @@ Output:
     "sourceCommitId": "c5709475EXAMPLE",
     "destinationCommitId": "317f8570EXAMPLE",
     "baseCommitId": "fb12a539EXAMPLE",
-    "mergeCommitId": "ffc4d608eEXAMPLE"
+    "mergedCommitId": "ffc4d608eEXAMPLE"
 }
 ```
 For more information, see [View Commit Details](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-commit-details.html#how-to-view-commit-details-cli-merge-commit) in the *AWS CodeCommit User Guide*.
@@ -1446,6 +1470,7 @@ Output:
     ]
 }
 ```
+For more information, see [Resolve conflicts in a pull request in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-resolve-conflict-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetMergeConflicts](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-merge-conflicts.html) in *AWS CLI Command Reference*.
 
 ### `get-merge-options`
@@ -1516,7 +1541,7 @@ The following code example shows how to use `get-pull-request-override-state`.
 
 **AWS CLI**
 **To get information about the override status of a pull request**
-The following `get-pull-request-override-state` example returns the override state for the specified pull request. In this example, the approval rules for the pull request were overridden by a user named Mary Major, so the output returns a value of `true`.:
+The following `get-pull-request-override-state` example returns the override state for the specified pull request. In this example, the approval rules for the pull request were overridden by a user named Mary Major, so the output returns a value of `true`.
 
 ```
 aws codecommit get-pull-request-override-state \
@@ -1541,7 +1566,7 @@ The following code example shows how to use `get-pull-request`.
 
 **AWS CLI**
 **To view details of a pull request**
-This example demonstrates how to view information about a pull request with the ID of `27`.
+The following `get-pull-request` example displays information about a pull request with the ID of `27`.
 
 ```
 aws codecommit get-pull-request \
@@ -1587,6 +1612,7 @@ Output:
     }
 }
 ```
+For more information, see [View pull requests in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetPullRequest](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-pull-request.html) in *AWS CLI Command Reference*.
 
 ### `get-repository-triggers`
@@ -1596,7 +1622,7 @@ The following code example shows how to use `get-repository-triggers`.
 
 **AWS CLI**
 **To get information about triggers in a repository**
-This example shows details about triggers configured for an AWS CodeCommit repository named `MyDemoRepo`.
+The following `get-repository-triggers` example displays details about triggers configured for an AWS CodeCommit repository named `MyDemoRepo`.
 
 ```
 aws codecommit get-repository-triggers \
@@ -1606,10 +1632,10 @@ Output:
 
 ```
 {
-    "configurationId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE",
+    "configurationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "triggers": [
         {
-            "destinationArn": "arn:aws:sns:us-east-1:111111111111:MyCodeCommitTopic",
+            "destinationArn": "arn:aws:sns:us-west-2:123456789012:MyCodeCommitTopic",
             "branches": [
                 "main",
                 "preprod"
@@ -1621,7 +1647,7 @@ Output:
             ]
         },
         {
-            "destinationArn": "arn:aws:lambda:us-east-1:111111111111:function:MyCodeCommitPythonFunction",
+            "destinationArn": "arn:aws:lambda:us-west-2:123456789012:function:MyCodeCommitPythonFunction",
             "branches": [],
             "name": "MySecondTrigger",
             "customData": "EXAMPLE",
@@ -1632,6 +1658,7 @@ Output:
     ]
 }
 ```
+For more information, see [Manage triggers for an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetRepositoryTriggers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-repository-triggers.html) in *AWS CLI Command Reference*.
 
 ### `get-repository`
@@ -1641,7 +1668,7 @@ The following code example shows how to use `get-repository`.
 
 **AWS CLI**
 **To get information about a repository**
-This example shows details about an AWS CodeCommit repository.
+The following `get-repository` example displays details about an AWS CodeCommit repository.
 
 ```
 aws codecommit get-repository \
@@ -1655,16 +1682,17 @@ Output:
         "creationDate": 1429203623.625,
         "defaultBranch": "main",
         "repositoryName": "MyDemoRepo",
-        "cloneUrlSsh": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/v1/repos/MyDemoRepo",
+        "cloneUrlSsh": "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/v1/repos/MyDemoRepo",
         "lastModifiedDate": 1430783812.0869999,
         "repositoryDescription": "My demonstration repository",
-        "cloneUrlHttp": "https://codecommit.us-east-1.amazonaws.com/v1/repos/MyDemoRepo",
-        "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE",
-        "Arn": "arn:aws:codecommit:us-east-1:80398EXAMPLE:MyDemoRepo
-        "accountId": "111111111111"
+        "cloneUrlHttp": "https://codecommit.us-west-2.amazonaws.com/v1/repos/MyDemoRepo",
+        "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "Arn": "arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo",
+        "accountId": "123456789012"
     }
 }
 ```
+For more information, see [View CodeCommit repository details](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-repository-details.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [GetRepository](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/get-repository.html) in *AWS CLI Command Reference*.
 
 ### `list-approval-rule-templates`
@@ -1678,7 +1706,7 @@ The following `list-approval-rule-templates` example lists all approval rule tem
 
 ```
 aws codecommit list-approval-rule-templates \
-    --region {{us-east-2}}
+    --region {{us-west-2}}
 ```
 Output:
 
@@ -1710,10 +1738,10 @@ Output:
 
 ```
 {
-  "approvalRuleTemplateNames": [
-    "2-approver-rule-for-main",
-    "1-approver-rule-for-all-pull-requests"
-  ]
+    "approvalRuleTemplateNames": [
+        "2-approver-rule-for-main",
+        "1-approver-rule-for-all-pull-requests"
+    ]
 }
 ```
 For more information, see [Manage Approval Rule Templates](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-manage-templates.html#list-associated-templates) in the *AWS CodeCommit User Guide*.
@@ -1726,7 +1754,7 @@ The following code example shows how to use `list-branches`.
 
 **AWS CLI**
 **To view a list of branch names**
-This example lists all branch names in an AWS CodeCommit repository.
+The following `list-branches` example lists all branch names in an AWS CodeCommit repository.
 
 ```
 aws codecommit list-branches \
@@ -1742,6 +1770,7 @@ Output:
     ]
 }
 ```
+For more information, see [View branch details in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-branch-details.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [ListBranches](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/list-branches.html) in *AWS CLI Command Reference*.
 
 ### `list-pull-requests`
@@ -1751,19 +1780,23 @@ The following code example shows how to use `list-pull-requests`.
 
 **AWS CLI**
 **To view a list of pull requests in a repository**
-This example demonstrates how to list pull requests created by an IAM user with the ARN 'arn:aws:iam::111111111111:user/Li\_Juan' and the status of 'CLOSED' in an AWS CodeCommit repository named 'MyDemoRepo':
+The following `list-pull-requests` example lists pull requests created by an IAM user with the ARN `arn:aws:iam::123456789012:user/Li_Juan` and the status of `CLOSED` in an AWS CodeCommit repository named `MyDemoRepo`.
 
 ```
-aws codecommit list-pull-requests --author-arn {{arn:aws:iam::111111111111:user/Li_Juan}} --pull-request-status {{CLOSED}} --repository-name {{MyDemoRepo}}
+aws codecommit list-pull-requests \
+    --author-arn {{arn:aws:iam::123456789012:user/Li_Juan}} \
+    --pull-request-status {{CLOSED}} \
+    --repository-name {{MyDemoRepo}}
 ```
 Output:
 
 ```
 {
- "nextToken": "",
- "pullRequestIds": ["2","12","16","22","23","35","30","39","47"]
+    "nextToken": "",
+    "pullRequestIds": ["2","12","16","22","23","35","30","39","47"]
 }
 ```
+For more information, see [View pull requests in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [ListPullRequests](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/list-pull-requests.html) in *AWS CLI Command Reference*.
 
 ### `list-repositories-for-approval-rule-template`
@@ -1799,8 +1832,7 @@ The following code example shows how to use `list-repositories`.
 
 **AWS CLI**
 **To view a list of repositories**
-This example lists all AWS CodeCommit repositories associated with the user's AWS account.
-Command:
+The following `list-repositories` example lists all AWS CodeCommit repositories associated with the user's AWS account.
 
 ```
 aws codecommit list-repositories
@@ -1809,18 +1841,19 @@ Output:
 
 ```
 {
-  "repositories": [
-      {
-         "repositoryName": "MyDemoRepo"
-         "repositoryId": "f7579e13-b83e-4027-aaef-650c0EXAMPLE",
-      },
-      {
-         "repositoryName": "MyOtherDemoRepo"
-         "repositoryId": "cfc29ac4-b0cb-44dc-9990-f6f51EXAMPLE"
-      }
-  ]
+    "repositories": [
+        {
+            "repositoryName": "MyDemoRepo",
+            "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+        },
+        {
+            "repositoryName": "MyOtherDemoRepo",
+            "repositoryId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+        }
+    ]
 }
 ```
+For more information, see [View CodeCommit repository details](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-view-repository-details.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [ListRepositories](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/list-repositories.html) in *AWS CLI Command Reference*.
 
 ### `list-tags-for-resource`
@@ -1834,7 +1867,7 @@ The following `list-tags-for-resource` example lists tag keys and tag values for
 
 ```
 aws codecommit list-tags-for-resource \
-    --resource-arn {{arn:aws:codecommit:us-west-2:111111111111:MyDemoRepo}}
+    --resource-arn {{arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo}}
 ```
 Output:
 
@@ -1917,7 +1950,8 @@ The following `merge-branches-by-three-way` example merges the specified source 
 aws codecommit merge-branches-by-three-way \
     --source-commit-specifier {{main}} \
     --destination-commit-specifier {{bugfix-bug1234}} \
-    --author-name {{"Jorge Souza"}} --email {{"jorge_souza@example.com"}} \
+    --author-name {{"Jorge Souza"}} \
+    --email {{"jorge_souza@example.com"}} \
     --commit-message {{"Merging changes from main to bugfix branch before additional testing."}} \
     --repository-name {{MyDemoRepo}}
 ```
@@ -1939,7 +1973,7 @@ The following code example shows how to use `merge-pull-request-by-fast-forward`
 
 **AWS CLI**
 **To merge and close a pull request**
-This example demonstrates how to merge and close a pull request with the ID of '47' and a source commit ID of '99132ab0EXAMPLE' in a repository named `MyDemoRepo`.
+The following `merge-pull-request-by-fast-forward` example merges and closes a pull request with the ID of `47` and a source commit ID of `99132ab0EXAMPLE` in a repository named `MyDemoRepo`.
 
 ```
 aws codecommit merge-pull-request-by-fast-forward \
@@ -2006,7 +2040,8 @@ aws codecommit merge-pull-request-by-squash \
     --repository-name {{MyDemoRepo}} \
     --conflict-detail-level {{LINE_LEVEL}} \
     --conflict-resolution-strategy {{ACCEPT_SOURCE}} \
-    --name {{"Jorge Souza"}} --email {{"jorge_souza@example.com"}} \
+    --name {{"Jorge Souza"}} \
+    --email {{"jorge_souza@example.com"}} \
     --commit-message {{"Merging pull request 47 by squash and accepting source in merge conflicts"}}
 ```
 Output:
@@ -2147,7 +2182,7 @@ The following code example shows how to use `post-comment-for-compared-commit`.
 
 **AWS CLI**
 **To create a comment on a commit**
-This example demonstrates how to add the comment `"Can you add a test case for this?"` on the change to the `cl_sample.js` file in the comparison between two commits in a repository named `MyDemoRepo`.
+The following `post-comment-for-compared-commit` example adds the comment `"Can you add a test case for this?"` on the change to the `cl_sample.js` file in the comparison between two commits in a repository named `MyDemoRepo`.
 
 ```
 aws codecommit post-comment-for-compared-commit \
@@ -2167,26 +2202,26 @@ Output:
     "beforeBlobId": "80906a4cEXAMPLE",
     "beforeCommitId": "6e147360EXAMPLE",
     "comment": {
-        "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+        "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
         "clientRequestToken": "",
         "commentId": "553b509bEXAMPLE56198325",
         "content": "Can you add a test case for this?",
         "creationDate": 1508369612.203,
         "deleted": false,
-        "commentId": "abc123-EXAMPLE",
+        "inReplyTo": "abc123-EXAMPLE",
         "lastModifiedDate": 1508369612.203,
         "callerReactions": [],
-        "reactionCounts": []
+        "reactionCounts": {}
     },
     "location": {
         "filePath": "cl_sample.js",
         "filePosition": 1232,
         "relativeFileVersion": "AFTER"
-    ,
+    },
     "repositoryName": "MyDemoRepo"
-    }
 }
 ```
+For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [PostCommentForComparedCommit](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/post-comment-for-compared-commit.html) in *AWS CLI Command Reference*.
 
 ### `post-comment-for-pull-request`
@@ -2212,31 +2247,31 @@ Output:
 
 ```
 {
-     "afterBlobId": "1f330709EXAMPLE",
-     "afterCommitId": "5d036259EXAMPLE",
-     "beforeBlobId": "80906a4cEXAMPLE",
-     "beforeCommitId": "317f8570EXAMPLE",
-     "comment": {
-            "authorArn": "arn:aws:iam::111111111111:user/Saanvi_Sarkar",
-            "clientRequestToken": "123Example",
-            "commentId": "abcd1234EXAMPLEb5678efgh",
-            "content": "These don't appear to be used anywhere. Can we remove them?",
-            "creationDate": 1508369622.123,
-            "deleted": false,
-            "CommentId": "",
-            "lastModifiedDate": 1508369622.123,
-            "callerReactions": [],
-            "reactionCounts": []
-        },
-        "location": {
-            "filePath": "ahs_count.py",
-            "filePosition": 367,
-            "relativeFileVersion": "AFTER"
-         },
-     "repositoryName": "MyDemoRepo",
-     "pullRequestId": "47"
+    "afterBlobId": "1f330709EXAMPLE",
+    "afterCommitId": "5d036259EXAMPLE",
+    "beforeBlobId": "80906a4cEXAMPLE",
+    "beforeCommitId": "317f8570EXAMPLE",
+    "comment": {
+        "authorArn": "arn:aws:iam::123456789012:user/Saanvi_Sarkar",
+        "clientRequestToken": "123Example",
+        "commentId": "abcd1234EXAMPLEb5678efgh",
+        "content": "These don't appear to be used anywhere. Can we remove them?",
+        "creationDate": 1508369622.123,
+        "deleted": false,
+        "lastModifiedDate": 1508369622.123,
+        "callerReactions": [],
+        "reactionCounts": {}
+    },
+    "location": {
+        "filePath": "ahs_count.py",
+        "filePosition": 367,
+        "relativeFileVersion": "AFTER"
+    },
+    "repositoryName": "MyDemoRepo",
+    "pullRequestId": "47"
 }
 ```
+For more information, see [Review a pull request](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-review-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [PostCommentForPullRequest](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/post-comment-for-pull-request.html) in *AWS CLI Command Reference*.
 
 ### `post-comment-reply`
@@ -2246,7 +2281,7 @@ The following code example shows how to use `post-comment-reply`.
 
 **AWS CLI**
 **To reply to a comment on a commit or in a pull request**
-This example demonstrates how to add the reply `"Good catch. I'll remove them."` to the comment with the system-generated ID of `abcd1234EXAMPLEb5678efgh`.
+The following `post-comment-reply` example adds the reply `"Good catch. I'll remove them."` to the comment with the system-generated ID of `abcd1234EXAMPLEb5678efgh`.
 
 ```
 aws codecommit post-comment-reply \
@@ -2259,19 +2294,20 @@ Output:
 ```
 {
     "comment": {
-        "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+        "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
         "clientRequestToken": "123Example",
         "commentId": "442b498bEXAMPLE5756813",
         "content": "Good catch. I'll remove them.",
         "creationDate": 1508369829.136,
         "deleted": false,
-        "CommentId": "abcd1234EXAMPLEb5678efgh",
+        "inReplyTo": "abcd1234EXAMPLEb5678efgh",
         "lastModifiedDate": 150836912.221,
         "callerReactions": [],
-        "reactionCounts": []
+        "reactionCounts": {}
     }
 }
 ```
+For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [PostCommentReply](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/post-comment-reply.html) in *AWS CLI Command Reference*.
 
 ### `put-comment-reaction`
@@ -2321,6 +2357,7 @@ Output:
     "treeId": "347a3408EXAMPLE"
 }
 ```
+For more information, see [Create or add a file to an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-create-file.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [PutFile](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/put-file.html) in *AWS CLI Command Reference*.
 
 ### `put-repository-triggers`
@@ -2330,7 +2367,7 @@ The following code example shows how to use `put-repository-triggers`.
 
 **AWS CLI**
 **To add or update a trigger in a repository**
-This example demonstrates how to update triggers named 'MyFirstTrigger' and 'MySecondTrigger' using an already-created JSON file (here named MyTriggers.json) that contains the structure of all the triggers for a repository named MyDemoRepo. To learn how to get the JSON for existing triggers, see the get-repository-triggers command.
+The following `put-repository-triggers` example updates triggers named `MyFirstTrigger` and `MySecondTrigger` using an already-created JSON file (here named `MyTriggers.json`) that contains the structure of all the triggers for a repository named `MyDemoRepo`. To learn how to get the JSON for existing triggers, see the `get-repository-triggers` command.
 
 ```
 aws codecommit put-repository-triggers \
@@ -2344,7 +2381,7 @@ Contents of `MyTriggers.json`:
     "repositoryName": "MyDemoRepo",
     "triggers": [
         {
-            "destinationArn": "arn:aws:sns:us-east-1:80398EXAMPLE:MyCodeCommitTopic",
+            "destinationArn": "arn:aws:sns:us-west-2:80398EXAMPLE:MyCodeCommitTopic",
             "branches": [
                 "main",
                 "preprod"
@@ -2356,7 +2393,7 @@ Contents of `MyTriggers.json`:
             ]
         },
         {
-            "destinationArn": "arn:aws:lambda:us-east-1:111111111111:function:MyCodeCommitPythonFunction",
+            "destinationArn": "arn:aws:lambda:us-west-2:123456789012:function:MyCodeCommitPythonFunction",
             "branches": [],
             "name": "MySecondTrigger",
             "customData": "EXAMPLE",
@@ -2374,6 +2411,7 @@ Output:
     "configurationId": "6fa51cd8-35c1-EXAMPLE"
 }
 ```
+For more information, see [Edit triggers for an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify-edit.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [PutRepositoryTriggers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/put-repository-triggers.html) in *AWS CLI Command Reference*.
 
 ### `tag-resource`
@@ -2387,7 +2425,7 @@ The following `tag-resource` example tags the specified repository with two tags
 
 ```
 aws codecommit tag-resource \
-    --resource-arn {{arn:aws:codecommit:us-west-2:111111111111:MyDemoRepo}} \
+    --resource-arn {{arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo}} \
     --tags {{Status=Secret,Team=Saanvi}}
 ```
 This command produces no output.
@@ -2401,22 +2439,24 @@ The following code example shows how to use `test-repository-triggers`.
 
 **AWS CLI**
 **To test triggers in a repository**
-This example demonstrates how to test a trigger named 'MyFirstTrigger' in an AWS CodeCommit repository named MyDemoRepo. In this example, events in the repository trigger notifications from an Amazon Simple Notification Service (Amazon SNS) topic.
-Command:
+The following `test-repository-triggers` example tests a trigger named `MyFirstTrigger` in an AWS CodeCommit repository named `MyDemoRepo`. In this example, events in the repository trigger notifications from an Amazon Simple Notification Service (Amazon SNS) topic.
 
 ```
-aws codecommit test-repository-triggers --repository-name {{MyDemoRepo}} --triggers {{name=MyFirstTrigger,destinationArn=arn:aws:sns:us-east-1:111111111111:MyCodeCommitTopic,branches=mainline,preprod,events=all}}
+aws codecommit test-repository-triggers \
+    --repository-name {{MyDemoRepo}} \
+    --triggers {{name=MyFirstTrigger,destinationArn=arn:aws:sns:us-west-2:123456789012:MyCodeCommitTopic,branches=mainline,preprod,events=all}}
 ```
 Output:
 
 ```
 {
-  "successfulExecutions": [
-      "MyFirstTrigger"
-  ],
-  "failedExecutions": []
+    "successfulExecutions": [
+        "MyFirstTrigger"
+    ],
+    "failedExecutions": []
 }
 ```
+For more information, see [Test triggers for an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notify-test.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [TestRepositoryTriggers](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/test-repository-triggers.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -2430,7 +2470,7 @@ The following `untag-resource` example removes the tag with the specified key fr
 
 ```
 aws codecommit untag-resource \
-    --resource-arn {{arn:aws:codecommit:us-west-2:111111111111:MyDemoRepo}} \
+    --resource-arn {{arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo}} \
     --tag-keys {{Status}}
 ```
 This command produces no output.
@@ -2477,7 +2517,7 @@ The following code example shows how to use `update-approval-rule-template-descr
 
 **AWS CLI**
 **To update the description of an approval rule template**
-The following `update-approval-rule-template-description` example changes the description of the specified approval rule template to `Requires 1 approval for all pull requests from the CodeCommitReview pool`.:
+The following `update-approval-rule-template-description` example changes the description of the specified approval rule template to `Requires 1 approval for all pull requests from the CodeCommitReview pool`.
 
 ```
 aws codecommit update-approval-rule-template-description \
@@ -2488,16 +2528,16 @@ Output:
 
 ```
 {
-  "approvalRuleTemplate": {
-    "creationDate": 1571352720.773,
-    "approvalRuleTemplateDescription": "Requires 1 approval for all pull requests from the CodeCommitReview pool",
-    "lastModifiedDate": 1571358728.41,
-    "approvalRuleTemplateId": "41de97b7-EXAMPLE",
-    "approvalRuleTemplateContent": "{\"Version\": \"2018-11-08\",\"Statements\": [{\"Type\": \"Approvers\",\"NumberOfApprovalsNeeded\": 1,\"ApprovalPoolMembers\": [\"arn:aws:sts::123456789012:assumed-role/CodeCommitReview/*\"]}]}",
-    "approvalRuleTemplateName": "1-approver-rule-for-all-pull-requests",
-    "ruleContentSha256": "2f6c21a5EXAMPLE",
-    "lastModifiedUser": "arn:aws:iam::123456789012:user/Li_Juan"
-  }
+    "approvalRuleTemplate": {
+        "creationDate": 1571352720.773,
+        "approvalRuleTemplateDescription": "Requires 1 approval for all pull requests from the CodeCommitReview pool",
+        "lastModifiedDate": 1571358728.41,
+        "approvalRuleTemplateId": "41de97b7-EXAMPLE",
+        "approvalRuleTemplateContent": "{\"Version\": \"2018-11-08\",\"Statements\": [{\"Type\": \"Approvers\",\"NumberOfApprovalsNeeded\": 1,\"ApprovalPoolMembers\": [\"arn:aws:sts::123456789012:assumed-role/CodeCommitReview/*\"]}]}",
+        "approvalRuleTemplateName": "1-approver-rule-for-all-pull-requests",
+        "ruleContentSha256": "2f6c21a5EXAMPLE",
+        "lastModifiedUser": "arn:aws:iam::123456789012:user/Li_Juan"
+    }
 }
 ```
 For more information, see [Manage Approval Rule Templates](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-manage-templates.html#update-template-description) in the *AWS CodeCommit User Guide*.
@@ -2521,16 +2561,16 @@ Output:
 
 ```
 {
-  "approvalRuleTemplate": {
-    "approvalRuleTemplateName": "1-approver-rule-for-all-pull-requests",
-    "lastModifiedDate": 1571358241.619,
-    "approvalRuleTemplateId": "41de97b7-EXAMPLE",
-    "approvalRuleTemplateContent": "{\"Version\": \"2018-11-08\",\"Statements\": [{\"Type\": \"Approvers\",\"NumberOfApprovalsNeeded\": 1,\"ApprovalPoolMembers\": [\"arn:aws:sts::123456789012:assumed-role/CodeCommitReview/*\"]}]}",
-    "creationDate": 1571352720.773,
-    "lastModifiedUser": "arn:aws:iam::123456789012:user/Mary_Major",
-    "approvalRuleTemplateDescription": "All pull requests must be approved by one developer on the team.",
-    "ruleContentSha256": "2f6c21a5cEXAMPLE"
-  }
+    "approvalRuleTemplate": {
+        "approvalRuleTemplateName": "1-approver-rule-for-all-pull-requests",
+        "lastModifiedDate": 1571358241.619,
+        "approvalRuleTemplateId": "41de97b7-EXAMPLE",
+        "approvalRuleTemplateContent": "{\"Version\": \"2018-11-08\",\"Statements\": [{\"Type\": \"Approvers\",\"NumberOfApprovalsNeeded\": 1,\"ApprovalPoolMembers\": [\"arn:aws:sts::123456789012:assumed-role/CodeCommitReview/*\"]}]}",
+        "creationDate": 1571352720.773,
+        "lastModifiedUser": "arn:aws:iam::123456789012:user/Mary_Major",
+        "approvalRuleTemplateDescription": "All pull requests must be approved by one developer on the team.",
+        "ruleContentSha256": "2f6c21a5cEXAMPLE"
+    }
 }
 ```
 For more information, see [Manage Approval Rule Templates](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-manage-templates.html#update-template-description) in the *AWS CodeCommit User Guide*.
@@ -2543,7 +2583,7 @@ The following code example shows how to use `update-comment`.
 
 **AWS CLI**
 **To update a comment on a commit**
-This example demonstrates how to add the content `"Fixed as requested. I'll update the pull request."` to a comment with an ID of `442b498bEXAMPLE5756813`.
+The following `update-comment` example adds the content `"Fixed as requested. I'll update the pull request."` to a comment with an ID of `442b498bEXAMPLE5756813`.
 
 ```
 aws codecommit update-comment \
@@ -2555,7 +2595,7 @@ Output:
 ```
 {
     "comment": {
-        "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+        "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
         "clientRequestToken": "",
         "commentId": "442b498bEXAMPLE5756813",
         "content": "Fixed as requested. I'll update the pull request.",
@@ -2570,6 +2610,7 @@ Output:
     }
 }
 ```
+For more information, see [Comment on a commit in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-commit-comment.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdateComment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-comment.html) in *AWS CLI Command Reference*.
 
 ### `update-default-branch`
@@ -2579,17 +2620,15 @@ The following code example shows how to use `update-default-branch`.
 
 **AWS CLI**
 **To change the default branch for a repository**
-This example changes the default branch for an AWS CodeCommit repository. This command produces output only if there are errors.
-Command:
+The following `update-default-branch` example changes the default branch for an AWS CodeCommit repository.
 
 ```
-aws codecommit update-default-branch --repository-name {{MyDemoRepo}} --default-branch-name {{MyNewBranch}}
+aws codecommit update-default-branch \
+    --repository-name {{MyDemoRepo}} \
+    --default-branch-name {{MyNewBranch}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Change branch settings in AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-change-branch.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdateDefaultBranch](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-default-branch.html) in *AWS CLI Command Reference*.
 
 ### `update-pull-request-approval-rule-content`
@@ -2617,9 +2656,9 @@ Output:
         "originApprovalRuleTemplate": {},
         "creationDate": 1570752871.932,
         "lastModifiedDate": 1570754058.333,
-        "approvalRuleName": Require two approved approvers",
+        "approvalRuleName": "Require two approved approvers",
         "lastModifiedUser": "arn:aws:iam::123456789012:user/Mary_Major",
-        "ruleContentSha256": "cd93921cEXAMPLE",
+        "ruleContentSha256": "cd93921cEXAMPLE"
     }
 }
 ```
@@ -2652,7 +2691,7 @@ The following code example shows how to use `update-pull-request-description`.
 
 **AWS CLI**
 **To change the description of a pull request**
-This example demonstrates how to change the description of a pull request with the ID of `47`.
+The following `update-pull-request-description` example changes the description of a pull request with the ID of `47`.
 
 ```
 aws codecommit update-pull-request-description \
@@ -2664,7 +2703,7 @@ Output:
 ```
 {
     "pullRequest": {
-        "authorArn": "arn:aws:iam::111111111111:user/Li_Juan",
+        "authorArn": "arn:aws:iam::123456789012:user/Li_Juan",
         "clientRequestToken": "",
         "creationDate": 1508530823.155,
         "description": "Updated the pull request to remove unused global variable.",
@@ -2676,7 +2715,7 @@ Output:
                 "destinationCommit": "9f31c968EXAMPLE",
                 "destinationReference": "refs/heads/main",
                 "mergeMetadata": {
-                    "isMerged": false,
+                    "isMerged": false
                 },
                 "repositoryName": "MyDemoRepo",
                 "sourceCommit": "99132ab0EXAMPLE",
@@ -2687,6 +2726,7 @@ Output:
     }
 }
 ```
+For more information, see [Update a pull request](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-update-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdatePullRequestDescription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-pull-request-description.html) in *AWS CLI Command Reference*.
 
 ### `update-pull-request-status`
@@ -2696,7 +2736,7 @@ The following code example shows how to use `update-pull-request-status`.
 
 **AWS CLI**
 **To change the status of a pull request**
-This example demonstrates how to to change the status of a pull request with the ID of `42` to a status of `CLOSED` in an AWS CodeCommit repository named `MyDemoRepo`.
+The following `update-pull-request-status` example changes the status of a pull request with the ID of `42` to a status of `CLOSED` in an AWS CodeCommit repository named `MyDemoRepo`.
 
 ```
 aws codecommit update-pull-request-status \
@@ -2731,7 +2771,7 @@ Output:
                 "destinationCommit": "9f31c968EXAMPLE",
                 "destinationReference": "refs/heads/main",
                 "mergeMetadata": {
-                    "isMerged": false,
+                    "isMerged": false
                 },
                 "repositoryName": "MyDemoRepo",
                 "sourceCommit": "99132ab0EXAMPLE",
@@ -2742,6 +2782,7 @@ Output:
     }
 }
 ```
+For more information, see [Close a pull request in an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-close-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdatePullRequestStatus](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-pull-request-status.html) in *AWS CLI Command Reference*.
 
 ### `update-pull-request-title`
@@ -2751,7 +2792,7 @@ The following code example shows how to use `update-pull-request-title`.
 
 **AWS CLI**
 **To change the title of a pull request**
-This example demonstrates how to change the title of a pull request with the ID of `47`.
+The following `update-pull-request-title` example changes the title of a pull request with the ID of `47`.
 
 ```
 aws codecommit update-pull-request-title \
@@ -2790,7 +2831,7 @@ Output:
                 "destinationCommit": "9f31c968EXAMPLE",
                 "destinationReference": "refs/heads/main",
                 "mergeMetadata": {
-                    "isMerged": false,
+                    "isMerged": false
                 },
                 "repositoryName": "MyDemoRepo",
                 "sourceCommit": "99132ab0EXAMPLE",
@@ -2801,6 +2842,7 @@ Output:
     }
 }
 ```
+For more information, see [Update a pull request](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-update-pull-request.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdatePullRequestTitle](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-pull-request-title.html) in *AWS CLI Command Reference*.
 
 ### `update-repository-description`
@@ -2810,17 +2852,15 @@ The following code example shows how to use `update-repository-description`.
 
 **AWS CLI**
 **To change the description for a repository**
-This example changes the description for an AWS CodeCommit repository. This command produces output only if there are errors.
-Command:
+The following `update-repository-description` example changes the description for an AWS CodeCommit repository.
 
 ```
-aws codecommit update-repository-description --repository-name {{MyDemoRepo}} --repository-description {{"This description was changed"}}
+aws codecommit update-repository-description \
+    --repository-name {{MyDemoRepo}} \
+    --repository-description {{"This description was changed"}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Change AWS CodeCommit repository settings](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-change-repository.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdateRepositoryDescription](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-repository-description.html) in *AWS CLI Command Reference*.
 
 ### `update-repository-name`
@@ -2830,15 +2870,13 @@ The following code example shows how to use `update-repository-name`.
 
 **AWS CLI**
 **To change the name of a repository**
-This example changes the name of an AWS CodeCommit repository. This command produces output only if there are errors. Changing the name of the AWS CodeCommit repository will change the SSH and HTTPS URLs that users need to connect to the repository. Users will not be able to connect to this repository until they update their connection settings. Also, because the repository's ARN will change, changing the repository name will invalidate any IAM user policies that rely on this repository's ARN.
-Command:
+The following `update-repository-name` example changes the name of an AWS CodeCommit repository. Changing the name of the AWS CodeCommit repository will change the SSH and HTTPS URLs that users need to connect to the repository. Users will not be able to connect to this repository until they update their connection settings. Also, because the repository's ARN will change, changing the repository name will invalidate any IAM user policies that rely on this repository's ARN.
 
 ```
-aws codecommit update-repository-name --old-name {{MyDemoRepo}} --new-name {{MyRenamedDemoRepo}}
+aws codecommit update-repository-name \
+    --old-name {{MyDemoRepo}} \
+    --new-name {{MyRenamedDemoRepo}}
 ```
-Output:
-
-```
-None.
-```
+This command produces no output.
+For more information, see [Change AWS CodeCommit repository settings](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-change-repository.html) in the *AWS CodeCommit User Guide*.
 +  For API details, see [UpdateRepositoryName](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codecommit/update-repository-name.html) in *AWS CLI Command Reference*.

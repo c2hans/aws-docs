@@ -30,16 +30,16 @@ The following `associate-default-view` example sets a view, as specified by its 
 
 ```
 aws resource-explorer-2 associate-default-view \
-    --view-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-Main-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}}
+    --view-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-Main-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-Main-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+    "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-Main-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Setting a default view in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-set-default.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Setting a default view in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-set-default.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [AssociateDefaultView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/associate-default-view.html) in *AWS CLI Command Reference*.
 
 ### `batch-get-view`
@@ -53,8 +53,7 @@ The following `batch-get-view` example displays the details about two views spec
 
 ```
 aws resource-explorer-2 batch-get-view \
-    --view-arns {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222,}} \
-                {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-Main-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}}
+    --view-arns {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-Main-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -73,7 +72,7 @@ Output:
             "LastUpdatedAt": "2022-07-13T21:33:45.249000+00:00",
             "Owner": "123456789012",
             "Scope": "arn:aws:iam::123456789012:root",
-            "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222"
+            "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         {
             "Filters": {
@@ -87,13 +86,13 @@ Output:
             "LastUpdatedAt": "2022-07-13T20:34:11.314000+00:00",
             "Owner": "123456789012",
             "Scope": "arn:aws:iam::123456789012:root",
-            "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-Main-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+            "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-Main-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
         }
-    ]
+    ],
     "Errors": []
 }
 ```
-For more information about views, see [About Resource Explorer views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-about.html) in the *AWS Resource Explorer Users Guide*.
+For more information about views, see [Working with views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/views.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [BatchGetView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/batch-get-view.html) in *AWS CLI Command Reference*.
 
 ### `create-index`
@@ -106,20 +105,19 @@ The following code example shows how to use `create-index`.
 The following `create-index` example creates a local index in the AWS Region in which the operation is called. The AWS CLI automatically generates a random `client-token` parameter value and includes it in the call to AWS if you don't specify a value.
 
 ```
-aws resource-explorer-2 create-index \
-    --region {{us-east-1}}
+aws resource-explorer-2 create-index
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:resource-explorer-2:us-east-1:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222c",
+    "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222c",
     "CreatedAt": "2022-11-01T20:00:59.149Z",
     "State": "CREATING"
 }
 ```
 After you create a local index, you can convert it into the aggregator index for the account by running the [update-index-type](https://docs.aws.amazon.com/cli/latest/reference/resource-explorer-2/update-index-type.html) command.
-For more information, see [Turning on Resource Explorer in an AWS Region to index your resources](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-service-register.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Creating user-owned indexes for enhanced Resource Explorer functionality](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-service-turn-on-region.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [CreateIndex](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/create-index.html) in *AWS CLI Command Reference*.
 
 ### `create-view`
@@ -135,7 +133,7 @@ The following `create-view` example creates a view in the specified AWS Region t
 aws resource-explorer-2 create-view \
     --view-name {{My-Main-View}} \
     --included-properties {{Name=tags}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
@@ -153,19 +151,19 @@ Output:
         "LastUpdatedAt": "2022-07-13T20:34:11.314000+00:00",
         "Owner": "123456789012",
         "Scope": "arn:aws:iam::123456789012:root",
-        "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-Main-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+        "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-Main-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
 **Example 2: To create a view that returns only resources associated with Amazon EC2**
-The following `create-view` creates a view in AWS Region `us-east-1` that returns only those resources in the Region that are associated with the Amazon EC2 service. The view includes the optional `Tags` field on returned results. Because this view is created in the Region that contains the aggregator index, it can include results from all Regions in the account that contain a Resource Explorer index.
+The following `create-view` example creates a view in AWS Region `us-west-2` that returns only those resources in the Region that are associated with the Amazon EC2 service. The view includes the optional `Tags` field on returned results. Because this view is created in the Region that contains the aggregator index, it can include results from all Regions in the account that contain a Resource Explorer index.
 
 ```
 aws resource-explorer-2 create-view \
     --view-name {{My-EC2-Only-View}} \
     --included-properties {{Name=tags}} \
     --filters FilterString="service:ec2" \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
@@ -183,11 +181,11 @@ Output:
         "LastUpdatedAt": "2022-07-13T21:35:09.059Z",
         "Owner": "123456789012",
         "Scope": "arn:aws:iam::123456789012:root",
-        "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222"
+        "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     }
 }
 ```
-For more information, see [Creating views for search](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-create.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Creating Resource Explorer views to use for search](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-create.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [CreateView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/create-view.html) in *AWS CLI Command Reference*.
 
 ### `delete-index`
@@ -201,18 +199,18 @@ The following `delete-index` example deletes the specified Resource Explorer ind
 
 ```
 aws resource-explorer-2 delete-index \
-    --arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222}} \
+    --arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --region {{us-west-2}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222",
+    "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "State": "DELETING"
 }
 ```
-For more information about deleting an index, see [Turning off AWS Resource Explorer in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-service-deregister.html) in the *AWS Resource Explorer Users Guide*.
+For more information about deleting an index, see [Turning off Resource Explorer](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-service-turn-off.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [DeleteIndex](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/delete-index.html) in *AWS CLI Command Reference*.
 
 ### `delete-view`
@@ -226,16 +224,16 @@ The following `delete-view` example deletes a view specified by its ARN.
 
 ```
 aws resource-explorer-2 delete-view \
-    --view-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}}
+    --view-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-    "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+    "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Deleting views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-delete.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Deleting views in Resource Explorer](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-delete.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [DeleteView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/delete-view.html) in *AWS CLI Command Reference*.
 
 ### `disassociate-default-view`
@@ -245,13 +243,13 @@ The following code example shows how to use `disassociate-default-view`.
 
 **AWS CLI**
 **To remove the default Resource Explorer view for an AWS Region**
-The following `disassociate-default-view` removes the default Resource Explorer view for the AWS Region in which you call the operation. After performing this operation, all search operations in the Region must explicitly specify a view or the operation fails.
+The following `disassociate-default-view` example removes the default Resource Explorer view for the AWS Region in which you call the operation. After performing this operation, all search operations in the Region must explicitly specify a view or the operation fails.
 
 ```
 aws resource-explorer-2 disassociate-default-view
 ```
 This command produces no output.
-For more information, see [Setting a default view in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-set-default.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Setting a default view in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-set-default.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [DisassociateDefaultView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/disassociate-default-view.html) in *AWS CLI Command Reference*.
 
 ### `get-default-view`
@@ -270,10 +268,10 @@ Output:
 
 ```
 {
-    "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/default-view/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+    "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/default-view/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
-For more information, see [Setting a default view in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-set-default.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Setting a default view in an AWS Region](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-set-default.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [GetDefaultView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/get-default-view.html) in *AWS CLI Command Reference*.
 
 ### `get-index`
@@ -293,7 +291,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:resource-explorer-2:us-east-1:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111",
+    "Arn": "arn:aws:resource-explorer-2:us-east-1:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "CreatedAt": "2022-07-12T18:59:10.503000+00:00",
     "LastUpdatedAt": "2022-07-13T18:41:58.799000+00:00",
     "ReplicatingFrom": [
@@ -316,7 +314,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222",
+    "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
     "CreatedAt": "2022-07-12T18:59:10.503000+00:00",
     "LastUpdatedAt": "2022-07-13T18:41:58.799000+00:00",
     "ReplicatingTo": [
@@ -341,14 +339,14 @@ The following `get-view` example displays the details about a view specified by 
 
 ```
 aws resource-explorer-2 get-view \
-    --view-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}}
+    --view-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
-  "Tags" : {},
-  "View" : {
+    "Tags" : {},
+    "View" : {
         "Filters" : {
             "FilterString" : "service:ec2"
         },
@@ -360,11 +358,11 @@ Output:
         "LastUpdatedAt" : "2022-07-13T21:33:45.249Z",
         "Owner" : "123456789012",
         "Scope" : "arn:aws:iam::123456789012:root",
-        "ViewArn" : "arn:aws:resource-explorer-2:us-east-1:123456789012:view/EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
-  }
+        "ViewArn" : "arn:aws:resource-explorer-2:us-west-2:123456789012:view/EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
+    }
 }
 ```
-For more information about views, see [About Resource Explorer views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-about.html) in the *AWS Resource Explorer Users Guide*.
+For more information about views, see [Working with views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/views.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [GetView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/get-view.html) in *AWS CLI Command Reference*.
 
 ### `list-indexes`
@@ -385,22 +383,22 @@ Output:
 {
     "Indexes": [
         {
-            "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111",
+            "Arn": "arn:aws:resource-explorer-2:us-west-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "Region": "us-west-2",
             "Type": "AGGREGATOR"
         },
         {
-            "Arn": "arn:aws:resource-explorer-2:us-east-1:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222",
+            "Arn": "arn:aws:resource-explorer-2:us-east-1:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "Region": "us-east-1",
             "Type": "LOCAL"
         },
         {
-            "Arn": "arn:aws:resource-explorer-2:us-east-2:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE33333",
+            "Arn": "arn:aws:resource-explorer-2:us-east-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "Region": "us-east-2",
             "Type": "LOCAL"
         },
         {
-            "Arn": "arn:aws:resource-explorer-2:us-west-1:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE44444",
+            "Arn": "arn:aws:resource-explorer-2:us-west-1:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE44444",
             "Region": "us-west-1",
             "Type": "LOCAL"
         }
@@ -542,7 +540,7 @@ The following `list-tags-for-resource` example lists the tag key and value pairs
 
 ```
 aws resource-explorer-2 list-tags-for-resource \
-    --resource-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}}
+    --resource-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -554,7 +552,7 @@ Output:
     }
 }
 ```
-For more information about tagging views, see [Tagging views for access control](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-tag.html) in the *AWS Resource Explorer Users Guide*.
+For more information about tagging views, see [Adding tags to views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-tag.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [ListTagsForResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/list-tags-for-resource.html) in *AWS CLI Command Reference*.
 
 ### `list-views`
@@ -574,13 +572,13 @@ Output:
 ```
 {
     "Views": [
-        "arn:aws:resource-explorer-2:us-east-1:123456789012:view/EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111",
-        "arn:aws:resource-explorer-2:us-east-1:123456789012:view/Default-All-Resources-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222",
-        "arn:aws:resource-explorer-2:us-east-1:123456789012:view/Production-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE33333"
+        "arn:aws:resource-explorer-2:us-west-2:123456789012:view/EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "arn:aws:resource-explorer-2:us-west-2:123456789012:view/Default-All-Resources-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+        "arn:aws:resource-explorer-2:us-west-2:123456789012:view/Production-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE33333"
     ]
 }
 ```
-For more information about views, see [About Resource Explorer views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-about.html) in the *AWS Resource Explorer Users Guide*.
+For more information about views, see [Working with views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/views.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [ListViews](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/list-views.html) in *AWS CLI Command Reference*.
 
 ### `search`
@@ -621,10 +619,8 @@ Output:
         "Region": "global",
         "ResourceType": "iam:policy",
         "Service": "iam"
-    }, {
-       ... TRUNCATED FOR BREVITY ...
     }],
-    "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/my-default-view/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+    "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/my-default-view/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 **Example 2: To search using a specified view**
@@ -633,80 +629,73 @@ The following `search` example search displays all resources ("\*") in the speci
 ```
 aws resource-explorer-2 search \
     --query-string {{"*"}} \
-    --view-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-EC2-view/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222}}
+    --view-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-EC2-view/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
 ```
-HTTP/1.1 200 OK
-Date: Tue, 01 Nov 2022 20:00:59 GMT
-Content-Type: application/json
-Content-Length: <PayloadSizeBytes>
-
-    {
-        "Count": {
-            "Complete": true,
-            "TotalResources": 67
-        },
-        "Resources": [{
-            "Arn": "arn:aws:ec2:us-east-1:123456789012:network-acl/acl-1a2b3c4d",
-            "LastReportedAt": "2022-07-21T18:52:02Z",
-            "OwningAccountId": "123456789012",
-            "Properties": [{
-                "Data": [{
-                    "Key": "Department",
-                    "Value": "AppDevelopment"
-                }, {
-                    "Key": "Environment",
-                    "Value": "Production"
-                }],
-                "LastReportedAt": "2021-11-15T14:48:29Z",
-                "Name": "tags"
+{
+    "Count": {
+        "Complete": true,
+        "TotalResources": 67
+    },
+    "Resources": [{
+        "Arn": "arn:aws:ec2:us-west-2:123456789012:network-acl/acl-1a2b3c4d",
+        "LastReportedAt": "2022-07-21T18:52:02Z",
+        "OwningAccountId": "123456789012",
+        "Properties": [{
+            "Data": [{
+                "Key": "Department",
+                "Value": "AppDevelopment"
+            }, {
+                "Key": "Environment",
+                "Value": "Production"
             }],
-            "Region": "us-east-1",
-            "ResourceType": "ec2:network-acl",
-            "Service": "ec2"
-        }, {
-            "Arn": "arn:aws:ec2:us-east-1:123456789012:subnet/subnet-1a2b3c4d",
-            "LastReportedAt": "2022-07-21T21:22:23Z",
-            "OwningAccountId": "123456789012",
-            "Properties": [{
-                "Data": [{
-                    "Key": "Department",
-                    "Value": "AppDevelopment"
-                }, {
-                    "Key": "Environment",
-                    "Value": "Production"
-                }],
-                "LastReportedAt": "2021-07-29T19:02:39Z",
-                "Name": "tags"
-            }],
-            "Region": "us-east-1",
-            "ResourceType": "ec2:subnet",
-            "Service": "ec2"
-        }, {
-            "Arn": "arn:aws:ec2:us-east-1:123456789012:dhcp-options/dopt-1a2b3c4d",
-            "LastReportedAt": "2022-07-21T06:08:53Z",
-            "OwningAccountId": "123456789012",
-            "Properties": [{
-                "Data": [{
-                    "Key": "Department",
-                    "Value": "AppDevelopment"
-                }, {
-                    "Key": "Environment",
-                    "Value": "Production"
-                }],
-                "LastReportedAt": "2021-11-15T15:11:05Z",
-                "Name": "tags"
-            }],
-            "Region": "us-east-1",
-            "ResourceType": "ec2:dhcpoptions",
-            "Service": "ec2"
-        }, {
-            ... TRUNCATED FOR BREVITY ...
+            "LastReportedAt": "2021-11-15T14:48:29Z",
+            "Name": "tags"
         }],
-        "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-EC2-view/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222"
-    }
+        "Region": "us-west-2",
+        "ResourceType": "ec2:network-acl",
+        "Service": "ec2"
+    }, {
+        "Arn": "arn:aws:ec2:us-west-2:123456789012:subnet/subnet-1a2b3c4d",
+        "LastReportedAt": "2022-07-21T21:22:23Z",
+        "OwningAccountId": "123456789012",
+        "Properties": [{
+            "Data": [{
+                "Key": "Department",
+                "Value": "AppDevelopment"
+            }, {
+                "Key": "Environment",
+                "Value": "Production"
+            }],
+            "LastReportedAt": "2021-07-29T19:02:39Z",
+            "Name": "tags"
+        }],
+        "Region": "us-west-2",
+        "ResourceType": "ec2:subnet",
+        "Service": "ec2"
+    }, {
+        "Arn": "arn:aws:ec2:us-west-2:123456789012:dhcp-options/dopt-1a2b3c4d",
+        "LastReportedAt": "2022-07-21T06:08:53Z",
+        "OwningAccountId": "123456789012",
+        "Properties": [{
+            "Data": [{
+                "Key": "Department",
+                "Value": "AppDevelopment"
+            }, {
+                "Key": "Environment",
+                "Value": "Production"
+            }],
+            "LastReportedAt": "2021-11-15T15:11:05Z",
+            "Name": "tags"
+        }],
+        "Region": "us-west-2",
+        "ResourceType": "ec2:dhcpoptions",
+        "Service": "ec2"
+    }],
+    "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-EC2-view/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
+}
 ```
 For more information, see [Using AWS Resource Explorer to search for resources](https://docs.aws.amazon.com/resource-explorer/latest/userguide/using-search.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [Search](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/search.html) in *AWS CLI Command Reference*.
@@ -722,11 +711,11 @@ The following `tag-resource` example adds the tag key "environment" with the val
 
 ```
 aws resource-explorer-2 tag-resource \
-    --resource-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-View//EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}} \
+    --resource-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-View//a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tags {{environment=production}}
 ```
 This command produces no output.
-For more information, see [Tagging views for access control](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-tag.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Adding tags to views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-tag.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [TagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/tag-resource.html) in *AWS CLI Command Reference*.
 
 ### `untag-resource`
@@ -740,11 +729,11 @@ The following `untag-resource` example removes any tag with the key name "enviro
 
 ```
 aws resource-explorer-2 untag-resource \
-    --resource-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-View//EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}} \
+    --resource-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-View//a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --tag-keys {{environment}}
 ```
 This command produces no output.
-For more information, see [Tagging views for access control](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-tag.html) in the *AWS Resource Explorer Users Guide*.
+For more information, see [Adding tags to views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-tag.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/untag-resource.html) in *AWS CLI Command Reference*.
 
 ### `update-index-type`
@@ -758,15 +747,15 @@ The following `update-index-type` example converts the specified index from type
 
 ```
 aws resource-explorer-2 update-index-type \
-    --arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111}} \
+    --arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
     --type {{aggregator}} \
-    --region {{us-east-1}}
+    --region {{us-west-2}}
 ```
 Output:
 
 ```
 {
-    "Arn":"arn:aws:resource-explorer-2:us-east-1:123456789012:index/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111",
+    "Arn":"arn:aws:resource-explorer-2:us-west-2:123456789012:index/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "LastUpdatedAt":"2022-07-13T18:41:58.799Z",
     "State":"updating",
     "Type":"aggregator"
@@ -787,7 +776,7 @@ The following `update-view` example updates the specified view by adding ``tags`
 ```
 aws resource-explorer-2 update-view \
     --included-properties {{Name=tags}} \
-    --view-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222}}
+    --view-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -805,7 +794,7 @@ Output:
         "LastUpdatedAt": "2022-07-19T17:41:21.710000+00:00",
         "Owner": "123456789012",
         "Scope": "arn:aws:iam::123456789012:root",
-        "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-EC2-Only-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE11111"
+        "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-EC2-Only-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
     }
 }
 ```
@@ -815,7 +804,7 @@ The following `update-view` example updates the specified view to use a filter t
 ```
 aws resource-explorer-2 update-view \
     --filters FilterString="service:ec2" \
-    --view-arn {{arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222}}
+    --view-arn {{arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}}
 ```
 Output:
 
@@ -829,9 +818,9 @@ Output:
     "LastUpdatedAt": "2022-07-19T17:41:21.710000+00:00",
         "Owner": "123456789012",
         "Scope": "arn:aws:iam::123456789012:root",
-        "ViewArn": "arn:aws:resource-explorer-2:us-east-1:123456789012:view/My-View/EXAMPLE8-90ab-cdef-fedc-EXAMPLE22222"
+        "ViewArn": "arn:aws:resource-explorer-2:us-west-2:123456789012:view/My-View/a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
     }
 }
 ```
-For more information about views, see [About Resource Explorer views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/manage-views-about.html) in the *AWS Resource Explorer Users Guide*.
+For more information about views, see [Working with views](https://docs.aws.amazon.com/resource-explorer/latest/userguide/views.html) in the *AWS Resource Explorer Users Guide*.
 +  For API details, see [UpdateView](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/resource-explorer-2/update-view.html) in *AWS CLI Command Reference*.

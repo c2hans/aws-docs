@@ -17,15 +17,17 @@ The following code examples show how to use `CreateApplication`.
 The following `create-application` example creates an application and associates it with the user's AWS account.
 
 ```
-aws deploy create-application --application-name {{MyOther_App}}
+aws deploy create-application \
+    --application-name {{MyOther_App}}
 ```
 Output:
 
 ```
 {
-    "applicationId": "a1b2c3d4-5678-90ab-cdef-11111EXAMPLE"
+    "applicationId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
+For more information, see [Create an application with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-create.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [CreateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/create-application.html) in *AWS CLI Command Reference*.
 
 ------

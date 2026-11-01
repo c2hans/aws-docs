@@ -40,11 +40,11 @@ Contents of `rule.json`:
     "EventTypeIds": [
         "codecommit-repository-branches-and-tags-created"
     ],
-    "Resource": "arn:aws:codecommit:us-east-1:123456789012:MyDemoRepo",
+    "Resource": "arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo",
     "Targets": [
         {
             "TargetType": "SNS",
-            "TargetAddress": "arn:aws:sns:us-east-1:123456789012:MyNotificationTopic"
+            "TargetAddress": "arn:aws:sns:us-west-2:123456789012:MyNotificationTopic"
         }
     ],
     "Status": "ENABLED",
@@ -55,7 +55,7 @@ Output:
 
 ```
 {
-    "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE"
+    "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE"
 }
 ```
 For more information, see [Create a Notification rule](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/notification-rule-create.html) in the *AWS Developer Tools Console User Guide*.
@@ -72,13 +72,13 @@ The following `delete-notification-rule` example deletes the specified notificat
 
 ```
 aws codestar-notifications delete-notification-rule \
-    --arn {{arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE}}
+    --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE"
+    "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE"
 }
 ```
 For more information, see [Delete a Notification Rule](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/notification-rule-delete.html) in the *AWS Developer Tools Console User Guide*.
@@ -95,7 +95,7 @@ The following `delete-target` example removes the specified target from all noti
 
 ```
 aws codestar-notifications  delete-target \
-    --target-address {{arn:aws:sns:us-east-1:123456789012:MyNotificationTopic}} \
+    --target-address {{arn:aws:sns:us-west-2:123456789012:MyNotificationTopic}} \
     --force-unsubscribe-all
 ```
 This command produces no output.
@@ -196,10 +196,10 @@ The following code example shows how to use `list-notification-rules`.
 
 **AWS CLI**
 **To retrieve a list of notification rules**
-The following `list-notification-rules` example retrieves a list of all notification rules in the specified AWS Region.
+The following `list-notification-rules` example retrieves a list of all notification rules in the current AWS Region.
 
 ```
-aws codestar-notifications list-notification-rules --region {{us-east-1}}
+aws codestar-notifications list-notification-rules
 ```
 Output:
 
@@ -208,11 +208,11 @@ Output:
     "NotificationRules": [
         {
             "Id": "dc82df7a-EXAMPLE",
-            "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE"
+            "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE"
         },
         {
             "Id": "8d1f0983-EXAMPLE",
-            "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/8d1f0983-EXAMPLE"
+            "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/8d1f0983-EXAMPLE"
         }
     ]
 }
@@ -231,7 +231,7 @@ The following `list-tags-for-resource` example retrieves a list of all tags atta
 
 ```
 aws codestar-notifications list-tags-for-resource \
-    --arn {{arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/fe1efd35-EXAMPLE}}
+    --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/fe1efd35-EXAMPLE}}
 ```
 Output:
 
@@ -250,11 +250,10 @@ The following code example shows how to use `list-targets`.
 
 **AWS CLI**
 **To retrieve a list of notification rule targets**
-The following `list-targets` example retrieves a list of all notification rule targets in the specified AWS Region.
+The following `list-targets` example retrieves a list of all notification rule targets in the current AWS Region.
 
 ```
-aws codestar-notifications list-targets \
-    --region {{us-east-1}}
+aws codestar-notifications list-targets
 ```
 Output:
 
@@ -262,12 +261,12 @@ Output:
 {
     "Targets": [
         {
-            "TargetAddress": "arn:aws:sns:us-east-1:123456789012:MySNSTopicForNotificationRules",
+            "TargetAddress": "arn:aws:sns:us-west-2:123456789012:MySNSTopicForNotificationRules",
             "TargetType": "SNS",
             "TargetStatus": "ACTIVE"
         },
         {
-            "TargetAddress": "arn:aws:sns:us-east-1:123456789012:MySNSTopicForNotificationsAboutMyDemoRepo",
+            "TargetAddress": "arn:aws:sns:us-west-2:123456789012:MySNSTopicForNotificationsAboutMyDemoRepo",
             "TargetType": "SNS",
             "TargetStatus": "ACTIVE"
         }
@@ -288,14 +287,14 @@ The following `subscribe` example adds an Amazon SNS topic as a target for the s
 
 ```
 aws codestar-notifications subscribe \
-    --arn {{arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE}} \
-    --target {{TargetType=SNS,TargetAddress=arn:aws:sns:us-east-1:123456789012:MyNotificationTopic}}
+    --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE}} \
+    --target {{TargetType=SNS,TargetAddress=arn:aws:sns:us-west-2:123456789012:MyNotificationTopic}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE"
+    "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE"
 }
 ```
 For more information, see [Add or Remove an Amazon SNS Topic as a Target for a Notification Rule](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/notification-target-change-rule.html) in the *AWS Developer Tools Console User Guide*.
@@ -312,7 +311,7 @@ The following `tag-resource` example adds a tag with the key name of `Team` and 
 
 ```
 aws codestar-notifications tag-resource \
-    --arn {{arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/fe1efd35-EXAMPLE}} \
+    --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/fe1efd35-EXAMPLE}} \
     --tags {{Team=Li_Juan}}
 ```
 Output:
@@ -338,15 +337,14 @@ The following `unsubscribe` example removes an Amazon SNS topic as a target from
 
 ```
 aws codestar-notifications unsubscribe \
-    --arn {{arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE}} \
-    --target {{TargetType=SNS,TargetAddress=arn:aws:sns:us-east-1:123456789012:MyNotificationTopic}}
+    --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE}} \
+    --target {{TargetType=SNS,TargetAddress=arn:aws:sns:us-west-2:123456789012:MyNotificationTopic}}
 ```
 Output:
 
 ```
 {
-    "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE"
-    "TargetAddress": "arn:aws:sns:us-east-1:123456789012:MyNotificationTopic"
+    "Arn": "arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/dc82df7a-EXAMPLE"
 }
 ```
 For more information, see [Add or Remove an Amazon SNS Topic as a Target for a Notification Rule](https://docs.aws.amazon.com/codestar-notifications/latest/userguide/notification-target-change-rule.html) in the *AWS Developer Tools Console User Guide*.
@@ -363,7 +361,7 @@ The following `untag-resource` example removes the tag with the key name `Team` 
 
 ```
 aws codestar-notifications untag-resource \
-    --arn {{arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/fe1efd35-EXAMPLE}} \
+    --arn {{arn:aws:codestar-notifications:us-west-2:123456789012:notificationrule/fe1efd35-EXAMPLE}} \
     --tag-keys {{Team}}
 ```
 This command produces no output.
@@ -391,23 +389,17 @@ Contents of `update.json`:
     "EventTypeIds": [
         "codecommit-repository-branches-and-tags-created"
     ],
-    "Resource": "arn:aws:codecommit:us-east-1:123456789012:MyDemoRepo",
+    "Resource": "arn:aws:codecommit:us-west-2:123456789012:MyDemoRepo",
     "Targets": [
         {
             "TargetType": "SNS",
-            "TargetAddress": "arn:aws:sns:us-east-1:123456789012:MyNotificationTopic"
+            "TargetAddress": "arn:aws:sns:us-west-2:123456789012:MyNotificationTopic"
         }
     ],
     "Status": "ENABLED",
     "DetailType": "FULL"
 }
 ```
-Output:
-
-```
-{
-    "Arn": "arn:aws:codestar-notifications:us-east-1:123456789012:notificationrule/dc82df7a-EXAMPLE"
-}
-```
+This command produces no output.
 For more information, see [Edit a notification rule](https://docs.aws.amazon.com/dtconsole/latest/userguide/notification-rule-edit.html) in the *AWS Developer Tools Console User Guide*.
 +  For API details, see [UpdateNotificationRule](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/codestar-notifications/update-notification-rule.html) in *AWS CLI Command Reference*.

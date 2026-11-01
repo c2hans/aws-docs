@@ -74,7 +74,7 @@ Start by creating a place index resource to support geocoding queries.
    + ** Name** – Enter a name for the place index resource. For example, {{AuroraPlaceIndex}}. Maximum 100 characters. Valid entries include alphanumeric characters, hyphens, periods, and underscores.
    + ** Description** – Enter an optional description. For example, {{Place index for Amazon Aurora}}.
 
-1. Under **Data providers**, choose an available [data provider](https://aws.amazon.com/location/data-providers/) to use with your place index resource. If you have no preference, we recommend starting with {{Esri}}.
+1. Under **Data providers**, choose an available [data provider](https://aws.amazon.com/location/data-providers/) to use with your place index resource. If you have no preference and Esri is available in your Region, start with {{Esri}}.
 
 1. Under **Data storage options**, specify **Yes, results will be stored**. This indicates that you intend to save the geocoding results in a database.
 

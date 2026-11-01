@@ -37,8 +37,8 @@ Output:
 
 ```
 {
-    "applicationArn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/0ars38r6btoohvpvd9gqrptt9l",
-    "attributeGroupArn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl"
+    "applicationArn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/0ars38r6btoohvpvd9gqrptt9l",
+    "attributeGroupArn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl"
 }
 ```
 For more information, see [Associating and disassociating attribute groups](https://docs.aws.amazon.com/servicecatalog/latest/arguide/associate-attr-groups.html) in the *AWS Service Catalog AppRegistry Administrator Guide*.
@@ -63,7 +63,7 @@ Output:
 {
     "application": {
         "id": "0ars38r6btoohvpvd9gqrptt9l",
-        "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/0ars38r6btoohvpvd9gqrptt9l",
+        "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/0ars38r6btoohvpvd9gqrptt9l",
         "name": "ExampleApplication",
         "creationTime": "2023-02-28T21:10:10.820000+00:00",
         "lastUpdateTime": "2023-02-28T21:10:10.820000+00:00",
@@ -94,7 +94,7 @@ Output:
 {
     "attributeGroup": {
         "id": "01sj5xdwhbw54kejwnt09fnpcl",
-        "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
+        "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
         "name": "ExampleAttributeGroup",
         "creationTime": "2023-02-28T20:38:01.389000+00:00",
         "lastUpdateTime": "2023-02-28T20:38:01.389000+00:00",
@@ -124,7 +124,7 @@ Output:
 {
     "application": {
         "id": "055gw7aynr1i5mbv7kjwzx5945",
-        "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/055gw7aynr1i5mbv7kjwzx5945",
+        "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/055gw7aynr1i5mbv7kjwzx5945",
         "name": "ExampleApplication3",
         "creationTime": "2023-02-28T22:06:28.228000+00:00",
         "lastUpdateTime": "2023-02-28T22:06:28.228000+00:00"
@@ -153,7 +153,7 @@ Output:
 {
     "attributeGroup": {
         "id": "011ge6y3emyjijt8dw8jn6r0hv",
-        "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/011ge6y3emyjijt8dw8jn6r0hv",
+        "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/011ge6y3emyjijt8dw8jn6r0hv",
         "name": "ExampleAttributeGroup3",
         "creationTime": "2023-02-28T22:05:35.224000+00:00",
         "lastUpdateTime": "2023-02-28T22:05:35.224000+00:00"
@@ -181,7 +181,7 @@ Output:
 ```
 {
     "id": "0ars38r6btoohvpvd9gqrptt9l",
-    "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/0ars38r6btoohvpvd9gqrptt9l",
+    "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/0ars38r6btoohvpvd9gqrptt9l",
     "name": "ExampleApplication",
     "creationTime": "2023-02-28T21:10:10.820000+00:00",
     "lastUpdateTime": "2023-02-28T21:10:10.820000+00:00",
@@ -192,7 +192,7 @@ Output:
     "integrations": {
         "resourceGroup": {
             "state": "CREATE_COMPLETE",
-            "arn": "arn:aws:resource-groups:us-west-2:813737243517:group/AWS_AppRegistry_Application-ExampleApplication"
+            "arn": "arn:aws:resource-groups:us-west-2:123456789012:group/AWS_AppRegistry_Application-ExampleApplication"
         }
     }
 }
@@ -218,7 +218,7 @@ Output:
 ```
 {
     "id": "01sj5xdwhbw54kejwnt09fnpcl",
-    "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
+    "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
     "name": "ExampleAttributeGroup",
     "attributes": "{\"SomeKey1\":\"SomeValue1\",\"SomeKey2\":\"SomeValue2\"}",
     "creationTime": "2023-02-28T20:38:01.389000+00:00",
@@ -250,21 +250,21 @@ Output:
     "applications": [
         {
             "id": "03axw94pjfj3uan00tcgbrxnkw",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/03axw94pjfj3uan00tcgbrxnkw",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/03axw94pjfj3uan00tcgbrxnkw",
             "name": "ExampleApplication2",
             "creationTime": "2023-02-28T21:59:34.094000+00:00",
             "lastUpdateTime": "2023-02-28T21:59:34.094000+00:00"
         },
         {
             "id": "055gw7aynr1i5mbv7kjwzx5945",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/055gw7aynr1i5mbv7kjwzx5945",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/055gw7aynr1i5mbv7kjwzx5945",
             "name": "ExampleApplication3",
             "creationTime": "2023-02-28T22:06:28.228000+00:00",
             "lastUpdateTime": "2023-02-28T22:06:28.228000+00:00"
         },
         {
             "id": "0ars38r6btoohvpvd9gqrptt9l",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/0ars38r6btoohvpvd9gqrptt9l",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/0ars38r6btoohvpvd9gqrptt9l",
             "name": "ExampleApplication",
             "description": "This is an example application",
             "creationTime": "2023-02-28T21:10:10.820000+00:00",
@@ -298,7 +298,7 @@ Output:
     ]
 }
 ```
-For more information, see [Associating and disassociating attribute groups](https://https://docs.aws.amazon.com/servicecatalog/latest/arguide/associate-attr-groups.html) in the *AWS Service Catalog AppRegistry Administrator Guide*.
+For more information, see [Associating and disassociating attribute groups](https://docs.aws.amazon.com/servicecatalog/latest/arguide/associate-attr-groups.html) in the *AWS Service Catalog AppRegistry Administrator Guide*.
 +  For API details, see [ListAssociatedAttributeGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog-appregistry/list-associated-attribute-groups.html) in *AWS CLI Command Reference*.
 
 ### `list-attribute-groups-for-application`
@@ -321,13 +321,13 @@ Output:
     "attributeGroupsDetails": [
         {
             "id": "01sj5xdwhbw54kejwnt09fnpcl",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
             "name": "ExampleAttributeGroup"
         }
     ]
 }
 ```
-For more information, see [Viewing attribute group details](https://servicecatalog/latest/arguide/view-attr-group.html) in the *AWS Service Catalog AppRegistry Administrator Guide*.
+For more information, see [Viewing attribute group details](https://docs.aws.amazon.com/servicecatalog/latest/arguide/view-attr-group.html) in the *AWS Service Catalog AppRegistry Administrator Guide*.
 +  For API details, see [ListAttributeGroupsForApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicecatalog-appregistry/list-attribute-groups-for-application.html) in *AWS CLI Command Reference*.
 
 ### `list-attribute-groups`
@@ -349,14 +349,14 @@ Output:
     "attributeGroups": [
         {
             "id": "011ge6y3emyjijt8dw8jn6r0hv",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/011ge6y3emyjijt8dw8jn6r0hv",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/011ge6y3emyjijt8dw8jn6r0hv",
             "name": "ExampleAttributeGroup3",
             "creationTime": "2023-02-28T22:05:35.224000+00:00",
             "lastUpdateTime": "2023-02-28T22:05:35.224000+00:00"
         },
         {
             "id": "01sj5xdwhbw54kejwnt09fnpcl",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
             "name": "ExampleAttributeGroup",
             "description": "This is an example attribute group",
             "creationTime": "2023-02-28T20:38:01.389000+00:00",
@@ -364,7 +364,7 @@ Output:
         },
         {
             "id": "03n1yffgq6d18vwrzxf0c70nm3",
-            "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/03n1yffgq6d18vwrzxf0c70nm3",
+            "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/03n1yffgq6d18vwrzxf0c70nm3",
             "name": "ExampleAttributeGroup2",
             "creationTime": "2023-02-28T21:57:30.687000+00:00",
             "lastUpdateTime": "2023-02-28T21:57:30.687000+00:00"
@@ -395,7 +395,7 @@ Output:
 {
     "application": {
         "id": "0ars38r6btoohvpvd9gqrptt9l",
-        "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/applications/0ars38r6btoohvpvd9gqrptt9l",
+        "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/applications/0ars38r6btoohvpvd9gqrptt9l",
         "name": "ExampleApplication",
         "description": "This is an example application",
         "creationTime": "2023-02-28T21:10:10.820000+00:00",
@@ -429,7 +429,7 @@ Output:
 {
     "attributeGroup": {
         "id": "01sj5xdwhbw54kejwnt09fnpcl",
-        "arn": "arn:aws:servicecatalog:us-west-2:813737243517:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
+        "arn": "arn:aws:servicecatalog:us-west-2:123456789012:/attribute-groups/01sj5xdwhbw54kejwnt09fnpcl",
         "name": "ExampleAttributeGroup",
         "description": "This is an example attribute group",
         "creationTime": "2023-02-28T20:38:01.389000+00:00",

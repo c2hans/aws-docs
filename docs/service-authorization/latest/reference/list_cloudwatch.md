@@ -1209,6 +1209,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
   - **Access level:** Read
 
+- **   [GetProfileRecords](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  **
+  - **Description:** Grants permission to query and retrieve CloudWatch application profiling data. This action is unrelated to CloudWatch access profiles (GetAccessProfile and related actions)
+  - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[cloudwatch:HasAccessGrant](#list_cloudwatch-cloudwatch_HasAccessGrant)
+  - **Access level:** Read
+
 - **   [GetRecords](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_GetRecords.html)  **
   - **Description:** Grants permission to fetch logs and traces
   - **Resource types (\*required):**
@@ -1495,6 +1501,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create a CloudWatch metric stream, or update an existing metric stream if it already exists
   - **Resource types (\*required):** [metric-stream\*](#list_cloudwatch-resource-metric-stream)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_cloudwatch-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_cloudwatch-aws_TagKeys)
+  - **Access level:** Write
+
+- **   [PutProfileRecords](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/permissions-reference-cw.html)  **
+  - **Description:** Grants permission to ingest CloudWatch application profiling data. This action is unrelated to CloudWatch access profiles (GetAccessProfile and related actions)
+  - **Resource types (\*required):** [dataset](#list_cloudwatch-resource-dataset)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [PutRecords](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_PutRecords.html)  **

@@ -28,7 +28,9 @@ Content-type: application/json
          }
       }
    ],
-   "retentionPeriodInDays": {{number}}
+   "outOfOrderTimeWindowInSeconds": {{number}},
+   "retentionPeriodInDays": {{number}},
+   "ruleQueryOffsetInSeconds": {{number}}
 }
 ```
 
@@ -60,10 +62,22 @@ This is an array of structures, where each structure defines a label set for the
 Type: Array of [LimitsPerLabelSet](API_LimitsPerLabelSet.md) objects
 Required: No
 
+ ** [outOfOrderTimeWindowInSeconds](#API_UpdateWorkspaceConfiguration_RequestSyntax) **   <a name="prometheus-UpdateWorkspaceConfiguration-request-outOfOrderTimeWindowInSeconds"></a>
+Specifies the time window in seconds for accepting out of order samples. Out of order samples older than this window are rejected.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
  ** [retentionPeriodInDays](#API_UpdateWorkspaceConfiguration_RequestSyntax) **   <a name="prometheus-UpdateWorkspaceConfiguration-request-retentionPeriodInDays"></a>
 Specifies how many days that metrics will be retained in the workspace.
 Type: Integer
 Valid Range: Minimum value of 1.
+Required: No
+
+ ** [ruleQueryOffsetInSeconds](#API_UpdateWorkspaceConfiguration_RequestSyntax) **   <a name="prometheus-UpdateWorkspaceConfiguration-request-ruleQueryOffsetInSeconds"></a>
+Specifies the duration in seconds to offset rule evaluation queries into the past. This allows ingested samples to be available before rule evaluation.
+Type: Integer
+Valid Range: Minimum value of 0.
 Required: No
 
 ## Response Syntax

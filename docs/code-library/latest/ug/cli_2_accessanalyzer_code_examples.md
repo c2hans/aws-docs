@@ -30,7 +30,7 @@ The following `apply-archive-rule` example applies an archive rule to existing f
 
 ```
 aws accessanalyzer apply-archive-rule \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/UnusedAccess-ConsoleAnalyzer-organization}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/UnusedAccess-ConsoleAnalyzer-organization}} \
     --rule-name {{MyArchiveRule}}
 ```
 This command produces no output.
@@ -48,7 +48,7 @@ The following `cancel-policy-generation` example cancels the requested policy ge
 
 ```
 aws accessanalyzer cancel-policy-generation \
-    --job-id {{923a56b0-ebb8-4e80-8a3c-a11ccfbcd6f2}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 This command produces no output.
 For more information, see [IAM Access Analyzer policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html) in the *AWS IAM User Guide*.
@@ -187,7 +187,7 @@ aws accessanalyzer check-no-public-access \
     --policy-document {{file://check-no-public-access-myfile.json}} \
     --resource-type {{AWS::S3::Bucket}}
 ```
-Contents of `myfile.json`:
+Contents of `check-no-public-access-myfile.json`:
 
 ```
 {
@@ -196,7 +196,7 @@ Contents of `myfile.json`:
         {
             "Sid": "CheckNoPublicAccess",
             "Effect": "Allow",
-            "Principal": { "AWS": "arn:aws:iam::111122223333:user/JohnDoe" },
+            "Principal": { "AWS": "arn:aws:iam::123456789012:user/JohnDoe" },
             "Action": [
                 "s3:GetObject"
             ]
@@ -226,7 +226,7 @@ The following `create-access-preview` example creates an access preview that all
 
 ```
 aws accessanalyzer create-access-preview \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --configurations {{file://myfile.json}}
 ```
 Contents of `myfile.json`:
@@ -235,7 +235,7 @@ Contents of `myfile.json`:
 {
     "arn:aws:s3:::amzn-s3-demo-bucket": {
         "s3Bucket": {
-            "bucketPolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::111122223333:root\"]},\"Action\":[\"s3:PutObject\",\"s3:PutObjectAcl\"],\"Resource\":\"arn:aws:s3:::amzn-s3-demo-bucket/*\"}]}",
+            "bucketPolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::123456789012:root\"]},\"Action\":[\"s3:PutObject\",\"s3:PutObjectAcl\"],\"Resource\":\"arn:aws:s3:::amzn-s3-demo-bucket/*\"}]}",
             "bucketPublicAccessBlock": {
                 "ignorePublicAcls": true,
                 "restrictPublicBuckets": true
@@ -256,7 +256,7 @@ Output:
 
 ```
 {
-    "id": "3c65eb13-6ef9-4629-8919-a32043619e6b"
+    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [Previewing access with IAM Access Analyzer APIs](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-preview-access-apis.html) in the *AWS IAM User Guide*.
@@ -280,7 +280,7 @@ Output:
 
 ```
 {
-    "arn": "arn:aws:access-analyzer:us-east-2:111122223333:analyzer/example"
+    "arn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/example"
 }
 ```
 For more information, see [Getting started with AWS Identity and Access Management Access Analyzer findings](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-getting-started.html) in the *AWS IAM User Guide*.
@@ -351,20 +351,20 @@ The following `get-access-preview` example retrieves information about an access
 
 ```
 aws accessanalyzer get-access-preview \
-    --access-preview-id {{3c65eb13-6ef9-4629-8919-a32043619e6b}} \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}}
+    --access-preview-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}}
 ```
 Output:
 
 ```
 {
     "accessPreview": {
-        "id": "3c65eb13-6ef9-4629-8919-a32043619e6b",
-        "analyzerArn": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+        "analyzerArn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account",
         "configurations": {
             "arn:aws:s3:::amzn-s3-demo-bucket": {
                 "s3Bucket": {
-                    "bucketPolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::111122223333:root\"]},\"Action\":[\"s3:PutObject\",\"s3:PutObjectAcl\"],\"Resource\":\"arn:aws:s3:::amzn-s3-demo-bucket/*\"}]}",
+                    "bucketPolicy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"AWS\":[\"arn:aws:iam::123456789012:root\"]},\"Action\":[\"s3:PutObject\",\"s3:PutObjectAcl\"],\"Resource\":\"arn:aws:s3:::amzn-s3-demo-bucket/*\"}]}",
                     "bucketAclGrants": [
                         {
                             "permission": "READ",
@@ -399,7 +399,7 @@ The following `get-analyzed-resource` example retrieves information about a reso
 
 ```
 aws accessanalyzer get-analyzed-resource \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --resource-arn {{arn:aws:s3:::amzn-s3-demo-bucket}}
 ```
 Output:
@@ -410,7 +410,7 @@ Output:
         "analyzedAt": "2024-02-15T18:01:53.002000+00:00",
         "isPublic": false,
         "resourceArn": "arn:aws:s3:::amzn-s3-demo-bucket",
-        "resourceOwnerAccount": "111122223333",
+        "resourceOwnerAccount": "123456789012",
         "resourceType": "AWS::S3::Bucket"
     }
 }
@@ -436,9 +436,9 @@ Output:
 ```
 {
     "analyzer": {
-        "arn": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account",
+        "arn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account",
         "createdAt": "2019-12-03T07:28:17+00:00",
-        "lastResourceAnalyzed": "arn:aws:sns:us-west-2:111122223333:config-topic",
+        "lastResourceAnalyzed": "arn:aws:sns:us-west-2:123456789012:config-topic",
         "lastResourceAnalyzedAt": "2024-02-15T18:01:53.003000+00:00",
         "name": "ConsoleAnalyzer-account",
         "status": "ACTIVE",
@@ -503,8 +503,8 @@ The following `get-finding-v2` example etrieves information about the specified 
 
 ```
 aws accessanalyzer get-finding-v2 \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-organization}} \
-    --id {{0910eedb-381e-4e95-adda-0d25c19e6e90}}
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-organization}} \
+    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -517,7 +517,7 @@ Output:
                     "sts:AssumeRoleWithWebIdentity"
                 ],
                 "condition": {
-                    "cognito-identity.amazonaws.com:aud": "us-west-2:EXAMPLE0-0000-0000-0000-000000000000"
+                    "cognito-identity.amazonaws.com:aud": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
                 },
                 "isPublic": false,
                 "principal": {
@@ -526,15 +526,15 @@ Output:
             }
         }
     ],
-    "resource": "arn:aws:iam::111122223333:role/Cognito_testpoolAuth_Role",
+    "resource": "arn:aws:iam::123456789012:role/Cognito_testpoolAuth_Role",
     "status": "ACTIVE",
     "error": null,
     "createdAt": "2021-02-26T21:17:50.905000+00:00",
     "resourceType": "AWS::IAM::Role",
     "findingType": "ExternalAccess",
-    "resourceOwnerAccount": "111122223333",
+    "resourceOwnerAccount": "123456789012",
     "analyzedAt": "2024-02-16T18:17:47.888000+00:00",
-    "id": "0910eedb-381e-4e95-adda-0d25c19e6e90",
+    "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
     "updatedAt": "2021-02-26T21:17:50.905000+00:00"
 }
 ```
@@ -552,32 +552,32 @@ The following `get-finding` example etrieves information about the specified fin
 
 ```
 aws accessanalyzer get-finding \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-organization}} \
-    --id {{0910eedb-381e-4e95-adda-0d25c19e6e90}}
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-organization}} \
+    --id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
 ```
 {
     "finding": {
-        "id": "0910eedb-381e-4e95-adda-0d25c19e6e90",
+        "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "principal": {
             "Federated": "cognito-identity.amazonaws.com"
         },
         "action": [
             "sts:AssumeRoleWithWebIdentity"
         ],
-        "resource": "arn:aws:iam::111122223333:role/Cognito_testpoolAuth_Role",
+        "resource": "arn:aws:iam::123456789012:role/Cognito_testpoolAuth_Role",
         "isPublic": false,
         "resourceType": "AWS::IAM::Role",
         "condition": {
-            "cognito-identity.amazonaws.com:aud": "us-west-2:EXAMPLE0-0000-0000-0000-000000000000"
+            "cognito-identity.amazonaws.com:aud": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
         },
         "createdAt": "2021-02-26T21:17:50.905000+00:00",
         "analyzedAt": "2024-02-16T18:17:47.888000+00:00",
         "updatedAt": "2021-02-26T21:17:50.905000+00:00",
         "status": "ACTIVE",
-        "resourceOwnerAccount": "111122223333"
+        "resourceOwnerAccount": "123456789012"
     }
 }
 ```
@@ -595,7 +595,7 @@ The following `get-generated-policy` example retrieves the policy that was gener
 
 ```
 aws accessanalyzer get-generated-policy \
-    --job-id {{c557dc4a-0338-4489-95dd-739014860ff9}}
+    --job-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}}
 ```
 Output:
 
@@ -614,18 +614,18 @@ Output:
                 "trailProperties": [
                     {
                         "allRegions": true,
-                        "cloudTrailArn": "arn:aws:cloudtrail:us-west-2:111122223333:trail/my-trail",
+                        "cloudTrailArn": "arn:aws:cloudtrail:us-west-2:123456789012:trail/my-trail",
                         "regions": []
                     }
                 ]
             },
             "isComplete": false,
-            "principalArn": "arn:aws:iam::111122223333:role/Admin"
+            "principalArn": "arn:aws:iam::123456789012:role/Admin"
         }
     },
     "jobDetails": {
         "completedOn": "2024-02-14T22:47:01+00:00",
-        "jobId": "c557dc4a-0338-4489-95dd-739014860ff9",
+        "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
         "startedOn": "2024-02-14T22:44:41+00:00",
         "status": "SUCCEEDED"
     }
@@ -645,8 +645,8 @@ The following `list-access-preview-findings` example retrieves a list of access 
 
 ```
 aws accessanalyzer list-access-preview-findings \
-    --access-preview-id {{3c65eb13-6ef9-4629-8919-a32043619e6b}} \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}}
+    --access-preview-id {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}}
 ```
 Output:
 
@@ -654,9 +654,9 @@ Output:
 {
     "findings": [
         {
-            "id": "e22fc158-1c87-4c32-9464-e7f405ce8d74",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
             "principal": {
-                "AWS": "111122223333"
+                "AWS": "123456789012"
             },
             "action": [
                 "s3:PutObject",
@@ -669,7 +669,7 @@ Output:
             "createdAt": "2024-02-17T00:18:46+00:00",
             "changeType": "NEW",
             "status": "ACTIVE",
-            "resourceOwnerAccount": "111122223333",
+            "resourceOwnerAccount": "123456789012",
             "sources": [
                 {
                     "type": "POLICY"
@@ -693,7 +693,7 @@ The following `list-access-previews` example retrieves a list of access previews
 
 ```
 aws accessanalyzer list-access-previews \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}}
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}}
 ```
 Output:
 
@@ -701,8 +701,8 @@ Output:
 {
     "accessPreviews": [
         {
-            "id": "3c65eb13-6ef9-4629-8919-a32043619e6b",
-            "analyzerArn": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "analyzerArn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account",
             "createdAt": "2024-02-17T00:18:44+00:00",
             "status": "COMPLETED"
         }
@@ -723,7 +723,7 @@ The following `list-analyzed-resources` example lists the available widgets in y
 
 ```
 aws accessanalyzer list-analyzed-resources \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --resource-type {{AWS::IAM::Role}}
 ```
 Output:
@@ -732,23 +732,23 @@ Output:
 {
     "analyzedResources": [
         {
-            "resourceArn": "arn:aws:sns:us-west-2:111122223333:Validation-Email",
-            "resourceOwnerAccount": "111122223333",
+            "resourceArn": "arn:aws:sns:us-west-2:123456789012:Validation-Email",
+            "resourceOwnerAccount": "123456789012",
             "resourceType": "AWS::SNS::Topic"
         },
         {
-            "resourceArn": "arn:aws:sns:us-west-2:111122223333:admin-alerts",
-            "resourceOwnerAccount": "111122223333",
+            "resourceArn": "arn:aws:sns:us-west-2:123456789012:admin-alerts",
+            "resourceOwnerAccount": "123456789012",
             "resourceType": "AWS::SNS::Topic"
         },
         {
-            "resourceArn": "arn:aws:sns:us-west-2:111122223333:config-topic",
-            "resourceOwnerAccount": "111122223333",
+            "resourceArn": "arn:aws:sns:us-west-2:123456789012:config-topic",
+            "resourceOwnerAccount": "123456789012",
             "resourceType": "AWS::SNS::Topic"
         },
         {
-            "resourceArn": "arn:aws:sns:us-west-2:111122223333:inspector-topic",
-            "resourceOwnerAccount": "111122223333",
+            "resourceArn": "arn:aws:sns:us-west-2:123456789012:inspector-topic",
+            "resourceOwnerAccount": "123456789012",
             "resourceType": "AWS::SNS::Topic"
         }
     ]
@@ -775,7 +775,7 @@ Output:
 {
     "analyzers": [
         {
-            "arn": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/UnusedAccess-ConsoleAnalyzer-organization",
+            "arn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/UnusedAccess-ConsoleAnalyzer-organization",
             "createdAt": "2024-02-15T00:46:40+00:00",
             "name": "UnusedAccess-ConsoleAnalyzer-organization",
             "status": "ACTIVE",
@@ -785,7 +785,7 @@ Output:
             "type": "ORGANIZATION_UNUSED_ACCESS"
         },
         {
-            "arn": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-organization",
+            "arn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-organization",
             "createdAt": "2020-04-25T07:43:28+00:00",
             "lastResourceAnalyzed": "arn:aws:s3:::amzn-s3-demo-bucket",
             "lastResourceAnalyzedAt": "2024-02-15T21:51:56.517000+00:00",
@@ -797,9 +797,9 @@ Output:
             "type": "ORGANIZATION"
         },
         {
-            "arn": "arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account",
+            "arn": "arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account",
             "createdAt": "2019-12-03T07:28:17+00:00",
-            "lastResourceAnalyzed": "arn:aws:sns:us-west-2:111122223333:config-topic",
+            "lastResourceAnalyzed": "arn:aws:sns:us-west-2:123456789012:config-topic",
             "lastResourceAnalyzedAt": "2024-02-15T18:01:53.003000+00:00",
             "name": "ConsoleAnalyzer-account",
             "status": "ACTIVE",
@@ -878,7 +878,7 @@ The following `list-findings-v2` example retrieves a list of findings generated 
 
 ```
 aws accessanalyzer list-findings-v2 \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --filter '{{{"resource": {"contains": ["Cognito"]}, "resourceType": {"eq": ["AWS::IAM::Role"]}}}}'
 ```
 Output:
@@ -889,10 +889,10 @@ Output:
         {
             "analyzedAt": "2024-02-16T18:17:47.888000+00:00",
             "createdAt": "2021-02-26T21:17:24.710000+00:00",
-            "id": "597f3bc2-3adc-4c18-9879-5c4b23485e46",
-            "resource": "arn:aws:iam::111122223333:role/Cognito_testpoolUnauth_Role",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "resource": "arn:aws:iam::123456789012:role/Cognito_testpoolUnauth_Role",
             "resourceType": "AWS::IAM::Role",
-            "resourceOwnerAccount": "111122223333",
+            "resourceOwnerAccount": "123456789012",
             "status": "ACTIVE",
             "updatedAt": "2021-02-26T21:17:24.710000+00:00",
             "findingType": "ExternalAccess"
@@ -900,10 +900,10 @@ Output:
         {
             "analyzedAt": "2024-02-16T18:17:47.888000+00:00",
             "createdAt": "2021-02-26T21:17:50.905000+00:00",
-            "id": "ce0e221a-85b9-4d52-91ff-d7678075442f",
-            "resource": "arn:aws:iam::111122223333:role/Cognito_testpoolAuth_Role",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "resource": "arn:aws:iam::123456789012:role/Cognito_testpoolAuth_Role",
             "resourceType": "AWS::IAM::Role",
-            "resourceOwnerAccount": "111122223333",
+            "resourceOwnerAccount": "123456789012",
             "status": "ACTIVE",
             "updatedAt": "2021-02-26T21:17:50.905000+00:00",
             "findingType": "ExternalAccess"
@@ -925,7 +925,7 @@ The following `list-findings` example retrieves a list of findings generated by 
 
 ```
 aws accessanalyzer list-findings \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --filter '{{{"resource": {"contains": ["Cognito"]}, "resourceType": {"eq": ["AWS::IAM::Role"]}}}}'
 ```
 Output:
@@ -934,44 +934,44 @@ Output:
 {
     "findings": [
         {
-            "id": "597f3bc2-3adc-4c18-9879-5c4b23485e46",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
             "principal": {
                 "Federated": "cognito-identity.amazonaws.com"
             },
             "action": [
                 "sts:AssumeRoleWithWebIdentity"
             ],
-            "resource": "arn:aws:iam::111122223333:role/Cognito_testpoolUnauth_Role",
+            "resource": "arn:aws:iam::123456789012:role/Cognito_testpoolUnauth_Role",
             "isPublic": false,
             "resourceType": "AWS::IAM::Role",
             "condition": {
-                "cognito-identity.amazonaws.com:aud": "us-west-2:EXAMPLE0-0000-0000-0000-000000000000"
+                "cognito-identity.amazonaws.com:aud": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             },
             "createdAt": "2021-02-26T21:17:24.710000+00:00",
             "analyzedAt": "2024-02-16T18:17:47.888000+00:00",
             "updatedAt": "2021-02-26T21:17:24.710000+00:00",
             "status": "ACTIVE",
-            "resourceOwnerAccount": "111122223333"
+            "resourceOwnerAccount": "123456789012"
         },
         {
-            "id": "ce0e221a-85b9-4d52-91ff-d7678075442f",
+            "id": "a1b2c3d4-5678-90ab-cdef-EXAMPLE33333",
             "principal": {
                 "Federated": "cognito-identity.amazonaws.com"
             },
             "action": [
                 "sts:AssumeRoleWithWebIdentity"
             ],
-            "resource": "arn:aws:iam::111122223333:role/Cognito_testpoolAuth_Role",
+            "resource": "arn:aws:iam::123456789012:role/Cognito_testpoolAuth_Role",
             "isPublic": false,
             "resourceType": "AWS::IAM::Role",
             "condition": {
-                "cognito-identity.amazonaws.com:aud": "us-west-2:EXAMPLE0-0000-0000-0000-000000000000"
+                "cognito-identity.amazonaws.com:aud": "us-west-2:a1b2c3d4-5678-90ab-cdef-EXAMPLE22222"
             },
             "createdAt": "2021-02-26T21:17:50.905000+00:00",
             "analyzedAt": "2024-02-16T18:17:47.888000+00:00",
             "updatedAt": "2021-02-26T21:17:50.905000+00:00",
             "status": "ACTIVE",
-            "resourceOwnerAccount": "111122223333"
+            "resourceOwnerAccount": "123456789012"
         }
     ]
 }
@@ -998,15 +998,15 @@ Output:
     "policyGenerations": [
         {
             "completedOn": "2024-02-14T23:43:38+00:00",
-            "jobId": "923a56b0-ebb8-4e80-8a3c-a11ccfbcd6f2",
-            "principalArn": "arn:aws:iam::111122223333:role/Admin",
+            "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+            "principalArn": "arn:aws:iam::123456789012:role/Admin",
             "startedOn": "2024-02-14T23:43:02+00:00",
             "status": "CANCELED"
         },
         {
             "completedOn": "2024-02-14T22:47:01+00:00",
-            "jobId": "c557dc4a-0338-4489-95dd-739014860ff9",
-            "principalArn": "arn:aws:iam::111122223333:role/Admin",
+            "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE22222",
+            "principalArn": "arn:aws:iam::123456789012:role/Admin",
             "startedOn": "2024-02-14T22:44:41+00:00",
             "status": "SUCCEEDED"
         }
@@ -1027,7 +1027,7 @@ The following `list-tags-for-resource` example retrieves a list of tags applied 
 
 ```
 aws accessanalyzer list-tags-for-resource \
-    --resource-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}}
+    --resource-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}}
 ```
 Output:
 
@@ -1053,19 +1053,19 @@ The following `start-policy-generation` example starts a policy generation reque
 
 ```
 aws accessanalyzer start-policy-generation \
-    --policy-generation-details '{{{"principalArn":"arn:aws:iam::111122223333:role/Admin"}}}' \
+    --policy-generation-details '{{{"principalArn":"arn:aws:iam::123456789012:role/Admin"}}}' \
     --cloud-trail-details {{file://myfile.json}}
 ```
 Contents of `myfile.json`:
 
 ```
 {
-    "accessRole": "arn:aws:iam::111122223333:role/service-role/AccessAnalyzerMonitorServiceRole",
+    "accessRole": "arn:aws:iam::123456789012:role/service-role/AccessAnalyzerMonitorServiceRole",
     "startTime": "2024-02-13T00:30:00Z",
     "trails": [
         {
             "allRegions": true,
-            "cloudTrailArn": "arn:aws:cloudtrail:us-west-2:111122223333:trail/my-trail"
+            "cloudTrailArn": "arn:aws:cloudtrail:us-west-2:123456789012:trail/my-trail"
         }
     ]
 }
@@ -1074,7 +1074,7 @@ Output:
 
 ```
 {
-    "jobId": "c557dc4a-0338-4489-95dd-739014860ff9"
+    "jobId": "a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 }
 ```
 For more information, see [IAM Access Analyzer policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html) in the *AWS IAM User Guide*.
@@ -1091,8 +1091,8 @@ The following `start-resource-scan` example mmediately starts a scan of the poli
 
 ```
 aws accessanalyzer start-resource-scan \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
-    --resource-arn {{arn:aws:iam::111122223333:role/Cognito_testpoolAuth_Role}}
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
+    --resource-arn {{arn:aws:iam::123456789012:role/Cognito_testpoolAuth_Role}}
 ```
 This command produces no output.
 For more information, see [IAM Access Analyzer policy generation](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-generation.html) in the *AWS IAM User Guide*.
@@ -1109,7 +1109,7 @@ The following `tag-resource` example adds a tag to the specified resource in you
 
 ```
 aws accessanalyzer tag-resource \
-    --resource-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --resource-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --tags {{Environment=dev,Purpose=testing}}
 ```
 This command produces no output.
@@ -1127,7 +1127,7 @@ The following `untag-resource` example removes tags from the specified resource 
 
 ```
 aws accessanalyzer untag-resource \
-    --resource-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/ConsoleAnalyzer-account}} \
+    --resource-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/ConsoleAnalyzer-account}} \
     --tag-keys {{Environment}} {{Purpose}}
 ```
 This command produces no output.
@@ -1164,8 +1164,8 @@ The following `update-findings` example updates the status for the specified fin
 
 ```
 aws accessanalyzer update-findings \
-    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:111122223333:analyzer/UnusedAccess-ConsoleAnalyzer-organization}} \
-    --ids {{4f319ac3-2e0c-4dc4-bf51-7013a086b6ae}} {{780d586a-2cce-4f72-aff6-359d450e7500}} \
+    --analyzer-arn {{arn:aws:access-analyzer:us-west-2:123456789012:analyzer/UnusedAccess-ConsoleAnalyzer-organization}} \
+    --ids {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} {{a1b2c3d4-5678-90ab-cdef-EXAMPLE22222}} \
     --status {{ARCHIVED}}
 ```
 This command produces no output.

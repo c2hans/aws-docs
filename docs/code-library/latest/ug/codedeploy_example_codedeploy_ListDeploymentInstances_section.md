@@ -31,6 +31,7 @@ Output:
     ]
 }
 ```
+For more information, see [View instance details with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/instances-view-details.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [ListDeploymentInstances](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/list-deployment-instances.html) in *AWS CLI Command Reference*.
 
 ------

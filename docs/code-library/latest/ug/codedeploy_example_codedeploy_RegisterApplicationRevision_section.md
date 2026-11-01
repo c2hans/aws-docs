@@ -23,6 +23,7 @@ aws deploy register-application-revision \
     --s3-location {{bucket=CodeDeployDemoBucket,key=RevisedWordPressApp.zip,bundleType=zip,eTag=cecc9b8a08eac650a6e71fdb88EXAMPLE}}
 ```
 This command produces no output.
+For more information, see [Register an application revision in Amazon S3 with CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/application-revisions-register.html) in the *AWS CodeDeploy User Guide*.
 +  For API details, see [RegisterApplicationRevision](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/register-application-revision.html) in *AWS CLI Command Reference*.
 
 ------

@@ -14,7 +14,7 @@ The following code examples show how to use `ExecutePolicy`.
 
 **AWS CLI**
 **To execute a scaling policy**
-This example executes the scaling policy named `my-step-scale-out-policy` for the specified Auto Scaling group.
+The following `execute-policy` example executes the scaling policy named `my-step-scale-out-policy` for the specified Auto Scaling group.
 
 ```
 aws autoscaling execute-policy \
@@ -24,7 +24,7 @@ aws autoscaling execute-policy \
     --breach-threshold {{80}}
 ```
 This command produces no output.
-For more information, see [Step and simple scaling policies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html) in the *Amazon EC2 Auto Scaling User Guide*.
+For more information, see [Step and simple scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html) in the *Amazon EC2 Auto Scaling User Guide*.
 +  For API details, see [ExecutePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/execute-policy.html) in *AWS CLI Command Reference*.
 
 ------

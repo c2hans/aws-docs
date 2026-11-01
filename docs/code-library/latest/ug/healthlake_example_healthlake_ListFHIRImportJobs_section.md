@@ -22,8 +22,8 @@ aws healthlake list-fhir-import-jobs \
     --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}} \
     --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}} \
     --job-name {{"FHIR-IMPORT"}} \
-    --job-status {{SUBMITTED}}  \
-    {{-max-results}} {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
+    --job-status {{SUBMITTED}} \
+    --max-results {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
 ```
 Output:
 
@@ -42,7 +42,7 @@ Output:
             "JobOutputDataConfig": {
                 "S3Configuration": {
                     "S3Uri": "s3://(Bucket Name)/import/6407b9ae4c2def3cb6f1a46a0c599ec0-FHIR_IMPORT-c0fddbf76f238297632d4aebdbfc9ddf/",
-                    "KmsKeyId": "arn:aws:kms:us-east-1:123456789012:key/b7f645cb-e564-4981-8672-9e012d1ff1a0"
+                    "KmsKeyId": "arn:aws:kms:us-west-2:123456789012:key/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
                 }
             },
             "JobProgressReport": {
@@ -60,7 +60,7 @@ Output:
     ]
 }
 ```
-For more information, see [Importing files to FHIR data store](https://docs.aws.amazon.com/healthlake/latest/devguide/import-examples.html) in the AWS HealthLake Developer Guide.
+For more information, see [Listing FHIR import jobs](https://docs.aws.amazon.com/healthlake/latest/devguide/importing-fhir-data-list.html) in the *AWS HealthLake Developer Guide*.
 +  For API details, see [ListFHIRImportJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-fhir-import-jobs.html) in *AWS CLI Command Reference*.
 
 ------
