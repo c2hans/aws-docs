@@ -141,7 +141,7 @@ This bundle is not recommended for 3D rendering, photo-realistic design, game st
 ## Graphics G7 bundles
 <a name="graphicsg7"></a>
 
-The Graphics G7 WorkSpace bundle is powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. It delivers high GPU performance for graphics and AI inference workloads. Graphics G7 is available for WorkSpaces Personal (using the Amazon DCV protocol) and WorkSpaces Core (using Bring Your Own Protocol (BYOP)). It supports Windows Server 2022, Windows Server 2025, and Windows 11. For more information, see [Amazon EC2 G7 instances](https://aws.amazon.com/ec2/instance-types/g7/).
+Graphics G7 is an Amazon WorkSpaces bundle that provides high graphics processing unit (GPU) performance for graphics and AI inference workloads. NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs power the Graphics G7 bundle. On Windows, Graphics G7 is available for WorkSpaces Personal (using the Amazon DCV protocol) and WorkSpaces Core (using Bring Your Own Protocol (BYOP)), and supports Windows Server 2022, Windows Server 2025, and Windows 11. On Ubuntu Linux (22.04 and 26.04), Graphics G7 is available for WorkSpaces Personal using the Amazon DCV protocol. For more information, see [Amazon EC2 G7 instances](https://aws.amazon.com/ec2/instance-types/g7/).
 
 The Graphics G7 WorkSpace bundle is well-suited for the following use cases:
 + Graphic design
@@ -150,6 +150,8 @@ The Graphics G7 WorkSpace bundle is well-suited for the following use cases:
 + Video transcoding
 + Game streaming
 + Machine learning (ML) model training and AI inference
+
+Graphics WorkSpaces on Ubuntu Linux include graphics driver resiliency, which restores the GPU driver automatically. If an operating system update breaks the GPU driver, you don't need to take any action. The WorkSpace detects the problem the next time it starts and reinstalls the driver.
 
 **Note**
 Graphics G7 is available in US East (N. Virginia), US East (Ohio), US West (Oregon), and Europe (Frankfurt).

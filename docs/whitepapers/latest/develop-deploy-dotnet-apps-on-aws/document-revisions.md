@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Updated to modern .NET and current modernization tooling; removed discontinued services; style updates. | October 29, 2026 |
 | [Updated](#document-revisions) | Updated with new services and features | February 25, 2021 |
 | [Updated](#document-revisions) | Updated with new services and features | July 1, 2020 |
 | [Initial publication](#document-revisions) | Whitepaper first published | October 1, 2019 |

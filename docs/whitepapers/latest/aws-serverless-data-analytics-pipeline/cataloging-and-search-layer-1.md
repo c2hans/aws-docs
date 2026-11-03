@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/cataloging-and-search-layer-1.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Cataloging and search layer
 <a name="cataloging-and-search-layer-1"></a>
 

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/example-1-queries-against-an-amazon-s3-data-lake.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Example 1: Queries against an Amazon S3 data lake
 <a name="example-1-queries-against-an-amazon-s3-data-lake"></a>
 

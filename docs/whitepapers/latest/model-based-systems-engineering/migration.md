@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 # Migration
 <a name="migration"></a>
 
- You can *rehost* or *re-platform* MBSE on AWS. This section follows the [6-Rs of migration strategy](https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/) in AWS. We will start with *re-hosting* and then directly move to the other end of "Rs”, *refactoring*. The other 4-Rs in between these two extremes would be a combination of these.
+ You can *rehost* or *re-platform* MBSE on AWS. This section follows the [6-Rs of migration strategy](https://aws.amazon.com/blogs/enterprise-strategy/6-strategies-for-migrating-applications-to-the-cloud/) in AWS. We will start with *re-hosting* and then directly move to the other end of "Rs", *refactoring*. The other 4-Rs in between these two extremes would be a combination of these.
 
 ## Rehosting MBSE Application
 <a name="rehosting-mbse-application"></a>
@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  We recommend refactoring towards breaking the monoliths into microservices through APIs and AWS Managed Services. The microservices approach can further bring flexibility to your MBSE workloads as new technologies can be augmented through Restful APIs (**Amazon API Gateway**) and GraphQL APIs (**AWS AppSync**). This chapter is illustrated as *MBSE Backend* diagram further below.
 
- You can use any of the below recommendations - or adopt them all at once - during the refactoring. You may notice that you can bring **serverless technologies** for cost-effectiveness and to remove infrastructure management tasks altogether.
+ You can use any of the below recommendations - or adopt them all at once - during the refactoring. You might notice that you can bring **serverless technologies** for cost-effectiveness and to remove infrastructure management tasks altogether.
 
  You can start refactoring/rearchitecting **your Digital Thread with APIs**. One of the refactoring of MBSE Digital Threads is employing **Amazon API Gateway**, a fully-managed service that allows you to create, publish, maintain, monitor, and secure APIs at scale.
 
@@ -41,7 +41,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  You can even perform **low-fidelity MBSE simulations** with AWS Lambda as long as the simulation does not exceed the maximum 15 minutes of runtime duration, which is the limit of AWS Lambda, as of today. AWS Lambda can support 6 vCPus and up to 10 GB of memory, which provides a decent amount of computing power for most low-fidelity simulations.
 
- AWS Lambda can perform most of the MBSE simulations, not limited to CRUD operations. This can make **MBSE serverless**; therefore, you benefit from having ‘millisecond’ cost granularity, high-scalability, reliability, and zero-administration business logic can be achieved.
+ AWS Lambda can perform most of the MBSE simulations, not limited to CRUD operations. This can make **MBSE serverless**; therefore, you benefit from having 'millisecond' cost granularity, high-scalability, reliability, and zero-administration business logic can be achieved.
 
  Along with AWS Lambda, **AWS Step Functions** can also help you to create complex business logic with a **State Machine** to perform stateful operations. If you prefer an open-source approach for the workflow, you can consider using **Amazon Managed Workflows with Apache Airflow (AMWAA)**, which a managed service for Apache Airflow on AWS. You can keep temporary and permanent data on **Amazon S3** with virtually unlimited storage space, cost-effective storage with 11 nines of durability (99.999999999%).
 
@@ -51,7 +51,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  The next refactoring step is for the databases. MBSE typically uses both relational and non-relational databases. **Amazon DynamoDB** can serve as a low-latency key-value and document database for the MBSE. **Amazon DynamoDB** takes the burden of server management from you while providing a highly scalable and reliable key-value and document database required for MBSE.
 
- Amazon DynamoDB brings virtually unlimited throughput and storage with 11 9’s of durability. Globally shared multi-tenant and multi-region MBSE applications can benefit technologies such as **Global Tables**. In addition, your product development teams benefit from low-latency using the caching on Amazon DynamoDB with **DynamoDB Accelerator (DAX)**.
+ Amazon DynamoDB brings virtually unlimited throughput and storage with 11 9's of durability. Globally shared multi-tenant and multi-region MBSE applications can benefit technologies such as **Global Tables**. In addition, your product development teams benefit from low-latency using the caching on Amazon DynamoDB with **DynamoDB Accelerator (DAX)**.
 
  MBSE requires relational databases. As mentioned before, you can employ Amazon Aurora for your MySQL or PostgresSQL databases on the top of Amazon RDS. **Amazon Aurora** features a distributed, fault-tolerant, self-healing storage system that auto-scales up to 128TB per database instance. Similar to Global Tables, you can use **Amazon Aurora Global Databases** to employ an easily scalable relational database in MBSE globally read by consumers.
 

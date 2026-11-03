@@ -19,8 +19,6 @@ There are a number of services for working with language, allowing you to easily
 
 [Amazon Personalize](https://aws.amazon.com/personalize/) enables you to enhance your applications with real-time personalization and recommendations, by working with an activity stream from your application, identifying what is meaningful, and helping you serve personalized content to users.
 
-Finally, [Amazon Forecast](https://aws.amazon.com/forecast/) is an accurate time-series forecasting service, allowing your application to process historical time-series data and to produce meaningful forecasts based on trends in the data.
-
 Although the pre-trained AI services enable you to enhance your .NET applications with a rich set of capabilities, you can also build your own machine learning models. [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/) is a managed service that enables developers and data scientists to quickly build, train, and deploy machine learning models. Using the AWS .NET SDK, you can set up, configure, and execute Amazon SageMaker AI jobs, enabling you to push new ML boundaries.
 
 Access from .NET applications to all the pre-trained services and to Amazon SageMaker AI is available through the [AWS SDK for .NET](https://aws.amazon.com/sdk-for-net/).

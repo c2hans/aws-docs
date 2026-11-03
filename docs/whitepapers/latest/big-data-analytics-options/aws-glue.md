@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/aws-glue.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # AWS Glue
 <a name="aws-glue"></a>
 
@@ -24,8 +22,6 @@ Users can easily find and access data using the AWS Glue Data Catalog. Data engi
 + **Data transformation**
   + Visually transform data with a drag and drop interface using AWS Glue Studio. AWS Glue automatically generates the reusable and portable code using familiar technology – Python (or Scala) and Spark.
   + Serverless streaming ETL jobs in AWS Glue continuously consume data from streaming sources including Amazon Kinesis and Amazon MSK, clean and transform it in-flight, and make it available for analysis in seconds in your target data store.
-+ **Data replication**
-  + [AWS Glue Elastic Views](https://aws.amazon.com/glue/features/elastic-views/) enables you to create views over data stored in multiple types of AWS data stores, and materialize the views in a target data store of your choice by writing queries in PartiQL, an open-source SQL-compatible query language.
 + **Data preparation**
   + Deduplicate and cleanse data with built-in machine learning. The [FindMatches](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pyspark-transforms-findmatches.html) feature deduplicates and finds records that are imperfect matches of each other.
   + Normalize data without code using a visual interface. [AWS Glue DataBrew](https://aws.amazon.com/glue/features/databrew/) provides an interactive, point-and-click visual interface for users like data analysts and data scientists to clean and normalize data without writing code. Choose from over 250 built-in transformations.
@@ -37,7 +33,7 @@ Users can easily find and access data using the AWS Glue Data Catalog. Data engi
 ## Cost model
 <a name="cost-model-glue"></a>
 
-With AWS Glue jobs (crawler and ETL), AWS Glue DataBrew jobs, and AWS Glue Elastic Views, you pay an hourly rate, billed by the second with a 1-minute minimum billing duration. For the AWS Glue Data Catalog, you pay a simple monthly fee for storing and accessing the metadata. The first million objects stored are free, and the first million accesses are free. If you provision a development endpoint to interactively develop your ETL code, you pay an hourly rate, billed per minute. AWS Glue DataBrew interactive sessions bill for the total number of the sessions used. Each session is 30 minutes. A session is initiated when you open a DataBrew project.
+With AWS Glue jobs (crawler and ETL) and AWS Glue DataBrew jobs, you pay an hourly rate, billed by the second with a 1-minute minimum billing duration. For the AWS Glue Data Catalog, you pay a simple monthly fee for storing and accessing the metadata. The first million objects stored are free, and the first million accesses are free. If you provision a development endpoint to interactively develop your ETL code, you pay an hourly rate, billed per minute. AWS Glue DataBrew interactive sessions bill for the total number of the sessions used. Each session is 30 minutes. A session is initiated when you open a DataBrew project.
 
 See [AWS Glue pricing](https://aws.amazon.com/glue/pricing/) for more details.
 

@@ -2,14 +2,12 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/availability-and-continuity-management.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Availability and continuity management
 <a name="availability-and-continuity-management"></a>
 
  **Ensure availability of business-critical information, applications, and services. **
 
- Availability and continuity management, while included as one operational capability, have separate implications on the operations of your critical workloads. Continuity management deals with how your workload is architected to respond to a one-off event that causes a serious negative impact to your business. To maintain business continuity, you must work backwards from your organization’s objectives to develop a strategy for avoiding loss of data and reducing downtime where your workload is not usable for customers. Availability focuses on more common smaller scale disruptions, such as network issues, software bugs, component failures, and load spikes. Availability and disaster recovery, which helps facilitate continuity management, make up the resiliency of your workloads.
+ Availability and continuity management, while included as one operational capability, have separate implications on the operations of your critical workloads. Continuity management deals with how your workload is architected to respond to a one-off event that causes a serious negative impact to your business. To maintain business continuity, you must work backwards from your organization's objectives to develop a strategy for avoiding loss of data and reducing downtime where your workload is not usable for customers. Availability focuses on more common smaller scale disruptions, such as network issues, software bugs, component failures, and load spikes. Availability and disaster recovery, which helps facilitate continuity management, make up the resiliency of your workloads.
 
 ## Start
 <a name="start-7"></a>

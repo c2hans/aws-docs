@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/provisioning-identity-in-aws-iot-core-for-device-connections.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Provisioning identity in AWS IoT Core for device connections
 <a name="provisioning-identity-in-aws-iot-core-for-device-connections"></a>
 
@@ -16,12 +14,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 ## Just-in-Time Provisioning
 <a name="just-in-time-provisioning"></a>
 
- Devices that use Just-in-Time Provisioning (JITP) have certificates and private keys present on the device before onboarding to AWS IoT. The certificates must be signed with the customer’s designated CA, and that CA must be registered in AWS IoT. Certificates generated on AWS IoT cannot be used with the just-in-time method. The customer must know which account the device will connect to before provisioning.
+ Devices that use Just-in-Time Provisioning (JITP) have certificates and private keys present on the device before onboarding to AWS IoT. The certificates must be signed with your designated CA, and that CA must be registered in AWS IoT. Certificates generated on AWS IoT cannot be used with the just-in-time method. The customer must know which account the device will connect to before provisioning.
 
 ### Setup
 <a name="setup"></a>
 
- Using JITP, the device connects to AWS IoT Core, and the certificate’s signature is verified against the registered CA. After verification, a provisioning template registers the Thing and certificate, and assigns a policy to the device. The device maker is responsible for registering the signer CA and attaching a provisioning template to the CA.
+ Using JITP, the device connects to AWS IoT Core, and the certificate's signature is verified against the registered CA. After verification, a provisioning template registers the Thing and certificate, and assigns a policy to the device. The device maker is responsible for registering the signer CA and attaching a provisioning template to the CA.
 
 ### Device logic
 <a name="device-logic"></a>
@@ -38,9 +36,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 ### Setup
 <a name="setup-1"></a>
 
- When the device first connects to AWS IoT Core, the certificate’s signature is verified against the Certificate Authority and the certificate is registered in an inactive state. AWS IoT Core generates a Lifecycle event on the [MQTT](https://mqtt.org/) topic `$aws/events/certificates/registered/<caCertificateID>`. The device maker sets up an IoT Rule that cues an [AWS Lambda](https://aws.amazon.com/lambda/) function whenever a message is published on that topic.
+ When the device first connects to AWS IoT Core, the certificate's signature is verified against the Certificate Authority and the certificate is registered in an inactive state. AWS IoT Core generates a Lifecycle event on the [MQTT](https://mqtt.org/) topic `$aws/events/certificates/registered/<caCertificateID>`. The device maker sets up an IoT Rule that cues an [AWS Lambda](https://aws.amazon.com/lambda/) function whenever a message is published on that topic.
 
- The Lambda function can perform actions such as secondary validation against an allow list or Certificate Revocation List, register the device to a particular user on the cloud platform, or initiate additional onboarding workflows. The Lambda function sets the certificate’s state to Active after additional validation is completed. The Lambda function should also create the IoT Thing, set up the Policy, and associate both with the certificate.
+ The Lambda function can perform actions such as secondary validation against an allow list or Certificate Revocation List, register the device to a particular user on the cloud platform, or initiate additional onboarding workflows. The Lambda function sets the certificate's state to Active after additional validation is completed. The Lambda function should also create the IoT Thing, set up the Policy, and associate both with the certificate.
 
 ### Device logic
 <a name="device-logic-1"></a>
@@ -64,12 +62,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  Device makers are required to set up the necessary resources in AWS for each device. The resources are set up before the device connects to AWS IoT Core for the first time.
 
- Some vendors provide hardware security modules that are pre-provisioned with a private key and certificate. The certificate is signed with the vendor’s own CA, and the vendor provides a manifest of certificates to the device maker. The device maker is responsible for registering the certificates in each account and Region using the [AWS Management Console](https://aws.amazon.com/console/), [AWS IoT Control Plane API](https://docs.aws.amazon.com/iot/latest/apireference/Welcome.html), or the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI).
+ Some vendors provide hardware security modules that are pre-provisioned with a private key and certificate. The certificate is signed with the vendor's own CA, and the vendor provides a manifest of certificates to the device maker. The device maker is responsible for registering the certificates in each account and Region using the [AWS Management Console](https://aws.amazon.com/console/), [AWS IoT Control Plane API](https://docs.aws.amazon.com/iot/latest/apireference/Welcome.html), or the [AWS Command Line Interface](https://aws.amazon.com/cli/) (AWS CLI).
 
 ### Device logic
 <a name="device-logic-2"></a>
 
- The device’s TLS stack must support the SNI extension, and the AWS IoT Core endpoint is passed in the SNI string from the device. No additional device logic is required.
+ The device's TLS stack must support the SNI extension, and the AWS IoT Core endpoint is passed in the SNI string from the device. No additional device logic is required.
 
 ![A diagram that shows manual registration without a CA process.](https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/MultiAccountRegistration_sequence.png)
 
@@ -112,7 +110,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 
  If a device does not have the capability to securely generate unique keys or the manufacturing supply chain is not equipped to uniquely provision devices at manufacturing time, the device maker should use a shared claim certificate that gets loaded on the devices. AWS IoT Core provides a path for these devices to receive a unique identity when they first connect to AWS IoT Core.
 
- Fleet provisioning by claim requires device makers to use a shared claim certificate and key on all devices. The claim certificate should be unique per batch of devices to limit the number of devices affected in the event that the claim certificate’s private key is compromised and the certificate needs to be revoked. If the claim certificate is revoked, devices that share this certificate will no longer be able to use it to complete the provisioning process. The firmware containing the claim certificate is loaded by the contract manufacturer without the need to perform any customization. When the device establishes a connection with AWS IoT Core for the first time, it exchanges the claim certificate for a unique X.509 certificate signed by the AWS certificate authority and a private key. The device should send a unique token, such as an embedded hardware secret with its provisioning request that the fleet provisioning service can use to verify against an allow list using the pre-provisioning Lambda in order to validate the authenticity of the device.
+ Fleet provisioning by claim requires device makers to use a shared claim certificate and key on all devices. The claim certificate should be unique per batch of devices to limit the number of devices affected in the event that the claim certificate's private key is compromised and the certificate needs to be revoked. If the claim certificate is revoked, devices that share this certificate will no longer be able to use it to complete the provisioning process. The firmware containing the claim certificate is loaded by the contract manufacturer without the need to perform any customization. When the device establishes a connection with AWS IoT Core for the first time, it exchanges the claim certificate for a unique X.509 certificate signed by the AWS certificate authority and a private key. The device should send a unique token, such as an embedded hardware secret with its provisioning request that the fleet provisioning service can use to verify against an allow list using the pre-provisioning Lambda in order to validate the authenticity of the device.
 
 #### Setup
 <a name="setup-4"></a>

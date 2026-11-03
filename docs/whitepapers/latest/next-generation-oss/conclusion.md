@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/conclusion.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Conclusion
 <a name="conclusion"></a>
 
@@ -13,4 +11,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/c
 
  Developing and running OSS solutions on AWS helps CSPs transition to DSPs by providing the framework to develop a programmatic network, fully automated and fully integrated, and by enabling end-to-end 5G services that meet the specificity of your end users.
 
- To learn more about how telecommunications companies are leveraging AWS services, visit [Telecommunications on AWS](https://aws.amazon.com/telecom/).
+ To learn more about how telecommunications companies are using AWS services, visit [Telecommunications on AWS](https://aws.amazon.com/telecom/).

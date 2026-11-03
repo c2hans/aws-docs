@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-history-and-contributors) | Updated AWS IoT Greengrass guidance; removed discontinued services; style updates. | October 29, 2026 |
 | [Initial publication](#document-history-and-contributors) | First published. | May 21, 2021 |
 
 **Note**

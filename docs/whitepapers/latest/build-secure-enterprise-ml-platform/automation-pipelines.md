@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/automation-pipelines.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Automation pipelines
 <a name="automation-pipelines"></a>
 
@@ -51,7 +49,7 @@ When you create a pipeline with actions from multiple accounts, you must configu
 *Cross account pipeline access*
 
 In the preceding figure, **CodePipeline A** represents the training pipeline, and **CodePipeline A2** represents the production deployment pipeline.
-+ **CodePipeline Role A** — This role is assumed by CodePipeline A to run the model training pipeline in the Test / UAT account using CloudFormation. This role has access to the KMS key used for data encryption for CodePipeline A’s input / output bucket. It also has full access to the CodePipeline input / output bucket.
++ **CodePipeline Role A** — This role is assumed by CodePipeline A to run the model training pipeline in the Test / UAT account using CloudFormation. This role has access to the KMS key used for data encryption for CodePipeline A's input/output bucket. It also has full access to the CodePipeline input / output bucket.
 + **Cross Account Role B** — This role is assumed by CodePipeline Role A to perform operations in the Test / UAT account. Specifically, this role is used to run the CloudFormation script to set up the Step Functions state machine for the training workflow, and invoke the Step Functions state machine after it is created.
 + **Cross Account Role A2** — This role is assumed by CodePipeline A2 to run the model deployment pipeline in the production account.
 + **Cross Account Role C** — This role is assumed by CodePipeline Role A2 to perform operations in the Production account. Specifically, this role is used to run the CloudFormation script to set up the SageMaker AI endpoint and other related resources such as Lambda functions and API Gateway to front the SageMaker AI endpoint.

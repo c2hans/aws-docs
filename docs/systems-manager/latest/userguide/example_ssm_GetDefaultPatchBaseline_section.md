@@ -21,8 +21,8 @@ Output:
 
 ```
 {
-  "BaselineId": "pb-0713accee01612345",
-  "OperatingSystem": "WINDOWS"
+    "BaselineId": "pb-0713accee01612345",
+    "OperatingSystem": "WINDOWS"
 }
 ```
 **Example 2: To display the default patch baseline for Amazon Linux**

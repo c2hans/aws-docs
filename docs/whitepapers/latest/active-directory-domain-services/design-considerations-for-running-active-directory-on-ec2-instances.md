@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 # Design considerations for running Active Directory on EC2 instances
 <a name="design-considerations-for-running-active-directory-on-ec2-instances"></a>
 
- If you cannot use AWS Managed Microsoft AD and you have Windows workloads you want to deploy on AWS, you can still run Active Directory on EC2 instances in AWS. Depending on the number of Regions where you are deploying your solution, your Active Directory design may slightly differ. The following section provides a deployment guide and recommendation on how you can deploy Active Directory on EC2 instances in AWS.
+ If you cannot use AWS Managed Microsoft AD and you have Windows workloads you want to deploy on AWS, you can still run Active Directory on EC2 instances in AWS. Depending on the number of Regions where you are deploying your solution, your Active Directory design might slightly differ. The following section provides a deployment guide and recommendation on how you can deploy Active Directory on EC2 instances in AWS.
 
 ## Single Region deployment
 <a name="single-region-deployment"></a>
@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 +  Configure VPCs in a Region as a single Active Directory site and define Active Directory subnets accordingly. This configuration ensures that all of your clients correctly select the closest available DC.
 +  If you have multiple VPCs, you can centralize the Active Directory services in one of the existing VPCs or create a shared services VPC to centralize the domain controllers.
 +  You must ensure you have highly available network connectivity between VPCs, such as VPC peering. If you are connecting the VPCs using VPNs or other methods, ensure connectivity is highly available.
-+  If you want to use your self-managed Active Directory credentials to access AWS Services or third-party services, you can integrate your self-managed AD with AWS IAM and AWS Single Sign-On using AWS AD Connector or AWS Managed AD through a trust relationship. In these cases, AD Connector or AWS Managed AD must be deployed in the management account of your organization.
++  If you want to use your self-managed Active Directory credentials to access AWS Services or third-party services, you can integrate your self-managed AD with AWS IAM and AWS IAM Identity Center using AWS AD Connector or AWS Managed AD through a trust relationship. In these cases, AD Connector or AWS Managed AD must be deployed in the management account of your organization.
 
 ## Multi-region/global deployment of self-managed AD
 <a name="multi-regionglobal-deployment-of-self-managed-ad"></a>
@@ -41,12 +41,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
  Consider the following recommendations when deploying Active Directory in this architecture:
 +  Deploy at least two domain controllers in each Region. These domain controllers should be placed in different AZs for availability reasons.
 +  Configure VPCs in a region as a single Active Directory site and define Active Directory subnets accordingly. This configuration ensures all of your clients will correctly select the closest available domain controller.
-+  Ensure robust inter-Region connectivity exists between all of the Regions. Within AWS, you can leverage cross-Region VPC peering to achieve highly available private connectivity between the Regions. You can also leverage the Transit VPC solution to interconnect multiple regions.
++  Ensure robust inter-Region connectivity exists between all of the Regions. Within AWS, you can use cross-Region VPC peering to achieve highly available private connectivity between the Regions. You can also use the Transit VPC solution to interconnect multiple regions.
 
 ## Designing Active Directory sites and services topology
 <a name="designing-active-directory-sites-and-services-topology"></a>
 
- It’s important to define Active Directory sites and subnets correctly to avoid clients from using domain controllers that are located far away as this would cause increased latency. See [How Domain Controllers are Located in Windows](https://social.technet.microsoft.com/wiki/contents/articles/24457.how-domain-controllers-are-located-in-windows.aspx).
+ It's important to define Active Directory sites and subnets correctly to avoid clients from using domain controllers that are located far away as this would cause increased latency. See [How Domain Controllers are Located in Windows](https://social.technet.microsoft.com/wiki/contents/articles/24457.how-domain-controllers-are-located-in-windows.aspx).
 
  Follow these best practices for configuring sites and services:
 +  Configure one Active Directory site per AWS Region. If you are operating in multiple AWS Regions, we recommend configuring one Active Directory site for each of these Regions.

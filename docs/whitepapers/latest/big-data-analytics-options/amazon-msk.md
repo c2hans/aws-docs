@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/amazon-msk.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon Managed Streaming for Apache Kafka (Amazon MSK)
 <a name="amazon-msk"></a>
 
@@ -11,7 +9,7 @@ Amazon MSK is a fully managed service that makes it easy for you to build and ru
 
 Apache Kafka clusters are challenging to set up, scale, and manage in production. When you run Apache Kafka on your own, you need to provision servers, configure Apache Kafka manually, replace servers when they fail, orchestrate server patches and upgrades, architect the cluster for high availability, ensure data is durably stored and secured, set up monitoring and alarms, and carefully plan scaling events to support load changes. Amazon MSK makes it easy for you to build and run production applications on Apache Kafka without needing Apache Kafka infrastructure management expertise.
 
-With a few clicks in the [Amazon MSK console](https://console.aws.amazon.com/msk/home?region=us-east-1) (sign-in required), you can create a fully managed Apache Kafka cluster that follows Apache Kafka’s deployment best practices, or you can create your own cluster using your own custom configuration. After you create your desired configuration, Amazon MSK automatically provisions, configures, and manages the operations of your Apache Kafka cluster and [Apache ZooKeeper](https://zookeeper.apache.org/) nodes.
+With a few clicks in the [Amazon MSK console](https://console.aws.amazon.com/msk/home?region=us-east-1) (sign-in required), you can create a fully managed Apache Kafka cluster that follows Apache Kafka's deployment best practices, or you can create your own cluster using your own custom configuration. After you create your desired configuration, Amazon MSK automatically provisions, configures, and manages the operations of your Apache Kafka cluster and [Apache ZooKeeper](https://zookeeper.apache.org/) nodes.
 
 An Amazon MSK cluster is the primary Amazon MSK resource that you can create in your account.
 
@@ -38,7 +36,7 @@ The AWS Streaming Data Solution for Amazon MSK enables you to capture, store, pr
 ## Cost model
 <a name="cost-model-msk"></a>
 
-Amazon MSK has a simple “pay only for what you use” model. There are no minimum fees or upfront commitments. There are charges for the time your broker instances run, the storage used monthly, and standard data transfer fees for data in and out of the cluster. Apache Kafka broker instance usage is billed on an hourly basis (billed at one second resolution), with varying fees depending on the size of the Apache Kafka broker instance and active brokers in your Amazon MSK clusters. Amazon MSK charges for the amount of storage you provision in the cluster. This is calculated by adding up the GB per broker each hour and dividing by the number of hours in the month, resulting in a value in "GB-Month."
+Amazon MSK has a simple "pay only for what you use" model. There are no minimum fees or upfront commitments. There are charges for the time your broker instances run, the storage used monthly, and standard data transfer fees for data in and out of the cluster. Apache Kafka broker instance usage is billed on an hourly basis (billed at one second resolution), with varying fees depending on the size of the Apache Kafka broker instance and active brokers in your Amazon MSK clusters. Amazon MSK charges for the amount of storage you provision in the cluster. This is calculated by adding up the GB per broker each hour and dividing by the number of hours in the month, resulting in a value in "GB-Month."
 
 There are no additional charges for data transfer between brokers or between Apache ZooKeeper nodes and brokers. Standard [AWS data transfer charges](https://aws.amazon.com/ec2/pricing/on-demand/) are charged for data transferred in and out of Amazon MSK clusters. See [Amazon MSK pricing](https://aws.amazon.com/msk/pricing/) for further details.
 
@@ -53,7 +51,7 @@ Amazon MSK allows you to choose the right type and number of brokers for your cl
 Use the following recommendations so that your MSK cluster can be highly available during an update (such as when you're updating the broker type or Apache Kafka version, for example) or when Amazon MSK is replacing a broker.
 + Ensure that the replication factor (RF) is at least two for two-AZ clusters and at least three for three-AZ clusters. An RF of one can lead to offline partitions during a rolling update.
 + Set minimum in-sync replicas (minISR) to at most RF-1. A minISR that is equal to the RF can prevent producing to the cluster during a rolling update. A minISR of two allows three-way replicated topics to be available when one replica is offline.
-+ Ensure client connection strings include multiple brokers. Having multiple brokers in a client’s connection string allows for failover when a specific broker is offline for an update.
++ Ensure client connection strings include multiple brokers. Having multiple brokers in a client's connection string allows for failover when a specific broker is offline for an update.
 
 ## Scalability and elasticity
 <a name="scalability-and-elasticity-msk"></a>

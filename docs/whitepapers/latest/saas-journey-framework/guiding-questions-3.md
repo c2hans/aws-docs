@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/guiding-questions-3.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Guiding Questions
 <a name="guiding-questions-3"></a>
 
@@ -15,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 +  What are the team-level responsibilities during each stage of the customer acquisition process? For example, how does Sales interact with Customer Success to ensure effective onboarding?
 +  What are the measurable indicators that tell you if a customer is using the product efficiently when onboarding?
 +  What attributes are common to customers who struggled to realize value during the MVS phase (e.g. low technical acumen, thus slow to integrate and onboard)?
-+  What product utilization patterns were common to customers who succeeded or failed during the MVS phase?
++  What product usage patterns were common to customers who succeeded or failed during the MVS phase?
 +  What company skill gaps do you need to address (train, outsource, hire) prior to launch?
 +  What technology and educational material can you introduce to reduce friction for customers?
 
@@ -34,8 +32,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 ## Set customer retention and expansion objectives
 <a name="set-customer-retention-and-expansion-objectives-1"></a>
 +  What is an acceptable annual churn (revenue)?
-+  How much churn may come from down-sizing customers to more-appropriate offer tiers?
-+  How much churn may come from customers declining to renew, or exiting early?
++  How much churn might come from down-sizing customers to more-appropriate offer tiers?
++  How much churn might come from customers declining to renew, or exiting early?
 +  How complex are expansion and renewal negotiations?
 +  What are your CEC and CRC budgets?
 +  How long can you expect to retain a customer?
@@ -47,7 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 <a name="determine-appropriate-sales-motions-and-compensation-incentives-1"></a>
 +  Do you align dedicated sales representatives to specific offer tiers/geographies/verticals? Will this differ from your legacy operation?
 +  How many sales representatives can you dedicate to the SaaS model, given CAC budgets?
-+  Can you leverage a remote inside sales team to generate qualified leads and/or deliver solution demos, as part of the pre-sales process?
++  Can you use a remote inside sales team to generate qualified leads and/or deliver solution demos, as part of the pre-sales process?
 +  What information do you need to discover during the pre-sales process to properly qualify prospects likely-to-succeed, and thus reduce downstream churn?
 +  Will the customer acquisition quota include customers migrated from legacy solutions?
 +  Who will own renewals and expansion revenue quotas?
@@ -87,7 +85,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 <a name="launch-and-product-communication-strategy-1"></a>
 +  What is important for your target audience? What type of information do they need or expect from you?
 +  What is your communication goal (e.g. number of users/accounts reach, product/feature adoption, revenue, etc.)?
-+  What’s the best way to reach out to your target audience? How can you leverage multiple channels to create an immersive experience?
++  What's the best way to reach out to your target audience? How can you use multiple channels to create an immersive experience?
 +  How are your customers impacted? Do some of your customers need additional support to communicate the product updates and train their employees?
 +  What should be the timing of this communication? How much time do your customers need to adopt new features/releases?
 +  Do you have any commitments to let customers know certain changes in advance?

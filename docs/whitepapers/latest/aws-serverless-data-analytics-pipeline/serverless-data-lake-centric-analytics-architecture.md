@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/serverless-data-lake-centric-analytics-architecture.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Serverless data lake centric analytics architecture
 <a name="serverless-data-lake-centric-analytics-architecture"></a>
 

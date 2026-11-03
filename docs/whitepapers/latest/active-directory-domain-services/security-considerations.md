@@ -31,7 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 ## Multi-factor authentication
 <a name="multi-factor-authentication"></a>
 
- Multi-factor authentication (MFA) is a simple best practice that adds an extra layer of protection on top of your sign-in credentials. With MFA enabled, when users sign in to the AWS Management Console, they are prompted for their sign-in credentials (the first factor—what they “know”), then prompted for an authentication response from their AWS MFA device (the second factor—what they “have”). Taken together, these multiple factors provide increased security for your AWS account settings and resources. We recommend enabling MFA on all of your privileged accounts regardless of whether you are using IAM or federating through SSO.
+ Multi-factor authentication (MFA) is a simple best practice that adds an extra layer of protection on top of your sign-in credentials. With MFA enabled, when users sign in to the AWS Management Console, they are prompted for their sign-in credentials (the first factor—what they "know"), then prompted for an authentication response from their AWS MFA device (the second factor—what they "have"). Taken together, these multiple factors provide increased security for your AWS account settings and resources. We recommend enabling MFA on all of your privileged accounts regardless of whether you are using IAM or federating through SSO.
 
 ## AWS account security
 <a name="aws-account-security"></a>
@@ -54,9 +54,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  The following points are some of the best practices to secure domain controllers running on AWS:
 +  Secure the AWS account where the domain controllers are running by following least privilege and role-based access control.
-+  Ensure unauthorized users don’t have access in your AWS account to create/access Amazon Elastic Block Store (Amazon EBS) snapshots, launch or terminate EC2 Instances, or create/copy EBS volumes.
-+  Ensure you are deploying your domain controllers in a private subnet without internet access. Ensure that subnets where domain controllers are running don’t have a route to a NAT gateway or other device that would provide outbound internet access.
++  Ensure unauthorized users don't have access in your AWS account to create/access Amazon Elastic Block Store (Amazon EBS) snapshots, launch or terminate EC2 Instances, or create/copy EBS volumes.
++  Ensure you are deploying your domain controllers in a private subnet without internet access. Ensure that subnets where domain controllers are running don't have a route to a NAT gateway or other device that would provide outbound internet access.
 +  Keep your security patches up-to-date on your domain controllers. We recommend you first test the security patches in a non-production environment.
 +  Restrict ports and protocols that are allowed into the domain controllers by using security groups. Allow remote management like remote desktop protocol (RDP) only from trusted networks.
-+  Leverage the Amazon EBS encryption feature to encrypt the root and additional volumes of your domain controllers and use [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms) for key management.
++  Use the Amazon EBS encryption feature to encrypt the root and additional volumes of your domain controllers and use [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms) for key management.
 +  Follow [Microsoft-recommended security configuration baselines](https://www.microsoft.com/en-us/download/details.aspx?id=55319) and [Best Practices for Securing Active Directory](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory).

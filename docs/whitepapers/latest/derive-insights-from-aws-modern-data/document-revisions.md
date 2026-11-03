@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Removed a discontinued analytics feature; updated Amazon Redshift AQUA; style updates. | October 29, 2026 |
 | [Whitepaper title changed](#document-revisions) | This whitepaper was renamed from *Derive Insights from AWS Lake House Architecture* to *Derive Insights from AWS Modern Data*. | March 22, 2022 |
 | [Initial publication](#document-revisions) | Whitepaper first published. | June 3, 2021 |
 

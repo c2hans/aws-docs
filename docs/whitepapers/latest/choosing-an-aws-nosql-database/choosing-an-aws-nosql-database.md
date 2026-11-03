@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/choosing-an-aws-nosql-database.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Choosing an AWS NoSQL Database
 <a name="choosing-an-aws-nosql-database"></a>
 
@@ -29,7 +27,7 @@ Publication date: **April 25, 2023** ([Document revisions](document-revisions.md
 
 To address these challenges, NoSQL databases have gained increased acceptance when developing modern business systems. NoSQL databases are purpose-built for specific data models, and allow for flexible schemas to meet these modern storage and heterogeneous data requirements.
 
- At AWS, we recognize that different NoSQL database technologies solve different problems. Consider this [AWS Bookstore Demo Application](https://github.com/aws-samples/aws-bookstore-demo-app) as an example. It contains multiple experiences such a shopping cart, product search, recommendations, and a “top sellers” list.
+ At AWS, we recognize that different NoSQL database technologies solve different problems. Consider this [AWS Bookstore Demo Application](https://github.com/aws-samples/aws-bookstore-demo-app) as an example. It contains multiple experiences such a shopping cart, product search, recommendations, and a "top sellers" list.
 
  For each of these use cases, the app makes use of a purpose-built database, so the developer never has to compromise on functionality, performance, or scale. However, selecting the right NoSQL database can be a complex and challenging process due to the different types of NoSQL databases available, each with its own strengths and weaknesses.
 

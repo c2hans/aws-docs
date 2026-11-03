@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/foundational-security-principles-and-best-practices.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Foundational security principles and best practices
 <a name="foundational-security-principles-and-best-practices"></a>
 
@@ -23,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 
    Create secure architectures, including the implementation of controls that are defined and managed as code in version-controlled templates. AWS WAF, for example, can be completely administered through APIs that make security automation easier, enabling rapid rule propagation and fast incident response.
 
-   The AWS WAF Security Automations solution uses AWS CloudFormation to automatically deploy a set of AWS WAF rules designed to filter common web-based attacks. Users can select from preconfigured protective features that define the rules included in an AWS WAF web access control list (web ACL). After the solution deploys, AWS WAF begins inspecting web requests to the user’s existing Amazon CloudFront distributions or Application Load Balancers, and blocks them when applicable.
+   The AWS WAF Security Automations solution uses AWS CloudFormation to automatically deploy a set of AWS WAF rules designed to filter common web-based attacks. Users can select from preconfigured protective features that define the rules included in an AWS WAF web access control list (web ACL). After the solution deploys, AWS WAF begins inspecting web requests to the user's existing Amazon CloudFront distributions or Application Load Balancers, and blocks them when applicable.
 
    [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) also has automation features, such as automatically enforcing mandatory security policies that you define across existing and newly created resources, and automatically protecting against various types of DDoS attacks such as [UDP reflection attacks](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/udp-reflection-attacks.html), SYN flood, [DNS query flood](https://en.wikipedia.org/wiki/DNS_Flood), and [HTTP flood](https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/application-layer-attacks.html) attacks across accounts.
 
@@ -39,7 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 ## Compliance and the Shared Responsibility Model
 <a name="compliance-and-the-shared-responsibility-model"></a>
 
- The [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) (SRM) is an important concept applied to the relationship and security responsibilities between AWS and its customers. AWS provides and protects the foundational hardware, infrastructure, and software aspects of the cloud – including the edge – that customers build their applications on. However, it is the customer’s responsibility to choose how they architect their applications on AWS, and how they choose to expose those applications to the internet. Security at the edge focuses on a defense in depth strategy.
+ The [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) (SRM) is an important concept applied to the relationship and security responsibilities between AWS and its customers. AWS provides and protects the foundational hardware, infrastructure, and software aspects of the cloud – including the edge – that customers build their applications on. However, it is the customer's responsibility to choose how they architect their applications on AWS, and how they choose to expose those applications to the internet. Security at the edge focuses on a defense in depth strategy.
 
  Customers always control their data, including encryption, storage, movement, and retention. AWS services can help customers guard identity and access, protect data, secure applications, and meet their compliance objectives.
 

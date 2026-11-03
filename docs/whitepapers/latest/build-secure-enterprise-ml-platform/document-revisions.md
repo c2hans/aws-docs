@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/document-revisions.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Document history and contributors
 <a name="document-revisions"></a>
 
@@ -11,6 +9,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Updated service names (AWS IAM Identity Center); style updates. | October 29, 2026 |
 | [Minor update](#document-revisions) | Fix non-inclusive language. | April 6, 2022 |
 | [Initial publication](#document-revisions) | First published. | May 11, 2021 |
 

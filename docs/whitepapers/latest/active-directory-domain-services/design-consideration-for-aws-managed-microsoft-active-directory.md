@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 +  The business requires strong fiscal and budgetary billing isolation between specific workloads, business units, or cost centers.
 +  The business requires administrative isolation between workloads.
 +  The business requires a particular workload to operate within specific AWS service limits and not impact the limits of another workload.
-+  The business’s workloads depend on specific instance reservations to support high availability (HA) or disaster recovery (DR) capacity requirements.
++  The business's workloads depend on specific instance reservations to support high availability (HA) or disaster recovery (DR) capacity requirements.
 
 ## Single account, AWS Region, and VPC
 <a name="single-account-aws-region-and-vpc"></a>
@@ -56,8 +56,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 
  After you add your new Region, you can do any of the following tasks:
 +  Add more domain controllers to the new Region for horizontal scalability.
-+  Share your directory with more AWS accounts per Region. Directory sharing configurations are not replicated from the primary Region and you may have different sharing configuration in different region based on your security requirements.
-+  Enable log forwarding to retrieve your directory’s security logs using Amazon CloudWatch Logs from the new Region. When you enable log forwarding, you must provide a log group name in each Region where you replicated your directory.
++  Share your directory with more AWS accounts per Region. Directory sharing configurations are not replicated from the primary Region and you might have different sharing configuration in different region based on your security requirements.
++  Enable log forwarding to retrieve your directory's security logs using Amazon CloudWatch Logs from the new Region. When you enable log forwarding, you must provide a log group name in each Region where you replicated your directory.
 +  Enable Amazon Simple Notification Service (Amazon SNS) monitoring for the new Region to track your directory health status per Region.
 
 ## Enable Multi-Factor Authentication for AWS Managed Microsoft AD
@@ -74,7 +74,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 ## Active Directory permissions delegation
 <a name="active-directory-permissions-delegation"></a>
 
- When you use AWS Managed Microsoft AD, AWS assumes responsibility for some of the service level tasks so that you may focus on other business critical tasks.
+ When you use AWS Managed Microsoft AD, AWS assumes responsibility for some of the service level tasks so that you can focus on other business critical tasks.
 
  The following service-level tasks are automatically performed by AWS
 +  Taking snapshots of the Directory Service and providing the ability to recover data.
@@ -86,6 +86,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 +  Managing and monitoring Active Directory replication.
 +  Managing Active Directory sites and networks configuration.
 
- With AWS Managed Microsoft AD, you also may delegate administrative permissions to some groups in your organization. These permissions include managing users, joining computers to the domain, managing group policies and password policies, managing DNS, DHCP, DFS, RAS, CA and other services. The full list of permissions that can be delegated is described in the [AWS Directory Service Administration Guide.](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
+ With AWS Managed Microsoft AD, you also can delegate administrative permissions to some groups in your organization. These permissions include managing users, joining computers to the domain, managing group policies and password policies, managing DNS, DHCP, DFS, RAS, CA and other services. The full list of permissions that can be delegated is described in the [AWS Directory Service Administration Guide.](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html)
 
  Work with all teams that are using Active Directory services in your organization and create a list with all of the permissions that must be delegated. Plan security groups for different administrative roles and use AWS Managed Microsoft AD delegated groups to assign permissions. Check the [AWS Directory Service Administration Guide](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_getting_started_what_gets_created.html) to make sure that it is possible to delegate all of the required permissions.

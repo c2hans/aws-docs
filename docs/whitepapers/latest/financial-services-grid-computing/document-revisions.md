@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Converted service names to shared entities, replaced hardcoded documentation links with resolvable references, and applied editorial style updates. | October 29, 2026 |
 | [Whitepaper updated](#document-revisions) | Updates throughout whitepaper to reflect current AWS capabilities and service features. | August 9, 2024 |
 | [Whitepaper updated](#document-revisions) | Updates to reflect AWS service improvements, more modern and inclusive terminology, and new cloud-native architectures. | August 24, 2021 |
 | [Whitepaper updated](#document-revisions) | Updates to services, diagrams, and topology. | September 1, 2019 |

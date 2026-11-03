@@ -19,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
    +  If you are unable to protect insecure industrial assets, isolate or disconnect them from the network.
 
 1.  **Maintain an asset inventory of all IIoT assets, including IT assets required to maintain IIoT operations. Categorize them by safety, criticality, ability to patch, and other actionable criteria.**
-   +  Maintain an updated inventory of devices that don’t support modern security controls. Isolate them from the rest of the other OT and IIoT devices by network segmentation. Create a plan to replace them with devices that do support modern security controls.
+   +  Maintain an updated inventory of devices that don't support modern security controls. Isolate them from the rest of the other OT and IIoT devices by network segmentation. Create a plan to replace them with devices that do support modern security controls.
    +  Conduct security architecture reviews as assets move or become dependent on new systems.
    +  Consider if integrating the IIoT asset information into your enterprise asset management system provides any benefit. Assess the business risk of having a segmented inventory system.
    +  Create and maintain an up-to-date OT and IIoT network architecture showing how these assets are interconnected along their relationships (asset hierarchies).
@@ -68,6 +68,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 
 1.  **Create and test business continuity and recovery plans.**
    +  Focus on ensuring resilience of Industry 4.0 systems by creating a business continuity plan and disaster recovery plan. Test the plans periodically and adapt them according to lessons learned from tests and actual security incidents.
-   +  Perform threat and risk assessment of OT and IIoT, and supporting IT systems, and develop written procedures on how to return to the normal, well-defined, state of operation tailored to the assessment’s results.
+   +  Perform threat and risk assessment of OT and IIoT, and supporting IT systems, and develop written procedures on how to return to the normal, well-defined, state of operation tailored to the assessment's results.
    +  In business continuity and recovery plans, include third-party aspects.
    +  Conduct ongoing security testing across OT and IIoT periodically to test devices and OT systems, edge gateways, networks, and communication and cloud services.

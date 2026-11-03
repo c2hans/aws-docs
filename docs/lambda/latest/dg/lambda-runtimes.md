@@ -42,7 +42,6 @@ We recommend customers upgrade to an Amazon Linux 2023-based runtime as soon as 
 | Python 3.13 | `python3.13` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Python 3.12 | `python3.12` | Amazon Linux 2023 |  Oct 31, 2028  |  Nov 30, 2028  |  Jan 10, 2029  |
 | Python 3.11 | `python3.11` | Amazon Linux 2 |  Jun 30, 2027  |  Jul 29, 2027  |  Aug 31, 2027  |
-| Python 3.10 | `python3.10` | Amazon Linux 2 |  Oct 31, 2026  |  Jul 29, 2027  |  Aug 31, 2027  |
 | Java 25 | `java25` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Java 21 | `java21` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
 | Java 17 | `java17.al2023` | Amazon Linux 2023 |  Jun 30, 2029  |  Jul 31, 2029  |  Aug 31, 2029  |
@@ -166,6 +165,7 @@ The following runtimes have reached end of support:
 
 | Name | Identifier | Operating system | Deprecation date | Block function create | Block function update |
 | --- | --- | --- | --- | --- | --- |
+| Python 3.10 |  python3.10  | Amazon Linux 2 |  Oct 31, 2026  |  Jul 29, 2027  |  Aug 31, 2027  |
 | OS-only Runtime |  provided.al2  | Amazon Linux 2 |  Jul 31, 2026  |  Jul 29, 2027  |  Aug 31, 2027  |
 | Node.js 20 |  nodejs20.x  | Amazon Linux 2023 |  Apr 30, 2026  |  Jul 29, 2027  |  Aug 31, 2027  |
 | Ruby 3.2 |  ruby3.2  | Amazon Linux 2 |  Mar 31, 2026  |  Jul 29, 2027  |  Aug 31, 2027  |

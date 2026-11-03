@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise-economics-with-serverless/reference-architectures.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Reference architectures
 <a name="reference-architectures"></a>
 +  [Web Applications](https://github.com/awslabs/lambda-refarch-webapp)

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/ml-platform-monitoring.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # ML Platform Monitoring
 <a name="ml-platform-monitoring"></a>
 
@@ -23,7 +21,7 @@ See the following figure for a sample monitoring architecture for the three moni
 
 *Sample ML platform monitoring architecture*
 
-You can configure your AWS environment to monitor automation pipelines for pipeline status, and trigger notification when important events are detected. CodePipeline and CodeBuild provide event status on pipeline and build runs such as “in-progress” or “succeeded.” They also integrate with CloudWatch Events to log events to S3 for detailed analysis, or send out notifications via SNS service. For more information, see [Monitoring pipelines ](https://docs.aws.amazon.com/codepipeline/latest/userguide/monitoring.html) and [Monitoring AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/monitoring-builds.html).
+You can configure your AWS environment to monitor automation pipelines for pipeline status, and trigger notification when important events are detected. CodePipeline and CodeBuild provide event status on pipeline and build runs such as "in-progress" or "succeeded." They also integrate with CloudWatch Events to log events to S3 for detailed analysis, or send out notifications via SNS service. For more information, see [Monitoring pipelines ](https://docs.aws.amazon.com/codepipeline/latest/userguide/monitoring.html) and [Monitoring AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/monitoring-builds.html).
 
 ## Model building monitoring
 <a name="model-building-monitoring"></a>

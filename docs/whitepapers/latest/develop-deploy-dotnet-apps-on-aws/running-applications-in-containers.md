@@ -8,9 +8,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet
 <a name="running-applications-in-containers"></a>
 
 Containers allow applications to be bundled with their own libraries and configuration files, and then executed in isolation on a single OS kernel, bringing a number of benefits, including:
-+  **Isolation and high-density** — Containerization ensures application isolation in terms of security and data access, and as resource allocation. It’s a reliable solution to run multiple tasks or applications on the same host. This approach enables you to maximize overall resource utilization and minimize idle capacity, also known as a “high-density” deployment.
++  **Isolation and high-density** — Containerization ensures application isolation in terms of security and data access, and as resource allocation. It's a reliable solution to run multiple tasks or applications on the same host. This approach enables you to maximize overall resource use and minimize idle capacity, also known as a "high-density" deployment.
 +  **Runtime packaging and seamless deployment** — Containers include application code or binaries along with all the dependencies needed to keep the application running. This approach ensures the application behaves consistently in all environments, from a developer laptop to a production environment. It also simplifies migrating applications from one host to another.
-+  **High availability (HA)** — Container orchestrators provide an abstraction layer on top of conventional hosting environments and keep track of running containers. You don’t have to run applications, just tell the orchestrator which applications are expected to run. The orchestration engine keeps track of the existing state, evaluates it against the expected state, and corrects as needed. If an application goes down, the orchestrator immediately spins up another container to run your application in the next available host.
++  **High availability (HA)** — Container orchestrators provide an abstraction layer on top of conventional hosting environments and keep track of running containers. You don't have to run applications, just tell the orchestrator which applications are expected to run. The orchestration engine keeps track of the existing state, evaluates it against the expected state, and corrects as needed. If an application goes down, the orchestrator immediately spins up another container to run your application in the next available host.
 +  **Resource management for distributed systems** — Containerization is an effective approach to run microservices and other types of distributed systems. The deployment abstraction provided by containers enables you to focus on your applications rather than their dependencies with underlying hosts and infrastructure.
 
 The following sections discuss the four container services available in AWS.
@@ -49,10 +49,12 @@ Amazon ECR is integrated with other AWS services, such as AWS IAM, and provides 
 
 By letting you focus on designing and building your applications and removing the need to manage the underlying infrastructure, AWS Fargate can help reduce the operational overheads of using containers.
 
-AWS Fargate supports Linux containers and is a powerful option for running .NET 5 applications. For details, see [this entry](https://aws.amazon.com/blogs/compute/hosting-asp-net-core-applications-in-amazon-ecs-using-aws-fargate/) on the [AWS Compute Blog](https://aws.amazon.com/blogs/compute/).
+AWS Fargate supports Linux containers and is a powerful option for running modern .NET applications. For details, see [this entry](https://aws.amazon.com/blogs/compute/hosting-asp-net-core-applications-in-amazon-ecs-using-aws-fargate/) on the [AWS Compute Blog](https://aws.amazon.com/blogs/compute/).
 
 **AWS App2Container (A2C)**
 
 [AWS App2Container](https://aws.amazon.com/app2container/) is a tool provided by AWS to help you modernize .NET and Java applications into containerized applications. Containerizing existing applications requires you to identify application dependencies, network port configurations, and software delivery process. These tasks can be manual, time consuming, and error prone.
 
 Using App2Container, you simply select the applications you want to containerize, and A2C analyzes your applications and automatically generates a container image that is configured with the correct dependencies, network configurations, and deployment instructions for ECS or Kubernetes. A2C provisions, through CloudFormation, the cloud infrastructure and [CI/CD](https://en.wikipedia.org/wiki/CI/CD) pipelines required to deploy the containerized .NET or Java application into production.
+
+App2Container is no longer open to new customers as of November 7, 2025; for new modernization, use AWS Transform for .NET.

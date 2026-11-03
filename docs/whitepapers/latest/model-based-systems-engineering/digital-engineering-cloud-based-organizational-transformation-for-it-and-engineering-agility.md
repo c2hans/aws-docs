@@ -15,7 +15,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
 
  The next stages of *migration* and *innovation* are when the value of the cloud becomes evident. These are the stages where our customers benefit from differentiated experience.
 
- With migration, customers start utilizing scalability, elasticity and cost savings; generally, via hybrid solutions gradually moving applications from on-premises to cloud. In time, customer start to utilize cloud native technologies via the **experimentation culture** which is enabled via the IaS and IT agility of the cloud.
+ With migration, customers start using scalability, elasticity and cost savings; generally, via hybrid solutions gradually moving applications from on-premises to cloud. In time, customer start to use cloud native technologies via the **experimentation culture** which is enabled via the IaS and IT agility of the cloud.
 
  This kicks in the innovation phase, where customers modernize their applications and add extra features such as **AI/ML technologies, analytics, serverless**, and more.
 

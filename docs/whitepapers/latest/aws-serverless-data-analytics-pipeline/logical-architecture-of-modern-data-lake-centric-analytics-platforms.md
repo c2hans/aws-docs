@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/logical-architecture-of-modern-data-lake-centric-analytics-platforms.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Logical architecture of modern data lake centric analytics platforms
 <a name="logical-architecture-of-modern-data-lake-centric-analytics-platforms"></a>
 
@@ -36,12 +34,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 ## Processing layer
 <a name="processing-layer"></a>
 
- The processing layer is responsible for transforming data into a consumable state through data validation, cleanup, normalization, transformation, and enrichment. It’s responsible for advancing the consumption readiness of datasets along the raw, cleaned, and curated zones and registering metadata for the cleaned and transformed data into the cataloging layer. The processing layer is composed of purpose-built data- processing components to match the right dataset characteristic and processing task at hand. The processing layer can handle large data volumes and support schema-on- read, partitioned data, and diverse data formats. The processing layer also provides the ability to build and orchestrate multi-step data processing pipelines that use purpose- built components for each step.
+ The processing layer is responsible for transforming data into a consumable state through data validation, cleanup, normalization, transformation, and enrichment. It's responsible for advancing the consumption readiness of datasets along the raw, cleaned, and curated zones and registering metadata for the cleaned and transformed data into the cataloging layer. The processing layer is composed of purpose-built data- processing components to match the right dataset characteristic and processing task at hand. The processing layer can handle large data volumes and support schema-on- read, partitioned data, and diverse data formats. The processing layer also provides the ability to build and orchestrate multi-step data processing pipelines that use purpose- built components for each step.
 
 ## Consumption layer
 <a name="consumption-layer"></a>
 
- The consumption layer is responsible for providing scalable and performant tools to gain insights from the vast amount of data in the data lake. It supports analytics across all personas across the organization through several purpose-built analytics tools that support analysis methods, including SQL, batch analytics, BI dashboards, reporting, and ML. The consumption layer natively integrates with the data lake’s storage, cataloging, and security layers. Components in the consumption layer support schema- on-read, a variety of data structures and formats, and use data partitioning for cost and performance optimization.
+ The consumption layer is responsible for providing scalable and performant tools to gain insights from the vast amount of data in the data lake. It supports analytics across all personas across the organization through several purpose-built analytics tools that support analysis methods, including SQL, batch analytics, BI dashboards, reporting, and ML. The consumption layer natively integrates with the data lake's storage, cataloging, and security layers. Components in the consumption layer support schema- on-read, a variety of data structures and formats, and use data partitioning for cost and performance optimization.
 
 ## Security and governance layer
 <a name="security-and-governance-layer"></a>

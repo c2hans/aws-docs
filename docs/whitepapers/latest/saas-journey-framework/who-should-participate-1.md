@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/who-should-participate-1.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Who Should Participate?
 <a name="who-should-participate-1"></a>
 

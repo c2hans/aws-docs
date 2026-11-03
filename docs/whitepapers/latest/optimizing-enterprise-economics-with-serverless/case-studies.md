@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise-economics-with-serverless/case-studies.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Case studies
 <a name="case-studies"></a>
 
@@ -24,7 +22,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 +  Amazon DynamoDB offers a simple storage solution for the session and per-user state.
 +  Amazon Cognito provides an easy way to handle end-user registration, authentication, and access control to resources.
 +  Developers can use AWS Serverless Application Model (SAM ) to describe the various elements of an application.
-+  AWS CodeStar can set up a CI/CD toolchain with just a few clicks.
 
  To learn more, see the whitepaper [AWS Serverless Multi-Tier Architectures](https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier-architectures-api-gateway-lambda/welcome.html), which provides a detailed examination of patterns for building serverless web applications. For complete reference architectures, see [Serverless Reference Architecture for creating a Web Application](https://github.com/awslabs/lambda-refarch-webapp) and [Serverless Reference Architecture for creating a Mobile Backend](https://github.com/awslabs/lambda-refarch-mobilebackend) on GitHub.
 
@@ -33,7 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 
  A luxury household name, Neiman Marcus has a reputation for delivering a first-class, personalized customer service experience. To modernize and enhance that experience, the company wanted to develop Connect, an omnichannel digital selling application that would empower associates to view rich, personalized customer information with the goal of making each customer interaction unforgettable.
 
- Choosing a serverless architecture with mobile development solutions on Amazon Web Services (AWS) enabled the development team to launch the app much faster than in the 4 months it had originally planned. “Using AWS cloud-native and serverless technologies, we increased our speed to market by at least 50 percent and were able to accelerate the launch of Connect,” says Sriram Vaidyanathan, senior director of omni engineering at Neiman Marcus.
+ Choosing a serverless architecture with mobile development solutions on Amazon Web Services (AWS) enabled the development team to launch the app much faster than in the 4 months it had originally planned. "Using AWS cloud-native and serverless technologies, we increased our speed to market by at least 50 percent and were able to accelerate the launch of Connect," says Sriram Vaidyanathan, senior director of omni engineering at Neiman Marcus.
 
  This approach also greatly reduced app-building costs and provided developers with more agility for the development and rapid deployment of updates. The app elastically scales to support traffic at any volume for greater cost efficiency, and it has increased associate productivity. For more information, see the [Neiman Marcus case study](https://aws.amazon.com/solutions/case-studies/neimanmarcus-case-study).
 
@@ -49,7 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 
  iRobot, which makes robots such as the Roomba cleaning robot, uses AWS Lambda in conjunction with the AWS IoT service to create a serverless backend for its IoT platform. As a popular gift on any holiday, iRobot experiences increased traffic on these days.
 
- While huge traffic spikes could also mean huge headaches for the company and its customers alike, iRobot’s engineering team doesn’t have to worry about managing infrastructure or manually writing code to handle availability and scaling by running on serverless. This enables them to innovate faster and stay focused on customers. Watch the AWS re:Invent 2020 video [Building the next generation of residential robots](https://www.youtube.com/watch?v=-1PDC6UOFtE) for more information.
+ While huge traffic spikes could also mean huge headaches for the company and its customers alike, iRobot's engineering team doesn't have to worry about managing infrastructure or manually writing code to handle availability and scaling by running on serverless. This enables them to innovate faster and stay focused on customers. Watch the AWS re:Invent 2020 video [Building the next generation of residential robots](https://www.youtube.com/watch?v=-1PDC6UOFtE) for more information.
 
 ## Data processing
 <a name="data-processing"></a>
@@ -66,14 +63,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 
  The Financial Industry Regulatory Authority (FINRA) used AWS Lambda to build a serverless data processing solution that enables them to perform half a trillion data validations on 37 billion stock market events daily.
 
- In his talk at AWS re:Invent 2016 entitled [The State of Serverless Computing (SVR311)](https://youtu.be/AcGv3qUrRC4?t=1153), Tim Griesbach, Senior Director at FINRA, said, “We found that Lambda was going to provide us with the best solution for this serverless cloud solution. With Lambda, the system was faster, cheaper, and more scalable. So at the end of the day, we’ve reduced our costs by over 50 percent, and we can track it daily, even hourly.”
+ In his talk at AWS re:Invent 2016 entitled [The State of Serverless Computing (SVR311)](https://youtu.be/AcGv3qUrRC4?t=1153), Tim Griesbach, Senior Director at FINRA, said, "We found that Lambda was going to provide us with the best solution for this serverless cloud solution. With Lambda, the system was faster, cheaper, and more scalable. So at the end of the day, we've reduced our costs by over 50 percent, and we can track it daily, even hourly."
 
 ### Customer example – Toyota Connected
 <a name="customer-example-toyota-connected"></a>
 
  Toyota Connected is a subsidiary of Toyota and a technology company offering connected platforms, big data, mobility services and other automotive-related services.
 
- Toyota Connected chose serverless computing architecture to build its Toyota Mobility Services Platform, leveraging AWS Lambda, Amazon Kinesis Data Streams (Amazon KDS), and Amazon S3 to offer personalized, localized, and predictive data to enhance the driving experience.
+ Toyota Connected chose serverless computing architecture to build its Toyota Mobility Services Platform, using AWS Lambda, Amazon Kinesis Data Streams, and Amazon S3 to offer personalized, localized, and predictive data to enhance the driving experience.
 
  With its serverless architecture, Toyota Connected seamlessly scaled to 18 times its usual traffic volume, with 18 billion transactions per month running through the platform, reducing aggregation job times from 15\+ hours to 1/40th of the time while reducing operational burden. Additionally, serverless enabled Toyota Connected to deploy the same pipeline in other geographies with smaller volumes and only pay for the resources consumed.
 
@@ -87,9 +84,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 ### Customer example – Fannie Mae
 <a name="customer-example-fannie-mae"></a>
 
- Fannie Mae, a leading source of financing for mortgage lenders, uses AWS Lambda to run an “embarrassingly parallel” workload for its financial modeling. Fannie Mae uses Monte Carlo simulation processes to project future cash flows of mortgages that help manage mortgage risk.
+ Fannie Mae, a leading source of financing for mortgage lenders, uses AWS Lambda to run an "embarrassingly parallel" workload for its financial modeling. Fannie Mae uses Monte Carlo simulation processes to project future cash flows of mortgages that help manage mortgage risk.
 
- The company found that its existing HPC grids were no longer meeting its growing business needs. So Fannie Mae built its new platform on Lambda, and the system successfully scaled up to 15,000 concurrent function executions during testing. The new system ran one simulation on 20 million mortgages completed in 2 hours, which is three times faster than the old system. Using a serverless architecture, Fannie Mae can run large-scale Monte Carlo simulations effectively because it doesn’t pay for idle compute resources. It can also speed up its computations by running multiple Lambda functions concurrently.
+ The company found that its existing HPC grids were no longer meeting its growing business needs. So Fannie Mae built its new platform on Lambda, and the system successfully scaled up to 15,000 concurrent function executions during testing. The new system ran one simulation on 20 million mortgages completed in 2 hours, which is three times faster than the old system. Using a serverless architecture, Fannie Mae can run large-scale Monte Carlo simulations effectively because it doesn't pay for idle compute resources. It can also speed up its computations by running multiple Lambda functions concurrently.
 
  Fannie Mae also experienced shorter than typical time-to-market because they were able to dispense with server management and monitoring, along with the ability to eliminate much of the complex code previously required to manage application scaling and reliability. See the Fannie Mae AWS Summit 2017 presentation [SMC303: Real-time Data Processing Using AWS Lambda](https://www.slideshare.net/AmazonWebServices/smc303-realtime-data-processing-using-aws-lambda/28) for more information.
 
@@ -115,7 +112,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 ### Customer example – Genworth
 <a name="customer-example-genworth"></a>
 
- Genworth Mortgage Insurance Australia Limited is a leading provider of lenders’ mortgage insurance in Australia. Genworth has more than 50 years of experience and data in this industry and wanted to use this historical information to train predictive analytics for loss mitigation machine learning models.
+ Genworth Mortgage Insurance Australia Limited is a leading provider of lenders' mortgage insurance in Australia. Genworth has more than 50 years of experience and data in this industry and wanted to use this historical information to train predictive analytics for loss mitigation machine learning models.
 
  To achieve this task, Genworth built a serverless machine learning pipeline at scale using services like AWS Glue, a serverless managed ETL processing service to ingest and transform data, and Amazon SageMaker AI to batch transform jobs and, perform ML inference, and process and publish the results of the analysis.
 

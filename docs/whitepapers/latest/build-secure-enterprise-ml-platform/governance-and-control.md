@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/governance-and-control.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Governance and control
 <a name="governance-and-control"></a>
 
@@ -242,7 +240,7 @@ Large enterprises with strict security and compliance requirements need to set u
   ```
 
 ------
-+ **Disabling Studio Domain internet access** — For SageMaker AI Studio, the following condition key may be used to disable internet access from the Studio domain:
++ **Disabling Studio Domain internet access** — For SageMaker AI Studio, you might use the following condition key to disable internet access from the Studio domain:
 
 ------
 #### [ JSON ]
@@ -309,7 +307,7 @@ Large enterprises with strict security and compliance requirements need to set u
 
 ### Enforcing tags
 <a name="enforcing-tags"></a>
-+ **Requiring tag for API call in dev environment** - the following policy requires a “dev” environment tag to be attached to the SageMaker AI endpoint.
++ **Requiring tag for API call in dev environment** - the following policy requires you to attach a "dev" environment tag to the SageMaker AI endpoint.
 
 ------
 #### [ JSON ]

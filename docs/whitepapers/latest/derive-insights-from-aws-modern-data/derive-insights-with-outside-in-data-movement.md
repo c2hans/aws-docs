@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 ## Derive insights from Amazon DynamoDB data for real-time prediction with Amazon SageMaker AI
 <a name="derive-insights-from-amazon-dynamodb-data-for-real-time-prediction-with-amazon-sagemaker"></a>
 
- [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is a fast NoSQL database used by applications that need consistent, single-digit millisecond latency. Customers want to move valuable data in DynamoDB into S3 to derive insights. This data in S3 can be the primary source for understanding customers’ past behavior, predicting future behavior, and generating downstream business value.
+ [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) is a fast NoSQL database used by applications that need consistent, single-digit millisecond latency. Customers want to move valuable data in DynamoDB into S3 to derive insights. This data in S3 can be the primary source for understanding customers' past behavior, predicting future behavior, and generating downstream business value.
 
  The following diagram illustrates the Modern Data outside-in data movement with DynamoDB data to derive personalized recommendations.
 
@@ -33,7 +33,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 ## Derive insights from Amazon Aurora data with Apache Hudi, AWS Glue, AWS DMS, and Amazon Redshift
 <a name="derive-insights-from-amazon-aurora-data-with-apache-hudi-aws-glue-aws-dms-and-amazon-redshift"></a>
 
- [AWS Database Migration Service](https://aws.amazon.com/dms) (AWS DMS) can replicate the data from your source systems to Amazon S3. When the data is in Amazon S3, customers process it based on their analytics requirements. A typical requirement is to sync the data in S3 with the updates on the source systems. Although it’s easy to apply updates on a relational database management system (RDBMS) that backs an online source application, it’s difficult to apply this CDC process on your data lakes. [Apache Hudi](https://hudi.apache.org/) is a good way to solve this problem. Currently, you can use [Hudi on Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hudi.html) to create Hudi tables.
+ [AWS Database Migration Service](https://aws.amazon.com/dms) (AWS DMS) can replicate the data from your source systems to Amazon S3. When the data is in Amazon S3, customers process it based on their analytics requirements. A typical requirement is to sync the data in S3 with the updates on the source systems. Although it's easy to apply updates on a relational database management system (RDBMS) that backs an online source application, it's difficult to apply this CDC process on your data lakes. [Apache Hudi](https://hudi.apache.org/) is a good way to solve this problem. Currently, you can use [Hudi on Amazon EMR](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hudi.html) to create Hudi tables.
 
  The following diagram illustrates the Modern Data outside-in data movement with Amazon Aurora Postgres-changed data to derive analytics.
 

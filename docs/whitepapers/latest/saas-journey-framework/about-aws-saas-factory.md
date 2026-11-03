@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/about-aws-saas-factory.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # About AWS SaaS Factory
 <a name="about-aws-saas-factory"></a>
 

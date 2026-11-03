@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/saas-journey-framework.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # SaaS Journey Framework: Building a New SaaS Solution on AWS
 <a name="saas-journey-framework"></a>
 
@@ -16,7 +14,7 @@ Publication date: **October 1, 2020** ([Document history](document-revisions.md)
 
  The software-as-as-service (SaaS) delivery model has becoming increasingly appealing to a wide range of companies. The agility, innovation, and operational efficiency of SaaS are creating all new competitive advantage to SaaS providers, opening up new opportunities to grow their businesses.
 
- The trends that we see across the industry demonstrate the significant shift that’s happening across the industry. A recent [International Data Corporation (IDC)](https://www.idc.com/) study on customer preference indicated that 72 percent of customers worldwide strongly consider SaaS for new applications, migration of existing applications, or in moving existing apps to SaaS when software contracts renew. While this trend is consistent in the past few years, we find many companies struggle with how to get started with their SaaS journey.
+ The trends that we see across the industry demonstrate the significant shift that's happening across the industry. A recent [International Data Corporation (IDC)](https://www.idc.com/) study on customer preference indicated that 72 percent of customers worldwide strongly consider SaaS for new applications, migration of existing applications, or in moving existing apps to SaaS when software contracts renew. While this trend is consistent in the past few years, we find many companies struggle with how to get started with their SaaS journey.
 
  To address the movement to SaaS, AWS has introduced the [AWS SaaS Factory Program](https://aws.amazon.com/partners/saas-factory/). This program provides direct access to technical and business content, best practices, solution architects, and SaaS experts that can guide and help you accelerate delivery of SaaS solutions on AWS.
 

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/examples-of-additional-security-related-edge-services.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Examples of additional security-related edge services
 <a name="examples-of-additional-security-related-edge-services"></a>
 
@@ -25,14 +23,14 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 
 ## Hybrid services at the edge
 <a name="hybrid-services-at-the-edge"></a>
-+  [**AWS Outposts**](https://aws.amazon.com/outposts/) — While on your cloud adoption journey, you may find that certain workloads are better suited for on-premises management, whether for lower latency or other local processing needs, and require a hybrid cloud approach. For these workloads, AWS Outposts extends AWS infrastructure and services to your environments. This enables you to support workloads, including sensitive works, which need to remain on-premises, while leveraging the security and operational capabilities of cloud services.
++  [**AWS Outposts**](https://aws.amazon.com/outposts/) — While on your cloud adoption journey, you might find that certain workloads are better suited for on-premises management, whether for lower latency or other local processing needs, and require a hybrid cloud approach. For these workloads, AWS Outposts extends AWS infrastructure and services to your environments. This enables you to support workloads, including sensitive works, which need to remain on-premises, while using the security and operational capabilities of cloud services.
 
    AWS encourages customers to assess their data classification approach and hone in on which data needs to stay within their country or Region, and why. For more information on data residency, see the AWS whitepaper [*Data Residency: AWS Policy Perspectives*](https://d1.awsstatic.com/whitepapers/compliance/Data_Residency_Whitepaper.pdf).
 
    For more information on data classification, see the AWS whitepaper [*Data Classification: Secure Cloud Adoption*](https://d1.awsstatic.com/whitepapers/compliance/AWS_Data_Classification.pdf).
 
   With AWS Outposts, you can control where your workloads run and where your data resides, while using local operational tooling for things like monitoring and stability.
-+  [**AWS Wavelength**](https://aws.amazon.com/wavelength/) — AWS Wavelength is an AWS Infrastructure offering which minimizes latency. AWS Wavelength enables developers to build applications that deliver single-digit millisecond latencies to mobile devices and end users. AWS developers can deploy their applications to [Wavelength Zones](https://docs.aws.amazon.com/wavelength/latest/developerguide/wavelength-quotas.html#concepts-available-zones), AWS infrastructure deployments that embed AWS compute and storage services within the telecommunications providers’ data centers at the edge of the 5G networks, and seamlessly access the breadth of AWS services in the Region. This enables developers to deliver applications that require single-digit millisecond latencies, such as game and live video streaming, ML inference at the edge, and augmented reality/virtual reality (AR/VR).
++  [**AWS Wavelength**](https://aws.amazon.com/wavelength/) — AWS Wavelength is an AWS Infrastructure offering which minimizes latency. AWS Wavelength enables developers to build applications that deliver single-digit millisecond latencies to mobile devices and end users. AWS developers can deploy their applications to [Wavelength Zones](https://docs.aws.amazon.com/wavelength/latest/developerguide/wavelength-quotas.html#concepts-available-zones), AWS infrastructure deployments that embed AWS compute and storage services within the telecommunications providers' data centers at the edge of the 5G networks, and seamlessly access the breadth of AWS services in the Region. This enables developers to deliver applications that require single-digit millisecond latencies, such as game and live video streaming, ML inference at the edge, and augmented reality/virtual reality (AR/VR).
 +  [**AWS Storage Gateway**](https://aws.amazon.com/storagegateway) — For customers in hybrid environments, AWS Storage Gateway seamlessly connects and extends on-premises applications to AWS Cloud storage, caching data locally for low-latency access and optimizing data transfers to AWS.
 
    By integrating with AWS services such as Amazon CloudWatch, Storage Gateway enables secure access to AWS services, easy management and monitoring, and tracking of user activity on AWS resources. Customers with data in the cloud can distribute the data to multiple edge locations, or capture data from multiple edge locations, perform in-cloud processing and analytics, and provide access to endpoints in distributed locations.

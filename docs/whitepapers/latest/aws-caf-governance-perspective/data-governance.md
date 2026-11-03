@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-perspective/data-governance.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Data governance
 <a name="data-governance"></a>
 
@@ -25,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 ## Advance
 <a name="advance-5"></a>
 
- Start enforcing common data standards and practices while updating them as needed. Define key components of your data governance operating model. For example, you may wish to establish data governance councils/committees to help enforce critical data governance principles.
+ Start enforcing common data standards and practices while updating them as needed. Define key components of your data governance operating model. For example, you might wish to establish data governance councils/committees to help enforce critical data governance principles.
 +  Develop [data lifecycle](https://pages.awscloud.com/rs/112-TZM-766/images/Data_Lifecycle_and_Analytics_Reference_Guide.pdf) policies, and implement continuous compliance monitoring.
 +  Define and start implementing role-based data access processes.
 +  Define a process for identifying critical data products.

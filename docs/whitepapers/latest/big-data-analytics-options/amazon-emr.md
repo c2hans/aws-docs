@@ -2,19 +2,17 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/amazon-emr.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon EMR
 <a name="amazon-emr"></a>
 
  [Amazon EMR](https://aws.amazon.com/elasticmapreduce/) is the industry-leading cloud big data platform for processing vast amounts of data using open source tools such as [Apache Spark](https://aws.amazon.com/emr/features/spark/), [Apache Hive](https://aws.amazon.com/emr/features/hive/), [Apache HBase](https://aws.amazon.com/emr/features/hbase/), [Apache Flink](https://aws.amazon.com/blogs/big-data/use-apache-flink-on-amazon-emr/), [Apache Hudi](https://aws.amazon.com/emr/features/hudi/), and [Presto](https://aws.amazon.com/emr/features/presto/). Amazon EMR makes it easy to set up, operate, and scale your big data environments by automating time-consuming tasks like provisioning capacity and tuning clusters. With EMR you can run petabyte-scale analysis at [less than half of the cost](https://pages.awscloud.com/Gated-IDC-The-Economic-Benefits-of-Migrating-Apache-Spark-and-Hadoop-to-Amazon-EMR.html) of traditional on-premises solutions and [over 3x faster](https://aws.amazon.com/blogs/big-data/amazon-emr-introduces-emr-runtime-for-apache-spark/) than standard Apache Spark. You can run workloads on Amazon EC2 instances, on Amazon EKS clusters, or on-premises using EMR on AWS Outposts.
 
-Amazon EMR does all the work involved with provisioning, managing, and maintaining the infrastructure and software of a [Hadoop](https://hadoop.apache.org/) cluster. Amazon EMR now supports [Amazon EC2 M6g instances](https://aws.amazon.com/ec2/instance-types/m6/) to deliver the best price performance for cloud workloads. Amazon EC2 M6g instances are powered by [AWS Graviton2](https://aws.amazon.com/ec2/graviton/) processors that are custom designed by AWS, utilizing 64-bit [Arm Neoverse](https://www.arm.com/solutions/infrastructure) cores. Amazon EMR provides up to 35% lower cost and up to 15% improved performance for Spark workloads on Graviton2-based instances versus previous generation instances.
+Amazon EMR does all the work involved with provisioning, managing, and maintaining the infrastructure and software of a [Hadoop](https://hadoop.apache.org/) cluster. Amazon EMR now supports [Amazon EC2 M6g instances](https://aws.amazon.com/ec2/instance-types/m6/) to deliver the best price performance for cloud workloads. Amazon EC2 M6g instances are powered by [AWS Graviton2](https://aws.amazon.com/ec2/graviton/) processors that are custom designed by AWS, using 64-bit [Arm Neoverse](https://www.arm.com/solutions/infrastructure) cores. Amazon EMR provides up to 35% lower cost and up to 15% improved performance for Spark workloads on Graviton2-based instances versus previous generation instances.
 
 ## Ideal usage patterns
 <a name="ideal-usage-patterns-emr"></a>
 
- Amazon EMR’s flexible framework reduces large processing problems and data sets into smaller jobs and distributes them across many compute nodes in a Hadoop cluster. This capability lends itself to many usage patterns with big data analytics. Here are a few examples:
+ Amazon EMR's flexible framework reduces large processing problems and data sets into smaller jobs and distributes them across many compute nodes in a Hadoop cluster. This capability lends itself to many usage patterns with big data analytics. Here are a few examples:
 +  Log processing and analytics
 +  Large ETL data movement
 +  Risk modeling and threat analytics
@@ -60,7 +58,7 @@ For more information, see [EMR integration with EC2 placement groups](https://do
 
 With Amazon EMR, it's easy to [resize a running cluster](https://aws.amazon.com/blogs/big-data/best-practices-for-resizing-and-automatic-scaling-in-amazon-emr/). You can add core nodes which hold the HDFS at any time to increase your processing power and increase the HDFS storage capacity (and throughput). Additionally, you can use Amazon S3 natively, or using EMRFS along with or instead of local HDFS, which enables you to decouple your memory and compute from your storage providing greater flexibility and cost efficiency.
 
-You can also add and remove task nodes at any time which can process Hadoop jobs, but do not maintain HDFS. Some customers add hundreds of instances to their clusters when their batch processing occurs, and remove the extra instances when processing completes. For example, you may not know how much data your clusters will be handling in six months, or you may have spiky processing needs.
+You can also add and remove task nodes at any time which can process Hadoop jobs, but do not maintain HDFS. Some customers add hundreds of instances to their clusters when their batch processing occurs, and remove the extra instances when processing completes. For example, you might not know how much data your clusters will be handling in six months, or you might have spiky processing needs.
 
  With Amazon EMR, you don't need to guess your future requirements or provision for peak demand because you can easily add or remove capacity at any time.
 
@@ -89,7 +87,7 @@ For more information, see [Apache Hive](https://docs.aws.amazon.com/ElasticMapRe
 
 [Pig](https://pig.apache.org/) is an open-source analytics package that runs on top of Hadoop. Pig is operated by Pig Latin, an SQL-like language which enables users to structure, summarize, and query data. Pig Latin also adds first-class support for map and reduce functions and complex extensible user-defined data types. This capability allows processing of complex and unstructured data sources such as text documents and log files.
 
-Pig allows user extensions via user-defined functions written in Java. Amazon EMR has made numerous improvements to Pig, including the ability to use multiple file systems (normally, Pig can only access one remote file system), the ability to load customer JARs and scripts from S3 (such as “`REGISTER s3://my-bucket/piggybank.jar`”), and additional functionality for String and DateTime processing.
+Pig allows user extensions via user-defined functions written in Java. Amazon EMR has made numerous improvements to Pig, including the ability to use multiple file systems (normally, Pig can only access one remote file system), the ability to load customer JARs and scripts from S3 (such as "`REGISTER s3://my-bucket/piggybank.jar`"), and additional functionality for String and DateTime processing.
 
 For more information, see [Apache Pig](https://docs.aws.amazon.com/ElasticMapReduce/latest/ReleaseGuide/emr-pig.html) in the *Amazon EMR Release Guide*.
 
@@ -134,7 +132,7 @@ For more information, see [Apache HBase](https://docs.aws.amazon.com/emr/latest/
 
 Amazon EMR also supports a variety of other popular applications and tools in the Hadoop system, such as [R](https://www.rstudio.com/) (statistics), [Mahout](https://mahout.apache.org/) (machine learning),[ Ganglia](https://docs.amazonaws.cn/en_us/emr/latest/ReleaseGuide/emr-ganglia.html) (monitoring), [Accumulo](https://accumulo.apache.org/) (secure NoSQL database), [Hue](https://gethue.com/) (user interface to analyze Hadoop data), [HCatalog](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hcatalog.html) (table and storage management), and more.
 
-Additionally, you can install your own software on top of Amazon EMR to help solve your business needs. AWS provides the ability to quickly move large amounts of data from S3 to HDFS, from HDFS to S3, and between S3 buckets using Amazon EMR’s [S3DistCp,](https://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/UsingEMR_s3distcp.html) an extension of the open source tool [DistCp](https://hadoop.apache.org/docs/current/hadoop-distcp/DistCp.html) that uses MapReduce to efficiently move large amounts of data.
+Additionally, you can install your own software on top of Amazon EMR to help solve your business needs. AWS provides the ability to quickly move large amounts of data from S3 to HDFS, from HDFS to S3, and between S3 buckets using Amazon EMR's [S3DistCp,](https://docs.aws.amazon.com/ElasticMapReduce/latest/DeveloperGuide/UsingEMR_s3distcp.html) an extension of the open source tool [DistCp](https://hadoop.apache.org/docs/current/hadoop-distcp/DistCp.html) that uses MapReduce to efficiently move large amounts of data.
 
 You can optionally use the EMR File System (EMRFS), an implementation of HDFS which allows Amazon EMR clusters to store data on S3. You can enable S3 server-side and client-side encryption.
 
@@ -149,4 +147,4 @@ EMR Studio provides fully managed [Jupyter](https://jupyter.org/) Notebooks, and
 <a name="anti-patterns-emr"></a>
 
  Amazon EMR has the following anti-pattern:
-+  **Small datasets** – Amazon EMR is built for massive parallel processing; if your data set is small enough to run quickly on a single machine, in a single thread, the added overhead to map and reduce jobs may not be worth it for small datasets that can easily be processed in memory on a single system. Amazon EMR or a relational database running on Amazon EMR may be a better option for workloads with stringent requirements.
++  **Small datasets** – Amazon EMR is built for massive parallel processing; if your data set is small enough to run quickly on a single machine, in a single thread, the added overhead to map and reduce jobs might not be worth it for small datasets that can easily be processed in memory on a single system. Amazon EMR or a relational database running on Amazon EMR might be a better option for workloads with stringent requirements.

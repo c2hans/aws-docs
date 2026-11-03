@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-a
 "Everything fails, all the time."
  - Werner Vogels (CTO, Amazon.com)
 
-According to the [AWS Well-Architected Framework](https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.resiliency.en.html), resiliency is “*The ability for a system to recover from a failure induced by load, attacks, and failures*”. Depending on the service used, resiliency is either part of the service offering or has to be designed by the customer, depending on the specific requirements. The following section discusses resiliency for different AWS services and how this can be implemented.
+According to the [AWS Well-Architected Framework](https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.resiliency.en.html), resiliency is "*The ability for a system to recover from a failure induced by load, attacks, and failures*". Depending on the service used, resiliency is either part of the service offering or has to be designed by the customer, depending on the specific requirements. The following section discusses resiliency for different AWS services and how this can be implemented.
 
 ## AWS Global Infrastructure
 <a name="global-infra"></a>
@@ -32,7 +32,7 @@ According to the [AWS Well-Architected Framework](https://wa.aws.amazon.com/well
 ## Amazon ECS
 <a name="ecs"></a>
 
- [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (Amazon ECS) schedulers leverage the same cluster state information provided by the Amazon ECS API to make appropriate placement decisions. A *task placement strategy* is an algorithm for selecting instances for task placement or tasks for termination. A *task placement constraint* is a rule that is considered during task placement. For example, you can use constraints to place tasks based on AZ or instance type. Amazon ECS supports two *launch types* that determine how instances of tasks (containers) are being launched:
+ [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (Amazon ECS) schedulers use the same cluster state information provided by the Amazon ECS API to make appropriate placement decisions. A *task placement strategy* is an algorithm for selecting instances for task placement or tasks for termination. A *task placement constraint* is a rule that is considered during task placement. For example, you can use constraints to place tasks based on AZ or instance type. Amazon ECS supports two *launch types* that determine how instances of tasks (containers) are being launched:
 
  Each task that uses the AWS Fargate launch type has its own isolation boundary and does not share the underlying kernel, CPU resources, memory resources, or elastic network interface with another task. AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS and Amazon EKS. Fargate removes the need to provision and manage servers, lets you specify and pay for resources per application, and improves security through application isolation by design.
 
@@ -41,13 +41,13 @@ According to the [AWS Well-Architected Framework](https://wa.aws.amazon.com/well
 ## Amazon EKS
 <a name="eks"></a>
 
- [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (Amazon EKS) runs Kubernetes control plane instances across multiple Availability Zones to ensure high availability. Amazon EKS automatically detects and replaces unhealthy control plane instances, and it provides automated version upgrades and patching for them. This control plane consists of at least two API server nodes and three `etcd` nodes that run across three AZs within a Region. Amazon EKS leverages the architecture of AWS Regions in order to maintain high availability. Because of this, Amazon EKS is able to offer an [SLA for API server endpoint availability](https://aws.amazon.com/eks/sla).
+ [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (Amazon EKS) runs Kubernetes control plane instances across multiple Availability Zones to ensure high availability. Amazon EKS automatically detects and replaces unhealthy control plane instances, and it provides automated version upgrades and patching for them. This control plane consists of at least two API server nodes and three `etcd` nodes that run across three AZs within a Region. Amazon EKS uses the architecture of AWS Regions in order to maintain high availability. Because of this, Amazon EKS is able to offer an [SLA for API server endpoint availability](https://aws.amazon.com/eks/sla).
 
  For the data plane (for example, your worker nodes), you have to create at least a single node group spanning across multiple AZs. You can also start one node group per Availability Zone. The Kubernetes [Cluster Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler) automatically adjusts the number of nodes in your cluster when pods fail to launch due to lack of resources or when nodes in the cluster are underutilized and their pods can be rescheduled onto other nodes in the cluster.
 
  Amazon EKS integrates Kubernetes with AWS Fargate by using controllers that are built by AWS using the upstream, extensible model provided by Kubernetes. These controllers run as part of the Amazon EKS managed Kubernetes control plane and are responsible for scheduling native Kubernetes pods onto Fargate. The Fargate controllers include a new scheduler that runs alongside the default Kubernetes scheduler in addition to several mutating and validating admission controllers. When you start a pod that meets the criteria for running on Fargate, the Fargate controllers running in the cluster recognize, update, and schedule the pod onto Fargate.
 
- In addition to self-managed nodes, Amazon EKS offers managed node groups. With Amazon EKS managed node groups, you don’t need to separately provision or register the Amazon EC2 instances that provide compute capacity to run your Kubernetes applications. You can create, automatically update, or terminate nodes for your cluster with a single operation. Nodes run using the latest Amazon EKS optimized AMIs in your AWS account. Node updates and terminations automatically and gracefully drain nodes to ensure that your applications stay available.
+ In addition to self-managed nodes, Amazon EKS offers managed node groups. With Amazon EKS managed node groups, you don't need to separately provision or register the Amazon EC2 instances that provide compute capacity to run your Kubernetes applications. You can create, automatically update, or terminate nodes for your cluster with a single operation. Nodes run using the latest Amazon EKS optimized AMIs in your AWS account. Node updates and terminations automatically and gracefully drain nodes to ensure that your applications stay available.
 
 ## Amazon DynamoDB
 <a name="dynamodb"></a>
@@ -57,16 +57,16 @@ According to the [AWS Well-Architected Framework](https://wa.aws.amazon.com/well
 ## Amazon ElastiCache
 <a name="elasticache"></a>
 
- Amazon ElastiCache helps mitigate common failure modes that could affect your (external) caching layer and thus the overall system’s responsiveness and resiliency. There are two types of failures you need to plan for, individual cache node failures and broad AZ failures. The best failure mitigation plan will address both kinds of failures.
+ Amazon ElastiCache helps mitigate common failure modes that could affect your (external) caching layer and thus the overall system's responsiveness and resiliency. There are two types of failures you need to plan for, individual cache node failures and broad AZ failures. The best failure mitigation plan will address both kinds of failures.
 +  **Minimizing the impact of failures**
 
-   To minimize the impact of a node failure, it’s recommended that your implementation use multiple nodes in each shard and distribute the nodes across multiple AZs. When running Redis, AWS recommends that you enable multi-AZ on your replication group so that ElastiCache will automatically fail over to a replica if the primary node fails.
+   To minimize the impact of a node failure, it's recommended that your implementation use multiple nodes in each shard and distribute the nodes across multiple AZs. When running Redis, AWS recommends that you enable multi-AZ on your replication group so that ElastiCache will automatically fail over to a replica if the primary node fails.
 + **Minimizing the impact of AZ failures**
 
-  To minimize the impact of an AZ failure, it’s recommended launching your nodes in as many different Availability Zones as are available. Spreading your nodes evenly across AZs will minimize the impact in the unlikely event of an AZ failure.
+  To minimize the impact of an AZ failure, it's recommended launching your nodes in as many different Availability Zones as are available. Spreading your nodes evenly across AZs will minimize the impact in the unlikely event of an AZ failure.
 + **Other precautions**
 
-   If you're running Redis, then in addition to the previous recommendations, it’s recommended that you schedule regular backups of your cluster. Backups (snapshots) create an `.rdb` file you can use to restore your cluster in case of failure or corruption.
+   If you're running Redis, then in addition to the previous recommendations, it's recommended that you schedule regular backups of your cluster. Backups (snapshots) create an `.rdb` file you can use to restore your cluster in case of failure or corruption.
 
 ## Amazon Kinesis Data Streams
 <a name="kinesis"></a>

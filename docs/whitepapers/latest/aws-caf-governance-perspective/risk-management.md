@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-perspective/risk-management.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Risk management
 <a name="risk-management"></a>
 
@@ -19,9 +17,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 +  Business risks related to reputation, business continuity, and the ability to quickly respond to changing market conditions
 +  Compliance risks for companies obligated to comply with laws, regulations, or rules associated with the industries in which they participate, such as [National Institute of Standards and Technology](https://aws.amazon.com/compliance/nist/) (NIST) 800-53, [Payment Card Industry Data Security Standard](https://aws.amazon.com/compliance/pci-dss-level-1-faqs/) (PCI DSS), [Health Insurance Portability and Accountability Act](https://aws.amazon.com/compliance/hipaa-compliance/) of 1996 (HIPAA), and others
 
- Develop the risk profile, determine organizational risk appetite based on each identified event’s impact to the business and acceptable probability of occurrence. Clearly understand the attributes that are contributing to an elevated risk profile. Determine areas that are ripe to reduce risk. Build an initial backlog of stories and a roadmap for lowering your risk profile on the cloud.
+ Develop the risk profile, determine organizational risk appetite based on each identified event's impact to the business and acceptable probability of occurrence. Clearly understand the attributes that are contributing to an elevated risk profile. Determine areas that are ripe to reduce risk. Build an initial backlog of stories and a roadmap for lowering your risk profile on the cloud.
 
- Consider using cloud to reduce risks relating to infrastructure operations and failure. Eliminate the need for large upfront infrastructure expenditures and reduce the risk of purchasing assets that may be no longer needed. Depending on the needs of your users, mitigate procurement schedule risks by using cloud to instantly provision and deprovision resources.
+ Consider using cloud to reduce risks relating to infrastructure operations and failure. Eliminate the need for large upfront infrastructure expenditures and reduce the risk of purchasing assets that might be no longer needed. Depending on the needs of your users, mitigate procurement schedule risks by using cloud to instantly provision and deprovision resources.
 
 ## Advance
 <a name="advance-2"></a>
@@ -43,7 +41,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 +  [AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html)
 +  [AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html), and more.
 
- Continuously monitor, inventory and tag the business’s AWS high value assets to the right categories. Include third party risks in the risk management approach.
+ Continuously monitor, inventory and tag the business's AWS high value assets to the right categories. Include third party risks in the risk management approach.
 
 ## Excel
 <a name="excel-2"></a>

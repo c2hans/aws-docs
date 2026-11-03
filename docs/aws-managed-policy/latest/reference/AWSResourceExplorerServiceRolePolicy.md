@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSResourceExplorerServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: October 25, 2022, 20:35 UTC
-+ **Edited time:** October 28, 2026, 19:57 UTC
++ **Edited time:** October 30, 2026, 20:27 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSResourceExplorerServiceRolePolicy`
 
 ## Policy version
 <a name="AWSResourceExplorerServiceRolePolicy-version"></a>
 
-**Policy version:** v58 (default)
+**Policy version:** v59 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -50,7 +50,18 @@ The policy's default version is the version that defines the permissions for the
         "organizations:ListAccounts",
         "organizations:ListDelegatedAdministrators",
         "organizations:ListOrganizationalUnitsForParent",
-        "organizations:ListRoots"
+        "organizations:ListRoots",
+        "autoscaling:DescribeNotificationConfigurations",
+        "neptune-graph:GetExportTask",
+        "neptune-graph:ListExportTasks",
+        "neptune-graph:ListGraphs",
+        "quicksight:DescribeAgent",
+        "quicksight:DescribeAgentPermissions",
+        "quicksight:DescribeBrand",
+        "quicksight:DescribeIngestion",
+        "quicksight:DescribeNamespace",
+        "quicksight:ListIngestions",
+        "quicksight:ListNamespaces"
       ],
       "Resource" : "*"
     },

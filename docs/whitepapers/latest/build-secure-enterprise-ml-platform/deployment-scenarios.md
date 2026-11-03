@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/deployment-scenarios.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Deployment scenarios
 <a name="deployment-scenarios"></a>
 

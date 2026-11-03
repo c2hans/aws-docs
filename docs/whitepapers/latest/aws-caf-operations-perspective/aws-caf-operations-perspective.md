@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/aws-caf-operations-perspective.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # AWS Cloud Adoption Framework: Operations Perspective
 <a name="aws-caf-operations-perspective"></a>
 
@@ -12,7 +10,7 @@ Publication date: **November 9, 2022** ([Document revisions](document-revisions.
 ## Abstract
 <a name="abstract"></a>
 
- As the proliferation of digital technologies continues to disrupt market segments and industries, adopting Amazon Web Services (AWS) can help you transform your organization to meet changing business conditions and evolving customer needs. As the world’s most comprehensive and broadly-adopted cloud platform, AWS can help you reduce business risk; improve environmental, social, and governance (ESG) performance; increase revenue; and improve operational efficiency.
+ As the proliferation of digital technologies continues to disrupt market segments and industries, adopting Amazon Web Services (AWS) can help you transform your organization to meet changing business conditions and evolving customer needs. As the world's most comprehensive and broadly-adopted cloud platform, AWS can help you reduce business risk; improve environmental, social, and governance (ESG) performance; increase revenue; and improve operational efficiency.
 
  The [AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/) (AWS CAF) uses AWS experience and best practices to help you digitally transform and accelerate your business outcomes through innovative use of AWS. Use AWS CAF to identify and prioritize transformation opportunities, evaluate and improve your cloud readiness, and iteratively evolve your transformation roadmap.
 
@@ -56,4 +54,4 @@ Publication date: **November 9, 2022** ([Document revisions](document-revisions.
 
  [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/) customers can benefit from a number of [operational workshops and deep dives](https://aws.amazon.com/premiumsupport/technology-and-programs/proactive-services/) delivered by AWS Support experts. These services help you review the health of your cloud operations, optimize costs, and scale workloads efficiently.
 
-![A diagram that depicts the AWS CAF Operations perspective capabilities](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/images/caf-operations.png)
+![A diagram that depicts the nine capabilities of the AWS CAF Operations perspective.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/images/caf-operations.png)

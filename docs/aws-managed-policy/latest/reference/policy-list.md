@@ -1552,6 +1552,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [ROSASharedVPCRoute53Policy](ROSASharedVPCRoute53Policy.md)
 + [ROSASRESupportPolicy](ROSASRESupportPolicy.md)
 + [ROSAWorkerInstancePolicy](ROSAWorkerInstancePolicy.md)
++ [Route53PrivateHealthChecksServiceRolePolicy](Route53PrivateHealthChecksServiceRolePolicy.md)
 + [Route53RecoveryReadinessServiceRolePolicy](Route53RecoveryReadinessServiceRolePolicy.md)
 + [Route53ResolverServiceRolePolicy](Route53ResolverServiceRolePolicy.md)
 + [RTBFabricServiceRolePolicy](RTBFabricServiceRolePolicy.md)

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/organizational-alignment.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Organizational alignment
 <a name="organizational-alignment"></a>
 
@@ -25,7 +23,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspe
 
  Advancing organizational alignment requires articulation and alignment of cloud goals. Cloud goals should represent a broad spectrum of value levers, including business agility, staff productivity, operational resilience, and cost savings. This represents what you want to accomplish. The value levers of cloud must be fully integrated into your business goals. To maximize business outcomes and value through cloud adoption, consider how existing business goals need to change in a way that harmonizes cloud adoption and reduces potential conflict.
 
- For example, if the business has committed a 2-year plan for delivering a number of on-premises features and, at the same time, cloud is being introduced with IT wanting an aggressive migration plan, then ultimately, the existing business commitments will likely win out. This harmonization of business and cloud goals needs to occur at the beginning of your cloud journey; otherwise, conflicting goals between business and IT may greatly slow cloud adoption.
+ For example, if the business has committed a 2-year plan for delivering a number of on-premises features and, at the same time, cloud is being introduced with IT wanting an aggressive migration plan, then ultimately, the existing business commitments will likely win out. This harmonization of business and cloud goals needs to occur at the beginning of your cloud journey; otherwise, conflicting goals between business and IT might greatly slow cloud adoption.
 
  Your messaging should not only address the *what* but also *how* you want the organization to accomplish its goals; for example, work cross-functionally, collaborate, empowered decision making, experimentation, working backward from the customer, and so on. Often the *how* represents new ways of working, or at least a renewed emphasis. Establish methods to assess the *how*, and provide feedback to leaders on how to demonstrate and motivate new ways of working.
 

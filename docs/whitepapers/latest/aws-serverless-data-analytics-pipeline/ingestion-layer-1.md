@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/ingestion-layer-1.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Ingestion layer
 <a name="ingestion-layer-1"></a>
 
@@ -12,7 +10,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 ## Operational database sources
 <a name="operational-database-sources"></a>
 
- Typically, organizations store their operational data in various relational and NoSQL databases. [AWS Data Migration Service](https://aws.amazon.com/dms/) (AWS DMS) can connect to a variety of operational RDBMS and NoSQL databases and ingest their data into [Amazon Simple](https://aws.amazon.com/s3) [Storage Service](https://aws.amazon.com/s3) (Amazon S3) buckets in the data lake landing zone. With AWS DMS, you can first perform a one-time import of the source data into the data lake and replicate ongoing changes happening in the source database. AWS DMS encrypts S3 objects using [AWS Key Management Service](https://aws.amazon.com/kms) (AWS KMS) keys as it stores them in the data lake. AWS DMS is a fully managed, resilient service and provides a wide choice of instance sizes to host database replication tasks.
+ Typically, organizations store their operational data in various relational and NoSQL databases. [AWS Database Migration Service](https://aws.amazon.com/dms/) (AWS DMS) can connect to a variety of operational RDBMS and NoSQL databases and ingest their data into [Amazon Simple Storage Service](https://aws.amazon.com/s3) (Amazon S3) buckets in the data lake landing zone. With AWS DMS, you can first perform a one-time import of the source data into the data lake and replicate ongoing changes happening in the source database. AWS DMS encrypts S3 objects using [AWS Key Management Service](https://aws.amazon.com/kms) (AWS KMS) keys as it stores them in the data lake. AWS DMS is a fully managed, resilient service and provides a wide choice of instance sizes to host database replication tasks.
 
  [AWS Lake Formation](https://aws.amazon.com/lake-formation/) provides a scalable, serverless alternative, called blueprints, to ingest data from AWS native or on-premises database sources into the landing zone in the data lake. A Lake Formation blueprint is a predefined template that generates a data ingestion [AWS Glue workflow](https://aws.amazon.com/glue) based on input parameters such as source database, target Amazon S3 location, target dataset format, target dataset partitioning columns, and schedule. A blueprint-generated AWS Glue workflow implements an optimized and parallelized data ingestion pipeline consisting of crawlers, multiple parallel jobs, and triggers connecting them based on conditions. For more information, see [Integrating AWS Lake Formation with Amazon RDS for SQL Server](https://aws.amazon.com/blogs/big-data/integrating-aws-lake-formation-with-amazon-rds-for-sql-server/).
 

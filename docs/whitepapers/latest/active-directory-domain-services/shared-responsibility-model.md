@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 # Shared responsibility model
 <a name="shared-responsibility-model"></a>
 
- When operating in the AWS Cloud, Security and Compliance is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/) between AWS and the customer. AWS is responsible for security “of” the cloud, whereas customers are responsible for security “in” the cloud.
+ When operating in the AWS Cloud, Security and Compliance is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/) between AWS and the customer. AWS is responsible for security "of" the cloud, whereas customers are responsible for security "in" the cloud.
 
 ![Diagram showing the Shared Responsibility Model when operating in AWS Cloud](https://docs.aws.amazon.com/whitepapers/latest/active-directory-domain-services/images/shared-responsibility-model.jpg)
 

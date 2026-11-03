@@ -78,7 +78,7 @@ The following table describes the invocation limits for AgentCore Runtime. You c
 | Maximum payload size | 100 MB | No | Maximum size for request/response payloads |
 | Streaming chunk size | 10 MB | No | Maximum size for individual chunks |
 | Streaming maximum duration | 60 mins | No | Maximum time for streaming connections (Response streaming, WebSocket connections) |
-| Asynchronous job maximum duration | 8 hours | No | Maximum execution time for asynchronous jobs |
+| Asynchronous job maximum duration | 8 hours (microVMs), 14 days (Instances) | No | Maximum execution time for asynchronous jobs. On microVMs, a job can run for up to 8 hours. On Instances, a job can run until its agent reaches the runtime `maxLifetime`, up to 14 days. For more information, see [Configure lifecycle settings](runtime-lifecycle-settings.md). |
 | WebSocket frame size | 64 KB | No | Maximum size for individual WebSocket frames |
 
 For more information about service quotas and how to request increases, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
@@ -109,8 +109,10 @@ The following table describes the lifetime session lifecycle parameters for Agen
 
 | Phase | Timeout | Adjustable | Notes |
 | --- | --- | --- | --- |
-| Idle session timeout | 15 minutes of inactivity | Yes, through the `idleRuntimeSessionTimeout` API parameter in the `LifecycleConfiguration` data type | When this limit is reached, the execution environment is terminated and a new one is created for the session |
-| Maximum session duration | 8 hrs | Yes, through the `maxLifetime` API parameter in the `LifecycleConfiguration` data type |  |
+| Idle session timeout | 15 minutes of inactivity | Yes, through the `idleRuntimeSessionTimeout` API parameter in the `LifecycleConfiguration` data type | On microVMs, AgentCore Runtime terminates the execution environment. The next invocation with the same session ID provisions a new microVM. The maximum is 8 hours. On Instances, AgentCore Runtime stops the agent. The instance and the other agents on it keep running. The maximum is 14 days. |
+| Maximum session duration | 8 hours | Yes, through the `maxLifetime` API parameter in the `LifecycleConfiguration` data type | On microVMs, AgentCore Runtime terminates the execution environment regardless of activity. The maximum is 8 hours. On Instances, AgentCore Runtime stops the agent after any in-flight invocation finishes. The instance and the other agents on it keep running. The maximum is 14 days, and the value can’t exceed the maximum instance lifetime. For more information, see [Configure lifecycle settings](runtime-lifecycle-settings.md). |
+| Idle instance timeout | 15 minutes of inactivity | Yes, through the `idleInstanceTimeout` API parameter in the `InstanceLifecycleConfiguration` data type | Applies to the Instances compute type. An instance is idle when all of its agents are idle. When an instance reaches this limit, AgentCore Runtime stops it. The maximum is 14 days. |
+| Maximum instance lifetime | 8 hours | Yes, through the `maxLifetime` API parameter in the `InstanceLifecycleConfiguration` data type | Applies to the Instances compute type. When an instance reaches this limit, AgentCore Runtime terminates it regardless of activity. The maximum is 14 days. |
 
 ### Session storage limits
 <a name="session-storage-limits"></a>

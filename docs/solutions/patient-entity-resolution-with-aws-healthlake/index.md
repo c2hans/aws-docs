@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/patient-entity-resolution-with
 title: 'Guidance for Patient Entity Resolution with AWS HealthLake'
 canonical_url: https://docs.aws.amazon.com/solutions/patient-entity-resolution-with-aws-healthlake/
 source: aws-documentation
-generated_on: 2026-10-30
+generated_on: 2026-11-02
 ---
 
 # Guidance for Patient Entity Resolution with AWS HealthLake

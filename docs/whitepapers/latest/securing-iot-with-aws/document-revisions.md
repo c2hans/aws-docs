@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Updated AWS Private CA and AWS IoT Greengrass references; style updates. | October 29, 2026 |
 | [Whitepaper updated](#document-revisions) |  Content updates. | December 20, 2021 |
 | [Initial publication](#document-revisions) | Whitepaper first published. | April 1, 2019 |
 

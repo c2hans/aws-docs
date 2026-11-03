@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/example-2-capturing-and-analyzing-sensor-data.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Example 2: Capturing and analyzing sensor data
 <a name="example-2-capturing-and-analyzing-sensor-data"></a>
 
@@ -12,7 +10,7 @@ An international air conditioner manufacturer has many large air conditioners th
 Currently, they have a few thousand pre-purchased air conditioning (A/C) units with this capability. They expect to deliver these to customers in the next couple of months and are hoping that, in time, thousands of units throughout the world will use this platform. If successful, they would like to expand this offering to their consumer line as well, with a much larger volume and a greater market share. The solution needs to be able to handle massive amounts of data and scale as they grow their business without interruption. How should you design such a system?
 
  First, break it up into two work streams, both originating from the same data:
-+  A/C unit’s current information with near-real-time requirements and a large number of customers consuming this information
++  A/C unit's current information with near-real-time requirements and a large number of customers consuming this information
 +  All historical information on the A/C units to run trending and analytics for internal use
 
  The data-flow architecture in the following figure shows how to solve this big data problem.
@@ -32,7 +30,7 @@ Currently, they have a few thousand pre-purchased air conditioning (A/C) units w
 
      DynamoDB was chosen to store this near real-time data set because it is both highly available and scalable; throughput to this data can be easily scaled up or down to meet the needs of its consumers as the platform is adopted and usage grows.
 
-1.  The reporting dashboard is a custom web application that is built on top of this data set and run on Amazon EC2. It provides content based on the system status and trends as well as alerting customers and maintenance crews of any issues that may come up with the unit.
+1.  The reporting dashboard is a custom web application that is built on top of this data set and run on Amazon EC2. It provides content based on the system status and trends as well as alerting customers and maintenance crews of any issues that might come up with the unit.
 
 1.  The customer accesses the data from a mobile device or a web browser to get the current status of the system and visualize historical trends.
 
@@ -46,4 +44,4 @@ Currently, they have a few thousand pre-purchased air conditioning (A/C) units w
 
 1.  For visualizing the analytics, one of the many partner visualization platforms can be used via the OBDC/JDBC connection to Amazon Redshift. This is where the reports, graphs, and ad hoc analytics can be performed on the data set to find certain variables and trends that can lead to A/C units underperforming or breaking.
 
-This architecture can start off small and grow as needed. Additionally, by decoupling the two different work streams from each other, they can grow at their own rate without upfront commitment, allowing the manufacturer to assess the viability of this new offering without a large initial investment. You could imagine further additions, such as adding Amazon ML to predict how long an A/C unit will last and preemptively sending out maintenance teams based on its prediction algorithms to give their customers the best possible service and experience. This level of service would be a differentiator to the competition and lead to increased future sales.
+This architecture can start off small and grow as needed. Additionally, by decoupling the two different work streams from each other, they can grow at their own rate without upfront commitment, allowing the manufacturer to assess the viability of this new offering without a large initial investment. You could imagine further additions, such as adding machine learning to predict how long an A/C unit will last and preemptively sending out maintenance teams based on its prediction algorithms to give their customers the best possible service and experience. This level of service would be a differentiator to the competition and lead to increased future sales.

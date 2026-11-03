@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/docglossary.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Glossary
 <a name="docglossary"></a>
 +  **5G NR**: 5G New Radio

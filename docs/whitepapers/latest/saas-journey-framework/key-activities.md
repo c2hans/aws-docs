@@ -2,12 +2,10 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/key-activities.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Key Activities
 <a name="key-activities"></a>
 
- The primary activities of the business planning center around understanding the target market and the potential customer segments, estimating the opportunity based on market dynamics, building a preliminary financial model, setting goals and expectations, aligning internal teams, and securing initial investment and resources for the SaaS initiative. These strategies will vary widely across the different company profiles will change based on where you are starting and the level of business transformation that may be required. It is essential that this strategy evaluates the full spectrum of considerations that will inform your business strategy, including how the staffing profile of a company may need to change to support the development, operations, customer support, marketing, and sales mechanisms that will be required to successfully release and grow your SaaS offering.
+ The primary activities of the business planning center around understanding the target market and the potential customer segments, estimating the opportunity based on market dynamics, building a preliminary financial model, setting goals and expectations, aligning internal teams, and securing initial investment and resources for the SaaS initiative. These strategies will vary widely across the different company profiles will change based on where you are starting and the level of business transformation that might be required. It is essential that this strategy evaluates the full spectrum of considerations that will inform your business strategy, including how the staffing profile of a company might need to change to support the development, operations, customer support, marketing, and sales mechanisms that will be required to successfully release and grow your SaaS offering.
 
  We have identified core pillars that are often part of the business planning exercise. The following is a high-level summary of these pillars and the role they play in the business modeling process:
 

@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Updated AWS IAM Identity Center and Windows Server references; style updates. | October 29, 2026 |
 | [Whitepaper updated](#document-revisions) | AWS Managed Microsoft AD multi-region feature update. | November 20, 2020 |
 | [Whitepaper updated](#document-revisions) | Numerous updates throughout | August 1, 2020 |
 | [Initial publication](#document-revisions) | Whitepaper first published. | December 1, 2018 |

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise-economics-with-serverless/understanding-serverless-architectures.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Understanding serverless architectures
 <a name="understanding-serverless-architectures"></a>
 
@@ -21,18 +19,18 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 ## Is serverless always appropriate?
 <a name="is-serverless-always-appropriate"></a>
 
- Almost all modern applications can be modified to run successfully, and in most cases, in a more economical and scalable fashion, on a serverless platform. The choice between serverless and the alternatives do not need to be an all-or-nothing proposition. Individual components could be run on servers, using containers, or using serverless architectures within an application stack. However, here are a few scenarios when serverless may not be the best choice:
+ Almost all modern applications can be modified to run successfully, and in most cases, in a more economical and scalable fashion, on a serverless platform. The choice between serverless and the alternatives do not need to be an all-or-nothing proposition. Individual components could be run on servers, using containers, or using serverless architectures within an application stack. However, here are a few scenarios when serverless might not be the best choice:
 +  When the goal is explicitly to avoid making any changes to existing application architecture.
 +  For the code to run correctly, fine-grained control over the environment is required, such as specifying particular operating system patches or accessing low-level networking operations.
 +  Applications with ultra low latency requirements for all incoming requests.
-+  When an on-premises application hasn’t been migrated to the public cloud.
-+  When certain aspects of the application component don’t fit within the limits of the serverless services - for example, if a function takes more time to execute than the AWS Lambda function’s execution timeout limit, or the backend application takes more time to run than Amazon API Gateway’s timeout.
++  When an on-premises application hasn't been migrated to the public cloud.
++  When certain aspects of the application component don't fit within the limits of the serverless services - for example, if a function takes more time to execute than the AWS Lambda function's execution timeout limit, or the backend application takes more time to run than Amazon API Gateway's timeout.
 
 ## Serverless use cases
 <a name="serverless-use-cases"></a>
 
- The serverless application model is generic and applies to almost any application, from a startup’s web app to a Fortune 100 company’s stock trade analysis platform. Here are several examples:
-+  **Data processing** – Developers have discovered that it’s much easier to parallelize with a serverless approach, mainly when triggered through events, leading them to increasingly apply serverless techniques to a wide range of big data problems without the need for infrastructure management. (Source: Occupy the Cloud: Eric Jonas et al., *Distributed Computing for the 99%*, [https://arxiv.org/abs/1702.04024](https://arxiv.org/abs/1702.04024).) These include map-reduce problems, high-speed video transcoding, stock trade analysis, and compute-intensive Monte Carlo simulations for loan applications.
+ The serverless application model is generic and applies to almost any application, from a startup's web app to a Fortune 100 company's stock trade analysis platform. Here are several examples:
++  **Data processing** – Developers have discovered that it's much easier to parallelize with a serverless approach, mainly when triggered through events, leading them to increasingly apply serverless techniques to a wide range of big data problems without the need for infrastructure management. (Source: Occupy the Cloud: Eric Jonas et al., *Distributed Computing for the 99%*, [https://arxiv.org/abs/1702.04024](https://arxiv.org/abs/1702.04024).) These include map-reduce problems, high-speed video transcoding, stock trade analysis, and compute-intensive Monte Carlo simulations for loan applications.
 +  **Web applications** – Eliminating servers makes it possible to create web applications that cost almost nothing when there is no traffic while simultaneously scaling to handle peak loads, even unexpected ones.
 +  **Batch processing** – Serverless architectures can be used in a run multi-step flow-chart like use cases like ETL jobs.
 +  **IT automation** – Serverless functions can be attached to alarms and monitors to provide customization when required. Cron jobs (used to schedule and automate tasks that need to be carried out periodically) and other IT infrastructure requirements are made substantially simpler to implement by removing the need to own and maintain servers for their use, especially when these jobs and conditions are infrequent or variable in nature.
@@ -42,7 +40,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 +  **Chatbots (including voice-enabled assistants) and other webhook-based systems** – Serverless approaches are perfect for any webhook-based system, like a chatbot. In addition, their ability to perform actions (like running code) only when needed (such as when a user requests information from a chatbot) makes them a straightforward and typically lower-cost approach for these architectures. For example, the majority of Alexa Skills for Amazon Echo are implemented using AWS Lambda.
 +  **Clickstream and other near real-time streaming data processes** – Serverless solutions offer the flexibility to scale up and down with the flow of data, enabling them to match throughput requirements without the complexity of building a scalable compute system for each application. For example, when paired with technology like Amazon Kinesis, AWS Lambda can offer high-speed records processing for clickstream analysis, NoSQL data triggers, stock trade information, and more.
 +  **Machine learning inference** – Machine learning models can be hosted on serverless functions to support inference requests, eliminating the need for owning or maintaining servers for supporting intermittent inference requests.
-+  **Content delivery at the edge** –By moving serverless events handing to the edge of the internet, developers can take advantage of lower latency and customize retrievals and content fetches quickly, enabling a new spectrum of use cases that are latency-optimized based on the client’s location.
++  **Content delivery at the edge** –By moving serverless events handing to the edge of the internet, developers can take advantage of lower latency and customize retrievals and content fetches quickly, enabling a new spectrum of use cases that are latency-optimized based on the client's location.
 +  **IoT at the edge** – Enabling serverless capabilities such as AWS Lambda functions to run inside commercial, residential, and hand-held Internet of Things (IoT) devices enables these devices to respond to events in near real-time. Devices can take actions such as aggregating and filtering data locally, performing machine learning inference, or sending alerts.
 
  Typically, serverless applications are built using a *microservices architecture* in which an application is separated into independent components that perform discrete jobs. These components, made up of a compute layer and APIs, message queues, database, and other components can be independently deployed, tested, and scaled.
@@ -51,7 +49,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
 
  Serverless applications are a natural fit for microservices because of their decoupled nature. Organizations can become more agile by avoiding monolithic designs and architectures because developers can deploy incrementally and replace or upgrade individual components, such as the database tier if needed.
 
- In many cases, not all layers of the architecture need to be moved to serverless services to reap its benefits. For instance, simply isolating the business logic of an application to deploy onto the AWS Lambda, serverless compute service, is all that’s required to reduce server management tasks, idle compute capacity and operational overhead immediately.
+ In many cases, not all layers of the architecture need to be moved to serverless services to reap its benefits. For instance, simply isolating the business logic of an application to deploy onto the AWS Lambda, serverless compute service, is all that's required to reduce server management tasks, idle compute capacity and operational overhead immediately.
 
  Serverless architecture also has significant economic advantages over server-based architectures when considering disaster recovery scenarios.
 

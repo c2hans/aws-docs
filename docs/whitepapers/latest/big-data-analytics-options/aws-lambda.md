@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/aws-lambda.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # AWS Lambda
 <a name="aws-lambda"></a>
 
@@ -29,7 +27,7 @@ See [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/) for more detail
 ## Performance
 <a name="performance-lambda"></a>
 
-After deploying your code into Lambda for the first time, your functions are typically ready to call within seconds of upload. Lambda is designed to process events within milliseconds. Latency will be higher immediately after a Lambda function is created, updated, or if it has not been used recently. To improve performance, Lambda may choose to retain an instance of your function and reuse it to serve a subsequent request, rather than creating a new copy.
+After deploying your code into Lambda for the first time, your functions are typically ready to call within seconds of upload. Lambda is designed to process events within milliseconds. Latency will be higher immediately after you create or update a Lambda function, or if you have not used it recently. To improve performance, Lambda might choose to retain an instance of your function and reuse it to serve a subsequent request, rather than creating a new copy.
 
 The Lambda [provisioned concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) feature provides customers greater control over performance of their serverless applications at any scale. Functions using provisioned concurrency run with consistent start-up latency, making them ideal for building interactive mobile or web backends, latency sensitive microservices, and synchronously invoked APIs. With provisioned concurrency, functions can instantaneously serve a burst of traffic with consistent start-up latency for every invoke up to the specified scale.
 
@@ -38,7 +36,7 @@ To learn more about how Lambda reuses function instances, see [Getting started w
 ## Durability and availability
 <a name="durability-and-availability-lambda"></a>
 
- AWS Lambda is designed to use replication and redundancy to provide high availability for both the service itself and for the Lambda functions it operates. There are no maintenance windows or scheduled downtimes for either. On failure, Lambda functions being invoked synchronously respond with an exception. Lambda functions being invoked asynchronously are retried at least three times, after which the event may be rejected.
+ AWS Lambda is designed to use replication and redundancy to provide high availability for both the service itself and for the Lambda functions it operates. There are no maintenance windows or scheduled downtimes for either. On failure, Lambda functions being invoked synchronously respond with an exception. Lambda functions being invoked asynchronously are retried at least three times, after which Lambda might reject the event.
 
 ## Scalability and elasticity
 <a name="scalability-and-elasticity-lambda"></a>
@@ -60,6 +58,6 @@ You can package your Lambda function code and dependencies as a container image,
 <a name="anti-patterns-lambda"></a>
 
 AWS Lambda has the following anti-patterns:
-+  **Long running application** — Each Lambda function must complete within 900 seconds. For long running applications that may require jobs to run longer than fifteen minutes, Amazon EC2, Amazon EKS, or Amazon ECS is recommended. Alternately, you can use [Step Functions](https://aws.amazon.com/step-functions/).
-+  **Dynamic websites** — While it is possible to run a static website with AWS Lambda, running a highly dynamic and large volume website can be performance prohibitive. Utilizing Amazon EC2, Amazon EKS, or Amazon ECS and AWS CloudFormation is a recommended use-case.
-+  **Stateful applications** — Lambda code must be written in a “stateless” style, meaning it should assume there is no affinity to the underlying compute infrastructure. Local file system access, child processes, and similar artifacts may not extend beyond the lifetime of the request, and any persistent state should be stored in Amazon S3, DynamoDB, or another internet-available storage service.
++  **Long running application** — Each Lambda function must complete within 900 seconds. For long-running applications that might require jobs to run longer than fifteen minutes, Amazon EC2, Amazon EKS, or Amazon ECS is recommended. Alternately, you can use [Step Functions](https://aws.amazon.com/step-functions/).
++  **Dynamic websites** — While it is possible to run a static website with AWS Lambda, running a highly dynamic and large volume website can be performance prohibitive. Using Amazon EC2, Amazon EKS, or Amazon ECS and AWS CloudFormation is a recommended use-case.
++  **Stateful applications** — Lambda code must be written in a "stateless" style, meaning it should assume there is no affinity to the underlying compute infrastructure. Local file system access, child processes, and similar artifacts might not extend beyond the lifetime of the request, and any persistent state should be stored in Amazon S3, DynamoDB, or another internet-available storage service.

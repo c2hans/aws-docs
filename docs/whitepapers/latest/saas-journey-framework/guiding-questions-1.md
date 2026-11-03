@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/guiding-questions-1.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Guiding Questions
 <a name="guiding-questions-1"></a>
 
@@ -20,9 +18,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
 ## Collecting Customer Data
 <a name="collecting-customer-data-1"></a>
-+  How can you identify and reach customers you may not engage today?
++  How can you identify and reach customers you might not engage today?
 +  What are the key areas you want to target for collecting data? Have you considered conducting a survey?
-+  Are there specific SaaS questions you may want to ask (onboarding, pricing, etc.)?
++  Are there specific SaaS questions you might want to ask (onboarding, pricing, and so on)?
 +  How can you capture security, isolation, and multi-tenant readiness of this market?
 +  How many customers will represent a reasonable sample size?
 +  What mechanism can you use to gather input from your potential customers?
@@ -37,7 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 +  For an internal process, what internal mechanisms will need to be automated to reduce friction in your onboarding process?
 +  What measure will you take to ensure that registration is a fully repeatable process?
 +  Will you support a demo mode for your product that enables customer to run a trial experience?
-+  Will you seed the environment with sample data or experiences to streamline a customer’s time to value?
++  Will you seed the environment with sample data or experiences to streamline a customer's time to value?
 +  How will you capture metrics and data that will enable you to assess the efficiency of your onboarding flow?
 
 ## Profiling Security, Compliance, Geographic and Data Protection Requirements

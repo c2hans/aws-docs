@@ -378,6 +378,9 @@ The port number on which the cluster accepts connections. For example: `27017`.
 `ReadEndpoint`  <a name="ReadEndpoint-fn::getatt"></a>
 The reader endpoint for the cluster. For example: `sample-cluster.cluster-ro-cozrlsfrcjoc.us-east-1.docdb.amazonaws.com`.
 
+`ServerlessV2PlatformVersion`  <a name="ServerlessV2PlatformVersion-fn::getatt"></a>
+Property description not available.
+
 ## Examples
 <a name="aws-resource-docdb-dbcluster--examples"></a>
 

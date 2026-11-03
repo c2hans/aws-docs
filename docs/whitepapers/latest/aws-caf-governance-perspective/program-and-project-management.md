@@ -2,21 +2,19 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-perspective/program-and-project-management.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Program and project management
 <a name="program-and-project-management"></a>
 
 ** Deliver interdependent cloud initiatives in a flexible and coordinated manner.**
 
- Program and project management are critical functions for enterprises that are adopting the cloud. Complex cross-functional cloud transformation initiatives require careful coordination, especially in more traditionally structured organizations. Program management is especially critical since many of these inter-dependencies may only become obvious during delivery.
+ Program and project management are critical functions for enterprises that are adopting the cloud. Complex cross-functional cloud transformation initiatives require careful coordination, especially in more traditionally structured organizations. Program management is especially critical since many of these inter-dependencies might only become obvious during delivery.
 
  The evolution of program and project management should be approached iteratively to address the organizational and process changes required through the transformation. Program managers should elevate their role to oversee cross-functional initiatives. They need to develop processes to manage inter-dependencies identified during delivery, as well as processes for feature requests and backlog management. Program managers should oversee centralized tooling development that enables project and product teams to deliver with reusable assets. Project managers should change their focus based on the new processes to iteratively deliver features.
 
 ## Start
 <a name="start"></a>
 
- The program management function should work with portfolio management and the transformation office to prioritize and plan the migration of applications to the cloud. Effective cloud transformations requires new areas of expertise that project managers may need to develop, such as vendor management, security, legal, operations, and risk management in the cloud. To gain success, organizations should focus on the following key elements of program and project management.
+ The program management function should work with portfolio management and the transformation office to prioritize and plan the migration of applications to the cloud. Effective cloud transformations requires new areas of expertise that project managers might need to develop, such as vendor management, security, legal, operations, and risk management in the cloud. To gain success, organizations should focus on the following key elements of program and project management.
 +  **Project Management Office (PMO)** — The PMO leads organizational-level efforts that require cross-functional management. For example, the PMO promotes new cloud standards and tools for project management. It also sets up communities of practice and training for project managers and other roles involved in the delivery of cloud initiatives.
   +  The PMO leads the education of supporting organizations, such as finance, to identify how cloud adoption will affect budgets while moving from project to product funding.
   +  The PMO begins to evolve by elevating program managers to oversee these efforts, define new processes, and develop experienced technologists with project management (PM) skills to successfully deliver cloud initiatives.
@@ -33,7 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 <a name="advance"></a>
 
  The use of technology to manage projects is expanding as a result of digitization and cloud adoption. Project teams must be cross-functional in order to achieve their project and business goals. Transforming to an agile project organization represents an opportunity to react quickly to new requirements through iterative delivery. Prioritization of business and technology collaboration is essential for faster delivery of a greater number of features compared to traditional waterfall approaches.
-+  **Enable Business Transformation Office (BTO)** — Organizations that successfully transform generally have a [Business Transformation Office](https://aws.amazon.com/blogs/enterprise-strategy/the-agile-organisation-changing-our-worldview/) (BTO). An effective BTO looks across all business functions within the CEO’s authority and actively unblocks projects through regular, action-oriented, fast-paced meetings.
++  **Enable Business Transformation Office (BTO)** — Organizations that successfully transform generally have a [Business Transformation Office](https://aws.amazon.com/blogs/enterprise-strategy/the-agile-organisation-changing-our-worldview/) (BTO). An effective BTO looks across all business functions within the CEO's authority and actively unblocks projects through regular, action-oriented, fast-paced meetings.
   +  A technology-centric PMO often has no ability to address business transformation and hence morphs into a center of excellence for the project teams to live agile values and to secure the teams' decision-making autonomy.
   +  The existing PMO can support majority of the project managers to transition to agile based roles and convey the new agile principles and requirements to the teams with the help of training and continuous skillset development.
 +  **Project teams to standing agile teams** — Project teams are usually time-limited teams formed to complete a particular task. When the team completes its task, it disbands. Transition to standing teams based on business products and supporting applications. These teams require multi-stack developers, knowledge of DevOps, and ability to quickly push incremental changes into production to deliver value. Project management changes from rigid processes and structures to flexible processes and self-responsibility.

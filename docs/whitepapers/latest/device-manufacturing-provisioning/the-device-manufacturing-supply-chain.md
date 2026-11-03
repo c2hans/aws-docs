@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/the-device-manufacturing-supply-chain.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # The device manufacturing supply chain
 <a name="the-device-manufacturing-supply-chain"></a>
 

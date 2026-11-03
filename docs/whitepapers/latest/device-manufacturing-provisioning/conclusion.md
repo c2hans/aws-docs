@@ -2,12 +2,10 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/conclusion.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Conclusion
 <a name="conclusion"></a>
 
- Moving an IoT project from proof of concept to a large-scale deployment is a complex challenge. Device makers and service operators must make multiple decisions that fundamentally impact the device’s capabilities, level of security, bill of materials, and product and operational cost. Production and deployment decisions must be considered early on in the development process because they will impact manufacturing and deployment costs.
+ Moving an IoT project from proof of concept to a large-scale deployment is a complex challenge. Device makers and service operators must make multiple decisions that fundamentally impact the device's capabilities, level of security, bill of materials, and product and operational cost. Production and deployment decisions must be considered early on in the development process because they will impact manufacturing and deployment costs.
 
  Device makers must consider the following when creating IoT devices:
 +  Who will maintain the public key infrastructure for their project?

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/launchwizard/index.html
 title: 'AWS Launch Wizard Documentation'
 canonical_url: https://docs.aws.amazon.com/launchwizard/
 source: aws-documentation
-generated_on: 2026-10-30
+generated_on: 2026-11-02
 ---
 
 # AWS Launch Wizard Documentation

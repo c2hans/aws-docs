@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 # FreeRTOS – Device software
 <a name="freertos-device-software"></a>
 
- FreeRTOS is an open source operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage. FreeRTOS is a popular open source operating system for microcontrollers that has been extended with software libraries that make it easy to securely connect customers’ small, low-power devices directly to AWS Cloud services (such as AWS IoT Core) or to more powerful edge devices running AWS IoT Greengrass.
+ FreeRTOS is an open source operating system for microcontrollers that makes small, low-power edge devices easy to program, deploy, secure, connect, and manage. FreeRTOS is a popular open source operating system for microcontrollers that has been extended with software libraries that make it easy to securely connect customers' small, low-power devices directly to AWS Cloud services (such as AWS IoT Core) or to more powerful edge devices running AWS IoT Greengrass.
 
 ## Security capabilities
 <a name="cap-1"></a>

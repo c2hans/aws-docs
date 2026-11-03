@@ -2,14 +2,12 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/key-activities-3.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Key Activities
 <a name="key-activities-3"></a>
 
 To successfully bring a SaaS solution to-market, it is necessary to align commercial forecasts and budgets with effective sales motions and marketing plans. You must also have a plan to understand and measure whether customers are adopting the product and realizing its value. Even if a SaaS business can exceed new customer acquisition goals, it will struggle financially if customers do not use the solution effectively and efficiently. Such customers will not renew; this attrition is commonly referred to as churn.
 
- Without the large, up-front payments common to perpetual licensing software models, unexpected churn can often leave your company at a financial loss, unable to recoup customer acquisition costs (CAC). As a result, sales team compensation economics must be structured to incentivize customer retention. Most businesses can’t afford to pay sales representatives heavily up-front for customers that might churn, and never become profitable. Therefore, it is important to establish rigorous pre-sales methods, lead qualification standards and effective onboarding processes.
+ Without the large, up-front payments common to perpetual licensing software models, unexpected churn can often leave your company at a financial loss, unable to recoup customer acquisition costs (CAC). As a result, sales team compensation economics must be structured to incentivize customer retention. Most businesses can't afford to pay sales representatives heavily up-front for customers that might churn, and never become profitable. Therefore, it is important to establish rigorous pre-sales methods, lead qualification standards and effective onboarding processes.
 
 The MVS phase plays an important role in refining the GTM strategy for GA, and should directly influence decisions related to packaging, selling and operating the GA solution. Prior to bringing a new offer to-market, you should apply lessons-learned in the MVS phase to revise buyer and user personas, update customer journey maps, and set product adoption targets, to complement customer acquisition and expand-selling sales motions.
 
@@ -19,7 +17,7 @@ The MVS phase plays an important role in refining the GTM strategy for GA, and s
 
 ## Update customer journey maps
 <a name="update-customer-journey-maps"></a>
-+  **Goal:** Enhance buyer and user personas built in the Product Strategy and Roadmap Development phase; incorporate lessons learned during MVS phase to append attributes linked to buying behavior, onboarding experiences and product utilization patterns. Update customer journey maps to align team-level responsibilities with a series of predictable buyer and user experiences.
++  **Goal:** Enhance buyer and user personas built in the Product Strategy and Roadmap Development phase; incorporate lessons learned during MVS phase to append attributes linked to buying behavior, onboarding experiences and product usage patterns. Update customer journey maps to align team-level responsibilities with a series of predictable buyer and user experiences.
 +  **Outcome:** Buyer and user personas include measurable attributes common to customers likely to succeed at adopting the product. Sales and marketing teams are armed with accurate expectations, qualification standards and demonstrable value propositions. You are able to measure and manage team and individual-level effectiveness, at all stages of the customer experience.
 +  **Key Decision Point:** What lessons have we learned during the MVS phase that can help us to create a better customer experience at GA launch?
 
@@ -38,13 +36,13 @@ The MVS phase plays an important role in refining the GTM strategy for GA, and s
 ## Determine appropriate sales motions and compensation incentives
 <a name="determine-appropriate-sales-motions-and-compensation-incentives"></a>
 +  **Goal:** Determine a relevant distribution model for new customer acquisition, typically some combination of pre-sales, inside sales, field sales, and partner/channel sales resources. Build sales motions (e.g. acquire, renew, expand) that qualify opportunities with rigor and align appropriate sales processes with offer complexity. Pair complex, high-ACV SaaS offers with higher-touch, consultative processes, and pair less-complex, low-ACV solutions with a lower-touch, product-led, try-and-buy processes. Create sales compensation models that include product adoption and customer retention incentives. Establish boundaries related to discounting to ensure that deal-making variables align with your profitability requirements.
-+  **Outcome:** Sales teams operate efficiently and meet buyer expectations without unnecessary friction. They are rewarded for acquiring customers that adopt the solution efficiently and renew. They leverage prescriptive, personalized sales tactics to align buyers with solutions, and are willing to walk away from deals that are unlikely to result in renewal. Margins are protected by sales playbooks, which include acceptable discount parameters.
++  **Outcome:** Sales teams operate efficiently and meet buyer expectations without unnecessary friction. They are rewarded for acquiring customers that adopt the solution efficiently and renew. They use prescriptive, personalized sales tactics to align buyers with solutions, and are willing to walk away from deals that are unlikely to result in renewal. Margins are protected by sales playbooks, which include acceptable discount parameters.
 +  **Key Decision Point:** How complex is the SaaS offering? Does it require a high-touch consultative approach?
 
 ## Establish Marketing operations
 <a name="establish-marketing-operations"></a>
-+  **Goal:** Plan marketing operations to span the entire customer lifecycle, covering new customer acquisition and expansion opportunities. You should leverage an account-based marketing (ABM) framework and/or in-product marketing resources to trigger low-friction, point-in-time campaigns, targeted to specific industry firmographics, buyer personas, and user patterns.
-+  **Outcome:** Marketers can leverage a combination of people and automation to drive demand generation, marketing analytics and lead-scoring tactics through appropriate channels. They are able to progressively-profile and qualify leads as they move through the funnel. Sales representatives are able to focus on supporting highly-qualified leads.
++  **Goal:** Plan marketing operations to span the entire customer lifecycle, covering new customer acquisition and expansion opportunities. You should use an account-based marketing (ABM) framework and/or in-product marketing resources to trigger low-friction, point-in-time campaigns, targeted to specific industry firmographics, buyer personas, and user patterns.
++  **Outcome:** Marketers can use a combination of people and automation to drive demand generation, marketing analytics and lead-scoring tactics through appropriate channels. They are able to progressively-profile and qualify leads as they move through the funnel. Sales representatives are able to focus on supporting highly-qualified leads.
 +  **Key Decision Point:** How much of the sales funnel is the marketing team able to own?
 
 ## Define Customer Success (CS) charter and services

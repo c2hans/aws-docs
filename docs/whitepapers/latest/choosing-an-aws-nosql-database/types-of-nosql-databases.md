@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/types-of-nosql-databases.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Types of NoSQL databases
 <a name="types-of-nosql-databases"></a>
 
@@ -21,7 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 +  [Sharding/partitioning](https://hazelcast.com/glossary/sharding/) of data sets on primary identifier keys
 +  Shifting the burden of data and schema validation to the application (removing referential integrity enforcement by the database and so on)
 
- Here’s a brief overview of most popular NoSQL data models.
+ Here's a brief overview of most popular NoSQL data models.
 
 1.  **Key-value** — A [key-value data store](https://aws.amazon.com/nosql/key-value/) is a type of database that stores data as a collection of key-value pairs. In this type of data store, each data item is identified by a unique key, and the value associated with that key can be anything, such as a string, number, object, or even another data structure.
 ![A diagram showing an example of data stored as key-value pairs.](https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/images/key-value-pairs.png)
@@ -30,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 
 1.  **Document** — In a document database, the data is stored in documents. Each document is typically a nested structure of keys and values. The values can be atomic data types, or complex elements such as lists, arrays, nested objects, or child collections (for example, a collection in the document database is analogous to a table in a relational database, except there is no single schema enforced upon all documents).
 
-   Documents are retrieved by unique keys. It may also be possible to retrieve only parts of a document--for example, the cost of an item--to run queries such as aggregation, querying using examples based on a text string, or even full-text search. Most document databases also allow you to define secondary indexes.
+   You retrieve documents by unique keys. It might also be possible to retrieve only parts of a document--for example, the cost of an item--to run queries such as aggregation, querying using examples based on a text string, or even full-text search. Most document databases also allow you to define secondary indexes.
 
     You can transfer the application code object model directly into a document using several different formats. The most commonly used are JavaScript Object Notation (JSON), Binary JavaScript Object Notation ([BSON](https://en.wikipedia.org/wiki/BSON)), and Extensible Markup Language ([XML](https://en.wikipedia.org/wiki/XML)).
 ![An example of a document data model.](https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/images/document-data-model.png)

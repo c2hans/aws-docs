@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/the-aws-advantage-in-big-data-analytics.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # The AWS advantage in big data analytics
 <a name="the-aws-advantage-in-big-data-analytics"></a>
 
@@ -18,7 +16,7 @@ For mission-critical applications on a more traditional infrastructure, system d
 
 As the amount of data being generated continues to grow, AWS has many options to get that data to the cloud, including secure devices like [AWS Snow Family](https://aws.amazon.com/snow/) to accelerate petabyte-scale data transfers, delivery streams with [Amazon Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) to load streaming data continuously, migrating databases using [AWS Database Migration Service](https://aws.amazon.com/dms/), and scalable private connections through [AWS Direct Connect](https://aws.amazon.com/directconnect/).
 
-As mobile continues to rapidly grow in usage, you can use the suite of services within the [AWS Mobile Hub](https://aws.amazon.com/mobile/) to collect and measure app usage and data, or export that data to another service for further custom analysis.
+As mobile continues to rapidly grow in usage, you can use the [AWS front-end web and mobile services](https://aws.amazon.com/products/frontend-web-mobile/) to collect and measure app usage and data, or export that data to another service for further custom analysis.
 
 These capabilities of AWS make it an ideal fit for solving big data problems, and many customers have implemented successful big data analytics workloads on AWS. For more information about case studies, see [Big Data Customer Success Stories](https://aws.amazon.com/solutions/case-studies/big-data/).
 
@@ -29,7 +27,7 @@ The following services for collecting, processing, storing, and analyzing big da
 + [Amazon Elastic Map Reduce](https://aws.amazon.com/emr/) (Amazon EMR)
 + [AWS Glue](https://aws.amazon.com/glue/)
 + [AWS Lake Formation](https://aws.amazon.com/lake-formation/)
-+ [Amazon Machine Learning](https://aws.amazon.com/machine-learning/)
++ [Machine learning on AWS](https://aws.amazon.com/machine-learning/)
 + [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
 + [Amazon Redshift](https://aws.amazon.com/redshift/)
 + [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) (OpenSearch Service)

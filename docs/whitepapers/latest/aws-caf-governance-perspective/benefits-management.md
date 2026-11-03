@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-perspective/benefits-management.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Benefits management
 <a name="benefits-management"></a>
 
@@ -15,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 
  Benefits management is the structure to define and track business outcomes that is an integral component of the cloud transformation journey. Benefits management helps accelerate value by incorporating business-aligned metrics and key performance indicators (KPIs) into the governance process, thereby facilitating collaboration between technology teams and the business.
 
- This ensures coordinated focus on established business outcomes and delivery of faster and more predictable benefits to the end customer. A workstream-tailored scope is used to identify, document, and track business-driven value streams that may be used to articulate the return on the investment, ultimately creating a mechanism to measure the business impact of cloud transformation.
+ This ensures coordinated focus on established business outcomes and delivery of faster and more predictable benefits to the end customer. You use a workstream-tailored scope to identify, document, and track business-driven value streams that might be used to articulate the return on the investment, ultimately creating a mechanism to measure the business impact of cloud transformation.
 
 ## Start
 <a name="start-1"></a>
@@ -26,9 +24,9 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
 +  **Create new revenue streams***.* Create new products and services, reach new customers, and enter new market segments.
 +  **Increase operational efficiency***.* Reduce operating costs, increase productivity, and improve employee and customer experience.
 
- Identifying desired business outcomes may not be straightforward as approaches may vary between each of the four categories. Focus on defining and aligning outcomes with metrics and value KPIs across multiple dimensions and groups (for example, business leadership, program directors, and technology delivery teams). To identify total cost of ownership (TCO) outcomes, compare the cost of running an environment on-premises with running an equivalent environment in the cloud. To help grow revenue, start with your customers and [work backwards](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/) from their needs to identify the appropriate feature and product initiatives to pursue.
+ Identifying desired business outcomes might not be straightforward as approaches might vary between each of the four categories. Focus on defining and aligning outcomes with metrics and value KPIs across multiple dimensions and groups (for example, business leadership, program directors, and technology delivery teams). To identify total cost of ownership (TCO) outcomes, compare the cost of running an environment on-premises with running an equivalent environment in the cloud. To help grow revenue, start with your customers and [work backwards](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/) from their needs to identify the appropriate feature and product initiatives to pursue.
 
- To facilitate the identification and documentation of specific, measurable, achievable, relevant, and time-bound (SMART) business outcomes, consider creating an alignment canvas for each customer persona. The alignment canvas enables customer definition, identification of “moments that matter” to customers, customer solutions, business outcomes from these solutions, and metrics that will measure these business outcomes.
+ To facilitate the identification and documentation of specific, measurable, achievable, relevant, and time-bound (SMART) business outcomes, consider creating an alignment canvas for each customer persona. The alignment canvas enables customer definition, identification of "moments that matter" to customers, customer solutions, business outcomes from these solutions, and metrics that will measure these business outcomes.
 
  The consolidated list of desired outcomes across the four categories is your benefits catalogue. The portfolio management team or another authorized team should set up a sustainable structure for measuring and tracking business outcome enablers and value realization tracking mechanisms.
 

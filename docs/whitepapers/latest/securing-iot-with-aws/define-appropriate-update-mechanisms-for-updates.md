@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 # 4. Define appropriate update mechanisms for software and firmware updates.
 <a name="define-appropriate-update-mechanisms-for-updates"></a>
 
- Whether it’s deploying patches to individual packages, updating local firmware, or wholesale replacing the software on an IoT device, patching is critical during the IoT device’s lifecycle. Although different use cases will have different tradeoffs, common things to consider include rolling out patches gradually to catch defects and ensuring all devices of the same type aren’t brought down simultaneously, being responsive to vulnerabilities, and ensuring the patch delivery mechanism can’t be used by unauthorized actors. Some additional considerations include:
+ Whether it's deploying patches to individual packages, updating local firmware, or wholesale replacing the software on an IoT device, patching is critical during the IoT device's lifecycle. Although different use cases will have different tradeoffs, common things to consider include rolling out patches gradually to catch defects and ensuring all devices of the same type aren't brought down simultaneously, being responsive to vulnerabilities, and ensuring the patch delivery mechanism can't be used by unauthorized actors. Some additional considerations include:
 +  Begin with having a mechanism to push software and firmware to devices in the field to patch security vulnerabilities and improve device functionality.
 +  Apply and verify digital signatures on distributed deployment artifacts.
 +  Verify the integrity of the software on the device before starting to run it ensuring that it comes from a reliable source (signed by the vendor) and that it is obtained in a secure manner.
@@ -24,7 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 
  AWS provides the following capabilities and services to help you organize and maintain a continuous development and deployment pipeline:
 +  [FreeRTOS over-the-air updates](https://docs.aws.amazon.com/freertos/latest/userguide/freertos-ota-dev.html)
-+  [OTA updates of AWS IoT Greengrass Core software](https://docs.aws.amazon.com/greengrass/v1/developerguide/core-ota-update.html)
++  [Updates of the AWS IoT Greengrass Core software](https://docs.aws.amazon.com/greengrass/v2/developerguide/update-greengrass-core-v2.html)
 +  [AWS IoT Jobs](https://docs.aws.amazon.com/iot/latest/developerguide/iot-jobs.html) – Defines a set of remote operations that you send to and run on one or more devices connected to AWS IoT.
 +  [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-patch.html) – Automates the process of patching managed instances with both security related and other types of updates, such as operating systems and applications.
 +  [Security Pillar of AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and [IoT Lens](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/welcome.html)

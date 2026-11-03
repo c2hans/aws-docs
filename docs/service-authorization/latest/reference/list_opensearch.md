@@ -289,6 +289,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   FailoverReplication  **
+  - **IAM action:**  [es:FailoverReplication](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_FailoverReplication.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   GetApplication  **
   - **IAM action:**  [es:GetApplication](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetApplication.html)
   - **Condition key:**

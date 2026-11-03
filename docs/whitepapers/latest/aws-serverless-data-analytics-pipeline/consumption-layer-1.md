@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-analytics-pipeline/consumption-layer-1.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Consumption layer
 <a name="consumption-layer-1"></a>
 
@@ -59,6 +57,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-serverless-data-a
 
  You can organize multiple training jobs by using [Amazon SageMaker AI Experiments](https://aws.amazon.com/blogs/aws/amazon-sagemaker-experiments-organize-track-and-compare-your-machine-learning-trainings/). You can build training jobs using Amazon SageMaker AI built-in algorithms, your custom algorithms, or hundreds of algorithms you can deploy from AWS Marketplace. Amazon SageMaker AI Debugger provides full visibility into model training jobs. Amazon SageMaker AI also provides automatic hyperparameter tuning for ML training jobs.
 
- You can [deploy Amazon SageMaker AI trained models](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html) into production with a few clicks and easily scale them across a fleet of fully managed EC2 instances. You can choose from multiple EC2 instance types and attach cost-effective [GPU-powered inference acceleration](https://docs.aws.amazon.com/sagemaker/latest/dg/ei.html). After the models are deployed, Amazon SageMaker AI can [monitor key model metrics](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-overview.html) for inference accuracy and detect any concept drift.
+ You can [deploy Amazon SageMaker AI trained models](https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html) into production with a few clicks and easily scale them across a fleet of fully managed EC2 instances. You can choose from multiple EC2 instance types. After the models are deployed, Amazon SageMaker AI can [monitor key model metrics](https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-overview.html) for inference accuracy and detect any concept drift.
 
  Amazon SageMaker AI provides native integrations with AWS services in the storage and security layers.

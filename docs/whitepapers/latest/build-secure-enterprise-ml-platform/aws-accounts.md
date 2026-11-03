@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/aws-accounts.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # AWS accounts
 <a name="aws-accounts"></a>
 
@@ -26,7 +24,7 @@ You can use [AWS Control Tower](https://aws.amazon.com/controltower/) to build s
 
 For machine learning projects, the accounts can be created within the Workloads OU or Line of Business (LoB) OU, as shown in the figure.
 
-The creation of OUs enables you to set up organizational level pre-defined guardrails. These guardrails consist of [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) that are designed to help you maintain the compliance of your environment. You can use them to identify and audit non-compliant resources that are launched in your environment; for example, for data protection, a common set of guardrails may be:
+The creation of OUs enables you to set up organizational level pre-defined guardrails. These guardrails consist of [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) that are designed to help you maintain the compliance of your environment. You can use them to identify and audit non-compliant resources that are launched in your environment; for example, for data protection, a common set of guardrails might be:
 +  Disallow public access to Amazon S3 buckets.
 +  Disallow S3 buckets that are not encrypted.
 + Disallow S3 buckets that don't have versioning enabled.

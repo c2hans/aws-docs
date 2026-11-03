@@ -53,9 +53,14 @@ This policy assumes that you specify an existing instance profile in the `Helper
 
 Replace {{account ID}}, {{EC2RescueHelperRole}}, and {{EC2RescueAutomationRole}} with your own information.
 
+------
+#### [ JSON ]
+
+****
+
 ```
 {
-    "Version": "2012-10-17",
+    "Version":"2012-10-17",
     "Statement": [
         {
             "Sid": "ReadApprovedHelperProfile",
@@ -154,6 +159,8 @@ Replace {{account ID}}, {{EC2RescueHelperRole}}, and {{EC2RescueAutomationRole}}
     ]
 }
 ```
+
+------
 
 ## Running the Automation
 <a name="automation-ec2rescue-executing"></a>

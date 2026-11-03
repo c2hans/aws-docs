@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/amazon-quicksight.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon Quick
 <a name="amazon-quicksight"></a>
 
@@ -11,7 +9,7 @@ Amazon Quick is a scalable, serverless, embeddable, machine learning-powered bus
 
 Amazon Quick is built with "[SPICE](https://aws.amazon.com/about-aws/whats-new/2020/07/amazon-quicksight-spice-data-engine-supports-data-sets-250m-rows/)" – a Super-fast, Parallel, In-memory Calculation Engine. Built from the ground up for the cloud, SPICE uses a combination of columnar storage, in-memory technologies enabled through the latest hardware innovations, and machine code generation to run interactive queries on large datasets and get rapid responses. SPICE supports rich calculations to help you derive valuable insights from your analysis without worrying about provisioning or managing infrastructure. Data in SPICE is persisted until it is explicitly deleted by the user. SPICE also automatically replicates data for high availability and enables Amazon Quick to scale to hundreds of thousands of users who can all simultaneously perform fast interactive analysis across a wide variety of AWS data sources.
 
-QuickSight leverages the AWS proven ML capabilities, making it easy for BI teams to perform advanced analytics (for example, what-if analyses, anomaly detection, ML-based forecasting, churn prediction, and so on) without prior data science experience. You can use QuickSight’s pre-built models, or bring your own ML models from Amazon SageMaker AI.
+QuickSight uses the AWS proven ML capabilities, making it easy for BI teams to perform advanced analytics (for example, what-if analyses, anomaly detection, ML-based forecasting, churn prediction, and so on) without prior data science experience. You can use QuickSight's pre-built models, or bring your own ML models from Amazon SageMaker AI.
 
 ## Ideal usage patterns
 <a name="ideal-usage-patterns-quicksight"></a>
@@ -52,7 +50,7 @@ SPICE automatically replicates data for high availability and enables Amazon Qui
 ## Scalability and elasticity
 <a name="scalability-and-elasticity-quicksight"></a>
 
-Amazon Quick is a fully managed service and it internally takes care of scaling to meet the demands of your end users. With Amazon Quick you don’t need to worry about scale. You can seamlessly grow your data from a few hundred megabytes to many terabytes of data without managing any infrastructure.
+Amazon Quick is a fully managed service and it internally takes care of scaling to meet the demands of your end users. With Amazon Quick you don't need to worry about scale. You can seamlessly grow your data from a few hundred megabytes to many terabytes of data without managing any infrastructure.
 
 ## Interfaces
 <a name="interfaces-quicksight"></a>

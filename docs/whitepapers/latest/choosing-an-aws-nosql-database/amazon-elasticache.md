@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/amazon-elasticache.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon ElastiCache
 <a name="amazon-elasticache"></a>
 

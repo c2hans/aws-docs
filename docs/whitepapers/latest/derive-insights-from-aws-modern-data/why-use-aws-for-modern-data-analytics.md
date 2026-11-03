@@ -29,7 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
 +  Unmatched 99.999999999% of durability and 99.99% availability
 +  The best security, compliance, and audit capabilities with object level audit logging and access control
 +  The most flexibility with five storage tiers
-+  The lowest cost with pricing that starts at less than $1 per TB per month
++  The lowest cost, with pricing charged per TB per month (see the pricing page for current rates)
 
 Amazon S3 gives you robust capabilities to manage access, cost, replication, and data protection.
 
@@ -40,7 +40,7 @@ Amazon S3 gives you robust capabilities to manage access, cost, replication, and
 
  AWS is committed to providing the best performance at the lowest cost across all analytics services, and it is continually innovating to improve the price-performance of our services. In addition to industry-leading price performance for analytics services, S3 intelligent tiering saves you up to 70% on storage cost for data stored in your data lake. [Amazon EC2](https://aws.amazon.com/ec2/) provides access to an industry-leading choice of over 200 instance types, up to 100 billions of bits per second (Gbps) network bandwidth, and the ability to choose between on-demand, reserved, and spot instances.
 
- With [Amazon Redshift RA3 instances](https://aws.amazon.com/blogs/aws/amazon-redshift-update-next-generation-compute-instances-and-managed-analytics-optimized-storage/?&trk=em_a134p000006BjJ3AAK&trkCampaign=pac_q120_Redshift_RA3instances_blogpost&sc_channel=em&sc_campaign=) with managed storage, you can choose the number of nodes based on your performance requirements, and pay only for the managed storage that you use. [Advanced Query Accelerator](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-cluster-aqua.html) (AQUA) is an analytics query accelerator for Amazon Redshift that uses custom-designed hardware to speed up queries that scan large datasets. This hardware-accelerated cache enables Amazon Redshift to run up to ten times faster as it scales out and processes data in parallel across many nodes. Each node accelerates compression, encryption, and data processing tasks like scans, aggregates, and filtering.
+ With [Amazon Redshift RA3 instances](https://aws.amazon.com/blogs/aws/amazon-redshift-update-next-generation-compute-instances-and-managed-analytics-optimized-storage/?&trk=em_a134p000006BjJ3AAK&trkCampaign=pac_q120_Redshift_RA3instances_blogpost&sc_channel=em&sc_campaign=) with managed storage, you can choose the number of nodes based on your performance requirements, and pay only for the managed storage that you use. Advanced Query Accelerator (AQUA) is an analytics query accelerator for Amazon Redshift that uses custom-designed hardware to speed up queries that scan large datasets. This hardware-accelerated cache enables Amazon Redshift to run up to ten times faster as it scales out and processes data in parallel across many nodes. Each node accelerates compression, encryption, and data processing tasks like scans, aggregates, and filtering. Amazon Redshift automatically determines when to use AQUA, so there is nothing to configure.
 
 ## Seamless data movement
 <a name="seamless-data-movement"></a>

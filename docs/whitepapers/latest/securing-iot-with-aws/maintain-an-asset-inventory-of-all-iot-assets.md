@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 
 Maintain an asset inventory of all IoT assets, including IT assets required to maintain IoT operations. Categorize them by safety, criticality, ability to patch, and other actionable criteria.
 
- A critical aspect of a good security program is having visibility into your system. It’s also important that you create visibility with actionable outcomes in mind, so you can automate operations and maintenance of these devices after deployment.
+ A critical aspect of a good security program is having visibility into your system. It's also important that you create visibility with actionable outcomes in mind, so you can automate operations and maintenance of these devices after deployment.
 +  Create and maintain an asset inventory for all IoT assets along with their major characteristics that you may want to action upon. This includes things such as deployed certificates and software or hardware versions.
 +  Segment devices into categories or apply appropriate tags to be able to manage them programmatically. Focus on actionable data such criticality of the devices, location, whether the device can or should be updated, or important contact and owner information.
 

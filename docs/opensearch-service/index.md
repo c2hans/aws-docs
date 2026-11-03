@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/index.html
 title: 'Amazon OpenSearch Service Documentation'
 canonical_url: https://docs.aws.amazon.com/opensearch-service/
 source: aws-documentation
-generated_on: 2026-10-30
+generated_on: 2026-11-02
 ---
 
 # Amazon OpenSearch Service Documentation
@@ -46,6 +46,7 @@ Amazon OpenSearch Service is a managed service that makes it easy to deploy, ope
 - [OpenSearch Ingestion CLI Reference](/cli/latest/reference/osis/): Describes the CLI commands for Amazon OpenSearch Ingestion.
 - [OpenSearch Ingestion API Reference](/opensearch-service/latest/APIReference/API_Operations_Amazon_OpenSearch_Ingestion.html): Describes the API operations for Amazon OpenSearch Ingestion.
 - [OpenSearch OSS Documentation](https://opensearch.org/docs/latest/): Provides open-source documentation for OpenSearch, which is the fully open-source search and analytics engine that OpenSearch Service is built around.
+- [OpenSearch REST API Reference](/opensearch-service/latest/rest-api/index.html): Describes the OpenSearch REST API operations for OpenSearch Service domains and OpenSearch Serverless collections, such as search, bulk indexing, and index management.
 
 ---
 

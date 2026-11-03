@@ -122,14 +122,14 @@ Use tags to organize your AWS bill to reflect your own cost structure. To do thi
 
 You can add a cost allocation tag directly to a DB snapshot or DB cluster snapshot, and the tag is reflected on your bill. Snapshot storage charges are attributed to each snapshot, so you apply tags to the snapshots themselves to group those charges. You can attribute snapshot charges in either of the following ways:
 + Add tags directly to each snapshot.
-+ Enable the copy-tags-to-snapshot option on a DB instance to copy its tags to the snapshots that it creates. This option applies only to snapshots created after you enable it, so tag existing snapshots directly. For more information, see [Copying tags to DB snapshots](#USER_Tagging.CopyTags).
++ Enable the copy-tags-to-snapshot option on a DB instance to copy its tags to the snapshots that it creates. This option applies only to snapshots created after you enable it, so you need to tag existing snapshots directly. For more information, see [Copying tags to DB snapshots](#USER_Tagging.CopyTags).
 
 Cost allocation tags work on a snapshot even after its source DB instance is deleted. Copying tags across accounts isn't supported.
 
 **Important**
 Cost allocation tags aren't applied retroactively. Any snapshot storage usage that is incurred before you assign a tag remains unattributed on your bill, so apply your tags as soon as possible.
 
-Because your free backup storage allowance is applied as a percentage discount across all of your snapshots, the totals in a tag-based breakdown don't match the instance-level totals that you saw before snapshot charges were attributed per snapshot, even though your overall charges are unchanged. For more information, see [Backup storage](USER_WorkingWithAutomatedBackups.md#USER_WorkingWithAutomatedBackups.BackupStorage).
+Because your free backup storage allowance is applied as a percentage discount across all of your snapshots, the per-instance totals in a tag-based breakdown don't match the per-instance totals that you saw before snapshot charges were attributed per snapshot, even though the overall charges in your AWS account and AWS Region are unchanged. For more information, see [Backup storage](USER_WorkingWithAutomatedBackups.md#USER_WorkingWithAutomatedBackups.BackupStorage).
 
 ## Best practices for tagging Amazon RDS resources
 <a name="Tagging.best-practices"></a>

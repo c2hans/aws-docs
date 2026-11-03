@@ -2,12 +2,10 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/guiding-questions.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Guiding Questions
 <a name="guiding-questions"></a>
 
- How you approach each of these key activities of the business planning exercise will be different for each company. As a starting point, we have assembled a series of guiding questions that may help you fill in important dimensions of your business case and can provide a better insight into the fundamentals of your model. Below is the list of guiding questions:
+ How you approach each of these key activities of the business planning exercise will be different for each company. As a starting point, we have assembled a series of guiding questions that might help you fill in important dimensions of your business case and can provide a better insight into the fundamentals of your model. Below is the list of guiding questions:
 
 ## Assess the SaaS Opportunity
 <a name="assess-the-saas-opportunity"></a>

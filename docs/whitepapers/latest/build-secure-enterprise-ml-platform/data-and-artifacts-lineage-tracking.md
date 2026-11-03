@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/data-and-artifacts-lineage-tracking.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Data and artifacts lineage tracking
 <a name="data-and-artifacts-lineage-tracking"></a>
 

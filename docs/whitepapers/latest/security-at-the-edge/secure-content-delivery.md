@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/secure-content-delivery.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Secure content delivery
 <a name="secure-content-delivery"></a>
 

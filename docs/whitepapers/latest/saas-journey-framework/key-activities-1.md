@@ -2,12 +2,10 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/key-activities-1.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Key Activities
 <a name="key-activities-1"></a>
 
- SaaS brings an additional layer of considerations that need to be factored into your overall strategy. There are a handful of activities that are essential to developing a robust product strategy. The goal here is to highlight these specific areas and ensure that your company is looking at all the elements that need to be included in your SaaS product offering. It is important to note that your strategy is not just about your customer’s experience with the product, it’s also about their experience with your service. This means your strategy must also consider how it embraces the agility, innovation and efficiency that is traditionally associated with SaaS environments.
+ SaaS brings an additional layer of considerations that need to be factored into your overall strategy. There are a handful of activities that are essential to developing a robust product strategy. The goal here is to highlight these specific areas and ensure that your company is looking at all the elements that need to be included in your SaaS product offering. It is important to note that your strategy is not just about your customer's experience with the product, it's also about their experience with your service. This means your strategy must also consider how it embraces the agility, innovation and efficiency that is traditionally associated with SaaS environments.
 
  Below is a list of the specific activities that companies often include in their product strategy and roadmap development:
 

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/data-movement-ingestion-analysis-and-storage.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Data Movement, Ingestion, Analysis, and Storage
 <a name="data-movement-ingestion-analysis-and-storage"></a>
 

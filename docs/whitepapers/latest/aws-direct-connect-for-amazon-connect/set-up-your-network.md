@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/set-up-your-network.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Set up your network
 <a name="set-up-your-network"></a>
 
@@ -30,7 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
                 },
 ```
 
- AWS always publishes any IP range twice: once for the specific service, and once for “AMAZON” service. There could even be a third listing for a more specific use case within a service.
+ AWS always publishes any IP range twice: once for the specific service, and once for "AMAZON" service. There could even be a third listing for a more specific use case within a service.
 
  When there are new IP address ranges supported for Amazon Connect, they are added to the publicly available `ip-ranges.json` file. They are kept for a minimum of 30 days before they are used by the service. After 30 days, softphone traffic through the new IP address ranges increases over the subsequent two weeks. After two weeks, traffic is routed through the new ranges equivalent to all available ranges.
 

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/develop-deploy-dotnet
 
 There are a number of services collectively known as the [AWS Developer Tools](https://aws.amazon.com/products/developer-tools/), which are designed to solve common DevOps requirements and provide development agility and continuous innovation.
 
-You may already be using a CI/CD pipeline. Although you can continue using your favorite tools and easily integrate them with AWS Services, you can also use AWS developer tools to create a complete pipeline, or complement or extend the other tools you are using. Using AWS Developer Tools relieves you from managing infrastructure of your CI/CD pipeline tools, and helps you increase the efficiency and productivity of your infrastructure and developers.
+You might already be using a CI/CD pipeline. Although you can continue using your favorite tools and easily integrate them with AWS Services, you can also use AWS developer tools to create a complete pipeline, or complement or extend the other tools you are using. Using AWS Developer Tools relieves you from managing infrastructure of your CI/CD pipeline tools, and helps you increase the efficiency and productivity of your infrastructure and developers.
 
 ## Version Control
 <a name="version-control"></a>
@@ -33,7 +33,7 @@ One way to do this is using build servers that you dedicate for this purpose. Ho
 
 [AWS CodeBuild](https://aws.amazon.com/codebuild/) is a fully managed build service that compiles source code, runs tests, and produces software packages that are ready to deploy. It seamlessly scales and concurrently processes multiple builds, eliminating waiting time and increasing developer productivity. You only pay for time the build container is running.
 
-AWS CodeBuild includes a pre-packaged build environment for .NET Core and/or .NET 5 on Linux and Windows. Alternatively, you can use pre-built Docker images such as official Microsoft images for the .NET, or create your own custom build environment by creating a Docker image.
+AWS CodeBuild includes a pre-packaged build environment for .NET Core and/or modern .NET on Linux and Windows. Alternatively, you can use pre-built Docker images such as official Microsoft images for the .NET, or create your own custom build environment by creating a Docker image.
 
 For details about creating a custom build environment for .NET Framework, see [this entry](https://aws.amazon.com/blogs/devops/extending-aws-codebuild-with-custom-build-environments-for-the-net-framework/) on the [AWS DevOps Blog](https://aws.amazon.com/blogs/devops/).
 

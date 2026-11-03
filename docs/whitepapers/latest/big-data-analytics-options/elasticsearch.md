@@ -2,16 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/elasticsearch.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon OpenSearch Service
 <a name="elasticsearch"></a>
 
  [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) (OpenSearch Service) makes it easy to deploy, operate, and scale OpenSearch Service for log analytics, full text search, application monitoring, and more. OpenSearch Service is a fully managed service that delivers the OpenSearch Service easy-to-use APIs and real-time capabilities along with the availability, scalability, and security required by production workloads. The service offers built-in integrations with [OpenSearch Dashboards](https://aws.amazon.com/elasticsearch-service/kibana/), [Logstash](https://aws.amazon.com/elasticsearch-service/logstash/), and AWS services including [Amazon Data Firehose](https://aws.amazon.com/kinesis/data-firehose/), [AWS Lambda](https://aws.amazon.com/lambda/), and [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) so that you can go from raw data to actionable insights quickly.
 
- It’s easy to get started with OpenSearch Service. You can set up and configure your OpenSearch Service domain in minutes from the [AWS Management Console](https://aws.amazon.com/console/). If you prefer programmatic access, you can use the AWS CLI or the AWS SDKs. OpenSearch Service provisions all the resources for your domain and launches it. The service automatically detects and replaces failed OpenSearch Service nodes, reducing the overhead associated with self-managed infrastructure and OpenSearch Service software.
+ It's easy to get started with OpenSearch Service. You can set up and configure your OpenSearch Service domain in minutes from the [AWS Management Console](https://aws.amazon.com/console/). If you prefer programmatic access, you can use the AWS CLI or the AWS SDKs. OpenSearch Service provisions all the resources for your domain and launches it. The service automatically detects and replaces failed OpenSearch Service nodes, reducing the overhead associated with self-managed infrastructure and OpenSearch Service software.
 
-OpenSearch Service enables you to scale your cluster through a single API call, or a few clicks in the console. With OpenSearch Service, you get direct access to the OpenSearch Service open-source API, so that code and applications you’re already using with your existing OpenSearch Service environments will work seamlessly.
+OpenSearch Service enables you to scale your cluster through a single API call, or a few clicks in the console. With OpenSearch Service, you get direct access to the OpenSearch Service open-source API, so that code and applications you're already using with your existing OpenSearch Service environments will work seamlessly.
 
 In addition to X86 based instances, [Amazon OpenSearch Service offers instances from the Graviton2 instance](https://aws.amazon.com/about-aws/whats-new/2021/05/amazon-elasticsearch-service-offers-aws-graviton2-m6g-c6g-r6g-r6gd-instances/) family. The instance family includes general purpose, compute-optimized, and memory-optimized instances for you to choose from. OpenSearch Service Service Graviton2 instances support OpenSearch Service versions 7.9 and above.
 
@@ -24,7 +22,7 @@ OpenSearch Service is ideal for querying and searching large amounts of data. Or
 +  Analyze product usage data coming from various services and systems
 +  Analyze social media sentiments, CRM data, and find trends for your brand and products
 +  Analyze data stream updates from other AWS services, such as Amazon Kinesis Data Streams and Amazon DynamoDB
-+  Utilize a rich search and navigation experience.
++  Use a rich search and navigation experience.
 +  Monitor usage for mobile applications
 
 ## Cost model
@@ -32,7 +30,7 @@ OpenSearch Service is ideal for querying and searching large amounts of data. Or
 
  With Amazon OpenSearch Service, you pay only for what you use. There are no minimum fees or upfront commitments. You are charged for OpenSearch Service instance hours, Amazon EBS storage (if you choose this option), and standard data transfer fees.
 
- You can get started with our free tier, which provides free usage of up to 750 hours per month of a single-AZ `t2.micro.elasticsearch` or `t2.small.elasticsearch` instance and 10 GB per month of optional Amazon EBS storage (Magnetic or General Purpose). With OpenSearch Service Reserved Instances, you can reserve instances for a one- or three-year term and get significant savings on usage costs compared to On-Demand Instances.
+ For current free tier eligibility and pricing, see [Amazon OpenSearch Service pricing](https://aws.amazon.com/opensearch-service/pricing/). With OpenSearch Service Reserved Instances, you can reserve instances for a one- or three-year term and get significant savings on usage costs compared to On-Demand Instances.
 
  OpenSearch Service enables you to add data durability through automated and manual snapshots of your cluster. OpenSearch Service provides storage space for automated snapshots free of charge for each Amazon OpenSearch Service domain. Automated snapshots are retained for a period of 14 days. Manual snapshots are charged according to Amazon S3 storage rates. Data transfer for using the snapshots is free of charge. At the time of this writing, with Graviton2 instances for OpenSearch Service, you can realize up to 44% price/performance improvement over previous generation instances.
 
@@ -45,7 +43,7 @@ For more information, see [Amazon OpenSearch Service Pricing](https://aws.amazon
 
  Performance of OpenSearch Service depends on multiple factors including instance type, workload, index, number of shards used, read replicas, and storage configurations – instance storage or EBS storage (general purpose SSD). Indexes are made up of shards of data which can be distributed on different instances in multiple Availability Zones.
 
- Read replica of the shards are maintained by OpenSearch Service in a different Availability Zone if zone awareness is checked. OpenSearch Service can use either the fast SSD instance storage for storing indexes or multiple EBS volumes. A search engine makes heavy use of storage devices and making disks faster will result in faster query and search performance. Leveraging Graviton2 instances can also improve indexing throughput, indexing latency reduction, and query performance, in comparison with the corresponding x86-based instances from the current generation.
+ Read replica of the shards are maintained by OpenSearch Service in a different Availability Zone if zone awareness is checked. OpenSearch Service can use either the fast SSD instance storage for storing indexes or multiple EBS volumes. A search engine makes heavy use of storage devices and making disks faster will result in faster query and search performance. Using Graviton2 instances can also improve indexing throughput, indexing latency reduction, and query performance, in comparison with the corresponding x86-based instances from the current generation.
 
 ## Durability and availability
 <a name="durability-and-availability-es"></a>
@@ -70,7 +68,7 @@ Similar to UltraWarm storage, cold storage is backed by S3. When you need to que
 
  OpenSearch Service supports many of the commonly used OpenSearch APIs, so code, applications, and popular tools that you're already using with your current OpenSearch environments will work seamlessly. For a full list of supported OpenSearch operations, see [OpenSearch Service documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-gsg-supported-operations.html) .
 
- The AWS CLI, API, or the AWS Management Console can be used for creating and managing your domains as well.
+ You can use the AWS CLI, API, or the AWS Management Console to create and manage your domains as well.
 
  OpenSearch Service supports integration with several AWS services, including streaming data from S3 buckets, Amazon Kinesis Data Streams, and DynamoDB Streams. Both integrations use a Lambda function as an event handler in the cloud that responds to new data in Amazon S3 and Amazon Kinesis Data Streams by processing it and streaming the data to your OpenSearch Service domain. OpenSearch Service also integrates with Amazon CloudWatch for monitoring OpenSearch Service domain metrics and CloudTrail for auditing configuration API calls to OpenSearch Service domains.
 

@@ -11,6 +11,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-history) | Updated Amazon Kinesis capacity details; style updates. | October 29, 2026 |
 | [Initial publication](#document-history) | First published. | November 1, 2021 |
 
 **Note**

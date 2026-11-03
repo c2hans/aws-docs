@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/amazon-connect-region-selection-considerations.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon Connect Region selection considerations
 <a name="amazon-connect-region-selection-considerations"></a>
 

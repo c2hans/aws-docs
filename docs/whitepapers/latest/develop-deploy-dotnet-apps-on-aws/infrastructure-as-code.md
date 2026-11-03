@@ -35,6 +35,6 @@ For infrastructure requiring a high number of interrelated services, or that is 
 
 The [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/) (AWS CDK) enables you to define cloud resources in various programming languages, including TypeScript, JavaScript, Python, C\#, and Java. Developers use one of the supported languages to write code that defines reusable cloud components known as Constructs, which can then be composed into Stacks and Apps.
 
-After you’ve defined an AWS CDK App, you can use the AWS CDK toolkit to synthesize a CloudFormation template, and then to deploy the defined resources to AWS.
+After you've defined an AWS CDK App, you can use the AWS CDK toolkit to synthesize a CloudFormation template, and then to deploy the defined resources to AWS.
 
 Although using the AWS CDK adds an additional level of complexity to your Infrastructure as Code, by using an imperative language it allows you to work with high-level abstractions, rich logic, and enables the sharing of infrastructure definitions as reusable libraries of components.

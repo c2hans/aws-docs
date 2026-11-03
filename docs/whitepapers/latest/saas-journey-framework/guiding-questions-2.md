@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/guiding-questions-2.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Guiding Questions
 <a name="guiding-questions-2"></a>
 
@@ -42,10 +40,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
 ## Target Feedback Experience
 <a name="target-feedback-experience-1"></a>
-+  What data will be used to assess the customer’s perspective on this new service offering?
++  What data will be used to assess the customer's perspective on this new service offering?
 +  Will targeted customers be enables to provide feedback during the development process?
 +  How will you identify customers that will participate in this process?
-+  Will you be able to engage customers from segments you may not target today?
++  Will you be able to engage customers from segments you might not target today?
 
 ## Defining Core SaaS Tenets for the MVS
 <a name="defining-core-saas-tenets-for-the-mvs-1"></a>

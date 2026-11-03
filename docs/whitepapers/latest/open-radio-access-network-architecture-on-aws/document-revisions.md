@@ -11,4 +11,5 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Content and style updates](#document-revisions) | Converted service names to shared entities, filled template placeholders, and applied editorial style updates. | October 29, 2026 |
 | [Initial publication](#document-revisions) | Whitepaper published. | December 2, 2022 |

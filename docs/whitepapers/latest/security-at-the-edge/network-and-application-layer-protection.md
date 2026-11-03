@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/network-and-application-layer-protection.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Network and application layer protection
 <a name="network-and-application-layer-protection"></a>
 
@@ -12,7 +10,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
  Edge customers should define trust boundaries for networks and accounts, and verify secure system configurations and other policy-enforcement points, including web application firewalls (WAFs) and API gateways. This can be done by blocking well-known exploits, implementing protections specific to applications, responding to new threats, and performing ongoing monitoring.
 
  There are two important aspects to network and application layer protection at the edge:
-+  Protections from well-known exploits and attacks that could affect an organization’s applications
++  Protections from well-known exploits and attacks that could affect an organization's applications
 +  Visibility and control of workloads
 
 **Manufacturing at the edge**

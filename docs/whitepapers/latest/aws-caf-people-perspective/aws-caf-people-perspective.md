@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/aws-caf-people-perspective.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # AWS Cloud Adoption Framework: People Perspective
 <a name="aws-caf-people-perspective"></a>
 
@@ -12,7 +10,7 @@ Publication date: **January 10, 2023** ([Document revisions](document-revisions.
 ## Abstract
 <a name="abstract"></a>
 
- As the proliferation of digital technologies continues to disrupt market segments and industries, adopting Amazon Web Services (AWS) can help you transform your organization to meet the changing business conditions and evolving customer needs. As the world’s most comprehensive and broadly adopted cloud platform, AWS can help you reduce business risk; improve environmental, social, and governance (ESG) performance; increase revenue; and improve operational efficiency.
+ As the proliferation of digital technologies continues to disrupt market segments and industries, adopting Amazon Web Services (AWS) can help you transform your organization to meet the changing business conditions and evolving customer needs. As the world's most comprehensive and broadly adopted cloud platform, AWS can help you reduce business risk; improve environmental, social, and governance (ESG) performance; increase revenue; and improve operational efficiency.
 
  The [AWS Cloud Adoption Framework](https://aws.amazon.com/professional-services/CAF/) (AWS CAF) uses AWS experience and best practices to help you digitally transform and accelerate your business outcomes through innovative use of AWS. Use AWS CAF to identify and prioritize transformation opportunities, evaluate and improve your cloud readiness, and iteratively evolve your transformation roadmap.
 
@@ -48,4 +46,4 @@ Publication date: **January 10, 2023** ([Document revisions](document-revisions.
 
  AWS and the [AWS Partner Network](https://aws.amazon.com/partners/find-a-partner/) (APN) provide tools and services that can help you along each step of the way. [AWS Professional Services](https://aws.amazon.com/professional-services/) is a global team of experts that provide assistance through a collection of AWS CAF aligned offerings that can help you achieve specific outcomes related to your cloud transformation.
 
-![A diagram depicting the AWS CAF People perspective capabilities.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/images/caf-people-perspective.png)
+![A diagram depicting the seven capabilities of the AWS CAF People perspective.](https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/images/caf-people-perspective.png)

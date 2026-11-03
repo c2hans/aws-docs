@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/aws-operational-resilience.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Amazon Web Services' Approach to Operational Resilience in the Financial Sector & Beyond
 <a name="aws-operational-resilience"></a>
 
@@ -16,7 +14,7 @@ Publication date: *March 2019*
 ## Introduction
 <a name="introduction"></a>
 
- AWS provides information technology (IT) services and building blocks that all types of businesses, public authorities, universities, and individuals utilize to become more secure, innovative, and responsive to their own needs and the needs of their customers. AWS offers IT services in categories ranging from compute, storage, database, and networking to artificial intelligence and machine learning. AWS standardizes its services and makes them available to all customers, including financial institutions. Across the world, financial institutions have used AWS services to build their own applications for mobile banking, regulatory reporting and market analysis.
+ AWS provides information technology (IT) services and building blocks that all types of businesses, public authorities, universities, and individuals use to become more secure, innovative, and responsive to their own needs and the needs of their customers. AWS offers IT services in categories ranging from compute, storage, database, and networking to artificial intelligence and machine learning. AWS standardizes its services and makes them available to all customers, including financial institutions. Across the world, financial institutions have used AWS services to build their own applications for mobile banking, regulatory reporting and market analysis.
 
  AWS and the financial services industry share a common interest in maintaining operational resilience; for example, the ability to provide continuous service despite disruption. Continuity of service, especially for critical economic functions, is a key prerequisite for financial stability. AWS recognizes that financial institutions, which use AWS services, need to comply with sector-specific regulatory obligations and internal requirements regarding operational resilience.
 

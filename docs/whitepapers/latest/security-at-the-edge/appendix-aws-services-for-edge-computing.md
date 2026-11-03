@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/appendix-aws-services-for-edge-computing.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Appendix: AWS services for edge computing
 <a name="appendix-aws-services-for-edge-computing"></a>
 
@@ -32,7 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 ### AWS Snow Family
 <a name="aws-snow-family"></a>
 
- The [AWS Snow Family](https://aws.amazon.com/snow/) helps customers that need to run operations in austere, non-data center environments, and in locations where there's a lack of consistent network connectivity. The AWS Snow Family, comprised of [AWS Snowcone,](https://aws.amazon.com/snowcone/) [AWS Snowball Edge](https://aws.amazon.com/snowball/), and [AWS Snowmobile](https://aws.amazon.com/snowmobile/), offers a number of physical devices and capacity points, most with built-in computing capabilities. These services help physically transport up to exabytes of data into and out of AWS. AWS Snow Family devices are owned and managed by AWS and integrate with AWS security, monitoring, storage management, and computing capabilities.
+ The [AWS Snow Family](https://aws.amazon.com/snow/) helps customers that need to run operations in austere, non-data center environments, and in locations where there's a lack of consistent network connectivity. The AWS Snow Family, comprised of [AWS Snowball Edge](https://aws.amazon.com/snowball/), offers a number of physical devices and capacity points, most with built-in computing capabilities. These services help physically transport up to exabytes of data into and out of AWS. AWS Snow Family devices are owned and managed by AWS and integrate with AWS security, monitoring, storage management, and computing capabilities.
 
 ### AWS Storage Gateway
 <a name="aws-storage-gateway"></a>
@@ -47,7 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 ### AWS Wavelength
 <a name="aws-wavelength"></a>
 
- [AWS Wavelength](https://aws.amazon.com/wavelength/) is an AWS Infrastructure offering optimized for mobile edge computing applications. [Wavelength Zones](https://docs.aws.amazon.com/wavelength/latest/developerguide/wavelength-quotas.html#concepts-available-zones) are AWS infrastructure deployments that embed AWS compute and storage services within communications service providers’ (CSP) data centers at the edge of the 5G network, so application traffic from 5G devices can reach application servers running in Wavelength Zones without leaving the telecommunications network.
+ [AWS Wavelength](https://aws.amazon.com/wavelength/) is an AWS Infrastructure offering optimized for mobile edge computing applications. [Wavelength Zones](https://docs.aws.amazon.com/wavelength/latest/developerguide/wavelength-quotas.html#concepts-available-zones) are AWS infrastructure deployments that embed AWS compute and storage services within communications service providers' (CSP) data centers at the edge of the 5G network, so application traffic from 5G devices can reach application servers running in Wavelength Zones without leaving the telecommunications network.
 
 ## AWS services that support security at the edge
 <a name="aws-services-that-support-security-at-the-edge"></a>
@@ -55,7 +53,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 ### Amazon API Gateway
 <a name="amazon-api-gateway"></a>
 
- [Amazon API Gateway](https://aws.amazon.com/api-gateway/) is a fully managed service that makes it easy for developers to publish, maintain, monitor, secure, and operate APIs at any scale. It’s a pay-as-you-go service that takes care of all of the undifferentiated heavy lifting involved in securely and reliably running APIs at scale.
+ [Amazon API Gateway](https://aws.amazon.com/api-gateway/) is a fully managed service that makes it easy for developers to publish, maintain, monitor, secure, and operate APIs at any scale. It's a pay-as-you-go service that takes care of all of the undifferentiated heavy lifting involved in securely and reliably running APIs at scale.
 
 ### AWS Certificate Manager
 <a name="aws-certificate-manager"></a>
@@ -95,7 +93,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 ### AWS Global Accelerator
 <a name="aws-global-accelerator"></a>
 
- [AWS Global Accelerator](https://aws.amazon.com/global-accelerator/?blogs-global-accelerator.sort-by=item.additionalFields.createdDate&blogs-global-accelerator.sort-order=desc&aws-global-accelerator-wn.sort-by=item.additionalFields.postDateTime&aws-global-accelerator-wn.sort-order=desc) is a networking service that sends your user’s traffic through the AWS global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, the AWS Global Accelerator automatic routing optimizations helps keep your packet loss, jitter, and latency consistently low.
+ [AWS Global Accelerator](https://aws.amazon.com/global-accelerator/?blogs-global-accelerator.sort-by=item.additionalFields.createdDate&blogs-global-accelerator.sort-order=desc&aws-global-accelerator-wn.sort-by=item.additionalFields.postDateTime&aws-global-accelerator-wn.sort-order=desc) is a networking service that sends your user's traffic through the AWS global network infrastructure, improving your internet user performance by up to 60%. When the internet is congested, the AWS Global Accelerator automatic routing optimizations helps keep your packet loss, jitter, and latency consistently low.
 
 ### Amazon GuardDuty
 <a name="amazon-guardduty"></a>
@@ -122,12 +120,12 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 
  [AWS Network Firewall](https://aws.amazon.com/network-firewall/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc) is a managed service that makes it easy to deploy essential network protections for all of your [Amazon Virtual Private Clouds](https://aws.amazon.com/vpc/) (VPCs). The service can be set up with just a few clicks and scales automatically with your network traffic, so you don't have to worry about deploying and managing any infrastructure.
 
- The AWS Network Firewall flexible rules engine enables you to define firewall rules that give you fine-grained control over network traffic, such as blocking outbound Server Message Block (SMB) requests to prevent the spread of malicious activity. You can also import rules you’ve already written in common open-source rule formats as well as enable integrations with managed intelligence feeds sourced by AWS Partners.
+ The AWS Network Firewall flexible rules engine enables you to define firewall rules that give you fine-grained control over network traffic, such as blocking outbound Server Message Block (SMB) requests to prevent the spread of malicious activity. You can also import rules you've already written in common open-source rule formats as well as enable integrations with managed intelligence feeds sourced by AWS Partners.
 
 ### Amazon Route 53
 <a name="amazon-route-53"></a>
 
- [Amazon Route 53](https://aws.amazon.com/route53/) is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to internet applications by translating names such as “www.example.com” into the numeric IP addresses, such as 192.0.2.1, that computers use to connect to each other. Route 53 is fully compliant with IPv6 as well.
+ [Amazon Route 53](https://aws.amazon.com/route53/) is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to internet applications by translating names such as "www.example.com" into the numeric IP addresses, such as 192.0.2.1, that computers use to connect to each other. Route 53 is fully compliant with IPv6 as well.
 
  Amazon Route 53 effectively connects user requests to infrastructure running in AWS, such as Amazon EC2 instances, Elastic Load Balancing load balancers, or S3 buckets, and can be used to route users to infrastructure outside of AWS. You can use Amazon Route 53 to configure DNS health checks to route traffic to healthy endpoints or to independently monitor the health of your application and its endpoints.
 
@@ -138,6 +136,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
 
  **AWS WAF**
 
- [AWS WAF](https://aws.amazon.com/waf/) is a web application firewall that helps protect your web applications or APIs against common web exploits that may affect availability, compromise security, or consume excessive resources. AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common attack patterns, such as SQL injection or cross-site scripting, and rules that filter out specific traffic patterns you define.
+ [AWS WAF](https://aws.amazon.com/waf/) is a web application firewall that helps protect your web applications or APIs against common web exploits that might affect availability, compromise security, or consume excessive resources. AWS WAF gives you control over how traffic reaches your applications by enabling you to create security rules that block common attack patterns, such as SQL injection or cross-site scripting, and rules that filter out specific traffic patterns you define.
 
  You can get started quickly using [Managed Rules for AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html), a pre-configured set of rules managed by AWS or AWS Marketplace Sellers. The Managed Rules for AWS WAF address issues like the OWASP Top 10 security risks. These rules are regularly updated as new issues emerge. AWS WAF includes a full-featured API that you can use to automate the creation, deployment, and maintenance of security rules.

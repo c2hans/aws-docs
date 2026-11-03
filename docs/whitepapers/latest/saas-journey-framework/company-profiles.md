@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/company-profiles.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Company Profiles
 <a name="company-profiles"></a>
 
@@ -23,7 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
  **UnicornExpress.com**
 
- This company profile represents the greenfield SaaS companies – with a SaaS solution developed from scratch – that are setting out on the path to SaaS without the baggage of an existing legacy environment. These companies are more about maximizing their opportunity and getting to market as quickly as possible. Their journey is often more challenging because the data and outlook tends to be more speculative. At the same time, they are in a good position to plot a path forward and define a business and technology vision that will align with SaaS best practices. The journey can get more clouded as the funding pressures may lead to compromises in operational and business efficiency that can ultimately slow the path to rapid growth.
+ This company profile represents the greenfield SaaS companies – with a SaaS solution developed from scratch – that are setting out on the path to SaaS without the baggage of an existing legacy environment. These companies are more about maximizing their opportunity and getting to market as quickly as possible. Their journey is often more challenging because the data and outlook tends to be more speculative. At the same time, they are in a good position to plot a path forward and define a business and technology vision that will align with SaaS best practices. The journey can get more clouded as the funding pressures might lead to compromises in operational and business efficiency that can ultimately slow the path to rapid growth.
 
  **New Horizons Software**
 
@@ -31,4 +29,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 
  Figure 3 visualizes the SaaS objectives of each company profile upon the following criteria: Time to Market and Business Goal
 
-![Diagram plotting the company profile objectives for the hypothetical companies.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/company-profile-objectives.png)
+![Diagram plotting the SaaS objectives of each hypothetical company profile against two criteria: Time to Market and Business Goal.](https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framework/images/company-profile-objectives.png)

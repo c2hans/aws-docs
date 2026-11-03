@@ -14,7 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
   +  ***Z*** — Offer the highest CPU frequencies with a high memory footprint. These instances might be useful for latency sensitive workloads such as product pricing.
   +  ***T*** — Provide a baseline level of CPU performance with the ability to burst to a higher level when required. The use of these instances for HPC workloads can be attractive for some workloads; however, their variable performance profile can result in inconsistent behavior, which might be undesirable.
 +  **Amazon EC2 memory optimized instances**—
-  +  ***R*** – These instances offer higher memory-to-CPU ratios and so may be applied to X-Valuation Adjustment (XVA) calculations such as Credit Value Adjustments which typically require additional memory to calculate.
+  +  ***R*** – These instances offer higher memory-to-CPU ratios and so might be applied to X-Valuation Adjustment (XVA) calculations such as Credit Value Adjustments which typically require additional memory to calculate.
 +  **Instances with the suffix *a***** have AMD processors, for example, *M7a*.
 +  **Instances with the suffix *i*** have Intel processors, for example, *M6i*.
 +  **Instances with the suffix *g*** have Arm-based AWS Graviton processors, for example, *M7g*.

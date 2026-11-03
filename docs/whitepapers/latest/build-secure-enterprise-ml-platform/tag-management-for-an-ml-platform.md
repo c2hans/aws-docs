@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/tag-management-for-an-ml-platform.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Tag management for an ML platform
 <a name="tag-management-for-an-ml-platform"></a>
 
@@ -21,7 +19,7 @@ In an ML platform, tagging should be considered for the following resources:
 
 **Tag example 1** — Enforce tags with a specific pattern when creating new AWS resources.
 
-You may want to enforce specific tagging patterns. For example, the following policy defines that a new SageMaker AI endpoint can be created if tag “team” is present with one of 3 possible values: “`alpha`”, “`bravo`”, and “`charlie`”.
+You might want to enforce specific tagging patterns. For example, the following policy defines that you can create a new SageMaker AI endpoint if tag "team" is present with one of 3 possible values: "`alpha`", "`bravo`", and "`charlie`".
 
 ------
 #### [ JSON ]
@@ -61,11 +59,11 @@ You may want to enforce specific tagging patterns. For example, the following po
 
 **Tagging example 2** — Automatically delete any untagged resources.
 
-Users typically mandate tagging of all AWS resources and consider untagged resources as non-compliant. They may want to apply remediation actions, such as deletion of untagged resources or placing it under quarantine. The simplest way to implement this automatic remediation of untagged resources is via AWS Config, using the managed rule “`required-tags`”. This rule automatically applies to customer-defined resource types and checks whether customer resources have the required tags. For example, you can check whether your Amazon EC2 instances have the `CostCenter` tag. For more information, see [required-tags](https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html).
+Users typically mandate tagging of all AWS resources and consider untagged resources as non-compliant. They might want to apply remediation actions, such as deletion of untagged resources or placing it under quarantine. The simplest way to implement this automatic remediation of untagged resources is via AWS Config, using the managed rule "`required-tags`". This rule automatically applies to customer-defined resource types and checks whether customer resources have the required tags. For example, you can check whether your Amazon EC2 instances have the `CostCenter` tag. For more information, see [required-tags](https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html).
 
 **Tagging example 3** — Controlling access to AWS resources.
 
-In many cases, tags provide a powerful and yet flexible way to manage access to various resources. This is an example of identity policy, which blocks access to any S3 objects unless the object has a “`security`” tag with the value “`shared`”.
+In many cases, tags provide a powerful and yet flexible way to manage access to various resources. This is an example of identity policy, which blocks access to any S3 objects unless the object has a "`security`" tag with the value "`shared`".
 
 ------
 #### [ JSON ]

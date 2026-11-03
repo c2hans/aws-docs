@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/permissions.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Permissions
 <a name="permissions"></a>
 
@@ -35,7 +33,7 @@ IAM policies need to be created and attached to different roles to perform diffe
   ```
 
 ------
-+ **SageMaker Notebook Access** — The following sample policy enables an AWS user to launch a SageMaker AI Notebook instance from the SageMaker AI console when the user has an AWS `userid` (for example, `AXXXXXXXXXXXXXXXXXXXX` or `<IAM Role ID>:<user name>` for a Security Assertion Markup Language (SAML) federated user) that matches the value of the “owner” tag associated with the notebook instance. The Governance section of this guide covers more detail on resource tagging and how it is used for permission management. The following IAM policy can be attached to an IAM user directly, or to an IAM role (for example, a data scientist role) that a user assumes.
++ **SageMaker Notebook Access** — The following sample policy enables an AWS user to launch a SageMaker AI Notebook instance from the SageMaker AI console when the user has an AWS `userid` (for example, `AXXXXXXXXXXXXXXXXXXXX` or `<IAM Role ID>:<user name>` for a Security Assertion Markup Language (SAML) federated user) that matches the value of the "owner" tag associated with the notebook instance. The Governance section of this guide covers more detail on resource tagging and how it is used for permission management. The following IAM policy can be attached to an IAM user directly, or to an IAM role (for example, a data scientist role) that a user assumes.
 
 ------
 #### [ JSON ]
@@ -98,7 +96,7 @@ IAM policies need to be created and attached to different roles to perform diffe
   ```
 
 ------
-+ **SageMaker AI Studio access** — The following sample policy enables a SageMaker AI Studio user to access the SageMaker AI Studio where the user profile matches the user ID. This IAM policy can be attached to an IAM user directly, or an IAM role (for example, a data scientist role) that a user assumes. Similar to the previous example, you can also use `Session` tags and match the principal and resource tags in the condition. From an authentication perspective, SageMaker AI Studio also supports [AWS Single-Sign-On based authentication](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-sso-users.html).
++ **SageMaker AI Studio access** — The following sample policy enables a SageMaker AI Studio user to access the SageMaker AI Studio where the user profile matches the user ID. This IAM policy can be attached to an IAM user directly, or an IAM role (for example, a data scientist role) that a user assumes. Similar to the previous example, you can also use `Session` tags and match the principal and resource tags in the condition. From an authentication perspective, SageMaker AI Studio also supports [IAM Identity Center based authentication](https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-sso-users.html).
 
 ------
 #### [ JSON ]
@@ -142,4 +140,4 @@ IAM policies need to be created and attached to different roles to perform diffe
   The following example shows a policy that can be attached to the model hosting role to set up a SageMaker AI endpoint. You should further specify the resources to restrict access by the different actions based on requirements.
 + **VPC endpoint** — You can create VPC endpoint policy to restrict access to resources behind VPC endpoints. The following policy will allow any user or service within the VPC to access the specified S3 buckets.
 
-There are additional sample [managed policies](https://docs.aws.amazon.com/sagemaker/latest/dg/access-policy-aws-managed-policies.html) and [custom policies](https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_id-based-policy-examples.html) that can be used as references for building IAM policies to meet different needs. For pushing containers from within Studio notebooks to ECR, see [Using the Amazon SageMaker Studio Image Build CLI to build container images from your Studio notebooks](https://aws.amazon.com/blogs/machine-learning/using-the-amazon-sagemaker-studio-image-build-cli-to-build-container-images-from-your-studio-notebooks/). Guardrails can be set up at the account level to enforce policies such as network isolation or limiting training to a specific VPC. See the **[Guardrails](governance-and-control.md#guardrails)** section of this document for additional detail.
+There are additional sample [managed policies](https://docs.aws.amazon.com/sagemaker/latest/dg/access-policy-aws-managed-policies.html) and [custom policies](https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_id-based-policy-examples.html) that can be used as references for building IAM policies to meet different needs. For pushing containers from within Studio notebooks to ECR, see [Using the Amazon SageMaker AI Studio Image Build CLI to build container images from your Studio notebooks](https://aws.amazon.com/blogs/machine-learning/using-the-amazon-sagemaker-studio-image-build-cli-to-build-container-images-from-your-studio-notebooks/). Guardrails can be set up at the account level to enforce policies such as network isolation or limiting training to a specific VPC. See the **[Guardrails](governance-and-control.md#guardrails)** section of this document for additional detail.

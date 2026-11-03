@@ -2,16 +2,14 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/build-secure-enterprise-ml-platform/identity-and-access-management.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Identity and access management
 <a name="identity-and-access-management"></a>
 
-To establish a secure ML environment, both human and machine identities need to be defined and created to allow for the intended access into the environment. [AWS Identity and Access Management](https://aws.amazon.com/iam/) (IAM) is the primary access control mechanism you’ll use for provisioning access to AWS resources in your environment. The IAM service provides capabilities for both identity management, such as support for identity federation, and authorization management for performing actions against AWS services such as Amazon SageMaker AI and Amazon S3.
+To establish a secure ML environment, both human and machine identities need to be defined and created to allow for the intended access into the environment. [AWS Identity and Access Management](https://aws.amazon.com/iam/) (IAM) is the primary access control mechanism you'll use for provisioning access to AWS resources in your environment. The IAM service provides capabilities for both identity management, such as support for identity federation, and authorization management for performing actions against AWS services such as Amazon SageMaker AI and Amazon S3.
 
-For managing human users, identity federation is the recommended practice to allow for employee lifecycle events to be reflected in your ML environment when they are made in the source identity provider. You can set up [identity federation](https://aws.amazon.com/identity/federation/) to AWS using either [AWS IAM Identity Center](https://aws.amazon.com/single-sign-on/) (SSO) or IAM while leveraging your existing identity providers such as [Okta](https://www.okta.com/) or [PingFederate](https://www.pingidentity.com/en/software/pingfederate.html). You can manage users and access to [Amazon SageMaker AI Studio](https://aws.amazon.com/sagemaker/studio/) directly with AWS SSO, which enables user to sign in to SageMaker AI Studio with their existing corporate credentials.
+For managing human users, identity federation is the recommended practice to allow for employee lifecycle events to be reflected in your ML environment when they are made in the source identity provider. You can set up [identity federation](https://aws.amazon.com/identity/federation/) to AWS using either [AWS IAM Identity Center](https://aws.amazon.com/single-sign-on/) (SSO) or IAM while using your existing identity providers such as [Okta](https://www.okta.com/) or [PingFederate](https://www.pingidentity.com/en/software/pingfederate.html). You can manage users and access to [Amazon SageMaker AI Studio](https://aws.amazon.com/sagemaker/studio/) directly with IAM Identity Center, which enables user to sign in to SageMaker AI Studio with their existing corporate credentials.
 
-After configuring identity management for your environment, you’ll need to define the permissions necessary for your users and services. Following is a list of user and service roles to consider for your ML environment:
+After configuring identity management for your environment, you'll need to define the permissions necessary for your users and services. Following is a list of user and service roles to consider for your ML environment:
 
 ## User roles
 <a name="user-roles"></a>

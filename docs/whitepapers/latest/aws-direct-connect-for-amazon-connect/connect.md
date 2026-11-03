@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/connect.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Connect
 <a name="connect"></a>
 
@@ -15,7 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
 ## Physical cross-connect
 <a name="physical-cross-connect"></a>
 
- First, we’ll discuss using a physical cross-connect to establish a network connection from your premises to an AWS Region. This topology utilizes a partner in the AWS Direct Connect Partner Program to establish network circuits between an AWS Direct Connect point-of-presence (POP) and your data center, office, or colocation environment.
+ First, we'll discuss using a physical cross-connect to establish a network connection from your premises to an AWS Region. This topology uses a partner in the AWS Direct Connect Partner Program to establish network circuits between an AWS Direct Connect point-of-presence (POP) and your data center, office, or colocation environment.
 
 ![Reference architecture for a physical cross-connect to Direct Connect.](https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/physical-cross-connect.png)
 
@@ -34,7 +32,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
 ## Carrier interconnection
 <a name="carrier-interconnection"></a>
 
- Next, we’ll discuss using carrier interconnection to establish a network connection from your premises to an AWS Region. This topology uses existing WAN services, such as Multiprotocol Label Switching, or MPLS, to provide the connection between your data center, office, or colocation environment to AWS.
+ Next, we'll discuss using carrier interconnection to establish a network connection from your premises to an AWS Region. This topology uses existing WAN services, such as Multiprotocol Label Switching, or MPLS, to provide the connection between your data center, office, or colocation environment to AWS.
 
 ![Reference architecture for carrier interconnection to Direct Connect.](https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/carrier-interconnection.png)
 
@@ -52,7 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
 ## Data center interconnection
 <a name="data-center-interconnection"></a>
 
- Finally, we’ll discuss using a data center interconnection to establish a network connection from your premises to an AWS Region. This topology utilizes a physical connection in a data center to a private network and virtual network connection, or VLAN, to AWS.
+ Finally, this section covers using a data center interconnection to establish a network connection from your premises to an AWS Region. This topology uses a physical connection in a data center to a private network and virtual network connection, or VLAN, to AWS.
 
 ![Reference architecture for data center interconnection to Direct Connect.](https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-for-amazon-connect/images/data-center-interconnection.png)
 

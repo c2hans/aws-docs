@@ -17,7 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 
  Another example within the government is found in the defense community. In 2016, the Chief Information Officer of the United States Department of Defense (DoD) issued [policy recommendations](https://dodcio.defense.gov/Portals/0/Documents/Announcement/DoD%20Policy%20Recommendations%20for%20Internet%20of%20Things%20-%20White%20Paper.pdf?ver=2017-01-26-152811-440) to address the vulnerabilities and risks to IoT. According to the policy recommendations, DoD already provisions millions of IoT devices and sensors across DoD facilities, vehicles, and medical devices and is considering incorporating them into weapons and intelligence systems. The complexity of securing IoT stems from the limited processing power of the devices to run firewalls and anti-malware, as well as the vast number of devices. This compounds vulnerability exposure to a different level than traditional mobile devices.
 
- DoD’s recommended approach and policy action to address IoT security risks include:
+ DoD's recommended approach and policy action to address IoT security risks include:
 
 1.  A security and privacy risk analysis supporting each IoT implementation and associated data streams
 
@@ -39,4 +39,4 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 ## State of California
 <a name="state-of-california"></a>
 
- California is among the first states within the United States to pass legislation on IoT. The current bills address issues such as security of device design and data protection, but do not have specific requirements of IoT manufacturers. Instead, lawmakers have focused on security at the design phase, writing in [SB-327 Information privacy: connected devices](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180SB327) that protection of data must be “appropriate to the nature and function of the device” and “appropriate to the information it may collect, contain, or transmit.”
+ California is among the first states within the United States to pass legislation on IoT. The current bills address issues such as security of device design and data protection, but do not have specific requirements of IoT manufacturers. Instead, lawmakers have focused on security at the design phase, writing in [SB-327 Information privacy: connected devices](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201720180SB327) that protection of data must be "appropriate to the nature and function of the device" and "appropriate to the information it may collect, contain, or transmit."

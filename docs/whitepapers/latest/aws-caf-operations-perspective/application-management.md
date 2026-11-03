@@ -2,14 +2,12 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-operations-perspective/application-management.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Application management
 <a name="application-management"></a>
 
  **Investigate and remediate application issues in a single pane of glass. **
 
- An application is a logical group of AWS resources that you want to operate as a unit. Whether you take an approach of “[you build it, you run it](https://aws.amazon.com/blogs/enterprise-strategy/enterprise-devops-why-you-should-run-what-you-build/)” or have separate operations teams, it is often simpler to view information and take operations actions in the context of an application rather than on individual components. Applications often have different requirements for cost, monitoring, compliance, automation, and many other factors. Being able to view information, make decisions, and take actions within the context of the application and its requirements simplifies operational oversight and accelerates the remediation of application issues.
+ An application is a logical group of AWS resources that you want to operate as a unit. Whether you take an approach of "[you build it, you run it](https://aws.amazon.com/blogs/enterprise-strategy/enterprise-devops-why-you-should-run-what-you-build/)" or have separate operations teams, it is often simpler to view information and take operations actions in the context of an application rather than on individual components. Applications often have different requirements for cost, monitoring, compliance, automation, and many other factors. Being able to view information, make decisions, and take actions within the context of the application and its requirements simplifies operational oversight and accelerates the remediation of application issues.
 
 ## Start
 <a name="start-8"></a>
