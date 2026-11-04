@@ -38,6 +38,11 @@ Specifies the time when the cluster was created, in Universal Coordinated Time (
 Type: Timestamp
 Required: No
 
+ ** CopyTagsToSnapshot **
+Specifies whether to copy all tags from the DB cluster to snapshots of the DB cluster. The default is not to copy them.
+Type: Boolean
+Required: No
+
  ** DBClusterArn **
 The Amazon Resource Name (ARN) for the cluster.
 Type: String
@@ -174,6 +179,11 @@ Required: No
 
  ** ReplicationSourceIdentifier **
 Contains the identifier of the source cluster if this cluster is a secondary cluster.
+Type: String
+Required: No
+
+ ** ServerlessV2PlatformVersion **
+The version of the Amazon DocumentDB Serverless platform used by the cluster.
 Type: String
 Required: No
 

@@ -41,7 +41,7 @@ To withdraw a transfer, you must have the following permissions:
 To withdraw a transfer, complete the following steps.
 
 ------
-#### [  ]
+#### [ AWS Management Console ]
 
 **To withdraw a transfer**
 
@@ -72,7 +72,7 @@ To withdraw a transfer, complete the following steps.
    1. On the confirmation dialogue box, select the month you want to end the transfer and choose **Withdraw transfer**.
 
 ------
-#### [  ]
+#### [ AWS CLI & AWS SDKs ]
 
 **To withdraw a transfer**
 You can use one of the following operations:

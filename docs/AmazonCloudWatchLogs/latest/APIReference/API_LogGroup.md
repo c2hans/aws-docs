@@ -87,6 +87,11 @@ To set a log group so that its log events do not expire, use [DeleteRetentionPol
 Type: Integer
 Required: No
 
+ ** retentionPolicyName **   <a name="CWL-Type-LogGroup-retentionPolicyName"></a>
+The name of the account-level retention policy that determines the retention period of this log group. This field is returned only when an account-level retention policy applies to the log group. When it is returned, `retentionInDays` shows the retention period from that policy instead of the retention period set on the log group. If the policy specifies that log events never expire, `retentionInDays` is not returned.
+Type: String
+Required: No
+
  ** storedBytes **   <a name="CWL-Type-LogGroup-storedBytes"></a>
 The number of bytes stored.
 Type: Long

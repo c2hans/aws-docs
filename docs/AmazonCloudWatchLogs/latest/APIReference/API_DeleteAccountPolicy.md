@@ -14,6 +14,7 @@ To use this operation, you must be signed on with the correct permissions depend
 + To delete a field index policy, you must have the `logs:DeleteIndexPolicy` and `logs:DeleteAccountPolicy` permissions.
 
   If you delete a field index policy that included facet configurations, those facets will no longer be available for interactive exploration in the CloudWatch Logs Insights console. However, facet data is retained for up to 30 days.
++ To delete a retention policy, you must have the `logs:DeleteRetentionPolicy` and `logs:DeleteAccountPolicy` permissions. To preview the impact of deleting a retention policy, specify `true` for `dryRun`.
 
 If you delete a field index policy, the indexing of the log events that happened before you deleted the policy will still be used for up to 30 days to improve CloudWatch Logs Insights queries.
 
@@ -22,6 +23,7 @@ If you delete a field index policy, the indexing of the log events that happened
 
 ```
 {
+   "dryRun": {{boolean}},
    "policyName": "{{string}}",
    "policyType": "{{string}}"
 }
@@ -34,6 +36,12 @@ For information about the parameters that are common to all actions, see [Common
 
 The request accepts the following data in JSON format.
 
+ ** [dryRun](#API_DeleteAccountPolicy_RequestSyntax) **   <a name="CWL-DeleteAccountPolicy-request-dryRun"></a>
+Specifies whether to preview the impact of deleting the policy without deleting it. If you specify `true`, CloudWatch Logs does not delete the policy and returns the estimated impact in `dryRunResult`. The default is `false`.
+Specifying `dryRun` is valid only when you specify `RETENTION_POLICY` for `policyType`. Only one dry run can be in progress for an account at a time.
+Type: Boolean
+Required: No
+
  ** [policyName](#API_DeleteAccountPolicy_RequestSyntax) **   <a name="CWL-DeleteAccountPolicy-request-policyName"></a>
 The name of the policy to delete.
 Type: String
@@ -42,13 +50,42 @@ Required: Yes
  ** [policyType](#API_DeleteAccountPolicy_RequestSyntax) **   <a name="CWL-DeleteAccountPolicy-request-policyType"></a>
 The type of policy to delete.
 Type: String
-Valid Values: `DATA_PROTECTION_POLICY | SUBSCRIPTION_FILTER_POLICY | FIELD_INDEX_POLICY | TRANSFORMER_POLICY | METRIC_EXTRACTION_POLICY`
+Valid Values: `DATA_PROTECTION_POLICY | SUBSCRIPTION_FILTER_POLICY | FIELD_INDEX_POLICY | TRANSFORMER_POLICY | METRIC_EXTRACTION_POLICY | RETENTION_POLICY`
 Required: Yes
+
+## Response Syntax
+<a name="API_DeleteAccountPolicy_ResponseSyntax"></a>
+
+```
+{
+   "dryRunResult": {
+      "decreasedRetentionLogGroupCount": number,
+      "failedAnalysisCount": number,
+      "increasedRetentionLogGroupCount": number,
+      "topLogGroupsImpacted": [
+         {
+            "currentRetention": "string",
+            "logGroupName": "string",
+            "proposedRetention": "string",
+            "storedBytes": number
+         }
+      ],
+      "totalMatchedLogGroups": number,
+      "unchangedRetentionLogGroupCount": number
+   }
+}
+```
 
 ## Response Elements
 <a name="API_DeleteAccountPolicy_ResponseElements"></a>
 
-If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [dryRunResult](#API_DeleteAccountPolicy_ResponseSyntax) **   <a name="CWL-DeleteAccountPolicy-response-dryRunResult"></a>
+The estimated impact of deleting the policy. This field is returned only when the request specifies `dryRun` as `true`.
+Type: [DryRunResult](API_DryRunResult.md) object
 
 ## Errors
 <a name="API_DeleteAccountPolicy_Errors"></a>

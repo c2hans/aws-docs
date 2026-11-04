@@ -87,6 +87,14 @@ For information about the errors that are common to all actions, see [Common Err
 You do not have sufficient access to perform this action.
 HTTP Status Code: 403
 
+ ** ConflictException **
+The request could not be completed due to a conflict with the current state of the resource.
+ ** resourceId **
+The identifier of the resource that caused the conflict.
+ ** resourceType **
+The type of the resource that caused the conflict.
+HTTP Status Code: 409
+
  ** InternalServerException **
 An internal server error occurred. Retry the request later.
  ** retryAfterSeconds **

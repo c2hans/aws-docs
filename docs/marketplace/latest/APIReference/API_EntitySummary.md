@@ -88,6 +88,11 @@ An object that contains summary information about the SaaS product.
 Type: [SaaSProductSummary](API_SaaSProductSummary.md) object
 Required: No
 
+ ** SubsidiaryAuthorizationSummary **   <a name="AWSMarketplaceService-Type-EntitySummary-SubsidiaryAuthorizationSummary"></a>
+An object that contains summary information about the subsidiary authorization, such as its status and authorized resource, when the entity type is `SubsidiaryAuthorization`.
+Type: [SubsidiaryAuthorizationSummary](API_SubsidiaryAuthorizationSummary.md) object
+Required: No
+
  ** Visibility **   <a name="AWSMarketplaceService-Type-EntitySummary-Visibility"></a>
 The visibility status of the entity to buyers. This value can be `Public` (everyone can view the entity), `Limited` (the entity is visible to limited accounts only), or `Restricted` (the entity was published and then unpublished and only existing buyers can view it).
 Type: String

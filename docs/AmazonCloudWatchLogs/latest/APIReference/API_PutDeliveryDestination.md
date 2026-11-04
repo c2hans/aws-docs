@@ -30,6 +30,7 @@ If you use this operation to update an existing delivery destination, all the cu
    "deliveryDestinationType": "{{string}}",
    "name": "{{string}}",
    "outputFormat": "{{string}}",
+   "roleArn": "{{string}}",
    "tags": {
       "{{string}}" : "{{string}}"
    }
@@ -73,6 +74,11 @@ Type: String
 Valid Values: `json | plain | w3c | raw | parquet`
 Required: No
 
+ ** [roleArn](#API_PutDeliveryDestination_RequestSyntax) **   <a name="CWL-PutDeliveryDestination-request-roleArn"></a>
+The ARN of an IAM role in your account that CloudWatch Logs assumes to deliver to this delivery destination. The trust policy of the role must allow CloudWatch Logs to assume it. This parameter is supported only for X-Ray trace delivery destinations.
+Type: String
+Required: No
+
  ** [tags](#API_PutDeliveryDestination_RequestSyntax) **   <a name="CWL-PutDeliveryDestination-request-tags"></a>
 An optional list of key-value pairs to associate with the resource.
 For more information about tagging, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
@@ -97,6 +103,7 @@ Required: No
       "deliveryDestinationType": "string",
       "name": "string",
       "outputFormat": "string",
+      "roleArn": "string",
       "tags": {
          "string" : "string"
       }

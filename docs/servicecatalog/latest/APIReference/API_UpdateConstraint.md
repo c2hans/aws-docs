@@ -67,6 +67,9 @@ The `TagUpdatesOnProvisionedProduct` property accepts a string value of `ALLOWED
 STACKSET
 Specify the `Parameters` property as follows:
  `{"Version": "String", "Properties": {"AccountList": [ "String" ], "RegionList": [ "String" ], "AdminRole": "String", "ExecutionRole": "String"}}`
+ `AccountList` is either a list of 12-digit AWS account IDs or the single value `self`. `self` means the account of the user who provisions the product; AWS Service Catalog replaces it with that account ID when the product is provisioned, updated, or described. You cannot combine `self` with account IDs.
+ `AdminRole` is the IAM role that AWS CloudFormation StackSets uses to administer the stack set. You can specify it either as a full role ARN or as a role name. If you specify a role name, the IAM role with that name in the account of the user who provisions the product will be used. This allows stack set constraints to be account-agnostic so the administrator can create fewer resources per shared account.
+ `ExecutionRole` is the name of the IAM role in each target account that AWS CloudFormation StackSets assumes to deploy the stack set instances. Specify a role name, not an ARN.
 You cannot have both a `LAUNCH` and a `STACKSET` constraint.
 You also cannot have more than one `STACKSET` constraint on a product and portfolio.
 Products with a `STACKSET` constraint will launch an AWS CloudFormation stack set.

@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/how-to-set-cw-alarm.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # Set a CloudWatch alarm
 <a name="how-to-set-cw-alarm"></a>
 

@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/automated-security-response-o
 title: 'Automated Security Response on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/automated-security-response-on-aws/
 source: aws-documentation
-generated_on: 2026-11-02
+generated_on: 2026-11-03
 ---
 
 # Automated Security Response on AWS
 
 Resolve common security threats and improve your security posture
 
-- **Version**: 4.1.0
-- **Released**: 10/2026
+- **Version**: 4.1.1
+- **Released**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
 - **Estimated cost**: [See details](/solutions/latest/automated-security-response-on-aws/cost.html)

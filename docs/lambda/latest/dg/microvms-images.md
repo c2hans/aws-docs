@@ -107,7 +107,7 @@ The following CLI command shows how you can update a MicroVM image. The `--base-
 
 ```
 aws lambda-microvms update-microvm-image \
-  --image-identifier {{arn:aws:lambda:us-east-1:123456789012:microvm-image:my-microvm-image}} \
+  --image-identifier arn:aws:lambda:{{us-east-1}}:123456789012:microvm-image:my-microvm-image \
   --code-artifact uri=s3://my-bucket/deployments/app-v2.zip \
   --base-image-arn arn:aws:lambda:{{us-east-1}}:aws:microvm-image:al2023-1 \
   --build-role-arn arn:aws:iam::123456789012:role/MicrovmBuildRole \
@@ -179,7 +179,7 @@ As Lambda MicroVMs starts each MicroVM from a pre-initialized snapshot, base ima
 Reference your private ECR container base image in the `FROM` instruction of your `Dockerfile`:
 
 ```
-FROM 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-base:latest
+FROM 123456789012.dkr.ecr.{{us-east-1}}.amazonaws.com/my-base:latest
 WORKDIR /app
 COPY . .
 CMD ["./my-app"]

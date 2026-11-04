@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/hello-world.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # Tutorial: Create your first AWS CDK app
 <a name="hello-world"></a>
 

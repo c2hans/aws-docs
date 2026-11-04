@@ -37,7 +37,7 @@ Required: No
  ** policyType **   <a name="CWL-Type-AccountPolicy-policyType"></a>
 The type of policy for this account policy.
 Type: String
-Valid Values: `DATA_PROTECTION_POLICY | SUBSCRIPTION_FILTER_POLICY | FIELD_INDEX_POLICY | TRANSFORMER_POLICY | METRIC_EXTRACTION_POLICY`
+Valid Values: `DATA_PROTECTION_POLICY | SUBSCRIPTION_FILTER_POLICY | FIELD_INDEX_POLICY | TRANSFORMER_POLICY | METRIC_EXTRACTION_POLICY | RETENTION_POLICY`
 Required: No
 
  ** scope **   <a name="CWL-Type-AccountPolicy-scope"></a>

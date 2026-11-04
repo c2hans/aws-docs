@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/freertos/index.html
 title: 'FreeRTOS Documentation'
 canonical_url: https://docs.aws.amazon.com/freertos/
 source: aws-documentation
-generated_on: 2026-11-01
+generated_on: 2026-11-03
 ---
 
 # FreeRTOS Documentation

@@ -13,7 +13,7 @@ Configuration for the CPU architecture of a MicroVM.
  ** architecture **   <a name="lambdamicrovm-Type-CpuConfiguration-architecture"></a>
 The CPU architecture.
 Type: String
-Valid Values: `ARM_64`
+Valid Values: `ARM_64 | X86_64`
 Required: Yes
 
 ## See Also

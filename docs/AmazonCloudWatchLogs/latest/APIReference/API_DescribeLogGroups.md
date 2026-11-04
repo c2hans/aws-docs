@@ -117,6 +117,7 @@ Required: No
          "logGroupName": "string",
          "metricFilterCount": number,
          "retentionInDays": number,
+         "retentionPolicyName": "string",
          "storedBytes": number
       }
    ],

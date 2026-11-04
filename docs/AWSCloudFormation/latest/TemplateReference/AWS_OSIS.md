@@ -9,3 +9,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::OSIS::Pipeline](aws-resource-osis-pipeline.md)
++ [AWS::OSIS::PipelineEndpoint](aws-resource-osis-pipelineendpoint.md)

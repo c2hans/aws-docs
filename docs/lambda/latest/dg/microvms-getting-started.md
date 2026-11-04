@@ -138,7 +138,7 @@ When the build completes, the `state` field changes to `CREATED`:
 ```
 {
   "imageName": "my-first-microvm-image",
-  "imageArn": "arn:aws:lambda:us-east-1:123456789012:microvm-image:my-first-microvm-image",
+  "imageArn": "arn:aws:lambda:{{us-east-1}}:123456789012:microvm-image:my-first-microvm-image",
   "state": "CREATED",
   "imageVersion": "1.0",
   ...
@@ -157,7 +157,7 @@ Run a MicroVM with the following command:
 ```
 aws lambda-microvms run-microvm \
   --image-identifier my-first-microvm-image \
-  --ingress-network-connectors "arn:aws:lambda:{{us-east-1}}:aws:network-connector:aws-network-connector:ALL_INGRESS" \
+  --ingress-network-connectors "arn:aws:lambda:{{us-east-1}}:aws:network-connector:aws-network-connector:HTTP_INGRESS" \
   --egress-network-connectors "arn:aws:lambda:{{us-east-1}}:aws:network-connector:aws-network-connector:INTERNET_EGRESS" \
   --idle-policy '{"autoResumeEnabled":true,"maxIdleDurationSeconds":900,"suspendedDurationSeconds":300}'
 ```
@@ -173,7 +173,7 @@ The response includes the MicroVM ID and endpoint URL:
 {
   "microvmId": "mvm-01234567-abcd-ef01-2345-6789abcdef01",
   "state": "PENDING",
-  "endpoint": "mvm-01234567-abcd-ef01-2345-6789abcdef01.lambda-microvm.us-east-1.on.aws",
+  "endpoint": "mvm-01234567-abcd-ef01-2345-6789abcdef01.lambda-microvm.{{us-east-1}}.on.aws",
   ...
 }
 ```
@@ -200,8 +200,8 @@ aws lambda-microvms create-microvm-auth-token \
 The response includes a token in the `authToken` field. Use it to send a request to your running application:
 
 ```
-curl https://mvm-01234567-abcd-ef01-2345-6789abcdef01.lambda-microvm.us-east-1.on.aws/ \
-  -H "X-aws-proxy-auth: {{<token-value>}}"
+curl https://mvm-01234567-abcd-ef01-2345-6789abcdef01.lambda-microvm.{{us-east-1}}.on.aws/ \
+  -H "X-aws-proxy-auth: {{token-value}}"
 ```
 
 You should see the response from your application:

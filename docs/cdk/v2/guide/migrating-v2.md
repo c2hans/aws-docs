@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/migrating-v2.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # Migrating from AWS CDK v1 to AWS CDK v2
 <a name="migrating-v2"></a>
 

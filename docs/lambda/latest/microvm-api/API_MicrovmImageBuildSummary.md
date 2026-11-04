@@ -13,7 +13,7 @@ Contains summary information about a MicroVM image build.
  ** architecture **   <a name="lambdamicrovm-Type-MicrovmImageBuildSummary-architecture"></a>
 The target CPU architecture for the build. Supported value: ARM\_64.
 Type: String
-Valid Values: `ARM_64`
+Valid Values: `ARM_64 | X86_64`
 Required: Yes
 
  ** buildId **   <a name="lambdamicrovm-Type-MicrovmImageBuildSummary-buildId"></a>
@@ -32,7 +32,7 @@ Required: Yes
  ** chipset **   <a name="lambdamicrovm-Type-MicrovmImageBuildSummary-chipset"></a>
 The target chipset for the build.
 Type: String
-Valid Values: `GRAVITON`
+Valid Values: `GRAVITON | INTEL`
 Required: Yes
 
  ** chipsetGeneration **   <a name="lambdamicrovm-Type-MicrovmImageBuildSummary-chipsetGeneration"></a>

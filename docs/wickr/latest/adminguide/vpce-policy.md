@@ -81,7 +81,7 @@ The following VPC endpoint policy allows access only to the Wickr network with t
             "Principal": "*",
             "Effect": "Allow",
             "Action": "wickr:*",
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}"
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}"
         }
     ]
 }
@@ -99,7 +99,7 @@ The following VPC endpoint policy allows access to a Wickr network only if the r
             "Principal": "*",
             "Effect": "Allow",
             "Action": "wickr:*",
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}",
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}",
             "Condition": {
                 "StringEquals": {
                     "aws:SourceVpc": "{{vpc-1a2b3c4d}}"
@@ -122,7 +122,7 @@ The following VPC endpoint policy allows access to a Wickr network only through 
             "Principal": "*",
             "Effect": "Allow",
             "Action": "wickr:*",
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}",
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}",
             "Condition": {
                 "StringEquals": {
                     "aws:SourceVpce": "{{vpce-0abcdef1234567890}}"
@@ -156,7 +156,7 @@ The following VPC endpoint policy denies access to all Wickr networks except the
             "Principal": "*",
             "Effect": "Allow",
             "Action": "wickr:*",
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}"
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}"
         }
     ]
 }
@@ -176,12 +176,12 @@ The following VPC endpoint policy allows access to a Wickr network only when all
             "Principal": "*",
             "Effect": "Allow",
             "Action": "wickr:*",
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}",
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}",
             "Condition": {
                 "StringEquals": {
                     "aws:SourceVpc": "{{vpc-1a2b3c4d}}",
                     "aws:SourceVpce": "{{vpce-0abcdef1234567890}}",
-                    "aws:VpceAccount": "{{123456789012}}"
+                    "aws:VpceAccount": "{{111122223333}}"
                 }
             }
         }
@@ -207,7 +207,7 @@ The following VPC endpoint policy allows all Wickr Admin actions, but only for t
             "Principal": "*",
             "Effect": "Allow",
             "Action": "wickr:*",
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}"
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}"
         }
     ]
 }
@@ -230,7 +230,7 @@ The following VPC endpoint policy allows only read-only Wickr Admin actions on a
                 "wickr:GetUser",
                 "wickr:GetUsersCount"
             ],
-            "Resource": "arn:aws:wickr:{{us-east-1}}:{{123456789012}}:network/{{12345678}}"
+            "Resource": "arn:aws:wickr:{{us-east-1}}:{{111122223333}}:network/{{12345678}}"
         }
     ]
 }

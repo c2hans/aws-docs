@@ -18,8 +18,8 @@ Required: No
  ** kmsKeyArn **   <a name="opensearchserverless-Type-EncryptionConfig-kmsKeyArn"></a>
 The ARN of the AWS Key Management Service key used to encrypt the collection.
 Type: String
-Length Constraints: Minimum length of 10. Maximum length of 100.
-Pattern: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):kms:[a-z0-9-]+:[0-9]{12}:key/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
+Length Constraints: Minimum length of 10. Maximum length of 2048.
+Pattern: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b|aws-iso-c|aws-iso-d|aws-iso-e):(kms):[a-zA-Z-]+\d{1}:\d{12}:(key)\/.{1,2048}.*`
 Required: No
 
 ## See Also

@@ -20,7 +20,7 @@ Required: Yes
 The resource types in the deployment's scope that this firewall type protects. This list is empty if the scope does not select any resource types that the firewall type protects.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 50 items.
-Valid Values: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer`
+Valid Values: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer | AWS::EC2::VPC | AWS::EC2::TransitGateway | AWS::EC2::Subnet`
 Required: Yes
 
  ** policyArns **   <a name="networksecuritymanager-Type-DeploymentCoverageEntry-policyArns"></a>

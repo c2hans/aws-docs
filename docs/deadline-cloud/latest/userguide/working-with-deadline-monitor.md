@@ -34,6 +34,7 @@ The Deadline Cloud monitor also helps you monitor usage and manage costs. For mo
 + [View a step in Deadline Cloud](view-a-step.md)
 + [View a task in Deadline Cloud](view-a-task.md)
 + [View session and worker logs in Deadline Cloud](view-logs.md)
++ [Preview task outputs in the job monitor](preview-task-outputs.md)
 + [View worker details in the worker dashboard](view-worker-dashboard.md)
 + [Download finished output in Deadline Cloud](download-finished-output.md)
 + [View output download status in Deadline Cloud](auto-downloads-status.md)

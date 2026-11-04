@@ -14,7 +14,7 @@ Defines which accounts and resources are in scope.
 The resource-level scoping configuration, keyed by resource type, that defines which resources within the selected accounts are in scope.
 Type: String to [ResourceScope](API_ResourceScope.md) object map
 Map Entries: Minimum number of 0 items. Maximum number of 20 items.
-Valid Keys: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer`
+Valid Keys: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer | AWS::EC2::VPC | AWS::EC2::TransitGateway | AWS::EC2::Subnet`
 Required: Yes
 
  ** accountFilter **   <a name="networksecuritymanager-Type-ScopeConfiguration-accountFilter"></a>

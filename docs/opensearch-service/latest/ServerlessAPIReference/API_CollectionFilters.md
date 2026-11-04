@@ -21,7 +21,7 @@ Required: No
 The name of the collection.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 64.
-Pattern: `[a-z][a-z0-9-]+`
+Pattern: `[a-z][a-z0-9_-]+`
 Required: No
 
  ** status **   <a name="opensearchserverless-Type-CollectionFilters-status"></a>

@@ -11,6 +11,7 @@ The monitor saves your arrangement in your browser and restores it the next time
 
 The following panels are available to add:
 + **Logs** shows the Amazon CloudWatch logs for the selected task, so that you can read them without leaving the job monitor. For more information, see [View session and worker logs in Deadline Cloud](view-logs.md).
++ **Task outputs** shows the output files of the selected task and previews them, including 3D meshes and point clouds. For more information, see [Preview task outputs in the job monitor](preview-task-outputs.md).
 
 **To add a panel**
 

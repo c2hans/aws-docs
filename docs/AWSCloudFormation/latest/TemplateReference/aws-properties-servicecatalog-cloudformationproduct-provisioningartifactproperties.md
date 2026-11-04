@@ -56,16 +56,16 @@ If set to true, AWS Service Catalog stops validating the specified provisioning 
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Info`  <a name="cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-info"></a>
-Specify the template source with one of the following options, but not both. Keys accepted: [ `LoadTemplateFromURL`, `ImportFromPhysicalId` ]
-The URL of the AWS CloudFormation template in Amazon S3 in JSON format. Specify the URL in JSON format as follows:
- `"LoadTemplateFromURL": "https://s3.amazonaws.com/cf-templates-ozkq9d3hgiq2-us-east-1/..."`
-`ImportFromPhysicalId`: The physical id of the resource that contains the template. Currently only supports AWS CloudFormation stack arn. Specify the physical id in JSON format as follows: `ImportFromPhysicalId: “arn:aws:cloudformation:[us-east-1]:[accountId]:stack/[StackName]/[resourceId]`
+The template source of the provisioning artifact. `Info` is an object that has one of the following keys, but not both. Each value is a string.
++ `LoadTemplateFromURL` - The URL of the AWS CloudFormation template in Amazon S3, for example `https://s3.amazonaws.com/amzn-s3-demo-bucket/sample-template.json`.
++ `ImportFromPhysicalId` - The Amazon Resource Name (ARN) of the CloudFormation stack that contains the template, for example `arn:aws:cloudformation:us-east-1:111122223333:stack/MyStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`. AWS Service Catalog supports only CloudFormation stack ARNs.
 *Required*: Yes
 *Type*: [Info](aws-properties-servicecatalog-cloudformationproduct-info.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-servicecatalog-cloudformationproduct-provisioningartifactproperties-name"></a>
 The name of the provisioning artifact (for example, v1 v2beta). No spaces are allowed.
+When `ReplaceProvisioningArtifacts` is `false` (the default), CloudFormation matches the provisioning artifacts in your template to the product's existing provisioning artifacts by name and template URL. If you change the name or the template URL of a provisioning artifact, CloudFormation creates a provisioning artifact with a new ID and deletes the old one. The product itself isn't replaced. If the update fails partway, the product can have the old provisioning artifact, the new one, or both. For details, see the `ReplaceProvisioningArtifacts` property of the `AWS::ServiceCatalog::CloudFormationProduct` resource.
 *Required*: No
 *Type*: String
 *Maximum*: `8192`
@@ -81,6 +81,39 @@ The type of provisioning artifact.
 *Type*: String
 *Allowed values*: `CLOUD_FORMATION_TEMPLATE | MARKETPLACE_AMI | MARKETPLACE_CAR | TERRAFORM_OPEN_SOURCE | TERRAFORM_CLOUD | EXTERNAL`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## Examples
+<a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--examples"></a>
+
+### Example - Specify the template of a provisioning artifact
+<a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--examples--Example_-_Specify_the_template_of_a_provisioning_artifact"></a>
+
+`Info` is an object, not a string. The following example specifies a provisioning artifact whose template is loaded from Amazon S3.
+
+#### JSON
+<a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--examples--Example_-_Specify_the_template_of_a_provisioning_artifact--json"></a>
+
+```
+{
+    "Name": "v2",
+    "Description": "Adds an output for the bucket name",
+    "Type": "CLOUD_FORMATION_TEMPLATE",
+    "Info": {
+        "LoadTemplateFromURL": "https://s3.amazonaws.com/amzn-s3-demo-bucket/sample-template-v2.json"
+    }
+}
+```
+
+#### YAML
+<a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--examples--Example_-_Specify_the_template_of_a_provisioning_artifact--yaml"></a>
+
+```
+Name: v2
+Description: Adds an output for the bucket name
+Type: CLOUD_FORMATION_TEMPLATE
+Info:
+  LoadTemplateFromURL: https://s3.amazonaws.com/amzn-s3-demo-bucket/sample-template-v2.json
+```
 
 ## See also
 <a name="aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties--seealso"></a>

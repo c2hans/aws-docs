@@ -38,7 +38,8 @@ Creating a resource in a Local Zone subnet puts it close to your users. For a li
 + You cannot create VPC endpoints inside Local Zone subnets.
 + The AWS Site-to-Site VPN is not available in Local Zones. Use a software-based VPN to establish a site-to-site VPN connection into a Local Zone.
 + Generally, the Maximum Transmission Unit (MTU) is as follows:
-  + 8801 bytes between Amazon EC2 instances in the same Local Zone.
+  + 8801 bytes between Amazon EC2 instances in the same Local Zone except:
+    + 9001 bytes for `us-west-2-lax-1a` and `us-west-2-lax-1b`.
   + 1500 bytes between an internet gateway and a Local Zone.
   + 1500 bytes between Direct Connect and all Local Zones except:
     + 8500 bytes for `us-east-1-atl-2a`, `us-east-1-atl-2b`, `us-east-1-chi-2a`, `us-east-1-dfw-2a`, `us-east-1-iah-2a`, `us-west-2-las-2a`, `us-west-2-lax-1a`, `us-west-2-lax-1b`, `us-east-1-mia-2a`, `us-east-1-nyc-2a`, `us-west-2-phx-2a`, `eu-central-1-ath-1a`, `eu-central-1-ist-1a`, and `ap-southeast-1-han-1a`.

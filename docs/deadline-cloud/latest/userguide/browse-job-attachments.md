@@ -71,3 +71,9 @@ The following file types support inline preview:
 + Text: TXT, LOG, JSON, XML, YAML, YML, CSV, MD, INI, CFG, CONF, SH, BAT, PY, JS, TS, TSX, JSX, HTML, CSS, TOML
 + Video: MP4, WebM, OGG
 + Audio: MP3, WAV, OGG, FLAC, AAC, WebM
++ 3D meshes and point clouds: GLB, glTF, OBJ, STL, PLY, PCD
++ 3D scenes: USDZ
+
+For a GLB, glTF, OBJ, STL, PLY, or PCD file, the full-screen preview has a toolbar with the zoom, **Reset view**, **Save snapshot as PNG**, and **View settings** controls. Next to the view, the **Properties** panel describes the file, and **Scene graph** lists the objects in the file when it has more than one object or nested objects. To hide or show these details, choose **Hide properties panel** or **Show properties panel**. For a description of each control, setting, and property, see [Viewing 3D meshes and point clouds](preview-task-outputs.md#preview-task-outputs-3d) and [Viewing the properties of a mesh or point cloud](preview-task-outputs.md#preview-task-outputs-properties).
+
+For a USDZ file, the full-screen preview lists the scene's **Up axis**, **Meters per unit**, **Default prim**, **Time codes**, **Prims**, **Textures**, and **Layers**, and shows the **Prim hierarchy** of the scene.

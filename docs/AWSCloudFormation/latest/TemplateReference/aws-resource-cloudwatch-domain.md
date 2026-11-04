@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::Domain
 <a name="aws-resource-cloudwatch-domain"></a>
 
-The account-level boundary for CloudWatch Omni. A domain configures the identity providers users sign in through and exposes the endpoint URLs used to reach CloudWatch Omni. Spaces are created within a domain.
+Resource Type definition for `AWS::CloudWatch::Domain`. A domain is the identity and access boundary for CloudWatch Omni. It configures the identity providers users sign in through and provides the sign-in URL for your team.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-domain-syntax"></a>
@@ -48,7 +48,7 @@ Properties:
 <a name="aws-resource-cloudwatch-domain-properties"></a>
 
 `IdentityProviderConfiguration`  <a name="cfn-cloudwatch-domain-identityproviderconfiguration"></a>
-Property description not available.
+Identity provider configuration for the domain.
 *Required*: No
 *Type*: [IdentityProviderConfiguration](aws-properties-cloudwatch-domain-identityproviderconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -99,7 +99,7 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 <a name="aws-resource-cloudwatch-domain-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-The Amazon Resource Name (ARN) of the resource.
+The Amazon Resource Name (ARN) of the domain.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
 The timestamp when the domain was created.

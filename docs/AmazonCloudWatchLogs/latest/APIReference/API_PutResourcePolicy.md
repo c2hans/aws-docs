@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 
 Creates or updates a resource policy allowing other AWS services to put log events to this account, such as Amazon Route 53. This API has the following restrictions:
 +  **Supported actions** - Policy only supports `logs:PutLogEvents` and `logs:CreateLogStream ` actions
-+  **Supported principals** - Policy only applies when operations are invoked by AWS service principals (not IAM users, roles, or cross-account principals
++  **Supported principals** - Policy only applies when operations are invoked by AWS service principals (not IAM users, roles, or cross-account principals)
 +  **Policy limits** - An account can have a maximum of 10 policies without resourceARN and one per LogGroup resourceARN
 
 **Important**

@@ -49,7 +49,7 @@ Length Constraints: Minimum length of 1. Maximum length of 128.
 Required: No
 
  ** [egressNetworkConnectors](#API_RunMicrovm_RequestSyntax) **   <a name="lambdamicrovm-RunMicrovm-request-egressNetworkConnectors"></a>
-The list of egress network connectors to configure for the MicroVM.
+The list of egress network connectors available to the MicroVM at runtime.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
@@ -141,7 +141,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [egressNetworkConnectors](#API_RunMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-RunMicrovm-response-egressNetworkConnectors"></a>
-The list of egress network connectors configured for the MicroVM.
+The list of egress network connectors available to the MicroVM at runtime.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
@@ -165,6 +165,7 @@ Type: [IdlePolicy](API_IdlePolicy.md) object
 The ARN of the MicroVM image used to run this MicroVM.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:[a-z0-9-]+:lambda:[a-z0-9-]*:[a-z0-9]*:microvm-image:.+`
 
  ** [imageVersion](#API_RunMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-RunMicrovm-response-imageVersion"></a>
 The version of the MicroVM image used to run this MicroVM.
@@ -222,6 +223,10 @@ The identifier of the resource that caused the conflict.
  ** resourceType **
 The type of the resource that caused the conflict.
 HTTP Status Code: 409
+
+ ** InsufficientCapacityException **
+There is insufficient capacity to fulfill the request. Retry the request later.
+HTTP Status Code: 500
 
  ** InternalServerException **
 An internal server error occurred. Retry the request later.

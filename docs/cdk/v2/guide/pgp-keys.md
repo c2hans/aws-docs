@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/pgp-keys.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # OpenPGP keys for the AWS CDK and jsii
 <a name="pgp-keys"></a>
 

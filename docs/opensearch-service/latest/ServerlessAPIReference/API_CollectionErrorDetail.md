@@ -31,7 +31,7 @@ Required: No
 If the request contains collection names, the response includes the names provided in the request.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 64.
-Pattern: `[a-z][a-z0-9-]+`
+Pattern: `[a-z][a-z0-9_-]+`
 Required: No
 
 ## See Also

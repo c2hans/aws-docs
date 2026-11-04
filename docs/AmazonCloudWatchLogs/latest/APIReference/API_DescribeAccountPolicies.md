@@ -55,7 +55,7 @@ Required: No
  ** [policyType](#API_DescribeAccountPolicies_RequestSyntax) **   <a name="CWL-DescribeAccountPolicies-request-policyType"></a>
 Use this parameter to limit the returned policies to only the policies that match the policy type that you specify.
 Type: String
-Valid Values: `DATA_PROTECTION_POLICY | SUBSCRIPTION_FILTER_POLICY | FIELD_INDEX_POLICY | TRANSFORMER_POLICY | METRIC_EXTRACTION_POLICY`
+Valid Values: `DATA_PROTECTION_POLICY | SUBSCRIPTION_FILTER_POLICY | FIELD_INDEX_POLICY | TRANSFORMER_POLICY | METRIC_EXTRACTION_POLICY | RETENTION_POLICY`
 Required: Yes
 
 ## Response Syntax

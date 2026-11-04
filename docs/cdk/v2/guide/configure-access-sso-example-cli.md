@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/configure-access-sso-example-cli.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # Example: Authenticate with IAM Identity Center automatic token refresh for use with the AWS CDK CLI
 <a name="configure-access-sso-example-cli"></a>
 

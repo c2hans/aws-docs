@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::AccessGrant
 <a name="aws-resource-cloudwatch-accessgrant"></a>
 
-Resource type definition for `AWS::CloudWatch::AccessGrant`
+Resource Type definition for `AWS::CloudWatch::AccessGrant`. An access grant authorizes a principal to perform a set of actions on resources in a space.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-accessgrant-syntax"></a>
@@ -54,7 +54,7 @@ Properties:
 <a name="aws-resource-cloudwatch-accessgrant-properties"></a>
 
 `DomainId`  <a name="cfn-cloudwatch-accessgrant-domainid"></a>
-The unique identifier of the domain that contains the space.
+The ID of the domain the grant belongs to.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^d-[0-9a-z]{1,25}$`
@@ -70,7 +70,7 @@ A name that identifies the access grant.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Permission`  <a name="cfn-cloudwatch-accessgrant-permission"></a>
-The permission granted. Exactly one permission is granted per access grant.
+The permission granted.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `SPACE_ADMIN | READ | READ_WRITE_DELETE | CUSTOM`
@@ -83,14 +83,14 @@ The principal receiving the grant.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ScopedActions`  <a name="cfn-cloudwatch-accessgrant-scopedactions"></a>
-Groups of actions to allow, each with the resource scopes and conditions that limit those actions.
+Groups of actions allowed by the grant, each with the resource scopes and conditions that limit those actions.
 *Required*: No
 *Type*: [Array](aws-properties-cloudwatch-accessgrant-scopedactions.md) of [ScopedActions](aws-properties-cloudwatch-accessgrant-scopedactions.md)
 *Maximum*: `20`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `SpaceId`  <a name="cfn-cloudwatch-accessgrant-spaceid"></a>
-The unique identifier of the space the access grant is scoped to.
+The space this grant applies to. Domain-scoped grants are returned by ListDomainAccessGrantsForOrganization instead.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
@@ -124,22 +124,22 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 <a name="aws-resource-cloudwatch-accessgrant-return-values-fn--getatt-fn--getatt"></a>
 
 `AccountId`  <a name="AccountId-fn::getatt"></a>
-The AWS account ID that owns the access grant.
+The AWS account ID that owns the grant.
 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the access grant.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-The time the access grant was created.
+The timestamp when the grant was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
-The principal that created the access grant.
+The principal that created the grant.
 
 `GrantId`  <a name="GrantId-fn::getatt"></a>
-The unique identifier of the access grant.
+The unique ID of the access grant.
 
 `GrantType`  <a name="GrantType-fn::getatt"></a>
-Whether the access grant is managed by the service or by the customer.
+Who manages the grant.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time the access grant was last updated.
+The timestamp when the grant was last updated.

@@ -15,6 +15,10 @@ Updates an OpenSearch Serverless collection.
    "clientToken": "{{string}}",
    "deletionProtection": "{{string}}",
    "description": "{{string}}",
+   "encryptionConfig": {
+      "aWSOwnedKey": {{boolean}},
+      "kmsKeyArn": "{{string}}"
+   },
    "id": "{{string}}",
    "vectorOptions": {
       "ServerlessVectorAcceleration": "{{string}}"
@@ -47,6 +51,11 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 1000.
 Required: No
 
+ ** [encryptionConfig](#API_UpdateCollection_RequestSyntax) **   <a name="opensearchserverless-UpdateCollection-request-encryptionConfig"></a>
+Encryption settings for a collection.
+Type: [EncryptionConfig](API_EncryptionConfig.md) object
+Required: No
+
  ** [id](#API_UpdateCollection_RequestSyntax) **   <a name="opensearchserverless-UpdateCollection-request-id"></a>
 The unique identifier of the collection.
 Type: String
@@ -70,6 +79,7 @@ Required: No
       "deletionProtection": "string",
       "description": "string",
       "id": "string",
+      "kmsKeyArn": "string",
       "lastModifiedDate": number,
       "name": "string",
       "status": "string",

@@ -152,7 +152,7 @@ For each option's read latency, see the capabilities table in the Understand sec
 Consider how soon an inserted or updated vector must become searchable. A workload with a fixed set of vectors can tolerate slower inserts, while a workload that updates vectors continuously needs those changes reflected quickly:
 + **Reflected almost immediately** – Amazon ElastiCache (Valkey), which supports real-time vector updates, and Amazon Aurora PostgreSQL, where a committed row is queryable right away.
 + **Within seconds (near real-time)** – Amazon DynamoDB, Amazon MemoryDB, and OpenSearch, which update their vector indexes shortly after a write.
-+ **Batch or rate-limited ingest** – Amazon S3 Vectors, which is optimized for ingesting large, relatively fixed sets of vectors.
++ **Batched inserts** – Writes to Amazon S3 Vectors are strongly consistent, and inserting vectors in large batches is recommended to optimize costs.
 
 ------
 #### [ Search capabilities ]

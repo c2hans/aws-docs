@@ -80,7 +80,10 @@ The CloudWatch dimensions that you can use with the Amazon Chime SDK are listed 
 
 You can configure your Amazon Chime SDK Voice Connectors to send metrics to CloudWatch Logs. When you do, you can also receive media-quality metric logs for those Voice Connectors.
 
-The Amazon Chime SDK sends detailed metrics once per minute. The Amazon Chime SDK sends them for all the calls made with the configured Voice Connectors, and it sends them to a CloudWatch Logs log group that we create for you.
+The Amazon Chime SDK sends detailed metrics once per minute. The Amazon Chime SDK sends them for all two-way calls made with the configured Voice Connectors, and it sends them to a CloudWatch Logs log group that we create for you.
+
+**Note**
+The Amazon Chime SDK does not send media-quality metric logs for SIP-based media recording (SIPREC) or network-based recording (NBR) sessions.
 
 The log group name uses this format: `/aws/ChimeVoiceConnectorLogs/${{{VoiceConnectorID}}}`.
 

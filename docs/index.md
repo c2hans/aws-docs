@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/index.html
 title: 'Welcome to AWS Documentation'
 canonical_url: https://docs.aws.amazon.com/
 source: aws-documentation
-generated_on: 2026-11-01
+generated_on: 2026-11-03
 ---
 
 # Welcome to AWS Documentation
@@ -198,7 +198,6 @@ Find user guides, developer guides, API references, and CLI references for your 
 - [Choosing a purchasing option for Amazon Elastic Compute Cloud](/decision-guides/latest/ec2-purchasing-options-aws-how-to-choose/ec2-purchasing-options-aws-how-to-choose.html?icmpid=docs_homepage_decision_guides): Choose the Amazon EC2 purchasing option that fits your workload
 - [Choosing an AWS cryptography service](/decision-guides/latest/cryptography-on-aws-how-to-choose/guide.html?icmpid=docs_homepage_decision_guides): Choose the right AWS cryptography service
 - [Choosing an AWS database service](/decision-guides/latest/databases-on-aws-how-to-choose/databases-on-aws-how-to-choose.html?icmpid=docs_homepage_decision_guides): Choose the right AWS database service
-- [Choosing a database for your generative AI applications](/vector-databases/?icmpid=docs_homepage_decision_guides): Choose the right AWS vector databases and vector search options
 - [Choosing AWS frontend and mobile services](/decision-guides/latest/front-end-on-aws-how-to-choose/front-end-on-aws-how-to-choose.html?icmpid=docs_homepage_decision_guides): Ask the right questions to build your web or mobile app on AWS
 - [Choosing an AWS identity service](/decision-guides/latest/identity-on-aws-how-to-choose/identity-on-aws-how-to-choose.html?icmpid=docs_homepage_decision_guides): Choose the right AWS identity service
 - [Choosing an AWS IoT service](/decision-guides/latest/iot-on-aws-how-to-choose/iot.html?icmpid=docs_homepage_decision_guides): Choose the right AWS IoT services

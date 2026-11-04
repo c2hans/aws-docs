@@ -20,6 +20,7 @@ Required: Yes
 
  ** Subnets **   <a name="comprehend-Type-VpcConfig-Subnets"></a>
 The ID for each subnet being used in your private VPC. This subnet is a subset of the a range of IPv4 addresses used by the VPC and is specific to a given availability zone in the VPC’s Region. This ID number is preceded by "subnet-", for instance: "subnet-04ccf456919e69055". For more information, see [VPCs and Subnets](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html).
+We recommend that you specify subnets in at least two Availability Zones. Amazon Comprehend runs the job in one of the subnets that you provide. If all of your subnets are in a single Availability Zone, the job can't be placed in another Availability Zone when that Availability Zone is impaired, and the job can fail. Each subnet must also have enough free IP addresses for the job's instances.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 16 items.
 Length Constraints: Minimum length of 1. Maximum length of 32.

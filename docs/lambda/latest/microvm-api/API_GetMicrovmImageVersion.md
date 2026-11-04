@@ -144,7 +144,7 @@ The description of the version.
 Type: String
 
  ** [egressNetworkConnectors](#API_GetMicrovmImageVersion_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageVersion-response-egressNetworkConnectors"></a>
-The list of egress network connectors available to the MicroVM at runtime.
+The list of egress network connectors available to the MicroVM at image build time.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 2048.

@@ -124,7 +124,7 @@ The description of the version.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EgressNetworkConnectors`  <a name="cfn-lambda-microvmimage-egressnetworkconnectors"></a>
-The list of egress network connectors available to the MicroVM at runtime.
+The list of egress network connectors available to the MicroVM at image build time.
 *Required*: Yes
 *Type*: Array of String
 *Maximum*: `10`

@@ -28,6 +28,11 @@ Constraints:
 Type: String
 Required: Yes
 
+ ** CopyTagsToSnapshot **
+Specifies whether to copy all tags from the restored DB cluster to snapshots of the restored DB cluster. The default is not to copy them.
+Type: Boolean
+Required: No
+
  ** DBSubnetGroupName **
 The subnet group name to use for the new cluster.
 Constraints: If provided, must match the name of an existing `DBSubnetGroup`.

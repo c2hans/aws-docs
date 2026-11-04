@@ -13,7 +13,8 @@ Retrieves a list of the delivery sources that have been created in the account.
 ```
 {
    "limit": {{number}},
-   "nextToken": "{{string}}"
+   "nextToken": "{{string}}",
+   "resourceArns": [ "{{string}}" ]
 }
 ```
 
@@ -34,6 +35,12 @@ Required: No
 The token for the next set of items to return. The token expires after 24 hours.
 Type: String
 Length Constraints: Minimum length of 1.
+Required: No
+
+ ** [resourceArns](#API_DescribeDeliverySources_RequestSyntax) **   <a name="CWL-DescribeDeliverySources-request-resourceArns"></a>
+An array of Amazon Resource Names (ARNs) that filters the results to delivery sources associated with any specified ARN.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 20 items.
 Required: No
 
 ## Response Syntax

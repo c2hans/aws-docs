@@ -56,6 +56,11 @@ A sort for SaaS products.
 Type: [SaaSProductSort](API_SaaSProductSort.md) object
 Required: No
 
+ ** SubsidiaryAuthorizationSort **   <a name="AWSMarketplaceService-Type-EntityTypeSort-SubsidiaryAuthorizationSort"></a>
+A sort for subsidiary authorizations.
+Type: [SubsidiaryAuthorizationSort](API_SubsidiaryAuthorizationSort.md) object
+Required: No
+
 ## See Also
 <a name="API_EntityTypeSort_SeeAlso"></a>
 

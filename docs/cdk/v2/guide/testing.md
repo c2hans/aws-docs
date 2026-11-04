@@ -2,9 +2,7 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/testing.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
-# Test AWS CDK applications
+# Testing AWS CDK applications
 <a name="testing"></a>
 
 With the AWS CDK, your infrastructure can be as testable as any other code you write. You can test in the cloud and locally. This topic addresses how to test in the cloud. For guidance on local testing see [Locally test and build AWS CDK applications with the AWS SAM CLI](testing-locally.md). The standard approach to testing AWS CDK apps uses the AWS CDK’s [assertions](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.assertions-readme.html) module and popular test frameworks like [Jest](https://jestjs.io/) for TypeScript and JavaScript or [Pytest](https://docs.pytest.org/en/6.2.x/) for Python.

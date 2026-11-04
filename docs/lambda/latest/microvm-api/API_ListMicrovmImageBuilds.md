@@ -21,11 +21,11 @@ The request uses the following URI parameters.
 
  ** [architecture](#API_ListMicrovmImageBuilds_RequestSyntax) **   <a name="lambdamicrovm-ListMicrovmImageBuilds-request-uri-architecture"></a>
 Filters builds by target CPU architecture.
-Valid Values: `ARM_64`
+Valid Values: `ARM_64 | X86_64`
 
  ** [chipset](#API_ListMicrovmImageBuilds_RequestSyntax) **   <a name="lambdamicrovm-ListMicrovmImageBuilds-request-uri-chipset"></a>
 Filters builds by target chipset.
-Valid Values: `GRAVITON`
+Valid Values: `GRAVITON | INTEL`
 
  ** [chipsetGeneration](#API_ListMicrovmImageBuilds_RequestSyntax) **   <a name="lambdamicrovm-ListMicrovmImageBuilds-request-uri-chipsetGeneration"></a>
 Filters builds by target chipset generation.

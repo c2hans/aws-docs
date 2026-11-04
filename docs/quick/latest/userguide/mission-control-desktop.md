@@ -57,7 +57,7 @@ Expand Model details to configure these options.
 
 The Activity tab shows the run history for the routine. From the modal, you can also enable or disable the routine, run it immediately, edit it with chat, and choose Done to save.
 
-Quick includes pre-configured routines, such as a feed agent that processes items from your connected services and populates the activity feed. You customize a built-in routine's cadence, capabilities, instructions, and model.
+Quick includes pre-configured routines, such as a feed agent that processes items from your connected services and populates the activity feed. For more information about the feed, see [Activity feed](activity-feed-desktop.md). You customize a built-in routine's cadence, capabilities, instructions, and model.
 
 **To create a routine**
 

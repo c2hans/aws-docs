@@ -71,6 +71,7 @@ Defines the type of log that the source is sending.
 + For AWS Elemental Inference, the valid value is `APPLICATION_LOGS`.
 + For Elemental MediaPackage, the valid values are `EGRESS_ACCESS_LOGS` and `INGRESS_ACCESS_LOGS`.
 + For Elemental MediaTailor, the valid values are `AD_DECISION_SERVER_LOGS`, `MANIFEST_SERVICE_LOGS`, and `TRANSCODE_LOGS`.
++ For Amazon ECS, the valid value is `ACTION_LOGS`.
 + For AWS Entity Resolution, the valid value is `WORKFLOW_LOGS`.
 + For Amazon EventBridge Event Bus (Custom), the valid values are `INFO_LOGS` and `ERROR_LOGS`.
 + For IAM Identity Center, the valid value is `ERROR_LOGS`.

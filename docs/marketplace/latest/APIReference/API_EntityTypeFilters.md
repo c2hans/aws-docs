@@ -56,6 +56,11 @@ A filter for SaaS products.
 Type: [SaaSProductFilters](API_SaaSProductFilters.md) object
 Required: No
 
+ ** SubsidiaryAuthorizationFilters **   <a name="AWSMarketplaceService-Type-EntityTypeFilters-SubsidiaryAuthorizationFilters"></a>
+A filter for subsidiary authorizations.
+Type: [SubsidiaryAuthorizationFilters](API_SubsidiaryAuthorizationFilters.md) object
+Required: No
+
 ## See Also
 <a name="API_EntityTypeFilters_SeeAlso"></a>
 

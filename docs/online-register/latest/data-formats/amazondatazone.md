@@ -34,6 +34,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-GetDomainExecutionRoleCredentials"></a>[GetDomainExecutionRoleCredentials](${APIReferenceDocPage}API_GetDomainExecutionRoleCredentials.html) | Use features that require access to domain execution role credentials | Read |
 | <a name="datazone-GetDomainSharingPolicy"></a>[GetDomainSharingPolicy](${APIReferenceDocPage}API_GetDomainSharingPolicy.html) | Retrieve a resource policy for a DataZone Domain | Read |
 | <a name="datazone-GetDomainUnit"></a>[GetDomainUnit](${APIReferenceDocPage}API_GetDomainUnit.html) | Get an existing domain unit | Read |
+| <a name="datazone-GetEffectiveUICustomization"></a>[GetEffectiveUICustomization](${APIReferenceDocPage}API_GetEffectiveUICustomization.html) | Get the effective UI customization | Read |
 | <a name="datazone-GetEnvironment"></a>[GetEnvironment](${APIReferenceDocPage}API_GetEnvironment.html) | Get Environment details | Read |
 | <a name="datazone-GetEnvironmentAction"></a>[GetEnvironmentAction](${APIReferenceDocPage}API_GetEnvironmentAction.html) | Get an environment action in a default service blueprint environment | Read |
 | <a name="datazone-GetEnvironmentActionLink"></a>[GetEnvironmentActionLink](${APIReferenceDocPage}API_GetEnvironmentActionLink.html) | Get environment action link | Read |
@@ -63,6 +64,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-GetSubscriptionRequestDetails"></a>[GetSubscriptionRequestDetails](${APIReferenceDocPage}API_GetSubscriptionRequestDetails.html) | Reject a subscription request for a Data Asset | Read |
 | <a name="datazone-GetSubscriptionTarget"></a>[GetSubscriptionTarget](${APIReferenceDocPage}API_GetSubscriptionTarget.html) | Retireve details of subscription target | Read |
 | <a name="datazone-GetTimeSeriesDataPoint"></a>[GetTimeSeriesDataPoint](${APIReferenceDocPage}API_GetTimeSeriesDataPoint.html) | Get an existing TimeSeriesDataPoints in Amazon DataZone using its identifier | Read |
+| <a name="datazone-GetUIConfiguration"></a>[GetUIConfiguration](${APIReferenceDocPage}API_GetUIConfiguration.html) | Get a UI configuration | Read |
 | <a name="datazone-GetUpdateEligibility"></a>[GetUpdateEligibility](${APIReferenceDocPage}API_GetUpdateEligibility.html) | Get update eligibility status for project constructs | Read |
 | <a name="datazone-GetUserProfile"></a>[GetUserProfile](${APIReferenceDocPage}API_GetUserProfile.html) | Retrieve a user profile for an existing user in the DataZone Domain | Read |
 | <a name="datazone-ListAccountEnvironments"></a>[ListAccountEnvironments](${APIReferenceDocPage}API_ListAccountEnvironments.html) | List Environments across all domains in an AWS Account | List |
@@ -111,6 +113,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-ListSubscriptions"></a>[ListSubscriptions](${APIReferenceDocPage}API_ListSubscriptions.html) | List subscriptions | List |
 | <a name="datazone-ListTagsForResource"></a>[ListTagsForResource](${APIReferenceDocPage}API_ListTagsForResource.html) | Retrieve all tags associated with a resource | Read |
 | <a name="datazone-ListTimeSeriesDataPoints"></a>[ListTimeSeriesDataPoints](${APIReferenceDocPage}API_ListTimeSeriesDataPoints.html) | List existing TimeSeriesDataPoints | List |
+| <a name="datazone-ListUIConfigurations"></a>[ListUIConfigurations](${APIReferenceDocPage}API_ListUIConfigurations.html) | List UI configurations | List |
 | <a name="datazone-ListWarehouseMetadata"></a>[ListWarehouseMetadata](${APIReferenceDocPage}API_ListWarehouseMetadata.html) | List available Manager Secrets | List |
 | <a name="datazone-QueryGraph"></a>[QueryGraph](${APIReferenceDocPage}API_QueryGraph.html) | Query graph | List |
 | <a name="datazone-Search"></a>[Search](${APIReferenceDocPage}API_Search.html) | Search datazone entities | List |

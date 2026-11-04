@@ -35,6 +35,7 @@ The following data types are supported:
 +  [DeploymentWarningEntry](API_DeploymentWarningEntry.md)
 +  [FirewallSyncReason](API_FirewallSyncReason.md)
 +  [InvalidFirewallReasons](API_InvalidFirewallReasons.md)
++  [InvalidResourceIssue](API_InvalidResourceIssue.md)
 +  [NotVisibleMarker](API_NotVisibleMarker.md)
 +  [OrganizationalUnitReference](API_OrganizationalUnitReference.md)
 +  [OutOfSyncReasonsView](API_OutOfSyncReasonsView.md)

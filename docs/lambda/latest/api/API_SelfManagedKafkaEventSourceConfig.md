@@ -17,6 +17,17 @@ Length Constraints: Minimum length of 1. Maximum length of 200.
 Pattern: `[a-zA-Z0-9-\/*:_+=.@-]*`
 Required: No
 
+ ** ConsumptionMode **   <a name="lambda-Type-SelfManagedKafkaEventSourceConfig-ConsumptionMode"></a>
+The mode that Lambda uses to consume records from your self-managed Apache Kafka topic. Valid values are the following:
++  `Stream` (default) – Lambda consumes records using a Kafka consumer group and preserves the order of records within each partition.
++  `Queue` – Lambda consumes records using a Kafka share group. Multiple consumers can process records from the same partition concurrently, so Lambda doesn't preserve per-partition order. To use Queue mode, your cluster must run Apache Kafka version 4.2 or later with share groups enabled.
+If you omit this parameter, Lambda uses `Stream`.
+You cannot change `ConsumptionMode` after you create the event source mapping. To use a different consumption mode, create a new event source mapping.
+When `ConsumptionMode` is `Queue`, the `StartingPosition`, `StartingPositionTimestamp`, and `MaximumBatchingWindowInSeconds` parameters are not supported.
+Type: String
+Valid Values: `Stream | Queue`
+Required: No
+
  ** SchemaRegistryConfig **   <a name="lambda-Type-SelfManagedKafkaEventSourceConfig-SchemaRegistryConfig"></a>
 Specific configuration settings for a Kafka schema registry.
 Type: [KafkaSchemaRegistryConfig](API_KafkaSchemaRegistryConfig.md) object

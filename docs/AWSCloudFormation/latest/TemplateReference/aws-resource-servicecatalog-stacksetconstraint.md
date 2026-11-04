@@ -9,6 +9,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Specifies a StackSet constraint.
 
+**Important**
+If you declare this constraint and its product in the same AWS CloudFormation template, add a `DependsOn` attribute. The attribute must reference the `AWS::ServiceCatalog::PortfolioProductAssociation` resource. Otherwise, CloudFormation might create the constraint before it associates the product with the portfolio, causing the stack to fail with `Resource not found`.
+
 ## Syntax
 <a name="aws-resource-servicecatalog-stacksetconstraint-syntax"></a>
 
@@ -66,13 +69,13 @@ The language code.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AccountList`  <a name="cfn-servicecatalog-stacksetconstraint-accountlist"></a>
-One or more AWS accounts that will have access to the provisioned product.
+One or more AWS accounts that will have access to the provisioned product, or the single value `self`. `self` means the account of the user who provisions the product, and you cannot combine it with account IDs.
 *Required*: Yes
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AdminRole`  <a name="cfn-servicecatalog-stacksetconstraint-adminrole"></a>
-AdminRole ARN
+AdminRole ARN or role name. If you specify a role name for the `AdminRole` property, when an account uses the stack set constraint, the IAM role with that name in the account will be used.
 *Required*: Yes
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

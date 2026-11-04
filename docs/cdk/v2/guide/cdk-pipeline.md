@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/cdk-pipeline.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # Continuous integration and delivery (CI/CD) using CDK Pipelines
 <a name="cdk-pipeline"></a>
 

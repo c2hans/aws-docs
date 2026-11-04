@@ -2,9 +2,7 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/work-with.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
-# Work with the AWS CDK library
+# Working with the AWS CDK library
 <a name="work-with"></a>
 
 Import and use the AWS Cloud Development Kit (AWS CDK) library to define your AWS Cloud infrastructure with a [supported programming language](languages.md).

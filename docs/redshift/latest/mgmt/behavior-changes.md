@@ -15,6 +15,8 @@ As Amazon Redshift continues to evolve and improve, certain changes in behavior 
 The following describes upcoming behavior changes.
 
 **Topics**
++ [Enhancements to Amazon Redshift materialized views (MVs) starting with patch release P206](#mv-enhancements-patch206)
++ [Amazon Redshift copies the most recent existing snapshot when cross-region snapshot copy is enabled after October 30, 2026](#crc-autocopy-existing-backup)
 + [SUPER data type supports larger individual strings starting with Patch 206](#super-large-strings-patch206)
 + [AWS KMS key permission enforcement for Amazon Redshift Serverless APIs after August 17, 2026](#kms-permission-serverless-aug2026)
 + [Amazon Redshift enforces user lockout after multiple failed login attempts starting with Patch 208](#user-lockout-patch208)
@@ -27,6 +29,59 @@ The following describes upcoming behavior changes.
 + [Amazon Redshift won’t support functions that access consumer information through datasharing after February 16, 2026](#datasharing-feb2026)
 + [Minimum Transport Layer Security (TLS) version changes effective starting October 31, 2026](#tls-changes-oct2026)
 + [Amazon Redshift won’t support the creation of new scalar Python UDFs after October 30, 2025](#python-udf-oct2025)
+
+### Enhancements to Amazon Redshift materialized views (MVs) starting with patch release P206
+<a name="mv-enhancements-patch206"></a>
+
+#### I. Enhancements to auto refresh of Amazon Redshift Materialized Views
+<a name="mv-auto-refresh-enhancements-patch206"></a>
+
+**Enhancement to MV auto refresh interval**
+
+We are introducing a new feature that allows you to configure the auto refresh interval of an Amazon Redshift MV. This gives you fine-grained control over how frequently each MV is refreshed. The refresh interval defaults to 5minutes. As a result, your existing auto refresh MVs may refresh more or less frequently depending on your workload. Please refer to the Recommended Actions section below for details.
+
+**Inspecting Refresh Intervals**
+
+You can view the refresh interval configured for your MVs using the following system views:
+
+The columns `autorefresh_interval` and `has_default_autorefresh_interval` in the system views `STV_MV_INFO`, `SVV_MV_INFO` are self-descriptive. Note: Both system views contain the same information. The default auto refresh interval after this enhancement is 5 minutes.
+
+**Recommended Actions**
++ Review the updated documentation for refreshing a materialized views here: [Refreshing a materialized view](https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-refresh.html)
++ If you want all auto refresh MVs to refresh more or less frequently - `ALTER SYSTEM SET default_mv_auto_refresh_interval = <seconds>`
++ If you want some MVs to refresh more or less frequently - `ALTER MATERIALIZED VIEW <mv> AUTO REFRESH YES INTERVAL <seconds>`
++ If your auto refresh interval setting impacts other workload on your cluster, you can:
+
+  1. Resize up. See the documentation on resizing Amazon Redshift provisioned clusters for more details: [Resizing clusters](https://docs.aws.amazon.com/redshift/latest/mgmt/resizing-cluster.html)
+
+  1. Increase MaxRPU for serverless. See the documentation on resizing Amazon Redshift serverless workgroups for more details: [Serverless capacity](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-capacity.html#serverless-auto-optimization)
+
+  1. Enable concurrency scaling or increase number of clusters using `max_concurrency_scaling_clusters`. See the documentation on Amazon Redshift Concurrency Scaling for more details.
++ Review the Amazon Redshift Big Data blogs on the best practices for resizing your Amazon Redshift provisioned cluster or your Amazon Redshift serverless workgroup. See these blogs to get started:
+  + [Architecture patterns to optimize Amazon Redshift performance at scale](https://aws.amazon.com/blogs/big-data/architecture-patterns-to-optimize-amazon-redshift-performance-at-scale/)
+  + [Accelerate resizing of Amazon Redshift clusters with enhancements to classic resize](https://aws.amazon.com/blogs/big-data/accelerate-resizing-of-amazon-redshift-clusters-with-enhancements-to-classic-resize/)
+
+#### II. Changes to Vacuum of Amazon Redshift tables with dependent Materialized Views
+<a name="mv-vacuum-changes-patch206"></a>
+
+This is the list of changes impacting Vacuum operations on Amazon Redshift Managed Storage (RMS) base tables of MVs:
++ **Increased Performance:** We have optimized vacuum and MV refresh interaction such that MV refresh stays incremental even after vacuum delete is run. This improves MV refresh performance significantly. Vacuum will not delete rows which are required by incremental refreshing MVs until system threshold is reached. Once this threshold is reached, vacuum runs at higher priority to free up your storage. As a result, some MVs may full recompute on next refresh.
++ **New VACUUM ... FORCE option:** If you need vacuum to reclaim all deleted rows, we also introduce a new user-facing SQL command, `VACUUM ... FORCE`. This allows you to explicitly trigger a vacuum that reclaims all deleted rows in the table, giving you more control in maintenance scenarios. It marks dependent MVs for a full recompute on next refresh; second, it vacuums base tables.
+
+**Recommended Actions**
++ Review the updated documentation for the Amazon Redshift VACUUM command: [VACUUM](https://docs.aws.amazon.com/redshift/latest/dg/r_VACUUM_command.html)
++ In case your workload has MVs and your workload depends on vacuum delete to reclaim all rows, please review if for this workload `VACUUM ... FORCE` is a better option. Otherwise, no action is required on your part.
+
+### Amazon Redshift copies the most recent existing snapshot when cross-region snapshot copy is enabled after October 30, 2026
+<a name="crc-autocopy-existing-backup"></a>
+
+When you enable cross-region snapshot copy on a cluster or serverless namespace, Amazon Redshift now automatically copies the most recent existing snapshot, whether they are System created automated snapshots or User created Manual snapshots, to the destination AWS Region within a few minutes. Previously, only snapshots created after enablement were copied to the destination region, meaning customers had to wait for the next scheduled snapshot before having disaster recovery protection in the destination region.
+
+You may be impacted by this if you enable cross-region snapshot copy on clusters that already have existing snapshots. The most recent snapshot is copied immediately, and cross-region data transfer charges begin within minutes of enablement rather than after the next scheduled backup.
+
+This behavior applies to both Amazon Redshift provisioned clusters and Amazon Redshift Serverless.
+
+No action is required. This is an improvement to the existing cross-region snapshot copy feature that provides faster disaster recovery protection.
 
 ### SUPER data type supports larger individual strings starting with Patch 206
 <a name="super-large-strings-patch206"></a>

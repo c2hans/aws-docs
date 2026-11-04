@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::OmniDashboard
 <a name="aws-resource-cloudwatch-omnidashboard"></a>
 
-Resource type definition for `AWS::CloudWatch::OmniDashboard`
+Resource Type definition for `AWS::CloudWatch::OmniDashboard`. A dashboard is a saved arrangement of panels that shows your team one agreed view of a system, backed by queries against your space's telemetry.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-omnidashboard-syntax"></a>
@@ -48,7 +48,7 @@ Properties:
 <a name="aws-resource-cloudwatch-omnidashboard-properties"></a>
 
 `Body`  <a name="cfn-cloudwatch-omnidashboard-body"></a>
-The dashboard body, a JSON document describing the dashboard's widgets and layout.
+The dashboard definition.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`
@@ -56,7 +56,7 @@ The dashboard body, a JSON document describing the dashboard's widgets and layou
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Description`  <a name="cfn-cloudwatch-omnidashboard-description"></a>
-The description of the dashboard.
+An optional description of the dashboard.
 *Required*: No
 *Type*: String
 *Minimum*: `1`
@@ -64,7 +64,7 @@ The description of the dashboard.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-cloudwatch-omnidashboard-name"></a>
-The name of the dashboard.
+A name that identifies the dashboard.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9_.@~()-]+$`
@@ -73,7 +73,7 @@ The name of the dashboard.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SpaceId`  <a name="cfn-cloudwatch-omnidashboard-spaceid"></a>
-The unique identifier of the space the dashboard belongs to.
+The unique ID of the space to create the dashboard in.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
@@ -110,13 +110,13 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 The Amazon Resource Name (ARN) of the dashboard.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-The time the dashboard was created.
+The timestamp when the dashboard was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
 The principal that created the dashboard.
 
 `DashboardId`  <a name="DashboardId-fn::getatt"></a>
-The unique identifier of the dashboard.
+The unique ID of the dashboard.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time the dashboard was last updated.
+The timestamp when the dashboard was last updated.

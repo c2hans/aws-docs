@@ -76,7 +76,7 @@ Required: No
 Name of the collection.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 64.
-Pattern: `[a-z][a-z0-9-]+`
+Pattern: `[a-z][a-z0-9_-]+`
 Required: Yes
 
  ** [standbyReplicas](#API_CreateCollection_RequestSyntax) **   <a name="opensearchserverless-CreateCollection-request-standbyReplicas"></a>

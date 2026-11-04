@@ -41,6 +41,7 @@ The following actions are supported by Amazon DocumentDB (with MongoDB compatibi
 +  [DescribeGlobalClusters](API_DescribeGlobalClusters.md)
 +  [DescribeOrderableDBInstanceOptions](API_DescribeOrderableDBInstanceOptions.md)
 +  [DescribePendingMaintenanceActions](API_DescribePendingMaintenanceActions.md)
++  [DescribeServerlessV2PlatformVersions](API_DescribeServerlessV2PlatformVersions.md)
 +  [FailoverDBCluster](API_FailoverDBCluster.md)
 +  [FailoverGlobalCluster](API_FailoverGlobalCluster.md)
 +  [ListTagsForResource](API_ListTagsForResource.md)

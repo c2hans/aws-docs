@@ -80,6 +80,7 @@ The following table describes the invocation limits for AgentCore Runtime. You c
 | Streaming maximum duration | 60 mins | No | Maximum time for streaming connections (Response streaming, WebSocket connections) |
 | Asynchronous job maximum duration | 8 hours (microVMs), 14 days (Instances) | No | Maximum execution time for asynchronous jobs. On microVMs, a job can run for up to 8 hours. On Instances, a job can run until its agent reaches the runtime `maxLifetime`, up to 14 days. For more information, see [Configure lifecycle settings](runtime-lifecycle-settings.md). |
 | WebSocket frame size | 64 KB | No | Maximum size for individual WebSocket frames |
+| Concurrent connections per session | 250 | No | Applies to agents on platform version V2 with the default allocation of 2 vCPU per session. Includes concurrent requests, WebSocket connections, and server-sent event (SSE) streams. |
 
 For more information about service quotas and how to request increases, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 

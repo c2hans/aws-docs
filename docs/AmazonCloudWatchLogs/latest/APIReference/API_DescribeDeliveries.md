@@ -16,6 +16,7 @@ A delivery source represents an AWS resource that sends logs to an logs delivery
 
 ```
 {
+   "deliverySourceNames": [ "{{string}}" ],
    "limit": {{number}},
    "nextToken": "{{string}}"
 }
@@ -27,6 +28,14 @@ A delivery source represents an AWS resource that sends logs to an logs delivery
 For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
 The request accepts the following data in JSON format.
+
+ ** [deliverySourceNames](#API_DescribeDeliveries_RequestSyntax) **   <a name="CWL-DescribeDeliveries-request-deliverySourceNames"></a>
+An array of delivery source names that filters the results to deliveries associated with any specified delivery source.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 20 items.
+Length Constraints: Minimum length of 1. Maximum length of 60.
+Pattern: `[\w-]*`
+Required: No
 
  ** [limit](#API_DescribeDeliveries_RequestSyntax) **   <a name="CWL-DescribeDeliveries-request-limit"></a>
 Optionally specify the maximum number of deliveries to return in the response.

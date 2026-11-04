@@ -2,9 +2,7 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/cdktelemetry.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
-# AWS CDK telemetry
+# Telemetry in the AWS CDK
 <a name="cdktelemetry"></a>
 
  AWS Cloud Development Kit (AWS CDK) applications are configured to collect and report on usage data to gain insight into how the AWS CDK is being used. To understand the data that is collected, how it’s used, and how to opt in or out of data reporting, see [Configure AWS CDK Library usage data reporting](usage-data.md).

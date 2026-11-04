@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_ListManage
 # ListManagedMicrovmImages
 <a name="API_ListManagedMicrovmImages"></a>
 
-Lists AWS managed MicroVM images available for use as base images. We recommend using pagination to ensure that the operation returns quickly and successfully.
+Lists AWS managed MicroVM images available for use as base images. Use pagination to ensure that the operation returns quickly and successfully.
 
 ## Request Syntax
 <a name="API_ListManagedMicrovmImages_RequestSyntax"></a>

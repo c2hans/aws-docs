@@ -124,7 +124,7 @@ Type: String
 Required: No
 
  ** [egressNetworkConnectors](#API_UpdateMicrovmImage_RequestSyntax) **   <a name="lambdamicrovm-UpdateMicrovmImage-request-egressNetworkConnectors"></a>
-The list of egress network connectors available to the MicroVM at runtime.
+The list of egress network connectors available to the MicroVM at image build time.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
@@ -263,7 +263,7 @@ The description of the MicroVM image.
 Type: String
 
  ** [egressNetworkConnectors](#API_UpdateMicrovmImage_ResponseSyntax) **   <a name="lambdamicrovm-UpdateMicrovmImage-response-egressNetworkConnectors"></a>
-The list of egress network connectors available to the MicroVM at runtime.
+The list of egress network connectors available to the MicroVM at image build time.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 1 item.
 Length Constraints: Minimum length of 1. Maximum length of 2048.

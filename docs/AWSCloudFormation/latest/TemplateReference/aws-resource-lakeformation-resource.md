@@ -56,13 +56,14 @@ Properties:
 The Amazon Resource Name (ARN) of the resource.
 *Required*: Yes
 *Type*: String
+*Pattern*: `^arn:[a-z-]+:[a-z0-9-]+:(([a-z]+-)+[0-9])?:([0-9]{12})?:.+$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `RoleArn`  <a name="cfn-lakeformation-resource-rolearn"></a>
 The IAM role that registered a resource.
 *Required*: No
 *Type*: String
-*Pattern*: `arn:aws:iam::[0-9]*:role/.*`
+*Pattern*: `^arn:[a-z-]+:iam::([0-9]{12})?:.+$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `UseServiceLinkedRole`  <a name="cfn-lakeformation-resource-useservicelinkedrole"></a>

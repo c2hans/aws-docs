@@ -47,6 +47,11 @@ Type: String
 Valid Values: `json | plain | w3c | raw | parquet`
 Required: No
 
+ ** roleArn **   <a name="CWL-Type-DeliveryDestination-roleArn"></a>
+The ARN of the IAM role that CloudWatch Logs assumes to deliver to this delivery destination. This field is present only for X-Ray trace delivery destinations that were created with a role.
+Type: String
+Required: No
+
  ** tags **   <a name="CWL-Type-DeliveryDestination-tags"></a>
 The tags that have been assigned to this delivery destination.
 Type: String to string map

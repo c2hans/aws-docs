@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/corretto/index.html
 title: 'Amazon Corretto Documentation'
 canonical_url: https://docs.aws.amazon.com/corretto/
 source: aws-documentation
-generated_on: 2026-11-02
+generated_on: 2026-11-03
 ---
 
 # Amazon Corretto Documentation
@@ -18,7 +18,6 @@ Amazon Corretto is a no-cost, multiplatform, production-ready distribution of th
 - [/corretto/latest/corretto-17-ug/](/corretto/latest/corretto-17-ug/)
 - [/corretto/latest/corretto-21-ug/](/corretto/latest/corretto-21-ug/)
 - [/corretto/latest/corretto-25-ug/](/corretto/latest/corretto-25-ug/)
-- [/corretto/latest/corretto-26-ug/](/corretto/latest/corretto-26-ug/)
 - [/corretto/latest/corretto-27-ug/](/corretto/latest/corretto-27-ug/)
 
 ---

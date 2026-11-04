@@ -16,7 +16,7 @@ Type: Boolean
 Required: Yes
 
  ** resourcesCleanUp **   <a name="networksecuritymanager-Type-PolicyConfiguration-resourcesCleanUp"></a>
-Specifies whether AWS Network Security Manager automatically removes the resources it created when they are no longer needed. Default: `false`.
+Specifies whether AWS Network Security Manager automatically removes the resources it created when they are no longer needed. This member is required, and the only supported value is `true`.
 Type: Boolean
 Required: Yes
 

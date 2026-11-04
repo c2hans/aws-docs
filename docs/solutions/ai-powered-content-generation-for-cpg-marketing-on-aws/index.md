@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/ai-powered-content-generation-
 title: 'Guidance for AI-Powered Content Generation for CPG Marketing on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/ai-powered-content-generation-for-cpg-marketing-on-aws/
 source: aws-documentation
-generated_on: 2026-11-02
+generated_on: 2026-11-03
 ---
 
 # Guidance for AI-Powered Content Generation for CPG Marketing on AWS

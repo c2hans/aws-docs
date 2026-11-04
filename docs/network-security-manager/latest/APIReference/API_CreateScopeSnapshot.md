@@ -195,6 +195,10 @@ The type of the resource associated with the quota that was exceeded.
 The code for the AWS service that owns the quota that was exceeded.
 HTTP Status Code: 402
 
+ ** TagPolicyViolationException **
+The request violates a tag policy that is in effect for the account or organization.
+HTTP Status Code: 400
+
  ** ThrottlingException **
 The request was denied because of request throttling. Reduce your request rate and try again.
  ** retryAfterSeconds **

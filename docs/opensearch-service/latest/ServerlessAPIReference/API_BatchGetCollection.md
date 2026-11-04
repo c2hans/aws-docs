@@ -37,7 +37,7 @@ A list of collection names. You can't provide names and IDs in the same request.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Length Constraints: Minimum length of 3. Maximum length of 64.
-Pattern: `[a-z][a-z0-9-]+`
+Pattern: `[a-z][a-z0-9_-]+`
 Required: No
 
 ## Response Syntax

@@ -1439,6 +1439,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [CreateUIConfiguration](${APIReferenceDocPage}API_CreateUIConfiguration.html)  **
+  - **Description:** Grants permission to create a UI configuration
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [CreateUserProfile](${APIReferenceDocPage}API_CreateUserProfile.html)  **
   - **Description:** Grants permission to create a user profile for an existing user in the customers IAM Identity Center
   - **Resource types (\*required):**
@@ -1655,6 +1661,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [DeleteUIConfiguration](${APIReferenceDocPage}API_DeleteUIConfiguration.html)  **
+  - **Description:** Grants permission to delete a UI configuration
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [DeregisterAgentArtifact](${APIReferenceDocPage}API_DeregisterAgentArtifact.html)  **
   - **Description:** Grants permission to deregister agent artifacts
   - **Resource types (\*required):**
@@ -1795,6 +1807,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetDomainUnit](${APIReferenceDocPage}API_GetDomainUnit.html)  **
   - **Description:** Grants permission to get an existing domain unit
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetEffectiveUICustomization](${APIReferenceDocPage}API_GetEffectiveUICustomization.html)  **
+  - **Description:** Grants permission to get the effective UI customization
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
@@ -1963,6 +1981,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [GetTimeSeriesDataPoint](${APIReferenceDocPage}API_GetTimeSeriesDataPoint.html)  **
   - **Description:** Grants permission to get an existing TimeSeriesDataPoints in Amazon DataZone using its identifier
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetUIConfiguration](${APIReferenceDocPage}API_GetUIConfiguration.html)  **
+  - **Description:** Grants permission to get a UI configuration
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
@@ -2245,6 +2269,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTimeSeriesDataPoints](${APIReferenceDocPage}API_ListTimeSeriesDataPoints.html)  **
   - **Description:** Grants permission to list existing TimeSeriesDataPoints
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListUIConfigurations](${APIReferenceDocPage}API_ListUIConfigurations.html)  **
+  - **Description:** Grants permission to list UI configurations
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** List
@@ -2605,6 +2635,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UpdateSubscriptionTarget](${APIReferenceDocPage}API_UpdateSubscriptionTarget.html)  **
   - **Description:** Grants permission to update a subscription target
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [UpdateUIConfiguration](${APIReferenceDocPage}API_UpdateUIConfiguration.html)  **
+  - **Description:** Grants permission to update a UI configuration
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Write

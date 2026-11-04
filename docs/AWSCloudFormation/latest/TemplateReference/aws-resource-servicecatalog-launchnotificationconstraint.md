@@ -9,6 +9,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 Specifies a notification constraint.
 
+**Important**
+If you declare this constraint and its product in the same AWS CloudFormation template, add a `DependsOn` attribute. The attribute must reference the `AWS::ServiceCatalog::PortfolioProductAssociation` resource. Otherwise, CloudFormation might create the constraint before it associates the product with the portfolio, causing the stack to fail with `Resource not found`.
+
 ## Syntax
 <a name="aws-resource-servicecatalog-launchnotificationconstraint-syntax"></a>
 

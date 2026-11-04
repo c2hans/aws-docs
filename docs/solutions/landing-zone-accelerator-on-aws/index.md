@@ -6,15 +6,15 @@ source_url: https://docs.aws.amazon.com//solutions/landing-zone-accelerator-on-a
 title: 'Landing Zone Accelerator on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/landing-zone-accelerator-on-aws/
 source: aws-documentation
-generated_on: 2026-11-02
+generated_on: 2026-11-03
 ---
 
 # Landing Zone Accelerator on AWS
 
 Deploy a cloud foundation to support highly-regulated workloads and complex compliance requirements
 
-- **Version**: 1.16.3
-- **Released**: 9/2026
+- **Version**: 1.17.0
+- **Released**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 50 mins
 - **Estimated cost**: [See details](/solutions/latest/landing-zone-accelerator-on-aws/cost.html)

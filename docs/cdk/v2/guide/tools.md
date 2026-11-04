@@ -2,9 +2,7 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/tools.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
-# Use other tools with the AWS CDK
+# Tools that work with the AWS CDK
 <a name="tools"></a>
 
 You can use other tools with the AWS CDK to improve your development workflows.

@@ -29,6 +29,12 @@ Length Constraints: Minimum length of 1. Maximum length of 2048.
 Pattern: `[^\s]+`
 Required: Yes
 
+ ** status **   <a name="lambdamicrovm-Type-ManagedMicrovmImageVersion-status"></a>
+The lifecycle status of the managed MicroVM image version. Valid values: AVAILABLE (the version is available for use) or DEPRECATED (the version is deprecated; do not use it for new MicroVM images).
+Type: String
+Valid Values: `AVAILABLE | DEPRECATED | RECALLED`
+Required: No
+
  ** updatedAt **   <a name="lambdamicrovm-Type-ManagedMicrovmImageVersion-updatedAt"></a>
 The timestamp when the version was last updated.
 Type: Timestamp

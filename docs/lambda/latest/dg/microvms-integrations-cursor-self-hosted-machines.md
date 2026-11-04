@@ -107,7 +107,7 @@ Keep the stack's `PoolNames` and the image's `POOL_NAME` aligned so the controll
 ## Networking
 <a name="microvms-integrations-cursor-self-hosted-machines-networking"></a>
 
-The reference `spawn.sh` attaches the managed `INTERNET_EGRESS` connector so the worker can reach Cursor's control plane, and `ALL_INGRESS` for the image hooks. Outbound-only workers never receive inbound HTTPS after boot.
+The reference `spawn.sh` attaches the managed `INTERNET_EGRESS` connector so the worker can reach Cursor's control plane, and `HTTP_INGRESS` for the image hooks. Outbound-only workers never receive inbound HTTPS after boot.
 
 To reach private resources (for example an Amazon Aurora database or Amazon ElastiCache cluster) or to apply your own restrictions, attach a VPC egress connector at launch time in place of `INTERNET_EGRESS`. See [Working with egress network connectors](microvms-networking.md#microvms-networking-connectors).
 

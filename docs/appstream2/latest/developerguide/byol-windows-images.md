@@ -165,6 +165,9 @@ Windows BYOL for Amazon WorkSpaces Applications is available in all regions wher
 + AWS GovCloud (US-West)
 + AWS GovCloud (US-East)
 
+**Important**
+Windows BYOL for Amazon WorkSpaces Applications is only available in a subset of the Availability Zones for each supported Region. For the list of AZ IDs that you can use in each Region, see [Availability Zones for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/azs-workspaces.html) in the *Amazon WorkSpaces Administration Guide*. To see the mapping of AZ IDs to Availability Zones in your account, see [AZ IDs for Your Resources](https://docs.aws.amazon.com/ram/latest/userguide/working-with-az-ids.html) in the *AWS RAM User Guide*.
+
 ## Important considerations
 <a name="byol-important-considerations"></a>
 + **Dedicated infrastructure** — BYOL images powered by Windows Desktop OS (Windows 11) run on dedicated infrastructure only. Windows Server OS images continue to run on shared infrastructure.

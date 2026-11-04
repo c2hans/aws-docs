@@ -7,6 +7,27 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/releas
 
 We recommend subscribing to the RSS feed so updates to these notes are delivered to your Inbox.
 
+## November 2026
+<a name="_november_2026"></a>
+
+### Runtime: Higher concurrent connection limit for V2 agents
+<a name="_runtime_higher_concurrent_connection_limit_for_v2_agents_2"></a>
+
+Amazon Bedrock AgentCore Runtime agents on platform version V2 can now hold up to 250 concurrent connections per session with the default 2-vCPU allocation. The previous limit was 8 connections per vCPU, or 16 connections for a 2-vCPU session. With the higher limit, connection-heavy agents, such as agents that use WebSocket streams, server-sent events (SSE), or parallel tool calls, can hold many more connections at the same time.
+
+The increase applies automatically to all platform version V2 agent runtimes. No action is required.
+
+For more information, see [Invocation limits](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/bedrock-agentcore-limits.html#invocation-limits) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+### Runtime: OverheadLatency metric for V2 agents
+<a name="_runtime_overheadlatency_metric_for_v2_agents_2"></a>
+
+Amazon Bedrock AgentCore Runtime now emits an `OverheadLatency` vended metric in the `AWS/Bedrock-AgentCore` CloudWatch namespace. The metric isolates the time attributable to the platform. It measures from when AgentCore Runtime receives a request to when your agent returns its first response byte, excluding your agent’s own processing. Use it to see how much of your cold-start and request latency comes from the platform and how much comes from your agent.
+
+AgentCore Runtime emits the metric for every request to the `InvokeAgentRuntime`, `InvokeAgentRuntimeWithWebSocketStream`, `InvokeAgentRuntimeCommand`, and `InvokeAgentRuntimeCommandShell` APIs. AgentCore Runtime enables this metric for all platform version V2 agent runtimes.
+
+For more information, see [Observability runtime metrics](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-runtime-metrics.html#observability-runtime-metrics-one) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ## October 2026
 <a name="_october_2026"></a>
 
@@ -39,6 +60,15 @@ For more information about mounting file systems with FUSE, see [Mount your own 
 <a name="shared_aws_agent_registry_now_available_in_us_east_ohio_europe_frankfurt_europe_london_and_canada_central"></a>
 
  AWS Agent Registry is now available in US East (Ohio), Europe (Frankfurt), Europe (London), and Canada (Central). As in the other AWS Regions that support Agent Registry, semantic search uses cross-region inference. For more information, see [Supported AWS Regions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html) and [Cross-region inference in AWS Agent Registry](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-cross-region-inference.html).
+
+### Evaluations: Custom multi-dimension evaluators
+<a name="_evaluations_custom_multi_dimension_evaluators_2"></a>
+
+Amazon Bedrock AgentCore Evaluations now supports custom multi-dimension evaluators. A multi-dimension evaluator is an LLM-as-a-judge evaluator that rates one target on several named dimensions in a single judge call. Each dimension has its own instruction and its own numerical or categorical rating scale, and returns its own result.
+
+For example, you can rate a support agent’s reply on issue resolution, policy compliance, and tone with one evaluator instead of three. The judge model reads the trace once and returns three results. You can use multi-dimension evaluators in on-demand, online, and batch evaluations. They aren’t supported in A/B tests or recommendations.
+
+For more information, see [Custom multi-dimension evaluators](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/multi-dimension-evaluators.html) in the *Amazon Bedrock AgentCore Developer Guide*.
 
 ### Gateway: Amazon Bedrock InvokeModel support on inference targets
 <a name="_gateway_amazon_bedrock_invokemodel_support_on_inference_targets_2"></a>

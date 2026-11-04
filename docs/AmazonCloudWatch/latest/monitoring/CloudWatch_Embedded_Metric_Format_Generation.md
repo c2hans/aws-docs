@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 
 **Topics**
 + [Creating logs in embedded metric format using the client libraries](CloudWatch_Embedded_Metric_Format_Libraries.md)
++ [Using the embedded metric format with Lambda](CloudWatch_Embedded_Metric_Format_Lambda.md)
 + [Specification: Embedded metric format](CloudWatch_Embedded_Metric_Format_Specification.md)
 + [Using the PutLogEvents API to send manually-created embedded metric format logs](CloudWatch_Embedded_Metric_Format_Generation_PutLogEvents.md)
 + [Using the CloudWatch agent to send embedded metric format logs](CloudWatch_Embedded_Metric_Format_Generation_CloudWatch_Agent.md)
-+ [Using the embedded metric format with AWS Distro for OpenTelemetry](CloudWatch_Embedded_Metric_Format_OpenTelemetry.md)

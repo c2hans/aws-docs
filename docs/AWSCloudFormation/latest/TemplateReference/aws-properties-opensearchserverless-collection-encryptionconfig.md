@@ -45,7 +45,7 @@ Indicates whether to use an AWS-owned key for encryption.
 The ARN of the AWS KMS key used to encrypt the collection.
 *Required*: No
 *Type*: String
-*Pattern*: `arn:(aws|aws-us-gov|aws-cn|aws-iso|aws-iso-b):kms:[a-z0-9-]+:[0-9]{12}:key/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`
+*Pattern*: `arn:(?:aws|aws-cn|aws-us-gov|aws-iso|aws-iso-b|aws-iso-c|aws-iso-d|aws-iso-e):(kms):[a-zA-Z-]+\d{1}:\d{12}:(key)\/.{1,2048}.*`
 *Minimum*: `10`
-*Maximum*: `100`
+*Maximum*: `2048`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

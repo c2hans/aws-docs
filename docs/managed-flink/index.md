@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/managed-flink/index.html
 title: 'Amazon Managed Service for Apache Flink Documentation'
 canonical_url: https://docs.aws.amazon.com/managed-flink/
 source: aws-documentation
-generated_on: 2026-11-02
+generated_on: 2026-11-03
 ---
 
 # Amazon Managed Service for Apache Flink Documentation

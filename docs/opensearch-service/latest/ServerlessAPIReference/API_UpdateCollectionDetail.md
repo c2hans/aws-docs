@@ -38,6 +38,11 @@ Length Constraints: Minimum length of 3. Maximum length of 40.
 Pattern: `[a-z0-9]{3,40}`
 Required: No
 
+ ** kmsKeyArn **   <a name="opensearchserverless-Type-UpdateCollectionDetail-kmsKeyArn"></a>
+The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) key used to encrypt the collection.
+Type: String
+Required: No
+
  ** lastModifiedDate **   <a name="opensearchserverless-Type-UpdateCollectionDetail-lastModifiedDate"></a>
 The date and time when the collection was last modified.
 Type: Long
@@ -47,7 +52,7 @@ Required: No
 The name of the collection.
 Type: String
 Length Constraints: Minimum length of 3. Maximum length of 64.
-Pattern: `[a-z][a-z0-9-]+`
+Pattern: `[a-z][a-z0-9_-]+`
 Required: No
 
  ** status **   <a name="opensearchserverless-Type-UpdateCollectionDetail-status"></a>

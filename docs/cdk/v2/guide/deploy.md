@@ -2,9 +2,7 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/deploy.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
-# Deploy AWS CDK applications
+# Deploying AWS CDK applications
 <a name="deploy"></a>
 
 An AWS Cloud Development Kit (AWS CDK) deployment is the process of provisioning your infrastructure on AWS.

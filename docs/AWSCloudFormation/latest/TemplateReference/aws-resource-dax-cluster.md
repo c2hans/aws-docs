@@ -83,25 +83,32 @@ The encryption type of the cluster's endpoint. Available values are:
 The default value is `NONE`.
 *Required*: No
 *Type*: String
-*Allowed values*: `NONE | TLS`
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ClusterName`  <a name="cfn-dax-cluster-clustername"></a>
 The name of the DAX cluster.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `20`
 *Update requires*: Updates are not supported.
 
 `Description`  <a name="cfn-dax-cluster-description"></a>
 The description of the cluster.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `IAMRoleARN`  <a name="cfn-dax-cluster-iamrolearn"></a>
 A valid Amazon Resource Name (ARN) that identifies an IAM role. At runtime, DAX will assume this role and use the role's permissions to access DynamoDB on your behalf.
 *Required*: Yes
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: Updates are not supported.
 
 `NetworkType`  <a name="cfn-dax-cluster-networktype"></a>
@@ -111,13 +118,16 @@ The IP address type of the cluster. Values are:
 + `dual_stack` - Both IPv4 and IPv6 addresses
 *Required*: No
 *Type*: String
-*Allowed values*: `ipv4 | ipv6 | dual_stack`
+*Minimum*: `4`
+*Maximum*: `10`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `NodeType`  <a name="cfn-dax-cluster-nodetype"></a>
 The node type for the nodes in the cluster. (All nodes in a DAX cluster are of the same type.)
 *Required*: Yes
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `50`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `NotificationTopicARN`  <a name="cfn-dax-cluster-notificationtopicarn"></a>
@@ -125,18 +135,24 @@ The Amazon Resource Name (ARN) of the Amazon SNS topic to which notifications wi
 The Amazon SNS topic owner must be same as the DAX cluster owner.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ParameterGroupName`  <a name="cfn-dax-cluster-parametergroupname"></a>
 The parameter group to be associated with the DAX cluster.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PreferredMaintenanceWindow`  <a name="cfn-dax-cluster-preferredmaintenancewindow"></a>
 A range of time when maintenance of DAX cluster software will be performed. For example: `sun:01:00-sun:09:00`. Cluster maintenance normally takes less than 30 minutes, and is performed automatically within the maintenance window.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReplicationFactor`  <a name="cfn-dax-cluster-replicationfactor"></a>
@@ -164,6 +180,8 @@ The name of the subnet group to be used for the replication group.
 DAX clusters can only run in an Amazon VPC environment. All of the subnets that you specify in a subnet group must exist in the same VPC.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
+*Maximum*: `255`
 *Update requires*: Updates are not supported.
 
 `Tags`  <a name="cfn-dax-cluster-tags"></a>

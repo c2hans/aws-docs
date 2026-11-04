@@ -76,7 +76,7 @@ The following data is returned in JSON format by the service.
  ** [architecture](#API_GetMicrovmImageBuild_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageBuild-response-architecture"></a>
 The target CPU architecture for the build. Supported value: ARM\_64.
 Type: String
-Valid Values: `ARM_64`
+Valid Values: `ARM_64 | X86_64`
 
  ** [buildId](#API_GetMicrovmImageBuild_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageBuild-response-buildId"></a>
 The build request ID.
@@ -92,7 +92,7 @@ Valid Values: `PENDING | IN_PROGRESS | SUCCESSFUL | FAILED`
  ** [chipset](#API_GetMicrovmImageBuild_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageBuild-response-chipset"></a>
 The target chipset for the build.
 Type: String
-Valid Values: `GRAVITON`
+Valid Values: `GRAVITON | INTEL`
 
  ** [chipsetGeneration](#API_GetMicrovmImageBuild_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovmImageBuild-response-chipsetGeneration"></a>
 The target chipset generation for the build.

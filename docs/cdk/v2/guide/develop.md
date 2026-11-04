@@ -2,9 +2,7 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/develop.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
-# Develop AWS CDK applications
+# Developing AWS CDK applications
 <a name="develop"></a>
 
 Manage your infrastructure on AWS by developing applications using the AWS Cloud Development Kit (AWS CDK).

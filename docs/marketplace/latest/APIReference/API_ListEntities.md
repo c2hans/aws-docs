@@ -53,7 +53,7 @@ Pattern: `^[a-zA-Z]+$`
 Required: Yes
 
  ** [EntityType](#API_ListEntities_RequestSyntax) **   <a name="AWSMarketplaceService-ListEntities-request-EntityType"></a>
-The type of entities to retrieve. Valid values are: `AmiProduct`, `ContainerProduct`, `DataProduct`, `SaaSProduct`, `ProcurementPolicy`, `Experience`, `Audience`, `BrandingSettings`, `Offer`, `OfferSet`, `Seller`, `ResaleAuthorization`, `Solution`.
+The type of entities to retrieve. Valid values are: `AmiProduct`, `ContainerProduct`, `DataProduct`, `SaaSProduct`, `ProcurementPolicy`, `Experience`, `Audience`, `BrandingSettings`, `Offer`, `OfferSet`, `Seller`, `ResaleAuthorization`, `Solution`, `SubsidiaryAuthorization`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[a-zA-Z]+$`
@@ -170,6 +170,14 @@ Content-type: application/json
          "SaaSProductSummary": {
             "ProductTitle": "string",
             "Visibility": "string"
+         },
+         "SubsidiaryAuthorizationSummary": {
+            "CreatedDate": "string",
+            "Name": "string",
+            "ResourceId": "string",
+            "ResourceName": "string",
+            "Status": "string",
+            "SubsidiaryAccountId": "string"
          },
          "Visibility": "string"
       }

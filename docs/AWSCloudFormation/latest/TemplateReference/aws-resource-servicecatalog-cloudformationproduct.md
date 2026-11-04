@@ -111,20 +111,25 @@ The type of product.
 
 `ProvisioningArtifactParameters`  <a name="cfn-servicecatalog-cloudformationproduct-provisioningartifactparameters"></a>
 The configuration of the provisioning artifact (also known as a version).
-*Required*: No
+Required if you don't specify `SourceConnection`. If you specify `SourceConnection` when you create the product, don't specify this property. The product's versions come from the connected repository, and the create fails if you specify both.
+If you add `SourceConnection` in an update, keep this property in that update, or the update fails. You can remove this property in a later update. Removing it doesn't delete the product's existing provisioning artifacts. Until you remove it, creating a product from that template fails.
+*Required*: Conditional
 *Type*: Array of [ProvisioningArtifactProperties](aws-properties-servicecatalog-cloudformationproduct-provisioningartifactproperties.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReplaceProvisioningArtifacts`  <a name="cfn-servicecatalog-cloudformationproduct-replaceprovisioningartifacts"></a>
-This property is turned off by default. If turned off, you can update provisioning artifacts or product attributes (such as description, distributor, name, owner, and more) and the associated provisioning artifacts will retain the same unique identifier. Provisioning artifacts are matched within the CloudFormationProduct resource, and only those that have been updated will be changed. Provisioning artifacts are matched by a combinaton of provisioning artifact template URL and name.
+This property is turned off by default. If turned off, you can update provisioning artifacts or product attributes (such as description, distributor, name, owner, and more) and the associated provisioning artifacts will retain the same unique identifier. Provisioning artifacts are matched within the CloudFormationProduct resource, and only those that have been updated will be changed. Provisioning artifacts are matched by a combination of provisioning artifact template URL and name.
 If turned on, provisioning artifacts will be given a new unique identifier when you update the product or provisioning artifacts.
+The following describes the product when an update fails, before any rollback of the stack. If an update fails partway, the product keeps the changes that the update already made to its provisioning artifacts, so it can contain a mix of old and new provisioning artifacts. An old provisioning artifact that the update couldn't delete can remain in the product. The exact state depends on where the update fails.
+The update also fails if a provisioning artifact in the product has the `FAILED` status afterward, such as one that already had that status before the update. If turned on, the update doesn't delete versions that are synced from a Git repository.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceConnection`  <a name="cfn-servicecatalog-cloudformationproduct-sourceconnection"></a>
 A top level `ProductViewDetail` response containing details about the product’s connection. AWS Service Catalog returns this field for the `CreateProduct`, `UpdateProduct`, `DescribeProductAsAdmin`, and `SearchProductAsAdmin` APIs. This response contains the same fields as the `ConnectionParameters` request, with the addition of the `LastSync` response.
-*Required*: No
+Required if you don't specify `ProvisioningArtifactParameters`.
+*Required*: Conditional
 *Type*: [SourceConnection](aws-properties-servicecatalog-cloudformationproduct-sourceconnection.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -185,6 +190,114 @@ The IDs of the provisioning artifacts.
 
 `ProvisioningArtifactNames`  <a name="ProvisioningArtifactNames-fn::getatt"></a>
 The names of the provisioning artifacts.
+
+## Examples
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples"></a>
+
+**Topics**
++ [Example - Create a product from a template in Amazon S3](#aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_from_a_template_in_Amazon_S3)
++ [Example - Create a product that syncs versions from a Git repository](#aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_that_syncs_versions_from_a_Git_repository)
+
+### Example - Create a product from a template in Amazon S3
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_from_a_template_in_Amazon_S3"></a>
+
+The following example creates a product with one version (provisioning artifact) whose CloudFormation template is stored in Amazon S3.
+
+#### JSON
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_from_a_template_in_Amazon_S3--json"></a>
+
+```
+{
+    "MyProduct": {
+        "Type": "AWS::ServiceCatalog::CloudFormationProduct",
+        "Properties": {
+            "Name": "Sample product",
+            "Owner": "Platform team",
+            "ProductType": "CLOUD_FORMATION_TEMPLATE",
+            "ProvisioningArtifactParameters": [
+                {
+                    "Name": "v1",
+                    "Description": "Initial version",
+                    "Type": "CLOUD_FORMATION_TEMPLATE",
+                    "Info": {
+                        "LoadTemplateFromURL": "https://s3.amazonaws.com/amzn-s3-demo-bucket/sample-template.json"
+                    }
+                }
+            ]
+        }
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_from_a_template_in_Amazon_S3--yaml"></a>
+
+```
+MyProduct:
+  Type: AWS::ServiceCatalog::CloudFormationProduct
+  Properties:
+    Name: Sample product
+    Owner: Platform team
+    ProductType: CLOUD_FORMATION_TEMPLATE
+    ProvisioningArtifactParameters:
+      - Name: v1
+        Description: Initial version
+        Type: CLOUD_FORMATION_TEMPLATE
+        Info:
+          LoadTemplateFromURL: https://s3.amazonaws.com/amzn-s3-demo-bucket/sample-template.json
+```
+
+### Example - Create a product that syncs versions from a Git repository
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_that_syncs_versions_from_a_Git_repository"></a>
+
+The following example creates a product that is synced with a template file in a Git repository through a connection. Because the example specifies `SourceConnection`, it omits `ProvisioningArtifactParameters`.
+
+#### JSON
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_that_syncs_versions_from_a_Git_repository--json"></a>
+
+```
+{
+    "MySyncedProduct": {
+        "Type": "AWS::ServiceCatalog::CloudFormationProduct",
+        "Properties": {
+            "Name": "Sample synced product",
+            "Owner": "Platform team",
+            "ProductType": "CLOUD_FORMATION_TEMPLATE",
+            "SourceConnection": {
+                "Type": "CODESTAR",
+                "ConnectionParameters": {
+                    "CodeStar": {
+                        "ConnectionArn": "arn:aws:codeconnections:us-east-1:111122223333:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111",
+                        "Repository": "my-org/my-templates",
+                        "Branch": "main",
+                        "ArtifactPath": "templates/sample-template.json"
+                    }
+                }
+            }
+        }
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-servicecatalog-cloudformationproduct--examples--Example_-_Create_a_product_that_syncs_versions_from_a_Git_repository--yaml"></a>
+
+```
+MySyncedProduct:
+  Type: AWS::ServiceCatalog::CloudFormationProduct
+  Properties:
+    Name: Sample synced product
+    Owner: Platform team
+    ProductType: CLOUD_FORMATION_TEMPLATE
+    SourceConnection:
+      Type: CODESTAR
+      ConnectionParameters:
+        CodeStar:
+          ConnectionArn: arn:aws:codeconnections:us-east-1:111122223333:connection/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
+          Repository: my-org/my-templates
+          Branch: main
+          ArtifactPath: templates/sample-template.json
+```
 
 ## See also
 <a name="aws-resource-servicecatalog-cloudformationproduct--seealso"></a>

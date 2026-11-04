@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::CloudWatch::DomainAccessGrantForOrganization
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization"></a>
 
-Resource Type definition for `AWS::CloudWatch::DomainAccessGrantForOrganization`. An organization access grant authorizes a principal to administer an organization-scoped CloudWatch Omni domain.
+Resource Type definition for `AWS::CloudWatch::DomainAccessGrantForOrganization`. An organization access grant authorizes a principal to administer an organization domain.
 
 ## Syntax
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-syntax"></a>
@@ -49,14 +49,14 @@ Properties:
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-properties"></a>
 
 `DomainId`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-domainid"></a>
-The unique identifier of the organization domain the grant applies to.
+The ID of the organization domain the grant belongs to.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^d-[0-9a-z]{1,25}$`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-name"></a>
-The name of the grant.
+A name that identifies the access grant.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[a-zA-Z0-9_-]+$`
@@ -65,14 +65,14 @@ The name of the grant.
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Permission`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-permission"></a>
-The permission level the grant confers. Organization grants are administrative only.
+The permission granted.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `ADMIN`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Principal`  <a name="cfn-cloudwatch-domainaccessgrantfororganization-principal"></a>
-The principal the grant is issued to.
+The principal receiving the grant.
 *Required*: Yes
 *Type*: [OrganizationAccessGrantPrincipal](aws-properties-cloudwatch-domainaccessgrantfororganization-organizationaccessgrantprincipal.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -105,19 +105,19 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 <a name="aws-resource-cloudwatch-domainaccessgrantfororganization-return-values-fn--getatt-fn--getatt"></a>
 
 `Arn`  <a name="Arn-fn::getatt"></a>
-The Amazon Resource Name (ARN) of the organization access grant.
+The Amazon Resource Name (ARN) of the access grant.
 
 `CreatedAt`  <a name="CreatedAt-fn::getatt"></a>
-The time the grant was created.
+The timestamp when the grant was created.
 
 `CreatedBy`  <a name="CreatedBy-fn::getatt"></a>
 The principal that created the grant.
 
 `GrantId`  <a name="GrantId-fn::getatt"></a>
-The unique identifier of the grant.
+The unique ID of the access grant.
 
 `GrantType`  <a name="GrantType-fn::getatt"></a>
-Whether the grant is managed by the service or by the customer.
+Who manages the grant.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
-The time the grant was last updated.
+The timestamp when the grant was last updated.

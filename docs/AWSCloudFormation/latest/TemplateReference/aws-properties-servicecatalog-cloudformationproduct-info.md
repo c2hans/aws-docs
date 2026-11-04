@@ -7,7 +7,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 # AWS::ServiceCatalog::CloudFormationProduct Info
 <a name="aws-properties-servicecatalog-cloudformationproduct-info"></a>
 
-<a name="aws-properties-servicecatalog-cloudformationproduct-info-description"></a>The `Info` property type specifies Property description not available. for an [AWS::ServiceCatalog::CloudFormationProduct](aws-resource-servicecatalog-cloudformationproduct.md).
+The template source of a provisioning artifact. Specify one of the following keys, but not both.
 
 ## Syntax
 <a name="aws-properties-servicecatalog-cloudformationproduct-info-syntax"></a>
@@ -36,13 +36,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-servicecatalog-cloudformationproduct-info-properties"></a>
 
 `ImportFromPhysicalId`  <a name="cfn-servicecatalog-cloudformationproduct-info-importfromphysicalid"></a>
-Property description not available.
+The Amazon Resource Name (ARN) of the CloudFormation stack that contains the template, for example `arn:aws:cloudformation:us-east-1:111122223333:stack/MyStack/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111`. AWS Service Catalog supports only CloudFormation stack ARNs.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `LoadTemplateFromURL`  <a name="cfn-servicecatalog-cloudformationproduct-info-loadtemplatefromurl"></a>
-Property description not available.
+The URL of the AWS CloudFormation template in Amazon S3, for example `https://s3.amazonaws.com/amzn-s3-demo-bucket/sample-template.json`.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

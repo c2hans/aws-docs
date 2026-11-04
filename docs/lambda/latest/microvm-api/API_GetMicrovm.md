@@ -65,7 +65,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [egressNetworkConnectors](#API_GetMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovm-response-egressNetworkConnectors"></a>
-The list of egress network connectors configured for the MicroVM.
+The list of egress network connectors available to the MicroVM at runtime.
 Type: Array of strings
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Length Constraints: Minimum length of 1. Maximum length of 2048.
@@ -89,6 +89,7 @@ Type: [IdlePolicy](API_IdlePolicy.md) object
 The ARN of the MicroVM image used to run this MicroVM.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:[a-z0-9-]+:lambda:[a-z0-9-]*:[a-z0-9]*:microvm-image:.+`
 
  ** [imageVersion](#API_GetMicrovm_ResponseSyntax) **   <a name="lambdamicrovm-GetMicrovm-response-imageVersion"></a>
 The version of the MicroVM image used to run this MicroVM.

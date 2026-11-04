@@ -113,6 +113,7 @@ Content-type: application/json
    },
    "SelfManagedKafkaEventSourceConfig": {
       "ConsumerGroupId": "{{string}}",
+      "ConsumptionMode": "{{string}}",
       "SchemaRegistryConfig": {
          "AccessConfigs": [
             {
@@ -247,6 +248,7 @@ Required: No
 The maximum amount of time, in seconds, that Lambda spends gathering records before invoking the function. You can configure `MaximumBatchingWindowInSeconds` to any value from 0 seconds to 300 seconds in increments of seconds.
 For Kinesis, DynamoDB, and Amazon SQS event sources, the default batching window is 0 seconds. For Amazon MSK, Self-managed Apache Kafka, Amazon MQ, and DocumentDB event sources, the default batching window is 500 ms. Note that because you can only change `MaximumBatchingWindowInSeconds` in increments of seconds, you cannot revert back to the 500 ms default batching window after you have changed it. To restore the default batching window, you must create a new event source mapping.
 Related setting: For Kinesis, DynamoDB, and Amazon SQS event sources, when you set `BatchSize` to a value greater than 10, you must set `MaximumBatchingWindowInSeconds` to at least 1.
+Not supported for Kafka event source mappings when `ConsumptionMode` is `Queue`.
 Type: Integer
 Valid Range: Minimum value of 0. Maximum value of 300.
 Required: No
@@ -259,6 +261,7 @@ Required: No
 
  ** [MaximumRetryAttempts](#API_CreateEventSourceMapping_RequestSyntax) **   <a name="lambda-CreateEventSourceMapping-request-MaximumRetryAttempts"></a>
 (Kinesis, DynamoDB Streams, Amazon MSK, and self-managed Apache Kafka) Discard records after the specified number of retries. The default value is infinite (-1). When set to infinite (-1), failed records are retried until the record expires.
+For Kafka event source mappings with `ConsumptionMode` set to `Queue`, the value -1 (infinite retries) is not supported and the default is 0 (no retries). Lambda releases failed records back to the broker, which redelivers them up to the share group's `group.share.delivery.count.limit`.
 Type: Integer
 Valid Range: Minimum value of -1. Maximum value of 10000.
 Required: No
@@ -310,12 +313,14 @@ Required: No
 
  ** [StartingPosition](#API_CreateEventSourceMapping_RequestSyntax) **   <a name="lambda-CreateEventSourceMapping-request-StartingPosition"></a>
 The position in a stream from which to start reading. Required for Amazon Kinesis and Amazon DynamoDB Stream event sources. `AT_TIMESTAMP` is supported only for Amazon Kinesis streams, Amazon DocumentDB, Amazon MSK, and self-managed Apache Kafka.
+Not supported for Kafka event source mappings when `ConsumptionMode` is `Queue`.
 Type: String
 Valid Values: `TRIM_HORIZON | LATEST | AT_TIMESTAMP`
 Required: No
 
  ** [StartingPositionTimestamp](#API_CreateEventSourceMapping_RequestSyntax) **   <a name="lambda-CreateEventSourceMapping-request-StartingPositionTimestamp"></a>
 With `StartingPosition` set to `AT_TIMESTAMP`, the time from which to start reading, in Unix time seconds. `StartingPositionTimestamp` cannot be in the future.
+Not supported for Kafka event source mappings when `ConsumptionMode` is `Queue`.
 Type: Timestamp
 Required: No
 
@@ -423,6 +428,7 @@ Content-type: application/json
    },
    "SelfManagedKafkaEventSourceConfig": {
       "ConsumerGroupId": "string",
+      "ConsumptionMode": "string",
       "SchemaRegistryConfig": {
          "AccessConfigs": [
             {

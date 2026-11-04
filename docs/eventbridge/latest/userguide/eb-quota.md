@@ -55,7 +55,7 @@ The following values are set by the API and cannot be raised. Where a setting ta
 | RetryPolicy.MaxEventAgeInSeconds | 60 to 86,400, default 300 | 86,400 seconds |
 | BatchConfiguration.MaxBatchSize | 1 to 500 | 500 |
 | BatchConfiguration.MaxBatchWindowInSeconds | 0 to 300, default 0 | 300 seconds |
-| InvocationTimeoutSeconds on Lambda, Step Functions, and HTTP targets | 1 to 30, default 30 | 30 seconds |
+| InvocationTimeoutSeconds on Lambda, Step Functions, and API Gateway targets | 1 to 30, default 30 | 30 seconds |
 | Entries per PutEvents or PutRawEvents request | 1 to 100 | 100 |
 | Deduplication window | Not configurable | 300 seconds |
 | JSONata expression in a Transformer or a target parameter | Not configurable | 8,192 characters |

@@ -43,6 +43,7 @@ Required: Yes
       "deliveryDestinationType": "string",
       "name": "string",
       "outputFormat": "string",
+      "roleArn": "string",
       "tags": {
          "string" : "string"
       }

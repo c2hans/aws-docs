@@ -52,6 +52,11 @@ The configuration setting for the log types to be enabled for export to Amazon C
 Type: [CloudwatchLogsExportConfiguration](API_CloudwatchLogsExportConfiguration.md) object
 Required: No
 
+ ** CopyTagsToSnapshot **
+Specifies whether to copy all tags from the DB cluster to snapshots of the DB cluster. The default is not to copy them.
+Type: Boolean
+Required: No
+
  ** DBClusterParameterGroupName **
 The name of the cluster parameter group to use for the cluster.
 Type: String

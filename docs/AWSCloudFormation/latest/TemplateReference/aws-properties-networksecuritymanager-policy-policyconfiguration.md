@@ -45,7 +45,7 @@ Specifies whether AWS Network Security Manager automatically remediates noncompl
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourcesCleanUp`  <a name="cfn-networksecuritymanager-policy-policyconfiguration-resourcescleanup"></a>
-Specifies whether AWS Network Security Manager automatically removes the resources it created when they are no longer needed. Default: `false`.
+Specifies whether AWS Network Security Manager automatically removes the resources it created when they are no longer needed. This member is required, and the only supported value is `true`.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -155,6 +155,7 @@ For event data stores, you can use only advanced event selectors to include data
 | Amazon Bedrock | Amazon Bedrock Runtime API activity. | Bedrock-AgentCore Runtime | `AWS::BedrockAgentCore::Runtime` |
 | Amazon Bedrock | Amazon Bedrock Runtime-Endpoint API activity. | Bedrock-AgentCore Runtime-Endpoint | `AWS::BedrockAgentCore::RuntimeEndpoint` |
 | Amazon Bedrock | Amazon Bedrock Token Vault API activity. | Bedrock-AgentCore Token Vault | `AWS::BedrockAgentCore::TokenVault` |
+| Amazon Bedrock AgentCore | Amazon Bedrock AgentCore web search invocation events (InvokeWebSearch) against the AWS-managed web search tool. | Bedrock-AgentCore Web-Search | `AWS::BedrockAgentCore::WebSearch` |
 | Amazon Bedrock | Amazon Bedrock Workload Identity API activity. | Bedrock-AgentCore Workload Identity | `AWS::BedrockAgentCore::WorkloadIdentity` |
 | Amazon Bedrock | Amazon Bedrock Workload Identity Directory API activity. | Bedrock-AgentCore Workload Identity Directory | `AWS::BedrockAgentCore::WorkloadIdentityDirectory` |
 | Bedrock Mantle Project | API activity on `AWS::BedrockMantle::Project` resources. | Bedrock Mantle Project | `AWS::BedrockMantle::Project` |

@@ -62,7 +62,7 @@ Required: No
  ** resourceType **   <a name="networksecuritymanager-Type-ResourceSynchronizationStatusSummary-resourceType"></a>
 The type of the resource, in AWS CloudFormation format.
 Type: String
-Valid Values: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer | AWS::WAFv2::WebACL | AWS::Shield::Protection | AWS::ShieldRegional::Protection`
+Valid Values: `AWS::ApiGateway::Stage | AWS::CloudFront::Distribution | AWS::EC2::EIP | AWS::ElasticLoadBalancingV2::LoadBalancer::application | AWS::ElasticLoadBalancing::LoadBalancer | AWS::WAFv2::WebACL | AWS::Shield::Protection | AWS::ShieldRegional::Protection | AWS::EC2::VPC | AWS::EC2::TransitGateway | AWS::EC2::Subnet | AWS::EC2::RouteTable | AWS::NetworkFirewall::Firewall | AWS::NetworkFirewall::FirewallPolicy | AWS::NetworkFirewall::FirewallPolicyV2 | AWS::RAM::ResourceShare`
 Required: No
 
 ## See Also

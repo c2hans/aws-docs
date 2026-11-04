@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/cdk/v2/guide/security.html
 ---
 
-This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
-
 # Security for the AWS Cloud Development Kit (AWS CDK)
 <a name="security"></a>
 
@@ -18,20 +16,17 @@ Cloud security at Amazon Web Services (AWS) is the highest priority. As an AWS c
 
 The AWS Cloud Development Kit (AWS CDK) follows the [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) through the specific Amazon Web Services (AWS) services it supports. For AWS service security information, see the [AWS service security documentation page](https://docs.aws.amazon.com/security/?id=docs_gateway#aws-security) and [AWS services that are in scope of AWS compliance efforts by compliance program](https://aws.amazon.com/compliance/services-in-scope/).
 
-## Security of the AWS CDK
-<a name="security_of_the_shared_aws_cdk"></a>
-
 Given a program written in a general purpose programming language that describes the shape of your desired infrastructure, the AWS CDK generates a set of deployable artifacts that will create that infrastructure.
 
-### Security of default generated infrastructure
-<a name="_security_of_default_generated_infrastructure"></a>
+## Security of default generated infrastructure
+<a name="security-generated-infra"></a>
 
  *(AWS' responsibility)* Constructs in the AWS Construct Library are designed to generate infrastructure that does not allow data disclosure, data manipulation, elevation of privilege or other tampering by external parties (meaning unauthenticated identities or identities from different AWS Accounts; unless explicitly configured otherwise, which is in line with the [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/)).
 
 Any violation of this expectation can be reported [through the company-wide vulnerability reporting mechanisms](https://aws.amazon.com/security/vulnerability-reporting/).
 
-### Run CDK code in a trusted execution environment
-<a name="_run_cdk_code_in_a_trusted_execution_environment"></a>
+## Run CDK code in a trusted execution environment
+<a name="security-execution-environment"></a>
 
  *(Your responsibility)* CDK is designed to run in a *trusted environment* with *trusted inputs*. It is your responsibility to ensure user code, any libraries loaded into memory (including those downloaded from the Internet via a package manager like NPM or pip), or inputs into the CDK construct libraries are trustworthy. The CDK cannot protect you from malicious intent.
 
@@ -39,8 +34,8 @@ You should not use CDK in an environment where untrusted authors write parts of 
 
 Similarly, you should not deploy cloud assemblies from sources that you do not trust. Synthesizing a CDK app produces a cloud assembly (the `cdk.out` directory by default). It’s possible to deploy a previously synthesized cloud assembly from a different source; for example, `cdk deploy --app /downloaded/file/path/cdk.out`. Only deploy a cloud assembly that you produced yourself or that comes from a trusted source.
 
-### Deploy to a trusted environment
-<a name="_deploy_to_a_trusted_environment"></a>
+## Deploy to a trusted environment
+<a name="security-deployment-environment"></a>
 
  *(Your responsibility)* CDK treats the AWS [Account as the security boundary](https://docs.aws.amazon.com/accounts/latest/reference/accounts-welcome.html). This is consistent with the AWS [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/aws-account-management-and-separation.html). CDK cannot guarantee that all synthesized infrastructure is secure against actors with permissions in the same Account. Some examples of scenarios that CDK cannot guard against include, but are not limited to, the following:
 + CDK may create AWS [Lambda-based CloudFormation Custom Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html) to perform actions at deployment time. Any identity with `lambda:InvokeFunction` permissions can trigger such a function and effectively assume the function’s execution role permissions;
@@ -49,8 +44,8 @@ Similarly, you should not deploy cloud assemblies from sources that you do not t
 
 You should not use CDK in an environment where untrusted identities might perform AWS CloudFormation deployments, or where untrusted identities have AWS Identity and Access Management (IAM) permissions that might interact with resources created by CDK.
 
-### Compliance verification is an external process
-<a name="_compliance_verification_is_an_external_process"></a>
+## Compliance verification is an external process
+<a name="security-compliance-verification"></a>
 
  *(Your responsibility)* Because of the unlimited expressivity afforded by a general purpose programming language, custom CDK constructs cannot *guarantee* an unbypassable compliance with security policies. CDK has mechanisms to [shift left compliance checks](compliance-validation.md), and mechanisms that can [help developers meet compliance requirements with minimal effort](blueprints.md); but a determined enough developer will always be able to bypass the output of the specially designed constructs.
 

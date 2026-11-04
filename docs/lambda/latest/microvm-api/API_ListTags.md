@@ -64,6 +64,16 @@ Value Pattern: `([\p{L}\p{Z}\p{N}_.:/=+\-@]*)`
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+An internal server error occurred. Retry the request later.
+ ** retryAfterSeconds **
+The number of seconds to wait before retrying the request.
+HTTP Status Code: 500
+
  ** InvalidParameterValueException **
 One of the parameters in the request is not valid.
  ** Type **
@@ -79,16 +89,30 @@ The type of the resource that was not found.
 HTTP Status Code: 404
 
  ** ServiceException **
-The AWS Lambda MicroVMs service encountered an internal error.
+The AWS Lambda MicroVMs service encountered an internal error. Retry your request.
  ** Type **
 The exception type.
 HTTP Status Code: 500
+
+ ** ThrottlingException **
+The request was denied due to request throttling. Retry the request later.
+ ** quotaCode **
+The quota code of the throttled service quota.
+ ** retryAfterSeconds **
+The number of seconds to wait before retrying the request.
+ ** serviceCode **
+The service code of the throttled service quota.
+HTTP Status Code: 429
 
  ** TooManyRequestsException **
 The request throughput limit was exceeded. Retry the request later.
  ** Type **
 The exception type.
 HTTP Status Code: 429
+
+ ** ValidationException **
+The input does not satisfy the constraints specified by the service.
+HTTP Status Code: 400
 
 ## See Also
 <a name="API_ListTags_SeeAlso"></a>

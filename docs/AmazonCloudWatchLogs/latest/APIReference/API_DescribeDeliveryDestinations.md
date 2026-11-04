@@ -13,6 +13,7 @@ Retrieves a list of the delivery destinations that have been created in the acco
 ```
 {
    "limit": {{number}},
+   "names": [ "{{string}}" ],
    "nextToken": "{{string}}"
 }
 ```
@@ -28,6 +29,14 @@ The request accepts the following data in JSON format.
 Optionally specify the maximum number of delivery destinations to return in the response.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 50.
+Required: No
+
+ ** [names](#API_DescribeDeliveryDestinations_RequestSyntax) **   <a name="CWL-DescribeDeliveryDestinations-request-names"></a>
+An array of delivery destination names that filters the results to delivery destinations with any specified name.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 20 items.
+Length Constraints: Minimum length of 1. Maximum length of 60.
+Pattern: `[\w-]*`
 Required: No
 
  ** [nextToken](#API_DescribeDeliveryDestinations_RequestSyntax) **   <a name="CWL-DescribeDeliveryDestinations-request-nextToken"></a>
@@ -50,6 +59,7 @@ Required: No
          "deliveryDestinationType": "string",
          "name": "string",
          "outputFormat": "string",
+         "roleArn": "string",
          "tags": {
             "string" : "string"
          }

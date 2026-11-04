@@ -14,6 +14,7 @@ Contains summary information about a MicroVM instance.
 The ARN of the MicroVM image used to run this MicroVM.
 Type: String
 Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:[a-z0-9-]+:lambda:[a-z0-9-]*:[a-z0-9]*:microvm-image:.+`
 Required: Yes
 
  ** imageVersion **   <a name="lambdamicrovm-Type-MicrovmItem-imageVersion"></a>

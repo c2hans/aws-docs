@@ -38,6 +38,7 @@ The following data types are supported by Amazon DocumentDB (with MongoDB compat
 +  [PendingModifiedValues](API_PendingModifiedValues.md)
 +  [ResourcePendingMaintenanceActions](API_ResourcePendingMaintenanceActions.md)
 +  [ServerlessV2FeaturesSupport](API_ServerlessV2FeaturesSupport.md)
++  [ServerlessV2PlatformVersionInfo](API_ServerlessV2PlatformVersionInfo.md)
 +  [ServerlessV2ScalingConfiguration](API_ServerlessV2ScalingConfiguration.md)
 +  [ServerlessV2ScalingConfigurationInfo](API_ServerlessV2ScalingConfigurationInfo.md)
 +  [Subnet](API_Subnet.md)

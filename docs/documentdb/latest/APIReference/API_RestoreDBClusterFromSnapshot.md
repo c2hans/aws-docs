@@ -46,6 +46,11 @@ Provides the list of Amazon EC2 Availability Zones that instances in the restore
 Type: Array of strings
 Required: No
 
+ ** CopyTagsToSnapshot **
+Specifies whether to copy all tags from the restored DB cluster to snapshots of the restored DB cluster. The default is not to copy them.
+Type: Boolean
+Required: No
+
  ** DBClusterParameterGroupName **
 The name of the DB cluster parameter group to associate with this DB cluster.
  *Type:* String.       *Required:* No.

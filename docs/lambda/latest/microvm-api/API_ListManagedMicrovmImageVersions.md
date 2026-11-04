@@ -49,6 +49,7 @@ Content-type: application/json
          "createdAt": number,
          "imageArn": "string",
          "imageVersion": "string",
+         "status": "string",
          "updatedAt": number
       }
    ],

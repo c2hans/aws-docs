@@ -140,6 +140,7 @@ Content-type: application/json
          },
          "SelfManagedKafkaEventSourceConfig": {
             "ConsumerGroupId": "string",
+            "ConsumptionMode": "string",
             "SchemaRegistryConfig": {
                "AccessConfigs": [
                   {

@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 
 The policy-level configuration for resolved IP validation. When you set this on a firewall policy, you require that the destination IP address of a connection is one that the Amazon Route 53 Resolver returned in a DNS response for a domain. The Route 53 Resolver must have returned the response in a VPC that's associated with the Route 53 Resolver DNS Firewall rule group identified by `DNSFirewallRuleGroupId`. At the policy level, this verifies that the destination IP address was resolved for some domain. To match specific domains, also configure stateful rule groups that use the `AWS_ROUTE_53_RESOLVED_DOMAIN` target type or the `aws_route_53_resolved_domain` rule keyword.
 
+**Important**
+Enabling or disabling resolved IP validation, or changing `DNSFirewallRuleGroupId`, may require a restart of the stateful engine in order to apply the change. When this occurs, existing connections will be treated according to your stream exception policy configuration. Changes to `Action`, `DNSExpiryExceptionPolicy`, `SourceIPRanges`, and `BypassDestinationValidationIPRanges` don't require a restart.
+
 ## Contents
 <a name="API_Route53ResolvedIPValidation_Contents"></a>
 
@@ -30,7 +33,7 @@ Required: Yes
 
  ** DNSFirewallRuleGroupId **   <a name="networkfirewall-Type-Route53ResolvedIPValidation-DNSFirewallRuleGroupId"></a>
 The ID of the Route 53 Resolver DNS Firewall rule group that determines which VPCs' DNS resolutions count for resolved IP validation. A destination IP address counts as resolved for a domain only when the Route 53 Resolver returned it in a DNS response within a VPC that's associated with this rule group. Associate the rule group with the VPCs that send traffic to the firewall. The ID must match the pattern `^rslvr-frg-[0-9a-f]+$`. It must also exist and be accessible from your account. Network Firewall validates this when you create or update the policy.
-Changing this value swaps the managed rule group association. Network Firewall processes the swap asynchronously. Each policy can have only one managed Route 53 Resolver DNS Firewall association. While a swap is in progress, Network Firewall rejects further changes to this setting. Wait until the swap completes, then retry.
+Changing this value swaps the managed rule group association. Network Firewall processes the swap asynchronously. Each policy can have only one managed Route 53 Resolver DNS Firewall association. While a swap is in progress, Network Firewall rejects further changes to this setting. Wait until the swap completes, then retry. The change may also require a restart of the stateful engine. When this occurs, existing connections will be treated according to your stream exception policy configuration.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `^rslvr-frg-[0-9a-f]+$`
