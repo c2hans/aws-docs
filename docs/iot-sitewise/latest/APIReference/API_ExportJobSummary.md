@@ -40,6 +40,13 @@ The timestamp when the job completed, or null if the job is still running.
 Type: Timestamp
 Required: No
 
+ ** jobName **   <a name="iotsitewise-Type-ExportJobSummary-jobName"></a>
+The name of the dataset export job.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 350.
+Pattern: `[^\x00-\x1f\x7f]+`
+Required: No
+
 ## See Also
 <a name="API_ExportJobSummary_SeeAlso"></a>
 

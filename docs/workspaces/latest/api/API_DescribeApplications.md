@@ -61,7 +61,7 @@ Required: No
  ** [OperatingSystemNames](#API_DescribeApplications_RequestSyntax) **   <a name="WorkSpaces-DescribeApplications-request-OperatingSystemNames"></a>
 The operating systems supported by the applications.
 Type: Array of strings
-Valid Values: `AMAZON_LINUX_2 | UBUNTU_18_04 | UBUNTU_20_04 | UBUNTU_22_04 | UNKNOWN | WINDOWS_10 | WINDOWS_11 | WINDOWS_7 | WINDOWS_SERVER_2016 | WINDOWS_SERVER_2019 | WINDOWS_SERVER_2022 | WINDOWS_SERVER_2025 | RHEL_8 | ROCKY_8`
+Valid Values: `AMAZON_LINUX_2 | UBUNTU_18_04 | UBUNTU_20_04 | UBUNTU_22_04 | UNKNOWN | WINDOWS_10 | WINDOWS_11 | WINDOWS_7 | WINDOWS_SERVER_2016 | WINDOWS_SERVER_2019 | WINDOWS_SERVER_2022 | WINDOWS_SERVER_2025 | RHEL_8 | ROCKY_8 | UBUNTU_24_04 | RHEL_9 | ROCKY_9 | UBUNTU_26_04 | RHEL_10 | ROCKY_10`
 Required: No
 
  ** [Owner](#API_DescribeApplications_RequestSyntax) **   <a name="WorkSpaces-DescribeApplications-request-Owner"></a>

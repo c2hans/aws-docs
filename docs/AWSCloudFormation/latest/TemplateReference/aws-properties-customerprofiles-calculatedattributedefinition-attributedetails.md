@@ -42,7 +42,7 @@ Mathematical expression and a list of attribute items specified in that expressi
 *Type*: Array of [AttributeItem](aws-properties-customerprofiles-calculatedattributedefinition-attributeitem.md)
 *Minimum*: `1`
 *Maximum*: `2`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Expression`  <a name="cfn-customerprofiles-calculatedattributedefinition-attributedetails-expression"></a>
 Mathematical expression that is performed on attribute items provided in the attribute list. Each element in the expression should follow the structure of \\"{ObjectTypeName.AttributeName}\\".
@@ -50,4 +50,4 @@ Mathematical expression that is performed on attribute items provided in the att
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

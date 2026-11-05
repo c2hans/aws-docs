@@ -37,3 +37,9 @@ The following table describes the input parameters.
 **Output**
 
 `Promise<void>`
+
+**Permissions required:**
+
+```
+*
+```

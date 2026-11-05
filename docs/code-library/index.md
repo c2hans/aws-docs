@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/code-library/index.html
 title: 'AWS SDK Code Examples'
 canonical_url: https://docs.aws.amazon.com/code-library/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # AWS SDK Code Examples

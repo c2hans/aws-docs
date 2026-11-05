@@ -44,7 +44,7 @@ const inboundEmailData = await emailClient.getEmailData({
    activeContactId: sampleContactId, // The email contact you're actively working; in this example, its the same as the accepted inbound email
 });
 
-const emailThreadContacts = await emailClient.getEmailThread({
+const { contacts: emailThreadContacts } = await emailClient.getEmailThread({
   contactAssociationId: inboundEmailData.contactAssociationId,
 });
 
@@ -57,7 +57,7 @@ const previousContactIdsSet = new Set(
 
 const filteredEmailContactsInEmailThread = emailThreadContacts.filter(emailContact =>
     emailContact.contactId === sampleContactId ||
-    !previousContactIdsSet.includes(emailContact.contactId)
+    !previousContactIdsSet.has(emailContact.contactId)
 );
 ```
 

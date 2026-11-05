@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/building-an-agentic-ai-factory
 title: 'Guidance for Building an Agentic AI Factory on Amazon Bedrock AgentCore'
 canonical_url: https://docs.aws.amazon.com/solutions/building-an-agentic-ai-factory-on-amazon-bedrock-agentcore/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Guidance for Building an Agentic AI Factory on Amazon Bedrock AgentCore

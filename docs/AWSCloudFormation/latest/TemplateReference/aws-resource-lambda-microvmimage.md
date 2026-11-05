@@ -31,6 +31,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[EgressNetworkConnectors](#cfn-lambda-microvmimage-egressnetworkconnectors)" : {{[ String, ... ]}},
       "[EnvironmentVariables](#cfn-lambda-microvmimage-environmentvariables)" : {{[ EnvironmentVariable, ... ]}},
       "[Hooks](#cfn-lambda-microvmimage-hooks)" : {{Hooks}},
+      "[KmsKeyIdentifier](#cfn-lambda-microvmimage-kmskeyidentifier)" : {{String}},
       "[Logging](#cfn-lambda-microvmimage-logging)" : {{Logging}},
       "[Name](#cfn-lambda-microvmimage-name)" : {{String}},
       "[Resources](#cfn-lambda-microvmimage-resources)" : {{[ Resources, ... ]}},
@@ -61,6 +62,7 @@ Properties:
     - EnvironmentVariable}}
   [Hooks](#cfn-lambda-microvmimage-hooks): {{
     Hooks}}
+  [KmsKeyIdentifier](#cfn-lambda-microvmimage-kmskeyidentifier): {{String}}
   [Logging](#cfn-lambda-microvmimage-logging): {{
     Logging}}
   [Name](#cfn-lambda-microvmimage-name): {{String}}
@@ -141,6 +143,15 @@ Environment variables set in the MicroVM runtime environment.
 Lifecycle hook configuration for MicroVMs and MicroVM images.
 *Required*: Yes
 *Type*: [Hooks](aws-properties-lambda-microvmimage-hooks.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KmsKeyIdentifier`  <a name="cfn-lambda-microvmimage-kmskeyidentifier"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^(arn:aws[a-z-]*:kms:[a-z0-9-]+:[0-9]{12}:(key|alias)/[a-zA-Z0-9:/_-]+|alias/[a-zA-Z0-9:/_-]+|[a-zA-Z0-9-]+)$`
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Logging`  <a name="cfn-lambda-microvmimage-logging"></a>

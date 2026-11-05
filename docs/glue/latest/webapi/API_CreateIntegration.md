@@ -22,7 +22,8 @@ Creates a Zero-ETL integration in the caller's account between two resources wit
       "RefreshInterval": "{{string}}",
       "SourceProperties": {
          "{{string}}" : "{{string}}"
-      }
+      },
+      "TargetNamespace": "{{string}}"
    },
    "IntegrationName": "{{string}}",
    "KmsKeyId": "{{string}}",
@@ -119,7 +120,8 @@ Required: Yes
       "RefreshInterval": "string",
       "SourceProperties": {
          "string" : "string"
-      }
+      },
+      "TargetNamespace": "string"
    },
    "IntegrationName": "string",
    "KmsKeyId": "string",

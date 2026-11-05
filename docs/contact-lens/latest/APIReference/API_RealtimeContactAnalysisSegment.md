@@ -15,6 +15,11 @@ The matched category rules.
 Type: [Categories](API_connect-contact-lens_Categories.md) object
 Required: No
 
+ ** ExtractedInformation **   <a name="connect-Type-connect-contact-lens_RealtimeContactAnalysisSegment-ExtractedInformation"></a>
+The extracted information from the conversation.
+Type: [ExtractedInformation](API_connect-contact-lens_ExtractedInformation.md) object
+Required: No
+
  ** PostContactSummary **   <a name="connect-Type-connect-contact-lens_RealtimeContactAnalysisSegment-PostContactSummary"></a>
 Information about the post-contact summary.
 Type: [PostContactSummary](API_connect-contact-lens_PostContactSummary.md) object

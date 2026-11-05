@@ -20,7 +20,8 @@ Content-type: application/json
    "errorReportLocation": {
       "s3Uri": "{{string}}"
    },
-   "input": { ... }
+   "input": { ... },
+   "jobName": "{{string}}"
 }
 ```
 
@@ -64,6 +65,13 @@ The processing input source.
 Type: [ProcessingInput](API_ProcessingInput.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: Yes
+
+ ** [jobName](#API_CreateDatasetExportJob_RequestSyntax) **   <a name="iotsitewise-CreateDatasetExportJob-request-jobName"></a>
+An optional name for the export job. When omitted, one will be created based on type of job and start time.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^\x00-\x1f\x7f]+`
+Required: No
 
 ## Response Syntax
 <a name="API_CreateDatasetExportJob_ResponseSyntax"></a>

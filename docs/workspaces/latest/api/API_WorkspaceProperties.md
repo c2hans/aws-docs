@@ -30,13 +30,13 @@ Required: No
  ** OperatingSystemName **   <a name="WorkSpaces-Type-WorkspaceProperties-OperatingSystemName"></a>
 The name of the operating system.
 Type: String
-Valid Values: `AMAZON_LINUX_2 | UBUNTU_18_04 | UBUNTU_20_04 | UBUNTU_22_04 | UNKNOWN | WINDOWS_10 | WINDOWS_11 | WINDOWS_7 | WINDOWS_SERVER_2016 | WINDOWS_SERVER_2019 | WINDOWS_SERVER_2022 | WINDOWS_SERVER_2025 | RHEL_8 | ROCKY_8`
+Valid Values: `AMAZON_LINUX_2 | UBUNTU_18_04 | UBUNTU_20_04 | UBUNTU_22_04 | UNKNOWN | WINDOWS_10 | WINDOWS_11 | WINDOWS_7 | WINDOWS_SERVER_2016 | WINDOWS_SERVER_2019 | WINDOWS_SERVER_2022 | WINDOWS_SERVER_2025 | RHEL_8 | ROCKY_8 | UBUNTU_24_04 | RHEL_9 | ROCKY_9 | UBUNTU_26_04 | RHEL_10 | ROCKY_10`
 Required: No
 
  ** Protocols **   <a name="WorkSpaces-Type-WorkspaceProperties-Protocols"></a>
 The protocol. For more information, see [ Protocols for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-protocols.html).
 + Only available for WorkSpaces created with PCoIP bundles.
-+ The `Protocols` property is case sensitive. Ensure you use `PCOIP` or `DCV` (formerly WSP).
++ The `Protocols` property is case sensitive. Make sure you specify `PCOIP` or `WSP`. To use DCV, specify `WSP`.
 + Unavailable for Windows 7 WorkSpaces and WorkSpaces using GPU-based bundles (Graphics, GraphicsPro, Graphics.g4dn, GraphicsPro.g4dn, Graphics.g6, and Graphics.g7).
 Type: Array of strings
 Valid Values: `PCOIP | WSP`

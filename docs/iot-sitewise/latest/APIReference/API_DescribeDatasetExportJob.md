@@ -51,6 +51,7 @@ Content-type: application/json
    },
    "input": { ... },
    "jobId": "string",
+   "jobName": "string",
    "startedAt": number,
    "status": "string",
    "workspaceName": "string"
@@ -88,6 +89,12 @@ The unique identifier for the dataset export job.
 Type: String
 Length Constraints: Fixed length of 36.
 Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+
+ ** [jobName](#API_DescribeDatasetExportJob_ResponseSyntax) **   <a name="iotsitewise-DescribeDatasetExportJob-response-jobName"></a>
+The name of the dataset export job.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 350.
+Pattern: `[^\x00-\x1f\x7f]+`
 
  ** [startedAt](#API_DescribeDatasetExportJob_ResponseSyntax) **   <a name="iotsitewise-DescribeDatasetExportJob-response-startedAt"></a>
 The timestamp when the job started processing.

@@ -459,6 +459,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 The following actions are defined by AWS Shield but are not directly invocable through any API operation. They can only be used in IAM policy statements to grant or deny permissions.
 
+- **   [AllowVendedLogDeliveryForResource](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-flow-logs.html)  **
+  - **Description:** Grants permission to allow vended log delivery for a protection
+  - **Resource types (\*required):** [protection\*](#list_shield-resource-protection)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_shield-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DescribeAttackContributors](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsshield.html)  **
   - **Description:** Grants permission to get detailed information about the contributors to a specific DDoS attack
   - **Resource types (\*required):** [attack\*](#list_shield-resource-attack) / **Condition keys:**

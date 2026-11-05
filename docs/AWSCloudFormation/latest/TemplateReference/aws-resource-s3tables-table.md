@@ -104,7 +104,7 @@ Contains details about the Iceberg snapshot management settings for the table.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `StorageClassConfiguration`  <a name="cfn-s3tables-table-storageclassconfiguration"></a>
-The configuration details for the storage class of tables or table buckets. This allows you to optimize storage costs by selecting the appropriate storage class based on your access patterns and performance requirements.
+The storage class configuration for the table. If you don't specify one, the table inherits the storage class configuration of its table bucket. If you specify a storage class configuration, the migration role must have the `s3tables:PutTableStorageClass` permission.
 *Required*: No
 *Type*: [StorageClassConfiguration](aws-properties-s3tables-table-storageclassconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
@@ -126,7 +126,7 @@ The name for the table.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Tags`  <a name="cfn-s3tables-table-tags"></a>
-Property description not available.
+The tags to add to the table. A tag is a key-value pair that you apply to your resources. For more information, see [Tagging for cost allocation or attribute-based access control (ABAC)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/tagging.html). If you specify tags, the migration role must have the `s3tables:TagResource` permission.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-s3tables-table-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -60,6 +60,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** List
 
+- **   ListTagsForResource  **
+  - **IAM action:**  [polly:ListTagsForResource](#list_polly-action-ListTagsForResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   PutLexicon  **
   - **IAM action:**  [polly:PutLexicon](#list_polly-action-PutLexicon)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [polly:TagResource](#list_polly-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -81,6 +87,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   TagResource  **
+  - **IAM action:**  [polly:TagResource](#list_polly-action-TagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
+
+- **   UntagResource  **
+  - **IAM action:**  [polly:UntagResource](#list_polly-action-UntagResource)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Tagging, Write
 
 ## Actions defined by Amazon Polly
 <a name="list_polly-actions-as-permissions"></a>

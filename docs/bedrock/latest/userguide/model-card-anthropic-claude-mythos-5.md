@@ -24,7 +24,7 @@ This model is a Preview and is made available to you as a "Beta Service" as defi
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
 + **Sampling parameters:** temperature must be 1.0 or unset; top\_p must be ≥ 0.99 and < 1.0, or unset; top\_k is not supported
-+ **Reasoning:** Supported (adaptive thinking is always on and cannot be disabled; effort level is configurable)
++ **Reasoning:** Supported (adaptive thinking is always on and cannot be disabled; effort level is configurable) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** January 2026
 + **Marketplace product ID:** prod-kyryzgfmbtwtc
 

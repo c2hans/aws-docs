@@ -21,7 +21,7 @@ Claude Opus 4.6 is Anthropic's flagship model that plans more carefully, sustain
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **Reasoning:** Supported
++ **Reasoning:** Supported (off by default; adaptive thinking with `thinking.type: "adaptive"` is recommended; manual extended thinking with `budget_tokens` is deprecated) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** May 2025
 + **Marketplace product ID:** `prod-5ukwuglpt66kg`
 

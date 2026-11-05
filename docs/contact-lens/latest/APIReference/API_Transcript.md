@@ -50,16 +50,16 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `.*\S.*`
 Required: Yes
 
- ** Sentiment **   <a name="connect-Type-connect-contact-lens_Transcript-Sentiment"></a>
-The sentiment detected for this piece of transcript.
-Type: String
-Valid Values: `POSITIVE | NEUTRAL | NEGATIVE`
-Required: Yes
-
  ** IssuesDetected **   <a name="connect-Type-connect-contact-lens_Transcript-IssuesDetected"></a>
 List of positions where issues were detected on the transcript.
 Type: Array of [IssueDetected](API_connect-contact-lens_IssueDetected.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
+Required: No
+
+ ** Sentiment **   <a name="connect-Type-connect-contact-lens_Transcript-Sentiment"></a>
+The sentiment detected for this piece of transcript.
+Type: String
+Valid Values: `POSITIVE | NEUTRAL | NEGATIVE`
 Required: No
 
 ## See Also

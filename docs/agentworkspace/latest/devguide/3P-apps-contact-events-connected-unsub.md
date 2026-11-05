@@ -10,7 +10,7 @@ Unsubscribes the callback function from Connected event in the Connect Customer 
  **Signature**
 
 ```
-offConnected(handler: ContactConnectedHandler)
+offConnected(handler: ContactConnectedHandler, contactId?: string)
 ```
 
  **Usage**

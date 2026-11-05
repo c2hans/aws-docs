@@ -21,7 +21,8 @@ Claude Sonnet 5.5 is a smarter, more efficient Sonnet. It's a clear leap forward
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **Reasoning:** Supported (adaptive thinking is on by default; effort level configurable — low, medium, high, xhigh, max; default: high)
++ **Reasoning:** Supported (adaptive thinking is on by default; `thinking.type: "disabled"` is not supported, so use `"between_tools"` to turn off up-front thinking at `high` effort or below; effort level configurable — low, medium, high, xhigh, max; default: high) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
++ **Preserved thinking:** Thinking blocks are bound to the model and the conversation prefix that produced them. Replay earlier turns unchanged, or a request returns a 400 error. On Claude Sonnet 5.5, thinking blocks are also bound to the AWS account that produced them. For more information, see [Preserved thinking](claude-messages-thinking-block-binding.html).
 + **Knowledge cutoff:** June 2026
 + **Marketplace product ID:** `prod-pjfguoisodbd6`
 
@@ -112,6 +113,14 @@ For more information, see [Compaction](claude-messages-compaction.html).
 | **Compaction supported** | **Beta value** |
 | --- | --- |
 | Yes | compact-2026-09-04 |
+
+**Fallback credit for refused requests (beta)**
+
+When Claude Sonnet 5.5 refuses a request, the response can include a fallback credit token. Redeem the token when you retry the same request on a fallback model, and the retry is billed for the cached conversation prefix at cache-read rates instead of cache-write rates. For more information, see [Fallback credit for refused requests (beta)](claude-messages-fallback-credit.html).
+
+| **Supported endpoints** | **Beta value** | **Valid fallback models** |
+| --- | --- | --- |
+| bedrock-runtime, bedrock-mantle | fallback-credit-2026-07-01 | Claude Sonnet 5 (anthropic.claude-sonnet-5) |
 
 ## Pricing
 <a name="model-card-anthropic-claude-sonnet-5-5-pricing"></a>

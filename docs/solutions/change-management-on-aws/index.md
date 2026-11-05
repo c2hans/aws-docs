@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/change-management-on-aws/index
 title: 'Guidance for Change Management on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/change-management-on-aws/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Guidance for Change Management on AWS

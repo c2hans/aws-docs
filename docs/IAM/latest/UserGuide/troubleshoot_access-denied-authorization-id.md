@@ -93,8 +93,10 @@ or call the GetRequestAuthorizationDetails API with the following authorization 
 ## Supported services
 <a name="access-troubleshooter-supported-services"></a>
 
- Support for Access Troubleshooter is rolling out gradually across AWS services and AWS Region. The following services support Access Troubleshooter:
-+ Most APIs in AWS Identity and Access Management
-+ Most APIs in Amazon Kinesis Data Streams
-+ Most APIs in AWS Security Token Service
-+ Most APIs in AWS Step Functions
+ Support for Access Troubleshooter is rolling out gradually across AWS services and AWS Region. Some of the APIs for the following services support Access Troubleshooter:
++ AWS CodeDeploy
++ AWS Identity and Access Management
++ Amazon Kinesis Data Streams
++ AWS Security Token Service
++ Amazon Simple Queue Service
++ AWS Step Functions

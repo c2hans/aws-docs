@@ -21,7 +21,8 @@ Claude Haiku 5.5 is the fastest, most efficient model in the Claude 5.5 family, 
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **Reasoning:** Supported (adaptive thinking is on by default and can be turned off; effort level configurable — low, medium, high, xhigh, max; default: medium; effort capped at high when thinking is disabled)
++ **Reasoning:** Supported (adaptive thinking is on by default and can be turned off; effort level configurable — low, medium, high, xhigh, max; default: medium; effort capped at high when thinking is disabled) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
++ **Preserved thinking:** Thinking blocks are bound to the model and the conversation prefix that produced them. Replay earlier turns unchanged, or a request returns a 400 error. On Claude Haiku 5.5, thinking blocks are also bound to the AWS account that produced them. For more information, see [Preserved thinking](claude-messages-thinking-block-binding.html).
 + **Knowledge cutoff:** June 2026
 + **Marketplace product ID:** `prod-6cyn7tgqazjhu`
 

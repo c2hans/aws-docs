@@ -16,7 +16,7 @@ Type: String
 Required: No
 
  ** DataType **   <a name="systemsmanager-Type-Parameter-DataType"></a>
-The data type of the parameter, such as `text` or `aws:ec2:image`. The default is `text`.
+The data type of the parameter, such as `text`, `aws:ec2:image`, or `json`. The default is `text`. For the list of data types, see the `DataType` parameter of `PutParameter`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 Required: No

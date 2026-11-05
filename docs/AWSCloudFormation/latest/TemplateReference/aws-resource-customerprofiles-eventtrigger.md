@@ -26,6 +26,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[EventTriggerConditions](#cfn-customerprofiles-eventtrigger-eventtriggerconditions)" : {{[ EventTriggerCondition, ... ]}},
       "[EventTriggerLimits](#cfn-customerprofiles-eventtrigger-eventtriggerlimits)" : {{EventTriggerLimits}},
       "[EventTriggerName](#cfn-customerprofiles-eventtrigger-eventtriggername)" : {{String}},
+      "[IntentFilterDefinition](#cfn-customerprofiles-eventtrigger-intentfilterdefinition)" : {{IntentFilterDefinition}},
       "[ObjectTypeName](#cfn-customerprofiles-eventtrigger-objecttypename)" : {{String}},
       "[SegmentFilter](#cfn-customerprofiles-eventtrigger-segmentfilter)" : {{String}},
       "[Tags](#cfn-customerprofiles-eventtrigger-tags)" : {{[ Tag, ... ]}}
@@ -46,6 +47,8 @@ Properties:
   [EventTriggerLimits](#cfn-customerprofiles-eventtrigger-eventtriggerlimits): {{
     EventTriggerLimits}}
   [EventTriggerName](#cfn-customerprofiles-eventtrigger-eventtriggername): {{String}}
+  [IntentFilterDefinition](#cfn-customerprofiles-eventtrigger-intentfilterdefinition): {{
+    IntentFilterDefinition}}
   [ObjectTypeName](#cfn-customerprofiles-eventtrigger-objecttypename): {{String}}
   [SegmentFilter](#cfn-customerprofiles-eventtrigger-segmentfilter): {{String}}
   [Tags](#cfn-customerprofiles-eventtrigger-tags): {{
@@ -94,6 +97,12 @@ The unique name of the event trigger.
 *Minimum*: `1`
 *Maximum*: `64`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`IntentFilterDefinition`  <a name="cfn-customerprofiles-eventtrigger-intentfilterdefinition"></a>
+Property description not available.
+*Required*: No
+*Type*: [IntentFilterDefinition](aws-properties-customerprofiles-eventtrigger-intentfilterdefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ObjectTypeName`  <a name="cfn-customerprofiles-eventtrigger-objecttypename"></a>
 The unique name of the object type.

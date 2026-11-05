@@ -1118,6 +1118,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSPanoramaSageMakerRolePolicy](AWSPanoramaSageMakerRolePolicy.md)
 + [AWSPanoramaServiceLinkedRolePolicy](AWSPanoramaServiceLinkedRolePolicy.md)
 + [AWSPanoramaServiceRolePolicy](AWSPanoramaServiceRolePolicy.md)
++ [AWSPartnerCentralAccountManagementServiceRolePolicy](AWSPartnerCentralAccountManagementServiceRolePolicy.md)
 + [AWSPartnerCentralChannelHandshakeApprovalManagement](AWSPartnerCentralChannelHandshakeApprovalManagement.md)
 + [AWSPartnerCentralChannelManagement](AWSPartnerCentralChannelManagement.md)
 + [AWSPartnerCentralFullAccess](AWSPartnerCentralFullAccess.md)

@@ -160,7 +160,11 @@ The list of log types that need to be enabled for exporting to Amazon CloudWatch
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EngineVersion`  <a name="cfn-docdb-dbcluster-engineversion"></a>
-The version number of the database engine to use. The `--engine-version` will default to the latest major engine version. For production workloads, we recommend explicitly declaring this parameter with the intended major engine version.
+The version number of the database engine to use. Amazon DocumentDB resolves the value of this property as follows:
++ If you omit this property or specify `8.0`, Amazon DocumentDB uses the newest available 8.0 minor version in the AWS Region.
++ If you specify `5.0`, Amazon DocumentDB uses the 5.0 long-term support (LTS) minor version. This value changes only when Amazon DocumentDB declares a new 5.0 LTS minor version.
++ If you specify a fully qualified version, such as `8.0.1` or `5.0.2`, Amazon DocumentDB uses exactly that version.
+For production workloads, explicitly declare this property with a fully qualified engine version rather than relying on resolution. A fully qualified version keeps the engine version of the cluster independent of the AWS Region in which you create it and of the minor versions that are available when the stack is created or updated.
 If you intend to trigger an in-place upgrade, please refer to [Amazon DocumentDB in-place major version upgrade](https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-mvu.html). Note that for an in-place engine version upgrade, you need to remove other cluster properties changes (e.g. SecurityGroupId) from the CFN template.
 *Required*: No
 *Type*: String

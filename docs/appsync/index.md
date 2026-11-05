@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/appsync/index.html
 title: 'AWS AppSync Documentation'
 canonical_url: https://docs.aws.amazon.com/appsync/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # AWS AppSync Documentation

@@ -513,6 +513,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetSoftwareResourcesV2  **
+  - **IAM action:**  [securityhub:GetSoftwareResourcesV2](#list_securityhub-action-GetSoftwareResourcesV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetSoftwareStatisticsV2  **
+  - **IAM action:**  [securityhub:GetSoftwareStatisticsV2](#list_securityhub-action-GetSoftwareStatisticsV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetSoftwareV2  **
+  - **IAM action:**  [securityhub:GetSoftwareV2](#list_securityhub-action-GetSoftwareV2)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   InviteMembers  **
   - **IAM action:**  [securityhub:InviteMembers](#list_securityhub-action-InviteMembers)
   - **Condition key:**

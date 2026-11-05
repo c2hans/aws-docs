@@ -16,6 +16,13 @@ Type: Array of [PointOfInterest](API_connect-contact-lens_PointOfInterest.md) ob
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: Yes
 
+ ** RuleId **   <a name="connect-Type-connect-contact-lens_CategoryDetails-RuleId"></a>
+The unique identifier of the rule that created the matched category.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `^\S+$`
+Required: No
+
 ## See Also
 <a name="API_connect-contact-lens_CategoryDetails_SeeAlso"></a>
 

@@ -20,6 +20,35 @@ Content-type: application/json
 {
    "ContactId": "{{string}}",
    "InstanceId": "{{string}}",
+   "ListFilter": {
+      "CategoriesAttributeFilter": {
+         "AndCondition": {
+            "TagConditions": [
+               {
+                  "ComparisonType": "{{string}}",
+                  "TagKey": "{{string}}",
+                  "TagValue": "{{string}}"
+               }
+            ]
+         },
+         "OrConditions": [
+            {
+               "TagConditions": [
+                  {
+                     "ComparisonType": "{{string}}",
+                     "TagKey": "{{string}}",
+                     "TagValue": "{{string}}"
+                  }
+               ]
+            }
+         ],
+         "TagCondition": {
+            "ComparisonType": "{{string}}",
+            "TagKey": "{{string}}",
+            "TagValue": "{{string}}"
+         }
+      }
+   },
    "MaxResults": {{number}},
    "NextToken": "{{string}}"
 }
@@ -48,6 +77,11 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `.*\S.*`
 Required: Yes
+
+ ** [ListFilter](#API_connect-contact-lens_ListRealtimeContactAnalysisSegments_RequestSyntax) **   <a name="connect-connect-contact-lens_ListRealtimeContactAnalysisSegments-request-ListFilter"></a>
+A filter that limits the category segments returned by the operation. When provided, use `CategoriesAttributeFilter` to return only the category segments whose rules have tags that match the filter. This enforces tag-based access control on the categories that the caller can view.
+Type: [RealTimeContactAnalysisSegmentsFilter](API_connect-contact-lens_RealTimeContactAnalysisSegmentsFilter.md) object
+Required: No
 
  ** [MaxResults](#API_connect-contact-lens_ListRealtimeContactAnalysisSegments_RequestSyntax) **   <a name="connect-connect-contact-lens_ListRealtimeContactAnalysisSegments-request-MaxResults"></a>
 The maximum number of results to return per page.
@@ -82,9 +116,27 @@ Content-type: application/json
                         "BeginOffsetMillis": number,
                         "EndOffsetMillis": number
                      }
-                  ]
+                  ],
+                  "RuleId": "string"
                }
             }
+         },
+         "ExtractedInformation": {
+            "ExtractedValues": [
+               {
+                  "Content": "string",
+                  "PointsOfInterest": [
+                     {
+                        "BeginOffsetMillis": number,
+                        "EndOffsetMillis": number
+                     }
+                  ]
+               }
+            ],
+            "ExtractionDefinitionDisplayLabel": "string",
+            "ExtractionDefinitionId": "string",
+            "ExtractionDefinitionName": "string",
+            "FailureCode": "string"
          },
          "PostContactSummary": {
             "Content": "string",

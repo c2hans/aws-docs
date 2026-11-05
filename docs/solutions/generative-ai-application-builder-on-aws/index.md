@@ -6,18 +6,20 @@ source_url: https://docs.aws.amazon.com//solutions/generative-ai-application-bui
 title: 'Generative AI Application Builder on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/generative-ai-application-builder-on-aws/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Generative AI Application Builder on AWS
 
 Rapidly develop and deploy production-ready Agentic AI applications
 
-- **Version**: 4.1.26
-- **Released**: 9/2026
+- **Version**: 4.1.27
+- **Released**: 11/2026
 - **Author**: AWS
 - **Est. deployment time**: 10 mins
 - **Estimated cost**: [See details](/solutions/latest/generative-ai-application-builder-on-aws/cost.html)
+
+**Important: Generative AI Application Builder on AWS will be retired on February 28, 2027.** Since the launch of this solution, AWS has significantly expanded its native generative AI capabilities. You can now build and scale generative AI applications using Bedrock Knowledge Bases, Bedrock Prompt Management, and other built-in service features via Amazon Bedrock and Amazon Bedrock AgentCore. More information is available in the [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/). On February 28, 2027, AWS support for Generative AI Application Builder on AWS will end, and the [GitHub repository](https://github.com/aws-solutions/generative-ai-application-builder-on-aws) will be archived. You will no longer be able to deploy Generative AI Application Builder on AWS via the CloudFormation template within the AWS Console after this date. **Existing deployments will continue to run.** If you have deployed the solution by cloning the GitHub open source code, you may continue to use it. If underlying service APIs change after solution support ends, deployments may fail, or it may not be possible to stop or start them. If you have any questions or concerns, please reach out to [AWS Support](https://aws.amazon.com/support).
 
 ## Overview
 

@@ -106,7 +106,12 @@ V2 is available in the following AWS Regions:
 + US East (N. Virginia), `us-east-1`
 + US East (Ohio), `us-east-2`
 + US West (Oregon), `us-west-2`
++ Europe (Frankfurt), `eu-central-1`
 + Europe (Ireland), `eu-west-1`
++ Europe (Stockholm), `eu-north-1`
++ Asia Pacific (Mumbai), `ap-south-1`
++ Asia Pacific (Singapore), `ap-southeast-1`
++ Asia Pacific (Sydney), `ap-southeast-2`
 + Asia Pacific (Tokyo), `ap-northeast-1`
 
 ### Enable V2

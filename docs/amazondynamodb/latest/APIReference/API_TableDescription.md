@@ -41,6 +41,11 @@ Indicates whether deletion protection is enabled (true) or disabled (false) on t
 Type: Boolean
 Required: No
 
+ ** DisassociationProtectionEnabled **   <a name="DDB-Type-TableDescription-DisassociationProtectionEnabled"></a>
+Specifies whether disassociation protection is enabled (`true`) or disabled (`false`) for the local global table replica. Protection is enabled by default.
+Type: Boolean
+Required: No
+
  ** GlobalSecondaryIndexes **   <a name="DDB-Type-TableDescription-GlobalSecondaryIndexes"></a>
 The global secondary indexes, if any, on the table. Each index is scoped to a given partition key value. Each element is composed of:
 +  `Backfilling` - If true, then the index is currently in the backfilling phase. Backfilling occurs only when a new global secondary index is added to the table. It is the process by which DynamoDB populates the new index with data from the table. (This attribute does not appear for indexes that were created during a `CreateTable` operation.)
@@ -156,6 +161,7 @@ Required: No
 
  ** Replicas **   <a name="DDB-Type-TableDescription-Replicas"></a>
 Represents replicas of the table.
+After a successful disassociation, this list is absent or empty. To confirm disassociation, also verify that `TableStatus` is `ACTIVE`.
 Type: Array of [ReplicaDescription](API_ReplicaDescription.md) objects
 Required: No
 

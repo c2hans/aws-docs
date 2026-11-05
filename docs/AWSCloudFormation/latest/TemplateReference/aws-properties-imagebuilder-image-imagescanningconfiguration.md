@@ -20,7 +20,9 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[EcrConfiguration](#cfn-imagebuilder-image-imagescanningconfiguration-ecrconfiguration)" : {{EcrConfiguration}},
-  "[ImageScanningEnabled](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningenabled)" : {{Boolean}}
+  "[ImageScanningEnabled](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningenabled)" : {{Boolean}},
+  "[ImageScanningTypes](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningtypes)" : {{[ String, ... ]}},
+  "[ScanResultCondition](#cfn-imagebuilder-image-imagescanningconfiguration-scanresultcondition)" : {{ScanResultCondition}}
 }
 ```
 
@@ -31,6 +33,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   [EcrConfiguration](#cfn-imagebuilder-image-imagescanningconfiguration-ecrconfiguration): {{
     EcrConfiguration}}
   [ImageScanningEnabled](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningenabled): {{Boolean}}
+  [ImageScanningTypes](#cfn-imagebuilder-image-imagescanningconfiguration-imagescanningtypes): {{
+    - String}}
+  [ScanResultCondition](#cfn-imagebuilder-image-imagescanningconfiguration-scanresultcondition): {{
+    ScanResultCondition}}
 ```
 
 ## Properties
@@ -46,4 +52,19 @@ Contains Amazon ECR settings for vulnerability scans.
 Specifies whether Amazon Inspector scans for vulnerabilities when you create a new image, and whether Image Builder saves the findings. Amazon Inspector must be enabled in the account. Image tests must also be enabled. For AMI output, Amazon Inspector scans the test instance. For container output, Amazon Inspector scans the container image that Image Builder pushes to the Amazon ECR repository from your `ecrConfiguration` settings.
 *Required*: No
 *Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ImageScanningTypes`  <a name="cfn-imagebuilder-image-imagescanningconfiguration-imagescanningtypes"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of String
+*Allowed values*: `TEST_INSTANCE_CVE | ON_DEMAND_AMI_CVE`
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ScanResultCondition`  <a name="cfn-imagebuilder-image-imagescanningconfiguration-scanresultcondition"></a>
+Property description not available.
+*Required*: No
+*Type*: [ScanResultCondition](aws-properties-imagebuilder-image-scanresultcondition.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

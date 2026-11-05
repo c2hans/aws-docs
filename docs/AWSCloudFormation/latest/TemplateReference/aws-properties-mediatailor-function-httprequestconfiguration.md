@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Body](#cfn-mediatailor-function-httprequestconfiguration-body)" : {{String}},
+  "[Cache](#cfn-mediatailor-function-httprequestconfiguration-cache)" : {{HttpRequestCacheConfiguration}},
   "[Headers](#cfn-mediatailor-function-httprequestconfiguration-headers)" : {{{{{Key}}: {{Value}}, ...}}},
   "[MethodType](#cfn-mediatailor-function-httprequestconfiguration-methodtype)" : {{String}},
   "[Output](#cfn-mediatailor-function-httprequestconfiguration-output)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Body](#cfn-mediatailor-function-httprequestconfiguration-body): {{String}}
+  [Cache](#cfn-mediatailor-function-httprequestconfiguration-cache): {{
+    HttpRequestCacheConfiguration}}
   [Headers](#cfn-mediatailor-function-httprequestconfiguration-headers): {{
     {{Key}}: {{Value}}}}
   [MethodType](#cfn-mediatailor-function-httprequestconfiguration-methodtype): {{String}}
@@ -51,6 +54,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 An expression that evaluates to the request body. Used with `POST` requests. The maximum size after evaluation is 64 KB.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Cache`  <a name="cfn-mediatailor-function-httprequestconfiguration-cache"></a>
+Property description not available.
+*Required*: No
+*Type*: [HttpRequestCacheConfiguration](aws-properties-mediatailor-function-httprequestcacheconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Headers`  <a name="cfn-mediatailor-function-httprequestconfiguration-headers"></a>

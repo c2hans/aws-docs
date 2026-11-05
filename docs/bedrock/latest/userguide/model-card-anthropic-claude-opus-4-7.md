@@ -21,7 +21,7 @@ Claude Opus 4.7 is an Anthropic Opus model built for coding, enterprise workflow
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **Reasoning:** Supported (`thinking.type: "adaptive"` only)
++ **Reasoning:** Supported (off by default; set `thinking.type: "adaptive"` to turn on adaptive thinking; `"disabled"` is also accepted; manual extended thinking with `budget_tokens` is not supported) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** January 2026
 + **Marketplace product ID:** `prod-d2ik6zgct5hxi`
 

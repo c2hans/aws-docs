@@ -18,6 +18,8 @@ GraphicsPro bundle reaches end-of-life on October 31, 2025. We recommend migrati
 The Graphics bundle will no longer be supported after November 30, 2023. We recommend switching to a supported GPU enabled bundle for WorkSpaces using the Graphics bundle.
 Graphics and GraphicsPro bundles aren't currently available in the Asia Pacific (Mumbai) Region.
 Plus applications bundles with Office 2016 or Office 2019 will no longer be supported after October 14, 2025. We recommend migrating your WorkSpaces bundles with those Office versions to use Office 2021 or Office 2024. For more information, see [Manage applications in WorkSpaces Personal](manage-applications).
+*Memory integrity*, also known as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, isn't supported. Before you turn on Credential Guard, you must ensure this feature is disabled. For more information, see [Disable memory integrity](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/credential-guard.html#disable-memory-integrity).
+Enabling the feature may lead to performance or stability issues. We recommend disabling memory integrity in your Windows image. Credential Guard can remain enabled once memory integrity is disabled.
 
 The following are the bundles that WorkSpaces offers:
 

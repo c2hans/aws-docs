@@ -1619,6 +1619,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [DeleteNotificationPreference](${APIReferenceDocPage}API_DeleteNotificationPreference.html)  **
+  - **Description:** Grants permission to delete a notification preference
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [DeleteProject](${APIReferenceDocPage}API_DeleteProject.html)  **
   - **Description:** Grants permission to delete a Project that enables your team to publish and subscribe to data
   - **Resource types (\*required):**

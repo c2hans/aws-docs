@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/okta-phone-based-multi-factor-
 title: 'Guidance for Okta Phone-Based Multi-Factor Authentication on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/okta-phone-based-multi-factor-authentication-on-aws/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Guidance for Okta Phone-Based Multi-Factor Authentication on AWS

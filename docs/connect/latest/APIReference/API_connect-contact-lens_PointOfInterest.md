@@ -5,19 +5,19 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 # PointOfInterest
 <a name="API_connect-contact-lens_PointOfInterest"></a>
 
-The section of the contact audio where that category rule was detected.
+The section of the contact audio where a match was detected.
 
 ## Contents
 <a name="API_connect-contact-lens_PointOfInterest_Contents"></a>
 
  ** BeginOffsetMillis **   <a name="connect-Type-connect-contact-lens_PointOfInterest-BeginOffsetMillis"></a>
-The beginning offset in milliseconds where the category rule was detected.
+The beginning offset (in milliseconds) where the match was detected.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: Yes
 
  ** EndOffsetMillis **   <a name="connect-Type-connect-contact-lens_PointOfInterest-EndOffsetMillis"></a>
-The ending offset in milliseconds where the category rule was detected.
+The ending offset (in milliseconds) where the match was detected.
 Type: Integer
 Valid Range: Minimum value of 0.
 Required: Yes

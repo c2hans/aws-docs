@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/network-security-manager/index.html
 title: 'AWS Network Security Manager Documentation'
 canonical_url: https://docs.aws.amazon.com/network-security-manager/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # AWS Network Security Manager Documentation

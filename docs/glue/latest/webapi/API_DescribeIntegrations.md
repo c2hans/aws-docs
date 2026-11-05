@@ -78,7 +78,8 @@ Required: No
             "RefreshInterval": "string",
             "SourceProperties": {
                "string" : "string"
-            }
+            },
+            "TargetNamespace": "string"
          },
          "IntegrationName": "string",
          "KmsKeyId": "string",

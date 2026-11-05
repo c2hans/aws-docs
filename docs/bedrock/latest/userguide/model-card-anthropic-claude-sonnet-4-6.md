@@ -21,7 +21,7 @@ Claude Sonnet 4.6 is a full upgrade of Anthropic's mid-tier model with improved 
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 64K
-+ **Reasoning:** Supported
++ **Reasoning:** Supported (off by default; adaptive thinking with `thinking.type: "adaptive"` is recommended; manual extended thinking with `budget_tokens` is deprecated) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** Aug 2025
 + **Marketplace product ID:** `prod-ffvjxvh4ltq64`
 

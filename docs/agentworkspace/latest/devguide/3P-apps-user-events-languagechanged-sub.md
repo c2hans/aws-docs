@@ -24,9 +24,9 @@ settingsClient.onLanguageChanged(handler);
 
 // UserLanguageChanged Structure
 {
-  language: string;
+  language: Locale;
   previous: {
-    language: string;
+    language: Locale | null;
   };
 }
 ```

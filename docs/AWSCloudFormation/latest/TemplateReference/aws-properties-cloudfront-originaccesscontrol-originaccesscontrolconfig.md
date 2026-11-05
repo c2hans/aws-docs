@@ -61,7 +61,7 @@ A name to identify the origin access control. You can specify up to 64 character
 The type of origin that this origin access control is for.
 *Required*: Yes
 *Type*: String
-*Pattern*: `^(s3|mediastore|lambda|mediapackagev2)$`
+*Pattern*: `^(s3|mediastore|lambda|mediapackagev2|execute-api)$`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SigningBehavior`  <a name="cfn-cloudfront-originaccesscontrol-originaccesscontrolconfig-signingbehavior"></a>

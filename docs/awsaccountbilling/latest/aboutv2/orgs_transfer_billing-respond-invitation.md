@@ -32,7 +32,7 @@ The following are terms and concepts used in the AWS Billing and Cost Management
 
 **Minimum permissions**
 To respond to an invitation, you must have the following permissions actions:
-`organizations:ListHandshakesAccount`
+`organizations:ListHandshakesForAccount`
 `organizations:AcceptHandshake`
 `organizations:DeclineHandshake`
 

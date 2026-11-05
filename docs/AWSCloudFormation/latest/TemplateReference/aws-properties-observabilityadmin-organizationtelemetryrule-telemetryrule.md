@@ -80,7 +80,7 @@ To declare this entity in your CloudFormation template, use the following syntax
  The type of AWS resource to configure telemetry for (for example, `AWS::EC2::VPC`, `AWS::EKS::Cluster`, `AWS::ElasticLoadBalancingV2::LoadBalancer`, or `AWS::Bedrock::KnowledgeBase`).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::SecurityHub::Hub | AWS::SecurityHub::HubV2 | AWS::S3::Bucket | AWS::MSK::Cluster | AWS::CloudFront::Distribution | AWS::CloudWatch::OTelEnrichment`
+*Allowed values*: `AWS::EC2::VPC | AWS::WAFv2::WebACL | AWS::CloudTrail | AWS::EKS::Cluster | AWS::ElasticLoadBalancingV2::LoadBalancer | AWS::EC2::Instance | AWS::SecurityHub::Hub | AWS::SecurityHub::HubV2 | AWS::S3::Bucket | AWS::MSK::Cluster | AWS::CloudFront::Distribution | AWS::CloudWatch::OTelEnrichment | AWS::XRay::TransactionSearchConfig`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Scope`  <a name="cfn-observabilityadmin-organizationtelemetryrule-telemetryrule-scope"></a>
@@ -105,5 +105,5 @@ To declare this entity in your CloudFormation template, use the following syntax
  The type of telemetry to collect (Logs, Metrics, or Traces).
 *Required*: Yes
 *Type*: String
-*Allowed values*: `Logs | Metrics`
+*Allowed values*: `Logs | Traces | Metrics | Insights`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

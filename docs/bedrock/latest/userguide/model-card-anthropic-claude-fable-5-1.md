@@ -22,7 +22,8 @@ Claude Fable 5.1 is Anthropic's frontier model for ambitious coding, long-horizo
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
 + **Sampling parameters:** temperature must be 1.0 or unset; top\_p must be 0.99 or unset; temperature and top\_p cannot be specified together; top\_k is not supported
-+ **Reasoning:** Supported (adaptive thinking is always on and cannot be disabled; effort level configurable — low, medium, high, xhigh, max; default: high)
++ **Reasoning:** Supported (adaptive thinking is always on and cannot be disabled; effort level configurable — low, medium, high, xhigh, max; default: high) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
++ **Preserved thinking:** Thinking blocks are bound to the model and the conversation prefix that produced them. Replay earlier turns unchanged, or a request returns a 400 error. For more information, see [Preserved thinking](claude-messages-thinking-block-binding.html).
 + **Knowledge cutoff:** June 2026
 + **Marketplace product ID:** prod-lt3y75wunrtv4
 

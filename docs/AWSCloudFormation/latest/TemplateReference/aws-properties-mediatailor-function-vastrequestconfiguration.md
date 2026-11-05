@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Body](#cfn-mediatailor-function-vastrequestconfiguration-body)" : {{String}},
+  "[Cache](#cfn-mediatailor-function-vastrequestconfiguration-cache)" : {{HttpRequestCacheConfiguration}},
   "[Headers](#cfn-mediatailor-function-vastrequestconfiguration-headers)" : {{{{{Key}}: {{Value}}, ...}}},
   "[MethodType](#cfn-mediatailor-function-vastrequestconfiguration-methodtype)" : {{String}},
   "[Output](#cfn-mediatailor-function-vastrequestconfiguration-output)" : {{{{{Key}}: {{Value}}, ...}}},
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
   [Body](#cfn-mediatailor-function-vastrequestconfiguration-body): {{String}}
+  [Cache](#cfn-mediatailor-function-vastrequestconfiguration-cache): {{
+    HttpRequestCacheConfiguration}}
   [Headers](#cfn-mediatailor-function-vastrequestconfiguration-headers): {{
     {{Key}}: {{Value}}}}
   [MethodType](#cfn-mediatailor-function-vastrequestconfiguration-methodtype): {{String}}
@@ -51,6 +54,12 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Cache`  <a name="cfn-mediatailor-function-vastrequestconfiguration-cache"></a>
+Property description not available.
+*Required*: No
+*Type*: [HttpRequestCacheConfiguration](aws-properties-mediatailor-function-httprequestcacheconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Headers`  <a name="cfn-mediatailor-function-vastrequestconfiguration-headers"></a>

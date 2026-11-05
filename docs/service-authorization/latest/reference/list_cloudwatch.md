@@ -298,6 +298,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   PutMetricAlarm  **
   - **SDK client:** cloudwatch
+  - **IAM action:**  [cloudwatch:ListTagsForResource](#list_cloudwatch-action-ListTagsForResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [cloudwatch:PutMetricAlarm](#list_cloudwatch-action-PutMetricAlarm)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [cloudwatch:TagResource](#list_cloudwatch-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
@@ -1797,7 +1798,7 @@ The following resource types are defined by this service and can be used in the 
 |  [service](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:service/${ServiceName}-${UniqueAttributesHex} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [slo](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/auth-and-access-control-cw.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:slo/${SloName} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 |  [space](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:space/${SpaceId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
-|  [view](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
+|  [view](https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/Welcome.html)  | arn:${Partition}:cloudwatch:${Region}:${Account}:view/${ViewName}/${ViewId} | [aws:ResourceTag/${TagKey}](#list_cloudwatch-aws_ResourceTag___TagKey_) |
 
 ## Condition keys for Amazon CloudWatch
 <a name="list_cloudwatch-policy-keys"></a>

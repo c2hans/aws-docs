@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/detective/index.html
 title: 'Amazon Detective Documentation'
 canonical_url: https://docs.aws.amazon.com/detective/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Amazon Detective Documentation

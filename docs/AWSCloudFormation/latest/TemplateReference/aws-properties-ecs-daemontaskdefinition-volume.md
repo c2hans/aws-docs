@@ -20,6 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Host](#cfn-ecs-daemontaskdefinition-volume-host)" : {{HostVolumeProperties}},
+  "[LogDriverVolumeConfiguration](#cfn-ecs-daemontaskdefinition-volume-logdrivervolumeconfiguration)" : {{LogDriverVolumeConfiguration}},
   "[Name](#cfn-ecs-daemontaskdefinition-volume-name)" : {{String}}
 }
 ```
@@ -30,6 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Host](#cfn-ecs-daemontaskdefinition-volume-host): {{
     HostVolumeProperties}}
+  [LogDriverVolumeConfiguration](#cfn-ecs-daemontaskdefinition-volume-logdrivervolumeconfiguration): {{
+    LogDriverVolumeConfiguration}}
   [Name](#cfn-ecs-daemontaskdefinition-volume-name): {{String}}
 ```
 
@@ -41,6 +44,12 @@ This parameter is specified when you use bind mount host volumes. The contents o
 Windows containers can mount whole directories on the same drive as `$env:ProgramData`. Windows containers can't mount directories on a different drive, and mount point can't be across drives. For example, you can mount `C:\my\path:C:\my\path` and `D:\:D:\`, but not `D:\my\path:C:\my\path` or `D:\:C:\my\path`.
 *Required*: No
 *Type*: [HostVolumeProperties](aws-properties-ecs-daemontaskdefinition-hostvolumeproperties.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`LogDriverVolumeConfiguration`  <a name="cfn-ecs-daemontaskdefinition-volume-logdrivervolumeconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [LogDriverVolumeConfiguration](aws-properties-ecs-daemontaskdefinition-logdrivervolumeconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Name`  <a name="cfn-ecs-daemontaskdefinition-volume-name"></a>

@@ -25,6 +25,12 @@ References:
 
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_s3tables-actions-as-permissions).
 
+- **   CompleteTableMigration  **
+  - **IAM action:**  [s3tables:CompleteTableMigration](#list_s3tables-action-CompleteTableMigration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateNamespace  **
   - **IAM action:**  [s3tables:CreateNamespace](#list_s3tables-action-CreateNamespace)
   - **Condition key:**
@@ -176,6 +182,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetTableMigration  **
+  - **IAM action:**  [s3tables:GetTableMigration](#list_s3tables-action-GetTableMigration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetTablePolicy  **
   - **IAM action:**  [s3tables:GetTablePolicy](#list_s3tables-action-GetTablePolicy)
   - **Condition key:**
@@ -220,6 +232,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   ListTableBuckets  **
   - **IAM action:**  [s3tables:ListTableBuckets](#list_s3tables-action-ListTableBuckets)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
+- **   ListTableMigrations  **
+  - **IAM action:**  [s3tables:ListTableMigrations](#list_s3tables-action-ListTableMigrations)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
@@ -298,6 +316,14 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   StartTableMigration  **
+  - **IAM action:**  [s3tables:StartTableMigration](#list_s3tables-action-StartTableMigration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** migration.s3tables.amazonaws.com / **Access level:** Write
+
+- **   SyncTableMigration  **
+  - **IAM action:**  [s3tables:SyncTableMigration](#list_s3tables-action-SyncTableMigration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** migration.s3tables.amazonaws.com / **Access level:** Write
+
 - **   TagResource  **
   - **IAM action:**  [s3tables:TagResource](#list_s3tables-action-TagResource)
   - **Condition key:**
@@ -312,6 +338,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateTableMetadataLocation  **
   - **IAM action:**  [s3tables:UpdateTableMetadataLocation](#list_s3tables-action-UpdateTableMetadataLocation)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   UpdateTableMigration  **
+  - **IAM action:**  [s3tables:UpdateTableMigration](#list_s3tables-action-UpdateTableMigration)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

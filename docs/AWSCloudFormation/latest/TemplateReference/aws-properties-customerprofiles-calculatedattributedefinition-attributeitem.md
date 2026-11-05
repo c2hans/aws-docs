@@ -40,4 +40,4 @@ The unique name of the calculated attribute.
 *Pattern*: `^[a-zA-Z0-9_.-]+$`
 *Minimum*: `1`
 *Maximum*: `64`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

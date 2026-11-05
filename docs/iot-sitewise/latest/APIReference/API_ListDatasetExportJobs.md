@@ -55,6 +55,7 @@ Content-type: application/json
          "completedAt": number,
          "destinationS3Uri": "string",
          "jobId": "string",
+         "jobName": "string",
          "startedAt": number,
          "status": "string"
       }

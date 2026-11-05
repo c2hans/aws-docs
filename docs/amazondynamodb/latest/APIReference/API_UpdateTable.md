@@ -5,14 +5,20 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 # UpdateTable
 <a name="API_UpdateTable"></a>
 
-Modifies the provisioned throughput settings, global secondary indexes, or DynamoDB Streams settings for a given table.
+Modifies the provisioned throughput settings, global secondary indexes, DynamoDB Streams settings, or global table replica settings for a given table.
 
 You can only perform one of the following operations at once:
 + Modify the provisioned throughput settings of the table.
 + Remove a global secondary index from the table.
 + Create a new global secondary index on the table. After the index begins backfilling, you can use `UpdateTable` to perform other operations.
++ Enable or disable disassociation protection for the local global table replica.
++ Disassociate the local global table replica and keep it as a standalone regional table. The `Disassociate` action must be the only replica update in the request. If the request includes any other update, `UpdateTable` fails with a `ValidationException` and the disassociation does not start.
 
- `UpdateTable` is an asynchronous operation; while it's executing, the table status changes from `ACTIVE` to `UPDATING`. While it's `UPDATING`, you can't issue another `UpdateTable` request. When the table returns to the `ACTIVE` state, the `UpdateTable` operation is complete.
+ `UpdateTable` is an asynchronous operation; while it's executing, the table status changes from `ACTIVE` to `UPDATING`. While it's `UPDATING`, you can't issue another `UpdateTable` request. Use `DescribeTable` to monitor the table's status.
+
+To use this operation to disassociate a local replica, you must have the `dynamodb:UpdateTable` and `dynamodb:DisassociateTableReplica` IAM permissions on the local replica. Send disassociation and disassociation protection requests to the replica's Region using credentials for the account that owns the replica. For prerequisites and the procedure, see [Disassociating a global table replica](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-disassociate.html) in the *Amazon DynamoDB Developer Guide*.
+
+To confirm successful disassociation, call `DescribeTable` in the replica's Region and verify that `TableStatus` is `ACTIVE` and `Replicas` is absent or empty. If `TableStatus` returns to `ACTIVE` but the response still includes a `Replicas` list, the disassociation did not complete. Check `ReplicaStatus` for a replication-permission or encryption-access problem, resolve it, and retry.
 
 ## Request Syntax
 <a name="API_UpdateTable_RequestSyntax"></a>
@@ -27,6 +33,7 @@ You can only perform one of the following operations at once:
    ],
    "BillingMode": "{{string}}",
    "DeletionProtectionEnabled": {{boolean}},
+   "DisassociationProtectionEnabled": {{boolean}},
    "GlobalSecondaryIndexUpdates": [
       {
          "Create": {
@@ -119,6 +126,10 @@ You can only perform one of the following operations at once:
             "TableClassOverride": "{{string}}"
          },
          "Delete": {
+            "RegionName": "{{string}}"
+         },
+         "Disassociate": {
+            "DisassociationMode": "{{string}}",
             "RegionName": "{{string}}"
          },
          "Update": {
@@ -220,6 +231,13 @@ Indicates whether deletion protection is to be enabled (true) or disabled (false
 Type: Boolean
 Required: No
 
+ ** [DisassociationProtectionEnabled](#API_UpdateTable_RequestSyntax) **   <a name="DDB-UpdateTable-request-DisassociationProtectionEnabled"></a>
+Specifies whether disassociation protection is enabled (`true`) or disabled (`false`) for the local replica of a multi-Region eventual consistency (MREC) global table using Version 2019.11.21.
+Disassociation protection is enabled by default. If you omit this parameter, the existing setting is unchanged. This setting is independent of `DeletionProtectionEnabled`.
+You can't combine this change with any other change in the same `UpdateTable` request.
+Type: Boolean
+Required: No
+
  ** [GlobalSecondaryIndexUpdates](#API_UpdateTable_RequestSyntax) **   <a name="DDB-UpdateTable-request-GlobalSecondaryIndexUpdates"></a>
 An array of one or more global secondary indexes for the table. For each index in the array, you can request one action:
 +  `Create` - add a new global secondary index to the table.
@@ -269,7 +287,7 @@ Type: [ProvisionedThroughput](API_ProvisionedThroughput.md) object
 Required: No
 
  ** [ReplicaUpdates](#API_UpdateTable_RequestSyntax) **   <a name="DDB-UpdateTable-request-ReplicaUpdates"></a>
-A list of replica update actions (create, delete, or update) for the table.
+A list of replica update actions (create, delete, update, or disassociate) for the table.
 Type: Array of [ReplicationGroupUpdate](API_ReplicationGroupUpdate.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
@@ -325,6 +343,7 @@ Required: No
       },
       "CreationDateTime": number,
       "DeletionProtectionEnabled": boolean,
+      "DisassociationProtectionEnabled": boolean,
       "GlobalSecondaryIndexes": [
          {
             "Backfilling": boolean,

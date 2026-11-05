@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/m2/index.html
 title: 'AWS Mainframe Modernization'
 canonical_url: https://docs.aws.amazon.com/m2/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # AWS Mainframe Modernization

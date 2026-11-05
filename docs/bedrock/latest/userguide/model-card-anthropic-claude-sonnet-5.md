@@ -21,7 +21,7 @@ Claude Sonnet 5 is the most capable Sonnet model from Anthropic, built for codin
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **Reasoning:** Supported (adaptive thinking is on by default, including for requests that omit the `thinking` field; effort level is configurable, and thinking can be turned off with `"thinking": {"type": "disabled"}`)
++ **Reasoning:** Supported (adaptive thinking is on by default, including for requests that omit the `thinking` field; effort level is configurable, and thinking can be turned off with `"thinking": {"type": "disabled"}`) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** January 2026
 + **Marketplace product ID:** `prod-4ezhkeia6k2cs`
 

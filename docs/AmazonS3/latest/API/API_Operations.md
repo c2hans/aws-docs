@@ -253,6 +253,7 @@ The following actions are supported by Amazon S3 on Outposts:
 +  [ListSharedEndpoints](API_s3outposts_ListSharedEndpoints.md)
 
 The following actions are supported by Amazon S3 Tables:
++  [CompleteTableMigration](API_s3Buckets_CompleteTableMigration.md)
 +  [CreateNamespace](API_s3Buckets_CreateNamespace.md)
 +  [CreateTable](API_s3Buckets_CreateTable.md)
 +  [CreateTableBucket](API_s3Buckets_CreateTableBucket.md)
@@ -278,6 +279,7 @@ The following actions are supported by Amazon S3 Tables:
 +  [GetTableMaintenanceConfiguration](API_s3Buckets_GetTableMaintenanceConfiguration.md)
 +  [GetTableMaintenanceJobStatus](API_s3Buckets_GetTableMaintenanceJobStatus.md)
 +  [GetTableMetadataLocation](API_s3Buckets_GetTableMetadataLocation.md)
++  [GetTableMigration](API_s3Buckets_GetTableMigration.md)
 +  [GetTablePolicy](API_s3Buckets_GetTablePolicy.md)
 +  [GetTableRecordExpirationConfiguration](API_s3Buckets_GetTableRecordExpirationConfiguration.md)
 +  [GetTableRecordExpirationJobStatus](API_s3Buckets_GetTableRecordExpirationJobStatus.md)
@@ -286,6 +288,7 @@ The following actions are supported by Amazon S3 Tables:
 +  [GetTableStorageClass](API_s3Buckets_GetTableStorageClass.md)
 +  [ListNamespaces](API_s3Buckets_ListNamespaces.md)
 +  [ListTableBuckets](API_s3Buckets_ListTableBuckets.md)
++  [ListTableMigrations](API_s3Buckets_ListTableMigrations.md)
 +  [ListTables](API_s3Buckets_ListTables.md)
 +  [ListTagsForResource](API_s3Buckets_ListTagsForResource.md)
 +  [PutTableBucketEncryption](API_s3Buckets_PutTableBucketEncryption.md)
@@ -299,9 +302,12 @@ The following actions are supported by Amazon S3 Tables:
 +  [PutTableRecordExpirationConfiguration](API_s3Buckets_PutTableRecordExpirationConfiguration.md)
 +  [PutTableReplication](API_s3Buckets_PutTableReplication.md)
 +  [RenameTable](API_s3Buckets_RenameTable.md)
++  [StartTableMigration](API_s3Buckets_StartTableMigration.md)
++  [SyncTableMigration](API_s3Buckets_SyncTableMigration.md)
 +  [TagResource](API_s3Buckets_TagResource.md)
 +  [UntagResource](API_s3Buckets_UntagResource.md)
 +  [UpdateTableMetadataLocation](API_s3Buckets_UpdateTableMetadataLocation.md)
++  [UpdateTableMigration](API_s3Buckets_UpdateTableMigration.md)
 
 The following actions are supported by Amazon S3 Vectors:
 +  [CreateIndex](API_S3VectorBuckets_CreateIndex.md)

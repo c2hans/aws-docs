@@ -9,6 +9,9 @@ Represents one of the following:
 + A new replica to be added to an existing regional table or global table. This request invokes the `CreateTableReplica` action in the destination Region.
 + New parameters for an existing replica. This request invokes the `UpdateTable` action in the destination Region.
 + An existing replica to be deleted. The request invokes the `DeleteTableReplica` action in the destination Region, deleting the replica and all if its items in the destination Region.
++ The local replica to be disassociated from a global table and retained as a standalone regional table.
+
+Each `ReplicationGroupUpdate` contains exactly one action. A `Disassociate` action must be the only replica update in the request; including other updates causes the request to fail.
 
 **Note**
 When you manually remove a table or global table replica, you do not automatically remove any associated scalable targets, scaling policies, or CloudWatch alarms.
@@ -27,6 +30,11 @@ Required: No
  ** Delete **   <a name="DDB-Type-ReplicationGroupUpdate-Delete"></a>
 The parameters required for deleting a replica for the table.
 Type: [DeleteReplicationGroupMemberAction](API_DeleteReplicationGroupMemberAction.md) object
+Required: No
+
+ ** Disassociate **   <a name="DDB-Type-ReplicationGroupUpdate-Disassociate"></a>
+The parameters for disassociating the local replica from the global table and retaining it as a standalone regional table.
+Type: [DisassociateReplicationGroupMemberAction](API_DisassociateReplicationGroupMemberAction.md) object
 Required: No
 
  ** Update **   <a name="DDB-Type-ReplicationGroupUpdate-Update"></a>

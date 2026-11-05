@@ -61,7 +61,7 @@ Properties:
 Mathematical expression and a list of attribute items specified in that expression.
 *Required*: Yes
 *Type*: [AttributeDetails](aws-properties-customerprofiles-calculatedattributedefinition-attributedetails.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `CalculatedAttributeName`  <a name="cfn-customerprofiles-calculatedattributedefinition-calculatedattributename"></a>
 The name of an attribute defined in a profile object type.
@@ -109,7 +109,7 @@ The aggregation operation to perform for the calculated attribute.
 *Required*: Yes
 *Type*: String
 *Allowed values*: `FIRST_OCCURRENCE | LAST_OCCURRENCE | COUNT | SUM | MINIMUM | MAXIMUM | AVERAGE | MAX_OCCURRENCE`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-customerprofiles-calculatedattributedefinition-tags"></a>
 An array of key-value pairs to apply to this resource.

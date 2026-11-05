@@ -19,7 +19,7 @@ async setVoiceEnhancementMode(voiceEnhancementMode: VoiceEnhancementMode): Promi
  **Usage**
 
 ```
-await voiceClient.setVoiceEnhancementMode(VoiceEnhancementMode.NOISE_SUPPRESSION);
+await voiceClient.setVoiceEnhancementMode("NOISE_SUPPRESSION");
 ```
 
  **Input**

@@ -10,7 +10,7 @@ Sends a signal to the Connect Customer indicating that the agent is active and s
  **Signature**
 
 ```
-sendActivity(provider): void
+sendActivity(provider: AmazonConnectProvider): void
 ```
 
  **Usage**
@@ -23,4 +23,10 @@ const handleActivity = () => {
 };
 
 window.addEventListener("click", handleActivity);
+```
+
+ **Permissions required:**
+
+```
+*
 ```

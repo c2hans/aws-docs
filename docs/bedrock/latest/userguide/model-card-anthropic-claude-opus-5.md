@@ -21,7 +21,7 @@ Claude Opus 5 is Anthropic's most advanced Opus model, powering long-running age
 + **Model lifecycle:** Active
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
-+ **Reasoning:** Supported (adaptive thinking is on by default; can be disabled but effort is capped at high when thinking is disabled)
++ **Reasoning:** Supported (adaptive thinking is on by default; can be disabled but effort is capped at high when thinking is disabled) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** May 2026
 + **Marketplace product ID:** `prod-if5d653ow7ehg`
 
@@ -112,6 +112,14 @@ For more information, see [Compaction](claude-messages-compaction.html).
 | **Compaction supported** | **Beta value** |
 | --- | --- |
 | Yes | compact-2026-09-04 |
+
+**Fallback credit for refused requests (beta)**
+
+When Claude Opus 5 refuses a request, the response can include a fallback credit token. Redeem the token when you retry the same request on a fallback model, and the retry is billed for the cached conversation prefix at cache-read rates instead of cache-write rates. For more information, see [Fallback credit for refused requests (beta)](claude-messages-fallback-credit.html).
+
+| **Supported endpoints** | **Beta value** | **Valid fallback models** |
+| --- | --- | --- |
+| bedrock-runtime, bedrock-mantle | fallback-credit-2026-07-01 | Claude Opus 4.8 (anthropic.claude-opus-4-8) |
 
 ## Pricing
 <a name="model-card-anthropic-claude-opus-5-pricing"></a>

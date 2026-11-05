@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/solutions/development-automation-impleme
 title: 'Guidance for Development, Automation, Implementation, and Monitoring of Bioinformatics Workflows on AWS'
 canonical_url: https://docs.aws.amazon.com/solutions/development-automation-implementation-monitoring-of-bioinformatics-workflows-on-aws/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Guidance for Development, Automation, Implementation, and Monitoring of Bioinformatics Workflows on AWS

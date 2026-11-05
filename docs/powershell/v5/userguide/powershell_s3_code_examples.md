@@ -29,17 +29,17 @@ Each example includes a link to the complete source code, where you can find ins
 The following code example shows how to use `Copy-S3Object`.
 
 **Tools for PowerShell V5**
-**Example 1: This command copies the object "sample.txt" from bucket "test-files" to the same bucket but with a new key of "sample-copy.txt".**
+**Example 1: This command copies the object "sample.txt" from bucket "amzn-s3-demo-bucket" to the same bucket but with a new key of "sample-copy.txt".**
 
 ```
 Copy-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt -DestinationKey sample-copy.txt
 ```
-**Example 2: This command copies the object "sample.txt" from bucket "test-files" to the bucket "backup-files" with a key of "sample-copy.txt".**
+**Example 2: This command copies the object "sample.txt" from bucket "amzn-s3-demo-source-bucket" to the bucket "amzn-s3-demo-destination-bucket" with a key of "sample-copy.txt".**
 
 ```
 Copy-S3Object -BucketName amzn-s3-demo-source-bucket -Key sample.txt -DestinationKey sample-copy.txt -DestinationBucket amzn-s3-demo-destination-bucket
 ```
-**Example 3: This command downloads the object "sample.txt" from bucket "test-files" to a local file with name "local-sample.txt".**
+**Example 3: This command downloads the object "sample.txt" from bucket "amzn-s3-demo-bucket" to a local file with name "local-sample.txt".**
 
 ```
 Copy-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt -LocalFile local-sample.txt
@@ -106,7 +106,7 @@ The following code example shows how to use `Get-S3Bucket`.
 ```
 Get-S3Bucket
 ```
-**Example 2: This command returns bucket named "test-files"**
+**Example 2: This command returns bucket named "amzn-s3-demo-bucket".**
 
 ```
 Get-S3Bucket -BucketName amzn-s3-demo-bucket
@@ -490,17 +490,17 @@ Rules
 The following code example shows how to use `Get-S3Object`.
 
 **Tools for PowerShell V5**
-**Example 1: This command retrieves the information about all of the items in the bucket "test-files".**
+**Example 1: This command retrieves the information about all of the items in the bucket "amzn-s3-demo-bucket".**
 
 ```
 Get-S3Object -BucketName amzn-s3-demo-bucket
 ```
-**Example 2: This command retrieves the information about the item "sample.txt" from bucket "test-files".**
+**Example 2: This command retrieves the information about the item "sample.txt" from bucket "amzn-s3-demo-bucket".**
 
 ```
 Get-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt
 ```
-**Example 3: This command retrieves the information about all items with the prefix "sample" from bucket "test-files".**
+**Example 3: This command retrieves the information about all items with the prefix "sample" from bucket "amzn-s3-demo-bucket".**
 
 ```
 Get-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix sample
@@ -713,22 +713,22 @@ Mount-S3PSDrive -Name Archive -ProfileName my-profile -Region us-east-1
 The following code example shows how to use `New-S3Bucket`.
 
 **Tools for PowerShell V5**
-**Example 1: This command creates a new private bucket named "sample-bucket".**
+**Example 1: This command creates a new private bucket named "amzn-s3-demo-bucket".**
 
 ```
 New-S3Bucket -BucketName amzn-s3-demo-bucket
 ```
-**Example 2: This command creates a new bucket named "sample-bucket" with read-write permissions.**
+**Example 2: This command creates a new bucket named "amzn-s3-demo-bucket" with read-write permissions.**
 
 ```
 New-S3Bucket -BucketName amzn-s3-demo-bucket -PublicReadWrite
 ```
-**Example 3: This command creates a new bucket named "sample-bucket" with read-only permissions.**
+**Example 3: This command creates a new bucket named "amzn-s3-demo-bucket" with read-only permissions.**
 
 ```
 New-S3Bucket -BucketName amzn-s3-demo-bucket -PublicReadOnly
 ```
-**Example 4: This command creates a new Directory bucket named "amzn-s3-demo-bucket--use1-az5--x-s3" with PutBucketConfiguration.**
+**Example 4: This command creates a new Directory bucket named "amzn-s3-demo-bucket--usw2-az1--x-s3" with PutBucketConfiguration.**
 
 ```
 $bucketConfiguration = @{
@@ -799,7 +799,7 @@ Read-S3Object -BucketName amzn-s3-demo-bucket -KeyPrefix data/ -Folder C:\local-
 The following code example shows how to use `Remove-S3Bucket`.
 
 **Tools for PowerShell V5**
-**Example 1: This command removes all objects and object versions from the bucket 'test-files' and then deletes the bucket. The command will prompt for confirmation before proceeding. Add the -Force switch to suppress confirmation. Note that buckets that are not empty cannot be deleted.**
+**Example 1: This command removes all objects and object versions from the bucket 'amzn-s3-demo-bucket' and then deletes the bucket. The command will prompt for confirmation before proceeding. Add the -Force switch to suppress confirmation. Note that buckets that are not empty cannot be deleted.**
 
 ```
 Remove-S3Bucket -BucketName amzn-s3-demo-bucket -DeleteBucketContent
@@ -1005,17 +1005,17 @@ Remove-S3MultipartUpload -BucketName amzn-s3-demo-bucket -InitiatedDate "2014/01
 The following code example shows how to use `Remove-S3Object`.
 
 **Tools for PowerShell V5**
-**Example 1: This command removes the object "sample.txt" from bucket "test-files". You are prompted for confirmation before the command executes; to suppress the prompt use the -Force switch.**
+**Example 1: This command removes the object "sample.txt" from bucket "amzn-s3-demo-bucket". You are prompted for confirmation before the command executes; to suppress the prompt use the -Force switch.**
 
 ```
 Remove-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt
 ```
-**Example 2: This command removes the specified version of object "sample.txt" from bucket "test-files", assuming the bucket has been configured to enable object versions.**
+**Example 2: This command removes the specified version of object "sample.txt" from bucket "amzn-s3-demo-bucket", assuming the bucket has been configured to enable object versions.**
 
 ```
 Remove-S3Object -BucketName amzn-s3-demo-bucket -Key sample.txt -VersionId HLbxnx6V9omT6AQYVpks8mmFKQcejpqt
 ```
-**Example 3: This command removes objects "sample1.txt", "sample2.txt" and "sample3.txt" from bucket "test-files" as a single batch operation. The service response will list all keys processed, regardless of the success or error status of the deletion. To obtain only errors for keys that were not able to be processed by the service add the -ReportErrorsOnly parameter (this parameter can also be specified with the alias -Quiet.**
+**Example 3: This command removes objects "sample1.txt", "sample2.txt" and "sample3.txt" from bucket "amzn-s3-demo-bucket" as a single batch operation. The service response will list all keys processed, regardless of the success or error status of the deletion. To obtain only errors for keys that were not able to be processed by the service add the -ReportErrorsOnly parameter (this parameter can also be specified with the alias -Quiet).**
 
 ```
 Remove-S3Object -BucketName amzn-s3-demo-bucket -KeyCollection @( "sample1.txt", "sample2.txt", "sample3.txt" )
@@ -1023,7 +1023,7 @@ Remove-S3Object -BucketName amzn-s3-demo-bucket -KeyCollection @( "sample1.txt",
 **Example 4: This example uses an inline expression with the -KeyCollection parameter to obtain the keys of the objects to delete. Get-S3Object returns a collection of Amazon.S3.Model.S3Object instances, each of which has a Key member of type string identifying the object.**
 
 ```
-Remove-S3Object -bucketname "amzn-s3-demo-bucket" -KeyCollection (Get-S3Object "test-files" -KeyPrefix "prefix/subprefix" | select -ExpandProperty Key)
+Remove-S3Object -bucketname "amzn-s3-demo-bucket" -KeyCollection (Get-S3Object "amzn-s3-demo-bucket" -KeyPrefix "prefix/subprefix" | select -ExpandProperty Key)
 ```
 **Example 5: This example obtains all objects that have a key prefix "prefix/subprefix" in the bucket and deletes them. Note that the incoming objects are processed one at a time. For large collections consider passing the collection to the cmdlet's -InputObject (alias -S3ObjectCollection) parameter to enable the deletion to occur as a batch with a single call to the service.**
 
@@ -1433,27 +1433,27 @@ $ExpireRule = [Amazon.S3.Model.LifecycleRule] @{
 The following code example shows how to use `Write-S3Object`.
 
 **Tools for PowerShell V5**
-**Example 1: This command uploads the single file "local-sample.txt" to Amazon S3, creating an object with key "sample.txt" in bucket "test-files".**
+**Example 1: This command uploads the single file "local-sample.txt" to Amazon S3, creating an object with key "sample.txt" in bucket "amzn-s3-demo-bucket".**
 
 ```
 Write-S3Object -BucketName amzn-s3-demo-bucket -Key "sample.txt" -File .\local-sample.txt
 ```
-**Example 2: This command uploads the single file "sample.txt" to Amazon S3, creating an object with key "sample.txt" in bucket "test-files". If the -Key parameter is not supplied, the filename is used as the S3 object key.**
+**Example 2: This command uploads the single file "sample.txt" to Amazon S3, creating an object with key "sample.txt" in bucket "amzn-s3-demo-bucket". If the -Key parameter is not supplied, the filename is used as the S3 object key.**
 
 ```
 Write-S3Object -BucketName amzn-s3-demo-bucket -File .\sample.txt
 ```
-**Example 3: This command uploads the single file "local-sample.txt" to Amazon S3, creating an object with key "prefix/to/sample.txt" in bucket "test-files".**
+**Example 3: This command uploads the single file "local-sample.txt" to Amazon S3, creating an object with key "prefix/to/sample.txt" in bucket "amzn-s3-demo-bucket".**
 
 ```
 Write-S3Object -BucketName amzn-s3-demo-bucket -Key "prefix/to/sample.txt" -File .\local-sample.txt
 ```
-**Example 4: This command uploads all files in the subdirectory "Scripts" to the bucket "test-files" and applies the common key prefix "SampleScripts" to each object. Each uploaded file will have a key of "SampleScripts/filename" where 'filename' varies.**
+**Example 4: This command uploads all files in the subdirectory "Scripts" to the bucket "amzn-s3-demo-bucket" and applies the common key prefix "SampleScripts" to each object. Each uploaded file will have a key of "SampleScripts/filename" where 'filename' varies.**
 
 ```
 Write-S3Object -BucketName amzn-s3-demo-bucket -Folder .\Scripts -KeyPrefix SampleScripts\
 ```
-**Example 5: This command uploads all \*.ps1 files in the local director "Scripts" to bucket "test-files" and applies the common key prefix "SampleScripts" to each object. Each uploaded file will have a key of "SampleScripts/filename.ps1" where 'filename' varies.**
+**Example 5: This command uploads all \*.ps1 files in the local directory "Scripts" to bucket "amzn-s3-demo-bucket" and applies the common key prefix "SampleScripts" to each object. Each uploaded file will have a key of "SampleScripts/filename.ps1" where 'filename' varies.**
 
 ```
 Write-S3Object -BucketName amzn-s3-demo-bucket -Folder .\Scripts -KeyPrefix SampleScripts\ -SearchPattern *.ps1

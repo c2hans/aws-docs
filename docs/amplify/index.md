@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/amplify/index.html
 title: 'AWS Amplify Documentation'
 canonical_url: https://docs.aws.amazon.com/amplify/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # AWS Amplify Documentation

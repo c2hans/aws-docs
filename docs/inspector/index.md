@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/inspector/index.html
 title: 'Amazon Inspector Documentation'
 canonical_url: https://docs.aws.amazon.com/inspector/
 source: aws-documentation
-generated_on: 2026-11-04
+generated_on: 2026-11-05
 ---
 
 # Amazon Inspector Documentation

@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.ht
 
 The following quotas apply to the Custom Event Bus, to Custom Event Bus - Classic, to the API destinations and connections that both buses deliver to, to the schema registry, and to EventBridge Pipes.
 
+To see which features are available in each AWS Region, see [Amazon EventBridge feature availability by AWS Region](feature-availability.md).
+
 **Note**
 If you use Custom Event Bus - Classic, the event bus that routes with rules and targets, see [Custom Event Bus - Classic quotas](#eb-limits).
 

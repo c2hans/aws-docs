@@ -19,7 +19,8 @@ Modifies a Zero-ETL integration in the caller's account.
       "RefreshInterval": "{{string}}",
       "SourceProperties": {
          "{{string}}" : "{{string}}"
-      }
+      },
+      "TargetNamespace": "{{string}}"
    },
    "IntegrationIdentifier": "{{string}}",
    "IntegrationName": "{{string}}"
@@ -86,7 +87,8 @@ Required: No
       "RefreshInterval": "string",
       "SourceProperties": {
          "string" : "string"
-      }
+      },
+      "TargetNamespace": "string"
    },
    "IntegrationName": "string",
    "KmsKeyId": "string",

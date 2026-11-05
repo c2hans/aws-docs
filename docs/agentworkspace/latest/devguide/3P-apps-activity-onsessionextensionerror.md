@@ -28,3 +28,9 @@ sessionExpirationWarningClient.onSessionExtensionError(handler);
     errorDetails: Record<string, unknown>;
 }
 ```
+
+ **Permissions required:**
+
+```
+*
+```

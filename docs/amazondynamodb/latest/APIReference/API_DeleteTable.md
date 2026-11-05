@@ -62,6 +62,7 @@ Required: Yes
       },
       "CreationDateTime": number,
       "DeletionProtectionEnabled": boolean,
+      "DisassociationProtectionEnabled": boolean,
       "GlobalSecondaryIndexes": [
          {
             "Backfilling": boolean,

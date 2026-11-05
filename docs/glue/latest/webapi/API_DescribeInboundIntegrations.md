@@ -69,7 +69,8 @@ Required: No
             "RefreshInterval": "string",
             "SourceProperties": {
                "string" : "string"
-            }
+            },
+            "TargetNamespace": "string"
          },
          "SourceArn": "string",
          "Status": "string",

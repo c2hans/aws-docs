@@ -10,6 +10,13 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## November 2026
 <a name="_november_2026"></a>
 
+### Runtime: Platform version V2 now available in five additional Regions
+<a name="_runtime_platform_version_v2_now_available_in_five_additional_regions_2"></a>
+
+Amazon Bedrock AgentCore Runtime platform version V2 is now available in Europe (Frankfurt), Europe (Stockholm), Asia Pacific (Mumbai), Asia Pacific (Singapore), and Asia Pacific (Sydney). Platform version V2 starts your agent from a snapshot to keep cold starts fast and consistent regardless of concurrency or image size. V2 is now available in 10 AWS Regions.
+
+For more information, see [Supported Regions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-how-it-works.html#runtime-platform-versions-regions) in the *Amazon Bedrock AgentCore Developer Guide*.
+
 ### Runtime: Higher concurrent connection limit for V2 agents
 <a name="_runtime_higher_concurrent_connection_limit_for_v2_agents_2"></a>
 

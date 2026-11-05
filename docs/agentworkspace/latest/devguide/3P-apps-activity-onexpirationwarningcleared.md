@@ -22,3 +22,9 @@ const handler: ExpirationWarningClearedHandler = () => {
 
 sessionExpirationWarningClient.onExpirationWarningCleared(handler);
 ```
+
+ **Permissions required:**
+
+```
+*
+```

@@ -26,6 +26,14 @@ Required: No
 Type: String to string map
 Required: No
 
+ ** TargetNamespace **   <a name="Glue-Type-IntegrationConfig-TargetNamespace"></a>
+An optional custom namespace for the integration's target. Supply this parameter only when the target is an Amazon S3 Tables table bucket; it is not accepted for other target types. The integration replicates data into the namespace you specify, reusing it if it already exists. If you omit this parameter, the target namespace defaults to `zetl_` followed by the integration ID, with hyphens converted to underscores.
+The value is immutable after the integration is created; `ModifyIntegration` rejects changes to it. It must be a valid Amazon S3 Tables namespace name: 1 to 255 characters using lowercase letters, numbers, and underscores, with no leading or trailing underscore and no reserved `aws` prefix.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-z0-9]([a-z0-9_]*[a-z0-9])?`
+Required: No
+
 ## See Also
 <a name="API_IntegrationConfig_SeeAlso"></a>
 

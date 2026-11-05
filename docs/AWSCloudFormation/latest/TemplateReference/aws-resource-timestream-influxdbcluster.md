@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DbStorageType](#cfn-timestream-influxdbcluster-dbstoragetype)" : {{String}},
       "[DeploymentType](#cfn-timestream-influxdbcluster-deploymenttype)" : {{String}},
       "[FailoverMode](#cfn-timestream-influxdbcluster-failovermode)" : {{String}},
+      "[KmsKeyId](#cfn-timestream-influxdbcluster-kmskeyid)" : {{String}},
       "[LogDeliveryConfiguration](#cfn-timestream-influxdbcluster-logdeliveryconfiguration)" : {{LogDeliveryConfiguration}},
       "[MaintenanceSchedule](#cfn-timestream-influxdbcluster-maintenanceschedule)" : {{MaintenanceSchedule}},
       "[Name](#cfn-timestream-influxdbcluster-name)" : {{String}},
@@ -57,6 +58,7 @@ Properties:
   [DbStorageType](#cfn-timestream-influxdbcluster-dbstoragetype): {{String}}
   [DeploymentType](#cfn-timestream-influxdbcluster-deploymenttype): {{String}}
   [FailoverMode](#cfn-timestream-influxdbcluster-failovermode): {{String}}
+  [KmsKeyId](#cfn-timestream-influxdbcluster-kmskeyid): {{String}}
   [LogDeliveryConfiguration](#cfn-timestream-influxdbcluster-logdeliveryconfiguration): {{
     LogDeliveryConfiguration}}
   [MaintenanceSchedule](#cfn-timestream-influxdbcluster-maintenanceschedule): {{
@@ -136,6 +138,15 @@ Specifies the behavior of failure recovery when the primary node of the cluster 
 *Type*: String
 *Allowed values*: `AUTOMATIC | NO_FAILOVER`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`KmsKeyId`  <a name="cfn-timestream-influxdbcluster-kmskeyid"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-zA-Z0-9:/_\-]+$`
+*Minimum*: `1`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `LogDeliveryConfiguration`  <a name="cfn-timestream-influxdbcluster-logdeliveryconfiguration"></a>
 Configuration for sending InfluxDB engine logs to a specified S3 bucket.
@@ -243,6 +254,9 @@ A list of VPC subnet IDs to associate with the DB cluster. Provide at least two 
 `Arn`  <a name="Arn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the DB cluster.
 
+`EffectiveDbParameterGroupIdentifier`  <a name="EffectiveDbParameterGroupIdentifier-fn::getatt"></a>
+Property description not available.
+
 `Endpoint`  <a name="Endpoint-fn::getatt"></a>
 The endpoint used to connect to the InfluxDB cluster. The default InfluxDB port is 8086.
 
@@ -254,6 +268,12 @@ A service-generated unique identifier for the InfluxDB cluster.
 
 `InfluxAuthParametersSecretArn`  <a name="InfluxAuthParametersSecretArn-fn::getatt"></a>
 The Amazon Resource Name (ARN) of the Amazon Secrets Manager secret containing the initial InfluxDB authorization parameters. The secret value is a JSON formatted key-value pair holding InfluxDB authorization values: organization, bucket, username, and password.
+
+`MemberCount`  <a name="MemberCount-fn::getatt"></a>
+Property description not available.
+
+`MemberModeCounts`  <a name="MemberModeCounts-fn::getatt"></a>
+Property description not available.
 
 `NextMaintenanceTime`  <a name="NextMaintenanceTime-fn::getatt"></a>
 Property description not available.

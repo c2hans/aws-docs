@@ -144,14 +144,16 @@ Commercial In-Region prices include a 10% fee over OpenAI rates. You do not need
 
 | **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $0.27 | $0.3375 | $0.027 | $1.62 |
+| In-Region (bedrock-mantle) | $0.27 | $0.3375 | $0.027 | $1.62 |
+| Geo CRIS | $0.27 | $0.3375 | $0.027 | $1.62 |
 
 #### Long context (more than 272K input tokens)
 <a name="model-card-openai-gpt-56-luna-pricing-govcloud-long"></a>
 
 | **Inference option** | **Input** | **Input — 30-minute cache write** | **Input — cache read** | **Output** |
 | --- | --- | --- | --- | --- |
-| In-Region | $0.54 | $0.675 | $0.054 | $2.43 |
+| In-Region (bedrock-mantle) | $0.54 | $0.675 | $0.054 | $2.43 |
+| Geo CRIS | $0.54 | $0.675 | $0.054 | $2.43 |
 
 ## Programmatic Access
 <a name="model-card-openai-gpt-56-luna-programmatic-access"></a>
@@ -161,7 +163,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
 | bedrock-mantle | openai.gpt-5.6-luna | https://bedrock-mantle.{region}.api.aws/openai/v1 | Not supported | Not supported |
-| bedrock-runtime | openai.gpt-5.6-luna | Not supported | us.openai.gpt-5.6-luna in the commercial AWS Regions, in.openai.gpt-5.6-luna in the India Regions | global.openai.gpt-5.6-luna |
+| bedrock-runtime | openai.gpt-5.6-luna | Not supported | us.openai.gpt-5.6-luna in the commercial AWS Regions, in.openai.gpt-5.6-luna in the India Regions, us-gov.openai.gpt-5.6-luna in the AWS GovCloud (US) Regions | global.openai.gpt-5.6-luna |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-mantle endpoint URL will be "https://bedrock-mantle.us-east-1.api.aws/openai/v1". On `bedrock-runtime`, the base URL is "https://bedrock-runtime.{region}.amazonaws.com/openai/v1" and requests must name the geographic cross-Region inference ID `us.openai.gpt-5.6-luna` as the model.*
 
@@ -229,6 +231,8 @@ Availability differs by endpoint.
 | me-south-1 (Bahrain) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | af-south-1 (Cape Town) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | sa-east-1 (São Paulo) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| us-gov-east-1 (AWS GovCloud (US-East)) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| us-gov-west-1 (AWS GovCloud (US-West)) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![not-supported](https://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 ***Geo inference details***
 
@@ -255,6 +259,15 @@ Geo inference ID: `in.openai.gpt-5.6-luna`
 | --- | --- |
 | ap-south-1 (Mumbai) | ap-south-1 (Mumbai), ap-south-2 (Hyderabad) |
 | ap-south-2 (Hyderabad) | ap-south-1 (Mumbai), ap-south-2 (Hyderabad) |
+
+**Geo: US-GOV**
+
+Geo inference ID: `us-gov.openai.gpt-5.6-luna`
+
+| **Source Region** | **Destination Regions** |
+| --- | --- |
+| us-gov-east-1 (AWS GovCloud (US-East)) | us-gov-east-1 (AWS GovCloud (US-East)), us-gov-west-1 (AWS GovCloud (US-West)) |
+| us-gov-west-1 (AWS GovCloud (US-West)) | us-gov-east-1 (AWS GovCloud (US-East)), us-gov-west-1 (AWS GovCloud (US-West)) |
 
 ## Quotas and Limits
 <a name="model-card-openai-gpt-56-luna-quotas"></a>
@@ -309,7 +322,7 @@ OPENAI_BASE_URL="https://bedrock-runtime.us-east-1.amazonaws.com/openai/v1"
 ------
 
 **Note**
-On `bedrock-runtime`, name a cross-Region inference profile as the model — `us.openai.gpt-5.6-luna` or `global.openai.gpt-5.6-luna`. This model is not available for in-Region inference on that endpoint. Your IAM identity also needs `bedrock:InvokeModel` on your account's default project (`arn:aws:bedrock:{region}:{account-id}:project/default`) in addition to the inference profile.
+On `bedrock-runtime`, name a cross-Region inference profile as the model — `us.openai.gpt-5.6-luna` or `global.openai.gpt-5.6-luna` (in the AWS GovCloud (US) Regions, `us-gov.openai.gpt-5.6-luna`). This model is not available for in-Region inference on that endpoint. Your IAM identity also needs `bedrock:InvokeModel` on your account's default project (`arn:aws:bedrock:{region}:{account-id}:project/default`, or `arn:aws-us-gov:bedrock:{region}:{account-id}:project/default` in the AWS GovCloud (US) Regions) in addition to the inference profile.
 
 ### Step 5 - Run your first inference request
 <a name="model-card-openai-gpt-56-luna-sample-code-request"></a>

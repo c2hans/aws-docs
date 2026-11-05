@@ -52,7 +52,7 @@ The key (name) of the workflow definition file within the S3 bucket.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `VersionId`  <a name="cfn-mwaaserverless-workflow-s3location-versionid"></a>
-Optional. The version ID of the workflow definition file in Amazon S3. If not specified, the latest version is used.
+Optional. The version ID of the workflow definition file in Amazon S3. If you don't specify a version, we use the latest version.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

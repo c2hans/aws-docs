@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 Returns a map of `ChannelType`-to-number indicating how many concurrent contacts can an Connect Customer agent workspace agent have on a given channel. 0 represents a disabled channel.
 
 ```
-async getChannelConcurrency(): Promise<AgentChannelConcurrencyMap>
+async getChannelConcurrency(): Promise<AgentChannelConcurrency>
 ```
 
  **Permissions required:**

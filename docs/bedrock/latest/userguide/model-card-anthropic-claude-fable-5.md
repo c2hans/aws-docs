@@ -22,7 +22,7 @@ Claude Fable 5 is Anthropic's next-generation model for complex knowledge work a
 + **Context window:** 1M tokens
 + **Max output tokens:** 128K
 + **Sampling parameters:** temperature must be 1.0 or unset; top\_p must be ≥ 0.99 and < 1.0, or unset; top\_k is not supported
-+ **Reasoning:** Supported (adaptive thinking is always on and cannot be disabled; effort level is configurable)
++ **Reasoning:** Supported (adaptive thinking is always on and cannot be disabled; effort level is configurable) See [Adaptive thinking](claude-messages-adaptive-thinking.html).
 + **Knowledge cutoff:** January 2026
 + **Marketplace product ID:** prod-h6swdfybvty7y
 
@@ -114,6 +114,14 @@ For more information, see [Tool use](tool-use.html).
 Claude Fable 5 includes blocking classifiers for dual-use content in cybersecurity and biology. When a classifier blocks a request, the API returns a standard HTTP 200 response with `stop_reason: "refusal"` and a `stop_details` object containing the restriction category. Refusal rates on this model are materially higher than on previous Claude models.
 
 Customers should handle `stop_reason: "refusal"` as a primary response path. Prompt-stage refusals (blocked before inference begins) are not billed. Mid-stream refusals (blocked after partial output) are billed for tokens generated before the block.
+
+**Fallback credit for refused requests (beta)**
+
+When Claude Fable 5 refuses a request, the response can include a fallback credit token. Redeem the token when you retry the same request on a fallback model, and the retry is billed for the cached conversation prefix at cache-read rates instead of cache-write rates. For more information, see [Fallback credit for refused requests (beta)](claude-messages-fallback-credit.html).
+
+| **Supported endpoints** | **Beta value** | **Valid fallback models** |
+| --- | --- | --- |
+| bedrock-runtime, bedrock-mantle | fallback-credit-2026-07-01 | Claude Opus 4.8 (anthropic.claude-opus-4-8) |
 
 ## Pricing
 <a name="model-card-anthropic-claude-fable-5-pricing"></a>
